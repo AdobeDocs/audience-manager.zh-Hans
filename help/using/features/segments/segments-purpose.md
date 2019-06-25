@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 区段用途、构图和规则
 uuid: 886d4aem-b1 b6-4983-b4 fb-b552 d54 d51 ba
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: c229bf71da5b07277811219cbf2794c3ca7bc89d
 
 ---
 
@@ -26,6 +26,10 @@ A *`segment`* (or an *`audience`*) is a set of users who share common attributes
 ## 细分排版
 
 Audience Manager区段是一个服务器端规则，由个人或特征组组成。特征由称为键值对的数据元素组成。这些键值对除了在细分级别设置的规则之外，还包含符合资格和细分会员资格访客资格的标准。
+
+## 关于Adobe Analytics细分映射的注意事项
+
+将Adobe Analytics区段或报表包映射到Experience Cloud组织时，Audience Manager会自动创建新的、对应的、只读的细分和特征。您无法从Audience Manager编辑或更改这些区段的存储位置。但是，在Audience Manager中对映射的Adobe Analytics区段或报表包执行的任何更改都会反映出来。
 
 >[!TIP]
 >
