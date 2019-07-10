@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 批量管理入门
 uuid: 4bc6ae0a-315c-4ce7-a68 e-cc0 c6 c6 aa2 f1
 translation-type: tm+mt
-source-git-commit: 349cc962c993b361e2dea00ba693337391b87e5e
+source-git-commit: f6fd1b99467a35b3f2c978c4b2e28d562eaa3c52
 
 ---
 
@@ -36,7 +36,7 @@ To use the [!DNL Bulk Management Tools], you need the following:
 
 * Your [!DNL Audience Manager] user name and password. 作为客户，您应该已经拥有这些凭据。
 * API客户端ID和密钥。您的客户经理可以为您提供这些内容。
-* [!UICONTROL Bulk Management Tools] 工作表。**[下载工作表](assets/BAAAM_August_2018.xlsm)** 以获得最新版本。
+* [!UICONTROL Bulk Management Tools] 工作表。**[下载工作表](assets/BAAAM_August_2018.xlsm)** 以获取最新版本。
 
 * Microsoft Excel running on [!DNL Windows] or in a [!DNL Microsoft Windows] virtual machine running on [!DNL macOS X]. You must use 32-bit Excel for the [!UICONTROL Bulk Management Tools] to work.
 
