@@ -32,7 +32,7 @@ profile-merge-faq.xml
 
 **什么是外部设备图？**
 
-An external device graph is any device graph in [!DNL Audience Manager] that has not been created exclusively from your own cross-device data sources. For example, when you create a [Profile Merge Rule](../features/profile-merge-rules/merge-rules-start.md) and choose the [!UICONTROL Co-op Device Graph] or third-party device graph options, you&#39;re working with an external device graph. See [Device Options](../features/profile-merge-rules/merge-rule-definitions.md#device-options).
+An external device graph is any device graph in [!DNL Audience Manager] that has not been created exclusively from your own cross-device data sources. For example, when you create a [Profile Merge Rule](../features/profile-merge-rules/merge-rules-start.md) and choose the [!UICONTROL Co-op Device Graph] or third-party device graph options, you're working with an external device graph. See [Device Options](../features/profile-merge-rules/merge-rule-definitions.md#device-options).
 
 <br> 
 
@@ -88,7 +88,7 @@ The devices [!DNL Audience Manager] merges and reads are the same devices that a
 
 <br> 
 
-**哪些设备**可以使用包含设备图表的一个[!UICONTROL Profile Merge Rule]区段获得区段？**
+**哪些设备&#x200B;**可以使用包含设备图表的一个[!UICONTROL Profile Merge Rule]区段获得区段？**
 
 To qualify for a segment, devices must have been seen by Audience Manager on our [edge data servers](../reference/system-components/components-edge.md) after the segment was created. 此外，边缘服务器：
 
@@ -192,7 +192,7 @@ Audience Manager merges up to four devices when evaluating segments with a [!UIC
 
 <br> 
 
-**我是否可以使用设备图表实时查看特定*细分设备*的符合[!UICONTROL Profile Merge Rules]条件的设备？**
+**我是否可以使用设备图表实时查看特定&#x200B;*细分设备*的符合[!UICONTROL Profile Merge Rules]条件的设备？**
 
 能。实时人群指标使用设备图表链接的所有设备上的档案，实时捕获当前设备(实时查看的设备)的细分资格。
 
