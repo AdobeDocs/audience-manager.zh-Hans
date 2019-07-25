@@ -28,6 +28,6 @@ c_class_start.xml
 When working with the class-level [!UICONTROL DIL] APIs:
 
 * 访问需要一个合作伙伴名称和容器命名空间ID(NSID)。要获取此信息，请与Audience Manager客户经理联系。
-* Replace any sample *italicized* text in the API documentation with value, ID, or other variable as required by the method you&#39;re working with.
+* Replace any sample *italicized* text in the API documentation with value, ID, or other variable as required by the method you're working with.
 * [!UICONTROL DIL] 将编码数据写入目标cookie。For example, spaces are encoded as `%20` and semicolons as `%3B`.
 
