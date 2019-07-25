@@ -114,7 +114,7 @@ A standard [!UICONTROL Profile Link] report looks like the following example. �
 
 ## Profile Link Trend Graphs {#profile-link-trend}
 
-In addition to the other data visualizations, [!UICONTROL Profile Link] reports include a line graph. 折线图旨在显示您的个人资料规则随时间推移的趋势。Trend graphs (and the other reports) are available when you click a rule from the [!UICONTROL Profile Merge Rules] landing page ( **[!UICONTROL Audience Data > Profile Merge Rules]**). These graphs include device graph data if you&#39;re a member of the [!UICONTROL Device Co-op] or other, third-party device graphs you may have access to in [!DNL Audience Manager]. 单击趋势线可查看基本数据。
+In addition to the other data visualizations, [!UICONTROL Profile Link] reports include a line graph. 折线图旨在显示您的个人资料规则随时间推移的趋势。Trend graphs (and the other reports) are available when you click a rule from the [!UICONTROL Profile Merge Rules] landing page ( **[!UICONTROL Audience Data > Profile Merge Rules]**). These graphs include device graph data if you're a member of the [!UICONTROL Device Co-op] or other, third-party device graphs you may have access to in [!DNL Audience Manager]. 单击趋势线可查看基本数据。
 
 ![](assets/authenticated_trends.png)
 
