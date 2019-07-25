@@ -17,7 +17,7 @@ Audience Manager将区段信息发送给数据合作伙伴时，它会用数字I
 
 ## Manual method {#manual-method}
 
-作为数据合作伙伴，您很可能习惯于通过手动流程从客户获取受众元数据。This could include files attached to emails or from customers adding that data through a [!DNL UI] you&#39;ve built and maintained for this purpose. 这些流程工作得很繁琐，但往往很麻烦，而且可能需要手动输入数据。这些方法通常用于帮助快速上手和运行，但并非长期提供最佳客户体验。As an alternative, you can use the [!DNL Audience Manager] [!DNL API] to get segment metadata automatically.
+作为数据合作伙伴，您很可能习惯于通过手动流程从客户获取受众元数据。This could include files attached to emails or from customers adding that data through a [!DNL UI] you've built and maintained for this purpose. 这些流程工作得很繁琐，但往往很麻烦，而且可能需要手动输入数据。这些方法通常用于帮助快速上手和运行，但并非长期提供最佳客户体验。As an alternative, you can use the [!DNL Audience Manager] [!DNL API] to get segment metadata automatically.
 
 ## Automated method {#automated-method}
 
@@ -25,7 +25,7 @@ Audience Manager将区段信息发送给数据合作伙伴时，它会用数字I
 
 ### 步骤1：查看Audience Manager API
 
-The [Getting Started with REST APIs](../../api/rest-api-main/aam-api-getting-started.md) section contains information about general requirements, authentication, available methods, etc. This is a good place to begin if you haven&#39;t worked with the [!DNL Audience Manager] [!DNL API] before.
+The [Getting Started with REST APIs](../../api/rest-api-main/aam-api-getting-started.md) section contains information about general requirements, authentication, available methods, etc. This is a good place to begin if you haven't worked with the [!DNL Audience Manager] [!DNL API] before.
 
 ### 步骤2：请求OAuth访问凭据
 
