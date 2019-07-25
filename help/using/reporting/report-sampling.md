@@ -33,7 +33,7 @@ Some [!DNL Audience Manager] reports display results based on a sampled set of t
 * 不应包含在报表中，但已添加。
 * 应已包含在报表中，但被遗漏。
 
-It&#39;s important to note that our tests and models show that the error rate *decreases* in an inverse proportion to the number of records in your data set. 具有大量记录的数据集生成的错误数比少量记录少。让我们以更定量的方式看待此断言。如下表所示，对于设置数量的记录，95%的报告结果将低于特定的错误速率。
+It's important to note that our tests and models show that the error rate *decreases* in an inverse proportion to the number of records in your data set. 具有大量记录的数据集生成的错误数比少量记录少。让我们以更定量的方式看待此断言。如下表所示，对于设置数量的记录，95%的报告结果将低于特定的错误速率。
 
 | 记录数 | 错误率 |
 |--- |--- |
