@@ -57,7 +57,7 @@ The table below lists and defines the more common parameters you may see in a re
 | `stuff` | 此对象包含所有Cookie目标的信息。此对象的列表根据用户的操作是动态的。 |
 | `tid` | 事务ID，它是用于调试目的的唯一12个字符ID。每个对DCS的/event调用都会收到一个您可以在支持查询中引用的tid，以便更好、更快地响应。 |
 | `ttl` | 几天内Cookie的实时价值。 |
-| `u` 和 `uuid` | Audience Manager分配的唯一用户ID。This is required if you&#39;re making [server-to-server DCS calls](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md). |
+| `u` 和 `uuid` | Audience Manager分配的唯一用户ID。This is required if you're making [server-to-server DCS calls](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md). |
 | `y` | Destination type,  iFrame (`iframe`) or image (`img`). |
 
 >[!MORE_ LIKE_ This]
