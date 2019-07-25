@@ -54,7 +54,7 @@ The mapped [!UICONTROL Segment Performance] report displays all the segments you
 
 ## How to Read Your Unmapped Segment Results {#read-unmapped-segment-results}
 
-Looking at unmapped segments in a [!UICONTROL Segment Performance] report is a great way to find new segments you haven&#39;t considered for targeting. 事实上，其中部分区段可能超出您的映射区段。这是因为未映射的区段必须符合要包含在此报告中的一组资格标准。要包含在此报告中，未映射的区段必须：
+Looking at unmapped segments in a [!UICONTROL Segment Performance] report is a great way to find new segments you haven't considered for targeting. 事实上，其中部分区段可能超出您的映射区段。这是因为未映射的区段必须符合要包含在此报告中的一组资格标准。要包含在此报告中，未映射的区段必须：
 
 * 转化率大于所有映射区段的平均值。
 * 按转化率划分前100个未映射的细分。
