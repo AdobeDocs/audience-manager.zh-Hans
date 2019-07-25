@@ -21,11 +21,11 @@ Global data sources are accessible by all Audience Manager customers and contain
 
 | 数据源ID | 描述 |
 |---|---|
-| 20914 | **Google Advertising ID** - **GaID** 代表运行Android操作系统的设备。 |
-| 20915 | **Apple ID for Advertising** - **IDFAS** 代表运行iOS操作系统的设备。 |
-| 121963 | **广告的Roku ID** - **Ridas** 代表Roku流设备。 |
-| 389146 | **Microsoft Advertising ID** - **Maids** 代表运行Windows10操作系统的设备。 |
-| 404660 | **Samsung DUID** 代表Samsung智能电视。 |
+| 20914 | **Google Advertising ID** - **GaID**&#x200B;代表运行Android操作系统的设备。 |
+| 20915 | **Apple ID for Advertising** - **IDFAS**&#x200B;代表运行iOS操作系统的设备。 |
+| 121963 | **广告的Roku ID** - **Ridas**&#x200B;代表Roku流设备。 |
+| 389146 | **Microsoft Advertising ID** - **Maids**&#x200B;代表运行Windows10操作系统的设备。 |
+| 404660 | **Samsung DUID**&#x200B;代表Samsung智能电视。 |
 
 ## 从全局数据源导入数据
 
