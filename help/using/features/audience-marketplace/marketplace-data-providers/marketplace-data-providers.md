@@ -42,7 +42,7 @@ Overview and workflow for data providers who want to sell data from within [!DNL
 * **描述：** 告诉买家数据馈送的内容。
 * **特征：** 每个数据源中的特征数。您可以向购买者隐藏私人数据源。
 * **过去30天的期限：** 最近30天内唯一用户的查看次数。您可以向购买者隐藏私人数据源。
-* **上个月的总费用：** 订阅数据购买者的金额。报告时间段在每个月的10日结束。Overbase帐户用三角形/感叹号图标标出。You can [deactivate a subscriber&#39;s data feed](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#deactivate-data-feed) if they misuse your data or if their account is overdue.
+* **上个月的总费用：** 订阅数据购买者的金额。报告时间段在每个月的10日结束。Overbase帐户用三角形/感叹号图标标出。You can [deactivate a subscriber's data feed](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#deactivate-data-feed) if they misuse your data or if their account is overdue.
 * **状态：** 显示源是活动的、非活动的、私有的还是公开的。
 * **订阅者：** 显示有多少购买者使用数据源。单击此列中的数字可查看买方的公司名称、订阅、计费和订阅状态。
 * **请求：** 访问数据源的请求数。
