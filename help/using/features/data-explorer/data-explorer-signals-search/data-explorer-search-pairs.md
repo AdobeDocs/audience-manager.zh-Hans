@@ -39,7 +39,7 @@ This search will return only results that qualify for all three filters on the s
 
 ![](assets/signal-search-suggestions.png)
 
-Let&#39;s say [!DNL Audience Manager] received the following signals:
+Let's say [!DNL Audience Manager] received the following signals:
 
 * `productCategory == smartphone`
 * `newProduct == iPhone`
