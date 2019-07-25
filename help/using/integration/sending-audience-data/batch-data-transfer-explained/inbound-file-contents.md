@@ -40,7 +40,7 @@ For other accepted file content formats, see [Custom Partner Integrations](/help
 
 ## File Variables Defined {#file-variables-defined}
 
-表列出并定义了格式正确的入站数据文件中使用的变量。*斜体*表示变量占位符。
+表列出并定义了格式正确的入站数据文件中使用的变量。*斜体*&#x200B;表示变量占位符。
 
 <table id="table_FE043CE392B34D5194111188E5C39671"> 
  <thead> 
