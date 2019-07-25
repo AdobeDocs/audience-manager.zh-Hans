@@ -68,7 +68,7 @@ For information about resetting your password, see [Edit Your Account Settings](
 
 **帐户锁定**
 
-在尝试失败后，帐户会被锁定。Contact your company&#39;s [!DNL Audience Manager] administrator or a Partner Services representatives to unlock your account.
+在尝试失败后，帐户会被锁定。Contact your company's [!DNL Audience Manager] administrator or a Partner Services representatives to unlock your account.
 
 **丢失/忘记密码**
 
