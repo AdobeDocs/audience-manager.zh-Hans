@@ -4,7 +4,7 @@ seo-description: 向Audience Manager发送媒体数据的一种方法是使用�
 seo-title: 通过像素调用捕获营销活动展示数据
 solution: Audience Manager
 title: 通过像素调用捕获营销活动展示数据
-uuid: ac44100-4c55-4992-8835-0d578 bb4 e5 c2
+uuid: ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
 source-git-commit: c79c2311c3ea76ce2450dc1b84a7a22b60a6edb7
 
