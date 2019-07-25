@@ -112,11 +112,11 @@ You must set up a [cross-device data source](#create-data-source) and [profile m
 
 ## For Experience Cloud ID Service Customers {#id-service-customers}
 
-[!UICONTROL Experience Cloud ID Service] 使用时建议使用 [DIL的最新](../../dil/dil-overview.md) 版本 [!UICONTROL Profile Merge Rules]。However, you don&#39;t have to use the [!UICONTROL Experience Cloud ID Service] to work with this feature. If you&#39;re just using [!UICONTROL DIL], see the [legacy DIL section](../../features/profile-merge-rules/merge-rules-start.md#legacy-dil) below.
+[!UICONTROL Experience Cloud ID Service] 使用时建议使用 [DIL的最新](../../dil/dil-overview.md) 版本 [!UICONTROL Profile Merge Rules]。However, you don't have to use the [!UICONTROL Experience Cloud ID Service] to work with this feature. If you're just using [!UICONTROL DIL], see the [legacy DIL section](../../features/profile-merge-rules/merge-rules-start.md#legacy-dil) below.
 
 ### 配置设置客户ID函数
 
-When working with the [!UICONTROL Experience Cloud ID Service], the `setCustomerIDs` function passes declared IDs to [!DNL Audience Manager]. To use a profile merge rule, you must modify `setCustomerIDs` to use the integration code specified when you created a cross-device data source. For example, say you&#39;ve created a cross-device data source with the integration code `my_datasource_ic`. 要传入声明的ID，您需要将集成代码添加到访客ID函数中，如下面修改的代码示例所示。
+When working with the [!UICONTROL Experience Cloud ID Service], the `setCustomerIDs` function passes declared IDs to [!DNL Audience Manager]. To use a profile merge rule, you must modify `setCustomerIDs` to use the integration code specified when you created a cross-device data source. For example, say you've created a cross-device data source with the integration code `my_datasource_ic`. 要传入声明的ID，您需要将集成代码添加到访客ID函数中，如下面修改的代码示例所示。
 
 #### 通用代码示例
 
@@ -145,7 +145,7 @@ The latest versions of [!UICONTROL DIL] now automatically pick up the [!UICONTRO
 <pre class="js"><code>var VDil= DIL. create({合作伙伴：“合作伙伴名称”、“visi服务”：{namespace：“<i>INSERT-MCORG-ID-HERE</i>”}})；</code>
 </pre>
 
-In the namespace key-value pair, the `*`MCORG`*` variable is your [!DNL Experience Cloud] Organization ID. If you don&#39;t have this ID, you can find it in the [!UICONTROL Administration] section of the [!DNL Experience Cloud] dashboard. 您需要管理员权限才能查看此控制板。See [Administration: Core Services](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html).
+In the namespace key-value pair, the `*`MCORG`*` variable is your [!DNL Experience Cloud] Organization ID. If you don't have this ID, you can find it in the [!UICONTROL Administration] section of the [!DNL Experience Cloud] dashboard. 您需要管理员权限才能查看此控制板。See [Administration: Core Services](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html).
 
 ### 配置SDK
 
