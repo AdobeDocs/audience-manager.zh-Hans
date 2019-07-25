@@ -110,7 +110,7 @@ The purpose of an ID sync file is to sync the [DPUUIDs](../../../reference/ids-i
 | 66552757407517449462805881945288602094 | XYZ3017QVBdDD-BlJS28 dpXXQfmxXFxe3_55 BVQJMLRegu2 M |
 | 66184778222667870903738139438735041506 | XYZ3017q9r60KuhpCa_ ek-BtCN2 iu1 iVaAuto0 d412zbyCmd |
 
-Step 1: the ID sync process will sync the [!DNL DPUUID]s from [!DNL DPID] 12345 with the [!DNL Audience Manager] [!DNL UUID]s in the left column. Note that the [!DNL DPID] &quot;0&quot; in the file name represents [!DNL Audience Manager] [!DNL UUID]s.
+Step 1: the ID sync process will sync the [!DNL DPUUID]s from [!DNL DPID] 12345 with the [!DNL Audience Manager] [!DNL UUID]s in the left column. Note that the [!DNL DPID] "0" in the file name represents [!DNL Audience Manager] [!DNL UUID]s.
 <br/>
 
 **文件2** ( [下载示例文件](assets/adobe_id_12345_67890_1477846458.sync))
