@@ -81,7 +81,7 @@ See [Data Integration Library (DIL) API](../dil/dil-overview.md).
 
 **哪些版本[!DNL Analytics][!UICONTROL DIL]的工作？**
 
-You must use [!DNL Analytics] version 20.2 (or higher) and the [!DNL Adobe AppMeasurement AS] library version 3.5.2 (or higher) to work with [!UICONTROL DIL]. If you don&#39;t know your [!DNL Analytics] or [!DNL AppMeasurement] version, check the [!DNL Analytics] call that gets made from the page. 以下版本信息：
+You must use [!DNL Analytics] version 20.2 (or higher) and the [!DNL Adobe AppMeasurement AS] library version 3.5.2 (or higher) to work with [!UICONTROL DIL]. If you don't know your [!DNL Analytics] or [!DNL AppMeasurement] version, check the [!DNL Analytics] call that gets made from the page. 以下版本信息：
 
 This customer uses [!DNL Analytics] version 24.4:
 
@@ -121,7 +121,7 @@ Additionally, clients can deploy a simple onsite object and populate it with key
 
 **我是否可以从原始[!DNL Audience Manager]数据获取原始数据？**
 
-Yes, [!DNL Audience Manager] can provide you with data collected for users we&#39;ve seen on your inventory. 这包括：
+Yes, [!DNL Audience Manager] can provide you with data collected for users we've seen on your inventory. 这包括：
 
 * The unique user ID (UUID) assigned by [!DNL Audience Manager]
 * 特征和区段ID
@@ -131,7 +131,7 @@ Yes, [!DNL Audience Manager] can provide you with data collected for users we&#3
 
 <br> 
 
-**我希望在一个不同站点上通过DFP收集一个站点和目标用户的数据。Do I need to deploy code on the other property if I don&#39;t want to collect data from that location?**
+**我希望在一个不同站点上通过DFP收集一个站点和目标用户的数据。Do I need to deploy code on the other property if I don't want to collect data from that location?**
 
 不会。如果第二个站点上的数据收集不是必需的，您无需在那里部署DIL。只要您通过DFP访问第二个站点上的库存，就可以通过DFP将数据收集从初始站点和目标使用。
 
