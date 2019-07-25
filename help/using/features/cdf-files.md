@@ -14,7 +14,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 # Customer Data Feeds {#customer-data-feeds}
 
-Basic information about [!UICONTROL Customer Data Feed] ([!UICONTROL CDF]) files and instructions on how to get started. Start here if you&#39;re interested in receiving [!UICONTROL CDF] files or just want more information.
+Basic information about [!UICONTROL Customer Data Feed] ([!UICONTROL CDF]) files and instructions on how to get started. Start here if you're interested in receiving [!UICONTROL CDF] files or just want more information.
 
 ## File Contents and Purpose {#file-contents-purpose}
 
@@ -33,7 +33,7 @@ There is no self-service process to start [!UICONTROL CDF] file delivery. Contac
 * Set up your [!DNL Amazon S3] storage bucket.
 * Provide read-only [!DNL S3] authentication credentials to your file storage bucket. 您将无法查看或访问属于其他客户的目录和文件。
 
-File notifications and [!UICONTROL CDF] files will appear in your [!DNL S3] bucket when they&#39;re ready for download. You&#39;re responsible for monitoring and downloading files from your assigned [!DNL S3] directory. See [Customer Data Feed File Processing Notifications](#cdf-file-processing-notifications).
+File notifications and [!UICONTROL CDF] files will appear in your [!DNL S3] bucket when they're ready for download. You're responsible for monitoring and downloading files from your assigned [!DNL S3] directory. See [Customer Data Feed File Processing Notifications](#cdf-file-processing-notifications).
 
 ## 后续步骤 {#next-steps}
 
@@ -372,7 +372,7 @@ The following table provides additional details about your [!UICONTROL CDF] file
 
 | 时间戳位置 | 描述 |
 |--- |--- |
-| 文件名 | The timestamp in your CDF file name marks the time when [!DNL Audience Manager] started preparing your file for delivery. 此时间戳设置在UTC时区中。It uses the `hour=` parameter, with time formatted as a 2-digit hour in 24-hour notation. 此时间可能与文件内容中记录的活动时间不同。断点使用CMS文件时，有时您会注意到您的S桶在特定小时内是空的。空桶意味着指以下任一方式：<ul><li>这一特定小时没有数据。 </li><li> 我们的服务器负载很大，无法处理特定小时的文件。当服务器捕获时，它将应在较早的时间桶文件中放置的文件放入具有较高时间值的桶中。For example, you&#39;ll see this when a file that should have been in the hour 17 bucket appear in the hour 18 bucket (with `hour=18` in the file name). 在这种情况下，服务器可能在小时内开始处理您的文件，但在该时间间隔内无法完成。相反，文件会推送到下一小时的桶。</li></ul><br>**重要**：请勿使用文件名时间戳按时间分组事件。If you need to group by time, use the `EventTime` timestamp in the file contents. |
+| 文件名 | The timestamp in your CDF file name marks the time when [!DNL Audience Manager] started preparing your file for delivery. 此时间戳设置在UTC时区中。It uses the `hour=` parameter, with time formatted as a 2-digit hour in 24-hour notation. 此时间可能与文件内容中记录的活动时间不同。断点使用CMS文件时，有时您会注意到您的S桶在特定小时内是空的。空桶意味着指以下任一方式：<ul><li>这一特定小时没有数据。 </li><li> 我们的服务器负载很大，无法处理特定小时的文件。当服务器捕获时，它将应在较早的时间桶文件中放置的文件放入具有较高时间值的桶中。For example, you'll see this when a file that should have been in the hour 17 bucket appear in the hour 18 bucket (with `hour=18` in the file name). 在这种情况下，服务器可能在小时内开始处理您的文件，但在该时间间隔内无法完成。相反，文件会推送到下一小时的桶。</li></ul><br>**重要**：请勿使用文件名时间戳按时间分组事件。If you need to group by time, use the `EventTime` timestamp in the file contents. |
 | 文件内容 | CMS文件内容中的时间戳标记了开始处理文件的数据收集服务器的时间。此时间戳设置在UTC时区中。It uses the `EventTime` field, with time formatted as *`yyyy-mm-dd hh:mm:ss`*. This time is close to the actual time of the event on the page, but it can be different than the hour indicator in the file name. <br> **提示**：与文件名中的 `hour=` 时间戳不同，您可以 `EventTime` 按时间分组数据。 |
 
 >[!MORE_ LIKE_ This]
