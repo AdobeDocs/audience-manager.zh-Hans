@@ -31,9 +31,9 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ## Rule builder example {#rule-builder-example}
 
-Let&#39;s take a look at an example that demonstrates how to use [!UICONTROL Segment Builder] to create a rule you can to the bulk worksheet. 但是，这并不是这些工具的一组分步说明。我们将从一个已经创建的简单规则开始。For instructions about how to use the rule builders see [Segment Builder](../../features/segments/segment-builder.md) and [Trait Builder](../../features/traits/about-trait-builder.md).
+Let's take a look at an example that demonstrates how to use [!UICONTROL Segment Builder] to create a rule you can to the bulk worksheet. 但是，这并不是这些工具的一组分步说明。我们将从一个已经创建的简单规则开始。For instructions about how to use the rule builders see [Segment Builder](../../features/segments/segment-builder.md) and [Trait Builder](../../features/traits/about-trait-builder.md).
 
-With the visual rule builder, we&#39;ve created a segment rule with 3 traits and a Boolean [!UICONTROL AND] operator.
+With the visual rule builder, we've created a segment rule with 3 traits and a Boolean [!UICONTROL AND] operator.
 
 ![](assets/visualrule.png)
 
