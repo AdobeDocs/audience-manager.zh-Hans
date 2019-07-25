@@ -124,7 +124,7 @@ https://sample.demdex.net?d_src=743&d_uuid=0795526165288603295014370250589427213
 >
 >The event timestamp provided in the [!DNL DCM] logs will be honored and passed to the [!UICONTROL Data Collection Servers].
 >
->* If a timestamp isn&#39;t available for a data row in the [!DNL DCM] log file, we use the time of the `HTTP` call as the event timestamp.
+>* If a timestamp isn't available for a data row in the [!DNL DCM] log file, we use the time of the `HTTP` call as the event timestamp.
 >* If the data row in the [!DNL DCM] log file contains a malformed timestamp, we ignore the entire row.
 
 
@@ -136,11 +136,11 @@ One benefit of implementing [!UICONTROL Actionable Log Files] is the option to a
 
 重新定位查看了Creative123但不会单击或转换的用户，并将其显示为456。执行此操作:
 
-1. 创建特征以捕获查看创意的用户。Let&#39;s say you name the trait [!DNL Creative Trait 123]. 使用特征规则：
+1. 创建特征以捕获查看创意的用户。Let's say you name the trait [!DNL Creative Trait 123]. 使用特征规则：
 
    `d_creative == 123 AND d_event == imp`
 
-1. 创建特征以捕获单击或转换的用户。Let&#39;s say you name this one [!DNL Click and Converter]. 使用特征规则：
+1. 创建特征以捕获单击或转换的用户。Let's say you name this one [!DNL Click and Converter]. 使用特征规则：
 
    `d_event == click OR d_event=conv`
 
