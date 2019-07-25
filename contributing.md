@@ -19,4 +19,4 @@ This project adheres to the Adobe [code of conduct](https://git.corp.adobe.com/O
 
 ## 代码审阅
 
-所有提交都应采用提取请求的形式，并且需要由项目提交者进行审核。Read [GitHub&#39;s pull request documentation](https://help.github.com/articles/about-pull-requests/) for more information on sending pull requests.
+所有提交都应采用提取请求的形式，并且需要由项目提交者进行审核。Read [GitHub's pull request documentation](https://help.github.com/articles/about-pull-requests/) for more information on sending pull requests.
