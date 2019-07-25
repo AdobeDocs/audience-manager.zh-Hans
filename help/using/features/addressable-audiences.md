@@ -77,7 +77,7 @@ source-git-commit: b213a1ecde4c85dc66dada24dec602ed1d9b0332
 
 [!UICONTROL Addressable Audience] 该功能将此抽象概念转变为可量化的数据。In [!DNL Audience Manager], this feature displays audience overlap with data visualizations that provide at-a-glance information along with numeric data in tabular form.
 
-[!UICONTROL Addressable Audiences]**[!UICONTROL Audience Data > Destinations]** 所处位置。Select **[!UICONTROL Integrated Platforms > Device-Based]** to see addressable audiences metrics.
+[!UICONTROL Addressable Audiences]**[!UICONTROL Audience Data > Destinations]**&#x200B;所处位置。Select **[!UICONTROL Integrated Platforms > Device-Based]** to see addressable audiences metrics.
 
 ![](assets/addressable-audiences-landing.png)
 
@@ -131,7 +131,7 @@ All dates and date ranges are set in the [!DNL UTC] time zone. See [Time Zones i
 
 [!UICONTROL Addressable Audience][!UICONTROL Destination] 和指标可在选定的时间间隔内返回唯一用户计数。例如，访客只计数一次，即使多次访问您的网站也是如此。第一次访问是唯一的访问和记录。后续访问正在返回访问，因为它们并非唯一的访问。
 
-日期范围包含选定时间间隔或较早版本的数据。而且，随着时间的过去，每个报告间隔都会超时。For example, let&#39;s assume you see 2 visitors after choosing the [!UICONTROL Last 30 Days] option. 在报告中，这些访客：
+日期范围包含选定时间间隔或较早版本的数据。而且，随着时间的过去，每个报告间隔都会超时。For example, let's assume you see 2 visitors after choosing the [!UICONTROL Last 30 Days] option. 在报告中，这些访客：
 
 * *将* 包含在较长时间间隔(60天、90天和生命周期)返回的结果中。
 * *不会* 包含在 [!UICONTROL Last 30 Day] 选项前面的较短间隔内(当前、天和14天)。
@@ -234,7 +234,7 @@ These metrics return data for traits realized when visitors come to your site or
 
 ## Comparing Customer and Segment Addressable Audiences{#comparing-metrics}
 
-You shouldn&#39;t compare the [!UICONTROL Customer Addressable Audience] and [!UICONTROL Segment Addressable Audience] metrics to determine if one is more significant than the other. 这些是独立、不同和独立的指标。如上述定义中所述，每个都来自不同的数据集。鉴于这一点，如果一个指标大于另一个指标，您应避免推断任何结论。进行比较时，您只能说：
+You shouldn't compare the [!UICONTROL Customer Addressable Audience] and [!UICONTROL Segment Addressable Audience] metrics to determine if one is more significant than the other. 这些是独立、不同和独立的指标。如上述定义中所述，每个都来自不同的数据集。鉴于这一点，如果一个指标大于另一个指标，您应避免推断任何结论。进行比较时，您只能说：
 
 * [!UICONTROL Customer Addressable Audiences] 基于特征实时实现 *，即一手数据*。此指标全面、全面地了解了与数据合作伙伴的集成。
 
