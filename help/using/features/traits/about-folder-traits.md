@@ -5,7 +5,7 @@ seo-description: 利用文件夹特征，您可以自动将同一文件夹内驻
 seo-title: 文件夹特征
 solution: Audience Manager
 title: 文件夹特征
-uuid: e561 f-6c90-44a7-b034-685533f29030
+uuid: e561f-6c90-44a7-b034-685533f29030
 translation-type: tm+mt
 source-git-commit: c229bf71da5b07277811219cbf2794c3ca7bc89d
 
@@ -64,4 +64,4 @@ Learn how to assign [!UICONTROL RBAC] permissions in our [administration documen
 | 特征类型 | [!UICONTROL Onboarded traits][!UICONTROL algorithmic traits] 并贡献最大的一个频率 [!UICONTROL folder trait]。 |
 | 在文件夹之间移动特征 | Moving a trait from a folder to another will disqualify that trait from the first folder trait and qualify it for the second [!UICONTROL folder trait]. 这意味着如果您从文件夹删除或移动特征，则特征的人群中的用户将使用文件夹特征作为区段表达式从区段中取消分段。<br> 将Adobe Analytics区段或报表包映射到Experience Cloud组织时，Audience Manager会自动创建新的、对应的、只读的细分和特征。您无法从Audience Manager编辑或更改这些特征的存储位置。但是，在Audience Manager中对映射的Adobe Analytics区段或报表包执行的任何更改都会反映出来。 |
 | 系统变量 | [!UICONTROL Folder traits] 无法在使用 `d_sid` 参数的事件调用中进行识别。 |
-| 报表 | [!UICONTROL Folder traits] 是实例化的特征，不会出现在 **[!UICONTROL Overlap Reports]** 中。 |
+| 报表 | [!UICONTROL Folder traits] 是实例化的特征，不会出现在 **[!UICONTROL Overlap Reports]**&#x200B;中。 |
