@@ -35,7 +35,7 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
 
 **请求**
 
-You can log data access requests through the **[GDPR Client Services UI](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/using-gdpr-ui.md)** or by calling the **[GDPR API](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)** (see `access` action). 无论哪种情况，您都必须将JSON与提交数据访问请求的Audience Manager标识符上传。See what a well-formed JSON looks like in the **[Experience Cloud GDPR documentation](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)** (specifically, search in page for &quot;POST request format&quot;). Or, you can **[download a sample JSON](assets/access_request.json)**.
+You can log data access requests through the **[GDPR Client Services UI](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/using-gdpr-ui.md)** or by calling the **[GDPR API](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)** (see `access` action). 无论哪种情况，您都必须将JSON与提交数据访问请求的Audience Manager标识符上传。See what a well-formed JSON looks like in the **[Experience Cloud GDPR documentation](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)** (specifically, search in page for "POST request format"). Or, you can **[download a sample JSON](assets/access_request.json)**.
 
 **响应**
 
@@ -307,7 +307,7 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
 
 **请求**
 
-You can log data deletion requests through the **[GDPR Client Services UI](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/using-gdpr-ui.md)** or by calling the **[GDPR API](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)** (see `delete` action). 无论哪种情况，您都必须将JSON与提交数据访问请求的Audience Manager标识符上传。See what a well-formed JSON looks like in the [Experience Cloud GDPR documentation](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md) (specifically, search in page for &quot;POST request format&quot;). Or, you can **[download a sample JSON](assets/delete_request.json)**.
+You can log data deletion requests through the **[GDPR Client Services UI](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/using-gdpr-ui.md)** or by calling the **[GDPR API](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)** (see `delete` action). 无论哪种情况，您都必须将JSON与提交数据访问请求的Audience Manager标识符上传。See what a well-formed JSON looks like in the [Experience Cloud GDPR documentation](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md) (specifically, search in page for "POST request format"). Or, you can **[download a sample JSON](assets/delete_request.json)**.
 
 **响应**
 
@@ -333,7 +333,7 @@ For opt-out requests, please refer to our documentation on [Opt-out Management](
 >
 >您还可以使用核心命名空间。请参阅第二个JSON示例。
 
-**JSON** 中的示例：
+**JSON**&#x200B;中的示例：
 
 ```
  "users": [
@@ -393,7 +393,7 @@ For opt-out requests, please refer to our documentation on [Opt-out Management](
 >
 >您还可以使用EID命名空间。请参阅第二个JSON示例。
 
-**JSON** 中的示例：
+**JSON**&#x200B;中的示例：
 
 ```
  "users": [
@@ -449,7 +449,7 @@ For opt-out requests, please refer to our documentation on [Opt-out Management](
 
 **命名空间ID**：客户特定。请从Audience Manager实例中找到它。
 
-**JSON** 中的示例：
+**JSON**&#x200B;中的示例：
 
 ```
 "users": [
@@ -493,7 +493,7 @@ For opt-out requests, please refer to our documentation on [Opt-out Management](
 * IDFA：20915
 * GUID：20914
 
-**JSON** 中的示例：
+**JSON**&#x200B;中的示例：
 
 ```
 "users": [
