@@ -41,4 +41,4 @@ Adobe 支持以下浏览器的最新主要版本：
 
    Get the latest Safari version from [http://www.apple.com/safari/download](http://www.apple.com/safari/download).
 
-其他浏览器可能会工作，但我们的技术和产品团队不支持。If you&#39;re having trouble working with [!DNL Audience Manager], make sure you&#39;re using an up to date and supported browser.
+其他浏览器可能会工作，但我们的技术和产品团队不支持。If you're having trouble working with [!DNL Audience Manager], make sure you're using an up to date and supported browser.
