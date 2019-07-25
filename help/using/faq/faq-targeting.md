@@ -91,7 +91,7 @@ Cookie删除会对范围和频率计算产生不利影响。因此，在尝试�
 
 <br> 
 
-**Audience Manager仅显示[!UICONTROL Addressable Audiences][!UICONTROL Server-to-Server]目标的指标和匹配率。Can you explain why we don&#39;t see these figures for Cookie and URL destinations?**
+**Audience Manager仅显示[!UICONTROL Addressable Audiences][!UICONTROL Server-to-Server]目标的指标和匹配率。Can you explain why we don't see these figures for Cookie and URL destinations?**
 
 它与ID同步。[!UICONTROL Server-to-Server] 对于目标，我们会脱机传输数据(实时或批量)，我们需要发送目标合作伙伴理解的ID，以便将其映射回浏览器。区段可寻址数字是区段总人口的子集。
 
