@@ -1,9 +1,9 @@
 ---
 description: Audience Optimization for Publishers 可以帮助您针对您所拥有和运营的内容，确定 Audience Manager 区段的潜在效果机会。这些报告将日志级营销活动绩效数据与Audience Manager指标结合在一起，以提供受众优化和盈利机会。
 seo-description: Audience Optimization for Publishers 可以帮助您针对您所拥有和运营的内容，确定 Audience Manager 区段的潜在效果机会。这些报告将日志级营销活动绩效数据与Audience Manager指标结合在一起，以提供受众优化和盈利机会。
-seo-title: Audience Optimization for Publishers
+seo-title: 发布者的 Audience Optimization
 solution: Audience Manager
-title: Audience Optimization for Publishers
+title: 发布者的 Audience Optimization
 uuid: 8425e237-ec52-4615-bb00-84ee4 ebffe1
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
@@ -11,13 +11,13 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 ---
 
 
-# Audience Optimization for Publishers{#audience-optimization-for-publishers}
+# 发布者的 Audience Optimization{#audience-optimization-for-publishers}
 
 Audience Optimization for Publishers 可以帮助您针对您所拥有和运营的内容，确定 Audience Manager 区段的潜在效果机会。这些报告将日志级营销活动绩效数据与Audience Manager指标结合在一起，以提供受众优化和盈利机会。
 
 ## 概述 {#aor-overview}
 
-[!UICONTROL Audience Optimization for Publishers] 从细分指标中提取日志日志级别的营销活动 [!UICONTROL DFP][!DNL Audience Manager] 绩效数据。The reports are available for customers that have set up log ingestion from [!UICONTROL DFP] into [!DNL Audience Manager]. If you haven&#39;t yet set up log ingestion, read [Import DFP Data Files Into Audience Manager](import-dfp.md) for information on how to do it.
+[!UICONTROL Audience Optimization for Publishers] 从细分指标中提取日志日志级别的营销活动 [!UICONTROL DFP][!DNL Audience Manager] 绩效数据。The reports are available for customers that have set up log ingestion from [!UICONTROL DFP] into [!DNL Audience Manager]. If you haven't yet set up log ingestion, read [Import DFP Data Files Into Audience Manager](import-dfp.md) for information on how to do it.
 
 ## 元数据 {#metadata}
 
