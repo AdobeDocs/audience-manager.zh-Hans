@@ -78,7 +78,7 @@ In [Addressable Audience](/help/using/features/addressable-audiences.md), this m
 
 **demdex.net**
 
-Demdex.net is a legacy domain controlled by [!DNL Adobe]. It reflects [!DNL Audience Manager]&#39;s original, pre-acquisition name ( [!DNL Demdex]). [!DNL Adobe] 2011年收购 [!DNL Demdex] 并更名 [!DNL Audience Manager]为公司。`demdex.net` 对域的所有HTTP调用都是发送到的调用 [!DNL Adobe]。
+Demdex.net is a legacy domain controlled by [!DNL Adobe]. It reflects [!DNL Audience Manager]'s original, pre-acquisition name ( [!DNL Demdex]). [!DNL Adobe] 2011年收购 [!DNL Demdex] 并更名 [!DNL Audience Manager]为公司。`demdex.net` 对域的所有HTTP调用都是发送到的调用 [!DNL Adobe]。
 
 请参阅[了解 Demdex 域调用](../reference/demdex-calls.md)。
 
@@ -94,7 +94,7 @@ See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 **目标**
 
-In [!DNL Audience Manager], a destination is any other system (ad server, DSP, ad network, etc.) 您希望与之共享数据的数据。[!UICONTROL Destination Builder] 我们的UI中提供了可用于创建和管理这些数据交付流程的工具。[!DNL Audience Manager] 目标功能 **[!UICONTROL Audience Data > Destinations]** 位于中。
+In [!DNL Audience Manager], a destination is any other system (ad server, DSP, ad network, etc.) 您希望与之共享数据的数据。[!UICONTROL Destination Builder] 我们的UI中提供了可用于创建和管理这些数据交付流程的工具。[!DNL Audience Manager] 目标功能 **[!UICONTROL Audience Data > Destinations]**&#x200B;位于中。
 
 <br> 
 
@@ -140,7 +140,7 @@ Google Advertising ID是Google为运行Android操作系统的硬件设备分配�
 
 **GUID**
 
-全球唯一标识符的缩写。We don&#39;t use the term GUID in [!DNL Audience Manager]. In our case, the GUID is the [!DNL Audience Manager] UUID.
+全球唯一标识符的缩写。We don't use the term GUID in [!DNL Audience Manager]. In our case, the GUID is the [!DNL Audience Manager] UUID.
 See [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 ## I-J {#i-j}
