@@ -47,7 +47,7 @@ The following table lists the key-value pairs that hold data used by the [!UICON
 
 >[!IMPORTANT]
 >
->If you&#39;re using the [!UICONTROL Audience Optimization] reports, *all* of these values are required in the event call.
+>If you're using the [!UICONTROL Audience Optimization] reports, *all* of these values are required in the event call.
 
 <table id="table_B2C8C493080E449CA71C4EF07D9476BD"> 
  <thead> 
@@ -106,7 +106,7 @@ The following table lists the key-value pairs that hold data used by the [!UICON
 
 ### 活动电话
 
-In this example we&#39;ll create a metadata file that brings creative names in to an [!UICONTROL Audience Optimization] report. 为此，我们需要从活动调用中提取创意、营销活动和数据源ID。
+In this example we'll create a metadata file that brings creative names in to an [!UICONTROL Audience Optimization] report. 为此，我们需要从活动调用中提取创意、营销活动和数据源ID。
 
 ![](assets/metadata_file_event.png)
 
