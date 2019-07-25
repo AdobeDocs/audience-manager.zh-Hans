@@ -24,7 +24,7 @@ The [!UICONTROL Marketplace] is where data buyers go to research and subscribe t
 
 订阅公共数据源：
 
-1. **[!UICONTROL Audience Marketplace > Marketplace]** 转至。使用搜索功能或浏览列表以查找数据源。
+1. **[!UICONTROL Audience Marketplace > Marketplace]**&#x200B;转至。使用搜索功能或浏览列表以查找数据源。
 
    ![](assets/subscribe1.png)
 
@@ -72,7 +72,7 @@ Buyers subscribe to private data feeds and plans in **[!UICONTROL Audience Marke
 
 1. Click the data feed name in the [!UICONTROL Marketplace].
 1. 单击 **[!UICONTROL Request Access]**. 这将打开请求对话框。
-1. In the request dialog box, write the provider a note expressing your interest in their data feed and click **[!UICONTROL Send]**. 卖家将查看您的消息，批准或拒绝您的请求。While waiting for approval, &quot;Requested&quot; appears in the [!UICONTROL Marketplace] list for that data feed.
+1. In the request dialog box, write the provider a note expressing your interest in their data feed and click **[!UICONTROL Send]**. 卖家将查看您的消息，批准或拒绝您的请求。While waiting for approval, "Requested" appears in the [!UICONTROL Marketplace] list for that data feed.
 
    * **[!UICONTROL Request approved]**： [!UICONTROL Marketplace] 列表中的状态将变为“已授予的访问权限”，您将收到一个自动通知。此时，您可以订阅源。See [Subscribe to a Public Data Feed](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed) for instructions.
    * **[!UICONTROL Request denied]**：将从源列表中删除“请求的 [!UICONTROL Marketplace] ”文本。您可以尝试再次订阅或选择其他源。
@@ -85,7 +85,7 @@ Buyers subscribe to private data feeds and plans in **[!UICONTROL Audience Marke
 
 ## Data Feed Discounts for Buyers {#buyer-discount}
 
-In [!UICONTROL Audience Marketplace], providers can offer buyers a discount on the published price of a [!DNL CPM] or flat rate data feed. However, discount amounts aren&#39;t visible to buyers in the [!DNL Marketplace] feed list. 但是，当您订阅私人数据源或请求有关特定源的更多信息时，您也可以要求折扣。
+In [!UICONTROL Audience Marketplace], providers can offer buyers a discount on the published price of a [!DNL CPM] or flat rate data feed. However, discount amounts aren't visible to buyers in the [!DNL Marketplace] feed list. 但是，当您订阅私人数据源或请求有关特定源的更多信息时，您也可以要求折扣。
 
 ## Request a Discount {#request-discount}
 
@@ -128,7 +128,7 @@ In [!UICONTROL Audience Marketplace], providers can offer buyers a discount on t
 
 要查看您的折扣源，请执行以下操作：
 
-1. **[!UICONTROL Audience Marketplace > Marketplace]** 转至。
+1. **[!UICONTROL Audience Marketplace > Marketplace]**&#x200B;转至。
 1. 单击已订阅的源的名称。
 1. Look at the [!UICONTROL Price] and [!UICONTROL Your Price] columns in the [!UICONTROL Plan Details] table. 如果源被折扣：
 
