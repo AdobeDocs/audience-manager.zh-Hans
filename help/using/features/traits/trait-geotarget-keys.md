@@ -35,7 +35,7 @@ Platform-level variables let you take data passed in from a particular site and 
 
 ## Platform Level Keys Defined by IP Address {#keys-ip-address}
 
-We work with [Digital Envoy](https://www.digitalenvoy.com/) to obtain and update the demographic and geographic data for the keys below. The values for these keys are determined by matching [!DNL IP] addresses to corresponding geographic and demographic data. However, you&#39;ll still have to enter the value parameter when creating the key-value pair in [!UICONTROL Trait Builder].
+We work with [Digital Envoy](https://www.digitalenvoy.com/) to obtain and update the demographic and geographic data for the keys below. The values for these keys are determined by matching [!DNL IP] addresses to corresponding geographic and demographic data. However, you'll still have to enter the value parameter when creating the key-value pair in [!UICONTROL Trait Builder].
 
 | 键 | 针对定位 |
 |--- |--- |
@@ -46,7 +46,7 @@ We work with [Digital Envoy](https://www.digitalenvoy.com/) to obtain and update
 | d_ lat | 纬度(例如，d_ lat=40.75)。Download the [latitudes list](assets/d_lat.txt). |
 | d_ long | Publisher(例如，d_ long=73.98)。Download the [longitudes list](assets/d_long.txt). |
 | d_ mail_ code | 邮政编码(排除扩展的+代码)。Download the  [postal codes list](assets/d_postal_code.txt).  例如： <ul><li>特征：d_ mail_ code=84004 </li><li>特征名称：Alpin</li></ul> |
-| d_ state | 美国州个字符缩写。Download the [states codes list](assets/d_state.txt).  例如： <ul><li>特征：d_ state= NY </li><li>特征名称：纽约</li></ul>d_ state包含不同国家/地区不同状态的重复值。例如，d_ state==&quot;on&quot;匹配多个状态：Ontario(加拿大)、Ondo(尼日利亚境内)、Oshana(纳米比亚)。我们建议将此信号与dd_ country这样的其他信号配对，以便更具体地定位。 |
+| d_ state | 美国州个字符缩写。Download the [states codes list](assets/d_state.txt).  例如： <ul><li>特征：d_ state= NY </li><li>特征名称：纽约</li></ul>d_ state包含不同国家/地区不同状态的重复值。例如，d_ state=="on"匹配多个状态：Ontario(加拿大)、Ondo(尼日利亚境内)、Oshana(纳米比亚)。我们建议将此信号与dd_ country这样的其他信号配对，以便更具体地定位。 |
 | d_地区 | 区域字母数字ID。Download the [region list](assets/Country_RegionCodes_City.csv).  然后，您可以使用此列表将区域ID与区域名称匹配。 |
 | d_ sp | ISP/组织。Download the [ISP List](assets/d_isp.txt). |
 
