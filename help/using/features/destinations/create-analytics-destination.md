@@ -47,7 +47,7 @@ This section contains options that apply [Data Export Controls](/help/using/feat
 
 1. Click **Data Export Controls** to expose the controls.
 2. Select a label that corresponds to the data export control applied to the destination (see [Add Data Export Labels to a Destination](/help/using/features/destinations/manage-destinations.md#add-data-export-labels) ). 对于Analytics目标，默认情况下会选中PII复选框。
-3. 单击 **保存**。
+3. 单击&#x200B;**保存**。
 
 ![外部控件](assets/exportControls.png)
 
@@ -57,7 +57,7 @@ This section contains options that apply [Data Export Controls](/help/using/feat
 
 1. Click **Configuration** to expose the controls.
 2. 选择要将区段发送到的一个(或多个)报表包。
-3. 单击 **保存**。
+3. 单击&#x200B;**保存**。
 
 ![Reportsuites](assets/reportSuites.png)
 
