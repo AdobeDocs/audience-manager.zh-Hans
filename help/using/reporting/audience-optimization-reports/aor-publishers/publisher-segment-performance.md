@@ -97,7 +97,7 @@ Use the **[!UICONTROL Segment]** drop-down box to select which segments you want
 
 ## How to Read Your Unmapped Segment Results {#read-unmapped-segment}
 
-Looking at unmapped segments in a [!UICONTROL Segment Performance] report is a great way to find new segments you haven&#39;t considered for targeting. 事实上，其中部分区段可能超出您的映射区段。
+Looking at unmapped segments in a [!UICONTROL Segment Performance] report is a great way to find new segments you haven't considered for targeting. 事实上，其中部分区段可能超出您的映射区段。
 
 要阅读此报告，可以使用以下示例报告中显示的虚构线(红色)和类别将结果分为四个部分。
 
