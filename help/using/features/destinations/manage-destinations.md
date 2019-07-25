@@ -21,7 +21,7 @@ source-git-commit: 1d516c49a16c38adcc22827dc254da1ebada0734
 
 默认登陆页面会根据类型列出目标。您可以使用四个可用的选项卡过滤目标：
 
-* **** 全部：显示所有类型的目标。
+* ****&#x200B;全部：显示所有类型的目标。
 * **Adobe Experience Cloud**：显示将数据发送到其他Adobe Experience Cloud解决方案的目标。目前，唯一支持的选项是Adobe Analytics。See [Configure an Analytics Destination](/help/using/features/destinations/create-analytics-destination.md).
 * **集成平台**：显示基于用户的和基于设备的目标(也称为服务器到服务器目标)。请注意，基于人员的目标目前仅对选定客户提供测试功能。
 * **自定义**：显示cookie和URL目标。
@@ -39,7 +39,7 @@ For more information about the displayed information, see [Addressable Audiences
 
 ## Destination Builder {#destination-builder}
 
-[!UICONTROL Destination Builder] 允许您创建基于cookie的或 [!DNL URL] 目标。You cannot create server-to-server ([!DNL S2S]) destinations with [!UICONTROL Destination Builder], but you can manage their segment mappings. Contact your consultant to set up a [!DNL S2S] destination. [!UICONTROL Destination Builder]**[!UICONTROL Audience Data > Destinations]** 所处位置。
+[!UICONTROL Destination Builder] 允许您创建基于cookie的或 [!DNL URL] 目标。You cannot create server-to-server ([!DNL S2S]) destinations with [!UICONTROL Destination Builder], but you can manage their segment mappings. Contact your consultant to set up a [!DNL S2S] destination. [!UICONTROL Destination Builder]**[!UICONTROL Audience Data > Destinations]**&#x200B;所处位置。
 
 ### Destination Builder Settings {#destination-builder-settings}
 
@@ -112,7 +112,7 @@ This section contains options that apply [data export controls](../../features/d
 1. Click **[!UICONTROL Configuration]** to expose the controls
 1. 命名cookie。避免缩写和特殊字符。
 1. 选择数据格式选项。这些选项允许您为将区段数据发送到目标的键值对选择分隔符和分隔符。格式选项包括：
-   * **单键：** 允许您在键值对中设置键。You&#39;ll set the value after you select a segment in the [!UICONTROL Segment Mappings] section below.
+   * **单键：** 允许您在键值对中设置键。You'll set the value after you select a segment in the [!UICONTROL Segment Mappings] section below.
    * **多键：** 允许您设置键值对的键和值。在下面的“区段映射”部分选择区段之后，您将创建键值对。
 See [Standard and Serial Key-Value Pairs](../../features/destinations/key-value-pairs.md) for more information about these data elements.
 1. 单击 **[!UICONTROL Save]**.
@@ -288,7 +288,7 @@ You can only add or edit segments for a server-to-server ([!DNL S2S]) destinatio
 
 To add or edit segment mappings for an [!DNL S2S] destination:
 
-1. **[!UICONTROL Audience Data > Destinations]** 转至。Select **Integrated Platforms &gt; Device-Based** and find the [!DNL S2S] destination you want to work with.
+1. **[!UICONTROL Audience Data > Destinations]**&#x200B;转至。Select **Integrated Platforms &gt; Device-Based** and find the [!DNL S2S] destination you want to work with.
 1. In the [!UICONTROL Action] column, click the pencil icon to edit the destination.
    * **[!UICONTROL Search and Add Segments]** 在框中，开始键入区段名称或单击 **[!UICONTROL Browse All Segments]** 浏览可用区段列表。
    * Click **[!UICONTROL Add Selected Segments]** when you find the segment you want to use. Adding a segment opens the [!UICONTROL Edit Mapping] window.
