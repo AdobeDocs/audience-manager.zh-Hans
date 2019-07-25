@@ -77,4 +77,4 @@ Create an initial test group, then select **[!UICONTROL Duplicate Allocation Tem
 
    ![](assets/test-segment-holdout-selected.png)
 
-1. Go through the rest of the steps in the **[!UICONTROL Create Test Group]** workflow and select **[!UICONTROL Finalize Group]** when you&#39;re satisfied with your selection. 您现在有一个测试组，其中受众的一部分不受测试的影响。
+1. Go through the rest of the steps in the **[!UICONTROL Create Test Group]** workflow and select **[!UICONTROL Finalize Group]** when you're satisfied with your selection. 您现在有一个测试组，其中受众的一部分不受测试的影响。
