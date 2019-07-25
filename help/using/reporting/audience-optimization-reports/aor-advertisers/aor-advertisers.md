@@ -25,7 +25,7 @@ You can send data to [!DNL Audience Manager] for use in these reports by either 
 
 ## Role-Based Access Controls (RBAC) {#rbac}
 
-The type of reports you can view depend on the [!UICONTROL RBAC] group you&#39;re assigned to. See [Administration](../../../features/administration/administration-overview.md) and [Create a Group](../../../features/administration/administration-overview.md#create-group) for more information.
+The type of reports you can view depend on the [!UICONTROL RBAC] group you're assigned to. See [Administration](../../../features/administration/administration-overview.md) and [Create a Group](../../../features/administration/administration-overview.md#create-group) for more information.
 
 [!UICONTROL RBAC] 用户组必须设置一些数据源才能查看 [!UICONTROL Audience Optimization] 报表。[!DNL Audience Manager] 您的顾问将为您设置这些数据源。[!UICONTROL RBAC] 每个用户组中的数据源越多，用户组成员可以访问的数据就越多。您的顾问至少将设置以下任一数据源：
 
@@ -33,7 +33,7 @@ The type of reports you can view depend on the [!UICONTROL RBAC] group you&#39;r
 * 品牌数据源
 * 平台数据源
 
-Users that belong to more than one [!UICONTROL RBAC] user group can switch between each group&#39;s view. 显示的数据将更新以尊重选定的组。If your company does not use [!UICONTROL RBAC], all users will have admin privileges and access to all the data sources (conversion groups).
+Users that belong to more than one [!UICONTROL RBAC] user group can switch between each group's view. 显示的数据将更新以尊重选定的组。If your company does not use [!UICONTROL RBAC], all users will have admin privileges and access to all the data sources (conversion groups).
 
 ## Conversion Groups {#conversion-groups}
 
