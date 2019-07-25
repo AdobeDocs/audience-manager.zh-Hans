@@ -57,9 +57,9 @@ To use `isCoopSafe` you must:
 
 布尔选项可确定设备协作是否可以使用客户数据。
 
-* `isCoopSafe: true`：通过 Mobile SDK 或网站收集的访客数据*可以*用来帮助构建设备图。
+* `isCoopSafe: true`：通过 Mobile SDK 或网站收集的访客数据&#x200B;*可以*&#x200B;用来帮助构建设备图。
 
-* `isCoopSafe: false`：通过 Mobile SDK 或网站收集的访客数据*不能*用来帮助构建设备图。
+* `isCoopSafe: false`：通过 Mobile SDK 或网站收集的访客数据&#x200B;*不能*&#x200B;用来帮助构建设备图。
 
 **代码示例**
 
