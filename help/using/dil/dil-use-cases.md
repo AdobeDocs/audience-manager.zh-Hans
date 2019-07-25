@@ -131,7 +131,7 @@ By default, `DIL.getSearchReferrer` recognizes searches from these search engine
 
 **描述**
 
-以下代码演示了如何获取任何支持的搜索引擎的搜索引介。In this case, let&#39;s assume a user searched on the term &quot;homes&quot; from [!DNL Google] Canada ( `www.google.ca`). 此代码将帮助您捕获这些搜索词并将其发送到Audience Manager。
+以下代码演示了如何获取任何支持的搜索引擎的搜索引介。In this case, let's assume a user searched on the term "homes" from [!DNL Google] Canada ( `www.google.ca`). 此代码将帮助您捕获这些搜索词并将其发送到Audience Manager。
 
 **基本代码**
 
@@ -143,7 +143,7 @@ var search_referrer = DIL.tools.getSearchReferrer();
 
 **列出的搜索引擎代码示例**
 
-In this case, let&#39;s assume that a user searched for the term &quot;homes&quot; from [!DNL Google] Canada ( `www.google.ca`). Note how the code prefixes the required `c_` parameter to search engine ( `c_se`) and search term ( `c_st`). `c_` 是 [一个必需前缀](../features/traits/trait-variable-prefixes.md) ，它将客户定义的变量识别为Audience Manager。
+In this case, let's assume that a user searched for the term "homes" from [!DNL Google] Canada ( `www.google.ca`). Note how the code prefixes the required `c_` parameter to search engine ( `c_se`) and search term ( `c_st`). `c_` 是 [一个必需前缀](../features/traits/trait-variable-prefixes.md) ，它将客户定义的变量识别为Audience Manager。
 
 <pre class="java"><code>var adobe_ dil= DIL. create({合作伙伴：“<i>合作伙伴名称</i>”})；
 var search_ referrer= DIL. tools. getInstanceReader()；
@@ -158,7 +158,7 @@ c_ st：se. keywords
 
 **未列出的搜索引擎代码示例**
 
-In this case, let&#39;s assume that a user searched for the term &quot;homes&quot; from `dogpile.com`. Because [!DNL Dogpile] is not supported by default, you can configure DIL to recognize this search engine and return the search terms to Audience Manager. 您的代码可能类似于以下内容：
+In this case, let's assume that a user searched for the term "homes" from `dogpile.com`. Because [!DNL Dogpile] is not supported by default, you can configure DIL to recognize this search engine and return the search terms to Audience Manager. 您的代码可能类似于以下内容：
 
 <pre class="java"><code>var adobe_ dil= DIL. create({合作伙伴：“<i>合作伙伴名称</i>”})；
 var search_ referrer= DIL. tools. getInstanceReader(document. referrer，{
