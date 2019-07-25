@@ -28,7 +28,7 @@ Enabling our customers to build custom segments and data models is core to the [
 
 ## 分类分类使用行业标准分类类别
 
-The common taxonomy is based on the classifications created by the [!DNL Interactive Advertising Bureau (IAB)]. Refer to the [!DNL IAB]&#39;s [website](https://www.iab.net/iab_products_and_industry_services/508676/ne_guidelines) for more information about quality assurance guidelines for networks and exchanges.
+The common taxonomy is based on the classifications created by the [!DNL Interactive Advertising Bureau (IAB)]. Refer to the [!DNL IAB]'s [website](https://www.iab.net/iab_products_and_industry_services/508676/ne_guidelines) for more information about quality assurance guidelines for networks and exchanges.
 
 ## 分类组织
 
@@ -43,5 +43,5 @@ You assign taxonomic classifications when creating or editing traits in the [!UI
 如果您根据我们常用分类决定分类特征，请记住：
 
 * Classification is *optional*.
-* Traits *are not* assigned to a taxonomic category by default (i.e., traits are not classified as &quot;unknown&quot; or &quot;uncategorized&quot; etc.).
+* Traits *are not* assigned to a taxonomic category by default (i.e., traits are not classified as "unknown" or "uncategorized" etc.).
 * Traits can belong to *one* taxonomic category only (multiple and cross-category classifications are not allowed).
