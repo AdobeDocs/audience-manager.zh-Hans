@@ -35,12 +35,12 @@ After reporting [!DNL CPM] usage at segment level, [!UICONTROL Audience Marketpl
 
 To report [!DNL CPM] usage at segment level:
 
-1. **[!UICONTROL Audience Marketplace > Payables]** 转至。
+1. **[!UICONTROL Audience Marketplace > Payables]**&#x200B;转至。
 2. Select the **[!UICONTROL Segment Usage]** tab.
 3. 填写区段使用情况。You can use the [!UICONTROL Search] box to filter the segments if you only need to report usage for some of them.
 4. 单击 **[!UICONTROL Edit Segments Usage]**.
 5. Enter the [!DNL CPM] usage amount in the [!UICONTROL Usage] column.
-6. Click **[!UICONTROL Save]** when you&#39;re done and review the confirmation dialog.
+6. Click **[!UICONTROL Save]** when you're done and review the confirmation dialog.
    ![确认区段使用](assets/confirm-segment-usage.png)
 7. 单击 **[!UICONTROL Confirm]**.
 
@@ -50,12 +50,12 @@ Data feed-level reporting is a more tedious and prone to error process, since yo
 
 To report [!DNL CPM] usage at segment level:
 
-1. **[!UICONTROL Audience Marketplace > Payables]** 转至。
+1. **[!UICONTROL Audience Marketplace > Payables]**&#x200B;转至。
 2. Select the **[!UICONTROL Feed Usage]** tab.
 3. Use the [!UICONTROL Search] box to filter the data feeds and identify the ones that you need to report usage for.
 4. 单击 **[!UICONTROL Edit Feeds Usage]**.
 5. Calculate the [!DNL CPM] usage for each data feed based on the [Cost Attribution for CPM Data Feeds](#cost-attribution), and enter it in the [!UICONTROL Usage] column.
-6. Click **[!UICONTROL Save]** when you&#39;re done and review the confirmation dialog.
+6. Click **[!UICONTROL Save]** when you're done and review the confirmation dialog.
 
    ![确认源使用](assets/confirm-feed-usage.png)
 
@@ -67,7 +67,7 @@ To reduce errors and overhead while reporting [!DNL CPM] usage, you can use the 
 
 To update [!DNL CPM] usage in bulk:
 
-1. **[!UICONTROL Audience Marketplace > Payables]** 转至。
+1. **[!UICONTROL Audience Marketplace > Payables]**&#x200B;转至。
 1. Select the **[!UICONTROL Feed Usage]** or **[!UICONTROL Segment Usage]** tab, depending on the type of reporting that you want to update.
 1. Click **[!UICONTROL Edit Feeds Usage]** or **[!UICONTROL Edit Segments Usage]**.
 1. Click **[!UICONTROL download the current usage]** to make sure you use a valid CSV file.
