@@ -68,11 +68,11 @@ source-git-commit: 375dff525598ef392f9eecd0f22ee9dc097df4bd
 
     要将Apache许可证应用于您的作品，请附加后面的样板板
     通知，并将包含方括号“{}”
-    的字段替换为您自己的标识信息。(Don&#39;t include
+    的字段替换为您自己的标识信息。(Don't include
     the brackets!)  The text should be enclosed in the appropriate
     comment syntax for the file format. We also recommend that a
     file or class name and description of purpose be included on the
-    same &quot;printed page&quot; as the copyright notice for easier
+    same "printed page" as the copyright notice for easier
     identification within third-party archives.
 
 Copyright2018Adobe Systems，Inc
