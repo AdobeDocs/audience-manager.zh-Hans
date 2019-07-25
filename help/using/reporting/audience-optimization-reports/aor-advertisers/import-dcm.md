@@ -33,7 +33,7 @@ However, the set up procedure is well documented in the [DoubleClick Campaign Ma
 
 1. [创建群组](https://support.google.com/dcm/partner/answer/3370419?hl=en&ref_topic=6107456).
 
-   组可控制对DCM数据的访问。Eventually, you&#39;ll invite and add [!DNL Audience Manager] to this group.
+   组可控制对DCM数据的访问。Eventually, you'll invite and add [!DNL Audience Manager] to this group.
 
 1. [验证您的Google Cloud存储状态](https://support.google.com/dcm/partner/answer/3370481?hl=en&ref_topic=6107456)。
 
