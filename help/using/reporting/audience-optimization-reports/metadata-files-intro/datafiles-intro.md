@@ -48,7 +48,7 @@ A properly named and formatted data file lets you import impression, click, or c
 在文件内容中：
 
 * 标题标签必须按顺序显示，如下表所示。展示和点击使用相同的标签。转换文件包含额外的标题。
-* If you don&#39;t have data for a particular column, populate that field with a `NULL` object or `-1`.
+* If you don't have data for a particular column, populate that field with a `NULL` object or `-1`.
 
 * Files *must* end with a version number. 当前版本为1.1。
 * 使用非打印ASCII001字符分离文件标题和内容。如果您无法使用ASCII001，则将标题和数据与制表符分隔符分开。As these are non-printing characters, the syntax example above shows a pipe `"|"` for display purposes only.
