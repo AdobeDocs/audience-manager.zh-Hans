@@ -65,7 +65,7 @@ Another way to get the visitor ID is with the `getMarketingCloudVisitorID` funct
 
 ### Callback Usage and Purpose {#callback-usage}
 
-`callback` 是可选的。This function works without it, but returns an ID only when a visitor has a [!DNL Experience Cloud] cookie in their browser. If the visitor cookie is missing, or a visitor doesn&#39;t have an ID, the function returns an empty `()` object. 即使在加载页面且访客收到新ID后，也可能发生这种情况。To avoid this, `callback` forces this function to check for a visitor ID after the page loads. Without `callback`, the visitor ID function won&#39;t return an ID even if it&#39;s written to the visitor&#39;s browser later.
+`callback` 是可选的。This function works without it, but returns an ID only when a visitor has a [!DNL Experience Cloud] cookie in their browser. If the visitor cookie is missing, or a visitor doesn't have an ID, the function returns an empty `()` object. 即使在加载页面且访客收到新ID后，也可能发生这种情况。To avoid this, `callback` forces this function to check for a visitor ID after the page loads. Without `callback`, the visitor ID function won't return an ID even if it's written to the visitor's browser later.
 
 ## 后续步骤 {#next-steps}
 
