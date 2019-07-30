@@ -7,7 +7,7 @@ title: 管理数据供给订阅
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0 ba5
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 
 ---
 
@@ -280,7 +280,7 @@ When you click the name of a data plan in the [!UICONTROL Marketplace], [!DNL Au
    * Click **[!UICONTROL Request More Details]** to ask the data provider questions about the selected data feed or to request a discount. 此功能将您的注释和问题直接发送到数据提供程序。
 
 1. 数据馈送报告指标。Venn图(及相关指标)显示了过去30天特征重叠数据。See [The Marketplace: About](marketplace-data-buyers.md#about-marketplace) for details.
-   * **[!UICONTROL 30 Day Overlapped Uniques]**：帐户中与提供者帐户中的用户重叠的唯一用户数量。
+   * **[!UICONTROL 30 Day Overlapped Uniques]**：帐户中与提供者帐户中的用户重叠的唯一用户数量。For a definition of unique users, see AAM UUID in the [Index of IDs in Audience Manager](/help/using/reference/ids-in-aam.md).
    * **[!UICONTROL 30 Day Provider Unique Users]**：来自提供者帐户的唯一用户的数量。
    * **[!UICONTROL Your Unique Users]**：来自您帐户的唯一用户的数量。
 
