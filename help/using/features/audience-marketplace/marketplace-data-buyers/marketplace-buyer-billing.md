@@ -4,10 +4,10 @@ seo-description: Audience Marketplace数据购买者同意，根据每千个广�
 seo-title: 数据馈送购买者计费
 solution: Audience Manager
 title: 数据馈送购买者计费
-topic: DIL API
+keywords: 细分级别报告、细分级别、细分级别
 uuid: d723667-282b-4160-9909-579721af4016
 translation-type: tm+mt
-source-git-commit: f42267d3acf2570fc87d50c4c4e65826902d9e55
+source-git-commit: a02ef4cfa987c05e3db173f8e6e9a635d1ecd1fd
 
 ---
 
