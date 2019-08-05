@@ -7,7 +7,7 @@ title: 数据馈送购买者计费
 keywords: 细分级别报告、细分级别、细分级别
 uuid: d723667-282b-4160-9909-579721af4016
 translation-type: tm+mt
-source-git-commit: 3107d34b1338e042320d837d2efbbc19c900e904
+source-git-commit: dab5b255f966e63d51cc4d236d37bb0cb4eb960c
 
 ---
 
@@ -251,7 +251,7 @@ Audience Marketplace数据购买者同意报告使用每千个广告印象([!DNL
 
 数据馈送和使用案例的一览划分如下：
 
-![feed-breaksation](assets/feed-breakdown.png)
+![feed-breaksation](assets/feed-breakdown-alt.png)
 
 <br> 
 
