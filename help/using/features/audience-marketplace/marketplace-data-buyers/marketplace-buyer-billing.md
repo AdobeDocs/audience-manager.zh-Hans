@@ -7,7 +7,7 @@ title: 数据馈送购买者计费
 keywords: 细分级别报告、细分级别、细分级别
 uuid: d723667-282b-4160-9909-579721af4016
 translation-type: tm+mt
-source-git-commit: fde8dd10e2693427c4330739fa013deb48be35be
+source-git-commit: 3107d34b1338e042320d837d2efbbc19c900e904
 
 ---
 
@@ -47,6 +47,8 @@ Audience Marketplace数据购买者同意报告使用每千个广告印象([!DNL
 6. 完成后单击 **[!UICONTROL Save]** ，查看确认对话框。
    ![确认区段使用](assets/confirm-segment-usage.png)
 7. 单击 **[!UICONTROL Confirm]**.
+
+<br> 
 
 ## 报告数据馈送级别的CPM使用情况 {#feed-level-report}
 
@@ -221,6 +223,8 @@ Audience Marketplace数据购买者同意报告使用每千个广告印象([!DNL
 我们无法判断有哪些特征会引起印象，因为资格基于条件 [!UICONTROL OR] 。因此 [!UICONTROL Audience Marketplace > Payables] ，在部分中，您根据特征人群加权分配了总印象的加权分配。
 
 ![帐单区段或](assets/billing-segment-or.png)
+
+<br> 
 
 ### 案例3：具有建模和激活用例的细分
 
