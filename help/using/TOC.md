@@ -4,12 +4,12 @@ audience: 最终用户
 user-guide-title: Audience Manager用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
+source-git-commit: 75eada471bc898be2f8903316285fe60890972cc
 
 ---
 
 
-# Audience Manager User Guide {#user-guide}
+# Audience Manager用户指南 {#user-guide}
 
 + [Audience Manager产品文档](aam-home.md)
 + 概述{#overview}
@@ -20,7 +20,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
       + [数据安全性](overview/data-security-and-privacy/data-security.md)
       + [数据隐私](overview/data-security-and-privacy/data-privacy.md)
       + [选择退出管理](overview/data-security-and-privacy/opt-out-management.md)
-   + General Data Protection Regulation (GDPR){#gdpr}
+   + 一般数据保护规定(GDPR){#gdpr}
       + [Audience Manager 中的 GDPR](overview/aam-gdpr/aam-gdpr-details.md)
       + [目标的GDPR注意事项](overview/aam-gdpr/aam-gdpr-partners.md)
       + [GDPR 常见问题解答](overview/aam-gdpr/aam-gdpr-faq.md)
@@ -32,7 +32,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
       + [编辑帐户设置](features/administration/edit-account-settings.md)
       + [IP 地址模糊处理](features/administration/ip-obfuscation.md)
       + [使用限制](features/administration/usage-limits.md)
-   + Algorithmic Models{#algorithmic-models}
+   + 算法模型{#algorithmic-models}
       + [算法模型](features/algorithmic-models/understanding-models.md)
       + [创建算法模型](features/algorithmic-models/create-model.md)
       + [算法模型：特征排除](features/algorithmic-models/trait-exclusion-algo-models.md)
@@ -45,21 +45,21 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
       + [Audience Lab高级功能](features/audience-lab/audience-lab-advanced.md)
    + 受众市场{#audience-marketplace}
       + [受众市场](features/audience-marketplace/audience-marketplace.md)
-      + Audience Marketplace for Data Providers{#audience-marketplace-for-data-providers}
+      + 数据提供商的受众市场{#audience-marketplace-for-data-providers}
          + [数据提供商的受众市场](features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
          + [创建、价格和管理数据馈送](features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md)
          + [数据馈送提供商计费](features/audience-marketplace/marketplace-data-providers/marketplace-billing-report.md)
-      + Audience Marketplace for Data Buyers{#audience-marketplace-for-data-buyers}
+      + 数据买家的受众市场{#audience-marketplace-for-data-buyers}
          + [数据买家的受众市场](features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)
          + [管理数据供给订阅](features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md)
          + [数据馈送购买者计费](features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
       + [专用数据信息源](features/audience-marketplace/marketplace-private-feeds.md)
    + [客户数据馈送](features/cdf-files.md)
-   + Data Explorer{#data-explorer}
+   + 数据浏览器{#data-explorer}
       + [数据浏览器-概述、优点和使用案例](features/data-explorer/data-explorer-overview.md)
       + [理解信号](features/data-explorer/data-explorer-understanding-signals.md)
       + [信号控制板](features/data-explorer/data-explorer-signals-dashboard.md)
-      + Signals Search{#signals-search}
+      + 信号搜索{#signals-search}
          + [信号搜索概述](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
          + [按关键值对搜索信号](features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
          + [按过滤器搜索信号](features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
@@ -77,14 +77,25 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [声明的ID](features/declared-ids.md)
    + [派生信号](features/derived-signals.md)
    + 目标{#destinations}
-      + [目标](features/destinations/destinations.md)
+      + [目标概述](features/destinations/destinations.md)
+      + [目标主页](/help/using/features/destinations/destinations-home.md)
+      + Adobe Experience Cloud目标{#experience-cloud-destinations}
+         + [配置Analytics目标](/help/using/features/destinations/create-analytics-destination.md)
+      + 基于人员的目标 {#pbd}
+      + 基于设备的目标(服务器到服务器) {#device-based}
+         + [为服务器到服务器目标添加或编辑区段](/help/using/features/destinations/add-edit-segments.md)
+      + 自定义目标 {#custom-destinations}
+         + [配置URL目标](/help/using/features/destinations/create-url-destination.md)
+         + [配置Cookie目标](/help/using/features/destinations/create-cookie-destination.md)
+         + [Cookie目标的可选设置](/help/using/features/destinations/cookie-destination-options.md)
+      + 目标引用 {#destinations-reference}
+         + [目标生成器](/help/using/features/destinations/destination-builder.md)
+         + [get_ aAmacookies代码](features/destinations/get-aam-cookie-code.md)
+         + [定义目标宏](features/destinations/destination-macros.md)
+         + [标准和串行键值对](features/destinations/key-value-pairs.md)
+         + [将数据导出控制添加到目标](/help/using/features/destinations/add-data-export-labels.md)
       + [管理目标](features/destinations/manage-destinations.md)
-      + [定义目标宏](features/destinations/destination-macros.md)
-      + [标准和串行键值对](features/destinations/key-value-pairs.md)
-      + [get_ aAmacookies代码](features/destinations/get-aam-cookie-code.md)
-      + [配置Analytics目标](/help/using/features/destinations/create-analytics-destination.md)
-      + [Audience Manager技术合作伙伴](/help/using/features/destinations/audience-manager-technology-partners.md)
-   + Profile Merge Rules{#profile-merge-rules}
+   + 个人资料合并规则{#profile-merge-rules}
       + [个人资料合并规则概述](features/profile-merge-rules/merge-rules-overview.md)
       + [个人资料合并规则入门](features/profile-merge-rules/merge-rules-start.md)
       + [个人资料合并规则控制板](features/profile-merge-rules/merge-rules-dashboard.md)
@@ -138,7 +149,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [报告控制板](reporting/reports-dashboard.md)
    + [一般报告](reporting/general-reports.md)
    + [趋势报告](reporting/trend-reports.md)
-   + Audience Optimization Reports {#audience-optimization-reports}
+   + 受众优化报告 {#audience-optimization-reports}
       + [受众优化报告](reporting/audience-optimization-reports/audience-optimization-reports.md)
       + Audience Optimization for Advertisers {#audience-optimization-advertisers}
          + [广告商概述的受众优化](reporting/audience-optimization-reports/aor-advertisers/aor-advertisers.md)
@@ -158,7 +169,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
          + [广告单元重叠](reporting/audience-optimization-reports/aor-publishers/publisher-ad-unit-overlap.md)
          + [区段到广告单元重叠](reporting/audience-optimization-reports/aor-publishers/publisher-segment-ad-unit-overlap.md)
          + [独特的用户触及](reporting/audience-optimization-reports/aor-publishers/publisher-unique-reach.md)
-      + Data and Metadata Files for Audience Optimization Reports {#data-and-metadata-files}
+      + 用于受众优化报告的数据和元数据文件 {#data-and-metadata-files}
          + [用于受众优化报告的数据和元数据文件](reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
          + [用于受众优化报告的数据文件](reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
          + [元数据文件概述和映射](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
@@ -167,7 +178,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
          + [元数据文件的交付方法](reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)
          + [元数据文件的状态更新](reporting/audience-optimization-reports/metadata-files-intro/metadata-update-status.md)
       + [每日特征变化报告](reporting/audience-optimization-reports/daily-trait-variation-report.md)
-   + Interactive and Overlap Reports {#interactive-and-overlap-reports}
+   + 交互式和重叠报告 {#interactive-and-overlap-reports}
       + [交互式和重叠报告概述](reporting/dynamic-reports/dynamic-reports.md)
       + [交付和性能报告](reporting/dynamic-reports/delivery-performance-report.md)
       + [特质到特质重叠报表](reporting/dynamic-reports/trait-trait-overlap-report.md)
@@ -183,21 +194,21 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [出站文件历史记录](reporting/outbound-history-report.md)
    + [在重叠和常规报告中计算唯一用户](reporting/unique-user-counts.md)
    + [选定Audience Manager报告中的数据采样和错误速率](reporting/report-sampling.md)
-+ API and SDK Code{#api-and-sdk-code}
++ API和SDK代码{#api-and-sdk-code}
    + [API和SDK代码概述](api/api.md)
    + [Audience Manager API代码迁移](api/api-swagger-migration.md)
-   + Data Collection Server (DCS) API Methods and Code{#dcs}
+   + 数据收集服务器(DCS) API方法和代码{#dcs}
       + [DCS API方法和代码](api/dcs-intro/dcs-intro.md)
-      + DCS Event Calls{#dcs-event-calls}
+      + DCS事件调用{#dcs-event-calls}
          + [DCS事件调用API](api/dcs-intro/dcs-event-calls/dcs-event-calls.md)
          + [将数据发送到DCS](api/dcs-intro/dcs-event-calls/dcs-url-send.md)
          + [从DCS接收数据](api/dcs-intro/dcs-event-calls/dcs-url-receive.md)
-      + DCS APIs{#dcs-apis}
+      + DCS API{#dcs-apis}
          + [用于服务器到服务器数据传输的DCS API](api/dcs-intro/dcs-s2s/dcs-s2s.md)
          + [通过DCS响应获取用户ID和区域](api/dcs-intro/dcs-s2s/dcs-aam-ids.md)
          + [通过Experience Cloud ID服务获取用户ID和区域](api/dcs-intro/dcs-s2s/dcs-mcid-ids.md)
          + [进行服务器到服务器DCS API调用](api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)
-      + DCS API Reference{#dcs-api-reference}
+      + DCS API参考{#dcs-api-reference}
          + [DCS API参考概述](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
          + [DCS API方法](api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
          + [DCS 错误代码、消息和示例](api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
@@ -213,7 +224,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
       + [数据集成库API方法](api/rest-api-main/aam-api-dil-methods.md)
       + [数据源 API 方法](api/rest-api-main/aam-api-data-sources.md)
       + [派生信号API方法](api/rest-api-main/aam-api-derived-signals.md)
-      + Destination API Methods{#destination-api-methods}
+      + 目标API方法{#destination-api-methods}
          + [目标API方法概述](api/rest-api-main/aam-api-destinations/aam-api-destinations.md)
          + [创建目标](api/rest-api-main/aam-api-destinations/aam-api-create-destinations.md)
          + [将区段映射到目标](api/rest-api-main/aam-api-destinations/aam-api-map-segments.md)
@@ -225,7 +236,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
       + [分类API方法](api/rest-api-main/aam-api-taxonomy.md)
       + [特征API方法](api/rest-api-main/api-traits.md)
       + [特征类型方法](api/rest-api-main/aam-api-trait-type.md)
-      + User, Group, and Permissions Management API Methods{#user-group-permissions}
+      + 用户、组和权限管理API方法{#user-group-permissions}
          + [用户管理API方法](api/rest-api-main/aam-api-user-group-permission/aam-api-user.md)
          + [组管理API方法](api/rest-api-main/aam-api-user-group-permission/aam-api-group.md)
          + [Permissions Management API方法](api/rest-api-main/aam-api-user-group-permission/aam-api-permissions.md)
@@ -233,7 +244,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [SDK Code](api/aam-sdk.md)
 + Data Integration Library (DIL) API{#dil-api}
    + [了解数据集成库(DIL)](dil/dil-overview.md)
-   + Class-level DIL Methods{#class-level-dil-methods}
+   + 类级DIL方法{#class-level-dil-methods}
       + [类级IL API入门](dil/dil-class-overview/dil-start.md)
       + [DIL创建](dil/dil-class-overview/dil-create.md)
       + [getDil](dil/dil-class-overview/dil-get-instance.md)
@@ -246,48 +257,49 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [DIL使用案例和代码示例](dil/dil-use-cases.md)
    + [Flash DIL](dil/dil-flash.md)
    + [DIL发行说明](/help/using/dil/dil-release-notes.md)
-+ Implementation and Integration Guides{#implemenation-integration-guides}
++ 实施和集成指南{#implemenation-integration-guides}
    + [实施和集成指南](integration/implementation-and-integration.md)
    + [数据集成方法](integration/data-integration-methods.md)
-   + Integrate DFP using Google Publisher Tags (GPT){#integrate-dfp-using-gpt}
+   + 使用Google Publisher标签(GPT)集成DFP{#integrate-dfp-using-gpt}
       + [使用GPT概述集成DFP](integration/gpt-aam-destination/gpt-aam-overview.md)
       + [使用GPT将区段发送到DFP](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [创建GPT目标](integration/gpt-aam-destination/gpt-aam-create-destination.md)
       + [修改GPT Settargeting API调用](integration/gpt-aam-destination/gpt-aam-modify-api.md)
       + [Google Publisher标签的Audience Manager代码](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
-   + Integrating with Third-Party Destinations {#integrating-third-party}
+   + 与第三方目标集成 {#integrating-third-party}
+      + [Audience Manager技术合作伙伴](/help/using/integration/integrating-third-party/audience-manager-technology-partners.md)
       + [Facebook WCA集成](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
       + [AAS作为Audience Manager目标](integration/integrating-third-party/open-ad-server-destination.md)
       + [OpenX作为Audience Manager目标](integration/integrating-third-party/openx-destination.md)
       + [DFP作为Audience Manager目标](integration/aam-dfp.md)
       + [将区段发送到Google AdWords再营销列表](integration/integrating-third-party/rlsa-integration.md)
    + [实施Audience Manager](integration/implement-audience-manager.md)
-   + Media Data Integration{#media-data-integration}
+   + 媒体数据集成{#media-data-integration}
       + [媒体数据集成概述](integration/media-data-integration/media-data-integration.md)
       + [可操作的日志文件](integration/media-data-integration/actionable-log-files.md)
       + [通过像素调用捕获营销活动展示数据](integration/media-data-integration/impression-data-pixels.md)
       + [通过像素调用捕获Campaign单击数据](integration/media-data-integration/click-data-pixels.md)
-   + Receiving Audience Data{#receiving-audience-data}
+   + 接收受众数据{#receiving-audience-data}
       + [接收受众数据概述](integration/receiving-audience-data/receiving-audience-data-overview.md)
       + [用于出站数据传输的ID同步](integration/receiving-audience-data/id-sync-outbound.md)
-      + Real-Time Outbound Data Transfers{#real-time-outbound-transfers}
+      + 实时出站数据传输{#real-time-outbound-transfers}
          + [实时出站数据传输](integration/receiving-audience-data/real-time-outbound-transfers/real-time-outbound-transfers.md)
          + [数字签名的HTTP请求](integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)
          + [OAuth2.0实时出站传输集成](integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
-      + Batch Outbound Data Transfers{#batch-outbound-data-transfers}
+      + 批量出站数据传输{#batch-outbound-data-transfers}
          + [批量出站数据传输概述](integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)
          + [出站数据文件名：语法和示例](integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
          + [为日志文件传输传输控制文件](integration/receiving-audience-data/batch-outbound-transfers/transfer-control-files.md)
          + [出站模板宏](integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
          + [出站宏示例](integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)
          + [利用您出站文件的 Amazon S3 跨帐户存储段权限](integration/receiving-audience-data/batch-outbound-transfers/authorize-s3-cross-bucket.md)
-   + Sending Audience Data{#sending-audience-data}
+   + 发送受众数据{#sending-audience-data}
       + [发送受众数据](integration/sending-audience-data/send-audience-data.md)
-      + Real-Time Inbound Data Integration {#real-time-inbound-data-integration}
+      + 实时入站数据集成 {#real-time-inbound-data-integration}
          + [入站、实时数据传输技术规范](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
          + [基于像素的数据传输](integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)
          + [实时入站数据摄取](integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
-      + Batch Data Transfer Process{#batch-data-transfer-process}
+      + 批量数据传输流程{#batch-data-transfer-process}
          + [介绍的批量数据传输流程](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
          + [将批处理数据发送到Audience Manager概述](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)
          + [用于入站数据传输的ID同步](integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)
@@ -299,7 +311,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
          + [入站数据传输文件的文件压缩](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
          + [入站处理后向合作伙伴发送的示例消息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [自定义合作伙伴集成](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
-   + Integration with Other Experience Cloud Solutions {#integration-other-solutions}
+   + 与其他Experience Cloud解决方案集成 {#integration-other-solutions}
       + [将Audience Manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
       + [实施受众管理模块](integration/integration-other-solutions/audience-management-module.md)
       + [服务器端转发(管理员指南)](https://docs.adobe.com/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)
@@ -310,7 +322,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [发行商用例](reference/publisher-use-cases.md)
    + [测试版环境](reference/beta-environment.md)
    + [特征和区段生成器中的布尔表达式](reference/boolean-expressions-tsb.md)
-   + Bulk Management Tools{#bulk-management-tools}
+   + 批量管理工具{#bulk-management-tools}
       + [批量管理入门](reference/bulk-management-tools/bulk-management-intro.md)
       + [批量请求](reference/bulk-management-tools/bulk-requests.md)
       + [批量更新](reference/bulk-management-tools/bulk-updates.md)
@@ -328,7 +340,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [口令要求、锁定帐户和忘记密码](reference/password-requirements.md)
    + [信号、特征和区段](reference/signal-trait-segment.md)
    + [支持的浏览器](reference/supported-browsers.md)
-   + System Components{#system-components}
+   + 系统组件{#system-components}
       + [系统组件概述](reference/system-components/components-overview.md)
       + [Audience Manager System中的关键组件](reference/system-components/components-stack.md)
       + [数据操作组件](reference/system-components/components-data-action.md)
@@ -353,7 +365,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [个人资料合并规则和设备图表常见问题解答](faq/faq-profile-merge.md)
    + [定位常见问题解答](faq/faq-targeting.md)
    + [报表常见问题解答](faq/faq-reporting.md)
-+ Help and Legal{#help-and-legal}
++ 帮助和法律{#help-and-legal}
    + [概述](/help/using/help-legal/help-legal-overview.md)
    + [如果遇到问题](/help/using/help-legal/help-problem.md)
    + [联系和法律信息](/help/using/help-legal/help-legal-contact.md)
