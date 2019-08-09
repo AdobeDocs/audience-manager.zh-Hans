@@ -6,14 +6,14 @@ keywords: 激活；激活合作伙伴、目标、目标
 solution: Audience Manager
 title: Adobe Audience Manager技术合作伙伴
 translation-type: tm+mt
-source-git-commit: ffdf5404235734adb77e93a3d231a65b2444cc1f
+source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 
 ---
 
 
 # Audience Manager激活合作伙伴
 
-本页仅包括当前Audience Manager [服务器到服务器集成](/help/using/features/destinations/manage-destinations.md#add-edit-segments) 。有关集成的详细信息，请参阅其 [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) 列表(如果可用)或与您的Adobe顾问或客户关怀联系。
+本页仅包括当前Audience Manager [服务器到服务器集成](/help/using/features/destinations/add-edit-segments.md) 。有关集成的详细信息，请参阅其 [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) 列表(如果可用)或与您的Adobe顾问或客户关怀联系。
 
 <br> 
 
