@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 数据导出控制
 uuid: de7f3608-c0 cb-4049-973a-8be55425 c600
 translation-type: tm+mt
-source-git-commit: 302670f294574c3b56ccd16aeca8ebab8f4e8ce9
+source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 
 ---
 
@@ -20,27 +20,27 @@ source-git-commit: 302670f294574c3b56ccd16aeca8ebab8f4e8ce9
 [!UICONTROL Data Export Controls] 可让您对 [数据源](../features/datasources-list-and-settings.md#data-sources-list-and-settings) 和 [目标进行分类](../features/destinations/destinations.md)。您应用的分类将确定数据何时可以导出到目标位置。此功能包括：
 
 * **[!UICONTROL Data Export Controls]**：您可以在 *数据源上设置数据导出控制*。在数据源上设置时，这些控件限制了如何使用数据源及其特征。
-* **[!UICONTROL Data Export Labels]**：您可以在目标上 *设置数据导出标签*。在目标上设置时，这些标签会识别目标如何使用数据。See [Add Data Export Labels to a Destination](/help/using/features/destinations/manage-destinations.md#add-data-export-labels) to learn how to add export labels to a destination.
+* **[!UICONTROL Data Export Labels]**：您可以在目标上 *设置数据导出标签*。在目标上设置时，这些标签会识别目标如何使用数据。请参阅 [将数据导出标签添加到目标](/help/using/features/destinations/add-data-export-labels.md) 以了解如何将导出标签添加到目标。
 
 根据应用于数据源和目标的分类，导出控件将停止您：
 
 * 在特征属于数据源时向区段添加特征，该数据源具有数据导出控制，该控件与将区段映射到的一个或多个目标上的数据导出标签不兼容。
-For example, say a segment is mapped to a destination with the export label **[UICONTROL! This destination may enable a combination with personally identifiable information (PII)]**. Export controls stop you from adding a trait to that segment if the data source that the trait belongs to has a data export control that says **[UICONTROL! Cannot be tied to personally identifiable information (PII)]**.
+例如，假设区段使用导出标签 **[UICONTROL映射到目标位置！此目标可与个人识别信息(PII)结合]**&#x200B;使用。导出控件可阻止您向该区段添加特征，如果特征所属的数据源具有UICCONTRL表示 **[数据导出控件！不能绑定到个人识别信息(PII)]**。
 * 将任何数据发送到目标目标都有一个数据导出标签，该标签被数据导出控制所阻止：
    * 包含的特征的数据源；
    * 在包含区段中使用的特征的数据源；
    * 由包含区段利用的配置文件合并规则；
    * 包含区段配置文件合并规则使用的任何数据源。
 
-[!UICONTROL Data Export Controls] 可自动为所有Audience Manager客户提供。但是，您需要管理员权限才能将导出控件添加到数据源。Adding export labels to a destination requires administrator permissions *or* sufficient privileges to create or edit a destination.
+[!UICONTROL Data Export Controls] 可自动为所有Audience Manager客户提供。但是，您需要管理员权限才能将导出控件添加到数据源。向目标中添加导出标签需要管理员权限 *或* 足够的权限来创建或编辑目标。
 
-## Controls and labels defined {#controls-labels}
+## 定义的控件和标签 {#controls-labels}
 
 [!UICONTROL Data Export Controls] 提供以下控件，帮助您对数据源和目标进行分类。
 
-要阻止数据交付，您必须使用导出控制对数据源进行分类，并向目标添加一个导出标签。如果仅将导出控件应用于数据源或目标，则此功能不会限制数据交付。When set on both the data source *and* destination, the export controls will limit the traits you can add to a segment and prevent sending the segment members to a destination.
+要阻止数据交付，您必须使用导出控制对数据源进行分类，并向目标添加一个导出标签。如果仅将导出控件应用于数据源或目标，则此功能不会限制数据交付。当在数据源 *和* 目标上设置时，导出控件将限制可添加到区段的特征，并阻止向目标发送区段成员。
 
-此外，在数据交付限制生效之前，至少一个导出标签必须与导出控制相匹配。For example, say you add the [!UICONTROL PII] export control to a data source. 接下来，将站点定位标签添加到目标位置。在这种情况下，导出控件不会限制数据交付，因为设置不匹配。However, if you add the [!UICONTROL PII] export label to the destination, the export controls will block the export.
+此外，在数据交付限制生效之前，至少一个导出标签必须与导出控制相匹配。例如，例如，将 [!UICONTROL PII] 导出控件添加到数据源。接下来，将站点定位标签添加到目标位置。在这种情况下，导出控件不会限制数据交付，因为设置不匹配。但是，如果您将 [!UICONTROL PII] 导出标签添加到目标，导出控件将阻止导出。
 
 >[!IMPORTANT]
 >
@@ -110,4 +110,4 @@ For example, say a segment is mapped to a destination with the export label **[U
 要开始，请查看数据源和目标文档。这些文章提供有关如何向数据源和目标添加导出控件和标签的说明。
 
 * [创建数据源](../features/manage-datasources.md#create-data-source)
-* [将数据导出标签添加到目标位置](../features/destinations/manage-destinations.md#add-data-export-labels)
+* [将数据导出标签添加到目标位置](../features/destinations/add-data-export-labels.md)
