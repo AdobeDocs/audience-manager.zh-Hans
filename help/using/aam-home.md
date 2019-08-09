@@ -6,12 +6,12 @@ solution: Audience Manager
 title: Audience Manager产品文档
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916
 translation-type: tm+mt
-source-git-commit: d8a7f4125bc5dbf8b6eeb5b64efec7462da4c4e9
+source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 
 ---
 
 
-# Audience Manager Product Documentation {#audience-manager-product-documentation}
+# Audience Manager产品文档 {#audience-manager-product-documentation}
 
 受众管理器为在线受众数据管理提供了行业顶尖的服务。我们的产品和服务为数字广告商和出版商提供了控制和利用其数据资产以促进销售取得成功所需的工具。
 
@@ -20,13 +20,13 @@ source-git-commit: d8a7f4125bc5dbf8b6eeb5b64efec7462da4c4e9
   <tr> 
    <td colname="col1"> <p> <b>新增项目和特色项目</b> </p> <p>了解最新Audience Manager功能：</p> <p> 
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
-     <li><a href="features/destinations/manage-destinations.md#default-landing-page">目标主页</a> </li>
+     <li><a href="features/destinations/destinations-home.md">目标主页</a> </li>
      <li><a href="features/administration/ip-obfuscation.md">IP 地址模糊处理</a> </li>
      <li><a href="overview/aam-gdpr/aam-iab-plugin.md">适用于 IAB TCF 的 Audience Manager 插件</a> </li>
      <li><a href="features/administration/usage-limits.md#id-mapping-limits">ID 映射限制</a> </li>
      <li><a href="features/global-data-sources.md">全局数据源</a> </li> 
-     </ul> </p> <p>See also, <a href="docs-updates/docs-2019.md"> 2019 Documentation Updates</a>. </p> 
-     <p>If you are new to Audience Manager, see our <a href="reference/aam-glossary.md"> Glossary</a> and <a href= "reference/ids-in-aam.md">Index of IDs.</a></p></td>
+     </ul> </p> <p>另 <a href="docs-updates/docs-2019.md"> 请参阅文档更新</a>。 </p> 
+     <p>如果您是Audience Manager新手，请参阅我们 <a href="reference/aam-glossary.md"> 的术语表</a> 和 <a href= "reference/ids-in-aam.md">ID索引。</a></p></td>
    <td colname="col2"> <p> <b>发行说明</b> </p> <p> 
      <ul id="ul_713F3E9DF0F84FE5981AC63D05948864"> 
       <li id="li_09C1CD15823E4AD7856CE40BE848E03F">有关新增功能和修复，请参阅最新的 <a href="https://marketing.adobe.com/resources/help/en_US/whatsnew/" format="https" scope="external">Experience Cloud 发行说明</a>。 </li> 
