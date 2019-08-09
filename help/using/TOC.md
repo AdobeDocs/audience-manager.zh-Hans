@@ -4,7 +4,7 @@ audience: 最终用户
 user-guide-title: Audience Manager用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 75eada471bc898be2f8903316285fe60890972cc
+source-git-commit: 86b23cc4097057fceadd4d0f7c5fad0db4f4232b
 
 ---
 
@@ -94,7 +94,6 @@ source-git-commit: 75eada471bc898be2f8903316285fe60890972cc
          + [定义目标宏](features/destinations/destination-macros.md)
          + [标准和串行键值对](features/destinations/key-value-pairs.md)
          + [将数据导出控制添加到目标](/help/using/features/destinations/add-data-export-labels.md)
-      + [管理目标](features/destinations/manage-destinations.md)
    + 个人资料合并规则{#profile-merge-rules}
       + [个人资料合并规则概述](features/profile-merge-rules/merge-rules-overview.md)
       + [个人资料合并规则入门](features/profile-merge-rules/merge-rules-start.md)
