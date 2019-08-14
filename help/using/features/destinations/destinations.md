@@ -1,13 +1,13 @@
 ---
 description: 在Audience Manager中，目标是任何第三方系统(广告服务器、DSP、广告网络等)。您希望与之共享数据的数据。目标生成器是用于创建和管理cookie、URL或服务器到服务器目标的工具。
-keywords: 集成代码，目标，目标概述
+keywords: 集成代码，目标，目标概述，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标
 seo-description: 在Audience Manager中，目标是任何第三方系统(广告服务器、DSP、广告网络等)。您希望与之共享数据的数据。目标生成器是用于创建和管理cookie、URL或服务器到服务器目标的工具。
 seo-title: 目标
 solution: Audience Manager
 title: 目标
 uuid: 5c7dbdc-f73 f-46fe-9f12-7685e8 d7334 f
 translation-type: tm+mt
-source-git-commit: 75eada471bc898be2f8903316285fe60890972cc
+source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
 
 ---
 
