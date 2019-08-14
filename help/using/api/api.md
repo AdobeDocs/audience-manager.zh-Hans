@@ -2,25 +2,26 @@
 description: 允许您使用Audience Manager编程工作的API和工具包。
 seo-description: 允许您使用Audience Manager编程工作的API和工具包。
 seo-title: API和SDK代码
+keywords: 'api、api、api、api、api、api、api、api、api、api、api '
 solution: Audience Manager
 title: API和SDK代码
 uuid: bf801e84-f914-4efd-8807-c4972474894 a
 translation-type: tm+mt
-source-git-commit: 9e407a14f6c466ae826f2b13013a997e762a160e
+source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
 
 ---
 
 
-# API and SDK Code {#api-and-sdk-code}
+# API和SDK代码 {#api-and-sdk-code}
 
 [!DNL API]和可让您通过Audience Manager编程工作的工具包。
 
 >[!NOTE]
 >
->These features are not supported by our [!DNL API]s:
+>我们 [!DNL API]的网站不支持这些功能：
 >
 >* [!UICONTROL General][!UICONTROL Trend]和 [!UICONTROL Interactive] 报告。
->* Deprecated Tag Insertion Manager ([!DNL TIM]) functionality.
+>* 已弃用的标记插入管理器([!DNL TIM])功能。
 
 
 详细信息:
