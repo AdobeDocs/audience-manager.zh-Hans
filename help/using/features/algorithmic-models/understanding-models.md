@@ -1,6 +1,6 @@
 ---
 description: 构建和管理算法建模中使用的特征或区段，也称为相似建模。模型功能位于Audience Data> Model中。
-keywords: 相对粗细
+keywords: 相对权重，相似度
 seo-description: 构建和管理算法建模中使用的特征或区段，也称为相似建模。模型功能位于Audience Data> Model中。
 seo-title: 关于算法模型
 solution: Audience Manager
@@ -8,26 +8,26 @@ title: 关于算法模型
 topic: DIL API
 uuid: 39441e72-5316-453d-9aff-0e0b633aabcd
 translation-type: tm+mt
-source-git-commit: 157e70906b80bd0a23ba6e7721d2c456d378ffb5
+source-git-commit: 73d670225fb4170d02428a1dd163f442540e3415
 
 ---
 
 
-# About Algorithmic Models {#about-algorithmic-models}
+# 关于算法模型 {#about-algorithmic-models}
 
-构建和管理算法建模中使用的特征或区段，也称为相似建模。Model features are located in **[!UICONTROL Audience Data > Models]**.
+构建和管理算法建模中使用的特征或区段，也称为相似建模。模型功能 **[!UICONTROL Audience Data > Models]**&#x200B;位于中。
 
 <!-- c_models.xml -->
 
-## Understanding Algorithmic Models {#understanding-models}
+## 了解算法模型 {#understanding-models}
 
-The sections below represent a review of algorithmic modeling in [!DNL Audience Manager]. 它们描述了建模的工作原理、优点和工作流。
+以下部分介绍了算法建模的审阅 [!DNL Audience Manager]。它们描述了建模的工作原理、优点和工作流。
 
 <!-- understanding-models.xml -->
 
-## Find New Users with Algorithmic Modeling {#find-new-users}
+## 使用算法建模查找新用户 {#find-new-users}
 
-算法建模可帮助您通过自动数据分析发现新的、独特的受众。该过程在您选择特征或区段、时间间隔以及第一方和第三方数据源时开始。您的选择为算法模型提供了输入。在分析过程运行时，它会根据选定人群的共享特征查找符合条件的用户。Upon completion, this data is available in [Trait Builder](../../features/traits/about-trait-builder.md) where you can use it to create traits based on [accuracy and reach](../../features/traits/trait-accuracy-reach.md). 此外，您还可以构建将算法特征与基于规则的特征相结合的细分，并通过Boolean表达式和比较运算符添加其他资质要求。算法建模可为您提供一种从所有可用特征数据中提取值的动态方法。
+算法建模可帮助您通过自动数据分析发现新的、独特的受众。该过程在您选择特征或区段、时间间隔以及第一方和第三方数据源时开始。您的选择为算法模型提供了输入。在分析过程运行时，它会根据选定人群的共享特征查找符合条件的用户。完成后，该数据可在 [Travientity Builder中使用，](../../features/traits/about-trait-builder.md) 您可以在这里使用它来根据 [准确性和触及范围创建特征](../../features/traits/trait-accuracy-reach.md)。此外，您还可以构建将算法特征与基于规则的特征相结合的细分，并通过Boolean表达式和比较运算符添加其他资质要求。算法建模可为您提供一种从所有可用特征数据中提取值的动态方法。
 
 ## 优势 {#advantages}
 
@@ -40,12 +40,12 @@ The sections below represent a review of algorithmic modeling in [!DNL Audience 
 
 ## 工作流 {#workflow}
 
-You manage models in **[!UICONTROL Audience Data > Models]**. 在较高级别，工作流程流程涉及：
+您可以管理模型 **[!UICONTROL Audience Data > Models]**。在较高级别，工作流程流程涉及：
 
-* 选择您希望算法评估的基准数据。This includes a trait or segment, time range, and data sources (your own data and third-party data you already have access to through [!DNL Audience Manager]). 在创建工作流中，您可以排除不想干扰模型的特征。
+* 选择您希望算法评估的基准数据。这包括特征或区段、时间范围和数据源(您自己拥有访问的数据和第三方数据 [!DNL Audience Manager])。在创建工作流中，您可以排除不想干扰模型的特征。
 * 保存模型。保存后，算法评估过程将自动运行。但是请注意，完成此过程可能需要长达天的时间。[!DNL Audience Manager] 算法已完成并结果可用于特征创建时向您发送电子邮件。
-* Build algorithmic traits in [!UICONTROL Trait Builder].
-* Combine traits into segments in [!UICONTROL Segment Builder].
+* 构建算法特征 [!UICONTROL Trait Builder]。
+* 将特征整合到细分中 [!UICONTROL Segment Builder]。
 * 创建区段数据并将其发送到目标。
 
 ## 疑难解答 {#troubleshooting}
@@ -59,27 +59,27 @@ You manage models in **[!UICONTROL Audience Data > Models]**. 在较高级别，
 >* [区段](../../features/segments/segments-purpose.md)
 
 
-## Understanding TraitWeight {#understanding-traitweight}
+## 了解Tritweight {#understanding-traitweight}
 
-[!UICONTROL TraitWeight] 是专门用于自动发现新特征的专有算法。It compares trait data from your current traits and segments against all other first and third-party data that you have access to through [!DNL Audience Manager]. Refer to this section for a description of the [!UICONTROL TraitWeight] algorithmic discovery process.
+[!UICONTROL TraitWeight] 是专门用于自动发现新特征的专有算法。它会将当前特征和细分中的特征与您有权访问的所有其他和第三方数据进行对比 [!DNL Audience Manager]。有关 [!UICONTROL TraitWeight] 算法发现过程的说明，请参阅本节。
 
 <!-- traitweight.xml -->
 
 ![](assets/algo_model.png)
 
-The following steps describe the [!UICONTROL TraitWeight] evaluation process.
+以下步骤介绍 [!UICONTROL TraitWeight] 了评估过程。
 
 ### 步骤1：为特征对比构建基线
 
-To build a baseline, [!UICONTROL TraitWeight] measures all the traits associated with an audience for a 30, 60, or 90 day interval. 接下来，它根据特征及其相关性对特征进行排名。频率计数衡量共性。相关性衡量特征仅在基准受众中存在的可能性。经常出现的特征通常被称为高共同性，这是一个重要特性，用于组合在选定数据源中发现的特征时设置加权得分。
+要构建基准， [!UICONTROL TraitWeight] 请测量与受众相关的所有特征(30、60或90天间隔)。接下来，它根据特征及其相关性对特征进行排名。频率计数衡量共性。相关性衡量特征仅在基准受众中存在的可能性。经常出现的特征通常被称为高共同性，这是一个重要特性，用于组合在选定数据源中发现的特征时设置加权得分。
 
 ### 步骤2：在数据源中查找相同的特征
 
-在构建基准比较后，算法会在选定的数据源中查找相同的特征。In this step, [!UICONTROL TraitWeight] performs a frequency count of all discovered traits and compares them to the baseline. 但是，与基线不同，不常见特征的排名高于显示频率更高的特征。稀有特征表示表现力很高。[!UICONTROL TraitWeight] 检查常见基线特征和不常见(高度特定)数据源特征的组合，它们比两个数据集通用的特征更具影响力或更理想。事实上，我们的模型识别了这些大的常见特征，并不会为高度相关的数据集分配多余的优先级。稀有特征获得了更高的优先级，因为它们比展示板中具有高通用性的特征代表新的独特用户。
+在构建基准比较后，算法会在选定的数据源中查找相同的特征。在此步骤中， [!UICONTROL TraitWeight] 对所有发现的特征执行频率计数，并将它们与基线进行比较。但是，与基线不同，不常见特征的排名高于显示频率更高的特征。稀有特征表示表现力很高。[!UICONTROL TraitWeight] 检查常见基线特征和不常见(高度特定)数据源特征的组合，它们比两个数据集通用的特征更具影响力或更理想。事实上，我们的模型识别了这些大的常见特征，并不会为高度相关的数据集分配多余的优先级。稀有特征获得了更高的优先级，因为它们比展示板中具有高通用性的特征代表新的独特用户。
 
 ### 步骤3：指定粗细
 
-In this step, [!UICONTROL TraitWeight] ranks newly discovered traits in order of influence or desirability. 粗细比例是从0%到100%的百分比。接近100%的特征意味着它们更类似于基线人群中的受众。而且，大量加权特征非常重要，因为它们代表的是新的、独特的用户，其行为可能与现有的基线受众相似。Remember, [!UICONTROL TraitWeight] considers traits with high commonality in the baseline and high specificity in the compared data sources to be more valuable than traits common in each data set.
+在此步骤中， [!UICONTROL TraitWeight] 按影响或可伸缩性排列新发现的特征。粗细比例是从0%到100%的百分比。接近100%的特征意味着它们更类似于基线人群中的受众。而且，大量加权特征非常重要，因为它们代表的是新的、独特的用户，其行为可能与现有的基线受众相似。请记住， [!UICONTROL TraitWeight] 在比较数据源中，在基准和高特异性方面具有高共通性，比每个数据集中常用的特征更有价值。
 
 ### 第步：评分用户
 
@@ -87,18 +87,18 @@ In this step, [!UICONTROL TraitWeight] ranks newly discovered traits in order of
 
 ### 第步：显示和使用结果
 
-Audience Manager displays your weighted model results in [!UICONTROL Trait Builder]. When you want to build an algorithmic trait, [!UICONTROL Trait Builder] lets you create traits based on the weighted score generated by the algorithm during a data run. 您可以选择更高的准确性，以仅符合具有非常高用户得分的用户的资格，因此与基准受众而非其他受众非常相似。如果您希望触及更大的受众(触及范围)，您可以降低准确性。
+Audience Manager [!UICONTROL Trait Builder]会显示您的加权模型。当您希望构建算法特征时， [!UICONTROL Trait Builder] 可根据数据运行过程中算法生成的加权分数创建特征。您可以选择更高的准确性，以仅符合具有非常高用户得分的用户的资格，因此与基准受众而非其他受众非常相似。如果您希望触及更大的受众(触及范围)，您可以降低准确性。
 
 ### 步骤6：重新评估跨处理周期特征的重要性
 
-Periodically, [!UICONTROL TraitWeight] re-evaluates the importance of a trait based on the size and change in the population of that trait. 这是因为随着时间的推移，符合特征的用户数会增加或减少。在特征变得非常大的特征中，这种行为最为明显。例如，假设算法使用特征A进行建模。As the population of trait A increases, [!UICONTROL TraitWeight] re-evaluates the importance of that trait and may assign a lower score or ignore it. 在这种情况下，特征A太常见或太大，对其人口有重要意义。After [!UICONTROL TraitWeight] reduces the value of Trait A (or ignores it in the model), the population of the algorithmic trait decreases. 具有影响力的特征列表反映了基线群体的发展。使用具有影响力的特征列表了解这些更改的发生原因。
+根据 [!UICONTROL TraitWeight] 特征的大小和变化，定期重新评估特征的重要性。这是因为随着时间的推移，符合特征的用户数会增加或减少。在特征变得非常大的特征中，这种行为最为明显。例如，假设算法使用特征A进行建模。特征A的人口增加， [!UICONTROL TraitWeight] 重新评估该特征的重要性，并可能分配较低得分或忽略分数。在这种情况下，特征A太常见或太大，对其人口有重要意义。在 [!UICONTROL TraitWeight] 降低Travientity A值(或忽略模型中的值)后，算法特征的人口会减少。具有影响力的特征列表反映了基线群体的发展。使用具有影响力的特征列表了解这些更改的发生原因。
 
 相关链接：
 
 * [Model Builder](../../features/algorithmic-models/create-model.md)
 * [准确性和触及力](../../features/traits/trait-accuracy-reach.md)
 
-## Update Schedule for Algorithmic Models and Traits {#update-schedule}
+## 算法模型和特征的更新计划 {#update-schedule}
 
 创建和更新新的或现有算法模型和特征的计划。
 
@@ -120,7 +120,7 @@ Periodically, [!UICONTROL TraitWeight] re-evaluates the importance of a trait ba
      <ul id="ul_97333AC409AF4760A91D90A06050122B"> 
       <li id="li_3A43809F924341FCAC3A85E3825E0F61"> EST EST(11月-三月) </li> 
       <li id="li_C07D22AB192D4E0191D9EBF6426EC73D"> 太平洋时间下午点(月-十一月) </li> 
-     </ul> </p> <p>在创建截止日期后构建或仿制的模型将在第二天进行处理。 </p> <p>如果第一次运行模型不生成数据，第二次运行时将再次运行。如果第二次尝试还没有生成任何数据，则第二次尝试将在第三天尝试。如果第三次尝试也不生成任何数据，则模型将停止运行。在这种情况下，我们将停用该模型。See more in <a href="../../features/algorithmic-models/understanding-models.md#troubleshooting"> Troubleshooting Algorithmic Models</a>. </p> </td>
+     </ul> </p> <p>在创建截止日期后构建或仿制的模型将在第二天进行处理。 </p> <p>如果第一次运行模型不生成数据，第二次运行时将再次运行。如果第二次尝试还没有生成任何数据，则第二次尝试将在第三天尝试。如果第三次尝试也不生成任何数据，则模型将停止运行。在这种情况下，我们将停用该模型。请参阅解决算法模型 <a href="../../features/algorithmic-models/understanding-models.md#troubleshooting"></a>疑难解答。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <b>更新模型</b> </td> 
@@ -154,7 +154,7 @@ Periodically, [!UICONTROL TraitWeight] re-evaluates the importance of a trait ba
  </tbody> 
 </table>
 
-## Models List View {#models-list-view}
+## 模型列表视图 {#models-list-view}
 
 列表视图是一个中央工作区，可帮助您创建、审阅和管理模型。
 
@@ -167,7 +167,7 @@ Periodically, [!UICONTROL TraitWeight] re-evaluates the importance of a trait ba
 * 按名称搜索模型。
 * 使用任何给定的模型创建算法特征。
 
-## Models Summary View {#models-summary-view}
+## 模型摘要视图 {#models-summary-view}
 
 摘要页面显示模型详细信息，如名称、范围/准确性、处理历史记录以及从模型创建的特征。该页面还包含允许您创建和管理模型的设置。单击摘要列表中的模型名称以查看其详细信息。
 
@@ -189,7 +189,7 @@ Periodically, [!UICONTROL TraitWeight] re-evaluates the importance of a trait ba
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> 模型范围和准确性</span> </p> </td> 
-   <td colname="col2"> <p>Shows <a href="../../features/traits/trait-accuracy-reach.md"> accuracy and reach</a> data for the last model run. </p> </td>
+   <td colname="col2"> <p>显示 <a href="../../features/traits/trait-accuracy-reach.md"> 上一模型运行的准确性和触及</a> 范围。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> 模型处理历史</span> </p> </td> 
@@ -200,13 +200,13 @@ Periodically, [!UICONTROL TraitWeight] re-evaluates the importance of a trait ba
    <td colname="col2"> <p><span class="wintitle"> 具有影响力的特征</span> 表： </p> <p> 
      <ul id="ul_FB15A554CADC40D09F9AC6D384D54ECD"> 
       <li id="li_343E25E8B3584D38B1E2BCB211033DBF"> 列出在模型的基线人群中表现最好的50个具有影响力的特征。 </li> 
-      <li id="li_44957F46C0744A84A987D8F25D93E24E">Ranks each trait in order of its <span class="wintitle"> Relative Weight</span> rank. <span class="wintitle"> 相对权重</span> 按影响或可伸缩性排序新发现的特征。粗细比例是从0%到100%的百分比。接近100%的特征意味着它们更类似于基线人群中的受众。See <a href="../../features/algorithmic-models/understanding-models.md#understanding-traitweight"> Understanding TraitWeight</a>. </li> 
+      <li id="li_44957F46C0744A84A987D8F25D93E24E">按 <span class="wintitle"> 相对权重</span> 排名排列每个特征。<span class="wintitle"> 相对权重</span> 按影响或可伸缩性排序新发现的特征。粗细比例是从0%到100%的百分比。接近100%的特征意味着它们更类似于基线人群中的受众。请参阅 <a href="../../features/algorithmic-models/understanding-models.md#understanding-traitweight"> 了解Tritweight</a>。 </li> 
       <li id="li_260151E23B1E484BA06C8494552A04F0">显示每个特征的30天统一和特征总数。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> 使用模型的特征</span> </p> </td>
-   <td colname="col2"> <p>显示基于选定模型的算法特征列表。单击特征名称或特征ID以了解有关特征的更多信息。Select <b><span class="uicontrol"> Create New Trait with Model</span></b> to go to the algorithmic trait creation process. </p> <p>章节标签根据您的模型名称进行更改。For example, say you create a model and name it Model A. When you load the summary page, the name of this section gets changed to <span class="wintitle"> Traits Using Model A</span>. </p> </td>
+   <td colname="col2"> <p>显示基于选定模型的算法特征列表。单击特征名称或特征ID以了解有关特征的更多信息。选择 <b><span class="uicontrol"> “使用模型</span></b> 创建新特征”可转到算法特征创建流程。 </p> <p>章节标签根据您的模型名称进行更改。例如，假设您创建一个模型并将其命名为A Model A。加载摘要页面时，此部分的名称会更改为 <span class="wintitle"> 使用模型A</span>的属性。 </p> </td>
   </tr>
  </tbody>
 </table>
