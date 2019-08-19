@@ -5,7 +5,7 @@ seo-title: 添加基于设备的新目标
 solution: Audience Manager
 title: 添加基于设备的新目标
 translation-type: tm+mt
-source-git-commit: b492065756d45ee6dfb185cc387409dea72a9923
+source-git-commit: d185a1d418e99abb99c36b28dfb419a1fb3b60f5
 
 ---
 
@@ -41,13 +41,13 @@ source-git-commit: b492065756d45ee6dfb185cc387409dea72a9923
 
 1. 登录Audience Manager帐户，转至 **[!DNL Audience Data > Destinations]**&#x200B;并单击 **[!DNL Create Destination]**。
 2. 在 **[!DNL Basic Information]** 该部分中，输入一个 **[!DNL Name]****[!DNL Description]** 新目标，然后使用以下列表中的设置： ![setup](assets/dbd-new-basic.png)
+   * **[!DNL Category]**: [!DNL Integrated Platforms];
+   * **[!DNL Type]**: [!DNL Device-Based];
+   * **[!DNL Platform]**：选择要将受众区段发送到的目标平台。
+   * **[!DNL Account]**：选择与选定平台关联的所需广告商帐户。
 3. 单击 **[!DNL Next]**.
 4. 选择要为此目标设置 [的数据导出标签](/help/using/features/data-export-controls.md#controls-labels) 。
 5. 单击 **[!DNL Save]**.
 6. 在 **[!DNL Segment Mappings]** 部分中，选择要发送到此目标的受众细分。
 7. 保存目标。
 
-* **[!DNL Category]**: [!DNL Integrated Platforms];
-* **[!DNL Type]**: [!DNL Device-Based];
-* **[!DNL Platform]**：选择要将受众区段发送到的目标平台。
-* **[!DNL Account]**：选择与选定平台关联的所需广告商帐户。
