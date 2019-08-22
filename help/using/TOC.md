@@ -4,7 +4,7 @@ audience: 最终用户
 user-guide-title: Audience Manager用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 96717384ebb82056f330312b0f99fb97086a2e05
+source-git-commit: 97e8e4282fdb729a367cdfbfce0a9af10651edfd
 
 ---
 
@@ -78,20 +78,29 @@ source-git-commit: 96717384ebb82056f330312b0f99fb97086a2e05
    + [派生信号](features/derived-signals.md)
    + 目标{#destinations}
       + [目标概述](features/destinations/destinations.md)
-      + [目标主页](/help/using/features/destinations/destinations-home.md)
+      + [目标主页](features/destinations/destinations-home.md)
       + Adobe Experience Cloud目标{#experience-cloud-destinations}
-         + [配置Analytics目标](/help/using/features/destinations/create-analytics-destination.md)
-      + 基于人员的目标 {#pbd}
+         + [配置Analytics目标](features/destinations/create-analytics-destination.md)
+      + 基于人员的目标 {#people-based-destinations}
+         + [概述和使用案例](features/destinations/people-based-destinations-overview.md)
+         + [先决条件和注意事项](features/destinations/people-based-destinations-prerequisites.md)
+         + 实施指南 {#pbd-implementation}
+            + [实施概述](features/destinations/people-based-destinations-workflow.md)
+            + [工作流程A-基于所有在线活动和离线数据的个性化](features/destinations/people-based-destinations-workflow-combined.md)
+            + [工作流B-基于离线数据的个性化](features/destinations/people-based-destinations-workflow-offline.md)
+            + [工作流程C-基于实名活动和离线数据的个性化](features/destinations/people-based-destinations-workflow-authenticated.md)
+         + [使用基于人员的平台进行身份验证](features/destinations/people-based-destinations-authentication.md)
+         + [可共享受众](/help/using/features/destinations/people-based-destinations-reporting.md)
       + 基于设备的目标(服务器到服务器) {#device-based}
-         + [添加基于设备的新目标](/help/using/features/destinations/add-device-based-destinations.md)
-         + [为服务器到服务器目标添加或编辑区段](/help/using/features/destinations/add-edit-segments.md)
-         + [将Twitter定制的受众配置为基于自助服务设备的目标](/help/using/features/destinations/twitter-tailored-audiences.md)
+         + [添加基于设备的新目标](features/destinations/add-device-based-destinations.md)
+         + [为服务器到服务器目标添加或编辑区段](features/destinations/add-edit-segments.md)
+         + [将Twitter定制的受众配置为基于自助服务设备的目标](features/destinations/twitter-tailored-audiences.md)
       + 自定义目标 {#custom-destinations}
-         + [配置URL目标](/help/using/features/destinations/create-url-destination.md)
-         + [配置Cookie目标](/help/using/features/destinations/create-cookie-destination.md)
-         + [Cookie目标的可选设置](/help/using/features/destinations/cookie-destination-options.md)
+         + [配置URL目标](features/destinations/create-url-destination.md)
+         + [配置Cookie目标](features/destinations/create-cookie-destination.md)
+         + [Cookie目标的可选设置](features/destinations/cookie-destination-options.md)
       + 目标引用 {#destinations-reference}
-         + [目标生成器](/help/using/features/destinations/destination-builder.md)
+         + [目标生成器](features/destinations/destination-builder.md)
          + [get_ aAmacookies代码](features/destinations/get-aam-cookie-code.md)
          + [定义目标宏](features/destinations/destination-macros.md)
          + [标准和串行键值对](features/destinations/key-value-pairs.md)
@@ -362,6 +371,7 @@ source-git-commit: 96717384ebb82056f330312b0f99fb97086a2e05
    + [数据收集和产品集成常见问题解答](faq/faq-data-collection.md)
    + [入站客户数据摄取常见问题解答](faq/faq-inbound-data-ingestion.md)
    + [隐私和数据保留常见问题解答](faq/faq-privacy.md)
+   + [基于人员的目标常见问题解答](faq/faq-people-based-destinations.md)
    + [产品功能和功能常见问题解答](faq/faq-features.md)
    + [个人资料合并规则和设备图表常见问题解答](faq/faq-profile-merge.md)
    + [定位常见问题解答](faq/faq-targeting.md)
