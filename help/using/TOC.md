@@ -4,7 +4,7 @@ audience: 最终用户
 user-guide-title: Audience Manager用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 8ceeee38dc798810559467ffc12177a2f1968b44
+source-git-commit: 5bd7acbdaa90d33eb5f806dbe072acfb013d8f0b
 
 ---
 
@@ -81,7 +81,7 @@ source-git-commit: 8ceeee38dc798810559467ffc12177a2f1968b44
       + [目标主页](features/destinations/destinations-home.md)
       + Adobe Experience Cloud目标{#experience-cloud-destinations}
          + [配置Analytics目标](features/destinations/create-analytics-destination.md)
-      + 基于人员的目标 {#people-based-destinations}
+      + 基于人员的目标 {#people-based}
          + [概述和使用案例](features/destinations/people-based-destinations-overview.md)
          + [先决条件和注意事项](features/destinations/people-based-destinations-prerequisites.md)
          + 实施指南 {#implementation-guide}
