@@ -5,7 +5,7 @@ seo-title: 将Twitter定制的受众配置为基于自助服务设备的目标
 solution: Audience Manager
 title: 将Twitter定制的受众配置为基于自助服务设备的目标
 translation-type: tm+mt
-source-git-commit: 0ca286bd391c9c3a5298508ecc5a42ec61a64044
+source-git-commit: bdc626ef11aacbf1fcbf138748b56acc24ec7b13
 
 ---
 
@@ -21,8 +21,6 @@ source-git-commit: 0ca286bd391c9c3a5298508ecc5a42ec61a64044
 1. [!DNL Twitter Ads] 您的帐户必须具有广告资格。在创建广告后的前两周，新 [!DNL Twitter Ads] 帐户没有资格获得广告。
 2. 您在Audience Manager中授权访问的Twitter用户帐户必须启用 [Partner Audience Manager](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 权限。
 3. 如果 [您正在将现有Twitter集成更新到自助服务管理](#update-existing-twitter-integrations)，则您的Twitter用户帐户必须启用 [广告管理器](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 权限。
-
-
 
 ## 添加新 [!DNL Twitter Tailored Audiences] 目标 {#add-new-twitter-destination}
 
@@ -65,9 +63,18 @@ source-git-commit: 0ca286bd391c9c3a5298508ecc5a42ec61a64044
 请按照以下步骤将现有 [!DNL Twitter Tailored Audiences] 目标迁移到自助服务模型。
 
 1. 登录Audience Manager帐户 **[!DNL Administration > Integrated Accounts]**，然后转到。
-2. 单击 **[!DNL Add Account]**.
-3. 选择 [!DNL Twitter Tailored Audiences] 并单击 **[!DNL Confirm]** 以重定向到身份验证页面。![集成平台](assets/dbd-integrated-platforms.png)
-4. 通过Twitter帐户进行身份验证后，您将重定向到Audience Manager，此时您应该可以看到您的关联广告商帐户。选择要使用并单击 **[!DNL Confirm]**&#x200B;的广告商帐户。
+1. 单击 **[!DNL Add Account]**.
+1. 选择 [!DNL Twitter Tailored Audiences] 并单击 **[!DNL Confirm]** 以重定向到身份验证页面。![集成平台](assets/dbd-integrated-platforms.png)
+1. [!DNL Twitter] 通过您的帐户进行身份验证后，您将重定向到Audience Manager，此时您应该可以看到您的关联广告商帐户。选择要使用并单击 **[!DNL Confirm]**&#x200B;的广告商帐户。
+1. 转到 **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Destinations]** ，然后单击需要配置的Twitter目标。
+1. 单击 **[!UICONTROL Edit]**. **[!UICONTROL Basic Information]** 在部分中，单击 **[!UICONTROL Integrated Account]** 下拉菜单，然后选择您在步骤中已通过身份验证的 [!DNL Twitter] 帐户。
+1. **[!UICONTROL Save]** 目标。
+
+## 验证迁移到自助服务管理 {#migration-validation}
+
+将现有 [!DNL Twitter] 集成集成到自助服务管理可能需要天的时间。迁移完成后，Audience Manager会在UI中向您显示通知。
+
+您还会在 [!DNL Twitter] 您的帐户中看到一组新的受众，其名称前缀为[！DNL [Adobe DMP受众]]。对于受众群体，最多允许天的时间完全回填。迁移完成后，您应使用新受众而不是旧受众。
 
 ## 区段映射注意事项 {#segment-mapping-considerations}
 
@@ -76,7 +83,7 @@ source-git-commit: 0ca286bd391c9c3a5298508ecc5a42ec61a64044
 * 提供可读的区段映射名称。我们建议使用您用于Audience Manager区段的相同名称。
 * 请勿在区段和区段映射名称中使用逗号。
 
-**示例**
+### 示例
 
 * 正确的区段或映射名称：“美国和欧洲购物者”；
 * 区段或映射名称不正确：“US，European h0Pp3rs”.
