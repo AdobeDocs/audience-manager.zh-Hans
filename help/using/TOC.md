@@ -4,7 +4,7 @@ audience: 最终用户
 user-guide-title: Audience Manager用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 97e8e4282fdb729a367cdfbfce0a9af10651edfd
+source-git-commit: 8ceeee38dc798810559467ffc12177a2f1968b44
 
 ---
 
@@ -84,7 +84,7 @@ source-git-commit: 97e8e4282fdb729a367cdfbfce0a9af10651edfd
       + 基于人员的目标 {#people-based-destinations}
          + [概述和使用案例](features/destinations/people-based-destinations-overview.md)
          + [先决条件和注意事项](features/destinations/people-based-destinations-prerequisites.md)
-         + 实施指南 {#pbd-implementation}
+         + 实施指南 {#implementation-guide}
             + [实施概述](features/destinations/people-based-destinations-workflow.md)
             + [工作流程A-基于所有在线活动和离线数据的个性化](features/destinations/people-based-destinations-workflow-combined.md)
             + [工作流B-基于离线数据的个性化](features/destinations/people-based-destinations-workflow-offline.md)
