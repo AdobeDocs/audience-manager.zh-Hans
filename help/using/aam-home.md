@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience Manager产品文档
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916
 translation-type: tm+mt
-source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
+source-git-commit: aa58d1aa69a7d5e112d6b24fa8250bf56ccb370a
 
 ---
 
@@ -20,11 +20,10 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
   <tr> 
    <td colname="col1"> <p> <b>新增项目和特色项目</b> </p> <p>了解最新Audience Manager功能：</p> <p> 
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
+     <li><a href="features/destinations/people-based-destinations-overview.md">基于人员的目标</a> </li>
+     <li><a href="features/destinations/twitter-tailored-audiences.md">将Twitter定制的受众配置为基于自助服务设备的目标</a> </li>
      <li><a href="features/destinations/destinations-home.md">目标主页</a> </li>
      <li><a href="features/administration/ip-obfuscation.md">IP 地址模糊处理</a> </li>
-     <li><a href="overview/aam-gdpr/aam-iab-plugin.md">适用于 IAB TCF 的 Audience Manager 插件</a> </li>
-     <li><a href="features/administration/usage-limits.md#id-mapping-limits">ID 映射限制</a> </li>
-     <li><a href="features/global-data-sources.md">全局数据源</a> </li> 
      </ul> </p> <p>另 <a href="docs-updates/docs-2019.md"> 请参阅文档更新</a>。 </p> 
      <p>如果您是Audience Manager新手，请参阅我们 <a href="reference/aam-glossary.md"> 的术语表</a> 和 <a href= "reference/ids-in-aam.md">ID索引。</a></p></td>
    <td colname="col2"> <p> <b>发行说明</b> </p> <p> 
@@ -38,7 +37,7 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
       <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="https://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe 培训和教程</a> </li> 
       <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://marketing.adobe.com/resources/help/en_US/home/index.html" scope="external" format="https"> 产品文档主页</a> </li> 
       <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/support/audience-manager.html" format="https" scope="external">Audience Manager 学习和支持</a> </li> 
-     </ul> </p> </td> 
+     </ul> </p> </td>
   </tr> 
  </tbody> 
 </table>
