@@ -5,7 +5,7 @@ seo-title: 将Twitter定制的受众配置为基于自助服务设备的目标
 solution: Audience Manager
 title: 将Twitter定制的受众配置为基于自助服务设备的目标
 translation-type: tm+mt
-source-git-commit: bdc626ef11aacbf1fcbf138748b56acc24ec7b13
+source-git-commit: 2ca6ed86922af2dbdfd268551f101e58c8356579
 
 ---
 
@@ -74,7 +74,7 @@ source-git-commit: bdc626ef11aacbf1fcbf138748b56acc24ec7b13
 
 将现有 [!DNL Twitter] 集成集成到自助服务管理可能需要天的时间。迁移完成后，Audience Manager会在UI中向您显示通知。
 
-您还会在 [!DNL Twitter] 您的帐户中看到一组新的受众，其名称前缀为[！DNL [Adobe DMP受众]]。对于受众群体，最多允许天的时间完全回填。迁移完成后，您应使用新受众而不是旧受众。
+您还将在 [!DNL Twitter] 您的帐户中看到一组新的受众，其名称前缀为[[!DNL Adobe DMP Audience]]。对于受众群体，最多允许天的时间完全回填。迁移完成后，您应使用新受众而不是旧受众。
 
 ## 区段映射注意事项 {#segment-mapping-considerations}
 
