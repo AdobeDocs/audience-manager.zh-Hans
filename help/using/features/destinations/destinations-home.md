@@ -5,7 +5,7 @@ seo-title: 管理目标
 solution: Audience Manager
 title: 管理目标
 translation-type: tm+mt
-source-git-commit: 75eada471bc898be2f8903316285fe60890972cc
+source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 75eada471bc898be2f8903316285fe60890972cc
 
 * ****&#x200B;全部：显示所有类型的目标。
 * **Adobe Experience Cloud**：显示将数据发送到其他Adobe Experience Cloud解决方案的目标。目前，唯一支持的选项是Adobe Analytics。See [Configure an Analytics Destination](/help/using/features/destinations/create-analytics-destination.md).
-* **集成平台**：显示基于用户的和基于设备的目标(也称为服务器到服务器目标)。请注意，基于人员的目标目前仅对选定客户提供测试功能。
+* **集成平台**：显示基于用户的和基于设备的目标(也称为服务器到服务器目标)。
 * **自定义**：显示cookie和URL目标。
 
 
