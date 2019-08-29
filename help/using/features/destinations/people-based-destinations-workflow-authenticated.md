@@ -5,7 +5,7 @@ seo-title: 工作流程C-基于实名活动和离线数据的个性化
 solution: Audience Manager
 title: 工作流程C-基于实名活动和离线数据的个性化
 translation-type: tm+mt
-source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
+source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
 
 ---
 
@@ -49,16 +49,16 @@ source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
 
 假设您已经创建了以下两个数据源。
 
-|数据源ID|数据源内容||
-||-||-||
-|999999|现有dpuUID(CRM ID)||
-|986754|哈希电子邮件地址||
+| 数据源ID | 数据源内容 |
+|---|---|
+| 999999 | 现有的DPuUID(CRM ID) |
+| 987654 | 散列电子邮件地址 |
 
 然后，您要符合以下表格中特征的CRM ID。
 
-| DPUUID(CRM ID)|电子邮件地址|散列电子邮件地址|特征||
-||-||-||-||-||
-||6807998276567805040526074074660039||`johndoe@example.com`|55e79200c1635b37ad37a378c39b12f120f116625093a19bc32fff15041149|位置= US||
+| DPUUID(CRM ID) | 电子邮件地址 | 散列电子邮件地址 | 特性 |
+|---|---|---|---|
+| 68079982765673198504052656074456196039 | `johndoe@example.com` | 55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149 | location= US |
 
 您声明的ID应遵循以下语法：
 
