@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 特征详细信息页面
 uuid: 23301376-c1 cc-4778-b8 c4-9831f6739 db9
 translation-type: tm+mt
-source-git-commit: aadcafe10d452a0abc02a430485a373c6c80cdc5
+source-git-commit: 3130882116d39e94b446679999144f1eb55edc77
 
 ---
 
@@ -29,15 +29,16 @@ source-git-commit: aadcafe10d452a0abc02a430485a373c6c80cdc5
 
 * 对于基于规则的特征，特征资格符合实时条件，因为用户可以在浏览器中获得特征。
 * 对于载入的特征，特征资格资格会在处理入站文件后发生，即将入站文件 [送入Audience Manager](../../faq/faq-inbound-data-ingestion.md) ，这就是特征资格资格。
-* **独特特征真实性**：在给定时间段内将此特征添加到其配置文件的唯一用户计数。
-* **特征总数**：当前符合此特征的唯一用户的数量。
+* **[!UICONTROL Unique Trait Realizations]**：在给定时间段内将此特征添加到其配置文件的唯一用户计数。
+* **[!UICONTROL Total Trait Population]**：当前符合此特征的唯一用户的数量。
 
    ![特征图](assets/trait-summary.png)
 
-* **标识类型划分**：前三个条目显示具有符合特征的最高三个跨设备数据源的前三个跨设备数据源，按降序排列。第四个条目显示了符合特征的所有其他 [!DNL DPUUIDs] ([!DNL CRM IDs])的所有其他数据源的总和，这些数据源不在前三个数据源中。仅当您在页面右上方的 [!UICONTROL Show Results By] 下拉菜单中选择跨设备ID时，才会显示此报告。默认下拉选项是未 [!UICONTROL Device ID]显示此报告的位置。
+* **[!UICONTROL Identity Type Breakdown]**：前三个条目显示具有符合特征的最高三个跨设备数据源的前三个跨设备数据源，按降序排列。第四个条目显示了符合特征的所有其他 [!DNL DPUUIDs] ([!DNL CRM IDs])的所有其他数据源的总和，这些数据源不在前三个数据源中。仅当您在页面右上方的 [!UICONTROL Show Results By] 下拉菜单中选择跨设备ID时，才会显示此报告。默认下拉选项是未 [!UICONTROL Device ID]显示此报告的位置。
 
    ![特征图](assets/trait-identity.png)
-
+   > [!NOTE]
+   > 如果您具有符合特征的跨设备ID，则Audience Manager仅显示 [!UICONTROL Identity Type Breakdown] 报告。
 
 ## 特征表达式 {#trait-expression}
 
