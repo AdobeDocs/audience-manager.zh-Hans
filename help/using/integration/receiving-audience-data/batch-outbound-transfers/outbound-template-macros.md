@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 出站模板宏
 uuid: c082d3-306b-4ff5-afb2-418bd543 d8 d0
 translation-type: tm+mt
-source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
+source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
 
 ---
 
@@ -15,9 +15,9 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
 
 列出可用于创建出站模板的宏。其中包括文件名、标题宏和内容宏。
 
-## File Name and File Header Macros {#file-name-header-macros}
+## 文件名和文件头宏 {#file-name-header-macros}
 
-表列表列出并描述可在文件名中使用的宏以及定义标题字段。For code samples, see [Outbound Macro Examples](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md).
+表列表列出并描述可在文件名中使用的宏以及定义标题字段。有关代码示例，请参阅 [出站宏示例](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)。
 
 <table id="table_C353AF028E0A4944A8727FD01C94FDB6"> 
  <thead> 
@@ -44,8 +44,17 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
    <td colname="col2"> <p>订单/目标ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> PIDALIAS </code> </p> </td> 
+   <td colname="col1"> <p> <code> PID_ ALIAS </code> </p> </td> 
    <td colname="col2"> <p>订单/目标ID的别名。 </p> <p>别名在管理员UI中设置。 </p> </td> 
+  </tr>
+  <tr> 
+   <td colname="col1"> <p> <code> SplitNUM </code> </p> </td> 
+   <td colname="col2"> <p>指示将出站文件拆分为多个部分。将文件名中的SPLITNUM部分替换为前面的部件号，以确保SUSITNUM部分至少有三个字符。</p>
+   <p>SUSITNUM宏不需要被&lt;&gt;字符所包围。</p><p>示例： <code>&lt; SYNC_ TYPE&gt;_&lt; ORDER_ ID&gt;_&lt; DPID&gt;_&lt; SYNC_ MODE&gt;_&lt;时间戳&gt; SUSITNUM. csv</code>
+<p>s3_123456_9999_ full_1566906141.csv</p> 
+<p>s3_123456_9999_ full_1566906142.csv</p> 
+<p>s3_123456_9999_ full_1566906143.csv</p> 
+<p>以上示例中的最后三位数字(001,002,003)为SPLITNUM标识符。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 同步模式 </code> </p> </td> 
@@ -70,14 +79,15 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 时间戳 </code> </p> </td> 
-   <td colname="col2"> <p>A10-digital，UTC，Unix时间戳。 </p> <p>It can also be formatted as <code> &lt;TIMESTAMP; format="YYYYMMDDhhmmss"&gt; </code> following Java date/timestamp formatting rules. </p> </td> 
-  </tr> 
- </tbody> 
+   <td colname="col2"> <p>A10-digital，UTC，Unix时间戳。 </p> <p>它还可以设置为 <code> &lt; TIMESTAMP；format=“yyyyMMddHmmss”&gt; </code> &gt; after Java date/timestamp格式设置规则。 </p> </td> 
+  </tr>
+
+</tbody> 
 </table>
 
-## Content Macros {#content-macros}
+## 内容宏 {#content-macros}
 
-宏用于格式化数据文件的内容。For code samples, see [Outbound Macro Examples](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md).
+宏用于格式化数据文件的内容。有关代码示例，请参阅 [出站宏示例](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)。
 
 <table id="table_5C6F9678CFF34C5EB67BA1DEA0479F1D"> 
  <thead> 
@@ -133,7 +143,7 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OUTPUT_ TERMATY_ VALUE </code> </p> </td> 
-   <td colname="col2"> <p>Returns <code> 1 </code> as a static, hardcoded value. </p> </td> 
+   <td colname="col2"> <p>返回 <code> 1 </code> 作为静态硬编码值。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> PID </code> </p> </td> 
@@ -151,17 +161,17 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
    <td colname="col1"> <p> <code> Segment_ LIST </code> </p> </td> 
    <td colname="col2"> <p>返回列表中区段的列表。接受以下可选参数： </p> 
     <ul id="ul_B111AA0D6C18445598A1444B8B7E9325"> 
-     <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> SegmentiID </code>：区段ID。已弃用。Use <code> sid </code>. </li> 
-     <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>：客户细分ID。已弃用。Use <code> sid </code>. </li> 
+     <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> SegmentiID </code>：区段ID。已弃用。使用 <code> sid </code>。 </li> 
+     <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>：客户细分ID。已弃用。使用 <code> sid </code>。 </li> 
      <li id="li_D85F0A5D16AE4DAFB55C17DBB35EA66E"> <code> sid </code>：区段ID </li> 
      <li id="li_9BE103EFD8384464B46FAC00422431DB"> <code> 类型 </code>：返回 <code> 5 </code>，一个静态硬编码值，它将数据标识为区段数据。 </li> 
      <li id="li_FE5049089F2944FA9DB9F9D546DBA167"> <code> 别名 </code>：已弃用。不要使用。 </li> 
      <li id="li_DD778AA2D1DB4D409CF5026B5D9DBD27"> <code> laxDisdateTime </code>：指示上次区段被识别时间的Unix时间戳。 </li> 
-    </ul> <p>将这些变量放在宏之后大括号中。For example, this code separates results with a pipe "|" character: <code> &lt;SEGMENT_LIST:{seg|&lt;seg.type&gt;,&lt;seg.sid&gt;}; separator=","&gt; </code> </p> </td> 
+    </ul> <p>将这些变量放在宏之后大括号中。例如，此代码将结果与管道分开”||“字符： <code> &lt; SUNTERGE_ LIST：{seg||&lt; seg. type&gt;，&lt; seg. sid&gt;}；separator="，"&gt; </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SET_ TERMATS </code> </p> </td> 
-   <td colname="col2"> <p>Returns <code> 1 </code>, as a static, hardcoded value. </p> </td> 
+   <td colname="col2"> <p>返回 <code> 1 </code>，作为静态的硬编码值。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 同步模式 </code> </p> </td> 
@@ -195,7 +205,7 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
       </ul> </li> 
      <li id="li_1DDE25334CF9479A8C4738F3CB3C40AA"> <code> 陷印ID </code>：特征ID。 </li> 
      <li id="li_DCB89F2A40BB43C98EE3C84B5B3CDD33"> <code> lastEnabled </code>：上次识别特征的时间。Unix时间戳。 </li> 
-    </ul> <p>将这些变量放在宏之后大括号中。For example, this code separates the results with a pipe "|" character: <code> &lt;TRAIT_LIST:{trait|&lt;trait.Id&gt;,&lt;trait.lastRealized&gt;};separator="," </code> </p> </td> 
+    </ul> <p>将这些变量放在宏之后大括号中。例如，此代码将结果与管道分开”||“字符： <code> &lt; TRAIT_ LIST：{traentity||&lt; traentity. id&gt;，&lt; traventiate. lastEnabled&gt;}；separator=”，“ </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> UUID </code> </p> </td> 
