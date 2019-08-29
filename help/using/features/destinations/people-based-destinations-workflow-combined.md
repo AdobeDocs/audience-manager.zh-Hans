@@ -5,7 +5,7 @@ seo-title: 工作流程A-基于所有在线活动和离线数据的个性化
 solution: Audience Manager
 title: 工作流程A-基于所有在线活动和离线数据的个性化
 translation-type: tm+mt
-source-git-commit: f3f47db944d9f771cbd55058f6652188cda0e147
+source-git-commit: 3fd24d4006ccbb14dad5cad10a66749a1cb97f47
 
 ---
 
