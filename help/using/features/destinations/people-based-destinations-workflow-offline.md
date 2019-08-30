@@ -5,7 +5,7 @@ seo-title: 工作流B-基于离线数据的个性化
 solution: Audience Manager
 title: 工作流B-基于离线数据的个性化
 translation-type: tm+mt
-source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
+source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 
 ---
 
@@ -28,11 +28,11 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
 
 您希望从下表中获得相应的内置特征ID的客户ID。我们考虑将您 [的DPuID](../../reference/ids-in-aam.md) 存储在ID999999的数据源中，Audience Manager合作伙伴ID为123。
 
-|客户ID(DPUUID)||载入的特征ID||
-||-||-||
-||6807998276567805040526074074660039||12345，23456||
-||674126820834119957255387700443620307584||45678||
-||891590247967603637377360760026765693||11223，93342，27341||
+| 客户ID(DPUUID) | 载入的特征ID |
+| -------------------------------------- | ------------------- |
+| 68079982765673198504052656074456196039 | 12345, 23456 |
+| 67412682083411995725538770443620307584 | 45678 |
+| 89159024796760343733111707646026765593 | 11223, 93342, 27341 |
 
 要在上面的示例中确定相应的已载入特征的客户ID，您必须上传 [包含以下内容的入站数据文件](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md) ：
 
@@ -88,15 +88,17 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
 作为提醒，您现在有两个数据源：
 
 | 数据源ID | 数据源内容 |
-|---|---|
+| -------------- | -------------------------- |
 | 999999 | 现有的DPuUID(CRM ID) |
 | 987654 | 散列电子邮件地址 |
 
 | dpuUID(CRM ID) | 电子邮件地址 | 散列电子邮件地址 |
-|---|---|---|
+| -------------------------------------- | --------------------- | ---------------------------------------------------------------- |
 | 68079982765673198504052656074456196039 | `johndoe@example.com` | 55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149 |
 | 67412682083411995725538770443620307584 | `janedoe@email.com` | 16d72e3edbeb089b299e0d12fc09522fdc5ece2d11dcb1304ecdd6fab4f7193a |
 | 89159024796760343733111707646026765593 | `name@mydomain.com` | feec5debcea411f54462a345a0d90c9975415d2d4862745ff8af00c49b6b4ae6 |
+
+<br/>
 
 [您的ID同步文件](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) 将具有以下内容：
 
@@ -106,9 +108,13 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
 89159024796760343733111707646026765593<TAB>feec5debcea411f54462a345a0d90c9975415d2d4862745ff8af00c49b6b4ae6
 ```
 
+<br/>
+
 [ID同步文件](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) 必须遵循以下命名结构：
 
 `c2c_id_<DPUUID_DATA_SOURCE_ID>_<HASHED_EMAIL_DATA_SOURCE_ID>_TIMESTAMP.sync`
+
+<br/>
 
 在上面的示例中，文件名将如下所示： `c2c_id_999999_987654_1560431657.sync`
 
