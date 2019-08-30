@@ -5,7 +5,7 @@ seo-title: 工作流程A-基于所有在线活动和离线数据的个性化
 solution: Audience Manager
 title: 工作流程A-基于所有在线活动和离线数据的个性化
 translation-type: tm+mt
-source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
+source-git-commit: d0e343e3fbaf527e9b630dc2dbc851d8f8f4c0b2
 
 ---
 
@@ -18,6 +18,8 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 
 根据 [您的dpuUID](../../reference/ids-in-aam.md) 是否为小写电子邮件地址，您可能需要配置将存储散列电子邮件地址的数据源。
 
+ 
+
 **场景1：您[的DpuUID](../../reference/ids-in-aam.md)已经是小写的电子邮件地址。**
 
 在这种情况下，您需要为相应的数据源添加标签：
@@ -26,6 +28,8 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 1. 找到包含您 [的DpuUID](../../reference/ids-in-aam.md)的数据源，然后单击它。
 1. 确保取消 [!UICONTROL Cannot be tied to personally identifiable information] 选中此选项。
 1. 保存数据源设置。
+
+ 
 
 **场景2：您[的DPuID](../../reference/ids-in-aam.md)不是小写的电子邮件地址。**
 
@@ -60,6 +64,8 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 | 67412682083411995725538770443620307584 | `janedoe@email.com` | 16d72e3edbeb089b299e0d12fc09522fdc5ece2d11dcb1304ecdd6fab4f7193a |
 | 89159024796760343733111707646026765593 | `name@mydomain.com` | feec5debcea411f54462a345a0d90c9975415d2d4862745ff8af00c49b6b4ae6 |
 
+ 
+
 最多可将10个散列电子邮件地址链接到单个 [DPUUID](../../reference/ids-in-aam.md)。为此，请在同步文件中将散列电子邮件地址与逗号分开。
 
 在我们的示例中，您现在有两个数据源。
@@ -69,6 +75,8 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 | 999999 | 现有的DPuUID(CRM ID) |
 | 987654 | 散列电子邮件地址 |
 
+ 
+
 [您的ID同步文件](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) 将具有以下内容：
 
 ```
@@ -77,9 +85,13 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 89159024796760343733111707646026765593<TAB>feec5debcea411f54462a345a0d90c9975415d2d4862745ff8af00c49b6b4ae6
 ```
 
+ 
+
 [ID同步文件](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) 必须遵循以下命名结构：
 
 `c2c_id_<DPUUID_DATA_SOURCE_ID>_<HASHED_EMAIL_DATA_SOURCE_ID>_TIMESTAMP.sync`
+
+ 
 
 在上面的示例中，文件名将如下所示：`c2c_id_999999_987654_1560431657.sync`
 
