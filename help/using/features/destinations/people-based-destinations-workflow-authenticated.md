@@ -5,7 +5,7 @@ seo-title: 工作流程C-基于实名活动和离线数据的个性化
 solution: Audience Manager
 title: 工作流程C-基于实名活动和离线数据的个性化
 translation-type: tm+mt
-source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
+source-git-commit: d0e343e3fbaf527e9b630dc2dbc851d8f8f4c0b2
 
 ---
 
@@ -18,9 +18,13 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 
 根据 [您的dpuUID](../../reference/ids-in-aam.md) 是否为小写电子邮件地址，您可能需要配置将存储散列电子邮件地址的数据源。
 
+ 
+
 **场景1：您[的DpuUID](../../reference/ids-in-aam.md)已经是小写的电子邮件地址。**
 
 在这种情况下，请跳到 [步骤5-配置基于人物的平台身份验证](#configure-authentication)。
+
+ 
 
 **场景2：您[的DPuID](../../reference/ids-in-aam.md)不是小写的电子邮件地址。**
 
@@ -54,15 +58,21 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 | 999999 | 现有的DPuUID(CRM ID) |
 | 987654 | 散列电子邮件地址 |
 
+ 
+
 然后，您要符合以下表格中特征的CRM ID。
 
 | DPUUID(CRM ID) | 电子邮件地址 | 散列电子邮件地址 | 特性 |
 | -------------------------------------- | --------------------- | ---------------------------------------------------------------- | ------------- |
 | 68079982765673198504052656074456196039 | `johndoe@example.com` | 55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149 | location= US |
 
+ 
+
 您声明的ID应遵循以下语法：
 
 `https://yourDomain.demdex.net/event?d_cid_ic=myHashedEmailDataSourceID%01myHashedEmail&d_cid_ic=myCrmDataSourceID%01myCRMID&key=value`
+
+ 
 
 在上面的示例中，声明的ID调用应当如下：
 
