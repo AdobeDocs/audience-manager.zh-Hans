@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 数据导出控制
 uuid: de7f3608-c0 cb-4049-973a-8be55425 c600
 translation-type: tm+mt
-source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
+source-git-commit: 22657113512e136296be5c4bcb8e092e65f45c06
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 根据应用于数据源和目标的分类，导出控件将停止您：
 
 * 在特征属于数据源时向区段添加特征，该数据源具有数据导出控制，该控件与将区段映射到的一个或多个目标上的数据导出标签不兼容。
-例如，假设区段使用导出标签 **[UICONTROL映射到目标位置！此目标可与个人识别信息(PII)结合]**&#x200B;使用。导出控件可阻止您向该区段添加特征，如果特征所属的数据源具有UICCONTRL表示 **[数据导出控件！不能绑定到个人识别信息(PII)]**。
+例如，假设区段使用导出标签映射到目标 **[!DNL This destination may enable a combination with personally identifiable information (PII)]**。导出控件可阻止您向该区段添加特征，如果特征所属的数据源具有表示 **[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;数据导出控制的数据源。
 * 将任何数据发送到目标目标都有一个数据导出标签，该标签被数据导出控制所阻止：
    * 包含的特征的数据源；
    * 在包含区段中使用的特征的数据源；
@@ -44,7 +44,7 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 
 >[!IMPORTANT]
 >
->[您无法通过在区段的数据源上放置数据导出控制来阻止区段的导出，您必须在以下任一位置设置控件：
+>您无法通过在区段的数据源上放置数据导出控制来阻止区段的导出，您必须在以下任一位置设置控件：
 > * 区段中使用的特征的数据来源；
 > * 区段利用的配置文件合并规则；
 > * 区段的配置文件合并规则使用的任何数据源。
