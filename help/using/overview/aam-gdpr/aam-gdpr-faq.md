@@ -6,7 +6,7 @@ solution: Audience Manager
 title: GDPR 常见问题解答
 uuid: e52design27-6a44-45ee-8524-6080adb86cc8
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 ---
 
@@ -15,11 +15,11 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 此材料包含我们的客户和合作伙伴提出的与欧洲一般数据保护规定(GDPR)相关的一些最常见的问题，以及Adobe Audience Manager如何满足各种GDPR要求。
 
-在本文中，我们解决了Audience Manager中的GDPR准备问题。Make sure you also read the [Experience Cloud GDPR FAQ.](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-faq.md)
+在本文中，我们解决了Audience Manager中的GDPR准备问题。请确保您还阅读 [Experience Cloud GDPR常见问题解答。](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-faq.md)
 
 GDPR于2018年月25日生效，主要目标是为欧盟的个人(数据主体)提供更多控制，同时通过欧盟统一法规简化国际业务的法规环境，同时简化国际业务的监管环境。作为Adobe GDPR的一部分，Adobe Audience Manager团队根据需要增强服务和流程，以支持访问和删除来自数据主体、消费者的请求。
 
-## GDPR Glossary {#gdpr-glossay}
+## GDPR词汇表 {#gdpr-glossay}
 
 熟悉与GDPR相关的关键术语。我们重点介绍了下面最常用的术语。
 
@@ -53,7 +53,7 @@ GDPR于2018年月25日生效，主要目标是为欧盟的个人(数据主体)�
 
 <br> 
 
-**Audience Manager标识符(ID)：** Adobe Audience Manager存储各种类型的ID。The [GDPR in Audience Manager](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids) page provides a summary of these IDs, their corresponding data sources, and brief descriptions. 向Adobe提供请求时，引用这些ID以删除或访问数据主体的请求。
+**Audience Manager标识符(ID)：** Adobe Audience Manager存储各种类型的ID。Audience [Manager](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids) 页面中的GDPR概述了这些ID及其相应的数据源和简要描述。向Adobe提供请求时，引用这些ID以删除或访问数据主体的请求。
 
 <br> 
 
@@ -65,39 +65,39 @@ GDPR于2018年月25日生效，主要目标是为欧盟的个人(数据主体)�
 
 <br> 
 
-## Managing Individual GDPR Rights {#manage-ind-gdpr-rights}
+## 管理个人GDPR权限 {#manage-ind-gdpr-rights}
 
 **管理参与/获取同意**
 
 在数据管理者需要同意时，GDPR没有改变，它改变了如何获得同意。对于某些市场营销活动需要征得同意的情况，消费者同意必须处于活动状态(例如，没有预先选中的方框或沉默)、捆绑和提供服务，不能根据同意的数据主体提供条件。甚至有时也可能需要刷新某些同意才能继续使用未来数据。
 
-作为您的数据处理者，Adobe无法提供获得同意的法律建议。请咨询您的法律团队寻求指导。We recommend that you work with a consent management solution providers such as [Evidon](https://theblog.adobe.com/evidon-builds-gdpr-universal-consent-integration-with-launch-by-adobe/) or [TrustArc](https://theblog.adobe.com/trustarc-builds-consent-integration-launch-adobe/) to provide better recommendations on this. Adobe已与这些提供商合作，以协助通过Adobe Launch进行此类集成。
+作为您的数据处理者，Adobe无法提供获得同意的法律建议。请咨询您的法律团队寻求指导。我们建议您与同意的管理解决方案提供商( [如Evidon](https://theblog.adobe.com/evidon-builds-gdpr-universal-consent-integration-with-launch-by-adobe/) 或 [Trustarc](https://theblog.adobe.com/trustarc-builds-consent-integration-launch-adobe/) )合作，以提供更好的建议。Adobe已与这些提供商合作，以协助通过Adobe Launch进行此类集成。
 
-Audience Manager客户可以在Audience Manager中存储用户对各种用例(如广告或个性化)的同意。构建具有这些特征的细分之后，将仅包括每个使用案例提供各自同意的用户。请注意，使用此方法不会停止数据收集，但只会在您发送区段进行激活时影响数据使用。When users withdraw their consent, you can remove these traits from user profile using the Audience Manager [inbound batch process](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md) or Audience Manager opt-out process as detailed below.
+Audience Manager客户可以在Audience Manager中存储用户对各种用例(如广告或个性化)的同意。构建具有这些特征的细分之后，将仅包括每个使用案例提供各自同意的用户。请注意，使用此方法不会停止数据收集，但只会在您发送区段进行激活时影响数据使用。用户撤销同意后，您可以使用Audience Manager [入站批处理或](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md) Audience Manager选择退出流程从用户配置文件中删除这些特征，如下详细信息。
 
 <br> 
 
 **管理退出/撤销同意**
 
-Opt out can be managed for the Adobe Experience Cloud via the [Your Privacy Choices](https://www.adobe.com/privacy/opt-out.html#customeruse) page. 单击功能可让最终用户控制和退出Adobe Experience Cloud广告解决方案(包括Audience Manager)的数据收集。Specifically, see the [business customer section](https://www.adobe.com/privacy/opt-out.html#customeruse) of the Privacy Choices page. For Browsers that do not support third-party cookies, see [Declared ID targeting](../../features/declared-ids.md#declared-id-targeting). For mobile devices, please retrieve the relevant Audience Manager identifiers and call the Audience Manager opt-out APIs as mentioned in the [Declared ID Opt-Out examples](../../features/declared-ids.md#opt-out-examples). Following that, you can cease all data collection for those users with the opt out APIs from Mobile SDK - see [Android devices](https://marketing.adobe.com/resources/help/en_US/mobile/android/privacy.html) and [iOS devices](https://marketing.adobe.com/resources/help/en_US/mobile/ios/privacy.html). You can find additional details for opt-out in the [Audience Manager Opt-Out Documentation](../../overview/data-security-and-privacy/opt-out-management.md).
+可通过“您的隐私选择 [](https://www.adobe.com/privacy/opt-out.html#customeruse) ”页面对Adobe Experience Cloud进行选择退出。单击功能可让最终用户控制和退出Adobe Experience Cloud广告解决方案(包括Audience Manager)的数据收集。具体而言，请参阅隐私选择页面的 [业务客户部分](https://www.adobe.com/privacy/opt-out.html#customeruse) 。对于不支持第三方Cookie的浏览器，请参阅 [声明ID定位](../../features/declared-ids.md#declared-id-targeting)。对于移动设备，请检索相关Audience Manager标识符并调用 [已声明ID选择退出示例中所述的Audience Manager选择退出API](../../features/declared-ids.md#opt-out-examples)。之后，您可以使用Mobile SDK退出API为这些用户停止所有数据收集-请参阅 [Android设备](https://marketing.adobe.com/resources/help/en_US/mobile/android/privacy.html) 和 [iOS设备](https://marketing.adobe.com/resources/help/en_US/mobile/ios/privacy.html)。您可以在 [Audience Manager选择退出文档中找到选择退出的其他详细信息](../../overview/data-security-and-privacy/opt-out-management.md)。
 
 <br> 
 
 **提交Audience Manager GDPR访问和删除Adobe请求**
 
-You can submit Individual GDPR requests for Access and Delete either through the [GDPR Client Services UI](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/using-gdpr-ui.md) or by calling the [GDPR API](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-id-onboarding.md). Any [Audience Manager identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids), can be submitted in the requests along with their respective namespace IDs (data source IDs). 如果提交跨设备标识符(如CRM ID)，Audience Manager将对经过身份验证的配置文件以及与之链接的设备ID进行操作。建议客户尽可能使用Audience Manager唯一用户ID(AAM UUID)。
+您可以通过 [GDPR Client Services UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) 或通过调用 [GDPR API](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-id-onboarding.md)提交单独的GDPR请求。任何 [Audience Manager标识符](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)都可在请求中提交，并可连同其各自的命名空间ID(数据源ID)一起提交。如果提交跨设备标识符(如CRM ID)，Audience Manager将对经过身份验证的配置文件以及与之链接的设备ID进行操作。建议客户尽可能使用Audience Manager唯一用户ID(AAM UUID)。
 
 <br> 
 
 **管理访问请求**
 
-2018年月25日之前，Audience Manager支持在Audience Manager中手动访问与唯一ID关联的特征、客户ID和细分。自2018年月25日起，我们以上述各种产品和服务增强方式支持这些请求。除了特征、客户ID、对访问请求的响应之外，访问请求还包括特征和区段总数、特征类型、特征和区段描述以及各自的数据源名称。访问响应还包括由数据管理者访问的第二方和第三方数据以及第一方数据。See more in [Data Access Requests](../../overview/aam-gdpr/aam-gdpr-details.md#access-data).
+2018年月25日之前，Audience Manager支持在Audience Manager中手动访问与唯一ID关联的特征、客户ID和细分。自2018年月25日起，我们以上述各种产品和服务增强方式支持这些请求。除了特征、客户ID、对访问请求的响应之外，访问请求还包括特征和区段总数、特征类型、特征和区段描述以及各自的数据源名称。访问响应还包括由数据管理者访问的第二方和第三方数据以及第一方数据。请参阅 [数据访问请求](../../overview/aam-gdpr/aam-gdpr-details.md#access-data)中的更多信息。
 
 <br> 
 
 **管理删除请求**
 
-2018年月25日之前，Audience Manager支持手动删除Audience Manager中与唯一ID相关联的特征、客户ID和细分。在GDPR生效后，我们将以上述各种产品和服务增强的方式支持这些请求。除删除操作之外，数据主体的相应Audience Manager标识符将被选择退出进一步的数据收集，并将删除相应的ID映射。See more in [Data Deletion Requests](../../overview/aam-gdpr/aam-gdpr-details.md#delete-data).
+2018年月25日之前，Audience Manager支持手动删除Audience Manager中与唯一ID相关联的特征、客户ID和细分。在GDPR生效后，我们将以上述各种产品和服务增强的方式支持这些请求。除删除操作之外，数据主体的相应Audience Manager标识符将被选择退出进一步的数据收集，并将删除相应的ID映射。请参阅 [数据删除请求中的更多](../../overview/aam-gdpr/aam-gdpr-details.md#delete-data)信息。
 
 <br> 
 
@@ -109,7 +109,7 @@ You can submit Individual GDPR requests for Access and Delete either through the
 
 **第三方数据提供商和管理同意**
 
-数据提供商也是数据管理者，他们拥有获得同意和管理访问/删除/更正请求的流程。Adobe is proactively requesting that Data Providers update their company profile information within [Adobe Audience Finder](https://www.adobe-audience-finder.com/) with additional information on user data collection. 信息将由数据提供商提供，其目标是让该工具在2012年第季度更新。但是，每个Audience Manager客户都应确定第三方数据提供商已获得该客户使用案例的必要同意。Adobe不对第三方数据提供商为特定用例获得或报告的同意范围或有效性表示声明。
+数据提供商也是数据管理者，他们拥有获得同意和管理访问/删除/更正请求的流程。Adobe主动请求数据提供商更新Adobe受众查找器中 [的公司配置文件信息，](https://www.adobe-audience-finder.com/) 其中包含有关用户数据收集的其他信息。信息将由数据提供商提供，其目标是让该工具在2012年第季度更新。但是，每个Audience Manager客户都应确定第三方数据提供商已获得该客户使用案例的必要同意。Adobe不对第三方数据提供商为特定用例获得或报告的同意范围或有效性表示声明。
 
 <br> 
 
@@ -121,7 +121,7 @@ Audience Manager通过向数据主体发送请求删除特定数据的数据主�
 
 **Audience Manager中的数据保留**
 
-对数据应用适当、安全和及时的数据保留策略是符合GDPR的重要组成部分。Audience Manager客户能够通过定义所需的TTL(生存时间)来设置特征和细分上的自定义保留期。We have reduced the retention period for [!UICONTROL Customer Data Feeds] ( [!UICONTROL CDF]) and [!UICONTROL Batch Outbound] orders to 8 days. 我们还将为非活动CRM配置文件和ID映射应用保留期限。Please find the more details about retention periods in our [Data Retention FAQ](../../faq/faq-privacy.md).
+对数据应用适当、安全和及时的数据保留策略是符合GDPR的重要组成部分。Audience Manager客户能够通过定义所需的TTL(生存时间)来设置特征和细分上的自定义保留期。我们已将( [!UICONTROL Customer Data Feeds][!UICONTROL CDF])和 [!UICONTROL Batch Outbound] 订单的保留期限减少了天。我们还将为非活动CRM配置文件和ID映射应用保留期限。请在 [我们的“数据保留常见问题解答](../../faq/faq-privacy.md)”中查找有关保留期的更多详细信息。
 
 <br> 
 
@@ -133,11 +133,11 @@ Audience Manager通过向数据主体发送请求删除特定数据的数据主�
 
 **跨边框数据传输**
 
-GDPR不禁止在欧洲以外传输数据。它要求在传输数据的任何地方都保留欧洲数据的隐私保护。Visit the [Adobe Privacy Center](https://www.adobe.com/privacy/eudatatransfers.html) to learn more.
+GDPR不禁止在欧洲以外传输数据。它要求在传输数据的任何地方都保留欧洲数据的隐私保护。请访问 [Adobe隐私中心](https://www.adobe.com/privacy/eudatatransfers.html) 了解更多信息。
 
 <br> 
 
-## GDPR Readiness Guidance for Audience Manager Customers (Data Controllers) {#gdpr-readiness-guidance}
+## 面向Audience Manager客户的GDPR就绪性指导(数据管理者) {#gdpr-readiness-guidance}
 
 我们建议在数据治理和组织就绪方面积极主动。这可以确保将您的消费者数据组织到与访问或删除请求相关的流程中，您的团队将被启用并支持这些请求，并且您的消费者(数据主体)将具有与您的品牌的积极、差异化体验。
 
@@ -151,10 +151,10 @@ GDPR不禁止在欧洲以外传输数据。它要求在传输数据的任何地�
 * IDFA/GID移动设备ID用于Audience Manager中的多个用例。如果您使用的是Adobe Mobile SDK，请确保提交Experience Cloud ID(MID)和IDFA/GID，以确保GDPR答复已完成。
 * 随着个人数据的定义变得更加广泛，IP地址可能被视为您所在地区的个人数据。主动与Adobe Consulting互动以模糊化最后一位字节。
 * 确定验证/身份验证策略和流程，以确认数据主体在GDPR请求时的身份。
-* Consider using [Data Export Controls](../../features/data-export-controls.md) to block audience activation to technologies that house personal data. 例如，具有第三方数据的区段不应与电子邮件服务提供商同步。Set a [!UICONTROL Data Export Control] to ensure that no one in your organization can accidentally activate this data.
-* Begin utilizing [Role Based Access Controls](../../features/administration/administration-overview.md) to ensure the right teams have access to intended data.
-* Consider appropriate [retention periods](../../faq/faq-privacy.md#data-retention-faq) for the data.
-* Review identity linkage and privacy policies and legal requirements to see when and where it is appropriate to tie identity sets together; use appropriately via Audience Manager’s [Profile Merge Rules](../../features/profile-merge-rules/merge-rules-overview.md).
+* 考虑使用 [数据导出控制](../../features/data-export-controls.md) 阻止受众激活，使其成为个人数据的技术。例如，具有第三方数据的区段不应与电子邮件服务提供商同步。设置一个 [!UICONTROL Data Export Control] 以确保组织中的任何人都不会意外激活此数据。
+* 开始使用 [基于角色的访问控制](../../features/administration/administration-overview.md) ，确保正确的团队有权访问预期的数据。
+* 考虑数据的适当 [保留期限](../../faq/faq-privacy.md#data-retention-faq) 。
+* 查看身份链接、隐私政策和法律要求，了解何时及在哪里适合将标识集绑定到一起；通过Audience Manager [的个人资料合并规则正确使用](../../features/profile-merge-rules/merge-rules-overview.md)。
 
 <br> 
 
