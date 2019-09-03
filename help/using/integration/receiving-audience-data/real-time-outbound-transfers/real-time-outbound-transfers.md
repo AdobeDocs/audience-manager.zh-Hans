@@ -6,14 +6,14 @@ solution: Audience Manager
 title: 实时出站数据传输
 uuid: 1895e818-7ab8-4569-a920-4b0 a4 b83 d2 d
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 425315a0a6aa739a90e34deb270ac21df9b88d31
 
 ---
 
 
-# Real-Time Outbound Data Transfers {#real-time-outbound-data-transfers}
+# 实时出站数据传输 {#real-time-outbound-data-transfers}
 
-The outbound real-time data transfer process returns user data as a series of [!DNL JSON] objects passed in with a `POST` method.
+出站实时数据传输过程将用户数据返回为使用方法传入的 [!DNL JSON] 一系列对象 `POST` 。
 
 <!-- c_outbound_json.xml -->
 
@@ -21,9 +21,9 @@ The outbound real-time data transfer process returns user data as a series of [!
 
 要使用此方法，我们建议您的数据合作伙伴：
 
-* Accepts data in [!DNL JSON] format.
-* Provides a URL that can be used by the `POST` call to return data.
-* Accepts secure `HTTPS` data transfers. [!DNL Audience Manager] 不会使用不安全 `HTTP` 协议发送此文件。
+* 以 [!DNL JSON] 格式接受数据。
+* 提供可 `POST` 由调用使用的返回数据URL。
+* 接受安全 `HTTPS` 的数据传输。[!DNL Audience Manager] 不会使用不安全 `HTTP` 协议发送此文件。
 
 ## 频度
 
@@ -31,11 +31,11 @@ The outbound real-time data transfer process returns user data as a series of [!
 
 ## 必需的答复
 
-By default, the recipient server must return the `200 OK` code to indicate successful receipt. 其他代码将解释为失败。此响应应在3000毫秒内进行。In response to a failure, [!DNL Audience Manager] will make 1 retry attempt only.
+默认情况下，收件人服务器必须返回 `200 OK` 代码以表示成功接收收据。其他代码将解释为失败。此响应应在3000毫秒内进行。为了响应失败， [!DNL Audience Manager] 将仅重试尝试。
 
 ## 参数
 
-The following table defines the elements in the returned [!DNL JSON] data file.
+下表定义返回 [!DNL JSON] 的数据文件中的元素。
 
 <table id="table_68475F9D01ED4A44B5909234114AEDE2"> 
  <thead> 
@@ -56,8 +56,8 @@ The following table defines the elements in the returned [!DNL JSON] data file.
    <td colname="col2"> <p>整数 </p> </td> 
    <td colname="col3"> <p>指示文件是否包含Android或iOS ID的ID。使用以下ID值： </p> 
     <ul id="ul_159306B0CF304DE0B9A9836D41263E70"> 
-     <li id="li_46F9F4F9DDC34AB683AE2DF0317FBCAC">Android IDs (GAID): <code> 20914</code> </li> 
-     <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS IDs (IDFA): <code> 20915</code> </li> 
+     <li id="li_46F9F4F9DDC34AB683AE2DF0317FBCAC">Android ID(GID)： <code> 20914</code> </li> 
+     <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS ID(IDFA)： <code> 20915</code> </li> 
     </ul> </td> 
   </tr> 
   <tr valign="top"> 
@@ -93,7 +93,7 @@ The following table defines the elements in the returned [!DNL JSON] data file.
   <tr valign="top"> 
    <td colname="col1"><code><i>AAM_地区</i></code> </td> 
    <td colname="col2"> 数组 </td> 
-   <td colname="col3"> <span class="keyword"> 我们已查看此设备的Audience Manager</span> 区域ID。For instance, if the device had some activity in Paris (Europe), the region ID would be <code> 6</code>. 请参阅 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md">DCS 区域 ID、位置和主机名</a>。 </td> 
+   <td colname="col3"> <span class="keyword"> 我们已查看此设备的Audience Manager</span> 区域ID。例如，如果设备在巴黎(欧洲)有某些活动，则区域ID将为 <code> 6</code>。请参阅 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md">DCS 区域 ID、位置和主机名</a>。 </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>区段</i></code> </td> 
@@ -115,21 +115,21 @@ The following table defines the elements in the returned [!DNL JSON] data file.
     </ul> <p>用户在以下情况下已取消分段： </p> 
     <ul id="ul_E17B080D8DF14D548E1142A9201C1C14"> 
      <li id="li_8352B919A87242E68716FB9EC0443407">基于区段规则从区段删除。 </li> 
-     <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">Removed from a segment based on the segment's <a href="../../../features/traits/segment-ttl-explained.md"> time-to-live interval</a>. </li> 
+     <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">根据区段的 <a href="../../../features/traits/segment-ttl-explained.md"> 实时时间间隔从区段中删除</a>。 </li> 
      <li id="li_F48D1052BA2B45108225641292CC748D">如果未在过去120天内被查看，则移至非活动状态。 </li> 
-    </ul> <p>All partner IDs that are synced to an <span class="keyword"> Audience Manager</span> ID will receive the <code> "Status":"0"</code> flag when a user is unsegmented. </p> </td> 
+    </ul> <p>同步到 <span class="keyword"> Audience Manager</span> ID的所有合作伙伴ID都将收到“ <code> 状态”：“0”</code> 标记。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>DateTime</i></code> </td> 
    <td colname="col2"> <p>DateTime </p> </td> 
-   <td colname="col3"> <p>时间访客符合特征的时间。 </p> </td> 
+   <td colname="col3"> <p>最新区段资格的时间。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 安全性
 
-You can secure your real-time outbound data transfer process by [signing HTTP requests](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md) using private keys or by having [!DNL Audience Manager] authenticate through the [OAuth 2.0](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md) protocol.
+通过使用私钥 [签名HTTP请求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md) 或通过 [!DNL Audience Manager][OAuth2.0](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md) 协议进行身份验证，您可以保护实时出站数据传输流程。
 
 ## 代码示例
 
