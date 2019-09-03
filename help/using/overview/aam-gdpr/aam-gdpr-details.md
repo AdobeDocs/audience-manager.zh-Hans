@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience Manager 中的 GDPR
 uuid: ed23a478-32be-460d-bb03-a735317 f7 c0 f
 translation-type: tm+mt
-source-git-commit: b791e22e9c8c848a8fc14c6d6494f77c9e7335dc
+source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: b791e22e9c8c848a8fc14c6d6494f77c9e7335dc
 
 本文档涵盖Audience Manager的一般数据保护规定(GDPR)的相关技术，并向您展示如何向Audience Manager提交GDPR请求。
 
-## GDPR Documentation in the Experience Cloud {#gdpr-documentation}
+## Experience Cloud中的GDPR文档 {#gdpr-documentation}
 
 在阅读Audience Manager特定信息之前，我们建议您浏览Experience Cloud的欧洲一般数据保护规定(GDPR)材料，如下链接：
 
@@ -25,9 +25,9 @@ source-git-commit: b791e22e9c8c848a8fc14c6d6494f77c9e7335dc
 
 以下部分介绍了GDPR对Audience Manager的意义，以及如何向Audience Manager提交GDPR请求。
 
-## Types of GDPR Requests and How to Make a GDPR Request {#types-of-gdpr-requests}
+## GDPR请求的类型和如何提出GDPR请求 {#types-of-gdpr-requests}
 
-As an Audience Manager customer, you can submit individual GDPR requests to access and delete customer data, either through the **[GDPR Client Services UI](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/using-gdpr-ui.md)** or by calling the **[GDPR API](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)**. You can submit any Audience Manager identifiers (IDs), as described in the section **[Audience Manager Identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)**, in the requests along with their respective namespace IDs (data source IDs). 如果您有疑问，请联系客户关怀部门，网址为gdprsupport@adobe.com。
+作为Audience Manager客户，您可以通过 **[GDPR Client Services UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** 或通过调用 **[GDPR API提交单个GDPR请求以访问和删除客户数据](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)**。You can submit any Audience Manager identifiers (IDs), as described in the section **[Audience Manager Identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)**, in the requests along with their respective namespace IDs (data source IDs). 如果您有疑问，请联系客户关怀部门，网址为gdprsupport@adobe.com。
 
 ## 访问数据 {#access-data}
 
@@ -35,15 +35,15 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
 
 **请求**
 
-You can log data access requests through the **[GDPR Client Services UI](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/using-gdpr-ui.md)** or by calling the **[GDPR API](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)** (see `access` action). 无论哪种情况，您都必须将JSON与提交数据访问请求的Audience Manager标识符上传。See what a well-formed JSON looks like in the **[Experience Cloud GDPR documentation](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)** (specifically, search in page for "POST request format"). Or, you can **[download a sample JSON](assets/access_request.json)**.
+您可以通过 **[GDPR Client Services UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** 或通过调用 **[GDPR API来记录数据访问请求](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** (请参阅 `access` 操作)。无论哪种情况，您都必须将JSON与提交数据访问请求的Audience Manager标识符上传。了解格式良好的JSON在 **[Experience Cloud GDPR文档中的外观](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** (特别是，在页面中搜索“POST请求格式”)。或者，您可以 **[下载示例JSON](assets/access_request.json)**。
 
 **响应**
 
-对访问数据请求的答复包含特征和区段总数、特征类型、特征和区段描述以及各自的数据源名称。访问响应还将包括由数据管理者访问的第二方数据和第三方数据，以及第一方数据。When [!UICONTROL declared IDs] such as cross device CRM IDs or customer cookie IDs are sent in GDPR requests, Audience Manager will include the Access response from all the linked devices (up to 100 devices per declared ID).
+对访问数据请求的答复包含特征和区段总数、特征类型、特征和区段描述以及各自的数据源名称。访问响应还将包括由数据管理者访问的第二方数据和第三方数据，以及第一方数据。当 [!UICONTROL declared IDs] 在GDPR请求中发送跨设备CRM ID或客户cookie ID等时，Audience Manager将包括来自所有链接设备的访问响应(每个声明ID最多可达100台设备)。
 
 **响应状态**
 
-如果响应中存在Audience Manager中的任何错误，则会作为响应出现在响应中的错误代码。We have a [list of error codes](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md), where you can find more information about the returned errors.
+如果响应中存在Audience Manager中的任何错误，则会作为响应出现在响应中的错误代码。我们有一个 [错误代码](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)列表，您可以在其中找到有关返回错误的更多信息。
 
 **示例响应**
 
@@ -146,11 +146,11 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> namespace</code> </p> </td> 
-   <td colname="col2"> <p>也称为数据源。See the <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager Identifiers</a> section. </p> </td> 
+   <td colname="col2"> <p>也称为数据源。请参阅 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager标识符</a> 部分。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> id</code> </p> </td> 
-   <td colname="col2"> <p>命名空间/数据源 ID。See <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager Identifiers (IDs)</a> for all the accepted values. </p> </td> 
+   <td colname="col2"> <p>命名空间/数据源 ID。请参阅 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 所有可接受值的Audience Manager标识符(ID)</a> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 集成代码 </code> </p> </td> 
@@ -167,7 +167,7 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> type </code> </p> </td> 
-   <td colname="col2"> <p>您请求访问 GDPR 数据的 ID 类型。Accepted types are listed in the <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager Identifiers</a> section. </p> </td> 
+   <td colname="col2"> <p>您请求访问 GDPR 数据的 ID 类型。接受类型在 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager标识符</a> 部分中列出。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 警告</code> </p> </td> 
@@ -206,7 +206,7 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
    <td colname="col2"> <p>特征类型。可能的值包括： </p> <p> 
      <ul id="ul_DBAC618D9FE94B17B2494B83832A969F"> 
       <li id="li_740F2DCA8F2A4A22A7D9988ECD2FC976"> <i>适用于您自己特征的第一方</i> 。 </li> 
-      <li id="li_D9354F40FD114802819191450F2375C8"> <i>属于您的合作伙伴的特征的第二方</i> 。Read our <a href="../../overview/data-types-collected.md#second-party-data"> Second Party Data</a> article for more information. </li> 
+      <li id="li_D9354F40FD114802819191450F2375C8"> <i>属于您的合作伙伴的特征的第二方</i> 。有关更多信息，请阅读我们 <a href="../../overview/data-types-collected.md#second-party-data"> 的第二方数据</a> 文章。 </li> 
       <li id="li_C321D8B8256F4102AE64CD40DC57C948"> <i>第三方</i> 通过 <a href="../../features/audience-marketplace/audience-marketplace.md"> Audience Marketplace获取从数据合作伙伴获得的特征</a>。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -216,7 +216,7 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 数据导出控件</code> </p> </td> 
-   <td colname="col2"> <p>The <a href="../../features/data-export-controls.md"> data export controls</a> applied to this trait's data source. </p> </td> 
+   <td colname="col2"> <p>应用于此特征数据源的 <a href="../../features/data-export-controls.md"> 数据导出控件</a> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 数据提供程序名称</code> </p> </td> 
@@ -245,7 +245,7 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 数据导出控件</code> </p> </td> 
-   <td colname="col2"> <p>The <a href="../../features/data-export-controls.md"> data export controls</a> applied to this segment's data source. </p> </td> 
+   <td colname="col2"> <p>应用于此区段数据源的 <a href="../../features/data-export-controls.md"> 数据导出控件</a> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 数据提供程序名称</code> </p> </td> 
@@ -307,19 +307,19 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
 
 **请求**
 
-You can log data deletion requests through the **[GDPR Client Services UI](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/using-gdpr-ui.md)** or by calling the **[GDPR API](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)** (see `delete` action). 无论哪种情况，您都必须将JSON与提交数据访问请求的Audience Manager标识符上传。See what a well-formed JSON looks like in the [Experience Cloud GDPR documentation](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md) (specifically, search in page for "POST request format"). Or, you can **[download a sample JSON](assets/delete_request.json)**.
+您可以通过 **[GDPR Client Services UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** 或通过调用 **[GDPR API来记录数据删除请求](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** (请参阅 `delete` 操作)。无论哪种情况，您都必须将JSON与提交数据访问请求的Audience Manager标识符上传。了解格式良好的JSON在 [Experience Cloud GDPR文档中的外观](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) (特别是，在页面中搜索“POST请求格式”)。或者，您可以 **[下载示例JSON](assets/delete_request.json)**。
 
 **响应**
 
 为了响应数据删除请求，我们删除与各个Audience Manager标识符相关的特征和区段。此外，数据主体对应的Audience Manager标识符将从Audience Manager中永久选择退出数据收集，并将删除各自的ID映射。如果在GDPR请求中发送了跨设备CRM ID或客户cookie ID等声明的ID，Audience Manager将对所有链接设备执行必要的删除操作(每个声明ID最多可为100台设备)。
 
-## Opt-out Request {#opt-out-request}
+## 退出请求 {#opt-out-request}
 
-For opt-out requests, please refer to our documentation on [Opt-out Management](../../overview/data-security-and-privacy/opt-out-management.md).
+有关退出申请，请参阅我们关于 [选择退出管理](../../overview/data-security-and-privacy/opt-out-management.md)的文档。
 
-## Audience Manager Identifiers (IDs) {#aam-ids}
+## Audience Manager标识符(ID) {#aam-ids}
 
-向Adobe Audience Manager提交GDPR请求时，您必须包含以下列出的标识符(ID)。You can find more information on the ID formats in our [Index of Audience Manager IDs](../../reference/ids-in-aam.md).
+向Adobe Audience Manager提交GDPR请求时，您必须包含以下列出的标识符(ID)。您可以在我们的Audience Manager ID [索引中找到有关ID格式的更多信息](../../reference/ids-in-aam.md)。
 
 ### Adobe Audience Manager唯一用户ID
 
