@@ -6,46 +6,39 @@ solution: Audience Manager
 title: DCS API方法
 uuid: e407458-11d4-4342-a84 a-512afa5 fc5 fc183
 translation-type: tm+mt
-source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
+source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 ---
 
 
-# DCS API Methods {#dcs-api-methods}
+# DCS API方法 {#dcs-api-methods}
 
-Send data to the [!UICONTROL DCS] [!DNL API] using `GET` or `POST` methods.
+将数据发送到 [!UICONTROL DCS][!DNL API] 使用 `GET` 或 `POST` 方法。
 
-You can send data to the [!UICONTROL DCS] using either one of the `GET` or `POST` methods. Take a look at the sample calls below, using [curl](https://curl.haxx.se/). In all three sample calls, we are adding the signals `c_likes = famous popstar` and `c_loves = famous actress` to the device profile `12345678901234567890123456789012345678`.
+您可以使用任一 [!UICONTROL DCS]`GET` 或 `POST` 方法将数据发送到。使用 [curl](https://curl.haxx.se/)查看下面的示例调用。在所有三个范例调用中，我们将添加信号 `c_likes = famous popstar` 和 `c_loves = famous actress` 设备配置文件 `12345678901234567890123456789012345678`。
 
 >[!NOTE]
 >
->In the code and examples, *italics* represents a variable placeholder. Substitute a real value for the placeholder when you send data to the [!UICONTROL DCS] with this method.
+>In the code and examples, *italics* represents a variable placeholder. 使用此方法将数据发送到占位 [!UICONTROL DCS] 符时，替换占位符的真实值。
 
-## Send Data via GET {#send-data-via-get}
+## 通过GET发送数据 {#send-data-via-get}
 
-Note that the maximum allowed size for `GET` calls is 8K.
+请注意 `GET` ，调用的最大允许大小为8K。
 
-<pre><code>curl -i“<i>yourcompany.demdex.net/event</i>？
-d_uuid=<i>12345678901234567890123456789012345678</i>&amp;d_rtbd=json&amp;<i>c_likes=famous%20popstar</i>&amp;<i>c_loves=famous%20actress</i>"
-</code></pre>
+<pre><code>curl -i“<i>yourcompany.demdex.net/event?d_uuid=12345678901234567890123456789012345678&amp;d_rtbd=jsonc_likes=famous%20popstar&amp;c_loves=famous%20actress</i><i></i><i></i><i></i>”</code></pre>
 
-## Send Data via POST {#send-data-via-post}
+## 通过POST发送数据 {#send-data-via-post}
 
-Note the requirements for sending data using the `POST` method:
+请注意使用该 `POST` 方法发送数据的要求：
 
 * 允许的最大大小为32K。
-* Set the content type to `application/x-www-form-urlencoded`.
+* 将内容类型设置为 `application/x-www-form-urlencoded`。
 
 ### 示例调用
 
-<pre><code>curl -X POST\
-https://yourcompany.demdex.net/event<i></i>\
--H“content-type：application/x-www-form-urlencoded'\
--d'<i>c_ limes=著名的%20popstar</i>&amp;<i>c_ los= lighted%20actreset</i>&amp;<i>d_ uuid=1234567780123456787040367787803778</i>'</code>
-</pre>
-
-<pre><code>curl -X POST\
-https://yourcompany.demdex.net/event<i></i>\
--H“content-type：application/x-www-form-urlencoded'\
--d'<i>c_ limes=著名的%20popstar</i>&amp; <i>c_ los= lighted%20actreset</i>&amp;<i>d_ uuid=1234567780123456787040367787803778</i>'</code>
-</pre>
+```js
+curl -X POST \
+  https://yourcompany.demdex.net/event \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -d 'c_likes=famous%20popstar&c_loves=famous%20actress&d_uuid=12345678901234567890123456789012345678'
+```
