@@ -7,7 +7,7 @@ title: 数据馈送购买者计费
 keywords: 细分级别报告、细分级别、细分级别
 uuid: d723667-282b-4160-9909-579721af4016
 translation-type: tm+mt
-source-git-commit: dab5b255f966e63d51cc4d236d37bb0cb4eb960c
+source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 ---
 
@@ -40,15 +40,17 @@ Audience Marketplace数据购买者同意报告使用每千个广告印象([!DNL
 要在区段级别报告 [!DNL CPM] 使用情况，请执行以下操作：
 
 1. **[!UICONTROL Audience Marketplace > Payables]**&#x200B;转至。
-2. 选择 **[!UICONTROL Segment Usage]** 选项卡。
-3. 填写区段使用情况。如果您只需要对部分区段进行报告，则可以使用 [!UICONTROL Search] 该框过滤区段。
-4. 单击 **[!UICONTROL Edit Segments Usage]**.
-5. 在列中输入 [!DNL CPM] 使用金额 [!UICONTROL Usage] 。
-6. 完成后单击 **[!UICONTROL Save]** ，查看确认对话框。
-   ![确认区段使用](assets/confirm-segment-usage.png)
-7. 单击 **[!UICONTROL Confirm]**.
+1. 选择 **[!UICONTROL Segment Usage]** 选项卡。
+1. 填写区段使用情况。如果您只需要对部分区段进行报告，则可以使用 [!UICONTROL Search] 该框过滤区段。
+1. 单击 **[!UICONTROL Edit Segments Usage]**.
+1. 在列中输入 [!DNL CPM] 使用金额 [!UICONTROL Usage] 。
+1. 完成后单击 **[!UICONTROL Save]** ，查看确认对话框。
 
-<br> 
+   ![确认区段使用](assets/confirm-segment-usage.png)
+
+1. 单击 **[!UICONTROL Confirm]**.
+
+ 
 
 ## 报告数据馈送级别的CPM使用情况 {#feed-level-report}
 
@@ -57,15 +59,15 @@ Audience Marketplace数据购买者同意报告使用每千个广告印象([!DNL
 要在区段级别报告 [!DNL CPM] 使用情况，请执行以下操作：
 
 1. **[!UICONTROL Audience Marketplace > Payables]**&#x200B;转至。
-2. 选择 **[!UICONTROL Feed Usage]** 选项卡。
-3. 使用 [!UICONTROL Search] 该框过滤数据服务，并识别您需要报告的数据源。
-4. 单击 **[!UICONTROL Edit Feeds Usage]**.
-5. 根据CPM [!DNL CPM] 数据源的 [成本归因计算每个数据馈送的使用情况](#cost-attribution)，并在 [!UICONTROL Usage] 列中输入它。
-6. 完成后单击 **[!UICONTROL Save]** ，查看确认对话框。
+1. 选择 **[!UICONTROL Feed Usage]** 选项卡。
+1. 使用 [!UICONTROL Search] 该框过滤数据服务，并识别您需要报告的数据源。
+1. 单击 **[!UICONTROL Edit Feeds Usage]**.
+1. 根据CPM [!DNL CPM] 数据源的 [成本归因计算每个数据馈送的使用情况](#cost-attribution)，并在 [!UICONTROL Usage] 列中输入它。
+1. 完成后单击 **[!UICONTROL Save]** ，查看确认对话框。
 
    ![确认源使用](assets/confirm-feed-usage.png)
 
-7. 单击 **[!UICONTROL Confirm]**.
+1. 单击 **[!UICONTROL Confirm]**.
 
 <br> 
 
@@ -155,7 +157,7 @@ Audience Marketplace数据购买者同意报告使用每千个广告印象([!DNL
 
 ## 根据特征资格规则在馈送级别分配印象 {#assign-impressions}
 
-[!UICONTROL Activation] 使用用例，您可以使用相应数据源中的特征在 [区段生成器](../../../features/segments/segment-builder.md#topic_E166819D26B94A868376BA54E10E4B74) 中创建区段，并将这些区段映射到目标。Boolean运算符 [!UICONTROL AND][!UICONTROL OR]，允许 [!UICONTROL NOT] 您设置特征和区段资格条件。
+[!UICONTROL Activation] 使用用例，您可以使用相应数据源中的特征在 [区段生成器](../../../features/segments/segment-builder.md) 中创建区段，并将这些区段映射到目标。Boolean运算符 [!UICONTROL AND][!UICONTROL OR]，允许 [!UICONTROL NOT] 您设置特征和区段资格条件。
 
 当您 [在数据馈送级别](#feed-level-report)报告CPM使用情况时，必须根据特征资格规则中使用 [!DNL Boolean] 的操作符为每个数据馈送分配比例显示。下表列出了如何按Boolean规则或特征类型正确分配印象。
 
