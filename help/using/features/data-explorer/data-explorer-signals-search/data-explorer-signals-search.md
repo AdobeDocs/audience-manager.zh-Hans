@@ -4,12 +4,12 @@ seo-description: 搜索在特定时间段内收到的已使用和未使用的信
 seo-title: 信号搜索
 title: 信号搜索
 translation-type: tm+mt
-source-git-commit: 16c0dd83c18e720045995ac1851b4c91f3346183
+source-git-commit: a0e585b85a4e8ab180766298579dc39f93b7ff29
 
 ---
 
 
-# Signals Search Overview {#signals-search}
+# 信号搜索概述 {#signals-search}
 
 搜索在特定时间段内收到的已使用和未使用的信号。要搜索信号，请转到“受众数据”&gt;“信号”&gt;“搜索”。
 
