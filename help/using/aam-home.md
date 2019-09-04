@@ -1,19 +1,19 @@
 ---
 description: 受众管理器为在线受众数据管理提供了行业顶尖的服务。我们的产品和服务为数字广告商和出版商提供了控制和利用其数据资产以促进销售取得成功所需的工具。
-seo-description: 受众管理器为在线受众数据管理提供了行业顶尖的服务。我们的产品和服务为数字广告商和出版商提供了控制和利用其数据资产以促进销售取得成功所需的工具。
-seo-title: Audience Manager产品文档
+seo-description: Audience Manager(AAM)的技术文档和自助帮助。AAM为在线受众数据管理提供行业领先的服务，并为数字广告商和出版商提供控制和利用其数据资产所需的工具以帮助推动销售成功。
+seo-title: Adobe Audience Manager产品技术文档
 solution: Audience Manager
 title: Audience Manager产品文档
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916
 translation-type: tm+mt
-source-git-commit: aa58d1aa69a7d5e112d6b24fa8250bf56ccb370a
+source-git-commit: 5ea8e5d7997f192bc41bb9f9e4caa4a86b852a12
 
 ---
 
 
 # Audience Manager产品文档 {#audience-manager-product-documentation}
 
-受众管理器为在线受众数据管理提供了行业顶尖的服务。我们的产品和服务为数字广告商和出版商提供了控制和利用其数据资产以促进销售取得成功所需的工具。
+此技术文档指南为Audience Manager提供自助帮助，这是一个行业领先的在线受众数据管理服务。我们的产品和服务为数字广告商和出版商提供了控制和利用其数据资产以促进销售取得成功所需的工具。
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
