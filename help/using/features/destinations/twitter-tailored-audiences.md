@@ -5,7 +5,7 @@ seo-title: 将Twitter定制的受众配置为基于自助服务设备的目标
 solution: Audience Manager
 title: 将Twitter定制的受众配置为基于自助服务设备的目标
 translation-type: tm+mt
-source-git-commit: a16734f652f3c398f12660671103f5478cfdd89e
+source-git-commit: cd770afc39221687f4eb47cc358d8d57a51b9fb5
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: a16734f652f3c398f12660671103f5478cfdd89e
 1. [!DNL Twitter Ads] 您的帐户必须具有广告资格。在创建广告后的前两周，新 [!DNL Twitter Ads] 帐户没有资格获得广告。
 1. 您在Audience Manager中授权访问的Twitter用户帐户必须启用 [Partner Audience Manager](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 权限。
 1. 如果 [您正在将现有Twitter集成更新到自助服务管理](#update-existing-twitter-integrations)，则您的Twitter用户帐户必须启用 [广告管理器](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 权限。
-2. 在Audience Manager实例中创建第一 [!DNL Twitter Tailored Audiences] 个目标时，请联系Adobe咨询或客户关怀以为您的帐户启用 [!DNL Twitter] ID同步(数据源ID=1153)。这是Audience Manager与 [!DNL Twitter]Audience Manager之间正确同步所必需的。
+1. 在Audience Manager实例中创建第一 [!DNL Twitter Tailored Audiences] 个目标时，请联系Adobe咨询或客户关怀以为您的帐户启用 [!DNL Twitter] ID同步(数据源ID=1153)。这是Audience Manager与 [!DNL Twitter]Audience Manager之间正确同步所必需的。
 
 ## 添加新 [!DNL Twitter Tailored Audiences] 目标 {#add-new-twitter-destination}
 
