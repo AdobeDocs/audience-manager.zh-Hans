@@ -4,7 +4,7 @@ audience: 最终用户
 user-guide-title: Audience Manager用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: a51d569c04d1232d0fe9258199bd4ca0e5fcd987
+source-git-commit: b00a5570dd1d21474fef2295937fc379565f71ba
 
 ---
 
@@ -267,7 +267,7 @@ source-git-commit: a51d569c04d1232d0fe9258199bd4ca0e5fcd987
    + [DIL使用案例和代码示例](dil/dil-use-cases.md)
    + [Flash DIL](dil/dil-flash.md)
    + [DIL发行说明](/help/using/dil/dil-release-notes.md)
-+ 实施和集成指南{#implemenation-integration-guides}
++ 实施和集成指南{#implementation-integration-guides}
    + [实施和集成指南](integration/implementation-and-integration.md)
    + [数据集成方法](integration/data-integration-methods.md)
    + 使用Google Publisher标签(GPT)集成DFP{#integrate-dfp-using-gpt}
