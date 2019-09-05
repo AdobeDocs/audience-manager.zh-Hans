@@ -4,7 +4,7 @@ solution: Audience Manager
 title: 进行服务器到服务器DCS API调用
 uuid: bdfe3430-e27 f-4a5 c-88d9-ae164 d28 f601
 translation-type: tm+mt
-source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
+source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
 
 ---
 
@@ -21,7 +21,9 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 向使用 [!UICONTROL DCS] 下面显示的语法发送数据的基本服务器到服务器请求。
 
-<pre><code>“主持人：<i>domain alias</i>. demdex. net"https://DCS<i>主机name.demdex.net/event?d_rtbd=json&amp;d_jsonv=1&amp;d_uuid=user</i><i>ID</i>。</code></pre>
+```js
+"Host:domain_alias.demdex.net" "https://DCS_host_name.demdex.net/event?d_rtbd=json&d_jsonv=1&d_uuid=userID
+```
 
 示例调用类似于以下示例。
 
