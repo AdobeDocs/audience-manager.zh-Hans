@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 将数据发送到DCS
 uuid: 024e307d-bfcb-46cf-ac3 a-fc71 df0248 fe
 translation-type: tm+mt
-source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
+source-git-commit: 9c692ae41a309b4f1d8323a501619c02d2aef6a0
 
 ---
 
@@ -90,6 +90,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 ```js
 https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_rtbd=json&d_cb=acme_callback
 ```
+
 ## 后续步骤 {#dcs-next-steps}
 
 现在，您已经熟悉发送数据的过程 [!UICONTROL DCS]了，现在应该了解如何从数据中返回数据并解析该信息。请参阅 [接收来自DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)的数据。
