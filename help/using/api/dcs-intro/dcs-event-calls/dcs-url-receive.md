@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 从DCS接收数据
 uuid: fbb77197-8530-48a8-b708-d785 f7214494
 translation-type: tm+mt
-source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
+source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
 
 ---
 
@@ -21,8 +21,9 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 
 [!UICONTROL DCS] 如果您希望收到响应，则必须包含 `d_rtbd=json` 您的请求 [!UICONTROL DCS]。如果忽略此参数，则不 [!UICONTROL DCS] 会返回数据。对请求数据的 [!UICONTROL DCS] 基本调用使用此语法：
 
-<pre><code>https://domainalias.demdex.net/event<i></i>？<i>key1</i>= <i>val1</i>，&amp;<i>key2</i>= <i>val2</i>&amp; d_ dst=1&amp; d_ rtbd= json&amp; d_ cb=<i>callback</i></code>
-</pre>
+```js
+https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_cb=callback
+```
 
 ## 示例响应 {#sample-response}
 
