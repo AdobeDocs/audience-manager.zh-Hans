@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 将数据发送到DCS
 uuid: 024e307d-bfcb-46cf-ac3 a-fc71 df0248 fe
 translation-type: tm+mt
-source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
+source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
 
 ---
 
@@ -23,7 +23,9 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 向使用下面显示的语法发送数据的基本 `URL`[!UICONTROL DCS] 字符串。
 
-<pre><code>https://domainalias.demdex.net/event<i></i>？<i>key1</i>=<i>val1</i>，&amp;<i>key2</i>=<i>val2</i>&amp; d_ dst=1&amp; d_ rtbd= json&amp; d_ cb=<i>callback</i></code></pre>
+```js
+https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_cb=callback
+```
 
 >[!NOTE]
 >
@@ -85,8 +87,9 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 此示例显示了虚构的公司，该公司 [!DNL Acme, Inc.] 通过 [!UICONTROL DCS][!DNL HTTP] 电话发送数据。请注意，此调用包括可选参数 `d_dst=1`、 `d_rtbd=json``d_cb=callback`和。这些表示 [!DNL Acme] 希望接收回调函数 [!DNL JSON][!UICONTROL DCS] 的响应。记住，这只是一个示例。切勿剪切和粘贴此代码。
 
-`https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_rtbd=json&d_cb=acme_callback`
-
+```js
+https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_rtbd=json&d_cb=acme_callback
+```
 ## 后续步骤 {#dcs-next-steps}
 
 现在，您已经熟悉发送数据的过程 [!UICONTROL DCS]了，现在应该了解如何从数据中返回数据并解析该信息。请参阅 [接收来自DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)的数据。
