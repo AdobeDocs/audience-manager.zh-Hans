@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 区段生成器
 uuid: 5ca924a5-2b29-4802-ab02-e292 d77 a ae
 translation-type: tm+mt
-source-git-commit: 2733080505760bbcf39737f0ad0d2d7605d1f477
+source-git-commit: 0d0806ef2c84b4770adc29d668351ac3f2d8cc5f
 
 ---
 
@@ -17,9 +17,7 @@ source-git-commit: 2733080505760bbcf39737f0ad0d2d7605d1f477
 
 ## 视频演示
 
-以下视频将指导您完成区段创建过程。请阅读下面的部分以了解更多信息。
-
->[!VIDEO](https://images-tv.adobe.com/avp/vr/b7f88801-efe0-4786-9d58-554db16b34eb/81b6f004-cec0-452c-9b35-dabdc69ae3b4/9dc8a1d4-350d-46c3-90a6-5197dfb76f40_20180130023449.854x480at800_h264.mp4)
+首先，观看Audience Manager视频 [中的创建区段](https://images-tv.adobe.com/avp/vr/b7f88801-efe0-4786-9d58-554db16b34eb/81b6f004-cec0-452c-9b35-dabdc69ae3b4/9dc8a1d4-350d-46c3-90a6-5197dfb76f40_20180130023449.854x480at800_h264.mp4)。视频将指导您完成区段创建过程。请阅读下面的部分以了解更多信息。
 
 ## 创建区段 {#create-segment}
 
