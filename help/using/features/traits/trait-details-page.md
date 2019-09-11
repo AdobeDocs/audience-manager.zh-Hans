@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 特征详细信息页面
 uuid: 23301376-c1 cc-4778-b8 c4-9831f6739 db9
 translation-type: tm+mt
-source-git-commit: 3130882116d39e94b446679999144f1eb55edc77
+source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
 
 ---
 
@@ -39,6 +39,8 @@ source-git-commit: 3130882116d39e94b446679999144f1eb55edc77
    ![特征图](assets/trait-identity.png)
    > [!NOTE]
    > 如果您具有符合特征的跨设备ID，则Audience Manager仅显示 [!UICONTROL Identity Type Breakdown] 报告。
+
+   >[!VIDEO](https://video.tv.adobe.com/v/27977/?captions=chi_hans)
 
 ## 特征表达式 {#trait-expression}
 
