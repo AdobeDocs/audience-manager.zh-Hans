@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 区段摘要视图
 uuid: e844e423-9701-42d4-9ba5-d82 f41358 ADC
 translation-type: tm+mt
-source-git-commit: 263c55e6bd2c9ad7159306fc889b048d800c59da
+source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 263c55e6bd2c9ad7159306fc889b048d800c59da
 单击主仪表板中的区段名称以访问其摘要页面。摘要部分包括：
 
 1. **[!UICONTROL Basic Information]：** 显示创建区段时指定的必需和可选详细信息。
-2. **[!UICONTROL Segment Graph]：** 以图形方式显示性能数据，并以固定1、7、14、30、60和90天间隔显示。我们在单独 [的文档中解释细分人口数](../../features/segments/segment-builder-data.md)。
+2. **[!UICONTROL Segment Graph]：** 以图形方式显示性能数据，并以固定1、7、14、30、60和90天间隔显示。我们在一 [篇单独的文章中解释细分人口数](../../features/segments/segment-builder-data.md)。
 
    ![区段图](assets/segment-graph.png)
 
@@ -29,6 +29,8 @@ source-git-commit: 263c55e6bd2c9ad7159306fc889b048d800c59da
    >[!NOTE]
    >
    >如果您具有符合区段资格的跨设备ID，则Audience Manager仅显示 [!UICONTROL Identity Type Breakdown] 报告。
+
+   >[!VIDEO](https://video.tv.adobe.com/v/27977/?captions=chi_hans)
 
 4. **[!UICONTROL Segment Rules]：** 列出区段中的特征以及资格规则。
 5. **[!UICONTROL Destination Mappings]：** 列出区段的目标映射。
