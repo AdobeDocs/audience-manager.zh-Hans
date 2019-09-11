@@ -1,18 +1,18 @@
 ---
 description: 概述希望将数据从其他系统(脱机)引入Audience Manager的技术和非技术客户的概述。
-keywords: inacted
-seo-description: 概述希望将数据从其他系统(脱机)引入Audience Manager的技术和非技术客户的概述。
+keywords: 入站、批次、批量上传、批处理数据
+seo-description: 概述希望将数据从其他系统(脱机)引入Audience Manager的技术和非技术客户的概述。为此，请使用Audience Manager中的批量上传选项。
 seo-title: 将批处理数据发送到Audience Manager概述
 solution: Audience Manager
 title: 将批处理数据发送到Audience Manager概述
 uuid: 472583b1-5057-4add-8e3c-5e50762c88e0
 translation-type: tm+mt
-source-git-commit: dd5c3d28097251c58e1fb095aaf4076883d1c1a1
+source-git-commit: 2e3adc8f0b2fe6efd9ca57f1d763ee4476d2edee
 
 ---
 
 
-# Send Batch Data to Audience Manager Overview{#send-batch-data-to-audience-manager-overview}
+# 将批处理数据发送到Audience Manager概述{#send-batch-data-to-audience-manager-overview}
 
 概述希望将数据从其他系统(脱机)引入Audience Manager的技术和非技术客户的概述。
 
@@ -20,17 +20,17 @@ source-git-commit: dd5c3d28097251c58e1fb095aaf4076883d1c1a1
 
 <!-- c_offline_to_online.xml -->
 
-您可以从Audience Manager中提供其他系统的数据。我们的系统可以帮助您释放价值并利用之前收集的用户数据。This includes information about purchases, customer surveys, registration data, [!DNL CRM] databases, etc. 虽然每个集成都有自己的挑战，但它们都共享了这些常见步骤。查看此材料可帮助减少在线离线数据所需的工作。
+您可以从Audience Manager中提供其他系统的数据。我们的系统可以帮助您释放价值并利用之前收集的用户数据。包括有关购买、客户调查、注册数据、 [!DNL CRM] 数据库等的信息。虽然每个集成都有自己的挑战，但它们都共享了这些常见步骤。查看此材料可帮助减少在线离线数据所需的工作。
 
 ## 步骤1：同步用户ID
 
-在同步过程中，Audience Manager会向客户端及其用户分配唯一ID。These IDs are known as the [!UICONTROL Data Provider ID] ([!UICONTROL DPID]) and [!UICONTROL Unique User ID] ([!UICONTROL UUID]), respectively. Audience Manager uses the [!UICONTROL DPID] and [!UICONTROL UUID] to identify users and qualify them for traits, segments, audience groups, and for reporting. Additionally, our data collection code ([!UICONTROL DIL]) looks for these IDs to capture visitor data from your website. 完成此步骤后，Audience Manager和您的脱机存储库应包含每个用户记录对应的ID。
+在同步过程中，Audience Manager会向客户端及其用户分配唯一ID。这些ID分别称为 [!UICONTROL Data Provider ID] ([!UICONTROL DPID])和 [!UICONTROL Unique User ID] ([!UICONTROL UUID])。Audience Manager使用 [!UICONTROL DPID] 和 [!UICONTROL UUID] 识别用户并符合特征、细分、受众组和报告的条件。此外，我们的数据收集代码([!UICONTROL DIL])会查找这些ID以从您的网站捕获访客数据。完成此步骤后，Audience Manager和您的脱机存储库应包含每个用户记录对应的ID。
 
 关于此步骤的重要注意事项：
 
 * **客户端ID位置：** Audience Manager需要了解您的客户端ID在您的网站上显示的位置(例如，它存储在cookie中、Analytics变量、页面代码中等)。
 * **排除[!DNL PII]：** 用户ID不得包含个人识别信息([!DNL PII])。
-* **案例和内容敏感性：** 在实时数据同步过程中，Audience Manager从您的站点捕获的用户ID必须与从脱机存储库中传入的ID相对应。For example, if offline records hold information about [!DNL User123], but your site renders that ID as [!DNL USER123], Audience Manager sees these as different visitors. 因此，此访客的在线信息无法与脱机数据库中的相应记录关联。ID必须完全匹配。
+* **案例和内容敏感性：** 在实时数据同步过程中，Audience Manager从您的站点捕获的用户ID必须与从脱机存储库中传入的ID相对应。例如，如果脱机记录保存相关信息 [!DNL User123]，但您的站点呈现该ID， [!DNL USER123]则Audience Manager将这些信息视为不同的访客。因此，此访客的在线信息无法与脱机数据库中的相应记录关联。ID必须完全匹配。
 
 See [ID Synchronization for Inbound Data Transfers](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md).
 
@@ -49,14 +49,14 @@ See [ID Synchronization for Inbound Data Transfers](../../../integration/sending
 
 ## 步骤2：数据文件格式
 
-文件名和内容遵循严格指导方针。You *must* name and organize data files according to these specifications in this guide. 请参阅：
+文件名和内容遵循严格指导方针。您 *必须* 根据本指南中的这些规范命名和组织数据文件。请参阅：
 
 * [入站数据文件的 Amazon S3 名称要求](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 * [入站数据文件内容：语法、变量和示例](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
 
 ## 线上数据可用于离线营销工作
 
-在线离线数据时，您仍可将此信息用于离线营销活动。To do this, Audience Manager exports trait and segment information to an [!DNL FTP] or [!DNL Amazon S3] location of your choice. 有关更多信息或协助，请与您的合作伙伴解决方案经理联系。
+在线离线数据时，您仍可将此信息用于离线营销活动。为此，Audience Manager会导出特征并将信息细分到您选择的位置 [!DNL FTP] 或 [!DNL Amazon S3] 位置。有关更多信息或协助，请与您的合作伙伴解决方案经理联系。
 
 ## 环境
 
@@ -94,4 +94,4 @@ Audience Manager为文件放弃提供以下环境：
 
 ## 更多技术阅读
 
-Systems engineers, developers, or technical/implementation teams should review [Batch Data Transfer Process Described](../../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md#batch-data-transfer-process) and the other articles in this section. 这些文章提供了有关传输协议、文件内容和文件名要求的详细信息。
+系统工程师、开发人员或技术/实施团队应查看介绍 [的批处理数据传输流程](../../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md) 以及本节中的其他文章。这些文章提供了有关传输协议、文件内容和文件名要求的详细信息。
