@@ -7,20 +7,20 @@ solution: Audience Manager
 title: 创建基于规则或载入的特征
 uuid: 4243e09f-66-443a-864a-d6 e6918079 fa
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
 
 ---
 
 
-# Create Rules-Based or Onboarded Traits {#create-rules-based-or-onboarded-traits}
+# 创建基于规则或载入的特征 {#create-rules-based-or-onboarded-traits}
 
-Describes set up steps and features specific to the [!UICONTROL rules-based] and [!UICONTROL onboarded] trait creation process.
+介绍特定于和 [!UICONTROL rules-based][!UICONTROL onboarded] 特征创建过程的步骤和功能。
 
 <!-- c_tb_rules_traits.xml -->
 
-## Basic Information for Traits {#basics}
+## 特征的基本信息 {#basics}
 
-In [!UICONTROL Trait Builder], the [!UICONTROL Basic Information] settings let you create new, or edit existing traits. [!UICONTROL Basic Information] 这些设置对于基于规则的、已载入的和算法特征相同。要创建新的特征，请提供一个名称(避免特殊字符)、一个数据源并选择一个存储文件夹。Other [!UICONTROL Basic Information] fields are optional.
+在中 [!UICONTROL Trait Builder]， [!UICONTROL Basic Information] 设置允许您创建新属性或编辑现有特征。[!UICONTROL Basic Information] 这些设置对于基于规则的、已载入的和算法特征相同。要创建新的特征，请提供一个名称(避免特殊字符)、一个数据源并选择一个存储文件夹。其他 [!UICONTROL Basic Information] 字段为可选字段。
 
 <!-- c_tb_basics.xml -->
 
@@ -43,7 +43,7 @@ In [!UICONTROL Trait Builder], the [!UICONTROL Basic Information] settings let y
        <li id="li_579302FE34B64FE0AE3C751012839229">连字符 </li> 
        <li id="li_44890F738CC64E449CC2545D701ECBC7">选项卡 </li> 
        <li id="li_C203837501A94342923C99A7DAD1ED61">垂直栏或管道符号 </li> 
-      </ul> </p> </p> <p>This helps reduce processing errors when you set up an <a href="../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md"> inbound data file transfer</a>. </p> </td> 
+      </ul> </p> </p> <p>这有助于减少在设置 <a href="../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md"> 入站数据文件传输</a>时处理错误。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 描述</span></b> </td> 
@@ -51,7 +51,7 @@ In [!UICONTROL Trait Builder], the [!UICONTROL Basic Information] settings let y
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 事件类型</span></b> </td> 
-   <td colname="col2"> 将特征分配给类型或类别，通常根据功能(例如转换、网站访客、合作伙伴、页面查看等)进行分配。可选。 </td> 
+   <td colname="col2"> 将特征分配给类型或类别，通常根据功能(例如转换、网站访客、合作伙伴、页面查看等)进行分配。可选。 <p> 要了解如何创建转化特征，请参阅Audience Manager视频 <a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">中的创建转换特征</a>。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 数据源</span></b> </td> 
@@ -76,16 +76,16 @@ In [!UICONTROL Trait Builder], the [!UICONTROL Basic Information] settings let y
  </tbody> 
 </table>
 
-## Set a Trait Expiration Interval {#set-expiration-interval}
+## 设置特征到期间隔 {#set-expiration-interval}
 
-In [!UICONTROL Trait Builder], the [!UICONTROL Advanced Options] lets you set a time-to-live ([!DNL TTL]) interval for a trait. [!DNL TTL] 定义合格访客保留在特征中的天数(默认为120天)。设置为0时，特征会员资格永不过期。
+在中 [!UICONTROL Trait Builder]，允许 [!UICONTROL Advanced Options] 您为特征设置一个time-to-live([!DNL TTL])时间间隔。[!DNL TTL] 定义合格访客保留在特征中的天数(默认为120天)。设置为0时，特征会员资格永不过期。
 
 <!-- t_tb_ttl.xml -->
 
 ### 为特征设置TTL
 
-1. Expand the [!UICONTROL Advanced Options] section and enter a number to set a [!DNL TTL] value for the trait.
-1. 单击 **[!UICONTROL Save]**.
+1. 展开 [!UICONTROL Advanced Options] 部分并输入一个数字，以设置特征 [!DNL TTL] 的值。
+2. 单击 **[!UICONTROL Save]**.
    ![](assets/TTL.png)
 
 >[!MORE_ LIKE_ This]
