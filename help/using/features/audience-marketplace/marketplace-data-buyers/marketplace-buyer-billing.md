@@ -7,7 +7,7 @@ title: 数据馈送购买者计费
 keywords: 细分级别报告、细分级别、细分级别
 uuid: d723667-282b-4160-9909-579721af4016
 translation-type: tm+mt
-source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
+source-git-commit: a8320894c0efcf46bd3236494e1aa7b1eded24d1
 
 ---
 
@@ -50,6 +50,10 @@ Audience Marketplace数据购买者同意报告使用每千个广告印象([!DNL
 
 1. 单击 **[!UICONTROL Confirm]**.
 
+另请观看我们的视频演示如何报告细分级别使用情况：
+
+>[!VIDEO](https://video.tv.adobe.com/v/25522/?captions=chi_hans)
+
  
 
 ## 报告数据馈送级别的CPM使用情况 {#feed-level-report}
@@ -59,15 +63,15 @@ Audience Marketplace数据购买者同意报告使用每千个广告印象([!DNL
 要在区段级别报告 [!DNL CPM] 使用情况，请执行以下操作：
 
 1. **[!UICONTROL Audience Marketplace > Payables]**&#x200B;转至。
-1. 选择 **[!UICONTROL Feed Usage]** 选项卡。
-1. 使用 [!UICONTROL Search] 该框过滤数据服务，并识别您需要报告的数据源。
-1. 单击 **[!UICONTROL Edit Feeds Usage]**.
-1. 根据CPM [!DNL CPM] 数据源的 [成本归因计算每个数据馈送的使用情况](#cost-attribution)，并在 [!UICONTROL Usage] 列中输入它。
-1. 完成后单击 **[!UICONTROL Save]** ，查看确认对话框。
+2. 选择 **[!UICONTROL Feed Usage]** 选项卡。
+3. 使用 [!UICONTROL Search] 该框过滤数据服务，并识别您需要报告的数据源。
+4. 单击 **[!UICONTROL Edit Feeds Usage]**.
+5. 根据CPM [!DNL CPM] 数据源的 [成本归因计算每个数据馈送的使用情况](#cost-attribution)，并在 [!UICONTROL Usage] 列中输入它。
+6. 完成后单击 **[!UICONTROL Save]** ，查看确认对话框。
 
    ![确认源使用](assets/confirm-feed-usage.png)
 
-1. 单击 **[!UICONTROL Confirm]**.
+7. 单击 **[!UICONTROL Confirm]**.
 
 <br> 
 
