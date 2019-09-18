@@ -1,29 +1,30 @@
 ---
-description: 列出并描述可传入数据收集服务器(DCS)的语法和支持的属性(或密钥值对)。此信息可帮助您格式化DCS请求并了解此系统返回的参数。
-seo-description: 列出并描述可传入数据收集服务器(DCS)的语法和支持的属性(或密钥值对)。此信息可帮助您格式化DCS请求并了解此系统返回的参数。
-seo-title: DCS API调用的支持属性
+description: 列出并描述可传递到数据收集服务器(DCS)的语法和支持的属性（或键值对）。 这些信息可以帮助您格式化DCS请求并了解此系统返回的参数。
+seo-description: 列出并描述可传递到数据收集服务器(DCS)的语法和支持的属性（或键值对）。 这些信息可以帮助您格式化DCS请求并了解此系统返回的参数。
+seo-title: DCS API调用支持的属性
 solution: Audience Manager
-title: DCS API调用的支持属性
+title: DCS API调用支持的属性
+keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid ic
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 6e2cb69cd2f65851b82ed9a28f4a108562ce6ab8
 
 ---
 
 
-# Supported Attributes for DCS API Calls {#supported-attributes-for-dcs-api-calls}
+# DCS API调用支持的属性 {#supported-attributes-for-dcs-api-calls}
 
-Lists and describes the syntax and supported attributes (or key-value pairs) you can pass in to the [!UICONTROL Data Collection Servers] ([!UICONTROL DCS]). This information can help you format your [!UICONTROL DCS] requests and understand the parameters returned by this system.
+列出并描述可传递给()的语法和支持的属性（或键值对） [!UICONTROL Data Collection Servers] 和[!UICONTROL DCS]属性。 这些信息可以帮助您设置请求的格 [!UICONTROL DCS] 式并了解此系统返回的参数。
 
-## Attribute Prefixes {#attribute-prefixes}
+## 属性前缀 {#attribute-prefixes}
 
-The [!UICONTROL DCS] relies on specific prefixes added to the keys in key-value pairs to classify the type of data you're passing in.
+该 [!UICONTROL DCS] 方法依赖添加到键值对中的键的特定前缀来对传入的数据类型进行分类。
 
 <table id="table_23B7E15EC13749E9A245DFB543822DB7"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 密钥前缀 </th> 
-   <th colname="col2" class="entry"> 保留为 </th> 
+   <th colname="col2" class="entry"> 保留对象 </th> 
   </tr>
  </thead>
  <tbody> 
@@ -33,7 +34,7 @@ The [!UICONTROL DCS] relies on specific prefixes added to the keys in key-value 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_</code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> Audience Manager</span> 属性。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Audience manager属性</span> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> h_</code> </p> </td> 
@@ -41,14 +42,14 @@ The [!UICONTROL DCS] relies on specific prefixes added to the keys in key-value 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> p_</code> </p> </td> 
-   <td colname="col2"> <p>客户定义的私有属性。 </p> <p> The DCS accepts your own, private data when the key has a <code> p_</code> prefix. 私有数据用于特征评估，但不会记录或存储在我们的系统中。For example, lets say you have a trait defined as <code> customers = p_age&lt;25</code> and you pass in <code> p_age=23</code> in an event call. Given these conditions, the user who meets the age-based qualification criteria qualifies for the trait, but the key-value pair is dropped after <span class="keyword"> Audience Manager</span> receives the request and is not logged. </p> </td>
+   <td colname="col2"> <p>由客户定义的私有属性。 </p> <p> 当密钥具有 <code> p_</code> 前缀时，DCS接受您自己的私有数据。 私有数据用于特征评估，但不会记录或存储在我们的系统中。 例如，假设您有一个特征定义为 <code> 客户= p_age&lt;25</code> ，并且在事件调用中传递 <code> p_age=23</code> 。 鉴于这些情况，符合基于年龄的资格标准的用户有资格获得该特征，但在 <span class="keyword"></span> Audience Manager收到请求后，键值对会丢失，且不会记录。 </p> </td>
   </tr> 
  </tbody> 
 </table>
 
-## d_ Attributes {#d-attributes}
+## d_属性 {#d-attributes}
 
-All of these are optional, unless you want a response from the [!UICONTROL DCS]. If you want the [!UICONTROL DCS] to return a response, then `d_rtbd=json` is required.
+除非您希望从中得到响应，否则所有这些都是可选的 [!UICONTROL DCS]。 如果希望 [!UICONTROL DCS] 返回响应，则 `d_rtbd=json` 为必填。
 
 <table id="table_FCCE4F9D796648899772A191981EFDE6"> 
  <thead> 
@@ -59,114 +60,114 @@ All of these are optional, unless you want a response from the [!UICONTROL DCS].
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><code> d_ caller</code> </p> </td> 
-   <td colname="col2"> <p>Used to identify the caller who is making the call to the <span class="wintitle"> DCS</span> API. </p> </td> 
+   <td colname="col1"> <p><code> d_caller</code> </p> </td> 
+   <td colname="col2"> <p>用于标识对 <span class="wintitle"> DCS</span> API进行调用的调用者。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_cb</code> </p> </td> 
-   <td colname="col2"> <p>Specifies a JavaScript function you want to execute using the <span class="wintitle"> DCS</span> response as a function parameter of the callback function. </p> </td> 
+   <td colname="col2"> <p>指定要使用 <span class="wintitle"></span> DCS响应作为回调函数的函数参数执行的JavaScript函数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_cid</code> </p> </td> 
-   <td colname="col2"> <p>Contains one or more pairs of data provider IDs (<code> DPID</code>) and data provider user IDs (<code> DPUUID</code>) assigned by <span class="keyword"> Audience Manager</span>. If you use multiple pairs of <code> DPID</code>s and <code> DPUUID</code>s, separate each pair with the non-printing character <code> %01</code>. For example: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_ cid</code> 替换 <code> d_ dpid</code> 和 <code> d_ dpuuid</code>，它们已弃用但仍然支持。请参阅 <a href="../../../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td>
+   <td colname="col2"> <p>包含由Audience manager分配的一对或多对数据提供者ID(<code> DPID</code>)和数据提供者用户ID(<code> DPUUID)</code><span class="keyword"></span>。 如果使用多对 <code> DPID和</code>DPUUID，则每对都用非打印字符 <code> %01分隔</code><code></code>。 例如： <code><i>DPID</i>%01<i>DPUUID</i></code>。 </p> <p><code> d_cid替换</code> 了d_dpid <code> 和</code> d_dpuuid <code></code>，已弃用但仍受支持。 请参阅 <a href="../../../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p><code> d_ cid_ ic</code> </p> </td> 
-   <td colname="col2"> <p>包含一个集成代码和一个关联的唯一用户ID(在一个键值对中)。 </p> <p><code> d_ cid_ ic</code> 替换 <code> d_ dpid</code> 和 <code> d_ dpuuid</code>，它们已弃用但仍然支持。请参阅 <a href="../../../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td>
+   <td colname="col1"> <p><code> d_cid_ic</code> </p> </td> 
+   <td colname="col2"> <p>在单个键值对中包含集成代码和关联的唯一用户ID。 </p> <p><code> d_cid_ic</code> 替换 <code> d_dpid</code> 和 <code> d_dpuuid</code>，已弃用但仍受支持。 请参阅 <a href="../../../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td>
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ coppa</code> </p> </td> 
-   <td colname="col2"> <p>禁用第三方Cookie的使用，以遵守儿童保护规定。This parameter is dynamically set by the Adobe Experience Cloud ID service and depends on the <code> idSyncDisable3rdPartySyncing</code> configuration. See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_coppa.html" format="https" scope="external"> COPPA Support in the Experience Cloud ID Service</a>. </p> </td>
+   <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
+   <td colname="col2"> <p>为遵守儿童保护法规，禁止使用第三方Cookie。 此参数由Adobe Experience Cloud ID服务动态设置，并取决于 <code> idSyncDisable3rdPartySyncing配置</code> 。 See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_coppa.html" format="https" scope="external"> COPPA Support in the Experience Cloud ID Service</a>. </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p><code> d_ cts=1</code> </p> <p><code> d_ cts=2</code> </p> </td> 
-   <td colname="col2"> <p>可选。根据客户请求启用。联系您的Adobe Audience Manager顾问或客户关怀。 </p> <p>Indicates that traits and segments should be returned inside the <code> JSON</code> response. </p> <p> 
+   <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
+   <td colname="col2"> <p>可选。在客户请求时启用。 联系您的Adobe Audience manager顾问或客户关怀。 </p> <p>指示应在 <code> JSON响应中返回特征和区段</code> 。 </p> <p> 
      <ul id="ul_8B936ACB18724681B959783421ACF026"> 
-      <li id="li_792A6248F49141C0B4B214C754D5F5C5"> <p><code> d_ cts=</code> 返回 <a href="../../../reference/ids-in-aam.md"> 区段的旧区段ID</a> 。 </p> </li>
-      <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_ cts=</code> 返回区段ID。 </p> </li>
+      <li id="li_792A6248F49141C0B4B214C754D5F5C5"> <p><code> d_cts=1</code> 会返回 <a href="../../../reference/ids-in-aam.md"> 段的旧版段ID</a> 。 </p> </li>
+      <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_cts=2</code> 返回区段的区段ID。 </p> </li>
      </ul> </p> <p>示例响应可能如下所示： </p> <p>
-     <code class="syntax javascript">{“feats”：[]，“uuid”：“0795526165808603505032705804272278”，“cs_ region”：7，“traits”：[420020，5421506]，“区段”：[984263、985264]、“tid”：“ss3otQPIPQ0=”} </code>
-  </p> </td> 
+     <code class="syntax javascript">
+      { "stuff": [], "uuid": "079552616528886032950143702505894272138", "dcs_region": 7, "traits": [420020, 5421506], "segments": [984263, 985264], "tid": "ss3OTqPiQp0=" } </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ dpid</code> </p> </td> 
-   <td colname="col2"> <p>已弃用。See <code> d_cid</code> and <code> d_cid_ic</code>. </p> </td> 
+   <td colname="col1"> <p><code> d_dpid</code> </p> </td> 
+   <td colname="col2"> <p>已弃用。请参 <code> 阅d_cid</code><code> 和d_cid_ic</code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ dpuid</code> </p> </td> 
-   <td colname="col2"> <p>已弃用。See <code> d_cid</code> and <code> d_cid_ic</code>. </p> </td> 
+   <td colname="col1"> <p><code> d_dpuuid</code> </p> </td> 
+   <td colname="col2"> <p>已弃用。请参 <code> 阅d_cid</code><code> 和d_cid_ic</code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ dst=1</code> </p> </td> 
-   <td colname="col2"> <p>Returns URL destination data in the <code> JSON</code> response. </p> </td> 
+   <td colname="col1"> <p><code> d_dst=1</code> </p> </td> 
+   <td colname="col2"> <p>在 <code> JSON响应中返回URL目标数据</code> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_dst_filter</code> </p> </td> 
-   <td colname="col2"> <p><code> d_ dst_ filter</code> 是一个保留属性，用于Adobe Analytics和Audience Manager之间的集成。 </p> <p>我们建议不要创建使用保留属性的特征。Adobe可以随时更改保留属性。 </p> </td> 
+   <td colname="col2"> <p><code> d_dst_filter</code> 是保留属性，用于Adobe Analytics与Audience Manager之间的集成。 </p> <p>我们建议不要创建使用保留属性的特征。 Adobe可随时更改保留属性。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ jsonv=1||0</code> </p> </td> 
-   <td colname="col2"> <p>Indicates the <code> JSON</code> version to use in the response. Normally, you should set this to <code> d_jsonv=1</code>. Setting <code> d_jsonv=0</code> disables ID syncs. </p> </td> 
+   <td colname="col1"> <p><code> d_jsonv=1|0</code> </p> </td> 
+   <td colname="col2"> <p>指示 <code></code> 要在响应中使用的JSON版本。 通常情况下，应将其设置为 <code> d_jsonv=1</code>。 设置 <code> d_jsonv=0</code> 将禁用ID同步。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>Specifies the Experience Cloud ID set and used by the <span class="keyword"> Experience Cloud</span> ID service. For more information about the ECID, see <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> </td> 
+   <td colname="col2"> <p>指定Experience Cloud ID服务设置和使用 <span class="keyword"> 的Experience Cloud</span> ID。 For more information about the ECID, see <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ nsid</code> </p> </td> 
-   <td colname="col2"> <p>名称空间ID。指示使用哪个JavaScript容器。<span class="wintitle"> 由DIL</span> 用于id同步。 </p> </td> 
+   <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
+   <td colname="col2"> <p>名称空格ID。 指示使用哪个JavaScript容器。 由 <span class="wintitle"> DIL用于</span> ID同步。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ tpm </code> </p> </td> 
-   <td colname="col2"> <p>允许Audience Manager区分来自桌面请求的移动请求。支持的值包括： </p> <p> 
+   <td colname="col1"> <p><code> d_ptfm </code> </p> </td> 
+   <td colname="col2"> <p>允许Audience manager区分移动请求和桌面请求。 支持的值包括： </p> <p> 
      <ul id="ul_A01D4B15C89F4713A39E08377924D632"> 
       <li id="li_E17CC839265B4EB9AC44A3DA31A23857"> <code> ios</code> </li> 
-      <li id="li_468F5903CD3048B5AE02A3FDA9B3C4F1"> <code> Android</code> </li> 
+      <li id="li_468F5903CD3048B5AE02A3FDA9B3C4F1"> <code> android</code> </li> 
       <li id="li_57090DAC3BDA41DFB4BA0DD328754D55"> <code> browser</code> </li> 
-      <li id="li_DA4E93A831FE4FD8971CECD508AF992F"> <code> all</code> </li> 
+      <li id="li_DA4E93A831FE4FD8971CECD508AF992F"> <code> 全部</code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_rs</code> </p> </td> 
-   <td colname="col2"> <p>已弃用。<code> d_ rs</code> 是一个保留属性，用于 <span class="keyword"> Adobe Analytics</span> 和 <span class="keyword"> Audience Manager之间的传统集成</span>。 </p> <p>我们建议不要创建使用保留属性的特征。Adobe可以随时更改保留属性。 </p> </td> 
+   <td colname="col2"> <p>已弃用。<code> d_rs</code> 是保留属性，用于 <span class="keyword"> Adobe Analytics和</span> Audience Manager之间的旧式集成 <span class="keyword"></span>。 </p> <p>我们建议不要创建使用保留属性的特征。 Adobe可随时更改保留属性。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ rtbd= json</code> </p> </td> 
-   <td colname="col2"> <p>Required if you want a <code> JSON</code> response from the <span class="wintitle"> DCS</span>. </p> <p> 
+   <td colname="col1"> <p><code> d_rtbd=json</code> </p> </td> 
+   <td colname="col2"> <p>如果您希望从 <code> DCS获得JSON</code> 响应，则 <span class="wintitle"> 此为必需</span>。 </p> <p> 
      <ul id="ul_9EA00BD822504BCA8ECB59C1634DB91A"> 
-      <li id="li_7CB890F92C4A4C6AA8B4EE32E1AD4564">If you omit this, the <span class="wintitle"> DCS</span> returns a pixel in the header. </li> 
-      <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">If you include this, the <span class="wintitle"> DCS</span> returns a <code> JSON</code> object in the body of the response. 请参阅下面的示例。您的响应可能更复杂。 </li> 
+      <li id="li_7CB890F92C4A4C6AA8B4EE32E1AD4564">如果忽略此值， <span class="wintitle"> DCS</span> 将返回标题中的像素。 </li> 
+      <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">如果包括此值， <span class="wintitle"> DCS</span> 将在响应主体中返回 <code> JSON</code> 对象。 请参阅以下示例。 您的反应可能更复杂。 </li> 
      </ul> </p> <p> 
-     <code class="syntax javascript">{“feats”：[]，“uuid”：“229201126906967679904394944949939990”，“ds_ greate”：7，“tid”：“ss3otQPIPQ0=”} </code>
-  </p> </td> 
+     <code class="syntax javascript">
+      { "stuff": [], "uuid": "2292011296801967861290439474495439890", "dcs_region":7, "tid": "ss3OTqPiQp0=" } </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ sid</code> </p> </td> 
-   <td colname="col2"> <p><code> SID</code> 代表 <span class="term"> 得分ID</span>。这是特征或区段的唯一ID。 </p> </td> 
+   <td colname="col1"> <p><code> d_sid</code> </p> </td> 
+   <td colname="col2"> <p><code> SID</code> 代表得分 <span class="term"> ID</span>。 这是特征或区段的唯一ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ tdpid</code> </p> </td> 
-   <td colname="col2"> <p>通过数据源进行特征评估。只评估此数据源中的特征。 </p> <p>例如，您有： </p> <p> 
+   <td colname="col1"> <p> <code> d_tdpid</code> </p> </td> 
+   <td colname="col2"> <p>传递数据源以进行特征评估。 仅评估来自此数据源的特征。 </p> <p>例如，假设您有： </p> <p> 
      <ul id="ul_6230777E16C14DCB83025A101A4ECA14"> 
-      <li id="li_71F3970417BC4B93881A3E12DADE4120"><b>特征T1</b> ： </li> 
-      <li id="li_66125E035F524A958C6F4BFAABA2A0D2">Trait rule: "<code> key1 == val1</code>" </li> 
-      <li id="li_4EE486E02CF54AEA876ABC005094E9E4">Data Source (<a href="../../../reference/ids-in-aam.md"> DPID</a>): 1 </li> 
+      <li id="li_71F3970417BC4B93881A3E12DADE4120"><b>特征T1</b> : </li> 
+      <li id="li_66125E035F524A958C6F4BFAABA2A0D2">特征规则："<code> key1 == val1</code>" </li> 
+      <li id="li_4EE486E02CF54AEA876ABC005094E9E4">数据源(<a href="../../../reference/ids-in-aam.md"> DPID</a>):1 </li> 
       <li id="li_3E6BBDEAE5C644C6A96CB49766CDA988">DPID集成代码：ic1 </li> 
      </ul> 
      <ul id="ul_0C30A8AE349D43A08490DA76CB4B06FA"> 
-      <li id="li_F1E8DB26168B471FA35D82F4DD3AC601"><b>特征T2</b> ： </li> 
-      <li id="li_1C943F84A4A149A0A86ABC92761D3E9E">Trait rule: "<code> key2 == val2</code>" </li> 
-      <li id="li_F2AA086C87B7484F8BFE1D5C09E8EBDF">数据源(DPID)：2 </li> 
+      <li id="li_F1E8DB26168B471FA35D82F4DD3AC601"><b>特征T2</b> : </li> 
+      <li id="li_1C943F84A4A149A0A86ABC92761D3E9E">特征规则："<code> key2 == val2</code>" </li> 
+      <li id="li_F2AA086C87B7484F8BFE1D5C09E8EBDF">数据源(DPID):2 </li> 
       <li id="li_877CAAAE996A4707BEE74F7042708481">DPID集成代码：ic2 </li> 
-     </ul> </p> <p>In a sample call, <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid=1</code>, only trait T1 is returned. </p> </td> 
+     </ul> </p> <p>在示例调用yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid=1 <code>中</code>，只返回特征T1。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ loadpid_ ic</code> </p> </td> 
-   <td colname="col2"> <p>The purpose is identical to the <code> d_tdpid</code> parameter described above. 但是，在这种情况下，将使用集成代码传递数据源。 </p> <p>保留上述特征，考虑示例调用： </p> <p>For <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid_ic=ic2</code>, only trait T2 is returned. </p> </td> 
+   <td colname="col1"> <p> <code> d_tdpid_ic</code> </p> </td> 
+   <td colname="col2"> <p>其用途与上述 <code> d_tdpid</code> 参数相同。 但是，在这种情况下，数据源使用集成代码进行传递。 </p> <p>保留上述特征，请考虑示例调用： </p> <p>对于 <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid_ic=ic2</code>，只返回特征T2。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ uuid</code> </p> </td> 
-   <td colname="col2"> <p>唯一用户ID。当此值从cookie不可用时识别访客。 </p> </td> 
+   <td colname="col1"> <p><code> d_uuid</code> </p> </td> 
+   <td colname="col2"> <p>唯一用户ID。 在Cookie中不提供此值时标识访客。 </p> </td> 
   </tr>
  </tbody>
 </table>
