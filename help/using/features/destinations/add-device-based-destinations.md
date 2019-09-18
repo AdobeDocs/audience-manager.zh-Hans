@@ -1,53 +1,56 @@
 ---
-description: 本文介绍如何从Audience Manager UI配置基于设备的新目标。
-seo-description: 本文介绍如何从Audience Manager UI配置基于设备的新目标。
-seo-title: 添加基于设备的新目标
+description: 本文介绍如何从Audience Manager UI配置新的基于设备的目标。
+seo-description: 本文介绍如何从Audience Manager UI配置新的基于设备的目标。
+seo-title: 添加新的基于设备的目标
 solution: Audience Manager
-title: 添加基于设备的新目标
+title: 添加新的基于设备的目标
 translation-type: tm+mt
-source-git-commit: d185a1d418e99abb99c36b28dfb419a1fb3b60f5
+source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
 
 ---
 
 
-# 添加基于设备的新目标 {#add-new-device-based-destinations}
+# 添加新的基于设备的目标 {#add-new-device-based-destinations}
 
-本文介绍如何从Audience Manager UI配置基于设备的新目标。
+本文介绍如何从Audience Manager UI配置新的基于设备的目标。
 
 ## 概述 {#overview}
 
-添加基于设备的新目标的过程包括两个主要步骤。首先，您需要配置Audience Manager与目标合作伙伴之间的集成。完成此操作后，可创建基于设备的新目标。
+添加新的基于设备的目标的过程包括两个主要步骤。 首先，您需要配置Audience manager与目标合作伙伴之间的集成。 完成该操作后，您可以创建新的基于设备的目标。
+
+## 先决条件 {#prerequisites}
+
+在使用集成平台创建第一个基于设备的目标时，请联系Adobe咨询或客户关怀部门，以在Audience manager和您帐户的集成平台之间实现ID同步。 这是在Audience manager与目标平台之间正确同步所必需的。
 
 >[!IMPORTANT]
 >
->并非所有基于设备的目标都有资格获得自助服务配置工作流。如果您需要添加的基于设备的目标未显示在目标列表中，请与Adobe顾问或客户支持联系以获取帮助。
+>并非所有基于设备的目标都有资格享受自助服务配置工作流程。 如果您需要添加的基于设备的目标未显示在目标列表中，请与Adobe顾问或客户支持联系以获得帮助。
 
 ## 步骤 1. 使用目标平台进行身份验证 {#step1}
 
-在创建新的基于设备的目标之前，您需要配置Audience Manager与目标平台之间的集成。下面是如何执行此操作的方法：
+在创建新的基于设备的目标之前，您需要配置Audience manager与目标平台之间的集成。 下面介绍如何实现此操作：
 
-1. 登录Audience Manager帐户 **[!DNL Administration > Integrated Accounts]**，然后转到。如果您先前已配置与目标平台的集成，则应当在此页面中列出它。否则，页面为空。
-2. 单击 **[!DNL Add Account]**.
-3. 选择要通过身份验证的目标平台，然后单击 **[!DNL Confirm]** 以重定向到所选平台的身份验证页面。![集成平台](assets/dbd-integrated-platforms.png)
-4. 在您对目标平台帐户进行身份验证后，您将重定向到Audience Manager，此时您应该可以看到您的关联广告商帐户。选择要使用并单击 **[!DNL Confirm]**&#x200B;的广告商帐户。
+1. 登录您的Audience manager帐户并转到 **[!DNL Administration > Integrated Accounts]**。 如果您之前已配置与目标平台的集成，则应在本页中列出该集成。 否则，页面为空。
+1. 单击 **[!DNL Add Account]**.
+1. 选择要进行身份验证的目标平台，然后单击 **[!DNL Confirm]** 以重定向到所选平台的身份验证页面。 ![集成平台](assets/dbd-integrated-platforms.png)
+1. 通过目标平台帐户的身份验证后，您将被重定向到Audience Manager，您应在Audience manager中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!DNL Confirm]**。
 
-## 步骤 2. 创建基于设备的新目标 {#step2}
+## 步骤 2. 创建新的基于设备的目标 {#step2}
 
-配置目标平台集成后，您可以创建新目标。下面是如何执行此操作的方法：
+配置目标平台集成后，您可以创建新目标。 下面介绍如何实现此操作：
 
 >[!NOTE]
 >
->您无法更改现有设备的目标名称。确保提供可帮助您正确识别目标位置的名称。
+>无法更改现有基于设备的目标的名称。 确保提供有助于正确识别目标的名称。
 
-1. 登录Audience Manager帐户，转至 **[!DNL Audience Data > Destinations]**&#x200B;并单击 **[!DNL Create Destination]**。
-2. 在 **[!DNL Basic Information]** 该部分中，输入一个 **[!DNL Name]****[!DNL Description]** 新目标，然后使用以下列表中的设置： ![setup](assets/dbd-new-basic.png)
+1. 登录您的Audience manager帐户，转到并 **[!DNL Audience Data > Destinations]**&#x200B;单击 **[!DNL Create Destination]**。
+1. 在部 **[!DNL Basic Information]** 分中，输入 **[!DNL Name]** 和 **[!DNL Description]** 作为新目标，然后使用下面列表中的设置：设 ![置](assets/dbd-new-basic.png)
    * **[!DNL Category]**: [!DNL Integrated Platforms];
    * **[!DNL Type]**: [!DNL Device-Based];
-   * **[!DNL Platform]**：选择要将受众区段发送到的目标平台。
-   * **[!DNL Account]**：选择与选定平台关联的所需广告商帐户。
-3. 单击 **[!DNL Next]**.
-4. 选择要为此目标设置 [的数据导出标签](/help/using/features/data-export-controls.md#controls-labels) 。
-5. 单击 **[!DNL Save]**.
-6. 在 **[!DNL Segment Mappings]** 部分中，选择要发送到此目标的受众细分。
-7. 保存目标。
-
+   * **[!DNL Platform]**:选择要将受众细分发送到的目标平台。
+   * **[!DNL Account]**:选择与所选平台关联的所需广告商帐户。
+1. 单击 **[!DNL Next]**.
+1. 选择要 [为此目标设置的](/help/using/features/data-export-controls.md#controls-labels) “数据导出标签”。
+1. 单击 **[!DNL Save]**.
+1. 在部 **[!DNL Segment Mappings]** 分中，选择要发送到此目标的受众细分。
+1. 保存目标。
