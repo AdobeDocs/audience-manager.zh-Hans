@@ -5,7 +5,7 @@ seo-title: 基于人员的目标概述和使用案例
 solution: Audience Manager
 title: 概述和使用案例
 translation-type: tm+mt
-source-git-commit: f3fe6abe913d98549ae6c090a2d5f721485308c2
+source-git-commit: 62c27a3990c2c39d069c7a6e4ef32e8e8b3f1998
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: f3fe6abe913d98549ae6c090a2d5f721485308c2
 [!DNL People-Based Destinations] 使您能够对线上和线下数据应用细分，以根据散列标识符（如电子邮件地址或电话号码）创建受众细分。 然后，您可以将这些细分发送到“围墙花园”，例如 [!DNL Facebook]，无论受众在线互动或身份验证状态如何，您都可以在此定位受众。 [!DNL People-Based Destinations] 可以帮助您：
 
 * 根据经过散列处理的电子邮件地址，在平台 [!DNL Facebook]中定位线下和在线受众；
-* 完善Audience manager的现有设备和Cookie定位功能；
+* 补充Audience manager的现有设备和cookie定位功能；
 * 消除与第三方数据入门解决方案相关的成本；
 * 消除与开发定制化数据载入工作流程相关的成本；
 * 在无Cookie的环境中定位受众；
