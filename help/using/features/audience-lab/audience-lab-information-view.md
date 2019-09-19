@@ -1,36 +1,36 @@
 ---
-description: 本节将显示测试组及其划分的测试区段、选定转换特征和映射目标的一般信息。该部分还提供了复制或删除测试组的控件。
-seo-description: 本节将显示测试组及其划分的测试区段、选定转换特征和映射目标的一般信息。该部分还提供了复制或删除测试组的控件。
+description: 此部分显示有关测试组及其分为的测试区段的一般信息、选定的转换特征和映射的目标。 该部分还提供用于复制或删除测试组的控件。
+seo-description: 此部分显示有关测试组及其分为的测试区段的一般信息、选定的转换特征和映射的目标。 该部分还提供用于复制或删除测试组的控件。
 seo-title: 测试组信息
 solution: Audience Manager
 title: 测试组信息
 topic: DIL API
-uuid: a49dfdb3-21e1-4c3d-b957-4d445 f890124
+uuid: a49dfdb3-21e1-4c3d-b957-4d445f890124
 translation-type: tm+mt
 source-git-commit: 668b8ddded63acfa3479860f878cbf84b4f74218
 
 ---
 
 
-# Test Group Information {#test-group-information}
+# 测试组信息 {#test-group-information}
 
-本节将显示测试组及其划分的测试区段、选定转换特征和映射目标的一般信息。该部分还提供了复制或删除测试组的控件。
+此部分显示有关测试组及其分为的测试区段的一般信息、选定的转换特征和映射的目标。 该部分还提供用于复制或删除测试组的控件。
 
-您还可以查看有关测试组使用的基线区段以及测试区段划分方式的信息。
+您还可以查看用于测试组的基线段以及如何划分测试段的信息。
 
-The **[!UICONTROL Test Segments]** are populated randomly with users from the baseline segment you used for the test group. 概述显示分配给每个测试区段的用户百分比。
+将随 **[!UICONTROL Test Segments]** 机填充您用于测试组的基线段中的用户。 概述显示分配给每个测试区段的用户百分比。
 
-**[!UICONTROL Conversion Traits]** 驱动测试组的报告。To designate a trait as a conversion, when creating or editing traits in the [!UICONTROL Trait Builder], select **Conversion** as **[Event Type](../../features/traits/create-onboarded-rule-based-traits.md).**
+驱动 **[!UICONTROL Conversion Traits]** 测试组的报告。 要在中创建或编辑特征时，将特征指定为转换，请选择“转 [!UICONTROL Trait Builder]换 **”作为** 事件类型 **[](../../features/traits/create-onboarded-rule-based-traits.md)。**
 
-**[!UICONTROL Destinations]** 卡可折叠。按箭头可打开或关闭单个目标，获取测试区段的以下信息，这些信息按目标分组，将其映射到：
+卡 **[!UICONTROL Destinations]** 可折叠。 按箭头可打开或关闭单个目标，并获取以下测试区段信息，这些测试区段按映射到的目标进行分组：
 
-* 基础区段的总人口分配给每个目标的设备数量。
-* 映射键；
+* 基本区段分配到每个目标的总人口中的设备数量。
+* 映射密钥；
 * 映射值；
-* [!DNL URL] 安全 [!DNL URL][!DNL URL] 。
+* [!DNL URL] 并保护目 [!DNL URL] 标的 [!DNL URL] 安全。
 
 >[!NOTE]
 >
->请记住，在最终完成测试组后，您只能暂停、删除或复制测试组。
+>请记住，完成测试组后无法编辑它们，只能暂停、删除或复制它们。
 
 ![](assets/test-groups-information.PNG)
