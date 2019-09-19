@@ -4,33 +4,33 @@ seo-description: 使用这些RESTful API方法创建目标。
 seo-title: 创建目标
 solution: Audience Manager
 title: 创建目标
-uuid: 12f04151-ad0 e-4cb6-8f3 b-b5 c427 dc2 cf
+uuid: 12f04151-ad0e-4cb6-8f3b-b5c427dc2cef
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
 
 ---
 
 
-# Create Destinations {#create-destinations}
+# 创建目标 {#create-destinations}
 
-Create destinations with these [!UICONTROL RESTful API] methods.
+使用这些方法创建 [!UICONTROL RESTful API] 目标。
 
 <!-- c_create_destinations.xml -->
 
 ## 支持的目标类型：仅URL和Cookie
 
-The available `POST` methods let you create [!UICONTROL URL] and [!UICONTROL cookie destinations] only. Currently, you cannot create [!UICONTROL server-to-server destinations] with these [!DNL REST API] methods. However, the related destination `GET` methods let you retrieve information about [!UICONTROL server-to-server destinations] created in the user interface.
+使用可 `POST` 用的方法只能创 [!UICONTROL URL] 建 [!UICONTROL cookie destinations] 和创建。 当前，您不能使用这些 [!UICONTROL server-to-server destinations] 方法进 [!DNL REST API] 行创建。 但是，相关的目标方 `GET` 法允许您检索有关在用户 [!UICONTROL server-to-server destinations] 界面中创建的信息。
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [目标](../../../features/destinations/destinations.md#destination-api-methods)
+>* [目标](../../../features/destinations/destinations.md)
 >* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [键值对解释](../../../reference/key-value-pairs-explained.md)
+>* [说明的键值对](../../../reference/key-value-pairs-explained.md)
 
 
-## Create a Non-Serial URL Destination {#create-nonserial-dest}
+## 创建非序列URL目标 {#create-nonserial-dest}
 
-A `POST` method that lets you create a destination that accepts segments composed of single key-value pairs (e.g., `gender=male` or `gender=female`).
+一 `POST` 种方法，允许您创建接受由单键值对（例如或）组成的段的 `gender=male` 目标 `gender=female`。
 
 <!-- r_create_nonserial_destination.xml -->
 
@@ -40,7 +40,7 @@ A `POST` method that lets you create a destination that accepts segments compose
 
 ### 示例请求
 
-此请求创建单个目标。除非另外指明，否则所有请求值都是必需的。
+此请求创建单个目标。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 { 
@@ -53,7 +53,7 @@ A `POST` method that lets you create a destination that accepts segments compose
 
 ### 响应
 
-A successful request returns `201 created` and the destination.
+成功的请求将返 `201 created` 回和目标。
 
 ```
 { 
@@ -81,14 +81,14 @@ A successful request returns `201 created` and the destination.
 } 
 ```
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
 
 
-## Create a Serialized URL Destination {#create-serial-url-dest}
+## 创建序列化URL目标 {#create-serial-url-dest}
 
-A `POST` method that lets you create a destination that accepts multiple values associated with a single key (e.g., `color=blue, red, green`).
+一 `POST` 种方法，允许您创建一个目标，该目标接受与单个键(例如， `color=blue, red, green`)关联的多个值。
 
 <!-- r_create_serial_url_destination.xml -->
 
@@ -98,7 +98,7 @@ A `POST` method that lets you create a destination that accepts multiple values 
 
 ### 示例请求
 
-Specify the secure [!DNL URL] and delimiter for the key-value pair passed in to the destination. 除非另外指明，否则所有请求值都是必需的。
+为传入目 [!DNL URL] 标的键值对指定安全和分隔符。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 { 
@@ -114,7 +114,7 @@ Specify the secure [!DNL URL] and delimiter for the key-value pair passed in to 
 
 ### 响应
 
-A successful update returns response code `201 created` and the destination.
+成功的更新将返回响应代 `201 created` 码和目标。
 
 ```
 { 
@@ -142,14 +142,14 @@ A successful update returns response code `201 created` and the destination.
 }
 ```
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
 
 
-## Create a Cookie Destination: Single-Key, Non-Serialized {#create-cookie-dest-single}
+## 创建Cookie目标：单键、无序列号 {#create-cookie-dest-single}
 
-A `POST` method that lets you create a [!UICONTROL cookie destination] that accepts segments composed of single key-value pairs (e.g., `gender=male` or `gender=female`).
+一 `POST` 种方法，允许您创建接 [!UICONTROL cookie destination] 受由单键值对（例如或）组成的段 `gender=male` 的方 `gender=female`法。
 
 <!-- r_cookie_destination_singlekey_noserial.xml -->
 
@@ -159,7 +159,7 @@ A `POST` method that lets you create a [!UICONTROL cookie destination] that acce
 
 ### 示例请求
 
-除非另外指明，否则所有请求值都是必需的。
+除非另有指明，否则所有请求值都是必需的。
 
 ```
 { 
@@ -184,7 +184,7 @@ A `POST` method that lets you create a [!UICONTROL cookie destination] that acce
 
 ### 响应
 
-A successful update returns response code `201 created` and the destination.
+成功的更新将返回响应代 `201 created` 码和目标。
 
 ```
 { 
@@ -216,15 +216,15 @@ A successful update returns response code `201 created` and the destination.
 } 
 ```
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [键值对解释](../../../reference/key-value-pairs-explained.md)
+>* [说明的键值对](../../../reference/key-value-pairs-explained.md)
 
 
-## Create a Cookie Destination: Single Key, Serialized {#create-cookie-dest-single-serial}
+## 创建Cookie目标：单键，序列化 {#create-cookie-dest-single-serial}
 
-A `POST` method that lets you create a destination that accepts multiple values associated with a single key (e.g., `color=blue, red, green`).
+一 `POST` 种方法，允许您创建一个目标，该目标接受与单个键(例如， `color=blue, red, green`)关联的多个值。
 
 <!-- r_cookie_destination_singlekey_serial.xml -->
 
@@ -234,7 +234,7 @@ A `POST` method that lets you create a destination that accepts multiple values 
 
 ### 示例请求
 
-除非另外指明，否则所有请求值都是必需的。
+除非另有指明，否则所有请求值都是必需的。
 
 ```
 { 
@@ -260,7 +260,7 @@ A `POST` method that lets you create a destination that accepts multiple values 
 
 ### 响应
 
-A successful update returns response code `201 created` and the destination.
+成功的更新将返回响应代 `201 created` 码和目标。
 
 ```
 { 
@@ -293,15 +293,15 @@ A successful update returns response code `201 created` and the destination.
 }
 ```
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [键值对解释](../../../reference/key-value-pairs-explained.md)
+>* [说明的键值对](../../../reference/key-value-pairs-explained.md)
 
 
-## Create a Cookie Destination: Multi-Key, Non-Serialized {#create-cookie-dest-multi}
+## 创建Cookie目标：多密钥、无序列号 {#create-cookie-dest-multi}
 
-A `POST` method that lets you create a destination that accepts segments that contain multiple keys with different values (e.g., `gender=male; gender=female; color=blue; color=red`).
+一 `POST` 种方法，允许您创建一个目标，该目标接受包含具有不同值(例如， `gender=male; gender=female; color=blue; color=red`)的多个键的段。
 
 <!-- r_create_cookie_multikey_noserial.xml -->
 
@@ -311,7 +311,7 @@ A `POST` method that lets you create a destination that accepts segments that co
 
 ### 示例请求
 
-除非另外指明，否则所有请求值都是必需的。
+除非另有指明，否则所有请求值都是必需的。
 
 ```
 { 
@@ -335,7 +335,7 @@ A `POST` method that lets you create a destination that accepts segments that co
 
 ### 响应
 
-A successful update returns response code `201 created` and the destination.
+成功的更新将返回响应代 `201 created` 码和目标。
 
 ```
 { 
@@ -366,9 +366,9 @@ A successful update returns response code `201 created` and the destination.
 }
 ```
 
-## Create a Cookie Destination: Multi-Key, Serialized {#create-cookie-dest-multi-serial}
+## 创建Cookie目标：多键、序列化 {#create-cookie-dest-multi-serial}
 
-A `POST` method that lets you create a destination that accepts segments that contain multiple keys and values (e.g., `gender=male, female; color=blue, red, green`).
+一 `POST` 种方法，允许您创建一个目标，该目标接受包含多个键和值的段(例如 `gender=male, female; color=blue, red, green`)。
 
 <!-- r_cookie_destination_multikey_serial.xml -->
 
@@ -378,7 +378,7 @@ A `POST` method that lets you create a destination that accepts segments that co
 
 ### 示例请求
 
-除非另外指明，否则所有请求值都是必需的。
+除非另有指明，否则所有请求值都是必需的。
 
 ```
 { 
@@ -403,7 +403,7 @@ A `POST` method that lets you create a destination that accepts segments that co
 
 ### 响应
 
-A successful update returns response code `201 created` and the destination.
+成功的更新将返回响应代 `201 created` 码和目标。
 
 ```
 { 
@@ -435,8 +435,8 @@ A successful update returns response code `201 created` and the destination.
 }
 ```
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [键值对解释](../../../reference/key-value-pairs-explained.md)
+>* [说明的键值对](../../../reference/key-value-pairs-explained.md)
 
