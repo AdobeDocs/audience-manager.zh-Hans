@@ -1,203 +1,203 @@
 ---
-description: Marketplace是数据购买者用于研究公共和私人数据服务的地方。按照这些步骤订阅公共数据源。
-seo-description: Marketplace是数据购买者用于研究公共和私人数据服务的地方。按照这些步骤订阅公共数据源。
-seo-title: 管理数据供给订阅
+description: 在Marketplace中，数据购买者可以研究并订阅公共和私人数据服务。 按照以下步骤订阅公共数据源。
+seo-description: 在Marketplace中，数据购买者可以研究并订阅公共和私人数据服务。 按照以下步骤订阅公共数据源。
+seo-title: 管理数据源订阅
 solution: Audience Manager
-title: 管理数据供给订阅
+title: 管理数据源订阅
 topic: DIL API
-uuid: 7305adb6-cbb8-4430-8204-2243095c0 ba5
+uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
 translation-type: tm+mt
 source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 
 ---
 
 
-# Manage Data Feed Subscriptions {#manage-data-feed-subscriptions}
+# 管理数据源订阅 {#manage-data-feed-subscriptions}
 
-The [!UICONTROL Marketplace] is where data buyers go to research and subscribe to public and private data feeds. 按照这些步骤订阅公共数据源。
+数据 [!UICONTROL Marketplace] 购买者可在此处研究和订阅公共和私人数据服务。 按照以下步骤订阅公共数据源。
 
-## Subscribe to a Public Data Feed {#subscript-public-data-feed}
+## 订阅公共数据源 {#subscript-public-data-feed}
 
-The [!UICONTROL Marketplace] is where data buyers go to research and subscribe to public and private data feeds. 按照这些步骤订阅公共数据源。
+数据 [!UICONTROL Marketplace] 购买者可在此处研究和订阅公共和私人数据服务。 按照以下步骤订阅公共数据源。
 
 <!-- t_subscribe_feed.xml -->
 
 订阅公共数据源：
 
-1. **[!UICONTROL Audience Marketplace > Marketplace]**&#x200B;转至。使用搜索功能或浏览列表以查找数据源。
+1. 转到 **[!UICONTROL Audience Marketplace > Marketplace]**。 使用搜索功能或浏览列表以查找数据源。
 
    ![](assets/subscribe1.png)
 
-1. 单击要使用的数据源的名称。This opens the [plan details page](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#marketplace-buyer-details) for the selected feed.
+1. 单击要使用的数据源的名称。 此操作将打开 [所选源的计划详细信](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#marketplace-buyer-details) 息页面。
 
    ![](assets/plan-details.png)
 
-1. 从订阅表中选择一个用例，并：
-   * Move the **[!UICONTROL Subscription]** slider to **[!UICONTROL On]**.
-   * 单击 **[!UICONTROL Review & Subscribe]**. This opens the [!UICONTROL Terms and Conditions] window.
+1. 从订阅表中选择用例，并：
+   * 将滑块移 **[!UICONTROL Subscription]** 动到 **[!UICONTROL On]**。
+   * 单击 **[!UICONTROL Review & Subscribe]**. 这会打开窗 [!UICONTROL Terms and Conditions] 口。
    ![](assets/subscribe3.png)
 
-1. In the [!UICONTROL Terms and Conditions] window:
+1. 在窗口 [!UICONTROL Terms and Conditions] 中：
 
-   * **重要：** 选中 **[!UICONTROL ID sync]** 复选框。此设置有助于提高与您的数据提供商的匹配率。
-   * Check the terms and conditions box and click **[!UICONTROL Accept]** to complete the subscription process.
+   * **** 重要说明：选中 **[!UICONTROL ID sync]** 复选框。 此设置有助于提高与数据提供者的匹配率。
+   * 选中条款和条件框并单击以 **[!UICONTROL Accept]** 完成订阅过程。
    ![](assets/subscribe4.png)
 
 ### 后续步骤
 
 订阅数据源后：
 
-* Verify the subscription by checking your [!UICONTROL Traits] folder. See [Storage for Subscribed Data Feeds](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee).
+* 检查您的文件夹以验证订 [!UICONTROL Traits] 阅。 请参 [阅订阅数据馈送的存储](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee)。
 
-* 查看账单和付款文档。请参阅下面的相关链接。
+* 查看账单和付款文档。 请参阅以下相关链接。
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [CPM数据源的结帐和印象分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
->* [付费数据馈送计费和印象分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
+>* [CPM数据源的计费和印象分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
+>* [统一费用数据源的计费和印象分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
 >* [如何报告CPM使用情况](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#report-cpm-usage)
 
 
-## Subscribe to a Private Data Feed {#subscript-private-data-feed}
+## 订阅专用数据源 {#subscript-private-data-feed}
 
-Buyers subscribe to private data feeds and plans in **[!UICONTROL Audience Marketplace > Marketplace]**.
+购买者可订阅中的私人数据源和计划 **[!UICONTROL Audience Marketplace > Marketplace]**。
 
 <!-- t_private_feed.xml -->
 
 >[!TIP]
 >
->有时数据提供商可能会在私人数据服务上提供折扣。提交订阅请求时，您可能希望询问可能的折扣。
+>有时，数据提供商可能会为私有数据馈送提供折扣。 提交订阅请求时，您可能希望询问可能的折扣。
 
-订阅私人数据源：
+订阅专用数据源：
 
-1. Click the data feed name in the [!UICONTROL Marketplace].
+1. 单击中的数据源名称 [!UICONTROL Marketplace]。
 1. 单击 **[!UICONTROL Request Access]**. 这将打开请求对话框。
-1. In the request dialog box, write the provider a note expressing your interest in their data feed and click **[!UICONTROL Send]**. 卖家将查看您的消息，批准或拒绝您的请求。While waiting for approval, "Requested" appears in the [!UICONTROL Marketplace] list for that data feed.
+1. 在请求对话框中，为提供者写一个说明，表示您对其数据源感兴趣，然后单击 **[!UICONTROL Send]**。 卖家将审核您的消息并批准或拒绝您的请求。 等待批准时，该数据馈送的列表中会显 [!UICONTROL Marketplace] 示“已请求”。
 
-   * **[!UICONTROL Request approved]**： [!UICONTROL Marketplace] 列表中的状态将变为“已授予的访问权限”，您将收到一个自动通知。此时，您可以订阅源。See [Subscribe to a Public Data Feed](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed) for instructions.
-   * **[!UICONTROL Request denied]**：将从源列表中删除“请求的 [!UICONTROL Marketplace] ”文本。您可以尝试再次订阅或选择其他源。
+   * **[!UICONTROL Request approved]**:列表中的状 [!UICONTROL Marketplace] 态将变为“已授予访问权限”，您将收到自动通知。 此时，您可以订阅源。 有关 [说明，请参阅订阅公共数据源](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed) 。
+   * **[!UICONTROL Request denied]**:“已请求”文本将从源的列 [!UICONTROL Marketplace] 表中删除。 您可以再次尝试订阅或选择其他源。
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [订阅公共数据馈送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)
+>* [订阅公共数据源](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)
 >* [数据购买者的折扣](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#buyer-discount)
 
 
-## Data Feed Discounts for Buyers {#buyer-discount}
+## 购买者的数据馈送折扣 {#buyer-discount}
 
-In [!UICONTROL Audience Marketplace], providers can offer buyers a discount on the published price of a [!DNL CPM] or flat rate data feed. However, discount amounts aren't visible to buyers in the [!DNL Marketplace] feed list. 但是，当您订阅私人数据源或请求有关特定源的更多信息时，您也可以要求折扣。
+在 [!UICONTROL Audience Marketplace]此中，提供商可以为购买者提供价格折扣或单价数 [!DNL CPM] 据馈送的发布价格。 但是，折扣额在信息源列表中对购买者不 [!DNL Marketplace] 可见。 但是，在订阅专用数据源或请求有关特定源的更多信息时，您也可以要求折扣。
 
-## Request a Discount {#request-discount}
+## 申请折扣 {#request-discount}
 
 <!-- marketplace-buyer-discounts.xml -->
 
 <table id="table_3C6E58F593BA48EC89ACBD9A26E4E74F"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 买家状态 </th> 
+   <th colname="col1" class="entry"> 采购员状态 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>当前订阅者</b> </p> </td> 
-   <td colname="col2"> <p>如果您已经订阅了私人数据源并希望获得折扣： </p> 
+   <td colname="col2"> <p>如果您已订阅专用数据源并希望申请折扣： </p> 
     <ol id="ol_A58D419EBB9349E9B1225202535130F6"> 
-     <li id="li_D0DDC8AC6E9C4675AA4630D63FE8F071"> <a href="../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#unsubscribe"> 取消订阅</a> 数据源。 </li> 
-     <li id="li_05A5379F2A944FB28AB39C196DDE3A1D">联系数据提供商并请求折扣价。 </li> 
-     <li id="li_B1B5AA6F6CC64512A02D5E8861A5F266">If the provider gives you a discount, re-subscribe to the feed on the 1<sup>st</sup> day of the next month. </li> 
+     <li id="li_D0DDC8AC6E9C4675AA4630D63FE8F071"> <a href="../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#unsubscribe"> 取消订阅</a> 。 </li> 
+     <li id="li_05A5379F2A944FB28AB39C196DDE3A1D">与数据提供商联系并申请折扣价。 </li> 
+     <li id="li_B1B5AA6F6CC64512A02D5E8861A5F266">如果提供商为您提供折扣，请在下个月的第<sup>1</sup> 天重新订阅该源。 </li> 
     </ol> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>新的私人数据供给用户</b> </p> </td> 
-   <td colname="col2"> <p>在订阅请求中申请折扣。See <a href="../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed"> Subscribe to a Private Data Feed</a>. </p> </td>
+   <td colname="col1"> <p> <b>新的专用数据馈送订阅者</b> </p> </td> 
+   <td colname="col2"> <p>在您的订阅请求中要求享受折扣。 请参 <a href="../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed"> 阅订阅专用数据源</a>。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>潜在订阅者</b> </p> </td> 
-   <td colname="col2"> <p><a href="../../../features/audience-marketplace/marketplace-private-feeds.md"> 潜在订阅者</a> 是一名数据购买者，请求访问私人数据源、获得卖家批准但未订阅源。申请作为潜在订阅者的折扣： </p> 
+   <td colname="col2"> <p>潜 <a href="../../../features/audience-marketplace/marketplace-private-feeds.md"> 在订户</a> (100)是已请求访问私有数据馈送、已接收卖方批准但未订阅该馈送的数据买方。 要申请作为潜在订阅者的折扣，请执行以下操作： </p> 
     <ol id="ol_9CECDA92E7894B20AC8A777D78962188"> 
-     <li id="li_618B64160CF24549AFCA73E006DCA35A">Go to <b><span class="uicontrol"> Audience Marketplace &gt; Marketplace</span></b>. </li> 
+     <li id="li_618B64160CF24549AFCA73E006DCA35A">转到“受 <b><span class="uicontrol"> 众市场”&gt;“市场”</span></b>。 </li> 
      <li id="li_FE52A06B30FC4858B48AF81954365FE9">单击您已批准的源的名称。 </li> 
-     <li id="li_763C050AC9464BE380D00F6085B6E540">Click <b><span class="uicontrol"> Request More Details</span></b>. 向卖家索取详细信息请求折扣。 </li> 
+     <li id="li_763C050AC9464BE380D00F6085B6E540">单击“ <b><span class="uicontrol"> 请求更多详细信息</span></b>”。 在向卖家提出的详细要求中要求折扣。 </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Review Discounted Feeds {#review-discounted-feeds}
+## 查看折扣源 {#review-discounted-feeds}
 
-要查看您的折扣源，请执行以下操作：
+要查看折扣源，请执行以下操作：
 
-1. **[!UICONTROL Audience Marketplace > Marketplace]**&#x200B;转至。
+1. 转到 **[!UICONTROL Audience Marketplace > Marketplace]**。
 1. 单击已订阅的源的名称。
-1. Look at the [!UICONTROL Price] and [!UICONTROL Your Price] columns in the [!UICONTROL Plan Details] table. 如果源被折扣：
+1. 查看表 [!UICONTROL Price] 中 [!UICONTROL Your Price] 的和 [!UICONTROL Plan Details] 列。 如果优惠价格为：
 
-   * 原始价格用红线标出。
-   * [!UICONTROL Your Price] 列中的费用将低于 [!UICONTROL Price] 列中的费用。
+   * 原价标有红线。
+   * 列中的费用 [!UICONTROL Your Price] 将低于列中的费用 [!UICONTROL Price] 。
 
-In the example, the buyer gets a 10% discount on the [!UICONTROL Segments and Overlap] plan in the **[!UICONTROL Software Audience Feed]**.
+在示例中，买方在计划中可享受10% [!UICONTROL Segments and Overlap] 的折扣 **[!UICONTROL Software Audience Feed]**。
 
 ![](assets/buyer-discount.png)
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [市场：关于关于](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)
+>* [市场：关于](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)
 
 
 ## 查找订阅的信息源数据 {#find-subscribed-data-fee}
 
-数据源的数据(特征)显示在其自己的特征存储文件夹中。Go to **[!UICONTROL Audience Data > Traits]** and expand the **[!UICONTROL 3rd-Party Data]** folder to view and work with the traits in your subscribed feeds. 查找在数据提供程序之后命名的子文件夹。这些文件夹包含按源提供的单个数据源和列表特征命名的文件夹。
+数据馈送的数据（特征）显示在其自己的特征存储文件夹中。 转到并 **[!UICONTROL Audience Data > Traits]** 展开文件夹 **[!UICONTROL 3rd-Party Data]** ，以查看和使用订阅源中的特征。 查找以数据提供者名称的子文件夹。 这些文件夹包含以单个数据源命名的文件夹，以及源提供的列表特征。
 
 <!-- marketplace-feed-storage.xml -->
 
 ![](assets/subscribe5.png)
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [订阅公共数据馈送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)
+>* [订阅公共数据源](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)
 
 
-## Unsubscribe from a Data Feed {#unsubscribe}
+## 取消订阅数据源 {#unsubscribe}
 
-Data buyers unsubscribe from data feeds and plans in **[!UICONTROL Audience Marketplace > Marketplace]**.
+数据购买者取消订阅中的数据馈送和计划 **[!UICONTROL Audience Marketplace > Marketplace]**。
 
 <!-- t_unsubscribe_feed.xml -->
 
 要取消订阅数据源，请执行以下操作：
 
-1. Click the data feed name in the [!UICONTROL Marketplace].
-1. [!UICONTROL Use Case] 在部分中，找到要使用的计划并将 **[!UICONTROL Subscription]** 滑块移动到 **[!UICONTROL Off]**。
+1. 单击中的数据源名称 [!UICONTROL Marketplace]。
+1. 在部 [!UICONTROL Use Case] 分中，找到要使用的计划并将滑块移 **[!UICONTROL Subscription]** 动到 **[!UICONTROL Off]**。
 
-## Data Feed Deactivation: Why It Happens and How to Respond {#data-feed-deactivation-reasons}
+## 数据源取消激活：发生原因及如何回应 {#data-feed-deactivation-reasons}
 
-In [!UICONTROL Audience Marketplace], data providers can revoke access to your subscribed data feeds. 如果您发生这种情况，请不要进行培训。我们可以满足您的需求。阅读本节，了解与数据源取消激活相关的流程和程序。
+在中， [!UICONTROL Audience Marketplace]数据提供者可以撤销对您订阅的数据馈送的访问权。 如果你发生这种事，别担心。 我们掩护你。 查看本节以了解与数据馈送取消激活相关的流程和过程。
 
-## Common Reasons for Data Feed Deactivation {#reasons-for-deactivation}
+## 数据源取消激活的常见原因 {#reasons-for-deactivation}
 
 <!-- marketplace-subscriber-deactivated.xml -->
 
-如果您订阅的源被关闭，则可能会眩目或更上一层楼。但是，出于各种原因，数据提供程序都可以取消激活数据源。一些常见原因包括：
+如果你所订阅的饲料被关闭，这可能令人费解，甚至令人不安。 但是，数据提供者可以出于各种原因取消激活数据供给。 一些常见原因包括：
 
-* **帐单：** 如果您通过支付费用持续迟到或未支付费用，数据提供商将停用某个源。
-* **供给更新：** 当数据提供商更新其源分类或费用结构时，需要取消激活源。
-* **不活动的购买者：** 如果订阅者在长期内不显示支出，数据提供商保留取消激活源的权利。
-* **非活动销售者：** 离开 [!UICONTROL Audience Marketplace] 的数据提供商将停用并删除其所有数据源。
+* **** 帐单：如果您连续拖欠费用或未支付费用，数据提供商将取消激活源。
+* **** 源更新：数据提供商需要在更新其源分类或成本结构时取消激活源。
+* **** 不活跃的买家：如果订阅者在较长的时间段内没有显示任何支出，数据提供商保留取消激活源的权利。
+* **** 不活跃的销售商：离开的数据提供 [!UICONTROL Audience Marketplace] 商将取消激活和删除其所有数据服务。
 
 >[!TIP]
 >
->如果您认为数据源被错误地取消激活，请直接与您的数据提供商联系。[!DNL Adobe] 您的顾问可以为您提供联系信息或其他支持。
+>如果您认为数据源因错误而停用，请直接与数据提供商联系。 您的 [!DNL Adobe] 顾问可以帮助您获取联系信息或其他支持。
 
-## Deactivation Email {#deactivation-email}
+## 取消激活电子邮件 {#deactivation-email}
 
-When a data provider deactivates one of your data feeds, [!DNL Audience Manager] sends an email to the users in your company who have [!UICONTROL Administrator] permissions. 有时电子邮件过滤器会将此消息分类为垃圾邮件。因此，您可能会错过此重要通知。为了帮助您识别取消激活消息，此电子邮件包含以下元素：
+当数据提供者取消激活您的某个数据源时， [!DNL Audience Manager] 会向您公司中具有权限的用户发送电子邮件 [!UICONTROL Administrator] 。 有时，电子邮件过滤器会将此邮件分类为垃圾邮件。 因此，您可能会错过此重要通知。 为帮助您识别取消激活消息，此电子邮件包含以下元素：
 
-* **发件人：** 取消激活电子邮件 `aam-noreply@adobe.com`来自。Pro提示：不要回复此电子邮件。
+* **** 发件人：取消激活电子邮件来自 `aam-noreply@adobe.com`。 专业提示：请勿回复此电子邮件。
 
-* **主题行：** 此处已取消订阅数据源 ** 的订阅。
+* **** 主题行：此处 *订阅数据源名称* “已取消”。
 
-* **附件：** 该电子邮件包含标题为“ `list-of-affected-entities-by-feed-revocation.csv`”的附件。这是一种复合方式，表示附件列出了已取消源中包含的所有特征。作为数据购买者，您应该查看此附件。It will help you find and remove deactivated traits from your segments and [algorithmic models](../../../features/algorithmic-models/understanding-models.md).
+* **** 附件：电子邮件中包含标题为“”的附 `list-of-affected-entities-by-feed-revocation.csv`件。 这是一种令人费解的说法，即附件列出了取消的源中包含的所有特征。 作为数据购买者，您应查看此附件。 它将帮助您从您的细分和算法模型中查找和删除取消激活 [的特征](../../../features/algorithmic-models/understanding-models.md)。
 
-## Deactivated Trait List {#deactivation-trait-list}
+## 已停用的特征列表 {#deactivation-trait-list}
 
 取消激活电子邮件附带的列表包含以下字段。
 
@@ -211,109 +211,109 @@ When a data provider deactivates one of your data feeds, [!DNL Audience Manager]
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 数据源ID</span></b> </p> </td> 
-   <td colname="col2"> <p>取消激活的数据源的ID。 </p> </td> 
+   <td colname="col2"> <p>已停用数据馈送的ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 数据源名称</span></b> </p> </td> 
-   <td colname="col2"> <p>取消激活的数据源的名称。 </p> </td> 
+   <td colname="col2"> <p>已取消激活的数据源的名称。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 特征SID</span></b> </p> </td> 
-   <td colname="col2"> <p>取消激活的特征ID。 </p> </td> 
+   <td colname="col2"> <p>已停用的特征ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 特征名称</span></b> </p> </td> 
-   <td colname="col2"> <p>取消激活的特征名称。 </p> </td> 
+   <td colname="col2"> <p>已停用的特征名称。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b><span class="uicontrol"> 细分SID</span></b> </p> </td> 
-   <td colname="col2"> <p>包含取消激活特征的区段的ID。 </p> </td> 
+   <td colname="col1"> <p><b><span class="uicontrol"> 区段SID</span></b> </p> </td> 
+   <td colname="col2"> <p>包含已停用特征的区段的ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 区段名称</span></b> </p> </td> 
-   <td colname="col2"> <p>包含已取消激活特征的区段名称。 </p> </td> 
+   <td colname="col2"> <p>包含已停用特征的区段的名称。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b><span class="uicontrol"> Argo Model ID</span></b> </p> </td> 
-   <td colname="col2"> <p>包含已取消激活特征的算法模型的ID。 </p> </td> 
+   <td colname="col1"> <p><b><span class="uicontrol"> Algo Model ID</span></b> </p> </td> 
+   <td colname="col2"> <p>包含已停用特征的算法模型的ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b><span class="uicontrol"> Argo Model Name</span></b> </p> </td> 
+   <td colname="col1"> <p><b><span class="uicontrol"> Algo模型名称</span></b> </p> </td> 
    <td colname="col2"> <p>包含已停用特征的算法模型的名称。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Remove Deactivated Traits {#remove-deactivated-traits}
+## 删除已停用的特征 {#remove-deactivated-traits}
 
-作为数据购买者，您负责删除所有活动/使用中或无效区段中取消的信息源中的特征。删除选项包括：
+作为数据购买者，您有责任从所有活动／使用中或非活动区段中删除取消源中的特征。 删除选项包括：
 
-* Bulk removal with the [REST APIs](../../../api/rest-api-main/rest-api-main.md) or the [Bulk Management Tools](../../../reference/bulk-management-tools/bulk-management-intro.md).
+* 使用REST API或批 [量管理工具](../../../api/rest-api-main/rest-api-main.md) ，批 [量删除](../../../reference/bulk-management-tools/bulk-management-intro.md)。
 
-* Manually search for affected segments and remove deactivated traits using [!UICONTROL Segment Builder]. See [Remove Traits from a Segment](../../../features/segments/segment-builder.md#segment-builder-controls-traits).
+* 手动搜索受影响的区段并使用删除已停用的特征 [!UICONTROL Segment Builder]。 请参 [阅从区段中删除特征](../../../features/segments/segment-builder.md#segment-builder-controls-traits)。
 
 >[!NOTE]
 >
->从活动的算法模型或目标中删除特征会影响缩放和定位准确性。尝试在可能的情况下使用新的活动特征替换撤销的特征。
+>从活动算法模型或目标中删除特征会影响缩放和定位准确性。 尽可能尝试用新的活动特征替换已吊销的特征。
 
-[从帐户删除所有已吊销的特征](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#unsubscribe) 后，取消订阅已取消激活的数据源。如果这是临时取消激活，您可以在数据提供程序完成所需的更改并重新激活源后重新订阅。As with most things, good communication with your partners (the data provider and [!DNL Adobe]) can help you work through this process.
+[在从帐户中删除所有已撤销的特征后](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#unsubscribe) ，取消订阅已取消激活的数据源。 如果这是临时取消激活，您可以在数据提供者完成其所需更改并重新激活源后重新订阅。 与大多数情况一样，与合作伙伴(数据提供商和 [!DNL Adobe])的良好沟通可以帮助您完成此过程。
 
 ## 了解受众市场中的计划详细信息页面 {#marketplace-buyer-details}
 
-When you click the name of a data plan in the [!UICONTROL Marketplace], [!DNL Audience Manager] provides information that can help you make informed choices about subscribing to a data feed.
+单击中的数据计划名称时，会提 [!UICONTROL Marketplace]供 [!DNL Audience Manager] 一些信息，帮助您在订阅数据源时做出明智的选择。
 
 <!-- marketplace-buyer-details.xml -->
 
 ![](assets/plan-details-numbered.png)
 
-此页面提供以下信息：
+本页为您提供以下信息：
 
-1. **基本计划信息**。这包括供给信息，如：
-   * 数据源名。例如，如上图所示，此源的名称为“示例数据源”。
-   * 数据提供程序的名称；
-   * 数据馈送ID；
+1. **基本计划信息**。 这包括信息源，例如：
+   * 数据源名称。 例如，如上所示，此源的名称为“示例数据源”。
+   * 数据提供者的名称；
+   * 数据源ID;
    * 描述;
-   * 源中的特征数量；
+   * 源中的特征数；
 
 1. 计划信息按钮。
-   * Click **[!UICONTROL Explore All Traits]** to see details about all the traits in the selected data feed.
-   * Click **[!UICONTROL Request More Details]** to ask the data provider questions about the selected data feed or to request a discount. 此功能将您的注释和问题直接发送到数据提供程序。
+   * 单击 **[!UICONTROL Explore All Traits]** 可查看有关选定数据馈送中所有特征的详细信息。
+   * 单击 **[!UICONTROL Request More Details]** 可向数据提供者询问有关所选数据馈送的问题或请求折扣。 此功能会直接将您的注释和问题发送给数据提供者。
 
-1. 数据馈送报告指标。Venn图(及相关指标)显示了过去30天特征重叠数据。See [The Marketplace: About](marketplace-data-buyers.md#about-marketplace) for details.
-   * **[!UICONTROL 30 Day Overlapped Uniques]**：帐户中与提供者帐户中的用户重叠的唯一用户数量。For a definition of unique users, see AAM UUID in the [Index of IDs in Audience Manager](/help/using/reference/ids-in-aam.md).
-   * **[!UICONTROL 30 Day Provider Unique Users]**：来自提供者帐户的唯一用户的数量。
-   * **[!UICONTROL Your Unique Users]**：来自您帐户的唯一用户的数量。
+1. 数据馈送报告指标。 维恩图（和相关指标）显示过去30天的特征重叠数据。 请参 [阅市场：关于](marketplace-data-buyers.md#about-marketplace) 。
+   * **[!UICONTROL 30 Day Overlapped Uniques]**:您帐户中与提供者帐户中的用户重叠的唯一用户数。 有关唯一用户的定义，请参阅Audience manager中ID [索引中的AAM UUID](/help/using/reference/ids-in-aam.md)。
+   * **[!UICONTROL 30 Day Provider Unique Users]**:来自提供商帐户的唯一用户数。
+   * **[!UICONTROL Your Unique Users]**:来自您帐户的唯一用户数。
 
-1. **[!UICONTROL Plan Details]** 表。下表显示了可订阅数据源的用例及其定价模式。See [Understanding Data Feed Use Cases](#use-cases).
+1. **[!UICONTROL Plan Details]** 桌子。 下表显示了可订阅数据源的使用案例及其定价模式。 请参 [阅了解数据馈送使用案例](#use-cases)。
 
 1. 计划操作按钮。
-   * Click **[!UICONTROL Cancel]** to leave the page without making changes.
-   * Click **[!UICONTROL Review & Subscribe]** to subscribe to a data feed. This button is greyed out until you switch a [!UICONTROL Subscription] toggle to [!UICONTROL On]. See also [Subscribe to a Public Data Feed](#subscript-public-data-feed) and [Subscribe to a Private Data Feed](#subscript-private-data-feed).
+   * 单 **[!UICONTROL Cancel]** 击以离开页面而不进行更改。
+   * 单击 **[!UICONTROL Review & Subscribe]** 以订阅数据源。 在您将切换切换到之前，此按钮将 [!UICONTROL Subscription] 灰显 [!UICONTROL On]。 另请参 [阅订阅公共数据源](#subscript-public-data-feed) , [和订阅私人数据源](#subscript-private-data-feed)。
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [市场：关于关于](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)
+>* [市场：关于](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)
 
 
-## Understanding Data Feed Use Cases {#use-cases}
+## 了解数据馈送使用案例 {#use-cases}
 
-As an [!UICONTROL Audience Marketplace] data buyer, you can purchase data for overlap, modeling, and activation use cases. 每个用例都是专为特定用途设计的，限制了您对数据的处理。这些使用案例描述可以帮助您做出关于哪种类型的数据计划的正确决策。
+作为数 [!UICONTROL Audience Marketplace] 据购买者，您可以为重叠、建模和激活用例购买数据。 每个用例都针对特定用途而设计，并限制您可以对数据执行的操作。 这些用例描述可以帮助您就要购买哪种类型的数据计划做出正确决策。
 
-## Make Comparisons with Segments and Overlap Plans {#comparisons}
+## 与区段和重叠计划进行比较 {#comparisons}
 
 <!-- c_use_cases_for_buyers.xml -->
 
 ### 区段和重叠
 
-This use case lets you compare your traits with provider traits in a [trait-to-trait overlap report.](../../../reporting/dynamic-reports/trait-trait-overlap-report.md#trait-to-trait-overlap-report) 此外，您可以为区段创建提供商特征或添加供应商特征，并与 [区段到特征](../../../reporting/dynamic-reports/segment-trait-overlap-report.md) 和 [区段到细分](../../../reporting/dynamic-reports/segment-segment-overlap-report.md) 报表进行更多比较。重叠比较可以帮助您：
+此用例允许您在特征到特征重叠报告中比较 [您的特征和提供者特征。](../../../reporting/dynamic-reports/trait-trait-overlap-report.md#trait-to-trait-overlap-report) 此外，您还可以创建提供者特征或将提供者特征添加到区段，并与区段到特 [征](../../../reporting/dynamic-reports/segment-trait-overlap-report.md) 、区 [段到区段报表进行其他比较](../../../reporting/dynamic-reports/segment-segment-overlap-report.md) 。 重叠比较可以帮助您：
 
-* **扩大受众范围：** 重叠部分表示您的特征包含您之前未见过的用户。您可能希望这些特征尝试接触新用户。
-* **增强现有受众：** 重叠部分表示您的特征类似于数据提供商拥有的特征。您可能希望这些特征有助于为已经开发的受众做出有针对性的增量改进。
+* **** 扩大受众范围：重叠率低表明您的特征包含您以前从未见过的用户。 您可能希望这些特征尝试并触及新用户。
+* **** 增强现有受众：重叠程度高表明您的特征与数据提供者拥有的特征相似。 您可能希望这些特征有助于对已开发的受众进行有针对性的增量改进。
 
 ### 算法模型
 
-This use case lets you evaluate supplier traits against your traits with [algorithmic modeling](../../../features/algorithmic-models/understanding-models.md#understanding-models). 例如，我们的算法建模系统使用特征之一作为对比供应商特征的基础。当该模型运行时，它可以显示供应商特征中的受众是否与您的特征共享类似的转化属性。
+此用例允许您使用算法建模根据您的特征评估供应 [商特征](../../../features/algorithmic-models/understanding-models.md#understanding-models)。 例如，我们的算法建模系统使用您的某个特征作为与供应商特征进行比较的基础。 运行模型时，它可以显示供应商特征中的受众是否与您的特征共享相似的转换属性。
 
 ### 激活
 
-This use case lets you send data to a [destination](../../../features/destinations/destinations.md). In [!UICONTROL Audience Manager], a destination is any third-party system (ad server, [!DNL DSP], [!DNL DMP], exchange, etc.) 您希望与之共享数据的数据。However, with an [!UICONTROL Activation] use case, you cannot run overlap reports or test the data in an algorithmic model.
+此用例允许您将数据发送到目 [标](../../../features/destinations/destinations.md)。 在 [!UICONTROL Audience Manager]中，目标是任何第三方系统(广告服务器、 [!DNL DSP]、 [!DNL DMP]交换等)要与之共享数据。 但是，对于 [!UICONTROL Activation] 用例，您不能运行重叠报告或在算法模型中测试数据。
