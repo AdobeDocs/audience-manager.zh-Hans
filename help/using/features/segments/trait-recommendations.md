@@ -1,6 +1,6 @@
 ---
 description: 使用“特征推荐”，在区段生成器中构建或编辑区段时，您能够获得可包含的其他推荐特征（与区段规则中的特征类似）。将推荐的特征添加到区段中，可增加目标受众。
-seo-description: 在构建细分时获得实时特征推荐。
+seo-description: 在构建区段时获取实时特征推荐。
 seo-title: 特征推荐
 solution: Audience Manager
 title: 特征推荐
@@ -13,152 +13,151 @@ source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
 
 # 特征推荐
 
-在构建细分时获得实时特征推荐。
+在构建区段时获取实时特征推荐。
 
 ## 视频演示
 
-首先观看特征推荐视频，然后阅读更多信息。
+首先观看“特征推荐”视频，然后阅读以了解更多信息。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26228/?captions=chi_hans)
 
 ## 概述
 
-[!UICONTROL Trait Recommendations]以数据科学为后盾，将数据科学引入Audience [!DNL Adobe Sensei]Manager日常工作流程中。
+[!UICONTROL Trait Recommendations]由Audience Manager提 [!DNL Adobe Sensei]供支持，将数据科学引入Audience manager的日常工作流程中。
 With [!UICONTROL Trait Recommendations], when you build or edit a segment in [Segment Builder](segment-builder.md), you get recommendations on additional traits you can include, that are similar to the traits in the segment rule. 将推荐的特征添加到区段中，可增加目标受众。
 
 ![特征推荐概述](assets/trait-recommendations-overview.png)
 
-**在nutshell中：**
+**简而言之：**
 
-* Audience Manager将当前订阅数据源中的第一方特征和第三方特征显示为建议的特征。
-* Audience Manager最多可显示与区段规则类似的50个特征。
-* 您可以过滤出不希望查看任何推荐的数据源。
-* 在计算相似性时，Audience Manager将在 [过去30天内符合特征的UI](../../reference/ids-in-aam.md) 视为合格。
-* 如果看到错误消息“找不到类似的特征。特征可能过于新。“这意味着，过去30天内该特征没有活动，或者Audience Manager尚未更新该特征的建议。请在24小时后重试。
+* Audience manager根据当前订阅的数据源将第一方特征和第三方特征显示为推荐特征。
+* Audience manager最多显示50个与区段规则中相似的特征。
+* 您可以过滤掉不想从中看到任何推荐的数据源。
+* 在计算相似性时，Audience Manager会考虑 [在过去](../../reference/ids-in-aam.md) 30天内符合该特征的UUID。
+* 如果看到错误消息“未找到类似特征。 特征可能太新。”，这表示过去30天中该特征没有活动，或者Audience manager尚未更新该特征的推荐。 请在24小时后重试。
 
 ## 用例
 
-通过 [!UICONTROL Trait Recommendations]使用Audience Manager，您可以改进工作流程：
+您 [!UICONTROL Trait Recommendations]可以改进工作流程，具体取决于您使用Audience Manager的方式：
 
-* 作为营销人员，您可以通过类似特征快速找到对互补产品感兴趣的受众，从而提高受众范围。
-* 如果您使用Audience [!UICONTROL Trait Recommendations]Manager作为publisher，您可以了解受众行为并为广告销售或用户赢取建立更好的细分。
+* 作为营销人员，您可以借助类似特征快速找到对补充产品感兴趣的受众，从而扩大受众范围。
+* 如果您将Audience manager用作出版商，则可了 [!UICONTROL Trait Recommendations]解受众行为并为广告销售或用户赢取构建更好的细分。
 
-## 特征推荐与算法模型之间的差异
+## 特质推荐与算法模型的区别
 
 ### 算法模型
 
-[!UICONTROL Algorithmic Models] 不仅找到最有影响力的特征，而且还根据这些特征给用户评分，为每个用户分配一个单独的分数。然后创建算法特征以定位用户。通过准确性和触及 [!UICONTROL Trait Builder]力控制，您可以指定所有具有影响力特征的用户。
+[!UICONTROL Algorithmic Models] 不仅可以找到最具影响力的特征，而且还可以根据这些特征对用户进行分数，并为每个用户分配一个单独的分数。 然后，您创建算法特征来定位用户。 借助中的准确性和范围控 [!UICONTROL Trait Builder]件，您可以指定所有具有要定位的影响力特征的用户中的哪些用户。
 
-[!UICONTROL Algorithmic Models] 使您能够选择不同准确性级别的用户，并测试 [!UICONTROL Audience Lab] 用户组的转换效果。请参阅Audience Lab [中比较模型中的详细用例](../../features/audience-lab/audience-lab-use-cases.md#compare-models)。
+[!UICONTROL Algorithmic Models] 使您能够选择不同准确度级别的用户并测试哪 [!UICONTROL Audience Lab] 组用户转换效果更好。 请参阅Audience lab中的比较模 [型中的详细用例](../../features/audience-lab/audience-lab-use-cases.md#compare-models)。
 
-在中 [!UICONTROL Algorithmic Models]，该模型每天运行一次，并refre符合算法特征的用户。
+在 [!UICONTROL Algorithmic Models]中，该模型每8天运行一次，并刷新符合算法特征的用户。
 
 ### 特征推荐
 
-[!UICONTROL Trait Recommendations] 是一种快速获取其他特征的方法，它类似于您在区段中使用的其他特征。
+[!UICONTROL Trait Recommendations] 是一种快速获取与您在区段中使用的特征类似的其他特征的洞察的方法。
 
-您应在以下情况下使用 [!UICONTROL Trait Recommendations] ：
+您应当在以下情况下 [!UICONTROL Trait Recommendations] 使用：
 
-* 您需要在构建区段时快速洞察；
-* 您正在将细分用于简短营销活动，或者在您希望快速抑制转化受众时使用细分；
-* 您正在尝试最大化覆盖面。
+* 在构建细分时，您需要快速洞察；
+* 您使用细分进行简短的营销活动，或者您希望快速抑制转化受众；
+* 您正在尝试将触及力最大化。
 
 ## 工作流
 
-在 [区段生成器](segment-builder.md)中构建或编辑区段时，您可以探索类似区段规则中特征的特征。区段生成器工作流对于新的和现有的区段非常相似：
+在区段生成器中构建或编 [辑区段时](segment-builder.md)，您可以探索与区段规则中的特征相似的特征。 “区段生成器”工作流对于新区段和现有区段非常相似：
 
-### 新区段
+### 新细分
 
-1. 在 **“受众数据”&gt;“区段**”中，选择 **“添加新**&#x200B;内容”。
-2. 在 **“特征”** 下拉框中，至少向区段规则中添加一个特征。
-3. 您现在可以看到类似于您添加到区段规则的特征的推荐特征。向下滚动以查看所有推荐的特征。
-4. (可选)要排除特定数据源中的推荐特征，请单击要排除的数据源 **的X** 符号。
+1. 在“受 **众数据”&gt;“区段**”中，选 **择新增**。
+2. 在“特 **征** ”下拉框中，向段规则添加至少一个特征。
+3. 您现在可以看到与添加到区段规则的特征相似的推荐特征。 向下滚动以查看所有推荐的特征。
+4. （可选）要从某些数据源中排除推荐的特征，请单击要排除的 **X** 符号。
    > [!NOTE]
    > 
-   >被排除的数据源显示在建议特征列表上方。按灰色框中的 **X** 可删除排除，并可再次查看各个数据源中的结果。
-5. 要向区段规则添加建议的特征，请单击 **+** 符号。
+   >被排除的数据源显示在建议特征列表的正上方。 按 **灰色框中的** X可删除排除项并再次查看各个数据源的结果。
+5. 要向区段规则添加推荐的特征，请单击 **+符号** 。
 
-### 现有区段
+### 现有细分
 
-1. 转至 **[!UICONTROL Audience Data]&gt;[!UICONTROL Segments]**，选择要编辑的区段，然后按 ![编辑](assets/edit-button.png)。
+1. 转到 **[!UICONTROL Audience Data]&gt;[!UICONTROL Segments]**，选择要编辑的区段，然后按 ![编辑](assets/edit-button.png)。
 1. 向下滚动到 [!UICONTROL Traits] 下拉框。
-1. 您可以看到推荐的特征，这类似于区段规则中已有的特征。向下滚动以查看所有推荐的特征。
-1. (可选)要排除特定数据源中的推荐特征，请单击要排除的数据源 **的X** 符号。
+1. 您可以看到推荐的特征，这与区段规则中已有的特征类似。 向下滚动以查看所有推荐的特征。
+1. （可选）要从某些数据源中排除推荐的特征，请单击要排除的 **X** 符号。
    > [!NOTE]
    > 
-   >被排除的数据源显示在建议特征列表上方。按灰色框中的 **X** 可删除排除，并可再次查看各个数据源中的结果。
-1. 要向区段规则添加建议的特征，请单击 **+** 符号。
+   >被排除的数据源显示在建议特征列表的正上方。 按 **灰色框中的** X可删除排除项并再次查看各个数据源的结果。
+1. 要向区段规则添加推荐的特征，请单击 **+符号** 。
 
-创建或编辑区段并将特征添加到区段规则时，最多可看到50个推荐的特征，类似于已添加的特征。如果区段规则包含多个特征，Audience Manager使用圆形Robin方法为每个特征显示最佳匹配项，然后为每个特征显示第二个最佳匹配项，在区段规则中为每个特征的第二个最佳匹配项。
+在创建或编辑区段并向区段规则添加特征时，您会看到最多50个推荐特征，与您添加的特征类似。 如果区段规则包含多个特征，Audience Manager会在区段规则中使用循环法来显示每个特征的最佳匹配项，然后显示每个特征的次佳匹配项，依此类推，在区段规则中，每个特征的最大50个特征的匹配项按人口划分。
 
 ![三个基本特征](assets/three-base-traits.png)
 
-例如，如区段规则中有三个特征，如下所示，建议的特征如下所示：
+例如，当区段规则中有三个特征时，建议的特征为：
 
-1. 特征3(特征数量最大的特征)；
-2. 特征1；
+1. 最适合特征3（人口最多的特征）;
+2. 特征1的最佳匹配；
 3. 特征2的最佳匹配；
-4. 适用于特征的第二个最佳匹配项；
-5. 特征1的第二个最佳匹配项，依此类推直至达到50个特征。
+4. 特征3的次优匹配；
+5. 特征1的次优匹配，等等，直到达到50个特征。
 
-要获取特定特征的推荐，您可以单击区段规则(1)中的特征或建议的特征视图(2)。
+要获取特定特征的推荐，您可以单击区段规则(1)或推荐的特征视图(2)中的特征。
 
 ![](assets/three-base-traits-numbered.png)
 
-单击特征将打开一个弹出窗口，如下图所示。如果推荐的特征不是区段的一部分，则可以按 **+**&#x200B;将其添加到区段。
+单击特征可打开一个弹出窗口，如下图所示。 如果建议的特征不是区段的一部分，则可以按 **+将其添加到区段**。
 
 ![](assets/add_to_segments.png)
 
 > [!TIP]
 >
->在特征信息弹出窗口中生成推荐时，将考虑主页中被排除的数据源。如果您在此视图中排除数据源，排除将应用于主页。
+>在特征信息弹出窗口中生成推荐时，会考虑主页中被排除的数据源。 此外，如果在此视图中排除数据源，则排除将应用于主页。
 
 > [!NOTE]
 >
-> 建议的特征可能是您订阅的源的第一方特征或第三方特征。
+> 建议的特征可以是您订阅的源的第一方特征或第三方特征。
 
 ## 工作原理
 
-为了生成特征建议，Audience Manager计算目标特征和您的帐户访问的每个其他特征之间的 [](https://en.wikipedia.org/wiki/Jaccard_index) Jacard相似性(包括第三方数据)。Audience Manager随后最多可显示最相似的50个特征。
+要生成特征推荐，Audience Manager会计算目标特征与您帐户有权访问的每个其他特征（包括第三方数据）之间的 [](https://en.wikipedia.org/wiki/Jaccard_index) Jaccard相似性。 然后，Audience manager显示最多50个相似性最高的特征。
 
 ## 特征相似性得分
 
-Audience Manager通过计算相交和联合的数量计算两个特征 [!UICONTROL Trait Similarity Score] 之间的差异， [!UICONTROL UUID]然后除以两者。对于两个特征A和B，计算如下：
+Audience manager通过 [!UICONTROL Trait Similarity Score] 计算交叉点和并数来计算两个特征之 [!UICONTROL UUID]间的数量，然后将两个特征相除。 对于两个特征A和B，计算如下所示：
 
 ![](assets/jaccard_similarity.png)
 
 另请参见下面的两个示例。
 
-### 示例-低特征相似性得分
+### 示例1 —— 低特征相似性得分
 
-假设有两个特征A和B，假设每个特征有1,000， [!UICONTROL UUID]000s，25,000 [!UICONTROL UUID]s符合两个特征。
-使用上面的公式，这将导致：25,000/1,975,000=0.012。这很低 [!UICONTROL Trait Similarity Score]，两个特征截然不同。
+给定两个特征A和B，假设每个特征的人口为1,000,000 [!UICONTROL UUID]s，其中25,000 [!UICONTROL UUID]s符合这两个特征。
+使用上述公式，这将导致：25,000 / 1,975,000 = 0.012。这个低，这 [!UICONTROL Trait Similarity Score]两个特征是非常不一样的。
 
 ![](assets/Trait-Recommendations-Low-overlap.png)
 
-### 示例-特征相似性得分
+### 示例2 —— 特征相似性得分
 
-如果同一特征A和B具有400，000 [!UICONTRL UUID]，可符合两种特征，则要 [!UICONTROL Trait Similarity Score] 高得多：
-400,000/1,600，000=0.25
+如果相同的特征A和B具有400,000个UUID, [!UICONTRL ]则符合这两个特征， [!UICONTROL Trait Similarity Score] 则其值要高得多：400,000 / 1,600,000 = 0.25
 
 ![](assets/Trait-Recommendations-High-overlap.png)
 
-### 如何解释特征相似性得分
+### 如何解读特征相似性得分
 
-使用下表作为特征相似性的粗略指南。本指南基于大多数特征中观察到的相似性分数。
+使用下表作为特征相似性的粗略指南。 本指南基于在大多数特征上观察到的相似性得分。
 
 | [!UICONTROL Trait Similarity Score] | 重要性 |
 ---------|----------|
 | 0.1及更高版本 | 特征之间的高相似性 |
 | 0.03 - 0.1 | 特征之间的中等相似性 |
-| 0.01 - 0.03 | 特征之间的相似性低 |
+| 0.01 - 0.03 | 特征之间的低相似性 |
 | 0 - 0.01 | 特征之间的相似性很低 |
 
-## 基于角色的访问控制(CLUAC)
+## 基于角色的访问控制(RBAC)
 
-对于使用 [!UICONTROL Role-Based Access Controls] ([!UICONTROL RBAC])的公司，您需要具有创建和编辑区段的权限，以便查看推荐的特征。此外，您所看到的推荐特征只是从您有权访问的数据源中看到的特征 [!UICONTROL RBAC]。请阅读此处 [!UICONTROL RBAC] 的有关控件 [的更多](../administration/administration-overview.md)信息。
+对于使用( [!UICONTROL Role-Based Access Controls][!UICONTROL RBAC])的公司，您需要具有创建和编辑区段的权限才能查看推荐的特征。 而且，您看到的推荐特征只是您有权通过访问的数据源中的特征 [!UICONTROL RBAC]。 阅读此处有关控 [!UICONTROL RBAC] 件的 [更多信息](../administration/administration-overview.md)。
 
 ## 限制
 
-* 当前，Audience Manager不会显示文件夹特征作为建议的特征。在此处阅读有关文件夹特征 [的更多信息](../traits/manage-folder-traits.md)。
-* 显示Travical Recommendations时，Audience Manager不会在区段规则中考虑 [!DNL Boolean] 操作符([!DNL AND]， [!DNL OR]， [!DNL NOT])。
+* 目前，Audience manager不将文件夹特征显示为建议的特征。 阅读此处有关文件夹特征的 [更多信息](../traits/manage-folder-traits.md)。
+* 在显示特征推荐时，Audience manager不会考虑区段规 [!DNL Boolean] 则中的[!DNL AND]运 [!DNL OR]算符(、 [!DNL NOT]、)。
