@@ -4,7 +4,7 @@ seo-description: 使用GET或POST方法将数据发送到DCS API。
 seo-title: DCS API方法
 solution: Audience Manager
 title: DCS API方法
-uuid: e407458-11d4-4342-a84 a-512afa5 fc5 fc183
+uuid: 6e407458-11d4-4342-a84a-512afa5fc183
 translation-type: tm+mt
 source-git-commit: bdea2609b84d7f80d67452b4c43e11cbef01a368
 
@@ -13,14 +13,14 @@ source-git-commit: bdea2609b84d7f80d67452b4c43e11cbef01a368
 
 # DCS API方法 {#dcs-api-methods}
 
-将数据发送到 [!UICONTROL DCS][!DNL API] 使用 `GET` 或 `POST` 方法。
+使用或方法将 [!UICONTROL DCS] 数据发 [!DNL API] 送到 `GET``POST` 中。
 
-您可以使用任一 [!UICONTROL DCS]`GET` 或 `POST` 方法将数据发送到。使用 [curl](https://curl.haxx.se/)查看下面的示例调用。在所有三个范例调用中，我们将添加信号 `c_likes = famous popstar` 和 `c_loves = famous actress` 设备配置文件 `12345678901234567890123456789012345678`。
+您可以使用或方 [!UICONTROL DCS] 法之一将数据发 `GET` 送到 `POST` 。 使用curl查看以下示例调 [用](https://curl.haxx.se/)。 在所有三个样本调用中，我们都会将信号 `c_likes = famous popstar` 和设 `c_loves = famous actress` 备配置文件相加 `12345678901234567890123456789012345678`。
 
 
 ## 通过GET发送数据 {#send-data-via-get}
 
-请注意 `GET` ，调用的最大允许大小为8K。
+请注意，呼叫的最大允 `GET` 许大小为8K。
 
 ```
 curl -i "yourcompany.demdex.net/event?d_uuid=12345678901234567890123456789012345678&d_rtbd=json&c_likes=famous%20popstar&c_loves=famous%20actress"
@@ -28,7 +28,7 @@ curl -i "yourcompany.demdex.net/event?d_uuid=12345678901234567890123456789012345
 
 ## 通过POST发送数据 {#send-data-via-post}
 
-请注意使用该 `POST` 方法发送数据的要求：
+请注意使用以下方法发送数据的 `POST` 要求：
 
 * 允许的最大大小为32K。
 * 将内容类型设置为 `application/x-www-form-urlencoded`。
