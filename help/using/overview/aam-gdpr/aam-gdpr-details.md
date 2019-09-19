@@ -1,10 +1,10 @@
 ---
-description: 本文档涵盖Audience Manager的一般数据保护规定(GDPR)的相关技术，并向您展示如何向Audience Manager提交GDPR请求。
-seo-description: 本文档涵盖Audience Manager的一般数据保护规定(GDPR)的相关技术，并向您展示如何向Audience Manager提交GDPR请求。
+description: 本文档涵盖与Audience manager的一般数据保护规定(GDPR)相关的技术细节，并向您展示如何向Audience manager提交GDPR请求。
+seo-description: 本文档涵盖与Audience manager的一般数据保护规定(GDPR)相关的技术细节，并向您展示如何向Audience manager提交GDPR请求。
 seo-title: Audience Manager 中的 GDPR
 solution: Audience Manager
 title: Audience Manager 中的 GDPR
-uuid: ed23a478-32be-460d-bb03-a735317 f7 c0 f
+uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
 source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
@@ -13,41 +13,41 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 # Audience Manager 中的 GDPR{#gdpr-in-audience-manager}
 
-本文档涵盖Audience Manager的一般数据保护规定(GDPR)的相关技术，并向您展示如何向Audience Manager提交GDPR请求。
+本文档涵盖与Audience manager的一般数据保护规定(GDPR)相关的技术细节，并向您展示如何向Audience manager提交GDPR请求。
 
-## Experience Cloud中的GDPR文档 {#gdpr-documentation}
+## Experience cloud中的GDPR文档 {#gdpr-documentation}
 
-在阅读Audience Manager特定信息之前，我们建议您浏览Experience Cloud的欧洲一般数据保护规定(GDPR)材料，如下链接：
+在阅读Audience manager的具体信息之前，我们建议您阅读下面链接的欧洲一般数据保护规定(GDPR)的Experience cloud材料：
 
 * [GDPR与您的业务](https://www.adobe.com/privacy/general-data-protection-regulation.html)
 * [GDPR白皮书](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-whitepaper.md)
 * [GDPR 术语](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-terminology.md)
 
-以下部分介绍了GDPR对Audience Manager的意义，以及如何向Audience Manager提交GDPR请求。
+以下各节将说明GDPR对Audience manager的意义，以及您如何向Audience manager提交GDPR请求。
 
-## GDPR请求的类型和如何提出GDPR请求 {#types-of-gdpr-requests}
+## GDPR请求类型及GDPR请求的提出 {#types-of-gdpr-requests}
 
-作为Audience Manager客户，您可以通过 **[GDPR Client Services UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** 或通过调用 **[GDPR API提交单个GDPR请求以访问和删除客户数据](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)**。You can submit any Audience Manager identifiers (IDs), as described in the section **[Audience Manager Identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)**, in the requests along with their respective namespace IDs (data source IDs). 如果您有疑问，请联系客户关怀部门，网址为gdprsupport@adobe.com。
+作为Audience manager客户，您可以通过 **[GDPR客户服务UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** ，或通过调用 **[GDPR API提交访问和删除客户数据的个别GDPR请求](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)**。 You can submit any Audience Manager identifiers (IDs), as described in the section **[Audience Manager Identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)**, in the requests along with their respective namespace IDs (data source IDs). 如果您有任何疑问，请通过gdprsupport@adobe.com联系客户服务。
 
 ## 访问数据 {#access-data}
 
-我们理解您承诺在收到的30天内尊重GDPR客户请求。因此，我们尽量尽快处理您的数据访问请求。
+我们理解您承诺在接收后30天内履行您的GDPR客户请求。 因此，我们会尽快处理您的数据访问请求。
 
 **请求**
 
-您可以通过 **[GDPR Client Services UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** 或通过调用 **[GDPR API来记录数据访问请求](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** (请参阅 `access` 操作)。无论哪种情况，您都必须将JSON与提交数据访问请求的Audience Manager标识符上传。了解格式良好的JSON在 **[Experience Cloud GDPR文档中的外观](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** (特别是，在页面中搜索“POST请求格式”)。或者，您可以 **[下载示例JSON](assets/access_request.json)**。
+您可以通过 **[GDPR客户端服务UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** ，或通过调用 **[GDPR API](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** (请参阅 `access` 操作)来记录数据访问请求。 无论哪种情况，您都必须上传包含Audience Manager标识符的JSON，您为其提交数据访问请求。 查看 **[Experience Cloud GDPR文档中格式良好的JSON的外观](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** （具体而言，在页面中搜索“POST请求格式”）。 或者，您也可以 **[下载示例JSON](assets/access_request.json)**。
 
 **响应**
 
-对访问数据请求的答复包含特征和区段总数、特征类型、特征和区段描述以及各自的数据源名称。访问响应还将包括由数据管理者访问的第二方数据和第三方数据，以及第一方数据。当 [!UICONTROL declared IDs] 在GDPR请求中发送跨设备CRM ID或客户cookie ID等时，Audience Manager将包括来自所有链接设备的访问响应(每个声明ID最多可达100台设备)。
+对访问数据请求的响应包含特征和区段总数、特征类型、特征和区段的描述以及相应的数据源名称的摘要。 访问响应还将包括可由数据控制器访问的第二方和第三方数据以及第一方数据。 当在 [!UICONTROL declared IDs] GDPR请求中发送跨设备CRM ID或客户Cookie ID时，Audience manager将包括来自所有链接设备的访问响应（每个声明的ID最多100台设备）。
 
 **响应状态**
 
-如果响应中存在Audience Manager中的任何错误，则会作为响应出现在响应中的错误代码。我们有一个 [错误代码](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)列表，您可以在其中找到有关返回错误的更多信息。
+如果响应中有来自Audience manager的任何错误，则这些错误会作为错误代码在响应中显示。 我们有一 [个错误代码列表](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)，您可以在其中找到有关返回错误的更多信息。
 
 **示例响应**
 
-示例访问响应的外观可能如下所示。在此示例中，数据主体的ID为cookie ID。他们符合几个特征，属于几个细分。cookie ID链接到移动ID。该示例还包含他们使用的电话的元数据。
+示例访问响应可能与下面的响应类似。 在本例中，数据主体的ID是cookie ID。 它们符合几个特征，属于几个细分。 cookie ID链接到移动ID。 该示例还包含他们使用的电话的元数据。
 
 ```
 {
@@ -130,7 +130,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 }
 ```
 
-下表包含数据访问响应中所有返回字段的描述(按它们显示的顺序)。
+下表按数据访问响应中返回的所有字段的显示顺序，包含这些字段的说明。
 
 <table id="table_DF08231257F64588B98BD71A088C50DC"> 
  <thead> 
@@ -142,19 +142,19 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> id</code> </p> </td> 
-   <td colname="col2"> <p>随后的数据的用户ID。这是您在GDPR数据访问请求中提供的id或链接到其中某个已声明ID的ID。<a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager标识符</a> 部分介绍了ID类型。 </p> </td> 
+   <td colname="col2"> <p>随后的数据的用户ID。 这是您在GDPR数据访问请求中提供的ID，或者链接到您提供的声明ID之一的ID。 Audience Manager标识符部分介绍了ID <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 类型</a> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> namespace</code> </p> </td> 
-   <td colname="col2"> <p>也称为数据源。请参阅 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager标识符</a> 部分。 </p> </td> 
+   <td colname="col2"> <p>也称为数据源。请参阅Audience <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Manager标识符部分</a> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> id</code> </p> </td> 
-   <td colname="col2"> <p>命名空间/数据源 ID。请参阅 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 所有可接受值的Audience Manager标识符(ID)</a> 。 </p> </td> 
+   <td colname="col2"> <p>命名空间/数据源 ID。请参 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 阅Audience Manager标识符(ID)</a> ，了解所有已接受的值。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 集成代码 </code> </p> </td> 
-   <td colname="col2"> <p>集成代码是数据源的友好名称，可帮助您比使用数据源ID更轻松地跟踪数据源。 </p> </td> 
+   <td colname="col2"> <p>集成代码是数据源的易记名称，与使用数据源ID相比，它可以帮助您更轻松地跟踪数据源。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 数据提供程序名称 </code> </p> </td> 
@@ -167,30 +167,30 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> type </code> </p> </td> 
-   <td colname="col2"> <p>您请求访问 GDPR 数据的 ID 类型。接受类型在 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager标识符</a> 部分中列出。 </p> </td> 
+   <td colname="col2"> <p>您请求访问 GDPR 数据的 ID 类型。接受的类型列在Audience Manager标识符 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 部分中</a> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 警告</code> </p> </td> 
-   <td colname="col2"> <p>警告返回与数据访问请求相关的更多信息。 </p> </td> 
+   <td colname="col2"> <p>警告会返回与数据访问请求相关的进一步信息。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> title </code> </p> </td> 
    <td colname="col2"> <p>有关警告的简要信息。 </p> <p>您可能收到的两个警告是： </p> <p> 
      <ul id="ul_34019A1529594DC7B2566913937EAF0C"> 
       <li id="li_F0104BE3D5FE4DB7BA54195504E260E9">设备数据 </li> 
-      <li id="li_8A22D9F9A1454AFDBC4CAF942E80498F">不完整请求 </li> 
+      <li id="li_8A22D9F9A1454AFDBC4CAF942E80498F">未完成请求 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> description </code> </p> </td> 
-   <td colname="col2"> <p>接收到的警告的更详细描述： </p> <p> 
+   <td colname="col2"> <p>您收到的警告的更详细描述： </p> <p> 
      <ul id="ul_78E03ABA52674E07A48835FDD3431FF8"> 
-      <li id="li_6BB6D58660594CA0B1A89804F2FC6274">设备数据-包含此设备所有用户的数据 </li> 
-      <li id="li_E328D5BF066C4E7E8CCCDCAA5E91CCDC">不完整请求- Audience Manager数据检索未完成。可能缺少一些信息。 </li> 
+      <li id="li_6BB6D58660594CA0B1A89804F2FC6274">设备数据——包含来自此设备所有用户的数据 </li> 
+      <li id="li_E328D5BF066C4E7E8CCCDCAA5E91CCDC">请求不完整——未完成Audience manager数据的检索。 某些信息可能缺失。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> data </code> </p> </td> 
+   <td colname="col1"> <p> <code> 数据 </code> </p> </td> 
    <td colname="col2"> <p>与此用户ID关联的特征和区段。 </p> </td> 
   </tr> 
   <tr> 
@@ -203,20 +203,20 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> type</code> </p> </td> 
-   <td colname="col2"> <p>特征类型。可能的值包括： </p> <p> 
+   <td colname="col2"> <p>特征类型。 可能的值包括： </p> <p> 
      <ul id="ul_DBAC618D9FE94B17B2494B83832A969F"> 
-      <li id="li_740F2DCA8F2A4A22A7D9988ECD2FC976"> <i>适用于您自己特征的第一方</i> 。 </li> 
-      <li id="li_D9354F40FD114802819191450F2375C8"> <i>属于您的合作伙伴的特征的第二方</i> 。有关更多信息，请阅读我们 <a href="../../overview/data-types-collected.md#second-party-data"> 的第二方数据</a> 文章。 </li> 
-      <li id="li_C321D8B8256F4102AE64CD40DC57C948"> <i>第三方</i> 通过 <a href="../../features/audience-marketplace/audience-marketplace.md"> Audience Marketplace获取从数据合作伙伴获得的特征</a>。 </li> 
+      <li id="li_740F2DCA8F2A4A22A7D9988ECD2FC976"> <i>第一方</i> ，针对您自己的特征。 </li> 
+      <li id="li_D9354F40FD114802819191450F2375C8"> <i>第二方</i> ，指属于您的合作伙伴的特征。 请阅读我们 <a href="../../overview/data-types-collected.md#second-party-data"> 的第二方数据文章</a> ，了解更多信息。 </li> 
+      <li id="li_C321D8B8256F4102AE64CD40DC57C948"> <i>第三方</i> ，用于通过Audience Marketplace从数据合作伙伴获取 <a href="../../features/audience-marketplace/audience-marketplace.md"> 的特征</a>。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> description</code> </p> </td> 
-   <td colname="col2"> <p>帮助描述特征的目的或功能。这是可选字段。 </p> </td> 
+   <td colname="col2"> <p>用几个词来描述特质的目的或功能。 这是一个可选字段。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 数据导出控件</code> </p> </td> 
-   <td colname="col2"> <p>应用于此特征数据源的 <a href="../../features/data-export-controls.md"> 数据导出控件</a> 。 </p> </td> 
+   <td colname="col2"> <p>应用 <a href="../../features/data-export-controls.md"> 于此特征的数据源</a> ，数据导出控件。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 数据提供程序名称</code> </p> </td> 
@@ -228,8 +228,8 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 上次实现</code> </p> </td> 
-   <td colname="col2"> <p>数据主体上次符合此特征的确切时间。日期格式为YYYY-MM-DD。 </p> </td> 
+   <td colname="col1"> <p> <code> 最后实现</code> </p> </td> 
+   <td colname="col2"> <p>数据主体上次限定此特征的确切时间。 日期格式为YYYY-MM-DD。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 区段 </code> </p> </td> 
@@ -241,11 +241,11 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> description</code> </p> </td> 
-   <td colname="col2"> <p>帮助描述此区段的几个词语。这是可选字段。 </p> </td> 
+   <td colname="col2"> <p>用几个词帮助描述此部分。 这是一个可选字段。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 数据导出控件</code> </p> </td> 
-   <td colname="col2"> <p>应用于此区段数据源的 <a href="../../features/data-export-controls.md"> 数据导出控件</a> 。 </p> </td> 
+   <td colname="col2"> <p>应用 <a href="../../features/data-export-controls.md"> 于此段数据源</a> 的数据导出控件。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 数据提供程序名称</code> </p> </td> 
@@ -257,41 +257,41 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 上次实现</code> </p> </td> 
-   <td colname="col2"> <p>数据主体上次符合此区段资格的确切时间。日期格式为YYYY-MM-DD。 </p> </td> 
+   <td colname="col1"> <p> <code> 最后实现</code> </p> </td> 
+   <td colname="col2"> <p>数据主体上次限定此区段的准确时间。 日期格式为YYYY-MM-DD。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> active活动</code> </p> </td> 
-   <td colname="col2"> <p>指示数据主体当前是否符合此区段资格。Returns <code><i>true</i></code> or <code><i>false</i></code>. </p> </td> 
+   <td colname="col1"> <p> <code> 活动</code> </p> </td> 
+   <td colname="col2"> <p>指示数据主体当前是否符合此区段的条件。 Returns <code><i>true</i></code> or <code><i>false</i></code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 链接 </code> </p> </td> 
-   <td colname="col2"> <p>此ID已链接到的其他ID。信息在以下位置返回： </p> <p> 
+   <td colname="col2"> <p>此ID已链接到的其他ID。 信息返回于： </p> <p> 
      <ul id="ul_679F372A83164CC8B6BFE5A833347B9E"> 
       <li id="li_BCBF4F4C6C4049519BDE9186EE84868A">ID </li> 
-      <li id="li_46AC081C993041E6BCE70119FE04BE7F">命名空间(数据源) </li> 
+      <li id="li_46AC081C993041E6BCE70119FE04BE7F">namespace（数据源） </li> 
       <li id="li_E9B906C8947E484B94FBCAEB03BDF4E2">namespace ID </li> 
       <li id="li_FB2A2F28290B4BA7844A558C01F8D9D4">集成代码 </li> 
       <li id="li_2569982810B64F8AABD78F5AC3717971">数据提供程序名称 </li> 
       <li id="li_2A3C282279064373BF7E4619A63454CF">ID type </li> 
-     </ul> </p> <p>此表的第一行将介绍所有这些字段。 </p> </td> 
+     </ul> </p> <p>此表的前几行中介绍了所有这些字段。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 链接数据时间</code> </p> </td> 
-   <td colname="col2"> <p>ID同步事件在ID之间建立链接的确切时间。日期格式为YYYY-MM-DD。 </p> </td> 
+   <td colname="col1"> <p> <code> 链接日期时间</code> </p> </td> 
+   <td colname="col2"> <p>ID sync事件在ID之间建立链接的确切时间。 日期格式为YYYY-MM-DD。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 设备元数据 </code> </p> </td> 
-   <td colname="col2"> <p>有关设备的信息。此信息包括以下字段。请注意，并非所有设备类型都返回所有字段。 </p> <p> 
+   <td colname="col2"> <p>有关设备的信息。 此信息包括以下字段。 注意，并非所有设备类型都返回所有字段。 </p> <p> 
      <ul id="ul_F0031D50DF074634A428DBC73F958159"> 
       <li id="li_4E26042A6B8D4397829F30B7BC7A2D6E"> <p>硬件信息 </p> </li> 
       <li id="li_99A049D585A9440EA79F57A3B03181AB"> <p>设备制造商 </p> </li> 
       <li id="li_290F92FC3F6449EFBC4E7870B62AFE8B"> <p>设备的营销名称 </p> </li> 
-      <li id="li_FC37954CE133471398352240A8B0478F"> <p>设备模型 </p> </li> 
-      <li id="li_D54AEB0527C34E32A8AEEAEDEA5AD1B2"> <p>设备操作系统的名称(操作系统) </p> </li> 
-      <li id="li_0B343C4599344E1791B35A56EBBDC567"> <p>操作系统的版本 </p> </li> 
+      <li id="li_FC37954CE133471398352240A8B0478F"> <p>设备型号 </p> </li> 
+      <li id="li_D54AEB0527C34E32A8AEEAEDEA5AD1B2"> <p>设备的操作系统(OS)的名称 </p> </li> 
+      <li id="li_0B343C4599344E1791B35A56EBBDC567"> <p>操作系统版本 </p> </li> 
       <li id="li_634B391D95104C42A43D6EFA95F3C0D3"> <p>设备供应商 </p> </li> 
-     </ul> </p> <p> <p>注意：当您提交以下任一内容时，我们只返回设备元数据： 
+     </ul> </p> <p> <p>注意：只有在您提交以下任一项时，我们才会返回设备元数据： 
       <ul id="ul_2692AF4D28DB44FEAF5F657397F58D32"> 
        <li id="li_FBA2446BB5914772AF24D12B32D9DF1B">移动ID </li> 
        <li id="li_FBC45D16DEFE49CF91A7A541402A3BF3">Audience Manager ID </li> 
@@ -303,37 +303,37 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 ## 删除数据 {#delete-data}
 
-我们理解您承诺在收到的30天内尊重GDPR客户请求。因此，我们尽量尽快处理您的数据删除请求。
+我们理解您承诺在接收后30天内履行您的GDPR客户请求。 因此，我们会尽快处理您的数据删除请求。
 
 **请求**
 
-您可以通过 **[GDPR Client Services UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** 或通过调用 **[GDPR API来记录数据删除请求](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** (请参阅 `delete` 操作)。无论哪种情况，您都必须将JSON与提交数据访问请求的Audience Manager标识符上传。了解格式良好的JSON在 [Experience Cloud GDPR文档中的外观](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) (特别是，在页面中搜索“POST请求格式”)。或者，您可以 **[下载示例JSON](assets/delete_request.json)**。
+您可以通过 **[GDPR客户端服务UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** ，或通过调用 **[GDPR API](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** (请参阅 `delete` 操作)来记录数据删除请求。 无论哪种情况，您都必须上传包含Audience Manager标识符的JSON，您为其提交数据访问请求。 查看 [Experience Cloud GDPR文档中格式良好的JSON的外观](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) （具体而言，在页面中搜索“POST请求格式”）。 或者，您也可以 **[下载示例JSON](assets/delete_request.json)**。
 
 **响应**
 
-为了响应数据删除请求，我们删除与各个Audience Manager标识符相关的特征和区段。此外，数据主体对应的Audience Manager标识符将从Audience Manager中永久选择退出数据收集，并将删除各自的ID映射。如果在GDPR请求中发送了跨设备CRM ID或客户cookie ID等声明的ID，Audience Manager将对所有链接设备执行必要的删除操作(每个声明ID最多可为100台设备)。
+为响应数据删除请求，我们会删除与相应Audience manager标识符关联的特征和区段。 此外，Audience manager将永久选择不再收集更多数据，并删除相应的Id映射。 当在GDPR请求中发送跨设备CRM ID或客户cookie ID等声明的ID时，Audience manager将对所有链接的设备（每个声明的ID最多可有100台设备）执行必要的删除操作。
 
 ## 退出请求 {#opt-out-request}
 
-有关退出申请，请参阅我们关于 [选择退出管理](../../overview/data-security-and-privacy/opt-out-management.md)的文档。
+有关退出请求，请参阅我们关于退出管 [理的文档](../../overview/data-security-and-privacy/opt-out-management.md)。
 
-## Audience Manager标识符(ID) {#aam-ids}
+## Audience manager标识符(ID) {#aam-ids}
 
-向Adobe Audience Manager提交GDPR请求时，您必须包含以下列出的标识符(ID)。您可以在我们的Audience Manager ID [索引中找到有关ID格式的更多信息](../../reference/ids-in-aam.md)。
+在向Adobe Audience manager提交GDPR请求时，您必须包括以下列出的一个标识符(ID)。 您可以在我们的Audience Manager ID索引中找到有关ID [格式的更多信息](../../reference/ids-in-aam.md)。
 
 ### Adobe Audience Manager唯一用户ID
 
-**用户ID**：aam_ uuid
+**用户ID**:aam_uuid
 
-**定义**：Adobe Audience Manager唯一用户ID
+**定义**:Adobe Audience Manager唯一用户ID
 
-**命名空间ID**：0
+**命名空间ID**:0
 
 >[!NOTE]
 >
->您还可以使用核心命名空间。请参阅第二个JSON示例。
+>您还可以使用CORE命名空间。 请参阅第二个JSON示例。
 
-**JSON**&#x200B;中的示例：
+**JSON中的示例**:
 
 ```
  "users": [
@@ -383,17 +383,17 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 ### Adobe Experience Cloud ID
 
-**用户ID**：中间版本
+**用户ID**:mid
 
-**定义**：Adobe Experience Cloud ID，以前称为访客ID或Marketing Cloud ID
+**定义**:Adobe Experience Cloud ID，以前称为访客ID或Marketing Cloud ID
 
-**命名空间ID**：个
+**命名空间ID**:4
 
 >[!NOTE]
 >
->您还可以使用EID命名空间。请参阅第二个JSON示例。
+>您还可以使用ECID命名空间。 请参阅第二个JSON示例。
 
-**JSON**&#x200B;中的示例：
+**JSON中的示例**:
 
 ```
  "users": [
@@ -443,13 +443,13 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 ### Customer ID
 
-**用户ID**：cid
+**用户ID**:cid
 
-**定义**：客户ID，例如您为匿名站点访问者设置的Cookie或来自脱机系统或哈希用户名的CRM ID
+**定义**:客户ID，如您为匿名网站访客设置的Cookie，或来自脱机系统的CRM ID，或哈希用户名
 
-**命名空间ID**：客户特定。请从Audience Manager实例中找到它。
+**命名空间ID**:客户特定。 请从您的Audience manager实例中查找它。
 
-**JSON**&#x200B;中的示例：
+**JSON中的示例**:
 
 ```
 "users": [
@@ -481,19 +481,19 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 ### 移动广告ID
 
-**用户ID**：d_ cid
+**用户ID**:d_cid
 
-**定义**：移动广告ID。
+**定义**:移动广告ID。
 >[!IMPORTANT]
 >
-> 如果您使用的是Mobile SDK，则还应将Experience Cloud ID(MID)和移动广告ID一起发送，以获得完整的GDPR访问和删除答复。
+> 如果您使用的是Mobile SDK，则还应发送Experience Cloud ID(MID)和移动广告ID，以获得完整的GDPR访问和删除响应。
 
 **命名空间 ID**:
 
-* IDFA：20915
-* GUID：20914
+* IDFA:二〇九一五年
+* GAID:二〇九一四年
 
-**JSON**&#x200B;中的示例：
+**JSON中的示例**:
 
 ```
 "users": [
@@ -520,11 +520,11 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 ### 集成代码
 
-**用户ID**：d_ cid_ ic
+**用户ID**:d_cid_ic
 
-**定义**：数据源的集成代码。它可以代替API请求中的数据源ID/命名空间ID来使用Adobe Experience Cloud隐私核心服务。
+**定义**:数据源的集成代码。 在向Adobe Experience Cloud隐私核心服务发出的API请求中，可以使用它代替数据源ID /命名空间ID。
 
-**命名空间ID**：不适用
+**命名空间ID**:不适用
 
 JSON中的示例：
 
