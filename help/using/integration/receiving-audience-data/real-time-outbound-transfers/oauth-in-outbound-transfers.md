@@ -1,10 +1,10 @@
 ---
-description: 在通过实时服务器到服务器集成将区段发布到合作伙伴目标时，可以设置Audience Manager以在发出请求时使用OAuth2.0进行身份验证。这显示了从Audience Manager向端点发出身份验证请求的功能。
-seo-description: 在通过实时服务器到服务器集成将区段发布到合作伙伴目标时，可以设置Audience Manager以在发出请求时使用OAuth2.0进行身份验证。这显示了从Audience Manager向端点发出身份验证请求的功能。
-seo-title: OAuth2.0实时出站传输集成
+description: 当通过实时服务器到服务器集成将区段发布到合作伙伴目标时，可以设置Audience Manager以在发出请求时使用OAuth 2.0进行身份验证。 这表明能够将Audience manager中经过身份验证的请求发布到您的端点。
+seo-description: 当通过实时服务器到服务器集成将区段发布到合作伙伴目标时，可以设置Audience Manager以在发出请求时使用OAuth 2.0进行身份验证。 这表明能够将Audience manager中经过身份验证的请求发布到您的端点。
+seo-title: OAuth 2.0集成，用于实时出站传输
 solution: Audience Manager
-title: OAuth2.0实时出站传输集成
-uuid: a39e370c-b3 bd-4b06-a1 AF-60a024 ee7 ee
+title: OAuth 2.0集成，用于实时出站传输
+uuid: a39e370c-b3bd-4b06-a1af-60a024ee7ee4
 translation-type: tm+mt
 source-git-commit: 1cc8afd25331528fd67922183b6550288b9939bc
 
@@ -13,35 +13,35 @@ source-git-commit: 1cc8afd25331528fd67922183b6550288b9939bc
 
 # [!DNL OAuth 2.0] 实时出站传输集成{#oauth-integration-for-real-time-outbound-transfers}
 
-When publishing segments to the partner destination via a realtime server-to-server integration, Audience Manager can be set up to authenticate using [!DNL OAuth 2.0] when making the requests. 这显示了从Audience Manager向端点发出身份验证请求的功能。
+当通过实时服务器到服务器集成将区段发布到合作伙伴目标时，可以设置Audience Manager以在发出请求时使 [!DNL OAuth 2.0] 用身份验证。 这表明能够将Audience manager中经过身份验证的请求发布到您的端点。
 
-## Authentication Flow {#auth-flow}
+## 身份验证流程 {#auth-flow}
 
-[!DNL Adobe Audience Manager][OAuth2.0](https://tools.ietf.org/html/rfc6749#section-4.4) 身份验证实施基于客户端凭据，并遵循以下步骤：
+OAuth 2.0 [!DNL Adobe Audience Manager][](https://tools.ietf.org/html/rfc6749#section-4.4) 身份验证实现基于客户端凭据授权流程，并执行以下步骤：
 
-1. 您必须为我们提供：
-   * The [!DNL OAuth 2.0] endpoint that generates the authentication token.
+1. 您必须向我们提供：
+   * 生成 [!DNL OAuth 2.0] 身份验证令牌的端点。
    * 用于生成令牌的凭据。
-1. [!DNL Audience Manager] 顾问使用您提供的信息设置 [目标](../../../features/destinations/destinations.md) 。
-1. Once a segment is mapped to this destination, our real-time data transfer system, [IRIS](../../../reference/system-components/components-data-action.md#iris), makes a `POST` request to the token endpoint to exchange the credentials for a bearer token.
-1. For each segment publishing request to the partner endpoint, [!UICONTROL IRIS] uses the bearer token to authenticate.
+1. 顾 [!DNL Audience Manager] 问使用您提 [供的信息](../../../features/destinations/destinations.md) ，设置目标。
+1. 一旦将一个区段映射到该目标，我们的实时数据传输系统 [IRIS](../../../reference/system-components/components-data-action.md#iris)`POST` ，向令牌端点发出请求以交换承载令牌的凭据。
+1. 对于向合作伙伴端点发布的每个区段发 [!UICONTROL IRIS] 布请求，使用承载令牌进行身份验证。
 
 ![](assets/oauth2-iris.png)
 
 ## 要求 {#auth-requirements}
 
-[!DNL Audience Manager] 作为合作伙伴，需要以下端点才能接收经过身份验证的请求：
+作为合 [!DNL Audience Manager] 作伙伴，接收经过身份验证的请求时需要以下端点：
 
-### IIS使用的端点用于获取看字令牌
+### 由IRIS用于获取承载令牌的端点1
 
-此端点将接受第步提供的凭据，并生成将在后续请求上使用的看门人令牌。
+此端点将接受在步骤1中提供的凭据并生成用于后续请求的承载令牌。
 
-* The endpoint must accept `HTTP POST` requests.
-* The endpoint must accept and look at the [!DNL Authorization] header. The value for this header will be: `Basic <credentials_provided_by_partner>`.
-* The endpoint must look at the [!DNL Content-type] header and validate that its value is `application/x-www-form-urlencoded ; charset=UTF-8`.
-* The body of the request will be `grant_type=client_credentials`.
+* 端点必须接受 `HTTP POST` 请求。
+* 端点必须接受并查看标 [!DNL Authorization] 头。 此标题的值将为： `Basic <credentials_provided_by_partner>`.
+* 端点必须查看头 [!DNL Content-type] 并验证其值是否为 `application/x-www-form-urlencoded ; charset=UTF-8`。
+* 请求书的正文将是 `grant_type=client_credentials`。
 
-### Audience Manager向合作伙伴端点发出的示例请求，以获取一个承担者令牌
+### Audience manager向合作伙伴端点发出的示例请求，以获取承载令牌
 
 ```
 POST /oauth2/token HTTP/1.1
@@ -68,11 +68,11 @@ Content-Length: 121
 {"token_type":"Bearer","access_token":"glIbBVohK8d86alDEnllPWi6IpjZvJC6kwBRuuawts6YMkw4tZkt84rEZYU2ZKHCQP3TT7PnzCQPI0yY"}
 ```
 
-### IIS使用的端点2，用于使用标记令牌发布区段
+### IRIS使用的端点2使用承载令牌发布段
 
-[!DNL Audience Manager] 可在用户有资格获得区段时，实时将数据发送到此端点。此外，此方法可以像每24小时一样发送脱机或已载入的数据批次。
+[!DNL Audience Manager] 当用户符合区段资格时，会近乎实时地向此端点发送数据。 此外，此方法可以每24小时发送一批脱机或已载入的数据。
 
-端点生成的承担者令牌用于发出对此端点的请求。[!DNL Audience Manager] 实时数据传输系统 [IIS](../../../reference/system-components/components-data-action.md#iris)构建普通HTTPS请求并包含授权标题。The value for this header will be: Bearer `<bearer token from step 1>`.
+端点1生成的承载令牌用于向此端点发出请求。 实 [!DNL Audience Manager] 时数据传输系统 [IRIS](../../../reference/system-components/components-data-action.md#iris)，构造正常的HTTPS请求并包括授权头。 此标题的值将为：持 `<bearer token from step 1>`人。
 
 ### 合作伙伴端点的示例响应
 
@@ -105,14 +105,14 @@ Accept-Encoding: gzip
 
 >[!NOTE]
 >
->此请求包含标准有效负荷(请求内容)。
+>此请求包含标准有效负荷（请求内容）。
 
-## Important Considerations {#considerations}
+## 重要注意事项 {#considerations}
 
-### 令牌是密码
+### 令牌是口令
 
-The credentials presented by the partner and the tokens obtained by [!DNL Audience Manager] when authenticating using the [!DNL OAuth 2.0] flow, are sensitive information and must not be shared with third parties.
+合作伙伴提供的凭据以及使用流进行身份验证时 [!DNL Audience Manager] 获得的令牌是敏感 [!DNL OAuth 2.0] 信息，不得与第三方共享。
 
-### [!DNL SSL] is required
+### [!DNL SSL] 必填
 
-[!DNL SSL] 必须用于维护安全身份验证过程。All requests, including the ones used to obtain and use the tokens must use `HTTPS` endpoints.
+[!DNL SSL] 才能维护安全的身份验证过程。 所有请求（包括用于获取和使用令牌的请求）都必须使用端 `HTTPS` 点。
