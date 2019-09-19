@@ -1,9 +1,9 @@
 ---
-description: 描述在初始HTTP调用中使用的语法和参数，以同步Audience Manager与第三方数据提供商之间的用户ID。在尝试第一个ID同步之前，请与您的Adobe Audience Manager顾问联系。
-seo-description: 描述在初始HTTP调用中使用的语法和参数，以同步Audience Manager与第三方数据提供商之间的用户ID。在尝试第一个ID同步之前，请与您的Adobe Audience Manager顾问联系。
-seo-title: 用于出站数据传输的ID同步
+description: 描述初始HTTP调用中用于在Audience manager和第三方数据提供者之间同步用户ID的语法和参数。 在尝试进行第一个ID同步之前，请与Adobe Audience manager顾问联系。
+seo-description: 描述初始HTTP调用中用于在Audience manager和第三方数据提供者之间同步用户ID的语法和参数。 在尝试进行第一个ID同步之前，请与Adobe Audience manager顾问联系。
+seo-title: 出站数据传输的ID同步
 solution: Audience Manager
-title: 用于出站数据传输的ID同步
+title: 出站数据传输的ID同步
 uuid: f3849be8-1094-47db-9296-7482f020af18
 translation-type: tm+mt
 source-git-commit: e206d3a3cba259dc215f2f4190c9b4e03264f080
@@ -11,19 +11,19 @@ source-git-commit: e206d3a3cba259dc215f2f4190c9b4e03264f080
 ---
 
 
-# ID Synchronization for Outbound Data Transfers{#id-synchronization-for-outbound-data-transfers}
+# 出站数据传输的ID同步{#id-synchronization-for-outbound-data-transfers}
 
-Describes the syntax and parameters used in the initial `HTTP` call to synchronize user IDs between Audience Manager and a third-party data provider. 在尝试第一个ID同步之前，请与您的Adobe Audience Manager顾问联系。
+描述初始调用中用于在Audience manager和第 `HTTP` 三方数据提供者之间同步用户ID的语法和参数。 在尝试进行第一个ID同步之前，请与Adobe Audience manager顾问联系。
 
 <!-- c_id_sync_out.xml -->
 
-## ID同步的目的
+## ID同步的用途
 
-ID同步是出站、异步数据传输过程中的第一步。In this step, [!DNL Audience Manager] and the vendor compare and match IDs for their respective site visitors. For example, an [!DNL Audience Manager] customer may know a user by ID 123. 但是，您的数据合作伙伴可以识别此用户ID为456。The synchronization process allows [!DNL Audience Manager] and a data vendor to reconcile these different IDs and identify users in their respective systems. Once complete, [!DNL Audience Manager] and the third-party data provider should have corresponding IDs for each unique user seen on our networks.
+ID同步是出站异步数据传输过程中的第一步。 在此步骤中，供 [!DNL Audience Manager] 应商将比较并匹配其各自站点访客的ID。 例如，客户可 [!DNL Audience Manager] 能通过ID 123了解用户。 但是，您的数据合作伙伴可以识别此ID为456的用户。 同步过程允许和 [!DNL Audience Manager] 数据供应商协调这些不同的ID并识别其各自系统中的用户。 完成后， [!DNL Audience Manager] 第三方数据提供者应为我们网络上看到的每个唯一用户提供相应的ID。
 
 ## URL语法
 
-In an ID exchange, a properly formatted [!DNL URL] string should look like this:
+在ID交换中，格式正确的字 [!DNL URL] 符串应当如下：
 
 ```
 https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT_URL>
@@ -31,7 +31,7 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
 
 ## URL 参数
 
-The [!DNL URL] for your inbound ID synchronization call should contain variables described in the table below.
+入站 [!DNL URL] ID同步调用的变量应包含下表中所述的变量。
 
 >[!NOTE]
 >
@@ -46,32 +46,32 @@ The [!DNL URL] for your inbound ID synchronization call should contain variables
  </thead>
  <tbody> 
   <tr valign="top"> 
-   <td colname="col1"> <code><i>&lt; VADER_ ID&gt;</i></code> </td> 
-   <td colname="col2">Unique ID for the data provider (assigned by <span class="keyword"> Audience Manager</span>). </td> 
+   <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i></code> </td> 
+   <td colname="col2">数据提供者的唯一ID(由 <span class="keyword"> Audience Manager分配</span>)。 </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <code><i>&lt; VADER_ UUID&gt;</i></code> </td> 
+   <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i></code> </td> 
    <td colname="col2"> 唯一用户ID。 </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <code><i>&lt; REDIRECT_ URL&gt;</i></code> </td> 
-   <td colname="col2">An encoded URL redirect with the macro <code> ${DD_UUID}</code> embedded within it. <p><b>注意：</b> 仅在数据提供程序启动调用时添加。 </p> </td> 
+   <td colname="col1"> <code> <i>&lt;REDIRECT_URL&gt;</i></code> </td> 
+   <td colname="col2">嵌入宏 <code> ${DD_UUID}的编码URL重定向</code> 。 <p><b></b> 注意：仅在数据提供者启动调用时添加。 </p> </td> 
   </tr> 
     </tr> 
   <tr> 
-   <td colname="col1"> <code><i>gdpr=&lt;0||&gt;</i></code> </td> 
-   <td colname="col2"> <p><code>gdpr</code> can be0(GDPR does not apply) or1(GDPR apply).</p><p><b>注意：</b> <ul><li><code>gdpr</code> 和 <code>gdpr_同意</code> 参数在ID同步URL与激活合作伙伴之间逐渐推出。See Activation partners that support IAB TCF in <a href="../../overview/aam-gdpr/aam-iab-plugin.md#aam-activation-partners">Audience Manager Plug-in for IAB TCF.</a></li><li>This parameter can only be used together with <code>gdpr_consent.</code></li></ul></p></td>
+   <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i></code> </td> 
+   <td colname="col2"> <p><code>gdpr</code> 可以是0（GDPR不适用）或1（GDPR适用）。</p><p><b>注意：</b> <ul><li>在与 <code>激活合作伙伴的ID同步URL中，</code> gdpr <code>和</code> gdpr_concence参数正在逐步推出。 请参阅在 <a href="../../overview/aam-gdpr/aam-iab-plugin.md#aam-activation-partners">Audience Manager Plug-in for IAB TCF中支持IAB TCF的激活合作伙伴。</a></li><li>此参数只能与 <code>gdpr_connence一起使用。</code></li></ul></p></td>
   </tr> 
     </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <code><i>gdpr_ supagement=&lt; CONDELADE STRING&gt;</i></code> </td> 
-   <td colname="col2"><p><code>gdpr_ supagement</code> 是URL安全基础64编码的GDPR同意字符串(请参阅 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB规范</a>)。</p><p><b>注意：</b> 此参数只能与 <code>gdpr</code>一起使用。</p> </td> 
+   <td colname="col1"> <code><i>gdpr_connection=&lt;ENCODED STRING&gt;</i></code> </td> 
+   <td colname="col2"><p><code>gdpr_connence</code> 是URL安全的基本64编码的GDPR同意字符串(请参阅 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB规范</a>)。</p><p><b></b> 注意：此参数只能与 <code>gdpr一起使用</code>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [数据收集服务器(DCS) API方法和代码](../../api/dcs-intro/dcs-event-calls/dcs-event-calls.md)
+>* [Data Collection Server(DCS)API方法和代码](../../api/dcs-intro/dcs-event-calls/dcs-event-calls.md)
 >* [数据收集组件](../../reference/system-components/components-data-collection.md)
 
