@@ -1,27 +1,27 @@
 ---
-description: 允许您使用目标功能编程工作的方法。
-seo-description: 允许您使用目标功能编程工作的方法。
+description: 允许您以编程方式使用目标功能的方法。
+seo-description: 允许您以编程方式使用目标功能的方法。
 seo-title: 目标API方法
 solution: Audience Manager
 title: 目标API方法
-uuid: 048bcdb9-2b31-46f480b80-4ba06640bb06640
+uuid: 048bcdb9-2b31-46f4-8b80-4ba25bf06640
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Destination API Methods {#destination-api-methods}
+# 目标API方法 {#destination-api-methods}
 
-允许您使用目标功能编程工作的方法。
+允许您以编程方式使用目标功能的方法。
 
 <!-- c_destinations_api.xml -->
 
-In Audience Manager, a destination is any other system (ad server, [!DNL DSP], ad network, exchange, your own first-party cookie, etc.) 您希望与之共享数据的数据。
+在Audience manager中，目标是任何其他系统(广告服务器、广 [!DNL DSP]告网络、交换、您自己的第一方Cookie等)要与之共享数据。
 
-## Destination Types: URL and Cookie {#destination-types}
+## 目标类型：URL和Cookie {#destination-types}
 
-Lists the variables used by the `destinationType` parameter. Specify `push` or `ADS` to work with a [!UICONTROL URL] or [!UICONTROL cookie destination]. You cannot create [!UICONTROL server-to-server destinations] with the available destination [!DNL API] methods.
+列出参数使用的 `destinationType` 变量。 指 `push` 定或 `ADS` 使用或 [!UICONTROL URL] 。 [!UICONTROL cookie destination]不能使用可 [!UICONTROL server-to-server destinations] 用的目标方法进行 [!DNL API] 创建。
 
 <!-- r_destination_types.xml -->
 
@@ -30,7 +30,7 @@ Lists the variables used by the `destinationType` parameter. Specify `push` or `
 | `PUSH` | [!UICONTROL URL] |
 | `ADS` | [!UICONTROL Cookie] |
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [如何选择目标类型](../../../features/destinations/destinations.md)
 
