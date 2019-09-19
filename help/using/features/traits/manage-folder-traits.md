@@ -5,64 +5,64 @@ seo-description: 创建、编辑和删除文件夹特征。
 seo-title: 管理文件夹特征
 solution: Audience Manager
 title: 管理文件夹特征
-uuid: 287ac280-bd58-4985-85bd-b6501 eb64 b7 f
+uuid: 287ac280-bd58-4985-85bd-b6501eb64b7f
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Manage Folder Traits {#manage-folder-traits}
+# 管理文件夹特征 {#manage-folder-traits}
 
 创建、编辑和删除文件夹特征。
 
-## Create a Folder Trait {#create-folder-trait}
+## 创建文件夹特征 {#create-folder-trait}
 
-A [!UICONTROL folder trait] is created automatically when you create a new folder in your taxonomy.
+在分 [!UICONTROL folder trait] 类中创建新文件夹时，会自动创建一个文件夹。
 
 <!-- create-folder-trait.xml -->
 
-1. Go to **[!UICONTROL Audience Data > Traits]** to navigate to the **Traits** dashboard.
-1. [!UICONTROL Trait Storage] 在窗口中，将鼠标悬停在以下位置：
+1. 转到以 **[!UICONTROL Audience Data > Traits]** 导航到“特征” **功能板** 。
+1. 在窗口 [!UICONTROL Trait Storage] 中，将鼠标悬停在：
 
-   * “所有特征”文本添加新的根级别文件夹。
-   * 现有父文件夹，用于添加新的下级文件夹。
+   * “所有特征”文本，用于添加新的根级别文件夹。
+   * 要添加新的从属文件夹的现有父文件夹。
    ![](assets/folder_traits_create.PNG)
 
 1. 单击“+”图标可创建此文件夹。请注意，在分类中最多可创建 2,000 个文件夹。请参阅[使用限制](../../features/administration/usage-limits.md)文档，以了解更多信息。
-1. Name the folder and click **Save**. 例如，名为Electronics的文件夹将有一个名为“Electronics Folder Travical”的文件夹特征。您可以查看并在特征仪表板中选择新文件夹特征。
-1. The new folder trait is automatically assigned to the [!DNL Audience Manager] generated data source. Your users with appropriate [!UICONTROL Role-Based Access Control ([!DNL RBAC])] permissions can change the data source in the edit folder trait workflow. See [Edit a Folder Trait](../../features/traits/manage-folder-traits.md#edit-folder-trait).
+1. 命名文件夹，然后单击“ **保存**”。 例如，名为Electronics的文件夹将具有名为“Electronics文件夹特征”的文件夹特征。 您可以在特征功能板中查看和选择新的文件夹特征。
+1. 新文件夹特征会自动分配给生 [!DNL Audience Manager] 成的数据源。 具有相应[!UICONTROL基于角色的访问控制([!DNL RBAC])]权限的用户可以在编辑文件夹特征工作流中更改数据源。 请参 [阅编辑文件夹特征](../../features/traits/manage-folder-traits.md#edit-folder-trait)。
 
-## Edit a Folder Trait {#edit-folder-trait}
+## 编辑文件夹特征 {#edit-folder-trait}
 
-Describes how you can edit a [!UICONTROL folder trait].
+介绍如何编辑 [!UICONTROL folder trait]。
 
 <!-- edit-folder-trait.xml -->
 
-1. In the [!UICONTROL Traits] dashboard, hover over the **[!UICONTROL Actions]** column for the folder trait you want to edit.
+1. 在功 [!UICONTROL Traits] 能板中，将指针悬 **[!UICONTROL Actions]** 停在要编辑的文件夹特征的列上。
 1. 单击铅笔以编辑特征。
 
    ![](assets/folder_traits_edit_border.png)
 
-1. **[!UICONTROL Edit]** 该工作流允许您更改文件夹特征的数据源。Select your desired data source and click **[!UICONTROL Save]**. Data sources are sorted numerically, by [!DNL DPID], in the drop-down box.
+1. 该工 **[!UICONTROL Edit]** 作流允许您更改文件夹特征的数据源。 选择所需的数据源并单击 **[!UICONTROL Save]**。 数据源在下拉框中按 [!DNL DPID]数字排序。
 
-   If your company uses [!UICONTROL Role-Based Access Rights (RBAC)], you or your users need [access permissions](../../features/traits/about-folder-traits.md#role-based-access-controls) to traits data sources.
+   如果您的公司使 [!UICONTROL Role-Based Access Rights (RBAC)]用特征数据源，您或您的 [用户需要访问](../../features/traits/about-folder-traits.md#role-based-access-controls) 权限。
 
 >[!NOTE]
 >
->您不能直接重命名文件夹特征。[重命名其关联的存储文件夹](../../features/traits/trait-storage.md#rename-delete-trait-storage-folder) ，以更改文件夹特征的名称。
+>不能直接重命名文件夹特征。 [重命名其关联的存储文件夹](../../features/traits/trait-storage.md#rename-delete-trait-storage-folder) ，以更改文件夹特征的名称。
 
-## Delete a Folder Trait {#delete-folder-trait}
+## 删除文件夹特征 {#delete-folder-trait}
 
-删除特征所属的存储文件夹，删除文件夹特征。
+通过删除该特征所属的存储文件夹来删除文件夹特征。
 
 <!-- delete-folder-trait.xml -->
 
-1. **受众数据&gt;特征** 导航到 **特征** 仪表板。
-1. [!UICONTROL Trait Storage] 在窗口中，通过将文件夹悬停在它上方并单击X图标来删除文件夹。
+1. **“受众数据”&gt;“特征** ”，导航到“特 **征** ”仪表板。
+1. 在窗口 [!UICONTROL Trait Storage] 中，通过将鼠标悬停在文件夹上并单击X图标来删除该文件夹。
 
    ![步骤结果](assets/folder_traits_create.PNG)
 
 >[!NOTE]
 >
->如果在区段表达式中使用了文件夹特征，则无法删除文件夹特征。Navigate to the [trait view](../../features/traits/trait-details-page.md) section to see which segments use the folder trait. Then, click on the segment name to open the [segment summary view](../../features/segments/segment-summary-view.md), which allows you to remove traits from segment expressions.
+>如果在段表达式中使用文件夹特征，则不能删除该特征。 导航到特 [征视图](../../features/traits/trait-details-page.md) ，查看哪些区段使用文件夹特征。 然后，单击区段名称以打开区段摘要 [视图](../../features/segments/segment-summary-view.md)，该视图允许您从区段表达式中删除特征。
