@@ -1,11 +1,11 @@
 ---
-description: 批量管理工具允许您通过单一操作同时创建和管理多个对象。您可以使用批量管理工具处理数据源、派生信号、目标、文件夹、细分和特征。
-keywords: Baaam；巴哈马群岛
-seo-description: 批量管理工具允许您通过单一操作同时创建和管理多个对象。您可以使用批量管理工具处理数据源、派生信号、目标、文件夹、细分和特征。
-seo-title: 批量管理入门
+description: 使用批量管理工具，您可以通过单个操作同时创建和管理多个对象。 您可以使用批量管理工具处理数据源、派生信号、目标、文件夹、区段和特征。
+keywords: baam;BAAAM
+seo-description: 使用批量管理工具，您可以通过单个操作同时创建和管理多个对象。 您可以使用批量管理工具处理数据源、派生信号、目标、文件夹、区段和特征。
+seo-title: 批量管理快速入门
 solution: Audience Manager
-title: 批量管理入门
-uuid: 4bc6ae0a-315c-4ce7-a68 e-cc0 c6 c6 aa2 f1
+title: 批量管理快速入门
+uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
 source-git-commit: 215054718e9248bd44ba99baeb2a10236701d98e
 
@@ -14,7 +14,7 @@ source-git-commit: 215054718e9248bd44ba99baeb2a10236701d98e
 
 # Getting Started With Bulk Management{#getting-started-with-bulk-management}
 
-批量管理工具允许您通过单一操作同时创建和管理多个对象。您可以使用批量管理工具处理数据源、派生信号、目标、文件夹、细分和特征。
+使用批量管理工具，您可以通过单个操作同时创建和管理多个对象。 您可以使用批量管理工具处理数据源、派生信号、目标、文件夹、区段和特征。
 
 <!-- 
 
@@ -24,35 +24,35 @@ c_bulk_start.xml
 
 >[!NOTE]
 >
->The [!UICONTROL Bulk Management Tools] *are not* supported by [!DNL Audience Manager]. 此工具仅为方便起见而提供，并且仅作为好意提供。For bulk changes, we recommend that you work with the [Audience Manager APIs](../../api/rest-api-main/aam-api-getting-started.md) instead. [在UI中](../../features/administration/administration-overview.md) 分配的CLUAC组权限在 [!DNL Audience Manager] 此中受支持 [!UICONTROL Bulk Management Tools]。
+>不 [!UICONTROL Bulk Management Tools] 支持 *。*[!DNL Audience Manager]此工具仅出于方便和礼貌而提供。 对于批量更改，我们建议您改用 [Audience Manager API](../../api/rest-api-main/aam-api-getting-started.md) 。 [在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
 
 ## 概述 {#overview}
 
-This feature uses a Microsoft Excel spreadsheet with macros that make secure, authenticated calls to the [!DNL Audience Manager] APIs. API提供可批量更改的方法和服务。您无需知道如何编写代码或使用API来使用它。工作表包含执行特定批量更改功能的列标题和选项卡。要进行批量更改，只需将预定义的标题添加到特定工作表，提供要批量更改的信息，然后单击操作按钮。工作表和API为您完成其余工作。
+此功能使用带有宏的Microsoft excel电子表格，这些宏对API进行安全、经过身份验证的 [!DNL Audience Manager] 调用。 API提供了允许您批量更改的方法和服务。 您不必知道如何编写代码或使用我们的API来使用它。 工作表包含执行特定批量更改功能的列标题和选项卡。 要进行批量更改，您只需将预定义的标题添加到特定工作表，提供要批量更改的信息，然后单击操作按钮。 工作表和API将帮您完成其余的工作。
 
 ## 下载 {#download}
 
-Download the latest worksheet **[here](assets/BAAAM_August_2018.xlsm)**.
+在此处下载最新的 **[工作表](assets/BAAAM_August_2018.xlsm)**。
 
 ## 先决条件 {#prereqs}
 
-To use the [!DNL Bulk Management Tools], you need the following:
+要使用 [!DNL Bulk Management Tools]，您需要：
 
-* Your [!DNL Audience Manager] user name and password. 作为客户，您应该已经拥有这些凭据。
-* API客户端ID和密钥。您的客户经理可以为您提供这些内容。
-* [!UICONTROL Bulk Management Tools] 工作表。[下载工作表](/help/using/reference/bulk-management-tools/bulk-management-intro.md#download) 以获取最新版本。
+* 您的 [!DNL Audience Manager] 用户名和密码。 作为客户，您应该已经拥有这些凭据。
+* API客户端ID和密钥。 您的客户经理可以为您提供这些。
+* 工作 [!UICONTROL Bulk Management Tools] 表。 [下载工作表](/help/using/reference/bulk-management-tools/bulk-management-intro.md#download) ，获取最新版本。
 
-* Microsoft Excel running on [!DNL Windows] or in a [!DNL Microsoft Windows] virtual machine running on [!DNL macOS X]. You must use 32-bit Excel for the [!UICONTROL Bulk Management Tools] to work.
+* 运行于或运行 [!DNL Windows] 于的虚拟 [!DNL Microsoft Windows] 机中的Microsoft Excel [!DNL macOS X]。 要使用32位Excel，您 [!UICONTROL Bulk Management Tools] 必须。
 
-## Actions and operations {#actions-ops}
+## 操作和操作 {#actions-ops}
 
-[!UICONTROL Bulk Management Tools] 工作表包含操作选项卡、操作按钮和 **[!UICONTROL Headers]** 选项卡。**[!UICONTROL Headers]** 选项卡包含操作选项卡使用的预格式化列标题。操作选项卡包含执行选定批量操作的宏。要执行批量操作，请将一组标题复制到相应的操作选项卡中，输入标题数据，然后单击操作按钮。
+工作 [!UICONTROL Bulk Management Tools] 表由操作选项卡、操作按钮和选项卡组 **[!UICONTROL Headers]** 成。 该选 **[!UICONTROL Headers]** 项卡包含操作选项卡使用的预格式化列标题。 操作选项卡包含执行所选批量操作的宏。 要执行批量操作，请将一组标题复制到相应的操作选项卡中，输入标题数据，然后单击操作按钮。
 
-打开电子表格并单击操作按钮以开始。
+打开电子表格，然后单击操作按钮以开始。
 
 ![](assets/bamwrkbk.png)
 
-The table below lists the operations you can perform and items you can manipulate with the [!UICONTROL Bulk Management Tools] worksheets.
+下表列出了您可以执行的操作以及可以使用工作表处理的 [!UICONTROL Bulk Management Tools] 项目。
 
 <table id="table_B9B3E09B692E42BAA52FB32C18B00709"> 
  <thead> 
@@ -68,10 +68,10 @@ The table below lists the operations you can perform and items you can manipulat
       <li id="li_193C41EA19EF4D738FBA037D2BF9B05C">请求 </li> 
       <li id="li_5BE2E13D839F4958AAA5C01B7EFC5096">更新 </li> 
       <li id="li_4CCCC739795945DF8C89787F9A67EB88">创建 </li> 
-      <li id="li_C7D36D2BDF0448CEAF3A5EABE41038E8">估值 </li> 
+      <li id="li_C7D36D2BDF0448CEAF3A5EABE41038E8">估计 </li> 
       <li id="li_07A3E94326124A3092362D9896EB7732">删除 </li> 
      </ul> </p> </td> 
-   <td colname="col2"> <p>The objects you can change in bulk are located under the <b><span class="uicontrol"> Headers</span></b> tab and include: </p> <p> 
+   <td colname="col2"> <p>您可以批量更改的对象位于“标题”选 <b><span class="uicontrol"> 项卡下</span></b> ，包括： </p> <p> 
      <ul id="ul_A7A96F2B1B63430B9A1E1184AC5FA8F2"> 
       <li id="li_E3D9E2E190B04BE685337AC6140C371C"> <a href="../../features/datasources-list-and-settings.md#data-sources-list-and-settings"> 数据源</a> </li> 
       <li id="li_B645385E40684FA28770913EAF18CB2C"> <a href="../../features/derived-signals.md"> 派生信号</a> </li> 
@@ -86,20 +86,20 @@ The table below lists the operations you can perform and items you can manipulat
 
 **批量操作示例**
 
-作为示例，我们来看一下如何一次创建多个特征。要在批量操作中创建多个特征，您需要：
+例如，我们来看一下如何同时创建多个特征。 要在批量操作中创建多个特征，您需要：
 
-1. Click the **[!UICONTROL Headers]** tab and copy all the labels under the [!UICONTROL Create a Trait] option.
+1. 单击选 **[!UICONTROL Headers]** 项卡并复制选项下的所有 [!UICONTROL Create a Trait] 标签。
 
-2. Click the **[!UICONTROL Create]** tab and paste the labels starting in row 1, column A.
-3. Provide information related to each column header and click **[!UICONTROL Create Traits]**. 此操作提示您登录。Your bulk job runs after you successfully authenticate (see the [authentication requirements](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) below). 检查工作表左下角以获取作业状态通知。
+2. 单击选 **[!UICONTROL Create]** 项卡并粘贴从第1行A列开始的标签。
+3. 提供与每个列标题相关的信息，然后单击 **[!UICONTROL Create Traits]**。 此操作会提示您登录。 成功验证后，将运行批量作业(请参阅 [以下验证要求](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) )。 检查工作表的左下角以获得任务状态通知。
 
 >[!NOTE]
 >
->处理大请求时，工作表可能会变得无响应，并且似乎不活动。在这些情况下，只需保留它。批量请求完成后，工作表将变为响应式。If the worksheet does not respond for a long period of time, see the [troubleshooting section](../../reference/bulk-management-tools/bulk-troubleshooting.md).
+>处理大请求时，工作表可能会变得无响应，并显示为非活动状态。 在这些情况下，别管它。 完成批量请求后，工作表将变为响应式工作表。 如果工作表长时间没有响应，请参阅疑难解答 [部分](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
 
-## Authentication requirements and options {#auth-reqs}
+## 身份验证要求和选项 {#auth-reqs}
 
-批量更改需要身份验证。当您选择某个操作时，工作表会提示您登录。由于工作表进行了API调用，因此您需要对其进行配置以读取密钥。And, the **[!UICONTROL Domain]** field lets you make bulk changes in a staging/test environment or against your live, production account.
+批量更改需要身份验证。 选择操作时，工作表会提示您登录。 由于工作表发出API调用，您需要将其配置为读取密钥。 此外，该字 **[!UICONTROL Domain]** 段还允许您在分阶段／测试环境中或针对您的实时生产帐户进行批量更改。
 
 ![](assets/bamauth.png)
 
@@ -107,20 +107,20 @@ The table below lists the operations you can perform and items you can manipulat
 
 要设置API身份验证，您必须：
 
-* 复制机密密钥并将其保存到文本(.txt)文件。
-* 使用您的API客户端ID命名文本文件。例如，如果客户端ID为“Bulk-User”，则将密钥保存在标题为“Bulk-User. txt”的文件中。
-* 将密钥和工作表一起保存到同一文件夹中。
+* 将密钥复制并保存到文本(.txt)文件中。
+* 使用您的API客户端ID命名文本文件。 例如，如果您的客户端ID是“Bulk-User”，则将密钥保存在标题为“Bulk-User.txt”的文件中。
+* 将密钥和工作表保存在同一文件夹中。
 
-进行批量更改时，您仍必须输入用户名、口令、客户端ID和域，但API身份验证是自动完成的。
+进行批量更改时，您仍必须输入用户名、密码、客户端ID和域，但API身份验证是自动的。
 
 **域身份验证选项**
 
-域身份验证可让您选择测试批量请求，或将其直接应用于生产帐户。对测试环境进行批量更改不会影响生产帐户。制作更改立即生效。**[!UICONTROL Domain]** 该字段接受以下地址，具体取决于您要处理的环境：
+域身份验证允许您测试批量请求或将它们直接应用到您的生产帐户。 对测试环境进行批量更改不会影响您的生产帐户。 生产更改会立即生效。 字 **[!UICONTROL Domain]** 段接受以下地址，具体取决于您要处理的环境：
 
 * 测试: `api-beta.demdex.com`
 * 生产: `api.demdex.com`
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [下载批量管理工作表](assets/BAAAM_August_2018.xlsm)
 
