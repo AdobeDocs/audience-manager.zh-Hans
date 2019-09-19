@@ -1,29 +1,29 @@
 ---
-description: 允许您查看Audience Manager常用分类的方法。此可选分类方案将特征组织到行业标准类别中。
-seo-description: 允许您查看Audience Manager常用分类的方法。此可选分类方案将特征组织到行业标准类别中。
+description: 用于查看Audience Manager常见分类的方法。 此可选分类方案将特征组织到行业标准类别中。
+seo-description: 用于查看Audience Manager常见分类的方法。 此可选分类方案将特征组织到行业标准类别中。
 seo-title: 分类API方法
 solution: Audience Manager
 title: 分类API方法
-uuid: 4ee29ba5-e9 ba-4498-a6 ee-7343227dd7 ba
+uuid: 4ee29ba5-e9ba-4498-a6ee-7343227dd7ba
 translation-type: tm+mt
 source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 ---
 
 
-# Taxonomic API Methods {#taxonomic-api-methods}
+# 分类API方法 {#taxonomic-api-methods}
 
-允许您查看Audience Manager常用分类的方法。此可选分类方案将特征组织到行业标准类别中。
+用于查看Audience Manager常见分类的方法。 此可选分类方案将特征组织到行业标准类别中。
 
 <!-- c_rest_api_taxonomy.xml -->
 
 >[!NOTE]
 >
->您无法创建新分类类别或使用这些方法对特征分类。To classify a trait, specify the appropriate `categoryId` with a trait create or update method.
+>您不能使用这些方法创建新的分类类别或分类特征。 要对特征进行分类，请使用特征创 `categoryId` 建或更新方法指定相应的特征。
 
-## Return a Specific Taxonomy {#return-specific-taxonomy}
+## 返回特定分类 {#return-specific-taxonomy}
 
-A `GET` method that returns details about the specified taxonomic category.
+返回 `GET` 有关指定分类类别的详细信息的方法。
 
 <!-- r_rest_api_taxonomy.xml -->
 
@@ -33,7 +33,7 @@ A `GET` method that returns details about the specified taxonomic category.
 
 ### 响应
 
-A successful response returns `200 OK` and the category for the specified ID. `404 No Content` 如果ID不存在，则返回失败的请求。
+成功的响应 `200 OK` 将返回指定ID的类别。 如果ID不存 `404 No Content` 在，则返回不成功的请求。
 
 ```
 {
@@ -46,9 +46,9 @@ A successful response returns `200 OK` and the category for the specified ID. `4
 }
 ```
 
-## Return all Taxonomic Categories {#return-all-taxonomy-categories}
+## 返回所有分类类别 {#return-all-taxonomy-categories}
 
-A `GET` method that returns a list of the top-level categories in an array.
+一 `GET` 种返回数组中顶级类别列表的方法。
 
 <!-- r_rest_api_taxonomies.xml -->
 
@@ -58,7 +58,7 @@ A `GET` method that returns a list of the top-level categories in an array.
 
 ### 响应
 
-简捷地截断。
+短时间截断。
 
 ```
 [
@@ -89,9 +89,9 @@ A `GET` method that returns a list of the top-level categories in an array.
 ]
 ```
 
-## Return Taxonomic Sub-Categories {#return-taxonomy-sub-categories}
+## 返回分类子类别 {#return-taxonomy-sub-categories}
 
-A `GET` method that returns sub-categories for the specified parent category in an array.
+一种 `GET` 为数组中指定的父类别返回子类别的方法。
 
 <!-- r_rest_api_taxonomy_sub.xml -->
 
@@ -101,7 +101,7 @@ A `GET` method that returns sub-categories for the specified parent category in 
 
 ### 响应
 
-A successful response returns `200 OK` and the category for the specified ID. `404 No Content` 如果ID不存在，则返回失败的请求。简捷地截断。
+成功的响应 `200 OK` 将返回指定ID的类别。 如果ID不存 `404 No Content` 在，则返回不成功的请求。 短时间截断。
 
 ```
 [
