@@ -1,74 +1,74 @@
 ---
-description: 介绍允许您在Model Builder中创建算法模型的必需和可选步骤。
-keywords: algo如何工作
-seo-description: 介绍允许您在Model Builder中创建算法模型的必需和可选步骤。
+description: 描述在Model Builder中创建算法模型的必需和可选步骤。
+keywords: algo how work
+seo-description: 描述在Model Builder中创建算法模型的必需和可选步骤。
 seo-title: 创建算法模型
 solution: Audience Manager
 title: 创建算法模型
 topic: DIL API
-uuid: cff4fc4e-cf92-445f-b2 d9-71c3 ca624 e26
+uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Create an Algorithmic Model {#create-an-algorithmic-model}
+# 创建算法模型 {#create-an-algorithmic-model}
 
-Describes the required and optional steps that let you create an algorithmic model in [!UICONTROL Model Builder].
+介绍在中创建算法模型所需的和可选的步骤 [!UICONTROL Model Builder]。
 
-## Build a Model {#build-model}
+## 构建模型 {#build-model}
 
 <!-- t_model_build.xml -->
 
 ### Model Builder部分
 
-[!UICONTROL Model Builder] 由 [!UICONTROL Basic Information] 和 [!UICONTROL Configuration] 部分组成。要创建模型，请完成这两个部分中的必填字段。保存模型以启动算法。[!DNL Audience Manager] 在第一个数据运行完成后向您发送一个自动通知。After you receive the email, you can go to [Trait Builder](../../features/traits/about-trait-builder.md) and create algorithmic traits.
+[!UICONTROL Model Builder] 由部分和 [!UICONTROL Basic Information] 部分组 [!UICONTROL Configuration] 成。 要创建模型，请完成这两个部分中的必填字段。 保存模型以启动算法。 [!DNL Audience Manager] 在第一次数据运行完成后，向您发送自动通知。 收到电子邮件后，您可以转到 [Trait Builder](../../features/traits/about-trait-builder.md) ，创建算法特征。
 
 >[!NOTE]
 >
->* 在创建模型时，建模过程只运行一次，但不会创建任何特征。
->* 从包含有意义信息的数据源构建模型。数据不足的模型将运行，但不会返回结果。
->* *请勿* 使用其他算法特征或区段创建模型。
->* 自动电子邮件通知仅发送一次(在第一个数据运行之后)。
+>* 如果您创建了模型，但不使用该模型构建任何特征，则建模过程只运行一次。
+>* 从包含大量信息的数据源构建模型。 数据不足的模型将运行，但不会返回结果。
+>* *不要使用* 其他算法特征或细分创建模型。
+>* 自动电子邮件通知仅发送一次（在第一次数据运行后）。
 
 
 ### 构建模型
 
-To build a model, go to the [!UICONTROL Models] section and click **[!UICONTROL Add New]** and follow the steps below:
+要构建模型，请转到该部分， [!UICONTROL Models] 单击并 **[!UICONTROL Add New]** 按照以下步骤操作：
 
-1. In the [Basic Information](../../features/algorithmic-models/create-model.md#basic-information) section
+1. 在“基 [本信息](../../features/algorithmic-models/create-model.md#basic-information) ”部分
    * 命名模型。
-   * *(可选)* 提供有关模型的简短说明。
-   * Set the status for the model to **[!UICONTROL Active]** or **[!UICONTROL Inactive]**. 不活动的模型将不会运行，并且不会生成任何数据。
-1. In the [Configuration](../../features/algorithmic-models/create-model.md#configuration) section:
-   * Click **[!UICONTROL Browse All Traits]** or **[!UICONTROL Browse All Segments]** to select a trait or segment you want to model against. 选择一个载入的特征、一个基于规则的特征或一个区段作为基准。否则，您的模型将不会运行。
-   * 选择30、60或90天回顾期。这将设置模型的时间范围。
-   * [!UICONTROL TraitWeight] 默认情况下，此算法处于选中状态。
-   * Select a data source from the [!UICONTROL Available Data] list.
+   * *（可选）* ，提供有关模型的简要说明。
+   * 将模型的状态设置为 **[!UICONTROL Active]** 或 **[!UICONTROL Inactive]**。 不活动的模型将不运行，也不会生成任何数据。
+1. 在“配 [置](../../features/algorithmic-models/create-model.md#configuration) ”部分：
+   * 单 **[!UICONTROL Browse All Traits]** 击或 **[!UICONTROL Browse All Segments]** 以选择要建模的特征或区段。 选择已载入的特征、基于规则的特征或段作为基线。 否则，您的型号将不运行。
+   * 选择30天、60天或90天回顾期。 这为模型设置时间范围。
+   * 默认 [!UICONTROL TraitWeight] 情况下选择算法。
+   * 从列表中选择一个数 [!UICONTROL Available Data] 据源。
    * Click **[!UICONTROL Save]** when done.
 
-## Basic Information for Algorithmic Models {#basic-information}
+## 算法模型的基本信息 {#basic-information}
 
 <!-- r_model_basic.xml -->
 
-In [!UICONTROL Model Builder], the [!UICONTROL Basic Information] settings let you create new or edit existing models. To create a new model, provide a name and move on to the [!UICONTROL Configuration] settings. 描述字段为可选字段。
+在中， [!UICONTROL Model Builder]通过 [!UICONTROL Basic Information] 这些设置可以创建新模型或编辑现有模型。 要创建新模型，请提供名称并转到设 [!UICONTROL Configuration] 置。 描述字段为可选字段。
 
 | 字段 | 描述 |
 |---|---|
-| **[!UICONTROL Name]** | 为您的模型提供一个简短的逻辑名称，用于描述其函数或目的。避免缩写、特殊字符和重音符号。 |
-| **[!UICONTROL Description]** | 有关该模型的其他描述性信息的字段。 |
-| **[!UICONTROL Status]** | 激活或取消激活模型(默认情况下处于活动状态)。 |
+| **[!UICONTROL Name]** | 为模型提供一个描述其功能或用途的简短逻辑名称。 避免缩写、特殊字符和重音标记。 |
+| **[!UICONTROL Description]** | 有关模型的其他描述性信息的字段。 |
+| **[!UICONTROL Status]** | 激活或取消激活模型（默认情况下处于活动状态）。 |
 
 ## 配置 {#configuration}
 
-In [!UICONTROL Model Builder], the [!UICONTROL Configuration] section lets you add traits or segments to the model. 在此部分中，从您的第一方和第三方数据源中选择基准特征或区段、回顾期和数据。
+在中 [!UICONTROL Model Builder]，该部 [!UICONTROL Configuration] 分允许您向模型添加特征或区段。 在本节中，选择基线特征或区段、回顾期以及来自第一方和第三方数据源的数据。
 
 <!-- r_model_configuration.xml -->
 
 ### 先决条件
 
-Complete the required fields in the [!UICONTROL Basic Information] section first.
+首先填写部分中的 [!UICONTROL Basic Information] 必填字段。
 
 ![](assets/lam_exclude_traits_numbered.png)
 
@@ -82,28 +82,28 @@ Complete the required fields in the [!UICONTROL Basic Information] section first
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>选择基线特征或区段(1)</b> </p> </td> 
-   <td colname="col2"> <p>单击特征或区段按钮可查看所有特征或区段的列表。选定的区段或特征将成为系统算法用于建模的基线。 </p> <p> <p><b>注意</b>：选择一个载入的特征、一个基于规则的特征或一个区段作为基准。否则，您的模型将不会运行。 </p> </p> </td> 
+   <td colname="col2"> <p>单击特征或区段按钮可查看所有特征或区段的列表。 所选段或特征将成为系统算法用于建模的基线。 </p> <p> <p><b>注意</b>: 选择已载入的特征、基于规则的特征或段作为基线。 否则，您的型号将不运行。 </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>选择回顾期间(2)</b> </p> </td> 
-   <td colname="col2"> <p>设置模型的时间范围。根据您的选择，算法包括并评估前30、60或90天的数据。 </p> </td> 
+   <td colname="col1"> <p><b>选择回顾期(2)</b> </p> </td> 
+   <td colname="col2"> <p>设置模型的时间范围。 根据您的选择，该算法包括并评估前30、60或90天的数据。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>选择算法(3)</b> </p> </td> 
-   <td colname="col2"> <p>At this time, Model Builder works with our proprietary <span class="keyword"> Trait Weight</span> algorithm only. <span class="keyword"> Audience Manager</span> 可能在后续发行版中添加其他算法函数。 </p> </td>
+   <td colname="col2"> <p>此时，Model builder仅与我们专有的“特征权重” <span class="keyword"> 算法配合</span> 。 <span class="keyword"> Audience Manager可能会在后续版本中添加其他算法功能。</span> </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>从数据源中选择模型数据(4)</b> </p> </td> 
    <td colname="col2"> <p>允许您选择要在模型中使用的第一方和第三方数据源。 </p> </td>
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>Exclusions(5)</b> </p> </td> 
-   <td colname="col2"> <p>您可以排除您选择用于建模的数据源的特征。Use the <span class="wintitle"> Exclusions</span> list and read <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> Algorithmic Models: Trait Exclusion</a> to learn more. </p> </td>
+   <td colname="col1"> <p><b>排除(5)</b> </p> </td> 
+   <td colname="col2"> <p>您可以从为建模选择的数据源中排除特征。 使用“ <span class="wintitle"> 排除</span> ”列表并阅读“算法 <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> 模型：特征排除</a> ，了解更多信息。 </p> </td>
   </tr> 
  </tbody>
 </table>
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [了解Tritweight](../../features/algorithmic-models/understanding-models.md#understanding-traitweight)
+>* [了解TraitWeight](../../features/algorithmic-models/understanding-models.md#understanding-traitweight)
 
