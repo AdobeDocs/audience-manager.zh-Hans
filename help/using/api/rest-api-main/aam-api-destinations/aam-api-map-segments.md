@@ -4,33 +4,33 @@ seo-description: 使用这些RESTful API方法将区段映射到目标。
 seo-title: 将区段映射到目标
 solution: Audience Manager
 title: 将区段映射到目标
-uuid: 35358ace-3082-4e86-a6 eb-d77281 af6 d7 e
+uuid: 35358ace-3082-4e86-a6eb-d77281af6d7e
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
 
 ---
 
 
-# Map Segments to a Destination {#map-segments-to-a-destination}
+# 将区段映射到目标 {#map-segments-to-a-destination}
 
-Map segments to destinations with these [!DNL RESTful API] methods.
+使用这些方法将区段映射到 [!DNL RESTful API] 目标。
 
 <!-- c_api_map_seg_dest.xml -->
 
 ## 支持的目标类型：仅URL和Cookie
 
-The available `POST` methods let you map segments to [!UICONTROL URL] and [!UICONTROL cookie destinations] only. Currently, you cannot map segments to [!UICONTROL server-to-server destinations] with these [!DNL REST API] methods. 请改用用户界面。However, the related destination `GET` methods let you retrieve information about [!UICONTROL server-to-server destinations] created in the user interface.
+使用可 `POST` 用的方法，您可以将区段映射到 [!UICONTROL URL] 和仅 [!UICONTROL cookie destinations] 映射。 目前，您无法使用这些方法将区 [!UICONTROL server-to-server destinations] 段映射到 [!DNL REST API] 区段。 请改用用户界面。 但是，相关的目标方 `GET` 法允许您检索有关在用户 [!UICONTROL server-to-server destinations] 界面中创建的信息。
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [目标](../../../features/destinations/destinations.md#destination-api-methods)
+>* [目标](../../../features/destinations/destinations.md)
 >* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [键值对解释](../../../reference/key-value-pairs-explained.md)
+>* [说明的键值对](../../../reference/key-value-pairs-explained.md)
 
 
-## Map a Segment to a Non-Serialized URL Destination {#map-segment-non-serial}
+## 将区段映射到无序列化URL目标 {#map-segment-non-serial}
 
-A `POST` method that lets you map a segment to a non-serial [!UICONTROL URL] destination.
+一 `POST` 种方法，可让您将区段映射到非串行目 [!UICONTROL URL] 标。
 
 <!-- r_map_noserial_url.xml -->
 
@@ -40,7 +40,7 @@ A `POST` method that lets you map a segment to a non-serial [!UICONTROL URL] des
 
 ### 示例请求
 
-除非另外指明，否则所有请求值都是必需的。
+除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -78,9 +78,9 @@ A `POST` method that lets you map a segment to a non-serial [!UICONTROL URL] des
 }
 ```
 
-## Map a Segment to a Serialized URL Destination {#map-segment-serial}
+## 将区段映射到序列化URL目标 {#map-segment-serial}
 
-A `POST` method that lets you map a segment to a serialized [!UICONTROL URL] destination.
+一种 `POST` 方法，可让您将区段映射到序列化目 [!UICONTROL URL] 标。
 
 <!-- r_map_serialized_url.xml -->
 
@@ -90,7 +90,7 @@ A `POST` method that lets you map a segment to a serialized [!UICONTROL URL] des
 
 ### 示例请求
 
-In the request, the `traitAlias` corresponds to the key in a key-value pair. 除非另外指明，否则所有请求值都是必需的。
+在请求中，该 `traitAlias` 键对应于键值对中的键。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -128,9 +128,9 @@ In the request, the `traitAlias` corresponds to the key in a key-value pair. 除
 }
 ```
 
-## Map a Segment to a Cookie Destination: Single-Key, Non-Serialized {#map-segment-cookie-noserial}
+## 将区段映射到Cookie目标：单键、无序列号 {#map-segment-cookie-noserial}
 
-A `POST` method that lets you map a segment to single-key, non-serialized [!UICONTROL cookie] destination.
+一种 `POST` 方法，可让您将区段映射到单键、无序列化目 [!UICONTROL cookie] 标。
 
 <!-- r_map_cookie_noserial.xml -->
 
@@ -140,7 +140,7 @@ A `POST` method that lets you map a segment to single-key, non-serialized [!UICO
 
 ### 示例请求
 
-In the request, the `valueAlias` corresponds to the value in a key-value pair. 除非另外指明，否则所有请求值都是必需的。
+在请求中，该 `valueAlias` 值与键值对中的值相对应。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -175,9 +175,9 @@ In the request, the `valueAlias` corresponds to the value in a key-value pair. �
 }
 ```
 
-## Map a Segment to a Cookie Destination: Multi-Key, Non-Serialized {#map-segment-cookie-multi-noserial}
+## 将区段映射到Cookie目标：多密钥、无序列号 {#map-segment-cookie-multi-noserial}
 
-A `POST` method that lets you map a segment to multi-key, non-serialized [!UICONTROL cookie] destination.
+一种 `POST` 方法，可让您将区段映射到多键、无序列化目 [!UICONTROL cookie] 标。
 
 <!-- r_map_cookie_multikey_noserial.xml -->
 
@@ -187,7 +187,7 @@ A `POST` method that lets you map a segment to multi-key, non-serialized [!UICON
 
 ### 示例请求
 
-In the request, the `traitAlias` and `valueAlias` set the key and the value respectively in a key-value pair. 除非另外指明，否则所有请求值都是必需的。
+在请求中， `traitAlias` 键 `valueAlias` 值对中分别设置键和值。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -223,9 +223,9 @@ In the request, the `traitAlias` and `valueAlias` set the key and the value resp
 }
 ```
 
-## Map a Segment to a Cookie Destination: Multi-Key, Serialized {#map-segment-cookie-multi-serial}
+## 将区段映射到Cookie目标：多键、序列化 {#map-segment-cookie-multi-serial}
 
-A `POST` method that lets you map a segment to a multi-key, serialized [!UICONTROL cookie destination].
+一种 `POST` 方法，可让您将区段映射到多键序列化 [!UICONTROL cookie destination]。
 
 <!-- r_map_cookie_multikey_serialized.xml -->
 
@@ -235,7 +235,7 @@ A `POST` method that lets you map a segment to a multi-key, serialized [!UICONTR
 
 ### 示例请求
 
-In the request, the `traitAlias` and `valueAlias` set the key and the value in a key-value pair. 除非另外指明，否则所有请求值都是必需的。
+在请求中， `traitAlias` 并 `valueAlias` 在键值对中设置键和值。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -271,9 +271,9 @@ In the request, the `traitAlias` and `valueAlias` set the key and the value in a
 }
 ```
 
-## Map a Segment to a Server-to-Server Destination {#map-segment-s2s}
+## 将区段映射到服务器到服务器目标 {#map-segment-s2s}
 
-`POST` 允许您将区段映射到现有 [!UICONTROL server-to-server] 目标的方法。Note, however, that you cannot create [!UICONTROL server-to-server] destinations with these currently available [!DNL API] methods.
+一种 `POST` 方法，可让您将区段映射到现有目 [!UICONTROL server-to-server] 标。 但是，请注意，您不能使用这些当 [!UICONTROL server-to-server] 前可用的方法创建目 [!DNL API] 标。
 
 <!-- r_map_segment_s2s.xml -->
 
@@ -283,7 +283,7 @@ In the request, the `traitAlias` and `valueAlias` set the key and the value in a
 
 ### 示例请求
 
-In the request, the `traitAlias` corresponds to the key in a key-value pair. 除非另外指明，否则所有请求值都是必需的。
+在请求中，该 `traitAlias` 键对应于键值对中的键。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -317,9 +317,9 @@ In the request, the `traitAlias` corresponds to the key in a key-value pair. 除
 }
 ```
 
-## Bulk Create Destination Mappings {#bulk-create}
+## 批量创建目标映射 {#bulk-create}
 
-A `POST` method that lets you pass in an array of [!UICONTROL cookie] or [!UICONTROL URL] destination mappings.
+一 `POST` 种方法，它允许您传入一组或目标 [!UICONTROL cookie] 映射 [!UICONTROL URL] 。
 
 <!-- r_bulk_create.xml -->
 
@@ -329,7 +329,7 @@ A `POST` method that lets you pass in an array of [!UICONTROL cookie] or [!UICON
 
 ### 示例请求
 
-除非另外指明，否则所有请求值都是必需的。
+除非另有指明，否则所有请求值都是必需的。
 
 ```
 [
@@ -350,7 +350,7 @@ A `POST` method that lets you pass in an array of [!UICONTROL cookie] or [!UICON
 
 ### 响应
 
-成功的响应将返回创建的映射数组。
+成功的响应会返回已创建映射的数组。
 
 ```
 [
@@ -401,9 +401,9 @@ A `POST` method that lets you pass in an array of [!UICONTROL cookie] or [!UICON
 ]
 ```
 
-## Add Multiple Segments to a Destination {#add-segments-dest}
+## 将多个区段添加到目标 {#add-segments-dest}
 
-A `POST` method that lets you map multiple segments to a destination.
+一种 `POST` 方法，可让您将多个区段映射到目标。
 
 <!-- r_add_segments_to_destination.xml -->
 
@@ -413,7 +413,7 @@ A `POST` method that lets you map multiple segments to a destination.
 
 ### 示例请求
 
-在数组中创建多个目标映射。除非另外指明，否则所有请求值都是必需的。
+在数组中创建多个目标映射。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 [
@@ -434,7 +434,7 @@ A `POST` method that lets you map multiple segments to a destination.
 
 ### 响应
 
-返回创建的映射数组。
+返回已创建映射的数组。
 
 ```
 [
@@ -485,9 +485,9 @@ A `POST` method that lets you map multiple segments to a destination.
 ]
 ```
 
-## Update a Destination by Destination ID {#update-dest-data-order}
+## 按目标ID更新目标 {#update-dest-data-order}
 
-A `PUT` method that lets you update an existing destination by `destinationId`.
+一种 `PUT` 允许您通过更新现有目标的方法 `destinationId`。
 
 <!-- r_update_destination_data_order_id.xml -->
 
@@ -497,7 +497,7 @@ A `PUT` method that lets you update an existing destination by `destinationId`.
 
 ### 示例请求
 
-除非另外指明，否则所有请求值都是必需的。
+除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -535,9 +535,9 @@ A `PUT` method that lets you update an existing destination by `destinationId`.
 }
 ```
 
-## Update a Mapping to a Destination by Mapping ID {#update-mapping-dest-id}
+## 通过映射ID更新映射到目标 {#update-mapping-dest-id}
 
-A `PUT` method that lets you update a mapping to a destination by the specified `mappingId`.
+一 `PUT` 种方法，它允许您按指定更新到目标的映射 `mappingId`。
 
 <!-- r_update_destination_trait_data_order_id.xml -->
 
@@ -547,7 +547,7 @@ A `PUT` method that lets you update a mapping to a destination by the specified 
 
 ### 示例请求
 
-除非另外指明，否则所有请求值都是必需的。
+除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
