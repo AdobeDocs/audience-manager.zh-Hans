@@ -1,37 +1,37 @@
 ---
-description: 了解Audience Manager过去天接收到的未使用信号，找出潜在的新特征。未使用的信号从您的在线资产到达Audience Manager，但不会用于您的任何现有特征。要查看信号控制板，请转到“受众数据”>“信号”。信号控制板可根据最活跃的未使用信号为您提供切实可行的洞察。
-seo-description: 了解Audience Manager过去天接收到的未使用信号，找出潜在的新特征。未使用的信号从您的在线资产到达Audience Manager，但不会用于您的任何现有特征。要查看信号控制板，请转到“受众数据”>“信号”。信号控制板可根据最活跃的未使用信号为您提供切实可行的洞察。
-seo-title: 信号控制板
-title: 信号控制板
-uuid: 26f39507-097f-427d-bf5 b-ab6 d035 c1 dd2
+description: 获取Audience manager在过去7天内收到的未使用信号的概述，并识别潜在的新特征。 未使用的信号从您的在线资产传到Audience Manager，但不会用于您的任何现有特征。 要查看信号控制板，请转到“受众数据”>“信号”。 信号控制板会根据最活跃的未使用信号为您显示切实可行的洞察。
+seo-description: 获取Audience manager在过去7天内收到的未使用信号的概述，并识别潜在的新特征。 未使用的信号从您的在线资产传到Audience Manager，但不会用于您的任何现有特征。 要查看信号控制板，请转到“受众数据”>“信号”。 信号控制板会根据最活跃的未使用信号为您显示切实可行的洞察。
+seo-title: 信号仪表板
+title: 信号仪表板
+uuid: 26f39507-097f-427d-bf5b-ab6d035c1dd2
 translation-type: tm+mt
 source-git-commit: 12216ab5105fce80b4b47c31ee6be144ddfe8df9
 
 ---
 
 
-# Signals Dashboard {#signals-dashboard}
+# 信号仪表板 {#signals-dashboard}
 
-了解Audience Manager过去天接收到的未使用信号，找出潜在的新特征。未使用的信号从您的在线资产到达Audience Manager，但不会用于您的任何现有特征。To view the [!UICONTROL Signals Dashboard], go to [!UICONTROL Audience Data] &gt; [!UICONTROL Signals]. The [!UICONTROL Signals Dashboard] shows you actionable insights based on your most active unused signals.
+获取Audience manager在过去7天内收到的未使用信号的概述，并识别潜在的新特征。 未使用的信号从您的在线资产传到Audience Manager，但不会用于您的任何现有特征。 要查看 [!UICONTROL Signals Dashboard]，请转到 [!UICONTROL Audience Data] &gt; [!UICONTROL Signals]。 根据 [!UICONTROL Signals Dashboard] 您最活跃的未使用信号，展示可操作的洞察。
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Top Unused Signals]****[!UICONTROL New Unused Signals]** 和章节只显示100多次以上的 **记录**。Signals below that threshold are included in [!UICONTROL Signals Search].
+>和 **[!UICONTROL Top Unused Signals]** 部 **[!UICONTROL New Unused Signals]** 分只显示记录，每小时发 **生100次以上**。 低于该阈值的信号包含在中 [!UICONTROL Signals Search]。
 
-## Top Unused Signals {#top-unused-signals}
+## 最大未使用信号 {#top-unused-signals}
 
-This section shows you the top 50 unused signals (both new and old) sent to [!DNL Audience Manager] in the past 7 days, based on their total count. Depending on the data [!DNL Audience Manager] receives, this table can include some or all of the entries in the **New Unused Signals** table.
+此部分根据过去7天发送给您的50个未使用信号( [!DNL Audience Manager] 新信号和旧信号)的总数来显示这些信号。 根据接收的数 [!DNL Audience Manager] 据，此表可以包括“新建未使用的信号”表中的部分或 **所有条目** 。
 
 ![](assets/signals-top-unused.png)
 
-## New Unused Signals {#new-unused-signals}
+## 新的未使用信号 {#new-unused-signals}
 
-本节将向您展示过去天内收到的50个未使用的新信号。
+本节将向您显示过去7天内收到的50个未使用信号。
 
 ![](assets/signals-new-unused.png)
 
 ## 保存的搜索 {#saved-searches}
 
-[!DNL Audience Manager] 显示 [保存的所有搜索，](../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)[!UICONTROL Dashboard] 并在加载时重新加载它们 [!UICONTROL Dashboard]。
+[!DNL Audience Manager] 在上显示 [保存的搜索](../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md) , [!UICONTROL Dashboard] 并在每次加载时重新加载它们 [!UICONTROL Dashboard]。
 
 保存的搜索显示对应条件的前50个结果。
