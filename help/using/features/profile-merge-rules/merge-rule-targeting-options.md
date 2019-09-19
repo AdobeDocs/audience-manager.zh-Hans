@@ -1,54 +1,54 @@
 ---
-description: 个人资料合并规则选项可让您根据业务需求或目标扩展或收紧受众关注特定受众。这些一般使用案例探讨如何使用可用选项并为个人、家庭和跨设备定位创建合并规则。目前，配置文件合并规则只能与实时目标配合使用。
-seo-description: 个人资料合并规则选项可让您根据业务需求或目标扩展或收紧受众关注特定受众。这些一般使用案例探讨如何使用可用选项并为个人、家庭和跨设备定位创建合并规则。目前，配置文件合并规则只能与实时目标配合使用。
-seo-title: 个人资料合并规则的一般使用案例
+description: 个人资料合并规则选项允许您根据业务需求或目标扩大或加强受众对特定受众的关注。 这些一般用例探讨如何使用可用选项并为单个、家庭和跨设备定位创建合并规则。 目前，“配置文件合并规则”仅适用于实时目标。
+seo-description: 个人资料合并规则选项允许您根据业务需求或目标扩大或加强受众对特定受众的关注。 这些一般用例探讨如何使用可用选项并为单个、家庭和跨设备定位创建合并规则。 目前，“配置文件合并规则”仅适用于实时目标。
+seo-title: 配置文件合并规则的一般用例
 solution: Audience Manager
-title: 个人资料合并规则的一般使用案例
-uuid: c9eb41c8-fe19-45f8-9ff1-552c11 ef08 da
+title: 配置文件合并规则的一般用例
+uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# General Use Cases for Profile Merge Rules {#general-use-cases-for-profile-merge-rules}
+# 配置文件合并规则的一般用例 {#general-use-cases-for-profile-merge-rules}
 
-[!UICONTROL Profile Merge Rules] 选项允许您根据业务需求或目标扩展或收紧受众关注特定受众。这些一般使用案例探讨如何使用可用选项并为个人、家庭和跨设备定位创建合并规则。Currently, [!UICONTROL Profile Merge Rules] work with real-time destinations only.
+[!UICONTROL Profile Merge Rules] 通过这些选项，您可以根据业务需求或目标扩大或收紧对特定受众的关注。 这些一般用例探讨如何使用可用选项并为单个、家庭和跨设备定位创建合并规则。 目前， [!UICONTROL Profile Merge Rules] 仅可处理实时目标。
 
 ![](assets/merge-rules-options.png)
 
 >[!TIP]
 >
->For definitions and descriptions of these [!UICONTROL Merge Rule] settings, see [Profile Merge Rule Options Defined](../../features/profile-merge-rules/merge-rule-definitions.md).
+>有关这些设置的定义和说明，请 [!UICONTROL Merge Rule] 参阅配置 [文件合并规则选项定义](../../features/profile-merge-rules/merge-rule-definitions.md)。
 
-## Focused targeting {#focused-targeting}
+## 重点定位 {#focused-targeting}
 
-User authentication to a website should trigger a declared ID call to [!DNL Audience Manager]. After this event, [!DNL Audience Manager] writes trait data to (and reads from) an authenticated profile. The authenticated profile lets [!DNL Audience Manager]:
+对网站的用户身份验证应触发对的声明ID调用 [!DNL Audience Manager]。 在此事件之后， [!DNL Audience Manager] 将特征数据写入经过身份验证的配置文件（并从中读取）。 通过身份验证的配置文件， [!DNL Audience Manager]您可以：
 
-* 将特征写入特定用户特定的身份验证配置文件。
-* 识别并区分多个设备用户以进行细分。
+* 将特征写入特定于特定用户的认证配置文件。
+* 识别多个设备用户，并区分其细分。
 
-### 接触经过身份验证的用户
+### 触及经过身份验证的用户
 
-经过身份验证的配置文件选项可创建规则，允许您定位基于脱机属性登录到网站或应用程序的用户。例如，金融服务公司可使用此选项根据有针对性的信用卡升级提供目标信用卡升级，或根据收入或线下活动提供专门的服务推广信息。另一个示例是航空公司通过基于累计里程的交易来验证经常的传单。
+通过身份验证的配置文件选项可创建规则，使您能够根据脱机属性定位登录到网站或应用程序的用户。 例如，金融服务公司将使用此选项，根据收入或离线活动，以具有针对性信用卡升级优惠或专用服务优惠的认证用户为目标。 另一个例子是，航空公司以经过认证的常客为目标，根据累计里程进行交易。
 
-To create a rule that reaches only authenticated users, select **[!UICONTROL Current Authenticated Profile]** + **[!UICONTROL No Device Profile]**. 此选项将仅使用经过身份验证的配置文件数据来评估区段。此规则将忽略匿名设备配置文件中的数据。
+要创建只能到达已验证用户的规则，请选择 **[!UICONTROL Current Authenticated Profile]** + **[!UICONTROL No Device Profile]**。 此选项将仅使用经过身份验证的配置文件数据来评估区段。 此规则将忽略匿名设备配置文件中的数据。
 
-To also include data in the anonymous device profile, use the **[!UICONTROL Current Authenticated Profile]** + **[!UICONTROL Current Device Profile]** rule.
+要将数据包含在匿名设备配置文件中，请使用 **[!UICONTROL Current Authenticated Profile]** +规 **[!UICONTROL Current Device Profile]** 则。
 
-### 根据之前的身份验证状态触及用户
+### 根据先前的身份验证状态向用户发送
 
-这些选项在用户浏览但未登录时到达特定用户。您可以使用依赖推断用户级定位的选项进行此操作。推断定位可帮助您触及未明确身份验证您的网站但可能在线浏览的人员。它通过从上一个经过验证的配置文件读取(但不是写入)数据工作。And, to help keep the authenticated profile clean, [!DNL Audience Manager] writes new trait qualifications to the device profile instead of the authenticated profile. 例如，您是一名营销人员，希望与未登录您的网站或应用程序的现有客户测试不同的优惠。作为营销人员，您可以与当前未经身份验证的客户测试这些广告，以了解哪些推广信息最能得到响应。
+这些选项在特定用户浏览但未登录时触及用户。 您可以使用依赖推断的用户级别定位的选项执行此操作。 推断出的定位可帮助您联系未对您的网站进行明确身份验证但可能正在在线浏览的用户。 它的工作方式是从上一个经过身份验证的配置文件读取（但不写入）数据。 此外，为了帮助保持已验证的配置文件干净，请将 [!DNL Audience Manager] 新的特征资格写入设备配置文件而不是已验证的配置文件。 例如，假设您是营销人员，希望针对未登录您的网站或应用程序的现有客户测试不同的推广信息。 作为营销人员，您可以使用当前未验证的客户测试这些广告，以查看哪些优惠获得最多响应。
 
-一个根据匿名身份验证触及用户的规则示例是：
+基于预先身份验证的触及用户的规则示例如下：
 
 * **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Current Device Profile]**
 
-## Expanded targeting {#expanded-targeting}
+## 扩展的定位 {#expanded-targeting}
 
-除了有助于触及特定客户的规则之外，营销人员还需要规则，以增加可用于定位的数据集规模。[!UICONTROL Profile Merge Rules] 让您使用设备配置文件选项进行操作。设备选项扩展有资格获得分段的数据集，因为在一个或多个设备上用户处于匿名状态时，他们可以绘制出所需的特征。当您尝试在家用设备图中使用真人设备图或所有设备接触用户时，这可能会非常有用。此选项的使用案例包括宣传家庭度假套餐。在这种情况下，如果任何设备上的某个用户已经对该选件感兴趣，您将希望通过选件触及某个家用设备。
+除了有助于触及特定客户的规则外，营销人员还需要增加可用于定位的数据集大小的规则。 [!UICONTROL Profile Merge Rules] 让您使用设备配置文件选项执行此操作。 设备选项扩展了符合分段条件的数据集，因为这些数据集利用了用户在一个或多个设备上处于匿名状态时实现的特征。 当您尝试使用个人设备图表触及所有设备上的用户或使用家庭设备图表的家庭中的所有设备时，这可能很有用。 此选项的用例可能包括为家庭度假优惠做广告。 在这种情况下，如果任何设备上的用户都对该选件感兴趣，您将希望使用该选件访问家庭中的每台设备。
 
-To create a rule that expands the targeting data set, select the **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Device Graph]** rule.
+要创建扩展定位数据集的规则，请选择 **[!UICONTROL Last Authenticated Profiles]** +规 **[!UICONTROL Device Graph]** 则。
 
 <!-- 
 
@@ -67,42 +67,42 @@ To create a rule that expands the targeting data set, select the **[!UICONTROL L
 
  -->
 
-## Device Graph Options {#device-graph-options}
+## 设备图形选项 {#device-graph-options}
 
-Choosing a [!UICONTROL device graph] option for a [!UICONTROL Profile Merge] rule depends on conditions unique to your digital properties and business goals. 这些一般指导方针可以帮助您了解何时使用一种图形。Note, you must be a member of the [!DNL Adobe Experience Cloud Device Co-op] or have a contractual relationship with an external device graph to use these options. 有关何时选择设备图表选项的一般指导，请参阅下表。For specific use cases, see [Profile Link Device Graph Use Cases](../../features/profile-merge-rules/profile-link-use-case.md) and [External Device Graph Use Cases](../../features/profile-merge-rules/external-graph-use-cases.md).
+选择规 [!UICONTROL device graph] 则的选项 [!UICONTROL Profile Merge] 取决于数字资产和业务目标所特有的条件。 这些一般准则可以帮助您了解何时使用一种图形与另一种图形。 请注意，您必须是外部设备图 [!DNL Adobe Experience Cloud Device Co-op] 形的成员或与外部设备图形有合同关系才能使用这些选项。 有关何时选择设备图形选项的一般指导，请参阅下表。 有关特定用例，请参阅配置 [文件链接设备图形用例](../../features/profile-merge-rules/profile-link-use-case.md) 和外 [部设备图形用例](../../features/profile-merge-rules/external-graph-use-cases.md)。
 
 <table id="table_66D9152D4FF040A186003272D456625D"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 设备图表类型 </th> 
+   <th colname="col1" class="entry"> 设备图形类型 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
   </tr>
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 配置文件链接</span> </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> 使用</span><span class="wintitle"> 配置文件链接</span> 选项构建的配置文件合并规则非常适合： </p> <p> 
+   <td colname="col2"> <p><span class="wintitle"> 使用“配置文件</span> ”链接选项构建的 <span class="wintitle"> “配置文件合并规则</span> ”非常适合： </p> <p> 
      <ul id="ul_FF44FA894BB2448887C8EDA9C8407EF9"> 
-      <li id="li_E22505210C664FE6A9AA7C61244B36DA">具有高客户身份验证级别的数字属性。 </li> 
-      <li id="li_BE7112EE611E4DEB95B5C0A2852BFA97">专注于低营销活动的营销活动。<span class="wintitle"> 配置文件链接</span> 设备图表仅基于确定的数据构建。此设备配置文件池相对于未经过身份验证的用户和设备的池总是更小。 </li> 
-      <li id="li_5FD9E936A72A4EFE80E694FA2E08E385">使用客户处于身份验证状态才能获得细分资格的情形。 </li> 
+      <li id="li_E22505210C664FE6A9AA7C61244B36DA">具有高级客户身份验证的数字资产。 </li> 
+      <li id="li_BE7112EE611E4DEB95B5C0A2852BFA97">专注、触及面低的营销活动。 Profile Link <span class="wintitle"></span> device graph only built on deterministic data. 相对于未验证的用户和设备池，此设备配置文件池始终会更小。 </li> 
+      <li id="li_5FD9E936A72A4EFE80E694FA2E08E385">客户需要处于身份验证状态才能获得分段资格的用例。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>外部设备图表选项 </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> 使用Experience Cloud Device Co-op构建的个人资料合并</span><a href="https://marketing.adobe.com/resources/help/en_US/mcdc/" format="https" scope="external"> 规则</a> 或与 <span class="keyword"> Audience Manager集成的任何外部设备图表</span> 非常适合： </p> <p> 
+   <td colname="col1"> <p>外部设备图形选项 </p> </td> 
+   <td colname="col2"> <p><span class="wintitle"> 使用Experience Cloud</span> Device Co-op构建的配置文件合并规则或与 <a href="https://marketing.adobe.com/resources/help/en_US/mcdc/" format="https" scope="external"> Audience Manager集成的任何外部设备图</a> 形 <span class="keyword"></span> ，非常适合： </p> <p> 
      <ul id="ul_D76D773988604A619FA4A3BF37F910F0"> 
-      <li id="li_969A0755A9E34CBEB2F7331C137B9A26">具有较低客户身份验证级别的数字资产。 </li> 
-      <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">广泛的高范围品牌营销活动。 </li> 
-      <li id="li_14AEC54CE34440889A3A36324EC6F497">使用客户不必处于身份验证状态才能获得细分资格的情形。 </li> 
-     </ul> </p> <p> <p>Tip: The <span class="keyword"> Device Co-op</span> is your best option if you're a <span class="keyword"> Experience Cloud</span> customer with low authentication and no relationship with any device graph provider. </p> </p> </td> 
+      <li id="li_969A0755A9E34CBEB2F7331C137B9A26">具有低级客户身份验证的数字属性。 </li> 
+      <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">广泛、触及面广的品牌营销活动。 </li> 
+      <li id="li_14AEC54CE34440889A3A36324EC6F497">客户无需处于已验证状态即可获得分段资格的用例。 </li> 
+     </ul> </p> <p> <p>提示：如果 <span class="keyword"></span><span class="keyword"></span> 您是Experience Cloud客户，且身份验证低，且与任何设备图形提供商没有关系，则Device Co-op是您的最佳选择。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
->* [个人资料链接设备图表使用案例](../../features/profile-merge-rules/profile-link-use-case.md)
+>* [配置文件链接设备图形使用案例](../../features/profile-merge-rules/profile-link-use-case.md)
 >* [外部设备图形使用案例](../../features/profile-merge-rules/external-graph-use-cases.md)
 >* [个人资料合并规则常见问题解答](../../faq/faq-profile-merge.md)
 
