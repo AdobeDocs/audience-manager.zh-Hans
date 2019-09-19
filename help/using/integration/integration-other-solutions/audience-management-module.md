@@ -1,37 +1,37 @@
 ---
-description: 将受众管理模块添加到Adobe Analytics AppMeasurement以将Analytics数据转发给Audience Manager，而不是让Audience Manager数据集成库(DIL)代码从页面发送像素。
-keywords: 受众分析；分析；sf；服务器端转发
-seo-description: 将受众管理模块添加到Adobe Analytics AppMeasurement以将Analytics数据转发给Audience Manager，而不是让Audience Manager数据集成库(DIL)代码从页面发送像素。
-seo-title: 实施受众管理模块
+description: 将Audience Management模块添加到Adobe Analytics appMeasurement，以将Analytics数据转发到Audience Manager，而不是让Audience Manager数据集成库(DIL)代码从页面发送像素。
+keywords: 受众分析；分析；ssf;服务器端转发
+seo-description: 将Audience Management模块添加到Adobe Analytics appMeasurement，以将Analytics数据转发到Audience Manager，而不是让Audience Manager数据集成库(DIL)代码从页面发送像素。
+seo-title: ' 实施受众管理模块'
 solution: Audience Manager
 title: 实施受众管理模块
-uuid: 08846427-def3-4a15-88e5-08882d8 d57 ce
+uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 translation-type: tm+mt
 source-git-commit: 94046c4ed825949451d0dbad37adbe9fba0f9191
 
 ---
 
 
-# Implement the Audience Management Module {#implement-the-audience-management-module}
+# 实施受众管理模块 {#implement-the-audience-management-module}
 
-Add the [!UICONTROL Audience Management Module] to [!DNL Adobe Analytics] [!UICONTROL AppMeasurement] to forward [!DNL Analytics] data to Audience Manager instead of having the Audience Manager [!UICONTROL Data Integration Library] ([!UICONTROL DIL]) code send a pixel from the page.
+添加 [!UICONTROL Audience Management Module] 到，以将 [!DNL Adobe Analytics] 数据转发到Audience Manager，而不是让Audience Manager [!UICONTROL AppMeasurement] ( [!DNL Analytics][!UICONTROL Data Integration Library][!UICONTROL DIL])代码从页面发送像素。
 
 ## 先决条件 {#prereqs}
 
-除了实施本文档所述的代码之外，您还必须：
+除了实施本文档所述的代码外，您还必须：
 
 * Implement the [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* Enable [!UICONTROL Server-Side Forwarding] for report suites in the [!UICONTROL Adobe Analytics Admin Console].
+* 为 [!UICONTROL Server-Side Forwarding] 中的报表包启用 [!UICONTROL Adobe Analytics Admin Console]。
 
 ## 实施 {#implementation}
 
-To implement the [!UICONTROL Audience Management Module]:
+要实施以下各项，请执行以 [!UICONTROL Audience Management Module]下操作：
 
-1. Download [!UICONTROL AppMeasurement] using the [Analytics Code Manager](https://marketing.adobe.com/resources/help/en_US/reference/code_manager_admin.html) (requires version 1.5 or later).
-1. Update your [!UICONTROL AppMeasurement] code to the version included in the downloaded zip file.
-1. Copy all of the code from `AppMeasurement_Module_AudienceManagement.js` from the zip file. Paste it into the `appMeasurement.js` file just above the text, `"DO NOT ALTER ANYTHING BELOW THIS LINE."`
-1. Add the code, `s.loadModule("AudienceManagement");`, just above the `AppMeasurement_Module_AudienceManagement.js` code you just added in the previous step.
-1. Update and copy the code below and add it to the `doPlugins` function in your `AppMeasurement.js` file.
+1. 使用 [!UICONTROL AppMeasurement] Analytics Code Manager [下载](https://marketing.adobe.com/resources/help/en_US/reference/code_manager_admin.html) （需要版本1.5或更高版本）。
+1. 将您的 [!UICONTROL AppMeasurement] 代码更新到下载的zip文件中包含的版本。
+1. 从zip文件复制所 `AppMeasurement_Module_AudienceManagement.js` 有代码。 将其粘贴到文 `appMeasurement.js` 本正上方的文件中， `"DO NOT ALTER ANYTHING BELOW THIS LINE."`
+1. 添加代码， `s.loadModule("AudienceManagement");`就在您刚在上一 `AppMeasurement_Module_AudienceManagement.js` 步中添加的代码的上方。
+1. 更新并复制下面的代码，并将其添加到文 `doPlugins` 件中的函 `AppMeasurement.js` 数中。
 
 ```js
 s.AudienceManagement.setup({ 
@@ -49,33 +49,33 @@ s.AudienceManagement.setup({
 
 >[!TIP]
 >
->`audienceManagement.setup` 函数与Audience Manager `DIL.create` 函数共享参数，您可以在此代码中配置该函数。For more information about these parameters, see [DIL create](../../dil/dil-class-overview/dil-create.md#dil-create).
+>该函 `audienceManagement.setup` 数与Audience Manager函数共享参数，您 `DIL.create` 可以在此代码中配置该函数。 For more information about these parameters, see [DIL create](../../dil/dil-class-overview/dil-create.md#dil-create).
 
-## Code Elements Defined {#code-elements-defined}
+## 定义的代码元素 {#code-elements-defined}
 
-下表定义了代码范例中的重要变量。
+下表定义了代码示例中的重要变量。
 
 | 参数 | 描述 |
 |--- |--- |
-| `partner` | 必需。这是Adobe为您分配的合作伙伴名称。有时称为“合作伙伴ID”或“合作伙伴子域”。Contact your Adobe consultant or [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) if you don't know your partner name. |
-| `containerNSID` | 必需。Most customers can just set  `"containerNSID":0` . 但是，如果您的公司需要与其他容器同步ID，则可以在此处指定该容器ID。 |
-| `uuidCookie` | 可选。此配置允许您在第一方域中设置Adobe cookie。This cookie contains the [UUID](../../reference/ids-in-aam.md) . |
-| `visitorService` - `namespace` | 必需。`namespace` 如果使用与 [!UICONTROL AppMeasurement] 2.10或更新版本绑定的AudienceManager ement，则此参数是必需的。[!UICONTROL AudienceManagement] 本单元要求您使用 [!UICONTROL Experience Cloud ID Service] 3.3或更新版本。<br>[!UICONTROL Experience Cloud Organization ID] 这是在注册后提供的公司ID [!UICONTROL Experience Cloud]。Find out your company's Organization ID in [Organizations and Account Linking](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html). |
+| `partner` | 必需。这是Adobe分配给您的合作伙伴名称。 它有时称为“合作伙伴ID”或“合作伙伴子域”。  如果您不知道您的 [合作伙伴名称](https://helpx.adobe.com/marketing-cloud/contact-support.html) ，请与Adobe顾问或客户关怀联系。 |
+| `containerNSID` | 必需。大多数客户只需设置 `"containerNSID":0` 。 但是，如果您的公司需要自定义ID与其他容器同步，您可以在此处指定该容器ID。 |
+| `uuidCookie` | 可选。此配置允许您在第一方域中设置Adobe cookie。 此Cookie包含 [UUID](../../reference/ids-in-aam.md) 。 |
+| `visitorService` - `namespace` | 必需。如果 `namespace` 您使用与版本2.10或更高版本捆绑的AudienceManagement [!UICONTROL AppMeasurement] 模块，则此参数是必需的。 本 [!UICONTROL AudienceManagement] 模块要求您使用 [!UICONTROL Experience Cloud ID Service] 3.3或更高版本。 <br> 该 [!UICONTROL Experience Cloud Organization ID] ID是公司在注册时获得的ID [!UICONTROL Experience Cloud]。 在“组织”和“帐户关联”中查 [找您公司的组织ID](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)。 |
 
-## Results: Data Forwarding to Audience Manager {#results-data-forwarding}
+## 结果：向Audience Manager转发数据 {#results-data-forwarding}
 
-[!DNL Analytics] 在您有以下情况后，实施将向Audience Manager发送数据：
+在您 [!DNL Analytics] 拥有以下各项后，您的实施会将数据发送到Audience Manager:
 
-* Enabled [!UICONTROL Server-Side Forwarding] (talk to your consultant about this feature);
+* 启 [!UICONTROL Server-Side Forwarding] 用（与顾问讨论此功能）;
 * 实施了ID服务；
-* Installed the [!UICONTROL Audience Management Module].
+* 已安装 [!UICONTROL Audience Management Module]。
 
-This process sends data to [!DNL Audience Manager]:
+此过程将数据发送到 [!DNL Audience Manager]:
 
-* 在页面查看调用中；
-* 从跟踪链接；
-* 视频里程碑和心跳视频观看。
+* 页面查看调用；
+* 从跟踪的链接；
+* 从视频里程碑和心跳视频查看。
 
 >[!NOTE]
 >
->The variables sent to Audience Manager from [!DNL Analytics] use special prefixes. 您需要了解并在创建Audience Manager特征时考虑这些前缀。For more information on these prefixes, see [Prefix Requirements for Key Variables](../../features/traits/trait-variable-prefixes.md).
+>从发送到Audience manager的变量使用 [!DNL Analytics] 特殊前缀。 在创建Audience manager特征时，您需要了解并考虑这些前缀。 有关这些前缀的详细信息，请参 [阅关键变量的前缀要求](../../features/traits/trait-variable-prefixes.md)。
