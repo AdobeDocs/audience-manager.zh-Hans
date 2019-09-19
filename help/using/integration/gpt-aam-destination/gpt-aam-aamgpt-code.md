@@ -1,27 +1,27 @@
 ---
-description: AMAGPT是一个JavaScript函数，它读取Audience Manager cookie数据并将该信息发送到Google Publisher标记。
-seo-description: AMAGPT是一个JavaScript函数，它读取Audience Manager cookie数据并将该信息发送到Google Publisher标记。
-seo-title: Google Publisher标签的Audience Manager代码
+description: AamGpt是一个JavaScript函数，它读取Audience Manager cookie数据，并将该信息发送到Google Publisher标记。
+seo-description: AamGpt是一个JavaScript函数，它读取Audience Manager cookie数据，并将该信息发送到Google Publisher标记。
+seo-title: Google Publisher标记的Audience Manager代码
 solution: Audience Manager
-title: Google Publisher标签的Audience Manager代码
-uuid: 24ff5d16-b360-46cc-a4 c6-6db34 d7 fda75
+title: Google Publisher标记的Audience Manager代码
+uuid: 24ff5d16-b360-46cc-a4c6-6db34d7fda75
 translation-type: tm+mt
 source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
 
 ---
 
 
-# Audience Manager Code for Google Publisher Tags {#audience-manager-code-for-google-publisher-tags}
+# Google Publisher标记的Audience Manager代码 {#audience-manager-code-for-google-publisher-tags}
 
-`AamGpt` 是读取Audience [!DNL JavaScript] Manager cookie数据并将该信息发送到 [!DNL Google Publisher Tags]的函数。
+`AamGpt` 是读取 [!DNL JavaScript] Audience Manager cookie数据并将该信息发送到的函数 [!DNL Google Publisher Tags]。
 
 >[!NOTE]
 >
->This function is not required if you have your own code to read Audience Manager cookie data from the [!UICONTROL UUID] and destination cookies.
+>如果您有自己的代码从和目标cookie中读取Audience Manager Cookie数据，则不需要此 [!UICONTROL UUID] 函数。
 
 ## 示例代码
 
-Place the `AamGpt` code at the top of the page, ideally within the `<head>` code block. `AamGpt` 代码如下所示：
+将代 `AamGpt` 码放在页面顶部，最好放在代码 `<head>` 块中。 代 `AamGpt` 码如下所示：
 
 ```js
 var AamGpt = {  
