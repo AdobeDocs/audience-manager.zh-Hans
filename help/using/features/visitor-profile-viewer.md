@@ -1,25 +1,25 @@
 ---
-description: 使用访客配置文件查看器显示当前浏览器的用户配置文件的当前状态，包括其特征和区段。对于每个特征，您可以查看其SID、名称、有关如何实现访客特征的详细信息(第一方或第三方)、实现日期和真实性。对于每个区段，您可以查看其SID、名称和区段成员关系日期。您还可以查看其他Audience Manager配置文件ID(UUID)的访客配置文件。访客配置文件查看器有助于进行疑难解答。
+description: 使用访客配置文件查看器可显示当前浏览器的用户配置文件的当前状态，包括其特征和区段。 对于每个特征，您可以查看其SID、名称、访客特征实现方式的详细信息（第一方或第三方）、实现日期和实现频率。 对于每个区段，您可以查看其SID、名称和区段成员日期。 您还可以查看其他Audience Manager配置文件ID(UUID)的访客配置文件。 访客资料查看器有助于排除故障。
 keywords: 位置；位置参数
-seo-description: 使用访客配置文件查看器显示当前浏览器的用户配置文件的当前状态，包括其特征和区段。对于每个特征，您可以查看其SID、名称、有关如何实现访客特征的详细信息(第一方或第三方)、实现日期和真实性。对于每个区段，您可以查看其SID、名称和区段成员关系日期。您还可以查看其他Audience Manager配置文件ID(UUID)的访客配置文件。访客配置文件查看器有助于进行疑难解答。
-seo-title: 访客个人资料查看器
+seo-description: 使用访客配置文件查看器可显示当前浏览器的用户配置文件的当前状态，包括其特征和区段。 对于每个特征，您可以查看其SID、名称、访客特征实现方式的详细信息（第一方或第三方）、实现日期和实现频率。 对于每个区段，您可以查看其SID、名称和区段成员日期。 您还可以查看其他Audience Manager配置文件ID(UUID)的访客配置文件。 访客资料查看器有助于排除故障。
+seo-title: 访客资料查看器
 solution: Audience Manager
-title: 访客个人资料查看器
-uuid: 77ffe134-e08 f-41de-8fc4-15494847b1 d0
+title: 访客资料查看器
+uuid: 77ffe134-e08f-41de-8fc4-15494847b1d0
 translation-type: tm+mt
 source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
 
 ---
 
 
-# Visitor Profile Viewer {#visitor-profile-viewer}
+#  访客资料查看器 {#visitor-profile-viewer}
 
-Use the [!UICONTROL Visitor Profile Viewer] to display the current state of a user profile for the current browser, including its traits and segments. For each trait, you can view its [!UICONTROL SID], name, details about how visitor traits were realized (first- or third-party), the realization date, and the frequency of realizations. For each segment, you can view its [!UICONTROL SID], name, and the segment membership date. You can also view the visitor profile for another Audience Manager profile ID ([!UICONTROL UUID]). [!UICONTROL Visitor Profile Viewer] 这有助于解决问题。
+使用 [!UICONTROL Visitor Profile Viewer] 显示当前浏览器的用户配置文件的当前状态，包括其特征和区段。 对于每个特征，您可以查看其名称、访客特征的实现方式的详细信息（第一方或第三方）、实现日期和实现频率。 [!UICONTROL SID]对于每个区段，您可以查看其 [!UICONTROL SID]名称和区段会员资格日期。 您还可以查看其他Audience Manager配置文件ID()的访客配置[!UICONTROL UUID]文件。 该 [!UICONTROL Visitor Profile Viewer] 功能有助于疑难解答。
 
 >[!NOTE]
 >
->* Access requires [!UICONTROL Administrator] permissions.
->* 有关已实现区段和具有载入特征的信息出现在用户界面中的信息有24小时延迟。
+>* 访问需要 [!UICONTROL Administrator] 权限。
+>* 在用户界面中显示有关已实现区段和已载入特征的信息之前，有24小时的延迟。
 
 
 <!-- 
@@ -29,12 +29,12 @@ Traits that are not part of a segment will not appear in the
 
 1. Click **[!UICONTROL Tools]** &gt; **[!UICONTROL Visitor Profile Viewer]**.
 
-1. *(可选)* 单击特征名称以在该特征中显示该特征 [!UICONTROL Trait Builder]。
+1. *（可选）* ，单击特征名称以在中显示该特征 [!UICONTROL Trait Builder]。
 
-   For more information, see [Traits](../features/traits/trait-details-page.md).
+   有关详细信息，请参阅 [特征](../features/traits/trait-details-page.md)。
 
-1. *(可选)* 单击区段名称，在该区段中显示该区段 [!UICONTROL Segment Builder]。
+1. *（可选）* ，单击区段名称以在中显示该区段 [!UICONTROL Segment Builder]。
 
    For more information, see [Segments](../features/segments/segments-purpose.md).
 
-1. *(视情况而定)* 在框 **[!UICONTROL UUID]** 中指定其他Audience Manager配置文件ID，然后单击 **[!UICONTROL Refresh]** 以查看该用户的特征和区段。
+1. *（视情况而定）* ，在框中 **[!UICONTROL UUID]** 指定另一个Audience Manager配置文件ID，然后单击 **[!UICONTROL Refresh]** 以查看该用户的特征和区段。
