@@ -1,41 +1,41 @@
 ---
-description: “唯一用户范围”报告返回气泡图中的数据。每个气泡的大小与选定广告单元的唯一用户数量成正比。较大的气泡表示触及范围比较小气泡更大。“唯一用户范围”报告可帮助您找到广告单元，为目标用户提供最广泛的触及范围。
-seo-description: “唯一用户范围”报告返回气泡图中的数据。每个气泡的大小与选定广告单元的唯一用户数量成正比。较大的气泡表示触及范围比较小气泡更大。“唯一用户范围”报告可帮助您找到广告单元，为目标用户提供最广泛的触及范围。
-seo-title: 独特的用户触及
+description: “唯一用户访问”报告返回泡泡图中的数据。 每个泡泡的大小与所选广告单位的唯一用户数量成正比。 较大的气泡表明其覆盖范围大于较小的气泡。 “唯一用户触及”报告可帮助您找到广告单元，该广告单元可针对目标用户提供最广泛的触及。
+seo-description: “唯一用户访问”报告返回泡泡图中的数据。 每个泡泡的大小与所选广告单位的唯一用户数量成正比。 较大的气泡表明其覆盖范围大于较小的气泡。 “唯一用户触及”报告可帮助您找到广告单元，该广告单元可针对目标用户提供最广泛的触及。
+seo-title: 独特的用户触及力
 solution: Audience Manager
-title: 独特的用户触及
-uuid: 64e75fad-f4 cb-4d47-a162-34e663 f3966 f
+title: 独特的用户触及力
+uuid: 64e75fad-f4cb-4d47-a162-34e663f3966f
 translation-type: tm+mt
 source-git-commit: 3a02c2e109f6ae4565cf9d86bb8828ab49bb01f0
 
 ---
 
 
-# Unique User Reach{#unique-user-reach}
+# 独特的用户触及力{#unique-user-reach}
 
-“唯一用户范围”报告返回气泡图中的数据。每个气泡的大小与选定广告单元的唯一用户数量成正比。较大的气泡表示触及范围比较小气泡更大。“唯一用户范围”报告可帮助您找到广告单元，为目标用户提供最广泛的触及范围。
+“唯一用户访问”报告返回泡泡图中的数据。 每个泡泡的大小与所选广告单位的唯一用户数量成正比。 较大的气泡表明其覆盖范围大于较小的气泡。 “唯一用户触及”报告可帮助您找到广告单元，该广告单元可针对目标用户提供最广泛的触及。
 
 ## 用例 {#use-cases}
 
-[!UICONTROL Unique User Reach] 通过报告，您可以识别个人信息中的资产，从而吸引大量的独特用户。
+通过报 [!UICONTROL Unique User Reach] 告，您可以识别个人信息中吸引大量独特用户的属性。
 
-## Using the Unique Reach Report {#using-the-report}
+## 使用唯一访问报告 {#using-the-report}
 
-Use the **[!UICONTROL Dimension Value]** box to select the ad units you want to display in the report. Click **[!UICONTROL All]** to display all your properties in the bubble chart.
+使用 **[!UICONTROL Dimension Value]** 该框选择要在报告中显示的广告单位。 单 **[!UICONTROL All]** 击以显示泡泡图中的所有属性。
 
-Use the **Day Range** and **Date Through** controls to adjust your look-back range.
+使用“ **日期范围** ”和“ **** 日期穿透”控件调整回顾范围。
 
-## Interpreting the Results {#interpreting-results}
+## 解释结果 {#interpreting-results}
 
 **示例报告**
 
-[!UICONTROL Unique User Reach] 您的报表类似于下面的报告。在报表中，单击气泡以查看基础数据。请参阅下表中的其他信息说明。
+您 [!UICONTROL Unique User Reach] 的报告可能与以下报告类似。 在报表中，单击气泡图可查看基础数据。 请参阅下表中的其他信息说明。
 
 ![](assets/publisher_unique_user_reach.png)
 
 | 项目 | 描述 |
 |--- |--- |
-| 维度值 | Web资产的名称。 |
-| 维度类型 | publisher尺寸的类型。我们目前仅支持广告单元作为维度类型。 |
-| 展示次数 | 在指定的回顾范围内为您的Web资产提供的印象数。 |
-| 独特范围 | 在您的Web资产上通过印象到达的唯一用户数。 |
+| 维值 | Web属性的名称。 |
+| 维度类型 | 发布者维的类型。 我们目前仅支持广告单元作为维度类型。 |
+| 展示次数 | 在指定的回顾范围内为您的Web属性提供的展示次数。 |
+| 独特触及力 | 通过您的Web属性上的印象访问的唯一用户数。 |
