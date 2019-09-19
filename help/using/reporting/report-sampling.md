@@ -1,53 +1,53 @@
 ---
-description: 概述了用于某些报告的采样方法、采样错误速率以及基于采样数据返回信息的报告列表。
-seo-description: 概述了用于某些报告的采样方法、采样错误速率以及基于采样数据返回信息的报告列表。
-seo-title: 选定Audience Manager报告中的数据采样和错误速率
+description: 用于某些报告的采样方法的摘要、采样错误率以及基于采样数据返回信息的报告列表。
+seo-description: 用于某些报告的采样方法的摘要、采样错误率以及基于采样数据返回信息的报告列表。
+seo-title: 选定Audience manager报告中的数据采样和错误率
 solution: Audience Manager
-title: 选定Audience Manager报告中的数据采样和错误速率
-uuid: 3d8bd764-a9 da-40f1-8794-54304457bb9 a
+title: 选定Audience manager报告中的数据采样和错误率
+uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 translation-type: tm+mt
 source-git-commit: d96182b0741dd31cc5ec0ffb68182ed5f8445c03
 
 ---
 
 
-# Data Sampling and Error Rates in Selected Audience Manager Reports{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
+# 选定Audience manager报告中的数据采样和错误率{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
 
-概述了用于某些报告的采样方法、采样错误速率以及基于采样数据返回信息的报告列表。
+用于某些报告的采样方法的摘要、采样错误率以及基于采样数据返回信息的报告列表。
 
-## Data Sampling Ratio and Minimum Requirements {#data-sampling-ratio}
+## 数据采样率和最低要求 {#data-sampling-ratio}
 
-Some [!DNL Audience Manager] reports display results based on a sampled set of the total amount of available data. 采样数据率为1：54。对于使用采样数据的报表，这意味着您的结果基于每组54记录中的个记录。
+某些 [!DNL Audience Manager] 报告根据可用数据总量的样本集显示结果。 采样数据比为1:54。 对于使用采样数据的报表，这意味着您的结果基于每54条记录中的1条记录。
 
-这些报表使用采样数据，因为他们需要大量的计算能力来生成结果。采样有助于在降低计算需求、保持系统性能和提供准确结果之间取得平衡。
+这些报告使用采样数据，因为它们需要大量计算能力来生成结果。 采样有助于在减少的计算需求、保持系统性能和提供准确结果之间取得平衡。
 
-如果不满足最低独特访客要求，使用取样的报表会排除特征和区段。这些最低要求如下所示：
+使用采样的报表在不符合最低唯一访客要求时不包括特征和区段。 这些最低要求如下：
 
-* Traits: 28,000 [unique trait realizations](/help/using/features/traits/trait-qualification-reference.md#unique-trait-realizations) over a 14-day period.
-* 区段：超过14，000个实时用户。
+* 特征：在14天 [内实现](/help/using/features/traits/trait-qualification-reference.md#unique-trait-realizations) 28,000个独特特征。
+* 区段：在14天内有70,000个实时用户。
 
-## Error Rates {#error-rates}
+## 错误率 {#error-rates}
 
-生成重叠数据的报告中可能出现错误。错误定义为以下记录的百分比：
+在生成重叠数据的报告中可能会出现错误。 错误定义为以下记录的百分比：
 
-* 不应包含在报表中，但已添加。
-* 应已包含在报表中，但被遗漏。
+* 不应包含在报告中，但无论如何都应添加。
+* 本该写在报告里，但没有写。
 
-It's important to note that our tests and models show that the error rate *decreases* in an inverse proportion to the number of records in your data set. 具有大量记录的数据集生成的错误数比少量记录少。让我们以更定量的方式看待此断言。如下表所示，对于设置数量的记录，95%的报告结果将低于特定的错误速率。
+必须注意的是，我们的测试和模型显示错误率 *与数据集中* 记录数成反比的下降。 具有大量记录的数据集生成的错误比具有少量记录的数据集少。 让我们从更定量的角度来看一下这一论断。 如下表所示，对于一组记录，95%的报告结果将低于特定错误率。
 
 | 记录数 | 错误率 |
 |--- |--- |
-| 500 - 1,000 | 95%的用户按42%的错误费率进行操作。 |
-| 1,000 - 1,500 | 95%的错误速率低于34%。 |
-| 10,000 - 50,000 | 95%的错误速率低于14%。 |
-| 50,000 | 95%的错误速率低于6%。 |
-| 100,000 | 95%的错误速率低于4%。 |
-| 500,000(或更多) | 95%的错误速率低于2%。 |
+| 500 - 1,000 | 95%的错误率低于42%。 |
+| 1,000 - 1,500 | 95%的错误率低于34%。 |
+| 10,000 - 50,000 | 95%的错误率低于14%。 |
+| 50,000 | 95%的错误率低于6%。 |
+| 100,000 | 95%的错误率低于4%。 |
+| 500,000（或更多） | 95%的错误率低于2%。 |
 
-## Reports That Use Sampled Data {#reports-using-sampled-data}
+## 使用采样数据的报告 {#reports-using-sampled-data}
 
-The [!DNL Audience Manager] reports that use sampled data include:
+使用 [!DNL Audience Manager] 采样数据的报告包括：
 
-* [重叠报告](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) (特性到特征、细分到特征和区段到区段)。
-* [可寻址受众](../features/addressable-audiences.md) 数据(客户和细分级别数据)。
-* The [Total Devices](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) metric for a [!UICONTROL Profile Merge Rule].
+* [重叠报告](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) （特征到特征、区段到特征和区段到区段）。
+* [可寻址的受众数据](../features/addressable-audiences.md) （客户级和细分级数据）。
+* 的 [设备总数](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics)[!UICONTROL Profile Merge Rule]。
