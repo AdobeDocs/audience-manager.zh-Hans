@@ -1,27 +1,27 @@
 ---
-description: 添加if语句以检查Audience Manager cookies，然后调用Google Publisher标记. setTargeting方法。
-seo-description: 添加if语句以检查Audience Manager cookies，然后调用Google Publisher标记. setTargeting方法。
-seo-title: 修改GPT Settargeting API调用
+description: 在调用Google Publisher标记。setTargeting方法之前，添加if语句以检查Audience Manager Cookie。
+seo-description: 在调用Google Publisher标记。setTargeting方法之前，添加if语句以检查Audience Manager Cookie。
+seo-title: 修改GPT setTargeting API调用
 solution: Audience Manager
-title: 修改GPT Settargeting API调用
-uuid: 0cd38f30-5d29-4511-a779-d32587 f1 dafb
+title: 修改GPT setTargeting API调用
+uuid: 0cd38f30-5d29-4511-a779-d32587f1dafb
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Modify the GPT `setTargeting` API Call {#modify-the-gpt-settargeting-api-call}
+# 修改GPT `setTargeting` API调用 {#modify-the-gpt-settargeting-api-call}
 
-Add an if statement to check for Audience Manager cookies before calling the [!DNL Google Publisher Tag] `.setTargeting` method.
+在调用方法之前，添加if语句以检查Audience Manager [!DNL Google Publisher Tag]`.setTargeting` cookies。
 
-## Check for Audience Manager Cookies With an `IF` Statement
+## 通过语句检查Audience Manager Cookies `IF`
 
-`.setTargeting` 该方法从Audience Manager目标cookie和唯一用户ID cookie( `aam_uuid`)获取数据。However, if `.setTargeting` gets invoked before [!UICONTROL DIL] writes these cookies, or the cookies are empty, you may see errors when the page loads. To help avoid this, wrap the `.setTargeting` method in an `if` statement that checks for these cookies. If they're not set, this statement prevents `.setTargeting` from calling the `AamGpt` function.
+该方 `.setTargeting` 法从Audience manager目标cookie和唯一用户ID cookie()中获取数 `aam_uuid`据。 但是，如果 `.setTargeting` 在写入这些Cookie之 [!UICONTROL DIL] 前被调用，或Cookie为空，则页面加载时可能会看到错误。 为避免这种情况，请将该方 `.setTargeting` 法包含在检查 `if` 这些Cookie的语句中。 如果未设置，则此语句将阻止 `.setTargeting` 调用函 `AamGpt` 数。
 
 ### `IF` 语句代码示例
 
-In this example, the Audience Manager destination cookie name is `Sample`. 在Audience Manager UI中创建目标cookie时，您可以设置此名称。[!UICONTROL DIL] 设置 `aam_uuid` cookie并且不能更改名称。
+在此示例中，Audience manager目标cookie名称为 `Sample`。 在Audience Manager UI中创建目标cookie时，可以设置此名称。 [!UICONTROL DIL] 设置 `aam_uuid` cookie，并且名称无法更改。
 
 ```js
 if(typeof AamGpt.getCookie("Sample") != "undefined"){ 
@@ -34,16 +34,16 @@ if(typeof AamGpt.getCookie("aam_uuid") != "undefined" ){
 
 >[!IMPORTANT]
 >
->Depending on how you want to integrate with [!DNL DFP], you only need some of the lines in the code sample above:
+>根据要与集成的方式， [!DNL DFP]您只需要上面代码示例中的一些行：
 >
->* 客户端集成：只使用第1-3条。
->* 服务器端集成：没有任何一行是必需的。
->* Ingest [!DNL DFP] log files for reporting in [!DNL Audience Manager]: use lines 4-6 only. This code inserts the value of the `aam_uuid` cookie into the logs so they can be ingested for reporting.
+>* 客户端集成：仅使用第1-3行。
+>* 服务器端集成：无需任何一行。
+>* 在以 [!DNL DFP] 下位置收录要报告的日志文件 [!DNL Audience Manager]:仅使用第4-6行。 此代码将cookie的值插入 `aam_uuid` 日志中，以便可以摄取它们以进行报告。
 
 
 ### `AamGpt` 函数和数据类型
 
-Defines the key variables used in the `if` statement.
+定义语句中使用的关键 `if` 变量。
 
 <table id="table_881391C9BDDF4FACAFC37A47B14B31A1"> 
  <thead> 
@@ -55,25 +55,25 @@ Defines the key variables used in the `if` statement.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> AAM PPT. getKey </code> </p> </td> 
+   <td colname="col1"> <p> <code> AamGpt.getKey </code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
-   <td colname="col3"> <p>返回键值区段对中的键。For example, if your key-value pair consisted of <code> color=blue </code>, this returns <code> color </code>. </p> </td> 
+   <td colname="col3"> <p>返回键值段对中的键。 例如，如果键值对由color=blue组成， <code> 则返回 </code>颜色 <code> 值 </code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> AMAMgt. getValues </code> </p> </td> 
+   <td colname="col1"> <p> <code> AamGpt.getValues </code> </p> </td> 
    <td colname="col2"> <p>字符串数组 </p> </td> 
-   <td colname="col3"> <p>Returns values in an array, e.g., <code> ["value1","value2"] </code>. </p> </td> 
+   <td colname="col3"> <p>返回数组中的值，例如 <code> ["value1","value2"] </code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> AAM PPT. getCookies </code> </p> </td> 
-   <td colname="col2"> <p>int </p> </td> 
-   <td colname="col3"> <p>Returns the Audience Manager user ID, e.g., <code> 12345 </code>. </p> </td> 
+   <td colname="col1"> <p> <code> AamGpt.getCookie </code> </p> </td> 
+   <td colname="col2"> <p>Int </p> </td> 
+   <td colname="col3"> <p>返回Audience Manager用户ID，如 <code> 12345 </code>。 </p> </td> 
   </tr>
  </tbody>
 </table>
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [创建GPT目标](../../integration/gpt-aam-destination/gpt-aam-create-destination.md)
->* [Google Publisher标签的Audience Manager代码](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
+>* [Google Publisher标记的Audience Manager代码](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
 
