@@ -1,10 +1,10 @@
 ---
-description: 常见报告相关问题和问题。
-seo-description: 常见报告相关问题和问题。
+description: 常见报告相关问题。
+seo-description: 常见报告相关问题。
 seo-title: 报表常见问题解答
 solution: Audience Manager
 title: 报表常见问题解答
-uuid: 78cd6c86-8a4a-4748-ab71-b6 e8 d6078 c94
+uuid: 78cd6c86-8a4a-4748-ab71-b6e8d6078c94
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
@@ -13,7 +13,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 # 报表常见问题解答{#reporting-faq}
 
-常见报告相关问题和问题。
+常见报告相关问题。
 
 <br> 
 
@@ -23,34 +23,34 @@ faq_reports.xml
 
  -->
 
-**对于新载入的特征，为什么[!UICONTROL Trait Graph]有时显示低于预期的数字或0？**
+**对于新的已载入特征，为什么这些特征[!UICONTROL Trait Graph]有时显示的数字低于预期数字或0?**
 
-Sometimes, after you upload traits, the [!UICONTROL Trait Graph] doesn't show any results or shows lower than expected numbers. 当我们收到的数据量如此之大时，入站处理作业将无法完成摄取此信息，直到该天的报告截止日期结束。
+有时，在上传特征后， [!UICONTROL Trait Graph] 不会显示任何结果或显示低于预期数字。 当我们收到的数据量如此之大，以致入站处理作业直到该日的报告截止日期之后才能完成收集此信息时，会发生这种情况。
 
-As a result, this data is sent to the reporting system late and won't show up in the 1-day reporting interval which is used for plotting the [!UICONTROL Trait Graph]. However, you can view this data in the 7, 14, 30, and 60-day report intervals in a [Trend](../reporting/trend-reports.md#trend-report-overview) or [General Report](../reporting/general-reports.md#general-reports-overview) on the following day.
+因此，该数据会延迟发送到报告系统，并且不会在用于绘制报告的1天报告间隔中显示 [!UICONTROL Trait Graph]。 但是，您可以在第二天的趋势或一般报表中以7、14、30和60天报告间隔查 [看](../reporting/trend-reports.md#trend-report-overview)[此数据](../reporting/general-reports.md#general-reports-overview) 。
 
 <br> 
 
-**[!UICONTROL Overlap]报表中缺少部分区段。Where are they?**
+**报表中缺少某些区[!UICONTROL Overlap]段。 他们在哪？**
 
-为了帮助降低计算需求，这些报告从结果中忽略了统计不重要的数据。您的区段没有丢失，因为它们没有产生有意义的结果，或您可以定位的有用的大量用户。另请参阅：
+为了帮助减少计算需求，这些报告会忽略从结果中统计上微不足道的数据。 您的区段不会丢失，它们会被丢弃，因为它们不会产生有意义的结果或您可以定位的有用用户池。 另请参阅：
 
 * [报告和数据采样方法](../reporting/report-sampling.md)
-* [在重叠和常规报告中计算唯一用户](../reporting/unique-user-counts.md)。
+* [对重叠和常规报告中的唯一用户计数](../reporting/unique-user-counts.md)。
 
 <br> 
 
-**如果我运行电子邮件营销活动，如何确定重定向的用户是否从该营销活动来到我的网站或从其他来源访问？**
+**如果我运行电子邮件营销活动，如何确定重定向用户是从该营销活动还是从其他来源进入我的网站？**
 
-将特定于营销活动的查询字符串追加到要监视的站点部分的URL。接下来，设置特征规则以捕获此变量。For example, if your URL passes in a campaign ID like this, `www.test123.com/electronics?campaign=123`, then create a trait rule to capture that data from the `h_referer` variable with a trait rule that looks for a header like `h_referer = 'campaign=123'`).
+在要监视的站点部分的URL后面附加市场活动特定的查询字符串。 接下来，设置一个特征规则以捕获此变量。 例如，如果您的URL通过类似的系列活动ID，则创建一个特征规则以从变量中捕获该数据，并使用一个特征规则来查找标题(如 `www.test123.com/electronics?campaign=123``h_referer``h_referer = 'campaign=123'`)。
 
 <br> 
 
-**实时和总细分人口统计之间有何区别？**
+**实时和总细分人口计数之间有何差异？**
 
-* **实时：** 在设定的时间段内属于区段并处于活动状态的唯一用户的数量(即 [!DNL Audience Manager] ，必须在特定时间段内为该用户已记录活动)。
+* **** 实时：在设置的时间段内属于区段并在您的属性上处于活动状态的唯一用户数(即， [!DNL Audience Manager] 在特定时间段内该用户必须已记录活动)。
 
-* **总细分人口：** 当前在该区段中进行分类的所有用户的集合。
+* **** 细分总数：该区段中当前已分类的所有用户的汇总。
 
 <!-- 
 
@@ -61,7 +61,7 @@ As a result, this data is sent to the reporting system late and won't show up in
 
 <br> 
 
-**我的区段只包含一个特征。查看报告指标时，其计数不匹配。为什么？**
+**我有一段只有一个特质。 当我查看报告指标时，其计数不匹配。 为什么？**
 
 See [Trait and Segment Population Data in Segment Builder](../features/segments/segment-builder-data.md).
 
@@ -78,31 +78,31 @@ See [Trait and Segment Population Data in Segment Builder](../features/segments/
 
  -->
 
-**我将文件放入一个文件，并且我的入站收据显示大量成功处理的记录，但报告显示的数量较少。为什么？**
+**“入站”时，文件和“入站”接收显示大量成功处理的记录，但报告显示的数量要低得多。 为什么？**
 
-In the backend, onboarded data gets attached only to users that are still active in AAM (user must have had recent [!UICONTROL DCS] activity in the past 120 days). Therefore, if you onboard data for users that have already expired in [!DNL Audience Manager], [!UICONTROL Inbound] might tell you that a certain number of user records were onboarded, but if these users have not had any recent activity, this data is dropped when it reaches our [!UICONTROL User Profile Store] and reporting will surface that.
-
-<br> 
-
-**为什么我跨设备的跨设备特征的特征统一远远超出已载入记录的总数？**
-
-如果您将跨设备数据提供商的文件停放在客户ID之外，Audience Manager会执行查找以获取所有与载入的客户ID关联的设备ID。Audience Manager随后将载入的特征分配给与客户ID关联的设备ID。
-
-例如，假定您已载入100个记录。对于每个客户ID，AAM平均关联三个设备ID。因此，已载入的特征分配给300台设备ID。
-
-单个跨设备客户ID可以与多个设备ID关联的原因有两个原因：
-
-* 用户从多台计算机/浏览器登录到同一跨设备帐户。
-* 用户正在清除他们的cookies。注意：“放弃”cookies在用户不活动的120天后被删除。
+在后端，已载入的数据仅会附加到在AAM中仍处于活动状态的用户(用户在过去120天 [!UICONTROL DCS] 中必须有最近的活动)。 因此，如果您为已过期的用户提供数据 [!DNL Audience Manager], [!UICONTROL Inbound][!UICONTROL User Profile Store] 则可能会告诉您已载入了特定数量的用户记录，但是，如果这些用户没有任何近期活动，则当这些数据到达我们时，会丢弃该数据，并且报告会显示该数据。
 
 <br> 
 
-**为什么我[!UICONTROL Total Trait Realizations]的星座特征总是0？**
+**为什么我的跨设备已载入特征的特征单位比已载入记录的总数高得多？**
 
-[!UICONTROL Total Trait Realizations] 与页面加载相对应。[!UICONTROL Total Trait Realizations] 提供实时触发特定特征的次数。此编号只针对基于规则的特征计算。Onboarded traits always show [!UICONTROL Total Trait Realizations] as 0.
+如果您为已键入客户ID的跨设备数据提供者安装了文件，Audience manager会执行查找以获取与每个已载入的客户ID关联的所有设备ID。 然后，Audience manager将载入的特征分配给与客户ID关联的设备ID。
+
+例如，假设您已载入100条记录。 对于每个客户ID,AAM平均有三个设备ID。 因此，已载入的特征被分配给300个设备ID。
+
+单个跨设备客户ID可以与多个设备ID关联有两个原因：
+
+* 用户正在从多台计算机／浏览器登录到同一跨设备帐户。
+* 用户正在清除其cookie。 注意：在用户120天不活动后，将删除“已放弃”Cookie。
 
 <br> 
 
-**我创建了一个特征，而且它[!UICONTROL Trait Graph]显示的数量比它更[!UICONTROL Unique Trait Realizations]大[!UICONTROL Total Trait Population]。Is this normal?**
+**为什么我[!UICONTROL Total Trait Realizations]的亲生特征总是0?**
 
-You are seeing this because the [!UICONTROL Unique Trait Realizations] are real-time metrics, but the reporting jobs we do to calculate the [!UICONTROL Total Trait Population] are not real-time. The [!UICONTROL Total Trait Population] should be larger than the [!UICONTROL Unique Trait Realizations] within a couple of days.
+[!UICONTROL Total Trait Realizations] 与页面加载相对应。 [!UICONTROL Total Trait Realizations] 提供该特定特征实时触发的次数。 此数字仅针对基于规则的特征计算。 已载入的特征始终 [!UICONTROL Total Trait Realizations] 显示为0。
+
+<br> 
+
+**我创建了一个特征，[!UICONTROL Trait Graph]并且显示的数量比[!UICONTROL Unique Trait Realizations]上的要大[!UICONTROL Total Trait Population]。 这正常吗？**
+
+您之所以看到这一点，是 [!UICONTROL Unique Trait Realizations] 因为它们是实时指标，但我们计算这些指标的报告工作 [!UICONTROL Total Trait Population] 并非实时。 在 [!UICONTROL Total Trait Population] 几天内，应该比 [!UICONTROL Unique Trait Realizations] 这个大。
