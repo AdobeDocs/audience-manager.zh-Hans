@@ -1,10 +1,10 @@
 ---
-description: 定义和链接进一步阅读。
-seo-description: 定义和链接进一步阅读。
+description: 定义和指向进一步阅读的链接。
+seo-description: 定义和指向进一步阅读的链接。
 seo-title: 术语表
 solution: Audience Manager
 title: 术语表
-uuid: 01fc26f5-db9 d-4e90-b4 c1-27c6 a510 acc
+uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510acc
 translation-type: tm+mt
 source-git-commit: d5a8b763d2d0d1ceebe2252ebd283943dcbc1754
 
@@ -13,29 +13,29 @@ source-git-commit: d5a8b763d2d0d1ceebe2252ebd283943dcbc1754
 
 # 术语表{#glossary}
 
-定义和链接进一步阅读。
+定义和指向进一步阅读的链接。
 
 ## A-B {#a-b}
 
 **算法建模**
 
-[!UICONTROL Algorithmic Modeling] 用作扩展触及范围以外用户的触及范围。该功能可帮助您通过自动数据分析发掘新的独特受众。Manage your [!UICONTROL Algorithmic Models] in **[!UICONTROL Audience Data > Models]**.
+将 [!UICONTROL Algorithmic Modeling] 其用作扩展触及范围的手段，超越您所识别的核心用户。 该功能通过自动数据分析帮助您发现新的独特受众。 在中 [!UICONTROL Algorithmic Models] 管理 **[!UICONTROL Audience Data > Models]**。
 
-See [Understanding Algorithmic Models](../features/algorithmic-models/understanding-models.md#understanding-models).
+请参阅 [了解算法模型](../features/algorithmic-models/understanding-models.md#understanding-models)。
 
 <br> 
 
-**巴哈马群岛**
+**BAAAM**
 
-[!UICONTROL Bulk Management Tools]。[!UICONTROL Bulk Management Tools] in [!DNL Audience Manager] in是一组基于Microsoft Excel的工具，允许您通过一次操作创建、修改或删除多个对象。您可以使用数据源、派生信号、目标、文件夹、区段和特征。The feature uses a Microsoft Excel spreadsheet with macros that make secure, authenticated calls to the [!DNL Audience Manager] APIs.
+[!UICONTROL Bulk Management Tools]。中 [!UICONTROL Bulk Management Tools] 的工 [!DNL Audience Manager] 具是一组基于Microsoft excel的工具，通过这些工具，您可以通过单个操作同时创建、修改或删除多个对象。 您可以使用数据源、派生信号、目标、文件夹、区段和特征。 该功能使用Microsoft excel电子表格和宏，这些宏对API进行安全、经过身份验证的 [!DNL Audience Manager] 调用。
 
-See [Bulk Management Tools](../reference/bulk-management-tools/bulk-management-intro.md).
+请参 [阅批量管理工具](../reference/bulk-management-tools/bulk-management-intro.md)。
 
 ## C-D {#c-d}
 
 **CDF**
 
-[!UICONTROL Customer Data Feed]。[!UICONTROL CDF] 文件表示收集到的数据的批量下载， [!DNL Audience Manager] 使您能够在我们的用户界面限制之外处理 [!DNL Audience Manager] 数据。[!UICONTROL CDF] 文件包含一个 [!DNL Audience Manager] 事件调用( `/event`)发送到我们服务器的相同数据。这包括用户ID、特征ID、细分ID以及事件调用捕获的所有其他参数等数据。
+[!UICONTROL Customer Data Feed]。文 [!UICONTROL CDF] 件表示由收集的数据的批量下载， [!DNL Audience Manager] 并允许您使用用户界面 [!DNL Audience Manager] 规定的限制之外的数据。 文 [!UICONTROL CDF] 件包含事件调用()发送 [!DNL Audience Manager] 到我们服务器的 `/event`相同数据。 这包括诸如用户ID、特征ID、区段ID等数据，以及事件调用捕获的所有其他参数。
 
 See [Customer Data Feeds](../features/cdf-files.md).
 
@@ -43,18 +43,18 @@ See [Customer Data Feeds](../features/cdf-files.md).
 
 **CRM ID**
 
-CRM ID是客户在自己的CRM系统中识别用户的ID。我们使用Audience Manager中的术语DPUUID，而不是CRM ID。
+CRM ID是客户在其自己的CRM系统中识别用户的ID。 我们使用Audience Manager中的术语DPUUID而不是CRM ID。
 
-See DPUUID in the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
+请参阅Audience Manager中 [ID索引中的DPUUID](../reference/ids-in-aam.md)。
 
 <br> 
 
-**可接触客户的受众**
+**客户可寻求的受众**
 
-In [Addressable Audience](/help/using/features/addressable-audiences.md), this metric represents devices that:
-* 在回顾窗口中已找到基于规则的或已载入的特征
-   **AND**
-* 无论同步的时间如何，都可以与所选目标同步ID。
+在可 [寻址的受众中](/help/using/features/addressable-audiences.md)，此指标代表以下设备：
+* 在回顾窗口中已实现基于规则的特征或已载入的特征
+   **和**
+* 使ID与所选目标同步，而不管同步的时间如何。
 
 <br> 
 
@@ -66,19 +66,19 @@ See [Customer Attributes](https://marketing.adobe.com/resources/help/en_US/mclou
 
 **客户匹配率**
 
-客户可寻址受众›客户总受众表示为%。See [Addressable Audience](/help/using/features/addressable-audiences.md).
+客户可寻址受众÷客户总受众以%表示。 See [Addressable Audience](/help/using/features/addressable-audiences.md).
 
 <br> 
 
 **客户总受众**
 
-In [Addressable Audience](/help/using/features/addressable-audiences.md), this metric represents a count of devices that have realized either a rule-based trait on your properties or an onboarded trait from your offline files during the look-back window.
+在可 [寻址受众中](/help/using/features/addressable-audiences.md)，此指标表示在回顾窗口期间，通过您的属性或脱机文件实现基于规则的特征或载入的特征的设备计数。
 
 <br> 
 
 **demdex.net**
 
-Demdex.net is a legacy domain controlled by [!DNL Adobe]. It reflects [!DNL Audience Manager]'s original, pre-acquisition name ( [!DNL Demdex]). [!DNL Adobe] 2011年收购 [!DNL Demdex] 并更名 [!DNL Audience Manager]为公司。`demdex.net` 对域的所有HTTP调用都是发送到的调用 [!DNL Adobe]。
+Demdex.net是由控制的传统域 [!DNL Adobe]。 它反映 [!DNL Audience Manager]了最初的收购前名称( [!DNL Demdex])。 [!DNL Adobe] 于 [!DNL Demdex] 2011年收购，并将该公司重新命名为 [!DNL Audience Manager]。 对域的所有HTTP `demdex.net` 调用都将发送到 [!DNL Adobe]。
 
 请参阅[了解 Demdex 域调用](../reference/demdex-calls.md)。
 
@@ -86,7 +86,7 @@ Demdex.net is a legacy domain controlled by [!DNL Adobe]. It reflects [!DNL Audi
 
 **DAID**
 
-[!UICONTROL Device Advertising IDs] 是唯一的设备标识符，用于识别移动设备。这些ID由设备制造商而非Adobe分配。We support iOS and Android device IDs in [!DNL Audience Manager].
+[!UICONTROL Device Advertising IDs] 是用于标识移动设备的唯一设备标识符。 这些ID由设备制造商而不是Adobe分配。 我们支持iOS和Android设备ID(在 [!DNL Audience Manager])。
 
 See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
@@ -94,96 +94,96 @@ See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 **目标**
 
-In [!DNL Audience Manager], a destination is any other system (ad server, DSP, ad network, etc.) 您希望与之共享数据的数据。[!UICONTROL Destination Builder] 我们的UI中提供了可用于创建和管理这些数据交付流程的工具。[!DNL Audience Manager] 目标功能 **[!UICONTROL Audience Data > Destinations]**&#x200B;位于中。
+在 [!DNL Audience Manager]中，目标是任何其他系统（广告服务器、DSP和网络等）要与之共享数据。 我们 [!UICONTROL Destination Builder] 的UI中提供了允许您创建和管理这些数据交付过程的工具。 [!DNL Audience Manager] 目标功能位于 **[!UICONTROL Audience Data > Destinations]**。
 
 <br> 
 
 **DIL**
 
-The [!UICONTROL Data Integration Library] is an API library used by [!DNL Audience Manager] to collect user interaction data. See [Data Integration Library (DIL) API](../dil/dil-overview.md).
+该 [!UICONTROL Data Integration Library] 是用于收集用户交互 [!DNL Audience Manager] 数据的API库。 See [Data Integration Library (DIL) API](../dil/dil-overview.md).
 
 <br> 
 
-**dpm**
+**dp**
 
-[!UICONTROL Data Provider Match]。It tells internal [!DNL Adobe] systems that a call from [!DNL Audience Manager] or the ID service is passing in customer data for synchronization or requesting an ID. 请参阅[了解 Demdex 域调用](../reference/demdex-calls.md)。
+[!UICONTROL Data Provider Match]。它告知内 [!DNL Adobe] 部系统，来自或ID服务的 [!DNL Audience Manager] 调用正在传递客户数据以进行同步或请求ID。 请参阅[了解 Demdex 域调用](../reference/demdex-calls.md)。
 
 ## E-F {#e-f}
 
 **Experience Cloud ID (ECID)**
 
-Previously named the [!DNL Marketing Cloud] ID (MID or MCID). [!DNL Experience Cloud] ID是ID服务的中心。它是网站访客的唯一永久标识符。See Cookies and the [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html).
+以前命名 [!DNL Marketing Cloud] 了ID（MID或MCID）。 该 [!DNL Experience Cloud] ID是ID服务的核心。 它是网站访问者的唯一永久标识符。 See Cookies and the [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html).
 
 <br> 
 
 **文件夹特征**
 
-文件夹分类内特征的自动分组。层次结构中的每个文件夹都会自动创建一个可用于定义区段的特征。
+自动分组文件夹分类内的特征。 层次结构中的每个文件夹都会自动创建可用于定义区段的特征。
 
-See [Folder Traits: About](../features/traits/about-folder-traits.md).
+请参阅 [文件夹特征：大概](../features/traits/about-folder-traits.md)。
 
 <br> 
 
 **频率上限**
 
-广告商希望向最终用户展示给定创意的次数限制。You can configure various frequency capping expressions in [!UICONTROL Segment Builder].
+广告商希望向最终用户显示给定创意的次数限制。 您可以在中配置各种频率上限表达式 [!UICONTROL Segment Builder]。
 
-See [Recency and Frequency](../features/segments/recency-and-frequency.md).
+请参 [阅最近和频率](../features/segments/recency-and-frequency.md)。
 
 ## G-H {#g-h}
 
-**GID**
+**GAID**
 
-Google Advertising ID是Google为运行Android操作系统的硬件设备分配的唯一设备ID。See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
+Google Advertising ID,Google为运行Android操作系统的硬件设备分配的唯一设备ID。 See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 <br> 
 
 **GUID**
 
-全球唯一标识符的缩写。We don't use the term GUID in [!DNL Audience Manager]. In our case, the GUID is the [!DNL Audience Manager] UUID.
+全局唯一标识符的首字母缩写。 我们不在中使用术语GUID [!DNL Audience Manager]。 在本例中，GUID是 [!DNL Audience Manager] UUID。
 See [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 ## I-J {#i-j}
 
 **IDFA**
 
-广告商标识符，Apple为其产品分配的唯一设备ID。See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
+广告商的标识符，即Apple为其产品分配的唯一设备ID。 See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 <br> 
 
 **入站**
 
-The process by which you can send audience data from other sources to [!DNL Audience Manager]. See [Sending Audience Data](/help/using/integration/sending-audience-data/send-audience-data.md).
+将受众数据从其他来源发送到的过程 [!DNL Audience Manager]。 请参阅 [发送受众数据](/help/using/integration/sending-audience-data/send-audience-data.md)。
 
 <br> 
 
 **集成代码**
 
-When working with the [!DNL Audience Manager] UI or API, you have the option of adding an integration code when creating traits, segments, or data sources. 在这些情况下，集成代码提供不同的用途：
+使用 [!DNL Audience Manager] UI或API时，您可以选择在创建特征、区段或数据源时添加集成代码。 在这些情况下，集成代码的用途各不相同：
 
-* [!UICONTROL Traits]：集成代码是ID、SKU或内部业务流程使用的其他值的字段。可选。
-* [!UICONTROL Segments]：集成代码是用户定义ID或其他公司特定信息的字段。可选。
-* [!UICONTROL Data Sources]：当您要创建跨设备数据源、使用Experience Cloud ID服务或使用时，需要集成代码 [!UICONTROL Profile Merge Rules]。See [Create a Data Source](../features/manage-datasources.md#create-data-source) for more information.
+* [!UICONTROL Traits]:集成代码是指内部业务流程使用的ID、SKU或其他值的字段。 可选。
+* [!UICONTROL Segments]:集成代码是用户定义的ID或其他公司特定信息的字段。 可选。
+* [!UICONTROL Data Sources]:当您要创建跨设备数据源、使用Experience Cloud ID服务或使用Experience Cloud ID服务时，需要集成代码 [!UICONTROL Profile Merge Rules]有关 [详细信息，请参阅](../features/manage-datasources.md#create-data-source) “创建数据源”。
 
 ## K-L {#k-l}
 
 **[!UICONTROL Look-alike modeling]**
 
-See [Algorithmic Modeling](../reference/aam-glossary.md#a-b).
+请参阅 [算法建模](../reference/aam-glossary.md#a-b)。
 
 ## M-N {#m-n}
 
-**MCID**， **MID**
+**MCID**, **MID**
 
-See the [Experience Cloud ID](../reference/aam-glossary.md#e-f).
+请参阅 [Experience Cloud ID](../reference/aam-glossary.md#e-f)。
 
 ## O-P {#o-p}
 
 **PCS**
 
-[!UICONTROL Profile Cache Server]。The [!UICONTROL PCS] is a large database, running on Apache Cassandra. It stores data received for active users from server-to-server transfers and the [!UICONTROL DCS]. [!UICONTROL PCS] 数据包括设备ID、经过身份验证的配置文件ID及其关联特征。
+[!UICONTROL Profile Cache Server]。它是 [!UICONTROL PCS] 一个大型数据库，运行在Apache Cassandra上。 它存储为活动用户从服务器到服务器的传输和所接收的数据 [!UICONTROL DCS]。 [!UICONTROL PCS] 数据由设备ID、经过身份验证的配置文件ID及其关联特征组成。
 
-See [Data Collection Components](../reference/system-components/components-data-collection.md).
+请参阅 [数据收集组件](../reference/system-components/components-data-collection.md)。
 
 <br> 
 
@@ -195,7 +195,7 @@ See [Profile Merge Rule Options Defined](../features/profile-merge-rules/merge-r
 
 **个人资料合并规则**
 
-[!UICONTROL Profile Merge Rules] 可让您控制数据 [!DNL Audience Manager] 的类型用于细分。
+[!UICONTROL Profile Merge Rules] 允许您控制分段使用 [!DNL Audience Manager] 的数据类型。
 
 See [Profile Merge Rule Options Defined](../features/profile-merge-rules/merge-rule-definitions.md).
 
@@ -203,57 +203,57 @@ See [Profile Merge Rule Options Defined](../features/profile-merge-rules/merge-r
 
 **实现**
 
-网站上访客有资格获得特征的操作。You can use the [Visitor Profile Viewer](../features/visitor-profile-viewer.md) tool to obtain information on trait realization by a specific user.
+访客在您的站点上符合某个特征的操作。 您可以使用访 [客配置文件查看器](../features/visitor-profile-viewer.md) ，获取特定用户实现的特征的相关信息。
 
 ## S-T {#s-t}
 
 **区段**
 
-区段(或受众)是共享常用属性的一组用户。
+区段（或受众）是共享共同属性的一组用户。
 
-See [Segments: Purpose, Composition, and Rules](../features/segments/segments-purpose.md).
+请参阅 [区段：目的、构成和规则](../features/segments/segments-purpose.md)。
 
 <br> 
 
-**细分地址受众**
+**细分可寻址受众**
 
-In [Addressable Audience](/help/using/features/addressable-audiences.md), this metric represents the number of users who have belonged to the segment during the report look-back period and have an active ID sync on your site. Segments can include your own first-party data and second party and third party data, via traits acquired in the [Audience Marketplace](/help/using/features/audience-marketplace/audience-marketplace.md).
+在可 [寻址受众中](/help/using/features/addressable-audiences.md)，此指标表示在报告回顾期间属于该区段并在您的网站上同步活动ID的用户数。 区段可以通过在Audience Marketplace中获取的特征包括您自己的第一方数据、第二方数据和第 [三方数据](/help/using/features/audience-marketplace/audience-marketplace.md)。
 
 <br> 
 
 **区段总人口**
 
-In [Addressable Audience](/help/using/features/addressable-audiences.md), this metric represents a count of all the devices that were a member of your segment during the report look-back period.
+在可 [寻址受众中](/help/using/features/addressable-audiences.md)，此指标表示在报告回顾期内属于您的区段的所有设备的计数。
 
 <br> 
 
 **区段匹配率**
 
-区段可寻址受众：表示为%的受众总数。See [Addressable Audience](/help/using/features/addressable-audiences.md).
+细分可寻址受众÷细分总人口以%表示。 See [Addressable Audience](/help/using/features/addressable-audiences.md).
 
 <br> 
 
 **信号**
 
-Signals are the smallest data units in [!DNL Audience Manager] and are expressed as key-value pairs.
+信号是中最小的数据单 [!DNL Audience Manager] 元，表示为键值对。
 
-See [Signals, Traits, and Segments](../reference/signal-trait-segment.md).
+请参 [阅信号、特征和区段](../reference/signal-trait-segment.md)。
 
 <br> 
 
 **特性**
 
-特征是一个或多个信号的组合。See [Signals, Traits, and Segments](../reference/signal-trait-segment.md).
+特征是一个或多个信号的组合。 请参 [阅信号、特征和区段](../reference/signal-trait-segment.md)。
 
 <br> 
 
-**特征人口**
+**特质群体**
 
 See [Trait and Segment Population Data in Segment Builder](../features/segments/segment-builder-data.md).
 
-**TTL(到实时)**
+**TTL（生存时间）**
 
-TTL定义合格访客保留在特征中的天数。TTL设置在特征而不是在区段上。如果访客在TTL间隔结束之前没有看到符合条件的特征，则会退出区段。Read more in [Segment and Trait Time-to-Live Explained](/help/using/features/traits/segment-ttl-explained.md).
+TTL定义合格访客在一个特征中保留的天数。 TTL是针对特征而非区段设置的。 如果访客在TTL间隔结束前未看到符合条件的特征，则访客会从区段中流失。 阅读区段 [和特质停留时间说明，了解更多信息](/help/using/features/traits/segment-ttl-explained.md)。
 
 <br> 
 
@@ -261,13 +261,13 @@ TTL定义合格访客保留在特征中的天数。TTL设置在特征而不是�
 
 **UUID**
 
-[!DNL Audience Manager] 唯一用户ID。See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
+[!DNL Audience Manager] 唯一用户ID。 See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 <br> 
 
 **Visitor ID**
 
-[!DNL Experience Cloud] ID服务(以前称为访客ID)提供了一个通用的永久ID，可用于识别所有解决方案中的访客 [!DNL Experience Cloud]。
+The [!DNL Experience Cloud] ID Service (formerly visitor ID) provides a universal, persistent ID that identifies your visitors across all the solutions in the [!DNL Experience Cloud].
 
 See the [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/reference/marketing-cloud-id-service.html) documentation.
 
