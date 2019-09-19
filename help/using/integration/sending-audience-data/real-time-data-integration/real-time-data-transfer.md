@@ -1,27 +1,27 @@
 ---
-description: 实时入站数据采集过程使用用户浏览器中的一系列HTTP请求将数据传递给Audience Manager。
-seo-description: 实时入站数据采集过程使用用户浏览器中的一系列HTTP请求将数据传递给Audience Manager。
+description: 实时入站数据获取过程使用用户浏览器中的一系列HTTP请求将数据传递到Audience Manager。
+seo-description: 实时入站数据获取过程使用用户浏览器中的一系列HTTP请求将数据传递到Audience Manager。
 seo-title: 实时入站数据摄取
 solution: Audience Manager
 title: 实时入站数据摄取
-uuid: 43cb0eBC-6c36-4391-bbfb-6b203 d63 c69 a
+uuid: 43cb0ebc-6c36-4391-bbfb-6b203d63c69a
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Real-Time Inbound Data Ingestion {#real-time-inbound-data-ingestion}
+# 实时入站数据摄取 {#real-time-inbound-data-ingestion}
 
-The real-time inbound data ingestion process uses a series of `HTTP` requests from a user's browser to pass in data to Audience Manager.
+实时入站数据获取过程使用用户浏览器 `HTTP` 发出的一系列请求将数据传入Audience Manager。
 
 <!-- c_rt_inbound_real_time.xml -->
 
-入站数据应格式化为称为信号的键值对。Typically, each signal is mapped to a segment created or managed through the user interface or [!DNL API].
+入站数据应作为称为信号的键值对进行格式化。 通常，每个信号被映射到通过用户界面或管理的区段 [!DNL API]。
 
-## URL String Parameters and Syntax {#url-string-syntax}
+## URL字符串参数和语法 {#url-string-syntax}
 
-The [!DNL URL] for an inbound data transfer should contain the variables described below. Remember to [create traits](../../../features/traits/create-onboarded-rule-based-traits.md) and a [folder structure](../../../features/traits/trait-storage.md#create-trait-storage-folder) in the [!DNL Audience Manager] UI before setting up real-time data transfers.
+入站 [!DNL URL] 数据传输的变量应包含下述变量。 在设置 [实时数据传输之前](../../../features/traits/create-onboarded-rule-based-traits.md) ，请记住在UI [中创建特](../../../features/traits/trait-storage.md#create-trait-storage-folder)[!DNL Audience Manager] 征和文件夹结构。
 
 >[!NOTE]
 >
@@ -29,12 +29,12 @@ The [!DNL URL] for an inbound data transfer should contain the variables describ
 
 | 参数 | 描述 |
 |---|---|
-| `<KEY>` | 密钥值对中的唯一标识符(例如，性别、颜色、价格)。 |
-| `<VAL>` | 属于由键定义的数据集的变量(例如，性别=男性，color= green，price=100) |
+| `<KEY>` | 键值对中的唯一标识符（例如性别、颜色、价格）。 |
+| `<VAL>` | 属于键定义的数据集的变量（例如，性别=男性，颜色=绿色，价格=100） |
 
 ### URL语法
 
-During a real-time inbound data ingestion process, a properly formatted [!DNL URL] string uses the following syntax:
+在实时入站数据获取过程中，格式正确的字符串 [!DNL URL] 使用以下语法：
 
 ```
 https://client.demdex.net/event?KEY1=VALA&KEY2=VALB&KEY3=VALC
