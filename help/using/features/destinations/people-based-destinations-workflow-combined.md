@@ -113,7 +113,7 @@ ID同 [步文件必须遵循](../../integration/sending-audience-data/batch-data
 
 >[!IMPORTANT]
 >
-> 如果您已经使用或选项定义 [!UICONTROL Current Authenticated Profiles] 了规 [!UICONTROL Last Authenticated Profiles] 则，可跳到第4步- [创建受众细分](people-based-destinations-workflow-combined.md#create-audience-segments)。
+> 如果已经使用或选项定义了规 [!UICONTROL Current Authenticated Profiles] 则， [!UICONTROL Last Authenticated Profiles] 则可跳到第4步- [创建受众细分](people-based-destinations-workflow-combined.md#create-audience-segments)。
 
 1. 登录到您的Audience manager帐户，然后转 **[!UICONTROL Audience Data]** 到&gt; **[!UICONTROL Profile Merge Rules]**。
 1. 单击 **[!UICONTROL Add New Rule]**.
