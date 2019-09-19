@@ -1,10 +1,10 @@
 ---
-description: 描述常用平台级密钥-值对，以使用Audience Manager帐户中所有属性中的设备相关变量定位用户。
-seo-description: 描述常用平台级密钥-值对，以使用Audience Manager帐户中所有属性中的设备相关变量定位用户。
-seo-title: 使用平台级密钥定位设备
+description: 介绍在Audience Manager帐户中的所有属性中，使用设备相关变量定位用户的常见平台级键值对。
+seo-description: 介绍在Audience Manager帐户中的所有属性中，使用设备相关变量定位用户的常见平台级键值对。
+seo-title: 使用平台级密钥进行设备定位
 solution: Audience Manager
-title: 使用平台级密钥定位设备
-uuid: bc048cc5-3df1-49bc-ac78-3ea5 d7 edd9 cc
+title: 使用平台级密钥进行设备定位
+uuid: bc048cc5-3df1-49bc-ac78-0ea5d7edd9cc
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
@@ -13,17 +13,17 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 # Device Targeting With Platform-level Keys {#device-targeting-with-platform-level-keys}
 
-描述常用平台级密钥-值对，以使用Audience Manager帐户中所有属性中的设备相关变量定位用户。
+介绍在Audience Manager帐户中的所有属性中，使用设备相关变量定位用户的常见平台级键值对。
 
-## Purpose of Platform-level Variables {#platform-variables}
+## 平台级变量的用途 {#platform-variables}
 
 <!-- c_tb_device_targeting.xml -->
 
-Platform-level variables let you take data passed in from a particular site and make it available for targeting across all the properties in your [!DNL Audience Manager] account. These variables are formed by [key-value pairs](../../reference/key-value-pairs-explained.md) with the key prefixed by `d_` as shown below.
+平台级变量允许您从特定站点传入的数据，并使其可用于在帐户中的所有属性中进行 [!DNL Audience Manager] 定位。 这些变量由键值对 [组成](../../reference/key-value-pairs-explained.md) ，键前缀 `d_` 如下所示。
 
-## Platform-level Keys Defined by User Agent {#keys-user-agent}
+## 由用户代理定义的平台级密钥 {#keys-user-agent}
 
-[!UICONTROL Data Collection Servers] 从请求中 [的用户代理标头](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43) 提取这些键 `HTTP` 的值。The values represent device-level information from the [!UICONTROL Device Atlas] database. 下表中的信号可从用户代理示例中提取。[根据度量，下载最常用密钥](assets/device_keys.csv)[!UICONTROL Device Atlas] 的列表。
+从 [!UICONTROL Data Collection Servers] 请求中的用户代理头提取这 [些键的值](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43)`HTTP` 。 这些值表示来自数据库的设备级 [!UICONTROL Device Atlas] 信息。 下表中的信号可用，从用户代理示例中提取。 [根据度量值下载最常用键的列表](assets/device_keys.csv)[!UICONTROL Device Atlas] 。
 
 | [!DNL Signal] | [!DNL Type] | [!DNL Example] |
 |---|---|---|
@@ -41,9 +41,9 @@ Platform-level variables let you take data passed in from a particular site and 
 
 >[!NOTE]
 >
->Even if one or more signals cannot be retrieved from the user agent header, the other signals will still be passed to the [!UICONTROL Data Collection Servers].
+>即使一个或多个信号无法从用户代理头检索，其他信号仍将被传递给用户 [!UICONTROL Data Collection Servers]。
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [关键变量的前缀要求](../../features/traits/trait-variable-prefixes.md)
 
