@@ -1,8 +1,8 @@
 ---
-description: 将key-value字段保留为空可搜索更广泛的信号，并使用可用的过滤器缩小结果。
-seo-description: 将key-value字段保留为空可搜索更广泛的信号，并使用可用的过滤器缩小结果。
-seo-title: 按过滤器搜索信号
-title: 按过滤器搜索信号
+description: 将键值字段留空以搜索范围更广的信号，并使用可用的过滤器缩小结果范围。
+seo-description: 将键值字段留空以搜索范围更广的信号，并使用可用的过滤器缩小结果范围。
+seo-title: 按滤镜搜索信号
+title: 按滤镜搜索信号
 uuid: 99b00d48-6415-4cb1-848a-5401b34c43a6
 translation-type: tm+mt
 source-git-commit: 212ec8641068a9ed4c620987bb18586ee8c7d519
@@ -10,12 +10,12 @@ source-git-commit: 212ec8641068a9ed4c620987bb18586ee8c7d519
 ---
 
 
-# Search Signals by Filters {#search-signals-by-filters}
+# 按滤镜搜索信号 {#search-signals-by-filters}
 
-将key-value字段保留为空可搜索更广泛的信号，并使用可用的过滤器缩小结果。
+将键值字段留空以搜索范围更广的信号，并使用可用的过滤器缩小结果范围。
 
-当您心中没有特定的键值对时，请使用此方法，但要在特定时间段内查看多个信号的演变。
+当您没有特定的键值对，但希望查看特定时间段内多个信号的演化时，请使用此方法。
 
-在以下示例中，过滤器配置为在过去30天内显示所有未使用的信号，最低计数为1000。
+在以下示例中，过滤器配置为显示过去30天内所有未使用的信号，最少计数为1000。
 
 ![](assets/signals-search-filters.png)
