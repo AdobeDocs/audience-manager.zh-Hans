@@ -1,10 +1,10 @@
 ---
-description: 一些常用宏如何用于创建出站文件模板的示例。
-seo-description: 一些常用宏如何用于创建出站文件模板的示例。
+description: 一些常见宏用于创建出站文件模板的示例。
+seo-description: 一些常见宏用于创建出站文件模板的示例。
 seo-title: 出站宏示例
 solution: Audience Manager
 title: 出站宏示例
-uuid: 823d85d4-d683-45cf-9e60-c12 b7 d52 a498
+uuid: 823d85d4-d683-45cf-9e60-c12b7d52a498
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
@@ -13,15 +13,15 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 # 出站宏示例 {#outbound-macro-examples}
 
-一些常用宏如何用于创建出站文件模板的示例。
+一些常见宏用于创建出站文件模板的示例。
 
 >[!NOTE]
 >
->In the tables, **boldface** type identifies each macro with its related output. For the format examples, the `<` `>` symbols have been added to help visually separate each macro.
+>在表中，粗体 **类型** (boldface type)用其相关输出标识每个宏。 对于格式示例，已添 `<``>` 加符号以帮助以可视方式分隔每个宏。
 
-## File Name Macros {#file-name-macros}
+## 文件名宏 {#file-name-macros}
 
-For a list of available macros and definitions, see [Outbound Template Macros](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md).
+有关可用宏和定义的列表，请参阅 [出站模板宏](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)。
 
 <table id="table_B5073597219B470298EE614902DACAE8"> 
  <thead> 
@@ -33,27 +33,27 @@ For a list of available macros and definitions, see [Outbound Template Macros](.
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> DPID </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_ &lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;.sync </code> </p> <p>Output: <code> ftp_215_ 888_iter_1449756724.sync </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_ &lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;.sync </code> </p> <p>输出： <code> ftp_215_888_iter_1449756724.sync </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> MASTER_ DPID </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_ &lt;MASTER_DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;.sync </code> </p> <p>Output: <code> ftp_215_888_ 20915_iter_1449756724.sync </code> </p> </td> 
+   <td colname="col1"> <p> <code> MASTER_DPID </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;MASTER_DPID&gt;__&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;.sync </code> </p> <p>输出： <code> ftp_215_888_20915_iter_1449756724.sync </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> ORDER_ ID </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;SYNC_TYPE&gt;_ &lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;.sync </code> </p> <p>Output: <code> ftp_ 215_888_iter_1449756724.sync </code> </p> </td> 
+   <td colname="col1"> <p> <code> ORDER_ID </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;SYNC_TYPE&gt;_ &lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;.sync </code> </p> <p>输出： <code> ftp_215_888_iter_1449756724.sync </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 同步模式 </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_ &lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;.sync </code> </p> <p>Output（输出）: </p> <p> 
+   <td colname="col1"> <p> <code> SYNC_MODE </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;.sync </code> </p> <p>Output（输出）: </p> <p> 
      <ul id="ul_F63D7B78AF1246639D6ED85C1621B17C"> 
-      <li id="li_4D0D7B4D047345FE861FCBA2BD0408ED">Full: <code> ftp_215_888_ full_1449756724.sync </code> </li> 
-      <li id="li_23F4D1F6B2784E599EDA29AA457327E6">Incremental: <code> ftp_215_888_ iter_1449756724.sync </code> </li> 
+      <li id="li_4D0D7B4D047345FE861FCBA2BD0408ED">完整： <code> ftp_215_888_full_1449756724.sync </code> </li> 
+      <li id="li_23F4D1F6B2784E599EDA29AA457327E6">增量： <code> ftp_215_888_iter_1449756724.sync </code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> SYNC_ TYPE </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;.sync </code> </p> <p>Output（输出）: </p> <p> 
+   <td colname="col1"> <p> <code> SYNC_TYPE </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;.sync </code> </p> <p>Output（输出）: </p> <p> 
      <ul id="ul_11B14E740E40474F8302BDB809C428FE"> 
       <li id="li_54A3EAA468B44AC8B2528F855E03D04B">FTP: <code> ftp_215_888_iter_1449756724.sync </code> </li> 
       <li id="li_93468C56B661463CA7F62B1F5D3A53FF">https: <code> http_215_888_iter_1449756724.sync </code> </li> 
@@ -62,14 +62,14 @@ For a list of available macros and definitions, see [Outbound Template Macros](.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 时间戳 </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;_ &lt;TIMESTAMP&gt;_&lt;admin&gt;&lt;.sync&gt; </code> </p> <p>Output: <code> ftp_215_888_iter_ 1449756724.sync </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;__ &lt;TIMESTAMP&gt;_&lt;admin&gt;&lt;.sync&gt; </code> </p> <p>输出： <code> ftp_215_888_iter_1449756724.sync </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Header Row Macros {#header-macros}
+## 标题行宏 {#header-macros}
 
-For a list of available macros and definitions, see [Outbound Template Macros](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md).
+有关可用宏和定义的列表，请参阅 [出站模板宏](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)。
 
 <table id="table_ABC31B3D660D47969E111EBC734D5BBC"> 
  <thead> 
@@ -80,15 +80,15 @@ For a list of available macros and definitions, see [Outbound Template Macros](.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> TAB </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;ORDER_ID&gt; &lt;TAB&gt;&lt;SYNC_TYPE&gt; </code> </p> <p>Output: <code> 888 full.sync </code> </p> <p>在输出中，非打印选项卡字符将分隔每个元素。 </p> </td>
+   <td colname="col1"> <p> <code> 选项卡 </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;ORDER_ID&gt; &lt;TAB&gt;&lt;SYNC_TYPE&gt; </code> </p> <p>输出： <code> 888 full.sync </code> </p> <p>在输出中，非打印制表符分隔每个元素。 </p> </td>
   </tr>
  </tbody>
 </table>
 
-## File Content Macros {#file-content-macros}
+## 文件内容宏 {#file-content-macros}
 
-For a list of available macros and definitions, see [Outbound Template Macros](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md).
+有关可用宏和定义的列表，请参阅 [出站模板宏](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)。
 
 <table id="table_408C6DD2B9D54550B003EAC93562E64F"> 
  <thead> 
@@ -99,56 +99,55 @@ For a list of available macros and definitions, see [Outbound Template Macros](.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> DP_ UUID </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;DP_UUID&gt;&lt;TAB&gt;&lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>Output: <code> 123456 UUID1 UUID2 UUID3 </code> </p> </td> 
+   <td colname="col1"> <p> <code> DP_UUID </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;DP_UUID&gt;&lt;TAB&gt;&lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>输出： <code> 123456 UUID1 UUID2 UUID3 </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> DP_ UUID_ LIST </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;DP_UUID&gt;&lt;TAB&gt; &lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>Output: <code> 123456 UUID1 UUID2 UUID3 </code> </p> </td> 
+   <td colname="col1"> <p> <code> DP_UUID_LIST </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;DP_UUID&gt;&lt;TAB&gt; &lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>输出： <code> 123456 UUID1 UUID2 UUID3 </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> DPUUDS </code> </p> </td> 
-   <td colname="col2"> <p>请参见下面的单独部分。 </p> </td> 
+   <td colname="col1"> <p> <code> DPUUIDS </code> </p> </td> 
+   <td colname="col2"> <p>请参阅下面的单独部分。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> REMOVED_ SERVER_ LIST </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;DP_UUID&gt; &lt;REMOVED_SEGMENT_LIST;separator=" "&gt; </code> </p> <p>Output: <code> 123456 105955 101183 101180 101179 </code> </p> </td> 
+   <td colname="col1"> <p> <code> REMOVED_SEGMENT_LIST </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;DP_UUID&gt; &lt;REMOVED_SEGMENT_LIST;separator=" "&gt; </code> </p> <p>输出： <code> 123456 105955 101183 101180 101179 </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> Segment_ LIST </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;DP_UUID&gt; &lt;SEGMENT_LIST;separator=" "&gt; </code> </p> <p>Output: <code> 123456 105955 101183 101180 101179 </code> </p> </td> 
+   <td colname="col1"> <p> <code> SEGMENT_LIST </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;DP_UUID&gt; &lt;SEGMENT_LIST;separator=" "&gt; </code> </p> <p>输出： <code> 123456 105955 101183 101180 101179 </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> if(Segment_ LIST&amp;&amp; REMOVED_ SERVER_ LIST) endif </code> </p> </td> 
+   <td colname="col1"> <p> <code> if(SEGMENT_LIST &amp;&amp; REMOVED_SEGMENT_LIST)endif </code> </p> </td> 
    <td colname="col2"> <p><b>格式：</b> </p> <p> 
-     <code>{“advertiseriID”：“&lt; PIDAAS&gt;”、“dataEnterID”：2，“TID”：“&lt; DP_ UUID&gt;”、“数据”：[&lt; SUNTENCE_ LIST：{seg||&lt; OPEN_ COLLY_ STAREN&gt;“名称”：“&lt; seg. alias&gt;”&lt; CLOSE_ COURLY_ HOSTER&gt;}；separator="，"&gt;&lt;(Segment_ LIST&amp;&amp; REMOVED_ SERVER_ LIST)&gt;&lt; COMMMA&gt;&lt; endif&gt;&lt; REMOVED&gt;&lt; REMOVED_ SERVER_ LIST：{seg||&lt; OPEN_ COLLY_ STAREN&gt;“名称”：“&lt; seg. alias&gt;”，“ttlinMinutes”：&lt; CLOSE_ COLLY_ HOSTER&gt;}；separator="，"&gt;]} </code>
- </p><p><b>Output（输出）:</b></p> <p>
-     <code>//First示例{“advertiseriID”：“12345”、“dataEnterID”：2，“TID”：“dfd215e4-8d6b-4fdb-90b9-fab4456 f2 c9 d”，“数据”：[{“名称”：“4321”}]}//Second示例{“advertiseriID”：“12345”、“dataEnterID”：2，“TID”：“9099e8fe-abab-5114-aba-28bda0539 ca”，“数据”：[{“名称”：“4321”}、{“Name”：“987”，“ttlinTips”：0}，{“Name”：“654”，“ttlin分钟”：}]}} </code>
- </p> <p> <p>Note:  In the first example, the macro only returns data for <code> SEGMENT_LIST </code> because <code> REMOVED_SEGMENT_LIST </code> is empty. 第二个示例返回两个宏的数据。 </p> </p> </td> 
+     <code>
+       {"AdvertiserId":"&lt;PIDALIAS&gt;", "DataCenterId": 2,"TDID":"&lt;DP_UUID&gt;", "Data":[&lt;SEGMENT_LIST:{seg|&lt;OPEN_CURLY_BRACKET&gt;"Name":"&lt;seg.aias."&lt;CLOSECURLY_BRACKET&gt;};separator=","&gt;&lt;if(SEGMENT_LIST &amp;&amp; REMOVED_SEGMENT_LIST)&gt;&lt;逗号&gt;&lt;endif&gt;&lt;REMOVED_SEGMENT_LIST:{seg|&lt;OPEN_CURLY_BRACKET&gt;"", "TtlInMinutes":0&lt;CLOSE_CURLY_BRACKET&gt;}; separator=","&gt;]} </code></p><p><b>Output（输出）:</b></p> <p>
+     <code>//第一个示例{"AdvertiserId":"12345", "DataCenterId": 2, "TDID":"dfd215e4-8d6b-4fdb-90b9-fab4456f2c9d","Data":["Name"":"4321"}} //第二个示例{"AdvertiserId":"12345", "DataCenterId":2,"TDID":"9099e8fe-ababab-5114-abaa-28bdaa0533ca","Data":[{"Name":"4321"},{"Name":"987","TtlInMinutes":0}, {"Name":"654","TtlInMinutes":0}]} </code></p> <p> <p>注意： 在第一个示例中，宏仅返回 <code> SEGMENT_LIST的数据，因 </code> 为 <code> REMOVED_SEGMENT_LIST </code> 为空。 第二个示例返回两个宏的数据。 </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> SET_ TERMATS </code> </p> </td> 
-   <td colname="col2"> <p>格式: </p> <p> <code> &lt; PID&gt;&lt; TAB&gt;&lt; UUID&gt;&lt; UUID&gt;&lt; TAB&gt;&lt; DP_ UUID&gt;&lt; TAB&gt;&lt; SET_ OUTTIONS&gt;&lt; TAB&gt;&lt; OPTION_ OUT&gt;&lt; TAB&gt;&lt; SUNCTION_ LIST：{seg||&lt; seg. type&gt;、&lt; see. alias&gt;、&lt; OUTPUT_ PROGATIBER_ VALUE&gt;、&lt; Seg. laxDisdateTime&gt;&amp;}&gt; </code> </p> <p>Output（输出）: </p> <p> <code> 115900080085796796836537415797507373717T0aj01b120p1，1344114661000&amp;5,103713,1,1343250661000 </code> </p> </td> 
+   <td colname="col1"> <p> <code> SET_ATTRIBUTES </code> </p> </td> 
+   <td colname="col2"> <p>格式: </p> <p> <code> &lt;PID&gt;&lt;TAB&gt;&lt;UUID&gt;&lt;TAB&gt;&lt;DP_UUID&gt;&lt;TAB&gt;&lt;SET_ATTRIBUTES&gt;&lt;TAB&gt;&lt;OPT_OUT&gt;&lt;TAB&gt;&lt;SEGMENT_LIST:{seg|&lt;seg.type&gt;,&lt;OUTPUT_ATRIBUTE_VALUE&gt;,&lt;seg.lastUpdateTime&gt;&amp;}&gt; </code> </p> <p>Output（输出）: </p> <p> <code> 1159 0008800857968365374151629750971735000 17t0aj01b120hp1 0 5,103714,1,1344114661000&amp;5,103713,1,1343250661000 </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> TAB </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;DP_UUID&gt;&lt;TAB&gt;&lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>Output: <code> 123456 UUID1 UUID2 UUID3 </code> </p> <p>在输出中，非打印选项卡字符将分隔每个元素。 </p> </td> 
+   <td colname="col1"> <p> <code> 选项卡 </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;DP_UUID&gt;&lt;TAB&gt;&lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>输出： <code> 123456 UUID1 UUID2 UUID3 </code> </p> <p>在输出中，非打印制表符分隔每个元素。 </p> </td> 
   </tr>
   <tr>
-   <td colname="col1"> <p> <code> TRAIT_ LIST </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;PID&gt;&lt;TAB&gt;&lt;DP_UUID&gt;&lt;TAB&gt;&lt;SET_ATTRIBUTES&gt;&lt;TAB&gt; &lt;TRAIT_LIST;separator="|"&gt; </code> </p> <p>Output: <code> 1131 12345 1 123|456|789 </code> </p> </td> 
+   <td colname="col1"> <p> <code> TRAIT_LIST </code> </p> </td> 
+   <td colname="col2"> <p>格式： <code> &lt;PID&gt;&lt;TAB&gt;&lt;DP_UUID&gt;&lt;TAB&gt;&lt;SET_ATTRIBUTES&gt;&lt;TAB&gt; &lt;TRAIT_LIST;separator="|"&gt; </code> </p> <p>输出： <code> 1131 12345 1 123|456|789 </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### `DPUUID` 示例
 
-To help you understand how the `DPUUID` macro outputs data, lets assume we have 2 `DPID`s mapped to `DPUUID`s as shown below:
+为了帮助您了解宏输出数 `DPUUID` 据的方式，我们假定我们有2 `DPID`个映射 `DPUUID`到，如下所示：
 
-* DPID `1111` maps to DPUUIDs `AAAA` (timestamp = 1) and `BBBB` (timestamp = 2).
-* DPID `2222` maps to DPUUID `CCCC`.
+* DPID `1111` 映射到DPUUID `AAAA` (timestamp = 1)和 `BBBB` (timestamp = 2)。
+* DPID映 `2222` 射到DPUUID `CCCC`。
 
-在这些情况下，下表列出了一些可能的格式字符串及其输出。
+鉴于这些情况，下表枚举了一些可能的格式字符串及其输出。
 
 <table id="table_6A6D94F994C1475BB09126BA0B815B1F"> 
  <thead> 
@@ -161,18 +160,18 @@ To help you understand how the `DPUUID` macro outputs data, lets assume we have 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>返回单个DPID的所有映射 </p> </td> 
-   <td colname="col2"> <p> <code> &lt; DPUUDS；format=“dpds=1111| maxMapTypes=0| format= json”&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [[“1111”、“AAAA”]、[“1111”、“BBBB”]] </code> </p> </td> 
+   <td colname="col2"> <p> <code> &lt;DPUUIDS;format="dpids=111|maxMappings=0|format=json"&gt; </code> </p> </td> 
+   <td colname="col3"> <p> <code> [["1111","AAAA"],["1111","BBBB"]] </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>为所有DPII返回最多个映射 </p> </td> 
-   <td colname="col2"> <p> <code> &lt; DPUUDS；format="dpds=1111,2222| maxMapTypes=1| format= json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [[“1111”、“BBBB”]、[“2222”、“CCCC”]] </code> </p> <p>For DPID <code> 1111 </code>, the macro maps to DPUUID <code> BBBB </code> only because that ID has the larger timestamp. </p> </td> 
+   <td colname="col1"> <p>为所有DPID返回最多1个映射 </p> </td> 
+   <td colname="col2"> <p> <code> &lt;DPUUIDS;format="dpids=1111,222|maxMappings=1|format=json"&gt; </code> </p> </td> 
+   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>对于DPID <code> 1111 </code>，宏映射到DPUUID <code> BBBB，仅因 </code> 为该ID的时间戳较大。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>为单个DPID返回最多个映射 </p> </td> 
-   <td colname="col2"> <p> <code> &lt; DPUUDS；format="dpds=2222| maxMapTypes=2| format= json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [[“2222”，“CCCC”]] </code> </p> <p>Even though <code> maxMappings=2 </code>, this macro returns only 1 DPID to DPUUID mapping because the specified DPID has only one DPUUID. </p> </td> 
+   <td colname="col1"> <p>为单个DPID返回最多2个映射 </p> </td> 
+   <td colname="col2"> <p> <code> &lt;DPUUIDS;format="dpids=222|maxMappings=2|format=json"&gt; </code> </p> </td> 
+   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>即使 <code> maxMappings=2，此宏也只 </code>返回1个DPUUID到DPUUID映射，因为指定的DPID只有一个DPUUID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
