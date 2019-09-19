@@ -1,6 +1,6 @@
 ---
-description: 事件调用将信息发送到URL字符串中的DCS。在典型Audience Manager部署中，客户使用我们的JavaScript数据收集代码(DIL)向DCS发送数据。但是，有时客户无法将我们的JavaScript代码放在其页面上。如果公司政策或其他技术问题阻止您将我们的JavaScript代码放在页面上，您仍可以使用Audience Manager通过这些活动调用API从DCS发送和返回数据。
-seo-description: 事件调用将信息发送到URL字符串中的DCS。在典型Audience Manager部署中，客户使用我们的JavaScript数据收集代码(DIL)向DCS发送数据。但是，有时客户无法将我们的JavaScript代码放在其页面上。如果公司政策或其他技术问题阻止您将我们的JavaScript代码放在页面上，您仍可以使用Audience Manager通过这些活动调用API从DCS发送和返回数据。
+description: 事件调用以URL字符串的形式向DCS发送信息。 在典型的Audience manager部署中，客户使用我们的JavaScript数据收集代码(DIL)将数据发送到DCS。 但是，有时客户无法将JavaScript代码放在其页面上。 如果公司策略或其他技术问题妨碍您将JavaScript代码放在您的页面上，您仍可以与Audience manager一起使用这些事件调用API从DCS发送和返回数据。
+seo-description: 事件调用以URL字符串的形式向DCS发送信息。 在典型的Audience manager部署中，客户使用我们的JavaScript数据收集代码(DIL)将数据发送到DCS。 但是，有时客户无法将JavaScript代码放在其页面上。 如果公司策略或其他技术问题妨碍您将JavaScript代码放在您的页面上，您仍可以与Audience manager一起使用这些事件调用API从DCS发送和返回数据。
 seo-title: DCS事件调用API
 solution: Audience Manager
 title: DCS事件调用API
@@ -11,25 +11,25 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 ---
 
 
-# DCS Event Call APIs {#dcs-event-call-apis}
+# DCS事件调用API {#dcs-event-call-apis}
 
-Event calls send information to the [!UICONTROL DCS] in a [!DNL URL] string. In a typical Audience Manager deployment, customers use our [!DNL JavaScript] data collection code ([!UICONTROL DIL]) to send data to the [!UICONTROL DCS]. However, sometimes customers cannot put our [!DNL JavaScript] code on their pages. If company policies or other technical issues prevent you from placing our [!DNL JavaScript] code on your pages, you can still work with Audience Manager to send and return data from [!UICONTROL DCS] with these event call [!DNL API]s.
+事件调用将信息发送 [!UICONTROL DCS] 到字符串 [!DNL URL] 中。 在典型的Audience manager部署中，客户使用我 [!DNL JavaScript] 们的数据收集代码([!UICONTROL DIL])向发送数据 [!UICONTROL DCS]。 但是，有时客户无法将我们的 [!DNL JavaScript] 代码放在其页面上。 如果公司政策或其他技术问题妨碍您将我们的代码放在您的页面上，您仍可以与Audience manager一起使用这些活动调用发送和 [!DNL JavaScript] 返回数据 [!UICONTROL DCS][!DNL API]。
 
 ## 快速入门 {#dcs-getting-started}
 
-本节包含相关信息和相关参考资料，其中显示了如何：
+本节包含向您展示如何执行以下操作的信息和相关参考资料：
 
-* Make calls to the [!UICONTROL DCS].
-* Receive data from the [!UICONTROL DCS].
-* 在调用中设置数据元素的格式。
-* Understand the parameters returned by the [!UICONTROL DCS].
+* 拨叫 [!UICONTROL DCS]。
+* 从接收数据 [!UICONTROL DCS]。
+* 设置调用中数据元素的格式。
+* 了解由返回的参数 [!UICONTROL DCS]。
 
-要开始，请参阅下面的部分。Start with [Send Data to the DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md). After that, move on to [Receive Data From the DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md).
+要开始，请参阅以下各节。 从将数 [据发送到DCS开始](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)。 之后，继续从DCS [接收数据](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)。
 
 * [将数据发送到DCS](dcs-url-send.md)
 * [从DCS接收数据](dcs-url-receive.md)
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [DCS API参考](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
 
