@@ -1,27 +1,27 @@
 ---
-description: 可通过编程方式列出Audience Manager DCS区域的方法。
-seo-description: 可通过编程方式列出Audience Manager DCS区域的方法。
+description: 允许您以编程方式列出Audience Manager DCS区域的方法。
+seo-description: 允许您以编程方式列出Audience Manager DCS区域的方法。
 seo-title: DCS区域API方法
 solution: Audience Manager
 title: DCS区域API方法
-uuid: 00b70927-b3 b7-46bb-8be1-37c6100 ef80
+uuid: 00b70927-b3b7-46bb-8be1-37c6100ecf80
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# DCS Region API Methods {#dcs-region-api-methods}
+# DCS区域API方法 {#dcs-region-api-methods}
 
-Methods that let you programmatically list Audience Manager [!UICONTROL DCS] regions.
+允许您以编程方式列出Audience manager区域的 [!UICONTROL DCS] 方法。
 
 <!-- c_rest_api_regions.xml -->
 
 For a list of regions and their corresponding integers, see [DCS Region IDs, Locations, and Host Names](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
 
-## List a Specific DCS Region {#list-specific-dcs-region}
+## 列出特定DCS区域 {#list-specific-dcs-region}
 
-`GET` 用于列出特定 [!UICONTROL DCS] 区域的方法。
+一种 `GET` 列出特定区域的 [!UICONTROL DCS] 方法。
 
 <!-- r_rest_api_regions_list_specific.xml -->
 
@@ -45,13 +45,13 @@ For a list of regions and their corresponding integers, see [DCS Region IDs, Loc
   }
 ```
 
-Returns `200 OK` if successful.
+成功 `200 OK` 时返回。
 
 For a list of regions and their corresponding integers, see [DCS Region IDs, Locations, and Host Names](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
 
-## List DCS Regions {#list-dcs-regions}
+## 列出DCS区域 {#list-dcs-regions}
 
-`GET` 列出 [!UICONTROL DCS] 区域的方法。
+一种 `GET` 列出区域的 [!UICONTROL DCS] 方法。
 
 <!-- r_rest_api_regions_list.xml -->
 
@@ -78,6 +78,6 @@ For a list of regions and their corresponding integers, see [DCS Region IDs, Loc
 ]
 ```
 
-Returns `200 OK` if successful.
+成功 `200 OK` 时返回。
 
 For a list of regions and their corresponding integers, see [DCS Region IDs, Locations, and Host Names](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
