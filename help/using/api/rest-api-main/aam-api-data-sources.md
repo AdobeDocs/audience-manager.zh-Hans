@@ -1,6 +1,6 @@
 ---
-description: 可用于管理与帐户关联的数据源的API方法。
-seo-description: 可用于管理与帐户关联的数据源的API方法。
+description: API方法，用于管理与帐户关联的数据源。
+seo-description: API方法，用于管理与帐户关联的数据源。
 seo-title: 数据源 API 方法
 solution: Audience Manager
 title: 数据源 API 方法
@@ -13,14 +13,14 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 # 数据源 API 方法 {#data-source-api-methods}
 
-[!DNL API] 允许您管理与帐户关联的数据源的方法。
+[!DNL API] 用于管理与帐户关联的数据源的方法。
 
 <!-- c_rest_data_sources.xml -->
 
 >[!IMPORTANT]
 >
->The data source [!DNL API] methods have been rewritten with [!DNL Swagger] and migrated. 请参阅：
+>数据源方 [!DNL API] 法已被重写并进 [!DNL Swagger] 行迁移。 请参阅：
 >
->* [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html)
+>* [Adobe Audience Manager API文档](https://bank.demdex.com/portal/swagger/index.html)
 >* [Audience Manager API代码迁移](../../api/api-swagger-migration.md)
 >
