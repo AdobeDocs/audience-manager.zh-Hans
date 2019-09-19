@@ -1,33 +1,33 @@
 ---
-description: 传输控制(.info)文件提供有关文件传输的元数据信息，以便合作伙伴能够验证Audience Manager是否正确处理了文件传输。
-seo-description: 传输控制(.info)文件提供有关文件传输的元数据信息，以便合作伙伴能够验证Audience Manager是否正确处理了文件传输。
-seo-title: 为日志文件传输传输控制文件
+description: 传输控制(.info)文件提供有关文件传输的元数据信息，以便合作伙伴可以验证Audience manager是否正确处理了文件传输。
+seo-description: 传输控制(.info)文件提供有关文件传输的元数据信息，以便合作伙伴可以验证Audience manager是否正确处理了文件传输。
+seo-title: 日志文件传输的传输控制文件
 solution: Audience Manager
-title: 为日志文件传输传输控制文件
-uuid: ef58213e-7b37-4c5a-855-0de695706793
+title: 日志文件传输的传输控制文件
+uuid: ef58213e-7b37-4c5a-8556-0de695706793
 translation-type: tm+mt
 source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
 
 ---
 
 
-# Transfer-Control Files for Log File Transfers {#transfer-control-files-for-log-file-transfers}
+# 日志文件传输的传输控制文件 {#transfer-control-files-for-log-file-transfers}
 
-Transfer-control ([!DNL .info]) files provide metadata information about file transfers so that partners can verify that Audience Manager handled file transfers correctly.
+传输控制([!DNL .info])文件提供有关文件传输的元数据信息，以便合作伙伴可以验证Audience manager是否正确处理了文件传输。
 
-[!DNL Audience Manager] 将传输控制文件发送给每个文件传输的合作伙伴。Due to the multi-thread nature of the [!DNL FTP] publisher, the transfer-control file might be sent before the actual files are finished transferring.
+[!DNL Audience Manager] 每次文件传输时，都会向合作伙伴发送一个转移控制文件。 由于发布者的多线程性 [!DNL FTP] 质，传输控制文件可能会在实际文件传输完成之前发送。
 
-[!DNL .info] 文件中的元数据允许合作伙伴：
+文件中的元数据使 [!DNL .info] 合作伙伴能：
 
-* 确定完整传输周期何时完成(已交付序列中的文件总数)；
-* 确定序列中给定文件是否完整/正确(通过按字节数和行数检查文件大小)；
-* 验证在接收结束的数据库中加载文件后，原始文件中的行数记录行数(以行的文件大小)。
+* 确定完整传输周期的完成时间（序列中已传送的文件总数）;
+* 确定序列中的任何给定文件是否完整／正确(通过检查文件的大小（以字节为单位）和行总数);
+* 验证原始数据文件中的行数与接收端数据库中加载文件后的行数（文件的行数）。
 
-## File Naming Conventions {#file-naming-conventions}
+## 文件命名约定 {#file-naming-conventions}
 
-The transfer-control file has the same name as the root of the batch/sequence with a [!DNL .info] file extension.s
+transfer-control文件与具有文件扩展名的批处理／序列的根文件 [!DNL .info] 同名。
 
-For example, if the first file in the sequence were named: [!DNL ftp_12345_67890_full_1500727351632-1.sync], the control file would be named [!DNL ftp_12345_67890_iter_1500727351632.info].
+例如，如果序列中的第一个文件被命名为：将 [!DNL ftp_12345_67890_full_1500727351632-1.sync]命名控件文件 [!DNL ftp_12345_67890_iter_1500727351632.info]。
 
 ## 文件格式 {#file-format}
 
@@ -72,10 +72,10 @@ For example, if the first file in the sequence were named: [!DNL ftp_12345_67890
 }
 ```
 
->[Note]
+>[注意]
 >
-> The batch total numbers are exclusive of the [!DNL .info] file itself. That is, the totals do not include the [!DNL .info] file, its byte size, or its line count.
+> 批总数不包括文件 [!DNL .info] 本身。 即，总数不包括文件、 [!DNL .info] 其字节大小或行数。
 >
-> 文件和行计数的字节大小包括任何标题和分隔符(空白)行/行。为了获得实际的数据线/行的计数，减少标题。
+> 文件的字节大小和行数包括任何标题和分隔符（空白）行／行。 为了获得实际数据行／行的计数，请减去标题。
 >
-> 批处理和总字节大小中的总行数包括任何标题和空间行。
+> 批处理中的行总数和字节总大小包含任何标题行和空格行。
