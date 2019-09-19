@@ -84,7 +84,7 @@ source-git-commit: a2825f256364668abc4e6760a473713fec8626e3
 
 >[!IMPORTANT]
 >
->如果您已经使用或选项定义 **[!UICONTROL Current Authenticated Profiles]** 了规 **[!UICONTROL Last Authenticated Profiles]** 则，可跳到第4步- [创建受众细分](#create-audience-segments)。
+>如果已经使用或选项定义了规 **[!UICONTROL Current Authenticated Profiles]** 则， **[!UICONTROL Last Authenticated Profiles]** 则可跳到第4步- [创建受众细分](#create-audience-segments)。
 
 1. 登录您的Audience manager帐户并转 **[!UICONTROL Audience Data]** 到-&gt; **[!UICONTROL Profile Merge Rules]**。
 2. 单击 **[!UICONTROL Add New Rule]**.
