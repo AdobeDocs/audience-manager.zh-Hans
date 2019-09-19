@@ -1,29 +1,29 @@
 ---
-description: 允许您使用数据集成库(DIL)编程工作的方法。
-seo-description: 允许您使用数据集成库(DIL)编程工作的方法。
+description: 允许您以编程方式使用数据集成库(DIL)的方法。
+seo-description: 允许您以编程方式使用数据集成库(DIL)的方法。
 seo-title: 数据集成库API方法
 solution: Audience Manager
 title: 数据集成库API方法
-uuid: 507e7afd-3ae7-44de-98b0-589d693c453b
+uuid: 507e7afd-3ae7-44de-98b0-589d699c453b
 translation-type: tm+mt
 source-git-commit: 5e08861f8bfe88559b089fae00bd14e576f2d0ac
 
 ---
 
 
-# Data Integration Library API Methods {#data-integration-library-api-methods}
+# 数据集成库API方法 {#data-integration-library-api-methods}
 
-Methods that let you work programmatically with the [!UICONTROL Data Integration Library] ([!UICONTROL DIL].
+允许您以编程方式使用(...) [!UICONTROL Data Integration Library] 的方[!UICONTROL DIL]法
 
 >[!IMPORTANT]
 >
->已弃用数据集成库API。This API used to generate DIL, which you can now self-download here: [DIL download](https://github.com/Adobe-Marketing-Cloud/dil/releases).
+>数据集成库API已弃用。 此API用于生成DIL，您现在可以从此处自下载： [DIL下载](https://github.com/Adobe-Marketing-Cloud/dil/releases)。
 
 <!-- c_data_integr_library_api.xml -->
 
-## Return Versions for DIL {#return-version-dil}
+## DIL的退回版本 {#return-version-dil}
 
-A `GET` method that returns a list of versions ordered from oldest to newest.
+返回 `GET` 从最旧到最新排序的版本列表的方法。
 
 <!-- r_api_return_versions_dil.xml -->
 
@@ -33,15 +33,15 @@ A `GET` method that returns a list of versions ordered from oldest to newest.
 
 ### 响应
 
-A successful request returns response code `["4.0", "4.1"]` as shown below.
+成功的请求将返回响应 `["4.0", "4.1"]` 代码，如下所示。
 
 ```
 ["4.0", "4.1"]
 ```
 
-## Return JSON Schema for Version {#return-json-schema-version}
+## 返回版本的JSON架构 {#return-json-schema-version}
 
-`GET` 返回版本 [!DNL JSON] 架构的方法 [!UICONTROL DIL] 。Supports using alias [!UICONTROL LATEST] for version to get the latest version of [!UICONTROL DIL].
+返 `GET` 回版本模 [!DNL JSON] 式的方 [!UICONTROL DIL] 法。 支持使用版 [!UICONTROL LATEST] 本别名获取最新版本 [!UICONTROL DIL]。
 
 <!-- r_api_return_json_schema_for_version.xml -->
 
@@ -51,7 +51,7 @@ A successful request returns response code `["4.0", "4.1"]` as shown below.
 
 ### 响应
 
-A successful request returns response code `["4.0", "4.1"]` and data as shown below.
+成功的请求将返回响应 `["4.0", "4.1"]` 代码和数据，如下所示。
 
 ```
 { 
@@ -375,9 +375,9 @@ A successful request returns response code `["4.0", "4.1"]` and data as shown be
 } 
 ```
 
-## Generate DIL {#generate-dil}
+## 生成DIL {#generate-dil}
 
-A `GET` method that generates [!UICONTROL DIL] based on passed in request body using the specified version of [!UICONTROL DIL]. If the alias `LATEST` is used for version in the URL, the latest version of [!UICONTROL DIL] is generated.
+一种 `GET` 基于使用指 [!UICONTROL DIL] 定版本的传入请求主体生成的方法 [!UICONTROL DIL]。 如果别名 `LATEST` 用于URL中的版本，则会生成最新版本的 [!UICONTROL DIL] 别名。
 
 <!-- r_api_generate_dil.xml -->
 
@@ -461,4 +461,4 @@ A `GET` method that generates [!UICONTROL DIL] based on passed in request body u
 
 ### 响应
 
-A successful update returns response code `201 created` along with the [!UICONTROL DIL] [!DNL JavaScript] code.
+成功的更新会返回响应 `201 created` 代码和该 [!UICONTROL DIL] 代 [!DNL JavaScript] 码。
