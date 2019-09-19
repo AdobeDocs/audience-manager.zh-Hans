@@ -5,7 +5,7 @@ seo-title: 工作流C —— 基于实名活动和离线数据的个性化
 solution: Audience Manager
 title: 工作流C —— 基于实名活动和离线数据的个性化
 translation-type: tm+mt
-source-git-commit: 455c198d7a096a620a2cf7c8b728b67335eadc8d
+source-git-commit: a2825f256364668abc4e6760a473713fec8626e3
 
 ---
 
@@ -110,7 +110,7 @@ source-git-commit: 455c198d7a096a620a2cf7c8b728b67335eadc8d
 
 >[!IMPORTANT]
 >
->受众管理器通过身份验证令牌处理与社交平台的集成，该令牌在一定时间后过期。 有关如何续订过期令牌的详细信息，请参阅身份验证令牌续订。
+>Audience manager通过身份验证令牌处理与社交平台的集成，这些令牌在一定时间后过期。 有关如何续订过期令牌的详细信息，请参阅身份验证令牌续订。
 
 ## 第6步——创建基于人员的目标 {#create-destination}
 
