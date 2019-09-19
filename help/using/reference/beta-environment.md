@@ -1,11 +1,11 @@
 ---
-description: Beta环境用于测试Audience Manager实施。测试版中所做的更改不会影响生产数据。如果您希望使用Beta环境，请与Audience Manager合作伙伴解决方案代表联系。
-keywords: sandbox
-seo-description: Beta环境用于测试Audience Manager实施。测试版中所做的更改不会影响生产数据。如果您希望使用Beta环境，请与Audience Manager合作伙伴解决方案代表联系。
+description: 测试版环境用于测试Audience manager实施。 测试版中所做的更改不会影响生产数据。 如果您对使用测试版环境感兴趣，请与Audience manager合作伙伴解决方案代表联系。
+keywords: 沙箱
+seo-description: 测试版环境用于测试Audience manager实施。 测试版中所做的更改不会影响生产数据。 如果您对使用测试版环境感兴趣，请与Audience manager合作伙伴解决方案代表联系。
 seo-title: 测试版环境
 solution: Audience Manager
 title: 测试版环境
-uuid: de4a1a46-cfa4-4f64-8569-48a7650 fd8 cf
+uuid: de4a1a46-cfa4-4f64-8569-48a7650fd8cf
 translation-type: tm+mt
 source-git-commit: a1960a65058622c198bb07d7c20c1e21e2eaf00a
 
@@ -14,19 +14,19 @@ source-git-commit: a1960a65058622c198bb07d7c20c1e21e2eaf00a
 
 # 测试版环境 {#beta-environment}
 
-Beta环境用于测试Audience Manager实施。测试版中所做的更改不会影响生产数据。如果您希望使用Beta环境，请与Audience Manager合作伙伴解决方案代表联系。
+测试版环境用于测试Audience manager实施。 测试版中所做的更改不会影响生产数据。 如果您对使用测试版环境感兴趣，请与Audience manager合作伙伴解决方案代表联系。
 
 ## 概述
 
-Beta环境是制作环境的精确副本，无需任何实验或未释放的功能。生产环境中的登录凭据在测试环境中有效。
+测试版环境是生产环境的精确副本，没有任何试验性或未发布的功能。 您来自生产环境的登录凭据在测试环境中有效。
 
 **更新计划**
 
-Beta环境将在高峰期结束时每个月结束。
+测试版环境会在每月末的非高峰时段进行更新。
 
 **出站流量**
 
-测试版环境中未启用出站流量。
+测试版环境未启用出站流量。
 
 <!-- 
 
@@ -40,20 +40,20 @@ Added re: AAM-30826.
 
 | 服务 | URL/主机名 | 如何获取访问权限 |
 |--- |--- | --- |
-| S3 | 联系Audience Manager合作伙伴解决方案代表或客户关怀 | 请与Audience Manager合作伙伴解决方案代表或客户关怀部门联系，为您的Beta实例设置Amazon S桶。Read about the [advantages of using Amazon S3](../reference/amazon-s3.md). |
-| DCS | `https://dcs-beta.demdex.net/...` | See [Accessing the DCS in the Beta Environment](../reference/beta-environment.md#access-dcs-beta-environment). |
+| S3 | 联系您的Audience Manager合作伙伴解决方案代表或客户关怀 | 联系Audience Manager合作伙伴解决方案代表或客户关怀，为测试版实例设置Amazon S3存储段。 了解使 [用Amazon S3的优势](../reference/amazon-s3.md)。 |
+| DCS | `https://dcs-beta.demdex.net/...` | 请参 [阅在测试环境中访问DCS](../reference/beta-environment.md#access-dcs-beta-environment)。 |
 | 用户界面 | `https://bank-beta.demdex.com` | 您的生产环境凭据对测试版环境有效。 |
-| API | `https://api-beta.demdex.com/...` | 您的生产环境凭据对测试版环境有效。We recommend that you create a generic API user, [see details](../api/rest-api-main/aam-api-getting-started.md#requirements). |
+| API | `https://api-beta.demdex.com/...` | 您的生产环境凭据对测试版环境有效。 我们建议您创建通用API用户，请参 [阅详细信息](../api/rest-api-main/aam-api-getting-started.md#requirements)。 |
 
-## Accessing the DCS in the Beta Environment {#access-dcs-beta-environment}
+## 在测试环境中访问DCS {#access-dcs-beta-environment}
 
-1. Make a DCS call, using the curl [command](https://curl.haxx.se/docs/manpage.html). Curl是一种使用受支持的协议之一从服务器或服务器传输数据的工具。
+1. 使用curl命令进行DCS调 [用](https://curl.haxx.se/docs/manpage.html)。 Curl是使用多种支持的协议之一从服务器传输数据或将数据传输到服务器的工具。
 
    例如：
 
    `curl -v https://dcs-beta.demdex.net/event`
 
-1. 通过在DCS响应头中查找“沙箱”，确认测试由测试版DCS提供。
+1. 通过在DCS响应标题中查找“sandbox”，验证测试版DCS是否提供了您的请求。
 
    例如：
 
