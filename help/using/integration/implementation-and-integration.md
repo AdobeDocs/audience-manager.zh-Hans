@@ -19,4 +19,4 @@ source-git-commit: 92b47cb110a6d48c4e491e6aabeada61a9ac958b
 * [媒体数据集成](/help/using/integration/media-data-integration/media-data-integration.md)
 * [接收受众数据](/help/using/integration/receiving-audience-data/receiving-audience-data-overview.md)
 * [发送受众数据](/help/using/integration/sending-audience-data/send-audience-data.md)
-* [Audience Manager技术合作伙伴](/help/using/integration/integrating-third-party/audience-manager-technology-partners.md)
+* [Audience manager技术合作伙伴](/help/using/integration/integrating-third-party/audience-manager-technology-partners.md)
