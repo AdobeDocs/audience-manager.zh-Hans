@@ -1,6 +1,6 @@
 ---
-description: 可选方法，允许您根据用户定义的类型或类别，通常根据函数或自己的内部报表流程指定特征。
-seo-description: 可选方法，允许您根据用户定义的类型或类别，通常根据函数或自己的内部报表流程指定特征。
+description: 可选方法，允许您为用户定义的类型或类别分配特征，通常根据函数或您自己的内部报告进程分配。
+seo-description: 可选方法，允许您为用户定义的类型或类别分配特征，通常根据函数或您自己的内部报告进程分配。
 seo-title: 特征类型方法
 solution: Audience Manager
 title: 特征类型方法
@@ -11,21 +11,21 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 ---
 
 
-# Trait Type Methods {#trait-type-methods}
+# 特征类型方法 {#trait-type-methods}
 
-可选方法，允许您根据用户定义的类型或类别，通常根据函数或自己的内部报表流程指定特征。
+可选方法，允许您为用户定义的类型或类别分配特征，通常根据函数或您自己的内部报告进程分配。
 
 <!-- c_rest_api_trait_types_intro.xml -->
 
 >[!NOTE]
 >
->Trait type methods do not assign traits to categories used by the [common taxonomy](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods). 将这些标签视为不同于常用分类的标签。
+>特征类型方法不将特征指定到常用分类所使用 [的类别](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)。 将它们视为与常用分类不同的标签。
 
-For visual reference, [!UICONTROL Trait Types] is a dropdown control located in the [!DNL UI] under **[!UICONTROL Traits > Create new trait > Basic Information]**.
+对于可视参考， [!UICONTROL Trait Types] 是位于下面的下拉式控 [!DNL UI] 件 **[!UICONTROL Traits > Create new trait > Basic Information]**。
 
-## Create a New Trait Type {#create-trait-type}
+## 创建新特征类型 {#create-trait-type}
 
-A `POST` method that lets you create a new trait type.
+一种 `POST` 允许您创建新特征类型的方法。
 
 <!-- r_rest_api_create_trait_type.xml -->
 
@@ -56,9 +56,9 @@ A `POST` method that lets you create a new trait type.
 }
 ```
 
-## Return Properties for a Trait Type {#return-props}
+## 特征类型的返回属性 {#return-props}
 
-A `GET` method that returns details about the specified trait type.
+返回 `GET` 有关指定特征类型的详细信息的方法。
 
 <!-- r_rest_api_get_trait_type.xml -->
 
@@ -81,9 +81,9 @@ A `GET` method that returns details about the specified trait type.
 }
 ```
 
-## Return Properties for all Trait Types {#return-props-all}
+## 返回所有特征类型的属性 {#return-props-all}
 
-A `GET` method that returns details about all your trait types in an array.
+一种 `GET` 返回数组中所有特征类型详细信息的方法。
 
 <!-- r_rest_api_get_trait_types.xml -->
 
