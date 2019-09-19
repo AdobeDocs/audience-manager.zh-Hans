@@ -1,11 +1,11 @@
 ---
-description: 声明的ID如何工作、设置过程、代码示例和变量。
-keywords: id同步
-seo-description: 声明的ID如何工作、设置过程、代码示例和变量。
+description: 声明的ID的工作方式、设置过程、代码示例和变量。
+keywords: id sync
+seo-description: 声明的ID的工作方式、设置过程、代码示例和变量。
 seo-title: 声明的ID
 solution: Audience Manager
 title: 声明的ID
-uuid: 49bb4f7e-b4 a7-4d87-a29 c-c3 dca036 d2 a3
+uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
 translation-type: tm+mt
 source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
@@ -14,17 +14,17 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 # 声明的ID {#declared-ids}
 
-声明的ID如何工作、设置过程、代码示例和变量。
+声明的ID的工作方式、设置过程、代码示例和变量。
 
 ## 声明 ID 定位 {#declared-id-targeting}
 
-通过不使用或接受永久存储机制(如第三方Cookie)的设备或浏览器，与Audience Manager交换用户ID并将其同步。
+在不使用或接受永久存储机制（如第三方Cookie）的设备或浏览器中，与Audience manager交换用户ID并同步。
 
 <!-- declared_id_about.xml -->
 
 ## 声明ID定位的目的 {#declared-id-targeting-purpose}
 
-某些浏览器和大多数移动设备不接受第三方cookie。这使得很难保留有关站点访客的信息或分配永久ID。为了解决此问题，Audience Manager使用 [!UICONTROL DIL] 使您能够通过事件调用。[!UICONTROL declared IDs]此外，a可以 [!UICONTROL declared ID] 作为应用于同一用户中所有解决方案的通用ID [!DNL Experience Cloud]。下表描述了ID定位/匹配过程：
+某些浏览器和大多数移动设备不接受第三方Cookie。 这使得很难保留有关网站访客的信息或分配永久ID。 要解决此问题，Audience Manager会 [!UICONTROL DIL] 允许您通过活 [!UICONTROL declared IDs] 动调用。 此外， [!UICONTROL declared ID] 可以充当通用ID，该通用ID适用于中所有解决方案的同一用户 [!DNL Experience Cloud]。 下表介绍了ID定位／匹配过程：
 
 <table id="table_5D59CD5AF70B44C3B45D279283D4691F"> 
  <thead> 
@@ -35,89 +35,89 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <b>活动电话</b> </td> 
-   <td colname="col2"> <p>要工作，您需要 <span class="wintitle"> 在页面上使用DIL </span> 和 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="https" scope="external"> Experience Cloud ID服务 </a> 代码。<span class="wintitle"> DIL </span> 从 <span class="wintitle"> Experience </span> Cloud ID服务提供的 <code> setVisitorID </code> 函数 <span class="keyword"> 获得声明的ID，并将 </span> 该ID传递给 <span class="keyword"> Audience Manager </span>。 </p> </td> 
+   <td colname="col1"> <b>活动调用</b> </td> 
+   <td colname="col2"> <p>要正常工作，您需 <span class="wintitle"> 要页 </span> 面上的 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="https" scope="external"> DIL和Experience Cloud ID服 </a> 务代码。 <span class="wintitle"> DIL通过 </span> Experience Cloud ID服务提供的setVisitorID函数获 <span class="wintitle"> 得声明的ID </span> ，并将其传递给受众经 <code></code><span class="keyword"></span><span class="keyword"></span>理(Audience Manager)。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>匹配ID</b> </td> 
-   <td colname="col2"> <p>Audience Manager会尝试在我们的系统中与相应ID匹配客户端和访客ID。如果不存在匹配的ID，Audience Manager将创建一个新ID并将其与客户端ID和访问者ID关联。 </p> <p> <p>注意：如果您的ID映射到多个Audience Manager ID，则使用最新映射。 </p> </p> </td> 
+   <td colname="col2"> <p>Audience manager会尝试将客户端ID和访客ID与系统中的相应ID进行匹配。 如果不存在匹配的ID,Audience manager将创建新ID并将其与客户端ID和访客ID关联。 </p> <p> <p>注意： 如果您的ID映射到多个Audience Manager ID，则会使用最新的映射。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>返回ID</b> </td> 
-   <td colname="col2"> <p>Audience Manager将其同步ID写入客户端域或应用程序中的第一方cookie(或其他可寻址存储空间)。 </p> </td>
+   <td colname="col2"> <p>Audience manager将其同步ID写入客户端域或应用程序中的第一方Cookie（或其他可寻址存储空间）。 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <b>后续事件调用</b> </td>
-   <td colname="col2"> <p>其他活动调用从客户端域读取Audience Manager ID并将其发送到Audience Manager。 </p> </td>
+   <td colname="col2"> <p>其他活动调用从客户端域读取Audience Manager ID，并将其发送到Audience Manager。 </p> </td>
   </tr> 
  </tbody>
 </table>
 
-要开始，您需要配置 [!DNL Experience Cloud] ID服务以及 [!UICONTROL DIL] 要用于数据收集的站点上的整个页面。请参阅 [DIL创建](../dil/dil-class-overview/dil-create.md#dil-create) 和 [声明ID变量](../features/declared-ids.md#declared-id-variables)。
+要开始使用，您需要配置 [!DNL Experience Cloud] ID服务， [!UICONTROL DIL] 并跨站点上要用于数据收集的页面进行配置。 请参 [阅DIL create](../dil/dil-class-overview/dil-create.md#dil-create) and [Declared ID变量](../features/declared-ids.md#declared-id-variables)。
 
-## 退出调用 {#opt-out-calls}
+## 退出呼叫 {#opt-out-calls}
 
-[!UICONTROL declared ID] 该流程遵循网站访客偏好来选择退出您的网站受众管理器定位。Audience Manager收到选择退出请求时，由包含错误代码171 [!DNL JSON] 的 [!UICONTROL DCS] 用户返回，消息“遇到的选择退出标记”，而不是Audience Manager用户ID。
+该过 [!UICONTROL declared ID] 程支持网站访客偏好，以便根据您的网站选择退出Audience manager定位。 当Audience manager收到退出请求时，由返回的 [!DNL JSON][!UICONTROL DCS] 包含错误代码171，并显示消息“遇到退出标记”，而不是Audience manager用户ID。
 
-* Audience Manager可以在Audience [!UICONTROL declared ID] Manager [!UICONTROL UUID] 中通过Audience [!DNL URL]Manager。
-* [!UICONTROL declared ID] 选择退出存储在[！UICCONTRL Profile Cache Server([!UICONTROL PCS])(每合作伙伴)。没有平台级选择退出 [!UICONTROL declared IDs]。此外，Audience Manager还将用户从边缘的特定区域选择退出(选择退出不会跨 [!UICONTROL DCS] 区域)。
+* Audience manager可以与中的Audience Manager [!UICONTROL declared ID] 一起通过选择退出 [!UICONTROL UUID] 方式 [!DNL URL]。
+* 退 [!UICONTROL declared ID] 出按合作伙伴存储在[!UICONCONTROL配置文件缓存服务器([!UICONTROL PCS])中。 没有平台级别的退出使用 [!UICONTROL declared IDs]。 此外，Audience manager还会选择用户从边缘的特定区域退出(选择退出不会跨区域 [!UICONTROL DCS] )。
 
-有关选择退出数据收集的更多信息，请参阅 [数据隐私](../overview/data-security-and-privacy/data-privacy.md) 。
+有关 [选择退出数据收集的更多信息](../overview/data-security-and-privacy/data-privacy.md) ，请参阅数据隐私。
 
 ## 声明的ID退出示例 {#opt-out-examples}
 
-您可以使用和键值对发出 [!UICONTROL declared ID]`d_cid``d_cid_ic` 退出请求。传统参数(如 `d_dpid` 但 `d_dpuuid` 仍有效)被认为已弃用。请参阅 [CID 取代 DPID 和 DPUUID](../reference/cid.md)。In the examples, *italics* indicates a variable placeholder.
+您可以使用 [!UICONTROL declared ID] 键值和键值对发出 `d_cid` 退 `d_cid_ic` 出请求。 旧参数(如和 `d_dpid` 仍可 `d_dpuuid` 用，但被视为已弃用。 请参阅 [CID 取代 DPID 和 DPUUID](../reference/cid.md)。In the examples, *italics* indicates a variable placeholder.
 
-### 选择退出CID和CID_ IC
+### 使用CID和CID_IC选择退出
 
-有关描述和语法，请参阅 [声明ID的URL变量和语法](../features/declared-ids.md#variables-and-syntax)。
+有关说明和语法，请参阅 [URL变量和Declared ID的语法](../features/declared-ids.md#variables-and-syntax)。
 
 <table id="table_159D92242D8F4FCBAC733295DE474CA6"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 选择退出 </th> 
+   <th colname="col1" class="entry"> 选择退出使用 </th> 
    <th colname="col2" class="entry"> 代码示例 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p>数据提供者ID和用户ID。 </p> </td> 
-   <td colname="col2"> <p> <code> https://domain<i>名</i>/demoptout.jpg？d_ cid=123%01987… </code> </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>域名</i>/demoptout.jpg?d_cid=123%01987... </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>集成代码和用户ID。 </p> </td> 
-   <td colname="col2"> <p> <code> https://domain<i>名</i>/去排票？d_ cid_ ic=456%1321… </code> </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>域名</i>/demoptout?d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>多 <code> d_ cid </code> 和 <code> d_ cid_ ic </code> 键值对。 </p> </td> 
-   <td colname="col2"> <p> <code> https://domain<i>名</i>/去排票？d_ cid=123%1987&amp; d_ cid_ ic=456%01321… </code> </p> </td> 
+   <td colname="col1"> <p>多个 <code> d_cid </code> 和 <code> d_cid_ic键 </code> -值对。 </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>域名</i>/demoptout?d_cid=123%01987&amp;d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### 使用DPID、DPUUID和UUID退出选择退出(已弃用)
+### DPID、DPUUID和UUID的退出（已弃用）
 
-这些方法仍然有效，但被认为已弃用。此信息为旧用途和参考提供。旧版选择退出包括：
+这些方法仍然有效，但被视为已弃用。 此信息是为了传统用途和参考而提供的。 旧版选择退出包括：
 
 <table id="table_0E180EBE84624F338494F49D9F6EBC8E"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 选择退出(已弃用) </th> 
+   <th colname="col1" class="entry"> 退出（已弃用） </th> 
    <th colname="col2" class="entry"> 代码示例 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ uuid </code> only </p> </td> 
-   <td colname="col2"> <p> <code> DetailID <i></i></code> </p> </td> 
+   <td colname="col1"> <p> <code> 仅d_uuid </code> </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid=AAM ID </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>合作伙伴级别选择退出 </p> </td> 
-   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid=用户ID&amp; d_ dpid=数据提供者ID </code> </p> <p>将会存储合作伙伴级别选择退出，以便将此 <code> dpid </code> + <code> dpuid </code> 对的最新映射映射到AAM UUID。如果没有以前存在的映射，Audience Manager会检查请求中是否包含AAM UUID，如果该请求中包含AAM UUID，则会使用它存储选择退出。否则，Audience Manager会生成一个新的AAM UUID并在其下面存储选择退出。 </p> </td> 
+   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid=用户ID&amp;d_dpid=数据提供者ID </code> </p> <p>将存储一个合作伙伴级别的退出选项，以便将此 <code> dpid </code> + <code> dpuuid对最新映射 </code> 到AAM UUID。 如果之前没有现有映射，Audience manager将检查请求在cookie中是否包含AAM UUID，如果包含，则使用它存储退出。 否则，Audience manager将生成一个新的AAM UUID，并在其下存储退出选项。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ dpuid </code> + <code> d_ dpid </code> 和explicible <code> d_ uuid </code> </p> </td> 
-   <td colname="col2"> <p> <code> https://domain/demoptout.jpg?d_uuid=<i></i>用户ID和d_ dpuid=数据提供者的用户ID&amp;<i>d_ dpid=数据提供者ID</i></code> </p> <p> <code> d_ uuid </code> 始终优先。如果 <code> dpid </code> + <code> dpuid </code> 组合映射到另一AAM UUID，则选择退出存储在请求( <code> d_ uuid </code>)中传递的AAM UUID下。 </p> </td> 
+   <td colname="col1"> <p> <code> d_dpuuid </code> + <code> ddpid </code> and explicit <code> d_uuid </code> </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid=用户ID&amp;d_dpuuid=数据提供者的用户ID&amp;<i>d_dpid=数据提供者ID</i></code> </p> <p> <code> d_uuid始 </code> 终优先。 如果 <code> dpid </code> + <code> dpuuid组合映射到另一个AAM UUID，则退出将存储在请求中传递的AAM UUID( </code> d_uuid <code></code>)下。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -126,12 +126,12 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 <!-- c_declared_id_var_syntax.xml -->
 
-下表列出了传入 [!DNL Audience Manager] 数据提供者ID、用户ID或集成代码(如果使用)的键值对。Note, *italics* indicates a variable placeholder. 增加了空格，使它们更易于阅读。
+下表列出了传入数据提供者ID和用户ID或集成代码（如果使用） [!DNL Audience Manager] 的键值对。 Note, *italics* indicates a variable placeholder. 已添加空格，以便更轻松地阅读。
 
 在每个键值对中：
 
-* `=` 符号将键与相关值分开。
-* 非打印 [!DNL ASCII] 字符 `%01` 将分隔这些值。
+* 符号 `=` 将键与其相关值分开。
+* 非打印字 [!DNL ASCII] 符 `%01` 分隔值。
 
 <table id="table_DFA9A584A5DE40669EAF0DB62DDC5AAF"> 
  <thead> 
@@ -142,19 +142,19 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ cid=<i>data provider ID</i> %01<i>user ID</i></code> </p> </td> 
-   <td colname="col2"> <p>在一个键值对中包含数据提供者ID和关联的唯一用户ID。<code> d_ cid </code> 替换 <code> d_ dpid </code> 和 <code> d_ dpuuid </code>，它们被视为已弃用，但仍受支持。请参阅 <a href="../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td> 
+   <td colname="col1"> <p> <code> d_cid =数<i>据提供者ID</i> %01<i>用户ID</i></code> </p> </td> 
+   <td colname="col2"> <p>在单个键值对中包含数据提供者ID和关联的唯一用户ID。 <code> d_cid替换 </code> 了d_dpid <code> 和d_dpuuid </code><code></code>，这些被认为已弃用，但仍受支持。 请参阅 <a href="../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ cid_ ic=<i>integration code</i> %01<i>user ID</i></code> </p> </td> 
-   <td colname="col2"> <p>包含一个集成代码和一个关联的唯一用户ID(在一个键值对中)。<code> d_ cid_ ic </code> 替换 <code> d_ dpid </code> 和 <code> d_ dpuuid </code>，它们已弃用，但仍受支持。请参阅 <a href="../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td> 
+   <td colname="col1"> <p> <code> d_cid_ic =集<i>成代码</i> %01<i>用户ID</i></code> </p> </td> 
+   <td colname="col2"> <p>在单个键值对中包含集成代码和关联的唯一用户ID。 <code> d_cid_ic替换 </code> 了d_dpid和 <code> d_dpuuid </code><code></code>，它们已弃用，但仍受支持。 请参阅 <a href="../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 示例事件调用 {#sample-event-calls}
 
-鉴于这些键值对及其所需的语法，您应如下所示进行事件调用。
+鉴于这些键值对及其必需的语法，您将进行如下所示的事件调用。
 
 <table id="table_4C8E23CC663942BA8FA6BB1EE5929440"> 
  <thead> 
@@ -166,33 +166,33 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
  <tbody> 
   <tr> 
    <td colname="col1"> <p>数据提供者ID和用户ID。 </p> </td> 
-   <td colname="col2"> <p> <code> https://domain<i>名</i>/事件？d_ cid=123%01987… </code> </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>域名</i>/event?d_cid=123%01987... </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>集成代码和用户ID。 </p> </td> 
-   <td colname="col2"> <p> <code> https://domain<i>名</i>/事件？d_ cid_ ic=456%1321… </code> </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>域名</i>/event?d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>多 <code> d_ cid </code> 和 <code> d_ cid_ ic </code> 键值对。 </p> </td> 
-   <td colname="col2"> <p> <code> https://domain<i>名</i>/事件？d_ cid=123%1987&amp; d_ cid_ ic=456%01321… </code> </p> </td> 
+   <td colname="col1"> <p>多个 <code> d_cid </code> 和 <code> d_cid_ic键 </code> -值对。 </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>域名</i>/event?d_cid=123%01987&amp;d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [CID替换DPID和DPUUID](../reference/cid.md)
 
 
 ## 声明的ID变量 {#declared-id-variables}
 
-介绍用于传递声明的ID的 [!UICONTROL DIL] 配置变量 [!DNL Audience Manager.]
+描述用于将声明的ID传递给的配置变 [!UICONTROL DIL] 量 [!DNL Audience Manager.]
 
-## DIL使用Experience Cloud ID服务传递声明ID {#dil-id-service-pass-declared-ids}
+## DIL使用Experience Cloud ID服务传递声明的ID {#dil-id-service-pass-declared-ids}
 
 <!-- r_dil_declared_id_vars.xml -->
 
-与 [Experience Cloud ID服务](https://marketing.adobe.com/resources/help/en_US/mcvid/)一起使用时，您不再需要 [!UICONTROL declared IDs] 使用已弃用 `dpid` 的变量和 `dpuuid` 变量。相反， [!UICONTROL DIL] 依赖函数 `visitorService` 的当前版本将从函数中获取函数 [!UICONTROL declared IDs]`setCustomerIDs`[!UICONTROL Experience Cloud ID Service]。For more information, see [Customer IDs and Authentication States](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html). 您将调用 `visitorService``DIL.create` 如下所示。
+与 [Experience Cloud ID服务一起使用时](https://marketing.adobe.com/resources/help/en_US/mcvid/)，您不再需要传递已弃用 [!UICONTROL declared IDs] 的变量和 `dpid` 变 `dpuuid` 量。 相反，当前版本的 [!UICONTROL DIL] 依赖函 `visitorService` 数从中的函 [!UICONTROL declared IDs] 数 `setCustomerIDs` 获取该函数 [!UICONTROL Experience Cloud ID Service]。 For more information, see [Customer IDs and Authentication States](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html). 如下所示， `visitorService` 您可 `DIL.create` 以拨入。
 
 ```js
 var vDil = DIL.create({
@@ -203,12 +203,12 @@ var vDil = DIL.create({
 });
 ```
 
-`namespace` 在键值对中， `MCORG` 是 [!DNL Experience Cloud] 您的组织ID。如果您没有此ID，可以在仪表板的 [!UICONTROL Administration] 部分找到 [!DNL Experience Cloud] 它。您需要管理员权限才能查看此控制板。See [Administration: Core Services](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html).
+在键 `namespace` 值对中，您的 `MCORG` 组织 [!DNL Experience Cloud] ID。 如果您没有此ID，则可以在仪表板的部分 [!UICONTROL Administration] 找到该 [!DNL Experience Cloud] ID。 您需要管理员权限才能查看此功能板。 See [Administration: Core Services](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html).
 
 ## 已弃用的函数 {#deprecated-functions}
 
-使用最新版本 [!UICONTROL DIL] 的(6.2+)，您无需使用这些键值对 [!UICONTROL declared IDs]即可传入。这是因为 [!UICONTROL DIL] 现在依赖于以上代码示例中所示的 `visitorService` 函数。此函数从 [!UICONTROL declared IDs] 中获取 [!UICONTROL Experience Cloud ID Service]。但是，我们将出于历史和传统目的引用这些变量。有关如何配置 `DIL.create` 以从中获取a [!UICONTROL declared ID] 的示例，请参见下面的代码 [!UICONTROL Visitor ID Service]。
-下表描述 `declaredId` 了对象使用的传统变量：
+使用最新版本 [!UICONTROL DIL] (6.2+)，您无需使用这些键值对即可传入 [!UICONTROL declared IDs]。 这是因为现 [!UICONTROL DIL] 在依赖于上面的 `visitorService` 代码示例中显示的函数。 此函数 [!UICONTROL declared IDs] 来自 [!UICONTROL Experience Cloud ID Service]。 但是，我们在此引用这些变量以用于历史和传统用途。 有关如何配置以从中获取的示例，请参 `DIL.create` 阅以下代 [!UICONTROL declared ID] 码 [!UICONTROL Visitor ID Service]。
+下表描述了该对象使用的旧版变 `declaredId` 量：
 
 <table id="table_A1884B72950F4BBDA87F17DDFF173628"> 
  <thead> 
@@ -222,7 +222,7 @@ var vDil = DIL.create({
   <tr> 
    <td colname="col1"> <code> dpid </code> </td> 
    <td colname="col2"> 字符串 </td> 
-   <td colname="col3"> <p>Audience Manager分配的数据合作伙伴ID。 </p> </td> 
+   <td colname="col3"> <p>由Audience manager分配的数据合作伙伴ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> dpuuid </code> </td> 
@@ -234,9 +234,9 @@ var vDil = DIL.create({
 
 ### `DPID` 和 `DPUUID`
 
-Audience Manager在我们的系统中比较并 `DPID``DPUUID` 与相应用户ID相匹配。如果ID不存在，Audience Manager将创建新的用户ID并将其同步到 `DPID/DPUUID` 组合。Audience `UUID`Manager匹配或创建一个用户ID后，它将返回该ID， [!DNL JSON] 以响应客户端域(第一方cookie)或其他本地存储中的cookie。
+Audience manager会比较合并后的用户ID，并将其与 `DPID` 我们系统 `DPUUID` 中的相应用户ID进行匹配。 如果ID不存在，Audience manager将创建新的用户ID并将其同步到组 `DPID/DPUUID` 合。 Audience manager匹配或创建用户ID( `UUID`[!DNL JSON] )后，会在客户端域（第一方Cookie）或其他本地存储中对Cookie的响应中返回该ID。
 
-在使用 [!UICONTROL DIL] v6.1或更早版本时调用此函数。但是，已弃用此函数，以支持从中获取 [!UICONTROL declared IDs] 的新版本 [!UICONTROL Experience Cloud ID Service]。
+使用v6.1或更早版本时， [!UICONTROL DIL] 调用此函数。 但是，已弃用此函数，而改用从中获取的 [!UICONTROL declared IDs] 新版本 [!UICONTROL Experience Cloud ID Service]。
 
 ```js
 DIL.create({
@@ -250,13 +250,13 @@ DIL.create({
 
 >[!NOTE]
 >
->注意，您需要有计划地开发提供和 `d_dpuuid``d_dpid` 键ID值的代码。
+>注意，您需要以编程方式开发提供和键的ID值的 `d_dpuuid` 代 `d_dpid` 码。
 
 ### 在DIL实例化后传入ID
 
 >[!NOTE]
 >
->如果 [!DNL API] 您使用不同 `declaredID` 组合发出呼叫，则新组合将仅用于该调用。其他常规事件调用将使用原始 `DIL.create``declaredID` 组合。
+>如果您使用其 [!DNL API] 他组合进行 `declaredID` 呼叫，则新组合将仅用于该呼叫。 进一步的常规活动调用将使用原始 `DIL.create``declaredID` 组合。
 
 ```js
 DIL.getDil('partner name').api.signals({...}).declaredId({
@@ -265,15 +265,15 @@ DIL.getDil('partner name').api.signals({...}).declaredId({
 }).submit();
 ```
 
-## 请求/响应示例 {#request-response-examples}
+## 请求／响应示例 {#request-response-examples}
 
-请求将数据提供程序和用户ID发送到Audience Manager：
+此请求会向Audience manager发送数据提供者和用户ID:
 
 ```
 https://my_domain.net/event?d_rtbd=json&d_cb=myCallback&key=val&d_dpuuid=1234&d_dpid=5678
 ```
 
-响应返回Audience Manager ID(例如 `UUID`，)，该ID写入页面域中的第一方cookie。
+该响应会返回写入页面域中的第一方Cookie的Audience Manager ID(例如 `UUID`)。
 
 ```js
 myCallback({
@@ -282,6 +282,6 @@ myCallback({
 })
 ```
 
-## 不要定位和退出调用 {#do-not-target}
+## 不定位和退出呼叫 {#do-not-target}
 
-[!UICONTROL declared ID] 该流程遵循网站访客偏好来选择退出您的网站受众管理器定位。Audience Manager收到选择退出请求时，将 [!UICONTROL DCS] 返回一个空 [!DNL JSON] 对象，而不是Audience Manager用户ID。
+该过 [!UICONTROL declared ID] 程支持网站访客偏好，以便根据您的网站选择退出Audience manager定位。 当Audience manager收到退出请求时，将返 [!UICONTROL DCS] 回空对象而 [!DNL JSON] 非Audience manager用户ID。
