@@ -1,10 +1,10 @@
 ---
-description: 介绍Audience Manager集成和遵守一般接受的与消费者隐私和选择退出过程相关的最佳实践。
-seo-description: 介绍Audience Manager集成和遵守一般接受的与消费者隐私和选择退出过程相关的最佳实践。
+description: 介绍Audience manager集成以及遵守与消费者隐私和选择退出程序相关的公认最佳实践。
+seo-description: 介绍Audience manager集成以及遵守与消费者隐私和选择退出程序相关的公认最佳实践。
 seo-title: 数据隐私
 solution: Audience Manager
 title: 数据隐私
-uuid: 865e7b4e-value1-4fa4-8035-1595fc77 cd96
+uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
 translation-type: tm+mt
 source-git-commit: e6dcd0a33489ae388df25a95d3ad4841030afe31
 
@@ -13,24 +13,24 @@ source-git-commit: e6dcd0a33489ae388df25a95d3ad4841030afe31
 
 # 数据隐私{#data-privacy}
 
-介绍Audience Manager集成和遵守一般接受的与消费者隐私和选择退出过程相关的最佳实践。
+介绍Audience manager集成以及遵守与消费者隐私和选择退出程序相关的公认最佳实践。
 
 ## 数据隐私{#data-privacy-center}
 
 See the [Adobe Privacy Center](https://www.adobe.com/privacy/opt-out.html).
 
-## Consumer Privacy Protection {#consumer-privacy-protection}
+## 消费者隐私保护 {#consumer-privacy-protection}
 
-Audience Manager可识别消费者与其互动品牌之间的隐式协议。双方都受益于匿名数据元素的透明交换：
+Audience manager认识到消费者与与之互动的在线品牌之间的隐性契约。 双方都从匿名数据元素的透明交换中受益：
 
-* 消费者可获得个性化内容、折扣产品优惠以及简化的用户体验。
-* 品牌会获得重要的收入流，支持多个在线业务模型。
+* 消费者可获得个性化内容、折扣产品推广信息和简化的用户体验。
+* 品牌可获得支持多种在线业务模型的重要收入流。
 
-在我们继续支持这一模型的情况下，Audience Manager仍致力于为消费者提供透明度和控制权，并超越在线行为广告(OBA)自律原则。
+在我们对这一模式的持续支持中，Audience manager继续致力于为消费者提供透明度和控制，并满足或超越在线行为广告(OBA)自律原则。
 
-## Opt-Out Management {#opt-out-management}
+## 退出管理 {#opt-out-management}
 
-选择退出文档已延期并将其移至文档的单独部分。See [Opt-out Management](../../overview/data-security-and-privacy/opt-out-management.md).
+选择退出文档已扩展并移至我们文档的另一部分。 请参 [阅退出管理](../../overview/data-security-and-privacy/opt-out-management.md)。
 
 <!-- 
 
@@ -68,7 +68,7 @@ Audience Manager可识别消费者与其互动品牌之间的隐式协议。双�
 
  -->
 
-## Collecting IP Addresses and IP Address Obfuscation {#collecting-ip-addresses}
+## 收集IP地址和IP地址模糊化 {#collecting-ip-addresses}
 
 <!-- 
 
@@ -76,18 +76,18 @@ Adobe has enabled processes and offers settings that allow customers to use Audi
 
 -->
 
-访问客户网站的访客 IP 地址会被传输到 Adobe 数据处理中心 (DPC)，IP 地址可能存储在那里。根据访客的网络配置，IP地址未必代表访客计算机的IP地址。例如，IP 地址可能为网络地址转换 (NAT) 防火墙、HTTP 代理或互联网网关的外部 IP 地址。
+访问客户网站的访客 IP 地址会被传输到 Adobe 数据处理中心 (DPC)，IP 地址可能存储在那里。根据访客的网络配置，IP地址不一定代表访客计算机的IP地址。 例如，IP 地址可能为网络地址转换 (NAT) 防火墙、HTTP 代理或互联网网关的外部 IP 地址。
 
-**IP模糊处理方法：** 遵循“隐私依据设计”的原则，Adobe Audience Manager允许客户从用户界面(全球所有地理区域或针对特定国家/地区)启用IP模糊处理。启用此设置后，将在将IP地址收录到Audience Manager时立即放弃IP地址的最后一个字节(最后一部分)。Audience Manager会在处理之前放弃IP地址的此部分(包括在任何可选地理位置查找或记录IP地址之前)。例如：
+**** IP模糊化方法：Adobe Audience manager遵循“按设计保护隐私”的原则，允许客户在全球所有地理区域或特定国家／地区的UI中启用IP模糊化。 启用此设置后，当将IP地址引入Audience manager时，IP地址的最后八位字节（最后一部分）将立即被丢弃。 Audience manager在处理之前（包括在任何可选的地理查找或IP地址记录之前），会丢弃IP地址的这一部分。 例如：
 
 * 在记录: `255.255.255.255`
 * 之后: `255.255.255.0`
 
 >[!NOTE]
 >
->See [IP Address Obfuscation](/help/using/features/administration/ip-obfuscation.md) to learn how to enable IP address obfuscation in the Audience Manager UI.
+>请参 [阅IP地址模糊化](/help/using/features/administration/ip-obfuscation.md) ，了解如何在Audience Manager UI中启用IP地址模糊化。
 
-**地理分段：** 如果您启用IP地址模糊处理，则IP地址的剩余八个字节仍可用于Audience Manager中的地理分段和报告。如果您不启用IP地址模糊处理，Audience Manager将使用完整的IP地址。您可以使用地理分段功能，以便在任一情况下按地理区域确定IP位置，但在使用IP模糊化时稍有降低。获取城市级别信息很有可能会受到 IP 地址模糊处理的影响。获取地区和国家级信息只会受到轻微影响。地理分段数据仅粒度为城市级别或邮政编码级别，不适用于个人级别。Read more about [geo-targeting](/help/using/features/traits/trait-geotarget-keys.md) and how to set up traits with geographic variables.
+**** 地理细分：如果启用IP地址模糊处理，则IP地址的其余八位字节仍可用于Audience manager中的地理划分和报告。 如果不启用IP地址模糊处理，Audience manager将使用完整的IP地址。 您可以使用“地理分段”功能，该功能允许您按地理区域识别IP位置，但在使用IP模糊处理时会稍有不准确。 获取城市级别信息很有可能会受到 IP 地址模糊处理的影响。获取区域和国家一级的信息应仅受到轻微影响。 地理细分数据仅粒度级别为市级或邮政编码级别，而不粒度级别为个人级别。 阅读更多关 [于地理定位](/help/using/features/traits/trait-geotarget-keys.md) ，以及如何使用地理变量设置特征。
 
 ## 相关概念 {#related-concepts}
 
