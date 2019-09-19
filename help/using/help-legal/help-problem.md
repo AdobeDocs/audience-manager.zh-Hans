@@ -1,6 +1,6 @@
 ---
-description: 客户关怀团队随时准备帮助您解决可能出现的任何问题。在联系客户服务中心时，提供尽可能多的此类信息。这将帮助团队了解和解决您的问题。
-seo-description: 客户关怀团队随时准备帮助您解决可能出现的任何问题。在联系客户服务中心时，提供尽可能多的此类信息。这将帮助团队了解和解决您的问题。
+description: 客户关怀团队随时准备帮助您解决可能出现的任何问题。在联系客户关怀时尽可能多地提供这些信息。 这有助于团队了解并解决您的问题。
+seo-description: 客户关怀团队随时准备帮助您解决可能出现的任何问题。在联系客户关怀时尽可能多地提供这些信息。 这有助于团队了解并解决您的问题。
 seo-title: 如果遇到问题
 solution: Audience Manager
 title: 如果遇到问题
@@ -12,7 +12,7 @@ source-git-commit: 0b32a48e99b35990dc7ccdcc03fcc68ba769d93e
 
 # 如果遇到问题 {#problem}
 
-客户关怀团队随时准备帮助您解决可能出现的任何问题。在联系客户服务中心时，提供尽可能多的此类信息。这将帮助团队了解和解决您的问题。
+客户关怀团队随时准备帮助您解决可能出现的任何问题。在联系客户关怀时尽可能多地提供这些信息。 这有助于团队了解并解决您的问题。
 
 ## 基本信息 {#basic-information}
 
@@ -24,13 +24,13 @@ r_problem.xml
 
 For technical issues or to log a bug, contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
-* **电话：** 1-800-497-0335
+* **** 电话：1-800-497-0335
 
-   For toll-free numbers outside the United States, see our [regional Customer Care contact numbers](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html) site. When asked to select an option for your product, press 4 to contact the [!DNL Audience Manager] team.
+   有关美国以外地区的免费电话，请访问我们的区域客 [户关怀联系号码](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html) 。 When asked to select an option for your product, press 4 to contact the [!DNL Audience Manager] team.
 
-* **电子邮件：** amsupport@adobe.com
+* **** 电子邮件：amsupport@adobe.com
 
-请在联系我们之前准备以下信息。
+在联系我们之前，请准备好以下信息。
 
 <table id="table_28E76031E2804265B1A48AB2659F68F0"> 
  <thead> 
@@ -42,27 +42,27 @@ For technical issues or to log a bug, contact [Customer Care](https://helpx.adob
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>问题摘要</b> </p> </td> 
-   <td colname="col2"> <p>提供问题的简短、描述性概要。 </p> </td> 
+   <td colname="col2"> <p>提供问题的简要描述性摘要。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>帐户信息</b> </p> </td> 
-   <td colname="col2"> <p>提供您的： </p> <p> 
+   <td colname="col2"> <p>提供： </p> <p> 
      <ul id="ul_6ACF6EF2165C4041A891FF36D78BBA63"> 
       <li id="li_86573CAAE8454BE6BDF44F9A8281FF95">公司名称。 </li> 
-      <li id="li_8259BB738BA84A13982A8E84BCF56B2A"><span class="keyword"> Audience Manager</span> 子域(如果已知)。The sub-domain is the URL of the domain that sends data collection events to <span class="keyword"> Adobe</span> (e.g., <code>https://<i>myCompany</i>.demdex.net</code>). </li> 
+      <li id="li_8259BB738BA84A13982A8E84BCF56B2A"><span class="keyword"> Audience Manager</span> 子域（如果已知）。 子域是向 <span class="keyword"> Adobe</span> (例如，https:// <code>myCompany<i>.demdex.net</i></code>)发送数据收集事件的域的URL。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>重现步骤</b> </p> </td> 
-   <td colname="col2"> <p>尽可能详细地加入详细信息，包括复制问题所需的任何URL以及预期结果。Your description should contain enough detail that somebody unfamiliar with <span class="keyword"> Audience Manager</span> should be able to follow your steps or procedures and reproduce the problem. </p> </td> 
+   <td colname="col1"> <p><b>复制步骤</b> </p> </td> 
+   <td colname="col2"> <p>尽可能多地包含详细信息，包括复制问题所需的任何URL以及预期结果。 您的说明应包含足够的详细信息，以便不熟悉 <span class="keyword"></span> Audience Manager的人员应能够按照您的步骤或步骤操作并重现问题。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>优先级</b> </p> </td> 
-   <td colname="col2"> <p>为此问题分配优先级。优先级范围从P(最重要的)到P4(最重要的)。 </p> </td> 
+   <td colname="col2"> <p>为此问题指定优先级。 优先级范围从P1（最重要）到P4（最不重要）。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>商业影响</b> </p> </td> 
-   <td colname="col2"> <p>描述此问题如何影响您的业务。例如，这个问题导致收入损失或产品无法使用？您解决了此问题吗？ </p> </td> 
+   <td colname="col1"> <p><b>业务影响</b> </p> </td> 
+   <td colname="col2"> <p>描述此问题对您的业务有何影响。 例如，此问题是否会导致收入损失或使产品无法使用？ 您是否一直在解决此问题？ </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>预期</b> </p> </td> 
