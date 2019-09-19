@@ -1,6 +1,6 @@
 ---
-description: 数据操作组件包括客户数据源、数据收集服务器、SFTP/S3/HTTP发布者、IIS和配置文件缓存服务器。
-seo-description: 数据操作组件包括客户数据源、数据收集服务器、SFTP/S3/HTTP发布者、IIS和配置文件缓存服务器。
+description: 数据操作组件包括客户数据服务、数据收集服务器、SFTP/S3/HTTP发布者、IRIS和配置文件缓存服务器。
+seo-description: 数据操作组件包括客户数据服务、数据收集服务器、SFTP/S3/HTTP发布者、IRIS和配置文件缓存服务器。
 seo-title: 数据操作组件
 solution: Audience Manager
 title: 数据操作组件
@@ -11,9 +11,9 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 ---
 
 
-# Data Action Components{#data-action-components}
+# 数据操作组件{#data-action-components}
 
-数据操作组件包括客户数据源、数据收集服务器、SFTP/S3/HTTP发布者、IIS和配置文件缓存服务器。
+数据操作组件包括客户数据服务、数据收集服务器、SFTP/S3/HTTP发布者、IRIS和配置文件缓存服务器。
 
 <!-- 
 
@@ -21,62 +21,62 @@ c_compact.xml
 
  -->
 
-Action components are systems and processes that let you move data in and out of [!DNL Audience Manager] and (for the lack of a better phrase) do things with it. These [!DNL Audience Manager] components include:
+操作组件是允许您将数据移入和移出的系统和流程， [!DNL Audience Manager] 并且（因为没有更好的短语）可以对数据执行操作。 这些 [!DNL Audience Manager] 组件包括：
 
-## Customer Data Feeds (CDF) {#cdf}
+## 客户数据馈送(CDF) {#cdf}
 
-[!UICONTROL CDF] 是每小时发送给客户的文件。其中包含用户ID以及关联的区段ID、特征ID和其他数据。For more information, see [Customer Data Feed Overview](../../features/cdf-files.md).
+[!UICONTROL CDF] 是每小时向客户发送的文件。 这些ID包含用户ID以及关联的区段ID、特征ID和其他数据。 有关详细信息，请参 [阅客户数据馈送概述](../../features/cdf-files.md)。
 
-## Data Collection Server (DCS) {#dcs}
+## 数据收集服务器(DCS) {#dcs}
 
-See [Data Collection Components](../../reference/system-components/components-data-collection.md).
+请参阅 [数据收集组件](../../reference/system-components/components-data-collection.md)。
 
 ## SFTP/S3 {#sftp-s3}
 
-[!UICONTROL SFTP/S3] 发布者接收来自.的同步ID数据 [!UICONTROL Outbound Feed Converter]。When these files are ready, the [!UICONTROL SFTP/S3 publishers] send this data to a destination specified by the client. These files contain synchronized ID data with a one-to-many mapping of [!DNL Audience Manager] user IDs (UUID) to:
+发布 [!UICONTROL SFTP/S3] 者会从中接收同步的ID数据 [!UICONTROL Outbound Feed Converter]。 当这些文件准备就绪时， [!UICONTROL SFTP/S3 publishers] 将此数据发送到客户端指定的目标。 这些文件包含同步ID数据，用户ID(UUID)的一对多映 [!DNL Audience Manager] 射将映射到：
 
 * 设备ID/数据提供者ID(DPUUID)
-* 合格的区段ID
+* 限定的区段ID
 * 特征ID
 
-[!DNL Audience Manager] 客户无权访问直接控制的功能 [!UICONTROL SFPT/S3 publishers]。客户在创建数据并将其发送到目的地时间接使用此服务。The [!UICONTROL SFTP/S3] system is, essentially, an automated job process that runs at scheduled intervals.
+[!DNL Audience Manager] 客户无权访问直接控制的功能 [!UICONTROL SFPT/S3 publishers]。 客户在创建数据并将数据发送到目标时间接使用此服务。 本 [!UICONTROL SFTP/S3] 质上，该系统是以预定时间间隔运行的自动作业进程。
 
 ## IRIS {#iris}
 
-In Greek mythology, [!UICONTROL Iris] is a figure who travels and delivers messages rapidly. [!UICONTROL IRIS] 系统是一个反映此图特征来自古代世界的命名图。In modern terms, [!UICONTROL IRIS] is a low-latency, high-frequency cookie synchronization and data transfer service.
+在希腊神话中， [!UICONTROL Iris] 一个快速传播和传递信息的人物。 这 [!UICONTROL IRIS] 个系统是反映这个古代人物特征的名称。 在现代语言中， [!UICONTROL IRIS] 这是一种低延迟、高频Cookie同步和数据传输服务。
 
-[!UICONTROL IRIS] 与 [!UICONTROL SFTP/S3] 系统的类型相同。However, [!UICONTROL IRIS] is different because it sends data to destinations in real time rather than at set intervals. This is a separate system because the [!UICONTROL SFTP/S3] publishers can't send data to an HTTP destination and they're not designed for real-time data transfers.
+[!UICONTROL IRIS] 与系统使用相同类型的数 [!UICONTROL SFTP/S3] 据。 但是，这 [!UICONTROL IRIS] 是不同的，因为它以实时而非设置的时间间隔将数据发送到目标。 这是一个单独的系统，因 [!UICONTROL SFTP/S3] 为发布者无法将数据发送到HTTP目标，而且它们并非设计用于实时数据传输。
 
-There are no UI controls that let customers work directly with [!UICONTROL IRIS]. Customers work with [!UICONTROL IRIS] indirectly when they create and send data to destinations, and for other processes that require rapid data transfers.
+没有UI控件可让客户直接使用 [!UICONTROL IRIS]。 客户在创建数 [!UICONTROL IRIS] 据并将数据发送到目标时间接合作，以及处理需要快速数据传输的其他流程。
 
-[!UICONTROL IRIS] 服务和功能的示例包括：
+服务和 [!UICONTROL IRIS] 功能的示例包括：
 
-* 快速(在30秒内)同步cookie和区段。It can synchronize the [!DNL Audience Manager] cookie, partner cookies, or both.
-* 实时数据传输。[!UICONTROL IRIS] 负责向合作伙伴或其他目标发送实时细分资格事件。This data is JSON-formatted and sent via an HTTP `POST` request.
+* 为cookie和区段提供快速（30秒内）同步。 它可以同步 [!DNL Audience Manager] cookie和／或合作伙伴cookie。
+* 实时数据传输。 [!UICONTROL IRIS] 负责向合作伙伴或其他目标发送实时细分资格事件。 此数据采用JSON格式，并通过HTTP请求发 `POST` 送。
 
-* Bulk server-to-server data transfers: If you exchange large amounts of data with [!DNL Audience Manager], [!UICONTROL IRIS] is the system that your servers engage with to transfer data.
+* 批量服务器到服务器数据传输：如果您与服务器交换大量数 [!DNL Audience Manager]据， [!UICONTROL IRIS] 则服务器使用的系统是用来传输数据的。
 
-* 可靠地大规模工作并且容错的可靠基础结构。Systems that power [!UICONTROL IRIS] include Amazon SQS, Amazon EC2, and Cassandra.
+* 可靠的基础架构，可大规模运行并且容错。 强大的系 [!UICONTROL IRIS] 统包括Amazon SQS、Amazon EC2和Cassandra。
 
 **区段映射规则**
 
-To optimize traffic between [!UICONTROL IRIS] and segment destinations, [!UICONTROL IRIS] sends segments to destinations based on a set of rules.
+要优化与区段目 [!UICONTROL IRIS] 标之间的流量，请 [!UICONTROL IRIS] 根据一组规则将区段发送到目标。
 
-1. **新的细分资格**：当设备符合新的区段条件时， [!UICONTROL IRIS] 将与该设备关联的所有区段发送到映射到这些区段的所有目标。
+1. **新细分资格**:当设备符合新区段的条件时，将与该设 [!UICONTROL IRIS] 备关联的所有区段发送到映射到这些区段的所有目标。
 
-1. **新的细分折扣**：当设备不再符合区段资格时， [!UICONTROL IRIS] 将与该设备相关的所有区段资格和资格发送到映射到这些区段的所有目标。
+1. **新细分取消资格**:当设备不再符合区段资格时，会将与该设备关联的所有区段资格和 [!UICONTROL IRIS] 取消资格发送到映射到这些区段的所有目标。
 
-1. **目标映射更新**：当目标映射更新时，Audience Manager下次看到设备时 [!UICONTROL IRIS] 将与设备关联的所有区段发送到映射到这些区段的所有目标。
+1. **目标映射更新**:更新目标映射时，将与设备关联的 [!UICONTROL IRIS] 所有区段发送到映射到这些区段的所有目标，此时Audience manager将在下次查看设备时发送。
 
-1. **设备图表更新**：当任何设备ID从用于评估区段的设备图表中添加或删除任何设备ID时，在Audience Manager下次看到设备时 [!UICONTROL IRIS] ，将与该设备关联的所有区段发送到映射到这些区段的所有目标。
+1. **设备图形更新**:当任何设备ID从用于评估区段的设备图中添加或删除时， [!UICONTROL IRIS] Audience Manager会将与该设备关联的所有区段发送到映射到这些区段的所有目标，此时Audience Manager会下次看到设备。
 
 >[!IMPORTANT]
 >
->If Audience Manager doesn't detect any of the updates above for 3 consecutive days, [!UICONTROL IRIS] sends all segments associated to a device to all of the destinations mapped to these segments, the next time Audience Manager sees the device.
+>如果Audience manager连续3天未检测到以上任何更新，则会将与设备关联的所有区段发送到映射到这些区段的所有目标，此时Audience manager将下次看到设备。 [!UICONTROL IRIS]
 
-**示例数据文件**
+**范例数据文件**
 
-The following example contains real-time segment data from [!UICONTROL IRIS]. 请记住，这只是示例数据。每个客户可能具有不同的格式要求，因此内容可能会有所不同。
+以下示例包含来自的实时区段数据 [!UICONTROL IRIS]。 请记住，这只是样本数据。 每位客户可能具有不同的格式要求，因此内容可能会有所不同。
 
 ```
 {
@@ -144,6 +144,6 @@ The following example contains real-time segment data from [!UICONTROL IRIS]. �
 }
 ```
 
-## Profile Cache Server (PCS) {#pcs}
+## 配置文件缓存服务器(PCS) {#pcs}
 
-See [Data Collection Components](../../reference/system-components/components-data-collection.md).
+请参阅 [数据收集组件](../../reference/system-components/components-data-collection.md)。
