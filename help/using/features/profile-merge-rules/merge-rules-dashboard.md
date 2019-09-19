@@ -1,33 +1,33 @@
 ---
-description: 从仪表板创建和管理所有合并规则。最多可创建个配置文件合并规则。
-seo-description: 从仪表板创建和管理所有合并规则。最多可创建个配置文件合并规则。
-seo-title: 个人资料合并规则控制板
+description: 从功能板创建和管理所有合并规则。 最多可创建3个配置文件合并规则。
+seo-description: 从功能板创建和管理所有合并规则。 最多可创建3个配置文件合并规则。
+seo-title: 配置文件合并规则功能板
 solution: Audience Manager
-title: 个人资料合并规则控制板
-uuid: d6725218-7b36-4653-9900-d67 b5 f7702 a0
+title: 配置文件合并规则功能板
+uuid: d6725218-7b36-4653-9900-d67b5f7702a0
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 28d1292140a56cf1627a8921876d9483221876ca
 
 ---
 
 
-# Profile Merge Rules Dashboard {#profile-merge-rules-dashboard}
+#  配置文件合并规则功能板 {#profile-merge-rules-dashboard}
 
-从仪表板创建和管理所有合并规则。You can create a maximum of 3 [!UICONTROL Profile Merge Rules].
+从功能板创建和管理所有合并规则。 最多可创建3个 [!UICONTROL Profile Merge Rules]。
 
-[!UICONTROL Profile Merge Rules] 仪表板提供了一个统一的工作区，可让您管理 [!UICONTROL Profile Merge Rules]您的工作。The dashboard is located at **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Profile Merge Rules]**. 您的规则仪表板可能类似于下面显示的示例。
+功能 [!UICONTROL Profile Merge Rules] 板提供了统一的工作区，可让您管理 [!UICONTROL Profile Merge Rules]。 功能板位于 **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Profile Merge Rules]**。 您的规则功能板可能与以下示例类似。
 
 ![](assets/profile-dashboard.png)
 
-When working with [!UICONTROL Profile Merge Rules], you can:
+使用时， [!UICONTROL Profile Merge Rules]您可以：
 
-* 从跨设备数据源最多创建个规则。See [Create a Cross-Device Data Source](../../features/profile-merge-rules/merge-rules-start.md#create-data-source).
-* 指定默认合并规则。[区段生成器](../../features/segments/segment-builder.md) 会自动将默认规则应用于您创建的任何新区段。
-* Apply [Data Export Controls](../../features/data-export-controls.md#) to a merge rule. [!UICONTROL Data Export Controls] 防止您在数据泄露或使用协议时向目标发送数据。
+* 从跨设备数据源创建最多3个规则。 请参 [阅创建跨设备数据源](../../features/profile-merge-rules/merge-rules-start.md#create-data-source)。
+* 指定默认合并规则。 [区段生成器](../../features/segments/segment-builder.md) (Segment Builder)会自动将默认规则应用于您创建的任何新区段。
+* 对合 [并规则应用](../../features/data-export-controls.md) “数据导出控件”。 [!UICONTROL Data Export Controls] 在违反数据隐私或使用协议的情况下，阻止您向目标发送数据。
 * 跟踪每个用户的平均设备数。
-* 使用基本控件创建、编辑和删除规则。只有管理员可以管理规则，但其他用户可以查看这些规则并将其应用到区段。See [Profile Merge Rule Options Defined](../../features/profile-merge-rules/merge-rule-definitions.md) and [Use Cases for Merge Rules](../../features/profile-merge-rules/merge-rule-targeting-options.md).
+* 使用基本控件创建、编辑和删除规则。 只有管理员才能管理规则，但其他用户可以查看规则并将其应用到区段。 请参 [阅配置文件合并规则选项的定义](../../features/profile-merge-rules/merge-rule-definitions.md)[和合并规则的使用案例](../../features/profile-merge-rules/merge-rule-targeting-options.md)。
 
->[!MORE_ LIKE_ This]
+>[!MORE_LIKE_THIS]
 >
 >* [个人资料合并规则常见问题解答](../../faq/faq-profile-merge.md)
 
