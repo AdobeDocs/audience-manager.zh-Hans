@@ -4,7 +4,7 @@ seo-description: 这是一个可选的布尔型配置，用于确定 DIL 是否�
 seo-title: isCoopSafe
 solution: Audience Manager
 title: isCoopSafe
-uuid: c5362a38-93c0-4edb-bdcb-106e43 f33 a92
+uuid: c5362a38-93c0-4edb-bdcb-106e43f33a92
 translation-type: tm+mt
 source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
@@ -19,10 +19,10 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 To use `isCoopSafe` you must:
 
-* Use [!UICONTROL DIL] v6.11 or higher.
+* 使 [!UICONTROL DIL] 用v6.11或更高版本。
 * 参与 [Experience Cloud 设备协作](https://marketing.adobe.com/resources/help/en_US/mcdc/)。潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
 
-* 与您的 [!DNL Adobe] 顾问合作，在您的设备协作帐户中设置一个白名单或黑名单标记。没有自助服务路径来启用这些标志。
+* 与您的 [!DNL Adobe] 顾问合作，在您的设备协作帐户中设置一个白名单或黑名单标记。没有可启用这些标志的自助路径。
 
 ## 用例 {#use-cases}
 
@@ -113,11 +113,11 @@ Depending on the flag you set ( `true` or `false`), [!UICONTROL DIL] translates 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> DiLineStation. api. setAsCoopSafe()； </code> </p> </td> 
+   <td colname="col1"> <p> <code> dilInstance.api.setAsCoopSafe(); </code> </p> </td> 
    <td colname="col2"> <p>在所有后续事件调用中设置 POST 参数 <code>d_coop_safe=1</code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> DiLineStation. api. setAscountSafe()； </code> </p> </td> 
+   <td colname="col1"> <p> <code> dilInstance.api.setAsCoopUnsafe(); </code> </p> </td> 
    <td colname="col2"> <p>在所有后续事件调用中设置 POST 参数 <code>d_coop_unsafe=1</code>。 </p> </td> 
   </tr> 
  </tbody> 
