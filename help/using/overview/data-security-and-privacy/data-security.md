@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 数据安全
 uuid: 33ad19ca-4690-4d97-853b-1882d7d4ac01
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 91444ad943fcd020c83e522922d67ef400bf8824
 
 ---
 
@@ -36,23 +36,23 @@ Audience manager的安全实践包括外部和内部审计、活动记录、培�
 
 **** 系统安全： 为帮助保护数据安全和私有，Audience Manager:
 
-* 阻止来自未授权IP地址的请求。
-* 保护防火墙、VPN和虚拟专用云存储后的数据。
-* 使用基于触发器的审计记录跟踪客户和控制信息数据库中的更改。 这些日志跟踪数据库级别的所有更改，包括从中进行更改的用户ID和IP地址。
+* Blocks requests from unauthorized IP addresses.
+* Protects data behind firewalls, VPNs, and with Virtual Private Cloud storage.
+* Tracks changes in the customer and control-information databases with trigger-based audit logging. These logs track all changes at the database level, including the user ID and IP address from which changes are made.
 
-**** 安全资产： Audience Manager拥有专设的网络运营团队，可监控防火墙和入侵检测设备。 只有关键人员才能访问我们的安全技术和数据。
+**Security Assets:**  Audience Manager has a dedicated network operations team that monitors firewalls and intrusion-detection devices. Only key personnel have access to our security technology and data.
 
-**** 安全培训： 在内部，我们对安全性的承诺延伸到负责我们产品的开发人员。 Adobe为开发人员提供有关如何构建安全应用程序和服务的正式培训。
+**** 安全培训： 在内部，我们对安全性的承诺延伸到负责我们产品的开发人员。 Adobe provides formal training to developers on how to build secure applications and services.
 
-**** 安全访问： Audience manager需要强口令才能登录系统。 请参阅 [密码要求](../../reference/password-requirements.md)。
+**** Secure Access:  Audience Manager requires strong passwords to log on to the system. See password requirements.[](../../reference/password-requirements.md)
 
-## 隐私和个人识别信息(PII) {#pii}
+## Privacy and Personally Identifiable Information (PII) {#pii}
 
-有助于保护个人信息安全的流程。 有关其他隐私信息，请参阅 [Adobe隐私中心](https://www.adobe.com/privacy/advertising-services.html)。
+Processes that help keep personal information safe. For additional privacy information, see the Adobe Privacy Center.[](https://www.adobe.com/privacy/advertising-services.html)
 
-**** PII数据： Audience Manager合同禁止客户和数据合作伙伴将PII信息发送到我们的系统。 此外，唯一用户ID(UUID)不包含或使用PII数据作为ID生成算法的一部分。
+**** PII Data:  Audience Manager contractually prohibits customers and data partners from sending PII information into our system. Additionally, the Unique User ID (UUID) does not contain or use PII data as part of the ID-generation algorithm.
 
-**** IP地址： Audience manager确实会收集IP地址。 IP地址用于数据处理和日志聚合过程。 地理／位置查找和定位也需要它们。 此外，保留的日志文件中的所有IP地址在90天内都会被模糊处理。
+**** IP Addresses:  Audience Manager does collect IP addresses. IP地址用于数据处理和日志聚合过程。 地理／位置查找和定位也需要它们。 此外，保留的日志文件中的所有IP地址在90天内都会被模糊处理。
 
 ## 数据分区 {#data-partitioning}
 
@@ -70,10 +70,22 @@ Adobe Audience manager支持两种将已载入的S2S数据文件传输到我们�
 
 **** SFTP:对于SFTP选项，大多数客户选择通过使用安全外壳(SSH)协议的安全FTP(SFTP)协议传送文件。 此方法可确保在客户系统与Adobe系统之间传输时对文件进行加密。 对于每位客户，我们在SFTP服务器上创建一个被监禁的下拉框位置，该位置与该系统上的用户帐户绑定。 只有客户的有凭据且拥有特权的内部系统用户才能访问此被监禁的下拉框位置。 这座牢房永远无法供其他客户使用。
 
-**** 通过HTTPS的Amazon Web Services S3:对于S3交付选项，我们建议所有客户配置其S3客户端，以使用HTTPS加密方法进行文件传输（这不是默认设置，因此必须显式配置它）。 s3cmd命令行工具以及每种主要编程语言中可用的S3库都支持HTTPS选项。 启用此HTTPS选项后，客户在飞到我们的系统时的数据将加密。 对于每位客户，我们会创建一个单独的S3存储段子目录，该目录只能通过该客户的凭据和我们内部系统用户的凭据进行访问。
+**** 通过HTTPS的Amazon Web Services S3:对于S3交付选项，我们建议所有客户配置其S3客户端，以使用HTTPS加密方法进行文件传输（这不是默认设置，因此必须显式配置它）。 s3cmd命令行工具以及每种主要编程语言中可用的S3库都支持HTTPS选项。 启用此HTTPS选项后，客户在飞到我们的系统时的数据将加密。 For each customer, we create a separate S3 bucket sub-directory that can be accessed only by that customer's credentials and those of our internal system users.
 
 要向数据文件添加PGP加密，请参阅 [File PGP Encryption for Inbound Data Types](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。
 
 ## 通过逃逸保护数据 {#escaping-data}
 
 请注意， [!DNL Audience Manager] 不会转义传出数据，以保护其免受可能的跨站点脚本(XSS)等攻击。 客户端有责任逃避传入的数据。
+
+## HTTP Strict-Transport-Security (#hsts)
+
+[!DNL HTTP Strict-Transport-Security (HSTS)] is a web security policy mechanism that helps protect against cookie hijacking and protocol downgrade attacks by not permitting  traffic and transparently upgrading all  traffic to .[!DNL HTTP][!DNL HTTP][!DNL HTTPS]
+
+This policy improves data security between clients and Adobe Edge servers.
+
+### 示例 {#hsts-example}
+
+When trying to access ,  will automatically upgrade the request to  , in case the browser doesn’t automatically request the  domain.`http://bank.demdex.com`[!DNL HSTS]`https://bank.demdex.com`[!DNL HTTPS]
+
+See HTTP Strict Transport Security - Wikipedia for more information about HSTS.[](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)
