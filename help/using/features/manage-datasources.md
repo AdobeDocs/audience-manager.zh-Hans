@@ -1,13 +1,13 @@
 ---
-description: 要创建新数据源，请转到“受众数据”>“数据源”>“添加新”，然后完成此处描述的每个部分的步骤。 创建数据源需要管理员权限。
-keywords: cdf；自定义数据馈送
-seo-description: 要创建新数据源，请转到“受众数据”>“数据源”>“添加新”，然后完成此处描述的每个部分的步骤。 创建数据源需要管理员权限。
-seo-title: 创建数据源
+description: 要创建新数据源，请转到“受众数据”>“数据源”>“添加新”，然后完成此处描述的每个部分的步骤。 Administrator permissions are required to create a data source.
+keywords: data sources;manage data source;audience manager data source
+seo-description: To create a new data source, go to Audience Data > Data Sources > Add New and complete the steps for each section described here. 创建数据源需要管理员权限。
+seo-title: Create a Data Source
 solution: Audience Manager
-title: 创建数据源
+title: Manage Data Sources
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e1abb305c66a4adf6a42a7873144222491692f9
 
 ---
 
@@ -63,21 +63,21 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 >* [数据源设置和菜单选项](../features/datasources-list-and-settings.md#settings-menu-options)
 
 
-## 删除数据源 {#delete-data-source}
+## Delete a Data Source {#delete-data-source}
 
 <!-- t_datasource_delete.xml -->
 
-删除不再需要的数据源。
+Delete a data source that you no longer need.
 
 >[!NOTE]
 >
->请注意以下限制：
+>Please note the following restrictions:
 >
->* 无法删除活动 [受众或数据源已同步的特征](../features/traits/client-activity-synced-audience-traits.md)。
->* 对于使用Adobe Analytics的客户：Audience manager不允许您删除从报表包自动创建的数 [!DNL Analytics] 据源。 使用核 [心服务](https://marketing.adobe.com/resources/help/en_US/mcloud/) ，取消映射这些数据源。
+>* You cannot delete an [Active Audience or Data Source Synced Trait](../features/traits/client-activity-synced-audience-traits.md).
+>* For customers using Adobe Analytics: Audience Manager does not allow you to delete data sources created automatically from your  report suites. [!DNL Analytics]Use the [Core Service](https://marketing.adobe.com/resources/help/en_US/mcloud/) to unmap these data sources.
 
 
 1. Click **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Data Sources]**.
 1. 选中一个或多个数据源旁边的复选框。
-如果您有 [!UICONTROL Search] 长列表，则可以使用该框来查找所需的数据源。
-1. 单击 ![](assets/icon_trash.png)，然后确认删除。
+You can use the  box to locate the desired data sources if you have a long list.[!UICONTROL Search]
+1. Click  , then confirm the deletion.![](assets/icon_trash.png)
