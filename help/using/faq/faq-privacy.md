@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 隐私和数据保留常见问题解答
 uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
 translation-type: tm+mt
-source-git-commit: c785c07a1572e9968e62a1bc753d24780eda64c5
+source-git-commit: 3a4f23bc853a2324a4c91c6e65b14455293a5b1b
 
 ---
 
@@ -52,35 +52,35 @@ See [Audience Manager Cookies](https://marketing.adobe.com/resources/help/en_US/
  <tbody> 
   <tr> 
    <td colname="col1"> <p>后端服务器 </p> </td> 
-   <td colname="col2"> <p>120天。 </p> <p> Audience manager在上次在Audience manager平台上查看用户后120天从我们的后端服务器中删除用户数据。 如果 <span class="keyword"> Audience Manager在120天周期内记录用户活动</span> ，我们将再保留120天的此数据。 </p> </td> 
+   <td colname="col2"> <p>120-days. </p> <p> Audience manager在上次在Audience manager平台上查看用户后120天从我们的后端服务器中删除用户数据。 如果 <span class="keyword"> Audience Manager在120天周期内记录用户活动</span> ，我们将再保留120天的此数据。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>边缘服务器 </p> </td> 
-   <td colname="col2"> <p> 14天。 </p> <p>Audience manager在上次在Audience manager平台上查看用户后14天从边缘服务器删除用户数据。 如果 <span class="keyword"> Audience Manager在14天周期内记录用户活动</span> ，我们将再保留14天的此数据。 如果用户在14天后再次变为活动状态，则在首次新页面查看和用户变为可操作状态之间会有延迟。 在超过14天不活动后，需要6-18小时才能将完整配置文件重新发布到边缘中心。 </p> </td> 
+   <td colname="col2"> <p> 14-days. </p> <p>Audience manager在上次在Audience manager平台上查看用户后14天从边缘服务器删除用户数据。 如果 <span class="keyword"> Audience Manager在14天周期内记录用户活动</span> ，我们将再保留14天的此数据。 If the user becomes active again after the 14-day period, there will be a delay between that first new page view and when the user becomes actionable. 在超过14天不活动后，需要6-18小时才能将完整配置文件重新发布到边缘中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始日志 </p> </td> 
-   <td colname="col2"> <p>180天（在没有活动的180天后删除）。 </p> <p>原始日志是边缘服务器通过HTTP调用或从已载入的文件接收到的数据，这些文件发送到 <span class="keyword"> Audience Manager</span>。 </p> </td> 
+   <td colname="col2"> <p>180-days (removed after 180-days of no activity). </p> <p>Raw logs are data received by an edge server via HTTP calls or from onboarded files sent in to <span class="keyword"> Audience Manager</span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>广告服务器日志 </p> </td> 
-   <td colname="col2"> <p><b>报表</b> </p> <p>保留日志文件用于报告目的的时间最长为30天。 我们不会在我们的后端存储中保留不匹配的日志(即访客的广告服务器ID与 <span class="keyword"> Audience Manager</span> ID之间没有ID同步的日志)，并且 <span class="keyword"></span> Amazon S3中存储的匹配日志最多可保留30天。 </p> <p><b>可操作的日志文件</b> </p> <p>匹配的日志和不匹配的日志最多可保留30天。 </p> </td> 
+   <td colname="col1"> <p>Ad Server Logs </p> </td> 
+   <td colname="col2"> <p><b>报表</b> </p> <p>Log files are retained for reporting purposes for up to 30 days. We do not persist unmatched logs (i.e. logs for which there is no ID sync between a visitor's ad server ID and  Audience Manager ID) in our backend storage, and matched logs stored in  Amazon S3 are retained for up to 30 days.<span class="keyword"></span><span class="keyword"></span> </p> <p><b>可操作的日志文件</b> </p> <p>Both matched and unmatched logs are retained for up to 30 days. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>CRM级别配置文件（经身份验证的配置文件） </p> </td> 
-   <td colname="col2"> <p>非活动的CRM级别配置文件（客户ID）的默认生存时间(TTL)间隔为24个月。 但是，您可以使用Audience Manager UI将非活动的CRM级别配置文件的TTL间隔缩短或延长一个月至5年。 在创建或编辑跨设备数据源时，可以完成此操作。</p> <p>有关详细信息，请参阅创建跨设备数 <a href="../features/profile-merge-rules/merge-rules-start.md#settings"> 据源中的数据源设置 </a>。</p> </td> 
+   <td colname="col1"> <p>CRM-level profiles (authenticated profiles) </p> </td> 
+   <td colname="col2"> <p>The default time-to-live (TTL) interval for inactive CRM-level profiles (Customer IDs) is 24 months. However, you can use the Audience Manager UI to reduce or extend the TTL interval for inactive CRM-level profiles between one month and 5 years. You can accomplish this when creating or editing a Cross-Device data source.</p> <p>For more information, see Data Source Settings in  Create a Cross-Device Data Source .<a href="../features/profile-merge-rules/merge-rules-start.md#settings"></a></p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>移动设备ID </p> </td> 
-   <td colname="col2"> <p>移动设备ID(<a href="../reference/ids-in-aam.md"> IDFA、GAID</a>)的保留条件遵循前两行、后端服务器和边缘服务器中描述的顺序。 </p> </td> 
+   <td colname="col1"> <p>Mobile Device IDs </p> </td> 
+   <td colname="col2"> <p>The retention conditions for mobile device IDs ( IDFA, GAID) follow the cadence described in the first two rows, back-end servers and edge servers.<a href="../reference/ids-in-aam.md"></a> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>客户数据馈送(CDF) </p> </td> 
+   <td colname="col1"> <p>Customer Data Feeds (CDF) </p> </td> 
    <td colname="col2"> <p>CDF文件包含的数据与 <span class="keyword"> Audience Manager事件调用</span> （/事件）发送到我们的服务器的数据相同。 保留期为8天。 有关CDF的更多详细信息，请参阅 <a href="../features/cdf-files.md"> CDF简介</a> 和 <a href="../faq/faq-cdf.md"> CDF常见问题解答</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>同步ID之间的映射 </p> </td> 
-   <td colname="col2"> <p>同步ID之间的映射可在关联的 <a href="../reference/ids-in-aam.md"> Audience Manager唯一用户ID(AAM UUID)的有效期内保留</a>。 </p> </td> 
+   <td colname="col2"> <p>Audience Manager Cookie ID( <a href="../features/administration/usage-limits.md#id-mapping-limits"> Audience Manager唯一用户ID或AAM UUID</a><a href="../reference/ids-in-aam.md"></a>)与第三方Cookie ID之间的ID映射的寿命限制为120天。 每次在Audience Manager网络中查看Audience Manager Cookie时，ID映射的寿命都会重置。 将在关联的 <a href="../reference/ids-in-aam.md">Audience Manager唯一用户ID(AAM UUID)的有效期内保留最新的ID映射同步</a>。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>入站数据 </p> </td> 
