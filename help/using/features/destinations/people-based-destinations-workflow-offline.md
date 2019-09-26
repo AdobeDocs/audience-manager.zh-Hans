@@ -5,12 +5,15 @@ seo-title: 工作流B —— 基于仅脱机数据的个性化
 solution: Audience Manager
 title: 工作流B —— 基于仅脱机数据的个性化
 translation-type: tm+mt
-source-git-commit: d0e343e3fbaf527e9b630dc2dbc851d8f8f4c0b2
+source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ---
 
 
 # 工作流B —— 基于仅脱机数据的个性化 {#workflow-b}
+
+>[!IMPORTANT]
+>本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
 本页包含如何根据仅线下客户数据构建受众细分并将其发送到基于人员的目标的逐步指导。
 
