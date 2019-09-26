@@ -5,22 +5,25 @@ seo-title: 基于人员的目标概述和使用案例
 solution: Audience Manager
 title: 概述和使用案例
 translation-type: tm+mt
-source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
+source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ---
 
 
 # 概述和使用案例 {#overview-use-cases}
 
-使用 [!DNL People-Based Destinations] 将第一方受众细分发送到基于人员的环境。 这些环境是属于一个实体的封闭生态系统，该实体控制其中显示的内容。 They include social platforms such as [!DNL Facebook], and other platforms that rely on customer accounts to personalize the displayed content.
+使用 [!DNL People-Based Destinations] 将第一方受众细分发送到基于人员的环境。 这些环境是属于一个实体的封闭生态系统，该实体控制其中显示的内容。 这些平台包括社交平台(如 [!DNL Facebook]社交平台)和其他依赖客户帐户个性化显示内容的平台。
+
+>[!IMPORTANT]
+>本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
 ## 概述 {#overview}
 
-[!DNL People-Based Destinations] 使您能够对线上和线下数据应用细分，以根据哈希标识符(如 [电子邮件地址或电话号码](people-based-destinations-prerequisites.md#hashing-requirements))创建受众细分。 Then, you can send these segments to "walled gardens" such as , where you can target your audience on the social platforms. [!DNL Facebook][!DNL People-Based Destinations] can help you:
+[!DNL People-Based Destinations] 使您能够对线上和线下数据应用细分，以根据哈希标识符(如 [电子邮件地址或电话号码](people-based-destinations-prerequisites.md#hashing-requirements))创建受众细分。 然后，您可以将这些细分发送到“围墙花园”, [!DNL Facebook]例如，在社交平台上定位受众。 [!DNL People-Based Destinations] 可以帮助您：
 
-* Target offline and online audiences in platforms such as [!DNL Facebook], based on hashed email addresses;
-* Complement existing device and cookie targeting capabilities of Audience Manager;
-* Eliminate costs associated with third-party data onboarding solutions;
+* 根据经过散列处理的电子邮件地址，在平台 [!DNL Facebook]中定位线下和在线受众；
+* 补充Audience manager的现有设备和cookie定位功能；
+* 消除与第三方数据入门解决方案相关的成本；
 * 消除与开发定制化数据载入工作流程相关的成本；
 * 在无Cookie的环境中定位受众；
 * 通过删除与客户ID匹配的重复电子邮件地址来定位受众。
@@ -39,9 +42,9 @@ source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
 
 不通过Audience manager在基于人员的渠道中激活受众细分会导致客户在访问网站时看到的内容与他们在源中看到的内容之间脱节的体 [!DNL Facebook] 验。 跨渠道实现一致的定位可以在优化广告支出的同时增加广告收入。
 
-**Reach audiences in people-based channels without the need of a dedicated data onboarding solution or custom workflows to send audiences.**
+**无需专用的数据入门解决方案或自定义工作流程即可向受众发送信息，即可触及基于人员的渠道中的受众。**
 
-The more "traditional" way of targeting audiences across people-based channels involves you having to export your customer data in a format accepted by the platform that you want to advertise on, and then using the platform's dedicated data onboarding method to bring your customer data to your advertiser account. This is all manual work that you need to do for each platform that you want to advertise on. Additionally, different platforms may have different data format requirements, making the process even more tedious.
+跨基于人的渠道定位受众的更“传统”的方式包括您必须以平台接受的格式导出客户数据，然后使用平台专用的数据载入方法将客户数据引入广告商帐户。 这是您需要为每个要投放广告的平台完成的所有手动工作。 此外，不同的平台可能有不同的数据格式要求，这使得该过程更加繁琐。
 
 ![pbd-overview](assets/pbd-diagram.png)
 
