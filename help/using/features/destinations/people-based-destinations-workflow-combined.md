@@ -5,12 +5,15 @@ seo-title: 工作流A —— 基于所有在线活动和离线数据的个性化
 solution: Audience Manager
 title: 工作流A —— 基于所有在线活动和离线数据的个性化
 translation-type: tm+mt
-source-git-commit: 455c198d7a096a620a2cf7c8b728b67335eadc8d
+source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ---
 
 
 # 工作流A —— 基于所有在线活动和离线数据的个性化 {#workflow-a}
+
+>[!IMPORTANT]
+>本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
 本页包括有关如何将离线数据与Audience manager中已有的行为数据相结合以创建新受众细分的分步指导，然后将这些受众细分发送到 [!DNL CRM][!DNL People-Based Destinations]。
 
