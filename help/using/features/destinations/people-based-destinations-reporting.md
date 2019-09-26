@@ -5,12 +5,15 @@ seo-title: 可共享的受众
 solution: Audience Manager
 title: 可共享的受众
 translation-type: tm+mt
-source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
+source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ---
 
 
 # 可共享的受众 {#shareable-audiences}
+
+>[!IMPORTANT]
+>本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
 [!DNL People-Based Destinations] 将Audience Manager的概 [!DNL Shareable Audiences] 念引入Audience Manager。 此指标可帮助您了解Audience manager可与目标平台共享的哈希电子邮件地址数。
 
