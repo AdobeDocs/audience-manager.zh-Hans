@@ -5,14 +5,14 @@ seo-title: 使用基于人的平台进行身份验证
 solution: Audience Manager
 title: 使用基于人的平台进行身份验证
 translation-type: tm+mt
-source-git-commit: 05f334dc3d975a0fe18b93c844889e3edb2dfafa
+source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
 
 ---
 
 
 # 使用基于人的平台进行身份验证 {#authentication-with-people-based-platforms}
 
-本页介绍如何配置和管理Audience manager与基于人员的平台之间的集成。
+本页包含有关如何配置和管理Audience manager与基于人员的平台之间的集成的指导。
 
 >[!NOTE]
 >无论您的实施方案如何，这是基于人员的目标的必选步骤。
@@ -26,11 +26,11 @@ source-git-commit: 05f334dc3d975a0fe18b93c844889e3edb2dfafa
    ![基于人的平台](assets/pbd-add.png)
 1. 单 **[!UICONTROL Confirm]** 击以重定向到所选平台的身份验证页面。
 1. 通过社交平台帐户的身份验证后，您将被重定向到Audience Manager，您应在Audience manager中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!UICONTROL Confirm]**。
-1. Audience manager在页面顶部显示通知，告诉您帐户是否已成功添加。 通知还允许您添加联系人电子邮件地址，以在社交平台身份验证即将过期时接收通知。
+1. Audience manager在页面顶部显示通知，告诉您帐户是否已成功添加。 通知还允许您添加联系人电子邮件地址，以在社交平台身份验证即将过期时从Adobe接收通知。
 
 ## 身份验证令牌到期和通知管理 {#token-expiration-notification}
 
-Audience manager通过身份验证令牌处理与社交平台的集成，这些令牌在一定时间后过期。 令牌有效性持续时间取决于每个社交平台的集成规则。 身份验证令牌到期后，Audience manager将无法将受众细分发送到您的目标。 为避免出现此情况，我们建议在您的集成中添加至少一个联系电子邮件地址，以便在身份验证令牌即将过期时立即向您发送通知。 发生这种情况时，您可以重新验证身份，以确保目标继续接收您的受众细分。
+Audience manager通过身份验证令牌处理您与社交平台的集成，这些令牌在一定时间后过期。 令牌有效性持续时间取决于每个社交平台的集成规则。 身份验证令牌到期后，Audience manager将无法将受众细分发送到您的目标。 为避免出现此情况，我们建议在您的集成中添加至少一个联系电子邮件地址，以便在身份验证令牌即将过期时立即向您发送通知。 发生这种情况时，您可以重新验证身份，以确保目标继续接收您的受众细分。
 
 下面介绍如何将电子邮件地址添加到现有集成：
 
