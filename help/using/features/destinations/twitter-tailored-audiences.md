@@ -5,7 +5,7 @@ seo-title: 将Twitter定制受众配置为基于设备的自助服务目标
 solution: Audience Manager
 title: 将Twitter定制受众配置为基于设备的自助服务目标
 translation-type: tm+mt
-source-git-commit: cd770afc39221687f4eb47cc358d8d57a51b9fb5
+source-git-commit: 2bf825e083c81edb8c03cb8dcef99088b1958452
 
 ---
 
@@ -88,6 +88,10 @@ source-git-commit: cd770afc39221687f4eb47cc358d8d57a51b9fb5
 
 * 正确的区段或映射名称：“美国和欧洲购物者”;
 * 区段或映射名称不正确：“美国，欧洲5h0pP3rs”。
+
+## 匹配率注意事项 {#match-rates-considerations}
+
+使用时， [!UICONTROL Twitter Tailored Audiences]目标页 [!UICONTROL Segment Addressable Audience] 面中 [!UICONTROL Segment Match Rate] 的和度量将不显示任何值。 这是正常行为，因为受众匹配以及此目标的匹配率由Adobe而不是Adobe处理和 [!UICONTROL Twitter]托管。
 
 >[!IMPORTANT]
 >
