@@ -5,12 +5,15 @@ seo-title: 工作流C —— 基于实名活动和离线数据的个性化
 solution: Audience Manager
 title: 工作流C —— 基于实名活动和离线数据的个性化
 translation-type: tm+mt
-source-git-commit: a2825f256364668abc4e6760a473713fec8626e3
+source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ---
 
 
 # 工作流C —— 基于实名活动和离线数据的个性化 {#workflow-c}
+
+>[!IMPORTANT]
+>本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
 本页包含有关如何将离线数据与实时行为数据相结合的分步指导，供经过身份验证的用 [!DNL CRM] 户创建受众细分，然后将这些受众细分发送到 [!DNL People-Based Destinations]。
 
@@ -84,12 +87,12 @@ source-git-commit: a2825f256364668abc4e6760a473713fec8626e3
 
 >[!IMPORTANT]
 >
->如果已经使用或选项定义了规 **[!UICONTROL Current Authenticated Profiles]** 则， **[!UICONTROL Last Authenticated Profiles]** 则可跳到第4步- [创建受众细分](#create-audience-segments)。
+>如果您已经使用或选项定义 **[!UICONTROL Current Authenticated Profiles]** 了规 **[!UICONTROL Last Authenticated Profiles]** 则，可跳到第4步- [创建受众细分](#create-audience-segments)。
 
 1. 登录您的Audience manager帐户并转 **[!UICONTROL Audience Data]** 到-&gt; **[!UICONTROL Profile Merge Rules]**。
 2. 单击 **[!UICONTROL Add New Rule]**.
 3. 输入配置文件合并规 **[!UICONTROL Name]** 则和 **[!UICONTROL Description]**。
-4. 在部 **[!UICONTROL Profile Merge Rule Setup]** 分中，从列 **[!UICONTROL All Cross-Device Profiles]** 表中选择规 **[!UICONTROL Cross-Device Options]** 则。
+4. 在部 **[!UICONTROL Profile Merge Rule Setup]** 分中，从列表 **[!UICONTROL Current Authenticated Profiles]** 中选 **[!UICONTROL Last Authenticated Profiles]** 择或规 **[!UICONTROL Cross-Device Options]** 则。
 5. 在列 **[!UICONTROL Cross-Device Profile Options]** 表中，选择要运行分段的数据源。 这些应是包含现有DPUUID的数据源。
    ![合并规则设置](assets/pbd-pmr-combined.png)
 
