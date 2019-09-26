@@ -5,7 +5,7 @@ seo-title: 基于人员的目标先决条件和注意事项
 solution: Audience Manager
 title: 先决条件和注意事项
 translation-type: tm+mt
-source-git-commit: f3fe6abe913d98549ae6c090a2d5f721485308c2
+source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: f3fe6abe913d98549ae6c090a2d5f721485308c2
 
 ### [!DNL Facebook]
 
-在使用将受 [!DNL People-Based Destinations] 众细分发送到之前， [!DNL Facebook]请确保满足以下要求：
+在使用将第 [!DNL People-Based Destinations] 一方受众细分发送到之前，请确保 [!DNL Facebook]满足以下要求：
 
 1. 您 [!DNL Facebook] 的用户帐户必须为您计划使用 **的广告帐户启用** “管理营销活动”权限。
 1. 将 **Adobe Experience cloud商业帐户添加为广告合作伙伴**[!DNL Facebook Ad Account]。 使用 `business ID=206617933627973`. 有关详 [细信息，请参阅将合作伙伴添加到您的业务经理](https://www.facebook.com/business/help/708679622611131) 。
@@ -35,21 +35,21 @@ source-git-commit: f3fe6abe913d98549ae6c090a2d5f721485308c2
    > 配置Adobe Experience cloud的权限时，必须启用“管理营销活 **动”权** 限。 这是集成所必需的 [!DNL People-Based Destinations] 选项。
 1. 阅读并签署 [!DNL Facebook Custom Audiences] 服务条款。 为此，请转到 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`您的 `accountID` 位置 [!DNL Facebook Ad Account ID]。
 
-## 数据入门 {#data-onboarding}
+## Data Onboarding {#data-onboarding}
 
-当前的数据 [!DNL People-Based Destinations] 摄取支持每批传输最多10个与一个客户ID()关联的哈希电子邮件地址[!DNL CRM ID]。 上传10个以上链接到一个客户ID的哈希电子邮件地址会导致Audience manager以无特定顺序收录其中10个。
+Data ingestion for  currently supports up to 10 hashed email addresses linked to one customer ID (), per batch transfer. [!DNL People-Based Destinations][!DNL CRM ID]上传10个以上链接到一个客户ID的哈希电子邮件地址会导致Audience manager以无特定顺序收录其中10个。
 
-在多次批量传输中上传10个以上链接到一个客户ID的哈希化电子邮件地址会导致Audience manager保留最近添加的10个电子邮件地址。
+Uploading more than 10 hashed email addresses linked to one customer ID in multiple batch transfers causes Audience Manager to retain the most recent 10 email addresses added.
 
 ## 数据隐私{#data-privacy}
 
-尽管 [!DNL People-Based Destinations] 允许您根据电子邮件地址定位受众，但Audience Manager中始终没有直接可识别的访客信息。 在数据入门阶段，您必须确保您计划使用的电子邮件地址已使用算法进行哈希 [!DNL SHA256] 处理。 否则，您将无法在中使用它们 [!DNL People-Based Destinations]。
+Although  allow you to target audiences based on hashed email addresses uploaded by you, you remain prohibited from uploading any directly identifiable visitor information into Audience Manager. [!DNL People-Based Destinations]In the data onboarding phase, you must ensure that the email addresses you plan to use are hashed with the  algorithm. [!DNL SHA256]Otherwise, you won't be able to use them in .[!DNL People-Based Destinations]
 
-## 数据哈希与加密 {#data-hashing-encryption}
+## Data Hashing Versus Encryption {#data-hashing-encryption}
 
-加密是双向功能。 任何加密的信息也可以使用正确的解密密钥被解密。 在Audience manager环境中加密数据会带来严重的隐私风险，因为任何加密形式的个人识别信息也都可以解密，从而泄露敏感的客户数据。 与加密相比，加密 [!DNL People-Based Destinations] 的设计是使用散列数据，从而保护您用于定位的客户数据。
+Encryption is a two-way function. Any encrypted information can also be decrypted, using the correct decryption key. 在Audience manager环境中加密数据会带来严重风险，因为任何加密形式的个人识别信息也可以解密。 与加密相比，它 [!DNL People-Based Destinations] 们设计为处理散列数据。
 
-散列是单向函数，它对输入进行扰码以产生唯一的结果。 通过使用适当的哈希算法， [!DNL SHA256]例如，无法反转哈希函数并显示未加扰的信息。 您将上传到Audience Manager的电子邮件地址必须使用算法进行哈希 [!DNL SHA256] 处理。 这样，Audience manager便无法访问任何个人身份识别信息，从而保证客户数据的安全。
+散列是单向函数，它对输入进行扰码以产生唯一的结果。 通过使用适当的哈希算法， [!DNL SHA256]例如，无法反转哈希函数并显示未加扰的信息。 您将上传到Audience Manager的电子邮件地址必须使用算法进行哈希 [!DNL SHA256] 处理。 这样，您就可以确保Audience manager不会收到经过散列处理的电子邮件地址。
 
 ## 散列要求 {#hashing-requirements}
 
@@ -63,19 +63,19 @@ Adobe Experience Cloud可让您选择通过Experience Cloud ID服务散列客户
 
 ## 获取用户权限 {#obtaining-user-permission}
 
-由于 [!DNL People-Based Destinations] 帮助您在基于人员的渠道中激活第一方受众数据，因此您有责任告知客户如何将其数据用于广告用途。
+由于 [!DNL People-Based Destinations] 可帮助您在基于人的渠道中激活第一方受众数据，因此您有责任告知客户如何将其数据用于广告或其他用途，并从客户那里获得必要的同意。
 
 在注册前，请确 [!DNL People-Based Destinations]保在将客户的信息用于广告之前获得客户的同意。
 
 如果客户希望退出广告营销活动，请参阅退出管理 [](../../overview/data-security-and-privacy/opt-out-management.md) ，了解有关如何阻止Audience manager进一步收集数据的详细信息。
 
-## 实施第一方数据激活 {#enforcing-first-party-activation}
+## Enforcing First-Party Data Activation {#enforcing-first-party-activation}
 
-使用时， [!DNL People-Based Destinations]您只能使用第一方数据在基于人员的渠道中激活受众细分。 您不能使用任何第二方或第三方数据在基于人员的渠道中激活受众。
+When using , you can only use first-party data to activate audience segments in people-based channels. [!DNL People-Based Destinations]You cannot use any second- or third-party data for audience activation in people-based channels.
 
-## 通过声明ID定位的板载认证哈希ID {#onboard-authenticated-declared-id}
+## Onboard Authenticated Hashed IDs through Declared ID Targeting {#onboard-authenticated-declared-id}
 
-有两种方法可将离线数据导入Audience Manager [!DNL People-Based Destinations]。
+There are two ways you can bring your offline data to Audience Manager for .[!DNL People-Based Destinations]
 
-* [将批量数据发送](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 到Audience Manager，以摄取散列化的电子邮件地址。 使用此方法，您可以在中使用数据库中的所有哈希化电 [!DNL CRM] 子邮件地址 [!DNL People-Based Destinations]。 此外，使用此方法时，您还可以为已载入的特征限定哈希化电子邮件 [地址](../traits/trait-qualification-reference.md)。
-* 在传 [入经身份验证的客户ID时](../declared-ids.md) ，使用Declared ID声明散列化的电子邮件地址。 使用此方法时，Audience manager仅向已在线验证 [!DNL People-Based Destinations] 的用户发送哈希电子邮件地址。 通过Facebook激活的电子邮件地址只是声明的ID事件调用中的电子邮件地址。 与客户ID关联的其他电子邮件地址不会实时发送。
+* [Send batch data to Audience Manager to ingest hashed email addresses. ](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)With this method, you can choose to use the hashed email addresses from your  database in . [!DNL CRM][!DNL People-Based Destinations]Additionally, when using this method, you can also qualify the hashed email addresses for onboarded traits.[](../traits/trait-qualification-reference.md)
+* Use Declared IDs to declare hashed email addresses when passing in authenticated customer IDs. [](../declared-ids.md)When using this method, Audience Manager, on your behalf, only sends to  the hashed email addresses from users who have authenticated online. [!DNL People-Based Destinations]通过基于人员的渠道激活的电子邮件地址只是声明的ID事件调用中的电子邮件地址。 与客户ID关联的其他电子邮件地址不会实时发送。
