@@ -5,12 +5,15 @@ seo-title: 基于人员的目的地实施指南
 solution: Audience Manager
 title: 实施指南
 translation-type: tm+mt
-source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
+source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ---
 
 
 # 实施指南 {#implementation-guidance}
+
+>[!IMPORTANT]
+>本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
 [!DNL People-Based Destinations] 根据客户数据的结构，提供多种实施战略。 本文概述了您需要遵循的实施步骤，具体取决 [!DNL People-Based Destinations]于您的方案。
 
@@ -35,21 +38,21 @@ source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
 
 要跨社交媒体和类似的基于人员的渠道定位受众，您可以将散列化的电子邮件地址导入Audience Manager [](people-based-destinations-prerequisites.md) ，并将它们与现有在线活动特征相结合，以构建新的受众细分。 接下来，您可以使用这些细分来定位受众 [!DNL People-Based Destinations]。
 
-**B)受众定位只基于您的脱机用户活动**。 在此方案中，您的系 [!DNL CRM] 统包含您的客户电子邮件地址和其他客户属性，但客户根本没有与您的网站进行交互，因此您在Audience manager中没有任何客户活动。 下面是一个说明此方案的示例：
+**B) Audience targeting based exclusively on your offline user activity.** In this scenario, your  system contains your customer email addresses and other customer attributes, but customers have not interacted with your website at all, so you don't have any customer activity in Audience Manager. [!DNL CRM]Here's an example that illustrates this scenario:
 
-您的公司（电信服务提供商）将电子邮件地址和购买的电信计划等客户数据保存在内部 [!DNL CRM]。 您希望针对社交平台中的现有客户基于其现有订阅提供升级包。 为此，您可以将哈希化的客户电子邮件地址收录到Audience Manager中，并根据现有客户订阅创建细分。 然后，您可以发送这些细分，以 [!DNL People-Based Destinations] 便通过个性化的推广信息定位客户。
+Your company, a telecom services provider, keeps customer data like email addresses and purchased telecom plans in an internal [!DNL CRM]. You want to target existing customers in social platforms to offer them upgrade packages based on their existing subscriptions. To do this, you can ingest your hashed customer email addresses into Audience Manager, and create segments based on the existing customer subscriptions. Then, you can send these segments to [!DNL People-Based Destinations] to target your customers with personalized offers.
 
-## 2.定义目标电子邮件地址的类型 {#define-target-email}
+## 2. Define the Type of Targeted Email Addresses {#define-target-email}
 
-定义实施战略的第二步是确定要定位的客户电子邮件地址类型。
+The second step in defining your implementation strategy is deciding what type of customer email addresses you want to target.
 
-**A)基于实名电子邮件地址的受众定位**。 在此方案中，您的用户有多个帐户，这些帐户与多个电子邮件地址相关联，并且您希望根据他们在您的网站上实时验证的电子邮件地址，通过个性化的优惠来定位这些帐户。
+**A) Audience targeting based on your authenticated email addresses.** In this scenario, your users have multiple accounts associated with multiple email addresses, and you want to target them with personalized offers, based only on the email address that they authenticate on your website, in real time.
 
-**B)基于所有关联电子邮件地址的受众定位**。 在此方案中，您的用户有多个帐户与多个电子邮件地址关联，并且无论通过身份验证的活动如何，您都希望在其所有关联电子邮件地址中定位这些帐户。
+**B) Audience targeting based on all of your associated email addresses.**&#x200B;在此方案中，您的用户有多个帐户与多个电子邮件地址关联，并且无论通过身份验证的活动如何，您都希望在其所有关联电子邮件地址中定位这些帐户。
 
-## 3.识别您拥有的客户ID(CRM ID)类型 {#identify-customer-id}
+## 3. Identify the Type of Customer IDs (CRM IDs) That You Have {#identify-customer-id}
 
-定位中的受 [!DNL People-Based Destinations] 众需要您发送 [SHA256哈希版本的客户电子邮件地址](people-based-destinations-prerequisites.md) 。 根据您现有的Audience manager配置，您可能会发现处于以下两种情况之一：
+Targeting audiences in  requires you to send SHA256 hashed versions of your customer email addresses. [!DNL People-Based Destinations][](people-based-destinations-prerequisites.md)Depending on your existing Audience Manager configuration, you may find yourself in one of the following two scenarios:
 
 **A)您的Audience Manager客户ID([DPUUID](../../reference/ids-in-aam.md))已是小写的哈希电子邮件地址**。 在此方案中，您可以使用这些现有ID定位中的受众 [!DNL People-Based Destinations]。
 
@@ -71,13 +74,13 @@ source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
 
 **B)创建新数据源**。 此选项适用于Audience Manager客户ID(DPUUID[)没有哈希电子邮件地址的情](../../reference/ids-in-aam.md)况。 在这种情况下，您需要创建一个新的跨设备数据源并在其上嵌入哈希电子邮件地址。 您可以通过两种方式执行此操作：
 
-* 使用基于文件的ID同步。 有关 [ID同步文件的外观的详细信息](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) ，请参阅ID同步文件的名称和内容要求。 使用此方法时，您可以瞄准数据库中的所有哈希电子邮件地址 [!DNL CRM] 。
-* 在传 [递经身份验证的客户ID时](../declared-ids.md) ，使用声明的ID声明您的哈希电子邮件地址。 使用此方法时，Audience manager将代表您仅针对已通过在线身份验证的用户的哈希电子邮件地址。 在基于人员的渠道中定位的电子邮件地址只是声明的ID事件调用中的电子邮件地址。 与客户ID关联的其他电子邮件地址不会实时激活。
+* 使用基于文件的ID同步。 See Name and Content Requirements for ID Synchronization Files for details on what ID synchronization files should look like. [](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)使用此方法时，您可以瞄准数据库中的所有哈希电子邮件地址 [!DNL CRM] 。
+* Use declared IDs to declare your hashed email addresses when passing in authenticated customer IDs. [](../declared-ids.md)When using this method, Audience Manager, on your behalf, only targets your hashed email addresses from users who have authenticated online. The email addresses targeted in people-based channels are only the ones in the declared ID event calls. Other email addresses associated with the customer ID are not activated in real-time.
 
-## 6.使用配置文件合并规则进行分段 {#use-profile-merge-rules}
+## 6. Use a Profile Merge Rule for Segmentation {#use-profile-merge-rules}
 
-根据您的用例(请参 [阅1。 定义用例](people-based-destinations-workflow.md#defining-your-use-case))，可通过两种方式进行细 [!DNL Profile Merge Rules] 分。
+Depending on your use case (see 1. [Defining Your Use Case), there are two ways to use  for segmentation.](people-based-destinations-workflow.md#defining-your-use-case)[!DNL Profile Merge Rules]
 
-**A)使用现有[!DNL Profile Merge Rules]**。 此选项适用于第一个用例（基于联机和脱机用户活动的组合的受众定位）。 在此方案中，您在Audience manager中有现有的客户活动，并且您至少已定义了一个用于细分的“个人资料合并规则”。 在这种情况下，您无需创建任何新内容 [!DNL Profile Merge Rules]。
+**A) Use existing .[!DNL Profile Merge Rules]** This option applies to the first use case (audience targeting based on combined online and offline user activity). In this scenario, you have existing customer activity in Audience Manager and you have already defined at least one Profile Merge Rule that you have used in segmentation. In this case, you don't need to create any new .[!DNL Profile Merge Rules]
 
-**B)创建新的合[!DNL All Cross-Device Profiles]并规则**。 此选项适用于第二个用例（仅基于脱机用户活动的受众定位）。 在此方案中，您将线下客户数据从您的 [!DNL CRM] Audience manager中导入，并希望根据这些数据创建细分。 为此，引入 [!DNL People-Based Destinations] 了新的第四个配置文件合并规则，称为 **[!DNL All Cross-Device Profiles]**。 这是您在细分纯脱机数据时需要使用的规则。
+**B) Create a new,  Merge Rule.[!DNL All Cross-Device Profiles]** This option applies to the second use case (audience targeting based exclusively on offline user activity). 在此方案中，您将线下客户数据从您的 [!DNL CRM] Audience manager中导入，并希望根据这些数据创建细分。 To do this,  introduces a new, fourth Profile Merge Rule, called . [!DNL People-Based Destinations]**[!DNL All Cross-Device Profiles]**&#x200B;这是您在细分纯脱机数据时需要使用的规则。
