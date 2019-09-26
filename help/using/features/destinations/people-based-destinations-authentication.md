@@ -5,12 +5,15 @@ seo-title: 使用基于人的平台进行身份验证
 solution: Audience Manager
 title: 使用基于人的平台进行身份验证
 translation-type: tm+mt
-source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
+source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ---
 
 
 # 使用基于人的平台进行身份验证 {#authentication-with-people-based-platforms}
+
+>[!IMPORTANT]
+>本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
 本页包含有关如何配置和管理Audience manager与基于人员的平台之间的集成的指导。
 
@@ -21,12 +24,12 @@ source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
 
 1. 登录到您的Audience manager帐户，然后转 **[!UICONTROL Administration]** 到&gt; **[!UICONTROL Integrated Accounts]**。 如果您之前已配置与社交平台的集成，则应在本页中列出该集成。 否则，页面为空。
    ![基于人的集成](assets/pbd-config.png)
-1. 单击 **[!UICONTROL Add Account]**.
-1. 使用 **[!UICONTROL People-Based Platform]** 下拉菜单选择要配置其集成的平台。
+2. 单击 **[!UICONTROL Add Account]**.
+3. 使用 **[!UICONTROL People-Based Platform]** 下拉菜单选择要配置其集成的平台。
    ![基于人的平台](assets/pbd-add.png)
-1. 单 **[!UICONTROL Confirm]** 击以重定向到所选平台的身份验证页面。
-1. 通过社交平台帐户的身份验证后，您将被重定向到Audience Manager，您应在Audience manager中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!UICONTROL Confirm]**。
-1. Audience manager在页面顶部显示通知，告诉您帐户是否已成功添加。 通知还允许您添加联系人电子邮件地址，以在社交平台身份验证即将过期时从Adobe接收通知。
+4. 单 **[!UICONTROL Confirm]** 击以重定向到所选平台的身份验证页面。
+5. 通过社交平台帐户的身份验证后，您将被重定向到Audience Manager，您应在Audience manager中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!UICONTROL Confirm]**。
+6. Audience manager在页面顶部显示通知，告诉您帐户是否已成功添加。 通知还允许您添加联系人电子邮件地址，以在社交平台身份验证即将过期时从Adobe接收通知。
 
 ## 身份验证令牌到期和通知管理 {#token-expiration-notification}
 
