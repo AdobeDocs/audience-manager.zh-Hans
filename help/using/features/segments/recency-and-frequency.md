@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 近况和频率
 uuid: faadd18a-bf27-4b73-995e-9809f52f5350
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: c7e8b67ccad4479487b471668462937c5be6be34
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 Audience manager定义 [!DNL recency] 如 [!DNL frequency] 下：
 
-* **[!UICONTROL Recency]** :用户查看或限定一个（或多个）特征的天数。
+* **[!UICONTROL Recency]** :用户最近查看或符合一个（或多个）特征的资格。
 * **[!UICONTROL Frequency]** :用户查看或限定一个（或多个）特征的速率。
 
 [!UICONTROL Recency] 并且 [!UICONTROL Frequency] 这些设置可帮助您根据访客对网站、区域或特定创意的真实（或感知）兴趣级别对访客进行细分。 例如，符合最近／频率要求较高的细分的用户对网站或产品的兴趣可能高于访问频率较低或访问频率较低的用户。
@@ -47,8 +47,8 @@ In [!UICONTROL Segment Builder], [!UICONTROL Recency] and [!UICONTROL Frequency]
    <td colname="col2"> <p>最近的时间必须大于0。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>第三方特征</b> </p> </td> 
-   <td colname="col2"> <p>不能为包含第三方特征的个人第三方特征或特征组设置近期规则。 最近和频率仅适用于您自己的特征。 </p> </td> 
+   <td colname="col1"> <p> <b>Third-Party Traits</b> </p> </td> 
+   <td colname="col2"> <p>You cannot set recency rules on individual third-party traits or trait groups that contain third-party traits. Recency and frequency applies to your own traits only. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -58,25 +58,46 @@ In [!UICONTROL Segment Builder], [!UICONTROL Recency] and [!UICONTROL Frequency]
 <table id="table_EBD621D26C8B4D03933E8C0753C892A7"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 限制或规则 </th> 
+   <th colname="col1" class="entry"> Limit or Rule </th> 
    <th colname="col2" class="entry"> 描述 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>第三方特征</b> </p> </td> 
-   <td colname="col2"> <p>不能为包含第三方特征的个人第三方特征或特征组设置频率规则。 最近和频率仅适用于您自己的特征。 </p> </td> 
+   <td colname="col1"> <p> <b>Third-Party Traits</b> </p> </td> 
+   <td colname="col2"> <p>You cannot set frequency rules on individual third-party traits or trait groups that contain third-party traits. Recency and frequency applies to your own traits only. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>近期要求</b> </p> </td> 
-   <td colname="col2"> <p>您可以配置频率要求， <i>而无需配</i> 置最近的要求。 只需设置一个频率值，并将最近使用的字段留空即可。 </p> </td> 
+   <td colname="col2"> <p>You can configure frequency requirements without configuring recency requirements. <i></i>只需设置一个频率值，并将最近使用的字段留空即可。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>个人资料合并规则</b> </p> </td> 
-   <td colname="col2"> <p>请参 <a href="../../faq/faq-profile-merge.md#trait-freq-device-rules"> 阅特征频率、外部设备图形和配置文件合并规则</a>。 </p> </td> 
+   <td colname="col1"> <p><b>Profile Merge Rules</b> </p> </td> 
+   <td colname="col2"> <p>See  Trait Frequency, External Device Graphs, and Profile Merge Rules.<a href="../../faq/faq-profile-merge.md#trait-freq-device-rules"></a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+## Recency Examples {#recency-examples}
+
+Here are two examples of how recency works, depending on your selection in the UI:
+
+### Using a less than or equal to operator (&lt;=)
+
+![Less-than-equal-to](assets/less-than-equal-to.png)
+
+In this example, you select the &lt;= operator, as shown in the screenshot. 如果用户在过去5天内至少有3次符合这3个特征中任意一个的特征，则这将使您有资格获得区段。 以下时间线显示创建区段时的区段资格（10月1日和10天后）。
+
+![最近5天](assets/last-5-days.png)
+
+### 使用大于或等于运算符(=&gt;)
+
+![大于等于](assets/greater-than-equal-to.png)
+
+在此示例中，您选择=&gt;运算符，如屏幕截图所示。 如果用户在Audience manager平台上首次获得资格，并且在五天前中断时间之间，至少有三次符合以下三个特征之一的资格，则这将使用户有资格进入区段。 以下时间线显示创建区段时的区段资格（10月1日和10天后）。
+
+![早期资格](assets/earlier-qualification.png)
+
 
 ## 频率上限示例 {#frequency-capping}
 
