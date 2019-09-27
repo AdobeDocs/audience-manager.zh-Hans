@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 关于文件夹特征
 uuid: e561ce8f-6c90-44a7-b034-685533f29030
 translation-type: tm+mt
-source-git-commit: 263c55e6bd2c9ad7159306fc889b048d800c59da
+source-git-commit: 9fa5a558c839da89286b1abdf77e835a92747c87
 
 ---
 
@@ -18,11 +18,11 @@ source-git-commit: 263c55e6bd2c9ad7159306fc889b048d800c59da
 
 ## 使用文件夹特征的优势 {#benefits}
 
-A包 [!UICONTROL folder trait] 含父文件夹及其关联的子文件夹中的所有特征。 这样，您就可以自动细分和定位不同文件夹级别的用户。 例如，假设您有如下的文件夹结构：
+A [!UICONTROL folder trait] contains all the traits in a parent folder and its associated child folders. 这样，您就可以自动细分和定位不同文件夹级别的用户。 例如，假设您有如下的文件夹结构：
 
-`*` 电子（父）
+`*` Electronics (parent)
 
-    笔记本`*` 电脑（子）
+    `*` Laptops (child)
 
         品`*` 牌（孙子）
 
@@ -40,7 +40,7 @@ A包 [!UICONTROL folder trait] 含父文件夹及其关联的子文件夹中的�
 * 特征B:1
 * 特征C:1
 
-在这种情况下，汽 [!DNL ]车 [!UICONTROL Folder Trait] 有7个实现。
+在这种情况下， [!DNL Automobile Folder Trait] 有7个实现。
 
 ![](assets/folder_traits_rollup_border.png)
 
@@ -48,20 +48,20 @@ A包 [!UICONTROL folder trait] 含父文件夹及其关联的子文件夹中的�
 
 [!UICONTROL Folder traits] 从以下文件夹结构中的特征捕获所有用户。 如果将某个特征从文件夹移到另一个文件夹，则该更改会像特征规则更改 [一样传播到我们的数据收集服](../../reference/system-components/components-data-collection.md) 务器。 下次运行报告时的报告更新以反映报告日期范围(1、7、14、30、60、90)内的这一变化。 以前几天的旧报告编号不会更改。
 
-## 基于角色的访问控制(RBAC)权限 {#role-based-access-controls}
+## Role-Based Access Controls (RBAC) Permissions {#role-based-access-controls}
 
-对于使用( [!UICONTROL Role-Based Access Controls] )的公司，您具有相应权[!UICONTROL RBAC]限的用户能够更改与关联的数据源 [!UICONTROL RBAC][!UICONTROL folder trait]。 用户必须属于具有以下任一功能的组：
+For companies using  (), your users with the appropriate  permissions are able to change the data source associated to the . [!UICONTROL Role-Based Access Controls][!UICONTROL RBAC][!UICONTROL RBAC][!UICONTROL folder trait]A user must belong to a group with either of the following:
 
-* `READ` 和特 `WRITE` 征数据源的组权限。
-* `VIEW_ALL_TRAITS` 和特 `EDIT_ALL_TRAITS` 征数据源的通配符权限。
+* `READ` and  group permissions to a trait data source.`WRITE`
+* `VIEW_ALL_TRAITS` and  wild card permissions for trait data sources.`EDIT_ALL_TRAITS`
 
-在我们的管理文档 [!UICONTROL RBAC] 中了解如何分 [配权限](../../features/administration/administration-overview.md#create-group)。
+Learn how to assign  permissions in our administration documentation.[!UICONTROL RBAC][](../../features/administration/administration-overview.md#create-group)
 
-## 限制和其他注意事项 {#limits}
+## Limits and Other Considerations {#limits}
 
 | 项目 | 描述 |
 |---|---|
 | 特征类型 | [!UICONTROL Onboarded traits] 并 [!UICONTROL algorithmic traits] 且为频率的实现贡献最 [!UICONTROL folder trait]多1倍。 |
-| 在文件夹之间移动特征 | 将某个特征从文件夹移到另一个特征将从第一个文件夹特征中取消该特征的限定，并将其限定为第二个特征 [!UICONTROL folder trait]。 这意味着，如果您从文件夹删除或移动特征，则使用文件夹特征作为段表达式将特征填充中的用户从段中取消分段。 <br> 在将Adobe Analytics区段或报表包映射到您的Experience cloud组织时，Audience manager会自动创建新的对应只读区段和特征。 您不能从Audience manager编辑或更改这些特征的存储位置。 但是，您对映射的Adobe Analytics区段或报表包执行的任何更改都会反映在Audience Manager中。 |
+| 在文件夹之间移动特征 | 将某个特征从文件夹移到另一个特征将从第一个文件夹特征中取消该特征的限定，并将其限定为第二个特征 [!UICONTROL folder trait]。 This means that if you delete or move a trait from the folder, the users in the trait's population will be unsegmented from the segments using the folder trait as a segment expression. <br> When mapping Adobe Analytics segments or report suites to your Experience Cloud organization, Audience Manager automatically creates new, corresponding, read-only segments and traits. 您不能从Audience manager编辑或更改这些特征的存储位置。 However, any change that you perform on your mapped Adobe Analytics segments or report suites reflects in Audience Manager. |
 | 系统变量 | [!UICONTROL Folder traits] 无法在使用参数的事件调用中实 `d_sid` 现。 |
 | 报表 | [!UICONTROL Folder traits] 是自动计算的特征，不显示在中 **[!UICONTROL Overlap Reports]**。 |
