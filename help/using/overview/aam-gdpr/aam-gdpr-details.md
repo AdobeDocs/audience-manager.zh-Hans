@@ -142,7 +142,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> id</code> </p> </td> 
-   <td colname="col2"> <p>随后的数据的用户ID。 这是您在GDPR数据访问请求中提供的ID，或者链接到您提供的声明ID之一的ID。 Audience Manager标识符部分介绍了ID <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 类型</a> 。 </p> </td> 
+   <td colname="col2"> <p>随后的数据的用户ID。 This is either an id you provided in the GDPR data access request, or an ID that is linked to one of the declared IDs you provided. The ID types are described in the  Audience Manager Identifiers section.<a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"></a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> namespace</code> </p> </td> 
@@ -150,7 +150,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> id</code> </p> </td> 
-   <td colname="col2"> <p>命名空间/数据源 ID。请参 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 阅Audience Manager标识符(ID)</a> ，了解所有已接受的值。 </p> </td> 
+   <td colname="col2"> <p>命名空间/数据源 ID。See  Audience Manager Identifiers (IDs) for all the accepted values.<a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"></a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 集成代码 </code> </p> </td> 
@@ -158,35 +158,35 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 数据提供程序名称 </code> </p> </td> 
-   <td colname="col2"> <p>数据源所有者的名称。 
+   <td colname="col2"> <p>The name of the owner of the data source. 
      <ul id="ul_5CEAF23C28154662AFC443D3494107D3"> 
-      <li id="li_EC2DA09F618D4225B655ADF455C0D654">对于第一方数据，这是客户自己的公司名称。 </li> 
-      <li id="li_C4A5E1BD2A994109BBCD839DDC4B2E64">对于第二方数据，这是合作伙伴公司的名称。 </li> 
-      <li id="li_1AA1246B7E40443CB18108512FBB8B19">对于第三方数据，这是数据合作伙伴的名称。 </li> 
+      <li id="li_EC2DA09F618D4225B655ADF455C0D654">For first party data, this is the customer's own company name. </li> 
+      <li id="li_C4A5E1BD2A994109BBCD839DDC4B2E64">For second party data, this is the name of the partner company. </li> 
+      <li id="li_1AA1246B7E40443CB18108512FBB8B19">For third party data, this is the name of the data partner. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> type </code> </p> </td> 
-   <td colname="col2"> <p>您请求访问 GDPR 数据的 ID 类型。接受的类型列在Audience Manager标识符 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 部分中</a> 。 </p> </td> 
+   <td colname="col2"> <p>您请求访问 GDPR 数据的 ID 类型。Accepted types are listed in the <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager Identifiers</a> section. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 警告</code> </p> </td> 
-   <td colname="col2"> <p>警告会返回与数据访问请求相关的进一步信息。 </p> </td> 
+   <td colname="col1"> <p> <code> warnings</code> </p> </td> 
+   <td colname="col2"> <p>Warnings return further information related to the data access request. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> title </code> </p> </td> 
-   <td colname="col2"> <p>有关警告的简要信息。 </p> <p>您可能收到的两个警告是： </p> <p> 
+   <td colname="col2"> <p>有关警告的简要信息。 </p> <p>The two warnings you may receive are: </p> <p> 
      <ul id="ul_34019A1529594DC7B2566913937EAF0C"> 
-      <li id="li_F0104BE3D5FE4DB7BA54195504E260E9">设备数据 </li> 
-      <li id="li_8A22D9F9A1454AFDBC4CAF942E80498F">未完成请求 </li> 
+      <li id="li_F0104BE3D5FE4DB7BA54195504E260E9">Device Data </li> 
+      <li id="li_8A22D9F9A1454AFDBC4CAF942E80498F">Incomplete request </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> description </code> </p> </td> 
    <td colname="col2"> <p>您收到的警告的更详细描述： </p> <p> 
      <ul id="ul_78E03ABA52674E07A48835FDD3431FF8"> 
-      <li id="li_6BB6D58660594CA0B1A89804F2FC6274">设备数据——包含来自此设备所有用户的数据 </li> 
-      <li id="li_E328D5BF066C4E7E8CCCDCAA5E91CCDC">请求不完整——未完成Audience manager数据的检索。 某些信息可能缺失。 </li> 
+      <li id="li_6BB6D58660594CA0B1A89804F2FC6274">Device Data - Contains data from all users of this device </li> 
+      <li id="li_E328D5BF066C4E7E8CCCDCAA5E91CCDC">Incomplete request - Retrieval of Audience Manager data was not completed. 某些信息可能缺失。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -257,36 +257,36 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 最后实现</code> </p> </td> 
-   <td colname="col2"> <p>数据主体上次限定此区段的准确时间。 日期格式为YYYY-MM-DD。 </p> </td> 
+   <td colname="col1"> <p> <code> last realization</code> </p> </td> 
+   <td colname="col2"> <p>The exact time that the Data Subject last qualified for this segment. The date format is YYYY-MM-DD. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 活动</code> </p> </td> 
-   <td colname="col2"> <p>指示数据主体当前是否符合此区段的条件。 Returns <code><i>true</i></code> or <code><i>false</i></code>. </p> </td> 
+   <td colname="col2"> <p>Indicates whether the Data Subject is currently qualified for this segment. Returns <code><i>true</i></code> or <code><i>false</i></code>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 链接 </code> </p> </td> 
-   <td colname="col2"> <p>此ID已链接到的其他ID。 信息返回于： </p> <p> 
+   <td colname="col1"> <p> <code> links </code> </p> </td> 
+   <td colname="col2"> <p>Additional ID that this ID has been linked to. Information is returned on: </p> <p> 
      <ul id="ul_679F372A83164CC8B6BFE5A833347B9E"> 
       <li id="li_BCBF4F4C6C4049519BDE9186EE84868A">ID </li> 
-      <li id="li_46AC081C993041E6BCE70119FE04BE7F">namespace（数据源） </li> 
+      <li id="li_46AC081C993041E6BCE70119FE04BE7F">namespace (data source) </li> 
       <li id="li_E9B906C8947E484B94FBCAEB03BDF4E2">namespace ID </li> 
       <li id="li_FB2A2F28290B4BA7844A558C01F8D9D4">集成代码 </li> 
       <li id="li_2569982810B64F8AABD78F5AC3717971">数据提供程序名称 </li> 
       <li id="li_2A3C282279064373BF7E4619A63454CF">ID type </li> 
-     </ul> </p> <p>此表的前几行中介绍了所有这些字段。 </p> </td> 
+     </ul> </p> <p>All these fields are described in the first rows of this table. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 链接日期时间</code> </p> </td> 
-   <td colname="col2"> <p>ID sync事件在ID之间建立链接的确切时间。 日期格式为YYYY-MM-DD。 </p> </td> 
+   <td colname="col1"> <p> <code> linking datetime</code> </p> </td> 
+   <td colname="col2"> <p>The exact time that an ID sync event made the link between IDs. The date format is YYYY-MM-DD. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 设备元数据 </code> </p> </td> 
-   <td colname="col2"> <p>有关设备的信息。 此信息包括以下字段。 注意，并非所有设备类型都返回所有字段。 </p> <p> 
+   <td colname="col1"> <p> <code> device metadata </code> </p> </td> 
+   <td colname="col2"> <p>Information about the device. 此信息包括以下字段。 Note that not all fields are returned for all device types. </p> <p> 
      <ul id="ul_F0031D50DF074634A428DBC73F958159"> 
       <li id="li_4E26042A6B8D4397829F30B7BC7A2D6E"> <p>硬件信息 </p> </li> 
       <li id="li_99A049D585A9440EA79F57A3B03181AB"> <p>设备制造商 </p> </li> 
-      <li id="li_290F92FC3F6449EFBC4E7870B62AFE8B"> <p>设备的营销名称 </p> </li> 
+      <li id="li_290F92FC3F6449EFBC4E7870B62AFE8B"> <p>The marketing name of the device </p> </li> 
       <li id="li_FC37954CE133471398352240A8B0478F"> <p>设备型号 </p> </li> 
       <li id="li_D54AEB0527C34E32A8AEEAEDEA5AD1B2"> <p>设备的操作系统(OS)的名称 </p> </li> 
       <li id="li_0B343C4599344E1791B35A56EBBDC567"> <p>操作系统版本 </p> </li> 
@@ -327,13 +327,13 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 **定义**:Adobe Audience Manager唯一用户ID
 
-**命名空间ID**:0
+**Namespace ID**: 0
 
 >[!NOTE]
 >
 >您还可以使用CORE命名空间。 请参阅第二个JSON示例。
 
-**JSON中的示例**:
+**Example in JSON:**
 
 ```
  "users": [
@@ -383,17 +383,17 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 ### Adobe Experience Cloud ID
 
-**用户ID**:mid
+**User ID: mid**
 
-**定义**:Adobe Experience Cloud ID，以前称为访客ID或Marketing Cloud ID
+**Definition**: Adobe Experience Cloud ID, formerly known as Visitor ID or Marketing Cloud ID
 
-**命名空间ID**:4
+**Namespace ID**: 4
 
 >[!NOTE]
 >
->您还可以使用ECID命名空间。 请参阅第二个JSON示例。
+>You can also use the ECID namespace. See the second JSON example.
 
-**JSON中的示例**:
+**Example in JSON:**
 
 ```
  "users": [
@@ -443,13 +443,13 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 ### Customer ID
 
-**用户ID**:cid
+**User ID: cid**
 
-**定义**:客户ID，如您为匿名网站访客设置的Cookie，或来自脱机系统的CRM ID，或哈希用户名
+**Definition: Customer ID, such as a cookie you set for anonymous site visitors or a CRM ID from an offline system or a hashed username**
 
-**命名空间ID**:客户特定。 请从您的Audience manager实例中查找它。
+**Namespace ID: Customer-specific.**&#x200B;请从您的Audience manager实例中查找它。
 
-**JSON中的示例**:
+**Example in JSON:**
 
 ```
 "users": [
@@ -479,7 +479,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   }
 ```
 
-### 移动广告ID
+### Mobile advertising ID
 
 **用户ID**:d_cid
 
