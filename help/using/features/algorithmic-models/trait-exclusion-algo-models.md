@@ -10,7 +10,7 @@ source-git-commit: f324838a5649722545ff36faba92bf3a13c2e805
 ---
 
 
-# 算法模型：特征排除 {#algorithmic-models-trait-exclusion}
+#  算法模型：特征排除 {#algorithmic-models-trait-exclusion}
 
 [!UICONTROL Trait Exclusion] 在建模工作流程中提供其他控件，允许您根据您的域专业知识和法规要求向模型添加必要的防护栏。 使用选 [!UICONTROL Exclusions] 项，在从一个或多个数据源创建模型时选择要忽略的特征。
 
