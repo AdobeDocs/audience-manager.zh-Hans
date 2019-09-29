@@ -60,7 +60,7 @@ source-git-commit: b213a1ecde4c85dc66dada24dec602ed1d9b0332
   </tr>
    <tr> 
    <td colname="col1"> <p> <b>区段总人数</b> </p> </td> 
-   <td colname="col2"> <p>在报表回顾期间，属于您的区段的所有设备的计数。 </p> </td> 
+   <td colname="col2"> <p>在报表回顾期间，属于您的区段成员的所有设备的计数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>细分可寻址受众</b> </p> </td> 
@@ -107,7 +107,7 @@ source-git-commit: b213a1ecde4c85dc66dada24dec602ed1d9b0332
 
 尝试连接没有第三方Cookie [!DNL Safari] 的或移动App用户时存在间隙。 这使得用户难以与某些合作伙伴同步，因为媒体交付日志中只提供同步的第 [!DNL Adobe] 三方Cookie的ID。 这也是您可能发现目标 [匹配率较低](../features/addressable-audiences.md#low-match-rates) 的原因。
 
-## 可寻址受众和目标中的日期范围 {#date-ranges}
+##  可寻址受众和目标中的日期范围 {#date-ranges}
 
 请阅读以下各节，了解可用日期范围以及数据在报表中的每个间隔之外的使用 [!UICONTROL Addressable Audience] 方式 [!UICONTROL Destination]。
 
@@ -184,7 +184,7 @@ source-git-commit: b213a1ecde4c85dc66dada24dec602ed1d9b0332
 
 >[!NOTE]
 >
->在区段级别应用回顾窗口的方式与在客户级别不同。 访客可以在10天前来到网站并了解某个特征，并且自那以后他们有资格访问某个区段，并在2天前从该区段中删除。 应用7天回顾后，这些访客将计入区段级别，而不计入客户级别。
+>在区段级别应用回顾窗口的方式与在客户级别不同。 访客可以在10天前访问网站并了解某个特征，并且自那之后他们就有资格访问某个区段，并在2天前从该区段中删除。 应用7天回顾后，这些访客将计入区段级别，而不计入客户级别。
 
 <table id="table_4185AA02CC774B6C93B02E45F88BBBD9"> 
  <thead> 
