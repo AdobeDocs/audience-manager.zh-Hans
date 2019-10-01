@@ -1,19 +1,19 @@
 ---
-description: '本页包含如何根据仅线下客户数据构建受众细分并将其发送到基于人员的目标的逐步指导。  '
-seo-description: '本页包含如何根据仅线下客户数据构建受众细分并将其发送到基于人员的目标的逐步指导。  '
-seo-title: 工作流B —— 基于仅脱机数据的个性化
+description: 'This page includes step-by-step guidance on how to build audience segments from offline-only customer data, and send them to People-Based Destinations.  '
+seo-description: 'This page includes step-by-step guidance on how to build audience segments from offline-only customer data, and send them to People-Based Destinations.  '
+seo-title: Workflow B - Personalization Based on Offline-Only Data
 solution: Audience Manager
-title: 工作流B —— 基于仅脱机数据的个性化
+title: Workflow B - Personalization Based on Offline-Only Data
 translation-type: tm+mt
-source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
+source-git-commit: fb5d9eff3573048d3e8a570b342a97bce3cd8da0
 
 ---
 
 
-# 工作流B —— 基于仅脱机数据的个性化 {#workflow-b}
+# Workflow B - Personalization Based on Offline-Only Data {#workflow-b}
 
 >[!IMPORTANT]
->本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
+>This article contains product documentation meant to guide you through the setup and usage of this feature. 此处包含的任何内容都不是法律建议。 Please consult your own legal counsel for legal guidance.
 
 本页包含如何根据仅线下客户数据构建受众细分并将其发送到基于人员的目标的逐步指导。
 
@@ -55,20 +55,20 @@ source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
  
 
-**场景1:您的[DPUUID已是小写](../../reference/ids-in-aam.md)，具有哈希值的电子邮件地址。**
+**Scenario 1: your DPUUIDs are already lowercase, hashed email addresses.[](../../reference/ids-in-aam.md)**
 
-在这种情况下，您需要将相应的数据源标记为：
+In this case, you need to need to label the corresponding data source as such:
 
-1. 转至 **[!UICONTROL Audience Data]** -&gt; **[!UICONTROL Data Sources]**。
-1. 查找包含DPUUID的数 [据源](../../reference/ids-in-aam.md)，然后单击它。
-1. 确保未选中该 **[!UICONTROL Cannot be tied to personally identifiable information]** 选项。
-1. 保存数据源设置。
+1. Go to  -&gt; .**[!UICONTROL Audience Data]****[!UICONTROL Data Sources]**
+1. Find the data source that contains your DPUUIDs, and click it.[](../../reference/ids-in-aam.md)
+1. Make sure the option  is unchecked.**[!UICONTROL Cannot be tied to personally identifiable information]**
+1. Save the data source settings.
 
  
 
-**场景2:您的[DPUUID不是小写](../../reference/ids-in-aam.md)，具有哈希值的电子邮件地址。**
+**Scenario 2: your DPUUIDs are not lowercase, hashed email addresses.[](../../reference/ids-in-aam.md)**
 
-在这种情况下，您需要创建一个新的跨设备数据源，以存储散列化的电子邮件地址。 下面介绍如何实现此操作：
+在这种情况下，您需要创建一个新的跨设备数据源，以存储散列化的电子邮件地址。 Here's how to do this:
 
 1. 登录到您的Audience manager帐户，然后转 **[!UICONTROL Audience Data]** 到-&gt; **[!UICONTROL Data Sources]**&#x200B;并单击 **[!UICONTROL Add New]**。
 1. 为新数 **[!UICONTROL Name]** 据源 **[!UICONTROL Description]** 输入和。
@@ -91,13 +91,13 @@ source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 >
 > 此步骤仅适用于上 [述方案](people-based-destinations-workflow-offline.md#configure-data-source-settings) 2。 如果您的现有 [DPUUID](../../reference/ids-in-aam.md) ，电子邮件地址已经过哈希处理，请跳到第 [4步——为分段创建配置文件合并规则](#create-profile-merge-rule)。
 
-例如，您希望将您的现有 [DPUUID（从步骤1的示例）与下表中的哈希电子邮件地址（右列）相匹配，并将哈希电子邮件地址存储在您在步骤2 —— 配置数据源设置中创建的新数据源中](../../reference/ids-in-aam.md)[](#configure-data-source-settings)。
+Let's say you want to match your existing DPUUIDs from the example at Step 1 to the hashed email addresses from the table below (right column), and store the hashed email addresses in the new data source that you created at Step 2 - Configure Data Source Settings.[](../../reference/ids-in-aam.md)[](#configure-data-source-settings)
 
-作为提醒，您现在有两个数据源：
+As a reminder, you would now have two data sources:
 
-| 数据源ID | 数据源内容 |
+| Data source ID | 数据源内容 |
 | -------------- | -------------------------- |
-| 999999 | 现有DPUUID(CRM ID) |
+| 999999 | Existing DPUUIDs (CRM IDs) |
 | 987654 | 散列化的电子邮件地址 |
 
 | DPUUID(CRM ID) | 电子邮件地址 | 哈希电子邮件地址 |
@@ -108,7 +108,7 @@ source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
  
 
-您的 [ID同步文件](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) ，将包含以下内容：
+在我们的示例中，您的 [ID同步文件](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) 将包含以下内容：
 
 ```
 68079982765673198504052656074456196039<TAB>55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149
@@ -129,15 +129,17 @@ ID同 [步文件必须遵循](../../integration/sending-audience-data/batch-data
 
 [在此处下载示例文件](https://marketing.adobe.com/resources/help/en_US/aam/downloads/c2c_id_999999_987654_1560431657.sync)。
 
+创建ID同步文件后，您需要将其上传到存储段 [!DNL Amazon S3] 中。 要了解如何上传ID同步文件，请参阅 [将批量数据发送到Audience Manager](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)。
+
 ## 第4步——为分段创建配置文件合并规则 {#create-profile-merge-rule}
 
 下一步是创建新的合并规则，帮助您创建要发送到您的受众细分 [!DNL People-Based Destinations]。
 
 1. 登录您的Audience manager帐户并转 **[!UICONTROL Audience Data]** 到-&gt; **[!UICONTROL Profile Merge Rules]**。
 2. 单击 [!UICONTROL Add New Rule].
-3. 输入配置文件合并规 **[!UICONTROL Name]** 则和 **[!UICONTROL Description]**。
-4. 在部 **[!UICONTROL Profile Merge Rule Setup]** 分中，从列 **[!UICONTROL All Cross-Device Profiles]** 表中选择规 **[!UICONTROL Cross-Device Options]** 则。
-5. 在列表 **[!UICONTROL Cross-Device Profile Options]** 中，选择要载入您的特征的数据源。
+3. Enter a profile merge rule  and .**[!UICONTROL Name]****[!UICONTROL Description]**
+4. In the  section, select the  rule from the  list.**[!UICONTROL Profile Merge Rule Setup]****[!UICONTROL All Cross-Device Profiles]****[!UICONTROL Cross-Device Options]**
+5. In the  list, select the data source that your traits are onboarded against.**[!UICONTROL Cross-Device Profile Options]**
    ![合并规则设置](assets/pbd-pmr.png)
 
 ## 第5步——创建受众细分 {#create-audience-segments}
