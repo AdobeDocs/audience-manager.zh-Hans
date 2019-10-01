@@ -1,9 +1,9 @@
 ---
-description: Audience manager非常重视数据安全和隐私问题。 We work to keep our systems secure and protect your valuable data.
-seo-description: Audience manager非常重视数据安全和隐私问题。 We work to keep our systems secure and protect your valuable data.
-seo-title: Data Security
+description: Audience manager非常重视数据安全和隐私问题。 我们努力保护我们的系统的安全并保护您的宝贵数据。
+seo-description: Audience manager非常重视数据安全和隐私问题。 我们努力保护我们的系统的安全并保护您的宝贵数据。
+seo-title: 数据安全
 solution: Audience Manager
-title: Data Security
+title: 数据安全
 uuid: 33ad19ca-4690-4d97-853b-1882d7d4ac01
 translation-type: tm+mt
 source-git-commit: b76e905ec890dbe8270177d142dddb351438b039
@@ -11,11 +11,11 @@ source-git-commit: b76e905ec890dbe8270177d142dddb351438b039
 ---
 
 
-# Data Security {#data-security}
+# 数据安全 {#data-security}
 
-Audience manager非常重视数据安全和隐私问题。 We work to keep our systems secure and protect your valuable data.
+Audience manager非常重视数据安全和隐私问题。 我们努力保护我们的系统的安全并保护您的宝贵数据。
 
-Audience Manager security practices include external and internal audits, activity logging, training, and other procedures designed to help protect our systems and your valuable data. 我们相信，安全的产品有助于建立和维护客户对我们的信任。
+Audience manager的安全实践包括外部和内部审计、活动记录、培训以及旨在帮助保护我们的系统和您的宝贵数据的其他程序。 我们相信，安全的产品有助于建立和维护客户对我们的信任。
 
 在Audience Manager中，我们考虑了以下三个主要类别的安全性：
 
@@ -34,13 +34,13 @@ Audience Manager security practices include external and internal audits, activi
 * 每年：Audience manager每年进行一次由独立第三方公司进行的全面渗透测试。 该测试旨在识别应用程序中的安全漏洞。 这些测试包括扫描跨站点脚本、SQL注入、表单参数处理和其他应用程序级漏洞。
 * 季度：每季度一次，内部团队会检查安全漏洞。 这些测试包括网络扫描打开的端口和服务漏洞。
 
-**** Systems Security:  To help keep data safe and private, Audience Manager:
+**** 系统安全： 为帮助保护数据安全和私有，Audience Manager:
 
 * 阻止来自未授权IP地址的请求。
-* Protects data behind firewalls, VPNs, and with Virtual Private Cloud storage.
-* Tracks changes in the customer and control-information databases with trigger-based audit logging. These logs track all changes at the database level, including the user ID and IP address from which changes are made.
+* 保护防火墙、VPN和虚拟专用云存储后的数据。
+* 使用基于触发器的审计记录跟踪客户和控制信息数据库中的更改。 这些日志跟踪数据库级别的所有更改，包括从中进行更改的用户ID和IP地址。
 
-**** Security Assets:  Audience Manager has a dedicated network operations team that monitors firewalls and intrusion-detection devices. Only key personnel have access to our security technology and data.
+**** 安全资产： Audience Manager拥有专设的网络运营团队，可监控防火墙和入侵检测设备。 只有关键人员才能访问我们的安全技术和数据。
 
 **** 安全培训： 在内部，我们对安全性的承诺延伸到负责我们产品的开发人员。 Adobe为开发人员提供有关如何构建安全应用程序和服务的正式培训。
 
@@ -58,13 +58,13 @@ Audience Manager security practices include external and internal audits, activi
 
 有助于保护个别客户拥有的数据的流程。
 
-**** 特征数据分区： 您的数据（特征、ID等）由客户端划分。 This helps prevent accidental information exposure between different clients. 例如，Cookie中的特征数据由客户划分并存储在特定于客户的子域中。 其他Audience manager客户端不能读取或意外使用它。 此外，存储在该特征数据中的特征数 [!UICONTROL Profile Cache Servers (PCS)] 据也由客户进行分区。 This prevents other clients from accidentally using your data in an event call or other request.
+**** 特征数据分区： 您的数据（特征、ID等）由客户端划分。 这有助于防止不同客户端之间的意外信息泄露。 例如，Cookie中的特征数据由客户划分并存储在特定于客户的子域中。 其他Audience manager客户端不能读取或意外使用它。 此外，存储在该特征数据中的特征数 [!UICONTROL Profile Cache Servers (PCS)] 据也由客户进行分区。 这样可以防止其他客户在事件调用或其他请求中意外使用您的数据。
 
-**** Data Partitioning in Reports:  Client IDs are part of the identifying key in all reporting tables and report queries are filtered by ID. This helps prevent your data from appearing in the reports of another Audience Manager customer.
+**** 报告中的数据分区： 客户端ID是所有报表表中标识键的一部分，报表查询按ID进行过滤。 这有助于防止您的数据显示在其他Audience manager客户的报告中。
 
-## Inbound Server-to-Server (S2S) Transfers {#inbound-s2s}
+## 入站服务器到服务器(S2S)传输 {#inbound-s2s}
 
-Adobe Audience Manager supports two main methods of transferring S2S on-boarded data files to our systems:
+Adobe Audience manager支持两种将已载入的S2S数据文件传输到我们系统的主要方法：
 
 这两种方法的设计都考虑到了客户和合作伙伴数据的安全性，同时数据在他们的系统和系统之间传输。
 
