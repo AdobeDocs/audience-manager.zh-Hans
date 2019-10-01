@@ -1,21 +1,21 @@
 ---
-description: Audience Manager takes data security and privacy very seriously. We work to keep our systems secure and protect your valuable data.
-seo-description: Audience Manager takes data security and privacy very seriously. We work to keep our systems secure and protect your valuable data.
+description: Audience manager非常重视数据安全和隐私问题。 We work to keep our systems secure and protect your valuable data.
+seo-description: Audience manager非常重视数据安全和隐私问题。 We work to keep our systems secure and protect your valuable data.
 seo-title: Data Security
 solution: Audience Manager
 title: Data Security
 uuid: 33ad19ca-4690-4d97-853b-1882d7d4ac01
 translation-type: tm+mt
-source-git-commit: 9e1abb305c66a4adf6a42a7873144222491692f9
+source-git-commit: b76e905ec890dbe8270177d142dddb351438b039
 
 ---
 
 
 # Data Security {#data-security}
 
-Audience manager非常重视数据安全和隐私问题。 我们努力保护我们的系统的安全并保护您的宝贵数据。
+Audience manager非常重视数据安全和隐私问题。 We work to keep our systems secure and protect your valuable data.
 
-Audience manager的安全实践包括外部和内部审计、活动记录、培训以及旨在帮助保护我们的系统和您的宝贵数据的其他程序。 我们相信，安全的产品有助于建立和维护客户对我们的信任。
+Audience Manager security practices include external and internal audits, activity logging, training, and other procedures designed to help protect our systems and your valuable data. 我们相信，安全的产品有助于建立和维护客户对我们的信任。
 
 在Audience Manager中，我们考虑了以下三个主要类别的安全性：
 
@@ -34,37 +34,37 @@ Audience manager的安全实践包括外部和内部审计、活动记录、培�
 * 每年：Audience manager每年进行一次由独立第三方公司进行的全面渗透测试。 该测试旨在识别应用程序中的安全漏洞。 这些测试包括扫描跨站点脚本、SQL注入、表单参数处理和其他应用程序级漏洞。
 * 季度：每季度一次，内部团队会检查安全漏洞。 这些测试包括网络扫描打开的端口和服务漏洞。
 
-**** 系统安全： 为帮助保护数据安全和私有，Audience Manager:
+**** Systems Security:  To help keep data safe and private, Audience Manager:
 
 * 阻止来自未授权IP地址的请求。
-* 保护防火墙、VPN和虚拟专用云存储后的数据。
-* 使用基于触发器的审计记录跟踪客户和控制信息数据库中的更改。 这些日志跟踪数据库级别的所有更改，包括从中进行更改的用户ID和IP地址。
+* Protects data behind firewalls, VPNs, and with Virtual Private Cloud storage.
+* Tracks changes in the customer and control-information databases with trigger-based audit logging. These logs track all changes at the database level, including the user ID and IP address from which changes are made.
 
-**** Security Assets:  Audience Manager has a dedicated network operations team that monitors firewalls and intrusion-detection devices. 只有关键人员才能访问我们的安全技术和数据。
+**** Security Assets:  Audience Manager has a dedicated network operations team that monitors firewalls and intrusion-detection devices. Only key personnel have access to our security technology and data.
 
 **** 安全培训： 在内部，我们对安全性的承诺延伸到负责我们产品的开发人员。 Adobe为开发人员提供有关如何构建安全应用程序和服务的正式培训。
 
-**** Secure Access:  Audience Manager requires strong passwords to log on to the system. See password requirements.[](../../reference/password-requirements.md)
+**** 安全访问： Audience manager需要强口令才能登录系统。 请参阅 [密码要求](../../reference/password-requirements.md)。
 
-## Privacy and Personally Identifiable Information (PII) {#pii}
+## 隐私和个人识别信息(PII) {#pii}
 
-Processes that help keep personal information safe. For additional privacy information, see the Adobe Privacy Center.[](https://www.adobe.com/privacy/advertising-services.html)
+有助于保护个人信息安全的流程。 有关其他隐私信息，请参阅 [Adobe隐私中心](https://www.adobe.com/privacy/advertising-services.html)。
 
-**** PII Data:  Audience Manager contractually prohibits customers and data partners from sending PII information into our system. Additionally, the Unique User ID (UUID) does not contain or use PII data as part of the ID-generation algorithm.
+**** PII数据： Audience Manager合同禁止客户和数据合作伙伴将PII信息发送到我们的系统。 此外，唯一用户ID(UUID)不包含或使用PII数据作为ID生成算法的一部分。
 
-**** IP Addresses:  Audience Manager does collect IP addresses. IP addresses are used in data-processing and log-aggregation processes. 地理／位置查找和定位也需要它们。 此外，保留的日志文件中的所有IP地址在90天内都会被模糊处理。
+**** IP地址： Audience manager确实会收集IP地址。 IP地址用于数据处理和日志聚合过程。 地理／位置查找和定位也需要它们。 此外，保留的日志文件中的所有IP地址在90天内都会被模糊处理。
 
 ## 数据分区 {#data-partitioning}
 
-Processes that help protect data owned by individual clients.
+有助于保护个别客户拥有的数据的流程。
 
-**** Trait Data Partitioning:  Your data (traits, IDs, etc.) is partitioned by client. 这有助于防止不同客户端之间的意外信息泄露。 例如，Cookie中的特征数据由客户划分并存储在特定于客户的子域中。 其他Audience manager客户端不能读取或意外使用它。 此外，存储在该特征数据中的特征数 [!UICONTROL Profile Cache Servers (PCS)] 据也由客户进行分区。 这样可以防止其他客户在事件调用或其他请求中意外使用您的数据。
+**** 特征数据分区： 您的数据（特征、ID等）由客户端划分。 This helps prevent accidental information exposure between different clients. 例如，Cookie中的特征数据由客户划分并存储在特定于客户的子域中。 其他Audience manager客户端不能读取或意外使用它。 此外，存储在该特征数据中的特征数 [!UICONTROL Profile Cache Servers (PCS)] 据也由客户进行分区。 This prevents other clients from accidentally using your data in an event call or other request.
 
-**** 报告中的数据分区： 客户端ID是所有报表表中标识键的一部分，报表查询按ID进行过滤。 这有助于防止您的数据显示在其他Audience manager客户的报告中。
+**** Data Partitioning in Reports:  Client IDs are part of the identifying key in all reporting tables and report queries are filtered by ID. This helps prevent your data from appearing in the reports of another Audience Manager customer.
 
-## 入站服务器到服务器(S2S)传输 {#inbound-s2s}
+## Inbound Server-to-Server (S2S) Transfers {#inbound-s2s}
 
-Adobe Audience manager支持两种将已载入的S2S数据文件传输到我们系统的主要方法：
+Adobe Audience Manager supports two main methods of transferring S2S on-boarded data files to our systems:
 
 这两种方法的设计都考虑到了客户和合作伙伴数据的安全性，同时数据在他们的系统和系统之间传输。
 
@@ -80,12 +80,14 @@ Adobe Audience manager支持两种将已载入的S2S数据文件传输到我们�
 
 ## HTTP Strict-Transport-Security {#hsts}
 
-[!DNL HTTP Strict-Transport-Security (HSTS)] 是一种Web安全策略机制，它通过不允许流量并透明地将所有流量升级到，帮助防止cookie拦截和协 [!DNL HTTP] 议降级攻击 [!DNL HTTP] 的发生 [!DNL HTTPS]。
+[!DNL HTTP Strict-Transport-Security (HSTS)] 是一个行业范围的Web安全机制，有助于防止cookie拦截和协议降级攻击。
 
-This policy improves data security between clients and Adobe Edge servers.
+该策略指示Web浏览器，一旦对给定域进行 [!DNL HTTPS] 安全调用，则不应允许对该域进行后续的不安全调用([!DNL HTTP])。 这可以防止中间人攻击，攻击者可能会尝试将呼叫降级为无 [!DNL HTTPS] 保护的呼 [!DNL HTTP] 叫。”
+
+此策略改进了客户端与Adobe [Edge服务器之间的数据安](../../reference/system-components/components-edge.md) 全。
 
 ### 示例 {#hsts-example}
 
-When trying to access ,  will automatically upgrade the request to  , in case the browser doesn’t automatically request the  domain.`http://bank.demdex.com`[!DNL HSTS]`https://bank.demdex.com`[!DNL HTTPS]
+尝试访问时， `http://bank.demdex.com`将 [!DNL HSTS] 自动将请求升级到 `https://bank.demdex.com`，以防浏览器不自动请求域 [!DNL HTTPS] 。
 
 请参 [阅HTTP严格传输安全-Wikipedia](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security) ，了解有关HSTS的更多信息。
