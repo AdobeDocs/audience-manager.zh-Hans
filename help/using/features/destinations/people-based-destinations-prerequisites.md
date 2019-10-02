@@ -5,7 +5,7 @@ seo-title: 基于人员的目标先决条件和注意事项
 solution: Audience Manager
 title: 先决条件和注意事项
 translation-type: tm+mt
-source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
+source-git-commit: ad9c077f538759e195a83d47e0ef36ccffa25c7e
 
 ---
 
@@ -13,14 +13,14 @@ source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 # 先决条件和注意事项 {#prerequisites-considerations}
 
 >[!IMPORTANT]
->本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
+>本文包含用于指导您完成此功能的设置和使用的产品文档。 Nothing contained herein is legal advice. 请咨询您自己的法律顾问以获得法律指导。
 
 请阅读以下内容，了解注册前需要满足的客户要求的概述 [!DNL People-Based Destinations]。
 
 >[!IMPORTANT]
 > 在进入实施阶段之前，请仔细阅读本文。
 
-## 注册基于人员的目标 {#signing-up}
+## Signing up for People-Based Destinations {#signing-up}
 
 [!DNL People-Based Destinations] 是一项高级功能，它允许您在基于人的环境中激活第一方受众细分，通过社交网络或电子邮件营销定制受众，从而增强Audience Manager体验。
 
@@ -50,17 +50,20 @@ source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ## 数据哈希与加密 {#data-hashing-encryption}
 
-加密是双向功能。 任何加密的信息也可以使用正确的解密密钥被解密。 在Audience manager环境中加密数据会带来严重风险，因为任何加密形式的个人识别信息也可以解密。 与加密相比，它 [!DNL People-Based Destinations] 们设计为处理散列数据。
+Encryption is a two-way function. 任何加密的信息也可以使用正确的解密密钥被解密。 在Audience manager环境中加密数据会带来严重风险，因为任何加密形式的个人识别信息也可以解密。 As opposed to encryption, [!DNL People-Based Destinations] are designed to work with hashed data instead.
 
-散列是单向函数，它对输入进行扰码以产生唯一的结果。 通过使用适当的哈希算法， [!DNL SHA256]例如，无法反转哈希函数并显示未加扰的信息。 您将上传到Audience Manager的电子邮件地址必须使用算法进行哈希 [!DNL SHA256] 处理。 这样，您就可以确保Audience manager不会收到经过散列处理的电子邮件地址。
+Hashing is a one-way function that scrambles the input to produce a unique result. By using proper hashing algorithms, like [!DNL SHA256], there is no way to reverse the hashing function and reveal the unscrambled information. The email addresses that you will onboard to Audience Manager must be hashed with the  algorithm. [!DNL SHA256]This way, you can ensure that no unhashed email addresses reach Audience Manager.
 
-## 散列要求 {#hashing-requirements}
+## Hashing Requirements {#hashing-requirements}
 
-散列电子邮件地址时，请确保符合以下要求：
+When hashing the email addresses, make sure to comply with the following requirements:
 
-* 从电子邮件字符串中修剪所有前导和尾部空格；示例： `johndoe@example.com`不是 `<space>johndoe@example.com<space>`;
-* 确保哈希字符串全部为小写；示例： `55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149`不是 `55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`;
-* 不要用盐。
+* Trim all leading and trailing spaces from the email string; example: , not ;`johndoe@example.com``<space>johndoe@example.com<space>`
+* When hashing the email strings, make sure to hash the lowercase string;
+   * 示例： , not ;`example@email.com``EXAMPLE@EMAIL.COM`
+* Make sure the hashed string is all lowercase
+   * 示例： `55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149`不是 `55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`;
+* Do not salt the string.
 
 Adobe Experience Cloud可让您选择通过Experience Cloud ID服务散列客户ID。 有关如 [何使用ECID对客户ID进行哈希处理的详细信息，请参阅针对setCustomerID的SHA256哈希支持](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) 。
 
@@ -70,13 +73,13 @@ Adobe Experience Cloud可让您选择通过Experience Cloud ID服务散列客户
 
 在注册前，请确 [!DNL People-Based Destinations]保在将客户的信息用于广告之前获得客户的同意。
 
-如果客户希望退出广告营销活动，请参阅退出管理 [](../../overview/data-security-and-privacy/opt-out-management.md) ，了解有关如何阻止Audience manager进一步收集数据的详细信息。
+In case your customers wish to opt-out of advertising campaigns, see Opt-out Management for details on how to stop Audience Manager from collecting data any further.[](../../overview/data-security-and-privacy/opt-out-management.md)
 
 ## 实施第一方数据激活 {#enforcing-first-party-activation}
 
 使用时， [!DNL People-Based Destinations]您只能使用第一方数据在基于人员的渠道中激活受众细分。 您不能使用任何第二方或第三方数据在基于人员的渠道中激活受众。
 
-## 通过声明ID定位的板载认证哈希ID {#onboard-authenticated-declared-id}
+## Onboard Authenticated Hashed IDs through Declared ID Targeting {#onboard-authenticated-declared-id}
 
 有两种方法可将离线数据导入Audience Manager [!DNL People-Based Destinations]。
 
