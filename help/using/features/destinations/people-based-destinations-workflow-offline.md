@@ -15,7 +15,7 @@ source-git-commit: ad9c077f538759e195a83d47e0ef36ccffa25c7e
 >[!IMPORTANT]
 >本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
-本页包含如何根据仅线下客户数据构建受众细分并将其发送到基于人员的目标的逐步指导。
+This page includes step-by-step guidance on how to build audience segments from offline-only customer data, and send them to People-Based Destinations.
 
 ## 第1步——板载脱机特征 {#step-1-onboard-traits}
 
@@ -29,16 +29,16 @@ source-git-commit: ad9c077f538759e195a83d47e0ef36ccffa25c7e
 
 ### 示例
 
-You want to qualify the customer IDs from the table below for the corresponding onboarded trait IDs. Let's consider that your DPUUIDs are stored in a data source with the ID 999999, and your Audience Manager Partner ID is 123.[](../../reference/ids-in-aam.md)
+您需要从下表中为相应的已载入特征ID确定客户ID。 让我们考虑一下，您 [的DPUUID](../../reference/ids-in-aam.md) （ID为999999）存储在一个数据源中，而您的Audience Manager合作伙伴ID为123。
 
-| Customer ID (DPUUID) | Onboarded Trait ID |
+| 客户ID(DPUUID) | 已载入的特征ID |
 | -------------------------------------- | ------------------- |
 | 68079982765673198504052656074456196039 | 12345, 23456 |
 | 67412682083411995725538770443620307584 | 45678 |
 | 89159024796760343733111707646026765593 | 11223, 93342, 27341 |
 
 <br />
-To qualify the customer IDs in the example above for the corresponding onboarded traits, you must upload an [inbound data file](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md) with the following contents:
+要将上述示例中的客户ID限定为相应的已载入特征，您必须上传包含以下内容的[入站数据文件](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md):
 
 ```
 68079982765673198504052656074456196039<TAB>d_sid=12345,d_sid=23456
@@ -46,34 +46,34 @@ To qualify the customer IDs in the example above for the corresponding onboarded
 89159024796760343733111707646026765593<TAB>d_sid=11223,d_sid=93342,d_sid=27341
 ```
 
-The file name would look like this: .
-`ftp_dpm_999999_123_TIMESTAMP.sync.gz`See Amazon S3 Name and File Size Requirements for Inbound Data Files for detailed information on the file name structure.[](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+文件名如下所示： `ftp_dpm_999999_123_TIMESTAMP.sync.gz`.
+有关 [文件名结构的详细信息，请参阅Amazon S3入站数据文件的名称和文件大小要求](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) 。
 
-## Step 2 - Configure Data Source Settings {#configure-data-source-settings}
+## 第2步——配置数据源设置 {#configure-data-source-settings}
 
-Depending on whether your DPUUIDs are lowercase, hashed email addresses, you might need to configure the data source that will store the hashed email addresses.[](../../reference/ids-in-aam.md)
+根据您的 [DPUUID是小写的](../../reference/ids-in-aam.md) 、哈希电子邮件地址，您可能需要配置用于存储哈希电子邮件地址的数据源。
 
  
 
-**Scenario 1: your DPUUIDs are already lowercase, hashed email addresses.[](../../reference/ids-in-aam.md)**
+**场景1:您的[DPUUID已是小写](../../reference/ids-in-aam.md)，具有哈希值的电子邮件地址。**
 
 In this case, you need to need to label the corresponding data source as such:
 
 1. Go to  -&gt; .**[!UICONTROL Audience Data]****[!UICONTROL Data Sources]**
 1. Find the data source that contains your DPUUIDs, and click it.[](../../reference/ids-in-aam.md)
-1. 确保未选中该 **[!UICONTROL Cannot be tied to personally identifiable information]** 选项。
+1. Make sure the option  is unchecked.**[!UICONTROL Cannot be tied to personally identifiable information]**
 1. 保存数据源设置。
 
  
 
-**场景2:您的[DPUUID不是小写](../../reference/ids-in-aam.md)，具有哈希值的电子邮件地址。**
+**Scenario 2: your DPUUIDs are not lowercase, hashed email addresses.[](../../reference/ids-in-aam.md)**
 
-在这种情况下，您需要创建一个新的跨设备数据源，以存储散列化的电子邮件地址。 下面介绍如何实现此操作：
+在这种情况下，您需要创建一个新的跨设备数据源，以存储散列化的电子邮件地址。 Here's how to do this:
 
 1. 登录到您的Audience manager帐户，然后转 **[!UICONTROL Audience Data]** 到-&gt; **[!UICONTROL Data Sources]**&#x200B;并单击 **[!UICONTROL Add New]**。
 1. 为新数 **[!UICONTROL Name]** 据源 **[!UICONTROL Description]** 输入和。
-1. In the  drop-down menu, select .**[!UICONTROL ID Type]****[!UICONTROL Cross Device]**
-1. In the  section, select both the  and  options, and enable the  option.**[!UICONTROL Data Source Settings]****[!UICONTROL Inbound]****[!UICONTROL Outbound]****[!UICONTROL Share associated cross-device IDs in people-based destinations]**
+1. 在下 **[!UICONTROL ID Type]** 拉菜单中，选择 **[!UICONTROL Cross Device]**。
+1. 在部 **[!UICONTROL Data Source Settings]** 分中，选择和 **[!UICONTROL Inbound]** 选 **[!UICONTROL Outbound]** 项，然后启用选 **[!UICONTROL Share associated cross-device IDs in people-based destinations]** 项。
 1. 使用下拉菜单选择此数 **[!UICONTROL Emails(SHA256, lowercased)]** 据源的标签。
    >[!IMPORTANT]
    >
@@ -93,7 +93,7 @@ In this case, you need to need to label the corresponding data source as such:
 
 例如，您希望将您的现有 [DPUUID（从步骤1的示例）与下表中的哈希电子邮件地址（右列）相匹配，并将哈希电子邮件地址存储在您在步骤2 —— 配置数据源设置中创建的新数据源中](../../reference/ids-in-aam.md)[](#configure-data-source-settings)。
 
-作为提醒，您现在有两个数据源：
+As a reminder, you would now have two data sources:
 
 | 数据源ID | 数据源内容 |
 | -------------- | -------------------------- |
@@ -133,35 +133,35 @@ ID同 [步文件必须遵循](../../integration/sending-audience-data/batch-data
 
 ## Step 4 - Create a Profile Merge Rule for Segmentation {#create-profile-merge-rule}
 
-The next step is creating a new merge rule that will help you create the audience segments to send to your .[!DNL People-Based Destinations]
+下一步是创建新的合并规则，帮助您创建要发送到您的受众细分 [!DNL People-Based Destinations]。
 
-1. Log in to your Audience Manager account and go to  -&gt; .**[!UICONTROL Audience Data]****[!UICONTROL Profile Merge Rules]**
+1. 登录您的Audience manager帐户并转 **[!UICONTROL Audience Data]** 到-&gt; **[!UICONTROL Profile Merge Rules]**。
 2. 单击 [!UICONTROL Add New Rule].
 3. Enter a profile merge rule  and .**[!UICONTROL Name]****[!UICONTROL Description]**
 4. In the  section, select the  rule from the  list.**[!UICONTROL Profile Merge Rule Setup]****[!UICONTROL All Cross-Device Profiles]****[!UICONTROL Cross-Device Options]**
-5. In the  list, select the data source that your traits are onboarded against.**[!UICONTROL Cross-Device Profile Options]**
+5. 在列表 **[!UICONTROL Cross-Device Profile Options]** 中，选择要载入您的特征的数据源。
    ![merge-rule-setup](assets/pbd-pmr.png)
 
 ## Step 5 - Create Audience Segments {#create-audience-segments}
 
-To create new segments from offline-only data, use the Segment Builder and make sure you use the new profile merge rule that you created in the previous step when creating the segment.[](../segments/segment-builder.md)
+要根据仅脱机数据创建新区段，请使用 [Segment Builder](../segments/segment-builder.md) ，并确保在创建区段时使用在上一步中创建的新配置文件合并规则。
 
 ## 第6步——配置基于人员的平台身份验证 {#configure-authentication}
 
 1. 登录到您的Audience manager帐户，然后转 **[!UICONTROL Administration]** 到&gt; **[!UICONTROL Integrated Accounts]**。 如果您之前已配置与社交平台的集成，则应在本页中列出该集成。 否则，页面为空。
    ![基于人的集成](assets/pbd-config.png)
 1. 单击 **[!UICONTROL Add Account]**.
-1. Use the  drop-down menu to select the platform that you want to configure the integration with.**[!UICONTROL People-Based Platform]**
+1. 使用 **[!UICONTROL People-Based Platform]** 下拉菜单选择要配置其集成的平台。
    ![基于人的平台](assets/pbd-add.png)
 1. 单 **[!UICONTROL Confirm]** 击以重定向到所选平台的身份验证页面。
-1. Once you've authenticated to your social platform account, you are redirected to Audience Manager where you should see your associated advertiser accounts. 选择要使用的广告商帐户，然后单击 **[!UICONTROL Confirm]**。
+1. 通过社交平台帐户的身份验证后，您将被重定向到Audience Manager，您应在Audience manager中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!UICONTROL Confirm]**。
 1. Audience manager在页面顶部显示通知，告诉您帐户是否已成功添加。 通知还允许您添加联系人电子邮件地址，以在社交平台身份验证即将过期时接收通知。
 
 >[!IMPORTANT]
 >
 >Audience manager通过身份验证令牌处理与社交平台的集成，这些令牌在一定时间后过期。 有关如何续订过期令牌的详细信息，请参阅身份验证令牌续订。
 
-## 第7步——创建基于人员的目标 {#create-destination}
+## Step 7 - Create a People-Based Destination {#create-destination}
 
 1. 登录到您的Audience Manager帐户，转到 **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Destinations]**，然后单击 **[!UICONTROL Create Destination]**。
 1. 在部 **[!UICONTROL Basic Information]** 分中，输入 **[!UICONTROL Name]** 和 **[!UICONTROL Description]** 作为新数据源，然后使用以下设置：
