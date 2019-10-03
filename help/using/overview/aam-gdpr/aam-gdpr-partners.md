@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 目标的GDPR注意事项
 uuid: e8a40060-086c-4f03-b48c-9c903acb7891
 translation-type: tm+mt
-source-git-commit: 69be038d0f2d31b6b5eda20041082c1890abc38f
+source-git-commit: c238a37e1a72edb0679f657d0178e04b8d848ec2
 
 ---
 
@@ -68,4 +68,4 @@ Adobe合作伙伴拥有其业务流程，并可能会决定不时更新与Audien
 1. 无法支持取消细分Adobe和／或
 1. 无法在30天内以最频繁的方式接收我们的更新。
 
-在这些情况下，您无法通过Audience manager以自动方式向激活合作伙伴发送删除请求。 下载我们 [的Partner excel表](/help/using/overview/aam-gdpr/assets/AAM-Partners-July2019.xlsx) ，了解哪些Audience manager激活合作伙伴支持取消细分。
+在这些情况下，您无法通过Audience manager以自动方式向激活合作伙伴发送删除请求。 下载我们 [的Partner excel表](/help/using/overview/aam-gdpr/assets/AAM-Partners-October2019.xlsx) ，了解哪些Audience manager激活合作伙伴支持取消细分。
