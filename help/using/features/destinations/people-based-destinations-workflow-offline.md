@@ -1,19 +1,19 @@
 ---
 description: '本页包含如何根据仅线下客户数据构建受众细分并将其发送到基于人员的目标的逐步指导。  '
-seo-description: '本页包含如何根据仅线下客户数据构建受众细分并将其发送到基于人员的目标的逐步指导。  '
-seo-title: 工作流B —— 基于仅脱机数据的个性化
+seo-description: 'This page includes step-by-step guidance on how to build audience segments from offline-only customer data, and send them to People-Based Destinations.  '
+seo-title: Workflow B - Personalization Based on Offline-Only Data
 solution: Audience Manager
-title: 工作流B —— 基于仅脱机数据的个性化
+title: Workflow B - Personalization Based on Offline-Only Data
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
 
-# 工作流B —— 基于仅脱机数据的个性化 {#workflow-b}
+# Workflow B - Personalization Based on Offline-Only Data {#workflow-b}
 
 >[!IMPORTANT]
->本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
+>This article contains product documentation meant to guide you through the setup and usage of this feature. 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
 本页包含如何根据仅线下客户数据构建受众细分并将其发送到基于人员的目标的逐步指导。
 
@@ -29,16 +29,16 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ### 示例
 
-您需要从下表中为相应的已载入特征ID确定客户ID。 让我们考虑一下，您 [的DPUUID](../../reference/ids-in-aam.md) （ID为999999）存储在一个数据源中，而您的Audience Manager合作伙伴ID为123。
+You want to qualify the customer IDs from the table below for the corresponding onboarded trait IDs. 让我们考虑一下，您 [的DPUUID](../../reference/ids-in-aam.md) （ID为999999）存储在一个数据源中，而您的Audience Manager合作伙伴ID为123。
 
-| 客户ID(DPUUID) | 已载入的特征ID |
+| Customer ID (DPUUID) | 已载入的特征ID |
 | -------------------------------------- | ------------------- |
 | 68079982765673198504052656074456196039 | 12345, 23456 |
 | 67412682083411995725538770443620307584 | 45678 |
 | 89159024796760343733111707646026765593 | 11223, 93342, 27341 |
 
 <br />
-要将上述示例中的客户ID限定为相应的已载入特征，您必须上传包含以下内容的[入站数据文件](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md):
+To qualify the customer IDs in the example above for the corresponding onboarded traits, you must upload an [inbound data file](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md) with the following contents:
 
 ```
 68079982765673198504052656074456196039<TAB>d_sid=12345,d_sid=23456
@@ -46,12 +46,12 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 89159024796760343733111707646026765593<TAB>d_sid=11223,d_sid=93342,d_sid=27341
 ```
 
-文件名如下所示： `ftp_dpm_999999_123_TIMESTAMP.sync.gz`.
-有关 [文件名结构的详细信息，请参阅Amazon S3入站数据文件的名称和文件大小要求](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) 。
+The file name would look like this: .
+`ftp_dpm_999999_123_TIMESTAMP.sync.gz`See Amazon S3 Name and File Size Requirements for Inbound Data Files for detailed information on the file name structure.[](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
-## 第2步——配置数据源设置 {#configure-data-source-settings}
+## Step 2 - Configure Data Source Settings {#configure-data-source-settings}
 
-根据您的 [DPUUID是小写的](../../reference/ids-in-aam.md) 、哈希电子邮件地址，您可能需要配置用于存储哈希电子邮件地址的数据源。
+Depending on whether your DPUUIDs are lowercase, hashed email addresses, you might need to configure the data source that will store the hashed email addresses.[](../../reference/ids-in-aam.md)
 
  
 
@@ -73,7 +73,7 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 1. 登录到您的Audience manager帐户，然后转 **[!UICONTROL Audience Data]** 到-&gt; **[!UICONTROL Data Sources]**&#x200B;并单击 **[!UICONTROL Add New]**。
 1. 为新数 **[!UICONTROL Name]** 据源 **[!UICONTROL Description]** 输入和。
 1. 在下 **[!UICONTROL ID Type]** 拉菜单中，选择 **[!UICONTROL Cross Device]**。
-1. 在部 **[!UICONTROL Data Source Settings]** 分中，选择和 **[!UICONTROL Inbound]** 选 **[!UICONTROL Outbound]** 项，然后启用选 **[!UICONTROL Share associated cross-device IDs in people-based destinations]** 项。
+1. In the  section, select both the  and  options, and enable the  option.**[!UICONTROL Data Source Settings]****[!UICONTROL Inbound]****[!UICONTROL Outbound]****[!UICONTROL Share associated cross-device IDs in people-based destinations]**
 1. 使用下拉菜单选择此数 **[!UICONTROL Emails(SHA256, lowercased)]** 据源的标签。
    >[!IMPORTANT]
    >
@@ -83,21 +83,21 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
    >[!NOTE]
    >
-   > 有关 [如何将离线数据导入Audience Manager（针对基于人员的目标）的常见问题解答](people-based-destinations-prerequisites.md#data-onboarding) ，请参阅数据入门。
+   > See Data Onboarding for frequently asked questions about how you should bring your offline data into Audience Manager for People-Based Destinations.[](people-based-destinations-prerequisites.md#data-onboarding)
 
-观看以下视频，了解如何为创建数据源的视频教程 [!UICONTROL People-Based Destinations]。
+Watch the video below for a video tutorial of how to create a data source for .[!UICONTROL People-Based Destinations]
 
-[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hans)
 
-## 第3步——通过基于文件的ID同步将DPUUID与哈希电子邮件地址匹配 {#match-ids-emails}
+## Step 3 - Match DPUUIDs to Hashed Email Addresses via File-Based ID Synchronization {#match-ids-emails}
 
 >[!IMPORTANT]
 >
-> 此步骤仅适用于上 [述方案](people-based-destinations-workflow-offline.md#configure-data-source-settings) 2。 如果您的现有 [DPUUID](../../reference/ids-in-aam.md) ，电子邮件地址已经过哈希处理，请跳到第 [4步——为分段创建配置文件合并规则](#create-profile-merge-rule)。
+> This step only applies to Scenario 2 described above. [](people-based-destinations-workflow-offline.md#configure-data-source-settings)如果您的现有 [DPUUID](../../reference/ids-in-aam.md) ，电子邮件地址已经过哈希处理，请跳到第 [4步——为分段创建配置文件合并规则](#create-profile-merge-rule)。
 
-例如，您希望将您的现有 [DPUUID（从步骤1的示例）与下表中的哈希电子邮件地址（右列）相匹配，并将哈希电子邮件地址存储在您在步骤2 —— 配置数据源设置中创建的新数据源中](../../reference/ids-in-aam.md)[](#configure-data-source-settings)。
+Let's say you want to match your existing DPUUIDs from the example at Step 1 to the hashed email addresses from the table below (right column), and store the hashed email addresses in the new data source that you created at Step 2 - Configure Data Source Settings.[](../../reference/ids-in-aam.md)[](#configure-data-source-settings)
 
-作为提醒，您现在有两个数据源：
+As a reminder, you would now have two data sources:
 
 | 数据源ID | 数据源内容 |
 | -------------- | -------------------------- |
@@ -137,13 +137,13 @@ ID同 [步文件必须遵循](../../integration/sending-audience-data/batch-data
 
 ## 第4步——为分段创建配置文件合并规则 {#create-profile-merge-rule}
 
-下一步是创建新的合并规则，帮助您创建要发送到您的受众细分 [!DNL People-Based Destinations]。
+The next step is creating a new merge rule that will help you create the audience segments to send to your .[!DNL People-Based Destinations]
 
 1. 登录您的Audience manager帐户并转 **[!UICONTROL Audience Data]** 到-&gt; **[!UICONTROL Profile Merge Rules]**。
 2. 单击 [!UICONTROL Add New Rule].
 3. 输入配置文件合并规 **[!UICONTROL Name]** 则和 **[!UICONTROL Description]**。
-4. 在部 **[!UICONTROL Profile Merge Rule Setup]** 分中，从列 **[!UICONTROL All Cross-Device Profiles]** 表中选择规 **[!UICONTROL Cross-Device Options]** 则。
-5. 在列表 **[!UICONTROL Cross-Device Profile Options]** 中，选择要载入您的特征的数据源。
+4. In the  section, select the  rule from the  list.**[!UICONTROL Profile Merge Rule Setup]****[!UICONTROL All Cross-Device Profiles]****[!UICONTROL Cross-Device Options]**
+5. In the  list, select the data source that your traits are onboarded against.**[!UICONTROL Cross-Device Profile Options]**
    ![合并规则设置](assets/pbd-pmr.png)
 
 ## 第5步——创建受众细分 {#create-audience-segments}
@@ -159,20 +159,20 @@ ID同 [步文件必须遵循](../../integration/sending-audience-data/batch-data
    ![基于人的平台](assets/pbd-add.png)
 1. 单 **[!UICONTROL Confirm]** 击以重定向到所选平台的身份验证页面。
 1. 通过社交平台帐户的身份验证后，您将被重定向到Audience Manager，您应在Audience manager中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!UICONTROL Confirm]**。
-1. Audience manager在页面顶部显示通知，告诉您帐户是否已成功添加。 通知还允许您添加联系人电子邮件地址，以在社交平台身份验证即将过期时接收通知。
+1. Audience manager在页面顶部显示通知，告诉您帐户是否已成功添加。 The notification also allows you to add a contact email address to receive notifications when the social platform authentication is about to expire.
 
 >[!IMPORTANT]
 >
 >Audience manager通过身份验证令牌处理与社交平台的集成，这些令牌在一定时间后过期。 有关如何续订过期令牌的详细信息，请参阅身份验证令牌续订。
 
-## 第7步——创建基于人员的目标 {#create-destination}
+## Step 7 - Create a People-Based Destination {#create-destination}
 
 1. 登录到您的Audience Manager帐户，转到 **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Destinations]**，然后单击 **[!UICONTROL Create Destination]**。
 1. 在部 **[!UICONTROL Basic Information]** 分中，输入 **[!UICONTROL Name]** 和 **[!UICONTROL Description]** 作为新数据源，然后使用以下设置：
-   * **[!UICONTROL Category]**:集成平台；
+   * **[!UICONTROL Category]**: Integrated Platforms;
    * **[!UICONTROL Type]**:以人为本；
    * **[!UICONTROL Platform]**:选择要将受众细分发送到的基于人的平台；
-   * **[!UICONTROL Account]**:选择与所选平台关联的所需广告商帐户。
+   * **[!UICONTROL Account]**: select the desired advertiser account associated with the selected platform.
       ![create-destination](assets/pbd-create-destination.png)
 1. 单击 **[!UICONTROL Next]**.
 1. 选择要 **[!UICONTROL Data Export Labels]** 为此目标设置的目标。
