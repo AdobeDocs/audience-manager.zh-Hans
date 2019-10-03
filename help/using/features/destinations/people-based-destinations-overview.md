@@ -5,7 +5,7 @@ seo-title: 基于人员的目标概述和使用案例
 solution: Audience Manager
 title: 概述和使用案例
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
@@ -60,7 +60,7 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 观看以下视频，了解使用时的数据流概述 [!UICONTROL People-Based Destinations]。
 
-[!VIDEO](https://video.tv.adobe.com/v/28968/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28968/?captions=chi_hans)
 
 ## 用例 {#use-cases}
 
