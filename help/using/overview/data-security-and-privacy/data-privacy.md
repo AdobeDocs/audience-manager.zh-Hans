@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 数据隐私
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
@@ -89,7 +89,7 @@ The [!DNL IP] address of a visitor to a customer’s website is transmitted to a
 
 观看以下视频，了解地址模糊 [!DNL IP] 处理在Audience manager中的工作原理。
 
-[!VIDEO](https://video.tv.adobe.com/v/27218/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27218/?captions=chi_hans)
 
 **** 地理细分：如果启用地 [!DNL IP] 址模糊处理，则地址的其余八位 [!DNL IP] 元仍可用于Audience manager中的地域划分和报告。 如果不启用地址模 [!DNL IP] 糊处理，则Audience manager将使用完整地 [!DNL IP] 址。 您可以使用“地理分段”功能，在任一情况下，该功能都允许您按地理区域来识别位置，但在使用模糊处理时，会稍有不 [!DNL IP][!DNL IP] 确定位置。 Obtaining city-level information will likely be significantly impacted by the obfuscation of the [!DNL IP] address. 获取区域和国家一级的信息应仅受到轻微影响。 地理细分数据仅粒度级别为市级或邮政编码级别，而不粒度级别为个人级别。 阅读更多关 [于地理定位](/help/using/features/traits/trait-geotarget-keys.md) ，以及如何使用地理变量设置特征。
 
