@@ -5,15 +5,15 @@ seo-title: 工作流A —— 基于所有在线活动和离线数据的个性化
 solution: Audience Manager
 title: 工作流A —— 基于所有在线活动和离线数据的个性化
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
 
-# 工作流A —— 基于所有在线活动和离线数据的个性化 {#workflow-a}
+# Workflow A - Personalization Based on All Online Activity Combined with Offline Data {#workflow-a}
 
 >[!IMPORTANT]
->本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
+>This article contains product documentation meant to guide you through the setup and usage of this feature. 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
 本页包括有关如何将离线数据与Audience manager中已有的行为数据相结合以创建新受众细分的分步指导，然后将这些受众细分发送到 [!DNL CRM][!DNL People-Based Destinations]。
 
@@ -23,15 +23,15 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
  
 
-**场景1:您的[DPUUID已是小写](../../reference/ids-in-aam.md)，具有哈希值的电子邮件地址。**
+**Scenario 1: your DPUUIDs are already lowercase, hashed email addresses.[](../../reference/ids-in-aam.md)**
 
-在这种情况下，您需要将相应的数据源标记为：
+In this case, you need to need to label the corresponding data source as such:
 
-1. 转至 [!UICONTROL Audience Data] -&gt; [!UICONTROL Data Sources]。
-1. 查找包含DPUUID的数 [据源](../../reference/ids-in-aam.md)，然后单击它。
-1. 在下 **[!UICONTROL ID Type]** 拉菜单中，选择 **[!UICONTROL Cross Device]**。
-1. 确保未选中该 [!UICONTROL Cannot be tied to personally identifiable information] 选项。
-1. 在部 **[!UICONTROL Data Source Settings]** 分中，选择和 **[!UICONTROL Inbound]** 选 **[!UICONTROL Outbound]** 项，然后启用选 **[!UICONTROL Share associated cross-device IDs in people-based destinations]** 项。
+1. Go to  -&gt; .[!UICONTROL Audience Data][!UICONTROL Data Sources]
+1. Find the data source that contains your DPUUIDs, and click it.[](../../reference/ids-in-aam.md)
+1. In the  drop-down menu, select .**[!UICONTROL ID Type]****[!UICONTROL Cross Device]**
+1. Make sure the option  is unchecked.[!UICONTROL Cannot be tied to personally identifiable information]
+1. In the  section, select both the  and  options, and enable the  option.**[!UICONTROL Data Source Settings]****[!UICONTROL Inbound]****[!UICONTROL Outbound]****[!UICONTROL Share associated cross-device IDs in people-based destinations]**
 1. 使用下拉菜单选择此数 **[!UICONTROL Emails(SHA256, lowercased)]** 据源的标签。
    >[!IMPORTANT]
    >
@@ -58,19 +58,19 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 1. 保存数据源设置。
 
-观看以下视频，了解如何为创建数据源的视频教程 [!UICONTROL People-Based Destinations]。
+Watch the video below for a video tutorial of how to create a data source for .[!UICONTROL People-Based Destinations]
 
-[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hans)
 
 >[!NOTE]
 >
-> 有关 [如何将离线数据导入Audience Manager（针对基于人员的目标）的常见问题解答](people-based-destinations-prerequisites.md#data-onboarding) ，请参阅数据入门。
+> See Data Onboarding for frequently asked questions about how you should bring your offline data into Audience Manager for People-Based Destinations.[](people-based-destinations-prerequisites.md#data-onboarding)
 
-## 第2步——通过基于文件的ID同步将DPUUID与哈希电子邮件地址匹配 {#match-ids-emails}
+## Step 2 - Match DPUUIDs to Hashed Email Addresses via File-Based ID Synchronization {#match-ids-emails}
 
 >[!IMPORTANT]
 >
-> 此步骤仅适用于上 [述方案](people-based-destinations-workflow-combined.md#configure-data-source-settings) 2。 如果您的现有 [DPUUID](../../reference/ids-in-aam.md) ，电子邮件地址已经过哈希处理，请跳到 [步骤3 —— 为分段创建配置文件合并规则](people-based-destinations-workflow-combined.md#create-merge-rule)。
+> This step only applies to Scenario 2 described above. [](people-based-destinations-workflow-combined.md#configure-data-source-settings)If your existing DPUUIDs are already hashed email addresses, skip to Step 3 - Create a Profile Merge Rule for Segmentation.[](../../reference/ids-in-aam.md)[](people-based-destinations-workflow-combined.md#create-merge-rule)
 
 假设您要将现有 [DPUUID与下表（右列）中的哈希电子邮件地址匹配](../../reference/ids-in-aam.md) ，并将哈希电子邮件地址存储在您在步骤1 —— 配置数据源设置中创建的新数据源中 [](people-based-destinations-workflow-combined.md#configure-data-source-settings)。
 
@@ -109,7 +109,7 @@ ID同 [步文件必须遵循](../../integration/sending-audience-data/batch-data
 
  
 
-在上面的示例中，文件名如下：
+In the example above, the file name would look like this:
 `c2c_id_999999_987654_1560431657.sync`
 
 [在此处下载示例文件](https://marketing.adobe.com/resources/help/en_US/aam/downloads/c2c_id_999999_987654_1560431657.sync)。
@@ -132,16 +132,16 @@ ID同 [步文件必须遵循](../../integration/sending-audience-data/batch-data
 
 ## 第4步——创建受众细分 {#create-audience-segments}
 
-要创建新的受众细分，请使用 [细分生成器](../segments/segment-builder.md)。 如果您有要发送到的现有受众细分，请跳 [!DNL People-Based Destinations]到步骤5 [-配置基于人员的平台身份验证](people-based-destinations-workflow-combined.md#configure-authentication)。
+要创建新的受众细分，请使用 [细分生成器](../segments/segment-builder.md)。 If you have existing audience segments that you want to send to , skip to Step 5 - Configure People-Based Platform Authentication.[!DNL People-Based Destinations][](people-based-destinations-workflow-combined.md#configure-authentication)
 
 ## 第5步——配置基于人员的平台身份验证 {#configure-authentication}
 
-1. 登录到您的Audience manager帐户，然后转 **[!UICONTROL Administration]** 到&gt; **[!UICONTROL Integrated Accounts]**。 如果您之前已配置与社交平台的集成，则应在本页中列出该集成。 否则，页面为空。
+1. Log in to your Audience Manager account and go to  &gt; . **[!UICONTROL Administration]****[!UICONTROL Integrated Accounts]**如果您之前已配置与社交平台的集成，则应在本页中列出该集成。 否则，页面为空。
    ![基于人的集成](assets/pbd-config.png)
 1. 单击 **[!UICONTROL Add Account]**.
-1. 使用 **[!UICONTROL People-Based Platform]** 下拉菜单选择要配置其集成的平台。
-   ![基于人的平台](assets/pbd-add.png)
-1. 单 **[!UICONTROL Confirm]** 击以重定向到所选平台的身份验证页面。
+1. Use the  drop-down menu to select the platform that you want to configure the integration with.**[!UICONTROL People-Based Platform]**
+   ![people-based-platform](assets/pbd-add.png)
+1. Click  to be redirected to the authentication page of the selected platform.**[!UICONTROL Confirm]**
 1. 通过社交平台帐户的身份验证后，您将被重定向到Audience Manager，您应在Audience manager中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!UICONTROL Confirm]**。
 1. Audience manager在页面顶部显示通知，告诉您帐户是否已成功添加。 通知还允许您添加联系人电子邮件地址，以在社交平台身份验证即将过期时接收通知。
 
@@ -153,13 +153,13 @@ ID同 [步文件必须遵循](../../integration/sending-audience-data/batch-data
 
 1. 登录到您的Audience Manager帐户，转到 **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Destinations]**，然后单击 **[!UICONTROL Create Destination]**。
 1. 在部 **[!UICONTROL Basic Information]** 分中，输入 **[!UICONTROL Name]** 和 **[!UICONTROL Description]** 作为新数据源，然后使用以下设置：
-   * **[!UICONTROL Category]**:集成平台；
+   * **[!UICONTROL Category]**: Integrated Platforms;
    * **[!UICONTROL Type]**:以人为本；
-   * **[!UICONTROL Platform]**:选择要将受众细分发送到的基于人的平台；
+   * **[!UICONTROL Platform]**: select the people-based platform that you want to send audience segments to;
    * **[!UICONTROL Account]**:选择与所选平台关联的所需广告商帐户。
       ![create-destination](assets/pbd-create-destination.png)
 1. 单击 **[!UICONTROL Next]**.
 1. 选择要 **[!UICONTROL Data Export Labels]** 为此目标设置的目标。
 1. 在部分 **[!UICONTROL Configuration]** 中，选择包含哈希数据源的数据源。
-1. 在部 **[!UICONTROL Segment Mappings]** 分中，选择要发送到此目标的区段。 这将是您在步骤4 —— 创建受 [众区段时创建的区段](people-based-destinations-workflow-combined.md#create-audience-segments)。
+1. 在部 **[!UICONTROL Segment Mappings]** 分中，选择要发送到此目标的区段。 This would be the segments that you created at Step 4 - Create Audience Segments.[](people-based-destinations-workflow-combined.md#create-audience-segments)
 1. 保存目标。
