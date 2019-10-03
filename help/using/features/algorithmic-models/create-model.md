@@ -8,7 +8,7 @@ title: 创建算法模型
 topic: DIL API
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -102,6 +102,10 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
   </tr> 
  </tbody>
 </table>
+
+观看以下视频，了解如何创建第一方相似模型，以便您能够找到更多与您的客户相似的访客。
+
+[!VIDEO](https://video.tv.adobe.com/v/23504/?captions=chi_hans)
 
 >[!MORE_LIKE_THIS]
 >
