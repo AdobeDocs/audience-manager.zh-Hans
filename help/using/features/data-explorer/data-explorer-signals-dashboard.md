@@ -1,11 +1,11 @@
 ---
-description: 获取Audience manager在过去7天内收到的未使用信号的概述，并识别潜在的新特征。 未使用的信号从您的在线资产传到Audience Manager，但不会用于您的任何现有特征。 要查看信号控制板，请转到“受众数据”>“信号”。 信号控制板会根据您最活跃的未使用信号为您显示切实可行的洞察。
+description: 获取Audience manager在过去7天内收到的未使用信号的概述，并识别潜在的新特征。 未使用的信号从您的在线资产传到Audience Manager，但不会用于您的任何现有特征。 要查看信号控制板，请转到“受众数据”>“信号”。 信号控制板会根据最活跃的未使用信号为您显示切实可行的洞察。
 seo-description: 获取Audience manager在过去7天内收到的未使用信号的概述，并识别潜在的新特征。 未使用的信号从您的在线资产传到Audience Manager，但不会用于您的任何现有特征。 要查看信号控制板，请转到“受众数据”>“信号”。 信号控制板会根据最活跃的未使用信号为您显示切实可行的洞察。
 seo-title: 信号仪表板
 title: 信号仪表板
 uuid: 26f39507-097f-427d-bf5b-ab6d035c1dd2
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
@@ -37,4 +37,4 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 保存的搜索显示对应条件的前50个结果。
 
 观看以下视频，了解如何使用 [!UICONTROL Signals Dashboard]。
-[!VIDEO](https://video.tv.adobe.com/v/25151/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25151/?captions=chi_hans)
