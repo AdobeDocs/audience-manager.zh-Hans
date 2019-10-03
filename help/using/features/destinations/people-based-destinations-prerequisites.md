@@ -3,9 +3,9 @@ description: '阅读以下内容，了解注册基于人员的目标之前需要
 seo-description: '阅读以下内容，了解注册基于人员的目标之前需要满足的客户要求。  '
 seo-title: 基于人员的目标先决条件和注意事项
 solution: Audience Manager
-title: 先决条件和注意事项
+title: Prerequisites and Considerations
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
@@ -50,7 +50,7 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ## 数据哈希与加密 {#data-hashing-encryption}
 
-加密是双向功能。 任何加密的信息也可以使用正确的解密密钥被解密。 在Audience manager环境中加密数据会带来严重风险，因为任何加密形式的个人识别信息也可以解密。 与加密相比，它 [!DNL People-Based Destinations] 们设计为处理散列数据。
+加密是双向功能。 Any encrypted information can also be decrypted, using the correct decryption key. Encrypting data in the context of Audience Manager poses serious risks, since any encrypted form of personally identifiable information can also be decrypted. 与加密相比，它 [!DNL People-Based Destinations] 们设计为处理散列数据。
 
 散列是单向函数，它对输入进行扰码以产生唯一的结果。 通过使用适当的哈希算法， [!DNL SHA256]例如，无法反转哈希函数并显示未加扰的信息。 您将上传到Audience Manager的电子邮件地址必须使用算法进行哈希 [!DNL SHA256] 处理。 这样，您就可以确保Audience manager不会收到经过散列处理的电子邮件地址。
 
@@ -67,7 +67,7 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 请观看以下视频，了解的哈希要求 [!UICONTROL People-Based Destinations]。
 
-[!VIDEO](https://video.tv.adobe.com/v/29003/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29003/?captions=chi_hans)
 
 Adobe Experience Cloud可让您选择通过Experience Cloud ID服务散列客户ID。 有关如 [何使用ECID对客户ID进行哈希处理的详细信息，请参阅针对setCustomerID的SHA256哈希支持](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) 。
 
@@ -88,4 +88,4 @@ Adobe Experience Cloud可让您选择通过Experience Cloud ID服务散列客户
 有两种方法可将离线数据导入Audience Manager [!DNL People-Based Destinations]。
 
 * [将批量数据发送](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 到Audience Manager，以摄取散列化的电子邮件地址。 使用此方法，您可以选择使用中数据库中经过哈希处理的电子 [!DNL CRM] 邮件地址 [!DNL People-Based Destinations]。 此外，使用此方法时，您还可以为已载入的特征限定哈希化电子邮件 [地址](../traits/trait-qualification-reference.md)。
-* 在传 [入经身份验证的客户ID时](../declared-ids.md) ，使用Declared ID声明散列化的电子邮件地址。 使用此方法时，Audience manager将代表您仅向通过在线身份验证的 [!DNL People-Based Destinations] 用户发送哈希电子邮件地址。 通过基于人员的渠道激活的电子邮件地址只是声明的ID事件调用中的电子邮件地址。 与客户ID关联的其他电子邮件地址不会实时发送。
+* 在传 [入经身份验证的客户ID时](../declared-ids.md) ，使用Declared ID声明散列化的电子邮件地址。 When using this method, Audience Manager, on your behalf, only sends to  the hashed email addresses from users who have authenticated online. [!DNL People-Based Destinations]通过基于人员的渠道激活的电子邮件地址只是声明的ID事件调用中的电子邮件地址。 Other email addresses associated with the customer ID are not sent in real-time.
