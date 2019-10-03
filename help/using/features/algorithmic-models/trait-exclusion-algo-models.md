@@ -5,12 +5,12 @@ seo-title: 算法模型特征排除
 title: 算法模型特征排除
 uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
 
-#  算法模型：特征排除 {#algorithmic-models-trait-exclusion}
+# 算法模型：特征排除 {#algorithmic-models-trait-exclusion}
 
 [!UICONTROL Trait Exclusion] 在建模工作流程中提供其他控件，允许您根据您的域专业知识和法规要求向模型添加必要的防护栏。 使用选 [!UICONTROL Exclusions] 项，在从一个或多个数据源创建模型时选择要忽略的特征。
 
@@ -87,7 +87,7 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 观看以下视频，了解如何以及为何从中排除特定特征 [!UICONTROL Look-Alike Model]。
 
-[!VIDEO](https://video.tv.adobe.com/v/25569/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25569/?captions=chi_hans)
 
 ## 相关链接
 
