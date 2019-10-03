@@ -5,7 +5,7 @@ seo-title: 工作流A —— 基于所有在线活动和离线数据的个性化
 solution: Audience Manager
 title: 工作流A —— 基于所有在线活动和离线数据的个性化
 translation-type: tm+mt
-source-git-commit: fb5d9eff3573048d3e8a570b342a97bce3cd8da0
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -48,15 +48,19 @@ source-git-commit: fb5d9eff3573048d3e8a570b342a97bce3cd8da0
 
 1. 登录到您的Audience manager帐户，然后转到 **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Data Sources]**&#x200B;并单击 **[!UICONTROL Add New]**。
 1. 为新数 [!UICONTROL Name] 据源 [!UICONTROL Description] 输入和。
-1. In the  drop-down menu, select .**[!UICONTROL ID Type]****[!UICONTROL Cross Device]**
-1. In the  section, select both the  and  options, and enable the  option.**[!UICONTROL Data Source Settings]****[!UICONTROL Inbound]****[!UICONTROL Outbound]****[!UICONTROL Share associated cross-device IDs in people-based destinations]**
-1. Use the drop-down menu to select the  label for this data source.**[!UICONTROL Emails(SHA256, lowercased)]**
+1. 在下 **[!UICONTROL ID Type]** 拉菜单中，选择 **[!UICONTROL Cross Device]**。
+1. 在部 **[!UICONTROL Data Source Settings]** 分中，选择和 **[!UICONTROL Inbound]** 选 **[!UICONTROL Outbound]** 项，然后启用选 **[!UICONTROL Share associated cross-device IDs in people-based destinations]** 项。
+1. 使用下拉菜单选择此数 **[!UICONTROL Emails(SHA256, lowercased)]** 据源的标签。
    >[!IMPORTANT]
    >
-   >This option only labels the data source as containing data hashed with that specific algorithm. Audience Manager does not hash the data at this step. Make sure the email addresses that you plan on storing in this data source are already hashed with the  algorithm. [!DNL SHA256]Otherwise, you won't be able to use it for .[!DNL People-Based Destinations]
+   >此选项仅将数据源标记为包含使用该特定算法进行哈希处理的数据。 Audience manager不会在此步骤中对数据进行哈希处理。 确保您计划存储在此数据源中的电子邮件地址已使用算法进行哈希 [!DNL SHA256] 处理。 否则，您将无法将其用于 [!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 1. 保存数据源设置。
+
+观看以下视频，了解如何为创建数据源的视频教程 [!UICONTROL People-Based Destinations]。
+
+[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hans)
 
 >[!NOTE]
 >
@@ -89,7 +93,7 @@ source-git-commit: fb5d9eff3573048d3e8a570b342a97bce3cd8da0
 
  
 
-Your ID synchronization file would have the following contents:[](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
+您的 [ID同步文件](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) ，将包含以下内容：
 
 ```
 68079982765673198504052656074456196039<TAB>55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149
@@ -99,20 +103,20 @@ Your ID synchronization file would have the following contents:[](../../integrat
 
  
 
-The ID synchronization file must follow this naming structure:[](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
+ID同 [步文件必须遵循](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) 以下命名结构：
 
 `c2c_id_<DPUUID_DATA_SOURCE_ID>_<HASHED_EMAIL_DATA_SOURCE_ID>_TIMESTAMP.sync`
 
  
 
-In the example above, the file name would look like this:
+在上面的示例中，文件名如下：
 `c2c_id_999999_987654_1560431657.sync`
 
-[Download example file here.](https://marketing.adobe.com/resources/help/en_US/aam/downloads/c2c_id_999999_987654_1560431657.sync)
+[在此处下载示例文件](https://marketing.adobe.com/resources/help/en_US/aam/downloads/c2c_id_999999_987654_1560431657.sync)。
 
-Once you've created your ID synchronization file, you need to upload it to an  bucket. [!DNL Amazon S3]To learn how to upload ID synchronization files, see Send Batch Data to Audience Manager.[](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)
+创建ID同步文件后，您需要将其上传到存储段 [!DNL Amazon S3] 中。 要了解如何上传ID同步文件，请参阅 [将批量数据发送到Audience Manager](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)。
 
-## Step 3 - Create a Profile Merge Rule for Segmentation {#create-merge-rule}
+## 第3步——为分段创建配置文件合并规则 {#create-merge-rule}
 
 下一步是创建新的合并规则，帮助您创建受众细分，并将其发送到基于人员的目标。
 
@@ -135,10 +139,10 @@ Once you've created your ID synchronization file, you need to upload it to an  b
 1. 登录到您的Audience manager帐户，然后转 **[!UICONTROL Administration]** 到&gt; **[!UICONTROL Integrated Accounts]**。 如果您之前已配置与社交平台的集成，则应在本页中列出该集成。 否则，页面为空。
    ![基于人的集成](assets/pbd-config.png)
 1. 单击 **[!UICONTROL Add Account]**.
-1. Use the  drop-down menu to select the platform that you want to configure the integration with.**[!UICONTROL People-Based Platform]**
-   ![people-based-platform](assets/pbd-add.png)
-1. Click  to be redirected to the authentication page of the selected platform.**[!UICONTROL Confirm]**
-1. Once you've authenticated to your social platform account, you are redirected to Audience Manager where you should see your associated advertiser accounts. 选择要使用的广告商帐户，然后单击 **[!UICONTROL Confirm]**。
+1. 使用 **[!UICONTROL People-Based Platform]** 下拉菜单选择要配置其集成的平台。
+   ![基于人的平台](assets/pbd-add.png)
+1. 单 **[!UICONTROL Confirm]** 击以重定向到所选平台的身份验证页面。
+1. 通过社交平台帐户的身份验证后，您将被重定向到Audience Manager，您应在Audience manager中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!UICONTROL Confirm]**。
 1. Audience manager在页面顶部显示通知，告诉您帐户是否已成功添加。 通知还允许您添加联系人电子邮件地址，以在社交平台身份验证即将过期时接收通知。
 
 >[!IMPORTANT]
@@ -158,4 +162,4 @@ Once you've created your ID synchronization file, you need to upload it to an  b
 1. 选择要 **[!UICONTROL Data Export Labels]** 为此目标设置的目标。
 1. 在部分 **[!UICONTROL Configuration]** 中，选择包含哈希数据源的数据源。
 1. 在部 **[!UICONTROL Segment Mappings]** 分中，选择要发送到此目标的区段。 这将是您在步骤4 —— 创建受 [众区段时创建的区段](people-based-destinations-workflow-combined.md#create-audience-segments)。
-1. Save the destination.
+1. 保存目标。
