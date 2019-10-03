@@ -5,7 +5,7 @@ seo-title: 基于人员的目标概述和使用案例
 solution: Audience Manager
 title: 概述和使用案例
 translation-type: tm+mt
-source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -57,6 +57,10 @@ source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 **利用Audience manager的数据管理和隐私控制安全地处理客户数据。**
 
 [!DNL People-Based Destinations] 要求您仅使用不可逆转的散列标识符。 这降低了将客户数据手动上传到每个目标平台的风险。
+
+观看以下视频，了解使用时的数据流概述 [!UICONTROL People-Based Destinations]。
+
+[!VIDEO](https://video.tv.adobe.com/v/28968/?captions=chi_hans)
 
 ## 用例 {#use-cases}
 
