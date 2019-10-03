@@ -5,7 +5,7 @@ seo-title: 适用于 IAB TCF 的 Audience Manager 插件
 solution: Audience Manager
 title: 适用于 IAB TCF 的 Audience Manager 插件
 translation-type: tm+mt
-source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
+source-git-commit: c238a37e1a72edb0679f657d0178e04b8d848ec2
 
 ---
 
@@ -58,23 +58,23 @@ Adobe 通过[选择加入功能](https://marketing.adobe.com/resources/help/en_U
 IAB框架中的标准用途是：
 
 * 信息存储和访问
-* 个性化
-* 广告选择、投放和报告
-* 内容选择、交付和报告
+* Personalization
+* Ad selection, delivery, and reporting
+* Content selection, delivery, and reporting
 * 测量
 
-有关五 [个标准用途的说明](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Consent%20string%20and%20vendor%20list%20formats%20v1.1%20Final.md#purposes-features) ，请参阅IAB框架规范页。
+Refer to the IAB framework specification page for a description of the five standard purposes.[](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Consent%20string%20and%20vendor%20list%20formats%20v1.1%20Final.md#purposes-features)
 
-用户可以出于标准目的和供应商的考虑授予他们同意。 例如，用户可以授予其对存储、个性化和衡量的同意，并授予其对由《议定书》/《公约》缔约方会议展示的所有第三方供应商的同意。 或者，在另一个例子中，他们可以就所有五项标准目的同意，但只准许《议定书》/《公约》缔约方会议所显示的几个供应商同意。
+Users may grant their consent for a combination of standard purposes and vendors. For example, users could grant their consent for storage, personalization, and measurement and grant their consent to all third-party vendors displayed by the CMP. Or, in another example, they could grant their consent for all five standard purposes but only grant consent to a few of the vendors displayed by the CMP.
 
-当用户选择其隐私选择后，用户选择被记录在IAB TCF同意字符串中。 IAB TCF同意字符串存储已批准用途和供应商的组合以及其他元数据信息(请参阅 [IAB页面](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Consent%20string%20and%20vendor%20list%20formats%20v1.1%20Final.md#Consent-string-and-vendor-list-format) ，了解更多信息)。 在IAB TCF中注册的每个供应商评估IAB TCF同意字符串并根据用户的隐私选择做出决策。 请记住，用户的隐私选择在所有经过批准的供应商中均有效。
+Once the user selects their privacy choices, the user choice(s) are recorded in the IAB TCF consent string. The IAB TCF consent string stores the combination of approved purposes and vendors, along with other metadata information (see the IAB page for more information). [](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Consent%20string%20and%20vendor%20list%20formats%20v1.1%20Final.md#Consent-string-and-vendor-list-format)Every vendor registered in the IAB TCF evaluates the IAB TCF consent string and makes decisions based on the users' privacy choices. Keep in mind that the users' privacy choices are valid across all approved vendors.
 
-## Audience manager需要的标准用途 {#aam-standard-purposes}
+## Standard purposes needed by Audience Manager {#aam-standard-purposes}
 
-Audience manager评估存储在IAB TFC同意字符串中的用户选择，其目的是：
+Audience Manager evaluates the users' choices stored in the IAB TFC consent string for:
 
-* 信息存储和访问(全局供应商列表中的目 [的ID 1](https://vendorlist.consensu.org/vendorlist.json))
-* 个性化（目的ID 2）
+* Information storage and access (purpose ID 1 in the global vendor list)[](https://vendorlist.consensu.org/vendorlist.json)
+* Personalization (purpose ID 2)
 * 测量（用途ID 5）
 * Audience manager供应商同意为发布者存储、处理或激活数据。
 
@@ -102,29 +102,29 @@ Audience manager的工作方式不同，具体取决于Audience manager是否在
 4. 如果GDPR适用，Audience manager将检查在参数中传递的IAB TCF同意字符串，以 `gdpr_consent`获得所需的权限。 Audience manager需要存储、个性化、评估权限以及Audience manager供应商的同意权限，才能存储、处理或激活数据。
 5. 如果IAB TCF同意字符串存在并且包含所需的权限，则Audience manager会将IAB TCF同意字符串传递到我们的 [数据收集服务器](/help/using/reference/system-components/components-data-collection.md) (DCS)。
 6. Audience manager通过在浏览器上设置 [Demdex cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_am.html) 来做出响应。 Audience manager还启动并支持第三方ID同步。
-7. 或者，如果在步骤5中通过的IAB TCF同意字符串不包含所有所需的权限，则Audience manager不会收集、处理或激活数据，也不会执行或启动ID同步。
+7. Alternatively, if the IAB TCF consent string passed in step 5 does not contain all the needed permissions, Audience Manager does not collect, process, or activate data and does not honor or initiate ID syncs.
 
-![发布者用例](assets/publisher-use-case.png)
+![Publisher Use Case](assets/publisher-use-case.png)
 
-## 广告商用例 {#advertiser-use-case}
+## Advertiser Use Case {#advertiser-use-case}
 
-Audience manager根据IAB TCF评估并接受在像素调 [用中通过](/help/using/integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)的同意。
+Audience Manager evaluates and honors consent passed in pixel calls, in accordance with the IAB TCF.[](/help/using/integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)
 
-像素通常由Audience manager客户放在其合作伙伴页面上，或者放在广告服务器中以包含在广告响应中。 在第一种情况下，您的合作伙伴必须以编程方式检索同意参数并将其添加到像素，然后才能触发。 在第二种情况中，广告服务器将从供应端平台(SSP)或发布者广告服务器收到的同意参数附加到所有像素，这种情况更为常见，具体如下所述。
+Pixels are generally placed by Audience Manager customers on their partner pages or they are placed in ad servers to include in the ad response. In the first case, your partner must programmatically retrieve the consent parameter and add it to the pixel before firing. In the second case, which is more common and is described in detail below, ad servers append the consent parameters they receive from the Supply-Side Platform (SSP) or publisher ad servers to all pixels.
 
-Audience manager使用两个参数在像素调用中通过用户同意：
+Audience Manager uses two parameters to pass user consent in pixel calls:
 
-* `gdpr` 可以是0（GDPR不适用）或1（GDPR适用）;
-* `gdpr_consent` 是URL安全的base64编码的GDPR同意字符串(请参 [阅规范](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications))。 对印象像素的示例调用，其中两个参数可能如下所示：
+* `gdpr` can be 0 (GDPR does not apply) or 1 (GDPR applies);
+* `gdpr_consent` is the URL-safe base64-encoded GDPR consent string (see specification). [](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications)A sample call for an impression pixel, with the two parameters could look like below:
 
 ```
 http://yourcompany.demdex.net/event?d_event=imp&gdpr=1&gdpr_consent=consentstring&d_src=datasource_id&d_site=siteID&d_creative=creative_id&d_adgroup=adgroup_id&d_placement=placement_id
 ```
 
-图像和以下步骤介绍了用例。 从图像左侧开始：
+The use case is described in the image and in the steps below. 从图像左侧开始：
 
-1. 广告服务器会给用户留下印象。 这将转化为对我们的数据收集服务器(DCS)的像素调用。
-1. Audience manager检查GDPR标志是否适用。 否则，Audience manager会在像素调用中存储宏变量中传递的数据。
+1. Your user is served an impression via an ad server. 这将转化为对我们的数据收集服务器(DCS)的像素调用。
+1. Audience Manager checks whether the GDPR flag applies. 否则，Audience manager会在像素调用中存储宏变量中传递的数据。
 1. 如果同意字符串存在并且包含所需的权限，则Audience manager会将传入宏变量的数据存储在像素调用中。
 1. 如果同意字符串缺失或缺少所需的权限，则Audience manager会删除像素调用中宏变量中传递的数据。
 
@@ -132,7 +132,7 @@ http://yourcompany.demdex.net/event?d_event=imp&gdpr=1&gdpr_consent=consentstrin
 
 ## 支持IAB TCF的激活合作伙伴 {#aam-activation-partners}
 
-适用于IAB TCF的Audience Manager插件允许您将IAB TCF同意字符串转发给激活合作伙伴，同时尊重用户的隐私选择。 有关哪些激活合作伙伴支持IAB TCF（截至2019年7月7日准确）的信息，请参阅我们的 **[Partner excel表](/help/using/overview/aam-gdpr/assets/AAM-Partners-July2019.xlsx)**。
+适用于IAB TCF的Audience Manager插件允许您将IAB TCF同意字符串转发给激活合作伙伴，同时尊重用户的隐私选择。 有关哪些激活合作伙伴支持IAB TCF（截至2019年7月7日准确）的信息，请参阅我们的 **[Partner excel表](/help/using/overview/aam-gdpr/assets/AAM-Partners-October2019.xlsx)**。
 
 ## 测试IAB实施 {#test-iab-implementation}
 
