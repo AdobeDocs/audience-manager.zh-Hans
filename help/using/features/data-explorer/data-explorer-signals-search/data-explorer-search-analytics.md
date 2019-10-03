@@ -5,7 +5,7 @@ seo-title: Adobe Analytics的高级搜索
 title: Adobe Analytics的高级搜索
 uuid: 20177820-10e1-49d9-bb2c-3a62141a498e
 translation-type: tm+mt
-source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -25,3 +25,7 @@ Audience manager客户也在使用这 [!DNL Adobe Analytics] 两种解决方案�
 
    ![](assets/signals-search-analytics.png)
 1. 搜索结果现在将显示在列中输入的键值对的易记名称，或报表包中所有信号的易记名称（如果键值字段留空）。 **[!UICONTROL Key or Key Name]**
+
+以下视频演示了如何使用Adobe [!UICONTROL Data Explorer] Analytics数据发现和使用，包括搜索已使用和未使用的信号、创建Analytics特征以及了解数据。
+
+[!VIDEO](https://video.tv.adobe.com/v/25150?captions=chi_hans)
