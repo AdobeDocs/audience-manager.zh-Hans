@@ -1,22 +1,22 @@
 ---
 description: 使用数据浏览器根据已使用和未使用的信号构建特征，并用历史数据回填这些特征，以避免相关受众的潜在损失，从而利用历史受众。
 seo-description: 使用数据浏览器根据已使用和未使用的信号构建特征，并用历史数据回填这些特征，以避免相关受众的潜在损失，从而利用历史受众。
-seo-title: Overview, Benefits, and Use Cases
-title: Overview, Benefits, and Use Cases
+seo-title: 概述、优势和使用案例
+title: 概述、优势和使用案例
 uuid: 3bd32d4a-ade3-413d-837a-9edd14d415a5
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
 
-# Data Explorer - Overview, Benefits, and Use Cases {#overview-benefits-and-use-cases}
+# 数据浏览器——概述、优势和使用案例 {#overview-benefits-and-use-cases}
 
-Use  to capitalize on historical audiences by building traits based on used and unused signals, and backfilling them with historical data to avoid potential loss of relevant audiences.[!UICONTROL Data Explorer]
+使用 [!UICONTROL Data Explorer] 根据已使用和未使用的信号构建特征以利用历史受众，并用历史数据回填这些特征以避免相关受众的潜在损失。
 
 ## 概述 {#overview}
 
-Creating traits based on existing insights related to your audience is a rather straightforward process, as long as you always know who your audience is. But how often does that happen?
+根据与受众相关的现有洞察创建特征是一个相当简单的过程，只要您始终了解受众。 但这种情况多久发生一次？
 
 [!UICONTROL Data Explorer] 简化了特征管理流程，同时在分类特征化方面提供了更高的灵活性。 两个 [!UICONTROL Data Explorer] 组件可帮助您实现这一点：
 
@@ -40,10 +40,10 @@ Creating traits based on existing insights related to your audience is a rather 
 
 ### 示例 2
 
-在旅行社向其预订网站添加新目的地后，他们希望向历史受众推广这些目的地，尽管他们没有为它们创建任何特征。 They can use Signals Search to identify the unused signals related to the new destinations, include them in new traits and backfill them with historical realizations. [](../../features/data-explorer/data-explorer-trait-backfill.md)Then, create new segments with the new traits and immediately target them with dedicated campaigns.
+在旅行社向其预订网站添加新目的地后，他们希望向历史受众推广这些目的地，尽管他们没有为它们创建任何特征。 他们可以使用信号搜索来识别与新目标相关的未使用信号，将它们包含在新特征中，并用历史实 [现](../../features/data-explorer/data-explorer-trait-backfill.md) 回填它们。 然后，使用新特征创建新细分，并立即通过专用营销活动定位这些细分。
 
-### Using Data Explorer to Validate Trait Creation for Your Onboarded Data
+### 使用数据浏览器验证已载入数据的特征创建
 
-One of the most powerful features of Audience Manager is the ability to onboard offline data and tie it together with your online data. In the video below, learn how to use  to validate that you have created all the necessary traits to leverage this onboarded data.[!UICONTROL Data Explorer]
+Audience manager的最强大功能之一是能够记录离线数据并将其与在线数据绑定在一起。 在以下视频中，了解如何使 [!UICONTROL Data Explorer] 用来验证您是否已经创建了所有必需的特征以利用此载入的数据。
 
-[!VIDEO](https://video.tv.adobe.com/v/25149/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25149/?captions=chi_hans)
