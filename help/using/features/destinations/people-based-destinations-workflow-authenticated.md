@@ -5,7 +5,7 @@ seo-title: 工作流C —— 基于实名活动和离线数据的个性化
 solution: Audience Manager
 title: 工作流C —— 基于实名活动和离线数据的个性化
 translation-type: tm+mt
-source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -48,6 +48,10 @@ source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
    >
    > 有关 [如何将离线数据导入Audience Manager（针对基于人员的目标）的常见问题解答](people-based-destinations-prerequisites.md#data-onboarding) ，请参阅数据入门。
 
+观看以下视频，了解如何为创建数据源的视频教程 [!UICONTROL People-Based Destinations]。
+
+[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hans)
+
 ## 第2步——使用声明的ID通过实时HTTP调用将DPUUID与散列化的电子邮件地址匹配 {#match-email-addresses}
 
 要使经过身份验证的用户有资格获得基于规则的特征，您需要通过声明的ID发送特 [征资格](../declared-ids.md)。
@@ -87,7 +91,7 @@ source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 >[!IMPORTANT]
 >
->如果您已经使用或选项定义 **[!UICONTROL Current Authenticated Profiles]** 了规 **[!UICONTROL Last Authenticated Profiles]** 则，可跳到第4步- [创建受众细分](#create-audience-segments)。
+>如果已经使用或选项定义了规 **[!UICONTROL Current Authenticated Profiles]** 则， **[!UICONTROL Last Authenticated Profiles]** 则可跳到第4步- [创建受众细分](#create-audience-segments)。
 
 1. 登录您的Audience manager帐户并转 **[!UICONTROL Audience Data]** 到-&gt; **[!UICONTROL Profile Merge Rules]**。
 2. 单击 **[!UICONTROL Add New Rule]**.
