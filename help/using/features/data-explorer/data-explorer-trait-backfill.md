@@ -5,18 +5,18 @@ seo-title: 回填特征实现
 title: 回填特征实现
 uuid: 8b0ef4e6-d16a-4d1d-94f1-b84eebffa9a5
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
 
-# Backfill Trait Realizations {#backfill-trait-realizations}
+# 回填特征实现 {#backfill-trait-realizations}
 
-Backfill trait realizations to capture historical audiences and avoid loss of relevant data prior to a trait creation date.
+回填特征实现以捕获历史受众并避免在特征创建日期之前丢失相关数据。
 
-[!UICONTROL Data Explorer Trait Backfill] is a premium capability that enhances the Audience Manager experience by unlocking additional use cases. Backfill requires additional processing power and is available to all Audience Manager customers at an incremental cost. Please contact your Adobe sales representative for additional details.
+[!UICONTROL Data Explorer Trait Backfill] 是一种高级功能，可通过解锁其他使用案例来增强Audience Manager体验。 回填需要额外的处理能力，并且所有Audience manager客户都能以递增的成本使用回填。 有关更多详细信息，请与Adobe销售代表联系。
 
-When you create traits from unused signals, you can choose to backfill the trait realizations over a specific period of time. [!DNL Audience Manager] captures the historical data about audiences that qualify for the new trait and stores them on the corresponding profile. 您可以在特 **[!UICONTROL Backfill Options]** 征构建 [!UICONTROL Trait Expression] 器的部分 **[中看到](../../features/traits/about-trait-builder.md)**。
+从未使用的信号创建特征时，您可以选择在特定时间段内回填特征实现。 [!DNL Audience Manager] 捕获符合新特征的受众的历史数据并将其存储在相应的配置文件中。 您可以在特 **[!UICONTROL Backfill Options]** 征构建 [!UICONTROL Trait Expression] 器的部分 **[中看到](../../features/traits/about-trait-builder.md)**。
 
 >[!NOTE]
 >
@@ -45,26 +45,26 @@ When you create traits from unused signals, you can choose to backfill the trait
 
 创建完特征后，您将看到其回填的实现包含在实现统计信息中。
 
-Watch the video below for a video walkthrough of how to backfill traits.
+观看以下视频，了解如何回填特征的视频演练。
 
-[!VIDEO](https://video.tv.adobe.com/v/25169/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25169/?captions=chi_hans)
 
-## Trait Backfilling Latency {#trait-backfilling-latency}
+## 特征回填延迟 {#trait-backfilling-latency}
 
-Newly created traits start capturing audiences two to three hours after creation. However, due to the large volume of data that  performs on a daily basis, the backfilled population is not immediately reflected in the  and  graphs.[!DNL Audience Manager][!UICONTROL Unique Trait Realizations][!UICONTROL Total Trait Population]
+新创建的特征在创建后两到三小时内开始捕获受众。 但是，由于每天执行的数据量 [!DNL Audience Manager] 很大，回填的人口不会立即反映在和图 [!UICONTROL Unique Trait Realizations] 中 [!UICONTROL Total Trait Population] 。
 
-Audience Manager updates the  with the backfilled population within 48 hours from trait creation.[!UICONTROL Trait Graph]
+Audience manager在特征创 [!UICONTROL Trait Graph] 建后的48小时内用回填人口进行更新。
 
-## Trait Backfilling Limit {#trait-backfilling-limit}
+## 特征回填限制 {#trait-backfilling-limit}
 
-[!UICONTROL Data Explorer] allows you to backfill up to 50 traits per month, with the backfill counter being reset on the 1 day of each month.
+[!UICONTROL Data Explorer] 允许您每月回填最多50个特征，每月的1天将重置回填计数器。
 
 >[!NOTE]
 >
->Trait backfilling quota does not carry over from previous months. E.g., if you backfill 30 traits this month, the trait backfill quota for the next month is reset to 50, not 70.
+>特征回填配额不会结转前几个月。 例如，如果您在本月回填30个特征，则下个月的特征回填配额将重置为50而不是70。
 
 ## 对报告的影响 {#reporting-impact}
 
 回填的特征实现反映在和 [!UICONTROL Unique Trait Realizations] 度量 [!UICONTROL Total Trait Population] 中，将历史信 [!DNL Audience Manager] 号转换为特征实现。
 
-However, the , , and  are not updated retroactively with historical metrics backfilled before the trait creation date.[!UICONTROL Trait Graph][!UICONTROL General Reports][!UICONTROL Trend Reports]
+但是， [!UICONTROL Trait Graph]、和 [!UICONTROL General Reports]不会 [!UICONTROL Trend Reports] 使用在特征创建日期之前回填的历史度量进行追溯更新。
