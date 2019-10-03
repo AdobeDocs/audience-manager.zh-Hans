@@ -5,7 +5,7 @@ seo-title: 算法模型特征排除
 title: 算法模型特征排除
 uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
 translation-type: tm+mt
-source-git-commit: f324838a5649722545ff36faba92bf3a13c2e805
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -84,6 +84,10 @@ source-git-commit: f324838a5649722545ff36faba92bf3a13c2e805
   </tr>
  </tbody>
 </table>
+
+观看以下视频，了解如何以及为何从中排除特定特征 [!UICONTROL Look-Alike Model]。
+
+[!VIDEO](https://video.tv.adobe.com/v/25569/?captions=chi_hans)
 
 ## 相关链接
 
