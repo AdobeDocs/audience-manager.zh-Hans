@@ -5,7 +5,7 @@ seo-title: 工作流C —— 基于实名活动和离线数据的个性化
 solution: Audience Manager
 title: 工作流C —— 基于实名活动和离线数据的个性化
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
@@ -50,7 +50,7 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 观看以下视频，了解如何为创建数据源的视频教程 [!UICONTROL People-Based Destinations]。
 
-[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hans)
 
 ## 第2步——使用声明的ID通过实时HTTP调用将DPUUID与散列化的电子邮件地址匹配 {#match-email-addresses}
 
