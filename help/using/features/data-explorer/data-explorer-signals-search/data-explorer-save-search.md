@@ -5,7 +5,7 @@ seo-title: 保存搜索条件
 title: 保存搜索条件
 uuid: c17b26e0-f489-47c9-b41b-bf895ca9d8a5
 translation-type: tm+mt
-source-git-commit: 3d8f16725053ae29bdba8e4fcd144ff0b9b67880
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -29,3 +29,7 @@ source-git-commit: 3d8f16725053ae29bdba8e4fcd144ff0b9b67880
 1. 单击 **[!UICONTROL Save]**. 您可以在部分中看到保存的搜 [!UICONTROL Saved Search] 索，并在需要时使用它。
 
 ![保存的搜索](assets/saved-search.png)
+
+观看以下视频，了解如何保存信号搜索。
+
+[!VIDEO](https://video.tv.adobe.com/v/25147/?captions=chi_hans)
