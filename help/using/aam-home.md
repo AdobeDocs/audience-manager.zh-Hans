@@ -1,29 +1,29 @@
 ---
 description: 受众管理器为在线受众数据管理提供了行业顶尖的服务。我们的产品和服务为数字广告商和出版商提供了控制和利用其数据资产以促进销售取得成功所需的工具。
-seo-description: Audience Manager(AAM)的技术文档和自助服务。 AAM为在线受众数据管理提供行业领先的服务，并为数字广告商和出版商提供他们需要的工具来控制和利用其数据资产，从而帮助推动销售成功。
-seo-title: Adobe Audience manager产品技术文档
+seo-description: Technical documentation and self help for Audience Manager (AAM). AAM provides industry-leading services for online audience data management, and give digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
+seo-title: Adobe Audience Manager Product Technical Documentation
 solution: Audience Manager
-title: Audience manager产品文档
+title: Audience Manager Product Documentation
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: 78a0a0e461ea3a74d0dbb0370a841db274a6f9be
+source-git-commit: f73d4ea5802cec4829f69d495745aeabf1e87c1d
 
 ---
 
 
-# Audience manager产品文档 {#audience-manager-product-documentation}
+# Audience Manager Product Documentation {#audience-manager-product-documentation}
 
-本技术文档指南为Audience manager提供自助服务——这是一种用于在线受众数据管理的行业领先服务。 我们的产品和服务为数字广告商和出版商提供了控制和利用其数据资产以促进销售取得成功所需的工具。
+This technical documentation guide provides self help assistance for Audience Manager - an industry-leading service for online audience data management. 我们的产品和服务为数字广告商和出版商提供了控制和利用其数据资产以促进销售取得成功所需的工具。
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>新增项目和特色项目</b> </p> <p>了解Audience manager的最新功能：</p> <p> 
+   <td colname="col1"> <p> <b>新增项目和特色项目</b> </p> <p>Read about the latest Audience Manager features:</p> <p> 
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
+     <li><a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/overview/data-security-and-privacy/data-security.html#hsts">HTTP Strict-Transport-Security</a></li>
      <li><a href="features/destinations/people-based-destinations-overview.md">基于人员的目标</a> </li>
      <li><a href="features/destinations/twitter-tailored-audiences.md">将Twitter定制受众配置为基于设备的自助服务目标</a> </li>
      <li><a href="features/destinations/destinations-home.md">目标主页</a> </li>
-     <li><a href="features/administration/ip-obfuscation.md">IP 地址模糊处理</a> </li>
      </ul> </p> <p>另请参阅 <a href="docs-updates/docs-2019.md"> 2019文档更新</a>。 </p> 
      <p>如果您是Audience Manager的新手，请参阅我们的 <a href="reference/aam-glossary.md"> 词汇</a><a href= "reference/ids-in-aam.md">表和ID索引。</a></p>
      <br> 
