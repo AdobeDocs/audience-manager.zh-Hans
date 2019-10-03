@@ -4,7 +4,7 @@ seo-description: 搜索在特定时间段内接收的已用和未用信号。 �
 seo-title: 信号搜索
 title: 信号搜索
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
@@ -19,4 +19,4 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 * [筛选搜索结果](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-filter-results.md)
 * [保存搜索条件](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)
 
-[!VIDEO](https://video.tv.adobe.com/v/25148/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25148/?captions=chi_hans)
