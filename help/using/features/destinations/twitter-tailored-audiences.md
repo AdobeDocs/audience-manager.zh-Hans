@@ -1,33 +1,33 @@
 ---
-description: This article explains how to configure Twitter Tailored Audiences for both new and existing integrations.
-seo-description: This article explains how to configure Twitter Tailored Audiences for both new and existing integrations.
-seo-title: Configure Twitter Tailored Audiences as a Self-Service Device-Based Destination
+description: 本文介绍如何为新集成和现有集成配置Twitter定制受众。
+seo-description: 本文介绍如何为新集成和现有集成配置Twitter定制受众。
+seo-title: 将Twitter定制受众配置为基于设备的自助服务目标
 solution: Audience Manager
-title: Configure Twitter Tailored Audiences as a Self-Service Device-Based Destination
+title: 将Twitter定制受众配置为基于设备的自助服务目标
 translation-type: tm+mt
-source-git-commit: c6318921b49603015b4670a361ec85ffa29abb30
+source-git-commit: a267dab29a8d0e47a27a7db2a4288ae677a1180d
 
 ---
 
 
-# Configure  as a Self-Service Device-Based Destination [!DNL Twitter Tailored Audiences]{#configure-twitter}
+# 配置 [!DNL Twitter Tailored Audiences] 为基于自助服务设备的目标 {#configure-twitter}
 
-This article explains how to configure Twitter Tailored Audiences for both new and existing integrations.[](https://business.twitter.com/en/targeting/tailored-audiences.html)
+本文介绍如何为新集成和现 [有集成配置Twitter定制受众](https://business.twitter.com/en/targeting/tailored-audiences.html) 。
 
 ## 先决条件 {#prerequisites}
 
-Before you configure your  destination, make sure to review the following Twitter prerequisites that you need to meet.[!DNL Twitter Tailored Audiences]
+在配置目标 [!DNL Twitter Tailored Audiences] 之前，请确保查看您需要满足的以下Twitter先决条件。
 
-1. Your  account must be eligible for advertising. [!DNL Twitter Ads]New  accounts are not eligible for advertising in the first 2 weeks after creating them.[!DNL Twitter Ads]
-1. Your Twitter user account that you authorized access for in Audience Manager must have the Partner audience manager permission enabled.[](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels)
-1. If you are updating your existing Twitter integration to self-service administration, your Twitter user account must have the Ad manager permission enabled.[](#update-existing-twitter-integrations)[](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels)
-1. When creating the first  destination in your Audience Manager instance, please contact Adobe Consulting or Customer Care to enable the  ID synchronization (Data Source ID = 1123) for your account. [!DNL Twitter Tailored Audiences][!DNL Twitter]这是在Audience manager和之间正确同步所必需的 [!DNL Twitter]。
+1. 您的 [!DNL Twitter Ads] 帐户必须有资格获得广告。 新帐 [!DNL Twitter Ads] 户在创建后的头2周内没有资格获得广告。
+1. 您在Audience manager中授权访问的Twitter用户帐户必须启用“合 [作伙伴受众管理者](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) ”权限。
+1. 如果要将现 [有的Twitter集成更新到自助管理](#update-existing-twitter-integrations)，则您的Twitter用户帐户必须启用“广告管 [理者](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) ”权限。
+1. 在Audience manager实例中创 [!DNL Twitter Tailored Audiences] 建第一个目标时，请联系Adobe Consulting或客户关怀，为您的帐户启用 [!DNL Twitter] ID同步（数据源ID = 1123）。 这是在Audience manager和之间正确同步所必需的 [!DNL Twitter]。
 
 ## 添加新目 [!DNL Twitter Tailored Audiences] 标 {#add-new-twitter-destination}
 
 本节介绍在为配置新的基于设备的目标时需要遵循的步骤 [!DNL Twitter Tailored Audiences]。 此方案假定您没有通过Adobe顾问或客 [!DNL Twitter Tailored Audiences] 户关怀配置任何现有目标。
 
-### 步骤 1. Authenticate with  [!DNL Twitter Tailored Audiences]{#step1-authenticate-with-twitter}
+### 步骤 1. 验证方 [!DNL Twitter Tailored Audiences] 式 {#step1-authenticate-with-twitter}
 
 在添加基于设备的目标之前，您需要先将Audience manager与您的帐户关 [!DNL Twitter Tailored Audiences] 联。 下面介绍如何实现此操作：
 
@@ -38,7 +38,7 @@ Before you configure your  destination, make sure to review the following Twitte
 
 ### 步骤 2. 创建新的基于设备的目标 {#step2-create-new-destination}
 
-在将Audience manager与您的目标关联 [!DNL Twitter Tailored Audiences]后，您可以创建新的目标。 下面介绍如何实现此操作：
+在将Audience manager与您的Audience Manager关联 [!DNL Twitter Tailored Audiences]后，您可以创建新目标。 下面介绍如何实现此操作：
 
 >[!NOTE]
 >
@@ -54,32 +54,32 @@ Before you configure your  destination, make sure to review the following Twitte
 
 ## 将现有Twitter集成更新到自助管理 {#update-existing-twitter-integrations}
 
-为了改善用户体验并简化配置过程，我们将集成升级到自助服务模型，您可以在该模型中，通过Audience Manager UI自行执行配置。 [!DNL Twitter Tailored Audiences] This section describes the steps you need to take to update your existing Twitter integration.
+为了改善用户体验并简化配置过程，我们将集成升级到自助服务模型，您可以在该模型中，通过Audience Manager UI自行执行配置。 [!DNL Twitter Tailored Audiences] 本节介绍更新现有Twitter集成所需执行的步骤。
 
 >[!IMPORTANT]
 >
->以下所述步骤仅在您与Audience manager顾问或客户关怀部门 [!DNL Twitter Tailored Audiences]进行了现有集成时适用。 目标升级到自助服务模式的完整升级过程最长可能需要5个工作日。 同时，您的目标仍处于活动状态，Audience manager会继续向其发送受众。
-> See item number 3 in Prerequisites before migrating your  to the self-service model.[](#prerequisites)[!DNL Twitter Tailored Audiences]
+>以下所述步骤仅在您与Audience manager顾问或客户关怀部门 [!DNL Twitter Tailored Audiences]进行了现有集成时适用。
+> 在迁移到自助服务模 [型之前](#prerequisites) ，请参 [!DNL Twitter Tailored Audiences] 阅入门项目中的项目编号3。
 
-Follow the steps below to migrate your existing  destination to the self-service model.[!DNL Twitter Tailored Audiences]
+请按照以下步骤将现有目 [!DNL Twitter Tailored Audiences] 标迁移到自助服务模式。
 
-1. Log in to your Audience Manager account and go to .**[!DNL Administration > Integrated Accounts]**
-1. 单击 **[!DNL Add Account]**.
-1. 选择 [!DNL Twitter Tailored Audiences] 并单击 **[!DNL Confirm]** 以重定向到身份验证页面。 ![integrated-platforms](assets/dbd-integrated-platforms.png)
-1. 使用帐户进行身份验证后， [!DNL Twitter] 您将被重定向到Audience Manager，您应在该处查看关联的广告商帐户。 Select the advertiser account that you want to use and click .**[!DNL Confirm]**
-1. Go to  &gt;  and click the Twitter destination that you need to configure.**[!UICONTROL Audience Data]****[!UICONTROL Destinations]**
-1. 单击 **[!UICONTROL Edit]**. In the  section, click the  drop-down menu and select the  account that you have authenticated with at Step 4.**[!UICONTROL Basic Information]****[!UICONTROL Integrated Account]**[!DNL Twitter]
-1. **[!UICONTROL Save]** 目标。
+1. 登录您的Audience manager帐户并转到 **[!DNL Administration > Integrated Accounts]**。
+2. 单击 **[!DNL Add Account]**.
+3. 选择 [!DNL Twitter Tailored Audiences] 并单击 **[!DNL Confirm]** 以重定向到身份验证页面。 ![集成平台](assets/dbd-integrated-platforms.png)
+4. 使用帐户进行身份验证后， [!DNL Twitter] 您将被重定向到Audience Manager，您应在该处查看关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!DNL Confirm]**。
+5. 转到 **[!UICONTROL Audience Data]** &gt;, **[!UICONTROL Destinations]** 然后单击您需要配置的Twitter目标。
+6. 单击 **[!UICONTROL Edit]**. 在部 **[!UICONTROL Basic Information]** 分中，单击下拉菜 **[!UICONTROL Integrated Account]** 单，然后选择您在步 [!DNL Twitter] 骤4中通过身份验证的帐户。
+7. **[!UICONTROL Save]** 目标。
 
-## Validating the Migration to Self-Service Administration {#migration-validation}
+<!-- ## Validating the Migration to Self-Service Administration {#migration-validation}
 
-The complete migration of existing  integrations to self-service administration can take up to 7 days. [!DNL Twitter]Once the migration is complete, Audience Manager shows you a notification in the UI.
+The complete migration of existing [!DNL Twitter] integrations to self-service administration can take up to 7 days. Once the migration is complete, Audience Manager shows you a notification in the UI.
 
-You will also see a new set of audiences in your  account, with their names prefixed by []. [!DNL Twitter][!DNL Adobe DMP Audience]Please allow up to 7 days for the audience population to be completely backfilled. Once the migration is complete, you should use these new audiences instead of the old ones.
+You will also see a new set of audiences in your [!DNL Twitter] account, with their names prefixed by [[!DNL Adobe DMP Audience]]. Please allow up to 7 days for the audience population to be completely backfilled. Once the migration is complete, you should use these new audiences instead of the old ones. -->
 
 ## 区段映射注意事项 {#segment-mapping-considerations}
 
-When mapping audience segments to Twitter, make sure to meet the following segment naming requirements:
+将受众细分映射到Twitter时，请确保满足以下细分命名要求：
 
 * 提供可读的段映射名称。 我们建议使用您用于Audience manager区段的相同名称。
 * 请勿在区段和区段映射名称中使用逗号。
