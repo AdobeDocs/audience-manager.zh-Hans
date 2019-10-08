@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 通过像素调用捕获营销活动展示数据
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: 7f71a099157e81c8d17cf018a4c84a69e2205bb4
+source-git-commit: f072c5328ac75bf3376f80e86418d25d4f10df23
 
 ---
 
@@ -27,9 +27,9 @@ source-git-commit: 7f71a099157e81c8d17cf018a4c84a69e2205bb4
 
 事件调用由使用以下语法的键值对组成：
 
-<pre>
-http://clientname.demdex.net/event?d_event=imp&amp;d_src=datasource_id&amp;d_site=siteID&amp;d_creative=<i>creative_id</i>&amp;d_adgroup=<i>adgroup_id</i>&amp;d_placement=<i>placement_id</i>&amp;d_campaign<i></i>_id=campaign_idCampaign[&amp;d_cid=GAID|IDFA)%01 DPUUID]&amp;d_bust=缓存值
-</pre>
+```
+http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID&d_creative=<i>creative_id</i>&d_adgroup=<i>adgroup_id</i>&d_placement=<i>placement_id</i>&d_campaign=<i>campaign_id</i>[&d_cid=(GAID|IDFA)%01 DPUUID]&d_bust=cache buster value
+```
 
 在键值对中，值变量是广告服务器插入的ID或宏。 加载广告标签时，该标 `%macro%` 签将被所需的相应值替换。 此调用不返回响应。
 
