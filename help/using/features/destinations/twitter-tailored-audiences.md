@@ -5,7 +5,7 @@ seo-title: 将Twitter定制受众配置为基于设备的自助服务目标
 solution: Audience Manager
 title: 将Twitter定制受众配置为基于设备的自助服务目标
 translation-type: tm+mt
-source-git-commit: a267dab29a8d0e47a27a7db2a4288ae677a1180d
+source-git-commit: 7966cac59b982b5f36af6975607df64545b74058
 
 ---
 
@@ -32,9 +32,9 @@ source-git-commit: a267dab29a8d0e47a27a7db2a4288ae677a1180d
 在添加基于设备的目标之前，您需要先将Audience manager与您的帐户关 [!DNL Twitter Tailored Audiences] 联。 下面介绍如何实现此操作：
 
 1. 登录您的Audience manager帐户并转到 **[!DNL Administration > Integrated Accounts]**。 如果您之前已配置与目标平台的集成，则应在本页中列出该集成。 否则，页面为空。
-2. 单击 **[!DNL Add Account]**.
-3. 选择 [!DNL Twitter Tailored Audiences] 并单击 **[!DNL Confirm]** 以重定向到身份验证页面。                     ![集成平台](assets/dbd-integrated-platforms.png)
-4. 通过身份验证后，您将被重定向到Audience Manager，您应在该处查看关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!DNL Confirm]**。
+1. 单击 **[!DNL Add Account]**.
+1. 选择 [!DNL Twitter Tailored Audiences] 并单击 **[!DNL Confirm]** 以重定向到身份验证页面。                     ![集成平台](assets/dbd-integrated-platforms.png)
+1. 通过身份验证后，您将被重定向到Audience Manager，您应在该处查看关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!DNL Confirm]**。
 
 ### 步骤 2. 创建新的基于设备的目标 {#step2-create-new-destination}
 
@@ -45,12 +45,12 @@ source-git-commit: a267dab29a8d0e47a27a7db2a4288ae677a1180d
 >无法更改现有基于设备的目标的名称。 确保提供有助于正确识别目标的名称。
 
 1. 登录您的Audience manager帐户，转到并 **[!DNL Audience Data > Destinations]**&#x200B;单击 **[!DNL Create Destination]**。
-2. 在部 **[!DNL Basic Information]** 分中，输入 **[!DNL Name]** 和 **[!DNL Description]** 作为新目标，然后使用以下设置：设 ![置](assets/dbd-new-basic.png)
-3. 单击 **[!DNL Next]**.
-4. 选择要 [为此目标设置的](/help/using/features/data-export-controls.md#controls-labels) “数据导出标签”。
-5. 单击 **[!DNL Save]**.
-6. 在部 **[!DNL Segment Mappings]** 分中，选择要发送到此目标的受众细分。
-7. 保存目标。
+1. 在部 **[!DNL Basic Information]** 分中，输入 **[!DNL Name]** 和 **[!DNL Description]** 作为新目标，然后使用以下设置：设 ![置](assets/dbd-new-basic.png)
+1. 单击 **[!DNL Next]**.
+1. 选择要 [为此目标设置的](/help/using/features/data-export-controls.md#controls-labels) “数据导出标签”。
+1. 单击 **[!DNL Save]**.
+1. 在部 **[!DNL Segment Mappings]** 分中，选择要发送到此目标的受众细分。
+1. 保存目标。
 
 ## 将现有Twitter集成更新到自助管理 {#update-existing-twitter-integrations}
 
@@ -64,12 +64,12 @@ source-git-commit: a267dab29a8d0e47a27a7db2a4288ae677a1180d
 请按照以下步骤将现有目 [!DNL Twitter Tailored Audiences] 标迁移到自助服务模式。
 
 1. 登录您的Audience manager帐户并转到 **[!DNL Administration > Integrated Accounts]**。
-2. 单击 **[!DNL Add Account]**.
-3. 选择 [!DNL Twitter Tailored Audiences] 并单击 **[!DNL Confirm]** 以重定向到身份验证页面。 ![集成平台](assets/dbd-integrated-platforms.png)
-4. 使用帐户进行身份验证后， [!DNL Twitter] 您将被重定向到Audience Manager，您应在该处查看关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!DNL Confirm]**。
-5. 转到 **[!UICONTROL Audience Data]** &gt;, **[!UICONTROL Destinations]** 然后单击您需要配置的Twitter目标。
-6. 单击 **[!UICONTROL Edit]**. 在部 **[!UICONTROL Basic Information]** 分中，单击下拉菜 **[!UICONTROL Integrated Account]** 单，然后选择您在步 [!DNL Twitter] 骤4中通过身份验证的帐户。
-7. **[!UICONTROL Save]** 目标。
+1. 单击 **[!DNL Add Account]**.
+1. 选择 [!DNL Twitter Tailored Audiences] 并单击 **[!DNL Confirm]** 以重定向到身份验证页面。 ![集成平台](assets/dbd-integrated-platforms.png)
+1. 使用帐户进行身份验证后， [!DNL Twitter] 您将被重定向到Audience Manager，您应在该处查看关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!DNL Confirm]**。
+1. 转到 **[!UICONTROL Audience Data]** &gt;, **[!UICONTROL Destinations]** 然后单击您需要配置的Twitter目标。
+1. 单击 **[!UICONTROL Edit]**. 在部 **[!UICONTROL Basic Information]** 分中，单击下拉菜 **[!UICONTROL Integrated Account]** 单，然后选择您在步 [!DNL Twitter] 骤4中通过身份验证的帐户。
+1. **[!UICONTROL Save]** 目标。
 
 <!-- ## Validating the Migration to Self-Service Administration {#migration-validation}
 
