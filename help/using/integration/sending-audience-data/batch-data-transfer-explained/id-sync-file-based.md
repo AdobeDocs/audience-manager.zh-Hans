@@ -1,31 +1,31 @@
 ---
-description: 介绍用于基于文件的ID同步的必填字段、语法和命名约定。 Name and organize your file contents according to these specifications.
-seo-description: Describes the required fields, syntax, and naming conventions used for file-based ID synchronization. Name and organize your file contents according to these specifications.
+description: 介绍用于基于文件的ID同步的必填字段、语法和命名约定。 根据这些规范命名和组织文件内容。
+seo-description: 介绍用于基于文件的ID同步的必填字段、语法和命名约定。 根据这些规范命名和组织文件内容。
 seo-title: ID 同步文件的名称和内容要求
 solution: Audience Manager
 title: ID 同步文件的名称和内容要求
 uuid: bfe42af9-9149-4da3-830e-f227c4e610c2
 translation-type: tm+mt
-source-git-commit: 4bc3d7c0a34619e556f58b39b7812a5612050f7f
+source-git-commit: 84c860ca918ae7daf2a5225716fd7db7143089d9
 
 ---
 
 
 # ID 同步文件的名称和内容要求 {#name-and-content-requirements-for-id-synchronization-files}
 
-Describes the required fields, syntax, and naming conventions used for file-based ID synchronization. Name and organize your file contents according to these specifications.
+介绍用于基于文件的ID同步的必填字段、语法和命名约定。 根据这些规范命名和组织文件内容。
 
 >[!NOTE]
 >
->文本样式（`monospaced text`、*斜体*、括号 `[ ]` `( )` 等）in this document indicate code elements and options. 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
+>文本样式（`monospaced text`、*斜体*、括号 `[ ]` `( )` 等）在本文档中指示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
 
-## File Name Syntax and Examples {#file-name-syntax}
+## 文件名语法和示例 {#file-name-syntax}
 
 <!-- c_file_based_id_sync.xml -->
 
-ID file names contain the following required and optional elements:
+ID文件名包含以下必需和可选元素：
 
-*`[adobe_id_]`* _DPID_DPID.gz *`[c2c_id_]`*`MASTERDPID_DPID`*[]*`_TIMESTAMP.sync`*`[.SPLIT_NUMBER]`*[]
+*`[adobe_id_]`* *`[c2c_id_]`*`MASTERDPID_DPID`*`[_DPID]`*`_TIMESTAMP.sync`*`[.SPLIT_NUMBER]`*`[.gz]`
 
 <table id="table_727A465D7C38419CA0750EF32DEDA2FD"> 
  <thead> 
@@ -37,11 +37,11 @@ ID file names contain the following required and optional elements:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> adobe_id</code> </p> </td> 
-   <td colname="col2"> <p>A static prefix that identifies the file as an ID synchronization file. 将设备ID与其他设备ID或客户ID(DPUUID)匹配时，请使用此前缀。  </p> </td> 
+   <td colname="col2"> <p>将文件标识为ID同步文件的静态前缀。 将设备ID与其他设备ID或客户ID(DPUUID)匹配时，请使用此前缀。  </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> c2c_id</code> </p> </td> 
-   <td colname="col2"> <p>A static prefix that identifies the file as an ID synchronization file for People-Based Destinations. Use this prefix when matching customer IDs (DPUUIDs) to hashed email addresses for People-Based Destinations.  </p> </td> 
+   <td colname="col2"> <p>将文件标识为基于人员的目标的ID同步文件的静态前缀。 将客户ID(DPUUID)与基于人员的目标的哈希电子邮件地址相匹配时，请使用此前缀。  </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><code><i>MASTERDPID</i></code> </td> 
@@ -72,7 +72,7 @@ ID file names contain the following required and optional elements:
 
 ### 文件名示例
 
-The following examples show properly formatted files names. 您的文件名可能看起来类似。
+以下示例显示格式正确的文件名。 您的文件名可能看起来类似。
 
 <ul class="simplelist"> 
  <li> <code> adobe_id_111_222_333_444_145442149.sync</code> </li> 
@@ -84,13 +84,13 @@ The following examples show properly formatted files names. 您的文件名可�
 >[!NOTE]
 > 有关基于人员的目标的ID同步文件命名（c2c前缀），请参阅 [A —— 基于所有在线活动和脱机数据组合的个性化](../../../features/destinations/people-based-destinations-workflow-combined.md) ，或 [B —— 基于仅脱机数据的个性化](../../../features/destinations/people-based-destinations-workflow-offline.md)。
 
-## File Content Syntax and Examples {#file-content-syntax}
+## 文件内容语法和示例 {#file-content-syntax}
 
-The contents of an ID file include the following elements:
+ID文件的内容包括以下元素：
 
 *`UUID`* `<tab>`*`UUID`* `<tab>`*`UUID`*`<tab>` *`UUID`*
 
-The file contains user IDs (). [!DNL UUID]In each row, separate the IDs with a tab. The following example shows a properly formatted ID file. Your contents could look similar.
+文件包含用户ID([!DNL UUID])。 在每行中，用选项卡分隔ID。 以下示例展示了格式正确的ID文件。 您的内容可能看起来类似。
 
 ```
 abc123 def456 ghi789 xyz987
@@ -98,7 +98,7 @@ abc123 def456 ghi789 xyz987
 
 ## 同步将DPUUID与UUID匹配 {#sync-matches-dpuuids-uuids}
 
-The purpose of an ID sync file is to sync the DPUUIDs from your own Data Sources with  UUIDs. [](../../../reference/ids-in-aam.md)[!DNL Audience Manager]Synchronization maps the s from the master  and its related s to the  s. Where you put the IDs in the file name and body determines how these identifiers are mapped to each other. [!DNL DPUUID][!DNL DPID][!DNL DPID][!DNL Audience Manager][!DNL UUID]例如，请取下此处显示的两个范例文件：
+ID同步文件的目的是将您自己数据源 [的DPUUID](../../../reference/ids-in-aam.md) 与UUID同 [!DNL Audience Manager] 步。 同步将主 [!DNL DPUUID]站点及其相 [!DNL DPID] 关站点的 [!DNL DPID]s映射到 [!DNL Audience Manager][!DNL UUID]s。将ID放入文件名和正文的位置决定了这些标识符如何相互映射。 例如，请取下此处显示的两个范例文件：
 
 * **** 文件1: `adobe_id_0_12345_1476312152.sync`
 
@@ -106,7 +106,7 @@ The purpose of an ID sync file is to sync the DPUUIDs from your own Data Sources
 
 <br/>
 
-Given the sample name and contents, the IDs map together like this:
+给定示例名称和内容，ID会一起映射，如下所示：
 
 **文件1** (下 [载示例文件](assets/adobe_id_0_12345_1476312152.sync))
 
@@ -131,7 +131,7 @@ Given the sample name and contents, the IDs map together like this:
 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M | 2351382994 |
 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw | 4601584763 |
 
-第2步：来 [!DNL DPUUID]自12345 [!DNL DPID] 的URL已在步骤1中与Audience manager同 [!DNL UUID]步。此ID同步的作用是将67890 [!DNL DPUUID]中的 [!DNL DPID] s与步骤1中的Audience Manager [!DNL UUID]同步。
+第2步：来 [!DNL DPUUID]自12345 [!DNL DPID] 的URL已在步骤1中与Audience manager同 [!DNL UUID]步。此ID同步的作用是将 [!DNL DPUUID]67890的 [!DNL DPID] s与步骤1中的Audience Manager [!DNL UUID]同步。
 
 <br/>
 
