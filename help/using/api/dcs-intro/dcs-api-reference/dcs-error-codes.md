@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DCS 错误代码、消息和示例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 8478a28cd1b18d878d6938d77ee4f975deb524ef
 
 ---
 
@@ -35,13 +35,13 @@ In the tables below, *italics* represents a variable placeholder.
   </tr> 
   <tr> 
    <td colname="col1"> <p>1 </p> </td> 
-   <td colname="col2"> <p>找不到主机名的配置：主 <code><i>机名</i></code> </p> </td> 
+   <td colname="col2"> <p>找不到主机名的配置： <code><i>hostname</i></code> </p> </td> 
    <td colname="col3"> <p>我们的合作伙伴供应团队尚未设置请求中发送的主机名。 如果您看到此错误消息，请与Adobe代表联系。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
-   <td colname="col2"> <p>无效 <code> 的d_orgid值</code> （找不到此组织ID的配置）: <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>组织ID不正确。 </p> <p>检查您的ID并再次尝试请求。 如果您不知道或没有组织ID，请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html" format="https" scope="external"> Experience Cloud Administration中的“管理页面”部分</a> ，了解如何查找它。 </p> </td> 
+   <td colname="col2"> <p>无效 <code> d_orgid</code> 的值（找不到此组织ID的配置）: <code><i>ID</i></code> </p> </td> 
+   <td colname="col3"> <p>组织ID不正确。 </p> <p>检查您的ID并再次尝试请求。 如果您不知道或没有组织ID，请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html" format="https" scope="external"> Experience Cloud Administration中的“管理页面”部分</a> ，以了解如何查找它。 </p> </td> 
   </tr>
  </tbody>
 </table>
@@ -64,18 +64,23 @@ In the tables below, *italics* represents a variable placeholder.
   </tr> 
   <tr> 
    <td colname="col1"> <p>101 </p> </td> 
-   <td colname="col2"> <p>在 <code><i>ID中传递的Experience Cloud ID无效</i></code> </p> </td> 
-   <td colname="col3"> <p>DCS调 <span class="wintitle"> 用包含无</span> 效的Experience Cloud <span class="keyword"></span> ID。 </p> <p>检查 <code> 标题字符串中的d_mid=</code> key-value对。 确保您正在传递正确的 <span class="keyword"> Experience Cloud</span> ID，然后重试请求。 </p> </td> 
+   <td colname="col2"> <p>传入的Experience Cloud ID无效 <code><i>ID</i></code> </p> </td> 
+   <td colname="col3"> <p>DCS调 <span class="wintitle"> 用包含无</span> 效的Experience Cloud <span class="keyword"></span> ID。 </p> <p>检查 <code> d_mid=</code> 标题字符串中的键值对。 确保您正在传递正确的 <span class="keyword"> Experience Cloud</span> ID，然后重试请求。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>102 </p> </td> 
-   <td colname="col2"> <p>请求 <code><i>ID中传递的aam ID无效</i></code> </p> </td> 
-   <td colname="col3"> <p>DCS调 <span class="wintitle"> 用包含无</span> 效的Audience Manager <span class="keyword"></span> ID。 </p> <p>检查 <code> 标题字符串中的d_uuid=</code> key-value对。 确保您传入了正确的 <span class="keyword"> Audience Manager</span> ID，然后再次尝试请求。 </p> </td> 
+   <td colname="col2"> <p>请求中传递的aam ID无效 <code><i>ID</i></code> </p> </td> 
+   <td colname="col3"> <p>DCS调 <span class="wintitle"> 用包含无</span> 效的Audience Manager <span class="keyword"></span> ID。 </p> <p>检查 <code> d_uuid=</code> 标题字符串中的键值对。 确保您传入了正确的 <span class="keyword"> Audience Manager</span> ID，然后再次尝试请求。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>104 </p> </td> 
    <td colname="col2"> <p>所有客户ID无效 </p> </td> 
    <td colname="col3"> <p>您的电话联系中的所有客户ID都无效。 检查您的ID，然后重试。 </p> </td> 
+  </tr>
+    <tr> 
+   <td colname="col1"> <p>109</p> </td> 
+   <td colname="col2"> <p>合作 <code>HTTP referer</code> 伙伴不允许引用 <code>Partner ID</code> </p> </td> 
+   <td colname="col3"> <p>调用中的合作伙伴ID不允许调用上的[!DNL HTTP Referer]头。 检查[!DNL HTTP referer]头是否正确。</p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>111 </p> </td> 
@@ -98,7 +103,7 @@ In the tables below, *italics* represents a variable placeholder.
  <tbody> 
   <tr> 
    <td colname="col1"> <p>171 </p> </td> 
-   <td colname="col2"> <p>遇到id <code><i>ID的退出标记</i></code> </p> </td> 
+   <td colname="col2"> <p>遇到ID的退出标记 <code><i>ID</i></code> </p> </td> 
    <td colname="col3"> <p>客户已选择不接收基于兴趣的广告。 </p> </td> 
   </tr> 
   <tr> 
@@ -169,7 +174,7 @@ In the tables below, *italics* represents a variable placeholder.
   </tr> 
   <tr> 
    <td colname="col1"> <p>205 </p> </td> 
-   <td colname="col2"> <p>无法执行从 <code><i>ID到</i></code><code><i>ID的迁移</i></code>，因为读取ID的配置文件失败 <code><i>。</i></code> </p> </td>
+   <td colname="col2"> <p>无法执行从迁移到迁 <code><i>ID</i></code> 移， <code><i>ID</i></code>因为 <code><i>ID</i></code> </p> </td>
    <td colname="col3"> <p>如果您收到此错误，我们可能会遇到数据存储(<span class="wintitle"> PCS</span>)的可伸缩性问题。 如果问题仍然存在，请与Adobe代表联系。 </p> </td> 
   </tr> 
  </tbody> 
@@ -193,7 +198,7 @@ In the tables below, *italics* represents a variable placeholder.
   </tr> 
   <tr> 
    <td colname="col1"> <p>301 </p> </td> 
-   <td colname="col2"> <p>超出客户ID的最大数量。 允许的最大 <code><i>值为最大</i></code>。 “找到”是“ <code><i>最大找到</i></code>”。</p> </td> 
+   <td colname="col2"> <p>超出客户ID的最大数量。 允许的最大 <code><i>maximum allowed</i></code>值。 找到 <code><i>maximum found</i></code>。</p> </td> 
    <td colname="col3"> <p>与跨设备数据源关联的客户ID数量超过每个请求允许的跨设备ID数量。 这些ID包括跨设备、移动或Cookie ID。 该限制当前设置为10。 </p> </td>
   </tr> 
   <tr> 
@@ -218,23 +223,23 @@ In the tables below, *italics* represents a variable placeholder.
   </tr>
   <tr> 
    <td colname="col1"> <p>307 </p> </td> 
-   <td colname="col2"> <p>阻止 <code><i>ID的配置文件操作</i></code> </p> </td> 
+   <td colname="col2"> <p>阻止的配置文件操作 <code><i>ID</i></code> </p> </td> 
    <td colname="col3"> <p>由于ID已被识别为恶意ID并且已列入黑名单，因此读／写操作已被阻止。 请参阅错误代码306。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>309 </p> </td> 
-   <td colname="col2"> <p>客户ID <code><i>ID被丢弃</i></code> ，因为它超出了每个请求声明的客户ID的限制 </p> </td> 
+   <td colname="col2"> <p>客户ID <code><i>ID</i></code> 被丢弃，因为它超出了每个请求声明的客户ID的限制 </p> </td> 
    <td colname="col3"> <p>与错误301相关。 此错误指定了因超出限制而放弃的客户ID。 </p> <p>例如，如果在 <span class="wintitle"> DCS调用中声明了12个客户ID</span> ，其中两个将被丢弃。 为了传递被丢弃的客户ID，此错误将在响应中显示两次（对于每个被丢弃的客户ID显示一次）。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>310 </p> </td> 
-   <td colname="col2"> <p>客户ID已被放弃，因为它超出了给定命名空间的限制。 命名空间ID <code><i>为ID</i></code>，客户ID为 <code><i>ID</i></code>。 </p> </td> 
-   <td colname="col3"> <p>如果在DCS调用中为同一命名空间(<code> DPID</code>)声明的客户ID超过3个，则返回此 <span class="wintitle"> 错误代码</span> 。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>在此示例 <span class="wintitle"> DCS请求中</span> ，有4个ID声明用于同一命名空间（集成代码为1）。 其中一个ID被丢弃，并返回错误310。 </p> </td> 
+   <td colname="col2"> <p>客户ID已被放弃，因为它超出了给定命名空间的限制。 命名空间id <code><i>ID</i></code>为，客户id为 <code><i>ID</i></code>。 </p> </td> 
+   <td colname="col3"> <p>如果在DCS调用中为同一命名空间(<code> DPID</code>)声明的客户ID超过3个，则返回 <span class="wintitle"> 此错误代码</span> 。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>在此示例 <span class="wintitle"> DCS请求中</span> ，有4个ID声明用于同一命名空间（集成代码为1）。 其中一个ID被丢弃，并返回错误310。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>311 </p> </td> 
    <td colname="col2"> <p>请求包含无效参数 </p> </td> 
-   <td colname="col3"> <p>当至少一个 <span class="wintitle"> URL参数未正确编码时</span> ,DCS将返回此错误代码。 在这种情况下， <span class="wintitle"> DCS</span> 会忽略整个请求。 </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%esid!&amp;d_creative=%ecid!&amp;d_adgroup=%eaid!&amp;d_placement=%epid!&amp;d_campaign=%ebuy!&amp;d_adsrc=48123</code> </p> <p>在上述示例请求中， <code> %</code> sequence的编码不正确。 因此， <span class="wintitle"> DCS</span> 将忽略它。 </p> <p>正确编码的范例应如下： </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%25esid!&amp;d_creative=%25ecid!&amp;d_adgroup=%25eaid!&amp;d_placement=%25epid!&amp;d_campaign=%25ebuy!&amp;d_adsrc=48123</code> </p> </td> 
+   <td colname="col3"> <p>当至少一个 <span class="wintitle"> URL参数未正确编码时</span> ,DCS将返回此错误代码。 在这种情况下， <span class="wintitle"> DCS</span> 会忽略整个请求。 </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%esid!&amp;d_creative=%ecid!&amp;d_adgroup=%eaid!&amp;d_placement=%epid!&amp;d_campaign=%ebuy!&amp;d_adsrc=48123</code> </p> <p>在上述示例请求中，序列 <code> %</code> 的编码不正确。 因此， <span class="wintitle"> DCS</span> 将忽略它。 </p> <p>正确编码的范例应如下： </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%25esid!&amp;d_creative=%25ecid!&amp;d_adgroup=%25eaid!&amp;d_placement=%25epid!&amp;d_campaign=%25ebuy!&amp;d_adsrc=48123</code> </p> </td> 
   </tr>
   <tr> 
    <td colname="col1"> <p>312 </p> </td> 
