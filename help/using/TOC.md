@@ -4,7 +4,7 @@ audience: 最终用户
 user-guide-title: Audience manager用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: b00a5570dd1d21474fef2295937fc379565f71ba
+source-git-commit: 3c68d2e04bf35763aa44edff01fd43a8c412ce1f
 
 ---
 
@@ -186,7 +186,6 @@ source-git-commit: b00a5570dd1d21474fef2295937fc379565f71ba
          + [元数据文件的命名约定](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)
          + [元数据文件的内容格式](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md)
          + [元数据文件的交付方法](reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)
-         + [元数据文件的状态更新](reporting/audience-optimization-reports/metadata-files-intro/metadata-update-status.md)
       + [每日特征变化报告](reporting/audience-optimization-reports/daily-trait-variation-report.md)
    + 交互式和重叠报表 {#interactive-and-overlap-reports}
       + [交互式和重叠报告概述](reporting/dynamic-reports/dynamic-reports.md)
