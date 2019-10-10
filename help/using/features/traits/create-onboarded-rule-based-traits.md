@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 创建基于规则或已载入的特征
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
 translation-type: tm+mt
-source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
+source-git-commit: 9215942bd33af0eabf5143e52edcb249d4ca2cac
 
 ---
 
@@ -53,7 +53,7 @@ source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 数据源</span></b> </td> 
-   <td colname="col2"> 将特征与特定数据提供者关联。 必需. <p>使用第一个下拉菜单在Audience manager数据源和／或Adobe Analytics报表包之间进行筛选。 然后，使用第二个下拉菜单选择数据源。</p><p> 如果您没有任何Adobe Analytics报表包，则数据源类型选择器将被禁用，并且您只能看到Audience manager数据源。</p>  </td> 
+   <td colname="col2"> 将特征与特定数据提供者关联。 必需. <p>使用第一个下拉菜单在Audience manager数据源和／或Adobe Analytics报表包之间进行筛选。 然后，使用第二个下拉菜单选择数据源。</p><p> 如果您未使用Adobe Analytics报表包，数据源类型选择器将被禁用，并且仅默认给Audience manager数据源。</p>  </td> 
   </tr>
    <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 事件类型</span></b> </td> 
