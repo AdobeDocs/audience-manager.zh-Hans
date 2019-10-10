@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 创建基于规则或已载入的特征
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
 translation-type: tm+mt
-source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
+source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
 
 ---
 
@@ -23,6 +23,8 @@ source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
 在中， [!UICONTROL Trait Builder]通过 [!UICONTROL Basic Information] 这些设置可以创建新特征或编辑现有特征。 基 [!UICONTROL Basic Information] 于规则、已载入的和算法特征的设置相同。 要创建新特征，请提供名称（避免特殊字符）、数据源，然后选择存储文件夹。 其他 [!UICONTROL Basic Information] 字段为可选字段。
 
 <!-- c_tb_basics.xml -->
+
+![create-trait](assets/create-trait.png)
 
 ### 已定义的基本信息字段
 
@@ -50,12 +52,12 @@ source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
    <td colname="col2"> 用几个词来描述特质的目的或功能。 可选。 </td> 
   </tr> 
   <tr> 
+   <td colname="col1"> <b><span class="uicontrol"> 数据源</span></b> </td> 
+   <td colname="col2"> 将特征与特定数据提供者关联。 必需. <p>使用第一个下拉菜单在Audience manager数据源和／或Adobe Analytics报表包之间进行筛选。 然后，使用第二个下拉菜单选择数据源。</p><p> 如果您没有任何Adobe Analytics报表包，则数据源类型选择器将被禁用，并且您只能看到Audience manager数据源。</p>  </td> 
+  </tr>
+   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 事件类型</span></b> </td> 
    <td colname="col2"> 将特征分配给类型或类别，通常根据函数（例如，转化、网站访客、合作伙伴、页面查看等）。 可选。 <p> 要了解如何创建转化特征，请参阅Audience Manager <a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">中的创建转化特征视频</a>。 </p></td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> 数据源</span></b> </td> 
-   <td colname="col2"> 将特征与特定数据提供者关联。 必需. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 集成代码</span></b> </td> 
@@ -66,7 +68,7 @@ source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
    <td colname="col2"> 有关特征的一般说明。 可选。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> 存储在</span></b> </td> 
+   <td colname="col1"> <b><span class="uicontrol"> 存储位置</span></b> </td> 
    <td colname="col2"> 确定特征属于哪个存储文件夹。 必需. </td> 
   </tr> 
   <tr> 
