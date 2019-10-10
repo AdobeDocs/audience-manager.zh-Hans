@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 区段生成器
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0ae
 translation-type: tm+mt
-source-git-commit: 0d0806ef2c84b4770adc29d668351ac3f2d8cc5f
+source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
 
 ---
 
@@ -27,13 +27,15 @@ source-git-commit: 0d0806ef2c84b4770adc29d668351ac3f2d8cc5f
 
 [!UICONTROL Segment Builder] 由3个单独的部分组成： [!UICONTROL Basic Information]、 [!UICONTROL Traits]和 [!UICONTROL Destinations Mapping]。 要创建区段，请填写和部分中的必 [!UICONTROL Basic Information] 填字 [!UICONTROL Traits] 段。 [!UICONTROL Destinations Mapping] 设置是可选的。 请参阅下面的说明以获取更多帮助。
 
+![创建细分](assets/create-segment.png)
+
 1. 在“基 [本信息](../../features/segments/segment-builder.md#segment-builder-controls-basics) ”部分：
    * 命名区段。 区段名称的最大长度为255个字符。
    * 设置区段状态（默认为活动）。
-   * 选择数据源。
+   * 选择数据源。 使用第一个下拉菜单在Audience manager数据源和／或Adobe Analytics报表包之间进行筛选。 然后，使用第二个下拉菜单选择数据源。 如果您没有任何Adobe Analytics报表包，则数据源类型选择器将被禁用，并且您只能看到Audience manager数据源。
    * 选择用于区段资格的配置文件合并规则。
    * 将区段分配到存储文件夹。
-1. 在“特 [征](../../features/segments/segment-builder.md#segment-builder-controls-traits) ”部分：
+2. 在“特 [征](../../features/segments/segment-builder.md#segment-builder-controls-traits) ”部分：
    * 搜索要添加到区段的特征，然后单击 **[!UICONTROL Add Trait]**。 添加另一个特征以创建特征组。
    * 单击以调出“高级搜索”模式 **[!UICONTROL Browse All Traits]**。 按名称、ID、说明或数据源搜索特征。 在搜索时单击文件夹，将结果限制在该文件夹及其子文件夹中。 您还可以按特征类型筛选特征。
    * 在构建 [细分时获取实时](trait-recommendations.md) 特征推荐。
@@ -42,7 +44,7 @@ source-git-commit: 0d0806ef2c84b4770adc29d668351ac3f2d8cc5f
    * 将指针悬停在时钟图标上，可向 [特征添加近期和频率](../../features/segments/recency-and-frequency.md) 规则。
    * 在添加或删除特征时查看区段人口数据。 单击 **[!UICONTROL Calculate Estimates]** 查看（或刷新）估计的人口数。 在“区段生成 [器”中阅读有关区段](../../features/segments/segment-builder-data.md#segment-populations) 填充数据的更多信息。
    * Click **[!UICONTROL Save]** when done.
-1. *（可选）* “目标映射”部分中的区段映射 [到目标](../../features/segments/segment-builder.md#segment-builder-controls-destinations) :
+3. *（可选）* “目标映射”部分中的区段映射 [到目标](../../features/segments/segment-builder.md#segment-builder-controls-destinations) :
    * 搜索目标并单击 **[!UICONTROL Add Destination]**。 请注意，目标必须已存在，然后才能将其添加到区段。
    * Click **[!UICONTROL Save]** when done.
 
@@ -74,7 +76,7 @@ source-git-commit: 0d0806ef2c84b4770adc29d668351ac3f2d8cc5f
   </tr> 
   <tr> 
    <td colname="col1"> <b>数据源</b> </td> 
-   <td colname="col2"> <p>将区段与特定数据提供者关联。 </p> </td> 
+   <td colname="col2"> <p>将区段与特定数据提供者关联。 <p>使用第一个下拉菜单在Audience manager数据源和／或Adobe Analytics报表包之间进行筛选。 然后，使用第二个下拉菜单选择数据源。</p><p> 如果您没有任何Adobe Analytics报表包，则数据源类型选择器将被禁用，并且您只能看到Audience manager数据源。</p></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>个人资料合并规则</b> </td> 
