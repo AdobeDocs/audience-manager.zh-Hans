@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 区段生成器
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0ae
 translation-type: tm+mt
-source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
+source-git-commit: 9215942bd33af0eabf5143e52edcb249d4ca2cac
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
 1. 在“基 [本信息](../../features/segments/segment-builder.md#segment-builder-controls-basics) ”部分：
    * 命名区段。 区段名称的最大长度为255个字符。
    * 设置区段状态（默认为活动）。
-   * 选择数据源。 使用第一个下拉菜单在Audience manager数据源和／或Adobe Analytics报表包之间进行筛选。 然后，使用第二个下拉菜单选择数据源。 如果您没有任何Adobe Analytics报表包，则数据源类型选择器将被禁用，并且您只能看到Audience manager数据源。
+   * 选择数据源。 使用第一个下拉菜单在Audience manager数据源和／或Adobe Analytics报表包之间进行筛选。 然后，使用第二个下拉菜单选择数据源。 如果您未使用Adobe Analytics报表包，数据源类型选择器将被禁用，并且仅默认给Audience manager数据源。
    * 选择用于区段资格的配置文件合并规则。
    * 将区段分配到存储文件夹。
 2. 在“特 [征](../../features/segments/segment-builder.md#segment-builder-controls-traits) ”部分：
@@ -76,7 +76,7 @@ source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
   </tr> 
   <tr> 
    <td colname="col1"> <b>数据源</b> </td> 
-   <td colname="col2"> <p>将区段与特定数据提供者关联。 <p>使用第一个下拉菜单在Audience manager数据源和／或Adobe Analytics报表包之间进行筛选。 然后，使用第二个下拉菜单选择数据源。</p><p> 如果您没有任何Adobe Analytics报表包，则数据源类型选择器将被禁用，并且您只能看到Audience manager数据源。</p></p> </td> 
+   <td colname="col2"> <p>将区段与特定数据提供者关联。 <p>使用第一个下拉菜单在Audience manager数据源和／或Adobe Analytics报表包之间进行筛选。 然后，使用第二个下拉菜单选择数据源。</p><p> 如果您未使用Adobe Analytics报表包，数据源类型选择器将被禁用，并且仅默认给Audience manager数据源。</p></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>个人资料合并规则</b> </td> 
