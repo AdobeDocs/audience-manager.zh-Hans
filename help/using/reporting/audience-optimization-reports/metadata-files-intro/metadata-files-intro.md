@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 受众优化报告的数据和元数据文件
 uuid: 80aa4bc3-c660-4e65-8c22-2ddbb7bddd4f
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 1ff46970470eae4bc30760468013d994c976e549
 
 ---
 
@@ -24,8 +24,3 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 * [元数据文件的命名约定](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)
 * [元数据文件的内容格式](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md)
 * [元数据文件的交付方法](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)
-* [元数据文件的状态更新](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-update-status.md)
-
-
-
-
