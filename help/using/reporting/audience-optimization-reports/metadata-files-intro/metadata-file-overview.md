@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 元数据文件的概述和映射
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 1ff46970470eae4bc30760468013d994c976e549
 
 ---
 
@@ -59,11 +59,11 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
  <tbody> 
   <tr> 
    <td colname="col1"> <p>广告商 </p> </td> 
-   <td colname="col2"> <p> <code>d_adsrc =数 <i>据源ID或集成代码</i></code> </p> <p>这是广告商在创建数据源时提供的数据源ID或集成代码。 请参 <a href="../../../features/manage-datasources.md#create-data-source"> 阅创建数据源</a>。 </p> </td> 
+   <td colname="col2"> <p> <code>d_adsrc = <i>data source ID or integration code</i></code> </p> <p>这是广告商在创建数据源时提供的数据源ID或集成代码。 请参 <a href="../../../features/manage-datasources.md#create-data-source"> 阅创建数据源</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>业务部(BU) </p> </td> 
-   <td colname="col2"> <p> <code>d_bu =业 <i>务单元ID</i></code> </p> </td> 
+   <td colname="col2"> <p> <code>d_bu = <i>business unit ID</i></code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>促销活动 </p> </td> 
@@ -77,21 +77,21 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
    <td colname="col1"> <p>Exchange </p> </td> 
    <td colname="col2"> <p>接受2个不同的键值对： </p> 
     <ul id="ul_3B3B751A8A134096B0912E81A0983B9D"> 
-     <li id="li_57BAC45A7B274AB695945E174A4D8A35"> <code>d_exchange =为 <i>广告提供服务的交换的ID</i></code> </li> 
-     <li id="li_CCDF00DE59D3451C8EF590DD3E1A806D"> <code>d_site =上 <i>提供广告的站点的ID</i></code> </li> 
+     <li id="li_57BAC45A7B274AB695945E174A4D8A35"> <code>d_exchange = <i>ID for the exchange that served the ad</i></code> </li> 
+     <li id="li_CCDF00DE59D3451C8EF590DD3E1A806D"> <code>d_site = <i>ID for the site an ad served on</i></code> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>插入顺序(IO) </p> </td> 
-   <td colname="col2"> <p> <code>d_io =插 <i>入顺序ID</i></code> </p> </td> 
+   <td colname="col2"> <p> <code>d_io = <i>insertion order ID</i></code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>平台 </p> </td> 
-   <td colname="col2"> <p> <code>d_src =数 <i>据源ID</i></code> </p> <p>这是平台 <a href="../../../features/datasources-list-and-settings.md#data-sources-list-and-settings"> 的数据源</a> ID，该平台提供元数据信息（例如，DFA、Atlas、GBM、MediaMath等）。 </p> </td> 
+   <td colname="col2"> <p> <code>d_src = <i>data source ID</i></code> </p> <p>这是平台 <a href="../../../features/datasources-list-and-settings.md#data-sources-list-and-settings"> 的数据源</a> ID，该平台提供元数据信息（例如，DFA、Atlas、GBM、MediaMath等）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>策略 </p> </td> 
-   <td colname="col2"> <p> <code>d_tactic =策 <i>略ID</i></code> </p> </td> 
+   <td colname="col2"> <p> <code>d_tactic = <i>tactic ID</i></code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>垂直 </p> </td> 
@@ -134,7 +134,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ### 文件交付
 
-在为文件命名并添加数据后，您会将其发送到由提供的Amazon S3存储目录 [!DNL Audience Manager]。 请参 [阅元数据文件的传送方法](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md) ，以及元 [数据文件的状态更新](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-update-status.md)。
+在为文件命名并添加数据后，您会将其发送到由提供的Amazon S3存储目录 [!DNL Audience Manager]。 请参 [阅元数据文件的传送方法](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)。
 
 >[!MORE_LIKE_THIS]
 >
