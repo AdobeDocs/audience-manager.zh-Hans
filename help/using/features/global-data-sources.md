@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 全局数据源
 uuid: null
 translation-type: tm+mt
-source-git-commit: ad4721cd2ff1f4b2b7cb814cbafdef1f59138a26
+source-git-commit: 631111be50d8e1b2e8ec81a295ecda5ec3fd6fee
 
 ---
 
@@ -21,11 +21,12 @@ Global data sources are accessible by all Audience Manager customers and contain
 
 | 数据源ID | 描述 |
 |---|---|
-| 20914 | **Google Advertising ID** - **** GAID表示运行Android操作系统的设备。 |
-| 20915 | **Apple ID For Advertising** - **** IDFA表示运行iOS操作系统的设备。 |
-| 121963 | **Roku ID for Advertising** - **** RIDA代表Roku流设备。 |
-| 389146 | **Microsoft Advertising ID** - **** MAID代表运行Windows 10操作系统的设备。 |
-| 404660 | **Samsung** DUID代表Samsung智能电视。 |
+| 20914 | **Google Advertising ID** - **** GAID表示运行操作系统 [!DNL Android] 的设备。 |
+| 20915 | **Apple ID For Advertising** - **** IDFA表示运行操作系统 [!DNL iOS] 的设备。 |
+| 121963 | **Roku ID for Advertising** - **** RIDA代表 [!DNL Roku] 流设备。 |
+| 389146 | **Microsoft Advertising ID** - **** MAID表示运行操作系统 [!DNL Windows 10] 的设备。 |
+| 404660 | **Samsung** DUID代表智 [!DNL Samsung] 能电视。 |
+| 488258 | **Amazon Fire TV广告ID表**&#x200B;示运行的设备 [!DNL Amazon Fire OS] |
 
 ## 从全局数据源导入数据
 
