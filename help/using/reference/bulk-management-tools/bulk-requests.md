@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 批量请求
 uuid: 0192d26a-4cea-4e12-9fea-388b92b382f1
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: cb17d417aa6b3cc213e69c5d71051f235d81c2a5
 
 ---
 
@@ -32,10 +32,11 @@ t_bulk_requests.xml
 1. Click the **[!UICONTROL Request]** tab.
 2. 在工作表顶部的工具栏中，单击与要处理的数据对应的请求按钮。 您可以请求：
 
-   * 数据提供者ID
+   * 算法模型
+   * 数据源
    *  派生信号
    * 目标映射
-   * 基于规则和已载入特征
+   * 算法、基于规则和载入的特征
    * 区段
    * 特征和区段文件夹ID
    API [!DNL Audience Manager] 将批量数据写回工作 [!UICONTROL Request] 表。
