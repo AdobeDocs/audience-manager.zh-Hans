@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 批量管理工具疑难解答提示
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 translation-type: tm+mt
-source-git-commit: cb3819192c523f9c20e9a15ca5d43ef36c49e900
+source-git-commit: 6f13cefb2f56bbc2e0bfff9a6d31925001403c50
 
 ---
 
@@ -60,9 +60,13 @@ source-git-commit: cb3819192c523f9c20e9a15ca5d43ef36c49e900
     <ul id="ul_142E63CDD556414AB639E51734FEDBCF"> 
      <li id="li_DBB6C819603D46B5AECC9C854FDAFDF1">确保为选择操作设置了正确的标题集。 </li> 
      <li id="li_391C9031907A4085BDAD42054960045C">请确保您正在为复制的标题使用正确的工作表。 </li> 
-     <li id="li_76A7241989204933858621FAAB5C3408">检查要在批量操作中使用的数据的位置。 所有标题都从A列第1行开始。 所有数据都会进入相应的标题中，从A列第2行（紧挨着标题的下方）开始。 </li> 
+     <li id="li_76A7241989204933858621FAAB5C3408">检查要在批量操作中使用的数据的位置。 所有标题都从A列第1行开始。 所有数据都会进入相应的标题中，从A列第2行开始（紧挨着标题的下方）。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
+
+## 错误消息
+
+有时，在进行批量更改时，您会收到错误消息。 要解释错误消息，请参阅API [文档中的响应代码](/help/using/api/rest-api-main/aam-api-getting-started.md) （定义）。
 
