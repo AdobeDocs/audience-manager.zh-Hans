@@ -1,20 +1,20 @@
 ---
-description: 通过批量更新，您可以在单个操作中编辑多个区段、特征以及区段或特征文件夹元素。 按照以下说明进行批量更新。
+description: 通过批量更新，您可以在单个操作中编辑多个区段、特征、模型、数据源以及区段或特征文件夹元素。 按照以下说明进行批量更新。
 keywords: baam
-seo-description: 通过批量更新，您可以在单个操作中编辑多个区段、特征以及区段或特征文件夹元素。 按照以下说明进行批量更新。
+seo-description: 通过批量更新，您可以在单个操作中编辑多个区段、特征、模型、数据源以及区段或特征文件夹元素。 按照以下说明进行批量更新。
 seo-title: 批量更新
 solution: Audience Manager
 title: 批量更新
 uuid: 22f1badd-a274-4d3e-9957-a24bf8c1d0dc
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 30d4cec4502a2cf8b217816ea4ae62eb1b22f641
 
 ---
 
 
 # 批量更新{#bulk-updates}
 
-通过批量更新，您可以在单个操作中编辑多个区段、特征以及区段或特征文件夹元素。 按照以下说明进行批量更新。
+通过批量更新，您可以在单个操作中编辑多个区段、特征、模型、数据源以及区段或特征文件夹元素。 按照以下说明进行批量更新。
 
 <!-- 
 
