@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 配置文件合并规则和设备图常见问题解答
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ---
 
@@ -16,11 +16,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 常见配置文件合并规则和设备图形问题的解答。
 
-<!-- 
-
-profile-merge-faq.xml
-
- -->
+<!-- profile-merge-faq.xml -->
 
 ## 设备图形基础知识 {#device-graph-basics}
 
@@ -28,121 +24,105 @@ profile-merge-faq.xml
 
 设备图是一组ID映射，它定义了匿名设备组。 它基于从每个设备收集的信号中的公共元素将这些设备与个人或家庭相关联。 这些信号有助于识别个人或家庭级别的设备。
 
-<br> 
+ 
 
 **什么是外部设备图？**
 
-外部设备图表是指中的任何设备图 [!DNL Audience Manager] 表，该图表并非仅由您自己的跨设备数据源创建。 例如，当您创建配置文 [件合并规则](../features/profile-merge-rules/merge-rules-start.md) ，并选择设备图 [!UICONTROL Co-op Device Graph] 形选项或第三方设备图形选项时，您将使用外部设备图形。 请参阅 [设备选项](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
+外部设备图表是指中的任何设备图 [!DNL Audience Manager] 表，该图表并非仅由您自己的跨设备数据源创建。 例如，当您创建配置文 [件合并规则](merge-rules-start.md) ，并选择设备图 [!UICONTROL Co-op Device Graph] 形选项或第三方设备图形选项时，您将使用外部设备图形。 请参阅 [设备选项](merge-rule-definitions.md#device-options)。
 
-<br> 
+ 
 
 **在中使用外部设备图的一些常见用例是什么[!UICONTROL Profile Merge Rule]?**
 
-在设备图中使用设备图的主要目的 [!UICONTROL Profile Merge Rule] 是评估和确定属于单个人或家庭的特定区段的多个设备。 该细分本身可能具有多种用途，例如，通过DSP定位具有和由DSP提供广告的潜在受众，或通过现场个性化平台个性化客户的现场体验。 See [External Device Graph Use Cases](../features/profile-merge-rules/external-graph-use-cases.md).
+在设备图中使用设备图的主要目的 [!UICONTROL Profile Merge Rule] 是评估和确定属于单个人或家庭的特定区段的多个设备。 该细分本身可能具有多种用途，例如，通过DSP提供的广告定位潜在客户的受众或通过现场个性化平台个性化客户的现场体验。 See [External Device Graph Use Cases](external-graph-use-cases.md).
 
-<br> 
+ 
 
 **Audience manager是否为外部设备图形提供全局支持？**
 
 不会。外部设备图形仅在美国和加拿大可用。
 
-<br> 
+ 
 
 **更新外部设[!DNL Audience Manager]备图形数据的频率是多久？**
 
 每周一次。
 
-<br> 
+ 
 
 ## 设备图形和配置文件合并规则 {#device-graph-profile-merge-rules}
 
 **如何使[!DNL Audience Manager]用设备图表？**
 
-在中， [!DNL Audience Manager]当您创建配置文件合并规则时，设备图 [形将显示为配置选项](../features/profile-merge-rules/merge-rules-start.md)。 通过您的 [!UICONTROL Profile Merge Rules]设备图形，这些设备图有助于 [!DNL Audience Manager]:
+在中， [!DNL Audience Manager]当您创建配置文件合并规则时，设备图 [形将显示为配置选项](merge-rules-start.md)。 通过您的 [!UICONTROL Profile Merge Rules]设备图形，这些设备图有助于 [!DNL Audience Manager]:
 
 * 将多个设备配置文件合并在一起。 这会创建一个特征超集。
 * 评估特征超集以获得区段资格（而不是单独评估每个设备配置文件）。
 * 将合格设备添加到可用区段。
 
-<br> 
+ 
 
 **我可以[!UICONTROL Profile Merge Rules]创建多少？**
 
-当前，最多可创建3个 [!UICONTROL Profile Merge Rules]。
+当前，最多可创建4个 [!UICONTROL Profile Merge Rules]。 第四个配置文件合并规[!UICONTROL All Cross-Device Profiles]则()仅适用于购买该加载项 [!UICONTROL People-Based Destinations] 的客户。
 
-<br> 
+ 
 
 **在中使用设备图[!DNL Audience Manager]形时，合并和读取多少个设备配置文件[!UICONTROL Profile Merge Rule]?**
 
-当使用某个设备对区段进行资格鉴定时 [!UICONTROL Profile Merge Rule],Audience manager会合并和读取当前设备配置文件以及最多3个由所选设备图形选项链接的其他设备配置文件。
+当使用某个设备对区段进行资格鉴定时， [!UICONTROL Profile Merge Rule]Audience manager会合并和读取当前设备配置文件以及最多99个由所选设备图形选项链接的其他设备配置文件。
 
-<br> 
+ 
 
 **在中使用设备图时，哪些设备符合段条件[!UICONTROL Profile Merge Rule]?**
 
 设备合 [!DNL Audience Manager] 并和读取是符合区段条件的相同设备。
 
->[!NOTE]
->
->对于外部设备图， [!DNL Audience Manager] 在平台级别存储设备之间的映射并选择3，而不评估它们与实例中显示的设备的关系 [!DNL Audience Manager]。
-
-<br> 
-
-**哪些设&#x200B;*备可以*使用包含设备图[!UICONTROL Profile Merge Rule]形的设备符合区段条件？**
-
-要获得区段资格，在创建区段后，Audience Manager必须在我们的边缘数据 [服务器上看到](../reference/system-components/components-edge.md) “设备”。 此外，边缘服务器：
-
-* 存储最多14天的配置文件数据。
-* 如果设备配置文件在14天内处于非活动状态，请删除该配置文件。 注意：此操作仅从边缘删除数据。 其他系统将保留更长的时间间隔。 请参阅隐 [私和数据保留常见问题解答](../faq/faq-privacy.md)。
-* 如果在整个平台中记录了该配置 [!DNL Audience Manager] 文件的任何活动，请重置14天间隔。
-
-另请参阅数 [据收集组件](../reference/system-components/components-data-collection.md)。
-
-<br> 
+ 
 
 **在哪里[!DNL Audience Manager]可以发送已通过使用设备图形[!UICONTROL Profile Merge Rule]的区段？**
 
-[!DNL Audience Manager] 可以以批处理文件或实时将区段发送到目标。 如上面的常见问题解答条目中所述，要获得区段的资格，在创建区段后，必须在我们的 [!DNL Audience Manager] 边缘数据 [服务器上查看设备](../reference/system-components/components-edge.md) 。
+[!DNL Audience Manager] 可以以批处理文件或实时将区段发送到目标。
 
-<br> 
+ 
 
 ## 区段、设备图形和配置文件合并规则 {#segments-device-graphs-rules}
 
 **当设[!DNL Audience Manager]备不再符合使用设备图形的区段的条件时，如何取消[!UICONTROL Profile Merge Rule]分段设备？**
 
-当使用设备图来评估区段时，Audience manager最多可合并四 [!UICONTROL Profile Merge Rule] 台设备。 如果发出未分段信号，则当前设备和三个实时显示的附加设备将从目标的分段中移除。 例如，在六设备群集中，最多四个设备被合并、评估和限定为区段。 同样，最多四个设备被合并、评估和未分段。
+当使用设备图来评估区段时，Audience manager将合并多达100 [!UICONTROL Profile Merge Rule] 台设备。 如果发出未分段信号，将从目的地的分段中移除当前设备和多达99个附加设备。 有关取消分段的详细信息，请参 [阅配置文件合并规则和设备取消分段进程](merge-rule-unsegment.md)。
 
-<br> 
+ 
 
 **如果目标可以取消设备分段，使用设备图表的设备是否会[!UICONTROL Profile Merge Rules]从分段中删除设备？**
 
 能。请参阅上述说明。
 
-<br> 
+ 
 
 **如果我使用设备图形构建一个区段，而该区段同时使用实时数据和已载入数据，那么我的区段是否会随着已载入数据的更改而更新？[!UICONTROL Profile Merge Rule]**
 
-不会。目前， [!DNL Audience Manager] 使用仅实 [!UICONTROL Profile Merge Rule] 时使用设备图来评估区段。 在评估区段后对已载入的特征进行的更新将用于在我们的边缘数据服务器下次看到设备时确定 [该区段](../reference/system-components/components-edge.md)。 这假定设备配置文件在边缘服务器中仍处于活动状态，并且已将这些已载入的数据提供给这些系统。 另请参阅隐私和 [数据保留常见问题解答](../faq/faq-privacy.md)。
+能。
 
-<br> 
+ 
 
 **区段大小估计是否包括基于使用设备图选项的连接符合[!UICONTROL Profile Merge Rule]区段条件的设备？**
 
-不会。请参阅区段生成器中 [!UICONTROL Estimated Real-Time Population] 的特 [!UICONTROL Estimated Total Population] 征 [和区段填充数据的定义](../features/segments/segment-builder-data.md)。
+不会。请参阅区段生成器中 [!UICONTROL Estimated Real-Time Population] 的特 [!UICONTROL Estimated Total Population] 征 [和区段填充数据的定义](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/segments/segment-builder-data.html)。
 
-<br> 
+ 
 
 **是否[!UICONTROL Addressable Audiences]包括基于使用设备图形选项的设备所提供的连接[!UICONTROL Profile Merge Rule]而符合区段条件的设备？**
 
 能。
 
-<br> 
+ 
 
-**如果区段使用[!UICONTROL Profile Merge Rule]的[!UICONTROL No Authenticated Profile]是带有，且符合该区段设备条件的特征仅存储在经过身份验证的配置文件中，那么该区段的总人口是否为0?**
+**如果区段使用[!UICONTROL Profile Merge Rule]的[!UICONTROL No Cross-Device Profile]是带有，且符合该区段设备条件的特征仅存储在跨设备配置文件中，那么该区段的总人口是否为0?**
 
-不会。如今，Audience manager将映射到身份验证配置文件的设备计为符合区段条件。
+能。在将“配置文件合并规则”设置为时，Audience manager不会在区段评估中计算跨设备配置文件上存储的特征 [!UICONTROL No Cross-Device Profile]。
 
-<br> 
+ 
 
 ## 特征频率、设备图形和配置文件合并规则 {#trait-freq-device-rules}
 
@@ -182,15 +162,15 @@ profile-merge-faq.xml
  </tbody> 
 </table>
 
-<br> 
+ 
 
 ## 报告、设备图形和配置文件合并规则 {#reports-device-graphs-rules}
 
 **我是否可以看到使用设备图表的[!UICONTROL Profile Merge Rule]设备可以访问的数量？**
 
-能。报告返回级别的 [!UICONTROL Profile Merge Rule] 数据。 报告数据每天更新。 数据基于您帐户中看到的设备，而非通过设备图表链接的设备。 请参 [阅配置文件合并规则的报告指标](../features/profile-merge-rules/profile-link-metrics.md)。
+能。报告返回级别的 [!UICONTROL Profile Merge Rule] 数据。 报告数据每天更新。 数据基于您帐户中看到的设备，而非通过设备图表链接的设备。 请参 [阅配置文件合并规则的报告指标](profile-link-metrics.md)。
 
-<br> 
+ 
 
 **我是否可以实时查看使用设备图&#x200B;*表的特定区段*[!UICONTROL Profile Merge Rules]的合格设备数？**
 
@@ -232,7 +212,7 @@ profile-merge-faq.xml
  </tbody> 
 </table>
 
-<br> 
+ 
 
 **我是否可以使用设备图来查看符合特定区段条件[!UICONTROL Profile Merge Rule]的设备总数？**
 
@@ -270,13 +250,13 @@ profile-merge-faq.xml
  </tbody> 
 </table>
 
-<br> 
+ 
 
 **是否有资格使用报表、报[!UICONTROL Profile Merge Rule]表和报表中包含的设备图表作为区[!UICONTROL Interactive]段的[!UICONTROL Overlap]设备[!UICONTROL Audience Optimization]?**
 
-否
+不会。
 
 >[!MORE_LIKE_THIS]
 >
->* [配置文件链接](../features/profile-merge-rules/merge-rules-overview.md)
+>* [配置文件链接](merge-rules-overview.md)
 
