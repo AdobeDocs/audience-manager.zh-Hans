@@ -6,14 +6,16 @@ solution: Audience Manager
 title: 个人资料合并规则概述
 uuid: 9e7988cc-9145-432b-840a-54fbd8657b3b
 translation-type: tm+mt
-source-git-commit: f42267d3acf2570fc87d50c4c4e65826902d9e55
+source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ---
 
 
 # 个人资料合并规则概述 {#profile-merge-rules-overview}
 
-通过 [!UICONTROL Profile Merge Rules] 控制用于细分的数据集，您可以跨多个设备准确定位人员。
+您可 [!UICONTROL Profile Merge Rules] 以控制用于细分的数据集，并且可以跨多个设备准确定位用户。
+
+>[!VIDEO](https://video.tv.adobe.com/v/28974?captions=chi_hans)
 
 ## 使用匿名和实名档案进行数据收集和定位 {#data-collection-targeting}
 
@@ -21,7 +23,7 @@ source-git-commit: f42267d3acf2570fc87d50c4c4e65826902d9e55
 
 ![](assets/unauthenticated2.png)
 
-[!UICONTROL Profile Merge Rules] 从根本上改变 [!DNL Audience Manager] 收集数据和细分用户进行定位的方式。 它允许您使用2种不同类型的配置文件、设备配置文件和经过身份验证的配置文件。
+[!UICONTROL Profile Merge Rules] 从根本上改变 [!DNL Audience Manager] 收集数据和细分用户进行定位的方式。 它允许您使用2种不同类型的配置文件、设备配置文件和经过身份验证 [的配置文件](../../reference/visitor-authentication-states.md)。
 
 <table id="table_CE98C0E32A964B27804736A896233869"> 
  <thead> 
@@ -43,14 +45,14 @@ source-git-commit: f42267d3acf2570fc87d50c4c4e65826902d9e55
    <td colname="col1"> 已验证的配置文件 </td> 
    <td colname="col2"> <p>经过身份验证的配置文件将绑定到用户登录您的站点时传入的用户ID。 包括 </p>
     <ul id="ul_18319CAA875148DBAE095134D42637B3"> 
-     <li id="li_E24BD33E049849E5A594B0750F530475">在用户通过身份验证后跨设备收集的基于规则的特征。 </li>
+     <li id="li_E24BD33E049849E5A594B0750F530475">当用户通过身份验证时跨设备收集的基于规则的特征。 </li>
      <li id="li_531AC9E0EC9D45108457FEC8E8D4E66C">链接到同一用户ID的脱机文件中已载入的特征。 </li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-这些不同的配置文件控制可用于细分的数据。 例如，使用经过身份验证的配置文件，您可以根据来自多个设备的数据为一个人构建准确的细分。 这意味着您可以跨多种设备为客户提供一致的品牌体验。 此外，跨设备身份验证还允 [!DNL Audience Manager] 许映射用户在线活动所使用的不同平台。 这叫做 [!UICONTROL Profile Link Device Graph]。
+这些不同的配置文件控制可用于细分的数据。 例如，使用经过身份验证 [的配置文件](../../reference/visitor-authentication-states.md)，您可以根据来自多个设备的数据为单个用户构建准确的细分。 这意味着您可以跨多种设备为客户提供一致的品牌体验。 Audience manager通过存储用户用于其在线活动的不同设备与其经过身份验证的配置文件的映射来实现 [这一点](../../reference/visitor-authentication-states.md)。 这些映射称为 [!UICONTROL Profile Link Device Graph]。
 
 ![](assets/authenticated2.png)
 
@@ -58,23 +60,8 @@ source-git-commit: f42267d3acf2570fc87d50c4c4e65826902d9e55
 
 您 [!UICONTROL Profile Merge Rules] 可以：
 
-* 根据实名档案、匿名档案或两者的组合定位用户。
+* 根据实名档案、 [匿名档案](../../reference/visitor-authentication-states.md)，或两者的组合定位用户。
 * 跨设备定位特定客户。
 * 基于确定性数据构建设备图。
 * 根据不同的配置文件微调细分中的数据。
 * 进一步了解受众。
-
-## 入门指南 {#getting-started}
-
-有关更多信息，请参 [阅以下部分](../../faq/faq-profile-merge.md) 和常见问题解答 [!UICONTROL Profile Merge Rules]。
-
-* [个人资料合并规则入门](/help/using/features/profile-merge-rules/merge-rules-start.md)
-* [配置文件合并规则功能板](/help/using/features/profile-merge-rules/merge-rules-dashboard.md)
-* [已定义配置文件合并规则选项](/help/using/features/profile-merge-rules/merge-rule-definitions.md)
-* [配置文件合并规则的一般用例](/help/using/features/profile-merge-rules/merge-rule-targeting-options.md)
-* [配置文件链接设备图形使用案例](/help/using/features/profile-merge-rules/profile-link-use-case.md)
-* [外部设备图形使用案例](/help/using/features/profile-merge-rules/external-graph-use-cases.md)
-* [个人资料合并规则的报告指标](/help/using/features/profile-merge-rules/profile-link-metrics.md)
-* [配置文件合并规则和设备取消分段过程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)
-* [即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)
-* [关于设备图的配置文件合并规则的重要注意事项](/help/using/features/profile-merge-rules/considerations-pmr-device-graph.md)
