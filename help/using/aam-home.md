@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager产品文档
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: 30d4cec4502a2cf8b217816ea4ae62eb1b22f641
+source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ---
 
@@ -20,8 +20,9 @@ source-git-commit: 30d4cec4502a2cf8b217816ea4ae62eb1b22f641
   <tr> 
    <td colname="col1"> <p> <b>新增项目和特色项目</b> </p> <p>了解Audience manager的最新功能：</p> <p> 
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
+    <li><a href="features/profile-merge-rules/merge-rules-overview.md">配置文件合并规则增强功能</a></li>
     <li><a href="reference/bulk-management-tools/bulk-management-intro.md">批量管理工具更新</a></li>
-     <li><a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/overview/data-security-and-privacy/data-security.html#hsts">HTTP Strict-Transport-Security</a></li>
+     <li><a href="overview/data-security-and-privacy/data-security.md#hsts">HTTP Strict-Transport-Security</a></li>
      <li><a href="features/destinations/people-based-destinations-overview.md">基于人员的目标</a> </li>
      <li><a href="features/destinations/twitter-tailored-audiences.md">将Twitter定制受众配置为基于设备的自助服务目标</a> </li>
      <li><a href="features/destinations/destinations-home.md">目标主页</a> </li>
