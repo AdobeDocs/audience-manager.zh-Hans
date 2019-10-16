@@ -1,75 +1,79 @@
 ---
-description: 个人资料合并规则选项允许您根据业务需求或目标扩大或加强受众对特定受众的关注。 这些一般用例探讨如何使用可用选项并为单个、家庭和跨设备定位创建合并规则。 目前，“配置文件合并规则”仅适用于实时目标。
-seo-description: 个人资料合并规则选项允许您根据业务需求或目标扩大或加强受众对特定受众的关注。 这些一般用例探讨如何使用可用选项并为单个、家庭和跨设备定位创建合并规则。 目前，“配置文件合并规则”仅适用于实时目标。
+description: 个人资料合并规则选项允许您根据业务需求或目标扩大或加强受众对特定受众的关注。 这些一般用例探讨如何使用可用选项并为单个、家庭和跨设备定位创建合并规则。
+seo-description: 个人资料合并规则选项允许您根据业务需求或目标扩大或加强受众对特定受众的关注。 这些一般用例探讨如何使用可用选项并为单个、家庭和跨设备定位创建合并规则。
 seo-title: 配置文件合并规则的一般用例
 solution: Audience Manager
 title: 配置文件合并规则的一般用例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ---
 
 
 # 配置文件合并规则的一般用例 {#general-use-cases-for-profile-merge-rules}
 
-[!UICONTROL Profile Merge Rules] 通过这些选项，您可以根据业务需求或目标扩大或收紧对特定受众的关注。 这些一般用例探讨如何使用可用选项并为单个、家庭和跨设备定位创建合并规则。 目前， [!UICONTROL Profile Merge Rules] 仅可处理实时目标。
-
-![](assets/merge-rules-options.png)
+[!UICONTROL Profile Merge Rules] 通过这些选项，您可以根据业务需求或目标扩大或收紧对特定受众的关注。 这些一般用例探讨如何使用可用选项并为单个、家庭和跨设备定位创建合并规则。 [!UICONTROL Profile Merge Rules] 使用实时和批量目标。
 
 >[!TIP]
 >
->有关这些设置的定义和说明，请 [!UICONTROL Merge Rule] 参阅配置 [文件合并规则选项定义](../../features/profile-merge-rules/merge-rule-definitions.md)。
+>有关这些设置的定义和说明，请 [!UICONTROL Merge Rule] 参阅配置 [文件合并规则选项定义](merge-rule-definitions.md)。
 
-## 重点定位 {#focused-targeting}
+## 设备定位 {#device-personalization}
 
-对网站的用户身份验证应触发对的声明ID调用 [!DNL Audience Manager]。 在此事件之后， [!DNL Audience Manager] 将特征数据写入经过身份验证的配置文件（并从中读取）。 通过身份验证的配置文件， [!DNL Audience Manager]您可以：
+此方案适用于希望评估Audience manager中定义的受众细分的单个设备配置文件的营销人员，以便使用支持设备ID（DSP、现场个性化平台和其他基于设备的定位平台）的定位平台向设备提供一致的体验，而不考虑用户身份验证。
 
-* 将特征写入特定于特定用户的认证配置文件。
-* 识别多个设备用户，并区分其细分。
+要创建仅针对设备配置文件的规则，请选择 **[!UICONTROL No Cross-Device Profile]** + **[!UICONTROL Device Profile]**。
 
-### 触及经过身份验证的用户
+![仅限设备](assets/device-only.png)
 
-通过身份验证的配置文件选项可创建规则，使您能够根据脱机属性定位登录到网站或应用程序的用户。 例如，金融服务公司将使用此选项，根据收入或离线活动，以具有针对性信用卡升级优惠或专用服务优惠的认证用户为目标。 另一个例子是，航空公司以经过认证的常客为目标，根据累计里程进行交易。
+假设约翰拥有三部智能手机。 其中两款是iPhone 7，在Data Plan a上，其中一款是三星，在Data Plan b上。John的移动运营商没有考虑他在这三种设备上的身份验证状态，而是希望为他提供数据计划升级，但只针对在数据计划A上运行的iPhone 7设备。
 
-要创建只能到达已验证用户的规则，请选择 **[!UICONTROL Current Authenticated Profile]** + **[!UICONTROL No Device Profile]**。 此选项将仅使用经过身份验证的配置文件数据来评估区段。 此规则将忽略匿名设备配置文件中的数据。
+通过使用 **[!UICONTROL No Cross-Device Profile]** + **[!UICONTROL Device Profile]** 规则， [!DNL Device 1] 并且两者都符 [!DNL Device 3] 合区段的条件，而设备2将被忽略。
 
-要将数据包含在匿名设备配置文件中，请使用 **[!UICONTROL Current Authenticated Profile]** +规 **[!UICONTROL Current Device Profile]** 则。
+![仅限设备](assets/device-management.png)
 
-### 根据先前的身份验证状态向用户发送
+## 共享设备定位 {#target-shared-devices}
 
-这些选项在特定用户浏览但未登录时触及用户。 您可以使用依赖推断的用户级别定位的选项执行此操作。 推断出的定位可帮助您联系未对您的网站进行明确身份验证但可能正在在线浏览的用户。 它的工作方式是从上一个经过身份验证的配置文件读取（但不写入）数据。 此外，为了帮助保持已验证的配置文件干净，请将 [!DNL Audience Manager] 新的特征资格写入设备配置文件而不是已验证的配置文件。 例如，假设您是营销人员，希望针对未登录您的网站或应用程序的现有客户测试不同的推广信息。 作为营销人员，您可以使用当前未验证的客户测试这些广告，以查看哪些优惠获得最多响应。
+假设约翰和他的妻子简，使用同一台笔记本电脑访问一家在线商店并订购各种商品。
 
-基于预先身份验证的触及用户的规则示例如下：
+约翰用自己的账户来预订旅行票和特价优惠，而简则用自己的账户来购买音乐和电影。
 
-* **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Current Device Profile]**
+该商店的营销团队可以使用 **[!UICONTROL Current Authenticated Profiles]** +规 **[!UICONTROL No Device Profile]** 则，根据John和Jane的实名活动来定位特定交易。
 
-## 扩展的定位 {#expanded-targeting}
+![当前无设备](assets/current-no-device.png)
 
-除了有助于触及特定客户的规则外，营销人员还需要增加可用于定位的数据集大小的规则。 [!UICONTROL Profile Merge Rules] 让您使用设备配置文件选项执行此操作。 设备选项扩展了符合分段条件的数据集，因为这些数据集利用了用户在一个或多个设备上处于匿名状态时实现的特征。 当您尝试使用个人设备图表触及所有设备上的用户或使用家庭设备图表的家庭中的所有设备时，这可能很有用。 此选项的用例可能包括为家庭度假优惠做广告。 在这种情况下，如果任何设备上的用户都对该选件感兴趣，您将希望使用该选件访问家庭中的每台设备。
+通过使用此规则，Audience manager将完全忽略设备配置文件、区段的合格John的CRM ID，而不符合Jane的CRM ID。
 
-要创建扩展定位数据集的规则，请选择 **[!UICONTROL Last Authenticated Profiles]** +规 **[!UICONTROL Device Graph]** 则。
+![共享设备定位](assets/shared-device-targeting.png)
 
-<!-- 
+## 联机／脱机定位 {#device-household-targeting}
 
-<p>Rules that use the device graph option extend your data set even further. With the device graph option, <span class="keyword"> Audience Manager</span> relies on the device profiles aggregated from the last 3 devices that a visitor used for authentication to your site. The device graph rules include: </p> 
-<p> 
- <ul id="ul_3008B6AF16EC408F98EC4088111281FB"> 
-  <li id="li_FA2087F1ED454CD0B9E09656B79ED23B"> <b><span class="uicontrol"> Current Authenticated Profiles</span></b> + <b><span class="uicontrol"> Profile Merge Device Graph</span></b> or a Co-op device graph option </li> 
-  <li id="li_001A8DB517CB4EE394DBD530F2080FD5"> <b><span class="uicontrol"> Last Authenticated Profiles</span></b> + <b><span class="uicontrol"> Profile Merge Device Graph</span></b> or a Co-op device graph option </li> 
- </ul> </p> 
-<p> 
- <note type="tip">
-  Create a simple rule with 
-  <b><span class="uicontrol"> No Authenticated Profile</span></b> + 
-  <b><span class="uicontrol"> Current Device Profile</span></b> when you're still developing a strategy and are unsure about which options to choose or if your site doesn't use authentication. 
- </note> </p>
+此用例涵盖家庭身份管理。 公司可以使用+规则将单个设备配置文件与在该设备上验证的最后一个配置文件 **[!UICONTROL Last Authenticated Profiles]** 合并 **[!UICONTROL Device Profile]** 在一起。
 
- -->
+![last-device-profile](assets/last-device-profile.png)
+
+让我们来考虑一个由收入超过100.000美元／年的家庭组成的细分，其中至少包含一个设备上的 [!DNL iPhone 7] 设备 [!DNL Data Plan B]。 我们有两个家用配置文件（跨设备配置文件），每个配置文件都连接到两个不同的设备配置文件。 符合区段条件所需的特征将分布在设备和跨设备配置文件中。
+
+Audience manager将合并每台设备+跨设备配置文件对，以查看合并的特征集是否符合区段的条件。 由于Audience manager会评估合并中包含的每个配置文件，因此设备配置文件和家庭配置文件都可以进行分段。
+
+设备与家庭档案之间的链接使Audience manager能够获得区段资 [!DNL Household 2] 格，但不能获得区段资格 [!DNL Household 1]。 从 [!DNL Household 2]，只 [!DNL Device 3] 有区段资格。 这使 [!UICONTROL Profile Merge Rule] 营销人员能够向单个设备([!DNL Device 3])和更广泛的家庭()提供一致的营销信息[!DNL Household 2]。
+
+![家庭管理](assets/household-management.png)
+
+## 基于人员的定位 {#all-cross-device}
+
+此定位方案仅适用于已购买该加载项 [!DNL People-Based Destinations] 的客户。 此规则允许营销人员根据自己的实名数据接触客户。
+
+假设一家在线零售商希望通过社交平台接触现有客户并根据先前的订单向他们展示个性化的推广信息。 通过 [!UICONTROL People-Based Destinations][!DNL CRM] 它们，他们可以将散列的电子邮件地址从自己收集到Audience Manager中，从离线数据中构建细分，并将这些细分发送到他们要投放广告的社交平台，从而优化其广告支出。
+
+要进一步了解此选项，请参 [阅基于人员的目标](../destinations/people-based-destinations-overview.md)。
+
+![跨设备](assets/all-cross-device.png)
 
 ## 设备图形选项 {#device-graph-options}
 
-选择规 [!UICONTROL device graph] 则的选项 [!UICONTROL Profile Merge] 取决于数字资产和业务目标所特有的条件。 这些一般准则可以帮助您了解何时使用一种图形与另一种图形。 请注意，您必须是外部设备图 [!DNL Adobe Experience Cloud Device Co-op] 形的成员或与外部设备图形有合同关系才能使用这些选项。 有关何时选择设备图形选项的一般指导，请参阅下表。 有关特定用例，请参阅配置 [文件链接设备图形用例](../../features/profile-merge-rules/profile-link-use-case.md) 和外 [部设备图形用例](../../features/profile-merge-rules/external-graph-use-cases.md)。
+选择规 [!UICONTROL device graph] 则的选项 [!UICONTROL Profile Merge] 取决于数字资产和业务目标所特有的条件。 这些一般准则可以帮助您了解何时使用一种图形与另一种图形。 请注意，您必须是 [Adobe Experience Cloud Device Co-op的成员](https://docs.adobe.com/content/help/en/device-co-op/using/home.html) ，或与外部设备图形有合同关系才能使用这些选项。 有关何时选择设备图形选项的一般指导，请参阅下表。 有关特定用例，请参阅配置 [文件链接设备图形用例](profile-link-use-case.md) 和外 [部设备图形用例](external-graph-use-cases.md)。
 
 <table id="table_66D9152D4FF040A186003272D456625D"> 
  <thead> 
@@ -80,7 +84,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 配置文件链接</span> </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 配置文件链接设备图</span> </p> </td> 
    <td colname="col2"> <p><span class="wintitle"> 使用“配置文件</span> ”链接选项构建的 <span class="wintitle"> “配置文件合并规则</span> ”非常适合： </p> <p> 
      <ul id="ul_FF44FA894BB2448887C8EDA9C8407EF9"> 
       <li id="li_E22505210C664FE6A9AA7C61244B36DA">具有高级客户身份验证的数字资产。 </li> 
@@ -100,9 +104,13 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
  </tbody> 
 </table>
 
+请观看以下视频，了解可能的使用案例的概述 [!UICONTROL Profile Merge Rules]。
+
+>[!VIDEO](https://video.tv.adobe.com/v/28975/?captions=chi_hans)
+
 >[!MORE_LIKE_THIS]
 >
->* [配置文件链接设备图形使用案例](../../features/profile-merge-rules/profile-link-use-case.md)
->* [外部设备图形使用案例](../../features/profile-merge-rules/external-graph-use-cases.md)
+>* [配置文件链接设备图形使用案例](profile-link-use-case.md)
+>* [外部设备图形使用案例](external-graph-use-cases.md)
 >* [个人资料合并规则常见问题解答](../../faq/faq-profile-merge.md)
 
