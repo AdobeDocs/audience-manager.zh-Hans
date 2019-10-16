@@ -4,7 +4,7 @@ audience: 最终用户
 user-guide-title: Audience manager用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 3c68d2e04bf35763aa44edff01fd43a8c412ce1f
+source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ---
 
@@ -116,7 +116,6 @@ source-git-commit: 3c68d2e04bf35763aa44edff01fd43a8c412ce1f
       + [个人资料合并规则的报告指标](features/profile-merge-rules/profile-link-metrics.md)
       + [配置文件合并规则和设备取消分段过程](features/profile-merge-rules/merge-rule-unsegment.md)
       + [即时跨设备抑制](features/profile-merge-rules/instant-cross-device-suppression.md)
-      + [关于设备图的配置文件合并规则的重要注意事项](features/profile-merge-rules/considerations-pmr-device-graph.md)
    + 客户群{#segments}
       + [区段：目的、构成和规则](features/segments/segments-purpose.md)
       + [区段列表视图](features/segments/segments-dashboard.md)
