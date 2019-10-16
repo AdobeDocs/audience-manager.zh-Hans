@@ -6,14 +6,14 @@ solution: Audience Manager
 title: 个人资料合并规则的报告指标
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ---
 
 
 # 个人资料合并规则的报告指标 {#report-metrics-for-profile-merge-rules}
 
-[!UICONTROL Profile Link] 量度提供有关对您的网站进行身份验证的人员和设备的数据。 在您创建合并规 [!UICONTROL Profile Link] 则或单击功能板中的现有规则时，中的数据和图形会动态 [!UICONTROL Profile Merge Rules] 更新。 这些指标可以包括来自或其他第 [!DNL Adobe Experience Cloud Device Co-op] 三方设备图形源的设备图形。
+[!UICONTROL Profile Merge Rule] 量度提供有关对您的网站进行身份验证的人员和设备的数据。 在您创建合并规 [!UICONTROL Profile Merge Rule Reports] 则或单击功能板中的现有规则时，中的数据和图形会动态 [!UICONTROL Profile Merge Rules] 更新。 这些指标可以包括来自或其他第 [!DNL Adobe Experience Cloud Device Co-op] 三方设备图形源的设备图形。
 
 ## 合并规则指标 {#merge-rule-metrics}
 
@@ -32,7 +32,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
    <td colname="col2"> <p>显示： </p> 
     <ul id="ul_7F7373919A4A49028EF4BF7B28D9F8E9"> 
      <li id="li_FE2F93C496D64ED8928B3E522C9585EA"> <span class="wintitle"> 活动人员</span>:过去60天内通过网站身份验证的人数。 </li> 
-     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle"> 跨设备</span>:在数据源 <a href="../../features/profile-merge-rules/merge-rules-start.md#create-data-source"></a><a href="../../features/manage-datasources.md#create-data-source"></a><a href="../../features/profile-merge-rules/merge-rule-definitions.md"></a> 存在的生命周期中，存储在选定“已验证配置文件”的“数据源”中的跨设备ID的总数。 </li> 
+     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle"> 跨设备</span>:在数据源 <a href="merge-rules-start.md#create-data-source"></a><a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html"></a><a href="merge-rule-definitions.md"></a> 存在的生命周期中，存储在选定“已验证配置文件”的“数据源”中的跨设备ID的总数。 </li> 
      <li id="li_F2F07B6A326C4A18B79A0CF2C47D9677"> <span class="wintitle"> 活动人员百分比</span>:将活 <span class="wintitle"> 动人员</span> (%)显示。 </li> 
     </ul> <p> <span class="wintitle"> 通过身份验证</span> ，您可以按活动、卷和百分比比较数据源。 它可以帮助您找到一个拥有大量人员和高比例活跃用户的数据源。 或者，比较数据源与活跃用户的高比例与总受众规模时，您会发现其价值。 例如，有时，总生命周期数和高活动的数据源比具有高生命周期结果和低活动数的数据源更有价值。 </p> <p> <p>注意：“已验 <span class="wintitle"> 证的活动</span> ”量度仅包 <span class="wintitle"> 含配置文件链接数据</span> 。 此报告不包括设备 <span class="wintitle"> 图表数据</span> 。 </p> </p> </td> 
   </tr> 
@@ -104,19 +104,17 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 标准报 [!UICONTROL Profile Link] 表如以下示例所示。 合并使用多个数据源（最多3个，最大）的规则会在每个数据源的不同选项卡中显示图形。 此合并规则不包括数 [!UICONTROL Device Co-op] 据。
 
-![](assets/coop-metrics1.png)
+![](assets/profile-link-metrics.png)
 
 ### 带有设备图形数据的配置文件链接报告
 
-包 [!UICONTROL Profile Link] 括来自设备图形或第三方设备图形的设备图形 [!UICONTROL Adobe Experience Cloud Device Co-op] 数据的报表以及具有并排条形图 [!UICONTROL Profile Link] 的设备图形数据。 将这些图形彼此相邻，这样您就可以评估与单独使用图形相比 [!UICONTROL Experience Cloud Device Co-op] 的优 [!UICONTROL Profile Link] 点了。 合并使用多个数据源（最多3个，最大）的规则会在每个数据源的不同选项卡中显示图形。 提醒您，图 [!UICONTROL Authenticated Activity] 形和度量不会从设备图形或您可能在中访问的 [!DNL Adobe] 其他第三方设备图形返回数据 [!DNL Audience Manager]。
+包 [!UICONTROL Profile Link Device Graph] 括来自设备图形或第三方设备图形的设备图形 [!UICONTROL Adobe Experience Cloud Device Co-op] 数据的报表以及具有并排条形图 [!UICONTROL Profile Link] 的设备图形数据。 将这些图形彼此相邻，这样您就可以评估与单独使用图形相比 [!UICONTROL Experience Cloud Device Co-op] 的优 [!UICONTROL Profile Link] 点了。 合并使用多个数据源（最多3个，最大）的规则会在每个数据源的不同选项卡中显示图形。 提醒您，图 [!UICONTROL Authenticated Activity] 形和度量不会从设备图形或您可能在中访问的 [!DNL Adobe] 其他第三方设备图形返回数据 [!DNL Audience Manager]。
 
-![](assets/coop-metrics2.png)
+![](assets/profile-link-graph.png)
 
 ## 个人资料链接趋势图 {#profile-link-trend}
 
 除了其他数据可视化外，报 [!UICONTROL Profile Link] 表还包括线形图。 折线图旨在显示配置文件规则随时间变化的趋势。 当您单击登录页面()中的规则时，趋势图(和其 [!UICONTROL Profile Merge Rules] 他报表)可 **[!UICONTROL Audience Data > Profile Merge Rules]**&#x200B;用。 如果您是您在中可访问的其他第三方设备图形的成 [!UICONTROL Device Co-op] 员，则这些图形包括设备图形数据 [!DNL Audience Manager]。 单击趋势线可查看基础数据。
-
-![](assets/authenticated_trends.png)
 
 >[!MORE_LIKE_THIS]
 >
