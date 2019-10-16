@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 个人资料合并规则入门
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 translation-type: tm+mt
-source-git-commit: 28d1292140a56cf1627a8921876d9483221876ca
+source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ---
 
@@ -19,29 +19,29 @@ source-git-commit: 28d1292140a56cf1627a8921876d9483221876ca
 
 ## 创建跨设备数据源 {#create-data-source}
 
-要创建跨设备数据源，请转到并完 **[!UICONTROL Audience Data > Data Sources > Add New]** 成此处介绍的每个部分的步骤。 创建或编辑跨设备数据源需要管理员权限。
+要创建跨设备数据源，请转到并完 **[!UICONTROL Audience Data > Data Sources > Add New]** 成此处描述的每个部分的步骤。 创建或编辑跨设备数据源需要管理员权限。
 
 <!-- create-cross-device-datasource.xml -->
 
 >[!TIP]
 >
->有关 [这些不同控件的说明，请参阅数据源设置和菜单选项](../../features/datasources-list-and-settings.md#settings-menu-options) 。
+>有关 [这些不同控件的说明，请参阅数据源设置和菜单选项](../datasources-list-and-settings.md#settings-menu-options) 。
 
 ## 数据源详细信息 {#details}
 
 要完成此部 [!UICONTROL Data Source Details] 分，请执行以下操作：
 
 1. 命名数据源。
-1. *（可选）* ，描述数据源。 简明的描述可帮助您定义数据源的角色或用途。
-1. 提供集成代码。 集成代码是您自己的、此数据源的唯一ID。
-1. 在列表 **[!UICONTROL ID Type]** 中，选择 **[!UICONTROL Cross Device]**。
-1. 在列表 **[!UICONTROL ID Definition]** 中，选择定义数据源类型的选项。 选项包括：
+2. *（可选）* ，描述数据源。 简明的描述可帮助您定义数据源的角色或用途。
+3. 提供集成代码。 集成代码是您自己的、此数据源的唯一ID。
+4. 在列表 **[!UICONTROL ID Type]** 中，选择 **[!UICONTROL Cross Device]**。
+5. 在列表 **[!UICONTROL ID Definition]** 中，选择定义数据源类型的选项。 选项包括：
    * **[!UICONTROL Person]**:定义单个人的ID。 此ID可以映射到多个 [!DNL Audience Manager] ID。
    * **[!UICONTROL Household]**:定义一组人员的ID。 此ID可以映射到多个 [!DNL Audience Manager] ID。
 
 ## 数据导出控制 {#export-controls}
 
-[数据导出控件](../../features/data-export-controls.md) (Data Export Controls)是可应用于数据源和目标的可选分类规则。 当该操作违反数据隐私或使用协议时，它们会阻止您将数据发送到目标。 如果不使用，请跳过此部分 [!UICONTROL Data Export Controls]。
+[数据导出控件](../data-export-controls.md) (Data Export Controls)是可应用于数据源和目标的可选分类规则。 当该操作违反数据隐私或使用协议时，它们会阻止您将数据发送到目标。 如果不使用，请跳过此部分 [!UICONTROL Data Export Controls]。
 
 ## Data Source Settings {#settings}
 
@@ -53,11 +53,11 @@ source-git-commit: 28d1292140a56cf1627a8921876d9483221876ca
 
 * **[!UICONTROL Data retention for inactive Customer IDs]**:此控件允许您为不活动的客户ID设置数据保留期。 这决定了Audience manager在Audience manager平台上上次查看客户ID后，在我们的数据库中保留这些ID的时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们将所有月份计为30天。 Audience manager会根据您为非活动客户ID设置的数据保留情况，运行一个每周删除不活动客户ID一次的流程。
 
-通过与这些设置关联的文本字段，您可以使用在“配置文 [!UICONTROL Data Source] 件合并规则”选项中显示 [的别名重命名](../../features/profile-merge-rules/merge-rule-definitions.md)。 例如，如果向添加别名， **[!UICONTROL Use as Authenticated Profile]**&#x200B;则该名称会显示在列 [!UICONTROL Authenticated Profile Options] 表中。 如果向中添加别名， **[!UICONTROL Use as a Device Graph]**&#x200B;则该名称会显示在列 [!UICONTROL Device Options] 表中。
+通过与这些设置关联的文本字段，您可以使用在“配置文 [!UICONTROL Data Source] 件合并规则”选项中显示 [的别名重命名](merge-rule-definitions.md)。 例如，如果向添加别名， **[!UICONTROL Use as Authenticated Profile]**&#x200B;则该名称会显示在列 [!UICONTROL Authenticated Profile Options] 表中。 如果向中添加别名， **[!UICONTROL Use as a Device Graph]**&#x200B;则该名称会显示在列 [!UICONTROL Device Options] 表中。
 
 >[!MORE_LIKE_THIS]
 >
->* [创建数据源](../../features/manage-datasources.md#create-data-source)
+>* [创建数据源](../manage-datasources.md#create-data-source)
 
 
 ## 创建配置文件合并规则 {#create-profile-merge-rule}
@@ -66,11 +66,11 @@ source-git-commit: 28d1292140a56cf1627a8921876d9483221876ca
 
 <!-- create-profile-merge-rule.xml -->
 
-**** 先决条件：需要跨设备数据源才能构建 [!UICONTROL Profile Merge Rule]。 请参 [阅创建数据源](../../features/manage-datasources.md#create-data-source)。
+**** 先决条件：需要跨设备数据源才能构建 [!UICONTROL Profile Merge Rule]。 请参 [阅创建数据源](../manage-datasources.md#create-data-source)。
 
 >[!TIP]
 >
->有关这 [些不同控件的说明，请参阅](../../features/profile-merge-rules/merge-rule-definitions.md) “配置文件合并规则选项定义”。
+>有关这 [些不同控件的说明，请参阅](merge-rule-definitions.md) “配置文件合并规则选项定义”。
 
 ## 基本信息 {#basic-info}
 
@@ -82,7 +82,7 @@ source-git-commit: 28d1292140a56cf1627a8921876d9483221876ca
 
 ## 数据导出控制 {#data-export-controls}
 
-[数据导出控件](../../features/data-export-controls.md) (Data Export Controls)是可应用于您的可选分类规则 [!UICONTROL Profile Merge Rule]。 当该操作违反数据隐私或使用协议时，它们会阻止您将数据发送到目标。 如果不使用，请跳过此部分 [!UICONTROL Data Export Controls]。
+[数据导出控件](../data-export-controls.md) (Data Export Controls)是可应用于您的可选分类规则 [!UICONTROL Profile Merge Rule]。 当该操作违反数据隐私或使用协议时，它们会阻止您将数据发送到目标。 如果不使用，请跳过此部分 [!UICONTROL Data Export Controls]。
 
 ## 配置文件合并规则设置 {#profile-merge-rule-setup}
 
@@ -92,7 +92,7 @@ source-git-commit: 28d1292140a56cf1627a8921876d9483221876ca
    * **[!UICONTROL No Authenticated Profile]**
    * **[!UICONTROL Current Authenticated Profile]**
    * **[!UICONTROL Last Authenticated Profile]**
-2. 选择 **[!UICONTROL Authenticated Profile Option]** （最多3，最大值）。 这些是您 [之前创建的跨设备](../../features/profile-merge-rules/merge-rules-start.md) 数据源。
+2. 选择 **[!UICONTROL Authenticated Profile Option]** （最多3，最大值）。 这些是您 [之前创建的跨设备](merge-rules-start.md) 数据源。
 3. 选择 **[!UICONTROL Device Option]**. 选项包括：
    * **[!UICONTROL No Device Profile]**
    * **[!UICONTROL Current Device Profile]**
@@ -112,7 +112,7 @@ source-git-commit: 28d1292140a56cf1627a8921876d9483221876ca
 
 ## 对于Experience Cloud ID服务客户 {#id-service-customers}
 
-使 [!UICONTROL Experience Cloud ID Service] 用时建议使用 [DIL](../../dil/dil-overview.md) 和最新版本 [!UICONTROL Profile Merge Rules]。 但是，您不必使用该 [!UICONTROL Experience Cloud ID Service] 功能即可使用。 如果您只是在使用，请 [!UICONTROL DIL]参阅下面的 [传统DIL部分](../../features/profile-merge-rules/merge-rules-start.md#legacy-dil) 。
+使 [!UICONTROL Experience Cloud ID Service] 用时建议使用 [DIL](../../dil/dil-overview.md) 和最新版本 [!UICONTROL Profile Merge Rules]。 但是，您不必使用该 [!UICONTROL Experience Cloud ID Service] 功能即可使用。 如果您只是在使用，请 [!UICONTROL DIL]参阅下面的 [传统DIL部分](#legacy-dil) 。
 
 ### 配置“设置客户ID”功能
 
@@ -140,11 +140,16 @@ visitor.setCustomerIDs({
 
 ### 配置函 `DIL.create` 数
 
-现在，最新版本 [!UICONTROL DIL] 会自动从中的 [!UICONTROL declared ID] 函数 `visitorService` 中选取( `DIL.create` 请参阅 [Declared ID Variables](../../features/declared-ids.md#declared-id-variables))。 检查您 `DIL.create` 的函数，确保正确设置，如下面的代码示例所示。
+现在，最新版本 [!UICONTROL DIL] 会自动从中的 [!UICONTROL declared ID] 函数 `visitorService` 中选取( `DIL.create` 请参阅 [Declared ID Variables](../declared-ids.md#declared-id-variables))。 检查您 `DIL.create` 的函数，确保正确设置，如下面的代码示例所示。
 
-<pre class="js"><code>
-var vDil = DIL.create({ partner:"partner name", visitorService:{ namespace:"<i>INSERT-MCORG-ID-HERE</i>" }});
-</code></pre>
+```js
+var vDil = DIL.create({
+   partner:"partner name",
+   visitorService:{
+      namespace:"INSERT-MCORG-ID-HERE"
+   }
+});
+```
 
 在命名空间键值对中， `*`MCORG`*` 变量是您的组 [!DNL Experience Cloud] 织ID。 如果您没有此ID，则可以在仪表板的部分 [!UICONTROL Administration] 找到该 [!DNL Experience Cloud] ID。 您需要管理员权限才能查看此功能板。 See [Administration: Core Services](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html).
 
@@ -156,11 +161,17 @@ var vDil = DIL.create({ partner:"partner name", visitorService:{ namespace:"<i>I
 
 如果你还没用， [!DNL Experience Cloud ID Service] 你真的应该用。 但是，我们理解，要转到新代码，需要仔细思考和测试。 在这些情况下，请检查 `DIL.create` 您的函数，以确保正确设置，如下面的代码示例中所示。
 
-<pre class="js"><code>
-DIL.create({ partner:"partner name", declaredId:{ dpuuid:<i>dpuuid</i>, dpid:<i>dpid</i>}});
-</code></pre>
+```js
+DIL.create({
+   partner: "partner name",
+   declaredId:{
+      dpuuid: YOUR_DPUUID,
+      dpid: YOUR_DPID
+   }
+});
+```
 
-有关详细信息，请参阅“声明的ID变 [!UICONTROL DIL] 量”中的 [旧版部分](../../features/declared-ids.md#declared-id-variables)。
+有关详细信息，请参阅“声明的ID变 [!UICONTROL DIL] 量”中的 [旧版部分](../declared-ids.md#declared-id-variables)。
 
 ### 配置SDK {#configure-sdks-legacy-dil}
 
@@ -185,11 +196,13 @@ DIL.create({ partner:"partner name", declaredId:{ dpuuid:<i>dpuuid</i>, dpid:<i>
    <td colname="col1"> <p> <b> iOS </b> </p> </td> 
    <td colname="col2"> <p> <code> audienceSetDpid:dpuuid </code> </p> <p> <b>语法：</b> </p><p>
     <code class="javascript">
-      +(void)audienceSetDpid:(NSString *)dpuuid:(NSString *)dpuuid; 
+      +&nbsp;(void)&nbsp;audienceSetDpid:(NSString&nbsp;*)dpid 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:(NSString&nbsp;*)dpuuid; 
     </code></p>
     <p> <b>示例：</b> </p><p>
     <code class="javascript">
-      [ADBMobile audienceSetDpid:@"290" dpuuid:@"99301393923940"];
+      [ADBMobile&nbsp;audienceSetDpid:@"290"
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:@"99301393923940"];
     </code></p>
     </td>
   </tr>
