@@ -1,19 +1,19 @@
 ---
-description: 数据文件包含印象、单击或转换数据。 格式正确后，您可以将此数据导入Audience Manager并在“受众优化”报告中查看。 根据本节中的这些规范设置数据文件的格式。
-seo-description: 数据文件包含印象、单击或转换数据。 格式正确后，您可以将此数据导入Audience Manager并在“受众优化”报告中查看。 根据本节中的这些规范设置数据文件的格式。
-seo-title: 用于受众优化报告的数据文件
+description: 数据文件包含印象、单击或转换数据。 格式正确后，您可以将此数据导入Audience Manager，并在“受众优化”报告和可操作日志文件中使用它。 根据本节中的规范设置数据文件的格式。
+seo-description: 数据文件包含印象、单击或转换数据。 格式正确后，您可以将此数据导入Audience Manager，并在“受众优化”报告和可操作日志文件中使用它。 根据本节中的规范设置数据文件的格式。
+seo-title: 受众优化报告的数据文件和可操作的日志文件
 solution: Audience Manager
-title: 用于受众优化报告的数据文件
+title: 受众优化报告的数据文件和可操作的日志文件
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 translation-type: tm+mt
-source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
+source-git-commit: b46fc71ca62c4426732bd6d396637d02206b7c97
 
 ---
 
 
-# 用于受众优化报告的数据文件{#data-files-for-audience-optimization-reports}
+# 受众优化报告的数据文件和可操作的日志文件 {#data-files-for-audience-optimization-reports}
 
-数据文件包含印象、单击或转换数据。 格式正确后，您可以将此数据导入Audience Manager并在“受众优化”报告中查看。 根据本节中的这些规范设置数据文件的格式。
+数据文件包含印象、单击或转换数据。 格式正确后，您可以将此数据导入Audience Manager，以在“受众优化报告”中查看该数据 [，并通过可操作日志文件使用该数](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) 据创建特征 [](/help/using/integration/media-data-integration/actionable-log-files.md)。 根据本节中的这些规范设置数据文件的格式。
 
 ## 概述 {#overview}
 
@@ -25,7 +25,7 @@ source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
 
 以下语法定义格式良好的数据文件名的结构。 注意，斜 *体表示* ，变量占位符会根据文件内容而改变。
 
-**语法：** <pre><code><i>event type</i>_<i>yyyymmdd</i></code></pre>
+**语法：** <pre><i>event type</i>_<i>yyyymmdd</i></code></pre>
 
 在文件名中：
 
@@ -35,15 +35,15 @@ source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
 
 根据这些要求，根据数据文件的内容命名它们，如下所示：
 
-* 印象数据： <pre><code>impressions_<i>yyyymmdd<i>.gz</code></pre>
-* 单击数据： <pre><code>clicks_<i>yyymmdd</i>.gz</code></pre>
-* 转换数据： <pre><code>conversions_<i>yyyymmdd</i>.gz</code></pre>
+* 印象数据： <pre>impressions_<i>yyyymmdd<i>.gz</code></pre>
+* 单击数据： <pre>clicks_<i>yyymmdd</i>.gz</code></pre>
+* 转换数据： <pre>conversions_<i>yyyymmdd</i>.gz</code></pre>
 
 ## 数据文件的内容格式 {#content-format}
 
 以下语法定义格式良好的数据文件中的内容结构。 注意， *斜体表示* 变量占位符，并替换为实际数据文件中的标签。
 
-**语法：** <pre><code><i>标题标签1</i> |标 <i>题标签2</i> ...标 <i>题标签n</i> |版 <i>本</i></code></pre>
+**语法：** <pre><i>标题标签1</i> |标 <i>题标签2</i> ...标 <i>题标签n</i> |版 <i>本</i></code></pre>
 
 在文件内容中：
 
@@ -67,7 +67,7 @@ source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
  <tbody> 
   <tr> 
    <td colname="col1"> <p>时间戳 </p> </td> 
-   <td colname="col2"> <p>UTC印象、单击或转化事件的日期和时间。 使用 <code> yyyy-dd-mm hh:mm:ss</code> 格式。 </p> </td> 
+   <td colname="col2"> <p>UTC印象、单击或转化事件的日期和时间。 使用格 <code> yyyy-dd-mm hh:mm:ss</code> 式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>用户ID </p> </td> 
@@ -125,8 +125,8 @@ source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
    <td colname="col1"> <p>事件类型 </p> </td> 
    <td colname="col2"> <p>转换类型。 指示转换是否匹配。 选项包括： </p> 
     <ul id="ul_DA8230D167F241F2B53F29367874D4B1"> 
-     <li id="li_2BC2EBCAE12541029A5F62AC0785E7FE"> <code> 0</code>:印象 </li> 
-     <li id="li_2A4B1354891144D587624228D8FB5E77"> <code> 1</code>:单击 </li> 
+     <li id="li_2BC2EBCAE12541029A5F62AC0785E7FE"> <code> 0</code>: 展示次数 </li> 
+     <li id="li_2A4B1354891144D587624228D8FB5E77"> <code> 1</code>: 单击 </li> 
      <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>:未归属或未知 </li> 
     </ul> <p> <i>仅适用于转换数据文件。</i> </p> </td> 
   </tr> 
@@ -145,7 +145,7 @@ source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
 
 数据存储在Amazon S3目录中每个客户的单独命名空间中。 文件路径遵循下面显示的语法。 Note, *italics* indicates a variable placeholder. 其他元素是常量或键，不会更改。
 
-**语法：** <pre><code>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>file type</i>_<i>yyymmdd</i></code></pre>
+**语法：** <pre>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>file type</i>_<i>yyymmdd</i></code></pre>
 
 下表定义了文件传送路径中的每个元素。
 
@@ -170,11 +170,11 @@ source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
    <td colname="col2"> <p>此键值对包含在事件调用中传入的数据源ID。 它标识数据来自的机构，并将该数据绑定到支持元数据文件。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 日志</code> </p> </td> 
+   <td colname="col1"> <p> <code> logs</code> </p> </td> 
    <td colname="col2"> <p> 数据文件的更高级别目录。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 文 <i>件类型</i>_<i>yyyymmdd</i></code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>file type</i>_<i>yyyymmdd</i></code> </p> </td> 
    <td colname="col2"> <p>一种文件类型名称，用于指示它包含的数据类型和传送时间戳。 </p> </td> 
   </tr> 
  </tbody> 
