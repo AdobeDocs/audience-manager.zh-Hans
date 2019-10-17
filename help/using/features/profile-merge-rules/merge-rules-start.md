@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 个人资料合并规则入门
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: f53e091b8c069221837af01ad54deeb731cd48e2
 
 ---
 
@@ -62,7 +62,11 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ## 创建配置文件合并规则 {#create-profile-merge-rule}
 
-要创建 [!UICONTROL Profile Merge Rule]，请转到并 **[!UICONTROL Audience Data > Profile Merge Rules > Add New Rule]** 完成此处描述的每个部分的步骤。 在设置跨设备数据源后，最多可创建3个合并规则。 创建、编辑或删除规则需要管理员权限。 所有用户都可以查看和使用现有 [!UICONTROL Profile Merge Rules]。
+要创建 [!UICONTROL Profile Merge Rule]，请转到并 **[!UICONTROL Audience Data > Profile Merge Rules > Add New Rule]** 完成此处描述的每个部分的步骤。
+
+在设置跨设备数据源后，最多可创建3个合并规则。 如果您注册了基于人员的目标，您就可以访问第4个配[!UICONTROL All Cross-Device Profiles]置文件合 [并规则()](../destinations/people-based-destinations-overview.md)。
+
+创建、编辑或删除规则需要管理员权限。 所有用户都可以查看和使用现有 [!UICONTROL Profile Merge Rules]。
 
 <!-- create-profile-merge-rule.xml -->
 
