@@ -4,7 +4,7 @@ audience: 最终用户
 user-guide-title: Audience manager用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: e324a298bf72b223e4ebf5627f3314e1613d3761
 
 ---
 
@@ -178,9 +178,9 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
          + [广告单位重叠](reporting/audience-optimization-reports/aor-publishers/publisher-ad-unit-overlap.md)
          + [区段到广告单元重叠](reporting/audience-optimization-reports/aor-publishers/publisher-segment-ad-unit-overlap.md)
          + [独特的用户触及力](reporting/audience-optimization-reports/aor-publishers/publisher-unique-reach.md)
-      + 受众优化报告的数据和元数据文件 {#data-and-metadata-files}
-         + [受众优化报告的数据和元数据文件](reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
-         + [用于受众优化报告的数据文件](reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
+      + 用于受众优化报告和可操作日志文件的数据和元数据文件 {#data-and-metadata-files}
+         + [ 日志数据和元数据文件](reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
+         + [受众优化报告的数据文件和可操作的日志文件](reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
          + [元数据文件的概述和映射](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
          + [元数据文件的命名约定](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)
          + [元数据文件的内容格式](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md)
@@ -322,6 +322,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
       + [将Audience manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
       + [实施受众管理模块](integration/integration-other-solutions/audience-management-module.md)
       + [服务器端转发（管理指南）](https://docs.adobe.com/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)
+      + [将Adobe Analytics区段发布到Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-publish-audience-segment.html)
 + 参考{#reference}
    + [参考概述](reference/reference.md)
    + [Amazon S3:关于](reference/amazon-s3.md)
