@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 可操作的日志文件
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 translation-type: tm+mt
-source-git-commit: e324a298bf72b223e4ebf5627f3314e1613d3761
+source-git-commit: b258c7dbdcf359394fbdcad6511c4113f8d88d91
 
 ---
 
@@ -244,6 +244,16 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 ```
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_activity=1234&d_creative=24122&d_placemebt=3442&d_bu=3983524&d_campaign=7321391&d_adsrc=11111
 ```
+
+## 在Audience Manager UI中处理可操作信号 {#actionable-signals-in-ui}
+
+您可以使用“可操作日志文件”选 [择在“信号搜索](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md) ”界面中查看传入 **的可操作信号** 。
+
+![UI中可操作的信号](/help/using/integration/assets/alf-in-signals.png)
+
+要使用可操作信号创建基于规则的特征，请选择可操作的日志文件 **，选择要用作特征规则的可操作信号，然后按** Create Trait from Selected Signals ****。
+
+![从信号创建特征](/help/using/integration/assets/alf-create-trait.png)
 
 ## 用例 {#use-cases}
 
