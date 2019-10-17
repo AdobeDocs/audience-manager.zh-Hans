@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 已定义配置文件合并规则选项
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 translation-type: tm+mt
-source-git-commit: aebb6b8d3653197642ec591bc35bde50d4e7abb4
+source-git-commit: 3a272e31fd388e2b15245f231f11ecf68a7d55e9
 
 ---
 
@@ -84,7 +84,7 @@ source-git-commit: aebb6b8d3653197642ec591bc35bde50d4e7abb4
 
 ## 设备选项 {#device-options}
 
-您 [!UICONTROL Device Options] 可以选择用 *`device profile`* 于的类型 [!UICONTROL Profile Merge Rule]。 设备配置文件由用户匿名浏览Web时收集到的特征组成。 配置文件合并规则至少包括经过身份验证的选项和设备选项。
+您 [!UICONTROL Device Options] 可以选择用 *`device profile`* 于的类型 [!UICONTROL Profile Merge Rule]。 设备配置文件是根据从匿名浏览活动收集的特征构建的。 配置文件合并规则至少包括经过身份验证的选项和设备选项。
 
 <table id="table_D373FB787D1A4E3485C02C4A76F03395"> 
  <thead> 
