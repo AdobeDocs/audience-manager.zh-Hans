@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 出站数据文件名语法和示例
 uuid: effdcaf6-c37c-45f3-9d2f-a938a9da47a6
 translation-type: tm+mt
-source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
+source-git-commit: b32283a6cb3d001f0a1fc85f3e63fba651f32760
 
 ---
 
@@ -60,7 +60,7 @@ source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
       <li id="li_94DAFA169380405981AFEF1B581997E6">20914 - <span class="keyword"> Google广告商ID( </span> 原始，未哈希) </li> 
       <li id="li_DE74BE06331C49CF87606A192D815B96">20915 - <span class="keyword"> Apple ID for Advertisers(原始 </span> 、未哈希) </li> 
       <li id="li_E0A033FEC3174EF08E93EB7C65266337">供应商ID —— 第三方用户ID(Web/cookie) </li> 
-     </ul> </p> </td> 
+     </ul> </p> <p>有关更 <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">多详细信息</a> ，请参阅全局数据源。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>PID_ALIAS </i></code> </p> </td> 
@@ -68,14 +68,14 @@ source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>SYNC_MODE </i></code> </p> </td> 
-   <td colname="col2"> <p>同步模式是一个宏占位符，用于根据同步类型向文件名添加标签。 同步类型包括完全和增量。 它们将以iter或full的形式显示在文 <code> 件 </code> 名 <code> 中 </code>。 </p> 
+   <td colname="col2"> <p>同步模式是一个宏占位符，用于根据同步类型向文件名添加标签。 同步类型包括完全和增量。 它们将以或的形式出现在文件名 <code> iter </code> 中 <code> full </code>。 </p> 
     <ul id="ul_3B3585CEF1434951B6FDCDD29E5013CD"> 
      <li id="li_947D94E9CFAC4041AC1AAEB191805529"> <code> iter </code>:表示“迭代”或增量同步。 增量文件仅包含自上次同步以来收集的新数据。 </li> 
-     <li id="li_13ADB3B3346943DAA767A1F416482D3C"> <code> 完整 </code>:指示“完全”同步。 完全同步的文件包含旧数据和自上次同步以来收集的任何新数据。 </li> 
+     <li id="li_13ADB3B3346943DAA767A1F416482D3C"> <code> full </code>:指示“完全”同步。 完全同步的文件包含旧数据和自上次同步以来收集的任何新数据。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code><i>时间戳 </i></code> </p> </td> 
+   <td colname="col1"> <p> <code><i>TIMESTAMP </i></code> </p> </td> 
    <td colname="col2"> <p>UTC时区中的13位UNIX时间戳（以毫秒为单位）。 </p> </td> 
   </tr> 
   <tr> 
@@ -83,7 +83,7 @@ source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
    <td colname="col2"> <p>整数。 识别被分割为多个部分的文件的一部分，以缩短处理时间。 数字指示数据所属的原始文件的哪一部分。</p>  <p>如果拆分大小小于100个部分，则该整数必须至少长3位，前面加零。</p>  <p>原始文件没有任何拆分号。 第一个拆分文件将以001结束。 请参阅以下示例。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code><i>.gz（可选） </i></code> </p> </td> 
+   <td colname="col1"> <p> <code><i>.gz (optional) </i></code> </p> </td> 
    <td colname="col2"> <p>GZIP压缩。 </p> </td> 
   </tr> 
  </tbody> 
@@ -99,15 +99,15 @@ source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
 
 <ul class="simplelist"> 
  <li> <code> S3_1234_20914_XYZCustomer_iter_1486140844000.sync.gz </code> </li> 
- <li> <code> S3_1234_20914_XYZCustomer_iter_148614084000001.sync.gz </code> </li> 
- <li> <code> S3_1234_20914_XYZCustomer_iter_148614084000002.sync.gz </code> </li> 
+ <li> <code> S3_1234_20914_XYZCustomer_iter_1486140844000001.sync.gz </code> </li> 
+ <li> <code> S3_1234_20914_XYZCustomer_iter_1486140844000002.sync.gz </code> </li> 
 </ul>
 
 例如，完整文件：
 
 <ul class="simplelist"> 
  <li> <code> S3_1234_20914_XYZCustomer_full_1486140844000.sync.gz </code> </li> 
- <li> <code> S3_1234_20914_XYZCustomer_full_148614084000001.sync.gz </code> </li> 
+ <li> <code> S3_1234_20914_XYZCustomer_full_1486140844000001.sync.gz </code> </li> 
 </ul>
 
 ### 场景2
@@ -178,7 +178,7 @@ source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
    <td colname="col2"> <p>由 <span class="keyword"> Audience Manager分配的唯一用户ID </span>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code><i>&lt;空格&gt; </i></code> </p> </td> 
+   <td colname="col1"> <p> <code><i>&lt;SPACE&gt; </i></code> </p> </td> 
    <td colname="col2"> <p>用空格分隔UUID和段数据 </p> </td> 
   </tr> 
   <tr> 
