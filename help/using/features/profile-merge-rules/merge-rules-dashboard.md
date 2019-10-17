@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 配置文件合并规则功能板
 uuid: d6725218-7b36-4653-9900-d67b5f7702a0
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: f53e091b8c069221837af01ad54deeb731cd48e2
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 使用时， [!UICONTROL Profile Merge Rules]您可以：
 
-* 从跨设备数据源创建最多4个规则。 请参 [阅创建跨设备数据源](merge-rules-start.md#create-data-source)。
+* 从跨设备数 [!UICONTROL Profile Merge Rules] 据源最多创建4个。 请参 [阅创建跨设备数据源](merge-rules-start.md#create-data-source)。
 * 指定默认合并规则。 [区段生成器](../segments/segment-builder.md) (Segment Builder)会自动将默认规则应用于您创建的任何新区段。
 * 对合 [并规则应用](../data-export-controls.md) “数据导出控件”。 [!UICONTROL Data Export Controls] 在违反数据隐私或使用协议的情况下，阻止您向目标发送数据。
 * 跟踪每个用户的平均设备数。
