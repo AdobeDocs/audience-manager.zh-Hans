@@ -6,12 +6,12 @@ solution: Audience Manager
 title: 已定义配置文件合并规则选项
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: aebb6b8d3653197642ec591bc35bde50d4e7abb4
 
 ---
 
 
-# Profile Merge Rule Options Defined {#profile-merge-rule-options-defined}
+# Profile Merge Rules Options Defined {#profile-merge-rule-options-defined}
 
 通过合并规则选项，您可以控制Audience manager用于细分的数据类型。 合并规则可以包括由设备图、和/ [!UICONTROL Profile Link] 或与Audience manager集成的其 [!UICONTROL Adobe Experience Cloud Device Co-op]他第三方设备图提供者映射的设备配置文件。 最多可创建4个 [!UICONTROL Profile Merge Rules]。 第四 [!UICONTROL Profile Merge Rule] 项仅适用于购买该加载项 [!UICONTROL People-Based Destinations] 的客户。
 
