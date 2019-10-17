@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 配置文件合并规则和设备取消分段过程
 uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: 54ae5956a34c193d42d4ff9a231249d56cce87aa
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 [!DNL Audience Manager] 在您使用+选项时，可以从区段中删 [!UICONTROL Profile Merge Rule] 除跨设 **[!UICONTROL Current Authenticated Profiles]** 备ID **[!UICONTROL No Device Profile]** 。 在这些情况下，当跨设备ID不再符合区段资格时，会发生取消分段，因为对跨设备配置文件的更新或更改将取消分段资格。 当区段资格条件发生更改，或者您对区段规则应用运算符，或者指定使用小于／等于设置的 [!UICONTROL AND NOT] 最近和频率条件时 [](../segments/recency-and-frequency.md) ，会发生这种情况。 “即时跨设备抑制”文 [档中介绍了用例](instant-cross-device-suppression.md) 。
 
-![](../assets/current-no-device.png)
+![](assets/current-no-device.png)
 
 ## 设备图选项和设备取消分段 {#device-graph-options-unsegmentation}
 
