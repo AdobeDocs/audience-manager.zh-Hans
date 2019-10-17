@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 外部设备图形使用案例
 uuid: f4bc822d-39d2-4680-90ed-7ee2ead6db6f
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: 54ae5956a34c193d42d4ff9a231249d56cce87aa
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 * 瞄准大型受众。 第三 [!DNL Experience Cloud Device Co-op] 方设备图形包含经过身份验证和未经过身份验证的数据。
 * 在个人和家庭层面对经过身份验证和／或未经身份验证的访客进行细分。
 
-![](../assets/merge-rule-triangle1.png)
+![](assets/merge-rule-triangle1.png)
 <!-- 
 ## Prospecting/Branding Use Case {#prospecting-branding-use-cases}
 
@@ -127,5 +127,5 @@ John使用其iPhone 7在数据计划A上进行身份验证。 同时，John的�
 >
 >* [配置文件链接设备图形使用案例](profile-link-use-case.md)
 >* [配置文件合并规则的一般用例](merge-rule-targeting-options.md)
->* [个人资料合并规则常见问题解答](faq-profile-merge.md)
+>* [个人资料合并规则常见问题解答](../../faq/faq-profile-merge.md)
 
