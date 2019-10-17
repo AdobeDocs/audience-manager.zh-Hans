@@ -7,28 +7,28 @@ keywords: GDPR UI, GDPR API
 title: Audience Manager 中的 GDPR
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 5661bcef9816b6646ee63ebc6c19b730c1ccadc9
+source-git-commit: b32283a6cb3d001f0a1fc85f3e63fba651f32760
 
 ---
 
 
 # Audience Manager 中的 GDPR{#gdpr-in-audience-manager}
 
-This document covers the technicalities related to the General Data Protection Regulation (GDPR) for Audience Manager and shows you how to submit GDPR requests to Audience Manager.
+本文档涵盖与Audience manager的一般数据保护规定(GDPR)相关的技术细节，并向您展示如何向Audience manager提交GDPR请求。
 
-## GDPR Documentation in the Experience Cloud {#gdpr-documentation}
+## Experience cloud中的GDPR文档 {#gdpr-documentation}
 
-Before reading the Audience Manager specifics, we advise you go through the Experience Cloud material for the European General Data Protection Regulation (GDPR), linked below:
+在阅读Audience manager的具体信息之前，我们建议您阅读下面链接的欧洲一般数据保护规定(GDPR)的Experience cloud材料：
 
 * [GDPR与您的业务](https://www.adobe.com/privacy/general-data-protection-regulation.html)
-* [GDPR Whitepaper](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-whitepaper.md)
+* [GDPR白皮书](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-whitepaper.md)
 * [GDPR 术语](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-terminology.md)
 
 以下各节将说明GDPR对Audience manager的意义，以及您如何向Audience manager提交GDPR请求。
 
-## Types of GDPR Requests and How to Make a GDPR Request {#types-of-gdpr-requests}
+## GDPR请求类型及GDPR请求的提出 {#types-of-gdpr-requests}
 
-As an Audience Manager customer, you can submit individual GDPR requests to access and delete customer data, either through the Privacy Service UI (UI link here and documentation here) or by calling the Privacy Service API (documentation here and API reference here). ****[](https://gdprui.cloud.adobe.io/)[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)****[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)[](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)You can submit any Audience Manager identifiers (IDs), as described in the section **[Audience Manager Identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)**, in the requests along with their respective namespace IDs (data source IDs). If you have questions, please reach out to Customer Care at gdprsupport@adobe.com.
+作为Audience manager客户，您可以通过隐私服务 **(** GDPR链接，此处和[](https://gdprui.cloud.adobe.io/)[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)****[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)[](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)此处)或通过调用隐私服务API（在此处调用隐私服务API）（Audience Manager客户参考）(在此处调用隐私服务API(ChereCherePricy AdPi)客户文档)))，提交访问和删除客户数据的个人GDPR请求。 You can submit any Audience Manager identifiers (IDs), as described in the section **[Audience Manager Identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)**, in the requests along with their respective namespace IDs (data source IDs). 如果您有任何疑问，请通过gdprsupport@adobe.com联系客户服务。
 
 ## 访问数据 {#access-data}
 
@@ -44,7 +44,7 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
 
 **响应状态**
 
-如果响应中有来自Audience manager的任何错误，则这些错误会作为错误代码在响应中显示。 We have a list of error codes, where you can find more information about the returned errors.[](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
+如果响应中有来自Audience manager的任何错误，则这些错误会作为错误代码在响应中显示。 我们有一 [个错误代码列表](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)，您可以在其中找到有关返回错误的更多信息。
 
 **示例响应**
 
@@ -154,11 +154,11 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
    <td colname="col2"> <p>命名空间/数据源 ID。请参 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 阅Audience Manager标识符(ID)</a> ，了解所有已接受的值。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 集成代码 </code> </p> </td> 
+   <td colname="col1"> <p> <code> integration code </code> </p> </td> 
    <td colname="col2"> <p>集成代码是数据源的易记名称，与使用数据源ID相比，它可以帮助您更轻松地跟踪数据源。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 数据提供程序名称 </code> </p> </td> 
+   <td colname="col1"> <p> <code> data provider name </code> </p> </td> 
    <td colname="col2"> <p>数据源所有者的名称。 
      <ul id="ul_5CEAF23C28154662AFC443D3494107D3"> 
       <li id="li_EC2DA09F618D4225B655ADF455C0D654">对于第一方数据，这是客户自己的公司名称。 </li> 
@@ -168,31 +168,31 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> type </code> </p> </td> 
-   <td colname="col2"> <p>您请求访问 GDPR 数据的 ID 类型。Accepted types are listed in the  Audience Manager Identifiers section.<a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"></a> </p> </td> 
+   <td colname="col2"> <p>您请求访问 GDPR 数据的 ID 类型。接受的类型列在Audience Manager标识符 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 部分中</a> 。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 警告</code> </p> </td> 
-   <td colname="col2"> <p>Warnings return further information related to the data access request. </p> </td> 
+   <td colname="col1"> <p> <code> warnings</code> </p> </td> 
+   <td colname="col2"> <p>警告会返回与数据访问请求相关的进一步信息。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> title </code> </p> </td> 
-   <td colname="col2"> <p>Brief information about the warning. </p> <p>The two warnings you may receive are: </p> <p> 
+   <td colname="col2"> <p>有关警告的简要信息。 </p> <p>您可能收到的两个警告是： </p> <p> 
      <ul id="ul_34019A1529594DC7B2566913937EAF0C"> 
-      <li id="li_F0104BE3D5FE4DB7BA54195504E260E9">Device Data </li> 
-      <li id="li_8A22D9F9A1454AFDBC4CAF942E80498F">Incomplete request </li> 
+      <li id="li_F0104BE3D5FE4DB7BA54195504E260E9">设备数据 </li> 
+      <li id="li_8A22D9F9A1454AFDBC4CAF942E80498F">未完成请求 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> description </code> </p> </td> 
-   <td colname="col2"> <p>A more detailed description of the warning you received: </p> <p> 
+   <td colname="col2"> <p>您收到的警告的更详细描述： </p> <p> 
      <ul id="ul_78E03ABA52674E07A48835FDD3431FF8"> 
       <li id="li_6BB6D58660594CA0B1A89804F2FC6274">设备数据——包含来自此设备所有用户的数据 </li> 
       <li id="li_E328D5BF066C4E7E8CCCDCAA5E91CCDC">请求不完整——未完成Audience manager数据的检索。 某些信息可能缺失。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 数据 </code> </p> </td> 
-   <td colname="col2"> <p>The traits and segments associated with this user ID. </p> </td> 
+   <td colname="col1"> <p> <code> data </code> </p> </td> 
+   <td colname="col2"> <p>与此用户ID关联的特征和区段。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> traits </code> </p> </td> 
@@ -200,27 +200,27 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> name</code> </p> </td> 
-   <td colname="col2"> <p>The name of the trait. </p> </td> 
+   <td colname="col2"> <p>特征的名称。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> type</code> </p> </td> 
-   <td colname="col2"> <p>The trait type. 可能的值包括： </p> <p> 
+   <td colname="col2"> <p>特征类型。 可能的值包括： </p> <p> 
      <ul id="ul_DBAC618D9FE94B17B2494B83832A969F"> 
-      <li id="li_740F2DCA8F2A4A22A7D9988ECD2FC976"> <i>First party for your own traits.</i> </li> 
-      <li id="li_D9354F40FD114802819191450F2375C8"> <i>Second party for traits that belong to your partners. </i>Read our  Second Party Data article for more information.<a href="../../overview/data-types-collected.md#second-party-data"></a> </li> 
+      <li id="li_740F2DCA8F2A4A22A7D9988ECD2FC976"> <i>第一方</i> ，针对您自己的特征。 </li> 
+      <li id="li_D9354F40FD114802819191450F2375C8"> <i>第二方</i> ，指属于您的合作伙伴的特征。 请阅读我们 <a href="../../overview/data-types-collected.md#second-party-data"> 的第二方数据文章</a> ，了解更多信息。 </li> 
       <li id="li_C321D8B8256F4102AE64CD40DC57C948"> <i>第三方</i> ，用于通过Audience Marketplace从数据合作伙伴获取 <a href="../../features/audience-marketplace/audience-marketplace.md"> 的特征</a>。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> description</code> </p> </td> 
-   <td colname="col2"> <p>用几个词来描述特质的目的或功能。 This is an optional field. </p> </td> 
+   <td colname="col2"> <p>用几个词来描述特质的目的或功能。 这是一个可选字段。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 数据导出控件</code> </p> </td> 
+   <td colname="col1"> <p> <code> data export controls</code> </p> </td> 
    <td colname="col2"> <p>应用 <a href="../../features/data-export-controls.md"> 于此特征的数据源</a> ，数据导出控件。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 数据提供程序名称</code> </p> </td> 
+   <td colname="col1"> <p> <code> data provider name</code> </p> </td> 
    <td colname="col2"> <p>此特征所属的数据源所有者的名称。 
      <ul id="ul_D2D424E903A143779342D35D6F625656"> 
       <li id="li_55B3A40A6CD24A25B5AAFD07AD28F662">对于第一方数据，这是客户自己的公司名称。 </li> 
@@ -229,11 +229,11 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 最后实现</code> </p> </td> 
-   <td colname="col2"> <p>The exact time that the Data Subject last qualified for this trait. 日期格式为YYYY-MM-DD。 </p> </td> 
+   <td colname="col1"> <p> <code> last realization</code> </p> </td> 
+   <td colname="col2"> <p>数据主体上次限定此特征的确切时间。 日期格式为YYYY-MM-DD。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 区段 </code> </p> </td> 
+   <td colname="col1"> <p> <code> segments </code> </p> </td> 
    <td colname="col2"> <p>此用户所属的区段。 </p> </td> 
   </tr> 
   <tr> 
@@ -245,11 +245,11 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
    <td colname="col2"> <p>用几个词帮助描述此部分。 这是一个可选字段。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 数据导出控件</code> </p> </td> 
+   <td colname="col1"> <p> <code> data export controls</code> </p> </td> 
    <td colname="col2"> <p>应用 <a href="../../features/data-export-controls.md"> 于此段数据源</a> 的数据导出控件。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 数据提供程序名称</code> </p> </td> 
+   <td colname="col1"> <p> <code> data provider name</code> </p> </td> 
    <td colname="col2"> <p>此区段所属的数据源所有者的名称。 
      <ul id="ul_D437D149BDBE470489D1DD03CF47841C"> 
       <li id="li_90133644911A49AEB0DB209BCAC8E789">对于第一方数据，这是客户自己的公司名称。 </li> 
@@ -258,15 +258,15 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 最后实现</code> </p> </td> 
+   <td colname="col1"> <p> <code> last realization</code> </p> </td> 
    <td colname="col2"> <p>数据主体上次限定此区段的准确时间。 日期格式为YYYY-MM-DD。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> active</code> </p> </td> 
-   <td colname="col2"> <p>指示数据主体当前是否符合此区段的条件。 Returns <code><i>true</i></code> or <code><i>false</i></code>. </p> </td> 
+   <td colname="col2"> <p>指示数据主体当前是否符合此区段的条件。 退回 <code><i>true</i></code> 或 <code><i>false</i></code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 链接 </code> </p> </td> 
+   <td colname="col1"> <p> <code> links </code> </p> </td> 
    <td colname="col2"> <p>此ID已链接到的其他ID。 信息返回于： </p> <p> 
      <ul id="ul_679F372A83164CC8B6BFE5A833347B9E"> 
       <li id="li_BCBF4F4C6C4049519BDE9186EE84868A">ID </li> 
@@ -279,20 +279,20 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> linking datetime</code> </p> </td> 
-   <td colname="col2"> <p>The exact time that an ID sync event made the link between IDs. The date format is YYYY-MM-DD. </p> </td> 
+   <td colname="col2"> <p>ID sync事件在ID之间建立链接的确切时间。 日期格式为YYYY-MM-DD。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> device metadata </code> </p> </td> 
-   <td colname="col2"> <p>有关设备的信息。 此信息包括以下字段。 Note that not all fields are returned for all device types. </p> <p> 
+   <td colname="col2"> <p>有关设备的信息。 此信息包括以下字段。 注意，并非所有设备类型都返回所有字段。 </p> <p> 
      <ul id="ul_F0031D50DF074634A428DBC73F958159"> 
-      <li id="li_4E26042A6B8D4397829F30B7BC7A2D6E"> <p>Hardware information </p> </li> 
+      <li id="li_4E26042A6B8D4397829F30B7BC7A2D6E"> <p>硬件信息 </p> </li> 
       <li id="li_99A049D585A9440EA79F57A3B03181AB"> <p>设备制造商 </p> </li> 
       <li id="li_290F92FC3F6449EFBC4E7870B62AFE8B"> <p>设备的营销名称 </p> </li> 
-      <li id="li_FC37954CE133471398352240A8B0478F"> <p>The device model </p> </li> 
-      <li id="li_D54AEB0527C34E32A8AEEAEDEA5AD1B2"> <p>The name of the device's Operating System (OS) </p> </li> 
-      <li id="li_0B343C4599344E1791B35A56EBBDC567"> <p>The version of the OS </p> </li> 
+      <li id="li_FC37954CE133471398352240A8B0478F"> <p>设备型号 </p> </li> 
+      <li id="li_D54AEB0527C34E32A8AEEAEDEA5AD1B2"> <p>设备的操作系统(OS)的名称 </p> </li> 
+      <li id="li_0B343C4599344E1791B35A56EBBDC567"> <p>操作系统版本 </p> </li> 
       <li id="li_634B391D95104C42A43D6EFA95F3C0D3"> <p>设备供应商 </p> </li> 
-     </ul> </p> <p> <p>注意： We only return device metadata when you submit either one of: 
+     </ul> </p> <p> <p>注意：只有在您提交以下任一项时，我们才会返回设备元数据： 
       <ul id="ul_2692AF4D28DB44FEAF5F657397F58D32"> 
        <li id="li_FBA2446BB5914772AF24D12B32D9DF1B">移动ID </li> 
        <li id="li_FBC45D16DEFE49CF91A7A541402A3BF3">Audience Manager ID </li> 
@@ -312,7 +312,7 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
 
 **响应**
 
-为响应数据删除请求，我们会删除与相应Audience manager标识符关联的特征和区段。 此外，Audience manager将永久选择不再收集更多数据，并删除相应的Id映射。 When declared IDs such as cross device CRM Ids or customer cookie ids are sent in GDPR requests, Audience Manager will perform the necessary Delete actions on all the linked devices (up to 100 devices per declared ID).
+为响应数据删除请求，我们会删除与相应Audience manager标识符关联的特征和区段。 此外，Audience manager将永久选择不再收集更多数据，并删除相应的Id映射。 当在GDPR请求中发送跨设备CRM ID或客户cookie ID等声明的ID时，Audience manager将对所有链接的设备（每个声明的ID最多可有100台设备）执行必要的删除操作。
 
 ## 退出请求 {#opt-out-request}
 
@@ -388,13 +388,13 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
 
 **定义**:Adobe Experience Cloud ID，以前称为访客ID或Marketing Cloud ID
 
-**Namespace ID**: 4
+**命名空间ID**:4
 
 >[!NOTE]
 >
 >您还可以使用ECID命名空间。 请参阅第二个JSON示例。
 
-**Example in JSON:**
+**JSON中的示例**:
 
 ```
  "users": [
@@ -444,13 +444,13 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
 
 ### Customer ID
 
-**User ID: cid**
+**用户ID**:cid
 
-**Definition: Customer ID, such as a cookie you set for anonymous site visitors or a CRM ID from an offline system or a hashed username**
+**定义**:客户ID，如您为匿名网站访客设置的Cookie，或来自脱机系统的CRM ID，或哈希用户名
 
-**Namespace ID: Customer-specific.** Please find it from your Audience Manager instance.
+**命名空间ID**:客户特定。 请从您的Audience manager实例中查找它。
 
-**Example in JSON:**
+**JSON中的示例**:
 
 ```
 "users": [
@@ -491,8 +491,10 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
 
 **命名空间 ID**:
 
-* IDFA: 20915
+* IDFA:二〇九一五年
 * GAID:二〇九一四年
+
+有关更 [多详细信息](../../features/global-data-sources.md) ，请参阅全局数据源。
 
 **JSON中的示例**:
 
@@ -519,9 +521,9 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
 ]
 ```
 
-### Integration code
+### 集成代码
 
-**User ID: d_cid_ic**
+**用户ID**:d_cid_ic
 
 **定义**:数据源的集成代码。 在向Adobe Experience Cloud隐私核心服务发出的API请求中，可以使用它代替数据源ID /命名空间ID。
 
