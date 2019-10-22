@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 配置文件合并规则的一般用例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: 532c69981ebc082bd411a9232e9ef207b59dace5
 
 ---
 
@@ -61,11 +61,15 @@ Audience manager将合并每台设备+跨设备配置文件对，以查看合并
 
 ![家庭管理](assets/household-management.png)
 
-## 基于人员的定位 {#all-cross-device}
+## 针对基于人员的目标进行定位 {#all-cross-device}
+
+> [!IMPORTANT]
+>
+> 本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
 此定位方案仅适用于已购买该加载项 [!DNL People-Based Destinations] 的客户。 此规则允许营销人员根据自己的实名数据接触客户。
 
-假设一家在线零售商希望通过社交平台接触现有客户并根据先前的订单向他们展示个性化的推广信息。 通过 [!UICONTROL People-Based Destinations][!DNL CRM] 它们，他们可以将散列的电子邮件地址从自己收集到Audience Manager中，从离线数据中构建细分，并将这些细分发送到他们要投放广告的社交平台，从而优化其广告支出。
+假设一家在线零售商希望通过社交平台接触现有客户并根据先前的订单向他们展示个性化的推广信息。 通过 [!UICONTROL People-Based Destinations][!DNL CRM] 它，他们可以将散列的电子邮件地址从自己的Audience manager中摄取，从离线数据构建区段，并将这些区段发送到他们要投放广告的社交平台，使用散列的标识符优化其广告支出。
 
 要进一步了解此选项，请参 [阅基于人员的目标](../destinations/people-based-destinations-overview.md)。
 
