@@ -1,12 +1,13 @@
 ---
 description: 单个特征的详细信息页面提供了特征名称、ID、性能度量、定义特征的表达式、属于该特征的段和特征审核日志等信息的概述。 要查看这些详细信息，请转到“受众数据”>“特征”，然后单击要处理的特征的名称。
 seo-description: 单个特征的详细信息页面提供了特征名称、ID、性能度量、定义特征的表达式、属于该特征的段和特征审核日志等信息的概述。 要查看这些详细信息，请转到“受众数据”>“特征”，然后单击要处理的特征的名称。
-seo-title: ' “特征详细信息”页'
+seo-title: “特征详细信息”页
 solution: Audience Manager
-title: ' “特征详细信息”页'
+title: “特征详细信息”页
 uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
+keywords: 身份类型细分，身份细分，受众身份报告
 translation-type: tm+mt
-source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
+source-git-commit: 345042673a9ee7abdac994d774e5c4c893a78749
 
 ---
 
