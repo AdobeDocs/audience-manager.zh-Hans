@@ -5,7 +5,7 @@ seo-title: 基于人员的目标概述和使用案例
 solution: Audience Manager
 title: 概述和使用案例
 translation-type: tm+mt
-source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
+source-git-commit: d70b77b082078d4122f8b902b089d8c4a3fb923a
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 * 消除与第三方数据入门解决方案相关的成本；
 * 消除与开发定制化数据载入工作流程相关的成本；
 * 在无Cookie的环境中定位受众；
-* 通过删除与客户ID匹配的重复电子邮件地址来定位受众。
+* 通过删除与客户ID匹配的重复哈希电子邮件地址来定位受众。
 
 您可以使用 [!DNL People-Based Destinations] 来细分和定位可能未访问过您网站的高价值客户，或停止定位已脱机转换的客户。 此外，您还可 [!DNL Profile Merge Rules] 以利用线下第一方数据与在线第一方数据（包括来自其他Adobe Experience cloud解决方案的客户数据）相结合，优化您的社交媒体广告工作。
 
