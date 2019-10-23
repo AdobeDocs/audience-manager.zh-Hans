@@ -4,7 +4,7 @@ audience: 最终用户
 user-guide-title: Audience manager用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: e324a298bf72b223e4ebf5627f3314e1613d3761
+source-git-commit: 5f71883da6c20b2a4522d9dd2715b3a981cb0be9
 
 ---
 
@@ -318,6 +318,8 @@ source-git-commit: e324a298bf72b223e4ebf5627f3314e1613d3761
          + [入站数据传输文件的文件压缩](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
          + [入站处理后发送给合作伙伴的示例消息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [自定义合作伙伴集成](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
+   + 与Adobe Experience platform集成 {#integration-experience-platform}
+      + [受众共享](integration/integration-aep/aam-aep-audience-sharing.md)
    + 与其他Experience cloud解决方案集成 {#integration-other-solutions}
       + [将Audience manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
       + [实施受众管理模块](integration/integration-other-solutions/audience-management-module.md)
