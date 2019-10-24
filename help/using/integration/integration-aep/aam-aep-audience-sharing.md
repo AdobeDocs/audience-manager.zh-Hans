@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager与Adobe Experience Platform之间的受众共享
 keywords: AEP受众共享、AEP细分、平台细分
 translation-type: tm+mt
-source-git-commit: 421f15b79fa647bf4fbf71a425c7f7792fb302e5
+source-git-commit: e081e31380d4600883f927b5ecef3b38be2a676e
 
 ---
 
@@ -36,9 +36,9 @@ Audience manager和Adobe Experience Platform之间的受众共享功能允许您
 
 有关受众共享用例的概述，请参阅下表：
 
-| `*` | **Adobe Experience Platform** | **Audience Manager** | **核心服务** |
+| **用例** | **Adobe Experience Platform** | **Audience Manager** | **核心服务** |
 ---------|----------|---------|---------
-| **受众共享用例** | <ul><li>利用Audience manager数据丰富客户档案</li><li>在Experience platform细分中使用Audience Manager数据</li></ul> | <ul><li>将第三方数据添加到区段</li><li>算法建模</li><li>激活到其他目标</li></ul> | 在Adobe target或Analytics等其他Experience cloud解决方案中使用Experience platform细分。 |
+| **受众共享** | <ul><li>利用Audience manager数据丰富客户档案</li><li>在Experience platform细分中使用Audience Manager数据</li></ul> | <ul><li>将第三方数据添加到区段</li><li>算法建模</li><li>激活到其他目标</li></ul> | 在Adobe target或Analytics等其他Experience cloud解决方案中使用Experience platform细分。 |
 
 <br> 
 
