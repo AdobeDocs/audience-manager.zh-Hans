@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 入站客户数据摄取常见问题解答
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
 translation-type: tm+mt
-source-git-commit: 28d1292140a56cf1627a8921876d9483221876ca
+source-git-commit: e081e31380d4600883f927b5ecef3b38be2a676e
 
 ---
 
@@ -82,27 +82,27 @@ Removed the Data Translation File bullet from the list above.
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>用例 1</b> </p> </td> 
-   <td colname="col2"> <p>星期一，在CRM数据库中标识为访客ABC的访客登录，这将启动客户端ID同步。 <span class="keyword"> Audience Manager存储访客ABC到</span> Audience Manager访客 <span class="keyword"></span> 123的映射。 </p> <p>星期二，CRM数据库将一个数据文件(<span class="filepath"> .sync</span>)传输到 <span class="keyword"> Audience Manager服 </span>务器，记录如下： </p> <p> 
+   <td colname="col2"> <p>星期一，在CRM数据库中标识为访客ABC的访客登录，这将启动客户端ID同步。 <span class="keyword"> Audience Manager存储访客ABC到</span> Audience Manager访客 <span class="keyword"></span> 123的映射。 </p> <p>星期二，CRM数据库将一个数据文件(<span class="filepath"> .sync</span>)传输到Audience Manager服 <span class="keyword"> 务 </span>器，并记录如下： </p> <p> 
      <ul class="simplelist"> 
       <li><code> ABC "gender"="male","luxury_shopper"="yes"</code> </li> 
      </ul> </p> <p>在这种情况下， <span class="keyword"> Audience Manager</span>: </p> <p> 
      <ul id="ul_7616432BF9874E7D94F3101C71F73C81"> 
       <li id="li_DC4F5E63D8134A29B703BDF264F02F65">通过存储的ID同步映射识别访客ABC。 </li> 
-      <li id="li_62E085FC184D41C3863B1CE832F77946"> 将traits male <code> 和luxury</code> _ <code> shopper与访客</code> 123个人资料相关联。 </li> 
+      <li id="li_62E085FC184D41C3863B1CE832F77946"> 将特征与访 <code> male</code> 客123 <code> luxury_shopper</code> 个人资料相关联。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>用例 2</b> </p> </td> 
    <td colname="col2"> <p>星期一，CRM数据库将数据文件(<span class="filepath"> .sync</span>)推送到 <span class="keyword"> Audience Manager</span> Server，并记录如下： </p> <p> 
      <ul class="simplelist"> 
-      <li><code> DEF "gender"="mewale","wine_envoider"="yes"</code> </li> 
+      <li><code> DEF "gender"="female","wine_enthusiast"="yes"</code> </li> 
      </ul> </p> <p> <span class="keyword"> Audience Manager没有此访客（或关联的访客ID）的记录，因此不会处理此记录。</span> </p> <p>星期二，访客DEF登录。 此操作将启动该访客的第一个客户端ID同步。 此操作将访客DEF映射到 <span class="keyword"> Audience Manager</span> ID 456。 但是，此访客没有与其个人资料关联的CRM数据。 因此， <span class="keyword"> Audience Manager</span> 不会返回并重新处理旧文件。 </p> <p>星期三，CRM数据库将另一个数据文件推送到 <span class="keyword"> Audience Manager</span> Server，并且记录如下： </p> <p> 
      <ul class="simplelist"> 
-      <li><code> DEF "gender"="mewale","wine_andoiver"="yes","dma"="paris"</code> </li> 
+      <li><code> DEF "gender"="female","wine_enthusiast"="yes","dma"="paris"</code> </li> 
      </ul> </p> <p>在这种情况下， <span class="keyword"> Audience Manager</span>: </p> 
     <ul id="ul_E853DA091D9042DAB19774383841D3A3"> 
-     <li id="li_64D64A16E99E492BAAE1080867F854A9">通过存储的ID同步映射识别访客DEF。 </li> 
-     <li id="li_9CEE7A7B1A954FF6AEEBF8844074CFBB">将feme <code> 、</code>paris <code> 和wine_voinder的特征与visitor 456配置文件相关联</code><code></code> 。 </li> 
+     <li id="li_64D64A16E99E492BAAE1080867F854A9">从存储的ID同步映射识别访客DEF。 </li> 
+     <li id="li_9CEE7A7B1A954FF6AEEBF8844074CFBB">将特征、 <code> female</code>和 <code> paris</code>与 <code> wine_enthusiast</code> visitor 456配置文件关联。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -110,15 +110,15 @@ Removed the Data Translation File bullet from the list above.
    <td colname="col2"> <p>星期一， <span class="keyword"> Audience Manager</span> Server收到两个文件，其中包含以下记录： </p> <p> <code> .sync</code> 文件包含： </p> <p> 
      <ul class="simplelist"> 
       <li><code> GHI 123456789</code> </li> 
-     </ul> </p> <p> <code> .overwrite</code> file，包含： </p> 
+     </ul> </p> <p> <code> .overwrite</code> 文件包含： </p> 
     <ul id="ul_084AE448C60447ACA9B1E0C30EAA3E3E"> 
-     <li id="li_C68B7BBFE7CA4D22B606D939E32FF4FB"><code> GHI "gender"="male" "wine_andoiver"="no"</code> </li> 
-     <li id="li_FDBCAAFBD606477E8690EA80AD455A81"><code> JKL "gender"="mewale" "wine_andoiver"="yes"</code> </li> 
+     <li id="li_C68B7BBFE7CA4D22B606D939E32FF4FB"><code> GHI "gender"="male" "wine_enthusiast"="no"</code> </li> 
+     <li id="li_FDBCAAFBD606477E8690EA80AD455A81"><code> JKL "gender"="female" "wine_enthusiast"="yes"</code> </li> 
     </ul> <p><span class="keyword"> Audience Manager保留访客JKL到ID 789的映射记录，该记录从以前的ID同步开始。</span> </p> <p>在这种情况下， <span class="keyword"> Audience Manager</span>: </p> 
     <ul id="ul_4D083CEA7F1B4F6BBBBB841C21293751"> 
      <li id="li_6DABD380311D49738DAD98F5E6DE45B8">从存储的ID同步映射识别访客JKL。 </li> 
-     <li id="li_CCEF77240E5C4A03AAE347440D73F0BB">将女性和 <code> wine_vaindoyer特征与访客ID 789的档案相关联</code><code></code> 。 </li> 
-     <li id="li_273F8FD7C6214488A26AAFFA6DE043E5">忽略访客GHI的特征关联，因为其ID仅在当前批次中同步。 要将特征与访客GHI关联，您需要在将来的。overwrite文件中包 <code> 含这些特征</code> 。 </li> 
+     <li id="li_CCEF77240E5C4A03AAE347440D73F0BB">将特征和 <code> female</code> 访 <code> wine_enthusiast</code> 客ID 789的配置文件关联。 </li> 
+     <li id="li_273F8FD7C6214488A26AAFFA6DE043E5">忽略访客GHI的特征关联，因为其ID仅在当前批次中同步。 要将特征与访客GHI关联，您需要在将来的文件中包含这 <code> .overwrite</code> 些特征。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -174,18 +174,18 @@ FTP文件在处理后即被删除。 [!DNL S3] 文件将在30天后删除。 由
    <td colname="col1"> <p><b>增量和完整</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_E89301D815174D45B9B238F2CDE6CCC6"> 
-      <li id="li_FA841FEEC0534AD59D1AB61DD5B9DEC4">第1天 <code> .sync</code> 文件内容： <code> visitor 123 = a,b,c</code> </li> 
+      <li id="li_FA841FEEC0534AD59D1AB61DD5B9DEC4">第1天文 <code> .sync</code> 件内容： <code> visitor123 = a,b,c</code> </li> 
       <li id="li_0E1A57B04D26481C8C41EBA63ACBEFE0">第2天 <code> .overwrite</code> 文件内容： <code> visitor123 = c,d,e</code> </li> 
-      <li id="li_497A5604AD9A49A2ADE548C7CE158F0E"> 第3天访客资料ID 123 <code> 包含c,d,e </code> </li> 
+      <li id="li_497A5604AD9A49A2ADE548C7CE158F0E"> 第3天访客资料ID 123包含 <code> c,d,e </code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>仅增量</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_8271C9796BD040E4B8DC64DCE4FE2AD3"> 
-      <li id="li_347959BDE83549F794E6661C95097891">第1天 <code> .sync</code> 文件内容： <code> visitor 123 = a,b,c </code> </li> 
+      <li id="li_347959BDE83549F794E6661C95097891">第1天文 <code> .sync</code> 件内容： <code> visitor123 = a,b,c </code> </li> 
       <li id="li_B25D96526DE94171A3A5DC8DB7A19415">第2天 <code> .sync</code> 文件内容： <code> visitor123 = c,d,e</code> </li> 
-      <li id="li_6E17809D49C74F4991B0B445469055E6">第3天访客资料ID 123 <code> 包含a,b,c,d,e</code> </li> 
+      <li id="li_6E17809D49C74F4991B0B445469055E6">第3天访客资料ID 123包含 <code> a,b,c,d,e</code> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -242,7 +242,7 @@ FTP文件在处理后即被删除。 [!DNL S3] 文件将在30天后删除。 由
 
 **数据文件内容是否区分大小写？ ID同步如何？**
 
-数据文件有两个基本组件：唯一用户ID(UUID)和配置文件数据，通常以键值对或代码的形式提供。 UUID区分大小写。 通常，配置文件或键值数据不区分大小写。
+数据文件有两个基本组件：用户ID(请参阅“文件变量已定 [义”中的用户ID](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#file-variables-defined))和配置文件数据，通常以键值对或代码的形式显示。 用户ID区分大小写。 通常，配置文件或键值数据不区分大小写。
 
 <br> 
 
@@ -266,7 +266,7 @@ FTP文件在处理后即被删除。 [!DNL S3] 文件将在30天后删除。 由
 
 **我需要同时上传多个文件。 文件是否将同时处理？**
 
-看情况。 [!DNL Audience Manager] 从队列中最多读取119000个条目， [!DNL Amazon SQS] 并将它们分成多达3个批。 只有当文件以同一批处理结束时，才会同时处理它们。 但是，由于每天摄取的数据量很大， [!DNL Audience Manager] 无法保证任何文件处理顺序。
+看情况。 [!DNL Audience Manager] 从队列中最多读取119000个条目， [!DNL Amazon SQS] 并将它们分成多达3个批。 只有在同一批处理您的文件时，才会同时处理这些文件。 但是，由于每天摄取的数据量很大， [!DNL Audience Manager] 无法保证任何文件处理顺序。
 
 >[!MORE_LIKE_THIS]
 >
