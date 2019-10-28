@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 已定义配置文件合并规则选项
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 translation-type: tm+mt
-source-git-commit: 532c69981ebc082bd411a9232e9ef207b59dace5
+source-git-commit: 12dea0f5e762496b19a87c8993877302b1433d26
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 532c69981ebc082bd411a9232e9ef207b59dace5
 | 无跨设备配置文件 | 外部设备图（包括协作设备图） | 所有客户 | 实时和批量 | 否 | [扩展的设备定位](external-graph-use-cases.md#audience-expansion) |
 | 当前已验证的配置文件 | 无设备配置文件 | 所有客户 | 仅实时 | 否 | [共享设备定位](merge-rule-targeting-options.md#target-shared-devices) |
 | 上次验证的配置文件 | 设备配置文件 | 所有客户 | 实时和批量 | 是 | [联机／脱机定位](merge-rule-targeting-options.md#device-household-targeting) |
-| 上次验证的配置文件 | 配置文件链接设备图 | 仅限北美和加拿大 | 实时和批量 | 是 | [跨设备定位](profile-link-use-case.md#cross-device-personalization) |
+| 上次验证的配置文件 | 配置文件链接设备图 | 所有客户 | 实时和批量 | 是 | [跨设备定位](profile-link-use-case.md#cross-device-personalization) |
 | 上次验证的配置文件 | 外部设备图（包括协作设备图） | 所有客户 | 实时和批量 | 否 | [高级跨设备定位](external-graph-use-cases.md#advanced-graph-expansion) |
 |  所有跨设备配置文件 | 不适用 | 基于人 [员的目标客户独有](../destinations/people-based-destinations-overview.md) | 仅批处理 | 否 | [针对基于人员的目标进行定位](merge-rule-targeting-options.md#all-cross-device) |
 
