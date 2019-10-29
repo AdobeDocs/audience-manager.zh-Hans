@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 批量管理快速入门
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: b1cecf805a47a7cf3b732337027c31664a08a910
+source-git-commit: be988def0e9cb5cb6b4a926754dd24f9fd1f85fe
 
 ---
 
@@ -111,9 +111,9 @@ c_bulk_start.xml
 例如，我们来看一下如何同时创建多个特征。 要在批量操作中创建多个特征，您需要：
 
 1. 单击选 **[!UICONTROL Headers]** 项卡并复制选项下的所有 [!UICONTROL Create a Trait] 标签。
-
 2. 单击选 **[!UICONTROL Create]** 项卡并粘贴从第1行A列开始的标签。
 3. 提供与每个列标题相关的信息，然后单击 **[!UICONTROL Create Traits]**。 此操作会提示您确认身份验证。 确认身份验证后，将运行批量作业。 检查工作表的左下角以获得任务状态通知。
+
 
 >[!NOTE]
 >
