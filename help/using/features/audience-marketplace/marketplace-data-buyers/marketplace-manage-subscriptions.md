@@ -7,7 +7,7 @@ title: 管理数据源订阅
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
 translation-type: tm+mt
-source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -51,13 +51,6 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 
 * 查看账单和付款文档。 请参阅以下相关链接。
 
->[!MORE_LIKE_THIS]
->
->* [CPM数据源的计费和印象分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
->* [统一费用数据源的计费和印象分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
->* [如何报告CPM使用情况](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#report-cpm-usage)
-
-
 ## 订阅专用数据源 {#subscript-private-data-feed}
 
 购买者可订阅中的私人数据源和计划 **[!UICONTROL Audience Marketplace > Marketplace]**。
@@ -76,12 +69,6 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 
    * **[!UICONTROL Request approved]**:列表中的状 [!UICONTROL Marketplace] 态将变为“已授予访问权限”，您将收到自动通知。 此时，您可以订阅源。 有关 [说明，请参阅订阅公共数据源](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed) 。
    * **[!UICONTROL Request denied]**:“已请求”文本将从源的列 [!UICONTROL Marketplace] 表中删除。 您可以再次尝试订阅或选择其他源。
-
->[!MORE_LIKE_THIS]
->
->* [订阅公共数据源](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)
->* [数据购买者的折扣](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#buyer-discount)
-
 
 ## 购买者的数据馈送折扣 {#buyer-discount}
 
@@ -139,11 +126,6 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 
 ![](assets/buyer-discount.png)
 
->[!MORE_LIKE_THIS]
->
->* [市场：关于](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)
-
-
 ## 查找订阅的信息源数据 {#find-subscribed-data-fee}
 
 数据馈送的数据（特征）显示在其自己的特征存储文件夹中。 转到并 **[!UICONTROL Audience Data > Traits]** 展开文件夹 **[!UICONTROL 3rd-Party Data]** ，以查看和使用订阅源中的特征。 查找以数据提供者名称的子文件夹。 这些文件夹包含以单个数据源命名的文件夹，以及源提供的列表特征。
@@ -151,11 +133,6 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 <!-- marketplace-feed-storage.xml -->
 
 ![](assets/subscribe5.png)
-
->[!MORE_LIKE_THIS]
->
->* [订阅公共数据源](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)
-
 
 ## 取消订阅数据源 {#unsubscribe}
 
@@ -168,7 +145,7 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 1. 单击中的数据源名称 [!UICONTROL Marketplace]。
 1. 在部 [!UICONTROL Use Case] 分中，找到要使用的计划并将滑块移 **[!UICONTROL Subscription]** 动到 **[!UICONTROL Off]**。
 
-## 数据源取消激活：发生原因及如何回应 {#data-feed-deactivation-reasons}
+##  数据源取消激活：发生原因及如何回应 {#data-feed-deactivation-reasons}
 
 在中， [!UICONTROL Audience Marketplace]数据提供者可以撤销对您订阅的数据馈送的访问权。 如果你发生这种事，别担心。 我们掩护你。 查看本节以了解与数据馈送取消激活相关的流程和过程。
 
@@ -256,7 +233,7 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 >
 >从活动算法模型或目标中删除特征会影响缩放和定位准确性。 尽可能尝试用新的活动特征替换已吊销的特征。
 
-[在从帐户中删除所有已撤销的特征后](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#unsubscribe) ，取消订阅已取消激活的数据源。 如果这是临时取消激活，您可以在数据提供者完成其所需更改并重新激活源后重新订阅。 与大多数情况一样，与合作伙伴(数据提供商和 [!DNL Adobe])的良好沟通可以帮助您完成此过程。
+[在从帐户中删除所有已撤销的特征后](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#unsubscribe) ，取消订阅已取消激活的数据源。 如果这是临时取消激活，您可以在数据提供者完成其所需更改并重新激活源后重新订阅。 与大多数事情一样，与您的合作伙伴(数据提供商和 [!DNL Adobe])的良好沟通可以帮助您完成此过程。
 
 ## 了解受众市场中的计划详细信息页面 {#marketplace-buyer-details}
 
@@ -290,11 +267,6 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
    * 单 **[!UICONTROL Cancel]** 击以离开页面而不进行更改。
    * 单击 **[!UICONTROL Review & Subscribe]** 以订阅数据源。 在您将切换切换到之前，此按钮将 [!UICONTROL Subscription] 灰显 [!UICONTROL On]。 另请参 [阅订阅公共数据源](#subscript-public-data-feed) , [和订阅私人数据源](#subscript-private-data-feed)。
 
->[!MORE_LIKE_THIS]
->
->* [市场：关于](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)
-
-
 ## 了解数据馈送使用案例 {#use-cases}
 
 作为数 [!UICONTROL Audience Marketplace] 据购买者，您可以为重叠、建模和激活用例购买数据。 每个用例都针对特定用途而设计，并限制您可以对数据执行的操作。 这些用例描述可以帮助您就要购买哪种类型的数据计划做出正确决策。
@@ -317,3 +289,13 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 ### 激活
 
 此用例允许您将数据发送到目 [标](../../../features/destinations/destinations.md)。 在 [!UICONTROL Audience Manager]中，目标是任何第三方系统(广告服务器、 [!DNL DSP]、 [!DNL DMP]交换等)要与之共享数据。 但是，对于 [!UICONTROL Activation] 用例，您不能运行重叠报告或在算法模型中测试数据。
+
+>[!MORELIKETHIS]
+>
+>* [CPM数据源的计费和印象分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
+>* [统一费用数据源的计费和印象分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
+>* [如何报告CPM使用情况](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#report-cpm-usage)
+>* [订阅公共数据源](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)
+>* [数据购买者的折扣](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#buyer-discount)
+>* [市场：关于](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)
+
