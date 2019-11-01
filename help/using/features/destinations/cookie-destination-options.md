@@ -5,7 +5,7 @@ seo-title: Cookie目标的可选设置
 solution: Audience Manager
 title: Cookie目标的可选设置
 translation-type: tm+mt
-source-git-commit: 6e2b5842ad3ca52f7ed0fb72231deb6fa614b70b
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -35,13 +35,13 @@ source-git-commit: 6e2b5842ad3ca52f7ed0fb72231deb6fa614b70b
      </ul> </p> <p> 将“ <span class="wintitle"> Cookie域</span> ”字段留空可在所有域上设置Cookie。 这是默认设置。 </p> <p>在特定域和子域上设置Cookie: </p> <p> 
      <ul id="ul_F25BC0D8C40641A2A5CA338E5C258435"> 
       <li id="li_E236D8DEE4F24F9BBA36074F7049C12C">在“ <span class="wintitle"> Cookie域”字段中键入域名</span> 。 </li> 
-      <li id="li_0471C198EE344DE5963A3C2F70B9E78B">以句点开始域名。 例如， <code> .somedomain.com</code>。 </li> 
+      <li id="li_0471C198EE344DE5963A3C2F70B9E78B">以句点开始域名。 For example, <code> .somedomain.com</code>. </li> 
       <li id="li_73D06F2BEF45487280C2245E1F6B8ED0">The <code> https://www</code> prefix is not required. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>示例</b> </p> </td> 
-   <td colname="col2"> <p>举个简单的例子，假设我们有一个虚构的网站，名为sports.com。 Sports.com拥有高尔夫球、棒球和足球等领域。 要在所有体育域中设置Cookie，您应在 <span class="wintitle"> Cookie域框中键入Cookie</span> ，如下所示： </p> <p> <img src="assets/sports-domain.png" id="image_8883477BB3B543648C97A441AD34C6DE" /> </p> <p>这会告 <span class="keyword"> 诉Audience Manager</span> ，在包含模式something <code><i></i></code>.sports.com的任何域中设置Cookie。 请参见下文，了解更复杂的示例集。 </p> </td> 
+   <td colname="col2"> <p>举个简单的例子，假设我们有一个虚构的网站，名为sports.com。 Sports.com拥有高尔夫球、棒球和足球等领域。 要在所有体育域中设置Cookie，您应在 <span class="wintitle"> Cookie域框中键入Cookie</span> ，如下所示： </p> <p> <img src="assets/sports-domain.png" id="image_8883477BB3B543648C97A441AD34C6DE" /> </p> <p>这会告 <span class="keyword"> 诉Audience Manager</span> ，在包含pattern <code><i>something</i></code>.sports.com的任何域中设置Cookie。 请参见下文，了解更复杂的示例集。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -95,6 +95,6 @@ source-git-commit: 6e2b5842ad3ca52f7ed0fb72231deb6fa614b70b
 * **[!UICONTROL Only the selected domains]**:仅为在域列表中选择的域返回Cookie。
 * **[!UICONTROL All of our domains except the selected domains]**:阻止选定域接收 [!DNL cookie]。 所有其他域都可以接收 [!DNL cookie]。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [创建Cookie目标](../../features/destinations/create-cookie-destination.md)
