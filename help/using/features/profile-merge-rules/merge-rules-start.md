@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 个人资料合并规则入门
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 translation-type: tm+mt
-source-git-commit: f53e091b8c069221837af01ad54deeb731cd48e2
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -54,11 +54,6 @@ source-git-commit: f53e091b8c069221837af01ad54deeb731cd48e2
 * **[!UICONTROL Data retention for inactive Customer IDs]**:此控件允许您为不活动的客户ID设置数据保留期。 这决定了Audience manager在Audience manager平台上上次查看客户ID后，在我们的数据库中保留这些ID的时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们将所有月份计为30天。 Audience manager会根据您为非活动客户ID设置的数据保留情况，运行一个每周删除不活动客户ID一次的流程。
 
 通过与这些设置关联的文本字段，您可以使用在“配置文 [!UICONTROL Data Source] 件合并规则”选项中显示 [的别名重命名](merge-rule-definitions.md)。 例如，如果向添加别名， **[!UICONTROL Use as Authenticated Profile]**&#x200B;则该名称会显示在列 [!UICONTROL Authenticated Profile Options] 表中。 如果向中添加别名， **[!UICONTROL Use as a Device Graph]**&#x200B;则该名称会显示在列 [!UICONTROL Device Options] 表中。
-
->[!MORE_LIKE_THIS]
->
->* [创建数据源](../manage-datasources.md#create-data-source)
-
 
 ## 创建配置文件合并规则 {#create-profile-merge-rule}
 
@@ -214,3 +209,8 @@ DIL.create({
 </table>
 
 另请参阅适 [用于Android的Audience Manager方法](https://marketing.adobe.com/resources/help/en_US/mobile/android/?f=c_audience_manager_methods.html) ，以 [及适用于iOS的Audience Manager方法](https://marketing.adobe.com/resources/help/en_US/mobile/ios/?f=aam_methods.html)。
+
+>[!MORELIKETHIS]
+>
+>* [创建数据源](../manage-datasources.md#create-data-source)
+
