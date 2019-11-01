@@ -6,22 +6,22 @@ solution: Audience Manager
 title: 特征推荐
 uuid: null
 translation-type: tm+mt
-source-git-commit: a67998b925002438b20fdde81f1abec4acbd5602
+source-git-commit: 51f38819bfbc72c2588f63a63fb8ba2e963919ff
 
 ---
 
 
 # 特征推荐
 
-在构建区段时获取实时特征推荐。
+根据您自己的第一方特征和数据源构建细分时获取实时特征 [!UICONTROL Audience Marketplace] 推荐。
 
 ## 视频演示
 
-首先观看以 [!UICONTROL Trait Recommendations] 下视频，然后阅读以了解更多信息。
+首先观看以 [!UICONTROL Trait Recommendations] 下视频，然后阅读以了解更多信息。 该视频演示向您展示如何处理来自您自己的第一方特征的推荐以及来自您已订阅的数据 [!UICONTROL Audience Marketplace] 源的 *特征推荐*。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26228/?captions=chi_hans)
 
-下一个视频概述了工作流 [!UICONTROL Marketplace Recommendations]程，向您展示如何从中的数据馈送向区段添加特征推荐 [!UICONTROL Audience Marketplace]。
+下一个视频概述了工作流 [!UICONTROL Marketplace Recommendations]程，向您展示如何根据中的数据源推荐将特征添加到区段 [!UICONTROL Audience Marketplace]。 这些建议基于您未订阅的 *数据源*。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29363/?captions=chi_hans)
 
@@ -32,13 +32,13 @@ With [!UICONTROL Trait Recommendations], when you build or edit a segment in [Se
 
 Audience manager会根据您的第一方特征、部分特征和部分特 **[!UICONTROL Recommendations]** 征来显示 **[!UICONTROL Audience Marketplace]**&#x200B;推荐的特 **[!UICONTROL Recommendations from Marketplace]** 征。
 
-![特征推荐概述](assets/trait-recommendations-overview-full.png)
-
 将推荐的特征添加到区段中，可增加目标受众。
+
+![特征推荐概述](assets/trait-recommendations-overview-full.png)
 
 **简而言之：**
 
-* Audience manager在部分中显示第一方 [!UICONTROL Recommendations] 特征。 您未订阅的公共和私有源的市场推荐显示在该部 [!UICONTROL Recommendations from Marketplace] 分。
+* Audience manager在部分中显示第一方 [!UICONTROL Recommendations] 特征。 您未订阅的公共和私有源的市场推荐显示在该部 [!UICONTROL Recommendations from Marketplace] 分。 单击源名称以转到并 [!UICONTROL Audience Marketplace] 订阅。
 * Audience manager最多显示50个与区段规则中相似的特征。
 * 您可以过滤掉不想从中看到任何推荐的数据源。
 * 在计算相似性时，Audience Manager会考虑 [在过去](../../reference/ids-in-aam.md) 30天内符合该特征的UUID。
@@ -50,6 +50,8 @@ Audience manager会根据您的第一方特征、部分特征和部分特 **[!UI
 
 * 作为营销人员，您可以借助类似特征快速找到对补充产品感兴趣的受众，从而扩大受众范围。
 * 如果您将Audience manager用作出版商，则可了 [!UICONTROL Trait Recommendations]解受众行为并为广告销售或用户赢取构建更好的细分。
+* 作为数 [!UICONTROL Audience Marketplace] 据购买者，我希望无需浏览大量源即可发现相关的第三方数据。
+* 作为数 [!UICONTROL Audience Marketplace] 据提供商，我希望向购买者推荐相关数据，以便从最佳和相关订阅中受益。
 
 ## 特质推荐与算法模型的区别
 
@@ -79,7 +81,7 @@ Audience manager会根据您的第一方特征、部分特征和部分特 **[!UI
 
 1. 转到“受 **众数据”&gt;“区段**”，然后单 **击“添加新”**。
 2. 在“特 **征** ”下拉框中，向段规则添加至少一个特征。
-3. 您可以在部分中看到第一方推荐的 **[!UICONTROL Recommendations]** 特征，在部分中看到第三方推荐的 **[!UICONTROL Recommendations from Marketplace]** 特征。 所有这些推荐都与您添加到区段规则的特征相似。 向下滚动以查看所有推荐的特征。
+3. 您可以在部分中查看订阅的源中 [!UICONTROL Audience Marketplace] 的第一方推荐特征和特征推荐 **[!UICONTROL Recommendations]** 。 此部 **[!UICONTROL Recommendations from Marketplace]** 分显示您未订阅源的特征推荐。 所有这些推荐都与您添加到区段规则的特征相似。 向下滚动以查看所有推荐的特征。
 4. （可选）要从某些数据源中排除推荐的第一方特征，请单击要排除的数据源的 **X** 符号。
    > [!NOTE]
    >
@@ -134,7 +136,7 @@ Audience manager会根据您的第一方特征、部分特征和部分特 **[!UI
 
 要生成特征推荐，Audience Manager会计算目标特征与您帐户有权访问的每个其他特征（包括第三方数据）之间的 [](https://en.wikipedia.org/wiki/Jaccard_index) Jaccard相似性。 然后，Audience manager显示最多50个相似性最高的特征。
 
-## 特征相似性得分
+## 特征相似性得分 {#trait-similarity-score}
 
 Audience manager通过 [!UICONTROL Trait Similarity Score] 计算交叉点和并数来计算两个特征之 [!UICONTROL UUID]间的数量，然后将两个特征相除。 对于两个特征A和B，计算如下所示：
 
@@ -151,7 +153,7 @@ Audience manager通过 [!UICONTROL Trait Similarity Score] 计算交叉点和并
 
 ### 示例2 —— 特征相似性得分
 
-如果相同的特征A和B具有400,000个UUID, [!UICONTRL ]则符合这两个特征， [!UICONTROL Trait Similarity Score] 则其值要高得多：400,000 / 1,600,000 = 0.25
+如果相同的特征A和B具有400,000 [!UICONTROL UUID]个符合这两个特征，则其 [!UICONTROL Trait Similarity Score] 值要高得多：400,000 / 1,600,000 = 0.25
 
 ![trait-recommendations-high-overlap](assets/Trait-Recommendations-High-overlap.png)
 
@@ -168,7 +170,13 @@ Audience manager通过 [!UICONTROL Trait Similarity Score] 计算交叉点和并
 
 ## 基于角色的访问控制(RBAC)
 
-对于使用( [!UICONTROL Role-Based Access Controls][!UICONTROL RBAC])的公司，您需要具有创建和编辑区段的权限才能查看推荐的特征。 而且，您看到的推荐特征只是您有权通过访问的数据源中的特征 [!UICONTROL RBAC]。 阅读此处有关控 [!UICONTROL RBAC] 件的 [更多信息](../administration/administration-overview.md)。
+对于使用( [!UICONTROL Role-Based Access Controls][!UICONTROL RBAC])的公司，您需要具有创建和编辑区段的权限才能查看推荐的特征。 您看到的特征推荐仅是您有权通过访问的数据源中的推荐 [!UICONTROL RBAC]。
+
+> [!IMPORTANT]
+>
+> 要添加 [!UICONTROL Marketplace Recommendations] 到区段，用户必须首先订阅相应的数据服务。 只有具有管理员权限的用户才能订阅数 [!UICONTROL Audience Marketplace] 据源。
+
+阅读此处有关控 [!UICONTROL RBAC] 件的 [更多信息](../administration/administration-overview.md)。
 
 ## 限制
 
