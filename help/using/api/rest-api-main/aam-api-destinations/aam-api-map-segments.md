@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 将区段映射到目标
 uuid: 35358ace-3082-4e86-a6eb-d77281af6d7e
 translation-type: tm+mt
-source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -20,13 +20,6 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
 ## 支持的目标类型：仅URL和Cookie
 
 使用可 `POST` 用的方法，您可以将区段映射到 [!UICONTROL URL] 和仅 [!UICONTROL cookie destinations] 映射。 目前，您无法使用这些方法将区 [!UICONTROL server-to-server destinations] 段映射到 [!DNL REST API] 区段。 请改用用户界面。 但是，相关的目标方 `GET` 法允许您检索有关在用户 [!UICONTROL server-to-server destinations] 界面中创建的信息。
-
->[!MORE_LIKE_THIS]
->
->* [目标](../../../features/destinations/destinations.md)
->* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [说明的键值对](../../../reference/key-value-pairs-explained.md)
-
 
 ## 将区段映射到无序列化URL目标 {#map-segment-non-serial}
 
@@ -584,3 +577,10 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
     "traitAlias": null
 }
 ```
+
+>[!MORELIKETHIS]
+>
+>* [目标](../../../features/destinations/destinations.md)
+>* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
+>* [说明的键值对](../../../reference/key-value-pairs-explained.md)
+
