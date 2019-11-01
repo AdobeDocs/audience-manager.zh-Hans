@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 出站模板宏
 uuid: Dec082d3-306b-4ff5-afb2-418bd543d8d0
 translation-type: tm+mt
-source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -50,7 +50,7 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
   <tr> 
    <td colname="col1"> <p> <code> SPLITNUM </code> </p> </td> 
    <td colname="col2"> <p>指示将出站文件拆分为多个部分。 将文件名中的SPLITNUM部分替换为零前的部件号，确保SPLITNUM部分最少有三个字符。</p>
-   <p>SPLITNUM宏不需要被&lt;&gt;字符包围。</p><p>示例： <code>&lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;SPLITNUM.csv</code>
+   <p>SPLITNUM宏不需要被&lt;&gt;字符包围。</p><p>示例: <code>&lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;SPLITNUM.csv</code>
 <p>s3_123456_9999_full_1566906141001.csv</p> 
 <p>s3_123456_9999_full_1566906141002.csv</p> 
 <p>s3_123456_9999_full_1566906141003.csv</p> 
@@ -60,7 +60,7 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
    <td colname="col1"> <p> <code> SYNC_MODE </code> </p> </td> 
    <td colname="col2"> <p>指示同步类型，包括： </p> 
     <ul id="ul_CA5057DA18144AB8BC17B3EB79891B25"> 
-     <li id="li_6DFEE438860D4DB18EF831E3AF525F1E"> <code> 完整 </code>:完全同步。 </li> 
+     <li id="li_6DFEE438860D4DB18EF831E3AF525F1E"> <code> full </code>:完全同步。 </li> 
      <li id="li_1A7BBBB40AD94FC39B06F4FC49586595"> <code> iter </code>:增量同步。 </li> 
     </ul> </td> 
   </tr> 
@@ -74,12 +74,12 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 选项卡 </code> </p> </td> 
+   <td colname="col1"> <p> <code> TAB </code> </p> </td> 
    <td colname="col2"> <p>此宏用作分隔符，在字段之间插入一个选项卡。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 时间戳 </code> </p> </td> 
-   <td colname="col2"> <p>一个10位的UTC unix时间戳。 </p> <p>也可以将其格式设置为 <code> &lt;TIMESTAMP;format="YYYYMMDDhhmmss"&gt;遵循 </code> Java日期／时间戳格式规则。 </p> </td> 
+   <td colname="col1"> <p> <code> TIMESTAMP </code> </p> </td> 
+   <td colname="col2"> <p>一个10位的UTC unix时间戳。 </p> <p>还可以按照Java日期／时 <code> &lt;TIMESTAMP; format="YYYYMMDDhhmmss"&gt; </code> 间戳格式化规则设置格式。 </p> </td> 
   </tr>
 
 </tbody> 
@@ -115,7 +115,7 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DPUUIDS </code> </p> </td> 
-   <td colname="col2"> <p>此宏的输出将数据提供者ID(DPID)映射到相关的唯一用户ID(DPUUID)。 此宏必须具有格式字符串才能控制其输出。 示例输出将类似于： </p> <p> <code> "dpids=dpid1,dpid2,...dpid n|maxMappings= n|format=json" </code> </p> <p>maxMappings <code> 设置 </code> 决定您希望宏返回的映射数。 当maxMappings <code> =0时， </code>此宏将返回每个指定DPID的所有映射。 数据按时间戳（最新的前一个）排序，并返回最大时间戳前的结果。 </p> </td> 
+   <td colname="col2"> <p>此宏的输出将数据提供者ID(DPID)映射到相关的唯一用户ID(DPUUID)。 此宏必须具有格式字符串才能控制其输出。 示例输出将类似于： </p> <p> <code> "dpids=dpid1,dpid2,...dpid n|maxMappings= n|format=json" </code> </p> <p>该 <code> maxMappings </code> 设置决定您希望宏返回的映射数。 当 <code> maxMappings=0 </code>时，此宏将返回每个指定DPID的所有映射。 数据按时间戳（最新的前一个）排序，并返回最大时间戳前的结果。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> if(SEGMENT_LIST &amp;&amp; REMOVED_SEGMENT_LIST)endif </code> </p> </td> 
@@ -143,7 +143,7 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OUTPUT_ATTRIBUTE_VALUE </code> </p> </td> 
-   <td colname="col2"> <p>返回 <code> 1 </code> 作为静态的硬编码值。 </p> </td> 
+   <td colname="col2"> <p>返回 <code> 1 </code> 为静态的硬编码值。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> PID </code> </p> </td> 
@@ -161,23 +161,23 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
    <td colname="col1"> <p> <code> SEGMENT_LIST </code> </p> </td> 
    <td colname="col2"> <p>返回列表中的区段列表。 接受以下可选参数： </p> 
     <ul id="ul_B111AA0D6C18445598A1444B8B7E9325"> 
-     <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> segmentId </code>:区段ID。 已弃用。使用 <code> sid </code>。 </li> 
-     <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>:客户细分ID。 已弃用。使用 <code> sid </code>。 </li> 
-     <li id="li_D85F0A5D16AE4DAFB55C17DBB35EA66E"> <code> sid </code>: 区段ID </li> 
-     <li id="li_9BE103EFD8384464B46FAC00422431DB"> <code> type </code>:返回 <code> 5 </code>个静态的硬编码值，它将数据标识为段数据。 </li> 
-     <li id="li_FE5049089F2944FA9DB9F9D546DBA167"> <code> 别名 </code>:已弃用。 请勿使用。 </li> 
+     <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> segmentId </code>:区段ID。 已弃用。使用 <code> sid </code>. </li> 
+     <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>:客户细分ID。 已弃用。使用 <code> sid </code>. </li> 
+     <li id="li_D85F0A5D16AE4DAFB55C17DBB35EA66E"> <code> sid </code>:区段ID </li> 
+     <li id="li_9BE103EFD8384464B46FAC00422431DB"> <code> type </code>:返回 <code> 5 </code>一个静态的硬编码值，它将数据标识为段数据。 </li> 
+     <li id="li_FE5049089F2944FA9DB9F9D546DBA167"> <code> alias </code>: 已弃用. 请勿使用。 </li> 
      <li id="li_DD778AA2D1DB4D409CF5026B5D9DBD27"> <code> lastUpdateTime </code>:Unix时间戳，指示段的上次实现时间。 </li> 
-    </ul> <p>将这些变量放在大括号后。 例如，此代码用管道“|”字符分隔结果： <code> &lt;SEGMENT_LIST:{seg|&lt;seg.type&gt;,&lt;seg.sid&gt;};separa=","&gt; </code> </p> </td> 
+    </ul> <p>将这些变量放在大括号后。 例如，此代码用管道“|”字符分隔结果： <code> &lt;SEGMENT_LIST:{seg|&lt;seg.type&gt;,&lt;seg.sid&gt;}; separator=","&gt; </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SET_ATTRIBUTES </code> </p> </td> 
-   <td colname="col2"> <p>返回 <code> 1 </code>作为静态的硬编码值。 </p> </td> 
+   <td colname="col2"> <p>返回 <code> 1 </code>静态的硬编码值。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SYNC_MODE </code> </p> </td> 
    <td colname="col2"> <p>指示同步类型，包括： </p> 
     <ul id="ul_A3ADC37E66F043DABDA9C4066024B6C1"> 
-     <li id="li_A1859F63ACF24618884C41F2DAB19ABB"> <code> 完整 </code>:完全同步。 </li> 
+     <li id="li_A1859F63ACF24618884C41F2DAB19ABB"> <code> full </code>:完全同步。 </li> 
      <li id="li_520DDED3662B428DB9DB55D494221D97"> <code> iter </code>:增量同步。 </li> 
     </ul> </td> 
   </tr> 
@@ -191,7 +191,7 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 选项卡 </code> </p> </td> 
+   <td colname="col1"> <p> <code> TAB </code> </p> </td> 
    <td colname="col2"> <p>此宏用作分隔符，在字段之间插入一个选项卡。 </p> </td> 
   </tr> 
   <tr> 
@@ -200,12 +200,12 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
     <ul id="ul_E9CDC4DD47B9435086FF42143D9E8177"> 
      <li id="li_4BBC57F0D7874F8EA8C6D39DB3572257"> <code> type </code>:按数字ID标识特征类型。 返回结果: 
       <ul id="ul_D2357E6CF47B4EBC8D3772D17B2EADA3"> 
-       <li id="li_C6C2A019FCD945E085E1ABB564C4EDAD"> <code> 10 </code> 标识DPM特征（脱机，由入站作业加载）。 </li> 
-       <li id="li_7AFF8A1D0E1140459CC95CF43A97B9B6"> <code> 3标 </code> 识基于规则的特征（实时、通过DCS载入）。 </li> 
+       <li id="li_C6C2A019FCD945E085E1ABB564C4EDAD"> <code> 10 </code> 它标识DPM特征（脱机，由入站作业载入）。 </li> 
+       <li id="li_7AFF8A1D0E1140459CC95CF43A97B9B6"> <code> 3 </code> 它标识基于规则的特征（实时、通过DCS载入）。 </li> 
       </ul> </li> 
      <li id="li_1DDE25334CF9479A8C4738F3CB3C40AA"> <code> traitId </code>:特征ID。 </li> 
-     <li id="li_DCB89F2A40BB43C98EE3C84B5B3CDD33"> <code> lastRecomuled </code>:上次这个特质被发现。 Unix时间戳。 </li> 
-    </ul> <p>将这些变量放在大括号后。 例如，此代码将结果分隔为一个竖线“|”字符： <code> &lt;TRAIT_LIST:{trait|&lt;trait.Id&gt;,&lt;trait.lastEnarized&gt;};separator="," </code> </p> </td> 
+     <li id="li_DCB89F2A40BB43C98EE3C84B5B3CDD33"> <code> lastRealized </code>:上次这个特质被发现。 Unix时间戳。 </li> 
+    </ul> <p>将这些变量放在大括号后。 例如，此代码将结果分隔为一个竖线“|”字符： <code> &lt;TRAIT_LIST:{trait|&lt;trait.Id&gt;,&lt;trait.lastRealized&gt;};separator="," </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> UUID </code> </p> </td> 
@@ -214,7 +214,7 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
  </tbody> 
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [出站宏示例](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)
 
