@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 入站数据文件的FTP名称和文件大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 translation-type: tm+mt
-source-git-commit: ec2d05290874a95e9cc9b8318fcc5e1e1986f5b9
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -52,29 +52,29 @@ source-git-commit: ec2d05290874a95e9cc9b8318fcc5e1e1986f5b9
    <td colname="col2"> <p>Audience Manager <span class="keyword"></span> FTP目录的路径和名称。 有关FTP目录和凭据，请与客户经理联系。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> <i>DPID</i></code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
    <td colname="col2"> <p>一个LD，它告知 <span class="keyword"> Audience Manager</span> （数据文件是否包含您自己的用户ID、Android或iOS ID）。 接受以下选项： </p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b></b> 数据合作伙伴ID:这是Audience manager分配给您的公司或组织的唯一ID。 在发送包含您自己的用户ID的数据时，请在文件名中使用此分配的ID。 例如， <code>...ftp_dpm_21_123456789.sync告知</code> Audience Manager <span class="keyword"></span> ,ID为21的合作伙伴发送了文件并包含该合作伙伴分配的用户ID。 </li> 
-     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b></b> Android ID(GAID):如果数据文件包含Android ID，请在数据文件名中使用ID 20914。 例如， <code>...ftp_dpm_20914_123456789.sync告知</code> Audience Manager <span class="keyword"></span> ，数据文件仅包含Android ID。 </li> 
-     <li id="li_54E7734C121646AF82095806DD1AED61"> <b></b> iOS ID(IDFA):如果数据文件包含iOS ID，请在数据文件名中使用ID 20915。 例如， <code>...ftp_dpm_20915_123456789.sync告知</code> Audience Manager <span class="keyword"></span> ，数据文件仅包含iOS ID。 </li> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b></b> 数据合作伙伴ID:这是Audience manager分配给您的公司或组织的唯一ID。 在发送包含您自己的用户ID的数据时，请在文件名中使用此分配的ID。 例如，告 <code>...ftp_dpm_21_123456789.sync</code> 诉Audience Manager <span class="keyword"></span> ,ID为21的合作伙伴发送了文件并包含由该合作伙伴分配的用户ID。 </li> 
+     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b></b> Android ID(GAID):如果数据文件包含Android ID，请在数据文件名中使用ID 20914。 例如，告 <code>...ftp_dpm_20914_123456789.sync</code> 诉 <span class="keyword"> Audience Manager</span> ，数据文件仅包含Android ID。 </li> 
+     <li id="li_54E7734C121646AF82095806DD1AED61"> <b></b> iOS ID(IDFA):如果数据文件包含iOS ID，请在数据文件名中使用ID 20915。 例如，告 <code>...ftp_dpm_20915_123456789.sync</code> 诉 <span class="keyword"> Audience Manager</span> ，数据文件仅包含iOS ID。 </li> 
     </ul> <p> <p>注意： 请勿在数据文件中混合使用ID类型。 例如，如果您的文件名包含Android标识符，请不要将iOS ID或您自己的ID放入数据文件中。 </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i></code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
    <td colname="col2"> <p>ID的占位符。 例如，如果将DPID设置为数据源ID或Android或iOS ID，则可以将其设置为 <span class="keyword"> Audience Manager</span> ID。 这样， <span class="keyword"> Audience Manager</span> 就可以将文件数据链接回您的组织。 </p> <p>例如： </p> 
     <ul id="ul_55EBBCB11F2B4A858AEFBFA1CD99E286"> 
      <li id="li_3404428F4E3D49A5AB6EDF56310D923F"> <code>...ftp_dpm_33_21_1234567890.sync</code> 显示ID为21的合作伙伴已从使用ID 33的数据源发送数据。 </li> 
-     <li id="li_CF8D5AF678764E9984A088FD5D7BBFB6"> <code>...ftp_dpm_20914_21_1234567890.sync</code> 显示ID为21的合作伙伴已在包含Android ID的数据中发送。 </li> 
-     <li id="li_3D73168391D7443BADDF27153090274D"> <code>...ftp_dpm_20915_21_1234567890.sync</code> 显示ID为21的合作伙伴已在包含iOS ID的数据中发送。 </li> 
+     <li id="li_CF8D5AF678764E9984A088FD5D7BBFB6"> <code>...ftp_dpm_20914_21_1234567890.sync</code> 显示ID为21的合作伙伴已发送包含Android ID的数据。 </li> 
+     <li id="li_3D73168391D7443BADDF27153090274D"> <code>...ftp_dpm_20915_21_1234567890.sync</code> 显示ID为21的合作伙伴已发送包含iOS ID的数据。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> (.sync)|.overwrite)</code> </p> </td> 
+   <td colname="col1"> <p> <code> (.sync |.overwrite)</code> </p> </td> 
    <td colname="col2"> <p>同步选项包括： </p> <p> 
      <ul id="ul_DAAF61EC636C4456BECDDC34C3F86E83"> 
       <li id="li_6EC6DE442B4546AA9F4F800D65C8A4EC"> <code> sync</code>:第三方数据提供者按用户发送要在Audience manager系统中添加或删除的特征时的正常情况。 </li> 
-      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> 覆盖</code>:允许客户和数据提供商按用户发送一个特征列表，该列表应覆盖Audience manager中给定数据源的此用户的所有现有特征。 您无需将所有用户都包含在覆盖文件中。 仅包括要更改的用户。 不会擦除未分配给目标数据源的特征。 </li> 
+      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>:允许客户和数据提供商按用户发送一个特征列表，该列表应覆盖Audience manager中给定数据源的此用户的所有现有特征。 您无需将所有用户都包含在覆盖文件中。 仅包括要更改的用户。 不会擦除未分配给目标数据源的特征。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -86,7 +86,7 @@ source-git-commit: ec2d05290874a95e9cc9b8318fcc5e1e1986f5b9
     </ul> <p>请参阅下面的前2 <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md#file-name-examples"> 个文件名示例</a> 。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 时 <i>间戳</i></code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>TIMESTAMP</i> </code> </p> </td> 
    <td colname="col2"> <p>以秒为单位的10位UTC UNIX时间戳。 时间戳有助于使每个文件名都是唯一的。 </p> 
     <draft-comment> 
      <p> <p>注意： 在处理入站文件时，Audience manager不使用时间戳。 文件名中的时间戳在Audience manager中已弃用，但为了向后兼容性，仍需要时间戳。 </p> </p> 
@@ -137,7 +137,7 @@ source-git-commit: ec2d05290874a95e9cc9b8318fcc5e1e1986f5b9
  </tbody> 
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [入站数据文件的 Amazon S3 名称要求](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
