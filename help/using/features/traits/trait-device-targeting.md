@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 使用平台级密钥进行设备定位
 uuid: bc048cc5-3df1-49bc-ac78-0ea5d7edd9cc
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -43,7 +43,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 >
 >即使一个或多个信号无法从用户代理头检索，其他信号仍将被传递给用户 [!UICONTROL Data Collection Servers]。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [关键变量的前缀要求](../../features/traits/trait-variable-prefixes.md)
 
