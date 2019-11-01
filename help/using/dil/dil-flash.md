@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Flash DIL
 uuid: 65833cfd-768e-4b16-95c5-debd8411df38
 translation-type: tm+mt
-source-git-commit: 49fff90fa1330c59360e16f2a56e8fba7d4c43dc
+source-git-commit: d72460ee33be0bfffe56eff04286284b2e5f3918
 
 ---
 
@@ -95,11 +95,6 @@ r_flash_dil_data_collected.xml
 * `mediaAdParentPod` （播放广告的主要内容中的窗格或广告中断）
 * `mediaAdParentPodPos` (广告在窗格中播放的数字位置。 可在窗格内播放多个广告。
 
->[!MORE_LIKE_THIS]
->
->* [AppMeasurement Flash、Flex和OSMF实施指南](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/flash/)
-
-
 ## Audience Manager中的Flash DIL数据 {#flash-dil-data}
 
 该模 [!UICONTROL Flash DIL] 块将Adobe appMeasurement数据转换为Audience manager特征和未使用的信号。
@@ -128,14 +123,6 @@ c_flash_dil_in_aam.xml
 
 Audience manager接受Analytics [!UICONTROL Props]、 [!UICONTROL eVars]和事件，即使没有相应的特征。 在这种情况下，数据不可用于创建特征，而是显示在“未使用的信号” [报告中](../reporting/dynamic-reports/unused-signals.md) 。 要充分利用这些信息，请创建与库传入的Analytics数据相匹配的Audience Manager特 [!UICONTROL Flash DIL] 征。
 
->[!MORE_LIKE_THIS]
->
->* [特征](../features/traits/trait-details-page.md)
->* [信号、特征和区段](../reference/signal-trait-segment.md)
->* [说明的键值对](../reference/key-value-pairs-explained.md)
->* [关键变量的前缀要求](../features/traits/trait-variable-prefixes.md)
-
-
 ## Flash DIL ActionScript库 {#flash-dil-actionscript}
 
 用于将Analytics数 [!DNL Flash] 据发送到Audience manager的对象的代码。
@@ -152,8 +139,6 @@ r_flash_dil_actionscript.xml
    >
    >
 * 需要Adobe [!UICONTROL AppMeasurement] 库 [!DNL AS] 版本3.5.2或更高版本。
->
-
 
 
 ```js
@@ -166,4 +151,12 @@ d.partner = "<partner>";// Partner name
 d.containerNSID = <container NSID>; // Optional, defaults to 0 
 s.loadModule(d);
 ```
+
+>[!MORELIKETHIS]
+>
+>* [特征](../features/traits/trait-details-page.md)
+>* [信号、特征和区段](../reference/signal-trait-segment.md)
+>* [说明的键值对](../reference/key-value-pairs-explained.md)
+>* [关键变量的前缀要求](../features/traits/trait-variable-prefixes.md)
+>* [AppMeasurement Flash、Flex和OSMF实施指南](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/flash/)
 
