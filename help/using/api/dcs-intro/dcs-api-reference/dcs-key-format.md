@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 格式化DCS调用中的键值对
 uuid: af02f2a1-4388-4074-ab4e-66ee82023f1c
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -65,7 +65,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
  </tbody> 
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [将数据发送到DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)
 >* [DCS支持的键值前缀和变量](../../../api/dcs-intro/dcs-api-reference/dcs-keys.md)
