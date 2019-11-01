@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 使用数据滑块过滤报告结果
 uuid: ec486d97-d1d9-469b-b8df-5821f30d10ee
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -28,7 +28,7 @@ c_reach_slider.xml
 * 减少报告返回的总数据量。
 * 关注特定大小范围内的特征或区段。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [了解分段到特征重叠报告中的数据过滤器](../../reporting/dynamic-reports/segment-trait-overlap-report.md#data-filters-s2t-report)
 
