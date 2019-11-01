@@ -7,20 +7,29 @@ title: “特征详细信息”页
 uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
 keywords: 身份类型细分，身份细分，受众身份报告
 translation-type: tm+mt
-source-git-commit: 345042673a9ee7abdac994d774e5c4c893a78749
+source-git-commit: 51f38819bfbc72c2588f63a63fb8ba2e963919ff
 
 ---
 
 
 # “特征详细信息”页 {#trait-details-page}
 
-单个特征的详细信息页面提供了特征名称、ID、性能度量、定义特征的表达式、属于该特征的段和特征审核日志等信息的概述。 要查看这些详细信息， [!UICONTROL Audience Data > Traits] 请转到并单击要处理的特征名称。
+单个特征的详细信息页面提供了特征详细信息的概述，如特征名称、ID、性能度量、定义特征的表达式、它所属的段和特征审核日志。 要查看这些详细信息，请转 **[!UICONTROL Audience Data]** 到&gt; **[!UICONTROL Traits]** 并单击要处理的特征的名称。
 
-## 基本信息 {#basics}
+## 特征管理工具 {#trait-management-tools}
 
-此部 [!UICONTROL Basic Information] 分显示构建特征时完成的必填字段和可选字段的详细信息。 这包括特征类型、特征ID、描述、数据源和其他元数据等内容。 这些详细信息因特征类型（文件夹、已载入或基于规则）而异。
+特征详细信息页面的顶部包含可用于管理特征的工具：
 
-![](assets/basicInfo.png)
+1. **[!UICONTROL Add New]**:使用此选项可创建新的基于规则、算法或载入的特征。
+2. **[!UICONTROL Edit]**:使用此选项可更改当前特征的配置。
+3. **[!UICONTROL Delete]**:使用此选项可从Audience Manager帐户中删除当前特征。
+4. **[!UICONTROL Marketplace Recommendations]**:使用此选项，您可以根据未订阅的数据费 [!UICONTROL Audience Marketplace] 用找到与您查看的相似的特征。 请参 [阅面向数据购买者的Audience Marketplace](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) ，了解如何导航Marketplace并查找类似特征。
+
+![基本特征信息](assets/basic-trait-information.png)
+
+## 特征信息 {#basics}
+
+此部 [!UICONTROL Trait Information] 分显示构建特征时完成的必填字段和可选字段的详细信息。 这包括特征类型、特征ID、描述、数据源和其他元数据等内容。 这些详细信息因特征类型（文件夹、已载入或基于规则）而异。
 
 ## 特征图 {#trait-graph}
 
