@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 使用 Google Publisher Tags (GPT) 向 DFP 发送区段的要求和方法
 uuid: 4b2ea81c-29bb-42d3-93d3-1d8e67790b6
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -49,7 +49,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 >
 >如果您的网页正在运行 [加速媒体页面](https://www.ampproject.org/) ([!DNL AMP])库，则必须使用与Audience manager的服务器端集成。 如果您使用并 [!DNL AMP] 且与客户端集成，则必 [!DNL AMP]须迁移到服务器端集成。 请联系您的Audience manager顾问或客户关怀来讨论迁移问题。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [GPT API参考指南](https://support.google.com/dfp_premium/bin/answer.py?hl=en&answer=1650154)
 
