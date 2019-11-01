@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 密码要求、锁定的帐户和忘记的密码
 uuid: bca892eb-3577-4382-8110-131f78d23069
 translation-type: tm+mt
-source-git-commit: 12216ab5105fce80b4b47c31ee6be144ddfe8df9
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -74,7 +74,7 @@ c_password_requirements.xml
 
 单击登 **[!UICONTROL Forgot password]** 录页面中的链接以重置密码。 您将收到一封自动电子邮件，其中包含24小时后过期的临时密码。 单击电子邮件中的链接以访问您的帐户并重置密码。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [数据安全](../overview/data-security-and-privacy/data-security.md)
 >* [数据安全](../overview/data-security-and-privacy/data-privacy.md)
