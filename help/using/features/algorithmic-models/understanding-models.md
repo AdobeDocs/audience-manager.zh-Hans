@@ -8,7 +8,7 @@ title: 关于算法模型
 topic: DIL API
 uuid: 39441e72-5316-453d-9aff-0e0b633aabu
 translation-type: tm+mt
-source-git-commit: 73d670225fb4170d02428a1dd163f442540e3415
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 73d670225fb4170d02428a1dd163f442540e3415
 
 ## 使用算法建模查找新用户 {#find-new-users}
 
-算法建模通过自动数据分析帮助您发现新的独特受众。 当您选择特征或区段、时间间隔以及第一方和第三方数据源时，该过程将开始。 您的选择为算法模型提供输入。 当分析过程运行时，它会根据所选人群的共享特征来查找合格用户。 完成后，此数据在 [Trait Builder](../../features/traits/about-trait-builder.md) （特征生成器）中可用，您可以在此处使用它根据准确性和范围创 [建特征](../../features/traits/trait-accuracy-reach.md)。 此外，您还可以构建将算法特征与基于规则的特征相结合的细分，并使用布尔表达式和比较运算符添加其他资格要求。 算法建模为您提供了一种动态方式，可从所有可用的特征数据中提取值。
+算法建模通过自动数据分析帮助您发现新的独特受众。 当您选择特征或区段、时间间隔以及第一方和第三方数据源时，该过程开始。 您的选择为算法模型提供输入。 当分析过程运行时，它会根据所选人群的共享特征来查找合格用户。 完成后，此数据在 [Trait Builder](../../features/traits/about-trait-builder.md) （特征生成器）中可用，您可以在此处使用它根据准确性和范围创 [建特征](../../features/traits/trait-accuracy-reach.md)。 此外，您还可以构建将算法特征与基于规则的特征相结合的细分，并使用布尔表达式和比较运算符添加其他资格要求。 算法建模为您提供了一种动态方式，可从所有可用的特征数据中提取值。
 
 ## 优势 {#advantages}
 
@@ -51,13 +51,6 @@ source-git-commit: 73d670225fb4170d02428a1dd163f442540e3415
 ## 疑难解答 {#troubleshooting}
 
 我们取消激活任何算法模型，这些模型无法连续三次运行生成数据。 请注意，之后不能将模型的状态设置回活动状态。 为确保您的模型生成数据，我们建议您从具有足够特征的数据源构建模型以从中累积数据。
-
->[!MORE_LIKE_THIS]
->
->* [目标](../../features/destinations/destinations.md)
->* [特征](../../features/traits/trait-details-page.md)
->* [区段](../../features/segments/segments-purpose.md)
-
 
 ## 了解TraitWeight {#understanding-traitweight}
 
@@ -189,7 +182,7 @@ Audience Manager会显示您的加权模型结果 [!UICONTROL Trait Builder]。 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> 模型范围和准确性</span> </p> </td> 
-   <td colname="col2"> <p>显示 <a href="../../features/traits/trait-accuracy-reach.md"> 上次模型运行的准确</a> 、触及数据。 </p> </td>
+   <td colname="col2"> <p>显示 <a href="../../features/traits/trait-accuracy-reach.md"> 上次模型运行的准确性</a> ，并触及数据范围。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> 模型处理历史</span> </p> </td> 
@@ -206,7 +199,14 @@ Audience Manager会显示您的加权模型结果 [!UICONTROL Trait Builder]。 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> 特征使用模型</span> </p> </td>
-   <td colname="col2"> <p>显示基于所选模型的算法特征列表。 单击特征名称或特征ID可了解有关该特征的更多信息。 选 <b><span class="uicontrol"> 择“使用模型创建新特征</span></b> ”以转到算法特征创建过程。 </p> <p>章节标签会根据模型名称而更改。 例如，假设您创建一个模型并将其命名为Model A。加载摘要页面时，此部分的名称将更改为“使用模 <span class="wintitle"> 型A的特征”</span>。 </p> </td>
+   <td colname="col2"> <p>显示基于所选模型的算法特征列表。 单击特征名称或特征ID可了解有关该特征的更多信息。 选 <b><span class="uicontrol"> 择“使用模型创建新特征</span></b> ”，以转到算法特征创建过程。 </p> <p>章节标签会根据模型名称而更改。 例如，假设您创建一个模型并将其命名为Model A。加载摘要页面时，此部分的名称将更改为“使用模 <span class="wintitle"> 型A的特征”</span>。 </p> </td>
   </tr>
  </tbody>
 </table>
+
+>[!MORELIKETHIS]
+>
+>* [目标](../../features/destinations/destinations.md)
+>* [特征](../../features/traits/trait-details-page.md)
+>* [区段](../../features/segments/segments-purpose.md)
+
