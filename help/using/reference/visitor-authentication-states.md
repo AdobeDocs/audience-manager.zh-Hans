@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Audience manager中的访客身份验证状态
 uuid: d748c0c3-5833-4fb9-ab3e-793f5f252e47
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -82,7 +82,7 @@ Audience manager中的访客身份验证状态确定新特征信息是写入访�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1" morerows="1"> <p> <code>2</code> </p> </td> 
+   <td colname="col1" morerows="1"> <p> <code> 2 </code> </p> </td> 
    <td colname="col2"> 是，如果已验证选项合并规则=“上次已验证配置文件” </td> 
    <td colname="col3" morerows="1"> <p>否，特征数据将写入设备配置文件。 </p> </td> 
   </tr> 
@@ -100,7 +100,7 @@ Audience manager中的访客身份验证状态确定新特征信息是写入访�
 >
 >[!DNL Audience Manager] 在所有三种情况下 [执行CID和UUID](../reference/ids-in-aam.md) 之间的ID同步。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [客户 ID 和身份验证状态](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html)
 
