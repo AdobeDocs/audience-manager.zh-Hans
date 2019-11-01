@@ -1,21 +1,21 @@
 ---
-description: In Segment Builder, recency and frequency let you segment visitors based on actions that occur or repeat over a set daily interval.
-seo-description: In Segment Builder, recency and frequency let you segment visitors based on actions that occur or repeat over a set daily interval.
+description: 在“区段生成器”中，最近和频率允许您根据在设定的每日间隔内发生或重复的操作对访客进行区段划分。
+seo-description: 在“区段生成器”中，最近和频率允许您根据在设定的每日间隔内发生或重复的操作对访客进行区段划分。
 seo-title: 近况和频率
 solution: Audience Manager
 title: 近况和频率
 uuid: faadd18a-bf27-4b73-995e-9809f52f5350
 translation-type: tm+mt
-source-git-commit: 1cbff10b9e978755e139e7d5b996249de5ebb5bd
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
 
 # Recency and Frequency {#recency-and-frequency}
 
-In , recency and frequency let you segment visitors based on actions that occur or repeat over a set daily interval.[!UICONTROL Segment Builder]
+在 [!UICONTROL Segment Builder]最近和频率中，您可以根据在设定的每日间隔内发生或重复的操作对访客进行细分。
 
-Audience Manager defines  and  as follows:[!DNL recency][!DNL frequency]
+Audience manager定义 [!DNL recency] 如 [!DNL frequency] 下：
 
 * **[!UICONTROL Recency]** :用户最近查看或符合一个（或多个）特征的资格。
 * **[!UICONTROL Frequency]** :用户查看或限定一个（或多个）特征的速率。
@@ -73,30 +73,30 @@ In [!UICONTROL Segment Builder], [!UICONTROL Recency] and [!UICONTROL Frequency]
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>特征类型</b> </p> </td> 
-   <td colname="col2"> <p>You can apply frequency controls to rule-based and folder traits only. </p> </td> 
+   <td colname="col2"> <p>您只能将频率控制应用于基于规则的特征和文件夹特征。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>近期要求</b> </p> </td> 
-   <td colname="col2"> <p>You can configure frequency requirements without configuring recency requirements. <i></i>Just set a frequency value and leave the recency field blank. </p> </td> 
+   <td colname="col2"> <p>您可以配置频率要求， <i>而无需配</i> 置最近的要求。 只需设置一个频率值，并将最近使用的字段留空即可。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>Profile Merge Rules</b> </p> </td> 
-   <td colname="col2"> <p>See  Trait Frequency, External Device Graphs, and Profile Merge Rules.<a href="../../faq/faq-profile-merge.md#trait-freq-device-rules"></a> </p> </td> 
+   <td colname="col1"> <p><b>个人资料合并规则</b> </p> </td> 
+   <td colname="col2"> <p>请参 <a href="../../faq/faq-profile-merge.md#trait-freq-device-rules"> 阅特征频率、外部设备图形和配置文件合并规则</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Recency Examples {#recency-examples}
+## 近期示例 {#recency-examples}
 
-Here are two examples of how recency works, depending on your selection in the UI:
+以下是最近如何工作的两个示例，具体取决于您在UI中的选择：
 
-### Using a less than or equal to operator (&lt;=)
+### 使用小于或等于运算符(&lt;=)
 
-![Less-than-equal-to](assets/less-than-equal-to.png)
+![不等于](assets/less-than-equal-to.png)
 
-In this example, you select the &lt;= operator, as shown in the screenshot. This qualifies your user for the segment if they qualify for any of the three traits a minimum of three times within the last five days. 以下时间线显示创建区段时的区段资格（10月1日和10天后）。
+在此示例中，您选择&lt;=运算符，如屏幕截图所示。 如果用户在过去5天内至少有3次符合这3个特征中任意一个的特征，则这将使您有资格获得区段。 以下时间线显示创建区段时的区段资格（10月1日和10天后）。
 
-![Last-five-days](assets/last-5-days.png)
+![最近5天](assets/last-5-days.png)
 
 ### 使用大于或等于运算符(=&gt;)
 
@@ -119,7 +119,7 @@ In this example, you select the &lt;= operator, as shown in the screenshot. This
 
 * 对——对于广告限频用例，您可以创建与以下内容类似的细分规则： `(frequency([1000T] <= 2D) >= 5)`. 此表达式包括在过去2天内至少5次使用ID“1000”实现该特征的所有用户。 通过将此区段发送到广告服务器并在广告服务器中的 `NOT` 区段上设置一组，来设置频率限制。 该方法在仍用于频率 [!DNL Audience Manager] 上限的相同用途的同时获得了更好的性能。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [区段生成器控件：特征部分](../../features/segments/segment-builder.md#segment-builder-controls-traits)
 >* [段表达式编辑器中使用的代码语法](../../features/segments/segment-code-syntax.md)
