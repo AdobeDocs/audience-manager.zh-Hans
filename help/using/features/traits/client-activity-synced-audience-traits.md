@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 活动受众特征和数据源已同步特征
 uuid: b4f145ab-f343-4d71-86d1-5d03f7b03809
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 >
 >[!UICONTROL Data Source Synced Traits] 对于疑难排解很有用。 单击特征名称以检查特征摘要页面上的度量。 如果所选特征返回数据，则表示ID同步过程设置正确并将数据推送到 [!DNL Audience Manager]。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [可寻址受众](../../features/addressable-audiences.md)
 
