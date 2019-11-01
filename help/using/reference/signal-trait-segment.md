@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 信号、特征和区段
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -55,8 +55,8 @@ c_signal_trait_segment.xml
   </tr> 
   <tr> 
    <td colname="col1"><b>区段</b> </td> 
-   <td colname="col2"> <p>共享一组通用属性并符合相关特征的用户。 </p> <p>布尔表达式以及最近／频率要求允许您创建区段资格规则。 </p> <p>结合特征和细分规则，创建精确的资格要求。 </p> </td> 
-   <td colname="col3"> <p>根据可用的特征和信号，您可以创建表示为： </p> <p><code> (product=camera AND type=digital SLR)或(price&gt;1000)</code> </p> </td> 
+   <td colname="col2"> <p>共享一组通用属性并符合相关特征的用户。 </p> <p>布尔表达式以及最近／频率要求允许您创建区段资格规则。 </p> <p>利用特征和细分规则的组合创建精确的资格要求。 </p> </td> 
+   <td colname="col3"> <p>根据可用的特征和信号，您可以创建表示为： </p> <p><code> (product=camera AND type=digital SLR) OR (price&gt;1000)</code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -77,7 +77,7 @@ c_signal_trait_segment.xml
 https://<domain>/event?product=camera&price>100
 ```
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [区段：目的、构成和规则](../features/segments/segments-purpose.md)
 
