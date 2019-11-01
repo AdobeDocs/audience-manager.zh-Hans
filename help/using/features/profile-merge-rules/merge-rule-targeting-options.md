@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 配置文件合并规则的一般用例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 translation-type: tm+mt
-source-git-commit: 532c69981ebc082bd411a9232e9ef207b59dace5
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -112,7 +112,7 @@ Audience manager将合并每台设备+跨设备配置文件对，以查看合并
 
 >[!VIDEO](https://video.tv.adobe.com/v/28975/?captions=chi_hans)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [配置文件链接设备图形使用案例](profile-link-use-case.md)
 >* [外部设备图形使用案例](external-graph-use-cases.md)
