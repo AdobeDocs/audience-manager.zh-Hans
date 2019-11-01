@@ -7,7 +7,7 @@ title: 创建、定价和管理数据源
 topic: DIL API
 uuid: e28c20b3-33fc-4485-8ee9-8530d126f741
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -59,11 +59,6 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 * **[!UICONTROL Private]** 和 **[!UICONTROL Unbranded]**:采购员列表仅 [!UICONTROL Marketplace] 显示数据馈送名称和说明。 数据提供者名称显示为 [!UICONTROL Private Seller]。
 
 要查看私有源对购买者的外观，请参阅私有数据源中的购买 [者部分](../../../features/audience-marketplace/marketplace-private-feeds.md)。
-
->[!MORE_LIKE_THIS]
->
->* [专用数据信息源](../../../features/audience-marketplace/marketplace-private-feeds.md)
-
 
 ## 停用订阅者的数据馈送 {#deactivate-data-feed}
 
@@ -183,12 +178,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 3. 在每个 [!UICONTROL Allow Access] 请求框的部分，单击复选标记以批准请求，或单击X以拒绝访问。
 4. 在确认弹出窗口中确认或取消选定的操作。
 
->[!MORE_LIKE_THIS]
->
->* [专用数据信息源](../../../features/audience-marketplace/marketplace-private-feeds.md)
-
-
-##  数据提供商的折扣 {#discounts}
+## 数据提供商的折扣 {#discounts}
 
 在 [!UICONTROL Audience Marketplace]中，折扣允许您降低单个订阅者的数据源的发布价格。 您可以向已提交订阅请求的订阅者或已请求有关数据馈送的详细信息的订阅者提供折扣。 折扣适用于 [!DNL CPM] 统一费率源。 当您希望为新客户提供订阅奖励或奖励客户忠诚度时，折扣会很有帮助。
 
@@ -212,3 +202,8 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 数据提供商可以在中查看其所有订阅者和折扣源 **[!UICONTROL Audience Marketplace > My Shared Data > Current Subscribers]**。
 
 ![](assets/subscribers.png)
+
+>[!MORELIKETHIS]
+>
+>* [专用数据信息源](../../../features/audience-marketplace/marketplace-private-feeds.md)
+
