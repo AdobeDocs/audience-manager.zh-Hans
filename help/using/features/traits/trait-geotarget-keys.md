@@ -3,10 +3,10 @@ description: 介绍可用于在Audience Manager帐户中的所有属性中使用
 seo-description: 介绍可用于在Audience Manager帐户中的所有属性中使用地理变量定位用户的常见平台级键值对。
 seo-title: 使用平台级密钥进行地理定位
 solution: Audience Manager
-title: ' 使用平台级密钥进行地理定位'
+title: 使用平台级密钥进行地理定位
 uuid: c7e4cbfe-e564-404e-a565-bbe5fd2fb519
 translation-type: tm+mt
-source-git-commit: c5c57423bcba8d4b3974a04c46dc7c7afc7484a0
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -47,12 +47,12 @@ source-git-commit: c5c57423bcba8d4b3974a04c46dc7c7afc7484a0
 | d_long | 经度（例如d_long=73.98）。 下载经 [度列表](assets/d_long.txt)。 |
 | d_postal_code | 邮政编码（不包括扩展+4代码）。 下载邮 [政编码列表](assets/d_postal_code.txt)。  例如： <ul><li>特征： d_postal_code=84004 </li><li>特征名称：阿尔卑斯</li></ul> |
 | d_state | 美国州的2个字符缩写。 下载状 [态代码列表](assets/d_state.txt)。  例如： <ul><li>特征： d_state=NY </li><li>特征名称：纽约</li></ul>d_state包含不同国家／地区的不同状态的重复值。 例如，d_state == "on"匹配多个状态：安大略省（加拿大）、翁多省（尼日利亚）、奥沙纳省（纳米比亚）。 我们建议将此信号与d_country等其他信号相结合，以实现更具体的地理定位。 |
-|  d_region | 区域字母数字ID。 下载区 [域列表](assets/Country_RegionCodes_City.csv)。  然后，您可以使用此列表将区域ID与区域名称匹配。 |
+| d_region | 区域字母数字ID。 下载区 [域列表](assets/Country_RegionCodes_City.csv)。  然后，您可以使用此列表将区域ID与区域名称匹配。 |
 | d_isp | ISP/组织。 下载 [ISP列表](assets/d_isp.txt)。 |
 
 所有基于 [位置的信号列表按如下顺序](assets/all.csv) ，包括上述所有信号： `d_country,d_city,d_region,d_state,d_dma_code,d_postal_code,d_area_code,d_lat,d_long`
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [关键变量的前缀要求](../../features/traits/trait-variable-prefixes.md)
 
