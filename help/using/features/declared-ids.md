@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 声明的ID
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
 translation-type: tm+mt
-source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
  <tbody> 
   <tr> 
    <td colname="col1"> <b>活动调用</b> </td> 
-   <td colname="col2"> <p>要正常工作，您需 <span class="wintitle"> 要页 </span> 面上的 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="https" scope="external"> DIL和Experience Cloud ID服 </a> 务代码。 <span class="wintitle"> DIL通过 </span> Experience Cloud ID服务提供的setVisitorID函数获 <span class="wintitle"> 得声明的ID </span> ，并将其传递给受众经 <code></code><span class="keyword"></span><span class="keyword"></span>理(Audience Manager)。 </p> </td> 
+   <td colname="col2"> <p>要正常工作，您需 <span class="wintitle"> 要页 </span> 面上的 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="https" scope="external"> DIL和Experience Cloud ID服 </a> 务代码。 <span class="wintitle"> DIL通过 </span><span class="wintitle"> Experience Cloud ID服务提供的 </span> 函数获取声明的ID，并将 <code> setVisitorID </code> 其传递给 <span class="keyword"></span><span class="keyword"></span>Audience Manager。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>匹配ID</b> </td> 
@@ -82,15 +82,15 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
  <tbody> 
   <tr> 
    <td colname="col1"> <p>数据提供者ID和用户ID。 </p> </td> 
-   <td colname="col2"> <p> <code> https://<i>域名</i>/demoptout.jpg?d_cid=123%01987... </code> </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain name</i>/demoptout.jpg?d_cid=123%01987... </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>集成代码和用户ID。 </p> </td> 
-   <td colname="col2"> <p> <code> https://<i>域名</i>/demoptout?d_cid_ic=456%01321... </code> </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain name</i>/demoptout?d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>多个 <code> d_cid </code> 和 <code> d_cid_ic键 </code> -值对。 </p> </td> 
-   <td colname="col2"> <p> <code> https://<i>域名</i>/demoptout?d_cid=123%01987&amp;d_cid_ic=456%01321... </code> </p> </td> 
+   <td colname="col1"> <p>多个 <code> d_cid </code> 和 <code> d_cid_ic </code> 键值对。 </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain name</i>/demoptout?d_cid=123%01987&amp;d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -108,16 +108,16 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> 仅d_uuid </code> </p> </td> 
+   <td colname="col1"> <p> <code> d_uuid </code> 在 </p> </td> 
    <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid=AAM ID </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>合作伙伴级别选择退出 </p> </td> 
-   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid=用户ID&amp;d_dpid=数据提供者ID </code> </p> <p>将存储一个合作伙伴级别的退出选项，以便将此 <code> dpid </code> + <code> dpuuid对最新映射 </code> 到AAM UUID。 如果之前没有现有映射，Audience manager将检查请求在cookie中是否包含AAM UUID，如果包含，则使用它存储退出。 否则，Audience manager将生成一个新的AAM UUID，并在其下存储退出选项。 </p> </td> 
+   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>将存储一个合作伙伴级别的退出选项，以将此 <code> dpid </code> +对的最 <code> dpuuid </code> 新映射到AAM UUID。 如果之前没有现有映射，Audience manager将检查请求在cookie中是否包含AAM UUID，如果包含，则使用它存储退出。 否则，Audience manager将生成一个新的AAM UUID，并在其下存储退出选项。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_dpuuid </code> + <code> ddpid </code> and explicit <code> d_uuid </code> </p> </td> 
-   <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid=用户ID&amp;d_dpuuid=数据提供者的用户ID&amp;<i>d_dpid=数据提供者ID</i></code> </p> <p> <code> d_uuid始 </code> 终优先。 如果 <code> dpid </code> + <code> dpuuid组合映射到另一个AAM UUID，则退出将存储在请求中传递的AAM UUID( </code> d_uuid <code></code>)下。 </p> </td> 
+   <td colname="col1"> <p> <code> d_dpuuid </code> + <code> d_dpid </code> and explicit <code> d_uuid </code> </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid= user ID&amp;d_dpuuid= data provider's user ID&amp;<i>d_dpid=data provider ID</i> </code> </p> <p> <code> d_uuid </code> 始终优先。 如果 <code> dpid </code> +组 <code> dpuuid </code> 合映射到另一个AAM UUID，则退出将存储在请求()中传递的AAM UUID下 <code> d_uuid </code>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -142,12 +142,12 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> d_cid =数<i>据提供者ID</i> %01<i>用户ID</i></code> </p> </td> 
-   <td colname="col2"> <p>在单个键值对中包含数据提供者ID和关联的唯一用户ID。 <code> d_cid替换 </code> 了d_dpid <code> 和d_dpuuid </code><code></code>，这些被认为已弃用，但仍受支持。 请参阅 <a href="../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td> 
+   <td colname="col1"> <p> <code> d_cid =<i>data provider ID</i> %01<i>user ID</i> </code> </p> </td> 
+   <td colname="col2"> <p>在单个键值对中包含数据提供者ID和关联的唯一用户ID。 <code> d_cid </code> 替换 <code> d_dpid </code> 和 <code> d_dpuuid </code>，后者被视为已弃用，但仍受支持。 请参阅 <a href="../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_cid_ic =集<i>成代码</i> %01<i>用户ID</i></code> </p> </td> 
-   <td colname="col2"> <p>在单个键值对中包含集成代码和关联的唯一用户ID。 <code> d_cid_ic替换 </code> 了d_dpid和 <code> d_dpuuid </code><code></code>，它们已弃用，但仍受支持。 请参阅 <a href="../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td> 
+   <td colname="col1"> <p> <code> d_cid_ic =<i>integration code</i> %01<i>user ID</i> </code> </p> </td> 
+   <td colname="col2"> <p>在单个键值对中包含集成代码和关联的唯一用户ID。 <code> d_cid_ic </code> 替换 <code> d_dpid </code> 和 <code> d_dpuuid </code>（已弃用但仍支持）。 请参阅 <a href="../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -166,23 +166,18 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
  <tbody> 
   <tr> 
    <td colname="col1"> <p>数据提供者ID和用户ID。 </p> </td> 
-   <td colname="col2"> <p> <code> https://<i>域名</i>/event?d_cid=123%01987... </code> </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain name</i>/event?d_cid=123%01987... </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>集成代码和用户ID。 </p> </td> 
-   <td colname="col2"> <p> <code> https://<i>域名</i>/event?d_cid_ic=456%01321... </code> </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain name</i>/event?d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>多个 <code> d_cid </code> 和 <code> d_cid_ic键 </code> -值对。 </p> </td> 
-   <td colname="col2"> <p> <code> https://<i>域名</i>/event?d_cid=123%01987&amp;d_cid_ic=456%01321... </code> </p> </td> 
+   <td colname="col1"> <p>多个 <code> d_cid </code> 和 <code> d_cid_ic </code> 键值对。 </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain name</i>/event?d_cid=123%01987&amp;d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
->[!MORE_LIKE_THIS]
->
->* [CID替换DPID和DPUUID](../reference/cid.md)
-
 
 ## 声明的ID变量 {#declared-id-variables}
 
@@ -285,3 +280,8 @@ myCallback({
 ## 不定位和退出呼叫 {#do-not-target}
 
 该过 [!UICONTROL declared ID] 程支持网站访客偏好，以便根据您的网站选择退出Audience manager定位。 当Audience manager收到退出请求时，将返 [!UICONTROL DCS] 回空对象而 [!DNL JSON] 非Audience manager用户ID。
+
+>[!MORELIKETHIS]
+>
+>* [CID替换DPID和DPUUID](../reference/cid.md)
+
