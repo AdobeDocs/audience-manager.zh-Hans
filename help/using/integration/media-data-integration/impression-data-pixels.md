@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 通过像素调用捕获营销活动展示数据
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: f072c5328ac75bf3376f80e86418d25d4f10df23
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -67,10 +67,10 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_cid </code> </td> 
-   <td colname="col2"> <p>在此上下文中， <code></code> d_cid实例化键值对，使您能够将移动设备类型与唯一用户ID(DPUUID)关联。 固定ID决定移动设备类型。 该值是用户ID，可能不同。 将键值对与 <code> %01分开 </code>，这是非打印控制字符。 此参数接受以下键： </p> 
+   <td colname="col2"> <p>在此上下文中， <code> d_cid </code> 实例化一个键值对，它允许您将移动设备类型与唯一用户ID(DPUUID)关联。 固定ID决定移动设备类型。 该值是用户ID，可能不同。 将键值对与非打 <code> %01 </code>印控制字符分开。 此参数接受以下键： </p> 
     <ul id="ul_4D5D696D10B34615867AF3B64A938878"> 
-     <li id="li_A4BD4B0C8C9443BF99075CDFACC013F6">二零九一四年：标识Android(GAID)设备。 例如， <code> d_cid = 20914 %01 1234表示用 </code> 户1234与Android设备关联。 </li> 
-     <li id="li_F83D7B3EC4D24D0187BFE639E2812B36">二零九一五年：标识iOS(IDFA)设备。 例如， <code> d_cid = 20915 %01 5678表示 </code> 用户5678与iOS设备关联。 </li> 
+     <li id="li_A4BD4B0C8C9443BF99075CDFACC013F6">二零九一四年：标识Android(GAID)设备。 例如， <code> d_cid = 20914 %01 1234 </code> 表示用户1234与Android设备关联。 </li> 
+     <li id="li_F83D7B3EC4D24D0187BFE639E2812B36">二零九一五年：标识iOS(IDFA)设备。 例如， <code> d_cid = 20915 %01 5678 </code> 表示用户5678与iOS设备关联。 </li> 
     </ul> <p>可选。 </p> </td> 
   </tr> 
   <tr> 
@@ -98,7 +98,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
    <td colname="col2"> <p>与<a href="../../overview/aam-gdpr/aam-iab-plugin.md">适用于 IAB TCF 的 Audience Manager 插件</a>有关。</p> <p><code>gdpr</code> 可以是0（GDPR不适用）或1（GDPR适用）。</p> <p>默认值为 0。</p><p>可选。</p> </td> 
   </tr>
    <tr> 
-   <td colname="col1"> <code>gdpr_connection</code> </td> 
+   <td colname="col1"> <code>gdpr_consent</code> </td> 
    <td colname="col2"> <p>与<a href="../../overview/aam-gdpr/aam-iab-plugin.md">适用于 IAB TCF 的 Audience Manager 插件</a>有关。</p><p> 如果 <code>gdpr=1</code>，则 <code>%gdpr_consent%</code> 将被替换为字符串 <code>gdpr_consent</code>（请参阅 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external">IAB 规范</a>）。</p> <p>默认值为 0。</p><p>可选。</p> </td> 
   </tr> 
  </tbody> 
@@ -108,7 +108,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
 >
 >请与Adobe Audience Manager咨询或客户潜在客户联系，获取特定于客户域的确切URL。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [受众优化报告的数据和元数据文件](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
 
