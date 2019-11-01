@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 配置文件合并规则功能板
 uuid: d6725218-7b36-4653-9900-d67b5f7702a0
 translation-type: tm+mt
-source-git-commit: f53e091b8c069221837af01ad54deeb731cd48e2
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: f53e091b8c069221837af01ad54deeb731cd48e2
 * 跟踪每个用户的平均设备数。
 * 使用基本控件创建、编辑和删除规则。 只有管理员才能管理规则，但其他用户可以查看规则并将其应用到区段。 请参 [阅配置文件合并规则选项的定义](merge-rule-definitions.md)[和合并规则的使用案例](merge-rule-targeting-options.md)。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [个人资料合并规则常见问题解答](../../faq/faq-profile-merge.md)
 
