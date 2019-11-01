@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 交付和绩效报告
 uuid: c8daa6bc-50d6-4c2c-a45a-5b7065fd88f9
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -29,19 +29,11 @@ c_delivery_reports.xml
 
 >[!NOTE]
 >
->每天更新1天的查看次数。 每周更新7天和30天回顾期。
+>每天更新1天的视图。 每周更新7天和30天回顾期。
 
 ![](assets/deliveryAndPerformanceReportCapture.PNG)
 
 选择单个点以在弹出窗口中查看数据详细信息。 此外，您还可以单击并拖动光标到一组点上，以仅返回有关这些数据元素的数据。 这些操作会自动更新报告结果。
-
->[!MORE_LIKE_THIS]
->
->* [使用查找表缩短日志文件处理时间](../../reporting/dynamic-reports/lookup-tables.md)
->* [使用数据滑块过滤报告结果](../../reporting/dynamic-reports/data-sliders.md)
->* [已定义“交付和性能数据”弹出字段](../../reporting/dynamic-reports/delivery-performance-report.md#field-definitions)
->* [交互式报告中使用的形状、颜色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
-
 
 ## 已定义“交付和性能数据”弹出字段 {#field-definitions}
 
@@ -66,7 +58,10 @@ r_delivery_data_pop.xml
 | **[!UICONTROL Reach]** | 唯一访客数。 |
 | **[!UICONTROL Click Through]** | 访客点击广告的次数。 |
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [使用查找表缩短日志文件处理时间](../../reporting/dynamic-reports/lookup-tables.md)
+>* [使用数据滑块过滤报告结果](../../reporting/dynamic-reports/data-sliders.md)
+>* [已定义“交付和性能数据”弹出字段](../../reporting/dynamic-reports/delivery-performance-report.md#field-definitions)
+>* [交互式报告中使用的形状、颜色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
 
