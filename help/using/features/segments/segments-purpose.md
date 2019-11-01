@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 细分用途、组成和规则
 uuid: 886d4abe-b1b6-4983-b4fb-b552d54d51ba
 translation-type: tm+mt
-source-git-commit: c229bf71da5b07277811219cbf2794c3ca7bc89d
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -48,7 +48,7 @@ Audience manager区段是由个人或特征组组成的服务器端规则。 特
 * 将区段数据发送到目标合作伙伴。
 * 使用Audience manager报告监控性能。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [信号、特征和区段](../../reference/signal-trait-segment.md)
 
