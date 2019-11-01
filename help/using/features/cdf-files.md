@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 客户数据馈送
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 translation-type: tm+mt
-source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -59,7 +59,7 @@ source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><code> 活动时间</code> </p> </td> 
+   <td colname="col1"> <p><code> Event Time</code> </p> </td> 
    <td colname="col2"> <p>时间戳 </p> </td> 
    <td colname="col3"> <p>数据收集服务器 <span class="wintitle"></span> (DCS)处理CDF文件的时间。 时间戳使用 <i>yyyy-mm-dd hh:mm:ss</i> 格式，并在UTC时区中设置。 </p> <p> <p>注意：活动时 <i>间不是</i>: <p> 
        <ul id="ul_41ABC813FAAC4659AC8DA13F4A6DD7EB"> 
@@ -68,37 +68,37 @@ source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
        </ul> </p> </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 设备</code> </p> </td> 
+   <td colname="col1"> <p><code> Device</code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
    <td colname="col3"> <p>这是唯 <span class="wintitle"> 一用户ID</span> (UUID)，它是站点访客的38位设备ID。 另请参阅 <a href="../reference/ids-in-aam.md">Audience Manager 中的 ID 索引</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 容器 ID</code> </p> </td> 
+   <td colname="col1"> <p><code> Container ID</code> </p> </td> 
    <td colname="col2"> <p>数值 </p> </td> 
    <td colname="col3"> <p>触发ID同步的容器的ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 实现的特征</code> </p> </td> 
+   <td colname="col1"> <p><code> Realized Traits</code> </p> </td> 
    <td colname="col2"> <p>数组 </p> </td> 
    <td colname="col3"> <p>一组特征ID，其中包含访客在事件调用中实现（符合）的所有特征。 </p> <p>请注意，该数组可包含访客在此事件调用中曾获得资格且重新获得资格的特征。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 实现的细分</code> </p> </td> 
+   <td colname="col1"> <p><code> Realized Segments</code> </p> </td> 
    <td colname="col2"> <p>数组 </p> </td> 
    <td colname="col3"> <p>一组区段ID，其中包含访客在事件调用中实现（符合条件）的所有区段。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 请求参数</code> </p> </td> 
+   <td colname="col1"> <p><code> Request Parameters</code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
-   <td colname="col3"> <p>捕获所有参数（变量、ID、键值对、设备广告ID等）的字符串在活动调用中传入。 </p> <p>缩短示例： </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD5965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
+   <td colname="col3"> <p>捕获所有参数（变量、ID、键值对、设备广告ID等）的字符串在活动调用中传入。 </p> <p>缩短示例： </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810,c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD59965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 引用者数据类型</code> </p> </td> 
+   <td colname="col1"> <p><code> Referer Data Type</code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
    <td colname="col3"> <p>引用页面的未编码URL（如果有）。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> IP数据类型</code> </p> </td> 
+   <td colname="col1"> <p><code> IP Data Type</code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
    <td colname="col3"> <p>在活动调用中捕获的访客的IP地址。 </p> </td> 
   </tr> 
@@ -108,12 +108,12 @@ source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
    <td colname="col3"> <p>分 <span class="keyword"> 配给网站访客的Experience Cloud</span> ID(MID)。 See also, <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and theExperience Cloud ID service</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 所有细分</code> </p> </td> 
+   <td colname="col1"> <p><code> All Segments</code> </p> </td> 
    <td colname="col2"> <p>数组 </p> </td> 
    <td colname="col3"> <p>一组区段ID，其中包含访客符合条件的先前实现的区段和新区段。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 所有特征</code> </p> </td> 
+   <td colname="col1"> <p><code> All Traits</code> </p> </td> 
    <td colname="col2"> <p>数组 </p> </td> 
    <td colname="col3"> <p>一组第一方和第三方特征ID，其中包含访客自上次生成的数据馈送以来限定的先前实现的特征和新特征。 </p> </td> 
   </tr> 
@@ -142,9 +142,9 @@ source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
    <td colname="col1"> <p>字段分隔符和分隔符 </p> </td> 
    <td colname="col2"> <p>这些非打印字符定义了CDF文件的元素和结构： </p> <p> 
      <ul id="ul_056A9B90AC88405CBB5F81A56CD6E4C9"> 
-      <li id="li_B9DA15DCB6A445D781B8753C1C4262B0">Ctrl + a(ASCII <code> 001</code> 或 <code> ^A</code>)用非打印空间指示符分隔各个字段中的数据。 </li> 
-      <li id="li_E68D0CC065B34AC9AF91F166CAA2A67C">Ctrl + b(ASCII <code> 002</code> 或 <code> ^B</code>)将数据与数组和请求参数分离。 </li> 
-      <li id="li_6C32D927FEF04CDE9887374E8C2688E7">Ctrl + c(ASCII <code> 003</code> 或 <code> ^C</code>)定义键值对。 </li> 
+      <li id="li_B9DA15DCB6A445D781B8753C1C4262B0">Ctrl + a(ASCII或 <code> 001</code><code> ^A</code>)可使用非打印空间指示符分隔各个字段中的数据。 </li> 
+      <li id="li_E68D0CC065B34AC9AF91F166CAA2A67C">Ctrl + b(ASCII或 <code> 002</code> ) <code> ^B</code>可将数据与数组和请求参数分离。 </li> 
+      <li id="li_6C32D927FEF04CDE9887374E8C2688E7">Ctrl + c(ASCII或 <code> 003</code><code> ^C</code>)定义键值对。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -155,13 +155,13 @@ source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
       <li id="li_C44E8CCB1A964B7A941FD772FB8A7608">设备 </li> 
       <li id="li_F8AE0D4CA19D411686A240FE06F56147">容器 ID </li> 
       <li id="li_660D17989BE54610A01229C47894E8A9">实现的特征 </li> 
-      <li id="li_1591180564374204852785C6FFCA4F74"> 实现的细分 </li> 
+      <li id="li_1591180564374204852785C6FFCA4F74">实现的细分 </li> 
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">请求参数 </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referer </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP 地址 </li> 
       <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud设备ID（或MID）。 See also, <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID Service</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">所有细分 </li> 
-      <li id="li_1B5A6F076A354BA0A931CB260E6D2675"> 所有特征 </li> 
+      <li id="li_1B5A6F076A354BA0A931CB260E6D2675">所有特征 </li> 
      </ol> </p> <p>有关字段说明，请参阅 <a href="#cdf-defined"> 定义的客户数据馈送内容</a>。 </p> </td> 
   </tr> 
  </tbody> 
@@ -224,7 +224,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
    <td colname="col2"> <p>这是Amazon S3服务器上CDF文件的默认根存储存储桶。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 您 <i>的S3存储段名称</i></code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>your S3 bucket name</i> </code> </p> </td> 
    <td colname="col2"> <p>只读存储CDF文件的S3存储段的名称。 </p> </td> 
   </tr> 
   <tr> 
@@ -236,11 +236,11 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
    <td colname="col2"> <p>以24小时表示法表示并在UTC时区中设置的时间值。 <a href="#different-processing-times">另请参阅客 </a> 户数据馈送文件名时间和文件内容时间……. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 合 <i>作伙伴ID</i></code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>partner ID</i> </code> </p> </td> 
    <td colname="col2"> <p>您的合作伙伴ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> <i>AAM进程ID</i>_0</code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>AAM process ID</i>_0</code> </p> </td> 
    <td colname="col2"> <p>内部Audience Manager <span class="keyword"> 流程</span> ID。 </p> </td> 
   </tr> 
   <tr> 
@@ -300,7 +300,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> 文件</code> </p> </td> 
+   <td colname="col1"> <p> <code> Files</code> </p> </td> 
    <td colname="col2"> <p>启动包含有关CDF文件的元数据的数组。 </p> </td> 
   </tr> 
   <tr> 
@@ -309,10 +309,10 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileChecksumMD5</code> </p> </td> 
-   <td colname="col2"> <p>Amazon S3 ETag。 连字符后面的数字显示在多部件上传期间用于构建文件的部件数。 ETag <code> 与</code> MD5文件校验和不相同。 </p> </td> 
+   <td colname="col2"> <p>Amazon S3 ETag。 连字符后面的数字显示在多部件上传期间用于构建文件的部件数。 与 <code> ETag</code> 文件的MD5校验和不相同。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 文件名</code> </p> </td> 
+   <td colname="col1"> <p> <code> FileName</code> </p> </td> 
    <td colname="col2"> <p>文件名。 请参阅 <a href="#cdf-naming-conventions"> 客户数据馈送文件命名约定</a>。 </p> </td> 
   </tr> 
   <tr> 
@@ -333,15 +333,15 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> 总计</code> </p> </td> 
+   <td colname="col1"> <p> <code> Totals</code> </p> </td> 
    <td colname="col2"> <p>启动包含所有CDF文件的聚合数据的对象。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 日</code> </p> </td> 
+   <td colname="col1"> <p> <code> Day</code> </p> </td> 
    <td colname="col2"> <p>数据可用的日期。 使用 <i>yyyy-mm-dd格式</i> 。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 小时</code> </p> </td> 
+   <td colname="col1"> <p> <code> Hour</code> </p> </td> 
    <td colname="col2"> <p>可用数据的小时数。 使用UTC时区中设置的24小时格式。 </p> </td> 
   </tr> 
   <tr> 
@@ -376,7 +376,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 | 文件名 | CDF文件名中的时间戳标记开始准备文 [!DNL Audience Manager] 件以进行交付的时间。 此时间戳以UTC时区设置。 它使用该 `hour=` 参数，时间格式设置为24小时表示法的2位数小时。 此时间可以不同于文件内容中记录的事件时间。 处理CDF文件时，有时您会注意到S3存储段在特定小时内为空。 空桶装置可以表示以下任一情况：<ul><li>那个小时没有数据。 </li><li> 我们的服务器负载很重，在某个小时内无法处理文件。 当服务器启动时，它将本应在较早时间段中存储的文件放入一个稍后时间值的存储段中。 例如，您会看到，应该在17小时存储段中的文件出现在18小时存储段中(文件名 `hour=18` 中包含)。 在这种情况下，服务器可能在17小时内开始处理您的文件，但无法在该时间间隔内完成它。 相反，文件会被推送到下一个每小时的时段。</li></ul><br>**重要说明**:请勿使用文件名时间戳按时间对事件分组。 如果需要按时间分组，请使用文 `EventTime` 件内容中的时间戳。 |
 | 文件内容 | CDF文件内容中的时间戳标记数据收集服务器开始处理文件的时间。 此时间戳以UTC时区设置。 它使用字 `EventTime` 段，时间格式设置为 *`yyyy-mm-dd hh:mm:ss`*。 此时间接近页面上活动的实际时间，但可能与文件名中的小时指示符不同。 <br> **提示**:与文件名 `hour=` 中的时间戳不同，您可以按时间 `EventTime` 使用数据分组。 |
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [客户数据馈送常见问题解答](../faq/faq-cdf.md)
 
