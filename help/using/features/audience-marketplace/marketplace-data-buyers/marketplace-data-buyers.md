@@ -7,7 +7,7 @@ title: 面向数据购买者的受众市场
 topic: DIL API
 uuid: f505b5f4-4231-4e84-993a-cd64128b540f
 translation-type: tm+mt
-source-git-commit: d9a4244f68e95c872d3686da10ee3a774250fbfe
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -87,7 +87,7 @@ source-git-commit: d9a4244f68e95c872d3686da10ee3a774250fbfe
 
 在列表中， [!UICONTROL Marketplace] 有时提供者的名称和特征数据会标记为私有。 这表示专 [用数据源](../../../features/audience-marketplace/marketplace-private-feeds.md)。 私人数据馈送允许卖家限制买家访问其数据。 当销售者提供特价、折扣或隐私和访问控制对他们很重要时，他们可以将源设为私有。 作为买方，如果您希望访问私人源，则必须向卖方发送订阅请求。 有关 [详细信息，请参阅订阅专用数据源](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed) 。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [了解受众市场中的计划详细信息页面](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#marketplace-buyer-details)
 >* [数据购买者的折扣](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#buyer-discount)
