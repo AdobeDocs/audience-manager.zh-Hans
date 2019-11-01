@@ -7,7 +7,7 @@ title: 面向数据购买者的受众市场
 topic: DIL API
 uuid: f505b5f4-4231-4e84-993a-cd64128b540f
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: f66c5a0fb6ea1b0e89b804e56fa7045978427ab8
 
 ---
 
@@ -51,15 +51,15 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 * **[!UICONTROL Private Feeds]**:请参 [阅专用数据源](../../../features/audience-marketplace/marketplace-private-feeds.md)。
 * **[!UICONTROL Currently Subscribed Plan Count]**:您与数据提供者的订阅数。
 
+ 
+
 要轻松找到满足您需求的最佳数据源，请使用页面左侧的以下过滤器 [!UICONTROL Marketplace] :
 
 * **[!UICONTROL Similarity To]**:根据与所选特征或区段的相似性过滤数据源。 在输入要进行比较的特征或区段时，可以使用特征或区段ID或其各自的名称。
-* **[!UICONTROL Similarity Cutoff]**:拖动滑块，根据数据馈送的特征与所选特征或区段的相似程度过滤数据馈送。
+* **[!UICONTROL Similarity Cutoff]**:拖动滑块，根据数据馈送的特征与所选特征或区段的相似程度过滤数据馈送。 要进一步了解特征相似性得分，请参阅特 [征相似性得分](../../segments/trait-recommendations.md#trait-similarity-score)
 * **[!UICONTROL Subscription Status]**:根据您的订阅状态过滤数据服务。
 * **[!UICONTROL Plan Use Case]**:根据支持的用例过滤数据服务： **[!UICONTROL Activation]**、 **[!UICONTROL Segments and Overlap]**&#x200B;和 **[!UICONTROL Modelling]**。
 * **[!UICONTROL Plan Unit]**:根据定价类型过滤数据馈送。
-
-观看以下视频，了解如何使用这些过滤器。
 
 ## 查找相似特征 {#finding-similar-traits}
 
@@ -81,7 +81,6 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 观看以下视频，了解如何查找类似特征的完整概述。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29370/?captions=chi_hans)
-
 
 ## 专用数据信息源 {#private-data-feeds}
 
