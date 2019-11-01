@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 区段生成器中的特征和区段填充数据
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -74,7 +74,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> 估计实时人口（潜在） </span> </p> </td> 
-   <td colname="col2"> <p>在指定时间范围内实时查看以及在Audience manager看到区段时符合相应资格的唯一访客估计数。 </p> <p>在 <span class="wintitle"> Segment Builder</span>，特征的最后30天人群(<span class="wintitle"> Total Trait Popets</span>)可以不同于实时评估的特征和区段。 </p> <p>
+   <td colname="col2"> <p>在指定时间范围内实时查看以及在Audience manager看到区段时符合相应资格的唯一访客的估计数。 </p> <p>在 <span class="wintitle"> Segment Builder</span>，特征的最后30天人群(<span class="wintitle"> Total Trait Popets</span>)可以不同于实时评估的特征和区段。 </p> <p>
      <ul id="ul_CAE803D09913462CAD413A665D85C1A2"> 
       <li id="li_3E64330D6F5B4D2F8F3456730A86894F">对于特征，最近30天的度量将计算在最近30天内符合该特征的唯一用户数。 </li>
       <li id="li_FF3CACD0B6C742CDB94D66200D77CE06">对于实时评估的区段，最后30天指标会计算过去某个时间符合某个特征（在该区段中）的用户数，并在过去30天内再次由Audience manager查看。 例如，假设您有一个用户在60天前符合某个特征的条件，并且在10天前再次被看到。 在数据中，此用户不会添加到特征计数中，因为他们在30天前首次符合特征的条件。 但是，实时评估的区段的最后30天计数中会包含这些字段。 这是因为他们在30天的时间间隔内符合区段的条件。 </li>
@@ -153,7 +153,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 目前，由于我们的细分大小估计器没有考虑配置文件合并规则，因此存在已知的限制。 例如，使用“无验证配置文件”+“当 **前设备配置文件”合并规则查看**&#x200B;区段[](../../features/profile-merge-rules/merge-rule-definitions.md)。 由于我们目前计算细分估计数的方法，估计的总体将包含经过认证的档案。 但是，现有细分群将正确忽略经过身份验证的配置文件。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [配置文件合并规则和设备图常见问题解答](../../faq/faq-profile-merge.md)
 >* [配置文件链接](../../features/profile-merge-rules/merge-rules-overview.md)
