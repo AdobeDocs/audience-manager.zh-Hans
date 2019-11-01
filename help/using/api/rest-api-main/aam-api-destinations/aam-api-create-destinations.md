@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 创建目标
 uuid: 12f04151-ad0e-4cb6-8f3b-b5c427dc2cef
 translation-type: tm+mt
-source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -20,13 +20,6 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
 ## 支持的目标类型：仅URL和Cookie
 
 使用可 `POST` 用的方法只能创 [!UICONTROL URL] 建 [!UICONTROL cookie destinations] 和创建。 当前，您不能使用这些 [!UICONTROL server-to-server destinations] 方法进 [!DNL REST API] 行创建。 但是，相关的目标方 `GET` 法允许您检索有关在用户 [!UICONTROL server-to-server destinations] 界面中创建的信息。
-
->[!MORE_LIKE_THIS]
->
->* [目标](../../../features/destinations/destinations.md)
->* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [说明的键值对](../../../reference/key-value-pairs-explained.md)
-
 
 ## 创建非序列URL目标 {#create-nonserial-dest}
 
@@ -80,11 +73,6 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
    "mappings":null
 } 
 ```
-
->[!MORE_LIKE_THIS]
->
->* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
-
 
 ## 创建序列化URL目标 {#create-serial-url-dest}
 
@@ -141,11 +129,6 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
    "mappings":null 
 }
 ```
-
->[!MORE_LIKE_THIS]
->
->* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
-
 
 ## 创建Cookie目标：单键、无序列号 {#create-cookie-dest-single}
 
@@ -215,12 +198,6 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
    "uparamEnabled":false
 } 
 ```
-
->[!MORE_LIKE_THIS]
->
->* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [说明的键值对](../../../reference/key-value-pairs-explained.md)
-
 
 ## 创建Cookie目标：单键，序列化 {#create-cookie-dest-single-serial}
 
@@ -292,12 +269,6 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
    "uparamEnabled":false
 }
 ```
-
->[!MORE_LIKE_THIS]
->
->* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [说明的键值对](../../../reference/key-value-pairs-explained.md)
-
 
 ## 创建Cookie目标：多密钥、无序列号 {#create-cookie-dest-multi}
 
@@ -435,8 +406,9 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
 }
 ```
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
+>* [目标](../../../features/destinations/destinations.md)
 >* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
 >* [说明的键值对](../../../reference/key-value-pairs-explained.md)
 
