@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 在Trait Builder中使用比较运算符
 uuid: 41bec3b3-e5df-4a6f-abb0-80ce4c75f5e7
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -50,7 +50,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 | **[!UICONTROL Endswith]** | 键值对中的值以此运算符 *指定的* 字符结束。 |
 | **[!UICONTROL Matchesregex]** | 键值对中的值与正则表达式 *指定的* 模式相匹配。 [了解有关在中使用正则表达式的更多信息](../../features/traits/trait-builder-regex.md) ，请访问Adobe Connection cloud中的 [!UICONTROL Trait Builder]Adobe Regular Expressions。 |
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Trait和Segment Builder中的布尔表达式](../../reference/boolean-expressions-tsb.md)
 >* [了解TraitBuilder中的布尔表达式](../../reference/boolean-expressions-tsb.md)
