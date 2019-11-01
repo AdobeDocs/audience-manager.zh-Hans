@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 配置文件合并规则和设备取消分段过程
 uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
 translation-type: tm+mt
-source-git-commit: 54ae5956a34c193d42d4ff9a231249d56cce87aa
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -45,7 +45,7 @@ source-git-commit: 54ae5956a34c193d42d4ff9a231249d56cce87aa
 
 ![](assets/last-device-graph.png)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [配置文件合并规则和设备图常见问题解答](../../faq/faq-profile-merge.md)
 >* [即时跨设备抑制](instant-cross-device-suppression.md)
