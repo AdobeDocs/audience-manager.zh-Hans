@@ -1,12 +1,12 @@
 ---
 description: 请继续此处，了解如何在/event调用中请求DCS响应。 本节包括响应示例和响应中常见数据元素的定义。
 seo-description: 请继续此处，了解如何在/event调用中请求DCS响应。 本节包括响应示例和响应中常见数据元素的定义。
-seo-title: ' 从DCS接收数据'
+seo-title: 从DCS接收数据
 solution: Audience Manager
 title: 从DCS接收数据
 uuid: fbb77197-8530-48a8-b708-d785f7214494
 translation-type: tm+mt
-source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -61,7 +61,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 | `u` 和 `uuid` | 由Audience manager分配的唯一用户ID。 如果要进行服务器到服 [务器DCS调用，则此为必需](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)。 |
 | `y` | 目标类型、iFrame(`iframe`)或图像(`img`)。 |
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [DCS支持的键值前缀和变量](../../../api/dcs-intro/dcs-api-reference/dcs-keys.md)
 
