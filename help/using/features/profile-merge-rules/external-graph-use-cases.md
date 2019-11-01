@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 外部设备图形使用案例
 uuid: f4bc822d-39d2-4680-90ed-7ee2ead6db6f
 translation-type: tm+mt
-source-git-commit: 54ae5956a34c193d42d4ff9a231249d56cce87aa
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -123,7 +123,7 @@ John使用其iPhone 7在数据计划A上进行身份验证。 同时，John的�
 
 ![高级图扩展](assets/advanced-device-graph-expansion.png)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [配置文件链接设备图形使用案例](profile-link-use-case.md)
 >* [配置文件合并规则的一般用例](merge-rule-targeting-options.md)
