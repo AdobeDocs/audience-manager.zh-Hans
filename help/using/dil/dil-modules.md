@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DIL模块
 uuid: d4c0d8dd-79f8-448e-b17c-c935415dd449
 translation-type: tm+mt
-source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -49,14 +49,14 @@ r_dil_sc_init.xml
  </thead>
  <tbody> 
   <tr valign="top"> 
-   <td colname="col1"> <code> 名称 </code> </td> 
+   <td colname="col1"> <code> names </code> </td> 
    <td colname="col2"> 字符串 </td> 
-   <td colname="col3"> <p>一组字符串，其中包含未枚举的 <span class="keyword"> Analytics变 </span> 量， <code> 如Name </code>Campaign、page <code> Channel </code>、product、 <code></code><code></code>等。 </p> </td> 
+   <td colname="col3"> <p>包含未枚举的 <span class="keyword"> Analytics变量(如、、 </span> 、 <code> pageName </code>等)的字符串 <code> channel </code>数 <code> campaign </code><code> product </code>组。 </p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <code> iteredNames </code> </td> 
+   <td colname="col1"> <code> iteratedNames </code> </td> 
    <td colname="col2"> 对象 </td> 
-   <td colname="col3"> <p>包含枚举的 <span class="keyword"> Analytics变量（如prop和evar）的对象数组 </span> , <code> 如prop1 </code>、 <code> prop2 </code>evar3、evar4 <code></code><code></code>等。 </p> </td> 
+   <td colname="col3"> <p>包含枚举的 <span class="keyword"> Analytics变量( </span> 如prop和evar)的对象数组(例如， <code> prop1 </code>, <code> prop2 </code>, <code> evar3 </code>, <code> evar4 </code>)。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> maxIndex </code> </td> 
@@ -74,12 +74,12 @@ r_dil_sc_init.xml
    <td colname="col3"> <p>表示 <span class="wintitle"> DIL的对象 </span> </p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <code> 选项 </code> </td> 
+   <td colname="col1"> <code> options </code> </td> 
    <td colname="col2"> 对象 </td> 
    <td colname="col3"> <p>其他选项： </p> 
     <ul id="ul_F4DFA5351BB5427B8CBF600A0A4A21A9"> 
-     <li id="li_659ECE5E63834A21A2D9698A1444FCA6"> <p> <code> replaceContextDataPeriodsWith </code> </p> <p>如果不指定其他内容，则句点将替换为默认的下划线(_)。 </p> <p>例如， <code> s.contextData = {abc.def = '123'} </code>将在事件调用查询字符串中导致 <code></code> c_contextData_abc_def=123。 </p> <p>此选项仅在 <span class="wintitle"> DIL 5.0版 </span> 或更高版本中可用。 </p> </li> 
-     <li id="li_1C969DD8FC2F43A0A9281D9810A70C3A"> <p> <code> filterFromContextVariables </code> </p> <p>例如，filterFromContextVariables: <code> ['email', 'zip', 'accountNumber'] </code> 将从上下文数据的数据收集中过滤字符串数组。 此选项不包括个人识别信息(PII)。 </p> </li> 
+     <li id="li_659ECE5E63834A21A2D9698A1444FCA6"> <p> <code> replaceContextDataPeriodsWith </code> </p> <p>如果不指定其他内容，则句点将替换为默认的下划线(_)。 </p> <p>例如， <code> s.contextData = {abc.def = '123'} </code>将导致事 <code> c_contextData_abc_def=123 </code> 件调用查询字符串。 </p> <p>此选项仅在 <span class="wintitle"> DIL 5.0版 </span> 或更高版本中可用。 </p> </li> 
+     <li id="li_1C969DD8FC2F43A0A9281D9810A70C3A"> <p> <code> filterFromContextVariables </code> </p> <p>例如，将 <code> filterFromContextVariables: ['email', 'zip', 'accountNumber'] </code> 导致从上下文数据的数据收集中过滤字符串数组。 此选项不包括个人识别信息(PII)。 </p> </li> 
     </ul> <p> </p> </td> 
   </tr> 
  </tbody> 
@@ -136,7 +136,7 @@ DIL.modules.siteCatalyst.init(s, scDil, {
 DIL.modules.siteCatalyst.init(s, scDil);
 ```
 
-## GA.submitUniversalAnalytics {#ga-submit-universal-analytics}
+##  GA.submitUniversalAnalytics {#ga-submit-universal-analytics}
 
 该功 `GA.submitUniversalAnalytics();` 能将Google的数据从Audience manager发 [!DNL Universal Analytics] 送到Audience Manager。 此 [!UICONTROL DIL] 函数设计为可与 `analytics.js`Google的最新代码库一起使用 [!DNL Universal Analytics]。
 
@@ -173,7 +173,7 @@ dil-google-universal-analytics.xml
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> gaObject </code> </p> </td> 
-   <td colname="col2"> <p>Google Analytics实例的全局 <span class="keyword"> 变量 </span>。 这通常在默 <code> 认情 </code> 况下是可用的，除非您已自定义 <span class="keyword"> Google Analytics代 </span> 码。 </p> </td> 
+   <td colname="col2"> <p>Google Analytics实例的全局 <span class="keyword"> 变量 </span>。 这通常是默 <code> ga </code> 认情况，除非您已自定义 <span class="keyword"> Google Analytics代 </span> 码。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance </code> </p> </td> 
@@ -181,7 +181,7 @@ dil-google-universal-analytics.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> internalPropertyName </code> </p> </td> 
-   <td colname="col2"> <p> <i>（可选）</i> ，在 <code> analytics.js库 </code> 中，内部属性是微型变量 <code> “b” </code>。 此变量保存 <span class="keyword"> Google Analytics数 </span> 据。 </p> <p>此属性是可选的，因为除非Google更改其内部变量的名称，否则您无需设置它。 例如，如果此简化的变 <code> 量更改为“a” </code>，您应调用 <code> GA.submitUniversalAnalytics(); </code> 这样： </p> <p> <code> DIL.modules.GAsubmitUniversalAnalytics(ga, DilInstance, 'a'); </code> </p> </td> 
+   <td colname="col2"> <p> <i>（可选）</i> ，在库 <code> analytics.js </code> 中，内部属性是受限变量 <code> 'b' </code>。 此变量保存 <span class="keyword"> Google Analytics数 </span> 据。 </p> <p>此属性是可选的，因为除非Google更改其内部变量的名称，否则您无需设置它。 例如，如果此简化的变量更 <code> 'a' </code>改为，您将调用 <code> GA.submitUniversalAnalytics(); </code> 如下： </p> <p> <code> DIL.modules.GAsubmitUniversalAnalytics(ga, DilInstance, 'a'); </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -200,12 +200,7 @@ var dilInstance = DIL.create({
 DIL.modules.GA.submitUniversalAnalytics(ga, dilInstance);
 ```
 
->[!MORE_LIKE_THIS]
->
->* [ga对象方法参考](https://developers.google.com/analytics/devguides/collection/analyticsjs/ga-object-methods-reference)
-
-
-## GA.init {#ga-init}
+##  GA.init {#ga-init}
 
 该函 `GA.init()` 数将旧版／已弃用版本的数据发送 [!DNL Google Analytics] 到Audience Manager。
 
@@ -312,9 +307,10 @@ _gaq.push([
 
 `https://adobe.demdex.com/event?...c_accountId=UA-XXXXX-X&c_Section=Life%20%26%20Style &c_itemOrderId=1234&c_itemSku=DD44&c_itemName=T-Shirt&c_itemCategory=Olive%20Medium& c_itemPrice=11.99&c_itemQuantity=1`
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Google分析跟踪代码](https://developers.google.com/analytics/devguides/collection/gajs/methods/)
 >* [完整的Web升级：ga.js/dc.js指向analytics.js](https://developers.google.com/analytics/devguides/collection/upgrade/reference/gajs-analyticsjs)
 >* [将analytics.js添加到您的站点](https://developers.google.com/analytics/devguides/collection/analyticsjs/)
+>* [ga对象方法参考](https://developers.google.com/analytics/devguides/collection/analyticsjs/ga-object-methods-reference)
 
