@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 区段生成器
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0ae
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: f162d62fff490aaabfec0ddbb31801fcae482e3b
 
 ---
 
@@ -97,7 +97,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 在中 [!UICONTROL Segment Builder]，该部 [!UICONTROL Traits] 分允许您管理区段中的特征、创建特征组和设置资格条件。 要向区段添加特征，请在搜索字段中键入特征名称，然后单击 [!UICONTROL Add Trait]。 保存特征（如果完成）或移到 [!UICONTROL Destinations Mapping]。
 
-<!-- r_segment_traits_section.xml -->
+<!-- r_segment_traits_section.xml-->
 
 **** 先决条件：填写部分中的必填 [!UICONTROL Basic Information] 字段。
 
@@ -106,7 +106,8 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 | 基本视图 | 此部分提供了可视控件，允许您： <ul><li>建立新的客户群并管理现有客户群。</li><li>从区段中删除特征。</li><li>将最多50个（最大）特征加入区段。</li><li>拖放特征以创建新组。</li><li>查看区段中的特征和特征组。</li><li>使用布尔表达式、比较运算符和最近使用的频率设置设置资格标准。</li></ul> |
 | 代码视图 | 打开一个开发环境，通过该环境，您可以使用代码而不是可视界面来创建和管理特征、组和资格要求。 如果您的区段为： <ul><li>在单个区段中包含50多个特征。 注意：区段限制为5000个特征（最大）。</li><li>包含许多特征组。</li><li>具有复杂的资格要求。</li></ul> |
 | 搜索 | 帮助您查找要添加到区段的特征。 |
-| 推荐 | 获取要添加到区段规则的类似特征的实时推荐。 阅读特征推荐 [中的更多信息](trait-recommendations.md)。 |
+| 推荐 | 根据您订阅的第一方特征和数据源，为类似 [!UICONTROL Audience Marketplace] 特征获取实时推荐。 将这些推荐添加到区段规则以扩大受众。 阅读特征推荐 [中的更多信息](trait-recommendations.md)。 |
+| Marketplace推荐 | 从您未订阅的数据源中 [!UICONTROL Audience Marketplace] 获取类似特征的实时推荐。 阅读特征推荐 [中的更多信息](trait-recommendations.md)。 |
 | 真实和估计的细分大小数据 | See [Trait and Segment Population Data in Segment Builder](segment-builder-data.md). |
 
 ## 从区段中删除特征 {#remove-traits}
