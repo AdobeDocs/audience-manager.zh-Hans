@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 创建算法特征
 uuid: 50c2d2d1-f412-479b-bb70-4f139429c388
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -27,11 +27,6 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 1. 选取一个模型，然后单击 **[!UICONTROL Add Selected Model to Trait]**。
 添加模型会显示范围和准确度设置。
 1. 选择范围或准确度作为目标，然后从相应的下拉菜单中选择一个值。 Click **[!UICONTROL Save]** when done.
-
->[!MORE_LIKE_THIS]
->
->* [准确性和范围](../../features/traits/trait-accuracy-reach.md)
-
 
 ## 算法特征的配置设置 {#configure-settings}
 
@@ -54,6 +49,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 | **[!UICONTROL Reach and Accuracy Data Columns]** | 此部分位于右侧，最多显示21行数字数据，这些数据显示模型的准确度和范围值。 |
 | **[!UICONTROL Reach and Accuracy Slider]** | 位于图形底部的滑块允许您为达到或准确目标设置数值。 您可以设置滑块，然后选择达到或准确目标按钮以创建特征。 |
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [准确性和范围](../../features/traits/trait-accuracy-reach.md)
+
