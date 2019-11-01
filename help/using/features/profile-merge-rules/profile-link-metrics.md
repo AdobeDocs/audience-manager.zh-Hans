@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 个人资料合并规则的报告指标
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -116,7 +116,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 除了其他数据可视化外，报 [!UICONTROL Profile Link] 表还包括线形图。 折线图旨在显示配置文件规则随时间变化的趋势。 当您单击登录页面()中的规则时，趋势图(和其 [!UICONTROL Profile Merge Rules] 他报表)可 **[!UICONTROL Audience Data > Profile Merge Rules]**&#x200B;用。 如果您是您在中可访问的其他第三方设备图形的成 [!UICONTROL Device Co-op] 员，则这些图形包括设备图形数据 [!DNL Audience Manager]。 单击趋势线可查看基础数据。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [个人资料合并规则常见问题解答](../../faq/faq-profile-merge.md)
 
