@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 定义的目标宏
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -44,12 +44,12 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
    <td colname="col2"> <p>数 <i>据源ID</i> ，对应于传递到宏的数据源的标识符。 </p> <p>让我们通过一个简单的示例来看看它是如何工作的。 在这种情况下，我们有一个 <span class="keyword"> Audience Manager合作伙伴</span> ，其ID和条件如下： </p> 
     <ul id="ul_697508B437EB4090B121AFA5D519AFBE"> 
      <li id="li_32D9F72A7D1543A892DC7E1529E98A96">数据源ID: <code> 1</code> </li> 
-     <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">内部客户ID:客 <code> 户ABC</code> </li> 
-     <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">声明的ID:合作伙伴希望将这些值作为声明的ID <code> 1:CustomerABC传递</code>。 </li> 
-    </ul> <p>要使用%dpid_ <code>data source id<i>%</i>,</code><span class="keyword"></span> Audience Manager合作伙伴将如下格式化宏： </p> 
+     <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">内部客户ID: <code> CustomerABC</code> </li> 
+     <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">声明的ID:合作伙伴希望将这些值作为声明的ID进行传递 <code> 1:CustomerABC</code>。 </li> 
+    </ul> <p>为此，Audience Manager合 <code>%dpid_<i>data source id</i>%</code>作伙伴将 <span class="keyword"></span> 如下格式化宏： </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
-    </ul> <p>宏将用CustomerABC取 <code> 代</code> 1 <code> 。</code> </p> <p> 
+    </ul> <p>宏将替换 <code> 1</code> 为 <code> CustomerABC</code>。 </p> <p> 
      <draft-comment>
        基于AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
      </draft-comment> </p> </td> 
@@ -90,7 +90,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 <!-- c_dest_cache_busting.xml -->
 
-浏览器在内存中缓存（保存）经常请求的内容。 当页面加载时，保存的内容从缓存而不是从远程服务器提供服务。 此过程有助于保持有效的下载时间，因为数据是本地提供的，而不是从其他位置提供。 但是，由于缓存不需要服务器调用，它可以通过人为降低唯一请求数来歪斜报告。
+浏览器在内存中缓存（保存）经常请求的内容。 当页面加载时，保存的内容从缓存而不是远程服务器提供。 此过程有助于保持有效的下载时间，因为数据是本地提供的，而不是从其他位置提供。 但是，由于缓存不需要服务器调用，它可以通过人为降低唯一请求数来歪斜报告。
 
 缓存破坏阻止浏览器保存和重用内容。 此技术使用的代码将随机数或时间戳插入URL字符串中，这使其对浏览器而言是独一无二的。 因此，每个调 `HTTP` 用被计为对服务器的单独请求。 强制对每个请求进行新的服务器调用有助于保持报告的准确性并减少差异。 [!DNL Audience Manager] 为缓存破坏提供两个宏：
 
@@ -101,6 +101,6 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 这两个宏都会阻止缓存，但 `%rnd%` 可能会更有效。 例如，如果 `%timestamp%`多个用户同时查看页面，他们将获得相同的日期／时间值。 因此，该调用不 [!DNL URL] 是唯一的，并且只计数一次多次调用。 但是， `%rnd%` 每次调用都会生成一个唯一的数字值（即使用户同时看到同一页面）。 这表示该字 [!DNL URL] 符串包含不同的值，并被计为唯一值。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [定义的目标宏](../../features/destinations/destination-macros.md#destination-macros-defined)
