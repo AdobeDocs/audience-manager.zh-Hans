@@ -6,7 +6,7 @@ solution: Audience Manager
 title: OAS作为Audience Manager目标
 uuid: 5891a063-5a4b-4ea7-865f-b24e17ca735f
 translation-type: tm+mt
-source-git-commit: 78a0a0e461ea3a74d0dbb0370a841db274a6f9be
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -40,7 +40,7 @@ Audience manager可以按如下方式将区段数据发送到浏览器Cookie:
 
 传入的数据量取决于 [!DNL OAS] 特定用户符合的区段数。 例如，假设您设置了100个Audience manager区段。 如果一个网站访问者有资格获得其中五个，那么只有这五个区段被发送到OAS（不是全部100个）。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [get_aamCookie代码](../../features/destinations/get-aam-cookie-code.md)
 >* [说明的键值对](../../reference/key-value-pairs-explained.md)
@@ -54,7 +54,7 @@ Audience manager可以按如下方式将区段数据发送到浏览器Cookie:
 
 在Audience manager中，目 *标是* 任何其他系统(广告服务器 [!DNL DSP]、广告网络等)要与之共享数据。 [!UICONTROL Destination Builder] 提供了用于创建和管理这些数据交付流程的工具。 Audience manager目标功能位于“受众数据”&gt;“ *目标”中*。 要开始，请单击 **[!UICONTROL Add New Destination]** 并按照以下步骤操作。
 
-### 第1步：基本信息
+### 第1步： 基本信息
 
 要完成此部 [!UICONTROL Basic Information] 分，请执行以下操作：
 
