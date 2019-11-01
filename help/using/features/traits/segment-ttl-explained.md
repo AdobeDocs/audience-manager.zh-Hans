@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 细分有效时间说明
 uuid: 5b2c6911-50b9-4b68-9dd4-21128d112eab
 translation-type: tm+mt
-source-git-commit: 17906734132813984437216f2a6cbc1c7bf14937
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -50,7 +50,7 @@ Audience manager根据 [!DNL TTL] 以下公式计算1天的 [!DNL TTL] 特征的
 
 请记住， [!DNL TTL] 像素上的集 [!DNL Audience Manager] 合独立于第三方( [!DNL TTL] 或广告网络等)使用的其[!DNL DSP]他像素上的集合。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [设置特征到期间隔](../../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval)
 
