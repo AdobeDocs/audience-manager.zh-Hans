@@ -8,7 +8,7 @@ title: 面向数据提供商的受众市场
 topic: DIL API
 uuid: 80e60d33-63e7-496c-82c5-205ecf0ec03a
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -51,7 +51,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 在中， [!UICONTROL My Shared Data]有时源状态会标记为“私有”。 这表示专用数据源。 私人数据馈送允许卖家限制买家访问他们的数据，甚至限制数据馈送的名称。 当销售者提供特价、折扣或隐私和访问控制很重要时，他们可以将源设为私有。 通过私有数据源，提供商可以审核和批准所有采购员访问请求。 For more information, see [Private Data Feeds](../../../features/audience-marketplace/marketplace-private-feeds.md). 要创建公共或专用数据源，请参 [阅创建公共或专用数据源](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#create-public-private-data-feed)。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [数据提供商的折扣](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#discounts)
 
