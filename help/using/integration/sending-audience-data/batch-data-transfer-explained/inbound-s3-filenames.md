@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 入站数据文件的Amazon S3名称和文件大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 translation-type: tm+mt
-source-git-commit: b32283a6cb3d001f0a1fc85f3e63fba651f32760
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -151,7 +151,7 @@ source-git-commit: b32283a6cb3d001f0a1fc85f3e63fba651f32760
 >
 >入站数据验证进程会将空文件标记为无效，并且不会处理它们。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [入站数据文件的 FTP 名称要求](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md)
 
