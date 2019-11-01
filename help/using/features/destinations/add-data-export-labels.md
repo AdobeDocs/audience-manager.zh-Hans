@@ -5,7 +5,7 @@ seo-title: 将数据导出控件添加到目标
 solution: Audience Manager
 title: 将数据导出控件添加到目标
 translation-type: tm+mt
-source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -36,6 +36,6 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
    >除非对数据源设置了匹配的导 [出控制](../../features/data-export-controls.md) ，否则导出限制无效。
 1. 单击 **[!UICONTROL Save]**.
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [创建数据源](../../features/manage-datasources.md#create-data-source)
