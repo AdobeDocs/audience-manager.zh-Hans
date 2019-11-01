@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 配置文件链接设备图形使用案例
 uuid: bd5567fd-fcd5-40ba-b6f1-035d2ddbcd3a
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -43,7 +43,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ![跨设备个性化](assets/cross-device-personalization.png)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [外部设备图形使用案例](external-graph-use-cases.md)
 >* [配置文件合并规则的一般用例](merge-rule-targeting-options.md)
