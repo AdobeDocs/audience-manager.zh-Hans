@@ -6,7 +6,7 @@ solution: Audience Manager
 title: REST API快速入门
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: 27800ce003a62733eece0d5de3b94737ed61133a
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -130,12 +130,6 @@ Audience Manager遵循令 [!UICONTROL REST API] 牌身份 [!DNL OAuth 2.0] 验�
 
 Audience manager支持授 [!UICONTROL REST API] 权代码和隐式身份验证。 要使用这些访问方法，您的用户需要登录才能获 `https://api.demdex.com/oauth/authorize` 取访问和刷新令牌。
 
->[!MORE_LIKE_THIS]
->
->* [OAuth 2.0](https://oauth.net/2/)
->* [OAuth 2简化](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
-
-
 ## 发出实名API请求 {#authenticated-api-requests}
 
 在收到身份验证 [!DNL API] 令牌后调用方法的要求。
@@ -146,11 +140,6 @@ Audience manager支持授 [!UICONTROL REST API] 权代码和隐式身份验证�
 
 * 在标题 `HTTP` 中，设置 `Authorization: Bearer <token>`。
 * 调用所需的 [!DNL API] 方法。
-
->[!MORE_LIKE_THIS]
->
->* [OAuth身份验证](../../api/rest-api-main/aam-api-getting-started.md#oauth)
-
 
 ## 可选API查询参数 {#optional-api-query-parameters}
 
@@ -163,9 +152,9 @@ Audience manager支持授 [!UICONTROL REST API] 权代码和隐式身份验证�
 | 参数 | 描述 |
 |--- |--- |
 | page | 按页码返回结果。 编号从0开始。 |
-|  pageSize | 设置请求返回的响应结果数（默认为10）。 |
-|  sortBy | 根据指定的属性对结果进行排序和返 [!DNL JSON] 回。 |
-|  降序 | 按降序排序和返回结果。 默认为升序。 |
+| pageSize | 设置请求返回的响应结果数（默认为10）。 |
+| sortBy | 根据指定的属性对结果进行排序和返 [!DNL JSON] 回。 |
+| 降序 | 按降序排序和返回结果。 默认为升序。 |
 | 搜索 | 根据要用作搜索参数的指定字符串返回结果。 例如，假设您要查找所有模型的结果，这些模型在该项目的任何值字段中都有单词“Test”。 您的示例请求可能如下： `GET https://api.demdex.com/v1/models/?search=Test`.  您可以搜索“get all”方法返回的任何值。 |
 | folderId | 返回指定文件夹内特征的所有ID。 并非所有方法都可用。 |
 | 权限 | 返回基于指定权限的区段列表。  READ是默认值。 权限包括：<ul><li>`READ` :返回并查看有关区段的信息。</li><li>`WRITE` :使用 `PUT` 更新区段。</li><li>`CREATE` :使用 `POST` 创建区段。</li><li>`DELETE` : 删除区段. 需要访问基础特征（如果有）。 例如，如果要删除属于某个区段的特征，您将需要删除该区段的权限。</li></ul><br>使用不同的键值对指定多个权限。 例如，要返回仅具有和权限的区 `READ` 段 `WRITE` 列表，请传递 `"permissions":"READ"`、 `"permissions":"WRITE"` 。 |
@@ -238,3 +227,10 @@ GET https://api.demdex.com/v1/models/?page=1&pageSize=2&search=Test
 | 404 | 未找到” | 找不到指定路径的资源。 |
 | 409 | 冲突 | 由于与资源状态发生冲突，无法完成请求。 |
 | 500 | 服务器错误 | 服务器遇到意外错误，导致其无法完成请求。 |
+
+>[!MORELIKETHIS]
+>
+>* [OAuth身份验证](../../api/rest-api-main/aam-api-getting-started.md#oauth)
+>* [OAuth 2.0](https://oauth.net/2/)
+>* [OAuth 2简化](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
+
