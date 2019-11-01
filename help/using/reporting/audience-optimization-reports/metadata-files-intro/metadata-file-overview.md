@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 元数据文件的概述和映射
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
 translation-type: tm+mt
-source-git-commit: 1ff46970470eae4bc30760468013d994c976e549
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -136,7 +136,7 @@ source-git-commit: 1ff46970470eae4bc30760468013d994c976e549
 
 在为文件命名并添加数据后，您会将其发送到由提供的Amazon S3存储目录 [!DNL Audience Manager]。 请参 [阅元数据文件的传送方法](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [用于受众优化报告的数据文件](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
 >* [通过像素调用捕获营销活动点击数据](../../../integration/media-data-integration/click-data-pixels.md)
