@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 创建基于规则或已载入的特征
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
 translation-type: tm+mt
-source-git-commit: 9215942bd33af0eabf5143e52edcb249d4ca2cac
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -87,10 +87,11 @@ source-git-commit: 9215942bd33af0eabf5143e52edcb249d4ca2cac
 ### 设置特征的TTL
 
 1. 展开 [!UICONTROL Advanced Options] 该部分并输入一个数字以设置 [!DNL TTL] 特征的值。
-2. 单击 **[!UICONTROL Save]**.
+1. 单击 **[!UICONTROL Save]**.
+
    ![](assets/TTL.png)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [细分有效时间说明](../../features/traits/segment-ttl-explained.md)
 
