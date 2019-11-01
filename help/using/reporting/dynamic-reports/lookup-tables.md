@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 使用查找表缩短日志文件处理时间
 uuid: ffc77618-474b-455e-9c91-15b32fc151a5
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -70,7 +70,7 @@ c_lookup_tables.xml
 
 如果广告服务系统有API，则可能无需在查找文件中发送元数据。 我们可能能够通过API获取该信息。 在这种情况下，您的日志文件应仅包含ID。 我们将与您一起确定是否可以通过API获取元数据。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [交付和绩效报告](../../reporting/dynamic-reports/delivery-performance-report.md)
 
