@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 修改GPT setTargeting API调用
 uuid: 0cd38f30-5d29-4511-a779-d32587f1dafb
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -57,22 +57,22 @@ if(typeof AamGpt.getCookie("aam_uuid") != "undefined" ){
   <tr> 
    <td colname="col1"> <p> <code> AamGpt.getKey </code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
-   <td colname="col3"> <p>返回键值段对中的键。 例如，如果键值对由color=blue组成， <code> 则返回 </code>颜色 <code> 值 </code>。 </p> </td> 
+   <td colname="col3"> <p>返回键值段对中的键。 例如，如果键值对由组成，则 <code> color=blue </code>返回此值 <code> color </code>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> AamGpt.getValues </code> </p> </td> 
    <td colname="col2"> <p>字符串数组 </p> </td> 
-   <td colname="col3"> <p>返回数组中的值，例如 <code> ["value1","value2"] </code>。 </p> </td> 
+   <td colname="col3"> <p>返回数组中的值，例如 <code> ["value1","value2"] </code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> AamGpt.getCookie </code> </p> </td> 
    <td colname="col2"> <p>Int </p> </td> 
-   <td colname="col3"> <p>返回Audience Manager用户ID，如 <code> 12345 </code>。 </p> </td> 
+   <td colname="col3"> <p>返回Audience Manager用户ID，例如， <code> 12345 </code> </p> </td> 
   </tr>
  </tbody>
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [创建GPT目标](../../integration/gpt-aam-destination/gpt-aam-create-destination.md)
 >* [Google Publisher标记的Audience Manager代码](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
