@@ -4,9 +4,9 @@ seo-description: 本文介绍如何在Audience manager和Adobe Experience Platfo
 seo-title: Audience manager与Adobe Experience Platform之间的受众共享
 solution: Audience Manager
 title: Audience manager与Adobe Experience Platform之间的受众共享
-keywords: AEP受众共享、AEP细分、平台细分
+keywords: AEP受众共享， AEP细分，平台细分，细分共享，受众共享
 translation-type: tm+mt
-source-git-commit: e081e31380d4600883f927b5ecef3b38be2a676e
+source-git-commit: 897cc523aa52b1594e1c53f48459ddd7fd33d033
 
 ---
 
