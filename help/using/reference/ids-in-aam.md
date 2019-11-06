@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Audience manager中的ID索引
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
 translation-type: tm+mt
-source-git-commit: 7e553755d4510dc6803e77cca7d567e0d6e7cb2d
+source-git-commit: 7d168c754a9b99dfd88718a0c27c34f3c1dc61d5
 
 ---
 
@@ -34,13 +34,13 @@ source-git-commit: 7e553755d4510dc6803e77cca7d567e0d6e7cb2d
 
 ## 全局设备ID {#global-device-ids}
 
-全局设备ID是设备广告ID，每个设备唯一，由设备制造商或操作系统提供。 下表说明了这些ID是什么及其格式。
+全局设备ID是设备广告ID，每个设备唯一，由设备制造商或操作系统提供。 下表说明了这些ID是什么及其格式。 有关全局设备ID以及如何在Audience manager中使用它们的详细信息，请阅读全 [局数据源](/help/using/features/global-data-sources.md)。
 
-| ID | 名称和说明 | 示例 |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [!DNL IDFA] | [!DNL Identifier for Advertisers] ID是设备制造商提供的移动设备标识符。 这些ID表示运行iOS操作系统的设备。 | 格式严格由32个大写十六进制数字组成，以5组显示，以8-4-4-4-12形式用连字符分隔，总共36个字符。<br> 示例: `AEBE52E7-03EE-455A-B3C4-E57283966239`. |
-| [!DNL GAID] | [!DNL Google Advertising ID]s是由Android设备制造商提供的移动设备标识符。 这些ID表示运行操作系统 [!DNL Android] 的设备。 | 格式严格由32个小写十六进制数字组成，以5组显示，并以连字符分隔，格式为8-4-4-4-12，总共36个字符。 <br>示例: `e4fe9bde-caa0-47b6-908d-ffba3fa184f2`. |
-| [!DNL RIDA] | [!DNL Roku IDs for Advertising] 表示流 [!DNL Roku] 式设备。 | 格式严格由32个小写十六进制数字组成，以5组显示，并以连字符分隔，格式为8-4-4-4-12，总共36个字符。 <br>示例: `fcb2a29c-315a-5e6b-bcfd-d889ba19aada`. |
-| [!DNL MAID] | [!DNL Microsoft Advertising ID]s是由每个设备、每 [!DNL Windows 10] 个用户生成的设备标识符。 | [!DNL MAID]s的格式为字母数字字符串。 |
-| [!DNL DUID] | [!DNL Samsung DUID]s是由Samsung Smart TV提供的设备标识符。 | Samsung的 [!DNL DUID]格式为字母数字字符串。 |
-| [!DNL Amazon Fire TV Advertising ID] | 表示运行操作系统的设备的设 [!DNL Fire OS] 备标识符。 | 格式严格由32个小写十六进制数字组成，以5组显示，并以连字符分隔，格式为8-4-4-4-12，总共36个字符。 <br>示例：`df07c7dc-cea7-4a89-b328-810ff5acb15d` |
+| ID | 全局数据源ID | 名称和说明 | 示例 |
+| --------------------- | ------ | ------------ | ---------------- |
+| [!DNL IDFA] | 20915 | [!DNL Identifier for Advertisers] ID是设备制造商提供的移动设备标识符。 这些ID表示运行iOS操作系统的设备。 | 格式严格由32个大写十六进制数字组成，以5组显示，以8-4-4-4-12形式用连字符分隔，总共36个字符。<br> 示例: `AEBE52E7-03EE-455A-B3C4-E57283966239`. |
+| [!DNL GAID] | 20914 | [!DNL Google Advertising ID]s是由Android设备制造商提供的移动设备标识符。 这些ID表示运行操作系统 [!DNL Android] 的设备。 | 格式严格由32个小写十六进制数字组成，以5组显示，并以连字符分隔，格式为8-4-4-4-12，总共36个字符。 <br>示例: `e4fe9bde-caa0-47b6-908d-ffba3fa184f2`. |
+| [!DNL RIDA] | 121963 | [!DNL Roku IDs for Advertising] 表示流 [!DNL Roku] 式设备。 | 格式严格由32个小写十六进制数字组成，以5组显示，并以连字符分隔，格式为8-4-4-4-12，总共36个字符。 <br>示例: `fcb2a29c-315a-5e6b-bcfd-d889ba19aada`. |
+| [!DNL MAID] | 389146 | [!DNL Microsoft Advertising ID]s是由每个设备、每 [!DNL Windows 10] 个用户生成的设备标识符。 | [!DNL MAID]s的格式为字母数字字符串。 |
+| [!DNL DUID] | 404660 | [!DNL Samsung DUID]s是由Samsung Smart TV提供的设备标识符。 | Samsung的 [!DNL DUID]格式为字母数字字符串。 |
+| [!DNL Amazon Fire TV Advertising ID] | 488258 | 表示运行操作系统的设备的设 [!DNL Fire OS] 备标识符。 | 格式严格由32个小写十六进制数字组成，以5组显示，并以连字符分隔，格式为8-4-4-4-12，总共36个字符。 <br>示例：`df07c7dc-cea7-4a89-b328-810ff5acb15d` |
