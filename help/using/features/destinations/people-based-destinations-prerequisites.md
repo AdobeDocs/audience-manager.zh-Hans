@@ -5,7 +5,7 @@ seo-title: 基于人员的目标先决条件和注意事项
 solution: Audience Manager
 title: 先决条件和注意事项
 translation-type: tm+mt
-source-git-commit: d70b77b082078d4122f8b902b089d8c4a3fb923a
+source-git-commit: d83f4dae563c9c49ae8d46c28aa41168d746f92c
 
 ---
 
@@ -77,7 +77,7 @@ Adobe Experience Cloud可让您选择通过Experience Cloud ID服务散列客户
 
 在注册前，请确 [!DNL People-Based Destinations]保在将客户的信息用于广告之前获得客户的同意。
 
-如果客户希望退出广告营销活动，请参阅退出管理 [](../../overview/data-security-and-privacy/opt-out-management.md) ，了解有关如何阻止Audience manager进一步收集数据的详细信息。
+如果客户希望退出广告营销活动，请参阅退出管理 [](../../overview/data-security-and-privacy/data-privacy-requests.md) ，了解有关如何阻止Audience manager进一步收集数据的详细信息。
 
 ## 实施第一方数据激活 {#enforcing-first-party-activation}
 
