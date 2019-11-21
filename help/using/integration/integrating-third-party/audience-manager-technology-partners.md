@@ -2,11 +2,11 @@
 description: 本页仅包括当前的服务器到服务器集成。 有关集成的详细信息，请参阅其Adobe exchange列表（如果可用）或与Adobe顾问或客户关怀联系。
 seo-description: 本页仅包括当前的服务器到服务器集成。 有关集成的详细信息，请参阅其Adobe exchange列表（如果可用）或与Adobe顾问或客户关怀联系。
 seo-title: Adobe Audience manager技术合作伙伴
-keywords: 激活；激活合作伙伴、目标、目标
+keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
 title: Adobe Audience manager技术合作伙伴
 translation-type: tm+mt
-source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
+source-git-commit: fab074926de1ff5e42092b9f7f8b0d5585fe2edc
 
 ---
 
@@ -18,8 +18,8 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 <br> 
 
 * **更新** =显示此激活合作伙伴的上次更新日期。
-* **取消分段** =取消分段描述了从区段中取消和删除设备配置文件的过程。 您能否从区段中删除设备配置文件取决于用于创建配置文件合并规则的设备选项。 在GDPR删除请求读取配置文件合并规则和设备取消分段流程以及具有取消分段功能的 [Audience manager合作伙伴中，也会使用取消分段](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)[](/help/using/overview/aam-gdpr/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience manager会向以下标有“是”的目标发送取消细分信息。
-* **接收IAB TCF同意信号** = Audience Manager Plug-in for IAB TCF使您能够将IAB TCF同意字符串转发给激活合作伙伴，同时尊重用户的隐私选择。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/aam-gdpr/aam-iab-plugin.md#aam-activation-partners).
+* **取消分段** =取消分段描述了从区段中取消和删除设备配置文件的过程。 您能否从区段中删除设备配置文件取决于用于创建配置文件合并规则的设备选项。 在GDPR删除请求读取配置文件合并规则和设备取消分段流程以及具有取消分段功能的 [Audience manager合作伙伴中，也会使用取消分段](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)[](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience manager会向以下标有“是”的目标发送取消细分信息。
+* **接收IAB TCF同意信号** = Audience Manager Plug-in for IAB TCF使您能够将IAB TCF同意字符串转发给激活合作伙伴，同时尊重用户的隐私选择。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
 * **ICDS** =此列列出支持“即时跨设备抑制”的合作伙伴。 Read [Instant Cross-Device Suppression](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
 * **移动设备ID** =此列列出了可从Audience manager接收移动设备ID的合作伙伴。
 
