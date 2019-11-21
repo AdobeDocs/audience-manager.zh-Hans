@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 通过像素调用捕获营销活动点击数据
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
 
 ---
 
@@ -124,12 +124,12 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
    <tr> 
    <td colname="col1"> <p> <code>gdpr</code> </p> </td> 
    <td colname="col02"> <p> <code>%gdpr_applies%</code> </p> </td> 
-   <td colname="col2"> <p>与<a href="../../overview/aam-gdpr/aam-iab-plugin.md">适用于 IAB TCF 的 Audience Manager 插件</a>有关。 </p><p><code>gdpr</code> 可以是0（GDPR不适用）或1（GDPR适用）。</p> <p>默认值为 0。</p><p>可选。</p></td> 
+   <td colname="col2"> <p>与<a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">适用于 IAB TCF 的 Audience Manager 插件</a>有关。 </p><p><code>gdpr</code> 可以是0（GDPR不适用）或1（GDPR适用）。</p> <p>默认值为 0。</p><p>可选。</p></td> 
   </tr> 
    <tr> 
    <td colname="col1"> <p> <code>gdpr_consent</code> </p> </td> 
    <td colname="col02"> <p> <code>%gdpr_consent%</code> </p> </td> 
-   <td colname="col2"> <p>与<a href="../../overview/aam-gdpr/aam-iab-plugin.md">适用于 IAB TCF 的 Audience Manager 插件</a>有关。</p><p> 如果 <code>gdpr=1</code>，则 <code>%gdpr_consent%</code> 将被替换为字符串 <code>gdpr_consent</code>（请参阅 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external">IAB 规范</a>）。</p> <p>默认值为 0。</p><p>可选。</p></td> 
+   <td colname="col2"> <p>与<a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">适用于 IAB TCF 的 Audience Manager 插件</a>有关。</p><p> 如果 <code>gdpr=1</code>，则 <code>%gdpr_consent%</code> 将被替换为字符串 <code>gdpr_consent</code>（请参阅 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external">IAB 规范</a>）。</p> <p>默认值为 0。</p><p>可选。</p></td> 
   </tr> 
  </tbody> 
 </table>
