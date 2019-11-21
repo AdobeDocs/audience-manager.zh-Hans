@@ -1,10 +1,10 @@
 ---
 product: audience-manager
-audience: 最终用户
-user-guide-title: Audience manager用户指南
+audience: end-user
+user-guide-title: Audience Manager User Guide
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: e081e31380d4600883f927b5ecef3b38be2a676e
+source-git-commit: a5411ff8ff852cc02607e4a624075bf0e1828ee9
 
 ---
 
@@ -15,16 +15,20 @@ source-git-commit: e081e31380d4600883f927b5ecef3b38be2a676e
 + 概述{#overview}
    + [Audience manager概述](overview/aam-overview.md)
    + [收集的数据类型](overview/data-types-collected.md)
-   + Data Security and Privacy {#data-security-and-privacy}
-      + [概述](overview/data-security-and-privacy/data-security-privacy-overview.md)
-      + [数据安全](overview/data-security-and-privacy/data-security.md)
-      + [数据隐私](overview/data-security-and-privacy/data-privacy.md)
-      + [选择退出管理](overview/data-security-and-privacy/opt-out-management.md)
-   + 一般数据保护规定(GDPR){#gdpr}
-      + [Audience Manager 中的 GDPR](overview/aam-gdpr/aam-gdpr-details.md)
-      + [目标的GDPR注意事项](overview/aam-gdpr/aam-gdpr-partners.md)
-      + [GDPR 常见问题解答](overview/aam-gdpr/aam-gdpr-faq.md)
-      + [适用于 IAB TCF 的 Audience Manager 插件](/help/using/overview/aam-gdpr/aam-iab-plugin.md)
+   + [数据安全](overview/data-security-and-privacy/data-security.md)
+   + 数据隐私{#data-privacy}
+      + [数据隐私概述](overview/data-security-and-privacy/data-privacy.md)
+      + [数据隐私请求](overview/data-security-and-privacy/data-privacy-requests.md)
+      + 数据隐私参考 {#data-privacy-reference}
+         + [Audience manager标识符](overview/data-security-and-privacy/data-privacy-ids.md)
+         + [CCPA词汇表](overview/data-security-and-privacy/aam-ccpa-glossary.md)
+         + [GDPR词汇表](overview/data-security-and-privacy/aam-gdpr-glossary.md)
+         + [目标的GDPR注意事项](overview/data-security-and-privacy/aam-gdpr-partners.md)
+         + [面向Audience Manager客户的GDPR就绪性指南](overview/data-security-and-privacy/aam-gdpr-readiness.md)
+      + 同意管理 {#consent-management}
+         + [同意管理](overview/data-security-and-privacy/data-privacy-consent.md)
+         + [适用于 IAB TCF 的 Audience Manager 插件](overview/data-security-and-privacy/aam-iab-plugin.md)
+   + [数据管理](overview/data-security-and-privacy/data-governance.md)
 + 功能{#features}
    + [可寻址受众](features/addressable-audiences.md)
    + 管理{#administration}。
