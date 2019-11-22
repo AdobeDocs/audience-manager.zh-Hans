@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 将 DFP 数据文件导入 Audience Manager
 uuid: c685f34f-3e50-4c4b-99fa-d8bbafe0b268
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9f091fa765e937fb47b3328d8f5f2dab24a85040
 
 ---
 
@@ -23,8 +23,8 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 下面是如何在广告标 [!DNL Audience Manager] 签调用中设置ID，如我们的文档中所述：
 
-* [通过Google Publisher标记(GPT)](../../../integration/gpt-aam-destination/gpt-aam-create-destination.md)
-* [通过Cookie目标](../../../integration/gpt-aam-destination/gpt-aam-modify-api.md)
+* [通过Google Publisher标记(GPT)](../../../integration/gpt-aam-destination/gpt-aam-modify-api.md)
+* [通过Cookie目标](../../../integration/gpt-aam-destination/gpt-aam-create-destination.md)
 
 您需要自己设置 [!DNL Audience Manager] ID，并可以与咨询部门合作检查 [!DNL Audience Manager] 一切是否正常。 在以下情况下，您已 [!DNL Audience Manager] 正确设置ID:
 
