@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 特质到特质重叠报表
 uuid: 7fb3fc9e-0e0b-492a-9c3a-04356afb19c7
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: c05541df2d0dfc8753b06eaa8f2baee9bc6c2a16
 
 ---
 
@@ -68,36 +68,44 @@ r_t2t_data_pop.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 数据提供者名称</span></b> </td> 
-   <td colname="col2"> 特征所有者的名称。 </td> 
+   <td colname="col1"><b><span class="wintitle"> 重叠%</span></b> </td> 
+   <td colname="col2"> 显示比较特征（重叠唯一值／特征唯一值）之间唯一重叠的百分比。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 数据提供者类型</span></b> </td> 
-   <td colname="col2">定义特征所属的提供程序类型。 可以是： 
+   <td colname="col1"><b><span class="wintitle"> 数据源类型</span></b> </td> 
+   <td colname="col2">定义特征所属的数据源类型。 可以是： 
     <ul id="ul_0477C04A33FD4F5D998B98984E6554D3"> 
      <li id="li_50FCA48EDB5843AB8FB6C34ED2C0067D">第一方（您自己的特质）。 </li> 
      <li id="li_4F6148EDAEFE43FA8D505944E9FE3855">第三方（来自外部数据合作伙伴／供应商）。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 特征ID</span></b> </td> 
-   <td colname="col2"> 该特征的唯一数字ID。 </td> 
+   <td colname="col1"><b><span class="wintitle"> 重叠特征ID</span></b> </td> 
+   <td colname="col2"> 重叠特征的唯一数字ID。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 特征名称</span></b> </td> 
-   <td colname="col2"> 特征的名称。 </td> 
+   <td colname="col1"><b><span class="wintitle"> 重叠的特征名称</span></b> </td> 
+   <td colname="col2"> 重叠特征的名称。 </td> 
+  </tr>
+    <tr> 
+   <td colname="col1"><b><span class="wintitle"> 特征ID 2</span></b> </td> 
+   <td colname="col2"> 基本数据源中特征的唯一数字ID。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 重叠%</span></b> </td> 
-   <td colname="col2"> 显示比较特征（重叠唯一值／特征唯一值）之间唯一重叠的百分比。 </td> 
+   <td colname="col1"><b><span class="wintitle"> 特征名称2</span></b> </td> 
+   <td colname="col2"> 基本数据源中特征的名称。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b><span class="wintitle"> 重叠单值</span></b> </td> 
-   <td colname="col2"> <p>要获得重叠百分比，Audience manager使用以下公式：</p> <p>重叠单值/（基本段单值+重叠段单值——重叠单值）</p> </td> 
+   <td colname="col2"> <p>要获得重叠百分比，Audience manager使用以下公式：</p> <p>重叠唯一值/（基本特征唯一值+重叠特征唯一值——重叠唯一值）</p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 特征唯一值</span></b> </td> 
-   <td colname="col2"> 特征中的唯一访客数。 </td> 
+   <td colname="col1"><b><span class="wintitle"> 重叠特征唯一值</span></b> </td> 
+   <td colname="col2"> 重叠特征的唯一访客数。 </td> 
+  </tr> 
+    <tr> 
+   <td colname="col1"><b><span class="wintitle"> 基本特征唯一值</span></b> </td> 
+   <td colname="col2"> 基本特征中的唯一访客数。 </td> 
   </tr> 
  </tbody> 
 </table>
