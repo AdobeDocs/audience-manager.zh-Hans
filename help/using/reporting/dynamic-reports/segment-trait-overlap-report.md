@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 区段到特质重叠报表
 uuid: a6b3dd21-332e-449f-aa01-2beb47f1794e
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: c05541df2d0dfc8753b06eaa8f2baee9bc6c2a16
 
 ---
 
@@ -134,11 +134,11 @@ r_s2t_data_pop.xml
    <td colname="col2"> 区段的唯一数字ID。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 数据提供者名称</span></b> </td> 
-   <td colname="col2"> 区段所有者的名称。 </td> 
+   <td colname="col1"><b><span class="wintitle"> 特征数据源 </span></b> </td> 
+   <td colname="col2"> 特征所有者的名称。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 数据提供者类型</span></b> </td> 
+   <td colname="col1"><b><span class="wintitle"> 数据源类型</span></b> </td> 
    <td colname="col2">定义特征所属的提供程序类型。 可以是： 
     <ul id="ul_0477C04A33FD4F5D998B98984E6554D3"> 
      <li id="li_50FCA48EDB5843AB8FB6C34ED2C0067D">第一方（您自己的特质）。 </li> 
@@ -146,12 +146,12 @@ r_s2t_data_pop.xml
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> SID</span></b> </td> 
-   <td colname="col2"> 区段的唯一数字ID。 </td> 
+   <td colname="col1"><b><span class="wintitle"> 特征ID</span></b> </td> 
+   <td colname="col2"> 特征的唯一数字ID。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> SID名称</span></b> </td> 
-   <td colname="col2"> 区段的名称。 </td> 
+   <td colname="col1"><b><span class="wintitle"> 特征名称</span></b> </td> 
+   <td colname="col2"> 特征的名称。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b><span class="wintitle"> 特征唯一值重叠%</span></b> </td> 
