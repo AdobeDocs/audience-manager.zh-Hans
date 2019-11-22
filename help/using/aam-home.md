@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager产品文档
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: 9f72ad7132f698458acf8a552d8e74195300b4d9
+source-git-commit: 4cebba536cd44b7ef72f5b16cf5deeeea3445e0b
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 9f72ad7132f698458acf8a552d8e74195300b4d9
   <tr> 
    <td colname="col1"> <p> <b>新增项目和特色项目</b> </p> <p>了解Audience manager的最新功能：</p> <p> 
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
-     <li><a href="overview/data-security-and-privacy/data-privacy.md">加利福尼亚消费者隐私法(CCPA)支持和隐私大修</a></li>
+     <li><a href="overview/data-security-and-privacy/data-privacy.md">加利福尼亚消费者隐私法(CCPA)支持和隐私文档大修</a></li>
      <li><a href="features/segments/trait-recommendations.md">Adobe Sensei支持的受众市场数据智能推荐</a></li>
     <li><a href="features/profile-merge-rules/merge-rules-overview.md">配置文件合并规则增强功能</a></li>
     <li><a href="reference/bulk-management-tools/bulk-management-intro.md">批量管理工具更新</a></li>
