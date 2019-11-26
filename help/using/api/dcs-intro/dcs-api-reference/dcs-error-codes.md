@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DCS 错误代码、消息和示例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 8478a28cd1b18d878d6938d77ee4f975deb524ef
+source-git-commit: 05609645bef676bbd98aa08caf32a4ae2dcb6f00
 
 ---
 
@@ -41,7 +41,7 @@ In the tables below, *italics* represents a variable placeholder.
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>无效 <code> d_orgid</code> 的值（找不到此组织ID的配置）: <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>组织ID不正确。 </p> <p>检查您的ID并再次尝试请求。 如果您不知道或没有组织ID，请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html" format="https" scope="external"> Experience Cloud Administration中的“管理页面”部分</a> ，以了解如何查找它。 </p> </td> 
+   <td colname="col3"> <p>组织ID不正确。 </p> <p>检查您的ID并再次尝试请求。 如果您不知道或没有组织ID，请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html" format="https" scope="external"> Experience Cloud Administration中的“管理页面”部分</a> ，了解如何查找它。 </p> </td> 
   </tr>
  </tbody>
 </table>
@@ -80,7 +80,7 @@ In the tables below, *italics* represents a variable placeholder.
     <tr> 
    <td colname="col1"> <p>109</p> </td> 
    <td colname="col2"> <p>合作 <code>HTTP referer</code> 伙伴不允许引用 <code>Partner ID</code> </p> </td> 
-   <td colname="col3"> <p>调用中的合作伙伴ID不允许调用上的[!DNL HTTP Referer]头。 检查[!DNL HTTP referer]头是否正确。</p> </td>
+   <td colname="col3"> <p>呼 <code>HTTP referer</code> 叫上的头不允许用于呼叫上的合作伙伴ID。 检查标题 <code>HTTP referer</code> 是否正确。</p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>111 </p> </td> 
