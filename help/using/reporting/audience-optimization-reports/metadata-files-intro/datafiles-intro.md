@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 受众优化报告的数据文件和可操作的日志文件
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 translation-type: tm+mt
-source-git-commit: b46fc71ca62c4426732bd6d396637d02206b7c97
+source-git-commit: 342a511b414ac682d8eb3c6547d725431d8828d6
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: b46fc71ca62c4426732bd6d396637d02206b7c97
 
 根据这些要求，根据数据文件的内容命名它们，如下所示：
 
-* 印象数据： <pre>impressions_<i>yyyymmdd<i>.gz</code></pre>
+* 印象数据： <pre>impressions_<i>yyyymmdd</i>.gz</code></pre>
 * 单击数据： <pre>clicks_<i>yyymmdd</i>.gz</code></pre>
 * 转换数据： <pre>conversions_<i>yyyymmdd</i>.gz</code></pre>
 
@@ -67,7 +67,7 @@ source-git-commit: b46fc71ca62c4426732bd6d396637d02206b7c97
  <tbody> 
   <tr> 
    <td colname="col1"> <p>时间戳 </p> </td> 
-   <td colname="col2"> <p>UTC印象、单击或转化事件的日期和时间。 使用格 <code> yyyy-dd-mm hh:mm:ss</code> 式。 </p> </td> 
+   <td colname="col2"> <p>UTC印象、单击或转化事件的日期和时间。 使用格 <code> yyyy-MM-dd HH:mm:ss</code> 式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>用户ID </p> </td> 
@@ -127,7 +127,7 @@ source-git-commit: b46fc71ca62c4426732bd6d396637d02206b7c97
     <ul id="ul_DA8230D167F241F2B53F29367874D4B1"> 
      <li id="li_2BC2EBCAE12541029A5F62AC0785E7FE"> <code> 0</code>: 展示次数 </li> 
      <li id="li_2A4B1354891144D587624228D8FB5E77"> <code> 1</code>: 单击 </li> 
-     <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>:未归属或未知 </li> 
+     <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>: 未归属或未知 </li> 
     </ul> <p> <i>仅适用于转换数据文件。</i> </p> </td> 
   </tr> 
   <tr> 
