@@ -1,13 +1,13 @@
 ---
 description: 可操作的日志文件允许您从广告服务器日志文件捕获媒体信号以在Audience manager中创建特征。 无需附加像素，即可从广告服务器捕获印象、点击和转换作为特征。
-keywords: 可操作日志， alf, ALF
+keywords: actionable logs, alf, ALF
 seo-description: 可操作的日志文件允许您从广告服务器日志文件捕获媒体信号以在Audience manager中创建特征。 捕获广告服务器的印象、点击和转换作为特征，无需附加像素。
 seo-title: 可操作的日志文件
 solution: Audience Manager
 title: 可操作的日志文件
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 1c14d2a6b5f1d092f4323d4471425e11f7860f25
 
 ---
 
@@ -186,8 +186,8 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
   <tr> 
    <td colname="col1"> <p> <code>Time-Stamp</code> </p> </td> 
    <td colname="col2"> <p> <code> d_time</code> </p> </td> 
-   <td colname="col3"> <p> UTC印象、单击或转化事件的日期和时间。 使用 <code>yyyy-dd-mm hh:mm:ss format.</code> </p></td> 
-   <td colname="col4"> <p> <code>2019-30-08 11:23:00</code> </p> </td> 
+   <td colname="col3"> <p> UTC印象、单击或转化事件的日期和时间。 使用格 <code>yyyy-MM-dd HH:mm:ss</code> 式。 </p></td> 
+   <td colname="col4"> <p> <code>2019-03-26 11:23:10</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>Advertiser-ID</code> </p> </td> 
