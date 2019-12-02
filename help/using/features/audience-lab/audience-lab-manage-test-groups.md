@@ -4,9 +4,9 @@ seo-description: 此过程会指导您完成在Audience lab中创建、编辑或
 seo-title: 管理测试组
 solution: Audience Manager
 title: 管理测试组
-uuid: 2faddeb-7574-4853-8c52-c58456582c62
+uuid: 2fadddeb-7574-4853-8c52-c58456582c62
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 96b353d4b35a72ea087f7c82910e9272bc457bdc
 
 ---
 
@@ -59,6 +59,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
    * 通过在转换特征窗口中键入来添加转换特征。 这是必需 **步骤** ，除非您添加至少一个转换特征，否则您无法继续执行下一步。
    * 如果需要，最多可以添加5个转换特征。
    * 当您选择已用于其他测试组的转换特征时，将显示警报。
+   * 请注意，Audience manager不支持将文件夹特 [征用作](/help/using/features/traits/about-folder-traits.md) 转换特征。 选择文件夹特征作为转换特征会导致测试中显示0个汇总和趋势报告。
 
 1. **[!UICONTROL Choose Destinations & Dates]**
 
