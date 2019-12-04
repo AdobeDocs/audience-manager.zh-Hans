@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 通过像素调用捕获营销活动点击数据
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
+source-git-commit: 8d31bc79fd221cffd33969278eade93a4b32a4d5
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
 单击跟踪调用需要以下参数：
 
 * `d_event=click`:将事件调用标识为单击事件的键值对。
-* `d_rd=redirect URL`:包含编码重定向的键值对 [!DNL URL]。
+* `d_rd=redirect URL`:包含双编码重定向的键值对 [!DNL URL]。 如果您使用的是联机编码工具，请通过编码器运行字符串，然后再次对结果进行编码，以便重定向正常工作。
 
 此外，该调用可包含键值对，这些键值对可用于特征鉴定或为其他报告提供数据和元数据。
 
@@ -150,8 +150,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ```
 https://client.demdex.net/event?d_event=click&d_creative=1235&d_src=203&d_campaign=4709&d_adgroup=3408&d_placement=1001&
-d_rd=http%3A%2F%2Fadobe.com%2Fcallback%3Fcreative%3D%25d_creative%25%26campaign%3D%25d_campaign%25%26adgroup%3D%25
-d_adgroup%25%26d_placement%3D%25placement%25%26src%3D%25d_src%25
+d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creative%2525%2526campaign%253D%2525d_campaign%2525%2526adgroup%253D%2525%0Ad_adgroup%2525%2526d_placement%253D%2525placement%2525%2526src%253D%2525d_src%2525
 ```
 
 ## 响应
