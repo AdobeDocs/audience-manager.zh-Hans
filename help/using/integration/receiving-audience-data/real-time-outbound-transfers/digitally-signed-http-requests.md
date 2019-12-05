@@ -1,25 +1,25 @@
 ---
-description: Audience manager要求对HTTP服务器到服务器请求进行数字签名，以确保有效性。 本文档介绍如何使用私钥对HTTP请求进行签名。
-seo-description: Audience manager要求对HTTP服务器到服务器请求进行数字签名，以确保有效性。 本文档介绍如何使用私钥对HTTP请求进行签名。
+description: Audience manager要求对HTTP(S)服务器到服务器请求进行数字签名以确保有效性。 本文档介绍如何使用私钥对HTTP请求进行签名。
+seo-description: Audience manager要求对HTTP(S)服务器到服务器请求进行数字签名以确保有效性。 本文档介绍如何使用私钥对HTTP请求进行签名。
 seo-title: 数字签名的HTTP请求
 solution: Audience Manager
 title: 数字签名的HTTP请求
 uuid: 1183a70f-0c96-42cf-a4f5-37a83ffa1286
 translation-type: tm+mt
-source-git-commit: 9bf1f3771b6a4b9bb9a52149e812b37d1c8e27f8
+source-git-commit: e7bb837a9a4a4e41ca5c73a192f68a4caa30335d
 
 ---
 
 
-# 数字签名的 `HTTP` 请求 {#digitally-signed-http-requests}
+# 数字签名的 `HTTP(S)` 请求 {#digitally-signed-http-requests}
 
-Audience manager要求对 `HTTP` 服务器到服务器的请求进行数字签名以验证有效性。 本文档介绍如何使用私钥 `HTTP` 对请求进行签名。
+Audience manager要求对 `HTTP(S)` 服务器到服务器的请求进行数字签名以验证有效性。 本文档介绍如何使用私钥 `HTTP(S)` 对请求进行签名。
 
 ## 概述 {#overview}
 
 <!-- digitally_signed_http_requests.xml -->
 
-使用由您提供并与之共享的私钥， [!DNL Audience Manager]我们可以对 `HTTP` IRIS [和您的HTTP服务器之间发送的](../../../reference/system-components/components-data-action.md#iris) 请求进行数字签名。 这可确保：
+使用由您提供并与之共享的私钥 [!DNL Audience Manager]，我们可以对 `HTTP(S)` IRIS [](../../../reference/system-components/components-data-action.md#iris) 和您的HTTP(S)服务器之间发送的请求进行数字签名。 这可确保：
 
 * **真实性**:只有具有私钥([!UICONTROL IRIS])的发送方才能向合作伙伴发 `HTTP(S)` 送有效消息。
 * **消息完整性**:使用这种方法，即便如此， `HTTP`您也能免受中间攻击中的人的攻击，因为消息会被扭曲。
@@ -28,10 +28,10 @@ Audience manager要求对 `HTTP` 服务器到服务器的请求进行数字签�
 
 ## 您需要提供的信息 {#info-to-provide}
 
-对于实 `HTTP` 时服务器到服务器目标，请与顾问联系并 [!DNL Audience Manager] 指定：
+对于实 `HTTP(S)` 时服务器到服务器目标，请与顾问联系并 [!DNL Audience Manager] 指定：
 
 * 用于签署请求的键。
-* 将包含生成 `HTTP` 的签名的标题的名称（下面示例标题中的X-Signature）。
+* 将包含生成 `HTTP(S)` 的签名的标题的名称（下面示例标题中的X-Signature）。
 * 可选：用于签名的哈希类型(md5、sha1、sha256)。
 
 ```
@@ -47,8 +47,8 @@ POST message content
 
 ## How it works {#how-it-works}
 
-1. [!UICONTROL IRIS] 创建要 `HTTP` 发送给合作伙伴的消息。
-1. [!UICONTROL IRIS] 根据该消息和由合作伙伴 `HTTP` 传递的私钥创建签名。
+1. [!UICONTROL IRIS] 创建要 `HTTP(S)` 发送给合作伙伴的消息。
+1. [!UICONTROL IRIS] 根据该消息和由合作伙伴 `HTTP(S)` 传递的私钥创建签名。
 1. [!UICONTROL IRIS] 向合作 `HTTP(S)` 伙伴发送请求。 此消息包含签名和实际消息，如上例所示。
 1. 合作伙伴服务器接收该 `HTTP(S)` 请求。 它读取消息正文和从收到的签名 [!UICONTROL IRIS]。
 1. 合作伙伴服务器基于接收到的消息正文和私钥重新计算签名。 有关如何 [实现此目的](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md#calculate-signature) ，请参阅下面的“如何计算签名”一节。
@@ -63,8 +63,8 @@ POST message content
 
 ```
 // Message to be signed.
-// For GET type HTTP destinations, the message used for signing will be the REQUEST_PATH + QUERY_STRING
-// For POST type HTTP destinations, the message used for signing will be the REQUEST_BODY.
+// For GET type HTTP(S) destinations, the message used for signing will be the REQUEST_PATH + QUERY_STRING
+// For POST type HTTP(S) destinations, the message used for signing will be the REQUEST_BODY.
 // String getData = "/from-aam-s2s?sids=1,2,3";
 String postData = "POST message content";
 // Algorithm used. Currently supported: HmacSHA1, HmacSHA256, HmacMD5.
@@ -95,6 +95,6 @@ String signature = Base64.encodeBase64String(result).trim();
 
 ## 用于签名的数据 {#data-signing}
 
-对 `GET` 于类型目标，用于签名的消息将是 *REQUEST_PATH + QUERY STRING* (例如， */from-aam-s2s?sids=1,2,3*)。 IRIS不考虑主机名或标头- `HTTP` 这些主机名或标头可能会沿路径修改／配置错误或报告错误。
+对 `GET` 于类型目标，用于签名的消息将是 *REQUEST_PATH + QUERY STRING* (例如， */from-aam-s2s?sids=1,2,3*)。 IRIS不考虑主机名或标头- `HTTP(S)` 这些主机名或标头可能会沿路径修改／配置错误或报告错误。
 
 对于 `POST` 类型目标，用于签名的消息是 *REQUEST BODY*。 同样，忽略标题或其他请求参数。
