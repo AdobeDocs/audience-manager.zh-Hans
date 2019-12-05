@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 入站数据文件的FTP名称和文件大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 881ccf512e9776948e4507e321e972dd2079e21a
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 >[!WARNING]
 >
->不再支持入站数据文件的FTP传输。 请使用Amazon S3载入离线数据。 有关详 [细信息，请参阅入站数据文件的Amazon S3名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) 。
+>我们正在逐步取消对FTP配置的支持。 尽管现有FTP集成仍支持入站数据文件摄取，但我们强烈建议使用Amazon S3来载入离线数据，以实现新集成。 有关详 [细信息，请参阅入站数据文件的Amazon S3名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) 。
 
 >[!NOTE]
 >
