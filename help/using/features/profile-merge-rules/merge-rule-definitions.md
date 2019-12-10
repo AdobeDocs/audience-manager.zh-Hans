@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 已定义配置文件合并规则选项
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e27ce2f607cadd7318a171359a5ae4daa071c486
 
 ---
 
@@ -25,13 +25,13 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 | 跨设备选项 | 设备选项 | 可用性 | 评估类型 | Audience Lab支持 | 用例 |
 | ------------------------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----| -------------------- |
-| 无跨设备配置文件 | 设备配置文件 | 所有客户 | 实时和批量 | 是 | [设备定位](merge-rule-targeting-options.md#device-personalization) |
-| 无跨设备配置文件 | 外部设备图（包括协作设备图） | 所有客户 | 实时和批量 | 否 | [扩展的设备定位](external-graph-use-cases.md#audience-expansion) |
+|  无跨设备配置文件 | 设备配置文件 | 所有客户 | 实时和批量 | 是 | [设备定位](merge-rule-targeting-options.md#device-personalization) |
+|  无跨设备配置文件 | 外部设备图（包括协作设备图） | 所有客户 | 实时和批量 | 否 | [扩展的设备定位](external-graph-use-cases.md#audience-expansion) |
 | 当前已验证的配置文件 | 无设备配置文件 | 所有客户 | 仅实时 | 否 | [共享设备定位](merge-rule-targeting-options.md#target-shared-devices) |
 | 上次验证的配置文件 | 设备配置文件 | 所有客户 | 实时和批量 | 是 | [联机／脱机定位](merge-rule-targeting-options.md#device-household-targeting) |
 | 上次验证的配置文件 | 配置文件链接设备图 | 所有客户 | 实时和批量 | 是 | [跨设备定位](profile-link-use-case.md#cross-device-personalization) |
 | 上次验证的配置文件 | 外部设备图（包括协作设备图） | 所有客户 | 实时和批量 | 否 | [高级跨设备定位](external-graph-use-cases.md#advanced-graph-expansion) |
-|  所有跨设备配置文件 | 不适用 | 基于人 [员的目标客户独有](../destinations/people-based-destinations-overview.md) | 仅批处理 | 否 | [针对基于人员的目标进行定位](merge-rule-targeting-options.md#all-cross-device) |
+| 所有跨设备配置文件 | 不适用 | 基于人 [员的目标客户独有](../destinations/people-based-destinations-overview.md) | 仅批处理 | 否 | [针对基于人员的目标进行定位](merge-rule-targeting-options.md#all-cross-device) |
 
 ## 配置文件合并规则区段评估 {#segment-evaluation}
 
@@ -126,6 +126,10 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
   </tr>
  </tbody>
 </table>
+
+## 外部合并策略 {#external-merge-policies}
+
+根据Audience manager外部定义的合并规则，从其他Experience cloud解决方案自动创建的受众细分会标记为使用 [!UICONTROL External Merge Policy]。 例如，请参阅 [Audience manager与Adobe Experience Platform之间的受众共享](../../integration/integration-aep/aam-aep-audience-sharing.md)。
 
 >[!MORELIKETHIS]
 >
