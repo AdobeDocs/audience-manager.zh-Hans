@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 批量管理工具疑难解答提示
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 translation-type: tm+mt
-source-git-commit: 6f13cefb2f56bbc2e0bfff9a6d31925001403c50
+source-git-commit: 994b12fd442a08da3b606dabca1f9382a7bd6f74
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 6f13cefb2f56bbc2e0bfff9a6d31925001403c50
 * 删除所有已更新的行。
 * 再次尝试批量请求。
 
-## 长延迟或无响应行为 {#delays-behavior}
+## 身份验证错误、长延迟或无响应行为 {#delays-behavior}
 
 下表列出了在使用工作表进行批量请求时可能遇到的一些常见问题。 尝试使用建议的解决方案解决这些问题。 如果建议的解决方案未解决问题，则应保存您的工作，重新启动计算机，然后再次尝试请求，而无需启动或使用其他应用程序。
 
@@ -46,6 +46,12 @@ source-git-commit: 6f13cefb2f56bbc2e0bfff9a6d31925001403c50
   </tr> 
  </thead>
  <tbody> 
+  <tr> 
+   <td colname="col1"> <b>身份验证错误</b> </td> 
+   <td colname="col2"> 
+    <b>更新至最新版Microsoft Excel</b>:当发布新版Microsoft excel并且您使用的是旧版本时，您可能会在批量管理工作表中遇到身份验证错误。 更新至最新版Microsoft Excel，以解决身份验证错误。
+</td> 
+  </tr> 
   <tr> 
    <td colname="col1"> <b>长时间延迟</b> </td> 
    <td colname="col2"> 
