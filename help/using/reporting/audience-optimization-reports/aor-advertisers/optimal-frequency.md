@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 最佳频率报表
 uuid: 50459ce9-39ac-4401-93dd-7526937fc742
 translation-type: tm+mt
-source-git-commit: ccff7a0337d59a2e2c65c91076a1ff38814a0dd1
+source-git-commit: e27ce2f607cadd7318a171359a5ae4daa071c486
 
 ---
 
@@ -14,6 +14,8 @@ source-git-commit: ccff7a0337d59a2e2c65c91076a1ff38814a0dd1
 # 最佳频率报表{#optimal-frequency-report}
 
 “最佳频率”报告可帮助您在提供的展示次数和转化率之间找到最佳平衡点。 它允许您调整要显示的展示次数，然后开始看到回报递减。
+
+报表的回顾间隔为30天，从选择器中选择的日期开 [!UICONTROL Date Through] 始。
 
 转换量通常随印象频率桶的增大而减小。 查看次数越多的用户越多。 这意味着这些较高频率的时段具有较少的转换率。
 
@@ -23,5 +25,4 @@ source-git-commit: ccff7a0337d59a2e2c65c91076a1ff38814a0dd1
 
 ## 示例报告
 
-![](assets/optimal-frequency.png)
-
+![最优频率](assets/optimal-frequency.png)
