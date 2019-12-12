@@ -6,7 +6,7 @@ solution: Audience Manager
 title: GDPR词汇表
 uuid: e52cad27-6a44-45ee-8524-6080adb86cc8
 translation-type: tm+mt
-source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
+source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
 
 ---
 
@@ -31,7 +31,7 @@ GDPR于2018年5月25日生效，其主要目标是让欧盟的个人（数据主
 
  
 
-**** 数据处理者：“处理者”是“...法人……”，他代表控制者处理个人数据。 在Audience Manager的环境中，Adobe在运行服务时，将代表控制者充当其处理的任何个人数据的“数据处理者”。 Adobe仅根据数据管理员的指示（如我们与客户的协议中所述或通过Audience manager中采取的操作）处理个人数据。
+**** 数据处理者：“处理者”是“...法人……”，他代表控制者处理个人数据。 在Audience Manager的环境中，Adobe在运行服务时，会代表控制者通过Audience manager处理任何个人数据，充当“数据处理者”。 Adobe仅根据数据管理员的指示（如我们与客户的协议中所述或通过Audience manager中采取的操作）处理个人数据。
 
  
 
@@ -39,7 +39,7 @@ GDPR于2018年5月25日生效，其主要目标是让欧盟的个人（数据主
 
  
 
-**** 同意：“同意”是指“他／她通过声明或明确肯定行动，表示同意处理与他／她有关的个人数据，并且自由、具体、知情和明确地表明数据主体的意愿”。 同意由数据管理者负责，而非Adobe通过Audience manager负责。
+**** 同意：“同意”是指“他／她通过声明或明确肯定行动，表示同意处理与他／她有关的个人数据，并且自由、具体、知情和明确地表明数据主体的意愿”。 同意由数据管理者负责，而非Adobe（通过Audience Manager）负责。
 
  
 
@@ -55,7 +55,7 @@ GDPR于2018年5月25日生效，其主要目标是让欧盟的个人（数据主
 
  
 
-**** Audience manager标识符(ID):Adobe Audience manager存储各种类型的ID。 “ [Audience Manager Identifiers](data-privacy-ids.md) ”（受众管理器标识符）页面提供这些ID的摘要、其相应的数据源和简要说明。 向 [Adobe Experience Platform Privacy service发送请求时](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)，请参考这些ID，以对数据主体发出删除或访问请求。
+**** Audience Manager标识符(ID):Adobe Audience manager存储各种类型的ID。 “ [Audience Manager Identifiers](data-privacy-ids.md) ”（受众管理器标识符）页面提供这些ID的摘要、其相应的数据源和简要说明。 向 [Adobe Experience Platform Privacy service发送请求时](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)，请参考这些ID，以对数据主体发出删除或访问请求。
 
  
 
