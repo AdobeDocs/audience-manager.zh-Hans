@@ -5,7 +5,7 @@ seo-title: CCPA词汇表
 solution: Audience Manager
 title: CCPA词汇表
 translation-type: tm+mt
-source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
+source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
 
 ---
 
@@ -14,9 +14,11 @@ source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
 
 ## 概述 {#overview}
 
-本文介绍了《加利福尼亚消费者隐私法》(CCPA)使用的概念和术语，以及Adobe Audience manager如何满足各种CCPA要求。
+本文介绍了《加利福尼亚消费者隐私法》(CCPA)使用的概念和术语，以及Adobe Audience manager作为服务提供商如何满足各种CCPA要求。
 
-加利福尼亚州消费者隐私法(CCPA)将于2020年1月1日生效，这是将隐私权纳入您消费者体验的又一个机会。 Audience manager利用现有的隐私基础架构，帮助您在使用Audience Manager时履行CCPA规定的义务，使您在2020年1月1日之前和之后都可以准备好CCPA。 Audience Manager期待通过使用我们的数据管理和隐私功能来履行任何新义务，从而与您合作。
+加利福尼亚州消费者隐私法(CCPA)将于2020年1月1日生效，这是将隐私权纳入您消费者体验的又一个机会。 Audience manager利用现有的隐私基础架构，帮助您在使用Audience Manager时履行CCPA规定的义务，使您在2020年1月1日之前和之后都可以准备好CCPA。
+
+Audience Manager期待通过使用我们的数据管理和隐私功能来履行任何新义务，从而与您合作。
 
 ## CCPA词汇表 {#CCPA-glossay}
 
@@ -31,10 +33,6 @@ source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
  
 
 **个人信息**:识别、关联、描述、能够与特定消费者或家庭相关联或可以合理地直接或间接关联的信息。 个人信息包括但不限于识别、与、描述、能够与特定消费者相关联或可以直接或间接地合理关联的信息。
-
- 
-
-**假名／假名化**:处理个人信息的方式使得个人信息不再由特定消费者应占而无需使用附加信息，前提是附加信息单独保存并受技术和组织措施的约束，以确保个人信息不归于已识别或可识别的消费者。
 
  
 
