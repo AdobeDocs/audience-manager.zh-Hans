@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 数据隐私概述
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
 translation-type: tm+mt
-source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
+source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
 
 数据隐私文档描述了Audience manager的集成以及与消费者隐私和选择退出程序相关的公认最佳做法的合规性。
 
-Audience manager认识到消费者与其互动的在线品牌之间关系的重要性。 双方都从匿名数据元素的透明交换中受益：
+Audience manager认识到消费者与其互动的在线品牌之间关系的重要性。 双方都受益于匿名数据元素的透明交换：
 
 * 消费者可获得个性化内容、折扣产品推广信息和简化的用户体验。
 * 品牌可获得支持多种在线业务模型的重要收入流。
@@ -40,7 +40,7 @@ CCPA为加利福尼亚州居民提供了新的数据隐私权，包括访问和�
 
 Audience manager通过 [Adobe Experience Platform Privacy Service](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) （用于数据访问和删除请求）等隐私工具帮助您遵守某些隐私法规规定的义务。
 
-此服务提供一个 [!DNL RESTful API] 用户界面，帮助您管理消费者数据请求。 使用隐 [私服务](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)，您可以根据个人消费者的请求提交访问和删除私人或个人数据的请求，从而帮助自动执行这部分合规义务。
+此服务提供一个 [!DNL RESTful API] 用户界面，帮助您管理消费者数据请求。 使用隐 [私服务](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)，您可以根据个人消费者的请求提交访问和删除个人数据的请求，从而帮助自动执行这部分合规义务。
 
 虽然数据访问和删除请求是通过隐私 [服务处理的](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html), [但](data-privacy-requests.md#opt-out-requests) DCS API当前支持退出请求 [](../../api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)。 有关详 [细信息，请参阅数据](data-privacy-requests.md) 隐私请求。
 
