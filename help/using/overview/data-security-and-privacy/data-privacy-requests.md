@@ -7,7 +7,7 @@ keywords: GDPR UI, GDPR API, CCPA, privacy
 title: 数据隐私请求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
+source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
 
 ---
 
@@ -49,16 +49,16 @@ source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
 
 要查看有效文 [!DNL JSON] 件的外观，可下 [载示例JSON](../data-security-and-privacy/assets/access_request.json)。
 
-我们理解您承诺在接收后30天内遵守您的数据隐私客户请求。 因此，我们会尽快处理您的数据删除请求。
+Adobe理解您承诺在接收后30天内遵守您的数据隐私客户请求。 因此，Adobe承诺尽快处理您的数据删除请求。
 
-为响应数据删除请求，我们会删除与请求中包含的Audience manager标识符关联的特征和区段。 此外，Audience manager将永久选择不再收集数据主体的相应Audience manager标识符，并删除相应的ID映射。
+为响应您的消费者数据删除请求，Audience manager将删除与请求中包含的Audience Manager标识符关联的特征和区段。 此外，Audience Manager选择不再收集进一步数据的个人的相应Audience manager标识符和相应的ID映射也将被删除。
 
 当您在数据隐私请求中发送声明的ID（如跨设备ID或cookie ID）时，Audience manager将对所有链接的设备（每个声明的ID最多100台设备）执行必要的删除操作。 [!DNL CRM]
 
-Audience manager通过向激活合作伙伴发送请求删除特定数据的数据主体的取消细分信息，来通知他们有关删除请求的信息。 但是，一些激活合作伙伴：
+Audience manager将尝试通过向激活合作伙伴发送请求删除某些数据的数据主体的取消细分信息，向他们通知删除请求。 但是，一些激活合作伙伴：
 
-1. 不支持从Adobe和／或Adobe取消分段（或删除分段）请求
-2. 无法接收我们提供的少于30天的更新。 在这些情况下，Audience manager客户无法通过Audience manager向激活合作伙伴自动发送删除请求。
+1. 无法支持从Audience manager和／或
+2. 无法从Audience manager接收频率低于30天的更新。 在这些情况下，Audience manager客户无法通过Audience manager向激活合作伙伴自动发送删除请求。
 
 在这些情况下，您无法通过Audience manager以自动方式向激活合作伙伴发送删除请求。
 
@@ -66,7 +66,7 @@ Audience manager通过向激活合作伙伴发送请求删除特定数据的数�
 
 ## 退出请求 {#opt-out-requests}
 
-Adobe在选择退出管理方面遵守所有行业标准。 阅读以了解有关Audience manager支持的退出类型的完整信息。
+Audience manager支持关于退出管理的行业标准。 阅读以了解有关Audience manager支持的退出类型的完整信息。
 
 虽然数据访问和删除请求是通过隐私服务处理的 [](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)，但目前DCS API支持退出请求。 阅读以了解退出API调用的外观。
 
@@ -88,7 +88,7 @@ Adobe在选择退出管理方面遵守所有行业标准。 阅读以了解有�
   </tr> 
   <tr> 
    <td colname="col1"> <p>直接向Audience manager调用API </p> </td> 
-   <td colname="col2"> <p>通过调用以下DCS API并包括 <a href="../../reference/ids-in-aam.md"> Audience Manager用户ID，您的用户可以退出所有Audience Manager品牌的数据收集 </a>: </p> <p> <code> curl -i "https://www.demdex.net/demoptout.jpg" --cookie "demdex=12345678901234567890123456789012345678;dextp=12;DST=12" </code> </p> <p>因此，我们将为已提交的Audience Manager <code>demdex=NOTARGET</code> 用 <code>dextp=NOTARGET</code> 户ID设置和Cookie。 </p> </td> 
+   <td colname="col2"> <p>通过调用以下DCS API并包含 <a href="../../reference/ids-in-aam.md"> Audience Manager用户ID，您的用户可以退出所有Audience Manager品牌的数据收集 </a>: </p> <p> <code> curl -i "https://www.demdex.net/demoptout.jpg" --cookie "demdex=12345678901234567890123456789012345678;dextp=12;DST=12" </code> </p> <p>因此，我们将为已提交的Audience Manager <code>demdex=NOTARGET</code> 用 <code>dextp=NOTARGET</code> 户ID设置和Cookie。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>移动设备 </p> </td> 
@@ -108,7 +108,7 @@ Adobe在选择退出管理方面遵守所有行业标准。 阅读以了解有�
 
 按照上述选择退出请求执行操作：
 
-* Audience manager将在以后停止所有数据收集、细分或激活。
+* 只要用户不清除其浏览器Cookie,Audience manager就会停止将来的所有数据收集、细分或激活。
 * 120天后，历史数据将从用户配置文件中删除。
 
 ### 使用Declared ID调用的合作伙伴级别退出
@@ -161,12 +161,12 @@ Adobe在选择退出管理方面遵守所有行业标准。 阅读以了解有�
 
 ## 具有取消细分功能的Audience manager合作伙伴 {#aam-partners-with-unsegmentation}
 
-为了帮助客户自动处理数据隐私请求，Audience Manager通过向激活合作伙伴发送取消细分（或删除细分）信息，通知他们有关数据主体中删除请求的信息。
+为了帮助您自动处理消费者数据隐私请求，Audience manager将尝试通过向激活合作伙伴发送取消细分（或删除细分）信息，通知激活合作伙伴有关数据主体删除请求的信息。
 
 但是，我们的一些激活合作伙伴：
 
-1. 无法支持取消细分Adobe和／或
-1. 无法在30天内以最频繁的方式接收我们的更新。
+1. 无法支持Audience Manager和／或Audience Manager的取消细分请求
+2. 无法在30天内更频繁地从Audience manager接收更新。
 
 在这些情况下，您无法通过Audience manager以自动方式向激活合作伙伴发送删除请求。
 
@@ -174,6 +174,6 @@ Adobe在选择退出管理方面遵守所有行业标准。 阅读以了解有�
 
 ## 数据更正请求 {#correction}
 
-由于Audience manager不是数据源，因此Audience manager中用于数据更正的角色有限。 更正可能意味着数据主体已请求取消不正确的特征／段的资格，或者被限定为符合所需的特征／段。
+由于Audience manager不是数据源，因此Audience manager中用于数据更正的角色有限。 更正可能意味着用户已请求取消其不正确的特征／段的资格，或者将其限定为所需的特征／段。
 
 Audience Manager客户可以根据用户档案选择捕获相关信号／特征／细分，并通过离线数据获取将 [这些信息发送](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 到Audience Manager。 请注意，如果用户重复其行为，他们将继续获得符合原始特征和区段的资格。
