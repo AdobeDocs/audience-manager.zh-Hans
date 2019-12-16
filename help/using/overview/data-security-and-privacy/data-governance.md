@@ -6,7 +6,7 @@ solution: Audience Manager
 keywords: GDPR UI, GDPR API, CCPA, privacy, consent, obfuscation, governance
 title: 数据管理
 translation-type: tm+mt
-source-git-commit: b47819d5e6394e78d744ada1bb7090d337938983
+source-git-commit: 9004dc46c0ac431e9f193467a2147a2d9ac36cdc
 
 ---
 
@@ -21,7 +21,7 @@ Audience Manager中的数据管理是指Audience manager中客户数据的生命
 
 The [!DNL IP] address of a visitor to a customer’s website is transmitted to an Adobe [!DNL Data Processing Center] ([!DNL DPC]) where the [!DNL IP] address may be stored. Depending on the network configuration for the visitor, the [!DNL IP] address may not necessarily represent the [!DNL IP] address of the visitor’s computer. For example, the [!DNL IP] address could be the external [!DNL IP] address of a Network Address Translation (NAT) firewall, [!DNL HTTP] proxy, or Internet gateway.
 
-**** IP模糊化方法：Adobe Audience manager遵循“按设计保护隐私”的原则，允许客户在UI中实现模糊化，无论是在全球所有地理区域还是针对特定国家／地区。 [!DNL IP] 启用此设置后，当将地址引入Audience manager中时，地址的最后八位字节( [!DNL IP] 最后一部分) [!DNL IP] 将立即被丢弃。 Audience manager在处理之前(包括 [!DNL IP] 在任何可选的地理查找或地址记录之前)放弃此部分地 [!DNL IP] 址。 例如：
+**** IP模糊化方法：Adobe Audience manager遵循“按设计保护隐私”的原则，允许客户在UI中实现模糊处理，无论是在全球所有地理区域还是针对特定国家／地区。 [!DNL IP] 启用此设置后，当将地址引入Audience manager中时，地址的最后八位字节( [!DNL IP] 最后一部分) [!DNL IP] 将立即被丢弃。 Audience manager在处理之前(包括 [!DNL IP] 在任何可选的地理查找或地址记录之前)放弃此部分地 [!DNL IP] 址。 例如：
 
 * 在记录: `255.255.255.255`
 * 之后: `255.255.255.0`
@@ -42,4 +42,4 @@ The [!DNL IP] address of a visitor to a customer’s website is transmitted to a
 
 ## 跨边界数据传输 {#data-transfers}
 
-GDPR不禁止在欧洲以外传输数据。 它要求对欧洲数据的隐私保护在数据传输时始终有效。 请访问 [Adobe隐私中心](https://www.adobe.com/privacy/eudatatransfers.html) ，了解更多信息。 CCPA没有跨边界数据传输限制。
+当Audience manager跨国境传输客户的个人数据时，Audience manager会遵守适用法律。 请访问 [Adobe隐私中心](https://www.adobe.com/privacy/eudatatransfers.html) ，了解更多信息。
