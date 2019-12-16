@@ -6,7 +6,7 @@ solution: Audience Manager
 title: GDPR词汇表
 uuid: e52cad27-6a44-45ee-8524-6080adb86cc8
 translation-type: tm+mt
-source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
+source-git-commit: 9004dc46c0ac431e9f193467a2147a2d9ac36cdc
 
 ---
 
@@ -35,7 +35,7 @@ GDPR于2018年5月25日生效，其主要目标是让欧盟的个人（数据主
 
  
 
-**** 数据主体：个人数据相关的个人。 在Audience manager的上下文中，数据主体是Audience manager客户的消费者或最终用户。 如果Audience manager直接从数据主体接收请求，则这些请求将转发给相应的Adobe客户。
+**** 数据主体：个人数据相关的个人。 在Audience manager的上下文中，数据主体是Audience manager客户的消费者或最终用户。 如果Adobe直接从数据主体接收请求，这些请求将转发给相应的Audience manager客户。
 
  
 
