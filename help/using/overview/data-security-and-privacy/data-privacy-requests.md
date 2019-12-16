@@ -7,7 +7,7 @@ keywords: GDPR UI, GDPR API, CCPA, privacy
 title: 数据隐私请求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
+source-git-commit: 9004dc46c0ac431e9f193467a2147a2d9ac36cdc
 
 ---
 
@@ -39,7 +39,7 @@ source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
 
 要查看有效文 [!DNL JSON] 件的外观，可下 [载示例JSON](../data-security-and-privacy/assets/access_request.json)。
 
-我们理解您承诺在法律规定的期限内遵守您的数据隐私客户要求。
+我们理解您承诺在法律规定的期限内遵守您的数据隐私要求。
 
 ## 数据删除请求{#delete-data}
 
@@ -49,7 +49,7 @@ source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
 
 要查看有效文 [!DNL JSON] 件的外观，可下 [载示例JSON](../data-security-and-privacy/assets/access_request.json)。
 
-Adobe理解您承诺在接收后30天内遵守您的数据隐私客户请求。 因此，Adobe承诺尽快处理您的数据删除请求。
+Adobe理解您承诺在30天内遵守您的数据隐私客户要求。 因此，Adobe承诺尽快处理您的数据删除请求。
 
 为响应您的消费者数据删除请求，Audience manager将删除与请求中包含的Audience Manager标识符关联的特征和区段。 此外，Audience Manager选择不再收集进一步数据的个人的相应Audience manager标识符和相应的ID映射也将被删除。
 
@@ -108,7 +108,7 @@ Audience manager支持关于退出管理的行业标准。 阅读以了解有关
 
 按照上述选择退出请求执行操作：
 
-* 只要用户不清除其浏览器Cookie,Audience manager就会停止将来的所有数据收集、细分或激活。
+* 只要用户不清除其浏览器Cookie,Audience manager将停止所有数据收集、细分或激活。
 * 120天后，历史数据将从用户配置文件中删除。
 
 ### 使用Declared ID调用的合作伙伴级别退出
