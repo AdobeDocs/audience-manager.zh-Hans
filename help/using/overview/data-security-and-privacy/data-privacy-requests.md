@@ -7,7 +7,7 @@ keywords: GDPR UI, GDPR API, CCPA, privacy
 title: 数据隐私请求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 9004dc46c0ac431e9f193467a2147a2d9ac36cdc
+source-git-commit: ff4bf70c9012f99289ea82824a552db97430fbf2
 
 ---
 
@@ -170,7 +170,7 @@ Audience manager支持关于退出管理的行业标准。 阅读以了解有关
 
 在这些情况下，您无法通过Audience manager以自动方式向激活合作伙伴发送删除请求。
 
-下载我们 [的Partner excel表](assets/AAM-Partners-October2019.xlsx) ，了解哪些Audience manager激活合作伙伴支持取消细分。
+下载我们 [的Partner excel表](assets/AAM-Partners-December2019.xlsx) ，了解哪些Audience manager激活合作伙伴支持取消细分。
 
 ## 数据更正请求 {#correction}
 
