@@ -1,13 +1,13 @@
 ---
 description: 将Audience Management模块添加到Adobe Analytics appMeasurement，以将Analytics数据转发到Audience Manager，而不是让Audience Manager数据集成库(DIL)代码从页面发送像素。
-keywords: 受众分析；分析；ssf;服务器端转发
+keywords: audience analytics; analytics; ssf; server side forwarding
 seo-description: 将Audience Management模块添加到Adobe Analytics appMeasurement，以将Analytics数据转发到Audience Manager，而不是让Audience Manager数据集成库(DIL)代码从页面发送像素。
-seo-title: ' 实施受众管理模块'
+seo-title: 实施受众管理模块
 solution: Audience Manager
 title: 实施受众管理模块
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 translation-type: tm+mt
-source-git-commit: 94046c4ed825949451d0dbad37adbe9fba0f9191
+source-git-commit: d6bfffa97813eeafd7e478f0520b2a62eb63cb94
 
 ---
 
@@ -15,6 +15,10 @@ source-git-commit: 94046c4ed825949451d0dbad37adbe9fba0f9191
 # 实施受众管理模块 {#implement-the-audience-management-module}
 
 添加 [!UICONTROL Audience Management Module] 到，以将 [!DNL Adobe Analytics] 数据转发到Audience Manager，而不是让Audience Manager [!UICONTROL AppMeasurement] ( [!DNL Analytics][!UICONTROL Data Integration Library][!UICONTROL DIL])代码从页面发送像素。
+
+>[!NOTE]
+>
+>本页中的说明涉及使用 [Adobe Digital Tag Manager(DTM)](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) 或任何其他标签管理解决方案( *Adobe Launch除外)的* 实 [施](https://docs.adobe.com/content/help/en/launch/using/overview.html)。 我们建议您使用Adobe Launch。 使用启动项，您不必手动复制代码，如本页所示。
 
 ## 先决条件 {#prereqs}
 
