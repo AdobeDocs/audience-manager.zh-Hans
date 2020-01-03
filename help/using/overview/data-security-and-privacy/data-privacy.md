@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 数据隐私概述
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
 translation-type: tm+mt
-source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
+source-git-commit: f8184dfccdb7b5cbc3ace67831d988dd8061ea38
 
 ---
 
@@ -30,9 +30,9 @@ Audience manager认识到消费者与其互动的在线品牌之间关系的重�
 
 为符合GDPR,Audience manager支持数据访问和删除 [请求](data-privacy-requests.md)。
 
-2020 [年1月1日生效的《加利福尼亚消费者隐私法》(California Consumer Privacy Act, CCPA)](https://www.caprivacy.org/about)，将为加利福尼亚州居民提供关于其个人信息的新权利，并将对在加利福尼亚从事业务的某些实体承担数据保护责任。
+2020 [年1月1日生效的《加利福尼亚消费者隐私法》(California Consumer Privacy Act, CCPA)](https://www.caprivacy.org/about)，为加利福尼亚州居民提供了有关其个人信息的新权利，并对在加利福尼亚从事业务的某些实体负有数据保护责任。
 
-CCPA为加利福尼亚州居民提供了新的数据隐私权，包括访问和删除其个人数据以及了解其个人数据是出售还是披露（以及向谁）的权利。 Audience Manager预期CCPA，支持CCPA访问和删除请 [求](data-privacy-requests.md)。
+CCPA为加利福尼亚州居民提供了新的数据隐私权，包括访问和删除其个人数据以及了解其个人数据是出售还是披露（以及向谁）的权利。 为了符合CCPA,Audience manager支持CCPA访问和删除请 [求](data-privacy-requests.md)。
 
 有关更多 [详细信息，请参阅Adobe隐私中心](https://www.adobe.com/privacy/opt-out.html) 。
 
