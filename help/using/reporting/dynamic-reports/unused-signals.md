@@ -6,22 +6,22 @@ solution: Audience Manager
 title: 未使用的信号报告
 uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: dcc44161df89b44ca1a234070c4afbb0210dc723
 
 ---
 
 
 # 未使用的信号报告{#unused-signals-report}
 
-此报告会返回在库存中收集并发送到Audience Manager的所有未使用信息的频率计数。
+此报告会返回在库存中收集并发送到Audience Manager的所有未使用信息的频率计数。 要访问此报告，请导航到“ **分析”>“受众报告”>“其他报告”>“未使用的信号”**。
 
-<!-- 
+>[!NOTE]
+>
+>如果看到消息“您无权访问受众报告”，请与Audience manager顾问或客户关怀联系，为您提供报告。
 
-c_unused_signals.xml
+![未使用信号报告的屏幕截图](/help/using/reporting/dynamic-reports/assets/unused-signals.png)
 
- -->
-
-## 未使用的信号报告
+## 概述
 
 信号是以键值对(例如， [!DNL Audience Manager] 等)形式从您的 [网站传递到的](../../reference/key-value-pairs-explained.md)`color=blue, price>100, gender=female`信息。
 
@@ -45,7 +45,7 @@ c_unused_signals.xml
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>确保特征一致性或向单键添加相关值</b> </p> </td> 
-   <td colname="col2"> <p>查看报告，了解特定信号的不同值变化。 </p> <p>例如，假设您有一个州“North Carolina”的特征，该特征在键值对中定义为 <code> c_state = North Carolina</code>。 该报告可以帮助您查找名称变体并将其添加到特征中(例如， <code> c_state = North Carolina、NC、N.C.、NCarolina</code>)。 或者，您也可以使用报告发现名称变体，并在所有站点上用统一的值替换这些变体。 </p> <p> </p> </td> 
+   <td colname="col2"> <p>查看报告，了解特定信号的不同值变化。 </p> <p>例如，假设您有一个州“North Carolina”的特征，该特征在键值对中定义为 <code> c_state = North Carolina</code>。 该报告可以帮助您查找名称变体并将其添加到特征(例如 <code> c_state = North Carolina, NC, N.C., NCarolina</code>)。 或者，您也可以使用报告发现名称变体，并在所有站点上用统一的值替换这些变体。 </p> <p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>创建新特征</b> </p> </td> 
