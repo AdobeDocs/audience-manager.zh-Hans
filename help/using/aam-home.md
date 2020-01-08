@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager产品文档
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: 4cebba536cd44b7ef72f5b16cf5deeeea3445e0b
+source-git-commit: 3c528a39ffb1f6b36838bb6e2e3240957e87eb61
 
 ---
 
@@ -27,7 +27,6 @@ source-git-commit: 4cebba536cd44b7ef72f5b16cf5deeeea3445e0b
      <li><a href="overview/data-security-and-privacy/data-security.md#hsts">HTTP Strict-Transport-Security</a></li>
      <li><a href="features/destinations/people-based-destinations-overview.md">基于人员的目标</a> </li>
      </ul> </p> <p>另请参阅 <a href="docs-updates/docs-2019.md"> 2019文档更新</a>。 </p> 
-     <p>如果您是Audience Manager的新手，请参阅我们的 <a href="reference/aam-glossary.md"> 词汇</a><a href= "reference/ids-in-aam.md">表和ID索引。</a></p>
      <br> 
      <p> <b>协作文档</b> </p>
      <p>我们欢迎所有读者为我们的文档作出贡献。 请参阅协 <a href="https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html">作指南概述</a> ，了解如何开始贡献。</p>
@@ -43,7 +42,8 @@ source-git-commit: 4cebba536cd44b7ef72f5b16cf5deeeea3445e0b
       <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="https://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe培训和认证</a> </li> 
       <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://helpx.adobe.com/support/experience-cloud.html" scope="external" format="https">Experience cloud产品文档主页</a> </li> 
       <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/support/audience-manager.html" format="https" scope="external">Audience Manager 学习和支持</a> </li> 
-     </ul> </p> </td>
+     </ul> </p> 
+     <p> <b>ID词汇表和索引</b> </p><p>如果您是Audience Manager的新手，请参阅我们的 <a href="reference/aam-glossary.md"> 词汇</a><a href= "reference/ids-in-aam.md">表和ID索引。</a></p></td>
   </tr> 
  </tbody> 
 </table>
