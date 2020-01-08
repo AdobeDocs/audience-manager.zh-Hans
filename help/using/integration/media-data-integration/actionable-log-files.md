@@ -1,13 +1,13 @@
 ---
 description: 可操作的日志文件允许您从广告服务器日志文件捕获媒体信号以在Audience manager中创建特征。 无需附加像素，即可从广告服务器捕获印象、点击和转换作为特征。
 keywords: actionable logs, alf, ALF
-seo-description: 可操作的日志文件允许您从广告服务器日志文件捕获媒体信号以在Audience manager中创建特征。 捕获广告服务器的印象、点击和转换作为特征，无需附加像素。
+seo-description: 可操作的日志文件允许您从广告服务器日志文件捕获媒体信号以在Audience manager中创建特征。 无需附加像素，即可从广告服务器捕获印象、点击和转换作为特征。
 seo-title: 可操作的日志文件
 solution: Audience Manager
 title: 可操作的日志文件
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 translation-type: tm+mt
-source-git-commit: a96e64d81b6834a308ba40ec3f7fa6ada038f662
+source-git-commit: fcdfe3a81cddc3c899453234d349f7a458c2be61
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: a96e64d81b6834a308ba40ec3f7fa6ada038f662
 
 >[!IMPORTANT]
 >
-> 到2019年底，新广告服 [!UICONTROL Actionable Log Files] 务器的可用性将开始扩大。 Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
+> 2020年初，将开 [!UICONTROL Actionable Log Files] 始扩大对新广告服务器的可用性。 Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
 
 ## 使用可操作的日志文件 {#working-with-actionable-log-files}
 
@@ -148,7 +148,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 对于平均大小为200万行 [!DNL DCM] 的日志文件，通过可操作信号创建的任何特征在我们处理日志后的大约一小时内即可实现。
 
->[!NOTE] {importance="high"}
+>[!NOTE] {importance=&quot;high&quot;}
 >
 >日志中提供的事件 [!DNL DCM] 时间戳将被接受并传递到 [!UICONTROL Data Collection Servers]。
 >
@@ -249,7 +249,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 您可以在信号搜索界面中查看传入的可 [操作信号](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md) 。
 
-转到“受 **众数据** (1)”&gt;“信号 **(2)”&gt;“搜索** (3)”，然后选择“ ******** 可操作日志文件(4)”过滤器。
+转到“受 **众数据** (1)”>“信号 **(2)”>“搜索** (3)”，然后选择“ ******** 可操作日志文件(4)”过滤器。
 
 ![UI中可操作的信号](/help/using/integration/assets/alf-in-signals.png)
 
