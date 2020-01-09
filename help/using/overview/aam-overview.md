@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 translation-type: tm+mt
-source-git-commit: 77b13fc37aa0a61b0740ff8c2694e11e2349ec12
+source-git-commit: aebdeb953153f4d1028871966f8da9ee27f58d35
 
 ---
 
@@ -17,16 +17,41 @@ Audience manager可帮助您将受众数据资产整合在一起，从而轻松�
 
 借助Audience Manager，您不会绑定到数据销售商、交换或需求侧平台。 此外，Audience Manager对于我们合作伙伴的数据资产完全不可知。 通过访问多个数据源，Audience manager使数字出版商能够使用各种第三方数据以及我们的私人数据合作。 与我们的合作伙伴解决方案团队交流，了解如何帮助您针对目标受众做出明智而准确的决策。
 
-## 历史和背景 {#history-and-background}
+## 数据管理平台(DMP)的三个功能 {#dmp-three-functions}
 
-Audience manager于2008年以Demdex的形式推出。 Adobe Systems于2011年收购了该公司，随后将其重新命名为Audience Manager。
+数据管理平台(DMP)的功能可归纳为三个类别，如下所示。
+
+![三个DMP函数的图像：数据输入、受众创建、数据输出](/help/using/overview/assets/dmp-functions.png)
+
+**Data In** Audience manager可从渠道和设备（Web分析、CRM、设备数据、电子商务等）收集第一方数据。
+
+**受众创建**&#x200B;将数据统一到受众档案中，为您提供跨设备和渠道的完整客户视图。 创建相似模型，构建受众细分和档案组，并补充第二方和第三方数据源。
+
+**数据输出**&#x200B;通过将受众细分推向需求侧平台(DSP)、营销活动管理系统和其他营销平台，激活受众细分。
+
+## 更多信息 {#more-information}
+
+有关详细信息，请参阅以下资源：
+* [Audience manager概述](https://www.adobe.com/analytics/audience-manager.html)
+* [Audience manager的优势](https://www.adobe.com/analytics/audience-manager/benefits.html)
+* [Audience manager功能](https://www.adobe.com/analytics/audience-manager/features.html)
+
+
+<!--
+
+## History and Background {#history-and-background}
+
+Audience Manager started as Demdex in 2008. It was acquired by Adobe Systems in 2011 and subsequently rebranded as Audience Manager.
 
 ## History {#history}
 
-自2008年起，Audience Manager(以前 [!UICONTROL Demdex])一直是在线受众管理市场的先锋。 Audience manager服务支持动态、多渠道在线数据战略。 我们的平台和服务被从汽车(AutoTrader)到航空(American Airlines)，以及金融服务公司(American Express)等众多不同行业所使用。 Audience manager使用企业级技术提供规模、可靠性、分析和性能，帮助您的企业在线取得成功。 Audience manager与Adobe Experience cloud集成，可帮助您跨越来越多的可寻址数字渠道集中、管理数据资产并对其采取行动。
+Since 2008, Audience Manager (formerly, [!UICONTROL Demdex]) has been a pioneer in the on-line audience management market. Audience Manager services power dynamic, multi-channel online data strategies. Our platform and services are used by an array of diverse industries from automobiles (AutoTrader), to airlines (American Airlines), and financial services companies (American Express). Audience Manager uses enterprise-level technology to provide the scale, reliability, analytics, and performance to help your business succeed online. Audience Manager integrates with the Adobe Experience Cloud to help you centralize, manage, and take action on your data assets across a growing number of digitally addressable channels.
 
-## Audience manager及其数据管理平台(DMP) {#aam-dmp}
+## Audience Manager and its Data Management Platform (DMP) {#aam-dmp}
 
-Audience manager可帮助您管理数据渠道。 我们的服务是一种催化剂，可将通用用户和原始数据信号转换为用于多渠道营销工作的实际受众细分。 此外，Audience manager还提供用于标签管理和受众分析的工具，同时满足客户和消费者的隐私和数据安全需求。
+Audience Manager helps you manage your data pipeline. Our service is a catalyst that transforms generic users and raw data signals into actual audience segments used for multi-channel marketing efforts. Additionally, Audience Manager provides tools for tag management and audience analytics while simultaneously meeting the privacy and data security needs of clients and consumers.
 
 ![](assets/am_overview_80.png)
+
+
+-->
