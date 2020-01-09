@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 translation-type: tm+mt
-source-git-commit: aebdeb953153f4d1028871966f8da9ee27f58d35
+source-git-commit: a13c64eb45fdbcb311bfecdb39b3203523d6b399
 
 ---
 
@@ -23,11 +23,21 @@ Audience manager可帮助您将受众数据资产整合在一起，从而轻松�
 
 ![三个DMP函数的图像：数据输入、受众创建、数据输出](/help/using/overview/assets/dmp-functions.png)
 
-**Data In** Audience manager可从渠道和设备（Web分析、CRM、设备数据、电子商务等）收集第一方数据。
+**数据输入**
 
-**受众创建**&#x200B;将数据统一到受众档案中，为您提供跨设备和渠道的完整客户视图。 创建相似模型，构建受众细分和档案组，并补充第二方和第三方数据源。
+Audience manager可从渠道和设备（网络分析、CRM、设备数据、电子商务等）收集第一方数据。
 
-**数据输出**&#x200B;通过将受众细分推向需求侧平台(DSP)、营销活动管理系统和其他营销平台，激活受众细分。
+<br> 
+
+**受众创建**
+
+将数据统一到受众档案中，为您提供跨设备和渠道的完整客户视图。 创建相似模型，构建受众细分和档案组，并补充第二方和第三方数据源。
+
+<br> 
+
+**数据输出**
+
+通过将受众细分推出到需求侧平台(DSP)、营销活动管理系统和其他营销平台，激活受众细分。
 
 ## 更多信息 {#more-information}
 
