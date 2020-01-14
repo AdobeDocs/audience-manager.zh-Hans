@@ -5,7 +5,7 @@ seo-title: 按键值对搜索信号
 title: 按键值对搜索信号
 uuid: 2a38d0d4-4a2e-4ca5-b9ec-af9d4963d876
 translation-type: tm+mt
-source-git-commit: 1f26460d746a93ddc36c375360fcfbd9feb06fbb
+source-git-commit: 2206b5e40f7024084953fed52bb02fcc46ea36f1
 
 ---
 
@@ -32,6 +32,10 @@ source-git-commit: 1f26460d746a93ddc36c375360fcfbd9feb06fbb
 此搜索将仅返回同一调用中符合所有三个过滤器条件的结果： `c_creative == "12345"``AND``c_product == "smartphone"` `AND``c_location == "europe"`..
 
 ![](assets/signals-search.png)
+
+## 从信号搜索中排除的信号 {#excluded-signals}
+
+Audience manager使用的、由前缀和前缀 `d_` 前缀引 `h_` 用的关键变量不会浮出水面 [!UICONTROL Signals Search]。 有关详 [细信息，请参阅关键变量的前缀要求](../../traits/trait-variable-prefixes.md) 。
 
 ## 区分大小写并自动完成搜索 {#case-insensitivity}
 
