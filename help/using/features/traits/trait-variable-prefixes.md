@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 关键变量的前缀要求
 uuid: df2ef9c8-606a-45f9-a836-859f856a7d4b
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 2206b5e40f7024084953fed52bb02fcc46ea36f1
 
 ---
 
@@ -39,11 +39,11 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
   </tr> 
   <tr> 
    <td colname="col1"><code> d_</code> </td> 
-   <td colname="col2"> <p>在Audience Manager <span class="keyword"> 级别</span> 。 此数据在 <span class="keyword"> Audience manager生态系统中是统一的</span> 。 有关 <a href="../../api/dcs-intro/dcs-api-reference/dcs-keys.md"> 更完整的列表，请参阅DCS API调用的受支持属性</a> 。 </p> </td> 
-  </tr> 
+   <td colname="col2"> <p>在Audience Manager <span class="keyword"> 级别</span> 。 此数据在 <span class="keyword"> Audience manager生态系统中是统一的</span> 。 有关 <a href="../../api/dcs-intro/dcs-api-reference/dcs-keys.md"> 更完整的列表，请参阅DCS API调用的受支持属性</a> 。 <p>在信号搜索中不会出现使用此前缀 <a href="../data-explorer/data-explorer-signals-search/data-explorer-signals-search.md">的信号</a>。</p></p> </td> 
+  </tr>
   <tr> 
    <td colname="col1"><code> h_</code> </td> 
-   <td colname="col2"> <p>它包含 <a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields" scope="external" format="html"> HTTP头信息</a> 。 包括标题参 <code> referer</code>数<code> IP</code>, <code> accept-language</code>如、 </p> <p> <p>注意：对于使用9.0以上DIL版本的客户，使用该信号的数据收集 <code> h_referer</code> 在Safari浏览器上将不工作。 随着 <a href="https://webkit.org/blog/8311/intelligent-tracking-prevention-2-0/" format="https" scope="external"> ITP 2.0的推出</a>,Safari浏览器可能会将demdex.net域分类为跟踪器，并将在数据收集请求中截断引用来源，以仅包含源而不是完整的URL。 请参 <a href="../../dil/dil-overview.md#get-implement-dil-code">阅获取和实施DIL代码</a> ，了解最新DIL版本。 </p> </p> </td> 
+   <td colname="col2"> <p>它包含 <a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields" scope="external" format="html"> HTTP头信息</a> 。 包括标题参 <code> referer</code>数<code> IP</code>, <code> accept-language</code>如、 </p> <p> <p>注意：对于使用9.0以上DIL版本的客户，使用该信号的数据收集 <code> h_referer</code> 在Safari浏览器上将不工作。 随着 <a href="https://webkit.org/blog/8311/intelligent-tracking-prevention-2-0/" format="https" scope="external"> ITP 2.0的推出</a>,Safari浏览器可能会将demdex.net域分类为跟踪器，并将在数据收集请求中截断引用来源，以仅包含源而不是完整的URL。 请参 <a href="../../dil/dil-overview.md#get-implement-dil-code">阅获取和实施DIL代码</a> ，了解最新DIL版本。<p>在信号搜索中不会出现使用此前缀 <a href="../data-explorer/data-explorer-signals-search/data-explorer-signals-search.md">的信号</a>。</p></p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><code> p_</code> </td> 
