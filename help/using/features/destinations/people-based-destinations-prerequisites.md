@@ -5,7 +5,7 @@ seo-title: 基于人员的目标先决条件和注意事项
 solution: Audience Manager
 title: 先决条件和注意事项
 translation-type: tm+mt
-source-git-commit: d83f4dae563c9c49ae8d46c28aa41168d746f92c
+source-git-commit: 301a5c553cfd5658f4d594773ab6248012cc50fa
 
 ---
 
@@ -33,10 +33,10 @@ source-git-commit: d83f4dae563c9c49ae8d46c28aa41168d746f92c
 在使用将第 [!DNL People-Based Destinations] 一方受众细分发送到之前，请确保 [!DNL Facebook]满足以下要求：
 
 1. 您 [!DNL Facebook] 的用户帐户必须为您计划使用 **的广告帐户启用** “管理营销活动”权限。
-1. 将 **Adobe Experience cloud商业帐户添加为广告合作伙伴**[!DNL Facebook Ad Account]。 使用 `business ID=206617933627973`. 有关详 [细信息，请参阅将合作伙伴添加到您的业务经理](https://www.facebook.com/business/help/708679622611131) 。
+2. 将 **Adobe Experience cloud商业帐户添加为广告合作伙伴**[!DNL Facebook Ad Account]。 使用 `business ID=206617933627973`. 有关详 [细信息，请参阅将合作伙伴添加到您的业务经理](https://www.facebook.com/business/help/1717412048538897) 。
    >[!IMPORTANT]
    > 配置Adobe Experience cloud的权限时，必须启用“管理营销活 **动”权** 限。 这是集成所必需的 [!DNL People-Based Destinations] 选项。
-1. 阅读并签署 [!DNL Facebook Custom Audiences] 服务条款。 为此，请转到 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`您的 `accountID` 位置 [!DNL Facebook Ad Account ID]。
+3. 阅读并签署 [!DNL Facebook Custom Audiences] 服务条款。 为此，请转到 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`您的 `accountID` 位置 [!DNL Facebook Ad Account ID]。
 
 ## 数据入门 {#data-onboarding}
 
@@ -67,7 +67,7 @@ source-git-commit: d83f4dae563c9c49ae8d46c28aa41168d746f92c
 
 请观看以下视频，了解的哈希要求 [!UICONTROL People-Based Destinations]。
 
->[!VIDEO](https://video.tv.adobe.com/v/29003/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
 Adobe Experience Cloud可让您选择通过Experience Cloud ID服务散列客户ID。 有关如 [何使用ECID对客户ID进行哈希处理的详细信息，请参阅针对setCustomerID的SHA256哈希支持](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) 。
 
