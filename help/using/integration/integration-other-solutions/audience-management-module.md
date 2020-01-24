@@ -7,14 +7,18 @@ solution: Audience Manager
 title: 实施受众管理模块
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 translation-type: tm+mt
-source-git-commit: 1b7c29c0637432a320b2a7573a3f5a7fb4cdcb81
+source-git-commit: dddc67e80e2b8c2e5e3ec76912a030e52d2206f5
 
 ---
 
 
-# 实施受众管理模块 {#implement-the-audience-management-module}
+# 如何将数据从Adobe Analytics转发到Audience Manager {#implement-the-audience-management-module}
 
-添加 [!UICONTROL Audience Management Module] 到，以将 [!DNL Adobe Analytics] 数据转发到Audience Manager，而不是让Audience Manager [!UICONTROL AppMeasurement] ( [!DNL Analytics][!UICONTROL Data Integration Library][!UICONTROL DIL])代码从页面发送像素。
+按照本教程中的步骤将数据转 [!DNL Analytics] 发到Audience Manager，而不是让Audience Manager [!UICONTROL Data Integration Library] ([!UICONTROL DIL])代码从页面发送像素。
+
+>[!TIP]
+>
+>我们建议您使 [!UICONTROL Adobe Launch] 用将数据转 [!UICONTROL Analytics] 发到Audience Manager中。 使用 [!UICONTROL Launch]时，您不必手动将代码复制到 [!UICONTROL AppMeasurement]中，如本页所示。
 
 >[!NOTE]
 >
@@ -22,14 +26,33 @@ source-git-commit: 1b7c29c0637432a320b2a7573a3f5a7fb4cdcb81
 
 ## 先决条件 {#prereqs}
 
-除了实施本文档所述的代码外，您还必须：
+除了启用扩展或实现本文档中描述的代码之外，您还必须：
 
 * Implement the [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* 为 [!UICONTROL Server-Side Forwarding] 中的报表包启用 [!UICONTROL Adobe Analytics Admin Console]。
+* 在 [中为报表包启用](https://docs.adobe.com/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) “服务器端转发” [!UICONTROL Adobe Analytics Admin Console]。
 
 ## 实施 {#implementation}
 
-要实施以下各项，请执行以 [!UICONTROL Audience Management Module]下操作：
+根据您使用的标签管理解决方案，有两种方法可以实施从Adobe Analytics到Audience Manager的数据转发。
+
+### 使用Adobe Launch实施
+
+Adobe建议您使用 [Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html) 扩展来在您的资产中使用Adobe Analytics和Audience Manager。 在这种情况下，您无需手动复制任何代码。 相反，您必须在Analytics Launch扩展中启用数据共享，如下图所示。 另请参阅 [Adobe Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager) 文档。
+
+>[!TIP]
+>
+>如果您安装了Adobe Analytics扩展， *请勿同时* 安装Audience Manager扩展。 从Analytics扩展转发数据将取代Audience manager扩展功能。
+
+![如何启用从Adobe Analytics扩展到Audience manager的数据共享](/help/using/integration/assets/analytics-to-aam.png)
+
+### 使用Adobe数字标签管理(DTM)或任何其他标签管理解决方案实施
+
+
+>[!WARNING]
+>
+>Adobe已发布计划，在2020年底前将日落DTM。 有关详细信息和日程安排，请参阅 [Adobe社区论坛中的DTM Plans for a Sunset](https://forums.adobe.com/community/experience-cloud/platform/launch/blog/2018/10/05/dtm-plans-for-a-sunset)。
+
+要实施使 [!UICONTROL Audience Management Module] 用 [Adobe DTM或其他标签管理解决方案](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) ，请执行以下操作：
 
 1. 使用 [!UICONTROL AppMeasurement] Analytics Code Manager [下载](https://marketing.adobe.com/resources/help/en_US/reference/code_manager_admin.html) （需要版本1.5或更高版本）。
 1. 将您的 [!UICONTROL AppMeasurement] 代码更新到下载的zip文件中包含的版本。
@@ -39,7 +62,7 @@ source-git-commit: 1b7c29c0637432a320b2a7573a3f5a7fb4cdcb81
 
 ```js
 s.AudienceManagement.setup({ 
-     "partner":"partner name", 
+     "partner":"INSERT-YOUR-PARTNER-NAME-HERE", 
      "containerNSID":0, 
      "uuidCookie": { 
           "name":"aam_uuid", 
@@ -71,8 +94,8 @@ s.AudienceManagement.setup({
 在您 [!DNL Analytics] 拥有以下各项后，您的实施会将数据发送到Audience Manager:
 
 * 启 [!UICONTROL Server-Side Forwarding] 用（与顾问讨论此功能）;
-* 实施了ID服务；
-* 已安装 [!UICONTROL Audience Management Module]。
+* 实施了Experience Cloud ID服务；
+* 按照本教程中的实施步骤操作。
 
 此过程将数据发送到 [!DNL Audience Manager]:
 
