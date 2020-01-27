@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 实施受众管理模块
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 translation-type: tm+mt
-source-git-commit: dddc67e80e2b8c2e5e3ec76912a030e52d2206f5
+source-git-commit: 7e8ba292f2f901b1323d30d682066b49df885a0c
 
 ---
 
@@ -19,10 +19,6 @@ source-git-commit: dddc67e80e2b8c2e5e3ec76912a030e52d2206f5
 >[!TIP]
 >
 >我们建议您使 [!UICONTROL Adobe Launch] 用将数据转 [!UICONTROL Analytics] 发到Audience Manager中。 使用 [!UICONTROL Launch]时，您不必手动将代码复制到 [!UICONTROL AppMeasurement]中，如本页所示。
-
->[!NOTE]
->
->本页中的说明涉及使用 [Adobe Digital Tag Manager(DTM)](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) 或任何其他标签管理解决方案( *Adobe Launch除外)的* 实 [施](https://docs.adobe.com/content/help/en/launch/using/overview.html)。 我们建议您使用Adobe Launch。 使用 [!DNL Launch]时，您不必手动将代码复制到 [!UICONTROL AppMeasurement]中，如本页所示。
 
 ## 先决条件 {#prereqs}
 
