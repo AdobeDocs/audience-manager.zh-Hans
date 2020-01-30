@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 元数据文件的交付方法
 uuid: 5199ee9b-920d-423d-8070-05a017ecd562
 translation-type: tm+mt
-source-git-commit: de51f27cac0d165d043e90db978a6949d6a43761
+source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
 
 ---
 
@@ -14,6 +14,10 @@ source-git-commit: de51f27cac0d165d043e90db978a6949d6a43761
 # 元数据文件的交付方法{#delivery-methods-for-metadata-files}
 
 通过将元数据文件发送到Audience manager帐户的特殊目 [!DNL Amazon S3] 录来发送或更新它们。 有关交付／目录路径、文件处理时间和更新的信息，请参阅本节。
+
+>[!IMPORTANT]
+>
+> 请联系Audience manager顾问或客户关怀，开始为元数据文件 [!DNL Amazon S3] 设置目录。
 
 ## 交付路径语法和示例 {#syntax}
 
