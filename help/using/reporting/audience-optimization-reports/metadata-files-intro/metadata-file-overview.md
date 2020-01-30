@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 元数据文件的概述和映射
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 13882a8f9300344e1bb0a3079666a67166945a83
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 概述 {#overview}
 
-对元数据及其使用方式的审查。 元数据文件必须附有数据文件。 元数据文件内容将数据文件信息与报告菜单中相关的、可读标签相匹配。 有关详细信息，请参 [阅受众优化报告的数据文件](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)。
+对元数据及其使用方式的审查。 元数据文件必须附有数据文件。 元数据文件内容将数据文件信息与报告菜单中相关的、可读标签相匹配。 有关详细信息，请参 [阅受众优化报告的数据文件和可操作的日志文件](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)。
 
 ### 元数据文件包含有关其他数据的数据
 
