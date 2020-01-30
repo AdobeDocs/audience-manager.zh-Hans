@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Audience Manager User Guide
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 8999d056068e5b17f73ef53927279255a6949cbd
+source-git-commit: 17c994d9bb818b72f23e336f9433495c2bcdbbb5
 
 ---
 
@@ -37,6 +37,7 @@ source-git-commit: 8999d056068e5b17f73ef53927279255a6949cbd
       + [编辑帐户设置](features/administration/edit-account-settings.md)
       + [IP 地址模糊处理](features/administration/ip-obfuscation.md)
       + [使用限制](features/administration/usage-limits.md)
+      + [活动使用情况报告](features/administration/activity-usage-reporting.md)
    + 算法模型{#algorithmic-models}
       + [算法模型](features/algorithmic-models/understanding-models.md)
       + [创建算法模型](features/algorithmic-models/create-model.md)
@@ -98,6 +99,7 @@ source-git-commit: 8999d056068e5b17f73ef53927279255a6949cbd
          + [可共享的受众](/help/using/features/destinations/people-based-destinations-reporting.md)
       + 基于设备的目标（服务器到服务器） {#device-based}
          + [添加新的基于设备的目标](features/destinations/add-device-based-destinations.md)
+         + [基于Audience Manager设备的目标列表](/help/using/features/destinations/device-based-destinations-list.md)
          + [为服务器到服务器目标添加或编辑区段](features/destinations/add-edit-segments.md)
          + [将Twitter定制受众配置为基于设备的自助服务目标](features/destinations/twitter-tailored-audiences.md)
       + 自定义目标 {#custom-destinations}
@@ -371,6 +373,7 @@ source-git-commit: 8999d056068e5b17f73ef53927279255a6949cbd
    + [API常见问题解答](faq/faq-api.md)
    + [Audience Lab常见问题解答](faq/faq-audience-lab.md)
    + [客户数据馈送常见问题解答](faq/faq-cdf.md)
+   + [客户关怀——最常报告的问题](/help/using/faq/faq-top-customer-care-issues.md)
    + [数据收集和产品集成常见问题解答](faq/faq-data-collection.md)
    + [入站客户数据摄取常见问题解答](faq/faq-inbound-data-ingestion.md)
    + [隐私和数据保留常见问题解答](faq/faq-privacy.md)
@@ -383,6 +386,11 @@ source-git-commit: 8999d056068e5b17f73ef53927279255a6949cbd
    + [概述](/help/using/help-legal/help-legal-overview.md)
    + [如果遇到问题](/help/using/help-legal/help-problem.md)
    + [联系和法律信息](/help/using/help-legal/help-legal-contact.md)
++ 主要客户支持问题{#top-support-issues}
+   + [概述](/help/using/support-issues/support-issues-overview.md)
+   + [为什么我的Onhocted特质群体在10月15日前后降至0? ](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
+   + [为什么我的特征或区段不显示在“重叠报告”页面中？](/help/using/support-issues/why-do-my-traits-or-segments-not-show-up-in-the-overlap-reports.md)
+   + [为什么我们的只读用户能够创建、编辑或删除特征和区段？](/help/using/support-issues/aam-read-only-users-create-delete-traits-segments.md)
 + 文档更新{#documentation-updates}
    + [2020文档更新](docs-updates/docs-2020.md)
    + [2019文档更新](docs-updates/docs-2019.md)
