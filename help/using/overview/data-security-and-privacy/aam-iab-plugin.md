@@ -5,7 +5,7 @@ seo-title: 适用于 IAB TCF 的 Audience Manager 插件
 solution: Audience Manager
 title: 适用于 IAB TCF 的 Audience Manager 插件
 translation-type: tm+mt
-source-git-commit: 25ca7a44e9b4a67ec025d63da1395fc30789597c
+source-git-commit: 1a7f207b593ea783e20a0398bb0d543628253049
 
 ---
 
@@ -129,7 +129,7 @@ http://yourcompany.demdex.net/event?d_event=imp&gdpr=1&gdpr_consent=consentstrin
 
 ## 支持IAB TCF的激活合作伙伴 {#aam-activation-partners}
 
-适用于IAB TCF的Audience Manager插件允许您将IAB TCF同意字符串转发给激活合作伙伴，同时尊重用户的隐私选择。 有关哪些激活合作伙伴支持IAB TCF的信息，请参阅我们的 **[Partner excel表](/help/using/overview/data-security-and-privacy/assets/AAM-Partners-December2019.xlsx)**。
+适用于IAB TCF的Audience Manager插件允许您将IAB TCF同意字符串转发给激活合作伙伴，同时尊重用户的隐私选择。 有关哪些激活合作伙伴支持IAB TCF的信息，请参阅我们 [的基于设备的目标列表](/help/using/features/destinations/device-based-destinations-list.md)。
 
 ## 测试IAB实施 {#test-iab-implementation}
 
