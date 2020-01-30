@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 通过像素调用捕获营销活动点击数据
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 8d31bc79fd221cffd33969278eade93a4b32a4d5
+source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
 
 ---
 
@@ -14,6 +14,14 @@ source-git-commit: 8d31bc79fd221cffd33969278eade93a4b32a4d5
 # Capturing Campaign Click Data via Pixel Calls {#capturing-campaign-click-data-via-pixel-calls}
 
 点击跟踪可衡量整个营销活动中的访客参与度，因为它记录了第三方创意人员的基于点击的活动。 与印象收集类似，事件调用会发送到Audience manager数据收集服务器([!UICONTROL DCS])以进行处理。 然后，访客会被重定向到预期的Web地址。
+
+>[!IMPORTANT]
+>
+>要使Audience manager正确解释其在事件调用中接收的字段，并在“ [Audience Optimization”报告中呈现您的营销活动数据](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)，您必须发送将这些字段映射到可读值的元数据文件。 请参 [阅元数据文件的概述和映射](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，并联系Audience manager顾问或客户关怀，为元数据文件设置Amazon S3目录。
+
+>[!NOTE]
+>
+>请与Adobe Audience Manager咨询或客户潜在客户联系，获取特定于客户域的确切URL。
 
 ## 要求
 
@@ -36,7 +44,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 根据上述示例，浏览器将被重定向到以下位置 [!DNL URL]:
 
-[!DNL `https://adobe.com/callback?creative=123`]
+`https://adobe.com/callback?creative=123`
 
 ## 支持的宏
 
@@ -85,7 +93,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
    <td colname="col1"> <p> <code> d_dpuuid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_dpuuid%</code> </p> </td> 
    <td colname="col2"> <p>数据提供者提供的唯一用户ID。 </p> <p>通常与一起 <code> d_dpid</code> 使用，将用户ID链接到数据提供者ID。 </p> </td> 
-  </tr> 
+  </tr>
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
@@ -157,7 +165,7 @@ d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creativ
 
 根据上述示例，浏览器将被重定向到以下位置 [!DNL URL]:
 
-[!DNL `https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`]
+`https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`
 
 >[!MORELIKETHIS]
 >
