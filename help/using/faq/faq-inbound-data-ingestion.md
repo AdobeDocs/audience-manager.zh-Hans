@@ -1,13 +1,13 @@
 ---
 description: 有关将离线数据导入Audience manager的常见问题解答。
-keywords: ftp或s3;s3或ftp
+keywords: ftp or s3;s3 or ftp
 seo-description: 有关将离线数据导入Audience manager的常见问题解答。
 seo-title: 入站客户数据摄取常见问题解答
 solution: Audience Manager
 title: 入站客户数据摄取常见问题解答
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 22336b052af1c438136e4a6cfd6ad88393503f16
 
 ---
 
@@ -66,63 +66,71 @@ Removed the Data Translation File bullet from the list above.
 
 **我能否先上传入站数据文件（[!DNL .sync]或[!DNL .overwrite]文件），然后再将[!DNL Audience Manager]代码部署到生产中？**
 
-* 如果将数据提供者配置为使用配置文件链 [接进行跨设备定位](../features/profile-merge-rules/merge-rules-overview.md) ，则ID同步标识到匹配的访客ID后不久便可用于定位的数 [!DNL Audience Manager] 据。
+能。只要您使用跨设备数据源存储您上传的CRM数据，Audience manager就始终会存储这些数据。 事实上，在Audience manager于2019年10月启动的Profile Merge Rules增强功能（允许仅脱机使用案例）之后，您无需将Audience manager代码部署到生产中即可上传数据并对数据执行操作。 请参阅：
 
-* 如果数据提供者未配置为使用该功 [!UICONTROL Profile Link] 能， [!DNL Audience Manager] 则仅处理入站数据文件中访客ID的数据，这些数据之前已同步／匹配回访客 [!DNL Audience Manager] ID。
+* [配置文件合并规则增强概述](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
+* 基于人员的目标- [基于仅线下数据的个性化](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
 
-请考虑以下未配置数据提供者使用的用例 [!UICONTROL Profile Merge]:
+<!---
+* If the data provider is configured to use [Profile Link](../features/profile-merge-rules/merge-rules-overview.md) for cross-device targeting, the data available for targeting shortly after an ID sync identifies to the matching [!DNL Audience Manager] visitor ID.
+
+* If the data provider is not configured to use the [!UICONTROL Profile Link] feature, [!DNL Audience Manager] processes only the data for visitor IDs in the inbound data file that have been previously synced/matched back to an [!DNL Audience Manager] visitor ID.
+
+Consider the following use cases in which the data provider is not configured to use [!UICONTROL Profile Merge]:
 
 <table id="table_1A367ED6D016428FB21B3F3BC261BA98"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 用例 </th> 
-   <th colname="col2" class="entry"> 描述 </th> 
+   <th colname="col1" class="entry"> Use Case </th> 
+   <th colname="col2" class="entry"> Description </th> 
   </tr>
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>用例 1</b> </p> </td> 
-   <td colname="col2"> <p>星期一，在CRM数据库中标识为访客ABC的访客登录，这将启动客户端ID同步。 <span class="keyword"> Audience Manager存储访客ABC到</span> Audience Manager访客 <span class="keyword"></span> 123的映射。 </p> <p>星期二，CRM数据库将一个数据文件(<span class="filepath"> .sync</span>)传输到Audience Manager服 <span class="keyword"> 务 </span>器，并记录如下： </p> <p> 
+   <td colname="col1"> <p><b>Case 1</b> </p> </td> 
+   <td colname="col2"> <p>On Monday, a visitor identified in the CRM database as visitor ABC logs in, which initiates a client-side ID sync. <span class="keyword"> Audience Manager</span> stores the mapping of visitor ABC to <span class="keyword"> Audience Manager</span> visitor 123. </p> <p>On Tuesday, the CRM database transfers a data file (<span class="filepath"> .sync</span>) to the <span class="keyword"> Audience Manager </span>server with the following record: </p> <p> 
      <ul class="simplelist"> 
       <li><code> ABC "gender"="male","luxury_shopper"="yes"</code> </li> 
-     </ul> </p> <p>在这种情况下， <span class="keyword"> Audience Manager</span>: </p> <p> 
+     </ul> </p> <p>In this case, <span class="keyword"> Audience Manager</span>: </p> <p> 
      <ul id="ul_7616432BF9874E7D94F3101C71F73C81"> 
-      <li id="li_DC4F5E63D8134A29B703BDF264F02F65">通过存储的ID同步映射识别访客ABC。 </li> 
-      <li id="li_62E085FC184D41C3863B1CE832F77946"> 将特征与访 <code> male</code> 客123 <code> luxury_shopper</code> 个人资料相关联。 </li> 
+      <li id="li_DC4F5E63D8134A29B703BDF264F02F65">Recognizes visitor ABC from the stored ID sync mapping. </li> 
+      <li id="li_62E085FC184D41C3863B1CE832F77946"> Associates the traits <code> male</code> and <code> luxury_shopper</code> with the visitor 123 profile. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>用例 2</b> </p> </td> 
-   <td colname="col2"> <p>星期一，CRM数据库将数据文件(<span class="filepath"> .sync</span>)推送到 <span class="keyword"> Audience Manager</span> Server，并记录如下： </p> <p> 
+   <td colname="col1"> <p><b>Case 2</b> </p> </td> 
+   <td colname="col2"> <p>On Monday, the CRM database pushes a data file (<span class="filepath"> .sync</span>) to the <span class="keyword"> Audience Manager</span> server with the following record: </p> <p> 
      <ul class="simplelist"> 
       <li><code> DEF "gender"="female","wine_enthusiast"="yes"</code> </li> 
-     </ul> </p> <p> <span class="keyword"> Audience Manager没有此访客（或关联的访客ID）的记录，因此不会处理此记录。</span> </p> <p>星期二，访客DEF登录。 此操作将启动该访客的第一个客户端ID同步。 此操作将访客DEF映射到 <span class="keyword"> Audience Manager</span> ID 456。 但是，此访客没有与其个人资料关联的CRM数据。 因此， <span class="keyword"> Audience Manager</span> 不会返回并重新处理旧文件。 </p> <p>星期三，CRM数据库将另一个数据文件推送到 <span class="keyword"> Audience Manager</span> Server，并且记录如下： </p> <p> 
+     </ul> </p> <p> <span class="keyword"> Audience Manager</span> does not have a record of this visitor (or an associated visitor ID) so this record is not processed. </p> <p>On Tuesday, visitor DEF logs in. This action initiates the first client-side ID sync for that visitor. This action maps visitor DEF to <span class="keyword"> Audience Manager</span> ID 456. However, this visitor does not have CRM data associated with their profile. As a result, <span class="keyword"> Audience Manager</span> does not go back and reprocess old files. </p> <p>On Wednesday, the CRM database pushes another data file to the <span class="keyword"> Audience Manager</span> server with the following record: </p> <p> 
      <ul class="simplelist"> 
       <li><code> DEF "gender"="female","wine_enthusiast"="yes","dma"="paris"</code> </li> 
-     </ul> </p> <p>在这种情况下， <span class="keyword"> Audience Manager</span>: </p> 
+     </ul> </p> <p>In this case, <span class="keyword"> Audience Manager</span>: </p> 
     <ul id="ul_E853DA091D9042DAB19774383841D3A3"> 
-     <li id="li_64D64A16E99E492BAAE1080867F854A9">从存储的ID同步映射识别访客DEF。 </li> 
-     <li id="li_9CEE7A7B1A954FF6AEEBF8844074CFBB">将特征、 <code> female</code>和 <code> paris</code>与 <code> wine_enthusiast</code> visitor 456配置文件关联。 </li> 
+     <li id="li_64D64A16E99E492BAAE1080867F854A9">Recognizes visitor DEF from the stored ID sync mapping. </li> 
+     <li id="li_9CEE7A7B1A954FF6AEEBF8844074CFBB">Associates the traits <code> female</code>, <code> paris</code>, and <code> wine_enthusiast</code> with the visitor 456 profile. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>案例3</b> </p> </td> 
-   <td colname="col2"> <p>星期一， <span class="keyword"> Audience Manager</span> Server收到两个文件，其中包含以下记录： </p> <p> <code> .sync</code> 文件包含： </p> <p> 
+   <td colname="col1"> <p><b>Case 3</b> </p> </td> 
+   <td colname="col2"> <p>On Monday, the <span class="keyword"> Audience Manager</span> server receives two files with the following records: </p> <p> <code> .sync</code> file containing: </p> <p> 
      <ul class="simplelist"> 
       <li><code> GHI 123456789</code> </li> 
-     </ul> </p> <p> <code> .overwrite</code> 文件包含： </p> 
+     </ul> </p> <p> <code> .overwrite</code> file containing: </p> 
     <ul id="ul_084AE448C60447ACA9B1E0C30EAA3E3E"> 
      <li id="li_C68B7BBFE7CA4D22B606D939E32FF4FB"><code> GHI "gender"="male" "wine_enthusiast"="no"</code> </li> 
      <li id="li_FDBCAAFBD606477E8690EA80AD455A81"><code> JKL "gender"="female" "wine_enthusiast"="yes"</code> </li> 
-    </ul> <p><span class="keyword"> Audience Manager保留访客JKL到ID 789的映射记录，该记录从以前的ID同步开始。</span> </p> <p>在这种情况下， <span class="keyword"> Audience Manager</span>: </p> 
+    </ul> <p><span class="keyword"> Audience Manager</span> holds a mapped record of visitor JKL to ID 789, from a previous ID sync. </p> <p>In this case, <span class="keyword"> Audience Manager</span>: </p> 
     <ul id="ul_4D083CEA7F1B4F6BBBBB841C21293751"> 
-     <li id="li_6DABD380311D49738DAD98F5E6DE45B8">从存储的ID同步映射识别访客JKL。 </li> 
-     <li id="li_CCEF77240E5C4A03AAE347440D73F0BB">将特征和 <code> female</code> 访 <code> wine_enthusiast</code> 客ID 789的配置文件关联。 </li> 
-     <li id="li_273F8FD7C6214488A26AAFFA6DE043E5">忽略访客GHI的特征关联，因为其ID仅在当前批次中同步。 要将特征与访客GHI关联，您需要在将来的文件中包含这 <code> .overwrite</code> 些特征。 </li> 
+     <li id="li_6DABD380311D49738DAD98F5E6DE45B8">Recognizes visitor JKL from the stored ID sync mapping. </li> 
+     <li id="li_CCEF77240E5C4A03AAE347440D73F0BB">Associates the traits <code> female</code> and <code> wine_enthusiast</code> with visitor ID 789's profile. </li> 
+     <li id="li_273F8FD7C6214488A26AAFFA6DE043E5">Ignores the trait association for visitor GHI, since its ID was only synced in the current batch. To associate traits with visitor GHI, you need to include them in future <code> .overwrite</code> files. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
+
+-->
 
 <br> 
 
@@ -266,7 +274,7 @@ FTP文件在处理后即被删除。 [!DNL S3] 文件将在30天后删除。 由
 
 **我需要同时上传多个文件。 文件是否将同时处理？**
 
-看情况。 [!DNL Audience Manager] 从队列中最多读取119000个条目， [!DNL Amazon SQS] 并将它们分成多达3个批。 只有在同一批处理您的文件时，才会同时处理这些文件。 但是，由于每天摄取的数据量很大， [!DNL Audience Manager] 无法保证任何文件处理顺序。
+看情况。 [!DNL Audience Manager] 从队列中最多读取119000个条目， [!DNL Amazon SQS] 并将它们分成多达3个批。 只有当文件以同一批处理结束时，才会同时处理它们。 但是，由于每天摄取的数据量很大， [!DNL Audience Manager] 无法保证任何文件处理顺序。
 
 >[!MORELIKETHIS]
 >
