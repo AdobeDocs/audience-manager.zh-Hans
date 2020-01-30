@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 受众优化报告的数据文件和可操作的日志文件
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 translation-type: tm+mt
-source-git-commit: 342a511b414ac682d8eb3c6547d725431d8828d6
+source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
 
 ---
 
@@ -127,7 +127,7 @@ source-git-commit: 342a511b414ac682d8eb3c6547d725431d8828d6
     <ul id="ul_DA8230D167F241F2B53F29367874D4B1"> 
      <li id="li_2BC2EBCAE12541029A5F62AC0785E7FE"> <code> 0</code>: 展示次数 </li> 
      <li id="li_2A4B1354891144D587624228D8FB5E77"> <code> 1</code>: 单击 </li> 
-     <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>: 未归属或未知 </li> 
+     <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>:未归属或未知 </li> 
     </ul> <p> <i>仅适用于转换数据文件。</i> </p> </td> 
   </tr> 
   <tr> 
@@ -141,9 +141,13 @@ source-git-commit: 342a511b414ac682d8eb3c6547d725431d8828d6
 
 将您的印象、单击或转换数据文件上传到您帐户的Amazon S3目 [!DNL Audience Manager] 录。 有关交付／目录路径、文件处理时间和更新的信息，请参阅本节。
 
+>[!IMPORTANT]
+>
+> 请联系Audience Manager顾问或客户关怀，开始为您的数据文 [!DNL Amazon S3] 件设置目录。
+
 **交付路径语法和示例**
 
-数据存储在Amazon S3目录中每个客户的单独命名空间中。 文件路径遵循下面显示的语法。 Note, *italics* indicates a variable placeholder. 其他元素是常量或键，不会更改。
+数据存储在目录中每个客户的单独命名空间 [!DNL Amazon S3] 中。 文件路径遵循下面显示的语法。 Note, *italics* indicates a variable placeholder. 其他元素是常量或键，不会更改。
 
 **语法：** <pre>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>file type</i>_<i>yyymmdd</i></code></pre>
 
