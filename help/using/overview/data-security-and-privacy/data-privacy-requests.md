@@ -7,7 +7,7 @@ keywords: GDPR UI, GDPR API, CCPA, privacy
 title: 数据隐私请求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: ff4bf70c9012f99289ea82824a552db97430fbf2
+source-git-commit: 1a7f207b593ea783e20a0398bb0d543628253049
 
 ---
 
@@ -25,9 +25,9 @@ source-git-commit: ff4bf70c9012f99289ea82824a552db97430fbf2
 您可以通过两种方式提交个人请求以从Audience manager访问和删除消费者数据：
 
 * 通过隐 [私服务UI](https://gdprui.cloud.adobe.io/)。 请参阅此处 [的文档](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)。
-* 通过 **[!DNL Privacy Service API]**。 请参阅此处 [的文档](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md) ，以及此处的API [参考](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)。
+* 通过 **[!DNL Privacy Service API]**。 请参阅此处[的文档](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)，以及此处的API[参考](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)。
 
-在发送单个数据隐私请求时，您可以提交任何Audience Manager标识符(ID)，如 **[Audience Manager标识符部分中所述](data-privacy-ids.md)** ，以及它们各自的命名空间ID（数据源ID）。
+在发送单个数据隐私请求时，您可以提交任何Audience Manager标识符(ID)，如 **[Audience Manager标识符部分中所述](data-privacy-ids.md)**，以及它们各自的命名空间ID（数据源ID）。
 
 隐 [私服务支持](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) 两种类型的请求：数据访问和数据删除请求。
 
@@ -165,12 +165,12 @@ Audience manager支持关于退出管理的行业标准。 阅读以了解有关
 
 但是，我们的一些激活合作伙伴：
 
-1. 无法支持Audience Manager和／或Audience Manager的取消细分请求
+1. 无法支持从Audience manager和／或
 2. 无法在30天内更频繁地从Audience manager接收更新。
 
 在这些情况下，您无法通过Audience manager以自动方式向激活合作伙伴发送删除请求。
 
-下载我们 [的Partner excel表](assets/AAM-Partners-December2019.xlsx) ，了解哪些Audience manager激活合作伙伴支持取消细分。
+请查阅基 [于设备的目标列表](/help/using/features/destinations/device-based-destinations-list.md) ，了解哪些Audience manager激活合作伙伴支持取消细分。
 
 ## 数据更正请求 {#correction}
 
