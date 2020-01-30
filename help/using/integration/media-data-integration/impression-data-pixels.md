@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 通过像素调用捕获营销活动展示数据
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
+source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
 
 ---
 
@@ -16,6 +16,10 @@ source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
 将媒体数据发送到Audience manager的一种方法是使用广告服务器宏将营销活动属性发送到Audience Manager。
 
 这种方法通常被称为“将创意像素化”。 这些数据点通过第三方和服务器宏动态插入像素代码中，这些宏用于根据营销活动的关键报告属性映射和报告所有印象和点击。 [!DNL Audience Manager] 汇总的数据提供营销活动效果的统一视图，帮助识别自定义转化路径，并帮助客户改进导致转化的广告服务器事件的顺序。
+
+>[!IMPORTANT]
+>
+>要使Audience manager正确解释其在事件调用中接收的字段，并在“ [Audience Optimization”报告中呈现您的营销活动数据](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)，您必须发送将这些字段映射到可读值的元数据文件。 请参 [阅元数据文件的概述和映射](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，并联系Audience manager顾问或客户关怀，为元数据文件设置Amazon S3目录。
 
 ## 事件调用语法
 
@@ -51,7 +55,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_adsrc </code> </td> 
-   <td colname="col2"> <p>广告商的数据源ID或集成代码。 </p> <p>受众优化 <span class="wintitle"> 报告所 </span> 需。 </p> </td> 
+   <td colname="col2"> <p>广告商的数据源ID或集成代码。 </p> <p>受众优化 <span class="wintitle"> 报告所 </span> 需。 </p> <p>可选。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_bu </code> </td> 
