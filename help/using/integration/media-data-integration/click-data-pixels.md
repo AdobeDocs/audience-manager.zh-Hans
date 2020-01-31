@@ -6,18 +6,14 @@ solution: Audience Manager
 title: 通过像素调用捕获营销活动点击数据
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
+source-git-commit: 132e36175a69a270ea608643049931fbc06efc69
 
 ---
 
 
 # Capturing Campaign Click Data via Pixel Calls {#capturing-campaign-click-data-via-pixel-calls}
 
-点击跟踪可衡量整个营销活动中的访客参与度，因为它记录了第三方创意人员的基于点击的活动。 与印象收集类似，事件调用会发送到Audience manager数据收集服务器([!UICONTROL DCS])以进行处理。 然后，访客会被重定向到预期的Web地址。
-
->[!IMPORTANT]
->
->要使Audience manager正确解释其在事件调用中接收的字段，并在“ [Audience Optimization”报告中呈现您的营销活动数据](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)，您必须发送将这些字段映射到可读值的元数据文件。 请参 [阅元数据文件的概述和映射](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，并联系Audience manager顾问或客户关怀，为元数据文件设置Amazon S3目录。
+点击跟踪可衡量整个营销活动中的访客参与度，因为它记录了第三方创意人员的基于点击的活动。 与展示 [集合类似](/help/using/integration/media-data-integration/impression-data-pixels.md)，事件调用会发送到Audience manager数据收集服务器([!UICONTROL DCS])以进行处理。 然后，访客会被重定向到预期的Web地址。
 
 >[!NOTE]
 >
@@ -166,6 +162,11 @@ d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creativ
 根据上述示例，浏览器将被重定向到以下位置 [!DNL URL]:
 
 `https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`
+
+## 其他功能——受众优化报告
+
+您可以使用像素调用来支持受众 [优化报告](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [希望使用像素来为报表提供动力](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，请参阅元数据文件的概述和映射。
+
 
 >[!MORELIKETHIS]
 >
