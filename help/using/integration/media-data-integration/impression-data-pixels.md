@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 通过像素调用捕获营销活动展示数据
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
+source-git-commit: 132e36175a69a270ea608643049931fbc06efc69
 
 ---
 
@@ -16,10 +16,6 @@ source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
 将媒体数据发送到Audience manager的一种方法是使用广告服务器宏将营销活动属性发送到Audience Manager。
 
 这种方法通常被称为“将创意像素化”。 这些数据点通过第三方和服务器宏动态插入像素代码中，这些宏用于根据营销活动的关键报告属性映射和报告所有印象和点击。 [!DNL Audience Manager] 汇总的数据提供营销活动效果的统一视图，帮助识别自定义转化路径，并帮助客户改进导致转化的广告服务器事件的顺序。
-
->[!IMPORTANT]
->
->要使Audience manager正确解释其在事件调用中接收的字段，并在“ [Audience Optimization”报告中呈现您的营销活动数据](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)，您必须发送将这些字段映射到可读值的元数据文件。 请参 [阅元数据文件的概述和映射](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，并联系Audience manager顾问或客户关怀，为元数据文件设置Amazon S3目录。
 
 ## 事件调用语法
 
@@ -111,6 +107,10 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
 >[!NOTE]
 >
 >请与Adobe Audience Manager咨询或客户潜在客户联系，获取特定于客户域的确切URL。
+
+## 其他功能——受众优化报告
+
+您可以使用像素调用来支持受众 [优化报告](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [希望使用像素来为报表提供动力](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，请参阅元数据文件的概述和映射。
 
 >[!MORELIKETHIS]
 >
