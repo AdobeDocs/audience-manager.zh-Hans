@@ -4,9 +4,9 @@ seo-description: 本文介绍如何在Audience manager和Adobe Experience Platfo
 seo-title: Audience manager与Adobe Experience Platform之间的受众共享
 solution: Audience Manager
 title: Audience manager与Adobe Experience Platform之间的受众共享
-keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing
+keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 translation-type: tm+mt
-source-git-commit: e27ce2f607cadd7318a171359a5ae4daa071c486
+source-git-commit: 08e0a97faa74b97bf42d5729b76ea2caa14193da
 
 ---
 
@@ -28,7 +28,7 @@ Audience manager和Adobe Experience Platform之间的受众共享功能允许您
 在Audience Manager中，您可以将Experience platform细分用于数据管理平台使用案例，例如：
 * 将第 [三方数据添加](/help/using/overview/data-types-collected.md#third-party-data) 到您的细分；
 * [算法建模](/help/using/features/algorithmic-models/understanding-models.md);
-* 将区段激活到Experience platform当前不支持的目标。
+* 将区段激活到Experience Platform目标目录中尚不支持的目 [标](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/destinations-catalog.html)。
 
 此外，您的Experience platform细分会通过核心服务共享到其他Experience cloud解 [决方案](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html)。
 
@@ -47,7 +47,7 @@ Audience manager和Adobe Experience Platform之间的受众共享功能允许您
 您的Audience Manager特征和区段在Experience Platform中显示为区段 **工作流** 中的“受众”。 有关Audience Manager细分和Experience Platform中特征的详细信息，请参阅：
 
 * [分段服务概述](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segmentation.md)
-* [Experience Platform Segment Builder用户指南](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segment-builder-guide.md)
+* [Experience Platform Segment Builder用户指南](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segment-builder-guide.md)
 
 <br> 
 
