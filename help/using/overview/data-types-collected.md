@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 收集的数据类型
 uuid: a2ddf470-32e6-41ec-a1d7-a6232ef084b9
 translation-type: tm+mt
-source-git-commit: f44b765836bf744f566ae51bdf3eaa1b87d8a90c
+source-git-commit: cee17904aa5ece54d1df7ad482505515846349b5
 
 ---
 
@@ -88,5 +88,4 @@ Audience manager根据其可用的API和数据集与其他数据提供商集成�
 
 许多客户选择与第三方数据匹配合作伙伴合作。 这些实体与具有注册要求的站点有关系，并可以根据其注册网络（实时）对客户数据文件进行匹配处理。
 
-![](assets/data_provider_match_700px.png)
-
+![数据提供者匹配](assets/data-provider-match.png)
