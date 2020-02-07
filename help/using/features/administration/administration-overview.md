@@ -1,6 +1,6 @@
 ---
 description: 通过“管理”菜单下的选项，可以创建Audience manager用户并将其分配给用户组。 您还可以查看限制（特征、区段、目标和模型）。
-keywords: 基于角色；基于角色；基于角色的访问控制
+keywords: rbac;RBAC;role based;role-based;role-based access controls
 seo-description: 通过“管理”菜单下的选项，可以创建Audience manager用户并将其分配给用户组。 您还可以查看限制（特征、区段、目标和模型）。
 seo-title: 管理
 solution: Audience Manager
@@ -8,7 +8,7 @@ title: 管理
 topic: DIL API
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
 translation-type: tm+mt
-source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
+source-git-commit: 1bde60711ca53682b6ab936a7297daf66a1bb336
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
 
 在中创建用 [!DNL Audience Manager] 户并指定用户详细信息、登录状态和将用户分配到用户组。
 
-1. Click **[!UICONTROL Administration]** &gt; **[!UICONTROL Users]**.
+1. 单击 **[!UICONTROL Administration]** > **[!UICONTROL Users]**.
 1. 单 ![](assets/icon_add.png) 击以显示 [!UICONTROL Create New User] 页面。
 1. Under **[!UICONTROL User Details]**, fill in the fields:
    * **** 用户名：为Audience Manager指定唯一的用户名。
@@ -56,7 +56,7 @@ source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
 
 要创建用户组，请执行以下操作：
 
-1. Click **[!UICONTROL Administration]** &gt; **[!UICONTROL Groups]**.
+1. 单击 **[!UICONTROL Administration]** > **[!UICONTROL Groups]**.
 1. 单 ![](assets/icon_add.png) 击以打开页 [!UICONTROL Group Settings] 面。
 1. 在 [!UICONTROL Group Details]:
    * 命名用户组。
@@ -134,3 +134,21 @@ source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
 **信号**
 
 * `VIEW_ALL_SIGNALS` -用户可以查看在数据浏览器中捕获的 [所有信号](/help/using/features/data-explorer/data-explorer-overview.md)。
+
+## 用例 {#use-cases}
+
+### 监视用户访问 {#monitoring-user-access}
+
+[!UICONTROL Role-Based Access Control] 可以帮助您监控用户登录状态，从而清楚地了解谁可以访问您的Audience Manager实例。
+
+根据您的业务要求，您可以根据需要启用和禁用用户帐户。
+
+![监视用户访问](assets/monitor-user-access.png)
+
+### 确保对敏感数据源的访问保护 {#protect-sensitive-data-sources}
+
+您可以为 [!UICONTROL Role-Based Access Control] 每个用户组配置特征、区段和目标级别。
+
+此功能可帮助您管理用户查看、创建、读取、写入和编辑特定数据集的方式，甚至限制用户访问不应对其可用的数据集。
+
+![访问保护](assets/access-protection.png)
