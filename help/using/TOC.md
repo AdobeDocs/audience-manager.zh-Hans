@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Audience Manager User Guide
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 3cda1eb649ee8ae0c522682503fa591e7bff9e35
+source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
 
 ---
 
@@ -366,7 +366,7 @@ source-git-commit: 3cda1eb649ee8ae0c522682503fa591e7bff9e35
       + [了解边缘数据中心](reference/system-components/components-edge.md)
    + [代码和文本元素的样式约定](reference/code-style-elements.md)
    + [Audience manager中的时区](reference/aam-time-zones.md)
-   + [弃用 TLS 1.0](reference/tls-support.md)
+   + [弃用TLS 1.0和1.1](reference/tls-support.md)
    + [了解 Demdex 域调用](reference/demdex-calls.md)
    + [Audience manager中的访客身份验证状态](reference/visitor-authentication-states.md)
 + 常见问题解答{#faqs}
