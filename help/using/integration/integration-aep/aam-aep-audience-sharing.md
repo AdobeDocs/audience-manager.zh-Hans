@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager与Adobe Experience Platform之间的受众共享
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 translation-type: tm+mt
-source-git-commit: 08e0a97faa74b97bf42d5729b76ea2caa14193da
+source-git-commit: a7311c35c70bbfd0aac015524f6e65b0e59415f5
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 08e0a97faa74b97bf42d5729b76ea2caa14193da
 
 Audience manager和Adobe Experience Platform之间的受众共享功能允许您将Audience manager特征和区段共享到Adobe Experience Platform，反之亦然。
 
-您可以使用Experience platform中的Audience manager特征和细分将Audience manager数据添加到客户档案中并从Experience platform细分服务中 [受益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segmentation.md)。
+您可以使用Experience platform中的Audience manager特征和细分将Audience manager数据添加到客户档案中并从Experience platform细分服务中 [受益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)。
 
 在Audience Manager中，您可以将Experience platform细分用于数据管理平台使用案例，例如：
 * 将第 [三方数据添加](/help/using/overview/data-types-collected.md#third-party-data) 到您的细分；
@@ -46,7 +46,7 @@ Audience manager和Adobe Experience Platform之间的受众共享功能允许您
 
 您的Audience Manager特征和区段在Experience Platform中显示为区段 **工作流** 中的“受众”。 有关Audience Manager细分和Experience Platform中特征的详细信息，请参阅：
 
-* [分段服务概述](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segmentation.md)
+* [分段服务概述](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)
 * [Experience Platform Segment Builder用户指南](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segment-builder-guide.md)
 
 <br> 
@@ -74,7 +74,7 @@ Audience manager会在您的特征存储中自动创建一个名 **为Experience
 ---------|----------|---------
 | 1 | 特征类型 | 从Experience Platform区段创建的特征是作为Audience manager中的已载入特征创建的。 |
 | 2 | 数据源 | 自动创建。 从Experience Platform细分自动创建的所有特征和细分都存储在数据源 **Adobe Experience Platform Audience Sharing中**。 |
-| 3 | 集成代码 | 集成代码与Experience Platform中的区段ID相对应。 |
+| 3 | 集成代码 | 集成代码与Experience platform中的区段ID相对应。 |
 | 4 | 特征表达 | 特征表达式为 `segID = segment ID in Experience Platform`。 |
 | 5 | 具有此特征的区段 | 自动创建的段，该段使用此特征作为其合成。 |
 
@@ -92,7 +92,7 @@ Audience manager会在您的区段存储中自动创建一个名为 **Experience
 
 | 项目编号 | 名称 | 描述 |
 ---------|----------|---------
-| 1 | 集成代码 | 集成代码与Experience Platform中的区段ID相对应。 |
+| 1 | 集成代码 | 集成代码与Experience platform中的区段ID相对应。 |
 | 2 | 数据源 | 自动创建。 从Experience Platform细分自动创建的所有特征和细分都存储在数据源 **Adobe Experience Platform Audience Sharing中**。 |
 | 3 | 个人资料合并规则 | **外部合并策略** 表示自动创建的区段遵循在Experience platform中设置的合并策略。 |
 | 4 | 区段规则 | 段由“特征”部分中描述的特 [征组成](#aep-segments-as-aam-traits)。 |
