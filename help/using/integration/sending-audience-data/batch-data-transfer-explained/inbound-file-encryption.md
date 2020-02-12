@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 入站数据类型的文件PGP加密
 uuid: 89caace1-0259-48fc-865b-d525ec7822f7
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 8d2d841f8e94fd67c2165eb280b85ab18001d77e
 
 ---
 
@@ -20,6 +20,8 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 >[!IMPORTANT]
 >
 >我们目前不支持对同一个入站数据文件进行加密和压缩。 您可以选择加密或压 [缩入站](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) 文件。
+>
+> 但是，请记住，PGP加密包括内置压缩。
 
 请按照以下步骤加密入站数据文件。
 
