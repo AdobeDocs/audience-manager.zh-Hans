@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 入站数据传输文件的文件压缩
 uuid: 2a68f69c-60b0-4002-863b-302d2320e356
 translation-type: tm+mt
-source-git-commit: b2e0b560a944f2ad63a48476be647f1355712342
+source-git-commit: 392b17e5a97038169e2cd36f2e71f5b4b997070c
 
 ---
 
@@ -25,7 +25,7 @@ Audience manager还支持未压缩的文件。
 >
 >我们不支持对使用gzip()压缩的入站文件进行加`.gz`密。
 >
-> 要加密和压缩入站文件，请使 [用PGP加密](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。 [!DNL PGP] 加密包括文件压缩。
+>要加密和压缩入站文件，请使 [用PGP加密](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。 [!DNL PGP] 加密包括文件压缩。
 
 ## Amazon S3压缩
 
