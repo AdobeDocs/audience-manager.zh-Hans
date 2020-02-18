@@ -7,14 +7,12 @@ title: 创建、定价和管理数据源
 topic: DIL API
 uuid: e28c20b3-33fc-4485-8ee9-8530d126f741
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 979c853a3be94f1cda57e4f376d0033d6e8a06a5
 
 ---
 
 
 # 创建、定价和管理数据源 {#create-price-and-manage-data-feeds}
-
-数据馈送需要名称、说明、数据源和计划类型。 在保存并激活源之前，源将处于禁用状态。 在 [!UICONTROL Audience Marketplace] &gt;中设置公共或专用数据源 [!UICONTROL My Shared Data]。 仅适用于数据销售者。
 
 ## 创建公共或专用数据源 {#create-public-private-data-feed}
 
@@ -30,7 +28,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 1. 提供简要说明（最多255个字符）。
 
    正确的描述应准确地描述您的源。 例如，您可以包含营销类别、人口统计和地理覆盖范围的文本(例如， [!DNL US] 或北美)。 描述文本是可搜索的，可帮助购买者查找或评估您的源。 良好的描述是吸引订阅者加入数据源的重要部分。
-1. 从选项中选择数据 **[!UICONTROL Data Source]** 源。
+1. 从选项中选择数据 **[!UICONTROL Data Source]** 源。 数据源仅限于单个数据源。 不能将多个数据源分配给同一数据源。
 
    >[!IMPORTANT]
    >
@@ -40,7 +38,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
    源可包含多个计划。 计划可包含多个用例。 有关详细信息，请参 [阅数据馈送的计划类型](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#plan-types)。
 
-1. 单 **[!UICONTROL Save]** 击可节省数据费 *用* 。
+1. 单 **[!UICONTROL Save]** 击以保存数据源， *而不激活* 。
 1. 要保存并激活数据馈送，请执行以下操作：
    1. 将滑块移 **[!UICONTROL Availability]** 动到 **[!UICONTROL Active]**。
    1. 单击 **[!UICONTROL Save]**.
