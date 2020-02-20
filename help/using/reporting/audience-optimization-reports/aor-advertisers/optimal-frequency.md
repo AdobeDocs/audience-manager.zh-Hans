@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 最佳频率报表
 uuid: 50459ce9-39ac-4401-93dd-7526937fc742
 translation-type: tm+mt
-source-git-commit: e27ce2f607cadd7318a171359a5ae4daa071c486
+source-git-commit: e197dda9232b1400737a70add2ae0e44ab5e39d7
 
 ---
 
@@ -25,4 +25,4 @@ source-git-commit: e27ce2f607cadd7318a171359a5ae4daa071c486
 
 ## 示例报告
 
-![最优频率](assets/optimal-frequency.png)
+![最优频率](assets/optimal-frequency1.png)
