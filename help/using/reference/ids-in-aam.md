@@ -22,7 +22,7 @@ Audience manager使用多个ID来识别和管理您向其发送的数据。 有�
 
 虽然您可以通过这些ID的独立名称来引用其中的大多数ID，但在通过DCS调用传入数据时，这些ID中的大多数应与各种前缀一起使用。 Audience manager使用了其中的一些ID，但并未向用户公开，而其他ID也会显示在用户界面(UI)中。
 
-要了解以下示例中使用的前缀，请参阅DCS API [调用的支持属性](../api/dcs-intro/dcs-api-reference/dcs-keys.md)
+要了解以下示例中使用的前缀，请参阅DCS API [调用的支持属性](../api/dcs-intro/dcs-api-reference/dcs-keys.md)。
 
 ## Audience Manager ID列表 {#id-list}
 
