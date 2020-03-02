@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 区段生成器中的特征和区段填充数据
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 2add6b77e167203dab66b5fa7b87b7c5fbeb3d48
 
 ---
 
@@ -136,11 +136,11 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> 实时人口（现有）</span> </p> </td> 
-   <td colname="col2"> <p>实时查看的设备的实际数量与当前配置文件（与通过设备图连接的多达3个其他设备配置文件合并后）包含 <span class="keyword"> Audience Manager查看区段时符合条件的特征</span>。 </p> </td>
+   <td colname="col2"> <p>实时查看的设备实际数量与当前配置文件相同，当当前配置文件与通过设备图形连接的多达100个其他设备配置文件合并时，这些配置文件包含 <span class="keyword"> Audience Manager查看区段时符合的特征</span>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> 总人口（现有）</span> </p> </td> 
-   <td colname="col2"> <p>配置文件与设备图形连接的多达3个其他设备配置文件合并后，所有设备均符合此区段的条件。 </p> </td>
+   <td colname="col2"> <p>配置文件与设备图形连接的多达100个其他设备配置文件合并后，所有设备均符合此区段的条件。 </p> </td>
   </tr>
  </tbody>
 </table>
