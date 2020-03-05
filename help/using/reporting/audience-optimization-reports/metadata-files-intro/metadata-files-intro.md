@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 日志数据和元数据文件
 uuid: 80aa4bc3-c660-4e65-8c22-2ddbb7bddd4f
 translation-type: tm+mt
-source-git-commit: be988def0e9cb5cb6b4a926754dd24f9fd1f85fe
+source-git-commit: 5838eb61158cce10aa02b9286357a4f4abcbcce8
 
 ---
 
@@ -29,8 +29,3 @@ source-git-commit: be988def0e9cb5cb6b4a926754dd24f9fd1f85fe
 * [元数据文件的命名约定](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)
 * [元数据文件的内容格式](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md)
 * [元数据文件的交付方法](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)
-* [元数据文件的状态更新](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-update-status.md)
-
-
-
-
