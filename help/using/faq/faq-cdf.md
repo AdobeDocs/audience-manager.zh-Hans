@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 客户数据馈送常见问题解答
 uuid: 7183b3e2-e999-4e1e-892f-2bab335c13b6
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 7018705c130bf7c65f3a69da5e4bd9e0666423bc
 
 ---
 
@@ -65,9 +65,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 **如何检查上传到Amazon S3的数据的完整性？**
 
-大小超过16MiB的文件被拆分为16MiB块，并使用多部 [!DNL Amazon S3] 分上传上传到上传。
-
-[!DNL Amazon] 为多 `ETag` 部分上传生成值。 它首先计算每个上传部分的单个MD5校验和，然后将它们连接到单个字符串中。 然后，计算字符串的MD5校验和。 然后，生成的校验 `ETag`和()会附加连字符以及用于上传的部件总数。 例如，在上 `ETag` 传期间被拆分为5个部分的文件的外观可能类似于： `2c51427d19021e88cf3395365895b6d4-5`
+[!DNL Amazon] 将大文件拆分为较小的部分，并使用多 [!DNL Amazon S3] 部分上传将其上传到。 然后，它为多 `ETag` 部分上传生成一个值。 它首先计算每个上传部分的单个MD5校验和，然后将它们连接到单个字符串中。 然后，计算字符串的MD5校验和。 然后，生成的校验 `ETag`和()会附加连字符以及用于上传的部件总数。 例如，在上 `ETag` 传期间被拆分为5个部分的文件的外观可能类似于： `2c51427d19021e88cf3395365895b6d4-5`
 
 <br> 
 
