@@ -1,20 +1,20 @@
 ---
-description: 在Audience manager中，特征资格或特征实现会受到不同的对待，具体视特征类型而定。 有关特质资格的详细信息，请参阅下表。
-keywords: 特征鉴定；特征实现；独特特征实现；UTR；总特征群体；TTP
-seo-description: 在Audience manager中，特征资格或特征实现会受到不同的对待，具体视特征类型而定。 有关特质资格的详细信息，请参阅下表。
+description: 在Audience Manager中，特征资格或特征实现会受到不同的对待，具体视特征类型而定。 有关特质资格的详细信息，请参阅下表。
+keywords: trait qualification;trait realization;Unique Trait Realizations;UTR;Total Trait Population;TTP
+seo-description: 在Audience Manager中，特征资格或特征实现会受到不同的对待，具体视特征类型而定。 有关特质资格的详细信息，请参阅下表。
 seo-title: 特征鉴定参考
 solution: Audience Manager
 title: 特征鉴定参考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
-source-git-commit: 0921cd69ffcb75768acee99685b0d80b8bef0be6
+source-git-commit: 2f8662aba70254e550bc15417463c3c06492a9d5
 
 ---
 
 
 # 特征鉴定参考 {#trait-qualification-reference}
 
-在Audience manager中，特征资格或特征实现会受到不同的对待，具体视特征类型而定。 有关特质资格的详细信息，请参阅下表。
+在Audience Manager中，特征资格或特征实现会受到不同的对待，具体视特征类型而定。 有关特质资格的详细信息，请参阅下表。
 
 ## 按特征类型确定特征 {#trait-type}
 
@@ -32,7 +32,7 @@ source-git-commit: 0921cd69ffcb75768acee99685b0d80b8bef0be6
   </tr> 
   <tr> 
    <td colname="col1"> <p>已载入的特征 </p> </td> 
-   <td colname="col2"> <p>特征资格在处理入站文件后发生，即将入站文件导入Audience Manager <a href="../../faq/faq-inbound-data-ingestion.md"></a> ，即在特征资格发生时。 </p> <p> 对于已载入的特征，用户配置文件的最大资格数为1。 </p> </td> 
+   <td colname="col2"> <p>特征资格在处理入站文件后发生，即将入站文件导入Audience Manager <a href="../../faq/faq-inbound-data-ingestion.md"></a> ，即在特征资格发生时。 在创建已载入的特征后，您应等待大约4小时，然后再上传入站文件以进行处理。  </p> <p> 对于已载入的特征，用户配置文件的最大资格数为1。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>算法特征 </p> </td> 
