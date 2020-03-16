@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 批量管理快速入门
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: c9dfddf728045bf2cbc01d5467a64ae95b449664
+source-git-commit: ee31681e5805bff274b4051a354886fcda0599ff
 
 ---
 
@@ -28,7 +28,7 @@ c_bulk_start.xml
 
 ## 概述 {#overview}
 
-此功能使用带有宏的Microsoft excel电子表格，这些宏对API进行安全、经过身份验证的 [!DNL Audience Manager] 调用。 API提供了允许您批量更改的方法和服务。 您不必知道如何编写代码或使用我们的API来使用它。 工作表包含执行特定批量更改功能的列标题和选项卡。 要进行批量更改，您只需将预定义的标题添加到特定工作表，提供要批量更改的信息，然后单击操作按钮。 工作表和API将帮您完成其余的工作。
+此功能使用带有宏的Microsoft Excel电子表格，这些宏对API进行安全、经过身份验证的 [!DNL Audience Manager] 调用。 API提供了允许您批量更改的方法和服务。 您不必知道如何编写代码或使用我们的API来使用它。 工作表包含执行特定批量更改功能的列标题和选项卡。 要进行批量更改，您只需将预定义的标题添加到特定工作表，提供要批量更改的信息，然后单击操作按钮。 工作表和API将帮您完成其余的工作。
 
 ## 下载 {#download}
 
@@ -39,7 +39,7 @@ c_bulk_start.xml
 要使用 [!DNL Bulk Management Tools]，您需要：
 
 * 您的 [!DNL Experience Cloud] 登录名。 作为客户，您应该已经拥有这些凭据。
-* 工作 [!DNL Bulk Management Tools] 表。 [下载工作表](assets/BAAAM_V2_20191205.xlsm) ，获取最新版本。
+* 工作 [!DNL Bulk Management Tools] 表。 [下载工作表](assets/BAAAM_V2_20200311.xlsm) ，获取最新版本。
 * 运行于或64 [!DNL macOS] 位上的Microsoft Excel [!DNL Microsoft Windows]。 我们建议您使用最新版Microsoft Excel。
 * 打开工作表时，必须 **启用宏** ，才 [!DNL Bulk Management Tools] 能使用。
 
