@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 批量管理快速入门
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: ee31681e5805bff274b4051a354886fcda0599ff
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -24,7 +24,7 @@ c_bulk_start.xml
 
 >[!NOTE]
 >
->不 [!UICONTROL Bulk Management Tools] 支持 *。*[!DNL Audience Manager]此工具仅出于方便和礼貌而提供。 对于批量更改，我们建议您改用 [Audience Manager API](../../api/rest-api-main/aam-api-getting-started.md) 。 [在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
+>[在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
 
 ## 概述 {#overview}
 
@@ -32,7 +32,7 @@ c_bulk_start.xml
 
 ## 下载 {#download}
 
-在此处下载最新的 **[工作表](assets/BAAAM_V2_20191205.xlsm)**。
+在此处下载最新的 **[工作表](assets/BAAAM_V2_20200311.xlsm)**。
 
 ## 先决条件 {#prereqs}
 
