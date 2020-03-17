@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 批量删除
 uuid: 679cde46-09fb-45c6-b84d-47e00e0e7c0a
 translation-type: tm+mt
-source-git-commit: 30d4cec4502a2cf8b217816ea4ae62eb1b22f641
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 30d4cec4502a2cf8b217816ea4ae62eb1b22f641
 
 >[!NOTE]
 >
->不 [!UICONTROL Bulk Management Tools] 支持 *。*[!DNL Audience Manager]此工具仅出于方便和礼貌而提供。 对于批量更改，我们建议您改用 [Audience Manager API](../../api/rest-api-main/aam-api-getting-started.md) 。 [在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
+>[在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
 
 >[!NOTE]
 >
