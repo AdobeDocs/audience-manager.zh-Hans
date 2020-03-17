@@ -5,7 +5,7 @@ seo-title: 基于人员的目标先决条件和注意事项
 solution: Audience Manager
 title: 先决条件和注意事项
 translation-type: tm+mt
-source-git-commit: 301a5c553cfd5658f4d594773ab6248012cc50fa
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
@@ -33,16 +33,16 @@ source-git-commit: 301a5c553cfd5658f4d594773ab6248012cc50fa
 在使用将第 [!DNL People-Based Destinations] 一方受众细分发送到之前，请确保 [!DNL Facebook]满足以下要求：
 
 1. 您 [!DNL Facebook] 的用户帐户必须为您计划使用 **的广告帐户启用** “管理营销活动”权限。
-2. 将 **Adobe Experience cloud商业帐户添加为广告合作伙伴**[!DNL Facebook Ad Account]。 使用 `business ID=206617933627973`. 有关详 [细信息，请参阅将合作伙伴添加到您的业务经理](https://www.facebook.com/business/help/1717412048538897) 。
+2. 将 **Adobe Experience Cloud商业帐户添加为广告合作伙伴**[!DNL Facebook Ad Account]。 使用 `business ID=206617933627973`. 有关详 [细信息，请参阅将合作伙伴添加到您的业务经理](https://www.facebook.com/business/help/1717412048538897) 。
    >[!IMPORTANT]
-   > 配置Adobe Experience cloud的权限时，必须启用“管理营销活 **动”权** 限。 这是集成所必需的 [!DNL People-Based Destinations] 选项。
+   > 配置Adobe Experience Cloud的权限时，必须启用“管理营销活 **动”权** 限。 这是集成所必需的 [!DNL People-Based Destinations] 选项。
 3. 阅读并签署 [!DNL Facebook Custom Audiences] 服务条款。 为此，请转到 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`您的 `accountID` 位置 [!DNL Facebook Ad Account ID]。
 
 ## 数据入门 {#data-onboarding}
 
-当前的数据 [!DNL People-Based Destinations] 摄取支持每批传输最多10个与一个客户ID()关联的哈希电子邮件地址[!DNL CRM ID]。 上传10个以上链接到一个客户ID的哈希电子邮件地址会导致Audience manager以无特定顺序收录其中10个。
+当前的数据 [!DNL People-Based Destinations] 摄取支持每批传输最多10个与一个客户ID()关联的哈希电子邮件地址[!DNL CRM ID]。 上传10个以上链接到一个客户ID的哈希电子邮件地址会导致Audience Manager以无特定顺序收录其中10个。
 
-在多次批量传输中上传10个以上链接到一个客户ID的哈希化电子邮件地址会导致Audience manager保留最近添加的10个电子邮件地址。
+在多次批量传输中上传10个以上链接到一个客户ID的哈希化电子邮件地址会导致Audience Manager保留最近添加的10个电子邮件地址。
 
 ## 数据隐私{#data-privacy}
 
@@ -50,9 +50,9 @@ source-git-commit: 301a5c553cfd5658f4d594773ab6248012cc50fa
 
 ## 数据哈希与加密 {#data-hashing-encryption}
 
-加密是双向功能。 任何加密的信息也可以使用正确的解密密钥被解密。 在Audience manager环境中加密数据会带来严重风险，因为任何加密形式的个人识别信息也可以解密。 与加密相比，它 [!DNL People-Based Destinations] 们设计为处理散列数据。
+加密是双向功能。 任何加密的信息也可以使用正确的解密密钥被解密。 在Audience Manager环境中加密数据会带来严重风险，因为任何加密形式的个人识别信息也可以解密。 与加密相比，它 [!DNL People-Based Destinations] 们设计为处理散列数据。
 
-散列是单向函数，它对输入进行扰码以产生唯一的结果。 通过使用适当的哈希算法， [!DNL SHA256]例如，无法反转哈希函数并显示未加扰的信息。 您将上传到Audience Manager的电子邮件地址必须使用算法进行哈希 [!DNL SHA256] 处理。 这样，您就可以确保Audience manager不会收到经过散列处理的电子邮件地址。
+散列是单向函数，它对输入进行扰码以产生唯一的结果。 通过使用适当的哈希算法， [!DNL SHA256]例如，无法反转哈希函数并显示未加扰的信息。 您将上传到Audience Manager的电子邮件地址必须使用算法进行哈希 [!DNL SHA256] 处理。 这样，您就可以确保Audience Manager不会收到经过散列处理的电子邮件地址。
 
 ## 散列要求 {#hashing-requirements}
 
@@ -69,7 +69,7 @@ source-git-commit: 301a5c553cfd5658f4d594773ab6248012cc50fa
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud可让您选择通过Experience Cloud ID服务散列客户ID。 有关如 [何使用ECID对客户ID进行哈希处理的详细信息，请参阅针对setCustomerID的SHA256哈希支持](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) 。
+Adobe Experience Cloud可让您选择通过Adobe Experience Platform Identity Service散列客户ID。 有关如 [何使用ECID对客户ID进行哈希处理的详细信息，请参阅针对setCustomerID的SHA256哈希支持](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) 。
 
 ## 获取用户权限 {#obtaining-user-permission}
 
@@ -77,7 +77,7 @@ Adobe Experience Cloud可让您选择通过Experience Cloud ID服务散列客户
 
 在注册前，请确 [!DNL People-Based Destinations]保在将客户的信息用于广告之前获得客户的同意。
 
-如果客户希望退出广告营销活动，请参阅退出管理 [](../../overview/data-security-and-privacy/data-privacy-requests.md) ，了解有关如何阻止Audience manager进一步收集数据的详细信息。
+如果客户希望退出广告营销活动，请参阅退出管理 [](../../overview/data-security-and-privacy/data-privacy-requests.md) ，了解有关如何阻止Audience Manager进一步收集数据的详细信息。
 
 ## 实施第一方数据激活 {#enforcing-first-party-activation}
 
@@ -85,9 +85,9 @@ Adobe Experience Cloud可让您选择通过Experience Cloud ID服务散列客户
 
 使用时， [!UICONTROL People-Based Destinations]请使用“ [数据导出控件](../data-export-controls.md) ”，根据目标平台和数据提供商的准则和要求，为数据源和目标添加标签。
 
-## 通过声明ID定位的板载认证哈希ID {#onboard-authenticated-declared-id}
+## 通过声明的ID定位的板载认证哈希ID {#onboard-authenticated-declared-id}
 
 有两种方法可将离线数据导入Audience Manager [!DNL People-Based Destinations]。
 
 * [将批量数据发送](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 到Audience Manager，以摄取散列化的电子邮件地址。 使用此方法，您可以选择使用中数据库中经过哈希处理的电子 [!DNL CRM] 邮件地址 [!DNL People-Based Destinations]。 此外，使用此方法时，您还可以为已载入的特征限定哈希化电子邮件 [地址](../traits/trait-qualification-reference.md)。
-* 在传 [入经身份验证的客户ID时](../declared-ids.md) ，使用Declared ID声明散列化的电子邮件地址。 使用此方法时，Audience manager将代表您仅向通过在线身份验证的 [!DNL People-Based Destinations] 用户发送哈希电子邮件地址。 通过基于人员的渠道激活的电子邮件地址只是声明的ID事件调用中的电子邮件地址。 与客户ID关联的其他电子邮件地址不会实时发送。
+* 在传 [入经身份验证的客户ID时](../declared-ids.md) ，使用Declared ID声明散列化的电子邮件地址。 使用此方法时，Audience Manager将代表您仅向通过在线身份验证的 [!DNL People-Based Destinations] 用户发送哈希电子邮件地址。 通过基于人员的渠道激活的电子邮件地址只是声明的ID事件调用中的电子邮件地址。 与客户ID关联的其他电子邮件地址不会实时发送。
