@@ -1,13 +1,13 @@
 ---
 description: 常见产品和功能相关问题和问题。
-keywords: 受众管理器cookie
+keywords: audience manager cookies
 seo-description: 常见产品和功能相关问题和问题。
 seo-title: 产品特性和功能常见问题解答
 solution: Audience Manager
 title: 产品特性和功能常见问题解答
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
@@ -30,7 +30,7 @@ faq_features_functions.xml
 
 例如，一个 *`Organization ID`* 类似于： `1FD6776A524453CC0A490D44@AdobeOrg`.
 
-Audience Manager *`Organization ID`* 的 [DIL](../dil/dil-overview.md) API、 [Experience Cloud ID服务和其他解决方案都使用它](https://marketing.adobe.com/resources/help/en_US/mcvid/)[!DNL Experience Cloud] 。 具有管理员权限的用户可以在上 *`Organization ID`* 找到该 [!DNL Adobe Admin Console]项。 请参阅管 [理——用户管理常见问题解答](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)。
+Audience Manager *`Organization ID`* 的 [DIL](../dil/dil-overview.md) API、 [Adobe Experience Platform Identity Service和其他解决方案都使用它](https://marketing.adobe.com/resources/help/en_US/mcvid/)[!DNL Experience Cloud] 。 具有管理员权限的用户可以在上 *`Organization ID`* 找到该 [!DNL Adobe Admin Console]项。 请参阅管 [理——用户管理常见问题解答](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)。
 
 <br> 
 
@@ -58,7 +58,7 @@ Audience Manager *`Organization ID`* 的 [DIL](../dil/dil-overview.md) API、 [E
 
 **什么是[!UICONTROL Tag Insertion Manager (TIM)]?**
 
-Audience Manager使用 [!UICONTROL Tag Insertion Manager] (TIM)来创建和管理 [!UICONTROL data collection code (DIL)]。 This feature is obsolete and has been replaced first by [!UICONTROL Dynamic Tag Manager (DTM)], and later by [!DNL Adobe Launch]. 有关详细信息，请参 [阅Adobe Launch](https://docs.adobelaunch.com/) 和 [动态标签管理](https://marketing.adobe.com/resources/help/en_US/dtm/)。
+Audience Manager使用 [!UICONTROL Tag Insertion Manager] (TIM)来创建和管理 [!UICONTROL data collection code (DIL)]。 This feature is obsolete and has been replaced first by [!UICONTROL Dynamic Tag Manager (DTM)], and later by [!DNL Adobe Experience Platform Launch]. For more information, see [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) and [Dynamic Tag Management](https://marketing.adobe.com/resources/help/en_US/dtm/).
 
 <br> 
 
@@ -68,7 +68,7 @@ Audience Manager使用 [!UICONTROL Tag Insertion Manager] (TIM)来创建和管�
 
 算法模型不仅可以找到最具影响力的特征，而且可以根据这些特征对用户进行评分，并为每个用户分配一个单独的得分。 然后，您创建算法特征来定位用户。 借助Trait Builder中的准确性和范围控制，您可以指定所有具有要定位的有影响力的特征的用户中的哪些用户。
 
-Algorithmic Models使您能够选择不同准确度级别的用户，并在Audience lab中测试哪组用户转化效果更好。 请参阅Audience lab中的比较模 [型中的详细用例](../features/audience-lab/audience-lab-use-cases.md#compare-models)。
+Algorithmic Models使您能够选择不同准确度级别的用户，并在Audience Lab中测试哪组用户转化效果更好。 请参阅Audience Lab中的比较模 [型中的详细用例](../features/audience-lab/audience-lab-use-cases.md#compare-models)。
 
 在“算法模型”中，该模型每8天运行一次，并刷新符合算法特征的用户。
 
@@ -84,6 +84,6 @@ Algorithmic Models使您能够选择不同准确度级别的用户，并在Audie
 
 <br> 
 
-**Adobe Analytics和Audience manager细分之间有何区别？**
+**Adobe Analytics和Audience Manager细分之间有何区别？**
 
-是，请阅读了 [解Analytics和Audience manager中的细分](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/aam-analytics-segments.html) ，详细了解差异。
+是，请阅读了 [解Analytics和Audience Manager中的细分](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/aam-analytics-segments.html) ，详细了解差异。
