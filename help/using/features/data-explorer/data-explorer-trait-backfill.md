@@ -5,7 +5,7 @@ seo-title: 回填特征实现
 title: 回填特征实现
 uuid: 8b0ef4e6-d16a-4d1d-94f1-b84eebffa9a5
 translation-type: tm+mt
-source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
+source-git-commit: 383d529d656f86fa39e2e11d312e8a8a2092926b
 
 ---
 
@@ -14,7 +14,9 @@ source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 回填特征实现以捕获历史受众并避免在特征创建日期之前丢失相关数据。
 
-[!UICONTROL Data Explorer Trait Backfill] 是一种高级功能，可通过解锁其他使用案例来增强Audience Manager体验。 回填需要额外的处理能力，并且所有Audience manager客户都能以递增的成本使用回填。 有关更多详细信息，请与Adobe销售代表联系。
+>[!IMPORTANT]
+>
+> [!UICONTROL Data Explorer Trait Backfill] 是一种高级功能，可通过解锁其他使用案例来增强Audience Manager体验。 回填需要额外的处理能力，并且所有Audience Manager客户都能以递增的成本使用回填。 有关更多详细信息，请与Adobe销售代表联系。
 
 从未使用的信号创建特征时，您可以选择在特定时间段内回填特征实现。 [!DNL Audience Manager] 捕获符合新特征的受众的历史数据并将其存储在相应的配置文件中。 您可以在特 **[!UICONTROL Backfill Options]** 征构建 [!UICONTROL Trait Expression] 器的部分 **[中看到](../../features/traits/about-trait-builder.md)**。
 
@@ -47,13 +49,13 @@ source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 观看以下视频，了解如何回填特征的视频演练。
 
->[!VIDEO](https://video.tv.adobe.com/v/25169/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25169/)
 
 ## 特征回填延迟 {#trait-backfilling-latency}
 
 新创建的特征在创建后两到三小时内开始捕获受众。 但是，由于每天执行的数据量 [!DNL Audience Manager] 很大，回填的人口不会立即反映在和图 [!UICONTROL Unique Trait Realizations] 中 [!UICONTROL Total Trait Population] 。
 
-Audience manager在特征创 [!UICONTROL Trait Graph] 建后的48小时内用回填人口进行更新。
+Audience Manager在特征创 [!UICONTROL Trait Graph] 建后的48小时内用回填人口进行更新。
 
 ## 特征回填限制 {#trait-backfilling-limit}
 
