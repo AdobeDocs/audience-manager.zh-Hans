@@ -4,9 +4,9 @@ seo-description: 定义和指向进一步阅读的链接。
 seo-title: 术语表
 solution: Audience Manager
 title: 术语表
-uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510acc
+uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
 translation-type: tm+mt
-source-git-commit: d5a8b763d2d0d1ceebe2252ebd283943dcbc1754
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: d5a8b763d2d0d1ceebe2252ebd283943dcbc1754
 
 **BAAAM**
 
-[!UICONTROL Bulk Management Tools]。中 [!UICONTROL Bulk Management Tools] 的工 [!DNL Audience Manager] 具是一组基于Microsoft excel的工具，通过这些工具，您可以通过单个操作同时创建、修改或删除多个对象。 您可以使用数据源、派生信号、目标、文件夹、区段和特征。 该功能使用Microsoft excel电子表格和宏，这些宏对API进行安全、经过身份验证的 [!DNL Audience Manager] 调用。
+[!UICONTROL Bulk Management Tools]。中 [!UICONTROL Bulk Management Tools] 的工 [!DNL Audience Manager] 具是一组基于Microsoft Excel的工具，通过这些工具，您可以通过单个操作同时创建、修改或删除多个对象。 您可以使用数据源、派生信号、目标、文件夹、区段和特征。 该功能使用Microsoft Excel电子表格和宏，这些宏对API进行安全、经过身份验证的 [!DNL Audience Manager] 调用。
 
 请参 [阅批量管理工具](../reference/bulk-management-tools/bulk-management-intro.md)。
 
@@ -112,7 +112,7 @@ See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 **Experience Cloud ID (ECID)**
 
-以前命名 [!DNL Marketing Cloud] 了ID（MID或MCID）。 该 [!DNL Experience Cloud] ID是ID服务的核心。 它是网站访问者的唯一永久标识符。 See Cookies and the [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html).
+以前命名 [!DNL Marketing Cloud] 了ID（MID或MCID）。 该 [!DNL Experience Cloud] ID是ID服务的核心。 它是网站访问者的唯一永久标识符。 请参阅Cookie和 [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html)。
 
 <br> 
 
@@ -163,7 +163,7 @@ See [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 * [!UICONTROL Traits]:集成代码是指内部业务流程使用的ID、SKU或其他值的字段。 可选。
 * [!UICONTROL Segments]:集成代码是用户定义的ID或其他公司特定信息的字段。 可选。
-* [!UICONTROL Data Sources]:当您要创建跨设备数据源、使用Experience Cloud ID服务或使用Experience Cloud ID服务时，需要集成代码 [!UICONTROL Profile Merge Rules]有关 [详细信息，请参阅](../features/manage-datasources.md#create-data-source) “创建数据源”。
+* [!UICONTROL Data Sources]:当您要创建跨设备数据源、使用Adobe Experience Platform Identity Service或使用时，需要集成代码 [!UICONTROL Profile Merge Rules]。 有关 [详细信息，请参阅](../features/manage-datasources.md#create-data-source) “创建数据源”。
 
 ## K-L {#k-l}
 
@@ -269,7 +269,7 @@ TTL定义合格访客在一个特征中保留的天数。 TTL是针对特征而�
 
 The [!DNL Experience Cloud] ID Service (formerly visitor ID) provides a universal, persistent ID that identifies your visitors across all the solutions in the [!DNL Experience Cloud].
 
-See the [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/reference/marketing-cloud-id-service.html) documentation.
+请参阅 [Adobe Experience Platform Identity Service文档](https://marketing.adobe.com/resources/help/en_US/reference/marketing-cloud-id-service.html) 。
 
 ## W-X-Y-Z {#w-z}
 
