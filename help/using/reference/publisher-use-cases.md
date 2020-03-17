@@ -1,19 +1,19 @@
 ---
-description: 了解Adobe Audience manager满足的一些常见出版商需求。
-seo-description: 了解Adobe Audience manager满足的一些常见出版商需求。
+description: 了解Adobe Audience Manager满足的一些常见出版商需求。
+seo-description: 了解Adobe Audience Manager满足的一些常见出版商需求。
 seo-title: 发布者使用案例
 solution: Audience Manager
 title: 发布者使用案例
-uuid: 5f571d60-d902-4958-b5d3-8d09dda42c7
+uuid: 5f571d60-d902-4958-b5d3-8d09ddda42c7
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
 
 # 发布者使用案例{#publisher-use-cases}
 
-了解Adobe Audience manager满足的一些常见出版商需求。
+了解Adobe Audience Manager满足的一些常见出版商需求。
 
 <!-- 
 
@@ -115,7 +115,7 @@ c_pub_use_case.xml
    <td colname="col3"> <p> 
      <ul id="ul_EE7A86BFFE534A59A9F8C7CAF46A31E5"> 
       <li id="li_D399592D9D904865BD319DC3621B832B">创建“所得税研究人员”细分。 </li> 
-      <li id="li_D28AC8BA5E194176BB8736B089B3C2F7">将销售给Turbo Tax的现场广告营销活动与通过Adobe Media Optimizer等DSP的场外扩展活动相协调。 </li> 
+      <li id="li_D28AC8BA5E194176BB8736B089B3C2F7">将销售给Turbo Tax的现场广告营销活动与通过Adobe Advertising Cloud等DSP进行的场外扩展活动保持一致。 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
