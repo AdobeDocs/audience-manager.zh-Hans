@@ -5,23 +5,23 @@ audience: end-user
 user-guide-title: Audience Manager User Guide
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
 
-# Audience manager用户指南 {#user-guide}
+# Audience Manager用户指南 {#user-guide}
 
-+ [Audience manager产品文档](aam-home.md)
++ [Audience Manager产品文档](aam-home.md)
 + 概述{#overview}
-   + [Audience manager概述](overview/aam-overview.md)
+   + [Audience Manager概述](overview/aam-overview.md)
    + [收集的数据类型](overview/data-types-collected.md)
    + [数据安全](overview/data-security-and-privacy/data-security.md)
    + 数据隐私{#data-privacy}
       + [数据隐私概述](overview/data-security-and-privacy/data-privacy.md)
       + [数据隐私请求](overview/data-security-and-privacy/data-privacy-requests.md)
       + 数据隐私参考 {#data-privacy-reference}
-         + [Audience manager标识符](overview/data-security-and-privacy/data-privacy-ids.md)
+         + [Audience Manager标识符](overview/data-security-and-privacy/data-privacy-ids.md)
          + [CCPA词汇表](overview/data-security-and-privacy/aam-ccpa-glossary.md)
          + [GDPR词汇表](overview/data-security-and-privacy/aam-gdpr-glossary.md)
          + [目标的GDPR注意事项](overview/data-security-and-privacy/aam-gdpr-partners.md)
@@ -48,7 +48,7 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
       + [测试组信息](features/audience-lab/audience-lab-information-view.md)
       + [测试组报告](features/audience-lab/audience-lab-reporting-view.md)
       + [Audience Lab使用案例](features/audience-lab/audience-lab-use-cases.md)
-      + [Audience lab高级功能](features/audience-lab/audience-lab-advanced.md)
+      + [Audience Lab高级功能](features/audience-lab/audience-lab-advanced.md)
    + 受众市场{#audience-marketplace}
       + [受众市场](features/audience-marketplace/audience-marketplace.md)
       + 面向数据提供商的受众市场{#audience-marketplace-for-data-providers}
@@ -85,7 +85,7 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
    + 目标{#destinations}
       + [目标概述](features/destinations/destinations.md)
       + [目标主页](features/destinations/destinations-home.md)
-      + Adobe Experience cloud目标{#experience-cloud-destinations}
+      + Adobe Experience Cloud目标{#experience-cloud-destinations}
          + [配置分析目标](features/destinations/create-analytics-destination.md)
       + 基于人员的目标 {#people-based}
          + [概述和使用案例](features/destinations/people-based-destinations-overview.md)
@@ -147,13 +147,13 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
          + [管理特征规则](features/traits/manage-trait-rules.md)
          + [创建算法特征](features/traits/create-algorithmic-traits.md)
          + [在Trait Builder中使用比较运算符](features/traits/trait-comparison-operators.md)
-         + [Trait builder中的操作顺序](features/traits/trait-operator-precedence.md)
-         + [在Trait builder中使用正则表达式](features/traits/trait-builder-regex.md)
+         + [Trait Builder中的操作顺序](features/traits/trait-operator-precedence.md)
+         + [在Trait Builder中使用正则表达式](features/traits/trait-builder-regex.md)
       + [特征存储](features/traits/trait-storage.md)
       + [准确性和范围](features/traits/trait-accuracy-reach.md)
       + [使用通用分类对特征进行分类](features/traits/trait-common-taxonomy.md)
       + [关键变量的名称要求](features/traits/trait-key-name-requirements.md)
-      + [细分和特征的生效时间说明](features/traits/segment-ttl-explained.md)
+      + [细分和特征的生存时间说明](features/traits/segment-ttl-explained.md)
       + [关键变量的前缀要求](features/traits/trait-variable-prefixes.md)
       + [使用平台级密钥进行地理定位](features/traits/trait-geotarget-keys.md)
       + [使用平台级密钥进行设备定位](features/traits/trait-device-targeting.md)
@@ -208,7 +208,7 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
    + [入门状态报告](reporting/onboarding-status-report.md)
    + [出站文件历史记录](reporting/outbound-history-report.md)
    + [对重叠和一般报告中的唯一用户计数](reporting/unique-user-counts.md)
-   + [选定Audience manager报告中的数据采样和错误率](reporting/report-sampling.md)
+   + [选定Audience Manager报告中的数据采样和错误率](reporting/report-sampling.md)
 + API和SDK代码{#api-and-sdk-code}
    + [API和SDK代码概述](api/api.md)
    + [Audience Manager API代码迁移](api/api-swagger-migration.md)
@@ -221,7 +221,7 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
       + DCS API{#dcs-apis}
          + [用于服务器到服务器数据传输的DCS API](api/dcs-intro/dcs-s2s/dcs-s2s.md)
          + [从DCS响应获取用户ID和区域](api/dcs-intro/dcs-s2s/dcs-aam-ids.md)
-         + [通过Experience Cloud ID服务获取用户ID和区域](api/dcs-intro/dcs-s2s/dcs-mcid-ids.md)
+         + [通过Adobe Experience Platform Identity Service获取用户ID和区域](api/dcs-intro/dcs-s2s/dcs-mcid-ids.md)
          + [发出服务器到服务器DCS API调用](api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)
       + DCS API参考{#dcs-api-reference}
          + [DCS API参考概述](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
@@ -284,9 +284,9 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
    + 与第三方目标集成 {#integrating-third-party}
       + [Facebook WCA集成](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
       + [OAS作为Audience Manager目标](integration/integrating-third-party/open-ad-server-destination.md)
-      + [OpenX作为Audience manager目标](integration/integrating-third-party/openx-destination.md)
+      + [OpenX作为Audience Manager目标](integration/integrating-third-party/openx-destination.md)
       + [DFP作为Audience Manager目标](integration/aam-dfp.md)
-      + [将区段发送到Google adWords再营销列表](integration/integrating-third-party/rlsa-integration.md)
+      + [将区段发送到Google AdWords再营销列表](integration/integrating-third-party/rlsa-integration.md)
    + [实施Audience Manager](integration/implement-audience-manager.md)
    + 媒体数据集成{#media-data-integration}
       + [媒体数据集成概述](integration/media-data-integration/media-data-integration.md)
@@ -325,10 +325,10 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
          + [入站数据传输文件的文件压缩](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
          + [入站处理后发送给合作伙伴的示例消息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [自定义合作伙伴集成](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
-   + 与Adobe Experience platform集成 {#integration-experience-platform}
-      + [Audience manager与Adobe Experience Platform之间的受众共享](integration/integration-aep/aam-aep-audience-sharing.md)
-   + 与其他Experience cloud解决方案集成 {#integration-other-solutions}
-      + [将Audience manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
+   + 与Adobe Experience Platform集成 {#integration-experience-platform}
+      + [Audience Manager与Adobe Experience Platform之间的受众共享](integration/integration-aep/aam-aep-audience-sharing.md)
+   + 与其他Experience Cloud解决方案集成 {#integration-other-solutions}
+      + [将Audience Manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
       + [如何将数据从Adobe Analytics转发到Audience Manager](integration/integration-other-solutions/audience-management-module.md)
       + [将Adobe Analytics区段发布到Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-publish-audience-segment.html)
 + 参考{#reference}
@@ -350,7 +350,7 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
       + [批量管理工具词汇表](reference/bulk-management-tools/bulk-management-glossary.md)
    + [CID替换DPID和DPUUID](reference/cid.md)
    + [数据交付和文件处理时间对报告的影响](reference/reporting-file-transfer-timeframe.md)
-   + [Audience manager中的ID索引](reference/ids-in-aam.md)
+   + [Audience Manager中的ID索引](reference/ids-in-aam.md)
    + [说明的键值对](reference/key-value-pairs-explained.md)
    + [密码要求、锁定的帐户和忘记的密码](reference/password-requirements.md)
    + [信号、特征和区段](reference/signal-trait-segment.md)
@@ -365,10 +365,10 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
       + [平台架构：数据流图](reference/system-components/components-platform-architecture.md)
       + [了解边缘数据中心](reference/system-components/components-edge.md)
    + [代码和文本元素的样式约定](reference/code-style-elements.md)
-   + [Audience manager中的时区](reference/aam-time-zones.md)
+   + [Audience Manager中的时区](reference/aam-time-zones.md)
    + [弃用TLS 1.0和1.1](reference/tls-support.md)
    + [了解 Demdex 域调用](reference/demdex-calls.md)
-   + [Audience manager中的访客身份验证状态](reference/visitor-authentication-states.md)
+   + [Audience Manager中的访客身份验证状态](reference/visitor-authentication-states.md)
 + 常见问题解答{#faqs}
    + [API常见问题解答](faq/faq-api.md)
    + [Audience Lab常见问题解答](faq/faq-audience-lab.md)
