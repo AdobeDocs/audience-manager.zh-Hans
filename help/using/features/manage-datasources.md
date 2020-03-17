@@ -1,13 +1,13 @@
 ---
 description: 要创建新数据源，请转到“受众数据”>“数据源”>“添加新”，然后完成此处描述的每个部分的步骤。 创建数据源需要管理员权限。
-keywords: 数据源；数据源管理；
+keywords: data sources;manage data source;audience manager data source
 seo-description: 要创建新数据源，请转到“受众数据”>“数据源”>“添加新”，然后完成此处描述的每个部分的步骤。 创建数据源需要管理员权限。
 seo-title: 创建数据源
 solution: Audience Manager
 title: 管理数据源
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 1. 提供集成代码。 通常，集成代码是可选的。 您需要满足以下条件时，才需要这些条件：
 
    * [创建跨设备数据源](../features/profile-merge-rules/merge-rules-start.md#create-data-source)。
-   * 使用 [Experience Cloud ID服务](https://marketing.adobe.com/resources/help/en_US/mcvid/)。
+   * 使用 [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/)。
    * 使用配置 [文件合并规则](../features/profile-merge-rules/merge-rules-start.md)。
 
 1. 选择 **[!UICONTROL ID Type]**。 ID类型选项包括：
@@ -74,10 +74,10 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 >请注意以下限制：
 >
 >* 无法删除活动 [受众或数据源已同步的特征](../features/traits/client-activity-synced-audience-traits.md)。
->* 对于使用Adobe Analytics的客户：Audience manager不允许您删除从报表包自动创建的数 [!DNL Analytics] 据源。 使用核 [心服务](https://marketing.adobe.com/resources/help/en_US/mcloud/) ，取消映射这些数据源。
+>* 对于使用Adobe Analytics的客户：Audience Manager不允许您删除从报表包自动创建的数 [!DNL Analytics] 据源。 使用核 [心服务](https://marketing.adobe.com/resources/help/en_US/mcloud/) ，取消映射这些数据源。
 
 
-1. Click **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Data Sources]**.
+1. 单击 **[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**.
 1. 选中一个或多个数据源旁边的复选框。
 如果您有 [!UICONTROL Search] 长列表，则可以使用该框来查找所需的数据源。
 1. 单击 ![](assets/icon_trash.png)，然后确认删除。
