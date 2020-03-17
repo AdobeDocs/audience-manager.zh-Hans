@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 数据收集和产品集成常见问题解答
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 translation-type: tm+mt
-source-git-commit: 0921cd69ffcb75768acee99685b0d80b8bef0be6
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
@@ -45,14 +45,14 @@ faq_data_collection_integration.xml
 
 | 项目 | 地址 |
 ---------|----------|
-|  ftp-in.demdex.com | 54.225.117.163 |
+| ftp-in.demdex.com | 54.225.117.163 |
 | ftp-out.demdex.com | 23.23.188.76 |
 
 <br> 
 
 **对于[!UICONTROL DIL]/数据集成，有哪些代码放置和页面加[!DNL Analytics]载要求？**
 
-要将数 [!DNL Analytics] 据引入 [!DNL Audience Manager]，在模块之后，在功能之 [!UICONTROL DIL] 前加 `s_code` 载 *(Load* before) `s.t()` 。 例如，按照以下顺序放置代码或确保其加载：
+要将数 [!DNL Analytics] 据导入 [!DNL Audience Manager]，在模块之后，但在功能之 [!UICONTROL DIL] 前，加 `s_code` 载 *(Load)*`s.t()` 。 例如，按照以下顺序放置代码或确保其加载：
 
 1. [!DNL Analytics] `s_code`
 
@@ -64,7 +64,7 @@ faq_data_collection_integration.xml
 
 * 直接 [!UICONTROL DIL] 放入 `s_code`。
 
-* 服务 [!UICONTROL DIL] 和 `s_code` 通过 [!DNL Adobe Launch] 或 [!DNL Adobe DTM]。
+* 服务 [!UICONTROL DIL] 和 `s_code` 通过 [!DNL Adobe Experience Platform Launch] 或 [!DNL Adobe DTM]。
 
 See [Data Integration Library (DIL) API](../dil/dil-overview.md).
 
