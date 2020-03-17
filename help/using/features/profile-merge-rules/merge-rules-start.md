@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 个人资料合并规则入门
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
@@ -51,7 +51,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 * **[!UICONTROL Use as a Device Graph]**:此控件仅对作为数据提供者列出的帐户可用。 选中此复选框将创建设备图形形式的数据源，并允许您与其他客户共 [!DNL Audience Manager] 享它。 与您的顾 [!DNL Audience Manager] 问一起设置为数据提供者，并指定应与哪些客 [!UICONTROL Data Source] 户共享此信息。 您的顾问将通过内部配置流程配置您的帐户和设备图形共享。
 
-* **[!UICONTROL Data retention for inactive Customer IDs]**:此控件允许您为不活动的客户ID设置数据保留期。 这决定了Audience manager在Audience manager平台上上次查看客户ID后，在我们的数据库中保留这些ID的时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们将所有月份计为30天。 Audience manager会根据您为非活动客户ID设置的数据保留情况，运行一个每周删除不活动客户ID一次的流程。
+* **[!UICONTROL Data retention for inactive Customer IDs]**:此控件允许您为不活动的客户ID设置数据保留期。 这决定了Audience Manager在Audience Manager平台上上次查看客户ID后，在我们的数据库中保留这些ID的时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们将所有月份计为30天。 Audience Manager会根据您为非活动客户ID设置的数据保留情况，运行一个每周删除不活动客户ID一次的流程。
 
 通过与这些设置关联的文本字段，您可以使用在“配置文 [!UICONTROL Data Source] 件合并规则”选项中显示 [的别名重命名](merge-rule-definitions.md)。 例如，如果向添加别名， **[!UICONTROL Use as Authenticated Profile]**&#x200B;则该名称会显示在列 [!UICONTROL Authenticated Profile Options] 表中。 如果向中添加别名， **[!UICONTROL Use as a Device Graph]**&#x200B;则该名称会显示在列 [!UICONTROL Device Options] 表中。
 
@@ -65,7 +65,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 <!-- create-profile-merge-rule.xml -->
 
-**** 先决条件：需要跨设备数据源才能构建 [!UICONTROL Profile Merge Rule]。 请参 [阅创建数据源](../manage-datasources.md#create-data-source)。
+**先决条件：** 需要跨设备数据源才能构建 [!UICONTROL Profile Merge Rule]。 请参 [阅创建数据源](../manage-datasources.md#create-data-source)。
 
 >[!TIP]
 >
@@ -101,7 +101,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 配置合并规则代码 {#configure-merge-rule-code}
 
-按照以下说明设置 [!UICONTROL Experience Cloud ID Service]、 [!UICONTROL DIL]和移动 [!DNL SDK] 代码以使用合并规则。
+按照以下说明设置 [!UICONTROL Adobe Experience Platform Identity Service]、 [!UICONTROL DIL]和移动 [!DNL SDK] 代码以使用合并规则。
 
 <!-- merge-rules-configure-code.xml -->
 
@@ -109,13 +109,13 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 完成这些过程之 [前，必须设置跨设备数据源](#create-data-source)[和配置文](#create-profile-merge-rule) 件合并规则 ** 。
 
-## 对于Experience Cloud ID服务客户 {#id-service-customers}
+## 对于Adobe Experience Platform Identity Service客户 {#id-service-customers}
 
-使 [!UICONTROL Experience Cloud ID Service] 用时建议使用 [DIL](../../dil/dil-overview.md) 和最新版本 [!UICONTROL Profile Merge Rules]。 但是，您不必使用该 [!UICONTROL Experience Cloud ID Service] 功能即可使用。 如果您只是在使用，请 [!UICONTROL DIL]参阅下面的 [传统DIL部分](#legacy-dil) 。
+使 [!UICONTROL Adobe Experience Platform Identity Service] 用时建议使用 [DIL](../../dil/dil-overview.md) 和最新版本 [!UICONTROL Profile Merge Rules]。 但是，您不必使用该 [!UICONTROL Adobe Experience Platform Identity Service] 功能即可使用。 如果您只是在使用，请 [!UICONTROL DIL]参阅下面的 [传统DIL部分](#legacy-dil) 。
 
 ### 配置“设置客户ID”功能
 
-使用时，函 [!UICONTROL Experience Cloud ID Service]数将声 `setCustomerIDs` 明的ID传递给 [!DNL Audience Manager]。 要使用配置文件合并规则，您必须进行修 `setCustomerIDs` 改以使用在创建跨设备数据源时指定的集成代码。 例如，假设您使用集成代码创建了一个跨设备数据源 `my_datasource_ic`。 要传递已声明的ID，您应将集成代码添加到访客ID函数，如下面修改的代码示例所示。
+使用时，函 [!UICONTROL Adobe Experience Platform Identity Service]数将声 `setCustomerIDs` 明的ID传递给 [!DNL Audience Manager]。 要使用配置文件合并规则，您必须进行修 `setCustomerIDs` 改以使用在创建跨设备数据源时指定的集成代码。 例如，假设您使用集成代码创建了一个跨设备数据源 `my_datasource_ic`。 要传递已声明的ID，您应将集成代码添加到访客ID函数，如下面修改的代码示例所示。
 
 #### 通用代码示例
 
@@ -158,7 +158,7 @@ var vDil = DIL.create({
 
 ## 传统DIL {#legacy-dil}
 
-如果你还没用， [!DNL Experience Cloud ID Service] 你真的应该用。 但是，我们理解，要转到新代码，需要仔细思考和测试。 在这些情况下，请检查 `DIL.create` 您的函数，以确保正确设置，如下面的代码示例中所示。
+如果你还没用， [!DNL Adobe Experience Platform Identity Service] 你真的应该用。 但是，我们理解，要转到新代码，需要仔细思考和测试。 在这些情况下，请检查 `DIL.create` 您的函数，以确保正确设置，如下面的代码示例中所示。
 
 ```js
 DIL.create({
