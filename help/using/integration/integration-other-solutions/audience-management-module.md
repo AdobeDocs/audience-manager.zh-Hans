@@ -83,7 +83,7 @@ s.AudienceManagement.setup({
 | `partner` | 必需。这是Adobe分配给您的合作伙伴名称。 它有时称为“合作伙伴ID”或“合作伙伴子域”。  如果您不知道您的 [合作伙伴名称](https://helpx.adobe.com/marketing-cloud/contact-support.html) ，请与Adobe顾问或客户关怀联系。 |
 | `containerNSID` | 必需。大多数客户只需设置 `"containerNSID":0` 。 但是，如果您的公司需要自定义ID与其他容器同步，您可以在此处指定该容器ID。 |
 | `uuidCookie` | 可选。此配置允许您在第一方域中设置Adobe cookie。 此Cookie包含 [UUID](../../reference/ids-in-aam.md) 。 |
-| `visitorService` - `namespace` | 必需。如果 `namespace` 您使用与版本2.10或更高版本捆绑的AudienceManagement [!UICONTROL AppMeasurement] 模块，则此参数是必需的。 本 [!UICONTROL AudienceManagement] 模块要求您使用 [!UICONTROL Adobe Experience Platform Identity Service] 3.3或更高版本。 <br> 该 [!UICONTROL Experience Cloud Organization ID] ID是公司在注册时获得的ID [!UICONTROL Experience Cloud]。 在“组织”和“帐户关联”中查 [找您公司的组织ID](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)。 |
+| `visitorService` - `namespace` | 必需。如果 `namespace` 您使用与版本2.10或更高版本捆绑的AudienceManagement模 [!UICONTROL AppMeasurement] 块，则该参数是必需的。 本 [!UICONTROL AudienceManagement] 模块要求您使用 [!UICONTROL Adobe Experience Platform Identity Service] 3.3或更高版本。 <br> 该 [!UICONTROL Experience Cloud Organization ID] ID是公司在注册时获得的ID [!UICONTROL Experience Cloud]。 在“组织”和“帐户关联”中查 [找您公司的组织ID](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)。 |
 
 ## 结果：向Audience Manager转发数据 {#results-data-forwarding}
 
