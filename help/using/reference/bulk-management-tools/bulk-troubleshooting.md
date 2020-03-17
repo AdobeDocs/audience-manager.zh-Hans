@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 批量管理工具疑难解答提示
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 translation-type: tm+mt
-source-git-commit: 994b12fd442a08da3b606dabca1f9382a7bd6f74
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 994b12fd442a08da3b606dabca1f9382a7bd6f74
 
 >[!NOTE]
 >
->不 [!UICONTROL Bulk Management Tools] 支持 *。*[!DNL Audience Manager]此工具仅出于方便和礼貌而提供。 对于批量更改，我们建议您改用 [Audience Manager API](../../api/rest-api-main/aam-api-getting-started.md) 。 [在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
+>[在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
 
 网络流量大、服务器使用量大和数据集大等因素可能导致批量请求失败或超时。 如果存在问题，则工作表将停止写入数据并显示错误消息。 发生这种情况时，您应：
 
@@ -49,14 +49,14 @@ source-git-commit: 994b12fd442a08da3b606dabca1f9382a7bd6f74
   <tr> 
    <td colname="col1"> <b>身份验证错误</b> </td> 
    <td colname="col2"> 
-    <b>更新至最新版Microsoft Excel</b>:当发布新版Microsoft excel并且您使用的是旧版本时，您可能会在批量管理工作表中遇到身份验证错误。 更新至最新版Microsoft Excel，以解决身份验证错误。
+    <b>更新至最新版Microsoft Excel</b>:当发布新版Microsoft Excel并且您使用的是旧版本时，您可能会在批量管理工作表中遇到身份验证错误。 更新至最新版Microsoft Excel，以解决身份验证错误。
 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>长时间延迟</b> </td> 
    <td colname="col2"> 
     <ul id="ul_AA6F414024B2475AB1C0B46DC3FF0B36"> 
-     <li id="li_ECC83AC39D7142519AA9A223DB8FCF23"> <b>关闭兼容性模式</b>:检查您是否在Microsoft excel的兼容性模式下打开了其他工作表。 兼容性模式可增加运行时数。 关闭您在此模式下可能打开的所有电子表格，然后再次尝试批量请求。 </li> 
+     <li id="li_ECC83AC39D7142519AA9A223DB8FCF23"> <b>关闭兼容性模式</b>:检查您是否在Microsoft Excel的兼容性模式下打开了其他工作表。 兼容性模式可增加运行时数。 关闭您在此模式下可能打开的所有电子表格，然后再次尝试批量请求。 </li> 
      <li id="li_234BFCF563234DE198884F33AB75280D"> <b>系统资源</b>:有限的系统资源导致长时间延迟。 在发出批量请求之前，尝试关闭所有其他程序。 </li> 
     </ul> </td> 
   </tr> 
@@ -66,7 +66,7 @@ source-git-commit: 994b12fd442a08da3b606dabca1f9382a7bd6f74
     <ul id="ul_142E63CDD556414AB639E51734FEDBCF"> 
      <li id="li_DBB6C819603D46B5AECC9C854FDAFDF1">确保为选择操作设置了正确的标题集。 </li> 
      <li id="li_391C9031907A4085BDAD42054960045C">请确保您正在为复制的标题使用正确的工作表。 </li> 
-     <li id="li_76A7241989204933858621FAAB5C3408">检查要在批量操作中使用的数据的位置。 所有标题都从A列第1行开始。 所有数据都会进入相应的标题中，从A列第2行开始（紧挨着标题的下方）。 </li> 
+     <li id="li_76A7241989204933858621FAAB5C3408">检查要在批量操作中使用的数据的位置。 所有标题都从A列第1行开始。 所有数据都会进入相应的标题中，从A列第2行（紧挨着标题的下方）开始。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -74,5 +74,5 @@ source-git-commit: 994b12fd442a08da3b606dabca1f9382a7bd6f74
 
 ## 错误消息
 
-有时，在进行批量更改时，您会收到错误消息。 要解释错误消息，请参阅API [文档中的响应代码](/help/using/api/rest-api-main/aam-api-getting-started.md) （定义）。
+有时，您会在进行批量更改时收到错误消息。 要解释错误消息，请参阅API [文档中的响应代码](/help/using/api/rest-api-main/aam-api-getting-started.md) （定义）。
 
