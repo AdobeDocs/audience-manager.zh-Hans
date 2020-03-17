@@ -1,20 +1,20 @@
 ---
-description: 通过实例级DIL API，您可以有计划地创建和使用Audience manager对象。 实例级方法增强了类级方法所建立的API功能。
-keywords: 创建特征；创建特征
-seo-description: 通过实例级DIL API，您可以有计划地创建和使用Audience manager对象。 实例级方法增强了类级方法所建立的API功能。
+description: 通过实例级DIL API，您可以有计划地创建和使用Audience Manager对象。 实例级方法增强了类级方法所建立的API功能。
+keywords: create traits;create trait
+seo-description: 通过实例级DIL API，您可以有计划地创建和使用Audience Manager对象。 实例级方法增强了类级方法所建立的API功能。
 seo-title: 实例级DIL方法
 solution: Audience Manager
 title: 实例级DIL方法
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
 
 # 实例级DIL方法{#instance-level-dil-methods}
 
-通过实例级API, [!UICONTROL DIL] 您可以有计划地创建和使用Audience manager对象。 实例级方法增强了类级方法所建立的API功能。
+通过实例级API, [!UICONTROL DIL] 您可以有计划地创建和使用Audience Manager对象。 实例级方法增强了类级方法所建立的API功能。
 
 ## 实例级DIL方法入门 {#get-started-dil-methods}
 
@@ -26,7 +26,7 @@ c_api_overview.xml
 
 使用实例级API时： [!UICONTROL DIL]
 
-* 访问需要合作伙伴名称和容器命名空间ID(NSID)。 请联系Audience manager客户经理以获取此信息。
+* 访问需要合作伙伴名称和容器命名空间ID(NSID)。 请联系Audience Manager客户经理以获取此信息。
 * 根据您所 *使用的方法* ，将API文档中任何斜体文本示例替换为值、ID或其他变量。
 
 <!-- 
@@ -45,12 +45,12 @@ r_dil_signals.xml
 
  -->
 
-**** 函数签名： `signals: function ({key1:value1, key2:value2},prefix){}`
+**函数签名：** `signals: function ({key1:value1, key2:value2},prefix){}`
 
 >[!NOTE]
 >
 >* 您可以将其他API调用链接到此方法。
->* 如果Adobe Experience Cloud javaScript库位于页面上， `submit()` 则在发送请求之前等待Cloud设置Cookie。
+>* 如果Adobe Experience Cloud JavaScript库位于页面上， `submit()` 则在发送请求之前等待Cloud设置Cookie。
 
 
 **保留请求密钥**
@@ -107,7 +107,7 @@ r_dil_traits.xml
 
  -->
 
-**** 函数签名： `traits:function (sids){}`
+**函数签名：** `traits:function (sids){}`
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ r_dil_logs.xml
 
  -->
 
-**** 函数签名： `logs: function {key1:value1, key2:value2}`
+**函数签名：** `logs: function {key1:value1, key2:value2}`
 
 **响应**
 
@@ -172,7 +172,7 @@ r_dil_submit.xml
 
  -->
 
-**** 函数签名： `submit: function () {}`
+**函数签名：** `submit: function () {}`
 
 >[!NOTE]
 >
@@ -210,7 +210,7 @@ r_dil_after_result.xml
 
  -->
 
-**** 函数签名： `afterResult: function (fn) {}`
+**函数签名：** `afterResult: function (fn) {}`
 
 >[!NOTE]
 >
@@ -252,7 +252,7 @@ r_dil_clear_data.xml
 
  -->
 
-**** 函数签名： `clearData: function () {}`
+**函数签名：** `clearData: function () {}`
 
 >[!NOTE]
 >
@@ -292,7 +292,7 @@ r_dil_custom_query_params.xml
 
  -->
 
-**** 函数签名： `customQueryParams: function (obj) {}`
+**函数签名：** `customQueryParams: function (obj) {}`
 
 >[!NOTE]
 >
@@ -336,7 +336,7 @@ r_dil_get_container_nsid.xml
 
  -->
 
-**** 函数签名： `dil.api.getContainerNSID: function () {}`
+**函数签名：** `dil.api.getContainerNSID: function () {}`
 
 **示例代码**
 
@@ -360,7 +360,7 @@ r_dil_get_event_log.xml
 
  -->
 
-**** 函数签名： `dil.api.getEventLog: function () {}`
+**函数签名：** `dil.api.getEventLog: function () {}`
 
 **示例代码**
 
@@ -397,7 +397,7 @@ r_dil_get_partner.xml
 
  -->
 
-**** 函数签名： `dil.api.getPartner: function () {}`
+**函数签名：** `dil.api.getPartner: function () {}`
 
 **示例代码**
 
@@ -421,7 +421,7 @@ r_dil_get_state.xml
 
  -->
 
-**** 函数签名： `dil.api.getState: function () {}`
+**函数签名：** `dil.api.getState: function () {}`
 
 **示例代码**
 
@@ -483,7 +483,7 @@ state = {
 
 ## idSync {#idsync}
 
-由两个功能组成，它们使数据合作伙伴能够在他们与Audience Manager之间交换和同步用户ID。
+由两个功能组成，它们使数据合作伙伴能够在自己和Audience Manager之间交换和同步用户ID。
 
 <!-- 
 
@@ -505,11 +505,11 @@ r_dil_idsync.xml
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.idSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>不同数据合作伙伴和Audience Manager之间。 例如，合作伙伴x将使用它将用户ID与合作伙伴y同步，然后将其发送到Audience Manager。 </p> <p> <p><b></b> 重要说明： 此方法已弃用。 请使用 <code> idSyncByURL </code> Experience Cloud ID服务实例的方法。 </p> </p> </td> 
+   <td colname="col2"> <p>不同数据合作伙伴和Audience Manager之间。 例如，合作伙伴x将使用它将用户ID与合作伙伴y同步，然后将其发送到Audience Manager。 </p> <p> <p><b>重要说明：</b> 此方法已弃用。 请使用 <code> idSyncByURL </code> Adobe Experience Platform Identity Service实例的方法。 </p> </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.aamIdSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>当您已经知道用户ID并希望将其发送到Audience Manager时。 </p> <p> <p><b></b> 重要说明： 此方法已弃用。 请使用 <code> idSyncByDataSource </code> Experience Cloud ID服务实例的方法。 </p> </p> </td> 
+   <td colname="col2"> <p>当您已经知道用户ID并希望将其发送到Audience Manager时。 </p> <p> <p><b>重要说明：</b> 此方法已弃用。 请使用 <code> idSyncByDataSource </code> Adobe Experience Platform Identity Service实例的方法。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -554,9 +554,9 @@ r_dil_idsync.xml
 
 `idSync` 接受以下宏：
 
-* **`%TIMESTAMP%`** :生成时间戳（以毫秒为单位）。 用于缓存无效的情况。
-* **`%DID%`** :插入用户的Audience Manager ID。
-* **`%HTTP_PROTO%`** :设置页面协议( `http` 或 `https`)。
+* **`%TIMESTAMP%`:**生成时间戳（以毫秒为单位）。 用于缓存无效的情况。
+* **`%DID%`:**插入用户的Audience Manager ID。
+* **`%HTTP_PROTO%`:**设置页面协议(`http`或`https`)。
 
 **响应**
 
@@ -597,7 +597,7 @@ r_dil_result.xml
 
  -->
 
-**** 函数签名： `result: function (callback) {}`
+**函数签名：** `result: function (callback) {}`
 
 此回调替换处理目标发布的默认回调。
 
@@ -628,7 +628,7 @@ dataLib.api.traits([<i>123, 456, 789</i>]).result(function(json){
 });.submit();
 </code></pre>
 
-##  secureDataCollection {#securedatacollection}
+## secureDataCollection {#securedatacollection}
 
 `secureDataCollection` 是一个布尔参数，它控制 [!UICONTROL DIL] 如何调用和 [!UICONTROL Data Collection Servers (DCS)] Akamai。
 
@@ -679,7 +679,7 @@ var dilInstance = DIL.create({
 >[!IMPORTANT]
 >
 >* 我们建议您仅在确 `useCORSOnly: true` 定网站访客拥有支持此功能的浏览器时进行设置。
->* 当 `useCORSOnly: true`时， [!UICONTROL DIL] 将不从Internet explorer版本9或更早版本进行ID调用。
+>* 当 `useCORSOnly: true`时， [!UICONTROL DIL] 将不从Internet Explorer版本9或更早版本进行ID调用。
 >
 
 
@@ -694,7 +694,7 @@ r_dil_use_image_request.xml
 
  -->
 
-**** 函数签名： `useImageRequest: function () {}`
+**函数签名：** `useImageRequest: function () {}`
 
 >[!NOTE]
 >
@@ -719,8 +719,8 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >
 >* [关键变量的名称要求](../features/traits/trait-key-name-requirements.md)
 >* [关键变量的前缀要求](../features/traits/trait-variable-prefixes.md)
->* [Experience Cloud ID服务中的同步功能](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-idsync.html)
+>* [Adobe Experience Platform Identity Service中的同步功能](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-idsync.html)
 >* [DIL创建](../dil/dil-class-overview/dil-create.md#dil-create)
->* [Experience Cloud ID服务：UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
->* [Experience Cloud ID 服务中的 CORS 支持](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
+>* [Adobe Experience Platform Identity Service:UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
+>* [Adobe Experience Platform Identity Service中的CORS支持](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
 
