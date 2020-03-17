@@ -1,13 +1,13 @@
 ---
 description: 有关客户数据馈送(CDF)文件的基本信息以及如何入门的说明。 如果您对接收CDF文件感兴趣或只想了解更多信息，请从此处开始。
-keywords: 第二方数据；第二方数据；第二方数据；第二方数据；
+keywords: second party data;2nd party;2nd party data;second party
 seo-description: 有关客户数据馈送(CDF)文件的基本信息以及如何入门的说明。 如果您对接收CDF文件感兴趣或只想了解更多信息，请从此处开始。
 seo-title: 客户数据馈送
 solution: Audience Manager
 title: 客户数据馈送
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
@@ -64,7 +64,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    <td colname="col3"> <p>数据收集服务器 <span class="wintitle"></span> (DCS)处理CDF文件的时间。 时间戳使用 <i>yyyy-mm-dd hh:mm:ss</i> 格式，并在UTC时区中设置。 </p> <p> <p>注意：活动时 <i>间不是</i>: <p> 
        <ul id="ul_41ABC813FAAC4659AC8DA13F4A6DD7EB"> 
         <li id="li_0192D253EA4C49C4BF2E8BA62CEE028E">页面事件或活动调用本身的时间，尽管可能接近这些时间。 </li> 
-        <li id="li_271DF14395BC495FBF17186588A554A8">与文件名中的DCS小时数相关。 <a href="#different-processing-times">另请参阅客 </a> 户数据馈送文件名时间和文件内容时间……. </li> 
+        <li id="li_271DF14395BC495FBF17186588A554A8">与文件名中的DCS小时数相关。 另请参阅客 <a href="#different-processing-times"> 户数据馈送文件名时间和文件内容时间……</a>. </li> 
        </ul> </p> </p> </p> </td> 
   </tr> 
   <tr> 
@@ -105,7 +105,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
-   <td colname="col3"> <p>分 <span class="keyword"> 配给网站访客的Experience Cloud</span> ID(MID)。 See also, <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and theExperience Cloud ID service</a>. </p> </td> 
+   <td colname="col3"> <p>分 <span class="keyword"> 配给网站访客的Experience Cloud</span> ID(MID)。 另请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity Service</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -159,7 +159,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">请求参数 </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referer </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP 地址 </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud设备ID（或MID）。 See also, <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID Service</a> </li> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud设备ID（或MID）。 另请参阅 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity Service</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">所有细分 </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">所有特征 </li> 
      </ol> </p> <p>有关字段说明，请参阅 <a href="#cdf-defined"> 定义的客户数据馈送内容</a>。 </p> </td> 
@@ -233,7 +233,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>hour=<i>hh</i></code> </p> </td> 
-   <td colname="col2"> <p>以24小时表示法表示并在UTC时区中设置的时间值。 <a href="#different-processing-times">另请参阅客 </a> 户数据馈送文件名时间和文件内容时间……. </p> </td> 
+   <td colname="col2"> <p>以24小时表示法表示并在UTC时区中设置的时间值。 另请参阅客 <a href="#different-processing-times"> 户数据馈送文件名时间和文件内容时间……</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>partner ID</i> </code> </p> </td> 
@@ -373,7 +373,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 
 | 时间戳位置 | 描述 |
 |--- |--- |
-| 文件名 | CDF文件名中的时间戳标记开始准备文 [!DNL Audience Manager] 件以进行交付的时间。 此时间戳以UTC时区设置。 它使用该 `hour=` 参数，时间格式设置为24小时表示法的2位数小时。 此时间可以不同于文件内容中记录的事件时间。 处理CDF文件时，有时您会注意到S3存储段在特定小时内为空。 空桶装置可以表示以下任一情况：<ul><li>那个小时没有数据。 </li><li> 我们的服务器负载很重，在某个小时内无法处理文件。 当服务器启动时，它将本应在较早时间段中存储的文件放入一个稍后时间值的存储段中。 例如，您会看到，应该在17小时存储段中的文件出现在18小时存储段中(文件名 `hour=18` 中包含)。 在这种情况下，服务器可能在17小时内开始处理您的文件，但无法在该时间间隔内完成它。 相反，文件会被推送到下一个每小时的时段。</li></ul><br>**重要说明**:请勿使用文件名时间戳按时间对事件分组。 如果需要按时间分组，请使用文 `EventTime` 件内容中的时间戳。 |
+| 文件名 | CDF文件名中的时间戳标记开始准备文 [!DNL Audience Manager] 件以进行交付的时间。 此时间戳以UTC时区设置。 它使用该 `hour=` 参数，时间格式设置为24小时表示法的2位数小时。 此时间可以不同于文件内容中记录的事件时间。 处理CDF文件时，有时您会注意到S3存储段在特定小时内为空。 空桶装置可以表示以下任一情况：<ul><li>那个小时没有数据。 </li><li> 我们的服务器负载很重，在某个小时内无法处理文件。 当服务器启动时，它将本应在较早时间段中存储的文件放入一个稍后时间值的存储段中。 例如，您会看到，应该在17小时存储段中的文件出现在18小时存储段中(文件名 `hour=18` 中包含)。 在这种情况下，服务器可能在17小时内开始处理您的文件，但无法在该时间间隔内完成它。 相反，文件会被推到下一个每小时的时段。</li></ul><br>**重要说明&#x200B;**:请勿使用文件名时间戳按时间对事件分组。 如果需要按时间分组，请使用文`EventTime`件内容中的时间戳。 |
 | 文件内容 | CDF文件内容中的时间戳标记数据收集服务器开始处理文件的时间。 此时间戳以UTC时区设置。 它使用字 `EventTime` 段，时间格式设置为 *`yyyy-mm-dd hh:mm:ss`*。 此时间接近页面上活动的实际时间，但可能与文件名中的小时指示符不同。 <br> **提示**:与文件名 `hour=` 中的时间戳不同，您可以按时间 `EventTime` 使用数据分组。 |
 
 >[!MORELIKETHIS]
