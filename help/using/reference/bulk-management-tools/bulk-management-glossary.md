@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 批量管理工具词汇表
 uuid: 4658a6bc-9515-4d31-9715-0084760b0cea
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 >[!NOTE]
 >
->不 [!UICONTROL Bulk Management Tools] 支持 *。*[!DNL Audience Manager]此工具仅出于方便和礼貌而提供。 对于批量更改，我们建议您改用 [Audience Manager API](../../api/rest-api-main/aam-api-getting-started.md) 。 [在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
+>[在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
 
 <table id="table_2C2BC2FB3EFC443C9A5AE18EFC6FABFD"> 
  <thead> 
@@ -95,15 +95,15 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitRule / segmentRule</span> </p> </td> 
-   <td colname="col2"> <p>用于收集数据的实际特征或区段规则。 批量请求将返回在 <span class="keyword"> Audience Manager中使用特征规则构建器</span> 或区段规则构建器创 <a href="../../features/traits/about-trait-builder.md"> 建的规则</a><a href="../../features/segments/segment-builder.md"></a>。 在更新段或特征时，您还可以使用这些工具构建规则并批量应用这些规则。 </p> <p>另请参阅创 <a href="../../reference/bulk-management-tools/bulk-rules.md"> 建或更新特征规则和区段规则</a>。 </p> </td> 
+   <td colname="col2"> <p>用于收集数据的实际特征或区段规则。 批量请求将返回在 <span class="keyword"> Audience Manager中使用特征规则构建器</span> 或区段规则构建器创建 <a href="../../features/traits/about-trait-builder.md"> 的规则</a><a href="../../features/segments/segment-builder.md"></a>。 在更新段或特征时，您还可以使用这些工具构建规则并批量应用这些规则。 </p> <p>另请参阅创 <a href="../../reference/bulk-management-tools/bulk-rules.md"> 建或更新特征规则和区段规则</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitType</span> </p> </td> 
    <td colname="col2"> <p>标识特征类型的字符串。 选项包括： </p> 
     <ul id="ul_AB5B4F87B14241DCBBE44B0B7BD4EF72"> 
      <li id="li_21F9412CDDC64FAA888C6542E284C436"> <code> RULE_BASED_TRAIT</code> </li> 
-     <li id="li_5A5EA9A1EC5C45C991875EBBE7979A5A"> <code> ON_HOCKED_TRAIT </code> </li> 
-     <li id="li_F38B58ADE3324E97A71E3F94F11945BE"> <code> 区段</code> </li> 
+     <li id="li_5A5EA9A1EC5C45C991875EBBE7979A5A"> <code> ON_BOARDED_TRAIT </code> </li> 
+     <li id="li_F38B58ADE3324E97A71E3F94F11945BE"> <code> SEGMENT</code> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
