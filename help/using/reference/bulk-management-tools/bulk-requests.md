@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 批量请求
 uuid: 0192d26a-4cea-4e12-9fea-388b92b382f1
 translation-type: tm+mt
-source-git-commit: cb17d417aa6b3cc213e69c5d71051f235d81c2a5
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -23,7 +23,7 @@ t_bulk_requests.xml
 
 >[!NOTE]
 >
->不 [!UICONTROL Bulk Management Tools] 支持 *。*[!DNL Audience Manager]此工具仅出于方便和礼貌而提供。 对于批量更改，我们建议您改用 [Audience Manager API](../../api/rest-api-main/aam-api-getting-started.md) 。 [在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
+>[在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
 
 工 [!UICONTROL Request] 作表没有其自己的列标题集，您无需将ID复制到任何列。 而是根据您在工具栏中单击的操作按钮返回数据。 此外，可选报告功能会为像素触发返回频率计数，并为多个固定时间间隔返回唯一用户计数。
 
@@ -34,7 +34,7 @@ t_bulk_requests.xml
 
    * 算法模型
    * 数据源
-   *  派生信号
+   * 派生信号
    * 目标映射
    * 算法、基于规则和载入的特征
    * 区段
