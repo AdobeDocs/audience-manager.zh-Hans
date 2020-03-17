@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 批量创建
 uuid: 1e09bcfa-783e-4e9b-9ead-147f8d1381c8
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 3051ca9f7c4039dafdfa01b89226c1fa8717e610
 
 ---
 
@@ -23,7 +23,7 @@ t_bulk_create.xml
 
 >[!NOTE]
 >
->不 [!UICONTROL Bulk Management Tools] 支持 *。*[!DNL Audience Manager]此工具仅出于方便和礼貌而提供。 对于批量更改，我们建议您改用 [Audience Manager API](../../api/rest-api-main/aam-api-getting-started.md) 。 [在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
+>[在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
 
 >[!CAUTION]
 >
@@ -32,13 +32,12 @@ t_bulk_create.xml
 要批量创建对象，请打开工作 [!UICONTROL Bulk Management Tools] 表并：
 
 1. 单击选 **[!UICONTROL Headers]** 项卡，然后复制要添加的项目的创建标题。
-1. Click the **[!UICONTROL Create]** tab.
-1. 将创建的标题粘贴到更新工作表的第一行中。
-1. 根据标题标签，粘贴或键入要更改的数据到相应的列。
-1. 在工作表工具栏中，单击与要更新的项目匹配的创建按钮。
+2. Click the **[!UICONTROL Create]** tab.
+3. 将创建的标题粘贴到更新工作表的第一行中。
+4. 根据标题标签，粘贴或键入要更改的数据到相应的列。
+5. 在工作表工具栏中，单击与要更新的项目匹配的创建按钮。
 此操作将打开对 [!UICONTROL Account Information] 话框。
-
-1. 提供所需的 [登录信息](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) ，然后单击 **[!UICONTROL Submit]**。
+6. 提供所需的 [登录信息](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) ，然后单击 **[!UICONTROL Submit]**。
 
 工作表会创建一 [!UICONTROL Results] 列。 该 [!UICONTROL Results] 列返回成功操作的JSON响应。 有关示 [例，请参阅](../../api/rest-api-main/rest-api-main.md) REST API。 在输入数据之前，批量创建工作表的外观应类似于以下示例。 注意，此处不显示所有不同的创建选项。 其中包括该组件，以帮助您了解完成的工作表的外观。
 
