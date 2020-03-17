@@ -4,10 +4,10 @@ seo-description: 列出并描述可传递到数据收集服务器(DCS)的语法�
 seo-title: DCS API调用支持的属性
 solution: Audience Manager
 title: DCS API调用支持的属性
-keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid ic
+keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid_ic
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 translation-type: tm+mt
-source-git-commit: 6e2cb69cd2f65851b82ed9a28f4a108562ce6ab8
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 6e2cb69cd2f65851b82ed9a28f4a108562ce6ab8
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_</code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> Audience manager属性</span> 。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Audience Manager属性</span> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> h_</code> </p> </td> 
@@ -42,7 +42,7 @@ source-git-commit: 6e2cb69cd2f65851b82ed9a28f4a108562ce6ab8
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> p_</code> </p> </td> 
-   <td colname="col2"> <p>由客户定义的私有属性。 </p> <p> 当密钥具有 <code> p_</code> 前缀时，DCS接受您自己的私有数据。 私有数据用于特征评估，但不会记录或存储在我们的系统中。 例如，假设您有一个特征定义为 <code> 客户= p_age&lt;25</code> ，并且在事件调用中传递 <code> p_age=23</code> 。 鉴于这些情况，符合基于年龄的资格标准的用户有资格获得该特征，但在 <span class="keyword"></span> Audience Manager收到请求后，键值对会丢失，且不会记录。 </p> </td>
+   <td colname="col2"> <p>由客户定义的私有属性。 </p> <p> 当密钥具有前缀时，DCS接受您自己的专用 <code> p_</code> 数据。 私有数据用于特征评估，但不会记录或存储在我们的系统中。 例如，假设您有一个特征定义为， <code> customers = p_age&lt;25</code> 并且您在事件调 <code> p_age=23</code> 用中传入。 鉴于这些情况，符合基于年龄的资格标准的用户有资格获得该特征，但在 <span class="keyword"></span> Audience Manager收到请求后，键值对会丢失，且不会记录。 </p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -69,37 +69,45 @@ source-git-commit: 6e2cb69cd2f65851b82ed9a28f4a108562ce6ab8
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_cid</code> </p> </td> 
-   <td colname="col2"> <p>包含由Audience manager分配的一对或多对数据提供者ID(<code> DPID</code>)和数据提供者用户ID(<code> DPUUID)</code><span class="keyword"></span>。 如果使用多对 <code> DPID和</code>DPUUID，则每对都用非打印字符 <code> %01分隔</code><code></code>。 例如： <code><i>DPID</i>%01<i>DPUUID</i></code>。 </p> <p><code> d_cid替换</code> 了d_dpid <code> 和</code> d_dpuuid <code></code>，已弃用但仍受支持。 请参阅 <a href="../../../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td>
+   <td colname="col2"> <p>包含由<code> DPID</code>Audience Manager分配的一对或多对数据提供者ID(<code> DPUUID</code>)和数据提供者用户ID( <span class="keyword"> )</span>。 如果使用多对 <code> DPID</code>s和 <code> DPUUID</code>s，则每对都与非打印字符分开 <code> %01</code>。 For example: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_cid</code> 替换 <code> d_dpid</code> 和 <code> d_dpuuid</code>，它已弃用但仍受支持。 请参阅 <a href="../../../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cid_ic</code> </p> </td> 
-   <td colname="col2"> <p>在单个键值对中包含集成代码和关联的唯一用户ID。 </p> <p><code> d_cid_ic</code> 替换 <code> d_dpid</code> 和 <code> d_dpuuid</code>，已弃用但仍受支持。 请参阅 <a href="../../../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td>
+   <td colname="col2"> <p>在单个键值对中包含集成代码和关联的唯一用户ID。 </p> <p><code> d_cid_ic</code> 替换 <code> d_dpid</code> 和 <code> d_dpuuid</code>，它已弃用但仍受支持。 请参阅 <a href="../../../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>为遵守儿童保护法规，禁止使用第三方Cookie。 此参数由Adobe Experience Cloud ID服务动态设置，并取决于 <code> idSyncDisable3rdPartySyncing配置</code> 。 See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_coppa.html" format="https" scope="external"> COPPA Support in the Experience Cloud ID Service</a>. </p> </td>
+   <td colname="col2"> <p>为遵守儿童保护法规，禁止使用第三方Cookie。 此参数由Adobe Experience Platform Identity Service动态设置，并取决于配 <code> idSyncDisable3rdPartySyncing</code> 置。 请参 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_coppa.html" format="https" scope="external"> 阅Adobe Experience Platform Identity Service中的COPPA支持</a>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
-   <td colname="col2"> <p>可选。在客户请求时启用。 联系您的Adobe Audience manager顾问或客户关怀。 </p> <p>指示应在 <code> JSON响应中返回特征和区段</code> 。 </p> <p> 
+   <td colname="col2"> <p>可选。在客户请求时启用。 联系您的Adobe Audience Manager顾问或客户关怀。 </p> <p>指示应在响应内返回特征和区 <code> JSON</code> 段。 </p> <p> 
      <ul id="ul_8B936ACB18724681B959783421ACF026"> 
-      <li id="li_792A6248F49141C0B4B214C754D5F5C5"> <p><code> d_cts=1</code> 会返回 <a href="../../../reference/ids-in-aam.md"> 段的旧版段ID</a> 。 </p> </li>
+      <li id="li_792A6248F49141C0B4B214C754D5F5C5"> <p><code> d_cts=1</code> 返回 <a href="../../../reference/ids-in-aam.md"> 区段的旧版区段</a> ID。 </p> </li>
       <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_cts=2</code> 返回区段的区段ID。 </p> </li>
      </ul> </p> <p>示例响应可能如下所示： </p> <p>
      <code class="syntax javascript">
-      { "stuff": [], "uuid": "079552616528886032950143702505894272138", "dcs_region": 7, "traits": [420020, 5421506], "segments": [984263, 985264], "tid": "ss3OTqPiQp0=" } </code> </p> </td> 
+      {
+      &nbsp;&nbsp;&nbsp;&nbsp;"stuff":&nbsp;[],
+      &nbsp;&nbsp;&nbsp;&nbsp;"uuid":&nbsp;"07955261652886032950143702505894272138",
+      &nbsp;&nbsp;&nbsp;&nbsp;"dcs_region":&nbsp;7,
+      &nbsp;&nbsp;&nbsp;&nbsp;"traits":&nbsp;[420020,&nbsp;5421506],
+      &nbsp;&nbsp;&nbsp;&nbsp;"segments":&nbsp;[984263,&nbsp;985264],
+      &nbsp;&nbsp;&nbsp;&nbsp;"tid":&nbsp;"ss3OTqPiQp0="
+      }
+     </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_dpid</code> </p> </td> 
-   <td colname="col2"> <p>已弃用。请参 <code> 阅d_cid</code><code> 和d_cid_ic</code>。 </p> </td> 
+   <td colname="col2"> <p>已弃用。请参阅 <code> d_cid</code> 和 <code> d_cid_ic</code>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_dpuuid</code> </p> </td> 
-   <td colname="col2"> <p>已弃用。请参 <code> 阅d_cid</code><code> 和d_cid_ic</code>。 </p> </td> 
+   <td colname="col2"> <p>已弃用。请参阅 <code> d_cid</code> 和 <code> d_cid_ic</code>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_dst=1</code> </p> </td> 
-   <td colname="col2"> <p>在 <code> JSON响应中返回URL目标数据</code> 。 </p> </td> 
+   <td colname="col2"> <p>在响应中返回URL目标 <code> JSON</code> 数据。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_dst_filter</code> </p> </td> 
@@ -107,7 +115,7 @@ source-git-commit: 6e2cb69cd2f65851b82ed9a28f4a108562ce6ab8
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_jsonv=1|0</code> </p> </td> 
-   <td colname="col2"> <p>指示 <code></code> 要在响应中使用的JSON版本。 通常情况下，应将其设置为 <code> d_jsonv=1</code>。 设置 <code> d_jsonv=0</code> 将禁用ID同步。 </p> </td> 
+   <td colname="col2"> <p>指示 <code> JSON</code> 要在响应中使用的版本。 通常情况下，您应将其设置为 <code> d_jsonv=1</code>。 设置 <code> d_jsonv=0</code> 将禁用ID同步。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
@@ -119,51 +127,57 @@ source-git-commit: 6e2cb69cd2f65851b82ed9a28f4a108562ce6ab8
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_ptfm </code> </p> </td> 
-   <td colname="col2"> <p>允许Audience manager区分移动请求和桌面请求。 支持的值包括： </p> <p> 
+   <td colname="col2"> <p>允许Audience Manager区分移动请求和桌面请求。 支持的值包括： </p> <p> 
      <ul id="ul_A01D4B15C89F4713A39E08377924D632"> 
       <li id="li_E17CC839265B4EB9AC44A3DA31A23857"> <code> ios</code> </li> 
       <li id="li_468F5903CD3048B5AE02A3FDA9B3C4F1"> <code> android</code> </li> 
       <li id="li_57090DAC3BDA41DFB4BA0DD328754D55"> <code> browser</code> </li> 
-      <li id="li_DA4E93A831FE4FD8971CECD508AF992F"> <code> 全部</code> </li> 
+      <li id="li_DA4E93A831FE4FD8971CECD508AF992F"> <code> all</code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_rs</code> </p> </td> 
-   <td colname="col2"> <p>已弃用。<code> d_rs</code> 是保留属性，用于 <span class="keyword"> Adobe Analytics和</span> Audience Manager之间的旧式集成 <span class="keyword"></span>。 </p> <p>我们建议不要创建使用保留属性的特征。 Adobe可随时更改保留属性。 </p> </td> 
+   <td colname="col2"> <p>已弃用。<code> d_rs</code> 是保留属性，用于 <span class="keyword"> Adobe Analytics和</span> Audience Manager之间的旧版集成 <span class="keyword"></span>。 </p> <p>我们建议不要创建使用保留属性的特征。 Adobe可随时更改保留属性。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_rtbd=json</code> </p> </td> 
-   <td colname="col2"> <p>如果您希望从 <code> DCS获得JSON</code> 响应，则 <span class="wintitle"> 此为必需</span>。 </p> <p> 
+   <td colname="col2"> <p>如果希望从DCS获 <code> JSON</code> 得响应，则此 <span class="wintitle"> 为必需</span>。 </p> <p> 
      <ul id="ul_9EA00BD822504BCA8ECB59C1634DB91A"> 
       <li id="li_7CB890F92C4A4C6AA8B4EE32E1AD4564">如果忽略此值， <span class="wintitle"> DCS</span> 将返回标题中的像素。 </li> 
-      <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">如果包括此值， <span class="wintitle"> DCS</span> 将在响应主体中返回 <code> JSON</code> 对象。 请参阅以下示例。 您的反应可能更复杂。 </li> 
+      <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">如果包括此值， <span class="wintitle"> DCS</span> 将返 <code> JSON</code> 回响应正文中的对象。 请参阅以下示例。 您的反应可能更复杂。 </li> 
      </ul> </p> <p> 
      <code class="syntax javascript">
-      { "stuff": [], "uuid": "2292011296801967861290439474495439890", "dcs_region":7, "tid": "ss3OTqPiQp0=" } </code> </p> </td> 
+      {
+      &nbsp;&nbsp;&nbsp;&nbsp;"stuff":&nbsp;[],
+      &nbsp;&nbsp;&nbsp;&nbsp;"uuid":&nbsp;"22920112968019678612904394744954398990",
+      &nbsp;&nbsp;&nbsp;&nbsp;"dcs_region":&nbsp;7,
+      &nbsp;&nbsp;&nbsp;&nbsp;"tid":&nbsp;"ss3OTqPiQp0="
+      }
+     </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_sid</code> </p> </td> 
-   <td colname="col2"> <p><code> SID</code> 代表得分 <span class="term"> ID</span>。 这是特征或区段的唯一ID。 </p> </td> 
+   <td colname="col2"> <p><code> SID</code> 代表得 <span class="term"> 分ID</span>。 这是特征或区段的唯一ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_tdpid</code> </p> </td> 
    <td colname="col2"> <p>传递数据源以进行特征评估。 仅评估来自此数据源的特征。 </p> <p>例如，假设您有： </p> <p> 
      <ul id="ul_6230777E16C14DCB83025A101A4ECA14"> 
       <li id="li_71F3970417BC4B93881A3E12DADE4120"><b>特征T1</b> : </li> 
-      <li id="li_66125E035F524A958C6F4BFAABA2A0D2">特征规则："<code> key1 == val1</code>" </li> 
+      <li id="li_66125E035F524A958C6F4BFAABA2A0D2">特征规则：“<code> key1 == val1</code>” </li> 
       <li id="li_4EE486E02CF54AEA876ABC005094E9E4">数据源(<a href="../../../reference/ids-in-aam.md"> DPID</a>):1 </li> 
       <li id="li_3E6BBDEAE5C644C6A96CB49766CDA988">DPID集成代码：ic1 </li> 
      </ul> 
      <ul id="ul_0C30A8AE349D43A08490DA76CB4B06FA"> 
       <li id="li_F1E8DB26168B471FA35D82F4DD3AC601"><b>特征T2</b> : </li> 
-      <li id="li_1C943F84A4A149A0A86ABC92761D3E9E">特征规则："<code> key2 == val2</code>" </li> 
+      <li id="li_1C943F84A4A149A0A86ABC92761D3E9E">特征规则：“<code> key2 == val2</code>” </li> 
       <li id="li_F2AA086C87B7484F8BFE1D5C09E8EBDF">数据源(DPID):2 </li> 
       <li id="li_877CAAAE996A4707BEE74F7042708481">DPID集成代码：ic2 </li> 
-     </ul> </p> <p>在示例调用yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid=1 <code>中</code>，只返回特征T1。 </p> </td> 
+     </ul> </p> <p>在示例调用中， <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid=1</code>只返回特征T1。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_tdpid_ic</code> </p> </td> 
-   <td colname="col2"> <p>其用途与上述 <code> d_tdpid</code> 参数相同。 但是，在这种情况下，数据源使用集成代码进行传递。 </p> <p>保留上述特征，请考虑示例调用： </p> <p>对于 <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid_ic=ic2</code>，只返回特征T2。 </p> </td> 
+   <td colname="col2"> <p>其用途与上述参 <code> d_tdpid</code> 数相同。 但是，在这种情况下，数据源使用集成代码进行传递。 </p> <p>保留上述特征，请考虑示例调用： </p> <p>对 <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid_ic=ic2</code>于，只返回特征T2。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_uuid</code> </p> </td> 
