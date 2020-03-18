@@ -5,7 +5,7 @@ seo-title: 基于人员的目标先决条件和注意事项
 solution: Audience Manager
 title: 先决条件和注意事项
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: c605e04489ad444193e1e884ee6a3b05f437b9f2
 
 ---
 
@@ -37,6 +37,18 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
    >[!IMPORTANT]
    > 配置Adobe Experience Cloud的权限时，必须启用“管理营销活 **动”权** 限。 这是集成所必需的 [!DNL People-Based Destinations] 选项。
 3. 阅读并签署 [!DNL Facebook Custom Audiences] 服务条款。 为此，请转到 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`您的 `accountID` 位置 [!DNL Facebook Ad Account ID]。
+
+### [!DNL LinkedIn]
+
+>[!IMPORTANT]
+>
+> 与的 [!DNL People-Based Destinations] 集成目 [!DNL LinkedIn] 前处于测试阶段，并且仅对有限数量的客户可用。
+> 
+> 测试版测试结束后，此集成将可供注册的所有Audience Manager客户使用 [!DNL People-Based Destinations]。
+
+在使用将第 [!DNL People-Based Destinations] 一方受众细分发送到之前，请确 [!DNL LinkedIn]保您的帐户 [!DNL LinkedIn Campaign Manager] 具有或更高 [!DNL Creative Manager] 的权限级别。
+
+要了解如何编辑用户权 [!DNL LinkedIn Campaign Manager] 限，请参阅 [添加、编辑和删除广告帐户的用户权限](https://www.linkedin.com/help/lms/answer/5753)
 
 ## 数据入门 {#data-onboarding}
 
