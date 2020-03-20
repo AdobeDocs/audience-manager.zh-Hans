@@ -5,8 +5,9 @@ seo-title: 数据收集和产品集成常见问题解答
 solution: Audience Manager
 title: 数据收集和产品集成常见问题解答
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
+keywords: SFTP; SFTP address; STFP IP address; FTP address
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: d221890d2a80cd557a6968d3382ee8842fea9aef
 
 ---
 
@@ -39,7 +40,7 @@ faq_data_collection_integration.xml
 
 <br> 
 
-**能否为我提供入站和出站FTP服务器的白名单中的IP地址？**
+**能否为我提供入站和出站sFTP服务器的白名单中的IP地址？**
 
 是的，请参见下面的内容。
 
