@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Audience Manager User Guide
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: b22302ebf16bc71c61a974e33dc399caafb96095
 
 ---
 
@@ -370,6 +370,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
    + [了解 Demdex 域调用](reference/demdex-calls.md)
    + [Audience Manager中的访客身份验证状态](reference/visitor-authentication-states.md)
 + 常见问题解答{#faqs}
+   + [Audience Manager常见问题解答概述](faq/faq-overview.md)
    + [API常见问题解答](faq/faq-api.md)
    + [Audience Lab常见问题解答](faq/faq-audience-lab.md)
    + [客户数据馈送常见问题解答](faq/faq-cdf.md)
