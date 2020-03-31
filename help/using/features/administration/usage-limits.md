@@ -1,34 +1,34 @@
 ---
-description: Audience Manager设置可为帐户创建的特征、区段、目标和算法模型的最大数量限制。 无论是在用户界面中创建还是通过API方法以编程方式创建，这些限制都适用于这些项目。 使用限制有助于保护Audience Manager免受可能破坏我们API或用户界面的自动化流程的侵害。
-seo-description: Audience Manager设置可为帐户创建的特征、区段、目标和算法模型的最大数量限制。 无论是在用户界面中创建还是通过API方法以编程方式创建，这些限制都适用于这些项目。 使用限制有助于保护Audience Manager免受可能破坏我们API或用户界面的自动化流程的侵害。
+description: 受众管理器设置可为帐户创建的特征、区段、目标和算法模型的最大数量限制。 无论是在用户界面中创建还是通过API方法以编程方式创建，这些限制都适用于这些项目。 使用限制有助于保护受众管理器免受可能破坏我们的API或用户界面的自动化进程的影响。
+seo-description: 受众管理器设置可为帐户创建的特征、区段、目标和算法模型的最大数量限制。 无论是在用户界面中创建还是通过API方法以编程方式创建，这些限制都适用于这些项目。 使用限制有助于保护受众管理器免受可能破坏我们的API或用户界面的自动化进程的影响。
 seo-title: 使用限制
 solution: Audience Manager
 title: 使用限制
-keywords: ID映射， ID映射， cookie映射
-uuid: 50ca4647-0b5c-409c-89fa-4fa179b3222
+keywords: ID mapping, ID mappings, cookie mappings
+uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 translation-type: tm+mt
-source-git-commit: d893998e9e59dbce64195a167e267c6f7ed16f90
+source-git-commit: f9f201824accdde18efafa0a8c389af48423534d
 
 ---
 
 
-#  使用限制 {#usage-limits}
+# 使用限制 {#usage-limits}
 
-Audience Manager设置可为帐户创建的特征、区段、目标和算法模型的最大数量限制。 无论是在用户界面中创建还是通过方法以编程方式创建，限制都适用于这些 [!DNL API] 项目。 使用限制有助于保护Audience Manager免受可能危及我们或用户界面的 [!DNL API]自动化流程的侵害。
+受众管理器设置可为帐户创建的特征、区段、目标和算法模型的最大数量限制。 无论是在用户界面中创建还是通过方法以编程方式创建，限制都适用于这些 [!DNL API] 项目。 使用限制有助于保护受众管理器免受可能破坏我们或用户界面 [!DNL API]的自动化进程的影响。
 
 ## ID 映射限制 {#id-mapping-limits}
 
-下表列出了设备ID [的ID](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) 映射限制。 一旦ID达到以下任何限制，Audience Manager将删除最旧的存储ID映射，并根据 [!DNL FIFO] （先入后出）逻辑添加新ID映射，从而添加新ID映射。 有关Audience manager [支持的ID的详细信息](../../reference/ids-in-aam.md) ，请参阅Audience manager中的ID索引。
+下表列表了设 [备ID的](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) ID映射限制。 一旦ID达到以下任何限制，受众管理器将删除最旧的存储ID映射并添加新的映射，从而根据 [!DNL FIFO] （先入后出）逻辑添加新的ID映射。 有关受众 [管理器支持的ID的详细信息](../../reference/ids-in-aam.md) ，请参阅受众管理器中的ID索引。
 
 | ID映射 | 最大限制 |
 |-----------|-------------- |
-| 设备广告ID(DAID)到跨设备ID(CRM ID) | 100个设备广告ID(DAID)到1个跨设备ID(CRM ID) |
-| 跨设备ID(CRM ID)到设备广告ID(DAID) | 10个跨设备ID(CRM ID)到1个设备广告ID(DAID) |
+| 设备广告ID([DAID](../../reference/ids-in-aam.md))到跨设备ID([DPUUID](../../reference/ids-in-aam.md)) | 100个设备广告ID([DAID](../../reference/ids-in-aam.md))到1个跨设备ID([DPUUID](../../reference/ids-in-aam.md)) |
+| 跨设备ID([DPUUID](../../reference/ids-in-aam.md))到设备广告ID([DAID](../../reference/ids-in-aam.md)) | 每个DPID有10个跨设[备ID(DPUUID](../../reference/ids-in-aam.md))到1个设备广告ID([DAID](../../reference/ids-in-aam.md)) [（每个DPID）](../../reference/ids-in-aam.md) |
 | Cookie/浏览器ID至Cookie/浏览器ID | 1000个cookie/浏览器ID至1个cookie/浏览器ID |
 
 ## 项目限制 {#item-limits}
 
-这些表按项目类型列出当前限制。 您不能创建新特征、区段、目标，或 [!UICONTROL Algorithmic Models] 者如果您达到其中一个项目的特定限制。 如果达到限制，则必须先删除旧项目，然后才能创建新项目。
+这些表按项目类型列表当前限制。 您不能创建新特征、区段、目标，或 [!UICONTROL Algorithmic Models] 者如果您达到其中一个项目的特定限制。 如果达到限制，则必须先删除旧项目，然后才能创建新项目。
 
 ### 特征限制
 
@@ -62,7 +62,7 @@ Audience Manager设置可为帐户创建的特征、区段、目标和算法模�
 | 项目 | 最大限制 |
 | -------- | ----- |
 | 活动算法模型 | 20. Audience Manager only counts *active* algorithmic models against the limit. |
-| 算法模型最大受众规模 | 25,000,000.  请注意，此限制不能增加。 您可以通过为模型选择较少的数据源或选择较短的回顾窗口来减少受众规模。 |
+| 算法模型最大受众大小 | 25,000,000.  请注意，此限制不能增加。 通过为模型选择较少的数据源或选择较短的回顾窗口，可以减小受众大小。 |
 | 模型被排除的特征的最大数量 | 500.请参 [阅算法建模中的特征排除](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md)。 |
 
 ### 文件夹限制
