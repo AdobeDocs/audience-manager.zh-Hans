@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 特征鉴定参考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
-source-git-commit: ceda75d2bc57aa164cb048c20e3fcff33000cddb
+source-git-commit: bd0ebcddc89c2141e9ce55d7fa2e68b5ca1cbb22
 
 ---
 
@@ -34,13 +34,13 @@ source-git-commit: ceda75d2bc57aa164cb048c20e3fcff33000cddb
 
 按以下方式筛选结果时 [!UICONTROL Device ID]:
 
-* 该计 [!UICONTROL Unique Trait Realizations] 数在不同时间范围内将特征添加到其用户档案的匿名设备访客的数量。
-* 计 [!UICONTROL Total Trait Population] 算具有该特征的匿名设备访客的总数用户档案。
+* [!UICONTROL Unique Trait Realizations] 是在不同时间范围内将特征添加到其访客的匿名设备用户档案的数量。
+* [!UICONTROL Total Trait Population] 是您的匿名设备访客在其用户档案上具有此特征的数量。
 
 按以下方式筛选结果时 [!UICONTROL Cross-Device ID]:
 
-* 在不 [!UICONTROL Unique Trait Realizations] 同的时间范围内，将特征添加到其用户档案的已验证访客的数量。
-* 计 [!UICONTROL Total Trait Population] 算在访客上具有此特征的已验证用户档案的总数。
+* [!UICONTROL Unique Trait Realizations] 是已验证的访客在不同时间范围内向其用户档案添加了特征的数量。
+* [!UICONTROL Total Trait Population] 是已验证的访客中具有此特征的用户档案的数量。
 
 用这种方式来考虑数字。 在上图中，从“特征详细 [信息](../../features/traits/trait-details-page.md) ”视图中，90,173表示昨天访问您的属性的活动设备的数量。 55, [!UICONTROL Total Trait Population] 757表示当前符合此特征条件的用户数。 该 [!UICONTROL Total Trait Population] 数字用于显示可用于细分／定位的用户总数。 通常，用户在120天内将保留特征的一部分。
 
