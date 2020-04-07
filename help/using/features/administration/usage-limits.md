@@ -7,7 +7,7 @@ title: 使用限制
 keywords: ID mapping, ID mappings, cookie mappings
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 translation-type: tm+mt
-source-git-commit: f9f201824accdde18efafa0a8c389af48423534d
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: f9f201824accdde18efafa0a8c389af48423534d
 | 特征类型 | 最大限制 |
 | -------------------------- | ------------------------------------- |
 | 总特征 | 100,000 |
-| 特征资格总数 | 150,000. 有关特征资格的详细信息，请参阅特征资格参考中的 [特征资格限制](/help/using/features/traits/trait-qualification-reference.md#trait-qualification-limit)。 |
+| 特征资格总数 | 150,000. 有关特征资格的详细信息，请参阅特征资格参考中的 [特征资格限制](/help/using/features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit)。 |
 | 算法 | 50 |
 | 基于规则 | 100,000 |
 | 已载入 | 100,000 |
