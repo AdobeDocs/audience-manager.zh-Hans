@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 特征推荐
 uuid: null
 translation-type: tm+mt
-source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
+source-git-commit: 019396917482340f15b4eb23736b15322815bd84
 
 ---
 
@@ -65,7 +65,7 @@ With [!UICONTROL Trait Recommendations], when you build or edit a segment in [Se
 
 ### 特征推荐
 
-[!UICONTROL Trait Recommendations] 是一种快速获取与您在区段中使用的特征类似的其他特征洞察的方法。
+[!UICONTROL Trait Recommendations] 是一种快速获取与您在区段中使用的特征类似的其他特征的洞察的方法。
 
 您应当在以下情况下 [!UICONTROL Trait Recommendations] 使用：
 
@@ -80,9 +80,9 @@ With [!UICONTROL Trait Recommendations], when you build or edit a segment in [Se
 ### 新细分
 
 1. 转到 **受众数据>区段**，然后单击添 **加新**。
-2. 在“特 **征** ”下拉框中，向段规则添加至少一个特征。
-3. 您可以在部分中查看订阅的源中 [!UICONTROL Audience Marketplace] 的第一方推荐特征和特征推荐 **[!UICONTROL Recommendations]** 。 此部 **[!UICONTROL Recommendations from Marketplace]** 分显示您未订阅源的特征推荐。 所有这些推荐都与您添加到区段规则的特征相似。 向下滚动以查看所有推荐的特征。
-4. （可选）要从某些数据源中排除推荐的第一方特征，请单击要排除的数据源的 **X** 符号。
+1. 在“特 **征** ”下拉框中，向段规则添加至少一个特征。
+1. 您可以在部分中查看订阅的源中 [!UICONTROL Audience Marketplace] 的第一方推荐特征和特征推荐 **[!UICONTROL Recommendations]** 。 此部 **[!UICONTROL Recommendations from Marketplace]** 分显示您未订阅源的特征推荐。 所有这些推荐都与您添加到区段规则的特征相似。 向下滚动以查看所有推荐的特征。
+1. （可选）要从某些数据源中排除推荐的第一方特征，请单击要排除的数据源的 **X** 符号。
 
    >[!NOTE]
    >
