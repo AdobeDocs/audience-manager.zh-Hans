@@ -1,19 +1,19 @@
 ---
-description: 用于某些报告的采样方法的摘要、采样错误率以及基于采样数据返回信息的报告列表。
-seo-description: 用于某些报告的采样方法的摘要、采样错误率以及基于采样数据返回信息的报告列表。
-seo-title: 选定Audience manager报告中的数据采样和错误率
+description: 用于某些报告的抽样方法的摘要、抽样误差率以及基于抽样数据返回信息的报告列表。
+seo-description: 用于某些报告的抽样方法的摘要、抽样误差率以及基于抽样数据返回信息的报告列表。
+seo-title: 选定受众管理器报告中的数据采样和错误率
 solution: Audience Manager
-title: 选定Audience manager报告中的数据采样和错误率
+title: 选定受众管理器报告中的数据采样和错误率
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 translation-type: tm+mt
-source-git-commit: d96182b0741dd31cc5ec0ffb68182ed5f8445c03
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
 
-# 选定Audience manager报告中的数据采样和错误率{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
+# 选定受众管理器报告中的数据采样和错误率{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
 
-用于某些报告的采样方法的摘要、采样错误率以及基于采样数据返回信息的报告列表。
+用于某些报告的抽样方法的摘要、抽样误差率以及基于抽样数据返回信息的报告列表。
 
 ## 数据采样率和最低要求 {#data-sampling-ratio}
 
@@ -23,7 +23,7 @@ source-git-commit: d96182b0741dd31cc5ec0ffb68182ed5f8445c03
 
 使用采样的报表在不符合最低唯一访客要求时不包括特征和区段。 这些最低要求如下：
 
-* 特征：在14天 [内实现](/help/using/features/traits/trait-qualification-reference.md#unique-trait-realizations) 28,000个独特特征。
+* 特征：在14天 [内实现](/help/using/features/traits/trait-and-segment-qualification-reference.md#unique-trait-realizations) 28,000个独特特征。
 * 区段：在14天内有70,000个实时用户。
 
 ## 错误率 {#error-rates}
@@ -49,5 +49,5 @@ source-git-commit: d96182b0741dd31cc5ec0ffb68182ed5f8445c03
 使用 [!DNL Audience Manager] 采样数据的报告包括：
 
 * [重叠报告](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) （特征到特征、区段到特征和区段到区段）。
-* [可寻址的受众数据](../features/addressable-audiences.md) （客户级和细分级数据）。
+* [可寻址受众](../features/addressable-audiences.md) （客户级和细分级数据）。
 * 的 [设备总数](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics)[!UICONTROL Profile Merge Rule]。
