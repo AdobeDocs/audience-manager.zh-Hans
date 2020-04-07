@@ -7,7 +7,7 @@ title: 管理数据馈送订阅
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
 translation-type: tm+mt
-source-git-commit: b1f4fe1180001a92577adc9e55f2697f3285ea46
+source-git-commit: aaf4e178cd6faf8fe18f54454277e4253a524130
 
 ---
 
@@ -26,22 +26,22 @@ source-git-commit: b1f4fe1180001a92577adc9e55f2697f3285ea46
 
 1. 转到 **[!UICONTROL Audience Marketplace > Marketplace]**。 使用搜索功能或浏览列表以查找数据源。
 
-   ![](assets/subscribe1.png)
+   ![订阅](assets/subscribe1.png)
 
 1. 单击要使用的数据源的名称。 此操作将打开 [所选源的计划详细信](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#marketplace-buyer-details) 息页面。
 
-   ![](assets/plan-details.png)
+   ![计划详细信息](assets/plan-details.png)
 
 1. 从订阅表中选择用例，并：
    * 将滑块移 **[!UICONTROL Subscription]** 动到 **[!UICONTROL On]**。
    * 单击 **[!UICONTROL Review & Subscribe]**. 这会打开窗 [!UICONTROL Terms and Conditions] 口。
-   ![](assets/subscribe3.png)
+   ![订阅](assets/subscribe3.png)
 
 1. 在窗口 [!UICONTROL Terms and Conditions] 中：
 
    * **重要说明：** 选中 **[!UICONTROL ID sync]** 复选框。 此设置有助于提高与数据提供者的匹配率。
    * 选中条款和条件框并单 **[!UICONTROL Accept]** 击以完成订阅过程。
-   ![](assets/subscribe4.png)
+   ![订阅](assets/subscribe4.png)
 
 ### 后续步骤
 
