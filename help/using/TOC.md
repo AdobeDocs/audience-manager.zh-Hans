@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: 受众经理用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
 
 ---
 
@@ -387,6 +387,13 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
    + [概述](/help/using/help-legal/help-legal-overview.md)
    + [如果遇到问题](/help/using/help-legal/help-problem.md)
    + [联系和法律信息](/help/using/help-legal/help-legal-contact.md)
++ 主要客户支持问题{#top-support-issues}
+   + [概述](/help/using/support-issues/support-issues-overview.md)
+   + [为什么我的Onhocted特质群体在10月15日前后降至0? ](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
+   + [为什么我的特征或区段不显示在“重叠报告”页面中？](/help/using/support-issues/why-do-my-traits-or-segments-not-show-up-in-the-overlap-reports.md)
+   + [为什么我们的只读用户能够创建、编辑或删除特征和区段？](/help/using/support-issues/aam-read-only-users-create-delete-traits-segments.md)
+   + [我们不是受众经理客户，但可以在我们的站点上查看受众经理Javascript调用](/help/using/support-issues/not-using-aam-but-seeing-aam-javascript.md)
+   + [我是否应该在目标详细信息页面上查看受众管理器受众实验室映射的区段？](/help/using/support-issues/should-i-see-audience-lab-mapped-segments-on-the-destination-page.md)
 + 文档更新{#documentation-updates}
    + [2020文档更新](docs-updates/docs-2020.md)
    + [2019文档更新](docs-updates/docs-2019.md)
