@@ -5,7 +5,7 @@ seo-title: 我们不使用受众管理器，但在Javascript调试器中看到�
 solution: Audience Manager
 title: 我们不使用受众管理器，但在Javascript调试器中看到受众管理器Javascript调用——原因何在？
 translation-type: tm+mt
-source-git-commit: 7206b43562eded19bfb30f8aea3bcad946a3f834
+source-git-commit: 1f5c1a91f0b5df5291d3143d297e25128b5bb716
 
 ---
 
@@ -14,10 +14,12 @@ source-git-commit: 7206b43562eded19bfb30f8aea3bcad946a3f834
 
 ## 问题
 
-我们不使用Adobe受众管理器，但在Javascript调试器中看到受众管理器Javascript调用。  为什么会发生这种情况？
+我们不使用Adobe受众管理器，但在Javascript调试器中看到受众管理器Javascript调用。
+
+为什么会这样？
 
 ## 回答
 
-您可能正在您的属性上运行访客ID服务。 如果您是，获得此AAM引用不一定引用运行受众管理器的属性，但这意味着受众管理器实际上是此服务的动力。
+您可能正在您的财 [产上运行Experience Cloud Identity](https://docs.adobe.com/content/help/en/id-service/using/home.html) Service。 如果您是受众管理器，则此受众管理器引用不一定引用运行的属性。 而是意味着受众管理器为此服务提供动力。
 
-请注意，AAM调用通常用于同步设置客户ID。
+受众管理器服务器调用通常用于同 [步客户ID](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/setcustomerids.html)。
