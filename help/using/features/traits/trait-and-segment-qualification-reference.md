@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 特征鉴定参考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 46d1770d50284e0e73bc2c43f5e5ccca22c12574
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ![特征实现](assets/trait-graph.png)
 
-根据您希望图形显示的结果类型(按或跨设 [!UICONTROL Device ID] 备ID [!UICONTORL 筛选])，度量具有不同的含义：
+根据您希望图表显示的结果类型（按或筛选），度量具 [!UICONTROL Device ID] 有不 [!UICONTROL Cross-Device ID]同的含义：
 
 按以下方式筛选结果时 [!UICONTROL Device ID]:
 
