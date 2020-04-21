@@ -5,22 +5,22 @@ seo-title: 将Twitter定制受众配置为基于设备的自助服务目标
 solution: Audience Manager
 title: 将Twitter定制受众配置为基于设备的自助服务目标
 translation-type: tm+mt
-source-git-commit: 0f1ab99b648dd6e1eda5f2e5b6bd1f620c0331ee
+source-git-commit: fb1bec17023b7b70c53659d68e2fbc431d9022fa
 
 ---
 
 
 # 配置 [!DNL Twitter Tailored Audiences] 为基于自助服务设备的目标 {#configure-twitter}
 
-本文介绍如何配置与 [Twitter定制受众的集成](https://business.twitter.com/en/targeting/tailored-audiences.html)。
+本文介绍如何配置与 [Twitter定制受众的集](https://business.twitter.com/en/targeting/tailored-audiences.html)成。
 
 ## 先决条件 {#prerequisites}
 
 在配置目标 [!DNL Twitter Tailored Audiences] 之前，请确保查看您需要满足的以下Twitter先决条件。
 
 1. 您的 [!DNL Twitter Ads] 帐户必须有资格获得广告。 新帐 [!DNL Twitter Ads] 户在创建后的头2周内没有资格获得广告。
-2. 您在 [!DNL Twitter] Audience manager中授权访问的用户帐户必须启用“合 [作伙伴Audience Manager](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) ”权限。
-3. 在Audience manager实例中创 [!DNL Twitter Tailored Audiences] 建第一个目标时，请联系Adobe Consulting或客户关怀，为您的帐户启用 [!DNL Twitter] ID同步（数据源ID = 1123）。 这是在Audience manager和之间正确同步所必需的 [!DNL Twitter]。
+2. 您已 [!DNL Twitter] 在受众管理器中授权访问的用户帐户必须启用 [合作伙伴受众管理器](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 。
+3. 在受众经理实 [!DNL Twitter Tailored Audiences] 例中创建第一个目标时，请联系Adobe咨询或客户关怀部门，为您的帐户启用 [!DNL Twitter] ID同步（数据源ID = 1123）。 这是在受众管理器和之间正确同步所必需的 [!DNL Twitter]。
 
 ## 添加新目 [!DNL Twitter Tailored Audiences] 标 {#add-new-twitter-destination}
 
@@ -28,27 +28,27 @@ source-git-commit: 0f1ab99b648dd6e1eda5f2e5b6bd1f620c0331ee
 
 ### 步骤 1. 验证方 [!DNL Twitter Tailored Audiences] 式 {#step1-authenticate-with-twitter}
 
-在添加基于设备的目标之前，您需要先将Audience manager与您的帐户关 [!DNL Twitter Tailored Audiences] 联。 下面介绍如何实现此操作：
+在添加基于设备的目标之前，您需要先将受众管理器与帐户关 [!DNL Twitter Tailored Audiences] 联。 下面介绍如何实现此操作：
 
-1. 登录您的Audience manager帐户并转到 **[!DNL Administration > Integrated Accounts]**。 如果您之前已配置与目标平台的集成，则应在本页中列出该集成。 否则，页面为空。
+1. 登录您的受众经理帐户并转到 **[!DNL Administration > Integrated Accounts]**。 如果您之前已配置与目标平台的集成，则应在本页中列出该集成。 否则，页面为空。
 1. 单击 **[!DNL Add Account]**.
 1. 选择 [!DNL Twitter Tailored Audiences] 并单击 **[!DNL Confirm]** 以重定向到身份验证页面。                     ![集成平台](assets/dbd-integrated-platforms.png)
-1. 通过身份验证后，您将被重定向到Audience Manager，您应在该处查看关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!DNL Confirm]**。
+1. 通过身份验证后，您将被重定向到受众管理器，您应在该管理器中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击 **[!DNL Confirm]**。
 
 ### 步骤 2. 创建新的基于设备的目标 {#step2-create-new-destination}
 
-在将Audience manager与您的Audience Manager关联 [!DNL Twitter Tailored Audiences]后，您可以创建新目标。 下面介绍如何实现此操作：
+在将受众管理器与您的管理器关 [!DNL Twitter Tailored Audiences]联后，您可以创建新的目标。 下面介绍如何实现此操作：
 
 >[!NOTE]
 >
 >无法更改现有基于设备的目标的名称。 确保提供有助于正确识别目标的名称。
 
-1. 登录您的Audience manager帐户，转到并 **[!DNL Audience Data > Destinations]**&#x200B;单击 **[!DNL Create Destination]**。
+1. 登录您的受众经理帐户，转到并 **[!DNL Audience Data > Destinations]**&#x200B;单击 **[!DNL Create Destination]**。
 1. 在部 **[!DNL Basic Information]** 分中，输入 **[!DNL Name]** 和 **[!DNL Description]** 作为新目标，然后使用以下设置：设 ![置](assets/dbd-new-basic.png)
 1. 单击 **[!DNL Next]**.
 1. 选择要 [为此目标设置的](/help/using/features/data-export-controls.md#controls-labels) “数据导出标签”。
 1. 单击 **[!DNL Save]**.
-1. 在部 **[!DNL Segment Mappings]** 分中，选择要发送到此目标的受众细分。
+1. 在部 **[!DNL Segment Mappings]** 分中，选择要发送到此目标的受众区段。
 1. 保存目标。
 
 <!--
@@ -79,10 +79,10 @@ You will also see a new set of audiences in your [!DNL Twitter] account, with th
 
 ## 区段映射注意事项 {#segment-mapping-considerations}
 
-将受众细分映射 [!UICONTROL Twitter]到时，请确保满足以下细分命名要求：
+将受众区段映射 [!UICONTROL Twitter]到时，请确保满足以下区段命名要求：
 
-* 提供可读的段映射名称。 我们建议使用您用于Audience manager区段的相同名称。
-* 请勿在段和段映射中使用特殊字`,` 符( `%``:``;``@``/``=``?``$`段名称)。 如果您的Audience manager区段名称包含这些字符，请在将区段映射到目标之前删除这 [!UICONTROL Twitter] 些字符。
+* 提供可读的段映射名称。 我们建议使用您用于受众管理器区段的相同名称。
+* 请勿在段和段映射中使用特殊字`,` 符( `%``:``;``@``/``=``?``$`段名称)。 如果您的受众管理器区段名称包含这些字符，请在将区段映射到目标之前删除这 [!UICONTROL Twitter] 些字符。
 
 ### 示例
 
@@ -91,9 +91,9 @@ You will also see a new set of audiences in your [!DNL Twitter] account, with th
 
 >[!IMPORTANT]
 >
->您无法更改已映射区段的名称。 Audience manager使用区段名称来正确识别集成中的区段。
+>您无法更改已映射区段的名称。 受众管理器使用区段名称来正确识别集成中的区段。
 
 ## 匹配率注意事项 {#match-rates-considerations}
 
-* 使用时， [!UICONTROL Twitter Tailored Audiences]目标页 [!UICONTROL Segment Addressable Audience] 面中 [!UICONTROL Segment Match Rate] 的和度量将不显示任何值。 这是正常行为，因为受众匹配以及此目标的匹配率由Adobe而不是Adobe处理和 [!UICONTROL Twitter]托管。
-* 目前，Audience manager与Audience manager之间的集成不 [!UICONTROL Twitter Tailored Audiences] 支持历史受众回填。 这意味着只有在将区段映射到 *Twitter目标* 之后发生的区段资格才会实 [!UICONTROL Twitter] 时发送到。
+* 使用时， [!UICONTROL Twitter Tailored Audiences]目标页 [!UICONTROL Segment Addressable Audience] 面中 [!UICONTROL Segment Match Rate] 的和度量将不显示任何值。 这是正常行为，因为受众匹配以及此目标的匹配率由Adobe处理和托管，而 [!UICONTROL Twitter]不是Adobe。
+* 受众管理器与历史受众回填之 [!UICONTROL Twitter Tailored Audiences] 间的集成支持。 创建目标时，会将所有细 [!UICONTROL Twitter] 分资格发送到该目标。
