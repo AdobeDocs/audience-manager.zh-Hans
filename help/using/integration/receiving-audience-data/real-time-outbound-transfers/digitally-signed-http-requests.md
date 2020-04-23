@@ -1,19 +1,19 @@
 ---
-description: Audience manager要求对HTTP(S)服务器到服务器请求进行数字签名以确保有效性。 本文档介绍如何使用私钥对HTTP请求进行签名。
-seo-description: Audience manager要求对HTTP(S)服务器到服务器请求进行数字签名以确保有效性。 本文档介绍如何使用私钥对HTTP请求进行签名。
+description: 受众管理器要求对HTTP(S)服务器到服务器请求进行数字签名以确保有效性。 本文档介绍如何使用私钥对HTTP请求进行签名。
+seo-description: 受众管理器要求对HTTP(S)服务器到服务器请求进行数字签名以确保有效性。 本文档介绍如何使用私钥对HTTP请求进行签名。
 seo-title: 数字签名的HTTP请求
 solution: Audience Manager
 title: 数字签名的HTTP请求
 uuid: 1183a70f-0c96-42cf-a4f5-37a83ffa1286
 translation-type: tm+mt
-source-git-commit: e7bb837a9a4a4e41ca5c73a192f68a4caa30335d
+source-git-commit: 5dddaaae3a5cb2ce4c4649e2a153edf1992fa964
 
 ---
 
 
 # 数字签名的 `HTTP(S)` 请求 {#digitally-signed-http-requests}
 
-Audience manager要求对 `HTTP(S)` 服务器到服务器的请求进行数字签名以验证有效性。 本文档介绍如何使用私钥 `HTTP(S)` 对请求进行签名。
+受众管理器 `HTTP(S)` 要求对服务器到服务器的请求进行数字签名以验证有效性。 本文档介绍如何使用私钥 `HTTP(S)` 对请求进行签名。
 
 ## 概述 {#overview}
 
@@ -89,12 +89,10 @@ String signature = Base64.encodeBase64String(result).trim();
 出于安全原因，建议定期旋转私钥。 由您决定私钥和旋转周期。 为了在零停机时实现密钥轮替，支持 [!UICONTROL IRIS] 添加多个签名头。 一个头将包含使用旧密钥生成的签名，另一个头将包含使用新私钥生成的签名。 请详细参阅以下步骤：
 
 1. Partner将新的私钥与进行通信 [!DNL Adobe Audience Manager]。
-1. [!UICONTROL IRIS] 将开始发送两个签名标题（一个使用旧密钥，另一个使用新密钥）。
-1. 开始接收两个标题后，您可以选择放弃旧密钥并只查看新签名。
 1. 旧密钥从中删除， [!DNL Audience Manager] 并仅 [!UICONTROL IRIS] 发送新签名头。 键已旋转。
 
 ## 用于签名的数据 {#data-signing}
 
-对 `GET` 于类型目标，用于签名的消息将是 *REQUEST_PATH + QUERY STRING* (例如， */from-aam-s2s?sids=1,2,3*)。 IRIS不考虑主机名或标头- `HTTP(S)` 这些主机名或标头可能会沿路径修改／配置错误或报告错误。
+对 `GET` 于类型目标，用于签名的消息将是 *REQUEST_PATH +查询字符串* (例如， */from-aam-s2s?sids=1,2,3*)。 IRIS不考虑主机名或标头- `HTTP(S)` 这些主机名或标头可能会沿路径修改／配置错误或报告错误。
 
 对于 `POST` 类型目标，用于签名的消息是 *REQUEST BODY*。 同样，忽略标题或其他请求参数。
