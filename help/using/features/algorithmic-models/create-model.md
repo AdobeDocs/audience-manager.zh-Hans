@@ -1,58 +1,57 @@
 ---
 description: 描述在Model Builder中创建算法模型的必需和可选步骤。
-keywords: algo how work
+keywords: algo how works
 seo-description: 描述在Model Builder中创建算法模型的必需和可选步骤。
 seo-title: 创建算法模型
 solution: Audience Manager
 title: 创建算法模型
-topic: DIL API
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 4d10aaac5779f283aa675eef10cf13392837157f
 
 ---
 
 
-# 创建算法模型 {#create-an-algorithmic-model}
+# 创建相似模型 {#create-an-algorithmic-model}
 
-介绍在中创建算法模型所需的和可选的步骤 [!UICONTROL Model Builder]。
+介绍创建应用程序所需的步骤和可选步骤 [!UICONTROL Look-Alike Model]。
 
-## 构建模型 {#build-model}
+## Model Builder部分
 
-<!-- t_model_build.xml -->
-
-### Model Builder部分
-
-[!UICONTROL Model Builder] 由部分和 [!UICONTROL Basic Information] 部分组 [!UICONTROL Configuration] 成。 要创建模型，请完成这两个部分中的必填字段。 保存模型以启动算法。 [!DNL Audience Manager] 在第一次数据运行完成后，向您发送自动通知。 收到电子邮件后，您可以转到 [Trait Builder](../../features/traits/about-trait-builder.md) ，创建算法特征。
+[!UICONTROL Model Builder] 由部分和 [!UICONTROL Basic Information] 部分组 [!UICONTROL Configuration] 成。 要创建模型，请完成这两个部分中的必填字段。 保存模型以开始算法。 [!DNL Audience Manager] 在第一次数据运行完成后，向您发送自动通知。 收到电子邮件后，您可以转到 [Trait Builder](../../features/traits/about-trait-builder.md) ，创建算法特征。
 
 >[!NOTE]
 >
 >* 如果您创建了模型，但不使用该模型构建任何特征，则建模过程只运行一次。
 >* 从包含大量信息的数据源构建模型。 数据不足的模型将运行，但不会返回结果。
->* *不要使用* 其他算法特征或细分创建模型。
+>* *请勿使用* 其他算法特征或细分创建模型。
 >* 自动电子邮件通知仅发送一次（在第一次数据运行后）。
 
 
-### 构建模型
+## 构建模型
 
-要构建模型，请转到该部分， [!UICONTROL Models] 单击并 **[!UICONTROL Add New]** 按照以下步骤操作：
+请按照以下步骤构建 [!UICONTROL Look-Alike Model]:
 
-1. 在“基 [本信息](../../features/algorithmic-models/create-model.md#basic-information) ”部分
+1. 转到 **[!UICONTROL Audience Data]** > **[!UICONTROL Models]** 并单 **[!UICONTROL Add New]** 击部 [!UICONTROL Look-Alike Modeling] 分。
+   ![look-alike-add](assets/look-alike-add.png)
+2. 在“基 [本信息](../../features/algorithmic-models/create-model.md#basic-information) ”部分
    * 命名模型。
    * *（可选）* ，提供有关模型的简要说明。
    * 将模型的状态设置为 **[!UICONTROL Active]** 或 **[!UICONTROL Inactive]**。 不活动的模型将不运行，也不会生成任何数据。
-1. 在“配 [置](../../features/algorithmic-models/create-model.md#configuration) ”部分：
-   * 单 **[!UICONTROL Browse All Traits]** 击或 **[!UICONTROL Browse All Segments]** 以选择要建模的特征或区段。  选择已载入的特征、基于规则的特征或段作为基线。 否则，您的型号将不运行。
+      ![look-alike-basic](assets/look-alike-basic.png)
+3. 在“配 [置](../../features/algorithmic-models/create-model.md#configuration) ”部分：
+   * 单 **[!UICONTROL Browse All Traits]** 击或 **[!UICONTROL Browse All Segments]** 以选择要建模的特征或区段。 选择已载入的特征、基于规则的特征或段作为基线。 否则，您的型号将不运行。
    * 选择30天、60天或90天回顾期。 这为模型设置时间范围。
    * 默认 [!UICONTROL TraitWeight] 情况下选择算法。
-   * 从列表中选择一个数 [!UICONTROL Available Data] 据源。
-   * Click **[!UICONTROL Save]** when done.
+   * 从列表中选择数据源。 [!UICONTROL Available Data]
+   * 完成 **[!UICONTROL Save]** 后单击。
+      ![look-alike-configuration](assets/look-alike-configuration.png)
 
 ## 算法模型的基本信息 {#basic-information}
 
 <!-- r_model_basic.xml -->
 
-在中， [!UICONTROL Model Builder]通过 [!UICONTROL Basic Information] 这些设置可以创建新模型或编辑现有模型。 要创建新模型，请提供名称并转到设 [!UICONTROL Configuration] 置。 描述字段为可选字段。
+在中， [!UICONTROL Model Builder]通过设 [!UICONTROL Basic Information] 置可以创建新模型或编辑现有模型。 要创建新模型，请提供名称并转到设 [!UICONTROL Configuration] 置。 描述字段为可选字段。
 
 | 字段 | 描述 |
 |---|---|
@@ -90,7 +89,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>选择算法(3)</b> </p> </td> 
-   <td colname="col2"> <p>此时，Model builder仅与我们专有的“特征权重” <span class="keyword"> 算法配合</span> 。 <span class="keyword"> Audience Manager可能会在后续版本中添加其他算法功能。</span> </p> </td>
+   <td colname="col2"> <p>此时，Model Builder仅与我们专有的特征权重算 <span class="keyword"> 法配合使用</span> 。 <span class="keyword"> 受众管理器</span> ，可在后续发行版中添加其他算法函数。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>从数据源中选择模型数据(4)</b> </p> </td> 
@@ -98,14 +97,14 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>排除(5)</b> </p> </td> 
-   <td colname="col2"> <p>您可以从为建模选择的数据源中排除特征。 使用“ <span class="wintitle"> 排除</span> ”列表并阅读“算法 <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> 模型：特征排除</a> ，了解更多信息。 </p> </td>
+   <td colname="col2"> <p>您可以从为建模选择的数据源中排除特征。 使用“排 <span class="wintitle"> 除”列表</span> ，并阅读“算 <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> 法模型：特征排除</a> ，了解更多信息。 </p> </td>
   </tr> 
  </tbody>
 </table>
 
-观看以下视频，了解如何创建第一方相似模型，以便您能够找到更多与您的客户相似的访客。
+观看以下视频，了解如何创建第一方相似模型，以便您能够找到更多与转换器相似的访客。
 
->[!VIDEO](https://video.tv.adobe.com/v/23504/?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/23504/)
 
 >[!MORELIKETHIS]
 >
