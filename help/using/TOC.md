@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: 受众经理用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 5518531ce008e42eb3f0168a845464d9d4da3e44
+source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
 
 ---
 
@@ -202,7 +202,6 @@ source-git-commit: 5518531ce008e42eb3f0168a845464d9d4da3e44
       + [每日特征变化报告](reporting/audience-optimization-reports/daily-trait-variation-report.md)
    + 交互式和重叠报表 {#interactive-and-overlap-reports}
       + [交互式和重叠报告概述](reporting/dynamic-reports/dynamic-reports.md)
-      + [投放和绩效报告](reporting/dynamic-reports/delivery-performance-report.md)
       + [特质到特质重叠报表](reporting/dynamic-reports/trait-trait-overlap-report.md)
       + [区段到特质重叠报表](reporting/dynamic-reports/segment-trait-overlap-report.md)
       + [区段到区段重叠报表](reporting/dynamic-reports/segment-segment-overlap-report.md)
