@@ -5,7 +5,7 @@ seo-title: 预测受众概述
 solution: Audience Manager
 title: 受众经理预测受众
 translation-type: tm+mt
-source-git-commit: 8cf504fa811e4043f83d0b9f11754065efccf7bb
+source-git-commit: 74a5de961b2f9ab6afa2caf998ba1100d40cc93a
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: 8cf504fa811e4043f83d0b9f11754065efccf7bb
 
 ### 用例#1
 
-作为电子商务公司中的营销人员，我希望将我的所有Web和移动访客分类为各种品牌关联类别，以便个性化其用户体验。
+作为电子商务公司中的营销人员，我希望将我的所有Web和移动访客归类为各种品牌关联类别，以便个性化其用户体验。
 
 ### 用例#2
 
@@ -97,7 +97,7 @@ source-git-commit: 8cf504fa811e4043f83d0b9f11754065efccf7bb
 ## 注意事项和限制 {#considerations}
 
 >[!IMPORTANT]
-> 在进入实施阶段之前，请仔细阅读本文。
+> 进入实施阶段前，请仔细阅读本节内容。
 
 配置模 [!UICONTROL Predictive Audiences] 型时，请记住以下注意事项和限制：
 
