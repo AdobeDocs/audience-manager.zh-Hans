@@ -1,19 +1,19 @@
 ---
-description: 将“交付性能”报告日志文件中的数据放入仅包含ID的表中。 将非ID元数据放入单独的查找表中，以帮助减少文件大小和处理时间。
-seo-description: 将“交付性能”报告日志文件中的数据放入仅包含ID的表中。 将非ID元数据放入单独的查找表中，以帮助减少文件大小和处理时间。
+description: 将数据放入“投放性能”报告日志文件中，放入仅包含ID的表中。 将非ID元数据放入单独的查找表中，以帮助减少文件大小和处理时间。
+seo-description: 将数据放入“投放性能”报告日志文件中，放入仅包含ID的表中。 将非ID元数据放入单独的查找表中，以帮助减少文件大小和处理时间。
 seo-title: 使用查找表缩短日志文件处理时间
 solution: Audience Manager
 title: 使用查找表缩短日志文件处理时间
 uuid: ffc77618-474b-455e-9c91-15b32fc151a5
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
 
 ---
 
 
 # 使用查找表缩短日志文件处理时间{#improve-log-file-processing-times-with-lookup-tables}
 
-将“交付性能”报告日志文件中的数据放入仅包含ID的表中。 将非ID元数据放入单独的查找表中，以帮助减少文件大小和处理时间。
+将数据放入“投放性能”报告日志文件中，放入仅包含ID的表中。 将非ID元数据放入单独的查找表中，以帮助减少文件大小和处理时间。
 
 <!-- 
 
@@ -69,8 +69,3 @@ c_lookup_tables.xml
 ## API可以消除对查找表的需求
 
 如果广告服务系统有API，则可能无需在查找文件中发送元数据。 我们可能能够通过API获取该信息。 在这种情况下，您的日志文件应仅包含ID。 我们将与您一起确定是否可以通过API获取元数据。
-
->[!MORELIKETHIS]
->
->* [交付和绩效报告](../../reporting/dynamic-reports/delivery-performance-report.md)
-
