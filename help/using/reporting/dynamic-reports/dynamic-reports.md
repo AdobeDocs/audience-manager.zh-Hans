@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 交互式和重叠报表
 uuid: 486f4251-da24-4253-ab01-9dd1da8715aa
 translation-type: tm+mt
-source-git-commit: 78121b615f665eea8610b3184d4a4a97c869d4d0
+source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
 
 ---
 
@@ -16,7 +16,6 @@ source-git-commit: 78121b615f665eea8610b3184d4a4a97c869d4d0
 交互式报表显示特征和区段的性能和重叠数据。 这些报告不使用列和行中排列的数字，而是使用不同的形状、颜色和大小返回数据。 此外，您还可以选择单个或一组数据点，并深入到报告结果中以了解更多详细信息。 这些可视化技术和报表交互性有助于使大量数字数据更易于理解。
 
 + [报告技术](interactive-report-technology.md)
-+ [交付和绩效报告](delivery-performance-report.md)
 + [特质到特质重叠报表](trait-trait-overlap-report.md)
 + [区段到特质重叠报表](segment-trait-overlap-report.md)
 + [区段到区段重叠报表](segment-segment-overlap-report.md)
