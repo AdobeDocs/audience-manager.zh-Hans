@@ -1,20 +1,20 @@
 ---
 description: 受众管理器为在线受众数据管理提供了行业顶尖的服务。我们的产品和服务为数字广告商和出版商提供了控制和利用其数据资产以促进销售取得成功所需的工具。
-seo-description: Audience Manager(AAM)的技术文档和自助服务。 AAM为在线受众数据管理提供行业领先的服务，并为数字广告商和出版商提供他们需要的工具来控制和利用其数据资产，从而帮助推动销售成功。
-seo-title: Adobe Audience Manager产品技术文档
+seo-description: 针对受众管理器(AAM)的技术文档和自助服务。 AAM为在线受众数据管理提供行业领先的服务，并为数字广告商和出版商提供他们需要的工具来控制和利用其数据资产来帮助推动销售成功。
+seo-title: Adobe受众经理产品技术文档
 solution: Audience Manager
-title: Audience Manager产品文档
+title: 受众经理产品文档
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: d8c18b80aa2e22444a509af65bc81567d0902e51
 
 ---
 
 
 
-# Audience Manager产品文档 {#audience-manager-product-documentation}
+# 受众经理产品文档 {#audience-manager-product-documentation}
 
-本技术文档指南为Audience Manager提供自助帮助——这是一种用于在线受众数据管理的行业领先服务。 我们的产品和服务为数字广告商和出版商提供了控制和利用其数据资产以促进销售取得成功所需的工具。
+本技术文档指南为受众经理提供自助帮助——这是一项针对在线受众数据管理的行业领先服务。 我们的产品和服务为数字广告商和出版商提供了控制和利用其数据资产以促进销售取得成功所需的工具。
 
 ## 使用本产品文档指南
 
@@ -24,14 +24,14 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ## 如何阅读本页
 
-* 首先，浏览Audience Manager主 **要功能部分** ，了解Audience Manager可以帮助您解决的问题。 另请参阅 [Audience Manager概述](/help/using/overview/aam-overview.md) ，然后返回此页。
-* 接下来，阅 **读Audience Manager入门** ，以熟悉Audience Manager的概念。 确保查看业务和技术实施指南。
-* 请参阅Audience Manager的最新发行说明，并阅读发行说明和最新功 **能部分中的最新功能**。
-* 最后，您可以在学习中心——推荐的Audience Manager和Experience Cloud资源部分探索更多Experience Cloud资源，如论坛、视频教程、亲临和在线培训课程 ****。
+* 开始，通过浏览 **受众管理器主要功能** ，查看受众管理器可以帮助您解决的问题。 另请参阅 [受众管理器概述](/help/using/overview/aam-overview.md) ，然后返回此页。
+* 接下来，阅 **读受众管理器入门** ，熟悉受众管理器概念。 确保查看业务和技术实施指南。
+* 请参阅最新的受众管理器发行说明，并阅读发行说明和最新功 **能部分中的最新功能**。
+* 最后，您可以在学习中心——推荐的受众管理器和Experience Cloud资源部分探索更多Experience Cloud资源，如论坛、视频教程、亲临和在线培训课程 ****。
 
 <br> 
 
-## Audience Manager主要功能
+## 受众管理器主要功能
 
 <table>
    <td>
@@ -40,7 +40,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
          <b>导入数据</b>
       </div>
       <p>
-         <em><ul><li><a href="/help/using/api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md">数据收集服务器</a></li><li><a href="/help/using/integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md">批量数据摄取</a></li><li><a href="/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md">日志摄取</a></li><li><a href="/help/using/integration/integration-other-solutions/audience-management-module.md">将Adobe Analytics数据转发到Audience Manager</a></li></ul></em>
+         <em><ul><li><a href="/help/using/api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md">数据收集服务器</a></li><li><a href="/help/using/integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md">批量数据摄取</a></li><li><a href="/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md">日志摄取</a></li><li><a href="/help/using/integration/integration-other-solutions/audience-management-module.md">将Adobe Analytics数据转发给受众经理</a></li></ul></em>
       <p>
    </td>
    <td>
@@ -49,7 +49,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
          <b>丰富和细分</b>
       </div>
       <p>
-       <em><ul><li><a href="/help/using/features/segments/segments-purpose.md">区段划分</a></li><li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">个人资料合并规则</a></li><li><a href="/help/using/features/algorithmic-models/understanding-models.md">算法建模</a></li><li><a href="/help/using/overview/data-types-collected.md">第二方和第三方数据</a></li></ul></em>
+       <em><ul><li><a href="/help/using/features/segments/segments-purpose.md">区段划分</a></li><li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">用户档案合并规则</a></li><li><a href="/help/using/features/algorithmic-models/understanding-models.md">算法建模</a></li><li><a href="/help/using/overview/data-types-collected.md">第二方和第三方数据</a></li></ul></em>
       <p>
    </td>
    <td>
@@ -69,28 +69,28 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 <br> 
 
-## Audience Manager入门
+## 受众管理器入门
 
 <table> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>重要的概念文档</b></p>
-   <p>阅读以下页面，进一步了解Audience Manager概念： 
-   <ul><li><a href="/help/using/overview/aam-overview.md"> Audience Manager概述</a></li><li><a href="/help/using/reference/signal-trait-segment.md">信号、特征和区段</a></li><li><a href="/help/using/reference/aam-glossary.md"> 术语表</a> </li><li><a href="/help/using/reference/ids-in-aam.md">ID的索引</a></li></ul></p>
+   <p>阅读以下页面，进一步了解受众经理的概念： 
+   <ul><li><a href="/help/using/overview/aam-overview.md"> 受众管理器概述</a></li><li><a href="/help/using/reference/signal-trait-segment.md">信号、特征和区段</a></li><li><a href="/help/using/reference/aam-glossary.md"> 术语表</a> </li><li><a href="/help/using/reference/ids-in-aam.md">ID的索引</a></li></ul></p>
    <br> 
-   <p><b>实施Audience Manager</b></p>
-   <p> 阅读以下页面，开始实施Audience Manager:
+   <p><b>实施受众管理器</b></p>
+   <p> 阅读以下页面，开始实施受众管理器：
      <ul>
      <li><a href="/help/using/integration/data-integration-methods.md">数据集成方法</a></li>
      <li><a href="/help/using/integration/implement-audience-manager.md">实施指南</a></li>
      </ul> </p>
      <br> 
-   <p> <b>技术实施指南</b> </p> <p>开始使用Audience Manager API，并在您的应用程序中设置Audience Manager:</p> <p> 
+   <p> <b>技术实施指南</b> </p> <p>开始使用受众管理器API，并在应用程序中设置受众管理器：</p> <p> 
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
      <li><a href="/help/using/api/rest-api-main/aam-api-getting-started.md">REST API快速入门</a></li>
      <li><a href="/help/using/api/dcs-intro/dcs-event-calls/dcs-event-calls.md">开始使用DCS API</a></li>
-     <li><a href="https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html">将Audience Manager扩展添加到Adobe Experience Platform Launch</a></li>
-    <li><a href="https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-audience-manager">将Audience Manager添加到您的应用程序</a></li>
+     <li><a href="https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html">将受众管理器扩展添加到Adobe Experience Platform Launch</a></li>
+    <li><a href="https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-audience-manager">将受众管理器添加到应用程序</a></li>
      </ul> </p>
     </td>
 
@@ -155,11 +155,11 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
      有关新增功能和修复，请参阅最新的 <a href="https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud 发行说明</a>。</p> 
      <br> 
      <p> <b>最新功能</b> </p> <p> 
-     了解Audience Manager的最新功能：</p>
-     <p><ul><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用情况报告</a></li>
+     了解最新的受众管理器功能：</p>
+     <p><ul><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">预测受众</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用报告</a></li>
      <li><a href="/help/using/overview/data-security-and-privacy/data-privacy.md">加利福尼亚消费者隐私法(CCPA)支持和隐私文档大修</a></li>
-     <li><a href="/help/using/features/segments/trait-recommendations.md">Adobe Sensei支持的受众市场数据智能推荐</a></li>
-     <li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">配置文件合并规则增强功能</a></li></ul><p>
+     <li><a href="/help/using/features/segments/trait-recommendations.md">受众市场数据智能推荐，由Adobe Sensei提供支持</a></li>
+     <li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">用户档案合并规则增强功能</a></li></ul><p>
     </td>
   </tr> 
  </tbody> 
@@ -186,7 +186,7 @@ Read about the latest Audience Manager features:
 
 <br> 
 
-## 学习中心——推荐的Audience Manager和Experience Cloud资源
+## 学习中心——推荐的受众经理和Experience Cloud资源
 
 
 <table> 
@@ -194,11 +194,11 @@ Read about the latest Audience Manager features:
   <tr> 
    <td colname="col2"> 
      <p> <b>Experience Cloud 资源</b> </p>
-     <p>访问以下链接以在社区论坛中与其他Audience Manager客户建立联系，观看教程视频中有关我们功能的演练，或在学习和支持中心解决问题。</p>
+     <p>访问以下链接，在社区论坛中与其他受众经理客户建立联系，视图教程视频，了解我们的功能，或在学习和支持中心解决问题。</p>
      <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
-      <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"><a href="https://forums.adobe.com/community/experience-cloud/analytics-cloud/audience-manager" format="https" scope="external"> Audience Manager社区论坛</a> </li>
-      <li><a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html" format="http" scope="external"> Audience Manager教程</a> </li> 
+      <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"><a href="https://forums.adobe.com/community/experience-cloud/analytics-cloud/audience-manager" format="https" scope="external"> 受众经理社区论坛</a> </li>
+      <li><a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html" format="http" scope="external"> 受众管理器教程</a> </li> 
       <li id="li_1737D63307024F26B1F967621613A5AC"><a href="https://www.adobe.com/privacy.html" format="http" scope="external"> Adobe 隐私权中心</a> </li>  
       <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="https://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe培训和认证</a> </li> 
       <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://helpx.adobe.com/support/experience-cloud.html" scope="external" format="https">Experience Cloud产品文档主页</a> </li> 
