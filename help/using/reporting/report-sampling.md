@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 选定受众管理器报告中的数据采样和错误率
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 6dca5c8bc338a670050123a94808795705450c3a
 
 ---
 
@@ -51,3 +51,4 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 * [重叠报告](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) （特征到特征、区段到特征和区段到区段）。
 * [可寻址受众](../features/addressable-audiences.md) （客户级和细分级数据）。
 * 的 [设备总数](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics)[!UICONTROL Profile Merge Rule]。
+* [Data Explorer使用](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md) Tab和任何选项卡中 [!UICONTROL Search] 的采样数据 [!UICONTROL Saved Searches]。
