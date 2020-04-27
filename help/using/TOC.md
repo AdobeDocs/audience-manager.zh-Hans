@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: 受众经理用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
+source-git-commit: 5518531ce008e42eb3f0168a845464d9d4da3e44
 
 ---
 
@@ -39,9 +39,15 @@ source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
       + [使用限制](features/administration/usage-limits.md)
       + [活动使用报告](features/administration/activity-usage-reporting.md)
    + 算法模型{#algorithmic-models}
-      + [算法模型](features/algorithmic-models/understanding-models.md)
-      + [创建算法模型](features/algorithmic-models/create-model.md)
-      + [算法模型：特征排除](features/algorithmic-models/trait-exclusion-algo-models.md)
+      + [算法模型概述](features/algorithmic-models/algo-models-overview.md)
+      + 相似建模 {#look-alike-modeling}
+         + [了解相似建模](features/algorithmic-models/understanding-models.md)
+         + [创建相似模型](features/algorithmic-models/create-model.md)
+         + [相似建模：特征排除](features/algorithmic-models/trait-exclusion-algo-models.md)
+      + 预测受众 {#predictive-audiences}
+         + [预测受众概述](features/algorithmic-models/predictive-audiences.md)
+         + [预测受众入门](features/algorithmic-models/predictive-audiences-start.md)
+         + [预测受众报告](features/algorithmic-models/predictive-audiences-reporting.md)
    + Audience Lab{#audience-lab}
       + [受众实验室概述](features/audience-lab/audience-lab.md)
       + [管理测试组](features/audience-lab/audience-lab-manage-test-groups.md)
@@ -381,6 +387,7 @@ source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
    + [基于人员的目标常见问题解答](faq/faq-people-based-destinations.md)
    + [产品特性和功能常见问题解答](faq/faq-features.md)
    + [用户档案合并规则和设备图常见问题解答](faq/faq-profile-merge.md)
+   + [预测受众常见问题解答](faq/faq-predictive-audiences.md)
    + [定位常见问题解答](faq/faq-targeting.md)
    + [报表常见问题解答](faq/faq-reporting.md)
 + 帮助与法律{#help-and-legal}
