@@ -6,7 +6,7 @@ solution: Audience Manager
 title: REST API快速入门
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
+source-git-commit: d086b0cacd93f126ae7b362f4a2632bdccfcb1c2
 
 ---
 
@@ -34,7 +34,22 @@ source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
 
 * **文档和代码示例：** 斜体 *文本* ，表示您在创建或接收数据时提供或传入的变 [!DNL API] 量。 将斜 *体文本替换* ，替换为您自己的代码、参数或其他必需信息。
 
-## 建议：创建通用API用户 {#requirements}
+## JWT（服务帐户）身份验证 {#jwt}
+
+要建立安全的服务对服务Adobe I/O API会话，您必须创建封装集成标识的JSON Web令牌(JWT)，然后将其交换为访问令牌。 对Adobe服务的每个请求都必须在“授权”标题中包含访问令牌，以及在 [Adobe I/O控制台中创建服务帐户集成时生成的API密钥（客户端ID）](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)[](https://console.adobe.io/)。
+
+有关如 [何配置身份验证的详细说明](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) ，请参阅JWT（服务帐户）身份验证。
+
+## OAuth身份验证（已弃用） {#oauth}
+
+>[!WARNING]
+> 受众管 [!UICONTROL REST API] 理器令牌身份验证和续订 [!DNL OAuth 2.0] 方式现已弃用。
+>
+> 请改用 [JWT（服务帐户）身份验证](#jwt-service-account-authentication-jwt) 。
+
+受众管理器 [!UICONTROL REST API] 遵循令 [!DNL OAuth 2.0] 牌身份验证和续订标准。 以下各节介绍如何验证和使用的 [!DNL API]开始。
+
+## 创建通用API用户 {#requirements}
 
 我们建议您创建一个单独的技术用户帐户，以便与受众管理器一起 [!DNL API]工作。这是一个通用帐户，它不绑定到组织中的特定用户或与其关联。 此类型的用 [!DNL API] 户帐户可帮助您完成以下两项任务：
 
@@ -44,10 +59,6 @@ source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
 例如，作为此类帐户的示例或用例，假设您希望使用批量管理工具同时更改大 [量区段](../../reference/bulk-management-tools/bulk-management-intro.md)。 为此，您的用户帐户需要访问 [!DNL API] 权限。 不要向特定用户添加权限，而是创建一个非特定的用户帐户，该帐户具有相应的凭据、密钥和机密进行 [!DNL API][!DNL API] 调用。 如果您开发自己的使用受众管理器的应用程序，这也很有 [!DNL API]用。
 
 与您的受众经理顾问合作，以设置一个通用的、 [!DNL API]仅限用户帐户。
-
-## OAuth Authentication {#oauth}
-
-受众管理器 [!UICONTROL REST API] 遵循令 [!DNL OAuth 2.0] 牌身份验证和续订标准。 以下各节介绍如何验证和使用的 [!DNL API]开始。
 
 ## 密码身份验证工作流 {#password-authentication-workflow}
 
@@ -108,6 +119,7 @@ source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
 将刷新令牌请求传递给您的首选客 [!DNL JSON] 户端。 构建请求时：
 
 * 使用 `POST` 方法调用 `https://api.demdex.com/oauth/token`。
+* 请求标题：使用 [Adobe I/O令牌时](https://www.adobe.io/) ，必须提供标 `x-api-key` 题。 您可以按照“服务帐户集成”页中的说明获 [取您的API密钥](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 。
 * 将您的客户端ID和机密转换为基本64编码的字符串。 在转换过程中，用冒号分隔ID和机密。 例如，凭据将 `testId : testSecret` 转换为 `dGVzdElkOnRlc3RTZWNyZXQ=`。
 * 传入HTTP头 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`。 例如，您的标题可能如下： <br/> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/> `Content-Type: application/x-www-form-urlencoded`
 * 在请求主体中，指定您 `grant_type:refresh_token` 在上一个访问请求中收到的刷新令牌并传入。 请求应当如下： <br/> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
