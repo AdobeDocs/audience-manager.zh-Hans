@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 一般报告
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
 
 ---
 
@@ -84,33 +84,51 @@ t_run_general_report.xml
 
 ## 特征的常规报告结果 {#general-report-results-traits}
 
-运行“常规”报表并选择报告类型时，可 **[!UICONTROL Trait]** 以使用以下指标：
+运行“常规”报表并选择报告类型时，以下过滤器 **[!UICONTROL Trait]** 将可用。
 
-**独特的特质实现**
+按以下方式筛选结果时 [!UICONTROL Device ID]:
 
-此量度表示限定在选定时 [间范围内的特征的唯一受众管理器唯一用户ID(UUID)](../reference/ids-in-aam.md) 。 例如，如果用户在10月1日三次访问您的主页，您将看到一个唯一特征实现。
+* [!UICONTROL Unique Trait Realizations] 是在所选时间范围内将特征添加到其访客的匿名设备用户档案的数量。
+* [!UICONTROL Total Trait Realization] 是所选时间范围内的匿名特征实现的总数。
+* [!UICONTROL Total Trait Population] 是您的匿名设备访客在其用户档案上具有此特征的数量。
 
-**总特征实现**
+![general-report-traits-device](assets/general-report-traits-deviceid.png)
 
-此度量表示所选时间范围内特征所触发的特征总数。 例如，如果用户访问了您的主页，然后导航到您的技术新闻和体育新闻部分，则它们将作为三个总特征实现和一个唯一特征实现显示在“一般报告”中。
+按以下方式筛选结果时 [!UICONTROL Cross-Device ID]:
 
-**总特征人口**
+* [!UICONTROL Unique Trait Realizations] 是在所选时间范围内向其访客添加特征的已验证用户档案的数量。
+* [!UICONTROL Total Trait Realization] 是所选时间范围内经过身份验证的特征实现的总数。
+* [!UICONTROL Total Trait Population] 是已验证的访客中具有此特征的用户档案的数量。
 
-此量度表示当前为特征限定的受众管理器UUID的总量。 使用此编号可了解可用于细分和定位的用户总数。 通常，用户在120天内都会保留某个特 [征的一部分](../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval)。 例如，今天三次访问您的主页，之后再也不回来的用户，将每天一直作为该用户，直到现在120天。 在120天大关时，他们将被从人口中移走。 阅读我们 [的特征和区段资格参考](../features/traits/trait-and-segment-qualification-reference.md) ，了解有关唯一特征实现和总特征人群之间的差异的更多示例。
+![一般报告特征——跨设备](assets/general-report-traits-cross-device.png)
 
-下图显示了为“特征”报告类型运行常规报告的结果。
+<!-- 
+### Unique Trait Realizations
 
-![](assets/general_reports_metrics.png)
+This metric represents the unique number of [Audience Manager Unique User IDs (UUID)](../reference/ids-in-aam.md) that qualified for the trait in your selected time range. For example, if a user visited your homepage three times on 10/1, you would see one Unique Trait Realization.
+
+### Total Trait Realizations
+
+This metric represents the total amount of trait fires for the trait in your selected time range. For example, if a user visited your homepage, then navigated to your tech news and your sports news sections, they would appear in the General Report as three total trait realizations, and one unique trait realization.
+
+### Total Trait Population
+
+This metric represents the total amount of Audience Manager UUIDs that are currently qualified for the trait. Use this number to understand the total amount of users you could use for segmentation and targeting. Typically, users remain part of a trait for [120 days](../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval). For example, a user visiting your homepage three times today and never returning afterwards, would remain as a user in this population every day until 120 days from now. At the 120 day mark, they would be removed from the population. Read our [Trait and Segment Qualification Reference](../features/traits/trait-and-segment-qualification-reference.md) for more examples on the difference between Unique Trait Realizations and Total Trait Population.
+
+The illustration below shows the results of running a general report for the Trait report type. -->
+<!-- 
+![](assets/general_reports_metrics.png) -->
+
 
 ## 常规报告区段的结果 {#general-report-results-segments}
 
 运行“常规”报表并选择报告类型时，可 **[!UICONTROL Segment]** 以使用以下指标：
 
-**实时细分群体**
+### 实时细分群体
 
 此量度表示在指定时间范围内实时查看的唯一访客的实际数量，以及在受众管理器查看区段时有资格查看的区段数量。
 
-**区段总人数**
+### 区段总人数
 
 此度量表示在您选择的回顾期内限定区段的受众管理器UUID总数。 您的1天总细分人口代表您最准确的定位用户群。
 
