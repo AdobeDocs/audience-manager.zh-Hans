@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 特征鉴定参考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
-source-git-commit: 46d1770d50284e0e73bc2c43f5e5ccca22c12574
+source-git-commit: 22780105bc356100af8b64b50e3c92137adeb83a
 
 ---
 
@@ -71,3 +71,4 @@ source-git-commit: 46d1770d50284e0e73bc2c43f5e5ccca22c12574
 ## 特征资格限制 {#trait-qualification-limit}
 
 我们对每个用户用户档案强制实施150,000个特征条件限制，无论该用户档案是经过身份验证的([DPUUID](../../reference/ids-in-aam.md))还是设备ID([UUID](../../reference/ids-in-aam.md))。 请注意，虽然DPUUID对于特定实例是唯一的， [!DNL Audience Manager]但UUID是跨平台共享 [!DNL Audience Manager] 的。 因 [!UICONTROL UUID]此，我们在保存特质资格时实行公平政策。 算法确保每个实例都可 [!UICONTROL UUID] 以使用用户档案的相等份额 [!DNL Audience Manager]。
+
