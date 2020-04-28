@@ -6,7 +6,7 @@ solution: Audience Manager
 title: REST API快速入门
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: afaaaa50bdbe1dd0104af7e715d76985cb3d443c
+source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
 
 ---
 
@@ -45,18 +45,7 @@ source-git-commit: afaaaa50bdbe1dd0104af7e715d76985cb3d443c
 
 与您的受众经理顾问合作，以设置一个通用的、 [!DNL API]仅限用户帐户。
 
-## JWT（服务帐户）身份验证 {#jwt}
-
-要建立安全的服务对服务Adobe I/O API会话，您必须创建封装集成标识的JSON Web令牌(JWT)，然后将其交换为访问令牌。 对Adobe服务的每个请求都必须在“授权”标题中包含访问令牌，以及在 [Adobe I/O控制台中创建服务帐户集成时生成的API密钥（客户端ID）](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)[](https://console.adobe.io/)。
-
-有关如 [何配置身份验证的详细说明](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) ，请参阅JWT（服务帐户）身份验证。
-
-## OAuth身份验证（已弃用） {#oauth}
-
->[!WARNING]
-> 受众管 [!UICONTROL REST API] 理器令牌身份验证和续订 [!DNL OAuth 2.0] 方式现已弃用。
->
-> 请改用 [JWT（服务帐户）身份验证](#jwt-service-account-authentication-jwt) 。
+## OAuth Authentication {#oauth}
 
 受众管理器 [!UICONTROL REST API] 遵循令 [!DNL OAuth 2.0] 牌身份验证和续订标准。 以下各节介绍如何验证和使用的 [!DNL API]开始。
 
@@ -80,7 +69,7 @@ source-git-commit: afaaaa50bdbe1dd0104af7e715d76985cb3d443c
 
 将令牌请求传递给首选客 [!DNL JSON] 户端。 构建请求时：
 
-* 使用 `POST` 方法调用 `https://aam.adobe.io/oauth/token`。
+* 使用 `POST` 方法调用 `https://api.demdex.com/oauth/token`。
 * 将您的客户端ID和机密转换为基本64编码的字符串。 在转换过程中，用冒号分隔ID和机密。 例如，凭据将 `testId : testSecret` 转换为 `dGVzdElkOnRlc3RTZWNyZXQ=`。
 * 传入标 [!DNL HTTP] 题 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded` 。 例如，您的标题可能如下： <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
 * 按如下方式设置请求主体：
@@ -118,7 +107,7 @@ source-git-commit: afaaaa50bdbe1dd0104af7e715d76985cb3d443c
 
 将刷新令牌请求传递给您的首选客 [!DNL JSON] 户端。 构建请求时：
 
-* 使用 `POST` 方法调用 `https://aam.adobe.io/oauth/token`。
+* 使用 `POST` 方法调用 `https://api.demdex.com/oauth/token`。
 * 将您的客户端ID和机密转换为基本64编码的字符串。 在转换过程中，用冒号分隔ID和机密。 例如，凭据将 `testId : testSecret` 转换为 `dGVzdElkOnRlc3RTZWNyZXQ=`。
 * 传入HTTP头 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`。 例如，您的标题可能如下： <br/> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/> `Content-Type: application/x-www-form-urlencoded`
 * 在请求主体中，指定您 `grant_type:refresh_token` 在上一个访问请求中收到的刷新令牌并传入。 请求应当如下： <br/> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
@@ -139,7 +128,7 @@ source-git-commit: afaaaa50bdbe1dd0104af7e715d76985cb3d443c
 
 ## 授权码与隐式认证 {#authentication-code-implicit}
 
-受众管理器支 [!UICONTROL REST API] 持授权代码和隐式身份验证。 要使用这些访问方法，您的用户需要登录才能获 `https://aam.adobe.io/oauth/authorize` 取访问和刷新令牌。
+受众管理器支 [!UICONTROL REST API] 持授权代码和隐式身份验证。 要使用这些访问方法，您的用户需要登录才能获 `https://api.demdex.com/oauth/authorize` 取访问和刷新令牌。
 
 ## 发出实名API请求 {#authenticated-api-requests}
 
@@ -166,7 +155,7 @@ source-git-commit: afaaaa50bdbe1dd0104af7e715d76985cb3d443c
 | pageSize | 设置请求返回的响应结果数（默认为10）。 |
 | sortBy | 根据指定的属性对结果进行排序和返 [!DNL JSON] 回。 |
 | 降序 | 按降序排序和返回结果。 默认为升序。 |
-| 搜索 | 根据要用作搜索参数的指定字符串返回结果。 例如，假设您要查找所有模型的结果，这些模型在该项目的任何值字段中都有单词“Test”。 您的示例请求可能如下：  `GET https://aam.adobe.io/v1/models/?search=Test`.  您可以搜索“get all”方法返回的任何值。 |
+| 搜索 | 根据要用作搜索参数的指定字符串返回结果。 例如，假设您要查找所有模型的结果，这些模型在该项目的任何值字段中都有单词“Test”。 您的示例请求可能如下：  `GET https://api.demdex.com/v1/models/?search=Test`.  您可以搜索“get all”方法返回的任何值。 |
 | folderId | 返回指定文件夹内特征的所有ID。 并非所有方法都可用。 |
 | 权限 | 返回基于指定权限的区段列表。  READ是默认值。 权限包括：<ul><li>`READ` :有关区段的返回和视图信息。</li><li>`WRITE` :使用 `PUT` 更新区段。</li><li>`CREATE` :使用 `POST` 创建区段。</li><li>`DELETE` : 删除区段. 需要访问基础特征（如果有）。 例如，如果要删除属于某个区段的特征，您将需要删除该区段的权限。</li></ul><br>使用不同的键值对指定多个权限。 例如，要返回仅具有和权限的区 `READ` 段列表 `WRITE` ，请传入 `"permissions":"READ"`, `"permissions":"WRITE"` 。 |
 | includePermissions | （布尔值）设置为true可返回您对区段的权限。 默认为 false。 |
@@ -176,7 +165,7 @@ source-git-commit: afaaaa50bdbe1dd0104af7e715d76985cb3d443c
 当未指定页 *面信息时* ，请求返回数 [!DNL JSON] 组中的纯结果。 如果指定了页 *面信息*[!DNL JSON] ，则返回的列表将包含在对象中，该对象包含有关总结果和当前页面的信息。 您使用页面选项的示例请求可能类似于：
 
 ```
-GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
+GET https://api.demdex.com/v1/models/?page=1&pageSize=2&search=Test
 ```
 
 ## API URL {#api-urls}
@@ -191,17 +180,17 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 | [!DNL API] 方法 | 请求 [!DNL URL] |
 |--- |--- |
-| 算法建模 | `https://aam.adobe.io/v1/models/` |
-| 数据源 | `https://aam.adobe.io/v1/datasources/` |
-| 派生信号 | `https://aam.adobe.io/v1/signals/derived/` |
-| 目标 | `https://aam.adobe.io/v1/destinations/` |
-| 域名 | `https://aam.adobe.io/v1/partner-sites/` |
-| 文件夹 | 特征： 区 `https://aam.adobe.io/v1/folders/traits /`<br>段：  `https://aam.adobe.io/v1/folders/segments /` |
-| 模式 | `https://aam.adobe.io/v1/schemas/` |
-| 区段 | `https://aam.adobe.io/v1/segments/` |
-| 特征 | `https://aam.adobe.io/v1/traits/` |
-| 特征类型 | `https://aam.adobe.io/v1/customer-trait-types` |
-| 分类 | `https://aam.adobe.io/v1/taxonomies/0/` |
+| 算法建模 | `https://api.demdex.com/v1/models/` |
+| 数据源 | `https://api.demdex.com/v1/datasources/` |
+| 派生信号 | `https://api.demdex.com/v1/signals/derived/` |
+| 目标 | `https://api.demdex.com/v1/destinations/` |
+| 域名 | `https://api.demdex.com/v1/partner-sites/` |
+| 文件夹 | 特征： 区 `https://api.demdex.com/v1/folders/traits /`<br>段：  `https://api.demdex.com/v1/folders/segments /` |
+| 模式 | `https://api.demdex.com/v1/schemas/` |
+| 区段 | `https://api.demdex.com/v1/segments/` |
+| 特征 | `https://api.demdex.com/v1/traits/` |
+| 特征类型 | `https://api.demdex.com/v1/customer-trait-types` |
+| 分类 | `https://api.demdex.com/v1/taxonomies/0/` |
 
 ## 环境 {#environments}
 
@@ -209,7 +198,7 @@ s提 [!DNL Audience Manager][!DNL API]供对不同工作环境的访问。 这�
 
 | 环境 | 主机名 |
 |---|---|
-| **生产** | `https://aam.adobe.io/...` |
+| **生产** | `https://api.demdex.com/...` |
 | **测试版** | `https://api-beta.demdex.com/...` |
 
 >[!NOTE]
