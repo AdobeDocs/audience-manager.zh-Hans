@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 创建算法模型
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
-source-git-commit: 4d10aaac5779f283aa675eef10cf13392837157f
+source-git-commit: 35bad7e676aa1d4143f5d114a1eff85d6aba5f1d
 
 ---
 
@@ -34,13 +34,14 @@ source-git-commit: 4d10aaac5779f283aa675eef10cf13392837157f
 
 1. 转到 **[!UICONTROL Audience Data]** > **[!UICONTROL Models]** 并单 **[!UICONTROL Add New]** 击部 [!UICONTROL Look-Alike Modeling] 分。
    ![look-alike-add](assets/look-alike-add.png)
-2. 在“基 [本信息](../../features/algorithmic-models/create-model.md#basic-information) ”部分
+1. 在“基 [本信息](../../features/algorithmic-models/create-model.md#basic-information) ”部分
    * 命名模型。
    * *（可选）* ，提供有关模型的简要说明。
    * 将模型的状态设置为 **[!UICONTROL Active]** 或 **[!UICONTROL Inactive]**。 不活动的模型将不运行，也不会生成任何数据。
       ![look-alike-basic](assets/look-alike-basic.png)
-3. 在“配 [置](../../features/algorithmic-models/create-model.md#configuration) ”部分：
-   * 单 **[!UICONTROL Browse All Traits]** 击或 **[!UICONTROL Browse All Segments]** 以选择要建模的特征或区段。 选择已载入的特征、基于规则的特征或段作为基线。 否则，您的型号将不运行。
+1. 在“配 [置](../../features/algorithmic-models/create-model.md#configuration) ”部分：
+   * 单 **[!UICONTROL Browse All Traits]** 击或 **[!UICONTROL Browse All Segments]** 以选择要建模的特征或区段。 按名称、ID、说明或数据源搜索特征。 在搜索时单击文件夹，将结果限制在该文件夹及其子文件夹中。 您还可以按特征类型([!UICONTROL Folder Trait]特征 [!UICONTROL Rule-based]、 [!UICONTROL Onboarded]和)或人群类型( [!UICONTROL Algorithmic]设备ID和交叉设[备ID](../../reference/ids-in-aam.md)[](../../reference/ids-in-aam.md))筛选特征。
+      ![browse-traits](assets/browse-traits.png)
    * 选择30天、60天或90天回顾期。 这为模型设置时间范围。
    * 默认 [!UICONTROL TraitWeight] 情况下选择算法。
    * 从列表中选择数据源。 [!UICONTROL Available Data]
@@ -51,7 +52,7 @@ source-git-commit: 4d10aaac5779f283aa675eef10cf13392837157f
 
 <!-- r_model_basic.xml -->
 
-在中， [!UICONTROL Model Builder]通过设 [!UICONTROL Basic Information] 置可以创建新模型或编辑现有模型。 要创建新模型，请提供名称并转到设 [!UICONTROL Configuration] 置。 描述字段为可选字段。
+在中， [!UICONTROL Model Builder]通过 [!UICONTROL Basic Information] 这些设置可以创建新模型或编辑现有模型。 要创建新模型，请提供名称并转到设 [!UICONTROL Configuration] 置。 描述字段为可选字段。
 
 | 字段 | 描述 |
 |---|---|
