@@ -6,7 +6,7 @@ solution: Audience Manager
 title: REST API快速入门
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: 184f9c298f776977c375e4c7a918c5a131c4bcd1
+source-git-commit: f4247b9b80e575f7450a78254acda9af9c230b3a
 
 ---
 
@@ -26,6 +26,7 @@ source-git-commit: 184f9c298f776977c375e4c7a918c5a131c4bcd1
 使用 [受众管理器API代码时请注意](https://bank.demdex.com/portal/swagger/index.html#/) :
 
 * **请求参数：** 除非另有指定，否则所有请求参数都是必需的。
+* **请求标题**:使用 [Adobe I/O令牌时](https://www.adobe.io/) ，必须提供标 `x-api-key` 题。 您可以按照“服务帐户集成”页中的说明获 [取您的API密钥](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 。
 * **[!DNL JSON]内容类型：**在`content-type: application/json`代&#x200B;*码中*`accept: application/json`指定和指定。
 
 * **请求和答复：** 将请求作为格式正确的对象 [!DNL JSON] 发送。 [!DNL Audience Manager] 对格式化的数 [!DNL JSON] 据做出响应。 服务器响应可以包含请求的数据、状态代码或两者。
@@ -38,8 +39,8 @@ source-git-commit: 184f9c298f776977c375e4c7a918c5a131c4bcd1
 
 受众管理器REST API支持两种身份验证方法。
 
-* [建议使用JWT（服务帐户）身份验证](#jwt) 。
-* [OAuth身份验证（已弃用）](#oauth)。 具有现有OAuth集成的客户可以继续使用此方法。
+* [JWT（服务帐户）身份验证](#jwt)。 这是推荐的身份验证方法。
+* [OAuth身份验证（已弃用）](#oauth)。 虽然已弃用此方法，但具有现有OAuth集成的客户可以继续使用此方法。
 
 >[!IMPORTANT]
 >
@@ -130,7 +131,6 @@ source-git-commit: 184f9c298f776977c375e4c7a918c5a131c4bcd1
 将刷新令牌请求传递给您的首选客 [!DNL JSON] 户端。 构建请求时：
 
 * 使用 `POST` 方法调用 `https://api.demdex.com/oauth/token`。
-<!-- * Request headers: when using [Adobe I/O](https://www.adobe.io/) tokens, you must provide the `x-api-key` header. You can get your API key by following the instructions in the [Service Account Integration](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) page. -->
 * 将您的客户端ID和机密转换为基本64编码的字符串。 在转换过程中，用冒号分隔ID和机密。 例如，凭据将 `testId : testSecret` 转换为 `dGVzdElkOnRlc3RTZWNyZXQ=`。
 * 传入HTTP头 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`。 例如，您的标题可能如下： <br/> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/> `Content-Type: application/x-www-form-urlencoded`
 * 在请求主体中，指定您 `grant_type:refresh_token` 在上一个访问请求中收到的刷新令牌并传入。 请求应当如下： <br/> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
