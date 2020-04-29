@@ -6,7 +6,7 @@ solution: Audience Manager
 title: REST API快速入门
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: f4247b9b80e575f7450a78254acda9af9c230b3a
+source-git-commit: 1bbfa4b537a344d58f20763bb40ebe0827ad8698
 
 ---
 
@@ -242,10 +242,11 @@ s提 [!DNL Audience Manager][!DNL API]供对不同工作环境的访问。 这�
 
 根据您使用的身份验证方法，您需要根据下表调整环境URL。
 
-| 环境 | OAuth身份验证的主机名 | JWT身份验证的主机名 |
+| 环境 | JWT身份验证的主机名 | OAuth身份验证的主机名 |
 |---|---|---|
-| **生产** | `https://api.demdex.com/...` | `https://aam.adobe.io/...` |
-| **测试版** | `https://api-beta.demdex.com/...` | `https://aam-beta.adobe.io/...` |
+| **生产** | `https://aam.adobe.io/...` | `https://api.demdex.com/...` |
+| **测试版** | `https://aam-beta.adobe.io/...` | `https://api-beta.demdex.com/...` |
+
 
 >[!NOTE]
 >
