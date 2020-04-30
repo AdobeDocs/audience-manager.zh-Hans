@@ -5,7 +5,7 @@ seo-title: 算法模型特征排除
 title: 算法模型特征排除
 uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
 translation-type: tm+mt
-source-git-commit: ee291fd9a06261afb71cc393fff0f4a1ee5cf7f4
+source-git-commit: e6e22c0c4a8f1374d3d8d18cb7b242e18a29571f
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: ee291fd9a06261afb71cc393fff0f4a1ee5cf7f4
 1. 在您 [!UICONTROL Exclusions] 为建模选择一个或多个数据源之前，选择的内容将灰显。
 2. 选择一个或多个数据源进行建模后，按 **[!UICONTROL Browse All Traits]**。
 3. 在窗口 **[!UICONTROL Select Traits to Exclude]** 中，您可以看到与您之前选择的数据源关联的所有特征。 选择要排除的特征。
-4. 您可以按特征类型、特征填充类型筛选特征，也可以浏览特征文件夹。 请注意，特征文件夹只显示与所选数据源关联的特征。
+4. 您可以按特征类型、特征填充类型([设备ID](../../reference/ids-in-aam.md) 和 [跨设备ID](../../reference/ids-in-aam.md))筛选特征，也可以浏览特征文件夹。 请注意，特征文件夹只显示与所选数据源关联的特征。
 5. Press **[!UICONTROL Exclude Selected Traits]**.
 
 ![trait-exclusions](assets/trait-exclusions-browse-traits.png)
