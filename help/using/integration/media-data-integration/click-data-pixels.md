@@ -1,32 +1,32 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: 通过像素调用捕获营销活动点击数据
+seo-title: 通过像素调用捕获活动点击数据
 solution: Audience Manager
-title: 通过像素调用捕获营销活动点击数据
+title: 通过像素调用捕获活动点击数据
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 132e36175a69a270ea608643049931fbc06efc69
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
 
 # Capturing Campaign Click Data via Pixel Calls {#capturing-campaign-click-data-via-pixel-calls}
 
-点击跟踪可衡量整个营销活动中的访客参与度，因为它记录了第三方创意人员的基于点击的活动。 与展示 [集合类似](/help/using/integration/media-data-integration/impression-data-pixels.md)，事件调用会发送到Audience manager数据收集服务器([!UICONTROL DCS])以进行处理。 然后，访客会被重定向到预期的Web地址。
+点击跟踪可衡量您整个活动的访客参与度，因为它记录了第三方创意人员的基于点击的活动。 与展示 [集合](/help/using/integration/media-data-integration/impression-data-pixels.md)相似，事件调用被发送到受众管理器数据收集服务器([!UICONTROL DCS])以进行处理。 然后，访客被重定向到预期的Web地址。
 
 >[!NOTE]
 >
->请与Adobe Audience Manager咨询或客户潜在客户联系，获取特定于客户域的确切URL。
+>请与Adobe受众经理咨询或客户主管联系，获得特定于客户域的确切URL。
 
 ## 要求
 
 单击跟踪调用需要以下参数：
 
-* `d_event=click`:将事件调用标识为单击事件的键值对。
-* `d_rd=redirect URL`:包含双编码重定向的键值对 [!DNL URL]。 如果您使用的是联机编码工具，请通过编码器运行字符串，然后再次对结果进行编码，以便重定向正常工作。
+* `d_event=click`: 将事件调用标识为单击事件的键值对。
+* `d_rd=redirect URL`: 包含多次编码重定向的键值对 [!DNL URL]。 如果您使用的是联机编码工具，请通过编码器运行该字符串，然后再次对结果进行编码，以便重定向正常工作。
 
-此外，该调用可包含键值对，这些键值对可用于特征鉴定或为其他报告提供数据和元数据。
+此外，调用可包含键值对，这些键值对可用于特征鉴定或为其他报告提供数据和元数据。
 
 ## 请求示例
 
@@ -44,7 +44,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## 支持的宏
 
-单击事件支持下表中列出的宏。 宏是自包含的小代码单元，加载广告标签时激活该代码以用于营销活动和用户跟踪。 只要用以下格式标记宏， [!DNL URL]宏就会与目标一起传递： `%macro%`. 某些键没有宏，而是接受硬编码ID值。 如果要分析受众优化报告中的数据，则需要接受硬编码值 [的键](../../reporting/audience-optimization-reports/audience-optimization-reports.md)。
+单击事件支持下表中列出的宏。 宏是自包含的小代码单元，在加载广告标签时激活，以便活动和用户跟踪。 宏将随目标一起传递，只 [!DNL URL]要它们被标记为以下格式： `%macro%`. 某些键没有宏，而是接受硬编码ID值。 如果要分析受众优化报告中的数据，则需要接受硬编码 [值的键](../../reporting/audience-optimization-reports/audience-optimization-reports.md)。
 
 <table id="table_6EB65C3B7D0E49C59AA6C932549E33FC"> 
  <thead> 
@@ -63,17 +63,17 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
    <td colname="col02"> <p>无宏。 </p> <p>接受硬编码ID值。 </p> </td> 
-   <td colname="col2"> <p>广告商 ID.</p> <p>广告商数据源的集成代码。 请注意，这与Audience manager数据源无关。</p> <p> 受众优化 <span class="wintitle"> 报告所需</span> 。 </p> </td> 
+   <td colname="col2"> <p>广告商 ID.</p> <p>广告商数据源的集成代码。 请注意，这与受众管理器数据源无关。</p> <p> 受众优 <span class="wintitle"> 化报告</span> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bu</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_bu%</code> </p> </td> 
-   <td colname="col2"> <p>业务单位的数字ID。 </p> <p> 受众优化 <span class="wintitle"> 报告所需</span> 。 </p> </td> 
+   <td colname="col2"> <p>业务单位的数字ID。 </p> <p> 受众优 <span class="wintitle"> 化报告</span> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_campaign</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_campaign%</code> </p> </td> 
-   <td colname="col2"> <p>广告服务器中的数字系列活动ID。 </p> <p> 受众优化 <span class="wintitle"> 报告所需</span> 。 </p> </td> 
+   <td colname="col2"> <p>广告服务器中的数字活动ID。 </p> <p> 受众优 <span class="wintitle"> 化报告</span> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_creative</code> </p> </td> 
@@ -83,17 +83,17 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_dpid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_id%</code> </p> </td> 
-   <td colname="col2"> <p>数据提供者ID。 </p> <p>通常与一起 <code> d_dpuuid</code> 使用，将数据提供者ID链接到用户ID。 </p> <p>可选。 </p> </td> 
+   <td colname="col2"> <p>数据提供程序ID。 </p> <p>通常与一 <code> d_dpuuid</code> 起用于将数据提供者ID链接到用户ID。 </p> <p>可选。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_dpuuid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_dpuuid%</code> </p> </td> 
-   <td colname="col2"> <p>数据提供者提供的唯一用户ID。 </p> <p>通常与一起 <code> d_dpid</code> 使用，将用户ID链接到数据提供者ID。 </p> </td> 
+   <td colname="col2"> <p>数据提供程序提供的唯一用户ID。 </p> <p>通常与一 <code> d_dpid</code> 起用于将用户ID链接到数据提供者ID。 </p> </td> 
   </tr>
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Experience Cloud ID (ECID). </span>For more information about the ECID, see <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> <p>可选。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Experience Cloud ID (ECID). </span>For more information about the ECID, see <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> <p>可选。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 
@@ -103,7 +103,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_region</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_region%</code> </p> </td> 
-   <td colname="col2"> <p>为请求提供服务的DCS群集的数字区域ID。 有关DCS的详细信息，请参阅数 <a href="../../reference/system-components/components-data-collection.md"> 据收集组件</a>。 </p> <p>可选。 </p> </td> 
+   <td colname="col2"> <p>为请求提供服务的DCS群集的数字区域ID。 有关DCS的详细信息，请参阅 <a href="../../reference/system-components/components-data-collection.md"> 数据收集组件</a>。 </p> <p>可选。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> r_rand</code> </p> </td> 
@@ -118,7 +118,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_src</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_src%</code> </p> </td> 
-   <td colname="col2"> <p>Audience manager从中提取元数据的源的DPID。 </p> <p>必需. </p> </td> 
+   <td colname="col2"> <p>源的DPID,受众管理器从中提取元数据。 </p> <p>必需. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_uuid</code> </p> </td> 
@@ -140,7 +140,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## 宏示例
 
-此示例演示如何传递创意宏、adgroup宏和放置宏。 它假定每个参数的值都传递到单击跟踪调用的非重定向部分。
+此示例演示如何传递创意宏、adgroup宏和放置宏。 它假定在单击跟踪调用的非重定向部分传递每个参数的值。
 
 <ul class="simplelist"> 
  <li> <code> creative=1235 </code> </li> 
@@ -163,9 +163,9 @@ d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creativ
 
 `https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`
 
-## 其他功能——受众优化报告
+## 其他功能-受众优化报告
 
-您可以使用像素调用来支持受众 [优化报告](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [希望使用像素来为报表提供动力](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，请参阅元数据文件的概述和映射。
+您可以使用像素调用来支持 [受众优化报表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [希望使用像素为报表提供动力](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，请参阅元数据文件的概述和映射。
 
 
 >[!MORELIKETHIS]
