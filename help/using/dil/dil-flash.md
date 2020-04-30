@@ -1,19 +1,19 @@
 ---
-description: 收集从FLA文件发送到Analytics的数据，并在Audience manager中处理该信息。
-seo-description: 收集从FLA文件发送到Analytics的数据，并在Audience manager中处理该信息。
+description: 收集从FLA文件发送到Analytics的数据，并在受众管理器中处理该信息。
+seo-description: 收集从FLA文件发送到Analytics的数据，并在受众管理器中处理该信息。
 seo-title: Flash DIL
 solution: Audience Manager
 title: Flash DIL
 uuid: 65833cfd-768e-4b16-95c5-debd8411df38
 translation-type: tm+mt
-source-git-commit: d72460ee33be0bfffe56eff04286284b2e5f3918
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
 
 # Flash DIL{#flash-dil}
 
-收集从FLA文件发送到Analytics的数据，并在Audience manager中处理该信息。
+收集从FLA文件发送到Analytics的数据，并在受众管理器中处理该信息。
 
 <!-- 
 
@@ -21,7 +21,7 @@ c_flash_dil_toc.xml
 
  -->
 
-[!UICONTROL Flash DIL] 是一个 [!DNL ActionScript] 代码库，可让您在Audience manager中处理视频播放数据。 [!DNL Flash DIL] 通过捕获Adobe库传递到Analytics [!UICONTROL AppMeasurement] 的SWF内容来工作。 [!DNL Flash DIL] 将该数据发送到单独的 [!UICONTROL DIL] JavaScript数据收集模块，该模块将该信息传递给Audience Manager。 分析数 [!UICONTROL Props]据( [!UICONTROL eVars]、事件等)从文件捕获 [!DNL FLA] 的信息在Audience manager中可用作特征或未使用的信号。
+[!UICONTROL Flash DIL] 是一个 [!DNL ActionScript] 代码库，可让您在受众管理器中处理视频播放数据。 [!DNL Flash DIL] 通过捕获Adobe库传递到 [!UICONTROL AppMeasurement] Analytics的SWF内容来工作。 [!DNL Flash DIL] 将该数据发送到单独的 [!UICONTROL DIL] JavaScript数据收集模块，该模块将该信息传递给受众管理器。 分析数 [!UICONTROL Props]据 [!UICONTROL eVars](、事件等) 从文件捕获 [!DNL FLA] 的信号在受众管理器中可用作特征或未使用信号。
 
 ## Flash DIL数据收集要求 {#requirements}
 
@@ -41,19 +41,19 @@ c_flash_dil_intro.xml
 
 * 页面上 [!UICONTROL DIL] 的JavaScript数据收集代码。
 * [DIL ActionScript库](../dil/dil-flash.md#flash-dil-actionscript) ，加载到要从中收集数据的Flash对象中。
-* Adobe [!DNL AppMeasurement] Library（版本3.5.2或更高版本）加载了要从 [!DNL AS][!DNL Flash] 中收集数据的对象。
+* Adobe [!DNL AppMeasurement] 库( [!DNL AS] 版本3.5.2或更高版本)加载了要从 [!DNL Flash] 中收集数据的对象。
 
 **将AllowScriptAccess设置为`Always`或`sameDomain`**
 
-加 `AllowScriptAccess` 载SWF文件的HTML代码控制从SWF文件内执行出站URL访问的能力。 配置数据集 [!UICONTROL Flash DIL] 成时，请确保Flash `AllowScriptAccess` 参数设置为 `always` 或 `sameDomain`。 [!UICONTROL Flash DIL] 如果设置为，则数据收 `AllowScriptAccess` 集将不起作 `never`用。 请参 [阅控制对脚本的访问或主机网页](https://helpx.adobe.com/flash/kb/control-access-scripts-host-web.html)。
+加 `AllowScriptAccess` 载SWF文件的HTML代码控制从SWF文件执行出站URL访问的能力。 配置数据集 [!UICONTROL Flash DIL] 成时，请确保Flash `AllowScriptAccess` 参数设置为 `always` 或 `sameDomain`。 [!UICONTROL Flash DIL] 如果设置为，则数 `AllowScriptAccess` 据收集将不 `never`工作 请参 [阅控制对脚本的访问或主机网页](https://helpx.adobe.com/flash/kb/control-access-scripts-host-web.html)。
 
 **JS代[!UICONTROL DIL]码放置**
 
-尝试将JS数据收集模 [!UICONTROL DIL] 块放在页面上，以便在文件之前加载该 [!DNL FLA] 模块。 当文件 [!DNL FLA] 首先加载时，在数据收集准备 [!UICONTROL DIL] 就绪之前，您可能会错过发送到该模块的 [!UICONTROL Flash DIL] 初始数据信号。 但是，一旦实例化，数 [!UICONTROL DIL] 据收集模块将捕获传入的所有后续SWF文件数据 [!UICONTROL Flash DIL]。
+尝试将JS数据 [!UICONTROL DIL] 收集模块放在页面上，以便在文件之前加 [!DNL FLA] 载。 当文件 [!DNL FLA] 首先加载时，在 [!UICONTROL DIL] 数据收集准备就绪之前，您可能会错过发送到该模 [!UICONTROL Flash DIL] 块的初始数据信号。 但是，一旦实例化， [!UICONTROL DIL] 数据收集模块将捕获传入的所有后续SWF文件数 [!UICONTROL Flash DIL]据。
 
 ## Flash DIL收集的数据 {#data-collected}
 
-[!UICONTROL Flash DIL] 从Adobe库中捕获页面查看、链接跟踪、媒体跟踪和其他媒体查看事 [!UICONTROL AppMeasurement] 件。
+[!UICONTROL Flash DIL] 从Adobe库中捕获页面视图、链接跟踪、媒体跟踪和其他媒体视图 [!UICONTROL AppMeasurement] 事件。
 
 <!-- 
 
@@ -61,9 +61,9 @@ r_flash_dil_data_collected.xml
 
  -->
 
-**页面查看事件**
+**页面视图事件**
 
-除非另行指 `s.trackVars`定， [!UICONTROL Flash DIL] 否则从Adobe appMeasurement收集以下数据：
+除非另有规 `s.trackVars`定， [!UICONTROL Flash DIL] 否则从Adobe AppMeasurement收集以下数据：
 
 * `pageName`
 * `channel`
@@ -75,15 +75,15 @@ r_flash_dil_data_collected.xml
 
 **链接跟踪事件**
 
-除非另行指 `s.linkTrackVars`定， [!UICONTROL Flash DIL] 否则从Adobe收集以下数据 [!UICONTROL AppMeasurement]:
+除非另有规 `s.linkTrackVars`定， [!UICONTROL Flash DIL] 否则从Adobe收集以下数据 [!UICONTROL AppMeasurement]:
 
-* `pe` （调用了跟踪链接的类型）
+* `pe` （调用的跟踪链接类型）
 * `pev1` (链接 URL)
 * `pev2`（链接文本）
 
 **媒体跟踪事件**
 
-除非另行指定，否则 `s.Media.trackVars`将收 [!UICONTROL Flash DIL] 集在“页面查看事件”部分中枚举的所有数据。
+除非另有指定，否则 `s.Media.trackVars`将收 [!UICONTROL Flash DIL] 集在“页面视图”事件部分中枚举的所有数据。
 
 **其他数据点**
 
@@ -91,13 +91,13 @@ r_flash_dil_data_collected.xml
 
 * `mediaName` （媒体／视频元素名称）
 * `mediaAdName` (广告名称)
-* `mediaAdParentName` （广告嵌套在其下的主媒体内容的名称）
+* `mediaAdParentName` （广告嵌套在下的主媒体内容的名称）
 * `mediaAdParentPod` （播放广告的主要内容中的窗格或广告中断）
-* `mediaAdParentPodPos` (广告在窗格中播放的数字位置。 可在窗格内播放多个广告。
+* `mediaAdParentPodPos` (播放广告的窗格中的数字位置。 一个窗格中可以播放多个广告。
 
-## Audience Manager中的Flash DIL数据 {#flash-dil-data}
+## 受众管理器中的Flash DIL数据 {#flash-dil-data}
 
-该模 [!UICONTROL Flash DIL] 块将Adobe appMeasurement数据转换为Audience manager特征和未使用的信号。
+该模 [!UICONTROL Flash DIL] 块将Adobe AppMeasurement数据转换为受众管理器特征和未使用信号。
 
 <!-- 
 
@@ -105,15 +105,15 @@ c_flash_dil_in_aam.xml
 
  -->
 
-分析 [!UICONTROL Props]、 [!UICONTROL eVars]和事件的工作方式与Audience manager中的特征类似。 特征是键值对，用于构建区段。 例如，在类似Analytics的Prop中， `c30=foo``c30` 是键（常数） `foo` 和值（变量）。
+分析 [!UICONTROL Props]、 [!UICONTROL eVars]事件和受众的工作方式与管理器中的特征类似。 特征是键值对，用于构建区段。 例如，在类似的Analytics `c30=foo`属性 `c30` 中，是键（常数） `foo` 和值（变量）。
 
-**将Audience Manager特征与分析变量匹配**
+**将受众管理器特征与分析变量匹配**
 
-要使用由传递的Analytics数据， [!UICONTROL Flash DIL]您应创建键值前缀为的Audience manager特征 `c_`。
+要使用通过传递的Analytics [!UICONTROL Flash DIL]数据，您应创建键值前缀为的受众管理器特征 `c_`。
 
 有关示例，请参阅表：
 
-| 分析数据元素 | 分析示例 | 作为Audience manager特征 |
+| 分析数据元素 | 分析示例 | 作为受众管理器特征 |
 |---|---|---|
 | **prop** | `c30=foo` | `c_prop30=foo` |
 | **evar** | `v35=bar` | `c_evar35=bar` |
@@ -121,11 +121,11 @@ c_flash_dil_in_aam.xml
 
 **DIL/Analytics数据作为未使用信号**
 
-Audience manager接受Analytics [!UICONTROL Props]、 [!UICONTROL eVars]和事件，即使没有相应的特征。 在这种情况下，数据不可用于创建特征，而是显示在“未使用的信号” [报告中](../reporting/dynamic-reports/unused-signals.md) 。 要充分利用这些信息，请创建与库传入的Analytics数据相匹配的Audience Manager特 [!UICONTROL Flash DIL] 征。
+受众管理器接 [!UICONTROL Props]受Analytics [!UICONTROL eVars]、事件和，即使没有相应的特征。 在这种情况下，数据不可用于特征创建，而是显示在“未使用 [的信号”报](../reporting/dynamic-reports/unused-signals.md) 告中。 要充分利用这些信息，请创建与库传入的Analytics数据匹配的受众管理器 [!UICONTROL Flash DIL] 特征。
 
 ## Flash DIL ActionScript库 {#flash-dil-actionscript}
 
-用于将Analytics数 [!DNL Flash] 据发送到Audience manager的对象的代码。
+将Analytics数据发 [!DNL Flash] 送给受众管理器的对象的代码。
 
 <!-- 
 
@@ -155,8 +155,11 @@ s.loadModule(d);
 >[!MORELIKETHIS]
 >
 >* [特征](../features/traits/trait-details-page.md)
->* [信号、特征和区段](../reference/signal-trait-segment.md)
->* [说明的键值对](../reference/key-value-pairs-explained.md)
->* [关键变量的前缀要求](../features/traits/trait-variable-prefixes.md)
->* [AppMeasurement Flash、Flex和OSMF实施指南](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/flash/)
+>* [信号、特征和细分](../reference/signal-trait-segment.md)
+>* [已说明键值对](../reference/key-value-pairs-explained.md)
+>* [密钥变量的前缀要求](../features/traits/trait-variable-prefixes.md)
 
+
+<!-- Victor/Vlad: Do we still need this link? It doesn't look like this content has been migrated.
+>* [AppMeasurement Flash, Flex, and OSMF Implementation Guide](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/flash/)
+-->
