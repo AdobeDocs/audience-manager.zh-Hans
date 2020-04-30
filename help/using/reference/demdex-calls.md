@@ -1,19 +1,19 @@
 ---
-description: Audience Manager和Adobe Experience Platform Identity Service向demdex.net域发出调用并从中接收数据。 这看起来好像Adobe正在处理一个不同寻常的第三方域，但情况并非如此。 本节介绍demdex.net调用中的元素。
-seo-description: Audience Manager和Adobe Experience Platform Identity Service向demdex.net域发出调用并从中接收数据。 这看起来好像Adobe正在处理一个不同寻常的第三方域，但情况并非如此。 本节介绍demdex.net调用中的元素。
+description: 受众管理器和Adobe Experience Platform Identity Service向demdex.net域拨号并从中接收数据。 这看起来好像Adobe正在处理一个不同寻常的第三方域，但情况并非如此。 本节介绍demdex.net调用中的元素。
+seo-description: 受众管理器和Adobe Experience Platform Identity Service向demdex.net域拨号并从中接收数据。 这看起来好像Adobe正在处理一个不同寻常的第三方域，但情况并非如此。 本节介绍demdex.net调用中的元素。
 seo-title: 了解 Demdex 域调用
 solution: Audience Manager
 title: 了解 Demdex 域调用
 uuid: c06dae3a-f169-4712-80fb-d6d448dce51a
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
 
 # 了解 Demdex 域调用{#understanding-calls-to-the-demdex-domain}
 
-Audience Manager和Adobe Experience Platform Identity Service向demdex.net域发出调用并从中接收数据。 这看起来好像Adobe正在处理一个不同寻常的第三方域，但情况并非如此。 本节介绍demdex.net调用中的元素。
+受众管理器和Adobe Experience Platform Identity Service向demdex.net域拨号并从中接收数据。 这看起来好像Adobe正在处理一个不同寻常的第三方域，但情况并非如此。 本节介绍demdex.net调用中的元素。
 
 <table id="table_B846CBEDDA4C4AD19416F7C27FC325C6"> 
  <thead> 
@@ -25,21 +25,21 @@ Audience Manager和Adobe Experience Platform Identity Service向demdex.net域发
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> demdex.net</code> </p> </td> 
-   <td colname="col2"> <p>This is a legacy domain controlled by <span class="keyword"> Adobe</span>. 它反映 <span class="keyword"> 了Audience Manager</span>(Demdex)最初的客户赢取前名称<span class="keyword"> (Demdex</span>)。 <span class="keyword"> Adobe</span> 于2011 <span class="keyword"> 年收购Demdex</span> ，并将公司重新命名为 <span class="keyword"> Audience Manager</span>。 很难更改此域，因为它与 <span class="keyword"> Audience Manager</span>、 <span class="wintitle"> ID服务以及我们的已安装用户群紧密相连</span>。 请参阅 <a href="../overview/aam-overview.md#history-and-background"> 历史和背景</a>。 </p> <p>您可能会看到附加到旧 <code> demdex.net</code> 调用的其他前缀( <code> dcs.demdex.net</code>例如 <code> fast.demdex.net</code>，等等)。 无论前缀如何，对的调 <code><i>something</i>.demdex.net</code> 用始终是对 <span class="keyword"> Adobe</span> 的调用，而不是对某个未知或可疑的第三方域的调用。 </p> </td> 
+   <td colname="col2"> <p>This is a legacy domain controlled by <span class="keyword"> Adobe</span>. 它反映 <span class="keyword"> 了受众</span>管理器的原始客户赢取前名称<span class="keyword"> (Demdex</span>)。 <span class="keyword"> Adobe</span> 在 <span class="keyword"> 2011年收购了Demdex</span> ，并将公司重新命名为 <span class="keyword"> 受众经理</span>。 很难更改此域，因为它与受众管理器、 <span class="keyword"> ID服务</span><span class="wintitle"> 以及我们已安装的用户群紧密相连</span>。 请参阅 <a href="../overview/aam-overview.md#history-and-background"> 历史和背景</a>。 </p> <p>您可能会看到附加到旧 <code> demdex.net</code> 版调用的其他前缀 <code> dcs.demdex.net</code>( <code> fast.demdex.net</code>例如，等等)。 无论前缀是什么，对的调 <code><i>something</i>.demdex.net</code> 用始终是对Adobe的调 <span class="keyword"> 用</span> ，而不是对某个未知或可疑的第三方域的调用。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> dpm</code> </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> DPM</span> 是“数据提供者匹 <span class="wintitle"> 配”的缩写</span>。 它告诉内部 <span class="keyword"> Adobe</span> 系统， <span class="keyword"> Audience Manager</span> 或 <span class="wintitle"></span> ID服务的调用正在传递客户数据以进行同步或请求ID。 这是Audience Manager或 <code> demdex.net</code> ID服务中最常见的调 <span class="keyword"> 用</span><span class="wintitle"> 。</span> </p> <p><span class="wintitle"> DPM调用基础知识</span> : </p> <p> 
+   <td colname="col2"> <p><span class="wintitle"> DPM</span> 是数据提供 <span class="wintitle"> 程序匹配的缩写</span>。 它告诉内部 <span class="keyword"> Adobe</span> 系统，来自受众管理器 <span class="keyword"> 或ID服务的调</span><span class="wintitle"></span> 用正在传递客户数据以进行同步或请求ID。 这是您从受众 <code> demdex.net</code> 管理器或ID服务中看到 <span class="keyword"> 的最常见</span><span class="wintitle"> 调用</span>。 </p> <p><span class="wintitle"> DPM调用</span> 基础知识： </p> <p> 
      <ul id="ul_44023BB060774518BE414EE10820C141"> 
-      <li id="li_0F94D1988A6944BA885FD40AB26FC49F"> <b> <span class="keyword"> Audience Manager</span></b>:来自 <span class="wintitle"> Audience Manager的DPM调用将数据发送到</span> Data Collection Server和Adobe <span class="keyword"> Cache Server</span> (数据收集服 <span class="wintitle"></span><span class="wintitle"></span>务器)。 请参阅 <a href="../reference/system-components/components-data-collection.md"> 数据收集组件</a>。 </li> 
-      <li id="li_5A7EA9EE16EE4D828F0A24AE2B969122"> <b> <span class="wintitle"> ID服务</span></b>:来自 <span class="wintitle"> ID服务的DPM调用是对访客ID的请求</span><span class="wintitle"></span> 。 请参 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> 阅Cookies和Adobe Experience Platform Identity Service</a><a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_id_request.html" format="https" scope="external"> ，以及Adobe Experience Platform Identity Service如何请求和设置ID</a>。 </li> 
-     </ul> </p> <p> <p>注意： <span class="wintitle"> ID服务</span> ，客户可以更改域名中的 <span class="wintitle"> DPM</span> 前缀。 请参 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-subdomain-config.html" format="https" scope="external"> 阅audienceManager Server和audienceManagerServerSecure</a>。 </p> </p> </td> 
+      <li id="li_0F94D1988A6944BA885FD40AB26FC49F"> <b> <span class="keyword"> 受众管理器</span></b>: 来自 <span class="wintitle"> 受众</span> Manager的DPM调用将数据发送到 <span class="keyword"> 收集服务器和</span><span class="wintitle"></span><span class="wintitle"></span>用户档案缓存服务器。 请参 <a href="../reference/system-components/components-data-collection.md"> 阅数据收集组件</a>。 </li> 
+      <li id="li_5A7EA9EE16EE4D828F0A24AE2B969122"> <b> <span class="wintitle"> ID服务</span></b>: 来自 <span class="wintitle"> ID</span> 服务的 <span class="wintitle"></span> DPM调用是对访客ID的请求。 请参 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> 阅Cookie和Adobe Experience Platform Identity Service</a><a href="https://docs.adobe.com/content/help/en/id-service/using/intro/id-request.html" format="https" scope="external"> ，以及Adobe Experience Platform Identity Service如何请求和设置ID</a>。 </li> 
+     </ul> </p> <p> <p>注意：  <span class="wintitle"> ID服务</span> 客户可以更改 <span class="wintitle"> 域名中</span> 的DPM前缀。 请参 <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/subdomain-config.html" format="https" scope="external"> 阅audienceManager Server和audienceManagerServerSecure</a>。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/)
->* [Audience Manager Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_am.html)
+>* [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)
+>* [Audience Manager Cookie](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html)
 
