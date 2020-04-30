@@ -1,25 +1,25 @@
 ---
-description: 本文档涵盖可在数据隐私请求中使用的Audience Manager ID类型。
-seo-description: 本文档涵盖可在数据隐私请求中使用的Audience Manager ID类型。
-seo-title: Audience manager标识符(ID)
+description: 此文档涵盖可在数据隐私请求中使用的受众管理器ID类型。
+seo-description: 此文档涵盖可在数据隐私请求中使用的受众管理器ID类型。
+seo-title: 受众管理器标识符(ID)
 solution: Audience Manager
 keywords: GDPR UI, GDPR API, CCPA, privacy, AAM ID
-title: Audience manager标识符(ID)
+title: 受众管理器标识符(ID)
 translation-type: tm+mt
-source-git-commit: 30352749e926d5730e9cc8beef3936c9ed6d2986
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
 
-# Audience manager标识符(ID) {#aam-ids}
+# 受众管理器标识符(ID) {#aam-ids}
 
-向Adobe Audience manager提 [交数据隐私请求时](data-privacy-requests.md) ，您必须包括下面列出的一个标识符(ID)。 您可以在我们的Audience Manager ID索引中找到有关ID [格式的更多信息](../../reference/ids-in-aam.md)。
+在向Adobe [受众管理](data-privacy-requests.md) 器提交数据隐私请求时，您必须包括下面列出的一个标识符(ID)。 您可以在我们的受众管理器ID索引中找 [到有关ID格式的更多信息](../../reference/ids-in-aam.md)。
 
-## Adobe Audience Manager唯一用户ID
+## Adobe受众管理器唯一用户ID
 
 * **用户 ID**: `aam_uuid`
-* **定义**:Adobe Audience Manager唯一用户ID
-* **命名空间ID**:0
+* **定义**: Adobe受众管理器唯一用户ID
+* **命名空间ID**: 0
 
 **JSON 示例**:
 
@@ -76,8 +76,8 @@ source-git-commit: 30352749e926d5730e9cc8beef3936c9ed6d2986
 ## Adobe Experience Cloud ID
 
 * **用户 ID**: `mid`
-* **定义**: [!DNL Adobe Experience Cloud ID]以前称为 [!DNL Visitor ID] 或 [!DNL Marketing Cloud ID]
-* **命名空间ID**:4
+* **定义**: [!DNL Adobe Experience Cloud ID]，以前称为 [!DNL Visitor ID] 或 [!DNL Marketing Cloud ID]
+* **命名空间ID**: 4
 
 >[!NOTE]
 >
@@ -135,9 +135,9 @@ source-git-commit: 30352749e926d5730e9cc8beef3936c9ed6d2986
 
 **用户 ID**: `cid`
 
-**定义**:客户ID，如您为匿名网站访客设置的Cookie，或来自脱机系统的 [!DNL CRM] ID或哈希用户名。
+**定义**: 客户ID，如您为匿名网站访客设置的Cookie，或 [!DNL CRM] 来自脱机系统的ID或散列用户名。
 
-**命名空间ID**:客户特定。 请从您的Audience manager实例中查找它。
+**命名空间ID**: 客户特定。 请从您的受众管理器实例中找到它。
 
 **JSON 示例**:
 
@@ -172,7 +172,7 @@ source-git-commit: 30352749e926d5730e9cc8beef3936c9ed6d2986
 
 **用户 ID**: `d_cid`
 
-**定义**:移动广告ID。
+**定义**: 移动广告ID。
 
 **命名空间 ID**:
 
@@ -183,7 +183,7 @@ source-git-commit: 30352749e926d5730e9cc8beef3936c9ed6d2986
 
 >[!IMPORTANT]
 >
-> 如果您使用移动设 [!DNL SDK]备，则还应发送Experience Cloud ID(`MID`)和移动广告ID，以获得完整的访问和删除响应。
+> 如果您使用的是移 [!DNL SDK]动设备，则还应发送Experience Cloud ID()`MID`和移动广告ID，以获得完整的访问和删除响应。
 
 **JSON 示例**:
 
@@ -214,9 +214,9 @@ source-git-commit: 30352749e926d5730e9cc8beef3936c9ed6d2986
 
 **用户 ID**: `d_cid_ic`
 
-**定义**:数据源的集成代码。 这可以代替向的请求中的数据源ID /命名空 [!DNL API] 间ID [!DNL Adobe Experience Cloud Privacy Core Service]。
+**定义**: 数据源的集成代码。 在请求时，可以使用它代替数据源ID /命名空间 [!DNL API] ID [!DNL Adobe Experience Cloud Privacy Core Service]。
 
-**命名空间ID**:不适用
+**命名空间ID**: 不适用
 
 **JSON 示例**:
 
