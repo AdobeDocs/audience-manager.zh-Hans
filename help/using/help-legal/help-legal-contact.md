@@ -5,7 +5,7 @@ seo-title: 联系方式和法律信息
 solution: Audience Manager
 title: 联系方式和法律信息
 translation-type: tm+mt
-source-git-commit: 0b32a48e99b35990dc7ccdcc03fcc68ba769d93e
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Experience Cloud 客户关怀团队在此为您提供帮助，同时还提
 
 * [查看 Experience Cloud 帮助页面，以获取建议、提示和常见问题解答](https://helpx.adobe.com/support.ec.html)
 * [在 Twitter @AdobeExpCare 上快速提问](https://twitter.com/AdobeExpCare)
-* [直接联系客户关怀团队](https://helpx.adobe.com/contact/enterprise-support.ec.html)
+* [直接联系客户关怀团队](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html)
 * [查看 Experience Cloud 解决方案的可用性和状态](https://status.adobe.com/)
 
 ## 服务、职能和账单 {#billing}
@@ -31,7 +31,7 @@ Adobe Experience Cloud 客户关怀团队在此为您提供帮助，同时还提
 
 Published by Adobe Systems Incorporated.
 
-[Terms of Use](https://marketing.adobe.com/resources/help/en_US/terms.html) | [Privacy Center](https://www.adobe.com/privacy.html)
+[Terms of Use](https://www.adobe.com/legal/terms.html) | [Privacy Center](https://www.adobe.com/privacy.html)
 
 Adobe and the Adobe logo are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. A trademark symbol (®, ™, etc.) denotes an Adobe trademark.
 
