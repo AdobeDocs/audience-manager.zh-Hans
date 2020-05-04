@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 创建算法模型
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
-source-git-commit: 35bad7e676aa1d4143f5d114a1eff85d6aba5f1d
+source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
 
 ---
 
@@ -47,6 +47,10 @@ source-git-commit: 35bad7e676aa1d4143f5d114a1eff85d6aba5f1d
    * 从列表中选择数据源。 [!UICONTROL Available Data]
    * 完成 **[!UICONTROL Save]** 后单击。
       ![look-alike-configuration](assets/look-alike-configuration.png)
+
+观看以下视频，详细了解跨设备指标的工作方式。
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## 算法模型的基本信息 {#basic-information}
 
