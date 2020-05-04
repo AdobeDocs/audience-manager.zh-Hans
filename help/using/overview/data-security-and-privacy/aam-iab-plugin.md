@@ -5,7 +5,7 @@ seo-title: 适用于 IAB TCF 的 Audience Manager 插件
 solution: Audience Manager
 title: 适用于 IAB TCF 的 Audience Manager 插件
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 5fff9315558d3088f68268f32681842bb8d5e7d3
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 在您对用户的隐私义务中，其中一个重要方面是获取和传达用户对其个人数据使用方式（即“目的”）和使用者（即“公司”）的选择。
 
-Adobe 通过[选择加入功能](hhttps://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html)和 [IAB 透明度及同意框架 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) 支持，为您提供用于管理和传达用户隐私选择的方法。
+Adobe 通过[选择加入功能](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html)和 [IAB 透明度及同意框架 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) 支持，为您提供用于管理和传达用户隐私选择的方法。
 
 本文介绍了支持 IAB TCF 的 Audience Manager 用例，以及在 Audience Manager 中实施 IAB TCF 支持的方法。受众管理器在IAB TCF中注册，供应商ID为565。
 
@@ -40,7 +40,7 @@ IAB TCF的受众管理器插 [件利用](https://docs.adobe.com/content/help/en/
 1. 您必须使用Adobe Experience Platform Identity Service(ECID)4.1版或更高版本。 [下载我们](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 最新的ECID版本。
 1. 您必须使用受众管理器数据集成库(DIL)9.0版或更高版本，可从此处下 [载](https://github.com/Adobe-Marketing-Cloud/dil/releases)。 阅读受众 [管理器文档中的DIL](../..//dil/dil-overview.md)。
 1. 或者，如果您使用服务器端转发(SSF)将数据导入受众管理器，则必须升级到最新版AppMeasurement。 使用Analytics Code Manager [下载AppMeasurement](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html)。
-1. 您必须使用支持IAB TCF的商业类或您自己的同意管理平台(CMP)，并且已在IAB TCF中注册。 请参见在IAB框 [架中注册的CMP的列表](https://advertisingconsent.eu/cmp-list/)。
+1. 您必须使用支持IAB TCF的商业类或您自己的同意管理平台(CMP)，并且已在IAB TCF中注册。 请参见在IAB框 [架中注册的CMP的列表](https://iabeurope.eu/cmp-list/)。
 
 ## 建议和如何实施 {#recommendations}
 
@@ -70,7 +70,7 @@ IAB框架中的标准用途是：
 
 ## 受众经理需要的标准用途 {#aam-standard-purposes}
 
-受众管理器评估存储在IAB TFC同意字符串中的用户选择，其内容包括：
+受众管理器评估存储在IAB TCF同意字符串中的用户选择，其内容包括：
 
 * 信息存储和访问(全局供应商列表中 [的目的ID 1](https://vendorlist.consensu.org/vendorlist.json))
 * 个性化（用途ID 2）
