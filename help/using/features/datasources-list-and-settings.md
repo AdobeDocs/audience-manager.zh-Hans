@@ -6,7 +6,10 @@ solution: Audience Manager
 title: 数据源列表和设置
 uuid: 280a6acd-fef0-4737-a96d-9e22fbc8bfaf
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 6b55441c2bdde6cf2333852fd59fbe87f4e531eb
+workflow-type: tm+mt
+source-wordcount: '1158'
+ht-degree: 1%
 
 ---
 
@@ -96,6 +99,10 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 ### 入站数据源设置
 
 当您的 **[!UICONTROL Inbound]** 数据源设计为接收入站数据时，请选中此复选框。 选中该复 **[!UICONTROL Inbound]** 选框将显示下面描述的另外两组控件。
+
+>[!NOTE]
+>
+>该 **[!UICONTROL Inbound]** 复选框仅用于显示或隐藏下面描述的数据源控件。 取消选中 **[!UICONTROL Inbound]** 此选项不会以任何方式影响数据获取。 无论选中此选项，载入的数据都将被处理。
 
 <table id="table_B2825B7BE0DB4665B47C589A3787CD93"> 
  <thead> 
