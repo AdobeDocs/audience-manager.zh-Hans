@@ -7,7 +7,7 @@ title: “特征详细信息”页
 uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
 keywords: identity type breakdown, identity breakdown, audience identity reporting, cross-device, cross-device ID, device ID
 translation-type: tm+mt
-source-git-commit: 3b56d7ecdef4375bf3b007fa9b325618c701c174
+source-git-commit: c761682f31c777368a21744b21d7302829007c66
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -50,7 +50,7 @@ ht-degree: 0%
    * **[!UICONTROL Cross-Device ID]**: 选择此选项可查看为已验证用户档案收集数据的特征的结果。 选择此选项时，您只能看到报表上的 [!UICONTROL Cross-Device ID] 数据，并且报告下不会显示任何 [!UICONTROL Device ID] 数据。
    * **[!UICONTROL Device ID]**: 选择此选项可查看收集设备用户档案数据的特征结果。 选择此选项时，您只能看到报表上的 [!UICONTROL Device ID] 数据，并且报告下不会显示任何 [!UICONTROL Cross-Device ID] 数据。
 
-      ![特征图](assets/trait-summary.png)
+      ![特征图](assets/trait-summary.gif)
 
 * **[!UICONTROL Unique Trait Realizations]**: 在给定时间范围内将此特征添加到其用户档案的唯一用户计数。
 * **[!UICONTROL Total Trait Population]**: 当前符合此特征的唯一用户数。
