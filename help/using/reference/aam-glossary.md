@@ -6,7 +6,10 @@ solution: Audience Manager
 title: 术语表
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 62147fc719a59d2b2c7b444bce853334b03816c6
+workflow-type: tm+mt
+source-wordcount: '1186'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 将 [!UICONTROL Algorithmic Modeling] 其用作扩展触及范围的手段，使其超出您所识别的核心用户。 该功能可帮助您通过自动受众分析发现新的独特。 在中 [!UICONTROL Algorithmic Models] 管理 **[!UICONTROL Audience Data > Models]**。
 
-请参 [阅了解算法模型](../features/algorithmic-models/understanding-models.md#understanding-models)。
+请参 [阅了解算法模型](../features/algorithmic-models/algo-models-overview.md)。
 
 <br> 
 
