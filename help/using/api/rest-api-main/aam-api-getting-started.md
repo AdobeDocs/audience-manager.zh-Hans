@@ -8,7 +8,7 @@ uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
 source-git-commit: b78dc6df380d43b809ae169f23eea208cd951a4b
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1890'
 ht-degree: 3%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 3%
 
 在配置JWT身份验证之前，请确保您有权访问Adobe [开发人员控制台](https://console.adobe.io/)。 有关访问请求，请与您的组织管理员联系。
 
-### 身份验证{身份验证}
+### 身份验证
 
 请按照以下步骤配置JWT（服务帐户）身份验证：
 
