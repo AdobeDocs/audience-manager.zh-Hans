@@ -6,9 +6,9 @@ solution: Audience Manager
 title: REST API入门
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: 680c4491176755915d2d45ee64f5d88410cb7072
+source-git-commit: b78dc6df380d43b809ae169f23eea208cd951a4b
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1891'
 ht-degree: 3%
 
 ---
@@ -51,12 +51,22 @@ ht-degree: 3%
 
 ## JWT（服务帐户）身份验证 {#jwt}
 
-要建立安全的服务到服务Adobe I/O API会话，您必须创建一个JSON Web令牌(JWT)，它封装了集成的标识，然后将它交换为访问令牌。 对Adobe服务的每个请求都必须在“授权”标头中包含访问令牌，以及在Adobe I/O控制台中创建服务帐户 [集成时生成的](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)[API密钥（客户端ID）](https://console.adobe.io/)。
+### 先决条件 {#prerequisites}
+
+在配置JWT身份验证之前，请确保您有权访问Adobe [开发人员控制台](https://console.adobe.io/)。 有关访问请求，请与您的组织管理员联系。
+
+### 身份验证{身份验证}
 
 请按照以下步骤配置JWT（服务帐户）身份验证：
 
-1. 转到“ [服务帐户集成](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) ”并按照所有步骤配置服务帐户连接并生成JWT令牌。
-2. 转到 [JWT（服务帐户）身份验证](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) ，然后按照以下步骤将您的JWT令牌（在步骤1中创建）交换为访问令牌。
+1. 登录Adobe开 [发人员控制台](https://console.adobe.io/)。
+1. 按照服务帐户连 [接中的步骤操作](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)。
+   * 在第 [2步中： 使用服务帐户身份验证将API添加到项目](https://www.adobe.io/authentication/auth-methods.html#step-2-add-an-api-to-your-project-using-service-account-authentication)，选择受众管理器API选项。
+1. 根据步骤3中的说明进行第一个API调用，以尝试 [连接](https://www.adobe.io/authentication/auth-methods.html#step-3-try-it.)。
+
+>[!NOTE]
+>
+>要以自动方式配置和使用受众管理器REST API，可以编程生成JWT。 有关 [详细说明，请参阅JWT(服务帐户](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) )身份验证。
 
 ## OAuth身份验证（已弃用） {#oauth}
 
