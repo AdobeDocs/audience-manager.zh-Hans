@@ -7,9 +7,9 @@ solution: Audience Manager
 title: 用户档案合并规则和设备图常见问题解答
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 translation-type: tm+mt
-source-git-commit: 56a9626b1fa77926bdc31ef72b058d2aa9b58f43
+source-git-commit: 6876ca5ee0bc5f50c2aa1acd5c683b151a07fd59
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1548'
 ht-degree: 2%
 
 ---
@@ -259,7 +259,7 @@ ht-degree: 2%
 
 不会。
 
-**我的细分对Adobe Campaign的出口为何在2020年3月16日之后显示为0?**
+**2020年3月16日之后，为什么我会看到零细分人口用于向Adobe Campaign出口细分？**
 
 在2019年末，我们发布了一系列用户档案合并规则增强功能，以提高使用跨设备ID生成的批处理文件的准确性。 从2020年3月16日星期一开始，您的受众管理器实例将严格遵循这些增强功能。 通常，使用跨设备ID映射到目标的区段将停止在某些用户档案合并规则配置中生成导出。
 
