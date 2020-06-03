@@ -6,7 +6,10 @@ solution: Audience Manager
 title: 用户档案合并规则入门
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 56a9626b1fa77926bdc31ef72b058d2aa9b58f43
+workflow-type: tm+mt
+source-wordcount: '1327'
+ht-degree: 1%
 
 ---
 
@@ -98,6 +101,19 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
    * **[!UICONTROL Profile Link Device Graph]**
    * **[!UICONTROL Device Co-op]**
 4. 单击 **[!UICONTROL Save]**.
+
+### 使用跨设备ID作为用户ID密钥的Adobe Campaign目标的注意事项 {#considerations}
+
+在2019年末，我们发布了一系列用户档案合并规则增强功能，以提高使用跨设备ID生成的批处理文件的准确性。 从2020年3月16日星期一开始，您的受众管理器实例将严格遵循这些增强功能。 通常，使用跨设备ID映射到目标的区段将停止在某些用户档案合并规则配置中生成导出。
+
+要确保使用跨设备ID(如受众)在Adobe Campaign管理器实例与目标之间正确集成，请确保满足以下要求：
+
+1. 查看映射到您的用户档案声明ID目标的Adobe Campaign段使用的合并规则。 用户档案合并规则必须使用该选 [!UICONTROL Last Authenticated Profile] 项，因此所有经过身份验证的用户档案都可以包含在导出中。 如果您的用户档案合并规则使用其他选项，请将其切换为 [!UICONTROL Last Authenticated Profile]。
+2. 在“Adobe Campaign合并规则”设置中选择用户档案声明ID数据源。
+
+>[!NOTE]
+>
+> 我们已将用户档案合并规则限制为1，以便您为映射到Adobe Campaign声明ID目标的段创建专用的用户档案合并规则，而不更改其他用例的用户档案合并规则。
 
 ## 配置合并规则代码 {#configure-merge-rule-code}
 
