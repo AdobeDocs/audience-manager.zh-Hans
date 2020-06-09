@@ -6,7 +6,10 @@ solution: Audience Manager
 title: DCS 错误代码、消息和示例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 07fb9269f285a8662a9ce5e03d8be8b8d51df553
+workflow-type: tm+mt
+source-wordcount: '1533'
+ht-degree: 4%
 
 ---
 
@@ -247,6 +250,23 @@ In the tables below, *italics* represents a variable placeholder.
    <td colname="col3"> <p>当请 <span class="wintitle">求包含</span> 无效的全局设备ID时，DCS将返回此错误代码。 DCS忽略无效ID，并引发312错误和无效ID的特定错误。 有关正确 <a href="../../../features/global-data-sources.md" format="dita" scope="local">的设备广</a> 告ID格式和相应的全局数据源的详细信息，请参 <a href="../../../reference/ids-in-aam.md" format="dita" scope="local"></a> 阅受众管理器中的全局数据源和ID索引。</p>
    <p>错误调用的示例： <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>说明： IDFA <span class="keyword">(DPID 20915)必</span> 须是大写ID。 请求中提供的ID为小写。</p>
+   </td>
+  </tr>
+   <tr> 
+   <td colname="col1"> <p>313 </p> </td> 
+   <td colname="col2"> <p>GCL中不存在CMP ID</p> </td> 
+   <td colname="col3"> <p>当 <code>gdpr=1</code> 且IAB TC字符串由受众管理器的高速缓存版本的全局CMP列表中在评估时不存在的CMP ID生成时，用于IAB TCF的受众管理器插件会丢弃IAB TC字符串并照常处理请求。 IAB TCF v2.0 ${GDPR}宏设置为0，而${GDPR_CONNENCE_XXX}宏为空。</p>
+   </td>
+  </tr>
+   <tr> 
+   <td colname="col1"> <p>314 </p> </td> 
+   <td colname="col2"> <p>CMP ID在GCL中标记为已删除</p> </td> 
+   <td colname="col3"> <p>当IAB <code>gdpr=1</code> TC字符串由在我们的全局CMP列表的缓存版本中标记为已删除的CMP生成时，IAB TCF的受众管理器插件会丢弃TC字符串并照常处理请求，如果评估时间超过从全局CMP列表删除的时间。 IAB TCF v2.0 ${GDPR}宏设置为0，而${GDPR_CONNENCE_XXX}宏为空。</p></td>
+  </tr>
+   <tr> 
+   <td colname="col1"> <p>315 </p> </td> 
+   <td colname="col2"> <p>“同意”字符串表示未同意</p> </td> 
+   <td colname="col3"> <p>如果未征得同意，IAB TCF的受众管理器插件会选择用户退出进一步的数据收集，或者如果未检测到合作伙伴上下文，则完全停止调用。</p>
    </td>
   </tr>
 
