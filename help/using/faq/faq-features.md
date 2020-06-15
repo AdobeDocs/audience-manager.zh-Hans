@@ -7,7 +7,10 @@ solution: Audience Manager
 title: 产品特性和功能常见问题解答
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 2b70b651a626c2b5667edb58c8c6068152a9d770
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 常见产品和功能相关问题。
 
-<br> 
+ 
 
 <!-- 
 
@@ -30,9 +33,9 @@ faq_features_functions.xml
 
 例如，一个 *`Organization ID`* 如下所示： `1FD6776A524453CC0A490D44@AdobeOrg`.
 
-受众 *`Organization ID`* 经理的DIL API、 [Adobe](../dil/dil-overview.md) Experience Platform Identity Service和其 [他解决方案均使用](https://docs.adobe.com/content/help/en/id-service/using/home.html)该 [!DNL Experience Cloud] 服务。 具有管理员权限的用户可在 *`Organization ID`* 上找到 [!DNL Adobe Admin Console]。 请参阅管 [理——用户管理常见问题解答](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+Audience Manager *`Organization ID`* 的DIL API、 [Adobe](../dil/dil-overview.md) Experience Platform Identity Service和其 [他解决方案均使用](https://docs.adobe.com/content/help/en/id-service/using/home.html)该 [!DNL Experience Cloud] 版本。 具有管理员权限的用户可在 *`Organization ID`* 上找到 [!DNL Adobe Admin Console]。 请参阅管 [理——用户管理常见问题解答](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
-<br> 
+ 
 
 **我是否可以批量创建特征或目标？**
 
@@ -40,27 +43,33 @@ faq_features_functions.xml
 
 >[!NOTE]
 >
->工 [!UICONTROL Bulk Management Tools] 具 *不受支持* 。 [!DNL Audience Manager]提供这些服务是为了方便，仅出于礼貌。 对于批量更改，建议您改 [用受众管理器](../api/api.md) API。
+>工 [!UICONTROL Bulk Management Tools] 具 *不受支持* 。 [!DNL Audience Manager]提供这些服务是为了方便，仅出于礼貌。 对于批量更改，我们建议您改 [用Audience Manager](../api/api.md) API。
 
-<br> 
+ 
+
+**执行批量ID导出到目标时，缺少一些客户ID。 Why does that happen?**
+
+当设备ID(AAM UUID[)链接到多个CRM ID(DPUUID](../reference/ids-in-aam.md))时[](../reference/ids-in-aam.md)，将只导出最新的映射。 因此，您可能会看到导出的设备ID数量低于预期。
+
+ 
 
 **是[!DNL Audience Manager]否可以减少对第三方标记或像素的需求并缩短页面加载时间？**
 
 如 [!DNL Audience Manager] 果已与第三方数据合作伙伴集成，您可以使用服务器到服务器ID调用替换其像素和标记 [!DNL Audience Manager]。 在这种情况下， [!DNL Audience Manager] 当我们第一次看到用户时将触发单个ID调用，并将该信息与您的第三方合作伙伴同步。 这样，无需从每页进行多像素调用。 减少像素调用可缩短页面加载时间。
 
-<br> 
+ 
 
 **我订阅了一个数据源。 数据存储在哪里？**
 
 您的数据源和信息源中包含的所有特征在中显示为子文件夹和特征 [!DNL Audience Manager]。 转到并 **[!UICONTROL Audience Data > Traits]** 展开文件 [!UICONTROL 3rd-Party Data] 夹以视图您的特征或使用此数据创建区段和模型。
 
-<br> 
+ 
 
 **什么是[!UICONTROL Tag Insertion Manager (TIM)]?**
 
-受众管理 [!UICONTROL Tag Insertion Manager] 器使用(TIM)创建和管 [!UICONTROL data collection code (DIL)]理。 This feature is obsolete and has been replaced first by [!UICONTROL Dynamic Tag Manager (DTM)], and later by [!DNL Adobe Experience Platform Launch]. For more information, see [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) and [Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html).
+Audience Manager [!UICONTROL Tag Insertion Manager] 用(TIM)来创建和管 [!UICONTROL data collection code (DIL)]理。 This feature is obsolete and has been replaced first by [!UICONTROL Dynamic Tag Manager (DTM)], and later by [!DNL Adobe Experience Platform Launch]. For more information, see [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) and [Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html).
 
-<br> 
+ 
 
 **算法模型和特质推荐之间有何差异？ 我何时应使用每个？**
 
@@ -82,8 +91,8 @@ Algorithmic Models使您能够选择不同精度级别的用户，并在受众�
 * 您正在将区段用于短活动，或者当您希望快速抑制转换受众时；
 * 你试图将触及力最大化。
 
-<br> 
+ 
 
-**Adobe Analytics和受众管理器细分之间是否有差异？**
+**Adobe Analytics和Audience Manager细分之间有什么区别？**
 
-是，请阅读了 [解分析和受众管理器中的](https://docs.adobe.com/content/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) “区段”，以详细描述差异。
+是，请阅读 [了解Analytics和Audience Manager中的细分](https://docs.adobe.com/content/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) ，详细了解差异。
