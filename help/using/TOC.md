@@ -2,12 +2,12 @@
 product: audience-manager
 solution: Audience Manager
 audience: end-user
-user-guide-title: 受众管理器用户指南
+user-guide-title: Audience Manager用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+source-git-commit: 3ca199ec386d812f53e03508353763d31badbd29
 workflow-type: tm+mt
-source-wordcount: '1711'
+source-wordcount: '1735'
 ht-degree: 9%
 
 ---
@@ -15,20 +15,20 @@ ht-degree: 9%
 
 # Audience Manager User Guide {#user-guide}
 
-+ [受众经理产品文档](aam-home.md)
++ [Audience Manager产品文档](aam-home.md)
 + 概述{#overview}
-   + [受众管理器概述](overview/aam-overview.md)
+   + [Audience Manager概述](overview/aam-overview.md)
    + [收集的数据类型](overview/data-types-collected.md)
    + [数据安全](overview/data-security-and-privacy/data-security.md)
    + 数据隐私{#data-privacy}
       + [数据隐私概述](overview/data-security-and-privacy/data-privacy.md)
       + [数据隐私请求](overview/data-security-and-privacy/data-privacy-requests.md)
       + 数据隐私引用 {#data-privacy-reference}
-         + [受众管理器标识符](overview/data-security-and-privacy/data-privacy-ids.md)
+         + [Audience Manager标识符](overview/data-security-and-privacy/data-privacy-ids.md)
          + [CCPA术语表](overview/data-security-and-privacy/aam-ccpa-glossary.md)
          + [GDPR词汇表](overview/data-security-and-privacy/aam-gdpr-glossary.md)
          + [目的地的GDPR考虑事项](overview/data-security-and-privacy/aam-gdpr-partners.md)
-         + [受众经理客户的GDPR就绪性指南](overview/data-security-and-privacy/aam-gdpr-readiness.md)
+         + [面向Audience Manager客户的GDPR就绪性指南](overview/data-security-and-privacy/aam-gdpr-readiness.md)
       + 同意管理 {#consent-management}
          + [同意管理](overview/data-security-and-privacy/data-privacy-consent.md)
          + [适用于 IAB TCF 的 Audience Manager 插件](overview/data-security-and-privacy/aam-iab-plugin.md)
@@ -60,12 +60,12 @@ ht-degree: 9%
       + [受众实验室高级功能](features/audience-lab/audience-lab-advanced.md)
    + 受众市场{#audience-marketplace}
       + [受众市场](features/audience-marketplace/audience-marketplace.md)
-      + 受众提供商市场{#audience-marketplace-for-data-providers}
-         + [受众提供商市场](features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
+      + Audience Marketplace提供者{#audience-marketplace-for-data-providers}
+         + [Audience Marketplace提供者](features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
          + [创建、定价和管理数据源](features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md)
          + [数据馈送提供商的计费](features/audience-marketplace/marketplace-data-providers/marketplace-billing-report.md)
-      + 受众购买者市场{#audience-marketplace-for-data-buyers}
-         + [受众购买者市场](features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)
+      + Audience Marketplace购买者{#audience-marketplace-for-data-buyers}
+         + [Audience Marketplace购买者](features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)
          + [管理数据馈送订阅](features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md)
          + [数据馈送购买者的计费](features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
       + [专用数据信息源](features/audience-marketplace/marketplace-private-feeds.md)
@@ -78,7 +78,7 @@ ht-degree: 9%
          + [信号搜索概述](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
          + [按键值对搜索信号](features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
          + [按过滤器搜索信号](features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
-         + [Adobe Analytics的高级搜索](features/data-explorer/data-explorer-signals-search/data-explorer-search-analytics.md)
+         + [Adobe Adobe高级搜索Analytics](features/data-explorer/data-explorer-signals-search/data-explorer-search-analytics.md)
          + [筛选搜索结果](features/data-explorer/data-explorer-signals-search/data-explorer-filter-results.md)
          + [保存搜索条件](features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)
       + [从信号创建特征](features/data-explorer/create-traits-from-signals.md)
@@ -95,7 +95,7 @@ ht-degree: 9%
       + [目标概述](features/destinations/destinations.md)
       + [目标主页](features/destinations/destinations-home.md)
       + Adobe Experience Cloud目标{#experience-cloud-destinations}
-         + [配置分析目标](features/destinations/create-analytics-destination.md)
+         + [配置Analytics目标](features/destinations/create-analytics-destination.md)
       + 基于人的目标 {#people-based}
          + [概述和用例](features/destinations/people-based-destinations-overview.md)
          + [先决条件和注意事项](features/destinations/people-based-destinations-prerequisites.md)
@@ -104,11 +104,11 @@ ht-degree: 9%
             + [工作流程A —— 基于所有联机活动和离线数据的个性化](features/destinations/people-based-destinations-workflow-combined.md)
             + [工作流B —— 基于仅脱机数据的个性化](features/destinations/people-based-destinations-workflow-offline.md)
             + [工作流C-基于实名活动和离线数据的个性化](features/destinations/people-based-destinations-workflow-authenticated.md)
-         + [使用基于人的平台进行身份验证](features/destinations/people-based-destinations-authentication.md)
+         + [使用基于人的Platform进行身份验证](features/destinations/people-based-destinations-authentication.md)
          + [可共享受众](/help/using/features/destinations/people-based-destinations-reporting.md)
       + 基于设备的目标（服务器到服务器） {#device-based}
          + [添加新的基于设备的目标](features/destinations/add-device-based-destinations.md)
-         + [列表基于受众管理器设备的目标](/help/using/features/destinations/device-based-destinations-list.md)
+         + [列表基于Audience Manager设备的目标](/help/using/features/destinations/device-based-destinations-list.md)
          + [添加或编辑服务器到服务器目标的区段](features/destinations/add-edit-segments.md)
          + [将Twitter定制受众配置为基于设备的自助服务目标](features/destinations/twitter-tailored-audiences.md)
       + 自定义目标 {#custom-destinations}
@@ -165,8 +165,8 @@ ht-degree: 9%
       + [关键变量的名称要求](features/traits/trait-key-name-requirements.md)
       + [区段和特征的生存时间说明](features/traits/segment-ttl-explained.md)
       + [密钥变量的前缀要求](features/traits/trait-variable-prefixes.md)
-      + [使用平台级密钥进行地理定位](features/traits/trait-geotarget-keys.md)
-      + [使用平台级密钥进行设备定位](features/traits/trait-device-targeting.md)
+      + [使用Platform级键定位](features/traits/trait-geotarget-keys.md)
+      + [使用Platform级密钥进行设备定位](features/traits/trait-device-targeting.md)
       + [带布尔和比较运算符的示例表达式](features/traits/trait-expression-samples.md)
       + [特征和区段资格参考](features/traits/trait-and-segment-qualification-reference.md)
    + [访客用户档案查看器](features/visitor-profile-viewer.md)
@@ -179,7 +179,7 @@ ht-degree: 9%
       + [受众优化报告](reporting/audience-optimization-reports/audience-optimization-reports.md)
       + Audience Optimization for Advertisers {#audience-optimization-advertisers}
          + [受众优化广告商概述](reporting/audience-optimization-reports/aor-advertisers/aor-advertisers.md)
-         + [将DCM数据文件导入受众管理器](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+         + [将DCM数据文件导入Audience Manager](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
          + [细分绩效报告](reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)
          + [趋势分析和卷分析报表](reporting/audience-optimization-reports/aor-advertisers/trend-analysis-volume-analysis.md)
          + [最佳频率报表](reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md)
@@ -217,10 +217,10 @@ ht-degree: 9%
    + [入门状态报告](reporting/onboarding-status-report.md)
    + [出站文件历史记录](reporting/outbound-history-report.md)
    + [对重叠和一般报告中的唯一用户进行计数](reporting/unique-user-counts.md)
-   + [所选受众管理器报告中的数据采样和错误率](reporting/report-sampling.md)
+   + [所选Audience Manager报表中的数据采样和错误率](reporting/report-sampling.md)
 + API和SDK代码{#api-and-sdk-code}
    + [API和SDK代码概述](api/api.md)
-   + [受众管理器API代码迁移](api/api-swagger-migration.md)
+   + [Audience ManagerAPI代码迁移](api/api-swagger-migration.md)
    + 数据收集服务器(DCS)API方法与代码{#dcs}
       + [DCS API方法与代码](api/dcs-intro/dcs-intro.md)
       + DCS事件调用{#dcs-event-calls}
@@ -230,7 +230,7 @@ ht-degree: 9%
       + DCS API{#dcs-apis}
          + [用于服务器到服务器数据传输的DCS API](api/dcs-intro/dcs-s2s/dcs-s2s.md)
          + [从DCS响应获取用户ID和区域](api/dcs-intro/dcs-s2s/dcs-aam-ids.md)
-         + [通过Adobe Experience Platform Identity Service获取用户ID和区域](api/dcs-intro/dcs-s2s/dcs-mcid-ids.md)
+         + [通过Adobe Experience Platform身份服务获取用户ID和区域](api/dcs-intro/dcs-s2s/dcs-mcid-ids.md)
          + [进行服务器到服务器DCS API调用](api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)
       + DCS API参考{#dcs-api-reference}
          + [DCS API参考概述](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
@@ -289,14 +289,14 @@ ht-degree: 9%
       + [使用GPT将段发送到DFP](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [创建GPT目标](integration/gpt-aam-destination/gpt-aam-create-destination.md)
       + [修改GPT setTargeting API调用](integration/gpt-aam-destination/gpt-aam-modify-api.md)
-      + [Google Publisher标记的受众管理器代码](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
+      + [Google Publisher标记的Audience Manager代码](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
    + 与第三方目标集成 {#integrating-third-party}
       + [Facebook WCA集成](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
-      + [OAS作为受众管理器目标](integration/integrating-third-party/open-ad-server-destination.md)
-      + [OpenX作为受众管理器目标](integration/integrating-third-party/openx-destination.md)
-      + [DFP作为受众管理器目标](integration/aam-dfp.md)
+      + [OAS作为Audience Manager目标](integration/integrating-third-party/open-ad-server-destination.md)
+      + [OpenX作为Audience Manager目标](integration/integrating-third-party/openx-destination.md)
+      + [DFP作为Audience Manager目标](integration/aam-dfp.md)
       + [将区段发送到Google AdWords再营销列表](integration/integrating-third-party/rlsa-integration.md)
-   + [实施受众管理器](integration/implement-audience-manager.md)
+   + [实施Audience Manager](integration/implement-audience-manager.md)
    + 媒体数据集成{#media-data-integration}
       + [媒体数据集成概述](integration/media-data-integration/media-data-integration.md)
       + [可操作的日志文件](integration/media-data-integration/actionable-log-files.md)
@@ -324,7 +324,7 @@ ht-degree: 9%
          + [实时入站数据摄取](integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
       + 批数据传输流程{#batch-data-transfer-process}
          + [描述的批处理数据传输过程](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
-         + [向受众管理器发送批数据概述](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)
+         + [向Audience Manager发送批数据概述](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)
          + [入站数据传输的ID同步](integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)
          + [ID 同步文件的名称和内容要求](integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
          + [入站数据文件内容： 语法、无效字符、变量和示例](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
@@ -335,11 +335,12 @@ ht-degree: 9%
          + [入站处理后发送给合作伙伴的示例消息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [自定义合作伙伴集成](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + 与Adobe Experience Platform集成 {#integration-experience-platform}
-      + [受众管理器与Adobe Experience Platform之间的受众共享](integration/integration-aep/aam-aep-audience-sharing.md)
+      + [受众在Audience Manager和Adobe Experience Platform之间共享](integration/integration-aep/aam-aep-audience-sharing.md)
    + 与其他Experience Cloud解决方案集成 {#integration-other-solutions}
-      + [将受众管理器与Adobe目标集成](integration/integration-other-solutions/aam-target-integration.md)
-      + [如何将数据从Adobe Analytics转发到受众管理器](integration/integration-other-solutions/audience-management-module.md)
-      + [将Adobe Analytics区段发布到Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-publish-audience-segment.html)
+      + [将Audience Manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
+      + [如何将数据从AdobeAnalytics转发到Audience Manager](integration/integration-other-solutions/audience-management-module.md)
+      + [将AdobeAnalytics区段发布到Experience Cloud(打开AdobeAnalytics文档)](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-publish-audience-segment.html)
+      + [将Audience Manager与Adobe Campaign集成(打开Adobe Campaign文档)](https://docs.adobe.com/content/help/en/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
 + 参考{#reference}
    + [参考概述](reference/reference.md)
    + [Amazon S3: 关于](reference/amazon-s3.md)
@@ -359,27 +360,27 @@ ht-degree: 9%
       + [批量管理工具词汇表](reference/bulk-management-tools/bulk-management-glossary.md)
    + [CID替换DPID和DPUUID](reference/cid.md)
    + [数据投放和文件处理时间如何影响报告](reference/reporting-file-transfer-timeframe.md)
-   + [受众管理器中ID的索引](reference/ids-in-aam.md)
+   + [Audience Manager中ID的索引](reference/ids-in-aam.md)
    + [已说明键值对](reference/key-value-pairs-explained.md)
    + [密码要求、锁定的帐户和忘记的密码](reference/password-requirements.md)
    + [信号、特征和细分](reference/signal-trait-segment.md)
    + [支持的浏览器](reference/supported-browsers.md)
    + 系统组件{#system-components}
       + [系统组件概述](reference/system-components/components-overview.md)
-      + [受众管理器系统中的关键组件](reference/system-components/components-stack.md)
+      + [Audience Manager系统中的关键组件](reference/system-components/components-stack.md)
       + [数据操作组件](reference/system-components/components-data-action.md)
       + [数据收集组件](reference/system-components/components-data-collection.md)
       + [数据处理组件](reference/system-components/components-data-processing.md)
       + [标签管理组件](reference/system-components/components-tag-management.md)
-      + [平台架构： 数据流图](reference/system-components/components-platform-architecture.md)
+      + [Platform架构： 数据流图](reference/system-components/components-platform-architecture.md)
       + [了解边缘数据中心](reference/system-components/components-edge.md)
    + [代码和文本元素的样式约定](reference/code-style-elements.md)
-   + [受众管理器中的时区](reference/aam-time-zones.md)
+   + [Audience Manager时区](reference/aam-time-zones.md)
    + [TLS 1.0和1.1弃用](reference/tls-support.md)
    + [了解 Demdex 域调用](reference/demdex-calls.md)
-   + [访客受众管理器中的身份验证状态](reference/visitor-authentication-states.md)
+   + [访客身份验证状态Audience Manager](reference/visitor-authentication-states.md)
 + 常见问题解答{#faqs}
-   + [受众管理器常见问题解答概述](faq/faq-overview.md)
+   + [Audience Manager常见问题解答概述](faq/faq-overview.md)
    + [API常见问题解答](faq/faq-api.md)
    + [受众实验室常见问题解答](faq/faq-audience-lab.md)
    + [客户数据馈送常见问题解答](faq/faq-cdf.md)
@@ -401,8 +402,8 @@ ht-degree: 9%
    + [为什么我的载入特质数量在10月15日左右降至0? ](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
    + [为什么我的特征或区段不显示在重叠报告页面中？](/help/using/support-issues/why-do-my-traits-or-segments-not-show-up-in-the-overlap-reports.md)
    + [为什么我们的只读用户能够创建、编辑或删除特征和区段？](/help/using/support-issues/aam-read-only-users-create-delete-traits-segments.md)
-   + [我们不是受众经理客户，但在我们的网站上看到受众经理Javascript调用](/help/using/support-issues/not-using-aam-but-seeing-aam-javascript.md)
-   + [我是否应该在目标详细信息页面上看到受众管理器受众实验室映射的区段？](/help/using/support-issues/should-i-see-audience-lab-mapped-segments-on-the-destination-page.md)
+   + [我们不是Audience Manager客户，但在我们的网站上查看Audience ManagerJavascript调用](/help/using/support-issues/not-using-aam-but-seeing-aam-javascript.md)
+   + [我是否应该在目标详细信息页面上查看Audience Manager受众实验室映射的区段？](/help/using/support-issues/should-i-see-audience-lab-mapped-segments-on-the-destination-page.md)
 + 文档更新{#documentation-updates}
    + [2020文档更新](docs-updates/docs-2020.md)
    + [2019文档更新](docs-updates/docs-2019.md)
