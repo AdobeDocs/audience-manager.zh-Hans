@@ -1,22 +1,22 @@
 ---
-description: 一种向受众管理器发送媒体数据的方法使用广告服务器宏向受众管理器发送活动属性。
-seo-description: 一种向受众管理器发送媒体数据的方法使用广告服务器宏向受众管理器发送活动属性。
+description: 向Audience Manager发送媒体数据的一种方法是使用广告服务器宏向Audience Manager发送活动属性。
+seo-description: 向Audience Manager发送媒体数据的一种方法是使用广告服务器宏向Audience Manager发送活动属性。
 seo-title: 通过像素调用捕获营销活动展示数据
 solution: Audience Manager
 title: 通过像素调用捕获营销活动展示数据
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: 72cf5f30c74736f7143841c0edd6c5c69154a0c2
+source-git-commit: 1fb8ee6c229418e48fcaa412a8ea0f1ab5f00331
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 20%
+source-wordcount: '713'
+ht-degree: 21%
 
 ---
 
 
 # 通过像素调用捕获营销活动展示数据{#capturing-campaign-impression-data-via-pixel-calls}
 
-一种向受众管理器发送媒体数据的方法使用广告服务器宏向受众管理器发送活动属性。
+向Audience Manager发送媒体数据的一种方法是使用广告服务器宏向Audience Manager发送活动属性。
 
 这种方法常被称为“将创意像素化”。 这些数据点由第三方 [!DNL Audience Manager] 广告服务器宏动态插入像素代码中，这些宏用于根据活动的关键报告属性映射和报告所有展示和点击。 汇总数据提供统一的活动性能视图，帮助识别自定义转化路径，并帮助客户改进导致转化的广告服务器事件的顺序。
 
@@ -62,7 +62,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bust </code> </p> </td> 
-   <td colname="col2"> <p>缓存破坏值。 <span class="keyword"> 受众管 </span> 理器会自动发送大多数浏览器和代理都支持的缓存控制标头。 如果要执行其他缓存事件，请将此参数包含在调用中，然后添加随机字符串。 </p> <p> 可选。 </p> </td> 
+   <td colname="col2"> <p>缓存破坏值。 <span class="keyword"> Audience Manager </span> 会自动发送大多数浏览器和代理都支持的缓存控制标头。 如果要执行其他缓存事件，请将此参数包含在调用中，然后添加随机字符串。 </p> <p> 可选。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_campaign </code> </td> 
@@ -109,9 +109,9 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
 
 >[!NOTE]
 >
->请与Adobe受众经理咨询或客户主管联系，获得特定于客户域的确切URL。
+>请联系您的Adobe Audience Manager咨询或帐户主管，以获取特定于客户域的确切URL。
 
-## 其他功能-受众优化报告
+## 其他功能- [!DNL Audience Optimization Reports]
 
 您可以使用像素调用来支持 [受众优化报表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [希望使用像素为报表提供动力](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，请参阅元数据文件的概述和映射。
 
