@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 通过像素调用捕获营销活动展示数据
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: 1fb8ee6c229418e48fcaa412a8ea0f1ab5f00331
+source-git-commit: b1d953837766f5822f5ba0246f7e10042c6f1072
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 21%
@@ -111,7 +111,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
 >
 >请联系您的Adobe Audience Manager咨询或帐户主管，以获取特定于客户域的确切URL。
 
-## 其他功能- [!DNL Audience Optimization Reports]
+## 其他功能- [!DNL Audience Optimization Reports] {#additional-functionality-aor}
 
 您可以使用像素调用来支持 [受众优化报表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [希望使用像素为报表提供动力](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，请参阅元数据文件的概述和映射。
 
