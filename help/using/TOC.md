@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Audience Manager用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 3ca199ec386d812f53e03508353763d31badbd29
+source-git-commit: 1b31f10effa2780b5e4374516dd6c76d92a0123a
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1740'
 ht-degree: 9%
 
 ---
@@ -311,6 +311,7 @@ ht-degree: 9%
          + [OAuth 2.0集成，用于实时出站传输](integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
       + 批量出站数据传输{#batch-outbound-data-transfers}
          + [批处理出站数据传输概览](integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)
+         + [配置批处理数据传输集成](integration/receiving-audience-data/batch-outbound-transfers/batch-server-configuration.md)
          + [出站数据文件名： 语法和示例](integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
          + [日志文件传输的传输控制文件](integration/receiving-audience-data/batch-outbound-transfers/transfer-control-files.md)
          + [出站模板宏](integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
