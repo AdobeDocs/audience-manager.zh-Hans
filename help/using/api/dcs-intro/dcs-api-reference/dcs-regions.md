@@ -1,19 +1,22 @@
 ---
-description: 对DCS进行调用时需要区域DCS服务器主机名。 这是因为DCS将信息存储在地理位置接近站点访问者的数据中心中。 如果将查询发送到错误的DCS，则这些查询会正常工作，但这些调用效率低下，并且可能会延迟响应。 要发出DCS请求，请将区域ID与其相应的区域主机名匹配，并使用正确的主机名组成查询。
-seo-description: 对DCS进行调用时需要区域DCS服务器主机名。 这是因为DCS将信息存储在地理位置接近站点访问者的数据中心中。 如果将查询发送到错误的DCS，则这些查询会正常工作，但这些调用效率低下，并且可能会延迟响应。 要发出DCS请求，请将区域ID与其相应的区域主机名匹配，并使用正确的主机名组成查询。
+description: 对DCS进行调用时，需要使用区域DCS服务器主机名。 这是因为DCS将信息存储在地理位置接近站点访客的数据中心中。 如果将查询发送到错误的DCS，则这些调用将正常工作，但这些调用效率低下，可能会延迟响应。 要发出DCS请求，请将区域ID与其相应的区域主机名匹配，并使用正确的主机名组成查询。
+seo-description: 对DCS进行调用时，需要使用区域DCS服务器主机名。 这是因为DCS将信息存储在地理位置接近站点访客的数据中心中。 如果将查询发送到错误的DCS，则这些调用将正常工作，但这些调用效率低下，可能会延迟响应。 要发出DCS请求，请将区域ID与其相应的区域主机名匹配，并使用正确的主机名组成查询。
 seo-title: DCS区域ID、位置和主机名
 solution: Audience Manager
 title: DCS区域ID、位置和主机名
 uuid: ad150ffe-4583-472b-ac8b-fb900a7966e4
 translation-type: tm+mt
-source-git-commit: 51a326d0ac02175e0e1452e0a00b4a3a415d88ff
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 2%
 
 ---
 
 
 # DCS Region IDs, Locations, and Host Names {#dcs-region-ids-locations-and-host-names}
 
-区域服 [!UICONTROL DCS] 务器主机名称是向进行调用所必需的 [!UICONTROL DCS]。 这是因为，在地理 [!UICONTROL DCS] 上接近站点访问者的数据中心中存储信息。 如果您将查询发送到错误的调用，则您的查询 [!UICONTROL DCS]将会正常工作，但这些调用效率低下，并且可能会延迟响应。 要发出请 [!UICONTROL DCS] 求，请将区域ID与其相应的区域主机名匹配，并使用正确的主机名组成查询。
+需要 [!DNL DCS] 区域服务器主机名才能调用 [!DNL DCS]。 这是因为在地理 [!DNL DCS] 上接近站点访客的数据中心中存储信息。 如果您将查询发送到错误的地址，则 [!DNL DCS]将正常工作，但这些调用效率低下，可能会延迟响应。 要发出请 [!DNL DCS] 求，请将区域ID与其相应的区域主机名匹配，并使用正确的主机名组成查询。
 
 <table id="table_643212E4F9C64DFF9443904B01D89CB3"> 
  <thead> 
@@ -36,7 +39,7 @@ source-git-commit: 51a326d0ac02175e0e1452e0a00b4a3a415d88ff
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID6 </p> </td> 
-   <td colname="col2"> <p>欧洲（都柏林，爱尔兰） </p> </td> 
+   <td colname="col2"> <p>欧洲（都柏林、爱尔兰） </p> </td> 
    <td colname="col3"> <p> <code> irl1.demdex.net</code> </p> </td> 
   </tr> 
   <tr> 
@@ -46,12 +49,12 @@ source-git-commit: 51a326d0ac02175e0e1452e0a00b4a3a415d88ff
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID8 </p> </td> 
-   <td colname="col2"> <p>南太平洋／大洋洲（悉尼，澳大利亚） </p> </td> 
+   <td colname="col2"> <p>南太平洋／大洋洲（澳大利亚悉尼） </p> </td> 
    <td colname="col3"> <p> <code> apse2.demdex.net</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID9 </p> </td> 
-   <td colname="col2"> <p>美国西部（美国俄勒冈州） </p> </td> 
+   <td colname="col2"> <p>美国西部（俄勒冈州，美国） </p> </td> 
    <td colname="col3"> <p> <code> usw2.demdex.net</code> </p> </td> 
   </tr> 
   <tr> 
@@ -67,4 +70,4 @@ source-git-commit: 51a326d0ac02175e0e1452e0a00b4a3a415d88ff
  </tbody> 
 </table>
 
-您还可以使 [!DNL API] 用方法获取可用区域的列 [!UICONTROL DCS] 表。 请参 [阅DCS区域API方法](../../../api/rest-api-main/aam-api-dcs-regions.md)。
+您还可以使 [!DNL API] 用方法获取可用区域的 [!DNL DCS] 列表。 请参 [阅DCS区域API方法](../../../api/rest-api-main/aam-api-dcs-regions.md)。
