@@ -5,14 +5,17 @@ seo-title: 在 Audience Manager 中处理来自 Experience Cloud 解决方案或
 solution: Audience Manager
 title: 实施和集成指南
 translation-type: tm+mt
-source-git-commit: 0f122b55c779fd56dffff51c2b2aeea31353a29f
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '75'
+ht-degree: 60%
 
 ---
 
 
 # 实施和集成概述
 
-在 Audience Manager 中处理来自 Experience Cloud 解决方案或其他外部系统的数据。
+Work with data from [!DNL Experience Cloud] solutions or other external systems in [!DNL Audience Manager].
 
 * [数据集成方法](data-integration-methods.md)
 * [实施Audience Manager](implement-audience-manager.md)
