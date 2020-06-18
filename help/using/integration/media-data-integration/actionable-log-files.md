@@ -1,15 +1,15 @@
 ---
-description: 可操作的日志文件允许您从广告服务器日志文件捕获媒体信号，以在Audience Manager中创建特征。 无需附加像素，即可捕获广告服务器的印象、点击和转换。
+description: 可操作的日志文件允许您从广告服务器日志文件捕获媒体信号以创建Audience Manager特征。 无需附加像素，即可捕获广告服务器的印象、点击和转换。
 keywords: actionable logs, alf, ALF
-seo-description: 可操作的日志文件允许您从广告服务器日志文件捕获媒体信号，以在Audience Manager中创建特征。 无需附加像素，即可捕获广告服务器的印象、点击和转换。
+seo-description: 可操作的日志文件允许您从广告服务器日志文件捕获媒体信号以创建Audience Manager特征。 无需附加像素，即可捕获广告服务器的印象、点击和转换。
 seo-title: 可操作的日志文件
 solution: Audience Manager
 title: 可操作的日志文件
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 translation-type: tm+mt
-source-git-commit: 8f5dadb44ada3822b7336827c8863a7277b687c3
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1378'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 可操作的日志文件 {#actionable-log-files}
 
-[!UICONTROL Actionable Log Files] 允许您从广告服务器日志文件中捕获媒体数据，并使用该数据在Audience Manager中创建特征。 Capture impressions, clicks, and conversions from ad servers as traits without having to append [pixels](../../integration/media-data-integration/impression-data-pixels.md).
+[!UICONTROL Actionable Log Files] 允许您从广告服务器日志文件中捕获媒体数据，并使用该数据创建Audience Manager中的特征。 Capture impressions, clicks, and conversions from ad servers as traits without having to append [pixels](../../integration/media-data-integration/impression-data-pixels.md).
 
 >[!NOTE]
 >
@@ -31,8 +31,8 @@ ht-degree: 3%
 
 要开始使 [!UICONTROL Actionable Log Files]用，您需要将日志数据导入 [!DNL Audience Manager]。 以下链接将帮助您入门：
 
-* 有关 [!UICONTROL Google DCM] 日志，请参 [阅将DCM数据文件导入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)*并与* 您的 [!DNL Audience Manager] 顾问联系。
-* 有关 [!UICONTROL Google DFP] 日志，请参 [阅将DFP数据文件导入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)*并联* 系您的 [!DNL Audience Manager] 顾问。
+* 有关 [!UICONTROL Google DCM] 日志，请参 [阅将DCM数据文件导](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) 入Audience Manager并与 ** 您的顾 [!DNL Audience Manager] 问联系。
+* 有关 [!UICONTROL Google DFP] 日志，请参 [阅将DFPAudience Manager文件](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) 导入，并 *与您* 的顾 [!DNL Audience Manager] 问联系。
 * 有关其他广告服务器日志，请参 [阅数据和元数据](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)*文件并* 与您的顾 [!DNL Audience Manager] 问联系。
 
 如果已将日志数据导入 [!DNL Audience Manager]，请咨询 [!DNL Audience Manager] 顾问或客 [户服务](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html) ，为您 [!UICONTROL Actionable Log Files] 启用。
@@ -45,7 +45,7 @@ ht-degree: 3%
 
 与 [!UICONTROL Actionable Log Files]捕获来自广告服务器日志的信息 [!DNL Audience Manager] 的方式与捕获来自实时网站交互的数据相同。 [!DNL Audience Manager] 连接到广告服务器日志存储，解析日志中的信息，并将日志数据作为可操作信号发送到我们的数据收 [集服务器](../../reference/system-components/components-data-collection.md#dcs-pcs)。
 
-您仍需要设置基于规则的特征来捕获可操作信号。 了解如何在Audience Manager UI中或使用批量 [管理工具](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) ，设置基 [于规则的特征](../../reference/bulk-management-tools/bulk-create.md)。 向下滚动到“ [可操作信号](../../integration/media-data-integration/actionable-log-files.md#actionable-signals) ”部分，以列表您可在基于规则的特征中使用的所有密钥。
+您仍需要设置基于规则的特征来捕获可操作信号。 了解如何在Audience Manager用户界面中或使用批量 [管理工具](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) ，设置基 [于规则的特征](../../reference/bulk-management-tools/bulk-create.md)。 向下滚动到“ [可操作信号](../../integration/media-data-integration/actionable-log-files.md#actionable-signals) ”部分，以列表您可在基于规则的特征中使用的所有密钥。
 
 >[!IMPORTANT]
 >
@@ -127,7 +127,7 @@ ht-degree: 3%
     <tr> 
    <td colname="col1"> <p> <code>-</code> </p> </td> 
    <td colname="col2"> <p> <code> d_event</code> </p> </td> 
-   <td colname="col3"> <p>指示事件类型。 Audience Manager从DCM日志文件名中读取事件类型并将其转换为可操作的信号。 </p> <p>接受的值为： </p> <p> 
+   <td colname="col3"> <p>指示事件类型。 Audience Manager从DCM日志文件名读取事件类型，并将其转换为可操作的信号。 </p> <p>接受的值为： </p> <p> 
      <ul id="ul_58EB40E458844DA185ABAF160ADAF03E"> 
       <li id="li_71772CC106F74F4788E1784CC3D70BD3"> <code> d_event = imp</code> 展示次数。 </li> 
       <li id="li_33A629A32B87400F93269581154D566F"> <code> d_event = click</code> 按钮。 </li> 
@@ -196,7 +196,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
   <tr> 
    <td colname="col1"> <p> <code>Advertiser-ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_adsrc</code> </p> </td> 
-   <td colname="col3"> <p>广告商数据源的集成代码。 请注意，此字段与Audience Manager <a href="../../features/datasources-list-and-settings.md">数据源无关。</a></p></td> 
+   <td colname="col3"> <p>广告商数据源的集成代码。 请注意，此字段与Audience Manager数 <a href="../../features/datasources-list-and-settings.md">据源无关。</a></p></td> 
    <td colname="col4"> <p> <code> 134243</code> </p> </td> 
   </tr> 
   <tr> 
@@ -226,7 +226,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
     <tr> 
    <td colname="col1"> <p> <code>-</code> </p> </td> 
    <td colname="col2"> <p> <code> d_event</code> </p> </td> 
-   <td colname="col3"> <p>指示事件类型。 Audience Manager从日志文件名中读取事件类型，并将其转换为可操作的信号。 请参 <a href="../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md#naming-conventions">阅日志文件命名约定</a>。 </p> <p>接受的值为： </p> <p> 
+   <td colname="col3"> <p>指示事件类型。 Audience Manager从日志文件名中读取事件类型并将其转换为可操作的信号。 请参 <a href="../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md#naming-conventions">阅日志文件命名约定</a>。 </p> <p>接受的值为： </p> <p> 
      <ul id="ul_58EB40E458844DA185ABAF160ADAF03E"> 
       <li id="li_71772CC106F74F4788E1784CC3D70BD3"> <code> d_event = imp</code> 展示次数。 </li> 
       <li id="li_33A629A32B87400F93269581154D566F"> <code> d_event = click</code> 按钮。 </li> 
@@ -249,7 +249,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_activity=1234&d_creative=24122&d_placemebt=3442&d_bu=3983524&d_campaign=7321391&d_adsrc=11111
 ```
 
-## 在Audience Manager UI中处理可操作信号 {#actionable-signals-in-ui}
+## 在Audience Manager用户界面中处理可操作信号 {#actionable-signals-in-ui}
 
 您可以在信号搜索界面中视图传入的可 [操作信号](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md) 。
 
