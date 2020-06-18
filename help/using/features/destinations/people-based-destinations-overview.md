@@ -5,9 +5,9 @@ seo-title: 基于人员的目标概述和使用案例
 solution: Audience Manager
 title: 概述和用例
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 [!DNL People-Based Destinations] 是高级Audience Manager集成。 请联系Adobe代表以利用此高级功能。
 
-## 为何应使用基于人的目标 {#why-use}
+## 您应使用的原因 [!UICONTROL People-Based Destinations] {#why-use}
 
 **通过从渠道内管理整个受众细分，为客户提供一致的跨Audience Manager体验。**
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ![pbd-overview](assets/pbd-diagram.png)
 
-通过 [!DNL People-Based Destinations]Audience Manager，您可以帮助您将受众数据集中化、构建细分并在多个基于人的渠道中进行激活。 您可以从Audience Manager用户界面中完成所有操作，避免手动将数据上传到每个平台的额外工作，从而节省流程中宝贵的时间。
+通过 [!DNL People-Based Destinations]Audience Manager，您可以帮助您将受众数据集中化、构建细分并在多个基于人的渠道中进行激活。 您可以从Audience Manager用户界面中完成所有操作，避免手动将数据上传到每个平台的额外工作，从而节省流程中的宝贵时间。
 
 **从纯脱机受众创建和激活用户档案段。**
 
