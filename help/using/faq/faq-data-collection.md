@@ -7,7 +7,7 @@ title: 数据收集和产品集成常见问题解答
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 translation-type: tm+mt
-source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 1%
@@ -27,9 +27,9 @@ faq_data_collection_integration.xml
 
  -->
 
-**如何在日志文件导出中区分[!UICONTROL DCS]入站流[!UICONTROL DCS]量和流量？**
+**如何在日志文件导出中区分[!DNL DCS]入站流[!DNL DCS]量和流量？**
 
-通过载入的 [!UICONTROL Inbound] 特征填充 [!UICONTROL Inbound] 方式与填充方式相同 [!UICONTROL DCS]。 有几种不同的方法可以判断流量来自 [!UICONTROL Inbound]:
+通过载入的 [!UICONTROL Inbound] 特征填充 [!UICONTROL Inbound] 方式与填充方式相同 [!DNL DCS]。 有几种不同的方法可以判断流量来自 [!UICONTROL Inbound]:
 
 * 远程IP将设置为68.67.173.18
 * 域ID将设置为5325
@@ -37,13 +37,13 @@ faq_data_collection_integration.xml
 
 <br> 
 
-**能否向我提供一列表IP地址，我可以添加到dpm.demdex.net的允许列表?**
+**能否向我提供一列表IP地址，我可以将其添加到dpm.demdex.net的允许列表？**
 
 不幸的是，我们不能。 这些IP是通过按地理区域动态分配的 [!DNL Amazon Web Services]。 因此，不 [!DNL Audience Manager] 控制可分配给此地址的IP的范围。
 
 <br> 
 
-**能否为我提供一个IP地址，我可以将其添加到您的入站和出站sFTP服务器的允许列表?**
+**能否向我提供可添加到入站和出站sFTP服务器允许列表的IP地址？**
 
 是，请参见下文。
 
@@ -175,15 +175,15 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 报表根据生成报表时在后端看到的未验证用户档案记录(UUID)计算总量。
 
-在对的第一次调 [!UICONTROL DCS]用中，声 *明的ID不链* 接到 [任何UUID(即，客户端](hhttps://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html) 上不存在demdex cookie)。 将随 [!UICONTROL DCS] 机生成一个UUID并设置一个 [!DNL demdex] cookie并在响应调用中传递它，但它不会将UUID传输到后端。
+在对的第一次调 [!DNL DCS]用中，声 *明的ID不链* 接到 [任何UUID(即，客户端](hhttps://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html) 上不存在demdex cookie)。 将随 [!DNL DCS] 机生成一个UUID并设置一个 [!DNL demdex] cookie并在响应调用中传递它，但它不会将UUID传输到后端。
 
 >[!NOTE]
 >
 >只有在设置了cookie的设备触发进一步活动后，才会在后端存储中实现生成的UUID。
 
-因此，报告不会反映您呼叫中声明的ID触发的事件。 我们建议您在对的事件测试调用中使用UUID、ECID（以前称为MID）或移动设备ID [!UICONTROL DCS]。 然后，您可以在和中验证特征 [!UICONTROL General Reports] 和段实现 [!UICONTROL Trend Reports]。
+因此，报告不会反映您呼叫中声明的ID触发的事件。 我们建议您在对的事件测试调用中使用UUID、ECID（以前称为MID）或移动设备ID [!DNL DCS]。 然后，您可以在和中验证特征 [!UICONTROL General Reports] 和段实现 [!UICONTROL Trend Reports]。
 
-另请参阅 [受众管理器ID的索引](../reference/ids-in-aam.md)。
+另请参阅 [Audience ManagerID索引](../reference/ids-in-aam.md)。
 
 <br> 
 
