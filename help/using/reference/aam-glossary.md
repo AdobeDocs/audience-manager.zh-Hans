@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 术语表
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
 translation-type: tm+mt
-source-git-commit: 62147fc719a59d2b2c7b444bce853334b03816c6
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 3%
@@ -46,9 +46,9 @@ See [Customer Data Feeds](../features/cdf-files.md).
 
 **CRM ID**
 
-CRM ID是客户通过它识别其自己CRM系统中的用户的ID。 我们使用“受众管理器”中的术语DPUUID而不是CRM ID。
+CRM ID是客户通过它识别其自己CRM系统中的用户的ID。 我们使用术语DPUUID来代替CRM ID来Audience Manager。
 
-请参阅受众管 [理器ID索引中的DPUUID](../reference/ids-in-aam.md)。
+请参阅Audience Manager [中ID索引中的DPUUID](../reference/ids-in-aam.md)。
 
 <br> 
 
@@ -115,7 +115,7 @@ See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 **Experience Cloud ID (ECID)**
 
-以前命名 [!DNL Marketing Cloud] 了ID（MID或MCID）。 ID [!DNL Experience Cloud] 是ID服务的中心。 它是网站访客的唯一永久标识符。 请参阅Cookie和 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html)。
+以前命名 [!DNL Marketing Cloud] 了ID（MID或MCID）。 ID [!DNL Experience Cloud] 是ID服务的中心。 它是网站访客的唯一永久标识符。 请参阅Cookie和 [Adobe Experience Platform身份服务](https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html)。
 
 <br> 
 
@@ -166,7 +166,7 @@ See [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 * [!UICONTROL Traits]: 集成代码是指内部业务流程使用的ID、SKU或其他值的字段。 可选。
 * [!UICONTROL Segments]: 集成代码是用户定义的ID或其他公司特定信息的字段。 可选。
-* [!UICONTROL Data Sources]: 当您要创建跨设备数据源、使用Adobe Experience Platform Identity Service或使用Adobe Experience Platform Identity Service时，需要集成代码 [!UICONTROL Profile Merge Rules]。 有关 [详细信息，请参阅](../features/manage-datasources.md#create-data-source) “创建数据源”。
+* [!UICONTROL Data Sources]: 在您要创建跨设备数据源、使用Adobe Experience Platform身份服务或使用数据时，需要集成代码 [!UICONTROL Profile Merge Rules]有关 [详细信息，请参阅](../features/manage-datasources.md#create-data-source) “创建数据源”。
 
 ## K-L {#k-l}
 
@@ -178,13 +178,13 @@ See [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 **MCID**, **MID**
 
-请参 [阅Experience Cloud ID](../reference/aam-glossary.md#e-f)。
+请参阅 [Experience CloudID](../reference/aam-glossary.md#e-f)。
 
 ## O-P {#o-p}
 
 **PCS**
 
-[!UICONTROL Profile Cache Server]。这是 [!UICONTROL PCS] 一个大型数据库，运行在Apache Cassandra上。 它存储从服务器到服务器的传输和为活动用户接收的数据 [!UICONTROL DCS]。 [!UICONTROL PCS] 数据由设备ID、经过身份验证的用户档案ID及其关联特征组成。
+[!UICONTROL Profile Cache Server]。这是 [!UICONTROL PCS] 一个大型数据库，运行在Apache Cassandra上。 它存储从服务器到服务器的传输和为活动用户接收的数据 [!DNL DCS]。 [!UICONTROL PCS] 数据由设备ID、经过身份验证的用户档案ID及其关联特征组成。
 
 请参 [阅数据收集组件](../reference/system-components/components-data-collection.md)。
 
@@ -220,7 +220,7 @@ See [Profile Merge Rule Options Defined](../features/profile-merge-rules/merge-r
 
 **细分可寻址受众**
 
-在可 [寻址受众](/help/using/features/addressable-audiences.md)，此度量表示在报告回顾期间属于该区段并在您的网站上同步活动ID的用户数。 区段可以通过受众市场中获得的特征，包括您自己的第一方数据、第二方数据和第 [三方数据](/help/using/features/audience-marketplace/audience-marketplace.md)。
+在可 [寻址受众](/help/using/features/addressable-audiences.md)，此度量表示在报告回顾期间属于该区段并在您的网站上同步活动ID的用户数。 区段可以通过Audience Marketplace中获得的特征包含您自己的第一方数据、第二方数据和第三方 [数据](/help/using/features/audience-marketplace/audience-marketplace.md)。
 
 <br> 
 
@@ -272,7 +272,7 @@ TTL定义一个特征中合格访客保留的天数。 TTL是针对特征而非�
 
 The [!DNL Experience Cloud] ID Service (formerly visitor ID) provides a universal, persistent ID that identifies your visitors across all the solutions in the [!DNL Experience Cloud].
 
-请参阅 [Adobe Experience Platform Identity Service文档](https://docs.adobe.com/content/help/en/id-service/using/home.html) 。
+请参阅 [Adobe Experience Platform身份服](https://docs.adobe.com/content/help/en/id-service/using/home.html) 务文档。
 
 ## W-X-Y-Z {#w-z}
 
