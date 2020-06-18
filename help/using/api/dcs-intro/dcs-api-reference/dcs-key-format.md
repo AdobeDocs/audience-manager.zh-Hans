@@ -1,21 +1,24 @@
 ---
-description: 在发出呼叫时，DCS以标准或序列化格式接受键值数据。 有关如何设置标准和序列化键值数据的格式的信息，请查阅本节。
-seo-description: 在发出呼叫时，DCS以标准或序列化格式接受键值数据。 有关如何设置标准和序列化键值数据的格式的信息，请查阅本节。
+description: 发出呼叫时，DCS以标准或序列化格式接受密钥值数据。 有关如何格式化标准和序列化键值数据的信息，请查阅本节。
+seo-description: 发出呼叫时，DCS以标准或序列化格式接受密钥值数据。 有关如何格式化标准和序列化键值数据的信息，请查阅本节。
 seo-title: 格式化DCS调用中的键值对
 solution: Audience Manager
 title: 格式化DCS调用中的键值对
 uuid: af02f2a1-4388-4074-ab4e-66ee82023f1c
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 1%
 
 ---
 
 
 # 格式化DCS调用中的键值对 {#formatting-key-value-pairs-in-dcs-calls}
 
-发出呼叫时，将接 [!UICONTROL DCS] 受标准或序列化格式的键值数据。 有关如何设置标准和序列化键值数据的格式的信息，请查阅本节。
+发出呼叫时，将接 [!DNL DCS] 受标准或序列化格式的键值数据。 有关如何格式化标准和序列化键值数据的信息，请查阅本节。
 
-## 标准和序列化键值对 {#standard-serialized}
+## 标准和序列化密钥值对 {#standard-serialized}
 
 <table id="table_A220F9B359F34C6EA7B83618FC22EE3A"> 
  <thead> 
@@ -28,7 +31,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
  <tbody> 
   <tr> 
    <td colname="col1"> <b>标准</b> </td> 
-   <td colname="col2"> <p>标准键值对由单键和值组成。 此结构将数据组织成单独的键值对。 每个键都明确表示，即使再次用于定义不同的值也是如此。 这是向DCS发送数据的最常见方式。 </p> </td>
+   <td colname="col2"> <p>标准键值对由单个键和值组成。 此结构将数据组织成单独的键值对。 每个键都明确表示，即使再次用于定义不同的值也是如此。 这是向DCS发送数据的最常见方式。 </p> </td>
    <td colname="col3"> <code> key1=val1&amp;key2=val2&amp;key3=val3</code> </td>
   </tr>
   <tr> 
@@ -41,14 +44,14 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 序列化键值对的分隔符和分隔符 {#delimiters-separators}
 
-对于序列化键值对，您必须指定这些变量内和变量之间的值分隔的标记。 Audience manager需要以下分隔符和分隔符：
+对于序列化键值对，必须指定这些变量内和变量之间的值分隔的标记。 Audience Manager需要以下分隔符和分隔符：
 
 <table id="table_8FD4E6B9506943AEA619D4089913ECBC"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 对 </th> 
    <th colname="col2" class="entry"> 符号 </th> 
-   <th colname="col3" class="entry"> 分色 </th> 
+   <th colname="col3" class="entry"> 分离个人 </th> 
   </tr>
  </thead>
  <tbody> 
@@ -69,5 +72,5 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 >
 >* [将数据发送到DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)
 >* [DCS支持的键值前缀和变量](../../../api/dcs-intro/dcs-api-reference/dcs-keys.md)
->* [说明的键值对](../../../reference/key-value-pairs-explained.md)
+>* [已说明键值对](../../../reference/key-value-pairs-explained.md)
 
