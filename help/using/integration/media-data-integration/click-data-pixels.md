@@ -6,9 +6,9 @@ solution: Audience Manager
 title: 通过像素调用捕获活动点击数据
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 72cf5f30c74736f7143841c0edd6c5c69154a0c2
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '657'
 ht-degree: 7%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 7%
 
 # Capturing Campaign Click Data via Pixel Calls {#capturing-campaign-click-data-via-pixel-calls}
 
-点击跟踪可衡量您整个活动的访客参与度，因为它记录了第三方创意人员的基于点击的活动。 与展示 [集合](/help/using/integration/media-data-integration/impression-data-pixels.md)相似，事件调用被发送到受众管理器数据收集服务器([!UICONTROL DCS])以进行处理。 然后，访客被重定向到预期的Web地址。
+点击跟踪可衡量您整个活动的访客参与度，因为它记录了第三方创意人员的基于点击的活动。 与展示 [集合](/help/using/integration/media-data-integration/impression-data-pixels.md)相似，事件调用被发送到Audience Manager数据收集服务器([!DNL DCS])以进行处理。 然后，访客被重定向到预期的Web地址。
 
 >[!NOTE]
 >
->请与Adobe受众经理咨询或客户主管联系，获得特定于客户域的确切URL。
+>请联系您的 [!DNL Audience Manager] 咨询或帐户主管，了解 [!DNL URL] 客户域的具体信息。
 
 ## 要求
 
@@ -66,7 +66,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
    <td colname="col02"> <p>无宏。 </p> <p>接受硬编码ID值。 </p> </td> 
-   <td colname="col2"> <p>广告商 ID.</p> <p>广告商数据源的集成代码。 请注意，这与受众管理器数据源无关。</p> <p> 受众优 <span class="wintitle"> 化报告</span> 。 </p> </td> 
+   <td colname="col2"> <p>广告商 ID.</p> <p>广告商数据源的集成代码。 请注意，这与Audience Manager数据源无关。</p> <p> 受众优 <span class="wintitle"> 化报告</span> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bu</code> </p> </td> 
@@ -121,7 +121,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_src</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_src%</code> </p> </td> 
-   <td colname="col2"> <p>源的DPID,受众管理器从中提取元数据。 </p> <p>必需. </p> </td> 
+   <td colname="col2"> <p>源的DPID,Audience Manager从中提取元数据。 </p> <p>必需. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_uuid</code> </p> </td> 
