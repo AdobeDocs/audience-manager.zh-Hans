@@ -7,14 +7,17 @@ solution: Audience Manager
 title: 批量管理入门
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: a4569127b748374b5707daedb0809c58bca74e9b
+source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 1%
 
 ---
 
 
 # Getting Started With Bulk Management{#getting-started-with-bulk-management}
 
-使用批量管理工具，您只需一次操作即可创建和管理多个对象。 您可以使用批量管理工具处理数据源、派生信号、目标、文件夹、模型、细分和特征。
+使用 [!DNL Bulk Management Tools] 该工具，您只需一次操作即可创建和管理多个对象。 您可以使 [!DNL Bulk Management Tools] 用、、、、 [!UICONTROL data sources]、 [!UICONTROL derived signals]、 [!UICONTROL destinations]以及 [!UICONTROL folders][!UICONTROL models][!UICONTROL segments][!UICONTROL traits]。
 
 <!-- 
 
@@ -24,11 +27,11 @@ c_bulk_start.xml
 
 >[!NOTE]
 >
->[UI中分配的](../../features/administration/administration-overview.md) RBAC组权 [!DNL Audience Manager] 限在中得到保留 [!UICONTROL Bulk Management Tools]。
+>[用户界面中](../../features/administration/administration-overview.md) 分配的RBAC [!DNL Audience Manager] 组权限在中得到保留 [!UICONTROL Bulk Management Tools]。
 
 ## 概述 {#overview}
 
-此功能使用带有宏的Microsoft Excel电子表格，这些宏对API进行安全、经过身份验证的 [!DNL Audience Manager] 调用。 API提供允许您批量进行更改的方法和服务。 您不必知道如何编写代码或使用我们的API来使用它。 工作表包含执行特定批量更改功能的列标题和选项卡。 要进行批量更改，您只需将预定义的标题添加到特定工作表，提供要批量更改的信息，然后单击操作按钮。 工作表和API将为您完成其余的工作。
+此功能使用一个 [!DNL Microsoft Excel] 包含宏的电子表格，这些宏对API进行安全、经过身份验证 [!DNL Audience Manager] 的调用。 API提供允许您批量进行更改的方法和服务。 您不必知道如何编写代码或使用我们的API来使用它。 工作表包含执行特定批量更改功能的列标题和选项卡。 要进行批量更改，您只需将预定义的标题添加到特定工作表，提供要批量更改的信息，然后单击操作按钮。 工作表和API将为您完成其余的工作。
 
 ## 下载 {#download}
 
@@ -40,7 +43,7 @@ c_bulk_start.xml
 
 * 您的 [!DNL Experience Cloud] 登录名。 作为客户，您应已拥有这些凭据。
 * 工作 [!DNL Bulk Management Tools] 表。 [下载工作表](assets/BAAAM_V2_20200502.xlsm) ，获取最新版本。
-* 运行于或 [!DNL macOS] 64位上的Microsoft Excel [!DNL Microsoft Windows]。 我们建议您使用最新版Microsoft Excel。
+* [!DNL Microsoft Excel] 运行 [!DNL macOS] 于或64位 [!DNL Microsoft Windows]。 我们建议您使用最新版本的 [!DNL Microsoft Excel]。
 * 打开工作表时，必须 **启用宏** ，才能 [!DNL Bulk Management Tools] 使用。
 
 ## 身份验证要求和选项 {#auth-reqs}
@@ -49,9 +52,9 @@ c_bulk_start.xml
 
 **API身份验证要求**
 
-2019年10月发布的第二版批量管理工具简化了身份验证过程。 此版本中的身份验证步骤概述如下：
+2019年10月发布的 [!DNL Bulk Management Tools]第二版本简化了身份验证过程。 此版本中的身份验证步骤概述如下：
 
-1. 打开电子表格并导航到 **Config** 工作表。
+1. 打开电子表格并导航到 **[!UICONTROL Config]** 工作表。
 2. 按照工作表中概述的步骤操作。
    ![](assets/baaam-authentication.png)
 3. 完成这些步骤后，您将获得批量更改的授权。
