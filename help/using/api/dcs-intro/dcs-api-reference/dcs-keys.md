@@ -7,18 +7,21 @@ title: DCS API调用支持的属性
 keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid_ic
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '809'
+ht-degree: 2%
 
 ---
 
 
 # DCS API调用支持的属性 {#supported-attributes-for-dcs-api-calls}
 
-列表并描述可传递给()的语法和支持的属性(或键值 [!UICONTROL Data Collection Servers] 对[!UICONTROL DCS])。 此信息可以帮助您设置请求 [!UICONTROL DCS] 的格式并了解此系统返回的参数。
+列表并描述可传递给()的语法和支持的属性(或键值 [!UICONTROL Data Collection Servers] 对[!DNL DCS])。 此信息可以帮助您设置请求 [!DNL DCS] 的格式并了解此系统返回的参数。
 
 ## 属性前缀 {#attribute-prefixes}
 
-该 [!UICONTROL DCS] 类型依赖于键值对中添加到键的特定前缀，以对要传入的数据类型进行分类。
+该 [!DNL DCS] 类型依赖于键值对中添加到键的特定前缀，以对要传入的数据类型进行分类。
 
 <table id="table_23B7E15EC13749E9A245DFB543822DB7"> 
  <thead> 
@@ -34,7 +37,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_</code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> 受众管理器</span> 属性。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Audience Manager</span> 属性。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> h_</code> </p> </td> 
@@ -42,14 +45,14 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> p_</code> </p> </td> 
-   <td colname="col2"> <p>客户定义的私有属性。 </p> <p> 当密钥具有前缀时，DCS会接受您自己的专用 <code> p_</code> 数据。 专用数据用于特征评估，但不会记录或存储在我们的系统中。 例如，假设您有一个特征定义为 <code> customers = p_age&lt;25</code> ，并且您在事件 <code> p_age=23</code> 调用中传入。 根据这些条件，符合基于年龄的资格条件的用户有资格获得该特征，但在受众经理收到请求后，键值对 <span class="keyword"> 会被删除</span> ，并且不会记录。 </p> </td>
+   <td colname="col2"> <p>客户定义的私有属性。 </p> <p> 当密钥具有前缀时，DCS会接受您自己的专用 <code> p_</code> 数据。 专用数据用于特征评估，但不会记录或存储在我们的系统中。 例如，假设您有一个特征定义为 <code> customers = p_age&lt;25</code> ，并且您在事件 <code> p_age=23</code> 调用中传入。 在满足这些条件的情况下，符合基于年龄的资格条件的用户有资格获得该特征，但在Audience Manager收到请求后，键值对 <span class="keyword"> 会</span> 被删除，并且不会记录。 </p> </td>
   </tr> 
  </tbody> 
 </table>
 
 ## d_属性 {#d-attributes}
 
-除非您希望得到响应，否则所有这些都是可选的 [!UICONTROL DCS]。 如果您希望 [!UICONTROL DCS] 该用户返回响应，则 `d_rtbd=json` 为必需。
+除非您希望得到响应，否则所有这些都是可选的 [!DNL DCS]。 如果您希望 [!DNL DCS] 该用户返回响应，则 `d_rtbd=json` 为必需。
 
 <table id="table_FCCE4F9D796648899772A191981EFDE6"> 
  <thead> 
@@ -69,7 +72,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_cid</code> </p> </td> 
-   <td colname="col2"> <p>包含由受众管理器分配的一<code> DPID</code>对或多对数据提供程序ID(<code> DPUUID</code>)和数据提供程序 <span class="keyword"> 用户ID()</span>。 如果使用多对s <code> DPID</code>和 <code> DPUUID</code>s，则每对用非打印字符分开 <code> %01</code>。 For example: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_cid</code> 替换 <code> d_dpid</code> 和 <code> d_dpuuid</code>（已弃用但仍受支持）。 请参阅 <a href="../../../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td>
+   <td colname="col2"> <p>包含由Audience Manager分配的一对或多<code> DPID</code>对数据提供程序ID()和<code> DPUUID</code>数据提供程序用户 <span class="keyword"> ID()</span>。 如果使用多对s <code> DPID</code>和 <code> DPUUID</code>s，则每对用非打印字符分开 <code> %01</code>。 For example: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_cid</code> 替换 <code> d_dpid</code> 和 <code> d_dpuuid</code>（已弃用但仍受支持）。 请参阅 <a href="../../../reference/cid.md">CID 取代 DPID 和 DPUUID</a>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cid_ic</code> </p> </td> 
@@ -77,11 +80,11 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>为遵守儿童保护法规，禁止使用第三方cookie。 此参数由Adobe Experience Platform Identity Service动态设置，并取决于配 <code> idSyncDisable3rdPartySyncing</code> 置。 请参 <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/coppa.html" format="https" scope="external"> 阅Adobe Experience Platform Identity Service中的COPPA支持</a>。 </p> </td>
+   <td colname="col2"> <p>为遵守儿童保护法规，禁止使用第三方cookie。 此参数由AdobeAdobe Experience Platform身份服务动态设置，具体取决于配 <code> idSyncDisable3rdPartySyncing</code> 置。 请参 <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/coppa.html" format="https" scope="external"> 阅Adobe Experience Platform标识服务中的COPPA支持</a>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
-   <td colname="col2"> <p>可选。在客户请求时启用。 联系您的Adobe受众经理顾问或客户关怀。 </p> <p>指示应在响应内返回特征和区 <code> JSON</code> 段。 </p> <p> 
+   <td colname="col2"> <p>可选。在客户请求时启用。 联系您的Adobe Audience Manager顾问或客户关怀。 </p> <p>指示应在响应内返回特征和区 <code> JSON</code> 段。 </p> <p> 
      <ul id="ul_8B936ACB18724681B959783421ACF026"> 
       <li id="li_792A6248F49141C0B4B214C754D5F5C5"> <p><code> d_cts=1</code> 返回 <a href="../../../reference/ids-in-aam.md"> 区段的旧</a> “区段ID”。 </p> </li>
       <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_cts=2</code> 返回区段的区段ID。 </p> </li>
@@ -111,7 +114,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_dst_filter</code> </p> </td> 
-   <td colname="col2"> <p><code> d_dst_filter</code> 是保留属性，用于Adobe Analytics与受众管理器之间的集成。 </p> <p>我们建议不要创建使用保留属性的特征。 Adobe可随时更改保留属性。 </p> </td> 
+   <td colname="col2"> <p><code> d_dst_filter</code> 是保留属性，用于AdobeAnalytics与Audience Manager之间的集成。 </p> <p>我们建议不要创建使用保留属性的特征。 Adobe可随时更改保留属性。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_jsonv=1|0</code> </p> </td> 
@@ -119,7 +122,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>指定Experience Cloud ID服务设置和使 <span class="keyword"> 用的</span> Experience Cloud ID。 有关ECID的更多信息，请 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> 参阅Cookie和Experience Cloud标识服务</a>。 </p> </td> 
+   <td colname="col2"> <p>指定Experience CloudID服务设置和使用 <span class="keyword"> 的Experience Cloud</span> ID。 有关ECID的详细信息，请参 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> 阅Cookie和Experience Cloud身份服务</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
@@ -127,7 +130,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_ptfm </code> </p> </td> 
-   <td colname="col2"> <p>允许受众管理器区分移动请求和桌面请求。 支持的值包括： </p> <p> 
+   <td colname="col2"> <p>允许Audience Manager区分移动请求和桌面请求。 支持的值包括： </p> <p> 
      <ul id="ul_A01D4B15C89F4713A39E08377924D632"> 
       <li id="li_E17CC839265B4EB9AC44A3DA31A23857"> <code> ios</code> </li> 
       <li id="li_468F5903CD3048B5AE02A3FDA9B3C4F1"> <code> android</code> </li> 
@@ -137,7 +140,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_rs</code> </p> </td> 
-   <td colname="col2"> <p>已弃用。<code> d_rs</code> 是保留属性，用于Adobe Analytics与 <span class="keyword"> 受众管理器</span><span class="keyword"> 的旧式集成</span>。 </p> <p>我们建议不要创建使用保留属性的特征。 Adobe可随时更改保留属性。 </p> </td> 
+   <td colname="col2"> <p>已弃用。<code> d_rs</code> 是保留属性，用于AdobeAnalytics与 <span class="keyword"> Audience Manager的旧</span> 版集 <span class="keyword"> 成</span>。 </p> <p>我们建议不要创建使用保留属性的特征。 Adobe可随时更改保留属性。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_rtbd=json</code> </p> </td> 
@@ -181,7 +184,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_uuid</code> </p> </td> 
-   <td colname="col2"> <p>唯一用户ID。 标识当此值无法从Cookie中使用时的访客。 </p> </td> 
+   <td colname="col2"> <p>唯一用户ID。 标识当此值不可从Cookie中使用时的访客。 </p> </td> 
   </tr>
  </tbody>
 </table>
