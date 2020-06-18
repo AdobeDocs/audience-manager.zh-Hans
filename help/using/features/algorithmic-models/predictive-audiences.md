@@ -5,9 +5,9 @@ seo-title: 预测受众概述
 solution: Audience Manager
 title: Audience Manager预测受众
 translation-type: tm+mt
-source-git-commit: 4df2a7536155d42133c0873ed4e3376eb24cba1a
+source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1261'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 作为媒体公司，我希望将受众分类，以便以优惠价格销售广告空间，同时为访客提供相关广告。
 
-## 预测受众模型的工作原理
+## 模型 [!UICONTROL Predictive Audiences] 的工作方式 {#how-predictive-audiences-models-work}
 
 创建模型 [!UICONTROL Predictive Audiences] 时，需要执行三个步骤：
 
@@ -82,14 +82,14 @@ ht-degree: 0%
 
 与人物选择类似，您应选择特征或区段来定义您的目标受众，使其具有具有丰富特征集的实时用户，以便将其分类到正确的人物。
 
-### 预测受众模型训练阶段 {#model-training}
+### [!UICONTROL Predictive Audiences] 模型培训阶段 {#model-training}
 
 在算法将第一方受众分类为正确的角色之前，它需要根据您的数据进行自我培训。
 
 对于您定义的每个人物，算法会分析其各自的受众，并评估过去30天内其用户的任何实时和／或载入的特征活动。
 此步骤每24小时执行一次，以说明第一方受众中的更改。
 
-### 预测受众模型分类阶段 {#model-classification}
+### [!UICONTROL Predictive Audiences] 模型分类阶段 {#model-classification}
 
 当实时看到属于目标受众的访客时，模型会评估访客是否是已定义角色的一部分。 对于不属于任何角色的访客，模型会分配角色资格得分。
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 * 目前不支持第二方和第三方数据 [!UICONTROL Predictive Audiences]。
 * 受众分类只针对实时的第一方受众。 载入的第一方受众分类在将来的更新中可能受支持。
    >[!IMPORTANT]
-   > 当前，预 [!UICONTROL Total Segment Population] 测区段显示为0，预测受众 [不支持批量出站](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) 数据传输。 此行为将在以后的更新中发生更改。
+   > 当前，预 [!UICONTROL Total Segment Population] 测区段显示为0，不支 [持批出站数据传输](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) 。 [!UICONTROL Predictive Audiences]此行为将在以后的更新中发生更改。
 * [!UICONTROL Predictive Audiences] 根据您的第一方特征从所有第一方数据源执行受众分类。
 * 区段评估 [!UICONTROL Predictive Audiences] 使用您在 **[!UICONTROL Profile Merge Rule]** 帐户中定义的默认值。 要了解有关详细信 [!UICONTROL Profile Merge Rules] 息，请参阅专 [用文档](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-overview.html)。
 * 某些特征和区段不支持作为基准或目标受众。 [!UICONTROL Predictive Audiences] 当选择以下某项作为基准或目标受众时，模型将无法保存：
@@ -118,7 +118,7 @@ ht-degree: 0%
    * 算法特征；
    * 第二方和第三方特征。
 
-## 数据导出控制{#dec}
+## [!UICONTROL Data Export Controls] {#dec}
 
 由模型创建的 [!UICONTROL Predictive Audiences] 预测区段 [会从以下第一方](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html) 数据源继承“数据导出控制”:
 
@@ -129,7 +129,7 @@ ht-degree: 0%
 
 具有不属于区段隐私限制的其他限 [!UICONTROL Predictive Audiences] 制的特征将被排除在培训阶段，并且不会对模型产生影响。
 
-## 基于角色的访问控制{#rbac}
+## [!UICONTROL Role-Based Access Controls] {#rbac}
 
 您为角色和受众分类选择的特征和区段受基于访问控制 [角色的Audience Manager的约束](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/administration/administration-overview.html)。
 
