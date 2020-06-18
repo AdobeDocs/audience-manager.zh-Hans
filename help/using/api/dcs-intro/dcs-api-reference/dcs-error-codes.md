@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DCS 错误代码、消息和示例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 # DCS 错误代码、消息和示例 {#dcs-error-codes-messages-and-examples}
 
-代码ID以数字顺 [!UICONTROL Data Collection Servers] 序列[!UICONTROL DCS]出的()生成的错误代码和消息。
+代码ID以数字顺 [!UICONTROL Data Collection Servers] 序列[!DNL DCS]出的()生成的错误代码和消息。
 
 In the tables below, *italics* represents a variable placeholder.
 
@@ -67,13 +67,13 @@ In the tables below, *italics* represents a variable placeholder.
   </tr> 
   <tr> 
    <td colname="col1"> <p>101 </p> </td> 
-   <td colname="col2"> <p>传入的Experience Cloud ID无效 <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>DCS <span class="wintitle"> 调</span> 用包含无效 <span class="keyword"> 的Experience Cloud</span> ID。 </p> <p>检查标 <code> d_mid=</code> 题字符串中的键值对。 请确保您正在传入正确的 <span class="keyword"> Experience Cloud</span> ID，然后重试请求。 </p> </td> 
+   <td colname="col2"> <p>传入的Experience CloudID无效 <code><i>ID</i></code> </p> </td> 
+   <td colname="col3"> <p>DCS <span class="wintitle"> 调用</span> 包含无效的 <span class="keyword"> Experience Cloud</span> ID。 </p> <p>检查标 <code> d_mid=</code> 题字符串中的键值对。 请确保您正在传递正确的 <span class="keyword"> Experience Cloud</span> ID，然后重试请求。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>102 </p> </td> 
    <td colname="col2"> <p>请求中传递的aam id无效 <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>DCS <span class="wintitle"> 调用</span> 包含无效的 <span class="keyword"> 受众管理器</span> ID。 </p> <p>检查标 <code> d_uuid=</code> 题字符串中的键值对。 确保您正在传入正确的 <span class="keyword"> 受众管理器</span> ID，然后重试请求。 </p> </td> 
+   <td colname="col3"> <p>DCS <span class="wintitle"> 调用</span> 包含无效的 <span class="keyword"> Audience Manager</span> ID。 </p> <p>检查标 <code> d_uuid=</code> 题字符串中的键值对。 请确保您正在传递正确的 <span class="keyword"> Audience Manager</span> ID，然后重试请求。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>104 </p> </td> 
@@ -88,7 +88,7 @@ In the tables below, *italics* represents a variable placeholder.
   <tr> 
    <td colname="col1"> <p>111 </p> </td> 
    <td colname="col2"> <p>收到 <span class="wintitle"> 的IMS令牌</span> 无效 </p> </td> 
-   <td colname="col3"> <p>返回受众管理器- Adobe目标集成。 当对DCS进行调用（包含无效的IMS令牌）时，将引发错误。 令牌可能格式不正确、已过期，或者用户可能未获得访问所需资源的授权。 </p> </td>
+   <td colname="col3"> <p>返回Audience Manager-Adobe Target集成。 当对DCS进行调用（包含无效的IMS令牌）时，将引发错误。 令牌可能格式不正确、已过期，或者用户可能未获得访问所需资源的授权。 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -247,7 +247,7 @@ In the tables below, *italics* represents a variable placeholder.
   <tr> 
    <td colname="col1"> <p>312 </p> </td> 
    <td colname="col2"> <p>请求包含无效的全局设备ID </p> </td> 
-   <td colname="col3"> <p>当请 <span class="wintitle">求包含</span> 无效的全局设备ID时，DCS将返回此错误代码。 DCS忽略无效ID，并引发312错误和无效ID的特定错误。 有关正确 <a href="../../../features/global-data-sources.md" format="dita" scope="local">的设备广</a> 告ID格式和相应的全局数据源的详细信息，请参 <a href="../../../reference/ids-in-aam.md" format="dita" scope="local"></a> 阅受众管理器中的全局数据源和ID索引。</p>
+   <td colname="col3"> <p>当请 <span class="wintitle">求包含</span> 无效的全局设备ID时，DCS将返回此错误代码。 DCS忽略无效ID，并引发312错误和无效ID的特定错误。 有关正确 <a href="../../../features/global-data-sources.md" format="dita" scope="local">的设备广</a> 告ID格式和相应的全局数据源的详细信息，请参 <a href="../../../reference/ids-in-aam.md" format="dita" scope="local"></a> 阅Audience Manager中的全局数据源和ID索引。</p>
    <p>错误调用的示例： <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>说明： IDFA <span class="keyword">(DPID 20915)必</span> 须是大写ID。 请求中提供的ID为小写。</p>
    </td>
@@ -255,18 +255,18 @@ In the tables below, *italics* represents a variable placeholder.
    <tr> 
    <td colname="col1"> <p>313 </p> </td> 
    <td colname="col2"> <p>GCL中不存在CMP ID</p> </td> 
-   <td colname="col3"> <p>当 <code>gdpr=1</code> 且IAB TC字符串由受众管理器的高速缓存版本的全局CMP列表中在评估时不存在的CMP ID生成时，用于IAB TCF的受众管理器插件会丢弃IAB TC字符串并照常处理请求。 IAB TCF v2.0 ${GDPR}宏设置为0，而${GDPR_CONNENCE_XXX}宏为空。</p>
+   <td colname="col3"> <p>当 <code>gdpr=1</code> 且IAB TC字符串由评估时Audience Manager的全局CMP列表的缓存版本中不存在的CMP ID生成时，IAB TCF的Audience Manager插件将丢弃IAB TC字符串并照常处理请求。 IAB TCF v2.0 ${GDPR}宏设置为0，而${GDPR_CONNENCE_XXX}宏为空。</p>
    </td>
   </tr>
    <tr> 
    <td colname="col1"> <p>314 </p> </td> 
    <td colname="col2"> <p>CMP ID在GCL中标记为已删除</p> </td> 
-   <td colname="col3"> <p>当IAB <code>gdpr=1</code> TC字符串由在我们的全局CMP列表的缓存版本中标记为已删除的CMP生成时，IAB TCF的受众管理器插件会丢弃TC字符串并照常处理请求，如果评估时间超过从全局CMP列表删除的时间。 IAB TCF v2.0 ${GDPR}宏设置为0，而${GDPR_CONNENCE_XXX}宏为空。</p></td>
+   <td colname="col3"> <p>当 <code>gdpr=1</code> IAB TC字符串由在我们的全局CMP列表的缓存版本中标记为已删除的CMP生成时，IAB TCF的Audience Manager插件会丢弃TC字符串并照常处理请求，如果评估时间超过从全局CMP列表删除时间。 IAB TCF v2.0 ${GDPR}宏设置为0，而${GDPR_CONNENCE_XXX}宏为空。</p></td>
   </tr>
    <tr> 
    <td colname="col1"> <p>315 </p> </td> 
    <td colname="col2"> <p>“同意”字符串表示未同意</p> </td> 
-   <td colname="col3"> <p>如果未征得同意，IAB TCF的受众管理器插件会选择用户退出进一步的数据收集，或者如果未检测到合作伙伴上下文，则完全停止调用。</p>
+   <td colname="col3"> <p>如果未征得同意，IAB TCF的Audience Manager插件会选择用户退出进一步的数据收集，或者如果未检测到合作伙伴上下文，则完全停止调用。</p>
    </td>
   </tr>
 
@@ -275,7 +275,7 @@ In the tables below, *italics* represents a variable placeholder.
 
 ## 示例错误代码消息 {#sample-error-codes}
 
-返 [!UICONTROL DCS] 回对象或HTTP响 [!DNL JSON] 应字符串中X头中的错误代码和消息。
+返 [!DNL DCS] 回对象或HTTP响 [!DNL JSON] 应字符串中X头中的错误代码和消息。
 
 ### 示例DCS错误代码和消息
 
