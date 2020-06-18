@@ -7,7 +7,10 @@ solution: Audience Manager
 title: 客户数据馈送
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '1890'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 <!-- cdf-intro.xml -->
 
-文 [!UICONTROL CDF] 件包含事件调用()发 [!DNL Audience Manager] 送到我们服 `/event`务器的相同数据。 这包括诸如用户ID、特征ID、段ID和事件调用捕获的所有其他参数等数据。 内部 [!DNL Audience Manager] 系统将事件数据处理为 [!UICONTROL CDF] 一个文件，其中内容组织为按设置顺序显示的字段。 [!DNL Audience Manager] 尝试每小时生 [!UICONTROL CDF] 成一个文件，并将它们存储在服务器上一个安全、特定于客户的存储 [!DNL Amazon S3] 桶中。 我们提供这些文件，以便您能够 [!DNL Audience Manager] 处理超出我们用户界面限制的数据。
+文 [!UICONTROL CDF] 件包含事件调用()发 [!DNL Audience Manager] 送到我们服`/event`务器的相同数据。 这包括诸如用户ID、特征ID、段ID和事件调用捕获的所有其他参数等数据。 内部 [!DNL Audience Manager] 系统将事件数据处理为 [!UICONTROL CDF] 一个文件，其中内容组织为按设置顺序显示的字段。 [!DNL Audience Manager] 尝试每小时生 [!UICONTROL CDF] 成一个文件，并将它们存储在服务器上一个安全、特定于客户的存储 [!DNL Amazon S3] 桶中。 我们提供这些文件，以便您能够 [!DNL Audience Manager] 处理超出我们用户界面限制的数据。
 
 >[!NOTE]
 >
@@ -105,7 +108,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
-   <td colname="col3"> <p>分 <span class="keyword"> 配给站点</span> “访客”的Experience Cloud ID(MID)。 另请参 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> 阅Cookie和Adobe Experience Platform Identity Service</a>。 </p> </td> 
+   <td colname="col3"> <p>分配给 <span class="keyword"> 站点</span> Experience Cloud的访客ID(MID)。 另请参阅 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies和AdobeExperience Platform身份服务</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -149,7 +152,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   </tr> 
   <tr> 
    <td colname="col1"> <p>字段序列 </p> </td> 
-   <td colname="col2"> <p> <p>重要： <span class="keyword"> 受众管理</span> 器保留在未来版本中向CDF文件末尾添加新字段的权利。 这意味着文件分析系统的技术设计不应采用固定数量的列（尽管它可能采用固定的现有列顺序）。 </p> </p> <p>CDF文件中的数据按以下顺序显示。 </p> <p> 
+   <td colname="col2"> <p> <p>重要： <span class="keyword"> Audience Manager</span> 保留在未来版本中向CDF文件末尾添加新字段的权利。 这意味着文件分析系统的技术设计不应采用固定数量的列（尽管它可能采用固定的现有列顺序）。 </p> </p> <p>CDF文件中的数据按以下顺序显示。 </p> <p> 
      <ol id="ol_1FDF4A7F089448ED8A724378C23009C8"> 
       <li id="li_CB97D90B54EB4F95861583D4A5F660C7">事件时间 </li> 
       <li id="li_C44E8CCB1A964B7A941FD772FB8A7608">设备 </li> 
@@ -159,7 +162,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">请求参数 </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referer </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP 地址 </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud设备ID（或MID）。 另请参 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> 阅Cookie和Adobe Experience Platform Identity Service</a> </li> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud设备ID（或MID）。 另请参阅 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform身份服务</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">所有细分 </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">所有特征 </li> 
      </ol> </p> <p>有关字段说明，请参 <a href="#cdf-defined"> 阅定义的客户数据馈送内容</a>。 </p> </td> 
@@ -241,7 +244,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>AAM process ID</i>_0</code> </p> </td> 
-   <td colname="col2"> <p>内部受众 <span class="keyword"> 管理器</span> 进程ID。 </p> </td> 
+   <td colname="col2"> <p>内部的 <span class="keyword"> Audience Manager</span> 进程ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> .gz</code> </p> </td> 
@@ -373,8 +376,8 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 
 | 时间戳位置 | 描述 |
 |--- |--- |
-| 文件名 | CDF文件名中的时间戳标记开始准备 [!DNL Audience Manager] 文件进行投放的时间。 此时间戳以UTC时区设置。 它使用参 `hour=` 数，时间格式设置为2位数小时（以24小时表示）。 此时间可以与文件内容中记录的事件时间不同。 处理CDF文件时，有时您会注意到S3存储桶在特定小时内为空。 空桶装置可以表示以下任一情况：<ul><li>那个小时没有数据。 </li><li> 我们的服务器负载很重，无法处理特定小时的文件。 当服务器启动时，它将本应放在较早时段的文件放入具有稍后时间值的存储桶中。 例如，当本应在17小时存储段中的文件出现在18小时存储段中时（在文件名中），您 `hour=18` 会看到这一点。 在这种情况下，服务器可能在17小时内开始处理您的文件，但无法在该时间间隔内完成它。 相反，文件将推送到下一个小时时段。</li></ul><br>**重要说明&#x200B;**: 请勿使用文件名时间戳按时间对事件分组。 如果需要按时间分组，请使用文`EventTime`件内容中的时间戳。 |
-| 文件内容 | CDF文件内容中的时间戳标记数据收集服务器开始处理文件的时间。 此时间戳以UTC时区设置。 它使用字 `EventTime` 段，时间格式设置为 *`yyyy-mm-dd hh:mm:ss`*。 此时间接近页面上事件的实际时间，但可能与文件名中的小时指示符不同。 <br> **提示**: 与文件 `hour=` 名中的时间戳不同，您可以 `EventTime` 按时间对数据分组。 |
+| 文件名 | 文件名中的 [!DNL CDF] 时间戳标记开始准 [!DNL Audience Manager] 备文件进行投放的时间。 此时间戳在时区 [!DNL UTC] 中设置。 它使用参 `hour=` 数，时间格式设置为2位数小时（以24小时表示）。 此时间可以与文件内容中记录的事件时间不同。 处理文 [!DNL CDF] 件时，有时您会注意到您的存储 [!DNL S3] 桶在特定的小时内为空。 空桶装置可以表示以下任一情况：<ul><li>那个小时没有数据。 </li><li> 我们的服务器负载很重，无法处理特定小时的文件。 当服务器启动时，它将本应放在较早时段的文件放入具有稍后时间值的时段中。 例如，当本应在17小时存储段中的文件出现在18小时存储段中时（在文件名中），您 `hour=18` 会看到这一点。 在这种情况下，服务器可能在17小时内开始处理您的文件，但无法在该时间间隔内完成它。 相反，文件将推送到下一个小时时段。</li></ul><br>**重要说明&#x200B;**: 请勿使用文件名时间戳按时间对事件分组。 如果需要按时间分组，请使用文`EventTime`件内容中的时间戳。 |
+| 文件内容 | 文件内容中 [!DNL CDF] 的时间戳标记开始处 [!DNL Data Collection Servers] 理文件的时间。 此时间戳在时区 [!DNL UTC] 中设置。 它使用字 `EventTime` 段，时间格式设置为 *`yyyy-mm-dd hh:mm:ss`*。 此时间接近页面上事件的实际时间，但可能与文件名中的小时指示符不同。 <br> **提示**: 与文件 `hour=` 名中的时间戳不同，您可以 `EventTime` 按时间对数据分组。 |
 
 >[!MORELIKETHIS]
 >
