@@ -6,9 +6,9 @@ solution: Audience Manager
 title: 数据集成方法
 uuid: 17a4179a-e99b-49eb-8f45-f2946afbd27f
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: cdf567a816be60d0d966783e87f4ed02838be378
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1085'
 ht-degree: 1%
 
 ---
@@ -18,26 +18,26 @@ ht-degree: 1%
 
 概括介绍Audience Manager如何与其他数据提供商和系统交换信息。
 
-## 支持的数据集成方法： 实时和服务器到服务器 {#supported-methods}
+## 支持的数据集成方法： 实时和 [!DNL Server-to-Server] {#supported-methods}
 
 选择正确的集成方法取决于业务需求和数据合作伙伴的技术能力的组合。 Audience Manager通过以下任一方法与其他数据提供者交换访客信息：
 
 * **实时：** 当用户访问您的网站时，立即传输数据。 此方法也称为集 *`synchronous`* 成。
-* **批处理（服务器到服务器）:** 在访客离开页面后，在设置计划上的服务器之间传输数据。 此方法也称为或 *`out-of-band`* 集 *`asynchronous`* 成。
+* **批([!DNL Server-to-Server]):** 在访客离开页面后，在设置计划上的服务器之间传输数据。 此方法也称为或 *`out-of-band`* 集 *`asynchronous`* 成。
 
 ## 先决条件： 创建特征分类 {#prereqs}
 
-在集成过程开始之前，请记 [住在UI](../features/traits/create-onboarded-rule-based-traits.md) 中创 [建特征和文](../features/traits/trait-storage.md#create-trait-storage-folder) 件夹 [!DNL Audience Manager] 结构。 分类将包含在逻辑层次结构中组织的所有特征。
+在集成过程开始之前，请记 [住在UI](../features/traits/create-onboarded-rule-based-traits.md) 中创 [建特征和文](../features/traits/trait-storage.md#create-trait-storage-folder) 件夹 [!DNL Audience Manager] 结构。 该分类将包含您在逻辑 [!UICONTROL traits] 层次结构中组织的所有内容。
 
 ## 集成用例 {#integration-use-cases}
 
 Audience Manager数据集成方法的用例总结及各方法的优缺点。
 
-### 实时服务器到服务器集成
+### 实时集 [!DNL Server-to-Server] 成
 
 <!-- c_int_types_use_cases.xml -->
 
-实时服务器到服务器数据集成可快速同步Audience Manager服务器和另一个定位系统之间的用户数据。 在大多数情况下，数据交换会在几秒或几分钟内完成，具体取决于目标系统的刷新率。 但是，请注意，目标系统决定此刷新间隔，而非Audience Manager。 此外，刷新率可能因不同系统而异。 实时服务器到服务器集成是数据交换的首选集成类型。 Audience Manager在定位合作伙伴可以支持时使用此方法。
+实时Audience Manager集 [!DNL server-to-server] 成可快速同步服务器和另一个定位系统之间的用户数据。 在大多数情况下，数据交换会在几秒或几分钟内完成，具体取决于目标系统的刷新率。 但是，请注意，目标系统决定此刷新间隔，而非Audience Manager。 此外，刷新率可能因不同系统而异。 实时集成是 [!UICONTROL server-to-server] 数据交换的首选集成类型。 Audience Manager在定位合作伙伴可以支持时使用此方法。
 
 <table id="simpletable_5307DEC378E5486CB92A354287F33AD8"> 
  <tr class="strow">
@@ -56,9 +56,9 @@ Audience Manager数据集成方法的用例总结及各方法的优缺点。
  </tr>
 </table>
 
-### 服务器到服务器批量集成
+### [!DNL Server-to-Server] 批量集成
 
-服务器到服务器的批量集成捆绑数据，并以设定的时间间隔发送数据到其他系统，而不是以接近实时的时间发送数据。 开始24小时后的数据传输间隔。 某些数据提供者仅支持此集成类型。 但是，我们看到了从批量集成转向实时集成方法的一般趋势。
+批 [!DNL server-to-server] 量集成捆绑数据，并以设定的时间间隔发送数据到其他系统，而不是以近乎实时的方式发送数据。 开始24小时后的数据传输间隔。 某些数据提供者仅支持此集成类型。 但是，我们看到了从批量集成转向实时集成方法的一般趋势。
 
 <table id="simpletable_6878241639114DE68E61A251486C6317"> 
  <tr class="strow">
@@ -77,7 +77,7 @@ Audience Manager数据集成方法的用例总结及各方法的优缺点。
 
 ### 实时呼叫
 
-当用户访问您的网站或在页面上执行操作时，实时呼叫会立即与Audience Manager交换数据。 通过此方法，定位系统可以获得最新的细分资格数据，并可在内容或广告投放决策时考虑这些信息。 此外，此过程还适用于发布者广告服务器，我们会将符合条件的区段更新为第一方cookie，作为键值对读入广告调用。 目前，Audience Manager使用实时呼叫与其他内容管理 [!DNL Target] 系统相集成。
+当用户访问您的网站或在页面上执行操作时，实时呼叫会立即与Audience Manager交换数据。 通过此方法，定位系统可以获得最新的细分资格数据，并可在内容或广告投放决策时考虑这些信息。 此外，此过程还适用于发布者广告服务器，我们会将符合条件的区段更新为第一方cookie，作为键值对读入广告调用。 目前，Audience Manager使用实时呼叫与其他内容管理 [!DNL Adobe Target] 系统相集成。
 
 <table> 
  <tr>
@@ -151,7 +151,7 @@ Audience Manager数据集成方法的用例总结及各方法的优缺点。
 
 <!-- c_int_overview_async.xml -->
 
-批处理（服务器到服务器）数据集成过程遵循实时数据传输过程中概述的大多数步骤。 但是，用户信息不会立即返回区段ID，而是会定期保存到我们的服务器上并与第三方数据提供程序同步。 在以下情况下，异步数据传输过程很有用：
+批处理([!DNL server-to-server])数据集成过程遵循实时数据传输过程中概述的大多数步骤。 但是，用户信息不会立即返回区段ID，而是会定期保存到我们的服务器上并与第三方数据提供程序同步。 在以下情况下，异步数据传输过程很有用：
 
 * 无需立即进行数据传输。
 * 收集数据以构建大量分段用户池。
@@ -166,4 +166,4 @@ Audience Manager数据集成方法的用例总结及各方法的优缺点。
 
 ![](assets/s2s_70.png)
 
-有关描述Audience Manager处理入站和出站服务器到服务器()文件传输时的时[!UICONTROL S2S]间帧的信息，请参 [阅报告和文件传输时间帧准则](../reference/reporting-file-transfer-timeframe.md)。
+有关描述Audience Manager处理入站和出站()文件传输 [!DNL Server-to-Server] 时的[!UICONTROL S2S]时间帧的信息，请参 [阅报告和文件传输时间帧准则](../reference/reporting-file-transfer-timeframe.md)。
