@@ -6,10 +6,10 @@ solution: Audience Manager
 title: DCS 错误代码、消息和示例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: ff245c2cca417e9b1fd51460ddbadd25d5696006
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 4%
+source-wordcount: '1509'
+ht-degree: 3%
 
 ---
 
@@ -22,76 +22,22 @@ In the tables below, *italics* represents a variable placeholder.
 
 ## 系统错误代码 {#system-error-codes}
 
-<table id="table_43F4321BEA6A4D1BBDFE2E9FB4402914"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 代码ID </th> 
-   <th colname="col2" class="entry"> 错误消息 </th> 
-   <th colname="col3" class="entry"> 描述 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>0 </p> </td> 
-   <td colname="col2"> <p>未指定错误 </p> </td> 
-   <td colname="col3"> <p>这是一个全部捕获错误，它处理其他错误处理程序未覆盖的事件。 很难对此错误进行故障诊断。 它可能由各种未知的操作或事件引起。 </p> <p>如果收到此错误，请再次尝 <span class="wintitle"> 试DCS</span> 请求。 如果问题仍然存在，请与Adobe代表联系。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
-   <td colname="col2"> <p>找不到主机名的配置： <code><i>hostname</i></code> </p> </td> 
-   <td colname="col3"> <p>我们的合作伙伴供应团队尚未设置请求中发送的主机名。 如果您看到此错误消息，请与Adobe代表联系。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>2 </p> </td> 
-   <td colname="col2"> <p>无效 <code> d_orgid</code> 值（找不到此组织ID的配置）: <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>组织ID不正确。 </p> <p>请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅组织和帐户链接中的“管理页 <a href="https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external"> 面”部分</a> ，以了解如何查找它。 </p> </td> 
-  </tr>
- </tbody>
-</table>
+|错误代码|错误消息|说明|
+|—|—|—|
+|0|未指定错误|这是处理其他错误处理程序未涵盖的事件的全部捕获错误。 很难对此错误进行故障诊断。 它可能由各种未知的操作或事件引起。 如果收到此错误，请重试 [!DNL DCS] 您的请求。 如果问题 [!DNL Adobe] 仍然存在，请与您的代表联系。|
+|1|找不到主机名的配置： `hostname`|我们的合作伙伴供应团队尚未设置请求中发送的主机名。 如果您看 [!DNL Adobe] 到此错误消息，请与您的代表联系。|
+|2|无效 `d_orgid` 值（找不到此组织ID的配置）: `ID`|组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页”部分组 [织和帐户链接](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html) ，以了解如何查找它。|
 
 ## 集成错误代码 {#integration-error-codes}
 
-<table id="table_EFF06FB3D045459BA7802872AF22DF79"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 代码ID </th> 
-   <th colname="col2" class="entry"> 消息 </th> 
-   <th colname="col3" class="entry"> 描述 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>100 </p> </td> 
-   <td colname="col2"> <p>无法检索请求的主机名 </p> </td> 
-   <td colname="col3"> <p>API调用未在请求中发送主机HTTP头。 </p> <p>在呼叫中添加主机头，然后重试。 注意，大多数浏览器和API客户端都是自动执行此操作的。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>101 </p> </td> 
-   <td colname="col2"> <p>传入的Experience CloudID无效 <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>DCS <span class="wintitle"> 调用</span> 包含无效的 <span class="keyword"> Experience Cloud</span> ID。 </p> <p>检查标 <code> d_mid=</code> 题字符串中的键值对。 请确保您正在传递正确的 <span class="keyword"> Experience Cloud</span> ID，然后重试请求。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>102 </p> </td> 
-   <td colname="col2"> <p>请求中传递的aam id无效 <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>DCS <span class="wintitle"> 调用</span> 包含无效的 <span class="keyword"> Audience Manager</span> ID。 </p> <p>检查标 <code> d_uuid=</code> 题字符串中的键值对。 请确保您正在传递正确的 <span class="keyword"> Audience Manager</span> ID，然后重试请求。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>104 </p> </td> 
-   <td colname="col2"> <p>所有客户ID无效 </p> </td> 
-   <td colname="col3"> <p>您呼叫中的所有客户ID都无效。 请检查您的ID，然后重试。 </p> </td> 
-  </tr>
-    <tr> 
-   <td colname="col1"> <p>109</p> </td> 
-   <td colname="col2"> <p>合作 <code>HTTP referer</code> 伙伴不允许引用者 <code>Partner ID</code> </p> </td> 
-   <td colname="col3"> <p>呼 <code>HTTP referer</code> 叫上的标头不允许用于呼叫上的合作伙伴ID。 检查标题 <code>HTTP referer</code> 是否正确。</p> </td>
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>111 </p> </td> 
-   <td colname="col2"> <p>收到 <span class="wintitle"> 的IMS令牌</span> 无效 </p> </td> 
-   <td colname="col3"> <p>返回Audience Manager-Adobe Target集成。 当对DCS进行调用（包含无效的IMS令牌）时，将引发错误。 令牌可能格式不正确、已过期，或者用户可能未获得访问所需资源的授权。 </p> </td>
-  </tr>
- </tbody>
-</table>
+|错误代码|错误消息|说明|
+|—|—|—|
+|100|无法检索请求的主机名| [!DNL API] 调用未发送请求中 [!DNL HTTP] 的主机头。 将主机头添加到呼叫，然后重试。 大多数浏览器 [!DNL API] 和客户端都自动执行此操作。 |
+|101|传入 [!DNL Experience Cloud] 的ID无效 `ID`|调 [!DNL DCS] 用包含无效 [!DNL Experience Cloud] ID。 检查标 `d_mid=` 题字符串中的键值对。 请确保您传递的ID正 [!DNL Experience Cloud] 确，然后重试请求。 |
+|102|在请求 [!DNL AAM ID] 中传递无效 `ID`|调 [!DNL DCS] 用包含无效 [!DNL Audience Manager] ID。 检查标 `d_uuid=` 题字符串中的键值对。 请确保您传递的ID正 [!DNL Audience Manager] 确，然后重试请求。 |
+|104|所有客户ID无效 |您呼叫中的所有客户ID都无效。 请检查您的ID，然后重试。|
+|109|合作伙 `HTTP referer` 伴不允许引用 `Partner ID`|呼 `HTTP referer` 叫上的标头不允许用于呼叫上的合作伙伴ID。 检查标题 `HTTP referer` 是否正确。|
+|111|收到的 `IMS` 令牌无效|已返回 [!DNL Audience Manager] -集 [!DNL Adobe Target] 成。 对包含无效令牌的调用 [!DNL DCS]时引发错 [!DNL IMS] 误。 令牌可能格式不正确、已过期，或者用户可能无权访问所需的资源。|
 
 ## 退出错误代码 {#opt-out-error-codes}
 
