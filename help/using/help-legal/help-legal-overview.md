@@ -1,21 +1,26 @@
 ---
-description: 与使用本产品和文档相关的客户关怀和法律问题资源。
-seo-description: 与使用本产品和文档相关的客户关怀和法律问题资源。
-seo-title: 帮助与法律
+description: 与使用本产品和文档相关的客户支持资源和法律问题。
+seo-description: 与使用本产品和文档相关的客户支持资源和法律问题。
+seo-title: 帮助和法律信息
 solution: Audience Manager
-title: 帮助与法律
+title: 帮助和法律信息
 uuid: 522c9b17-3712-4619-9197-15d50eb97045
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0b32a48e99b35990dc7ccdcc03fcc68ba769d93e
+workflow-type: ht
+source-wordcount: '121'
+ht-degree: 100%
 
 ---
 
 
-# 帮助与法律{#help-and-legal}
+# 帮助和法律信息{#help-and-legal}
 
-与使用本产品和文档相关的客户关怀和法律问题资源。
+与使用本产品和文档相关的客户支持资源和法律问题。
 
-* [如果有问题客户关怀](/help/using/help-legal/help-problem.md)准备好帮助您解决可能出现的任何问题。 在联系客户关怀时尽可能多地提供这些信息。 这有助于团队了解并解决您的问题。
+* [如果遇到问题](/help/using/help-legal/help-problem.md)
+客户关怀团队随时准备帮助您解决可能出现的任何问题。在联系客户关怀团队时，请尽可能多地提供这些信息。这些信息将有助于团队了解并解决您的问题。
 
 
-* [联系和法律信](/help/using/help-legal/help-legal-contact.md)息信息可帮助您联系Adobe并了解与您使用本产品和文档相关的法律问题。
+* [联系方式和法律信息](/help/using/help-legal/help-legal-contact.md)
+以下信息可帮助您联系 Adobe 以及了解与使用本产品和文档有关的法律问题。
