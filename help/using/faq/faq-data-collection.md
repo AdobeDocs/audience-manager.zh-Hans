@@ -1,6 +1,6 @@
 ---
-description: 常见数据收集和集成问题。
-seo-description: 常见数据收集和集成问题。
+description: 有关数据收集和集成的常见问题。
+seo-description: 有关数据收集和集成的常见问题。
 seo-title: 数据收集和产品集成常见问题解答
 solution: Audience Manager
 title: 数据收集和产品集成常见问题解答
@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 1%
+ht-degree: 96%
 
 ---
 
 
 # 数据收集和产品集成常见问题解答{#data-collection-and-product-integration-faq}
 
-常见数据收集和集成问题。
+有关数据收集和集成的常见问题。
 
 <br> 
 
@@ -27,25 +27,25 @@ faq_data_collection_integration.xml
 
  -->
 
-**如何在日志文件导出中区分[!DNL DCS]入站流[!DNL DCS]量和流量？**
+**如何在[!DNL DCS]日志文件导出中区分入站流量和[!DNL DCS]流量？**
 
-通过载入的 [!UICONTROL Inbound] 特征填充 [!UICONTROL Inbound] 方式与填充方式相同 [!DNL DCS]。 有几种不同的方法可以判断流量来自 [!UICONTROL Inbound]:
+对于通过 [!UICONTROL Inbound] 载入的特征，[!UICONTROL Inbound] 填充方式与 [!DNL DCS] 填充方式相同。可以通过以下几种方法判断流量来自 [!UICONTROL Inbound]：
 
-* 远程IP将设置为68.67.173.18
-* 域ID将设置为5325
-* 区域将设置为0
+* 远程 IP 将设置为 68.67.173.18
+* 域 ID 将设置为 5325
+* 区域将设置为 0
 
 <br> 
 
 **能否向我提供一列表IP地址，我可以将其添加到dpm.demdex.net的允许列表？**
 
-不幸的是，我们不能。 这些IP是通过按地理区域动态分配的 [!DNL Amazon Web Services]。 因此，不 [!DNL Audience Manager] 控制可分配给此地址的IP的范围。
+抱歉，我们无法为您提供这样的列表。这些 IP 是通过 [!DNL Amazon Web Services] 按地域动态分配的。因此，[!DNL Audience Manager] 无法控制可分配给此地址的 IP 范围。
 
 <br> 
 
 **能否向我提供可添加到入站和出站sFTP服务器允许列表的IP地址？**
 
-是，请参见下文。
+可以，请参见下文。
 
 | 项目 | 地址 |
 ---------|----------|
@@ -54,9 +54,9 @@ faq_data_collection_integration.xml
 
 <br> 
 
-**/数据集成的代码放置和页面加载[!UICONTROL DIL]要求[!DNL Analytics]有哪些？**
+**对于[!UICONTROL DIL]/[!DNL Analytics]数据集成，有哪些代码放置和页面加载要求？**
 
-要将数 [!DNL Analytics] 据导入 [!DNL Audience Manager]，在模块之 [!UICONTROL DIL] 后加载，但 `s_code` 在函数之 *前加*`s.t()` 载。 例如，按以下顺序放置代码或确保它加载：
+要将 [!DNL Analytics] 数据导入 [!DNL Audience Manager]，请在加载 `s_code` 模块之后但在加载 `s.t()` 函数&#x200B;*之前*&#x200B;加载 [!UICONTROL DIL]。例如，按以下顺序放置代码，或确保代码按以下顺序加载：
 
 1. [!DNL Analytics] `s_code`
 
@@ -64,36 +64,36 @@ faq_data_collection_integration.xml
 
 3. [!DNL Analytics] `s.t()` 函数
 
-作为最佳实践，请设置您 [!DNL Audience Manager]与以 [!DNL Analytics] 下两种方法之一的集成：
+最好从以下两种方法选择一种方法来设置 [!DNL Audience Manager] 与 [!DNL Analytics] 集成：
 
-* 直 [!UICONTROL DIL] 接放入 `s_code`。
+* 将 [!UICONTROL DIL] 直接放置到 `s_code` 中。
 
-* 服 [!UICONTROL DIL] 务和 `s_code` 通过 [!DNL Adobe Experience Platform Launch] 或 [!DNL Adobe DTM]。
+* 通过 [!DNL Adobe Experience Platform Launch] 或 [!DNL Adobe DTM] 为 [!UICONTROL DIL] 和 `s_code` 提供服务。
 
-See [Data Integration Library (DIL) API](../dil/dil-overview.md).
-
-<br> 
-
-**为什么事件[!DNL Analytics]调用中缺少[!DNL Audience Manager]我的变量？**
-
-这通常发生在：
-
-* 您可以通 [!UICONTROL DIL] 过标签管理系统提供，该系统将标签与页面上的其他代码元素异步加载。
-* 函数 `s.t()` 在之前加载 [!UICONTROL DIL]。
+请参阅[数据集成库 (DIL) API](../dil/dil-overview.md)。
 
 <br> 
 
-**哪些版本[!DNL Analytics]可以使用[!UICONTROL DIL]?**
+**为何[!DNL Audience Manager]事件调用中会缺少[!DNL Analytics]变量？**
 
-必须使用 [!DNL Analytics] 版本20.2（或更高版本）和 [!DNL Adobe AppMeasurement AS] 库版本3.5.2（或更高版本）才能使用 [!UICONTROL DIL]。 如果您不知道您的版 [!DNL Analytics] 本或 [!DNL AppMeasurement] 版本，请检查 [!DNL Analytics] 从页面进行的调用。 版本信息如下所示：
+此问题通常发生在以下情况中：
 
-此客户使 [!DNL Analytics] 用版本24.4:
+* 您通过标记管理系统为 [!UICONTROL DIL] 提供服务，但标记管理系统异步加载此模块和页面上的其他代码元素。
+* `s.t()` 函数在 [!UICONTROL DIL] 之前加载。
+
+<br> 
+
+**哪些版本的[!DNL Analytics]可以与[!UICONTROL DIL]结合使用？**
+
+要结合使用 [!UICONTROL DIL]，必须使用 [!DNL Analytics] 版本 20.2（或更高版本）以及 [!DNL Adobe AppMeasurement AS] 库版本 3.5.2（或更高版本）。如果您不知道 [!DNL Analytics] 或 [!DNL AppMeasurement] 的版本，请检查从页面中进行的 [!DNL Analytics] 调用。版本信息如下所示：
+
+此客户使用的是 [!DNL Analytics] 版本 24.4：
 
 ```
 https://112.2o7.net/b/ss/.../1/H.24.4/...
 ```
 
-此客户使 [!DNL AppMeasurement] 用版本3.5.2:
+此客户使用的是 [!DNL AppMeasurement] 版本 3.5.2：
 
 ```
 https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
@@ -101,92 +101,92 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**如果我不是客户，是否可以收集页面[!DNL Analytics]数据？**
+**如果我不是[!DNL Analytics]用户，是否还能够收集页面数据？**
 
-能。该 [!UICONTROL DIL] 模块可帮助您收集页面数据，即使您不在使用 [!DNL Analytics]。 正确设置后，可 [!UICONTROL DIL] 以从以下位置捕获数据：
+能。即使您未在使用 [!DNL Analytics]，[!UICONTROL DIL] 模块也可以帮助您收集页面数据。正确设置后，[!UICONTROL DIL] 便可从以下项目捕获相关数据：
 
 * 元标记
-* URL和URL头
+* URL 和 URL 标头
 * 搜索引擎类型
 * 关键字
 
-此外，客户可以部署一个简单的现场对象，并用要收集数据的键 [!UICONTROL DIL] 值对填充它。 这样，您无需进行任何更新即可在网站上添加和删除特定受众 [!DNL Audience Management] 数据点。 请与合作伙伴解决方案代表合作以正确设置此设置，并确保 [!DNL DIL] 模块正确引用页面对象。
+此外，客户可以在网站上部署一个简单的对象，并在该对象中填充希望 [!UICONTROL DIL] 对其收集数据的键值对。如此一来，您无需进行任何 [!DNL Audience Management] 更新，即可在网站上添加和删除特定受众数据点。请与合作伙伴解决方案代表合作以正确设置对象，并确保 [!DNL DIL] 模块正确引用页面对象。
 
 <br> 
 
-**能否[!UICONTROL DIL]从中收集数[!DNL Google Analytics]据？**
+**[!UICONTROL DIL]能否从[!DNL Google Analytics]中收集数据？**
 
-能。[!UICONTROL DIL] 可以收集 [!DNL Google Analytics] 一些(GA)元素并将该数据传递给 [!DNL Audience Manager]。 请参阅：
+能。[!UICONTROL DIL] 可以收集一些 [!DNL Google Analytics] (GA) 元素并将收集到的数据传递给 [!DNL Audience Manager]。请参阅：
 
 * [GA.submitUniversalAnalytics](../dil/dil-modules.md#ga-submit-universal-analytics)
 * [GA.init](../dil/dil-modules.md#ga-init)
 
 <br> 
 
-**能否从中获取原始数[!DNL Audience Manager]据，其粒度如何？**
+**我能否从[!DNL Audience Manager]中获取原始数据？数据粒度是多少？**
 
-是的， [!DNL Audience Manager] 可以为您提供为我们在您的清单上看到的用户收集的数据。 这包括：
+能，[!DNL Audience Manager] 可以为您提供收集到的有关您清单范围内的用户的数据。这包括：
 
-* 由 [!DNL Audience Manager]
-* 特征和区段ID
+* 由 [!DNL Audience Manager] 分配的独特用户 ID (UUID)
+* 特征 ID 和区段 ID
 * 未使用的信号
 * 时间戳
-* 页面URL
+* 页面 URL
 
 <br> 
 
-**我希望通过DFP在一个站点上收集数据，并通过其他站点上的目标用户收集数据。 如果我不想从另一个位置收集数据，是否需要在另一个属性上部署代码？**
+**我希望在一个网站上收集数据，并通过 DFP 在另一个网站上定位用户。如果我不想从其他资产中收集数据，是否需要在该位置部署代码？**
 
-不会。如果不需要在第二个站点上收集数据，则无需在那里部署DIL。 只要您通过DFP访问第二个站点的库存，您就可以通过DFP使用从初始站点和目标收集的数据。
-
-<br> 
-
-**什么是最好的第三方数据提供商？**
-
-每个提供商都会为表带来一些独一无二的内容，因此答案取决于您所寻找的内容。 我们可以启用重叠报告（免费）来帮助您了解哪家提供商最适合您。
+不需要。如果不需要在另一个网站上收集数据，则无需在该网站上部署 DIL。只要您有权通过 DFP 访问另一个网站上的清单，便可以使用从初始网站收集到的数据并通过 DFP 进行定位。
 
 <br> 
 
-**如何设[!DNL Audience Manager]置cookies并将变量传递给DFP?**
+**最佳的第三方数据提供商是哪个？**
 
-[!DNL Audience Manager] 设置2个cookie: 一个向DFP ad标签发送段变量，另一个设置我们的唯一用户ID(UUID),DFP也读取该UUID。 将UUID添加到广告标记意味着我们可以执行用户级报告和受众发现。
-
-<br> 
-
-**能否发送用户所到达的转换漏斗中点的DSP信息？**
-
-能。我们可以发送漏斗数据，但DSP必须具备技术能力才能使用。 DSP必须确认他们可以处理多个段。 如果客户无法进行转换，我们可能需要创建特定细分，以便根据客户的转换进度（例如，已完成步骤1和步骤2，但不是步骤3）将用户从其他细分中拉出。 您可能希望将此信息发送到DSP，以便他们能够重新定位用户、将其定向到特定登陆页或显示特定创意。
+每个提供商都有其独特的特点，因此要根据您的需求确定最适合的提供商。我们可以通过启用重叠报表（免费）来帮助您了解哪个提供商最适合您。
 
 <br> 
 
-**如何确认通过FTP发送的数据已被提取[!DNL Audience Manager]?**
+**[!DNL Audience Manager]如何设置 Cookie 并将变量传递给 DFP？**
 
-扩展名从更改为时，已拾取文 `.sync` 件 `.processed`。 发生这种情况时，文件位于摄取队列中。 此外，您的客户经理还可以确认文件何时上传。
+[!DNL Audience Manager] 会设置 2 个 Cookie：其中一个 Cookie 用于向 DFP 广告标记发送区段变量，而另一个则用于设置我们的独特用户 ID (UUID)，DFP 也会读取该 UUID。将 UUID 添加到广告标记意味着我们可以执行用户级报表和受众发现操作。
 
 <br> 
 
-**我想测试DCS API的[功能](../api/dcs-intro/dcs-event-calls/dcs-event-calls.md)。 我正在发送事件呼叫，如下所示。 这些调用[包含Declared](../features/declared-ids.md)ID和信号，它们应该可以实现我已设置的某些特征和区段。 我是否可以使[!UICONTROL General Reports]用和[!UICONTROL Trend Reports]验证特征和区段群体是否在增加？**
+**我们能否向 DSP 发送有关转化漏斗中用户所实现的点数信息？**
+
+能。我们可以发送漏斗数据，但 DSP 必须具备一定的技术能力才能使用该数据。DSP 必须确认可以处理多个区段。如果 DSP 无法处理多个区段，我们可能需要创建特定区段，以便根据客户的转化进度（例如，已完成步骤 1 和步骤 2，但未完成步骤 3）将用户从其他区段中删除。您可能希望将此信息发送到 DSP，以便 DSP 能够重新定位用户、将用户定向到特定登录页面或向用户显示特定创意内容。
+
+<br> 
+
+**如何确认通过 FTP 发送的数据已被[!DNL Audience Manager]接收？**
+
+当扩展名从 `.sync` 更改为 `.processed` 时，即表示文件已被接收。接收后，文件将位于导入队列中。此外，您的客户经理也可以确认文件是否已上传。
+
+<br> 
+
+**我想要测试[DCS API](../api/dcs-intro/dcs-event-calls/dcs-event-calls.md)的功能。我正在发送类似于下面所示的事件调用。这些调用包含[声明的 ID](../features/declared-ids.md)和信号，它们应该可以实现我已设置的某些特征和区段。我能否使用[!UICONTROL General Reports]和[!UICONTROL Trend Reports]来验证特征和区段人口是否有所增加？**
 
 ```
 https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed-an-order
 ```
 
-不，不要依赖这 [!UICONTROL General Reports] 个 [!UICONTROL Trend Reports] 案例。
+不能，在这种情况下，请勿使用 [!UICONTROL General Reports] 和 [!UICONTROL Trend Reports]。
 
-报表根据生成报表时在后端看到的未验证用户档案记录(UUID)计算总量。
+这两个报表会根据生成时在后端看到的未验证用户配置文件记录 (UUID) 来计算人口。
 
-在对的第一次调 [!DNL DCS]用中，声 *明的ID不链* 接到 [任何UUID(即，客户端](hhttps://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html) 上不存在demdex cookie)。 将随 [!DNL DCS] 机生成一个UUID并设置一个 [!DNL demdex] cookie并在响应调用中传递它，但它不会将UUID传输到后端。
+在第一次调用 [!DNL DCS] 时，声明的 ID *不会*&#x200B;关联到任何 UUID（这表示客户端上不存在任何 [demdex cookie](hhttps://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html))。[!DNL DCS] 将随机生成一个 UUID 并设置一个 [!DNL demdex] Cookie，然后在响应调用中传递该 UUID，但不会将该 UUID 传输到后端。
 
 >[!NOTE]
 >
->只有在设置了cookie的设备触发进一步活动后，才会在后端存储中实现生成的UUID。
+>只有在设置了 Cookie 的设备触发后续活动时，生成的 UUID 才会在后端数据存储中实现。
 
-因此，报告不会反映您呼叫中声明的ID触发的事件。 我们建议您在对的事件测试调用中使用UUID、ECID（以前称为MID）或移动设备ID [!DNL DCS]。 然后，您可以在和中验证特征 [!UICONTROL General Reports] 和段实现 [!UICONTROL Trend Reports]。
+因此，这两个报表不会反映由声明的 ID 在调用中触发的事件。在对 [!DNL DCS] 发起的事件测试调用中，我们建议您使用 UUID、ECID（以前称为 MID）或移动设备 ID。然后，您便可以在 [!UICONTROL General Reports] 和 [!UICONTROL Trend Reports] 中确认特征和区段的实现情况。
 
-另请参阅 [Audience ManagerID索引](../reference/ids-in-aam.md)。
+另请参阅 [Audience Manager ID 索引](../reference/ids-in-aam.md)。
 
 <br> 
 
-**用户用户档案跨区域同步需要多长[时间](../api/dcs-intro/dcs-api-reference/dcs-regions.md)?**
+**在各[区域](../api/dcs-intro/dcs-api-reference/dcs-regions.md)之间同步用户配置文件需要多长时间？**
 
-用户用户档案通常需要24小时才能跨区域同步。 但是，在极少情况下，该过程可能需要48小时。
+要在各区域之间同步用户配置文件，通常最多需要 24 小时。但是，在极少数情况下，该过程可能长达 48 小时。
