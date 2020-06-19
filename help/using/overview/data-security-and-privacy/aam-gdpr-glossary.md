@@ -1,66 +1,69 @@
 ---
-description: 本文介绍欧洲一般数据保护规定(GDPR)使用的概念和术语，以及Adobe Audience manager作为数据处理者如何满足各种GDPR要求。
-seo-description: 本文介绍欧洲一般数据保护规定(GDPR)使用的概念和术语，以及Adobe Audience manager作为数据处理者如何满足各种GDPR要求。
-seo-title: GDPR词汇表
+description: 本文介绍欧洲《通用数据保护条例》(GDPR) 所使用的概念和术语，以及 Adobe Audience Manager 作为数据处理者如何满足各项 GDPR 要求。
+seo-description: 本文介绍欧洲《通用数据保护条例》(GDPR) 所使用的概念和术语，以及 Adobe Audience Manager 作为数据处理者如何满足各项 GDPR 要求。
+seo-title: GDPR 术语表
 solution: Audience Manager
-title: GDPR词汇表
+title: GDPR 术语表
 uuid: e52cad27-6a44-45ee-8524-6080adb86cc8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9004dc46c0ac431e9f193467a2147a2d9ac36cdc
+workflow-type: ht
+source-wordcount: '724'
+ht-degree: 100%
 
 ---
 
 
-# GDPR词汇表 {#gdpr-glossary}
+# GDPR 术语表 {#gdpr-glossary}
 
 ## 概述 {#overview}
 
-本文介绍欧洲一般数据保护规定(GDPR)使用的概念和术语，以及Adobe Audience manager作为数据处理者如何满足各种GDPR要求。
+本文介绍欧洲《通用数据保护条例》(GDPR) 所使用的概念和术语，以及 Adobe Audience Manager 作为数据处理者如何满足各项 GDPR 要求。
 
-GDPR于2018年5月25日生效，其主要目标是让欧盟的个人（数据主体）能够更多地控制其个人数据，同时通过更好地统一欧盟内部的监管来简化国际企业的监管环境。 作为Adobe GDPR就绪性的一部分，Adobe Audience manager团队已根据需要增强了服务和流程，以支持来自您的消费者数据主体的访问和删除请求。
+GDPR 于 2018 年 5 月 25 日生效，其主要目标是让欧盟地区的每个人（数据主体）能够更好地控制其个人数据，同时通过统一欧盟内部的法规来简化对国际企业的监管环境。在 Adobe 为实现 GDPR 合规积极做准备的过程中，Adobe Audience Manager 团队根据需要对服务和流程进行了改进，以支持来自数据主体（即您的消费者）的数据访问和删除请求。
 
-确保您还阅读了 [Experience Cloud GDPR常见问题解答。](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-faq.md) 以便更好地了解GDPR在Experience cloud中的工作方式。
+另请参阅 [Experience Cloud GDPR 常见问题解答](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-faq.md)，以更好地了解 Experience Cloud 为实现 GDPR 合规采取的措施。
 
-## GDPR词汇表 {#gdpr-glossay}
+## GDPR 术语表 {#gdpr-glossay}
 
-熟悉与GDPR相关的关键术语。 我们重点介绍了下面一些最常用的术语。
-
- 
-
-**** 数据控制器：GDPR将“控制人”定义为“...法人……他人单独或与其他人共同决定处理个人数据的目的和手段。”Audience manager客户是数据管理者。 客户可以在Audience manager中控制数据的管理方式。
+了解与 GDPR 相关的主要术语。下面重点介绍了一些最常用的术语。
 
  
 
-**** 数据处理者：“处理者”是“...法人……”，他代表控制者处理个人数据。 在Audience Manager的环境中，Adobe在运行服务时，会代表控制者通过Audience manager处理任何个人数据，充当“数据处理者”。 Adobe仅根据数据管理员的指示（如我们与客户的协议中所述或通过Audience manager中采取的操作）处理个人数据。
+**数据控制者：** GDPR 将“控制者”定义为“...单独或与他人共同决定个人数据处理目的和方式的法人...”。Audience Manager 客户属于数据控制者。客户可以控制在 Audience Manager 中管理数据的方式。
 
  
 
-**** 数据主体：个人数据相关的个人。 在Audience manager的上下文中，数据主体是Audience manager客户的消费者或最终用户。 如果Adobe直接从数据主体接收请求，这些请求将转发给相应的Audience manager客户。
+**数据处理者：**“处理者”是指“...代表控制者处理个人数据的法人...”。对于 Audience Manager，Adobe 在运行该服务时，便是在充当“数据处理者”，因为 Adobe 是在代表控制者通过 Audience Manager 处理个人数据。Adobe 仅根据数据控制者的指示处理个人数据（如与客户达成的协议中所述，或通过在 Audience Manager 中采取相应措施）。
 
  
 
-**** 同意：“同意”是指“他／她通过声明或明确肯定行动，表示同意处理与他／她有关的个人数据，并且自由、具体、知情和明确地表明数据主体的意愿”。 同意由数据管理者负责，而非Adobe（通过Audience Manager）负责。
+**数据主体：**&#x200B;与个人数据相关联的个人。对于 Audience Manager，数据主体是指 Audience Manager 客户的消费者或最终用户。如果 Adobe 直接从数据主体接收请求，Adobe 会将这些请求转发给相应的 Audience Manager 客户。
 
  
 
-**** 访问：数据主体有权要求数据管理者确认控制者是否处理其个人数据。 如果数据管理者确实处理数据主体的个人数据，则必须提供对个人数据的访问和复制。 数据管理者可能要求Adobe协助处理来自数据主体的访问请求。
+**同意：**“同意”是指“数据主体通过声明或明确的肯定性行为作出的自愿、具体、知情且明确的意思表示，表明其同意处理与其有关的个人数据”。获取同意是数据控制者的责任，而非 Adobe（通过 Audience Manager）的责任。
 
  
 
-**** 删除：GDPR概述了“被遗忘权”或“擦除权”。数据主体有权要求数据管理者擦除其个人数据。 数据管理者与其处理者（包括Adobe）一起支持数据主体的删除请求。
+**访问：**&#x200B;数据主体有权要求数据控制者确认是否对其个人数据进行了处理。如果数据控制者确实对数据主体的个人数据进行了处理，则必须提供对个人数据的访问和备份。数据控制者可要求 Adobe 协助处理来自数据主体的访问请求。
 
  
 
-**** 更正：数据主体有权要求数据管理者纠正不准确的个人数据。 数据管理者与包括Adobe在内的处理者一起支持数据主体的更正请求。
+**删除：** GDPR 规定了“被遗忘权”或“删除权”。数据主体有权要求数据控制者删除其个人数据。数据控制者与数据处理者（包括 Adobe）合作，共同支持来自数据主体的数据删除请求。
 
  
 
-**** Audience Manager标识符(ID):Adobe Audience manager存储各种类型的ID。 “ [Audience Manager Identifiers](data-privacy-ids.md) ”（受众管理器标识符）页面提供这些ID的摘要、其相应的数据源和简要说明。 向 [Adobe Experience Platform Privacy service发送请求时](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)，请参考这些ID，以对数据主体发出删除或访问请求。
+**更正：**&#x200B;数据主体有权要求数据控制者更正不准确的个人数据。数据控制者与数据处理者（包括 Adobe）合作，共同支持来自数据主体的数据更正请求。
 
  
 
-**** 个人数据：GDPR扩展了个人数据的定义。 根据GDPR,Audience manager中的任何数据都可以根据客户使用案例分类为个人数据。
+**Audience Manager 标识符 (ID)：** Adobe Audience Manager 存储各种类型的 ID。[Audience Manager 标识符](data-privacy-ids.md)页面汇总了这些 ID 及其相应数据源，还提供了简短说明。向 [Adobe Experience Platform Privacy Service](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) 发送请求时，需引用这些 ID 以发送数据主体提出的数据删除或访问请求。
 
  
 
-**** 禁止的数据：Audience manager禁止客户获取直接可识别的信息，如名字和姓氏、电子邮件ID、CRM ID，这些信息可用于直接识别个人身份。 Adobe Experience cloud解决方案也禁止敏感信息。 有关这些要求的详细信息，请参阅您与Adobe的合同。 如果需要将这些类型的数据点引入Audience Manager，请咨询Adobe咨询团队，以获得有关在引入之前散列这些ID的建议。
+**个人数据：** GDPR 扩展了对个人数据的定义。依照 GDPR 的规定，Audience Manager 中的所有数据均可根据客户用例归类为个人数据。
+
+ 
+
+**禁止的数据：** Audience Manager 禁止客户摄取可直接识别个人身份的信息，例如名字和姓氏、电子邮件 ID、CRM ID。Adobe Experience Cloud 解决方案也禁止获取敏感信息。有关这些要求的详细信息，请参阅您与 Adobe 签署的合同。如果需要将这些类型的数据点摄取到 Audience Manager 中，请联系 Adobe 咨询团队，以获取有关在摄取数据前对这些 ID 进行哈希处理的建议。
