@@ -4,8 +4,11 @@ seo-description: 以下信息可帮助您联系 Adobe 以及了解与使用本�
 seo-title: 联系方式和法律信息
 solution: Audience Manager
 title: 联系方式和法律信息
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+workflow-type: ht
+source-wordcount: '286'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 Adobe Experience Cloud 客户关怀团队在此为您提供帮助，同时还提供了大量的参与机制：
 
-* [查看 Experience Cloud 帮助页面，以获取建议、提示和常见问题解答](https://helpx.adobe.com/support.ec.html)
+* [查看 Experience Cloud 帮助页面，以获取建议、提示和常见问题解答](https://helpx.adobe.com/cn/support.ec.html)
 * [在 Twitter @AdobeExpCare 上快速提问](https://twitter.com/AdobeExpCare)
 * [直接联系客户关怀团队](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html)
 * [查看 Experience Cloud 解决方案的可用性和状态](https://status.adobe.com/)
@@ -31,8 +34,8 @@ Adobe Experience Cloud 客户关怀团队在此为您提供帮助，同时还提
 
 Published by Adobe Systems Incorporated.
 
-[Terms of Use](https://www.adobe.com/legal/terms.html) | [Privacy Center](https://www.adobe.com/privacy.html)
+[Terms of Use](https://www.adobe.com/cn/legal/terms.html) | [Privacy Center](https://www.adobe.com/cn/privacy.html)
 
 Adobe and the Adobe logo are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. A trademark symbol (®, ™, etc.) denotes an Adobe trademark.
 
-All third-party trademarks are the property of their respective owners. Updated Information/Additional Third Party Code Information available at [https://www.adobe.com/go/thirdparty](https://www.adobe.com/products/eula/third_party/).
+All third-party trademarks are the property of their respective owners. Updated Information/Additional Third Party Code Information available at [https://www.adobe.com/go/thirdparty](https://www.adobe.com/cn/products/eula/third_party/).
