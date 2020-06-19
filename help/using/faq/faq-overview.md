@@ -1,22 +1,25 @@
 ---
-description: 常见Audience Manager问题。
-seo-description: 常见Audience Manager问题。
-seo-title: Audience Manager常见问题解答
+description: Audience Manager 常见问题。
+seo-description: Audience Manager 常见问题。
+seo-title: Audience Manager 常见问题解答
 solution: Audience Manager
-title: Audience Manager常见问题解答
-translation-type: tm+mt
+title: Audience Manager 常见问题解答
+translation-type: ht
 source-git-commit: b22302ebf16bc71c61a974e33dc399caafb96095
+workflow-type: ht
+source-wordcount: '81'
+ht-degree: 100%
 
 ---
 
 
-# Audience Manager常见问题解答概述 {#audience-manager-faq}
+# Audience Manager 常见问题解答概述 {#audience-manager-faq}
 
-此部分汇总了Audience Manager各种功能的常见问题解答类别列表。
+本节汇总 Audience Manager 各个功能的一系列各类常见问题。
 
-* [API常见问题解答](faq-api.md)
-* [Audience Lab常见问题解答](faq-audience-lab.md)
-* [客户数据馈送常见问题解答](faq-cdf.md)
+* [API 常见问题解答](faq-api.md)
+* [Audience Lab 常见问题解答](faq-audience-lab.md)
+* [客户数据信息源常见问题解答](faq-cdf.md)
 * [数据收集和产品集成常见问题解答](faq-data-collection.md)
 * [入站客户数据摄取常见问题解答](faq-inbound-data-ingestion.md)
 * [隐私和数据保留常见问题解答](faq-privacy.md)
