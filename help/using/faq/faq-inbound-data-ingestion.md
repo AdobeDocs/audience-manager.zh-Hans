@@ -1,7 +1,7 @@
 ---
-description: 有关将离线数据引入Audience Manager的常见问题。
+description: 有关将离线数据纳入 Audience Manager 的常见问题解答。
 keywords: ftp or s3;s3 or ftp
-seo-description: 有关将离线数据引入Audience Manager的常见问题。
+seo-description: 有关将离线数据纳入 Audience Manager 的常见问题解答。
 seo-title: 入站客户数据摄取常见问题解答
 solution: Audience Manager
 title: 入站客户数据摄取常见问题解答
@@ -10,58 +10,58 @@ translation-type: tm+mt
 source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 3%
+ht-degree: 91%
 
 ---
 
 
 # 入站客户数据摄取常见问题解答{#inbound-customer-data-ingestion-faq}
 
-有关将离线数据引入Audience Manager的常见问题。
+有关将离线数据纳入 Audience Manager 的常见问题解答。
 
  
 
-**您能否总结入职流程？**
+**能否概述一下载入流程？**
 
-入门过程包含将批数据发送到 [Audience Manager概述中描述的两个步骤](../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md):
+载入流程包括[将批量数据发送到 Audience Manager 概述](../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)中所述的两个步骤：
 
-* 第1步： 同步用户ID;
-* 第2步： 根据文件格式要求创建和传输入站数据文件。
+* 步骤 1：同步用户 ID；
+* 步骤 2：按照文件格式要求，创建并传输入站数据文件。
 
  
 
-**您能否总结部署过程？**
+**能否概述一下部署流程？**
 
-我们建议：
+我们建议执行以下操作：
 
-* 请与数据提供商合作，根据Adobe规范格式化每日入站数据文件。 有关文件命名和语法要求，请参阅以下文档：
+* 与您的数据提供商合作，根据 Adobe 规范对日常入站数据文件进行格式化。有关文件命名和语法要求，请参阅以下文档：
    * [ID 同步文件的名称和内容要求](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
-   * [入站数据文件内容： 语法、无效字符、变量和示例](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
-   * [入站数据文件的Amazon S3名称和文件大小要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
-* 请与顾问 [!DNL Adobe] 合作，将测试数据文件传输到格式 [!DNL Adobe] 验证中。
-* 与顾问 [!DNL Adobe] 合作，生成适用于解释数据文件内容的分类。
-* 在分阶段／开发环境中，确认ID同步配置为正确提取数据提供者的访客ID并将其实时传输到 [!DNL Audience Manager] 服务器。
-* 将DIL/ID同步部署到生产。 ID同步将由Adobe顾问配置为DIL代码中的模块。
-* 将生产数据文件传输到 [!DNL Audience Manager]。 考虑到对ID同步映射的依赖性，在生产代码部署后一周内开始传输数据可能是有意义的，但是您可以在代码进入生产后立即开始传输数据文件。
+   * [入站数据文件内容：语法、无效字符、变量和示例](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
+   * [入站数据文件的 Amazon S3 名称和文件大小要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+* 与您的 [!DNL Adobe] 顾问合作，将测试数据文件传输到 [!DNL Adobe] 以进行格式验证。
+* 与您的 [!DNL Adobe] 顾问合作，生成适用于解释数据文件内容的分类。
+* 在暂存/开发环境中，确认已将 ID 同步配置为正确选取数据提供商的访客 ID 并将其实时传输到 [!DNL Audience Manager] 服务器。
+* 将 DIL/ID 同步部署到生产环境。您的 Adobe 顾问已将 ID 同步配置为 DIL 代码中的模块。
+* 将生产数据文件传输到 [!DNL Audience Manager]。考虑到对 ID 同步映射的依赖性，虽然可以在将代码部署到生产环境后立即开始传输数据文件，但是在生产代码部署后的一周内开始传输数据可能更合适。
 
  
 
-**我应使用什么FTP模式传输压缩或加密文件？**
+**我应使用哪种 FTP 模式传输压缩文件或加密文件？**
 
-请参 [阅入站数据传输文件的文件压缩](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)。
+请参阅[入站数据传输文件的文件压缩](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)。
 
 >[!WARNING]
 >
->我们正在逐步取消对FTP配置的支持。 虽然现有FTP集成仍支持入站数据文件摄取，但我们强烈建议使用Amazon S3载入离线数据以进行新集成。 有关 [详细信息，请参阅Amazon S3入站数据文件的名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) 。
+>我们正在逐步停止对 FTP 配置的支持。虽然现有 FTP 集成仍支持入站数据文件摄取，但我们仍强烈建议使用 Amazon S3 载入离线数据以进行新集成。有关详细信息，请参阅[入站数据文件的 Amazon S3 名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
 
  
 
-**我能否先上传入站数据文件（[!DNL .sync]或[!DNL .overwrite]文件），然后再将[!DNL Audience Manager]代码部署到生产中？**
+**我能否先上传入站数据文件（[!DNL .sync]或[!DNL .overwrite]文件），然后再将[!DNL Audience Manager]代码部署到生产环境中？**
 
-能。只要您使用来存 [!UICONTROL cross-device data source] 储您上传的CRM数据，Audience Manager始终会存储这些数据。 事实上，在2019年10月 [!UICONTROL Profile Merge Rules] Audience Manager启动的增强功能允许仅脱机使用案例之后，您无需将Audience Manager代码部署到生产环境即可上传数据并对其执行操作。 请参阅：
+能。As long as you use a [!UICONTROL cross-device data source] to store the CRM data that you upload, Audience Manager always stores the data. In fact, following the [!UICONTROL Profile Merge Rules] enhancements that Audience Manager launched in October 2019 that allow for offline-only use cases, you can upload and action on data without deploying Audience Manager code into production at all. 请参阅：
 
-* [用户档案合并规则增强功能概述](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* [!UICONTROL People-based Destinations] -基 [于仅线下数据的个性化](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
+* [配置文件合并规则增强功能概述](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
+* [!UICONTROL People-based Destinations] -基 [于仅线下数据的个性化](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
 
 <br> 
 
@@ -126,62 +126,62 @@ Consider the following use cases in which the data provider is not configured to
 
 -->
 
-**我应该在几点传输我的文件？**
+**我应该在一天中的哪个时刻传输文件？**
 
-[!DNL Audience Manager] 一天中多次检查和处理文件。 随时上传数据。
-
- 
-
-**从已上载文件获取数据进行定位需要多长时间？**
-
-48小时后，数据可用于定位。 此外，请勿将“成功上传”电子邮件解释为数据可用的语句。 这仅意味着 [!DNL Audience Manager] 已拾取文件并完成了处理的第一步。
+[!DNL Audience Manager] 一天中会多次检查和处理文件。您随时都能上传数据。
 
  
 
-**我应该多久发送一次文件，这些文件应是完整文件还是增量文件？**
+**需要多长时间才能定位已上传文件中的数据？**
 
-作为最佳实践，对于新访客和数据已更改的访客，每天发送一次增量文件。 许多 [!DNL Audience Manager] 客户每月发送一次完整文件。 但是，这些文件间隔和增量是灵活的。 您应该以增量发送数据，并有时发送对您有意义的数据。
+在 48 小时后方可定位数据。此外，请勿将“成功上传”电子邮件理解为数据可用。该电子邮件仅意味着 [!DNL Audience Manager] 已选取文件并完成了处理的第一步。
 
  
 
-**Audience Manager将我的文件保存在服务器上多长时间？**
+**我应该多久发送一次文件？这些文件应该是完整文件还是增量文件？**
 
-FTP文件在处理后即被删除。 [!DNL S3] 文件将在30天后删除。 由于格式、语法或其他错误而无法处理的文件将被删除。 另请参阅隐私 [和数据保留常见问题解答](../faq/faq-privacy.md)。
+最佳做法是每天为新访客和数据已更改的访客发送一次增量文件。许多 [!DNL Audience Manager] 客户会每月发送一次完整文件。但是，这些文件间隔时间和增量是灵活的。您应在合适的时间以增量形式发送数据。
+
+ 
+
+**Audience Manager 会将我的文件在服务器上保存多长时间？**
+
+FTP 文件在处理后即会被删除。[!DNL S3] 文件将在 30 天后被删除。因格式、语法或其他错误而无法处理的文件将被删除。另请参阅[隐私和数据保留常见问题解答](../faq/faq-privacy.md)。
 
  
 
 **完整文件和增量文件之间有何区别？**
 
-* **完整：** 完整文件会覆盖所有现有访客用户档案，并用文件中的数据替换这些数据。 完整文件由文件名附 `.overwrite` 加的标记来标识。 您可以使用文 `.overwrite` 件重置访客特征或删除过时的过时的过时特征。
+* **完整：**&#x200B;完整文件会覆盖所有现有访客配置文件，并使用文件中的数据替换它们。完整文件由附加到文件名的 `.overwrite` 标记来标识。您可以使用 `.overwrite` 文件重置访客特征或删除已过时的失效特征。
 
    >[!NOTE]
    >
-   >文 [!DNL .overwrite] 件只覆盖与 [!DNL Audience Manager] 此数据提供程序关联的用户档案数据。 换言之，与访客关 [!DNL Audience Manager] 联的所有数据在文件处理后 [!DNL .overwrite] 都保持不变。
+   >[!DNL .overwrite] 文件只会覆盖与此数据提供商关联的 [!DNL Audience Manager] 配置文件数据。换言之，在处理 [!DNL .overwrite] 文件之后，与访客关联的所有 [!DNL Audience Manager] 数据均将保持不变。
 
-* **增量：** 增量文件会向现有访客用户档案附加新数据。 增量文件由附加到文 `.sync` 件名的标记进行标识。 在增量文件中发送不会删除或覆盖现有用户档案。
+* **增量：**&#x200B;增量文件会向现有访客配置文件中附加新数据。增量文件由附加到文件名的 `.sync` 标记来标识。发送增量文件不会擦除或覆盖现有配置文件。
 
-以下用例演示了这些文件类型如何影响存储的访客用户档案。
+以下用例演示了这些文件类型如何影响存储的访客配置文件。
 
 | 用例 | 描述 |
 |---|---|
-| 增量和完整 | <ul><li>第1天 `.sync` 文件内容： `visitor123 = a,b,c`</li><li>第2天 `.overwrite` 文件内容： `visitor123 = c,d,e`</li><li>第3天访客用户档案ID 123内容： `c,d,e`</li></ul> |
-| 仅增量 | <ul><li>第1天 `.sync` 文件内容： `visitor123 = a,b,c`</li><li>第2天文 `.sync` 件内容： `visitor123 = c,d,e`</li><li>第3天访客用户档案ID 123内容： `a,b,c,d,e`</li></ul> |
+| 增量文件和完整文件 | <ul><li>第 1 天 `.sync` 文件内容：`visitor123 = a,b,c`</li><li>第 2 天 `.overwrite` 文件内容：`visitor123 = c,d,e`</li><li>第 3 天访客配置文件 ID 123 内容：`c,d,e`</li></ul> |
+| 仅增量文件 | <ul><li>第 1 天 `.sync` 文件内容：`visitor123 = a,b,c`</li><li>第 2 天 `.sync` 文件内容：`visitor123 = c,d,e`</li><li>第 3 天访客配置文件 ID 123 内容：`a,b,c,d,e`</li></ul> |
 
-有关完整和增量文件类型的详细信息，请参阅：
+有关完整和增量文件类型的更多信息，请参阅：
 
-* [入站数据的Amazon S3名称和文件大小要求……](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
-
- 
-
-**如果我向从未执行过页面ID同步的访客发送ID文件，会发生什么情况？**
-
-在处理过 [!DNL Audience Manager] 程中，跳过该记录并转到下一个记录。 如果将 [DPID（数据提供者ID）](../reference/ids-in-aam.md) 设置为跨设备DPID，则保存在ID同步之前摄取的数据，并在ID同步发生后很快可用。
+* [入站数据文件的 Amazon S3 名称和文件大小要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
  
 
-**时间戳是什么，它用于什么，您能提供一个示例吗？**
+**如果我发送的文件中包含从未执行过页面上 ID 同步的访客的 ID，会发生什么情况？**
 
-时间戳用于记录和记录保存。 格式正确的入站文件名使用的语法需要它们。 请参阅：
+在处理期间，[!DNL Audience Manager] 会跳过该记录并继续处理下一个记录。如果将 [DPID（数据提供商 ID）](../reference/ids-in-aam.md)设置为跨设备 DPID，则会保存在 ID 同步之前摄取的数据，该数据在 ID 同步后可即刻使用。
+
+ 
+
+**时间戳是什么，它有何用途？能否提供一个示例？**
+
+时间戳用于日志和记录保存。格式正确的入站文件名所用的语法要求使用时间戳。请参阅：
 
 * [入站数据文件的 Amazon S3 名称要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
@@ -189,62 +189,62 @@ FTP文件在处理后即被删除。 [!DNL S3] 文件将在30天后删除。 由
 
 **什么是[!DNL Data Provider ID (DPID)]，如何获得？**
 
-您的Adobe顾问将为您的特定数据源分配一个三位 [或四位数的DPID](../reference/ids-in-aam.md) （数据提供程序ID）。 此ID是唯一的，不会更改。
+Adobe 顾问将为您的特定数据源分配一个三位数或四位数的 [DPID（数据提供商 ID）](../reference/ids-in-aam.md)。此 ID 是唯一的，不会更改。
 
  
 
 **日常数据文件可以有多大？**
 
-请参 [阅入站数据传输文件的文件压缩](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)。
+请参阅[入站数据传输文件的文件压缩](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)。
 
  
 
-**Audience Manager是否支持文件压缩？**
+**Audience Manager 是否支持文件压缩？**
 
-是的，请参阅:
+是的，请参阅：
 
 * [入站数据传输文件的文件压缩](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
 * [入站数据文件的 Amazon S3 名称要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
  
 
-**我的数据源数据库中的主键是电子邮件地址。 这是否被视为个人可识别信息？**
+**我的数据源数据库中的主键是电子邮件地址。这是否被视为个人身份信息？**
 
-能。[!DNL Audience Manager] 不在其数据库中存储电子邮件地址。 在启动ID同步之前，应为访客分配随机生成的ID或电子邮件地址的单向哈希版本。
-
- 
-
-**数据文件内容是否区分大小写？ ID同步如何？**
-
-数据文件有两个基本组件： A( [!UICONTROL User ID] 请参 [!UICONTROL User ID] 阅文 [件变量定义](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#file-variables-defined))和用户档案数据，通常以键值对或代码的形式。 区 [!UICONTROL User ID] 分大小写。 通常，用户档案或键值数据不区分大小写。
+是的。[!DNL Audience Manager] 不会在其数据库中存储电子邮件地址。在启动ID同步之前，应为访客分配随机生成的ID或电子邮件地址的单向哈希版本。
 
  
 
-**我应该使用FTP还是[!DNL Amazon S3]传输文件？**
+**数据文件内容是否区分大小写？ID 同步呢？**
 
-作为最佳实践，我们建议 [!DNL Amazon S3] 这样做，因为过程更简单。 [!DNL Audience Manager] 无论如何， [!DNL S3] 都可以传输FTP文件，因此，如果您自己放置文件，流程将更加 [!DNL Amazon S3] 简化。 此外，同时上传到FTP的客户共享FTP的带宽，因此他们预计上传速度会更慢。 [!DNL Amazon S3] 也是复制和分发的，因此它通常比FTP服务器更安全、更可靠。 有关详细信息，请 [参阅关于Amazon S3](../reference/amazon-s3.md)。
+数据文件有两个基本组成部分：[!UICONTROL User ID]（请参阅[定义的文件变量](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#file-variables-defined)中的 [!UICONTROL User ID]）和配置文件数据（通常采用键值对或代码形式）。[!UICONTROL User ID] 区分大小写。通常，配置文件或键值数据不区分大小写。
+
+ 
+
+**我应该使用 FTP 还是[!DNL Amazon S3]来传输文件？**
+
+作为最佳做法，我们建议您使用 [!DNL Amazon S3]，因为该过程更简单。不管如何，[!DNL Audience Manager] 都会将 FTP 文件传输到 [!DNL S3]，因此，如果您自行将文件放置到 [!DNL Amazon S3] 上，可以简化该过程。此外，如果多个客户同时上传到 FTP，则他们会共享 FTP 的带宽，因此上传速度会较慢。[!DNL Amazon S3] 也是可复制和分发的，因此它通常比 FTP 服务器更安全、更可靠。有关更多信息，请参阅[关于 Amazon S3](../reference/amazon-s3.md)。
 
 >[!WARNING]
 >
->我们正在逐步取消对FTP配置的支持。 虽然现有FTP集成仍支持入站数据文件摄取，但我们强烈建议使用 [!DNL Amazon S3] 入站离线数据进行新集成。 有关 [详细信息，请参阅Amazon S3入站数据文件的名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) 。
+>我们正在逐步停止对 FTP 配置的支持。While inbound data file ingestion is still supported in existing FTP integrations, we strongly recommend using [!DNL Amazon S3] to onboard offline data for new integrations. 有关详细信息，请参阅[入站数据文件的 Amazon S3 名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
 
  
 
-**受众管理器如何处理入站文件？**
+**Audience Manger 如何处理入站文件？**
 
-[!DNL Audience Manager] 用于 [!DNL Amazon Simple Queue Service (SQS)] 入站数据处理。 下面是其工作原理：
+[!DNL Audience Manager] 使用 [!DNL Amazon Simple Queue Service (SQS)] 进行入站数据处理。下面是其工作原理：
 
-1. [!DNL Audience Manager] 客户将其入站数据上传到 [!DNL Amazon S3] 时段。
-1. 数据进入 [!DNL Amazon SQS] 队列，等待被处理 [!DNL Audience Manager]。
-1. [!DNL Audience Manager] 从队列中读取多达19000个条目 [!DNL Amazon SQS] ，并将它们分成多达3批。 每批中的文件将同时处理。
+1. [!DNL Audience Manager] 客户将其入站数据上传到 [!DNL Amazon S3] 存储段。
+1. 数据进入 [!DNL Amazon SQS] 队列，等待 [!DNL Audience Manager] 处理。
+1. [!DNL Audience Manager] 从 [!DNL Amazon SQS] 队列中最多读取 119000 个条目，并将它们分成 3 批。每批文件会同时进行处理。
 
  
 
-**我需要同时上传多个文件。 文件是否将同时处理？**
+**我需要同时上传多个文件。是否会同时处理这些文件？**
 
-看情况。 [!DNL Audience Manager] 从队列中读取多达19000个条目 [!DNL Amazon SQS] ，并将它们分成多达3批。 只有在同一批处理您的文件时，才会同时处理它们。 但是，由于日常采集的数据量 [!DNL Audience Manager] 很大，无法保证文件处理顺序。
+视情况而定。[!DNL Audience Manager] 从 [!DNL Amazon SQS] 队列中最多读取 119000 个条目，并将它们分成 3 批。只有当文件位于同一批次中时，系统才会同时处理它们。但是，由于 [!DNL Audience Manager] 每天摄取的数据量很大，因此我们不能保证任何文件处理顺序。
 
 >[!MORELIKETHIS]
 >
->* [描述的批处理数据传输过程](../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
+>* [批量数据传输流程说明](../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
 
