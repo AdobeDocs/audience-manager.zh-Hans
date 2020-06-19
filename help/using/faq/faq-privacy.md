@@ -1,6 +1,6 @@
 ---
-description: 隐私性和数据方面的常见问题解答。
-seo-description: 隐私性和数据方面的常见问题解答。
+description: 有关隐私和数据的常见问题解答。
+seo-description: 有关隐私和数据的常见问题解答。
 seo-title: 隐私和数据保留常见问题解答
 solution: Audience Manager
 title: 隐私和数据保留常见问题解答
@@ -9,14 +9,14 @@ translation-type: tm+mt
 source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 5%
+ht-degree: 96%
 
 ---
 
 
-# Privacy and Data Retention FAQ{#privacy-and-data-retention-faq}
+# 隐私和数据保留常见问题解答{#privacy-and-data-retention-faq}
 
-隐私性和数据方面的常见问题解答。
+有关隐私和数据的常见问题解答。
 
 <!-- faq_privacy.xml -->
 
@@ -24,15 +24,15 @@ ht-degree: 5%
 
 >[!TIP]
 >
->有关更 [多信息，请访](https://www.adobe.com/privacy.html) 问Adobe隐私中心。
+>有关更多信息，请访问 [Adobe 隐私中心](https://www.adobe.com/cn/privacy.html)。
 
-**Audience Manager如何使用cookies，以及它设置了哪些cookies?**
+**Audience Manager 如何使用 Cookie？Audience Manager 会设置哪些 Cookie？**
 
-See [Audience Manager Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html).
+请参阅 [Audience Manager Cookie](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/ec-cookies/cookies-am.html)。
 
-**Audience Manager客户是否可以在欧盟资产上目标美国用户？**
+**美国的 Audience Manager 客户能否定位欧盟资产的用户？**
 
-能。Audience Manager与拥有国际财产和库存的客户合作。 欧盟有严格的隐私法，但Audience Manager的客户使用第一方数据在欧洲进行受众定位。 Audience Manager可以支持针对欧盟受众的目标，但您有责任遵守当地隐私法规。
+能。Audience Manager 与在全球拥有资产和库存的客户合作。虽然欧盟地区实施了严格的隐私法，但 Audience Manager 的一些客户仍使用第一方数据在欧洲地区进行受众定位。因此，Audience Manager 可以支持针对欧盟地区受众的定位，但是您有责任遵守当地隐私法规。
 
 <!-- 
 
@@ -43,62 +43,62 @@ See [Audience Manager Cookies](https://docs.adobe.com/content/help/en/core-servi
 
 ## 数据保留常见问题解答 {#data-retention-faq}
 
-下表列表了不同数据类型和存储系统的保留时间。
+下表列出了各类型数据的保留时长和存储系统。
 
 <table id="table_21C0B13A57A44DE0999FB33F363C88F6"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 数据类型、源或存储 </th> 
-   <th colname="col2" class="entry"> 数据保留期限 </th> 
+   <th colname="col1" class="entry"> 数据类型、来源或存储 </th> 
+   <th colname="col2" class="entry"> 数据保留期 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p>后端服务器 </p> </td> 
-   <td colname="col2"> <p>120天。 </p> <p> Audience Manager在上次在Audience Manager平台上看到用户120天后，从我们的后端服务器删除用户数据。 如 <span class="keyword"> 果Audience Manager</span> 在120天的周期内记录用户活动，我们将再保留120天的数据。 </p> </td> 
+   <td colname="col2"> <p>120 天。 </p> <p> Audience Manager 会在 120 天后（从上次在 Audience Manager 平台上看到用户之日算起）从后端服务器删除用户数据。如果 <span class="keyword">Audience Manager</span> 在这 120 天的周期内记录到用户活动，则会再将数据保留 120 天。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>边缘服务器 </p> </td> 
-   <td colname="col2"> <p> 14天。 </p> <p>Audience Manager在上次在Audience Manager平台上看到用户14天后，从我们的边缘服务器删除用户数据。 如 <span class="keyword"> 果Audience Manager</span> 在14天的周期内记录用户活动，我们将再保存14天的数据。 如果用户在14天后再次变为活动状态，则第一个新页面视图与用户可操作时间之间会有延迟。 在超过14天不活动后，需要6-18小时才能将完整用户档案返回边缘中心。 </p> </td> 
+   <td colname="col1"> <p>Edge 服务器 </p> </td> 
+   <td colname="col2"> <p> 14 天。 </p> <p>Audience Manager 会在 14 天后（从上次在 Audience Manager 平台上看到用户之日算起）从 Edge 服务器删除用户数据。如果 <span class="keyword">Audience Manager</span> 在这 14 天的周期内记录到用户活动，则会再将数据保留 14 天。如果用户在 14 天后再次变为活动状态，则从第一次查看新页面到用户变为可操作状态之间会存在延迟。超过 14 天不活动后，需要 6-18 个小时才能将完整的配置文件返回到 Edge 中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始日志 </p> </td> 
-   <td colname="col2"> <p>180天(在180天未活动后删除)。 </p> <p>原始日志是边缘服务器通过HTTP调用或从已载入的文件发送到Audience Manager来接收的 <span class="keyword"> 数据</span>。 </p> </td> 
+   <td colname="col2"> <p>180 天（在 180 天不活动后删除）。 </p> <p>原始日志是 Edge 服务器通过 HTTP 调用接收到的数据，或从发送到 <span class="keyword">Audience Manager</span> 的已载入文件接收到的数据。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>广告服务器日志 </p> </td> 
-   <td colname="col2"> <p><b>报表</b> </p> <p>日志文件的保留时间最长为30天，用于报告目的。 我们不会在我们的后端存储中保留不匹配的日志(即访客的广告服务器ID和 <span class="keyword"> Audience ManagerID之间没有ID同步的日志)，并且Amazon S3中存储的</span> 匹配日志最多保留30天 <span class="keyword"></span> 。 </p> <p><b>可操作的日志文件</b> </p> <p>匹配和不匹配的日志最多保留30天。 </p> </td> 
+   <td colname="col2"> <p><b>报表</b> </p> <p>当用于报表时，日志文件最多可保留 30 天。我们不会在后端存储中保留不匹配的日志（即访客的广告服务器 ID 未与 <span class="keyword">Audience Manager</span> ID 进行同步的日志），并且 <span class="keyword">Amazon S3</span> 中存储的匹配日志最多可保留 30 天。 </p> <p><b>可操作的日志文件</b> </p> <p>匹配的日志和不匹配的日志最多都可保留 30 天。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>CRM级用户档案(经过身份验证的用户档案) </p> </td> 
-   <td colname="col2"> <p>非活动的CRM级别用户档案（客户ID）的默认生存时间(TTL)间隔为24个月。 但是，您可以使用Audience Manager用户界面将非活动的CRM级别用户档案的TTL间隔缩短或延长一个月至5年。 创建或编辑跨设备数据源时，可以完成此操作。</p> <p>有关详细信息，请参阅创建跨设 <a href="../features/profile-merge-rules/merge-rules-start.md#settings"> 备数据源中的数据源设置 </a>。</p> </td> 
+   <td colname="col1"> <p>CRM 级别配置文件（已验证的配置文件） </p> </td> 
+   <td colname="col2"> <p>非活动的 CRM 级别配置文件（客户 ID）的默认存留期 (TTL) 为 24 个月。但是，您可以使用Audience Manager用户界面将非活动的CRM级别用户档案的TTL间隔缩短或延长一个月至5年。 您可以在创建或编辑跨设备数据源时执行此操作。</p> <p>有关更多信息，请参阅<a href="../features/profile-merge-rules/merge-rules-start.md#settings">创建跨设备数据源</a>中的“数据源设置”。</p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>移动设备ID </p> </td> 
-   <td colname="col2"> <p>移动设备ID(<a href="../reference/ids-in-aam.md"> IDFA、GAID</a>)的保留条件遵循前两行、后端服务器和边缘服务器中描述的顺序。 </p> </td> 
+   <td colname="col1"> <p>移动设备 ID </p> </td> 
+   <td colname="col2"> <p>移动设备 ID（<a href="../reference/ids-in-aam.md">IDFA、GAID</a>）的保留条件遵循前两行“后端服务器”和“Edge 服务器”中所述的终止时间。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>客户数据馈送(CDF) </p> </td> 
-   <td colname="col2"> <p>CDF文件包含Audience Manager事件调用( <span class="keyword"> /事件</span> )发送到我们服务器的相同数据。 保留期为8天。 有关CDF的更多详细信息，请参 <a href="../features/cdf-files.md"> 阅CDF介绍</a> 和 <a href="../faq/faq-cdf.md"> CDF常见问题解答</a>。 </p> </td> 
+   <td colname="col1"> <p>客户数据信息源 (CDF) </p> </td> 
+   <td colname="col2"> <p>CDF 文件包含的数据与 <span class="keyword">Audience Manager</span> 事件调用 (/event) 发送到我们服务器的数据相同。保留期为 8 天。有关 CDF 的更多详细信息，请参阅 <a href="../features/cdf-files.md">CDF 简介</a>和 <a href="../faq/faq-cdf.md">CDF 常见问题解答</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>同步ID之间的映射 </p> </td> 
-   <td colname="col2"> <p>Audience ManagerCookie ID( <a href="../features/administration/usage-limits.md#id-mapping-limits"> Audience Manager唯一用户ID</a> ，或AAM UUID<a href="../reference/ids-in-aam.md"></a>)和第三方Cookie ID之间的ID映射的寿命限制为120天。 每次在Audience Manager网络上看到Audience Managercookie时，ID映射的寿命都会重置。 将在关联的Audience Manager唯一用户ID(AAM UUID)的 <a href="../reference/ids-in-aam.md">有效期内保留最新的ID映射同步</a>。</p></td> 
+   <td colname="col1"> <p>已同步 ID 之间的映射 </p> </td> 
+   <td colname="col2"> <p>Audience Manager Cookie ID（<a href="../reference/ids-in-aam.md">Audience Manager 独特用户 ID 或 AAM UUID</a>）与第三方 Cookie ID 之间的 <a href="../features/administration/usage-limits.md#id-mapping-limits">ID 映射</a>的有效期限制为 120 天。每当在 Audience Manager 网络中看到 Audience Manager Cookie 时，ID 映射的有效期便会重置。最近一次 ID 映射同步的保留时间将等于相关联的 <a href="../reference/ids-in-aam.md">Audience Manager 独特用户 ID (AAM UUID)</a> 的有效期。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>入站数据 </p> </td> 
-   <td colname="col2"> <p>这是您通过FTP发送到 <span class="keyword"> Audience Manager</span> ，或直接发送到 <span class="keyword"> Amazon S3目录的入站数据</span> 。 请参阅入站 <a href="../faq/faq-inbound-data-ingestion.md"> 客户数据摄取常见问题解答</a>。 </p> </td> 
+   <td colname="col2"> <p>您通过 FTP 发送到 <span class="keyword">Audience Manager</span> 的入站数据，或直接发送到 <span class="keyword">Amazon S3</span> 目录的数据。请参阅<a href="../faq/faq-inbound-data-ingestion.md">入站客户数据摄取常见问题解答</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>出站数据 </p> </td> 
-   <td colname="col2"> <p>这是Audience Manager发送给第 <span class="keyword"> 三方</span> 激活合作伙伴的批处理数据。 保留期为8天。 有关出站数据的详细信息，请参阅 <a href="../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md"> 出站批传</a>。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">Audience Manager</span> 发送到第三方激活合作伙伴的批量数据。保留期为 8 天。有关出站数据的更多详细信息，请参阅<a href="../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md">出站数据批量传输</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 特征鉴定数据保留 {#trait-qual}
+## 特征资格数据保留 {#trait-qual}
 
-下表列表了特征资格的保留选项。
+下表列出了适用于特征资格数据的保留选项。
 
 <table id="table_7FB42BEF138540AAB6869995C1AB8D3F"> 
  <thead> 
@@ -110,11 +110,11 @@ See [Audience Manager Cookies](https://docs.adobe.com/content/help/en/core-servi
  <tbody> 
   <tr> 
    <td colname="col1"> <p>删除特征 </p> </td> 
-   <td colname="col2"> <p>删除特征会从过去符合该特征的所有用户用户档案中删除特征资格数据。 </p> </td> 
+   <td colname="col2"> <p>若删除某个特征，则会从之前符合该特征的所有用户配置文件中删除特征资格数据。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>已达到特征限制 </p> </td> 
-   <td colname="col2"> <p>我们对每个用户用户档案限制100,000个特质资格。 此限制适用于已验证的用户档案和设备用户档案。 如果用户用户档案达到此限制，我们将删除最早的特征资格，先入先出。 </p> <p>有关详细信息，请阅读我们的 <a href="../features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit"> 特质资格限制</a>。 </p> </td> 
+   <td colname="col2"> <p>我们将每个用户配置文件的特征资格数限制为 100,000。此限制适用于已验证的用户配置文件和设备配置文件。如果用户配置文件达到此限制，我们将按先进先出原则删除最早的特征资格数据。 </p> <p>有关更多详细信息，请参阅我们的<a href="../features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit">特征资格限制</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
