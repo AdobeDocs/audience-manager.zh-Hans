@@ -1,20 +1,23 @@
 ---
-description: 有关受众实验室功能的常见问题。
-seo-description: 有关受众实验室功能的常见问题。
-seo-title: 受众实验室常见问题解答
+description: 有关 Audience Lab 功能的常见问题解答。
+seo-description: 有关 Audience Lab 功能的常见问题解答。
+seo-title: Audience Lab 常见问题解答
 solution: Audience Manager
-title: 受众实验室常见问题解答
+title: Audience Lab 常见问题解答
 topic: DIL API
 uuid: b1daf99d-af60-4f65-987d-794a6d45d566
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+workflow-type: ht
+source-wordcount: '349'
+ht-degree: 100%
 
 ---
 
 
-# 受众实验室常见问题解答{#audience-lab-faq}
+# Audience Lab 常见问题解答 {#audience-lab-faq}
 
-有关受众实验室功能的常见问题。
+有关 Audience Lab 功能的常见问题解答。
 
 <!-- 
 
@@ -24,34 +27,34 @@ audience-lab-faq.xml
 
 <br> 
 
-**在测试组中创建的测试段是否具有不同的段ID? 如何将ID映射到不同的目标？**
+**在测试组中创建的测试区段是否具有不同的区段 ID？如何将这些 ID 映射到不同的目标？**
 
-是，测试段具有不同的段ID。 对于发送到 [!UICONTROL Auto-fill Destination Mapping] 的目标或区 [!DNL Google]段， [!UICONTROL Audience Lab] 将像处理通常的目标一样处理映射值。
-
-<br> 
-
-**同一转换特征是否可以与多个测试组关联？**
-
-是的，这是允许的。 假设一个测试使用与转换X关联的男性区段，而一个测试使用与转换X关联的女性区段。由于两个测试都在测试两个不同的受众，因此不管这两个测试都在推动转换。
+是，测试区段具有不同的区段 ID。对于包含 [!UICONTROL Auto-fill Destination Mapping] 的目标或已发送到 [!DNL Google] 的区段，[!UICONTROL Audience Lab] 将像目标平常处理映射一样处理这些映射值。
 
 <br> 
 
-**假设测试组正在使用经过身份验证的用户档案进行测试段拆分。 已验证的用户档案链接到4个[受众管理器UUID](../reference/ids-in-aam.md)。 当访客显示四个UUID中的一个的转换特征时，是否将[!UICONTROL Audience Lab]其计为一个或四个转换？**
+**同一转化特征是否可以与多个测试组关联？**
 
-在这种情况下， [!UICONTROL Audience Lab] 只计一次转换。
-
-<br> 
-
-**如果上述情况的访客首先显示与其已验证用户档案链接的四个UUID中的一个的转换特征，然后还显示与已验证用户档案链接的另外两个UUID的转换特征，该怎么办？ 此情况是否计为一次或三次转换？**
-
-在这种情况下 [!UICONTROL Audience Lab] ，对三个转换进行计数，每个设备显示身份验证特征时一个转换。
+是，这是可行的。假设一个测试组使用与转化特征 X 相关联的男性受众区段，而另一个测试组使用与转化特征 X 相关联的女性受众区段。由于这两个测试组测试的是两个不同的受众区段，因此即使这两个测试组同时促进转化也无妨。
 
 <br> 
 
-**用户是否可以访[!UICONTROL Segment: Read-Only]问，同时也可以[!UICONTROL Audience Lab]测试段创建访问权限？**
+**假设一个测试组正在使用已验证的用户配置文件进行测试区段拆分。该已验证的用户配置文件与 4 个[Audience Manager UUID](../reference/ids-in-aam.md)相关联。当访客展现的转化特征来源于这四个 UUID 中的一个 UUID 时，[!UICONTROL Audience Lab]会将这计为一次还是四次转化？**
 
-有关 [如何使用权限](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) ，请参阅创建区段 [!UICONTROL Audience Lab] 测试 [!UICONTROL RBAC] 组。
+在这种情况下，[!UICONTROL Audience Lab] 只计入一次转化。
 
-**我是否可以[!UICONTROL Audience Lab]与外部设[!UICONTROL Profile Link Device Graph]备图形([Adobe Experience Cloud Device Co-op、Tapad Device Graph](https://docs.adobe.com/content/help/en/device-co-op/using/home.html)、Liveramp Device Graph)结合使用？**
+<br> 
 
-目前， [!UICONTROL Audience Lab] 只能在使用时，按连接到符合条件的设备的设备划分细分群体 [!UICONTROL Profile Link Device Graph]。 我们正在为其他设备 [!UICONTROL Audience Lab] 图形添加支持，并会在我们添加支持时通知您。
+**以上例为基础，如果访客随后展现的转化特征来源于与已验证配置文件相关联的另外两个 UUID（而不是上例中提及的四个 UUID），那么又会怎么样呢？是将这计为一次还是三次转化？**
+
+在这种情况下，[!UICONTROL Audience Lab] 会计入三次转化，每个展现已验证特征的设备计入一次。
+
+<br> 
+
+**用户是否可以同时具有[!UICONTROL Segment: Read-Only]权限和[!UICONTROL Audience Lab]测试区段创建权限？**
+
+有关如何结合使用 [!UICONTROL Audience Lab] 和 [!UICONTROL RBAC] 权限的信息，请参阅[创建区段测试组](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)。
+
+**我是否可以将[!UICONTROL Audience Lab]与[!UICONTROL Profile Link Device Graph]和外部设备图（[Adobe Experience Cloud 设备协作](https://docs.adobe.com/content/help/zh-Hans/device-co-op/using/home.html)、Tapad 设备图、Liveramp 设备图）结合使用？**
+
+目前，在使用 [!UICONTROL Profile Link Device Graph] 时，[!UICONTROL Audience Lab] 只能按连接到某个合格设备的设备拆分区段人口。我们正努力在 [!UICONTROL Audience Lab] 中添加对其他设备图的支持，准备就绪后，我们将通知您。
