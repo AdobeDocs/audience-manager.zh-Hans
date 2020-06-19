@@ -1,87 +1,90 @@
 ---
-description: 关于客户数据馈送(CDF)文件的常见问题解答。
-seo-description: 关于客户数据馈送(CDF)文件的常见问题解答。
-seo-title: 客户数据馈送常见问题解答
+description: 关于客户数据信息源 (CDF) 文件的常见问题解答。
+seo-description: 关于客户数据信息源 (CDF) 文件的常见问题解答。
+seo-title: 客户数据信息源常见问题解答
 solution: Audience Manager
-title: 客户数据馈送常见问题解答
+title: 客户数据信息源常见问题解答
 uuid: 7183b3e2-e999-4e1e-892f-2bab335c13b6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7018705c130bf7c65f3a69da5e4bd9e0666423bc
+workflow-type: ht
+source-wordcount: '460'
+ht-degree: 100%
 
 ---
 
 
-# 客户数据馈送常见问题解答{#customer-data-feed-faq}
+# 客户数据信息源常见问题解答{#customer-data-feed-faq}
 
-关于客户数据馈送(CDF)文件的常见问题解答。
+关于客户数据信息源 (CDF) 文件的常见问题解答。
 
-## Amazon S3存储 {#amazon-s3-storage}
+## Amazon S3 存储 {#amazon-s3-storage}
 
-**我的CDF文件存储在何处[!DNL Amazon]?**
+**我的 CDF 文件存储在[!DNL Amazon]上的什么位置？**
 
-您的CDF文件存储在服 `aam-cdf` 务器的根目录 [!DNL Amazon S3] 中。 此默认存储段由管理 [!DNL Audience Manager]。 另请参阅 [客户数据馈送文件命名约定](../features/cdf-files.md#cdf-naming-conventions)。
-
-<br> 
-
-**我的存储桶安全吗？**
-
-能。客户只能访问自己的存储空间。 您将拥有对存储存储段的只读访问权限。 您将没有写访问权限。
+您的 CDF 文件存储在 [!DNL Amazon S3] 服务器的 `aam-cdf` 根目录中。此默认存储段由 [!DNL Audience Manager] 管理。另请参阅[客户数据信息源文件命名约定](../features/cdf-files.md#cdf-naming-conventions)。
 
 <br> 
 
-**我是否可以自定义存储桶或将文件存储在另一个目录中？**
+**我的存储段安全吗？**
 
-不会。自定义和备用存储选项不可用。
-
-<br> 
-
-**我的目录在特定小时内缺少一个文件。 在哪？**
-
-缺少文件表 [!DNL Audience Manager] 示该小时内无法处理您的CDF文件。 这通常在我们的服务器处理CDF文件时发生。 在这种情况下，您的文件不会丢失。 在我们的系统有机会赶上后，它将显示在稍后每小时的目录中。 另请参阅客 [户数据馈送文件处理通知](../features/cdf-files.md#cdf-file-processing-notifications)。
+安全。客户只能访问自己的存储空间。您将拥有存储段的只读访问权限。您没有写入权限。
 
 <br> 
 
-**我如何知道CDF文件何时准备就绪？**
+**我可以自定义存储段或将文件存储在其他目录中吗？**
 
-请参阅 [客户数据馈送文件处理通知](../features/cdf-files.md#cdf-file-processing-notifications)。
+不能。自定义和替代存储选项不可用。
+
+<br> 
+
+**我的目录在某一特定小时内缺失了一个文件。这个文件位于何处？**
+
+缺少文件意味着 [!DNL Audience Manager] 在该小时内无法处理您的 CDF 文件。如果服务器在处理 CDF 文件时发生延迟，通常会出现这种情况。在这种情况下，您的文件并没有缺失。我们的系统有机会赶上处理进度后，在接下来的每小时，该文件都会显示在目录中。另请参阅[客户数据信息源文件处理通知](../features/cdf-files.md#cdf-file-processing-notifications)。
+
+<br> 
+
+**我如何知道 CDF 文件何时准备就绪？**
+
+请参阅[客户数据信息源文件处理通知](../features/cdf-files.md#cdf-file-processing-notifications)。
 
 <br> 
 
 ## 文件大小 {#file-sizes}
 
-**我应该期望哪种文件大小？ 平均CDF文件有多大？**
+**我应会收到哪种大小的文件？平均 CDF 文件有多大？**
 
-很难估计文件大小。 而且，每个文件的大小可以不同。 大小因小时和日而异。 如果您要接收CDF文件，则有助于准备好管理大量数据。
+我们很难估计文件大小。而且，每个文件具有不同的大小。大小会随时间的变化而变化。如果您要接收 CDF 文件，最好做好管理大量数据的准备。
 
 <br> 
 
 **我将收到多少个文件？**
 
-同样，很难估计这一点。 但是，如果您要接收CDF文件，则有助于准备好管理大量数据。
+同样，我们也很难估计这一点。但是，如果您要接收 CDF 文件，最好做好管理大量数据的准备。
 
 <br> 
 
 ## 数据完整性 {#data-integrity}
 
-**如何检查上传到Amazon S3的数据的完整性？**
+**如何检查上传到 Amazon S3 的数据的完整性？**
 
-[!DNL Amazon] 将大文件拆分为较小的部分，并使用多 [!DNL Amazon S3] 部分上传将其上传到。 然后，它为多 `ETag` 部分上传生成一个值。 它首先计算每个上传部分的单个MD5校验和，然后将它们连接到单个字符串中。 然后，计算字符串的MD5校验和。 然后，生成的校验 `ETag`和()会附加连字符以及用于上传的部件总数。 例如，在上 `ETag` 传期间被拆分为5个部分的文件的外观可能类似于： `2c51427d19021e88cf3395365895b6d4-5`
-
-<br> 
-
-## Data Retention {#data-retension}
-
-**您存储CDF文件多长时间？**
-
-数据将在八(8)天后删除。
+[!DNL Amazon] 会将大型文件拆分为较小分块，然后使用分块上传将它们上传到 [!DNL Amazon S3]。之后，它将为分块上传生成一个 `ETag` 值。首先，它会计算每个已上传分块的单个 MD5 校验和，然后将它们串联为单个字符串。接着，它会计算字符串的 MD5 校验和。最后，生成的校验和 (`ETag`) 将附加一个连字符和上传的分块总数。例如，如果文件在上传期间被拆分为 5 个分块，则其 `ETag` 可能会如下所示：`2c51427d19021e88cf3395365895b6d4-5`
 
 <br> 
 
-**我是否可以逆向获得CDF文件，或者以前几天获得？**
+## 数据保留 {#data-retension}
 
-您只能生成过去8天的CDF文件。 无法重新生成间隔早于过去8天的CDF文件。
+**CDF 文件会存储多长时间？**
+
+数据在八 (8) 天后会被删除。
+
+<br> 
+
+**我是否可以获取以前或前几天的 CDF 文件？**
+
+您只能生成过去 8 天的 CDF 文件，而不能重新生成过去 8 天之前的 CDF 文件。
 
 >[!MORELIKETHIS]
 >
->* [客户数据馈送](../features/cdf-files.md)
+>* [客户数据信息源](../features/cdf-files.md)
 
