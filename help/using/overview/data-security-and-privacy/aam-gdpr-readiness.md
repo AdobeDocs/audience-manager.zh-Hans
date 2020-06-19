@@ -1,34 +1,37 @@
 ---
-description: 面向Audience Manager客户的GDPR就绪性指南
-seo-description: 面向Audience Manager客户的GDPR就绪性指南
-seo-title: 面向Audience Manager客户的GDPR就绪性指南
+description: 面向 Audience Manager 客户的 GDPR 准备指南
+seo-description: 面向 Audience Manager 客户的 GDPR 准备指南
+seo-title: 面向 Audience Manager 客户的 GDPR 准备指南
 solution: Audience Manager
-title: 面向Audience Manager客户的GDPR就绪性指南
-translation-type: tm+mt
+title: 面向 Audience Manager 客户的 GDPR 准备指南
+translation-type: ht
 source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
+workflow-type: ht
+source-wordcount: '475'
+ht-degree: 100%
 
 ---
 
 
-# 面向Audience Manager客户（数据管理者）的GDPR就绪性指南 {#gdpr-readiness-guidance}
+# 面向 Audience Manager 客户（数据控制者）的 GDPR 准备指南{#gdpr-readiness-guidance}
 
-Audience manager建议在数据管理和组织就绪性方面采取主动行动。 这将帮助您确保为与访问或删除请求相关的流程组织消费者数据，您的团队将能够被启用并被授权管理这些请求，而您的消费者（数据主体）将拥有与您的品牌相关的积极且差异化的体验。
+Audience Manager 建议在数据管理和组织准备方面采取主动行动。这将帮助您确保为与访问或删除请求相关的流程组织消费者数据，使您的团队有能力并有权管理这些请求，并且消费者（数据主体）将对您的品牌拥有积极而独特的体验。
 
-作为您的数据处理者，Adobe无法就GDPR要求以及从数据主体获得同意的过程提供法律建议。 请咨询您的法律顾问，以获得有关贵组织遵守GDPR的指导。
+作为数据处理者，Adobe 无法就 GDPR 要求以及获得数据主体同意的流程提供法律建议。请咨询您的法律顾问，以便为贵组织提供有关 GDPR 合规性的指导。
 
-## 数据管理：开始考虑如何在Audience manager实例中管理您的消费者数据
+## 数据管理：开始思考如何在 Audience Manager 实例中管理消费者数据
 
-* 查看您的营销团队用来识别Audience manager中用户的各种客户ID以及存储这些用户的数据源。 这将简化请求流程（如删除或访问），因为某些数据类型在引入Audience manager之前将由您的团队散列化。
-* IDFA/GAID移动设备ID用于Audience manager中的多个用例。 如果您使用的是Adobe Mobile SDK，请确保提交Experience Cloud ID(MID)和IDFA/GAID，以确保GDPR答复完成。
-* 随着个人数据的定义越来越广泛，IP地址可能会被视为您所在地区的个人数据。 主动与Adobe Consulting联系以模糊化最后八位字节。
-* 确定在数据主体发出GDPR请求时确认其身份的验证／身份验证策略和流程。
-* 考虑使用 [数据导出控制](../../features/data-export-controls.md) ，阻止受众激活存储个人数据的技术。 例如，具有第三方数据的细分不应整合到电子邮件服务提供商处。 设置一 [!UICONTROL Data Export Control] 个值，以确保组织中的任何人都不会意外激活此数据。
-* 开始使用 [基于角色的访问控制](../../features/administration/administration-overview.md) ，以确保正确的团队可以访问预期的数据。
-* 请考虑适 [当的数据保](../../faq/faq-privacy.md#data-retention-faq) 留期。
-* 查看身份联系和隐私政策以及法律要求，了解何时何地将身份集合绑定在一起；通过Audience Manager的Profile Merge Rules(配置文件合并规 [则)进行适当的使用](../../features/profile-merge-rules/merge-rules-overview.md)。
+* 查看您的营销团队用于在 Audience Manager 中标识用户的各种客户 ID，以及存储这些客户 ID 的数据源。这将简化请求（如删除或访问）流程，因为某些数据类型在摄取到 Audience Manager 之前将由您的团队进行哈希处理。
+* IDFA/GAID 移动设备 ID 可用于 Audience Manager 中的多个用例。如果您使用的是 Adobe Mobile SDK，请确保一起提交 Experience Cloud ID (MID) 和 IDFA/GAID，以确保 GDPR 响应是完整的。
+* 随着个人数据的定义越来越广泛，IP 地址可能会被视为您所在区域的个人数据。主动联系 Adobe 咨询团队，以模糊处理 IP 地址的最后八位字节。
+* 确定验证/身份验证策略和流程，以在数据主体提出 GDPR 请求时确认其身份。
+* 考虑使用[数据导出控制](../../features/data-export-controls.md)以阻止受众激活个人数据存储技术。例如，具有第三方数据的区段不应整合到电子邮件服务提供程序中。设置 [!UICONTROL Data Export Control] 以确保贵组织中的任何人都不会意外激活此数据。
+* 开始利用[基于角色的访问控制](../../features/administration/administration-overview.md)，确保相应的团队能够访问预期的数据。
+* 考虑为数据设置适当的[保留期](../../faq/faq-privacy.md#data-retention-faq)。
+* 查看身份链接和隐私政策及法律要求，了解何时何地可将身份集合绑定在一起；可通过 Audience Manager 的[配置文件合并规则](../../features/profile-merge-rules/merge-rules-overview.md)合理使用。
 
-## 组织就绪性：建立业务流程
+## 组织准备：建立业务流程
 
-* 确定接收／响应数据主体请求的流程。 考虑构建一个自动化工具，将请求提交到Audience Manager。
-* 在您的DMP卓越中心内指定一个隐私联系人。 将贵组织的隐私联系人与您的Audience manager产品使用团队联系，了解您如何管理输入ID要求。
-* 在与数据主体共享之前进行数据审阅。 记录您所执行的步骤，以帮助您建立责任。
+* 确定接收/响应数据主体请求的流程。考虑构建一个自动化工具，用于将请求提交给 Audience Manager。
+* 在您的 DMP 卓越中心内指定一个隐私联系人。将贵组织的隐私联系人与 Audience Manager 产品使用团队联系起来，了解如何管理输入 ID 要求。
+* 在与数据主体共享数据之前，先对数据进行审查。记录实施的各个步骤，帮助您建立问责制。
