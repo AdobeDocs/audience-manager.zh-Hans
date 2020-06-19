@@ -1,24 +1,24 @@
 ---
-description: 本页概述了合作伙伴在信息可用时直接提供的信息，以及与您的Audience Manager实践相关的任何含义。 对进行这些更新的合作伙伴来说，关键影响在于2018年5月25日生效的GDPR（一般数据保护规定）和新的IAB GDPR透明度与同意框架（IAB框架）。
-seo-description: 本页概述了合作伙伴在信息可用时直接提供的信息，以及与您的Audience Manager实践相关的任何含义。 对进行这些更新的合作伙伴来说，关键影响在于2018年5月25日生效的GDPR（一般数据保护规定）和新的IAB GDPR透明度与同意框架（IAB框架）。
-seo-title: 目的地的GDPR考虑事项
+description: 本页概述由我们的合作伙伴在发布更新信息之后直接向我们提供的相关信息，以及这些更新对 Audience Manager 实践所造成的影响。合作伙伴之所以进行这些更新，主要是因为 2018 年 5 月 25 日生效的 GDPR（《通用数据保护条例》）和最新采用的 IAB GDPR 透明度与同意框架（简称“IAB 框架”）。
+seo-description: 本页概述由我们的合作伙伴在发布更新信息之后直接向我们提供的相关信息，以及这些更新对 Audience Manager 实践所造成的影响。合作伙伴之所以进行这些更新，主要是因为 2018 年 5 月 25 日生效的 GDPR（《通用数据保护条例》）和最新采用的 IAB GDPR 透明度与同意框架（简称“IAB 框架”）。
+seo-title: 与目标相关的 GDPR 注意事项
 solution: Audience Manager
-title: 目的地的GDPR考虑事项
+title: 与目标相关的 GDPR 注意事项
 uuid: e8a40060-086c-4f03-b48c-9c903acb7891
 translation-type: tm+mt
 source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 0%
+ht-degree: 97%
 
 ---
 
 
-# 目的地的GDPR考虑事项{#gdpr-considerations-for-destinations}
+# 与目标相关的 GDPR 注意事项{#gdpr-considerations-for-destinations}
 
-本页概述了合作伙伴在信息可用时直接提供的信息，以及与您的Audience Manager实践相关的任何含义。 对进行这些更新的合作伙伴来说，关键影响在于2018年5月25日生效的GDPR（一般数据保护规定）和新的IAB GDPR透明度与同意框架（IAB框架）。
+本页概述由我们的合作伙伴在发布更新信息之后直接向我们提供的相关信息，以及这些更新对 Audience Manager 实践所造成的影响。合作伙伴之所以进行这些更新，主要是因为 2018 年 5 月 25 日生效的 GDPR（《通用数据保护条例》）和最新采用的 IAB GDPR 透明度与同意框架（简称“IAB 框架”）。
 
-Adobe合作伙伴拥有其业务流程，并可能决定不时更新其与Audience Manager的集成要求。 我们积极与Audience Manager伙伴生态系统合作，令客户获悉变化。
+Adobe 合作伙伴拥有自己的业务流程，并可能会决定不时地更新与 Audience Manager 的集成需求。为此，我们一直积极与 Audience Manager 合作伙伴生态系统合作，以便让客户了解所发生的变化。
 
 <!-- ## Audience Manager Partner Updates - ID Syncs {#partner-updates-id-syncs}
 
@@ -56,8 +56,8 @@ Some partners, as listed in the table below, have changed their integration requ
  </tbody> 
 </table> -->
 
-## Audience Manager用户界面更新- Yahoo/Aoth/DataX集成 {#ui-update}
+## Audience Manager User Interface Update - Yahoo/Oath/DataX Integration {#ui-update}
 
-除了上述对IAB框架的更新，Yahoo/Oath/DataX还为其分类和受众API **添加了****新参数gdpr和** gdpr_mode。 其参数告知Yahoo/Oath/DataX他们有权作为数据处理者或作为数据管理者处理特定段。 因此，将Audience Manager段发送到Yahoo/Oath/DataX目标的客户必须根据他们与Aoth的协议指定相应的参数（处理器或控制器）。
+除了上述 IAB 框架更新之外，Yahoo/Oath/DataX 还向其分类和受众 API 中添加了两个新参数，即 **gdpr** 和 **gdpr_mode**。这两个参数可告知 Yahoo/Oath/DataX 他们有权作为数据处理者或数据控制者处理特定区段。因此，Audience Manager 客户在将区段发送到 Yahoo/Oath/DataX 目标时，必须根据其与 Oath 的协议指定相应的参数（处理者或控制者）。
 
-请联系您的顾问或客户服务中心以设置正确的参数。 除非我们收到请求此更新的书面通信，否则Adobe不能代表客户进行此更新。 请联系您的Yahoo/Oath/DataX代表，了解这些参数的完整定义。
+请联系您的顾问或客户关怀团队以设置正确的参数。除非收到请求进行此更新的书面信函，否则 Adobe 不能代表客户进行此更新。请联系您的 Yahoo/Oath/DataX 代表，了解这两个参数的完整定义。
