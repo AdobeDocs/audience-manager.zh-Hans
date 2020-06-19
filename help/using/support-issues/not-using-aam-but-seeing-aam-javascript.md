@@ -1,25 +1,28 @@
 ---
-description: 我们不使用受众管理器，但在Javascript调试器中看到受众管理器Javascript调用——原因何在？
-seo-description: 我们没有使用，但在Javascript调试器中看到受众管理器Javascript调用——原因何在？
-seo-title: 我们不使用受众管理器，但在Javascript调试器中看到受众管理器Javascript调用——原因何在？
+description: 我们未使用 Audience Manager，但却在 Javascript 调试器中看到 Audience Manager Javascript 调用，这是为什么？
+seo-description: 我们未使用 Audience Manager，但却在 Javascript 调试器中看到 Audience Manager Javascript 调用，这是为什么？
+seo-title: 我们未使用 Audience Manager，但却在 Javascript 调试器中看到 Audience Manager Javascript 调用，这是为什么？
 solution: Audience Manager
-title: 我们不使用受众管理器，但在Javascript调试器中看到受众管理器Javascript调用——原因何在？
-translation-type: tm+mt
+title: 我们未使用 Audience Manager，但却在 Javascript 调试器中看到 Audience Manager Javascript 调用，这是为什么？
+translation-type: ht
 source-git-commit: 1f5c1a91f0b5df5291d3143d297e25128b5bb716
+workflow-type: ht
+source-wordcount: '188'
+ht-degree: 100%
 
 ---
 
 
-# 我们不是受众经理客户，但可以在我们的站点上查看受众经理Javascript调用
+# 我们不是 Audience Manager 客户，但却在我们的网站上看到 Audience Manager Javascript 调用
 
 ## 问题
 
-我们不使用Adobe受众管理器，但在Javascript调试器中看到受众管理器Javascript调用。
+我们未使用 Adobe Audience Manager，但却在 Javascript 调试器中看到 Audience Manager Javascript 调用。
 
-为什么会这样？
+为什么会出现这种情况？
 
 ## 回答
 
-您可能正在您的财 [产上运行Experience Cloud Identity](https://docs.adobe.com/content/help/en/id-service/using/home.html) Service。 如果您是受众管理器，则此受众管理器引用不一定引用运行的属性。 而是意味着受众管理器为此服务提供动力。
+您可能正在对资产运行 [Experience Cloud Identity Service](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html)。如果是这样的话，那么看到 Audience Manager Javascript 调用不一定意味着您正在运行 Audience Manager，而是意味着 Audience Manager 正在为 Identity Service 提供支持。
 
-受众管理器服务器调用通常用于同 [步客户ID](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/setcustomerids.html)。
+Audience Manager 服务器调用通常用于[同步客户 ID](https://docs.adobe.com/content/help/zh-Hans/id-service/using/id-service-api/methods/setcustomerids.html)。
