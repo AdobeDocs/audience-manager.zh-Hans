@@ -1,6 +1,6 @@
 ---
-description: 与报告相关的常见问题。
-seo-description: 与报告相关的常见问题。
+description: 常见报表相关问题。
+seo-description: 常见报表相关问题。
 seo-title: 报表常见问题解答
 solution: Audience Manager
 title: 报表常见问题解答
@@ -9,14 +9,14 @@ translation-type: tm+mt
 source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
 # 报表常见问题解答{#reporting-faq}
 
-与报告相关的常见问题。
+常见报表相关问题。
 
 <br> 
 
@@ -26,34 +26,34 @@ faq_reports.xml
 
  -->
 
-**对于新的已载入特征，为什[!UICONTROL Trait Graph]么有时显示低于预期数或0?**
+**对于新载入的特征，为何[!UICONTROL Trait Graph]显示的数量有时低于预期值或为 0？**
 
-有时，上传特征后， [!UICONTROL Trait Graph] 不会显示任何结果或显示低于预期的数字。 当我们收到的数据量如此之大，以至于入站处理作业直到该天的报告截止日期之后才能完成接收此信息时，会发生这种情况。
+有时，上传特征后，[!UICONTROL Trait Graph] 不会显示任何结果或显示的数量低于预期值。当我们收到的数据量太大，以至于入站处理作业要到当天的报告截止时间之后才能摄取完此信息时，会发生这种情况。
 
-结果，该数据被延迟地发送到报告系统，并且不会在用于绘制该数据的1天报告间隔中出现 [!UICONTROL Trait Graph]。 但是，您可以在7天、14天、30天和60天报告间隔内视图此数据， [在次](../reporting/trend-reports.md#trend-report-overview) 日 [的趋势](../reporting/general-reports.md#general-reports-overview) 报告或一般报告中。
-
-<br> 
-
-**报表中缺少某些[!UICONTROL Overlap]区段。 他们在哪？**
-
-为了减少计算需求，这些报告会忽略统计上微不足道的数据。 您的区段不会缺失，它们会被丢弃，因为它们不会产生有意义的结果或您可以目标的有用用户池。 另请参阅：
-
-* [报告和数据采样方法](../reporting/report-sampling.md)
-* [对重叠和一般报告中的唯一用户进行计数](../reporting/unique-user-counts.md)。
+在这种情况下，此数据会被延迟发送到报告系统，并且不会在报告时间间隔为 1 天（绘制 [!UICONTROL Trait Graph] 时使用的报告时间间隔是 1 天）的报表中显示。但是，您可以于次日在报告时间间隔为 7 天、14 天、30 天和 60 天的[趋势报表](../reporting/trend-reports.md#trend-report-overview)或[常规报表](../reporting/general-reports.md#general-reports-overview)中查看此数据。
 
 <br> 
 
-**如果我运行电子邮件营销活动，如何确定重定向用户是从该活动还是从其他来源来到我的网站？**
+**[!UICONTROL Overlap]报表中缺少某些区段。这些区段在何处？**
 
-在要监视的站点部分的URL后面附加特定于活动的查询字符串。 然后，设置特征规则以捕获此变量。 例如，如果URL以这样的活动ID传递 `www.test123.com/electronics?campaign=123`，则创建一个特征规则，用一个特征规则从变量中捕获该，该特征规则 `h_referer` 查找类似标题的特征 `h_referer = 'campaign=123'`)。
+为了帮助减少计算需求，这些报表会在结果中忽略统计上没有显著意义的数据。所以，您的区段并不是缺失，而是被丢弃，因为它们不会产生有意义的结果，或可定位的有用用户池。另请参阅：
+
+* [报表和数据取样方法](../reporting/report-sampling.md)
+* [对重叠报表和常规报表中的独特用户进行计数](../reporting/unique-user-counts.md)。
 
 <br> 
 
-**实时和总细分人口计数之间有何差异？**
+**在运行电子邮件营销活动时，如何确定用户是通过该活动还是其他来源重定向到我的网站？**
 
-* **实时：** 在设置的时间段内属于区段并且在您的属性上处于活动状态的唯一用户数(即 [!DNL Audience Manager] ，该用户在特定时间段内必须已记录活动)。
+在要监视的网站部分的 URL 后面附加一个特定于促销活动的查询字符串。然后，设置一个特征规则以捕获此变量。例如，如果 URL 以 `www.test123.com/electronics?campaign=123` 形式传递促销活动 ID，则可以创建一个特征规则以从 `h_referer` 变量中捕获相应数据，该特征规则将查找类似于 `h_referer = 'campaign=123'` 的标头。
 
-* **细分总人口：** 该区段中当前已分类的所有用户的汇总。
+<br> 
+
+**实时区段人口计数和总区段人口计数之间有何差异？**
+
+* **实时：**&#x200B;在设定的时间段内属于相应区段并且在您的资产上处于活动状态（即 [!DNL Audience Manager] 在特定时间段内必须记录到该用户的活动）的独特用户数。
+
+* **总区段人口：**&#x200B;当前被分类到相应区段的所有用户总数。
 
 <!-- 
 
@@ -64,9 +64,9 @@ faq_reports.xml
 
 <br> 
 
-**我有一段只包含一个特质。 当我查看报告指标时，他们的数量不匹配。 为什么？**
+**我的一个区段只包含一个特征。但是，当我查看报表量度时，特征数量不匹配。为什么会出现这种情况？**
 
-See [Trait and Segment Population Data in Segment Builder](../features/segments/segment-builder-data.md).
+请参阅[区段生成器中的特征和区段人口数据](../features/segments/segment-builder-data.md)。
 
 <br> 
 
@@ -81,31 +81,31 @@ See [Trait and Segment Population Data in Segment Builder](../features/segments/
 
  -->
 
-**如果入站文件，则“入站”收据会显示大量成功处理的记录，但报告显示的数量要低得多。 为什么？**
+**我接收了一个入站文件，“入站”接收情况显示成功处理的记录数较高，但报表显示的数量要低得多。为什么会出现这种情况？**
 
-在后端，已载入的数据仅会附加到在AAM中仍处于活动状态的用户(用户在过去120天 [!DNL DCS] 中必须具有最近活动)。 因此，如果您为已过期的用户提供数据 [!DNL Audience Manager], [!UICONTROL Inbound] 则可能会告诉您已载入了特定数量的用户记录，但如果这些用户没有任何最近活动，则此数据将在到达我们的报告时 [!UICONTROL User Profile Store] 丢弃，将显示。
-
-<br> 
-
-**为什么我的跨设备已载入特征的特征单位比已载入记录的总数高得多？**
-
-如果您为锁定了客户ID的跨设备数据提供者安装了文件，Audience Manager将执行查找以获取与每个已载入的客户ID关联的所有设备ID。 然后，Audience Manager将载入的特征分配给与客户ID关联的设备ID。
-
-例如，假定您已载入100条记录。 平均来说，对于每个客户ID,AAM都关联了三个设备ID。 因此，已载入的特征被分配给300个设备ID。
-
-单个跨设备客户ID可以与多个设备ID关联的原因有二：
-
-* 用户正从多台计算机／浏览器登录到同一跨设备帐户。
-* 用户正在清除其cookie。 注意： 在用户120天不活动后，将删除“已放弃”cookie。
+在后端，已载入的数据仅会附加到在 AAM 中仍处于活动状态的用户（用户在过去 120 天内必须开展过 [!DNL DCS] 活动）。因此，如果您为 [!DNL Audience Manager] 中已过期的用户载入数据，[!UICONTROL Inbound] 可能会告诉您已载入特定数量的用户记录，但是如果这些用户最近没有任何活动，则此数据在到达 [!UICONTROL User Profile Store] 时将被丢弃，且我们的报表会反映这一点。
 
 <br> 
 
-**为什么我[!UICONTROL Total Trait Realizations]的个性总是0?**
+**对于跨设备载入的特征，为何特征独特计数要远远大于载入的总记录数？**
 
-[!UICONTROL Total Trait Realizations] 与页面加载相对应。 [!UICONTROL Total Trait Realizations] 提供该特定特征实时触发的次数。 此数字仅针对基于规则的特征计算。 已载入的特征 [!UICONTROL Total Trait Realizations] 始终显示为0。
+如果您载入跨设备数据提供商的无客户 ID 键的文件，则 Audience Manager 将执行查找以获取与每个已载入的客户 ID 相关联的所有设备 ID。Audience Manager 随后会将载入的特征分配给与客户 ID 关联的设备 ID。
+
+例如，假定您已载入 100 条记录。对于每个客户 ID，AAM 一般都关联了三个设备 ID。因此，已载入的特征会被分配给 300 个设备 ID。
+
+单个跨设备客户 ID 可以与多个设备 ID 相关联的原因有两点：
+
+* 用户正从多个计算机/浏览器登录同一跨设备帐户。
+* 用户正在清除其 Cookie。注意：如果用户在 120 天内一直未活动，则将删除“已被丢弃”的 Cookie。
 
 <br> 
 
-**我创建了一个特[!UICONTROL Trait Graph]征，显示的数[!UICONTROL Unique Trait Realizations]量比[!UICONTROL Total Trait Population]。 这正常吗？**
+**对于已载入的特征，[!UICONTROL Total Trait Realizations]为何总是 0？**
 
-您之所以看到这一点， [!UICONTROL Unique Trait Realizations] 是因为它们是实时指标，但是我们计算报告的工作 [!UICONTROL Total Trait Population] 并不是实时的。 在 [!UICONTROL Total Trait Population] 两天内， [!UICONTROL Unique Trait Realizations] 应该比大。
+[!UICONTROL Total Trait Realizations] 与页面加载次数相对应。[!UICONTROL Total Trait Realizations] 提供特定特征实时触发的次数。此数值的计算范围仅限于基于规则的特征。对于已载入的特征，[!UICONTROL Total Trait Realizations] 始终显示为 0。
+
+<br> 
+
+**我创建了一个特征，但[!UICONTROL Trait Graph]显示的[!UICONTROL Unique Trait Realizations]数大于[!UICONTROL Total Trait Population]。这种情况正常吗？**
+
+您之所以会看到这种情况，是因为 [!UICONTROL Unique Trait Realizations] 属于实时量度，而为计算 [!UICONTROL Total Trait Population] 而执行的报告作业并不是实时的。因此，[!UICONTROL Total Trait Population] 应该会有几天大于 [!UICONTROL Unique Trait Realizations]。
