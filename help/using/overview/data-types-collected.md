@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 收集的数据类型
 uuid: a2ddf470-32e6-41ec-a1d7-a6232ef084b9
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 78%
+source-wordcount: '867'
+ht-degree: 72%
 
 ---
 
@@ -30,12 +30,6 @@ ht-degree: 78%
 
 First-party data collection is a main [!DNL Audience Manager] feature. 此核心能力可满足我们客户（出版商或广告商）的需求，这些客户希望将专有数据用作其营销项目的基石，或针对其他数据源进行定位和建模。
 
-<!-- 
-
-c_1st_party_data.xml
-
- -->
-
 [!DNL Audience Manager] 可与客户一起了解他们的数据策略，然后将该策略反映到自定义数据收集计划。我们的合作伙伴解决方案团队可与您合作，共同评估网站、原始数据信号以及您网站上的其他用户交互。利用这些信息，我们将帮助您创建量身定制的数据收集策略，从库存的各个页面捕获用户级数据信号。捕获的数据会存储并映射回预定义的分类，随着业务需求的变化，该分类会随时更新。
 
 以下示例说明如何从示例购物页面捕获潜在数据元素。
@@ -47,7 +41,7 @@ c_1st_party_data.xml
 | 1 | **性别**。购物者的名字通常表明其性别。在我们的示例中，购物者的名字是 Mary，因此我们知道购物者是一位女士。Audience Manager 从不会存储姓名。 |
 | 2 | **兴趣**。购物车中的物品可能表明客户的各种兴趣。以我们的示例来说，Mary 在健身器材上花了很多钱。 |
 | 3 | **住宅类型**。根据送货地址和/或帐单地址，您可以推断 Mary 是为自己还是为公司购买健身器材。 |
-| 4 | **位置**。[!DNL ZIP] 在确定位置时，代码比IP地址更可靠。 |
+| 4 | **位置**。[!DNL ZIP] 代码比地址 [!DNL IP] 更可靠地指明位置。 |
 | 5 | **促销相关性**。如果购物者使用促销代码或礼品卡，则表明他们可能是搜罗最便宜商品的折扣族。 |
 | 6 | **消费能力**。Price data correlated with [!DNL ZIP+4] codes indicate spending power of a given location. |
 
@@ -57,12 +51,6 @@ After the raw data is collected, it gets mapped back to customer-defined traits 
 
 第二方数据来自战略业务合作伙伴（它不是出版商数据）。这些信息的收集和管理与第一方数据相同。
 
-<!-- 
-
-c_2nd_party_data.xml
-
- -->
-
 在第二方数据场景中，广告商会向出版商发送自己的数据资产，以便将该信息与出版商的数据相结合，然后执行更具针对性的广告计划。此外，出版商可以与广告商合作，扩大其受众池。In most cases, these arrangements involve contractual relationships limited to putting the [!DNL Audience Manager] container tag on the partner site to facilitate data collection and sharing.
 
 在第二方数据收集和再营销的示例中，服装零售商收集其产品的数据，然后与主要合作伙伴共享此信息。In this case, the retailed could serve different ads across an [!DNL Audience Manager] partner site for consumers who chose various jacket colors and sizes.
@@ -71,15 +59,9 @@ c_2nd_party_data.xml
 
 ## 第三方数据收集 {#third-party-data}
 
-第三方数据是 Audience Manager 以外的供应商收集和共享的信息。
+Third-party data is information collected and shared by vendors outside of [!DNL Audience Manager].
 
-<!-- 
-
-c_3rd_party_data.xml
-
- -->
-
-第三方数据可用于确定现有数据区段（例如，年龄、家庭收入等）的资格，提供有需要但不能以其他方式获得的数据，或用于针对第一方和第二方数据的已知用户群进行相似人群拓展建模。[!DNL Audience Manager] 可与许多第三方数据提供商合作，帮助您了解这些数据提供商收集的数据类型，以便您能够与每个提供商达成正确的战略交易。
+Third-party data can be used to qualify existing data [!UICONTROL segments] (for example, age, household income, and so forth), provide data that is in demand but not otherwise available, or be used in lookalike modeling against a known user base from first-party and second-party data. [!DNL Audience Manager] 可与许多第三方数据提供商合作，帮助您了解这些数据提供商收集的数据类型，以便您能够与每个提供商达成正确的战略交易。
 
 >[!NOTE]
 >
