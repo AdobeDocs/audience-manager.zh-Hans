@@ -6,40 +6,31 @@ solution: Audience Manager
 title: 区段生成器中的特征和区段人口数据
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
 translation-type: tm+mt
-source-git-commit: 63d89cac2f18538f56e2f6d0f64257ea9b5788bd
+source-git-commit: 4d4915b9a99ddcdf321d9f4970321f5f54e057ea
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 3%
+source-wordcount: '1250'
+ht-degree: 2%
 
 ---
 
 
-# 区段生成器中的特征和区段人口数据 {#trait-and-segment-population-data-in-segment-builder}
+# [!UICONTROL Trait] 和 [!UICONTROL Segment] 人口数据 [!UICONTROL Segment Builder] {#trait-and-segment-population-data-in-segment-builder}
 
-添加和删除中的特 [!UICONTROL Segment Builder] 征，以查看实际特征群体以及实际和估计的细分群体数据。 估计的人口大小数据可帮助您为活动构建正确的细分。
+添加和删 [!UICONTROL traits] 除， [!UICONTROL Segment Builder] 以查看实际 [!UICONTROL trait] 人群以及实际和估计的细分群体数据。 估计的人口大小数据可帮助您为活动构建正确的细分。
 
-## 特征填充数据 {#trait-population-data}
+## [!UICONTROL Trait] 人口数据 {#trait-population-data}
 
-[!UICONTROL Segment Builder] 显示 [!UICONTROL Total Trait Population] 向区段添加特征的最后一天。 此数据显示在部分中选定特征周围的蓝色字 [!UICONTROL Basic View] 段中。
+[!UICONTROL Segment Builder] 显示您 [!UICONTROL Total Trait Population] 在向区段中添加内容的最 [!UICONTROL trait] 后一天的信息。 此数据显示在您所选部分周围的 [!UICONTROL trait] 蓝色 [!UICONTROL Basic View] 字段中。
 
 ![](assets/trait-size.png)
 
-下表定义特征填充度量
+下表定义特征填充度量：
 
-<table id="table_9D837CF9ACA04D04BEE5925EC0B4A5D2"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 量度 </th> 
-   <th colname="col2" class="entry"> 描述 </th>
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="wintitle"> 特征总数</span> </p> </td>
-   <td colname="col2"> <p>在其用户档案中具有所选特征的唯一ID的数量。 </p> </td>
-  </tr> 
- </tbody> 
-</table>
+
+| 量度 | 描述 |
+---------|----------|
+| [!UICONTROL Total Trait Population] | 在其用户档案中具有所选特征的唯一ID的数量。 |
+
 
 ## 计算实部和估计部分总体 {#calculating-real-estimated-populations}
 
@@ -98,9 +89,9 @@ ht-degree: 3%
 
 [!UICONTROL Profile Merge Rules] 影响实时和总人口数。 这些总数因段是否属 [!UICONTROL Profile Merge Rule] 于使用设备图形选项而异。 See also, [Profile Merge Rule Options Defined](../../features/profile-merge-rules/merge-rule-definitions.md).
 
-### 没有设备图选项的合并规则的细分填充数据
+### 没有 [!UICONTROL Merge Rules] [!UICONTROL Device Graph Option]
 
-下表定义了在没有设备图表选项的情况下创建的区段使用您的区段时 [!UICONTROL Profile Merge Rule] 的实际实时和总填充量度。 这些是设备选项设 **[!UICONTROL No Device Options]** 置和 **[!UICONTROL Current Device Proflie]**。
+下表定义了当您的区段被创建者使用时，无选项的实际实时和 [!UICONTROL Profile Merge Rule] 总填充量 [!UICONTROL device graph] 度。 这些是设备选项设 **[!UICONTROL No Device Options]** 置和 **[!UICONTROL Current Device Proflie]**。
 
 <table id="table_A18C973855DB46A0B39B81F32E0E7540"> 
  <thead> 
@@ -125,36 +116,23 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-### 使用设备图选项合并规则的细分填充数据
+### 使用选项细分 [!UICONTROL Merge Rules] 填充数 [!UICONTROL Device Graph] 据
 
-下表定义了使用设备图表选项创建的区段使用时的实际实时和 [!UICONTROL Profile Merge Rule] 总填充量度。 这些是可供您选择的设 [!UICONTROL Profile Link Device Graph]备选 [!DNL Adobe] 项设置、设备图形和其他第三方设备图形选项。
+下表定义了使用某个选项创建的区段使用您的区段时的实际实时和总 [!UICONTROL Profile Merge Rule] 填充量 [!DNL device graph] 度。 这些是您可用的设备 [!UICONTROL Profile Link Device Graph]选项 [!DNL Adobe] 、 [!DNL device graph]和其他第 [!DNL device graph] 三方选项的设置。
 
-<table id="table_157EC6E5B5C44EB899854CA10B090F60"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 量度 </th> 
-   <th colname="col2" class="entry"> 描述 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="wintitle"> 实时人口（现有）</span> </p> </td> 
-   <td colname="col2"> <p>当前用户档案与设备图所连接的多达100个其他设备用户档案合并时，实时查看的设备的实际数量包含Audience Manager所看到的区段的特 <span class="keyword"> 征</span>。 </p> </td>
-  </tr>
-  <tr> 
-   <td colname="col1"> <p> <span class="wintitle"> 总人口（现有）</span> </p> </td> 
-   <td colname="col2"> <p>具有用户档案的设备总数，当与通过设备图形连接的多达100个其他设备用户档案合并时，这些设备均符合该段的条件。 </p> </td>
-  </tr>
- </tbody>
-</table>
+
+| 列A | 列B |
+---------|----------|
+| [!UICONTROL Real-Time Population (Existing) ] | 当前用户档案与设备图所连接的多达100个其他设备用户档案合并时，实时查看的设备的实际数量包含Audience Manager所看到的区段的特征。 |
+| [!UICONTROL Total Population (Existing)] | 具有用户档案的设备总数，当与通过设备图形连接的多达100个其他设备用户档案合并时，这些设备均符合该段的条件。 |
 
 ### 在估计段总体时由于最近和频率表达式的限制
 
 [!UICONTROL Segment Builder] 支持对最多包含4个最近和频率表达式的细分规则进行细分大小估计。 在构建段规则时选择4个以上的最近和频率表达式会导致在估计种群时段估计器显示错误。
 
-### 在估计段总量时合并规则的限制
+### 在估计段总 [!UICONTROL Merge Rules] 体时的限制
 
-目前，由于我们的细分大小估计器未考虑用户档案合并规则，因此存在已知限制。 例如，使用“无验证用户档案+当前设 **备用户档案”合并规则查**[看区段](../../features/profile-merge-rules/merge-rule-definitions.md)。 由于我们目前计算段估计数的方式，估计的总体将包括经过身份验证的用户档案。 但是，现有段群将正确忽略经过身份验证的用户档案。
+目前，存在已知限制，因为我们的细分大小估计器不考虑 [!UICONTROL profile merge rules]。 例如，使用合并规则查 **[!UICONTROL No Authenticated Profile + Current Device Profile]**&#x200B;看[区段](../../features/profile-merge-rules/merge-rule-definitions.md)。 由于我们目前计算段估计数的方式，估计的总体将包括经过身份验证的用户档案。 但是，现有段群将正确忽略经过身份验证的用户档案。
 
 >[!MORELIKETHIS]
 >
