@@ -1,19 +1,22 @@
 ---
-description: “受众优化”报告使用数据可视化方法返回Audience manager帐户中目标的相关信息。 在每个报告中，您几乎可以单击任何数据点来返回有关该项目的详细信息。 这些受众优化洞察可应用于广告和出版渠道中的多个使用案例，但默认情况下不可用。 请联系Audience manager顾问，开始使用。
-seo-description: “受众优化”报告使用数据可视化方法返回Audience manager帐户中目标的相关信息。 在每个报告中，您几乎可以单击任何数据点来返回有关该项目的详细信息。 这些受众优化洞察可应用于广告和出版渠道中的多个使用案例，但默认情况下不可用。 请联系Audience manager顾问，开始使用。
-seo-title: 受众优化报告
+description: 受众优化报告使用数据可视化方法返回Audience Manager帐户中目标的相关信息。 在每个报告中，您几乎可以单击任何数据点，返回有关该项目的详细信息。 这些受众优化洞察可应用于广告和出版渠道的多个用例，但默认情况下不可用。 请与Audience Manager顾问联系以开始。
+seo-description: 受众优化报告使用数据可视化方法返回Audience Manager帐户中目标的相关信息。 在每个报告中，您几乎可以单击任何数据点，返回有关该项目的详细信息。 这些受众优化洞察可应用于广告和出版渠道的多个用例，但默认情况下不可用。 请与Audience Manager顾问联系以开始。
+seo-title: Audience Optimization 报表
 solution: Audience Manager
-title: 受众优化报告
+title: Audience Optimization 报表
 uuid: b06efa28-f56a-4b72-978e-e0c067f54798
 translation-type: tm+mt
-source-git-commit: 1e38d1bc12eb19e33ba02fc2560eaf989f420168
+source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 7%
 
 ---
 
 
-# 受众优化报告{#audience-optimization-reports}
+# [!UICONTROL Audience Optimization Reports] {#audience-optimization-reports}
 
-“受众优化”报告使用数据可视化方法返回Audience manager帐户中目标的相关信息。 在每个报告中，您几乎可以单击任何数据点来返回有关该项目的详细信息。 这些受众优化洞察可应用于广告和出版渠道中的多个使用案例，但默认情况下不可用。 请联系Audience manager顾问，开始使用。
+使用 [!UICONTROL Audience Optimization Reports] 数据可视化方法返回Audience Manager帐户 [!UICONTROL destinations] 中的信息。 在每个报告中，您几乎可以单击任何数据点，返回有关该项目的详细信息。 这些 [!UICONTROL Audience Optimization] 洞察可以应用于广告和出版渠道中的多个使用案例，但默认情况下不可用。 请与Audience Manager顾问联系以开始。
 
-+ [面向广告商的受众优化概述](aor-advertisers/aor-advertisers.md)
-+ [发布者受众优化概述](aor-publishers/aor-publishers.md)
++ [适用于广告商的 Audience Optimization 概述](aor-advertisers/aor-advertisers.md)
++ [适用于出版商的 Audience Optimization 概述](aor-publishers/aor-publishers.md)
