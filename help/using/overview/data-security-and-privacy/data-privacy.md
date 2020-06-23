@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 数据隐私概述
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 83%
+source-wordcount: '485'
+ht-degree: 78%
 
 ---
 
@@ -27,13 +27,13 @@ The Data Privacy documentation describes [!DNL Audience Manager] integration and
 
 In our continuing support of this model, [!DNL Audience Manager] remains committed to providing you with the tools to help support your ability to provide  transparency and control to your consumers, while delivering personalized ads subject to the [Online Behavioral Advertising (OBA) Self-Regulatory Principles](https://www.iab.com/news/self-regulatory-principles-for-online-behavioral-advertising/).
 
-## GDPR {#gdpr}
+## [!DNL GDPR] {#gdpr}
 
-[《通用数据保护条例》(GDPR)](https://eugdpr.org/) 为欧盟成员国引入了几项新的数据隐私权，其中包括&#x200B;**访问权**&#x200B;和&#x200B;**被遗忘权**。这意味着被企业收集了个人数据的任何欧盟公民都可以随时请求访问或删除其数据。如果不能遵守这些要求，贵组织将面临数百万美元的罚款。
+[《通用数据保护条例》(GDPR)](https://eugdpr.org/) 为欧盟成员国引入了几项新的数据隐私权，其中包括&#x200B;**访问权**&#x200B;和&#x200B;**被遗忘权**。This means that any [!DNL EU] citizen whose personal data has been collected by your business can request to access or delete their data at any time. 如果不能遵守这些要求，贵组织将面临数百万美元的罚款。
 
 To comply with [!DNL GDPR], [!DNL Audience Manager] supports data access and delete [requests](data-privacy-requests.md).
 
-## CCPA {#ccpa}
+## [!DNL CCPA] {#ccpa}
 
 [《加州消费者隐私法案》(CCPA)](https://www.caprivacy.org/about) 已于 2020 年 1 月 1 日生效，它为加利福尼亚州居民提供了有关其个人信息的新权利，并对某些在加利福尼亚州开展业务的实体施加了数据保护责任。
 
