@@ -1,24 +1,22 @@
 ---
 description: 描述初始HTTP调用中使用的语法和参数，以在供应商和Audience Manager之间同步用户ID。 ID同步可在您将数据分类发送到Audience Manager后开始。
 seo-description: 描述初始HTTP调用中使用的语法和参数，以在供应商和Audience Manager之间同步用户ID。 ID同步可在您将数据分类发送到Audience Manager后开始。
-seo-title: 入站数据传输的ID同步
+seo-title: 用于入站数据传输的 ID 同步
 solution: Audience Manager
-title: 入站数据传输的ID同步
+title: 用于入站数据传输的 ID 同步
 uuid: 037e74a6-acfd-4cef-b693-16b7aaa8e976
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 3%
+source-wordcount: '478'
+ht-degree: 7%
 
 ---
 
 
-# 入站数据传输的ID同步{#id-synchronization-for-inbound-data-transfers}
+# 用于入站数据传输的 ID 同步 {#id-synchronization-for-inbound-data-transfers}
 
 描述初始调用中使用的语法 `HTTP` 和参数，以在供应商和之间同步用户ID [!DNL Audience Manager]。 ID同步可在您将数据分类发送到之后开 [!DNL Audience Manager]始。
-
-<!-- c_id_sync_in.xml -->
 
 ID同步是入站异步数据传输过程中的第一步。 在此步骤中， [!DNL Audience Manager] 供应商将比较和匹配各自站点访客的ID。 例如，客 [!DNL Audience Manager] 户可能通过ID 123了解用户。 但是，您的数据合作伙伴可以识别此ID为456的用户。 同步过程允许 [!DNL Audience Manager] 和数据供应商协调这些不同的ID并标识其各自系统中的用户。 完成后， [!DNL Audience Manager] 您的第三方合作伙伴应为我们网络上看到的每个唯一用户提供相应的ID。
 
@@ -68,12 +66,12 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
   </tr> 
   <tr> 
    <td colname="col1"> <code><i>gdpr_consent=&lt;ENCODED STRING&gt;</i> </code> </td> 
-   <td colname="col2"> <p>可选。如果您使用IAB TCF的 <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager插件，请添加此参数。</a></p> <p><code>gdpr_consent</code> 是URL安全的基本64编码的GDPR同意字符串(请参 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> 阅IAB规范</a>)。 </p> <p> <b>注意：</b> 此参数只能与一起使用 <code>gdpr</code>。</p> </td> 
+   <td colname="col2"> <p>可选。如果您使用IAB TCF的 <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager插件，请添加此参数。</a></p> <p><code>gdpr_consent</code> is the URL-safe base64-encoded GDPR consent string (see <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB specification</a>). </p> <p> <b>注意：</b> 此参数只能与一起使用 <code>gdpr</code>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 声明的ID事件 {#declared-id-event}
+## [!UICONTROL Declared ID] 事件 {#declared-id-event}
 
 有关详细信息，请参 [阅声明的ID](../../../features/declared-ids.md)。
 
