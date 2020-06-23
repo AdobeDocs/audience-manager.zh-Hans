@@ -2,28 +2,26 @@
 description: 有关客户数据馈送(CDF)文件的基本信息以及如何开始的说明。 开始此处，如果您对接收CDF文件感兴趣或只想了解更多信息。
 keywords: second party data;2nd party;2nd party data;second party
 seo-description: 有关客户数据馈送(CDF)文件的基本信息以及如何开始的说明。 开始此处，如果您对接收CDF文件感兴趣或只想了解更多信息。
-seo-title: 客户数据馈送
+seo-title: 客户数据信息源
 solution: Audience Manager
-title: 客户数据馈送
+title: 客户数据信息源
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '1890'
-ht-degree: 2%
+source-wordcount: '1860'
+ht-degree: 4%
 
 ---
 
 
-# 客户数据馈送 {#customer-data-feeds}
+# [!UICONTROL Customer Data Feeds] {#customer-data-feeds}
 
 有关()文 [!UICONTROL Customer Data Feed] 件的[!UICONTROL CDF]基本信息以及如何入门的说明。 开始此处，如果您对接收文件感 [!UICONTROL CDF] 兴趣或只想了解更多信息。
 
 ## 文件内容和用途 {#file-contents-purpose}
 
-<!-- cdf-intro.xml -->
-
-文 [!UICONTROL CDF] 件包含事件调用()发 [!DNL Audience Manager] 送到我们服`/event`务器的相同数据。 这包括诸如用户ID、特征ID、段ID和事件调用捕获的所有其他参数等数据。 内部 [!DNL Audience Manager] 系统将事件数据处理为 [!UICONTROL CDF] 一个文件，其中内容组织为按设置顺序显示的字段。 [!DNL Audience Manager] 尝试每小时生 [!UICONTROL CDF] 成一个文件，并将它们存储在服务器上一个安全、特定于客户的存储 [!DNL Amazon S3] 桶中。 我们提供这些文件，以便您能够 [!DNL Audience Manager] 处理超出我们用户界面限制的数据。
+[!UICONTROL CDF] 文件包含的数据与 [!DNL Audience Manager] 事件调用 (`/event`) 发送到我们服务器的数据相同。This includes data like user IDs, [!UICONTROL trait IDs], [!UICONTROL segment IDs], and all the other parameters captured by an event call. 内部 [!DNL Audience Manager] 系统将事件数据处理为 [!UICONTROL CDF] 一个文件，其中内容组织为按设置顺序显示的字段。 [!DNL Audience Manager] 尝试每小时生 [!UICONTROL CDF] 成一个文件，并将它们存储在服务器上一个安全、特定于客户的存储 [!DNL Amazon S3] 桶中。 我们提供这些文件，以便您能够 [!DNL Audience Manager] 处理超出我们用户界面限制的数据。
 
 >[!NOTE]
 >
@@ -36,19 +34,17 @@ ht-degree: 2%
 * 设置您的 [!DNL Amazon S3] 存储桶。
 * 为文件存储存储 [!DNL S3] 桶提供只读身份验证凭据。 您将无法查看或访问属于其他客户的目录和文件。
 
-文件通知 [!UICONTROL CDF] 和文件在准备 [!DNL S3] 下载时将显示在存储桶中。 您负责从您分配的目录监视和下载文 [!DNL S3] 件。 请参 [阅客户数据馈送文件处理通知](#cdf-file-processing-notifications)。
+文件通知 [!UICONTROL CDF] 和文件在准备 [!DNL S3] 下载时将显示在存储桶中。 您负责从您分配的目录监视和下载文 [!DNL S3] 件。 请参阅[客户数据信息源文件处理通知](#cdf-file-processing-notifications)。
 
 ## 后续步骤 {#next-steps}
 
 以下部分和客户数 [据馈送常见问题解答](../faq/faq-cdf.md) ，可以帮助您更熟悉此服务。
 
-## 已定义客户数据馈送内容 {#cdf-defined}
+## [!UICONTROL Customer Data Feed] 内容已定义 {#cdf-defined}
 
 列表并按外观顺序定义文 [!UICONTROL CDF] 件中的数据元素和数组。 定义包括数据类型，但此信息不是文件的一 [!UICONTROL CDF] 部分。
 
 ## 定义 {#definitions}
-
-<!-- cdf-contents-defined.xml -->
 
 文 [!UICONTROL CDF] 件包括下面定义的部分或所有字段。 有关内部文件组织的信息，请参 [阅客户数据馈送文件结构](#cdf-file-structure)。
 
@@ -108,7 +104,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
-   <td colname="col3"> <p>分配给 <span class="keyword"> 站点</span> Experience Cloud的访客ID(MID)。 另请参阅 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies和AdobeExperience Platform身份服务</a>。 </p> </td> 
+   <td colname="col3"> <p>分配给 <span class="keyword"> 站点</span> Experience Cloud的访客ID(MID)。 另请参阅 <a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies和AdobeExperience Platform身份服务</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -123,13 +119,11 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## 客户数据馈送文件结构 {#cdf-file-structure}
+## [!UICONTROL Customer Data Feed] 文件结构 {#cdf-file-structure}
 
 列表并定义文件的数据结 [!UICONTROL CDF] 构。 这包括数据序列、字段分隔符和分隔符、数据文件映射和示例文件。
 
 ## 数据字段标识符和序列 {#identifiers-and-sequence}
-
-<!-- cdf-file-structure.xml -->
 
 [!UICONTROL CDF] 文件不包含标记的列或字段标题。 相反，文件 [!UICONTROL CDF] 定义具有非打印字符的字段和 [!DNL ASCII] 数组。 此外，文 [!UICONTROL CDF] 件按特定顺序列表每个字段和数组。 了解字段标识符和顺序将有助于您正确分析文件。
 
@@ -162,7 +156,7 @@ ht-degree: 2%
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">请求参数 </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referer </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP 地址 </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud设备ID（或MID）。 另请参阅 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform身份服务</a> </li> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud设备ID（或MID）。 See also, <a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Adobe Experience Platform Identity Service</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">所有细分 </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">所有特征 </li> 
      </ol> </p> <p>有关字段说明，请参 <a href="#cdf-defined"> 阅定义的客户数据馈送内容</a>。 </p> </td> 
@@ -170,7 +164,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## CDF文件映射 {#cdf-file-map}
+## [!UICONTROL CDF] 文件映射 {#cdf-file-map}
 
 [!UICONTROL CDF] 文件数据按如下所示的顺序显示。
 
@@ -178,21 +172,19 @@ ht-degree: 2%
 
 ## 识别阵列
 
-数组在文 [!UICONTROL CDF] 件开始中，以字段分隔 `Ctrl + a` 符结束。 这使数组中的第一个元素看起来就像独立数据字段。 例如，已实现的特征数组开始 `^A1234`。 数组分隔符和ID `^B5678` 位于此条目后。 因此，您可能会想，已实现特征数组中的第一个元素是ID 5678(因为它与开始 `^B`相同)。 但情况并非如此，因此您需要熟悉数据文件的顺序和结构。 即使实现的特征数组（或文件中的任何其他数组）中的第一个元素 [!UICONTROL CDF] 具有开始 `^A`，文件中的外观或位置顺序也定义数组的开始。 并且，数组中的第一个元素始终与前一个条目分开 `^A`。
+数组在文 [!UICONTROL CDF] 件开始中，以字段分隔 `Ctrl + a` 符结束。 这使数组中的第一个元素看起来就像独立数据字段。 例如，实现的 [!UICONTROL traits] 数组开始 `^A1234`。 数组分隔符和ID `^B5678` 位于此条目后。 因此，您可能会想到实现的数组中的第一个元素 [!UICONTROL traits] 是ID 5678(因为它与开始 `^B`一起)。 但情况并非如此，因此您需要熟悉数据文件的顺序和结构。 即使实现的数组(或文 [!UICONTROL trait] 件中的任何其他数组)中的第一个元素 [!UICONTROL CDF] 具有开始 `^A`，文件中的外观或位置顺序也定义数组的开始。 并且，数组中的第一个元素始终与前一个条目分开 `^A`。
 
-## 示例CDF文件 {#sample-file}
+## Sample [!UICONTROL CDF] File {#sample-file}
 
 示例文 [!UICONTROL CDF] 件可能类似于以下内容。 我们已在此示例中插入换行符，以帮助它适合页面。
 
 ![](assets/CDF-sample.png)
 
-## 客户数据馈送文件命名约定 {#cdf-naming-conventions}
+## [!UICONTROL Customer Data Feed] 文件命名约定 {#cdf-naming-conventions}
 
 以下各节列表并定义文件名中 [!UICONTROL CDF] 的元素。
 
-## CDF文件名： 语法和示例 {#cdf-file-name}
-
-<!-- cdf-file-name.xml -->
+## [!UICONTROL CDF] 文件名： 语法和示例 {#cdf-file-name}
 
 典型文 [!UICONTROL CDF] 件名包含以下列出的元素。 Note, *italics* indicates a variable placeholder:
 
@@ -210,7 +202,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 
 在存储 [!DNL S3] 存储段中，文件按合作伙伴ID()、日和小时[!UICONTROL PID]的升序排序。
 
-## 定义的CDF文件名元素 {#cdf-file-name-elements}
+## [!UICONTROL CDF] 文件名元素已定义 {#cdf-file-name-elements}
 
 下表列表并定义文件名中 [!UICONTROL CDF] 的元素。
 
@@ -253,13 +245,11 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
  </tbody> 
 </table>
 
-## 客户数据馈送文件处理通知 {#cdf-file-processing-notifications}
+## [!UICONTROL Customer Data Feed] 文件处理通知 {#cdf-file-processing-notifications}
 
 [!DNL Audience Manager] 将文 `.info` 件写入目 [!DNL S3] 录，以告知您() [!UICONTROL Customer Data File] 准备下[!UICONTROL CDF]载时间。 该文 `.info` 件还包含 [!DNL JSON] 有关文件内容的格式化元 [!UICONTROL CDF] 数据。 有关此通知文件使用的语法和字段的信息，请查阅本节。
 
 ## 示例信息文件 {#sample-info-file}
-
-<!-- cdf-notifications.xml -->
 
 每个 `.info` 文件都包含 `Files` 一个 `Totals` 和节。 该部 `Files` 分包含一个数组，其中包含每个小时文件的特定度量。 该 `Totals` 部分包含特定日期所有文 [!UICONTROL CDF] 件中汇总的指标。 文件的内 `.info` 容可能与以下示例类似。
 
@@ -316,7 +306,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileName</code> </p> </td> 
-   <td colname="col2"> <p>文件名。 请参 <a href="#cdf-naming-conventions"> 阅客户数据馈送文件命名约定</a>。 </p> </td> 
+   <td colname="col2"> <p>文件名。 See <a href="#cdf-naming-conventions"> Customer Data Feed File Naming Conventions</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileSequenceNumber</code> </p> </td> 
@@ -358,13 +348,11 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
  </tbody> 
 </table>
 
-## 客户数据馈送文件名时间和文件内容时间不同 {#different-processing-times}
+## [!UICONTROL Customer Data Feed] 文件名时间和文件内容时间不同 {#different-processing-times}
 
 您的 [!UICONTROL CDF] 文件在文件名和文件内容中包含时间戳。 这些时间戳记录同一文件的不同事件 [!UICONTROL CDF] 进程。 在同一文件的名称和内容中看到不同的时间戳并不少见。 了解每个时间戳可以帮助您避免在处理此数据或尝试按时间排序时出现的常见错误。
 
-## 查找CDF文件时间戳 {#locating-timestamps}
-
-<!-- cdf-time-differences.xml -->
+## 查找文 [!UICONTROL CDF] 件时间戳 {#locating-timestamps}
 
 [!UICONTROL CDF] 文件在两个不同位置记录的时间不同。
 
@@ -376,10 +364,10 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 
 | 时间戳位置 | 描述 |
 |--- |--- |
-| 文件名 | 文件名中的 [!DNL CDF] 时间戳标记开始准 [!DNL Audience Manager] 备文件进行投放的时间。 此时间戳在时区 [!DNL UTC] 中设置。 它使用参 `hour=` 数，时间格式设置为2位数小时（以24小时表示）。 此时间可以与文件内容中记录的事件时间不同。 处理文 [!DNL CDF] 件时，有时您会注意到您的存储 [!DNL S3] 桶在特定的小时内为空。 空桶装置可以表示以下任一情况：<ul><li>那个小时没有数据。 </li><li> 我们的服务器负载很重，无法处理特定小时的文件。 当服务器启动时，它将本应放在较早时段的文件放入具有稍后时间值的时段中。 例如，当本应在17小时存储段中的文件出现在18小时存储段中时（在文件名中），您 `hour=18` 会看到这一点。 在这种情况下，服务器可能在17小时内开始处理您的文件，但无法在该时间间隔内完成它。 相反，文件将推送到下一个小时时段。</li></ul><br>**重要说明&#x200B;**: 请勿使用文件名时间戳按时间对事件分组。 如果需要按时间分组，请使用文`EventTime`件内容中的时间戳。 |
+| 文件名 | 文件名中的 [!DNL CDF] 时间戳标记开始准 [!DNL Audience Manager] 备文件进行投放的时间。 此时间戳在时区 [!DNL UTC] 中设置。 它使用参 `hour=` 数，时间格式设置为2位数小时（以24小时表示）。 此时间可以与文件内容中记录的事件时间不同。 处理文 [!DNL CDF] 件时，有时您会注意到您的存储 [!DNL S3] 桶在特定的小时内为空。 空桶装置可以表示以下任一情况：<ul><li>那个小时没有数据。 </li><li> 我们的服务器负载很重，无法处理特定小时的文件。 当服务器启动时，它将本应放在较早时段的文件放入具有稍后时间值的存储桶中。 例如，当本应在17小时存储段中的文件出现在18小时存储段中时（在文件名中），您 `hour=18` 会看到这一点。 在这种情况下，服务器可能在17小时内开始处理您的文件，但无法在该时间间隔内完成它。 相反，文件将推送到下一个小时时段。</li></ul><br>**重要说明&#x200B;**: 请勿使用文件名时间戳按时间对事件分组。 如果需要按时间分组，请使用文`EventTime`件内容中的时间戳。 |
 | 文件内容 | 文件内容中 [!DNL CDF] 的时间戳标记开始处 [!DNL Data Collection Servers] 理文件的时间。 此时间戳在时区 [!DNL UTC] 中设置。 它使用字 `EventTime` 段，时间格式设置为 *`yyyy-mm-dd hh:mm:ss`*。 此时间接近页面上事件的实际时间，但可能与文件名中的小时指示符不同。 <br> **提示**: 与文件 `hour=` 名中的时间戳不同，您可以 `EventTime` 按时间对数据分组。 |
 
 >[!MORELIKETHIS]
 >
->* [客户数据馈送常见问题解答](../faq/faq-cdf.md)
+>* [客户数据信息源常见问题解答](../faq/faq-cdf.md)
 
