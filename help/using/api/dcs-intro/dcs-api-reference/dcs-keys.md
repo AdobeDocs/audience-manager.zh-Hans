@@ -1,21 +1,21 @@
 ---
 description: 列表并描述可传递到数据收集服务器(DCS)的语法和支持的属性（或键值对）。 此信息有助于您格式化DCS请求并了解此系统返回的参数。
 seo-description: 列表并描述可传递到数据收集服务器(DCS)的语法和支持的属性（或键值对）。 此信息有助于您格式化DCS请求并了解此系统返回的参数。
-seo-title: DCS API调用支持的属性
+seo-title: DCS API 调用支持的属性
 solution: Audience Manager
-title: DCS API调用支持的属性
+title: DCS API 调用支持的属性
 keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid_ic
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 2%
+source-wordcount: '806'
+ht-degree: 5%
 
 ---
 
 
-# DCS API调用支持的属性 {#supported-attributes-for-dcs-api-calls}
+# 支持的调用 [!DNL DCS] 属 [!DNL API] 性 {#supported-attributes-for-dcs-api-calls}
 
 列表并描述可传递给()的语法和支持的属性(或键值 [!UICONTROL Data Collection Servers] 对[!DNL DCS])。 此信息可以帮助您设置请求 [!DNL DCS] 的格式并了解此系统返回的参数。
 
@@ -50,7 +50,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## d_属性 {#d-attributes}
+## [!DNL d_] 属性 {#d-attributes}
 
 除非您希望得到响应，否则所有这些都是可选的 [!DNL DCS]。 如果您希望 [!DNL DCS] 该用户返回响应，则 `d_rtbd=json` 为必需。
 
@@ -122,7 +122,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>指定Experience CloudID服务设置和使用 <span class="keyword"> 的Experience Cloud</span> ID。 有关ECID的详细信息，请参 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> 阅Cookie和Experience Cloud身份服务</a>。 </p> </td> 
+   <td colname="col2"> <p>指定Experience CloudID服务设置和使用 <span class="keyword"> 的Experience Cloud</span> ID。 有关ECID的详细信息，请参 <a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/intro/cookies.html" format="https" scope="external"> 阅Cookie和Experience Cloud身份服务</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
