@@ -2,38 +2,36 @@
 description: 为希望将来自其他系统（离线）的数据引入Audience Manager的技术客户和非技术客户提供的概述。
 keywords: inbound, batch, batch upload, batch data
 seo-description: 为希望将来自其他系统（离线）的数据引入Audience Manager的技术客户和非技术客户提供的概述。 为此，请在Audience Manager中使用批上传选项。
-seo-title: 向Audience Manager发送批数据概述
+seo-title: 将批量数据发送到 Audience Manager 概述
 solution: Audience Manager
-title: 向Audience Manager发送批数据概述
+title: 将批量数据发送到 Audience Manager 概述
 uuid: 472583b1-5057-4add-8e3c-5e50762c88e0
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 3%
+source-wordcount: '482'
+ht-degree: 6%
 
 ---
 
 
-# 向Audience Manager发送批数据概述 {#send-batch-data-to-audience-manager-overview}
+# Send Batch Data to [!DNL Audience Manager] Overview {#send-batch-data-to-audience-manager-overview}
 
 针对希望将其他系统（离线）数据引入的技术客户和非技术客户的概述 [!DNL Audience Manager]。
 
 ## 优势
 
-<!-- c_offline_to_online.xml -->
-
 您可以在中提供来自其他系统的数据 [!DNL Audience Manager]。 我们的系统可以帮助您发掘价值并利用您之前收集的用户数据。 这包括有关购买、客户调查、注册数据、数 [!DNL CRM] 据库等的信息。 虽然每个集成都有其自身的挑战，但它们都有这些共同步骤。 查看此材料有助于减少使离线数据联机所需的工作量。
 
 ## 第1步： 同步用户ID
 
-在同步过程中， [!DNL Audience Manager] 为客户端及其用户分配唯一的ID。 这些ID分别 [!UICONTROL Data Provider ID] 称[!UICONTROL DPID]为 [!UICONTROL Unique User ID] ()[!UICONTROL UUID]和()。 [!DNL Audience Manager] 使用 [!UICONTROL DPID] 和 [!UICONTROL UUID] 来识别用户，并确定他们的特征、区段、受众组和报告。 此外，我们的数据收集代[!UICONTROL DIL]码()会查找这些ID，以从您的网站捕获访客数据。 完成此步骤后，脱 [!DNL Audience Manager] 机存储库应包含每个用户记录的相应ID。
+在同步过程中， [!DNL Audience Manager] 为客户端及其用户分配唯一的ID。 这些ID分别 [!UICONTROL Data Provider ID] 称[!UICONTROL DPID]为 [!UICONTROL Unique User ID] ()[!UICONTROL UUID]和()。 [!DNL Audience Manager] 使用 [!UICONTROL DPID] 和 [!UICONTROL UUID] 识别用户，并使其有资格 [!UICONTROL traits]加入、 [!UICONTROL segments]受众组和报告。 此外，我们的数据收集代[!UICONTROL DIL]码()会查找这些ID，以从您的网站捕获访客数据。 完成此步骤后，脱 [!DNL Audience Manager] 机存储库应包含每个用户记录的相应ID。
 
 有关此步骤的重要注意事项：
 
 * **客户端ID放置：** [!DNL Audience Manager] 需要了解您的客户端ID在您的网站上的显示位置(例如，它是否存储在cookie、Analytics变量、页面代码等中)。
 * **排除[!DNL PII]:** 用户ID不得包含个人识别信息([!DNL PII])。
-* **区分大小写和内容：** 在实时数据同步过程中，从站点捕获的用户ID必 [!DNL Audience Manager] 须与从脱机存储库传入的ID相对应。 例如，如果脱机记录包含有关的信 [!DNL User123]息，但您的站点将该ID呈现 [!DNL USER123]为，则Audience Manager将这些访客视为不同的。 因此，此访客的联机信息不能与脱机数据库中的相应记录相关联。 ID必须完全匹配。
+* **区分大小写和内容：** 在实时数据同步过程中，从站点捕获的用户ID必 [!DNL Audience Manager] 须与从脱机存储库传入的ID相对应。 例如，如果脱机记录包含有关的信 [!DNL User123]息，但您的站点将该ID呈现 [!DNL USER123]为，则 [!DNL Audience Manager] 会将这些信息视为不同的访客。 因此，此访客的联机信息不能与脱机数据库中的相应记录相关联。 ID必须完全匹配。
 
 See [ID Synchronization for Inbound Data Transfers](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md).
 
