@@ -1,84 +1,48 @@
 ---
 description: 描述Audience Manager段的组件、用于设置受众资格标准的表达式，以及在事件呼叫中如何传输数据。
 seo-description: 描述Audience Manager段的组件、用于设置受众资格标准的表达式，以及在事件呼叫中如何传输数据。
-seo-title: 信号、特征和细分
+seo-title: 信号、特征和区段
 solution: Audience Manager
-title: 信号、特征和细分
+title: 信号、特征和区段
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 1%
+source-wordcount: '374'
+ht-degree: 4%
 
 ---
 
 
-# 信号、特征和细分{#signals-traits-and-segments}
+# [!UICONTROL Signals]、 [!UICONTROL Traits]and [!UICONTROL Segments] {#signals-traits-and-segments}
 
-描述区段的组 [!DNL Audience Manager] 件、用于设置受众资格标准的表达式，以及事件呼叫中如何传输数据。
+描述表达式的组 [!DNL Audience Manager] 件、用 [!UICONTROL segment]于设置受众资格标准的，以及事件呼叫中如何传输数据。
 
-<!-- 
+## 构图和用途
 
-c_signal_trait_segment.xml
+[!DNL Audience Manager] 数据由、 [!UICONTROL signals]、 [!UICONTROL traits]和相关 [!UICONTROL segments]的资格规则组成。 数据元素和规则相结合以创建 [!UICONTROL segments]。 [!UICONTROL Segments] 将站点访客组织到相关组中。 下表定义了中的三个主体组 [!DNL Audience Manager] 件 [!UICONTROL segment]。
 
- -->
+| 元素 | 由 | 示例 |
+|---|---|---|
+| [!UICONTROL Signal] | [!UICONTROL Signals] 是中最小的数据单 [!DNL Audience Manager] 元，表示 [为键值对](../reference/key-value-pairs-explained.md)。<br><br><ul><li>关键是定义数据集（如性别、颜色、价格）的常数。</li><li>该值是与常数（例如，男／女、绿色、100）相关的变量。</li></ul>比较运算符连接键值对并设置它们之间的关系。 | <ul><li>`product=camera`</li><li>`price>1000`</li><li>`type=digital SLR`</li></ul> |
+| [!UICONTROL Trait] | 一个或多个组合 [!UICONTROL signals]。<br><br> [!DNL Boolean] 表达式和比较运算符允许您创建 [!UICONTROL trait] 资格规则。 <br><br>通过组合和组创建精确的 [!UICONTROL traits] 资格 [!UICONTROL trait] 要求。 | 您可以从 [!UICONTROL signals]可用内容创建 `High End Camera Browser` 以下表示的规则： `product=camera AND price>1000` |
+| [!UICONTROL Segment] | 共享一组通用属性并符合相关资格的用户 [!UICONTROL traits]。 [!DNL Boolean] 表达式，以及最近／频率要求，允许您创建资格 [!UICONTROL segment] 规则。<br><br> 结合使用规则和规则，创建精确 [!UICONTROL trait] 的资 [!UICONTROL segment] 格要求。 | 在可用 [!UICONTROL traits] 和 [!UICONTROL signals]中，您可以创建 [!UICONTROL segment] 表示为：`(product=camera AND type=digital SLR) OR (price>1000)` |
 
-**构图和用途**
-
-[!DNL Audience Manager] 数据包括信号、特征、细分和相关资格规则。 数据元素和规则结合起来，创建细分。 区段将站点访客组织到相关组中。 下表定义了段中的三个主要 [!DNL Audience Manager] 组件。
-
-<table id="table_E8373A01C3414C42B4983A59BF0F0669"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 元素 </th> 
-   <th colname="col2" class="entry"> 由 </th> 
-   <th colname="col3" class="entry"> 示例 </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><b>信号</b> </td> 
-   <td colname="col2"> <p>信号是Audience Manager中最小的 <span class="keyword"></span> ，表示为 <a href="../reference/key-value-pairs-explained.md"> 键值对</a>。 </p> 
-    <ul id="ul_728347E325284B9FA0B4E05DE8CF4570"> 
-     <li id="li_89574A3B4A734726AD43405AE6D85FF5">关键是定义数据集（如性别、颜色、价格）的常数。 </li> 
-     <li id="li_D35601B33EE24EC5857F45D9577254D4">该值是与常数（例如，男／女、绿色、100）相关的变量。 </li> 
-    </ul> <p>比较运算符连接键值对并设置它们之间的关系。 </p> </td> 
-   <td colname="col3"> 
-    <ul id="ul_A6D8D30A37C94437A7BF38736C6F8556"> 
-     <li id="li_74C87C34FA254783AC0DEBBC69B35AC4"><code> product=camera</code> </li> 
-     <li id="li_C1727B9136024E56B60374597A7DCA00"><code> price&gt;1000</code> </li> 
-     <li id="li_B2E7798768EE444AB978F3F27B0BC0B5"><code> type=digital SLR</code> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><b>特性</b> </td> 
-   <td colname="col2"> <p>一个或多个信号的组合。 </p> <p>布尔表达式和比较运算符允许您创建特征限定规则。 </p> <p>使用特征和特征组的组合创建精确的资格要求。 </p> </td> 
-   <td colname="col3"> <p>根据可用信号，您可以创建“高端相机浏览器”规则，表示为： </p> <p><code> product=camera AND price&gt;1000</code> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><b>区段</b> </td> 
-   <td colname="col2"> <p>共享一组通用属性并符合相关特征的用户。 </p> <p>布尔表达式以及最近／频率要求允许您创建细分资格规则。 </p> <p>结合特征和细分规则，创建精确的资格要求。 </p> </td> 
-   <td colname="col3"> <p>根据可用的特征和信号，您可以创建表示为： </p> <p><code> (product=camera AND type=digital SLR) OR (price&gt;1000)</code> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-使用下图记住信号、特征和区段之间的关系。
+使用下图记住、和之间 [!UICONTROL signals]的 [!UICONTROL traits]关系 [!UICONTROL segments]。
 
 ![](assets/signals-traits-segments.png)
 
-**使用可视化工具和代码编辑器构建特征和细分规则**
+**使用可[!UICONTROL Traits]视工[!UICONTROL Segment]具和代码编辑器构建和规则**
 
-客户端使用用户界面中的可视化工具和代码编辑器管理特 [!DNL Audience Manager] 征和细分。 可视化工具允许您使用搜索功能、弹出选项、下拉菜单和拖放功能创建规则。 代码编辑器为高级用户提供了一种有序开发受众分段标准的方法。
+客户端在 [!UICONTROL traits] 用 [!UICONTROL segments] 户界面中使用可视工具和代码编辑器 [!DNL Audience Manager] 进行管理。 可视化工具允许您使用搜索功能、弹出选项、下拉菜单和拖放功能创建规则。 代码编辑器为高级用户提供了一种有序开发受众分段标准的方法。
 
-**事件调用将数据发送到Audience Manager**
+**事件调用将数据发送到[!DNL Audience Manager]**
 
-事件调用将数据从您的网站发送到 [!DNL Audience Manager]。 该调用包含请求中的信号、特征和段 [!DNL HTTP] 数据。 事件本身是字符串 `/event` 之后的一 [!DNL URL] 切。 如以下示例所示，此过程只需一个事件调用即可将多个变量传递给 [!DNL Audience Manager]。
+事件调用将数据从您的网站发送到 [!DNL Audience Manager]。 调用包含 [!UICONTROL signal]请求 [!UICONTROL trait]中的 [!UICONTROL segment] 、和数 [!DNL HTTP] 据。 事件本身是字符串 `/event` 之后的一 [!DNL URL] 切。 如以下示例所示，此过程只需一个事件调用即可将多个变量传递给 [!DNL Audience Manager]。
 
 `https://<domain>/event?product=camera&price>100`
 
 >[!MORELIKETHIS]
 >
->* [细分： 目的、构成和规则](../features/segments/segments-purpose.md)
+>* [区段：目的、构成和规则](../features/segments/segments-purpose.md)
 
