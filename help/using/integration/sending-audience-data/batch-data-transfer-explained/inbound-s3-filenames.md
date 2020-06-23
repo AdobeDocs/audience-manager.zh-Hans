@@ -1,20 +1,20 @@
 ---
 description: 描述向Audience Manager发送数据时需要遵循的必填字段、语法、命名约定和文件大小。 将数据发送到Audience Manager/Amazon S3目录时，根据这些规范设置文件的名称和大小。
 seo-description: 描述向Audience Manager发送数据时需要遵循的必填字段、语法、命名约定和文件大小。 将数据发送到Audience Manager/Amazon S3目录时，根据这些规范设置文件的名称和大小。
-seo-title: 入站数据文件的Amazon S3名称和文件大小要求
+seo-title: 入站数据文件的 Amazon S3 名称和文件大小要求
 solution: Audience Manager
-title: 入站数据文件的Amazon S3名称和文件大小要求
+title: 入站数据文件的 Amazon S3 名称和文件大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 2%
+source-wordcount: '1154'
+ht-degree: 6%
 
 ---
 
 
-# 入站数据文件的Amazon S3名称和文件大小要求{#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
+# [!DNL Amazon S3]入站数据文件的 名称和文件大小要求{#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
 
 描述向发送数据时需要遵循的必填字段、语法、命名约定和文件大小 [!DNL Audience Manager]。 将数据发送到／目录时，根据这些规范设置文件的名称 [!DNL Audience Manager] 和大 [!DNL Amazon S3] 小。
 
@@ -65,7 +65,7 @@ ht-degree: 2%
       <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID):</b> 如果数据文件包含Android ID，请在数据文件名中使用ID 20914。 例如，告 <code>...ftp_dpm_20914_21_123456789.sync</code> 诉 <span class="keyword"> Audience Manager</span> ，数据文件仅包含Android ID。 注意，ID 21 </li> 
       <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA):</b> 如果数据文件包含iOS ID，请在其数据文件名中使用ID 20915。 例如，告 <code>...ftp_dpm_20915_123456789.sync</code> 诉 <span class="keyword"> Audience Manager</span> ，数据文件仅包含iOS ID。 </li> 
      </ul> 
-    </draft-comment> <p> <p>注意：  请勿在数据文件中混合使用ID类型。 例如，如果您的文件名包含Android标识符，则不要在数据文件中放置iOS ID或您自己的ID。 </p> </p><p>有关更 <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">多详细信息</a> ，请参阅全局数据源。</p> <p>另请参阅 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 下面的条目。 </p> </td> 
+    </draft-comment> <p> <p>注意：  请勿在数据文件中混合使用ID类型。 例如，如果您的文件名包含Android标识符，则不要在数据文件中放置iOS ID或您自己的ID。 </p> </p><p>有关更多详细信息，请参阅<a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">全局数据源</a>。</p> <p>另请参阅 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 下面的条目。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
@@ -105,7 +105,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [.gz]</code> </p> </td> 
-   <td colname="col2"> <p>将文件发送到Amazon S3时，请仅使用gzip压缩。 压缩后，这些文件将获得扩 <code> .gz</code> 展名。 请勿使用。zip压缩。 </p> <p>压缩文件必须为3 GB或更小。 如果文件较大，请咨询客户服务。 尽管Audience Manager可以处理大型文件，但我们可能可以帮助您减小文件大小并提高数据传输效率。 请参 <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md"> 阅入站数据传输文件的文件压缩</a>。 </p> </td> 
+   <td colname="col2"> <p>将文件发送到Amazon S3时，请仅使用gzip压缩。 压缩后，这些文件将获得扩 <code> .gz</code> 展名。 请勿使用。zip压缩。 </p> <p>压缩文件必须为3 GB或更小。 如果文件较大，请咨询客户服务。 尽管Audience Manager可以处理大型文件，但我们可能可以帮助您减小文件大小并提高数据传输效率。 请参阅<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">入站数据传输文件的文件压缩</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
