@@ -1,20 +1,20 @@
 ---
 description: 有关一般要求、身份验证、可选查询参数、请求URL和其他引用的信息。
 seo-description: 有关一般要求、身份验证、可选查询参数、请求URL和其他引用的信息。
-seo-title: REST API入门
+seo-title: 开始使用 REST API
 solution: Audience Manager
-title: REST API入门
+title: 开始使用 REST API
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: cdf567a816be60d0d966783e87f4ed02838be378
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 2%
+source-wordcount: '1761'
+ht-degree: 3%
 
 ---
 
 
-# REST API入门 {#getting-started-with-rest-apis}
+# Getting Started with [!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}
 
 有关一般要求、身份验证、可选查询参数、请 [!DNL URLs]求和其他引用的信息。
 
@@ -46,7 +46,7 @@ ht-degree: 2%
 >
 >根据身份验证方法，您需要相应地调整您的 [!DNL URLs] 请求。 有关应 [使用的](#environments) 主机名的详细信息，请参阅环境部分。
 
-## JWT([!DNL Service Account])身份验证 {#jwt}
+## [!DNL JWT] ([!DNL Service Account])身份验证 {#jwt}
 
 ### 先决条件 {#prerequisites}
 
@@ -65,7 +65,7 @@ ht-degree: 2%
 >
 >要以自动方式配置和 [!DNL Audience Manager] 使 [!DNL REST APIs] 用，您可以以编程方式生成 [!DNL JWT] 。 有关 [详细说明，请参阅JWT(服务帐户](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) )身份验证。
 
-## OAuth身份验证（已弃用） {#oauth}
+## [!DNL OAuth] 身份验证（已弃用） {#oauth}
 
 >[!WARNING]
 > [!DNL Audience Manager] [!UICONTROL REST API] 令牌身份验证和通过的 [!DNL OAuth 2.0] 续订现已弃用。
@@ -74,7 +74,7 @@ ht-degree: 2%
 
 令牌 [!DNL Audience Manager] 身 [!UICONTROL REST API] 份验 [!DNL OAuth 2.0] 证和续订遵循标准。 以下各节介绍如何验证和使用的 [!DNL API]开始。
 
-### 创建通用API用户 {#requirements}
+### 创建通用用 [!DNL API] 户 {#requirements}
 
 我们建议您创建单独的技术用户帐户，以便与 [!DNL Audience Manager][!DNL API]s一起使用。 这是一个通用帐户，它未绑定到您组织中的特定用户或与其关联。 此类型的用 [!DNL API] 户帐户可帮助您完成以下两项任务：
 
@@ -87,15 +87,13 @@ ht-degree: 2%
 
 ### 密码身份验证工作流 {#password-authentication-workflow}
 
-<!-- oath-authentication.xml -->
-
 密码身份验证安全访问我 [!DNL REST API]们。 以下步骤概述了在浏览器中从客户端进 [!DNL JSON] 行口令身份验证的工作流。
 
 >[!TIP]
 >
 >如果将访问和刷新令牌存储在数据库中，请加密它们。
 
-#### 第1步： 请求API访问
+#### 第1步： 请求访 [!DNL API] 问
 
 联系您的合作伙伴解决方案经理。 他们会向您提供客 [!DNL API] 户ID和机密。 ID和密码将您验证到 [!DNL API]。
 
@@ -107,7 +105,7 @@ ht-degree: 2%
 
 * 使用 `POST` 方法调用 `https://api.demdex.com/oauth/token`。
 * 将客户端ID和机密转换为基64编码字符串。 在转换过程中，用冒号分隔ID和机密。 例如，凭据将 `testId : testSecret` 转换为 `dGVzdElkOnRlc3RTZWNyZXQ=`。
-* 传入标 [!DNL HTTP] 题 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded` 。 例如，您的标题可能如下所示： <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
+* 在和 [!DNL HTTP] 中 [!DNL headers] 传 `Authorization:Basic <base-64 clientID:clientSecret>` 递 `Content-Type: application/x-www-form-urlencoded` 。 例如，您的标题可能如下所示： <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
 * 按如下方式设置请求主体：
    <br/> `grant_type=password&username=<your-AudienceManager-user-name>&password=<your-AudienceManager-password>`
 
@@ -145,8 +143,8 @@ ht-degree: 2%
 
 * 使用 `POST` 方法调用 `https://api.demdex.com/oauth/token`。
 * 将客户端ID和机密转换为基64编码字符串。 在转换过程中，用冒号分隔ID和机密。 例如，凭据将 `testId : testSecret` 转换为 `dGVzdElkOnRlc3RTZWNyZXQ=`。
-* 传入HTTP头 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`。 例如，您的标题可能如下所示： <br/> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/> `Content-Type: application/x-www-form-urlencoded`
-* 在请求主体中，指 `grant_type:refresh_token` 定您在上一个访问请求中收到的刷新令牌并传递。 请求应当如下： <br/> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
+* 传入HTTP头 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`。 例如，您的标题可能如下所示： <br> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br> `Content-Type: application/x-www-form-urlencoded`
+* 在请求主体中，指 `grant_type:refresh_token` 定您在上一个访问请求中收到的刷新令牌并传递。 请求应当如下： <br> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
 
 #### 第2步： 接收新令牌
 
@@ -166,11 +164,9 @@ ht-degree: 2%
 
 支持 [!DNL Audience Manager] 授权 [!UICONTROL REST API] 代码和隐式身份验证。 要使用这些访问方法，用户需要登录才能 `https://api.demdex.com/oauth/authorize` 获取访问和刷新令牌。
 
-## 发出经过身份验证的API请求 {#authenticated-api-requests}
+## 发出经过身份验证 [!DNL API] 的请求 {#authenticated-api-requests}
 
 在收到身份验证 [!DNL API] 令牌后调用方法的要求。
-
-<!-- c_oauth_call_methods.xml -->
 
 要调用可用的方 [!DNL API] 法：
 
@@ -178,11 +174,9 @@ ht-degree: 2%
 * 使用 [JWT（服务帐户）身份验证](#jwt)，您需要提供 `x-api-key` 与您的头相同的头 `client_id`。 您可以从Adobe `client_id` I/ [O集成页面获取](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 。
 * 调用所需的 [!DNL API] 方法。
 
-## 可选API查询参数 {#optional-api-query-parameters}
+## 可选 [!DNL API] 查询参数 {#optional-api-query-parameters}
 
 设置可用于返回对象所有属性的方法的可选参数。
-
-<!-- c_rest_api_optional.xml -->
 
 可以将这些可选参数与返 [!DNL API] 回对象所 *有属性* 的方法结合使用。 将查询传递到请求字符串时，在中设置这些选项 [!DNL API]。
 
@@ -192,8 +186,8 @@ ht-degree: 2%
 | `pageSize` | 设置请求返回的响应结果数（默认为10）。 |
 | `sortBy` | 根据指定的属性对结果进行排序并返回 [!DNL JSON] 结果。 |
 | `descending` | 按降序排序和返回结果。 `ascending` 。 |
-| `search` | 根据要用作搜索参数的指定字符串返回结果。 例如，假设您要在该项目的任何值字段中查找带有“Test”字样的所有模型的结果。 您的示例请求可能如下所示：   `GET https://aam.adobe.io/v1/models/?search=Test`.  您可以搜索“get all”方法返回的任何值。 |
-| `folderId` | 返回指定文件夹内特征的所有ID。 并非所有方法都可用。 |
+| `search` | 根据要用作搜索参数的指定字符串返回结果。 例如，假设您要在该项目的任何值字段中查找带有“Test”字样的所有模型的结果。 您的示例请求可能如下所示：   `GET https://aam.adobe.io/v1/models/?search=Test`.  您可以搜索“”方法返回的任何[!DNL get all]值。 |
+| `folderId` | 返回指定文件夹 [!UICONTROL traits] 内的所有ID。 并非所有方法都可用。 |
 | `permissions` | 返回基于指定权限的区段列表。 `READ` 。 权限包括：<ul><li>`READ` : 有关区段的返回和视图信息。</li><li>`WRITE` : 用 `PUT` 于更新区段。</li><li>`CREATE` : 用 `POST` 于创建区段。</li><li>`DELETE` : 删除区段. 需要访问基础特征（如果有）。 例如，如果要删除属于某个区段的特征，您将需要有权删除该特征。</li></ul><br>使用不同的键值对指定多个权限。 例如，要返回仅具有和权限的列表 `READ` 段， `WRITE` 请传入 `"permissions":"READ"`, `"permissions":"WRITE"` 。 |
 | `includePermissions` | ([!DNL Boolean])设置为 `true` 返回您对区段的权限。 默认值为 `false`. |
 
@@ -205,19 +199,17 @@ ht-degree: 2%
 GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 ```
 
-## API URL {#api-urls}
+## [!DNL API URLs] {#api-urls}
 
 [!DNL URLs] 用于请求、暂存和生产环境以及版本。
 
-<!-- r_rest_urls.xml -->
-
-## 请求URL {#request-urls}
+## 请求 [!DNL URLs] {#request-urls}
 
 下表按方法列表 [!DNL URLs] 用于传递请 [!DNL API] 求的请求。
 
-根据您使用的身份验证方法，您需要根据下表调整请求URL。
+根据您使用的身份验证方法，您需要根据下 [!DNL URLs] 表调整请求。
 
-### 请求JWT身份验证的URL {#request-urls-jwt}
+### 身份 [!DNL URLs] 验证 [!DNL JWT] 请求 {#request-urls-jwt}
 
 | [!DNL API] 方法 | 请求 [!DNL URL] |
 |--- |--- |
@@ -233,7 +225,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 | [!DNL Trait Types] | `https://aam.adobe.io/v1/customer-trait-types` |
 | [!DNL Taxonomy] | `https://aam.adobe.io/v1/taxonomies/0/` |
 
-### 请求OAuth身份验证的URL（已弃用） {#request-urls-oauth}
+### 身份 [!DNL URLs] 验证 [!DNL OAuth] 请求（已弃用） {#request-urls-oauth}
 
 | [!DNL API] 方法 | 请求 [!DNL URL] |
 |--- |--- |
@@ -273,8 +265,6 @@ s提 [!DNL Audience Manager][!DNL API]供对不同工作环境的访问。 这�
 ## 已定义响应代码 {#response-codes-defined}
 
 `HTTP` 状态代码和由返回的响应文 [!DNL Audience Manager][!UICONTROL REST API]本
-
-<!-- r_api_http_response_codes.xml -->
 
 | 响应代码ID | 响应文本 | 定义 |
 |---|---|---|
