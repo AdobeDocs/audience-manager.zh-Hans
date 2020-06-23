@@ -1,14 +1,14 @@
 ---
-description: 预测受众可以帮助您使用数据科学将未知受众实时分类为不同的角色。
-seo-description: 预测受众可以帮助您使用数据科学将未知受众实时分类为不同的角色。
-seo-title: 预测受众概述
+description: Predictive Audiences 可以帮助您使用数据科学将未知受众实时分类为不同的角色。
+seo-description: Predictive Audiences 可以帮助您使用数据科学将未知受众实时分类为不同的角色。
+seo-title: Predictive Audiences 概述
 solution: Audience Manager
-title: Audience Manager预测受众
+title: Audience Manager Predictive Audiences
 translation-type: tm+mt
-source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+source-git-commit: f52321f3621d9eb6b9c5b643a3516f39f35466c2
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 0%
+source-wordcount: '1251'
+ht-degree: 9%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 0%
 >[!IMPORTANT]
 >本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
-在营销环境中，人物是由访客、用户或潜在买家定义的受众细分，他们具有一组特定特征，如人口统计、浏览习惯、购物历史记录等。
+在营销环境中，角色是指由具有一系列相同特征（例如人口统计特征、浏览习惯、购物历史记录等）的访客、用户或潜在购买者构成的一个受众区段。
 
-[!UICONTROL Predictive Audiences] 模型使这一概念更进一步，使您能够使用Audience Manager的机器学习功能将未知受众分类为不同的角色。 Audience Manager通过计算一组已知第一方受众的未知第一方受众的倾向来帮助您实现这一点。
+[!UICONTROL Predictive Audiences] 模型进一步扩展了角色这一概念的应用，允许您使用 Audience Manager 的机器学习功能将未知受众分类为不同的角色。Audience Manager 可以计算未知的第一方受众与一组已知的第一方受众之间的相似性，从而帮助您做到这一点。
 
 创建模型 [!UICONTROL Predictive Audiences] 时，第一步是选择希望目标受众分类的基线特征或区段。 这些特征或细分将定义您的角色。
 
@@ -104,14 +104,14 @@ ht-degree: 0%
 
 配置模 [!UICONTROL Predictive Audiences] 型时，请注意以下注意事项和限制：
 
-* 您最多可以创建10种 [!UICONTROL Predictive Audiences] 模型。
+* 您最多可以创建 10 个 [!UICONTROL Predictive Audiences] 模型。
 * 对于每个模型，您最多可以选择50个基本特征／区段。
 * 目前不支持第二方和第三方数据 [!UICONTROL Predictive Audiences]。
 * 受众分类只针对实时的第一方受众。 载入的第一方受众分类在将来的更新中可能受支持。
    >[!IMPORTANT]
    > 当前，预 [!UICONTROL Total Segment Population] 测区段显示为0，不支 [持批出站数据传输](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) 。 [!UICONTROL Predictive Audiences]此行为将在以后的更新中发生更改。
 * [!UICONTROL Predictive Audiences] 根据您的第一方特征从所有第一方数据源执行受众分类。
-* 区段评估 [!UICONTROL Predictive Audiences] 使用您在 **[!UICONTROL Profile Merge Rule]** 帐户中定义的默认值。 要了解有关详细信 [!UICONTROL Profile Merge Rules] 息，请参阅专 [用文档](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-overview.html)。
+* 区段评估 [!UICONTROL Predictive Audiences] 使用您在 **[!UICONTROL Profile Merge Rule]** 帐户中定义的默认值。 要了解有关详细信 [!UICONTROL Profile Merge Rules] 息，请参阅专 [用文档](../profile-merge-rules/merge-rules-overview.md)。
 * 某些特征和区段不支持作为基准或目标受众。 [!UICONTROL Predictive Audiences] 当选择以下某项作为基准或目标受众时，模型将无法保存：
    * 利用预测特征创建的预测特征和细分；
    * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) 特征或细分；
