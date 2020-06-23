@@ -1,179 +1,179 @@
 ---
 description: 本页仅包含当前的服务器到服务器集成。 有关集成的详细信息，请参阅其Adobe Exchange列表（如果可用）或与Adobe顾问或客户关怀联系。
 seo-description: 本页仅包含当前的服务器到服务器集成。 有关集成的详细信息，请参阅其Adobe Exchange列表（如果可用）或与Adobe顾问或客户关怀联系。
-seo-title: Adobe受众管理器服务器到服务器目标
+seo-title: Adobe Audience Manager服务器到服务器目标
 keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
-title: Adobe受众管理器服务器到服务器目标
+title: Adobe Audience Manager服务器到服务器目标
 translation-type: tm+mt
-source-git-commit: da0eb0244fc3ae158fa151727f4253625dcff2c4
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 58%
+source-wordcount: '1122'
+ht-degree: 72%
 
 ---
 
 
-# 受众管理器基于设备的目标
+# [!DNL Audience Manager] [!UICONTROL Device-based Destinations]
 
-本页仅包含当前基于 [受众管理器设备的目](/help/using/features/destinations/add-device-based-destinations.md) 标。 在受众管理器中，基于设备的目标也称为服务器到服务器目标。 有关集成的详细信息，请参 [阅其Adobe](https://www.adobeexchange.com/experiencecloud.html) Exchange列表（如果可用）或与Adobe顾问或客户关怀联系。
+本页仅包含当 [!DNL Audience Manager] 前 [基于设备的目标](/help/using/features/destinations/add-device-based-destinations.md) 。 在 [!DNL Audience Manager]中 [!UICONTROL device-based destinations] ，也称为 [!UICONTROL server-to-server destinations]。 有关集成的详细信息，请参 [阅其Adobe](https://www.adobeexchange.com/experiencecloud.html) Exchange列表（如果可用）或与您的顾 [!DNL Adobe] 问或客户服务联系。
 
-<br> 
+ 
 
-* **上次更新** =显示此基于设备的目标的上次更新日期。
-* **更新** =指示受众管理器是实时还是批量(1xday)向此目标发送数据。
-* **Unsegment** = Unsegmentation描述了取消设备用户档案的区段资格并从区段中删除设备数据的流程。 您能否从区段中删除设备用户档案取决于用于创建用户档案合并规则的设备选项。 在GDPR删除请求的上下文中也使用不分段。 阅读 [用户档案合并规则和设备取消分段流程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) ，以 [及具有取消分段功能的受众管理器合作伙伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 受众管理器会向标有以下“是”的目标发送 **取消** 细分信息。
-* **接收IAB TCF同意信号** = IAB TCF的受众管理器插件允许您将IAB TC字符串转发给激活合作伙伴，同时尊重用户的隐私选择。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
-* **ICDS** =此列列表支持“即时跨设备抑制”的合作伙伴。 了解 [即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
-* **移动设备ID** =此列列表可从受众管理器接收移动设备ID的合作伙伴。
+* **上次更新** =显示此更新的最后日期 [!UICONTROL device-based destination]。
+* **更新** =指示 [!DNL Audience Manager] 是实时还是批量(1xday)向此发送数据 [!UICONTROL destination]。
+* **Unsegment** = Unsegmentation描述取消设备用户档案资格并从中删除设备的 [!UICONTROL segments]进程。 您是否能够从中删除设备用户档案 [!UICONTROL segment] 取决于用于创建设备的设备选项 [!UICONTROL Profile Merge Rule]。 在删除请求的上下文中也使用 [!DNL GDPR] 非分段。 阅读 [用户档案合并规则和设备未分段流程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) ，以 [及具有未分段功能的Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 [!DNL Audience Manager] 将取消区段信息发送 [!UICONTROL destinations] 到下面标 **有“** Yes”。
+* **接收[!DNL IAB TCF]同意信号** =允许 [!DNL Audience Manager Plug-in for IAB TCF][!DNL IAB TC] 您将字符串转发给激活合作伙伴，同时尊重用户的隐私选择。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
+* **[!DNL ICDS]** =此列列表支持的合作伙伴 [!UICONTROL Instant Cross-Device Suppression]。 了解 [即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
+* **移动设备ID** =此列列表可以从中接收移动设备ID的合作伙伴 [!DNL Audience Manager]。
 
-<br> 
+ 
 
-| 集成 | 上次更新 | 更新 | 取消分段 | 接收IAB TCF同意信号 | ICDS | 移动设备ID |
+| 集成 | 上次更新 | 更新 | 取消分段 | 接收 [!DNL IAB TCF] 同意信号 | [!DNL ICDS] | 移动设备 ID |
 |---------------------------------------------------|------------|-----------|-----------|-----------------------------------|------|-------------------|
-| 4C洞察 | 26/09/2018 | 1xday | 是 | 否 | 否 | 是 |
-| 4info | 09/02/2017 | 1xday | 否 | 否 | 否 | 是 |
-| AcuityAds | 09/02/2017 | 实时 | 是 | 否 | 是 | 否 |
-| 阿达拉 | 17/02/2017 | 实时 | 是 | 否 | 否 | 否 |
-| 成瘾性流动 | 22/02/2017 | 1xday | 是 | 否 | 是 | 是 |
-| 阿德尔菲 | 22/02/2017 | 1xday | 否 | 否 | 否 | 是 |
-| AdForm | 22/02/2017 | 实时 | 是 | 否 | 是 | 是 |
-| AdGear | 22/02/2017 | 实时 | 是 | 否 | 是 | 否 |
-| 阿迪克捷夫 | 26/01/2018 | 1xday | 是 | 否 | 否 | 是 |
-| Adroll / NextRoll | 10/12/2019 | 1xday | 否 | 否 | 否 | 否 |
-| 阿兹维兹 | 09/10/2017 | 1xday | 是 | 否 | 否 | 是 |
-| Adtheorent | 22/02/2017 | 1xday | 是 | 否 | 否 | 是 |
-| 阿菲诺 | 03/04/2018 | 1xday | 是 | 否 | 否 | 是 |
-| 阿基 | 21/06/2018 | 1xday | 否 | 否 | 否 | 是 |
-| Amazon Advertising | 15/06/2017 | 1xday | 是 | 否 | 否 | 否 |
-| AOL AdLearn | 02/03/2017 | 实时 | 否 | 否 | 否 | 是 |
-| AOL ONE | 02/03/2017 | 实时 | 是 | 否 | 否 | 是 |
-| AppNexus | 02/03/2017 | 实时 | 是 | 否 | 是 | 否 |
-| AppNexus Yieldex | 10/08/2017 | 1xday | 是 | 否 | 否 | 否 |
-| Atedra/AdStanding | 02/03/2017 | 实时 | 是 | 否 | 是 | 否 |
-| 鳄梨 | 06/12/2017 | 1xday | 否 | 否 | 否 | 否 |
-| Bidtellect | 03/03/2017 | 实时 | 是 | 否 | 否 | 否 |
-| 蜂蜡 | 25/05/2018 | 1xday | 否 | 否 | 否 | 是 |
-| Brandscreen | 03/03/2017 | 实时 | 否 | 否 | 否 | 否 |
-| Brightroll | 03/03/2017 | 1xday | 否 | 是 | 否 | 否 |
-| 按钮 | 18/12/2017 | 1xday | 是 | 否 | 否 | 是 |
-| C1 Exchange | 27/02/2017 | 1xday | 是 | 否 | 否 | 否 |
-| 塞尔特拉 | 27/02/2017 | 1xday | 是 | 否 | 否 | 是 |
-| Centro | 27/02/2017 | 1xday | 否 | 否 | 否 | 是 |
-| ChoiceStream | 27/02/2017 | 1xday | 否 | 否 | 否 | 否 |
-| Clearstream.tv | 27/02/2017 | 实时 | 是 | 否 | 否 | 否 |
-| 集体AMP平台 | 27/02/2017 | 1xday | 否 | 否 | 否 | 否 |
-| 克里泰奥 | 27/02/2017 | 实时 | 否 | 是 | 否 | 是 |
-| 克罗斯威斯 | 27/02/2017 | 1xday | 是 | 否 | 否 | 否 |
-| D.A.C. AudienceOne | 27/02/2017 | 1xday | 是 | 否 | 否 | 否 |
-| DataXu | 11/20/2017 | 实时 | 否 | 否 | 否 | 是 |
-| 数字化 | 02/03/2017 | 实时 |  | 否 | 否 | 否 |
-| DistrictM | 02/03/2017 | 1xday | 是 | 否 | 否 | 否 |
-| DoubleVerify | 06/09/2017 | 1xday | 是 | 否 | 否 | 否 |
-| 吊桥 | 02/03/2017 | 实时 | 否 | 否 | 否 | 是 |
-| Dstillery(FKA Media6) | 02/03/2017 | 实时 | 是 | 否 | 否 | 是 |
-| 邓恩胡比 | 21/11/2019 | 1xday | 否 | 否 | 否 | 否 |
-| 轻松筹资 | 27/06/2019 | 1xday | 否 | 否 | 否 | 是 |
-| Epsilon Conversant | 03/03/2017 | 实时 | 否 | 否 | 否 | 否 |
-| 指数 | 27/02/2017 | 实时 | 是 | 否 | 是 | 否 |
-| Eyereturn Marketing | 11/04/2017 | 1xday | 是 | 否 | 否 | 否 |
-| EyeView Digital | 14/06/2018 | 1xday | 是 | 否 | 否 | 是 |
-| 菲克苏 | 03/03/2017 | 1xday | 是 | 否 | 否 | 是 |
-| Flashtalking | 02/03/2017 | 1xday | 否 | 否 | 否 | 否 |
-| FreakOut | 03/03/2017 | 1xday | 是 | 否 | 否 | 否 |
-| 自由轮 | 27/02/2017 | 1xday | 是 | 是 | 否 | 是 |
-| 色域媒体 | 03/03/2017 | 实时 |  | 否 | 否 |  |
-| Google AdsWords显示 | 02/08/2018 | 实时 | 是 | 是 | 否 | 是 |
-| Google DoubleClick Bid Manager(DBM) | 24/04/2017 | 实时 | 是 | 是 | 是 | 是 |
-| Google DoubleClick活动管理器(DCM fka DFA) | 24/04/2017 | 实时 | 是 | 是 | 是 | 是 |
-| 面向发布者的Google DoubleClick(DFP、DFPP) | 24/04/2017 | 实时 | 是 | 是 | 是 | 是 |
-| 口香糖 | 02/06/2017 | 1xday | 是 | 否 | 否 | 否 |
-| Index Exchange（以前称为Casale Media） | 03/03/2017 | 1xday | 是 | 否 | 否 | 否 |
-| 传染性媒体 | 03/03/2017 | 实时 | 是 | 否 | 是 | 否 |
-| inMobi | 30/03/2017 | 1xday | 是 | 否 | 否 | 是 |
-| Innovid | 02/03/2017 | 1xday | 是 | 否 | 否 | 否 |
-| iPinYou | 11/07/2017 | 1xday | 否 | 否 | 否 | 否 |
-| 扬普 | 11/05/2017 | 1xday | 是 | 否 | 否 | 是 |
-| Jivox | 30/08/2017 | 实时 | 否 | 否 | 否 | 否 |
-| Juice Mobile | 03/03/2017 | 1xday | 是 | 否 | 否 | 是 |
-| 克鲁克 | 30/06/2017 | 1xday | 否 | 否 | 否 | 是 |
-| Liftoff.io | 09/11/2017 | 1xday | 是 | 否 | 否 | 是 |
-| LiveIntent | 17/07/2017 | 1xday | 是 | 否 | 否 | 否 |
-| LiveRail | 20/01/2017 | 1xday |  | 否 | 否 |  |
-| 逻辑 | 22/06/2017 | 1xday | 否 | 否 | 否 | 否 |
-| 洛塔梅 | 30/06/2017 | 1xday | 是 | 否 | 否 | 是 |
-| MaxPoint Interactive | 27/02/2017 | 1xday | 否 | 否 | 否 | 否 |
-| MediaMath | 27/02/2017 | 1xday | 是 | 否 | 否 | 是 |
-| Microsoft Bing广告 | 10/10/2019 | 实时 | 是 | 是 | 是 | 否 |
-| Millennial Media | 27/02/2017 | 1xday | 否 | 否 | 否 | 是 |
-| 中国移动平台 | 06/08/2018 | 1xday | 是 | 否 | 否 | 是 |
-| 叙事I/O | 12/01/2018 | 1xday | 是 | 否 | 否 | 是 |
-| 本机触控 | 02/03/2017 | 1xday | 是 | 否 | 否 | 是 |
-| 纳蒂沃 | 27/02/2017 | 2x/天 | 是 | 否 | 否 | 否 |
-| Mail.ru | 29/04/2019 | 1xday | 是 | 否 | 否 | 是 |
-| 移动专业人士 | 25/05/2018 | 1xday | 是 | 否 | 否 | 是 |
-| 网络挖掘 | 02/03/2017 | 实时 | 否 | 否 | 否 | 否 |
-| 新星 | 28/03/2017 | 1xday | 是 | 否 | 否 | 否 |
-| OnAd | 13/02/2017 | 实时 | 是 | 否 | 是 | 否 |
-| OneSpot | 19/06/2017 | 实时 | 是 | 否 | 否 | 是 |
-| OpenX | 26/07/2018 | 1xday | 是 | 否 | 否 | 是 |
-| Opera Mediaworks | 13/02/2017 | 1xday | 是 | 否 | 否 | 是 |
-| 外脑 | 03/04/2017 | 1xday | 是 | 否 | 否 | 否 |
-| OwnerIQ | 13/02/2017 | 实时 | 是 | 否 | 是 | 否 |
-| 161号站台 | 28/11/2018 | 1xday | 是 | 否 | 否 | 是 |
-| PocketMath | 22/02/2017 | 1xday | 是 | 否 | 否 | 是 |
-| Powerlinks | 17/05/2017 | 1xday | 是 | 否 | 否 | 否 |
-| 出版物 | 13/02/2017 | 实时 | 否 | 否 | 否 | 否 |
-| 普尔塞波因特 | 13/02/2017 | 1xday | 是 | 否 | 否 | 否 |
-| PushSpring | 28/08/2017 | 1xday | 是 | 否 | 否 | 是 |
-| Quantcast | 13/02/2017 | 实时 | 是 | 否 | 否 | 否 |
-| RhythmOne / RadiumOne | 13/02/2017 | 实时 | 是 | 否 | 否 | 是 |
-| 重新合并 | 31/05/2017 | 实时 | 是 | 否 | 是 | 是 |
-| Resonate | 17/02/2017 | 1x/天 | 是 | 否 | 否 | 否 |
-| RevJet | 17/02/2017 | 1x/天 | 否 | 否 | 否 | 否 |
-| 火箭燃料 | 17/02/2017 | 实时 | 是 | 否 | 是 | 是 |
-| Rubicon |  | 实时 | 是 | 是 | 否 |  |
-| 运行 | 17/02/2017 | 1xday | 是 | 否 | 否 | 否 |
-| Sabio Mobile | 17/02/2017 | 1xday | 否 | 否 | 否 | 是 |
-| Simpli.fi | 17/02/2017 | 1xday | 否 | 否 | 否 | 是 |
-| Sizmek ad server(Amazon) | 17/02/2017 | 实时 | 是 | 否 | 否 |  |
-| 切片 | 04/09/2018 | 实时 | 是 | 否 | 否 | 是 |
-| Smart Adserver | 31/07/2017 | 实时 | 是 | 否 | 是 | 是 |
-| So-net Media Networks逻辑 |  | 1x/天 | 是 | 否 | 否 |  |
-| 索诺比 | 28/03/2017 | 实时 | 是 | 否 | 是 | 否 |
-| 特定媒体 | 03/03/2017 | 实时 | 否 | 否 | 否 | 否 |
-| 海绵细胞 | 03/03/2017 | 实时 | 是 | 否 | 是 | 是 |
-| SpotX | 16/03/2018 | 1xday | 否 | 是 | 否 | 是 |
-| 施特勒 | 03/03/2017 | 1xday | 是 | 否 | 否 | 否 |
-| SundaySky | 03/03/2017 | 实时 | 是 | 否 | 是 | 否 |
-| StartApp | 25/05/2018 | 1xday | 是 | 否 | 否 | 是 |
-| 超级／缩小 | 03/03/2017 | 1x/天 | 是 | 否 | 否 | 否 |
-| 苏尔瓦塔 | 09/08/2017 | 1xday | 是 | 否 | 否 | 是 |
-| 塔沃奥拉 | 03/08/2017 | 1xday | 否 | 是 | 否 | 否 |
-| Tapad | 03/03/2017 | 实时 | 否 | 否 | 否 | 是 |
-| Telaria | 25/04/2019 | 1xday | 是 | 否 | 否 | 是 |
-| Telogical Systems | 03/03/2017 | 实时 | 是 | 否 | 否 | 否 |
-| 交易台 | 03/03/2017 | 实时 | 是 | 是 | 是 | 是 |
-| Thnk Realtime | 05/02/2016 | 实时 |  | 否 | 否 |  |
-| 震颤视频 | 03/03/2017 | 1xday | 是 | 否 | 否 | 否 |
-| 三重提升 | 03/03/2017 | 实时 | 否 | 是 | 否 | 否 |
-| TrueX | 11/01/2018 | 实时 | 是 | 否 | 否 | 是 |
-| TubeMogul | 03/03/2017 | 实时 | 是 | 否 | 是 | 否 |
-| 转弯／变形蜂 | 03/03/2027 | 实时 | 否 | 否 | 否 | 是 |
-| 特温加 | 29/10/2018 | 实时 | 是 | 否 | 否 | 否 |
-| Twitter定制受众 | 27/03/2017 | 实时 | 是 | 否 | 是 | 否 |
-| 底音 | 11/07/2017 | 1xday | 否 | 否 | 否 | 否 |
-| Verve | 15/06/2017 | 1xday | 是 | 否 | 否 | 是 |
-| VideoAmp | 03/03/2017 | 实时 | 否 | 否 | 否 | 否 |
-| 视频学 | 03/03/2017 | 1xday | 否 | 否 | 否 | 否 |
-| VisualIQ | 24/03/2017 | 1xday | 是 | 否 | 否 | 否 |
-| 维基购买 | 04/08/2018 | 实时 | 是 | 否 | 否 | 是 |
-| X+1 | 05/02/2016 | 1xday |  | 否 | 否 |  |
-| Xaxis | 03/03/2017 | 1xday | 是 | 否 | 否 | 否 |
-| Yahoo DataX | 03/03/2017 | 实时 | 是 | 是 | 是 | 是 |
-| Yahoo! 日本 | 03/03/2017 | 实时 | 否 | 否 | 否 | 否 |
-| Yandex | 28/11/2018 | 1xday | 是 | 否 | 否 | 是 |
-| Yieldex | 21/08/2017 | 变化 | 是 | 否 | 否 | 否 |
-| YieldMo | 03/03/2017 | 1xday | 否 | 否 | 否 | 否 |
-| 由美 | 31/05/2017 | 1xday | 否 | 否 | 否 | 否 |
-| 泽塔／西兹梅克DSP/RocketFuel | 17/02/2017 | 实时 | 是 | 否 | 是 | 是 |
+| [!DNL 4C Insights] | 26/09/2018 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL 4info] | 09/02/2017 | 1xday | 否 | 否 | 否 | 是 |
+| [!DNL AcuityAds] | 09/02/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL Adara] | 17/02/2017 | 实时 | 是 | 否 | 否 | 否 |
+| [!DNL Addictive Mobility] | 22/02/2017 | 1xday | 是 | 否 | 是 | 是 |
+| [!DNL Adelphic] | 22/02/2017 | 1xday | 否 | 否 | 否 | 是 |
+| [!DNL AdForm] | 22/02/2017 | 实时 | 是 | 否 | 是 | 是 |
+| [!DNL AdGear] | 22/02/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL Adikteev] | 26/01/2018 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Adroll] / [!DNL NextRoll] | 10/12/2019 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL Adswizz] | 09/10/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Adtheorent] | 22/02/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Affinio] | 03/04/2018 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Aki] | 21/06/2018 | 1xday | 否 | 否 | 否 | 是 |
+| [!DNL Amazon Advertising] | 15/06/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL AOL AdLearn] | 02/03/2017 | 实时 | 否 | 否 | 否 | 是 |
+| [!DNL AOL ONE] | 02/03/2017 | 实时 | 是 | 否 | 否 | 是 |
+| [!DNL AppNexus] | 02/03/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL AppNexus Yieldex] | 10/08/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Atedra]/[!DNL AdStanding] | 02/03/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL Avocet] | 06/12/2017 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL Bidtellect] | 03/03/2017 | 实时 | 是 | 否 | 否 | 否 |
+| [!DNL Beeswax] | 25/05/2018 | 1xday | 否 | 否 | 否 | 是 |
+| [!DNL Brandscreen] | 03/03/2017 | 实时 | 否 | 否 | 否 | 否 |
+| [!DNL Brightroll] | 03/03/2017 | 1xday | 否 | 是 | 否 | 否 |
+| [!DNL Button] | 18/12/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL C1 Exchange] | 27/02/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Celtra] | 27/02/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Centro] | 27/02/2017 | 1xday | 否 | 否 | 否 | 是 |
+| [!DNL ChoiceStream] | 27/02/2017 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL Clearstream.tv] | 27/02/2017 | 实时 | 是 | 否 | 否 | 否 |
+| [!DNL Collective AMP Platform] | 27/02/2017 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL Criteo] | 27/02/2017 | 实时 | 否 | 是 | 否 | 是 |
+| [!DNL Crosswise] | 27/02/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL D.A.C. AudienceOne] | 27/02/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL DataXu] | 11/20/2017 | 实时 | 否 | 否 | 否 | 是 |
+| [!DNL Digilant] | 02/03/2017 | 实时 |  | 否 | 否 | 否 |
+| [!DNL DistrictM] | 02/03/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL DoubleVerify] | 06/09/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Drawbridge] | 02/03/2017 | 实时 | 否 | 否 | 否 | 是 |
+| [!DNL Dstillery] ([!DNL FKA Media6]) | 02/03/2017 | 实时 | 是 | 否 | 否 | 是 |
+| [!DNL Dunnhumby] | 21/11/2019 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL easyfundraising] | 27/06/2019 | 1xday | 否 | 否 | 否 | 是 |
+| [!DNL Epsilon Conversant] | 03/03/2017 | 实时 | 否 | 否 | 否 | 否 |
+| [!DNL Exponential] | 27/02/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL Eyereturn Marketing] | 11/04/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL EyeView Digital] | 14/06/2018 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Fiksu] | 03/03/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Flashtalking] | 02/03/2017 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL FreakOut] | 03/03/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Freewheel] | 27/02/2017 | 1xday | 是 | 是 | 否 | 是 |
+| [!DNL Gamut Media] | 03/03/2017 | 实时 |  | 否 | 否 |  |
+| [!DNL Google AdsWords Display] | 02/08/2018 | 实时 | 是 | 是 | 否 | 是 |
+| [!DNL Google DoubleClick Bid Manager (DBM)] | 24/04/2017 | 实时 | 是 | 是 | 是 | 是 |
+| [!DNL Google DoubleClick Campaign Manager (DCM fka DFA)] | 24/04/2017 | 实时 | 是 | 是 | 是 | 是 |
+| [!DNL Google DoubleClick for Publishers (DFP, DFPP)] | 24/04/2017 | 实时 | 是 | 是 | 是 | 是 |
+| [!DNL GumGum] | 02/06/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Index Exchange (formerly Casale Media)] | 03/03/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Infectious Media] | 03/03/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL inMobi] | 30/03/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Innovid] | 02/03/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL iPinYou] | 11/07/2017 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL Jampp] | 11/05/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Jivox] | 30/08/2017 | 实时 | 否 | 否 | 否 | 否 |
+| [!DNL Juice Mobile] | 03/03/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Krux] | 30/06/2017 | 1xday | 否 | 否 | 否 | 是 |
+| [!DNL Liftoff.io] | 09/11/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL LiveIntent] | 17/07/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL LiveRail] | 20/01/2017 | 1xday |  | 否 | 否 |  |
+| [!DNL Logicad] | 22/06/2017 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL Lotame] | 30/06/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL MaxPoint Interactive] | 27/02/2017 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL MediaMath] | 27/02/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Microsoft Bing Ads] | 10/10/2019 | 实时 | 是 | 是 | 是 | 否 |
+| [!DNL Millennial Media] | 27/02/2017 | 1xday | 否 | 否 | 否 | 是 |
+| [!DNL mPlatform China] | 06/08/2018 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Narrative I/O] | 12/01/2018 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Native Touch] | 02/03/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Nativo] | 27/02/2017 | 2x/天 | 是 | 否 | 否 | 否 |
+| [!DNL Mail.ru] | 29/04/2019 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Mobile Professionals] | 25/05/2018 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Netmining] | 02/03/2017 | 实时 | 否 | 否 | 否 | 否 |
+| [!DNL Neustar] | 28/03/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL OnAd] | 13/02/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL OneSpot] | 19/06/2017 | 实时 | 是 | 否 | 否 | 是 |
+| [!DNL OpenX] | 26/07/2018 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Opera Mediaworks] | 13/02/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Outbrain] | 03/04/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL OwnerIQ] | 13/02/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL Platform 161] | 28/11/2018 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL PocketMath] | 22/02/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Powerlinks] | 17/05/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Pubmatic] | 13/02/2017 | 实时 | 否 | 否 | 否 | 否 |
+| [!DNL Pulsepoint] | 13/02/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL PushSpring] | 28/08/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Quantcast] | 13/02/2017 | 实时 | 是 | 否 | 否 | 否 |
+| [!DNL RhythmOne / RadiumOne] | 13/02/2017 | 实时 | 是 | 否 | 否 | 是 |
+| [!DNL Remerge] | 31/05/2017 | 实时 | 是 | 否 | 是 | 是 |
+| [!DNL Resonate] | 17/02/2017 | 1x/天 | 是 | 否 | 否 | 否 |
+| [!DNL RevJet] | 17/02/2017 | 1x/天 | 否 | 否 | 否 | 否 |
+| [!DNL RocketFuel] | 17/02/2017 | 实时 | 是 | 否 | 是 | 是 |
+| [!DNL Rubicon] |  | 实时 | 是 | 是 | 否 |  |
+| [!DNL RUN] | 17/02/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Sabio Mobile] | 17/02/2017 | 1xday | 否 | 否 | 否 | 是 |
+| [!DNL Simpli.fi] | 17/02/2017 | 1xday | 否 | 否 | 否 | 是 |
+| [!DNL Sizmek ad server (Amazon)] | 17/02/2017 | 实时 | 是 | 否 | 否 |  |
+| [!DNL Slickdeals] | 04/09/2018 | 实时 | 是 | 否 | 否 | 是 |
+| [!DNL Smart Adserver] | 31/07/2017 | 实时 | 是 | 否 | 是 | 是 |
+| [!DNL So-net Media Networks Logicad] |  | 1x/天 | 是 | 否 | 否 |  |
+| [!DNL Sonobi] | 28/03/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL SpecificMedia] | 03/03/2017 | 实时 | 否 | 否 | 否 | 否 |
+| [!DNL SpongeCell] | 03/03/2017 | 实时 | 是 | 否 | 是 | 是 |
+| [!DNL SpotX] | 16/03/2018 | 1xday | 否 | 是 | 否 | 是 |
+| [!DNL Stroer] | 03/03/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL SundaySky] | 03/03/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL StartApp] | 25/05/2018 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Supership]/[!DNL ScaleOut] | 03/03/2017 | 1x/天 | 是 | 否 | 否 | 否 |
+| [!DNL Survata] | 09/08/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Taboola] | 03/08/2017 | 1xday | 否 | 是 | 否 | 否 |
+| [!DNL Tapad] | 03/03/2017 | 实时 | 否 | 否 | 否 | 是 |
+| [!DNL Telaria] | 25/04/2019 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Telogical Systems] | 03/03/2017 | 实时 | 是 | 否 | 否 | 否 |
+| [!DNL The Trade Desk] | 03/03/2017 | 实时 | 是 | 是 | 是 | 是 |
+| [!DNL Thnk Realtime] | 05/02/2016 | 实时 |  | 否 | 否 |  |
+| [!DNL Tremor Video] | 03/03/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Triple Lift] | 03/03/2017 | 实时 | 否 | 是 | 否 | 否 |
+| [!DNL TrueX] | 11/01/2018 | 实时 | 是 | 否 | 否 | 是 |
+| [!DNL TubeMogul] | 03/03/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL Turn] / [!DNL Amobee] | 03/03/2027 | 实时 | 否 | 否 | 否 | 是 |
+| [!DNL Twenga] | 29/10/2018 | 实时 | 是 | 否 | 否 | 否 |
+| [!DNL Twitter Tailored Audiences] | 27/03/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL Undertone] | 11/07/2017 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL Verve] | 15/06/2017 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL VideoAmp] | 03/03/2017 | 实时 | 否 | 否 | 否 | 否 |
+| [!DNL Videology] | 03/03/2017 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL VisualIQ] | 24/03/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Wikibuy] | 04/08/2018 | 实时 | 是 | 否 | 否 | 是 |
+| [!DNL X+1] | 05/02/2016 | 1xday |  | 否 | 否 |  |
+| [!DNL Xaxis] | 03/03/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Yahoo DataX] | 03/03/2017 | 实时 | 是 | 是 | 是 | 是 |
+| [!DNL Yahoo! Japan] | 03/03/2017 | 实时 | 否 | 否 | 否 | 否 |
+| [!DNL Yandex] | 28/11/2018 | 1xday | 是 | 否 | 否 | 是 |
+| [!DNL Yieldex] | 21/08/2017 | 变化 | 是 | 否 | 否 | 否 |
+| [!DNL YieldMo] | 03/03/2017 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL Yume] | 31/05/2017 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL Zeta] / [!DNL Sizmek DSP] / [!DNL RocketFuel] | 17/02/2017 | 实时 | 是 | 否 | 是 | 是 |
