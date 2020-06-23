@@ -7,19 +7,19 @@ solution: Audience Manager
 title: 关于相似建模
 uuid: 39441e72-5316-453d-9aff-0e0b633aabcd
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 0%
+source-wordcount: '1590'
+ht-degree: 1%
 
 ---
 
 
-# 了解相似建模 {#about-algorithmic-models}
+# 理解 [!UICONTROL Look-Alike Modeling] {#about-algorithmic-models}
 
-## 使用相似建模找到新用户 {#find-new-users}
+## 查找新用户 [!UICONTROL Look-Alike Modeling] {#find-new-users}
 
-[!UICONTROL Look-Alike Modeling] 帮助您通过自动化受众分析发现新的独特。 当您选择特征或区段、时间间隔以及第一方和第三方数据源时，流程开始。 您的选择为算法模型提供输入。 当分析过程运行时，它会根据所选人群的共享特征来查找合格用户。 完成后，此数据可在特 [征构建器中](../../features/traits/about-trait-builder.md) ，使用它根据准确性和范围创 [建特征](../../features/traits/trait-accuracy-reach.md)。 此外，您还可以构建将算法特征与基于规则的特征相结合的细分，并使用布尔表达式和比较运算符添加其他资格要求。 [!UICONTROL Look-Alike Modeling] 为您提供了从所有可用特征数据中提取值的动态方式。
+[!UICONTROL Look-Alike Modeling] 帮助您通过自动化受众分析发现新的独特。 当您选择或、时 [!UICONTROL trait] 间 [!UICONTROL segment]间隔以及第一方和第三方时，流程开始 [!UICONTROL data sources]。 您的选择为算法模型提供输入。 当分析过程运行时，它会根据所选人群的共享特征来查找合格用户。 完成后，此数据可在特 [征构建器中](../../features/traits/about-trait-builder.md) ，使用它根据准确性和范围创 [建特征](../../features/traits/trait-accuracy-reach.md)。 此外，您还可以构建将算法特征与表达式和比较运 [!UICONTROL rules-based traits] 算符相结合的细分，并添加其 [!DNL Boolean] 他资格要求。 [!UICONTROL Look-Alike Modeling] 为您提供了从所有可用特征数据中提取值的动态方式。
 
 ## 优势 {#advantages}
 
@@ -27,69 +27,65 @@ ht-degree: 0%
 
 * **数据准确性：** 该算法能够定期运行，使结果保持最新和相关。
 * **自动化：** 您不必管理大量静态规则。 算法将为您找到受众。
-* **节省时间并减少工作量：** 通过我们的建模过程，您不必猜测哪些特征／细分可能起作用，也不必花时间在活动上寻找新受众。 模型可以为您完成此操作。
+* **节省时间并减少工作量：** 通过我们的建模过程，您不必猜测哪些工作 [!UICONTROL traits]或将[!UICONTROL segments] 时间用在活动上，即可发现新受众。 模型可以为您完成此操作。
 * **可靠性：** 建模可以与服务器端发现和鉴定流程结合使用，这些流程可以评估您自己的数据和您有权访问的选定第三方数据。 这意味着您不必查看网站上的访客来确定他们是否具有某个特征。
 
 ## 工作流 {#workflow}
 
 您可以在中管理模 **[!UICONTROL Audience Data > Models]**&#x200B;型。 从较高层面来说，工作流流程涉及以下方面：
 
-* 选择要算法评估的基线数据。 这包括特征或区段、时间范围和数据源(您已经通过访问的您自己的数据和第三方 [!DNL Audience Manager]数据)。 在模型创建工作流中，您可以排除不想干扰模型的特征。
-* 保存模型。 保存后，算法评估过程会自动运行。 但是，请注意，此过程可能需要7天才能完成。 [!DNL Audience Manager] 当算法完成且结果可用于特征创建时，会向您发送电子邮件。
-* 在中构建算法特 [!UICONTROL Trait Builder]征。
-* 将特征合并为细分 [!UICONTROL Segment Builder]。
-* 创建区段数据并将其发送到目标。
+* 选择要算法评估的基线数据。 这包括 [!UICONTROL trait] 或、 [!UICONTROL segment]时间范围和(您 [!UICONTROL data sources] 已经有权访问的您自己的数据和第三方数 [!DNL Audience Manager]据)。 在模型创建工作流中，可 [!UICONTROL traits] 以排除不想与模型相干的项。
+* 保存模型。 保存后，算法评估过程会自动运行。 但是，请注意，此过程可能需要7天才能完成。 [!DNL Audience Manager] 算法完成且结果可供创建时，会向您发送一封电 [!UICONTROL trait] 子邮件。
+* 在中构 [!UICONTROL traits] 建算法 [!UICONTROL Trait Builder]。
+* 融 [!UICONTROL traits] 入 [!UICONTROL segments] 其中 [!UICONTROL Segment Builder]。
+* 创建数据 [!UICONTROL segment] 并将其发送到 [!UICONTROL destination]。
 
 ## 疑难解答 {#troubleshooting}
 
-我们会取消激 [!UICONTROL Look-Alike Model] 活任何在连续三次运行中无法生成数据的操作。 请注意，之后不能将模型的状态设置回活动状态。 为确保您的模型生成数据，我们建议您从数据源构建具有足够特征的模型，以便从中累积数据。
+我们会取消激 [!UICONTROL Look-Alike Model] 活任何在连续三次运行中无法生成数据的操作。 请注意，之后不能将模型的状态设置回活动状态。 为确保您的模型生成数据，我们建议您从数据源构建模型，并且有足够 [!UICONTROL traits] 的数据来累积数据。
 
-## 了解TraitWeight {#understanding-traitweight}
+## 理解 [!UICONTROL TraitWeight] {#understanding-traitweight}
 
-[!UICONTROL TraitWeight] 是专有算法，旨在自动发现新特征。 它将来自您当前特征和区段的特征数据与您有权访问的所有其他第一方和第三方数据进行比较 [!DNL Audience Manager]。 有关算法发现过程的说明，请参 [!UICONTROL TraitWeight] 阅本节。
-
-<!-- traitweight.xml -->
+[!UICONTROL TraitWeight] 是专有算法，旨在自动发现新 [!UICONTROL traits] 内容。 它将您 [!UICONTROL trait] 当前的数据 [!UICONTROL traits] 与您 [!UICONTROL segments] 有权访问的所有其他第一方和第三方数据进行比较 [!DNL Audience Manager]。 有关算法发现过程的说明，请参 [!UICONTROL TraitWeight] 阅本节。
 
 ![](assets/algo_model.png)
 
 以下步骤描述了 [!UICONTROL TraitWeight] 评估过程。
 
-### 第1步： 构建特征比较的基线
+### 第1步： 构建比较基 [!UICONTROL Trait] 线
 
-要构建基线， [!UICONTROL TraitWeight] 请在30、60或90天间隔内测量与受众关联的所有特征。 其次，根据特征的频率和相关性对特征进行排序。 频率计数衡量共性。 关联度量特征仅存在于基线受众中的可能性。 通常出现的特征被认为具有高通用性，这是用于在与选定数据源中发现的特征结合时设置加权得分的重要特征。
+要构建基线， [!UICONTROL TraitWeight] 请在30、 [!UICONTROL traits] 60或90天间隔内测量与受众关联的所有值。 其次，根据 [!UICONTROL traits] 其频率和相关性进行排序。 频率计数衡量共性。 关联度量仅在基 [!UICONTROL trait] 线受众中存在的可能性。 [!UICONTROL Traits] 这通常被说为具有高通用性，在与在您的选定内容中发现的加权分数结合时，这 [!UICONTROL traits] 是用于设置加权分数的重要特 [!UICONTROL data sources]征
 
-### 第2步： 在数据源中查找相同的特征
+### 第2步： 在“Find the [!UICONTROL Traits] Same”（查找相同） [!UICONTROL Data Source]
 
-在构建基准进行比较后，算法会在所选数据源中查找相同的特征。 在此步骤中 [!UICONTROL TraitWeight] ，对所有发现的特征执行频率计数并将它们与基线进行比较。 但是，与基线不同，不常见特征的排名高于那些出现频率更高的特征。 据说，稀有特征表现出高度特异性。 [!UICONTROL TraitWeight] 评估共同基准特征和不常见（高度特定）数据源特征的组合，它们比两个数据集共同的特征更具影响力或吸引力。 事实上，我们的模型能够识别这些大的共性特征，并且不会为具有高相关性的数据集分配过多的优先级。 稀有特征优先级更高，因为它们更可能代表新的、独特的用户，而不是整体上具有高度通用性的特征。
+在生成基线进行比较后，算法会在您的选定内 [!UICONTROL traits] 容中查找相同 [!UICONTROL data sources]。 在此步骤中 [!UICONTROL TraitWeight] ，执行所有发现的频率计 [!UICONTROL traits] 数并将它们与基线进行比较。 但是，与基线不同，不 [!UICONTROL traits] 常见的排名要比出现频率更高。 据 [!UICONTROL traits] 说稀有具有高度特异性。 [!UICONTROL TraitWeight] 评估共同基准和不常见 [!UICONTROL traits] （高度特定）的组合 [!UICONTROL data source] , [!UICONTROL traits] 它们比两个数据集的共同 [!UICONTROL traits] 更具影响力或更可取。 事实上，我们的模型识别这些大的、共 [!UICONTROL traits] 性的数据集，并且不会为高相关性的数据集分配过多的优先级。 极少 [!UICONTROL traits] 数用户会获得更高的优先级，因为他们更可能代表新的、独特的用户，而 [!UICONTROL traits] 不是全局通用性更高。
 
 ### 第3步： 分配权重
 
-在此步骤中 [!UICONTROL TraitWeight] ，根据影响力或期望性对新发现的特征进行排序。 权重比例从0%到100%。 排名接近100%的特征意味着它们更像基线人口中的受众。 此外，重度加权特征很有价值，因为它们代表的是新的、独特的用户，他们的行为可能与您已建立的基准受众相似。 请记住 [!UICONTROL TraitWeight] ，将基线中具有高通用性的特征和比较数据源中具有高特异性的特征视为比每个数据集中通用的特征更有价值。
+在这一步中，按 [!UICONTROL TraitWeight] 照影响力或 [!UICONTROL traits] 期望性对新发现的内容进行排名。 权重比例从0%到100%。 [!UICONTROL Traits] 排名接近100%意味着它们更像基线人口中的受众。 此外，权重过大 [!UICONTROL traits] 也很有价值，因为它们代表的是新的、独特的用户，他们的行为可能与您已建立的基准受众相似。 请记住， [!UICONTROL TraitWeight] 在基 [!UICONTROL traits] 线中具有高的通用性，在比较的数据源中具有高的专一性，这比在每个数据集中 [!UICONTROL traits] 都具有更高的价值。
 
 ### 第4步： 评分用户
 
-所选数据源中的每个用户都会得到一个用户分数，该分数等于该用户用户档案上影响特征的所有权重的和。 然后，用户得分在0%到100%之间进行标准化。
+所选用户中 [!UICONTROL data sources] 的每个用户都会得到一个用户分数，该分数等于该用户用户档案上有影响 [!UICONTROL traits] 力的所有权重的和。 然后，用户得分在0%到100%之间进行标准化。
 
 ### 第5步： 显示和处理结果
 
-[!DNL Audience Manager] 显示加权模型结果 [!UICONTROL Trait Builder]。 当您要构建算法特征时， [!UICONTROL Trait Builder] 允许您根据算法在数据运行期间生成的加权得分创建特征。 您可以选择更高的准确度，以仅限定用户得分很高的用户，因此与基线受众非常相似，而不是受众的其余部分。 如果要达到更大的受众（触及），可以降低准确性。
+[!DNL Audience Manager] 显示加权模型结果 [!UICONTROL Trait Builder]。 当您要构建数据时， [!UICONTROL algorithmic trait]您 [!UICONTROL Trait Builder] 可以根据 [!UICONTROL traits] 算法在数据运行过程中生成的加权分数进行创建。 您可以选择更高的准确度，以仅限定用户得分很高的用户，因此与基线受众非常相似，而不是受众的其余部分。 如果要达到更大的受众（触及），可以降低准确性。
 
-### 第6步： 跨处理周期重新评估特征的重要性
+### 第6步： 重新评估跨处理周 [!UICONTROL Trait] 期的重要性
 
-定期 [!UICONTROL TraitWeight] 根据特征的大小和人口变化重新评估特征的重要性。 随着时间的推移，符合该特征的用户数量增加或减少。 这种行为在变得非常大的特征中最为明显。 例如，假定算法使用特征A进行建模。 随着特征A的数量增加， [!UICONTROL TraitWeight] 请重新评估该特征的重要性，并可能分配较低的分数或忽略它。 在这种情况下，特征A太普遍或太大，不能对其人口说任何重要的话。 在 [!UICONTROL TraitWeight] 降低特征A的值（或在模型中忽略它）后，算法特征的种群会减少。 影响特征的列表反映了基线种群的演化。 使用影响特征的列表来了解这些变化的发生原因。
+定期 [!UICONTROL TraitWeight] 根据人口的大小 [!UICONTROL trait] 和变化重新评估其重要性 [!UICONTROL trait]。 随着时间的推移，符合此条件的用 [!UICONTROL trait] 户数量增加或减少。 这种行为在变得非常大的特征中最为明显。 例如，假定算法用于 [!UICONTROL trait A] 建模。 随着人口的增 [!UICONTROL trait A] 加， [!UICONTROL TraitWeight] 会重新评估其重要性， [!UICONTROL trait] 并可能给出较低的分数或忽略它。 在这种情况下， [!UICONTROL trait A] 人口过多或过大，不能对其人口做出任何重要评论。 在 [!UICONTROL TraitWeight] 降低值(或 [!UICONTROL trait A] 在模型中忽略它)后，算法特征的种群减少。 影响力的列表 [!UICONTROL traits] 反映了基线人口的演变。 使用有影响力的列表 [!UICONTROL traits] 来了解为何会发生这些变化。
 
 相关链接：
 
 * [Model Builder](../../features/algorithmic-models/create-model.md)
-* [准确性和触及范围](../../features/traits/trait-accuracy-reach.md)
+* [精度和范围](../../features/traits/trait-accuracy-reach.md)
 
-## 更新相似模型和特征的计划 {#update-schedule}
+## 更新计划 [!UICONTROL Look-Alike Models] 和 [!UICONTROL Traits] {#update-schedule}
 
-为新的或现有的算法模型和特征创建和更新计划。
+为新的或现有的和创建和更新 [!UICONTROL algorithmic models] 计划 [!UICONTROL traits]。
 
-<!-- c_model_update_schedule.xml -->
-
-### 相似模型创建和更新计划
+### [!UICONTROL Look-Alike Model] 创建和更新计划
 
 <table id="table_E75A2B334A7F47ED9DFFBD6DF8636641"> 
  <thead>
@@ -118,7 +114,7 @@ ht-degree: 0%
  </tbody>
 </table>
 
-### 相似特征创建和更新计划
+### [!UICONTROL Look-Alike Trait] 创建和更新计划
 
 <table id="table_92A908818C4F4F2287EA56C786CD0BBD"> 
  <thead> 
@@ -143,20 +139,16 @@ ht-degree: 0%
 
 列表视图是一个中央工作区，可帮助您创建、检查和管理模型。
 
-<!-- c_models_list_view.xml -->
-
-“模型列表”页包含有助于您：
+列表 [!UICONTROL Models] 页面包含可帮助您：
 
 * 创建新模型。
 * 管理现有模型（编辑、暂停、删除或克隆）。
 * 按名称搜索模型。
-* 使用任何给定模型创建算法特征。
+* 使用 [!UICONTROL algorithmic traits] 任何给定模型进行创建。
 
 ## 模型摘要视图 {#models-summary-view}
 
-摘要页显示模型详细信息，如名称、范围／准确性、处理历史记录以及从模型创建的特征。 该页面还包含用于创建和管理模型的设置。 单击摘要列表中的模型名称以查看其详细信息。
-
-<!-- c_models_summary.xml -->
+摘要页显示模型详细信息，如名称、范围／准确性、处理历史记录 [!UICONTROL traits] ，以及从模型创建的。 该页面还包含用于创建和管理模型的设置。 单击摘要列表中的模型名称以查看其详细信息。
 
 模型摘要页包含以下部分。
 
