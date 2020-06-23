@@ -1,22 +1,22 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: 通过像素调用捕获活动点击数据
+seo-title: 通过像素调用捕获营销活动点击数据
 solution: Audience Manager
-title: 通过像素调用捕获活动点击数据
+title: 通过像素调用捕获营销活动点击数据
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 7%
+source-wordcount: '652'
+ht-degree: 12%
 
 ---
 
 
-# Capturing Campaign Click Data via Pixel Calls {#capturing-campaign-click-data-via-pixel-calls}
+# 通过像素调用捕获营销活动点击数据 {#capturing-campaign-click-data-via-pixel-calls}
 
-点击跟踪可衡量您整个活动的访客参与度，因为它记录了第三方创意人员的基于点击的活动。 与展示 [集合](/help/using/integration/media-data-integration/impression-data-pixels.md)相似，事件调用被发送到Audience Manager数据收集服务器([!DNL DCS])以进行处理。 然后，访客被重定向到预期的Web地址。
+点击跟踪可衡量您整个活动的访客参与度，因为它记录了第三方创意人员的基于点击的活动。 与展示 [集合](/help/using/integration/media-data-integration/impression-data-pixels.md)相似，事件调用被发送到数据 [!DNL Audience Manager] 收集服务器([!DNL DCS])以进行处理。 然后，访客被重定向到预期的Web地址。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Experience Cloud ID (ECID). </span>For more information about the ECID, see <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> <p>可选。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"></span> Experience Cloud ID (ECID). For more information about the ECID, see <a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> <p>可选。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 
@@ -166,7 +166,7 @@ d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creativ
 
 `https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`
 
-## 其他功能-受众优化报告
+## 其他功能- [!UICONTROL Audience Optimization Reports]
 
 您可以使用像素调用来支持 [受众优化报表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [希望使用像素为报表提供动力](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，请参阅元数据文件的概述和映射。
 
