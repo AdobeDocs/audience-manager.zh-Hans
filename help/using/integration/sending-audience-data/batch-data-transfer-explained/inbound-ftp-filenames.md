@@ -1,26 +1,26 @@
 ---
 description: 描述向Audience Manager发送数据时需要遵循的必填字段、语法、命名约定和文件大小。 将数据发送到Audience ManagerFTP目录时，根据这些规范设置文件的名称和大小。
 seo-description: 描述向Audience Manager发送数据时需要遵循的必填字段、语法、命名约定和文件大小。 将数据发送到Audience ManagerFTP目录时，根据这些规范设置文件的名称和大小。
-seo-title: 入站数据文件的FTP名称和文件大小要求
+seo-title: 入站数据文件的 FTP 名称和文件大小要求
 solution: Audience Manager
-title: 入站数据文件的FTP名称和文件大小要求
+title: 入站数据文件的 FTP 名称和文件大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 3%
+source-wordcount: '896'
+ht-degree: 9%
 
 ---
 
 
-# 入站数据文件的FTP名称和文件大小要求{#ftp-name-and-file-size-requirements-for-inbound-data-files}
+# [!DNL FTP]入站数据文件的 名称和文件大小要求{#ftp-name-and-file-size-requirements-for-inbound-data-files}
 
-描述向Audience Manager发送数据时需要遵循的必填字段、语法、命名约定和文件大小。 将数据发送到Audience Manager目录时，根据这些规范设置文件的名称和大 [!DNL FTP] 小。
+描述向发送数据时需要遵循的必填字段、语法、命名约定和文件大小 [!DNL Audience Manager]。 将数据发送到Audience Manager目录时，根据这些规范设置文件的名称和大 [!DNL FTP] 小。
 
 >[!WARNING]
 >
->我们正在逐步取消对配置的 [!DNL FTP] 支持。 尽管现有集成中仍支持入站数据文件摄取， [!DNL FTP] 但我们强烈建议使用 [!DNL Amazon S3] 内置脱机数据进行新集成。 有关 [详细信息，请参阅Amazon S3入站数据文件的名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) 。
+>We are gradually phasing out support for [!DNL FTP] configurations. While inbound data file ingestion is still supported in existing [!DNL FTP] integrations, we strongly recommend using [!DNL Amazon S3] to onboard offline data for new integrations. 有关详细信息，请参阅[入站数据文件的 Amazon S3 名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [.gz]</code> </p> </td> 
-   <td colname="col2"> <p>Gzip是允许的FTP文件名压缩格式。 如果使用文件压缩，请确保文件名的扩展名正确。 </p> <p>压缩文件必须为3 GB或更小。 如果文件较大，请与客户服务部联系。 尽管Audience Manager可以处理大型文件，但我们可能可以帮助您减小文件大小并提高数据传输效率。 请参 <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md"> 阅入站数据传输文件的文件压缩</a> 。 </p> </td> 
+   <td colname="col2"> <p>Gzip是允许的FTP文件名压缩格式。 如果使用文件压缩，请确保文件名的扩展名正确。 </p> <p>压缩文件必须为3 GB或更小。 如果文件较大，请咨询客户服务。 尽管Audience Manager可以处理大型文件，但我们可能可以帮助您减小文件大小并提高数据传输效率。 请参阅<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">入站数据传输文件的文件压缩</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
