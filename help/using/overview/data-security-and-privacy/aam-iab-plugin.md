@@ -5,7 +5,7 @@ seo-title: 适用于 IAB TCF 的 Audience Manager 插件
 solution: Audience Manager
 title: 适用于 IAB TCF 的 Audience Manager 插件
 translation-type: tm+mt
-source-git-commit: 3523cdb0d6d412c1a93694e4cbeab188154120f0
+source-git-commit: 40e30379f051398a5f6c8ee7db49b6c5c5e146cd
 workflow-type: tm+mt
 source-wordcount: '2449'
 ht-degree: 40%
@@ -46,7 +46,7 @@ Audience Manager可以帮助您尊重用户的隐私权选择，并为您提供�
 
 ## 将 升级至 [!DNL IAB TCF v2.0] {#upgrading}
 
-将实施从 [!DNL Audience Manager Plug-in for IAB TCF] v1.1 [!DNL IAB TCF] 升级到 [!DNL IAB TCF] v2.0或首次启用v2.0的客户，都应按照如下所述 [!DNL IAB TCF] 的相同先决条件和实施准则进行升级。
+将实施从 [!DNL Audience Manager Plug-in for IAB TCF] v1.1 [!DNL IAB TCF] 升级到 [!DNL IAB TCF][!DNL IAB TCF] v2.0或首次启用v2.0的客户，都应按照如下所述对先决条件和实施遵循相同的准则。
 
 ## 先决条件 {#prerequisites}
 
@@ -65,11 +65,11 @@ Audience Manager可以帮助您尊重用户的隐私权选择，并为您提供�
 1. 您必须使用 Adobe Experience Platform Identity Service (ECID) 版本 5 或更高版本。[下载](https://github.com/Adobe-Marketing-Cloud/id-service/releases) ECID 的最新版本。
 2. You must be using Audience Manager [!DNL Data Integration Library] (DIL) version 9.0 or newer, downloadable from [here](https://github.com/Adobe-Marketing-Cloud/dil/releases). 请阅读 [Audience Manager 中的 DIL 文档](../..//dil/dil-overview.md)。我们建议使 [用Adobe Launch](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html) ，以实现最简单的DIL实施，以便Audience Manager。
 3. Alternatively, if you use [!DNL Server-Side Forwarding] (SSF) to import data into Audience Manager, you must upgrade to the latest version of AppMeasurement. 使用 [Analytics 代码管理器](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-tools/code-manager-admin.html)下载 AppMeasurement。
-4. 您必须使用与IAB TCF v2.0集成并在IAB TCF中注册的商业类或您自己的“同意管理Platform”(CMP)。 请参阅[在 IAB 框架内注册的 CMP](https://iabeurope.eu/cmp-list/)。
+4. 您必须使用与IAB TCF v2.0集成并在IAB TCF中注册的商业类或您自己的同意管理平台(CMP)。 请参阅[在 IAB 框架内注册的 CMP](https://iabeurope.eu/cmp-list/)。
 
 >[!WARNING]
 >
->如果您使用的是不支持IAB TCF v.2.0的同意管理Platform(CMP),Audience Manager将自动以ID同 `gdpr=0` 步发送参数，即使访客在欧洲合并。 要确定您的GDPR验证是否处于活动状态，我们建议您通过同意管理Platform(CMP)确认他们支持IAB TCF v2.0。
+>如果您使用的是不支持IAB TCF v.2.0的同意管理平台(CMP),Audience Manager将自动以ID同 `gdpr=0` 步发送参数，即使您的访客是欧洲合并。 要确定您的GDPR验证是否处于活动状态，我们建议您通过同意管理平台(CMP)确认他们支持IAB TCF v2.0。
 
 ## 建议和实施方式 {#recommendations}
 
@@ -95,7 +95,7 @@ Audience Manager可以帮助您尊重用户的隐私权选择，并为您提供�
 
 用户选择其隐私选择后，用户选择将记录在IAB TC字符串中。 The IAB TC string stores the combination of approved purposes and vendors, along with other metadata information (see the [IAB page](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20Consent%20string%20and%20vendor%20list%20formats%20v2.md#about-the-transparency--consent-string-tc-string) for more information).
 
-在IAB TCF中注册的每个供应商都评估IAB TC字符串并根据用户的隐私选择做出决策。 请记住，用户的隐私权选择在所有注册IAB TCF的供应商中均有效。
+在IAB TCF中注册的每个供应商都评估IAB TC字符串并根据用户的隐私选择做出决策。 请记住，用户的隐私权选择在所有注册IAB TCF的供应商中都有效。
 
 ## Audience Manager需要的用途 {#aam-standard-purposes}
 
