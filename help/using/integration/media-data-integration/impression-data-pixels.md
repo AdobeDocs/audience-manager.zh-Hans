@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 通过像素调用捕获营销活动展示数据
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: aefd0a0798797b8bbe9cadc1af9f2e86e772bb4c
+source-git-commit: 3523cdb0d6d412c1a93694e4cbeab188154120f0
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 21%
+source-wordcount: '735'
+ht-degree: 20%
 
 ---
 
@@ -98,7 +98,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
   </tr> 
    <tr> 
    <td colname="col1"> <code>gdpr</code>  </td> 
-   <td colname="col2"> <p>与<a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">适用于 IAB TCF 的 Audience Manager 插件</a>有关。</p> <p><code>gdpr</code> 可以是0（GDPR不适用）或1（GDPR适用）。</p> <p>默认值为 0。</p><p>可选。</p> </td> 
+   <td colname="col2"> <p>与<a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">适用于 IAB TCF 的 Audience Manager 插件</a>有关。</p> <p><code>gdpr</code> 可以是0（GDPR不适用）或1（GDPR适用）。</p> <p>默认值为 0。</p><p>可选。</p><p>如果 <code>gdpr=1</code>，则该参 <code>gdpr_consent</code> 数应包含IAB TC同意参数以成功处理数据。 否则，将删除所有数据。</p> </td> 
   </tr>
    <tr> 
    <td colname="col1"> <code>gdpr_consent</code> </td> 
