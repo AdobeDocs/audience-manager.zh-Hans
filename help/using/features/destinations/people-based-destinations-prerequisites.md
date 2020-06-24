@@ -5,9 +5,9 @@ seo-title: 基于人员的目标先决条件和注意事项
 solution: Audience Manager
 title: 先决条件和注意事项
 translation-type: tm+mt
-source-git-commit: 4d4915b9a99ddcdf321d9f4970321f5f54e057ea
+source-git-commit: 02bde5060d50ba581937c504331397dfbbcdc19f
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '953'
 ht-degree: 4%
 
 ---
@@ -46,6 +46,8 @@ ht-degree: 4%
 在使用将第 [!UICONTROL People-Based Destinations] 一方受众段发送到之前， [!DNL LinkedIn]请确保您的 [!DNL LinkedIn Campaign Manager] 帐户具有或更 [!DNL Creative Manager] 高的权限级别。
 
 要了解如何编辑您的 [!DNL LinkedIn Campaign Manager] 用户权限，请 [参阅LinkedIn文档中的添加、编辑和删除](https://www.linkedin.com/help/lms/answer/5753) 广告帐户的用户权限。
+
+有关 [视频说明，请参阅了解和配置LinkedIn基于人员的目标](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 。
 
 ## 数据载入 {#data-onboarding}
 
