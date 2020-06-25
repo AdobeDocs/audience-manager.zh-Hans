@@ -1,19 +1,23 @@
 ---
-description: “常规”报表返回有关特征、区段和目标的性能数据。
-seo-description: 受众管理器中的“常规”报表会返回有关特征、区段和目标的性能数据。
-seo-title: 受众经理中的常规报告
+description: “一般”报表返回有关特征、区段和目标的性能数据。
+seo-description: Audience Manager中的“常规”报表会返回特征、区段和目标的性能数据。
+seo-title: Audience Manager中的常规报告
 solution: Audience Manager
-title: 一般报告
+title: 常规报表
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
+feature: general & trend reports
 translation-type: tm+mt
-source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 1%
 
 ---
 
 
-# 一般报告{#general-reports}
+# 常规报表{#general-reports}
 
-报告 [!UICONTROL General] 会返回有关特征、区段和目标的性能数据。
+报 [!UICONTROL General] 表会返回特征、区段和目标的性能数据。
 
 ## 概述 {#general-reports-overview}
 
@@ -23,15 +27,15 @@ c_general_reports.xml
 
  -->
 
-[!DNL Audience Manager] 使用 [!UICONTROL Role Based Access Control] ([!UICONTROL RBAC])将用户组权限扩展到报 [!UICONTROL General] 表。 用户只能在报告中看到具有视图权限的那些特征和区段。 [!UICONTROL RBAC] 功能允许您控制内部团队能够视图的报告数据。 例如，管理不同广告商帐户的代理可以配置用户组权限，以便管理广告商A帐户的团队无法看到广告商B的报告数据。
+[!DNL Audience Manager] 使用 [!UICONTROL Role Based Access Control] ([!UICONTROL RBAC])将用户组权限扩展到报 [!UICONTROL General] 表。 用户只能在报告中看到他们具有视图权限的那些特征和区段。 [!UICONTROL RBAC] 功能，您可以控制内部团队能够报告哪些视图数据。 例如，管理不同广告商帐户的代理可以配置用户组权限，以便管理广告商A帐户的团队无法看到广告商B的报告数据。
 
 在需要 [!UICONTROL General] 时运行报告：
 
 * 按特征、区段或目标查看性能。
-* 以1天、7天、14天、30天、60天和90天间隔跟踪展示次数（总数和唯一数）。
+* 按1天、7天、14天、30天、60天和90天间隔跟踪展示次数（总数和唯一数）。
 * 查看总负载和唯一负载计数。
 * 比较特征和区段性能。
-* 识别强或弱的性能特征和细分，分析需求，或将负载／火灾数据与第三方报告进行比较。
+* 确定性能特征和细分，分析需求，或将负载／火灾数据与第三方报告进行比较。
 * 导出数据（.csv格式）以进一步分析和共享。
 
 下图提供了报告中关键元素的高级概 [!UICONTROL General] 述。
@@ -40,17 +44,17 @@ c_general_reports.xml
 
 1. 配置以下选项：
 
-   * **报告类型：** 选择所需的报告类型（特征、区段或目标）。
+   * **报告类型：** 选择所需的报表类型（特征、区段或目标）。
 
-   * **对于日期至：** 指定报表的日期范围。
+   * **日期至：** 指定报表的日期范围。
 
 2. 按名称或ID搜索特征、区段或目标。
-3. 在文件夹列表中，将要报告的特征、区段或目标拖放到右侧 [!UICONTROL Selections] 的面板中。
+3. 在文件夹列表中，将要报告的特征、区段或目标拖放到右 [!UICONTROL Selections] 侧的面板中。
 4. 生成要在可导出表中显示的报告。
 
 ## Run a General Report {#run-general-report}
 
-本节介绍如何运行报告， [!UICONTROL General] 并设置时间和其他性能选项。
+本节介绍如何运行报 [!UICONTROL General] 告并设置时间和其他性能选项。
 
 <!-- 
 
@@ -59,10 +63,10 @@ t_run_general_report.xml
  -->
 
 1. 在仪表板 **[!UICONTROL Analytics]** 中，单击 **[!UICONTROL General Reports]**。
-1. 从下 **[!UICONTROL Report Type]** 拉列表中，选择所需的类型：特征、区段或目标。
+1. 从下 **[!UICONTROL Report Type]** 拉列表中，选择所需的类型： 特征、区段或目标。
 1. *条件* ：单击日期框以显示日历，如果要指定非今天的日期，请选择报表的结束日期。
 1. 按名称或ID搜索特征、区段或目标。
-1. 在文件夹列表中，将要报告的特征、区段或目标拖放到右侧 [!UICONTROL Selections] 的面板中。
+1. 在文件夹列表中，将要报告的特征、区段或目标拖放到右 [!UICONTROL Selections] 侧的面板中。
 1. 单击 **[!UICONTROL Run Report]**.
 
    结果显示在可导出的表中。 单击列标题以按升序或降序对结果进行排序。
@@ -70,37 +74,37 @@ t_run_general_report.xml
 
    >[!NOTE]
    >
-   >[!UICONTROL Total Trait Realizations] 仅计 [!UICONTROL Rule-based Traits] 算。
+   >[!UICONTROL Total Trait Realizations] 只计 [!UICONTROL Rule-based Traits] 算。
 
-1. *可选* ，单击 **[!UICONTROL Export to CSV]**。 这将导出 [!UICONTROL Unique Trait Realizations]所有 [!UICONTROL Total Trait Realizations]日期 [!UICONTROL Total Trait Population] 范围和日期范围。
+1. *可选* ，单 **[!UICONTROL Export to CSV]**&#x200B;击。 这将导出 [!UICONTROL Unique Trait Realizations]所有 [!UICONTROL Total Trait Realizations]日期 [!UICONTROL Total Trait Population] 范围和范围。
 
-## 常规报告结果说明 {#general-reports-explained}
+## 一般报告结果说明 {#general-reports-explained}
 
-中的数字直 [!UICONTROL General Reports] 接由我们生成 [!UICONTROL User Profile Store]。 结果反映生成这些报告号 [!DNL Audience Manager] 时包含在后端的用户数。
+中的数字 [!UICONTROL General Reports] 直接由我们生 [!UICONTROL User Profile Store]成。 结果反映生成这些报告 [!DNL Audience Manager] 号时后端包含的用户数。
 
-* 这些数字不包括流量过大的访客ID。 在到达我们的后端系统之前，会先过滤来自机器人程序的流量。 此外，在后端运行的每周清理作业期间，会丢弃一些机器人流量。
-* 如果通过已键出 [!DNL Audience Manager] UUID的入站处理来载入数据，并且这些ID包括在我们系统中不再处于活动状态的用户，则这些不活动的 [!DNL Audience Manager] UUID将不会到达并 [!UICONTROL User Profile Store] 且不报告。
-* [!UICONTROL Total Trait Realizations] 仅计 [!UICONTROL Rule-based Traits] 算。
+* 这些数字不包括流量过多的访客ID。 在到达我们的后端系统之前，会过滤来自机器人程序的流量。 此外，在后端运行的每周清除作业期间，会丢弃一些bot通信。
+* 如果通过与UUID锁定的入站处理来建立数 [!DNL Audience Manager] 据，并且这些ID包括系统中不再处于活动状态的用户，则这些不活动的 [!DNL Audience Manager] UUID将不会 [!UICONTROL User Profile Store] 到达并报告。
+* [!UICONTROL Total Trait Realizations] 只计 [!UICONTROL Rule-based Traits] 算。
 
 ## 特征的常规报告结果 {#general-report-results-traits}
 
-运行“常规”报表并选择报告类型时，以下过滤器 **[!UICONTROL Trait]** 将可用。
+运行“常规”报表并选择报告类型时， **[!UICONTROL Trait]** 可使用以下过滤器。
 
 按以下方式筛选结果时 [!UICONTROL Device ID]:
 
-* [!UICONTROL Unique Trait Realizations] 是在所选时间范围内将特征添加到其访客的匿名设备用户档案的数量。
-* [!UICONTROL Total Trait Realization] 是所选时间范围内的匿名特征实现的总数。
-* [!UICONTROL Total Trait Population] 是您的匿名设备访客在其用户档案上具有此特征的数量。
+* [!UICONTROL Unique Trait Realizations] 是在所选时间范围内将特征添加到其访客的匿名设备用户档案数。
+* [!UICONTROL Total Trait Realization] 是所选时间范围内的匿名特征实现总数。
+* [!UICONTROL Total Trait Population] 是匿名设备访客在其用户档案上具有此特征的数量。
 
-![general-report-traits-device](assets/general-report-traits-deviceid.png)
+![一般报告特征设备](assets/general-report-traits-deviceid.png)
 
 按以下方式筛选结果时 [!UICONTROL Cross-Device ID]:
 
-* [!UICONTROL Unique Trait Realizations] 是在所选时间范围内向其访客添加特征的已验证用户档案的数量。
+* [!UICONTROL Unique Trait Realizations] 是在所选时间范围内已验证的访客将特征添加到其用户档案的数量。
 * [!UICONTROL Total Trait Realization] 是所选时间范围内经过身份验证的特征实现的总数。
-* [!UICONTROL Total Trait Population] 是已验证的访客中具有此特征的用户档案的数量。
+* [!UICONTROL Total Trait Population] 是已验证的访客在其用户档案上具有此特征的数量。
 
-![一般报告特征——跨设备](assets/general-report-traits-cross-device.png)
+![通用报告特征——跨设备](assets/general-report-traits-cross-device.png)
 
 <!-- 
 ### Unique Trait Realizations
@@ -120,23 +124,23 @@ The illustration below shows the results of running a general report for the Tra
 ![](assets/general_reports_metrics.png) -->
 
 
-## 常规报告区段的结果 {#general-report-results-segments}
+## 一般报告区段结果 {#general-report-results-segments}
 
 运行“常规”报表并选择报告类型时，可 **[!UICONTROL Segment]** 以使用以下指标：
 
-### 实时细分群体
+### 实时细分填充
 
-此量度表示在指定时间范围内实时查看的唯一访客的实际数量，以及在受众管理器查看区段时有资格查看的区段数量。
+此度量表示在指定时间范围内实时查看的唯一访客的实际数量，以及在Audience Manager看到这些数据时，哪些数据符合区段的条件。
 
-### 区段总人数
+### 区段总人口
 
-此度量表示在您选择的回顾期内限定区段的受众管理器UUID总数。 您的1天总细分人口代表您最准确的定位用户群。
+此度量表示在您选择的回顾期内限定区段的Audience ManagerUUID总数。 1天的总细分人口是您进行定位的最准确用户群。
 
 >[!NOTE]
 >
->选择 **[!UICONTROL Include Destination Mappings]** 以查看已激活目标的细分区段人口。
+>选择 **[!UICONTROL Include Destination Mappings]** 以查看已激活目标的细分区段填充。
 
-下图显示了为区段报告类型运行常规报告的结果。
+下图显示了为区段报表类型运行常规报表的结果。
 
 ![](assets/general_reports_segment_metrics.png)
 
@@ -144,14 +148,14 @@ The illustration below shows the results of running a general report for the Tra
 
 运行“常规”报表并选择报告类型时，可 **[!UICONTROL Destination]** 以使用以下指标：
 
-**实时细分群体**
+**实时细分填充**
 
-此量度表示在指定时间范围内实时查看的唯一访客的实际数量，以及在受众管理器查看区段时有资格查看的区段数量。
+此度量表示在指定时间范围内实时查看的唯一访客的实际数量，以及在Audience Manager看到这些数据时，哪些数据符合区段的条件。
 
-**区段总人数**
+**区段总人口**
 
-此量度表示在回顾期间内，发送到目标的属于区段的受众管理器UUID的总数。
+此度量表示在回顾期间内属于区段的Audience ManagerUUID的总数，这些UUID被发送到目标。
 
-下图显示了为“目标”报告类型运行常规报告的结果。
+下图显示了为目标报告类型运行常规报告的结果。
 
 ![](assets/general_reports_destinations.png)
