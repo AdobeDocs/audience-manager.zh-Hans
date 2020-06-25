@@ -1,19 +1,23 @@
 ---
-description: 查看指定目标和时间段的出站批作业历史记录信息。
-seo-description: 查看指定目标和时间段的出站批作业历史记录信息。
+description: 视图指定目标和时间段的出站批处理作业历史记录信息。
+seo-description: 视图指定目标和时间段的出站批处理作业历史记录信息。
 seo-title: 出站文件历史记录
 solution: Audience Manager
 title: 出站文件历史记录
 uuid: 3621a59d-2bb5-4828-86f6-4c9bfa580764
+feature: inbound and outbound reports
 translation-type: tm+mt
-source-git-commit: ccff7a0337d59a2e2c65c91076a1ff38814a0dd1
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 7%
 
 ---
 
 
 # 出站文件历史记录 {#outbound-file-history}
 
-查看指定目标和时间段的出站批作业历史记录信息。
+视图指定目标和时间段的出站批处理作业历史记录信息。
 
 <!-- 
 
@@ -21,12 +25,12 @@ t_reports_outbound_history.xml
 
  -->
 
-1. Click **[!UICONTROL Analytics]** &gt; **[!UICONTROL Outbound File History]**.
+1. 单击 **[!UICONTROL Analytics]** > **[!UICONTROL Outbound File History]**.
 
    ![步骤结果](assets/outbound_history.png)
 
 1. 在框中， **[!UICONTROL Search for a Destination]** 开始键入内容并选择所需的目标。
-1. 在框 **[!UICONTROL Select a Date Range]** 中，指定报表的开始日期和结束日期，然后单击 **[!UICONTROL Apply Date Filter]**。
+1. 在框 **[!UICONTROL Select a Date Range]** 中，指定报表的开始和结束日期，然后单击 **[!UICONTROL Apply Date Filter]**。
 
    ![步骤结果](assets/outbound_history_stats.png)
 
@@ -42,19 +46,19 @@ t_reports_outbound_history.xml
  <tbody> 
   <tr> 
    <td colname="col1"> 数据同步文件名 </td> 
-   <td colname="col2"> <p>Adobe为此目标生成并一起处理的所 <span class="keyword"> 有出站文件</span> 的列表。 </p> </td> 
+   <td colname="col2"> <p>列表Adobe为此目标 <span class="keyword"> 生成</span> 、并一起处理的所有出站文件。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 成功 </td> 
-   <td colname="col2"> <p>成功从 <span class="keyword"> Audience Manager发送到目标的记录数</span> 。 </p> </td> 
+   <td colname="col2"> <p>成功从Audience Manager发送到目 <span class="keyword"> 标</span> 的记录数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 失败 </td> 
    <td colname="col2"> <p>无法发送到目标的记录数。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 收到的记录 </td> 
-   <td colname="col2"> <p>Adobe在文件中生 <span class="keyword"></span> 成并尝试发送到目标的记录总数。 在大多数情况下，这应为成功文件和失败文件的总数。 </p> </td> 
+   <td colname="col1"> 已接收记录 </td> 
+   <td colname="col2"> <p>Adobe在文件 <span class="keyword"> 中生成</span> 并尝试发送到目标的记录总数。 在大多数情况下，这应该是成功文件和失败文件的总数。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
