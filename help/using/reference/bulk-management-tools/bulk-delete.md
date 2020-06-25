@@ -1,19 +1,23 @@
 ---
-description: 批量删除允许您通过单个操作删除多个区段、特征、文件夹、派生信号、数据源、模型和目标。 请按照以下说明进行批量删除请求。
-seo-description: 批量删除允许您通过单个操作删除多个区段、特征、文件夹、派生信号、数据源、模型和目标。 请按照以下说明进行批量删除请求。
+description: 批量删除允许您通过单个操作删除多个区段、特征、文件夹、派生信号、数据源、模型和目标。 按照以下说明进行批量删除请求。
+seo-description: 批量删除允许您通过单个操作删除多个区段、特征、文件夹、派生信号、数据源、模型和目标。 按照以下说明进行批量删除请求。
 seo-title: 批量删除
 solution: Audience Manager
 title: 批量删除
 uuid: 679cde46-09fb-45c6-b84d-47e00e0e7c0a
+feature: baaam
 translation-type: tm+mt
-source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 2%
 
 ---
 
 
 # 批量删除{#bulk-delete}
 
-批量删除允许您通过单个操作删除多个区段、特征、文件夹、派生信号、数据源、模型和目标。 请按照以下说明进行批量删除请求。
+批量删除允许您通过单个操作删除多个区段、特征、文件夹、派生信号、数据源、模型和目标。 按照以下说明进行批量删除请求。
 
 <!-- 
 
@@ -23,7 +27,7 @@ source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 >[!NOTE]
 >
->[在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
+>[UI中分配的](../../features/administration/administration-overview.md) RBAC组权 [!DNL Audience Manager] 限在中得到保留 [!UICONTROL Bulk Management Tools]。
 
 >[!NOTE]
 >
@@ -31,15 +35,15 @@ source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 要删除多个项目，请打开工 [!UICONTROL Bulk Management Tools] 作表并：
 
-1. 单击选 **[!UICONTROL Headers]** 项卡，然后复制要添加的项目的创建标题。
+1. 单击选 **[!UICONTROL Headers]** 项卡，然后复制要添加的项的创建标题。
 2. Click the **[!UICONTROL Delete]** tab.
 3. 将删除标题粘贴到更新工作表的第一行中。
-4. 在标题下的列中粘贴或键入要删除的对象的ID。
+4. 在标题下方的列中粘贴或键入要删除的对象的ID。
 5. 提供所需的 [登录信息](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) ，然后单击 **[!UICONTROL Submit]**。
 
-   工作表会创建一 [!UICONTROL Results] 列。 该 [!UICONTROL Results] 列返回一条消息，指示项目是否已删除或是错误消息。
-在输入数据之前，批量更新工作表的外观应类似于以下内容：
+   工作表会创建 [!UICONTROL Results] 列。 该 [!UICONTROL Results] 列返回一条消息，指示该项目是否已被删除或是错误消息。
+在输入数据之前，批量更新工作表应类似于以下内容：
 
 ![](assets/delete.png)
 
-如果批量更新返回错误或失败，请参阅批量 [管理工具疑难解答](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
+如果批量更新返回错误或失败，请参阅批 [量管理工具疑难解答](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
