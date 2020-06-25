@@ -1,19 +1,23 @@
 ---
-description: 已定义列标题标签。
-seo-description: 已定义列标题标签。
-seo-title: 批量管理工具词汇表
+description: 列标题标签已定义。
+seo-description: 列标题标签已定义。
+seo-title: 批量管理工具术语表
 solution: Audience Manager
-title: 批量管理工具词汇表
+title: 批量管理工具术语表
 uuid: 4658a6bc-9515-4d31-9715-0084760b0cea
+feature: baaam
 translation-type: tm+mt
-source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 5%
 
 ---
 
 
-# 批量管理工具词汇表{#bulk-management-tools-glossary}
+# 批量管理工具术语表{#bulk-management-tools-glossary}
 
-已定义列标题标签。
+列标题标签已定义。
 
 <!-- 
 
@@ -23,7 +27,7 @@ source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 >[!NOTE]
 >
->[在UI中分配的](../../features/administration/administration-overview.md) RBAC组权限 [!DNL Audience Manager] 在UI中被接受 [!UICONTROL Bulk Management Tools]。
+>[UI中分配的](../../features/administration/administration-overview.md) RBAC组权 [!DNL Audience Manager] 限在中得到保留 [!UICONTROL Bulk Management Tools]。
 
 <table id="table_2C2BC2FB3EFC443C9A5AE18EFC6FABFD"> 
  <thead> 
@@ -43,11 +47,11 @@ source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> description</span> </p> </td> 
-   <td colname="col2"> <p>可为对象提供的简短、信息性说明。 </p> </td> 
+   <td colname="col2"> <p>您可以为对象提供的简短、信息丰富的描述。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> destinationId</span> </p> </td> 
-   <td colname="col2"> <p>要映射或删 <a href="../../features/destinations/destinations.md"> 除的目标</a> ID。 </p> </td> 
+   <td colname="col2"> <p>要映射或删 <a href="../../features/destinations/destinations.md"> 除的</a> 目标的ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> destinationMappingId</span> </p> </td> 
@@ -71,7 +75,7 @@ source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceKey</span> </p> </td> 
-   <td colname="col2"> <p>信号是根据用户活动传入 <span class="keyword"> Audience Manager的数据位</span> 。 这些值作为键 <a href="../../reference/key-value-pairs-explained.md"> 值对传输</a>。 源键是不变的常数。 它有助于对可能更改的源值进行分类。 请参阅 <a href="../../features/derived-signals.md"> 派生的信号</a>。 </p> </td> 
+   <td colname="col2"> <p>信号是根据用户Audience Manager传 <span class="keyword"> 入活动</span> 的数据位。 这些值作为键 <a href="../../reference/key-value-pairs-explained.md"> 值对进行传输</a>。 源键是不变的常数。 它有助于对可以更改的源值进行分类。 请参阅 <a href="../../features/derived-signals.md"> 派生信号</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceValue</span> </p> </td> 
@@ -79,23 +83,23 @@ source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> startDate</span> </p> </td> 
-   <td colname="col2"> <p>指示区段何时开始发送到目标。 使用 <tt>yyyy-mm-dd格式</tt> 。 </p> </td> 
+   <td colname="col2"> <p>指示何时可将开始发送到目标。 使 <tt>用yyyy-mm-dd</tt> 格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> targetKey</span> </p> </td> 
-   <td colname="col2">派生信号中使用的键。 请参阅 <a href="../../features/derived-signals.md"> 派生的信号</a>。 </td> 
+   <td colname="col2">派生信号中使用的键。 请参阅 <a href="../../features/derived-signals.md"> 派生信号</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> targetValue</span> </p> </td> 
-   <td colname="col2"> <p>与派生的信号键一起传入的值。 请参阅 <a href="../../features/derived-signals.md"> 派生的信号</a>。 </p> </td> 
+   <td colname="col2"> <p>用派生信号键传递的值。 请参阅 <a href="../../features/derived-signals.md"> 派生信号</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitAlias</span> </p> </td> 
    <td colname="col2"> <p>传递到非基于Cookie的目标的ID。 对于基于cookie的目标，这是键值对 <a href="../../reference/key-value-pairs-explained.md"> 中的键</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="term"> traitRule / segmentRule</span> </p> </td> 
-   <td colname="col2"> <p>用于收集数据的实际特征或区段规则。 批量请求将返回在 <span class="keyword"> Audience Manager中使用特征规则构建器</span> 或区段规则构建器创建 <a href="../../features/traits/about-trait-builder.md"> 的规则</a><a href="../../features/segments/segment-builder.md"></a>。 在更新段或特征时，您还可以使用这些工具构建规则并批量应用这些规则。 </p> <p>另请参阅创 <a href="../../reference/bulk-management-tools/bulk-rules.md"> 建或更新特征规则和区段规则</a>。 </p> </td> 
+   <td colname="col1"> <p> <span class="term"> traitRule/segmentRule</span> </p> </td> 
+   <td colname="col2"> <p>用于收集数据的实际特征或区段规则。 批量请求返回在特征规则 <span class="keyword"> 构建器</span> 或段规则构 <a href="../../features/traits/about-trait-builder.md"> 建器的Audience Manager中创</a> 建的规则 <a href="../../features/segments/segment-builder.md"></a>。 在更新段或特征时，您还可以使用这些工具构建规则并批量应用它们。 </p> <p>See also, <a href="../../reference/bulk-management-tools/bulk-rules.md"> Create or Update Trait Rules and Segment Rules</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitType</span> </p> </td> 
@@ -108,11 +112,11 @@ source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> url</span> </p> </td> 
-   <td colname="col2"> <p>当用户符合区段条件时由DIL触发的像素。 </p> </td> 
+   <td colname="col2"> <p>当用户符合段条件时由DIL触发的像素。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> valueAlias</span> </p> </td> 
-   <td colname="col2"> <p>传递到Cookie目标 <a href="../../reference/key-value-pairs-explained.md"> 的键值对中的键</a> 。 </p> </td> 
+   <td colname="col2"> <p>键值对中 <a href="../../reference/key-value-pairs-explained.md"> 的键传递</a> 到cookie目标。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
