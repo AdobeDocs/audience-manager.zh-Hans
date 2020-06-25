@@ -1,20 +1,24 @@
 ---
-description: 访客管理器中的受众身份验证状态确定新特征信息是写入访客已验证的用户档案还是写入设备用户档案（从中收集数据）。 受众管理器以相同方式处理访客ID身份验证状态UNKNOWN和LOGGED_OUT(在事件调用中)。
+description: Audience Manager中的访客身份验证状态确定新特征信息是写入访客的已验证用户档案还是写入设备用户档案（从中收集数据）。 Audience Manager以相同方式处理访客ID身份验证状态UNKNOWN和LOGGED_OUT。
 keywords: dpm.demdex.net
-seo-description: 访客管理器中的受众身份验证状态确定新特征信息是写入访客已验证的用户档案还是写入设备用户档案（从中收集数据）。 受众管理器以相同方式处理访客ID身份验证状态UNKNOWN和LOGGED_OUT(在事件调用中)。
-seo-title: 访客受众管理器中的身份验证状态
+seo-description: Audience Manager中的访客身份验证状态确定新特征信息是写入访客的已验证用户档案还是写入设备用户档案（从中收集数据）。 Audience Manager以相同方式处理访客ID身份验证状态UNKNOWN和LOGGED_OUT。
+seo-title: Audience Manager 中的访客身份验证状态
 solution: Audience Manager
-title: 访客受众管理器中的身份验证状态
+title: Audience Manager 中的访客身份验证状态
 uuid: d748c0c3-5833-4fb9-ab3e-793f5f252e47
+feature: reference
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 5%
 
 ---
 
 
-# 访客受众管理器中的身份验证状态{#visitor-authentication-states-in-audience-manager}
+# Audience Manager 中的访客身份验证状态{#visitor-authentication-states-in-audience-manager}
 
-访客管理器中的受众身份验证状态确定新特征信息是写入访客已验证的用户档案还是写入设备用户档案（从中收集数据）。 受众管理器以相同方式处理访客ID身份验证状态UNKNOWN和LOGGED_OUT(在事件调用中)。
+Audience Manager中的访客身份验证状态确定新特征信息是写入访客的已验证用户档案还是写入设备用户档案（从中收集数据）。 Audience Manager以相同方式处理访客ID身份验证状态UNKNOWN和LOGGED_OUT。
 
 从ID [!DNL Experience Cloud] 服务v1.5+开始，该方 `setCustomerID` 法包括可选 `AuthState` 对象。 `AuthState` 根据访客的身份验 [证状态](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html)。 [!DNL Audience Manager] 根据调用中传递的身份验证状态和用于分段的用户档案合并规 [则，以不同方式](../features/profile-merge-rules/merge-rules-dashboard.md) 处理已实现的特征。
 
