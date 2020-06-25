@@ -1,25 +1,29 @@
 ---
-description: 传输层安全(TLS)是用于在两个系统之间建立安全通信信道的加密协议。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，使用TLS 1.0、1.1和1.2的TLS协议有三个版本。
-seo-description: 传输层安全(TLS)是用于在两个系统之间建立安全通信信道的加密协议。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，使用TLS 1.0、1.1和1.2的TLS协议有三个版本。
-seo-title: 弃用TLS 1.0和1.1
+description: 传输层安全(TLS)是一种加密协议，用于在两个系统之间建立安全通信渠道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，使用TLS 1.0、1.1和1.2的TLS协议有三个版本。
+seo-description: 传输层安全(TLS)是一种加密协议，用于在两个系统之间建立安全通信渠道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，使用TLS 1.0、1.1和1.2的TLS协议有三个版本。
+seo-title: TLS 1.0 和 1.1 已弃用
 solution: Audience Manager
-title: 弃用TLS 1.0和1.1
+title: TLS 1.0 和 1.1 已弃用
 uuid: 6a820e63-dd49-4689-9596-940aabba18ec
+feature: reference
 translation-type: tm+mt
-source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '606'
+ht-degree: 25%
 
 ---
 
 
-# 弃用TLS 1.0和1.1{#tls-deprecation}
+# TLS 1.0 和 1.1 已弃用{#tls-deprecation}
 
-传输层安全(TLS)是用于在两个系统之间建立安全通信信道的加密协议。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，使用了三个版本的TLS协议：TLS 1.0、1.1和1.2。
+传输层安全(TLS)是一种加密协议，用于在两个系统之间建立安全通信渠道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，使用的TLS协议有三个版本： TLS 1.0、1.1和1.2。
 
-2019年3月， [!DNL Adobe] 该议定书的支持已 [!DNL TLS 1.0] 结束。 Adobe Audience manager功能不适用于仅支持的浏览器的最终用户 [!DNL TLS 1.0]。
+2019年3月， [!DNL Adobe] 终止了对议定书的 [!DNL TLS 1.0] 支持。 Adobe Audience Manager功能对于使用仅支持浏览器的最终用户无效 [!DNL TLS 1.0]。
 
-2020年3月， [!DNL Adobe] 将终止对该议定书的 [!DNL TLS 1.1] 支持。 Adobe Audience manager功能将停止为使用仅支持的浏览器的最终用户使用 [!DNL TLS 1.1]。
+2020年3月， [!DNL Adobe] 将终止对议定书的 [!DNL TLS 1.1] 支持。 Adobe Audience Manager功能将停止为使用仅支持浏览器的最终用户使用 [!DNL TLS 1.1]。
 
-我们强烈建议 [!DNL TLS 1.2]使用最新版本的协议，即在编写时。 所有现代浏览器都使用 [!DNL TLS 1.2]。 我们为您收集了浏览器、版本及其支持的列 [!DNL TLS] 表。 有关详细信息，请访 [问此维基百科链接](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers)。
+我们强烈建议 [!DNL TLS 1.2]使用，即在编写时使用最新版本的协议。 所有现代浏览器都使 [!DNL TLS 1.2]用。 我们为您收集了一列表浏览器、版本及其支 [!DNL TLS] 持。 有关详细信息，请访 [问此Wikipedia链接](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers)。
 
 <table id="table_C273E20039074BB7B6CFB1B877A086B8"> 
  <thead> 
@@ -34,7 +38,7 @@ source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1" morerows="2"> <p>Google Chrome(Chrome for Android) </p> </td> 
+   <td colname="col1" morerows="2"> <p>Google Chrome（Chrome,Android版） </p> </td> 
    <td colname="col2"> <p>1 - 21 </p> </td> 
    <td colname="col03" morerows="2"> <p> 
      <ul id="ul_73F2C4C645E1411ABB3AD7ABD1013C59"> 
@@ -86,11 +90,11 @@ source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
   <tr> 
    <td colname="col2"> <p>Android 4.1 - 4.4.4 </p> </td> 
    <td colname="col4"> <p>是 </p> </td> 
-   <td colname="col5"> <p>默认情况下禁用 </p> </td> 
-   <td colname="col6"> <p>默认情况下禁用 </p> </td> 
+   <td colname="col5"> <p>默认禁用 </p> </td> 
+   <td colname="col6"> <p>默认禁用 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>Android 5.0 —— 当前版本 </p> </td> 
+   <td colname="col2"> <p>Android 5.0 —— 现有版本 </p> </td> 
    <td colname="col4"> <p>是 </p> </td> 
    <td colname="col5"> <p>是 </p> </td> 
    <td colname="col6"> <p>是 </p> </td> 
@@ -111,7 +115,7 @@ source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1" morerows="3"> <p>Mozilla Firefox（适用于移动设备的Firefox） </p> </td> 
+   <td colname="col1" morerows="3"> <p>Mozilla Firefox（移动版Firefox） </p> </td> 
    <td colname="col2"> <p>1.0 - ESR 17.0.11 </p> </td> 
    <td colname="col3" morerows="3"> <p> 
      <ul id="ul_617CE841EC7743A08BE004E309A3B0D7"> 
@@ -133,14 +137,14 @@ source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
   <tr> 
    <td colname="col2"> <p>23 </p> </td> 
    <td colname="col4"> <p>是 </p> </td> 
-   <td colname="col5"> <p>默认情况下禁用 </p> </td> 
+   <td colname="col5"> <p>默认禁用 </p> </td> 
    <td colname="col6"> <p>否 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>24 - 26 </p> </td> 
    <td colname="col4"> <p>是 </p> </td> 
-   <td colname="col5"> <p>默认情况下禁用 </p> </td> 
-   <td colname="col6"> <p>默认情况下禁用 </p> </td> 
+   <td colname="col5"> <p>默认禁用 </p> </td> 
+   <td colname="col6"> <p>默认禁用 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>27 —— 当前版本 </p> </td> 
@@ -182,7 +186,7 @@ source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
       <li id="li_4BC6C41C2EF546A797122B746F4D943E">Windows 3.1、95、98、NT、2000、XP、Server 2003 </li> 
       <li id="li_2890B5044BBA4F3CA37ECED8A38D6C1B">Mac OS 7.1、8、X、Solaris、HP-UX </li> 
      </ul> </p> </td> 
-   <td colname="col4"> <p>默认情况下禁用 </p> </td> 
+   <td colname="col4"> <p>默认禁用 </p> </td> 
    <td colname="col5"> <p>否 </p> </td> 
    <td colname="col6"> <p>否 </p> </td> 
   </tr> 
@@ -206,8 +210,8 @@ source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
       <li id="li_B759C917E04F4A12826C9ABAE4A7C476">Windows Server 2002、Server 2008、Server 2008 R2 </li> 
      </ul> </p> </td> 
    <td colname="col4"> <p>是 </p> </td> 
-   <td colname="col5"> <p>默认情况下禁用 </p> </td> 
-   <td colname="col6"> <p>默认情况下禁用 </p> </td> 
+   <td colname="col5"> <p>默认禁用 </p> </td> 
+   <td colname="col6"> <p>默认禁用 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>11 </p> </td> 
@@ -247,8 +251,8 @@ source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
    <td colname="col2"> <p>10 </p> </td> 
    <td colname="col3"> <p>Windows Phone 8 </p> </td> 
    <td colname="col4"> <p>是 </p> </td> 
-   <td colname="col5"> <p>默认情况下禁用 </p> </td> 
-   <td colname="col6"> <p>默认情况下禁用 </p> </td> 
+   <td colname="col5"> <p>默认禁用 </p> </td> 
+   <td colname="col6"> <p>默认禁用 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>11 </p> </td> 
@@ -273,7 +277,7 @@ source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Microsoft edge和Microsoft Edge for Mobile </p> </td> 
+   <td colname="col1"> <p>Microsoft Edge和Microsoft Edge for Mobile </p> </td> 
    <td colname="col2"> <p>所有版本 </p> </td> 
    <td colname="col3"> <p> 
      <ul id="ul_87B9CD9D72CA43A1A4DC824C5DEA3638"> 
@@ -323,7 +327,7 @@ source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
   <tr> 
    <td colname="col2"> <p>8 </p> </td> 
    <td colname="col4"> <p>是 </p> </td> 
-   <td colname="col5"> <p>默认情况下禁用 </p> </td> 
+   <td colname="col5"> <p>默认禁用 </p> </td> 
    <td colname="col6"> <p>否 </p> </td> 
   </tr> 
   <tr> 
@@ -335,8 +339,8 @@ source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
   <tr> 
    <td colname="col2"> <p>10 - 12.17 </p> </td> 
    <td colname="col4"> <p>是 </p> </td> 
-   <td colname="col5"> <p>默认情况下禁用 </p> </td> 
-   <td colname="col6"> <p>默认情况下禁用 </p> </td> 
+   <td colname="col5"> <p>默认禁用 </p> </td> 
+   <td colname="col6"> <p>默认禁用 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>12.18 </p> </td> 
