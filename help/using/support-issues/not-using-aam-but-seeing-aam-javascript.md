@@ -4,9 +4,10 @@ seo-description: 我们未使用 Audience Manager，但却在 Javascript 调试�
 seo-title: 我们未使用 Audience Manager，但却在 Javascript 调试器中看到 Audience Manager Javascript 调用，这是为什么？
 solution: Audience Manager
 title: 我们未使用 Audience Manager，但却在 Javascript 调试器中看到 Audience Manager Javascript 调用，这是为什么？
-translation-type: ht
-source-git-commit: 1f5c1a91f0b5df5291d3143d297e25128b5bb716
-workflow-type: ht
+feature: support
+translation-type: tm+mt
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 100%
 
