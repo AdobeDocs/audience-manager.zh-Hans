@@ -5,11 +5,12 @@ seo-title: 区段到区段重叠报表
 solution: Audience Manager
 title: 区段到区段重叠报表
 uuid: 0339eb6c-6355-44a3-9c46-f159485449d1
+feature: overlap reports
 translation-type: tm+mt
-source-git-commit: a35be513c2cec40257f2df0731eaccbb98e3a000
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 3%
+ht-degree: 11%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->受众管理器中的Overlap报表遵循RBAC原则。 您只能根据您所属的RBAC用户组来查看您 [有权访问的](/help/using/features/administration/administration-overview.md) 数据源中的段。
+>Audience Manager中的重叠报表遵循RBAC原则。 您只能根据您所属的RBAC用户组来查看您 [有权访问的](/help/using/features/administration/administration-overview.md) 数据源中的段。
 
 <!-- 
 
@@ -68,15 +69,15 @@ r_s2s_data_pop.xml
 | **[!UICONTROL Base Segment Uniques]** | 基本区段中的唯一访客数。 |
 | **[!UICONTROL Base Segment Uniques]** | 重叠区段中的唯一访客数。 |
 | **[!UICONTROL Overlapping Uniques]** | 在比较的区段之间共享的唯一访客数。 |
-| **[!UICONTROL Overlap %]** | 要获得重叠%,受众管理器使用以下公式： 重叠单值/（基段单值+重叠段单值——重叠单值） |
+| **[!UICONTROL Overlap %]** | 要获得重叠%,Audience Manager使用以下公式： 重叠单值/（基段单值+重叠段单值——重叠单值） |
 
 
 
 >[!MORELIKETHIS]
 >
->* [使用数据滑块过滤报告结果](../../reporting/dynamic-reports/data-sliders.md)
+>* [使用数据滑块筛选报表结果](../../reporting/dynamic-reports/data-sliders.md)
 >* [交互式报告中使用的形状、颜色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
 >* [说明报告图标和工具](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
->* [重叠报表： 更新计划和最小区段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
->* [所选受众管理器报告中的数据采样和错误率……](../../reporting/report-sampling.md)
->* [用于重叠报告的CSV文件](../../reporting/dynamic-reports/overlap-csv-files.md)
+>* [重叠报表：更新计划和最小区段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
+>* [选定 Audience Manager 报表中的数据取样率和错误率...](../../reporting/report-sampling.md)
+>* [重叠报表的 CSV 文件](../../reporting/dynamic-reports/overlap-csv-files.md)
