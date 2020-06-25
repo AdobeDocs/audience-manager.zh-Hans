@@ -2,20 +2,21 @@
 description: 使用批量管理工具，您可以通过单个操作一次创建和管理多个对象。 您可以使用批量管理工具处理数据源、派生信号、目标、文件夹、细分和特征。
 keywords: baaam;BAAAM;download baaam
 seo-description: 使用批量管理工具，您可以通过单个操作一次创建和管理多个对象。 您可以使用批量管理工具处理数据源、派生信号、目标、文件夹、细分和特征。
-seo-title: 批量管理入门
+seo-title: 开始使用批量管理工具
 solution: Audience Manager
-title: 批量管理入门
+title: 开始使用批量管理工具
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
+feature: baaam
 translation-type: tm+mt
-source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 
-# Getting Started With Bulk Management{#getting-started-with-bulk-management}
+# 开始使用批量管理工具{#getting-started-with-bulk-management}
 
 使用 [!DNL Bulk Management Tools] 该工具，您只需一次操作即可创建和管理多个对象。 您可以使 [!DNL Bulk Management Tools] 用、、、、 [!UICONTROL data sources]、 [!UICONTROL derived signals]、 [!UICONTROL destinations]以及 [!UICONTROL folders][!UICONTROL models][!UICONTROL segments][!UICONTROL traits]。
 
@@ -31,11 +32,11 @@ c_bulk_start.xml
 
 ## 概述 {#overview}
 
-此功能使用一个 [!DNL Microsoft Excel] 包含宏的电子表格，这些宏对API进行安全、经过身份验证 [!DNL Audience Manager] 的调用。 API提供允许您批量进行更改的方法和服务。 您不必知道如何编写代码或使用我们的API来使用它。 工作表包含执行特定批量更改功能的列标题和选项卡。 要进行批量更改，您只需将预定义的标题添加到特定工作表，提供要批量更改的信息，然后单击操作按钮。 工作表和API将为您完成其余的工作。
+This feature uses a [!DNL Microsoft Excel] spreadsheet with macros that make secure, authenticated calls to the [!DNL Audience Manager] APIs. API提供允许您批量进行更改的方法和服务。 您不必知道如何编写代码或使用我们的API来使用它。 工作表包含执行特定批量更改功能的列标题和选项卡。 要进行批量更改，您只需将预定义的标题添加到特定工作表，提供要批量更改的信息，然后单击操作按钮。 工作表和API将为您完成其余的工作。
 
 ## 下载 {#download}
 
-请在此处下载最新 **[的工作表](assets/BAAAM_V2_20200502.xlsm)**。
+Download the latest worksheet **[here](assets/BAAAM_V2_20200502.xlsm)**.
 
 ## 先决条件 {#prereqs}
 
