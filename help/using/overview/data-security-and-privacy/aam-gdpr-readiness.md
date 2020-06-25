@@ -4,9 +4,10 @@ seo-description: 面向 Audience Manager 客户的 GDPR 准备指南
 seo-title: 面向 Audience Manager 客户的 GDPR 准备指南
 solution: Audience Manager
 title: 面向 Audience Manager 客户的 GDPR 准备指南
-translation-type: ht
-source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
-workflow-type: ht
+feature: data governance & privacy
+translation-type: tm+mt
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 100%
 
