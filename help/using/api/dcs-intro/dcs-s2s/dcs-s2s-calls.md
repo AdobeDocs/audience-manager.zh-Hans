@@ -1,18 +1,19 @@
 ---
-seo-title: 进行服务器到服务器DCS API调用
+seo-title: 进行服务器到服务器 DCS API 调用
 solution: Audience Manager
-title: 进行服务器到服务器DCS API调用
+title: 进行服务器到服务器 DCS API 调用
 uuid: bdfe3430-e27f-4a5c-88d9-ae164d28f601
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
 
-# 进行服务器到服务器DCS API调用 {#making-server-to-server-dcs-api-calls}
+# 进行服务器到服务器 DCS API 调用 {#making-server-to-server-dcs-api-calls}
 
 调用需要区域DCS服务器的主机名和用户ID。 如果您没有所需的用户和区域ID，请参 [阅从DCS响应和／或Experience Cloud获取用户ID](/help/using/api/dcs-intro/dcs-s2s/dcs-aam-ids.md) 和区 [域](/help/using/api/dcs-intro/dcs-s2s/dcs-mcid-ids.md)。 用户和区域ID一经确定，即可对DCS进行服务器对服务器调用。 有关语法和示例，请参阅本节。
 
@@ -86,4 +87,4 @@ ht-degree: 5%
 
 ## 示例响应 {#sample-response}
 
-请参 [阅从DCS接收数据](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)。
+See [Receive Data From the DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md).
