@@ -1,26 +1,27 @@
 ---
 description: 要创建用户档案合并规则，请查看并完成本节中介绍的每个过程中的步骤。
 seo-description: 要创建用户档案合并规则，请查看并完成本节中介绍的每个过程中的步骤。
-seo-title: 用户档案合并规则入门
+seo-title: 开始使用配置文件合并规则
 solution: Audience Manager
-title: 用户档案合并规则入门
+title: 开始使用配置文件合并规则
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: 56a9626b1fa77926bdc31ef72b058d2aa9b58f43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1327'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 
-# 用户档案合并规则入门 {#getting-started-with-profile-merge-rules}
+# 开始使用配置文件合并规则 {#getting-started-with-profile-merge-rules}
 
 要创建、 [!UICONTROL Profile Merge Rules]查看并完成本节中介绍的每个过程中的步骤，请执行以下操作。
 
 <!-- merge-rules-start.xml -->
 
-## 创建跨设备数据源 {#create-data-source}
+## Create a Cross-Device Data Source {#create-data-source}
 
 要创建跨设备数据源，请转到并完 **[!UICONTROL Audience Data > Data Sources > Add New]** 成此处介绍的每个部分的步骤。 创建或编辑跨设备数据源需要管理员权限。
 
@@ -54,7 +55,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Use as a Device Graph]**: 此控件仅对作为数据提供者列出的帐户可用。 选中此复选框将创建设备图形形式的数据源，并允许您与其他客户共 [!DNL Audience Manager] 享它。 与顾问 [!DNL Audience Manager] 合作，将其设置为数据提供者并指定应与哪 [!UICONTROL Data Source] 些客户共享。 您的顾问将通过内部配置流程配置您的帐户和设备图形共享。
 
-* **[!UICONTROL Data retention for inactive Customer IDs]**: 此控件允许您为非活动的客户ID设置数据保留期。 这决定了受众管理器在受众管理器平台上最后一次看到客户ID后，客户ID在我们的数据库中保留多长时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们把所有月份都算作30天。 受众经理会根据您为非活动客户ID设置的数据保留情况，每周删除不活动客户ID一次的流程。
+* **[!UICONTROL Data retention for inactive Customer IDs]**: 此控件允许您为非活动的客户ID设置数据保留期。 这决定了Audience Manager在Audience Manager平台上最后一次看到客户ID后，在我们的数据库中保留这些ID的时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们把所有月份都算作30天。 Audience Manager运行一个流程，根据您为非活动客户ID设置的数据保留情况，每周删除不活动客户ID一次。
 
 通过与这些设置关联的文本字段，您可以使 [!UICONTROL Data Source] 用“用户档案合并规则”选项中显 [示的别名重命名](merge-rule-definitions.md)。 例如，如果向添加别名， **[!UICONTROL Use as Authenticated Profile]**&#x200B;该名称将显示在列表 [!UICONTROL Authenticated Profile Options] 中。 如果向中添加别名， **[!UICONTROL Use as a Device Graph]**&#x200B;则该名称会显示在 [!UICONTROL Device Options] 列表中。
 
@@ -68,7 +69,7 @@ ht-degree: 1%
 
 <!-- create-profile-merge-rule.xml -->
 
-**先决条件：** 需要跨设备数据源才能构建 [!UICONTROL Profile Merge Rule]。 请参 [阅创建数据源](../manage-datasources.md#create-data-source)。
+**先决条件：** 需要跨设备数据源才能构建 [!UICONTROL Profile Merge Rule]。 See [Create a Data Source](../manage-datasources.md#create-data-source).
 
 >[!TIP]
 >
@@ -104,9 +105,9 @@ ht-degree: 1%
 
 ### 使用跨设备ID作为用户ID密钥的Adobe Campaign目标的注意事项 {#considerations}
 
-在2019年末，我们发布了一系列用户档案合并规则增强功能，以提高使用跨设备ID生成的批处理文件的准确性。 从2020年3月16日星期一开始，您的受众管理器实例将严格遵循这些增强功能。 通常，使用跨设备ID映射到目标的区段将停止在某些用户档案合并规则配置中生成导出。
+在2019年末，我们发布了一系列用户档案合并规则增强功能，以提高使用跨设备ID生成的批处理文件的准确性。 从2020年3月16日星期一开始，您的Audience Manager实例将严格遵循这些增强功能。 通常，使用跨设备ID映射到目标的区段将停止在某些用户档案合并规则配置中生成导出。
 
-要确保使用跨设备ID(如受众)在Adobe Campaign管理器实例与目标之间正确集成，请确保满足以下要求：
+要确保使用跨设备ID(如Audience Manager)在Adobe Campaign实例与目标之间正确集成，请确保满足以下要求：
 
 1. 查看映射到您的用户档案声明ID目标的Adobe Campaign段使用的合并规则。 用户档案合并规则必须使用该选 [!UICONTROL Last Authenticated Profile] 项，因此所有经过身份验证的用户档案都可以包含在导出中。 如果您的用户档案合并规则使用其他选项，请将其切换为 [!UICONTROL Last Authenticated Profile]。
 2. 在“Adobe Campaign合并规则”设置中选择用户档案声明ID数据源。
@@ -125,7 +126,7 @@ ht-degree: 1%
 
 在完成这些过 [程之前，必须设置](#create-data-source)[跨设备数据源](#create-profile-merge-rule)*和用户档案合* 并规则。
 
-## 对于Adobe Experience Platform Identity Service客户 {#id-service-customers}
+## 针对Adobe Experience Platform身份服务客户 {#id-service-customers}
 
 使 [!UICONTROL Adobe Experience Platform Identity Service] 用DIL时，建 [议使用](../../dil/dil-overview.md) DIL和最新版本 [!UICONTROL Profile Merge Rules]。 但是，您不必使用该 [!UICONTROL Adobe Experience Platform Identity Service] 功能即可使用。 如果您只是在使 [!UICONTROL DIL]用，请参 [阅下面的旧DIL](#legacy-dil) 部分。
 
@@ -166,7 +167,7 @@ var vDil = DIL.create({
 });
 ```
 
-在命名空间键值对中，MCORG `*`变量`*` 是您的组 [!DNL Experience Cloud] 织ID。 如果您没有此ID，您可以在仪表板的 [!UICONTROL Administration] 部分找到 [!DNL Experience Cloud] 它。 您需要管理员权限才能视图此仪表板。 See [Administration: Core Services](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+在命名空间键值对中，MCORG `*`变量`*` 是您的组 [!DNL Experience Cloud] 织ID。 如果您没有此ID，您可以在仪表板的 [!UICONTROL Administration] 部分找到 [!DNL Experience Cloud] 它。 您需要管理员权限才能视图此仪表板。 See [Administration: Core Services](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 ### 配置SDK
 
@@ -205,7 +206,7 @@ DIL.create({
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b> Android </b> </p> </td> 
-   <td colname="col2"> <p> <code> setDpidAndDpuuid </code> </p> <p> <b>语法：</b> </p> <p> <pre> 公共静态void setDpidAndDpuuid(String dpid, String dpuuid); </pre> </p> <p> <b>示例：</b> </p> <p> <pre> AudienceManager.setDpidAndDpuuid("myDpid","myDpuuid"); </pre> </p> </td> 
+   <td colname="col2"> <p> <code> setDpidAndDpuuid </code> </p> <p> <b>语法：</b> </p> <p> <pre> 公共静态void setDpidAndDpuuid(String dpid, String dpuuid); </pre> </p> <p> <b>示例:</b> </p> <p> <pre> AudienceManager.setDpidAndDpuuid("myDpid","myDpuuid"); </pre> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> iOS </b> </p> </td> 
@@ -214,7 +215,7 @@ DIL.create({
       +&nbsp;(void)&nbsp;audienceSetDpid:(NSString&nbsp;*)dpid 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:(NSString&nbsp;*)dpuuid; 
     </code></p>
-    <p> <b>示例：</b> </p><p>
+    <p> <b>示例:</b> </p><p>
     <code class="javascript">
       [ADBMobile&nbsp;audienceSetDpid:@"290"
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:@"99301393923940"];
@@ -224,7 +225,7 @@ DIL.create({
  </tbody>
 </table>
 
-另请参阅Android [的受众管理器方法和iOS](hhttps://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html)[的受众管理器方法](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html)。
+另请参阅Android [的Audience Manager方法和](hhttps://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) iOS [的Audience Manager方法](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html)。
 
 >[!MORELIKETHIS]
 >
