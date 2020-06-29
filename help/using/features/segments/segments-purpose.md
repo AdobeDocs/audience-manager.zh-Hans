@@ -5,22 +5,23 @@ seo-title: 细分用途、组成和规则
 solution: Audience Manager
 title: 细分用途、组成和规则
 uuid: 886d4abe-b1b6-4983-b4fb-b552d54d51ba
+feature: Segments
 translation-type: tm+mt
-source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 
-# 细分： 目的、构成和规则 {#segments-purpose-composition-and-rules}
+# 区段：目的、构成和规则 {#segments-purpose-composition-and-rules}
 
 描述 [!UICONTROL segments]其组成部分以及规则创建 [!UICONTROL Segment Builder]。
 
 ## 用途 [!UICONTROL Segments]
 
-( *`segment`* 或) *`audience`*&#x200B;是共享通用属性的一组用户。 在Audience Manager中，您使 [!UICONTROL segments] 用服务器端规则进行创建。 通过这些规则，您可以根据站点受众属性(如：
+A *`segment`* (or an *`audience`*) is a set of users who share common attributes. 在Audience Manager中，您使 [!UICONTROL segments] 用服务器端规则进行创建。 通过这些规则，您可以根据站点受众属性(如：
 
 * 行为;
 * 人口（年龄、性别、收入等）;
@@ -36,7 +37,7 @@ Audience Manager [!UICONTROL segment] 是由个人或特征组组成的服务器
 
 >[!TIP]
 >
->Audience Manager [!UICONTROL segments] 与其他 [!DNL Adobe Analytics][!UICONTROL segments]不同。 阅 [读了解Analytics的细分和Audience Manager](https://docs.adobe.com/content/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) ，以详细描述不同之处。
+>Audience Manager [!UICONTROL segments] 与其他 [!DNL Adobe Analytics][!UICONTROL segments]不同。 Read [Understanding Segments in Analytics and Audience Manager](https://docs.adobe.com/content/help/zh-Hans/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) for an in-depth description of the differences.
 
 ## 创建基于规则的 [!UICONTROL Segments] [!UICONTROL Segment Builder]
 
@@ -53,5 +54,5 @@ Audience Manager [!UICONTROL segment] 是由个人或特征组组成的服务器
 
 >[!MORELIKETHIS]
 >
->* [信号、特征和细分](../../reference/signal-trait-segment.md)
+>* [信号、特征和区段](../../reference/signal-trait-segment.md)
 
