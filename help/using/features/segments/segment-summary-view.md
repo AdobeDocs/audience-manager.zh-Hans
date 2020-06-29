@@ -6,8 +6,9 @@ solution: Audience Manager
 title: “区段详细信息”页
 uuid: e844e423-9701-42d4-9ba5-d82f41358adc
 keywords: identity type breakdown, identity breakdown, audience identity reporting, cross-device, cross-device ID, device ID
+feature: Segments
 translation-type: tm+mt
-source-git-commit: 3b56d7ecdef4375bf3b007fa9b325618c701c174
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -26,8 +27,8 @@ ht-degree: 0%
 1. **[!UICONTROL Add New]**: 使用此选项可激活 [!UICONTROL Segment Builder] 和创建新区段。
 2. **[!UICONTROL Edit]**: 使用此选项可更改当前段的配置。
 3. **[!UICONTROL Duplicate]**: 使用此选项可创建当前区段的副本。
-4. **[!UICONTROL Delete]**: 使用此选项可从受众经理帐户中删除当前区段。
-5. **[!UICONTROL Marketplace Recommendations]**: 使用此选项，您可以从未订阅的数据源中 [!UICONTROL Audience Marketplace] 查找与正在查看的区段相似的区段。 请参 [阅受众市场](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) ，了解如何导航市场并查找类似的细分。
+4. **[!UICONTROL Delete]**: 使用此选项可从您的Audience Manager帐户中删除当前区段。
+5. **[!UICONTROL Marketplace Recommendations]**: 使用此选项，您可以从未订阅的数据源中 [!UICONTROL Audience Marketplace] 查找与正在查看的区段相似的区段。 请参 [阅Audience Marketplace数据购买者](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) ，了解如何导航Marketplace并查找类似的细分。
 
 ![基本细分信息](assets/basic-segment-information.png)
 
@@ -46,7 +47,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >受众管理器仅在 [!UICONTROL Identity Type Breakdown] 您具有符合区段要求的跨设备ID时显示报告。
+   >Audience Manager仅在具 [!UICONTROL Identity Type Breakdown] 有符合区段要求的跨设备ID时显示报告。
 
    请观看以下视频以了解概述 [!UICONTROL Identity Type Breakdown]。
    >[!VIDEO](https://video.tv.adobe.com/v/27977/)
