@@ -5,8 +5,9 @@ seo-title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 solution: Audience Manager
 title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
+feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 36c820de5ccb68da6d0e519467edc869064b6e81
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 4%
@@ -26,7 +27,7 @@ ht-degree: 4%
 
 您可以在Experience Platform中使用Audience Manager特征和细分，向客户用户档案添加Audience Manager数据并从Experience Platform细分服务 [中受益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)。
 
-在Audience Manager中，您可以将Experience Platform段用于数据管理Platform用例，例如：
+在Audience Manager中，您可以将Experience Platform细分用于数据管理平台用例，例如：
 * 将第 [三方数据添加](/help/using/overview/data-types-collected.md#third-party-data) 到您的细分中；
 * [算法建模](/help/using/features/algorithmic-models/understanding-models.md);
 * 将区段激活到Experience Platform目标目录中尚不支持的 [目标](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/destinations-catalog.html)。
@@ -106,7 +107,7 @@ Audience Manager会在您的区段Experience Platform中自 **动创建名为** 
 在Audience Manager与Experience Platform之间的受众共享过程中，已应用于Audience Manager段的任何数据导出控制均转换为由Experience Platform数据管理确认的对等标签和营销操作，反之亦然。
 
 >[!NOTE] 有关“数据导出控制”的更多常规信息，请参阅“数 [据导出控制”文档](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)。
-此文档提供有关特定Audience Manager数据导出控件如何映射到Platform中的数据使用标签和营销操作的参考。
+此文档提供有关特定Audience Manager数据导出控制如何映射到平台中的数据使用标签和营销操作的参考。
 
 ### 数据导出控件到数据使用标签
 
