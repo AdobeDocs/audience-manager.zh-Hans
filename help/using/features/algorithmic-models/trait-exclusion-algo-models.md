@@ -4,13 +4,17 @@ seo-description: 特征排除在建模工作流程中提供其他控件，允许
 seo-title: 算法模型特征排除
 title: 算法模型特征排除
 uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '697'
+ht-degree: 1%
 
 ---
 
 
-# 相似建模： 特征排除 {#algorithmic-models-trait-exclusion}
+# 相似人群拓展建模：特征排除 {#algorithmic-models-trait-exclusion}
 
 [!UICONTROL Trait Exclusion] 在建模工作流程中提供其他控件，允许您根据您的域专业知识和法规要求向模型添加必要的防护栏。 使用选 [!UICONTROL Exclusions] 项，在从一个或多个数据源创建模型时选择要忽略的特征。
 
