@@ -1,19 +1,23 @@
 ---
-description: Audience manager提供适用于Android和iOS的软件开发套件(SDK)。
-seo-description: Audience manager提供适用于Android和iOS的软件开发套件(SDK)。
-seo-title: SDK代码
+description: Audience Manager提供适用于Android和iOS的软件开发套件(SDK)。
+seo-description: Audience Manager提供适用于Android和iOS的软件开发套件(SDK)。
+seo-title: SDK 代码
 solution: Audience Manager
-title: SDK代码
+title: SDK 代码
 uuid: 7d0b40ce-9cee-41f1-8253-dcfc77a89c72
+feature: API
 translation-type: tm+mt
-source-git-commit: 88e196b4c7024c201a615a15a76f24d79c9f96df
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '157'
+ht-degree: 40%
 
 ---
 
 
 # [!DNL SDK] 代码 {#sdk-code}
 
-Audience manager为和提供软件[!DNL SDK]开发套 [!DNL Android] 件 [!DNL iOS]。
+Audience Manager为和提供软[!DNL SDK]件开发套 [!DNL Android] 件 [!DNL iOS]。
 
 >[!IMPORTANT]
 >
@@ -21,7 +25,7 @@ Audience manager为和提供软件[!DNL SDK]开发套 [!DNL Android] 件 [!DNL i
 
 * 要开始配置，请转到 [Launch](https://launch.adobe.com/)。
 * 要查看 Experience Platform SDK 存储库中的内容，请转到 [Github：Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
-* 要在您的应用程序中使用新的SDK v.5实施Audience Manager，请阅读新的SDK页面上的 [Adobe Audience Manager文档](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-audience-manager) 。
+* 要在应用程序中实施Audience Manager，请使用新的SDK v.5，请阅读 [新的SDK页](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-audience-manager) 上的Adobe Audience Manager文档。
 
 <br> 
 
