@@ -1,20 +1,21 @@
 ---
 description: 本节介绍如何分析DCS响应以检索对DCS进行实时调用所需的访客和区域ID。
 seo-description: 本节介绍如何分析DCS响应以检索对DCS进行实时调用所需的访客和区域ID。
-seo-title: 从DCS响应获取用户ID和区域
+seo-title: 从 DCS 响应中获取用户 ID 和区域
 solution: Audience Manager
-title: 从DCS响应获取用户ID和区域
+title: 从 DCS 响应中获取用户 ID 和区域
 uuid: 08036045-3b26-4d40-8e94-7d0884048683
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 6%
+ht-degree: 17%
 
 ---
 
 
-# Get User IDs and Regions From a DCS Response {#get-user-ids-and-regions-from-a-dcs-response}
+# 从 DCS 响应中获取用户 ID 和区域 {#get-user-ids-and-regions-from-a-dcs-response}
 
 本节介绍如何分析响 [!DNL DCS] 应以检索对进行实时调用所需的访客和区域ID [!DNL DCS]。
 
