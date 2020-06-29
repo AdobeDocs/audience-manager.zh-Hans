@@ -1,23 +1,24 @@
 ---
-description: 在Audience Manager中，目标是任何第三方系统（广告服务器、DSP和广告网络等） 数据共享。 目标生成器是用于创建和管理cookie、URL或服务器到服务器目标的工具。
+description: 在Audience Manager中，目标是任何第三方系统（广告服务器、DSP和广告网络等） 任何其他系统（广告服务器、DSP、广告网络等）。目标生成器是用于创建和管理cookie、URL或服务器到服务器目标的工具。
 keywords: integration code, destination, destination overview, destination, destination, destination, destination, destination, destination, destination, destination, destination, destination, destination
-seo-description: 在Audience Manager中，目标是任何第三方系统（广告服务器、DSP和广告网络等） 数据共享。 目标生成器是用于创建和管理cookie、URL或服务器到服务器目标的工具。
+seo-description: 在Audience Manager中，目标是任何第三方系统（广告服务器、DSP和广告网络等） 任何其他系统（广告服务器、DSP、广告网络等）。目标生成器是用于创建和管理cookie、URL或服务器到服务器目标的工具。
 seo-title: 目标
 solution: Audience Manager
 title: 目标
 uuid: 5c7dbdec-f73f-46fe-9f12-7685e8d7334f
+feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
 
 # [!UICONTROL Destinations] 概述 {#destinations}
 
-在Audience Manager中， [!UICONTROL destination] 是任何第三方系统(广告服 [!DNL DSP]务器、广告网络等) 数据共享。 [!UICONTROL Destination Builder] 是用于创建和管理、 [!UICONTROL cookie]或 [!DNL URL]的工 [!UICONTROL server-to-server destinations]具
+在Audience Manager中， [!UICONTROL destination] 是任何第三方系统(广告服 [!DNL DSP]务器、广告网络等) 任何其他系统（广告服务器、DSP、广告网络等）。[!UICONTROL Destination Builder] 是用于创建和管理、 [!UICONTROL cookie]或 [!DNL URL]的工 [!UICONTROL server-to-server destinations]具
 
 ## 用途和优势 {#purposes}
 
