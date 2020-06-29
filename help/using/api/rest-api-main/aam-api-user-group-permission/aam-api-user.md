@@ -1,25 +1,29 @@
 ---
 description: 用于管理用户的其余API方法，包括创建、更新、列出、删除和返回用户对象。
 seo-description: 用于管理用户的其余API方法，包括创建、更新、列出、删除和返回用户对象。
-seo-title: 用户管理API方法
+seo-title: 用户管理 API 方法
 solution: Audience Manager
-title: 用户管理API方法
+title: 用户管理 API 方法
 uuid: 6e1f2c35-bb9d-4166-b7d4-d9c5518a61ad
+feature: API
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 7%
 
 ---
 
 
-# 用户管理API方法 {#user-management-api-methods}
+# 用户管理 API 方法 {#user-management-api-methods}
 
-其他 [!DNL API] 管理用户的方法，包括创建、更新、列出、删除和返回用户对象。
+其余 [!DNL API] 管理用户的方法，包括创建、更新、列出、删除和返回用户对象。
 
 <!-- c_rest_api_user_man_user.xml -->
 
 ## Create a User {#create-user}
 
-用于 `POST` 创建新用户的方法。
+用 `POST` 于创建新用户的方法。
 
 <!-- r_rest_api_user_create.xml -->
 
@@ -62,13 +66,13 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 }
 ```
 
-如果 `isAdmin` 设置为true，则用户将创建为合作伙伴管理员。 此属性还可让您了解用户是否为合作伙伴管理员。
+如 `isAdmin` 果设置为true，则创建用户为合作伙伴管理员。 此属性还让您了解用户是否为合作伙伴管理员。
 
-返回 `409 Conflict` 用户名是否已使用。
+返 `409 Conflict` 回用户名（如果已使用）。
 
 ## 更新用户 {#update-user}
 
-一种 `PUT` 用于更新用户的方法。
+一种 `PUT` 用户更新的方法。
 
 <!-- r_rest_api_user_update.xml -->
 
@@ -107,9 +111,9 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 }
 ```
 
-返回 `409 Conflict` 用户名是否已使用。
+返 `409 Conflict` 回用户名（如果已使用）。
 
-## 更新已登录用户 {#update-logged-in-user}
+## 更新登录用户 {#update-logged-in-user}
 
 用 `PUT` 于更新当前登录用户的方法。
 
@@ -117,7 +121,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 >[!NOTE]
 >
->虽然大 [!DNL API] 多数方法只能由合作伙伴管理员调用，但此方法可由非管理员用户调用。
+>大多数 [!DNL API] 方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
 
 ### 请求
 
@@ -150,7 +154,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 }
 ```
 
-返回 `409 Conflict` 用户名是否已使用。
+返 `409 Conflict` 回用户名（如果已使用）。
 
 ## 更新登录用户密码 {#update-logged-in-user-pw}
 
@@ -160,7 +164,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 >[!NOTE]
 >
->虽然大 [!DNL API] 多数方法只能由合作伙伴管理员调用，但此方法可由非管理员用户调用。
+>大多数 [!DNL API] 方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
 
 ### 请求
 
@@ -172,17 +176,17 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 { "oldPassword" : "old password", "newPassword" : "new password" }
 ```
 
-成功 `200 OK` 时返回。 如果 `400 Bad Request` 任一密码出错，则返回。
+成功 `200 OK` 时返回。 如果 `400 Bad Request` 任何一个密码出错，则返回。
 
 ## 重置登录用户密码 {#reset-logged-in-user-pw}
 
-用 `PUT` 于重置当前登录用户的方法。 [!UICONTROL Audience Management] 向用户发送系统生成的密码。
+用 `PUT` 于重置当前登录用户的方法。 [!UICONTROL Audience Management] 向用户发送系统生成的口令。
 
 <!-- r_rest_api_user_password_reset.xml -->
 
 >[!NOTE]
 >
->虽然大 [!DNL API] 多数方法只能由合作伙伴管理员调用，但此方法可由非管理员用户调用。
+>大多数 [!DNL API] 方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
 
 ### 请求
 
@@ -218,15 +222,15 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 }
 ```
 
-## 为登录用户返回用户对象 {#return-user-object-for-logged-in-user}
+## 返回登录用户的用户对象 {#return-user-object-for-logged-in-user}
 
-一 `Get` 种为当前登录用户返回用户对象的方法。
+用 `Get` 于返回当前登录用户的用户对象的方法。
 
 <!-- r_rest_api_user_get_self.xml -->
 
 >[!NOTE]
 >
->虽然大 [!DNL API] 多数方法只能由合作伙伴管理员调用，但此方法可由非管理员用户调用。
+>大多数 [!DNL API] 方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
 
 ### 请求
 
@@ -250,9 +254,9 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 }
 ```
 
-## 列出用户 {#list-users}
+## 列表用户 {#list-users}
 
-列 `GET` 出用户的方法。
+一种 `GET` 列表用户的方法。
 
 <!-- r_rest_api_user_list.xml -->
 
@@ -264,7 +268,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 `GET /api/v1/users/?groupId=343&groupdId=12`
 
-此查询将返回指定组中所有用户的列表。
+此查询返回指定组中所有用户的列表。
 
 ### 响应
 
@@ -294,7 +298,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 `DELETE /api/v1/users/`*`<user_id>`*
 
-成功 `204 No Content` 时返回。 如果发生冲突，请返回 `409 Conflict`。
+成功 `204 No Content` 时返回。 如果冲突再次发生 `409 Conflict`。
 
 ## 批量删除用户 {#delete-users-bulk}
 
