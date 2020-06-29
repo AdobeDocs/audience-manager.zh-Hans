@@ -6,8 +6,9 @@ seo-title: 声明的 ID
 solution: Audience Manager
 title: 声明的 ID
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
+feature: ID Syncs
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1191'
 ht-degree: 10%
@@ -274,7 +275,7 @@ myCallback({
 })
 ```
 
-## 不Target和选择退出呼叫 {#do-not-target}
+## 不目标和选择退出呼叫 {#do-not-target}
 
 该过 [!UICONTROL declared ID] 程将遵守网站访客首选项，以选择 [!DNL Audience Manager] 退出网站定位。 当 [!DNL Audience Manager] 收到退出请求时，将返 [!DNL DCS] 回一个空 [!DNL JSON] 对象而不是 [!DNL Audience Manager] 用户ID。
 
