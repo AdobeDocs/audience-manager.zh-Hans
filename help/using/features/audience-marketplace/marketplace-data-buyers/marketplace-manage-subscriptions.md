@@ -1,21 +1,22 @@
 ---
 description: 在Marketplace中，数据购买者可以进行研究并订阅公共和私有数据服务。 按照以下步骤订阅公共数据源。
 seo-description: 在Marketplace中，数据购买者可以进行研究并订阅公共和私有数据服务。 按照以下步骤订阅公共数据源。
-seo-title: 管理数据馈送订阅
+seo-title: 管理数据信息源订阅
 solution: Audience Manager
-title: 管理数据馈送订阅
+title: 管理数据信息源订阅
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
+feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '2186'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# 管理数据馈送订阅 {#manage-data-feed-subscriptions}
+# 管理数据信息源订阅 {#manage-data-feed-subscriptions}
 
 数据 [!UICONTROL Marketplace] 购买者可在此处进行研究并订阅公共和私人数据服务。 按照以下步骤订阅公共数据源。
 
@@ -171,7 +172,7 @@ ht-degree: 1%
 
 ## 数据源取消激活： 发生原因及响应方法 {#data-feed-deactivation-reasons}
 
-在中， [!UICONTROL Audience Marketplace]数据提供者可以撤销对您订阅的数据服务的访问权限。 如果你发生了这事，别惊慌。 我们掩护你。 查看本节以了解与数据源取消激活相关的流程和过程。
+在中， [!UICONTROL Audience Marketplace]数据提供者可以撤销对您订阅的数据服务的访问权限。 如果你遇到这种事，别惊慌。 我们掩护你。 查看本节以了解与数据源取消激活相关的流程和过程。
 
 ## 数据源取消激活的常见原因 {#reasons-for-deactivation}
 
@@ -312,7 +313,7 @@ ht-degree: 1%
 
 ### 激活
 
-此用例允许您将数据发送到目 [标](../../../features/destinations/destinations.md)。 在 [!DNL Audience Manager]中，目标是任何第三方系统(广告服 [!DNL DSP]务 [!DNL DMP]器、交换等) 数据共享。 但是，对于 [!UICONTROL Activation] 用例，您不能运行重叠报告或在算法模型中测试数据。
+此用例允许您将数据发送到目 [标](../../../features/destinations/destinations.md)。 在 [!DNL Audience Manager]中，目标是任何第三方系统(广告服 [!DNL DSP]务 [!DNL DMP]器、交换等) 任何其他系统（广告服务器、DSP、广告网络等）。但是，对于 [!UICONTROL Activation] 用例，您不能运行重叠报告或测试算法模型中的数据。
 
 >[!MORELIKETHIS]
 >
