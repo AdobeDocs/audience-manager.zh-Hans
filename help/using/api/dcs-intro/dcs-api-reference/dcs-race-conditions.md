@@ -1,20 +1,21 @@
 ---
 description: 介绍如何防止竞态情况和DCS错误处理。
 seo-description: 介绍如何防止竞态情况和DCS错误处理。
-seo-title: 竞赛条件和错误处理
+seo-title: 争用条件和错误处理
 solution: Audience Manager
-title: 竞赛条件和错误处理
+title: 争用条件和错误处理
 uuid: b0aac960-6732-4e96-87a5-40ba2755e02d
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 
-# 竞赛条件和错误处理 {#race-conditions-and-error-handling}
+# 争用条件和错误处理 {#race-conditions-and-error-handling}
 
 介绍如何防止竞争情况和错 [!DNL DCS] 误处理。
 
