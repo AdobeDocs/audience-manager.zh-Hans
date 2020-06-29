@@ -1,17 +1,21 @@
 ---
 description: 特定DIL用例的代码示例和说明。
 seo-description: 特定DIL用例的代码示例和说明。
-seo-title: DIL用例和代码示例
+seo-title: DIL 用例和代码示例
 solution: Audience Manager
-title: DIL用例和代码示例
+title: DIL 用例和代码示例
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 3%
 
 ---
 
 
-# DIL用例和代码示例{#dil-use-cases-and-code-samples}
+# DIL 用例和代码示例{#dil-use-cases-and-code-samples}
 
 特定DIL用例的代码示例和说明。
 
@@ -21,9 +25,9 @@ c_dil_use_case.xml
 
  -->
 
-## 使用DIL将受众元素发送到数据管理器 {#send-data-elements-dil}
+## 使用DIL将数据元素发送到Audience Manager {#send-data-elements-dil}
 
-创建一个对象变量，将有关页面元素的信息发送到受众管理器。 这对于一般数据收集或使用Analytics变量收集数据的替代方法非常有用。
+创建一个对象变量，将有关页面元素的信息发送到Audience Manager。 这对于一般数据收集或用Analytics变量收集数据的替代方法很有用。
 
 <!-- 
 
@@ -33,7 +37,7 @@ c_dil_send_page_objects.xml
 
 **描述**
 
-下面的代码演示如何收集页面数据并将其发送给受众管理器 [!UICONTROL DIL]。 这些示例使用变量将数据元素存放在平面列表或数组中。 记住，将变量作 [为键值对传递](../reference/key-value-pairs-explained.md)。 另外，请注 `c_` 意键值对中键前的前缀。 此必 [需前缀](../features/traits/trait-variable-prefixes.md) ，将信息标识为用户定义的数据。 在第一个示例中，您需要手动附 `c_` 加到键。 在第二个示例中， [!UICONTROL DIL] 自动为您执行此操作。
+下面的代码演示如何收集页面数据并将其发送给Audience Manager [!UICONTROL DIL]。 这些示例使用变量将数据元素存放在平面列表或数组中。 记住，将变量作 [为键值对传递](../reference/key-value-pairs-explained.md)。 另外，请注 `c_` 意键值对中键前的前缀。 此必 [需前缀](../features/traits/trait-variable-prefixes.md) ，将信息标识为用户定义的数据。 在第一个示例中，您需要手动附 `c_` 加到键。 在第二个示例中， [!UICONTROL DIL] 自动为您执行此操作。
 
 **使值属性保持一致**
 
@@ -41,7 +45,7 @@ c_dil_send_page_objects.xml
 
 **示例1: 将数据作为键值对发送**
 
-此基本示例以键值对的形式向受众经理发送颜色和价格数据。 您的代码可能如下所示：
+此基本示例以键值对的形式向Audience Manager发送颜色和价格数据。 您的代码可能如下所示：
 
 <pre class="&ldquo;java&rdquo;"><code>
 var sample_dil = DIL.create({partner:"<i>partner name</i>"}); 
@@ -54,7 +58,7 @@ sample_dil.api.submit();
 
 **示例2: 在对象中发送数据**
 
-此高级示例演示如何将对象中的数据发送到受众管理器。 使用此方法时， [!UICONTROL DIL] 允许您将对象作为函数参数传递给 [!DNL signals()] 方法。 [!UICONTROL DIL] 您的代码可能如下所示：
+此高级示例演示如何将对象中的数据发送到Audience Manager。 使用此方法时， [!UICONTROL DIL] 允许您将对象作为函数参数传递给 [!DNL signals()] 方法。 [!UICONTROL DIL] 您的代码可能如下所示：
 
 <pre class="java"><code>
 var my_object = { 
@@ -92,7 +96,7 @@ sample_dil.api.submit();
 
 ## 捕获引用URL {#capture-referring-url}
 
-捕获引用URL并将其发送给受众管理器。
+捕获引用URL并将其发送给Audience Manager。
 
 <!-- 
 
@@ -115,7 +119,7 @@ adobe_dil.api.signals({ d_referer : document.referrer }).submit();
 
 ## 捕获搜索引擎类型和关键字搜索词 {#capture-search-engine-types}
 
-将有关搜索引擎类型和关键字搜索的信息发送到受众管理器。
+将有关搜索引擎类型和关键字搜索的信息发送到Audience Manager。
 
 >[!IMPORTANT]
 >
@@ -133,7 +137,7 @@ adobe_dil.api.signals({ d_referer : document.referrer }).submit();
 
 **描述**
 
-下面的代码演示如何获取任何支持的搜索引擎的搜索推荐人。 在本例中，假定用户搜索了来自加拿大的“ [!DNL Google] homes”( `www.google.ca`)。 此代码将帮助您捕获这些搜索词并将它们发送给受众经理。
+下面的代码演示如何获取任何支持的搜索引擎的搜索推荐人。 在本例中，假定用户搜索了来自加拿大的“ [!DNL Google] homes”( `www.google.ca`)。 此代码将帮助您捕获这些搜索词并将它们发送到Audience Manager。
 
 **基本代码**
 
@@ -145,7 +149,7 @@ var search_referrer = DIL.tools.getSearchReferrer();
 
 **列出的搜索引擎代码示例**
 
-在本例中，假设用户从加拿大搜索了“ [!DNL Google] homes”( `www.google.ca`)。 请注意代码如何将所 `c_` 需参数作为搜索引擎( `c_se`)和搜索词( `c_st`)的前缀。 `c_` 是必 [需的前缀](../features/traits/trait-variable-prefixes.md) ，它将这些变量标识为受众管理器的客户定义变量。
+在本例中，假设用户从加拿大搜索了“ [!DNL Google] homes”( `www.google.ca`)。 请注意代码如何将所 `c_` 需参数作为搜索引擎( `c_se`)和搜索词( `c_st`)的前缀。 `c_` 是必 [需的前缀](../features/traits/trait-variable-prefixes.md) ，它将这些变量标识为Audience Manager的客户定义变量。
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
@@ -161,7 +165,7 @@ if (search_referrer && search_referrer.valid) {
 
 **未列出的搜索引擎代码示例**
 
-在这种情况下，我们假设用户从中搜索“homes”一词 `dogpile.com`。 由 [!DNL Dogpile] 于默认不支持，您可以配置DIL以识别此搜索引擎，并将搜索词返回给受众管理器。 您的代码可能如下所示：
+在这种情况下，我们假设用户从中搜索“homes”一词 `dogpile.com`。 由 [!DNL Dogpile] 于默认不支持，您可以配置DIL以识别此搜索引擎并将搜索词返回给Audience Manager。 您的代码可能如下所示：
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
@@ -190,9 +194,9 @@ c_dil_map_keys.xml
 
 **描述**
 
-在键值对中，附加到键 `c_` 的前缀将信号标识为客户定义的数据。 客户定义的数据用于定位在事件呼叫中传递数据的特定站点。 但是，有时您希望此信息在受众管理器帐户的所有属性中都可用。 为此，请将键值对中的 `c_` 值映射到平台级别键。 平台级别键前缀 `d_` 有，可在帐户中的所有属性中定位。
+在键值对中，附加到键 `c_` 的前缀将信号标识为客户定义的数据。 客户定义的数据用于定位在事件呼叫中传递数据的特定站点。 但是，有时您希望此信息在Audience Manager帐户中的所有属性中都可用。 为此，请将键值对中的 `c_` 值映射到平台级别键。 平台级别键前缀 `d_` 有，可在帐户中的所有属性中定位。
 
-例如，您从特定站点收集ZIP代码数据，但希望将其目标到所有受众管理器属性。 要使邮政编码在平台级别可用，您可以映射客户定义的邮政编码密钥(例如， `c_zip`)到平台定义的密钥，如下所示。
+例如，您从特定站点收集ZIP代码数据，但希望将其目标到您的所有Audience Manager属性。 要使邮政编码在平台级别可用，您可以映射客户定义的邮政编码密钥(例如， `c_zip`)到平台定义的密钥，如下所示。
 
 **代码示例**
 
@@ -220,7 +224,7 @@ t_dil_google_tagmanager.xml
 
  -->
 
-此过程假定您有帐 [!DNL Google Tag Manager] 户、有关该产品的一些工作知识以及受众经理 `dil.js` 文件。
+此过程假定您有帐 [!DNL Google Tag Manager] 户、有关该产品的一些工作知识以及您的Audience Manager `dil.js` 文件。
 
 要在GTM中传 `dil.js` 输文件，请执行以下操作：
 
@@ -240,5 +244,5 @@ t_dil_google_tagmanager.xml
 >
 >* [Google标签管理器帮助中心](https://support.google.com/tagmanager#topic=3441530)
 >* [信号](../dil/dil-instance-methods.md#signals)
->* [密钥变量的前缀要求](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/traits/trait-variable-prefixes.html#prefix-requirements-for-key-variables)
+>* [关键变量的前缀要求](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/traits/trait-variable-prefixes.html#prefix-requirements-for-key-variables)
 
