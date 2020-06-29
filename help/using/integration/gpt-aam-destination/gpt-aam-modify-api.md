@@ -1,20 +1,21 @@
 ---
 description: 在调用Google Publisher标记。setTargeting方法之前，添加if语句以检查Audience Managercookie。
 seo-description: 在调用Google Publisher标记。setTargeting方法之前，添加if语句以检查Audience Managercookie。
-seo-title: 修改GPT setTargeting API调用
+seo-title: 修改 GPT setTargeting API 调用
 solution: Audience Manager
-title: 修改GPT setTargeting API调用
+title: 修改 GPT setTargeting API 调用
 uuid: 0cd38f30-5d29-4511-a779-d32587f1dafb
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 1%
+ht-degree: 9%
 
 ---
 
 
-# 修改GPT `setTargeting` API调用 {#modify-the-gpt-settargeting-api-call}
+# Modify the GPT `setTargeting` API Call {#modify-the-gpt-settargeting-api-call}
 
 在调用方法之前添加if语句以检查Audience Manager [!DNL Google Publisher Tag] cookie `.setTargeting` 。
 
@@ -77,6 +78,6 @@ if(typeof AamGpt.getCookie("aam_uuid") != "undefined" ){
 
 >[!MORELIKETHIS]
 >
->* [创建GPT目标](../../integration/gpt-aam-destination/gpt-aam-create-destination.md)
->* [Google Publisher标记的Audience Manager代码](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
+>* [创建 GPT 目标](../../integration/gpt-aam-destination/gpt-aam-create-destination.md)
+>* [Google Publisher Tag 的 Audience Manager 代码](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
 
