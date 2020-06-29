@@ -1,23 +1,27 @@
 ---
-description: 一些常见宏用于创建出站文件模板的示例。
-seo-description: 一些常见宏用于创建出站文件模板的示例。
+description: 一些常用宏用于创建出站文件模板的示例。
+seo-description: 一些常用宏用于创建出站文件模板的示例。
 seo-title: 出站宏示例
 solution: Audience Manager
 title: 出站宏示例
 uuid: 823d85d4-d683-45cf-9e60-c12b7d52a498
+feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 3d14d58b9cb66faf506ab729e7ff85dc1818d37e
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 14%
 
 ---
 
 
 # 出站宏示例 {#outbound-macro-examples}
 
-一些常见宏用于创建出站文件模板的示例。
+一些常用宏用于创建出站文件模板的示例。
 
 >[!NOTE]
 >
->在表中，粗体 **类型** (boldface type)用其相关输出标识每个宏。 对于格式示例，已添 `<``>` 加符号以帮助以可视方式分隔每个宏。
+>在表中，粗 **体类型** (boldface type)用其相关输出标识每个宏。 对于格式示例，已添 `<` 加符 `>` 号以帮助以可视方式分隔每个宏。
 
 ## 文件名宏 {#file-name-macros}
 
@@ -125,7 +129,7 @@ source-git-commit: 3d14d58b9cb66faf506ab729e7ff85dc1818d37e
        {"AdvertiserId":"&lt;PIDALIAS&gt;",&nbsp;"DataCenterId":&nbsp;2,"TDID":"&lt;DP_UUID&gt;", "Data":[&lt;SEGMENT_LIST:{seg|&lt;OPEN_CURLY_BRACKET&gt;"Name":"&lt;seg.alias&gt;"&lt;CLOSE_CURLY_BRACKET&gt;}; separator=","&gt;&lt;if(SEGMENT_LIST&nbsp;&amp;&amp;&nbsp;REMOVED_SEGMENT_LIST)&gt;&lt;COMMA&gt;&lt;endif&gt; &lt;REMOVED_SEGMENT_LIST:{seg|&lt;OPEN_CURLY_BRACKET&gt;"Name":"&lt;seg.alias&gt;", "TtlInMinutes":0&lt;CLOSE_CURLY_BRACKET&gt;};&nbsp;separator=","&gt;]}
      </code></p><p><b>Output（输出）:</b></p> <p>
      <code>//First&nbsp;example {"AdvertiserId":"12345",&nbsp;"DataCenterId":&nbsp;2, "TDID":"dfd215e4-8d6b-4fdb-90b9-fab4456f2c9d","Data":[{"Name":"4321"}]} //Second&nbsp;example {"AdvertiserId":"12345",&nbsp;"DataCenterId":&nbsp;2,"TDID":"9099e8fe-abab-5114-abaa-28bdaa0539ca","Data":[{"Name":"4321"},{"Name":"987","TtlInMinutes":0}, {"Name":"654","TtlInMinutes":0}]} 
-     </code></p> <p> <p>注意： 在第一个示例中，宏仅返回数据，因 <code> SEGMENT_LIST </code> 为 <code> REMOVED_SEGMENT_LIST </code> 空。 第二个示例返回两个宏的数据。 </p> </p> </td> 
+     </code></p> <p> <p>注意：  在第一个示例中，宏仅返回数据，因 <code> SEGMENT_LIST </code> 为 <code> REMOVED_SEGMENT_LIST </code> 为空。 第二个示例返回两个宏的数据。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SET_ATTRIBUTES </code> </p> </td> 
@@ -144,12 +148,12 @@ source-git-commit: 3d14d58b9cb66faf506ab729e7ff85dc1818d37e
 
 ### `DPUUID` 示例
 
-为了帮助您了解宏输出数 `DPUUID` 据的方式，我们假定我们有2 `DPID`个映射 `DPUUID`到，如下所示：
+为了帮助您了解宏输 `DPUUID` 出数据的方式，我们假定我们有 `DPID`2个映射 `DPUUID`到，如下所示：
 
-* DPID `1111` 映射到DPUUID `AAAA` (timestamp = 1)和 `BBBB` (timestamp = 2)。
-* DPID映 `2222` 射到DPUUID `CCCC`。
+* DPID `1111` 映射到DPUUID `AAAA` (timestamp = 1) `BBBB` 和(timestamp = 2)。
+* DPID `2222` 映射到DPUUID `CCCC`。
 
-鉴于这些情况，下表枚举了一些可能的格式字符串及其输出。
+在这些情况下，下表枚举一些可能的格式字符串及其输出。
 
 <table id="table_6A6D94F994C1475BB09126BA0B815B1F"> 
  <thead> 
@@ -166,14 +170,14 @@ source-git-commit: 3d14d58b9cb66faf506ab729e7ff85dc1818d37e
    <td colname="col3"> <p> <code> [["1111","AAAA"],["1111","BBBB"]] </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>为所有DPID返回最多1个映射 </p> </td> 
+   <td colname="col1"> <p>为所有DPID返回最大1个映射 </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=1111,2222|maxMappings=1|format=json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>对于DPID, <code> 1111 </code>宏仅由于该ID的 <code> BBBB </code> 时间戳较大而映射到DPUUID。 </p> </td> 
+   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>对于DPID <code> 1111 </code>，宏仅由于该ID的 <code> BBBB </code> 时间戳较大而映射到DPUUID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>为单个DPID返回最多2个映射 </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=2222|maxMappings=2|format=json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>尽管如 <code> maxMappings=2 </code>此，此宏仅返回1个DPUUID到DPUUID映射，因为指定的DPID只有一个DPUUID。 </p> </td> 
+   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>即使 <code> maxMappings=2 </code>此宏只返回1个DPID到DPUUID映射，因为指定的DPID只有一个DPUUID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
