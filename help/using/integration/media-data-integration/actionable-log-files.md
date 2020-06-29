@@ -6,11 +6,12 @@ seo-title: 可操作的日志文件
 solution: Audience Manager
 title: 可操作的日志文件
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
+feature: Log Files
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1378'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -298,6 +299,6 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 >[!MORELIKETHIS]
 >
->* [将DCM数据文件导入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
->* [受众优化报告](../../reporting/audience-optimization-reports/audience-optimization-reports.md)
+>* [将 DCM 数据文件导入 Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+>* [Audience Optimization 报表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)
 
