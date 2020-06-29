@@ -6,8 +6,9 @@ seo-title: 关于相似建模
 solution: Audience Manager
 title: 关于相似建模
 uuid: 39441e72-5316-453d-9aff-0e0b633aabcd
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 # 理解 [!UICONTROL Look-Alike Modeling] {#about-algorithmic-models}
 
-## 查找新用户 [!UICONTROL Look-Alike Modeling] {#find-new-users}
+## 通过 [!UICONTROL Look-Alike Modeling] {#find-new-users}
 
 [!UICONTROL Look-Alike Modeling] 帮助您通过自动化受众分析发现新的独特。 当您选择或、时 [!UICONTROL trait] 间 [!UICONTROL segment]间隔以及第一方和第三方时，流程开始 [!UICONTROL data sources]。 您的选择为算法模型提供输入。 当分析过程运行时，它会根据所选人群的共享特征来查找合格用户。 完成后，此数据可在特 [征构建器中](../../features/traits/about-trait-builder.md) ，使用它根据准确性和范围创 [建特征](../../features/traits/trait-accuracy-reach.md)。 此外，您还可以构建将算法特征与表达式和比较运 [!UICONTROL rules-based traits] 算符相结合的细分，并添加其 [!DNL Boolean] 他资格要求。 [!UICONTROL Look-Alike Modeling] 为您提供了从所有可用特征数据中提取值的动态方式。
 
@@ -62,7 +63,7 @@ ht-degree: 1%
 
 ### 第3步： 分配权重
 
-在这一步中，按 [!UICONTROL TraitWeight] 照影响力或 [!UICONTROL traits] 期望性对新发现的内容进行排名。 权重比例从0%到100%。 [!UICONTROL Traits] 排名接近100%意味着它们更像基线人口中的受众。 此外，权重过大 [!UICONTROL traits] 也很有价值，因为它们代表的是新的、独特的用户，他们的行为可能与您已建立的基准受众相似。 请记住， [!UICONTROL TraitWeight] 在基 [!UICONTROL traits] 线中具有高的通用性，在比较的数据源中具有高的专一性，这比在每个数据集中 [!UICONTROL traits] 都具有更高的价值。
+在这一步中，按 [!UICONTROL TraitWeight] 照影响力 [!UICONTROL traits] 或期望性对新发现的数据进行排名。 权重比例从0%到100%。 [!UICONTROL Traits] 排名接近100%意味着它们更像基线人口中的受众。 此外，权重过大 [!UICONTROL traits] 也很有价值，因为它们代表的是新的、独特的用户，他们的行为可能与您已建立的基准受众相似。 请记住， [!UICONTROL TraitWeight] 在基 [!UICONTROL traits] 线中具有高的通用性，在比较的数据源中具有高的专一性，这比在每个数据集中 [!UICONTROL traits] 都具有更高的价值。
 
 ### 第4步： 评分用户
 
