@@ -5,8 +5,9 @@ seo-title: 配置文件合并规则概述
 solution: Audience Manager
 title: 配置文件合并规则概述
 uuid: 9e7988cc-9145-432b-840a-54fbd8657b3b
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: a077726fe4878aeb7722586654c27769e92e0665
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 4%
@@ -41,8 +42,8 @@ ht-degree: 4%
 
 您 [!UICONTROL Profile Merge Rules] 可以：
 
-* Target用户 [基于实名用户档案](../../reference/visitor-authentication-states.md)、匿名用户档案或两者的组合。
-* Target跨设备的特定客户。
+* 目标用户 [基于实名用户档案](../../reference/visitor-authentication-states.md)、匿名用户档案或两者的组合。
+* 目标跨设备的特定客户。
 * 根据确定性数据构建设备图。
 * 根据不同的用户档案 [!UICONTROL segments] 微调数据。
 * 进一步了解您的受众。
