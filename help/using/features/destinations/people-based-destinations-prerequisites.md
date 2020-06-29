@@ -4,8 +4,9 @@ seo-description: '请阅读以下内容，了解在注册基于人员的目标�
 seo-title: 基于人员的目标先决条件和注意事项
 solution: Audience Manager
 title: 先决条件和注意事项
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: 02bde5060d50ba581937c504331397dfbbcdc19f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 4%
