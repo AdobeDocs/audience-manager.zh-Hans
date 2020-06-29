@@ -1,17 +1,21 @@
 ---
 description: 用户档案链接指标提供有关对站点进行身份验证的人员和设备的数据。 在您创建合并规则或单击“用户档案合并规则”仪表板中的现有规则时，用户档案链接中的数据和图形会动态更新。 这些指标可以包括Adobe Experience Cloud Device Co-op或其他第三方设备图形源中的设备图。
 seo-description: 用户档案链接指标提供有关对站点进行身份验证的人员和设备的数据。 在您创建合并规则或单击“用户档案合并规则”仪表板中的现有规则时，用户档案链接中的数据和图形会动态更新。 这些指标可以包括Adobe Experience Cloud Device Co-op或其他第三方设备图形源中的设备图。
-seo-title: 用户档案合并规则的报告指标
+seo-title: 配置文件合并规则的报表量度
 solution: Audience Manager
-title: 用户档案合并规则的报告指标
+title: 配置文件合并规则的报表量度
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '833'
+ht-degree: 2%
 
 ---
 
 
-# 用户档案合并规则的报告指标 {#report-metrics-for-profile-merge-rules}
+# 配置文件合并规则的报表量度 {#report-metrics-for-profile-merge-rules}
 
 [!UICONTROL Profile Merge Rule] 度量提供有关对您的站点进行身份验证的人员和设备的数据。 在您创建合并规 [!UICONTROL Profile Merge Rule Reports] 则或单击仪表板中的现有规则时，数据和图形会动态 [!UICONTROL Profile Merge Rules] 更新。 这些指标可以包括来自或其 [!DNL Adobe Experience Cloud Device Co-op] 他第三方设备图形源的设备图。
 
