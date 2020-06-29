@@ -4,9 +4,10 @@ seo-description: 客户关怀团队随时准备帮助您解决可能出现的任
 seo-title: 如果遇到问题
 solution: Audience Manager
 title: 如果遇到问题
-translation-type: ht
-source-git-commit: 0b32a48e99b35990dc7ccdcc03fcc68ba769d93e
-workflow-type: ht
+feature: Support
+translation-type: tm+mt
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
 
