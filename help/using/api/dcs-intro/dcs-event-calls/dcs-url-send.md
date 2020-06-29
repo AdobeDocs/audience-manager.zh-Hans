@@ -1,20 +1,21 @@
 ---
 description: 开始此处，获取有关对DCS进行/事件调用的信息。 本节包括有关调用语法、参数、格式和请求示例的信息。
 seo-description: 开始此处，获取有关对DCS进行/事件调用的信息。 本节包括有关调用语法、参数、格式和请求示例的信息。
-seo-title: 将数据发送到DCS
+seo-title: 将数据发送到 DCS
 solution: Audience Manager
-title: 将数据发送到DCS
+title: 将数据发送到 DCS
 uuid: 024e307d-bfcb-46cf-ac3a-fc71df0248fe
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
 
-# 将数据发送到DCS {#send-data-to-the-dcs}
+# 将数据发送到 DCS {#send-data-to-the-dcs}
 
 开始，了解有关拨 `/event` 叫的信 [!DNL DCS]息。 本节包括有关调用语法、参数、格式和请求示例的信息。
 
@@ -72,7 +73,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
      <ul id="ul_624DC78759F74AD8920220058E54E083"> 
       <li id="li_091E5B4820EC4A93B775433E428E74AB">将字符串数据括在多次引号中(例如 <code> age="41 to 55"</code>)。 </li> 
       <li id="li_C558E3BA6EE34413BBBB962D4CD0D10E">您可以在单个值（例如）上传递多个键 <i><code>key</i>=<i>val1,val2,val3</i></code></i>。 </li> 
-     </ul> </p> <p>请参 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-key-format.md"> 阅格式化DCS调用中的键值对</a>。 </p> </td>
+     </ul> </p> <p>See <a href="../../../api/dcs-intro/dcs-api-reference/dcs-key-format.md"> Formatting Key-Value Pairs in DCS Calls</a>. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> 
@@ -96,9 +97,9 @@ https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_r
 
 ## 后续步骤 {#dcs-next-steps}
 
-既然您已经熟悉将数据发送到 [!DNL DCS]，现在就该研究如何从中获取数据并分析这些信息了。 请参 [阅从DCS接收数据](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)。
+既然您已经熟悉将数据发送到 [!DNL DCS]，现在就该研究如何从中获取数据并分析这些信息了。 See [Receive Data From the DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md).
 
 >[!MORELIKETHIS]
 >
->* [已说明键值对](../../../reference/key-value-pairs-explained.md)
+>* [键值对说明](../../../reference/key-value-pairs-explained.md)
 
