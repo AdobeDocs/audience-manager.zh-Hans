@@ -1,22 +1,23 @@
 ---
-description: 介绍可用于目标用户的通用平台级键值对，这些键值对具有跨受众管理器帐户中所有属性的地理变量。
-seo-description: 介绍可用于目标用户的通用平台级键值对，这些键值对具有跨受众管理器帐户中所有属性的地理变量。
-seo-title: 使用平台级密钥进行地理定位
+description: 介绍可用于目标用户的通用平台级键值对，这些键值对包含您Audience Manager帐户中所有属性的地理变量。
+seo-description: 介绍可用于目标用户的通用平台级键值对，这些键值对包含您Audience Manager帐户中所有属性的地理变量。
+seo-title: 使用平台级别关键值进行地理定位
 solution: Audience Manager
-title: 使用平台级密钥进行地理定位
+title: 使用平台级别关键值进行地理定位
 uuid: c7e4cbfe-e564-404e-a565-bbe5fd2fb519
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 8959e0023f7663d7a20080aaf130d469ed8a4313
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 
-# Geotargeting With Platform-level Keys {#geotargeting-with-platform-level-keys}
+# 使用平台级别关键值进行地理定位 {#geotargeting-with-platform-level-keys}
 
-介绍可用于目标用户的通用平台级键值对，这些键值对具有跨受众管理器帐户中所有属性的地理变量。
+介绍可用于目标用户的通用平台级键值对，这些键值对包含您Audience Manager帐户中所有属性的地理变量。
 
 <!-- c_tb_platform_vars.xml -->
 
@@ -57,5 +58,5 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
->* [密钥变量的前缀要求](../../features/traits/trait-variable-prefixes.md)
+>* [关键变量的前缀要求](../../features/traits/trait-variable-prefixes.md)
 
