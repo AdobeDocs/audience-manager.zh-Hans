@@ -1,19 +1,20 @@
 ---
 description: 以下信息可帮助您联系 Adobe 以及了解与使用本产品和文档有关的法律问题。
 seo-description: 以下信息可帮助您联系 Adobe 以及了解与使用本产品和文档有关的法律问题。
-seo-title: 联系方式和法律信息
+seo-title: 联系和法律信息
 solution: Audience Manager
-title: 联系方式和法律信息
-translation-type: ht
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
-workflow-type: ht
+title: 联系和法律信息
+feature: Support
+translation-type: tm+mt
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 100%
 
 ---
 
 
-# 联系方式和法律信息 {#legal-contact}
+# 联系和法律信息 {#legal-contact}
 
 以下信息可帮助您联系 Adobe 以及了解与使用本产品和文档有关的法律问题。
 
