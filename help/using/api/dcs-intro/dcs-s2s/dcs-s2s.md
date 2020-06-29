@@ -1,20 +1,21 @@
 ---
 description: 服务器到服务器(S2S)API提供了代码和方法，使您能够发送和接收DCS用户数据，并在您自己的系统或应用程序中处理这些信息。
 seo-description: 服务器到服务器(S2S)API提供了代码和方法，使您能够发送和接收DCS用户数据，并在您自己的系统或应用程序中处理这些信息。
-seo-title: 用于服务器到服务器数据传输的DCS API
+seo-title: 用于服务器到服务器数据传输的 DCS API
 solution: Audience Manager
-title: 用于服务器到服务器数据传输的DCS API
+title: 用于服务器到服务器数据传输的 DCS API
 uuid: 8c369166-c8a7-46b0-9913-4c027f5b1df9
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
 
-# 用于服务器到服务器数据传输的DCS API{#dcs-apis-for-server-to-server-data-transfers}
+# 用于服务器到服务器数据传输的 DCS API{#dcs-apis-for-server-to-server-data-transfers}
 
 服务器到服务器([!UICONTROL S2S]) [!DNL API]提供的代码和方法允许您发送和接收用户 [!DNL DCS] 数据，并在自己的系统或应用程序中处理此信息。
 
@@ -43,11 +44,11 @@ ht-degree: 0%
 
 我们将在新方法可用时添加它们。 请参阅以下部分，开始使用。
 
-* [从DCS响应获取用户ID和区域](dcs-aam-ids.md)
+* [从 DCS 响应中获取用户 ID 和区域](dcs-aam-ids.md)
 * [通过Experience CloudID获取用户ID和区域……](dcs-mcid-ids.md)
-* [进行服务器到服务器DCS API调用](dcs-s2s-calls.md)
+* [进行服务器到服务器 DCS API 调用](dcs-s2s-calls.md)
 
 >[!MORELIKETHIS]
 >
->* [DCS API参考](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
+>* [DCS API 参考](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
 
