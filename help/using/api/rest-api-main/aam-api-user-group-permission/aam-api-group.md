@@ -1,19 +1,23 @@
 ---
-description: 用于管理组的REST API方法，包括创建、更新、列出和删除组。
-seo-description: 用于管理组的REST API方法，包括创建、更新、列出和删除组。
-seo-title: 组管理API方法
+description: 余留API方法来管理组，包括创建、更新、列出和删除组。
+seo-description: 余留API方法来管理组，包括创建、更新、列出和删除组。
+seo-title: 组管理 API 方法
 solution: Audience Manager
-title: 组管理API方法
+title: 组管理 API 方法
 uuid: fe042eb5-ea12-42fe-be98-d721f987a914
+feature: API
 translation-type: tm+mt
-source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 13%
 
 ---
 
 
-# 组管理API方法 {#group-management-api-methods}
+# 组管理 API 方法 {#group-management-api-methods}
 
-其余 [!DNL API] 方法用于管理组，包括创建、更新、列出和删除组。
+其余 [!DNL API] 管理组的方法，包括创建、更新、列出和删除组。
 
 <!-- c_rest_api_user_man_group.xml -->
 
@@ -50,9 +54,9 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
   }
 ```
 
-## 更新用户组 {#update-group}
+## 更新组 {#update-group}
 
-一种 `PUT` 更新用户组的方法。
+用 `PUT` 于更新用户组的方法。
 
 <!--
 r_rest_api_group_update.xml
@@ -87,7 +91,7 @@ r_rest_api_group_update.xml
 
 ## 列表组 {#list-groups}
 
-列 `GET` 出用户组的方法。
+一种 `GET` 列表用户组的方法。
 
 <!--
 r_rest_api_group_list.xml
@@ -123,11 +127,11 @@ r_rest_api_group_list.xml
 
 `DELETE /api/v1/groups/`*`<groupId>`*
 
-成功 `204 No Content` 时返回。 如果发生冲突，请返回 `409 Conflict`。
+成功 `204 No Content` 时返回。 如果冲突再次发生 `409 Conflict`。
 
 ## 批量删除组 {#delete-groups-bulk}
 
-一种 `DELETE` 批量删除多个用户组并从该组中删除所有成员的方法。
+一种 `DELETE` 批量删除多个组并从该组中删除所有成员的方法。
 
 <!-- r_rest_api_group_delete_bulk.xml -->
 
@@ -135,11 +139,11 @@ r_rest_api_group_list.xml
 
 `DELETE /api/v1/groups/bulk-delete`
 
-成功 `204 No Content` 时返回。 如果发生冲突，请返回 `409 Conflict`。
+成功 `204 No Content` 时返回。 如果冲突再次发生 `409 Conflict`。
 
-## 列出用户组的所有权限 {#list-permissions-group}
+## 列表组的所有权限 {#list-permissions-group}
 
-列 `GET` 出组上权限对象的方法。
+列表 `GET` 组上权限对象的方法。
 
 <!-- r_rest_api_perm_list_group.xml -->
 
@@ -169,7 +173,7 @@ r_rest_api_group_list.xml
 ]
 ```
 
-如果 `400 Bad Request` 组无法访问，则返回。
+返回 `400 Bad Request` 组（如果组无法访问）。
 
 ## Set Permissions for a Group {#set-permissions-group}
 
