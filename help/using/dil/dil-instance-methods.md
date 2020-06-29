@@ -1,20 +1,24 @@
 ---
-description: 使用实例级DIL API，您可以以编程方式创建和处理受众管理器对象。 实例级方法增强了类级方法建立的API功能。
+description: 使用实例级DIL API，您可以以编程方式创建和处理Audience Manager对象。 实例级方法增强了类级方法建立的API功能。
 keywords: create traits;create trait
-seo-description: 使用实例级DIL API，您可以以编程方式创建和处理受众管理器对象。 实例级方法增强了类级方法建立的API功能。
-seo-title: 实例级DIL方法
+seo-description: 使用实例级DIL API，您可以以编程方式创建和处理Audience Manager对象。 实例级方法增强了类级方法建立的API功能。
+seo-title: 实例级别 DIL 方法
 solution: Audience Manager
-title: 实例级DIL方法
+title: 实例级别 DIL 方法
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 13%
 
 ---
 
 
-# 实例级DIL方法{#instance-level-dil-methods}
+# 实例级别 DIL 方法{#instance-level-dil-methods}
 
-使用实例级API, [!UICONTROL DIL] 您可以以编程方式创建和处理受众管理器对象。 实例级方法增强了类级方法建立的API功能。
+使用实例级API, [!UICONTROL DIL] 您可以以编程方式创建和处理Audience Manager对象。 实例级方法增强了类级方法建立的API功能。
 
 ## 实例级DIL方法入门 {#get-started-dil-methods}
 
@@ -26,7 +30,7 @@ c_api_overview.xml
 
 使用实例级API时 [!UICONTROL DIL] :
 
-* 访问需要合作伙伴名称和容器命名空间ID(NSID)。 请与受众经理客户经理联系以获取此信息。
+* 访问需要合作伙伴名称和容器命名空间ID(NSID)。 请与Audience Manager客户经理联系以获取此信息。
 * 根据您 *所使用的方* 法的要求，将API文档中任何斜体文本的示例替换为值、ID或其他变量。
 
 <!-- 
@@ -164,7 +168,7 @@ partnerObject.api.logs({
 
 ## submit {#submit}
 
-将所有待处理数据提交到受众管理器，以便 [!UICONTROL DIL] 实例。
+将所有待处理数据提交到实例的Audience Manager [!UICONTROL DIL] 中。
 
 <!-- 
 
@@ -483,7 +487,7 @@ state = {
 
 ## idSync {#idsync}
 
-由两个功能组成，它们使数据合作伙伴能够在自己和受众管理器之间交换和同步用户ID。
+由两个功能组成，它们使数据合作伙伴能够在自己和Audience Manager之间交换和同步用户ID。
 
 <!-- 
 
@@ -505,11 +509,11 @@ r_dil_idsync.xml
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.idSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>不同数据合作伙伴和受众经理之间。 例如，合作伙伴x会使用它将用户ID与合作伙伴y同步，然后将其发送给受众管理器。 </p> <p> <p><b>重要：</b>  此方法已弃用。 请使用 <code> idSyncByURL </code> Adobe Experience Platform Identity Service实例的方法。 </p> </p> </td> 
+   <td colname="col2"> <p>不同数据合作伙伴和Audience Manager之间。 例如，合作伙伴x会使用它将用户ID与合作伙伴y同步，然后将其发送给Audience Manager。 </p> <p> <p><b>重要：</b>  此方法已弃用。 请使用Adobe Experience Platform <code> idSyncByURL </code> 标识服务实例的方法。 </p> </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.aamIdSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>当您已经知道用户ID并希望将其发送给受众管理器时。 </p> <p> <p><b>重要：</b>  此方法已弃用。 请使用 <code> idSyncByDataSource </code> Adobe Experience Platform Identity Service实例的方法。 </p> </p> </td> 
+   <td colname="col2"> <p>当您已经知道用户ID并希望将其发送给Audience Manager时。 </p> <p> <p><b>重要：</b>  此方法已弃用。 请使用Adobe Experience Platform <code> idSyncByDataSource </code> 标识服务实例的方法。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -555,7 +559,7 @@ r_dil_idsync.xml
 `idSync` 接受以下宏：
 
 * **`%TIMESTAMP%`:**生成时间戳（以毫秒为单位）。 用于缓存无效的情况。
-* **`%DID%`:**为用户插入受众管理器ID。
+* **`%DID%`:**插入用户的Audience ManagerID。
 * **`%HTTP_PROTO%`:**设置页面协`http`议(`https`或)。
 
 **响应**
@@ -718,9 +722,9 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >[!MORELIKETHIS]
 >
 >* [关键变量的名称要求](../features/traits/trait-key-name-requirements.md)
->* [密钥变量的前缀要求](../features/traits/trait-variable-prefixes.md)
->* [Adobe Experience Platform Identity Service中的同步功能](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
->* [DIL创建](../dil/dil-class-overview/dil-create.md#dil-create)
->* [Adobe Experience Platform Identity Service: UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
->* [Adobe Experience Platform Identity Service中的CORS支持](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
+>* [关键变量的前缀要求](../features/traits/trait-variable-prefixes.md)
+>* [Adobe Experience Platform身份服务中的同步函数](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
+>* [DIL 创建](../dil/dil-class-overview/dil-create.md#dil-create)
+>* [Adobe Experience Platform身份服务： UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
+>* [Adobe Experience Platform身份服务中的CORS支持](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
 
