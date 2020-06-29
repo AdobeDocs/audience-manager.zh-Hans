@@ -5,8 +5,9 @@ seo-title: 入站数据文件的 Amazon S3 名称和文件大小要求
 solution: Audience Manager
 title: 入站数据文件的 Amazon S3 名称和文件大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 620730ab1596d4777a768de4453b73538671279d
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 6%
@@ -92,7 +93,7 @@ ht-degree: 6%
    <td colname="col2"> <p>同步选项包括： </p> <p> 
      <ul id="ul_DAAF61EC636C4456BECDDC34C3F86E83"> 
       <li id="li_6EC6DE442B4546AA9F4F800D65C8A4EC"> <code> sync</code>: 第三方数据提供者按用户发送要在Audience Manager系统中添加或删除的特征时的正常情况。 </li> 
-      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>: 允许列表提供者按每个用户发送一个特征，该特征Audience Manager应覆盖该数据提供者的所有用户现有的第三方特征。 无需将所有用户都包含在覆盖文件中。 仅包含要更改的用户。 </li> 
+      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>: 允许列表提供者按每个用户发送一个特征，该特征应覆盖Audience Manager中此数据提供者的所有现有第三方特征。 无需将所有用户都包含在覆盖文件中。 仅包含要更改的用户。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
