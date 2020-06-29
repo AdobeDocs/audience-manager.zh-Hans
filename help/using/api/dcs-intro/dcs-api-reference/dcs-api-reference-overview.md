@@ -3,8 +3,9 @@ description: DCS API代码、方法和流程的概念信息、描述和定义。
 seo-description: Adobe Audience Manager(AAM)中DCS API代码、方法和进程的概念信息、说明和定义。
 seo-title: Adobe Audience Manager(AAM)中的DCS API参考概述
 title: DCS API 参考概述
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 13%
