@@ -1,32 +1,36 @@
 ---
-description: 作为选项，您可以在将数据文件发送到Audience manager时使用PGP加密来加密它们。
-seo-description: 作为选项，您可以在将数据文件发送到Audience manager时使用PGP加密来加密它们。
-seo-title: 入站数据类型的文件PGP加密
+description: 作为一种选项，在将数据文件发送到Audience Manager时，可以使用PGP加密来加密数据文件。
+seo-description: 作为一种选项，在将数据文件发送到Audience Manager时，可以使用PGP加密来加密数据文件。
+seo-title: 入站数据类型的文件 PGP 加密
 solution: Audience Manager
-title: 入站数据类型的文件PGP加密
+title: 入站数据类型的文件 PGP 加密
 uuid: 89caace1-0259-48fc-865b-d525ec7822f7
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: b2e0b560a944f2ad63a48476be647f1355712342
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 11%
 
 ---
 
 
-# 入站数据类型的文件PGP加密{#file-pgp-encryption-for-inbound-data-types}
+# 入站数据类型的文件 PGP 加密{#file-pgp-encryption-for-inbound-data-types}
 
-在将数据文件发送到Audience manager时， [!DNL PGP] 可以使用加密方式加密数据文件。
+在将数据文件发送到Audience Manager时， [!DNL PGP] 可以使用加密方式对数据文件进行加密。
 
 <!-- c_encryption.xml -->
 
 >[!IMPORTANT]
 >
->[!DNL PGP] 加密包括文件压缩。 发送加 [!DNL PGP] 密的入站文件时，请确保不使用 [gzip](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) ()压缩`.gz`它们。
+>[!DNL PGP] 加密包括文件压缩。 发送加 [!DNL PGP] 密的入站文件时，请确保不 [使用](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) gzip()压`.gz`缩它们。
 >
->[!DNL PGP] 在Audience Manager中，也经过压缩 [的加密](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) 入站文件无效。
+>[!DNL PGP] 经过压缩的已加密入站 [文件](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) ，在Audience Manager中无效。
 
 请按照以下步骤加密入站数据文件。
 
-1. 下载 [Audience manager公钥](./assets/adobe_pgp.pub)。
-2. 将公钥导入受信任的商店。
+1. 下载 [Audience Manager公钥](./assets/adobe_pgp.pub)。
+2. 将公钥导入信任的商店。
 
    例如，如果您使 [!DNL GPG]用，该命令可能类似于以下内容：
 
@@ -48,8 +52,8 @@ source-git-commit: b2e0b560a944f2ad63a48476be647f1355712342
 
    `gpg --recipient "Adobe AudienceManager" --cipher-algo AES --output $output.gpg --encrypt $inbound`
 
-   所有加密的数 `.pgp` 据必须 `.gpg` 使用或作为文件扩展名(例如 `ftp_dpm_100_123456789.sync.pgp` 或 `ftp_dpm_100_123456789.overwrite.gpg`)。
+   所有加密数据 `.pgp` 必须 `.gpg` 使用或作为文件扩展名( `ftp_dpm_100_123456789.sync.pgp` 如或 `ftp_dpm_100_123456789.overwrite.gpg`)。
 
    >[!NOTE]
    >
-   >Audience manager仅支持数 [!DNL Advanced Encryption Standard (AES)] 据加密算法。 Audience manager支持任何关键大小。
+   >Audience Manager仅支持 [!DNL Advanced Encryption Standard (AES)] 数据加密算法。 Audience Manager支持任何密钥大小。
