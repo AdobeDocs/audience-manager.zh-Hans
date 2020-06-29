@@ -1,16 +1,17 @@
 ---
 description: 单个特征的详细信息页面提供特征名称、ID、性能度量、定义特征的表达式、它所属的区段和特征审核日志等信息的概述。 要查看这些详细信息，请转至“受众数据”>“特征”，然后单击要处理的特征的名称。
 seo-description: 单个特征的详细信息页面提供特征名称、ID、性能度量、定义特征的表达式、它所属的区段和特征审核日志等信息的概述。 要查看这些详细信息，请转至“受众数据”>“特征”，然后单击要处理的特征的名称。
-seo-title: “特征详细信息”页
+seo-title: 特征详细信息页面
 solution: Audience Manager
-title: “特征详细信息”页
+title: 特征详细信息页面
 uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
 keywords: identity type breakdown, identity breakdown, audience identity reporting, cross-device, cross-device ID, device ID
+feature: Traits
 translation-type: tm+mt
-source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
