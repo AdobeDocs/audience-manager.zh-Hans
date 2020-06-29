@@ -5,8 +5,9 @@ seo-title: 数据源列表和设置
 solution: Audience Manager
 title: 数据源列表和设置
 uuid: 280a6acd-fef0-4737-a96d-9e22fbc8bfaf
+feature: Data Sources
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 3%
@@ -153,7 +154,7 @@ ht-degree: 3%
    <td colname="col2"> <p>跨设备数据源包含设备图形中的ID。 设备图是映射到一个或多个Audience ManagerID到群集 <span class="keyword"> 的</span> ID的集合。 这一群通常代表一个或更大的家庭群体。 仅对作为“数据提供程序”列出的帐户可用。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 跨访客Platform共享关联的Audience Manager或设备ID</span></b> </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol"> 跨访客平台共享关联的Audience Manager或设备ID</span></b> </p> </td> 
    <td colname="col2"> <p>您的数据源包含访客或设备ID，可以在其他Experience Cloud解决方 <span class="keyword"> 案之间</span> 共享。 </p> </td> 
   </tr>
   <tr> 
