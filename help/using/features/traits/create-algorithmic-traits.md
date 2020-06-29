@@ -5,11 +5,12 @@ seo-title: 创建算法特征
 solution: Audience Manager
 title: 创建算法特征
 uuid: 50c2d2d1-f412-479b-bb70-4f139429c388
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 62147fc719a59d2b2c7b444bce853334b03816c6
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -39,7 +40,7 @@ ht-degree: 0%
 
 <!-- r_algo_trait_config_section.xml -->
 
-* [创建相似模型](../../features/algorithmic-models/create-model.md)。
+* [创建相似人群拓展模型](../../features/algorithmic-models/create-model.md).
 * 等待通知电子邮件，它让您知道模型数据运行已完成。
 * 填写“基本信息”部 [分中的必填](../../features/traits/create-onboarded-rule-based-traits.md) 字段。
 
@@ -54,5 +55,5 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->* [准确性和触及范围](../../features/traits/trait-accuracy-reach.md)
+>* [精度和范围](../../features/traits/trait-accuracy-reach.md)
 
