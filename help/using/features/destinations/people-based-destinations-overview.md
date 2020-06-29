@@ -4,11 +4,12 @@ seo-description: '使用基于人的目标将第一方受众细分发送给基�
 seo-title: 基于人员的目标概述和使用案例
 solution: Audience Manager
 title: 概述和用例
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '922'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -24,18 +25,18 @@ ht-degree: 0%
 
 [!DNL People-Based Destinations] 使您能够对线上和线下数据应用分段，以根据散列标识符( [如电子邮件地址](people-based-destinations-prerequisites.md#hashing-requirements)或电话号码)创建受众段。 然后，您可以将这些细分发送到“围墙花园”, [!DNL Facebook]例如，在社交平台上目标受众。 [!DNL People-Based Destinations] 可以帮助您：
 
-* Target离线和在线受众，例如 [!DNL Facebook]基于散列电子邮件地址；
+* 目标离线和在线受众，例如 [!DNL Facebook]基于散列电子邮件地址；
 * 补充现有的设备和Audience Managercookie定位功能；
 * 消除与第三方数据载入解决方案相关的成本；
 * 消除开发定制工作流的相关成本；
-* Target受众无cookie环境;
-* Target受众，方法是消除与客户ID匹配的哈希电子邮件地址。
+* 目标受众无cookie环境;
+* 目标受众，方法是消除与客户ID匹配的哈希电子邮件地址。
 
 您可以使用 [!DNL People-Based Destinations] 细分和目标可能未访问过您网站的高价值客户，或停止定位已脱机转换的客户。 此外，您还可 [!DNL Profile Merge Rules] 以利用线下第一方数据与在线第一方数据（包括来自其他Adobe Experience Cloud解决方案的客户数据）相结合，优化您的社交媒体广告工作。
 
 ![pbd-overview](assets/pbd-overview.png)
 
-## Availability {#availability}
+## 可用性 {#availability}
 
 [!DNL People-Based Destinations] 是高级Audience Manager集成。 请联系Adobe代表以利用此高级功能。
 
