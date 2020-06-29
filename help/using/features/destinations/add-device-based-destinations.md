@@ -4,11 +4,12 @@ seo-description: 本文介绍如何从Audience Manager用户界面配置基于�
 seo-title: 添加新的基于设备的目标
 solution: Audience Manager
 title: 添加新的基于设备的目标
+feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '437'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -29,7 +30,7 @@ ht-degree: 1%
 
 在使用集成平台创建第一个基于设备的目标时，请与Adobe咨询或客户关怀部门联系，为您的帐户启用Audience Manager与集成平台之间的ID同步。 这是Audience Manager与目标平台之间正确同步所必需的。
 
-## 步骤 1. 使用目标Platform进行身份验证 {#step1}
+## 步骤 1. 使用目标平台进行身份验证 {#step1}
 
 在创建基于设备的新目标之前，您需要配置Audience Manager与目标平台之间的集成。 下面介绍如何实现此操作：
 
