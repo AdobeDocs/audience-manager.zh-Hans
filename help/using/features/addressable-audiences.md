@@ -7,8 +7,9 @@ solution: Audience Manager
 title: 可寻址受众
 topic: DIL API
 uuid: 3eb1335a-6949-452b-b77a-697c22856cb3
+feature: Match Rates
 translation-type: tm+mt
-source-git-commit: 620730ab1596d4777a768de4453b73538671279d
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1824'
 ht-degree: 1%
@@ -51,7 +52,7 @@ ht-degree: 1%
 ---------|----------|
 | **[!UICONTROL Addressable Audience (Device)]** | 此度量表示 [!UICONTROL Customer Addressable Audience] 过去30天(如上 *表所述)。* |
 | **[!UICONTROL Match Rate]** | 此度量表 [!UICONTROL Addressable Audience Match Rate] 示过去30天 *的（如上表所述）*。 |
-| **[!UICONTROL Lifetime Addressable Audience (Device)]** | 在报告回顾期间与平台级所有 [!DNL Audience Manager] 客户进行交互且可与之匹配的所有设备的计数 [!UICONTROL destination]。 请参 [阅Platform级度量](/help/using/features/addressable-audiences.md#platform-level-metrics) ，以了解更多信息。 |
+| **[!UICONTROL Lifetime Addressable Audience (Device)]** | 在报告回顾期间与平台级所有 [!DNL Audience Manager] 客户进行交互且可与之匹配的所有设备的计数 [!UICONTROL destination]。 请参 [阅平台级度量](/help/using/features/addressable-audiences.md#platform-level-metrics) ，了解更多信息。 |
 
 单击某个名称以 [!UICONTROL server-to-server destination] 视图可寻址受众数据。 注意，此功能仅返回数 [!UICONTROL server-to-server destinations] 据，并且访问需要管理员权限。
 
@@ -132,7 +133,7 @@ ht-degree: 1%
 | [!UICONTROL Total Segment Population] | 在报告回顾期间，属于您的 [!UICONTROL segment] 所有设备的计数。 |
 | [!UICONTROL Segment Match Rate] | [!UICONTROL Segment Addressable Audience] ÷ [!UICONTROL Total Segment Population] 以百分比表示。 |
 
-### Platform级指标 {#platform-level-metrics}
+### 平台级指标 {#platform-level-metrics}
 
 此指标返回所有客户所收集的活动 [!DNL Audience Manager] 数据。 与汇总的客户相比，它们可以提供更广的客户受众 [!DNL Audience Manager] 视图。
 
