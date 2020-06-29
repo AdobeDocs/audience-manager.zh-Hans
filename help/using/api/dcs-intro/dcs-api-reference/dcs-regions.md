@@ -1,20 +1,21 @@
 ---
 description: 对DCS进行调用时，需要使用区域DCS服务器主机名。 这是因为DCS将信息存储在地理位置接近站点访客的数据中心中。 如果将查询发送到错误的DCS，则这些调用将正常工作，但这些调用效率低下，可能会延迟响应。 要发出DCS请求，请将区域ID与其相应的区域主机名匹配，并使用正确的主机名组成查询。
 seo-description: 对DCS进行调用时，需要使用区域DCS服务器主机名。 这是因为DCS将信息存储在地理位置接近站点访客的数据中心中。 如果将查询发送到错误的DCS，则这些调用将正常工作，但这些调用效率低下，可能会延迟响应。 要发出DCS请求，请将区域ID与其相应的区域主机名匹配，并使用正确的主机名组成查询。
-seo-title: DCS区域ID、位置和主机名
+seo-title: DCS 区域 ID、位置和主机名
 solution: Audience Manager
-title: DCS区域ID、位置和主机名
+title: DCS 区域 ID、位置和主机名
 uuid: ad150ffe-4583-472b-ac8b-fb900a7966e4
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
 
-# DCS Region IDs, Locations, and Host Names {#dcs-region-ids-locations-and-host-names}
+# DCS 区域 ID、位置和主机名 {#dcs-region-ids-locations-and-host-names}
 
 需要 [!DNL DCS] 区域服务器主机名才能调用 [!DNL DCS]。 这是因为在地理 [!DNL DCS] 上接近站点访客的数据中心中存储信息。 如果您将查询发送到错误的地址，则 [!DNL DCS]将正常工作，但这些调用效率低下，可能会延迟响应。 要发出请 [!DNL DCS] 求，请将区域ID与其相应的区域主机名匹配，并使用正确的主机名组成查询。
 
@@ -70,4 +71,4 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-您还可以使 [!DNL API] 用方法获取可用区域的 [!DNL DCS] 列表。 请参 [阅DCS区域API方法](../../../api/rest-api-main/aam-api-dcs-regions.md)。
+您还可以使 [!DNL API] 用方法获取可用区域的 [!DNL DCS] 列表。 See [DCS Region API Methods](../../../api/rest-api-main/aam-api-dcs-regions.md).
