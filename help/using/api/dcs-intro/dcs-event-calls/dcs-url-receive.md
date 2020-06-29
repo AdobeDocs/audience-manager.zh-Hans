@@ -1,20 +1,21 @@
 ---
 description: 在此继续，了解如何在/事件调用中请求DCS响应。 本节包括响应示例和响应中常见数据元素的定义。
 seo-description: 在此继续，了解如何在/事件调用中请求DCS响应。 本节包括响应示例和响应中常见数据元素的定义。
-seo-title: 从DCS接收数据
+seo-title: 从 DCS 接收数据
 solution: Audience Manager
-title: 从DCS接收数据
+title: 从 DCS 接收数据
 uuid: fbb77197-8530-48a8-b708-d785f7214494
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
 
-# 从DCS接收数据 {#receive-data-from-the-dcs}
+# 从 DCS 接收数据 {#receive-data-from-the-dcs}
 
 继续此处，了解如何在呼叫 [!DNL DCS] 中请求响应的 `/event` 信息。 本节包括响应示例和响应中常见数据元素的定义。
 
@@ -56,7 +57,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 | `cv` | 发送到由“cn”:“目标名称”参数定义的目标的值。 |
 | `dcs_region` | 服 [务器到服务器DCS调用](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。 |
 | `dests` | 此对象包含在UI中配置的所有URL目标的信息。 此对象的列表根据用户的操作是动态的。 |
-| `dmn` | 这是在Cookie域字段中为Cookie目标指定的域。 请参 [阅Cookie目标的可选设置](../../../features/destinations/cookie-destination-options.md)。  对于服务器到服务器集成，我们建议使用像这样的域 `aam-api.com`。 |
+| `dmn` | 这是在Cookie域字段中为Cookie目标指定的域。 See [Optional Settings for Cookie Destinations](../../../features/destinations/cookie-destination-options.md).  对于服务器到服务器集成，我们建议使用像这样的域 `aam-api.com`。 |
 | `e` | 已在URL目标中设置的安全URL。 |
 | `stuff` | 此对象包含所有Cookie目标的信息。 此对象的列表根据用户的操作是动态的。 |
 | `tid` | 事务ID，它是用于调试的唯一12个字符ID。 对DCS的每次/事件调用都会收到一个ID，您可以在支持查询中引用它，以获得更好、更快的响应。 |
