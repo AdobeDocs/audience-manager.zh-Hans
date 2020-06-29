@@ -1,20 +1,21 @@
 ---
 description: 此过程需要AdWords再营销列表、像素代码和Audience ManagerURL目标。 它也称为搜索广告(RLSA)集成的再营销列表。 仅适用于付费搜索。
 seo-description: 此过程需要AdWords再营销列表、像素代码和Audience ManagerURL目标。 它也称为搜索广告(RLSA)集成的再营销列表。 仅适用于付费搜索。
-seo-title: 将区段发送到Google AdWords再营销列表
+seo-title: 将区段发送到 Google AdWords 再营销列表
 solution: Audience Manager
-title: 将区段发送到Google AdWords再营销列表
+title: 将区段发送到 Google AdWords 再营销列表
 uuid: 5ad821c6-48b4-42c0-b912-1563331e93a2
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: c70d02637615848a86fc980a70868a6b0f7bda00
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '340'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# 将区段发送到Google Ads再营销列表 {#send-segments-to-a-google-adwords-remarketing-list}
+# Send Segments to a Google Ads Remarketing List {#send-segments-to-a-google-adwords-remarketing-list}
 
 此过程需要 [!DNL Google Ads] 再营销列表、像素代码和Audience Manager [!DNL URL][!DNL destination]。 它也称为搜索广告()集成的再营销[!DNL RLSA]列表。 仅适用于付费搜索。
 
