@@ -1,34 +1,35 @@
 ---
 description: 本页仅包含当前的服务器到服务器集成。 有关集成的详细信息，请参阅其Adobe Exchange列表（如果可用）或与Adobe顾问或客户关怀联系。
 seo-description: 本页仅包含当前的服务器到服务器集成。 有关集成的详细信息，请参阅其Adobe Exchange列表（如果可用）或与Adobe顾问或客户关怀联系。
-seo-title: Adobe受众经理技术合作伙伴
+seo-title: Adobe Audience Manager技术合作伙伴
 keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
-title: Adobe受众经理技术合作伙伴
+title: Adobe Audience Manager技术合作伙伴
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: da0eb0244fc3ae158fa151727f4253625dcff2c4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
 
-# 受众经理激活合作伙伴
+# Audience Manager激活合作伙伴
 
-本页仅包含当前 [的受众管理器服务器到服务器集成](/help/using/features/destinations/add-edit-segments.md) 。  有关集成的详细信息，请参 [阅其Adobe](https://www.adobeexchange.com/experiencecloud.html) Exchange列表（如果可用）或与Adobe顾问或客户关怀联系。
+本页仅包含当 [前Audience Manager服务器到服务器集成](/help/using/features/destinations/add-edit-segments.md) 。  有关集成的详细信息，请参 [阅其Adobe](https://www.adobeexchange.com/experiencecloud.html) Exchange列表（如果可用）或与Adobe顾问或客户关怀联系。
 
 <br> 
 
 * **更新** =显示此激活合作伙伴的上次更新日期。
-* **Unsegment** = Unsegmentation描述了取消设备用户档案的区段资格并从区段中删除设备数据的流程。 您能否从区段中删除设备用户档案取决于用于创建用户档案合并规则的设备选项。 在GDPR删除请求读取用户档案合并规则和设备取消分 [段流程以及具有取消分段功能](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)[的受众管理器合作伙伴的上下文中也使用取消分段](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 受众管理器会向标有以下“是”的目标发送取消细分信息。
-* **接收IAB TCF同意信号** = IAB TCF的受众管理器插件允许您将IAB TC字符串转发给激活合作伙伴，同时尊重用户的隐私选择。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
+* **Unsegment** = Unsegmentation描述了取消设备用户档案的区段资格并从区段中删除设备数据的流程。 您能否从区段中删除设备用户档案取决于用于创建用户档案合并规则的设备选项。 在GDPR删除请求读取用户档案合并规则和设备取消分 [段流程以及具有取消分段功能](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)[的Audience Manager合作伙伴的上下文中也使用取消分段](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience Manager会向标有以下“是”的目标发送未细分信息。
+* **接收IAB TCF同意信号** = IAB TCF的Audience Manager插件允许您在尊重用户隐私选择的同时将IAB TC字符串转发给激活合作伙伴。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
 * **ICDS** =此列列表支持“即时跨设备抑制”的合作伙伴。 Read [Instant Cross-Device Suppression](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
-* **移动设备ID** =此列列表可从受众管理器接收移动设备ID的合作伙伴。
+* **移动设备ID** =此列列表可以从Audience Manager接收移动设备ID的合作伙伴。
 
 <br> 
 
-| 集成 | 更新了 | 取消分段 | 接收IAB TCF同意信号 | ICDS | 移动设备ID |
+| 集成 | 更新了 | 取消分段 | 接收IAB TCF同意信号 | ICDS | 移动设备 ID |
 |---------------------------------------------------|------------|-----------|-----------------------------------|------|-------------------|
 | 4C洞察 | 26/09/2018 | 是 | 否 | 否 | 是 |
 | 4info | 09/02/2017 | 否 | 否 | 否 | 是 |
