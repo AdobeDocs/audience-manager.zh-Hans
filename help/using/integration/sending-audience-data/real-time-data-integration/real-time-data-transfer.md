@@ -1,27 +1,31 @@
 ---
-description: 实时入站数据获取过程使用用户浏览器中的一系列HTTP请求将数据传递到Audience Manager。
-seo-description: 实时入站数据获取过程使用用户浏览器中的一系列HTTP请求将数据传递到Audience Manager。
+description: 实时入站数据获取过程使用用户浏览器发出的一系列HTTP请求将数据传递给Audience Manager。
+seo-description: 实时入站数据获取过程使用用户浏览器发出的一系列HTTP请求将数据传递给Audience Manager。
 seo-title: 实时入站数据摄取
 solution: Audience Manager
 title: 实时入站数据摄取
 uuid: 43cb0ebc-6c36-4391-bbfb-6b203d63c69a
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
 
 # 实时入站数据摄取 {#real-time-inbound-data-ingestion}
 
-实时入站数据获取过程使用用户浏览器 `HTTP` 发出的一系列请求将数据传入Audience Manager。
+实时入站数据获取过程使用来自 `HTTP` 用户浏览器的一系列请求将数据传递给Audience Manager。
 
 <!-- c_rt_inbound_real_time.xml -->
 
-入站数据应作为称为信号的键值对进行格式化。 通常，每个信号被映射到通过用户界面或管理的区段 [!DNL API]。
+入站数据应格式化为称为信号的键值对。 通常，每个信号被映射到通过用户界面或管理的区段 [!DNL API]。
 
 ## URL字符串参数和语法 {#url-string-syntax}
 
-入站 [!DNL URL] 数据传输的变量应包含下述变量。 在设置 [实时数据传输之前](../../../features/traits/create-onboarded-rule-based-traits.md) ，请记住在UI [中创建特](../../../features/traits/trait-storage.md#create-trait-storage-folder)[!DNL Audience Manager] 征和文件夹结构。
+入站 [!DNL URL] 数据传输的变量应包含下述变量。 在设 [置实时](../../../features/traits/create-onboarded-rule-based-traits.md) 数据传输之前， [请记住](../../../features/traits/trait-storage.md#create-trait-storage-folder) 在UI中创建特征 [!DNL Audience Manager] 和文件夹结构。
 
 >[!NOTE]
 >
@@ -30,7 +34,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 | 参数 | 描述 |
 |---|---|
 | `<KEY>` | 键值对中的唯一标识符（例如性别、颜色、价格）。 |
-| `<VAL>` | 属于键定义的数据集的变量（例如，性别=男性，颜色=绿色，价格=100） |
+| `<VAL>` | 属于由键定义的数据集的变量（例如，性别=男性、颜色=绿色、价格=100） |
 
 ### URL语法
 
