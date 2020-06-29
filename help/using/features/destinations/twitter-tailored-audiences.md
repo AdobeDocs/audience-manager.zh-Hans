@@ -1,14 +1,15 @@
 ---
 description: 本文介绍如何为新集成和现有集成配置Twitter定制受众。
 seo-description: 本文介绍如何为新集成和现有集成配置Twitter定制受众。
-seo-title: 将Twitter定制受众配置为基于设备的自助服务目标
+seo-title: 将特定于 Twitter 的受众配置为基于设备的自助服务目标
 solution: Audience Manager
-title: 将Twitter定制受众配置为基于设备的自助服务目标
+title: 将特定于 Twitter 的受众配置为基于设备的自助服务目标
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -47,7 +48,7 @@ ht-degree: 1%
 >无法更改现有基于设备的目标的名称。 请确保提供有助于正确识别目标的名称。
 
 1. 登录到您的Audience Manager帐户，转 **[!DNL Audience Data > Destinations]**&#x200B;到并单击 **[!DNL Create Destination]**。
-1. 在部 **[!DNL Basic Information]** 分中，输入 **[!DNL Name]** 和 **[!DNL Description]** 作为新目标，并使用以下设置： ![设置](assets/dbd-new-basic.png)
+1. 在部 **[!DNL Basic Information]** 分中，输入 **[!DNL Name]** 和 **[!DNL Description]** 作为新目标，然后使用以下设置： ![设置](assets/dbd-new-basic.png)
 1. 单击 **[!DNL Next]**.
 1. 选择 [要为此目标](/help/using/features/data-export-controls.md#controls-labels) 设置的数据导出标签。
 1. 单击 **[!DNL Save]**.
