@@ -4,9 +4,10 @@ seo-description: '关于基于人员的目标的常见问题解答。  '
 seo-title: 基于人员的目标常见问题解答
 solution: Audience Manager
 title: 基于人员的目标常见问题解答
-translation-type: ht
-source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
-workflow-type: ht
+feature: People-Based Destinations
+translation-type: tm+mt
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 100%
 
