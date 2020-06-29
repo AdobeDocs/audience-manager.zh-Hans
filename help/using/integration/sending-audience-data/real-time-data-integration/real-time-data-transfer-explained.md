@@ -5,8 +5,9 @@ seo-title: 描述的实时数据传输过程
 solution: Audience Manager
 title: 描述的实时数据传输过程
 uuid: b68781b3-0b7a-442d-8e34-2db2474849a4
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# 描述的实时数据传输过程{#real-time-data-transfer-process-described}
+# Real-Time Data Transfer Process Described{#real-time-data-transfer-process-described}
 
 概述Audience Manager如何与第三方内容提供商进行实时数据传输。
 
