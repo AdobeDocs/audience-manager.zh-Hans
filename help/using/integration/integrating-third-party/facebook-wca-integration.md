@@ -4,8 +4,9 @@ seo-description: 本页说明了创建Facebook网站自定义受众(WCA)像素�
 seo-title: Facebook WCA 集成
 solution: Audience Manager
 title: Facebook WCA 集成
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 6%
@@ -84,7 +85,7 @@ ht-degree: 6%
 
 在“配 [置URL目标](/help/using/features/destinations/create-url-destination.md) ”工作流中，将适用的区段映射到您新创建的 [!UICONTROL destination]。 请注意，映射值会自动填充 [!DNL Audience Manager][!UICONTROL segment ID]。
 
-输入终止日期（如果适用），否则，在无终止日期时留空。
+输入终止日期（如果适用），否则不保留终止日期为空。
 
 ## 第3步——在中创 [!UICONTROL Audience] 建 [!DNL Facebook Ads Manager] {#step-3-create-audience}
 
