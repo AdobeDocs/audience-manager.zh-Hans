@@ -6,13 +6,17 @@ seo-title: 创建算法模型
 solution: Audience Manager
 title: 创建算法模型
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 1%
 
 ---
 
 
-# 创建相似模型 {#create-an-algorithmic-model}
+# 创建相似人群拓展模型 {#create-an-algorithmic-model}
 
 介绍创建应用程序所需的步骤和可选步骤 [!UICONTROL Look-Alike Model]。
 
@@ -94,7 +98,7 @@ source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>选择算法(3)</b> </p> </td> 
-   <td colname="col2"> <p>此时，Model Builder只能与我们专有的特征 <span class="keyword"> 权重算法</span> 一起使用。 <span class="keyword"> 受众管理器</span> (Manager)可在后续发行版中添加其他算法功能。 </p> </td>
+   <td colname="col2"> <p>此时，Model Builder只能与我们专有的特征 <span class="keyword"> 权重算法</span> 一起使用。 <span class="keyword"> Audience Manager</span> 可以在后续发行版中添加其他算法函数。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>从数据源中选择模型数据(4)</b> </p> </td> 
