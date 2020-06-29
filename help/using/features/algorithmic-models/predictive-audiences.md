@@ -4,8 +4,9 @@ seo-description: Predictive Audiences 可以帮助您使用数据科学将未知
 seo-title: Predictive Audiences 概述
 solution: Audience Manager
 title: Audience Manager Predictive Audiences
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: f52321f3621d9eb6b9c5b643a3516f39f35466c2
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 9%
@@ -78,9 +79,9 @@ ht-degree: 9%
 * 选择重叠最小的基线特征或区段。
 * 确保在您的数字资产中捕获粒度特征。
 
-### Target受众的选择标准 {#selection-audience}
+### 目标受众的选择标准 {#selection-audience}
 
-与人物选择类似，您应选择特征或区段来定义您的目标受众，使其具有具有丰富特征集的实时用户，以便将其分类到正确的人物。
+与人物选择类似，您应选择特征或区段来定义目标受众，使其具有具有丰富特征集的实时用户，以便将其分类到正确的人物。
 
 ### [!UICONTROL Predictive Audiences] 模型培训阶段 {#model-training}
 
