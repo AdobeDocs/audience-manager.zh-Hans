@@ -5,8 +5,9 @@ seo-title: 数据集成方法
 solution: Audience Manager
 title: 数据集成方法
 uuid: 17a4179a-e99b-49eb-8f45-f2946afbd27f
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: cdf567a816be60d0d966783e87f4ed02838be378
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 1%
@@ -121,7 +122,7 @@ Audience Manager数据集成方法的用例总结及各方法的优缺点。
 * **技术注意事项：** 数据投放取决于数据合作伙伴的技术能力。 Audience Manager可以通过浏览器实时发送／接收数据，或通过离线、服务器到服务器的通信流程进行批量更新。
 * **业务注意事项：** 选择一种或另一种投放方法的业务原因取决于目标合作伙伴的技术能力以及您希望如何使用这些数据。 通常，当您需要立即对用户数据采取操作时，同步数据传输很有用。 当不需要立即执行操作并且有时间构建更深入的用户用户档案供以后使用时，异步数据传输可能会很有用。
 
-## 实时数据传输过程 {#real-time-data-transfer-process}
+## Real-Time Data Transfer Process {#real-time-data-transfer-process}
 
 概述Audience Manager如何与第三方供应商进行同步数据交换。
 
@@ -143,7 +144,7 @@ Audience Manager数据集成方法的用例总结及各方法的优缺点。
 
 ![](assets/rt_reduce70.png)
 
-## 批数据传输流程 {#batch-data-transfer-process}
+## 批量数据传输流程 {#batch-data-transfer-process}
 
 概述Audience Manager如何与第三方供应商同步（实时）交换数据。
 
