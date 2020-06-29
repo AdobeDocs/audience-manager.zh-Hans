@@ -1,24 +1,25 @@
 ---
 description: 发出呼叫时，DCS以标准或序列化格式接受密钥值数据。 有关如何格式化标准和序列化键值数据的信息，请查阅本节。
 seo-description: 发出呼叫时，DCS以标准或序列化格式接受密钥值数据。 有关如何格式化标准和序列化键值数据的信息，请查阅本节。
-seo-title: 格式化DCS调用中的键值对
+seo-title: 格式化 DCS 调用中的键值对
 solution: Audience Manager
-title: 格式化DCS调用中的键值对
+title: 格式化 DCS 调用中的键值对
 uuid: af02f2a1-4388-4074-ab4e-66ee82023f1c
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 1%
+ht-degree: 12%
 
 ---
 
 
-# 格式化DCS调用中的键值对 {#formatting-key-value-pairs-in-dcs-calls}
+# 格式化 DCS 调用中的键值对 {#formatting-key-value-pairs-in-dcs-calls}
 
 发出呼叫时，将接 [!DNL DCS] 受标准或序列化格式的键值数据。 有关如何格式化标准和序列化键值数据的信息，请查阅本节。
 
-## 标准和序列化密钥值对 {#standard-serialized}
+## Standard and Serialized Key-Value Pairs {#standard-serialized}
 
 <table id="table_A220F9B359F34C6EA7B83618FC22EE3A"> 
  <thead> 
@@ -70,7 +71,7 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
->* [将数据发送到DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)
+>* [将数据发送到 DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)
 >* [DCS支持的键值前缀和变量](../../../api/dcs-intro/dcs-api-reference/dcs-keys.md)
->* [已说明键值对](../../../reference/key-value-pairs-explained.md)
+>* [键值对说明](../../../reference/key-value-pairs-explained.md)
 
