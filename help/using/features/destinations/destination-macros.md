@@ -5,11 +5,12 @@ seo-title: 定义的目标宏
 solution: Audience Manager
 title: 定义的目标宏
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
+feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: da0eb0244fc3ae158fa151727f4253625dcff2c4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -40,16 +41,16 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> %did%</code> </p> </td> 
-   <td colname="col2"> <p>将用户的 <span class="keyword"> 受众管理器</span> ID插入目标URL。 </p> </td> 
+   <td colname="col2"> <p>将用户的 <span class="keyword"> Audience Manager</span> ID插入目标URL。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>%dpid_<i>data source id</i>%</code> </p> </td> 
-   <td colname="col2"> <p>数 <i>据源</i> id与传入宏的数据源的标识符相对应。 </p> <p>让我们通过一个简单的示例来看看它是如何工作的。 在这种情况下，我们有一个 <span class="keyword"> 受众经理</span> ，其合作伙伴具有以下ID和条件： </p> 
+   <td colname="col2"> <p>数 <i>据源</i> id与传入宏的数据源的标识符相对应。 </p> <p>让我们通过一个简单的示例来看看它是如何工作的。 在这种情况下，我们有一个 <span class="keyword"> Audience Manager</span> 合作伙伴，其ID和条件如下： </p> 
     <ul id="ul_697508B437EB4090B121AFA5D519AFBE"> 
      <li id="li_32D9F72A7D1543A892DC7E1529E98A96">数据源ID: <code> 1</code> </li> 
      <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">内部客户ID: <code> CustomerABC</code> </li> 
      <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">声明的ID: 合作伙伴希望将这些值作为声明的ID进行传递 <code> 1:CustomerABC</code>。 </li> 
-    </ul> <p>为此，受众 <code>%dpid_<i>data source id</i>%</code>经理 <span class="keyword"> 合作伙伴应将宏格式设置为</span> : </p> 
+    </ul> <p>为此，Audience Manager <code>%dpid_<i>data source id</i>%</code>合作伙 <span class="keyword"> 伴将</span> 如下格式化宏： </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
     </ul> <p>宏将替换 <code> 1</code> 为 <code> CustomerABC</code>。 </p> <p> 
@@ -59,11 +60,11 @@ ht-degree: 1%
   </tr> 
   <tr>
     <td><p><code>${GDPR}</code></p></td>
-    <td><p>指示GDPR法规是否适用于访客。 使用此宏将同意包含在发送到与IAB集成的URL目标的区段中。 有关 <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">详细信息，请参阅IAB TCF的受众管理器</a> 插件。</p></td>
+    <td><p>指示GDPR法规是否适用于访客。 使用此宏将同意包含在发送到与IAB集成的URL目标的区段中。 有关 <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">详细信息，请参阅IAB TCF的Audience Manager</a> 插件。</p></td>
   </tr>
    <tr>
     <td><code>${GDPR_CONSENT_XXXX}</code></p></td>
-    <td><p>当访客在您的站点上提供或拒绝同意时收集的同意字符串（包括IAB供应商ID）。 使用此宏可在发送到与IAB集成的URL目标的区段中包含同意字符串。 替换为 <code>XXXX</code> 目标合作伙伴ID。 有关 <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">详细信息，请参阅IAB TCF的受众管理器</a> 插件。 </p></td>
+    <td><p>当访客在您的站点上提供或拒绝同意时收集的同意字符串（包括IAB供应商ID）。 使用此宏可在发送到与IAB集成的URL目标的区段中包含同意字符串。 替换为 <code>XXXX</code> 目标合作伙伴ID。 有关 <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">详细信息，请参阅IAB TCF的Audience Manager</a> 插件。 </p></td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> %http_proto%</code> </p> </td> 
@@ -76,11 +77,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> %mcid%</code> </p> </td> 
-   <td colname="col2"> <p>将Experience Cloud <span class="keyword"> ID插入</span> “目标URL”。 </p> </td> 
+   <td colname="col2"> <p>将Experience Cloud <span class="keyword"> ID</span> 插入目标URL。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> %region%</code> </p> </td> 
-   <td colname="col2"> <p>将数据收集 <span class="wintitle"> 服务器(DCS)区域插入</span> 到目标URL中。 为了最大限度地减少延迟，当访客对受众管理器进行HTTP调 <span class="keyword"> 用时</span>，它们将被重定向到最接近的 <span class="wintitle"> DCS数据中心</span> 。 这是通过DNS实现的，DNS能够检测访客的位置并将其定向到适当的数据中心。 </p> </td> 
+   <td colname="col2"> <p>将数据收集 <span class="wintitle"> 服务器(DCS)区域插入</span> 到目标URL中。 为了最大限度地减少延迟，当访客对Audience Manager进行HTTP调 <span class="keyword"> 用</span>时，会将其重定向到最接近的 <span class="wintitle"> DCS</span> 。 这是通过DNS实现的，DNS能够检测访客的位置并将其定向到适当的数据中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> %rnd%</code> </p> </td> 
