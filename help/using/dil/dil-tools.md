@@ -1,17 +1,21 @@
 ---
 description: 描述DIL.tools命名空间中的方法。 这些实用程序功能可帮助您执行特定任务。
 seo-description: 描述DIL.tools命名空间中的方法。 这些实用程序功能可帮助您执行特定任务。
-seo-title: DIL工具
+seo-title: DIL 工具
 solution: Audience Manager
-title: DIL工具
+title: DIL 工具
 uuid: 2bc62ce2-16bd-4e80-b493-c816ba643b59
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: ac9e4f24a896ecae2ebf36dcf34a4ac8fab00cd8
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 5%
 
 ---
 
 
-# DIL工具
+# DIL 工具
 
 描述命名空间中的 `DIL.tools` 方法。 这些实用程序功能可帮助您执行特定任务。
 
@@ -33,7 +37,7 @@ r_dil_get_search_referrer.xml
 
 ### 用途 `getSearchReferrer`
 
-在DIL中，返 `getSearchReferrer` 回用于访问您的站点的搜索结果（名称和关键字）。 您可以将特定搜索词传递给此函数，或允许其在默认情况下搜索支持的搜 [!DNL AOL]索引擎( [!DNL Ask]、 [!DNL Bing]、 [!DNL Google]和 [!DNL Yahoo]) `document.referrer` 。
+在DIL中， `getSearchReferrer` 返回用于访问您的站点的搜索结果（名称和关键字）。 您可以将特定搜索词传递给此函数，或允许其在默认情况下搜索支 [!DNL AOL]持的 [!DNL Ask]搜索 [!DNL Bing]引擎( [!DNL Google]、 [!DNL Yahoo]、 `document.referrer` 和)。
 
 ### 函数签名
 
@@ -43,10 +47,10 @@ r_dil_get_search_referrer.xml
 
 `getSearchReferrer` 接受：
 
-* *`{string}`*:(可 *选)包含搜索URL的字符串* (如果未定义， `document.referrer` 则使用)。
-* *`{object}`*:(可 *选)包含* 、 `hostPattern`或配置的对象 `queryParam``queryPattern`。
+* *`{string}`*: *（可选）包含* 搜索URL的字符串(如果未定义， `document.referrer` 则使用)。
+* *`{object}`*: *(可选* )包含、或的 `hostPattern`配置 `queryParam`的对象 `queryPattern`。
 
-回报：
+和退货：
 
 * `{object}` 包含有效名称和关键字的对象。
 
@@ -65,42 +69,42 @@ r_dil_get_search_referrer.xml
    <td> 默认搜索</td> 
    <td> 返回AOL、Ask、Bing、Google和Yahoo搜索引擎使用的关键字搜索词。 </td> 
    <td>
-      <code>var&amp; nbsp; results&amp; nbsp;=&amp; nbsp; DIL.tools.getSearchReferrer();</code> 
+      <code>var&amp;nbsp;results&amp;nbsp;=&amp;nbsp;DIL.tools.getSearchReferrer();</code> 
   </td>
   </tr> 
   <tr> 
    <td>传入自定义URL</td> 
-   <td>根据自定义URL返回搜索引用。</td> 
+   <td>返回基于自定义URL的搜索推荐人。</td> 
    <td> 
   <code>
-        var results = 
-    DIL.tools.getSearchReferrer("https://www.ehow.com/search.aspx?q=adobe+rules");
+        var&nbsp;results&nbsp;= 
+        DIL.tools.getSearchReferrer("https://www.ehow.com/search.aspx?q=adobe+rules");
   </code>
 </td> 
   </tr> 
   <tr> 
    <td> <b>将URL主机名与自定义正则表达式匹配</b></td> 
-   <td> 传入自定义正则表达式以匹配引用URL的主机名。 </td> 
+   <td> 在自定义正则表达式中传递，以匹配引用URL的主机名。 </td> 
    <td> 
   <code>
       var results = 
-    DIL.tools.getSearchReferrer("https://www.ehow.com/
-    search.aspx?q=adobe+rules",{ 
-       hostPattern:/ehow\./, 
-         queryParam:"p" 
+        DIL.tools.getSearchReferrer("https://www.ehow.com/
+      search.aspx?q=adobe+rules",{ 
+      &nbsp;&nbsp;&nbsp;hostPattern:/ehow\./, 
+      &nbsp;&nbsp;&nbsp;queryParam:"p" 
       }); 
   </code>
   </td></tr> 
   <tr> 
-   <td> <b>使用自定义正则表达式匹配搜索模式</b> </td> 
-   <td> 传入自定义正则表达式以执行自定义搜索。 </td> 
+   <td> <b>将搜索模式与自定义正则表达式匹配</b> </td> 
+   <td> 在自定义正则表达式中传递以执行自定义搜索。 </td> 
    <td> 
     <code>
-      var results = 
-    DIL.tools.getSearchReferrer("https://www.ehow.com/search.aspx?q=adobe+rules,
-    {
-       hostPattern:/ehow\./, 
-           search_pattern:/[&amp;\?]p=([^&amp;]+/ 
+      var&nbsp;results&nbsp;= 
+      DIL.tools.getSearchReferrer("https://www.ehow.com/search.aspx?q=adobe+rules,
+      {
+        &nbsp;&nbsp;&nbsp;hostPattern:/ehow\./, 
+        &nbsp;&nbsp;&nbsp;search_pattern:/[&amp;\?]p=([^&amp;]+/ 
       });
     </code>
    </td> 
@@ -108,9 +112,9 @@ r_dil_get_search_referrer.xml
  </tbody> 
 </table>
 
-## decomposeURI
+## 分解URI
 
-将统一资源标识符( [!DNL URI])拆分为其组成组件： `hash`、 `host`、 `href`、 `pathname`、 `protocol`和 `search``[!DNL uriParams]`。
+将统一资源标识符() [!DNL URI]分解为其组成组件： `hash`、 `host`、 `href`、 `pathname`、 `protocol`和 `search``[!DNL uriParams]`。
 
 <!-- 
 
@@ -124,11 +128,11 @@ r_dil_decompose.xml
 
 `decomposeURI` 接受：
 
-* *`uri {string}`*:(可 *选)包含URI的字符串* 。 Defaults to `document.location.href` if not specified.
+* *`uri {string}`*: *(可选* )包含URI的字符串。 Defaults to `document.location.href` if not specified.
 
-回报：
+和退货：
 
-* *`{object}`*:包含有效名称和关键字的对象。
+* *`{object}`*: 包含有效名称和关键字的对象。
 
 ### 示例代码
 
@@ -152,7 +156,7 @@ var uriData = DIL.tools.decomposeURI('https://www.adobe.com/?arg1=123&arg2=456#a
 
 ## getMetaTags
 
-搜索网页的meta标签中定义的特定内容，并在对象中返回该数据。
+搜索网页上元标记中定义的特定内容，并在对象中返回该数据。
 
 <!-- 
 
@@ -171,9 +175,12 @@ r_dil_get_metatags.xml
 ### 示例代码
 
 <pre class="&ldquo;javascript&rdquo;"><code>
-var dataLib = DIL.create({ partner:'<i>partnerName'</i>, containerNSID:容 <i>器NSID</i> });
+var dataLib = DIL.create({ 
+     partner: '<i>partnerName'</i>, 
+     containerNSID: <i>containerNSID</i> 
+}); 
 
-dataLib.api.signals(DIL.tools.getMetaTags('<i>application</i>', '<i>keywords</i>', '<i>description</i>'), 'c_')。submit();
+dataLib.api.signals(DIL.tools.getMetaTags('<i>application</i>', '<i>keywords</i>',  '<i>description</i>'), 'c_').submit();
 </code></pre>
 
 <pre><code>
@@ -181,5 +188,6 @@ var dataLib = DIL.create({
      partner: <i>`partnerName'</i>, 
      containerNSID: <i>containerNSID</i> 
 }); 
+
 dataLib.api.signals(DIL.tools.getMetaTags('<i>application</i>','<i>keywords</i>', '<i>description</i>'), 'c_').submit();
 </code></pre>
