@@ -1,19 +1,23 @@
 ---
-description: 收集从FLA文件发送到Analytics的数据，并在受众管理器中处理该信息。
-seo-description: 收集从FLA文件发送到Analytics的数据，并在受众管理器中处理该信息。
+description: 收集从FLA文件发送到Analytics的数据，并在Audience Manager中处理该信息。
+seo-description: 收集从FLA文件发送到Analytics的数据，并在Audience Manager中处理该信息。
 seo-title: Flash DIL
 solution: Audience Manager
 title: Flash DIL
 uuid: 65833cfd-768e-4b16-95c5-debd8411df38
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '638'
+ht-degree: 4%
 
 ---
 
 
 # Flash DIL{#flash-dil}
 
-收集从FLA文件发送到Analytics的数据，并在受众管理器中处理该信息。
+收集从FLA文件发送到Analytics的数据，并在Audience Manager中处理该信息。
 
 <!-- 
 
@@ -21,7 +25,7 @@ c_flash_dil_toc.xml
 
  -->
 
-[!UICONTROL Flash DIL] 是一个 [!DNL ActionScript] 代码库，可让您在受众管理器中处理视频播放数据。 [!DNL Flash DIL] 通过捕获Adobe库传递到 [!UICONTROL AppMeasurement] Analytics的SWF内容来工作。 [!DNL Flash DIL] 将该数据发送到单独的 [!UICONTROL DIL] JavaScript数据收集模块，该模块将该信息传递给受众管理器。 分析数 [!UICONTROL Props]据 [!UICONTROL eVars](、事件等) 从文件捕获 [!DNL FLA] 的信号在受众管理器中可用作特征或未使用信号。
+[!UICONTROL Flash DIL] 是一个 [!DNL ActionScript] 代码库，它允许您在Audience Manager中处理视频播放数据。 [!DNL Flash DIL] 通过捕获Adobe库传递到Analytics [!UICONTROL AppMeasurement] 的SWF内容来工作。 [!DNL Flash DIL] 将该数据发送到单独的 [!UICONTROL DIL] JavaScript数据收集模块，该模块将该信息传递给Audience Manager。 Analytics数 [!UICONTROL Props]据( [!UICONTROL eVars]、事件等) 从文件捕获 [!DNL FLA] 的信号在Audience Manager中可作为特征或未使用的信号。
 
 ## Flash DIL数据收集要求 {#requirements}
 
@@ -95,9 +99,9 @@ r_flash_dil_data_collected.xml
 * `mediaAdParentPod` （播放广告的主要内容中的窗格或广告中断）
 * `mediaAdParentPodPos` (播放广告的窗格中的数字位置。 一个窗格中可以播放多个广告。
 
-## 受众管理器中的Flash DIL数据 {#flash-dil-data}
+## Audience Manager中的Flash DIL数据 {#flash-dil-data}
 
-该模 [!UICONTROL Flash DIL] 块将Adobe AppMeasurement数据转换为受众管理器特征和未使用信号。
+该模 [!UICONTROL Flash DIL] 块将Adobe AppMeasurement数据转换为Audience Manager特征和未使用信号。
 
 <!-- 
 
@@ -105,15 +109,15 @@ c_flash_dil_in_aam.xml
 
  -->
 
-分析 [!UICONTROL Props]、 [!UICONTROL eVars]事件和受众的工作方式与管理器中的特征类似。 特征是键值对，用于构建区段。 例如，在类似的Analytics `c30=foo`属性 `c30` 中，是键（常数） `foo` 和值（变量）。
+Analytics [!UICONTROL Props]、 [!UICONTROL eVars]事件和Audience Manager的工作方式与相似。 特征是键值对，用于构建区段。 例如，在类似Analytics的 `c30=foo`prop `c30` 中，是键（常数） `foo` 和值（变量）。
 
-**将受众管理器特征与分析变量匹配**
+**将Audience Manager特征与Analytics变量匹配**
 
-要使用通过传递的Analytics [!UICONTROL Flash DIL]数据，您应创建键值前缀为的受众管理器特征 `c_`。
+要使用通过传递的Analytics [!UICONTROL Flash DIL]数据，您应创建键值前缀为的Audience Manager特征 `c_`。
 
 有关示例，请参阅表：
 
-| 分析数据元素 | 分析示例 | 作为受众管理器特征 |
+| Analytics数据元素 | Analytics示例 | 作为Audience Manager特征 |
 |---|---|---|
 | **prop** | `c30=foo` | `c_prop30=foo` |
 | **evar** | `v35=bar` | `c_evar35=bar` |
@@ -121,11 +125,11 @@ c_flash_dil_in_aam.xml
 
 **DIL/Analytics数据作为未使用信号**
 
-受众管理器接 [!UICONTROL Props]受Analytics [!UICONTROL eVars]、事件和，即使没有相应的特征。 在这种情况下，数据不可用于特征创建，而是显示在“未使用 [的信号”报](../reporting/dynamic-reports/unused-signals.md) 告中。 要充分利用这些信息，请创建与库传入的Analytics数据匹配的受众管理器 [!UICONTROL Flash DIL] 特征。
+Audience Manager接受 [!UICONTROL Props]Analytics [!UICONTROL eVars]、和事件，即使没有相应的特质。 在这种情况下，数据不可用于特征创建，而是显示在“未使用 [的信号”报](../reporting/dynamic-reports/unused-signals.md) 告中。 要充分利用这些信息，请创建与库传入的AnalyticsAudience Manager相匹配的 [!UICONTROL Flash DIL] 特征。
 
 ## Flash DIL ActionScript库 {#flash-dil-actionscript}
 
-将Analytics数据发 [!DNL Flash] 送给受众管理器的对象的代码。
+将Analytics数据 [!DNL Flash] 发送到Audience Manager的对象的代码。
 
 <!-- 
 
@@ -155,7 +159,7 @@ s.loadModule(d);
 >[!MORELIKETHIS]
 >
 >* [特征](../features/traits/trait-details-page.md)
->* [信号、特征和细分](../reference/signal-trait-segment.md)
->* [已说明键值对](../reference/key-value-pairs-explained.md)
->* [密钥变量的前缀要求](../features/traits/trait-variable-prefixes.md)
+>* [信号、特征和区段](../reference/signal-trait-segment.md)
+>* [键值对说明](../reference/key-value-pairs-explained.md)
+>* [关键变量的前缀要求](../features/traits/trait-variable-prefixes.md)
 
