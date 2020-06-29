@@ -1,25 +1,29 @@
 ---
-description: 用于查看Audience Manager常见分类的方法。 此可选分类方案将特征组织到行业标准类别中。
-seo-description: 用于查看Audience Manager常见分类的方法。 此可选分类方案将特征组织到行业标准类别中。
-seo-title: 分类API方法
+description: 用于视图Audience Manager常用分类的方法。 此可选分类方案将特征组织到行业标准类别中。
+seo-description: 用于视图Audience Manager常用分类的方法。 此可选分类方案将特征组织到行业标准类别中。
+seo-title: 分类 API 方法
 solution: Audience Manager
-title: 分类API方法
+title: 分类 API 方法
 uuid: 4ee29ba5-e9ba-4498-a6ee-7343227dd7ba
+feature: API
 translation-type: tm+mt
-source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 7%
 
 ---
 
 
-# 分类API方法 {#taxonomic-api-methods}
+# 分类 API 方法 {#taxonomic-api-methods}
 
-用于查看Audience Manager常见分类的方法。 此可选分类方案将特征组织到行业标准类别中。
+用于视图Audience Manager常用分类的方法。 此可选分类方案将特征组织到行业标准类别中。
 
 <!-- c_rest_api_taxonomy.xml -->
 
 >[!NOTE]
 >
->您不能使用这些方法创建新的分类类别或分类特征。 要对特征进行分类，请使用特征创 `categoryId` 建或更新方法指定相应的特征。
+>不能使用这些方法创建新的分类类别或分类特征。 要对特征进行分类，请使用特 `categoryId` 征创建或更新方法指定相应的特征。
 
 ## 返回特定分类 {#return-specific-taxonomy}
 
@@ -33,7 +37,7 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 ### 响应
 
-成功的响应 `200 OK` 将返回指定ID的类别。 如果ID不存 `404 No Content` 在，则返回不成功的请求。
+成功的响应 `200 OK` 返回指定ID的类别。 如果ID不存 `404 No Content` 在，则返回不成功的请求。
 
 ```
 {
@@ -48,7 +52,7 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 ## 返回所有分类类别 {#return-all-taxonomy-categories}
 
-一 `GET` 种返回数组中顶级类别列表的方法。
+一 `GET` 种方法，它返回数组中顶级类别的列表。
 
 <!-- r_rest_api_taxonomies.xml -->
 
@@ -91,7 +95,7 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 ## 返回分类子类别 {#return-taxonomy-sub-categories}
 
-一种 `GET` 为数组中指定的父类别返回子类别的方法。
+一 `GET` 种为数组中指定的父类别返回子类别的方法。
 
 <!-- r_rest_api_taxonomy_sub.xml -->
 
@@ -101,7 +105,7 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 ### 响应
 
-成功的响应 `200 OK` 将返回指定ID的类别。 如果ID不存 `404 No Content` 在，则返回不成功的请求。 短时间截断。
+成功的响应 `200 OK` 返回指定ID的类别。 如果ID不存 `404 No Content` 在，则返回不成功的请求。 短时间截断。
 
 ```
 [
