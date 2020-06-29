@@ -5,8 +5,12 @@ seo-title: 将区段映射到目标
 solution: Audience Manager
 title: 将区段映射到目标
 uuid: 35358ace-3082-4e86-a6eb-d77281af6d7e
+feature: API
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 11%
 
 ---
 
@@ -17,13 +21,13 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 <!-- c_api_map_seg_dest.xml -->
 
-## 支持的目标类型：仅URL和Cookie
+## 支持的目标类型： 仅URL和Cookie
 
-使用可 `POST` 用的方法，您可以将区段映射到 [!UICONTROL URL] 和仅 [!UICONTROL cookie destinations] 映射。 目前，您无法使用这些方法将区 [!UICONTROL server-to-server destinations] 段映射到 [!DNL REST API] 区段。 请改用用户界面。 但是，相关的目标方 `GET` 法允许您检索有关在用户 [!UICONTROL server-to-server destinations] 界面中创建的信息。
+使用可 `POST` 用的方法，您可以将区段映射 [!UICONTROL URL] 到 [!UICONTROL cookie destinations] 和仅。 当前，无法使用这些方法将 [!UICONTROL server-to-server destinations] 区段映 [!DNL REST API] 射到。 请改用用户界面。 但是，相关的目标方 `GET` 法允许您检索有关在用户 [!UICONTROL server-to-server destinations] 界面中创建的信息。
 
 ## 将区段映射到无序列化URL目标 {#map-segment-non-serial}
 
-一 `POST` 种方法，可让您将区段映射到非串行目 [!UICONTROL URL] 标。
+一种 `POST` 方法，可让您将区段映射到非序列目 [!UICONTROL URL] 标。
 
 <!-- r_map_noserial_url.xml -->
 
@@ -73,7 +77,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 将区段映射到序列化URL目标 {#map-segment-serial}
 
-一种 `POST` 方法，可让您将区段映射到序列化目 [!UICONTROL URL] 标。
+一种 `POST` 方法，可让您将区段映射到序列化 [!UICONTROL URL] 目标。
 
 <!-- r_map_serialized_url.xml -->
 
@@ -83,7 +87,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ### 示例请求
 
-在请求中，该 `traitAlias` 键对应于键值对中的键。 除非另有指明，否则所有请求值都是必需的。
+在请求中， `traitAlias` 与键值对中的键相对应。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -121,9 +125,9 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 }
 ```
 
-## 将区段映射到Cookie目标：单键、无序列号 {#map-segment-cookie-noserial}
+## 将区段映射到Cookie目标： 单键、无序列号 {#map-segment-cookie-noserial}
 
-一种 `POST` 方法，可让您将区段映射到单键、无序列化目 [!UICONTROL cookie] 标。
+一 `POST` 种方法，可让您将区段映射到单键、无序列化目 [!UICONTROL cookie] 标。
 
 <!-- r_map_cookie_noserial.xml -->
 
@@ -133,7 +137,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ### 示例请求
 
-在请求中，该 `valueAlias` 值与键值对中的值相对应。 除非另有指明，否则所有请求值都是必需的。
+在请求中， `valueAlias` 该值与键值对中的值相对应。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -168,7 +172,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 }
 ```
 
-## 将区段映射到Cookie目标：多密钥、无序列号 {#map-segment-cookie-multi-noserial}
+## 将区段映射到Cookie目标： 多密钥、无序列号 {#map-segment-cookie-multi-noserial}
 
 一种 `POST` 方法，可让您将区段映射到多键、无序列化目 [!UICONTROL cookie] 标。
 
@@ -180,7 +184,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ### 示例请求
 
-在请求中， `traitAlias` 键 `valueAlias` 值对中分别设置键和值。 除非另有指明，否则所有请求值都是必需的。
+在请求中， `traitAlias` 和 `valueAlias` 分别在键值对中设置键和值。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -216,9 +220,9 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 }
 ```
 
-## 将区段映射到Cookie目标：多键、序列化 {#map-segment-cookie-multi-serial}
+## 将区段映射到Cookie目标： 多密钥、序列化 {#map-segment-cookie-multi-serial}
 
-一种 `POST` 方法，可让您将区段映射到多键序列化 [!UICONTROL cookie destination]。
+一 `POST` 种方法，可让您将区段映射到多键、序列化 [!UICONTROL cookie destination]。
 
 <!-- r_map_cookie_multikey_serialized.xml -->
 
@@ -266,7 +270,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 将区段映射到服务器到服务器目标 {#map-segment-s2s}
 
-一种 `POST` 方法，可让您将区段映射到现有目 [!UICONTROL server-to-server] 标。 但是，请注意，您不能使用这些当 [!UICONTROL server-to-server] 前可用的方法创建目 [!DNL API] 标。
+一种 `POST` 方法，可让您将区段映射到现有 [!UICONTROL server-to-server] 目标。 但是，请注意，您不能使用这些当 [!UICONTROL server-to-server] 前可用的方法创建目 [!DNL API] 标。
 
 <!-- r_map_segment_s2s.xml -->
 
@@ -276,7 +280,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ### 示例请求
 
-在请求中，该 `traitAlias` 键对应于键值对中的键。 除非另有指明，否则所有请求值都是必需的。
+在请求中， `traitAlias` 与键值对中的键相对应。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -312,7 +316,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 批量创建目标映射 {#bulk-create}
 
-一 `POST` 种方法，它允许您传入一组或目标 [!UICONTROL cookie] 映射 [!UICONTROL URL] 。
+一 `POST` 种方法，它允许您传入一组或目 [!UICONTROL cookie] 标映 [!UICONTROL URL] 射。
 
 <!-- r_bulk_create.xml -->
 
@@ -478,9 +482,9 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 ]
 ```
 
-## 按目标ID更新目标 {#update-dest-data-order}
+## Update a Destination by Destination ID {#update-dest-data-order}
 
-一种 `PUT` 允许您通过更新现有目标的方法 `destinationId`。
+一种 `PUT` 允许您更新现有目标的方法 `destinationId`。
 
 <!-- r_update_destination_data_order_id.xml -->
 
@@ -528,9 +532,9 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 }
 ```
 
-## 通过映射ID更新映射到目标 {#update-mapping-dest-id}
+## 通过映射ID更新到目标的映射 {#update-mapping-dest-id}
 
-一 `PUT` 种方法，它允许您按指定更新到目标的映射 `mappingId`。
+一种 `PUT` 方法，允许您按指定更新到目标的映射 `mappingId`。
 
 <!-- r_update_destination_trait_data_order_id.xml -->
 
@@ -582,5 +586,5 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 >
 >* [目标](../../../features/destinations/destinations.md)
 >* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [说明的键值对](../../../reference/key-value-pairs-explained.md)
+>* [键值对说明](../../../reference/key-value-pairs-explained.md)
 
