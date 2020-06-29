@@ -1,17 +1,21 @@
 ---
 description: 返回指定destinationId的目标的GET方法。
 seo-description: 返回指定destinationId的目标的GET方法。
-seo-title: 按目标ID返回目标
+seo-title: 按目标 ID 返回目标
 solution: Audience Manager
-title: 按目标ID返回目标
+title: 按目标 ID 返回目标
 uuid: abce7426-55a5-4045-93a7-0487652a7189
+feature: API
 translation-type: tm+mt
-source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 9%
 
 ---
 
 
-# 按目标ID返回目标 {#return-a-destination-by-destination-id}
+# 按目标 ID 返回目标 {#return-a-destination-by-destination-id}
 
 返回 `GET` 指定目标的方法 `destinationId`。
 
@@ -23,7 +27,7 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 >[!NOTE]
 >
->要填充URL `mappings` 中传递的字 `includeMappings=true` 段，请执行以下操作。
+>要在URL `mappings` 中填充字 `includeMappings=true` 段传入。
 
 ## 响应
 
@@ -65,15 +69,15 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 >[!NOTE]
 >
->* *（可选）* 传递以 `containsSegment=<sid>` 返回映射到指定区段的所有目标的数组。 例如，您的查询可能类似于： `GET .../destinations/?containsSegment=4321`.
+>* *(可选* )传入 `containsSegment=<sid>` 以返回映射到指定区段的所有目标的数组。 例如，您的查询可能类似于： `GET .../destinations/?containsSegment=4321`.
    >
    >
-* 不返回完整的目标对象。 如果需要完全填充的对象，请按数据顺序获取目标。
+* 不返回完整的目标对象。 如果需要完全填充的对象，按数据顺序获取目标。
 
 
 ### 可选查询参数
 
-您可以将这些可选参数与API方法结合使用，这些方法可 *以返回对象* 的所有属性。 将查询传入请求字符串时，在请求字符串中设置这些选项 [!DNL API]。 请参阅 [可选参数](../../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
+可以将这些可选参数与API方法一起使用， *这些方法* 返回对象的所有属性。 将查询传递到请求字符串时，在中设置这些选项 [!DNL API]。 请参 [阅可选参数](../../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
 
 <table id="table_B05A8EE22C9A4C72B84A8479E1AB7D0A"> 
  <thead> 
@@ -85,7 +89,7 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"><code> page</code> </td>
-   <td colname="col2"> 按页码返回结果。 编号从0开始。 </td>
+   <td colname="col2"> 按页码返回结果。 开始编号为0。 </td>
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> pageSize</code> </td>
@@ -93,15 +97,15 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> sortBy</code> </td>
-   <td colname="col2">根据指定的 <span class="keyword"> JSON属性对结果进行排序和返回</span> 。 </td>
+   <td colname="col2">根据指定的JSON属性对结果进 <span class="keyword"> 行排序</span> 并返回。 </td>
   </tr>
   <tr valign="top"> 
-   <td colname="col1"><code> 降序</code> </td>
-   <td colname="col2"> 按降序排序和返回结果。 默认为升序。 </td>
+   <td colname="col1"><code> descending</code> </td>
+   <td colname="col2"> 按降序排序和返回结果。 升序为默认值。 </td>
   </tr>
   <tr valign="top"> 
-   <td colname="col1"><code> 搜索</code> </td>
-   <td colname="col2">根据要用作搜索参数的指定字符串返回结果。 例如，假设您要查找所有模型的结果，这些模型在该项目的任何值字段中都有单词“Test”。 您的示例请求可能如下： <p><code> 获取https://api.demdex.com/v1/models/?search=Test</code>。 </p> <p>您可以搜索“get all”方法返回的任何值。 </p> </td>
+   <td colname="col1"><code> search</code> </td>
+   <td colname="col2">根据要用作搜索参数的指定字符串返回结果。 例如，假设您要在该项目的任何值字段中查找带有“Test”字样的所有模型的结果。 您的示例请求可能如下所示： <p><code> GET https://api.demdex.com/v1/models/?search=Test</code>. </p> <p>您可以搜索“get all”方法返回的任何值。 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -140,7 +144,7 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 ## 返回具有映射ID的目标映射 {#return-dest-mapping-id}
 
-一种 `GET` 基于该方法返回单个目标映射的方法 `mappingId`。
+一种 `GET` 基于返回单个目标映射的方法 `mappingId`。
 
 <!-- r_get_destination_trait_data_order.xml -->
 
@@ -177,7 +181,7 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 ## 返回目标映射 {#return-dest-mappings}
 
-返回 `GET` 目标映射的方法。
+返回 `GET` 目标的映射的方法。
 
 <!-- r_get_destination_mappings.xml -->
 
@@ -251,7 +255,7 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 ## 返回所有可用的目标平台 {#return-dest-platforms}
 
-返回 `GET` 目标的所有可用设备平台的方法。
+一种 `GET` 为目标返回所有可用设备平台的方法。
 
 <!-- r_get_dest_platforms.xml -->
 
@@ -269,7 +273,7 @@ BROWSER, ANDROID, iOS, ALL
 
 ## 返回S2S和批量S2S目标作业历史记录 {#return-job-history}
 
-一种 `GET` 返回出站()和 [!UICONTROL Server-to-Server] 批量目标作业 [!UICONTROL S2S][!UICONTROL S2S] 历史信息的方法。
+一种 `GET` 返回出站() [!UICONTROL Server-to-Server] 和批量目 [!UICONTROL S2S]标作业历史 [!UICONTROL S2S] 记录信息的方法。
 
 <!-- r_get_job_history.xml -->
 
@@ -277,7 +281,7 @@ BROWSER, ANDROID, iOS, ALL
 
 `GET https://api.demdex.com/v1/destinations/655/history/outbound?startDate=1000000000&endDate=1403034473000`
 
-必需的查询参数： `startDate` = *&lt;`epochtime`&gt;和* = `endDate` &lt; *`epochtime`*&gt;。
+所需的查询参数： `startDate` = *&lt;`epochtime`>和* = `endDate` &lt; *>`epochtime`*。
 
 ### 响应
 
