@@ -1,29 +1,33 @@
 ---
-description: “特征”功能板是用于管理特征的集中工作区。
-seo-description: “特征”功能板是用于管理特征的集中工作区。
-seo-title: 特征控制板
+description: 特征仪表板是用于管理特征的集中工作区。
+seo-description: 特征仪表板是用于管理特征的集中工作区。
+seo-title: 特征仪表板
 solution: Audience Manager
-title: 特征控制板
+title: 特征仪表板
 uuid: 31b8f958-f67d-4af2-8d78-e37e2dfe810d
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 2a3a562d5bc516c338c113db08303cf36e832f47
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '133'
+ht-degree: 4%
 
 ---
 
 
-# 特征控制板 {#traits-dashboard}
+# 特征仪表板 {#traits-dashboard}
 
-“特 [征”功能板](https://bank.demdex.com/portal/Traits/Traits.ddx#show/list) 是用于管理特征的集中式工作区。 您可以通过导航 [!UICONTROL Traits] 到 **[!UICONTROL Audience Data]** >来查看功 **[!UICONTROL Traits]**&#x200B;能板。
+“特 [征仪表板](https://bank.demdex.com/portal/Traits/Traits.ddx#show/list) ”是用于管理特征的集中工作区。 您可以通过导 [!UICONTROL Traits] 航到>来查看 **[!UICONTROL Audience Data]** 仪表板 **[!UICONTROL Traits]**。
 
 ![](assets/traits-dashboard.png)
 
 <!-- c_tb_dashboard.xml -->
 
-功能 [!UICONTROL Traits] 板包含帮助您：
+该仪表板 [!UICONTROL Traits] 包含可帮助您：
 
-1. 在表格中查看所有特征和相关详细信息，其中包含可排序的列。
-2. 查看并处理活 [动受众特征和数据源同步特征](../../features/traits/client-activity-synced-audience-traits.md)。
+1. 在表格中查看所有特征和相关详细信息，您可以排序列。
+2. 检查并处理活 [动受众特征和数据源同步特征](../../features/traits/client-activity-synced-audience-traits.md)。
 3. 创建、编辑和删除特征。
-4. 查看和管理特征存储文件夹。
-5. 按名称、ID、说明或数据源搜索特征。 在搜索时单击文件夹，将结果限制在该文件夹及其子文件夹中。
+4. 视图和管理特征存储文件夹。
+5. 按名称、ID、说明或数据源搜索特征。 在搜索时单击某个文件夹可将结果限制在该文件夹及其子文件夹中。
 6. 按特征类型（已载入、基于规则、算法、文件夹特征）筛选特征。
