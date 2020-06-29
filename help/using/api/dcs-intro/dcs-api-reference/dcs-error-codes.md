@@ -5,8 +5,9 @@ seo-title: DCS 错误代码、消息和示例
 solution: Audience Manager
 title: DCS 错误代码、消息和示例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
+feature: DCS
 translation-type: tm+mt
-source-git-commit: ff245c2cca417e9b1fd51460ddbadd25d5696006
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1509'
 ht-degree: 3%
@@ -244,4 +245,4 @@ In the tables below, *italics* represents a variable placeholder.
 
 由X-头捕获的错误代码会像这样显示在URL字符串中 `X-Error: 101,102`。
 
-[竞赛条件和错误处理](../../../api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
+[争用条件和错误处理](../../../api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
