@@ -4,8 +4,9 @@ seo-description: 当有多个设备与用户连接时，如果在其中任一设
 seo-title: 即时跨设备抑制
 title: 即时跨设备抑制
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 15%
@@ -26,7 +27,7 @@ ht-degree: 15%
 
 在用户档案合并规则和设备非分割过程中，对实时非 [分割的技术细节进行了详细描述](merge-rule-unsegment.md)。 阅读上述使用案例的实际实施。
 
-## 转换后不Target {#do-not-target-once}
+## 转换后不目标 {#do-not-target-once}
 
 确保您的用户已转换(购买产品、获得订阅等) 将看不到与转换前相同的消息。 可以使用逻辑获 [!UICONTROL AND NOT] 得此值，如下所示。
 
@@ -37,7 +38,7 @@ ht-degree: 15%
 
 ![](assets/and_not_use_case.png)
 
-## 在x印象后不Target {#do-not-target-after-x}
+## 在x印象后不目标 {#do-not-target-after-x}
 
 通过设置最近频率和频率控制，您可以确保不会以相同的创意淹没用户。 在此方案中，创建具有两个特征的区段，如以下步骤所述。
 
@@ -48,7 +49,7 @@ ht-degree: 15%
 2. 对第二个特征应用频率控制。 如果您愿意，还可以添加最近使用的控件。 阅读有关如 [何应用最近和频率控制的更多信息](../segments/recency-and-frequency.md)。
 3. 将区段映射到任意数量的实时服务器到服务器目标。 阅读有关如何将区段添加到服 [务器到服务器目标的信息](../destinations/add-edit-segments.md)。
 
-在此方案中，用户累积了超过三个印象后，将从此区段中删除这些印象，不会再看到此特定创意。
+在此方案中，用户累积了超过三个印象后，将从此区段删除这些印象，不会再看到此特定创意。
 
 ![](assets/impressions_use_case.png)
 
