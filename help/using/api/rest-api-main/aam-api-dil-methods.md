@@ -1,27 +1,31 @@
 ---
-description: 允许您以编程方式使用数据集成库(DIL)的方法。
-seo-description: 允许您以编程方式使用数据集成库(DIL)的方法。
-seo-title: 数据集成库API方法
+description: 让您通过数据集成库(DIL)有计划地工作的方法。
+seo-description: 让您通过数据集成库(DIL)有计划地工作的方法。
+seo-title: 数据集成库 API 方法
 solution: Audience Manager
-title: 数据集成库API方法
+title: 数据集成库 API 方法
 uuid: 507e7afd-3ae7-44de-98b0-589d699c453b
+feature: API
 translation-type: tm+mt
-source-git-commit: 5e08861f8bfe88559b089fae00bd14e576f2d0ac
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 14%
 
 ---
 
 
-# 数据集成库API方法 {#data-integration-library-api-methods}
+# 数据集成库 API 方法 {#data-integration-library-api-methods}
 
-允许您以编程方式使用(...) [!UICONTROL Data Integration Library] 的方[!UICONTROL DIL]法
+使您能以编程方式使用(...) [!UICONTROL Data Integration Library] 的方[!UICONTROL DIL]法。
 
 >[!IMPORTANT]
 >
->数据集成库API已弃用。 此API用于生成DIL，您现在可以从此处自下载： [DIL下载](https://github.com/Adobe-Marketing-Cloud/dil/releases)。
+>数据集成库API已弃用。 此API用于生成DIL，您现在可以在以下位置自下载： [DIL下载](https://github.com/Adobe-Marketing-Cloud/dil/releases)。
 
 <!-- c_data_integr_library_api.xml -->
 
-## DIL的退回版本 {#return-version-dil}
+## DIL的返回版本 {#return-version-dil}
 
 返回 `GET` 从最旧到最新排序的版本列表的方法。
 
@@ -33,15 +37,15 @@ source-git-commit: 5e08861f8bfe88559b089fae00bd14e576f2d0ac
 
 ### 响应
 
-成功的请求将返回响应 `["4.0", "4.1"]` 代码，如下所示。
+成功的请求返回响应 `["4.0", "4.1"]` 代码，如下所示。
 
 ```
 ["4.0", "4.1"]
 ```
 
-## 返回版本的JSON架构 {#return-json-schema-version}
+## 返回版本的JSON模式 {#return-json-schema-version}
 
-返 `GET` 回版本模 [!DNL JSON] 式的方 [!UICONTROL DIL] 法。 支持使用版 [!UICONTROL LATEST] 本别名获取最新版本 [!UICONTROL DIL]。
+返 `GET` 回版本 [!DNL JSON] 模式的方 [!UICONTROL DIL] 法。 支持使用版 [!UICONTROL LATEST] 本别名获取最新版本 [!UICONTROL DIL]。
 
 <!-- r_api_return_json_schema_for_version.xml -->
 
@@ -51,7 +55,7 @@ source-git-commit: 5e08861f8bfe88559b089fae00bd14e576f2d0ac
 
 ### 响应
 
-成功的请求将返回响应 `["4.0", "4.1"]` 代码和数据，如下所示。
+成功的请求返回响应 `["4.0", "4.1"]` 代码和数据，如下所示。
 
 ```
 { 
@@ -377,7 +381,7 @@ source-git-commit: 5e08861f8bfe88559b089fae00bd14e576f2d0ac
 
 ## 生成DIL {#generate-dil}
 
-一种 `GET` 基于使用指 [!UICONTROL DIL] 定版本的传入请求主体生成的方法 [!UICONTROL DIL]。 如果别名 `LATEST` 用于URL中的版本，则会生成最新版本的 [!UICONTROL DIL] 别名。
+一种 `GET` 基于使用 [!UICONTROL DIL] 指定版本的传入请求主体生成的方法 [!UICONTROL DIL]。 如果别名 `LATEST` 用于URL中的版本，则会生成最新版本 [!UICONTROL DIL] 的别名。
 
 <!-- r_api_generate_dil.xml -->
 
@@ -461,4 +465,4 @@ source-git-commit: 5e08861f8bfe88559b089fae00bd14e576f2d0ac
 
 ### 响应
 
-成功的更新会返回响应 `201 created` 代码和该 [!UICONTROL DIL] 代 [!DNL JavaScript] 码。
+成功的更新会返回响应 `201 created` 代码以及 [!UICONTROL DIL] 代码 [!DNL JavaScript] 。
