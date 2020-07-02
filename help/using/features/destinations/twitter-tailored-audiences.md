@@ -6,9 +6,9 @@ solution: Audience Manager
 title: 将特定于 Twitter 的受众配置为基于设备的自助服务目标
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 8ff76decc1cbd7f7babd619dd1ce9fe047541337
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '553'
 ht-degree: 4%
 
 ---
@@ -73,5 +73,4 @@ ht-degree: 4%
 
 ## 匹配率注意事项 {#match-rates-considerations}
 
-* 使用时， [!UICONTROL Twitter Tailored Audiences]目标页 [!UICONTROL Segment Addressable Audience] 面中 [!UICONTROL Segment Match Rate] 的和度量将不显示任何值。 这是正常行为，因为受众匹配以及此目标的匹配率由Adobe处理和托管，而 [!UICONTROL Twitter]不是Adobe。
 * Audience Manager与历史受众回 [!UICONTROL Twitter Tailored Audiences] 填之间的集成支持。 创建目标时，会将所 [!UICONTROL Twitter] 有细分资格发送到。
