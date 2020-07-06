@@ -6,8 +6,9 @@ solution: Audience Manager
 title: 数据收集和产品集成常见问题解答
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
+feature: Administration
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 27ce94084e35ffa770858027d12235ca9f1f8430
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 96%
@@ -37,13 +38,13 @@ faq_data_collection_integration.xml
 
 <br> 
 
-**能否向我提供一列表IP地址，我可以将其添加到dpm.demdex.net的允许列表？**
+**能否向我提供一列表IP地址，我可以将其添加到dpm.demdex.net的允许列表?**
 
 抱歉，我们无法为您提供这样的列表。这些 IP 是通过 [!DNL Amazon Web Services] 按地域动态分配的。因此，[!DNL Audience Manager] 无法控制可分配给此地址的 IP 范围。
 
 <br> 
 
-**能否向我提供可添加到入站和出站sFTP服务器允许列表的IP地址？**
+**能否为我提供可添加到入站和出站sFTP服务器允许列表的IP地址？**
 
 可以，请参见下文。
 
