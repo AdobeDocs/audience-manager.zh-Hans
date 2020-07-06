@@ -8,9 +8,9 @@ title: 可操作的日志文件
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: d3fd387478ac00470537124110299cd264eac499
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1376'
 ht-degree: 4%
 
 ---
@@ -153,7 +153,11 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 对于平均大小为200万 [!DNL DCM] 行的日志文件，通过可操作信号创建的任何特征在我们处理日志后大约一小时内即可实现。
 
->[!NOTE] {importance=&quot;high&quot;}
+<!--
+Removed  {importance="high"} for ExL
+-->
+
+>[!NOTE]
 >
 >日志中提供的事件 [!DNL DCM] 时间戳将被接受并传递给 [!UICONTROL Data Collection Servers]。
 >
