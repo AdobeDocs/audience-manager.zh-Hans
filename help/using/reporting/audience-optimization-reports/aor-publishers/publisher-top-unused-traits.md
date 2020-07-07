@@ -7,9 +7,9 @@ title: 排名最前的未使用特征
 uuid: 90bcd333-41b8-416e-aa4e-a8661891df50
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '647'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->启用时， [!UICONTROL Audience Optimization for Publishers]必须包含描述性元数据， [!UICONTROL Order IDs]如将DFP数据文件导入Audience Manager [的步骤3中所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 通过执行此操作，您可以确保报告将Web属性详细 [!UICONTROL Order] 化为而非 [!UICONTROL Order ID]。
+>启用时， [!UICONTROL Audience Optimization for Publishers]必须包含描述性元数据， [!UICONTROL Order IDs]如将Google Ad Manager( [以前称为DFP)数据文件导入Audience Manager的步骤3中所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 通过执行此操作，您可以确保报告将Web属性详细 [!UICONTROL Order] 化为而非 [!UICONTROL Order ID]。
 
 ## 解释结果 {#interpreting-results}
 
@@ -90,7 +90,7 @@ ht-degree: 2%
 
 您的特征在报表中的位置可以告诉您许多可用于优化现有受众段的特征。
 
-“展示次数”轴上较高的特征是您要在活动中使用的特征。 对于印象较少的特征，您不太可能根据DFP受众在您的Web资产上获得此数据。
+“展示次数”轴上较高的特征是您要在活动中使用的特征。 对于印象较少的特征，您不太可能根据您的受众在您的Web资产上获得此 [!DNL Google Ad Manager] 。
 
 请向左侧查找高度精 [!UICONTROL Unique Trait Realizations] 确的特征，向右查找可驱动缩放的特征。
 
