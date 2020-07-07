@@ -8,9 +8,9 @@ title: 可操作的日志文件
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 translation-type: tm+mt
-source-git-commit: d3fd387478ac00470537124110299cd264eac499
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1597'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 4%
 要开始使 [!UICONTROL Actionable Log Files]用，您需要将日志数据导入 [!DNL Audience Manager]。 以下链接将帮助您入门：
 
 * 有关 [!UICONTROL Google DCM] 日志，请参 [阅将DCM数据文件导](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) 入Audience Manager并与 ** 您的顾 [!DNL Audience Manager] 问联系。
-* 有关 [!UICONTROL Google DFP] 日志，请参 [阅将DFPAudience Manager文件](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) 导入，并 *与您* 的顾 [!DNL Audience Manager] 问联系。
+* 有关 [!UICONTROL Google Ad Manager] （以前称为Google DFP）日志，请参 [阅将DFP数据文件导入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)*并与* 您的顾问 [!DNL Audience Manager] 联系。
 * 有关其他广告服务器日志，请参 [阅数据和元数据](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)*文件并* 与您的顾 [!DNL Audience Manager] 问联系。
 
 如果已将日志数据导入 [!DNL Audience Manager]，请咨询 [!DNL Audience Manager] 顾问或客 [户服务](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html) ，为您 [!UICONTROL Actionable Log Files] 启用。
@@ -163,6 +163,35 @@ Removed  {importance="high"} for ExL
 >
 >* 如果日志文件中的数据行没有时间戳 [!DNL DCM] 可用，我们将调用的时间 `HTTP` 用作事件时间戳。
 >* 如果日志文件中的数 [!DNL DCM] 据行包含格式错误的时间戳，我们将忽略整行。
+
+
+<br> 
+
+### 日志中可操作的 [!DNL Google Ad Manager] 信号 {#ad-manager-logs-signals}
+
+此表列表日志文件中的可操 [!DNL Google Ad Manager] 作信号：
+
+
+| 日志文件中的标题名称 | 信号 | 描述 |
+---------|----------|---------
+| `LineItemId` | `d_lineitem` | 已交付广告管理器行项目的数字ID |
+| `OrderId` | `d_orderid` | 包含已交付行项目和创意的广告管理器订单的数字ID。 |
+| `CreativeId` | `d_creative` | 已交付广告管理器创意的数字ID。 |
+| `-` | `d_event` | 指示事件类型。 Audience Manager从广告管理器日志文件名中读取事件类型并将其转换为可操作的信号。 接受的值为： <br> <ul><li>d_事件= imp表示印象。</li><li>d_事件=单击鼠标。</li><li>d_事件= conv表示转换和活动。</li></ul> |
+| `-` | `d_src` | 用于捕获Ad Manager数据的数据源的ID。 请参 [阅如何创建数据源](/help/using/features/manage-datasources.md)。 |
+
+表中描述的信号以Audience Manager形式捕获，如实时HTTP调用。 以下示例调用包含有关Google Ad Manager中转换事件的信息。 调用不一定必须包括示例调用中的所有信号。
+
+```
+https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_event=conv&d_lineitem=112&d_orderid=22223&d_creative=3983524
+```
+
+>[!NOTE]
+>
+>日志中提供的事件 [!DNL Google Ad Manager] 时间戳将被接受并传递给 [!UICONTROL Data Collection Servers]。
+>
+>* 如果日志文件中的数据行没有时间戳 [!DNL Google Ad Manager] 可用，我们将调用的时间 `HTTP` 用作事件时间戳。
+>* 如果日志文件中的数 [!DNL Google Ad Manager] 据行包含格式错误的时间戳，我们将忽略整行。
 
 
 <br> 
