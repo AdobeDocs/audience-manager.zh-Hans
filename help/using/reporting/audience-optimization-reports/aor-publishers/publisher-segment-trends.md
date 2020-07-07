@@ -7,9 +7,9 @@ title: 区段趋势报表
 uuid: f84e8d0a-74e5-430c-b61c-efb696faee93
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '609'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->启用此 [!UICONTROL Audience Optimization for Publishers]功能时，必须包含ID的描述 [!UICONTROL Line Item] 性元数据，如将DFP数据文 [件导入Audience Manager的步骤3中所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 通过执行此操作，您可以确保报告将Web属性详细 [!UICONTROL Line Item] 化为ID而 [!UICONTROL Line Item] 非ID。
+>启用此 [!UICONTROL Audience Optimization for Publishers]功能时，必须包含ID的描述性元 [!UICONTROL Line Item] 数据，如将Google Ad Manager( [以前称为DFP)数据文件导入Audience Manager的步骤3中所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 通过执行此操作，您可以确保报告将Web属性详细 [!UICONTROL Line Item] 化为ID而 [!UICONTROL Line Item] 非ID。
 
 ## 解释结果 {#interpreting-results}
 
