@@ -1,15 +1,15 @@
 ---
-description: 您可以通过客户端（浏览器端）集成或服务器端集成将符合条件的区段发送到DFP。 如果您选择客户端集成，则必须为Audience Manager中的Google Publisher标记创建基于cookie的目标。
-seo-description: 您可以通过客户端（浏览器端）集成或服务器端集成将符合条件的区段发送到DFP。 如果您选择客户端集成，则必须为Audience Manager中的Google Publisher标记创建基于cookie的目标。
+description: 您可以通过客户端（浏览器端）集成或服务器端集成将合格的细分发送到Google Ad Manager。 如果您选择客户端集成，则必须为Audience Manager中的Google Publisher标记创建基于cookie的目标。
+seo-description: 您可以通过客户端（浏览器端）集成或服务器端集成将合格的细分发送到Google Ad Manager。 如果您选择客户端集成，则必须为Audience Manager中的Google Publisher标记创建基于cookie的目标。
 seo-title: 创建 GPT 目标
 solution: Audience Manager
 title: 创建 GPT 目标
 uuid: e3bbf327-a7e0-48da-bc84-8f531b7f6750
 feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '323'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # 创建 GPT 目标 {#create-a-gpt-destination}
 
-您可以通过客户端( [!DNL DFP] 浏览器端)集成或服务器端集成向客户端发送符合条件的区段。 如果选择客户端集成，则必须创建Audience Manager中基于cookie的 [!DNL Google Publisher Tags] 目标。
+您可以通过客户端( [!DNL Google Ad Manager] 浏览器端)集成或服务器端集成向客户端发送符合条件的区段。 如果选择客户端集成，则必须创建Audience Manager中基于cookie的 [!DNL Google Publisher Tags] 目标。
 
 ## 目标
 
