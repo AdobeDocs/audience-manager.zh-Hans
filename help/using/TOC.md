@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Audience Manager 用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 1b31f10effa2780b5e4374516dd6c76d92a0123a
+source-git-commit: 5e8dfca8de0faeecbd44da1804b71bbe77bc89be
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 97%
+source-wordcount: '1754'
+ht-degree: 94%
 
 ---
 
@@ -188,7 +188,7 @@ ht-degree: 97%
          + [跨渠道转化](reporting/audience-optimization-reports/aor-advertisers/cross-channel-conversion-reporting.md)
       + 适用于出版商的 Audience Optimization {#audience-optimization-publishers}
          + [适用于出版商的 Audience Optimization 概述](reporting/audience-optimization-reports/aor-publishers/aor-publishers.md)
-         + [将 DFP 数据文件导入 Audience Manager](reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
+         + [将Google Ad Manager（以前称为DFP）数据文件导入Audience Manager](reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
          + [区段绩效报表](reporting/audience-optimization-reports/aor-publishers/publisher-segment-performance.md)
          + [区段趋势报表](reporting/audience-optimization-reports/aor-publishers/publisher-segment-trends.md)
          + [排名最前的未使用特征](reporting/audience-optimization-reports/aor-publishers/publisher-top-unused-traits.md)
@@ -284,9 +284,9 @@ ht-degree: 97%
 + 实施和集成指南{#implementation-integration-guides}
    + [实施和集成指南](integration/implementation-and-integration.md)
    + [数据集成方法](integration/data-integration-methods.md)
-   + 使用 Google Publisher Tag (GPT) 集成 DFP{#integrate-dfp-using-gpt}
-      + [使用 GPT 集成 DFP 概述](integration/gpt-aam-destination/gpt-aam-overview.md)
-      + [使用 GPT 将区段发送到 DFP](integration/gpt-aam-destination/gpt-aam-requirements.md)
+   + 使用Google Publisher标记(GPT)集成Google Ad Manager{#integrate-dfp-using-gpt}
+      + [使用GPT概述集成Google Ad Manager](integration/gpt-aam-destination/gpt-aam-overview.md)
+      + [使用GPT将区段发送到Google Ad Manager](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [创建 GPT 目标](integration/gpt-aam-destination/gpt-aam-create-destination.md)
       + [修改 GPT setTargeting API 调用](integration/gpt-aam-destination/gpt-aam-modify-api.md)
       + [Google Publisher Tag 的 Audience Manager 代码](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
@@ -294,7 +294,7 @@ ht-degree: 97%
       + [Facebook WCA 集成](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
       + [OAS 作为 Audience Manager 目标](integration/integrating-third-party/open-ad-server-destination.md)
       + [OpenX 作为 Audience Manager 目标](integration/integrating-third-party/openx-destination.md)
-      + [DFP 作为 Audience Manager 目标](integration/aam-dfp.md)
+      + [作为Audience Manager目标的Google Ad Manager（以前称为DFP）](integration/aam-dfp.md)
       + [将区段发送到 Google AdWords 再营销列表](integration/integrating-third-party/rlsa-integration.md)
    + [实施 Audience Manager](integration/implement-audience-manager.md)
    + 媒体数据集成{#media-data-integration}
