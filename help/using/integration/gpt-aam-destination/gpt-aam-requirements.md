@@ -1,23 +1,23 @@
 ---
-description: 您可以通过客户端或服务器端集成将符合条件的区段发送到DFP。 下面列出了两种方法的要求和相关信息。
-seo-description: 您可以通过客户端或服务器端集成将符合条件的区段发送到DFP。 下面列出了两种方法的要求和相关信息。
-seo-title: 使用 Google Publisher Tags (GPT) 向 DFP 发送区段的要求和方法
+description: 您可以通过客户端或服务器端集成将符合条件的区段发送到Google Ad Manager。 下面列出了两种方法的要求和相关信息。
+seo-description: 您可以通过客户端或服务器端集成将符合条件的区段发送到Google Ad Manager。 下面列出了两种方法的要求和相关信息。
+seo-title: 使用Google Publisher标记(GPT)将区段发送到Google Ad Manager的要求和方法
 solution: Audience Manager
-title: 使用 Google Publisher Tags (GPT) 向 DFP 发送区段的要求和方法
+title: 使用Google Publisher标记(GPT)将区段发送到Google Ad Manager的要求和方法
 uuid: 4b2ea81c-29bb-42d3-93d3-1d8e677790b6
 feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 7%
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 
 
-# 使用 Google Publisher Tags (GPT) 向 DFP 发送区段的要求和方法{#requirements-and-methods-of-sending-segments-to-dfp-using-google-publisher-tags-gpt}
+# Requirements and Methods of Sending Segments to Google Ad Manager Using Google Publisher Tags ( GPT) {#requirements-and-methods-of-sending-segments-to-dfp-using-google-publisher-tags-gpt}
 
-您可以通过客户端 [!DNL DFP] 或服务器端集成将合格的细分发送给。 下面列出了两种方法的要求和相关信息。
+您可以通过客户端 [!DNL Google Ad Manager] 或服务器端集成将符合条件的区段发送到（以前称为DFP）。 下面列出了两种方法的要求和相关信息。
 
 ## 客户端集成 {#client-side-integration}
 
@@ -47,7 +47,7 @@ ht-degree: 7%
 
 ## 服务器端集成 {#server-side-integration}
 
-如果您希望使用设置服务器端集成，请与Audience Manager顾问或客户服务 [!DNL DFP]部联系 [!DNL GPT]。 您需要提供您的帐 [!DNL DFP] 户网络ID和受众链接ID。
+如果您希望使用设置服务器端集成，请与Audience Manager顾问或客户服务 [!DNL Google Ad Manager]部联系 [!DNL GPT]。 您需要提供您的帐 [!DNL Google Ad Manager] 户网络ID和受众链接ID。
 
 >[!IMPORTANT]
 >
