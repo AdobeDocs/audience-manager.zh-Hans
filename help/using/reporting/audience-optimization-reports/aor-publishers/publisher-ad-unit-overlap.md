@@ -7,9 +7,9 @@ title: 广告单元重叠
 uuid: e4467e81-acbf-474e-b501-89d57395651f
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '432'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->启用时， [!UICONTROL Audience Optimization for Publishers]必须包含描述性元数据， [!UICONTROL Ad Unit IDs]如将DFP数据文件导入Audience Manager [的步骤3中所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 通过执行此操作，您可以确保报告将Web属性详细 [!UICONTROL Ad Unit] 化为而非 [!UICONTROL Ad Unit ID]。
+>启用时， [!UICONTROL Audience Optimization for Publishers]必须包含描述性元数据， [!UICONTROL Ad Unit IDs]如将Google Ad Manager( [以前称为DFP)数据文件导入Audience Manager的步骤3中所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 通过执行此操作，您可以确保报告将Web属性详细 [!UICONTROL Ad Unit] 化为而非 [!UICONTROL Ad Unit ID]。
 
 ## 解释结果 {#interpreting-results}
 
@@ -59,11 +59,11 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 重叠广告单位唯一值计数</span> </p> </td> 
-   <td colname="col2"> <p>已访问广告单元项目9 - 18的用户数。 此信息从DFP日志中提取。 </p> </td> 
+   <td colname="col2"> <p>已访问广告单元项目9 - 18的用户数。 此信息从Google Ad Manager日志中提取。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 基本广告单位唯一值计数</span> </p> </td> 
-   <td colname="col2"> <p>已访问广告单元项目1 - 8的用户数。 此信息从DFP日志中提取。 </p> </td> 
+   <td colname="col2"> <p>已访问广告单元项目1 - 8的用户数。 此信息从Google Ad Manager日志中提取。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 重叠唯一值计数</span> </p> </td> 
