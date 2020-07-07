@@ -8,10 +8,10 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 feature: Administration
 translation-type: tm+mt
-source-git-commit: 27ce94084e35ffa770858027d12235ca9f1f8430
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 96%
+source-wordcount: '1066'
+ht-degree: 90%
 
 ---
 
@@ -136,9 +136,9 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**我希望在一个网站上收集数据，并通过 DFP 在另一个网站上定位用户。如果我不想从其他资产中收集数据，是否需要在该位置部署代码？**
+**[!DNL Google Ad Manager]我希望在一个网站上收集数据，并通过 在另一个网站上定位用户。如果我不想从其他资产中收集数据，是否需要在该位置部署代码？**
 
-不需要。如果不需要在另一个网站上收集数据，则无需在该网站上部署 DIL。只要您有权通过 DFP 访问另一个网站上的清单，便可以使用从初始网站收集到的数据并通过 DFP 进行定位。
+不需要。如果不需要在另一个网站上收集数据，则无需在该网站上部署 DIL。As long as you have access to the inventory on the second site via [!DNL Google Ad Manager], you can use the data collection from the initial site and target via [!DNL Google Ad Manager].
 
 <br> 
 
@@ -148,9 +148,9 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**[!DNL Audience Manager]如何设置 Cookie 并将变量传递给 DFP？**
+**如何设[!DNL Audience Manager]置cookies并将变量传递给[!DNL Google Ad Manager]?**
 
-[!DNL Audience Manager] 会设置 2 个 Cookie：其中一个 Cookie 用于向 DFP 广告标记发送区段变量，而另一个则用于设置我们的独特用户 ID (UUID)，DFP 也会读取该 UUID。将 UUID 添加到广告标记意味着我们可以执行用户级报表和受众发现操作。
+[!DNL Audience Manager] 设置2个cookie: 一个将段变量发 [!DNL Google Ad Manager] 送到广告标签，另一个设置我们的唯一用户ID(UUID)，该UUID也由读取 [!DNL Google Ad Manager]。 将 UUID 添加到广告标记意味着我们可以执行用户级报表和受众发现操作。
 
 <br> 
 
