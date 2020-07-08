@@ -7,9 +7,9 @@ title: 跨渠道转化
 uuid: 0fecec23-e502-490b-b7dd-47a3753a3f75
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 97129b435ab8e13def14bc85dcaab8254b2c4bda
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '262'
 ht-degree: 4%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 4%
 
 通过受众优化报告中的“跨渠道转换”选项，您可以将离线转化归因于提供的在线展示次数或点击次数。
 
-报 [!UICONTROL Cross Channel Conversion] 告将来自(DCM)平台的 [!DNL DoubleClick Campaign Manager] 结果与转换特征 [!DNL Audience Manager] 相结合。 这使您能够将线下转化关联到在线展示或点击。
+报 [!UICONTROL Cross Channel Conversion] 告将来自平台的结果与 [!DNL Google Campaign Manager] 转换特 [!DNL Audience Manager] 征相结合。 这使您能够将线下转化关联到在线展示或点击。
 
 您可以使用“ [!UICONTROL Cross Channel Conversion] 细分性 [能”和](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md) “最 [佳频率”报表](../../../reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md) 。
 
-要视图报 [!UICONTROL Cross Channel Conversion] 表，请在 **[!UICONTROL AAM+DCM]** 下拉列表 **[!UICONTROL Platform]** 中选择项目。
+要视图报 [!UICONTROL Cross Channel Conversion] 表，请在 **[!UICONTROL AAM + Ad Server Name]** 下拉列表 **[!UICONTROL Platform]** 中选择项目。
 
 下表列表了设置时的重要注意事项 [!UICONTROL Cross Channel Conversion]:
 
@@ -41,7 +41,7 @@ ht-degree: 4%
   </tr>
   <tr> 
    <td> <p>归因窗口 </p> </td> 
-   <td> <p> <b><span class="uicontrol"> AAM+DCM归因窗口</span></b> 为14天，这意味着只考虑过去两周中显示的转换特征。 </p> </td> 
+   <td> <p> <b><span class="uicontrol"> AAM+Google活动管理器</span></b> 归因窗口为14天，这意味着只考虑过去两周中显示的转换特征。 </p> </td> 
   </tr> 
   <tr> 
    <td> <p>最近接触方法 </p> </td> 
