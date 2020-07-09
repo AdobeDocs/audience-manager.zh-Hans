@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 基于人员的目标常见问题解答
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 6e55d8bc5fe2c5cdcdd36107593215288d491331
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 100%
+source-wordcount: '1138'
+ht-degree: 97%
 
 ---
 
@@ -112,3 +112,7 @@ Audience Manager 可以收集每个用户的最多 10 个电子邮件地址并�
 您可以通过 [!DNL URL Destinations] 功能使用 Audience Manager 的 [!DNL Facebook] [!DNL WCA] 集成，而无需支付额外费用。
 
 这两种集成是互补的，您可以同时使用这两种集成来确保更好的受众覆盖。例如，[!DNL WCA] 可用于在公司要定位尚未注册帐户的网站访客时帮助寻找潜在客户，而 [!DNL People-Based Destinations] 则可以帮助您定位已提供其电子邮件地址但可能未访问网站的现有客户。
+
+**与支[!DNL People-Based Destinations]持的集[!DNL Facebook]成是否会在用户不再有资格获得受众时使用户失去资格？**
+
+是的，该集成支持在用户不再 [!DNL Facebook] 符合资格时将其从受众中删除。
