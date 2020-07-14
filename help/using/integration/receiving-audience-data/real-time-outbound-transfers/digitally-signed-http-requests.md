@@ -7,9 +7,9 @@ title: 数字签名的HTTP请求
 uuid: 1183a70f-0c96-42cf-a4f5-37a83ffa1286
 feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 4877aa5391193ee2187609fdc9cb3740c91feb96
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -90,10 +90,7 @@ String signature = Base64.encodeBase64String(result).trim();
 
 ## 旋转私钥 {#rotate-private-key}
 
-出于安全原因，建议定期旋转私钥。 由您决定私钥和轮换周期。 为了在零停机时间下实现密钥轮替， [!UICONTROL IRIS] 支持添加多个签名头。 一个头将包含用旧密钥生成的签名，另一个头将包含使用新私钥生成的签名。 请详细参阅以下步骤：
-
-1. 合作伙伴可与其通信新的私钥 [!DNL Adobe Audience Manager]。
-1. 旧密钥从中删除， [!DNL Audience Manager] 并 [!UICONTROL IRIS] 仅发送新签名头。 钥匙已旋转。
+要轮替私钥，合作伙伴必须向其顾问传达新的私钥 [!DNL Adobe Audience Manager] 信息。 旧密钥从中删除， [!DNL Audience Manager] 并 [!UICONTROL IRIS] 仅发送新签名头。 钥匙已旋转。
 
 ## 用于签名的数据 {#data-signing}
 
