@@ -7,10 +7,10 @@ title: 媒体数据集成
 uuid: 6f6bbd03-084b-4226-8809-3b00b467606f
 feature: Integration with Campaign
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 3c70178dc1a020545793ea7facc70e34d23543fa
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 24%
+source-wordcount: '146'
+ht-degree: 17%
 
 ---
 
@@ -24,3 +24,9 @@ ht-degree: 24%
 * [可操作的日志文件](/help/using/integration/media-data-integration/actionable-log-files.md)
 * [通过像素调用捕获营销活动展示数据](/help/using/integration/media-data-integration/impression-data-pixels.md)
 * [通过像素调用捕获营销活动点击数据](/help/using/integration/media-data-integration/click-data-pixels.md)
+
+要设置日志摄取，请阅读以下文章：
+
+* [将Google活动管理器数据文件导入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+* [将Google Ad Manager数据文件导入Audience Manager ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
+* [日志数据和元数据文件](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) ，为通用日志文件设置日志摄取
