@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Audience Manager 用户指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 5e8dfca8de0faeecbd44da1804b71bbe77bc89be
+source-git-commit: edeb7dba1cb83e19a910812d2d0a664a288b884a
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1756'
 ht-degree: 94%
 
 ---
@@ -179,7 +179,7 @@ ht-degree: 94%
       + [Audience Optimization 报表](reporting/audience-optimization-reports/audience-optimization-reports.md)
       + 适用于广告商的 Audience Optimization {#audience-optimization-advertisers}
          + [适用于广告商的 Audience Optimization 概述](reporting/audience-optimization-reports/aor-advertisers/aor-advertisers.md)
-         + [将 DCM 数据文件导入 Audience Manager](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+         + [将Google活动管理器数据文件导入Audience Manager](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
          + [区段绩效报表](reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)
          + [趋势分析和数量分析报表](reporting/audience-optimization-reports/aor-advertisers/trend-analysis-volume-analysis.md)
          + [最佳频度报表](reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md)
