@@ -46,6 +46,7 @@ ht-degree: 3%
 2. 在结果列表中标识要在特征中使用的信号。
    * 要从一个信号创建特征，请单击相应的 **[!UICONTROL Create Rule-Based Trait]** 或链 **[!UICONTROL Create Onboarded Trait]** 接。
    * 要从多个信号创建特征，请单击每个信号的相应复选框，然后单击 **[!UICONTROL Create Trait from Multiple Signals]**。
+
    >[!NOTE]
    >您只能根据相同类型的信号创建特征。 不能根据实时信号和载入的信号的组合创建特征。
    >
