@@ -85,7 +85,7 @@ ht-degree: 6%
 
 在“配 [置URL目标](/help/using/features/destinations/create-url-destination.md) ”工作流中，将适用的区段映射到您新创建的 [!UICONTROL destination]。 请注意，映射值会自动填充 [!DNL Audience Manager][!UICONTROL segment ID]。
 
-输入终止日期（如果适用），否则不保留终止日期为空。
+输入终止日期（如果适用），否则，在无终止日期时留空。
 
 ## 第3步——在中创 [!UICONTROL Audience] 建 [!DNL Facebook Ads Manager] {#step-3-create-audience}
 
