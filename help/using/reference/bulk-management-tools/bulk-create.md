@@ -35,7 +35,7 @@ t_bulk_create.xml
 
 要批量创建对象，请打开工作 [!UICONTROL Bulk Management Tools] 表并：
 
-1. 单击选 **[!UICONTROL Headers]** 项卡，然后复制要添加的项目的创建标题。
+1. 单击选 **[!UICONTROL Headers]** 项卡，然后复制要添加的项的创建标题。
 2. Click the **[!UICONTROL Create]** tab.
 3. 将创建的标题粘贴到更新工作表的第一行中。
 4. 根据标题标签，粘贴或键入要更改的数据到相应的列。
