@@ -46,6 +46,7 @@ ht-degree: 2%
 1. 要保存并激活数据源，请执行以下操作：
    1. 将滑块 **[!UICONTROL Availability]** 移动到 **[!UICONTROL Active]**。
    1. 单击 **[!UICONTROL Save]**.
+
    >[!NOTE]
    >
    >* 无法删除已保存和已激活的数据源。
