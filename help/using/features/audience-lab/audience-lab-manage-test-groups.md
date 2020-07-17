@@ -74,6 +74,7 @@ To create a new [!UICONTROL Segment Test Group]:
    * 如果目标不能用于基于数据导出控件的特定测试区段，则 [它们将灰显](../../features/data-export-controls.md)。
    * 用户只能根据自己所属的RBAC用户组 [来查看自己有权访](../../features/administration/administration-overview.md) 问的目标。
    * 最后，您需要为测试组选择开始日期。 此日期标记将测试组发布到目标的开始。 选择 **“无结束日期** ”，以无限期地比较测试段。
+
    >[!NOTE]
    >
    >[!UICONTROL Profile Merge Rules] 只有实时目标支持通过身份验证的用户档案。 如果具有该配置的用户档案合并规则的测试区段被发送到基于文件的服务器到服务器目标，则受众可能不会填充。
@@ -84,6 +85,7 @@ To create a new [!UICONTROL Segment Test Group]:
 
    * 查看您在前面的步骤中添加的信息，然后选择 **[!UICONTROL Finalize Group]**。
    * 请记住，完成测试组后，它可以被复制或删除，但不能进行编辑。
+
    >[!NOTE]
    >* 您可以在创建过程中的任意点保存测试组，稍后返回向导。 测试组状态将为， **[!UICONTROL Draft]** 测试组不会向目标发送任何数据，直到您完成区段测试组。
    >* 对于草稿测试，您可以返回并编辑测试组，方 **[!UICONTROL Edit]** 法是单击主视图中的测试组 [!UICONTROL Audience Lab] 卡。
