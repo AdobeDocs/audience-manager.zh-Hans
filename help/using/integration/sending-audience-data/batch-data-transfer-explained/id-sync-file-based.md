@@ -49,11 +49,11 @@ ID文件名包含以下必需和可选元素：
   </tr> 
   <tr> 
    <td colname="col1"><code><i>MASTERDPID</i></code> </td> 
-   <td colname="col2"> 主数据提供程序ID是文件名中DPID的父ID。 此外，数据文件中的第一个用户ID与主ID相对应。 后续DPID是属于主标识符的其他标识符。 同步将文件名中的DPID映射到文件中的UUID。 </td> 
+   <td colname="col2"> 主控数据提供程序ID是文件名中DPID的父ID。 另外，数据文件中的第一个用户ID与主控ID相对应。 随后的DPID是属于主控的其他标识符。 同步将文件名中的DPID映射到文件中的UUID。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>DPID</i></code> </p> </td> 
-   <td colname="col2"> <p>数据提供程序ID。 这些ID表示与主DPID关联的实体或数据源。 同步将文件名中的DPID映射到文件中的UUID。 </p> <p>文件名中的DPID数量必须与数据文件中的UUID数量匹配。 例如，假设您的文件名包含主DPID和3个DPID。 数据文件必须包括4个对应的UUID列，格式如下文件内容部分所述。 </p> </td> 
+   <td colname="col2"> <p>数据提供程序ID。 这些ID表示与主控DPID关联的实体或数据源。 同步将文件名中的DPID映射到文件中的UUID。 </p> <p>文件名中的DPID数量必须与数据文件中的UUID数量匹配。 例如，假设您的文件名包含主控DPID和3个DPID。 数据文件必须包括4个对应的UUID列，格式如下文件内容部分所述。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><code><i>timestamp</i></code> </td> 
@@ -102,7 +102,7 @@ abc123 def456 ghi789 xyz987
 
 ## 同步将DPUUID与UUID匹配 {#sync-matches-dpuuids-uuids}
 
-ID同步文件的目的是将您自己的 [数据源](../../../reference/ids-in-aam.md) 中的DPUUID与UUID [!DNL Audience Manager] 同步。 同步将 [!DNL DPUUID]s从主控 [!DNL DPID] 器及其 [!DNL DPID]相关映射 [!DNL Audience Manager] 到 [!DNL UUID]s。 将ID放在文件名和正文中的位置决定这些标识符如何相互映射。 例如，请取下此处显示的两个示例文件：
+ID同步文件的目的是将您自己的 [数据源](../../../reference/ids-in-aam.md) 中的DPUUID与UUID [!DNL Audience Manager] 同步。 同步将 [!DNL DPUUID]主控及 [!DNL DPID] 其相关 [!DNL DPID]映射到 [!DNL Audience Manager][!DNL UUID]。 将ID放在文件名和正文中的位置决定这些标识符如何相互映射。 例如，请取下此处显示的两个示例文件：
 
 * **文件1:** `adobe_id_0_12345_1476312152.sync`
 
