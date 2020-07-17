@@ -115,7 +115,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DP_UUID_LIST </code> </p> </td> 
-   <td colname="col2"> <p>返回一个列表，其中包含数据合作伙伴的多个ID。 如果您有一个大型组织，并且有多个子组织或允许您与其共享数据的其他组织组，则此功能很有用。 此宏返回这些从属组的ID列表。 </p> </td> 
+   <td colname="col2"> <p>返回一个列表，其中包含数据合作伙伴的多个ID。 如果您有一个大型组织，并且有多个子组织或允许您与其共享数据的其他组织组，则此功能很有用。 此宏返回这些下属组的ID列表。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DPID </code> </p> </td> 
