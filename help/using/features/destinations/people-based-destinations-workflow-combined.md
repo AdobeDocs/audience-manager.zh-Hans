@@ -39,7 +39,7 @@ ht-degree: 7%
 1. 使用下拉菜单选择此 **[!UICONTROL Emails(SHA256, lowercased)]** 数据源的标签。
    >[!IMPORTANT]
    >
-   >此选项仅将数据源标记为包含使用该特定算法散列的数据。 Audience Manager在此步骤中不对数据进行哈希处理。 确保您计划存储在此数据源中的电子邮件地址已使用算法散列 [!DNL SHA256] 处理。 否则，您将无法使用它 [!DNL People-Based Destinations]。
+   >此选项仅将数据源标记为包含使用该特定算法散列的数据。 Audience Manager在此步骤中不对数据进行哈希处理。 确保您计划存储在此数据源中的电子邮件地址已使用算法进行散列 [!DNL SHA256] 处理。 否则，您将无法使用它 [!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 1. 保存数据源设置。
