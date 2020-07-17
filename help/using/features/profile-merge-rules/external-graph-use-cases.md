@@ -121,7 +121,7 @@ These strategies are designed to bring an unauthenticated or unknown user back t
 
 在以下示例中，Acme Inc.公司希望目标所有年收入超过100.000美元的家庭(在这些家庭中有订 [!DNL Acme Inc.] 阅者 [!DNL Data Plan A]，他们使用 [!DNL iPhone 7] 设备)。
 
-John在Data Plan A上使用其iPhone 7在Acme Inc.网站上进行身份验证。 同时，John的群集中还包 [!DNL Co-Op Device Graph] 含他经常使用的另外两种设备： 他的笔记本[!DNL Device 1]电脑和第二部智能手机 [!DNL Device 2] ( [!DNL Samsung S7] 一部 [!DNL Data Plan B])。
+John在Data Plan A上使用其iPhone 7在Acme Inc.网站上进行身份验证。 同时，John的群集中还包 [!DNL Co-Op Device Graph] 含他经常使用的另外两种设备： 他的笔记本[!DNL Device 1]电脑和第二部智能手机 [!DNL Device 2] (一 [!DNL Samsung S7][!DNL Data Plan B]部)。
 
 通过使 **[!UICONTROL Last Authenticated Profiles]** 用 **[!UICONTROL Adobe Co-Op Device Graph]**+, [!DNL Acme Inc.] 可以从John的设备图形群集向所有三台设备发送个性化消息，即使其中只有一台设备最初符合该区段的资格。
 
