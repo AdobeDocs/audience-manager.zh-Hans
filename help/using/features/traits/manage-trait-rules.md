@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ![](assets/manage-trait-rules.png)
 
-1. 该 **[!UICONTROL Expression Builder]** 或 **[!UICONTROL Code View]** 选项卡提供特征中规则的概述。 在选 **[!UICONTROL Expression Builder]** 项卡中，您可以使用字段和下拉菜单创建规则。 通 **[!UICONTROL Code View]** 过手动将这些表达式编写为代码，可以创建规则。 上图显示了一个简单特征，该特征由一个信号组成，该信号对符合条件的数据进行评估，在这种情况下，产品键等于特定值 `color == "blue"`。
+1. 该 **[!UICONTROL Expression Builder]** 或 **[!UICONTROL Code View]** 选项卡提供特征中规则的概述。 在选 **[!UICONTROL Expression Builder]** 项卡中，您可以使用字段和下拉菜单创建规则。 通过 **[!UICONTROL Code View]** 手动将这些表达式编写为代码，可以创建规则。 上图显示了一个简单特征，该特征由一个信号组成，该信号对符合条件的数据进行评估，在这种情况下，产品键等于特定值 `color == "blue"`。
 
 1. 本节中的字段和控件允许您从键值对创建信号，并使用比较运算符设置它们之间的关系。 键、运算符和值是必需的。
 1. 它 [!UICONTROL Data Explorer Options] 允许您回填信号的特征实现。
