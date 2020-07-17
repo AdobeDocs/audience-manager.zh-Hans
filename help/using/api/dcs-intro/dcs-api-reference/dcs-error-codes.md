@@ -159,22 +159,22 @@ In the tables below, *italics* represents a variable placeholder.
   <tr> 
    <td colname="col1"> <p>303 </p> </td> 
    <td colname="col2"> <p>阻止的客户ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>当客户ID被识别为恶意ID并已添加到密钥列表时返回。 </p> </td> 
+   <td colname="col3"> <p>当客户ID被识别为恶意ID并已添加到时阻止列表返回。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>304 </p> </td> 
    <td colname="col2"> <p>阻止的数据源ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>当数据源ID被识别为恶意ID并已添加到密钥列表时返回 </p> </td> 
+   <td colname="col3"> <p>当数据源ID被标识为恶意并已添加到时返阻止列表回 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>306 </p> </td> 
    <td colname="col2"> <p>已阻止声明的设备ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>设备ID已被标识为恶意ID，并已添加到密钥列表。在短时间内收到包含此设备ID的极 <span class="wintitle"> 量</span> DCS请求时，可能会发生这种情况。 </p> </td>
+   <td colname="col3"> <p>设备ID已被标识为恶意ID并已添加到阻止列表中。如果我们在短时间内收到包含此设备ID的极 <span class="wintitle"> 大量DCS</span> 请求，则可能会发生这种情况。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>307 </p> </td> 
    <td colname="col2"> <p>阻止用户档案操作 <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>已阻止读／写操作，因为ID已被标识为恶意，并已添加到密文列表。请参阅错误代码306。 </p> </td> 
+   <td colname="col3"> <p>已阻止读／写操作，因为ID已被标识为恶意，并已添加到程阻止列表序。请参阅错误代码306。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>309 </p> </td> 
