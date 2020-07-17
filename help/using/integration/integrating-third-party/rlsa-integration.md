@@ -9,7 +9,7 @@ feature: Third Party Integrations
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '334'
 ht-degree: 5%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 5%
     //googleads.g.doubleclick.net/pagead/viewthroughconversion/xxxxxxxx/?value=0&guid=ON&script=0&data=%ALIAS%
    ```
 
-1. 在Audience Manager [中，创建[!DNL URL目标]](../../features/destinations/create-url-destination.md) 或编辑现有 [!DNL destination]。 创建时，请使用以下设置 [!DNL destination]:
+1. 在Audience Manager [中 [!DNL URL destination]](../../features/destinations/create-url-destination.md) ，创建或编辑现有 [!DNL destination]。 创建时，请使用以下设置 [!DNL destination]:
    * 类型： URL
    * 序列化： 已启用
    * 分隔符： 分号(;)
@@ -72,7 +72,7 @@ ht-degree: 5%
 >[!MORELIKETHIS]
 >
 >* [[!DNL目标]](../../features/destinations/destinations.md)
->* [创建[!DNL URL目标]](../../features/destinations/create-url-destination.md)
+>* [创建一个 [!DNL URL Destination]](../../features/destinations/create-url-destination.md)
 >* [关于AdWords再营销列表](https://support.google.com/adwords/answer/2472738)
 >* [AdWords再营销的工作原理](https://support.google.com/adwords/answer/2454000)
 
