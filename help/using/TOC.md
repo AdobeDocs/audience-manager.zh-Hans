@@ -236,7 +236,7 @@ ht-degree: 94%
          + [DCS API 参考概述](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
          + [DCS API 方法](api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
          + [DCS 错误代码、消息和示例](api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
-         + [ID监控和密码列表](api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
+         + [ID监控和列入阻止列表](api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
          + [DCS 区域 ID、位置和主机名](api/dcs-intro/dcs-api-reference/dcs-regions.md)
          + [格式化 DCS 调用中的键值对](api/dcs-intro/dcs-api-reference/dcs-key-format.md)
          + [争用条件和错误处理](api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
