@@ -1,6 +1,6 @@
 ---
-description: Cookie目标在用户的浏览器中返回数据并将其写入Cookie。 Cookie包含可供有权访问页面的其他平台读取的数据。 按照以下说明使用[!UICONTROL目标生成器]创建Cookie目标。
-seo-description: Cookie目标在用户的浏览器中返回数据并将其写入Cookie。 Cookie包含可供有权访问页面的其他平台读取的数据。 按照以下说明使用[!UICONTROL目标生成器]创建Cookie目标。
+description: Cookie目标在用户的浏览器中返回数据并将其写入Cookie。 Cookie包含可供有权访问页面的其他平台读取的数据。 按照以下说明创建Cookie目标 [!UICONTROL Destination Builder]。
+seo-description: Cookie目标在用户的浏览器中返回数据并将其写入Cookie。 Cookie包含可供有权访问页面的其他平台读取的数据。 按照以下说明创建Cookie目标 [!UICONTROL Destination Builder]。
 seo-title: 配置 Cookie 目标
 solution: Audience Manager
 title: 配置 Cookie 目标
@@ -8,7 +8,7 @@ feature: Destination Basics
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '608'
 ht-degree: 3%
 
 ---
