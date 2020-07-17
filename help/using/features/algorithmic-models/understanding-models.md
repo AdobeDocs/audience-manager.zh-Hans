@@ -63,7 +63,7 @@ ht-degree: 1%
 
 ### 第3步： 分配权重
 
-在这一步中，按 [!UICONTROL TraitWeight] 照影响力 [!UICONTROL traits] 或期望性对新发现的数据进行排名。 权重比例从0%到100%。 [!UICONTROL Traits] 排名接近100%意味着它们更像基线人口中的受众。 此外，权重过大 [!UICONTROL traits] 也很有价值，因为它们代表的是新的、独特的用户，他们的行为可能与您已建立的基准受众相似。 请记住， [!UICONTROL TraitWeight] 在基 [!UICONTROL traits] 线中具有高的通用性，在比较的数据源中具有高的专一性，这比在每个数据集中 [!UICONTROL traits] 都具有更高的价值。
+在这一步中，按 [!UICONTROL TraitWeight] 照影响力或 [!UICONTROL traits] 期望性对新发现的内容进行排名。 权重比例从0%到100%。 [!UICONTROL Traits] 排名接近100%意味着它们更像基线人口中的受众。 此外，权重过大 [!UICONTROL traits] 也很有价值，因为它们代表的是新的、独特的用户，他们的行为可能与您已建立的基准受众相似。 请记住， [!UICONTROL TraitWeight] 在基 [!UICONTROL traits] 线中具有高的通用性，在比较的数据源中具有高的专一性，这比在每个数据集中 [!UICONTROL traits] 都具有更高的价值。
 
 ### 第4步： 评分用户
 
