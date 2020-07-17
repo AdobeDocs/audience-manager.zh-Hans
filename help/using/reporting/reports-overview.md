@@ -21,7 +21,7 @@ ht-degree: 13%
 
 * [Audience Optimization 报表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
 
-   报 [!UICONTROL Audience Optimization] 表使用数据可视化方法返回Audience Manager帐户中目标的相关信息。 在每个报告中，您几乎可以单击任何数据点，返回有关该项目的详细信息。 这些受众优化洞察可应用于广告和出版渠道的多个用例，但默认情况下不可用。 请与Audience Manager顾问联系以开始。
+   报 [!UICONTROL Audience Optimization] 表使用Audience Manager可视化方法返回有关您的数据帐户中目标的信息。 在每个报告中，您几乎可以单击任何数据点，返回有关该项目的详细信息。 这些受众优化洞察可应用于广告和出版渠道的多个用例，但默认情况下不可用。 请与Audience Manager顾问联系以开始。
 
 * [常规报表](/help/using/reporting/general-reports.md)
 
