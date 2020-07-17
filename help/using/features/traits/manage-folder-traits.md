@@ -30,7 +30,8 @@ ht-degree: 9%
 1. 在窗口 [!UICONTROL Trait Storage] 中，将鼠标悬停在：
 
    * 添加新根级别文件夹的“所有特征”文本。
-   * 要添加新从属文件夹的现有父文件夹。
+   * 要添加新的下属文件夹的现有父文件夹。
+
    ![](assets/folder_traits_create.PNG)
 
 1. 单击“+”图标可创建此文件夹。请注意，在分类中最多可创建 2,000 个文件夹。请参阅[使用限制](../../features/administration/usage-limits.md)文档，以了解更多信息。
