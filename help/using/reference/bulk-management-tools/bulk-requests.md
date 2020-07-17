@@ -43,6 +43,7 @@ t_bulk_requests.xml
    * 算法、基于规则和载入的特征
    * 区段
    * 特征和段文件夹ID
+
    API [!DNL Audience Manager] 将批量数据写回工作 [!UICONTROL Request] 表。
 
 >[!NOTE]
