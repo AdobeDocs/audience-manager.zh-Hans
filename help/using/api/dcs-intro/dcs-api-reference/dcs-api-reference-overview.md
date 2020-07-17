@@ -25,9 +25,9 @@ ht-degree: 13%
 
    由按代码ID以数字顺序列出的数据收集服务器(DCS)生成的错误代码和消息。
 
-* [ID监控和密码列表](/help/using/api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
+* [ID监控和列入阻止列表](/help/using/api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
 
-   DCS监视其接收的ID，并将短时间内以异常高速率发送的ID添加到拒绝列表。
+   DCS监视它接收的ID，并将短时间内以异常高速率发送的ID添加到阻止列表。
 
 * [DCS 区域 ID、位置和主机名](/help/using/api/dcs-intro/dcs-api-reference/dcs-regions.md)
 
