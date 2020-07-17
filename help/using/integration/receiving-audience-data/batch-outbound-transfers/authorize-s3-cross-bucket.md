@@ -19,4 +19,4 @@ ht-degree: 14%
 
 对于 [!UICONTROL Outbound Data Transfer] 使用() [!DNL Amazon Simple Storage Service] 的客户，该流程[!DNL Amazon S3]要求我们请求您的访问密钥和 [!DNL Amazon S3] 密钥，以便将出站数据文件传送到您的存储桶。
 
-如果您不想与我们共享您 [!DNL Amazon S3] 的访问密钥和密钥，请与您的顾 [!DNL Audience Manager] 问或客户服务部门联系，他们会为您 [!DNL Cross-Account Bucket Permissions] 设置。 您只需将我们的帐 [!DNL Amazon S3] 户ID添加到要接收出站数据 [!DNL S3] 文件的存储段的允许列表，如Amazon S3文 [档中所述](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-walkthroughs-managing-access-example2.html)。 您 [!DNL Audience Manager] 的顾问或客户关怀将为您提供我们的 [!DNL Amazon S3] 帐户ID。
+如果您不想与我们共享您 [!DNL Amazon S3] 的访问密钥和密钥，请与您的顾 [!DNL Audience Manager] 问或客户服务部门联系，他们会为您 [!DNL Cross-Account Bucket Permissions] 设置。 您只需将我们的 [!DNL Amazon S3] 帐户ID添加到存储段的允许列表 [!DNL S3] 中，即可接收出站数据文件，如Amazon S3 [文档中所述](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-walkthroughs-managing-access-example2.html)。 您 [!DNL Audience Manager] 的顾问或客户关怀将为您提供我们的 [!DNL Amazon S3] 帐户ID。
