@@ -39,7 +39,7 @@ ht-degree: 5%
 
 1. 在窗口 [!UICONTROL Trait Storage] 中，将鼠标悬停在：
    * **[!UICONTROL All Traits]** 添加新的根级别文件夹。
-   * 要添加新从属文件夹的现有父文件夹。
+   * 要添加新的下属文件夹的现有父文件夹。
 1. 单击“+”图标可创建此文件夹。
 1. 命名文件夹并单击 **[!UICONTROL Save]**。
 
