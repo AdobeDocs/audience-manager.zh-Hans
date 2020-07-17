@@ -21,7 +21,7 @@ ID服务客户应参阅本节，了解如何读取访客cookie以获取进行API
 
 ## 从ID服务Cookie获取用户ID {#get-user-ids-from-service-cookie}
 
-Adobe Experience Platform [身份服务](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html) ，会为访问您网站的用户分配访客和区域ID。 这些ID可识别中所有解决方案中的 [!DNL Experience Cloud] 用户，如果您要拨叫，则需要这些 [!DNL DCS] ID。
+Adobe Experience Platform [身份服务](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html) ，会为访问您网站的用户分配访客和区域ID。 这些ID可识别中所有解决方案中的 [!DNL Experience Cloud] 用户，如果您要拨打电话，则需要这些 [!DNL DCS] ID。
 
 * 需要 [!UICONTROL user ID] 识别数据并将其与特定访客关联。
 * 此 [!UICONTROL region ID] 项是必需的，因为它绑定到区域服务器名称，您需要将数据发送到该服务器 [!DNL DCS]。 在地理 [!DNL DCS] 上最接近站点访客的数据中心中存储信息。 请参阅 [DCS 区域 ID、位置和主机名](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
