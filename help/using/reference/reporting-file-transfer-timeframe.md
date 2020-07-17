@@ -37,7 +37,7 @@ c_reporting_file_transfer_timeframe.xml
 
 ## 入站和出站文件传输 {#inbound-outbound-file-transfers}
 
-[!DNL Audience Manager] 根据本节所述的计划 [!UICONTROL Server-to-Server (S2S)] 处理和发送入站和出站文件传输。 鉴于这些计划和中断时间，您可能会发现实时区段数和总区段数之间的新区段存在差异。
+[!DNL Audience Manager] 根据本节所述的计划 [!UICONTROL Server-to-Server (S2S)] 处理和发送入站和出站文件传输。 鉴于这些计划和中断时间，您可能会发现实时区段数与总区段数之间的新区段存在差异。
 
 | 文件类型 | 描述 |
 |---|---|
