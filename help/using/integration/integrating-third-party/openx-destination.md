@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ## OpenX目标要求 {#openx-requirements}
 
-代码放置标准、支持的键值格式、报告以及发送到的段数据类型 [!DNL OpenX]。
+代码放置标准、支持的键值格式、报告以及发送到的细分数据类型 [!DNL OpenX]。
 
 <!-- aam-openx-requirements.xml -->
 
