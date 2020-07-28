@@ -7,10 +7,10 @@ title: DCS 错误代码、消息和示例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 11b79d46e7358c736c797bcf0809af4937717fc5
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 3%
+source-wordcount: '1518'
+ht-degree: 4%
 
 ---
 
@@ -23,22 +23,22 @@ In the tables below, *italics* represents a variable placeholder.
 
 ## 系统错误代码 {#system-error-codes}
 
-|错误代码|错误消息|说明|
-|—|—|—|
-|0|未指定错误|这是处理其他错误处理程序未涵盖的事件的全部捕获错误。 很难对此错误进行故障诊断。 它可能由各种未知的操作或事件引起。 如果收到此错误，请重试 [!DNL DCS] 您的请求。 如果问题 [!DNL Adobe] 仍然存在，请与您的代表联系。|
-|1|找不到主机名的配置： `hostname`|我们的合作伙伴供应团队尚未设置请求中发送的主机名。 如果您看 [!DNL Adobe] 到此错误消息，请与您的代表联系。|
-|2|无效 `d_orgid` 值（找不到此组织ID的配置）: `ID`|组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页”部分组 [织和帐户链接](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html) ，以了解如何查找它。|
+| 错误代码 | 错误消息 | 描述 |
+|---|---|---|
+| 0 | 未指定错误 | 这是一个全部捕获错误，它处理其他错误处理程序未覆盖的事件。 很难对此错误进行故障诊断。 它可能由各种未知的操作或事件引起。 如果收到此错误，请重试 [!DNL DCS] 您的请求。 如果问题 [!DNL Adobe] 仍然存在，请与您的代表联系。 |
+| 1 | 找不到主机名的配置： `hostname` | 我们的合作伙伴供应团队尚未设置请求中发送的主机名。 如果您看 [!DNL Adobe] 到此错误消息，请与您的代表联系。 |
+| 2 | 无效 `d_orgid` 值（找不到此组织ID的配置）: `ID` | 组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页”部分组 [织和帐户链接](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html) ，以了解如何查找它。 |
 
 ## 集成错误代码 {#integration-error-codes}
 
-|错误代码|错误消息|说明|
-|—|—|—|
-|100|无法检索请求的主机名| [!DNL API] 调用未发送请求中 [!DNL HTTP] 的主机头。 将主机头添加到呼叫，然后重试。 大多数浏览器 [!DNL API] 和客户端都自动执行此操作。 |
-|101|传入 [!DNL Experience Cloud] 的ID无效 `ID`|调 [!DNL DCS] 用包含无效 [!DNL Experience Cloud] ID。 检查标 `d_mid=` 题字符串中的键值对。 请确保您传递的ID正 [!DNL Experience Cloud] 确，然后重试请求。 |
-|102|在请求 [!DNL AAM ID] 中传递无效 `ID`|调 [!DNL DCS] 用包含无效 [!DNL Audience Manager] ID。 检查标 `d_uuid=` 题字符串中的键值对。 请确保您传递的ID正 [!DNL Audience Manager] 确，然后重试请求。 |
-|104|所有客户ID无效 |您呼叫中的所有客户ID都无效。 请检查您的ID，然后重试。|
-|109|合作伙 `HTTP referer` 伴不允许引用 `Partner ID`|呼 `HTTP referer` 叫上的标头不允许用于呼叫上的合作伙伴ID。 检查标题 `HTTP referer` 是否正确。|
-|111|收到的 `IMS` 令牌无效|已返回 [!DNL Audience Manager] -集 [!DNL Adobe Target] 成。 对包含无效令牌的调用 [!DNL DCS]时引发错 [!DNL IMS] 误。 令牌可能格式不正确、已过期，或者用户可能无权访问所需的资源。|
+| 错误代码 | 错误消息 | 描述 |
+|---|---|---|
+| 100 | 无法检索请求的主机名 | 呼 [!DNL API] 叫未在请求中发 [!DNL HTTP] 送主机头。 将主机头添加到呼叫，然后重试。 大多数浏览器 [!DNL API] 和客户端都自动执行此操作。 |
+| 101 | 传入 [!DNL Experience Cloud] 的ID无效 `ID` | 调 [!DNL DCS] 用包含无效 [!DNL Experience Cloud] ID。 检查标 `d_mid=` 题字符串中的键值对。 请确保您传递的ID正 [!DNL Experience Cloud] 确，然后重试请求。 |
+| 102 | 传入 [!DNL AAM ID] 的请求无效 `ID` | 调 [!DNL DCS] 用包含无效 [!DNL Audience Manager] ID。 检查标 `d_uuid=` 题字符串中的键值对。 请确保您传递的ID正 [!DNL Audience Manager] 确，然后重试请求。 |
+| 104 | 所有客户ID无效 | 您呼叫中的所有客户ID都无效。 请检查您的ID，然后重试。 |
+| 109 | 合作 `HTTP referer` 伙伴不允许引用者 `Partner ID` | 呼 `HTTP referer` 叫上的标头不允许用于呼叫上的合作伙伴ID。 检查标题 `HTTP referer` 是否正确。 |
+| 111 | 收到 `IMS` 的令牌无效 | 返回 [!DNL Audience Manager] -集 [!DNL Adobe Target] 成。 对包含无效令牌的调用 [!DNL DCS]时引发错 [!DNL IMS] 误。 令牌可能格式不正确、已过期，或者用户可能未获得访问所需资源的授权。 |
 
 ## 退出错误代码 {#opt-out-error-codes}
 
