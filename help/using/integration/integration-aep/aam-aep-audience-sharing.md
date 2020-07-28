@@ -7,10 +7,10 @@ title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 37b0cf4059b8b44329103eb69d611279c52e8236
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 4%
+source-wordcount: '1442'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> 请联系您的Adobe销售代表以解锁对此功能的访问权限。
+> 请与Adobe销售代表联系以解锁对此功能的访问权限。
 
 ## 概述 {#overview}
 
@@ -40,7 +40,7 @@ ht-degree: 4%
 
 | **用例** | **Adobe Experience Platform** | **Audience Manager** | **核心服务** |
 ---------|----------|---------|---------
-| **受众共享** | <ul><li>利用Audience Manager数据丰富客户用户档案</li><li>在Audience Manager细分中使用Experience Platform数据</li></ul> | <ul><li>将第三方数据添加到区段</li><li>算法建模</li><li>激活到其他目标</li></ul> | 在Adobe Target或Analytics等其他Experience Cloud解决方案中使用Experience Platform细分。 |
+| **受众共享** | <ul><li>利用Audience Manager数据丰富客户用户档案</li><li>在Audience Manager细分中使用Experience Platform数据</li></ul> | <ul><li>将第三方数据添加到区段</li><li>算法建模</li><li>激活到其他目标</li></ul> | 在其他Experience Platform解决方案(如Adobe Target或Analytics)中使用Experience Cloud细分。 |
 
 <br> 
 
@@ -56,9 +56,17 @@ ht-degree: 4%
 
 ## Adobe Experience Platform细分Audience Manager {#aep-segments-in-aam}
 
-您在Experience Platform中创建的区段在Audience Manager界面中以特征和区段的形式显示，并包含以下构成规则：
+您在Experience Platform中创建的区段在Audience Manager界面中以信号、特征和区段的形式显示，并包含以下构成规则：
+
+* 信号： 对于每个Experience Platform段，您应在表单中看到信号 `segID = segment ID`。
 * 特征： 特征规则是Experience Platform段的ID。
 * 细分： 段由上述特征组成。
+
+### 信号 {#aep-segments-as-aam-signals}
+
+选 **[!UICONTROL Audience Data > Signals > General Online Data]** 择并搜索 `SegId` 以查找来自Experience Platform的信号。 您可以将此屏幕用于调试目的，检查Experience Platform和Audience Manager之间的集成是否已正确设置。
+
+![在信号Experience Platform中查看Audience Manager信号](/help/using/integration/integration-aep/assets/aep-signals-in-aam.png)
 
 ### 特征 {#aep-segments-as-aam-traits}
 
@@ -133,10 +141,38 @@ Audience Manager会在您的区段Experience Platform中自 **动创建名为** 
 
 ## 了解Audience Manager和Experience Platform之间的细分群体差异
 
-细分人口数可能因Audience Manager和Experience Platform细分而异。 虽然相似或相同受众的细分数应接近，但人口差异可能是由于：
+细分人口数可能因Audience Manager和Experience Platform细分而异。 虽然相似或相同受众的细分数应接近，但人口差异可能是由于以下所列因素造成的。
 
-* 分段作业运行时间。 Audience Manager每天运行一次分段作业来更新接口中的数字。 此作业很少与Experience Platform中的分段作业保持一致。
-* [用户档案合并规则](/help/using/features/profile-merge-rules/merge-rules-overview.md) 和Audience Manager合 [并策略中的合](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) 并规则工作方式不同，每个Experience Platform使用的标识图形也不同。 因此，预计细分群体之间会有一些差异。
+### Experience Platform中的细分评估
+
+Audience Manager每天更新接口中的报告号一次。   此更新的时间与Experience Platform中的细分评估时间很不一致。
+
+### 用户档案合并规则与合并策略之间的差异
+
+[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) 在Audience Manager和 [合并策略中](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) ,Experience Platform的工作方式不同，每个使用的标识图也不同。 因此，预计细分群体之间会有一些差异。
+
+### Experience Platform中的细分组成
+
+Adobe Experience Platform和Audience Manager之间的集成共享了适用于所有客 [户的许多标](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types) 准身份命名空间: ECID、IDFA、GAID、散列电子邮件地址(EMAIL_LC_SHA256)、AdCloud ID，等等。 如果您的Experience Platform区段将其中任何一个用作合格用户档案的主要标识，则用户档案计入Audience Manager特征和区段。
+
+此外，Audience Manager可以为您在Experience Platform段中使用的任何自定义标识命名空间注册传入的实现，前提是您已经在键入该标识符的Audience Manager中具有相应的数据源。
+
+>[!NOTE]
+>
+> 受众在Experience Platform中，与原始电子邮件关联的身份永远不会出现在Audience Manager中。
+
+例如，如果您有一个Experience Platform区段“我的所有客户”，且符合条件的用户档案将是CRM ID、ECID、IDFA、原始和散列电子邮件地址，则Audience Manager中的相应区段将仅包括已键入CRM ID、ECID、IDFA和散列电子邮件地址的用户档案。 Audience Manager的细分人口将比Experience Platform的细分人口少。
+
+![Experience Platform至Audience Manager分部分享——分部组成](/help/using/integration/integration-aep/assets/AEP-to-AAM-profiles.png)
+
+<!--
+
+If you created a data source in Audience Manager for the CRM IDs in Experience Platform, then the qualified profiles keyed off those CRM IDs would appear in Audience Manager and the segment population in Audience Manager would increase.
+
+![AEP to AAM segment sharing - segment composition after creating a data source for CRM IDs in Audience Manager](/help/using/integration/integration-aep/assets/AEP-to-AAM-identities2.png)
+
+-->
+
 
 >[!MORELIKETHIS]
 >
