@@ -7,9 +7,9 @@ title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 37b0cf4059b8b44329103eb69d611279c52e8236
+source-git-commit: 4f76bbd6f7c2f1866954bbbf14e8987dc3384c47
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1441'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## 概述 {#overview}
 
-受众和Adobe Experience Platform之间的Audience Manager共享功能允许您将Audience Manager特征和区段共享到Adobe Experience Platform，反之亦然。 您需要Audience Manager [连接器](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，以启用Audience Manager和Adobe Experience Platform之间的受众共享。
+受众和Adobe Experience Platform之间的Audience Manager共享功能允许您将Audience Manager特征和区段共享到Adobe Experience Platform，反之亦然。 您需要[ [!DNLAudience Manager连接器]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，以启用Audience Manager和Adobe Experience Platform之间的受众共享。
 
 您可以在Experience Platform中使用Audience Manager特征和细分，向客户用户档案添加Audience Manager数据并从Experience Platform细分服务 [中受益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)。
 
@@ -149,7 +149,7 @@ Audience Manager每天更新接口中的报告号一次。   此更新的时间�
 
 ### 用户档案合并规则与合并策略之间的差异
 
-[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) 在Audience Manager和 [合并策略中](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) ,Experience Platform的工作方式不同，每个使用的标识图也不同。 因此，预计细分群体之间会有一些差异。
+[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) 在Audience Manager和 [[!UICONTROL Merge Policies]](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) Experience Platform中，工作方式各不相同，每个人使用的标识图也各不相同。 因此，预计细分群体之间会有一些差异。
 
 ### Experience Platform中的细分组成
 
