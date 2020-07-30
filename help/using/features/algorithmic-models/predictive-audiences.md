@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 1be20c2412a272e6374b8b84e6a5c1628da18497
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 9%
+source-wordcount: '1530'
+ht-degree: 8%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 9%
 
 1. 首先，您至少选择两个特征或两个将定义您角色的区段。
 1. 然后，选择一个特征或区段，它定义要分类的目标受众。
-1. 最后，为模型选择一个名称，并选择将存储预测段的数据源。
+1. 最后，为模型选择一个名称、将存储预测段的数据源以及 [!UICONTROL Profile Merge Rule] 模型的名称。
 
 ### 角色的选择标准 {#selection-personas}
 
@@ -75,13 +75,17 @@ ht-degree: 9%
 
 * 选择您的人物特征或区段，以便每个人物至少拥有几百个 [设备ID](../../reference/ids-in-aam.md)。
 * 如果您的特征基于 [跨设备ID](../../reference/ids-in-aam.md)，则可以使用使用设备ID的 [用户档案合并规则](../profile-merge-rules/merge-rules-overview.md) (例 [如](../../reference/ids-in-aam.md))将其包 [!UICONTROL Device Graph]含在区段中。 这将确保有足够 [的设备](../../reference/ids-in-aam.md) ID可供算法学习。
-* 我们建议为您的个人选择特征或简单区段，由1到3个特征组成。
+* 我们建议您为角色选择特征或简单的细分，包括1到3个特征。
 * 选择重叠最小的基线特征或区段。
 * 确保在您的数字资产中捕获粒度特征。
 
 ### 目标受众的选择标准 {#selection-audience}
 
-与人物选择类似，您应选择特征或区段来定义您的目标受众，使其具有具有丰富特征集的实时用户，以便将其分类到正确的人物。
+与人物选择类似，您应选择您的目标 [!UICONTROL trait] 受众或定义您的，以使其拥有具有丰富集合的实时用户，以便将其分类到正确 [!UICONTROL segment][!UICONTROL traits]的人物中。
+
+选择目标受众时，分析您的用例并确定要分类的ID类型： [!UICONTROL device IDs] 或 [!UICONTROL cross-device IDs]者 在 [!UICONTROL Profile Merge Rule] 创建模型时选择的数据定义将每个用户放入预测中的数据 [!UICONTROL segments]。
+
+作为最佳实践，我们建议选择 [!UICONTROL Profile Merge Rule] 与目标受众配置相同的，或 [!UICONTROL Profile Merge Rule]者选择包含目标受众的用户档案类型(设备用户档案或验证用户档案)的。
 
 ### [!UICONTROL Predictive Audiences] 模型培训阶段 {#model-training}
 
@@ -110,9 +114,9 @@ ht-degree: 9%
 * 目前不支持第二方和第三方数据 [!UICONTROL Predictive Audiences]。
 * 受众分类只针对实时的第一方受众。 载入的第一方受众分类在将来的更新中可能受支持。
    >[!IMPORTANT]
-   > 当前，预 [!UICONTROL Total Segment Population] 测区段显示为0，不支 [持批出站数据传输](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) 。 [!UICONTROL Predictive Audiences]此行为将在以后的更新中发生更改。
+   > 目前，只能在实时目标中激活预测细分。 预 [!UICONTROL Total Segment Population] 测区 [!UICONTROL Addressable Audience] 段和预测区段显示为0，不支 [持批出站数据传输](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)[!UICONTROL Predictive Audiences]。 此行为将在以后的更新中发生更改。
 * [!UICONTROL Predictive Audiences] 根据您的第一方特征从所有第一方数据源执行受众分类。
-* 区段评估 [!UICONTROL Predictive Audiences] 使用您在 **[!UICONTROL Profile Merge Rule]** 帐户中定义的默认值。 要了解有关详细信 [!UICONTROL Profile Merge Rules] 息，请参阅专 [用文档](../profile-merge-rules/merge-rules-overview.md)。
+* 针对的细分 [!UICONTROL Predictive Audiences] 评估使用 **[!UICONTROL Profile Merge Rule]** 在创建模型时选择的。 要了解有关详细信 [!UICONTROL Profile Merge Rules] 息，请参阅专 [用文档](../profile-merge-rules/merge-rules-overview.md)。
 * 某些特征和区段不支持作为基准或目标受众。 [!UICONTROL Predictive Audiences] 当选择以下某项作为基准或目标受众时，模型将无法保存：
    * 利用预测特征创建的预测特征和细分；
    * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) 特征或细分；
@@ -124,11 +128,23 @@ ht-degree: 9%
 由模型创建的 [!UICONTROL Predictive Audiences] 预测区段 [会从以下第一方](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html) 数据源继承“数据导出控制”:
 
 1. 在构建模型时选择的第一方数据源。
-1. 您的目标受众的第一方数据源。 具体而言，数据导出控制构成您的目标受众的特征或区段。
+1. 您的目标受众的第一方数据源。 具体而言，构成目标 [!UICONTROL traits] 受众的 [!UICONTROL segments] 数据导出控制。
+1. 为 [模型选择](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)[!UICONTROL Profile Merge Rule] 的“数据导出控件”。
 
-新创建的预测特征和区段将具有与上述第一方数据源的合并相同的隐私限制。
+新创建的预 [!UICONTROL traits] 测性 [!UICONTROL segments] 和将具有与上述第一方数据源的合并相同的隐私限制。
 
 具有不属于区段隐私限制的其他限 [!UICONTROL Predictive Audiences] 制的特征将被排除在培训阶段，并且不会对模型产生影响。
+
+## [!UICONTROL Profile Merge Rules] {#pmr}
+
+创建模型时，将为所 [!UICONTROL Profile Merge Rule] 有预测区段分配您选择的。 您选 [!UICONTROL Profile Merge Rule] 择的选项很重要，原因如下：
+
+* 它定义当模型分析影响时，在将用户分类为预测时，应 [!UICONTROL traits]当考虑哪些设备和／或认证用户档案 [!UICONTROL segment]。
+* 它控制模 [!UICONTROL trait] 型培训步骤中应使用的类型（设备级别或跨设备级别），并呈现为具有影响力的 [!UICONTROL traits]。 预测 [!UICONTROL segments] 是目标受众的子集。
+   * 如果目标受众是区段，我们建议您为模型选 [!UICONTROL Profile Merge Rule] 择与分配给目标受众的相同的模型，或 [!UICONTROL Profile Merge Rule] 者选择包含目标受众的用户档案类型。
+   * 如果目标是 [!UICONTROL trait]受众，我们建议您选择一 [!UICONTROL Profile Merge Rule] 个能够访问与目标受众特征(设备用户档案数据或跨设备用户档案数据)相同类型的数据。
+
+选择同 [!UICONTROL Profile Merge Rule] 时使用设备数据和跨设备数据的设备，可将模型 [!UICONTROL traits] 培训和用户分类可用的数量最大化，并将其用于预测 [!UICONTROL segments]。
 
 ## [!UICONTROL Role-Based Access Controls] {#rbac}
 
