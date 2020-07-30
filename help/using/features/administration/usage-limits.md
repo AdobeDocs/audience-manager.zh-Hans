@@ -8,9 +8,9 @@ keywords: ID mapping, ID mappings, cookie mappings
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 feature: Usage and Billing
 translation-type: tm+mt
-source-git-commit: aa583c0f2f8883249d7e8038b7bf2fb4c8951962
+source-git-commit: 7d2f4b45ac3e45c9b4fcaffa4b5c5324ff03e683
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '575'
 ht-degree: 6%
 
 ---
@@ -69,7 +69,7 @@ Audience Manager对您可以为帐户创建的特征、区段、目标和算法�
 | [!UICONTROL Look-Alike Models] 最大受众大小 | 25,000,000.  请注意，此限制无法增加。 您可以通过为模型选择较少的数据源或选择较短的回顾窗口来减少受众大小。 |
 | 被排除的特征的最大数量 [!UICONTROL Look-Alike Model] | 500.请参见 [算法建模中的特征排除](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md)。 |
 | 最低 [!UICONTROL Predictive Audiences Models] | 10 |
-| 模型的最大基准角色数 [!UICONTROL Predictive Audiences] 量 | 50 |
+| 基准角色的最大数量 [!UICONTROL Predictive Audiences Models] | 50 |
 
 ### 文件夹限制
 
