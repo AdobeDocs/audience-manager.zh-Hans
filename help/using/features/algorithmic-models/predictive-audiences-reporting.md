@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 29a2e0ec7859bec5658218fb5095b7bac74a3371
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 6%
@@ -34,7 +34,7 @@ ht-degree: 6%
    * **[!UICONTROL Pending]**: 模型正在初始化，很快将开始产生结果；
    * **[!UICONTROL Active]**: 模型运行成功，取得了良好效果；
    * **[!UICONTROL Warning]**: 由于数据不足(即基线数量低，用户用户档案不丰富)，模型无法产生结果；
-   * **[!UICONTROL Error]**: 模型无法运行。 您应联系您的Adobe代表。
+   * **[!UICONTROL Error]**: 模型无法运行。 您应联系Adobe代表。
 
 ## 模型概述报告{#model-report}
 
