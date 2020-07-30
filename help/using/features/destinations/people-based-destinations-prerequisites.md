@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 先决条件和注意事项
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: f9e6aedb408db218c548f469330ece584db75853
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 4%
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 [!UICONTROL People-Based Destinations] 是一项高级功能，允许您在基于人的环境中激活第一方Audience Manager细分，通过社交网络或电子邮件营销定位受众，从而增强受众体验。
 
-请联系Adobe代表以利用此高级功能。
+请联系您的Adobe代表以利用此高级功能。
 
 ## 特定于合作伙伴的先决条件 {#partner-prerequisites}
 
@@ -81,7 +81,7 @@ ht-degree: 4%
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud可让您选择通过散列客户ID [!DNL Adobe Experience Platform Identity Service (ECID)]。 有关 [如何使用ECID对客户ID进行散列处理](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) ，请参阅SHA256 Hashing Support for setCustomerIDs，以了解详细信息。
+Adobe Experience Cloud允许您通过散列客户ID [!DNL Adobe Experience Platform Identity Service (ECID)]有关 [如何使用ECID对客户ID进行散列处理](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) ，请参阅SHA256 Hashing Support for setCustomerIDs，以了解详细信息。
 
 ## 获取用户权限 {#obtaining-user-permission}
 
