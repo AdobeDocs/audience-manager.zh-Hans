@@ -7,7 +7,7 @@ title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 4f76bbd6f7c2f1866954bbbf14e8987dc3384c47
+source-git-commit: abe2a63c2ee9ad1028dac0a69ecb006a0fbdd029
 workflow-type: tm+mt
 source-wordcount: '1441'
 ht-degree: 3%
@@ -150,6 +150,7 @@ Audience Manager每天更新接口中的报告号一次。   此更新的时间�
 ### 用户档案合并规则与合并策略之间的差异
 
 [[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) 在Audience Manager和 [[!UICONTROL Merge Policies]](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) Experience Platform中，工作方式各不相同，每个人使用的标识图也各不相同。 因此，预计细分群体之间会有一些差异。
+
 
 ### Experience Platform中的细分组成
 
