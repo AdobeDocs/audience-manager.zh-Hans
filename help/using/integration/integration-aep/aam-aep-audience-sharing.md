@@ -7,7 +7,7 @@ title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: f9e6aedb408db218c548f469330ece584db75853
+source-git-commit: db4706673b72980652942e23d83ae5cf180972e9
 workflow-type: tm+mt
 source-wordcount: '1441'
 ht-degree: 3%
@@ -137,9 +137,9 @@ Audience Manager会在您的区段Experience Platform中自 **动创建名为** 
 | 此目标可能启用与个人身份信息(PII)的组合 | 与PII结合 |
 | 此目标可用于非现场广告定位 | 跨站点定位 |
 | 此目标可用于现场广告定位 | 现场广告 |
-| 此目标可用于在线广告个性化 | Onsite Personalization |
+| 此目标可用于在线广告个性化 | 现场个性化 |
 
-## 了解Audience Manager和Experience Platform之间的细分群体差异
+## 了解Audience Manager和Experience Platform之间的细分群体差异 {#aep-aam-segment-population-differences}
 
 细分人口数可能因Audience Manager和Experience Platform细分而异。 虽然相似或相同受众的细分数应接近，但人口差异可能是由于以下所列因素造成的。
 
