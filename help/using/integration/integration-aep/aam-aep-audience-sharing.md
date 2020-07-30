@@ -7,7 +7,7 @@ title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: abe2a63c2ee9ad1028dac0a69ecb006a0fbdd029
+source-git-commit: f9e6aedb408db218c548f469330ece584db75853
 workflow-type: tm+mt
 source-wordcount: '1441'
 ht-degree: 3%
@@ -137,7 +137,7 @@ Audience Manager会在您的区段Experience Platform中自 **动创建名为** 
 | 此目标可能启用与个人身份信息(PII)的组合 | 与PII结合 |
 | 此目标可用于非现场广告定位 | 跨站点定位 |
 | 此目标可用于现场广告定位 | 现场广告 |
-| 此目标可用于在线广告个性化 | 现场个性化 |
+| 此目标可用于在线广告个性化 | Onsite Personalization |
 
 ## 了解Audience Manager和Experience Platform之间的细分群体差异
 
@@ -150,7 +150,6 @@ Audience Manager每天更新接口中的报告号一次。   此更新的时间�
 ### 用户档案合并规则与合并策略之间的差异
 
 [[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) 在Audience Manager和 [[!UICONTROL Merge Policies]](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) Experience Platform中，工作方式各不相同，每个人使用的标识图也各不相同。 因此，预计细分群体之间会有一些差异。
-
 
 ### Experience Platform中的细分组成
 
