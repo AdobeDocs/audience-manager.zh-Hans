@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 71e129a39cf85d5f07979ede8f3aa862f93b6512
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '492'
 ht-degree: 8%
 
 ---
@@ -39,9 +39,10 @@ ht-degree: 8%
    ![smart-persona-select-受众](assets/predictive-audiences-audience.png)
 1. 选 **[!UICONTROL Next]** 择受众后单击。
 1. 填写模型详细信息：
-   1. **[!UICONTROL Model Name]**: 为模型输入描述性名称，以帮助您稍后识别它。 由模型生成的段名称将与模型名称开始。
-   2. **[!UICONTROL Description]**: 输入有助于识别其用例的模型描述。
-   3. **[!UICONTROL Data Source]**: 选择您希望将此模型中的区段分 [!UICONTROL Predictive Audiences] 配给的第一方数据源。
+   * **[!UICONTROL Model Name]**: 为模型输入描述性名称，以帮助您稍后识别它。 由模型生成的段名称将与模型名称开始。
+   * **[!UICONTROL Description]**: 输入有助于识别其用例的模型描述。
+   * **[!UICONTROL Data Source]**: 选择您希望将此模型中的区段分 [!UICONTROL Predictive Audiences] 配给的第一方数据源。
+   * **[!UICONTROL Profile Merge Rule]**: 为此模 [!UICONTROL Profile Merge Rule] 型创建的所有预测 [!UICONTROL segments] 值选择要分配的值。 如果您选择的目标 [!UICONTROL segment]受众为，我们建议选择与 [!UICONTROL Profile Merge Rule] 目标受众相同的。
       ![预测受众保存](assets/predictive-audiences-save.png)
 1. 单击 **[!UICONTROL Save]**.
 
