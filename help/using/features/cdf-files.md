@@ -8,9 +8,9 @@ title: 客户数据信息源
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 feature: Customer Data Feeds
 translation-type: tm+mt
-source-git-commit: 670356016a7d8256af2e475d0aef49e1156f82e6
+source-git-commit: 9b17925f9759a7f47629032182b367cf612bebbc
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1922'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 # [!UICONTROL Customer Data Feeds] {#customer-data-feeds}
 
-Basic information about [!UICONTROL Customer Data Feed] ([!UICONTROL CDF]) files and instructions on how to get started. 开始此处，如果您对接收文件感 [!UICONTROL CDF] 兴趣或只想了解更多信息。
+有关()文 [!UICONTROL Customer Data Feed] 件的[!UICONTROL CDF]基本信息以及如何入门的说明。 开始此处，如果您对接收文件感 [!UICONTROL CDF] 兴趣或只想了解更多信息。
 
 ## 文件内容和用途 {#file-contents-purpose}
 
@@ -26,15 +26,15 @@ Basic information about [!UICONTROL Customer Data Feed] ([!UICONTROL CDF]) files
 
 >[!IMPORTANT]
 >
->Note the following restrictions when working with CDF files:
+>处理CDF文件时请注意以下限制：
 >
->* 在设置CDF文件投放之前，请确保您具有第三方数据提供商对导出第三方特征的适当权限。
->* You should not use [!UICONTROL CDF] files as a proxy to monitor page traffic, reconcile report discrepancies, or for billing, etc.
+>* 在设置CDF文件投放之前，请确保您具有第三方数据提供商对导出第三方特征的适当权限。 Audience Manager当前不支持用户界面中向第三方数据提供商请求CDF文件投放导出权限的功能，因此请单独联系他们。
+>* 您不应将文 [!UICONTROL CDF] 件用作监视页面流量、调节报表差异或计费等的代理。
 
 
 ## 快速入门 {#getting-started}
 
-没有自助过程来开始文 [!UICONTROL CDF] 件投放。 Contact your [!DNL Audience Manager] consultant or Customer Care to get started. During implementation, your [!DNL Audience Manager] representative will:
+没有自助过程来开始文 [!UICONTROL CDF] 件投放。 Contact your [!DNL Audience Manager] consultant or Customer Care to get started. 在实施过程中，您的 [!DNL Audience Manager] 代表将：
 
 * 设置您的 [!DNL Amazon S3] 存储桶。
 * 为文件存储存储 [!DNL S3] 桶提供只读身份验证凭据。 您将无法查看或访问属于其他客户的目录和文件。
@@ -369,7 +369,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 
 | 时间戳位置 | 描述 |
 |--- |--- |
-| 文件名 | 文件名中的 [!DNL CDF] 时间戳标记开始准 [!DNL Audience Manager] 备文件进行投放的时间。 此时间戳在时区 [!DNL UTC] 中设置。 它使用参 `hour=` 数，时间格式设置为2位数小时（以24小时表示）。 此时间可以与文件内容中记录的事件时间不同。 处理文 [!DNL CDF] 件时，有时您会注意到您的存储 [!DNL S3] 桶在特定的小时内为空。 空桶装置可以表示以下任一情况：<ul><li>那个小时没有数据。 </li><li> 我们的服务器负载很重，无法处理特定小时的文件。 当服务器启动时，它将本应放在较早时段的文件放入具有稍后时间值的存储桶中。 例如，当本应在17小时存储段中的文件出现在18小时存储段中时（在文件名中），您 `hour=18` 会看到这一点。 在这种情况下，服务器可能在17小时内开始处理您的文件，但无法在该时间间隔内完成它。 相反，文件将推送到下一个小时时段。</li></ul><br>**重要说明&#x200B;**: 请勿使用文件名时间戳按时间对事件分组。 如果需要按时间分组，请使用文`EventTime`件内容中的时间戳。 |
+| 文件名 | 文件名中的 [!DNL CDF] 时间戳标记开始准 [!DNL Audience Manager] 备文件进行投放的时间。 此时间戳在时区 [!DNL UTC] 中设置。 它使用参 `hour=` 数，时间格式设置为2位数小时（以24小时表示）。 此时间可以与文件内容中记录的事件时间不同。 处理文 [!DNL CDF] 件时，有时您会注意到您的存储 [!DNL S3] 桶在特定的小时内为空。 空桶装置可以表示以下任一情况：<ul><li>那个小时没有数据。 </li><li> 我们的服务器负载很重，无法处理特定小时的文件。 当服务器启动时，它将本应放在较早时段的文件放入具有稍后时间值的时段中。 例如，当本应在17小时存储段中的文件出现在18小时存储段中时（在文件名中），您 `hour=18` 会看到这一点。 在这种情况下，服务器可能在17小时内开始处理您的文件，但无法在该时间间隔内完成它。 相反，文件将推送到下一个小时时段。</li></ul><br>**重要说明&#x200B;**: 请勿使用文件名时间戳按时间对事件分组。 如果需要按时间分组，请使用文`EventTime`件内容中的时间戳。 |
 | 文件内容 | 文件内容中 [!DNL CDF] 的时间戳标记开始处 [!DNL Data Collection Servers] 理文件的时间。 此时间戳在时区 [!DNL UTC] 中设置。 它使用字 `EventTime` 段，时间格式设置为 *`yyyy-mm-dd hh:mm:ss`*。 此时间接近页面上事件的实际时间，但可能与文件名中的小时指示符不同。 <br> **提示**: 与文件 `hour=` 名中的时间戳不同，您可以 `EventTime` 按时间对数据分组。 |
 
 >[!MORELIKETHIS]
