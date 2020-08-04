@@ -1,15 +1,15 @@
 ---
-description: 本页仅包含当前的服务器到服务器集成。 有关集成的详细信息，请参阅其Adobe Exchange列表（如果可用）或与Adobe顾问或客户关怀联系。
-seo-description: 本页仅包含当前的服务器到服务器集成。 有关集成的详细信息，请参阅其Adobe Exchange列表（如果可用）或与Adobe顾问或客户关怀联系。
+description: 本页仅包含当前的服务器到服务器集成。 有关集成的详细信息，请参阅其Adobe交换列表（如果可用）或与Adobe顾问或客户关怀联系。
+seo-description: 本页仅包含当前的服务器到服务器集成。 有关集成的详细信息，请参阅其Adobe交换列表（如果可用）或与Adobe顾问或客户关怀联系。
 seo-title: Adobe Audience Manager服务器到服务器目标
 keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
 title: Adobe Audience Manager服务器到服务器目标
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: 8d7935f69b496ec30a135df884756d370b44b7ed
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1116'
 ht-degree: 72%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 72%
 
 # [!DNL Audience Manager] [!UICONTROL Device-based Destinations]
 
-本页仅包含当 [!DNL Audience Manager] 前 [基于设备的目标](/help/using/features/destinations/add-device-based-destinations.md) 。 在 [!DNL Audience Manager]中 [!UICONTROL device-based destinations] ，也称为 [!UICONTROL server-to-server destinations]。 有关集成的详细信息，请参 [阅其Adobe](https://www.adobeexchange.com/experiencecloud.html) Exchange列表（如果可用）或与您的顾 [!DNL Adobe] 问或客户服务联系。
+本页仅包含当 [!DNL Audience Manager] 前 [基于设备的目标](/help/using/features/destinations/add-device-based-destinations.md) 。 在 [!DNL Audience Manager]中 [!UICONTROL device-based destinations] ，也称为 [!UICONTROL server-to-server destinations]。 有关集成的详细信息，请参阅其 [Adobe交](https://www.adobeexchange.com/experiencecloud.html) 换列表（如果可用），或与您的顾 [!DNL Adobe] 问或客户服务联系。
 
  
 
@@ -84,7 +84,6 @@ ht-degree: 72%
 | [!DNL FreakOut] | 03/03/2017 | 1xday | 是 | 否 | 否 | 否 |
 | [!DNL Freewheel] | 27/02/2017 | 1xday | 是 | 是 | 否 | 是 |
 | [!DNL Gamut Media] | 03/03/2017 | 实时 |  | 否 | 否 |  |
-| [!DNL Google AdsWords Display] | 02/08/2018 | 实时 | 是 | 是 | 否 | 是 |
 | [!DNL Google DoubleClick Bid Manager (DBM)] | 24/04/2017 | 实时 | 是 | 是 | 是 | 是 |
 | [!DNL Google DoubleClick Campaign Manager (DCM fka DFA)] | 24/04/2017 | 实时 | 是 | 是 | 是 | 是 |
 | [!DNL Google DoubleClick for Publishers (DFP, DFPP)] | 24/04/2017 | 实时 | 是 | 是 | 是 | 是 |
