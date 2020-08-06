@@ -7,9 +7,9 @@ title: 入站数据文件的 FTP 名称和文件大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: b3ff5ca68022cc30632d6b647ffde507533b5ddf
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '894'
 ht-degree: 9%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 9%
 
 有关其他已接受的文件名格式，请参阅自 [定义合作伙伴集成](/help/using/integration/sending-audience-data/custom-partner-integrations.md)。
 
->[!NOTE] {importance=&quot;high&quot;}
+>[!NOTE]
 >
 >[!DNL Audience Manager] 仅处理 [!DNL ASCII] 和编 [!DNL UTF-8] 码文件。
 
