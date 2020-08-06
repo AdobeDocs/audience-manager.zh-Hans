@@ -1,13 +1,13 @@
 ---
-description: 本文描述如何在受众和Adobe Experience Platform之间共享Audience Manager。
-seo-description: 本文描述如何在受众和Adobe Experience Platform之间共享Audience Manager。
+description: 本文介绍如何在受众和Adobe Experience Platform之间共享Audience Manager。
+seo-description: 本文介绍如何在受众和Adobe Experience Platform之间共享Audience Manager。
 seo-title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 solution: Audience Manager
 title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: db4706673b72980652942e23d83ae5cf180972e9
+source-git-commit: b3ff5ca68022cc30632d6b647ffde507533b5ddf
 workflow-type: tm+mt
 source-wordcount: '1441'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## 概述 {#overview}
 
-受众和Adobe Experience Platform之间的Audience Manager共享功能允许您将Audience Manager特征和区段共享到Adobe Experience Platform，反之亦然。 您需要[ [!DNLAudience Manager连接器]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，以启用Audience Manager和Adobe Experience Platform之间的受众共享。
+Audience Manager和Adobe Experience Platform之间的受众共享功能允许您将Audience Manager特征和区段共享到Adobe Experience Platform，反之亦然。 您需要[ [!DNLAudience Manager连接器]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，以启用Audience Manager与Adobe Experience Platform之间的受众共享。
 
 您可以在Experience Platform中使用Audience Manager特征和细分，向客户用户档案添加Audience Manager数据并从Experience Platform细分服务 [中受益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)。
 
@@ -40,11 +40,11 @@ ht-degree: 3%
 
 | **用例** | **Adobe Experience Platform** | **Audience Manager** | **核心服务** |
 ---------|----------|---------|---------
-| **受众共享** | <ul><li>利用Audience Manager数据丰富客户用户档案</li><li>在Audience Manager细分中使用Experience Platform数据</li></ul> | <ul><li>将第三方数据添加到区段</li><li>算法建模</li><li>激活到其他目标</li></ul> | 在其他Experience Platform解决方案(如Adobe Target或Analytics)中使用Experience Cloud细分。 |
+| **受众共享** | <ul><li>利用Audience Manager数据丰富客户用户档案</li><li>在Audience Manager细分中使用Experience Platform数据</li></ul> | <ul><li>将第三方数据添加到区段</li><li>算法建模</li><li>激活到其他目标</li></ul> | 在其他Experience Platform解决方案(如Adobe Target或分析)中使用Experience Cloud细分。 |
 
 <br> 
 
-## Audience Manager细分和Adobe Experience Platform特征 {#aam-segments-traits-in-aep}
+## Adobe Experience PlatformAudience Manager区段及特征 {#aam-segments-traits-in-aep}
 
 您的Audience Manager特征和区段在Experience Platform中显示为 **区段** 工作流中的受众。 有关Audience Manager区段和Experience Platform特征的详细信息，请参阅：
 
@@ -54,7 +54,7 @@ ht-degree: 3%
 
 <br> 
 
-## Adobe Experience Platform细分Audience Manager {#aep-segments-in-aam}
+## Adobe Experience PlatformAudience Manager {#aep-segments-in-aam}
 
 您在Experience Platform中创建的区段在Audience Manager界面中以信号、特征和区段的形式显示，并包含以下构成规则：
 
@@ -114,7 +114,9 @@ Audience Manager会在您的区段Experience Platform中自 **动创建名为** 
 
 在Audience Manager与Experience Platform之间的受众共享过程中，已应用于Audience Manager段的任何数据导出控制均转换为由Experience Platform数据管理确认的对等标签和营销操作，反之亦然。
 
->[!NOTE] 有关“数据导出控制”的更多常规信息，请参阅“数 [据导出控制”文档](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)。
+>[!NOTE]
+>
+>有关“数据导出控制”的更多常规信息，请参阅“数 [据导出控制”文档](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)。
 此文档提供有关特定Audience Manager数据导出控制如何映射到平台中的数据使用标签和营销操作的参考。
 
 ### 数据导出控件到数据使用标签
@@ -153,7 +155,7 @@ Audience Manager每天更新接口中的报告号一次。   此更新的时间�
 
 ### Experience Platform中的细分组成
 
-Adobe Experience Platform和Audience Manager之间的集成共享了适用于所有客 [户的许多标](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types) 准身份命名空间: ECID、IDFA、GAID、散列电子邮件地址(EMAIL_LC_SHA256)、AdCloud ID，等等。 如果您的Experience Platform区段将其中任何一个用作合格用户档案的主要标识，则用户档案计入Audience Manager特征和区段。
+Adobe Experience Platform和Audience Manager之间的集成为所有客户共 [享了许多标](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types) 准身份命名空间: ECID、IDFA、GAID、散列电子邮件地址(EMAIL_LC_SHA256)、AdCloud ID，等等。 如果您的Experience Platform区段将其中任何一个用作合格用户档案的主要标识，则用户档案计入Audience Manager特征和区段。
 
 此外，Audience Manager可以为您在Experience Platform段中使用的任何自定义标识命名空间注册传入的实现，前提是您已经在键入该标识符的Audience Manager中具有相应的数据源。
 
