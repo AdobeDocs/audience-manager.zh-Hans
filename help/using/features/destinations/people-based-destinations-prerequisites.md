@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 先决条件和注意事项
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: f9e6aedb408db218c548f469330ece584db75853
+source-git-commit: 2e32f9ebff487ae8dfb2088ec1bbfcea1daa00a1
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 4%
+source-wordcount: '1015'
+ht-degree: 3%
 
 ---
 
@@ -50,6 +50,14 @@ ht-degree: 4%
 
 有关 [视频说明，请参阅了解和配置LinkedIn基于人员的目标](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 。
 
+### [!DNL Google Customer Match]
+
+在使用将第 [!UICONTROL People-Based Destinations] 一方受众段发送到目标之前，必 [!DNL Google Customer Match] 须先将您添加到 [!DNL Google] 其允许列表中。
+
+联系您 [!DNL Google] 的代表并按照使用客户匹配合作 [伙伴中所述的允许列表说明](https://support.google.com/google-ads/answer/7361372?hl=en&amp;ref_topic=6296507) 上传您的文档 [!DNL Google] 。
+
+完成此过程后，即可创建您的 [!UICONTROL People-Based Destination]。
+
 ## 数据载入 {#data-onboarding}
 
 当前的数 [!UICONTROL People-Based Destinations] 据获取支持每个批量传输最多10个与一个客户ID()链接[!DNL CRM ID]的哈希电子邮件地址。 上传10个以上已散列化的电子邮件地址，链接到一个Audience ManagerID会导致客户按任意顺序收集其中的10个。
@@ -70,7 +78,7 @@ ht-degree: 4%
 
 散列电子邮件地址时，请确保符合以下要求：
 
-* 修剪电子邮件字符串中的所有前导和尾随空格； 示例： `johndoe@example.com`，不是 `<space>johndoe@example.com<space>`;
+* 修剪电子邮件字符串中的所有前导和尾随空格；示例： `johndoe@example.com`，不是 `<space>johndoe@example.com<space>`;
 * 散列电子邮件字符串时，请确保散列小写字符串；
    * 示例： `example@email.com`，不是 `EXAMPLE@EMAIL.COM`;
 * 确保哈希字符串全为小写
