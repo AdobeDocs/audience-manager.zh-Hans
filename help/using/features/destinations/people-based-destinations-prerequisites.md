@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 先决条件和注意事项
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: 2e32f9ebff487ae8dfb2088ec1bbfcea1daa00a1
+source-git-commit: d3184195d6a51ff013a3d1fc8526ca9afd3386c2
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 3%
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 ## 特定于合作伙伴的先决条件 {#partner-prerequisites}
 
-### [!DNL Facebook]
+### [!DNL Facebook] {#facebook}
 
 在使用将 [!UICONTROL People-Based Destinations] 第一方受众发送到 [!UICONTROL segments] 之 [!DNL Facebook]前，请确保满足以下要求：
 
@@ -42,7 +42,7 @@ ht-degree: 3%
    > When configuring the permissions for Adobe Experience Cloud, you must enable the **Manage campaigns** permission. [!UICONTROL People-Based Destinations] 集成要求具备此权限。
 3. 阅读并签署 [!DNL Facebook Custom Audiences] 服务条款。 为此，请转到 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`，其中 `accountID` 是您的 [!DNL Facebook Ad Account ID]。
 
-### [!DNL LinkedIn]
+### [!DNL LinkedIn] {#linkedin}
 
 在使用将第 [!UICONTROL People-Based Destinations] 一方受众段发送到之前， [!DNL LinkedIn]请确保您的 [!DNL LinkedIn Campaign Manager] 帐户具有或更 [!DNL Creative Manager] 高的权限级别。
 
@@ -50,7 +50,7 @@ ht-degree: 3%
 
 有关 [视频说明，请参阅了解和配置LinkedIn基于人员的目标](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 。
 
-### [!DNL Google Customer Match]
+### [!DNL Google Customer Match] {#gcm}
 
 在使用将第 [!UICONTROL People-Based Destinations] 一方受众段发送到目标之前，必 [!DNL Google Customer Match] 须先将您添加到 [!DNL Google] 其允许列表中。
 
@@ -72,7 +72,7 @@ ht-degree: 3%
 
 加密是双向的函数。 任何加密的信息也可以使用正确的解密密钥进行解密。 在Audience Manager环境中加密数据会带来严重的风险，因为任何加密形式的个人识别信息也可以被解密。 与加密相比，它 [!UICONTROL People-Based Destinations] 设计为使用散列数据。
 
-散列是单向函数，它对输入进行加扰以产生独特的结果。 通过使用适当的散列算法， [!DNL SHA256]例如，无法反转散列函数并显示未加扰的信息。 您将载入到Audience Manager的电子邮件地址必须使用算法进行散列 [!DNL SHA256] 处理。 这样，您就可以确保没有未散列的电子邮件地址到达Audience Manager。
+散列是单向函数，它对输入进行加扰以产生独特的结果。 通过使用适当的散列算 [!DNL SHA256]法（例如，），无法反转散列函数并显示未加扰的信息。 您将载入到Audience Manager的电子邮件地址必须使用算法进行散列 [!DNL SHA256] 处理。 这样，您就可以确保没有未散列的电子邮件地址到达Audience Manager。
 
 ## 散列要求 {#hashing-requirements}
 
