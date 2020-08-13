@@ -7,9 +7,9 @@ title: Audience Manager 产品文档
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 feature: overview
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: d3184195d6a51ff013a3d1fc8526ca9afd3386c2
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '669'
 ht-degree: 98%
 
 ---
@@ -160,10 +160,10 @@ ht-degree: 98%
      <br> 
      <p> <b>最新功能</b> </p> <p> 
      了解 Audience Manager 的最新功能：</p>
-     <p><ul><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">IAB TCF v2.0的Audience Manager插件</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用情况报表</a></li>
+     <p><ul><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">针对基于人的目标的Google客户匹配</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">IAB TCF v2.0的Audience Manager插件</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用情况报表</a></li>
      <li><a href="/help/using/overview/data-security-and-privacy/data-privacy.md">《加州消费者隐私法案》(CCPA) 支持和隐私文档全面修改</a></li>
      <li><a href="/help/using/features/segments/trait-recommendations.md">由 Adobe Sensei 提供支持的 Audience Marketplace 数据智能推荐</a></li>
-     <li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">配置文件合并规则增强功能</a></li></ul><p>
+     </ul><p>
     </td>
   </tr> 
  </tbody> 
