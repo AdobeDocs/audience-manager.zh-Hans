@@ -3,9 +3,10 @@ product: audience-manager
 solution: Audience Manager
 audience: end-user
 user-guide-title: Audience Manager 用户指南
+user-guide-description: Audience Manager provides industry-leading services for online audience data management.
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: edeb7dba1cb83e19a910812d2d0a664a288b884a
+source-git-commit: 29708d5fc528ac9da08f4c5a7f2bcaa11b240d8b
 workflow-type: tm+mt
 source-wordcount: '1756'
 ht-degree: 94%
@@ -338,9 +339,9 @@ ht-degree: 94%
    + 与 Adobe Experience Platform 集成 {#integration-experience-platform}
       + [在 Audience Manager 与 Adobe Experience Platform 之间共享受众](integration/integration-aep/aam-aep-audience-sharing.md)
    + 与其他 Experience Cloud 解决方案集成 {#integration-other-solutions}
-      + [将Audience Manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
+      + [将Audience Manager与Adobe Target](integration/integration-other-solutions/aam-target-integration.md)
       + [如何将数据从 Adobe Analytics 转发到 Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [将AdobeAnalytics区段发布到Experience Cloud(打开AdobeAnalytics文档)](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/audiences/t-publish-audience-segment.html)
+      + [将Adobe Analytics区段发布到Experience Cloud(打开Adobe Analytics文档)](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/audiences/t-publish-audience-segment.html)
       + [将Audience Manager与Adobe Campaign集成(打开Adobe Campaign文档)](https://docs.adobe.com/content/help/en/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
 + 参考{#reference}
    + [参考概述](reference/reference.md)
