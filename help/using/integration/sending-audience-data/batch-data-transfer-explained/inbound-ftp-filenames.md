@@ -7,7 +7,7 @@ title: 入站数据文件的 FTP 名称和文件大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: b3ff5ca68022cc30632d6b647ffde507533b5ddf
+source-git-commit: 29708d5fc528ac9da08f4c5a7f2bcaa11b240d8b
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 9%
@@ -62,7 +62,7 @@ ht-degree: 9%
      <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>数据合作伙伴ID:</b> 这是Audience Manager分配给您的公司或组织的唯一ID。 在发送包含您自己的用户ID的数据时，请在文件名中使用此分配的ID。 例如，告 <code>...ftp_dpm_21_123456789.sync</code> 诉Audience Manager <span class="keyword"> ID为</span> 21的合作伙伴发送了文件并包含该合作伙伴分配的用户ID。 </li> 
      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID):</b> 如果数据文件包含Android ID，请在数据文件名中使用ID 20914。 例如，告 <code>...ftp_dpm_20914_123456789.sync</code> 诉 <span class="keyword"> Audience Manager</span> ，数据文件仅包含Android ID。 </li> 
      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA):</b> 如果数据文件包含iOS ID，请在其数据文件名中使用ID 20915。 例如，告 <code>...ftp_dpm_20915_123456789.sync</code> 诉 <span class="keyword"> Audience Manager</span> ，数据文件仅包含iOS ID。 </li> 
-    </ul> <p> <p>注意：  请勿在数据文件中混合使用ID类型。 例如，如果您的文件名包含Android标识符，则不要在数据文件中放置iOS ID或您自己的ID。 </p> </p> </td> 
+    </ul> <p> <p>注意： 请勿在数据文件中混合使用ID类型。 例如，如果您的文件名包含Android标识符，则不要在数据文件中放置iOS ID或您自己的ID。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
@@ -77,23 +77,23 @@ ht-degree: 9%
    <td colname="col1"> <p> <code> (.sync |.overwrite)</code> </p> </td> 
    <td colname="col2"> <p>同步选项包括： </p> <p> 
      <ul id="ul_DAAF61EC636C4456BECDDC34C3F86E83"> 
-      <li id="li_6EC6DE442B4546AA9F4F800D65C8A4EC"> <code> sync</code>: 第三方数据提供者按用户发送要在Audience Manager系统中添加或删除的特征时的正常情况。 </li> 
-      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>: 允许客户和数据提供者按用户发送一列表特征，该特征应覆盖Audience Manager中给定数据源的此用户的所有现有特征。 无需将所有用户都包含在覆盖文件中。 仅包含要更改的用户。 未分配给目标数据源的特征将不被擦除。 </li> 
+      <li id="li_6EC6DE442B4546AA9F4F800D65C8A4EC"> <code> sync</code>:第三方数据提供者按用户发送要在Audience Manager系统中添加或删除的特征时的正常情况。 </li> 
+      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>:允许客户和数据提供者按用户发送一列表特征，该特征应覆盖Audience Manager中给定数据源的此用户的所有现有特征。 无需将所有用户都包含在覆盖文件中。 仅包含要更改的用户。 未分配给目标数据源的特征将不被擦除。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code>[<i>SPLIT_NUMBER</i></code>] </p> </td> 
+   <td colname="col1"> <p> <code>[<i>SPLIT_NUMBER</i>]</code> </p> </td> 
    <td colname="col2"> <p>整数。 将大型文件拆分为多个部分以缩短处理时间时使用。 数字表示要发送的原始文件的哪个部分。 </p> <p>为了有效处理文件，请按照以下说明拆分数据文件： </p> 
     <ul id="ul_E9446C5CA42649658093904D49D4369C"> 
-     <li id="li_B275708DFE3F49E29EFAE6B838429E39">未压缩： 1 GB </li> 
-     <li id="li_A9638EB46ED14E0680B6575D5457E32F">压缩： 200-300 MB </li> 
+     <li id="li_B275708DFE3F49E29EFAE6B838429E39">未压缩：1 GB </li> 
+     <li id="li_A9638EB46ED14E0680B6575D5457E32F">压缩：200-300 MB </li> 
     </ul> <p>请参阅下面的前 <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md#file-name-examples"> 2个文件名示例</a> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>TIMESTAMP</i> </code> </p> </td> 
    <td colname="col2"> <p>10位数的UTC UNIX时间戳（秒）。 时间戳有助于使每个文件名都是唯一的。 </p> 
     <draft-comment> 
-     <p> <p>注意：  Audience Manager在处理入站文件时不使用时间戳。 文件名中的时间戳在Audience Manager中已弃用，但仍需要时间戳才能实现向后兼容。 </p> </p> 
+     <p> <p>注意： Audience Manager在处理入站文件时不使用时间戳。 文件名中的时间戳在Audience Manager中已弃用，但仍需要时间戳才能实现向后兼容。 </p> </p> 
     </draft-comment> </td> 
   </tr> 
   <tr> 
