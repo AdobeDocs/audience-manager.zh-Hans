@@ -8,9 +8,9 @@ title: 声明的 ID
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
 feature: ID Syncs
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 29708d5fc528ac9da08f4c5a7f2bcaa11b240d8b
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1187'
 ht-degree: 10%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 10%
  <tbody> 
   <tr> 
    <td colname="col1"> <b>事件呼叫</b> </td> 
-   <td colname="col2"> <p>要正常工作，您需 <span class="wintitle"> 要页 </span> 面上的 <a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html" format="https" scope="external"> DIL和 </a> Adobe Experience Platform标识服务代码。 <span class="wintitle"> DIL </span> 从Adobe Experience Platform身 <span class="wintitle"> 份服务提供的 </span> 函数中获取声 <code> setVisitorID </code> 明的ID，并 <span class="keyword"> 将其传递到 </span><span class="keyword"></span>Audience Manager。 </p> </td> 
+   <td colname="col2"> <p>要正常工作，您需 <span class="wintitle"> 要页 </span> 面上的 <a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html" format="https" scope="external"> DIL </a> 和Adobe Experience Platform身份服务代码。 <span class="wintitle"> DIL </span> 从 <span class="wintitle"> Adobe Experience Platform身份服 </span> 务提供的功能获取声 <code> setVisitorID </code> 明的ID，并 <span class="keyword"> 将其传递给 </span><span class="keyword"></span>Audience Manager。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>匹配ID</b> </td> 
-   <td colname="col2"> <p>Audience Manager尝试将客户端和访客ID与系统中的相应ID匹配。 如果不存在匹配的ID,Audience Manager将创建新ID并将其与客户端和访客ID关联。 </p> <p> <p>注意：  如果您的ID映射到多个Audience ManagerID，则使用最新映射。 </p> </p> </td> 
+   <td colname="col2"> <p>Audience Manager尝试将客户端和访客ID与系统中的相应ID匹配。 如果不存在匹配的ID,Audience Manager将创建新ID并将其与客户端和访客ID关联。 </p> <p> <p>注意： 如果您的ID映射到多个Audience ManagerID，则使用最新映射。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>返回ID</b> </td> 
@@ -55,14 +55,14 @@ ht-degree: 10%
  </tbody>
 </table>
 
-要开始，您需要配置ID [!DNL Experience Cloud] 服务， [!UICONTROL DIL] 并在站点上要用于数据收集的页面之间进行配置。 请参 [阅DIL创建](../dil/dil-class-overview/dil-create.md#dil-create)[和声明ID变量](../features/declared-ids.md#declared-id-variables)。
+要开始，您需要配置ID [!DNL Experience Cloud] 服务， [!UICONTROL DIL] 并在站点上要用于数据收集的页面之间进行配置。 请参 [阅DIL](../dil/dil-class-overview/dil-create.md#dil-create) 创建 [和声明ID变量](../features/declared-ids.md#declared-id-variables)。
 
 ## 退出呼叫 {#opt-out-calls}
 
 该过 [!UICONTROL declared ID] 程将遵守网站访客首选项，以选择 [!DNL Audience Manager] 退出网站定位。 When [!DNL Audience Manager] receives an opt-out request, the [!DNL JSON] returned by the [!DNL DCS] contains the error code 171, with the message `Encountered opt out tag`, instead of the [!DNL Audience Manager] user ID.
 
 * [!DNL Audience Manager] 可以在中 [!UICONTROL declared ID] 加入退出选项 [!DNL Audience Manager] 并 [!UICONTROL UUID] 进行退 [!DNL URL]出
-* 退 [!UICONTROL declared ID] 出选项按每个合作伙伴存储在[!UICONTROL用户档案[!UICONTROL PCS]缓存服务器()中。 没有平台级别的退出使用 [!UICONTROL declared IDs]。 此外， [!DNL Audience Manager] 选择用户从边缘上的特定区域退出(选择退出不会跨越 [!DNL DCS] 区域)。
+* 退 [!UICONTROL declared ID] 出按合作伙伴 [!UICONTROL Profile Cache Server] ([!UICONTROL PCS])存储。 没有平台级别的退出使用 [!UICONTROL declared IDs]。 此外， [!DNL Audience Manager] 选择用户从边缘上的特定区域退出(选择退出不会跨越 [!DNL DCS] 区域)。
 
 有关 [选择退出数据收](../overview/data-security-and-privacy/data-privacy.md) 集的更多信息，请参阅数据隐私。
 
@@ -115,11 +115,11 @@ You can make a [!UICONTROL declared ID] opt-out requests with the `d_cid` and `d
   </tr> 
   <tr> 
    <td colname="col1"> <p>合作伙伴级别选择退出 </p> </td> 
-   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>将存储合作伙伴级别的退出选项，以将此+对 <code> dpid </code> 的最 <code> dpuuid </code> 新映射到AAM UUID。 如果以前没有任何映射，Audience Manager将检查请求在cookie中是否包含AAM UUID，如果包含，则使用该AAM UUID存储退出。 否则，Audience Manager将生成新的AAM UUID并在其下存储退出。 </p> </td> 
+   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>将存储合作伙伴级别的退出选项，以将此+对的最 <code> dpid </code> 新映 <code> dpuuid </code> 射到AAM UUID。 如果以前没有映射，Audience Manager将检查请求在cookie中是否包含AAM UUID，如果包含，则使用它存储退出。 否则，Audience Manager将生成新的AAM UUID并在其下存储退出。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_dpuuid </code> + <code> d_dpid </code> explicit <code> d_uuid </code> </p> </td> 
-   <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid= user ID&amp;d_dpuuid= data provider's user ID&amp;<i>d_dpid=data provider ID</i> </code> </p> <p> <code> d_uuid </code> 始终优先。 如果 <code> dpid </code> + <code> dpuuid </code> 组合映射到另一个AAM UUID，则选择退出存储在请求()中传递的AAM UUID <code> d_uuid </code>下。 </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid= user ID&amp;d_dpuuid= data provider's user ID&amp;<i>d_dpid=data provider ID</i> </code> </p> <p> <code> d_uuid </code> 始终优先。 如果 <code> dpid </code> +组 <code> dpuuid </code> 合映射到另一个AAM UUID，则退出将存储在请求()中传递的AAM UUID <code> d_uuid </code>下。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -185,7 +185,7 @@ You can make a [!UICONTROL declared ID] opt-out requests with the `d_cid` and `d
 
 ## [!UICONTROL DIL] 使用 [!DNL Adobe Experience Platform Identity Service] 传递 [!UICONTROL Declared IDs] {#dil-id-service-pass-declared-ids}
 
-与Adobe Experience Platform标 [识服务一起使用](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html)，您不再需要随已弃用 [!UICONTROL declared IDs] 的变量和变 `dpid` 量一起 `dpuuid` 传递。 相反，当前版本 [!UICONTROL DIL] 依赖函 `visitorService` 数从中 [!UICONTROL declared IDs] 的函 `setCustomerIDs` 数获取 [!UICONTROL Adobe Experience Platform Identity Service]。 For more information, see [Customer IDs and Authentication States](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html). 如下所 `visitorService` 示， `DIL.create` 您将拨入。
+与Adobe Experience Platform身 [份服务一起使用](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html)，您不再需要继 [!UICONTROL declared IDs] 续传递已弃 `dpid` 用和 `dpuuid` 变量。 相反，当前版本 [!UICONTROL DIL] 依赖函 `visitorService` 数从中 [!UICONTROL declared IDs] 的函 `setCustomerIDs` 数获取 [!UICONTROL Adobe Experience Platform Identity Service]。 For more information, see [Customer IDs and Authentication States](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html). 如下所 `visitorService` 示， `DIL.create` 您将拨入。
 
 ```js
 var vDil = DIL.create({
