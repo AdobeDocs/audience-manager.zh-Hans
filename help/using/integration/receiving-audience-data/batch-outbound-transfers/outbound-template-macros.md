@@ -135,7 +135,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPEN_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>插入一个左大括号 <code>{</code> 字符。 </p> </td> 
+   <td colname="col2"> <p>插入左大括号{字符。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPT_OUT </code> </p> </td> 
