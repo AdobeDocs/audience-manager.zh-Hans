@@ -8,9 +8,9 @@ title: 管理文件夹特征
 uuid: 287ac280-bd58-4985-85bd-b6501eb64b7f
 feature: Traits
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 4ea5ba4ebd8cd4c13c99c8272f4b5733ab5fa125
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '362'
 ht-degree: 9%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 9%
 
 1. 单击“+”图标可创建此文件夹。请注意，在分类中最多可创建 2,000 个文件夹。请参阅[使用限制](../../features/administration/usage-limits.md)文档，以了解更多信息。
 1. 命名文件夹，然后单击“ **保存**”。 例如，名为Electronics的文件夹将具有名为“Electronics文件夹特征”的文件夹特征。 您可以视图和选择特征仪表板中的新文件夹特征。
-1. 新文件夹特征会自动分配给生 [!DNL Audience Manager] 成的数据源。 具有相应[!UICONTROL基于角色的访问控制()]权[!DNL RBAC]限的用户可以更改编辑文件夹特征工作流中的数据源。 请参 [阅编辑文件夹特征](../../features/traits/manage-folder-traits.md#edit-folder-trait)。
+1. 新文件夹特征会自动分配给生 [!DNL Audience Manager] 成的数据源。 具有相应()权 [!UICONTROL Role-Based Access Control] 限的[!DNL RBAC]用户可以在编辑文件夹特征工作流中更改数据源。 请参 [阅编辑文件夹特征](../../features/traits/manage-folder-traits.md#edit-folder-trait)。
 
 ## 编辑文件夹特征 {#edit-folder-trait}
 
