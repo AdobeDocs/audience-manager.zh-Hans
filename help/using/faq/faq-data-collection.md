@@ -8,10 +8,10 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 feature: Administration
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: a1e95f421b725cc93fbedc4c001e34e4291bf828
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 90%
+source-wordcount: '1151'
+ht-degree: 84%
 
 ---
 
@@ -21,12 +21,6 @@ ht-degree: 90%
 有关数据收集和集成的常见问题。
 
 <br> 
-
-<!-- 
-
-faq_data_collection_integration.xml
-
- -->
 
 **如何在[!DNL DCS]日志文件导出中区分入站流量和[!DNL DCS]流量？**
 
@@ -42,18 +36,39 @@ faq_data_collection_integration.xml
 
 抱歉，我们无法为您提供这样的列表。这些 IP 是通过 [!DNL Amazon Web Services] 按地域动态分配的。因此，[!DNL Audience Manager] 无法控制可分配给此地址的 IP 范围。
 
-<br> 
+ 
 
-**能否为我提供可添加到入站和出站sFTP服务器允许列表的IP地址？**
+**能否为我提供可添加到入站和出站SFTP服务器允许列表的IP地址？**
 
 可以，请参见下文。
 
-| 项目 | 地址 |
+| 服务器 | IP 地址 |
+| ---------|----------|
+| ftp-in-gtw.demdex.com | 23.22.232.252; 18.211.109.184 |
+| ftp-out-gtw.demdex.com | 3.233.68.222; 52.3.74.119 |
+
+ 
+
+下面的SFTP服务器已弃用。 不会使用这些服务器设置新帐户。
+
+| 服务器 | IP 地址 |
 ---------|----------|
 | ftp-in.demdex.com | 54.225.117.163 |
 | ftp-out.demdex.com | 23.23.188.76 |
 
-<br> 
+ 
+
+**如何配置Audience Manager实例以使用新的SFTP服务器？**
+
+请联系您 [!DNL Audience Manager] 的顾问或客户关怀部门，他们将配置您的新SFTP帐户。
+
+ 
+
+**新SFTP服务器支持哪些身份验证方法？**
+
+新的SFTP服务器(`ftp-in-gtw` 和 `ftp-out-gtw`)支持 [!DNL OpenSSH Key-Based Authentication]。 我们可以为您 [!DNL SSH] 生成密钥，您也可以向我们提供您自己的公钥。
+
+ 
 
 **对于[!UICONTROL DIL]/[!DNL Analytics]数据集成，有哪些代码放置和页面加载要求？**
 
@@ -73,7 +88,7 @@ faq_data_collection_integration.xml
 
 请参阅[数据集成库 (DIL) API](../dil/dil-overview.md)。
 
-<br> 
+ 
 
 **为何[!DNL Audience Manager]事件调用中会缺少[!DNL Analytics]变量？**
 
@@ -82,7 +97,7 @@ faq_data_collection_integration.xml
 * 您通过标记管理系统为 [!UICONTROL DIL] 提供服务，但标记管理系统异步加载此模块和页面上的其他代码元素。
 * `s.t()` 函数在 [!UICONTROL DIL] 之前加载。
 
-<br> 
+ 
 
 **哪些版本的[!DNL Analytics]可以与[!UICONTROL DIL]结合使用？**
 
@@ -150,7 +165,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **如何设[!DNL Audience Manager]置cookies并将变量传递给[!DNL Google Ad Manager]?**
 
-[!DNL Audience Manager] 设置2个cookie: 一个将段变量发 [!DNL Google Ad Manager] 送到广告标签，另一个设置我们的唯一用户ID(UUID)，该UUID也由读取 [!DNL Google Ad Manager]。 将 UUID 添加到广告标记意味着我们可以执行用户级报表和受众发现操作。
+[!DNL Audience Manager] 设置2个cookie:一个将段变量发 [!DNL Google Ad Manager] 送到广告标签，另一个设置我们的唯一用户ID(UUID)，该UUID也由读取 [!DNL Google Ad Manager]。 将 UUID 添加到广告标记意味着我们可以执行用户级报表和受众发现操作。
 
 <br> 
 
