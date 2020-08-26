@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 全局数据源
 feature: Data Sources
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: b8b848ad04d1ec07c12e57d94e4f3c6e672dc102
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 5%
+source-wordcount: '444'
+ht-degree: 6%
 
 ---
 
@@ -24,12 +24,12 @@ Global data sources are accessible by all Audience Manager customers and contain
 
 | 数据源ID | 描述 |
 |---|---|
-| 20914 | **Google Advertising ID** - **** GAID代表运行操作系统的 [!DNL Android] 设备。 |
-| 20915 | **Apple ID For Advertising** - **** IDFA表示运行操作系统的 [!DNL iOS] 设备。 |
-| 121963 | **Roku ID for Advertising** - **** RIDA代表 [!DNL Roku] 流设备。 |
-| 389146 | **Microsoft Advertising ID** - **** MAID代表运行操作系 [!DNL Windows 10] 统的设备。 |
-| 404660 | **三星** DUID代表 [!DNL Samsung] 智能电视。 |
-| 488258 | **Amazon Fire TV广告ID**&#x200B;表示运行的设备 [!DNL Amazon Fire OS] |
+| 20914 | **[!DNL Google Advertising ID]** - **[!DNL GAID]** ID表示运行操作系统 [!DNL Android] 的设备。 |
+| 20915 | **[!DNL Apple ID For Advertising]** - **[!DNL IDFA]** ID表示运行操作系统 [!DNL iOS] 的设备。 |
+| 121963 | **[!DNL Roku ID for Advertising]** - **[!DNL RIDA]** ID代表 [!DNL Roku] 流设备。 |
+| 389146 | **[!DNL Microsoft Advertising ID]** - **[!DNL MAID]** ID表示运行操作系 [!DNL Windows 10] 统的设备。 |
+| 404660 | **[!DNL Samsung Tizen IDs for Advertising]** - **[!DNL TIFA]** ID代表 [!DNL Samsung] 智能电视。 |
+| 488258 | **[!DNL Amazon Fire TV Advertising IDs]** 表示正在运行的设备 [!DNL Amazon Fire OS] |
 
 ## 从全局数据源导入数据
 
@@ -37,7 +37,7 @@ Global data sources are accessible by all Audience Manager customers and contain
 
 >[!IMPORTANT]
 >
->使用全局设备ID向Audience Manager发送数据时，请确保为相关设备ID使用相应的数据源。 示例： 要导入数据 [!DNL Apple IDFA]，请使用数据源ID 20915。
+>使用全局设备ID向Audience Manager发送数据时，请确保为相关设备ID使用相应的数据源。 示例：要导入数据 [!DNL Apple IDFA]，请使用数据源ID 20915。
 
 ## 限制
 
@@ -52,11 +52,11 @@ Audience Manager validates the device advertising IDs ([!UICONTROL DAID]) import
 
 ## 设备ID过期策略
 
-Audience Manager在120天不活动后自动丢弃设备广告ID，与AAM [UUID](../faq/faq-privacy.md)类似。
+Audience Manager在120天不活动后自动放弃设备广告ID，与AAM UUID [类](../faq/faq-privacy.md)似。
 
 ## 请求新的全局数据源
 
-要请求将新的全球数据源添加到Audience Manager，请与Adobe咨询或Adobe客户关怀部门联系并提供有关所需数据源的详细信息：
+要请求将新的全球数据源添加到Audience Manager，请与Adobe咨询或Adobe客户关怀部门联系，并提供有关所需数据源的详细信息：
 
 * 所请求平台的名称(例如 [!UICONTROL Apple IDFA]);
 * 管理平台的公司/组织的名称(例如 [!UICONTROL Apple Inc.]);
