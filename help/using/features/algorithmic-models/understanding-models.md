@@ -98,7 +98,7 @@ ht-degree: 1%
  <tbody>
   <tr> 
    <td colname="col1"> <b>创建或克隆模型</b> </td>
-   <td colname="col2"> <p>对于新的或克隆的[!UICONTROL相似模型]，创建过程每天运行一次： 
+   <td colname="col2"> <p>对于新的或克隆的[!UICONTROL 相似模型]，创建过程每天运行一次： 
      <ul id="ul_97333AC409AF4760A91D90A06050122B"> 
       <li id="li_3A43809F924341FCAC3A85E3825E0F61"> 东部时间下午5点（11月- 3月） </li> 
       <li id="li_C07D22AB192D4E0191D9EBF6426EC73D"> 美国东部夏令时间下午6点（3月至11月） </li> 
