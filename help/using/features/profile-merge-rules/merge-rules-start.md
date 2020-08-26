@@ -7,9 +7,9 @@ title: 开始使用配置文件合并规则
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: dc22ed98b51b5633532bab45a79a14ee14dba5f5
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1304'
 ht-degree: 4%
 
 ---
@@ -40,8 +40,8 @@ ht-degree: 4%
 3. 提供集成代码。 集成代码是您自己的、此数据源的唯一ID。
 4. 在列表 **[!UICONTROL ID Type]** 中，选择 **[!UICONTROL Cross Device]**。
 5. 在列表 **[!UICONTROL ID Definition]** 中，选择定义数据源类型的选项。 选项包括：
-   * **[!UICONTROL Person]**: 定义单个人员的ID。 此ID可以映射到多个 [!DNL Audience Manager] ID。
-   * **[!UICONTROL Household]**: 定义一组人员的ID。 此ID可以映射到多个 [!DNL Audience Manager] ID。
+   * **[!UICONTROL Person]**:定义单个人员的ID。 此ID可以映射到多个 [!DNL Audience Manager] ID。
+   * **[!UICONTROL Household]**:定义一组人员的ID。 此ID可以映射到多个 [!DNL Audience Manager] ID。
 
 ## 数据导出控制 {#export-controls}
 
@@ -51,11 +51,11 @@ ht-degree: 4%
 
 [!UICONTROL Data Source Settings] 部分提供了多个选项，但这2个选项对于创建跨设备数据源很重要：
 
-* **[!UICONTROL Use as Authenticated Profile]**: 默认情况下，此设置允许您使用自己的 [!UICONTROL Profile Merge Rule] 已验证数据构建一个。
+* **[!UICONTROL Use as Authenticated Profile]**:默认情况下，此设置允许您使用自己的 [!UICONTROL Profile Merge Rule] 已验证数据构建一个。
 
-* **[!UICONTROL Use as a Device Graph]**: 此控件仅对作为数据提供者列出的帐户可用。 选中此复选框将创建设备图形形式的数据源，并允许您与其他客户共 [!DNL Audience Manager] 享它。 与顾问 [!DNL Audience Manager] 合作，将其设置为数据提供者并指定应与哪 [!UICONTROL Data Source] 些客户共享。 您的顾问将通过内部配置流程配置您的帐户和设备图形共享。
+* **[!UICONTROL Use as a Device Graph]**:此控件仅对作为数据提供者列出的帐户可用。 选中此复选框将创建设备图形形式的数据源，并允许您与其他客户共 [!DNL Audience Manager] 享它。 与顾问 [!DNL Audience Manager] 合作，将其设置为数据提供者并指定应与哪 [!UICONTROL Data Source] 些客户共享。 您的顾问将通过内部配置流程配置您的帐户和设备图形共享。
 
-* **[!UICONTROL Data retention for inactive Customer IDs]**: 此控件允许您为非活动的客户ID设置数据保留期。 这决定了Audience Manager在Audience Manager平台上最后一次看到客户ID后，在我们的数据库中保留这些ID的时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们把所有月份都算作30天。 Audience Manager运行一个流程，根据您为非活动客户ID设置的数据保留情况，每周删除不活动客户ID一次。
+* **[!UICONTROL Data retention for inactive Customer IDs]**:此控件允许您为非活动的客户ID设置数据保留期。 这决定了Audience Manager在Audience Manager平台上最后一次看到客户ID后，在我们的数据库中保留这些ID的时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们把所有月份都算作30天。 Audience Manager运行一个流程，根据您为非活动客户ID设置的数据保留情况，每周删除不活动客户ID一次。
 
 通过与这些设置关联的文本字段，您可以使 [!UICONTROL Data Source] 用“用户档案合并规则”选项中显 [示的别名重命名](merge-rule-definitions.md)。 例如，如果向添加别名， **[!UICONTROL Use as Authenticated Profile]**&#x200B;该名称将显示在列表 [!UICONTROL Authenticated Profile Options] 中。 如果向中添加别名， **[!UICONTROL Use as a Device Graph]**&#x200B;则该名称会显示在 [!UICONTROL Device Options] 列表中。
 
@@ -114,7 +114,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> 我们已将用户档案合并规则限制为1，以便您为映射到Adobe Campaign声明ID目标的段创建专用的用户档案合并规则，而不更改其他用例的用户档案合并规则。
+> 如果您已达到最大数量，并 [!UICONTROL Profile Merge Rules] 且需要根据上述说明在配置时提供帮助，请联系客户服务。
 
 ## 配置合并规则代码 {#configure-merge-rule-code}
 
@@ -128,7 +128,7 @@ ht-degree: 4%
 
 ## 针对Adobe Experience Platform身份服务客户 {#id-service-customers}
 
-使 [!UICONTROL Adobe Experience Platform Identity Service] 用DIL时，建 [议使用](../../dil/dil-overview.md) DIL和最新版本 [!UICONTROL Profile Merge Rules]。 但是，您不必使用该 [!UICONTROL Adobe Experience Platform Identity Service] 功能即可使用。 如果您只是在使 [!UICONTROL DIL]用，请参 [阅下面的旧DIL](#legacy-dil) 部分。
+使 [!UICONTROL Adobe Experience Platform Identity Service] 用时，建议使用 [DIL](../../dil/dil-overview.md) 和最新版本 [!UICONTROL Profile Merge Rules]。 但是，您不必使用该 [!UICONTROL Adobe Experience Platform Identity Service] 功能即可使用。 如果您只是在使用 [!UICONTROL DIL]，请参阅 [下面的旧版DIL](#legacy-dil) 。
 
 ### 配置设置客户ID功能
 
@@ -173,7 +173,7 @@ var vDil = DIL.create({
 
 请参阅下 [面的配置](#configure-sdks-legacy-dil) SDK部分。
 
-## 传统DIL {#legacy-dil}
+## 旧版DIL {#legacy-dil}
 
 如果你还没用， [!DNL Adobe Experience Platform Identity Service] 你真的应该用。 但是，我们理解，转到新代码需要仔细思考和测试。 在这些情况下，请检 `DIL.create` 查您的函数，确保正确设置，如下面的代码示例所示。
 
@@ -193,8 +193,8 @@ DIL.create({
 
 检查代码中的 [!DNL SDK] 方法，让您从移动 [!UICONTROL declared IDs] 设备 [!DNL Android] 和移动设备 [!DNL iOS] 传递。 库和代码库 [!DNL Android] 的 [!DNL iOS] 变量名称相同：
 
-* `dpid`: 跨设备数据源ID。
-* `dpuuid`: ( [!UICONTROL declared ID] 即用户ID)。
+* `dpid`:跨设备数据源ID。
+* `dpuuid`:( [!UICONTROL declared ID] 即用户ID)。
 
 <table id="table_2ACA3E5F316D4413B10A4403B786CC23"> 
  <thead> 
