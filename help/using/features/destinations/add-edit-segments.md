@@ -6,9 +6,9 @@ solution: Audience Manager
 title: 添加或编辑服务器到服务器目标的区段
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 55925e803e16580e0d9357d973405cf39370a8fd
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '258'
 ht-degree: 8%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 # 添加或编辑服务器到服务器目标的区段 {#add-edit-segments}
 
-您只能为服务器到服务器()目标添加或编辑[!DNL S2S]区段。 不能使用 [!DNL S2S] [!UICONTROL目标 [生成器](/help/using/features/destinations/destination-builder.md)]创建目标。 请与顾问联系以设置目 [!DNL S2S] 标。 按照以下说明为目标添加或编辑区 [!DNL S2S] 段。
+您只能为服务器到服务器()目标添加或编辑[!DNL S2S]区段。 不能使用创 [!DNL S2S] 建目标 [[!UICONTROL Destination Builder]](/help/using/features/destinations/destination-builder.md)。 请与顾问联系以设置目 [!DNL S2S] 标。 按照以下说明为目标添加或编辑区 [!DNL S2S] 段。
 
 <!-- destination-s2s-edit.xml -->
 
@@ -27,6 +27,6 @@ ht-degree: 8%
    * 在框 **[!UICONTROL Search and Add Segments]** 中，开始键入区段名称或单击 **[!UICONTROL Browse All Segments]** 浏览可用区段的列表。
    * 当您 **[!UICONTROL Add Selected Segments]** 找到要使用的区段时，单击。 添加区段会打开 [!UICONTROL Edit Mapping] 窗口。
    * 在 [!UICONTROL Edit Mapping]:
-      * **[!UICONTROL Mappings]**: 为此目标使 [用的键值对](../../features/destinations/key-value-pairs.md) 设置值。
-      * **[!UICONTROL Start Date]** 和 **[!UICONTROL End Date]**: 选择目标的开始和结束日期。 如果结束日期为空，则目标永不过期。
+      * **[!UICONTROL Mappings]**:为此目标使 [用的键值对](../../features/destinations/key-value-pairs.md) 设置值。
+      * **[!UICONTROL Start Date]** 和 **[!UICONTROL End Date]**:选择目标的开始和结束日期。 如果结束日期为空，则目标永不过期。
 3. 单击， **[!UICONTROL Save]** 然后单击 **[!UICONTROL Done]**。
