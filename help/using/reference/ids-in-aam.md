@@ -8,9 +8,9 @@ title: Audience Manager 中的 ID 索引
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
 feature: reference
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: b8b848ad04d1ec07c12e57d94e4f3c6e672dc102
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '943'
 ht-degree: 5%
 
 ---
@@ -56,5 +56,5 @@ ht-degree: 5%
 | [!DNL GAID] | 20914 | [!DNL Google Advertising ID]是由Android设备制造商提供的移动设备标识符。 这些ID表示运行操作系统 [!DNL Android] 的设备。 | 格式严格由32个小写十六进制数字组成，以5组显示，以连字符分隔，格式为8-4-4-4-12，共36个字符。 <br>示例: `e4fe9bde-caa0-47b6-908d-ffba3fa184f2`. |
 | [!DNL RIDA] | 121963 | [!DNL Roku IDs for Advertising] 表示 [!DNL Roku] 流设备。 | 格式严格由32个小写十六进制数字组成，以5组显示，以连字符分隔，格式为8-4-4-4-12，共36个字符。 <br>示例: `fcb2a29c-315a-5e6b-bcfd-d889ba19aada`. |
 | [!DNL MAID] | 389146 | [!DNL Microsoft Advertising ID]s是由每个设备 [!DNL Windows 10] 、每个用户生成的设备标识符。 | [!DNL MAID]s的格式为字母数字字符串。 |
-| [!DNL DUID] | 404660 | [!DNL Samsung DUID]s是智能电视提供的设 [!DNL Samsung] 备标识符。 | [!DNL Samsung] [!DNL DUID]s的格式为字母数字字符串。 |
-| [!DNL Amazon Fire TV Advertising ID] | 488258 | 表示运行该操作系统的设备 [!DNL Fire OS] 的设备标识符。 | 格式严格由32个小写十六进制数字组成，以5组显示，以连字符分隔，格式为8-4-4-4-12，共36个字符。 <br>示例: `df07c7dc-cea7-4a89-b328-810ff5acb15d` |
+| [!DNL TIFA] | 963906 | [!DNL Samsung Tizen IDs for Advertising] 是智能电视提供的设 [!DNL Samsung] 备标识符。 | [!DNL Samsung] [!DNL TIFA] ID的格式为字母数字字符串。 |
+| [!DNL Amazon Fire TV Advertising ID] | 488258 | 表示运行操作系统的设备 [!DNL Fire OS] 的设备标识符。 | 格式严格由32个小写十六进制数字组成，以5组显示，以连字符分隔，格式为8-4-4-4-12，共36个字符。 <br>示例: `df07c7dc-cea7-4a89-b328-810ff5acb15d` |
