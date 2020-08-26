@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## 概述 {#overview}
 
-Audience Manager和Adobe Experience Platform之间的受众共享功能允许您将Audience Manager特征和区段共享到Adobe Experience Platform，反之亦然。 您需要[ [!DNLAudience Manager连接器]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，以启用Audience Manager与Adobe Experience Platform之间的受众共享。
+Audience Manager和Adobe Experience Platform之间的受众共享功能允许您将Audience Manager特征和区段共享到Adobe Experience Platform，反之亦然。 您需要[[!DNL Audience Manager Connector]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，以启用Audience Manager与Adobe Experience Platform之间的受众共享。
 
 您可以在Experience Platform中使用Audience Manager特征和细分，向客户用户档案添加Audience Manager数据并从Experience Platform细分服务 [中受益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)。
 
