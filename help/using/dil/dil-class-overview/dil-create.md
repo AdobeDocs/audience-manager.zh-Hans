@@ -7,10 +7,10 @@ title: DIL 创建
 uuid: 6e054600-703c-4a97-af2a-8207c50013db
 feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 10%
+source-wordcount: '825'
+ht-degree: 11%
 
 ---
 
@@ -49,24 +49,24 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> containerNSID </code> </p> </td> 
    <td colname="col2"> <p>整数 </p> </td> 
-   <td colname="col3"> <p>此属性可设置由 <span class="keyword">Audience Manager</span> 用来进行 ID 同步的容器 ID。如果已在 <code> containerNSID </code> 多个站点 <span class="wintitle"> 上 </span> 部署DIL，则进行设置。 这些站点中的每个站点都有自己的容器ID和ID同步。 当您只有1个站点时，默认容器ID为0，您无需正确设置。 请与顾问联系，获取您的网站及其列表ID的容器。 </p> <p>在Adobe Experience Platform <a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html" format="https" scope="external"> 身份服 </a>务中，该属 <code> idSyncContainerID </code> 性与DIL <code> containerNSID </code> 中 <span class="wintitle"> 相对应 </span>。 如果您在多个站点上 <span class="wintitle"> 使 </span> 用 <i>DIL</i> 和ID服务，请注意： </p> <p> 
+   <td colname="col3"> <p>此属性可设置由 <span class="keyword">Audience Manager</span> 用来进行 ID 同步的容器 ID。如果DIL <code> containerNSID </code> 部署在多 <span class="wintitle"> 个 </span> 站点之间，则进行设置。 这些站点中的每个站点都有自己的容器ID和ID同步。 当您只有1个站点时，默认容器ID为0，您无需正确设置。 请与顾问联系，获取您的网站及其列表ID的容器。 </p> <p>在Adobe Experience Platform <a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html" format="https" scope="external"> 身份服 </a>务中，该财 <code> idSyncContainerID </code> 产对应 <code> containerNSID </code> 于DIL <span class="wintitle"></span>。 如果您正在多个站点中使 <span class="wintitle"> 用 </span> DIL <i>和</i> ID服务，请注意以下事项： </p> <p> 
      <ul id="ul_FF17004C21FC408BB8C8CCE670E45F37"> 
       <li id="li_FFB23BB3CD224678B0A1CF3731F6A206">对于每个站点，在和上设置相同的容器 <code> containerNSID </code> ID <code> idSyncContainerID </code>。 </li> 
       <li id="li_CC932D3A0D154F6C9566EF31260A14CF">DIL <span class="wintitle"> 和 </span> ID服务都将尝试将ID同步发送到我们的数据收集iFrame。 但是，iFrame可确保 <span class="wintitle"> DIL </span> 不会触发ID同步。 这可防止重复。 </li> 
-      <li id="li_0A909AD26DE94EAA960DC1374C7AF89F">只有 <span class="wintitle"> DIL </span> 会将数据发送到 <a href="../../features/destinations/destinations.md"> URL目标 </a>。 </li> 
+      <li id="li_0A909AD26DE94EAA960DC1374C7AF89F">只有 <span class="wintitle"> DIL </span> 会向URL目标 <a href="../../features/destinations/destinations.md"> 发送数据 </a>。 </li> 
      </ul> </p> <p>另请参 <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/idsyncontainerid.html" format="https" scope="external"> 阅idSyncContainerID </a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> declaredId </code> </p> </td> 
    <td colname="col2"> <p>对象 </p> </td> 
    <td colname="col3"> 
-    <draft-comment> 
-     <p>在每次事件 <a href="../../features/declared-ids.md"> 调用中 </a> 将Declared ID变量发送 <span class="keyword"> 给Audience Manager </span>。 </p> 
-    </draft-comment> <p> <code> delcaredId </code> 用于传递： </p> 
+    <!-- 
+     <p>Sends the <a href="../../features/declared-ids.md"> Declared ID variables </a> on every event call to <span class="keyword"> Audience Manager </span>. </p> 
+    --> <p> <code> delcaredId </code> 用于传递： </p> 
     <ul id="ul_75E64D7DDBD14670BB0BC7819F72036C"> 
-     <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>: 按Audience Manager分配给您的数据合作伙伴 <span class="keyword"> ID </span>。 </li> 
-     <li id="li_3BD52ADEA1E24B41B51AFA95D71DD1FC"> <code> dpuuid </code>: 您的用户唯一ID。 </li> 
-    </ul> <p> <p>重要：  仅对您的ID使用未编码值。 编码将创建多次编码的标识符。 </p> </p> <p> <p>注意：  如果您使用 <a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform身份 </a>服务，请使用方法而 <code> setCustomerIDs </code> 非DIL设置客 <span class="wintitle"> 户ID </span>。 See <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a>. </p> </p> </td> 
+     <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>:按Audience Manager分配给您的数据合作伙伴 <span class="keyword"> ID </span>。 </li> 
+     <li id="li_3BD52ADEA1E24B41B51AFA95D71DD1FC"> <code> dpuuid </code>:您的用户唯一ID。 </li> 
+    </ul> <p> <p>重要： 仅对您的ID使用未编码值。 编码将创建多次编码的标识符。 </p> </p> <p> <p>注意： 如果您使用 <a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform身 </a>份服务，请使用方法 <code> setCustomerIDs </code> 设置客户ID，而不 <span class="wintitle"> 是DIL </span>。 See <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a>. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> delayAllUntilWindowLoad </code> </p> </td> 
@@ -81,22 +81,22 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> disableDestinationPublishingIframe </code> </p> </td> 
    <td colname="col2"> <p>布尔值 </p> </td> 
-   <td colname="col3"> <p> <p>重要：  DIL版本8.0(2018 <span class="wintitle"> 年8 </span> 月发布)已弃用此元素。 请改用 <code> visitor.disableIdSyncs </code> Adobe Experience Platform <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external"></a> 标识服务中的函数。 </p> </p> <p> 如果 <code> true </code>，则不会将发布IFRAME的目标连接到DOM或触发目标。 默认值为 <code> false </code>. </p> </td> 
+   <td colname="col3"> <p> <p>重要： DIL版本8.0(2018 <span class="wintitle"> 年8 </span> 月发布)已弃用此元素。 请改用 <code> visitor.disableIdSyncs </code> Adobe Experience Platform <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external"> 身份 </a> 服务中的函数。 </p> </p> <p> 如果 <code> true </code>，则不会将发布IFRAME的目标连接到DOM或触发目标。 默认值为 <code> false </code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> disableIDSyncs </code> </p> </td> 
    <td colname="col2"> <p>布尔值 </p> </td> 
-   <td colname="col3"> <p> <p>重要：  DIL版本8.0(2018 <span class="wintitle"> 年8 </span> 月发布)已弃用此元素。 请改用 <code> visitor.disableIdSyncs </code> Adobe Experience Platform <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external"></a> 标识服务中的函数。 </p> </p> <p>禁用 ID 同步。在使用DIL v6.2+和访客ID服务时，必须禁用ID同步。 函 <code> visitorService </code> 数（请参见下面的示例代码）负责此操作。 </p> </td> 
+   <td colname="col3"> <p> <p>重要： DIL版本8.0(2018 <span class="wintitle"> 年8 </span> 月发布)已弃用此元素。 请改用 <code> visitor.disableIdSyncs </code> Adobe Experience Platform <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external"> 身份 </a> 服务中的函数。 </p> </p> <p>禁用 ID 同步。在使用DILv6.2+和访客ID服务时，必须禁用ID同步。 函 <code> visitorService </code> 数（请参见下面的示例代码）负责此操作。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> enableErrorReporting </code> </p> </td> 
    <td colname="col2"> <p>布尔值 </p> </td> 
-   <td colname="col3"> <p> 设置为 <code> true </code> 为页面上的所有DIL实例 <span class="wintitle"> 启 </span> 用错误报告。 仅适用于布 <code> true </code> 尔。 </p> </td> 
+   <td colname="col3"> <p> 设置为 <code> true </code> 为页面上的所有DIL <span class="wintitle"></span> 实例启用错误报告。 仅适用于布 <code> true </code> 尔。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> iframeAkamaiHTTPS </code> </p> </td> 
    <td colname="col2"> <p>布尔值 </p> </td> 
-   <td colname="col3"> <p> <p>重要：  DIL版本8.0(2018 <span class="wintitle"> 年8 </span> 月发布)已弃用此元素。 请改用 <code> visitor.idSyncSSLUseAkamai </code> Adobe Experience Platform <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/idsyncssluseakamai.html" format="https" scope="external"></a> 标识服务中的函数。 </p> </p> <p> 指定目标发布模板是否应当使用 Akamai 进行 HTTPS 连接。针对每个合作伙伴启用。 </p> </td> 
+   <td colname="col3"> <p> <p>重要： DIL版本8.0(2018 <span class="wintitle"> 年8 </span> 月发布)已弃用此元素。 请改用 <code> visitor.idSyncSSLUseAkamai </code> Adobe Experience Platform <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/idsyncssluseakamai.html" format="https" scope="external"> 身份 </a> 服务中的函数。 </p> </p> <p> 指定目标发布模板是否应当使用 Akamai 进行 HTTPS 连接。针对每个合作伙伴启用。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> mappings </code> </p> </td> 
@@ -116,7 +116,7 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> removeFinishedScriptsAndCallbacks </code> </p> </td> 
    <td colname="col2"> <p>布尔值 </p> </td> 
-   <td colname="col3"> <p> 删除脚本和回呼。 默认值为 <code> False </code>. 仅应用于当 <span class="wintitle"> 前 </span> DIL实例。 随v3.3一起发布。 </p> </td> 
+   <td colname="col3"> <p> 删除脚本和回呼。 默认值为 <code> False </code>. 仅应用于当 <span class="wintitle"> 前DIL </span> 实例。 随v3.3一起发布。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> uuidCookie </code> </p> </td> 
@@ -126,7 +126,7 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> visitorService </code> </p> </td> 
    <td colname="col2"> <p>对象 </p> </td> 
-   <td colname="col3"> <p>DIL 6. <span class="wintitle"> 2或 </span> 更高版本必需。 </p> <p> DIL依赖Adobe Experience Platform <code> setCustomerIDs </code> 标识服务中 <span class="wintitle"> 的函数 </span> 将声明的ID传递到 <span class="keyword"> Audience Manager </span>。 See <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a> for more information. </p> </td> 
+   <td colname="col3"> <p>DIL <span class="wintitle"> 6. </span> 2或更高版本必需。 </p> <p> DIL依赖 <code> setCustomerIDs </code> Adobe Experience Platform身份 <span class="wintitle"> 服务中的 </span> 函数将声明的ID传递 <span class="keyword"> 到Audience Manager </span>。 See <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a> for more information. </p> </td> 
   </tr> 
  </tbody> 
 </table>
