@@ -7,9 +7,9 @@ title: 定义的目标宏
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 2%
 
 ---
@@ -49,14 +49,14 @@ ht-degree: 2%
     <ul id="ul_697508B437EB4090B121AFA5D519AFBE"> 
      <li id="li_32D9F72A7D1543A892DC7E1529E98A96">数据源ID: <code> 1</code> </li> 
      <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">内部客户ID: <code> CustomerABC</code> </li> 
-     <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">声明的ID: 合作伙伴希望将这些值作为声明的ID进行传递 <code> 1:CustomerABC</code>。 </li> 
+     <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">声明的ID:合作伙伴希望将这些值作为声明的ID进行传递 <code> 1:CustomerABC</code>。 </li> 
     </ul> <p>为此，Audience Manager <code>%dpid_<i>data source id</i>%</code>合作伙 <span class="keyword"> 伴将</span> 如下格式化宏： </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
     </ul> <p>宏将替换 <code> 1</code> 为 <code> CustomerABC</code>。 </p> <p> 
-     <draft-comment>
-       基于AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
-     </draft-comment> </p> </td> 
+     <!--
+       Based on AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
+     --> </p> </td> 
   </tr> 
   <tr>
     <td><p><code>${GDPR}</code></p></td>
@@ -106,8 +106,8 @@ ht-degree: 2%
 
 缓存破坏功能可防止浏览器保存和重复使用内容。 此技术使用将随机数或时间戳插入URL字符串的代码，这使它对浏览器来说是独一无二的。 因此，每个调 `HTTP` 用被计为对服务器的单独请求。 强制对每个请求进行新的服务器调用有助于保持报告准确性并减少差异。 [!DNL Audience Manager] 为缓存缓冲区提供两个宏：
 
-* `%rnd%`: 在URL中插入随机数。
-* `%timestamp%`: 将Unix日期／时间插入URL。
+* `%rnd%`:在URL中插入随机数。
+* `%timestamp%`:将Unix日期／时间插入URL。
 
 ## 比较 `%rnd%` 和 `%timestamp%` {#compare-rnd-timestamp}
 
