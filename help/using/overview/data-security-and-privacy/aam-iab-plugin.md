@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 适用于 IAB TCF 的 Audience Manager 插件
 feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
 workflow-type: tm+mt
 source-wordcount: '2449'
-ht-degree: 40%
+ht-degree: 39%
 
 ---
 
@@ -64,7 +64,7 @@ Audience Manager可以帮助您尊重用户的隐私权选择，并为您提供�
 要将IAB TCF的Audience Manager插件与Audience Manager一起使用，您必须满足以下先决条件：
 
 1. 您必须使用 Adobe Experience Platform Identity Service (ECID) 版本 5 或更高版本。[下载](https://github.com/Adobe-Marketing-Cloud/id-service/releases) ECID 的最新版本。
-2. You must be using Audience Manager [!DNL Data Integration Library] (DIL) version 9.0 or newer, downloadable from [here](https://github.com/Adobe-Marketing-Cloud/dil/releases). 请阅读 [Audience Manager 中的 DIL 文档](../..//dil/dil-overview.md)。我们建议使 [用Adobe Launch](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html) ，以实现最简单的DIL实施，以便Audience Manager。
+2. You must be using Audience Manager [!DNL Data Integration Library] (DIL) version 9.0 or newer, downloadable from [here](https://github.com/Adobe-Marketing-Cloud/dil/releases). 请阅读 [Audience Manager 中的 DIL 文档](../..//dil/dil-overview.md)。我们建议使用 [Adobe启动](https://docs.adobe.com/content/help/zh-Hans/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html) ，以实现最简单的Audience Manager实施。
 3. Alternatively, if you use [!DNL Server-Side Forwarding] (SSF) to import data into Audience Manager, you must upgrade to the latest version of AppMeasurement. 使用 [Analytics 代码管理器](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-tools/code-manager-admin.html)下载 AppMeasurement。
 4. 您必须使用与IAB TCF v2.0集成并在IAB TCF中注册的商业类或您自己的同意管理平台(CMP)。 请参阅[在 IAB 框架内注册的 CMP](https://iabeurope.eu/cmp-list/)。
 
@@ -76,7 +76,7 @@ Audience Manager可以帮助您尊重用户的隐私权选择，并为您提供�
 
 要在 Audience Manager 中启用 IAB TCF 支持，请阅读我们关于[如何通过选择加入来设置 IAB](https://docs.adobe.com/content/help/zh-Hans/id-service/using/implementation/opt-in-service/iab.html) 的文档。
 
-执行此操作的最简单方法是使用 [Adobe Experience Platform启动](https://docs.adobe.com/content/help/en/launch/using/overview.html)[!DNL ECID Opt-in] 添加属性。 请阅读有关 [ECID 选择加入扩展](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)的文档，了解如何设置 Launch 扩展。
+最简单的方法是使用 [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html) ，添 [!DNL ECID Opt-in] 加您的属性。 请阅读有关 [ECID 选择加入扩展](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)的文档，了解如何设置 Launch 扩展。
 
 ## 使用 IAB 框架时的用户选择工作流程 {#user-choice-workflow}
 
@@ -90,7 +90,7 @@ Audience Manager可以帮助您尊重用户的隐私权选择，并为您提供�
 
 有关IAB TCF v2.0中包括的各种用途和权限的详细信息，请参阅IAB欧洲透明 [度和同意框架政策](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes)。
 
-用户可以出于多种目的和供应商的考虑授予他们的同意或合法权益（如果可用）。 例如，用户可以同意在设备上存储信息、开发和改进产品，并同意CMP显示的所有第三方供应商。
+用户可以出于多种目的和供应商的考虑授予其同意或合法权益（如果可用）。 例如，用户可以同意在设备上存储信息、开发和改进产品，并同意CMP显示的所有第三方供应商。
 
 或者，在另一个例子中，它们可以出于所有目的同意或合法利益，但只准许《议定书》/《公约》缔约方会议所显示的少数供应商同意或合法利益。
 
@@ -102,9 +102,9 @@ Audience Manager可以帮助您尊重用户的隐私权选择，并为您提供�
 
 Audience Manager评估存储在IAB TC字符串中的用户选择，以用于以下目的，在IAB欧洲透明度和同 [意框架策略中定义](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes)。 此外，您还可以在全局供应商列表 [中找到用途](https://vendorlist.consensu.org/vendorlist.json)。
 
-* **目的1**: 在设备上存储和／或访问信息；
-* **目的十**: 开发和改进产品；
-* **特殊目的1**: 确保安全、防止欺诈和调试。
+* **目的1**:在设备上存储和／或访问信息；
+* **目的十**:开发和改进产品；
+* **特殊目的1**:确保安全、防止欺诈和调试。
 
 >[!IMPORTANT]
 >
@@ -118,7 +118,7 @@ Audience Manager的工作方式取决于IAB TC字符串是否包含用户同意�
 
 我们还会检查您在Audience Manager下处理的所有目的地是否获得用户同意，只要这些目的地是在IAB TCF中注册的。
 
-| 当用户&#x200B;*表示同意*&#x200B;时，Audience Manager： | 当用户&#x200B;*拒绝同意*&#x200B;时，Audience Manager： |
+| When your user *provides* consent, Audience Manager: | 当用户&#x200B;*拒绝同意*&#x200B;时，Audience Manager： |
 |---|---|
 | <ul><li>执行您请求的所有 Audience Manager 用例。</li><li>Conveys consent to third parties in ID syncs (by passing `gdpr = 1` and the consent string as `gdpr_consent` on ID sync calls).</li><li>评估并遵循通过广告服务器像素传递的同意。</li><li>执行合作伙伴启动的 ID 同步。</li></ul> | <ul><li>在您的实例中不存储任何新的用户数据。这包括合作伙伴 ID、信号、特征或像素数据。</li><li>不启动第三方 ID 同步。</li><li>不执行合作伙伴启动的 ID 同步。</li><li>从进一步的数据收集中选择用户。</li></ul> |
 
@@ -129,7 +129,7 @@ Audience Manager的工作方式取决于IAB TC字符串是否包含用户同意�
 1. 用户访问您的某个 Web 资产。只要您使用最新版的 ECID 和 DIL 库（请参阅[先决条件](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#prerequisites)），就会触发选择加入流程。
 2. Audience Manager 检查 IAB 流程是否适用 (`isIabContext=true`)。请参阅[建议和实施方式](aam-iab-plugin.md#recommendations)。
 3. Audience Manager checks whether GDPR applies (`gdpr = 1`) and whether there is a CMP, registered with IAB TCF, on your web property. 例如，这将适用于从欧洲合并访问的用户。 请注意，作为出版商，您有责任设置GDPR标志。
-4. If GDPR applies, Audience Manager checks the IAB TC string, passed in the `gdpr_consent` parameter, for the required consent. Audience Manager需要同意在设备上存储和／或访问信息([IAB TCF用途1](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes))、开发和改进产品([IAB TCF用途10](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes))，以及Audience Manager供应商同意存储、处理或激活数据。
+4. If GDPR applies, Audience Manager checks the IAB TC string, passed in the `gdpr_consent` parameter, for the required consent. Audience Manager需要同意在设备(IAB TCF用途1[)上存储和／或访问信息，开发和改进产品(](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes)IAB TCF用途10[](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes))，以及Audience Manager供应商同意存储、处理或激活数据。
 5. If the IAB TC string is present and it contains the required consent, Audience Manager passes the IAB TC string on to our [data collection servers](../../reference/system-components/components-data-collection.md) (DCS).
 6. Audience Manager通过在浏览器 [上设置](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/ec-cookies/cookies-am.html) demdex cookie来做出响应，并启动并接受第三方ID同步。
 7. 或者，如果在步骤4中传递的IAB TC字符串不包含所有所需的权限，Audience Manager不会收集、处理或激活任何用户数据，也不会执行或启动ID同步。 此外，它还会从您处理的目标中选择用户。
