@@ -7,7 +7,7 @@ title: 批量管理工具疑难解答提示
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 feature: baaam
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 5%
@@ -53,15 +53,15 @@ ht-degree: 5%
   <tr> 
    <td colname="col1"> <b>身份验证错误</b> </td> 
    <td colname="col2"> 
-    <b>更新至最新版Microsoft Excel</b>: 当发布新版Microsoft Excel并且您使用的是旧版本时，您可能会在批量管理工作表中遇到身份验证错误。 更新至Microsoft Excel的最新版本以解决身份验证错误。
+    <b>更新至最新版Microsoft Excel</b>:当发布新版Microsoft Excel并且您使用的是旧版本时，您可能会在批量管理工作表中遇到身份验证错误。 更新至Microsoft Excel的最新版本以解决身份验证错误。
 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>长时间延迟</b> </td> 
    <td colname="col2"> 
     <ul id="ul_AA6F414024B2475AB1C0B46DC3FF0B36"> 
-     <li id="li_ECC83AC39D7142519AA9A223DB8FCF23"> <b>关闭兼容性模式</b>: 检查您是否在Microsoft Excel的兼容性模式下打开了其他工作表。 兼容性模式可以增加运行时数。 关闭在此模式下可能打开的所有电子表格，然后重试批量请求。 </li> 
-     <li id="li_234BFCF563234DE198884F33AB75280D"> <b>系统资源</b>: 有限的系统资源导致长时间的延迟。 在发出批量请求之前，尝试关闭所有其他项目。 </li> 
+     <li id="li_ECC83AC39D7142519AA9A223DB8FCF23"> <b>关闭兼容性模式</b>:检查您是否在Microsoft Excel的兼容性模式下打开了其他工作表。 兼容性模式可以增加运行时数。 关闭在此模式下可能打开的所有电子表格，然后重试批量请求。 </li> 
+     <li id="li_234BFCF563234DE198884F33AB75280D"> <b>系统资源</b>:有限的系统资源导致长时间的延迟。 在发出批量请求之前，尝试关闭所有其他项目。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -69,7 +69,7 @@ ht-degree: 5%
    <td colname="col2">如果单击操作按钮，则不会发生任何情况： 
     <ul id="ul_142E63CDD556414AB639E51734FEDBCF"> 
      <li id="li_DBB6C819603D46B5AECC9C854FDAFDF1">确保为选择操作设置正确的标题集。 </li> 
-     <li id="li_391C9031907A4085BDAD42054960045C">请确保您正在为复制的标题使用正确的工作表。 </li> 
+     <li id="li_391C9031907A4085BDAD42054960045C">确保您正在为复制的标题使用正确的工作表。 </li> 
      <li id="li_76A7241989204933858621FAAB5C3408">检查要在批量操作中使用的数据的位置。 列A中的所有标题开始，第1行。 所有数据都会进入相应的标题中，从A列第2行（紧挨着标题的下方）开始。 </li> 
     </ul> </td> 
   </tr> 
@@ -78,5 +78,5 @@ ht-degree: 5%
 
 ## 错误消息
 
-有时，进行批量更改时会收到错误消息。 要解释错误消息，请参阅我 [们的API文档中](/help/using/api/rest-api-main/aam-api-getting-started.md) 的“Response Codes Defined”（响应代码定义）。
+有时，进行批量更改时会收到错误消息。 要解释错误消息，请参阅我 [们的API文档中](/help/using/api/rest-api-main/aam-api-getting-started.md#response-codes-defined) “定义的响应代码”。
 
