@@ -7,9 +7,9 @@ title: 每日特征变化报表
 uuid: 4e82bb17-d447-4ed1-a4fc-e15b0f1b47f0
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '772'
 ht-degree: 1%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Audience Manager中的每日特征变化报告遵循RBAC原则。 您只能根据您所属的RBAC用户组来查看您 [有权访问的数](/help/using/features/administration/administration-overview.md) 据源中的特征。
+>Audience Manager中的每日特征变化报告遵循RBAC原则。 您只能根据您所属的RBAC用户组来查看您 [有权访问的数据](/help/using/features/administration/administration-overview.md) 源中的特征。
 
 标准偏差测量偏离平均值（或平均／预期值）的偏差或偏差量。 标准差较低，表明数据点趋近于均值。 高标准偏差表示数据点分布在大范围值中。
 
-![](assets/daily_trait_variation.png)
+![屏幕截图每日特征变化报告](assets/daily_trait_variation.png)
 
 使用列表 [!UICONTROL Date] 为报表选择一个或多个日期。 在列表底部显示一个彩色编码条形图，它以可视方式代表所有选定日期中所有特征的标准偏差范围。 黑色垂直线表示平均值。
 
@@ -41,14 +41,14 @@ ht-degree: 1%
 
 ## 用例 {#use-cases}
 
-**示例#1**: 此报表在您具有具有高季节性级别的特征时非常有用。 例如，假设您的在线商店正在测试各种类型和价格的季节性促销活动。 您具有以下特征，定义请参阅 [!DNL Audience Manager]:
+**示例#1**:此报表在您具有具有高季节性级别的特征时非常有用。 例如，假设您的在线商店正在测试各种类型和价格的季节性促销活动。 您在中定义了以下特征 [!DNL Audience Manager]:
 
 * `productPage == "December Promotion"`
 * `price > "500"`
 
 假设您在12 [!UICONTROL Daily Trait Variation] 月20日运行报告，并注意到过去30天内上述特征存在明显的正偏差。 这可能表明您的访客正在寻找您在季节性促销中提及的产品。 为了利用这一趋势，您可以投入更多精力，将特定产品类别的创意定位到对其感兴趣的访客。
 
-**示例#2**: 此报告可以帮助您确定与标记问题或特征错误配置相关的定位异常。 假设您根据在线商店的类别定义了以下特征：
+**示例#2**:此报告可以帮助您确定与标记问题或特征错误配置相关的定位异常。 假设您根据在线商店的类别定义了以下特征：
 
 * `productPage == "smartphones"`
 
@@ -56,8 +56,8 @@ ht-degree: 1%
 
 一个月后，您会运行报 [!UICONTROL Daily Trait Variation] 告并注意到该特征存在较大的负偏 `productPage == "smartphones"` 差，但根据网站分析，访客数量已增加。 根据此信息，您会意识到您尚未更新新产 [!DNL Audience Manager] 品页面中的特征，因此您需要创建以下特征：
 
-* productPage == &quot;samsung&quot;
-* productPage == &quot;apple&quot;
-* productPage == &quot;waue&quot;
+* `productPage == "samsung"`
+* `productPage == "apple"`
+* `productPage == "huawei"`
 
 完成此操作后，您将看到受众符合新创建特征的资格。
