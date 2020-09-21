@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 71e129a39cf85d5f07979ede8f3aa862f93b6512
+source-git-commit: 91ed0e755982375f41ed5eb484fa8e60bbe6f8e5
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 67%
+source-wordcount: '1024'
+ht-degree: 64%
 
 ---
 
@@ -115,6 +115,12 @@ To produce relevant results, the [!UICONTROL Predictive Audiences] algorithm eva
 **被分类为其中一个预测区段的用户能否被重新分类为其他[!UICONTROL Predictive Audiences]区段？**
 
 能。由于该算法每天都会进行训练，因此就特征得分而言，它会根据每个角色进行更改。如果属于 [!UICONTROL Predictive Audiences] 区段的用户处于活动状态，则其特征得分会发生更改，从而可以根据过去 30 天的活动更改分类。
+
+ 
+
+**能否向常规细分添加预测特征？**
+
+在将预测特征添加到常规区段时，该区段会变为预测区段。 因此，所有关联用户档案都被取消分段。 预测细分只能发送到实时目标。
 
  
 
