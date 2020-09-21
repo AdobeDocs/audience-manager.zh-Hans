@@ -7,9 +7,9 @@ title: 趋势报表
 uuid: bedbe7d4-7cbb-4403-9104-312f9230aea1
 feature: general & trend reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: d1edc392c2017f4625f0494d50463c395248918f
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '640'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ t_working_with_trend_reports.xml
 1. 在仪表板 **[!UICONTROL Analytics]** 中，单击 **[!UICONTROL Trend Reports]**。
 1. 从下 **[!UICONTROL Report Type]** 拉列表中，选择所需的类型： **[!UICONTROL Trait]** 或 **[!UICONTROL Segment]**&#x200B;者
 1. 单击日期框以显示日历，然后选择报表的开始和结束日期。
-1. 指定显示间隔： 1、7、14、30、60或90天。
+1. 指定显示间隔：1、7、14、30、60或90天。
 1. 按名称或ID搜索特征或区段。
 1. 在文件夹列表中，将要报告的特征或区段拖放到右 [!UICONTROL Selections] 侧的面板中。
    * 为获得最佳性能， [!UICONTROL Trend] 请一次运行少于20个特征或区段的报告。
@@ -88,7 +88,7 @@ t_working_with_trend_reports.xml
 
 * [!UICONTROL Unique Trait Realizations] 是在所选时间范围内将特征添加到其访客的匿名设备用户档案数。
 * [!UICONTROL Total Trait Realization] 是所选时间范围内匿名鼠标特征实现的总数。
-* [!UICONTROL Total Trait Population] 是匿名设备访客在其用户档案上具有此特征的数量。
+* [!UICONTROL Total Trait Population] 是您的匿名设备访客在其用户档案上具有此特性的数量。
 
 按以下方式筛选结果时 [!UICONTROL Cross-Device ID]:
 
@@ -102,13 +102,13 @@ t_working_with_trend_reports.xml
 
 观看以下视频，详细了解跨设备指标的工作方式。
 
->[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://video.tv.adobe.com/v/33445/?quality=12)
 
 ## 区段的趋势报告结果 {#segment-report-results-traits}
 
 运行并选择报告类型时， [!UICONTROL Trend Report] 可以 **[!UICONTROL Segments]** 使用以下过滤器。
 
-* **[!UICONTROL Real-time Segment Population]**: 在选定的时间范围内限定区段的访客数。
-* **[!UICONTROL Total Segment Population]**: 符合区段资格的访客总数。
+* **[!UICONTROL Real-time Segment Population]**:在选定的时间范围内限定区段的访客数。
+* **[!UICONTROL Total Segment Population]**:符合区段资格的访客总数。
 
 ![趋势报告段](assets/trend-report-segments.png)
