@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 91ed0e755982375f41ed5eb484fa8e60bbe6f8e5
+source-git-commit: 04c638289878ff79070487d7d8cbb5c9454d93d6
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1023'
 ht-degree: 64%
 
 ---
@@ -106,6 +106,8 @@ To produce relevant results, the [!UICONTROL Predictive Audiences] algorithm eva
 
 仔细分析您的用例，并 [!UICONTROL trait] 确定您希望模型学习的类型以及希望模型用于分类的数据类型。
 
+ 
+
 **目标受众中不属于任何角色特征/区段的用户是否无法分类？**
 
 是的，如果用户在其配置文件中没有任何特征就不能被分类。在这种情况下，用户针对所有角色特征/区段获得的匹配得分为 0，因此不会被分类为任何预测区段。
@@ -120,7 +122,7 @@ To produce relevant results, the [!UICONTROL Predictive Audiences] algorithm eva
 
 **能否向常规细分添加预测特征？**
 
-在将预测特征添加到常规区段时，该区段会变为预测区段。 因此，所有关联用户档案都被取消分段。 预测细分只能发送到实时目标。
+将预测特征添加到常规区段时，它将成为预测区段。 因此，所有关联用户档案都被取消分段。 预测细分只能发送到实时目标。
 
  
 
