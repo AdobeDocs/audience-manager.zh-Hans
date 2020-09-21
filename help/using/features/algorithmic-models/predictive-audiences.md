@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 1be20c2412a272e6374b8b84e6a5c1628da18497
+source-git-commit: 91ed0e755982375f41ed5eb484fa8e60bbe6f8e5
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 8%
+source-wordcount: '1551'
+ht-degree: 7%
 
 ---
 
@@ -113,6 +113,9 @@ ht-degree: 8%
 * 对于每个模型，您最多可以选择50个基本特征／区段。
 * 目前不支持第二方和第三方数据 [!UICONTROL Predictive Audiences]。
 * 受众分类只针对实时的第一方受众。 载入的第一方受众分类在将来的更新中可能受支持。
+   >[!IMPORTANT]
+   > 如果向常规区段添加预测特征，它将成为预测区段。 因此，所有关联用户档案都被取消分段。
+
    >[!IMPORTANT]
    > 目前，只能在实时目标中激活预测细分。 预 [!UICONTROL Total Segment Population] 测区 [!UICONTROL Addressable Audience] 段和预测区段显示为0，不支 [持批出站数据传输](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)[!UICONTROL Predictive Audiences]。 此行为将在以后的更新中发生更改。
 * [!UICONTROL Predictive Audiences] 根据您的第一方特征从所有第一方数据源执行受众分类。
