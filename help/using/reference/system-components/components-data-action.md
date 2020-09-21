@@ -7,7 +7,7 @@ title: 数据操作组件
 uuid: c4c4cc46-8c96-4ef5-8269-571cc5ac9276
 feature: system components
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 3%
@@ -58,21 +58,21 @@ c_compact.xml
 * 为cookie和区段提供快速（30秒内）同步。 它可以同步 [!DNL Audience Manager] cookie和／或合作伙伴cookie。
 * 实时数据传输。 [!UICONTROL IRIS] 负责将实时细分资格事件发送给合作伙伴或其他目标。 此数据为JSON格式，并通过HTTP请求发 `POST` 送。
 
-* 批量服务器到服务器数据传输： 如果您与服务器交换大量 [!DNL Audience Manager]数 [!UICONTROL IRIS] 据，则是服务器用来传输数据的系统。
+* 批量服务器到服务器数据传输：如果您与服务器交换大量 [!DNL Audience Manager]数 [!UICONTROL IRIS] 据，则是服务器用来传输数据的系统。
 
-* 可靠的基础架构，可大规模运行并且容错。 强大的 [!UICONTROL IRIS] 系统包括Amazon SQS、Amazon EC2和Cassandra。
+* 可靠的基础架构，可大规模运行并且容错。 强大的系 [!UICONTROL IRIS] 统包括AmazonSQS、AmazonEC2和卡桑德拉。
 
 **区段映射规则**
 
 要优化与区段目 [!UICONTROL IRIS] 标之间的流量， [!UICONTROL IRIS] 请根据一组规则将区段发送到目标。
 
-1. **新细分资格**: 当设备符合新区段的条件时，会 [!UICONTROL IRIS] 将与该设备关联的所有区段发送到映射到这些区段的所有目标。
+1. **新细分资格**:当设备符合新区段的条件时，会 [!UICONTROL IRIS] 将与该设备关联的所有区段发送到映射到这些区段的所有目标。
 
-1. **新细分取消资格**: 当设备不再符合区段资格时，会将与该设备 [!UICONTROL IRIS] 关联的所有区段资格和取消资格发送到映射到这些区段的所有目标。
+1. **新细分取消资格**:当设备不再符合区段资格时，会将与该设备 [!UICONTROL IRIS] 关联的所有区段资格和取消资格发送到映射到这些区段的所有目标。
 
-1. **目标映射更新**: 更新目标映射时，将 [!UICONTROL IRIS] 与设备关联的所有区段发送到映射到这些区段的所有目标，Audience Manager下次查看设备时。
+1. **目标映射更新**:更新目标映射时，将 [!UICONTROL IRIS] 与设备关联的所有区段发送到映射到这些区段的所有目标，Audience Manager下次查看设备时。
 
-1. **设备图形更新**: 当任何设备ID从用于评估区段的设备图中添加或删除时，会将与该设备关联的所有区段 [!UICONTROL IRIS] 发送到映射到这些区段的所有目标，Audience Manager下次查看设备时。
+1. **设备图形更新**:当任何设备ID从用于评估区段的设备图中添加或删除时，会将与该设备关联的所有区段 [!UICONTROL IRIS] 发送到映射到这些区段的所有目标，Audience Manager下次查看设备时。
 
 >[!IMPORTANT]
 >
@@ -82,7 +82,7 @@ c_compact.xml
 
 以下示例包含来自的实时区段数据 [!UICONTROL IRIS]。 请记住，这只是样本数据。 每个客户可能有不同的格式要求，因此内容可能会有所不同。
 
-```
+```json
 {
     "ProcessTime": "Tue Jul 21 19:12:45 UTC 2015",
     "Client_ID": "111111",
