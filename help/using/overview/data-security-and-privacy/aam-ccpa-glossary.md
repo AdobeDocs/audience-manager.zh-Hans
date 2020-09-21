@@ -6,7 +6,7 @@ solution: Audience Manager
 title: CCPA 术语表
 feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 100%
@@ -55,4 +55,3 @@ Audience Manager 希望与您密切合作，通过数据管理功能和“通过
 >[!MORELIKETHIS]
 >
 >[数据隐私概述](/help/using/overview/data-security-and-privacy/data-privacy.md)
-
