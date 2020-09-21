@@ -1,15 +1,15 @@
 ---
-description: 数据文件包含印象、单击或转换数据。 格式正确后，您可以将此Audience Manager导入受众，并在优化报告和可操作日志文件中使用。 根据本节中的规范设置数据文件的格式。
-seo-description: 数据文件包含印象、单击或转换数据。 格式正确后，您可以将此Audience Manager导入受众，并在优化报告和可操作日志文件中使用。 根据本节中的规范设置数据文件的格式。
+description: 数据文件包含印象、单击或转换数据。 格式正确后，您可以将此Audience Manager导入Audience Optimization，并在报告和可操作日志文件中使用。 根据本节中的规范设置数据文件的格式。
+seo-description: 数据文件包含印象、单击或转换数据。 格式正确后，您可以将此Audience Manager导入Audience Optimization，并在报告和可操作日志文件中使用。 根据本节中的规范设置数据文件的格式。
 seo-title: Audience Optimization 报表的数据文件以及可操作的日志文件
 solution: Audience Manager
 title: Audience Optimization 报表的数据文件以及可操作的日志文件
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 feature: log files
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1010'
 ht-degree: 5%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 5%
 
 # Audience Optimization 报表的数据文件以及可操作的日志文件 {#data-files-for-audience-optimization-reports}
 
-数据文件包含印象、单击或转换数据。 格式正确后，您可以将此数据导入Audience Manager，以在受众优化报 [告中视图它](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) ，并通过可操作日志文件 [使用数据创建特征](/help/using/integration/media-data-integration/actionable-log-files.md)。 根据本节中的这些规范设置数据文件的格式。
+数据文件包含印象、单击或转换数据。 格式正确后，您可以将此Audience Manager导入Audience Optimization，以在报 [表中视图](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) ，并通过可操作日志文件 [使用数据创建特征](/help/using/integration/media-data-integration/actionable-log-files.md)。 根据本节中的这些规范设置数据文件的格式。
 
 ## 概述 {#overview}
 
-通过命名正确且格式正确的受众文件，您可以将印象、单击或转换数据到优 [化报告中](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)。 当您与未集成的合作伙伴合作，并且希望 [!DNL Audience Manager] 使用该报表包中的数据时，此功能非常有用。 此过程需要单独的文件来获得印象、单击和转换数据。 不要将这些事件混合到单个文件中。
+使用命名正确且格式正确的数据文件，可以将印象、单击或转换数据到Audience Optimization [报告中](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)。 当您与未集成的合作伙伴合作，并且希望 [!DNL Audience Manager] 使用该报表包中的数据时，此功能非常有用。 此过程需要单独的文件来获得印象、单击和转换数据。 不要将这些事件混合到单个文件中。
 
 数据文件必须附带元数据文件。 元数据文件内容将数据文件信息与报表菜单中相关的、可读标签相匹配。 有关详细信息，请参 [阅元数据文件的概述和映射](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
 
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 以下语法定义格式良好的数据文件名的结构。 注意， *斜体* 表示一个变量占位符，它会根据文件内容而改变。
 
-**语法：** <pre><i>事件类型</i>_<i>yyyymmdd</i></code></pre>
+**语法：**`event type_yyyymmdd`
 
 在文件名中：
 
@@ -39,15 +39,15 @@ ht-degree: 5%
 
 根据这些要求，根据数据文件的内容命名它们，如下所示：
 
-* 印象数据： <pre>impressions_<i>yyymmd</i>.gz</code></pre>
-* 单击数据： <pre>clicks_<i>yyymmdd</i>.gz</code></pre>
-* 转换数据： <pre>conversions_<i>yyymmdd</i>.gz</code></pre>
+* 印象数据： `impressions_yyyymmdd.gz`
+* 单击数据： `clicks_yyyymmdd.gz`
+* 转换数据： `conversions_yyyymmdd.gz`
 
 ## Content Format for Data Files {#content-format}
 
 以下语法定义格式良好的数据文件中的内容结构。 注意， *斜体* 表示变量占位符，并替换为实际数据文件中的标签。
 
-**语法：** <pre><i>标题标签1</i> |标 <i>题标签2</i> ...标 <i>题标签n</i> |版 <i>本</i></code></pre>
+**语法：**`header label 1 | header label 2 ... header label n | version`
 
 在文件内容中：
 
@@ -119,7 +119,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p>收入 </p> </td> 
-   <td colname="col2"> <p>购买或其他转换金额。 数据类型： 浮动。 </p> <p> <i>仅适用于转换数据文件。</i> </p> </td> 
+   <td colname="col2"> <p>购买或其他转换金额。 数据类型：浮动。 </p> <p> <i>仅适用于转换数据文件。</i> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>其他数据 </p> </td> 
@@ -131,7 +131,7 @@ ht-degree: 5%
     <ul id="ul_DA8230D167F241F2B53F29367874D4B1"> 
      <li id="li_2BC2EBCAE12541029A5F62AC0785E7FE"> <code> 0</code>: 展示次数 </li> 
      <li id="li_2A4B1354891144D587624228D8FB5E77"> <code> 1</code>: 单击 </li> 
-     <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>: 未归属或未知 </li> 
+     <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>:未归属或未知 </li> 
     </ul> <p> <i>仅适用于转换数据文件。</i> </p> </td> 
   </tr> 
   <tr> 
@@ -143,7 +143,7 @@ ht-degree: 5%
 
 ## Delivery Methods for Data Files {#delivery-methods}
 
-将您的印象、单击或转换数据文件上传到Amazon S3目录中，以便您的帐 [!DNL Audience Manager] 户。 有关投放/目录路径、文件处理时间和更新的信息，请参阅本节。
+将您的印象、单击或转换数据文件上传到您帐户的AmazonS3目 [!DNL Audience Manager] 录。 有关投放/目录路径、文件处理时间和更新的信息，请参阅本节。
 
 >[!IMPORTANT]
 >
@@ -153,7 +153,7 @@ ht-degree: 5%
 
 数据存储在目录中每个客户的单独命名空间 [!DNL Amazon S3] 中。 文件路径遵循下面显示的语法。 Note, *italics* indicates a variable placeholder. 其他元素是常量或键，不会更改。
 
-**语法：** <pre>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>文件类型</i>_<i>yyymmdd</i></code></pre>
+**语法：**`.../log_ingestion/pid=AAM ID/dpid=d_src/logs/file type_yyyymmdd`
 
 下表定义了文件投放路径中的每个元素。
 
