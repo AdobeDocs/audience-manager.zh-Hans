@@ -7,9 +7,9 @@ title: 入站数据文件的 FTP 名称和文件大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
+source-git-commit: d6d15ed68cd70fd7da1037a7cb397a00d252e4dd
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '868'
 ht-degree: 9%
 
 ---
@@ -57,9 +57,9 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
-   <td colname="col2"> <p>一个D，告诉 <span class="keyword"> Audience Manager</span> ，数据文件是否包含您自己的用户ID、Android或iOS ID。 接受以下选项： </p> 
+   <td colname="col2"> <p>一个D，告诉 <span class="keyword"> Audience Manager</span> ，数据文件是否包含您自己的用户ID、Android或iOS ID。 接受以下选项：</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>数据合作伙伴ID:</b> 这是Audience Manager分配给您的公司或组织的唯一ID。 在发送包含您自己的用户ID的数据时，请在文件名中使用此分配的ID。 例如，告 <code>...ftp_dpm_21_123456789.sync</code> 诉Audience Manager <span class="keyword"> ID为</span> 21的合作伙伴发送了文件并包含该合作伙伴分配的用户ID。 </li> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>数据提供程序ID（也称为数据源ID）:</b> 这是分配给Audience Manager提供程序的唯一ID。 在发送包含您自己的用户ID的数据时，请在文件名中使用此分配的ID。 例如，告 <code>...ftp_dpm_21_123456789.sync</code> 诉Audience Manager <span class="keyword"> ID为</span> 21的合作伙伴发送了文件并包含该合作伙伴分配的用户ID。 </li> 
      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID):</b> 如果数据文件包含Android ID，请在数据文件名中使用ID 20914。 例如，告 <code>...ftp_dpm_20914_123456789.sync</code> 诉 <span class="keyword"> Audience Manager</span> ，数据文件仅包含Android ID。 </li> 
      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA):</b> 如果数据文件包含iOS ID，请在其数据文件名中使用ID 20915。 例如，告 <code>...ftp_dpm_20915_123456789.sync</code> 诉 <span class="keyword"> Audience Manager</span> ，数据文件仅包含iOS ID。 </li> 
     </ul> <p> <p>注意： 请勿在数据文件中混合使用ID类型。 例如，如果您的文件名包含Android标识符，则不要将iOS ID或您自己的ID放入数据文件中。 </p> </p> </td> 
