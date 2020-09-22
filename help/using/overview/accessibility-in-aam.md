@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager中的辅助功能
 feature: overview
 translation-type: tm+mt
-source-git-commit: 032e01f2483543271680093ae3286bcf3b3b3740
+source-git-commit: 20ec64ba3c934d60f8758777e226344c8586efa3
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Adobe是辅助功能领域的行业领先者，它鼓励开发人员制作可供
 
    ![辅助功能高亮显示](assets/accesibility-highlight.png)
 
-* 和 `Return` 键 `Space` 将激活选定项。
+* ( `Return` )`Enter`和键 `Space` 激活选定项。
 
 ## 可访问的表排序 {#table-sorting}
 
@@ -62,6 +62,4 @@ Audience Manager用户界面中的所有交互式元素都包括相应的标签�
 
 [!DNL Audience Manager] 致力于提供越来越多的辅助功能，使产品易于所有人使用。
 
-要进一步了解辅助功能改进和规范状态，请参阅辅助功能符合性报告。
-
-此外，我们建议您使用Adobe辅 [助功能反馈表](https://www.adobe.com/accessibility/feedback.html) ，向我们发送您遇到的改进建议和辅助功能问题。 我们将非常乐意考虑您的反馈并加以改进 [!DNL Audience Manager]。
+我们建议您使用Adobe辅 [助功能反馈表](https://www.adobe.com/accessibility/feedback.html) ，向我们发送您遇到的改进建议和辅助功能问题。 我们将非常乐意考虑您的反馈并加以改进 [!DNL Audience Manager]。
