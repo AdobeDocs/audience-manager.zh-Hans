@@ -8,9 +8,9 @@ title: 创建算法模型
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: bff108115e7ebd4375d81c1c32ec9bb7d1a207c1
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 观看以下视频，详细了解跨设备指标的工作方式。
 
->[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://video.tv.adobe.com/v/33445/)
 
 ## 算法模型的基本信息 {#basic-information}
 
@@ -90,7 +90,7 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>选择基线特征或区段(1)</b> </p> </td> 
-   <td colname="col2"> <p>单击特征或区段按钮可查看所有特征或区段的列表。 所选段或特征将成为系统算法用于建模的基线。 </p> <p> <p><b>注意</b>:  选择已载入的特征、基于规则的特征或段作为基线。 否则，您的型号将不运行。 </p> </p> </td> 
+   <td colname="col2"> <p>单击特征或区段按钮可查看所有特征或区段的列表。 所选段或特征将成为系统算法用于建模的基线。 </p> <p> <p><b>注意</b>: 选择已载入的特征、基于规则的特征或段作为基线。 否则，您的型号将不运行。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>选择回顾期(2)</b> </p> </td> 
@@ -98,7 +98,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>选择算法(3)</b> </p> </td> 
-   <td colname="col2"> <p>此时，Model Builder只能与我们专有的特征 <span class="keyword"> 权重算法</span> 一起使用。 <span class="keyword"> Audience Manager</span> 可以在后续发行版中添加其他算法函数。 </p> </td>
+   <td colname="col2"> <p>此时，Model Builder只能与我们专有的特征 <span class="keyword"> 权重算法</span> 一起使用。 <span class="keyword"> Audience Manager</span> 可能在后续版本中添加其他算法函数。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>从数据源中选择模型数据(4)</b> </p> </td> 
@@ -106,7 +106,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>排除(5)</b> </p> </td> 
-   <td colname="col2"> <p>您可以从所选建模数据源中排除特征。 使用“ <span class="wintitle"> 排除</span> ”列表并 <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> 阅读算法模型： 特征排除</a> ，了解更多。 </p> </td>
+   <td colname="col2"> <p>您可以从所选建模数据源中排除特征。 使用“ <span class="wintitle"> 排除</span> ”列表并 <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> 阅读算法模型：特征排除</a> ，了解更多。 </p> </td>
   </tr> 
  </tbody>
 </table>
