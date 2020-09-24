@@ -7,9 +7,9 @@ title: 创建算法特征
 uuid: 50c2d2d1-f412-479b-bb70-4f139429c388
 feature: Traits
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: aeaf8b14e901b4a39486ba3740f0582c9cf34559
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '343'
 ht-degree: 5%
 
 ---
@@ -29,12 +29,17 @@ ht-degree: 5%
 1. 展开窗 [!UICONTROL Configuration] 格并单击 **[!UICONTROL Browse All Models]**。
 这将打开一个新窗口，通过该窗口可以选择要用于特征的模型。
 1. 选取一个模型，然后单击 **[!UICONTROL Add Selected Model to Trait]**。
-添加模型会显示范围和准确性设置。
+
+   >[!NOTE]
+   > 
+   > 不能替换现有算法特征的选定模型。 要使用其他模型，必须创建新的算法特征。
+
+   添加模型会显示范围和准确性设置。
 1. 选择范围或准确度作为目标，并从相应的下拉菜单中选择一个值。 完成 **[!UICONTROL Save]** 后单击。
 
 ## 算法特征的配置设置 {#configure-settings}
 
-在中 [!UICONTROL Trait Builder]，该 [!UICONTROL Configuration] 部分允许您将算法模型与特征关联。 要完成算法特征创建过程，请选择一个模型并选择一个达到或准确的目标。
+在中 [!UICONTROL Trait Builder]，该 [!UICONTROL Configuration] 部分允许您将算法模型与特征关联。 要完成算法特征创建过程，请选择一个模型并选择达到或准确的目标。
 
 ### 先决条件
 
