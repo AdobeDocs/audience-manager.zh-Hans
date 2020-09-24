@@ -7,9 +7,9 @@ title: 区段生成器
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
 feature: Segments
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 4bf32099e964c421d943d9925c74dd0d4d6ee576
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1082'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 2%
 
    * 命名 [!UICONTROL segment]。 名称的最大长 [!UICONTROL segment] 度为255个字符。
    * 设置状 [!UICONTROL segment] 态（默认为“活动”）。
-   * 选择 [!UICONTROL data source]。 使用第一个下拉菜单在Audience Manager、Adobe [!UICONTROL data sources]Analytics报表包或两者之间进行筛选。 然后，使用第二个下拉菜单选择您的 [!UICONTROL data source]。 如果您未使用AdobeAnalytics报表包，则类型选 [!UICONTROL data source] 择器将被禁用，并且仅默认为Audience Manager数据源。
+   * 选择 [!UICONTROL data source]。 使用第一个下拉菜单在Audience Manager、Adobe Analytics报 [!UICONTROL data sources]表包或两者之间进行筛选。 然后，使用第二个下拉菜单选择您的 [!UICONTROL data source]。 如果您没有使用Adobe Analytics报表包，则类型选 [!UICONTROL data source] 择器将被禁用，并且仅默认为Audience Manager数据源。
    * 选择要 [!UICONTROL profile merge rule] 用于资格 [!UICONTROL segment] 的。
    * 将其分 [!UICONTROL segment] 配到存储文件夹。
 
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 观看以下视频，详细了解跨设备指标的工作方式。
 
->[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://video.tv.adobe.com/v/33445/)
 
 ## [!UICONTROL Segment Builder] 控件： [!UICONTROL Basic Information] 章节 {#segment-builder-controls-basics}
 
@@ -115,7 +115,7 @@ ht-degree: 2%
 | **[!UICONTROL Name]** | 为区段提供一个简短的逻辑名称，用于描述其功能或用途。 避免缩写和特殊字符。 段名称的最大长度为255个字符。 |
 | **[!UICONTROL Description]** | 有关区段的其他说明性信息的字段。 |
 | **[!UICONTROL Integration Code]** | 用户定义ID或其他公司特定信息的字段。 |
-| **[!UICONTROL Data Source]** | 将区段与特定数据提供者关联。 <br> 使用第一个下拉菜单在Audience Manager数据源、AdobeAnalytics报表包或两者之间进行筛选。 然后，使用第二个下拉菜单选择数据源。 <br> 如果您未使用AdobeAnalytics报表包，数据源类型选择器将被禁用，并且仅默认为Audience Manager数据源。 |
+| **[!UICONTROL Data Source]** | 将区段与特定数据提供者关联。 <br> 使用第一个下拉菜单在Audience Manager数据源、Adobe Analytics报表包或两者之间进行筛选。 然后，使用第二个下拉菜单选择数据源。 <br> 如果您未使用Adobe Analytics报表包，数据源类型选择器将被禁用，并且仅默认为Audience Manager数据源。 |
 | **[!UICONTROL Profile Merge Rule]** | 选择用于区段资格的用户档案合并规则。 |
 | **[!UICONTROL Status]** | 激活或取消激活区段（默认情况下处于活动状态）。 |
 | **文件夹存储** | 确定区段所属的存储文件夹。 |
@@ -133,8 +133,8 @@ ht-degree: 2%
 | **[!UICONTROL Basic View]** | 此部分提供了可视控件，允许您： <ul><li>新建并管理现有 [!UICONTROL segments]。</li><li>从 [!UICONTROL traits] 中删除 [!UICONTROL segment]。</li><li>最多加上50(最 [!UICONTROL traits] 多) [!UICONTROL segment]。</li><li>拖放以 [!UICONTROL traits] 创建新组。</li><li>视图 [!UICONTROL traits] 和 [!UICONTROL trait] 组中的组 [!UICONTROL segment]。</li><li>使用布尔表达式、比较运算符和最近／频率设置设置资格标准。</li></ul> |
 | **[!UICONTROL Code View]** | 打开一个开发环境，它允许您使用代 [!UICONTROL traits]码而不是可视界面创建和管理、组和资格要求。 代码视图在以下情况下很有用 [!UICONTROL segments]: <ul><li>包含50个以 [!UICONTROL traits] 上的个人 [!UICONTROL segment]。 注意： [!UICONTROL Segments] 限制为5000( [!UICONTROL traits] 最大)。</li><li>包含多 [!UICONTROL trait] 个组。</li><li>具有复杂的资格要求。</li></ul> |
 | 搜索 | 帮助您 [!UICONTROL traits] 查找添加到 [!UICONTROL segment]。 |
-| 推荐 | 从您订阅的第 [!UICONTROL traits]一方和数据 [!UICONTROL traits] 源 [!UICONTROL Audience Marketplace] 中获取类似的实时建议。 将这些建议添加到 [!UICONTROL segment] 规则以扩展您的受众。 阅读特质建 [议中的更多](trait-recommendations.md)。 |
-| **[!UICONTROL Marketplace Recommendations]** | 从您未订阅的 [!UICONTROL traits]数据 [!UICONTROL Audience Marketplace] 源中获取类似的实时推荐。 阅读特质建 [议中的更多](trait-recommendations.md)。 |
+| 推荐 | 从您订阅的第 [!UICONTROL traits]一方和数据 [!UICONTROL traits] 源 [!UICONTROL Audience Marketplace] 中获取类似的实时建议。 将这些建议添加到 [!UICONTROL segment] 规则以扩展您的受众。 阅读特质Recommendations [的更多信息](trait-recommendations.md)。 |
+| **[!UICONTROL Marketplace Recommendations]** | 从您未订阅的 [!UICONTROL traits]数据 [!UICONTROL Audience Marketplace] 源中获取类似的实时推荐。 阅读特质Recommendations [的更多信息](trait-recommendations.md)。 |
 | 实数和估计 [!UICONTROL Segment] 大小数据 | 请参阅[区段生成器中的特征和区段人口数据](segment-builder-data.md)。 |
 
 ## 从 [!UICONTROL Traits] [!UICONTROL Segment] {#remove-traits}
