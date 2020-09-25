@@ -7,9 +7,9 @@ solution: Audience Manager
 title: Adobe Audience Manager服务器到服务器目标
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: 8d7935f69b496ec30a135df884756d370b44b7ed
+source-git-commit: f37464671b9000b0d6c1ae492fc4f35dd327d59d
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1128'
 ht-degree: 72%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 72%
 
 # [!DNL Audience Manager] [!UICONTROL Device-based Destinations]
 
-本页仅包含当 [!DNL Audience Manager] 前 [基于设备的目标](/help/using/features/destinations/add-device-based-destinations.md) 。 在 [!DNL Audience Manager]中 [!UICONTROL device-based destinations] ，也称为 [!UICONTROL server-to-server destinations]。 有关集成的详细信息，请参阅其 [Adobe交](https://www.adobeexchange.com/experiencecloud.html) 换列表（如果可用），或与您的顾 [!DNL Adobe] 问或客户服务联系。
+本页仅包含当 [!DNL Audience Manager] 前基 [于设备的目标](/help/using/features/destinations/add-device-based-destinations.md) 。 在 [!DNL Audience Manager]中 [!UICONTROL device-based destinations] ，也称为 [!UICONTROL server-to-server destinations]。 有关集成的详细信息，请参阅其 [Adobe交](https://www.adobeexchange.com/experiencecloud.html) 换列表（如果可用），或与您的顾 [!DNL Adobe] 问或客户服务联系。
 
  
 
@@ -51,6 +51,7 @@ ht-degree: 72%
 | [!DNL AOL ONE] | 02/03/2017 | 实时 | 是 | 否 | 否 | 是 |
 | [!DNL AppNexus] | 02/03/2017 | 实时 | 是 | 否 | 是 | 否 |
 | [!DNL AppNexus Yieldex] | 10/08/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Artsai (formerly Adxcel)] | 27/01/2020 | 1xday | 否 | 否 | 否 | 否 |
 | [!DNL Atedra]/[!DNL AdStanding] | 02/03/2017 | 实时 | 是 | 否 | 是 | 否 |
 | [!DNL Avocet] | 06/12/2017 | 1xday | 否 | 否 | 否 | 否 |
 | [!DNL Bidtellect] | 03/03/2017 | 实时 | 是 | 否 | 否 | 否 |
@@ -81,6 +82,7 @@ ht-degree: 72%
 | [!DNL EyeView Digital] | 14/06/2018 | 1xday | 是 | 否 | 否 | 是 |
 | [!DNL Fiksu] | 03/03/2017 | 1xday | 是 | 否 | 否 | 是 |
 | [!DNL Flashtalking] | 02/03/2017 | 1xday | 否 | 否 | 否 | 否 |
+| [!DNL Flybits] | 31/07/2020 | 实时 | 是 | 否 | 是 | 是 |
 | [!DNL FreakOut] | 03/03/2017 | 1xday | 是 | 否 | 否 | 否 |
 | [!DNL Freewheel] | 27/02/2017 | 1xday | 是 | 是 | 否 | 是 |
 | [!DNL Gamut Media] | 03/03/2017 | 实时 |  | 否 | 否 |  |
