@@ -1,5 +1,5 @@
 ---
-description: 描述Audience Manager段的组件、用于设置受众资格标准的表达式，以及在事件呼叫中如何传输数据。
+description: 了解Audience Manager段的组件、用于设置受众资格标准的表达式，以及在事件呼叫中如何传输数据。
 seo-description: 描述Audience Manager段的组件、用于设置受众资格标准的表达式，以及在事件呼叫中如何传输数据。
 seo-title: 信号、特征和区段
 solution: Audience Manager
@@ -7,7 +7,7 @@ title: 信号、特征和区段
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
 feature: reference
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 8027f278aa2b879b6cb277f44caf4b62dc75e2c3
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 4%
