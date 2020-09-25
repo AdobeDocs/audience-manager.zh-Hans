@@ -1,5 +1,5 @@
 ---
-description: 有关 Adobe Audience Manager 历史记录、收集的数据类型、分段、报表等的信息。
+description: 有关数据管理平台主要功能的信息——数据收集、受众创建和激活。
 seo-description: 有关 Adobe Audience Manager 历史记录、收集的数据类型、分段、报表等的信息。
 seo-title: Audience Manager 概述
 solution: Audience Manager
@@ -7,10 +7,10 @@ title: Audience Manager 概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 feature: overview
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 8027f278aa2b879b6cb277f44caf4b62dc75e2c3
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 100%
+source-wordcount: '308'
+ht-degree: 94%
 
 ---
 
