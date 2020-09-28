@@ -1,12 +1,12 @@
 ---
-description: 辅助功能是指使软件产品可用的一系列功能，尽可能少地由各种残障用户（如视觉、听觉、认知、运动或其他类型的用户）提供。
-seo-description: 辅助功能是指使软件产品可用的一系列功能，尽可能少地由各种残障用户（如视觉、听觉、认知、运动或其他类型的用户）提供。
+description: 辅助功能是指使软件产品可用的一系列功能，使具有各种残疾的用户尽可能少地使用这些功能，如视觉、听觉、认知、运动或其他类型。
+seo-description: 辅助功能是指使软件产品可用的一系列功能，使具有各种残疾的用户尽可能少地使用这些功能，如视觉、听觉、认知、运动或其他类型。
 seo-title: Audience Manager中的辅助功能
 solution: Audience Manager
 title: Audience Manager中的辅助功能
 feature: overview
 translation-type: tm+mt
-source-git-commit: 20ec64ba3c934d60f8758777e226344c8586efa3
+source-git-commit: 2dc015ccf358724f0caa45265fab962821569d1e
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-辅助功能是指使软件产品可用的一系列功能，尽可能少地由各种残障用户（如视觉、听觉、认知、运动或其他类型的用户）提供。
+辅助功能是指使软件产品可用的一系列功能，使具有各种残疾的用户尽可能少地使用这些功能，如视觉、听觉、认知、运动或其他类型。
 
 Adobe是辅助功能领域的行业领先者，它鼓励开发人员制作可供所有用户访问的丰富、引人入胜的内容，从而支持创建出众的Web体验。 有关Adobe对辅助功能承诺的更多详细信息，请参阅 [Adobe辅助功能](https://www.adobe.com/accessibility.html)。
 
