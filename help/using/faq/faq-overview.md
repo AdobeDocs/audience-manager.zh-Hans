@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager 常见问题解答
 feature: Overview
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: d4eccf46de9b8658eb3066202211021e62d51652
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '84'
 ht-degree: 100%
 
 ---
@@ -27,5 +27,6 @@ ht-degree: 100%
 * [基于人员的目标常见问题解答](faq-people-based-destinations.md)
 * [产品特性和功能常见问题解答](faq-features.md)
 * [配置文件合并规则和设备图常见问题解答](faq-profile-merge.md)
+* [Predictive Audiences 常见问题解答](faq-predictive-audiences.md)
 * [定位常见问题解答](faq-targeting.md)
 * [报表常见问题解答](faq-reporting.md)
