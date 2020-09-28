@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 91ed0e755982375f41ed5eb484fa8e60bbe6f8e5
+source-git-commit: 8e43da4c8b890fc5f8468f3779918dbfbbf960b8
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1589'
 ht-degree: 7%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 7%
 
 ### 目标受众的选择标准 {#selection-audience}
 
-与人物选择类似，您应选择您的目标 [!UICONTROL trait] 受众或定义您的，以使其拥有具有丰富集合的实时用户，以便将其分类到正确 [!UICONTROL segment][!UICONTROL traits]的人物中。
+根据您的用例，无论您是要实时、批量还是同时对用户进行分类，都可以选择具有大量实时和／或总人口的目标受众([!UICONTROL trait][!UICONTROL segment]或)。 与人物选择类似，我们建议您的目标 [!UICONTROL trait] 受众 [!UICONTROL segment] 或具有富用户档案(丰富的集 [!UICONTROL traits])的用户。
 
 选择目标受众时，分析您的用例并确定要分类的ID类型： [!UICONTROL device IDs] 或 [!UICONTROL cross-device IDs]者 在 [!UICONTROL Profile Merge Rule] 创建模型时选择的数据定义将每个用户放入预测中的数据 [!UICONTROL segments]。
 
@@ -96,7 +96,7 @@ ht-degree: 7%
 
 ### [!UICONTROL Predictive Audiences] 模型分类阶段 {#model-classification}
 
-当实时看到属于目标受众的访客时，模型会评估访客是否是已定义角色的一部分。 对于不属于任何角色的访客，模型会分配角色资格得分。
+对于实时和批量受众分类，模型首先检查用户是否属于目标受众。 如果用户符合目标受众并且不属于任何角色，则模型会为他们分配角色资格得分。
 
 在评估第一方受众和分配分数时，该模型使用在帐户中 **[!UICONTROL Profile Merge Rule]** 定义的默认值。 最后，访客被归为他们获得最高分的角色。
 
@@ -113,11 +113,13 @@ ht-degree: 7%
 * 对于每个模型，您最多可以选择50个基本特征／区段。
 * 目前不支持第二方和第三方数据 [!UICONTROL Predictive Audiences]。
 * 受众分类只针对实时的第一方受众。 载入的第一方受众分类在将来的更新中可能受支持。
+
    >[!IMPORTANT]
    > 如果向常规区段添加预测特征，它将成为预测区段。 因此，所有关联用户档案都被取消分段。
 
    >[!IMPORTANT]
    > 目前，只能在实时目标中激活预测细分。 预 [!UICONTROL Total Segment Population] 测区 [!UICONTROL Addressable Audience] 段和预测区段显示为0，不支 [持批出站数据传输](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)[!UICONTROL Predictive Audiences]。 此行为将在以后的更新中发生更改。
+
 * [!UICONTROL Predictive Audiences] 根据您的第一方特征从所有第一方数据源执行受众分类。
 * 针对的细分 [!UICONTROL Predictive Audiences] 评估使用 **[!UICONTROL Profile Merge Rule]** 在创建模型时选择的。 要了解有关详细信 [!UICONTROL Profile Merge Rules] 息，请参阅专 [用文档](../profile-merge-rules/merge-rules-overview.md)。
 * 某些特征和区段不支持作为基准或目标受众。 [!UICONTROL Predictive Audiences] 当选择以下某项作为基准或目标受众时，模型将无法保存：
@@ -125,6 +127,7 @@ ht-degree: 7%
    * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) 特征或细分；
    * 算法特征；
    * 第二方和第三方特征。
+* [!UICONTROL Predictive Audience] [!UICONTROL segments] 不能在中使 [!UICONTROL Audience Lab]用。
 
 ## [!UICONTROL Data Export Controls] {#dec}
 
@@ -146,6 +149,7 @@ ht-degree: 7%
 * 它控制模 [!UICONTROL trait] 型培训步骤中应使用的类型（设备级别或跨设备级别），并呈现为具有影响力的 [!UICONTROL traits]。 预测 [!UICONTROL segments] 是目标受众的子集。
    * 如果目标受众是区段，我们建议您为模型选 [!UICONTROL Profile Merge Rule] 择与分配给目标受众的相同的模型，或 [!UICONTROL Profile Merge Rule] 者选择包含目标受众的用户档案类型。
    * 如果目标是 [!UICONTROL trait]受众，我们建议您选择一 [!UICONTROL Profile Merge Rule] 个能够访问与目标受众特征(设备用户档案数据或跨设备用户档案数据)相同类型的数据。
+* [!UICONTROL Profile Merge Rules] 只支 [!UICONTROL Current Authenticated Profiles] 持使 [!UICONTROL No Device Profile] 用和选项进行实时受众分类。 有关详细信息，请参 [阅已定义用户档案合并规则选项](../profile-merge-rules/merge-rule-definitions.md)。
 
 选择同 [!UICONTROL Profile Merge Rule] 时使用设备数据和跨设备数据的设备，可将模型 [!UICONTROL traits] 培训和用户分类可用的数量最大化，并将其用于预测 [!UICONTROL segments]。
 
