@@ -7,10 +7,10 @@ title: 入站数据文件的 Amazon S3 名称和文件大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e8eb1c1c7a235c0c9dd32182e522ad0b6e965c61
+source-git-commit: f037a12af641da44ed67e62a249c41487da7ac07
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 7%
+source-wordcount: '1029'
+ht-degree: 6%
 
 ---
 
@@ -66,18 +66,19 @@ Removed  {importance="high"} for ExL
    <td colname="col2"> <p>一个D，告诉 <span class="keyword"> Audience Manager</span> ，数据文件是否包含您自己的用户ID、Android ID、iOS ID或属于全局数据源的其 <a href="/help/using/features/global-data-sources.md"> 他ID</a>。 接受以下选项：</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
      <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>数据源ID（也称为数据提供者ID）:</b> 这是Audience Manager分配给数据源的唯一ID(请参阅ID的 <a href="/help/using/reference/ids-in-aam.md"> Audience Manager索引 </a>)。 在发送包含您自己的用户ID的数据时，请在文件名中使用此分配的ID。 例如，告 <code>...ftp_dpm_21_123456789.sync</code> 诉Audience Manager <span class="keyword"> 将</span> 载入属于数据源21的ID。 </li> 
-     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID):</b> 如果数据文件包含Android ID，请在数据文件名中使用ID 20914。 例如，告 <code>...ftp_dpm_20914_123456789.sync</code> 诉 <span class="keyword"> Audience Manager</span> ，数据文件仅包含Android ID。 </li> 
-     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA):</b> 如果数据文件包含iOS ID，请在其数据文件名中使用ID 20915。 例如，告 <code>...ftp_dpm_20915_123456789.sync</code> 诉 <span class="keyword"> Audience Manager</span> ，数据文件仅包含iOS ID。 </li>
+     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID):</b> 如果数据文件包含Android ID，请在数据文件名中使用ID 20914。 使用Android ID时， <code><i>_DPID_TARGET_DATA_OWNER</i></code> 您需要使用该字段。 例如，告 <code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code> 诉 <span class="keyword"> Audience Manager</span> ，数据文件仅包含Android ID,ID应符合属于数据源的 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 特征。</li> 
+     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA):</b> 如果数据文件包含iOS ID，请在其数据文件名中使用ID 20915。 使用iOS ID时， <code><i>_DPID_TARGET_DATA_OWNER</i></code> 您需要使用该字段。 例如，告 <code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code> 诉 <span class="keyword"> Audience Manager</span> ，数据文件仅包含iOS ID,ID应符合属于数据源的 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 特征。</li>
      <li> <b>属于其他全局数据源的ID</b>:您可以加入Roku ID for Advertising(RIDA)、Microsoft Advertising ID(MAID)和其他ID。 按照全局数据源文章中的说明，使用与每个数 <a href="/help/using/features/global-data-sources.md"> 据源对应的ID</a>。</li> 
     </ul> <p> <p>注意： 请勿在数据文件中混合使用ID类型。 例如，如果您的文件名包含Android标识符，则不要将iOS ID或您自己的ID放入数据文件中。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
-   <td colname="col2"> <p>ID的占位符。 例如，如果将DPID设置为数 <span class="keyword"> 据源</span> ID、Android或iOS ID，则可以将其设置为Audience ManagerID。 这样， <span class="keyword"> Audience Manager</span> 就可以将文件数据链接回您的组织。 </p> <p>例如： </p> 
-    <ul id="ul_55EBBCB11F2B4A858AEFBFA1CD99E286"> 
-     <li id="li_3404428F4E3D49A5AB6EDF56310D923F"> <code>...ftp_dpm_33_21_1234567890.sync</code> 显示ID为21的合作伙伴已从使用ID 33的数据源发送数据。 </li> 
-     <li id="li_CF8D5AF678764E9984A088FD5D7BBFB6"> <code>...ftp_dpm_20914_21_1234567890.sync</code> 显示ID为21的合作伙伴已发送包含Android ID的数据。 </li> 
-     <li id="li_3D73168391D7443BADDF27153090274D"> <code>...ftp_dpm_20915_21_1234567890.sync</code> 显示ID为21的合作伙伴已发送包含iOS ID的数据。 </li> 
+   <td colname="col2"> <p>此字段告知Audience Manager要将数据载入哪个数据源。 如果将DPID设置为Android ID、iOS ID或属于全局数据源的其他ID，则此字段为必填字段。 这样， <span class="keyword"> Audience Manager</span> 就可以将文件数据链接回您的组织。 </p> <p>例如： </p> 
+    <ul> 
+     <li> <code>...ftp_dpm_33_21_1234567890.sync</code> 告诉Audience Manager您对属于数据源33的客户ID有资格获得属于数据源21的特征或信号。 </li> 
+     <li> <b>Android ID(GAID):</b><code>...ftp_dpm_20914_21_1234567890.sync</code> 告诉 <span class="keyword"> Audience Manager</span> ，该数据文件仅包含Android ID，且ID应符合属于数据源21的特征。</li> 
+     <li> <b>iOS ID(IDFA):</b><code>...ftp_dpm_20915_21_1234567890.sync</code> 告诉 <span class="keyword"> Audience Manager</span> ，该数据文件仅包含iOS ID，且ID应符合属于数据源21的特征。</li>
+     <li> <b>属于其他全局数据源的ID</b>: <code>...ftp_dpm_121963_21_1234567890.sync</code> 告诉 <span class="keyword"> Audience Manager</span> ，该数据文件仅包含Roku ID，且ID应符合属于数据源21的特征的资格。 按照全局数据源文章中的说明，使用与每个数 <a href="/help/using/features/global-data-sources.md"> 据源对应的ID</a>。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
