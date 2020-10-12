@@ -7,9 +7,9 @@ title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 283acc1ef9152af3399c6010105728d397422a7f
+source-git-commit: 6a9a48aa6d3a7a5d871ea9aabbca2c2ec1229c0e
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1492'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Audience Manager和Adobe Experience Platform之间的受众共享功能允许您
 >[!IMPORTANT]
 >
 > * 您需要Audience Manager许可证才能启用上述数据管理平台使用案例。
-> * 您不 *需要Audience Manager许可* ，即可通过集成核心服务与Adobe Ad Cloud、Adobe Target、Adobe Analytics和其他Experience Cloud解决方案共享Experience Platform细分。
+> * 您不 *需要Audience Manager许可* ，即可通过集成核心服务与Adobe Ad Cloud、Adobe Target、Marketo和其他Experience Cloud解决方案共享Experience Platform细分。
 
 
 <br> 
@@ -46,7 +46,7 @@ Audience Manager和Adobe Experience Platform之间的受众共享功能允许您
 
 | **用例** | **Adobe Experience Platform** | **Audience Manager** | **核心服务** |
 ---------|----------|---------|---------
-| **受众共享** | <ul><li>利用Audience Manager数据丰富客户用户档案</li><li>在Audience Manager细分中使用Experience Platform数据</li></ul> | <ul><li>将第三方数据添加到区段</li><li>算法建模</li><li>激活到其他目标</li></ul> | 在其他Experience Platform解决方案(如Adobe Target或分析)中使用Experience Cloud细分。 |
+| **受众共享** | <ul><li>利用Audience Manager数据丰富客户用户档案</li><li>在Audience Manager细分中使用Experience Platform数据</li></ul> | <ul><li>将第三方数据添加到区段</li><li>算法建模</li><li>激活到其他目标</li></ul> | 在Adobe Target、Ad Cloud或Marketo等其他Experience Cloud解决方案中使用Experience Platform细分。 |
 
 <br> 
 
@@ -164,7 +164,9 @@ Audience Manager每天更新接口中的报告号一次。   此更新的时间�
 
 Adobe Experience Platform和Audience Manager之间的集成为所有客户共 [享了许多标](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types) 准身份命名空间:ECID、IDFA、GAID、散列电子邮件地址(EMAIL_LC_SHA256)、AdCloud ID等。 如果您的Experience Platform区段将其中任何一个用作合格用户档案的主要标识，则用户档案计入Audience Manager特征和区段。
 
-此外，Audience Manager可以为您在Experience Platform段中使用的任何自定义标识命名空间注册传入的实现，前提是您已经在键入该标识符的Audience Manager中具有相应的数据源。
+此外，Audience Manager可以在以下情况下为您在Experience Platform段中使用的任何自定义身份命名空间注册传入实现：
+* 标识被标记为主标 *识*
+* 您已经有一个Audience Manager中的相应跨设备数据源。
 
 >[!NOTE]
 >
