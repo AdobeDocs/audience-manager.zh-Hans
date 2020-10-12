@@ -7,9 +7,9 @@ title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 59eda3fa250fa33ef283f09b0027845431e9517b
+source-git-commit: 283acc1ef9152af3399c6010105728d397422a7f
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1487'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Audience Manager和Adobe Experience Platform之间的受众共享功能允许您
 >[!IMPORTANT]
 >
 > * 您需要Audience Manager许可证才能启用上述数据管理平台使用案例。
-> * 您不 *需要Audience Manager许可* ，即可通过集成核心服务与Adobe Ad Cloud、Adobe Target和其他Experience Cloud解决方案共享Experience Platform细分。
+> * 您不 *需要Audience Manager许可* ，即可通过集成核心服务与Adobe Ad Cloud、Adobe Target、Adobe Analytics和其他Experience Cloud解决方案共享Experience Platform细分。
 
 
 <br> 
