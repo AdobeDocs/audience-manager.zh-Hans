@@ -7,15 +7,15 @@ title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 74f23fbe753b8efc70b89ccace4a4d2c30067ccc
+source-git-commit: 59eda3fa250fa33ef283f09b0027845431e9517b
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 3%
+source-wordcount: '1485'
+ht-degree: 2%
 
 ---
 
 
-# 在 Audience Manager 与 Adobe Experience Platform 之间共享受众 {#aam-aep-audience-sharing}
+# Experience Platform细分与Audience Manager和其他Experience Cloud解决方案共享 {#aam-aep-audience-sharing}
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## 概述 {#overview}
 
-Audience Manager和Adobe Experience Platform之间的受众共享功能允许您将Audience Manager特征和区段共享到Adobe Experience Platform，反之亦然。 您需要[ [!DNLAudience Manager连接器]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，以启用Audience Manager与Adobe Experience Platform之间的受众共享。
+Audience Manager和Adobe Experience Platform之间的受众共享功能允许您将Audience Manager特征和区段共享到Adobe Experience Platform，反之亦然。 您需要启 [[!DNL Audience Manager Connector]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) 用Audience Manager与Adobe Experience Platform之间的受众共享。
 
 您可以在Experience Platform中使用Audience Manager特征和细分，向客户用户档案添加Audience Manager数据并从Experience Platform细分服务 [中受益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)。
 
@@ -33,6 +33,12 @@ Audience Manager和Adobe Experience Platform之间的受众共享功能允许您
 * 将区段激活到Experience Platform目标目录中尚不支持的 [目标](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/destinations-catalog.html)。
 
 此外，您的Experience Platform细分通过核心服务共享给其他Experience Cloud [解决方案](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html)。
+
+>[!IMPORTANT]
+>
+> * 您需要Audience Manager许可证才能启用上述数据管理平台使用案例。
+> * 您不 *需要Audience Manager许可* ，即可通过集成核心服务与Adobe Ad Cloud、Adobe Target和其他Experience Cloud解决方案共享Experience Platform细分。
+
 
 <br> 
 
