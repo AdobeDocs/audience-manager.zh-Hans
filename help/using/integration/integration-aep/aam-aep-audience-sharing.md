@@ -7,7 +7,7 @@ title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 6a9a48aa6d3a7a5d871ea9aabbca2c2ec1229c0e
+source-git-commit: 4bac89ab732f225bd82aceaf9707fda98e796945
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 2%
@@ -37,7 +37,7 @@ Audience Manager和Adobe Experience Platform之间的受众共享功能允许您
 >[!IMPORTANT]
 >
 > * 您需要Audience Manager许可证才能启用上述数据管理平台使用案例。
-> * 您不 *需要Audience Manager许可* ，即可通过集成核心服务与Adobe Ad Cloud、Adobe Target、Marketo和其他Experience Cloud解决方案共享Experience Platform细分。
+> * 您不 *需要Audience Manager许可* ，即可通过集成核心服务与Adobe Advertising Cloud、Adobe Target、Marketo和其他Experience Cloud解决方案共享Experience Platform细分。
 
 
 <br> 
@@ -46,7 +46,7 @@ Audience Manager和Adobe Experience Platform之间的受众共享功能允许您
 
 | **用例** | **Adobe Experience Platform** | **Audience Manager** | **核心服务** |
 ---------|----------|---------|---------
-| **受众共享** | <ul><li>利用Audience Manager数据丰富客户用户档案</li><li>在Audience Manager细分中使用Experience Platform数据</li></ul> | <ul><li>将第三方数据添加到区段</li><li>算法建模</li><li>激活到其他目标</li></ul> | 在Adobe Target、Ad Cloud或Marketo等其他Experience Cloud解决方案中使用Experience Platform细分。 |
+| **受众共享** | <ul><li>利用Audience Manager数据丰富客户用户档案</li><li>在Audience Manager细分中使用Experience Platform数据</li></ul> | <ul><li>将第三方数据添加到区段</li><li>算法建模</li><li>激活到其他目标</li></ul> | 在Adobe Target、Advertising Cloud或Marketo等其他Experience Cloud解决方案中使用Experience Platform细分。 |
 
 <br> 
 
