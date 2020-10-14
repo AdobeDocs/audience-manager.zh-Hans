@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 71e129a39cf85d5f07979ede8f3aa862f93b6512
+source-git-commit: 48bf17a2899fd06c525ba6b4fddb9ec805efb5c3
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 8%
+source-wordcount: '571'
+ht-degree: 7%
 
 ---
 
@@ -39,16 +39,26 @@ ht-degree: 8%
    ![smart-persona-select-受众](assets/predictive-audiences-audience.png)
 1. 选 **[!UICONTROL Next]** 择受众后单击。
 1. 填写模型详细信息：
-   * **[!UICONTROL Model Name]**: 为模型输入描述性名称，以帮助您稍后识别它。 由模型生成的段名称将与模型名称开始。
-   * **[!UICONTROL Description]**: 输入有助于识别其用例的模型描述。
-   * **[!UICONTROL Data Source]**: 选择您希望将此模型中的区段分 [!UICONTROL Predictive Audiences] 配给的第一方数据源。
-   * **[!UICONTROL Profile Merge Rule]**: 为此模 [!UICONTROL Profile Merge Rule] 型创建的所有预测 [!UICONTROL segments] 值选择要分配的值。 如果您选择的目标 [!UICONTROL segment]受众为，我们建议选择与 [!UICONTROL Profile Merge Rule] 目标受众相同的。
+   * **[!UICONTROL Model Name]**:为模型输入描述性名称，以帮助您稍后识别它。 由模型生成的段名称将与模型名称开始。
+   * **[!UICONTROL Description]**:输入有助于识别其用例的模型描述。
+   * **[!UICONTROL Data Source]**:选择您希望将此模型中的区段分 [!UICONTROL Predictive Audiences] 配给的第一方数据源。
+   * **[!UICONTROL Profile Merge Rule]**:为此模 [!UICONTROL Profile Merge Rule] 型创建的所有预测 [!UICONTROL segments] 值选择要分配的值。 如果您选择的目标 [!UICONTROL segment]受众为，我们建议选择与 [!UICONTROL Profile Merge Rule] 目标受众相同的。
       ![预测受众保存](assets/predictive-audiences-save.png)
 1. 单击 **[!UICONTROL Save]**.
 
-## 编辑预测受众 {#edit-predictive-audiences}
+## 克隆和编辑预测受众模型 {#clone-predictive-audiences}
 
-Audience Manager不支持编辑现有 [!UICONTROL Predictive Audiences] 模型。 要更改模型的配置，必须创建新模型。 如果已达到10个模型的限 [!UICONTROL Predictive Audiences] 制，并且需要编辑其中一个模型，则必须删除一个模型并创建新模型。
+Audience Manager不支持编辑现有 [!UICONTROL Predictive Audiences] 模型。 要更改模型的配置，可创建现有模型的克隆并对其进行编辑。 您可以通过以下方式实现：
+
+1. 转到 **[!UICONTROL Audience Data]** > **[!UICONTROL Models]**。
+2. 单击要克隆 [!UICONTROL Predictive Audiences] 的模型的名称。
+3. 单击 **[!UICONTROL Clone]** 屏幕左上角的按钮。
+   ![预测受众克隆](assets/predictive-audiences-clone.png)
+4. 克隆模型后，您将转到克隆 [!DNL Save & Configure] 模型的页面。 在此页中，可以更改模 [!UICONTROL data source] 型的分配[!UICONTROL Profile Merge Rule] 和分配值。 要编辑克隆模型的角色和目标受众，请使 [!UICONTROL Back] 用和 [!UICONTROL Next] 按钮在三个选项卡之间导航，或单击三个选项卡名称
+
+   ![预测受众-克隆导航](assets/predictive-audiences-clone-navigate.png)
+
+5. 编辑完模型后，单击 **[!UICONTROL Save]**。
 
 ## 删除预测受众 {#delete-predictive-audiences}
 
