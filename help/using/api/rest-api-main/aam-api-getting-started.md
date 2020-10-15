@@ -1,6 +1,6 @@
 ---
-description: 有关一般要求、身份验证、可选查询参数、请求URL和其他引用的信息。
-seo-description: 有关一般要求、身份验证、可选查询参数、请求URL和其他引用的信息。
+description: 有关一般要求、身份验证、可选查询参数、请求 URL 和其他引用的信息。
+seo-description: 有关一般要求、身份验证、可选查询参数、请求 URL 和其他引用的信息。
 seo-title: 开始使用 REST API
 solution: Audience Manager
 title: 开始使用 REST API
@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: f7b9c30f120b24f9294afa4aa6727ce8c4236acf
 workflow-type: tm+mt
 source-wordcount: '1860'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
 
 # Getting Started with [!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}
 
-有关一般要求、身份验证、可选查询参数、请 [!DNL URLs]求和其他引用的信息。
+Information about general requirements, authentication, optional query parameters, request [!DNL URLs], and other references.
 
 <!-- c_rest_api_overview.xml -->
 
@@ -30,8 +30,8 @@ ht-degree: 2%
 使用Audience ManagerAPI代码时 [请注意](https://bank.demdex.com/portal/swagger/index.html#/) :
 
 * **请求参数：** 除非另有指定，否则所有请求参数都是必需的。
-* **请求标题**: 使用 [AdobeI/O令牌](https://www.adobe.io/) ，必须提供标 `x-api-key` 头。 您可以按照 [!DNL API] 服务帐户集成页中的说 [明获取密钥](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 。
-* **[!DNL JSON]内容类型：**在`content-type: application/json`代&#x200B;*码*`accept: application/json`中指定。
+* **请求标题**:使用 [AdobeI/O令牌](https://www.adobe.io/) ，必须提供标 `x-api-key` 头。 您可以按照 [!DNL API] 服务帐户集成页中的说 [明获取密钥](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 。
+* **[!DNL JSON]内容类型：** 在 `content-type: application/json` 代 *码*`accept: application/json` 中指定。
 * **请求和答复：** 将请求作为格式正确的对象 [!DNL JSON] 发送。 [!DNL Audience Manager] 用格式化的 [!DNL JSON] 数据做出响应。 服务器响应可以包含请求的数据、状态代码或两者。
 * **访问：** 您 [!DNL Audience Manager] 的顾问将为您提供客户端ID和密钥，以便您进行 [!DNL API] 请求。
 * **文档和代码示例：** 斜体 *文本* 表示您在创建或接收数据时提供或传递的 [!DNL API] 变量。 将斜 *体文本* 替换为您自己的代码、参数或其他必需信息。
@@ -65,7 +65,7 @@ ht-degree: 2%
 
 1. 登录到Adobe开 [发人员控制台](https://console.adobe.io/)。
 1. 按照服务帐户连 [接中的步骤操作](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)。
-   * 在第 [2步中： 使用服务帐户身份验证将API添加到您的项目](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)，选择 [!DNL Audience Manager][!DNL API] 选项。
+   * 在第 [2步中：使用服务帐户身份验证将API添加到您的项目](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)，选择 [!DNL Audience Manager][!DNL API] 选项。
 1. 根据步骤3中的说明进行第 [!DNL API] 一次呼叫，尝试 [连接](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)。
 
 >[!NOTE]
@@ -83,10 +83,10 @@ ht-degree: 2%
 
 ### 创建通用用 [!DNL API] 户 {#requirements}
 
-我们建议您创建单独的技术用户帐户，以便与 [!DNL Audience Manager][!DNL API]s一起使用。 这是一个通用帐户，它未绑定到您组织中的特定用户或与其关联。 此类型的用 [!DNL API] 户帐户可帮助您完成以下两项任务：
+我们建议您创建单独的技术用户帐户，以便与 [!DNL Audience Manager][!DNL API]s一起使用。这是一个通用帐户，它未绑定到您组织中的特定用户或与其关联。 此类型的用 [!DNL API] 户帐户可帮助您完成以下两项任务：
 
 * 确定呼叫哪项服务( [!DNL API] 例如，来自您使用我们的应用程序的呼叫 [!DNL API]或来自发出请求的其他工 [!DNL API] 具的呼叫)。
-* 不间断地访问 [!DNL API]s。 与特定人员关联的帐户在离开您的公司时可能会被删除。 这将阻止您使用可用的代 [!DNL API] 码。 未绑定到特定员工的通用帐户可帮助您避免此问题。
+* 不间断地访问 [!DNL API]s。与特定人员关联的帐户在离开您的公司时可能会被删除。 这将阻止您使用可用的代 [!DNL API] 码。 未绑定到特定员工的通用帐户可帮助您避免此问题。
 
 作为此类帐户的示例或用例，假设您希望使用批量管理工具一次更改大 [量段](../../reference/bulk-management-tools/bulk-management-intro.md)。 为此，您的用户帐户需要访 [!DNL API] 问权。 不要向特定用户添加权限，而是创建一个非特定的 [!DNL API] 用户帐户，该帐户具有相应的凭据、密钥和密码进行 [!DNL API] 呼叫。 如果您开发自己的使用s的应用程序，这也很 [!DNL Audience Manager] 有 [!DNL API]用。
 
@@ -100,13 +100,13 @@ ht-degree: 2%
 >
 >如果将访问和刷新令牌存储在数据库中，请加密它们。
 
-#### 第1步： 请求访 [!DNL API] 问
+#### 第1步：请求访 [!DNL API] 问
 
 联系您的合作伙伴解决方案经理。 他们会向您提供客 [!DNL API] 户ID和机密。 ID和密码将您验证到 [!DNL API]。
 
-注意： 如果要接收刷新令牌，请在请求访问时指定该 [!DNL API] 令牌。
+注意：如果要接收刷新令牌，请在请求访问时指定该 [!DNL API] 令牌。
 
-#### 第2步： 请求令牌
+#### 第2步：请求令牌
 
 将令牌请求传递给您的首选客 [!DNL JSON] 户机。 生成请求时：
 
@@ -116,7 +116,7 @@ ht-degree: 2%
 * 按如下方式设置请求主体：
    <br/> `grant_type=password&username=<your-AudienceManager-user-name>&password=<your-AudienceManager-password>`
 
-#### 第3步： 接收令牌
+#### 第3步：接收令牌
 
 响应 [!DNL JSON] 包含您的访问令牌。 响应应如下：
 
@@ -144,7 +144,7 @@ ht-degree: 2%
 
 以下步骤概述了使用刷新令牌从浏览器中的客户端创建新访问令牌 [!DNL JSON] 的工作流。
 
-#### 第1步： 请求新令牌
+#### 第1步：请求新令牌
 
 将刷新令牌请求传递给您的首选客 [!DNL JSON] 户端。 生成请求时：
 
@@ -153,7 +153,7 @@ ht-degree: 2%
 * 传入HTTP头 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`。 例如，您的标题可能如下所示： <br> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br> `Content-Type: application/x-www-form-urlencoded`
 * 在请求主体中，指 `grant_type:refresh_token` 定您在上一个访问请求中收到的刷新令牌并传递。 请求应当如下： <br> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
 
-#### 第2步： 接收新令牌
+#### 第2步：接收新令牌
 
 响 [!DNL JSON] 应包含新访问令牌。 响应应如下：
 
@@ -193,9 +193,9 @@ ht-degree: 2%
 | `pageSize` | 设置请求返回的响应结果数（默认为10）。 |
 | `sortBy` | 根据指定的属性对结果进行排序并返回 [!DNL JSON] 结果。 |
 | `descending` | 按降序排序和返回结果。 `ascending` 。 |
-| `search` | 根据要用作搜索参数的指定字符串返回结果。 例如，假设您要在该项目的任何值字段中查找带有“Test”字样的所有模型的结果。 您的示例请求可能如下所示：   `GET https://aam.adobe.io/v1/models/?search=Test`.  您可以搜索“”方法返回的任何[!DNL get all]值。 |
+| `search` | 根据要用作搜索参数的指定字符串返回结果。 例如，假设您要在该项目的任何值字段中查找带有“Test”字样的所有模型的结果。 您的示例请求可能如下所示：  `GET https://aam.adobe.io/v1/models/?search=Test`.  您可以搜索“”方法返回的任何[!DNL get all]值。 |
 | `folderId` | 返回指定文件夹 [!UICONTROL traits] 内的所有ID。 并非所有方法都可用。 |
-| `permissions` | 返回基于指定权限的区段列表。 `READ` 。 权限包括：<ul><li>`READ` : 有关区段的返回和视图信息。</li><li>`WRITE` : 用 `PUT` 于更新区段。</li><li>`CREATE` : 用 `POST` 于创建区段。</li><li>`DELETE` : 删除区段. 需要访问基础特征（如果有）。 例如，如果要删除属于某个区段的特征，您将需要有权删除该特征。</li></ul><br>使用不同的键值对指定多个权限。 例如，要返回仅具有和权限的列表 `READ` 段， `WRITE` 请传入 `"permissions":"READ"`, `"permissions":"WRITE"` 。 |
+| `permissions` | 返回基于指定权限的区段列表。 `READ` 。 权限包括：<ul><li>`READ` :有关区段的返回和视图信息。</li><li>`WRITE` :用 `PUT` 于更新区段。</li><li>`CREATE` :用 `POST` 于创建区段。</li><li>`DELETE` : 删除区段. 需要访问基础特征（如果有）。 例如，如果要删除属于某个区段的特征，您将需要有权删除该特征。</li></ul><br>使用不同的键值对指定多个权限。 例如，要返回仅具有和权限的列表 `READ` 段， `WRITE` 请传入 `"permissions":"READ"`, `"permissions":"WRITE"` 。 |
 | `includePermissions` | ([!DNL Boolean])设置为 `true` 返回您对区段的权限。 默认值为 `false`. |
 
 ### 关于页面选项的注意事项
@@ -225,14 +225,14 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 | [!DNL Derived Signals] | `https://aam.adobe.io/v1/signals/derived/` |
 | [!DNL Destinations] | `https://aam.adobe.io/v1/destinations/` |
 | [!DNL Domains] | `https://aam.adobe.io/v1/partner-sites/` |
-| [!DNL Folders] | 特征：  `https://aam.adobe.io/v1/folders/traits /`<br>细分：  `https://aam.adobe.io/v1/folders/segments /` |
+| [!DNL Folders] | 特征： `https://aam.adobe.io/v1/folders/traits /`<br>细分：  `https://aam.adobe.io/v1/folders/segments /` |
 | [!DNL Schema] | `https://aam.adobe.io/v1/schemas/` |
 | [!DNL Segments] | `https://aam.adobe.io/v1/segments/` |
 | [!DNL Traits] | `https://aam.adobe.io/v1/traits/` |
 | [!DNL Trait Types] | `https://aam.adobe.io/v1/customer-trait-types` |
 | [!DNL Taxonomy] | `https://aam.adobe.io/v1/taxonomies/0/` |
 
-### 身份 [!DNL URLs] 验证 [!DNL OAuth] 请求（已弃用） {#request-urls-oauth}
+### 身份验证 [!DNL URLs] 请求 [!DNL OAuth] （已弃用） {#request-urls-oauth}
 
 | [!DNL API] 方法 | 请求 [!DNL URL] |
 |--- |--- |
@@ -241,7 +241,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 | [!DNL Derived Signals] | `https://api.demdex.com/v1/signals/derived/` |
 | [!DNL Destinations] | `https://api.demdex.com/v1/destinations/` |
 | [!DNL Domains] | `https://api.demdex.com/v1/partner-sites/` |
-| [!DNL Folders] | 特征：  `https://api.demdex.com/v1/folders/traits /`<br>细分：  `https://api.demdex.com/v1/folders/segments /` |
+| [!DNL Folders] | 特征： `https://api.demdex.com/v1/folders/traits /`<br>细分：  `https://api.demdex.com/v1/folders/segments /` |
 | [!DNL Schema] | `https://api.demdex.com/v1/schemas/` |
 | [!DNL Segments] | `https://api.demdex.com/v1/segments/` |
 | [!DNL Traits] | `https://api.demdex.com/v1/traits/` |
