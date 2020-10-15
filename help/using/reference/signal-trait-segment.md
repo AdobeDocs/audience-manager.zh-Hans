@@ -1,5 +1,5 @@
 ---
-description: 了解Audience Manager段的组件、用于设置受众资格标准的表达式，以及在事件呼叫中如何传输数据。
+description: 了解 Audience Manager 区段的组件、用于设置受众资格标准的表达式，以及如何在事件调用中传输数据。
 seo-description: 描述Audience Manager段的组件、用于设置受众资格标准的表达式，以及在事件呼叫中如何传输数据。
 seo-title: 信号、特征和区段
 solution: Audience Manager
@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 8027f278aa2b879b6cb277f44caf4b62dc75e2c3
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 4%
+ht-degree: 10%
 
 ---
 
 
 # [!UICONTROL Signals]、 [!UICONTROL Traits]and [!UICONTROL Segments] {#signals-traits-and-segments}
 
-描述表达式的组 [!DNL Audience Manager] 件、用 [!UICONTROL segment]于设置受众资格标准的，以及事件呼叫中如何传输数据。
+Describes the components of an [!DNL Audience Manager] [!UICONTROL segment], the expressions used to set audience qualification criteria, and how data is transmitted in an event call.
 
 ## 构图和用途
 
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 ![](assets/signals-traits-segments.png)
 
-**使用可[!UICONTROL Traits]视工[!UICONTROL Segment]具和代码编辑器构建和规则**
+**使用可 [!UICONTROL Traits] 视工 [!UICONTROL Segment] 具和代码编辑器构建和规则**
 
 客户端在 [!UICONTROL traits] 用 [!UICONTROL segments] 户界面中使用可视工具和代码编辑器 [!DNL Audience Manager] 进行管理。 可视化工具允许您使用搜索功能、弹出选项、下拉菜单和拖放功能创建规则。 代码编辑器为高级用户提供了一种有序开发受众分段标准的方法。
 
