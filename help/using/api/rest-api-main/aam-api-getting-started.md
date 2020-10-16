@@ -7,7 +7,7 @@ title: 开始使用 REST API
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 translation-type: tm+mt
-source-git-commit: f7b9c30f120b24f9294afa4aa6727ce8c4236acf
+source-git-commit: ab8745a8ba24154793201893a39a039b5a098833
 workflow-type: tm+mt
 source-wordcount: '1860'
 ht-degree: 4%
@@ -59,7 +59,7 @@ Information about general requirements, authentication, optional query parameter
 
 在配置身份 [!DNL JWT] 验证之前，请确保您有权在 [AdobeI/O中访](https://console.adobe.io/) 问 [Adobe开发者控制台](https://www.adobe.io/)。 有关访问请求，请与您的组织管理员联系。
 
-### 身份验证
+### 身份验证 {#auth}
 
 请按照以下步骤使用以 [!DNL JWT (Service Account)] 下方式配置身 [!DNL Adobe I/O]份：
 
