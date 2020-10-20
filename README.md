@@ -1,58 +1,65 @@
 ---
-source-git-commit: 36bf8ad65d249dc9e9ec3e5628ce370d256abf46
+source-git-commit: 84deeb062937c7bf46ee0f6f9516f9d49dbf4df6
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '517'
+ht-degree: 11%
 
 ---
 # Contribute文章
 
-我们欢迎来自社区以及来自文档团队外部Adobe员工的贡献。
+| EXL-PR | EXL | 预览 | 激活 | 已发布 | 帮助 |
+|--- |--- |--- |--- |--- |--- |
+| [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/audience-manager.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/audience-manager.en_pr-exl/lastBuild/) | [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/audience-manager.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/audience-manager.en_exl/lastBuild/lastBuild) | [预览URL](https://experienceleague.corp.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [实时URL](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=en) | [Authoring 指南](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
-## Adobe Open Source Code of Conduct
+我们欢迎来自我们社区以及文档团队外部的Adobe员工的贡献。
 
-This project has adopted the [Adobe Open Source Code of Conduct](code-of-conduct.md) or the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct). For more information, see the [Contributing](contributing.md) article.
+## Adobe开放源代码行为准则
+
+本项目已采用 [Adobe 开源行为准则](code-of-conduct.md)或 [.NET Foundation 行为准则](https://dotnetfoundation.org/code-of-conduct)。有关更多信息，请参阅[贡献](contributing.md)文章。
 
 ## 关于您对Adobe内容的贡献
 
-See the [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+请参阅 [Adobe文档参与者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
 
-您的贡献取决于您是谁以及要贡献的更改的种类：
+您的贡献方式取决于您是谁以及您希望贡献的更改类型：
 
-### 细微更改
+### 小改动
 
-If you are contributing minor updates out of the goodness of your heart, visit the article and click the **Edit** link in the article that goes to the GitHub source for the article. 然后，只需使用GithHub UI进行更新。See the general [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) for more information.
+如果您出于好意而提供次要更新，请访问文章，然后单击 **文章** 中的“编辑”链接，该链接将转到文章的GitHub源。 然后，只需使用GitHub UI进行更新。 有关详细信 [息，请参阅一般Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) 文档参与者指南。
 
-在此存储库中提交的用于文档和代码示例的小更正或说明受Adobe使用条款的约束。
+您为此回购协议中的文档和代码示例提交的细微更正或说明均受Adobe使用条款的约束。
 
 ### 社区成员的重大更改或新文章
 
-如果您是Adobe社区的一部分并且希望创建一篇新文章或提交重大更改，请使用Git存储库中的“期刊”选项卡提交一个问题，以开始与文档团队进行对话。在同意计划后，您需要与某个员工合作，以帮助通过公共和专用存储库中的工作组合该新内容。
+如果您是Adobe社区的一员，并且要创建新文章或提交重大更改，请使用Git存储库中的“问题”选项卡提交问题以开始与文档团队的对话。 一旦您同意了计划，您需要与员工合作，通过公共和专用存储库中的工作组合来帮助引入新内容。
 
 <!--
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
 -->
 
-### Adobe员工的主要变更
+### Adobe员工的主要变化
 
-If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it's your job to contribute to or author technical articles, you should use the private repository [https://git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+如果您是Adobe Experience Cloud解决方案的技术撰稿人、项目经理或产品团队的开发人员，并且您的工作是撰写或撰写技术文章，则应使用专用存储库https://git.corp.adobe.com/AdobeDocs [](https://git.corp.adobe.com/AdobeDocs)。 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## 工具和设置
 
-社区参与者可以使用GithHub UI进行基本编辑或撤销，以做出主要贡献。
+社区参与者可以使用GitHub UI进行基本编辑，或者将回购区分类，做出重大贡献。
 
-See the [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) for details.
+有关详细 [信息，请参阅Adobe文档](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) Contributor Guide。
 
-## 如何使用标记格式化主题
+## 如何使用标记设置主题格式
 
-此存储库中的所有文章都使用GitHub风味标记。如果您不熟悉标记，请参阅：
+此存储库中的所有文章都使用GitHub调味的标记。 如果您不熟悉标记，请参阅：
 
 * [标记基础知识](https://help.github.com/articles/markdown-basics/)
-* [可打印标记表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [可打印的标记清单](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## 标签
 
-在公用存储库中，分配自动化标签以帮助我们管理拉请求工作流，并帮助您了解拉动请求的进展情况：
+在公共存储库中，自动标签被分配为拉取请求，以帮助我们管理拉取请求工作流，并帮助您了解拉取请求的进展情况：
 
-* **更改发送给作者**：已向作者通知待处理的拖拉请求。
-* **随时合并**：随时准备由我们的拉动请求审阅小组审查。
+* **发送给作者的更改**:已通知作者有待处理的提取请求。
+* **就绪合并**:准备由我们的拉式请求审阅团队进行审阅。
 
 
