@@ -8,7 +8,7 @@ title: Audience Manager 中的 ID 索引
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
 feature: reference
 translation-type: tm+mt
-source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 5%
@@ -31,7 +31,7 @@ ht-degree: 5%
 ## [!DNL Audience Manager] ID 列表 {#id-list}
 
 | ID | 名称和说明 | 用法和示例 | 用户界面位置 |
-|---|-----------|---|------------|
+|---|---|---|---|
 | [!DNL AAM UUID] | [!DNL Adobe Audience Manager Unique User ID]，也称为 [!UICONTROL Device ID]。 一个38位数的数字设备ID，它与 [!DNL Audience Manager] 与之交互的每个设备相关联。 每当您在UI中看到提及独特用户时，请考虑此 [!DNL Audience Manager] ID。 Audience Manager将此ID [!DNL cookie] 保存 `demdex.net` 为第3方域。 | 在 [!DNL DCS] 调用 `uuid` 中，前面有前 `d_` 缀。 <br>示例: `d_uuid = 07955261652886032950143702505894272138` | 您可以在创 [!DNL traits] 建类 [!UICONTROL Device ID] 似模 [型和构建细](../features/algorithmic-models/create-model.md)分时进行筛 [选](../features/segments/segment-builder.md)。 您还可以在运行“特征 [!UICONTROL Device ID] 常规报 [表”和“特征趋](../reporting/general-reports.md) 势报表”时筛选结果 [](../reporting/trend-reports.md)。 |
 | [!DNL ImsOrgId] | [!DNL Organization ID]。这是公司在注册帐户时获得的ID。 [!DNL Experience Cloud] | `5DC5123F5245B1D20A490D46@AdobeOrg` | 用户界面中 [!DNL Audience Manager] 不可见。 要了解如何找到公司，请阅 [!DNL Organization ID]读查 [找您的组织ID](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)。 |
 | [!DNL PID] | [!DNL Partner ID]。这 [!DNL PID] 是公司的身份 [!DNL Audience Manager]。 Audience Manager将 [!DNL imsOrgId] 与关联 [!DNL PID]。 | `1352` | 用户界面中 [!DNL Audience Manager] 不可见。 |
