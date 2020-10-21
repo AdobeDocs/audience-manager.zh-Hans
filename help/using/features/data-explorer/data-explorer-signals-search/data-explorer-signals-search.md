@@ -5,15 +5,15 @@ seo-title: 信号搜索
 title: 信号搜索
 feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: f420534f6c9e979a01b5fd9150a0d736efd2b87f
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '93'
-ht-degree: 21%
+ht-degree: 29%
 
 ---
 
 
-# 信号搜索概述 {#signal-search}
+# 信号搜索概述 {#signals-search}
 
 搜索在特定时间段内接收的已用和未使用信号。 要搜索信号，请转至受众数据>信号>搜索。
 
