@@ -7,7 +7,7 @@ title: 数据操作组件
 uuid: c4c4cc46-8c96-4ef5-8269-571cc5ac9276
 feature: system components
 translation-type: tm+mt
-source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 3%
@@ -82,7 +82,7 @@ c_compact.xml
 
 以下示例包含来自的实时区段数据 [!UICONTROL IRIS]。 请记住，这只是样本数据。 每个客户可能有不同的格式要求，因此内容可能会有所不同。
 
-```json
+```
 {
     "ProcessTime": "Tue Jul 21 19:12:45 UTC 2015",
     "Client_ID": "111111",
