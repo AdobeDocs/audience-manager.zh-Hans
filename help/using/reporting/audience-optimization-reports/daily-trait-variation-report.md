@@ -7,9 +7,9 @@ title: 每日特征变化报表
 uuid: 4e82bb17-d447-4ed1-a4fc-e15b0f1b47f0
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '773'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 标准偏差测量偏离平均值（或平均／预期值）的偏差或偏差量。 标准差较低，表明数据点趋近于均值。 高标准偏差表示数据点分布在大范围值中。
 
-![屏幕截图每日特征变化报告](assets/daily_trait_variation.png)
+![](assets/daily_trait_variation.png)
 
 使用列表 [!UICONTROL Date] 为报表选择一个或多个日期。 在列表底部显示一个彩色编码条形图，它以可视方式代表所有选定日期中所有特征的标准偏差范围。 黑色垂直线表示平均值。
 
@@ -56,8 +56,8 @@ ht-degree: 1%
 
 一个月后，您会运行报 [!UICONTROL Daily Trait Variation] 告并注意到该特征存在较大的负偏 `productPage == "smartphones"` 差，但根据网站分析，访客数量已增加。 根据此信息，您会意识到您尚未更新新产 [!DNL Audience Manager] 品页面中的特征，因此您需要创建以下特征：
 
-* `productPage == "samsung"`
-* `productPage == "apple"`
-* `productPage == "huawei"`
+* productPage == &quot;samsung&quot;
+* productPage == &quot;apple&quot;
+* productPage == &quot;waue&quot;
 
 完成此操作后，您将看到受众符合新创建特征的资格。
