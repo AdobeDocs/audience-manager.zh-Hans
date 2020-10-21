@@ -7,9 +7,9 @@ title: Audience Optimization 报表的数据文件以及可操作的日志文件
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 feature: log files
 translation-type: tm+mt
-source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1042'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 以下语法定义格式良好的数据文件名的结构。 注意， *斜体* 表示一个变量占位符，它会根据文件内容而改变。
 
-**语法：**`event type_yyyymmdd`
+**语法：** <pre><i>事件类型</i>_<i>yyyymmdd</i></code></pre>
 
 在文件名中：
 
@@ -39,15 +39,15 @@ ht-degree: 5%
 
 根据这些要求，根据数据文件的内容命名它们，如下所示：
 
-* 印象数据： `impressions_yyyymmdd.gz`
-* 单击数据： `clicks_yyyymmdd.gz`
-* 转换数据： `conversions_yyyymmdd.gz`
+* 印象数据： <pre>impressions_<i>yyymmd</i>.gz</code></pre>
+* 单击数据： <pre>clicks_<i>yyymmdd</i>.gz</code></pre>
+* 转换数据： <pre>conversions_<i>yyymmdd</i>.gz</code></pre>
 
 ## Content Format for Data Files {#content-format}
 
 以下语法定义格式良好的数据文件中的内容结构。 注意， *斜体* 表示变量占位符，并替换为实际数据文件中的标签。
 
-**语法：**`header label 1 | header label 2 ... header label n | version`
+**语法：** <pre><i>标题标签1</i> |标 <i>题标签2</i> ...标 <i>题标签n</i> |版 <i>本</i></code></pre>
 
 在文件内容中：
 
@@ -153,7 +153,7 @@ ht-degree: 5%
 
 数据存储在目录中每个客户的单独命名空间 [!DNL Amazon S3] 中。 文件路径遵循下面显示的语法。 Note, *italics* indicates a variable placeholder. 其他元素是常量或键，不会更改。
 
-**语法：**`.../log_ingestion/pid=AAM ID/dpid=d_src/logs/file type_yyyymmdd`
+**语法：** <pre>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>文件类型</i>_<i>yyyymmdd</i></code></pre>
 
 下表定义了文件投放路径中的每个元素。
 
