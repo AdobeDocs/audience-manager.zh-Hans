@@ -7,7 +7,7 @@ title: DIL 用例和代码示例
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
 feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 3%
@@ -47,35 +47,35 @@ c_dil_send_page_objects.xml
 
 此基本示例以键值对的形式向Audience Manager发送颜色和价格数据。 您的代码可能如下所示：
 
-```
-var sample_dil = DIL.create({partner:"partner name"}); 
+<pre class="&ldquo;java&rdquo;"><code>
+var sample_dil = DIL.create({partner:"<i>partner name</i>"}); 
 sample_dil.api.signals({ 
    c_color:"blue", 
    c_price:"900" 
 }); 
 sample_dil.api.submit();
-```
+</code></pre>
 
 **示例2:在对象中发送数据**
 
 此高级示例演示如何将对象中的数据发送到Audience Manager。 使用此方法时， [!UICONTROL DIL] 允许您将对象作为函数参数传递给 [!DNL signals()] 方法。 [!UICONTROL DIL] 您的代码可能如下所示：
 
-```js
+<pre class="java"><code>
 var my_object = { 
    color : "blue", 
    price : "900" 
 }; 
  
-var sample_dil = DIL.create({ partner : "partner name" }); 
+var sample_dil = DIL.create({ partner : "<i>partner name</i>" }); 
 //Load the object and append "c_" to all keys in the key-value pairs and send data to AudienceManager. 
 sample_dil.api.signals(my_object,"c_").submit();
-```
+</code></pre>
 
 **示例3:在阵列中发送页面数据**
 
 在这种情况下，变量 `my_object` 使用数组来保存数据。 此示例构建于以上推荐方法传入的信息之上，但添加一个附加层以适应产品类型和型号。 您的代码可能如下所示：
 
-```js
+<pre class="java"><code>
 var my_objects = [{ 
    color : "blue", 
    price : "900" 
@@ -84,7 +84,7 @@ var my_objects = [{
    model : "tl" 
 }]; 
  
-var sample_dil = DIL.create({ partner : "partner name" }); 
+var sample_dil = DIL.create({ partner : "<i>partner name</i>" }); 
  
 for (var i = 0; i < my_objects.length; i++) 
 //Load the object and append "c_" to all the keys in the key-value pairs.  
@@ -92,7 +92,7 @@ for (var i = 0; i < my_objects.length; i++)
     sample_dil.api.signals(my_objects[i], "c_"); 
 } 
 sample_dil.api.submit();
-```
+</code></pre>
 
 ## 捕获引用URL {#capture-referring-url}
 
@@ -112,10 +112,10 @@ c_dil_hrefer_over_https.xml
 
 您的代码可能如下所示：
 
-```js
-var adobe_dil = DIL.create({ partner : "partner name" }); 
+<pre class="java"><code>
+var adobe_dil = DIL.create({ partner : "<i>partner name</i>" }); 
 adobe_dil.api.signals({ d_referer : document.referrer }).submit();
-```
+</code></pre>
 
 ## 捕获搜索引擎类型和关键字搜索词 {#capture-search-engine-types}
 
@@ -143,7 +143,7 @@ adobe_dil.api.signals({ d_referer : document.referrer }).submit();
 
 获取搜索推荐人(例如，从 `google.com`)的基本代码如下所示：
 
-```js
+```java
 var search_referrer = DIL.tools.getSearchReferrer();
 ```
 
@@ -151,8 +151,8 @@ var search_referrer = DIL.tools.getSearchReferrer();
 
 在本例中，假设用户从加拿大搜索了“ [!DNL Google] homes”( `www.google.ca`)。 请注意代码如何将所 `c_` 需参数作为搜索引擎( `c_se`)和搜索词( `c_st`)的前缀。 `c_` 是必 [需的前缀](../features/traits/trait-variable-prefixes.md) ，它将这些变量标识为Audience Manager的客户定义变量。
 
-```js
-var adobe_dil = DIL.create({partner:"partner name"}); 
+<pre class="java"><code>
+var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
 var search_referrer = DIL.tools.getSearchReferrer(); 
  
 if (search_referrer && search_referrer.valid) { 
@@ -161,14 +161,14 @@ if (search_referrer && search_referrer.valid) {
     c_st : se.keywords 
   }).submit(); 
 }
-```
+</code></pre>
 
 **未列出的搜索引擎代码示例**
 
 在这种情况下，我们假设用户从中搜索“homes”一词 `dogpile.com`。 由 [!DNL Dogpile] 于默认不支持，您可以配置DIL以识别此搜索引擎并将搜索词返回给Audience Manager。 您的代码可能如下所示：
 
-```js
-var adobe_dil = DIL.create({partner:"partner name"}); 
+<pre class="java"><code>
+var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
 var search_referrer = DIL.tools.getSearchReferrer(document.referrer, {  
     hostPattern:/dogpile\./, 
     queryParam:"q" 
@@ -180,7 +180,7 @@ if (search_referrer && search_referrer.valid) {
     c_st : se.keywords 
   }).submit(); 
 }
-```
+</code></pre>
 
 ## 将键值映射到其他键 {#map-key-values}
 
@@ -202,7 +202,7 @@ c_dil_map_keys.xml
 
 您的代码可能如下所示：
 
-```js
+```java
 var adobe_dil = DIL.create({ 
     partner : "adobe", 
     mappings : { 
