@@ -7,15 +7,15 @@ title: get_aamCookie 代码
 uuid: 89c30fe3-dbe6-4d18-b161-104167d75bcd
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: 7d0735fa9620b7765db7be8d3a7c8731536ffd32
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 11%
+source-wordcount: '75'
+ht-degree: 9%
 
 ---
 
 
-# get_aamCookie 代码 {#get-aamcookie-code}
+# `get_aamCookie` 代码 {#get-aamcookie-code}
 
 捕获Audience Manager唯 [!DNL DART Enterprise] 一用户ID()值所需的代码(和其[!DNL UUID]他目标类型)。
 
