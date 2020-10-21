@@ -7,9 +7,9 @@ title: 定义的目标宏
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: 4bf32099e964c421d943d9925c74dd0d4d6ee576
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '674'
 ht-degree: 2%
 
 ---
@@ -54,9 +54,9 @@ ht-degree: 2%
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
     </ul> <p>宏将替换 <code> 1</code> 为 <code> CustomerABC</code>。 </p> <p> 
-     <!--
-       Based on AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
-     --> </p> </td> 
+     <draft-comment>
+       基于AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
+     </draft-comment> </p> </td> 
   </tr> 
   <tr>
     <td><p><code>${GDPR}</code></p></td>
@@ -98,7 +98,7 @@ ht-degree: 2%
 
 宏和 `%rnd%` 宏 `%timestamp%` 将唯一值插入字符串以 [!DNL URL] 防止浏览器缓存。
 
-## 缓存Busting（%rnd%和%timestamp%） {#dest-cache-busting}
+## 缓存破坏 `%rnd%` 与 `%timestamp%` {#dest-cache-busting}
 
 <!-- c_dest_cache_busting.xml -->
 
@@ -109,7 +109,7 @@ ht-degree: 2%
 * `%rnd%`:在URL中插入随机数。
 * `%timestamp%`:将Unix日期／时间插入URL。
 
-## 比较%rnd%和%timestamp% {#compare-rnd-timestamp}
+## 比较 `%rnd%` 和 `%timestamp%` {#compare-rnd-timestamp}
 
 这两个宏都会阻止缓存， `%rnd%` 但可能更高效。 例如，如果 `%timestamp%`多个用户同时视图页面，他们将获得相同的日期／时间值。 因此，该调用不 [!DNL URL] 是唯一的，并且只计数一次多次调用。 但是， `%rnd%` 为每个调用生成一个唯一的数值（即使用户同时看到同一页面）。 这表示该字 [!DNL URL] 符串包含不同的值，并被计为唯一值。
 
