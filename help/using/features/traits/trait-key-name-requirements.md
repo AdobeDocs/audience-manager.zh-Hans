@@ -7,9 +7,9 @@ title: 关键变量的名称要求
 uuid: fa72e732-895d-4cf6-bea0-66b404c2b059
 feature: Traits
 translation-type: tm+mt
-source-git-commit: 4bf32099e964c421d943d9925c74dd0d4d6ee576
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '124'
 ht-degree: 12%
 
 ---
@@ -29,6 +29,6 @@ ht-degree: 12%
 
 * 密钥名称无效： `123`, `price!123`o.
 
-## 用c_为关键变量前缀
+## 将关键变量前缀为 `c_`
 
 如果 `c_` 在事件 *调用* URL上发送数据的参数使用该语法，则前缀始终是必需的。
