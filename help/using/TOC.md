@@ -2,23 +2,21 @@
 product: audience-manager
 solution: Audience Manager
 audience: end-user
-user-guide-title: Audience Manager 指南
-breadcrumb-title: Audience Manager 指南
-breadcrumb-url: /docs/audience-manager/user-guide/aam-home.html
-user-guide-description: Audience Manager 为在线受众数据管理提供行业领先的服务。
+user-guide-title: Audience Manager 用户指南
+user-guide-description: Audience Manager 提供了行业领先的在线受众数据管理服务。
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 59eda3fa250fa33ef283f09b0027845431e9517b
+source-git-commit: 7b58619a5208f7a48002d65d7bcbf0af602ba908
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1769'
 ht-degree: 93%
 
 ---
 
 
-# Audience Manager 指南 {#user-guide}
+# Audience Manager 用户指南 {#user-guide}
 
-+ [Audience Manager 指南](aam-home.md)
++ [Audience Manager 产品文档](aam-home.md)
 + 概述{#overview}
    + [Audience Manager 概述](overview/aam-overview.md)
    + [收集的数据类型](overview/data-types-collected.md)
@@ -36,7 +34,6 @@ ht-degree: 93%
          + [同意管理](overview/data-security-and-privacy/data-privacy-consent.md)
          + [适用于 IAB TCF 的 Audience Manager 插件](overview/data-security-and-privacy/aam-iab-plugin.md)
    + [数据管理](overview/data-security-and-privacy/data-governance.md)
-   + [Audience Manager中的辅助功能](overview/accessibility-in-aam.md)
 + 功能{#features}
    + [可寻址受众](features/addressable-audiences.md)
    + 管理{#administration}
@@ -78,7 +75,7 @@ ht-degree: 93%
       + [Data Explorer - 概述、优点和用例](features/data-explorer/data-explorer-overview.md)
       + [了解信号](features/data-explorer/data-explorer-understanding-signals.md)
       + [信号仪表板](features/data-explorer/data-explorer-signals-dashboard.md)
-      + 信号搜索{#signal-search}
+      + 信号搜索{#signals-search}
          + [信号搜索概述](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
          + [按键值对搜索信号](features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
          + [按筛选条件搜索信号](features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
