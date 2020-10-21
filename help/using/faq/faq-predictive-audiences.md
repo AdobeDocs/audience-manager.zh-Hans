@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 1df6e8a76e5eae85483820926474ebc8633d5591
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '895'
 ht-degree: 64%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 64%
 
  
 
-**什么时候应该使用[!UICONTROL Predictive Audiences]而不是[!UICONTROL Look-alike modeling]？**
+**什么时候应该使用 [!UICONTROL Predictive Audiences] 而不是 [!UICONTROL Look-alike modeling]？**
 
 [!UICONTROL Predictive Audiences] 和 [!UICONTROL Look-alike modeling] 分别用于不同的用例。两种算法的主要区别如下：
 
@@ -40,17 +40,9 @@ ht-degree: 64%
 
  
 
-**如何从[!UICONTROL Predictive Audiences]区段构建新区段？**
+**如何从 [!UICONTROL Predictive Audiences] 区段构建新区段？**
 
 转到 **[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**,然后单击 **[!UICONTROL Predictive Audiences]** 文件夹。找到所需的区段，复制该区段，然后根据您的需求对其进行编辑。
-
- 
-
-**为什么我的一些已载入访客没有被分类？**
-
-目前，受众分类仅适用于具有实时资格的用户，但定义为 [!UICONTROL Profile Merge Rules] 一部分的经过身份验证的用户除外。
-
-将来的更新中将添加对已载入数据的完全支持。
 
  
 
@@ -68,24 +60,22 @@ ht-degree: 64%
 
 1. None of the selected persona [!UICONTROL traits] / [!UICONTROL segments] have enough user profiles. We recommend choosing your [!UICONTROL traits] or [!UICONTROL segments] so that each persona has at least a few hundred user profiles.
 1. None of the selected persona [!UICONTROL traits] / [!UICONTROL segments] have enough data in their user profiles (not enough traits to analyze).
-1. 目标受众特征/区段在过去 30 天内没有任何活动或已载入的用户。
+1. 目标受众特征／区段没有任何有效或已载入的用户。
 1. 过去 30 天内处于活动状态或已载入的目标受众用户在其用户配置文件中没有足够的数据（特征不足，无法进行分析）。
 1. 目标受众段使用的不 [!UICONTROL Profile Merge Rule] 同于您为模型选择的段。
 1. 您为模型选择的目标受众特征的数 [!UICONTROL Profile Merge Rule] 据源可能不包括在中。
-
-To produce relevant results, the [!UICONTROL Predictive Audiences] algorithm evaluates trait and segment realizations based on real-time user activity seen by the [!DNL DCS]. 如果您选择的新基本特征和区段还没有足够的用户，则算法可能需要几天时间才能对受众进行分类。
 
 为了获得最佳结果，请遵循[角色选择标准](../features/algorithmic-models/predictive-audiences.md#selection-personas)和[目标受众选择标准](../features/algorithmic-models/predictive-audiences.md#selection-audience)中的建议准则。
 
  
 
-**为什么我的模型显示[!UICONTROL Error]状态？**
+**为什么我的模型显示 [!UICONTROL Error] 状态？**
 
 这表明模型运行失败。In such cases, please reach out to your [!DNL Adobe] representative.
 
  
 
-**如何更改[!UICONTROL Profile Merge Rule]为[!UICONTROL Predictive Audiences][!UICONTROL segment]?**
+**如何更改 [!UICONTROL Profile Merge Rule] 为 [!UICONTROL Predictive Audiences][!UICONTROL segment]?**
 
 通过选择与上一个模型相同的角色和目标受众来创建新模型。 在模型创建过程中，指定其他 [!UICONTROL Profile Merge Rule]。
 
@@ -96,7 +86,7 @@ To produce relevant results, the [!UICONTROL Predictive Audiences] algorithm eva
 
  
 
-**我应[!UICONTROL Profile Merge Rule]该选择什么？**
+**我应 [!UICONTROL Profile Merge Rule] 该选择什么？**
 
 选择模型 [!UICONTROL Profile Merge Rule] 时，请仔细分析用例。
 
@@ -106,23 +96,15 @@ To produce relevant results, the [!UICONTROL Predictive Audiences] algorithm eva
 
 仔细分析您的用例，并 [!UICONTROL trait] 确定您希望模型学习的类型以及希望模型用于分类的数据类型。
 
- 
-
 **目标受众中不属于任何角色特征/区段的用户是否无法分类？**
 
 是的，如果用户在其配置文件中没有任何特征就不能被分类。在这种情况下，用户针对所有角色特征/区段获得的匹配得分为 0，因此不会被分类为任何预测区段。
 
  
 
-**被分类为其中一个预测区段的用户能否被重新分类为其他[!UICONTROL Predictive Audiences]区段？**
+**被分类为其中一个预测区段的用户能否被重新分类为其他 [!UICONTROL Predictive Audiences] 区段？**
 
 能。由于该算法每天都会进行训练，因此就特征得分而言，它会根据每个角色进行更改。如果属于 [!UICONTROL Predictive Audiences] 区段的用户处于活动状态，则其特征得分会发生更改，从而可以根据过去 30 天的活动更改分类。
-
- 
-
-**能否向常规细分添加预测特征？**
-
-将预测特征添加到常规区段时，它将成为预测区段。 因此，所有关联用户档案都被取消分段。 预测细分只能发送到实时目标。
 
  
 
