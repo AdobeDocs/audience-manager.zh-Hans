@@ -8,9 +8,9 @@ title: Audience Manager 中的访客身份验证状态
 uuid: d748c0c3-5833-4fb9-ab3e-793f5f252e47
 feature: reference
 translation-type: tm+mt
-source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '437'
 ht-degree: 5%
 
 ---
@@ -24,10 +24,25 @@ Audience Manager中的访客身份验证状态确定新特征信息是写入访�
 
 ## 身份验证状态：未知 {#auth-status-unknown}
 
-| 请求值 | **从已验证** 的用户档案读取信息 | **将新特征** 写入已验证的用户档案 |
----------|----------|---------
-| 0 | <ul><li>是，如果已验证选项合并规则=“上次已验证用户档案”。</li><li>否，如果已验证选项合并规则=“当前已验证用户档案”或“无已验证用户档案”。</li></ul> | 否，特征数据将添加到设备用户档案。 |
-
+<table id="table_E1EA51533FAE4BBFB338D6F6116BC1F9"> 
+ <thead> 
+  <tr> 
+   <th colname="col1" class="entry"> <p>请求值 </p> </th> 
+   <th colname="col2" class="entry"> <p> <b>从已验证</b> 的用户档案读取信息 </p> </th> 
+   <th colname="col3" class="entry"> <p> <b>将新特征</b> 写入已验证的用户档案 </p> </th> 
+  </tr> 
+ </thead>
+ <tbody> 
+  <tr> 
+   <td colname="col1" morerows="1"> <p> <code> 0 </code> </p> </td> 
+   <td colname="col2"> <p>是，如果已验证选项合并规则=“上次已验证用户档案”。 </p> </td> 
+   <td colname="col3" morerows="1"> <p>否，特征数据将添加到设备用户档案。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col2"> <p>否，如果已验证选项合并规则=“当前已验证用户档案”或“无已验证用户档案”。 </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 示例调用（与身份验证状态对应的请求值会突出显示）:
 
@@ -35,9 +50,25 @@ Audience Manager中的访客身份验证状态确定新特征信息是写入访�
 
 ## 身份验证状态：已验证 {#auth-status-authenticated}
 
-| 请求值 | **从已验证** 的用户档案读取信息 | **将新特征** 写入已验证的用户档案 |
----------|----------|---------
-| 1 | <ul><li>是，如果已验证选项合并规则=“当前已验证用户档案”或“上次已验证用户档案”。</li><li>否，如果已验证选项合并规则=“无已验证用户档案”。</li></ul> | 是，特征数据将添加到已验证的用户档案。 |
+<table id="table_956ABF96024744308F7773E1F96482B7"> 
+ <thead> 
+  <tr> 
+   <th colname="col1" class="entry"> <p>请求值 </p> </th> 
+   <th colname="col2" class="entry"> <p> <b>从已验证</b> 的用户档案读取信息 </p> </th> 
+   <th colname="col3" class="entry"> <p> <b>将新特征</b> 写入已验证的用户档案 </p> </th> 
+  </tr> 
+ </thead>
+ <tbody> 
+  <tr> 
+   <td colname="col1" morerows="1"> <p> <code> 1 </code> </p> </td> 
+   <td colname="col2"> <p>是，如果已验证选项合并规则=“当前已验证用户档案”或“上次已验证用户档案”。 </p> </td> 
+   <td colname="col3" morerows="1"> <p>是，特征数据将添加到已验证的用户档案。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col2"> <p>否，如果已验证选项合并规则=“无已验证用户档案”。 </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 示例调用（与身份验证状态对应的请求值会突出显示）:
 
@@ -45,9 +76,25 @@ Audience Manager中的访客身份验证状态确定新特征信息是写入访�
 
 ## 身份验证状态：LOGGED_OUT {#auth-status-logged-out}
 
-| 请求值 | **从已验证** 的用户档案读取信息 | **将新特征** 写入已验证的用户档案 |
----------|----------|---------
-| 2 | <ul><li>是，如果已验证选项合并规则=“上次已验证用户档案”</li><li>否，如果已验证选项合并规则=“当前已验证用户档案”或“无已验证用户档案”</li></ul> | 否，特征数据将写入设备用户档案。 |
+<table id="table_783F0CBB0431482AA49F41468FA65B19"> 
+ <thead> 
+  <tr> 
+   <th colname="col1" class="entry"> <p>请求值 </p> </th> 
+   <th colname="col2" class="entry"> <p> <b>从已验证</b> 的用户档案读取信息 </p> </th> 
+   <th colname="col3" class="entry"> <p> <b>将新特征</b> 写入已验证的用户档案 </p> </th> 
+  </tr> 
+ </thead>
+ <tbody> 
+  <tr> 
+   <td colname="col1" morerows="1"> <p> <code> 2 </code> </p> </td> 
+   <td colname="col2"> 是，如果已验证选项合并规则=“上次已验证用户档案” </td> 
+   <td colname="col3" morerows="1"> <p>否，特征数据将写入设备用户档案。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col2"> 否，如果已验证选项合并规则=“当前已验证用户档案”或“无已验证用户档案” </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 示例调用（与身份验证状态对应的请求值会突出显示）:
 
