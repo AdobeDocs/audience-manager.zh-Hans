@@ -8,7 +8,7 @@ keywords: Segment-level Reporting, segment-level, segment level
 uuid: d7236667-282b-4160-9909-579721af4016
 feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: dac08e9a31cb80b048013d95b7a617e4fb68e2fe
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '2027'
 ht-degree: 1%
@@ -170,8 +170,7 @@ Audience Marketplace数据购买者同意使用数据馈送中包含的按每千
 在数据 [源级别报告CPM使用情况时](#feed-level-report)，您必须根据特征资格规则中使用的 [!DNL Boolean] 运算符，按比例为每个数据源分配展示次数。 下表列表了如何按布尔规则或特征类型正确分配展示次数。
 
 >[!TIP]
->
-> [在细分级别报告CPM使用情况](#segment-level-report) ，让Audience Manager自动完成数据馈送级别报告。
+>[在细分级别报告CPM使用情况](#segment-level-report) ，让Audience Manager自动完成数据馈送级别报告。
 
 <table id="table_BF00FE6740D2459DAFA62F2478492586"> 
  <thead> 
