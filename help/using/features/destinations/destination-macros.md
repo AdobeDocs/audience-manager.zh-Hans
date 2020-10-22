@@ -7,9 +7,9 @@ title: 定义的目标宏
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fc13643681eebec17a95607482f2864e81b95820
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 2%
 
 ---
@@ -53,10 +53,7 @@ ht-degree: 2%
     </ul> <p>为此，Audience Manager <code>%dpid_<i>data source id</i>%</code>合作伙 <span class="keyword"> 伴将</span> 如下格式化宏： </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
-    </ul> <p>宏将替换 <code> 1</code> 为 <code> CustomerABC</code>。 </p> <p> 
-     <draft-comment>
-       基于AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
-     </draft-comment> </p> </td> 
+    </ul> <p>宏将替换 <code> 1</code> 为 <code> CustomerABC</code>。 </p> </td> 
   </tr> 
   <tr>
     <td><p><code>${GDPR}</code></p></td>
