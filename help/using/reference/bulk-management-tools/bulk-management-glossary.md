@@ -7,7 +7,7 @@ title: 批量管理工具术语表
 uuid: 4658a6bc-9515-4d31-9715-0084760b0cea
 feature: baaam
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fc13643681eebec17a95607482f2864e81b95820
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 5%
@@ -83,7 +83,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> startDate</span> </p> </td> 
-   <td colname="col2"> <p>指示何时可将开始发送到目标。 使 <tt>用yyyy-mm-dd</tt> 格式。 </p> </td> 
+   <td colname="col2"> <p>指示何时可将开始发送到目标。 使 <i>用yyyy-mm-dd</i> 格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> targetKey</span> </p> </td> 
