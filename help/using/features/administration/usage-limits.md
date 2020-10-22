@@ -8,9 +8,9 @@ keywords: ID mapping, ID mappings, cookie mappings
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 feature: Usage and Billing
 translation-type: tm+mt
-source-git-commit: 7d2f4b45ac3e45c9b4fcaffa4b5c5324ff03e683
+source-git-commit: fc13643681eebec17a95607482f2864e81b95820
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '576'
 ht-degree: 6%
 
 ---
@@ -22,7 +22,7 @@ Audience Manager对您可以为帐户创建的特征、区段、目标和算法�
 
 ## ID 映射限制 {#id-mapping-limits}
 
-下表列表了设备 [ID的](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) ID映射限制。 一旦ID达到以下任何限制，Audience Manager将删除最旧的存储ID映射，并添加新的ID映射，从 [!DNL FIFO] 而根据（先入先出）逻辑添加新ID映射。 有关Audience Manager [支持的ID](../../reference/ids-in-aam.md) ，请参阅Audience Manager中的ID索引。
+下表列表了设备 [ID的](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) ID映射限制。 一旦ID达到以下任何限制，Audience Manager将根据FIFO（先入先出）逻辑，删除最旧存储的ID映射，并添加新ID映射，从而添加新ID映射。 有关Audience Manager [支持的ID](../../reference/ids-in-aam.md) ，请参阅Audience Manager中的ID索引。
 
 | ID映射 | 最大限制 |
 |-----------|-------------- |
