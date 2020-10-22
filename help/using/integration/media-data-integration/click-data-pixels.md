@@ -1,16 +1,16 @@
 ---
-description: 'null'
-seo-description: 'null'
+description: 点击跟踪可衡量您整个活动的访客参与度，因为它记录了第三方创意人员的基于点击的活动。
+seo-description: 点击跟踪可衡量您整个活动的访客参与度，因为它记录了第三方创意人员的基于点击的活动。
 seo-title: 通过像素调用捕获营销活动点击数据
 solution: Audience Manager
 title: 通过像素调用捕获营销活动点击数据
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 feature: Integration with Campaign
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 231d8e537cf5b4f29b1c4f284fe1b3ffe6d187a9
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 12%
+source-wordcount: '686'
+ht-degree: 11%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 12%
 
 单击跟踪调用需要以下参数：
 
-* `d_event=click`: 将事件调用标识为单击事件的键值对。
-* `d_rd=redirect URL`: 包含多次编码重定向的键值对 [!DNL URL]。 如果您使用的是联机编码工具，请通过编码器运行该字符串，然后再次对结果进行编码，以便重定向正常工作。
+* `d_event=click`:将事件调用标识为单击事件的键值对。
+* `d_rd=redirect URL`:包含多次编码重定向的键值对 [!DNL URL]。 如果您使用的是联机编码工具，请通过编码器运行该字符串，然后再次对结果进行编码，以便重定向正常工作。
 
 此外，调用可包含键值对，这些键值对可用于特征鉴定或为其他报告提供数据和元数据。
 
@@ -48,7 +48,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## 支持的宏
 
-单击事件支持下表中列出的宏。 宏是自包含的小代码单元，在加载广告标签时激活，以便活动和用户跟踪。 宏将随目标一起传递，只 [!DNL URL]要它们被标记为以下格式： `%macro%`. 某些键没有宏，而是接受硬编码ID值。 如果要分析受众优化报告中的数据，则需要接受硬编码 [值的键](../../reporting/audience-optimization-reports/audience-optimization-reports.md)。
+单击事件支持下表中列出的宏。 宏是自包含的小代码单元，在加载广告标签时激活，以便活动和用户跟踪。 宏将随目标一起传递，只 [!DNL URL]要它们被标记为以下格式： `%macro%`. 某些键没有宏，而是接受硬编码ID值。 如果要分析“Audience Optimization报告”中的数据，则需要接受硬编码值 [的键](../../reporting/audience-optimization-reports/audience-optimization-reports.md)。
 
 <table id="table_6EB65C3B7D0E49C59AA6C932549E33FC"> 
  <thead> 
@@ -67,17 +67,17 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
    <td colname="col02"> <p>无宏。 </p> <p>接受硬编码ID值。 </p> </td> 
-   <td colname="col2"> <p>广告商 ID.</p> <p>广告商数据源的集成代码。 请注意，这与Audience Manager数据源无关。</p> <p> 受众优 <span class="wintitle"> 化报告</span> 。 </p> </td> 
+   <td colname="col2"> <p>广告商 ID.</p> <p>广告商数据源的集成代码。 请注意，这与Audience Manager数据源无关。</p> <p> Audience Optimization报 <span class="wintitle"> 告</span> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bu</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_bu%</code> </p> </td> 
-   <td colname="col2"> <p>业务单位的数字ID。 </p> <p> 受众优 <span class="wintitle"> 化报告</span> 。 </p> </td> 
+   <td colname="col2"> <p>业务单位的数字ID。 </p> <p> Audience Optimization报 <span class="wintitle"> 告</span> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_campaign</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_campaign%</code> </p> </td> 
-   <td colname="col2"> <p>广告服务器中的数字活动ID。 </p> <p> 受众优 <span class="wintitle"> 化报告</span> 。 </p> </td> 
+   <td colname="col2"> <p>广告服务器中的数字活动ID。 </p> <p> Audience Optimization报 <span class="wintitle"> 告</span> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_creative</code> </p> </td> 
@@ -169,10 +169,10 @@ d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creativ
 
 ## 其他功能- [!UICONTROL Audience Optimization Reports]
 
-您可以使用像素调用来支持 [受众优化报表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [希望使用像素为报表提供动力](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，请参阅元数据文件的概述和映射。
+您可以使用像素调用为Audience Optimization报 [表提供动力](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [希望使用像素为报表提供动力](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，请参阅元数据文件的概述和映射。
 
 
 >[!MORELIKETHIS]
 >
->* [受众优化报告的数据和元数据文件](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
+>* [Audience Optimization报告的数据和元数据文件](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
 
