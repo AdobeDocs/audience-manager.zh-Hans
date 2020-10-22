@@ -7,10 +7,10 @@ title: DIL 创建
 uuid: 6e054600-703c-4a97-af2a-8207c50013db
 feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fc13643681eebec17a95607482f2864e81b95820
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 10%
+source-wordcount: '825'
+ht-degree: 11%
 
 ---
 
@@ -60,9 +60,7 @@ r_dil_create.xml
    <td colname="col1"> <p> <code> declaredId </code> </p> </td> 
    <td colname="col2"> <p>对象 </p> </td> 
    <td colname="col3"> 
-    <draft-comment> 
-     <p>在每次事件 <a href="../../features/declared-ids.md"> 调用中 </a> 将Declared ID变量发送 <span class="keyword"> 给Audience Manager </span>。 </p> 
-    </draft-comment> <p> <code> delcaredId </code> 用于传递： </p> 
+    <p> <code> declaredId </code> 用于传递： </p> 
     <ul id="ul_75E64D7DDBD14670BB0BC7819F72036C"> 
      <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>:按Audience Manager分配给您的数据合作伙伴 <span class="keyword"> ID </span>。 </li> 
      <li id="li_3BD52ADEA1E24B41B51AFA95D71DD1FC"> <code> dpuuid </code>:您的用户唯一ID。 </li> 
