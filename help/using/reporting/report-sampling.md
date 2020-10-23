@@ -7,9 +7,9 @@ title: 选定 Audience Manager 报表中的数据取样率和错误率
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 feature: reporting reference
 translation-type: tm+mt
-source-git-commit: 33d844578c5cd620f9d4c33ec931ae0778aabb07
+source-git-commit: 397be3f44bf865633140bb45630a78be0a0d2219
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '467'
 ht-degree: 7%
 
 ---
@@ -60,7 +60,7 @@ Overlap reports ([trait-to-trait](/help/using/reporting/dynamic-reports/trait-tr
 
 ## 使用Minhash采样方法 {#minhash}
 
-基于Minhash [采样方法](https://en.wikipedia.org/wiki/MinHash) ,Audience Manager在单置换散列数据草图上，采用一种新的方法计算特征和分段估计。 这种新方法比Jaccard相似性估计器标准估计器产生的方差要小。 有关使用此方法的报告，请参阅以下部分。
+基于Minhash [采样方法](https://en.wikipedia.org/wiki/MinHash) ,Audience Manager在单置换散列数据草图上，采用一种新的方法计算特征和分段估计。 该方法比标准Jaccard相似度估计器产生的方差要小。 有关使用此方法的报告，请参阅以下部分。
 
 <!--
 
