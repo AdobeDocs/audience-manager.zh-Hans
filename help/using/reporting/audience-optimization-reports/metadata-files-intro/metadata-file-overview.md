@@ -7,9 +7,9 @@ title: 元数据文件的概述和映射
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
 feature: log files
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: 5d6983f5308f1dfd4560ee1b38bcaee3ca6e422f
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '841'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 4%
 
 其次，如果您要将自己的数据发送到，或希望 [!DNL Audience Manager] 在报告中看到未与我们集成的其他提供商的数据，则需要一个元数据文件。 例如， [!DNL Audience Manager] 与Google的多次单击 [活动管理器(DCM](../../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) )集成。 由于这种关系， [!DNL Audience Manager] 可以将ID与报表选项使用的名称和说明相关联。 如果没有集成，我们仍可以摄取数据，但报表选项将显示数字ID，而不是描述性名称。
 
-![](assets/metadata_menu.png)
+![元数据菜单图像](/help/using/reporting/audience-optimization-reports/metadata-files-intro/assets/metadata_menu.png)
 
 ## 文件映射 {#file-mappings}
 
@@ -112,7 +112,7 @@ ht-degree: 4%
 
 在此示例中，我们将创建一个元数据文件，将创意名称引入报 [!UICONTROL Audience Optimization] 表。 为此，我们需要从事件调用中提取创意、活动和数据源ID。
 
-![](assets/metadata_file_event.png)
+![事件呼叫图像](/help/using/reporting/audience-optimization-reports/metadata-files-intro/assets/metadata_file_event.png)
 
 ### 文件名
 
@@ -124,7 +124,7 @@ ht-degree: 4%
 
 * 创意ID和活动ID代表类别，而不是实际标识符。
 
-![](assets/metadata_file_name.png)
+![如何生成文件名](/help/using/reporting/audience-optimization-reports/metadata-files-intro/assets/metadata_file_name.png)
 
 See [Naming Conventions for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md).
 
@@ -132,7 +132,7 @@ See [Naming Conventions for Metadata Files](../../../reporting/audience-optimiza
 
 在此示例中，文件内容反映在事件调用中传入的创意ID和活动ID。 此处的新元素是可读名称。 处理后，该文件中的名称将作为选项显示在报告的“创意”菜 [!UICONTROL Audience Optimization] 单中。
 
-![](assets/metadata_file_contents.png)
+![元数据文件的内容](/help/using/reporting/audience-optimization-reports/metadata-files-intro/assets/metadata_file_contents.png)
 
 See [Content Format for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md).
 
