@@ -8,10 +8,10 @@ title: 键值对说明
 uuid: f1435742-81ca-4964-8370-accf2f1c47a5
 feature: reference
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 5d6983f5308f1dfd4560ee1b38bcaee3ca6e422f
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 7%
+source-wordcount: '276'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ c_key_value_explained.xml
 
  -->
 
-键值对由两个相关的数据元素组成： 一个键，它是定义数据集（例如，性别、颜色、价格）的常数，以及一个值，它是属于该集的变量（例如，男／女、绿色、100）。 键值对完全成形，可能如下所示：
+键值对由两个相关的数据元素组成：一个键，它是定义数据集（例如，性别、颜色、价格）的常数，以及一个值，它是属于该集的变量（例如，男／女、绿色、100）。 键值对完全成形，可能如下所示：
 
 * `gender = male`
 * `color = green`
@@ -54,44 +54,10 @@ c_key_value_explained.xml
 
 ## 标准和序列化关键值元素 {#standard-serialized-key-value-elements}
 
-<table id="table_62B0498441034A719C9DB57276777D40"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 类型 </th> 
-   <th colname="col2" class="entry"> 示例 </th> 
-   <th colname="col3" class="entry"> 键 </th> 
-   <th colname="col4" class="entry"> 键值分隔符 </th> 
-   <th colname="col5" class="entry"> 键值分隔符 </th> 
-   <th colname="col6" class="entry"> 串行分隔符 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <b>单键</b> <p>(标准) </p> </td> 
-   <td colname="col2"> <code> x=1&amp;x=2 </code> </td> 
-   <td colname="col3"> x </td> 
-   <td colname="col4" morerows="3"> = </td> 
-   <td colname="col5" morerows="1"> &amp; </td> 
-   <td colname="col6" morerows="1"> 不适用 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <b>键值对</b> <p>(标准) </p> </td> 
-   <td colname="col2"> <code> x=1&amp;x=2&amp;y=3&amp;y=4 </code> </td> 
-   <td colname="col3"> x, y </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <b>单键</b> <p>（串行） </p> </td> 
-   <td colname="col2"> <code> x=1;2;3 </code> </td> 
-   <td colname="col3"> x </td> 
-   <td colname="col5"> 不适用 </td> 
-   <td colname="col6" morerows="1"> ; </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <b>键值对</b> （串行） </td> 
-   <td colname="col2"> <code> x=1;2&amp;y=3;4 </code> </td> 
-   <td colname="col3"> x, y </td> 
-   <td colname="col5"> &amp; </td> 
-  </tr> 
- </tbody> 
-</table>
 
+| 类型 | 示例 | 键 | 键值分隔符 | 键值分隔符 | 串行分隔符 |
+---------|----------|---------|---------|----------|---------
+| **单键** （标准） | `x=1&x=2` | `x` | `=` | `&` | 不适用 |
+| **键值对** （标准） | `x=1&x=2&y=3&y=4` | `x,y` | `=` | `&` | 不适用 |
+| **单键** （串行） | `x=1;2;3` | `x` | `=` | 不适用 | `;` |
+| **键值对** （串行） | `x=1;2&y=3;4` | `x,y` | `=` | `&` | `;` |
