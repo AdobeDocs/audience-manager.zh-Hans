@@ -7,9 +7,9 @@ title: 关键变量的前缀要求
 uuid: df2ef9c8-606a-45f9-a836-859f856a7d4b
 feature: Traits
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 1c0d40082cd0753a9b4326aae764eb74aefb8be4
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '345'
 ht-degree: 5%
 
 ---
@@ -43,15 +43,15 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"><code> d_</code> </td> 
-   <td colname="col2"> <p>在Audience Manager <span class="keyword"> 级别</span> 。 这些数据在Audience Manager生态系统中 <span class="keyword"> 是一致的</span> 。 请参 <a href="../../api/dcs-intro/dcs-api-reference/dcs-keys.md"> 阅DCS API调用的受支持属性</a> ，以获得更完整的列表。 <p>信号搜索中不会出现使用此前缀 <a href="../data-explorer/data-explorer-signals-search/data-explorer-signals-search.md">的信号</a>。</p></p> </td> 
+   <td colname="col2"> <p>在Audience Manager <span class="keyword"> 级别</span> 。 这些数据在Audience Manager生态系统中 <span class="keyword"> 是一致的</span> 。 请参 <a href="../../api/dcs-intro/dcs-api-reference/dcs-keys.md"> 阅DCS API调用的受支持属性</a> ，以获得更完整的列表。</p> </td> 
   </tr>
   <tr> 
    <td colname="col1"><code> h_</code> </td> 
-   <td colname="col2"> <p>它包含 <a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields" scope="external" format="html"> HTTP头信息</a> 。 包括标题参 <code> referer</code>数<code> IP</code>, <code> accept-language</code>如、 </p> <p> <p>注意： 对于使用9.0以上DIL版本的客户，使用该信号的数 <code> h_referer</code> 据收集在Safari浏览器上无效。 引入ITP 2 <a href="https://webkit.org/blog/8311/intelligent-tracking-prevention-2-0/" format="https" scope="external"> .0后</a>,Safari浏览器可以将demdex.net域分类为跟踪器，并将截断数据收集请求上的推荐人，以仅包含来源而不是完整URL。 请参 <a href="../../dil/dil-overview.md#get-implement-dil-code">阅获取和实施最新</a> DIL版本的DIL代码。<p>信号搜索中不会出现使用此前缀 <a href="../data-explorer/data-explorer-signals-search/data-explorer-signals-search.md">的信号</a>。</p></p> </p> </td> 
+   <td colname="col2"> <p>它包含 <a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields" scope="external" format="html"> HTTP头信息</a> 。 包括标题参 <code> referer</code>数<code> IP</code>, <code> accept-language</code>如、 </p> <p> <p>注意：对于使用9.0以上DIL版本的客户，使用该信号的数据 <code> h_referer</code> 收集在Safari浏览器上无效。 引入ITP 2 <a href="https://webkit.org/blog/8311/intelligent-tracking-prevention-2-0/" format="https" scope="external"> .0后</a>,Safari浏览器可以将demdex.net域分类为跟踪器，并将截断数据收集请求上的推荐人，以仅包含来源而不是完整URL。 请参 <a href="../../dil/dil-overview.md#get-implement-dil-code">阅获取和实施DIL</a> ，以获取最新DIL版本。<p>信号搜索中不会出现使用此前缀 <a href="../data-explorer/data-explorer-signals-search/data-explorer-signals-search.md">的信号</a>。</p></p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><code> p_</code> </td> 
-   <td colname="col2"> <p>我们 <span class="wintitle"> 的数据收集服务器</span> ，允许传递私有参数。 基本上，具有开始的任 <code> p_</code> 何参数都将用于特征评估，但不会记录在下游或存储。 </p> <p>示例： 给 <code> /event?p_age=23</code> 定的特征和类 <code> YoungPeople = p_age &lt; 25</code>似的特征将实现该特征，但 <code> p_age=23</code> 在请求后将删除key-value对，并且不会记录。 </p> </td> 
+   <td colname="col2"> <p>我们 <span class="wintitle"> 的数据收集服务器</span> ，允许传递私有参数。 基本上，具有开始的任 <code> p_</code> 何参数都将用于特征评估，但不会记录在下游或存储。 </p> <p>示例：给 <code> /event?p_age=23</code> 定的特征和类 <code> YoungPeople = p_age &lt; 25</code>似的特征将实现该特征，但 <code> p_age=23</code> 在请求后将删除key-value对，并且不会记录。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
