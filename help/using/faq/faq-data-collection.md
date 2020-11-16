@@ -8,7 +8,7 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 feature: Administration
 translation-type: tm+mt
-source-git-commit: a292f44a63aa1e627d75d37c9ff0c1489f160729
+source-git-commit: 1f3b3d7d7ea8eaa0c1b64f147dc60b85f4e2f487
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 84%
@@ -22,7 +22,7 @@ ht-degree: 84%
 
 <br> 
 
-**如何在[!DNL DCS]日志文件导出中区分入站流量和[!DNL DCS]流量？**
+**如何在 [!DNL DCS] 日志文件导出中区分入站流量和 [!DNL DCS] 流量？**
 
 对于通过 [!UICONTROL Inbound] 载入的特征，[!UICONTROL Inbound] 填充方式与 [!DNL DCS] 填充方式相同。可以通过以下几种方法判断流量来自 [!UICONTROL Inbound]：
 
@@ -44,8 +44,8 @@ ht-degree: 84%
 
 | 服务器 | IP 地址 |
 | ---------|----------|
-| ftp-in-gtw.demdex.com | 23.22.232.252; 18.211.109.184 |
-| ftp-out-gtw.demdex.com | 3.233.68.222; 52.3.74.119 |
+| ftp-in-gtw.demdex.com | 52.3.74.119; 3.233.68.222 |
+| ftp-out-gtw.demdex.com | 23.22.232.252; 18.211.109.184 |
 
  
 
@@ -70,7 +70,7 @@ ht-degree: 84%
 
  
 
-**对于[!UICONTROL DIL]/[!DNL Analytics]数据集成，有哪些代码放置和页面加载要求？**
+**对于 [!UICONTROL DIL]/[!DNL Analytics] 数据集成，有哪些代码放置和页面加载要求？**
 
 要将 [!DNL Analytics] 数据导入 [!DNL Audience Manager]，请在加载 `s_code` 模块之后但在加载 `s.t()` 函数&#x200B;*之前*&#x200B;加载 [!UICONTROL DIL]。例如，按以下顺序放置代码，或确保代码按以下顺序加载：
 
@@ -90,7 +90,7 @@ ht-degree: 84%
 
  
 
-**为何[!DNL Audience Manager]事件调用中会缺少[!DNL Analytics]变量？**
+**为何 [!DNL Audience Manager] 事件调用中会缺少 [!DNL Analytics] 变量？**
 
 此问题通常发生在以下情况中：
 
@@ -99,7 +99,7 @@ ht-degree: 84%
 
  
 
-**哪些版本的[!DNL Analytics]可以与[!UICONTROL DIL]结合使用？**
+**哪些版本的 [!DNL Analytics] 可以与 [!UICONTROL DIL] 结合使用？**
 
 要结合使用 [!UICONTROL DIL]，必须使用 [!DNL Analytics] 版本 20.2（或更高版本）以及 [!DNL Adobe AppMeasurement AS] 库版本 3.5.2（或更高版本）。如果您不知道 [!DNL Analytics] 或 [!DNL AppMeasurement] 的版本，请检查从页面中进行的 [!DNL Analytics] 调用。版本信息如下所示：
 
@@ -117,7 +117,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**如果我不是[!DNL Analytics]用户，是否还能够收集页面数据？**
+**如果我不是 [!DNL Analytics] 用户，是否还能够收集页面数据？**
 
 能。即使您未在使用 [!DNL Analytics]，[!UICONTROL DIL] 模块也可以帮助您收集页面数据。正确设置后，[!UICONTROL DIL] 便可从以下项目捕获相关数据：
 
@@ -130,7 +130,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**[!UICONTROL DIL]能否从[!DNL Google Analytics]中收集数据？**
+**[!UICONTROL DIL] 能否从 [!DNL Google Analytics] 中收集数据？**
 
 能。[!UICONTROL DIL] 可以收集一些 [!DNL Google Analytics] (GA) 元素并将收集到的数据传递给 [!DNL Audience Manager]。请参阅：
 
@@ -139,7 +139,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**我能否从[!DNL Audience Manager]中获取原始数据？数据粒度是多少？**
+**我能否从 [!DNL Audience Manager] 中获取原始数据？数据粒度是多少？**
 
 能，[!DNL Audience Manager] 可以为您提供收集到的有关您清单范围内的用户的数据。这包括：
 
@@ -163,7 +163,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**如何设[!DNL Audience Manager]置cookies并将变量传递给[!DNL Google Ad Manager]?**
+**如何设 [!DNL Audience Manager] 置cookies并将变量传递给 [!DNL Google Ad Manager]?**
 
 [!DNL Audience Manager] 设置2个cookie:一个将段变量发 [!DNL Google Ad Manager] 送到广告标签，另一个设置我们的唯一用户ID(UUID)，该UUID也由读取 [!DNL Google Ad Manager]。 将 UUID 添加到广告标记意味着我们可以执行用户级报表和受众发现操作。
 
@@ -175,13 +175,13 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**如何确认通过 FTP 发送的数据已被[!DNL Audience Manager]接收？**
+**如何确认通过 FTP 发送的数据已被 [!DNL Audience Manager] 接收？**
 
 当扩展名从 `.sync` 更改为 `.processed` 时，即表示文件已被接收。接收后，文件将位于导入队列中。此外，您的客户经理也可以确认文件是否已上传。
 
 <br> 
 
-**我想要测试[DCS API](../api/dcs-intro/dcs-event-calls/dcs-event-calls.md)的功能。我正在发送类似于下面所示的事件调用。这些调用包含[声明的 ID](../features/declared-ids.md)和信号，它们应该可以实现我已设置的某些特征和区段。我能否使用[!UICONTROL General Reports]和[!UICONTROL Trend Reports]来验证特征和区段人口是否有所增加？**
+**我想要测试 [DCS API](../api/dcs-intro/dcs-event-calls/dcs-event-calls.md) 的功能。我正在发送类似于下面所示的事件调用。这些调用包含[声明的 ID](../features/declared-ids.md) 和信号，它们应该可以实现我已设置的某些特征和区段。我能否使用 [!UICONTROL General Reports] 和 [!UICONTROL Trend Reports] 来验证特征和区段人口是否有所增加？**
 
 ```
 https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed-an-order
