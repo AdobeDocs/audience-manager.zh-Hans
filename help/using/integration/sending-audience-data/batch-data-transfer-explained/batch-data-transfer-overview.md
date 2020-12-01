@@ -16,36 +16,36 @@ ht-degree: 6%
 ---
 
 
-# Send Batch Data to [!DNL Audience Manager] Overview {#send-batch-data-to-audience-manager-overview}
+# 向[!DNL Audience Manager]发送批处理数据概述{#send-batch-data-to-audience-manager-overview}
 
-针对希望将其他系统（离线）数据引入的技术客户和非技术客户的概述 [!DNL Audience Manager]。
+技术客户和非技术客户希望将来自其他系统（离线）的数据导入[!DNL Audience Manager]的概述。
 
 ## 优势
 
-您可以在中提供来自其他系统的数据 [!DNL Audience Manager]。 我们的系统可以帮助您发掘价值并利用您之前收集的用户数据。 这包括有关购买、客户调查、注册数据、数 [!DNL CRM] 据库等的信息。 虽然每个集成都有其自身的挑战，但它们都有这些共同步骤。 查看此材料有助于减少使离线数据联机所需的工作量。
+您可以在[!DNL Audience Manager]中提供来自其他系统的数据。 我们的系统可以帮助您发掘价值并利用您之前收集的用户数据。 这包括有关购买、客户调查、注册数据、[!DNL CRM]数据库等的信息。 虽然每个集成都有其自身的挑战，但它们都有这些共同步骤。 查看此材料有助于减少使离线数据联机所需的工作量。
 
-## 第1步： 同步用户ID
+## 第1步：同步用户ID
 
-在同步过程中， [!DNL Audience Manager] 为客户端及其用户分配唯一的ID。 这些ID分别 [!UICONTROL Data Provider ID] 称[!UICONTROL DPID]为 [!UICONTROL Unique User ID] ()[!UICONTROL UUID]和()。 [!DNL Audience Manager] 使用 [!UICONTROL DPID] 和 [!UICONTROL UUID] 识别用户，并使其有资格 [!UICONTROL traits]加入、 [!UICONTROL segments]受众组和报告。 此外，我们的数据收集代[!UICONTROL DIL]码()会查找这些ID，以从您的网站捕获访客数据。 完成此步骤后，脱 [!DNL Audience Manager] 机存储库应包含每个用户记录的相应ID。
+在同步过程中，[!DNL Audience Manager]会为客户端及其用户分配唯一ID。 这些ID分别称为[!UICONTROL Data Provider ID]([!UICONTROL DPID])和[!UICONTROL Unique User ID]([!UICONTROL UUID])。 [!DNL Audience Manager] 使用 [!UICONTROL DPID] 和 [!UICONTROL UUID] 识别用户，并使其有资格 [!UICONTROL traits]加入、 [!UICONTROL segments]受众组和报告。此外，我们的数据收集代码([!UICONTROL DIL])会查找这些ID，以从您的网站捕获访客数据。 完成此步骤后，[!DNL Audience Manager]和脱机存储库应包含每个用户记录的相应ID。
 
 有关此步骤的重要注意事项：
 
-* **客户端ID放置：** [!DNL Audience Manager] 需要了解您的客户端ID在您的网站上的显示位置(例如，它是否存储在cookie、Analytics变量、页面代码等中)。
-* **排除[!DNL PII]:** 用户ID不得包含个人识别信息([!DNL PII])。
-* **区分大小写和内容：** 在实时数据同步过程中，从站点捕获的用户ID必 [!DNL Audience Manager] 须与从脱机存储库传入的ID相对应。 例如，如果脱机记录包含有关的信 [!DNL User123]息，但您的站点将该ID呈现 [!DNL USER123]为，则 [!DNL Audience Manager] 会将这些信息视为不同的访客。 因此，此访客的联机信息不能与脱机数据库中的相应记录相关联。 ID必须完全匹配。
+* **客户端ID位** [!DNL Audience Manager] 置：需要了解您的客户端ID在您的网站上的显示位置（例如，它是否存储在cookie、Analytics变量、页面代码等中）。
+* **排除： [!DNL PII]用** 户ID不得包含个人可识别信息([!DNL PII])。
+* **区分大小写和内容** 敏感性：在实时数据同步过程中，从站点捕获的用户ID必 [!DNL Audience Manager] 须与从脱机存储库传入的ID相对应。例如，如果脱机记录包含有关[!DNL User123]的信息，但站点将该ID呈现为[!DNL USER123]，则[!DNL Audience Manager]会将这些信息视为不同的访客。 因此，此访客的联机信息不能与脱机数据库中的相应记录相关联。 ID必须完全匹配。
 
-See [ID Synchronization for Inbound Data Transfers](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md).
+请参阅[入站数据传输的ID同步](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)。
 
-## 第2步： 数据文件格式
+## 第2步：数据文件格式
 
-文件名和内容遵循严格的准则。 您必 *须根据* 本指南中的这些规范命名和组织数据文件。 请参阅：
+文件名和内容遵循严格的准则。 您&#x200B;*必须*&#x200B;命名并根据本指南中的这些规范组织数据文件。 请参阅：
 
 * [入站数据文件的 Amazon S3 名称要求](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
-* [入站数据文件内容： 语法、变量和示例](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
+* [入站数据文件内容：语法、变量和示例](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
 
 ## 在线数据可用于离线营销工作
 
-在线离线数据时，您仍可以将此信息用于线下活动。 为此，请将 [!DNL Audience Manager] 特征和区段信息导出到您 [!DNL FTP] 选择 [!DNL Amazon S3] 的某个或位置。 请联系您的合作伙伴解决方案经理以获取更多信息或协助。
+在线离线数据时，您仍可以将此信息用于线下活动。 为此，[!DNL Audience Manager]将特征和区段信息导出到您选择的[!DNL FTP]或[!DNL Amazon S3]位置。 请联系您的合作伙伴解决方案经理以获取更多信息或协助。
 
 ## 环境
 
@@ -83,4 +83,4 @@ See [ID Synchronization for Inbound Data Transfers](../../../integration/sending
 
 ## 进一步的技术阅读
 
-系统工程师、开发人员或技术／实施团队应查 [看“描述的批量数据传输过程](../../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md) ”以及本节中的其他文章。 这些文章提供有关传输协议、文件内容和文件名要求的详细信息。
+系统工程师、开发人员或技术／实施团队应查看[描述的批处理数据传输过程](../../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)以及本节中的其他文章。 这些文章提供有关传输协议、文件内容和文件名要求的详细信息。
