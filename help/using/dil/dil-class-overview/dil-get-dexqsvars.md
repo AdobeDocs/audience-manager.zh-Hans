@@ -33,11 +33,11 @@ r_dil_get_dexqsvars.xml
 |---|---|---|
 | `variableName` | 字符串 | 要获取值的变量的名称。 |
 | `partner` | 字符串 | 要搜索的合作伙伴名称。 |
-| `containerNSID` | 整数 | 你 [!DNL NSID] 正在搜索的容器。 默认值 `0`为。 |
+| `containerNSID` | 整数 | 您正在搜索的容器的[!DNL NSID]。 默认值为`0`。 |
 
 **响应**
 
-返回实例的变 [!UICONTROL DIL] 量值。
+返回[!UICONTROL DIL]实例的变量值。
 
 **示例代码**
 
