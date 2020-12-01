@@ -17,17 +17,17 @@ ht-degree: 11%
 
 # 将区段映射到目标 {#map-segments-to-a-destination}
 
-使用这些方法将区段映射到 [!DNL RESTful API] 目标。
+使用这些[!DNL RESTful API]方法将区段映射到目标。
 
 <!-- c_api_map_seg_dest.xml -->
 
-## 支持的目标类型： 仅URL和Cookie
+## 支持的目标类型：仅URL和Cookie
 
-使用可 `POST` 用的方法，您可以将区段映射 [!UICONTROL URL] 到 [!UICONTROL cookie destinations] 和仅。 当前，无法使用这些方法将 [!UICONTROL server-to-server destinations] 区段映 [!DNL REST API] 射到。 请改用用户界面。 但是，相关的目标方 `GET` 法允许您检索有关在用户 [!UICONTROL server-to-server destinations] 界面中创建的信息。
+可用的`POST`方法仅允许您将段映射到[!UICONTROL URL]和[!UICONTROL cookie destinations]。 当前，无法使用这些[!DNL REST API]方法将区段映射到[!UICONTROL server-to-server destinations]。 请改用用户界面。 但是，相关的目标`GET`方法允许您检索有关在用户界面中创建的[!UICONTROL server-to-server destinations]的信息。
 
-## 将区段映射到无序列化URL目标 {#map-segment-non-serial}
+## 将区段映射到无序列化URL目标{#map-segment-non-serial}
 
-一种 `POST` 方法，可让您将区段映射到非序列目 [!UICONTROL URL] 标。
+一种`POST`方法，可让您将段映射到非串行[!UICONTROL URL]目标。
 
 <!-- r_map_noserial_url.xml -->
 
@@ -75,9 +75,9 @@ ht-degree: 11%
 }
 ```
 
-## 将区段映射到序列化URL目标 {#map-segment-serial}
+## 将区段映射到序列化URL目标{#map-segment-serial}
 
-一种 `POST` 方法，可让您将区段映射到序列化 [!UICONTROL URL] 目标。
+一种`POST`方法，可让您将段映射到序列化的[!UICONTROL URL]目标。
 
 <!-- r_map_serialized_url.xml -->
 
@@ -87,7 +87,7 @@ ht-degree: 11%
 
 ### 示例请求
 
-在请求中， `traitAlias` 与键值对中的键相对应。 除非另有指明，否则所有请求值都是必需的。
+在请求中，`traitAlias`对应于键值对中的键。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -125,9 +125,9 @@ ht-degree: 11%
 }
 ```
 
-## 将区段映射到Cookie目标： 单键、无序列号 {#map-segment-cookie-noserial}
+## 将区段映射到Cookie目标：单键，无序列化{#map-segment-cookie-noserial}
 
-一 `POST` 种方法，可让您将区段映射到单键、无序列化目 [!UICONTROL cookie] 标。
+一种`POST`方法，可让您将段映射到单键、无序列化的[!UICONTROL cookie]目标。
 
 <!-- r_map_cookie_noserial.xml -->
 
@@ -137,7 +137,7 @@ ht-degree: 11%
 
 ### 示例请求
 
-在请求中， `valueAlias` 该值与键值对中的值相对应。 除非另有指明，否则所有请求值都是必需的。
+在请求中，`valueAlias`与键值对中的值相对应。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -172,9 +172,9 @@ ht-degree: 11%
 }
 ```
 
-## 将区段映射到Cookie目标： 多密钥、无序列号 {#map-segment-cookie-multi-noserial}
+## 将区段映射到Cookie目标：多密钥，无序列化{#map-segment-cookie-multi-noserial}
 
-一种 `POST` 方法，可让您将区段映射到多键、无序列化目 [!UICONTROL cookie] 标。
+一种`POST`方法，可让您将段映射到多键、无序列化的[!UICONTROL cookie]目标。
 
 <!-- r_map_cookie_multikey_noserial.xml -->
 
@@ -184,7 +184,7 @@ ht-degree: 11%
 
 ### 示例请求
 
-在请求中， `traitAlias` 和 `valueAlias` 分别在键值对中设置键和值。 除非另有指明，否则所有请求值都是必需的。
+在请求中，`traitAlias`和`valueAlias`分别在键值对中设置键和值。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -220,9 +220,9 @@ ht-degree: 11%
 }
 ```
 
-## 将区段映射到Cookie目标： 多密钥、序列化 {#map-segment-cookie-multi-serial}
+## 将区段映射到Cookie目标：多密钥，序列化{#map-segment-cookie-multi-serial}
 
-一 `POST` 种方法，可让您将区段映射到多键、序列化 [!UICONTROL cookie destination]。
+一种`POST`方法，可让您将段映射到多键、序列化的[!UICONTROL cookie destination]。
 
 <!-- r_map_cookie_multikey_serialized.xml -->
 
@@ -232,7 +232,7 @@ ht-degree: 11%
 
 ### 示例请求
 
-在请求中， `traitAlias` 并 `valueAlias` 在键值对中设置键和值。 除非另有指明，否则所有请求值都是必需的。
+在请求中，`traitAlias`和`valueAlias`在键值对中设置键和值。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -268,9 +268,9 @@ ht-degree: 11%
 }
 ```
 
-## 将区段映射到服务器到服务器目标 {#map-segment-s2s}
+## 将段映射到服务器到服务器目标{#map-segment-s2s}
 
-一种 `POST` 方法，可让您将区段映射到现有 [!UICONTROL server-to-server] 目标。 但是，请注意，您不能使用这些当 [!UICONTROL server-to-server] 前可用的方法创建目 [!DNL API] 标。
+一种`POST`方法，可让您将区段映射到现有的[!UICONTROL server-to-server]目标。 但是，请注意，不能使用当前可用的[!DNL API]方法创建[!UICONTROL server-to-server]目标。
 
 <!-- r_map_segment_s2s.xml -->
 
@@ -280,7 +280,7 @@ ht-degree: 11%
 
 ### 示例请求
 
-在请求中， `traitAlias` 与键值对中的键相对应。 除非另有指明，否则所有请求值都是必需的。
+在请求中，`traitAlias`对应于键值对中的键。 除非另有指明，否则所有请求值都是必需的。
 
 ```
 {
@@ -314,9 +314,9 @@ ht-degree: 11%
 }
 ```
 
-## 批量创建目标映射 {#bulk-create}
+## 批量创建目标映射{#bulk-create}
 
-一 `POST` 种方法，它允许您传入一组或目 [!UICONTROL cookie] 标映 [!UICONTROL URL] 射。
+一种`POST`方法，它允许您传递[!UICONTROL cookie]或[!UICONTROL URL]目标映射的数组。
 
 <!-- r_bulk_create.xml -->
 
@@ -398,9 +398,9 @@ ht-degree: 11%
 ]
 ```
 
-## 将多个区段添加到目标 {#add-segments-dest}
+## 将多个区段添加到目标{#add-segments-dest}
 
-一种 `POST` 方法，可让您将多个区段映射到目标。
+一种`POST`方法，可让您将多个区段映射到目标。
 
 <!-- r_add_segments_to_destination.xml -->
 
@@ -482,9 +482,9 @@ ht-degree: 11%
 ]
 ```
 
-## Update a Destination by Destination ID {#update-dest-data-order}
+## 按目标ID {#update-dest-data-order}更新目标
 
-一种 `PUT` 允许您更新现有目标的方法 `destinationId`。
+一种`PUT`方法，它允许您通过`destinationId`更新现有目标。
 
 <!-- r_update_destination_data_order_id.xml -->
 
@@ -532,9 +532,9 @@ ht-degree: 11%
 }
 ```
 
-## 通过映射ID更新到目标的映射 {#update-mapping-dest-id}
+## 通过映射ID {#update-mapping-dest-id}更新到目标的映射
 
-一种 `PUT` 方法，允许您按指定更新到目标的映射 `mappingId`。
+一种`PUT`方法，它允许您通过指定的`mappingId`更新到目标的映射。
 
 <!-- r_update_destination_trait_data_order_id.xml -->
 
