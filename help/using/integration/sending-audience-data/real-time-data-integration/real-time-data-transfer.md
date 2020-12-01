@@ -17,15 +17,15 @@ ht-degree: 7%
 
 # 实时入站数据摄取 {#real-time-inbound-data-ingestion}
 
-实时入站数据获取过程使用来自 `HTTP` 用户浏览器的一系列请求将数据传递给Audience Manager。
+实时入站数据获取过程使用用户浏览器发出的一系列`HTTP`请求将数据传递给Audience Manager。
 
 <!-- c_rt_inbound_real_time.xml -->
 
-入站数据应格式化为称为信号的键值对。 通常，每个信号被映射到通过用户界面或管理的区段 [!DNL API]。
+入站数据应格式化为称为信号的键值对。 通常，每个信号都映射到通过用户界面或[!DNL API]创建或管理的段。
 
-## URL字符串参数和语法 {#url-string-syntax}
+## URL字符串参数和语法{#url-string-syntax}
 
-入站 [!DNL URL] 数据传输的变量应包含下述变量。 在设 [置实时](../../../features/traits/create-onboarded-rule-based-traits.md) 数据传输之前， [请记住](../../../features/traits/trait-storage.md#create-trait-storage-folder) 在UI中创建特征 [!DNL Audience Manager] 和文件夹结构。
+入站数据传输的[!DNL URL]应包含以下描述的变量。 在设置实时数据传输之前，请记住在[!DNL Audience Manager] UI中[创建traits](../../../features/traits/create-onboarded-rule-based-traits.md)和[文件夹结构](../../../features/traits/trait-storage.md#create-trait-storage-folder)。
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ ht-degree: 7%
 
 ### URL语法
 
-在实时入站数据获取过程中，格式正确的字符串 [!DNL URL] 使用以下语法：
+在实时入站数据获取过程中，格式正确的[!DNL URL]字符串使用以下语法：
 
 ```
 https://client.demdex.net/event?KEY1=VALA&KEY2=VALB&KEY3=VALC
