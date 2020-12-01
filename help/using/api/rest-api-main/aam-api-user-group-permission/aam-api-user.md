@@ -17,13 +17,13 @@ ht-degree: 7%
 
 # 用户管理 API 方法 {#user-management-api-methods}
 
-其余 [!DNL API] 管理用户的方法，包括创建、更新、列出、删除和返回用户对象。
+保留[!DNL API]方法来管理用户，包括创建、更新、列出、删除和返回用户对象。
 
 <!-- c_rest_api_user_man_user.xml -->
 
-## Create a User {#create-user}
+## 创建用户{#create-user}
 
-用 `POST` 于创建新用户的方法。
+用于创建新用户的`POST`方法。
 
 <!-- r_rest_api_user_create.xml -->
 
@@ -66,13 +66,13 @@ ht-degree: 7%
 }
 ```
 
-如 `isAdmin` 果设置为true，则创建用户为合作伙伴管理员。 此属性还让您了解用户是否为合作伙伴管理员。
+如果`isAdmin`设置为true，则用户将创建为合作伙伴管理员。 此属性还让您了解用户是否为合作伙伴管理员。
 
-返 `409 Conflict` 回用户名（如果已使用）。
+如果用户名已使用，则返回`409 Conflict`。
 
-## 更新用户 {#update-user}
+## 更新用户{#update-user}
 
-一种 `PUT` 用户更新的方法。
+用于更新用户的`PUT`方法。
 
 <!-- r_rest_api_user_update.xml -->
 
@@ -111,17 +111,17 @@ ht-degree: 7%
 }
 ```
 
-返 `409 Conflict` 回用户名（如果已使用）。
+如果用户名已使用，则返回`409 Conflict`。
 
-## 更新登录用户 {#update-logged-in-user}
+## 更新已登录用户{#update-logged-in-user}
 
-用 `PUT` 于更新当前登录用户的方法。
+用于更新当前登录用户的`PUT`方法。
 
 <!-- r_rest_api_user_update_self.xml -->
 
 >[!NOTE]
 >
->大多数 [!DNL API] 方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
+>大多数[!DNL API]方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
 
 ### 请求
 
@@ -154,17 +154,17 @@ ht-degree: 7%
 }
 ```
 
-返 `409 Conflict` 回用户名（如果已使用）。
+如果用户名已使用，则返回`409 Conflict`。
 
-## 更新登录用户密码 {#update-logged-in-user-pw}
+## 更新登录用户密码{#update-logged-in-user-pw}
 
-用 `PUT` 于更新当前登录用户的方法。
+用于更新当前登录用户的`PUT`方法。
 
 <!-- r_rest_api_user_password.xml -->
 
 >[!NOTE]
 >
->大多数 [!DNL API] 方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
+>大多数[!DNL API]方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
 
 ### 请求
 
@@ -176,27 +176,27 @@ ht-degree: 7%
 { "oldPassword" : "old password", "newPassword" : "new password" }
 ```
 
-成功 `200 OK` 时返回。 如果 `400 Bad Request` 任何一个密码出错，则返回。
+如果成功，则返回`200 OK`。 如果任何一个密码出错，则返回`400 Bad Request`。
 
-## 重置登录用户密码 {#reset-logged-in-user-pw}
+## 重置登录用户密码{#reset-logged-in-user-pw}
 
-用 `PUT` 于重置当前登录用户的方法。 [!UICONTROL Audience Management] 向用户发送系统生成的口令。
+用于重置当前登录用户的`PUT`方法。 [!UICONTROL Audience Management] 向用户发送系统生成的口令。
 
 <!-- r_rest_api_user_password_reset.xml -->
 
 >[!NOTE]
 >
->大多数 [!DNL API] 方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
+>大多数[!DNL API]方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
 
 ### 请求
 
 `POST /self/reset-password`
 
-成功 `200 OK` 时返回。
+如果成功，则返回`200 OK`。
 
-## 返回用户ID的用户对象 {#return-user-object-for-id}
+## 返回用户ID {#return-user-object-for-id}的用户对象
 
-一 `Get` 种为用户ID返回用户对象的方法。
+用于返回用户ID的用户对象的`Get`方法。
 
 <!-- r_rest_api_user_get_user_obj.xml -->
 
@@ -222,15 +222,15 @@ ht-degree: 7%
 }
 ```
 
-## 返回登录用户的用户对象 {#return-user-object-for-logged-in-user}
+## 返回登录用户{#return-user-object-for-logged-in-user}的用户对象
 
-用 `Get` 于返回当前登录用户的用户对象的方法。
+`Get`方法，用于返回当前登录用户的用户对象。
 
 <!-- r_rest_api_user_get_self.xml -->
 
 >[!NOTE]
 >
->大多数 [!DNL API] 方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
+>大多数[!DNL API]方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
 
 ### 请求
 
@@ -254,9 +254,9 @@ ht-degree: 7%
 }
 ```
 
-## 列表用户 {#list-users}
+## 列表用户{#list-users}
 
-一种 `GET` 列表用户的方法。
+用于列表用户的`GET`方法。
 
 <!-- r_rest_api_user_list.xml -->
 
@@ -288,9 +288,9 @@ ht-degree: 7%
 }
 ```
 
-## Delete a User {#delete-users}
+## 删除用户{#delete-users}
 
-一种 `DELETE` 删除用户的方法。
+用于删除用户的`DELETE`方法。
 
 <!-- r_rest_api_user_delete.xml -->
 
@@ -298,11 +298,11 @@ ht-degree: 7%
 
 `DELETE /api/v1/users/`*`<user_id>`*
 
-成功 `204 No Content` 时返回。 如果冲突再次发生 `409 Conflict`。
+如果成功，则返回`204 No Content`。 如果发生冲突，则返回`409 Conflict`。
 
-## 批量删除用户 {#delete-users-bulk}
+## 批量删除{#delete-users-bulk}用户
 
-一种 `POST` 批量删除多个用户的方法。
+用于批量删除多个用户的`POST`方法。
 
 <!-- r_rest_api_user_delete_bulk.xml -->
 
