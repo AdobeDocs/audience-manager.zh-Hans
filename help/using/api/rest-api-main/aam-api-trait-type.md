@@ -23,13 +23,13 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->特征类型方法不将特征分配给常用分类所 [用的类别](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)。 将这些视为与常用分类不同的标签。
+>特征类型方法不将特征分配给[常用分类](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)使用的类别。 将这些视为与常用分类不同的标签。
 
-对于可视参考 [!UICONTROL Trait Types] ，是位于下面的下拉控 [!DNL UI] 件 **[!UICONTROL Traits > Create new trait > Basic Information]**。
+对于可视引用，[!UICONTROL Trait Types]是位于&#x200B;**[!UICONTROL Traits > Create new trait > Basic Information]**&#x200B;下[!DNL UI]的下拉控件。
 
-## 创建新特征类型 {#create-trait-type}
+## 创建新特征类型{#create-trait-type}
 
-一种 `POST` 允许您创建新特征类型的方法。
+`POST`方法，用于创建新特征类型。
 
 <!-- r_rest_api_create_trait_type.xml -->
 
@@ -60,9 +60,9 @@ ht-degree: 9%
 }
 ```
 
-## 返回特征类型的属性 {#return-props}
+## 特征类型{#return-props}的返回属性
 
-返回 `GET` 有关指定特征类型的详细信息的方法。
+一种`GET`方法，它返回有关指定特征类型的详细信息。
 
 <!-- r_rest_api_get_trait_type.xml -->
 
@@ -85,9 +85,9 @@ ht-degree: 9%
 }
 ```
 
-## 返回所有特征类型的属性 {#return-props-all}
+## 返回所有特征类型{#return-props-all}的属性
 
-一种 `GET` 方法，它返回有关数组中所有特征类型的详细信息。
+`GET`方法，返回有关数组中所有特征类型的详细信息。
 
 <!-- r_rest_api_get_trait_types.xml -->
 
