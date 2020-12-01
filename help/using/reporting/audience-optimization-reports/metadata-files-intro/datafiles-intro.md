@@ -17,17 +17,17 @@ ht-degree: 5%
 
 # Audience Optimization 报表的数据文件以及可操作的日志文件 {#data-files-for-audience-optimization-reports}
 
-数据文件包含印象、单击或转换数据。 格式正确后，您可以将此Audience Manager导入Audience Optimization，以在报 [表中视图](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) ，并通过可操作日志文件 [使用数据创建特征](/help/using/integration/media-data-integration/actionable-log-files.md)。 根据本节中的这些规范设置数据文件的格式。
+数据文件包含印象、单击或转换数据。 格式正确后，您可以将此数据导入Audience Manager以在[Audience Optimization报告](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)中视图它，并通过[可操作日志文件](/help/using/integration/media-data-integration/actionable-log-files.md)使用数据创建特征。 根据本节中的这些规范设置数据文件的格式。
 
 ## 概述 {#overview}
 
-使用命名正确且格式正确的数据文件，可以将印象、单击或转换数据到Audience Optimization [报告中](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)。 当您与未集成的合作伙伴合作，并且希望 [!DNL Audience Manager] 使用该报表包中的数据时，此功能非常有用。 此过程需要单独的文件来获得印象、单击和转换数据。 不要将这些事件混合到单个文件中。
+使用命名正确且格式正确的Audience Optimization文件，可以将印象、单击或转换数据到[报告](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)中。 当与未与[!DNL Audience Manager]集成并且您希望使用该报表包中的数据的合作伙伴合作时，此功能非常有用。 此过程需要单独的文件来获得印象、单击和转换数据。 不要将这些事件混合到单个文件中。
 
-数据文件必须附带元数据文件。 元数据文件内容将数据文件信息与报表菜单中相关的、可读标签相匹配。 有关详细信息，请参 [阅元数据文件的概述和映射](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
+数据文件必须附带元数据文件。 元数据文件内容将数据文件信息与报表菜单中相关的、可读标签相匹配。 有关详细信息，请参阅[元数据文件的概述和映射](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
 
-## Naming Conventions for Data Files {#naming-conventions}
+## 数据文件{#naming-conventions}的命名约定
 
-以下语法定义格式良好的数据文件名的结构。 注意， *斜体* 表示一个变量占位符，它会根据文件内容而改变。
+以下语法定义格式良好的数据文件名的结构。 注意，*斜体*&#x200B;表示变量占位符，该占位符会根据文件内容而发生变化。
 
 **语法：** <pre><i>事件类型</i>_<i>yyyymmdd</i></code></pre>
 
@@ -35,27 +35,27 @@ ht-degree: 5%
 
 * 事件类型指示文件包含展示次数、点击次数或转换次数。 为每个事件类型创建单独的文件。
 * 下划线将事件类型和年月日期时间戳分隔开。
-* 在上传之前，请使用gzip压缩文件，并用文件扩展名 `.gz` 保存它们。
+* 上传之前，请使用gzip压缩文件，并用`.gz`文件扩展名保存它们。
 
 根据这些要求，根据数据文件的内容命名它们，如下所示：
 
-* 印象数据： <pre>impressions_<i>yyymmd</i>.gz</code></pre>
-* 单击数据： <pre>clicks_<i>yyymmdd</i>.gz</code></pre>
-* 转换数据： <pre>conversions_<i>yyymmdd</i>.gz</code></pre>
+* 印象数据： <pre>印象_<i>yyyymmdd</i>gz</code></pre>
+* 单击数据： <pre>clicks_<i>yyyymmdd</i>gz</code></pre>
+* 转换数据： <pre>conversions_<i>yyyymmdd</i>gz</code></pre>
 
-## Content Format for Data Files {#content-format}
+## 数据文件{#content-format}的内容格式
 
-以下语法定义格式良好的数据文件中的内容结构。 注意， *斜体* 表示变量占位符，并替换为实际数据文件中的标签。
+以下语法定义格式良好的数据文件中的内容结构。 注意，*斜体*&#x200B;表示变量占位符，并替换为实际数据文件中的标签。
 
-**语法：** <pre><i>标题标签1</i> |标 <i>题标签2</i> ...标 <i>题标签n</i> |版 <i>本</i></code></pre>
+**语法：** <pre><i>标题标签</i> 1| <i>标题标签2</i> ...标 <i>题标签n</i> |版 <i>本</i></code></pre>
 
 在文件内容中：
 
 * 标题标签必须按如下表所示的顺序显示。 展示次数和点击次数使用相同的标签。 转换文件包含额外的标题。
-* 如果没有特定列的数据，请用填充该字段的方式填充 `-1`。
+* 如果没有特定列的数据，请用`-1`填充该字段。
 
-* 文 *件必须以* 版本号结尾。 当前版本为1.1。
-* 用非打印ASCII 001字符分隔文件头和内容。 如果不能使用ASCII 001，则使用制表符分隔符分隔标题和数据。 由于这些字符是非打印字符，上面的语法示例显示的管道仅 `"|"` 用于显示目的。
+* 文件&#x200B;*必须以版本号结尾。*&#x200B;当前版本为1.1。
+* 用非打印ASCII 001字符分隔文件头和内容。 如果不能使用ASCII 001，则使用制表符分隔符分隔标题和数据。 由于这些字符是非打印字符，因此上面的语法示例仅显示用于显示目的的管道`"|"`。
 
 **字段标签**
 
@@ -71,11 +71,11 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>时间戳 </p> </td> 
-   <td colname="col2"> <p>UTC印象、单击或转换事件的日期和时间。 使用格 <code> yyyy-MM-dd HH:mm:ss</code> 式。 </p> </td> 
+   <td colname="col2"> <p>UTC印象、单击或转换事件的日期和时间。 使用<code> yyyy-MM-dd HH:mm:ss</code>格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>用户ID </p> </td> 
-   <td colname="col2"> <p>站点访客的ID，也称为数据提供 <span class="term"> 程序唯一用户ID</span> 或DPUUID。 </p> </td> 
+   <td colname="col2"> <p>站点访客的ID，也称为<span class="term">数据提供程序唯一用户ID</span>或DPUUID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>广告商ID </p> </td> 
@@ -141,19 +141,19 @@ ht-degree: 5%
  </tbody> 
 </table>
 
-## Delivery Methods for Data Files {#delivery-methods}
+## 投放数据文件{#delivery-methods}的方法
 
-将您的印象、单击或转换数据文件上传到您帐户的AmazonS3目 [!DNL Audience Manager] 录。 有关投放/目录路径、文件处理时间和更新的信息，请参阅本节。
+将您的印象、单击或转换数据文件上传到您的[!DNL Audience Manager]帐户的AmazonS3目录。 有关投放/目录路径、文件处理时间和更新的信息，请参阅本节。
 
 >[!IMPORTANT]
 >
-> 请与Audience Manager顾问或客户关怀部门联系，开始为 [!DNL Amazon S3] 文件设置目录。
+> 请与Audience Manager顾问或客户服务部门联系，开始为数据文件设置[!DNL Amazon S3]目录。
 
 **投放路径语法和示例**
 
-数据存储在目录中每个客户的单独命名空间 [!DNL Amazon S3] 中。 文件路径遵循下面显示的语法。 Note, *italics* indicates a variable placeholder. 其他元素是常量或键，不会更改。
+数据存储在[!DNL Amazon S3]目录中每个客户的单独命名空间中。 文件路径遵循下面显示的语法。 注意，*斜体*&#x200B;表示变量占位符。 其他元素是常量或键，不会更改。
 
-**语法：** <pre>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>文件类型</i>_<i>yyyymmdd</i></code></pre>
+**语法：** <pre>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>文件类型</i>_<i>yyymmdd</i></code></pre>
 
 下表定义了文件投放路径中的每个元素。
 
@@ -171,7 +171,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>pid=<i>AAM ID</i></code> </p> </td> 
-   <td colname="col2"> <p>此键值对包含您的 <span class="keyword"> Audience Manager</span> 客户ID。 </p> </td> 
+   <td colname="col2"> <p>此键值对包含您的<span class="keyword">Audience Manager</span>客户ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>dpid=<i>d_src</i></code> </p> </td> 
@@ -202,4 +202,4 @@ ht-degree: 5%
 
 ## 后续步骤 {#next-steps}
 
-查看命名和创建元数据文件的要求。 要开始，请参阅元 [数据文件的概述和映射](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
+查看命名和创建元数据文件的要求。 要开始，请参阅[元数据文件的概述和映射](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
