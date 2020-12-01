@@ -1,6 +1,6 @@
 ---
-description: 描述身份验证要求和类级DIL文档中使用的文本格式。
-seo-description: 描述身份验证要求和类级DIL文档中使用的文本格式。
+description: 描述身份验证要求以及类级DIL文档中使用的文本格式。
+seo-description: 描述身份验证要求以及类级DIL文档中使用的文本格式。
 seo-title: 开始使用类级别 DIL API
 solution: Audience Manager
 title: 开始使用类级别 DIL API
@@ -17,11 +17,11 @@ ht-degree: 15%
 
 # 开始使用类级别 DIL API{#getting-started-with-class-level-dil-apis}
 
-类级DIL API允许您以编程方式创建和处理Audience Manager对象。 类级API与其他实例级函数配合使用以设置值或返回数据。
+类级DILAPI允许您以编程方式创建和处理Audience Manager对象。 类级API与其他实例级函数配合使用以设置值或返回数据。
 
 ## 开始使用类级别 DIL API {#get-started}
 
-描述身份验证要求和类级文档中使用的文本格 [!UICONTROL DIL] 式。
+描述身份验证要求以及类级别[!UICONTROL DIL]文档中使用的文本格式。
 
 <!-- 
 
@@ -29,9 +29,9 @@ c_class_start.xml
 
  -->
 
-使用类级API时 [!UICONTROL DIL] :
+使用类级别[!UICONTROL DIL] API时：
 
 * 访问需要合作伙伴名称和容器命名空间ID(NSID)。 请与Audience Manager客户经理联系以获取此信息。
-* 根据您 *所使用的方* 法的要求，将API文档中任何斜体文本的示例替换为值、ID或其他变量。
-* [!UICONTROL DIL] 将编码数据写入目标cookie。 例如，空格编码为，分 `%20` 号编码为 `%3B`。
+* 按照您所使用的方法的要求，将API文档中的任何斜体&#x200B;*文本替换为值、ID或其他变量。*
+* [!UICONTROL DIL] 将编码数据写入目标cookie。例如，空格编码为`%20`，分号编码为`%3B`。
 
