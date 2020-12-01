@@ -17,21 +17,21 @@ ht-degree: 6%
 
 # 用于日志文件传输的传输控制文件 {#transfer-control-files-for-log-file-transfers}
 
-传输控制()文[!DNL .info]件提供有关文件传输的元数据信息，以便合作伙伴可以验证Audience Manager处理的文件传输是否正确。
+传输控制([!DNL .info])文件提供有关文件传输的元数据信息，以便合作伙伴可以验证Audience Manager处理的文件传输是否正确。
 
-[!DNL Audience Manager] 每次文件传输时，都会向合作伙伴发送转移控制文件。 由于发布者的多线程特性， [!DNL FTP] 在实际文件传输完成之前可能会发送传输控制文件。
+[!DNL Audience Manager] 每次文件传输时，都会向合作伙伴发送转移控制文件。由于[!DNL FTP]发布者的多线程特性，在实际文件完成传输之前可能会发送传输控制文件。
 
-文件中的元数据 [!DNL .info] 允许合作伙伴：
+[!DNL .info]文件中的元数据允许合作伙伴：
 
 * 确定完整传输周期的完成时间（已传送序列中的文件总数）;
 * 确定序列中的任何给定文件是否完整／正确(通过检查文件的大小（以字节为单位）和行总数);
 * 验证原始文件中的行数与接收端数据库中加载文件后的行数(文件大小（行）)。
 
-## 文件命名约定 {#file-naming-conventions}
+## 文件命名约定{#file-naming-conventions}
 
-transfer-control文件与具有文件扩展名的批处理／序列的根文件 [!DNL .info] 同名。
+transfer-control文件与具有[!DNL .info]文件扩展名的批处理／序列的根文件同名。
 
-例如，如果序列中的第一个文件被命名： [!DNL ftp_12345_67890_full_1500727351632-1.sync], the control file will be named [!DNL ftp_12345_67890_iter_1500727351632.info].
+例如，如果序列中的第一个文件被命名：[!DNL ftp_12345_67890_full_1500727351632-1.sync]，控制文件将命名为[!DNL ftp_12345_67890_iter_1500727351632.info]。
 
 ## 文件格式 {#file-format}
 
@@ -78,7 +78,7 @@ transfer-control文件与具有文件扩展名的批处理／序列的根文件 
 
 >[!NOTE]
 >
-> 批总编号不包括文件 [!DNL .info] 本身。 即，总数不包括文件、 [!DNL .info] 其字节大小或行数。
+> 批处理总数不包括[!DNL .info]文件本身。 即，总数不包括[!DNL .info]文件、其字节大小或行数。
 >
 > 文件的字节大小和行数包括任何标题和分隔符（空白）行／行。 要获得实际数据行／行的计数，请减去标题。
 >
