@@ -19,24 +19,24 @@ ht-degree: 16%
 
 在 Audience Manager 启用 Audience Optimization for Publishers 之前，您必须确保满足本文中列出的所有先决条件。检查所有先决条件后，请与客户关怀团队联系。
 
-## Google Ad Manager日志摄取的先决条件 {#prereqs-dfp-ingestion}
+## Google Ad Manager日志摄取{#prereqs-dfp-ingestion}的先决条件
 
-请注意，必须先完成本节中介绍的过 *程* ，然后才能转到启用日志获取的先决条件。
+请注意，在&#x200B;*转到启用日志摄取的先决条件之前，此部分中描述的过程必须完成*。
 
-要在中使 [!DNL Google Ad Manager] 用（以前称为Google DFP）日志 [!DNL Audience Manager]文件，您必须先在广告标记调用 [中设置我们的](../../../reference/ids-in-aam.md) Audience Manager唯一用户ID(UUID)。 通过执行此操作，我们的ID将包含在日 [!DNL Google Ad Manager] 志中，并且我们可以在和之间 [!DNL Google Ad Manager] 匹配ID [!DNL Audience Manager]。 使 [!DNL Audience Manager] 用 [!UICONTROL DIL] 代码或 [!UICONTROL Audience Management Module] 在第一方 [!DNL Audience Manager] cookie中设置UUID。
+要在[!DNL Audience Manager]中使用[!DNL Google Ad Manager]（以前称为Google DFP）日志文件，必须首先在ad标记调用中设置我们的[Audience Manager唯一用户ID(UUID)](../../../reference/ids-in-aam.md)。 这样，我们的ID将包含在[!DNL Google Ad Manager]日志中，并且我们可以匹配[!DNL Google Ad Manager]和[!DNL Audience Manager]之间的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]代码或[!UICONTROL Audience Management Module]在第一方cookie中设置[!DNL Audience Manager] UUID。
 
-下面介绍如何在广告标 [!DNL Audience Manager] 签调用中设置ID，如我们的文档中所述：
+下面介绍如何在广告标记调用中设置[!DNL Audience Manager] ID，如我们的文档中所述：
 
 * [通过Google Publisher标签(GPT)](../../../integration/gpt-aam-destination/gpt-aam-modify-api.md)
 * [通过Cookie目标](../../../integration/gpt-aam-destination/gpt-aam-create-destination.md)
 
-您需要自己设置 [!DNL Audience Manager] ID，并可与咨询部门 [!DNL Audience Manager] 合作检查一切是否正常。 在以下情况下，您 [!DNL Audience Manager] 已正确设置ID:
+您需要自己设置[!DNL Audience Manager] ID，并可与[!DNL Audience Manager]咨询部门合作检查一切是否正常。 在以下情况下，您已正确设置[!DNL Audience Manager] ID:
 
 * `'aamid'` 是用作标识符的键。
-* 用户ID值的格式正确， [!DNL Audience Manager] 如我们的Audience ManagerID [索引中所述](../../../reference/ids-in-aam.md)。
-* 您已在日 [!DNL Audience Manager] 志中的定义字段中包 [!DNL Google Ad Manager] 含了UUID（例如CustomTargeting）。
+* 用户ID值的格式正确，为[!DNL Audience Manager] UUID，如Audience Manager](../../../reference/ids-in-aam.md)中[ ID索引中所述。
+* 您已在[!DNL Google Ad Manager]日志中的定义字段中包含[!DNL Audience Manager] UUID（例如CustomTargeting）。
 
-## 启用日志摄取的先决条件 {#prereqs-ingestion-enablement}
+## 启用日志摄取{#prereqs-ingestion-enablement}的先决条件
 
 <table id="table_C980A9F9B0FB4157B4908A64768B1571"> 
  <thead> 
@@ -49,22 +49,22 @@ ht-degree: 16%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>步骤 1 </p> </td> 
-   <td colname="col2"> <p>在转到步骤2之前，确认已完 <span class="keyword"> 成设置Audience Manager</span> UUID（上述）的所需步骤 </p> </td> 
-   <td colname="col3"> <p><span class="keyword"> Audience Manager</span> “客户关怀”或“咨询” </p> </td> 
+   <td colname="col2"> <p>在转到步骤2之前，确认已完成设置<span class="keyword">Audience Manager</span> UUID（上述）的所需步骤 </p> </td> 
+   <td colname="col3"> <p><span class="keyword"> 受众经</span> 理客户关怀或咨询 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>步骤 2 </p> </td> 
    <td colname="col2"> <p>您的Google广告管理器管理员创建： </p> <p> 
      <ol id="ol_FCFA9B11CFF948A488DF9CB298FC04C4"> 
-      <li id="li_BC946EDCC3324578AEB64EDDA55B5ACA">用于收录Google Ad Manager的服务帐户登录 <span class="keyword"> Audience Manager</span>。 </li> 
-      <li id="li_6B2FC7D73A3246419E55C004E17ACA25">新凭据。 <p>注意：  这可能需要特定于此项目的唯一电子邮件地址，并且在设置对Google存储存储段的访问权限时将使用。 </p> </li> 
+      <li id="li_BC946EDCC3324578AEB64EDDA55B5ACA">用于接收Google Ad Manager的服务帐户登录到<span class="keyword">Audience Manager</span>。 </li> 
+      <li id="li_6B2FC7D73A3246419E55C004E17ACA25">新凭据。 <p>注意： 这可能需要特定于此项目的唯一电子邮件地址，并且在设置对Google存储存储段的访问时将使用。 </p> </li> 
       <li id="li_95444B9FD1B34659A9634814B262A681">私钥（基于JSON的凭据） </li> 
      </ol> </p> </td> 
    <td colname="col3"> <p>您的Google Ad Manager管理员 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>步骤 3 </p> </td> 
-   <td colname="col2"> <p>您的Google Ad Manager管理员授予对服务帐户的API访问权限。 此步骤允许访问元数据以划分维（行项目、订单、创意）。 <p>注意：  使用您在步骤2中设置的服务帐户电子邮件访问权限授予访问API的权限。 </p> </p> </td> 
+   <td colname="col2"> <p>您的Google Ad Manager管理员授予对服务帐户的API访问权限。 此步骤允许访问元数据以划分维（行项目、订单、创意）。 <p>注意： 使用您在步骤2中设置的服务帐户电子邮件访问权限授予访问API的权限。 </p> </p> </td> 
    <td colname="col3"> <p>您的Google Ad Manager管理员 </p> </td> 
   </tr> 
   <tr> 
@@ -83,12 +83,12 @@ ht-degree: 16%
   </tr> 
   <tr> 
    <td colname="col1"> <p>步骤 6 </p> </td> 
-   <td colname="col2"> <p>将电子邮件中的先决条件编译为AAM客户关怀部(aamsupport@adobe.com)，以启动日志获取过程。 在下一节中使用模板起草电子邮件。 </p> </td> 
-   <td colname="col3"> <p>您，或代 <span class="keyword"> 表您</span> 的Audience Manager咨询 </p> </td> 
+   <td colname="col2"> <p>将电子邮件中的先决条件编译为AAM客户服务(aamsupport@adobe.com)以启动日志获取过程。 在下一节中使用模板起草电子邮件。 </p> </td> 
+   <td colname="col3"> <p>您或<span class="keyword">Audience Manager</span>代表您咨询 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 电子邮件模板 {#email-template}
+## 电子邮件模板{#email-template}
 
-要完成日志摄取启用，请向我们发送电子邮件至aamsupport@adobe.com。 请使用附 [加的电子邮件模板](assets/enable_dfp_ingestion.txt)。
+要完成日志摄取启用，请向我们发送电子邮件至aamsupport@adobe.com。 请使用附加的[电子邮件模板](assets/enable_dfp_ingestion.txt)。
