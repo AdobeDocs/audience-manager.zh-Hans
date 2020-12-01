@@ -19,15 +19,15 @@ ht-degree: 9%
 
 介绍可用于目标用户的通用平台级键值对，这些对在Audience Manager帐户的所有属性中与设备相关的变量。
 
-## 平台级变量的用途 {#platform-variables}
+## 平台级变量{#platform-variables}的用途
 
 <!-- c_tb_device_targeting.xml -->
 
-平台级变量允许您从特定站点传入数据，并使其可用于在帐户中的所有属性中进行 [!DNL Audience Manager] 定位。 这些变量由键 [值对组成](../../reference/key-value-pairs-explained.md) ，键前缀 `d_` 如下所示。
+平台级变量允许您从特定站点传入数据，并使其可用于[!DNL Audience Manager]帐户中所有属性的定位。 这些变量由[键值对](../../reference/key-value-pairs-explained.md)组成，键前缀为`d_`，如下所示。
 
-## 由用户代理定义的平台级密钥 {#keys-user-agent}
+## 由用户代理{#keys-user-agent}定义的平台级密钥
 
-从 [!UICONTROL Data Collection Servers] 请求中的用户代理头 [提取这些键](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43) 的 `HTTP` 值。 这些值表示来自数据库的设备级 [!UICONTROL Device Atlas] 信息。 下表中的信号可用，从用户代理示例中提取。 [根据测量值下载最常用](assets/device_keys.csv)列表键 [!UICONTROL Device Atlas] 。
+[!UICONTROL Data Collection Servers]从`HTTP`请求中的[用户代理头](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43)提取这些键的值。 这些值表示来自[!UICONTROL Device Atlas]数据库的设备级信息。 下表中的信号可用，从用户代理示例中提取。 [根据测量值下载最常用的](assets/device_keys.csv)列表键的 [!UICONTROL Device Atlas] 。
 
 | [!DNL Signal] | [!DNL Type] | [!DNL Example] |
 |---|---|---|
@@ -45,7 +45,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->即使一个或多个信号无法从用户代理头中检索，其他信号仍将传递给用户 [!UICONTROL Data Collection Servers]。
+>即使一个或多个信号无法从用户代理头中检索，其他信号仍会传递到[!UICONTROL Data Collection Servers]。
 
 >[!MORELIKETHIS]
 >
