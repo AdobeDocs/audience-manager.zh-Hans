@@ -17,11 +17,11 @@ ht-degree: 5%
 
 # 已暂停和已删除的区段 {#paused-and-deleted-segments}
 
-描述在使用暂停或删除活动区段时对分段用户、数据和目标的影响 [!UICONTROL Segment Builder]。
+描述使用[!UICONTROL Segment Builder]暂停或删除活动区段时对分段用户、数据和目标的影响。
 
 ## 访问暂停和删除控件
 
-将鼠标悬停在区段列表中的区段名称上 **[!UICONTROL pause]** ，以 **[!UICONTROL delete]** 显示和图标( [!UICONTROL Actions] 在列中)。 这些功能影响细分，如下所述。
+将鼠标悬停在区段列表中的区段名称上，可显示&#x200B;**[!UICONTROL pause]**&#x200B;和&#x200B;**[!UICONTROL delete]**&#x200B;图标（位于[!UICONTROL Actions]列中）。 这些功能影响细分，如下所述。
 
 ## 暂停的段功能
 
@@ -46,4 +46,4 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->您还可以使用方法暂停和删除 [!DNL API] 区段。 有关详细信息，请参 [阅REST API](../../api/rest-api-main/rest-api-main.md)。
+>您还可以使用[!DNL API]方法暂停和删除区段。 有关详细信息，请参阅[REST API](../../api/rest-api-main/rest-api-main.md)。
