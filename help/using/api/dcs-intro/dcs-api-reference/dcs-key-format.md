@@ -17,9 +17,9 @@ ht-degree: 12%
 
 # 格式化 DCS 调用中的键值对 {#formatting-key-value-pairs-in-dcs-calls}
 
-发出呼叫时，将接 [!DNL DCS] 受标准或序列化格式的键值数据。 有关如何格式化标准和序列化键值数据的信息，请查阅本节。
+发出呼叫时，[!DNL DCS]以标准或序列化格式接受键值数据。 有关如何格式化标准和序列化键值数据的信息，请查阅本节。
 
-## Standard and Serialized Key-Value Pairs {#standard-serialized}
+## 标准和序列化密钥值对{#standard-serialized}
 
 <table id="table_A220F9B359F34C6EA7B83618FC22EE3A"> 
  <thead> 
@@ -43,7 +43,7 @@ ht-degree: 12%
  </tbody>
 </table>
 
-## 序列化键值对的分隔符和分隔符 {#delimiters-separators}
+## 序列化键值对{#delimiters-separators}的分隔符和分隔符
 
 对于序列化键值对，必须指定这些变量内和变量之间的值分隔的标记。 Audience Manager需要以下分隔符和分隔符：
 
