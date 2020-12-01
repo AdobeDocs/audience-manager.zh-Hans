@@ -17,7 +17,7 @@ ht-degree: 9%
 
 # 按目标 ID 返回目标 {#return-a-destination-by-destination-id}
 
-返回 `GET` 指定目标的方法 `destinationId`。
+一种`GET`方法，它返回指定`destinationId`的目标。
 
 <!-- r_get_all_destinations_order_id.xml -->
 
@@ -27,7 +27,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->要在URL `mappings` 中填充字 `includeMappings=true` 段传入。
+>要填充URL中的`mappings`字段，请传入`includeMappings=true`。
 
 ## 响应
 
@@ -57,9 +57,9 @@ ht-degree: 9%
 }
 ```
 
-## 返回所有目标 {#return-all-destinations}
+## 返回所有目标{#return-all-destinations}
 
-返回 `GET` 指定合作伙伴的所有目标的方法。
+一种`GET`方法，它返回指定伙伴的所有目标。
 
 <!-- r_get_all_destinations.xml -->
 
@@ -69,7 +69,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->* *(可选* )传入 `containsSegment=<sid>` 以返回映射到指定区段的所有目标的数组。 例如，您的查询可能类似于： `GET .../destinations/?containsSegment=4321`.
+>* *（可选）* 传入 `containsSegment=<sid>` 以返回映射到指定段的所有目标的数组。例如，您的查询可能类似于：`GET .../destinations/?containsSegment=4321`。
    >
    >
 * 不返回完整的目标对象。 如果需要完全填充的对象，按数据顺序获取目标。
@@ -77,7 +77,7 @@ ht-degree: 9%
 
 ### 可选查询参数
 
-可以将这些可选参数与API方法一起使用， *这些方法* 返回对象的所有属性。 将查询传递到请求字符串时，在中设置这些选项 [!DNL API]。 请参 [阅可选参数](../../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
+您可以将这些可选参数与返回对象&#x200B;*所有*&#x200B;属性的API方法一起使用。 将查询传递到[!DNL API]时，在请求字符串中设置这些选项。 请参阅[可选参数](../../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
 
 <table id="table_B05A8EE22C9A4C72B84A8479E1AB7D0A"> 
  <thead> 
@@ -97,7 +97,7 @@ ht-degree: 9%
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> sortBy</code> </td>
-   <td colname="col2">根据指定的JSON属性对结果进 <span class="keyword"> 行排序</span> 并返回。 </td>
+   <td colname="col2">根据指定的<span class="keyword"> JSON</span>属性对结果进行排序和返回。 </td>
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> descending</code> </td>
@@ -142,9 +142,9 @@ ht-degree: 9%
 ]
 ```
 
-## 返回具有映射ID的目标映射 {#return-dest-mapping-id}
+## 返回映射ID为{#return-dest-mapping-id}的目标映射
 
-一种 `GET` 基于返回单个目标映射的方法 `mappingId`。
+一种`GET`方法，它根据`mappingId`返回单个目标映射。
 
 <!-- r_get_destination_trait_data_order.xml -->
 
@@ -179,9 +179,9 @@ ht-degree: 9%
 }
 ```
 
-## 返回目标映射 {#return-dest-mappings}
+## 返回目标映射{#return-dest-mappings}
 
-返回 `GET` 目标的映射的方法。
+返回目标映射的`GET`方法。
 
 <!-- r_get_destination_mappings.xml -->
 
@@ -253,9 +253,9 @@ ht-degree: 9%
 {
 ```
 
-## 返回所有可用的目标平台 {#return-dest-platforms}
+## 返回所有可用的目标平台{#return-dest-platforms}
 
-一种 `GET` 为目标返回所有可用设备平台的方法。
+一种`GET`方法，它返回所有可用于目的的设备平台。
 
 <!-- r_get_dest_platforms.xml -->
 
@@ -271,9 +271,9 @@ BROWSER, ANDROID, iOS, ALL
 ]
 ```
 
-## 返回S2S和批量S2S目标作业历史记录 {#return-job-history}
+## 返回S2S和批量S2S目标作业历史记录{#return-job-history}
 
-一种 `GET` 返回出站() [!UICONTROL Server-to-Server] 和批量目 [!UICONTROL S2S]标作业历史 [!UICONTROL S2S] 记录信息的方法。
+一种`GET`方法，它返回出站[!UICONTROL Server-to-Server]([!UICONTROL S2S])和批量[!UICONTROL S2S]目标作业历史记录信息。
 
 <!-- r_get_job_history.xml -->
 
@@ -281,7 +281,7 @@ BROWSER, ANDROID, iOS, ALL
 
 `GET https://api.demdex.com/v1/destinations/655/history/outbound?startDate=1000000000&endDate=1403034473000`
 
-所需的查询参数： `startDate` = *&lt;`epochtime`>和* = `endDate` &lt; *>`epochtime`*。
+所需的查询参数：`startDate` = *`epochtime`*&#x200B;和`endDate` = *`epochtime`*。
 
 ### 响应
 
