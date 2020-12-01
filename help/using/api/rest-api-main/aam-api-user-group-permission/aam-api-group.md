@@ -17,13 +17,13 @@ ht-degree: 13%
 
 # 组管理 API 方法 {#group-management-api-methods}
 
-其余 [!DNL API] 管理组的方法，包括创建、更新、列出和删除组。
+保留[!DNL API]方法来管理组，包括创建、更新、列表和删除组。
 
 <!-- c_rest_api_user_man_group.xml -->
 
 ## 创建群组 {#create-group}
 
-用 `POST` 于创建新用户组的方法。
+用于创建新用户组的`POST`方法。
 
 <!-- r_rest_api_group_create.xml -->
 
@@ -54,9 +54,9 @@ ht-degree: 13%
   }
 ```
 
-## 更新组 {#update-group}
+## 更新组{#update-group}
 
-用 `PUT` 于更新用户组的方法。
+用于更新用户组的`PUT`方法。
 
 <!--
 r_rest_api_group_update.xml
@@ -89,9 +89,9 @@ r_rest_api_group_update.xml
   }
 ```
 
-## 列表组 {#list-groups}
+## 列表组{#list-groups}
 
-一种 `GET` 列表用户组的方法。
+用于列表用户组的`GET`方法。
 
 <!--
 r_rest_api_group_list.xml
@@ -119,7 +119,7 @@ r_rest_api_group_list.xml
 
 ## 删除群组 {#delete-groups}
 
-一种 `DELETE` 删除用户组并从该用户组中删除所有成员的方法。
+用于删除用户组并从该用户组中删除所有成员的`DELETE`方法。
 
 <!-- r_rest_api_group_delete.xml -->
 
@@ -127,11 +127,11 @@ r_rest_api_group_list.xml
 
 `DELETE /api/v1/groups/`*`<groupId>`*
 
-成功 `204 No Content` 时返回。 如果冲突再次发生 `409 Conflict`。
+如果成功，则返回`204 No Content`。 如果发生冲突，则返回`409 Conflict`。
 
-## 批量删除组 {#delete-groups-bulk}
+## 批量删除{#delete-groups-bulk}组
 
-一种 `DELETE` 批量删除多个组并从该组中删除所有成员的方法。
+一种`DELETE`方法，用于批量删除多个组并从该组中删除所有成员。
 
 <!-- r_rest_api_group_delete_bulk.xml -->
 
@@ -139,11 +139,11 @@ r_rest_api_group_list.xml
 
 `DELETE /api/v1/groups/bulk-delete`
 
-成功 `204 No Content` 时返回。 如果冲突再次发生 `409 Conflict`。
+如果成功，则返回`204 No Content`。 如果发生冲突，则返回`409 Conflict`。
 
-## 列表组的所有权限 {#list-permissions-group}
+## 列表组{#list-permissions-group}的所有权限
 
-列表 `GET` 组上权限对象的方法。
+用于列表组上权限对象的`GET`方法。
 
 <!-- r_rest_api_perm_list_group.xml -->
 
@@ -173,11 +173,11 @@ r_rest_api_group_list.xml
 ]
 ```
 
-返回 `400 Bad Request` 组（如果组无法访问）。
+如果组无法访问，则返回`400 Bad Request`。
 
-## Set Permissions for a Group {#set-permissions-group}
+## 设置组{#set-permissions-group}的权限
 
-用于 `PUT` 更新组权限的方法。 此方法用新权限覆盖旧权限。
+用于更新组权限的`PUT`方法。 此方法用新权限覆盖旧权限。
 
 <!-- r_rest_api_perm_set.xml -->
 
@@ -210,4 +210,4 @@ r_rest_api_group_list.xml
 
 示例响应表示权限对象的更新列表。
 
-成功 `200 OK` 时返回。 如果 `400` 任何给定权限无效，则返回。 如果已登 `403` 录用户无法访问该对象，也可以返回。
+如果成功，则返回`200 OK`。 如果任何给定权限无效，则返回`400`。 如果登录用户无法访问该对象，则还可以返回`403`。
