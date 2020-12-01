@@ -1,7 +1,7 @@
 ---
 description: Audience Manager根据这些规范向第三方内容提供商发送批量数据。
 seo-description: Adobe Audience Manager(AAM)根据这些规范向第三方内容提供商发送批量数据。
-seo-title: Adobe Audience Manager(AAM)中的批量出站数据传输
+seo-title: 在Adobe Audience Manager(AAM)进行批量出站数据传输
 title: 批量出站数据传输
 feature: Outbound Data Transfers
 translation-type: tm+mt
@@ -39,4 +39,4 @@ Audience Manager根据这些规范向第三方内容提供商发送批量数据�
 
 * [利用出站文件的 Amazon S3 跨帐户存储段权限](/help/using/integration/receiving-audience-data/batch-outbound-transfers/authorize-s3-cross-bucket.md)
 
-   对于使用Amazon Simple Data Service(Amazon S3)的存储，客户的出站传输过程要求我们要求您提供Amazon S3访问密钥和密钥，以便将出站数据文件传送到您的存储桶。
+   对于使用Amazon简单存储服务(AmazonS3)的客户，“出站传输”过程要求我们要求您提供AmazonS3访问密钥和密钥，以便将出站数据文件传送到您的存储桶。
