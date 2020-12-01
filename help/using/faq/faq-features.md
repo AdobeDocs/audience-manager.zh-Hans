@@ -48,13 +48,13 @@ faq_features_functions.xml
 
  
 
-**执行批量ID导出到目标时，缺少一些客户ID。 Why does that happen?**
+**执行批量ID导出到目标时，缺少一些客户ID。为什么会发生这种情况？**
 
-当设备ID(AAM UUID[)链接到多个CRM ID(DPUUID](../reference/ids-in-aam.md))时[](../reference/ids-in-aam.md)，将只导出最新的映射。 因此，您可能会看到导出的设备ID数量低于预期。
+当设备ID([AAM UUID](../reference/ids-in-aam.md))链接到多个CRM ID([DPUUID](../reference/ids-in-aam.md))时，只会导出最新的映射。 因此，您可能会看到导出的设备ID数量低于预期。
 
  
 
-**[!DNL Audience Manager]是否可以消除对第三方标记或像素的需求并缩短页面加载时间？**
+**[!DNL Audience Manager] 是否可以消除对第三方标记或像素的需求并缩短页面加载时间？**
 
 如果 [!DNL Audience Manager] 已与第三方数据合作伙伴集成，则可以使用对 [!DNL Audience Manager] 发起的服务器到服务器 ID 调用来替换其像素和标记。在这种情况下，[!DNL Audience Manager] 将在我们第一次看到用户时触发单个 ID 调用，并将该信息与您的第三方合作伙伴同步。如此一来，便无需从每页进行多个像素调用。减少像素调用可以缩短页面加载时间。
 
@@ -66,7 +66,7 @@ faq_features_functions.xml
 
  
 
-**什么是[!UICONTROL Tag Insertion Manager (TIM)]？**
+**什么是 [!UICONTROL Tag Insertion Manager (TIM)]？**
 
 Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和管理 [!UICONTROL data collection code (DIL)]。此功能已过时，最先由 [!UICONTROL Dynamic Tag Manager (DTM)] 取代，后来由 [!DNL Adobe Experience Platform Launch] 取代。有关更多信息，请参阅 [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 和 [Dynamic Tag Management](https://docs.adobe.com/content/help/zh-Hans/dtm/using/dtm-home.html)。
 
