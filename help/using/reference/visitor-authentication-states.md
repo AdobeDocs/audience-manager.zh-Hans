@@ -20,16 +20,16 @@ ht-degree: 5%
 
 Audience Manager中的访客身份验证状态确定新特征信息是写入访客的已验证用户档案还是写入设备用户档案（从中收集数据）。 Audience Manager以相同方式处理访客ID身份验证状态UNKNOWN和LOGGED_OUT。
 
-从ID [!DNL Experience Cloud] 服务v1.5+开始，该方 `setCustomerID` 法包括可选 `AuthState` 对象。 `AuthState` 根据访客的身份验 [证状态](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html)。 [!DNL Audience Manager] 根据调用中传递的身份验证状态和用于分段的用户档案合并规 [则，以不同方式](../features/profile-merge-rules/merge-rules-dashboard.md) 处理已实现的特征。
+从[!DNL Experience Cloud] ID服务v1.5+开始，`setCustomerID`方法包括可选的`AuthState`对象。 `AuthState` 根据访客的身份验 [证状态](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html)。[!DNL Audience Manager] 根据调用中传递的身份验证状态和用于分段的 [用户档案合](../features/profile-merge-rules/merge-rules-dashboard.md) 并规则，以不同方式处理已实现的特征。
 
-## 身份验证状态：未知 {#auth-status-unknown}
+## 身份验证状态：未知{#auth-status-unknown}
 
 <table id="table_E1EA51533FAE4BBFB338D6F6116BC1F9"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> <p>请求值 </p> </th> 
-   <th colname="col2" class="entry"> <p> <b>从已验证</b> 的用户档案读取信息 </p> </th> 
-   <th colname="col3" class="entry"> <p> <b>将新特征</b> 写入已验证的用户档案 </p> </th> 
+   <th colname="col2" class="entry"> <p> <b>从已</b> 验证的用户档案读取信息 </p> </th> 
+   <th colname="col3" class="entry"> <p> <b>将</b> 新特征写入已验证的用户档案 </p> </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -48,14 +48,14 @@ Audience Manager中的访客身份验证状态确定新特征信息是写入访�
 
 `https://sample_customer.demdex.net/event?d_cid=123%01sample_id%010&d_sid=123456`
 
-## 身份验证状态：已验证 {#auth-status-authenticated}
+## 身份验证状态：已验证{#auth-status-authenticated}
 
 <table id="table_956ABF96024744308F7773E1F96482B7"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> <p>请求值 </p> </th> 
-   <th colname="col2" class="entry"> <p> <b>从已验证</b> 的用户档案读取信息 </p> </th> 
-   <th colname="col3" class="entry"> <p> <b>将新特征</b> 写入已验证的用户档案 </p> </th> 
+   <th colname="col2" class="entry"> <p> <b>从已</b> 验证的用户档案读取信息 </p> </th> 
+   <th colname="col3" class="entry"> <p> <b>将</b> 新特征写入已验证的用户档案 </p> </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -80,8 +80,8 @@ Audience Manager中的访客身份验证状态确定新特征信息是写入访�
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> <p>请求值 </p> </th> 
-   <th colname="col2" class="entry"> <p> <b>从已验证</b> 的用户档案读取信息 </p> </th> 
-   <th colname="col3" class="entry"> <p> <b>将新特征</b> 写入已验证的用户档案 </p> </th> 
+   <th colname="col2" class="entry"> <p> <b>从已</b> 验证的用户档案读取信息 </p> </th> 
+   <th colname="col3" class="entry"> <p> <b>将</b> 新特征写入已验证的用户档案 </p> </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -102,7 +102,7 @@ Audience Manager中的访客身份验证状态确定新特征信息是写入访�
 
 >[!NOTE]
 >
->[!DNL Audience Manager] 在所有三种情况下 [在CID和UUID](../reference/ids-in-aam.md) 之间执行ID同步。
+>[!DNL Audience Manager] 在所有三种情况下 [在CID和](../reference/ids-in-aam.md) UUID之间执行ID同步。
 
 >[!MORELIKETHIS]
 >
