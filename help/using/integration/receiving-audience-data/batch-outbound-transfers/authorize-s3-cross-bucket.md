@@ -1,6 +1,6 @@
 ---
-description: 对于使用Amazon Simple Data Service(Amazon S3)的存储，客户的出站传输过程要求我们要求您提供Amazon S3访问密钥和密钥，以便将出站数据文件传送到您的存储桶。
-seo-description: 对于使用Amazon Simple Data Service(Amazon S3)的存储，客户的出站传输过程要求我们要求您提供Amazon S3访问密钥和密钥，以便将出站数据文件传送到您的存储桶。
+description: 对于使用Amazon简单存储服务(AmazonS3)的客户，“出站传输”过程要求我们要求您提供AmazonS3访问密钥和密钥，以便将出站数据文件传送到您的存储桶。
+seo-description: 对于使用Amazon简单存储服务(AmazonS3)的客户，“出站传输”过程要求我们要求您提供AmazonS3访问密钥和密钥，以便将出站数据文件传送到您的存储桶。
 seo-title: 利用出站文件的 Amazon S3 跨帐户存储段权限
 solution: Audience Manager
 title: 利用出站文件的 Amazon S3 跨帐户存储段权限
@@ -17,6 +17,6 @@ ht-degree: 14%
 
 # 利用出站文件的 Amazon S3 跨帐户存储段权限 {#leverage-amazon-s-cross-account-bucket-permissions-for-your-outbound-files}
 
-对于 [!UICONTROL Outbound Data Transfer] 使用() [!DNL Amazon Simple Storage Service] 的客户，该流程[!DNL Amazon S3]要求我们请求您的访问密钥和 [!DNL Amazon S3] 密钥，以便将出站数据文件传送到您的存储桶。
+对于使用[!DNL Amazon Simple Storage Service]([!DNL Amazon S3])的客户，[!UICONTROL Outbound Data Transfer]流程要求我们要求您提供[!DNL Amazon S3]访问密钥和密钥，以便将出站数据文件传送到您的存储桶。
 
-如果您不想与我们共享您 [!DNL Amazon S3] 的访问密钥和密钥，请与您的顾 [!DNL Audience Manager] 问或客户服务部门联系，他们会为您 [!DNL Cross-Account Bucket Permissions] 设置。 您只需将我们的 [!DNL Amazon S3] 帐户ID添加到存储段的允许列表 [!DNL S3] 中，即可接收出站数据文件，如Amazon S3 [文档中所述](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-walkthroughs-managing-access-example2.html)。 您 [!DNL Audience Manager] 的顾问或客户关怀将为您提供我们的 [!DNL Amazon S3] 帐户ID。
+如果您不想与我们共享您的[!DNL Amazon S3]访问密钥和密钥，请与您的[!DNL Audience Manager]顾问或客户关怀部门联系，他们将为您设置[!DNL Cross-Account Bucket Permissions]。 您只需将我们的[!DNL Amazon S3]帐户ID添加到[!DNL S3]存储段的允许列表，您就可以接收出站数据文件，如[AmazonS3文档](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-walkthroughs-managing-access-example2.html)中所述。 您的[!DNL Audience Manager]顾问或客户关怀团队将为您提供我们的[!DNL Amazon S3]帐户ID。
