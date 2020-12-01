@@ -62,7 +62,7 @@ Audience Manager 非常重视数据安全和隐私。我们竭力保障系统安
 
 有助于保护归每个客户所有的数据的流程。
 
-**特征数据分区：**  您的数[!UICONTROL traits]据（ID等） 进行分区。这有助于防止信息在不同客户之间意外泄露。例如，Cookie 中的特征数据将按照客户进行分区并存储在特定于客户的子域中。这样可以防止其他 Audience Manager 客户意外读取或使用这些特征数据。此外，存储在 [!UICONTROL Profile Cache Servers (PCS)] 中的特征数据也是按照客户进行分区的。这样可以防止其他客户在事件调用或其他请求中意外使用您的数据。
+**特征数据分**  区：您[!UICONTROL traits]的数据（ID等）进行分区。这有助于防止信息在不同客户之间意外泄露。例如，Cookie 中的特征数据将按照客户进行分区并存储在特定于客户的子域中。这样可以防止其他 Audience Manager 客户意外读取或使用这些特征数据。此外，存储在 [!UICONTROL Profile Cache Servers (PCS)] 中的特征数据也是按照客户进行分区的。这样可以防止其他客户在事件调用或其他请求中意外使用您的数据。
 
 **报表中的数据分区：**&#x200B;客户 ID 是所有报表表格中标识键的一部分，报表查询按 ID 进行过滤。这有助于防止您的数据出现在其他 Audience Manager 客户的报表中。
 
@@ -74,7 +74,7 @@ Adobe Audience Manager 主要支持通过以下两种方法将载入的 S2S 数�
 
 **SFTP：**&#x200B;对于 SFTP 选项，大多数客户都会选择通过使用安全 Shell (SSH) 协议的安全 FTP (SFTP) 协议传送文件。此方法可确保在客户系统与 Adobe 系统之间传输文件时对文件进行加密。我们在 SFTP 服务器上为每位客户都创建一个被保护和监管的文件接收位置，该位置与系统上的用户帐户绑定。只有客户授权的内部系统用户才能访问这个被保护和监管的文件接收位置。其他客户永远无法访问此位置。
 
-**[!UICONTROL Amazon Web Services S3]通过 HTTPS 的 ：**对于 S3 传送选项，我们建议所有客户都将其 S3 客户端配置为使用 HTTPS 加密方法进行文件传输（这不是默认设置，因此必须进行明确配置）。s3cmd 命令行工具以及在每种主要编程语言中均可用的 S3 库都支持此 HTTPS 选项。启用此 HTTPS 选项后，客户数据在传输到我们的系统时会进行加密。我们为每个客户都创建一个单独的 S3 存储段子目录，该子目录只有通过客户的凭据以及我们内部系统用户的凭据才能访问。
+**[!UICONTROL Amazon Web Services S3]通过 HTTPS 的 ：**&#x200B;对于 S3 传送选项，我们建议所有客户都将其 S3 客户端配置为使用 HTTPS 加密方法进行文件传输（这不是默认设置，因此必须进行明确配置）。s3cmd 命令行工具以及在每种主要编程语言中均可用的 S3 库都支持此 HTTPS 选项。启用此 HTTPS 选项后，客户数据在传输到我们的系统时会进行加密。我们为每个客户都创建一个单独的 S3 存储段子目录，该子目录只有通过客户的凭据以及我们内部系统用户的凭据才能访问。
 
 要向数据文件添加 PGP 加密，请参阅[适用于入站数据类型的文件 PGP 加密](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。
 
@@ -92,6 +92,6 @@ Adobe Audience Manager 主要支持通过以下两种方法将载入的 S2S 数�
 
 ### 示例 {#hsts-example}
 
-Let&#39;s say the `yourcompany.demdex.com` domain sends traffic to the [!DNL DCS] via [!DNL HTTP]. [!DNL HSTS] 会对调用进行升级以改用 [!DNL HTTPS]，而且所有来自 `yourcompany.demdex.com` 的后续 [!DNL DCS] 调用都会使用 [!DNL HTTPS] 而不使用 [!DNL HTTP]。
+假设`yourcompany.demdex.com`域通过[!DNL HTTP]向[!DNL DCS]发送通信。 [!DNL HSTS] 会对调用进行升级以改用 [!DNL HTTPS]，而且所有来自 `yourcompany.demdex.com` 的后续 [!DNL DCS] 调用都会使用 [!DNL HTTPS] 而不使用 [!DNL HTTP]。
 
 有关 HSTS 的更多信息，请参阅 [HTTP 严格传输安全 - Wikipedia](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)。
