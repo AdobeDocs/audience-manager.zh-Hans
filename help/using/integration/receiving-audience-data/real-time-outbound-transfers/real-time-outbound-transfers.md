@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # 实时出站数据传输 {#real-time-outbound-data-transfers}
 
-所述出站实时数据传输过程将用户数据作为一系列格式化 [!DNL JSON] 消息传送到目的地平台。
+出站实时数据传输过程将用户数据作为一系列[!DNL JSON]格式化消息传送到目标平台。
 
 <!-- c_outbound_json.xml -->
 
@@ -25,9 +25,9 @@ ht-degree: 5%
 
 要使用此方法，目标平台必须满足以下要求：
 
-* 它必须提供一个 [!DNL URL] 端点，该端点可以缩放以接收来自Audience Manager的大量消息；
-* 它必须接受格 [!DNL JSON] 式(`Content-type: application/json`)的数据；
-* 它必须接受安全 `HTTPS` 数据传输。 [!DNL Audience Manager] 不会通过不安全协议发送 `HTTP` 消息。
+* 它必须提供一个端点[!DNL URL]，该端点可以缩放以从Audience Manager接收大量消息；
+* 它必须接受[!DNL JSON]格式(`Content-type: application/json`)的数据；
+* 它必须接受安全`HTTPS`数据传输。 [!DNL Audience Manager] 不会通过不安全协议发送 `HTTP` 消息。
 
 ## 频度
 
@@ -43,11 +43,11 @@ ht-degree: 5%
 
 ## 所需的答复
 
-默认情况下，收件人服务器必须返回代 `200 OK` 码以指示成功接收。 其他代码将被解释为失败。 此响应应在3000毫秒内完成。 在响应失败时，将 [!DNL Audience Manager] 仅进行一次重试尝试。
+默认情况下，收件人服务器必须返回`200 OK`代码以指示成功接收。 其他代码将被解释为失败。 此响应应在3000毫秒内完成。 为响应失败，[!DNL Audience Manager]将仅进行一次重试尝试。
 
 ## 参数
 
-下表定义了您发送到目 [!DNL JSON] 标的数据文件中的元素。
+下表定义了发送到目标的[!DNL JSON]数据文件中的元素。
 
 <table id="table_68475F9D01ED4A44B5909234114AEDE2"> 
  <thead> 
@@ -68,9 +68,9 @@ ht-degree: 5%
    <td colname="col2"> <p>整数 </p> </td> 
    <td colname="col3"> <p>一个ID，它指示消息中包含的设备ID的类型，位于User.DataPartner_UUID属性中。 </p> 
     <ul id="ul_159306B0CF304DE0B9A9836D41263E70"> 
-     <li id="li_46F9F4F9DDC34AB683AE2DF0317FBCAC">Android ID(GAID): <code> 20914</code> </li> 
-     <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS ID(IDFA): <code> 20915</code> </li>
-     <li>Web/Cookie ID: 因目标平台而异</li>
+     <li id="li_46F9F4F9DDC34AB683AE2DF0317FBCAC">Android ID(GAID):<code> 20914</code> </li> 
+     <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS ID(IDFA):<code> 20915</code> </li>
+     <li>Web/Cookie ID:因目标平台而异</li>
     </ul> </td> 
   </tr> 
   <tr valign="top"> 
@@ -86,7 +86,7 @@ ht-degree: 5%
   <tr valign="top"> 
    <td colname="col1"><code><i>User_count</i></code> </td> 
    <td colname="col2"> <p>整数 </p> </td> 
-   <td colname="col3"> <p>请求中的用户总 <code> POST</code> 数。 </p> </td> 
+   <td colname="col3"> <p><code> POST</code>请求中的用户总数。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Users</i></code> </td> 
@@ -96,7 +96,7 @@ ht-degree: 5%
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_UUID</i></code> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
-   <td colname="col3"> <p>Audience Manager <span class="keyword"> UUID</span> 。 </p> </td> 
+   <td colname="col3"> <p><span class="keyword">Audience Manager</span> UUID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User.DataPartner_UUID</i></code> </td> 
@@ -106,7 +106,7 @@ ht-degree: 5%
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_Regions</i></code> </td> 
    <td colname="col2"> 数组 </td> 
-   <td colname="col3"> 我 <span class="keyword"> 们看到</span> 此设备的Audience Manager区域ID。 例如，如果设备在巴黎（欧洲）有活动，则区域ID将为 <code> 6</code>。 请参阅 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md">DCS 区域 ID、位置和主机名</a>。 </td> 
+   <td colname="col3"> 我们看到此设备的<span class="keyword">Audience Manager</span>区域ID。 例如，如果设备在巴黎（欧洲）有某些活动，则区域ID将为<code> 6</code>。 请参阅 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md">DCS 区域 ID、位置和主机名</a>。 </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segments</i></code> </td> 
@@ -123,15 +123,15 @@ ht-degree: 5%
    <td colname="col2"> <p>整数 </p> </td> 
    <td colname="col3"> <p>定义区段中用户的状态。 接受以下值： </p> 
     <ul id="ul_42C4625E9543494586CF6D851A94E048"> 
-     <li id="li_6F13809ECD78403FB3BDA626403E4B57"><code> 1</code>: 活动（默认） </li> 
-     <li id="li_10952C8DF7AF4593805FA29028257E38"><code> 0</code>: 非活动、已选择退出或未分段。 </li> 
+     <li id="li_6F13809ECD78403FB3BDA626403E4B57"><code> 1</code>:活动（默认） </li> 
+     <li id="li_10952C8DF7AF4593805FA29028257E38"><code> 0</code>:非活动、已选择退出或未分段。 </li> 
     </ul> <p>当用户处于以下状态时，用户将取消分组： </p> 
     <ul id="ul_E17B080D8DF14D548E1142A9201C1C14"> 
      <li id="li_8352B919A87242E68716FB9EC0443407">根据区段规则从区段中删除。 </li> 
-     <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">根据区段的生存时间间隔从 <a href="../../../features/traits/segment-ttl-explained.md"> 区段中删除</a>。 </li> 
+     <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">根据区段的<a href="../../../features/traits/segment-ttl-explained.md">实时间隔</a>从区段中删除。 </li> 
      <li id="li_F48D1052BA2B45108225641292CC748D">如果最近120天未看到活动状态，则将其移至非活动状态。 </li>
-     <li>因隐私更改请求（即GDPR）而 <span class="keyword"> 删除</span></li>
-    </ul> <p>与Audience ManagerID同步的所有合作伙 <span class="keyword"> 伴ID</span> 将在用户未 <code> "Status":"0"</code> 分段时收到该标志。 </p> </td> 
+     <li>由于隐私更改请求(即<span class="keyword"> GDPR</span>)</li>
+    </ul> <p>与<span class="keyword">Audience Manager</span> ID同步的所有合作伙伴ID在用户未分段时都将收到<code> "Status":"0"</code>标志。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.DateTime</i></code> </td> 
@@ -143,7 +143,7 @@ ht-degree: 5%
 
 ## 安全性
 
-您可以通过使用私钥对HTTP请求进行签 [名](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md) ，或通过OAuth 2.0协议 [!DNL Audience Manager] 进行身份验证来保 [护实时出站数据传输过程](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md) 。
+通过[使用私钥对HTTP请求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)进行签名，或通过[OAuth 2.0](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)协议对[!DNL Audience Manager]进行身份验证，可以保护实时出站数据传输过程。
 
 ## 请求
 
