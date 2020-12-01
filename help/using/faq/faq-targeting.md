@@ -95,7 +95,7 @@ Cookie 删除率难以衡量。大多数 Cookie 删除操作由经常删除 Cook
 
 <br> 
 
-**Audience Manager 仅显示[!UICONTROL Server-to-Server]目标的[!UICONTROL Addressable Audiences]量度和匹配率。能否解释一下为什么我们看不到 Cookie 和 URL 目标的这些数据吗？**
+**Audience Manager 仅显示 [!UICONTROL Server-to-Server] 目标的 [!UICONTROL Addressable Audiences] 量度和匹配率。能否解释一下为什么我们看不到 Cookie 和 URL 目标的这些数据吗？**
 
 原因在于 ID 同步。对于 [!UICONTROL Server-to-Server] 目标，我们会离线传输数据（实时传输或批量传输），并且我们需要发送目标合作伙伴了解的 ID，以便他们可以将其映射回浏览器。区段可寻址数是区段人口总数的子集。
 
