@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # DIL 工具
 
-描述命名空间中的 `DIL.tools` 方法。 这些实用程序功能可帮助您执行特定任务。
+描述`DIL.tools`命名空间中的方法。 这些实用程序功能可帮助您执行特定任务。
 
 <!-- 
 
@@ -35,20 +35,20 @@ r_dil_get_search_referrer.xml
 
  -->
 
-### 用途 `getSearchReferrer`
+### `getSearchReferrer`的用途
 
-在DIL中 `getSearchReferrer` ，返回用于访问网站的搜索结果（名称和关键字）。 您可以将特定搜索词传递给此函数，或允许其在默认情况下搜索支 [!DNL AOL]持的 [!DNL Ask]搜索 [!DNL Bing]引擎( [!DNL Google]、 [!DNL Yahoo]、 `document.referrer` 和)。
+在DIL中，`getSearchReferrer`返回用于访问您的站点的搜索结果（名称和关键字）。 默认情况下，您可以将特定搜索词传递给此函数，或让其针对`document.referrer`搜索支持的搜索引擎（[!DNL AOL]、[!DNL Ask]、[!DNL Bing]、[!DNL Google]和[!DNL Yahoo]）。
 
 ### 函数签名
 
-函数签名： `DIL.tools.getSearchReferrer(uri, initConfig)`
+函数签名：`DIL.tools.getSearchReferrer(uri, initConfig)`
 
 ### 函数参数
 
 `getSearchReferrer` 接受：
 
-* *`{string}`*: *（可选）包含* 搜索URL的字符串(如果未定义， `document.referrer` 则使用)。
-* *`{object}`*: *(可选* )包含、或的 `hostPattern`配置 `queryParam`的对象 `queryPattern`。
+* *`{string}`*: *（可选）包* 含搜索URL的字符串(如果未定 `document.referrer` 义，则使用)。
+* *`{object}`*: *（可选）* 包含、或的配置 `hostPattern`的 `queryParam`对象 `queryPattern`。
 
 和退货：
 
@@ -114,7 +114,7 @@ r_dil_get_search_referrer.xml
 
 ## 分解URI
 
-将统一资源标识符() [!DNL URI]分解为其组成组件： `hash`、 `host`、 `href`、 `pathname`、 `protocol`和 `search``[!DNL uriParams]`。
+将统一资源标识符([!DNL URI])分解为其组成组件：`hash`、`host`、`href`、`pathname`、`protocol`、`search`和`[!DNL uriParams]`。
 
 <!-- 
 
@@ -122,13 +122,13 @@ r_dil_decompose.xml
 
  -->
 
-函数签名： `DIL.tools.decomposeURI`
+函数签名：`DIL.tools.decomposeURI`
 
 ### 函数参数
 
 `decomposeURI` 接受：
 
-* *`uri {string}`*: *(可选* )包含URI的字符串。 Defaults to `document.location.href` if not specified.
+* *`uri {string}`*: *（可选）* 包含URI的字符串。如果未指定，则默认为`document.location.href`。
 
 和退货：
 
@@ -166,11 +166,11 @@ r_dil_get_metatags.xml
 
 ### 函数签名
 
-函数签名： `DIL.tools.getMetaTags( 1 or more parameters)`
+函数签名：`DIL.tools.getMetaTags( 1 or more parameters)`
 
 ### 函数参数
 
-`getMetaTags` 接受一个或多个要搜索的名称参数（字符串类型）。 它返回由键值对组成的对象。
+`getMetaTags` 接受一个或多个要搜索的名称参数（字符串类型）。它返回由键值对组成的对象。
 
 ### 示例代码
 
