@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Real-Time Data Transfer Process Described{#real-time-data-transfer-process-described}
+# 描述的实时数据传输过程{#real-time-data-transfer-process-described}
 
 概述Audience Manager如何与第三方内容提供商进行实时数据传输。
 
@@ -30,8 +30,8 @@ ht-degree: 0%
 实时数据集成过程的工作方式如下：
 
 1. 用户访问包含Audience Manager代码的客户站点。
-1. Audience Manager加载iframe并调用我们 [!UICONTROL Data Collection Server] 的( [!DNL DCS])。
-1. 该 [!DNL DCS] 服务器会实时调用第三方服务器，以检查供应商是否具有有关该用户的任何细分信息。
+1. Audience Manager加载iframe并调用我们的[!UICONTROL Data Collection Server]([!DNL DCS])。
+1. [!DNL DCS]将实时调用第三方服务器，以检查供应商是否具有有关该用户的任何细分信息。
 1. 内容提供者会将有关该用户的区段信息返回给Audience Manager。
 1. Audience Manager接收此细分信息，并使其可用于定位和构建新特征和细分。
 
