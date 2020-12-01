@@ -21,11 +21,11 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->如果您有自己的代码从和目标cookie中读取Audience Managercookie数据，则不需 [!UICONTROL UUID] 要此函数。
+>如果您有自己的代码从[!UICONTROL UUID]和目标cookie中读取Audience Managercookie数据，则不需要此函数。
 
 ## 示例代码
 
-将代 `AamGpt` 码放在页面顶部，最好在代码块 `<head>` 内。 代 `AamGpt` 码如下所示：
+将`AamGpt`代码放在页面顶部，最好放在`<head>`代码块中。 `AamGpt`代码可在以下位置找到：
 
 ```js
 var AamGpt = {  
