@@ -32,7 +32,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->See [IP Address Obfuscation](../../features/administration/ip-obfuscation.md) to learn how to enable [!DNL IP] address obfuscation in the Audience Manager user interface.
+>请参阅[IP地址模糊化](../../features/administration/ip-obfuscation.md)，了解如何在Audience Manager用户界面中启用[!DNL IP]地址模糊化。
 
 观看以下视频，了解 Audience Manager 如何进行 [!DNL IP] 地址模糊处理。
 
