@@ -28,5 +28,5 @@ ht-degree: 17%
 要设置日志摄取，请阅读以下文章：
 
 * [将Google活动管理器数据文件导入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
-* [将Google Ad Manager数据文件导入Audience Manager ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
-* [日志数据和元数据文件](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) ，为通用日志文件设置日志摄取
+* [将Google Ad Manager数据文件导入Audience Manager  ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
+* [日志数据和元数](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) 据文件：为通用日志文件设置日志摄取
