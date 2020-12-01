@@ -17,11 +17,11 @@ ht-degree: 4%
 
 # CID 取代 DPID 和 DPUUID{#cid-replaces-dpid-and-dpuuid}
 
-更新代码以 `d_cid` 使用 `d_cid_ic` 或代替 `d_dpid` 和 `d_dpuuid`。 DPID和DPUUID变量将继续工作，但您应认为它们已弃用。 这包括不带的DPID和DPUUID变 `d_ prefix`型。
+更新代码，使用`d_cid`或`d_cid_ic`代替`d_dpid`和`d_dpuuid`。 DPID和DPUUID变量将继续工作，但您应认为它们已弃用。 这包括不带`d_ prefix`的DPID和DPUUID变体。
 
-## DPID和DPUUID: 评论 {#dpid-dpuuid-review}
+## DPID和DPUUID:评论{#dpid-dpuuid-review}
 
-DPID和DPUUID是包含数据提供程序ID和用户ID的键值对。 这些键值对将提供者ID链接到用户ID。 他们在事件调用、入站同步事件和ID调用期间发送数据。 没有这些 [!DNL Audience Manager]ID、以及其他服务或功能，就无法匹配和同步ID。 这些变量有时使用或不带前缀表 `d_` 示，如下所示。 Note, in the code, *italics* indicates a variable placeholder.
+DPID和DPUUID是包含数据提供程序ID和用户ID的键值对。 这些键值对将提供者ID链接到用户ID。 他们在事件调用、入站同步事件和ID调用期间发送数据。 没有它们，[!DNL Audience Manager]和其他服务或功能将无法匹配和同步ID。 这些变量有时使用或不带`d_`前缀进行表示，如下所示。 请注意，在代码中，*斜体*&#x200B;表示变量占位符。
 
 <table id="table_932B4416AE1E44E4A1E98D779D3B1ED5"> 
  <thead> 
@@ -52,14 +52,14 @@ DPID和DPUUID是包含数据提供程序ID和用户ID的键值对。 这些键�
 
 这些键值对仍然有效，但已弃用。 您应更新代码以改用CID或CID_IC。
 
-## CID和CID_IC: 关于 {#cid-cidic-about}
+## CID和CID_IC:关于{#cid-cidic-about}
 
 CID和CID_IC键值对替换DPID和DPUUID。 它们提供的函数与DPID和DPUUID相同，但效率更高，因为它们将数据提供程序ID（或集成代码）和用户ID包含在单个键值对中。 在每个键值对中：
 
 * =符号将键与其相关值分开。
 * 非打印ASCII字符%01将值分隔。
 
-`d_cid` 并使 `d_cid_ic` 用下面显示的语法。 Note, in the code, *italics* indicates a variable placeholder.
+`d_cid` 并使 `d_cid_ic` 用下面显示的语法。请注意，在代码中，*斜体*&#x200B;表示变量占位符。
 
 <table id="table_0C8A4F8FDBC84416B4EB476F67BCFA8E"> 
  <thead> 
@@ -75,19 +75,19 @@ CID和CID_IC键值对替换DPID和DPUUID。 它们提供的函数与DPID和DPUUI
   </tr> 
   <tr> 
    <td colname="col1"> <p>客户ID集成代码(CID_IC) </p> </td> 
-   <td colname="col2"> <p> <code>d_cid_ic=<i>integration code</i>%01<i>user ID</i></code> </p> <p> 集 <span class="term"> 成代码</span> 是替代数据源ID(由Audience Manager分配)的备用 <span class="keyword"> ID</span>。 如 <a href="../features/manage-datasources.md#create-data-source"> 果需要配置集成代码</a> ，请参阅创建数据源。 </p> </td> 
+   <td colname="col2"> <p> <code>d_cid_ic=<i>integration code</i>%01<i>user ID</i></code> </p> <p> <span class="term">集成代码</span>是替代数据源ID，可由<span class="keyword">Audience Manager</span>分配。 如果需要配置集成代码，请参阅<a href="../features/manage-datasources.md#create-data-source">创建数据源</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-另请参 [阅URL变量和Declared ID的语法](../features/declared-ids.md#variables-and-syntax)。
+另请参阅[URL变量和Declared ID的语法](../features/declared-ids.md#variables-and-syntax)。
 
 >[!NOTE]
 >
->您可以将集成代码用于您自己的数据源和您有权 [访问的全局共](../features/datasources-list-and-settings.md#settings-menu-options)享数据源。 例如，在处理移动标识符数据源时，可以使用集成代码。 请完全按照以下规定使用以下集成代码：
+>您可以对自己的数据源和全局[共享数据源](../features/datasources-list-and-settings.md#settings-menu-options)使用集成代码，您可以访问这些数据源。 例如，在处理移动标识符数据源时，可以使用集成代码。 请完全按照下面的规定使用以下集成代码：
 
 * **DSID_20914** （对于GAID），表示运行Android操作系统的设备。
-* **DSID_20915** ，表示运行iOS操作系统的设备。
+* **DSID_20915** （对于IDFA），表示运行iOS操作系统的设备。
 
 **示例**
 
@@ -128,13 +128,13 @@ CID和CID_IC键值对替换DPID和DPUUID。 它们提供的函数与DPID和DPUUI
  </tbody> 
 </table>
 
-每个调用还可以包括多 `d_cid` 个 `d_cid_ic` 和键值对，如下：
+每个调用还可以包括多个`d_cid`和`d_cid_ic`键值对，如下所示：
 
 ```
 ...?d_cid=123%01456&d_cid=123%01789&d_cid_ic=543%01333...
 ```
 
-## 开发团队的重要考虑事项 {#dev-considerations}
+## 开发团队的重要注意事项{#dev-considerations}
 
 <table id="table_5DD068FAE68A42CDB49B6C064706802A"> 
  <thead> 
@@ -146,18 +146,18 @@ CID和CID_IC键值对替换DPID和DPUUID。 它们提供的函数与DPID和DPUUI
  <tbody> 
   <tr> 
    <td colname="col1"> <p>URL编码 </p> </td> 
-   <td colname="col2"> <p>您的开发团 <i>队必须</i> 将URL编码应用于CID密钥值对中的以下变量： </p> <p> 
+   <td colname="col2"> <p>您的开发团队<i>必须</i>将URL编码应用于CID键值对中的以下变量： </p> <p> 
      <ul id="ul_66DCB63C60914057B2BE21F49D9A36CA"> 
       <li id="li_6D82B4DB40BB4BB0B8FAF5841577FAAC"><code> user ID</code> <code> (dpuuid)</code> </li> 
       <li id="li_D2F94B07B0D84B09A5CDFA48518DDD62"><code> integration code</code> </li> 
-     </ul> </p> <p> <p>注意： 您必须对用户ID和集成代码进行URL编码， <i>然后才</i> 能将它们连接到字符串中。 这是因为在URL编码中不能捕获分隔两个变量的ASCII字符%01。 </p> </p> <p>URL编码可确保将包含保留或不安全字符（如，但不限于，+或=）的用户ID和集成代码正确传输到我们的服务器。 </p> <p>请使用 <a href="https://www.w3schools.com/tags/ref_urlencode.asp" format="https" scope="external"> ASCII编码表</a> 作为参考。 </p> </td> 
+     </ul> </p> <p> <p>注意：必须对用户ID和集成代码<i>进行URL编码，然后</i>将它们连接到字符串中。 这是因为在URL编码中不能捕获分隔两个变量的ASCII字符%01。 </p> </p> <p>URL编码可确保将包含保留或不安全字符（如，但不限于，+或=）的用户ID和集成代码正确传输到我们的服务器。 </p> <p>请使用<a href="https://www.w3schools.com/tags/ref_urlencode.asp" format="https" scope="external"> ASCII编码表</a>作为参考。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>使用全局共享数据源的集成代码 </p> </td> 
-   <td colname="col2"> <p>您可以将集成代码用于您自己的数据源和您有权 <a href="../features/datasources-list-and-settings.md#settings-menu-options"> 访问的全局</a>共享数据源。 例如，在处理移动标识符数据源时，可以使用集成代码。 请完全按照以下规定使用以下集成代码： </p> <p> 
+   <td colname="col2"> <p>您可以对自己的数据源和全局<a href="../features/datasources-list-and-settings.md#settings-menu-options">共享数据源</a>使用集成代码，您可以访问这些数据源。 例如，在处理移动标识符数据源时，可以使用集成代码。 请完全按照下面的规定使用以下集成代码： </p> <p> 
      <ul id="ul_B306EE96A3BD4CE982E113D5E23826CF"> 
       <li id="li_3340C7AFA9AB4105A2CCF3E476EC7552"> <b>DSID_20914</b> （对于GAID），表示运行Android操作系统的设备。 </li> 
-      <li id="li_779D9F08021043FCB233A0ABF5160C76"> <b>DSID_20915</b> ，表示运行iOS操作系统的设备。 </li> 
+      <li id="li_779D9F08021043FCB233A0ABF5160C76"> <b>DSID_20915</b> （对于IDFA），表示运行iOS操作系统的设备。 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
