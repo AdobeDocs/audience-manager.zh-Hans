@@ -29,11 +29,11 @@ ht-degree: 17%
 | 名称 | 类型 | 描述 |
 |---|---|---|
 | `partner` | 字符串 | 要搜索的合作伙伴名称。 |
-| `containerNSID` | 整数 | 默认值 `0`为。 您正在搜索的容器的NSID。 可选。 |
+| `containerNSID` | 整数 | 默认值为`0`。 您正在搜索的容器的NSID。 可选。 |
 
 ## 响应
 
-成功的合作伙伴和容器NSID匹配返回特定于合作伙伴的 [!UICONTROL DIL] 实例。 如果没有匹配项，则API返回（不抛出）消息“ `The DIL instance with partner <name> and containerNSID <ID> was not found.`”
+成功的合作伙伴和容器NSID匹配返回特定于合作伙伴的[!UICONTROL DIL]实例。 如果没有匹配项，则API返回（不抛出）消息“ `The DIL instance with partner <name> and containerNSID <ID> was not found.`”的错误
 
 ## 示例代码
 
