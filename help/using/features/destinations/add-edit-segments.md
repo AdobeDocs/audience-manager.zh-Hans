@@ -16,17 +16,17 @@ ht-degree: 8%
 
 # 添加或编辑服务器到服务器目标的区段 {#add-edit-segments}
 
-您只能为服务器到服务器()目标添加或编辑[!DNL S2S]区段。 不能使用创 [!DNL S2S] 建目标 [[!UICONTROL Destination Builder]](/help/using/features/destinations/destination-builder.md)。 请与顾问联系以设置目 [!DNL S2S] 标。 按照以下说明为目标添加或编辑区 [!DNL S2S] 段。
+只能为服务器到服务器([!DNL S2S])目标添加或编辑区段。 不能创建具有[[!UICONTROL Destination Builder]](/help/using/features/destinations/destination-builder.md)的[!DNL S2S]目标。 请与顾问联系以设置[!DNL S2S]目标。 按照以下说明为[!DNL S2S]目标添加或编辑区段。
 
 <!-- destination-s2s-edit.xml -->
 
-要为目标添加或编辑段映 [!DNL S2S] 射：
+要为[!DNL S2S]目标添加或编辑段映射，请执行以下操作：
 
-1. 转到 **[!UICONTROL Audience Data > Destinations]**。 选 **择“集成平台”>** “基于设 [!DNL S2S] 备”，找到要处理的目标。
-2. 在列 [!UICONTROL Action] 中，单击铅笔图标以编辑目标。
-   * 在框 **[!UICONTROL Search and Add Segments]** 中，开始键入区段名称或单击 **[!UICONTROL Browse All Segments]** 浏览可用区段的列表。
-   * 当您 **[!UICONTROL Add Selected Segments]** 找到要使用的区段时，单击。 添加区段会打开 [!UICONTROL Edit Mapping] 窗口。
+1. 转至&#x200B;**[!UICONTROL Audience Data > Destinations]**。 选择&#x200B;**集成平台>基于设备**&#x200B;并找到要处理的[!DNL S2S]目标。
+2. 在[!UICONTROL Action]列中，单击铅笔图标以编辑目标。
+   * 在&#x200B;**[!UICONTROL Search and Add Segments]**&#x200B;框中，开始键入区段名称或单击&#x200B;**[!UICONTROL Browse All Segments]**&#x200B;浏览可用区段的列表。
+   * 当您找到要使用的区段时，单击&#x200B;**[!UICONTROL Add Selected Segments]**。 添加区段会打开[!UICONTROL Edit Mapping]窗口。
    * 在 [!UICONTROL Edit Mapping]:
-      * **[!UICONTROL Mappings]**:为此目标使 [用的键值对](../../features/destinations/key-value-pairs.md) 设置值。
-      * **[!UICONTROL Start Date]** 和 **[!UICONTROL End Date]**:选择目标的开始和结束日期。 如果结束日期为空，则目标永不过期。
-3. 单击， **[!UICONTROL Save]** 然后单击 **[!UICONTROL Done]**。
+      * **[!UICONTROL Mappings]**:为此目标使用 [的键值](../../features/destinations/key-value-pairs.md) 对设置值。
+      * **[!UICONTROL Start Date]** 和 **[!UICONTROL End Date]**:选择目标的开始和结束日期。如果结束日期为空，则目标永不过期。
+3. 单击&#x200B;**[!UICONTROL Save]**，然后单击&#x200B;**[!UICONTROL Done]**。
