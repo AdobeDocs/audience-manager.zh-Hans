@@ -17,13 +17,13 @@ ht-degree: 14%
 
 # 权限管理 API 方法 {#permissions-management-api-methods}
 
-其余 [!DNL API] 方法用于管理对象和组的权限。
+保留[!DNL API]方法以管理对象和组的权限。
 
 <!-- c_rest_api_perm_man.xml -->
 
-## 列表可用对象类型 {#list-object-types}
+## 列表可用对象类型{#list-object-types}
 
-一种 `GET` 列表可设置基于角色的访问控制的可用对象类型的方法。
+一种`GET`方法，用于列表可设置基于角色的访问控制的可用对象类型。
 
 <!-- r_rest_api_perm_list.xml -->
 
@@ -37,9 +37,9 @@ ht-degree: 14%
 [ "SEGMENT", "TRAIT", "DESTINATION", "DERIVED_SIGNALS", "TAGS" ]
 ```
 
-## 列表对象类型的可用权限 {#list-permissions-object-type}
+## 列表对象类型{#list-permissions-object-type}的可用权限
 
-一种 `GET` 列表对象类型的可用权限的方法。
+用于列表对象类型的可用权限的`GET`方法。
 
 <!-- r_rest_api_perm_list_perms.xml -->
 
