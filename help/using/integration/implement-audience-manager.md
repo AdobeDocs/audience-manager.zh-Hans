@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 实施 Audience Manager {#implementing-audience-manager}
 
-本节概述并说明与Audience Manager数据管理平台()入门相关的流[!DNL DMP]程。 此部分旨在帮助业务团队、项目经理和技术经理了解Audience Manager实施流程。 Audience Manager入门大约需要六周到三个月，具体取决于您的数据收集需求。
+本节概述并说明与Audience Manager数据管理平台([!DNL DMP])入门相关的过程。 此部分旨在帮助业务团队、项目经理和技术经理了解Audience Manager实施流程。 Audience Manager入门大约需要六周到三个月，具体取决于您的数据收集需求。
 
 我们的实施技术有助于与新客户建立协商性伙伴关系。 此过程旨在：
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 Audience Manager采用分阶段的方法来设置和实施。
 
-## 定义阶段 {#define-phase}
+## 定义阶段{#define-phase}
 
 定义阶段向您介绍我们的合作伙伴解决方案项目负责人，并开始项目管理过程。
 
@@ -81,7 +81,7 @@ Audience Manager采用分阶段的方法来设置和实施。
 * 计划项目会议和呼叫的计划；
 * 共享资源和访问的过程。
 
-## 发现阶段 {#discovery-phase}
+## 发现阶段{#discovery-phase}
 
 发现阶段致力于收集需求、进行研究并致力于加深对业务需求和数据收集战略的了解。
 
@@ -137,24 +137,24 @@ Audience Manager采用分阶段的方法来设置和实施。
 此阶段的交付项可包括：
 
 * 完整的第一方、第二方和第三方数据收集战略；
-* 完整的 [!DNL CRM] 或data warehouse摄取计划；
+* 已完成[!DNL CRM]或data warehouse摄取计划；
 * 定义受众细分要求；
 * 完整的数据分类；
 * 已开发的第三方数据集成计划。
 
-## 构建、测试和培训阶段 {#build-test-train-phase}
+## 构建、测试和培训阶段{#build-test-train-phase}
 
 在构建、测试和培训阶段，您将与指定的合作伙伴解决方案主管一起审查数据收集战略和原型。
 
 <!-- c_build_test_train.xml -->
 
-您的数据收集策略将进行端对端测 [!DNL QA] 试。 合作伙伴解决方案将跟踪发现的错误并与我们的系统工程师协调解决问题。 客户培训可以与这些其他工作同时进行开始。
+您的数据收集策略将进行端对端[!DNL QA]测试。 合作伙伴解决方案将跟踪发现的错误并与我们的系统工程师协调解决问题。 客户培训可以与这些其他工作同时进行开始。
 
 下表介绍了在此阶段发生的主要活动:
 
 | 活动 | 用途／说明 | 参加者 |
 |---|---|---|
-| 准备数据收集战略 | 与Adobe技术团队合作，构建满足您业务要求的数据收集计划 | 商业和技术团队 |
+| 准备数据收集战略 | 与Adobe技术团队合作，构建满足您业务需求的数据收集计划 | 商业和技术团队 |
 | 部署和测试代码 | 在分阶段环境测试建议的解决方案并执行跨浏览器测试 | 技术团队 |
 | 验证功能并解决错误 | 检查和交流结果、解决错误并重新测试 | 技术团队 |
 | 用户培训 | 提供有关Audience Manager功能、工具和报告的教育和了解 | 业务团队 |
@@ -162,13 +162,13 @@ Audience Manager采用分阶段的方法来设置和实施。
 此阶段的交付项可包括：
 
 * 已完成且已接受的数据收集计划；
-* 端对端测 [!DNL QA] 试；
+* 端到端[!DNL QA]测试；
 * Audience Manager用户界面功能的基本说明；
 * 接受和签署。
 
-## 启动、支持和优化阶段 {#launch-support-optimize-phase}
+## 启动、支持和优化阶段{#launch-support-optimize-phase}
 
-在启动、支持和优化阶段，您的数据收集和原型实施从开发转向实时的生产环境。 我们将继续提供有关产品熟悉度和策略的培训，通过数据驱动 [!DNL ROI] 优化来帮助您提高产品熟悉度。
+在启动、支持和优化阶段，您的数据收集和原型实施从开发转向实时的生产环境。 我们将继续进行有关产品熟悉度和策略的培训，这些培训可通过数据驱动优化帮助您提高[!DNL ROI]。
 
 <!-- c_launch_support_optimize.xml -->
 
@@ -219,21 +219,21 @@ Audience Manager采用分阶段的方法来设置和实施。
 * 响应或请求功能请求、缺陷和用户反馈；
 * 加深对Audience Manager特性和报告的熟悉。
 
-## 代码实现 {#code-implementation}
+## 代码实现{#code-implementation}
 
-尽管部署过程看起来可能很复杂，但代码实现就像在网站的结束标 [!DNL JavaScript] 签旁添加几 `</body>` 行一样简单。
+尽管部署过程看起来可能很复杂，但代码实现很简单，就像在网站的结束`</body>`标签旁边添加几行[!DNL JavaScript]一样。
 
 <!-- c_code.xml -->
 
 ### 部署
 
-Audience Manager代码片断调 [!DNL Akamai] 用以下载先前在用户界面中设置的业务规则。 此外，客户端浏览器会缓存此信息，这有助于缩短页面和服务器加载时间。 我们的代码和数据收集方法旨在维护您所有库存的用户体验。
+Audience Manager代码片断调用[!DNL Akamai]下载先前在用户界面中设置的业务规则。 此外，客户端浏览器会缓存此信息，这有助于缩短页面和服务器加载时间。 我们的代码和数据收集方法旨在维护您所有库存的用户体验。
 
 ### 参加者
 
 合作伙伴解决方案可以直接与您的技术团队合作，帮助部署代码、解决最终问题并满足其他要求。
 
-## 实施后支持 {#post-implementation-support}
+## 实施后支持{#post-implementation-support}
 
 我们的协作努力并不局限于最终部署。 实施完成后，我们的客户管理团队将接管业务。
 
@@ -241,4 +241,4 @@ Audience Manager代码片断调 [!DNL Akamai] 用以下载先前在用户界面�
 
 客户经理在产品实施过程完成后提供持续的支持和咨询服务。 您可以期望与客户经理定期会面。 这些会议确保您从Audience Manager中获得最大的使用量和价值。
 
-请在此处 [与我们联](https://www.adobe.com/products/audiencemanager.html) 系，以了解更多信息并开始使用Audience Manager。
+请与我们[此处](https://www.adobe.com/products/audiencemanager.html)联系，了解详细信息并开始使用Audience Manager。
