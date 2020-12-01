@@ -17,20 +17,20 @@ ht-degree: 72%
 
 # [!DNL Audience Manager] [!UICONTROL Device-based Destinations]
 
-本页仅包含当 [!DNL Audience Manager] 前基 [于设备的目标](/help/using/features/destinations/add-device-based-destinations.md) 。 在 [!DNL Audience Manager]中 [!UICONTROL device-based destinations] ，也称为 [!UICONTROL server-to-server destinations]。 有关集成的详细信息，请参阅其 [Adobe交](https://www.adobeexchange.com/experiencecloud.html) 换列表（如果可用），或与您的顾 [!DNL Adobe] 问或客户服务联系。
+本页仅包含当前[!DNL Audience Manager] [基于设备的目标](/help/using/features/destinations/add-device-based-destinations.md)。 在[!DNL Audience Manager]中，[!UICONTROL device-based destinations]也称为[!UICONTROL server-to-server destinations]。 有关集成的详细信息，请参阅其[AdobeExchange](https://www.adobeexchange.com/experiencecloud.html)列表（如果可用）或与[!DNL Adobe]顾问或客户服务联系。
 
  
 
 * **上次更新** =显示此更新的最后日期 [!UICONTROL device-based destination]。
-* **更新** =指示 [!DNL Audience Manager] 是实时还是批量(1xday)向此发送数据 [!UICONTROL destination]。
-* **Unsegment** = Unsegmentation描述取消设备用户档案资格并从中删除设备的 [!UICONTROL segments]进程。 您是否能够从中删除设备用户档案 [!UICONTROL segment] 取决于用于创建设备的设备选项 [!UICONTROL Profile Merge Rule]。 在删除请求的上下文中也使用 [!DNL GDPR] 非分段。 阅读 [用户档案合并规则和设备未分段流程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) ，以 [及具有未分段功能的Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 [!DNL Audience Manager] 将取消区段信息发送 [!UICONTROL destinations] 到下面标 **有“** Yes”。
-* **接收 [!DNL IAB TCF] 同意信号** =允许 [!DNL Audience Manager Plug-in for IAB TCF][!DNL IAB TC] 您将字符串转发给激活合作伙伴，同时尊重用户的隐私选择。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
-* **[!DNL ICDS]** =此列列表支持的合作伙伴 [!UICONTROL Instant Cross-Device Suppression]。 了解 [即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
-* **移动设备ID** =此列列表可以从中接收移动设备ID的合作伙伴 [!DNL Audience Manager]。
+* **Updates** =指示 [!DNL Audience Manager] 是实时还是批量(1xday)向此发送数据 [!UICONTROL destination]。
+* **Unsegment** = Unsegmentation描述取消设备用户档案资格并从中删除设备的 [!UICONTROL segments]进程。能否从[!UICONTROL segment]中删除设备用户档案取决于用于创建[!UICONTROL Profile Merge Rule]的设备选项。 在[!DNL GDPR]删除请求的上下文中也使用非分段。 阅读[用户档案合并规则和设备未分段进程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和[具有未分段功能的Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 [!DNL Audience Manager] 将未细分信息发送到标 [!UICONTROL destinations] 有“以下 **** 选项”的。
+* **接收 [!DNL IAB TCF] 同意信号** =允许您 [!DNL Audience Manager Plug-in for IAB TCF] 在尊重用户隐私选择的 [!DNL IAB TC] 同时将字符串转发给激活合作伙伴。阅读[IAB TCF的Audience Manager插件](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md)。
+* **[!DNL ICDS]** =此列列表支持的合作伙伴 [!UICONTROL Instant Cross-Device Suppression]。阅读[即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
+* **移动设备** ID=此列列表可从中接收移动设备ID的合作伙 [!DNL Audience Manager]伴。
 
  
 
-| 集成 | 上次更新 | 更新 | 取消分段 | 接收 [!DNL IAB TCF] 同意信号 | [!DNL ICDS] | 移动设备 ID |
+| 集成 | 上次更新 | 更新 | 取消分段 | 接收[!DNL IAB TCF]同意信号 | [!DNL ICDS] | 移动设备 ID |
 |---------------------------------------------------|------------|-----------|-----------|-----------------------------------|------|-------------------|
 | [!DNL 4C Insights] | 26/09/2018 | 1xday | 是 | 否 | 否 | 是 |
 | [!DNL 4info] | 09/02/2017 | 1xday | 否 | 否 | 否 | 是 |
@@ -65,8 +65,8 @@ ht-degree: 72%
 | [!DNL Clearstream.tv] | 27/02/2017 | 实时 | 是 | 否 | 否 | 否 |
 | [!DNL Collective AMP Platform] | 27/02/2017 | 1xday | 否 | 否 | 否 | 否 |
 | [!DNL Criteo] | 27/02/2017 | 实时 | 否 | 是 | 否 | 是 |
-| [!DNL Crosswise] | 27/02/2017 | 1xday | 是 | 否 | 否 | 否 |
-| [!DNL D.A.C. AudienceOne] | 27/02/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL Crosswise] | 27/03/2017 | 1xday | 是 | 否 | 否 | 否 |
+| [!DNL D.A.C. AudienceOne] | 27/03/2017 | 1xday | 是 | 否 | 否 | 否 |
 | [!DNL DataXu] | 11/20/2017 | 实时 | 否 | 否 | 否 | 是 |
 | [!DNL Digilant] | 02/03/2017 | 实时 |  | 否 | 否 | 否 |
 | [!DNL DistrictM] | 02/03/2017 | 1xday | 是 | 否 | 否 | 否 |
@@ -159,7 +159,7 @@ ht-degree: 72%
 | [!DNL Triple Lift] | 03/03/2017 | 实时 | 否 | 是 | 否 | 否 |
 | [!DNL TrueX] | 11/01/2018 | 实时 | 是 | 否 | 否 | 是 |
 | [!DNL TubeMogul] | 03/03/2017 | 实时 | 是 | 否 | 是 | 否 |
-| [!DNL Turn] / [!DNL Amobee] | 03/03/2027 | 实时 | 否 | 否 | 否 | 是 |
+| [!DNL Turn] /  [!DNL Amobee] | 03/03/2027 | 实时 | 否 | 否 | 否 | 是 |
 | [!DNL Twenga] | 29/10/2018 | 实时 | 是 | 否 | 否 | 否 |
 | [!DNL Twitter Tailored Audiences] | 27/03/2017 | 实时 | 是 | 否 | 是 | 否 |
 | [!DNL Undertone] | 11/07/2017 | 1xday | 否 | 否 | 否 | 否 |
@@ -176,4 +176,4 @@ ht-degree: 72%
 | [!DNL Yieldex] | 21/08/2017 | 变化 | 是 | 否 | 否 | 否 |
 | [!DNL YieldMo] | 03/03/2017 | 1xday | 否 | 否 | 否 | 否 |
 | [!DNL Yume] | 31/05/2017 | 1xday | 否 | 否 | 否 | 否 |
-| [!DNL Zeta] / [!DNL Sizmek DSP] / [!DNL RocketFuel] | 17/02/2017 | 实时 | 是 | 否 | 是 | 是 |
+| [!DNL Zeta] /  [!DNL Sizmek DSP] /  [!DNL RocketFuel] | 17/02/2017 | 实时 | 是 | 否 | 是 | 是 |
