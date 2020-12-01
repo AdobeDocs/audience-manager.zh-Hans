@@ -17,16 +17,16 @@ ht-degree: 17%
 
 # 从 DCS 响应中获取用户 ID 和区域 {#get-user-ids-and-regions-from-a-dcs-response}
 
-本节介绍如何分析响 [!DNL DCS] 应以检索对进行实时调用所需的访客和区域ID [!DNL DCS]。
+本节介绍如何分析[!DNL DCS]响应以检索对[!DNL DCS]进行实时调用所需的访客和区域ID。
 
 ## 用户和区域ID {#user-region-ids}
 
-响 [!DNL DCS] 应包含有关站点访客的数据。 您需要访客和区域ID，然后才能对进行服务器对服务器调用 [!DNL DCS]。
+[!DNL DCS]响应包含有关站点访客的数据。 在对[!DNL DCS]进行服务器对服务器调用之前，需要访客和区域ID。
 
 * 需要用户ID来识别数据并将其与特定访客关联。
-* 区域ID是必需的，因为它与区域服务器名称关联，您需要将数据发送到该服务器名 [!DNL DCS]。 在地理 [!DNL DCS] 上最接近站点访客的数据中心中存储信息。 请参阅 [DCS 区域 ID、位置和主机名](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
+* 区域ID是必需的，因为它与区域服务器名称关联，您需要将数据发送到[!DNL DCS]。 [!DNL DCS]在地理上最接近站点访客的数据中心中存储信息。 请参阅 [DCS 区域 ID、位置和主机名](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
 
-这些参数如下所述。 斜体 *代码* 表示变量占位符。
+这些参数如下所述。 *斜体*&#x200B;中的代码表示变量占位符。
 
 <table id="table_822C02D5978348DCB7153001882D397C"> 
  <thead> 
@@ -52,7 +52,7 @@ ht-degree: 17%
 
 ## 示例响应 {#sample-response}
 
-此简单的响应显示了 `UUID` 相应的区 `ID`域。 注意，这只是示例数据。 您的日志文件可能更长、更复杂。
+此简单响应显示`UUID`和区域`ID`。 注意，这只是示例数据。 您的日志文件可能更长、更复杂。
 
 ```js
 {
@@ -65,4 +65,4 @@ ht-degree: 17%
 
 ## 后续步骤 {#next-steps}
 
-用户ID和区域服务器名称一经确定，即可开始发送和接收 [!DNL DCS] 数据。 请参 [阅进行DCS API调用](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)。
+用户ID和区域服务器名称一经确定，即可开始发送和接收[!DNL DCS]数据。 请参阅[发出DCS API调用](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)。
