@@ -17,9 +17,9 @@ ht-degree: 9%
 
 # `get_aamCookie` 代码 {#get-aamcookie-code}
 
-捕获Audience Manager唯 [!DNL DART Enterprise] 一用户ID()值所需的代码(和其[!DNL UUID]他目标类型)。
+[!DNL DART Enterprise]（和其他目标类型）需要的代码，用于捕获Audience Manager唯一用户ID([!DNL UUID])值。
 
-在页面顶部定义此函数，最好在代码块 `<head>` 中定义。
+在页面顶部定义此函数，最好在`<head>`代码块中。
 
 <!-- r_aam_de_cookie.xml -->
 
