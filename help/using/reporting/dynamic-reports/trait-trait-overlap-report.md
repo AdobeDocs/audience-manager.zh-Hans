@@ -21,7 +21,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->Audience Manager中的重叠报表遵循RBAC原则。 您只能根据您所属的RBAC用户组来查看您 [有权访问的数据](/help/using/features/administration/administration-overview.md) 源中的特征。
+>Audience Manager中的重叠报表遵循RBAC原则。 您只能根据您所属的[RBAC用户组](/help/using/features/administration/administration-overview.md)来查看您有权访问的数据源中的特征。
 
 <!-- 
 
@@ -31,19 +31,19 @@ c_overlap_reports.xml
 
 ## 概述
 
-该报 [!UICONTROL Trait-to-Trait Overlap] 告返回所有您自己的特征和第三方特征之间共享的唯一用户百分比数据。 作为优化工具，此报告可帮助您：
+[!UICONTROL Trait-to-Trait Overlap]报告返回所有您自己的特征和第三方特征之间共享的唯一用户百分比数据。 作为优化工具，此报告可帮助您：
 
 * 根据您的需求创建重叠度高或低的细分。 重叠度高的特征为您提供目标受众，但独特访客更少。 重叠度低的特征有助于达到更大、唯一的访客集。
-* 验证第三方特征数据： 相似的第一方和第三方特征之间的强烈重叠表明您数据合作伙伴的特征准确可靠。 反之，低重叠可能表示第三方特征实际上可能与您自己的类似第一方特征包含的信息不同。
+* 验证第三方特征数据：相似的第一方和第三方特征之间的强烈重叠表明您数据合作伙伴的特征准确可靠。 反之，低重叠可能表示第三方特征实际上可能与您自己的类似第一方特征包含的信息不同。
 * 发现特征之间意外的重叠，并使用该信息构建创新细分。
 
 ## 示例报告
 
-下图提供了报告中元素的高级概 [!UICONTROL Trait-to-Trait Overlap] 述。
+下图提供了[!UICONTROL Trait-to-Trait Overlap]报告中元素的高级概述。
 
 >[!NOTE]
 >
->当报 [!UICONTROL Trait-to-Trait Overlap] 表将同一特征与自身进行比较时，该报表返回一个空字段。
+>当[!UICONTROL Trait-to-Trait Overlap]报告将同一特征与自身进行比较时，它返回一个空字段。
 
 ![](assets/trait-to-trait-overlap.png)
 
@@ -51,7 +51,7 @@ c_overlap_reports.xml
 
 在弹出窗口中选择单个点以视图数据详细信息。 单击操作会自动更新报告中显示的数据。
 
-## 已定义特征到特征重叠数据弹出字段 {#field-definitions}
+## 特征到特征重叠数据弹出字段已定义{#field-definitions}
 
 描述在单击单个数据点时在弹出窗口中显示的度量。
 
@@ -61,7 +61,7 @@ r_t2t_data_pop.xml
 
  -->
 
-报告的弹出 [!UICONTROL Trait-to-Trait Overlap] 窗口包含以下指标。 请注意，表中的唯一度量表示 *您的实时用户*。
+[!UICONTROL Trait-to-Trait Overlap]报告的弹出窗口包含以下度量。 请注意，表中的唯一度量表示您的&#x200B;*实时用户*。
 
 <table id="table_A2A0CFC47C1A404994B82E6630E711A2"> 
  <thead> 
