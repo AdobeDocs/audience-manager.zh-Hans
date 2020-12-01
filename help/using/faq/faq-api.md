@@ -29,7 +29,7 @@ faq_api.xml
 
 <br> 
 
-**[!UICONTROL DIL]为何使用[!UICONTROL GET]和[!UICONTROL POST]方法发起事件调用？**
+**[!UICONTROL DIL] 为何使用 [!UICONTROL GET] 和 [!UICONTROL POST] 方法发起事件调用？**
 
 根据事件调用查询字符串的长度，[!UICONTROL DIL] 会通过 `GET` 或 `POST` 方法将数据传递到 [!DNL Audience Manager]。默认情况下，这属于 `GET` 和 `POST` 方法的内置行为。此行为并不是特定于 [!DNL Audience Manager] 的。
 
@@ -41,12 +41,12 @@ faq_api.xml
 
 <br> 
 
-**通过[!UICONTROL REST API]，我可以执行哪些操作？**
+**通过 [!UICONTROL REST API]，我可以执行哪些操作？**
 
 通过 [!UICONTROL REST API]，您可以采用编程方式使用用户界面中提供的大多数 [!DNL Audience Manager] 功能和特性。
 
 <br> 
 
-**如何获取[!UICONTROL REST API]客户端 ID 和密码？**
+**如何获取 [!UICONTROL REST API] 客户端 ID 和密码？**
 
 请联系您的合作伙伴解决方案代表以获取 [!DNL API] 访问凭据。我们的 API 将使用 [OAuth 2.0](https://oauth.net/2/) 标准进行令牌身份验证、授权和续订。有关更多信息，请参阅 [OAuth 身份验证](../api/rest-api-main/aam-api-getting-started.md#oauth)。
