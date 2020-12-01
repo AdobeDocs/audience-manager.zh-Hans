@@ -16,16 +16,16 @@ ht-degree: 39%
 ---
 
 
-# [!DNL API] 和代 [!DNL SDK] 码 {#api-and-sdk-code}
+# [!DNL API] 和代 [!DNL SDK] 码  {#api-and-sdk-code}
 
 [!DNL API]和工具包，让您有计划地工作 [!DNL Audience Manager]
 
 >[!NOTE]
 >
->我们不支持这些 [!DNL API]功能：
+>我们的[!DNL API]不支持以下功能：
 >
 >* [!UICONTROL General]、 [!UICONTROL Trend]和报 [!UICONTROL Interactive] 告。
->* 已弃 [!DNL Tag Insertion Manager] 用([!DNL TIM])功能。
+>* 已弃用[!DNL Tag Insertion Manager]([!DNL TIM])功能。
 
 
 详细信息:
