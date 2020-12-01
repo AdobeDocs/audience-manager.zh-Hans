@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # 元数据文件的状态更新{#status-updates-for-metadata-files}
 
-S3状态目录包含一个文件， `.info` 其中包含有关已上载文件的成功和失败信息。 文件包含JSON格式的数据，状态结果为数组。
+S3状态目录包含`.info`文件，其中包含有关已上载文件的成功和失败信息。 文件包含JSON格式的数据，状态结果为数组。
 
-文件的内 `.info` 容将类似于此示例。
+`.info`文件的内容将类似于此示例。
 
 ```js
 //sample file path
@@ -60,9 +60,9 @@ S3状态目录包含一个文件， `.info` 其中包含有关已上载文件的
 }
 ```
 
-## 定义的元数据键值对 {#key-value-pairs}
+## 定义的元数据键值对{#key-value-pairs}
 
-下表列表和定义元数据状态文 `Files` 件 `Summary` 的各个部分中的键。
+下表列表和定义元数据状态文件`Files`和`Summary`部分的键。
 
 **文件数组中的键**
 
@@ -84,19 +84,19 @@ S3状态目录包含一个文件， `.info` 其中包含有关已上载文件的
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileChecksumMD5</code> </p> </td> 
-   <td colname="col2"> <p>上载到目录的元数据文件的MD 5校验 <code> meta</code> 和。 </p> </td> 
+   <td colname="col2"> <p>上载到<code> meta</code>目录的元数据文件的MD 5校验和。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileName</code> </p> </td> 
-   <td colname="col2"> <p>上载到目录的元数据文件的 <code> meta</code> 名称。 </p> </td> 
+   <td colname="col2"> <p>上载到<code> meta</code>目录的元数据文件的名称。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> MetadataType</code> </p> </td> 
-   <td colname="col2"> <p>文件所包含数据类型的可读名称。 它基于您的文件名中的子ID。 </p> <p>See <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Naming Conventions for Metadata Files</a>. </p> </td> 
+   <td colname="col2"> <p>文件所包含数据类型的可读名称。 它基于您的文件名中的子ID。 </p> <p>请参阅<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">元数据文件的命名约定</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Parent</code> </p> </td> 
-   <td colname="col2"> <p>文件所包含数据类型的可读名称。 它基于您的文件名中的父ID。 </p> <p>See <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Naming Conventions for Metadata Files</a>. </p> </td> 
+   <td colname="col2"> <p>文件所包含数据类型的可读名称。 它基于您的文件名中的父ID。 </p> <p>请参阅<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">元数据文件的命名约定</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Status</code> </p> </td> 
@@ -121,7 +121,7 @@ S3状态目录包含一个文件， `.info` 其中包含有关已上载文件的
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> Day</code> </p> </td> 
-   <td colname="col2"> <p>格式文件处理 <code><i>yyyy-mm-dd</i></code> 日期。 </p> </td> 
+   <td colname="col2"> <p>文件处理日期采用<code><i>yyyy-mm-dd</i></code>格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> GlobalStatus</code> </p> </td> 
