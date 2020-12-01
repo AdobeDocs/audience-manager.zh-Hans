@@ -1,7 +1,7 @@
 ---
 description: DCS API代码、方法和流程的概念信息、描述和定义。
-seo-description: Adobe Audience Manager(AAM)中DCS API代码、方法和进程的概念信息、说明和定义。
-seo-title: Adobe Audience Manager(AAM)中的DCS API参考概述
+seo-description: Adobe Audience Manager(AAM)的DCS API代码、方法和流程的概念信息、描述和定义。
+seo-title: Adobe Audience Manager(AAM)的DCS API参考概述
 title: DCS API 参考概述
 feature: DCS
 translation-type: tm+mt
@@ -15,11 +15,11 @@ ht-degree: 13%
 
 # DCS API 参考概述
 
-代码、方法和流程的概 [!DNL DCS API] 念信息、描述和定义。
+[!DNL DCS API]代码、方法和进程的概念信息、说明和定义。
 
 * [DCS API 方法](/help/using/api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
 
-   使用GET或POST [!DNL DCS API] 方法将数据发送到。
+   使用GET或POST方法将数据发送到[!DNL DCS API]。
 
 * [DCS 错误代码、消息和示例](/help/using/api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
 
