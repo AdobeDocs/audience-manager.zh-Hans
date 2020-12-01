@@ -19,13 +19,13 @@ ht-degree: 6%
 
 # Audience Marketplace {#audience-marketplace}
 
-[!UICONTROL Audience Marketplace] 允许数据提供商和购买者以自助方式最小限度地执行数据交易。 它通过提供特定功能实现这一点，这些功能因您作为数据买家或数据卖家的角色而异。 事实上，你甚至可以同时做买家和卖家。 而且，如果情况再好不过，应 [!UICONTROL Audience Marketplace] 当处理数据提供商和销售商之间的合同、付款和付款。
+[!UICONTROL Audience Marketplace] 允许数据提供商和购买者以自助方式最小限度地执行数据交易。它通过提供特定功能实现这一点，这些功能因您作为数据买家或数据卖家的角色而异。 事实上，你甚至可以同时做买家和卖家。 如果效果再好不过，[!UICONTROL Audience Marketplace]将负责数据提供商和销售商之间的合同、账单和付款。
 
-Talk to your [!DNL Audience Manager] sales specialist to get started. 他们可以激活 [!UICONTROL Audience Marketplace for you]。
+与[!DNL Audience Manager]销售专员联系，开始工作。 他们可以激活[!UICONTROL Audience Marketplace for you]。
 
 >[!NOTE]
 >
->用户角色控制您可以和不能在中执行的操作 [!UICONTROL Audience Marketplace]。
+>用户角色控制您在[!UICONTROL Audience Marketplace]中可以和不能执行的操作。
 >
 > * 管理员可以创建数据服务、管理订阅者和订阅数据服务。
 > * 用户只能搜索和视图源。
