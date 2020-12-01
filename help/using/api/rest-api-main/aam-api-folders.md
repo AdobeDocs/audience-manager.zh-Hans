@@ -23,6 +23,6 @@ ht-degree: 14%
 
 >[!IMPORTANT]
 >
->文件夹方 [!DNL API] 法已被重写，并 [!DNL Swagger] 已迁移。 请参阅:  >
+>文件夹[!DNL API]方法已用[!DNL Swagger]重写并迁移。 请参阅:  >
 >* [Adobe Audience ManagerAPI文档](https://bank.demdex.com/portal/swagger/index.html)
 >* [Audience Manager API 代码迁移](../../api/api-swagger-migration.md)
