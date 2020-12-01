@@ -17,15 +17,15 @@ ht-degree: 14%
 
 # DCS 区域 API 方法 {#dcs-region-api-methods}
 
-用于以编程方式列表Audience Manager区 [!DNL DCS] 域的方法。
+用于以编程方式列表Audience Manager[!DNL DCS]区域的方法。
 
 <!-- c_rest_api_regions.xml -->
 
-For a list of regions and their corresponding integers, see [DCS Region IDs, Locations, and Host Names](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+有关列表区域及其相应整数，请参阅[DCS区域ID、位置和主机名](../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
 
-## 列表特定DCS区域 {#list-specific-dcs-region}
+## 列表特定DCS区域{#list-specific-dcs-region}
 
-一种 `GET` 列表特定区域的 [!DNL DCS] 方法。
+列表特定[!DNL DCS]区域的`GET`方法。
 
 <!-- r_rest_api_regions_list_specific.xml -->
 
@@ -49,13 +49,13 @@ For a list of regions and their corresponding integers, see [DCS Region IDs, Loc
   }
 ```
 
-成功 `200 OK` 时返回。
+如果成功，则返回`200 OK`。
 
-For a list of regions and their corresponding integers, see [DCS Region IDs, Locations, and Host Names](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+有关列表区域及其相应整数，请参阅[DCS区域ID、位置和主机名](../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
 
-## 列表DCS区域 {#list-dcs-regions}
+## 列表DCS区域{#list-dcs-regions}
 
-一种 `GET` 列表区域 [!DNL DCS] 的方法。
+用`GET`方法列表[!DNL DCS]区域。
 
 <!-- r_rest_api_regions_list.xml -->
 
@@ -82,6 +82,6 @@ For a list of regions and their corresponding integers, see [DCS Region IDs, Loc
 ]
 ```
 
-成功 `200 OK` 时返回。
+如果成功，则返回`200 OK`。
 
-For a list of regions and their corresponding integers, see [DCS Region IDs, Locations, and Host Names](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+有关列表区域及其相应整数，请参阅[DCS区域ID、位置和主机名](../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
