@@ -19,23 +19,23 @@ ht-degree: 5%
 
 这些报告返回广告维度的展示次数、点击率和转化率数据。 比较所选指标的趋势和数量，更好地了解活动的长期表现。
 
-## 示例报 [!UICONTROL Trend Analysis] 告 {#sample-trend-analysis}
+## 示例[!UICONTROL Trend Analysis]报告{#sample-trend-analysis}
 
-报 [!UICONTROL Trend Analysis] 表仅在14天间隔内以线形图返回数据。 在此示例中，报表显示一组映射区段的印象、点进率和转化趋势。
+[!UICONTROL Trend Analysis]报告仅在14天的间隔内返回线形图中的数据。 在此示例中，报表显示一组映射区段的印象、点进率和转化趋势。
 
 ![](assets/trend-analysis.png)
 
-## 示例报 [!UICONTROL Volume Analysis] 告 {#sample-volume-analysis}
+## 示例[!UICONTROL Volume Analysis]报告{#sample-volume-analysis}
 
-报 [!UICONTROL Volume Analysis] 表返回条形图中选定日期范围的数据。 在此示例中，报表按批量显示一组映射区段的印象、点进率和转换率。
+[!UICONTROL Volume Analysis]报告返回条形图中选定日期范围的数据。 在此示例中，报表按批量显示一组映射区段的印象、点进率和转换率。
 
 >[!NOTE]
 >
->7天和30天回顾期仅适用于星期日日 **[!UICONTROL Date Through]** 期。
+>7天和30天回顾期仅在星期日&#x200B;**[!UICONTROL Date Through]**&#x200B;日期可用。
 
 ![](assets/volume-analysis.png)
 
 >[!TIP]
 >
->有关已映射和未映射的区段的信息，请参阅 [区段性能报告](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md) 文档。
+>有关已映射和未映射区段的信息，请参阅[区段性能报告](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)文档。
 
