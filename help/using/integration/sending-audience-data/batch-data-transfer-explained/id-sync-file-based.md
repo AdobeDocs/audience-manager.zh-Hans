@@ -23,7 +23,7 @@ ht-degree: 7%
 >
 >文本样式（`monospaced text`、*斜体*、括号 `[ ]` `( )` 等）在此文档中指示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
 
-## 文件名语法和示例 {#file-name-syntax}
+## 文件名语法和示例{#file-name-syntax}
 
 <!-- c_file_based_id_sync.xml -->
 
@@ -86,23 +86,23 @@ ID文件名包含以下必需和可选元素：
 </ul>
 
 >[!NOTE]
-> 有关基于人员的目标的ID同步文件命名（c2c前缀），请参 [阅工作流A —— 基于所有联机活动并结合离线的个性化](../../../features/destinations/people-based-destinations-workflow-combined.md) ，或 [工作流B —— 基于仅脱机数据的个性化](../../../features/destinations/people-based-destinations-workflow-offline.md)。
+> 有关基于人员的目标的ID同步文件命名（c2c前缀），请参阅[工作流A —— 基于所有联机活动并结合脱机数据的个性化](../../../features/destinations/people-based-destinations-workflow-combined.md)或[工作流B —— 基于脱机数据的个性化](../../../features/destinations/people-based-destinations-workflow-offline.md)。
 
-## 文件内容语法和示例 {#file-content-syntax}
+## 文件内容语法和示例{#file-content-syntax}
 
 ID文件的内容包括以下元素：
 
-*`UUID`* `<tab>`*`UUID`* `<tab>`*`UUID`*`<tab>` *`UUID`*
+*`UUID`* `<tab>`*`UUID`*`<tab>`*`UUID`*`<tab>`*`UUID`*
 
-文件包含用户[!DNL UUID]ID。 在每行中，用选项卡分隔ID。 以下示例显示格式正确的ID文件。 您的内容可能看起来类似。
+文件包含用户ID([!DNL UUID])。 在每行中，用选项卡分隔ID。 以下示例显示格式正确的ID文件。 您的内容可能看起来类似。
 
 ```
 abc123 def456 ghi789 xyz987
 ```
 
-## 同步将DPUUID与UUID匹配 {#sync-matches-dpuuids-uuids}
+## 同步将DPUUID与UUID{#sync-matches-dpuuids-uuids}匹配
 
-ID同步文件的目的是将您自己的 [数据源](../../../reference/ids-in-aam.md) 中的DPUUID与UUID [!DNL Audience Manager] 同步。 同步将 [!DNL DPUUID]主控及 [!DNL DPID] 其相关 [!DNL DPID]映射到 [!DNL Audience Manager][!DNL UUID]。 将ID放在文件名和正文中的位置决定这些标识符如何相互映射。 例如，请取下此处显示的两个示例文件：
+ID同步文件的用途是将您自己数据源中的[ DPUUID](../../../reference/ids-in-aam.md)与[!DNL Audience Manager] UUID同步。 同步将主控[!DNL DPID]及其相关的[!DNL DPID]的[!DNL DPUUID]映射到[!DNL Audience Manager] [!DNL UUID]。将ID放在文件名和正文中的位置决定这些标识符如何相互映射。 例如，请取下此处显示的两个示例文件：
 
 * **文件1:** `adobe_id_0_12345_1476312152.sync`
 
@@ -117,17 +117,17 @@ ID同步文件的目的是将您自己的 [数据源](../../../reference/ids-in-
 | DPID 0 =Adobe Audience ManagerUUID | DPID 12345 |
 |---|---|
 | 68079982765673198504052656074456196039 | XYZ3017D_2kzkTOXkFYIAgwbajoqWRcqkXl-TTrj6E4njaMR38 |
-| 67412682083411995725538770443620307584 | XYZ3017BBR4DAFJWfM6D4Gb4lN_T5jk_f7rdEcqNs9wfnA7h70 |
-| 89159024796760343733111707646026765593 | XYZ3017PryPID8tzfhkEE-gE034LI-53Jde0utCYcIwd0A2OlM |
+| 6741268208341199572553870443620307584 | XYZ3017BBR4DAFJWfM6D4Gb4lN_T5jk_f7rdEcqNs9wfnA7h70 |
+| 8915902479676034373311170764602676593 | XYZ3017PryPID8tzfhkEE-gE034LI-53Jde0utCYcIwd0A2OlM |
 | 66552757407517449462805881945288602094 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M |
-| 66184778222667870903738139438735041506 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw |
+| 6618477822667870903738139438735041506 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw |
 
-第1步： ID同步过程将从12345 [!DNL DPUUID]开始 [!DNL DPID] 与左 [!DNL Audience Manager] 列中的 [!DNL UUID]s同步。 请注意， [!DNL DPID] 文件名中的“0”表示 [!DNL Audience Manager][!DNL UUID]s。
+第1步：ID同步过程将从[!DNL DPID] 12345同步的[!DNL DPUUID]s与左列中的[!DNL Audience Manager] [!DNL UUID]s同步。 请注意，文件名中的[!DNL DPID] &quot;0&quot;表示[!DNL Audience Manager] [!DNL UUID]。
 <br/>
 
 **文件2** ( [下载示例文件](assets/adobe_id_12345_67890_1477846458.sync))
 
-| [!DNL DPID] 12345 | [!DNL DPID] 67890 |
+| [!DNL DPID] 12345 | [!DNL DPID] 小行星67890 |
 |---|---|
 | XYZ3017D_2kzkTOXkFYIAgwbajoqWRcqkXl-TTrj6E4njaMR38 | 4598060374 |
 | XYZ3017BBR4DAFJWfM6D4Gb4lN_T5jk_f7rdEcqNs9wfnA7h70 | 4581274262 |
@@ -135,16 +135,16 @@ ID同步文件的目的是将您自己的 [数据源](../../../reference/ids-in-
 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M | 2351382994 |
 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw | 4601584763 |
 
-第2步： 来 [!DNL DPUUID]自12345 [!DNL DPID] 的s在步骤1中与Audience Manager同 [!DNL UUID]步。 此ID同步的功能是将67890 [!DNL DPUUID]中的 [!DNL DPID] Audience Manager与步骤1 [!DNL UUID]中的同步。
+第2步：来自[!DNL DPID] 12345的[!DNL DPUUID]s在步骤1中与Audience Manager[!DNL UUID]s同步。此ID同步的功能是将[!DNL DPID] 67890中的[!DNL DPUUID]与步骤1中的Audience Manager[!DNL UUID]同步。
 
 <br/>
 
-## 其他格式要求 {#other-format-reqs}
+## 其他格式要求{#other-format-reqs}
 
 用户ID不能：
 
 * 在ID本身中包含选项卡。 选项卡仅用于在数据文件中分隔单个ID。
 * 包含个人可识别信息([!UICONTROL PII])。
-* 使用 [!DNL URL] 编码。 仅传递未编码的ID。
+* 使用[!DNL URL]编码。 仅传递未编码的ID。
 
 任何以制表符或空格结尾的行都不会得到处理或实现。 通常，确保行末保持清晰。
