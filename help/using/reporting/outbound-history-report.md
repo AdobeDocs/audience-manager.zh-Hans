@@ -29,8 +29,8 @@ t_reports_outbound_history.xml
 
    ![步骤结果](assets/outbound_history.png)
 
-1. 在框中， **[!UICONTROL Search for a Destination]** 开始键入内容并选择所需的目标。
-1. 在框 **[!UICONTROL Select a Date Range]** 中，指定报表的开始和结束日期，然后单击 **[!UICONTROL Apply Date Filter]**。
+1. 在&#x200B;**[!UICONTROL Search for a Destination]**&#x200B;框中，开始键入并选择所需的目标。
+1. 在&#x200B;**[!UICONTROL Select a Date Range]**&#x200B;框中，指定报表的开始和结束日期，然后单击&#x200B;**[!UICONTROL Apply Date Filter]**。
 
    ![步骤结果](assets/outbound_history_stats.png)
 
@@ -46,11 +46,11 @@ t_reports_outbound_history.xml
  <tbody> 
   <tr> 
    <td colname="col1"> 数据同步文件名 </td> 
-   <td colname="col2"> <p>列表Adobe为此目标 <span class="keyword"> 生成</span> 、并一起处理的所有出站文件。 </p> </td> 
+   <td colname="col2"> <p>为此目标生成的<span class="keyword">Adobe</span>的所有出站文件的列表，这些文件一起处理。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 成功 </td> 
-   <td colname="col2"> <p>成功从Audience Manager发送到目 <span class="keyword"> 标</span> 的记录数。 </p> </td> 
+   <td colname="col2"> <p>成功从<span class="keyword">Audience Manager</span>发送到目标的记录数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 失败 </td> 
@@ -58,7 +58,7 @@ t_reports_outbound_history.xml
   </tr> 
   <tr> 
    <td colname="col1"> 已接收记录 </td> 
-   <td colname="col2"> <p>Adobe在文件 <span class="keyword"> 中生成</span> 并尝试发送到目标的记录总数。 在大多数情况下，这应该是成功文件和失败文件的总数。 </p> </td> 
+   <td colname="col2"> <p>文件中生成并尝试发送到目标的记录<span class="keyword">Adobe</span>的总数。 在大多数情况下，这应该是成功文件和失败文件的总数。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
