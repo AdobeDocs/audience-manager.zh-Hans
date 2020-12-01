@@ -57,7 +57,7 @@ Some partners, as listed in the table below, have changed their integration requ
  </tbody> 
 </table> -->
 
-## Audience Manager User Interface Update - Yahoo/Oath/DataX Integration {#ui-update}
+## Audience Manager用户界面更新- Yahoo/Aoth/DataX集成{#ui-update}
 
 除了上述 IAB 框架更新之外，Yahoo/Oath/DataX 还向其分类和受众 API 中添加了两个新参数，即 **gdpr** 和 **gdpr_mode**。这两个参数可告知 Yahoo/Oath/DataX 他们有权作为数据处理者或数据控制者处理特定区段。因此，Audience Manager 客户在将区段发送到 Yahoo/Oath/DataX 目标时，必须根据其与 Oath 的协议指定相应的参数（处理者或控制者）。
 
