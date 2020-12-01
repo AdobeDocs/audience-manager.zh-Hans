@@ -21,25 +21,25 @@ ht-degree: 4%
 
 ## 用例 {#use-cases}
 
-通过报 [!UICONTROL Unique User Reach] 告，您可以识别个人信息中吸引大量独特用户的资产。
+通过[!UICONTROL Unique User Reach]报告，您可以识别个人信息中吸引大量独特用户的属性。
 
-## 使用唯一访问报告 {#using-the-report}
+## 使用唯一访问报告{#using-the-report}
 
-使用 **[!UICONTROL Dimension Value]** 该框选择要在报告中显示的广告单位。 单击 **[!UICONTROL All]** 以在气泡图中显示所有属性。
+使用&#x200B;**[!UICONTROL Dimension Value]**&#x200B;框选择要在报告中显示的广告单位。 单击&#x200B;**[!UICONTROL All]**&#x200B;以显示气泡图中的所有属性。
 
-使用“ **日期范围** ” **和“通** 过日期”控件调整回顾范围。
+使用&#x200B;**日范围**&#x200B;和&#x200B;**日期至**&#x200B;控件调整回顾范围。
 
-## 解释结果 {#interpreting-results}
+## 解释结果{#interpreting-results}
 
 **示例报告**
 
-您 [!UICONTROL Unique User Reach] 的报告可能与下面的报告类似。 在报表中，单击气泡以视图基础数据。 请参阅下表中的其他信息说明。
+您的[!UICONTROL Unique User Reach]报告可能与下面的报告类似。 在报表中，单击气泡以视图基础数据。 请参阅下表中的其他信息说明。
 
 ![](assets/publisher_unique_user_reach.png)
 
 | 项目 | 描述 |
 |--- |--- |
-| 维值 | Web属性的名称。 |
+| Dimension值 | Web属性的名称。 |
 | 维度类型 | 发布者维的类型。 我们目前仅支持广告单元作为维度类型。 |
 | 展示次数 | 在指定的回顾范围内为您的Web属性提供的展示次数。 |
 | 独特触及范围 | 通过您的Web属性上的展示次数访问的唯一用户数。 |
