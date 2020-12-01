@@ -17,27 +17,27 @@ ht-degree: 3%
 
 # 广告单元重叠{#ad-unit-overlap}
 
-报 **[!UICONTROL Ad Unit Overlap]** 告将以热度图形显示，突出显示广告单元之间的高重叠和低重叠。
+**[!UICONTROL Ad Unit Overlap]**&#x200B;报告以热度图的形式显示，突出显示广告单元之间的高重叠和低重叠。
 
 ## 用例 {#use-cases}
 
-通过报 **[!UICONTROL Ad Unit Overlap]** 告，您可以深入了解受众在Web属性中的重叠位置。 该报告考虑您的100个顶级相关属性，并显示它们之间的重叠。
+通过&#x200B;**[!UICONTROL Ad Unit Overlap]**&#x200B;报告，您可以深入了解受众在Web属性中的重叠位置。 该报告考虑您的100个顶级相关属性，并显示它们之间的重叠。
 
-## 使用广告单位重叠报表 {#using-the-report}
+## 使用广告设备重叠报告{#using-the-report}
 
-使用和 **[!UICONTROL Top N Base Ad Units]** 控 **[!UICONTROL Top N Overlapping Ad Units]** 件为重叠选择所需数量的广告单位。 每个项目最多可选择100个项目。
+使用&#x200B;**[!UICONTROL Top N Base Ad Units]**&#x200B;和&#x200B;**[!UICONTROL Top N Overlapping Ad Units]**&#x200B;控件为重叠选择所需的广告单位数。 每个项目最多可选择100个项目。
 
-使用“ **日期范围** ” **和“通** 过日期”控件调整回顾范围。 请注意，7天和30天回顾期仅适用于星期日日期。
+使用&#x200B;**日范围**&#x200B;和&#x200B;**日期至**&#x200B;控件调整回顾范围。 请注意，7天和30天回顾期仅适用于星期日日期。
 
-使用 **[!UICONTROL Base Ad Unit]** 和控 **[!UICONTROL Overlap Ad Unit]** 件选择要在重叠报告中显示的广告单元。
+使用&#x200B;**[!UICONTROL Base Ad Unit]**&#x200B;和&#x200B;**[!UICONTROL Overlap Ad Unit]**&#x200B;控件选择要在重叠报告中显示的广告单元。
 
 >[!IMPORTANT]
 >
->启用时， [!UICONTROL Audience Optimization for Publishers]必须包含描述性元数据， [!UICONTROL Ad Unit IDs]如将Google Ad Manager( [以前称为DFP)数据文件导入Audience Manager的步骤3中所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 通过执行此操作，您可以确保报告将Web属性详细 [!UICONTROL Ad Unit] 化为而非 [!UICONTROL Ad Unit ID]。
+>启用[!UICONTROL Audience Optimization for Publishers]时，必须包含[!UICONTROL Ad Unit IDs]的描述性元数据，如[将Google Ad Manager（以前称为DFP）数据文件导入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步骤3中所述。 通过执行此操作，您可以确保报告将web属性详细描述为[!UICONTROL Ad Unit]而不是[!UICONTROL Ad Unit ID]。
 
-## 解释结果 {#interpreting-results}
+## 解释结果{#interpreting-results}
 
-您 [!UICONTROL Ad Unit Overlap] 的报告可能与下面的报告类似。 将鼠标悬停在任何单元格上可获得有关该特定重叠的详细信息。 有关其他信息，请参阅示例报告下表中的说明。
+您的[!UICONTROL Ad Unit Overlap]报告可能与下面的报告类似。 将鼠标悬停在任何单元格上可获得有关该特定重叠的详细信息。 有关其他信息，请参阅示例报告下表中的说明。
 
 ![](assets/publisher_ad_unit_overlap.png)
 
@@ -67,11 +67,11 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 重叠唯一值计数</span> </p> </td> 
-   <td colname="col2"> <p>访问过基本广告单元和重叠广 <span class="wintitle"> 告单元的用户</span><span class="wintitle"> 之间的重叠</span>。 </p> </td> 
+   <td colname="col2"> <p>访问过<span class="wintitle">基本广告单元</span>和<span class="wintitle">重叠广告单元</span>的用户之间的重叠。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 重叠百分比</span> </p> </td> 
-   <td colname="col2"> <p>访问过基本广告单元和重叠广 <span class="wintitle"> 告单元的用户</span><span class="wintitle"> 之间的重叠</span>。 这是重叠 <span class="wintitle"> 唯一值计数</span>，以基本广告单位的百 <span class="wintitle"> 分比表示</span>。 </p> </td> 
+   <td colname="col2"> <p>访问过<span class="wintitle">基本广告单元</span>和<span class="wintitle">重叠广告单元</span>的用户之间的重叠。 这是<span class="wintitle">重叠唯一值计数</span>，表示为<span class="wintitle">基本广告单元</span>的百分比。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
