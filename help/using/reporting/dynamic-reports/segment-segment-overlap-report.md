@@ -21,7 +21,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->Audience Manager中的重叠报表遵循RBAC原则。 您只能根据您所属的RBAC用户组来查看您 [有权访问的](/help/using/features/administration/administration-overview.md) 数据源中的段。
+>Audience Manager中的重叠报表遵循RBAC原则。 您只能根据您所属的[RBAC用户组](/help/using/features/administration/administration-overview.md)访问的数据源中的段。
 
 <!-- 
 
@@ -31,18 +31,18 @@ c_segment_segment_overlap.xml
 
 ## 概述
 
-该报 [!UICONTROL Segment-to-Segment Overlap] 告可以帮助您：
+[!UICONTROL Segment-to-Segment Overlap]报告可帮助您：
 
 * 根据您的需求确定重叠程度高或低的细分。 重叠度高的特征为您提供目标受众，但独特访客更少。 重叠度低的特征有助于达到更大、唯一的访客集。
 * 发现意外的重叠，并使用该信息构建新的高性能细分。
 
 ## 示例报告
 
-下图提供了报告的高级概 [!UICONTROL Segment-to-Segment Overlap] 述。
+下图提供了[!UICONTROL Segment-to-Segment Overlap]报告的高级概述。
 
 >[!NOTE]
 >
->当报 [!UICONTROL Segment-to-Segment Overlap] 表将同一区段与其自身进行比较时，该报表返回一个空字段。
+>当[!UICONTROL Segment-to-Segment Overlap]报告将同一段与自身进行比较时，它返回一个空字段。
 
 ![](assets/segment-to-segment-overlap.png)
 
@@ -50,7 +50,7 @@ c_segment_segment_overlap.xml
 
 在弹出窗口中选择单个点以视图数据详细信息。 单击操作会自动更新报告中显示的数据。
 
-## 段到段重叠数据弹出字段已定义 {#fields-defined}
+## 段到段重叠数据弹出字段已定义{#fields-defined}
 
 <!-- 
 
@@ -58,7 +58,7 @@ r_s2s_data_pop.xml
 
  -->
 
-报告的弹出 [!UICONTROL Segment-to-Segment Overlap] 窗口包含以下指标。 请注意，表中的唯一度量表示 *您的实时用户*。
+[!UICONTROL Segment-to-Segment Overlap]报告的弹出窗口包含以下度量。 请注意，表中的唯一度量表示您的&#x200B;*实时用户*。
 
 | 量度 | 描述 |
 |---|---|
@@ -69,7 +69,7 @@ r_s2s_data_pop.xml
 | **[!UICONTROL Base Segment Uniques]** | 基本区段中的唯一访客数。 |
 | **[!UICONTROL Base Segment Uniques]** | 重叠区段中的唯一访客数。 |
 | **[!UICONTROL Overlapping Uniques]** | 在比较的区段之间共享的唯一访客数。 |
-| **[!UICONTROL Overlap %]** | 要获得重叠%,Audience Manager使用以下公式： 重叠单值/（基段单值+重叠段单值——重叠单值） |
+| **[!UICONTROL Overlap %]** | 要获得重叠%,Audience Manager使用以下公式：重叠单值/（基段单值+重叠段单值——重叠单值） |
 
 
 
