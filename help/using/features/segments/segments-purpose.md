@@ -17,11 +17,11 @@ ht-degree: 6%
 
 # 区段：目的、构成和规则 {#segments-purpose-composition-and-rules}
 
-描述 [!UICONTROL segments]其组成部分以及规则创建 [!UICONTROL Segment Builder]。
+描述[!UICONTROL segments]、其组成部分以及使用[!UICONTROL Segment Builder]创建规则。
 
-## 用途 [!UICONTROL Segments]
+## [!UICONTROL Segments]的用途
 
-A *`segment`* (or an *`audience`*) is a set of users who share common attributes. 在Audience Manager中，您使 [!UICONTROL segments] 用服务器端规则进行创建。 通过这些规则，您可以根据站点受众属性(如：
+*`segment`*（或&#x200B;*`audience`*）是一组共享通用属性的用户。 在Audience Manager中，使用服务器端规则创建[!UICONTROL segments]。 通过这些规则，您可以根据站点受众属性(如：
 
 * 行为;
 * 人口（年龄、性别、收入等）;
@@ -29,27 +29,27 @@ A *`segment`* (or an *`audience`*) is a set of users who share common attributes
 
 ## [!UICONTROL Segment] 组合物
 
-Audience Manager [!UICONTROL segment] 是由个人或特征组组成的服务器端规则。 特征由称为键值对的数据元素组成。 除了您在级别设置的规 [!UICONTROL segment] 则外，这些键值对还包含符合特征和成员资格访客条件的 [!UICONTROL segment] 条件。
+Audience Manager[!UICONTROL segment]是服务器端规则，由个人或特征组组成。 特征由称为键值对的数据元素组成。 除了您在[!UICONTROL segment]级别设置的规则外，这些键值对还包含符合特征访客和[!UICONTROL segment]成员资格条件的条件。
 
-## 关于映射的 [!UICONTROL Adobe Analytics] 注 [!UICONTROL Segment] 意事项
+## 关于[!UICONTROL Adobe Analytics] [!UICONTROL Segment]映射的注意事项
 
-将AdobeAnalytics或报 [!UICONTROL segments] 表包映射到您的Experience Cloud组织时，Audience Manager会自动创建新的、相应的只读 [!UICONTROL segments] 和特征。 您无法编辑或更改这些存储的位 [!UICONTROL segments] 置(从Audience Manager)。 但是，您对映射的AdobeAnalytics或报表包执行的 [!UICONTROL segments] 任何更改都反映在Audience Manager中。
+当将Adobe Analytics[!UICONTROL segments]或报表包映射到您的Experience Cloud组织时，Audience Manager会自动创建新的、相应的只读[!UICONTROL segments]和特征。 不能编辑或更改这些[!UICONTROL segments]的存储位置，而不能从Audience Manager。 但是，您对映射的Adobe Analytics[!UICONTROL segments]或报表包执行的任何更改都反映在Audience Manager中。
 
 >[!TIP]
 >
->Audience Manager [!UICONTROL segments] 与其他 [!DNL Adobe Analytics][!UICONTROL segments]不同。 Read [Understanding Segments in Analytics and Audience Manager](https://docs.adobe.com/content/help/zh-Hans/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) for an in-depth description of the differences.
+>Audience Manager[!UICONTROL segments]与[!DNL Adobe Analytics] [!UICONTROL segments]不同。 请阅读[了解分析和Audience Manager中的细分](https://docs.adobe.com/content/help/zh-Hans/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)，详细了解差异。
 
-## 创建基于规则的 [!UICONTROL Segments] [!UICONTROL Segment Builder]
+## 使用[!UICONTROL Segment Builder]创建基于规则的[!UICONTROL Segments]
 
-与传统的响应简单“是／否”条件而触发的像素不同，您 [!UICONTROL Segment Builder] 可以创建复杂的 [!UICONTROL segment] 要求。 例如， [!UICONTROL traits]使用 [!UICONTROL segments] 表达式( [!DNL Boolean] 、[!DNL AND]、)、比较 [!DNL OR][!DNL NOT]运算符（大于、小于、等于等）和最近使用频率标准来评估数据。 这些功能有助于创建与您的 [!UICONTROL segments] 业务需求相关的有重点的受众。
+与响应简单“是／否”条件而触发的传统像素不同，[!UICONTROL Segment Builder]允许您创建复杂的[!UICONTROL segment]要求。 与[!UICONTROL traits]类似，[!UICONTROL segments]使用[!DNL Boolean]表达式([!DNL AND]、[!DNL OR]、[!DNL NOT])、比较运算符（大于、小于、等于等于等）和最近／频率标准来评估数据。 这些功能有助于创建与您的业务需求相关的重点受众[!UICONTROL segments]。
 
 ## 优点
 
 [!UICONTROL Segments] 改进基于标准像素的受众创建／分段流程，因为它们允许您：
 
-* 利用第一方 [!UICONTROL segments] 和第三方特征构建相关、有用的内容。
+* 使用第一方和第三方特征构建相关、有用的[!UICONTROL segments]。
 * 使用布尔运算符、比较表达式和最近使用频率标准创建复杂的细分规则。
-* 将数 [!UICONTROL segment] 据发送到目标合作伙伴。
+* 将[!UICONTROL segment]数据发送到目标合作伙伴。
 * 使用Audience Manager报告监视性能。
 
 >[!MORELIKETHIS]
