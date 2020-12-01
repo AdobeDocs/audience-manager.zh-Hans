@@ -27,7 +27,7 @@ faq_reports.xml
 
  -->
 
-**对于新载入的特征，为何[!UICONTROL Trait Graph]显示的数量有时低于预期值或为 0？**
+**对于新载入的特征，为何 [!UICONTROL Trait Graph] 显示的数量有时低于预期值或为 0？**
 
 有时，上传特征后，[!UICONTROL Trait Graph] 不会显示任何结果或显示的数量低于预期值。当我们收到的数据量太大，以至于入站处理作业要到当天的报告截止时间之后才能摄取完此信息时，会发生这种情况。
 
@@ -35,7 +35,7 @@ faq_reports.xml
 
 <br> 
 
-**[!UICONTROL Overlap]报表中缺少某些区段。这些区段在何处？**
+**[!UICONTROL Overlap] 报表中缺少某些区段。这些区段在何处？**
 
 为了帮助减少计算需求，这些报表会在结果中忽略统计上没有显著意义的数据。所以，您的区段并不是缺失，而是被丢弃，因为它们不会产生有意义的结果，或可定位的有用用户池。另请参阅：
 
@@ -101,12 +101,12 @@ faq_reports.xml
 
 <br> 
 
-**对于已载入的特征，[!UICONTROL Total Trait Realizations]为何总是 0？**
+**对于已载入的特征，[!UICONTROL Total Trait Realizations] 为何总是 0？**
 
 [!UICONTROL Total Trait Realizations] 与页面加载次数相对应。[!UICONTROL Total Trait Realizations] 提供特定特征实时触发的次数。此数值的计算范围仅限于基于规则的特征。对于已载入的特征，[!UICONTROL Total Trait Realizations] 始终显示为 0。
 
 <br> 
 
-**我创建了一个特征，但[!UICONTROL Trait Graph]显示的[!UICONTROL Unique Trait Realizations]数大于[!UICONTROL Total Trait Population]。这种情况正常吗？**
+**我创建了一个特征，但 [!UICONTROL Trait Graph] 显示的 [!UICONTROL Unique Trait Realizations] 数大于 [!UICONTROL Total Trait Population]。这种情况正常吗？**
 
 您之所以会看到这种情况，是因为 [!UICONTROL Unique Trait Realizations] 属于实时量度，而为计算 [!UICONTROL Total Trait Population] 而执行的报告作业并不是实时的。因此，[!UICONTROL Total Trait Population] 应该会有几天大于 [!UICONTROL Unique Trait Realizations]。
