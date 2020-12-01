@@ -17,18 +17,18 @@ ht-degree: 59%
 
 # DCS 事件调用 API {#dcs-event-call-apis}
 
-Event calls send information to the [!DNL DCS] in a [!DNL URL] string. In a typical Audience Manager deployment, customers use our [!DNL JavaScript] data collection code ([!UICONTROL DIL]) to send data to the [!DNL DCS]. However, sometimes customers cannot put our [!DNL JavaScript] code on their pages. If company policies or other technical issues prevent you from placing our [!DNL JavaScript] code on your pages, you can still work with Audience Manager to send and return data from [!DNL DCS] with these event call [!DNL API]s.
+事件调用将信息发送到[!DNL URL]字符串中的[!DNL DCS]。 在典型的Audience Manager部署中，客户使用我们的[!DNL JavaScript]数据收集代码([!UICONTROL DIL])将数据发送到[!DNL DCS]。 但是，有时客户无法将我们的[!DNL JavaScript]代码放到其页面上。 如果公司策略或其他技术问题阻止您将[!DNL JavaScript]代码放在您的页面上，您仍可以与Audience Manager一起使用这些事件调用[!DNL API]来发送和返回[!DNL DCS]的数据。
 
 ## 快速入门 {#dcs-getting-started}
 
 本节包含向您展示如何进行以下操作的信息和相关参考资料：
 
-* 拨打 [!DNL DCS]。
-* Receive data from the [!DNL DCS].
+* 调用[!DNL DCS]。
+* 从[!DNL DCS]接收数据。
 * 设置调用中的数据元素格式。
-* 了解返回的参数 [!DNL DCS]。
+* 了解[!DNL DCS]返回的参数。
 
-要开始，请参阅以下部分。 开始 [将数据发送到DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)。 之后，继续从DCS [接收数据](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)。
+要开始，请参阅以下部分。 具有[将数据发送到DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)的开始。 之后，转到[从DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)接收数据。
 
 * [将数据发送到 DCS](dcs-url-send.md)
 * [从 DCS 接收数据](dcs-url-receive.md)
