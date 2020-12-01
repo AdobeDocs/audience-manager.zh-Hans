@@ -22,11 +22,11 @@ ht-degree: 6%
 
 <!-- t_edit_account_settings.xml -->
 
-管理员用户可以创建用户并将其添加到用户组以获得权限，如创 [建用户](../../features/administration/administration-overview.md#create-users)[和创建用户组中所述](../../features/administration/administration-overview.md#create-group)。
+管理员用户可以创建用户并将其添加到用户组以用于权限目的，如[创建用户](../../features/administration/administration-overview.md#create-users)和[创建用户组](../../features/administration/administration-overview.md#create-group)中所述。
 
-1. 在Audience Manager标题中，单击 ![](assets/icon_profile.png)。
-1. 单 **[!UICONTROL Account Settings]**&#x200B;击，然 **[!UICONTROL Edit]** 后单击以显示 [!UICONTROL My Account] 页面。
-1. 在字段 **[!UICONTROL Email Address]** 中，根据需要指定您的新电子邮件地址。 Audience Manager不会向用户定期发送通知。 Audience Manager管理员有权访问用户的电子邮件地址，并可以根据需要手动向用户发送电子邮件。 例如，如果用户忘记了口令，则此字段中指定的电子邮件地址将用于发送临时口令和重置口令的说明。
+1. 在Audience Manager标题中，单击![](assets/icon_profile.png)。
+1. 单击&#x200B;**[!UICONTROL Account Settings]**，然后单击&#x200B;**[!UICONTROL Edit]**&#x200B;以显示[!UICONTROL My Account]页面。
+1. 在&#x200B;**[!UICONTROL Email Address]**&#x200B;字段中，根据需要指定新的电子邮件地址。 Audience Manager不会向用户定期发送通知。 Audience Manager管理员有权访问用户的电子邮件地址，并可以根据需要手动向用户发送电子邮件。 例如，如果用户忘记了口令，则此字段中指定的电子邮件地址将用于发送临时口令和重置口令的说明。
 1. 要重置密码，请指定当前密码，指定新密码，然后确认新密码。
-See also, [Password Requirements, Locked Accounts, and Forgotten Passwords](../../reference/password-requirements.md).
+另请参阅[密码要求、锁定帐户和忘记密码](../../reference/password-requirements.md)。
 1. 单击 **[!UICONTROL Save]**.
