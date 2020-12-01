@@ -24,13 +24,13 @@ c_compintro.xml
 
  -->
 
-本指南提供主要电源组件的基本概述 [!DNL Audience Manager]。 它是为：
+本指南提供[!DNL Audience Manager]电源的主要组件的基本概述。 它是为：
 
 * 非技术和技术读者。
-* 当前 [!DNL Audience Manager] 客户对它的工作方式感到好奇。
-* 需要 [!DNL Audience Manager] 将此系统作为尽职调查或征求建议书流程的一部分进行评估的潜在客户。
+* 当前[!DNL Audience Manager]客户对它的工作方式感到好奇。
+* 需要将此系统作为尽职调查或建议书流程的一部分进行评估的潜在[!DNL Audience Manager]客户。
 
-本指南尝试在一般描述和深入探讨之间取得平衡。 但是，有些东西是专有的，所以我们不会去那里。 毕竟，除了蛋黄酱和番茄酱，还有更多特别的酱汁。 我们得把腌黄瓜保密。 如有任何问题，您可 [!DNL Audience Manager] 以咨询顾问。
+本指南尝试在一般描述和深入探讨之间取得平衡。 但是，有些东西是专有的，所以我们不会去那里。 毕竟，除了蛋黄酱和番茄酱，还有更多特别的酱汁。 我们得把腌黄瓜保密。 如果您有任何问题，可以咨询[!DNL Audience Manager]顾问。
 
 * [Audience Manager系统中的关键组件](/help/using/reference/system-components/components-stack.md)
 * [数据操作组件](/help/using/reference/system-components/components-data-action.md)
