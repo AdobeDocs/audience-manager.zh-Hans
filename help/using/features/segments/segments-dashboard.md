@@ -17,11 +17,11 @@ ht-degree: 9%
 
 # 区段列表视图 {#segments-list-view}
 
-区 [段仪表板](https://bank.demdex.com/portal/Segments/SegmentBuilder.ddx#list) 是用于管理受众区段的集中工作区。 您可以通过导 [!UICONTROL Segments] 航到>来查看 **[!UICONTROL Audience Data]** 仪表板 **[!UICONTROL Segments]**。
+[区段仪表板](https://bank.demdex.com/portal/Segments/SegmentBuilder.ddx#list)是用于管理受众区段的集中工作区。 您可以导航到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**，看到[!UICONTROL Segments]仪表板。
 
 ![细分仪表板](assets/segments-dashboard.png)
 
-该页 [!UICONTROL Segments] 面包含有助于您：
+[!UICONTROL Segments]页面包含有助于您：
 
 * 创建新细分；
 * 编辑和删除区段；
