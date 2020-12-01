@@ -17,13 +17,13 @@ ht-degree: 6%
 
 # Audience Manager API 代码迁移 {#audience-manager-api-code-migration}
 
-在Audience Manager，我们是工程师，开发者，和你一样的忍者。 与您一样，我们希望使用可靠、准确的 [!DNL API] 文档。 因此，我们将内容重写并移 [!DNL API] 动到 [!DNL Swagger] 新的位置。 这些更改旨在帮助改善您使用Audience Manager代码的 [!DNL API] 体验。
+在Audience Manager，我们是工程师，开发者，和你一样的忍者。 与您一样，我们希望使用可靠、准确的[!DNL API]文档。 因此，我们将[!DNL API]内容重写到[!DNL Swagger]中，并将其移至新位置。 这些更改旨在帮助您改善使用Audience Manager[!DNL API]代码的体验。
 
 ## Movin&#39; On Up {#code-migration-details}
 
 <!-- api-swagger-migration.xml -->
 
-Adobe Audience Manager [API文档](https://bank.demdex.com/portal/swagger/index.html) (Docs)站点是我们修订内容的新 [!DNL API] 主页。 我们将尝试在每个版本中重写和移动几 [!DNL API] 套方法。 这意味着您必须同时登记新位置和REST API [文档](../api/rest-api-main/rest-api-main.md) ，才能找到所有可用的方法。 最终，所有公众 [!DNL API]都将在文档 [!DNL Audience Manager] 站点 [!DNL API] 上。 下表列表了修订和迁移 [!DNL API]的。
+[Adobe Audience ManagerAPI Docs](https://bank.demdex.com/portal/swagger/index.html)站点是我们修订的[!DNL API]内容的新主页。 我们将尝试重写并在每个版本中移动几组[!DNL API]方法。 这意味着您必须同时检查新位置和[REST API](../api/rest-api-main/rest-api-main.md)文档才能找到所有可用的方法。 最终，所有公共[!DNL API]s都将位于[!DNL Audience Manager] [!DNL API]文档站点上。 下表列表了已修订和迁移的[!DNL API]。
 
 <!--
 
