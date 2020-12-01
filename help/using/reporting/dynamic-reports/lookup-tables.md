@@ -27,11 +27,11 @@ c_lookup_tables.xml
 
 ## 日志文件元数据增加了文件大小和处理时间
 
-报表使用的典型日 [!UICONTROL Delivery Performance] 志文件通常包含数千行和几十列。 它由数字ID和可读信息组成，如创意人员姓名、广告商、插入订单等。
+[!UICONTROL Delivery Performance]报表使用的典型日志文件通常包含数千行和几十列。 它由数字ID和可读信息组成，如创意人员姓名、广告商、插入订单等。
 
-此非ID信息称为( *`metadata`* 即有关其他信息的信息)，并写入日志文件的每一行。
+此非ID信息称为&#x200B;*`metadata`*（即有关其他信息的信息），并写入日志文件的每一行。
 
-但是，报 [!UICONTROL Delivery Performance] 告主要与日志文件中的ID一起使用。 元数据有用，但重复性很高。 它增加了文件大小和数据获取时间。
+但是，[!UICONTROL Delivery Performance]报告主要与日志文件中的ID一起使用。 元数据有用，但重复性很高。 它增加了文件大小和数据获取时间。
 
 ## 使用索引表减小文件大小并缩短处理时间
 
