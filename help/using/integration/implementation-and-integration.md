@@ -16,7 +16,7 @@ ht-degree: 81%
 
 # 实施和集成概述
 
-Work with data from [!DNL Experience Cloud] solutions or other external systems in [!DNL Audience Manager].
+使用[!DNL Audience Manager]中[!DNL Experience Cloud]解决方案或其他外部系统的数据。
 
 * [数据集成方法](data-integration-methods.md)
 * [实施 Audience Manager](implement-audience-manager.md)
