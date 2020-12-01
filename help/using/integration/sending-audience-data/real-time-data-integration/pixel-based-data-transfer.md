@@ -24,18 +24,18 @@ ht-degree: 4%
 要启用入站数据传输，供应商和客户端将：
 
 1. 确定您希望供应商或合作伙伴触发哪些特征。
-1. 获取特征的像素。 在特征列表屏幕中，将指针悬停 **[!UICONTROL Actions]** 在列上，然 **[!UICONTROL Get trait URL]** 后单击所需特征的符号。
-1. 向供应 [!DNL URL] 商或合作伙伴提供。
+1. 获取特征的像素。 在特征列表屏幕中，将指针悬停在&#x200B;**[!UICONTROL Actions]**&#x200B;列上，然后单击所需特征的&#x200B;**[!UICONTROL Get trait URL]**&#x200B;符号。
+1. 向供应商或合作伙伴提供[!DNL URL]。
 
 ## 示例
 
-此基本事件调用将特征ID 1234发送到 [!DNL Audience Manager]。
+此基本事件调用将特征ID 1234发送到[!DNL Audience Manager]。
 
 ```
 https://something.demdex.net/event?d_sid=1234
 ```
 
-您可以在事件调用中序列化特征ID，以帮助 `HTTP` 减少页面流量。 在URL字符串中附加其他特征ID，如下例所示：
+您可以在事件调用中序列化特征ID，以帮助减少页面的`HTTP`流量。 在URL字符串中附加其他特征ID，如下例所示：
 
 ```
 https://something.demdex.net/event?d_sid=1234,5678,9876,5432
