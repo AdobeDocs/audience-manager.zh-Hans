@@ -19,9 +19,9 @@ ht-degree: 7%
 
 对用于某些报告的采样方法、采样错误率和基于采样数据返回信息的报告列表的摘要。
 
-## 数据采样率 {#data-sampling-ratio}
+## 数据采样率{#data-sampling-ratio}
 
-某 [!DNL Audience Manager] 些报告根据可用数据总量的抽样集显示结果。 采样数据率为1:54。 对于使用采样数据的报表，这意味着您的结果基于每54条记录中的1条记录。
+某些[!DNL Audience Manager]报告根据可用数据总量的抽样集显示结果。 采样数据率为1:54。 对于使用采样数据的报表，这意味着您的结果基于每54条记录中的1条记录。
 
 这些报告使用统计抽样数据，因为它们需要大量计算能力才能生成结果。 采样有助于在减少的计算需求、保持系统性能和提供准确结果之间取得平衡。
 
@@ -40,27 +40,27 @@ Overlap reports ([trait-to-trait](/help/using/reporting/dynamic-reports/trait-tr
 
 -->
 
-## 错误率 {#error-rates}
+## 错误率{#error-rates}
 
 生成重叠数据的报表中可能出现错误。 错误定义为记录的百分比：
 
 * 本不应包含在报告中，但仍应添加。
 * 本应被列入报告，但被遗漏了。
 
-必须注意的是，我们的测试和模型显示错误率 *与* 数据集中记录数成反比减少。 具有大量记录的数据集生成的错误比具有少量记录的数据集少。 让我们用更定量的方式来看看这一论断。 如下表所示，对于一组记录，95%的报告结果将低于特定错误率。
+请务必注意，我们的测试和模型显示错误率&#x200B;*以与数据集中记录数反比的比例减少*。 具有大量记录的数据集生成的错误比具有少量记录的数据集少。 让我们用更定量的方式来看看这一论断。 如下表所示，对于一组记录，95%的报告结果将低于特定错误率。
 
 | 记录数 | 错误率 |
 |--- |--- |
 | 500 - 1,000 | 95%的错误率低于42%。 |
 | 1,000 - 1,500 | 95%的错误率低于34%。 |
-| 10,000 - 50,000 | 95%的错误率低于14%。 |
+| 1~5万 | 95%的错误率低于14%。 |
 | 50,000 | 95%的错误率低于6%。 |
-| 100,000 | 95%的错误率低于4%。 |
+| 十万 | 95%的错误率低于4%。 |
 | 500,000（或更多） | 95%的错误率低于2%。 |
 
-## 使用Minhash采样方法 {#minhash}
+## 使用Minhash采样方法{#minhash}
 
-基于Minhash [采样方法](https://en.wikipedia.org/wiki/MinHash) ,Audience Manager在单置换散列数据草图上，采用一种新的方法计算特征和分段估计。 该方法比标准Jaccard相似度估计器产生的方差要小。 有关使用此方法的报告，请参阅以下部分。
+基于[Minhash](https://en.wikipedia.org/wiki/MinHash)采样方法，Audience Manager在一个置换散列数据草图上使用一种新的方法来计算特征和段估计。 该方法比标准Jaccard相似度估计器产生的方差要小。 有关使用此方法的报告，请参阅以下部分。
 
 <!--
 
@@ -70,9 +70,9 @@ Some Audience Manager reports use the minhash sampling methodology to compute tr
 
 -->
 
-## 使用采样数据的报告 {#reports-using-sampled-data}
+## 使用采样数据{#reports-using-sampled-data}的报告
 
-使用 [!DNL Audience Manager] 统计采样数据和Minhash采样方法的报告包括：
+[!DNL Audience Manager]报告使用统计采样数据和Minhash采样方法包括：
 
 <!--
 
@@ -87,6 +87,6 @@ Reports that use Minhash sampling methodology:
 
 | 统计抽样 | Minhash采样方法 |
 |--- |--- |
-| [可寻址受众](../features/addressable-audiences.md) （客户级和细分级数据）。 | [重叠报告](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) （特征到特征、区段到特征和区段到区段） |
-| 的 [设备总](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) 数指标 [!UICONTROL Profile Merge Rule]。 | [特征推荐](/help/using/features/segments/trait-recommendations.md) |
-| [Data Explorer](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md) 使用选项卡中的 [!UICONTROL Search] 采样数据以及 [!UICONTROL Saved Searches] | [Audience MarketplaceRecommendations](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |
+| [可寻](../features/addressable-audiences.md) 址受众数据（客户和细分级别数据）。 | [重叠报](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) 告（特征到特征、区段到特征和区段到区段） |
+| [!UICONTROL Profile Merge Rule][设备总数](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics)度量。 | [特征推荐](/help/using/features/segments/trait-recommendations.md) |
+| [数据](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md) 浏览器在选项卡和任 [!UICONTROL Search] 何  [!UICONTROL Saved Searches] | [Audience MarketplaceRecommendations](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |
