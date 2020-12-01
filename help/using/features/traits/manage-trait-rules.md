@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # 管理特征规则 {#managing-trait-rules}
 
-在中 [!UICONTROL Trait Builder]，您 [!UICONTROL Expression Builder] 可以创建和测试确立受众资格要求的规则。 规则由键值对组成，如 `color == blue` 或 `price > 100`。 比较运算符建立键和值之间的关系。 [!DNL Boolean] 表达式确定规则组之间的关系。
+在[!UICONTROL Trait Builder]中，[!UICONTROL Expression Builder]允许您创建和测试确立受众资格要求的规则。 规则由键值对组成，如`color == blue`或`price > 100`。 比较运算符建立键和值之间的关系。 [!DNL Boolean] 表达式确定规则组之间的关系。
 
 <!-- c_tb_rules.xml -->
 
@@ -25,47 +25,47 @@ ht-degree: 1%
 
 ![](assets/manage-trait-rules.png)
 
-1. 该 **[!UICONTROL Expression Builder]** 或 **[!UICONTROL Code View]** 选项卡提供特征中规则的概述。 在选 **[!UICONTROL Expression Builder]** 项卡中，您可以使用字段和下拉菜单创建规则。 通过 **[!UICONTROL Code View]** 手动将这些表达式编写为代码，可以创建规则。 上图显示了一个简单特征，该特征由一个信号组成，该信号对符合条件的数据进行评估，在这种情况下，产品键等于特定值 `color == "blue"`。
+1. **[!UICONTROL Expression Builder]**&#x200B;或&#x200B;**[!UICONTROL Code View]**&#x200B;选项卡提供特征中规则的概述。 使用&#x200B;**[!UICONTROL Expression Builder]**&#x200B;选项卡，可以创建包含字段和下拉菜单的规则。 **[!UICONTROL Code View]**&#x200B;允许您通过手动将这些表达式编写为代码来创建规则。 上图显示了一个简单特征，该特征由一个信号组成，该信号对一个限定条件（其中，产品键等于一个特定值，在此例中为`color == "blue"`）评估数据。
 
 1. 本节中的字段和控件允许您从键值对创建信号，并使用比较运算符设置它们之间的关系。 键、运算符和值是必需的。
-1. 它 [!UICONTROL Data Explorer Options] 允许您回填信号的特征实现。
+1. [!UICONTROL Data Explorer Options]允许您回填信号的特征实现。
    >[!NOTE]
    >
-   >此选项仅对客户 [!UICONTROL Data Explorer] 可用。 有关详细信息，请与Adobe顾问联系。
-1. 本节向您显示过去7天中为已回填和未回填特征定义的信号 [!UICONTROL Expression Builder]的特征实现的估计。
+   >此选项仅对[!UICONTROL Data Explorer]客户可用。 有关详细信息，请与Adobe顾问联系。
+1. 本节将显示过去7天中为[!UICONTROL Expression Builder]中定义的已回填和未回填特征所定义的信号的特征实现的估计。
    >[!NOTE]
    >
-   >此选项仅对客户 [!UICONTROL Data Explorer] 可用。 有关详细信息，请与Adobe顾问联系。
-1. 测试字段允许您验证信号规则或 [!DNL URL]要在向Audience Manager发送数据时使用的组合。
+   >此选项仅对[!UICONTROL Data Explorer]客户可用。 有关详细信息，请与Adobe顾问联系。
+1. 测试字段允许您验证信号规则或[!DNL URL]在向Audience Manager发送数据时要使用的组合。
 
-## 创建特征规则 {#create-trait-rule}
+## 创建特征规则{#create-trait-rule}
 
-规则(或表达式)由单个或一组键值对组成。 比较运算符设置键值对之间的关系。 要创建规则，请提供键、值，选择运算符，然后单击 **[!UICONTROL Add Rule]**。
+规则(或表达式)由单个或一组键值对组成。 比较运算符设置键值对之间的关系。 要创建规则，请提供一个键、一个值，选择一个运算符，然后单击&#x200B;**[!UICONTROL Add Rule]**。
 
 <!-- t_tb_create_rules.xml -->
 
-在创建特征规则之前， **[!UICONTROL Basic Information]** 请完 *成部* 分中的必填字段。
+在创建特征规则之前，完成&#x200B;**[!UICONTROL Basic Information]**&#x200B;部分&#x200B;*中的必填字段。*
 
-1. 展开该 **[!UICONTROL Trait Expression]** 部分，然后输入键和值名称。 这会产生一个 *`signal`*。
+1. 展开&#x200B;**[!UICONTROL Trait Expression]**&#x200B;部分，并输入键和值名称。 这将创建&#x200B;*`signal`*。
    >[!NOTE]
    >
-   >如果事件 `c_` 调用使用该语法向发送数据，则为键变量添加前缀(或任何其他命 [!DNL Audience Manager] 名约定)。
-1. 从下拉 [菜单中选择](../../features/traits/trait-comparison-operators.md) “比较 **[!UICONTROL Operator]** 运算符”。 比较运算器评估信号中各元件之间的关系。
+   >如果您的事件调用使用该语法向[!DNL Audience Manager]发送数据，请包含键变量的`c_`前缀（或任何其他命名约定）。
+1. 从&#x200B;**[!UICONTROL Operator]**&#x200B;下拉列表中选择[比较运算符](../../features/traits/trait-comparison-operators.md)。 比较运算器评估信号中各元件之间的关系。
    >[!NOTE]
    >
-   >操 [!DNL Boolean] 作器 [!UICONTROL OR] 建立组内多个信号 *之间* 的关系，不能改变。
+   >[!DNL Boolean] [!UICONTROL OR]运算符建立&#x200B;*组内多个信号*&#x200B;之间的关系，不能更改。
 1. 单击 **[!UICONTROL Add Rule]**. 保存的规则显示在数据条目字段上方的traits工作区中。
 
 ### 示例 {#example-trait-rule}
 
-在以下示例中，用户已基于产品ID创建了新的特征规则。 要构建此规则，用户将与等号运 `productkey` 算符()链接的键 `==`提供给值 `2093`。
+在以下示例中，用户已基于产品ID创建了新的特征规则。 为构建此规则，用户将与等号运算符(`==`)链接的键`productkey`提供给值`2093`。
 ![](assets/tb_sample_rule1.png)
 
-单击 **[!UICONTROL Add Rule]** 保存特征并将其移入工作 [!UICONTROL Expression Builder] 区。
+单击&#x200B;**[!UICONTROL Add Rule]**&#x200B;将保存特征并将其移入[!UICONTROL Expression Builder]工作区。
 
 ![](assets/tb_sample_rule2.png)
 
-## 创建新规则组 {#create-rule-group}
+## 创建新规则组{#create-rule-group}
 
 此过程介绍如何创建新规则组。
 
@@ -79,31 +79,31 @@ ht-degree: 1%
    >[!NOTE]
    >
    >如果无意中移动规则，请将其拖回其原始组。
-1. 从下拉 [!DNL Boolean] 菜单中选 [!UICONTROL AND]择一个 [!UICONTROL OR][!UICONTROL AND NOT]运算符(、、)，以设置规则组之间的关系。
+1. 从下拉菜单中选择[!DNL Boolean]运算符([!UICONTROL AND]、[!UICONTROL OR]、[!UICONTROL AND NOT])，以设置规则组之间的关系。
 
-## 在组之间移动规则 {#move-rules-between-groups}
+## 在组之间移动规则{#move-rules-between-groups}
 
 要移动规则，请单击并将其拖动到另一个组。
 
-## 编辑特征 {#edit-trait}
+## 编辑特征{#edit-trait}
 
 此过程介绍如何编辑特征。
 
 <!-- t_tb_edit.xml -->
 
-1. 在仪表板 [!UICONTROL Traits] 中，将指针悬 **[!UICONTROL Actions]** 停在要编辑的特征的列上。 这会显示特征管理图标。
+1. 在[!UICONTROL Traits]仪表板中，将指针悬停在要编辑的特征的&#x200B;**[!UICONTROL Actions]**&#x200B;列上。 这会显示特征管理图标。
 1. 单击铅笔以编辑特征。
 
    ![](assets/tb_edit_trait.png)
 
-## 删除特征规则 {#delete-trait}
+## 删除特征规则{#delete-trait}
 
 此过程介绍如何删除特征规则。
 
 <!-- t_tb_delete_rule.xml -->
 
-1. 在仪表板 [!UICONTROL Traits] 中，将指针悬 [!UICONTROL Actions] 停在要编辑的特征的列上并单击铅笔图标。 这会显示特征管理图标。
-1. Expand the [!UICONTROL Trait Expression] section.
+1. 在[!UICONTROL Traits]仪表板中，将指针悬停在要编辑的特征的[!UICONTROL Actions]列上并单击铅笔图标。 这会显示特征管理图标。
+1. 展开[!UICONTROL Trait Expression]部分。
 1. 将指针悬停在要删除的规则上并单击X图标。 该规则将立即删除。
 
 >[!MORELIKETHIS]
