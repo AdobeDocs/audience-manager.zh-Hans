@@ -25,30 +25,30 @@ ht-degree: 2%
 
 ## 用例 {#use-cases}
 
-通过报 [!UICONTROL Segment Performance] 告，您可以：
+使用[!UICONTROL Segment Performance]报告，您可以：
 
 * 识别驱动规模或性能的映射受众段。
 * 根据受众对过往表现的贡献，识别未映射的细分，以便在未来活动引入。
 
-## 使用细分绩效报告 {#using-segment-performance-report}
+## 使用区段性能报告{#using-segment-performance-report}
 
-在和之 **[!UICONTROL Mapped]** 间切 **[!UICONTROL Unmapped]** 换，以选择映射到或未映射到目标的区段。 选择 **[!UICONTROL All]** 以在报告中包含所有区段。
+在&#x200B;**[!UICONTROL Mapped]**&#x200B;和&#x200B;**[!UICONTROL Unmapped]**&#x200B;之间切换，以选择映射到或不映射到目标的区段。 选择&#x200B;**[!UICONTROL All]**&#x200B;以在报告中包含您的所有区段。
 
-使用“ **日期范围** ” **和“通** 过日期”控件调整回顾范围。 请注意，7天和30天回顾期仅适用于星期日日期。
+使用&#x200B;**日范围**&#x200B;和&#x200B;**日期至**&#x200B;控件调整回顾范围。 请注意，7天和30天回顾期仅适用于星期日日期。
 
-使用 **[!UICONTROL Line Item]** 下拉框选择要返回其信息的Web属性。
+使用&#x200B;**[!UICONTROL Line Item]**&#x200B;下拉框选择要返回其信息的Web属性。
 
-在下 **[!UICONTROL Segment Data Source]** 拉框中，选择包含您要在报告中看到的区段的数据源。
+在&#x200B;**[!UICONTROL Segment Data Source]**&#x200B;下拉框中，选择包含要在报告中查看的区段的数据源。
 
-使用下 **[!UICONTROL Segment]** 拉框选择要在报表中查看的区段。
+使用&#x200B;**[!UICONTROL Segment]**&#x200B;下拉框选择要在报告中显示的区段。
 
 >[!IMPORTANT]
 >
->启用时， [!UICONTROL Audience Optimization for Publishers]必须包含描述性元数据， [!UICONTROL Line Item IDs]如将Google Ad Manager( [以前称为DFP)数据文件导入Audience Manager的步骤3中所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 通过执行此操作，您可以确保报告将Web属性详细 [!UICONTROL Line Item] 化为而非 [!UICONTROL Line Item ID]。
+>启用[!UICONTROL Audience Optimization for Publishers]时，必须包含[!UICONTROL Line Item IDs]的描述性元数据，如[将Google Ad Manager（以前称为DFP）数据文件导入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步骤3中所述。 通过执行此操作，您可以确保报告将web属性详细描述为[!UICONTROL Line Item]而不是[!UICONTROL Line Item ID]。
 
-## 解释结果 {#interpreting-results}
+## 解释结果{#interpreting-results}
 
-您 [!UICONTROL Segment Performance] 的报告可能与下面的报告类似。 在报表中，单击气泡以视图基础数据。 有关其他信息，请参阅示例报告下表中的说明。
+您的[!UICONTROL Segment Performance]报告可能与下面的报告类似。 在报表中，单击气泡以视图基础数据。 有关其他信息，请参阅示例报告下表中的说明。
 
 ![](assets/publisher_segment_performance.png)
 
@@ -86,12 +86,12 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p>实时细分填充 </p> </td> 
-   <td colname="col2"> <p>在指定的时间范围内实时查看的唯一访客的实际数量，以及在Audience Manager看到这些数据时符合区段条件的 <span class="keyword"></span>。 </p> </td> 
+   <td colname="col2"> <p>在指定的时间范围内实时查看的唯一访客数，以及在<span class="keyword">Audience Manager</span>看到这些数据时符合区段条件的唯一数。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 如何阅读映射的区段结果 {#read-mapped-segment}
+## 如何读取映射的区段结果{#read-mapped-segment}
 
 您在报表中映射的区段的位置可以告诉您很多关于哪些区段表现良好以及可能需要进行一些调整的信息。
 
@@ -99,9 +99,9 @@ ht-degree: 2%
 
 ![](assets/publisher_segment_performance_mapped.png)
 
-## 如何阅读未映射的区段结果 {#read-unmapped-segment}
+## 如何读取未映射的区段结果{#read-unmapped-segment}
 
-在报表中查看未映 [!UICONTROL Segment Performance] 射的区段是找到尚未考虑定位的新区段的好方法。 事实上，其中某些区段的表现可能优于您映射的区段。
+在[!UICONTROL Segment Performance]报告中查看未映射的区段是找到您尚未考虑进行定位的新区段的最佳方式。 事实上，其中某些区段的表现可能优于您映射的区段。
 
 要阅读此报告，将结果分为四个部分，其中虚线（以红色表示）和类别显示在下面的示例报告中。
 
