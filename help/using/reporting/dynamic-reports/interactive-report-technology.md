@@ -27,7 +27,7 @@ c_report_technology.xml
 
 ## 交互式报表使用Tableau技术
 
-[!DNL Audience Manager] 使 [用Tableau](https://www.tableausoftware.com/) 软件在交互式报表中显示数据。 报告 [!DNL Tableau]使用 [!UICONTROL Delivery and Overlap] 视觉提示和符号帮助您：
+[!DNL Audience Manager] 使 [](https://www.tableausoftware.com/) 用表格软件在交互式报告中显示数据。对于[!DNL Tableau],[!UICONTROL Delivery and Overlap]报告使用视觉提示和符号，帮助您：
 
 * 查找高性能和低性能特性。
 * 发现具有低和高唯一访客重叠的特征和区段。
@@ -38,7 +38,7 @@ c_report_technology.xml
 
 报告数据每周每周日更新一次。 更新将处理星期六（前一天）至上个星期日的数据。
 
-## 交互式报告中使用的形状、颜色和大小 {#shapes-colors-sizes}
+## 交互式报告中使用的形状、颜色和大小{#shapes-colors-sizes}
 
 大多数交互式报表都使用不同大小和颜色的形状显示结果。 此显示格式旨在帮助您以可视方式理解数据，无需费力地查看行和列数。
 
@@ -72,8 +72,8 @@ r_legend.xml
    <td colname="col1"> <b>颜色</b> </td> 
    <td colname="col2"> 
     <ul id="ul_F5D243297F0C4E5A8EDCBD28A548869E"> 
-     <li id="li_332EB873A35440E6BB6093E36A0FAC3D">红色阴影表 <i>示低</i> 重叠。 </li> 
-     <li id="li_29DFDB1218DF4069B5DCFF841D48EF56">绿色暗色表 <i>示高</i> 重叠。 </li> 
+     <li id="li_332EB873A35440E6BB6093E36A0FAC3D">红色阴影表示<i>低</i>重叠。 </li> 
+     <li id="li_29DFDB1218DF4069B5DCFF841D48EF56">绿色阴影表示<i>高</i>重叠。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -83,6 +83,6 @@ r_legend.xml
  </tbody> 
 </table>
 
-## Tableau文档 {#tableau-documentation}
+## Tableau文档{#tableau-documentation}
 
-要进一步了解您可以在我们的交互式报告中看到的Tableau控件，请参阅Linux 2018.2上 [Tableau Server的官方文档](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm)
+要进一步了解您可以在我们的交互式报告中看到的Tableau控件，请参阅Linux 2018.2](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm)上[Tableau Server的官方文档
