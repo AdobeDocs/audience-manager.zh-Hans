@@ -19,26 +19,26 @@ ht-degree: 78%
 
 ## 概述
 
-The Data Privacy documentation describes [!DNL Audience Manager] integration and compliance with generally accepted best practices related to consumer privacy and opt-out procedures.
+数据隐私文档描述了[!DNL Audience Manager]与消费者隐私和选择退出程序相关的集成以及对公认最佳实践的遵守。
 
 [!DNL Audience Manager] 认识到消费者以及他们与之互动的网络品牌之间的关系的重要性。双方都受益于匿名数据元素的透明交换：
 
 * 消费者可获得个性化内容、折扣产品选件和简化的用户体验。
 * 品牌可获得支持多个在线业务模型的重要收入流。
 
-In our continuing support of this model, [!DNL Audience Manager] remains committed to providing you with the tools to help support your ability to provide  transparency and control to your consumers, while delivering personalized ads subject to the [Online Behavioral Advertising (OBA) Self-Regulatory Principles](https://www.iab.com/news/self-regulatory-principles-for-online-behavioral-advertising/).
+在我们对此模型的持续支持中，[!DNL Audience Manager]继续致力于为您提供工具，帮助您支持向消费者提供透明度和控制的能力，同时提供符合[在线行为广告(OBA)自律原则](https://www.iab.com/news/self-regulatory-principles-for-online-behavioral-advertising/)的个性化广告。
 
 ## [!DNL GDPR] {#gdpr}
 
-[《通用数据保护条例》(GDPR)](https://eugdpr.org/) 为欧盟成员国引入了几项新的数据隐私权，其中包括&#x200B;**访问权**&#x200B;和&#x200B;**被遗忘权**。This means that any [!DNL EU] citizen whose personal data has been collected by your business can request to access or delete their data at any time. 如果不能遵守这些要求，贵组织将面临数百万美元的罚款。
+[《通用数据保护条例》(GDPR)](https://eugdpr.org/) 为欧盟成员国引入了几项新的数据隐私权，其中包括&#x200B;**访问权**&#x200B;和&#x200B;**被遗忘权**。这意味着，任何[!DNL EU]公民（其个人数据已由您的企业收集）可以随时请求访问或删除其数据。 如果不能遵守这些要求，贵组织将面临数百万美元的罚款。
 
-To comply with [!DNL GDPR], [!DNL Audience Manager] supports data access and delete [requests](data-privacy-requests.md).
+为符合[!DNL GDPR]的要求，[!DNL Audience Manager]支持数据访问和删除[请求](data-privacy-requests.md)。
 
 ## [!DNL CCPA] {#ccpa}
 
 [《加州消费者隐私法案》(CCPA)](https://www.caprivacy.org/about) 已于 2020 年 1 月 1 日生效，它为加利福尼亚州居民提供了有关其个人信息的新权利，并对某些在加利福尼亚州开展业务的实体施加了数据保护责任。
 
-[!DNL CCPA] 为加利福尼亚州居民提供了新的数据隐私权，包括访问和删除其个人数据，以及了解其个人数据是否被出售或被透露（以及向谁出售或透露）的权利。为符合要求， [!DNL CCPA]支持 [!DNL Audience Manager] 访问 [!DNL CCPA] 和删除 [请求](data-privacy-requests.md)。
+[!DNL CCPA] 为加利福尼亚州居民提供了新的数据隐私权，包括访问和删除其个人数据，以及了解其个人数据是否被出售或被透露（以及向谁出售或透露）的权利。为符合[!DNL CCPA]的要求，[!DNL Audience Manager]支持[!DNL CCPA]访问和删除[请求](data-privacy-requests.md)。
 
 有关更多详细信息，请参阅 [Adobe 隐私中心](https://www.adobe.com/cn/privacy/opt-out.html)。
 
