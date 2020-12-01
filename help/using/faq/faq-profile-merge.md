@@ -36,7 +36,7 @@ ht-degree: 86%
 
  
 
-**在[!UICONTROL Profile Merge Rule]中使用外部设备图的常见用例有哪些？**
+**在 [!UICONTROL Profile Merge Rule] 中使用外部设备图的常见用例有哪些？**
 
 在 [!UICONTROL Profile Merge Rule] 中使用设备图的主要目的在于评估属于单个人员或家庭的多台设备并确定其是否符合特定区段的资格。区段本身也可能具有多种用途，例如，通过 DSP 提供的广告定位潜在受众，或通过网站个性化平台为客户提供个性化的网站访问体验。请参阅[外部设备图用例](../features/profile-merge-rules/external-graph-use-cases.md)。
 
@@ -48,7 +48,7 @@ ht-degree: 86%
 
  
 
-**[!DNL Audience Manager]多久更新一次外部设备图数据？**
+**[!DNL Audience Manager] 多久更新一次外部设备图数据？**
 
 每周一次。
 
@@ -56,7 +56,7 @@ ht-degree: 86%
 
 ## 设备图和配置文件合并规则 {#device-graph-profile-merge-rules}
 
-**[!DNL Audience Manager]如何使用设备图？**
+**[!DNL Audience Manager] 如何使用设备图？**
 
 在 [!DNL Audience Manager] 中，当您[创建配置文件合并规则](../features/profile-merge-rules/merge-rules-start.md)时，设备图显示为配置选项。通过 [!UICONTROL Profile Merge Rules]，这些设备图可帮助 [!DNL Audience Manager] 执行以下操作：
 
@@ -66,25 +66,25 @@ ht-degree: 86%
 
  
 
-**我可以创建多少个[!UICONTROL Profile Merge Rules]？**
+**我可以创建多少个 [!UICONTROL Profile Merge Rules]？**
 
 目前，最多可创建 4 个 [!UICONTROL Profile Merge Rules]。第四个配置文件合并规则 ([!UICONTROL All Cross-Device Profiles]) 仅适用于购买 [!UICONTROL People-Based Destinations] 加载项的客户。
 
  
 
-**在[!UICONTROL Profile Merge Rule]中使用设备图时，[!DNL Audience Manager]可以合并和读取多少个设备配置文件？**
+**在 [!UICONTROL Profile Merge Rule] 中使用设备图时，[!DNL Audience Manager] 可以合并和读取多少个设备配置文件？**
 
 当使用 [!UICONTROL Profile Merge Rule] 确定某个设备符合某个区段的资格条件时，Audience Manager 可合并和读取当前设备配置文件以及最多 99 个通过您选定的设备图选项关联的其他设备配置文件。
 
  
 
-**在[!UICONTROL Profile Merge Rule]中使用设备图时，哪些设备符合区段资格条件？**
+**在 [!UICONTROL Profile Merge Rule] 中使用设备图时，哪些设备符合区段资格条件？**
 
 [!DNL Audience Manager] 合并和读取的设备便是符合区段资格条件的设备。
 
  
 
-**对于已通过使用设备图的[!UICONTROL Profile Merge Rule]鉴定资格条件的区段，[!DNL Audience Manager]可以将这些区段发送至何处？**
+**对于已通过使用设备图的 [!UICONTROL Profile Merge Rule] 鉴定资格条件的区段，[!DNL Audience Manager] 可以将这些区段发送至何处？**
 
 [!DNL Audience Manager] 能够以批量文件或实时方式将区段发送到目标。
 
@@ -92,37 +92,37 @@ ht-degree: 86%
 
 ## 区段、设备图和配置文件合并规则 {#segments-device-graphs-rules}
 
-**当设备不再符合某个区段的资格条件时，[!DNL Audience Manager]如何通过使用设备图的[!UICONTROL Profile Merge Rule]取消设备分段？**
+**当设备不再符合某个区段的资格条件时，[!DNL Audience Manager] 如何通过使用设备图的 [!UICONTROL Profile Merge Rule] 取消设备分段？**
 
 在通过使用设备图的 [!UICONTROL Profile Merge Rule] 评估区段时，Audience Manager 最多可合并 100 个设备。如果发出了取消分段信号，则将从目标中的相应区段移除当前设备和最多其他 99 个设备。有关取消分段的更多信息，请参阅[配置文件合并规则和设备取消分段流程](../features/profile-merge-rules/merge-rule-unsegment.md)。
 
  
 
-**如果目标可以取消设备分段，是否能通过使用设备图的[!UICONTROL Profile Merge Rules]从区段中移除设备？**
+**如果目标可以取消设备分段，是否能通过使用设备图的 [!UICONTROL Profile Merge Rules] 从区段中移除设备？**
 
 是。请参阅上面的说明。
 
  
 
-**如果我通过使用设备图的[!UICONTROL Profile Merge Rule]构建一个区段，并且该区段同时使用实时数据和已载入数据，那么我的区段是否能随着已载入数据的更改而更新？**
+**如果我通过使用设备图的 [!UICONTROL Profile Merge Rule] 构建一个区段，并且该区段同时使用实时数据和已载入数据，那么我的区段是否能随着已载入数据的更改而更新？**
 
 是。
 
  
 
-**区段预估大小是否包含根据由使用设备图选项的[!UICONTROL Profile Merge Rule]提供的连接而确定为符合区段资格条件的设备？**
+**区段预估大小是否包含根据由使用设备图选项的 [!UICONTROL Profile Merge Rule] 提供的连接而确定为符合区段资格条件的设备？**
 
 否。有关 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 的定义，请参阅[区段生成器中的特征和区段人口数据](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/features/segments/segment-builder-data.html)。
 
  
 
-**[!UICONTROL Addressable Audiences]是否包含根据由使用设备图选项的[!UICONTROL Profile Merge Rule]提供的连接而确定为符合区段资格条件的设备？**
+**[!UICONTROL Addressable Audiences] 是否包含根据由使用设备图选项的 [!UICONTROL Profile Merge Rule] 提供的连接而确定为符合区段资格条件的设备？**
 
 是。
 
  
 
-**如果某个区段结合使用[!UICONTROL Profile Merge Rule]和[!UICONTROL No Cross-Device Profile]，且用于鉴定设备是否符合该区段资格条件的特征仅存储在跨设备配置文件中，那么该区段总人口是否为 0？**
+**如果某个区段结合使用 [!UICONTROL Profile Merge Rule] 和 [!UICONTROL No Cross-Device Profile]，且用于鉴定设备是否符合该区段资格条件的特征仅存储在跨设备配置文件中，那么该区段总人口是否为 0？**
 
 是。将配置文件合并规则设为 [!UICONTROL No Cross-Device Profile] 后，Audience Manager 在评估区段时不会计算存储在跨设备配置文件中的特征数量。
 
@@ -130,7 +130,7 @@ ht-degree: 86%
 
 ## 特征频度、设备图和配置文件合并规则 {#trait-freq-device-rules}
 
-**[!DNL Audience Manager]如何通过使用设备图的[!UICONTROL Profile Merge Rule]计算特征频度？**
+**[!DNL Audience Manager] 如何通过使用设备图的 [!UICONTROL Profile Merge Rule] 计算特征频度？**
 
 特征频度是指在多个设备中符合某个特定特征的总次数。为便于您理解，请查看以下用例。
 
@@ -170,13 +170,13 @@ ht-degree: 86%
 
 ## 报表、设备图和配置文件合并规则 {#reports-device-graphs-rules}
 
-**能否查看可通过使用设备图的[!UICONTROL Profile Merge Rule]访问的设备数量？**
+**能否查看可通过使用设备图的 [!UICONTROL Profile Merge Rule] 访问的设备数量？**
 
 能。报表将返回 [!UICONTROL Profile Merge Rule] 级别的数据。报表数据每日进行更新。数据基于您在帐户中看到的设备数，而非通过设备图链接的设备数。请参阅[配置文件合并规则的报表量度](../features/profile-merge-rules/profile-link-metrics.md)。
 
  
 
-**是否可以通过使用设备图的[!UICONTROL Profile Merge Rules]*实时*查看符合某个特定区段资格条件的设备数量？**
+**是否可以通过使用设备图的 [!UICONTROL Profile Merge Rules] *实时*查看符合某个特定区段资格条件的设备数量？**
 
 是。实时人口量度可使用通过设备图链接的所有设备的配置文件来捕获当前设备（实时查看到的设备）满足的区段资格条件。
 
@@ -218,7 +218,7 @@ ht-degree: 86%
 
  
 
-**是否可以通过使用设备图的[!UICONTROL Profile Merge Rule]查看符合某个特定区段资格条件的设备总数？**
+**是否可以通过使用设备图的 [!UICONTROL Profile Merge Rule] 查看符合某个特定区段资格条件的设备总数？**
 
 是。总区段人口量度包含根据设备图中的连接确定符合区段资格条件的其他设备。
 
@@ -256,7 +256,7 @@ ht-degree: 86%
 
  
 
-**如果某个区段具有使用设备图的[!UICONTROL Profile Merge Rule]，那么符合该区段资格条件的设备是否会包含在[!UICONTROL Interactive]、[!UICONTROL Overlap]及[!UICONTROL Audience Optimization]报表中？**
+**如果某个区段具有使用设备图的 [!UICONTROL Profile Merge Rule]，那么符合该区段资格条件的设备是否会包含在 [!UICONTROL Interactive]、[!UICONTROL Overlap] 及 [!UICONTROL Audience Optimization] 报表中？**
 
 否。
 
@@ -266,7 +266,7 @@ ht-degree: 86%
 
 要确保使用跨设备ID(如Audience Manager)在Adobe Campaign实例与目标之间正确集成，请确保满足以下要求：
 
-1. 查看映射到您的用户档案声明ID目标的Adobe Campaign段使用的合并规则。 用户档案合并规则必须使用该选 [!UICONTROL Last Authenticated Profile] 项，因此所有经过身份验证的用户档案都可以包含在导出中。 如果您的用户档案合并规则使用其他选项，请将其切换为 [!UICONTROL Last Authenticated Profile]。
+1. 查看映射到您的用户档案声明ID目标的Adobe Campaign段使用的合并规则。 用户档案合并规则必须使用[!UICONTROL Last Authenticated Profile]选项，因此所有经过身份验证的用户档案都可以包含在导出中。 如果您的用户档案合并规则使用其他选项，请将其切换为[!UICONTROL Last Authenticated Profile]。
 2. 在“Adobe Campaign合并规则”设置中选择用户档案声明ID数据源。
 
 >[!NOTE]
