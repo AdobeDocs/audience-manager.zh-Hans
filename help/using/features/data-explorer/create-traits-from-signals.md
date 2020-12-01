@@ -16,13 +16,13 @@ ht-degree: 3%
 
 # 从信号创建特征
 
-从所有信号（包括已在特征中使用的信号）创建新特征，并捕获在特征创建后符合条件的未来受众。 观看视频以快速演示或阅读详细信息：
+从所有信号（包括已在特征中使用的信号）创建新特征，并捕获在特征创建后符合条件的未来受众。 观看视频快速演示或阅读详细信息：
 
 >[!VIDEO](https://video.tv.adobe.com/v/25169/?quality=12)
 
-## 从信号仪表板创建特征 {#create-traits-from-signal-dashboard}
+## 从信号仪表板{#create-traits-from-signal-dashboard}创建特征
 
-该 [!UICONTROL Signal Dashboard] 功能允许您从、和保存的 [!UICONTROL Top Unused Signals]搜索 [!UICONTROL New Unused Signals]中创建新特征。
+[!UICONTROL Signal Dashboard]允许您从[!UICONTROL Top Unused Signals]、[!UICONTROL New Unused Signals]和保存的搜索创建新特征。
 
 创建新特征时，根据信号类型预先设置特征类型：
 
@@ -30,29 +30,29 @@ ht-degree: 3%
 
 * **[!UICONTROL Onboarded]** 载入信号的特征。
 
-要从中创建新特 **[!UICONTROL Signal Dashboard]**&#x200B;征，请标识要在特征中使用的信号，然后单击相应的 **[!UICONTROL Create Rule-Based Trait]** 或链 **[!UICONTROL Create Onboarded Trait]** 接。
+要从&#x200B;**[!UICONTROL Signal Dashboard]**&#x200B;创建新特征，请标识要在该特征中使用的信号，然后单击相应的&#x200B;**[!UICONTROL Create Rule-Based Trait]**&#x200B;或&#x200B;**[!UICONTROL Create Onboarded Trait]**&#x200B;链接。
 
 ![](assets/signals-create-trait.png)
 
-您将被重定向到特 **[征构建器](../../features/traits/about-trait-builder.md)**，以创建新特征。
+您将被重定向到&#x200B;**[特征生成器](../../features/traits/about-trait-builder.md)**&#x200B;以创建新特征。
 
-## 通过信号搜索创建特征 {#create-traits-from-signal-search}
+## 通过信号搜索创建特征{#create-traits-from-signal-search}
 
-根据未使用或未使用的信号创建特征，这些信号未在中显示 [!UICONTROL Signal Dashboard]。
+根据[!UICONTROL Signal Dashboard]中未显示的已使用或未使用信号创建特征。
 
 搜索特定信号并根据结果创建基于规则或载入的特征。 下面介绍如何实现此操作：
 
-1. 转到并 **[!UICONTROL Audience Data > Signals > Search]** 根据您要查找的键值对运行搜索，或者单击而不输 **[!UICONTROL Search]** 入任何键值对以显示所有结果。
+1. 转到&#x200B;**[!UICONTROL Audience Data > Signals > Search]**&#x200B;并根据您要查找的键值对运行搜索，或单击&#x200B;**[!UICONTROL Search]**&#x200B;而不输入任何键值对以显示所有结果。
 2. 在结果列表中标识要在特征中使用的信号。
-   * 要从一个信号创建特征，请单击相应的 **[!UICONTROL Create Rule-Based Trait]** 或链 **[!UICONTROL Create Onboarded Trait]** 接。
-   * 要从多个信号创建特征，请单击每个信号的相应复选框，然后单击 **[!UICONTROL Create Trait from Multiple Signals]**。
+   * 要从一个信号创建特征，请单击相应的&#x200B;**[!UICONTROL Create Rule-Based Trait]**&#x200B;或&#x200B;**[!UICONTROL Create Onboarded Trait]**&#x200B;链接。
+   * 要从多个信号创建特征，请单击每个信号的相应复选框，然后单击&#x200B;**[!UICONTROL Create Trait from Multiple Signals]**。
 
    >[!NOTE]
    >您只能根据相同类型的信号创建特征。 不能根据实时信号和载入的信号的组合创建特征。
    >
    > ![](assets/signals-create-trait-search.png)
-   >您也可以根据使用的信号创建特征。 已在特征中使用的信号具有列中显示的特征数 **[!UICONTROL Included in Traits]** 量。 单击箭头可查看包含信号的特征。
+   >您也可以根据使用的信号创建特征。 已用在特征中的信号具有显示在&#x200B;**[!UICONTROL Included in Traits]**&#x200B;列中的特征数。 单击箭头可查看包含信号的特征。
    >
    >![](assets/signals-used-traits.png)
 
-3. 使用特 **[征生成器](../../features/traits/about-trait-builder.md)**，创建您的新特征。
+3. 使用&#x200B;**[Trait Builder](../../features/traits/about-trait-builder.md)**&#x200B;创建新特征。
