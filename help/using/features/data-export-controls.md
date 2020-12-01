@@ -21,30 +21,30 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-[!UICONTROL Data Export Controls] 允许您对数 [据源](../features/datasources-list-and-settings.md#data-sources-list-and-settings) 和目 [标进行分类](../features/destinations/destinations.md)。 您应用的分类确定何时可以将数据导出到目标。 此功能包括：
+[!UICONTROL Data Export Controls] 允许您对数据 [源](../features/datasources-list-and-settings.md#data-sources-list-and-settings) 和目标 [进行分类](../features/destinations/destinations.md)。您应用的分类确定何时可以将数据导出到目标。 此功能包括：
 
-* **[!UICONTROL Data Export Controls]**: 可以对数据源设置“数据导 *出控件”*。 在数据源上设置时，这些控件会限制数据源及其特征的使用方式。
-* **[!UICONTROL Data Export Labels]**: 您可以在目标上设置数据导 *出标签*。 当在目标上设置时，这些标签会标识目标使用数据的方式。 请参 [阅向目标添加数据导出标签](/help/using/features/destinations/add-data-export-labels.md) ，以了解如何向目标添加导出标签。
+* **[!UICONTROL Data Export Controls]**:可以对数据源设置“数据导 *出控件”*。在数据源上设置时，这些控件会限制数据源及其特征的使用方式。
+* **[!UICONTROL Data Export Labels]**:您可以在目标上设置数据导 *出标签*。当在目标上设置时，这些标签会标识目标使用数据的方式。 请参阅[向目标](/help/using/features/destinations/add-data-export-labels.md)添加数据导出标签，了解如何向目标添加导出标签。
 
 根据应用于数据源和目标的分类，导出控件会阻止您：
 
 * 当特征属于数据源时，将特征添加到区段，该数据源具有与区段映射到的一个或多个目标上的数据导出标签不兼容的数据导出控件。
-例如，假设区段已映射到具有导出标签的目标 **[!DNL This destination may enable a combination with personally identifiable information (PII)]**。 如果特征所属的数据源具有表示的数据导出控件，则导出控件会阻止您向该段添加特征 **[!DNL Cannot be tied to personally identifiable information (PII)]**。
+例如，假设区段映射到具有导出标签**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目标。 如果特征所属的数据源具有表示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的数据导出控件，则导出控件会阻止您向该段添加特征。
 * 将任何数据发送到目标目标具有数据导出标签，该标签被以下任一位置的数据导出控件阻止：
    * 包含特征的数据源；
    * 在包含的区段中使用的特征的数据源；
    * 用户档案合并规则由包含的细分利用；
    * 包含段的用户档案合并规则使用的任何数据源。
 
-[!UICONTROL Data Export Controls] 可自动供所有Audience Manager客户使用。 但是，您需要具有管理员权限才能向数据源添加导出控件。 向目标添加导出标签需要管理员 *权限* ，或者需要足够的权限才能创建或编辑目标。
+[!UICONTROL Data Export Controls] 可自动供所有Audience Manager客户使用。但是，您需要具有管理员权限才能向数据源添加导出控件。 向目标添加导出标签需要管理员权限&#x200B;*或*&#x200B;足够的权限才能创建或编辑目标。
 
-## 定义的控件和标签 {#controls-labels}
+## 定义的{#controls-labels}控件和标签
 
 [!UICONTROL Data Export Controls] 提供以下控件帮助您对数据源和目标进行分类。
 
-要阻止数据投放，必须使用导出控件对数据源进行分类，并向目标添加导出标签。 如果仅将导出控件应用于数据源或目标，则此功能不会限制数据投放。 在数据源和目标上 *设置* ，导出控件将限制您可以添加到区段的特征，并阻止将区段成员发送到目标。
+要阻止数据投放，必须使用导出控件对数据源进行分类，并向目标添加导出标签。 如果仅将导出控件应用于数据源或目标，则此功能不会限制数据投放。 当在数据源&#x200B;*和*&#x200B;目标上设置时，导出控件将限制您可以添加到区段的特征，并阻止将区段成员发送到目标。
 
-此外，在数据投放限制生效之前，至少一个导出标签必须与导出控件匹配。 例如，假设您向数据 [!UICONTROL PII] 源添加导出控件。 然后，将站点定位标签添加到目标。 在这种情况下，导出控件将不限制数据投放，因为设置不匹配。 但是，如果向目标 [!UICONTROL PII] 添加导出标签，则导出控件将阻止导出。
+此外，在数据投放限制生效之前，至少一个导出标签必须与导出控件匹配。 例如，假设您向数据源添加[!UICONTROL PII]导出控件。 然后，将站点定位标签添加到目标。 在这种情况下，导出控件将不限制数据投放，因为设置不匹配。 但是，如果向目标添加[!UICONTROL PII]导出标签，则导出控件将阻止导出。
 
 >[!IMPORTANT]
 >
@@ -91,7 +91,7 @@ ht-degree: 1%
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 不能用于非现场广告定位</span></b> </td> 
    <td colname="col2"> <b><span class="uicontrol"> 此目标可用于非现场广告定位</span></b> </td> 
-   <td colname="col3">这些限制通常与“选中后，您不能： 
+   <td colname="col3">这些限制通常与“选择后，您不能： 
     <ul id="ul_B9352FF5282C481BA3A24C581217A156"> 
      <li id="li_0F89583A603D4CD8804724954CFD52C6">将特征添加到映射到其他网站上重新目标用户的目标的区段。 </li> 
      <li id="li_ABDD8BEDE9AF411695C7BDF9AE522BA7">将使用数据源中的特征构建的区段映射到重新目标其他站点上的用户的目标。 </li> 
