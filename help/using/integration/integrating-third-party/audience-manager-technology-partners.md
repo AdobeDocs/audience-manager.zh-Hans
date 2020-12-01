@@ -17,15 +17,15 @@ ht-degree: 60%
 
 # Audience Manager激活合作伙伴
 
-本页仅包含当 [前Audience Manager服务器到服务器集成](/help/using/features/destinations/add-edit-segments.md) 。  有关集成的详细信息，请参阅其 [Adobe交](https://www.adobeexchange.com/experiencecloud.html) 换列表（如果可用），或与Adobe顾问或客户服务联系。
+本页仅包含当前Audience Manager[服务器到服务器集成](/help/using/features/destinations/add-edit-segments.md)。  有关集成的详细信息，请参阅其[AdobeExchange](https://www.adobeexchange.com/experiencecloud.html)列表（如果可用）或与Adobe顾问或客户服务联系。
 
 <br> 
 
-* **更新** =显示此激活合作伙伴的上次更新日期。
-* **Unsegment** = Unsegmentation描述了取消设备用户档案的区段资格并从区段中删除设备数据的流程。 您能否从区段中删除设备用户档案取决于用于创建用户档案合并规则的设备选项。 在GDPR删除请求读取用户档案合并规则和设备取消分 [段流程以及具有取消分段功能](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)[的Audience Manager合作伙伴的上下文中也使用取消分段](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience Manager会向标有以下“是”的目标发送未细分信息。
-* **接收IAB TCF同意信号** = IAB TCF的Audience Manager插件允许您在尊重用户隐私选择的同时将IAB TC字符串转发给激活合作伙伴。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
-* **ICDS** =此列列表支持“即时跨设备抑制”的合作伙伴。 Read [Instant Cross-Device Suppression](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
-* **移动设备ID** =此列列表可以从Audience Manager接收移动设备ID的合作伙伴。
+* **Updated** =显示此激活合作伙伴的上次更新日期。
+* **Unsegment** = Unsegmentation描述了取消设备用户档案的区段资格并从区段中删除设备数据的流程。您能否从区段中删除设备用户档案取决于用于创建用户档案合并规则的设备选项。 在GDPR删除请求读取[用户档案合并规则和设备未分段进程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和[具有未分段功能的Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)的上下文中也使用未分段。 Audience Manager会向标有以下“是”的目标发送未细分信息。
+* **接收IAB TCF同意信号** = IAB TCF的Audience Manager插件使您能将IAB TC字符串转发给激活合作伙伴，同时尊重用户的隐私选择。阅读[IAB TCF的Audience Manager插件](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)。
+* **ICDS** =此列列表支持“即时跨设备抑制”的合作伙伴。阅读[即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
+* **移动设备ID** =此列列表可从Audience Manager接收移动设备ID的合作伙伴。
 
 <br> 
 
@@ -62,9 +62,9 @@ ht-degree: 60%
 | ChoiceStream | 27/02/2017 | 否 | 否 | 否 | 否 |
 | Clearstream.tv | 27/02/2017 | 是 | 否 | 否 | 否 |
 | 集体AMP平台 | 27/02/2017 | 否 | 否 | 否 | 否 |
-| 克里泰奥 | 27/02/2017 | 否 | 是 | 否 | 是 |
-| 克罗斯威斯 | 27/02/2017 | 是 | 否 | 否 | 否 |
-| D.A.C. AudienceOne | 27/02/2017 | 是 | 否 | 否 | 否 |
+| 克里泰奥 | 27/03/2017 | 否 | 是 | 否 | 是 |
+| 克罗斯威斯 | 27/03/2017 | 是 | 否 | 否 | 否 |
+| D.A.C. AudienceOne | 27/03/2017 | 是 | 否 | 否 | 否 |
 | DataXu | 11/20/2017 | 否 | 否 | 否 | 是 |
 | 数字化 | 02/03/2017 |  | 否 | 否 | 否 |
 | DistrictM | 02/03/2017 | 是 | 否 | 否 | 否 |
@@ -102,7 +102,7 @@ ht-degree: 60%
 | MaxPoint Interactive | 27/02/2017 | 否 | 否 | 否 | 否 |
 | MediaMath | 27/02/2017 | 是 | 否 | 否 | 是 |
 | Microsoft Bing广告 | 30/05/2017 | 是 | 是 | 是 | 否 |
-| Millennial Media | 27/02/2017 | 否 | 否 | 否 | 是 |
+| Millennial Media | 27/03/2017 | 否 | 否 | 否 | 是 |
 | 中国移动平台 | 06/08/2018 | 是 | 否 | 否 | 是 |
 | 旁白I/O | 12/01/2018 | 是 | 否 | 否 | 是 |
 | 本机触控 | 02/03/2017 | 是 | 否 | 否 | 是 |
@@ -158,7 +158,7 @@ ht-degree: 60%
 | TubeMogul | 03/03/2017 | 是 | 否 | 是 | 否 |
 | 转弯／变形蜂 | 03/03/2027 | 否 | 否 | 否 | 是 |
 | 特温加 | 29/10/2018 | 是 | 否 | 否 | 否 |
-| Twitter定制受众 | 27/03/2017 | 是 | 否 | 是 | 否 |
+| Twitter定制受众 | 27/02/2017 | 是 | 否 | 是 | 否 |
 | 底音 | 11/07/2017 | 否 | 否 | 否 | 否 |
 | Verve | 15/06/2017 | 是 | 否 | 否 | 是 |
 | VideoAmp | 03/03/2017 | 否 | 否 | 否 | 否 |
