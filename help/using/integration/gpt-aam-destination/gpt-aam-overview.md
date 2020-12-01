@@ -1,7 +1,7 @@
 ---
 description: 如何使用Google Publisher Tags(GPT)集成Google Ad Manager的概述。
-seo-description: 概述如何在Adobe Audience Manager(AAM)中使用Google Publisher标记(GPT)集成Google Ad Manager。
-seo-title: 在Adobe Audience Manager(AAM)中使用Google Publisher标记(GPT)集成Google Ad Manager
+seo-description: 概述如何使用Adobe Audience Manager(AAM)的Google Publisher Tags(GPT)集成Google Ad Manager。
+seo-title: 在Adobe Audience Manager(AAM)使用Google Publisher Tags(GPT)集成Google Ad Manager
 title: 使用Google Publisher标记(GPT)集成Google Ad Manager
 feature: Third Party Integrations
 translation-type: tm+mt
@@ -13,17 +13,17 @@ ht-degree: 6%
 ---
 
 
-# Integrate [!DNL Google Ad Manager] (formerly DFP) using Google Publisher Tags (GPT)
+# 使用Google Publisher标记(GPT)集成[!DNL Google Ad Manager]（以前称为DFP）
 
-下面列出的文章概述了如何使用Google Publisher [!DNL Google Ad Manager] 标记(GPT)进行集成。 您可以使用服务器端集成，也可以将GPT设置为目标以向其发送Audience Manager段数据 [!DNL Google Ad Manager]。 您还将学习在Audience Manager中收录日志 [!DNL Google Ad Manager] 文件以进行报告所需的步骤。
+下面列出的文章概述了如何使用Google Publisher标记(GPT)集成[!DNL Google Ad Manager]。 您可以使用服务器端集成，也可以将GPT设置为目标，将Audience Manager段数据发送到[!DNL Google Ad Manager]。 您还将了解收录[!DNL Google Ad Manager]日志文件以进行Audience Manager报告所需的步骤。
 
 * [使用Google Publisher标记(GPT)将区段发送到Google Ad Manager的要求和方法](/help/using/integration/gpt-aam-destination/gpt-aam-requirements.md)
 
-   您可以通过客户端 [!DNL Google Ad Manager] 或服务器端集成将合格的细分发送给。 下面列出了两种方法的要求和相关信息。
+   您可以通过客户端或服务器端集成将限定的区段发送到[!DNL Google Ad Manager]。 下面列出了两种方法的要求和相关信息。
 
 * [创建 GPT 目标](/help/using/integration/gpt-aam-destination/gpt-aam-create-destination.md)
 
-   您可以通过客户端( [!DNL Google Ad Manager] 浏览器端)集成或服务器端集成向客户端发送符合条件的区段。 如果您选择客户端集成，则必须为Audience Manager中的Google Publisher标记创建基于cookie的目标。
+   您可以通过客户端（浏览器端）集成或服务器端集成向[!DNL Google Ad Manager]发送符合条件的区段。 如果您选择客户端集成，则必须为Audience Manager中的Google Publisher标记创建基于cookie的目标。
 
 * [修改 GPT setTargeting API 调用](/help/using/integration/gpt-aam-destination/gpt-aam-modify-api.md)
 
