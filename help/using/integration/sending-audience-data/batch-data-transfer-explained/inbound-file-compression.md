@@ -21,27 +21,27 @@ ht-degree: 10%
 
 <!-- inbound-file-compression.xml -->
 
-Audience Manager支持对入站`.gz`异步数据传输的gzip()压缩。
+Audience Manager支持对入站异步数据传输的gzip(`.gz`)压缩。
 
 Audience Manager还支持未压缩的文件。
 
 >[!IMPORTANT]
 >
->我们不支持对使用gzip()压缩的入站文件进行加`.gz`密。
+>我们不支持对使用gzip(`.gz`)压缩的入站文件进行加密。
 >
->要加密和压缩入站文件，请使 [用PGP加密](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。 [!DNL PGP] 加密包括文件压缩。
+>要加密和压缩入站文件，请使用[PGP加密](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。 [!DNL PGP] 加密包括文件压缩。
 
-## Amazon S3压缩
+## AmazonS3压缩
 
-要进行投放 [!DNL Amazon S3]，必须使用或 `.gz` 未压缩文件。 压缩文件必须为1 GB或更小。 如果文件较大，请与客户服务部讨论文件和传输过程。 尽管 [!DNL Audience Manager] 可以处理非常大的文件，但可能有方法可以减小文件大小或提高数据传输的效率。
+要投放到[!DNL Amazon S3]，必须使用`.gz`或未压缩文件。 压缩文件必须为1 GB或更小。 如果文件较大，请与客户服务部讨论文件和传输过程。 尽管[!DNL Audience Manager]可以处理非常大的文件，但可能有方法减小文件大小或提高数据传输的效率。
 
 >[!IMPORTANT]
 >
->您的 [!DNL FTP] 客户端必须使用二进制模式传输压缩或加密的文件。 以模式发送的压缩或加 [!DNL ASCII] 密文件将损坏数据传输文件。
+>您的[!DNL FTP]客户端必须使用二进制模式传输压缩或加密的文件。 以[!DNL ASCII]模式发送的压缩或加密文件将损坏数据传输文件。
 
 ## 最佳实践
 
-* 应压缩文 [!DNL .gzip] 件(并具有文 [!DNL .gz] 件扩展名)。
-* 压缩文件的最大压 `.gz` 缩文件大小为1 GB。
+* 文件应压缩[!DNL .gzip]（文件扩展名为[!DNL .gz]）。
+* `.gz`压缩文件的最大压缩文件大小为1 GB。
 * 最佳拆分大小是压缩约1 GB未压缩或200-300 MB的大小，以便最快／最早地处理文件。
 * [!DNL Amazon S3] 对上传的文件施加其自己的5 GB文件大小限制。
