@@ -1,7 +1,7 @@
 ---
 description: 从受众接收Audience Manager数据。
-seo-description: 从受众(AAM)接收Adobe Audience Manager数据。
-seo-title: 在Adobe Audience Manager中接收受众数据(AAM)
+seo-description: 从Adobe Audience Manager(AAM)接收受众数据。
+seo-title: 在Adobe Audience Manager(AAM)接收受众数据
 title: 接收受众数据
 feature: Outbound Data Transfers
 translation-type: tm+mt
