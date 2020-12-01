@@ -22,11 +22,11 @@ ht-degree: 3%
 
 您还可以查看用于测试组的基线段以及测试段的划分方式的相关信息。
 
-将随 **[!UICONTROL Test Segments]** 机填充您用于测试组的基线段中的用户。 概述显示您分配给每个测试区段的用户百分比。
+**[!UICONTROL Test Segments]**&#x200B;随机填充用户，这些用户来自您用于测试组的基线段。 概述显示您分配给每个测试区段的用户百分比。
 
-驱 **[!UICONTROL Conversion Traits]** 动测试组的报告。 要在中创建或编辑特征时，将特征指定为转换，请选 [!UICONTROL Trait Builder]择“转 **换** ”为 **[事件类型](../../features/traits/create-onboarded-rule-based-traits.md)。**
+**[!UICONTROL Conversion Traits]**&#x200B;驱动测试组的报告。 要将特征指定为转换，在[!UICONTROL Trait Builder]中创建或编辑特征时，选择&#x200B;**转换**&#x200B;作为&#x200B;**[事件类型](../../features/traits/create-onboarded-rule-based-traits.md)。**
 
-卡 **[!UICONTROL Destinations]** 可折叠。 按箭头打开或关闭单个目标，并获取测试区段的以下信息，这些测试区段按映射到的目标进行分组：
+**[!UICONTROL Destinations]**&#x200B;卡可折叠。 按箭头打开或关闭单个目标，并获取测试区段的以下信息，这些测试区段按映射到的目标进行分组：
 
 * 基本区段分配给每个目标的总人口中的设备数量。
 * 映射密钥；
