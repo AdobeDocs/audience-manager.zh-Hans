@@ -40,7 +40,7 @@ audience-lab-faq.xml
 
 <br> 
 
-**假设一个测试组正在使用已验证的用户配置文件进行测试区段拆分。该已验证的用户配置文件与 4 个[Audience Manager UUID](../reference/ids-in-aam.md)相关联。当访客展现的转化特征来源于这四个 UUID 中的一个 UUID 时，[!UICONTROL Audience Lab]会将这计为一次还是四次转化？**
+**假设一个测试组正在使用已验证的用户配置文件进行测试区段拆分。该已验证的用户配置文件与 4 个 [Audience Manager UUID](../reference/ids-in-aam.md) 相关联。当访客展现的转化特征来源于这四个 UUID 中的一个 UUID 时，[!UICONTROL Audience Lab] 会将这计为一次还是四次转化？**
 
 在这种情况下，[!UICONTROL Audience Lab] 只计入一次转化。
 
@@ -52,10 +52,10 @@ audience-lab-faq.xml
 
 <br> 
 
-**用户是否可以同时具有[!UICONTROL Segment: Read-Only]权限和[!UICONTROL Audience Lab]测试区段创建权限？**
+**用户是否可以同时具有 [!UICONTROL Segment: Read-Only] 权限和 [!UICONTROL Audience Lab] 测试区段创建权限？**
 
 有关如何结合使用 [!UICONTROL Audience Lab] 和 [!UICONTROL RBAC] 权限的信息，请参阅[创建区段测试组](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)。
 
-**我是否可以将[!UICONTROL Audience Lab]与[!UICONTROL Profile Link Device Graph]和外部设备图（[Adobe Experience Cloud 设备协作](https://docs.adobe.com/content/help/zh-Hans/device-co-op/using/home.html)、Tapad 设备图、Liveramp 设备图）结合使用？**
+**我是否可以将 [!UICONTROL Audience Lab] 与 [!UICONTROL Profile Link Device Graph] 和外部设备图（[Adobe Experience Cloud 设备协作](https://docs.adobe.com/content/help/zh-Hans/device-co-op/using/home.html)、Tapad 设备图、Liveramp 设备图）结合使用？**
 
 目前，在使用 [!UICONTROL Profile Link Device Graph] 时，[!UICONTROL Audience Lab] 只能按连接到某个合格设备的设备拆分区段人口。我们正努力在 [!UICONTROL Audience Lab] 中添加对其他设备图的支持，准备就绪后，我们将通知您。
