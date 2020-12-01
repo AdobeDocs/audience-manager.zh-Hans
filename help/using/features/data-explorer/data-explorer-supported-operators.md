@@ -18,7 +18,7 @@ ht-degree: 9%
 
 使用逻辑运算符对键值对和回填特征进行分组。
 
-## 支持的信号搜索操作符 {#supported-operators-search}
+## 支持的信号搜索{#supported-operators-search}运算符
 
 使用以下支持的逻辑运算符搜索键值对：
 
@@ -34,12 +34,12 @@ ht-degree: 9%
 
 ### 命名运算符
 
-| 运算符 | 评估时 [!DNL True] 间 |
+| 运算符 | 计算结果为[!DNL True] |
 |---|---|
-| **[!UICONTROL Contains]** | 键值对中的值包含此运 *算符* 指定的字符。 |
-| **[!UICONTROL Startswith]** | 键值对开始中的值， *其字符由* 此运算符指定。 |
-| **[!UICONTROL Endswith]** | 键值对中的值以此运 *算符* 指定的字符结尾。 |
+| **[!UICONTROL Contains]** | 键值对&#x200B;*中的值包含由此运算符指定的*&#x200B;字符。 |
+| **[!UICONTROL Startswith]** | 键——值对&#x200B;*中具有由此运算符指定的*&#x200B;字符的开始的值。 |
+| **[!UICONTROL Endswith]** | 键值对&#x200B;*中的值以*&#x200B;此运算符指定的字符结尾。 |
 
-## 特征回填和估计的支持算子 {#supported-operators-backfilling}
+## 特征回填和估计{#supported-operators-backfilling}支持的运算符
 
-您可以回填包含表达式的特征，这些特征包含受支持的任何运算符 [!UICONTROL Signal Search]。 除了这些运算符外，特征回填和估计还支 [!UICONTROL AND]持 [!UICONTROL OR]、和 [!UICONTROL AND NOT] 逻辑运算符，它们用于在回填的特征表达式内组合键值对。
+您可以回填包含表达式的特征，这些特征包含[!UICONTROL Signal Search]支持的任何运算符。 除了这些运算符外，特征回填和估计还支持[!UICONTROL AND]、[!UICONTROL OR]和[!UICONTROL AND NOT]逻辑运算符，它们用于组合回填特征表达式中的键值对。
