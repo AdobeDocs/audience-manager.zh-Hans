@@ -1,6 +1,6 @@
 ---
-description: 这些元素可识别帮助文档中使用的代码选项和变量。 通常，您不会在代码或数据文件中包含这些符号或样式元素。 它们只是视觉指示器。
-seo-description: 这些元素可识别帮助文档中使用的代码选项和变量。 通常，您不会在代码或数据文件中包含这些符号或样式元素。 它们只是视觉指示器。
+description: 这些元素可标识帮助文档中使用的代码选项和变量。 通常，您不会在代码或数据文件中包含这些符号或样式元素。 它们只是视觉指示器。
+seo-description: 这些元素可标识帮助文档中使用的代码选项和变量。 通常，您不会在代码或数据文件中包含这些符号或样式元素。 它们只是视觉指示器。
 seo-title: 代码和文本元素的样式约定
 solution: Audience Manager
 title: 代码和文本元素的样式约定
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 # 代码和文本元素的样式约定{#style-conventions-for-code-and-text-elements}
 
-这些元素可识别帮助文档中使用的代码选项和变量。 通常，您不会在代码或数据文件中包含这些符号或样式元素。 它们只是视觉指示器。
+这些元素可标识帮助文档中使用的代码选项和变量。 通常，您不会在代码或数据文件中包含这些符号或样式元素。 它们只是视觉指示器。
 
 <table id="table_EBEF9490D90041BD8B7ABE3AF1AF35B6"> 
  <thead> 
@@ -29,7 +29,7 @@ ht-degree: 11%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> <i>variable</i> </code> </p> </td> 
-   <td colname="col2"> <p>变量以斜体 <i>显示</i>。 用适当的值替换变量名称。 </p> <p>为了视觉清晰度，有时变量和其他代码元素显示在&lt; &gt;括号之间。 您无需在代码中使用这些符号。 </p> </td> 
+   <td colname="col2"> <p>变量显示在<i>斜体</i>中。 用适当的值替换变量名称。 </p> <p>为了视觉清晰度，有时变量和其他代码元素显示在&lt; &gt;括号之间。 您无需在代码中使用这些符号。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [optional]</code> </p> </td> 
@@ -37,7 +37,7 @@ ht-degree: 11%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> (this|that) </code> </p> </td> 
-   <td colname="col2"> <p>括号中的项表示布尔 <span class="wintitle"> OR</span> 选项。 </p> </td> 
+   <td colname="col2"> <p>括号中的项表示布尔<span class="wintitle">或</span>选项。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> literal</code> </p> </td> 
