@@ -17,16 +17,16 @@ ht-degree: 4%
 
 # 特征仪表板 {#traits-dashboard}
 
-“特 [征仪表板](https://bank.demdex.com/portal/Traits/Traits.ddx#show/list) ”是用于管理特征的集中工作区。 您可以通过导 [!UICONTROL Traits] 航到>来查看 **[!UICONTROL Audience Data]** 仪表板 **[!UICONTROL Traits]**。
+[特征仪表板](https://bank.demdex.com/portal/Traits/Traits.ddx#show/list)是用于管理特征的集中工作区。 您可以导航到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Traits]**，看到[!UICONTROL Traits]仪表板。
 
 ![](assets/traits-dashboard.png)
 
 <!-- c_tb_dashboard.xml -->
 
-该仪表板 [!UICONTROL Traits] 包含可帮助您：
+[!UICONTROL Traits]仪表板包含有助于您：
 
 1. 在表格中查看所有特征和相关详细信息，您可以排序列。
-2. 检查并处理活 [动受众特征和数据源同步特征](../../features/traits/client-activity-synced-audience-traits.md)。
+2. 查看并使用[活动受众特征和数据源同步特征](../../features/traits/client-activity-synced-audience-traits.md)。
 3. 创建、编辑和删除特征。
 4. 视图和管理特征存储文件夹。
 5. 按名称、ID、说明或数据源搜索特征。 在搜索时单击某个文件夹可将结果限制在该文件夹及其子文件夹中。
