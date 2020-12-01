@@ -17,7 +17,7 @@ ht-degree: 13%
 
 # 特征生成器中的运算顺序 {#order-of-operations-in-trait-builder}
 
-[!UICONTROL Trait Builder] 根据下面列出的操作顺序评估表达式，从高优先级到低优先级。 由高优先级运算符定义的特征元素首先在其它优先级运算符之前进行评估。 此部分根据优先级对每个运算符进行排序，从高到低。
+[!UICONTROL Trait Builder] 根据下面列出的操作顺序评估表达式，从高优先级到低优先级。由高优先级运算符定义的特征元素首先在其它优先级运算符之前进行评估。 此部分根据优先级对每个运算符进行排序，从高到低。
 
 <!-- c_tb_operator_precedence.xml -->
 
@@ -32,12 +32,12 @@ ht-degree: 13%
  <tbody> 
   <tr> 
    <td colname="col1"> 圆括号 </td> 
-   <td colname="col2"> ( ) </td> 
+   <td colname="col2"> () </td> 
    <td colname="col3"> 括号中的表达式始终优先计算，并按优先顺序排列。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 比较运算符 </td> 
-   <td colname="col2"> &lt; &gt; &lt;= &gt;= </td> 
+   <td colname="col2"> &lt;&gt; &lt;&gt;= </td> 
    <td colname="col3"> 接下来评估小于、大于、小于／等于、大于／等于。 </td> 
   </tr> 
   <tr> 
@@ -46,12 +46,12 @@ ht-degree: 13%
    <td colname="col3"> 等于、不等于在前一个运算符之后计算。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1">布尔 <span class="wintitle"> 和</span> </td> 
+   <td colname="col1">布尔值<span class="wintitle"> AND</span> </td> 
    <td colname="col2"><span class="wintitle"> 且</span> </td> 
    <td colname="col3" morerows="1"> 不适用 </td> 
   </tr> 
   <tr> 
-   <td colname="col1">布尔 <span class="wintitle"> OR</span> </td> 
+   <td colname="col1">布尔值<span class="wintitle"> OR</span> </td> 
    <td colname="col2"><span class="wintitle"> 或者</span> </td> 
    <td colname="col3" morerows="1"> 不适用 </td> 
   </tr> 
