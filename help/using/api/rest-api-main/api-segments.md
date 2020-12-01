@@ -21,7 +21,7 @@ ht-degree: 25%
 
 >[!IMPORTANT]
 >
->段方 [!DNL API] 法已被重写并 [!DNL Swagger] 迁移。 请参阅：
+>段[!DNL API]方法已用[!DNL Swagger]重写并迁移。 请参阅：
 >
 >* [Adobe Audience ManagerAPI文档](https://bank.demdex.com/portal/swagger/index.html)
 >* [Audience Manager API 代码迁移](../../api/api-swagger-migration.md)
