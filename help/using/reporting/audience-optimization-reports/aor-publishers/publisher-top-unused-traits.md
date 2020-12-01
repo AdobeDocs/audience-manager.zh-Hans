@@ -21,31 +21,31 @@ ht-degree: 2%
 
 ## 用例 {#use-cases}
 
-通过报 [!UICONTROL Top Unused Traits] 告，您可以分析和比较当前未映射到区段的第一方和第三方特征的性能。 此视图可以指出在受众区段中用于活动优化或净化新机会的最佳特征。
+通过[!UICONTROL Top Unused Traits]报告，您可以分析和比较当前未映射到区段的第一方和第三方特征的性能。 此视图可以指出在受众区段中用于活动优化或净化新机会的最佳特征。
 
-## 使用“最大未使用特征”报表 {#using-the-report}
+## 使用“Top Unused Traits Report {#using-the-report}(使用“Top Unused Traits Report &lt;a0/>”（使用“Top Unused Traits Report &lt;a0/>）”
 
-使用控 **[!UICONTROL Data Provider Type]** 件在第一方和第三方特征之间切换。 选择 **[!UICONTROL All]** 以在报表中返回第一方和第三方特征。
+使用&#x200B;**[!UICONTROL Data Provider Type]**&#x200B;控件在第一方和第三方特征之间切换。 选择&#x200B;**[!UICONTROL All]**&#x200B;以在报告中返回第一个和第三方特征。
 
-使用滑 **[!UICONTROL Impressions]** 块，您可以为返回的印象选择最小值和最大值。 任何对您设置的限制负有或超过限制的特征均不会显示在报告中。
+使用&#x200B;**[!UICONTROL Impressions]**&#x200B;滑块，可以为返回的展示次数选择最小值和最大值。 任何对您设置的限制负有或超过限制的特征均不会显示在报告中。
 
-使用 **[!UICONTROL Day Range]** 和 **[!UICONTROL Date Through]** 控件调整回顾范围。 请注意，此报表仅提供30天回顾期。
+使用&#x200B;**[!UICONTROL Day Range]**&#x200B;和&#x200B;**[!UICONTROL Date Through]**&#x200B;控件调整回顾范围。 请注意，此报表仅提供30天回顾期。
 
-使用 **[!UICONTROL Order]** 下拉框选择您要返回信息的个人信息中的Web属性。
+使用&#x200B;**[!UICONTROL Order]**&#x200B;下拉框选择要返回信息的个人信息中的Web属性。
 
-在下 **[!UICONTROL Data Provider]** 拉框中，选择包含要在报表中查看的特征的数据源。
+在&#x200B;**[!UICONTROL Data Provider]**&#x200B;下拉框中，选择包含要在报告中查看的特征的数据源。
 
-使用下 **[!UICONTROL Traits]** 拉框选择要在报表中查看的特征。
+使用&#x200B;**[!UICONTROL Traits]**&#x200B;下拉框选择要在报告中显示哪些特征。
 
 >[!IMPORTANT]
 >
->启用时， [!UICONTROL Audience Optimization for Publishers]必须包含描述性元数据， [!UICONTROL Order IDs]如将Google Ad Manager( [以前称为DFP)数据文件导入Audience Manager的步骤3中所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 通过执行此操作，您可以确保报告将Web属性详细 [!UICONTROL Order] 化为而非 [!UICONTROL Order ID]。
+>启用[!UICONTROL Audience Optimization for Publishers]时，必须包含[!UICONTROL Order IDs]的描述性元数据，如[将Google Ad Manager（以前称为DFP）数据文件导入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步骤3中所述。 通过执行此操作，您可以确保报告将web属性详细描述为[!UICONTROL Order]而不是[!UICONTROL Order ID]。
 
-## 解释结果 {#interpreting-results}
+## 解释结果{#interpreting-results}
 
 **示例报告**
 
-您 [!UICONTROL Top Unused Traits] 的报告可能与下面的报告类似。 在报表中，单击气泡以视图基础数据。
+您的[!UICONTROL Top Unused Traits]报告可能与下面的报告类似。 在报表中，单击气泡以视图基础数据。
 
 有关其他信息，请参阅示例报告下表中的说明。
 
@@ -90,9 +90,9 @@ ht-degree: 2%
 
 您的特征在报表中的位置可以告诉您许多可用于优化现有受众段的特征。
 
-“展示次数”轴上较高的特征是您要在活动中使用的特征。 对于印象较少的特征，您不太可能根据您的受众在您的Web资产上获得此 [!DNL Google Ad Manager] 。
+“展示次数”轴上较高的特征是您要在活动中使用的特征。 对于印象较少的特征，您不太可能根据您的[!DNL Google Ad Manager]受众在您的Web属性上获得此数据。
 
-请向左侧查找高度精 [!UICONTROL Unique Trait Realizations] 确的特征，向右查找可驱动缩放的特征。
+查看[!UICONTROL Unique Trait Realizations]轴的左侧，获得高度准确的特征，右侧，查看能够驱动缩放的特征。
 
 <table id="table_A29253B30DFA4CD7B3B7C320DE0BDEA4"> 
  <thead> 
@@ -112,7 +112,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>右上</b> </p> </td> 
-   <td colname="col2"> <p>展示次数多，特征实现次数多。 </p> <p>对尚未在区段中表示的受众的高范围。 此受众是定位的主要候选者，因为展示次数和规模很大。 </p> </td> 
+   <td colname="col2"> <p>展示次数多，特质实现次数多。 </p> <p>对尚未在区段中表示的受众的高范围。 此受众是定位的主要候选者，因为展示次数和规模很大。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>右下</b> </p> </td> 
