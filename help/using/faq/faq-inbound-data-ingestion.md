@@ -57,9 +57,9 @@ ht-degree: 91%
 
  
 
-**我能否先上传入站数据文件（[!DNL .sync]或[!DNL .overwrite]文件），然后再将[!DNL Audience Manager]代码部署到生产环境中？**
+**我能否先上传入站数据文件（[!DNL .sync] 或 [!DNL .overwrite] 文件），然后再将 [!DNL Audience Manager] 代码部署到生产环境中？**
 
-能。As long as you use a [!UICONTROL cross-device data source] to store the CRM data that you upload, Audience Manager always stores the data. In fact, following the [!UICONTROL Profile Merge Rules] enhancements that Audience Manager launched in October 2019 that allow for offline-only use cases, you can upload and action on data without deploying Audience Manager code into production at all. 请参阅：
+能。只要您使用[!UICONTROL cross-device data source]存储您上传的CRM数据，Audience Manager始终会存储该数据。 事实上，在2019年10月Audience Manager启动的[!UICONTROL Profile Merge Rules]增强功能允许仅脱机使用情形后，您无需将Audience Manager代码部署到生产环境即可上传数据并对其执行操作。 请参阅：
 
 * [配置文件合并规则增强功能概述](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
 * [!UICONTROL People-based Destinations] -基 [于仅线下数据的个性化](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
@@ -188,7 +188,7 @@ FTP 文件在处理后即会被删除。[!DNL S3] 文件将在 30 天后被删�
 
  
 
-**什么是[!DNL Data Provider ID (DPID)]，如何获得？**
+**什么是 [!DNL Data Provider ID (DPID)] ，如何获得？**
 
 Adobe 顾问将为您的特定数据源分配一个三位数或四位数的 [DPID（数据提供商 ID）](../reference/ids-in-aam.md)。此 ID 是唯一的，不会更改。
 
@@ -221,13 +221,13 @@ Adobe 顾问将为您的特定数据源分配一个三位数或四位数的 [DPI
 
  
 
-**我应该使用 FTP 还是[!DNL Amazon S3]来传输文件？**
+**我应该使用 FTP 还是 [!DNL Amazon S3] 来传输文件？**
 
 作为最佳做法，我们建议您使用 [!DNL Amazon S3]，因为该过程更简单。不管如何，[!DNL Audience Manager] 都会将 FTP 文件传输到 [!DNL S3]，因此，如果您自行将文件放置到 [!DNL Amazon S3] 上，可以简化该过程。此外，如果多个客户同时上传到 FTP，则他们会共享 FTP 的带宽，因此上传速度会较慢。[!DNL Amazon S3] 也是可复制和分发的，因此它通常比 FTP 服务器更安全、更可靠。有关更多信息，请参阅[关于 Amazon S3](../reference/amazon-s3.md)。
 
 >[!WARNING]
 >
->我们正在逐步停止对 FTP 配置的支持。While inbound data file ingestion is still supported in existing FTP integrations, we strongly recommend using [!DNL Amazon S3] to onboard offline data for new integrations. 有关详细信息，请参阅[入站数据文件的 Amazon S3 名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
+>我们正在逐步停止对 FTP 配置的支持。虽然现有FTP集成仍支持入站数据文件摄取，但我们强烈建议使用[!DNL Amazon S3]载入离线数据以进行新集成。 有关详细信息，请参阅[入站数据文件的 Amazon S3 名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
 
  
 
