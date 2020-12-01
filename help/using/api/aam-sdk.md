@@ -17,7 +17,7 @@ ht-degree: 40%
 
 # [!DNL SDK] 代码 {#sdk-code}
 
-Audience Manager为和提供软[!DNL SDK]件开发套 [!DNL Android] 件 [!DNL iOS]。
+Audience Manager为[!DNL Android]和[!DNL iOS]提供软件开发套件([!DNL SDK]s)。
 
 >[!IMPORTANT]
 >
@@ -25,7 +25,7 @@ Audience Manager为和提供软[!DNL SDK]件开发套 [!DNL Android] 件 [!DNL i
 
 * 要开始配置，请转到 [Launch](https://launch.adobe.com/)。
 * 要查看 Experience Platform SDK 存储库中的内容，请转到 [Github：Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
-* 要在应用程序中实施Audience Manager，请使用新的SDK v.5，请阅读 [新的SDK页](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-audience-manager) 上的Adobe Audience Manager文档。
+* 要在您的应用程序中实施Audience Manager，请使用新的SDK v.5，请阅读新的SDK页面上的[Adobe Audience Manager文档](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-audience-manager)。
 
 <br> 
 
