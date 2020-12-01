@@ -21,9 +21,9 @@ ht-degree: 6%
 
 <!-- c_partner_site.xml -->
 
-## Create a New Domain {#create-new-domain}
+## 创建新域{#create-new-domain}
 
-一 `POST` 种方法，允许您为（仅Cookie目标）创建新域。
+`POST`方法，用于为（仅cookie目标）创建新域。
 
 <!-- r_post_new_partner_site.xml -->
 
@@ -41,7 +41,7 @@ ht-degree: 6%
 
 ### 响应
 
-成功的响应会 `201 created` 返回合作伙伴站点，包括其唯一ID。
+成功的响应会返回`201 created`和合作伙伴站点，包括其唯一ID。
 
 ```
 {
@@ -51,9 +51,9 @@ ht-degree: 6%
 }
 ```
 
-## 删除域 {#delete-domain}
+## 删除域{#delete-domain}
 
-一种 `DELETE` 允许您删除域的方法（仅用于cookie目标）。
+`DELETE`方法，允许您删除域（仅用于cookie目标）。
 
 <!-- r_delete_partner_site.xml -->
 
@@ -63,11 +63,11 @@ ht-degree: 6%
 
 ### 响应
 
-返回成功的响应 `204 no content`。 如果 `404 not found` 找不到合作伙伴站点，则返回。
+成功的响应返回`204 no content`。 如果找不到合作伙伴站点，则返回`404 not found`。
 
-## 返回域的属性 {#return-props-domain}
+## 返回域{#return-props-domain}的属性
 
-返回 `GET` 有关指定域的详细信息的方法（仅用于cookie目标）。
+一种`GET`方法，它返回有关指定域的详细信息（仅适用于cookie目标）。
 
 <!-- r_get_partner_site.xml -->
 
@@ -77,7 +77,7 @@ ht-degree: 6%
 
 ### 响应
 
-成功的响应 `200 OK` 返回数据，如以下示例所示。 如果 `404 Not found` 找不到站点ID或合作伙伴，则返回。
+成功的响应返回`200 OK`和数据，如以下示例所示。 如果找不到站点ID或合作伙伴，则返回`404 Not found`。
 
 ```
 {
@@ -87,9 +87,9 @@ ht-degree: 6%
 }
 ```
 
-## 返回所有域的属性 {#return-props-all-domains}
+## 返回所有域{#return-props-all-domains}的属性
 
-返回 `GET` 有关所有域的信息的方法（仅用于cookie目标）。
+一种`GET`方法，它返回有关所有域的信息（仅用于cookie目标）。
 
 <!-- r_get_partner_sites.xml -->
 
@@ -99,7 +99,7 @@ ht-degree: 6%
 
 ### 可选查询参数
 
-可以将这些可选参数与返 [!DNL API] 回对象所 *有属性* 的方法结合使用。 将查询传递到请求字符串时，在中设置这些选项 [!DNL API]。 请参 [阅可选参数](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
+您可以将这些可选参数与[!DNL API]方法一起使用，这些方法返回对象的&#x200B;*所有*&#x200B;属性。 将查询传递到[!DNL API]时，在请求字符串中设置这些选项。 请参阅[可选参数](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
 
 <table id="table_B05A8EE22C9A4C72B84A8479E1AB7D0A"> 
  <thead> 
@@ -134,7 +134,7 @@ ht-degree: 6%
 
 ### 响应
 
-成功的响应 `200 OK` 返回数组中的数据，如以下示例所示。 如果 `404 Not found` 找不到站点ID或合作伙伴，则返回。
+成功的响应会返回`200 OK`和数组中的数据，如以下示例所示。 如果找不到站点ID或合作伙伴，则返回`404 Not found`。
 
 ```
 [
