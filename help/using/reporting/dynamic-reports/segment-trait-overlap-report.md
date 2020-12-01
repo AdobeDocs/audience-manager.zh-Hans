@@ -21,7 +21,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Audience Manager中的重叠报表遵循RBAC原则。 您只能根据您所属的RBAC用户组，从您有权访问的 [数据源中查看区段](/help/using/features/administration/administration-overview.md) 和特征。
+>Audience Manager中的重叠报表遵循RBAC原则。 您只能根据您所属的[RBAC用户组](/help/using/features/administration/administration-overview.md)从您有权访问的数据源查看区段和特征。
 
 <!-- 
 
@@ -31,11 +31,11 @@ c_segment_trait_overlap.xml
 
 ## 概述
 
-作为一种优化工具，报 [!UICONTROL Segment to Trait Overlap] 告可以帮助您建立高度集中的细分或扩大细分范围。 例如，您可以创建重叠度高的重点细分和特征，以到达特定受众。 但是，大量重叠可能意味着唯一用户数量减少（触及范围更小）。 运行此报告以通过删除具有大量细分重叠的特征并用重叠较少的特征替换它们来帮助扩大受众范围。
+作为优化工具，[!UICONTROL Segment to Trait Overlap]报告可帮助您建立高度集中的细分或扩大细分范围。 例如，您可以创建重叠度高的重点细分和特征，以到达特定受众。 但是，大量重叠可能意味着唯一用户数量减少（触及范围更小）。 运行此报告以通过删除具有大量细分重叠的特征并用重叠较少的特征替换它们来帮助扩大受众范围。
 
 ### 示例报告
 
-下图提供了报告的高级概 [!UICONTROL Segment-to-Trait Overlap] 述。
+下图提供了[!UICONTROL Segment-to-Trait Overlap]报告的高级概述。
 
 ![](assets/segment-to-trait-overlap.png)
 
@@ -43,7 +43,7 @@ c_segment_trait_overlap.xml
 
 在弹出窗口中选择单个点以视图数据详细信息。 单击操作会自动更新报告中显示的数据。
 
-## 比较区段与特征 {#comparing-segments-to-traits}
+## 将区段与特征{#comparing-segments-to-traits}比较
 
 介绍如何比较区段和特征，从结果中获得有意义的信息。
 
@@ -53,7 +53,7 @@ c_compare_s2t.xml
 
  -->
 
-### 比较特征和段单位： 示例
+### 比较特征和段单位：示例
 
 乍一看，比较细分与特征并试图从结果中得出结论似乎不合逻辑。 毕竟，细分和特征是不同的，那么从不同项目中衍生出的数据又有什么意义呢？ 但是，在这种情况下，我们不会比较特征和区段，而是比较它们之间共享的唯一访客数。 共享的唯一访客计数提供了使区段与特征比较成为可能的公用值。
 
@@ -84,12 +84,12 @@ c_compare_s2t.xml
   </tr> 
   <tr> 
    <td colname="col1"><b>查找低效的细分</b> </td> 
-   <td colname="col2"> <p>如果某个特征是段定义 <span class="wintitle"> 中AND</span> 组的一部分，则具有该特征的唯一访客已在段中，无法添加到段。 您可以使用此报表查找重叠度低的相关特征并将它们添加到区段定义中，从而增加该区段受众池的范围。 </p> </td> 
+   <td colname="col2"> <p>如果特征是段定义中<span class="wintitle"> AND</span>组的一部分，则具有该特征的唯一访客已在段中，无法添加到段。 您可以使用此报表查找重叠度低的相关特征并将它们添加到区段定义中，从而增加该区段受众池的范围。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 了解区段到特征重叠报表中的过滤器 {#data-filters-s2t-report}
+## 了解区段到特征重叠报表{#data-filters-s2t-report}中的过滤器
 
 描述特征和区段唯一重叠%滑块的工作方式。
 
@@ -99,7 +99,7 @@ r_s2t_sliders.xml
 
  -->
 
-该报 [!UICONTROL Segment-to-Trait overlap] 告允许您使用两个滑块按重叠%（按特征或区段）筛选数据。
+通过[!UICONTROL Segment-to-Trait overlap]报告，您可以使用两个滑块按重叠%（按特征或段）筛选数据。
 
 * **[!UICONTROL Filter Trait Uniques %:]** 过滤器特征和区段之间共享的唯一访客的%。
 * **[!UICONTROL Filter Segment Uniques Overlap %:]** 过滤器数据，按区段与特征之间共享的唯一访客的%。
@@ -113,7 +113,7 @@ r_s2t_sliders.xml
 
 ![](assets/s2t.png)
 
-## 已定义段到特征数据弹出字段 {#fields-defined}
+## 定义的段到特征数据弹出字段{#fields-defined}
 
 描述在单击单个数据点时在弹出窗口中显示的度量。
 
@@ -123,7 +123,7 @@ r_s2t_data_pop.xml
 
  -->
 
-报告的弹出 [!UICONTROL Segment-to-Trait Overlap] 窗口包含以下指标。 请注意，表中的唯一度量表示 *您的实时用户*。
+[!UICONTROL Segment-to-Trait Overlap]报告的弹出窗口包含以下度量。 请注意，表中的唯一度量表示您的&#x200B;*实时用户*。
 
 <table id="table_4AF72754276242FFB11543635B43AD90"> 
  <thead> 
@@ -138,7 +138,7 @@ r_s2t_data_pop.xml
    <td colname="col2"> 区段的唯一数字ID。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 特征数据源 </span></b> </td> 
+   <td colname="col1"><b><span class="wintitle"> 特征数据源  </span></b> </td> 
    <td colname="col2"> 特征所有者的名称。 </td> 
   </tr> 
   <tr> 
