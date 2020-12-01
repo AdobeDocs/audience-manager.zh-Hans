@@ -17,19 +17,19 @@ ht-degree: 12%
 
 # 含布尔和比较运算符的示例表达式 {#sample-expressions-with-boolean-and-comparison-operators}
 
-有关在代码编辑器中创建表达式的示例， [!UICONTROL Expression Builder] 请参阅。
+有关在[!UICONTROL Expression Builder]代码编辑器中创建表达式的示例，请参阅。
 
-## 代码示例概述 {#code-samples-overview}
+## 代码示例概述{#code-samples-overview}
 
 <!-- r_tb_expression_samples.xml -->
 
-使用代码编辑器创建您自己的 [!UICONTROL Expression Builder] 特征规则。 以下示例可以帮助您开始。 有些示例在变量前 *`key`* 面加 `c_` 以说明，将其标识为用户定义的变量。 如果事件 `c_` 调用使用该语法向发送数据，则 *`key`* 请为变量添加前缀(或任何其 [!DNL Audience Manager] 他命名约定)。
+使用[!UICONTROL Expression Builder]代码编辑器创建您自己的特征规则。 以下示例可以帮助您开始。 有些示例在&#x200B;*`key`*&#x200B;变量前面加上`c_` ，将其标识为用户定义的变量。 如果您的事件调用使用[!DNL Audience Manager]语法向&lt;a2/>发送数据，则包括&#x200B;*`key`*&#x200B;变量的`c_`前缀（或任何其他命名约定）。
 
-## 布尔表达式 {#boolean-expressions}
+## 布尔表达式{#boolean-expressions}
 
 ### 和示例
 
-该规则使用布尔运算符建立特征资格 [!UICONTROL AND] 要求。
+该规则使用布尔[!UICONTROL AND]运算符建立特征资格要求。
 
 <table id="table_7C5E23EC9E0F43B182EA9771D7BB6E87"> 
  <thead> 
@@ -52,7 +52,7 @@ ht-degree: 12%
 
 ### OR示例
 
-此规则使用运算符和运算符建立特 [!DNL Boolean] 征 [!UICONTROL OR] 资格 [!UICONTROL AND] 要求。
+此规则使用[!DNL Boolean] [!UICONTROL OR]和[!UICONTROL AND]运算符建立特质资格要求。
 
 <table id="table_6E8BA5EE1D7F4DCC9A92074D0C2C050E"> 
  <thead> 
@@ -64,7 +64,7 @@ ht-degree: 12%
  <tbody> 
   <tr> 
    <td colname="col1"><code>(a== "1" OR b=="1") AND (c=="new")</code> </td> 
-   <td colname="col2"> 满足变量或和设 <code><i>a </i></code> 置的 <code><i>b </i></code> 条件 <code><i>c </i></code>。 </td> 
+   <td colname="col2"> 满足变量<code><i>a </i></code>或<code><i>b </i></code>和<code><i>c </i></code>设置的条件。 </td> 
   </tr> 
  </tbody> 
 </table>
