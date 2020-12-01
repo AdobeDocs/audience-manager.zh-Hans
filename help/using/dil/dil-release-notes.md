@@ -1,6 +1,6 @@
 ---
-description: 有关最新DIL版本的信息，请参阅本页
-seo-description: 有关最新DIL版本的信息，请参阅本页
+description: 请参阅本页以了解有关最新DIL版本的信息
+seo-description: 请参阅本页以了解有关最新DIL版本的信息
 seo-title: DIL 发行说明
 solution: Audience Manager
 title: DIL 发行说明
@@ -16,5 +16,5 @@ ht-degree: 22%
 
 # DIL 发行说明
 
-有关最新DIL版本的信息，请参阅本页。 DIL可在Adobe的Github页面上直接下载并提供发 [行说明](https://github.com/Adobe-Marketing-Cloud/dil/releases)。
+有关最新DIL版本的信息，请参阅本页。 DIL在Adobe的[Github页面](https://github.com/Adobe-Marketing-Cloud/dil/releases)上提供直接下载和发行说明。
 
