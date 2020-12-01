@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # 批量数据传输流程说明 {#batch-data-transfer-process-described}
 
-关于如何与第 [!DNL Audience Manager] 三方供应商执行异步批处理数据交换的一般概述。
+概述[!DNL Audience Manager]如何与第三方供应商执行异步批处理数据交换。
 
 ## 批量数据集成
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 * 无需立即进行数据传输。
 * 收集数据以构建大量分段用户池。
-* 您希望减少数据差异 `HTTP` 和来自浏览器的调用。
+* 您希望减少数据差异和来自浏览器的`HTTP`调用。
 
 ![](assets/s2s_70.png)
 
@@ -36,5 +36,5 @@ ht-degree: 7%
 1. 用户访问客户站点。
 1. [!DNL Audience Manager] 第三方数据提供者为访客分配唯一ID（通常使用cookie）。
 1. [!DNL Audience Manager] 调用第三方数据提供程序以匹配访客ID。
-1. 在与第三方数据提供商之间交换访客段数据的 [!DNL Audience Manager] 预定请求（通常在每日间隔内）。
-1. 每当处理入站 [!UICONTROL Server-to-Server] 文件时，都会通过电子邮件将收据发送给合作伙伴解决方案，如果配置了，还会将收据发送给合作伙伴。 有关详细信息，请参 [阅入站处理后向合作伙伴发送的示例消息](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)。
+1. 在[!DNL Audience Manager]和第三方数据提供程序之间交换访客段数据的预定请求（通常在每日间隔内）。
+1. 每当处理入站[!UICONTROL Server-to-Server]文件时，都会通过电子邮件将收据发送给合作伙伴解决方案，如果配置了，还会发送给合作伙伴。 有关详细信息，请参阅[入站处理后向合作伙伴发送的示例消息](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)。
