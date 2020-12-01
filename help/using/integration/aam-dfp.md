@@ -15,8 +15,8 @@ ht-degree: 0%
 ---
 
 
-# 作为Audience Manager目标的Google Ad Manager（以前称为DFP） {#dfp-as-an-audience-manager-destination}
+# 作为Audience Manager目标{#dfp-as-an-audience-manager-destination}的Google Ad Manager（以前称为DFP）
 
-设置 [!DNL Google Ad Manager] 为目标，并将Audience Manager段数据发送到该平台。
+将[!DNL Google Ad Manager]设置为目标，并将Audience Manager段数据发送到该平台。
 
-本节中的文档描述了过时的与集成的方法， [!DNL Google Ad Manager] 并且已被删除。 有关 [!DNL Google Ad Manager] 集成，请参 [阅使用Google Publisher标记(GPT)集成Google Ad Manager](../integration/gpt-aam-destination/gpt-aam-requirements.md)。
+本节中的文档描述了与[!DNL Google Ad Manager]集成的过时方法，并已被删除。 有关[!DNL Google Ad Manager]集成，请参阅[使用Google Publisher标记(GPT)](../integration/gpt-aam-destination/gpt-aam-requirements.md)集成Google Ad Manager。
