@@ -23,11 +23,11 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->不能使用这些方法创建新的分类类别或分类特征。 要对特征进行分类，请使用特 `categoryId` 征创建或更新方法指定相应的特征。
+>不能使用这些方法创建新的分类类别或分类特征。 要对特征进行分类，请使用特征创建或更新方法指定相应的`categoryId`。
 
-## 返回特定分类 {#return-specific-taxonomy}
+## 返回特定分类{#return-specific-taxonomy}
 
-返回 `GET` 有关指定分类类别的详细信息的方法。
+`GET`方法，返回有关指定分类类别的详细信息。
 
 <!-- r_rest_api_taxonomy.xml -->
 
@@ -37,7 +37,7 @@ ht-degree: 7%
 
 ### 响应
 
-成功的响应 `200 OK` 返回指定ID的类别。 如果ID不存 `404 No Content` 在，则返回不成功的请求。
+成功的响应返回`200 OK`和指定ID的类别。 如果ID不存在，则不成功的请求将返回`404 No Content`。
 
 ```
 {
@@ -50,9 +50,9 @@ ht-degree: 7%
 }
 ```
 
-## 返回所有分类类别 {#return-all-taxonomy-categories}
+## 返回所有分类类别{#return-all-taxonomy-categories}
 
-一 `GET` 种方法，它返回数组中顶级类别的列表。
+一种`GET`方法，它返回数组中顶级类别的列表。
 
 <!-- r_rest_api_taxonomies.xml -->
 
@@ -93,9 +93,9 @@ ht-degree: 7%
 ]
 ```
 
-## 返回分类子类别 {#return-taxonomy-sub-categories}
+## 返回分类子类别{#return-taxonomy-sub-categories}
 
-一 `GET` 种为数组中指定的父类别返回子类别的方法。
+`GET`方法，它为数组中指定的父类别返回子类别。
 
 <!-- r_rest_api_taxonomy_sub.xml -->
 
@@ -105,7 +105,7 @@ ht-degree: 7%
 
 ### 响应
 
-成功的响应 `200 OK` 返回指定ID的类别。 如果ID不存 `404 No Content` 在，则返回不成功的请求。 短时间截断。
+成功的响应返回`200 OK`和指定ID的类别。 如果ID不存在，则不成功的请求将返回`404 No Content`。 短时间截断。
 
 ```
 [
