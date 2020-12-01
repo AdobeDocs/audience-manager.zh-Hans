@@ -1,7 +1,7 @@
 ---
 description: 将受众数据从其他来源发送到Audience Manager。
-seo-description: 将受众数据从其他源发送到Adobe Audience Manager(AAM)。
-seo-title: 在Adobe Audience Manager中发送受众数据(AAM)
+seo-description: 将受众数据从其他来源发送到Adobe Audience Manager(AAM)。
+seo-title: 在Adobe Audience Manager(AAM)发送受众数据
 title: 发送受众数据
 feature: Inbound Data Transfer
 translation-type: tm+mt
