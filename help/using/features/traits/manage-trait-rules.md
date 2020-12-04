@@ -7,7 +7,7 @@ title: 管理特征规则
 uuid: 827d4567-2b6f-411e-bd5c-9735c916291a
 feature: Traits
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 14c5ac091a27d125c96d17ce750c6e25ad844856
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 1%
@@ -29,13 +29,17 @@ ht-degree: 1%
 
 1. 本节中的字段和控件允许您从键值对创建信号，并使用比较运算符设置它们之间的关系。 键、运算符和值是必需的。
 1. [!UICONTROL Data Explorer Options]允许您回填信号的特征实现。
+
    >[!NOTE]
    >
    >此选项仅对[!UICONTROL Data Explorer]客户可用。 有关详细信息，请与Adobe顾问联系。
+
 1. 本节将显示过去7天中为[!UICONTROL Expression Builder]中定义的已回填和未回填特征所定义的信号的特征实现的估计。
+
    >[!NOTE]
    >
    >此选项仅对[!UICONTROL Data Explorer]客户可用。 有关详细信息，请与Adobe顾问联系。
+
 1. 测试字段允许您验证信号规则或[!DNL URL]在向Audience Manager发送数据时要使用的组合。
 
 ## 创建特征规则{#create-trait-rule}
@@ -47,18 +51,23 @@ ht-degree: 1%
 在创建特征规则之前，完成&#x200B;**[!UICONTROL Basic Information]**&#x200B;部分&#x200B;*中的必填字段。*
 
 1. 展开&#x200B;**[!UICONTROL Trait Expression]**&#x200B;部分，并输入键和值名称。 这将创建&#x200B;*`signal`*。
+
    >[!NOTE]
    >
    >如果您的事件调用使用该语法向[!DNL Audience Manager]发送数据，请包含键变量的`c_`前缀（或任何其他命名约定）。
+
 1. 从&#x200B;**[!UICONTROL Operator]**&#x200B;下拉列表中选择[比较运算符](../../features/traits/trait-comparison-operators.md)。 比较运算器评估信号中各元件之间的关系。
+
    >[!NOTE]
    >
    >[!DNL Boolean] [!UICONTROL OR]运算符建立&#x200B;*组内多个信号*&#x200B;之间的关系，不能更改。
+
 1. 单击 **[!UICONTROL Add Rule]**. 保存的规则显示在数据条目字段上方的traits工作区中。
 
 ### 示例 {#example-trait-rule}
 
 在以下示例中，用户已基于产品ID创建了新的特征规则。 为构建此规则，用户将与等号运算符(`==`)链接的键`productkey`提供给值`2093`。
+
 ![](assets/tb_sample_rule1.png)
 
 单击&#x200B;**[!UICONTROL Add Rule]**&#x200B;将保存特征并将其移入[!UICONTROL Expression Builder]工作区。
@@ -75,10 +84,13 @@ ht-degree: 1%
 
 1. 将光标移到要移动的规则上以突出显示它。
 1. 将指针悬停在突出显示的规则边框上。
-这会自动将规则与其当前组分离，并将其移入新组。
+
+   这会自动将规则与其当前组分离，并将其移入新组。
+
    >[!NOTE]
    >
    >如果无意中移动规则，请将其拖回其原始组。
+
 1. 从下拉菜单中选择[!DNL Boolean]运算符([!UICONTROL AND]、[!UICONTROL OR]、[!UICONTROL AND NOT])，以设置规则组之间的关系。
 
 ## 在组之间移动规则{#move-rules-between-groups}
