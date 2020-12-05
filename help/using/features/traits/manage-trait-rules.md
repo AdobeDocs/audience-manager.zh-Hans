@@ -1,6 +1,6 @@
 ---
-description: 在特征生成器中，表达式生成器允许您创建和测试确立受众资格要求的规则。 规则由键值对组成，如“color == blue”或“price > 100”。 比较运算符建立键和值之间的关系。 布尔表达式确定规则组之间的关系。
-seo-description: 在特征生成器中，表达式生成器允许您创建和测试确立受众资格要求的规则。 规则由键值对组成，如“color == blue”或“price > 100”。 比较运算符建立键和值之间的关系。 布尔表达式确定规则组之间的关系。
+description: 在特征生成器中，表达式生成器允许您创建和测试确立受众资格要求的规则。 规则由键值对组成，如“color == blue”或“price &gt;100”。 比较运算符建立键和值之间的关系。 布尔表达式确定规则组之间的关系。
+seo-description: 在特征生成器中，表达式生成器允许您创建和测试确立受众资格要求的规则。 规则由键值对组成，如“color == blue”或“price &gt;100”。 比较运算符建立键和值之间的关系。 布尔表达式确定规则组之间的关系。
 seo-title: 管理特征规则
 solution: Audience Manager
 title: 管理特征规则
@@ -9,7 +9,7 @@ feature: Traits
 translation-type: tm+mt
 source-git-commit: 14c5ac091a27d125c96d17ce750c6e25ad844856
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '727'
 ht-degree: 1%
 
 ---
