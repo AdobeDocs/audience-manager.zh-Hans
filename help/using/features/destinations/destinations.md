@@ -1,17 +1,17 @@
 ---
 description: 在 Audience Manager 中，目标是您要与之共享数据的任何第三方系统任何其他系统（广告服务器、DSP、广告网络等）。目标生成器是一个用于创建和管理 Cookie、URL 或服务器到服务器目标的工具。
 keywords: integration code, destination, destination overview, destination, destination, destination, destination, destination, destination, destination, destination, destination, destination, destination
-seo-description: 在 Audience Manager 中，目标是您要与之共享数据的任何第三方系统任何其他系统（广告服务器、DSP、广告网络等）。目标生成器是一个用于创建和管理 Cookie、URL 或服务器到服务器目标的工具。
+landing-page-description: A destination is any third-party system, such as ad server or DSP, with which to share data. Use Destination Builder to create and manage cookie, URL, or server-to-server destinations.
 seo-title: 目标
 solution: Audience Manager
 title: 目标
 uuid: 5c7dbdec-f73f-46fe-9f12-7685e8d7334f
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: e6348c85e7df6428802d54b2c90385ce95f50e1a
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 17%
+source-wordcount: '494'
+ht-degree: 11%
 
 ---
 
