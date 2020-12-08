@@ -1,16 +1,16 @@
 ---
 description: 介绍 Audience Manager 区段的组件、用于设置受众资格标准的表达式，以及如何在事件调用中传输数据。
-seo-description: 介绍 Audience Manager 区段的组件、用于设置受众资格标准的表达式，以及如何在事件调用中传输数据。
+landing-page-description: Describes components of a segment, expressions used to set audience qualification criteria, and how data is transmitted.
 seo-title: 信号、特征和区段
 solution: Audience Manager
 title: 信号、特征和区段
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
 feature: reference
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: e6348c85e7df6428802d54b2c90385ce95f50e1a
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 17%
+source-wordcount: '349'
+ht-degree: 11%
 
 ---
 
