@@ -7,15 +7,15 @@ title: 入站数据文件的 Amazon S3 名称和文件大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: f037a12af641da44ed67e62a249c41487da7ac07
+source-git-commit: d6856a54c649d701c3163c1408f84aea256ebdc1
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 6%
+source-wordcount: '1051'
+ht-degree: 5%
 
 ---
 
 
-# [!DNL Amazon S3]入站数据文件的 名称和文件大小要求{#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
+# [!DNL Amazon S3] 入站数据文件的名称和文件大小要求  {#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
 
 描述向[!DNL Audience Manager]发送数据时需要遵循的必填字段、语法、命名约定和文件大小。 将数据发送到[!DNL Audience Manager] / [!DNL Amazon S3]目录时，根据这些规范设置文件的名称和大小。
 
@@ -155,9 +155,14 @@ Removed  {importance="high"} for ExL
  </tbody> 
 </table>
 
+
 >[!NOTE]
 >
 >入站数据验证进程会将空文件标记为无效，并且不会处理它们。
+
+## 行长限制{#line-limits}
+
+入站数据文件的行长限制为102400字节。 超出此限制的行将从转移中排除。
 
 >[!MORELIKETHIS]
 >
