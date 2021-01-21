@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: c2c392b1201b5de08a3f4d58bbb7be5ef31545d0
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 64%
+source-wordcount: '968'
+ht-degree: 59%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 64%
 1. 目标受众特征／区段没有任何有效或已载入的用户。
 1. 过去 30 天内处于活动状态或已载入的目标受众用户在其用户配置文件中没有足够的数据（特征不足，无法进行分析）。
 1. 目标受众段使用不同于您为模型选择的[!UICONTROL Profile Merge Rule]。
-1. 您为模型选择的[!UICONTROL Profile Merge Rule]中不能包含目标受众特征的数据源。
+1. 您为模型选择的[!UICONTROL Profile Merge Rule]中可能不包含目标受众特征的数据源。
 
 为了获得最佳结果，请遵循[角色选择标准](../features/algorithmic-models/predictive-audiences.md#selection-personas)和[目标受众选择标准](../features/algorithmic-models/predictive-audiences.md#selection-audience)中的建议准则。
 
@@ -113,6 +113,15 @@ ht-degree: 64%
 能，您可以在模型报表页中查看所有基线的全部具有影响力的特征。请参阅[具有影响力的特征](../features/algorithmic-models/predictive-audiences-reporting.md#influential-traits)。
 
  
+
+**我是否可以更改预测特征的生存时间(TTL)?**
+
+预测特征TTL设置为0（生存期），无法更改。 [!UICONTROL Predictive Audiences] 只有当用户符合基本区段或被重新分类为其他预测区段时，才能将其从预测区段中取消分段。
+
+如果需要，您可以通过创建包含预测特征和具有指定TTL的活动特征的新段来解决此功能。
+
+ 
+
 
 **如果我编辑其中一个基线特征或区段，模型会发生什么情况？**
 
