@@ -7,7 +7,7 @@ title: 了解 Demdex 域调用
 uuid: c06dae3a-f169-4712-80fb-d6d448dce51a
 feature: reference
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 7286af6dd85a0464ccf52a88139d07cb151783e6
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 15%
@@ -26,6 +26,6 @@ ht-degree: 15%
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html)
+>* [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)
 >* [Audience Manager Cookie](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/ec-cookies/cookies-am.html)
 
