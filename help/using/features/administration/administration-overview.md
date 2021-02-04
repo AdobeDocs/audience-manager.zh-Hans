@@ -1,6 +1,6 @@
 ---
 description: 通过“管理”菜单下的选项，可以创建Audience Manager用户并将其分配给用户组。 您还可以视图限制（特征、区段、目标和模型）。
-keywords: rbac;RBAC;role based;role-based;role-based access controls
+keywords: rbac;RBAC；基于角色；基于角色；基于角色的访问控制
 seo-description: 通过“管理”菜单下的选项，可以创建Audience Manager用户并将其分配给用户组。 您还可以视图限制（特征、区段、目标和模型）。
 seo-title: 管理
 solution: Audience Manager
@@ -9,10 +9,10 @@ topic: DIL API
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
 feature: Administration
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 55cb69bad1f369ed3b58bece54aebdca4b14f7a7
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 1%
+source-wordcount: '1203'
+ht-degree: 2%
 
 ---
 
@@ -20,6 +20,13 @@ ht-degree: 1%
 # [!UICONTROL Administration] （RBAC控制）  {#administration}
 
 ![](assets/rbac-controls.png)
+
+>[!IMPORTANT]
+>
+> 用户帐户管理正在移至[Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)。 为了开始用户迁移，我们要求所有Audience Manager客户立即采取本文所述的必要措施：[Audience Manager用户迁移到Admin Console](admin-console-migration.md)。
+> 
+> 在所有客户都已迁移后，此文档的用户管理部分将消失。
+
 
 通过[!UICONTROL Administration]菜单下的选项，可以创建Audience Manager用户并将其分配给用户组。 您还可以视图限制（特征、区段、目标和模型）。
 
@@ -30,6 +37,12 @@ ht-degree: 1%
 ## 创建用户{#create-users}
 
 <!-- t_create_users.xml -->
+
+>[!IMPORTANT]
+>
+> 用户帐户管理正在移至[Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)。 为了开始用户迁移，我们要求所有Audience Manager客户立即采取本文所述的必要措施：[Audience Manager用户迁移到Admin Console](admin-console-migration.md)。
+> 
+> 在所有客户都已迁移后，此文档的用户管理部分将消失。
 
 在[!DNL Audience Manager]中创建用户，指定用户详细信息、登录状态，并将用户分配到组。
 
@@ -54,6 +67,12 @@ ht-degree: 1%
 
 ## 创建一个 [!UICONTROL Group] {#create-group}
 
+>[!IMPORTANT]
+>
+> 用户帐户管理正在移至[Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)。 为了开始用户迁移，我们建议所有Audience Manager客户立即采取本文所述的必要措施：[Audience Manager用户迁移到Admin Console](admin-console-migration.md)。
+> 
+> 所有客户都已迁移后，此部分将消失。
+
 *group*&#x200B;是对[!UICONTROL destination]、[!UICONTROL segment]和[!UICONTROL trait]对象具有访问权限的用户集合。 您可以仅将组限制为单个对象，也可以授予它们对不同对象组合的广泛访问权限。
 
 <!-- t_create_groups.xml -->
@@ -61,18 +80,24 @@ ht-degree: 1%
 要创建用户组，请执行以下操作：
 
 1. 单击 **[!UICONTROL Administration]** > **[!UICONTROL Groups]**.
-1. 单击![](assets/icon_add.png)打开[!UICONTROL Group Settings]页面。
-1. 在 [!UICONTROL Group Details]:
+2. 单击![](assets/icon_add.png)打开[!UICONTROL Group Settings]页面。
+3. 在 [!UICONTROL Group Details]:
    * 命名组。
    * 提供简短的组描述。
-1. 在[!UICONTROL Group Members]中，从&#x200B;**[!UICONTROL Add Users]**&#x200B;选项中单击用户，将其添加到组中。
-1. 在[!UICONTROL Group Permissions]中，从&#x200B;**[!UICONTROL Add Object]**&#x200B;中选择[特征](../../features/traits/trait-details-page.md)、[区段](../../features/segments/segments-purpose.md)或[目标](../../features/destinations/destinations.md)。
+4. 在[!UICONTROL Group Members]中，从&#x200B;**[!UICONTROL Add Users]**&#x200B;选项中单击用户，将其添加到组中。
+5. 在[!UICONTROL Group Permissions]中，从&#x200B;**[!UICONTROL Add Object]**&#x200B;中选择[特征](../../features/traits/trait-details-page.md)、[区段](../../features/segments/segments-purpose.md)或[目标](../../features/destinations/destinations.md)。
 这会打开选定对象的权限窗口。
-1. 选中您希望用户组成员具有的权限对应的复选框。
-1. *（可选）将* 通配符 [权限分](../../features/administration/administration-overview.md#wild-card-permissions) 配给组。
-1. 单击 **[!UICONTROL Save Group]**.
+6. 选中您希望用户组成员具有的权限对应的复选框。
+7. *（可选）将* 通配符 [权限分](../../features/administration/administration-overview.md#wild-card-permissions) 配给组。
+8. 单击 **[!UICONTROL Save Group]**.
 
 ## 了解[!UICONTROL Wild Card Permissions] {#wild-card-permissions}
+
+>[!IMPORTANT]
+>
+> 用户帐户管理正在移至[Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)。 为了开始用户迁移，我们建议所有Audience Manager客户立即采取本文所述的必要措施：[Audience Manager用户迁移到Admin Console](admin-console-migration.md)。
+> 
+> 所有客户都已迁移后，此部分将消失。
 
 使用[!UICONTROL Wild Card Permissions]简化组权限管理。
 
