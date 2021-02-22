@@ -1,14 +1,14 @@
 ---
-description: '本页包含有关如何将离线CRM数据与Audience Manager中已有的行为数据相结合以创建新受众区段的分步指导，然后将这些受众区段发送到基于人员的目标。  '
-seo-description: '本页包含有关如何将离线CRM数据与Audience Manager中已有的行为数据相结合以创建新受众区段的分步指导，然后将这些受众区段发送到基于人员的目标。   '
+description: '本页包含有关如何将离线CRM数据与Audience Manager中已有的行为数据相结合以创建新受众区段，然后将这些受众区段发送到基于人员的目标的分步指导。  '
+seo-description: '本页包含有关如何将离线CRM数据与Audience Manager中已有的行为数据相结合以创建新受众区段，然后将这些受众区段发送到基于人员的目标的分步指导。   '
 seo-title: 工作流程 A - 基于所有在线活动和离线数据的组合进行个性化
 solution: Audience Manager
 title: 工作流程 A - 基于所有在线活动和离线数据的组合进行个性化
-feature: People-Based Destinations
+feature: 基于人员的目标
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 6e3a06da8149c91a9192b5b3ee582e46fbb1790c
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1181'
 ht-degree: 7%
 
 ---
@@ -17,29 +17,29 @@ ht-degree: 7%
 # 工作流程 A - 基于所有在线活动和离线数据的组合进行个性化 {#workflow-a}
 
 >[!IMPORTANT]
->本文包含用于指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都不是法律建议。 请咨询您自己的法律顾问以获得法律指导。
+>本文包含旨在指导您完成此功能的设置和使用的产品文档。 此处包含的任何内容都是法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
-本页包含有关如何将离线[!DNL CRM]数据与Audience Manager中已有的行为数据相结合以创建新受众段的分步指南，然后将这些受众段发送到[!DNL People-Based Destinations]。
+本页包含有关如何将离线[!DNL CRM]数据与Audience Manager中已有的行为数据相结合以创建新受众区段，然后将这些受众区段发送到[!DNL People-Based Destinations]的分步指导。
 
-## 步骤1 —— 配置数据源设置{#configure-data-source-settings}
+## 步骤1 — 配置数据源设置{#configure-data-source-settings}
 
-根据您的[DPUUID](../../reference/ids-in-aam.md)是否为小写、散列电子邮件地址，您可能需要配置用于存储散列电子邮件地址的数据源。
+根据您的[DPUUIDs](../../reference/ids-in-aam.md)是否为小写的散列电子邮件地址，您可能需要配置将存储散列电子邮件地址的数据源。
 
  
 
-**方案1:您的 [](../../reference/ids-in-aam.md) DPUUID已小写，具有散列的电子邮件地址。**
+**方案1:您 [](../../reference/ids-in-aam.md) 的DPUUID已经小写，散列电子邮件地址。**
 
 在这种情况下，您需要将相应的数据源标记为：
 
-1. 转至[!UICONTROL Audience Data] -> [!UICONTROL Data Sources]。
-1. 找到包含[DPUUID](../../reference/ids-in-aam.md)的数据源，然后单击它。
+1. 转到[!UICONTROL Audience Data] -> [!UICONTROL Data Sources]。
+1. 找到包含[DPUUIDs](../../reference/ids-in-aam.md)的数据源，然后单击它。
 1. 在&#x200B;**[!UICONTROL ID Type]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL Cross Device]**。
 1. 确保选项[!UICONTROL Cannot be tied to personally identifiable information]未选中。
 1. 在&#x200B;**[!UICONTROL Data Source Settings]**&#x200B;部分，选择&#x200B;**[!UICONTROL Inbound]**&#x200B;和&#x200B;**[!UICONTROL Outbound]**&#x200B;选项，然后启用&#x200B;**[!UICONTROL Share associated cross-device IDs in people-based destinations]**&#x200B;选项。
 1. 使用下拉菜单选择此数据源的&#x200B;**[!UICONTROL Emails(SHA256, lowercased)]**&#x200B;标签。
    >[!IMPORTANT]
    >
-   >此选项仅将数据源标记为包含使用该特定算法散列的数据。 Audience Manager在此步骤中不对数据进行哈希处理。 确保您计划存储在此数据源中的电子邮件地址已使用[!DNL SHA256]算法散列化。 否则，您将无法将它用于[!DNL People-Based Destinations]。
+   >此选项仅将数据源标记为包含使用该特定算法散列的数据。 Audience Manager在此步骤中不会对数据进行哈希处理。 确保您计划存储在此数据源中的电子邮件地址已使用[!DNL SHA256]算法进行哈希处理。 否则，您将无法将它用于[!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 1. 保存数据源设置。
@@ -48,45 +48,45 @@ ht-degree: 7%
 
 **方案2:您的 [](../../reference/ids-in-aam.md) DPUUID不是小写的散列电子邮件地址。**
 
-在这种情况下，您需要创建一个新的跨设备数据源来存储散列电子邮件地址。 下面介绍如何实现此操作：
+在这种情况下，您需要创建一个新的跨设备数据源来存储散列电子邮件地址。 下面将介绍如何执行此操作：
 
-1. 登录您的Audience Manager帐户并转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**，然后单击&#x200B;**[!UICONTROL Add New]**。
+1. 登录您的Audience Manager帐户，转至&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**，然后单击&#x200B;**[!UICONTROL Add New]**。
 1. 为新数据源输入[!UICONTROL Name]和[!UICONTROL Description]。
 1. 在&#x200B;**[!UICONTROL ID Type]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL Cross Device]**。
 1. 在&#x200B;**[!UICONTROL Data Source Settings]**&#x200B;部分，选择&#x200B;**[!UICONTROL Inbound]**&#x200B;和&#x200B;**[!UICONTROL Outbound]**&#x200B;选项，然后启用&#x200B;**[!UICONTROL Share associated cross-device IDs in people-based destinations]**&#x200B;选项。
 1. 使用下拉菜单选择此数据源的&#x200B;**[!UICONTROL Emails(SHA256, lowercased)]**&#x200B;标签。
    >[!IMPORTANT]
    >
-   >此选项仅将数据源标记为包含使用该特定算法散列的数据。 Audience Manager在此步骤中不对数据进行哈希处理。 确保您计划存储在此数据源中的电子邮件地址已使用[!DNL SHA256]算法散列化。 否则，您将无法将它用于[!DNL People-Based Destinations]。
+   >此选项仅将数据源标记为包含使用该特定算法散列的数据。 Audience Manager在此步骤中不会对数据进行哈希处理。 确保您计划存储在此数据源中的电子邮件地址已使用[!DNL SHA256]算法进行哈希处理。 否则，您将无法将它用于[!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 1. 保存数据源设置。
 
-观看以下视频，了解如何为[!UICONTROL People-Based Destinations]创建数据源的视频教程。
+观看以下视频，观看有关如何为[!UICONTROL People-Based Destinations]创建数据源的视频教程。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29006/)
 
 >[!NOTE]
 >
-> 有关如何将线下数据引入基于人员的目标Audience Manager的常见问题，请参阅[数据入门](people-based-destinations-prerequisites.md#data-onboarding)。
+> 有关如何将离线数据引入基于人员的目标Audience Manager的常见问题，请参阅[数据入门](people-based-destinations-prerequisites.md#data-onboarding)。
 
-## 第2步——通过基于文件的ID同步将DPUUID与哈希电子邮件地址匹配{#match-ids-emails}
+## 第2步 — 通过基于文件的ID同步{#match-ids-emails}将DPUUID与哈希电子邮件地址匹配
 
 >[!IMPORTANT]
 >
-> 此步骤仅适用于上述[方案2](people-based-destinations-workflow-combined.md#configure-data-source-settings)。 如果您现有的[DPUUID](../../reference/ids-in-aam.md)电子邮件地址已经过散列处理，请跳到[步骤3 —— 为分段创建用户档案合并规则](people-based-destinations-workflow-combined.md#create-merge-rule)。
+> 此步骤仅适用于上述[方案2](people-based-destinations-workflow-combined.md#configure-data-source-settings)。 如果您现有的[DPUUID](../../reference/ids-in-aam.md)已经具有散列的电子邮件地址，请跳到[步骤3 — 为分段创建用户档案合并规则](people-based-destinations-workflow-combined.md#create-merge-rule)。
 
-假设您要将现有[DPUUID](../../reference/ids-in-aam.md)与下表（右列）中的散列电子邮件地址匹配，并将散列电子邮件地址存储在您在[步骤1 —— 配置数据源设置](people-based-destinations-workflow-combined.md#configure-data-source-settings)创建的新数据源中。
+假设您要将现有[DPUUID](../../reference/ids-in-aam.md)与下表（右列）中的哈希电子邮件地址匹配，并将哈希电子邮件地址存储在您在[步骤1 — 配置数据源设置](people-based-destinations-workflow-combined.md#configure-data-source-settings)创建的新数据源中。
 
 | DPUUID(CRM ID) | 电子邮件地址 | 哈希电子邮件地址 |
 | -------------------------------------- | --------------------- | ---------------------------------------------------------------- |
-| 68079982765673198504052656074456196039 | `johndoe@example.com` | 55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149 |
-| 6741268208341199572553870443620307584 | `janedoe@email.com` | 16d72e3edbeb089b299e0d12fc09522fdc5ece2d11dcb1304ecdd6fab4f7193a |
-| 8915902479676034373311170764602676593 | `name@mydomain.com` | feec5debcea411f54462a345a0d90c9975415d2d4862745ff8af00c49b6b4ae6 |
+| 68079982765673198504052656074456196039 | `johndoe@example.com` | 55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32ff15041149 |
+| 67412682083411995725538770443620307584 | `janedoe@email.com` | 16d72e3edbeb089b299e0d12fc09522fdc5ece2d11dcb1304ecdd6fab4f7193a |
+| 89159024796760343733111707646026765593 | `name@mydomain.com` | feec5debcea411f54462a345a0d90c9975415d2d4862745ff8af00c49b6b4ae6 |
 
  
 
-最多可以将10个哈希电子邮件地址链接到单个[DPUUID](../../reference/ids-in-aam.md)。 为此，请在同步文件中用逗号分隔散列电子邮件地址。
+最多可以将10个哈希电子邮件地址链接到单个[DPUUID](../../reference/ids-in-aam.md)。 为此，请在同步文件中用`<TAB>`分隔散列化电子邮件地址。
 
 在我们的示例中，您现在有两个数据源。
 
@@ -120,13 +120,13 @@ ht-degree: 7%
 
 创建ID同步文件后，需要将其上传到[!DNL Amazon S3]存储桶。 要了解如何上传ID同步文件，请参阅[将批处理数据发送到Audience Manager](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)。
 
-## 步骤3 —— 为分段创建用户档案合并规则{#create-merge-rule}
+## 步骤3 — 为分段创建用户档案合并规则{#create-merge-rule}
 
-下一步是创建新的合并规则，该规则将帮助您创建要发送到基于人员的目标的受众段。
+下一步是创建新的合并规则，该规则将帮助您创建受众段，以发送给基于人员的目标。
 
 >[!IMPORTANT]
 >
-> 如果已经使用[!UICONTROL Current Authenticated Profiles]或[!UICONTROL Last Authenticated Profiles]选项定义了规则，则可跳至[步骤4 —— 创建受众段](people-based-destinations-workflow-combined.md#create-audience-segments)。
+> 如果已使用[!UICONTROL Current Authenticated Profiles]或[!UICONTROL Last Authenticated Profiles]选项定义规则，则可跳至[步骤4 — 创建受众段](people-based-destinations-workflow-combined.md#create-audience-segments)。
 
 1. 登录您的Audience Manager帐户，然后转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Profile Merge Rules]**。
 1. 单击 **[!UICONTROL Add New Rule]**.
@@ -134,36 +134,36 @@ ht-degree: 7%
 1. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;部分，选择&#x200B;**[!UICONTROL Current Authenticated Profiles]**&#x200B;或&#x200B;**[!UICONTROL Last Authenticated Profiles]**&#x200B;选项。
 1. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**&#x200B;列表中，选择要运行分段的数据源。 这些数据源应包含现有的[DPUUID](../../reference/ids-in-aam.md)。
 
-## 第4步——创建受众段{#create-audience-segments}
+## 第4步 — 创建受众区段{#create-audience-segments}
 
-要创建新的受众段，请使用[区段生成器](../segments/segment-builder.md)。 如果您有要发送到[!DNL People-Based Destinations]的现有受众段，请跳到[步骤5 —— 配置基于人员的平台身份验证](people-based-destinations-workflow-combined.md#configure-authentication)。
+要创建新的受众区段，请使用[区段生成器](../segments/segment-builder.md)。 如果您有要发送到[!DNL People-Based Destinations]的现有受众段，请跳到[步骤5 — 配置基于人员的平台身份验证](people-based-destinations-workflow-combined.md#configure-authentication)。
 
-## 第5步——配置基于人员的平台身份验证{#configure-authentication}
+## 第5步 — 配置基于人员的平台身份验证{#configure-authentication}
 
-1. 登录您的Audience Manager帐户，然后转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您之前配置了与社交平台的集成，您应会在本页中看到该集成。 否则，页面为空。
+1. 登录您的Audience Manager帐户，然后转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您之前已配置了与社交平台的集成，则应在本页中列出该集成。 否则，页面为空。
    ![基于人的集成](assets/pbd-config.png)
 1. 单击 **[!UICONTROL Add Account]**.
 1. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉菜单选择要配置其集成的平台。
    ![基于人的平台](assets/pbd-add.png)
-1. 单击&#x200B;**[!UICONTROL Confirm]**&#x200B;以重定向到所选平台的身份验证页面。
+1. 单击&#x200B;**[!UICONTROL Confirm]**&#x200B;可重定向到所选平台的身份验证页面。
 1. 通过社交平台帐户身份验证后，您将被重定向到Audience Manager，您应该在该位置看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!UICONTROL Confirm]**。
-1. Audience Manager在页面顶部显示通知，告诉您帐户是否成功添加。 通知还允许您添加联系人电子邮件地址，以便在社交平台身份验证即将过期时接收通知。
+1. Audience Manager在页面顶部显示通知，告知您帐户是否已成功添加。 通知还允许您添加联系人电子邮件地址，以便在社交平台身份验证即将过期时接收通知。
 
 >[!IMPORTANT]
 >
->受众管理者通过身份验证令牌处理与社交平台的集成，该令牌在一定时间后过期。 有关如何续订过期令牌的详细信息，请参阅身份验证令牌续订。
+>受众管理器通过身份验证令牌处理与社交平台的集成，这些令牌在一定时间后过期。 有关如何续订过期令牌的详细信息，请参阅身份验证令牌续订。
 
-## 第6步——创建基于人员的目标{#create-destination}
+## 第6步 — 创建基于人员的目标{#create-destination}
 
-1. 登录您的Audience Manager帐户，转至&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Destinations]**，然后单击&#x200B;**[!UICONTROL Create Destination]**。
-1. 在&#x200B;**[!UICONTROL Basic Information]**&#x200B;部分，输入新数据源的&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**，然后使用以下设置：
+1. 登录您的Audience Manager帐户，转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Destinations]**，然后单击&#x200B;**[!UICONTROL Create Destination]**。
+1. 在&#x200B;**[!UICONTROL Basic Information]**&#x200B;部分，为新数据源输入&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**，然后使用以下设置：
    * **[!UICONTROL Category]**:集成平台；
    * **[!UICONTROL Type]**:以人为本；
-   * **[!UICONTROL Platform]**:选择要将受众段发送到的基于人员的平台；
+   * **[!UICONTROL Platform]**:选择要将受众区段发送到的基于人的平台；
    * **[!UICONTROL Account]**:选择与所选平台关联的所需广告商帐户。
       ![create-destination](assets/pbd-create-destination.png)
 1. 单击 **[!UICONTROL Next]**.
 1. 选择要为此目标设置的&#x200B;**[!UICONTROL Data Export Labels]**。
 1. 在&#x200B;**[!UICONTROL Configuration]**&#x200B;部分，选择包含散列数据源的数据源。
-1. 在&#x200B;**[!UICONTROL Segment Mappings]**&#x200B;部分，选择要发送到此目标的区段。 这将是您在[步骤4 —— 创建受众段](people-based-destinations-workflow-combined.md#create-audience-segments)创建的段。
+1. 在&#x200B;**[!UICONTROL Segment Mappings]**&#x200B;部分，选择要发送到此目标的区段。 这将是您在[步骤4 — 创建受众区段](people-based-destinations-workflow-combined.md#create-audience-segments)创建的区段。
 1. 保存目标。
