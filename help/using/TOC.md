@@ -289,7 +289,7 @@ ht-degree: 92%
    + [数据集成方法](integration/data-integration-methods.md)
    + 使用Google Publisher标记(GPT){#integrate-dfp-using-gpt}集成Google Ad Manager
       + [使用GPT概述集成Google Ad Manager](integration/gpt-aam-destination/gpt-aam-overview.md)
-      + [使用GPT将区段发送到Google Ad Manager](integration/gpt-aam-destination/gpt-aam-requirements.md)
+      + [使用GPT将区段发送到Google广告管理器](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [创建 GPT 目标](integration/gpt-aam-destination/gpt-aam-create-destination.md)
       + [修改 GPT setTargeting API 调用](integration/gpt-aam-destination/gpt-aam-modify-api.md)
       + [Google Publisher Tag 的 Audience Manager 代码](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
@@ -314,7 +314,7 @@ ht-degree: 92%
          + [用于实时出站传输的 OAuth 2.0 集成](integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
       + 批量出站数据传输{#batch-outbound-data-transfers}
          + [批量出站数据传输概述](integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)
-         + [配置批处理数据传输集成](integration/receiving-audience-data/batch-outbound-transfers/batch-server-configuration.md)
+         + [配置批数据传输集成](integration/receiving-audience-data/batch-outbound-transfers/batch-server-configuration.md)
          + [出站数据文件名：语法和示例](integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
          + [用于日志文件传输的传输控制文件](integration/receiving-audience-data/batch-outbound-transfers/transfer-control-files.md)
          + [出站模板宏](integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
@@ -339,9 +339,9 @@ ht-degree: 92%
          + [入站处理后发送给合作伙伴的示例消息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [自定义合作伙伴集成](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + 与 Adobe Experience Platform 集成 {#integration-experience-platform}
-      + [Experience Platform细分与Audience Manager和其他Experience Cloud解决方案共享](integration/integration-aep/aam-aep-audience-sharing.md)
+      + [Experience Platform细分共享与Audience Manager和其他Experience Cloud解决方案](integration/integration-aep/aam-aep-audience-sharing.md)
    + 与其他 Experience Cloud 解决方案集成 {#integration-other-solutions}
-      + [将Audience Manager与Adobe Target](integration/integration-other-solutions/aam-target-integration.md)
+      + [将Audience Manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
       + [如何将数据从 Adobe Analytics 转发到 Audience Manager](integration/integration-other-solutions/audience-management-module.md)
       + [将Adobe Analytics区段发布到Experience Cloud(打开Adobe Analytics文档)](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/audiences/t-publish-audience-segment.html)
       + [将Audience Manager与Adobe Campaign集成(打开Adobe Campaign文档)](https://docs.adobe.com/content/help/en/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
