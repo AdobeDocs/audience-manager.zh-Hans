@@ -4,12 +4,12 @@ seo-description: '关于基于人员的目标的常见问题解答。  '
 seo-title: 基于人员的目标常见问题解答
 solution: Audience Manager
 title: 基于人员的目标常见问题解答
-feature: People-Based Destinations
+feature: 基于人员的目标
 translation-type: tm+mt
-source-git-commit: 6e55d8bc5fe2c5cdcdd36107593215288d491331
+source-git-commit: eb998042acb46fef2b0e407b3565d8ba4769f0bb
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 97%
+source-wordcount: '1171'
+ht-degree: 94%
 
 ---
 
@@ -79,6 +79,10 @@ Audience Manager 不会摄取原始电子邮件地址，因此我们无法验证
 
 Audience Manager 可以收集每个用户的最多 10 个电子邮件地址并将这些地址发送到目标平台，但需要通过同步文件来获取这些电子邮件地址。在 Audience Manager 将电子邮件地址发送到目标平台后，由平台决定是否将电子邮件地址与其自己的用户群进行匹配。某些平台可能具有其他电子邮件地址图形，用于将 Audience Manager 发送的地址与用户配置文件进行匹配。
 
+**我能用 [!DNL People-Based Destinations] 吗 [!DNL Audience Lab]?**
+
+不需要。目前，所有[!DNL People-Based Destinations]目标都从[!DNL Audience Lab]中排除。 由于[!DNL People-Based Destinations]和需求侧平台使用不同的ID，因此您无法测试和衡量性能，因为受众在它们之间平均分配。
+
 ## 数据导出控制 {#data-export-controls}
 
 **[!DNL Data Export Controls] 如何与 [!DNL People-Based Destinations] 一起使用？**
@@ -113,6 +117,6 @@ Audience Manager 可以收集每个用户的最多 10 个电子邮件地址并�
 
 这两种集成是互补的，您可以同时使用这两种集成来确保更好的受众覆盖。例如，[!DNL WCA] 可用于在公司要定位尚未注册帐户的网站访客时帮助寻找潜在客户，而 [!DNL People-Based Destinations] 则可以帮助您定位已提供其电子邮件地址但可能未访问网站的现有客户。
 
-**当用 [!DNL People-Based Destinations] 户不 [!DNL Facebook] 再具备受众资格时，与支持的集成是否会使其丧失资格？**
+**当用 [!DNL People-Based Destinations] 户不再 [!DNL Facebook] 具备受众资格时，与支持的集成是否会使他们丧失资格？**
 
 是的，集成支持在用户不再符合条件时从[!DNL Facebook]受众中删除用户。
