@@ -5,12 +5,12 @@ seo-title: 数据隐私概述
 solution: Audience Manager
 title: 数据隐私概述
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
-feature: data governance & privacy
+feature: 数据管理和隐私
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 78%
+source-wordcount: '489'
+ht-degree: 77%
 
 ---
 
@@ -19,26 +19,26 @@ ht-degree: 78%
 
 ## 概述
 
-数据隐私文档描述了[!DNL Audience Manager]与消费者隐私和选择退出程序相关的集成以及对公认最佳实践的遵守。
+数据隐私文档描述了与消费者隐私和选择退出程序相关的[!DNL Audience Manager]集成和符合公认的最佳实践。
 
 [!DNL Audience Manager] 认识到消费者以及他们与之互动的网络品牌之间的关系的重要性。双方都受益于匿名数据元素的透明交换：
 
 * 消费者可获得个性化内容、折扣产品选件和简化的用户体验。
 * 品牌可获得支持多个在线业务模型的重要收入流。
 
-在我们对此模型的持续支持中，[!DNL Audience Manager]继续致力于为您提供工具，帮助您支持向消费者提供透明度和控制的能力，同时提供符合[在线行为广告(OBA)自律原则](https://www.iab.com/news/self-regulatory-principles-for-online-behavioral-advertising/)的个性化广告。
+在我们对这种模式的持续支持中，[!DNL Audience Manager]继续致力于为您提供帮助支持您向消费者提供透明度和控制的能力的工具，同时提供符合[在线行为广告(OBA)自律原则](https://www.iab.com/news/self-regulatory-principles-for-online-behavioral-advertising/)的个性化广告。
 
 ## [!DNL GDPR] {#gdpr}
 
-[《通用数据保护条例》(GDPR)](https://eugdpr.org/) 为欧盟成员国引入了几项新的数据隐私权，其中包括&#x200B;**访问权**&#x200B;和&#x200B;**被遗忘权**。这意味着，任何[!DNL EU]公民（其个人数据已由您的企业收集）可以随时请求访问或删除其数据。 如果不能遵守这些要求，贵组织将面临数百万美元的罚款。
+[《通用数据保护条例》(GDPR)](https://gdpr.eu/data-privacy/) 为欧盟成员国引入了几项新的数据隐私权，其中包括&#x200B;**访问权**&#x200B;和&#x200B;**被遗忘权**。这意味着任何[!DNL EU]公民（其个人数据已由您的企业收集）可以随时请求访问或删除其数据。 如果不能遵守这些要求，贵组织将面临数百万美元的罚款。
 
-为符合[!DNL GDPR]的要求，[!DNL Audience Manager]支持数据访问和删除[请求](data-privacy-requests.md)。
+为符合[!DNL GDPR],[!DNL Audience Manager]支持数据访问并删除[请求](data-privacy-requests.md)。
 
 ## [!DNL CCPA] {#ccpa}
 
 [《加州消费者隐私法案》(CCPA)](https://www.caprivacy.org/about) 已于 2020 年 1 月 1 日生效，它为加利福尼亚州居民提供了有关其个人信息的新权利，并对某些在加利福尼亚州开展业务的实体施加了数据保护责任。
 
-[!DNL CCPA] 为加利福尼亚州居民提供了新的数据隐私权，包括访问和删除其个人数据，以及了解其个人数据是否被出售或被透露（以及向谁出售或透露）的权利。为符合[!DNL CCPA]的要求，[!DNL Audience Manager]支持[!DNL CCPA]访问和删除[请求](data-privacy-requests.md)。
+[!DNL CCPA] 为加利福尼亚州居民提供了新的数据隐私权，包括访问和删除其个人数据，以及了解其个人数据是否被出售或被透露（以及向谁出售或透露）的权利。为符合[!DNL CCPA],[!DNL Audience Manager]支持[!DNL CCPA]访问并删除[请求](data-privacy-requests.md)。
 
 有关更多详细信息，请参阅 [Adobe 隐私中心](https://www.adobe.com/cn/privacy/opt-out.html)。
 
