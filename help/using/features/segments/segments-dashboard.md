@@ -1,23 +1,23 @@
 ---
-description: 区段仪表板是用于管理目标的集中工作区。
-seo-description: 区段仪表板是用于管理目标的集中工作区。
+description: “区段”仪表板是用于管理目标的集中工作区。
+seo-description: “区段”仪表板是用于管理目标的集中工作区。
 seo-title: 区段列表视图
 solution: Audience Manager
 title: 区段列表视图
 uuid: aa69877b-1d52-4b87-8734-b4bff39935a5
-feature: Segments
+feature: 区段
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 9%
+source-wordcount: '87'
+ht-degree: 11%
 
 ---
 
 
 # 区段列表视图 {#segments-list-view}
 
-[区段仪表板](https://bank.demdex.com/portal/Segments/SegmentBuilder.ddx#list)是用于管理受众区段的集中工作区。 您可以导航到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**，看到[!UICONTROL Segments]仪表板。
+[!UICONTROL Segments dashboard]是用于管理受众段的集中工作区。 您可以导航到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Segments]** ，看到[!UICONTROL Segments]仪表板。
 
 ![细分仪表板](assets/segments-dashboard.png)
 
