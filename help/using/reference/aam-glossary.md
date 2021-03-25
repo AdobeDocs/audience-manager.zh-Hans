@@ -5,12 +5,12 @@ seo-title: 术语表
 solution: Audience Manager
 title: 术语表
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
-feature: reference
+feature: 参考
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 100%
+source-wordcount: '1187'
+ht-degree: 99%
 
 ---
 
@@ -27,8 +27,6 @@ ht-degree: 100%
 
 请参阅[了解算法模型](../features/algorithmic-models/algo-models-overview.md)。
 
-<br> 
-
 **BAAAM**
 
 [!UICONTROL Bulk Management Tools]。[!DNL Audience Manager] 中的 [!UICONTROL Bulk Management Tools] 是一系列基于 Microsoft Excel 的工具，通过这些工具，您可以一次创建、修改或删除多个对象。您可以处理数据源、派生的信号、目标、文件夹、区段和特征。该功能使用带有宏的 Microsoft Excel 电子表格，这些宏可对 [!DNL Audience Manager] API 进行经过验证的安全调用。
@@ -43,15 +41,13 @@ ht-degree: 100%
 
 请参阅[客户数据信息源](../features/cdf-files.md)。
 
-<br> 
-
 **CRM ID**
 
 CRM ID 是客户在其 CRM 系统中用于识别用户的 ID。在 Audience Manager 中，我们使用是 DPUUID，而不是 CRM ID。
 
 有关 DPUUID 的说明，请参阅 [Audience Manager 中的 ID 索引](../reference/ids-in-aam.md)。
 
-<br> 
+
 
 **客户可寻址受众**
 
@@ -60,25 +56,25 @@ CRM ID 是客户在其 CRM 系统中用于识别用户的 ID。在 Audience Mana
    **且**
 * ID 已与选定目标同步，不论同步次数是多少。
 
-<br> 
+
 
 **客户属性**
 
 请参阅 [!DNL Experience Cloud Core Services] 产品文档中的[客户属性](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/customer-attributes/attributes.html)。
 
-<br> 
+
 
 **客户匹配率**
 
 客户可寻址受众 ÷ 客户总受众，以 % 表示。请参阅[可寻址受众](/help/using/features/addressable-audiences.md)。
 
-<br> 
+
 
 **客户总受众**
 
 在[可寻址受众](/help/using/features/addressable-audiences.md)中，此量度表示在回顾时间范围内，已实现您的资产中某个基于规则的特征或某个从离线文件载入的特征的设备的数量。
 
-<br> 
+
 
 **demdex.net**
 
@@ -86,7 +82,7 @@ demdex.net 是由 [!DNL Adobe] 控制的旧版域。它反映了 [!DNL Audience 
 
 请参阅[了解 Demdex 域调用](../reference/demdex-calls.md)。
 
-<br> 
+
 
 **DAID**
 
@@ -94,19 +90,19 @@ demdex.net 是由 [!DNL Adobe] 控制的旧版域。它反映了 [!DNL Audience 
 
 请参阅 [Audience Manager 中的 ID 索引](../reference/ids-in-aam.md)。
 
-<br> 
+
 
 **目标**
 
 在 [!DNL Audience Manager] 中，目标是指要与其共享数据的任何其他系统（广告服务器、DSP、广告网络等）。在我们的 UI 中，[!UICONTROL Destination Builder] 提供了用于创建和管理这些数据传输流程的工具。[!DNL Audience Manager] 目标功能位于 **[!UICONTROL Audience Data > Destinations]** 中。
 
-<br> 
+
 
 **DIL**
 
 [!UICONTROL Data Integration Library] 是 [!DNL Audience Manager] 用于收集用户交互数据的 API 库。请参阅[数据集成库 (DIL) API](../dil/dil-overview.md)。
 
-<br> 
+
 
 **DPM**
 
@@ -118,7 +114,7 @@ demdex.net 是由 [!DNL Adobe] 控制的旧版域。它反映了 [!DNL Audience 
 
 以前称为 [!DNL Marketing Cloud] ID（MID 或 MCID）。[!DNL Experience Cloud] ID 是 ID 服务的核心。它是网站访客的唯一永久标识符。请参阅 Cookie 和 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hans/id-service/using/intro/cookies.html)。
 
-<br> 
+
 
 **文件夹特征**
 
@@ -126,7 +122,7 @@ demdex.net 是由 [!DNL Adobe] 控制的旧版域。它反映了 [!DNL Audience 
 
 请参阅[文件夹特征：关于](../features/traits/about-folder-traits.md)。
 
-<br> 
+
 
 **频度上限**
 
@@ -140,7 +136,7 @@ demdex.net 是由 [!DNL Adobe] 控制的旧版域。它反映了 [!DNL Audience 
 
 Google Advertising ID，即 Google 为运行 Android 操作系统的硬件设备分配的唯一设备 ID。请参阅 [Audience Manager 中的 ID 索引](../reference/ids-in-aam.md)。
 
-<br> 
+
 
 **GUID**
 
@@ -152,13 +148,13 @@ Google Advertising ID，即 Google 为运行 Android 操作系统的硬件设备
 
 广告商的标识符，即 Apple 为其产品分配的唯一设备 ID。请参阅 [Audience Manager 中的 ID 索引](../reference/ids-in-aam.md)。
 
-<br> 
+
 
 **入站**
 
 将受众数据从其他来源发送到 [!DNL Audience Manager] 的过程。请参阅[发送受众数据](/help/using/integration/sending-audience-data/send-audience-data.md)。
 
-<br> 
+
 
 **集成代码**
 
@@ -188,13 +184,13 @@ Google Advertising ID，即 Google 为运行 Android 操作系统的硬件设备
 
 请参阅[数据收集组件](../reference/system-components/components-data-collection.md)。
 
-<br> 
+
 
 **配置文件链接**
 
 请参阅[定义的配置文件合并规则选项](../features/profile-merge-rules/merge-rule-definitions.md)。
 
-<br> 
+
 
 **配置文件合并规则**
 
@@ -216,25 +212,25 @@ Google Advertising ID，即 Google 为运行 Android 操作系统的硬件设备
 
 请参阅[区段：目的、构成和规则](../features/segments/segments-purpose.md)。
 
-<br> 
+
 
 **区段可寻址受众**
 
 在[可寻址受众](/help/using/features/addressable-audiences.md)中，此量度表示在报表回顾期间属于该区段且在您的网站上具有活动的 ID 同步的用户数量。通过在 [Audience Marketplace](/help/using/features/audience-marketplace/audience-marketplace.md) 中获得的特征，区段可以同时包含您自己的第一方数据以及第二方数据和第三方数据。
 
-<br> 
+
 
 **总区段人口**
 
 在[可寻址受众](/help/using/features/addressable-audiences.md)中，此量度表示在报表回顾期间属于区段成员的设备总数。
 
-<br> 
+
 
 **区段匹配率**
 
 区段可寻址受众 ÷ 总区段人口，以 % 表示。请参阅[可寻址受众](/help/using/features/addressable-audiences.md)。
 
-<br> 
+
 
 **信号**
 
@@ -242,13 +238,13 @@ Google Advertising ID，即 Google 为运行 Android 操作系统的硬件设备
 
 请参阅[信号、特征和区段](../reference/signal-trait-segment.md)。
 
-<br> 
+
 
 **特征**
 
 特征由一个或多个信号组合而成。请参阅[信号、特征和区段](../reference/signal-trait-segment.md)。
 
-<br> 
+
 
 **特征人口**
 
@@ -258,7 +254,7 @@ Google Advertising ID，即 Google 为运行 Android 操作系统的硬件设备
 
 TTL 定义符合条件的访客在一个特征中保留的天数。TTL 是针对特征而非区段设置的。如果访客在 TTL 间隔结束前看不到符合条件的特征，则会从区段中移除。有关更多信息，请参阅[区段和特征存留期说明](/help/using/features/traits/segment-ttl-explained.md)。
 
-<br> 
+
 
 ## U-V {#u-v}
 
@@ -266,7 +262,7 @@ TTL 定义符合条件的访客在一个特征中保留的天数。TTL 是针对
 
 [!DNL Audience Manager] 独特用户 ID。请参阅 [Audience Manager 中的 ID 索引](../reference/ids-in-aam.md)。
 
-<br> 
+
 
 **访客 ID**
 
