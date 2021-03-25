@@ -7,7 +7,7 @@ title: Audience Manager 指南
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 feature: 概述
 translation-type: tm+mt
-source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
+source-git-commit: 191e2b0c5d511853273d0ebf7d6f0a965c4fc3fc
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 96%
@@ -77,15 +77,15 @@ ht-degree: 96%
    <td colname="col1"> <p><b>重要的概念文档</b></p>
    <p>请阅读以下页面，深入了解 Audience Manager 的各项概念： 
    <ul><li><a href="/help/using/overview/aam-overview.md"> Audience Manager 概述</a></li><li><a href="/help/using/reference/signal-trait-segment.md">信号、特征和区段</a></li><li><a href="/help/using/reference/aam-glossary.md"> 术语表</a> </li><li><a href="/help/using/reference/ids-in-aam.md">ID 索引</a></li></ul></p>
-   <br> 
-   <p><b>实施 Audience Manager</b></p>
+
+<p><b>实施 Audience Manager</b></p>
    <p> 请阅读以下页面，以开始实施 Audience Manager：
      <ul>
      <li><a href="/help/using/integration/data-integration-methods.md">数据集成方法</a></li>
      <li><a href="/help/using/integration/implement-audience-manager.md">实施指南</a></li>
      </ul> </p>
-     <br> 
-   <p> <b>技术实施指南</b> </p> <p>开始使用 Audience Manager API，并在应用程序中设置 Audience Manager：</p> <p> 
+
+<p> <b>技术实施指南</b> </p> <p>开始使用 Audience Manager API，并在应用程序中设置 Audience Manager：</p> <p> 
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
      <li><a href="/help/using/api/rest-api-main/aam-api-getting-started.md">开始使用 REST API</a></li>
      <li><a href="/help/using/api/dcs-intro/dcs-event-calls/dcs-event-calls.md">开始使用 DCS API</a></li>
@@ -151,7 +151,6 @@ ht-degree: 96%
   <tr> 
    <td> <p> <b>发行说明</b> </p> <p> 
      有关新增功能和修复，请参阅最新的 <a href="https://docs.adobe.com/content/help/zh-Hans/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud 发行说明</a>。</p> 
-     <br> 
      <p> <b>最新功能</b> </p> <p> 
      了解 Audience Manager 的最新功能：</p>
      <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager用户迁移到Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">针对基于人的目标的Google客户匹配</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager Plug-in for IAB TCF v2.0</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用情况报表</a></li>
@@ -199,7 +198,6 @@ Read about the latest Audience Manager features:
       <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://helpx.adobe.com/cn/support/experience-cloud.html" scope="external" format="https">Experience Cloud 产品文档主页</a> </li> 
       <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/cn/support/audience-manager.html" format="https" scope="external">Audience Manager 学习和支持</a> </li> 
      </ul> </p> 
-     <br> 
      <p>另请参阅 <a href="https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/documentation-updates/docs-2021.html">2021 年文档更新</a>。 </p> </td>
   </tr> 
  </tbody> 
