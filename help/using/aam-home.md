@@ -5,11 +5,11 @@ seo-title: Adobe Audience Manager 产品技术文档
 solution: Audience Manager
 title: Audience Manager 指南
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
-feature: overview
+feature: 概述
 translation-type: tm+mt
-source-git-commit: 04504d4561414f9558a1f1f4db33cbcf535d54af
+source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '653'
 ht-degree: 96%
 
 ---
@@ -32,8 +32,6 @@ ht-degree: 96%
 * 接下来，阅读 **Audience Manager 入门**，以了解 Audience Manager 的各项概念。另外，还请务必查阅相关的业务和技术实施指南。
 * 请参阅最新的 Audience Manager 发行说明，并阅读&#x200B;**发行说明和最新功能**&#x200B;部分中的最新功能。
 * 最后，您可以在&#x200B;**学习中心 - 推荐的 Audience Manager 和 Experience Cloud 资源**&#x200B;部分中找到更多 Experience Cloud 资源，如论坛、视频教程、现场培训课程和在线培训课程。
-
-<br> 
 
 ## Audience Manager 主要功能
 
@@ -70,8 +68,6 @@ ht-degree: 96%
    </td>
 </table>
 
-
-<br> 
 
 ## Audience Manager 入门
 
@@ -148,8 +144,6 @@ ht-degree: 96%
 
 -->
 
-<br> 
-
 ## 发行说明和最新功能
 
 <table> 
@@ -160,7 +154,7 @@ ht-degree: 96%
      <br> 
      <p> <b>最新功能</b> </p> <p> 
      了解 Audience Manager 的最新功能：</p>
-     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager用户迁移到Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">针对基于人的目标的Google客户匹配</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">IAB TCF v2.0的Audience Manager插件</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用情况报表</a></li>
+     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager用户迁移到Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">针对基于人的目标的Google客户匹配</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager Plug-in for IAB TCF v2.0</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用情况报表</a></li>
      </ul></p>
     </td>
   </tr> 
@@ -186,7 +180,6 @@ Read about the latest Audience Manager features:
 
 -->
 
-<br> 
 
 ## 学习中心 - 推荐的 Audience Manager 和 Experience Cloud 资源
 
