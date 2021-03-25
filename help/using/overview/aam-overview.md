@@ -7,7 +7,7 @@ title: Audience Manager 概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 feature: 概述
 translation-type: tm+mt
-source-git-commit: e6348c85e7df6428802d54b2c90385ce95f50e1a
+source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 100%
@@ -31,13 +31,9 @@ Audience Manager 可以帮助您汇总受众数据资产，从而能够轻松收
 
 Audience Manager 从渠道和设备（Web 分析、CRM、设备数据、电子商务等）收集第一方数据。
 
-<br> 
-
 **受众创建**
 
 将数据整合到受众配置文件中，为您提供跨设备和渠道的完整客户视图。创建相似人群拓展模型，构建受众区段和配置文件组，并使用第二方和第三方数据源进行补充。
-
-<br> 
 
 **数据输出**
 
