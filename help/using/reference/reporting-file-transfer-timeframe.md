@@ -7,9 +7,9 @@ title: 数据传输和文件处理时间对报表有何影响
 uuid: 4b975512-f67e-4749-a7ef-168415597682
 feature: 参考
 translation-type: tm+mt
-source-git-commit: c3c2f32dda7535b182ea3638a016fe245ed4894c
+source-git-commit: a696bc03e430e25e2752d84905009645c625d762
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '689'
 ht-degree: 5%
 
 ---
@@ -44,8 +44,6 @@ c_reporting_file_transfer_timeframe.xml
 | 入站文件摄取（脱机数据） | 每天执行两次文件处理。 这些过程会收集数据并准备投放。 文件投放时间因需要处理的客户数据总量而异。 从文件以Audience Manager上载到报告和激活数据之前，您应该预计最长等待48小时。 |
 | 出站（导出）文件 | 文件处理和投放每天进行一次，大约在14:00 UTC。 请记住，处理和投放受这些文件的总数和大小的影响。 在某些情况下，文件处理可能会延迟24小时。 发生这种情况时，Audience Manager将发送2个文件，而不是1个。 在Audience Manager必须完全停止处理文件的少数情况下，我们会通知客户。 鉴于这些情况，很难估计出站投放的时间。 要确定您是否收到完整的文件集，请检查时间戳并查找任何缺少的日期。 这是一个13位的UNIX UTC时间戳，记录文件创建的时间。 请参阅[实时出站数据传输](../integration/receiving-audience-data/real-time-outbound-transfers/real-time-outbound-transfers.md)。 |
 | 广告服务器日志文件 | 文件处理几乎实时执行，以在每小时文件准备就绪时收录日志文件记录。 每天执行一次文件准备报告的过程。 文件投放时间因需要处理的客户数据总量而异。 从您将文件上传到Audience Manager到数据可供报告和激活之间，您应该预计最长等待48小时。 |
-
-{style=&quot;table-layout:auto&quot;}
 
 >[!MORELIKETHIS]
 >
