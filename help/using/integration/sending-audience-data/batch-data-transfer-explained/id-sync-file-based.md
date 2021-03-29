@@ -7,9 +7,9 @@ title: ID 同步文件的名称和内容要求
 uuid: bfe42af9-9149-4da3-830e-f227c4e610c2
 feature: 入站数据传输
 translation-type: tm+mt
-source-git-commit: 67ba527ff8b06ca4f5515ffd1a9114acfabadecb
+source-git-commit: de1483763998027c4fc7694223c39dd7a37e87ab
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '873'
 ht-degree: 6%
 
 ---
@@ -130,6 +130,8 @@ ID同步文件的用途是将您自己的数据源中的[ DPUUID](../../../refer
 | 66552757407517449462805881945288602094 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M |
 | 66184778222667870903738139438735041506 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw |
 
+{style=&quot;table-layout:auto&quot;}
+
 第1步：ID同步过程将从[!DNL DPID] 12345与左列中的[!DNL Audience Manager] [!DNL UUID]s同步[!DNL DPUUID]s。 请注意，文件名中的[!DNL DPID] &quot;0&quot;表示[!DNL Audience Manager] [!DNL UUID]s。
 <br/>
 
@@ -142,6 +144,8 @@ ID同步文件的用途是将您自己的数据源中的[ DPUUID](../../../refer
 | XYZ3017PryPID8tzfhkEE-gE034LI-53Jde0utCYcIwd0A2OlM | 4392434426 |
 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M | 2351382994 |
 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw | 4601584763 |
+
+{style=&quot;table-layout:auto&quot;}
 
 第2步：来自[!DNL DPID] 12345的[!DNL DPUUID]s在步骤1中与Audience Manager[!DNL UUID]s同步。此ID同步的功能是将[!DNL DPID] 67890中的[!DNL DPUUID]与步骤1中的Audience Manager[!DNL UUID]同步。
 
