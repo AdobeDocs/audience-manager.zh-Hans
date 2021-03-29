@@ -8,10 +8,10 @@ keywords: ID映射、ID映射、Cookie映射
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 feature: 使用和计费
 translation-type: tm+mt
-source-git-commit: c3c2f32dda7535b182ea3638a016fe245ed4894c
+source-git-commit: a696bc03e430e25e2752d84905009645c625d762
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 6%
+source-wordcount: '585'
+ht-degree: 7%
 
 ---
 
@@ -45,8 +45,6 @@ Audience Manager对可以为帐户创建的特征、区段、目标和算法模�
 | 已载入 | 10万 |
 | 文件夹特征 | 零点二万 |
 
-{style=&quot;table-layout:auto&quot;}
-
 ### 区段限制
 
 | 区段类型 | 最大限制 |
@@ -70,10 +68,8 @@ Audience Manager对可以为帐户创建的特征、区段、目标和算法模�
 | 活动 [!UICONTROL Look-Alike Models] | 20.Audience Manager仅按此限制计算&#x200B;*active*&#x200B;算法模型。 |
 | [!UICONTROL Look-Alike Models] 最大受众大小 | 2500万。  请注意，此限制无法增加。 您可以通过为模型选择较少的数据源或选择较短的回顾窗口来减少受众大小。 |
 | [!UICONTROL Look-Alike Model]的最大被排除特征数 | 500.请参阅算法建模中的[特征排除](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md)。 |
-| 最小[!UICONTROL Predictive Audiences Models] | 10 |
+| 最大值 [!UICONTROL Predictive Audiences Models] | 10 |
 | [!UICONTROL Predictive Audiences Models]的最大基准角色数 | 50 |
-
-{style=&quot;table-layout:auto&quot;}
 
 ### 文件夹限制
 
