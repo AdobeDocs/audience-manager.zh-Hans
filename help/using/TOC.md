@@ -5,10 +5,11 @@ audience: end-user
 user-guide-title: Audience Manager 用户指南
 user-guide-description: Audience Manager 提供了行业领先的在线受众数据管理服务。
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
+feature-set: Audience Manager
 translation-type: tm+mt
-source-git-commit: 04504d4561414f9558a1f1f4db33cbcf535d54af
+source-git-commit: 9a1604b28f538a4f9595869345b385870419a6c3
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1789'
 ht-degree: 92%
 
 ---
@@ -146,7 +147,7 @@ ht-degree: 92%
       + [区段表达式编辑器中使用的代码语法](features/segments/segment-code-syntax.md)
       + [区段生成器中的特征和区段人口数据](features/segments/segment-builder-data.md)
       + [特征推荐](features/segments/trait-recommendations.md)
-      + [特征和区段资格参考](features/traits/trait-and-segment-qualification-reference.md)
+      + [特征和区段资格参考](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html)
    + 特征{#traits}
       + [特征概述](/help/using/features/traits/traits-overview.md)
       + [特征详细信息页面](features/traits/trait-details-page.md)
