@@ -1,18 +1,16 @@
 ---
-description: 为什么我的特征或区段没有显示在重叠报表页面中？
-seo-description: 为什么我的特征或区段没有显示在重叠报表页面中？
-seo-title: 为什么我的特征或区段没有显示在重叠报表页面中？
+description: 为什么具有只读权限的用户能够创建、编辑或删除特征和区段？
 solution: Audience Manager
-title: 为什么我的特征或区段没有显示在重叠报表页面中？
-feature: support
+title: 为什么具有只读权限的用户能够创建、编辑或删除特征和区段？
+feature: 支持
+exl-id: 3383d27e-9c12-4925-ace3-c3133727d9b9
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 100%
+source-wordcount: '89'
+ht-degree: 98%
 
 ---
-
 
 # 为什么具有只读权限的用户能够创建、编辑或删除特征和区段？
 
