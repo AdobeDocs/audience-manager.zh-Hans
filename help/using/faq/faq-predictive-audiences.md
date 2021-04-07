@@ -3,16 +3,16 @@ description: Predictive Audiences 可以帮助您使用数据科学将未知受�
 seo-description: Predictive Audiences 可以帮助您使用数据科学将未知受众实时分类为不同的角色。
 seo-title: Predictive Audiences 常见问题解答
 solution: Audience Manager
-title: Audience Manager Predictive Audiences
-feature: Algorithmic Models
+title: Predictive Audiences 常见问题解答
+feature: 算法模型
+exl-id: 21073970-8457-470b-89fc-724a118a18d2
 translation-type: tm+mt
-source-git-commit: c2c392b1201b5de08a3f4d58bbb7be5ef31545d0
+source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '969'
 ht-degree: 59%
 
 ---
-
 
 # Predictive Audiences 常见问题解答
 
@@ -58,18 +58,18 @@ ht-degree: 59%
 
 [!UICONTROL Predictive Audiences] 模型可能由于以下原因而无法生成结果：
 
-1. 所选角色[!UICONTROL traits] / [!UICONTROL segments]中没有足够的用户用户档案。 我们建议选择[!UICONTROL traits]或[!UICONTROL segments]，这样每个人物至少拥有几百个用户用户档案。
-1. 选定人物[!UICONTROL traits] / [!UICONTROL segments]的用户用户档案中没有足够的数据（没有足够的特征进行分析）。
-1. 目标受众特征／区段没有任何有效或已载入的用户。
+1. 所选角色[!UICONTROL traits] / [!UICONTROL segments]中没有足够的用户用户档案。 我们建议选择[!UICONTROL traits]或[!UICONTROL segments]，以便每个人物至少具有几百个用户用户档案。
+1. 所选人物[!UICONTROL traits] / [!UICONTROL segments]中没有足够的用户档案（没有足够的特征进行分析）。
+1. 目标受众特征/区段没有任何活动或已载入的用户。
 1. 过去 30 天内处于活动状态或已载入的目标受众用户在其用户配置文件中没有足够的数据（特征不足，无法进行分析）。
 1. 目标受众段使用不同于您为模型选择的[!UICONTROL Profile Merge Rule]。
-1. 您为模型选择的[!UICONTROL Profile Merge Rule]中可能不包含目标受众特征的数据源。
+1. 您为模型选择的[!UICONTROL Profile Merge Rule]中可能不包括目标受众特征的数据源。
 
 为了获得最佳结果，请遵循[角色选择标准](../features/algorithmic-models/predictive-audiences.md#selection-personas)和[目标受众选择标准](../features/algorithmic-models/predictive-audiences.md#selection-audience)中的建议准则。
 
  
 
-**为什么我的模特要显示 [!UICONTROL Error] 状况？**
+**我的模特为什么要展示 [!UICONTROL Error] 状况？**
 
 这表明模型运行失败。在这种情况下，请联系您的[!DNL Adobe]代表。
 
@@ -77,24 +77,24 @@ ht-degree: 59%
 
 **如何更改 [!UICONTROL Profile Merge Rule] 为 [!UICONTROL Predictive Audiences] [!UICONTROL segment]?**
 
-通过选择与上一个模型相同的角色和目标受众来创建新模型。 在创建模型时，请指定不同的[!UICONTROL Profile Merge Rule]。
+通过选择与上一模型相同的角色和目标受众来创建新模型。 在创建模型时，请指定不同的[!UICONTROL Profile Merge Rule]。
 
 >[!WARNING]
-> 或者，您也可以使用[区段生成器](../features/segments/segment-builder.md)手动创建具有现有预测性[!UICONTROL trait]的[!UICONTROL segment]，并为它指定您选择的[!UICONTROL Profile Merge Rule]。
+> 或者，您也可以使用[区段生成器](../features/segments/segment-builder.md)手动创建具有现有预测性[!UICONTROL trait]的[!UICONTROL segment]，并为其分配您选择的[!UICONTROL Profile Merge Rule]。
 > 
-> 但是，我们不建议采用此做法，因为预测[!UICONTROL traits]会自动继承其所属模型的[!UICONTROL Profile Merge Rule]，并且它们是根据符合模型[!UICONTROL Profile Merge Rule]的有影响的[!UICONTROL traits]构建的。
+> 但是，我们不建议采用此做法，因为预测[!UICONTROL traits]会自动继承它们所属的模型的[!UICONTROL Profile Merge Rule]，并且它们是从符合模型[!UICONTROL Profile Merge Rule]的有影响的[!UICONTROL traits]中构建的。
 
  
 
 **我应 [!UICONTROL Profile Merge Rule] 该选择什么？**
 
-为型号选择[!UICONTROL Profile Merge Rule]时，请仔细分析用例。
+为模型选择[!UICONTROL Profile Merge Rule]时，请仔细分析用例。
 
-假设您的目标受众[!UICONTROL segment]使用基于已验证用户档案+ [!DNL Device Graph]用户档案的[!UICONTROL Profile Merge Rule]，并且您为预测性[!UICONTROL segments]选择相同的[!UICONTROL Profile Merge Rule]。 在这种情况下，设备级别和跨设备级别[!UICONTROL traits]都将用于训练模型以及将用户放置到预测性[!UICONTROL segment]中。
+假设您的目标受众[!UICONTROL segment]使用基于已验证用户档案+ [!DNL Device Graph]用户档案的[!UICONTROL Profile Merge Rule]，并且您为预测型[!UICONTROL segments]选择相同的[!UICONTROL Profile Merge Rule]。 在这种情况下，设备级别和跨设备级别[!UICONTROL traits]都将用于训练模型和将用户放置到预测[!UICONTROL segment]中。
 
-但是，如果您只根据设备用户档案选择[!UICONTROL Profile Merge Rule]，则您的跨设备[!UICONTROL traits]将不会产生影响，也不会对将用户放置到预测[!UICONTROL segment]中有任何贡献。 这可能会对模型的准确性和范围产生不利影响。
+但是，如果您只基于设备用户档案选择[!UICONTROL Profile Merge Rule]，则您的跨设备[!UICONTROL traits]不会产生影响，也不会对预测[!UICONTROL segment]中用户的位置有任何贡献。 这可能会对模型的准确性和范围产生不利影响。
 
-仔细分析您的用例，并确定您希望模型从哪些[!UICONTROL trait]类型中学习，以及希望模型用于分类的数据类型。
+仔细分析您的用例，并确定希望模型从中学习的[!UICONTROL trait]类型以及希望模型用于分类的数据类型。
 
 **目标受众中不属于任何角色特征/区段的用户是否无法分类？**
 
@@ -114,11 +114,11 @@ ht-degree: 59%
 
  
 
-**我是否可以更改预测特征的生存时间(TTL)?**
+**是否可以更改预测特征的生存时间(TTL)?**
 
-预测特征TTL设置为0（生存期），无法更改。 [!UICONTROL Predictive Audiences] 只有当用户符合基本区段或被重新分类为其他预测区段时，才能将其从预测区段中取消分段。
+预测特征TTL设置为0（生存期），无法更改。 [!UICONTROL Predictive Audiences] 只有当用户符合基本区段或被重新分类至其他预测区段时，才能将其从预测区段中取消分类。
 
-如果需要，您可以通过创建包含预测特征和具有指定TTL的活动特征的新段来解决此功能。
+如果需要，您可以通过创建包含预测特征和具有指定TTL的活动特征的新区段来解决此功能。
 
  
 
