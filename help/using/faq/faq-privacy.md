@@ -8,10 +8,10 @@ uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
 feature: 数据治理和隐私
 exl-id: bccf49d7-1a3b-4286-86fb-59e472af4501
 translation-type: tm+mt
-source-git-commit: 2afb48afad7978b8901e78060c7dccdb2a7bdf7b
+source-git-commit: 04877a4a607457ad1ca179faec680df8118ff965
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 96%
+ht-degree: 83%
 
 ---
 
@@ -56,15 +56,15 @@ ht-degree: 96%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>后端服务器 </p> </td> 
-   <td colname="col2"> <p>120 天。 </p> <p> Audience Manager 会在 120 天后（从上次在 Audience Manager 平台上看到用户之日算起）从后端服务器删除用户数据。如果 <span class="keyword">Audience Manager</span> 在这 120 天的周期内记录到用户活动，则会再将数据保留 120 天。 </p> </td> 
+   <td colname="col2"> <p>120天 </p> <p> Audience Manager 会在 120 天后（从上次在 Audience Manager 平台上看到用户之日算起）从后端服务器删除用户数据。如果<span class="keyword"> Audience Manager</span>在此120天周期内记录用户活动，我们将再保留120天此数据。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Edge 服务器 </p> </td> 
-   <td colname="col2"> <p> 14 天。 </p> <p>Audience Manager 会在 14 天后（从上次在 Audience Manager 平台上看到用户之日算起）从 Edge 服务器删除用户数据。如果 <span class="keyword">Audience Manager</span> 在这 14 天的周期内记录到用户活动，则会再将数据保留 14 天。如果用户在 14 天后再次变为活动状态，则从第一次查看新页面到用户变为可操作状态之间会存在延迟。超过 14 天不活动后，需要 6-18 个小时才能将完整的配置文件返回到 Edge 中心。 </p> </td> 
+   <td colname="col2"> <p> 14天 </p> <p>Audience Manager 会在 14 天后（从上次在 Audience Manager 平台上看到用户之日算起）从 Edge 服务器删除用户数据。如果<span class="keyword"> Audience Manager</span>在此14天周期内记录用户活动，我们将再保留14天此数据。 如果用户在14天周期后再次变为活动状态，则在第一个新页面视图和用户变为可操作状态之间会有延迟。 在超过14天不活动后，需要6-18小时才能将完整用户档案重新移回边缘中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始日志 </p> </td> 
-   <td colname="col2"> <p>60 天（在 60 天不活动后删除）。 </p> <p>原始日志是 Edge 服务器通过 HTTP 调用接收到的数据，或从发送到 <span class="keyword">Audience Manager</span> 的已载入文件接收到的数据。 </p> </td> 
+   <td colname="col2"> <p>60天(未活动60天后删除) </p> <p>原始日志是 Edge 服务器通过 HTTP 调用接收到的数据，或从发送到 <span class="keyword">Audience Manager</span> 的已载入文件接收到的数据。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>广告服务器日志 </p> </td> 
