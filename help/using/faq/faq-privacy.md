@@ -5,15 +5,15 @@ seo-title: 隐私和数据保留常见问题解答
 solution: Audience Manager
 title: 隐私和数据保留常见问题解答
 uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
-feature: Data Governance and Privacy
+feature: 数据治理和隐私
+exl-id: bccf49d7-1a3b-4286-86fb-59e472af4501
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 2afb48afad7978b8901e78060c7dccdb2a7bdf7b
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 96%
 
 ---
-
 
 # 隐私和数据保留常见问题解答{#privacy-and-data-retention-faq}
 
@@ -64,7 +64,7 @@ ht-degree: 96%
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始日志 </p> </td> 
-   <td colname="col2"> <p>180 天（在 180 天不活动后删除）。 </p> <p>原始日志是 Edge 服务器通过 HTTP 调用接收到的数据，或从发送到 <span class="keyword">Audience Manager</span> 的已载入文件接收到的数据。 </p> </td> 
+   <td colname="col2"> <p>60 天（在 60 天不活动后删除）。 </p> <p>原始日志是 Edge 服务器通过 HTTP 调用接收到的数据，或从发送到 <span class="keyword">Audience Manager</span> 的已载入文件接收到的数据。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>广告服务器日志 </p> </td> 
@@ -72,7 +72,7 @@ ht-degree: 96%
   </tr> 
   <tr> 
    <td colname="col1"> <p>CRM 级别配置文件（已验证的配置文件） </p> </td> 
-   <td colname="col2"> <p>非活动的 CRM 级别配置文件（客户 ID）的默认存留期 (TTL) 为 24 个月。但是，您可以使用Audience Manager用户界面将非活动的CRM级别用户档案的TTL间隔缩短或延长一个月至5年。 您可以在创建或编辑跨设备数据源时执行此操作。</p> <p>有关更多信息，请参阅<a href="../features/profile-merge-rules/merge-rules-start.md#settings">创建跨设备数据源</a>中的“数据源设置”。</p> </td> 
+   <td colname="col2"> <p>非活动的 CRM 级别配置文件（客户 ID）的默认存留期 (TTL) 为 24 个月。但是，您可以使用Audience Manager用户界面将非活动的CRM级别用户档案的TTL间隔缩短或延长一个月到五年。 您可以在创建或编辑跨设备数据源时执行此操作。</p> <p>有关更多信息，请参阅<a href="../features/profile-merge-rules/merge-rules-start.md#settings">创建跨设备数据源</a>中的“数据源设置”。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>移动设备 ID </p> </td> 
@@ -119,4 +119,3 @@ ht-degree: 96%
   </tr> 
  </tbody> 
 </table>
-
