@@ -3,35 +3,35 @@ description: 本文档介绍与 Audience Manager 数据隐私法规合规相关�
 seo-description: 本文档介绍与 Audience Manager 数据隐私法规合规相关的技术。
 seo-title: 数据隐私请求
 solution: Audience Manager
-keywords: GDPR UI, GDPR API, CCPA, privacy
+keywords: GDPR UI、GDPR API、CCPA、隐私
 title: 数据隐私请求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
-feature: data governance & privacy
+feature: 数据治理和隐私
+exl-id: a1fc9c21-3417-4899-a585-92ad2cb25362
 translation-type: tm+mt
-source-git-commit: 231d8e537cf5b4f29b1c4f284fe1b3ffe6d187a9
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 60%
+source-wordcount: '1486'
+ht-degree: 59%
 
 ---
-
 
 # 数据隐私请求 {#data-privacy-requests}
 
 ## 概述 {#overview}
 
-本文档概述了如何管理单个数据隐私和退出请求，您可以通过[Privacy ServiceUI](https://privacyui.cloud.adobe.io/)和&#x200B;**[!DNL Privacy Service API]**&#x200B;发送这些请求至[!DNL Audience Manager]。
+本文档概述了如何管理单个Privacy Service隐私和退出请求，您可以通过[UI](https://privacyui.cloud.adobe.io/)和&#x200B;**[!DNL Privacy Service API]**&#x200B;发送这些请求至[!DNL Audience Manager]。
 
 这些工具允许您发送在[!DNL GDPR]和[!DNL CCPA]下发出的消费者数据隐私请求。
 
 在阅读本文之前，建议您先查阅 [GDPR 术语表](../data-security-and-privacy/aam-gdpr-glossary.md)和 [CCPA 术语表](aam-ccpa-glossary.md)，以便更好地了解本文中使用的术语。
 
-您可以通过两种方式提交单个请求以从[!DNL Audience Manager]访问和删除消费者数据：
+您可以通过两种方式提交单个请求以访问和删除[!DNL Audience Manager]中的消费者数据：
 
 * 通过 [Privacy Service UI](https://privacyui.cloud.adobe.io/)。请参阅[此文档](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)。
-* 通过 **[!DNL Privacy Service API]**。请参阅文档[此处](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)和[!DNL API]引用[此处](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)。
+* 通过 **[!DNL Privacy Service API]**。请参见文档[此处](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)和[!DNL API]参考[此处](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)。
 
-在发送单个数据隐私请求时，您可以提交任何[!DNL Audience Manager]标识符(ID)，如&#x200B;**[Audience Manager标识符](data-privacy-ids.md)**&#x200B;部分所述，以及其各自的命名空间ID（数据源ID）。
+在发送单个命名空间隐私请求时，您可以提交任何[!DNL Audience Manager]标识符(ID)，如&#x200B;**[Audience Manager标识符](data-privacy-ids.md)**&#x200B;部分所述，以及各自的ID（数据源ID）。
 
 [Privacy Service](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) 支持两种类型的请求：数据访问请求和数据删除请求。
 
@@ -47,7 +47,7 @@ ht-degree: 60%
 
 ## 数据删除请求 {#delete-data}
 
-您可以通过[Privacy ServiceUI](https://privacyui.cloud.adobe.io)（文档[此处](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)）或通过调用Privacy ServiceAPI（文档[此处](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)和[!DNL API]引用[此处](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)）发送数据删除请求。
+您可以通过[Privacy ServiceUI](https://privacyui.cloud.adobe.io)（文档[此处](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)）或通过调用Privacy ServiceAPI（文档[此处](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)和[!DNL API]引用[此处](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)）发送删除请求。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 允许您通过使用 [!UICONTROL Request Builder] 或上传 [!DNL JSON] 文件来创建新的作业请求。
 
@@ -55,14 +55,14 @@ ht-degree: 60%
 
 Adobe 理解您承诺在 30 天内响应数据隐私客户请求。因此，[!DNL Adobe]承诺尽快处理您的数据删除请求。
 
-响应用户数据删除请求，[!DNL Audience Manager]将删除与请求中包含的[!DNL Audience Manager]标识符相关的特征和区段。 此外，将删除个人通过[!DNL Audience Manager]选择退出进一步数据收集的相应[!DNL Audience Manager]标识符和相应的ID映射。
+响应您的消费者数据删除请求，[!DNL Audience Manager]将删除与请求中包含的[!DNL Audience Manager]标识符相关的特征和区段。 此外，将删除由[!DNL Audience Manager]选择退出进一步数据收集的个人的相应[!DNL Audience Manager]标识符和相应的ID映射。
 
 如果您在数据隐私请求中发送了声明的 ID（如跨设备 [!DNL CRM] ID 或 ID）， 将在所有关联的设备（每个声明的 ID 最多关联 100 台设备）上执行必要的删除操作。[!DNL cookie][!DNL Audience Manager]
 
 [!DNL Audience Manager]当数据主体请求删除某些数据时， 将尝试通过向激活合作伙伴发送有关取消分段的信息，来向其告知数据删除请求。但是，一些激活合作伙伴：
 
-1. 无法支持从[!DNL Audience Manager]和／或
-2. 无法从[!DNL Audience Manager]接收频率低于30天的更新。 在这种情况下，[!DNL Audience Manager]客户无法通过[!DNL Audience Manager]以自动方式向激活合作伙伴发送删除请求。
+1. 无法支持从[!DNL Audience Manager]和/或
+2. 无法从[!DNL Audience Manager]接收频率低于30天的更新。 在这些情况下，[!DNL Audience Manager]客户无法通过[!DNL Audience Manager]以自动方式向激活合作伙伴发送删除请求。
 
 在这些情况下，您无法通过[!DNL Audience Manager]以自动方式向激活合作伙伴发送删除请求。
 
@@ -70,7 +70,7 @@ Adobe 理解您承诺在 30 天内响应数据隐私客户请求。因此，[!DN
 
 ## 选择退出请求 {#opt-out-requests}
 
-[!DNL Audience Manager] 支持与选择退出管理相关的行业标准。阅读以了解有关[!DNL Audience Manager]支持的退出类型的完整信息。
+[!DNL Audience Manager] 支持与选择退出管理相关的全行业标准。阅读[!DNL Audience Manager]支持的退出类型的完整信息。
 
 数据访问和删除请求通过 [Privacy Service](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) 进行处理，而选择退出请求当前则通过 [!DNL DCS API] 提供支持。阅读以了解退出[!DNL API]调用的外观。
 
@@ -117,22 +117,22 @@ Adobe 理解您承诺在 30 天内响应数据隐私客户请求。因此，[!DN
 
 ### 通过调用声明的 ID 发出合作伙伴级别的选择退出请求
 
-合作伙伴级别的退出功能允许您选择退出特定[!DNL Audience Manager]合作伙伴的数据收集。 您可以发送跨设备ID的合作伙伴级别退出请求，包括[!DNL CRM] ID和散列电子邮件地址。
+合作伙伴级别的退出功能允许您选择退出特定[!DNL Audience Manager]合作伙伴的数据收集。 您可以发送合作伙伴级别的跨设备ID退出请求，包括[!DNL CRM] ID和散列化的电子邮件地址。
 
 通过调用声明的 ID 发出合作伙伴级别的选择退出请求后：
 
 * [CRM ID](../../reference/ids-in-aam.md) 将退出数据收集；
 * 与 [CRM ID](../../reference/ids-in-aam.md) 关联的上一个设备 ID（[Audience Manager 独特用户 ID](../../reference/ids-in-aam.md)）将退出数据收集。
-* [!DNL Audience Manager] 将停止对ID和与ID链接的最后一个设备 [!DNL CRM] ID进行所有数据收集、细分或激活 [!DNL CRM] 操作；
-* [!DNL Audience Manager] 从所有区段中 [!DNL CRM] 取消选择退出ID和最后一个设备ID;
+* [!DNL Audience Manager] 将停止对ID和与ID链接的最后一个设 [!DNL CRM] 备ID进行所有数据收集、分段或 [!DNL CRM] 激活;
+* [!DNL Audience Manager] 从所有区段中取消 [!DNL CRM] 选择退出ID和最后一个设备ID;
 * [!UICONTROL Destination] 合作伙伴将收到对ID和最 [!DNL CRM] 后一个设备ID的unsegment请求。取消分段既适用于[实时](data-privacy-requests.md#aam-partners-with-unsegmentation)目标，也适用于批量目标。
 * 不会删除历史数据。
 
-当[!DNL Audience Manager]收到合作伙伴级别的退出请求时，由[!DNL DCS]返回的[!DNL JSON]包含[错误代码171](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes)，其消息为[!UICONTROL "Encountered opt out tag"]，而不是[!DNL Audience Manager]用户ID。
+当[!DNL Audience Manager]收到伙伴级别退出请求时，由[!DNL DCS]返回的[!DNL JSON]包含[错误代码171](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes)，其中包含消息[!UICONTROL "Encountered opt out tag"]，而不是[!DNL Audience Manager]用户ID。
 
 您可以通过 `d_cid` 和 `d_cid_ic` 键值对，发出针对某个已声明 ID 的选择退出请求。虽然旧版参数（如 `d_dpid` 和 `d_dpuuid`）仍然可用，但已考虑将其弃用。请参阅 [CID 取代 DPID 和 DPUUID](../../reference/cid.md)。在示例中，*斜体*&#x200B;表示变量占位符。
 
-#### 选择退出（带有[!DNL CID]和[!DNL CID_IC]）
+#### 选择退出（带[!DNL CID]和[!DNL CID_IC]）
 
 有关说明和语法，请参阅[已声明 ID 的 URL 变量和语法](../../features/declared-ids.md#variables-and-syntax)。
 
@@ -159,18 +159,18 @@ Adobe 理解您承诺在 30 天内响应数据隐私客户请求。因此，[!DN
 
 * 该设备 ID 将退出数据收集。
 * [!DNL Audience Manager] 将从相应合作伙伴中停止对该设备 ID 进行任何数据收集、分段或激活操作。
-* [!DNL Audience Manager] 从所有区段中取消对设备ID的分段；
+* [!DNL Audience Manager] 从所有区段中取消设备ID的区段；
 * 目标合作伙伴将收到对该设备 ID 进行取消分段的请求。取消分段既适用于[实时](data-privacy-requests.md#aam-partners-with-unsegmentation)目标，也适用于批量目标。
 * 不会删除历史数据。
 
 ## [!DNL Audience Manager] 具有取消细分功能的合作伙伴  {#aam-partners-with-unsegmentation}
 
-为了帮助您自动处理激活数据隐私请求，[!DNL Audience Manager]将尝试通过向客户合作伙伴发送取消细分（或删除细分）信息，通知其有关数据主体删除请求的信息。
+为了帮助您自动处理消费者数据隐私请求，[!DNL Audience Manager]将尝试通过向激活合作伙伴发送取消细分（或删除细分）信息来通知数据主体的删除请求。
 
 但是，一些激活合作伙伴：
 
-1. 无法支持来自[!DNL Audience Manager]和／或的取消分段请求
-2. 30天内无法以多于一次的频率接收[!DNL Audience Manager]的更新。
+1. 无法支持[!DNL Audience Manager]和/或
+2. 在30天内，无法比一次更频繁地接收[!DNL Audience Manager]的更新。
 
 在这些情况下，您无法通过[!DNL Audience Manager]以自动方式向激活合作伙伴发送删除请求。
 
@@ -178,6 +178,6 @@ Adobe 理解您承诺在 30 天内响应数据隐私客户请求。因此，[!DN
 
 ## 数据更正请求 {#correction}
 
-由于[!DNL Audience Manager]不是数据源，因此[!DNL Audience Manager]中的数据更正角色有限。 更正可能意味着用户已请求取消错误[!UICONTROL trait]/[!UICONTROL segment]的资格，或者被限定为所需的[!UICONTROL trait]/[!UICONTROL segment]。
+鉴于[!DNL Audience Manager]不是数据源，[!DNL Audience Manager]中数据更正的角色有限。 更正可能意味着消费者已要求取消不正确的[!UICONTROL trait]/[!UICONTROL segment]资格，或者被限定为所需的[!UICONTROL trait]/[!UICONTROL segment]。
 
-[!DNL Audience Manager] 客户可以根据用户用户档案选择捕获相关信号／特征／细分，并通过离线数据收 [集发送](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 此信息 [!DNL Audience Manager]。请注意，如果用户重复其行为，将继续符合原始[!UICONTROL trait]和[!UICONTROL segments]的条件。
+[!DNL Audience Manager] 客户可以选择根据用户用户档案捕获相关信号/特征/细分，并通过离线数据收 [录发送](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 此信 [!DNL Audience Manager]息。请注意，如果用户重复其行为，将继续获得原始[!UICONTROL trait]和[!UICONTROL segments]的资格。
