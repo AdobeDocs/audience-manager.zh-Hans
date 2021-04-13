@@ -6,14 +6,14 @@ solution: Audience Manager
 title: 标记管理组件
 uuid: e5059478-6ba7-4e1a-afec-e41ad7a27750
 feature: 系统组件
+exl-id: 064e3653-7658-422c-9dd5-2252806e8f09
 translation-type: tm+mt
-source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '392'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
-
 
 # 标记管理组件{#tag-management-components}
 
@@ -56,4 +56,3 @@ Audience Manager包含以下组件：
 * 处理来自门户的客户端输入（例如，创建特征和目标）。
 * 将数据传输到Akamai，Akamai包括用于构建容器模板和目标发布iFrame的数据。
 * 返回UI报告系统的数据。
-
