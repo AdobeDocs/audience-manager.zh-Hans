@@ -4,19 +4,19 @@ seo-description: 在 Audience Manager 中处理来自 Experience Cloud 解决方
 seo-title: 在 Audience Manager 中处理来自 Experience Cloud 解决方案或其他外部系统的数据。
 solution: Audience Manager
 title: 实施和集成指南
-feature: Third Party Integrations
+feature: 第三方集成
+exl-id: 6e3cccdd-10af-4b17-9ddb-c4faf63f0a50
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 81%
+source-wordcount: '77'
+ht-degree: 79%
 
 ---
 
-
 # 实施和集成概述
 
-使用[!DNL Audience Manager]中[!DNL Experience Cloud]解决方案或其他外部系统的数据。
+使用[!DNL Experience Cloud]解决方案或[!DNL Audience Manager]中其他外部系统的数据。
 
 * [数据集成方法](data-integration-methods.md)
 * [实施 Audience Manager](implement-audience-manager.md)
