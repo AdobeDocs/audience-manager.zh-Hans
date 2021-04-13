@@ -5,25 +5,25 @@ seo-title: TLS 1.0 和 1.1 已弃用
 solution: Audience Manager
 title: TLS 1.0 和 1.1 已弃用
 uuid: 6a820e63-dd49-4689-9596-940aabba18ec
-feature: reference
+feature: 参考
+exl-id: 857105c1-726a-4d79-bd1c-accb368aef29
 translation-type: tm+mt
-source-git-commit: 5d6983f5308f1dfd4560ee1b38bcaee3ca6e422f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '277'
 ht-degree: 3%
 
 ---
 
-
 # TLS 1.0 和 1.1 已弃用{#tls-deprecation}
 
-传输层安全(TLS)是一种加密协议，用于在两个系统之间建立安全通信渠道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，使用的TLS协议有三个版本：TLS 1.0、1.1和1.2。
+传输层安全(TLS)是一种加密协议，用于在两个系统之间建立安全通信渠道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，TLS协议使用了三个版本：TLS 1.0、1.1和1.2。
 
-2019年3月，[!DNL Adobe]终止了对[!DNL TLS 1.0]协议的支持。 Adobe Audience Manager功能不适用于使用仅支持[!DNL TLS 1.0]的浏览器的最终用户。
+2019年3月，[!DNL Adobe]终止了对[!DNL TLS 1.0]协议的支持。 Adobe Audience Manager功能对于使用仅支持[!DNL TLS 1.0]的浏览器的最终用户无效。
 
 2020年3月，[!DNL Adobe]将结束对[!DNL TLS 1.1]协议的支持。 Adobe Audience Manager功能将停止为使用仅支持[!DNL TLS 1.1]的浏览器的最终用户使用。
 
-Adobe强烈建议使用[!DNL TLS 1.2]，即在编写时使用最新版本的协议。 所有现代浏览器都使用[!DNL TLS 1.2]。 我们为您收集了一列表浏览器、版本及其[!DNL TLS]支持。 有关TLS浏览器支持的详细信息，请访问[传输层安全维基百科链接](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers)。
+Adobe强烈建议使用[!DNL TLS 1.2]，即在编写时使用协议的最新版本。 所有现代浏览器都使用[!DNL TLS 1.2]。 我们已为您收集了一列表浏览器、版本及其[!DNL TLS]支持。 有关TLS浏览器支持的详细信息，请访问[传输层安全维基百科链接](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers)。
 
 <!--
 
