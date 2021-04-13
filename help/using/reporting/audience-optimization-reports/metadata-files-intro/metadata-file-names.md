@@ -1,23 +1,23 @@
 ---
-description: 根据这些规范命名Audience Optimization元数据文件。
-seo-description: 根据这些规范命名Audience Optimization元数据文件。
+description: 根据这些规范命名您的Audience Optimization元数据文件。
+seo-description: 根据这些规范命名您的Audience Optimization元数据文件。
 seo-title: 元数据文件的命名约定
 solution: Audience Manager
 title: 元数据文件的命名约定
 uuid: cab55b2a-2e54-45f6-aeea-3735b911f821
-feature: log files
+feature: 日志文件
+exl-id: 7a895c4f-1100-4ba1-947e-abb47307fb40
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 10%
+source-wordcount: '216'
+ht-degree: 11%
 
 ---
 
-
 # 元数据文件的命名约定{#naming-conventions-for-metadata-files}
 
-根据这些规范命名Audience Optimization元数据文件。
+根据这些规范命名您的Audience Optimization元数据文件。
 
 ## 语法和ID类别{#syntax}
 
@@ -34,9 +34,9 @@ ht-degree: 10%
 * 中间组件&#x200B;**0**&#x200B;在技术上是父ID，它是旧字段。 该值应始终设置为&#x200B;**0**。
 * 子ID的值可以介于1和10之间，具体取决于维度。 请参阅以下代码：
 
-## 子ID维{#child-dimension}
+## 子ID维度{#child-dimension}
 
-在元数据文件名中，子ID是一个标识符，它将文件中的数据类型分类，并将其置于层次结构中。 可以使用以下类别ID标记文件名中的子ID:
+在元数据文件名中，子ID是一种标识符，用于将文件中的数据类型分类并将其置于层次结构中。 可以使用以下类别ID在文件名中标记子ID:
 
 1. 促销活动
 1. 创意
@@ -45,13 +45,13 @@ ht-degree: 10%
 1. Site（网站）
 1. 广告商（如果在[数据源](../../../features/manage-datasources.md#details)中使用集成代码）
 1. 插入顺序(IO)
-1. 垂直(即“计算机”、“汽车”、“房地产”等特定行业或业务类别)
-1. 策略
+1. 垂直(即，特定行业或业务类别，如“计算机”、“汽车”、“房地产”等)
+1. 战术
 1. 业务单位或品牌
 
 ## 示例 {#example}
 
-对于Creative元数据文件，文件名可以是20190115_0_2。
+对于Creative元数据文件，文件名可为20190115_0_2。
 
 <!--Let's take a look at how you would use these IDs in a metadata file name. As an example, say your data file consists of campaign creatives. In this case, the campaign is a parent object and the creatives are child objects because they belong to, or are contained by, the campaign. As a result, you'd choose the following IDs for the metadata file name:
 
