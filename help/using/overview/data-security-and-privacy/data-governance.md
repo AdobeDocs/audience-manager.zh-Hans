@@ -3,17 +3,17 @@ description: 本文档介绍 Audience Manager 如何管理客户数据。
 seo-description: 本文档介绍 Audience Manager 如何管理客户数据。
 seo-title: 数据管理
 solution: Audience Manager
-keywords: GDPR UI, GDPR API, CCPA, privacy, consent, obfuscation, governance
+keywords: GDPR UI， GDPR API， CCPA，隐私权，同意，模糊处理，管理
 title: 数据管理
-feature: data governance & privacy
+feature: 数据管理 & 隐私
+exl-id: 52aeca00-73f2-4525-9e11-34a472ec45c6
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 96%
+source-wordcount: '470'
+ht-degree: 94%
 
 ---
-
 
 # 数据管理
 
@@ -32,7 +32,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->请参阅[IP地址模糊化](../../features/administration/ip-obfuscation.md)，了解如何在Audience Manager用户界面中启用[!DNL IP]地址模糊化。
+>请参阅[IP地址模糊处理](../../features/administration/ip-obfuscation.md)，了解如何在Audience Manager用户界面中启用[!DNL IP]地址模糊处理。
 
 观看以下视频，了解 Audience Manager 如何进行 [!DNL IP] 地址模糊处理。
 
