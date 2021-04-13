@@ -1,23 +1,23 @@
 ---
-description: 视图指定目标和时间段的出站批处理作业历史记录信息。
-seo-description: 视图指定目标和时间段的出站批处理作业历史记录信息。
+description: 视图指定目标和时间段的出站批作业历史记录信息。
+seo-description: 视图指定目标和时间段的出站批作业历史记录信息。
 seo-title: 出站文件历史记录
 solution: Audience Manager
 title: 出站文件历史记录
 uuid: 3621a59d-2bb5-4828-86f6-4c9bfa580764
-feature: inbound and outbound reports
+feature: 入站和出站报表
+exl-id: 8072c44f-bc9a-4b40-99d9-8cb87bb58d98
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '172'
 ht-degree: 7%
 
 ---
 
-
 # 出站文件历史记录 {#outbound-file-history}
 
-视图指定目标和时间段的出站批处理作业历史记录信息。
+视图指定目标和时间段的出站批作业历史记录信息。
 
 <!-- 
 
@@ -34,7 +34,7 @@ t_reports_outbound_history.xml
 
    ![步骤结果](assets/outbound_history_stats.png)
 
-   下表包含与报告中的列对应的信息：
+   下表包含与报表中各列对应的信息：
 
 <table id="table_93076D46AC50411395E72B9B987E99BE"> 
  <thead> 
@@ -46,7 +46,7 @@ t_reports_outbound_history.xml
  <tbody> 
   <tr> 
    <td colname="col1"> 数据同步文件名 </td> 
-   <td colname="col2"> <p>为此目标生成的<span class="keyword">Adobe</span>的所有出站文件的列表，这些文件一起处理。 </p> </td> 
+   <td colname="col2"> <p>为此目标生成的<span class="keyword">Adobe</span>的所有出站文件的列表，已一起处理。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 成功 </td> 
