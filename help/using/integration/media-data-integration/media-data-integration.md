@@ -1,23 +1,23 @@
 ---
-description: 您可以使用像素调用Audience Manager（通常称为像素化创意）或通过摄取日志文件从媒体活动捕获数据。
-seo-description: 您可以使用像素调用Audience Manager（通常称为像素化创意）或通过摄取日志文件从媒体活动捕获数据。
+description: 您可以使用对Audience Manager的像素调用（通常称为对创意进行像素化处理）或通过摄取日志文件从媒体活动捕获数据。
+seo-description: 您可以使用对Audience Manager的像素调用（通常称为对创意进行像素化处理）或通过摄取日志文件从媒体活动捕获数据。
 seo-title: 媒体数据集成
 solution: Audience Manager
 title: 媒体数据集成
 uuid: 6f6bbd03-084b-4226-8809-3b00b467606f
-feature: Integration with Campaign
+feature: Adobe Campaign集成
+exl-id: ca4906a7-0c39-49bc-9505-d76a61ec9eac
 translation-type: tm+mt
-source-git-commit: 3c70178dc1a020545793ea7facc70e34d23543fa
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '149'
 ht-degree: 17%
 
 ---
 
-
 # 媒体数据集成 {#media-data-integration}
 
-您可以使用像素调用Audience Manager（通常称为像素化创意）或通过摄取日志文件从媒体活动捕获数据。 阅读本节中的文章以了解该过程。
+您可以使用对Audience Manager的像素调用（通常称为对创意进行像素化处理）或通过摄取日志文件从媒体活动捕获数据。 阅读本节中的文章以了解该过程。
 
 <!-- c_camp_data_int.xml -->
 
