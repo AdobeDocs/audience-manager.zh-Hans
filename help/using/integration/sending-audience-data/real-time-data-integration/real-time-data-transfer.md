@@ -1,27 +1,27 @@
 ---
-description: 实时入站数据获取过程使用用户浏览器发出的一系列HTTP请求将数据传递给Audience Manager。
-seo-description: 实时入站数据获取过程使用用户浏览器发出的一系列HTTP请求将数据传递给Audience Manager。
+description: 实时入站数据获取过程使用用户浏览器中的一系列HTTP请求将数据传递到Audience Manager。
+seo-description: 实时入站数据获取过程使用用户浏览器中的一系列HTTP请求将数据传递到Audience Manager。
 seo-title: 实时入站数据摄取
 solution: Audience Manager
 title: 实时入站数据摄取
 uuid: 43cb0ebc-6c36-4391-bbfb-6b203d63c69a
-feature: Inbound Data Transfers
+feature: 入站数据传输
+exl-id: d243c74c-3a29-4dbf-a4c7-43ea526a9d7b
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 7%
+source-wordcount: '198'
+ht-degree: 8%
 
 ---
 
-
 # 实时入站数据摄取 {#real-time-inbound-data-ingestion}
 
-实时入站数据获取过程使用用户浏览器发出的一系列`HTTP`请求将数据传递给Audience Manager。
+实时入站数据获取过程使用用户浏览器中的一系列`HTTP`请求将数据传递到Audience Manager。
 
 <!-- c_rt_inbound_real_time.xml -->
 
-入站数据应格式化为称为信号的键值对。 通常，每个信号都映射到通过用户界面或[!DNL API]创建或管理的段。
+入站数据应格式化为称为信号的键值对。 通常，每个信号都映射到通过用户界面或[!DNL API]创建或管理的区段。
 
 ## URL字符串参数和语法{#url-string-syntax}
 
@@ -34,7 +34,7 @@ ht-degree: 7%
 | 参数 | 描述 |
 |---|---|
 | `<KEY>` | 键值对中的唯一标识符（例如性别、颜色、价格）。 |
-| `<VAL>` | 属于由键定义的数据集的变量（例如，性别=男性、颜色=绿色、价格=100） |
+| `<VAL>` | 属于由键定义的数据集的变量（例如，性别=男性，颜色=绿色，价格=100） |
 
 ### URL语法
 
