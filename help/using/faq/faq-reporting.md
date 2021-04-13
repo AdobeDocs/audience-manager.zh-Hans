@@ -5,15 +5,15 @@ seo-title: 报表常见问题解答
 solution: Audience Manager
 title: 报表常见问题解答
 uuid: 78cd6c86-8a4a-4748-ab71-b6e8d6078c94
-feature: Reporting
+feature: 报告参考
+exl-id: 1e6531b2-bb39-4056-9d5e-164f50955f99
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '704'
+ht-degree: 99%
 
 ---
-
 
 # 报表常见问题解答{#reporting-faq}
 
