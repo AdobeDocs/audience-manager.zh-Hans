@@ -4,12 +4,11 @@ seo-description: 数据馈送需要名称、说明、数据源和计划类型。
 seo-title: 创建、定价和管理数据信息源
 solution: Audience Manager
 title: 创建、定价和管理数据信息源
-topic-edit: DIL API
 uuid: e28c20b3-33fc-4485-8ee9-8530d126f741
 feature: Audience Marketplace
 exl-id: e8605e94-e62a-430c-9aef-875f995fb436
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 2%
@@ -57,7 +56,7 @@ ht-degree: 2%
 
 在[!UICONTROL Settings]部分中，将滑块移动到：
 
-* **[!UICONTROL Private]** 和 **[!UICONTROL Branded]**:买方的列表 [!UICONTROL Marketplace] 在提供方列中显示卖方的姓名，所有其他数据都处于隐藏状态。
+* **[!UICONTROL Private]** 和 **[!UICONTROL Branded]**:买方的列表 [!UICONTROL Marketplace] 在提供者列中显示卖方的姓名，所有其他数据都处于隐藏状态。
 
 * **[!UICONTROL Private]** 和 **[!UICONTROL Unbranded]**:采购员的列表 [!UICONTROL Marketplace] 仅显示数据馈送名称和说明。数据提供程序名称显示为[!UICONTROL Private Seller]。
 
