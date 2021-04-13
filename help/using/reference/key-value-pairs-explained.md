@@ -1,20 +1,20 @@
 ---
 description: 定义和描述标准和序列化键值对。
-keywords: integration code
+keywords: 集成代码
 seo-description: 定义和描述标准和序列化键值对。
 seo-title: 键值对说明
 solution: Audience Manager
 title: 键值对说明
 uuid: f1435742-81ca-4964-8370-accf2f1c47a5
-feature: reference
+feature: 参考
+exl-id: de4e6fdb-2d6d-4fed-9255-9438b42b2570
 translation-type: tm+mt
-source-git-commit: 5d6983f5308f1dfd4560ee1b38bcaee3ca6e422f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 6%
+source-wordcount: '279'
+ht-degree: 7%
 
 ---
-
 
 # 键值对说明{#key-value-pairs-explained}
 
@@ -26,17 +26,17 @@ c_key_value_explained.xml
 
  -->
 
-键值对由两个相关的数据元素组成：一个键，它是定义数据集（例如，性别、颜色、价格）的常数，以及一个值，它是属于该集的变量（例如，男／女、绿色、100）。 键值对完全成形，可能如下所示：
+键值对由两个相关数据元素组成：一个键，它是定义数据集（例如，性别、颜色、价格）的常量，一个值，它是属于该集的变量（例如，男/女、绿色、100）。 完全形式化后，键值对可能如下所示：
 
 * `gender = male`
 * `color = green`
 * `price > 100`
 
-## 标准和序列化密钥值对{#standard-serialized-pairs}
+## 标准和序列化键值对{#standard-serialized-pairs}
 
-目标接受&#x200B;*`standard`*&#x200B;或&#x200B;*`serialized`*&#x200B;格式的键值数据。 标准格式将数据组织成单独的键值对。 每个键都被显式地表示，即使再次用于定义不同的值。 相反，序列化格式将多个值压缩为由单个键定义的一个集。 此外，在序列化对中，使用特殊指示符来分隔键值集中的值。 最后，标准和序列化键值可以包含一个或多个值。 下表提供标准和序列键值格式的示例。
+目标接受&#x200B;*`standard`*&#x200B;或&#x200B;*`serialized`*&#x200B;格式的键值数据。 标准格式将数据组织成单独的键值对。 每个键都显式地表示，即使再次用于定义不同的值时也是如此。 相反，序列化格式将多个值压缩为由单个键定义的一个集。 此外，在序列化对中，使用特殊指示符来分隔键值集中的值。 最后，标准和序列化键值可以包含单个或多个值。 下表提供标准和串行键值格式的示例。
 
-| 格式化 | 单键 | 键值对 |
+| 格式 | 单键 | 键值对 |
 |---|---|---|
 | **标准** | `x=1&x=2` | `x=1&x=2&y=3&y=4` |
 | **序列化** | `x=1;2` | `x=1;2&y=3;4` |
@@ -45,14 +45,14 @@ c_key_value_explained.xml
 
 ## 键、分隔符和分隔符{#keys-delimiters-separators}
 
-处理序列化数据时，必须指定在&#x200B;*和*&#x200B;键值对之间分隔值&#x200B;*的字符。*&#x200B;键值对中的元素定义如下：
+处理序列化数据时，必须指定在&#x200B;*和*&#x200B;键值对之间分隔值&#x200B;*和*&#x200B;的字符。 键值对中的元素定义如下：
 
 * **键：** 键值对中的唯一标识符。
 * **值分隔符：** 分隔各个键值对。
-* **键值分隔符：** 将键与键值对中的值分隔。
-* **串行分隔符：** 在序列化键值对中分隔各个值。
+* **键值分隔符：** 将键与键值对中的值分开。
+* **序列分隔符：** 在序列化键值对中分隔单个值。
 
-## 标准和序列化密钥值元素{#standard-serialized-key-value-elements}
+## 标准和序列化键值元素{#standard-serialized-key-value-elements}
 
 
 | 类型 | 示例 | 键 | 键值分隔符 | 键值分隔符 | 串行分隔符 |
