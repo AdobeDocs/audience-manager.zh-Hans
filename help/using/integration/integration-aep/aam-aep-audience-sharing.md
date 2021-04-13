@@ -5,15 +5,15 @@ seo-title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 solution: Audience Manager
 title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP受众共享、AEP细分、平台细分、细分共享、受众共享、共享细分
-feature: Integration with Platform
+feature: 平台集成
+exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
 translation-type: tm+mt
-source-git-commit: 62938e95fa9eed3e747fa4dabf8695c5dbefde17
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1506'
 ht-degree: 2%
 
 ---
-
 
 # Experience Platform段与Audience Manager和其他Experience Cloud解决方案共享{#aam-aep-audience-sharing}
 
@@ -190,3 +190,4 @@ If you created a data source in Audience Manager for the CRM IDs in Experience P
 >* [分段服务概述](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html#audiences)
 >* [Experience Platform区段生成器用户指南](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html#audiences)
 >* [Audience Manager连接器](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
+
