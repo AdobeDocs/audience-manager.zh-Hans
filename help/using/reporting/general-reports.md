@@ -1,23 +1,23 @@
 ---
-description: “一般”报表返回有关特征、区段和目标的性能数据。
-seo-description: Audience Manager中的“常规”报表会返回特征、区段和目标的性能数据。
-seo-title: Audience Manager中的常规报告
+description: “常规”报表返回有关特征、区段和目标的性能数据。
+seo-description: Audience Manager中的“常规”报表返回有关特征、区段和目标的性能数据。
+seo-title: 一般报告Audience Manager
 solution: Audience Manager
 title: 常规报表
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
-feature: general & trend reports
+feature: 一般和趋势报表
+exl-id: dc16a821-b776-4a04-af60-4b8c914253dd
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 1%
 
 ---
 
-
 # 常规报表{#general-reports}
 
-[!UICONTROL General]报告返回有关特征、区段和目标的性能数据。
+[!UICONTROL General]报表返回有关特征、区段和目标的性能数据。
 
 ## 概述 {#general-reports-overview}
 
@@ -27,15 +27,15 @@ c_general_reports.xml
 
  -->
 
-[!DNL Audience Manager] 使用 [!UICONTROL Role Based Access Control] ([!UICONTROL RBAC])将用户组权限扩展到报 [!UICONTROL General] 表。用户只能在报告中看到他们具有视图权限的那些特征和区段。 [!UICONTROL RBAC] 功能，您可以控制内部团队能够报告哪些视图数据。例如，管理不同广告商帐户的代理可以配置用户组权限，以便管理广告商A帐户的团队无法看到广告商B的报告数据。
+[!DNL Audience Manager] 使用 [!UICONTROL Role Based Access Control] ([!UICONTROL RBAC])将用户组权限扩展到报 [!UICONTROL General] 表。用户只能在报告中看到他们有权访问视图的那些特征和区段。 [!UICONTROL RBAC] 功能，您可以控制内部团队能够视图的报告数据。例如，管理不同广告商帐户的代理可以配置用户组权限，以便管理广告商A帐户的团队无法看到广告商B的报告数据。
 
 需要时运行[!UICONTROL General]报告：
 
 * 按特征、区段或目标查看性能。
-* 按1天、7天、14天、30天、60天和90天间隔跟踪展示次数（总数和唯一数）。
+* 以1、7、14、30、60和90天间隔跟踪展示次数（总数和唯一数）。
 * 查看总负载和唯一负载计数。
 * 比较特征和区段性能。
-* 确定性能特征和细分，分析需求，或将负载／火灾数据与第三方报告进行比较。
+* 识别强或弱的性能特征和细分，分析需求，或将负载/火灾数据与第三方报告进行比较。
 * 导出数据（.csv格式）以进一步分析和共享。
 
 下图提供了[!UICONTROL General]报告中关键元素的高级概述。
@@ -46,11 +46,11 @@ c_general_reports.xml
 
    * **报表类型：** 选择所需的报表类型（特征、区段或目标）。
 
-   * **对于截止日** 期：指定报表的日期范围。
+   * **对于截止日期：** 指定报表的日期范围。
 
 2. 按名称或ID搜索特征、区段或目标。
 3. 在文件夹列表中，将要报告的特征、区段或目标拖放到右侧的[!UICONTROL Selections]面板。
-4. 生成要在可导出表中显示的报告。
+4. 生成要在可导出表中显示的报表。
 
 ## 运行常规报告{#run-general-report}
 
@@ -69,22 +69,22 @@ t_run_general_report.xml
 1. 在文件夹列表中，将要报告的特征、区段或目标拖放到右侧的[!UICONTROL Selections]面板。
 1. 单击 **[!UICONTROL Run Report]**.
 
-   结果显示在可导出的表中。 单击列标题以按升序或降序对结果进行排序。
-1. 选择报告顶部的所需选项按钮，按性能（[!UICONTROL Unique Trait Realizations]、[!UICONTROL Total Trait Realizations]或[!UICONTROL Total Trait Population]）或时间（1、7、14、30、60或90天范围）筛选数据。
+   结果显示在可导出的表中。 单击列标题可按升序或降序对结果排序。
+1. 选择报表顶部所需的选项按钮，按性能（[!UICONTROL Unique Trait Realizations]、[!UICONTROL Total Trait Realizations]或[!UICONTROL Total Trait Population]）或时间（1、7、14、30、60或90天范围）筛选数据。
 
    >[!NOTE]
    >
-   >[!UICONTROL Total Trait Realizations] 只计 [!UICONTROL Rule-based Traits] 算。
+   >[!UICONTROL Total Trait Realizations] 仅计 [!UICONTROL Rule-based Traits] 算。
 
 1. *可* 选单 **[!UICONTROL Export to CSV]**&#x200B;击。这将导出所有日范围的[!UICONTROL Unique Trait Realizations]、[!UICONTROL Total Trait Realizations]和[!UICONTROL Total Trait Population]。
 
 ## 常规报告结果说明{#general-reports-explained}
 
-[!UICONTROL General Reports]中的数字直接由我们的[!UICONTROL User Profile Store]生成。 结果反映生成这些报告号时后端包含的[!DNL Audience Manager]用户数。
+[!UICONTROL General Reports]中的数字直接由我们的[!UICONTROL User Profile Store]生成。 结果反映生成这些报告号时后端中包含的[!DNL Audience Manager]用户数。
 
-* 这些数字不包括流量过多的访客ID。 在到达我们的后端系统之前，会过滤来自机器人程序的流量。 此外，在后端运行的每周清除作业期间，会丢弃一些bot通信。
-* 如果通过已键出[!DNL Audience Manager] UUID的入站处理来建立数据，并且这些ID包括系统中不再处于活动状态的用户，则这些不活动的[!DNL Audience Manager] UUID将不会到达[!UICONTROL User Profile Store]并且不会报告。
-* [!UICONTROL Total Trait Realizations] 只计 [!UICONTROL Rule-based Traits] 算。
+* 这些数字不包括流量过大的访客ID。 在到达我们的后端系统之前，会过滤来自机器人程序的流量。 此外，在后端运行的每周清理作业期间，会丢弃某些机器人通信。
+* 如果通过与[!DNL Audience Manager] UUID进行键控的入站处理来建立数据，并且这些ID包括在系统中不再处于活动状态的用户，则这些不活动的[!DNL Audience Manager] UUID永远不会到达[!UICONTROL User Profile Store]并且不会报告。
+* [!UICONTROL Total Trait Realizations] 仅计 [!UICONTROL Rule-based Traits] 算。
 
 ## 特征{#general-report-results-traits}的常规报告结果
 
@@ -92,19 +92,19 @@ t_run_general_report.xml
 
 按[!UICONTROL Device ID]筛选结果时：
 
-* [!UICONTROL Unique Trait Realizations] 是在所选时间范围内将特征添加到其访客的匿名设备用户档案数。
+* [!UICONTROL Unique Trait Realizations] 是在选定时间范围内将特征添加到其访客的匿名设备用户档案的数量。
 * [!UICONTROL Total Trait Realization] 是所选时间范围内的匿名特征实现总数。
-* [!UICONTROL Total Trait Population] 是您的匿名设备访客在其用户档案上具有此特性的数量。
+* [!UICONTROL Total Trait Population] 是您的匿名设备访客在其用户档案上具有此特征的数量。
 
 ![一般报告特征设备](assets/general-report-traits-deviceid.png)
 
 按[!UICONTROL Cross-Device ID]筛选结果时：
 
-* [!UICONTROL Unique Trait Realizations] 是在所选时间范围内已验证的访客将特征添加到其用户档案的数量。
+* [!UICONTROL Unique Trait Realizations] 是在所选时间范围内向其用户档案添加特征的已验证访客的数量。
 * [!UICONTROL Total Trait Realization] 是所选时间范围内经过身份验证的特征实现的总数。
 * [!UICONTROL Total Trait Population] 是已验证的访客在其用户档案上具有此特征的数量。
 
-![通用报告特征——跨设备](assets/general-report-traits-cross-device.png)
+![通用报告 — traits-cross-device](assets/general-report-traits-cross-device.png)
 
 <!-- 
 ### Unique Trait Realizations
@@ -124,21 +124,21 @@ The illustration below shows the results of running a general report for the Tra
 ![](assets/general_reports_metrics.png) -->
 
 
-## 常规报告区段结果{#general-report-results-segments}
+## 区段{#general-report-results-segments}的常规报告结果
 
-运行“常规”报告并选择&#x200B;**[!UICONTROL Segment]**&#x200B;作为报告类型时，可以使用以下度量：
+运行“常规”报表并选择&#x200B;**[!UICONTROL Segment]**&#x200B;作为报表类型时，可使用以下量度：
 
 ### 实时细分填充
 
-此度量表示在指定时间范围内实时查看的唯一访客的实际数量，以及在Audience Manager看到这些数据时，哪些数据符合区段的条件。
+此量度表示在指定时间范围内实时查看的唯一访客的实际数量，以及在Audience Manager看到这些数据时，哪些数据符合区段条件。
 
 ### 区段总人口
 
-此度量表示在您选择的回顾期内限定区段的Audience ManagerUUID总数。 1天的总细分人口是您进行定位的最准确用户群。
+此量度表示在您选择的回顾期间内为区段限定的Audience ManagerUUID总数。 1天的总细分人口是您最准确的定位用户群。
 
 >[!NOTE]
 >
->选择&#x200B;**[!UICONTROL Include Destination Mappings]**&#x200B;可查看已激活目标的细分区段填充情况。
+>选择&#x200B;**[!UICONTROL Include Destination Mappings]**&#x200B;可查看已激活目标的细分区段填充。
 
 下图显示了为区段报表类型运行常规报表的结果。
 
@@ -146,15 +146,15 @@ The illustration below shows the results of running a general report for the Tra
 
 ## 目标{#general-report-results-destinations}的常规报告结果
 
-运行“常规”报告并选择&#x200B;**[!UICONTROL Destination]**&#x200B;作为报告类型时，可以使用以下度量：
+运行“常规”报表并选择&#x200B;**[!UICONTROL Destination]**&#x200B;作为报表类型时，可使用以下量度：
 
 **实时细分填充**
 
-此度量表示在指定时间范围内实时查看的唯一访客的实际数量，以及在Audience Manager看到这些数据时，哪些数据符合区段的条件。
+此量度表示在指定时间范围内实时查看的唯一访客的实际数量，以及在Audience Manager看到这些数据时，哪些数据符合区段条件。
 
 **区段总人口**
 
-此度量表示在回顾期间内属于区段的Audience ManagerUUID的总数，这些UUID被发送到目标。
+此量度表示在回顾期间内，发送到目标的属于区段的Audience ManagerUUID的总数。
 
 下图显示了为目标报告类型运行常规报告的结果。
 
