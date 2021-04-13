@@ -324,7 +324,7 @@ ht-degree: 4%
 59767559181262060060278870901087098252 <TAB> "product" = "tablet", "product" = "phone"
 ```
 
-### 示例5 {#example-4}
+### 示例4 {#example-4}
 
 使用`ic`前缀可发送[!DNL Audience Manager] [!DNL UUIDs]的[!UICONTROL trait]资格信息。
 
@@ -338,7 +338,7 @@ ht-degree: 4%
 59767559181262060060278870901087098252 <TAB> ic=52,ic=55
 ```
 
-### 示例4 {#example-5}
+### 示例5 {#example-5}
 
 使用[!UICONTROL trait IDs]发送[!DNL Android]设备的[!UICONTROL trait]资格信息。
 
