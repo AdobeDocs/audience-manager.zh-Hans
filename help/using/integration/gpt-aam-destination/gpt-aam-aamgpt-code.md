@@ -1,23 +1,23 @@
 ---
-description: AamGpt是一个JavaScript函数，它读取Audience Managercookie数据并将该信息发送到Google Publisher标记。
-seo-description: AamGpt是一个JavaScript函数，它读取Audience Managercookie数据并将该信息发送到Google Publisher标记。
+description: AamGpt是一个JavaScript函数，它读取Audience Manager Cookie数据并将该信息发送到Google Publisher Tags。
+seo-description: AamGpt是一个JavaScript函数，它读取Audience Manager Cookie数据并将该信息发送到Google Publisher Tags。
 seo-title: Google Publisher Tag 的 Audience Manager 代码
 solution: Audience Manager
 title: Google Publisher Tag 的 Audience Manager 代码
 uuid: 24ff5d16-b360-46cc-a4c6-6db34d7fda75
-feature: Third Party Integrations
+feature: 第三方集成
+exl-id: 04e74399-7b6a-400e-a1e6-94fe296e7209
 translation-type: tm+mt
-source-git-commit: c63467dec62ff08c3cd32f19ac2e4675c9ce18e3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 19%
 
 ---
 
-
 # Google Publisher Tag 的 Audience Manager 代码 {#audience-manager-code-for-google-publisher-tags}
 
-`AamGpt` 是读取 [!DNL JavaScript] Audience Managercookie数据并将该信息发送到的函 [!DNL Google Publisher Tags]数。
+`AamGpt` 是一个 [!DNL JavaScript] 函数，它读取Audience Manager cookie数据并将该信息发送 [!DNL Google Publisher Tags]到
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 19%
 
 ## 示例代码
 
-将`AamGpt`代码放在页面顶部，最好放在`<head>`代码块中。 `AamGpt`代码可在以下位置找到：
+将`AamGpt`代码放在页面顶部，最好放在`<head>`代码块内。 `AamGpt`代码如下所示：
 
 ```js
 var AamGpt = {  
