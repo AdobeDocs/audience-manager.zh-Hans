@@ -1,20 +1,20 @@
 ---
 description: 有关配置文件合并规则和设备图的常见问题解答。
-keywords: Organization ID
+keywords: 组织 ID
 seo-description: 有关配置文件合并规则和设备图的常见问题解答。
 seo-title: 配置文件合并规则和设备图常见问题解答
 solution: Audience Manager
 title: 配置文件合并规则和设备图常见问题解答
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
-feature: Profile Merge Rules
+feature: 用户档案合并
+exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1548'
+source-wordcount: '1552'
 ht-degree: 86%
 
 ---
-
 
 # 配置文件合并规则和设备图常见问题解答{#profile-merge-rules-and-device-graph-faq}
 
@@ -260,18 +260,18 @@ ht-degree: 86%
 
 否。
 
-**2020年3月16日之后，为什么我会看到零细分人口用于向Adobe Campaign出口细分？**
+**2020年3月16日之后，为什么我看到区段出口到Adobe Campaign的区段数量为零？**
 
-在2019年末，我们发布了一系列用户档案合并规则增强功能，以提高使用跨设备ID生成的批处理文件的准确性。 从2020年3月16日星期一开始，您的Audience Manager实例将严格遵循这些增强功能。 通常，使用跨设备ID映射到目标的区段将停止在某些用户档案合并规则配置中生成导出。
+在2019年末，我们发布了一系列用户档案合并规则增强功能，以提高使用跨设备ID生成的批处理文件的准确性。 从2020年3月16日（星期一）开始，您的Audience Manager实例将严格遵守这些增强功能。 通常，使用跨设备ID映射到目标的区段将停止在某些用户档案合并规则配置中生成导出。
 
-要确保使用跨设备ID(如Audience Manager)在Adobe Campaign实例与目标之间正确集成，请确保满足以下要求：
+要确保使用跨设备ID(如Adobe Campaign)在Audience Manager实例与目标之间实现正确集成，请确保满足以下要求：
 
-1. 查看映射到您的用户档案声明ID目标的Adobe Campaign段使用的合并规则。 用户档案合并规则必须使用[!UICONTROL Last Authenticated Profile]选项，因此所有经过身份验证的用户档案都可以包含在导出中。 如果您的用户档案合并规则使用其他选项，请将其切换为[!UICONTROL Last Authenticated Profile]。
+1. 查看映射到您的用户档案声明ID目标的区段使用的Adobe Campaign合并规则。 用户档案合并规则必须使用[!UICONTROL Last Authenticated Profile]选项，因此所有经过身份验证的用户档案都可以包含在导出中。 如果您的用户档案合并规则使用其他选项，请将其切换到[!UICONTROL Last Authenticated Profile]。
 2. 在“Adobe Campaign合并规则”设置中选择用户档案声明ID数据源。
 
 >[!NOTE]
 >
-> 我们已将用户档案合并规则限制为1，以便您为映射到Adobe Campaign声明ID目标的段创建专用的用户档案合并规则，而不更改其他用例的用户档案合并规则。
+> 我们已将用户档案合并规则限制提高1，以便您可以为映射到Adobe Campaign声明ID目标的区段创建专用的用户档案合并规则，而不更改其他用例的用户档案合并规则。
 
 >[!MORELIKETHIS]
 >
