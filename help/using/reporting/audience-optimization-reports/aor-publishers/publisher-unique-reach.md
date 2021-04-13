@@ -5,13 +5,13 @@ seo-title: 独特用户范围
 solution: Audience Manager
 title: 出版商的独特用户触及力
 uuid: 64e75fad-f4cb-4d47-a162-34e663f3966f
-feature: 受众优化报告
+feature: Audience Optimization 报表
 exl-id: 7f92547e-3bb0-4df1-953e-1c26e91b4e0c
 translation-type: tm+mt
-source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
