@@ -5,12 +5,12 @@ seo-title: 实时入站数据集成
 solution: Audience Manager
 title: 实时入站数据集成
 uuid: 96f292bb-608c-41d3-8baa-a58ecb411db0
-feature: Inbound Data Transfers
+feature: 入站数据传输
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 36%
+source-wordcount: '36'
+ht-degree: 41%
 
 ---
 
