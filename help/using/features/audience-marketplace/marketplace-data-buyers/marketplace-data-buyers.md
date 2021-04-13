@@ -4,12 +4,11 @@ seo-description: 面向希望从Audience Manager内购买第三方数据的数�
 seo-title: 面向数据购买者的 Audience Marketplace
 solution: Audience Manager
 title: 面向数据购买者的 Audience Marketplace
-topic-edit: DIL API
 uuid: f505b5f4-4231-4e84-993a-cd64128b540f
 feature: Audience Marketplace
 exl-id: 9d6a7fda-f79f-41ad-9654-3ebcf9028cc2
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 3%
