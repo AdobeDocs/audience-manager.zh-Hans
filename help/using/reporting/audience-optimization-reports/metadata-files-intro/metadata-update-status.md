@@ -1,15 +1,15 @@
 ---
-description: S3状态目录包含一个。info文件，其中包含有关已上载文件的成功和失败信息。 文件包含JSON格式的数据，状态结果为数组。
-seo-description: S3状态目录包含一个。info文件，其中包含有关已上载文件的成功和失败信息。 文件包含JSON格式的数据，状态结果为数组。
+description: S3状态目录包含.info文件，其中包含有关已上载文件的成功和失败信息。 文件包含JSON格式的数据，状态结果为数组。
+seo-description: S3状态目录包含.info文件，其中包含有关已上载文件的成功和失败信息。 文件包含JSON格式的数据，状态结果为数组。
 seo-title: 元数据文件的状态更新
 solution: Audience Manager
 title: 元数据文件的状态更新
 uuid: 56a1e88a-41da-4d51-a21e-2be98cca7fa2
-feature: log files
+feature: 日志文件
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '329'
 ht-degree: 1%
 
 ---
@@ -60,11 +60,11 @@ S3状态目录包含`.info`文件，其中包含有关已上载文件的成功�
 }
 ```
 
-## 定义的元数据键值对{#key-value-pairs}
+## 定义{#key-value-pairs}的元数据键值对
 
-下表列表和定义元数据状态文件`Files`和`Summary`部分的键。
+下表列表和定义元数据状态文件的`Files`和`Summary`部分中的键。
 
-**文件数组中的键**
+**Files Array中的键**
 
 <table id="table_BF23C032FEFA446282E9364E85BE8C9F"> 
  <thead> 
@@ -76,7 +76,7 @@ S3状态目录包含`.info`文件，其中包含有关已上载文件的成功�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> Description</code> </p> </td> 
-   <td colname="col2"> <p>包含处理失败原因的简要说明。 处理成功时，此字段为空。 </p> </td> 
+   <td colname="col2"> <p>包含处理失败原因的简短说明。 处理成功时，此字段为空。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileByteSize</code> </p> </td> 
@@ -92,11 +92,11 @@ S3状态目录包含`.info`文件，其中包含有关已上载文件的成功�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> MetadataType</code> </p> </td> 
-   <td colname="col2"> <p>文件所包含数据类型的可读名称。 它基于您的文件名中的子ID。 </p> <p>请参阅<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">元数据文件的命名约定</a>。 </p> </td> 
+   <td colname="col2"> <p>您的文件所包含数据类型的可读名称。 它基于您的文件名中的子ID。 </p> <p>请参阅<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">元数据文件的命名约定</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Parent</code> </p> </td> 
-   <td colname="col2"> <p>文件所包含数据类型的可读名称。 它基于您的文件名中的父ID。 </p> <p>请参阅<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">元数据文件的命名约定</a>。 </p> </td> 
+   <td colname="col2"> <p>您的文件所包含数据类型的可读名称。 它基于您的文件名中的父ID。 </p> <p>请参阅<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">元数据文件的命名约定</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Status</code> </p> </td> 
@@ -133,15 +133,15 @@ S3状态目录包含`.info`文件，其中包含有关已上载文件的成功�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> NumberFailure</code> </p> </td> 
-   <td colname="col2"> <p>处理失败的文件数。 </p> </td> 
+   <td colname="col2"> <p>未成功处理的文件数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> NumberSuccess</code> </p> </td> 
-   <td colname="col2"> <p>成功处理的文件数。 </p> </td> 
+   <td colname="col2"> <p>已成功处理的文件数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ProcessingTimeRFC2822</code> </p> </td> 
-   <td colname="col2"> <p>返回用于处理开始时间的人可读时间戳。 </p> </td> 
+   <td colname="col2"> <p>返回用于处理开始时间的可读时间戳。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ProcessingTimePOSIX</code> </p> </td> 
@@ -149,7 +149,7 @@ S3状态目录包含`.info`文件，其中包含有关已上载文件的成功�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> TotalByteSize</code> </p> </td> 
-   <td colname="col2"> <p>当天所有元数据文件的字节总数。 </p> </td> 
+   <td colname="col2"> <p>当天所有元数据文件的总字节数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> TotalNumberFiles</code> </p> </td> 
