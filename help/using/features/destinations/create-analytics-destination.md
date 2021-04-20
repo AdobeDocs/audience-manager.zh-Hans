@@ -4,7 +4,7 @@ seo-description: Audience Analytics 允许您将 Audience Manager 区段发送�
 seo-title: 配置 Analytics 目标
 solution: Audience Manager
 title: 配置 Analytics 目标
-feature: Adobe Analytics 集成
+feature: Adobe Analytics Integration
 exl-id: f3ead057-04d1-40cd-8e3d-d0934d85cdb4
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74

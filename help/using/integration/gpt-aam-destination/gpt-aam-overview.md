@@ -3,7 +3,7 @@ description: 如何使用Google Publisher标记(GPT)集成Google广告管理器�
 seo-description: 概述如何使用Adobe Audience Manager(AAM)中的Google Publisher标记(GPT)集成Google Ad Manager。
 seo-title: 在Adobe Audience Manager(AAM)中使用Google Publisher标记(GPT)集成Google Ad Manager
 title: 使用Google Publisher标记(GPT)集成Google广告管理器
-feature: 第三方集成
+feature: Third-party Integration
 exl-id: d383cb8a-ef41-4ce6-9e31-6145797a89fa
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

@@ -5,7 +5,7 @@ seo-description: 活动使用报告可帮助您视图和跟踪Audience Manager�
 seo-title: 活动使用情况报表
 solution: Audience Manager
 title: 活动使用情况报表
-feature: 使用和计费
+feature: Usage and Billing
 exl-id: 0c5f04c6-d008-4817-9c67-cd39350b3aaf
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

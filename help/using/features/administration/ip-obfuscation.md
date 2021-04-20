@@ -3,7 +3,7 @@ description: 由于全球隐私法规，贵公司可能希望在许多国家/地
 seo-description: 由于全球隐私法规，贵公司可能希望在许多国家/地区模糊处理 IP 地址。Audience Manager 允许您在全球范围或者根据具体国家或地区来模糊处理访客 IP 地址。
 solution: Audience Manager
 title: IP 地址模糊处理
-feature: 数据治理和隐私
+feature: Data Governance & Privacy
 exl-id: 8c976d1e-f4ba-4892-bd68-d4e74bdb4d9b
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74

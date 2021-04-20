@@ -5,7 +5,7 @@ seo-title: Audience Optimization 报表的数据文件以及可操作的日志�
 solution: Audience Manager
 title: Audience Optimization 报表的数据文件以及可操作的日志文件
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
-feature: 日志文件
+feature: Log Files
 exl-id: 0da2c1d3-5ff8-40dd-b831-21d8941688ce
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

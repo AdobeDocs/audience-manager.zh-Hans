@@ -4,7 +4,7 @@ seo-description: '本页包含有关如何根据仅线下受众数据构建客�
 seo-title: 工作流程 B - 基于仅离线数据进行个性化
 solution: Audience Manager
 title: 工作流程 B - 基于仅离线数据进行个性化
-feature: 基于人的目标
+feature: People-based Destinations
 exl-id: d980de26-3133-4ae3-80c2-8c3bf2480bbd
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

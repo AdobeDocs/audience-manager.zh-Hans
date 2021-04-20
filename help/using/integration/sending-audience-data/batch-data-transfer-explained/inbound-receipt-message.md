@@ -5,7 +5,7 @@ seo-title: 入站处理后发送给合作伙伴的示例消息
 solution: Audience Manager
 title: 入站处理后发送给合作伙伴的示例消息
 uuid: 69e3a8b3-8465-4f4c-8005-8a9ff15ae19a
-feature: 入站数据传输
+feature: Inbound Data Transfers
 exl-id: acfc788f-63e6-445f-a086-0a2cc6c8865b
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74

@@ -5,7 +5,7 @@ seo-title: 使用查找表缩短日志文件处理时间
 solution: Audience Manager
 title: 使用查找表缩短日志文件处理时间
 uuid: ffc77618-474b-455e-9c91-15b32fc151a5
-feature: 报告参考
+feature: Reporting Reference
 exl-id: bab51406-21e9-4033-90d4-6100daf6a311
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

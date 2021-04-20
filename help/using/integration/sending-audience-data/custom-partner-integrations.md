@@ -4,7 +4,7 @@ seo-description: 此页面列出了 Audience Manager 与数据合作伙伴之间
 seo-title: 自定义合作伙伴集成
 solution: Audience Manager
 title: 自定义合作伙伴集成
-feature: 第三方集成
+feature: Third-party Integration
 exl-id: 54af75a4-c05b-42fb-851c-5e242378d9f1
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

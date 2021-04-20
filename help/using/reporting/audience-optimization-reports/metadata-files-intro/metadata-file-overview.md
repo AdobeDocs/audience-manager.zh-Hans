@@ -5,7 +5,7 @@ seo-title: 元数据文件的概述和映射
 solution: Audience Manager
 title: 元数据文件的概述和映射
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
-feature: 日志文件
+feature: Log Files
 exl-id: 8c59ab80-f04a-42df-891e-a187ecd0219f
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

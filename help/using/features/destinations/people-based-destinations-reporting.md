@@ -4,7 +4,7 @@ seo-description: '基于人的目的地将可共享受众的概念引入Audience
 seo-title: 可共享的受众
 solution: Audience Manager
 title: 可共享的受众
-feature: 基于人的目标
+feature: People-based Destinations
 exl-id: 2860c105-1091-4779-bf40-e66faa941af0
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

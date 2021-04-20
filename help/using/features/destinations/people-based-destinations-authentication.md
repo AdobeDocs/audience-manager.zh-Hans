@@ -4,7 +4,7 @@ seo-description: '本页包含有关如何配置和管理Audience Manager与基�
 seo-title: 使用基于人员的平台进行身份验证
 solution: Audience Manager
 title: 使用基于人员的平台进行身份验证
-feature: 基于人的目标
+feature: People-based Destinations
 exl-id: d3e136d0-2b06-412a-9b9b-75b661c9aa14
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

@@ -5,7 +5,7 @@ seo-title: Adobe Audience Manager技术合作伙伴
 keywords: 激活;激活合作伙伴、目标、目标
 solution: Audience Manager
 title: Adobe Audience Manager技术合作伙伴
-feature: 第三方集成
+feature: Third-party Integration
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt

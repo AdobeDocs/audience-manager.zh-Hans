@@ -5,7 +5,7 @@ seo-title: 数据管理
 solution: Audience Manager
 keywords: GDPR UI， GDPR API， CCPA，隐私权，同意，模糊处理，管理
 title: 数据管理
-feature: 数据管理 & 隐私
+feature: Data Governance & Privacy
 exl-id: 52aeca00-73f2-4525-9e11-34a472ec45c6
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

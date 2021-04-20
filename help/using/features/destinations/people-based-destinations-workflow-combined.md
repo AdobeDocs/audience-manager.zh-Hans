@@ -4,7 +4,7 @@ seo-description: '本页包含有关如何将离线CRM数据与Audience Manager�
 seo-title: 工作流程 A - 基于所有在线活动和离线数据的组合进行个性化
 solution: Audience Manager
 title: 工作流程 A - 基于所有在线活动和离线数据的组合进行个性化
-feature: 基于人的目标
+feature: People-based Destinations
 exl-id: 1f906955-8fe7-4cce-95d6-0e4275d523e8
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 使用限制
 keywords: ID映射、ID映射、Cookie映射
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
-feature: 使用和计费
+feature: Usage and Billing
 translation-type: tm+mt
 source-git-commit: a696bc03e430e25e2752d84905009645c625d762
 workflow-type: tm+mt

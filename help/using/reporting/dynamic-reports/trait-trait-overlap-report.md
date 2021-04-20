@@ -5,7 +5,7 @@ seo-title: 特征到特征重叠报表
 solution: Audience Manager
 title: 特征到特征重叠报表
 uuid: 7fb3fc9e-0e0b-492a-9c3a-04356afb19c7
-feature: 重叠报表
+feature: Overlap Reports
 exl-id: cbc933bb-f2af-4ad0-8eb9-cbec1ee952e0
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

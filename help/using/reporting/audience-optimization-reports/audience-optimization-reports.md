@@ -5,7 +5,7 @@ seo-title: Audience Optimization 报表
 solution: Audience Manager
 title: Audience Optimization 报表
 uuid: b06efa28-f56a-4b72-978e-e0c067f54798
-feature: Audience Optimization 报表
+feature: Audience Optimization Reports
 exl-id: 673267fb-5655-4cc2-ac2c-c717ea5830fc
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

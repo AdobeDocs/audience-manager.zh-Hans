@@ -5,7 +5,7 @@ seo-title: 了解 Demdex 域调用
 solution: Audience Manager
 title: 了解 Demdex 域调用
 uuid: c06dae3a-f169-4712-80fb-d6d448dce51a
-feature: 参考
+feature: Reference
 exl-id: dcd5ed86-4ff1-4f63-9c9f-edf11c229a30
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

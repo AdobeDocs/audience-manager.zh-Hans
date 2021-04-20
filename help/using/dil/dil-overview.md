@@ -6,7 +6,7 @@ keywords: 'dil， dil， dil， dil， dil， dil， dil， dil， dil， dil，
 solution: Audience Manager
 title: 了解数据集成库 (DIL)
 uuid: 77b12f35-81e4-4639-ada6-bf982f27b36e
-feature: DIL实施
+feature: DIL Implementation
 translation-type: tm+mt
 source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt

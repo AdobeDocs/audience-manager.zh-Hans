@@ -4,7 +4,7 @@ seo-description: 包含有关系统功能、数据集成和帮助文件的技术
 seo-title: 参考
 solution: Audience Manager
 title: 参考
-feature: 参考
+feature: Reference
 exl-id: 5b1f94de-8228-434f-8725-cc5b25d4b857
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

@@ -4,7 +4,7 @@ seo-description: '使用基于人的目标将第一方受众细分发送到基�
 seo-title: 基于人员的目标概述和使用案例
 solution: Audience Manager
 title: 概述和用例
-feature: 基于人的目标
+feature: People-based Destinations
 exl-id: 2edbda3b-e2a3-4a92-965b-206a21764cc8
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

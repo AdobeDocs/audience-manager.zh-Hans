@@ -4,7 +4,7 @@ seo-description: '基于人员的目标优惠了多种实施策略，具体取�
 seo-title: 基于人的目的地实施指南
 solution: Audience Manager
 title: 实施指南
-feature: 基于人的目标
+feature: People-based Destinations
 exl-id: 224334d5-419c-4bb1-b76c-ce996a543b7a
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

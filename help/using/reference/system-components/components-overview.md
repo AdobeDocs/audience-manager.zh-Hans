@@ -4,7 +4,7 @@ seo-description: Audience Manager系统中主要组件和数据流的高级浏�
 seo-title: 系统组件概述
 title: 系统组件概述
 uuid: cd0e51a3-38c3-4e3f-9bf1-938de2c71156
-feature: 系统组件
+feature: System Components
 exl-id: b128cae4-8a11-4fad-95f8-4fe6222bb95e
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

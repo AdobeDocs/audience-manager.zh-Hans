@@ -4,7 +4,7 @@ seo-description: 本页说明了创建Facebook网站自定义受众(WCA)像素�
 seo-title: Facebook WCA 集成
 solution: Audience Manager
 title: Facebook WCA 集成
-feature: 第三方集成
+feature: Third-party Integration
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

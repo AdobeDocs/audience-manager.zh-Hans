@@ -4,7 +4,7 @@ seo-description: 本文介绍如何为新集成和现有集成配置Twitter定�
 seo-title: 将特定于 Twitter 的受众配置为基于设备的自助服务目标
 solution: Audience Manager
 title: 将特定于 Twitter 的受众配置为基于设备的自助服务目标
-feature: 基于人的目标
+feature: People-based Destinations
 exl-id: 13b36469-3f61-47b1-9355-ca329de1fb24
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

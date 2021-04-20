@@ -5,7 +5,7 @@ seo-title: 描述的实时数据传输过程
 solution: Audience Manager
 title: 描述的实时数据传输过程
 uuid: b68781b3-0b7a-442d-8e34-2db2474849a4
-feature: 入站数据传输
+feature: Inbound Data Transfers
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt

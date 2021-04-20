@@ -5,7 +5,7 @@ seo-title: 配置文件合并规则和设备取消分段过程
 solution: Audience Manager
 title: 配置文件合并规则和设备取消分段过程
 uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
-feature: 用户档案合并
+feature: Profile Merge
 exl-id: ff3da607-5c25-45b2-ac27-071c22d518a0
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

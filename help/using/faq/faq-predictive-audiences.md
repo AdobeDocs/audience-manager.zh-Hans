@@ -4,7 +4,7 @@ seo-description: Predictive Audiences 可以帮助您使用数据科学将未知
 seo-title: Predictive Audiences 常见问题解答
 solution: Audience Manager
 title: Predictive Audiences 常见问题解答
-feature: 算法模型
+feature: Algorithmic Models
 exl-id: 21073970-8457-470b-89fc-724a118a18d2
 translation-type: tm+mt
 source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656

@@ -4,7 +4,7 @@ seo-description: 当有多个设备与用户连接时，如果在其中任一设
 seo-title: 即时跨设备抑制
 title: 即时跨设备抑制
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
-feature: 用户档案合并
+feature: Profile Merge
 exl-id: b9686210-e1aa-4f0a-a549-27d29c94e963
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

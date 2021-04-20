@@ -3,7 +3,7 @@ description: 使用“分析”菜单下的选项视图仪表板和各种报表�
 seo-description: 使用“Analytics”菜单下的选项视图Adobe Audience Manager(AAM)中的仪表板和各种报表。
 seo-title: 报告Adobe Audience Manager(AAM)
 title: 报告概述
-feature: 报告参考
+feature: Reporting Reference
 exl-id: 8b0e34be-7a78-426c-a295-5e58a3462d64
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

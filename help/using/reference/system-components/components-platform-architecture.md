@@ -5,7 +5,7 @@ seo-title: 平台架构数据流图
 solution: Audience Manager
 title: 平台架构数据流图
 uuid: d845af1d-f448-4f4c-948e-b2c89f125086
-feature: 系统组件
+feature: System Components
 exl-id: 6543df7d-aac5-4181-87a8-bc47edd2e951
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

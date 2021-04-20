@@ -5,7 +5,7 @@ seo-title: 定义的配置文件合并规则选项
 solution: Audience Manager
 title: 定义的配置文件合并规则选项
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
-feature: 用户档案合并
+feature: Profile Merge
 exl-id: 682d2540-c764-4f5a-a946-5d0e18c66c00
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

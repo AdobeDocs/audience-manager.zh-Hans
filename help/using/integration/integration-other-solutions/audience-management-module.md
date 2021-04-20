@@ -6,7 +6,7 @@ seo-title: 实现受众管理模块
 solution: Audience Manager
 title: 实现受众管理模块
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
-feature: Adobe Analytics 集成
+feature: Adobe Analytics Integration
 exl-id: af2449cd-5fc8-454a-adce-0da7cae80548
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74

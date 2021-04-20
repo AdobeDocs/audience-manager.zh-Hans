@@ -5,7 +5,7 @@ seo-title: 对AAM中重叠和一般报表中的唯一用户计数
 solution: Audience Manager
 title: 对重叠报表和常规报表中的独特用户进行计数
 uuid: 450f6a8c-f363-43de-b2d8-0a156f14ecae
-feature: 报告参考
+feature: Reporting Reference
 exl-id: 439e7e8e-0c2e-4d3e-8148-61b9d57bf4df
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

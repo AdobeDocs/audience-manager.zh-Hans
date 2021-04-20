@@ -5,7 +5,7 @@ seo-title: 实时入站数据摄取
 solution: Audience Manager
 title: 实时入站数据摄取
 uuid: 43cb0ebc-6c36-4391-bbfb-6b203d63c69a
-feature: 入站数据传输
+feature: Inbound Data Transfers
 exl-id: d243c74c-3a29-4dbf-a4c7-43ea526a9d7b
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74

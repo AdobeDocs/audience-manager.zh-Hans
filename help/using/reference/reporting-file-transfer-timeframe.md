@@ -5,7 +5,7 @@ seo-title: 数据传输和文件处理时间对报表有何影响
 solution: Audience Manager
 title: 数据传输和文件处理时间对报表有何影响
 uuid: 4b975512-f67e-4749-a7ef-168415597682
-feature: 参考
+feature: Reference
 exl-id: d13102c3-fd1b-4c31-8003-9fdc0df36838
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

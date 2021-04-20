@@ -5,7 +5,7 @@ seo-title: Audience Manager 中的数据安全
 solution: Audience Manager
 title: Audience Manager 中的数据安全
 uuid: 33ad19ca-4690-4d97-853b-1882d7d4ac01
-feature: 数据治理和隐私
+feature: Data Governance & Privacy
 exl-id: 94b70250-dca3-4c50-b4dd-bc37178a587e
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

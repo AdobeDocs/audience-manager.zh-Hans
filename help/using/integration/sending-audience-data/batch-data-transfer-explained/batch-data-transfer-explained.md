@@ -5,7 +5,7 @@ seo-title: 批量数据传输流程说明
 solution: Audience Manager
 title: 批量数据传输流程说明
 uuid: a9eee940-151c-44f8-9fe9-8ab47d8fa45c
-feature: 入站数据传输
+feature: Inbound Data Transfers
 exl-id: e02dcc9a-4010-4c01-bd6b-ad04b8029f18
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74

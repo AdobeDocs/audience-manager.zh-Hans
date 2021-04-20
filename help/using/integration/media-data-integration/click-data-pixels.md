@@ -5,7 +5,7 @@ seo-title: 通过像素调用捕获营销活动点击数据
 solution: Audience Manager
 title: 通过像素调用捕获营销活动点击数据
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
-feature: Adobe Campaign集成
+feature: Adobe Campaign Integration
 exl-id: 41b169bf-3727-4ed7-b74f-fea75244d2cb
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

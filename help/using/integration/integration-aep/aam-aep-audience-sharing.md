@@ -5,7 +5,7 @@ seo-title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 solution: Audience Manager
 title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP受众共享、AEP细分、平台细分、细分共享、受众共享、共享细分
-feature: 平台集成
+feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

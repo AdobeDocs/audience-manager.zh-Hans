@@ -5,7 +5,7 @@ seo-title: 基于像素的数据传输
 solution: Audience Manager
 title: 基于像素的数据传输
 uuid: 8773bfc0-6b8d-4a6a-a8b7-e043744486ab
-feature: 入站数据传输
+feature: Inbound Data Transfers
 exl-id: fe9ecb97-4a45-4fbb-855e-01df007144cf
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74

@@ -4,7 +4,7 @@ seo-description: Adobe 通过选择加入功能和 IAB 透明度与同意框架 
 seo-title: 适用于 IAB TCF 的 Audience Manager 插件
 solution: Audience Manager
 title: 适用于 IAB TCF 的 Audience Manager 插件
-feature: 数据治理和隐私
+feature: Data Governance & Privacy
 exl-id: aa6bc415-e52b-4900-951d-ccf51d907aa2
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

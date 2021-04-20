@@ -5,7 +5,7 @@ seo-title: 一般报告Audience Manager
 solution: Audience Manager
 title: 常规报表
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
-feature: 一般和趋势报表
+feature: General & Trend Reports
 exl-id: dc16a821-b776-4a04-af60-4b8c914253dd
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
