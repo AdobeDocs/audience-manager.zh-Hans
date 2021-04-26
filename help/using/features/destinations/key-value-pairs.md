@@ -6,7 +6,7 @@ uuid: 43789419-5b3f-4e62-b2e0-2722340bdd41
 feature: 目标基础
 exl-id: b37c829b-66be-4c31-8198-bc032371279e
 translation-type: tm+mt
-source-git-commit: f9f5cb5f83f095ad8cac01447ef0c360f0acd5fc
+source-git-commit: fe6e2883e67e70b362d31e19b28df4b586de7b8a
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 标准和序列键值对 {#standard-and-serial-key-value-pairs}
 
-键值对由相关元素组成：一个键，它是定义数据集（例如，性别、颜色、价格）的常量，和一个值，它是属于该集的变量（例如，男/女、绿色、100）。 [!UICONTROL Destination Builder] 发送以键值对格式化的数据。
+键值对由相关元素组成：键，它是定义数据集的常量(例如：性别、颜色、价格)和值，它是属于集合的变量（例如，男/女、绿色、100）。 [!UICONTROL Destination Builder] 发送以键值对格式化的数据。
 
 ## 基本键值对{#basic-key-value-pairs}
 
