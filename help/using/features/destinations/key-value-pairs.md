@@ -1,12 +1,12 @@
 ---
-description: A [!DNL key-value pair] 由相关元素A键组成，A键是定义数据集（例如，性别、颜色、价格）的常数和值，它是属于该集的变量（例如，男/女、绿色、100）。 目标生成器发送以键值对格式化的数据。
+description: A [!DNL key-value pair] 由相关元素组成。 一个键，它是定义数据集（例如，性别、颜色、价格）的常量，和一个值，它是属于该集的变量（例如，男/女、绿色、100）。 目标生成器发送以键值对格式化的数据。
 solution: Audience Manager
 title: 标准和串行 [!DNL Key-value pairs]
 uuid: 43789419-5b3f-4e62-b2e0-2722340bdd41
 feature: 目标基础
 exl-id: b37c829b-66be-4c31-8198-bc032371279e
 translation-type: tm+mt
-source-git-commit: c895ec099ff92f94328ad29e6f2349e79b77d667
+source-git-commit: f9f5cb5f83f095ad8cac01447ef0c360f0acd5fc
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 2%
