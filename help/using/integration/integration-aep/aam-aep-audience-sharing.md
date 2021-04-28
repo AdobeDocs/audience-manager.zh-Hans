@@ -5,12 +5,12 @@ seo-title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 solution: Audience Manager
 title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP受众共享、AEP细分、平台细分、细分共享、受众共享、共享细分
-feature: Platform Integration
+feature: 平台集成
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 8dabdc08a58ece28162c70aefb392ff36f5fbc89
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1465'
 ht-degree: 2%
 
 ---
@@ -109,9 +109,9 @@ Audience Manager会在您的区段存储中自动创建名为&#x200B;**Experienc
 
 | 项目编号 | 名称 | 描述 |
 ---------|----------|---------
-| 1 | [!UICONTROL Integration Code] | 集成代码与Experience Platform中的区段ID相对应。 |
+| 3 | [!UICONTROL Integration Code] | 集成代码与Experience Platform中的区段ID相对应。 |
 | 2 | [!UICONTROL Data Source] | 自动创建。 从Experience Platform区段自动创建的所有特征和区段都存储在数据源&#x200B;**[!DNL Adobe Experience Platform Audience Sharing]**&#x200B;中。 |
-| 3 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** 指示自动创建的区段遵循在Experience Platform中设置的合并策略。 |
+| 1 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** 指示自动创建的区段遵循在Experience Platform中设置的合并策略。 |
 | 4 | [!UICONTROL Segment Rule] | 区段由[Traits部分](#aep-segments-as-aam-traits)中描述的特征组成。 |
 
 ## Audience Manager {#aam-data-export-control-in-aep}中的Experience Platform数据导出控制支持
@@ -164,17 +164,13 @@ Audience Manager每天更新接口中的报告号一次。   此更新的时间�
 
 Adobe Experience Platform与Audience Manager之间的集成共享了许多适用于所有客户的标准[标识命名空间](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types):ECID、IDFA、GAID、散列电子邮件地址(EMAIL_LC_SHA256)、AdCloud ID。 如果您的Experience Platform区段将其中任意一个用作合格用户档案的主要标识，则用户档案将计入Audience Manager特征和区段。
 
-此外，在以下情况下，Audience Manager可以为您在Experience Platform段中使用的任何自定义标识命名空间注册传入实现：
-* 标识标记为主&#x200B;*和*
-* 您已经有一个相应的跨设备数据源在Audience Manager中。
-
 >[!NOTE]
 >
 > 使用与原始电子邮件关联的身份的Experience Platform受众永远不会出现在Audience Manager中。
 
-例如，如果您有一个Experience Platform区段“我的所有客户”，且符合条件的用户档案将是CRM ID、ECID、IDFA、原始和散列电子邮件地址，则Audience Manager中的相应区段将仅包括与CRM ID、ECID、IDFA和散列电子邮件地址关联的用户档案。 Audience Manager的细分数量将小于Experience Platform的细分数量。
+例如，如果您有一个Experience Platform区段“我的所有客户”，且符合条件的用户档案将是CRM ID、ECID、IDFA、原始和散列电子邮件地址，则Audience Manager中的相应区段将仅包括键入的ECID、IDFA和散列电子邮件地址的用户档案。 Audience Manager的细分数量将小于Experience Platform的细分数量。
 
-![Experience Platform至Audience Manager分部分享 — 分部组成](/help/using/integration/integration-aep/assets/AEP-to-AAM-profiles.png)
+![Experience Platform至Audience Manager分部分享 — 分部组成](assets/AEP-to-AAM-profiles.png)
 
 <!--
 
