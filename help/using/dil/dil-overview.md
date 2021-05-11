@@ -6,15 +6,15 @@ keywords: 'dil， dil， dil， dil， dil， dil， dil， dil， dil， dil，
 solution: Audience Manager
 title: 了解数据集成库 (DIL)
 uuid: 77b12f35-81e4-4639-ada6-bf982f27b36e
-feature: DIL Implementation
+feature: DIL实施
+exl-id: f194a422-27ed-4a74-9583-8de3b6786caf
 translation-type: tm+mt
-source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
+source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '496'
 ht-degree: 16%
 
 ---
-
 
 # 了解[!DNL Data Integration Library](DIL){#understanding-the-data-integration-library-dil}
 
@@ -43,8 +43,6 @@ ht-degree: 16%
 [!UICONTROL DIL] 可从此处下载 **[代码](https://github.com/Adobe-Marketing-Cloud/dil/releases)**。请注意，从版本8.0（2018年8月发布）开始，[!UICONTROL DIL]对[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)、版本3.3或更高版本具有硬依赖性。 它依赖[!DNL ID Service]触发ID同步和[!DNL URL destinations]。 如果[!DNL ID Service]缺失、旧或未配置，则会发生错误。
 
 我们建议您改用[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)，而不是使用[!UICONTROL DIL]手动设置[!DNL Audience Manager]。 [!DNL Adobe Experience Platform Launch] 是推荐的实施工具，因为它简化了代码部署、放置和版本管理。阅读有关[!DNL Adobe Experience Platform Launch]中[Audience Manager扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/audience-manager/overview.html)的更多信息。
-
-[!DNL Adobe Experience Platform Launch] 是Adobe Dynamic  [Tag Manager](https://docs.adobe.com/content/help/en/dtm/using/c-overview.html) ([!DNL DTM])的后继。
 
 ## 示例调用{#sample-code}
 
