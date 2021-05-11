@@ -6,15 +6,15 @@ seo-title: 产品特性和功能常见问题解答
 solution: Audience Manager
 title: 产品特性和功能常见问题解答
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
-feature: Overview
+feature: 概述
+exl-id: b5884d26-0be1-4eaa-99a1-7247942bf6c9
 translation-type: tm+mt
-source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
+source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 89%
+source-wordcount: '615'
+ht-degree: 88%
 
 ---
-
 
 # 产品特性和功能常见问题解答{#product-features-and-functions-faq}
 
@@ -68,7 +68,7 @@ faq_features_functions.xml
 
 **什么是 [!UICONTROL Tag Insertion Manager (TIM)]？**
 
-Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和管理 [!UICONTROL data collection code (DIL)]。此功能已过时，最先由 [!UICONTROL Dynamic Tag Manager (DTM)] 取代，后来由 [!DNL Adobe Experience Platform Launch] 取代。有关更多信息，请参阅 [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) 和 [Dynamic Tag Management](https://docs.adobe.com/content/help/zh-Hans/dtm/using/dtm-home.html)。
+Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和管理 [!UICONTROL data collection code (DIL)]。此功能已过时，最先由 [!UICONTROL Dynamic Tag Manager (DTM)] 取代，后来由 [!DNL Adobe Experience Platform Launch] 取代。有关详细信息，请参阅[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)。
 
  
 
