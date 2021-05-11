@@ -6,13 +6,13 @@ seo-title: 实现受众管理模块
 solution: Audience Manager
 title: 实现受众管理模块
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
-feature: Adobe Analytics Integration
+feature: Adobe Analytics 集成
 exl-id: af2449cd-5fc8-454a-adce-0da7cae80548
 translation-type: tm+mt
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 5%
+source-wordcount: '540'
+ht-degree: 4%
 
 ---
 
@@ -44,38 +44,6 @@ ht-degree: 5%
 >如果安装[!DNL Adobe Analytics]扩展，*不要*&#x200B;也安装[!DNL Audience Manager]扩展。 从[!DNL Analytics]扩展转发数据将替换[!DNL Audience Manager]扩展功能。
 
 ![如何启用从Adobe Analytics扩展到Audience Manager的数据共享](/help/using/integration/assets/analytics-to-aam.png)
-
-### 使用[!DNL Adobe Digital Tag Management (DTM)]或任何其他标签管理解决方案实现
-
->[!WARNING]
->
->[!DNL Adobe] 已经公布了在2020年 [!DNL DTM] 底前日落的计划。有关详细信息和日程安排，请参阅[Adobe社区论坛](https://forums.adobe.com/community/experience-cloud/platform/launch/blog/2018/10/05/dtm-plans-for-a-sunset)中的[!DNL DTM]日落计划。
-
-要使用[Adobe DTM](https://docs.adobe.com/content/help/zh-Hans/dtm/using/dtm-home.html)或其他标签管理解决方案实现[!UICONTROL Audience Management Module]，请执行以下操作：
-
-1. 使用[分析代码管理器](https://docs.adobe.com/content/help/zh-Hans/analytics/admin/admin-tools/code-manager-admin.html)下载[!UICONTROL AppMeasurement]（需要版本1.5或更高版本）。
-1. 将您的[!UICONTROL AppMeasurement]代码更新为下载的zip文件中包含的版本。
-1. 从zip文件复制`AppMeasurement_Module_AudienceManagement.js`中的所有代码。 将其粘贴到文本上方的`appMeasurement.js`文件中，`"DO NOT ALTER ANYTHING BELOW THIS LINE."`
-1. 添加代码`s.loadModule("AudienceManagement");`，就在您在上一步中添加的`AppMeasurement_Module_AudienceManagement.js`代码上方。
-1. 更新并复制下面的代码，并将其添加到`AppMeasurement.js`文件中的`doPlugins`函数。
-
-```js
-s.AudienceManagement.setup({ 
-     "partner":"INSERT-YOUR-PARTNER-NAME-HERE", 
-     "containerNSID":0, 
-     "uuidCookie": { 
-          "name":"aam_uuid", 
-          "days":30
-     },
-     "visitorService": {
-          "namespace": "INSERT-EXPERIENCE-CLOUD-ORGID-HERE" 
-     } 
-});
-```
-
->[!TIP]
->
->`audienceManagement.setup`函数与[!DNL Audience Manager] `DIL.create`函数共享参数，您可以在此代码中配置这些参数。 有关这些参数的详细信息，请参阅[DILcreate](../../dil/dil-class-overview/dil-create.md#dil-create)。
 
 ## 定义的代码元素{#code-elements-defined}
 
