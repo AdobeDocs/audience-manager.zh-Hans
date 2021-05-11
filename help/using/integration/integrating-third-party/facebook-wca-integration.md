@@ -1,15 +1,15 @@
 ---
-description: 本页说明了创建Facebook网站自定义受众(WCA)像素的过程，以便将基于Web的Audience Manager受众区段发送到Facebook，以便通过提高透明度实现在线广告定位。
-seo-description: 本页说明了创建Facebook网站自定义受众(WCA)像素的过程，以便将基于Web的Audience Manager受众区段发送到Facebook，以便通过提高透明度实现在线广告定位。
+description: 本页说明了创建Facebook网站自定义受众(WCA)像素的过程，这些像素用于将基于Web的Audience Manager受众区段发送到Facebook，以便通过提高透明度实现在线广告定位。
+seo-description: 本页说明了创建Facebook网站自定义受众(WCA)像素的过程，这些像素用于将基于Web的Audience Manager受众区段发送到Facebook，以便通过提高透明度实现在线广告定位。
 seo-title: Facebook WCA 集成
 solution: Audience Manager
 title: Facebook WCA 集成
-feature: Third-party Integration
+feature: 第三方集成
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '855'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 5%
 3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID])版本4.1.0或更高版本。下载最新版本&#x200B;**[此处](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**。
 4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL])9.0或更高版本，可从此处 **[下载](https://github.com/Adobe-Marketing-Cloud/dil/releases)**。或者，如果您使用[服务器端转发(SSF)](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)将数据导入[!DNL Audience Manager]，则必须使用AppMeasurement版本2.12或更高版本。 使用[分析代码管理器](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html)下载[!DNL AppMeasurement]。
 
-我们建议您使用[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)或[Adobe动态标签管理](https://docs.adobe.com/content/help/zh-Hans/dtm/using/dtm-home.html)在步骤3和4中安装或升级库。
+我们建议您使用[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)在步骤3和4中安装或升级库。
 
 ## 步骤1 — 在[!DNL Audience Manager] {#step-1-create-facebook-destination}中创建[!UICONTROL Facebook Destination]
 
