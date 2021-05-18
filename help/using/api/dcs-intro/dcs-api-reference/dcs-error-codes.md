@@ -7,9 +7,9 @@ title: DCS 错误代码、消息和示例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
-source-git-commit: 1be86de9322df6b764ee3870fa82ddb2bb8b06ec
+source-git-commit: 38c4c46709491656071f4a958e9f0de26d42dd74
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1547'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 4%
 | 0 | 未指定错误 | 这是一个全部捕获错误，它处理其他错误处理程序未覆盖的事件。 很难对此错误进行故障诊断。 它可能由各种未知的操作或事件引起。 如果收到此错误，请重试[!DNL DCS]请求。 如果问题仍然存在，请与[!DNL Adobe]代表联系。 |
 | 1 | 找不到主机名的配置：`hostname` | 我们的合作伙伴供应团队尚未设置在请求中发送的主机名。 如果您看到此错误消息，请与[!DNL Adobe]代表联系。 |
 | 2 | 无效的`d_orgid`值（找不到此组织ID的配置）：`ID` | 组织ID不正确。 请检查您的ID并重试请求。 如果您不知道或没有组织ID，请参阅“管理页面”部分[组织和帐户链接](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)，了解有关如何查找它的信息。 |
-| 10 | 无法评估特征 | 请求上的特征要么被部分评估，要么根本没有被评估。 |
+| 10 | 无法评估特征 | 请求上的特征要么被部分评估，要么根本没有被评估。 如果问题仍然存在，请与[!DNL Adobe]代表联系。 |
 
 ## 集成错误代码{#integration-error-codes}
 
