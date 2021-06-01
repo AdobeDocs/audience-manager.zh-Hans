@@ -4,15 +4,14 @@ seo-description: 以下信息可帮助您联系 Adobe 以及了解与使用本�
 seo-title: 联系和法律信息
 solution: Audience Manager
 title: 联系和法律信息
-feature: Support
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 支持
+exl-id: 02c80394-c5ed-4963-8543-4585c0c289c6
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '287'
 ht-degree: 100%
 
 ---
-
 
 # 联系和法律信息 {#legal-contact}
 
@@ -31,7 +30,7 @@ Adobe Experience Cloud 客户关怀团队在此为您提供帮助，同时还提
 
 您可能无法使用本文档中介绍的某些选项，具体取决于您的解决方案配置。由于每个帐户都是唯一的，请查阅您的合同，以了解价格、截止日期、使用条款和条件。若要增加服务或更改您的服务级别，或者遇到与您当前享有服务相关的问题，请联系您的帐户管理员。
 
-## 法律  {#legal}
+## 法律 {#legal}
 
 Published by Adobe Systems Incorporated.
 
