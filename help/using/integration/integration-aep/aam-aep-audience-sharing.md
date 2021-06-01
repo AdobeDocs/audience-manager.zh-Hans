@@ -7,9 +7,9 @@ title: 在 Audience Manager 与 Adobe Experience Platform 之间共享受众
 keywords: AEP受众共享， AEP区段，平台区段，区段共享，受众共享，共享区段
 feature: 平台集成
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: 8dabdc08a58ece28162c70aefb392ff36f5fbc89
+source-git-commit: 6900b56b4e0258ed0c4ddf94ef7b1f2c7e48a50d
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1480'
 ht-degree: 2%
 
 ---
@@ -39,15 +39,13 @@ ht-degree: 2%
 > * 您&#x200B;*无需* Audience Manager许可证，即可通过核心服务集成与Adobe Advertising Cloud、Adobe Target、Marketo和其他Experience Cloud解决方案共享Experience Platform区段。
 
 
-<br> 
-
 有关受众共享用例的概述，请参阅下表：
 
 | **用例** | **Adobe Experience Platform** | **Audience Manager** | **核心服务** |
----------|----------|---------|---------
+---------|----------|---------|---------|
 | **受众共享** | <ul><li>使用Audience Manager数据丰富客户用户档案</li><li>在Audience Manager分段中使用Experience Platform数据</li></ul> | <ul><li>将第三方数据添加到区段</li><li>算法建模</li><li>激活到其他目标</li></ul> | 在其他Experience Cloud解决方案(如Adobe Target、Advertising Cloud或Marketo)中使用Experience Platform区段。 |
 
-<br> 
+{style=&quot;table-layout:auto&quot;}
 
 ## Audience ManagerAdobe Experience Platform中的区段和特征{#aam-segments-traits-in-aep}
 
@@ -56,8 +54,6 @@ ht-degree: 2%
 * [Segmentation Service概述](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html#audiences)
 * [Experience Platform区段生成器用户指南](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html#audiences)
 * [Audience Manager连接器](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
-
-<br> 
 
 ## Adobe Experience PlatformAudience Manager中的区段{#aep-segments-in-aam}
 
@@ -87,14 +83,14 @@ Audience Manager会在您的特征存储中自动创建名为&#x200B;**Experienc
 
 
 | 项目编号 | 名称 | 描述 |
----------|----------|---------
+---------|----------|---------|
 | 1 | [!UICONTROL Trait Type] | 从Experience Platform区段创建的特征将作为载入的特征创建在Audience Manager中。 |
 | 2 | [!UICONTROL Data Source] | 自动创建。 所有从Experience Platform区段自动创建的特征和区段都存储在数据源&#x200B;**[!UICONTROL Adobe Experience Platform Audience Sharing]**&#x200B;中。 |
 | 3 | [!UICONTROL Integration Code] | 集成代码与Experience Platform中的区段ID相对应。 |
 | 4 | [!UICONTROL Trait Expression] | 特征表达式为`segID = segment ID in Experience Platform`。 |
 | 5 | [!UICONTROL Segments with this Trait] | 自动创建的区段，使用此特征作为其组合。 |
 
-<br> 
+{style=&quot;table-layout:auto&quot;}
 
 ### 区段 {#aep-segments-as-aam-segments}
 
@@ -107,11 +103,13 @@ Audience Manager会在区段存储中自动创建名为&#x200B;**Experience Plat
 ![区段屏幕截图](/help/using/integration/integration-aep/assets/aep-segment.png)
 
 | 项目编号 | 名称 | 描述 |
----------|----------|---------
+---------|----------|---------|
 | 1 | [!UICONTROL Integration Code] | 集成代码与Experience Platform中的区段ID相对应。 |
 | 2 | [!UICONTROL Data Source] | 自动创建。 所有从Experience Platform区段自动创建的特征和区段都存储在数据源&#x200B;**[!DNL Adobe Experience Platform Audience Sharing]**&#x200B;中。 |
 | 1 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** 指示自动创建的区段遵循在Experience Platform中设置的合并策略。 |
 | 4 | [!UICONTROL Segment Rule] | 区段由[特征部分](#aep-segments-as-aam-traits)中描述的特征组成。 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Audience Manager{#aam-data-export-control-in-aep}中的Experience Platform数据导出控制支持
 
@@ -136,6 +134,8 @@ Audience Manager会在区段存储中自动创建名为&#x200B;**Experience Plat
 | 不能用于现场广告定位 | C6:数据不能用于现场广告定位 |
 | 不能用于现场个性化 | C7:数据不能用于内容的现场定位 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ### 将数据导出控制到营销操作
 
 下表概述了特定数据导出标签如何映射到可识别的营销操作：
@@ -146,6 +146,8 @@ Audience Manager会在区段存储中自动创建名为&#x200B;**Experience Plat
 | 此目标可用于站外广告定位 | 跨站点定位 |
 | 此目标可用于现场广告定位 | 现场广告 |
 | 此目标可用于网站广告个性化 | 现场个性化 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 了解Audience Manager和Experience Platform之间的区段群体差异{#aep-aam-segment-population-differences}
 
