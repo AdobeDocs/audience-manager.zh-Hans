@@ -1,21 +1,20 @@
 ---
 title: 数据收集服务器 (DCS) API 方法和代码
 seo-title: Adobe Audience Manager(AAM)的数据收集服务器(DCS)API方法和代码
-description: 代码、方法和技术，使您能有计划地与Audience Manager数据收集服务器(DCS)协作。
-seo-description: 代码、方法和技术，使您能有计划地与Audience Manager数据收集服务器(DCS)协作。
+description: 允许您以编程方式使用Audience Manager数据收集服务器(DCS)的代码、方法和技术。
+seo-description: 允许您以编程方式使用Audience Manager数据收集服务器(DCS)的代码、方法和技术。
 feature: DCS
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: be18a59c-c70d-4dcb-ae84-58ab0a3b8921
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '170'
 ht-degree: 38%
 
 ---
 
-
 # 数据收集服务器 (DCS) API 方法和代码
 
-代码、方法和技术，使您能有计划地与Audience Manager数据收集服务器(DCS)协作。
+允许您以编程方式使用Audience Manager数据收集服务器(DCS)的代码、方法和技术。
 
 * [DCS 事件调用 API](/help/using/api/dcs-intro/dcs-event-calls/dcs-event-calls.md)
 
@@ -23,7 +22,7 @@ ht-degree: 38%
 
 * [用于服务器到服务器数据传输的 DCS API](/help/using/api/dcs-intro/dcs-s2s/dcs-s2s.md)
 
-   服务器到服务器(S2S)API提供了代码和方法，使您能够发送和接收DCS用户数据，并在您自己的系统或应用程序中处理这些信息。
+   服务器到服务器(S2S)API提供了代码和方法，允许您发送和接收DCS用户数据，并在自己的系统或应用程序中处理此信息。
 
 * [DCS API 参考](/help/using/api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
 
