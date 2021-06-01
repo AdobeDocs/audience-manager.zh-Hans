@@ -1,12 +1,11 @@
 ---
-description: 本页仅包括当前的服务器到服务器集成。 有关集成的详细信息，请参阅其Adobe交换列表（如果可用）或与Adobe顾问或客户服务联系。
-seo-description: 本页仅包括当前的服务器到服务器集成。 有关集成的详细信息，请参阅其Adobe交换列表（如果可用）或与Adobe顾问或客户服务联系。
+description: 本页仅包含当前的服务器到服务器集成。 有关集成的更多信息，请参阅其Adobe交换列表（如果可用），或联系您的Adobe顾问或客户关怀团队。
+seo-description: 本页仅包含当前的服务器到服务器集成。 有关集成的更多信息，请参阅其Adobe交换列表（如果可用），或联系您的Adobe顾问或客户关怀团队。
 seo-title: Adobe Audience Manager技术合作伙伴
-keywords: 激活;激活合作伙伴、目标、目标
+keywords: 激活；激活合作伙伴、目标、目标
 solution: Audience Manager
 title: Adobe Audience Manager技术合作伙伴
-feature: Third-party Integration
-translation-type: tm+mt
+feature: 第三方集成
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '1185'
@@ -17,21 +16,21 @@ ht-degree: 59%
 
 # Audience Manager激活合作伙伴
 
-本页仅包含当前Audience Manager[服务器到服务器集成](/help/using/features/destinations/add-edit-segments.md)。  有关集成的详细信息，请参阅其[AdobeExchange](https://www.adobeexchange.com/experiencecloud.html)列表（如果可用）或与Adobe顾问或客户服务联系。
+本页仅包含当前Audience Manager[服务器到服务器集成](/help/using/features/destinations/add-edit-segments.md)。  有关集成的更多信息，请参阅其[AdobeExchange](https://www.adobeexchange.com/experiencecloud.html)列表（如果可用），或与您的Adobe顾问或客户关怀团队联系。
 
 <br> 
 
-* **Updated** =显示此激活合作伙伴的上次更新日期。
-* **Unsegment** = Unsegmentation描述了取消设备用户档案的区段资格并从区段中删除这些流程。您能否从区段中删除设备用户档案取决于用于创建用户档案合并规则的设备选项。 在GDPR删除请求读取[用户档案合并规则和设备未分段进程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和[具有未分段功能的Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)的上下文中也使用未分段。 Audience Manager会向标有“是”的目标发送取消区段信息。
-* **接收IAB TCF同意信号** = IAB TCF的Audience Manager插件允许您将IAB TC字符串转发给激活合作伙伴，同时尊重用户的隐私选择。阅读[IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)的Audience Manager插件。
-* **ICDS** =此列列表支持“即时跨设备抑制”的合作伙伴。阅读[即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
-* **移动设备ID** =此列列表可以从Audience Manager接收移动设备ID的合作伙伴。
+* **更新**  =显示此激活合作伙伴的上次更新日期。
+* **Unsegment**  = Unsegmentation描述了从区段中取消设备配置文件资格和删除设备配置文件的流程。能否从区段中删除设备配置文件取决于用于创建配置文件合并规则的设备选项。 GDPR删除请求读取[配置文件合并规则和设备取消分段流程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和[具有取消分段功能的Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)的上下文中也使用取消分段。 Audience Manager会向下面标有“是”的目标发送取消分段信息。
+* **接收IAB TCF同意信号**  =适用于IAB TCF的Audience Manager插件允许您将IAB TC字符串转发给激活合作伙伴，同时尊重用户所做的隐私选择。阅读[适用于IAB TCF的Audience Manager插件](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)。
+* **ICDS**  =此列列出了支持“即时跨设备抑制”的合作伙伴。阅读[即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
+* **移动设备ID**  =此列列出了能够从Audience Manager接收移动设备ID的合作伙伴。
 
 <br> 
 
-| 集成 | 更新了 | 取消细分 | 接收IAB TCF同意信号 | ICDS | 移动设备 ID |
+| 集成 | 更新了 | 取消分段 | 接收IAB TCF同意信号 | ICDS | 移动设备 ID |
 |---------------------------------------------------|------------|-----------|-----------------------------------|------|-------------------|
-| 4C洞察 | 26/09/2018 | 是 | 否 | 否 | 是 |
+| 4C分析 | 26/09/2018 | 是 | 否 | 否 | 是 |
 | 4info | 09/02/2017 | 否 | 否 | 否 | 是 |
 | AcuityAds | 09/02/2017 | 是 | 否 | 是 | 否 |
 | 阿达拉 | 17/02/2017 | 是 | 否 | 否 | 否 |
@@ -39,19 +38,19 @@ ht-degree: 59%
 | 阿德尔菲 | 22/02/2017 | 否 | 否 | 否 | 是 |
 | AdForm | 22/02/2017 | 是 | 否 | 是 | 是 |
 | AdGear | 22/02/2017 | 是 | 否 | 是 | 否 |
-| 阿季克捷夫 | 26/01/2018 | 是 | 否 | 否 | 是 |
-| Adswizz | 09/10/2017 | 是 | 否 | 否 | 是 |
-| 阿德奥朗 | 22/02/2017 | 是 | 否 | 否 | 是 |
+| 阿迪克捷耶夫 | 26/01/2018 | 是 | 否 | 否 | 是 |
+| 阿兹维兹 | 09/10/2017 | 是 | 否 | 否 | 是 |
+| 阿狄奥朗 | 22/02/2017 | 是 | 否 | 否 | 是 |
 | 阿菲尼奥 | 03/04/2018 | 是 | 否 | 否 | 是 |
-| Aki | 21/06/2018 | 否 | 否 | 否 | 是 |
-| Amazon Advertising | 15/06/2017 | 是 | 否 | 否 | 否 |
+| 阿基 | 21/06/2018 | 否 | 否 | 否 | 是 |
+| Amazon广告 | 15/06/2017 | 是 | 否 | 否 | 否 |
 | AOL AdLearn | 02/03/2017 | 否 | 否 | 否 | 是 |
 | AOL ONE | 02/03/2017 | 是 | 否 | 否 | 是 |
 | AppNexus | 02/03/2017 | 是 | 否 | 是 | 否 |
 | AppNexus Yieldex | 10/08/2017 | 是 | 否 | 否 | 否 |
-| Atedra/AdStanding | 02/03/2017 | 是 | 否 | 是 | 否 |
+| Atedra/AdStading | 02/03/2017 | 是 | 否 | 是 | 否 |
 | 鳄梨 | 06/12/2017 | 否 | 否 | 否 | 否 |
-| 比特莱 | 03/03/2017 | 是 | 否 | 否 | 否 |
+| 比泰勒 | 03/03/2017 | 是 | 否 | 否 | 否 |
 | 蜂蜡 | 25/05/2018 | 否 | 否 | 否 | 是 |
 | Brandscreen | 03/03/2017 | 否 | 否 | 否 | 否 |
 | Brightroll | 03/03/2017 | 否 | 是 | 否 | 否 |
@@ -61,10 +60,10 @@ ht-degree: 59%
 | Centro | 27/02/2017 | 否 | 否 | 否 | 是 |
 | ChoiceStream | 27/02/2017 | 否 | 否 | 否 | 否 |
 | Clearstream.tv | 27/02/2017 | 是 | 否 | 否 | 否 |
-| 《集体AMP平台》 | 27/02/2017 | 否 | 否 | 否 | 否 |
+| 集体AMP平台 | 27/02/2017 | 否 | 否 | 否 | 否 |
 | 克里蒂奥 | 27/02/2017 | 否 | 是 | 否 | 是 |
-| 克罗斯维斯 | 27/02/2017 | 是 | 否 | 否 | 否 |
-| AudienceOne | 27/02/2017 | 是 | 否 | 否 | 否 |
+| 交叉 | 27/02/2017 | 是 | 否 | 否 | 否 |
+| D.A.C. AudienceOne | 27/02/2017 | 是 | 否 | 否 | 否 |
 | DataXu | 11/20/2017 | 否 | 否 | 否 | 是 |
 | 迪吉朗 | 02/03/2017 |  | 否 | 否 | 否 |
 | DistrictM | 02/03/2017 | 是 | 否 | 否 | 否 |
@@ -73,7 +72,7 @@ ht-degree: 59%
 | Dstillery(FKA Media6) | 02/03/2017 | 是 | 否 | 否 | 是 |
 | Epsilon Conversant | 03/03/2017 | 否 | 否 | 否 | 否 |
 | 指数 | 27/02/2017 | 是 | 否 | 是 | 否 |
-| Eyereturn Marketing | 11/04/2017 | 是 | 否 | 否 | 否 |
+| Eyereturn营销 | 11/04/2017 | 是 | 否 | 否 | 否 |
 | EyeView Digital | 14/06/2018 | 是 | 否 | 否 | 是 |
 | 菲克苏 | 03/03/2017 | 是 | 否 | 否 | 是 |
 | Flashtalking | 02/03/2017 | 否 | 否 | 否 | 否 |
@@ -82,16 +81,16 @@ ht-degree: 59%
 | 色域媒体 | 03/03/2017 |  | 否 | 否 |  |
 | Google AdsWords显示 | 02/08/2018 | 是 | 是 | 否 | 是 |
 | Google DoubleClick竞价管理器(DBM) | 24/04/2017 | 是 | 是 | 是 | 是 |
-| Google DoubleClick活动管理器(DCM fka DFA) | 24/04/2017 | 是 | 是 | 是 | 是 |
+| Google DoubleClick促销活动管理器(DCM fka DFA) | 24/04/2017 | 是 | 是 | 是 | 是 |
 | Google DoubleClick for Publishers(DFP、DFPP) | 24/04/2017 | 是 | 是 | 是 | 是 |
 | 口香糖 | 02/06/2017 | 是 | 否 | 否 | 否 |
-| Index Exchange（前Casale Media） | 03/03/2017 | 是 | 否 | 否 | 否 |
-| 传染性媒体 | 03/03/2017 | 是 | 否 | 是 | 否 |
+| 索引交换（以前称为Casale Media） | 03/03/2017 | 是 | 否 | 否 | 否 |
+| 传染媒体 | 03/03/2017 | 是 | 否 | 是 | 否 |
 | inMobi | 30/03/2017 | 是 | 否 | 否 | 是 |
 | 因诺维德 | 02/03/2017 | 是 | 否 | 否 | 否 |
 | iPinYou | 11/07/2017 | 否 | 否 | 否 | 否 |
-| 贾姆普 | 11/05/2017 | 是 | 否 | 否 | 是 |
-| Jivox | 30/08/2017 | 否 | 否 | 否 | 否 |
+| 扬普 | 11/05/2017 | 是 | 否 | 否 | 是 |
+| 吉沃 | 30/08/2017 | 否 | 否 | 否 | 否 |
 | Juice Mobile | 03/03/2017 | 是 | 否 | 否 | 是 |
 | 克鲁克 | 30/06/2017 | 否 | 否 | 否 | 是 |
 | Liftoff.io | 09/11/2017 | 是 | 否 | 否 | 是 |
@@ -101,42 +100,42 @@ ht-degree: 59%
 | 洛塔梅 | 30/06/2017 | 是 | 否 | 否 | 是 |
 | MaxPoint Interactive | 27/02/2017 | 否 | 否 | 否 | 否 |
 | MediaMath | 27/02/2017 | 是 | 否 | 否 | 是 |
-| Microsoft Bing广告 | 30/05/2017 | 是 | 是 | 是 | 否 |
-| Millennial Media | 27/02/2017 | 否 | 否 | 否 | 是 |
-| 中国移动平台 | 06/08/2018 | 是 | 否 | 否 | 是 |
-| 叙事I/O | 12/01/2018 | 是 | 否 | 否 | 是 |
+| Microsoft Bing Ads | 30/05/2017 | 是 | 是 | 是 | 否 |
+| 千禧媒体 | 27/02/2017 | 否 | 否 | 否 | 是 |
+| 中国平台 | 06/08/2018 | 是 | 否 | 否 | 是 |
+| 叙述I/O | 12/01/2018 | 是 | 否 | 否 | 是 |
 | 本机触控 | 02/03/2017 | 是 | 否 | 否 | 是 |
 | 纳蒂沃 | 27/02/2017 | 是 | 否 | 否 | 否 |
 | Mail.ru | 29/04/2019 | 是 | 否 | 否 | 是 |
-| 移动专业人士 | 25/05/2018 | 是 | 否 | 否 | 是 |
+| 移动专业人员 | 25/05/2018 | 是 | 否 | 否 | 是 |
 | 网络挖掘 | 02/03/2017 | 否 | 否 | 否 | 否 |
 | 诺伊斯塔 | 28/03/2017 | 是 | 否 | 否 | 否 |
 | OnAd | 13/02/2017 | 是 | 否 | 是 | 否 |
 | OneSpot | 19/06/2017 | 是 | 否 | 否 | 是 |
 | OpenX | 26/07/2018 | 是 | 否 | 否 | 是 |
 | Opera Mediaworks | 13/02/2017 | 是 | 否 | 否 | 是 |
-| Outbrain | 03/04/2017 | 是 | 否 | 否 | 否 |
-| OwnerIQ | 13/02/2017 | 是 | 否 | 是 | 否 |
+| 外脑 | 03/04/2017 | 是 | 否 | 否 | 否 |
+| 所有者IQ | 13/02/2017 | 是 | 否 | 是 | 否 |
 | 161站台 | 28/11/2018 | 是 | 否 | 否 | 是 |
 | PocketMath | 22/02/2017 | 是 | 否 | 否 | 是 |
 | Powerlinks | 17/05/2017 | 是 | 否 | 否 | 否 |
-| Pubmatic | 13/02/2017 | 是 | 否 | 否 | 否 |
+| 出版物 | 13/02/2017 | 是 | 否 | 否 | 否 |
 | 普尔塞波因特 | 13/02/2017 | 是 | 否 | 否 | 否 |
 | PushSpring | 28/08/2017 | 是 | 否 | 否 | 是 |
 | Quantcast | 13/02/2017 | 是 | 否 | 否 | 否 |
 | RhythmOne / RadiumOne | 13/02/2017 | 是 | 否 | 否 | 是 |
 | 重新合并 | 31/05/2017 | 是 | 否 | 是 | 是 |
-| Resonate | 17/02/2017 | 是 | 否 | 否 | 否 |
+| 回响 | 17/02/2017 | 是 | 否 | 否 | 否 |
 | RevJet | 17/02/2017 | 否 | 否 | 否 | 否 |
 | 火箭燃料 | 17/02/2017 | 是 | 否 | 是 | 是 |
 | Rubicon |  | 是 | 是 | 否 |  |
 | 运行 | 17/02/2017 | 是 | 否 | 否 | 否 |
-| Sabio Mobile | 17/02/2017 | 否 | 否 | 否 | 是 |
+| 萨比奥移动 | 17/02/2017 | 否 | 否 | 否 | 是 |
 | Simpli.fi | 17/02/2017 | 否 | 否 | 否 | 是 |
 | Sizmek受众中心 | 17/02/2017 | 是 | 否 | 否 |  |
 | 切片 | 04/09/2018 | 是 | 否 | 否 | 是 |
 | Smart Adserver | 31/07/2017 | 是 | 否 | 是 | 是 |
-| So-net Media Networks Logicad |  | 是 | 否 | 否 |  |
+| So-net媒体网络逻辑 |  | 是 | 否 | 否 |  |
 | 索诺比 | 28/03/2017 | 是 | 否 | 是 | 否 |
 | SpecificMedia | 03/03/2017 | 否 | 否 | 否 | 否 |
 | 海绵细胞 | 03/03/2017 | 是 | 否 | 是 | 是 |
@@ -144,25 +143,25 @@ ht-degree: 59%
 | 斯特勒 | 03/03/2017 | 是 | 否 | 否 | 否 |
 | SundaySky | 03/03/2017 | 是 | 否 | 是 | 否 |
 | StartApp | 25/05/2018 | 是 | 否 | 否 | 是 |
-| 超级/缩小 | 03/03/2017 | 是 | 否 | 否 | 否 |
+| 超级/扩展 | 03/03/2017 | 是 | 否 | 否 | 否 |
 | 苏尔瓦塔 | 09/08/2017 | 是 | 否 | 否 | 是 |
 | 塔沃拉 | 03/08/2017 | 否 | 是 | 否 | 否 |
-| Tapad | 03/03/2017 | 否 | 否 | 否 | 是 |
-| 特拉里亚 | 25/04/2019 | 是 | 否 | 否 | 是 |
-| Telogical Systems | 03/03/2017 | 是 | 否 | 否 | 否 |
-| 贸易部门 | 03/03/2017 | 是 | 是 | 是 | 是 |
+| 塔帕德 | 03/03/2017 | 否 | 否 | 否 | 是 |
+| 泰拉里亚 | 25/04/2019 | 是 | 否 | 否 | 是 |
+| 技术系统 | 03/03/2017 | 是 | 否 | 否 | 否 |
+| 交易台 | 03/03/2017 | 是 | 是 | 是 | 是 |
 | Thnk Realtime | 05/02/2016 |  | 否 | 否 |  |
 | 震颤视频 | 03/03/2017 | 是 | 否 | 否 | 否 |
-| 三重提升 | 03/03/2017 | 否 | 是 | 否 | 否 |
+| 三次提升 | 03/03/2017 | 否 | 是 | 否 | 否 |
 | TrueX | 11/01/2018 | 是 | 否 | 否 | 是 |
 | TubeMogul | 03/03/2017 | 是 | 否 | 是 | 否 |
-| 图恩/阿莫比 | 03/03/2027 | 否 | 否 | 否 | 是 |
+| 转弯/阿莫比 | 03/03/2027 | 否 | 否 | 否 | 是 |
 | 特温加 | 29/10/2018 | 是 | 否 | 否 | 否 |
-| Twitter定制受众 | 27/02/2017 | 是 | 否 | 是 | 否 |
+| Twitter量身定制的受众 | 27/02/2017 | 是 | 否 | 是 | 否 |
 | 底音 | 11/07/2017 | 否 | 否 | 否 | 否 |
 | 韦尔韦 | 15/06/2017 | 是 | 否 | 否 | 是 |
 | VideoAmp | 03/03/2017 | 否 | 否 | 否 | 否 |
-| 视频 | 03/03/2017 | 否 | 否 | 否 | 否 |
+| 视频学 | 03/03/2017 | 否 | 否 | 否 | 否 |
 | VisualIQ | 24/03/2017 | 是 | 否 | 否 | 否 |
 | 维基购买 | 04/08/2018 | 是 | 否 | 否 | 是 |
 | X+1 | 05/02/2016 |  | 否 | 否 |  |
