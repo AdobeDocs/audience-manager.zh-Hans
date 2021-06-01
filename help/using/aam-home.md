@@ -5,9 +5,8 @@ seo-title: Adobe Audience Manager 产品技术文档
 solution: Audience Manager
 title: Audience Manager 指南
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
-feature: Overview
+feature: 概述
 exl-id: a47bf8ba-4ec0-4b3b-ad20-4afb7c9f924b
-translation-type: tm+mt
 source-git-commit: 15e36d2847627b5e5ccef11f8073ce5124f14815
 workflow-type: tm+mt
 source-wordcount: '653'
@@ -152,7 +151,7 @@ ht-degree: 96%
      有关新增功能和修复，请参阅最新的 <a href="https://docs.adobe.com/content/help/zh-Hans/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud 发行说明</a>。</p> 
      <p> <b>最新功能</b> </p> <p> 
      了解 Audience Manager 的最新功能：</p>
-     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager用户迁移到Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">针对基于人的目标的Google客户匹配</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager Plug-in for IAB TCF v2.0</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用情况报表</a></li>
+     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager用户迁移到Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">适用于基于人员的目标的Google客户匹配</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">适用于IAB TCF v2.0的Audience Manager插件</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用情况报表</a></li>
      </ul></p>
     </td>
   </tr> 
