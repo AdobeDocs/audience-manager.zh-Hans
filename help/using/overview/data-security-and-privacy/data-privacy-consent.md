@@ -3,12 +3,11 @@ description: 本文档介绍同意管理在 Audience Manager 中的工作方式�
 seo-description: 本文档介绍同意管理在 Audience Manager 中的工作方式。
 seo-title: 同意管理
 solution: Audience Manager
-keywords: GDPR UI、GDPR API、CCPA、隐私、同意
+keywords: GDPR UI， GDPR API， CCPA，隐私，同意
 title: 同意管理
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
-feature: Data Governance & Privacy
+feature: 数据管理和隐私
 exl-id: 9e545e8d-dbe4-4df9-8801-af3c2c73e406
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '747'
