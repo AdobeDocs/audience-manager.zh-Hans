@@ -1,23 +1,22 @@
 ---
-description: 特征生成器根据下面列出的操作顺序（从高到低优先级）评估表达式。 由高优先级运算符定义的特征元素首先在其它优先级运算符之前进行评估。 此部分根据优先级对每个运算符进行排序，从高到低。
-seo-description: 特征生成器根据下面列出的操作顺序（从高到低优先级）评估表达式。 由高优先级运算符定义的特征元素首先在其它优先级运算符之前进行评估。 此部分根据优先级对每个运算符进行排序，从高到低。
+description: 特征生成器根据下面列出的运算顺序来计算表达式，优先级从高到低。 首先，评估由高优先级运算符定义的特征元素，然后再评估其他优先运算符。 此部分按优先级从高到低对每个运算符进行排名。
+seo-description: 特征生成器根据下面列出的运算顺序来计算表达式，优先级从高到低。 首先，评估由高优先级运算符定义的特征元素，然后再评估其他优先运算符。 此部分按优先级从高到低对每个运算符进行排名。
 seo-title: 特征生成器中的运算顺序
 solution: Audience Manager
 title: 特征生成器中的运算顺序
 uuid: df325047-af62-45ad-9ca1-046bfcbe5341
-feature: Traits
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 特征
+exl-id: 90700479-4a8e-4a07-81ef-2e9d8a1d9f15
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '208'
 ht-degree: 13%
 
 ---
 
-
 # 特征生成器中的运算顺序 {#order-of-operations-in-trait-builder}
 
-[!UICONTROL Trait Builder] 根据下面列出的操作顺序评估表达式，从高优先级到低优先级。由高优先级运算符定义的特征元素首先在其它优先级运算符之前进行评估。 此部分根据优先级对每个运算符进行排序，从高到低。
+[!UICONTROL Trait Builder] 根据下面列出的运算顺序来计算表达式，优先级从高到低。首先，评估由高优先级运算符定义的特征元素，然后再评估其他优先运算符。 此部分按优先级从高到低对每个运算符进行排名。
 
 <!-- c_tb_operator_precedence.xml -->
 
@@ -33,17 +32,17 @@ ht-degree: 13%
   <tr> 
    <td colname="col1"> 圆括号 </td> 
    <td colname="col2"> () </td> 
-   <td colname="col3"> 括号中的表达式始终优先计算，并按优先顺序排列。 </td> 
+   <td colname="col3"> 括号中的表达式始终先计算，并遵循优先顺序。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 比较运算符 </td> 
    <td colname="col2"> &lt;&gt; &lt;&gt;= </td> 
-   <td colname="col3"> 接下来评估小于、大于、小于／等于、大于／等于。 </td> 
+   <td colname="col3"> 接下来评估小于、大于、小于/等于、大于/等于。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 等式运算符 </td> 
    <td colname="col2"> == != </td> 
-   <td colname="col3"> 等于、不等于在前一个运算符之后计算。 </td> 
+   <td colname="col3"> 在前面的运算符之后，将计算等于、不等于。 </td> 
   </tr> 
   <tr> 
    <td colname="col1">布尔值<span class="wintitle"> AND</span> </td> 
@@ -61,5 +60,5 @@ ht-degree: 13%
 >[!MORELIKETHIS]
 >
 >* [在TraitBuilder中使用布尔表达式(AND、OR、NOT)](../../reference/boolean-expressions-tsb.md)
->* [在TraitBuilder中使用比较运算符](../../features/traits/trait-comparison-operators.md)
+* [在TraitBuilder中使用比较运算符](../../features/traits/trait-comparison-operators.md)
 
