@@ -1,19 +1,18 @@
 ---
-description: 使用这些REST风格的API方法创建目标。
-seo-description: 使用这些REST风格的API方法创建目标。
+description: 使用这些RESTful API方法创建目标。
+seo-description: 使用这些RESTful API方法创建目标。
 seo-title: 创建目标
 solution: Audience Manager
 title: 创建目标
 uuid: 12f04151-ad0e-4cb6-8f3b-b5c427dc2cef
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: bae0f304-0ff3-4c5f-b432-19aef61d9d10
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '356'
 ht-degree: 9%
 
 ---
-
 
 # 创建目标 {#create-destinations}
 
@@ -23,11 +22,11 @@ ht-degree: 9%
 
 ## 支持的目标类型：仅URL和Cookie
 
-可用的`POST`方法仅允许您创建[!UICONTROL URL]和[!UICONTROL cookie destinations]。 当前，不能使用这些[!DNL REST API]方法创建[!UICONTROL server-to-server destinations]。 但是，相关的目标`GET`方法允许您检索有关在用户界面中创建的[!UICONTROL server-to-server destinations]的信息。
+可用的`POST`方法仅允许您创建[!UICONTROL URL]和[!UICONTROL cookie destinations]。 当前，无法使用这些[!DNL REST API]方法创建[!UICONTROL server-to-server destinations]。 但是，相关目标`GET`方法允许您检索有关在用户界面中创建的[!UICONTROL server-to-server destinations]的信息。
 
 ## 创建非串行URL目标{#create-nonserial-dest}
 
-一种`POST`方法，可让您创建一个接受由单个键值对（例如`gender=male`或`gender=female`）组成的段的目标。
+一种`POST`方法，用于创建一个目标，以接受由单键值对（例如`gender=male`或`gender=female`）组成的区段。
 
 <!-- r_create_nonserial_destination.xml -->
 
@@ -37,7 +36,7 @@ ht-degree: 9%
 
 ### 示例请求
 
-此请求创建单个目标。 除非另有指明，否则所有请求值都是必需的。
+此请求会创建一个目标。 除非另有指示，否则所有请求值都是必需的。
 
 ```
 { 
@@ -80,7 +79,7 @@ ht-degree: 9%
 
 ## 创建序列化URL目标{#create-serial-url-dest}
 
-一种`POST`方法，它允许您创建一个目标，该目标接受与单个键关联的多个值（例如`color=blue, red, green`）。
+一种`POST`方法，允许您创建一个目标，该目标接受与单个键值（例如`color=blue, red, green`）关联的多个值。
 
 <!-- r_create_serial_url_destination.xml -->
 
@@ -90,7 +89,7 @@ ht-degree: 9%
 
 ### 示例请求
 
-为传入目标的键值对指定安全[!DNL URL]和分隔符。 除非另有指明，否则所有请求值都是必需的。
+为传递到目标的键值对指定安全的[!DNL URL]和分隔符。 除非另有指示，否则所有请求值都是必需的。
 
 ```
 { 
@@ -106,7 +105,7 @@ ht-degree: 9%
 
 ### 响应
 
-成功的更新返回响应代码`201 created`和目标。
+成功更新会返回响应代码`201 created`和目标。
 
 ```
 { 
@@ -134,9 +133,9 @@ ht-degree: 9%
 }
 ```
 
-## 创建Cookie目标：单键，无序列化{#create-cookie-dest-single}
+## 创建Cookie目标：单键，未序列化{#create-cookie-dest-single}
 
-一种`POST`方法，允许您创建一个[!UICONTROL cookie destination]，它接受由单键值对（例如`gender=male`或`gender=female`）组成的段。
+一种`POST`方法，用于创建一个[!UICONTROL cookie destination]，以接受由单键值对（例如，`gender=male`或`gender=female`）组成的区段。
 
 <!-- r_cookie_destination_singlekey_noserial.xml -->
 
@@ -146,7 +145,7 @@ ht-degree: 9%
 
 ### 示例请求
 
-除非另有指明，否则所有请求值都是必需的。
+除非另有指示，否则所有请求值都是必需的。
 
 ```
 { 
@@ -171,7 +170,7 @@ ht-degree: 9%
 
 ### 响应
 
-成功的更新返回响应代码`201 created`和目标。
+成功更新会返回响应代码`201 created`和目标。
 
 ```
 { 
@@ -203,9 +202,9 @@ ht-degree: 9%
 } 
 ```
 
-## 创建Cookie目标：单键，序列化{#create-cookie-dest-single-serial}
+## 创建Cookie目标：单个键，序列化{#create-cookie-dest-single-serial}
 
-一种`POST`方法，它允许您创建一个目标，该目标接受与单个键关联的多个值（例如`color=blue, red, green`）。
+一种`POST`方法，允许您创建一个目标，该目标接受与单个键值（例如`color=blue, red, green`）关联的多个值。
 
 <!-- r_cookie_destination_singlekey_serial.xml -->
 
@@ -215,7 +214,7 @@ ht-degree: 9%
 
 ### 示例请求
 
-除非另有指明，否则所有请求值都是必需的。
+除非另有指示，否则所有请求值都是必需的。
 
 ```
 { 
@@ -241,7 +240,7 @@ ht-degree: 9%
 
 ### 响应
 
-成功的更新返回响应代码`201 created`和目标。
+成功更新会返回响应代码`201 created`和目标。
 
 ```
 { 
@@ -274,9 +273,9 @@ ht-degree: 9%
 }
 ```
 
-## 创建Cookie目标：多密钥，无序列化{#create-cookie-dest-multi}
+## 创建Cookie目标：多键，非序列化{#create-cookie-dest-multi}
 
-一种`POST`方法，允许您创建一个目标，该目标接受包含具有不同值（例如`gender=male; gender=female; color=blue; color=red`）的多个键的段。
+一种`POST`方法，允许您创建一个目标，以接受包含具有不同值（例如`gender=male; gender=female; color=blue; color=red`）的多个键的区段。
 
 <!-- r_create_cookie_multikey_noserial.xml -->
 
@@ -286,7 +285,7 @@ ht-degree: 9%
 
 ### 示例请求
 
-除非另有指明，否则所有请求值都是必需的。
+除非另有指示，否则所有请求值都是必需的。
 
 ```
 { 
@@ -310,7 +309,7 @@ ht-degree: 9%
 
 ### 响应
 
-成功的更新返回响应代码`201 created`和目标。
+成功更新会返回响应代码`201 created`和目标。
 
 ```
 { 
@@ -341,9 +340,9 @@ ht-degree: 9%
 }
 ```
 
-## 创建Cookie目标：多密钥，序列化{#create-cookie-dest-multi-serial}
+## 创建Cookie目标：多键，序列化{#create-cookie-dest-multi-serial}
 
-一种`POST`方法，允许您创建一个接受包含多个键和值的段（例如`gender=male, female; color=blue, red, green`）的目标。
+一种`POST`方法，用于创建一个目标，以接受包含多个键和值（例如`gender=male, female; color=blue, red, green`）的区段。
 
 <!-- r_cookie_destination_multikey_serial.xml -->
 
@@ -353,7 +352,7 @@ ht-degree: 9%
 
 ### 示例请求
 
-除非另有指明，否则所有请求值都是必需的。
+除非另有指示，否则所有请求值都是必需的。
 
 ```
 { 
@@ -378,7 +377,7 @@ ht-degree: 9%
 
 ### 响应
 
-成功的更新返回响应代码`201 created`和目标。
+成功更新会返回响应代码`201 created`和目标。
 
 ```
 { 
@@ -413,6 +412,6 @@ ht-degree: 9%
 >[!MORELIKETHIS]
 >
 >* [目标](../../../features/destinations/destinations.md)
->* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [键值对说明](../../../reference/key-value-pairs-explained.md)
+* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
+* [键值对说明](../../../reference/key-value-pairs-explained.md)
 
