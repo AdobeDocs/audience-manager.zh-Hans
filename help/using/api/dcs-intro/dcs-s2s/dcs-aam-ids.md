@@ -1,30 +1,29 @@
 ---
-description: 本节介绍如何分析DCS响应以检索对DCS进行实时调用所需的访客和区域ID。
-seo-description: 本节介绍如何分析DCS响应以检索对DCS进行实时调用所需的访客和区域ID。
+description: 本节介绍如何解析DCS响应，以检索对DCS进行实时调用所需的访客和区域ID。
+seo-description: 本节介绍如何解析DCS响应，以检索对DCS进行实时调用所需的访客和区域ID。
 seo-title: 从 DCS 响应中获取用户 ID 和区域
 solution: Audience Manager
 title: 从 DCS 响应中获取用户 ID 和区域
 uuid: 08036045-3b26-4d40-8e94-7d0884048683
 feature: DCS
-translation-type: tm+mt
-source-git-commit: e40233ace5cb74743db7d0f9f90707fa596a7e79
+exl-id: 3c0c5e57-2d59-4938-9bbd-761495142c31
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 17%
 
 ---
 
-
 # 从 DCS 响应中获取用户 ID 和区域 {#get-user-ids-and-regions-from-a-dcs-response}
 
-本节介绍如何分析[!DNL DCS]响应以检索对[!DNL DCS]进行实时调用所需的访客和区域ID。
+本节介绍如何解析[!DNL DCS]响应，以检索对[!DNL DCS]进行实时调用所需的访客和区域ID。
 
-## 用户和区域ID {#user-region-ids}
+## 用户ID和区域ID {#user-region-ids}
 
-[!DNL DCS]响应包含有关站点访客的数据。 在对[!DNL DCS]进行服务器对服务器调用之前，您需要访客和区域ID。
+[!DNL DCS]响应包含有关网站访客的数据。 在对[!DNL DCS]进行服务器到服务器调用之前，您需要访客和区域ID。
 
-* 需要用户ID来标识数据并将其与特定访客关联。
-* 区域ID是必需的，因为它与区域服务器名称关联，您需要将数据发送到[!DNL DCS]。 [!DNL DCS]在地理上最接近站点访客的数据中心中存储信息。 请参阅 [DCS 区域 ID、位置和主机名](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
+* 需要用户ID才能识别数据并将其与特定访客关联。
+* 区域ID是必需的，因为它与区域服务器名称绑定，您需要将数据发送到[!DNL DCS]。 [!DNL DCS]在地理上最接近网站访客的数据中心中存储信息。 请参阅 [DCS 区域 ID、位置和主机名](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
 
 这些参数如下所述。 *斜体*&#x200B;中的代码表示变量占位符。
 
@@ -52,7 +51,7 @@ ht-degree: 17%
 
 ## 示例响应 {#sample-response}
 
-此简单响应显示`UUID`和区域`ID`。 注意，这仅是示例数据。 您的日志文件可能更长、更复杂。
+此简单响应显示了`UUID`和区域`ID`。 请注意，这仅是示例数据。 您的日志文件可能会更长、更复杂。
 
 ```js
 {
@@ -65,4 +64,4 @@ ht-degree: 17%
 
 ## 后续步骤 {#next-steps}
 
-用户ID和区域服务器名称一经确定，即可开始发送和接收[!DNL DCS]数据。 请参阅[进行DCS API调用](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)。
+获得用户ID和区域服务器名称后，即可开始发送和接收[!DNL DCS]数据。 请参阅[进行DCS API调用](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)。
