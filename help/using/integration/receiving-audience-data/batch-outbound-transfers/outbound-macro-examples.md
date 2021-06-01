@@ -1,27 +1,26 @@
 ---
-description: 一些常用宏用于创建出站文件模板的示例。
-seo-description: 一些常用宏用于创建出站文件模板的示例。
+description: 有关如何使用某些常用宏创建出站文件模板的示例。
+seo-description: 有关如何使用某些常用宏创建出站文件模板的示例。
 seo-title: 出站宏示例
 solution: Audience Manager
 title: 出站宏示例
 uuid: 823d85d4-d683-45cf-9e60-c12b7d52a498
-feature: Outbound Data Transfers
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 出站数据传输
+exl-id: 7e3f2b25-7b7c-47fe-aa62-7ebd4e25f9ba
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '337'
 ht-degree: 14%
 
 ---
 
-
 # 出站宏示例 {#outbound-macro-examples}
 
-一些常用宏用于创建出站文件模板的示例。
+有关如何使用某些常用宏创建出站文件模板的示例。
 
 >[!NOTE]
 >
->在表中，**粗体**&#x200B;类型使用其相关输出标识每个宏。 对于格式示例，已添加`<` `>`符号，以帮助以可视方式分离每个宏。
+>在表中， **boldface**&#x200B;类型使用其相关输出标识每个宏。 对于格式示例，已添加`<` `>`符号，以帮助直观地分隔每个宏。
 
 ## 文件名宏{#file-name-macros}
 
@@ -85,7 +84,7 @@ ht-degree: 14%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> TAB </code> </p> </td> 
-   <td colname="col2"> <p>格式: <code> &lt;ORDER_ID&gt; &lt;TAB&gt;&lt;SYNC_TYPE&gt; </code> </p> <p>Output（输出）: <code> 888 full.sync </code> </p> <p>在输出中，非打印制表符分隔每个元素。 </p> </td>
+   <td colname="col2"> <p>格式: <code> &lt;ORDER_ID&gt; &lt;TAB&gt;&lt;SYNC_TYPE&gt; </code> </p> <p>Output（输出）: <code> 888 full.sync </code> </p> <p>在输出中，非打印制表符用于分隔每个元素。 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -137,7 +136,7 @@ ht-degree: 14%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> TAB </code> </p> </td> 
-   <td colname="col2"> <p>格式: <code> &lt;DP_UUID&gt;&lt;TAB&gt;&lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>Output（输出）: <code> 123456 UUID1 UUID2 UUID3 </code> </p> <p>在输出中，非打印制表符分隔每个元素。 </p> </td> 
+   <td colname="col2"> <p>格式: <code> &lt;DP_UUID&gt;&lt;TAB&gt;&lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>Output（输出）: <code> 123456 UUID1 UUID2 UUID3 </code> </p> <p>在输出中，非打印制表符用于分隔每个元素。 </p> </td> 
   </tr>
   <tr>
    <td colname="col1"> <p> <code> TRAIT_LIST </code> </p> </td> 
@@ -148,12 +147,12 @@ ht-degree: 14%
 
 ### `DPUUID` 示例
 
-为了帮助您了解`DPUUID`宏如何输出数据，假定我们有2个`DPID`s映射到`DPUUID`s，如下所示：
+为了帮助您了解`DPUUID`宏如何输出数据，我们假定有2个`DPID`映射到`DPUUID`，如下所示：
 
-* DPID `1111`映射到DPUUID `AAAA`(timestamp = 1)和`BBBB`(timestamp = 2)。
+* DPID `1111`映射到DPUUID `AAAA`（时间戳= 1）和`BBBB`（时间戳= 2）。
 * DPID `2222`映射到DPUUID `CCCC`。
 
-在这些情况下，下表枚举一些可能的格式字符串及其输出。
+根据这些条件，下表枚举了一些可能的格式字符串及其输出。
 
 <table id="table_6A6D94F994C1475BB09126BA0B815B1F"> 
  <thead> 
@@ -170,14 +169,14 @@ ht-degree: 14%
    <td colname="col3"> <p> <code> [["1111","AAAA"],["1111","BBBB"]] </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>为所有DPID返回最大1个映射 </p> </td> 
+   <td colname="col1"> <p>为所有DPID返回最多1个映射 </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=1111,2222|maxMappings=1|format=json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>对于DPID <code> 1111 </code>，宏仅映射到DPUUID <code> BBBB </code>，因为该ID的时间戳较大。 </p> </td> 
+   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>对于DPID <code> 1111 </code>，宏仅因为该ID的时间戳较大而映射到DPUUID <code> BBBB </code>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>为单个DPID返回最多2个映射 </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=2222|maxMappings=2|format=json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>即使<code> maxMappings=2 </code>，此宏也只返回1个DPID到DPUUID映射，因为指定的DPID只有一个DPUUID。 </p> </td> 
+   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>即使<code> maxMappings=2 </code>，此宏也只会返回1个DPID到DPUUID的映射，因为指定的DPID只有一个DPUUID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
