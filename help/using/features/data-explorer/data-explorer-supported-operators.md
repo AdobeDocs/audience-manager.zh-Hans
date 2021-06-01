@@ -5,14 +5,13 @@ seo-title: 支持的逻辑运算符
 title: 支持的逻辑运算符
 uuid: 645fcb6f-50ac-49bc-8df9-c699c749cf8f
 feature: Data Explorer
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 5e405390-1c19-4e43-b3f9-598e8aa6bd99
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 9%
+source-wordcount: '166'
+ht-degree: 10%
 
 ---
-
 
 # 支持的逻辑运算符 {#supported-logical-operators}
 
@@ -29,17 +28,17 @@ ht-degree: 9%
 | **==** | 等于 |
 | **>** | 大于 |
 | **&lt;** | 小于 |
-| **=>** | 大于／等于 |
-| **&lt;=** | 小于或等于 |
+| **=>** | 大于/等于 |
+| **&lt;=** | 小于/等于 |
 
 ### 命名运算符
 
-| 运算符 | 计算结果为[!DNL True] |
+| 运算符 | 计算结果为[!DNL True]时间 |
 |---|---|
 | **[!UICONTROL Contains]** | 键值对&#x200B;*中的值包含由此运算符指定的*&#x200B;字符。 |
-| **[!UICONTROL Startswith]** | 键——值对&#x200B;*中具有由此运算符指定的*&#x200B;字符的开始的值。 |
+| **[!UICONTROL Startswith]** | 键值对&#x200B;*中的值以*&#x200B;字符开头，这些字符由此运算符指定。 |
 | **[!UICONTROL Endswith]** | 键值对&#x200B;*中的值以*&#x200B;此运算符指定的字符结尾。 |
 
-## 特征回填和估计{#supported-operators-backfilling}支持的运算符
+## 支持的特征回填和估计运算符{#supported-operators-backfilling}
 
-您可以回填包含表达式的特征，这些特征包含[!UICONTROL Signal Search]支持的任何运算符。 除了这些运算符外，特征回填和估计还支持[!UICONTROL AND]、[!UICONTROL OR]和[!UICONTROL AND NOT]逻辑运算符，它们用于组合回填特征表达式中的键值对。
+您可以回填特征，该特征包含包含[!UICONTROL Signal Search]支持的任意运算符的表达式。 除了这些运算符之外，特征回填和估计还支持[!UICONTROL AND]、[!UICONTROL OR]和[!UICONTROL AND NOT]逻辑运算符，用于组合回填特征表达式中的键值对。
