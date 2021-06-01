@@ -4,9 +4,8 @@ seo-description: 说明为什么特征和区段可能不会显示在重叠报表
 seo-title: 为什么我的特征或区段没有显示在重叠报表页面中？
 solution: Audience Manager
 title: 为什么我的特征或区段没有显示在重叠报表页面中？
-feature: Support
+feature: 支持
 exl-id: 8341ee38-fc46-4a4b-9c9e-4ce2edb9a2fb
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '166'
