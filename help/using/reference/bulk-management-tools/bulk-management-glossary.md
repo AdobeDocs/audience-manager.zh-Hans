@@ -7,7 +7,6 @@ title: 批量管理工具术语表
 uuid: 4658a6bc-9515-4d31-9715-0084760b0cea
 feature: BAAAM
 exl-id: 036d16c7-1546-4539-a318-455b98e10026
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '347'
@@ -27,7 +26,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->[在UI中](../../features/administration/administration-overview.md) 分配的RBAC组 [!DNL Audience Manager] 权限在中得以执行 [!UICONTROL Bulk Management Tools]。
+>[在UI中](../../features/administration/administration-overview.md) 分配的RBAC组 [!DNL Audience Manager] 权限将在中得 [!UICONTROL Bulk Management Tools]到。
 
 <table id="table_2C2BC2FB3EFC443C9A5AE18EFC6FABFD"> 
  <thead> 
@@ -55,7 +54,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> destinationMappingId</span> </p> </td> 
-   <td colname="col2"> <p>将区段映射到目标时分配给区段的特殊ID。 </p> </td> 
+   <td colname="col2"> <p>在将区段映射到目标时，分配给该区段的特殊ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> folderId</span> </p> </td> 
@@ -75,7 +74,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceKey</span> </p> </td> 
-   <td colname="col2"> <p>信号是根据用户活动传递到<span class="keyword">Audience Manager</span>的数据位。 这些值将作为<a href="../../reference/key-value-pairs-explained.md">键值对</a>传输。 源键是不变的常数。 它有助于对可能更改的源值进行分类。 请参阅<a href="../../features/derived-signals.md">派生信号</a>。 </p> </td> 
+   <td colname="col2"> <p>信号是根据用户活动传递到<span class="keyword">Audience Manager</span>的数据位。 这些键值对将作为<a href="../../reference/key-value-pairs-explained.md">键值对</a>传输。 源键是一个不变的常量。 它有助于对可能更改的源值进行分类。 请参阅<a href="../../features/derived-signals.md">派生信号</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceValue</span> </p> </td> 
@@ -83,15 +82,15 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> startDate</span> </p> </td> 
-   <td colname="col2"> <p>指示何时可将开始发送到目标。 使用<i>yyyy-mm-dd</i>格式。 </p> </td> 
+   <td colname="col2"> <p>指示区段何时可开始发送到目标。 使用<i>yyyy-mm-dd</i>格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> targetKey</span> </p> </td> 
-   <td colname="col2">在派生信号中使用的键。 请参阅<a href="../../features/derived-signals.md">派生信号</a>。 </td> 
+   <td colname="col2">派生信号中使用的键。 请参阅<a href="../../features/derived-signals.md">派生信号</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> targetValue</span> </p> </td> 
-   <td colname="col2"> <p>用派生信号键传入的值。 请参阅<a href="../../features/derived-signals.md">派生信号</a>。 </p> </td> 
+   <td colname="col2"> <p>与派生的信号键一起传入的值。 请参阅<a href="../../features/derived-signals.md">派生信号</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitAlias</span> </p> </td> 
@@ -99,7 +98,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitRule / segmentRule</span> </p> </td> 
-   <td colname="col2"> <p>用于收集数据的实际特征或区段规则。 批量请求返回在<span class="keyword">Audience Manager</span>中使用<a href="../../features/traits/about-trait-builder.md">特征规则生成器</a>或<a href="../../features/segments/segment-builder.md">区段规则生成器</a>创建的规则。 在更新区段或特征时，您还可以使用这些工具构建规则并批量应用它们。 </p> <p>另请参阅<a href="../../reference/bulk-management-tools/bulk-rules.md">创建或更新特征规则和区段规则</a>。 </p> </td> 
+   <td colname="col2"> <p>用于收集数据的实际特征或区段规则。 批量请求会返回在<span class="keyword">Audience Manager</span>中使用<a href="../../features/traits/about-trait-builder.md">特征规则生成器</a>或<a href="../../features/segments/segment-builder.md">区段规则生成器</a>创建的规则。 您还可以使用这些工具来构建规则，并在更新区段或特征时批量应用它们。 </p> <p>另请参阅<a href="../../reference/bulk-management-tools/bulk-rules.md">创建或更新特征规则和区段规则</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitType</span> </p> </td> 
@@ -112,11 +111,11 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> url</span> </p> </td> 
-   <td colname="col2"> <p>当用户有资格访问段时由DIL触发的像素。 </p> </td> 
+   <td colname="col2"> <p>用户符合区段条件时由DIL触发的像素。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> valueAlias</span> </p> </td> 
-   <td colname="col2"> <p>传递到Cookie目标的<a href="../../reference/key-value-pairs-explained.md">键值对</a>中的键。 </p> </td> 
+   <td colname="col2"> <p><a href="../../reference/key-value-pairs-explained.md">键值对</a>中传递到Cookie目标的键。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
