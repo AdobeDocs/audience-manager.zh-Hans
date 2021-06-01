@@ -1,13 +1,12 @@
 ---
-description: 作为一种选项，在将数据文件发送到Audience Manager时，可以使用PGP加密对它们进行加密。
-seo-description: 作为一种选项，在将数据文件发送到Audience Manager时，可以使用PGP加密对它们进行加密。
+description: 作为一个选项，在将数据文件发送到Audience Manager时，可以使用PGP加密来加密数据文件。
+seo-description: 作为一个选项，在将数据文件发送到Audience Manager时，可以使用PGP加密来加密数据文件。
 seo-title: 入站数据类型的文件 PGP 加密
 solution: Audience Manager
 title: 入站数据类型的文件 PGP 加密
 uuid: 89caace1-0259-48fc-865b-d525ec7822f7
-feature: Inbound Data Transfers
+feature: 入站数据传输
 exl-id: 5f97a326-4840-4350-bbe8-bc8ce32b0a2e
-translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
 source-wordcount: '192'
@@ -17,22 +16,22 @@ ht-degree: 12%
 
 # 入站数据类型的文件 PGP 加密{#file-pgp-encryption-for-inbound-data-types}
 
-在将数据文件发送到Audience Manager时，可以使用[!DNL PGP]加密加密数据文件。
+在将数据文件发送到Audience Manager时，可以使用[!DNL PGP]加密来加密它们。
 
 <!-- c_encryption.xml -->
 
 >[!IMPORTANT]
 >
->[!DNL PGP] 加密包括文件压缩。发送[!DNL PGP]加密入站文件时，请确保不使用gzip(`.gz`)压缩[](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)。
+>[!DNL PGP] 加密包括文件压缩。发送[!DNL PGP]加密的入站文件时，请确保不要[使用gzip(`.gz`)压缩](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)这些文件。
 >
->[!DNL PGP] 加密的入站文件，在 [](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) Audience Manager中也压缩无效。
+>[!DNL PGP] 加密的入站文件在Audience Manager [](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) 中也压缩无效。
 
-请按照以下步骤加密入站数据文件。
+请按照以下所述步骤加密入站数据文件。
 
 1. 下载[Audience Manager公钥](./assets/adobe_pgp.pub)。
-2. 将公钥导入受信任的商店。
+2. 将公共密钥导入受信任的存储。
 
-   例如，如果您使用[!DNL GPG]，该命令可能类似于：
+   例如，如果使用[!DNL GPG]，则命令可能类似于以下内容：
 
    `gpg --import adobe_pgp.pub`
 
@@ -40,7 +39,7 @@ ht-degree: 12%
 
    `gpg --list-keys`
 
-   您应当看到一条类似以下内容的消息：
+   您应会看到与以下内容类似的消息：
 
    ```
    pub   4096R/8496CE32 2013-11-01
