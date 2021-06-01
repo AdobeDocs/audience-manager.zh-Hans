@@ -1,20 +1,19 @@
 ---
 description: 有关将离线数据纳入 Audience Manager 的常见问题解答。
-keywords: ftp or s3;s3 or ftp
+keywords: ftp或s3;s3或ftp
 seo-description: 有关将离线数据纳入 Audience Manager 的常见问题解答。
 seo-title: 入站客户数据摄取常见问题解答
 solution: Audience Manager
 title: 入站客户数据摄取常见问题解答
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
-feature: Onboarding Offline Data
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 载入离线数据
+exl-id: 48eef5f1-0655-4dac-9ab4-74b11c705c13
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1364'
 ht-degree: 91%
 
 ---
-
 
 # 入站客户数据摄取常见问题解答{#inbound-customer-data-ingestion-faq}
 
@@ -59,10 +58,10 @@ ht-degree: 91%
 
 **我能否先上传入站数据文件（[!DNL .sync] 或 [!DNL .overwrite] 文件），然后再将 [!DNL Audience Manager] 代码部署到生产环境中？**
 
-能。只要您使用[!UICONTROL cross-device data source]存储您上传的CRM数据，Audience Manager始终会存储该数据。 事实上，在2019年10月Audience Manager启动的[!UICONTROL Profile Merge Rules]增强功能允许仅脱机使用情形后，您无需将Audience Manager代码部署到生产环境即可上传数据并对其执行操作。 请参阅：
+能。只要您使用[!UICONTROL cross-device data source]存储您上传的CRM数据，Audience Manager始终会存储该数据。 事实上，继2019年10月启动的[!UICONTROL Profile Merge Rules]增强功能（允许仅离线用例）之后，您便可以上传数据并对其执行操作，而无需将Audience Manager代码部署到生产环境中。 请参阅：
 
 * [配置文件合并规则增强功能概述](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* [!UICONTROL People-based Destinations] -基 [于仅线下数据的个性化](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
+* [!UICONTROL People-based Destinations]  — 基 [于仅离线数据进行个性化](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
 
 <br> 
 
@@ -188,7 +187,7 @@ FTP 文件在处理后即会被删除。[!DNL S3] 文件将在 30 天后被删�
 
  
 
-**什么是 [!DNL Data Provider ID (DPID)] ，如何获得？**
+**什么是 [!DNL Data Provider ID (DPID)] ，如何获取它？**
 
 Adobe 顾问将为您的特定数据源分配一个三位数或四位数的 [DPID（数据提供商 ID）](../reference/ids-in-aam.md)。此 ID 是唯一的，不会更改。
 
@@ -227,7 +226,7 @@ Adobe 顾问将为您的特定数据源分配一个三位数或四位数的 [DPI
 
 >[!WARNING]
 >
->我们正在逐步停止对 FTP 配置的支持。虽然现有FTP集成仍支持入站数据文件摄取，但我们强烈建议使用[!DNL Amazon S3]载入离线数据以进行新集成。 有关详细信息，请参阅[入站数据文件的 Amazon S3 名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
+>我们正在逐步停止对 FTP 配置的支持。尽管现有FTP集成仍支持入站数据文件摄取，但我们强烈建议使用[!DNL Amazon S3]载入离线数据，以便进行新集成。 有关详细信息，请参阅[入站数据文件的 Amazon S3 名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
 
  
 
