@@ -1,13 +1,12 @@
 ---
-description: 视图指定目标和时间段的出站批作业历史记录信息。
-seo-description: 视图指定目标和时间段的出站批作业历史记录信息。
+description: 查看指定目标和时间段的出站批处理作业历史记录信息。
+seo-description: 查看指定目标和时间段的出站批处理作业历史记录信息。
 seo-title: 出站文件历史记录
 solution: Audience Manager
 title: 出站文件历史记录
 uuid: 3621a59d-2bb5-4828-86f6-4c9bfa580764
-feature: Inbound and Outbound Reports
+feature: 入站和出站报表
 exl-id: 8072c44f-bc9a-4b40-99d9-8cb87bb58d98
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '172'
@@ -17,7 +16,7 @@ ht-degree: 7%
 
 # 出站文件历史记录 {#outbound-file-history}
 
-视图指定目标和时间段的出站批作业历史记录信息。
+查看指定目标和时间段的出站批处理作业历史记录信息。
 
 <!-- 
 
@@ -46,7 +45,7 @@ t_reports_outbound_history.xml
  <tbody> 
   <tr> 
    <td colname="col1"> 数据同步文件名 </td> 
-   <td colname="col2"> <p>为此目标生成的<span class="keyword">Adobe</span>的所有出站文件的列表，已一起处理。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">Adobe</span>为此目标生成的所有出站文件的列表，这些文件已一起处理。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 成功 </td> 
@@ -57,7 +56,7 @@ t_reports_outbound_history.xml
    <td colname="col2"> <p>无法发送到目标的记录数。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 已接收记录 </td> 
+   <td colname="col1"> 收到的记录 </td> 
    <td colname="col2"> <p>文件中生成并尝试发送到目标的记录<span class="keyword">Adobe</span>的总数。 在大多数情况下，这应该是成功文件和失败文件的总数。 </p> </td> 
   </tr> 
  </tbody> 
