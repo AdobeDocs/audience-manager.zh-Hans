@@ -7,7 +7,6 @@ title: 批量请求
 uuid: 0192d26a-4cea-4e12-9fea-388b92b382f1
 feature: BAAAM
 exl-id: a0597bf4-79c8-404d-ba3b-a92c6b5c9c06
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '250'
@@ -27,18 +26,18 @@ t_bulk_requests.xml
 
 >[!NOTE]
 >
->[在UI中](../../features/administration/administration-overview.md) 分配的RBAC组 [!DNL Audience Manager] 权限在中得以执行 [!UICONTROL Bulk Management Tools]。
+>[在UI中](../../features/administration/administration-overview.md) 分配的RBAC组 [!DNL Audience Manager] 权限将在中得 [!UICONTROL Bulk Management Tools]到。
 
-[!UICONTROL Request]工作表没有其自己的列标题集，您无需将ID复制到任何列。 而是会根据您在工具栏中单击的操作按钮返回数据。 此外，可选的报告功能会返回像素触发的频率计数和多个固定时间间隔的唯一用户计数。
+[!UICONTROL Request]工作表没有其自己的列标题集，您无需将ID复制到任何列。 而是会根据您在工具栏中单击的操作按钮返回数据。 此外，可选报表功能会返回像素触发的频率计数以及多个固定时间间隔的独特用户计数。
 
-要进行批量请求，请打开[!UICONTROL Bulk Management Tools]工作表并：
+要发出批量请求，请打开[!UICONTROL Bulk Management Tools]工作表，然后：
 
 1. 单击&#x200B;**[!UICONTROL Request]**&#x200B;选项卡。
 2. 在工作表顶部的工具栏中，单击与要处理的数据对应的请求按钮。 您可以请求：
 
    * 算法模型
    * 数据源
-   * 派生信号
+   * 派生的信号
    * 目标映射
    * 算法、基于规则和已载入的特征
    * 区段
