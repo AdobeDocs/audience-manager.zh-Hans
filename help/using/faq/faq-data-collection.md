@@ -8,7 +8,6 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP;SFTP地址；STFP IP地址；FTP地址
 feature: 管理
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-translation-type: tm+mt
 source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
 source-wordcount: '1159'
@@ -32,13 +31,13 @@ ht-degree: 83%
 
 <br> 
 
-**能否向我提供一列表IP地址？我可以将这些地址添加到dpm.demdex.net的允许列表中？**
+**能否为我提供可添加到dpm.demdex.net允许列表的IP地址列表？**
 
 抱歉，我们无法为您提供这样的列表。这些 IP 是通过 [!DNL Amazon Web Services] 按地域动态分配的。因此，[!DNL Audience Manager] 无法控制可分配给此地址的 IP 范围。
 
  
 
-**您能否为我提供可添加到入站和出站SFTP服务器允许列表的IP地址？**
+**能否为我提供一个IP地址，以便我将其添加到入站SFTP服务器和出站SFTP服务器的允许列表中？**
 
 可以，请参见下文。
 
@@ -49,7 +48,7 @@ ht-degree: 83%
 
  
 
-以下SFTP服务器已弃用。 不会使用这些服务器设置任何新帐户。
+已弃用以下SFTP服务器。 不会使用这些服务器配置新帐户。
 
 | 服务器 | IP 地址 |
 ---------|----------|
@@ -58,15 +57,15 @@ ht-degree: 83%
 
  
 
-**如何配置Audience Manager实例以使用新的SFTP服务器？**
+**如何配置我的Audience Manager实例以使用新的SFTP服务器？**
 
-联系您的[!DNL Audience Manager]顾问或客户关怀团队，他们将配置您的新SFTP帐户。
+请联系您的[!DNL Audience Manager]顾问或客户关怀团队，他们将配置您的新SFTP帐户。
 
  
 
 **新SFTP服务器支持哪些身份验证方法？**
 
-新的SFTP服务器（`ftp-in-gtw`和`ftp-out-gtw`）支持[!DNL OpenSSH Key-Based Authentication]。 我们可以为您生成[!DNL SSH]密钥，您也可以向我们提供您自己的公钥。
+新的SFTP服务器（`ftp-in-gtw`和`ftp-out-gtw`）支持[!DNL OpenSSH Key-Based Authentication]。 我们可以为您生成[!DNL SSH]密钥，也可以为我们提供您自己的公钥。
 
  
 
@@ -84,7 +83,7 @@ ht-degree: 83%
 
 * 将 [!UICONTROL DIL] 直接放置到 `s_code` 中。
 
-* 服务[!UICONTROL DIL]和`s_code`至[!DNL Adobe Experience Platform Launch]。
+* 提供[!UICONTROL DIL]和`s_code`到[!DNL Adobe Experience Platform Launch]。
 
 请参阅[数据集成库 (DIL) API](../dil/dil-overview.md)。
 
@@ -153,7 +152,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **[!DNL Google Ad Manager]我希望在一个网站上收集数据，并通过 在另一个网站上定位用户。如果我不想从其他资产中收集数据，是否需要在该位置部署代码？**
 
-不需要。如果不需要在另一个网站上收集数据，则无需在该网站上部署 DIL。只要您通过[!DNL Google Ad Manager]访问第二个站点上的库存，就可以通过[!DNL Google Ad Manager]使用从初始站点和目标中收集的数据。
+不需要。如果不需要在另一个网站上收集数据，则无需在该网站上部署 DIL。只要您有权通过[!DNL Google Ad Manager]访问第二个站点上的清单，就可以使用从初始站点收集的数据并通过[!DNL Google Ad Manager]进行定位。
 
 <br> 
 
@@ -163,9 +162,9 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**如何设 [!DNL Audience Manager] 置Cookies并将变量传递给 [!DNL Google Ad Manager]?**
+**如何设 [!DNL Audience Manager] 置Cookie并将变量传递到 [!DNL Google Ad Manager]?**
 
-[!DNL Audience Manager] 设置2个Cookie:一个向广告标签发 [!DNL Google Ad Manager] 送区段变量，另一个设置我们唯一的用户ID(UUID)，也由读取 [!DNL Google Ad Manager]。将 UUID 添加到广告标记意味着我们可以执行用户级报表和受众发现操作。
+[!DNL Audience Manager] 设置2个Cookie:其中一个会向广告标 [!DNL Google Ad Manager] 记发送区段变量，而另一个则会设置我们的独特用户ID(UUID)，该ID也会被读取 [!DNL Google Ad Manager]。将 UUID 添加到广告标记意味着我们可以执行用户级报表和受众发现操作。
 
 <br> 
 
