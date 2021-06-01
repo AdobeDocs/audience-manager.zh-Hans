@@ -1,23 +1,22 @@
 ---
-description: 让您以编程方式处理Data Integration Library(DIL)的方法。
-seo-description: 让您以编程方式处理Data Integration Library(DIL)的方法。
+description: 允许您以编程方式使用Data Integration Library(DIL)的方法。
+seo-description: 允许您以编程方式使用Data Integration Library(DIL)的方法。
 seo-title: 数据集成库 API 方法
 solution: Audience Manager
 title: 数据集成库 API 方法
 uuid: 507e7afd-3ae7-44de-98b0-589d699c453b
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: d2f3e4e8-65be-4fec-90d7-5991514b8efc
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 14%
+source-wordcount: '188'
+ht-degree: 15%
 
 ---
 
-
 # 数据集成库 API 方法 {#data-integration-library-api-methods}
 
-让您以编程方式使用[!UICONTROL Data Integration Library]([!UICONTROL DIL])的方法。
+允许您以编程方式使用[!UICONTROL Data Integration Library]([!UICONTROL DIL])的方法。
 
 >[!IMPORTANT]
 >
@@ -27,7 +26,7 @@ ht-degree: 14%
 
 ## 返回DIL{#return-version-dil}的版本
 
-一种`GET`方法，它返回从最旧到最新排序的版本列表。
+`GET`方法，可返回从最早到最新的版本列表。
 
 <!-- r_api_return_versions_dil.xml -->
 
@@ -37,15 +36,15 @@ ht-degree: 14%
 
 ### 响应
 
-成功的请求返回响应代码`["4.0", "4.1"]`，如下所示。
+成功的请求会返回响应代码`["4.0", "4.1"]`，如下所示。
 
 ```
 ["4.0", "4.1"]
 ```
 
-## 返回版本{#return-json-schema-version}的JSON模式
+## 返回版本{#return-json-schema-version}的JSON架构
 
-`GET`方法，它为[!UICONTROL DIL]版本返回[!DNL JSON]模式。 支持使用版本别名[!UICONTROL LATEST]获取最新版本的[!UICONTROL DIL]。
+`GET`方法，用于返回[!UICONTROL DIL]版本的[!DNL JSON]架构。 支持对版本使用别名[!UICONTROL LATEST]来获取[!UICONTROL DIL]的最新版本。
 
 <!-- r_api_return_json_schema_for_version.xml -->
 
@@ -381,7 +380,7 @@ ht-degree: 14%
 
 ## 生成DIL{#generate-dil}
 
-一种`GET`方法，它根据使用指定版本的[!UICONTROL DIL]传入的请求体生成[!UICONTROL DIL]。 如果别名`LATEST`用于URL中的版本，则会生成最新版本的[!UICONTROL DIL]。
+一种`GET`方法，根据使用指定版本的[!UICONTROL DIL]传入的请求正文生成[!UICONTROL DIL]。 如果别名`LATEST`用于URL中的版本，则会生成最新版本的[!UICONTROL DIL]。
 
 <!-- r_api_generate_dil.xml -->
 
@@ -465,4 +464,4 @@ ht-degree: 14%
 
 ### 响应
 
-成功的更新返回响应代码`201 created`和[!UICONTROL DIL] [!DNL JavaScript]代码。
+成功的更新会返回响应代码`201 created`以及[!UICONTROL DIL] [!DNL JavaScript]代码。
