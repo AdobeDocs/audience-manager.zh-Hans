@@ -1,13 +1,12 @@
 ---
-description: 传输层安全(TLS)是一种加密协议，用于在两个系统之间建立安全通信渠道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，使用TLS 1.0、1.1和1.2的TLS协议有三个版本。
-seo-description: 传输层安全(TLS)是一种加密协议，用于在两个系统之间建立安全通信渠道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，使用TLS 1.0、1.1和1.2的TLS协议有三个版本。
+description: 传输层安全性(TLS)是一种加密协议，用于在两个系统之间建立安全通信信道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，使用的TLS 1.0、1.1和1.2有三个版本的TLS协议。
+seo-description: 传输层安全性(TLS)是一种加密协议，用于在两个系统之间建立安全通信信道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，使用的TLS 1.0、1.1和1.2有三个版本的TLS协议。
 seo-title: TLS 1.0 和 1.1 已弃用
 solution: Audience Manager
 title: TLS 1.0 和 1.1 已弃用
 uuid: 6a820e63-dd49-4689-9596-940aabba18ec
-feature: Reference
+feature: 参考
 exl-id: 857105c1-726a-4d79-bd1c-accb368aef29
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '277'
@@ -17,13 +16,13 @@ ht-degree: 3%
 
 # TLS 1.0 和 1.1 已弃用{#tls-deprecation}
 
-传输层安全(TLS)是一种加密协议，用于在两个系统之间建立安全通信渠道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，TLS协议使用了三个版本：TLS 1.0、1.1和1.2。
+传输层安全性(TLS)是一种加密协议，用于在两个系统之间建立安全通信信道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，使用了三个版本的TLS协议：TLS 1.0、1.1和1.2。
 
-2019年3月，[!DNL Adobe]终止了对[!DNL TLS 1.0]协议的支持。 Adobe Audience Manager功能对于使用仅支持[!DNL TLS 1.0]的浏览器的最终用户无效。
+2019年3月，[!DNL Adobe]停止了对[!DNL TLS 1.0]协议的支持。 如果最终用户使用的浏览器仅支持[!DNL TLS 1.0]，则Adobe Audience Manager功能将不起作用。
 
-2020年3月，[!DNL Adobe]将结束对[!DNL TLS 1.1]协议的支持。 Adobe Audience Manager功能将停止为使用仅支持[!DNL TLS 1.1]的浏览器的最终用户使用。
+2020年3月， [!DNL Adobe]将终止对[!DNL TLS 1.1]协议的支持。 对于使用仅支持[!DNL TLS 1.1]的浏览器的最终用户，Adobe Audience Manager功能将停止工作。
 
-Adobe强烈建议使用[!DNL TLS 1.2]，即在编写时使用协议的最新版本。 所有现代浏览器都使用[!DNL TLS 1.2]。 我们已为您收集了一列表浏览器、版本及其[!DNL TLS]支持。 有关TLS浏览器支持的详细信息，请访问[传输层安全维基百科链接](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers)。
+Adobe强烈建议使用[!DNL TLS 1.2]，即在编写协议时使用最新版本。 所有现代浏览器都使用[!DNL TLS 1.2]。 我们为您收集了支持的浏览器、版本及其[!DNL TLS]列表。 有关TLS浏览器支持的更多信息，请访问[传输层安全Wikipedia链接](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers)。
 
 <!--
 
