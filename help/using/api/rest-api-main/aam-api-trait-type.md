@@ -1,31 +1,30 @@
 ---
-description: 可选方法，允许您根据函数或您自己的内部类别流程为用户定义的类型或报告分配特征。
-seo-description: 可选方法，允许您根据函数或您自己的内部类别流程为用户定义的类型或报告分配特征。
+description: 可选方法，用于为用户定义的类型或类别分配特征（通常根据函数或您自己的内部报告流程）。
+seo-description: 可选方法，用于为用户定义的类型或类别分配特征（通常根据函数或您自己的内部报告流程）。
 seo-title: 特征类型方法
 solution: Audience Manager
 title: 特征类型方法
 uuid: 082931d5-457b-4622-817b-86303f38c26a
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: d450f9ce-2abb-4a8b-b8db-2962b84fb341
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 9%
+source-wordcount: '180'
+ht-degree: 10%
 
 ---
 
-
 # 特征类型方法 {#trait-type-methods}
 
-可选方法，允许您根据函数或您自己的内部类别流程为用户定义的类型或报告分配特征。
+可选方法，用于为用户定义的类型或类别分配特征（通常根据函数或您自己的内部报告流程）。
 
 <!-- c_rest_api_trait_types_intro.xml -->
 
 >[!NOTE]
 >
->特征类型方法不将特征分配给[常用分类](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)使用的类别。 将这些视为与常用分类不同的标签。
+>特征类型方法不会将特征分配给[常用分类](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)使用的类别。 将它们视为与常用分类不同的标签。
 
-对于可视引用，[!UICONTROL Trait Types]是位于&#x200B;**[!UICONTROL Traits > Create new trait > Basic Information]**&#x200B;下[!DNL UI]的下拉控件。
+对于可视化引用，[!UICONTROL Trait Types]是位于&#x200B;**[!UICONTROL Traits > Create new trait > Basic Information]**&#x200B;下[!DNL UI]中的下拉控件。
 
 ## 创建新特征类型{#create-trait-type}
 
@@ -60,9 +59,9 @@ ht-degree: 9%
 }
 ```
 
-## 特征类型{#return-props}的返回属性
+## 返回特征类型{#return-props}的属性
 
-一种`GET`方法，它返回有关指定特征类型的详细信息。
+`GET`方法，可返回有关指定特征类型的详细信息。
 
 <!-- r_rest_api_get_trait_type.xml -->
 
@@ -87,7 +86,7 @@ ht-degree: 9%
 
 ## 返回所有特征类型{#return-props-all}的属性
 
-`GET`方法，返回有关数组中所有特征类型的详细信息。
+`GET`方法，可返回有关数组中所有特征类型的详细信息。
 
 <!-- r_rest_api_get_trait_types.xml -->
 
