@@ -1,29 +1,28 @@
 ---
-description: 在Audience Manager，我们是工程师，开发者，和你一样的忍者。 与您一样，我们希望使用可靠、准确的API文档。 因此，我们将在Swagger中重写API内容并将其移至新位置。 这些更改旨在帮助您改善使用Audience ManagerAPI代码的体验。
-seo-description: 在Audience Manager，我们是工程师，开发者，和你一样的忍者。 与您一样，我们希望使用可靠、准确的API文档。 因此，我们将在Swagger中重写API内容并将其移至新位置。 这些更改旨在帮助您改善使用Audience ManagerAPI代码的体验。
+description: 在Audience Manager，我们是工程师，开发者，和你一样的忍者。 与您一样，我们希望使用可靠、准确的API文档。 因此，我们将在Swagger中重写API内容，并将其移动到新位置。 这些更改旨在帮助改进您的Audience ManagerAPI代码体验。
+seo-description: 在Audience Manager，我们是工程师，开发者，和你一样的忍者。 与您一样，我们希望使用可靠、准确的API文档。 因此，我们将在Swagger中重写API内容，并将其移动到新位置。 这些更改旨在帮助改进您的Audience ManagerAPI代码体验。
 seo-title: Audience Manager API 代码迁移
 solution: Audience Manager
 title: Audience Manager API 代码迁移
 uuid: 93cc28c4-4b91-4c79-93d5-ece9bb4cc9d5
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 081be8a7-5029-45b1-8fb1-0531d5090fe0
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '447'
 ht-degree: 6%
 
 ---
 
-
 # Audience Manager API 代码迁移 {#audience-manager-api-code-migration}
 
-在Audience Manager，我们是工程师，开发者，和你一样的忍者。 与您一样，我们希望使用可靠、准确的[!DNL API]文档。 因此，我们将[!DNL API]内容重写到[!DNL Swagger]中，并将其移至新位置。 这些更改旨在帮助您改善使用Audience Manager[!DNL API]代码的体验。
+在Audience Manager，我们是工程师，开发者，和你一样的忍者。 与您一样，我们希望使用可靠、准确的[!DNL API]文档。 因此，我们将在[!DNL Swagger]中重写我们的[!DNL API]内容，并将其移动到新位置。 这些更改旨在帮助您改善使用Audience Manager[!DNL API]代码的体验。
 
-## Movin&#39; On Up {#code-migration-details}
+## 上移{#code-migration-details}
 
 <!-- api-swagger-migration.xml -->
 
-[Adobe Audience ManagerAPI Docs](https://bank.demdex.com/portal/swagger/index.html)站点是我们修订的[!DNL API]内容的新主页。 我们将尝试重写并在每个版本中移动几组[!DNL API]方法。 这意味着您必须同时检查新位置和[REST API](../api/rest-api-main/rest-api-main.md)文档才能找到所有可用的方法。 最终，所有公共[!DNL API]s都将位于[!DNL Audience Manager] [!DNL API]文档站点上。 下表列表了已修订和迁移的[!DNL API]。
+[Adobe Audience Manager API文档](https://bank.demdex.com/portal/swagger/index.html)站点是我们修订的[!DNL API]内容的新主页。 我们将尝试在每个版本中重写并移动几组[!DNL API]方法。 这意味着您必须同时检查新位置和[REST API](../api/rest-api-main/rest-api-main.md)文档，才能找到所有可用的方法。 最终，所有公共的[!DNL API]s都将位于[!DNL Audience Manager] [!DNL API]文档站点上。 下表列出了已修订和迁移的[!DNL API]s。
 
 <!--
 
@@ -95,5 +94,5 @@ ht-degree: 6%
 | **[!UICONTROL Data Sources]** | [数据源 ](https://bank.demdex.com/portal/swagger/index.html#/Data_Source_API) |
 | **[!UICONTROL Folders]** | <ul><li>[区段文件夹](https://bank.demdex.com/portal/swagger/index.html#/Segment_Folder_API)</li><li>[特征文件夹](https://bank.demdex.com/portal/swagger/index.html#/Trait%20Folder%20API)</li></ul> |
 | **[!UICONTROL Reporting]** | [报表](https://bank.demdex.com/portal/swagger/index.html#/Reporting%20API) |
-| **[!UICONTROL Segments]** | <ul><li>[区段](https://bank.demdex.com/portal/swagger/index.html#/Segments%20API)</li><li>[细分测试组](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API)</li><li>[段测试组草稿API](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API/post_segment_test_groups_drafts)</li></ul> |
+| **[!UICONTROL Segments]** | <ul><li>[区段](https://bank.demdex.com/portal/swagger/index.html#/Segments%20API)</li><li>[区段测试组](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API)</li><li>[区段测试组草稿API](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API/post_segment_test_groups_drafts)</li></ul> |
 | **[!UICONTROL Traits]** | [特征](https://bank.demdex.com/portal/swagger/index.html#/Traits%20API) |
