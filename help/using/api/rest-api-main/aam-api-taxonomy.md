@@ -1,29 +1,28 @@
 ---
-description: 用于视图Audience Manager常用分类的方法。 此可选分类方案将特征组织到行业标准类别中。
-seo-description: 用于视图Audience Manager常用分类的方法。 此可选分类方案将特征组织到行业标准类别中。
+description: 用于查看Audience Manager常用分类的方法。 此可选分类方案将特征组织为行业标准类别。
+seo-description: 用于查看Audience Manager常用分类的方法。 此可选分类方案将特征组织为行业标准类别。
 seo-title: 分类 API 方法
 solution: Audience Manager
 title: 分类 API 方法
 uuid: 4ee29ba5-e9ba-4498-a6ee-7343227dd7ba
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 8bc6dcbb-7f5b-4a7b-998d-025eaf76c409
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 7%
+source-wordcount: '197'
+ht-degree: 8%
 
 ---
 
-
 # 分类 API 方法 {#taxonomic-api-methods}
 
-用于视图Audience Manager常用分类的方法。 此可选分类方案将特征组织到行业标准类别中。
+用于查看Audience Manager常用分类的方法。 此可选分类方案将特征组织为行业标准类别。
 
 <!-- c_rest_api_taxonomy.xml -->
 
 >[!NOTE]
 >
->不能使用这些方法创建新的分类类别或分类特征。 要对特征进行分类，请使用特征创建或更新方法指定相应的`categoryId`。
+>您无法使用这些方法创建新的分类类别或对特征进行分类。 要对特征进行分类，请使用特征创建或更新方法指定相应的`categoryId`。
 
 ## 返回特定分类{#return-specific-taxonomy}
 
@@ -37,7 +36,7 @@ ht-degree: 7%
 
 ### 响应
 
-成功的响应返回`200 OK`和指定ID的类别。 如果ID不存在，则不成功的请求将返回`404 No Content`。
+成功的响应会返回指定ID的`200 OK`和类别。 如果ID不存在，则失败的请求会返回`404 No Content`。
 
 ```
 {
@@ -52,7 +51,7 @@ ht-degree: 7%
 
 ## 返回所有分类类别{#return-all-taxonomy-categories}
 
-一种`GET`方法，它返回数组中顶级类别的列表。
+`GET`方法，返回数组中顶级类别的列表。
 
 <!-- r_rest_api_taxonomies.xml -->
 
@@ -62,7 +61,7 @@ ht-degree: 7%
 
 ### 响应
 
-短时间截断。
+为简短而截断。
 
 ```
 [
@@ -95,7 +94,7 @@ ht-degree: 7%
 
 ## 返回分类子类别{#return-taxonomy-sub-categories}
 
-`GET`方法，它为数组中指定的父类别返回子类别。
+`GET`方法，用于返回数组中指定父类别的子类别。
 
 <!-- r_rest_api_taxonomy_sub.xml -->
 
@@ -105,7 +104,7 @@ ht-degree: 7%
 
 ### 响应
 
-成功的响应返回`200 OK`和指定ID的类别。 如果ID不存在，则不成功的请求将返回`404 No Content`。 短时间截断。
+成功的响应会返回指定ID的`200 OK`和类别。 如果ID不存在，则失败的请求会返回`404 No Content`。 为简短而截断。
 
 ```
 [
