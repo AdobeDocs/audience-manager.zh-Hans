@@ -1,30 +1,29 @@
 ---
-description: 从受众接收Audience Manager数据。
+description: 从Audience Manager接收受众数据。
 seo-description: 从Adobe Audience Manager(AAM)接收受众数据。
-seo-title: 在Adobe Audience Manager(AAM)接收受众数据
+seo-title: 在Adobe Audience Manager中接收受众数据(AAM)
 title: 接收受众数据
-feature: Outbound Data Transfers
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 出站数据传输
+exl-id: 8b6ef84d-6b04-4a0e-9142-aa48b586c05e
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 17%
+source-wordcount: '120'
+ht-degree: 16%
 
 ---
 
-
 # 接收受众数据
 
-从受众接收Audience Manager数据。
+从Audience Manager接收受众数据。
 
 * [用于出站数据传输的 ID 同步](id-sync-outbound.md)
 
-   描述初始HTTP调用中使用的语法和参数，以在Audience Manager和第三方数据提供程序之间同步用户ID。 在尝试第一个ID同步之前，请与Adobe Audience Manager顾问联系。
+   介绍初始HTTP调用中用于在Audience Manager和第三方数据提供程序之间同步用户ID的语法和参数。 在尝试首次ID同步之前，请联系您的Adobe Audience Manager顾问。
 
 * [实时出站数据传输](real-time-outbound-transfers/real-time-outbound-transfers.md)
 
-   出站实时数据传输过程将用户数据作为一系列JSON对象返回，这些对象使用POST方法传入。
+   出站实时数据传输过程会将用户数据作为通过POST方法传入的一系列JSON对象返回。
 
 * [批量出站数据传输](batch-outbound-transfers/batch-outbound-overview.md)
 
-   Audience Manager根据这些规范向第三方内容提供商发送批量数据。
+   Audience Manager会根据这些规范向第三方内容提供商发送批量数据。
