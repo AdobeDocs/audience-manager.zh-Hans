@@ -3,11 +3,10 @@ description: 本文档介绍可在数据隐私请求中使用的 Audience Manage
 seo-description: 本文档介绍可在数据隐私请求中使用的 Audience Manager ID 的类型。
 seo-title: Audience Manager 标识符 (ID)
 solution: Audience Manager
-keywords: GDPR UI、GDPR API、CCPA、隐私、AAM ID
+keywords: GDPR UI， GDPR API， CCPA，隐私， AAM ID
 title: Audience Manager 标识符 (ID)
-feature: Data Governance & Privacy
+feature: 数据管理和隐私
 exl-id: 5f18ed0a-c875-4596-a4d1-f9a7fe871d1b
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '264'
