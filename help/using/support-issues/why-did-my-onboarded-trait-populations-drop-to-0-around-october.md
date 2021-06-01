@@ -4,9 +4,8 @@ seo-description: 2019 年 10 月 14 日左右，我注意到设备 ID 图的已�
 seo-title: 为什么我的已载入特征人口在 10 月 15 日左右降至 0？
 solution: Audience Manager
 title: 为什么我的已载入特征人口在 10 月 15 日左右降至 0？
-feature: Support
+feature: 支持
 exl-id: e93cee15-7d05-4f81-8f14-a3e03f214542
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '231'
