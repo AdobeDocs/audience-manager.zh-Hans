@@ -1,23 +1,22 @@
 ---
-description: 用于管理用户的其余API方法，包括创建、更新、列出、删除和返回用户对象。
-seo-description: 用于管理用户的其余API方法，包括创建、更新、列出、删除和返回用户对象。
+description: 用于管理用户的REST API方法，包括创建、更新、列出、删除和返回用户对象。
+seo-description: 用于管理用户的REST API方法，包括创建、更新、列出、删除和返回用户对象。
 seo-title: 用户管理 API 方法
 solution: Audience Manager
 title: 用户管理 API 方法
 uuid: 6e1f2c35-bb9d-4166-b7d4-d9c5518a61ad
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: c015c42c-63c7-4392-9fef-f48dc787a56f
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '367'
 ht-degree: 7%
 
 ---
 
-
 # 用户管理 API 方法 {#user-management-api-methods}
 
-保留[!DNL API]方法来管理用户，包括创建、更新、列出、删除和返回用户对象。
+Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删除和返回用户对象。
 
 <!-- c_rest_api_user_man_user.xml -->
 
@@ -31,7 +30,7 @@ ht-degree: 7%
 
 `POST /api/v1/users/`
 
-### 示例请求主体
+### 示例请求正文
 
 ```
 { 
@@ -66,9 +65,9 @@ ht-degree: 7%
 }
 ```
 
-如果`isAdmin`设置为true，则用户将创建为合作伙伴管理员。 此属性还让您了解用户是否为合作伙伴管理员。
+如果将`isAdmin`设置为true，则创建用户作为合作伙伴管理员。 此属性还可让您知道用户是否为合作伙伴管理员。
 
-如果用户名已使用，则返回`409 Conflict`。
+如果用户名已采用，则返回`409 Conflict`。
 
 ## 更新用户{#update-user}
 
@@ -80,7 +79,7 @@ ht-degree: 7%
 
 `PUT /api/v1/users/`*`<userId>`*
 
-### 示例请求主体
+### 示例请求正文
 
 ```
 { 
@@ -111,11 +110,11 @@ ht-degree: 7%
 }
 ```
 
-如果用户名已使用，则返回`409 Conflict`。
+如果用户名已采用，则返回`409 Conflict`。
 
-## 更新已登录用户{#update-logged-in-user}
+## 更新登录用户{#update-logged-in-user}
 
-用于更新当前登录用户的`PUT`方法。
+`PUT`方法，用于更新当前已登录的用户。
 
 <!-- r_rest_api_user_update_self.xml -->
 
@@ -127,7 +126,7 @@ ht-degree: 7%
 
 `PUT /self/update`
 
-### 示例请求主体
+### 示例请求正文
 
 ```
 {  
@@ -154,11 +153,11 @@ ht-degree: 7%
 }
 ```
 
-如果用户名已使用，则返回`409 Conflict`。
+如果用户名已采用，则返回`409 Conflict`。
 
 ## 更新登录用户密码{#update-logged-in-user-pw}
 
-用于更新当前登录用户的`PUT`方法。
+`PUT`方法，用于更新当前已登录的用户。
 
 <!-- r_rest_api_user_password.xml -->
 
@@ -170,17 +169,17 @@ ht-degree: 7%
 
 `POST /users/self/update-password`
 
-### 示例请求主体
+### 示例请求正文
 
 ```
 { "oldPassword" : "old password", "newPassword" : "new password" }
 ```
 
-如果成功，则返回`200 OK`。 如果任何一个密码出错，则返回`400 Bad Request`。
+如果成功，则返回`200 OK`。 如果两个密码都出错，则返回`400 Bad Request`。
 
 ## 重置登录用户密码{#reset-logged-in-user-pw}
 
-用于重置当前登录用户的`PUT`方法。 [!UICONTROL Audience Management] 向用户发送系统生成的口令。
+用于重置当前已登录用户的`PUT`方法。 [!UICONTROL Audience Management] 向用户发送系统生成的密码。
 
 <!-- r_rest_api_user_password_reset.xml -->
 
@@ -224,7 +223,7 @@ ht-degree: 7%
 
 ## 返回登录用户{#return-user-object-for-logged-in-user}的用户对象
 
-`Get`方法，用于返回当前登录用户的用户对象。
+`Get`方法，用于返回当前已登录用户的用户对象。
 
 <!-- r_rest_api_user_get_self.xml -->
 
@@ -254,9 +253,9 @@ ht-degree: 7%
 }
 ```
 
-## 列表用户{#list-users}
+## 列出用户{#list-users}
 
-用于列表用户的`GET`方法。
+用于列出用户的`GET`方法。
 
 <!-- r_rest_api_user_list.xml -->
 
@@ -268,7 +267,7 @@ ht-degree: 7%
 
 `GET /api/v1/users/?groupId=343&groupdId=12`
 
-此查询返回指定组中所有用户的列表。
+此查询会返回指定组中所有用户的列表。
 
 ### 响应
 
@@ -300,9 +299,9 @@ ht-degree: 7%
 
 如果成功，则返回`204 No Content`。 如果发生冲突，则返回`409 Conflict`。
 
-## 批量删除{#delete-users-bulk}用户
+## 批量{#delete-users-bulk}删除用户
 
-用于批量删除多个用户的`POST`方法。
+批量删除多个用户的`POST`方法。
 
 <!-- r_rest_api_user_delete_bulk.xml -->
 
@@ -310,7 +309,7 @@ ht-degree: 7%
 
 `POST /api/v1/users/bulk-delete`
 
-### 示例请求主体
+### 示例请求正文
 
 ```
 {[<user_id_1>, <user_id_2>, ...]}
