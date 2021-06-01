@@ -5,15 +5,14 @@ seo-title: isCoopSafe
 solution: Audience Manager
 title: isCoopSafe
 uuid: c5362a38-93c0-4edb-bdcb-106e43f33a92
-feature: DIL Implementation
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: DIL实施
+exl-id: 33dca495-6923-4966-9ec3-8b0fd2f17649
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 78%
+source-wordcount: '542'
+ht-degree: 77%
 
 ---
-
 
 # isCoopSafe{#iscoopsafe}
 
@@ -26,7 +25,7 @@ ht-degree: 78%
 * 使用[!UICONTROL DIL] v6.11或更高版本。
 * 参与 [Experience Cloud 设备协作](https://docs.adobe.com/content/help/zh-Hans/device-co-op/using/home.html)。潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
 
-* 请与[!DNL Adobe]顾问合作，在您的设允许列表备协作帐阻止列表户上设置或标志。 没有自助路径可启用这些标志。
+* 与您的[!DNL Adobe]顾问合作，在您的设允许列表备协作帐阻止列表户上设置或标记。 没有启用这些标志的自助路径。
 
 ## 用例 {#use-cases}
 
@@ -42,11 +41,11 @@ ht-degree: 78%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>经过身份验证的访客</b> </p> </td> 
-   <td colname="col2"> <p>将<code> isCoopSafe </code>添加到<span class="wintitle">DIL</span>代码，以控制设备合作社如何使用已验证的访客（具有或尚未接受使用期限协议）的数据来构建设备图。 </p> </td> 
+   <td colname="col2"> <p>将<code> isCoopSafe </code>添加到<span class="wintitle">DIL</span>代码中，以控制设备协作如何使用经过身份验证的访客（已接受或未接受使用条款协议）的数据来构建设备图。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>第三方网站上的 DIL</b> </p> </td> 
-   <td colname="col2"> <p>将<code> isCoopSafe </code>添加到<span class="wintitle">DIL</span>代码中，以便在以下站点上使用： </p> <p> 
+   <td colname="col2"> <p>将<code> isCoopSafe </code>添加到<span class="wintitle">DIL</span>代码中，以供在以下第三方网站上使用： </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
       <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">您无法确保经过身份验证的访客是否已接受使用条款协议。 </li> 
       <li id="li_26D0561BF32B4278B0A6B5082C17FED8">您需要控制设备协作如何使用该数据来构建设备图。 </li> 
@@ -67,7 +66,7 @@ ht-degree: 78%
 
 **代码示例**
 
-当DIL实例化时设置此值。
+在DIL实例化时设置此设置。
 
 ```js
 var dilInstance = DIL.create({ 
@@ -78,7 +77,7 @@ var dilInstance = DIL.create({
 
 ## 事件调用 POST 参数 {#post-parameters}
 
-根据您设置的标志（`true`或`false`）,[!UICONTROL DIL]将`isCoopSafe`转换为这些POST参数，并在事件调用中将它们发送到[!DNL Adobe]:
+根据您设置的标记（`true`或`false`），[!UICONTROL DIL]会将`isCoopSafe`转换为以下POST参数，并在事件调用中将它们发送到[!DNL Adobe]:
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
@@ -118,11 +117,11 @@ var dilInstance = DIL.create({
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance.api.setAsCoopSafe(); </code> </p> </td> 
-   <td colname="col2"> <p>在所有后续POST调用中设置事件参数<code> d_coop_safe=1 </code>。 </p> </td> 
+   <td colname="col2"> <p>在所有后续事件调用中设置POST参数<code> d_coop_safe=1 </code>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance.api.setAsCoopUnsafe(); </code> </p> </td> 
-   <td colname="col2"> <p>在所有后续POST调用中设置事件参数<code> d_coop_unsafe=1 </code>。 </p> </td> 
+   <td colname="col2"> <p>在所有后续事件调用中设置POST参数<code> d_coop_unsafe=1 </code>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -132,4 +131,3 @@ var dilInstance = DIL.create({
 Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
  -->
-
