@@ -1,26 +1,25 @@
 ---
-description: 使用实例级DILAPI，您可以以编程方式创建和使用Audience Manager对象。 实例级方法增强了类级方法建立的API功能。
+description: 实例级DILAPI允许您以编程方式创建和使用Audience Manager对象。 实例级方法可增强由类级方法建立的API功能。
 keywords: 创建特征；创建特征
-seo-description: 使用实例级DILAPI，您可以以编程方式创建和使用Audience Manager对象。 实例级方法增强了类级方法建立的API功能。
+seo-description: 实例级DILAPI允许您以编程方式创建和使用Audience Manager对象。 实例级方法可增强由类级方法建立的API功能。
 seo-title: 实例级别 DIL 方法
 solution: Audience Manager
 title: 实例级别 DIL 方法
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
-feature: DIL Implementation
-translation-type: tm+mt
-source-git-commit: e40233ace5cb74743db7d0f9f90707fa596a7e79
+feature: DIL实施
+exl-id: 0342439d-708e-461c-b155-a3ee423f5437
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 13%
 
 ---
 
-
 # 实例级别 DIL 方法{#instance-level-dil-methods}
 
-使用实例级[!UICONTROL DIL] API，您可以以编程方式创建和处理Audience Manager对象。 实例级方法增强了类级方法建立的API功能。
+使用实例级别[!UICONTROL DIL] API，可以以编程方式创建和使用Audience Manager对象。 实例级方法可增强由类级方法建立的API功能。
 
-## 实例级DIL方法{#get-started-dil-methods}快速入门
+## 实例级别DIL方法{#get-started-dil-methods}快速入门
 
 <!-- 
 
@@ -28,10 +27,10 @@ c_api_overview.xml
 
  -->
 
-使用实例级[!UICONTROL DIL] API时：
+使用实例级别[!UICONTROL DIL] API时：
 
-* 访问需要合作伙伴名称和容器命名空间ID(NSID)。 请与您的Audience Manager客户经理联系以获取此信息。
-* 根据您所使用的方法的要求，将API文档中任何斜体&#x200B;*文本替换为值、ID或其他变量。*
+* 访问需要合作伙伴名称和容器命名空间ID(NSID)。 请联系您的Audience Manager客户经理以获取此信息。
+* 将API文档中任何斜体化的示例&#x200B;**&#x200B;文本替换为您所使用的方法所需的值、ID或其他变量。
 
 <!-- 
 
@@ -39,9 +38,9 @@ c_instance_start.xml
 
  -->
 
-## 信号{#signals}
+## 信号 {#signals}
 
-将客户和平台级映射添加到挂起请求的查询字符串。
+将客户和平台级别的映射添加到待处理请求的查询字符串。
 
 <!-- 
 
@@ -54,12 +53,12 @@ r_dil_signals.xml
 >[!NOTE]
 >
 >* 您可以将其他API调用链接到此方法。
->* 如果页面上有Adobe Experience Cloud JavaScript库， `submit()`会在发送请求之前等待云设置Cookie。
+>* 如果页面上有Adobe Experience Cloud JavaScript库，则`submit()`会等待云端设置Cookie后再发送请求。
 
 
-**保留请求密钥**
+**保留的请求密钥**
 
-以下请求密钥是保留的，此方法无法覆盖：
+以下请求键是保留的，此方法无法覆盖：
 
 * `sids`
 * `pdata`
@@ -72,8 +71,8 @@ r_dil_signals.xml
 
 | 名称 | 类型 | 描述 |
 |---|---|---|
-| `obj` | 对象 | 表示平台级映射的键值对的对象。 参数接受字符串和数组作为对象中的属性值。 |
-| `prefix` | 字符串 | 可选。每个对象键前缀的字符串值（替换原始键）。 |
+| `obj` | 对象 | 表示平台级别映射的键值对的对象。 参数接受字符串和数组作为对象中的属性值。 |
+| `prefix` | 字符串 | 可选。每个对象键值前缀的字符串值（替换原始键值）。 |
 | `return` | DIL.api | 返回当前DIL实例的API对象。 |
 
 **响应**
@@ -103,7 +102,7 @@ dataLib.api.signals(obj, 'c_').submit();
 
 ## traits {#traits}
 
-将SID添加到挂起请求的查询字符串。
+将SID添加到待处理请求的查询字符串。
 
 <!-- 
 
@@ -121,7 +120,7 @@ r_dil_traits.xml
 
 | 名称 | 类型 | 描述 |
 |---|---|---|
-| `sids` | 数组 | 数组中的特征段ID。 |
+| `sids` | 数组 | 数组中的特征区段ID。 |
 
 **响应**
 
@@ -137,7 +136,7 @@ var partnerObject = DIL.create({
 partnerObject.api.traits(<i>[123, 456, 789]</i>); 
 </code></pre>
 
-## 日志{#logs}
+## 日志 {#logs}
 
 将数据添加到挂起请求中的日志文件。
 
@@ -168,7 +167,7 @@ partnerObject.api.logs({
 
 ## submit {#submit}
 
-向[!UICONTROL DIL]实例的Audience Manager提交所有挂起数据。
+将所有挂起的数据提交到[!UICONTROL DIL]实例的Audience Manager。
 
 <!-- 
 
@@ -180,7 +179,7 @@ r_dil_submit.xml
 
 >[!NOTE]
 >
->您可以将其他API调用链接到此方法。 此外，[!UICONTROL DIL]会将编码数据写入目标Cookie。 例如，空格编码为`%20`，分号编码为`%3B`。
+>您可以将其他API调用链接到此方法。 此外，[!UICONTROL DIL]还会将编码数据写入目标Cookie。 例如，空格将编码为`%20`，分号为`%3B`。
 
 **响应**
 
@@ -206,7 +205,7 @@ dataLib.api.traits([
 
 ## afterResult {#afterresult}
 
-在默认目标发布回调后执行的函数。
+一个在默认目标发布回调之后执行的函数。
 
 <!-- 
 
@@ -224,7 +223,7 @@ r_dil_after_result.xml
 
 | 名称 | 类型 | 描述 |
 |---|---|---|
-| `fn` | 函数 | JSON后要执行的函数由用于处理目标发布的默认回调处理。 |
+| `fn` | 函数 | 您希望在JSON后执行的函数由用于处理目标发布的默认回调处理。 |
 
 **响应**
 
@@ -248,7 +247,7 @@ dataLib.api.signals({
 
 ## clearData {#cleardata}
 
-清除挂起请求中的所有数据。
+清除待处理请求中的所有数据。
 
 <!-- 
 
@@ -288,7 +287,7 @@ dataLib.clearData();
 
 ## customQueryParams {#customqueryparams}
 
-将数据收集服务器未明确定义的自定义查询参数添加到挂起请求中。
+将数据收集服务器未明确定义的自定义查询参数添加到挂起请求。
 
 <!-- 
 
@@ -302,9 +301,9 @@ r_dil_custom_query_params.xml
 >
 >您可以将其他API调用链接到此方法。
 
-**保留请求密钥**
+**保留的请求密钥**
 
-以下请求密钥是保留的，此方法无法覆盖：
+以下请求键是保留的，此方法无法覆盖：
 
 * `sids`
 * `pdata`
@@ -332,7 +331,7 @@ partnerObject.api.customQueryParams({
 
 ## getContainerNSID {#getcontainernsid}
 
-返回[!UICONTROL DIL]实例的容器NSID值。 对调试和故障排除很有用。
+返回[!UICONTROL DIL]实例的容器NSID值。 对于调试和疑难解答非常有用。
 
 <!-- 
 
@@ -356,7 +355,7 @@ var nsid = dataLib.api.getContainerNSID();
 
 ## getEventLog {#geteventlog}
 
-以字符串数组的形式返回按时间顺序排序的事件日志数据。 对调试和故障排除很有用。
+以字符串数组的形式返回按时间顺序排序的事件日志数据。 对于调试和疑难解答非常有用。
 
 <!-- 
 
@@ -393,7 +392,7 @@ if (log && log.length) {
 
 ## getPartner {#getpartner}
 
-返回[!UICONTROL DIL]实例的伙伴名称。 对调试和故障排除很有用。
+返回[!UICONTROL DIL]实例的合作伙伴名称。 对于调试和疑难解答非常有用。
 
 <!-- 
 
@@ -417,7 +416,7 @@ var partner = dataLib.api.getPartner();
 
 ## getState {#getstate}
 
-返回当前[!UICONTROL DIL]实例的状态。 对调试和故障排除很有用。
+返回当前[!UICONTROL DIL]实例的状态。 对于调试和疑难解答非常有用。
 
 <!-- 
 
@@ -487,7 +486,7 @@ state = {
 
 ## idSync {#idsync}
 
-由两个功能组成，它们使数据合作伙伴能够在它们之间和Audience Manager之间交换和同步用户ID。
+由两个功能组成，这两个功能允许数据合作伙伴在他们之间和Audience Manager之间交换和同步用户ID。
 
 <!-- 
 
@@ -509,18 +508,18 @@ r_dil_idsync.xml
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.idSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>不同数据合作伙伴和Audience Manager之间。 例如，合作伙伴x将使用它将用户ID与合作伙伴y同步，然后将其发送到Audience Manager。 </p> <p> <p><b>重要：</b>  此方法已弃用。请使用Adobe Experience Platform Identity Service实例的<code> idSyncByURL </code>方法。 </p> </p> </td> 
+   <td colname="col2"> <p>在不同数据合作伙伴和Audience Manager之间。 例如，合作伙伴x会使用此功能将用户ID与合作伙伴y同步，然后将其发送到Audience Manager。 </p> <p> <p><b>重要信息：</b>  此方法已弃用。请使用Adobe Experience Platform Identity Service实例的<code> idSyncByURL </code>方法。 </p> </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.aamIdSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>当您已经知道用户ID并希望将其发送到Audience Manager时。 </p> <p> <p><b>重要：</b>  此方法已弃用。请使用Adobe Experience Platform Identity Service实例的<code> idSyncByDataSource </code>方法。 </p> </p> </td> 
+   <td colname="col2"> <p>当您已经知道用户ID并想要将其发送到Audience Manager时。 </p> <p> <p><b>重要信息：</b>  此方法已弃用。请使用Adobe Experience Platform Identity Service实例的<code> idSyncByDataSource </code>方法。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **idSync元素**
 
-`idSync` 可包含以下内容：
+`idSync` 可以包含以下内容：
 
 <table id="table_5343BE784E694C67B09A0A8878CF8001"> 
  <thead> 
@@ -559,12 +558,12 @@ r_dil_idsync.xml
 `idSync` 接受以下宏：
 
 * **`%TIMESTAMP%`:** 生成时间戳（以毫秒为单位）。用于缓存无效的情况。
-* **`%DID%`:** 插入用户的Audience ManagerID。
-* **`%HTTP_PROTO%`:** 设置页协议( `http` 或 `https`)。
+* **`%DID%`:** 为用户插入Audience ManagerID。
+* **`%HTTP_PROTO%`:** 设置页面协议( `http` 或 `https`)。
 
 **响应**
 
-如果成功，两个函数都返回`Successfully queued`。 如果失败，则将返回错误消息字符串。
+如果运行成功，这两个函数都将返回`Successfully queued`。 如果失败，则将返回错误消息字符串。
 
 **示例代码**
 
@@ -591,9 +590,9 @@ dilInstance.api.aamIdSync({
 });
 </code></pre>
 
-## 结果{#result}
+## 结果 {#result}
 
-将回调（接收JSON）添加到挂起请求。
+向待处理请求添加回调（用于接收JSON）。
 
 <!-- 
 
@@ -603,7 +602,7 @@ r_dil_result.xml
 
 **函数签名：** `result: function (callback) {}`
 
-此回调将替换处理目标发布的默认回调。
+此回调将替换用于处理目标发布的默认回调。
 
 >[!NOTE]
 >
@@ -634,7 +633,7 @@ dataLib.api.traits([<i>123, 456, 789</i>]).result(function(json){
 
 ## secureDataCollection {#securedatacollection}
 
-`secureDataCollection` 是一个布尔参数，它控 [!UICONTROL DIL] 制对和Akamai进行 [!UICONTROL Data Collection Servers (DCS)] 调用的方式
+`secureDataCollection` 是一个布尔参数，用于控 [!UICONTROL DIL] 制如何调用和 [!UICONTROL Data Collection Servers (DCS)] Akamai。
 
 <!-- 
 
@@ -642,9 +641,9 @@ dil-secure-data-collection.xml
 
  -->
 
-* 当`secureDataCollection= true`（默认）时，[!UICONTROL DIL]始终进行安全的HTTPS调用。
+* 当`secureDataCollection= true`（默认）时， [!UICONTROL DIL]始终进行安全的HTTPS调用。
 
-* 当`secureDataCollection= false`时，[!UICONTROL DIL]按照页面设置的安全协议进行HTTP或HTTPS调用。
+* 当`secureDataCollection= false`时，[!UICONTROL DIL]会按照页面设置的安全协议执行HTTP或HTTPS调用。
 
 >[!IMPORTANT]
 >
@@ -659,7 +658,7 @@ var dilInstance = DIL.create({
 
 ## useCORSOnly {#usecorsonly}
 
-`useCORSOnly` 是一个布尔值true/false参数，它控制浏览器如何从其他域请求资源。
+`useCORSOnly` 是一个布尔值true/false参数，用于控制浏览器如何从其他域请求资源。
 
 <!-- 
 
@@ -669,7 +668,7 @@ dil-use-cors-only.xml
 
 **概述**
 
-`useCORSOnly` 默认为false。False表示浏览器可以使用CORS或JSONP执行资源检查。 但是，[!UICONTROL DIL]始终会尝试先向CORS请求资源。 它会在不支持 CORS 的早期浏览器中还原为 JSONP。如果您需要强制浏览器仅使用CORS，例如对具有高安全性要求的站点，请设置`useCORSOnly:true`。
+`useCORSOnly` 默认为false。False表示浏览器可以通过CORS或JSONP执行资源检查。 但是， [!UICONTROL DIL]始终会尝试先通过CORS请求资源。 它会在不支持 CORS 的早期浏览器中还原为 JSONP。如果您需要强制浏览器仅使用CORS，例如对于具有高安全要求的站点，请设置`useCORSOnly:true`。
 
 **代码示例**
 
@@ -682,8 +681,8 @@ var dilInstance = DIL.create({
 
 >[!IMPORTANT]
 >
->* 我们建议您仅在确定站点访客具有支持此功能的浏览器时才设置`useCORSOnly: true`。
->* 当`useCORSOnly: true`时，[!UICONTROL DIL]将不会从Internet Explorer版本9或更早版本进行ID调用。
+>* 我们建议您仅在确定网站访客具有支持此功能的浏览器时才设置`useCORSOnly: true`。
+>* 当`useCORSOnly: true`时，[!UICONTROL DIL]将不会从Internet Explorer版本9或更低版本进行ID调用。
 
 >
 
@@ -723,9 +722,9 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >[!MORELIKETHIS]
 >
 >* [关键变量的名称要求](../features/traits/trait-key-name-requirements.md)
->* [关键变量的前缀要求](../features/traits/trait-variable-prefixes.md)
->* [Adobe Experience Platform Identity Service中的同步函数](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
->* [DIL 创建](../dil/dil-class-overview/dil-create.md#dil-create)
->* [Adobe Experience Platform Identity Service:UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
->* [Adobe Experience Platform Identity Service中的CORS支持](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
+* [关键变量的前缀要求](../features/traits/trait-variable-prefixes.md)
+* [Adobe Experience Platform Identity服务中的同步函数](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
+* [DIL 创建](../dil/dil-class-overview/dil-create.md#dil-create)
+* [Adobe Experience Platform Identity Service:UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
+* [Adobe Experience Platform Identity服务中的CORS支持](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
 
