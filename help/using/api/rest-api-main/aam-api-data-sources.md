@@ -1,19 +1,18 @@
 ---
-description: API方法，用于管理与帐户关联的数据源。
-seo-description: API方法，用于管理与帐户关联的数据源。
+description: 可让您管理与帐户关联的数据源的API方法。
+seo-description: 可让您管理与帐户关联的数据源的API方法。
 seo-title: 数据源 API 方法
 solution: Audience Manager
 title: 数据源 API 方法
 uuid: 92ab725d-6f0a-497b-8302-39a34dc58636
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: d5ec520d-f47d-4054-9635-9ad96a2a5d91
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 24%
+source-wordcount: '74'
+ht-degree: 25%
 
 ---
-
 
 # 数据源 API 方法 {#data-source-api-methods}
 
@@ -23,8 +22,9 @@ ht-degree: 24%
 
 >[!IMPORTANT]
 >
->数据源[!DNL API]方法已用[!DNL Swagger]重写并迁移。 请参阅：
+>数据源[!DNL API]方法已使用[!DNL Swagger]进行重写并迁移。 请参阅：
 >
->* [Adobe Audience ManagerAPI文档](https://bank.demdex.com/portal/swagger/index.html)
+>* [Adobe Audience Manager API文档](https://bank.demdex.com/portal/swagger/index.html)
 >* [Audience Manager API 代码迁移](../../api/api-swagger-migration.md)
->
+
+
