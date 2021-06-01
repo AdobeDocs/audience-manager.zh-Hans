@@ -4,9 +4,8 @@ seo-description: 为何目标详细信息页面上不显示 Audience Lab 映射�
 seo-title: 为何目标详细信息页面上不显示 Audience Lab 映射的区段？
 solution: Audience Manager
 title: 目标详细信息页面上是否应显示 Audience Lab 映射的区段？
-feature: Support
+feature: 支持
 exl-id: 7f35b824-7acd-415f-92a9-62c2a3d08526
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '170'
