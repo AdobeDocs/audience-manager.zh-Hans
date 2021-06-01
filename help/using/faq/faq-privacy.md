@@ -5,9 +5,8 @@ seo-title: 隐私和数据保留常见问题解答
 solution: Audience Manager
 title: 隐私和数据保留常见问题解答
 uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
-feature: Data Governance & Privacy
+feature: 数据管理和隐私
 exl-id: bccf49d7-1a3b-4286-86fb-59e472af4501
-translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
 source-wordcount: '761'
@@ -56,15 +55,15 @@ ht-degree: 84%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>后端服务器 </p> </td> 
-   <td colname="col2"> <p>120天 </p> <p> Audience Manager 会在 120 天后（从上次在 Audience Manager 平台上看到用户之日算起）从后端服务器删除用户数据。如果<span class="keyword"> Audience Manager</span>在此120天周期内记录用户活动，我们将再保留120天此数据。 </p> </td> 
+   <td colname="col2"> <p>120天 </p> <p> Audience Manager 会在 120 天后（从上次在 Audience Manager 平台上看到用户之日算起）从后端服务器删除用户数据。如果<span class="keyword">Audience Manager</span>在此120天的周期中记录到用户活动，我们将再将数据保留120天。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Edge 服务器 </p> </td> 
-   <td colname="col2"> <p> 14天 </p> <p>Audience Manager 会在 14 天后（从上次在 Audience Manager 平台上看到用户之日算起）从 Edge 服务器删除用户数据。如果<span class="keyword"> Audience Manager</span>在此14天周期内记录用户活动，我们将再保留14天此数据。 如果用户在14天周期后再次变为活动状态，则在第一个新页面视图和用户变为可操作状态之间会有延迟。 在超过14天不活动后，需要6-18小时才能将完整用户档案重新移回边缘中心。 </p> </td> 
+   <td colname="col2"> <p> 14天 </p> <p>Audience Manager 会在 14 天后（从上次在 Audience Manager 平台上看到用户之日算起）从 Edge 服务器删除用户数据。如果<span class="keyword">Audience Manager</span>在此14天的周期中记录到用户活动，我们将再将数据保留14天。 如果用户在14天周期后再次变为活动状态，则从第一次查看新页面到用户变为可操作状态之间将会有延迟。 超过14天不活动后，需要6-18小时才能将完整配置文件返回到边缘中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始日志 </p> </td> 
-   <td colname="col2"> <p>60天(未活动60天后删除) </p> <p>原始日志是 Edge 服务器通过 HTTP 调用接收到的数据，或从发送到 <span class="keyword">Audience Manager</span> 的已载入文件接收到的数据。 </p> </td> 
+   <td colname="col2"> <p>60天（在60天不活动后删除） </p> <p>原始日志是 Edge 服务器通过 HTTP 调用接收到的数据，或从发送到 <span class="keyword">Audience Manager</span> 的已载入文件接收到的数据。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>广告服务器日志 </p> </td> 
@@ -72,7 +71,7 @@ ht-degree: 84%
   </tr> 
   <tr> 
    <td colname="col1"> <p>CRM 级别配置文件（已验证的配置文件） </p> </td> 
-   <td colname="col2"> <p>非活动的 CRM 级别配置文件（客户 ID）的默认存留期 (TTL) 为 24 个月。但是，您可以使用Audience Manager用户界面将非活动的CRM级别用户档案的TTL间隔缩短或延长一个月到五年。 您可以在创建或编辑跨设备数据源时执行此操作。</p> <p>有关更多信息，请参阅<a href="../features/profile-merge-rules/merge-rules-start.md#settings">创建跨设备数据源</a>中的“数据源设置”。</p> </td> 
+   <td colname="col2"> <p>非活动的 CRM 级别配置文件（客户 ID）的默认存留期 (TTL) 为 24 个月。但是，您可以使用Audience Manager用户界面缩短或延长不活动的CRM级别配置文件的TTL，TTL的有效期为1个月到5年。 您可以在创建或编辑跨设备数据源时执行此操作。</p> <p>有关更多信息，请参阅<a href="../features/profile-merge-rules/merge-rules-start.md#settings">创建跨设备数据源</a>中的“数据源设置”。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>移动设备 ID </p> </td> 
