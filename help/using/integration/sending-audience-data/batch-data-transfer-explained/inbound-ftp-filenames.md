@@ -1,13 +1,12 @@
 ---
-description: 介绍向Audience Manager发送数据时需要遵循的必填字段、语法、命名约定和文件大小。 将数据发送到Audience Manager FTP目录时，根据这些规范设置文件的名称和大小。
-seo-description: 介绍向Audience Manager发送数据时需要遵循的必填字段、语法、命名约定和文件大小。 将数据发送到Audience Manager FTP目录时，根据这些规范设置文件的名称和大小。
+description: 描述向Audience Manager发送数据时需要遵循的必填字段、语法、命名约定和文件大小。 将数据发送到Audience ManagerFTP目录时，请根据这些规范设置文件的名称和大小。
+seo-description: 描述向Audience Manager发送数据时需要遵循的必填字段、语法、命名约定和文件大小。 将数据发送到Audience ManagerFTP目录时，请根据这些规范设置文件的名称和大小。
 seo-title: 入站数据文件的 FTP 名称和文件大小要求
 solution: Audience Manager
 title: 入站数据文件的 FTP 名称和文件大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
-feature: Inbound Data Transfers
+feature: 入站数据传输
 exl-id: 9c889214-7075-4392-9ed5-f07b91e7b50a
-translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
 source-wordcount: '1045'
@@ -17,15 +16,15 @@ ht-degree: 8%
 
 # [!DNL FTP]入站数据文件的 名称和文件大小要求{#ftp-name-and-file-size-requirements-for-inbound-data-files}
 
-描述向[!DNL Audience Manager]发送数据时需要遵循的必填字段、语法、命名约定和文件大小。 将数据发送到Audience Manager[!DNL FTP]目录时，根据这些规范设置文件的名称和大小。
+描述向[!DNL Audience Manager]发送数据时需要遵循的必填字段、语法、命名约定和文件大小。 将数据发送到Audience Manager[!DNL FTP]目录时，请根据这些规范设置文件的名称和大小。
 
 >[!WARNING]
 >
->我们正在逐步取消对[!DNL FTP]配置的支持。 尽管现有[!DNL FTP]集成仍支持入站数据文件摄取，但我们强烈建议使用[!DNL Amazon S3]来为新集成建立脱机数据。 有关详细信息，请参阅[入站数据文件的 Amazon S3 名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
+>我们正在逐步停止对[!DNL FTP]配置的支持。 尽管现有[!DNL FTP]集成仍支持入站数据文件摄取，但我们强烈建议使用[!DNL Amazon S3]载入离线数据，以便进行新集成。 有关详细信息，请参阅[入站数据文件的 Amazon S3 名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
 
 >[!NOTE]
 >
->文本样式（`monospaced text`、*斜体*、括号 `[ ]` `( )` 等）在此文档中，指示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
+>文本样式（`monospaced text`、*斜体*、括号 `[ ]` `( )` 等）本文档中指示了代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
 
 ## 文件名语法{#file-name-syntax}
 
@@ -33,7 +32,7 @@ ht-degree: 8%
 
 `ftp_dpm_DPID[_DPID_TARGET_DATA_OWNER]_TIMESTAMP(.sync|.overwrite)[.SPLIT_NUMBER][.gz]`
 
-有关其他可接受的文件名格式，请参阅[自定义合作伙伴集成](/help/using/integration/sending-audience-data/custom-partner-integrations.md)。
+有关其他已接受的文件名格式，请参阅[自定义合作伙伴集成](/help/using/integration/sending-audience-data/custom-partner-integrations.md)。
 
 >[!NOTE]
 >
@@ -41,7 +40,7 @@ ht-degree: 8%
 
 ### 命名元素
 
-该表定义[!DNL FTP]文件名中的元素。
+该表定义了[!DNL FTP]文件名中的元素。
 
 <table id="table_1EA97D75004148CE85F702427DB7E97A"> 
  <thead> 
@@ -53,54 +52,54 @@ ht-degree: 8%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> ftp_dpm_</code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword">Audience Manager</span> FTP目录的路径和名称。 请联系您的客户经理，获取FTP目录和凭据。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">Audience Manager</span> FTP目录的路径和名称。 有关FTP目录和凭据，请联系您的客户经理。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
-   <td colname="col2"> <p>一个lD，它告知<span class="keyword">Audience Manager</span>数据文件是否包含您自己的用户ID、Android ID、iOS ID或属于<a href="/help/using/features/global-data-sources.md">全局数据源</a>的其他ID。 接受以下选项：</p> 
+   <td colname="col2"> <p>一个lD，用于告知<span class="keyword">Audience Manager</span>数据文件是否包含您自己的用户ID、Android ID、iOS ID或属于<a href="/help/using/features/global-data-sources.md">全局数据源</a>的其他ID。 接受以下选项：</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>数据源ID（也称为数据提供程序ID）：</b> 这是Audience Manager分配给数据源的唯一ID(请参阅ID <a href="/help/using/reference/ids-in-aam.md"> 的Audience Manager </a>索引)。在发送包含您自己的用户ID的数据时，在文件名中使用此分配的ID。 例如，<code>...ftp_dpm_21_123456789.sync</code>指示<span class="keyword">Audience Manager</span>将数据载入属于数据源21的ID。 </li> 
-     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID)：如果</b> 数据文件包含Android ID，请在数据文件名中使用ID 20914。使用Android ID时，需要使用字段<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code>告诉<span class="keyword">Audience Manager</span>，数据文件仅包含Android ID，ID应符合属于<code><i>_DPID_TARGET_DATA_OWNER</i></code>数据源的特征。</li> 
-     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA)：如果</b> 数据文件包含iOS ID，请在数据文件名中使用ID 20915。使用iOS ID时，需要使用字段<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code>告诉<span class="keyword">Audience Manager</span>，数据文件仅包含iOS ID，ID应符合属于<code><i>_DPID_TARGET_DATA_OWNER</i></code>数据源的特征。</li>
-     <li> <b>属于其他全局数据源的ID</b>:您可以载入Roku ID for Advertising(RIDA)、Microsoft Advertising ID(MAID)和其他ID。按照<a href="/help/using/features/global-data-sources.md">全局数据源文章</a>中所述，使用与每个数据源对应的ID。</li> 
-    </ul> <p> <p>注意： 请勿在数据文件中混合使用ID类型。 例如，如果您的文件名包含Android标识符，则不要将iOS ID或您自己的ID放入数据文件中。 </p> </p> </td> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>数据源ID（也称为数据提供程序ID）：</b> 这是Audience Manager分配给数据源的唯一ID(请参阅ID <a href="/help/using/reference/ids-in-aam.md"> 的Audience Manager </a>索引)。发送包含您自己的用户ID的数据时，请在文件名中使用此分配的ID。 例如， <code>...ftp_dpm_21_123456789.sync</code>告知<span class="keyword">Audience Manager</span>将数据载入属于数据源21的ID。 </li> 
+     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID):</b> 如果数据文件名中包含Android ID，请在其中使用ID 20914。使用Android ID时，您需要使用字段<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如， <code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code>告知<span class="keyword">Audience Manager</span>数据文件仅包含Android ID，且ID应符合属于<code><i>_DPID_TARGET_DATA_OWNER</i></code>数据源的特征条件。</li> 
+     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA):</b> 如果数据文件名中包含iOS ID，请在其中使用ID 20915。使用iOS ID时，您需要使用字段<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如， <code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code>告知<span class="keyword">Audience Manager</span>数据文件仅包含iOS ID，且ID应符合属于<code><i>_DPID_TARGET_DATA_OWNER</i></code>数据源的特征条件。</li>
+     <li> <b>属于其他全局数据源的ID</b>:您可以载入Roku ID for Advertising(RIDA)、 Microsoft Advertising ID(MAID)和其他ID。按照<a href="/help/using/features/global-data-sources.md">全局数据源文章</a>中所述，使用与每个数据源对应的ID。</li> 
+    </ul> <p> <p>注意： 请勿在数据文件中混合使用ID类型。 例如，如果您的文件名包含Android标识符，则不要在数据文件中放置iOS ID或您自己的ID。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
-   <td colname="col2"> <p>此字段告知Audience Manager要将数据载入的数据源。 如果将DPID设置为Android ID或iOS ID或属于全局数据源的其他ID，则此字段为必填字段。 这样，<span class="keyword"> Audience Manager</span>会将文件数据链接回您的组织。 </p> <p>例如： </p> 
+   <td colname="col2"> <p>此字段告知Audience Manager要将数据载入到哪个数据源。 如果您将DPID设置为Android ID、iOS ID或属于全局数据源的其他ID，则此字段为必填字段。 这允许<span class="keyword">Audience Manager</span>将文件数据链接回您的组织。 </p> <p>例如： </p> 
     <ul> 
-     <li> <code>...ftp_dpm_33_21_1234567890.sync</code> 告诉Audience Manager您对属于数据源33的客户ID有资格了解属于数据源21的特征或信号。 </li> 
-     <li> <b>Android ID(GAID)：告</b> <code>...ftp_dpm_20914_21_1234567890.sync</code> 诉 <span class="keyword"> 受众 </span> Manager，数据文件仅包含Android ID，且ID应符合属于数据源21的特征。</li> 
-     <li> <b>iOS ID(IDFA)：告</b> <code>...ftp_dpm_20915_21_1234567890.sync</code> 诉 <span class="keyword"> 受众 </span> Manager，数据文件仅包含iOS ID，ID应符合属于数据源21的特征。</li>
-     <li> <b>属于其他全局数据源的ID</b>: <code>...ftp_dpm_121963_21_1234567890.sync</code> 告 <span class="keyword"> 诉</span> 受众经理，数据文件仅包含Roku ID，且ID应符合属于数据源21的特征。按照<a href="/help/using/features/global-data-sources.md">全局数据源文章</a>中所述，使用与每个数据源对应的ID。</li> 
+     <li> <code>...ftp_dpm_33_21_1234567890.sync</code> 告知Audience Manager您是否符合属于数据源33的客户ID的资格条件，以识别属于数据源21的特征或信号。 </li> 
+     <li> <b>Android ID(GAID):</b> <code>...ftp_dpm_20914_21_1234567890.sync</code> 告知 <span class="keyword"> 受众</span> 管理器，数据文件仅包含Android ID，且ID应符合属于数据源21的特征资格。</li> 
+     <li> <b>iOS ID(IDFA):</b> <code>...ftp_dpm_20915_21_1234567890.sync</code> 告知 <span class="keyword"> 受众</span> 管理器，数据文件仅包含iOS ID，且ID应符合属于数据源21的特征资格条件。</li>
+     <li> <b>属于其他全局数据源的ID</b>: <code>...ftp_dpm_121963_21_1234567890.sync</code> 告 <span class="keyword"> 知</span> Audience Manager数据文件仅包含Roku ID，且ID应符合属于数据源21的特征资格。按照<a href="/help/using/features/global-data-sources.md">全局数据源文章</a>中所述，使用与每个数据源对应的ID。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> (.sync |.overwrite)</code> </p> </td> 
    <td colname="col2"> <p>同步选项包括： </p> <p> 
      <ul id="ul_DAAF61EC636C4456BECDDC34C3F86E83"> 
-      <li id="li_6EC6DE442B4546AA9F4F800D65C8A4EC"> <code> sync</code>:第三方数据提供者按用户发送要在Audience Manager系统中添加或删除的特征时的正常情况。 </li> 
-      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>:允许客户和数据提供商按用户发送一列表特征，这些特征应覆盖Audience Manager中给定数据源的所有用户现有特征。您不需要将所有用户都包含在覆盖文件中。 仅包括要更改的用户。 未分配给目标数据源的特征将不会被擦除。 </li> 
+      <li id="li_6EC6DE442B4546AA9F4F800D65C8A4EC"> <code> sync</code>:第三方数据提供商按用户发送特征，以在Audience Manager系统中添加或删除的正常情况。 </li> 
+      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>:允许客户和数据提供商基于每位用户发送一个特征列表，该列表应会覆盖给定数据源中该用户的所有现有特征(Audience Manager)。您无需在覆盖文件中包含所有用户。 仅包括那些要更改的用户。 未分配给目标数据源的特征将不会被擦除。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>[<i>SPLIT_NUMBER</i>]</code> </p> </td> 
-   <td colname="col2"> <p>整数。 将大型文件拆分为多个部分时使用，以缩短处理时间。 数字指示要发送的原始文件的哪个部分。 </p> <p>为了有效处理文件，请按照以下说明拆分数据文件： </p> 
+   <td colname="col2"> <p>整数。 将大文件拆分为多个部分时使用，以缩短处理时间。 数字表示您发送的原始文件的哪个部分。 </p> <p>为了高效处理文件，请按照以下指示拆分数据文件： </p> 
     <ul id="ul_E9446C5CA42649658093904D49D4369C"> 
      <li id="li_B275708DFE3F49E29EFAE6B838429E39">未压缩：1 GB </li> 
-     <li id="li_A9638EB46ED14E0680B6575D5457E32F">压缩：200-300 MB </li> 
-    </ul> <p>请参见下面前2个<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md#file-name-examples">文件名示例</a>。 </p> </td> 
+     <li id="li_A9638EB46ED14E0680B6575D5457E32F">压缩：200-300兆字节 </li> 
+    </ul> <p>请参阅下面的前2个<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md#file-name-examples">文件名示例</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>TIMESTAMP</i> </code> </p> </td> 
-   <td colname="col2"> <p>10位、UTC UNIX时间戳（以秒为单位）。 时间戳有助于使每个文件名都是唯一的。 </p> 
+   <td colname="col2"> <p>以秒为单位的10位UTC UNIX时间戳。 时间戳有助于使每个文件名都是唯一的。 </p> 
     <!-- 
      <p> <p>Note:  Audience Manager does not use the timestamp during processing of inbound files. The timestamp in the filename has been deprecated in Audience Manager but is still required for backwards compatibility. </p> </p> 
     --> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [.gz]</code> </p> </td> 
-   <td colname="col2"> <p>Gzip是允许的FTP文件名压缩格式。 如果使用文件压缩，请确保文件名具有正确的扩展名。 </p> <p>压缩文件必须为3 GB或更小。 如果您的文件较大，请与客户服务部联系。 尽管Audience Manager可以处理大型文件，但我们可能可以帮助您减小文件大小并提高数据传输效率。 请参阅<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">入站数据传输文件的文件压缩</a>。 </p> </td> 
+   <td colname="col2"> <p>Gzip是允许对FTP文件名进行压缩的格式。 如果使用文件压缩，请确保文件名的扩展名正确。 </p> <p>压缩文件必须为3 GB或更小。 如果文件较大，请联系客户关怀团队。 尽管Audience Manager可以处理大文件，但我们可能可以帮助您减小文件大小并提高数据传输效率。 请参阅<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">入站数据传输文件的文件压缩</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -115,11 +114,11 @@ ht-degree: 8%
  <li> <code> ftp_dpm_478_1366545717.overwrite</code> </li> 
 </ul>
 
-[如](assets/ftp_dpm_1234_1445374061.overwrite) 果需要其他示例，请下载示例文件。此文件以`.overwrite`文件扩展名保存。 使用简单的文本编辑器打开它。
+[](assets/ftp_dpm_1234_1445374061.overwrite) 如果需要其他示例，请下载样例文件。此文件的扩展名为`.overwrite`。 使用简单的文本编辑器将其打开。
 
-## 接受的文件大小{#accepted-file-sizes}
+## 已接受的文件大小{#accepted-file-sizes}
 
-请考虑下图，了解文件处理速度最快/最早的情况以及将数据发送到[!DNL Audience Manager] / [!DNL FTP]目录时文件大小限制。
+请考虑下图，了解文件处理速度最快/最早的情况以及将数据发送到[!DNL Audience Manager] / [!DNL FTP]目录时的文件大小限制。
 
 <table id="table_59FCC63806684DF8BE54A1EAF224A234"> 
  <thead> 
@@ -132,7 +131,7 @@ ht-degree: 8%
  <tbody> 
   <tr> 
    <td colname="col1"><b>Compressed（已压缩）</b> </td> 
-   <td colname="col2"> <p>200-300 MB </p> </td> 
+   <td colname="col2"> <p>200-300兆字节 </p> </td> 
    <td colname="col3"> <p>3 GB </p> </td> 
   </tr> 
   <tr> 
