@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Audience Manager 用户指南
 user-guide-description: 了解Audience Manager如何让您能够收集与网站访客有关的商业相关信息，创建可销售的区段，以及向正确的受众提供有针对性的广告和内容。
 feature-set: Audience Manager
-source-git-commit: bd049d293eeddf9c3454ea8dc183f84f5c7df59a
+source-git-commit: cf9368d4690b61066646054543cc60d390eea021
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 91%
+source-wordcount: '1809'
+ht-degree: 90%
 
 ---
 
@@ -393,6 +393,7 @@ ht-degree: 91%
    + [基于人员的目标常见问题解答](faq/faq-people-based-destinations.md)
    + [产品特性和功能常见问题解答](faq/faq-features.md)
    + [配置文件合并规则和设备图常见问题解答](faq/faq-profile-merge.md)
+   + [相似人群拓展建模常见问题解答](faq/faq-lookalike-modeling.md)
    + [Predictive Audiences 常见问题解答](faq/faq-predictive-audiences.md)
    + [定位常见问题解答](faq/faq-targeting.md)
    + [报表常见问题解答](faq/faq-reporting.md)
