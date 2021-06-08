@@ -8,10 +8,10 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP;SFTP地址；STFP IP地址；FTP地址
 feature: 管理
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
+source-git-commit: 24284321570ee5eb9632801a4a333a11b532e386
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 83%
+source-wordcount: '1206'
+ht-degree: 80%
 
 ---
 
@@ -205,3 +205,11 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 **在各[区域](../api/dcs-intro/dcs-api-reference/dcs-regions.md)之间同步用户配置文件需要多长时间？**
 
 要在各区域之间同步用户配置文件，通常最多需要 24 小时。但是，在极少数情况下，该过程可能长达 48 小时。
+
+ 
+
+**非活动的Amazon S3用户访问密钥有何变化？**
+
+Adobe为Audience Manager客户提供Audience Manager[!DNL Amazon S3]存储段的用户访问密钥。 出于安全原因，密钥在处于不活动状态100天后会自动禁用。
+
+要重新启用访问密钥或请求新密钥，请联系客户支持。
