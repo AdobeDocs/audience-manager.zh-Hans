@@ -6,7 +6,7 @@ title: 即时跨设备抑制
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
 feature: 配置文件合并
 exl-id: b9686210-e1aa-4f0a-a549-27d29c94e963
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 2643bebea8618124d5c96906e8dc89e21024d51a
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 15%
@@ -67,4 +67,4 @@ ht-degree: 15%
 请记住与时间有关的以下方面：
 
 * 区段将存储在[Edge](../../reference/system-components/components-edge.md)上，与设备配置文件存储在[!UICONTROL Edge]上的时间段相同，即距上次实时交互14天。 有关数据保留的更多信息，请参阅我们的[数据保留常见问题解答](../../faq/faq-privacy.md#data-retention-faq)。
-* 在[!DNL DCS]区域间传播取消分段操作大约需要24小时。 有关[!DNL DCS]区域[的更多信息，请参阅此处](../..//reference/system-components/components-data-collection.md)和[此处](../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
+* 在[!DNL DCS]区域间传播取消分段操作大约需要24小时。 有关[!DNL DCS]区域[的更多信息，请参阅此处](../../reference/system-components/components-data-collection.md)和[此处](../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
