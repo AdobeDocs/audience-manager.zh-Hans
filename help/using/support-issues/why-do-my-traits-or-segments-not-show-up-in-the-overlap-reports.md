@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 为什么我的特征或区段没有显示在重叠报表页面中？
 feature: 支持
 exl-id: 8341ee38-fc46-4a4b-9c9e-4ce2edb9a2fb
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 2643bebea8618124d5c96906e8dc89e21024d51a
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 100%
@@ -28,4 +28,4 @@ ht-degree: 100%
 * 对于特征：14 天内 28000 位独特访客
 * 对于区段：14 天内 70000 位实时用户
 
-有关此要求的更多详细信息，请访问[选定 Audience Manager 报表中的数据取样率和错误率](..//reporting/report-sampling.md)页面。
+有关此要求的更多详细信息，请访问[选定 Audience Manager 报表中的数据取样率和错误率](../reporting/report-sampling.md)页面。
