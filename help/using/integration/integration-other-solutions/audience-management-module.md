@@ -8,7 +8,7 @@ title: 实施受众管理模块
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 feature: Adobe Analytics 集成
 exl-id: af2449cd-5fc8-454a-adce-0da7cae80548
-source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
+source-git-commit: 8fc6c96bf9e8216ef4458989c87f1f93ea9f0347
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 4%
@@ -36,7 +36,7 @@ ht-degree: 4%
 
 ### 使用[!DNL Adobe Experience Platform Launch]实施
 
-[!DNL Adobe] 建议您使用 [](https://docs.adobe.com/content/help/en/launch/using/overview.html) Launch扩展来 [!DNL Adobe Analytics] 对资 [!DNL Audience Manager] 产设置和。在这种情况下，您无需手动复制任何代码。 您而是必须在[!DNL Analytics Launch]扩展中启用数据共享，如下图所示。 另请参阅[Adobe Analytics扩展](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager)文档。
+[!DNL Adobe] 建议您使用 [](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en) Launch扩展来 [!DNL Adobe Analytics] 对资 [!DNL Audience Manager] 产设置和。在这种情况下，您无需手动复制任何代码。 您而是必须在[!DNL Analytics Launch]扩展中启用数据共享，如下图所示。 另请参阅[Adobe Analytics扩展](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager)文档。
 
 >[!TIP]
 >
