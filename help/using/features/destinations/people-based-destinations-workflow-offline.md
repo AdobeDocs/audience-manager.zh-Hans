@@ -6,9 +6,9 @@ solution: Audience Manager
 title: 工作流程 B - 基于仅离线数据进行个性化
 feature: 基于人员的目标
 exl-id: d980de26-3133-4ae3-80c2-8c3bf2480bbd
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 87c3169083f0dc66490e6a8c808e16371f1d78c0
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1173'
 ht-degree: 6%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 6%
 
 ### 示例
 
-您需要从下表中为相应的已载入特征ID确定客户ID的资格。 假设您的[DPUUID](../../reference/ids-in-aam.md)存储在ID为999999的数据源中，并且您的Audience Manager合作伙伴ID为123。
+您需要从下表中为相应的已载入特征ID确定客户ID的资格。 假设您的[DPUUIDs](../../reference/ids-in-aam.md)存储在ID为999999的数据源中，并且您的Audience Manager数据源ID为123。
 
 | 客户ID(DPUUID) | 已载入的特征ID |
 | -------------------------------------- | ------------------- |
