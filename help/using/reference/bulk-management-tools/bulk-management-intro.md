@@ -8,9 +8,9 @@ title: 开始使用批量管理工具
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 feature: BAAAM
 exl-id: 5603146e-7172-4181-90ad-4606129176dd
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 911eab2d661907c6f1e2ffc08603d994bd346395
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '719'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ c_bulk_start.xml
 
 ## 下载 {#download}
 
-下载最新的工作表&#x200B;**[此处](assets/BAAAM_V2_20200502.xlsm)**。
+下载最新的工作表&#x200B;**[此处](assets/BAAAM_V2_20210609.xlsm)**（上次更新日期：2021年6月）。
 
 ## 先决条件 {#prereqs}
 
