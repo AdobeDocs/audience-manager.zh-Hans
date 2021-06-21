@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Facebook WCA 集成
 feature: 第三方集成
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
-source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 5%
@@ -68,7 +68,7 @@ ht-degree: 5%
 `https://www.facebook.com/tr/?id=6876666666662303&ev=Adobe-Audience-Manager-Segment&cd[segID]=3401321,2993399,3263410&noscript=1`
 
 | 参数 | 描述 |
----------|----------|
+|---------|----------|
 | `id` | 您的[!DNL Facebook]像素ID，在创建受众像素时，您可以在[!DNL Facebook Ad Manager]用户界面中找到该ID。 |
 | `ev` | Event.     这是任意值，当像素开始在站点上触发时，该值将显示在[!DNL Facebook Ad Manager]用户界面中。 有关更多信息，请参阅[步骤3](/help/using/integration/integrating-third-party/facebook-wca-integration.md#step-3-create-audience)中的[!UICONTROL Include]项。 |
 | `cd[segID]` | 一个附加参数，在像素开始在网站上触发后，该参数将开始填充在[!DNL Facebook Ad Manager]用户界面中。 `segID` 也是任意的。 |
@@ -91,7 +91,7 @@ ht-degree: 5%
 请参阅[!DNL Facebook]帮助文档中的[创建网站自定义受众](https://www.facebook.com/business/help/666509013483225)。 选择下表中的[!UICONTROL Create Audience]选项：
 
 | 项目 | 描述 |
----------|----------|
+|---------|----------|
 | 网站流量 | 自定义组合 |
 | 包含 | <ul><li>选择&#x200B;**[!UICONTROL Event]** >选择&#x200B;**[!UICONTROL Adobe-Audience-Manager-Segment]**。 这是步骤1中示例像素中`ev`参数的值。 请注意，如果像素尚未触发，则&#x200B;**[!UICONTROL Event]**&#x200B;选项或&#x200B;**[!UICONTROL Adobe-Audience-Manager-Segment]**&#x200B;可能不会显示在[!DNL Facebook]用户界面中。</li><li>添加参数：选择`segID`。</li><li><p>选择&#x200B;**包含**&#x200B;运算符。</p><p>鉴于访客可能符合多个区段的条件，因此像素参数中可能有多个[!UICONTROL segment IDs]，因此这一点很重要。 使用等于(`=`)运算符可能无法使访客符合受众的条件，因此您会看到较小的数量。</p></li><li>添加值：输入[!DNL Audience Manager]区段ID。</li></ul> |
 | 添加新条件 | 可选设置。 |
