@@ -7,7 +7,7 @@ title: 区段生成器中的特征和区段人口数据
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
 feature: 区段
 exl-id: f8953d10-8a31-4c07-8d96-169c30a21de0
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 2%
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 
 | 量度 | 描述 |
----------|----------|
+|---------|----------|
 | [!UICONTROL Total Trait Population] | 配置文件中具有选定特征的唯一ID数。 |
 
 
@@ -122,7 +122,7 @@ ht-degree: 2%
 
 
 | 列A | B列 |
----------|----------|
+|---------|----------|
 | [!UICONTROL Real-Time Population (Existing) ] | 与当前配置文件实时查看的实际设备数量，当这些设备与通过设备图连接的多达100个其他设备配置文件合并时，这些配置文件包含在Audience Manager看到时符合区段资格条件的特征。 |
 | [!UICONTROL Total Population (Existing)] | 与设备图连接的多达100个其他设备配置文件合并后，配置文件符合区段条件的设备总数。 |
 
