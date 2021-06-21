@@ -7,7 +7,7 @@ title: Audience Manager API 代码迁移
 uuid: 93cc28c4-4b91-4c79-93d5-ece9bb4cc9d5
 feature: API
 exl-id: 081be8a7-5029-45b1-8fb1-0531d5090fe0
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 6%
@@ -88,7 +88,7 @@ ht-degree: 6%
 
 
 | API 类型 | API方法 |
----------|----------
+|---------|----------|
 | **[!UICONTROL Algorithmic Models**] | [算法模型](https://bank.demdex.com/portal/swagger/index.html#/Algorithmic_Models_API) |
 | **[!UICONTROL Audience Marketplace]** | <ul><li>[数据馈送](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Buyer%20API/get_available_data_feeds_)</li><li>[数据馈送请求](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Buyer%20API/post_available_data_feeds__dataSourceId__requests)</li><li>[数据馈送财务](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Finance%20API/get_data_feeds_billing_report)</li><li>[数据馈送计划](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Seller%20API/get_data_feeds__dataSourceId__plans_)</li><li>[数据馈送订阅](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Seller%20API/get_data_feeds__dataSourceId__subscriptions)</li></ul> |
 | **[!UICONTROL Data Sources]** | [数据源 ](https://bank.demdex.com/portal/swagger/index.html#/Data_Source_API) |
