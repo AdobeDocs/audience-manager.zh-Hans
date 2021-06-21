@@ -8,7 +8,7 @@ title: 可操作的日志文件
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: 日志文件
 exl-id: bd499931-4e02-4f64-82ba-46ef7c4ffd3c
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '1611'
 ht-degree: 3%
@@ -176,7 +176,7 @@ Removed  {importance="high"} for ExL
 
 
 | 日志文件中的标题名称 | 信号 | 描述 |
----------|----------|---------
+|---------|----------|---------|
 | `LineItemId` | `d_lineitem` | 已交付的广告管理器行项目的数字ID |
 | `OrderId` | `d_orderid` | 包含已交付行项目和创作元素的广告管理器订单的数字ID。 |
 | `CreativeId` | `d_creative` | 交付的广告管理器创作元素的数字ID。 |
