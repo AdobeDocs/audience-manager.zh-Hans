@@ -7,14 +7,14 @@ title: 将区段发送到 Google AdWords 再营销列表
 uuid: 5ad821c6-48b4-42c0-b912-1563331e93a2
 feature: 第三方集成
 exl-id: 76676eae-de4f-4fee-8774-ee215525306a
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 760d6a56754530368ac11a5c9f10c4be487de028
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '336'
 ht-degree: 5%
 
 ---
 
-# 将区段发送到Google Ads再营销列表{#send-segments-to-a-google-adwords-remarketing-list}
+# 将区段发送到Google Ads再营销列表 {#send-segments-to-a-google-adwords-remarketing-list}
 
 此过程需要[!DNL Google Ads]再营销列表、像素代码和Audience Manager[!DNL URL] [!DNL destination]。 它也称为搜索广告([!DNL RLSA])集成的再营销列表。 仅适用于付费搜索。
 
@@ -33,7 +33,7 @@ ht-degree: 5%
 1. 在Audience Manager中， [创建 [!DNL URL destination]](../../features/destinations/create-url-destination.md)或编辑现有[!DNL destination]。 创建[!DNL destination]时，请使用以下设置：
    * 类型：URL
    * 序列化：已启用
-   * 分隔符：分号(;)
+   * 分隔符：分号(&amp;semi;))
 
 1. 在[!DNL URL] [!DNL destination]的[!UICONTROL Segment Mappings]部分中，将步骤2中的代码添加到[!DNL URL]和[!DNL Secure URL]字段。 在[!DNL URL]和[!DNL Secure URL]字段中分别为`http:`和`https:`为代码添加前缀。
 
