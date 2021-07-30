@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 特征推荐
 feature: 区段
 exl-id: 7ef862a9-7354-49fb-9af0-925d827a5165
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 432b12c4d4fb567d1a0bcaa9d12baaac5e3ae0f7
 workflow-type: tm+mt
 source-wordcount: '1574'
 ht-degree: 8%
@@ -50,7 +50,7 @@ Audience Manager会从第一方特征、**[!UICONTROL Recommendations]**&#x200B;
 通过[!UICONTROL Trait Recommendations]，您可以根据使用Audience Manager的方式改进工作流：
 
 * 作为营销人员，您可以借助相似特征快速找到对补充产品感兴趣的受众，从而扩大访问范围。
-* 如果您将Audience Manager用作发布者，并且[!UICONTROL Trait Recommendations]，则可以了解受众行为并为广告销售或用户获取构建更好的区段。
+* 如果您将Audience Manager用作发布者，并且[!UICONTROL Trait Recommendations]可以了解受众行为，并为广告销售或用户获取构建更好的区段。
 * 作为[!UICONTROL Audience Marketplace]数据购买者，我希望无需浏览大量信息源即可发现相关的第三方数据。
 * 作为[!UICONTROL Audience Marketplace]数据提供商，我希望向购买者推荐相关数据，以便从最佳且相关的订阅中受益。
 
@@ -142,7 +142,7 @@ Audience Manager会从第一方特征、**[!UICONTROL Recommendations]**&#x200B;
 
 要生成特征推荐，Audience Manager会计算目标特征与您的帐户有权访问的每个其他特征（包括第三方数据）之间的[Jaccard相似度](https://en.wikipedia.org/wiki/Jaccard_index)。 然后，Audience Manager会显示最多50个相似度最高的特征。
 
-## 特征相似度分数{#trait-similarity-score}
+## 特征相似度得分 {#trait-similarity-score}
 
 Audience Manager计算两个特征之间的[!UICONTROL Trait Similarity Score]，方法是根据[!UICONTROL UUID]s的数量计算交集和并集，然后将二者相除。 对于两个特征A和B，计算方式如下所示：
 
@@ -169,7 +169,7 @@ Audience Manager计算两个特征之间的[!UICONTROL Trait Similarity Score]�
 使用下表粗略指导特征相似度。 本指南基于在大多数特征中观察到的相似度得分。
 
 | [!UICONTROL Trait Similarity Score] | 显着性 |
----------|----------|
+|---------|----------|
 | 0.1及更高版本 | 特征之间的高度相似性 |
 | 0.03 - 0.1 | 特征之间的中等相似度 |
 | 0.01 - 0.03 | 特征之间的低相似度 |
