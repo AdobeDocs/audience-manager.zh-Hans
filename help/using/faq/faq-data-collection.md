@@ -8,9 +8,9 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP;SFTP地址；STFP IP地址；FTP地址
 feature: 管理
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
+source-git-commit: b8c8f35376c5a8a85fa4eeace7b447385ee9f339
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1215'
 ht-degree: 80%
 
 ---
@@ -190,7 +190,7 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 这两个报表会根据生成时在后端看到的未验证用户配置文件记录 (UUID) 来计算人口。
 
-在第一次调用 [!DNL DCS] 时，声明的 ID *不会*&#x200B;关联到任何 UUID（这表示客户端上不存在任何 [demdex cookie](hhttps://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html))。[!DNL DCS] 将随机生成一个 UUID 并设置一个 [!DNL demdex] Cookie，然后在响应调用中传递该 UUID，但不会将该 UUID 传输到后端。
+在第一次调用 [!DNL DCS] 时，声明的 ID *不会*&#x200B;关联到任何 UUID（这表示客户端上不存在任何 [demdex cookie](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/ec-cookies/cookies-am.html))。[!DNL DCS] 将随机生成一个 UUID 并设置一个 [!DNL demdex] Cookie，然后在响应调用中传递该 UUID，但不会将该 UUID 传输到后端。
 
 >[!NOTE]
 >
