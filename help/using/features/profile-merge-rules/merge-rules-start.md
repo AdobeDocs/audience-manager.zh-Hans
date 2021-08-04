@@ -7,9 +7,9 @@ title: 开始使用配置文件合并规则
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 feature: 配置文件合并
 exl-id: 11f397dd-1f23-4b14-be6f-60ce8b77ab12
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: b8c8f35376c5a8a85fa4eeace7b447385ee9f339
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1315'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 <!-- merge-rules-start.xml -->
 
-## 创建跨设备数据源{#create-data-source}
+## 创建跨设备数据源 {#create-data-source}
 
 要创建跨设备数据源，请转到&#x200B;**[!UICONTROL Audience Data > Data Sources > Add New]**&#x200B;并完成此处介绍的每个部分的步骤。 创建或编辑跨设备数据源需要管理员权限。
 
@@ -58,7 +58,7 @@ ht-degree: 4%
 
 通过与这些设置关联的文本字段，您可以使用[配置文件合并规则选项](merge-rule-definitions.md)中显示的别名来重命名[!UICONTROL Data Source]。 例如，如果向&#x200B;**[!UICONTROL Use as Authenticated Profile]**&#x200B;添加别名，该名称会显示在[!UICONTROL Authenticated Profile Options]列表中。 如果向&#x200B;**[!UICONTROL Use as a Device Graph]**&#x200B;添加别名，则该名称会显示在[!UICONTROL Device Options]列表中。
 
-## 创建配置文件合并规则{#create-profile-merge-rule}
+## 创建配置文件合并规则 {#create-profile-merge-rule}
 
 要创建[!UICONTROL Profile Merge Rule]，请转到&#x200B;**[!UICONTROL Audience Data > Profile Merge Rules > Add New Rule]**&#x200B;并完成此处介绍的每个部分的步骤。
 
@@ -86,7 +86,7 @@ ht-degree: 4%
 
 [数据导出控](../data-export-controls.md) 制器是可选的分类规则，您可以将其应用到 [!UICONTROL Profile Merge Rule]中。当该操作违反数据隐私或使用协议时，它们会阻止您将数据发送到目标。 如果不使用[!UICONTROL Data Export Controls]，请跳过此部分。
 
-## 配置文件合并规则设置{#profile-merge-rule-setup}
+## 配置文件合并规则设置 {#profile-merge-rule-setup}
 
 要完成[!UICONTROL Proflie Merge Rule Setup]部分，请执行以下操作：
 
@@ -115,7 +115,7 @@ ht-degree: 4%
 >
 > 如果您已达到最大数量[!UICONTROL Profile Merge Rules]，并且需要根据上述说明在配置这些量度时提供帮助，请联系客户关怀团队。
 
-## 配置合并规则代码{#configure-merge-rule-code}
+## 配置合并规则代码 {#configure-merge-rule-code}
 
 按照以下说明设置[!UICONTROL Adobe Experience Platform Identity Service]、[!UICONTROL DIL]和移动设备[!DNL SDK]代码，以便与合并规则一起使用。
 
@@ -125,7 +125,7 @@ ht-degree: 4%
 
 在&#x200B;*完成这些步骤之前，必须设置[跨设备数据源](#create-data-source)和[配置文件合并规则](#create-profile-merge-rule)*。
 
-## 对于Adobe Experience Platform Identity Service客户{#id-service-customers}
+## 对于Adobe Experience Platform Identity Service客户 {#id-service-customers}
 
 使用[!UICONTROL Profile Merge Rules]时，建议使用[!UICONTROL Adobe Experience Platform Identity Service]和最新版本的[DIL](../../dil/dil-overview.md)。 但是，您不必使用[!UICONTROL Adobe Experience Platform Identity Service]即可使用此功能。 如果您只使用[!UICONTROL DIL]，请参阅下面的[旧版DIL部分](#legacy-dil)。
 
@@ -172,7 +172,7 @@ var vDil = DIL.create({
 
 请参阅下面的[配置SDK](#configure-sdks-legacy-dil)部分。
 
-## 旧版DIL{#legacy-dil}
+## 旧版DIL {#legacy-dil}
 
 如果您尚未使用[!DNL Adobe Experience Platform Identity Service]，则确实应该使用。 但是，我们明白迁移到新代码需要仔细思考和测试。 在这些情况下，请检查`DIL.create`函数以确保正确设置该函数，如以下代码示例中所示。
 
@@ -224,7 +224,7 @@ DIL.create({
  </tbody>
 </table>
 
-另请参阅[Android的Audience Manager方法](hhttps://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html)和[iOS的Audience Manager方法](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html)。
+另请参阅[Android的Audience Manager方法](https://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html)和[iOS的Audience Manager方法](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html)。
 
 >[!MORELIKETHIS]
 >
