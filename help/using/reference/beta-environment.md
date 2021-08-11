@@ -8,9 +8,9 @@ title: 测试版环境
 uuid: de4a1a46-cfa4-4f64-8569-48a7650fd8cf
 feature: 参考
 exl-id: a6a5e1c2-29a2-40bf-972c-87fb8716a394
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 6eefe6ac6db011e99a02cfc38abfe773a8f62e0d
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '348'
 ht-degree: 4%
 
 ---
@@ -21,25 +21,21 @@ ht-degree: 4%
 
 ## 概述
 
-测试版环境是生产环境的精确副本，没有任何实验性或未发布的功能。 您来自生产环境的登录凭据在测试版环境中有效。
+测试版环境中的功能是生产环境的精确副本，没有任何实验性或未发布的功能。 您来自生产环境的登录凭据在测试版环境中有效。
 
 **更新计划**
 
 在非高峰时段，测试版环境将在每月末进行更新。
 
+>[!IMPORTANT]
+>
+>请注意，您的客户数据（[信号、特征和区段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=en)）未在生产环境和测试环境之间同步。
+
 **出站流量**
 
 测试版环境未启用出站流量。
 
-<!-- 
-
-Added re: AAM-30826.
-
- -->
-
 ## 端点
-
-
 
 | 服务 | URL/主机名 | 如何获取访问权限 |
 |--- |--- | --- |
