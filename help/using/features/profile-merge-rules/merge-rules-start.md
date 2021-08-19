@@ -7,10 +7,10 @@ title: 开始使用配置文件合并规则
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 feature: 配置文件合并
 exl-id: 11f397dd-1f23-4b14-be6f-60ce8b77ab12
-source-git-commit: b8c8f35376c5a8a85fa4eeace7b447385ee9f339
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 4%
+source-wordcount: '1307'
+ht-degree: 3%
 
 ---
 
@@ -151,7 +151,7 @@ visitor.setCustomerIDs({
      "authState":Visitor.AuthState.AUTHENTICATED
 ```
 
-有关更多信息，请参阅[创建跨设备数据源](#create-data-source)和[客户ID和身份验证状态](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html)。
+有关更多信息，请参阅[创建跨设备数据源](#create-data-source)和[客户ID和身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)。
 
 ### 配置`DIL.create`函数
 
@@ -166,7 +166,7 @@ var vDil = DIL.create({
 });
 ```
 
-在命名空间键值对中，`*`MCORG`*`变量是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，可以在[!DNL Experience Cloud]功能板的[!UICONTROL Administration]部分找到此ID。 您需要管理员权限才能查看此功能板。 请参阅[管理：核心服务](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+在命名空间键值对中，`*`MCORG`*`变量是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，可以在[!DNL Experience Cloud]功能板的[!UICONTROL Administration]部分找到此ID。 您需要管理员权限才能查看此功能板。 请参阅[管理：核心服务](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
 ### 配置SDK
 
@@ -224,7 +224,7 @@ DIL.create({
  </tbody>
 </table>
 
-另请参阅[Android的Audience Manager方法](https://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html)和[iOS的Audience Manager方法](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html)。
+另请参阅[Android的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html)和[iOS的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html)。
 
 >[!MORELIKETHIS]
 >
