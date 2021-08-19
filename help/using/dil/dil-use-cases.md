@@ -7,9 +7,9 @@ title: DIL 用例和代码示例
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
 feature: DIL实施
 exl-id: 001710be-b377-460a-9e29-7268d25a6305
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '920'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ c_dil_use_case.xml
 
  -->
 
-## 发送数据元素以Audience ManagerDIL{#send-data-elements-dil}
+## 发送数据元素以Audience Manager并DIL {#send-data-elements-dil}
 
 创建一个对象变量，以将有关页面元素的信息发送到Audience Manager。 这对于常规数据收集或作为使用Analytics变量收集数据的替代方法非常有用。
 
@@ -116,7 +116,7 @@ var adobe_dil = DIL.create({ partner : "<i>partner name</i>" });
 adobe_dil.api.signals({ d_referer : document.referrer }).submit();
 </code></pre>
 
-## 捕获搜索引擎类型和关键词搜索词{#capture-search-engine-types}
+## 捕获搜索引擎类型和关键词搜索词 {#capture-search-engine-types}
 
 将有关搜索引擎类型和关键词搜索的信息发送到Audience Manager。
 
@@ -181,7 +181,7 @@ if (search_referrer && search_referrer.valid) {
 }
 </code></pre>
 
-## 将键值映射到其他键{#map-key-values}
+## 将键值映射到其他键 {#map-key-values}
 
 将键值对的值与另一个键值关联。
 
@@ -213,7 +213,7 @@ adobe_dil.api.signals({c_zip : '10010'}).submit();
 // Request will look like /event?c_zip=10010&d_zip=10010
 ```
 
-## Google Tag Manager(GTM){#traffic-dil-gtm}中的流量DIL
+## Google Tag Manager(GTM)中的流量DIL {#traffic-dil-gtm}
 
 使用GTM标记设置和提供DIL。
 
@@ -243,5 +243,5 @@ t_dil_google_tagmanager.xml
 >
 >* [Google Tag Manager帮助中心](https://support.google.com/tagmanager#topic=3441530)
 >* [信号](../dil/dil-instance-methods.md#signals)
-* [关键变量的前缀要求](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/traits/trait-variable-prefixes.html#prefix-requirements-for-key-variables)
+* [关键变量的前缀要求](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-variable-prefixes.html#prefix-requirements-for-key-variables)
 
