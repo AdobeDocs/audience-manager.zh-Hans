@@ -7,10 +7,10 @@ title: 配置文件合并规则的一般用例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 feature: 配置文件合并
 exl-id: 66341736-4f61-4306-b9f4-1b37dc7ce0ff
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 4%
+source-wordcount: '995'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 >
 >有关这些[!UICONTROL Merge Rule]设置的定义和说明，请参阅[定义的配置文件合并规则选项](merge-rule-definitions.md)。
 
-## 设备定位{#device-personalization}
+## 设备定位 {#device-personalization}
 
 此方案适用于那些希望评估在Audience Manager中定义的受众区段的单个设备配置文件的营销人员，以便在没有考虑用户身份验证的情况下，使用支持设备ID的定位平台(DSP、网站个性化平台和其他基于设备的定位平台)为设备提供一致的体验。
 
@@ -36,7 +36,7 @@ ht-degree: 4%
 
 ![仅限设备](assets/device-management.png)
 
-## 共享设备定位{#target-shared-devices}
+## 共享设备定位 {#target-shared-devices}
 
 比如说，John和他的妻子Jane使用相同的笔记本电脑访问网上商店并订购各种商品。
 
@@ -50,7 +50,7 @@ John用自己的账户来预订旅行票和特价优惠，而Jane则用自己的
 
 ![共享设备定位](assets/shared-device-targeting.png)
 
-## 在线/离线定位{#device-household-targeting}
+## 在线/离线定位 {#device-household-targeting}
 
 此用例涵盖家庭身份管理。 公司可以使用&#x200B;**[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Device Profile]**&#x200B;规则，将单个设备配置文件与在该设备上经过身份验证的最后一个配置文件合并。
 
@@ -64,7 +64,7 @@ Audience Manager可合并每个设备+跨设备配置文件对，以查看合并
 
 ![家庭管理](assets/household-management.png)
 
-## 基于人员的目标定位{#all-cross-device}
+## 针对基于人员的目标进行定位 {#all-cross-device}
 
 >[!IMPORTANT]
 >
@@ -78,9 +78,9 @@ Audience Manager可合并每个设备+跨设备配置文件对，以查看合并
 
 ![全跨设备](assets/all-cross-device.png)
 
-## 设备图选项{#device-graph-options}
+## 设备图选项 {#device-graph-options}
 
-为[!UICONTROL Profile Merge]规则选择[!UICONTROL device graph]选项取决于您的数字资产和业务目标所特有的条件。 这些一般准则可帮助您了解何时使用一种类型的图形，何时使用另一种类型的图形。 请注意，您必须是[Adobe Experience Cloud设备协作](https://docs.adobe.com/content/help/zh-Hans/device-co-op/using/home.html)的成员，或与外部设备图存在合同关系才能使用这些选项。 有关何时选择设备图选项的一般指导，请参阅下表。 有关特定用例，请参阅[配置文件链接设备图用例](profile-link-use-case.md)和[外部设备图用例](external-graph-use-cases.md)。
+为[!UICONTROL Profile Merge]规则选择[!UICONTROL device graph]选项取决于您的数字资产和业务目标所特有的条件。 这些一般准则可帮助您了解何时使用一种类型的图形，何时使用另一种类型的图形。 请注意，您必须是[Adobe Experience Cloud设备协作](https://experienceleague.adobe.com/docs/device-co-op/using/home.html)的成员，或与外部设备图存在合同关系才能使用这些选项。 有关何时选择设备图选项的一般指导，请参阅下表。 有关特定用例，请参阅[配置文件链接设备图用例](profile-link-use-case.md)和[外部设备图用例](external-graph-use-cases.md)。
 
 <table id="table_66D9152D4FF040A186003272D456625D"> 
  <thead> 
@@ -101,7 +101,7 @@ Audience Manager可合并每个设备+跨设备配置文件对，以查看合并
   </tr> 
   <tr> 
    <td colname="col1"> <p>外部设备图选项 </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> 使用</span> Experience Cloud设备协作 <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external"> 或任何与Audience Manager集成的外</a> 部设备图构建的配置 <span class="keyword"> 文件</span> 量度非常适合： </p> <p> 
+   <td colname="col2"> <p><span class="wintitle"> 使用</span> Experience Cloud设备协作 <a href="https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html" format="https" scope="external"> 或任何与Audience Manager集成的外</a> 部设备图构建的配置 <span class="keyword"> 文件</span> 量度非常适合： </p> <p> 
      <ul id="ul_D76D773988604A619FA4A3BF37F910F0"> 
       <li id="li_969A0755A9E34CBEB2F7331C137B9A26">具有低级别客户身份验证的数字属性。 </li> 
       <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">广泛、广泛的品牌宣传。 </li> 
