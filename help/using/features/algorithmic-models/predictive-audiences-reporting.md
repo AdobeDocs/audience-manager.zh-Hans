@@ -6,16 +6,16 @@ solution: Audience Manager
 title: Predictive Audiences 报表
 feature: 算法模型
 exl-id: 43a4272c-d9be-47f6-9b81-15472b0366ab
-source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '629'
 ht-degree: 6%
 
 ---
 
 # Predictive Audiences 报表
 
-保存[!UICONTROL Predictive Audiences]模型后，Audience Manager会开始对其进行培训。 在几小时内，计算模型将开始分析[数据收集服务器](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs)上的受众。 报告将于次日提供。
+保存[!UICONTROL Predictive Audiences]模型后，Audience Manager会开始对其进行培训。 在几小时内，计算模型将开始分析[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs)上的受众。 报告将于次日提供。
 
 要查看[!UICONTROL Predictive Audiences]分类的结果，请转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然后单击列表中的模型。
 
