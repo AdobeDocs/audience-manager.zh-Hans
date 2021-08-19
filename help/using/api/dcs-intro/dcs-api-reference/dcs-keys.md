@@ -8,18 +8,18 @@ keywords: d_caller， d_cb， d_cid， d_cid_ic， d_coppa， d_cts=1, d_cts=2, 
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 feature: DCS
 exl-id: 1bdd7dcd-9411-4b0a-a236-059eb5faf00d
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 5%
+source-wordcount: '839'
+ht-degree: 4%
 
 ---
 
-# [!DNL DCS] [!DNL API]调用{#supported-attributes-for-dcs-api-calls}支持的属性
+# [!DNL DCS] [!DNL API]调用支持的属性 {#supported-attributes-for-dcs-api-calls}
 
 列出并描述可传入[!UICONTROL Data Collection Servers]([!DNL DCS])的语法和支持的属性（或键值对）。 此信息可帮助您设置[!DNL DCS]请求的格式，并了解此系统返回的参数。
 
-## 属性前缀{#attribute-prefixes}
+## 属性前缀 {#attribute-prefixes}
 
 [!DNL DCS]依赖于键值对中添加到键的特定前缀，来对您传入的数据类型进行分类。
 
@@ -80,7 +80,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>为遵守儿童保护法规，禁止使用第三方Cookie。 此参数由AdobeAdobe Experience Platform Identity Service动态设置，并取决于<code> idSyncDisable3rdPartySyncing</code>配置。 请参阅Adobe Experience Platform Identity服务</a>中的<a href="https://docs.adobe.com/content/help/en/id-service/using/reference/coppa.html" format="https" scope="external"> COPPA支持。 </a></p> </td>
+   <td colname="col2"> <p>为遵守儿童保护法规，禁止使用第三方Cookie。 此参数由AdobeAdobe Experience Platform Identity Service动态设置，并取决于<code> idSyncDisable3rdPartySyncing</code>配置。 请参阅Adobe Experience Platform Identity服务</a>中的<a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html" format="https" scope="external"> COPPA支持。 </a></p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
@@ -122,7 +122,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>指定<span class="keyword">Experience Cloud</span> ID服务设置和使用的Experience CloudID。 有关ECID的更多信息，请参阅<a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Experience CloudIdentity服务</a>。 </p> </td> 
+   <td colname="col2"> <p>指定<span class="keyword">Experience Cloud</span> ID服务设置和使用的Experience CloudID。 有关ECID的更多信息，请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Experience CloudIdentity服务</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
