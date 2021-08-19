@@ -7,10 +7,10 @@ title: isCoopSafe
 uuid: c5362a38-93c0-4edb-bdcb-106e43f33a92
 feature: DIL实施
 exl-id: 33dca495-6923-4966-9ec3-8b0fd2f17649
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 77%
+source-wordcount: '540'
+ht-degree: 76%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 77%
 要使用`isCoopSafe`，您必须：
 
 * 使用[!UICONTROL DIL] v6.11或更高版本。
-* 参与 [Experience Cloud 设备协作](https://docs.adobe.com/content/help/zh-Hans/device-co-op/using/home.html)。潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
+* 参与 [Experience Cloud 设备协作](https://experienceleague.adobe.com/docs/device-co-op/using/home.html)。潜在的协作成员也应查阅此文档，以确定 `isCoopSafe` 是否可以解决可能与如何使用数据来创建设备图有关的问题。
 
 * 与您的[!DNL Adobe]顾问合作，在您的设允许列表备协作帐阻止列表户上设置或标记。 没有启用这些标志的自助路径。
 
@@ -103,7 +103,7 @@ var dilInstance = DIL.create({
  </tbody> 
 </table>
 
-## 实例化后 API  {#post-instantiation}
+## 实例化后 API {#post-instantiation}
 
 这些 API 允许您覆盖 `isCoopSafe` 状态。这些 API 是必需的，因为它们允许您在页面没有刷新的网站或单页应用程序上更改访客的实例化后/登录后状态。例如，如果用户在您的网站或应用程序中进行了身份验证，且随后接受了允许设备协作使用其数据的使用条款政策，则您将需要调用这些 API。
 
