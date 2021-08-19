@@ -8,9 +8,9 @@ title: 配置文件合并规则和设备图常见问题解答
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 feature: 配置文件合并
 exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1550'
 ht-degree: 86%
 
 ---
@@ -111,7 +111,7 @@ ht-degree: 86%
 
 **区段预估大小是否包含根据由使用设备图选项的 [!UICONTROL Profile Merge Rule] 提供的连接而确定为符合区段资格条件的设备？**
 
-否。有关 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 的定义，请参阅[区段生成器中的特征和区段人口数据](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/features/segments/segment-builder-data.html)。
+否。有关 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 的定义，请参阅[区段生成器中的特征和区段人口数据](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html)。
 
  
 
