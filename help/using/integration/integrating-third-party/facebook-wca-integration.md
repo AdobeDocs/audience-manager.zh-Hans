@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Facebook WCA 集成
 feature: 第三方集成
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
-source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 5%
+source-wordcount: '851'
+ht-degree: 4%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 5%
 1. [!DNL Facebook Ad Account]
 2. [!DNL Audience Manager] 区段，可以分配到新目 [!DNL Facebook] 标。以下是[如何在[!DNL Audience Manager] UI中创建区段](/help/using/features/segments/segment-builder.md)。
 3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID])版本4.1.0或更高版本。在此处](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**下载最新版本**[。
-4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL])版本9.0或更高版本，可从此处 **[下载](https://github.com/Adobe-Marketing-Cloud/dil/releases)**。或者，如果您使用[服务器端转发(SSF)](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)将数据导入[!DNL Audience Manager]，则必须使用AppMeasurement版本2.12或更高版本。 使用[Analytics代码管理器](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html)下载[!DNL AppMeasurement]。
+4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL])版本9.0或更高版本，可从此处 **[下载](https://github.com/Adobe-Marketing-Cloud/dil/releases)**。或者，如果您使用[服务器端转发(SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html)将数据导入[!DNL Audience Manager]，则必须使用AppMeasurement版本2.12或更高版本。 使用[Analytics代码管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html)下载[!DNL AppMeasurement]。
 
 我们建议您使用[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)安装或升级步骤3和4中的库。
 
-## 步骤1 — 在[!DNL Audience Manager] {#step-1-create-facebook-destination}中创建[!UICONTROL Facebook Destination]
+## 步骤1 — 在[!DNL Audience Manager]中创建[!UICONTROL Facebook Destination] {#step-1-create-facebook-destination}
 
 在[!DNL Audience Manager]中创建新的[!UICONTROL URL Destination]，并将其命名为[!DNL Facebook Website Custom Audiences]。 创建目标时，请使用下面的设置。 您还可以参阅[配置URL目标](/help/using/features/destinations/create-url-destination.md)页面。
 
@@ -80,13 +80,13 @@ ht-degree: 5%
 
 保存[!UICONTROL destination]。 然后，您可以继续执行&#x200B;**区段映射**&#x200B;步骤。
 
-## 步骤2 — 区段映射 — 将区段映射到目标{#step-2-segment-mappings}
+## 步骤2 — 区段映射 — 将区段映射到目标 {#step-2-segment-mappings}
 
 在[配置URL目标](/help/using/features/destinations/create-url-destination.md)工作流中，将适用的区段映射到新创建的[!UICONTROL destination]。 请注意，映射值会自动填充[!DNL Audience Manager] [!UICONTROL segment ID]。
 
 输入结束日期（如果适用），否则留空，无结束日期。
 
-## 步骤3 — 在[!DNL Facebook Ads Manager] {#step-3-create-audience}中创建[!UICONTROL Audience]
+## 步骤3 — 在[!DNL Facebook Ads Manager]中创建[!UICONTROL Audience] {#step-3-create-audience}
 
 请参阅[!DNL Facebook]帮助文档中的[创建网站自定义受众](https://www.facebook.com/business/help/666509013483225)。 选择下表中的[!UICONTROL Create Audience]选项：
 
@@ -98,7 +98,7 @@ ht-degree: 5%
 | 最后 | 可选设置。 |
 | 受众名称 | 我们建议您使用相同的[!DNL Audience Manager]区段名称来保持一致性，除非您向此受众添加其他条件。 |
 
-## 步骤4 — 将[!UICONTROL Audience]分配给[!DNL Facebook Ads Manager] {#step-4-assign-audience-to-campaign}中的[!UICONTROL Campaign]
+## 步骤4 — 将[!UICONTROL Audience]分配给[!DNL Facebook Ads Manager]中的[!UICONTROL Campaign] {#step-4-assign-audience-to-campaign}
 
 创建[!DNL Custom Audience]后，将其分配给广告营销活动。 创建新营销活动或编辑现有营销活动，您会发现新创建的受众列在[!DNL Facebook]用户界面中。 如果[!DNL Audience Manager]将像素包含在区段中，则您的广告营销活动会定位那些在访问您的网站时看到浏览器上触发像素的用户。
 
