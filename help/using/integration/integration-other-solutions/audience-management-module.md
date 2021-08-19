@@ -8,10 +8,10 @@ title: 实施受众管理模块
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 feature: Adobe Analytics 集成
 exl-id: af2449cd-5fc8-454a-adce-0da7cae80548
-source-git-commit: 8fc6c96bf9e8216ef4458989c87f1f93ea9f0347
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 4%
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 除了启用扩展或实施本文档中描述的代码之外，您还必须：
 
-* 实施[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html)。
+* 实施[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
 * 为[!UICONTROL Adobe Analytics Admin Console]中的报表包启用[服务器端转发](https://docs.adobe.com/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
 
 ## 实施 {#implementation}
@@ -36,7 +36,7 @@ ht-degree: 4%
 
 ### 使用[!DNL Adobe Experience Platform Launch]实施
 
-[!DNL Adobe] 建议您使用 [](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en) Launch扩展来 [!DNL Adobe Analytics] 对资 [!DNL Audience Manager] 产设置和。在这种情况下，您无需手动复制任何代码。 您而是必须在[!DNL Analytics Launch]扩展中启用数据共享，如下图所示。 另请参阅[Adobe Analytics扩展](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager)文档。
+[!DNL Adobe] 建议您使用 [](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en) Launch扩展来 [!DNL Adobe Analytics] 对资 [!DNL Audience Manager] 产设置和。在这种情况下，您无需手动复制任何代码。 您而是必须在[!DNL Analytics Launch]扩展中启用数据共享，如下图所示。 另请参阅[Adobe Analytics扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager)文档。
 
 >[!TIP]
 >
@@ -44,7 +44,7 @@ ht-degree: 4%
 
 ![如何启用从Adobe Analytics扩展到Audience Manager的数据共享](/help/using/integration/assets/analytics-to-aam.png)
 
-## 定义的代码元素{#code-elements-defined}
+## 定义的代码元素 {#code-elements-defined}
 
 下表在代码示例中定义了重要变量。
 
@@ -53,7 +53,7 @@ ht-degree: 4%
 | `partner` | 必需。这是[!DNL Adobe]分配给您的合作伙伴名称。 它有时称为[!UICONTROL partner ID]或合作伙伴子域。  如果您不知道自己的合作伙伴名称，请联系您的[!DNL Adobe]顾问或[客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)。 |
 | `containerNSID` | 必需。大多数客户只能设置`"containerNSID":0` 。 但是，如果您的公司需要自定义与其他容器的ID同步，您可以在此处指定该容器ID。 |
 | `uuidCookie` | 可选。此配置允许您在第一方域中设置[!DNL Adobe] Cookie。 此[!DNL cookie]包含[UUID](../../reference/ids-in-aam.md) 。 |
-| `visitorService` - `namespace` | 必需。如果您使用与[!UICONTROL AppMeasurement]版本2.10或更高版本捆绑在一起的[!DNL AudienceManagement]模块，则需要`namespace`参数。 此[!UICONTROL AudienceManagement]模块要求您使用[!UICONTROL Adobe Experience Platform Identity Service] 3.3或更高版本。 <br><br>是 [!UICONTROL Experience Cloud Organization ID] 公司在注册时获得的ID  [!UICONTROL Experience Cloud]。在[组织和帐户关联](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)中查找您公司的组织ID。 |
+| `visitorService` - `namespace` | 必需。如果您使用与[!UICONTROL AppMeasurement]版本2.10或更高版本捆绑在一起的[!DNL AudienceManagement]模块，则需要`namespace`参数。 此[!UICONTROL AudienceManagement]模块要求您使用[!UICONTROL Adobe Experience Platform Identity Service] 3.3或更高版本。 <br><br>是 [!UICONTROL Experience Cloud Organization ID] 公司在注册时获得的ID  [!UICONTROL Experience Cloud]。在[组织和帐户关联](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)中查找您公司的组织ID。 |
 
 ## 结果：数据转发到[!DNL Audience Manager] {#results-data-forwarding}
 
