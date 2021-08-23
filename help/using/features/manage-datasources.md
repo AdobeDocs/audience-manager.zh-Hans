@@ -8,10 +8,10 @@ title: 管理数据源
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 feature: 数据源
 exl-id: 1c20988e-4a09-4d56-b454-d48b75eed1ce
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 6%
+source-wordcount: '378'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 6%
 1. 提供[!UICONTROL integration code]。 通常，[!UICONTROL integration codes]是可选的。 当您想要执行以下操作时，需要使用这些参数：
 
    * [创建跨设备数据源](../features/profile-merge-rules/merge-rules-start.md#create-data-source)。
-   * 使用[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html)。
+   * 使用[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
    * 使用[配置文件合并规则](../features/profile-merge-rules/merge-rules-start.md)。
 
 1. 选择&#x200B;**[!UICONTROL ID Type]**。 [!UICONTROL ID Type] 选项包括：
@@ -61,7 +61,7 @@ ht-degree: 6%
 1. 选中[!UICONTROL Data Source Setting]复选框，以将选项应用于[!UICONTROL data source]。
 2. 单击 **[!UICONTROL Save]**.
 
-## 删除数据源{#delete-data-source}
+## 删除数据源 {#delete-data-source}
 
 <!-- t_datasource_delete.xml -->
 
@@ -72,7 +72,7 @@ ht-degree: 6%
 >请注意以下限制：
 >
 >* 无法删除[活动受众或数据源同步特征](../features/traits/client-activity-synced-audience-traits.md)。
->* 对于使用Adobe Analytics的客户：Audience Manager不允许您删除从[!DNL Analytics]报表包中自动创建的数据源。 使用[核心服务](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services-landing.html)取消映射这些数据源。
+>* 对于使用Adobe Analytics的客户：Audience Manager不允许您删除从[!DNL Analytics]报表包中自动创建的数据源。 使用[核心服务](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services-landing.html)取消映射这些数据源。
 
 
 1. 单击 **[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**.
