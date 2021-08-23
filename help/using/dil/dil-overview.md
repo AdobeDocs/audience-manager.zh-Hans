@@ -8,10 +8,10 @@ title: 了解数据集成库 (DIL)
 uuid: 77b12f35-81e4-4639-ada6-bf982f27b36e
 feature: DIL实施
 exl-id: f194a422-27ed-4a74-9583-8de3b6786caf
-source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 16%
+source-wordcount: '490'
+ht-degree: 12%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 16%
 
 >[!IMPORTANT]
 >
->从版本8.0（2018年8月发布）开始，[!UICONTROL DIL]对[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html)、版本3.3或更高版本具有硬依赖关系。 它依赖[!DNL ID Service]来触发ID同步和URL目标。 如果[!DNL ID Service]缺失、旧或未配置，则会发生错误。
+>从版本8.0（2018年8月发布）开始，[!UICONTROL DIL]对[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)、版本3.3或更高版本具有硬依赖关系。 它依赖[!DNL ID Service]来触发ID同步和URL目标。 如果[!DNL ID Service]缺失、旧或未配置，则会发生错误。
 >
 >我们建议您使用[!DNL Adobe Experience Platform Launch]来实施和管理[!DNL DIL]和[!DNL Adobe Experience Platform Identity Service]库。
 
@@ -30,20 +30,20 @@ ht-degree: 16%
 * 下载[Adobe Experience Platform Identity Service](https://github.com/Adobe-Marketing-Cloud/id-service/releases)
 * 下载[DIL](https://github.com/Adobe-Marketing-Cloud/dil/releases)
 
-## DIL{#purpose-dil}的用途
+## DIL目的 {#purpose-dil}
 
-[!UICONTROL DIL] 是API库。您可以将其视为[!DNL Adobe Audience Manager]的帮助程序代码正文。 使用[!DNL Audience Manager]并不需要，但[!UICONTROL DIL]提供的方法和函数意味着您无需开发自己的代码即可将数据发送到[!DNL Audience Manager]。 此外， [!UICONTROL DIL]与[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)提供的API不同。 该服务旨在跨不同的[!DNL Experience Cloud]解决方案管理访客身份。 相反，[!UICONTROL DIL]的设计目标是：
+[!UICONTROL DIL] 是API库。您可以将其视为[!DNL Adobe Audience Manager]的帮助程序代码正文。 使用[!DNL Audience Manager]并不需要，但[!UICONTROL DIL]提供的方法和函数意味着您无需开发自己的代码即可将数据发送到[!DNL Audience Manager]。 此外， [!UICONTROL DIL]与[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)提供的API不同。 该服务旨在跨不同的[!DNL Experience Cloud]解决方案管理访客身份。 相反，[!UICONTROL DIL]的设计目标是：
 
 * 进行事件调用并将数据发送到[数据收集服务器](../reference/system-components/components-data-collection.md)。
 * 将数据发送到[目标](../features/destinations/destinations.md)。
 
-## 获取和实施DIL代码{#get-implement-dil-code}
+## 获取和实施DIL代码 {#get-implement-dil-code}
 
-[!UICONTROL DIL] 代码可在此处 **[下载](https://github.com/Adobe-Marketing-Cloud/dil/releases)**。请注意，从版本8.0（2018年8月发布）开始，[!UICONTROL DIL]对[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)、版本3.3或更高版本具有硬依赖关系。 它依赖[!DNL ID Service]来触发ID同步和[!DNL URL destinations]。 如果[!DNL ID Service]缺失、旧或未配置，则会发生错误。
+[!UICONTROL DIL] 代码可在此处 **[下载](https://github.com/Adobe-Marketing-Cloud/dil/releases)**。请注意，从版本8.0（2018年8月发布）开始，[!UICONTROL DIL]对[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)、版本3.3或更高版本具有硬依赖关系。 它依赖[!DNL ID Service]来触发ID同步和[!DNL URL destinations]。 如果[!DNL ID Service]缺失、旧或未配置，则会发生错误。
 
 我们建议您改用[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)，而不是使用[!UICONTROL DIL]手动设置[!DNL Audience Manager]。 [!DNL Adobe Experience Platform Launch] 是推荐的实施工具，因为它简化了代码部署、放置和版本管理。有关[!DNL Adobe Experience Platform Launch]中[Audience Manager扩展](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/audience-manager/overview.html)的更多信息。
 
-## 示例调用{#sample-code}
+## 示例调用 {#sample-code}
 
 [!UICONTROL DIL] 在事件调 [!DNL Audience Manager] 用中向发送数据。事件调用是来自您页面的XML HTTP请求。 它使用`POST`方法发送请求正文中的数据。
 
