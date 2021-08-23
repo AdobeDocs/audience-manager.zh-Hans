@@ -8,9 +8,9 @@ title: 实例级别 DIL 方法
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
 feature: DIL实施
 exl-id: 0342439d-708e-461c-b155-a3ee423f5437
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1105'
 ht-degree: 13%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 13%
 
 使用实例级别[!UICONTROL DIL] API，可以以编程方式创建和使用Audience Manager对象。 实例级方法可增强由类级方法建立的API功能。
 
-## 实例级别DIL方法{#get-started-dil-methods}快速入门
+## 实例级别DIL方法快速入门 {#get-started-dil-methods}
 
 <!-- 
 
@@ -723,8 +723,8 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >
 >* [关键变量的名称要求](../features/traits/trait-key-name-requirements.md)
 * [关键变量的前缀要求](../features/traits/trait-variable-prefixes.md)
-* [Adobe Experience Platform Identity服务中的同步函数](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
+* [Adobe Experience Platform Identity服务中的同步函数](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/idsync.html)
 * [DIL 创建](../dil/dil-class-overview/dil-create.md#dil-create)
-* [Adobe Experience Platform Identity Service:UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
-* [Adobe Experience Platform Identity服务中的CORS支持](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
+* [Adobe Experience Platform Identity Service:UseCORSOnly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html)
+* [Adobe Experience Platform Identity服务中的CORS支持](https://experienceleague.adobe.com/docs/id-service/using/reference/cors.html)
 
