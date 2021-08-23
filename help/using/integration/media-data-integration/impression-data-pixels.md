@@ -7,7 +7,7 @@ title: 通过像素调用捕获营销活动展示数据
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 feature: Adobe Campaign集成
 exl-id: 04e6f1e5-5075-4221-a310-deb3717458ad
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 20%
@@ -31,12 +31,12 @@ ht-degree: 20%
 事件调用由使用以下语法的键值对组成：
 
 ```
-http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID&d_creative=<i>creative_id</i>&d_adgroup=<i>adgroup_id</i>&d_placement=<i>placement_id</i>&d_campaign=<i>campaign_id</i>[&d_cid=(GAID|IDFA)%01 DPUUID]&d_bust=cache buster value
+https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID&d_creative=<i>creative_id</i>&d_adgroup=<i>adgroup_id</i>&d_placement=<i>placement_id</i>&d_campaign=<i>campaign_id</i>[&d_cid=(GAID|IDFA)%01 DPUUID]&d_bust=cache buster value
 ```
 
 在键值对中，值变量是广告服务器插入的ID或宏。 加载广告标记时，该`%macro%`将被替换为所需的相应值。 此调用不返回响应。
 
-## 支持的键值对{#supported-key-value-pairs}
+## 支持的键值对 {#supported-key-value-pairs}
 
 展示事件调用接受形成键值对的数据。 下表列出并描述了用于保存这些变量的键。 如果要捕获并分析[Audience Optimization报表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)中的数据，则需要使用其中的许多数据。
 
