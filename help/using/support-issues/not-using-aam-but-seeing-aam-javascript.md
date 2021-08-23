@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 我们未使用 Audience Manager，但却在 Javascript 调试器中看到 Audience Manager Javascript 调用，这是为什么？
 feature: 支持
 exl-id: f409e326-17b3-40ee-8570-8d99119fe337
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 100%
+source-wordcount: '185'
+ht-degree: 92%
 
 ---
 
@@ -23,6 +23,6 @@ ht-degree: 100%
 
 ## 回答
 
-您可能正在对资产运行 [Experience Cloud Identity Service](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html)。如果是这样的话，那么看到 Audience Manager Javascript 调用不一定意味着您正在运行 Audience Manager，而是意味着 Audience Manager 正在为 Identity Service 提供支持。
+您可能正在对资产运行 [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。如果是这样的话，那么看到 Audience Manager Javascript 调用不一定意味着您正在运行 Audience Manager，而是意味着 Audience Manager 正在为 Identity Service 提供支持。
 
-Audience Manager 服务器调用通常用于[同步客户 ID](https://docs.adobe.com/content/help/zh-Hans/id-service/using/id-service-api/methods/setcustomerids.html)。
+Audience Manager 服务器调用通常用于[同步客户 ID](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html)。
