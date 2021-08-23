@@ -8,9 +8,9 @@ title: 创建基于规则的特征或已载入的特征
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
 feature: 特征
 exl-id: cad318ee-93b2-4afa-8a2f-a67b068eec0a
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '381'
 ht-degree: 8%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 8%
   </tr>
    <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 事件类型</span></b> </td> 
-   <td colname="col2"> 将特征分配给类型或类别，通常根据函数（例如，转化、网站访客、合作伙伴、页面查看等）。 可选。 <p> 要了解如何创建转化特征，请参阅<a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">在Audience Manager视频中创建转化特征</a> 。 </p></td> 
+   <td colname="col2"> 将特征分配给类型或类别，通常根据函数（例如，转化、网站访客、合作伙伴、页面查看等）。 可选。 <p> 要了解如何创建转化特征，请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">在Audience Manager视频中创建转化特征</a> 。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 集成代码</span></b> </td> 
@@ -81,7 +81,7 @@ ht-degree: 8%
  </tbody> 
 </table>
 
-## 设置[!UICONTROL Trait]过期间隔{#set-expiration-interval}
+## 设置[!UICONTROL Trait]过期间隔 {#set-expiration-interval}
 
 在[!UICONTROL Trait Builder]中，[!UICONTROL Advanced Options]允许您为[!UICONTROL trait]设置生存时间([!DNL TTL])间隔。 [!DNL TTL] 定义符合条件的访客在中停留的天 [!UICONTROL trait] 数（默认为120天）。如果设置为0，则[!UICONTROL trait]成员资格永远不会过期。
 
