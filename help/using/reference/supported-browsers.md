@@ -7,10 +7,10 @@ title: 支持的浏览器
 uuid: dffecdb5-d94d-4001-8f2a-9d1d77ce2213
 feature: 参考
 exl-id: 5fcb1a64-5e45-4973-9e20-7d4d07071cbf
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe 支持以下浏览器的最新主要版本：
 
 * **Google Chrome**
 
-   从 [http://www.google.com/chrome](http://www.google.com/chrome) 获取 Chrome 的最新版本。
+   从[https://www.google.com/chrome](https://www.google.com/chrome)获取Chrome的最新版本。
 
 * **Microsoft Edge**
 
@@ -38,10 +38,10 @@ Adobe 支持以下浏览器的最新主要版本：
 
 * **Mozilla Firefox**
 
-   从 [http://www.mozilla.com/zh-CN/firefox](http://www.mozilla.com/zh-CN/firefox) 获取 Firefox 的最新版本。
+   从[https://www.mozilla.com/en-US/firefox](https://www.mozilla.com/en-US/firefox)获取Firefox的最新版本。
 
 * **Safari**
 
-   从 [http://www.apple.com/safari/download](http://www.apple.com/safari/download) 获取 Safari 的最新版本。
+   从[https://www.apple.com/safari/download](https://www.apple.com/safari/download)获取Safari的最新版本。
 
 其他浏览器或许也可以使用，但我们的技术和产品团队不为这些浏览器提供支持。如果您在使用 [!DNL Audience Manager] 时遇到问题，请确保您使用的是最新且受支持的浏览器。
