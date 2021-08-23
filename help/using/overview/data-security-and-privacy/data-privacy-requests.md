@@ -8,10 +8,10 @@ title: 数据隐私请求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 feature: 数据管理和隐私
 exl-id: a1fc9c21-3417-4899-a585-92ad2cb25362
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 59%
+source-wordcount: '1482'
+ht-degree: 58%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 59%
 
 我们理解您承诺在法规规定的期限内响应数据隐私请求。
 
-## 数据删除请求 {#delete-data}
+## 数据删除请求  {#delete-data}
 
 您可以通过[Privacy ServiceUI](https://privacyui.cloud.adobe.io)（文档[此处](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)）或通过调用Privacy ServiceAPI（文档[此处](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)和[!DNL API]此处引用[此处](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)）发送数据删除请求。
 
@@ -97,8 +97,8 @@ Adobe 理解您承诺在 30 天内响应数据隐私客户请求。因此，[!DN
    <td colname="col1"> <p>移动设备 </p> </td> 
    <td colname="col2"> <p>请参阅适用于以下两类移动设备的选择退出和隐私设置： </p> <p> 
      <ul id="ul_78042D6D302F4119A2439BF71F228288"> 
-      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://docs.adobe.com/content/help/zh-Hans/mobile-services/android/gdpr-privacy-android/privacy.html" format="https" scope="external"> Android 设备</a> </li> 
-      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://docs.adobe.com/content/help/zh-Hans/mobile-services/ios/privacy-gdpr-ios/privacy.html" format="https" scope="external"> iOS 设备</a> </li> 
+      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html" format="https" scope="external"> Android 设备</a> </li> 
+      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html" format="https" scope="external"> iOS 设备</a> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -162,7 +162,7 @@ Adobe 理解您承诺在 30 天内响应数据隐私客户请求。因此，[!DN
 * 目标合作伙伴将收到对该设备 ID 进行取消分段的请求。取消分段既适用于[实时](data-privacy-requests.md#aam-partners-with-unsegmentation)目标，也适用于批量目标。
 * 不会删除历史数据。
 
-## [!DNL Audience Manager] 具有取消分段功能的合作伙伴  {#aam-partners-with-unsegmentation}
+## [!DNL Audience Manager] 具有取消分段功能的合作伙伴 {#aam-partners-with-unsegmentation}
 
 为了帮助您自动处理消费者的数据隐私请求，[!DNL Audience Manager]将尝试通过向激活合作伙伴发送取消分段（或删除区段）信息，来向其告知数据主体提出的数据删除请求。
 
