@@ -7,9 +7,9 @@ title: 出站数据文件名语法和示例
 uuid: effdcaf6-c37c-45f3-9d2f-a938a9da47a6
 feature: 出站数据传输
 exl-id: 0944da72-5a8d-45a2-951e-b2988eb3d490
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '693'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 6%
 >
 >样式元素（`monospaced text`、*斜体*、括号`[ ]` `( )`等） 本文档中指示了代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
 
-## 语法和文件名元素{#syntax-file-name}
+## 语法和文件名元素 {#syntax-file-name}
 
 出站文件名包含以下元素。 以下所有元素都是可选的。
 
@@ -63,7 +63,7 @@ ht-degree: 6%
       <li id="li_94DAFA169380405981AFEF1B581997E6">20914 - <span class="keyword"> Google Advertiser ID </span>（原始，未哈希处理） </li> 
       <li id="li_DE74BE06331C49CF87606A192D815B96">20915 - <span class="keyword">适用于广告商的Apple ID </span>（原始，未哈希处理） </li> 
       <li id="li_E0A033FEC3174EF08E93EB7C65266337">供应商ID — 第三方用户ID(Web/Cookie) </li> 
-     </ul> </p> <p>有关更多详细信息，请参阅<a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">全局数据源</a>。</p></td> 
+     </ul> </p> <p>有关更多详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/global-data-sources.html">全局数据源</a>。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>PID_ALIAS </i></code> </p> </td> 
@@ -92,7 +92,7 @@ ht-degree: 6%
  </tbody> 
 </table>
 
-## 文件名示例{#file-name-examples}
+## 文件名示例 {#file-name-examples}
 
 ### 场景1
 
@@ -148,7 +148,7 @@ ht-degree: 6%
  <li> <code> ftp_1234_45454_XYZCustomer_full_1486140843200001.sync.gz </code> </li> 
 </ul>
 
-## 出站数据文件内容：语法和参数{#outbound-contents-syntax}
+## 出站数据文件内容：语法和参数 {#outbound-contents-syntax}
 
 描述用于组织出站数据文件中信息的必填字段、语法和惯例。 根据这些规范设置数据格式。
 
