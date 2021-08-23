@@ -7,14 +7,14 @@ title: 数据源列表和设置
 uuid: 280a6acd-fef0-4737-a96d-9e22fbc8bfaf
 feature: 数据源
 exl-id: c561d51e-e1dc-413e-bf24-13f04f10abe6
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 3%
+source-wordcount: '1116'
+ht-degree: 2%
 
 ---
 
-# [!UICONTROL Data Sources] 列表和设置  {#data-sources-list-and-settings}
+# [!UICONTROL Data Sources] 列表和设置 {#data-sources-list-and-settings}
 
 查看当前配置的[!UICONTROL data sources]列表，添加新的[!UICONTROL data sources]，并编辑现有的[!UICONTROL data sources]。
 
@@ -30,7 +30,7 @@ ht-degree: 3%
 * 按名称搜索[!UICONTROL data sources]。
 * 创建、编辑和删除[!UICONTROL data sources]。
 
-## [!DNL Data Source] 设置和菜单选项  {#settings-menu-options}
+## [!DNL Data Source] 设置和菜单选项 {#settings-menu-options}
 
 [!UICONTROL Data Source]管理界面不同部分中的设置可识别您的[!DNL data source]，确定其使用或共享方式，并允许您为[!UICONTROL Onboarding Status Report]启用错误报告。
 
@@ -55,7 +55,7 @@ ht-degree: 3%
       <li id="li_063F1B263B3B4D69B8880F7ACCB82450"> <b><span class="uicontrol"> 跨设备</span></b>:客户提供的经过身份验证的ID。如果要创建，请选择此选项： 
        <ul id="ul_D998B4081AD843C2B3B3E642DD011C1F"> 
         <li id="li_C9D2AF70603043D7BE9DF12FD494D7C7">跨设备数据源并构建<span class="wintitle">配置文件合并规则</span>。 </li> 
-        <li id="li_992BD05E2AFE454CAA4460DDEB2B839B">数据源使用由<a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external"> Adobe Experience Cloud设备协作</a>提供的链接，或与<span class="keyword">Audience Manager</span>集成的其他第三方设备图。 </li> 
+        <li id="li_992BD05E2AFE454CAA4460DDEB2B839B">数据源使用由<a href="https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html" format="https" scope="external"> Adobe Experience Cloud设备协作</a>提供的链接，或与<span class="keyword">Audience Manager</span>集成的其他第三方设备图。 </li> 
        </ul> </li> 
      </ul> </p> </td> 
   </tr> 
@@ -112,7 +112,7 @@ ht-degree: 3%
      <ul id="ul_3BC963CE378B4F6CB1861643A4541634"> 
       <li id="li_B86C5E7847424A2B9C094DF02741DDB8"> <b><span class="uicontrol"> 客户ID</span></b>:使用客户ID标识入站数据。 </li> 
       <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol"> Audience ManagerID</span></b>:使用Audience Manager ID标识入 <span class="keyword"> 站</span> 数据。 </li> 
-      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience CloudID</span></b>:使用Experience Cloud ID标识入 <span class="keyword"> 站</span> 数据。请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Experience CloudID</a>。 </li> 
+      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience CloudID</span></b>:使用Experience Cloud ID标识入 <span class="keyword"> 站</span> 数据。请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Experience CloudID</a>。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
