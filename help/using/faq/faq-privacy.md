@@ -7,10 +7,10 @@ title: 隐私和数据保留常见问题解答
 uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
 feature: 数据管理和隐私
 exl-id: bccf49d7-1a3b-4286-86fb-59e472af4501
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 84%
+source-wordcount: '759'
+ht-degree: 83%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 84%
 
 **Audience Manager 如何使用 Cookie？Audience Manager 会设置哪些 Cookie？**
 
-请参阅 [Audience Manager Cookie](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/ec-cookies/cookies-am.html)。
+请参阅 [Audience Manager Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html)。
 
 **美国的 Audience Manager 客户能否定位欧盟资产的用户？**
 
