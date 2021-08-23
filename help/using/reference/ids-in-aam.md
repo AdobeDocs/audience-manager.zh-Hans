@@ -8,14 +8,14 @@ title: Audience Manager 中的 ID 索引
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
 feature: 参考
 exl-id: 1caf3c6a-ebfd-49f1-9ebd-d4604474c070
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '961'
 ht-degree: 5%
 
 ---
 
-# [!DNL Audience Manager] {#index-of-ids-in-audience-manager}中的ID索引
+# [!DNL Audience Manager]中的ID索引 {#index-of-ids-in-audience-manager}
 
 ## 概述 {#overview}
 
@@ -32,9 +32,9 @@ ht-degree: 5%
 | ID | 名称和描述 | 用法和示例 | 用户界面位置 |
 |---|---|---|---|
 | [!DNL AAM UUID] | [!DNL Adobe Audience Manager Unique User ID]，也称为 [!UICONTROL Device ID]。一个38位的数字设备ID， [!DNL Audience Manager]与其交互的每个设备相关联。 每当您在[!DNL Audience Manager] UI中看到提及独特用户时，请考虑此ID。 Audience Manager将此ID另存为[!DNL cookie]在`demdex.net`第三方域中。 | 在[!DNL DCS]调用中， `uuid`前面有`d_`前缀。 <br>示例: `d_uuid = 07955261652886032950143702505894272138` | 创建[相似人群拓展模型](../features/algorithmic-models/create-model.md)时，可以按[!UICONTROL Device ID]过滤[!DNL traits]，创建区段](../features/segments/segment-builder.md)时，可以按过滤[。 运行特征](../reporting/general-reports.md)的常规报表和特征[的趋势报表](../reporting/trend-reports.md)时，您还可以按[!UICONTROL Device ID]过滤结果。[ |
-| [!DNL ImsOrgId] | [!DNL Organization ID]。这是公司在注册[!DNL Experience Cloud]帐户时获得的ID。 | `5DC5123F5245B1D20A490D46@AdobeOrg` | 在[!DNL Audience Manager]用户界面中不可见。 要了解如何查找公司的[!DNL Organization ID]，请阅读[查找组织ID](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)。 |
+| [!DNL ImsOrgId] | [!DNL Organization ID]。这是公司在注册[!DNL Experience Cloud]帐户时获得的ID。 | `5DC5123F5245B1D20A490D46@AdobeOrg` | 在[!DNL Audience Manager]用户界面中不可见。 要了解如何查找公司的[!DNL Organization ID]，请阅读[查找组织ID](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)。 |
 | [!DNL PID] | [!DNL Partner ID]。[!DNL PID]是[!DNL Audience Manager]中的公司ID。 Audience Manager将[!DNL imsOrgId]关联到[!DNL PID]。 | `1352` | 在[!DNL Audience Manager]用户界面中不可见。 |
-| [!DNL ECID], [!DNL MID] | [!DNL Experience Cloud] ID. [!DNL Experience Cloud] ID（[!DNL ECID]，旧版缩写[!DNL MID]或[!DNL MCID]）是通过数学方法从您的[!DNL Organization ID]和[!DNL Audience Manager] [!UICONTROL Unique User ID]中计算得来的。 只要这些ID保持不变，为特定用户生成正确的[!DNL ECID]就只是一个数学问题。 使用相同的[!DNL Organization ID]和[!DNL Audience Manager] [!DNL UUID]，您每次会获得相同的[!DNL ECID]值。 您可以在[Cookie和Experience CloudID](https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html#section-15f69c0bac394b4b9966a23fbc586d17)文档中阅读有关[!DNL ECID]的更多信息。 | `mid = 08382830887934830189014177072406221371` | 在[!DNL Audience Manager]用户界面中不可见。 |
+| [!DNL ECID], [!DNL MID] | [!DNL Experience Cloud] ID. [!DNL Experience Cloud] ID（[!DNL ECID]，旧版缩写[!DNL MID]或[!DNL MCID]）是通过数学方法从您的[!DNL Organization ID]和[!DNL Audience Manager] [!UICONTROL Unique User ID]中计算得来的。 只要这些ID保持不变，为特定用户生成正确的[!DNL ECID]就只是一个数学问题。 使用相同的[!DNL Organization ID]和[!DNL Audience Manager] [!DNL UUID]，您每次会获得相同的[!DNL ECID]值。 您可以在[Cookie和Experience CloudID](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html#section-15f69c0bac394b4b9966a23fbc586d17)文档中阅读有关[!DNL ECID]的更多信息。 | `mid = 08382830887934830189014177072406221371` | 在[!DNL Audience Manager]用户界面中不可见。 |
 | [!DNL SID] | [!UICONTROL Trait ID]。[!UICONTROL Trait ID]唯一标识[!DNL Audience Manager]环境中的[!DNL traits]。 | 在[!DNL DCS]调用中， `SID`前面有`d_`前缀。 <br>示例 `d_sid=289983`. | 将[!UICONTROL Trait ID]分配给每个[!DNL trait]，并显示在[特征](../features/traits/trait-details-page.md)页面的用户界面中。 |
 | [!DNL SID] | [!UICONTROL Segment ID]。[!UICONTROL Segment ID]唯一标识[!DNL Audience Manager]环境中的[!DNL segments]。 | 在[!DNL DCS]调用中， `SID`前面有`d_`前缀。 <br>示例 `d_sid=4798574`. | 将[!UICONTROL Segment ID]分配给每个[!DNL segment]，并显示在[区段](../features/segments/segment-summary-view.md)页面的用户界面中。 |
 | [!DNL csegID] | [!DNL Legacy Segment ID]。此ID唯一标识[!DNL Audience Manager]环境中的区段。 | `741232` | [!UICONTROL Legacy Segment ID]分配给每个区段，并显示在[区段](../features/segments/segment-summary-view.md)页面的用户界面中。 |
