@@ -8,10 +8,10 @@ title: 产品特性和功能常见问题解答
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
 feature: 概述
 exl-id: b5884d26-0be1-4eaa-99a1-7247942bf6c9
-source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 88%
+source-wordcount: '609'
+ht-degree: 84%
 
 ---
 
@@ -33,7 +33,7 @@ faq_features_functions.xml
 
 例如，*`Organization ID`* 应如下所示：`1FD6776A524453CC0A490D44@AdobeOrg`。
 
-*`Organization ID`* 可由 Audience Manager [DIL](../dil/dil-overview.md) API、[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hans/id-service/using/home.html) 及其他 [!DNL Experience Cloud] 解决方案使用。具有管理员权限的用户可在 [!DNL Adobe Admin Console] 上找到 *`Organization ID`*。请参阅[管理 - 用户管理常见问题解答](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+*`Organization ID`* 可由 Audience Manager [DIL](../dil/dil-overview.md) API、[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) 及其他 [!DNL Experience Cloud] 解决方案使用。具有管理员权限的用户可在 [!DNL Adobe Admin Console] 上找到 *`Organization ID`*。请参阅[管理 - 用户管理常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
  
 
@@ -95,4 +95,4 @@ Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和
 
 **Adobe Analytics 区段与 Audience Manager 区段之间是否有任何区别？**
 
-是，有关两者之间区别的深入说明，请参阅[了解 Analytics 和 Audience Manager 中的区段](https://docs.adobe.com/content/help/zh-Hans/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)。
+是，有关两者之间区别的深入说明，请参阅[了解 Analytics 和 Audience Manager 中的区段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)。
