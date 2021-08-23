@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: 算法模型
 exl-id: 57eaeb09-0e0e-4ce9-9b25-f1a27f4f35ce
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1505'
 ht-degree: 8%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 8%
 
 作为一家媒体公司，我希望对受众进行分类，以便我能够以优惠价格销售广告空间，同时为访客提供相关广告。
 
-## [!UICONTROL Predictive Audiences]模型的工作方式{#how-predictive-audiences-models-work}
+## [!UICONTROL Predictive Audiences]模型的工作原理 {#how-predictive-audiences-models-work}
 
 创建[!UICONTROL Predictive Audiences]模型时，需要完成以下三个步骤：
 
@@ -68,7 +68,7 @@ ht-degree: 8%
 1. 然后，您可以选择一个特征或区段来定义要分类的目标受众。
 1. 最后，为模型选择名称、将存储预测区段的数据源和[!UICONTROL Profile Merge Rule]模型。
 
-### 角色{#selection-personas}的选择标准
+### 角色的选择标准 {#selection-personas}
 
 您可以选择任何第一方特征或区段来定义角色。 但是，为了获得最佳结果，以下是一组推荐的最佳实践：
 
@@ -78,7 +78,7 @@ ht-degree: 8%
 * 选择重叠程度最低的基线特征或区段。
 * 确保在数字属性中捕获粒度特征。
 
-### 目标受众的选择标准{#selection-audience}
+### 目标受众的选择标准 {#selection-audience}
 
 根据您的用例，无论您是要对用户进行实时、批量分类，还是同时对用户进行分类，都应选择具有大量实时和/或总群体的目标受众（[!UICONTROL trait]或[!UICONTROL segment]）。 与角色选择类似，我们建议目标受众[!UICONTROL trait]或[!UICONTROL segment]具有富配置文件（富集[!UICONTROL traits]）的用户。
 
@@ -86,14 +86,14 @@ ht-degree: 8%
 
 作为最佳实践，我们建议选择与目标受众[!UICONTROL Profile Merge Rule]具有相同配置的[!UICONTROL Profile Merge Rule]，或者选择包含目标受众的配置文件类型（设备配置文件或已验证的配置文件）的。
 
-### [!UICONTROL Predictive Audiences] 模型培训阶段  {#model-training}
+### [!UICONTROL Predictive Audiences] 模型培训阶段 {#model-training}
 
 在算法将第一方受众分类为正确的角色之前，它需要根据您的数据进行自我培训。
 
 对于您定义的每个角色，算法会分析其各自的受众，并评估其用户在过去30天内的任何实时和/或已载入的特征活动。
 此步骤每24小时进行一次，以考虑第一方受众中的更改。
 
-### [!UICONTROL Predictive Audiences] 模型分类阶段  {#model-classification}
+### [!UICONTROL Predictive Audiences] 模型分类阶段 {#model-classification}
 
 对于实时受众和批量受众分类，模型首先会检查用户是否属于目标受众。 如果用户符合目标受众的条件并且不属于任何角色，则模型会为他们分配角色资格分数。
 
@@ -122,11 +122,11 @@ ht-degree: 8%
 
 ## [!UICONTROL Data Export Controls] {#dec}
 
-由[!UICONTROL Predictive Audiences]模型创建的预测区段从以下第一方数据源继承[数据导出控制](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html):
+由[!UICONTROL Predictive Audiences]模型创建的预测区段从以下第一方数据源继承[数据导出控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html):
 
 1. 构建模型时您选择的第一方数据源。
 1. 目标受众的第一方数据源。 具体而言，构成目标受众的[!UICONTROL traits]或[!UICONTROL segments]的数据导出控制。
-1. 为模型选择的[!UICONTROL Profile Merge Rule]的[数据导出控件](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)。
+1. 为模型选择的[!UICONTROL Profile Merge Rule]的[数据导出控件](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)。
 
 新创建的预测[!UICONTROL traits]和[!UICONTROL segments]将具有与上述第一方数据源并集相同的隐私限制。
 
@@ -146,6 +146,6 @@ ht-degree: 8%
 
 ## [!UICONTROL Role-Based Access Controls] {#rbac}
 
-您为角色和受众分类选择的特征和区段受以下Audience Manager的约束：[基于角色的访问控制](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/administration/administration-overview.html)。
+您为角色和受众分类选择的特征和区段受以下Audience Manager的约束：[基于角色的访问控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html)。
 
-Audience Manager用户只能选择具有[查看](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions)权限的角色和目标受众的特征或区段。
+Audience Manager用户只能选择具有[查看](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions)权限的角色和目标受众的特征或区段。
