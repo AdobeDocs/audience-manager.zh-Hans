@@ -7,9 +7,9 @@ title: DCS 错误代码、消息和示例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
-source-git-commit: 38c4c46709491656071f4a958e9f0de26d42dd74
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1545'
 ht-degree: 4%
 
 ---
@@ -20,16 +20,16 @@ ht-degree: 4%
 
 在下表中，*斜体*&#x200B;表示变量占位符。
 
-## 系统错误代码{#system-error-codes}
+## 系统错误代码 {#system-error-codes}
 
 | 错误代码 | 错误消息 | 描述 |
 |---|---|---|
 | 0 | 未指定错误 | 这是一个全包错误，用于处理其他错误处理程序未涵盖的事件。 对此错误进行故障诊断很困难。 它可能由各种未知操作或事件引起。 如果收到此错误，请重试[!DNL DCS]请求。 如果问题仍然存在，请联系您的[!DNL Adobe]代表。 |
 | 1 | 找不到主机名的配置：`hostname` | 我们的合作伙伴配置团队尚未设置在请求中发送的主机名。 如果看到此错误消息，请联系您的[!DNL Adobe]代表。 |
-| 2 | 无效的`d_orgid`值（找不到此组织ID的配置）：`ID` | 组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页面”部分[组织和帐户关联](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)以了解有关如何查找组织ID的信息。 |
+| 2 | 无效的`d_orgid`值（找不到此组织ID的配置）：`ID` | 组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页面”部分[组织和帐户关联](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)以了解有关如何查找组织ID的信息。 |
 | 10 | 无法评估特征 | 请求中的特征要么经过部分评估，要么根本未进行评估。 如果问题仍然存在，请联系您的[!DNL Adobe]代表。 |
 
-## 集成错误代码{#integration-error-codes}
+## 集成错误代码 {#integration-error-codes}
 
 | 错误代码 | 错误消息 | 描述 |
 |---|---|---|
@@ -40,7 +40,7 @@ ht-degree: 4%
 | 109 | 合作伙伴`Partner ID`不允许引用`HTTP referer` | 调用中的合作伙伴ID不允许使用`HTTP referer`标头。 检查`HTTP referer`标头是否正确。 |
 | 111 | 收到无效的`IMS`令牌 | 为[!DNL Audience Manager] - [!DNL Adobe Target]集成返回。 对[!DNL DCS]（包含无效的[!DNL IMS]令牌）进行调用时，会引发错误。 令牌可能格式错误、过期，或者用户可能无权访问所需资源。 |
 
-## 选择退出错误代码{#opt-out-error-codes}
+## 选择禁用错误代码 {#opt-out-error-codes}
 
 <table id="table_A50C284AB84F48A79B01223D991884A2"> 
  <thead> 
@@ -86,7 +86,7 @@ ht-degree: 4%
  </tbody> 
 </table>
 
-## 配置文件检索错误代码{#profile-retrieval-error-codes}
+## 配置文件检索错误代码 {#profile-retrieval-error-codes}
 
 <table id="table_CFF2252A3CC54960802905454A867D7A"> 
  <thead> 
@@ -130,7 +130,7 @@ ht-degree: 4%
  </tbody> 
 </table>
 
-## 集成警告代码{#integration-warning-codes}
+## 集成警告代码 {#integration-warning-codes}
 
 <table id="table_31F1593C46804DDBA2E9BEDE83F2417F"> 
  <thead> 
@@ -220,7 +220,7 @@ ht-degree: 4%
 </tbody>
 </table>
 
-## 示例错误代码消息{#sample-error-codes}
+## 示例错误代码消息 {#sample-error-codes}
 
 [!DNL DCS]在[!DNL JSON]对象或HTTP响应字符串的X — 标头中返回错误代码和消息。
 
