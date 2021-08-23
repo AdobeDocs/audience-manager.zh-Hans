@@ -7,10 +7,10 @@ title: 区段目的、构成和规则
 uuid: 886d4abe-b1b6-4983-b4fb-b552d54d51ba
 feature: 区段
 exl-id: 4e4da7a7-3267-4564-b1c5-663dcddf2b93
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 6%
+source-wordcount: '327'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Audience Manager[!UICONTROL segment]是由单个或多组特征组成的服务�
 
 >[!TIP]
 >
->Audience Manager[!UICONTROL segments]与[!DNL Adobe Analytics] [!UICONTROL segments]不同。 请阅读[了解Analytics和Audience Manager中的区段](https://docs.adobe.com/content/help/zh-Hans/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) ，以深入了解两者之间的差异。
+>Audience Manager[!UICONTROL segments]与[!DNL Adobe Analytics] [!UICONTROL segments]不同。 请阅读[了解Analytics和Audience Manager中的区段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) ，以深入了解两者之间的差异。
 
 ## 使用[!UICONTROL Segment Builder]创建基于规则的[!UICONTROL Segments]
 
