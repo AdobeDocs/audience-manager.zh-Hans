@@ -8,10 +8,10 @@ title: 入站客户数据摄取常见问题解答
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
 feature: 载入离线数据
 exl-id: 48eef5f1-0655-4dac-9ab4-74b11c705c13
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1364'
-ht-degree: 91%
+source-wordcount: '1360'
+ht-degree: 89%
 
 ---
 
@@ -60,8 +60,8 @@ ht-degree: 91%
 
 能。只要您使用[!UICONTROL cross-device data source]存储您上传的CRM数据，Audience Manager始终会存储该数据。 事实上，继2019年10月启动的[!UICONTROL Profile Merge Rules]增强功能（允许仅离线用例）之后，您便可以上传数据并对其执行操作，而无需将Audience Manager代码部署到生产环境中。 请参阅：
 
-* [配置文件合并规则增强功能概述](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* [!UICONTROL People-based Destinations]  — 基 [于仅离线数据进行个性化](https://docs.adobe.com/content/help/zh-Hans/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
+* [配置文件合并规则增强功能概述](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
+* [!UICONTROL People-based Destinations]  — 基 [于仅离线数据进行个性化](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
 
 <br> 
 
