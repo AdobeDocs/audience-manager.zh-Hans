@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Audience Manager 用户指南
 user-guide-description: 了解Audience Manager如何让您能够收集与网站访客有关的商业相关信息，创建可销售的区段，以及向正确的受众提供有针对性的广告和内容。
 feature-set: Audience Manager
-source-git-commit: cf9368d4690b61066646054543cc60d390eea021
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1805'
 ht-degree: 90%
 
 ---
@@ -342,8 +342,8 @@ ht-degree: 90%
    + 与其他 Experience Cloud 解决方案集成 {#integration-other-solutions}
       + [将Audience Manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
       + [如何将数据从 Adobe Analytics 转发到 Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [将Adobe Analytics区段发布到Experience Cloud(打开Adobe Analytics文档)](https://docs.adobe.com/content/help/zh-Hans/core-services/interface/audiences/t-publish-audience-segment.html)
-      + [将Audience Manager与Adobe Campaign集成(打开Adobe Campaign文档)](https://docs.adobe.com/content/help/en/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
+      + [将Adobe Analytics区段发布到Experience Cloud(打开Adobe Analytics文档)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
+      + [将Audience Manager与Adobe Campaign集成(打开Adobe Campaign文档)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
 + 参考{#reference}
    + [参考概述](reference/reference.md)
    + [Amazon S3：关于](reference/amazon-s3.md)
