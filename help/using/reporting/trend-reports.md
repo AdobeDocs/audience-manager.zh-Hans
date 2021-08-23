@@ -7,9 +7,9 @@ title: 趋势报表
 uuid: bedbe7d4-7cbb-4403-9104-312f9230aea1
 feature: 常规报表和趋势报表
 exl-id: 3373f413-cc8f-49c7-9b4e-34b39e0efc38
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '651'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ c_trend_reports.xml
 1. 从文件夹列表中，将要报告的特征或区段拖放到右侧的[!UICONTROL Selections]面板。
 1. 生成报表以图形格式显示，或将报表导出为CSV格式。
 
-## 运行趋势报表{#run-trend-report}
+## 运行趋势报表 {#run-trend-report}
 
 此过程说明如何运行[!UICONTROL Trend]报告。
 
@@ -79,7 +79,7 @@ t_working_with_trend_reports.xml
 
 1. （可选）将鼠标悬停在单个特征或区段上，可显示每个数据点的访问次数和日期。 您可以单击表中的列标题，以对结果进行升序或降序排序。
 
-## 特征{#trend-report-results-traits}的趋势报表结果
+## 特征的趋势报表结果 {#trend-report-results-traits}
 
 运行[!UICONTROL Trend Report]并选择&#x200B;**[!UICONTROL Trait]**&#x200B;作为报表类型时，可以使用以下过滤器。
 
@@ -101,9 +101,9 @@ t_working_with_trend_reports.xml
 
 请观看以下视频，详细了解跨设备量度的工作方式。
 
->[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
-## 区段{#segment-report-results-traits}的趋势报表结果
+## 区段的趋势报表结果 {#segment-report-results-traits}
 
 运行[!UICONTROL Trend Report]并选择&#x200B;**[!UICONTROL Segments]**&#x200B;作为报表类型时，可以使用以下过滤器。
 
