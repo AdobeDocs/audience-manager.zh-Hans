@@ -7,14 +7,14 @@ title: 定义的配置文件合并规则选项
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 feature: 配置文件合并
 exl-id: 682d2540-c764-4f5a-a946-5d0e18c66c00
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1021'
 ht-degree: 6%
 
 ---
 
-# [!UICONTROL Profile Merge Rules] 定义的选项  {#profile-merge-rule-options-defined}
+# [!UICONTROL Profile Merge Rules] 定义的选项 {#profile-merge-rule-options-defined}
 
 通过[!UICONTROL profile merge rule]选项，您可以控制[!DNL Audience Manager]用于分段的数据类型。 [!UICONTROL profile merge rule]可以包含由与[!DNL Audience Manager]集成的[!UICONTROL Profile Link]设备图、[!UICONTROL Adobe Experience Cloud Device Co-op]和/或其他第三方设备图提供程序映射的设备配置文件。 最多可创建4个[!UICONTROL Profile Merge Rules]。 第四个[!UICONTROL Profile Merge Rule]仅供购买[!UICONTROL People-Based Destinations]加载项的客户使用。
 
@@ -36,7 +36,7 @@ ht-degree: 6%
 | [!UICONTROL Last Authenticated Profiles] | [!UICONTROL External Device Graph] (包括 [!UICONTROL Co-op Device Graph]) | 所有客户 | 实时和批量处理 | 否 | [高级跨设备定位](external-graph-use-cases.md#advanced-graph-expansion) |
 | [!UICONTROL All Cross-Device Profiles] | 不适用 | 仅适用于[基于人员的目标](../destinations/people-based-destinations-overview.md)客户 | 仅批 | 否 | [针对基于人员的目标进行定位](merge-rule-targeting-options.md#all-cross-device) |
 
-## [!UICONTROL Profile Merge Rule] [!UICONTROL Segment] 评估  {#segment-evaluation}
+## [!UICONTROL Profile Merge Rule] [!UICONTROL Segment] 评估 {#segment-evaluation}
 
 根据您的[!UICONTROL Profile Merge Rules]配置，[!DNL Audience Manager]可以实时、批量或同时执行[!UICONTROL segment]评估。
 
@@ -44,7 +44,7 @@ ht-degree: 6%
 * 对先前限定的[!UICONTROL traits]执行批次评估。[!UICONTROL segment]
 * [!UICONTROL Profile Merge Rules] 支持实时和批量评估 [!UICONTROL segment] 的功能，可将实时访客活动与之前获得资格的活动结合 [!UICONTROL traits]使用。
 
-## [!UICONTROL Profile Merge Rules] 报告延迟  {#reporting-latency}
+## [!UICONTROL Profile Merge Rules] 报告延迟 {#reporting-latency}
 
 实时[!UICONTROL segment]评估会立即反映在[!UICONTROL Profile Merge Rules]报表中。
 
@@ -111,11 +111,11 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> 协作设备图</span></b> </p> </td> 
-   <td colname="col2"> <p>告知<span class="keyword">Audience Manager</span>使用<a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external">Experience Cloud设备协作</a>提供的链接从当前设备和多达100个其他设备读取配置文件。 </p> <p><span class="keyword"> 设备协作</span>是一项数字协作服务，可让参与的客户共享设备链接信息。<span class="keyword">设备协作</span>在<span class="term">设备图</span>中处理此数据。 设备图将设备链接在一起，形成设备群集。 这些链接是根据<a href="https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/links.html" format="https" scope="external">概率数据和确定性数据</a>构建的。 群集表示未知人员使用的一组设备。 <span class="keyword">设备协作</span>会在其成员之间共享这些群集，从而帮助成员向其客户提供富有价值的、一致的跨设备体验。 </p> <p> 有关<span class="wintitle">设备协作</span>的更多信息，请参阅： </p> <p> 
+   <td colname="col2"> <p>告知<span class="keyword">Audience Manager</span>使用<a href="https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html" format="https" scope="external">Experience Cloud设备协作</a>提供的链接从当前设备和多达100个其他设备读取配置文件。 </p> <p><span class="keyword"> 设备协作</span>是一项数字协作服务，可让参与的客户共享设备链接信息。<span class="keyword">设备协作</span>在<span class="term">设备图</span>中处理此数据。 设备图将设备链接在一起，形成设备群集。 这些链接是根据<a href="https://experienceleague.adobe.com/docs/device-co-op/using/device-graph/links.html" format="https" scope="external">概率数据和确定性数据</a>构建的。 群集表示未知人员使用的一组设备。 <span class="keyword">设备协作</span>会在其成员之间共享这些群集，从而帮助成员向其客户提供富有价值的、一致的跨设备体验。 </p> <p> 有关<span class="wintitle">设备协作</span>的更多信息，请参阅： </p> <p> 
      <ul id="ul_8EDA7D092ECD444C8C19CDC7534D84DE"> 
-      <li id="li_323BC5993D6A4BA3962169BF0ED37C55"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/home.html" format="https" scope="external"> 设备协作概述</a> </li> 
-      <li id="li_0BDB2144EC584002B3B9F1D64B6CD580"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/requirements.html" format="https" scope="external"> 成员资格要求</a> </li> 
-      <li id="li_632D1014909146758F07CFAC79B90CFE"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html" format="https" scope="external"> 设备图：内部流程和输出</a> </li>
+      <li id="li_323BC5993D6A4BA3962169BF0ED37C55"> <a href="https://experienceleague.adobe.com/docs/device-co-op/using/home.html" format="https" scope="external"> 设备协作概述</a> </li> 
+      <li id="li_0BDB2144EC584002B3B9F1D64B6CD580"> <a href="https://experienceleague.adobe.com/docs/device-co-op/using/about/requirements.html" format="https" scope="external"> 成员资格要求</a> </li> 
+      <li id="li_632D1014909146758F07CFAC79B90CFE"> <a href="https://experienceleague.adobe.com/docs/device-co-op/using/device-graph/device-graph-overview.html" format="https" scope="external"> 设备图：内部流程和输出</a> </li>
      </ul> </p> </td>
   </tr> 
   <tr> 
