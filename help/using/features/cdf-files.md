@@ -8,10 +8,10 @@ title: 客户数据信息源
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 feature: 客户数据信息源
 exl-id: 118c4225-3b57-4a02-ae05-2fcbf3e5d743
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1935'
-ht-degree: 4%
+source-wordcount: '1930'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 有关[!UICONTROL Customer Data Feed]([!UICONTROL CDF])文件的基本信息以及如何开始的说明。 如果您希望接收[!UICONTROL CDF]文件或仅希望获得更多信息，请从此处开始。
 
-## 文件内容和用途{#file-contents-purpose}
+## 文件内容和用途 {#file-contents-purpose}
 
 [!UICONTROL CDF] 文件包含的数据与 [!DNL Audience Manager] 事件调用 (`/event`) 发送到我们服务器的数据相同。这包括用户ID、[!UICONTROL trait IDs]、[!UICONTROL segment IDs]以及事件调用捕获的所有其他参数等数据。 内部的[!DNL Audience Manager]系统将事件数据处理为一个[!UICONTROL CDF]文件，其中内容按设置顺序组织为各个字段。 [!DNL Audience Manager] 会尝试每小时生 [!UICONTROL CDF] 成一次文件，并将它们存储在服务器上特定于客户的安全存储段 [!DNL Amazon S3] 中。我们提供这些文件，以便您能够处理超出用户界面所规定限制的[!DNL Audience Manager]数据。
 
@@ -31,7 +31,7 @@ ht-degree: 4%
 >* 您不应将[!UICONTROL CDF]文件用作监视页面流量、协调报表差异或计费等的代理。
 
 
-## 快速入门 {#getting-started}
+## 入门指南 {#getting-started}
 
 没有启动[!UICONTROL CDF]文件交付的自助流程。 请联系您的[!DNL Audience Manager]顾问或客户关怀团队以开始使用。 在实施过程中，您的[!DNL Audience Manager]代表将：
 
@@ -44,7 +44,7 @@ ht-degree: 4%
 
 以下部分和[客户数据信息源常见问题解答](../faq/faq-cdf.md)可以帮助您更熟悉此服务。
 
-## [!UICONTROL Customer Data Feed] 定义的内容  {#cdf-defined}
+## [!UICONTROL Customer Data Feed] 定义的内容 {#cdf-defined}
 
 按外观顺序列出并定义[!UICONTROL CDF]文件中的数据元素和数组。 定义包括数据类型，但此信息不属于[!UICONTROL CDF]文件的一部分。
 
@@ -108,7 +108,7 @@ ht-degree: 4%
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
-   <td colname="col3"> <p>分配给网站访客的<span class="keyword">Experience Cloud</span> ID(MID)。 另请参阅<a href="https://docs.adobe.com/content/help/zh-Hans/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和AdobeExperience PlatformIdentity服务</a>。 </p> </td> 
+   <td colname="col3"> <p>分配给网站访客的<span class="keyword">Experience Cloud</span> ID(MID)。 另请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和AdobeExperience PlatformIdentity服务</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -123,11 +123,11 @@ ht-degree: 4%
  </tbody> 
 </table>
 
-## [!UICONTROL Customer Data Feed] 文件结构  {#cdf-file-structure}
+## [!UICONTROL Customer Data Feed] 文件结构 {#cdf-file-structure}
 
 列出并定义[!UICONTROL CDF]文件的数据结构。 这包括数据序列、字段分隔符和分隔符、数据文件映射和样例文件。
 
-## 数据字段标识符和序列{#identifiers-and-sequence}
+## 数据字段标识符和序列 {#identifiers-and-sequence}
 
 [!UICONTROL CDF] 文件不包含标记列或字段标题。相反，[!UICONTROL CDF]文件定义的字段和数组具有非打印的[!DNL ASCII]字符。 此外，[!UICONTROL CDF]文件还按特定顺序列出了每个字段和数组。 了解字段标识符和顺序将帮助您正确解析文件。
 
@@ -160,7 +160,7 @@ ht-degree: 4%
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">请求参数 </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referer </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP 地址 </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud设备ID（或MID）。 另请参阅<a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity服务</a> </li> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud设备ID（或MID）。 另请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity服务</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">所有区段 </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">所有特征 </li> 
      </ol> </p> <p>有关字段描述，请参阅<a href="#cdf-defined">定义的客户数据馈送内容</a>。 </p> </td> 
@@ -168,7 +168,7 @@ ht-degree: 4%
  </tbody> 
 </table>
 
-## [!UICONTROL CDF] 文件映射  {#cdf-file-map}
+## [!UICONTROL CDF] 文件映射 {#cdf-file-map}
 
 [!UICONTROL CDF] 文件数据按如下所示的顺序显示。
 
@@ -178,17 +178,17 @@ ht-degree: 4%
 
 [!UICONTROL CDF]文件中的数组以`Ctrl + a`字段分隔符开始和结束。 这会使数组中的第一个元素看起来像一个独立数据字段。 例如，实现的[!UICONTROL traits]阵列以`^A1234`开头。 数组分隔符和ID `^B5678`遵循此条目。 因此，您可能会想到已实现[!UICONTROL traits]数组中的第一个元素是ID 5678（因为它以`^B`开头）。 但情况并非如此，因此您需要熟悉数据文件的顺序和结构。 即使实现的[!UICONTROL trait]数组（或[!UICONTROL CDF]文件中的任何其他数组）中的第一个元素以`^A`开头，文件中的外观或位置顺序仍定义数组的开头。 并且，数组中的第一个元素始终与前一个条目之间以`^A`分隔。
 
-## 示例[!UICONTROL CDF]文件{#sample-file}
+## 示例[!UICONTROL CDF]文件 {#sample-file}
 
 示例[!UICONTROL CDF]文件可能类似于以下内容。 在此示例中插入了换行符，以帮助它适合页面。
 
 ![](assets/CDF-sample.png)
 
-## [!UICONTROL Customer Data Feed] 文件命名约定  {#cdf-naming-conventions}
+## [!UICONTROL Customer Data Feed] 文件命名约定 {#cdf-naming-conventions}
 
 以下部分列出并定义[!UICONTROL CDF]文件名中的元素。
 
-## [!UICONTROL CDF] 文件名：语法和示例  {#cdf-file-name}
+## [!UICONTROL CDF] 文件名：语法和示例 {#cdf-file-name}
 
 典型的[!UICONTROL CDF]文件名包含下面列出的元素。 请注意， *斜体*&#x200B;表示变量占位符：
 
@@ -206,7 +206,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 
 在[!DNL S3]存储存储桶中，文件按合作伙伴ID([!UICONTROL PID])、日和小时的升序排序。
 
-## [!UICONTROL CDF] 定义的文件名元素  {#cdf-file-name-elements}
+## [!UICONTROL CDF] 定义的文件名元素 {#cdf-file-name-elements}
 
 下表列出并定义了[!UICONTROL CDF]文件名中的元素。
 
@@ -249,11 +249,11 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
  </tbody> 
 </table>
 
-## [!UICONTROL Customer Data Feed] 文件处理通知  {#cdf-file-processing-notifications}
+## [!UICONTROL Customer Data Feed] 文件处理通知 {#cdf-file-processing-notifications}
 
 [!DNL Audience Manager] 将文 `.info` 件写入 [!DNL S3] 目录，以告知您( [!UICONTROL Customer Data File] )何[!UICONTROL CDF]时可供下载。`.info`文件还包含[!DNL JSON]格式化的元数据，其中包含有关[!UICONTROL CDF]文件内容的元数据。 有关此通知文件使用的语法和字段的信息，请参阅此部分。
 
-## 示例信息文件{#sample-info-file}
+## 示例信息文件 {#sample-info-file}
 
 每个`.info`文件都包含`Files`和`Totals`部分。 `Files`部分包含一个数组，其中包含每个每小时文件的特定量度。 `Totals`部分包含特定日期内所有[!UICONTROL CDF]文件中汇总的量度。 `.info`文件的内容可能与以下示例类似。
 
@@ -282,7 +282,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 }
 ```
 
-## 定义的{#info-file-fields-defined}信息文件字段
+## 定义的信息文件字段 {#info-file-fields-defined}
 
 下表列出并定义了[!UICONTROL CDF] `.info`文件中的元素。
 
@@ -352,17 +352,17 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
  </tbody> 
 </table>
 
-## [!UICONTROL Customer Data Feed] 文件名时间和文件内容时间不同  {#different-processing-times}
+## [!UICONTROL Customer Data Feed] 文件名时间和文件内容时间不同 {#different-processing-times}
 
 您的[!UICONTROL CDF]文件包含文件名和文件内容中的时间戳。 这些时间戳记录同一[!UICONTROL CDF]文件的不同事件进程。 在同一文件的名称和内容中看到不同的时间戳并不罕见。 了解每个时间戳有助于避免在处理此数据或尝试按时间对其进行排序时出现的常见错误。
 
-## 查找[!UICONTROL CDF]文件时间戳{#locating-timestamps}
+## 查找[!UICONTROL CDF]文件时间戳 {#locating-timestamps}
 
 [!UICONTROL CDF] 文件在2个不同位置记录的时间不同。
 
 ![](assets/cdf-timestamp.png)
 
-## 了解时间戳{#understanding-timestamps}之间的差异
+## 了解时间戳之间的差异 {#understanding-timestamps}
 
 下表提供了有关[!UICONTROL CDF]文件时间戳的其他详细信息以及有关如何正确使用这些时间戳的信息。
 
