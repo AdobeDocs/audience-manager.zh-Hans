@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Audience Manager 用户指南
 user-guide-description: 了解Audience Manager如何让您能够收集与网站访客有关的商业相关信息，创建可销售的区段，以及向正确的受众提供有针对性的广告和内容。
 feature-set: Audience Manager
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
 workflow-type: tm+mt
 source-wordcount: '1805'
 ht-degree: 90%
@@ -112,7 +112,7 @@ ht-degree: 90%
          + [添加新的基于设备的目标](features/destinations/add-device-based-destinations.md)
          + [Audience Manager 基于设备的目标列表](/help/using/features/destinations/device-based-destinations-list.md)
          + [添加或编辑服务器到服务器目标的区段](features/destinations/add-edit-segments.md)
-         + [将特定于 Twitter 的受众配置为基于设备的自助服务目标](features/destinations/twitter-tailored-audiences.md)
+         + [将Twitter自定义受众配置为基于设备的自助服务目标](features/destinations/twitter-tailored-audiences.md)
       + 自定义目标 {#custom-destinations}
          + [配置 URL 目标](features/destinations/create-url-destination.md)
          + [配置 Cookie 目标](features/destinations/create-cookie-destination.md)
