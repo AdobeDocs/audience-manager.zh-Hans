@@ -1,46 +1,46 @@
 ---
-description: 本文介绍如何为新集成和现有集成配置Twitter Tailored Audiences。
-seo-description: 本文介绍如何为新集成和现有集成配置Twitter Tailored Audiences。
-seo-title: 将特定于 Twitter 的受众配置为基于设备的自助服务目标
+description: 本文介绍如何为新集成和现有集成配置Twitter自定义受众。
+seo-description: This article explains how to configure Twitter Custom Audiences for both new and existing integrations.
+seo-title: Configure Twitter Custom Audiences as a Self-Service Device-Based Destination
 solution: Audience Manager
-title: 将特定于 Twitter 的受众配置为基于设备的自助服务目标
-feature: 基于人员的目标
+title: 将Twitter自定义受众配置为基于设备的自助服务目标
+feature: People-based Destinations
 exl-id: 13b36469-3f61-47b1-9355-ca329de1fb24
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 4%
+source-wordcount: '529'
+ht-degree: 1%
 
 ---
 
-# 将[!DNL Twitter Tailored Audiences]配置为基于设备的自助服务目标{#configure-twitter}
+# 将[!DNL Twitter Custom Audiences]配置为基于设备的自助服务目标 {#configure-twitter}
 
-本文介绍如何配置与[Twitter Tailored Audiences](https://business.twitter.com/en/targeting/tailored-audiences.html)的集成。
+本文介绍如何配置与[Twitter自定义受众](https://business.twitter.com/en/targeting/tailored-audiences.html)的集成。
 
 ## 先决条件 {#prerequisites}
 
-在配置[!DNL Twitter Tailored Audiences]目标之前，请确保查看您需要满足的以下Twitter先决条件。
+在配置[!DNL Twitter Custom Audiences]目标之前，请确保查看您需要满足的以下Twitter先决条件。
 
 1. 您的[!DNL Twitter Ads]帐户必须符合广告资格。 新的[!DNL Twitter Ads]帐户在创建后头2周内不符合广告资格。
 2. 您已授权在Audience Manager中访问的[!DNL Twitter]用户帐户必须启用[合作伙伴Audience Manager](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels)权限。
-3. 在Audience Manager实例中创建第一个[!DNL Twitter Tailored Audiences]目标时，请联系Adobe咨询或客户关怀，为您的帐户启用[!DNL Twitter] ID同步（数据源ID = 1123）。 在Audience Manager和[!DNL Twitter]之间正确同步需要此参数。
+3. 在Audience Manager实例中创建第一个[!DNL Twitter Custom Audiences]目标时，请联系Adobe咨询或客户关怀，为您的帐户启用[!DNL Twitter] ID同步（数据源ID = 1123）。 在Audience Manager和[!DNL Twitter]之间正确同步需要此参数。
 
-## 添加新的[!DNL Twitter Tailored Audiences]目标{#add-new-twitter-destination}
+## 添加新的[!DNL Twitter Custom Audiences]目标 {#add-new-twitter-destination}
 
-本节介绍在为[!DNL Twitter Tailored Audiences]配置新的基于设备的目标时需要遵循的步骤。 此方案假定您没有通过Adobe顾问或客户关怀部门配置任何现有的[!DNL Twitter Tailored Audiences]目标。
+本节介绍在为[!DNL Twitter Custom Audiences]配置新的基于设备的目标时需要遵循的步骤。 此方案假定您没有通过Adobe顾问或客户关怀部门配置任何现有的[!DNL Twitter Custom Audiences]目标。
 
-### 步骤 1. 使用[!DNL Twitter Tailored Audiences] {#step1-authenticate-with-twitter}进行身份验证
+### 步骤 1. 使用[!DNL Twitter Custom Audiences]进行身份验证 {#step1-authenticate-with-twitter}
 
-在添加基于设备的目标之前，您需要先关联Audience Manager和[!DNL Twitter Tailored Audiences]帐户。 下面是如何执行此操作：
+在添加基于设备的目标之前，您需要先关联Audience Manager和[!DNL Twitter Custom Audiences]帐户。 下面是如何执行此操作：
 
 1. 登录到您的Audience Manager帐户，然后转到&#x200B;**[!DNL Administration > Integrated Accounts]**。 如果您之前配置了与目标平台的集成，则应会在此页面中列出该集成。 否则，页面为空。
 1. 单击 **[!DNL Add Account]**.
-1. 选择[!DNL Twitter Tailored Audiences]并单击&#x200B;**[!DNL Confirm]**&#x200B;以重定向到身份验证页面。                     ![集成平台](assets/dbd-integrated-platforms.png)
+1. 选择[!DNL Twitter Custom Audiences]并单击&#x200B;**[!DNL Confirm]**&#x200B;以重定向到身份验证页面。                     ![集成平台](assets/dbd-integrated-platforms.png)
 1. 经过身份验证后，您将被重定向到Audience Manager，您应该在该位置看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!DNL Confirm]**。
 
-### 步骤 2. 创建新的基于设备的目标{#step2-create-new-destination}
+### 步骤 2. 创建新的基于设备的目标 {#step2-create-new-destination}
 
-链接Audience Manager和[!DNL Twitter Tailored Audiences]后，即可创建新目标。 下面是如何执行此操作：
+链接Audience Manager和[!DNL Twitter Custom Audiences]后，即可创建新目标。 下面是如何执行此操作：
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ ht-degree: 4%
 1. 在&#x200B;**[!DNL Segment Mappings]**&#x200B;部分中，选择要发送到此目标的受众区段。
 1. 保存目标。
 
-## 区段映射注意事项{#segment-mapping-considerations}
+## 区段映射注意事项 {#segment-mapping-considerations}
 
 将受众区段映射到[!UICONTROL Twitter]时，请确保满足以下区段命名要求：
 
@@ -70,6 +70,6 @@ ht-degree: 4%
 >
 >您无法更改已映射区段的名称。 Audience Manager使用区段名称来正确识别集成中的区段。
 
-## 匹配率注意事项{#match-rates-considerations}
+## 匹配率注意事项 {#match-rates-considerations}
 
-* Audience Manager与[!UICONTROL Twitter Tailored Audiences]之间的集成支持历史受众回填。 创建目标时，所有区段资格都会发送到[!UICONTROL Twitter]。
+* Audience Manager与[!UICONTROL Twitter Custom Audiences]之间的集成支持历史受众回填。 创建目标时，所有区段资格都会发送到[!UICONTROL Twitter]。
