@@ -1,15 +1,15 @@
 ---
 description: Audience Analytics 允许您将 Audience Manager 区段发送至 Analytics。要使用此功能，请在 Audience Manager 中创建一个 Analytics 目标，然后再将区段映射到该目标。
-seo-description: Audience Analytics 允许您将 Audience Manager 区段发送至 Analytics。要使用此功能，请在 Audience Manager 中创建一个 Analytics 目标，然后再将区段映射到该目标。
-seo-title: 配置 Analytics 目标
+seo-description: Audience Analytics lets you send Audience Manager segments to Analytics. To use this feature, you create an Analytics destination and map segments to it in Audience Manager.
+seo-title: Configure an Analytics Destination
 solution: Audience Manager
 title: 配置 Analytics 目标
-feature: Adobe Analytics 集成
+feature: Adobe Analytics Integration
 exl-id: f3ead057-04d1-40cd-8e3d-d0934d85cdb4
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 089a41b0176f2453e4f301c877dd6b020f726562
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 9%
+source-wordcount: '807'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 9%
 
 | Analytics目标类型 | 描述 |
 |---|---|
-| 默认值 | 此默认目标的名称为“Adobe Analytics”，您可以对其进行编辑。 映射的报表包ID显示在您的Audience Manager特征和区段的文件夹存储中。 <br>  Audience Manager会在您的帐户具有以下项时自动创建一个目标：  <br>  <ul><li>满足[Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html)文档中描述的要求。</li><li>Analytics中的[报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)。</li><li>[将报表包映射到组织](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html)。</li></ul> |
+| 默认值 | 此默认目标的名称为“Adobe Analytics”，您可以对其进行编辑。 映射的报表包ID显示在您的Audience Manager特征和区段的文件夹存储中。 <br>  Audience Manager会在您的帐户具有以下项时自动创建一个目标：  <br>  <ul><li>满足[Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html)文档中描述的要求。</li><li>Analytics中的[报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)。</li></ul> |
 | 新建 | 要创建新Analytics目标，请转到受众数据>目标>新建目标，然后针对下面描述的每个部分执行步骤。 |
 
 ## 步骤1:提供基本信息
