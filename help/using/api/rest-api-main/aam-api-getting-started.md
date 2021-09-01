@@ -1,20 +1,20 @@
 ---
 description: 有关一般要求、身份验证、可选查询参数、请求 URL 和其他引用的信息。
-seo-description: 有关一般要求、身份验证、可选查询参数、请求 URL 和其他引用的信息。
-seo-title: 开始使用 REST API
+seo-description: Information about general requirements, authentication, optional query parameters, request URLs, and other references.
+seo-title: Getting Started with REST APIs
 solution: Audience Manager
 title: 开始使用 REST API
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 exl-id: f7d5e52d-ad21-4020-a299-d440f954c51a
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 95182160b37bb15df4867bbacd06d8d75c971fa3
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 4%
+source-wordcount: '1942'
+ht-degree: 3%
 
 ---
 
-# [!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}快速入门
+# [!DNL REST] [!DNL APIs]快速入门 {#getting-started-with-rest-apis}
 
 有关一般要求、身份验证、可选查询参数、请求[!DNL URLs]和其他引用的信息。
 
@@ -71,6 +71,18 @@ ht-degree: 4%
 >
 >要以自动方式配置和使用[!DNL Audience Manager] [!DNL REST APIs]，可以编程生成[!DNL JWT]。 有关详细说明，请参阅[JWT（服务帐户）身份验证](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)。
 
+### 技术帐户RBAC权限
+
+如果您的Audience Manager帐户使用[基于角色的访问控制](../../features/administration/administration-overview.md)，则必须创建一个Audience Manager技术用户帐户，并将其添加到将进行API调用的Audience ManagerRBAC组中。
+
+请按照以下步骤创建技术用户帐户并将其添加到RBAC组：
+
+1. 对`https://aam.adobe.io/v1/users/self`进行`GET`调用。 该调用将创建一个技术用户帐户，您可以在[!UICONTROL Admin Console]的[!UICONTROL Users]页面中看到该帐户。
+
+   ![技术帐户](assets/technical-account.png)
+
+1. 登录到您的Audience Manager帐户，然后[将技术用户帐户](../../features/administration/administration-overview.md#create-group)添加到要进行API调用的用户组。
+
 ## [!DNL OAuth] 身份验证（已弃用） {#oauth}
 
 >[!WARNING]
@@ -91,7 +103,7 @@ ht-degree: 4%
 
 与您的[!DNL Audience Manager]顾问合作，设置一个通用的[!DNL API]仅用户帐户。
 
-### 密码身份验证工作流{#password-authentication-workflow}
+### 密码验证工作流 {#password-authentication-workflow}
 
 密码身份验证安全访问我们的[!DNL REST API]。 以下步骤概述了在浏览器中从[!DNL JSON]客户端进行密码验证的工作流程。
 
@@ -131,7 +143,7 @@ ht-degree: 4%
 
 `expires_in`键表示访问令牌过期的秒数。 最佳做法是，使用较短的过期时间来限制令牌曝光时的曝光。
 
-### 刷新令牌{#refresh-token}
+### 刷新令牌 {#refresh-token}
 
 刷新令牌会在原始令牌过期后续订[!DNL API]访问权限。 如果请求，密码工作流中的响应[!DNL JSON]将包含刷新令牌。 如果未收到刷新令牌，请通过密码身份验证过程创建新令牌。
 
@@ -166,11 +178,11 @@ ht-degree: 4%
 }
 ```
 
-### 授权代码和隐式身份验证{#authentication-code-implicit}
+### 授权码与隐式认证 {#authentication-code-implicit}
 
 [!DNL Audience Manager] [!UICONTROL REST API]支持授权代码和隐式身份验证。 要使用这些访问方法，您的用户需要登录到`https://api.demdex.com/oauth/authorize`以获取访问和刷新令牌。
 
-## 进行身份验证的[!DNL API]请求{#authenticated-api-requests}
+## 发出经过身份验证的[!DNL API]请求 {#authenticated-api-requests}
 
 在收到身份验证令牌后调用[!DNL API]方法的要求。
 
@@ -180,7 +192,7 @@ ht-degree: 4%
 * 使用[JWT（服务帐户）Authentication](#jwt)时，您需要提供`x-api-key`标头，该标头将与`client_id`的标头相同。 您可以从[Adobe I/O集成](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)页面获取`client_id`。
 * 调用所需的[!DNL API]方法。
 
-## 可选[!DNL API]查询参数{#optional-api-query-parameters}
+## 可选[!DNL API]查询参数 {#optional-api-query-parameters}
 
 设置可用于返回对象所有属性的方法的可选参数。
 
@@ -215,7 +227,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 根据您使用的身份验证方法，您需要根据下表调整请求[!DNL URLs]。
 
-### [!DNL JWT]身份验证{#request-urls-jwt}的请求[!DNL URLs]
+### 请求[!DNL URLs]进行[!DNL JWT]身份验证 {#request-urls-jwt}
 
 | [!DNL API] 方法 | 请求 [!DNL URL] |
 |--- |--- |
@@ -231,7 +243,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 | [!DNL Trait Types] | `https://aam.adobe.io/v1/customer-trait-types` |
 | [!DNL Taxonomy] | `https://aam.adobe.io/v1/taxonomies/0/` |
 
-### [!DNL OAuth]身份验证请求[!DNL URLs]（已弃用）{#request-urls-oauth}
+### [!DNL OAuth]身份验证请求[!DNL URLs]（已弃用） {#request-urls-oauth}
 
 | [!DNL API] 方法 | 请求 [!DNL URL] |
 |--- |--- |
@@ -268,7 +280,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 `https://<host>/v1/...`
 
-## 定义的响应代码{#response-codes-defined}
+## 定义的响应代码 {#response-codes-defined}
 
 `HTTP` 状态代码和由返回的响应文 [!DNL Audience Manager] [!UICONTROL REST API]本
 
@@ -287,6 +299,6 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 >
 >* [JWT（服务帐户）身份验证](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
 >* [OAuth身份验证](../../api/rest-api-main/aam-api-getting-started.md#oauth)
-* [OAuth 2.0](https://oauth.net/2/)
-* [OAuth 2已简化](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
+>* [OAuth 2.0](https://oauth.net/2/)
+>* [OAuth 2已简化](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
 
