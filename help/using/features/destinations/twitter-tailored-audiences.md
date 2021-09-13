@@ -6,16 +6,16 @@ solution: Audience Manager
 title: 将Twitter自定义受众配置为基于设备的自助服务目标
 feature: People-based Destinations
 exl-id: 13b36469-3f61-47b1-9355-ca329de1fb24
-source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
+source-git-commit: 8023bfe1e4ea415867e1233f143627ff179cce42
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
 
 # 将[!DNL Twitter Custom Audiences]配置为基于设备的自助服务目标 {#configure-twitter}
 
-本文介绍如何配置与[Twitter自定义受众](https://business.twitter.com/en/targeting/tailored-audiences.html)的集成。
+本文介绍如何配置与[Twitter自定义受众](https://business.twitter.com/en/help/campaign-setup/campaign-targeting/custom-audiences.html)的集成。
 
 ## 先决条件 {#prerequisites}
 
@@ -35,7 +35,10 @@ ht-degree: 1%
 
 1. 登录到您的Audience Manager帐户，然后转到&#x200B;**[!DNL Administration > Integrated Accounts]**。 如果您之前配置了与目标平台的集成，则应会在此页面中列出该集成。 否则，页面为空。
 1. 单击 **[!DNL Add Account]**.
-1. 选择[!DNL Twitter Custom Audiences]并单击&#x200B;**[!DNL Confirm]**&#x200B;以重定向到身份验证页面。                     ![集成平台](assets/dbd-integrated-platforms.png)
+1. 选择[!DNL Twitter Custom Audiences]并单击&#x200B;**[!DNL Confirm]**&#x200B;以重定向到身份验证页面。
+
+   ![集成平台](assets/dbd-integrated-platforms.png)
+
 1. 经过身份验证后，您将被重定向到Audience Manager，您应该在该位置看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!DNL Confirm]**。
 
 ### 步骤 2. 创建新的基于设备的目标 {#step2-create-new-destination}
