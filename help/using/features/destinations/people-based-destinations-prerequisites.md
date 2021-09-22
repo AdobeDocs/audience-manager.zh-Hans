@@ -1,15 +1,15 @@
 ---
 description: '请阅读下文，了解在注册基于人员的目标之前需要满足的客户要求。  '
-seo-description: '请阅读下文，了解在注册基于人员的目标之前需要满足的客户要求。  '
-seo-title: 基于人员的目标先决条件和注意事项
+seo-description: Read below for an overview of customer requirements that you need to meet before signing up for People-Based Destinations.
+seo-title: People-Based Destinations Prerequisites and Considerations
 solution: Audience Manager
 title: 先决条件和注意事项
-feature: 基于人员的目标
+feature: People-based Destinations
 exl-id: 7656aa3e-3410-4052-8e29-b702bd0bf149
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: bb0bc62b139917bbf6429bc92a85f8a5010cbebe
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 3%
+source-wordcount: '964'
+ht-degree: 4%
 
 ---
 
@@ -51,11 +51,9 @@ ht-degree: 3%
 
 ### [!DNL Google Customer Match] {#gcm}
 
-在使用[!UICONTROL People-Based Destinations]将第一方受众区段发送到[!DNL Google Customer Match]目标之前，必须先将[!DNL Google]将您添加到其允许列表中。
+在使用[!UICONTROL People-Based Destinations]将第一方受众区段发送到[!DNL Google Customer Match]目标之前，请确保您的[!DNL Google Ads]帐户符合[Google客户匹配策略](https://support.google.com/google-ads/answer/6299717/customer-match-policy)。
 
-请联系您的[!DNL Google]代表并按照[使用客户匹配合作伙伴上传数据](https://support.google.com/google-ads/answer/7361372?hl=en&amp;ref_topic=6296507) [!DNL Google]文档中描述的允许列表说明进行操作。
-
-完成此过程后，即可创建[!UICONTROL People-Based Destination]。
+具有合规帐户的客户会自动被Google允许列出。
 
 ## 数据载入 {#data-onboarding}
 
