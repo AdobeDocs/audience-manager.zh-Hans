@@ -1,16 +1,16 @@
 ---
 description: 有关Adobe Audience Manager ID的完整列表，请参阅此文档。
 keywords: DPID;DPUUID;CID;UUID;uuid;uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid， uuid，
-seo-description: 有关Adobe Audience Manager ID的完整列表，请参阅此文档。
-seo-title: Audience Manager 中的 ID 索引
+seo-description: Refer to this document for the complete list of Adobe Audience Manager IDs.
+seo-title: Index of IDs in Audience Manager
 solution: Audience Manager
 title: Audience Manager 中的 ID 索引
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
-feature: 参考
+feature: Reference
 exl-id: 1caf3c6a-ebfd-49f1-9ebd-d4604474c070
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: e408c118870fb331c40758be8a7e6b38690aeb5f
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '994'
 ht-degree: 5%
 
 ---
@@ -57,3 +57,5 @@ ht-degree: 5%
 | [!DNL MAID] | 389146 | [!DNL Microsoft Advertising ID]是由每个设备和每 [!DNL Windows 10] 个用户生成的设备标识符。 | [!DNL MAID]格式为字母数字字符串。 |
 | [!DNL TIFA] | 963906 | [!DNL Samsung Tizen IDs for Advertising] 是智能电视提供的设 [!DNL Samsung] 备标识符。 | [!DNL Samsung] [!DNL TIFA] ID的格式为字母数字字符串。 |
 | [!DNL Amazon Fire TV Advertising ID] | 488258 | 表示运行[!DNL Fire OS]操作系统的设备的设备标识符。 | 格式严格由32个小写的十六进制数字组成，以5组显示，并以连字符分隔，格式为8-4-4-4-12，总共包含36个字符。 <br>示例: `df07c7dc-cea7-4a89-b328-810ff5acb15d` |
+| [!DNL LGUDID] | 1171485 | 表示运行[!DNL LG webOS]操作系统的设备的设备标识符。 | 格式严格由32个小写的十六进制数字组成，以5组显示，并以连字符分隔，格式为8-4-4-4-12，总共包含36个字符。 <br>示例: `095f142a-ace8-ac5d-b86a-92c8be18b197` |
+| [!DNL Vizio IFA] | 1171489 | 代表运行Vizio智能电视操作系统的设备的设备标识符。 | [!DNL Vizio IFA] ID的格式为字母数字字符串。<br>示例: `7XCBNROQJQPYW`. |
