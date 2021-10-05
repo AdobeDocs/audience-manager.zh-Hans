@@ -1,15 +1,15 @@
 ---
 description: 此报表会返回收集到的清单上所有未使用信息的频率计数，并将其发送到Audience Manager。
-seo-description: 此报表会返回收集到的清单上所有未使用信息的频率计数，并将其发送到Audience Manager。
-seo-title: 未使用的信号报表
+seo-description: This report returns a frequency count of all the unused information collected on your inventory and sent to Audience Manager.
+seo-title: Unused Signals Report
 solution: Audience Manager
 title: 未使用的信号报表
 uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
-feature: 重叠报表
+feature: Overlap Reports
 exl-id: ab5cb5ad-4305-4463-8f56-237b5a2f1f9e
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 8fd148df6c19a5d8331faf66c671f91686954a77
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '599'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 信号是指您的网站以[键值对](../../reference/key-value-pairs-explained.md)（例如`color=blue, price>100, gender=female`等）的形式传递到[!DNL Audience Manager]的信息。
 
-未使用的信号由您收集但尚未映射到特征的数据组成。 [!UICONTROL Unused Signals]报表按日期、键值和频率计数显示表中的数据。 任何未映射的信号在一天内传递到[!DNL Audience Manager]至少100次，符合[!UICONTROL Unused Signals]报表的条件。
+未使用的信号由您收集但尚未映射到特征的数据组成。 [!UICONTROL Unused Signals]报表按日期、键值和频率计数显示表中的数据。 任何未映射的信号在一天内传递到[!DNL Audience Manager]至少100次，符合[!UICONTROL Unused Signals]报表的条件。 未使用的信号会存储45天，然后被丢弃。
 
 查看此报表有助于识别可映射到新特征或现有特征的孤立信号。
 
