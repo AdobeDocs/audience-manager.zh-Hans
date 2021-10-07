@@ -1,14 +1,14 @@
 ---
 description: '使用基于人员的目标将第一方受众区段发送到基于人员的环境。 这些环境是属于一个实体的封闭生态系统，该实体控制其中显示的内容。 其中包括社交平台(如Facebook)，以及依赖客户帐户对显示内容进行个性化的其他平台。 '
-seo-description: '使用基于人员的目标将第一方受众区段发送到基于人员的环境。 这些环境是属于一个实体的封闭生态系统，该实体控制其中显示的内容。 其中包括社交平台(如Facebook)，以及依赖客户帐户对显示内容进行个性化的其他平台。  '
-seo-title: 基于人员的目标概述和用例
+seo-description: Use people-based destinations to send first-party audience segments to people-based environments. These environments are closed ecosystems belonging to one entity that controls the content that is being displayed within it. They include social platforms such as Facebook, and other platforms that rely on customer accounts to personalize the displayed content.
+seo-title: People-Based Destinations Overview and Use Cases
 solution: Audience Manager
 title: 概述和用例
-feature: 基于人员的目标
+feature: People-based Destinations
 exl-id: 2edbda3b-e2a3-4a92-965b-206a21764cc8
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: ab3361a0a54a7200d2f0c03a82ae6ef61a755be9
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '863'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-[!DNL People-Based Destinations] 允许您对线上和线下数据应用分段，以根据经过哈希处理的标识符(如 [电子邮件地址或电话号码)](people-based-destinations-prerequisites.md#hashing-requirements)创建受众区段。然后，您可以将这些区段发送到“带墙的花园”，例如[!DNL Facebook]，以便在社交平台上定位受众。 [!DNL People-Based Destinations] 可以帮助您：
+[!DNL People-Based Destinations] 允许您对在线和离线数据应用分段，以根据经过哈希处理的标识符(如 [电子邮件地址)](people-based-destinations-prerequisites.md#hashing-requirements)创建受众区段。然后，您可以将这些区段发送到“带墙的花园”，例如[!DNL Facebook]，以便在社交平台上定位受众。 [!DNL People-Based Destinations] 可以帮助您：
 
 * 在诸如[!DNL Facebook]的平台中根据经过哈希处理的电子邮件地址定位离线和在线受众；
 * 补充现有的设备和Cookie定位Audience Manager功能；
