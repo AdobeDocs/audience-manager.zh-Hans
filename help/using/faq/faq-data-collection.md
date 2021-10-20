@@ -1,16 +1,16 @@
 ---
 description: 有关数据收集和集成的常见问题。
-seo-description: 有关数据收集和集成的常见问题。
-seo-title: 数据收集和产品集成常见问题解答
+seo-description: Common data collection and integration questions and issues.
+seo-title: Data Collection and Product Integration FAQ
 solution: Audience Manager
 title: 数据收集和产品集成常见问题解答
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP;SFTP地址；STFP IP地址；FTP地址
-feature: 管理
+feature: Administration
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1198'
 ht-degree: 79%
 
 ---
@@ -59,13 +59,13 @@ ht-degree: 79%
 
 **如何配置我的Audience Manager实例以使用新的SFTP服务器？**
 
-请联系您的[!DNL Audience Manager]顾问或客户关怀团队，他们将配置您的新SFTP帐户。
+联系您的 [!DNL Audience Manager] 顾问或客户关怀团队，他们将配置您的新SFTP帐户。
 
  
 
 **新SFTP服务器支持哪些身份验证方法？**
 
-新的SFTP服务器（`ftp-in-gtw`和`ftp-out-gtw`）支持[!DNL OpenSSH Key-Based Authentication]。 我们可以为您生成[!DNL SSH]密钥，也可以为我们提供您自己的公钥。
+新的SFTP服务器(`ftp-in-gtw` 和 `ftp-out-gtw`)支持 [!DNL OpenSSH Key-Based Authentication]. 我们可以生成 [!DNL SSH] 您的密钥，或者您可以为我们提供您自己的公钥。
 
  
 
@@ -83,7 +83,7 @@ ht-degree: 79%
 
 * 将 [!UICONTROL DIL] 直接放置到 `s_code` 中。
 
-* 提供[!UICONTROL DIL]和`s_code`到[!DNL Adobe Experience Platform Launch]。
+* 服务 [!UICONTROL DIL] 和 `s_code` 至 [!DNL Adobe Experience Platform Tags].
 
 请参阅[数据集成库 (DIL) API](../dil/dil-overview.md)。
 
@@ -152,7 +152,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **[!DNL Google Ad Manager]我希望在一个网站上收集数据，并通过 在另一个网站上定位用户。如果我不想从其他资产中收集数据，是否需要在该位置部署代码？**
 
-不需要。如果不需要在另一个网站上收集数据，则无需在该网站上部署 DIL。只要您有权通过[!DNL Google Ad Manager]访问第二个站点上的清单，就可以使用从初始站点收集的数据并通过[!DNL Google Ad Manager]进行定位。
+不需要。如果不需要在另一个网站上收集数据，则无需在该网站上部署 DIL。只要您通过访问 [!DNL Google Ad Manager]，则可以使用从初始网站和Target中通过 [!DNL Google Ad Manager].
 
 <br> 
 
@@ -162,9 +162,9 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**如何设 [!DNL Audience Manager] 置Cookie并将变量传递到 [!DNL Google Ad Manager]?**
+**如何 [!DNL Audience Manager] 设置cookie并将变量传递到 [!DNL Google Ad Manager]?**
 
-[!DNL Audience Manager] 设置2个Cookie:其中一个会向广告标 [!DNL Google Ad Manager] 记发送区段变量，而另一个则会设置我们的独特用户ID(UUID)，该ID也会被读取 [!DNL Google Ad Manager]。将 UUID 添加到广告标记意味着我们可以执行用户级报表和受众发现操作。
+[!DNL Audience Manager] 设置2个Cookie:一种方法是将区段变量发送到 [!DNL Google Ad Manager] 广告标记，而其他标记则会设置我们的独特用户ID(UUID)，该ID也会被 [!DNL Google Ad Manager]. 将 UUID 添加到广告标记意味着我们可以执行用户级报表和受众发现操作。
 
 <br> 
 
@@ -210,6 +210,6 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 **非活动的Amazon S3用户访问密钥有何变化？**
 
-Adobe为Audience Manager客户提供Audience Manager[!DNL Amazon S3]存储段的用户访问密钥。 出于安全原因，密钥在处于不活动状态100天后会自动禁用。
+Adobe为Audience Manager客户提供用户访问Audience Manager键 [!DNL Amazon S3] 存储段。 出于安全原因，密钥在处于不活动状态100天后会自动禁用。
 
 要重新启用访问密钥或请求新密钥，请联系客户支持。

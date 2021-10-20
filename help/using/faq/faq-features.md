@@ -1,16 +1,16 @@
 ---
 description: 有关产品和功能的常见问题。
 keywords: audience manager cookie
-seo-description: 有关产品和功能的常见问题。
-seo-title: 产品特性和功能常见问题解答
+seo-description: Common product and function-related questions and issues.
+seo-title: Product Features and Functions FAQ
 solution: Audience Manager
 title: 产品特性和功能常见问题解答
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
-feature: 概述
+feature: Overview
 exl-id: b5884d26-0be1-4eaa-99a1-7247942bf6c9
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '596'
 ht-degree: 84%
 
 ---
@@ -47,9 +47,9 @@ faq_features_functions.xml
 
  
 
-**执行批量ID导出到目标时，缺少某些客户ID。为什么会出现这种情况？**
+**执行批量ID导出到目标时，缺少某些客户ID。 为什么会发生这种情况？**
 
-当设备ID([AAM UUID](../reference/ids-in-aam.md))关联到多个CRM ID([DPUUID](../reference/ids-in-aam.md))时，只会导出最新的映射。 因此，您可能会看到导出的设备ID数量低于预期数量。
+当设备ID([AAM UUID](../reference/ids-in-aam.md))关联到多个CRM ID([DPUUID](../reference/ids-in-aam.md))，则仅导出最新的映射。 因此，您可能会看到导出的设备ID数量低于预期数量。
 
  
 
@@ -67,7 +67,7 @@ faq_features_functions.xml
 
 **什么是 [!UICONTROL Tag Insertion Manager (TIM)]？**
 
-Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和管理 [!UICONTROL data collection code (DIL)]。此功能已过时，最先由 [!UICONTROL Dynamic Tag Manager (DTM)] 取代，后来由 [!DNL Adobe Experience Platform Launch] 取代。有关更多信息，请参阅[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)。
+Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和管理 [!UICONTROL data collection code (DIL)]。此功能已过时，最先由 [!UICONTROL Dynamic Tag Manager (DTM)] 取代，后来由 [!DNL Adobe Experience Platform Tags] 取代。有关更多信息，请参阅 [Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
 
  
 
