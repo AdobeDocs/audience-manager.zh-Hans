@@ -3,12 +3,12 @@ product: audience manager
 solution: Audience Manager
 audience: end-user
 user-guide-title: Audience Manager 用户指南
-user-guide-description: 了解Audience Manager如何让您能够收集与网站访客有关的商业相关信息，创建可销售的区段，以及向正确的受众提供有针对性的广告和内容。
+user-guide-description: 了解如何使用 Audience Manager 收集有关网站访客的商业相关信息、创建适销细分以及向合适的受众提供定向广告和内容。
 feature-set: Audience Manager
-source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
+source-git-commit: 73d1dd1fdc799d7cbe7605d6d084966f76efe38c
 workflow-type: tm+mt
 source-wordcount: '1805'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -286,7 +286,7 @@ ht-degree: 90%
 + 实施和集成指南{#implementation-integration-guides}
    + [实施和集成指南](integration/implementation-and-integration.md)
    + [数据集成方法](integration/data-integration-methods.md)
-   + 使用Google Publisher Tags(GPT){#integrate-dfp-using-gpt}集成Google Ad Manager
+   + 使用Google发布者标签(GPT)集成Google Ad Manager{#integrate-dfp-using-gpt}
       + [使用GPT集成Google Ad Manager概述](integration/gpt-aam-destination/gpt-aam-overview.md)
       + [使用GPT将区段发送到Google Ad Manager](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [创建 GPT 目标](integration/gpt-aam-destination/gpt-aam-create-destination.md)
@@ -339,7 +339,7 @@ ht-degree: 90%
       + [自定义合作伙伴集成](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + 与 Adobe Experience Platform 集成 {#integration-experience-platform}
       + [Experience Platform区段与Audience Manager和其他Experience Cloud解决方案共享](integration/integration-aep/aam-aep-audience-sharing.md)
-   + 与其他 Experience Cloud 解决方案集成 {#integration-other-solutions}
+   + 与其他Experience Cloud应用程序集成 {#integration-other-solutions}
       + [将Audience Manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
       + [如何将数据从 Adobe Analytics 转发到 Audience Manager](integration/integration-other-solutions/audience-management-module.md)
       + [将Adobe Analytics区段发布到Experience Cloud(打开Adobe Analytics文档)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
