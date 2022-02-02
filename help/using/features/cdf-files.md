@@ -8,9 +8,9 @@ title: 客户数据信息源
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 feature: Customer Data Feeds
 exl-id: 118c4225-3b57-4a02-ae05-2fcbf3e5d743
-source-git-commit: 08916acd6081031382713737f77ceed8ab1a4e91
+source-git-commit: e85dea581e1e7fee2fce0854dc094ed763df8160
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1914'
 ht-degree: 3%
 
 ---
@@ -146,12 +146,11 @@ A [!UICONTROL CDF] 文件包含下面定义的部分或全部字段。 有关内
       <li id="li_B9DA15DCB6A445D781B8753C1C4262B0">Ctrl + a(ASCII) <code> 001</code> 或 <code> ^A</code>)使用非打印空间指示器分隔单个字段中的数据。 </li> 
       <li id="li_E68D0CC065B34AC9AF91F166CAA2A67C">Ctrl + b(ASCII) <code> 002</code> 或 <code> ^B</code>)将数据与数组和请求参数分隔开。 </li> 
       <li id="li_6C32D927FEF04CDE9887374E8C2688E7">Ctrl + c(ASCII) <code> 003</code> 或 <code> ^C</code>)定义键值对。 </li> 
-      <li> 新行分隔符(/N)</li>
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>字段序列 </p> </td> 
-   <td colname="col2"> <p> <p>重要信息： <span class="keyword"> Audience Manager</span> 保留在未来版本中向CDF文件末尾添加新字段的权限。 这意味着文件解析系统的技术设计不应假定列数固定（尽管它可能假定现有列的顺序固定）。 </p> </p> <p>CDF文件中的数据按如下所示的顺序显示。 </p> <p> 
+   <td colname="col2"> <p> <p>重要信息： <span class="keyword"> Audience Manager</span> 保留在未来版本中向CDF文件末尾添加新字段的权限。 这意味着文件解析系统的技术设计不应假定列数固定（尽管它可能假定现有列的顺序固定）。</p> </p> <p>CDF文件中的数据按如下所示的顺序显示。/N可能显示代替任何这些字段，表示空值。</p> <p> 
      <ol id="ol_1FDF4A7F089448ED8A724378C23009C8"> 
       <li id="li_CB97D90B54EB4F95861583D4A5F660C7">事件时间 </li> 
       <li id="li_C44E8CCB1A964B7A941FD772FB8A7608">设备 </li> 
