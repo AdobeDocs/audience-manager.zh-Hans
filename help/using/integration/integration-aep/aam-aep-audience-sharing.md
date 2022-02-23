@@ -4,7 +4,8 @@ solution: Audience Manager
 title: Experience Platform区段与Audience Manager和其他Experience Cloud解决方案共享
 keywords: AEP受众共享、AEP区段、平台区段、区段共享、受众共享、共享区段、AAM AEP区段共享
 feature: Platform Integration
-source-git-commit: f0df41e71340d08e873d8d7e33b481987110c58d
+exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
+source-git-commit: ebb143242f85cd6477c82f65e9c0caa115b05fab
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 1%

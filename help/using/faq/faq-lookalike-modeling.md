@@ -1,13 +1,14 @@
 ---
 description: 相似人群拓展建模通过自动数据分析帮助您发现新的独特受众。 本文提供了最常见问题的解答。
-seo-description: 相似人群拓展建模通过自动数据分析帮助您发现新的独特受众。 本文提供了最常见问题的解答。
-seo-title: 相似人群拓展建模常见问题解答
+seo-description: Look-Alike Modeling helps you discover new, unique audiences through automated data analysis. This article provides answers to the most frequently asked questions.
+seo-title: Look-Alike Modeling FAQ
 solution: Audience Manager
 title: 相似人群拓展建模常见问题解答
-feature: 算法模型
-source-git-commit: cf9368d4690b61066646054543cc60d390eea021
+feature: Algorithmic Models
+exl-id: c6e92db0-129f-489e-8cf0-600e0e09698b
+source-git-commit: 37823ae54e106e32aa195a6b69e0f1ebfc322f09
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -16,13 +17,13 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-本文提供了有关[!UICONTROL Look-Alike Modeling]的最常见问题的解答。
+本文提供了有关 [!UICONTROL Look-Alike Modeling].
 
 ## 问题 {#questions}
 
-**我为什么要得到平面 [!UICONTROL Accuracy & Reach] 图？**
+**为什么我要买公寓 [!UICONTROL Accuracy & Reach] 图形？**
 
-平面[!UICONTROL Accuracy & Reach]图表表示几乎所有用户都通过模型获得了相同的分数。 在运行模型的数据源中包含网站访客特征时，可能会出现这种情况。 要避免这种情况，请在模型创建步骤期间使用[!UICONTROL Exclusions]字段从模型输入中删除通用特征。
+公寓 [!UICONTROL Accuracy & Reach] 图表表示几乎每个用户都收到模型的相同分数。 在运行模型的数据源中包含网站访客特征时，可能会出现这种情况。 要避免这种情况，请在模型创建步骤中，通过使用 [!UICONTROL Exclusions] 字段。
 
  
 
@@ -52,13 +53,13 @@ ht-degree: 0%
 
 **我应该为模型选择哪些第三方数据源？**
 
-使用与基线特征/区段至少有一些重叠的数据源，但同时吸引更多用户。 您还应考虑与每个数据馈送关联的成本。 [!UICONTROL Audience Marketplace]中的数据提供商的成本和定价模型各不相同。
+使用与基线特征/区段至少有一些重叠的数据源，但同时吸引更多用户。 您还应考虑与每个数据馈送关联的成本。 在 [!UICONTROL Audience Marketplace].
 
  
 
 **使用第三方数据进行建模是否需要花费？**
 
-它取决于所选数据馈送的定价模型。 有些信息源允许免费进行建模，而另一些信息源则需要收取费用。 有关详细信息，请参阅[面向数据信息源购买者的账单](../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)。
+它取决于所选数据馈送的定价模型。 有些信息源允许免费进行建模，而另一些信息源则需要收取费用。 请参阅 [面向数据信息源购买者的账单](../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md) 以了解详细信息。
 
  
 
