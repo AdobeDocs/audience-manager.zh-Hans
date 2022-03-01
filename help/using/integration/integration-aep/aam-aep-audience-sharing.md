@@ -5,9 +5,9 @@ title: Experience Platform区段与Audience Manager和其他Experience Cloud解�
 keywords: AEP受众共享、AEP区段、平台区段、区段共享、受众共享、共享区段、AAM AEP区段共享
 feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: ebb143242f85cd6477c82f65e9c0caa115b05fab
+source-git-commit: aaaed3930a1e7af4724cc01bda74b83edec98385
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1522'
 ht-degree: 1%
 
 ---
@@ -153,11 +153,15 @@ Audience Manager会自动创建名为 **Experience Platform区段** 区段存储
 
 ### 区段评估Experience Platform
 
-Audience Manager每天更新界面中的报表数量一次。   此更新的时间与Experience Platform中区段评估的时间很少一致。
+Audience Manager每天更新界面中的报表数量一次。 此更新的时间与Experience Platform中区段评估的时间很少一致。
 
 ### 配置文件合并规则与合并策略之间的差异
 
 [[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) Audience Manager和 [[!UICONTROL Merge Policies]](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/merge-policies.html) 在Experience Platform中，工作方式不同，而用于每种情况的身份图会有所不同。 因此，预计区段人口之间会存在一些差异。
+
+>[!NOTE]
+>
+> 在将区段从Experience Platform共享到Audience Manager时，您的平台组织 [默认合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en#default-merge-policy) 优先于 [区段使用的合并策略](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#merge-policies) 共享Audience Manager。 例如，如果共享区段的合并策略允许 [ID拼合](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#configure)，但组织的默认合并策略不会执行，这可能会导致平台和Audience Manager之间的群体差异。
 
 ### Experience Platform中的区段组成
 
