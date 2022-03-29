@@ -7,9 +7,9 @@ title: 入站数据文件的 Amazon S3 名称和文件大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 exl-id: 428acdb5-fff0-4b70-b15a-e384aed9cc2d
-source-git-commit: 7721083fd538f0b74f72cfc78981e2cc76777790
+source-git-commit: a5506a315a98afdf31f8f52fac09b9179f388f30
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1104'
 ht-degree: 4%
 
 ---
@@ -72,7 +72,7 @@ Removed  {importance="high"} for ExL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
-   <td colname="col2"> <p>此字段告知Audience Manager要将数据载入到哪个数据源。 如果您将DPID设置为Android ID、iOS ID或属于全局数据源的其他ID，则此字段为必填字段。 这允许Audience Manager将文件数据关联回您的组织。 <br> 此目标数据源需要归您的公司所有。 出于第二方数据共享的目的，要将数据摄取到属于其他公司的目标数据源中，您必须在您的公司和目标数据源之间具有访问映射。 请联系您的Adobe顾问或客户支持以设置映射。</p> <p><b>重要说明：</b> 您 <i>不</i> 需要请求现有数据共享关系的映射（对于属于您已载入数据的其他公司的目标数据源，请求在2022年3月14日之前将该数据映射到）。 将数据载入属于您的PID的目标数据源时，也不需要进行映射。 </p> <p>例如： </p> 
+   <td colname="col2"> <p>此字段告知Audience Manager要将数据载入到哪个数据源。 如果您将DPID设置为Android ID、iOS ID或属于全局数据源的其他ID，则此字段为必填字段。 这允许Audience Manager将文件数据关联回您的组织。 <br> 此目标数据源需要归您的公司所有。 出于第二方数据共享的目的，要将数据摄取到属于其他公司的目标数据源中，您必须在您的公司和目标数据源之间具有访问映射。 请联系您的Adobe顾问或客户支持以设置映射。</p> <p><b>重要说明：</b> 您 <i>不</i> 需要请求现有数据共享关系的映射（适用于属于您在2022年3月14日之前已载入数据的其他公司的目标数据源）。 将数据载入属于您的PID的目标数据源时，也不需要进行映射。 </p> <p>例如： </p> 
     <ul> 
      <li> <code>...ftp_dpm_33_21_1234567890.sync</code> 告知Audience Manager您是否符合属于数据源33的客户ID的资格条件，以识别属于数据源21的特征或信号。 </li> 
      <li> <b>Android ID(GAID):</b> <code>...ftp_dpm_20914_21_1234567890.sync</code> 告知 <span class="keyword"> Audience Manager</span> 数据文件仅包含Android ID，且ID应符合属于数据源21的特征的条件。</li> 
