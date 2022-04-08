@@ -1,16 +1,16 @@
 ---
 description: 本文介绍欧洲《通用数据保护条例》(GDPR) 所使用的概念和术语，以及 Adobe Audience Manager 作为数据处理者如何满足各项 GDPR 要求。
-seo-description: 本文介绍欧洲《通用数据保护条例》(GDPR) 所使用的概念和术语，以及 Adobe Audience Manager 作为数据处理者如何满足各项 GDPR 要求。
-seo-title: GDPR 术语表
+seo-description: This article explains the concepts and terminology used by the European General Data Protection Regulation (GDPR), and how Adobe Audience Manager, as a Data Processor, addresses various GDPR requirements.
+seo-title: GDPR Glossary
 solution: Audience Manager
 title: GDPR 术语表
 uuid: e52cad27-6a44-45ee-8524-6080adb86cc8
-feature: 数据管理和隐私
+feature: Data Governance & Privacy
 exl-id: 36930703-745e-4fbd-ad18-ba9efb77eb7e
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 99%
+source-wordcount: '693'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 
 GDPR 于 2018 年 5 月 25 日生效，其主要目标是让欧盟地区的每个人（数据主体）能够更好地控制其个人数据，同时通过统一欧盟内部的法规来简化对国际企业的监管环境。在 Adobe 为实现 GDPR 合规积极做准备的过程中，Adobe Audience Manager 团队根据需要对服务和流程进行了改进，以支持来自数据主体（即您的消费者）的数据访问和删除请求。
 
-另请参阅 [Experience Cloud GDPR 常见问题解答](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-faq.md)，以更好地了解 Experience Cloud 为实现 GDPR 合规采取的措施。
+另请务必在 [隐私法规概述](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=en) 以更好地了解GDPR在Experience Cloud中的工作方式。
 
 ## GDPR 术语表 {#gdpr-glossay}
 
@@ -58,7 +58,7 @@ GDPR 于 2018 年 5 月 25 日生效，其主要目标是让欧盟地区的每�
 
  
 
-**Audience Manager 标识符 (ID)：** Adobe Audience Manager 存储各种类型的 ID。[Audience Manager 标识符](data-privacy-ids.md)页面汇总了这些 ID 及其相应数据源，还提供了简短说明。向 [Adobe Experience Platform Privacy Service](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) 发送请求时，需引用这些 ID 以发送数据主体提出的数据删除或访问请求。
+**Audience Manager 标识符 (ID)：** Adobe Audience Manager 存储各种类型的 ID。[Audience Manager 标识符](data-privacy-ids.md)页面汇总了这些 ID 及其相应数据源，还提供了简短说明。向 [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) 发送请求时，需引用这些 ID 以发送数据主体提出的数据删除或访问请求。
 
  
 

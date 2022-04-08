@@ -5,9 +5,9 @@ title: Experience Platform区段与Audience Manager和其他Experience Cloud解�
 keywords: AEP受众共享、AEP区段、平台区段、区段共享、受众共享、共享区段、AAM AEP区段共享
 feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: aaaed3930a1e7af4724cc01bda74b83edec98385
+source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1516'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 在Audience Manager和Adobe Experience Platform之间共享受众功能，允许您将Audience Manager特征和区段共享到Adobe Experience Platform，反之亦然。 您需要 [[!DNL Audience Manager Connector]](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，以便在Audience Manager和Adobe Experience Platform之间共享受众。
 
-您可以在Experience Platform中使用Audience Manager特征和区段，将Audience Manager数据添加到客户配置文件并从Experience Platform中受益 [分段服务](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md).
+您可以在Experience Platform中使用Audience Manager特征和区段，将Audience Manager数据添加到客户配置文件并从Experience Platform中受益 [分段服务](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=en).
 
 在Audience Manager中，您可以将Experience Platform区段用于数据管理平台用例，例如：
 * 添加 [第三方数据](/help/using/overview/data-types-collected.md#third-party-data) 到您的区段；
