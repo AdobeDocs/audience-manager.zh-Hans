@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Facebook WCA 集成
 feature: Third-party Integration
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
-source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
+source-git-commit: 8780083474d68717fe3bd4dc632d96da89929122
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '815'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 概述 {#overview}
 
-[Facebook网站自定义受众(WCA)](https://www.facebook.com/business/help/449542958510885) 用于创建访问过特定页面或在您的网站上执行特定操作的人员列表。 [!DNL Audience Manager] 启用 [!DNL WCA] 使用 [!DNL URL] 目标，您可以通过该目标配置基于像素的自定义集成，以将基于Web的受众发送到 [!DNL Facebook] 进行定位。
+[Facebook网站自定义受众(WCA)](https://www.facebook.com/business/help/610516375684216?id=2469097953376494) 用于创建访问过特定页面或在您的网站上执行特定操作的人员列表。 [!DNL Audience Manager] 启用 [!DNL WCA] 使用 [!DNL URL] 目标，您可以通过该目标配置基于像素的自定义集成，以将基于Web的受众发送到 [!DNL Facebook] 进行定位。
 
 ![Facebook WCA 集成](/help/using/integration/assets/facebook-wca-integration.png)
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 | 参数 | 描述 |
 |---------|----------|
 | `id` | 您的 [!DNL Facebook] 像素ID，您可以在 [!DNL Facebook Ad Manager] 创建受众像素时的用户界面。 |
-| `ev` | Event.     这是任意值，将显示在 [!DNL Facebook Ad Manager] 像素开始在网站上触发后的用户界面。 请参阅 [!UICONTROL Include] 项目 [步骤3](/help/using/integration/integrating-third-party/facebook-wca-integration.md#step-3-create-audience)，以了解更多信息。 |
+| `ev` | Event. 这是任意值，将显示在 [!DNL Facebook Ad Manager] 像素开始在网站上触发后的用户界面。 请参阅 [!UICONTROL Include] 项目 [步骤3](/help/using/integration/integrating-third-party/facebook-wca-integration.md#step-3-create-audience)，以了解更多信息。 |
 | `cd[segID]` | 其他参数，将开始在 [!DNL Facebook Ad Manager] 像素开始在网站上触发后的用户界面。 `segID` 也是任意的。 |
 | `%ALIAS%` | 安 [!DNL Audience Manager] 宏，将动态替换为 [!DNL Audience Manager] [!UICONTROL segment] 网站访客符合条件的ID，以逗号分隔， |
 
