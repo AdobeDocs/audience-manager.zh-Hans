@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Adobe Audience Manager服务器到服务器目标
 feature: Destination Basics
 exl-id: 7db3bc02-ece4-4524-a401-d2c8c6de510a
-source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
+source-git-commit: 9947adbd99e12efdf2d94c6840929ad9266c58a2
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 74%
@@ -16,18 +16,18 @@ ht-degree: 74%
 
 # [!DNL Audience Manager] [!UICONTROL Device-based Destinations]
 
-本页仅包含当前的[!DNL Audience Manager] [基于设备的目标](/help/using/features/destinations/add-device-based-destinations.md)。 在[!DNL Audience Manager]中， [!UICONTROL device-based destinations]也称为[!UICONTROL server-to-server destinations]。 有关集成的更多信息，请参阅其[AdobeExchange](https://exchange.adobe.com/experiencecloud.html)列表（如果可用），或联系您的[!DNL Adobe]顾问或客户关怀团队。
+此页面包含当前页面 [!DNL Audience Manager] [基于设备的目标](/help/using/features/destinations/add-device-based-destinations.md) 仅。 在 [!DNL Audience Manager], [!UICONTROL device-based destinations] 也称为 [!UICONTROL server-to-server destinations]. 有关集成的更多信息，请参阅 [Adobe交换](https://exchange.adobe.com/experiencecloud.html) 列表（如果可用）或联系您的 [!DNL Adobe] 顾问或客户关怀团队。
 
 
-* **上次更新**  =显示此更新的上次日期 [!UICONTROL device-based destination]。
-* **更新** =指示 [!DNL Audience Manager] 是实时还是批量(1xday)向此发送数 [!UICONTROL destination]据。
-* **取消分段** =取消分段描述了从中取消设备配置文件资格和删除设备配置文件的 [!UICONTROL segments]流程。能否从[!UICONTROL segment]中删除设备配置文件取决于用于创建[!UICONTROL Profile Merge Rule]的设备选项。 在[!DNL GDPR]删除请求的上下文中也使用取消分段。 阅读[配置文件合并规则和设备取消分段流程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和[具有取消分段功能的Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 [!DNL Audience Manager] 将取消区段信息发送到 [!UICONTROL destinations] 下面的“ **** 是”标记。
-* **接收 [!DNL IAB TCF] 同意信号**  =使 [!DNL Audience Manager Plug-in for IAB TCF] 您能够将字符串转发 [!DNL IAB TC] 给激活合作伙伴，同时尊重用户所做的隐私选择。阅读[适用于IAB TCF的Audience Manager插件](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md)。
-* **[!DNL ICDS]** =此列列出支持的合作伙伴 [!UICONTROL Instant Cross-Device Suppression]。阅读[Instant Cross-Device Suppression](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
-* **移动设备ID**  =此列列出可从中接收移动设备ID的合作 [!DNL Audience Manager]伙伴。
+* **上次更新时间** =显示进行此更新的最后日期 [!UICONTROL device-based destination].
+* **更新** =指示是否 [!DNL Audience Manager] 实时或批量(1xday)向此 [!UICONTROL destination].
+* **取消分段** =取消分段描述了取消设备配置文件资格和从中删除设备配置文件的流程 [!UICONTROL segments]. 您可以从 [!UICONTROL segment] 取决于用于创建 [!UICONTROL Profile Merge Rule]. 取消分段也会在 [!DNL GDPR] 删除请求。 读取 [配置文件合并规则和设备取消分段过程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) 和 [具有取消分段功能的Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation). [!DNL Audience Manager] 向发送取消分段信息 [!UICONTROL destinations] 标记为 **是** 下。
+* **接收 [!DNL IAB TCF] 同意信号** = [!DNL Audience Manager Plug-in for IAB TCF] 使您能够转发 [!DNL IAB TC] 字符串发送到激活合作伙伴，同时尊重用户所做的隐私选择。 读取 [适用于IAB TCF的Audience Manager插件](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
+* **[!DNL ICDS]** =此列列出了支持的合作伙伴 [!UICONTROL Instant Cross-Device Suppression]. 了解 [即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
+* **移动设备ID** =此列列出可从中接收移动设备ID的合作伙伴 [!DNL Audience Manager].
 
 
-| 集成 | 上次更新 | 更新 | 取消分段 | 接收[!DNL IAB TCF]同意信号 | [!DNL ICDS] | 移动设备 ID |
+| 集成 | 上次更新 | 更新 | 取消分段 | 接收 [!DNL IAB TCF] 同意信号 | [!DNL ICDS] | 移动设备 ID |
 |----------------------------------------------------------|------------|-----------|-----------|-----------------------------------|------|-------------------|
 | [!DNL 4C Insights] | 26/09/2018 | 1天 | 是 | 否 | 否 | 是 |
 | [!DNL 4info] | 09/02/2017 | 1天 | 否 | 否 | 否 | 是 |
@@ -46,7 +46,7 @@ ht-degree: 74%
 | [!DNL Amazon Advertising] | 15/06/2017 | 1天 | 是 | 否 | 否 | 否 |
 | [!DNL AOL AdLearn] | 02/03/2017 | 实时 | 否 | 否 | 否 | 是 |
 | [!DNL AOL ONE] | 02/03/2017 | 实时 | 是 | 否 | 否 | 是 |
-| [!DNL AppNexus] | 02/03/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL AppNexus] | 02/03/2017 | 实时 | 是 | 否 | 是 | 是 |
 | [!DNL AppNexus Yieldex] | 10/08/2017 | 1天 | 是 | 否 | 否 | 否 |
 | [!DNL Artsai] (formerly [!DNL Adxcel]) | 27/01/2020 | 1天 | 否 | 否 | 否 | 是 |
 | [!DNL Atedra]/[!DNL AdStanding] | 02/03/2017 | 实时 | 是 | 否 | 是 | 否 |
@@ -160,9 +160,9 @@ ht-degree: 74%
 | [!DNL Triple Lift] | 03/03/2017 | 实时 | 否 | 是 | 否 | 否 |
 | [!DNL TrueX] | 11/01/2018 | 实时 | 是 | 否 | 否 | 是 |
 | [!DNL TubeMogul] | 03/03/2017 | 实时 | 是 | 否 | 是 | 否 |
-| [!DNL Turn] /  [!DNL Amobee] | 03/03/2027 | 实时 | 否 | 否 | 否 | 是 |
+| [!DNL Turn] / [!DNL Amobee] | 03/03/2027 | 实时 | 否 | 否 | 否 | 是 |
 | [!DNL Twenga] | 29/10/2018 | 实时 | 是 | 否 | 否 | 否 |
-| [!DNL Twitter Custom Audiences] | 27/02/2017 | 实时 | 是 | 否 | 是 | 否 |
+| [!DNL Twitter Custom Audiences] | 27/03/2017 | 实时 | 是 | 否 | 是 | 否 |
 | [!DNL Undertone] | 11/07/2017 | 1天 | 否 | 否 | 否 | 否 |
 | [!DNL Verve] | 15/06/2017 | 1天 | 是 | 否 | 否 | 是 |
 | [!DNL VideoAmp] | 03/03/2017 | 实时 | 否 | 否 | 否 | 否 |
@@ -177,4 +177,4 @@ ht-degree: 74%
 | [!DNL Yieldex] | 21/08/2017 | 不同 | 是 | 否 | 否 | 否 |
 | [!DNL YieldMo] | 03/03/2017 | 1天 | 否 | 否 | 否 | 否 |
 | [!DNL Yume] | 31/05/2017 | 1天 | 否 | 否 | 否 | 否 |
-| [!DNL Zeta] /  [!DNL Sizmek DSP] /  [!DNL RocketFuel] | 17/02/2017 | 实时 | 是 | 否 | 是 | 是 |
+| [!DNL Zeta] / [!DNL Sizmek DSP] / [!DNL RocketFuel] | 17/02/2017 | 实时 | 是 | 否 | 是 | 是 |
