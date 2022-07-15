@@ -29,7 +29,7 @@ ht-degree: 3%
 使用时请注意以下事项 [Audience ManagerAPI](https://bank.demdex.com/portal/swagger/index.html#/) 代码：
 
 * **请求参数：** 除非另有指定，否则所有请求参数都是必需的。
-* **请求头**:使用 [Adobe开发人员](https://www.adobe.io/) 令牌，您必须提供 `x-api-key` 标题。 您可以 [!DNL API] 键 [服务帐户集成](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 页面。
+* **请求头**:使用 [Adobe Developer](https://www.adobe.io/) 令牌，您必须提供 `x-api-key` 标题。 您可以 [!DNL API] 键 [服务帐户集成](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 页面。
 * **[!DNL JSON]内容类型：** 指定 `content-type: application/json`  *和*  `accept: application/json` 代码中。
 * **请求和响应：** 以格式正确的方式发送请求 [!DNL JSON] 对象。 [!DNL Audience Manager] 回复 [!DNL JSON] 格式化的数据。 服务器响应可以包含请求的数据、状态代码或两者。
 * **访问：** 您的 [!DNL Audience Manager] 顾问将为您提供客户ID和密钥，以便您能够 [!DNL API] 请求。
@@ -39,16 +39,16 @@ ht-degree: 3%
 
 的 [!DNL Audience Manager] [!DNL REST APIs] 支持两种身份验证方法。
 
-* [JWT（服务帐户）身份验证](#jwt) 使用 [Adobe开发人员](https://www.adobe.io/). [!DNL Adobe Developer] 是Adobe的开发人员生态系统和社区。 包括 [适用于所有Adobe产品的API](https://www.adobe.io/apis.html). 这是设置和使用的推荐方法 [!DNL Adobe] [!DNL APIs].
+* [JWT（服务帐户）身份验证](#jwt) 使用 [Adobe Developer](https://www.adobe.io/). [!DNL Adobe Developer] 是Adobe的开发人员生态系统和社区。 包括 [适用于所有Adobe产品的API](https://www.adobe.io/apis.html). 这是设置和使用的推荐方法 [!DNL Adobe] [!DNL APIs].
 * [OAuth身份验证（已弃用）](#oauth). 虽然此方法已弃用，但客户现有 [!DNL OAuth] 集成可以继续使用此方法。
 
 >[!IMPORTANT]
 >
 >根据您的身份验证方法，您需要调整请求 [!DNL URLs] 因此。 请参阅 [环境](#environments) 部分以了解有关您应使用的主机名的详细信息。
 
-## [!DNL JWT] ([!DNL Service Account])使用Adobe开发人员进行身份验证 {#jwt}
+## [!DNL JWT] ([!DNL Service Account])使用Adobe Developer进行身份验证 {#jwt}
 
-### Adobe开发人员概述 {#adobeio}
+### Adobe Developer概述 {#adobeio}
 
 [!DNL Adobe Developer] 是Adobe的开发人员生态系统和社区。 包括 [适用于所有Adobe产品的API](https://www.adobe.io/apis.html).
 
@@ -56,13 +56,13 @@ ht-degree: 3%
 
 ### 先决条件 {#prerequisites}
 
-在配置之前 [!DNL JWT] 身份验证，确保您有权访问 [Adobe开发人员控制台](https://console.adobe.io/) in [Adobe开发人员](https://www.adobe.io/). 有关访问请求，请联系您的组织管理员。
+在配置之前 [!DNL JWT] 身份验证，确保您有权访问 [Adobe Developer控制台](https://console.adobe.io/) in [Adobe Developer](https://www.adobe.io/). 有关访问请求，请联系您的组织管理员。
 
 ### 身份验证 {#auth}
 
 请按照以下步骤配置 [!DNL JWT (Service Account)] 使用验证 [!DNL Adobe Developer]:
 
-1. 登录到 [Adobe开发人员控制台](https://console.adobe.io/).
+1. 登录到 [Adobe Developer控制台](https://console.adobe.io/).
 1. 按照 [服务帐户连接](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
    * 期间 [步骤2:使用服务帐户身份验证将API添加到您的项目](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)，选择 [!DNL Audience Manager] [!DNL API] 选项。
 1. 通过创建第一个 [!DNL API] 根据 [步骤3](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
@@ -189,7 +189,7 @@ ht-degree: 3%
 对可用的 [!DNL API] 方法：
 
 * 在 `HTTP` 标题，设置 `Authorization: Bearer <token>`.
-* 使用 [JWT（服务帐户）身份验证](#jwt)，您需要提供 `x-api-key` 标头，与 `client_id`. 您可以 `client_id` 从 [Adobe开发人员集成](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 页面。
+* 使用 [JWT（服务帐户）身份验证](#jwt)，您需要提供 `x-api-key` 标头，与 `client_id`. 您可以 `client_id` 从 [Adobe Developer集成](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 页面。
 * 调用所需的 [!DNL API] 方法。
 
 ## 可选 [!DNL API] 查询参数 {#optional-api-query-parameters}

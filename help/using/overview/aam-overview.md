@@ -1,15 +1,15 @@
 ---
 description: 有关 Adobe Audience Manager 历史记录、收集的数据类型、分段、报表等的信息。
 landing-page-description: 有关 Audience Manager 历史、收集的数据类型、分段、报告等的信息。
-seo-title: Audience Manager 概述
+seo-title: Audience Manager Overview
 solution: Audience Manager
 title: Audience Manager 概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
-feature: 概述
+feature: Overview
 exl-id: e96d8c05-7082-4f17-936d-f1896e665c8e
 source-git-commit: 15e36d2847627b5e5ccef11f8073ce5124f14815
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '304'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Audience Manager 可以帮助您汇总受众数据资产，从而能够轻松收
 
 使用 Audience Manager，您可以不必依赖于数据销售商、交易台或需求方平台。此外，就合作伙伴的数据资产而言，Audience Manager 与其完全没有任何关系。通过访问多个数据源，Audience Manager 使数字出版商能够使用各种各样的第三方数据以及我们的私有数据协作。与我们的合作伙伴解决方案团队交流，了解如何帮助您针对目标受众做出明智而准确的决策。
 
-## 数据管理平台 (DMP) 的三个功能 {#dmp-three-functions}
+## 数据管理平台 (DMP) 的三个功能  {#dmp-three-functions}
 
 数据管理平台 (DMP) 的功能可归纳为三个类别，如下所示。
 
