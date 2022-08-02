@@ -7,9 +7,9 @@ title: 数据导出控制
 uuid: de7f3608-c0cb-4049-973a-8be54525c600
 feature: Data Export Controls
 exl-id: 4369c210-bcf1-48cc-a9bb-0d122f6c03d4
-source-git-commit: c7a6de018a0ddd782eecec0844c4f5c824431119
+source-git-commit: 26aa0a210a045b40b2329844324315a092947188
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '876'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 1%
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 不能用于站外广告定位</span></b> </td> 
    <td colname="col2"> <b><span class="uicontrol"> 此目标可用于站外广告定位</span></b> </td> 
-   <td colname="col3">这些限制通常用于选择后，您无法： 
+   <td colname="col3">选择后，您将无法： 
     <ul id="ul_B9352FF5282C481BA3A24C581217A156"> 
      <li id="li_0F89583A603D4CD8804724954CFD52C6">将特征添加到映射到目标的区段，以便在其他网站上重新定位用户。 </li> 
      <li id="li_ABDD8BEDE9AF411695C7BDF9AE522BA7">将通过特征从数据源构建的区段映射到可重新定位其他网站上用户的目标。 </li> 
