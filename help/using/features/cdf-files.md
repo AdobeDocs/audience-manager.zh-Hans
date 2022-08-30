@@ -8,9 +8,9 @@ title: 客户数据信息源
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 feature: Customer Data Feeds
 exl-id: 118c4225-3b57-4a02-ae05-2fcbf3e5d743
-source-git-commit: e85dea581e1e7fee2fce0854dc094ed763df8160
+source-git-commit: 89137248aa47573f5b65e387a152f651419da827
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1989'
 ht-degree: 3%
 
 ---
@@ -48,6 +48,10 @@ ht-degree: 3%
 
 列出并定义 [!UICONTROL CDF] 文件，按外观顺序排列。 定义包括数据类型，但此信息不属于 [!UICONTROL CDF] 文件。
 
+>[!IMPORTANT]
+>
+>默认情况下，CDF配置中会排除事件像素。 如果您希望将事件像素包含在CDF文件中，请确保在向客户关怀团队的请求中指定。 每个事件像素将作为唯一行填充在CDF文件中。
+
 ## 定义 {#definitions}
 
 A [!UICONTROL CDF] 文件包含下面定义的部分或全部字段。 有关内部文件组织的信息，请参阅 [客户数据信息源文件结构](#cdf-file-structure).
@@ -78,7 +82,7 @@ A [!UICONTROL CDF] 文件包含下面定义的部分或全部字段。 有关内
   <tr> 
    <td colname="col1"> <p><code> Container ID</code> </p> </td> 
    <td colname="col2"> <p>数值 </p> </td> 
-   <td colname="col3"> <p>触发ID同步的容器的ID。 </p> </td> 
+   <td colname="col3"> <p>触发ID同步的容器的ID。 仅当您在 <i>d_nsid</i> 字段。 否则，CDF文件中将不包含默认值0。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Realized Traits</code> </p> </td> 
