@@ -1,17 +1,17 @@
 ---
 description: 有关配置文件合并规则和设备图的常见问题解答。
 keywords: 组织 ID
-seo-description: 有关配置文件合并规则和设备图的常见问题解答。
-seo-title: 配置文件合并规则和设备图常见问题解答
+seo-description: Answers to common Profile Merge Rule and device graph questions.
+seo-title: Profile Merge Rules and Device Graph FAQ
 solution: Audience Manager
 title: 配置文件合并规则和设备图常见问题解答
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
-feature: 配置文件合并
+feature: Profile Merge
 exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 86%
+source-wordcount: '1530'
+ht-degree: 82%
 
 ---
 
@@ -31,13 +31,13 @@ ht-degree: 86%
 
 **什么是外部设备图？**
 
-外部设备图是指在 [!DNL Audience Manager] 中除使用您自己的跨设备数据源之外还使用其他数据源创建的设备图。例如，如果创建[配置文件合并规则](../features/profile-merge-rules/merge-rules-start.md)，并选择 [!UICONTROL Co-op Device Graph] 或第三方设备图选项，则表明您正在使用外部设备图。请参阅[设备选项](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
+外部设备图是指在 [!DNL Audience Manager] 中除使用您自己的跨设备数据源之外还使用其他数据源创建的设备图。例如，在您创建 [配置文件合并规则](../features/profile-merge-rules/merge-rules-start.md) 然后选择第三方设备图选项，即您正在使用外部设备图。 请参阅[设备选项](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
 
  
 
 **在 [!UICONTROL Profile Merge Rule] 中使用外部设备图的常见用例有哪些？**
 
-在 [!UICONTROL Profile Merge Rule] 中使用设备图的主要目的在于评估属于单个人员或家庭的多台设备并确定其是否符合特定区段的资格。区段本身也可能具有多种用途，例如，通过 DSP 提供的广告定位潜在受众，或通过网站个性化平台为客户提供个性化的网站访问体验。请参阅[外部设备图用例](../features/profile-merge-rules/external-graph-use-cases.md)。
+在 [!UICONTROL Profile Merge Rule] 中使用设备图的主要目的在于评估属于单个人员或家庭的多台设备并确定其是否符合特定区段的资格。区段本身可能具有多种用途，例如，通过DSP提供的广告定位潜在受众，或通过网站个性化平台个性化客户的网站上体验。 请参阅[外部设备图用例](../features/profile-merge-rules/external-graph-use-cases.md)。
 
  
 
@@ -265,12 +265,12 @@ ht-degree: 86%
 
 要确保使用跨设备ID(如Adobe Campaign)在Audience Manager实例与目标之间进行正确集成，请确保满足以下要求：
 
-1. 查看映射到Adobe Campaign声明的ID目标的区段所使用的配置文件合并规则。 配置文件合并规则必须使用[!UICONTROL Last Authenticated Profile]选项，因此所有经过身份验证的配置文件都可以包含在导出中。 如果您的配置文件合并规则使用不同的选项，请将其切换到[!UICONTROL Last Authenticated Profile]。
+1. 查看映射到Adobe Campaign声明的ID目标的区段所使用的配置文件合并规则。 配置文件合并规则必须使用 [!UICONTROL Last Authenticated Profile] 选项，以便导出中可以包含所有经过身份验证的用户档案。 如果您的配置文件合并规则使用了其他选项，请将其切换为 [!UICONTROL Last Authenticated Profile].
 2. 在配置文件合并规则设置中选择Adobe Campaign声明的ID数据源。
 
 >[!NOTE]
 >
-> 对于面临这种情况的客户，我们已将“配置文件合并规则”限制增加1，这样您就可以为映射到Adobe Campaign Declared ID目标的区段创建专用的“配置文件合并规则”，而无需为其他用例更改“配置文件合并规则”。
+> 对于面临这种情况的客户，我们已将“配置文件合并规则”限制增加1，这样您就可以为映射到Adobe Campaign Declared ID目标的区段创建专用的配置文件合并规则，而无需为其他用例更改配置文件合并规则。
 
 >[!MORELIKETHIS]
 >

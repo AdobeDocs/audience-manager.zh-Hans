@@ -1,28 +1,22 @@
 ---
 description: 有关 Audience Lab 功能的常见问题解答。
-seo-description: 有关 Audience Lab 功能的常见问题解答。
-seo-title: Audience Lab 常见问题解答
+seo-description: Frequently asked questions about the Audience Lab feature.
+seo-title: Audience Lab FAQ
 solution: Audience Manager
 title: Audience Lab 常见问题解答
 uuid: b1daf99d-af60-4f65-987d-794a6d45d566
 feature: Audience Lab
 exl-id: 25bdabb5-2ba8-45d2-81ca-05c0590d7d96
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 98%
+source-wordcount: '325'
+ht-degree: 94%
 
 ---
 
 # Audience Lab 常见问题解答{#audience-lab-faq}
 
 有关 Audience Lab 功能的常见问题解答。
-
-<!-- 
-
-audience-lab-faq.xml
-
- -->
 
 <br> 
 
@@ -54,6 +48,6 @@ audience-lab-faq.xml
 
 有关如何结合使用 [!UICONTROL Audience Lab] 和 [!UICONTROL RBAC] 权限的信息，请参阅[创建区段测试组](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)。
 
-**我是否可以将 [!UICONTROL Audience Lab] 与 [!UICONTROL Profile Link Device Graph] 和外部设备图（[Adobe Experience Cloud 设备协作](https://experienceleague.adobe.com/docs/device-co-op/using/home.html)、Tapad 设备图、Liveramp 设备图）结合使用？**
+**我能用一下吗 [!UICONTROL Audience Lab] 与 [!UICONTROL Profile Link Device Graph] 和外部设备图（Tapad设备图、Liveramp设备图）？**
 
 目前，在使用 [!UICONTROL Profile Link Device Graph] 时，[!UICONTROL Audience Lab] 只能按连接到某个合格设备的设备拆分区段人口。我们正努力在 [!UICONTROL Audience Lab] 中添加对其他设备图的支持，准备就绪后，我们将通知您。
