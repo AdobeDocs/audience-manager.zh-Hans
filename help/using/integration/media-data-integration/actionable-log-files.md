@@ -8,7 +8,7 @@ title: 可操作的日志文件
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 exl-id: bd499931-4e02-4f64-82ba-46ef7c4ffd3c
-source-git-commit: 869bbe657072255e5ea3f0e68294f8f0e6cc966a
+source-git-commit: b3f97cfbbd5167f03a6951fcc571368e4a0d15a4
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 3%
@@ -62,7 +62,8 @@ ht-degree: 3%
 >[!IMPORTANT]
 >
 >[!UICONTROL Actionable Log Files] 以下广告服务器支持：
-> 
+> <br>
+>
 > * [Google促销活动管理器](#dcm-logs-signals)
 > * [Google Ad Manager](#ad-manager-logs-signals)
 > * [Adobe Advertising Cloud、Flashtaking和Sizmek](#generic-logs-signals)
@@ -201,6 +202,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 >[!NOTE]
 >
 >中提供的事件时间戳 [!DNL Google Ad Manager] 日志将被接受并传递到 [!UICONTROL Data Collection Servers].
+>
 >
 >* 如果时间戳不适用于 [!DNL Google Ad Manager] 日志文件，我们使用 `HTTP` 调用作为事件时间戳。
 >* 如果 [!DNL Google Ad Manager] 日志文件包含格式错误的时间戳，我们将忽略整行。
