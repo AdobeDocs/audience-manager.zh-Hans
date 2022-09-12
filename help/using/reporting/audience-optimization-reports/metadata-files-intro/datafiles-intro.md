@@ -1,32 +1,32 @@
 ---
 description: 数据文件包含展示、点击或转化数据。 格式正确后，您可以将此数据导入Audience Manager，并在Audience Optimization报表和可操作的日志文件中使用。 根据此部分中的规范设置数据文件的格式。
-seo-description: 数据文件包含展示、点击或转化数据。 格式正确后，您可以将此数据导入Audience Manager，并在Audience Optimization报表和可操作的日志文件中使用。 根据此部分中的规范设置数据文件的格式。
-seo-title: Audience Optimization 报表的数据文件以及可操作的日志文件
+seo-description: A data file contains impression, click, or conversion data. When formatted properly, you can import this data into Audience Manager and use it in the Audience Optimization reports and for Actionable Log Files. Format your data files according to the specifications in this section.
+seo-title: Data Files for Audience Optimization Reports and Actionable Log Files
 solution: Audience Manager
 title: Audience Optimization 报表的数据文件以及可操作的日志文件
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
-feature: 日志文件
+feature: Log Files
 exl-id: 0da2c1d3-5ff8-40dd-b831-21d8941688ce
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: db90a6f1aaf85b10e31e93e316c257b7c3a904aa
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Audience Optimization 报表的数据文件以及可操作的日志文件 {#data-files-for-audience-optimization-reports}
 
-数据文件包含展示、点击或转化数据。 格式正确后，您可以将此数据导入Audience Manager，以在[Audience Optimization报表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)中查看该数据，并通过[可操作的日志文件](/help/using/integration/media-data-integration/actionable-log-files.md)使用该数据创建特征。 根据本节中的这些规范设置数据文件格式。
+数据文件包含展示、点击或转化数据。 格式正确后，您可以将此数据导入Audience Manager，以便在 [Audience Optimization报表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) 和通过 [可操作的日志文件](/help/using/integration/media-data-integration/actionable-log-files.md). 根据本节中的这些规范设置数据文件格式。
 
 ## 概述 {#overview}
 
-通过正确命名且格式化的数据文件，可将展示、点击或转换数据导入[Audience Optimization报表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)。 当您与未与[!DNL Audience Manager]集成的合作伙伴合作，并且希望在该报表包中处理其数据时，这非常有用。 此过程需要单独的文件来获取展示、点击和转化数据。 请勿将这些事件混合到单个文件中。
+一个名称正确且格式正确的数据文件，允许您将展示、点击或转换数据导入 [Audience Optimization报表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md). 在与未与集成的合作伙伴合作时，此功能非常有用 [!DNL Audience Manager] 并且您想要在该报表包中处理其数据。 此过程需要单独的文件来获取展示、点击和转化数据。 请勿将这些事件混合到单个文件中。
 
-数据文件必须附有元数据文件。 元数据文件内容将数据文件信息与报表菜单中相关的人类可读标签相匹配。 有关更多信息，请参阅[元数据文件的概述和映射](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
+数据文件必须附有元数据文件。 元数据文件内容将数据文件信息与报表菜单中相关的人类可读标签相匹配。 有关更多信息，请参阅 [元数据文件的概述和映射](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md).
 
-## 数据文件{#naming-conventions}的命名约定
+## 数据文件的命名约定 {#naming-conventions}
 
-以下语法定义格式正确的数据文件名的结构。 请注意， *斜体*&#x200B;表示变量占位符，该占位符会根据文件内容而发生更改。
+以下语法定义格式正确的数据文件名的结构。 注意， *斜体* 指示根据文件内容发生更改的变量占位符。
 
 **语法：** <pre><i>事件类型</i>_<i>yyyymmdd</i></code></pre>
 
@@ -34,27 +34,27 @@ ht-degree: 5%
 
 * 事件类型表示文件包含展示次数、点击次数或转化次数。 为每个事件类型创建单独的文件。
 * 下划线用于分隔事件类型和年份 — 月份日期时间戳。
-* 在上传之前，请使用gzip压缩文件，并使用`.gz`文件扩展名进行保存。
+* 在上传之前，请使用gzip压缩文件，然后使用 `.gz` 文件扩展名。
 
 根据这些要求，请根据数据文件的内容命名数据文件，如下所示：
 
-* 展示数据： <pre>impress_<i>yyyymmdd</i>.gz</code></pre>
-* 单击数据： <pre>clicks_<i>yyyymmdd</i>.gz</code></pre>
-* 转化数据： <pre>conversions_<i>yyyymmdd</i>.gz</code></pre>
+* 展示数据： <pre>展示次数_<i>yyyymmdd</i>.gz</code></pre>
+* 单击数据： <pre>点击量_<i>yyyymmdd</i>.gz</code></pre>
+* 转化数据： <pre>转化_<i>yyyymmdd</i>.gz</code></pre>
 
-## 数据文件的内容格式{#content-format}
+## 数据文件的内容格式 {#content-format}
 
-以下语法定义格式正确的数据文件中的内容结构。 请注意， *斜体*&#x200B;表示变量占位符，在实际数据文件中替换为标签。
+以下语法定义格式正确的数据文件中的内容结构。 注意， *斜体* 指示变量占位符，并在实际数据文件中替换为标签。
 
-**语法：** <pre><i>标题标签1</i>  |  <i>标题标签2</i> ...标 <i>题标签n</i>  |  <i>版本</i></code></pre>
+**语法：** <pre><i>标题标签1</i> | <i>标题标签2</i> ... <i>标题n</i> | <i>版本</i></code></pre>
 
 在文件内容中：
 
 * 标题标签必须按如下表所示的顺序显示。 展示次数和点击次数使用相同的标签。 转换文件包含额外的标题。
-* 如果没有特定列的数据，则使用`-1`填充该字段。
+* 如果没有特定列的数据，请使用 `-1`.
 
-* 文件&#x200B;*必须*&#x200B;以版本号结尾。 当前版本为1.1。
-* 使用非打印ASCII 001字符来分隔文件头和内容。 如果不能使用ASCII 001，则使用制表符分隔标题和数据。 由于这些字符是非打印字符，因此上面的语法示例仅显示管道`"|"`以用于显示目的。
+* 文件 *必须* 以版本号结束。 当前版本为1.1。
+* 使用非打印ASCII 001字符来分隔文件头和内容。 如果不能使用ASCII 001，则使用制表符分隔标题和数据。 由于这些字符是非打印字符，因此上面的语法示例显示管道字符 `"|"` 仅供显示。
 
 **字段标签**
 
@@ -70,11 +70,11 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>时间戳 </p> </td> 
-   <td colname="col2"> <p>展示、点击或转化事件的UTC日期和时间。 使用<code> yyyy-MM-dd HH:mm:ss</code>格式。 </p> </td> 
+   <td colname="col2"> <p>展示、点击或转化事件的UTC日期和时间。 使用 <code> yyyy-MM-dd HH:mm:ss</code> 格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>用户ID </p> </td> 
-   <td colname="col2"> <p>网站访客的ID，也称为<span class="term">数据提供程序独特用户ID</span>或DPUUID。 </p> </td> 
+   <td colname="col2"> <p>网站访客的ID，也称为 <span class="term"> 数据提供程序独特用户ID</span> 或DPUUID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>广告商ID </p> </td> 
@@ -140,19 +140,19 @@ ht-degree: 5%
  </tbody> 
 </table>
 
-## 数据文件{#delivery-methods}的提交方法
+## 数据文件的提交方法 {#delivery-methods}
 
-将您的展示、点击或转化数据文件上传到[!DNL Audience Manager]帐户的Amazon S3目录。 有关投放/目录路径、文件处理时间和更新的信息，请参阅此部分。
+将您的展示、点击或转化数据文件上传到Amazon S3目录，以便 [!DNL Audience Manager] 帐户。 有关投放/目录路径、文件处理时间和更新的信息，请参阅此部分。
 
 >[!IMPORTANT]
 >
-> 请联系您的Audience Manager顾问或客户关怀团队，以开始为数据文件设置[!DNL Amazon S3]目录。
+> 请联系您的Audience Manager顾问或客户关怀团队，以开始设置 [!DNL Amazon S3] 的目录。
 
 **传递路径语法和示例**
 
-数据存储在[!DNL Amazon S3]目录中每个客户的单独命名空间中。 文件路径遵循下面显示的语法。 请注意， *斜体*&#x200B;表示变量占位符。 其他元素是常量或键，不会发生更改。
+数据存储在 [!DNL Amazon S3] 目录访问Advertising Cloud的帮助。 文件路径遵循下面显示的语法。 注意， *斜体* 指示变量占位符。 其他元素是常量或键，不会发生更改。
 
-**语法：** <pre>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>文件类型</i>_<i>yyyymmdd</i></code></pre>
+**语法：** <pre>.../log_ingestion/pid= <i>AAM ID</i>/dpid= <i>d_src</i>/logs/ <i>文件类型</i>_<i>yyyymmdd</i></code></pre>
 
 下表定义了文件提交路径中的每个元素。
 
@@ -170,7 +170,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>pid=<i>AAM ID</i></code> </p> </td> 
-   <td colname="col2"> <p>此键值对包含您的<span class="keyword">Audience Manager</span>客户ID。 </p> </td> 
+   <td colname="col2"> <p>此键值对包含 <span class="keyword"> Audience Manager</span> 客户ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>dpid=<i>d_src</i></code> </p> </td> 
@@ -201,4 +201,4 @@ ht-degree: 5%
 
 ## 后续步骤 {#next-steps}
 
-查看命名和创建元数据文件的要求。 要开始配置，请参阅[元数据文件的概述和映射](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
+查看命名和创建元数据文件的要求。 要开始配置，请参阅 [元数据文件的概述和映射](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md).
