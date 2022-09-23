@@ -1,16 +1,16 @@
 ---
 description: 常见报表相关问题。
-seo-description: 常见报表相关问题。
-seo-title: 报表常见问题解答
+seo-description: Common reporting-related questions and issues.
+seo-title: Reporting FAQ
 solution: Audience Manager
 title: 报表常见问题解答
 uuid: 78cd6c86-8a4a-4748-ab71-b6e8d6078c94
-feature: 报表参考
+feature: Reporting Reference
 exl-id: 1e6531b2-bb39-4056-9d5e-164f50955f99
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: 3bddd51582f3f8c46908dba5c5ac1938cb480013
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 99%
+source-wordcount: '695'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ faq_reports.xml
 
 **在运行电子邮件营销活动时，如何确定用户是通过该活动还是其他来源重定向到我的网站？**
 
-在要监视的网站部分的 URL 后面附加一个特定于促销活动的查询字符串。然后，设置一个特征规则以捕获此变量。例如，如果 URL 以 `www.test123.com/electronics?campaign=123` 形式传递促销活动 ID，则可以创建一个特征规则以从 `h_referer` 变量中捕获相应数据，该特征规则将查找类似于 `h_referer = 'campaign=123'` 的标头。
+在要监视的网站部分的 URL 后面附加一个特定于促销活动的查询字符串。然后，设置一个特征规则以捕获此变量。例如，如果URL以此形式传递促销活动ID， `www.test123.com/electronics?campaign=123`，然后创建特征规则以从 `h_referer` 变量，该特征规则会像 `h_referer = 'campaign=123'`.
 
 <br> 
 
