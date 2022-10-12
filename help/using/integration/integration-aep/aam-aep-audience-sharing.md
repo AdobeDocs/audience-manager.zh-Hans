@@ -5,9 +5,9 @@ title: Experience Platform区段与Audience Manager和其他Experience Cloud解�
 keywords: AEP受众共享、AEP区段、平台区段、区段共享、受众共享、共享区段、AAM AEP区段共享
 feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: 14e0ddd00d3a25674090ea9dbe485c77ad1d2aed
+source-git-commit: 0245dd11de31c3139c5df5dc78100f0d3935aa2e
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1901'
 ht-degree: 1%
 
 ---
@@ -41,9 +41,9 @@ ht-degree: 1%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 入门 — 如何在Audience Manager和Experience Platform之间启用数据共享 {#enable-data-sharing-aam-aep}
+## Audience ManagerAdobe Experience Platform中的区段和特征 {#aam-segments-traits-in-aep}
 
-以下两节说明如何在Audience Manager和Experience Platform之间启用数据共享。
+以下各节介绍了如何启用从Audience Manager到Experience Platform的数据共享，以及如何在Experience Platform中使用Audience Manager特征和区段。
 
 ### 启用从Audience Manager到Experience Platform的数据共享 {#enable-aam-to-aep-data}
 
@@ -58,6 +58,17 @@ ht-degree: 1%
 >
 >![屏幕截图显示了在工作流中取消选中选择所有区段和选择所有特征选项以连接到Audience Manager源连接器。](/help/using/integration/integration-aep/assets/select-all-segments-traits-unchecked.png)
 
+### 在Audience Manager中使用Experience Platform特征和区段 {#use-aam-data-in-aep}
+
+在设置Audience Manager源连接器以从Audience Manager导入特征和区段后，您的Audience Manager数据在Experience Platform中显示为 **受众** 在区段工作流中。 有关Audience Manager区段和Experience Platform特征的更多信息，请参阅：
+
+* [Segmentation Service概述](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#audiences)
+* [Experience Platform区段生成器用户指南](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#audiences)
+
+## Adobe Experience PlatformAudience Manager {#aep-segments-in-aam}
+
+以下各节介绍如何启用从Experience Platform到Audience Manager的数据共享，以及如何在Audience Manager中使用Experience Platform区段。
+
 ### 启用从Experience Platform到Audience Manager的数据共享 {#enable-aep-to-aam-data}
 
 >[!NOTE]
@@ -68,14 +79,7 @@ ht-degree: 1%
 
 确保将计划共享从平台到Audience Manager的数据，以确保正确设置连接。 例如，如果您需要为发送到Adobe Target的区段共享区域数据，则需要在票证中传达此信息。 从Experience Platform到Audience Manager的数据共享连接会在提交请求后的六个工作日内设置。
 
-## Audience ManagerAdobe Experience Platform中的区段和特征 {#aam-segments-traits-in-aep}
-
-在设置Audience Manager源连接器以从Audience Manager导入特征和区段后，您的Audience Manager数据在Experience Platform中显示为 **受众** 在区段工作流中。 有关Audience Manager区段和Experience Platform特征的更多信息，请参阅：
-
-* [Segmentation Service概述](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#audiences)
-* [Experience Platform区段生成器用户指南](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#audiences)
-
-## Adobe Experience PlatformAudience Manager {#aep-segments-in-aam}
+### 在Experience Platform中使用Audience Manager {#use-aep-data-in-aam}
 
 您在Experience Platform中创建的区段在Audience Manager界面中显示为信号、特征和区段，并具有以下组合规则：
 
