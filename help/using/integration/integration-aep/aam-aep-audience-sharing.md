@@ -1,22 +1,18 @@
 ---
-description: 本文介绍了如何在Audience Manager和Adobe Experience Platform之间共享受众
+description: 了解如何启用数据共享，以及如何在Audience Manager和Adobe Experience Platform之间共享受众
 solution: Audience Manager
 title: Experience Platform区段与Audience Manager和其他Experience Cloud解决方案共享
 keywords: AEP受众共享、AEP区段、平台区段、区段共享、受众共享、共享区段、AAM AEP区段共享
 feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
+source-git-commit: 14e0ddd00d3a25674090ea9dbe485c77ad1d2aed
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1862'
 ht-degree: 1%
 
 ---
 
 # Experience Platform区段与Audience Manager和其他Experience Cloud解决方案共享
-
->[!NOTE]
->
-> 请联系您的Adobe销售代表以解锁对此功能的访问权限。
 
 ## 概述 {#overview}
 
@@ -45,13 +41,39 @@ ht-degree: 1%
 
 {style=&quot;table-layout:auto&quot;}
 
+## 入门 — 如何在Audience Manager和Experience Platform之间启用数据共享 {#enable-data-sharing-aam-aep}
+
+以下两节说明如何在Audience Manager和Experience Platform之间启用数据共享。
+
+### 启用从Audience Manager到Experience Platform的数据共享 {#enable-aam-to-aep-data}
+
+要将区段和特征从Audience Manager发送到Experience Platform，您必须在Experience Platform源目录中设置Audience Manager源连接器。 这是一个自助式工作流，不需要Adobe客户关怀团队或工程团队的参与。 要设置Audience Manager源连接器，请阅读：
+
+* [Audience Manager源](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
+* [在UI中创建Adobe Audience Manager源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/audience-manager.html?lang=en)
+
+>[!IMPORTANT]
+>
+>Adobe鼓励客户在不选择 **[!UICONTROL Select all segments]** 和 **[!UICONTROL Select all traits]** 选项，如下所示。 首次使用Audience Manager源将Audience Manager区段发送到Platform时，大量Audience Manager区段人口的摄取会直接影响用户档案总数。 这意味着选择所有区段可能会导致用户档案计数超过您的许可证使用权限。
+>
+>![屏幕截图显示了在工作流中取消选中选择所有区段和选择所有特征选项以连接到Audience Manager源连接器。](/help/using/integration/integration-aep/assets/select-all-segments-traits-unchecked.png)
+
+### 启用从Experience Platform到Audience Manager的数据共享 {#enable-aep-to-aam-data}
+
+>[!NOTE]
+>
+> 请联系您的Adobe客户成功经理或客户关怀，以解锁对此功能的访问权限。
+
+要将区段从Experience Platform发送到Audience Manager，您必须联系客户关怀团队或您的客户成功经理。 客户关怀团队和客户支持管理团队必须提交票证(请参阅模板票证AAM-52354)，以启用从平台到Audience Manager的连接。
+
+确保将计划共享从平台到Audience Manager的数据，以确保正确设置连接。 例如，如果您需要为发送到Adobe Target的区段共享区域数据，则需要在票证中传达此信息。 从Experience Platform到Audience Manager的数据共享连接会在提交请求后的六个工作日内设置。
+
 ## Audience ManagerAdobe Experience Platform中的区段和特征 {#aam-segments-traits-in-aep}
 
-您的Audience Manager特征和区段在Experience Platform中显示为 **受众** 在区段工作流中。 有关Audience Manager区段和Experience Platform特征的更多信息，请参阅：
+在设置Audience Manager源连接器以从Audience Manager导入特征和区段后，您的Audience Manager数据在Experience Platform中显示为 **受众** 在区段工作流中。 有关Audience Manager区段和Experience Platform特征的更多信息，请参阅：
 
 * [Segmentation Service概述](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#audiences)
 * [Experience Platform区段生成器用户指南](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#audiences)
-* [Audience Manager连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
 
 ## Adobe Experience PlatformAudience Manager {#aep-segments-in-aam}
 
