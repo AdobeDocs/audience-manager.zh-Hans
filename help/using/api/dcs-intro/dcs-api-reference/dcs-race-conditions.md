@@ -1,36 +1,42 @@
 ---
-description: 介绍如何防止争用情况和DCS错误处理。
-seo-description: 介绍如何防止争用情况和DCS错误处理。
-seo-title: 争用条件和错误处理
+description: 介绍如何防止出现争用情况和DCS错误处理。
+seo-description: Describes how to prevent race conditions and DCS error handling.
+seo-title: Race Conditions and Error Handling
 solution: Audience Manager
 title: 争用条件和错误处理
 uuid: b0aac960-6732-4e96-87a5-40ba2755e02d
 feature: DCS
 exl-id: bfb0b684-6b15-434d-b5ec-5f8741c0c691
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 25d785097228ae66d20cf2b35c8ef63fd64936c6
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 7%
+source-wordcount: '243'
+ht-degree: 2%
 
 ---
 
-# 争用条件和错误处理 {#race-conditions-and-error-handling}
+# 竞争条件、速率限制和错误处理 {#race-conditions-and-error-handling}
 
-介绍如何防止争用情况和[!DNL DCS]错误处理。
+描述如何防止竞争情况和 [!DNL DCS] 错误处理。
 
-## 防止争用情况{#prevent-race-conditions}
+## 防止竞争情况 {#prevent-race-conditions}
 
-如果您在[!DNL DCS]完成对初始查询的响应并将数据写入用户的Cookie之前同时（或快速连续）向该发送多个调用，则可能会出现争用情况。 争用情况不尽如人意，因为它可能损坏或错误地覆盖Cookie数据。 作为最佳实践，请考虑以下方法来帮助避免出现此问题：
+如果您同时（或快速连续）向发送多个调用，则可能会出现争用情况。 [!DNL DCS] 在完成响应初始查询并将数据写入用户的Cookie之前。 争用条件是不希望出现的，因为它可能会损坏或不正确地覆盖Cookie数据。 作为最佳实践，请考虑以下方法以帮助避免此问题：
 
-* 请勿同时从同一用户向[!DNL DCS]发起调用或快速连续进行调用。
-* 等待每个响应返回后再进行后续调用。
+* 请勿同时调用或快速连续调用 [!DNL DCS] 来自同一用户。
+* 等待每个响应返回，然后再进行后续调用。
 
-## 处理{#error-handling}时出错
+## 速率限制 {#rate-limiting}
 
-对于无效或格式不正确的查询，错误处理受到限制。 无效请求返回`HTTP 200 OK`响应，且没有数据。 此外，当用户：[!DNL DCS]`HTTP 200 OK`
+如果Adobe检测到过多的DCS API调用可能对服务可用性产生负面影响，则可能会引入速率限制。
+
+如果启用了速率限制，您可能会收到 `429 Too Many Requests` DCS调用中的HTTP响应状态代码。 收到此HTTP响应时，请稍后重试API调用。
+
+## 错误处理 {#error-handling}
+
+错误处理对于无效或格式错误的查询受到限制。 无效请求返回 `HTTP 200 OK` 响应但没有数据。 此外， [!DNL DCS] 停止处理请求，丢弃特征数据，并返回 `HTTP 200 OK` 当用户执行以下操作时响应：
 
 * 在Audience Manager或合作伙伴级别选择退出跟踪。
 * 来自无效/未选择的地理区域。
-* 禁用浏览器Cookie（全部或第三方）。
+* 禁用浏览器Cookie（所有或第三方）。
 
-另请参阅[DCS错误代码、消息和示例](../../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)。
+另请参阅， [DCS错误代码、消息和示例](../../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md).
