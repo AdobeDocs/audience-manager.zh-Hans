@@ -2,16 +2,17 @@
 description: 了解目标（任何第三方系统，如您共享数据的广告服务器或 DSP）的优势、类型和用法。使用 Destination Builder 创建和管理 Cookie、URL 或服务器到服务器目标。
 keywords: 集成代码，目标，目标概述，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标，目标
 landing-page-description: 了解目标（任何第三方系统，如您共享数据的广告服务器或 DSP）的优势、类型和用法。使用 Destination Builder 创建和管理 Cookie、URL 或服务器到服务器目标。
+short-description: Discover the advantages, types, and uses of destinations – any third-party system, such as an ad server or DSP, where you share data. Use Destination Builder to create and manage cookies, URL, or server-to-server destinations.
 seo-title: Destinations
 solution: Audience Manager
 title: 目标
 uuid: 5c7dbdec-f73f-46fe-9f12-7685e8d7334f
 feature: Destination Basics
 exl-id: f880bb18-057a-494d-82bf-69fc9f34781f
-source-git-commit: 865800eb076811db38aec8e98714ad9712804f77
+source-git-commit: 5d62ecabfe66faa024f8e89149e47dd76d1bba86
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

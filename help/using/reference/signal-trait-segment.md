@@ -1,16 +1,17 @@
 ---
 description: 了解区段的组成以及用于设置受众资格标准的表达式。还可以了解有关数据传输方式的信息。
 landing-page-description: 了解区段的组成以及用于设置受众资格标准的表达式。还可以了解有关数据传输方式的信息。
+short-description: Learn about the components of a segment and the expressions used to set audience qualification criteria. Also find information about how data is transmitted.
 seo-title: Signals, Traits, and Segments
 solution: Audience Manager
 title: 信号、特征和区段
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
 feature: Reference
 exl-id: ec33f2c3-1589-4c02-a85a-db0d72467f32
-source-git-commit: 865800eb076811db38aec8e98714ad9712804f77
+source-git-commit: 5d62ecabfe66faa024f8e89149e47dd76d1bba86
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 16%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
