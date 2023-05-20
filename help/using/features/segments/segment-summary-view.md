@@ -1,56 +1,56 @@
 ---
-description: 区段摘要页面显示详细信息，如名称、区段中的特征、规则、性能数据和目标映射信息。
-seo-description: 区段摘要页面显示详细信息，如名称、区段中的特征、规则、性能数据和目标映射信息。
-seo-title: “区段详细信息”页面
+description: 區段摘要頁面會顯示名稱、區段特徵、規則、效能資料和目的地對應資訊等詳細資訊。
+seo-description: The segment summary page displays details such as name, traits in the segment, rules, performance data, and destination mapping information.
+seo-title: Segment Details Page
 solution: Audience Manager
-title: “区段详细信息”页面
+title: 區段詳細資訊頁面
 uuid: e844e423-9701-42d4-9ba5-d82f41358adc
-keywords: 身份类型划分、身份划分、受众身份报告、跨设备、跨设备ID、设备ID
-feature: 区段
+keywords: 身分型別劃分、身分劃分、對象身分報告、跨裝置、跨裝置ID、裝置ID
+feature: Segments
 exl-id: d33c8146-fd98-47fc-aa3d-96f002538df4
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-# 区段详细信息页面{#segment-summary-view}
+# 區段詳細資訊頁面 {#segment-summary-view}
 
-单个区段的详细信息页面提供了区段详细信息的概述，例如区段名称、ID、性能量度、定义区段的规则以及目标映射。 要查看这些详细信息，请转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**，然后单击要处理的区段名称。
+個別區段的詳細資訊頁面提供區段詳細資訊的概觀，例如區段名稱、ID、績效量度、定義區段的規則以及目的地對應。 若要檢視這些詳細資訊，請前往 **[!UICONTROL Audience Data]** > **[!UICONTROL Segments]** ，然後按一下您要使用的區段名稱。
 
-## 区段管理工具{#segment-management-tools}
+## 區段管理工具 {#segment-management-tools}
 
-区段详细信息页面顶部托管可用于管理区段的工具：
+區段詳細資訊頁面頂端會託管可用來管理區段的工具：
 
-1. **[!UICONTROL Add New]**:使用此选项可激活并 [!UICONTROL Segment Builder] 创建新区段。
-2. **[!UICONTROL Edit]**:使用此选项可更改当前区段的配置。
-3. **[!UICONTROL Duplicate]**:使用此选项可创建当前区段的副本。
-4. **[!UICONTROL Delete]**:使用此选项可从您的Audience Manager帐户中删除当前区段。
-5. **[!UICONTROL Marketplace Recommendations]**:使用此选项可从您未订阅的数据馈送中查找与您正在 [!UICONTROL Audience Marketplace] 查看的区段类似的区段。请参阅[面向数据购买者的Audience Marketplace](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) ，了解如何导航市场并查找类似的区段。
+1. **[!UICONTROL Add New]**：使用此選項啟動 [!UICONTROL Segment Builder] 和建立新區段。
+2. **[!UICONTROL Edit]**：使用此選項可變更目前區段的設定。
+3. **[!UICONTROL Duplicate]**：使用此選項可建立目前區段的復本。
+4. **[!UICONTROL Delete]**：使用此選項可從Audience Manager帳戶中移除目前區段。
+5. **[!UICONTROL Marketplace Recommendations]**：此選項會從尋找與您正在檢視的區段類似的區段 [!UICONTROL Audience Marketplace] 您尚未訂閱的資料摘要。 另請參閱 [適用於資料購買者的Audience Marketplace](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) 以瞭解如何導覽至市場並尋找類似區段。
 
-![基本区段信息](assets/basic-segment-information.png)
+![basic-segment-info](assets/basic-segment-information.png)
 
-## 区段信息 {#basics}
+## 區段資訊 {#basics}
 
-在区段管理工具下方，您可以找到以下区段信息：
+在區段管理工具下方，您可以找到下列區段資訊：
 
-1. **[!UICONTROL Basic Information]:** 显示创建区段时指定的必需和可选详细信息。请参阅[区段生成器](segment-builder.md) ，以详细了解这些字段的含义。
-2. **[!UICONTROL Segment Graph]:** 以图形方式显示固定时间间隔为1、7、14、30、60和90天的性能数据。我们在[单独的文章](../../features/segments/segment-builder-data.md)中解释区段人口数。
+1. **[!UICONTROL Basic Information]：** 顯示建立區段時指定的必要和選用詳細資訊。 另請參閱 [區段產生器](segment-builder.md) 以取得這些欄位含義的詳細概觀。
+2. **[!UICONTROL Segment Graph]：** 以圖形方式顯示效能資料，固定為1、7、14、30、60和90天間隔。 我們在「 」中說明區段母體數字 [單獨文章](../../features/segments/segment-builder-data.md).
 
-   ![区段 — 图形](assets/segment-graph.png)
+   ![區段 — 圖表](assets/segment-graph.png)
 
-3. **[!UICONTROL Identity Type Breakdown ]:** 报表通过计数链接到符合区段资格的设备的跨设备ID和/或外部设备图ID的数量，来显示符合区段资格条件的人员或家庭数量(如 [!UICONTROL Total Segment Population]所示)。此报表中显示的跨设备ID和外部设备图ID用于将配置文件与区段所使用的配置文件合并规则合并。 仅当您在区段所使用的配置文件合并规则中选择了跨设备数据源或外部设备图时，才会显示此报表。
+3. **[!UICONTROL Identity Type Breakdown ]：** 此報表會計算連結至符合區段資格之裝置的跨裝置ID及/或外部裝置圖表ID數量，顯示符合區段資格之使用者或家庭人數(顯示在 [!UICONTROL Total Segment Population])。 此報表中顯示的跨裝置ID和外部裝置圖表ID，可用來將設定檔與區段正在使用的設定檔合併規則合併。 只有在區段使用的設定檔合併規則中選取了跨裝置資料來源或外部裝置圖表時，才會顯示此報表。
 
-   ![区段 — 图形](assets/segment-type.png)
+   ![區段 — 圖表](assets/segment-type.png)
 
    >[!NOTE]
    >
-   >Audience Manager仅在具有符合区段资格条件的跨设备ID时显示[!UICONTROL Identity Type Breakdown]报表。
+   >Audience Manager只會顯示 [!UICONTROL Identity Type Breakdown] 報告是否有符合區段資格的跨裝置ID。
 
-   请观看以下视频，了解[!UICONTROL Identity Type Breakdown]的概述。
+   觀看以下影片，概略瞭解 [!UICONTROL Identity Type Breakdown].
    >[!VIDEO](https://video.tv.adobe.com/v/27977/)
 
-4. **[!UICONTROL Segment Rules]:** 在区段中列出特征和鉴别规则。
-5. **[!UICONTROL Destination Mappings]:** 列出区段的目标映射。
-6. **[!UICONTROL Management Tools]:** 用于创建、编辑、克隆和删除区段的控件。
+4. **[!UICONTROL Segment Rules]：** 列出區段中的特徵以及資格規則。
+5. **[!UICONTROL Destination Mappings]：** 列出區段的目的地對應。
+6. **[!UICONTROL Management Tools]：** 可讓您建立、編輯、複製和刪除區段的控制項。

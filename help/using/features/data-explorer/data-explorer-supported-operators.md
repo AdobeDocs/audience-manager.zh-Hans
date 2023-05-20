@@ -1,44 +1,44 @@
 ---
-description: 使用逻辑运算符对键值对和回填特征进行分组。
-seo-description: 使用逻辑运算符对键值对和回填特征进行分组。
-seo-title: 支持的逻辑运算符
+description: 使用邏輯運運算元將索引鍵值配對和回填特徵分組。
+seo-description: Use logical operators to group key-value pairs and backfill traits.
+seo-title: Supported Logical Operators
 title: 支持的逻辑运算符
 uuid: 645fcb6f-50ac-49bc-8df9-c699c749cf8f
 feature: Data Explorer
 exl-id: 5e405390-1c19-4e43-b3f9-598e8aa6bd99
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 10%
+source-wordcount: '151'
+ht-degree: 8%
 
 ---
 
 # 支持的逻辑运算符 {#supported-logical-operators}
 
-使用逻辑运算符对键值对和回填特征进行分组。
+使用邏輯運運算元將索引鍵值配對和回填特徵分組。
 
-## 支持的信号搜索{#supported-operators-search}运算符
+## 支援的訊號搜尋運運算元 {#supported-operators-search}
 
-使用以下支持的逻辑运算符搜索键值对：
+使用下列支援的邏輯運運算元來搜尋機碼值組：
 
-### 比较运算符
+### 比較運運算元
 
-| 运算符 | 定义 |
+| 操作员 | 定义 |
 |---|---|
-| **==** | 等于 |
+| **==** | 等於 |
 | **>** | 大于 |
 | **&lt;** | 小于 |
-| **=>** | 大于/等于 |
-| **&lt;=** | 小于/等于 |
+| **=>** | 大於/等於 |
+| **&lt;=** | 小於/等於 |
 
-### 命名运算符
+### 已命名的運運算元
 
-| 运算符 | 计算结果为[!DNL True]时间 |
+| 操作员 | 評估至 [!DNL True] 時間 |
 |---|---|
-| **[!UICONTROL Contains]** | 键值对&#x200B;*中的值包含由此运算符指定的*&#x200B;字符。 |
-| **[!UICONTROL Startswith]** | 键值对&#x200B;*中的值以*&#x200B;字符开头，这些字符由此运算符指定。 |
-| **[!UICONTROL Endswith]** | 键值对&#x200B;*中的值以*&#x200B;此运算符指定的字符结尾。 |
+| **[!UICONTROL Contains]** | 機碼值組中的值 *包含* 此運運算元指定的字元。 |
+| **[!UICONTROL Startswith]** | 機碼值組中的值 *開頭為* 此運運算元指定的字元。 |
+| **[!UICONTROL Endswith]** | 機碼值組中的值 *結尾為* 此運運算元指定的字元。 |
 
-## 支持的特征回填和估计运算符{#supported-operators-backfilling}
+## 特徵回填和預估的支援運運算元 {#supported-operators-backfilling}
 
-您可以回填特征，该特征包含包含[!UICONTROL Signal Search]支持的任意运算符的表达式。 除了这些运算符之外，特征回填和估计还支持[!UICONTROL AND]、[!UICONTROL OR]和[!UICONTROL AND NOT]逻辑运算符，用于组合回填特征表达式中的键值对。
+您可以回填包含運算式的特徵，這些運算式包含支援的任何運運算元 [!UICONTROL Signal Search]. 除了這些運運算元外，特徵回填和估計也支援 [!UICONTROL AND]， [!UICONTROL OR]、和 [!UICONTROL AND NOT] 邏輯運運算元，用來結合回填特徵運算式中的機碼值組。

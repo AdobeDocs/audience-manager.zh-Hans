@@ -45,7 +45,7 @@ faq_reports.xml
 
 **在运行电子邮件营销活动时，如何确定用户是通过该活动还是其他来源重定向到我的网站？**
 
-在要监视的网站部分的 URL 后面附加一个特定于促销活动的查询字符串。然后，设置一个特征规则以捕获此变量。例如，如果URL以此形式传递促销活动ID， `www.test123.com/electronics?campaign=123`，然后创建特征规则以从 `h_referer` 变量，该特征规则会像 `h_referer = 'campaign=123'`.
+在要监视的网站部分的 URL 后面附加一个特定于促销活动的查询字符串。然后，设置一个特征规则以捕获此变量。例如，如果您的URL傳入的行銷活動ID如下， `www.test123.com/electronics?campaign=123`，然後建立特徵規則，從 `h_referer` 變數，且具有會尋找類似以下標題的特徵規則： `h_referer = 'campaign=123'`.
 
 <br> 
 

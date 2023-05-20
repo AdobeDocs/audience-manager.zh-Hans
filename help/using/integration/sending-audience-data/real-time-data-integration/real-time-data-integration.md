@@ -1,21 +1,21 @@
 ---
-description: 有关实时Audience Manager集成的信息。
-seo-description: 有关实时Audience Manager集成的信息。
-seo-title: 实时入站数据集成
+description: 即時Audience Manager整合的相關資訊。
+seo-description: Information about the Real-Time Audience Manager integration.
+seo-title: Real-Time Inbound Data Integration
 solution: Audience Manager
 title: 实时入站数据集成
 uuid: 96f292bb-608c-41d3-8baa-a58ecb411db0
-feature: 入站数据传输
+feature: Inbound Data Transfers
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '36'
-ht-degree: 41%
+source-wordcount: '22'
+ht-degree: 36%
 
 ---
 
 
 # 实时入站数据集成 {#real-time-inbound-data-integration}
 
-有关实时Audience Manager集成的信息。
+即時Audience Manager整合的相關資訊。
 
 <!-- c_rt_data_int.xml -->

@@ -1,15 +1,15 @@
 ---
 description: 本文介绍《加州消费者隐私法案》(CCPA) 中使用的相关概念和术语，以及 Adobe Audience Manager 如何满足各项 CCPA 要求。
-seo-description: 本文介绍《加州消费者隐私法案》(CCPA) 中使用的相关概念和术语，以及 Adobe Audience Manager 如何满足各项 CCPA 要求。
-seo-title: CCPA 术语表
+seo-description: This article explains the concepts and terminology used by the California Consumer Privacy Act (CCPA), and how Adobe Audience Manager addresses various CCPA requirements.
+seo-title: CCPA Glossary
 solution: Audience Manager
 title: CCPA 术语表
-feature: 数据管理和隐私
+feature: Data Governance & Privacy
 exl-id: b3e97e2b-81a4-4b32-9716-5b18c3f8362f
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 99%
+source-wordcount: '517'
+ht-degree: 100%
 
 ---
 
@@ -52,6 +52,5 @@ Audience Manager 希望与您密切合作，通过数据管理功能和“通过
  
 
 >[!MORELIKETHIS]
-[数据隐私概述](/help/using/overview/data-security-and-privacy/data-privacy.md)>
 >
-
+>[数据隐私概述](/help/using/overview/data-security-and-privacy/data-privacy.md)

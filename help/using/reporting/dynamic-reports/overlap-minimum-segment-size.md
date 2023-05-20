@@ -1,35 +1,35 @@
 ---
-description: 描述重叠报表更新流程所需的区段大小和创建时间要求。
-seo-description: 描述重叠报表更新流程所需的区段大小和创建时间要求。
-seo-title: 重叠报表更新计划和最小区段大小
+description: 說明重疊報表更新程式所需的區段大小和建立時間需求。
+seo-description: Describes the segment size and creation time requirements required by the Overlap report update process.
+seo-title: Overlap Reports  Update Schedule and Minimum Segment Size
 solution: Audience Manager
-title: 重叠报表更新计划和最小区段大小
+title: 重疊報表更新排程和最小區段大小
 uuid: 35c1cb39-e28d-4d20-88c9-5ff4fe154e9e
-feature: 重叠报表
+feature: Overlap Reports
 exl-id: 89fa9d92-8676-4706-9fab-22c35763b218
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 5%
+source-wordcount: '330'
+ht-degree: 6%
 
 ---
 
 # 重叠报表：更新计划和最小区段大小{#overlap-reports-update-schedule-and-minimum-segment-size}
 
-描述重叠报表更新流程所需的特征和区段大小以及创建时间要求。
+說明重疊報表更新程式所需的特徵和區段大小以及建立時間需求。
 
-## 更新计划和要求{#update-schedule}
+## 更新排程和需求 {#update-schedule}
 
-[!UICONTROL Overlap] 报告每周日更新。报表预处理从星期六开始。 这会影响星期一重叠报表中新区段或现有区段的显示方式。 要包含在重叠报表中，请执行以下操作：
+[!UICONTROL Overlap] 報告會在每週日更新。 報表預先處理於星期六開始。 這會影響新區段或現有區段在星期一重疊報表中的顯示方式。 要包含在重疊報表中：
 
-* 区段必须在过去14天内至少包含70,000个实时用户总数。
-* 在过去14天内，一个特征必须包含28,000个[独特特征实现](/help/using/features/traits/trait-and-segment-qualification-reference.md)。
-* 必须在世界协调时星期四上午12点之前（每周重叠报表更新过程开始前2天整）创建区段。
-* 您的公司必须是完整[!DNL Audience Manager]客户。 请联系您的[!DNL Audience Manager]顾问或客户关怀团队，以了解更多信息。
+* 區段在過去14天內必須至少包含70,000位即時使用者。
+* 特徵必須包含28,000 [不重複特徵實現](/help/using/features/traits/trait-and-segment-qualification-reference.md) 過去14天內。
+* 區段必須在UTC星期四上午12點（每週重疊報告更新程式開始前2整天）之前建立。
+* 貴公司必須為完整版 [!DNL Audience Manager] 客戶。 請聯絡您的 [!DNL Audience Manager] 諮詢顧問或客戶服務，以瞭解更多資訊。
 
-## 区段大小和/或创建时间影响报表{#segment-size}
+## 區段大小和/或建立時間會影響報告 {#segment-size}
 
-如果在某个[!UICONTROL Overlap]报表中没有看到区段，则可能是因为该区段不符合这些最低要求。
+如果您在其中一個欄位中看不到區段， [!UICONTROL Overlap] 報表，可能是因為區段不符合這些最低需求。
 
 <table id="table_BE2937C1FA314BBDBD1D026321D6E6B1"> 
  <thead> 
@@ -40,12 +40,12 @@ ht-degree: 5%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>区段大小太小</b> </p> </td> 
-   <td colname="col2"> <p>假设您在UTC周四凌晨12点之前创建一个区段，但该区段包含的实时用户总数少于70,000个。 此区段在满足用户阈值要求之前不会显示在<span class="wintitle">重叠报表</span>中。 另请注意，该区段必须在星期四截止期间或之前满足所需的用户计数。 如果不符合每周截止时间，则该区段将在下一个星期日数据运行后的一周内显示在<span class="wintitle">重叠报表</span>中。 </p> </td> 
+   <td colname="col1"> <p> <b>區段大小太小</b> </p> </td> 
+   <td colname="col2"> <p>假設您在星期四UTC凌晨12:00之前建立區段，但包含少於70,000名即時使用者。 此區段不會出現在 <span class="wintitle"> 重疊報表</span> 直到符合使用者臨界值要求為止。 另外請注意，該區段必須符合星期四截止期間或之前的必要使用者計數。 如果不符合每週的截止日期，則該區段會顯示在 <span class="wintitle"> 重疊報表</span> 適用於即將執行的星期日資料執行後的一週。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>区段创建过迟</b> </p> </td> 
-   <td colname="col2"> <p>假设您在星期五创建了一个区段，该区段包含70,000个以上实时用户。 下周的<span class="wintitle">重叠报表</span>中不会显示此区段，因为该区段是在报表更新期前不到2天创建的。 但是，在下一周更新后，该区段将显示在“重叠报表”<span class="wintitle">中。</span> </p> </td> 
+   <td colname="col1"> <p> <b>區段建立得太晚</b> </p> </td> 
+   <td colname="col2"> <p>假設您在星期五建立區段，而區段總共包含70,000多名即時使用者。 此區段不會出現在 <span class="wintitle"> 重疊報表</span> 因為是在報告更新期間之前不到2天建立的，所以會保留下一週。 不過，區段會顯示在 <span class="wintitle"> 重疊報表</span> 在下一次每週更新之後。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -53,6 +53,6 @@ ht-degree: 5%
 >[!MORELIKETHIS]
 >
 >* [特征到特征重叠报表](../../reporting/dynamic-reports/trait-trait-overlap-report.md#trait-to-trait-overlap-report)
-* [区段到特征重叠报表](../../reporting/dynamic-reports/segment-trait-overlap-report.md)
-* [区段到区段重叠报表](../../reporting/dynamic-reports/segment-segment-overlap-report.md)
+>* [区段到特征重叠报表](../../reporting/dynamic-reports/segment-trait-overlap-report.md)
+>* [区段到区段重叠报表](../../reporting/dynamic-reports/segment-segment-overlap-report.md)
 

@@ -1,39 +1,39 @@
 ---
-description: 有关Audience Manager如何与第三方供应商执行异步批量数据交换的一般概述。
-seo-description: 有关Audience Manager如何与第三方供应商执行异步批量数据交换的一般概述。
-seo-title: 批量数据传输流程说明
+description: 概述Audience Manager如何與協力廠商執行非同步批次資料交換。
+seo-description: A general overview of how Audience Manager performs an asynchronous batch data exchange with a third-party vendor.
+seo-title: Batch Data Transfer Process Described
 solution: Audience Manager
 title: 批量数据传输流程说明
 uuid: a9eee940-151c-44f8-9fe9-8ab47d8fa45c
-feature: 入站数据传输
+feature: Inbound Data Transfers
 exl-id: e02dcc9a-4010-4c01-bd6b-ad04b8029f18
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 8%
+source-wordcount: '187'
+ht-degree: 5%
 
 ---
 
 # 批量数据传输流程说明 {#batch-data-transfer-process-described}
 
-[!DNL Audience Manager]如何与第三方供应商执行异步批量数据交换的一般概述。
+操作方式的一般概觀 [!DNL Audience Manager] 與協力廠商執行非同步批次資料交換。
 
-## 批量数据集成
+## 批次資料整合
 
 <!-- c_async.xml -->
 
-批量数据集成过程会在我们的服务器上保存访客信息，并定期将该材料与提供商发送的数据同步。 在以下情况下，异步数据传输过程非常有用：
+批次資料整合程式會將訪客資訊儲存在我們的伺服器上，並定期將該資料與提供者傳送的資料同步。 非同步資料傳輸程式在下列情況下相當實用：
 
-* 无需立即进行数据传输。
-* 收集数据以构建大量分段用户池。
-* 您希望减少来自浏览器的数据差异和`HTTP`调用。
+* 不需要立即傳輸資料。
+* 收集資料以建立大型分段使用者集區。
+* 您想要減少資料差異，並 `HTTP` 從瀏覽器呼叫。
 
 ![](assets/s2s_70.png)
 
-## 数据集成步骤
+## 資料整合步驟
 
-1. 用户访问客户网站。
-1. [!DNL Audience Manager] 和第三方数据提供商会为访客分配一个唯一ID（通常使用cookie）。
-1. [!DNL Audience Manager] 调用第三方数据提供程序以匹配访客ID。
-1. 在[!DNL Audience Manager]与第三方数据提供商之间交换访客区段数据的计划请求（通常为每日间隔）。
-1. 每当处理入站[!UICONTROL Server-to-Server]文件时，都会通过电子邮件向合作伙伴解决方案发送回执，如果已配置，则会向合作伙伴发送回执。 有关更多信息，请参阅[入站处理后发送给合作伙伴的示例消息](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)。
+1. 使用者造訪客戶網站。
+1. [!DNL Audience Manager] 而第三方資料提供者會為訪客指派唯一ID （通常使用Cookie）。
+1. [!DNL Audience Manager] 呼叫第三方資料提供者以比對訪客ID。
+1. 排程的請求（通常為每日間隔）會在以下日期之間交換訪客區段資料： [!DNL Audience Manager] 以及您的協力廠商資料提供者。
+1. 每當有傳入時 [!UICONTROL Server-to-Server] 會處理檔案，透過電子郵件將收據傳送給合作夥伴解決方案，並傳送給合作夥伴（若已設定）。 如需詳細資訊，請參閱 [傳入處理後傳送給合作夥伴的範例訊息](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md).

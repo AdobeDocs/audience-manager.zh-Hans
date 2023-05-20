@@ -1,22 +1,22 @@
 ---
-description: 趋势报表可返回有关特征和区段的趋势数据。
-seo-description: 趋势报表可返回有关特征和区段的趋势数据。
-seo-title: 趋势报表
+description: 趨勢報表會傳回特徵和區段的趨勢資料。
+seo-description: A Trend report returns trend data on traits and segments.
+seo-title: Trend Reports
 solution: Audience Manager
 title: 趋势报表
 uuid: bedbe7d4-7cbb-4403-9104-312f9230aea1
-feature: 常规报表和趋势报表
+feature: General & Trend Reports
 exl-id: 3373f413-cc8f-49c7-9b4e-34b39e0efc38
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '636'
 ht-degree: 1%
 
 ---
 
 # 趋势报表{#trend-reports}
 
-趋势报表可返回有关特征和区段的趋势数据。
+趨勢報表會傳回特徵和區段的趨勢資料。
 
 ## 概述 {#trend-report-overview}
 
@@ -26,33 +26,33 @@ c_trend_reports.xml
 
  -->
 
-[!DNL Audience Manager] 使 [!UICONTROL Role Based Access Control] 用([!UICONTROL RBAC])扩展报表的用户群组权 [!UICONTROL Trend] 限。用户只能在报表中查看他们有权查看的那些特征和区段。 [!UICONTROL RBAC] 功能允许您控制内部团队可以查看哪些报表数据。
+[!DNL Audience Manager] 使用 [!UICONTROL Role Based Access Control] ([!UICONTROL RBAC])將使用者群組許可權擴充至 [!UICONTROL Trend] 報表。 使用者在報告中只能看見他們有權檢視的特徵和區段。 [!UICONTROL RBAC] 功能可讓您控制內部團隊可以檢視哪些報告資料。
 
-例如，管理不同广告商帐户的代理可以配置用户群组权限，以便管理广告商A帐户的团队无法查看广告商B的报表数据。
+例如，管理不同廣告商帳戶的機構可以設定使用者群組許可權，這樣管理廣告商A帳戶的團隊就看不到廣告商B的報告資料。
 
-在需要执行以下操作时运行[!UICONTROL Trend]报表：
+執行 [!UICONTROL Trend] 報告您何時需要：
 
-* 按特征和区段查看趋势数据。
-* 按1、7、14、30、60和90天间隔跟踪趋势。
-* 比较特征和区段随时间变化的趋势。
-* 识别性能强弱的特征和区段。
-* 导出数据（.csv格式），以便进一步分析和共享。
+* 依特徵和區段檢閱趨勢資料。
+* 依1、7、14、30、60和90天間隔追蹤趨勢。
+* 比較一段時間內特徵和區段趨勢。
+* 識別效能強大或效能不佳的特徵和區段。
+* 匯出資料（.csv格式）以供進一步分析和共用。
 
-下图提供了[!UICONTROL Trend]报表中关键元素的高级概述。
+下圖提供「 」中重要元素的高階概觀 [!UICONTROL Trend] 報告。
 
 ![](assets/trend_reports.png)
 
 1. 配置以下选项：
-   **报表类型：** 选择所需的报表类型（特征或区段）。
-   **日期范围：** 指定报表的日期范围（开始日期和结束日期）。
-   **显示间隔：** 指定显示间隔（1、7、14、30、60和90天间隔）。
-1. 按名称或ID搜索特征或区段。
-1. 从文件夹列表中，将要报告的特征或区段拖放到右侧的[!UICONTROL Selections]面板。
-1. 生成报表以图形格式显示，或将报表导出为CSV格式。
+   **報表型別：** 選取所需的報表型別（「特徵」或「區段」）。
+   **日期範圍：** 指定報表的日期範圍（開始日期和結束日期）。
+   **顯示間隔：** 指定顯示間隔（1、7、14、30、60和90天間隔）。
+1. 依名稱或ID搜尋特徵或區段。
+1. 從資料夾清單中，拖放您要報告的特徵或區段至 [!UICONTROL Selections] 右側面板。
+1. 產生報表以圖形格式顯示資料，或將報表匯出為CSV格式。
 
-## 运行趋势报表 {#run-trend-report}
+## 執行趨勢報表 {#run-trend-report}
 
-此过程说明如何运行[!UICONTROL Trend]报告。
+此程式說明如何執行 [!UICONTROL Trend] 報告。
 
 <!-- 
 
@@ -60,54 +60,54 @@ t_working_with_trend_reports.xml
 
  -->
 
-1. 在&#x200B;**[!UICONTROL Analytics]**&#x200B;功能板中，单击&#x200B;**[!UICONTROL Trend Reports]**。
-1. 从&#x200B;**[!UICONTROL Report Type]**&#x200B;下拉列表中，选择所需的类型：**[!UICONTROL Trait]**&#x200B;或&#x200B;**[!UICONTROL Segment]**。
-1. 单击日期框以显示日历，然后选择报表的开始和结束日期。
-1. 指定显示间隔：1、7、14、30、60或90天。
-1. 按名称或ID搜索特征或区段。
-1. 从文件夹列表中，将要报告的特征或区段拖放到右侧的[!UICONTROL Selections]面板。
-   * 为获得最佳性能，请一次对少于20个特征或区段运行[!UICONTROL Trend]报表。
-1. 单击&#x200B;**[!UICONTROL Graph Traits]**&#x200B;或&#x200B;**[!UICONTROL Graph Segments]**，具体取决于您查看的报表类型（特征或区段）。 这些选项仅忽略单独选择的特征或区段的所有文件夹和图形。
+1. 在 **[!UICONTROL Analytics]** 儀表板，按一下 **[!UICONTROL Trend Reports]**.
+1. 從 **[!UICONTROL Report Type]** 下拉式清單，選取所需的型別： **[!UICONTROL Trait]** 或 **[!UICONTROL Segment]**.
+1. 按一下日期方塊以顯示行事曆，然後選取報表的開始和結束日期。
+1. 指定顯示間隔：1、7、14、30、60或90天。
+1. 依名稱或ID搜尋特徵或區段。
+1. 從資料夾清單中，拖放您要報告的特徵或區段至 [!UICONTROL Selections] 右側面板。
+   * 為獲得最佳效能，請執行 [!UICONTROL Trend] 一次報告少於20個特徵或區段。
+1. 按一下 **[!UICONTROL Graph Traits]** 或 **[!UICONTROL Graph Segments]**，視您檢視的報表型別而定（「特徵」或「區段」）。 這些選項會忽略所有資料夾，而只顯示個別選取的特徵或區段。
 
    或
 
-   单击&#x200B;**[!UICONTROL Export to CSV]**&#x200B;以CSV格式导出特征或区段数据以及所有文件夹，以便进一步分析和共享。 这会导出所有日期范围的[!UICONTROL Unique Trait Realizations]、[!UICONTROL Total Trait Realizations]和[!UICONTROL Total Trait Population]。
+   按一下 **[!UICONTROL Export to CSV]** 將特徵或區段資料以及所有資料夾匯出為CSV格式，以供進一步分析和共用。 這會匯出 [!UICONTROL Unique Trait Realizations]， [!UICONTROL Total Trait Realizations]、和 [!UICONTROL Total Trait Population] 適用於所有日期範圍。
 
    >[!NOTE]
    >
-   >[!UICONTROL Total Trait Realizations] 仅计 [!UICONTROL Rule-based Traits] 算。
+   >[!UICONTROL Total Trait Realizations] 計算對象 [!UICONTROL Rule-based Traits] 僅限。
 
-1. （可选）将鼠标悬停在单个特征或区段上，可显示每个数据点的访问次数和日期。 您可以单击表中的列标题，以对结果进行升序或降序排序。
+1. （選用）將滑鼠移至個別特徵或區段上方，即可顯示每個資料點的造訪次數和日期。 您可以按一下表格中的欄標題，以遞增或遞減順序排序結果。
 
-## 特征的趋势报表结果 {#trend-report-results-traits}
+## 特徵的趨勢報表結果 {#trend-report-results-traits}
 
-运行[!UICONTROL Trend Report]并选择&#x200B;**[!UICONTROL Trait]**&#x200B;作为报表类型时，可以使用以下过滤器。
+當您執行 [!UICONTROL Trend Report] 並選取 **[!UICONTROL Trait]** 作為報表型別。
 
-按[!UICONTROL Device ID]过滤结果时：
+篩選結果依據 [!UICONTROL Device ID]：
 
-* [!UICONTROL Unique Trait Realizations] 是在选定时间范围内将特征添加到其配置文件的匿名设备访客数量。
-* [!UICONTROL Total Trait Realization] 是选定时间范围内匿名鼠标特征实现的总数。
-* [!UICONTROL Total Trait Population] 是您的匿名设备访客在其配置文件中具有此特征的数量。
+* [!UICONTROL Unique Trait Realizations] 是在所選時間範圍內將特徵新增至其設定檔的匿名裝置訪客數量。
+* [!UICONTROL Total Trait Realization] 是所選時間範圍內匿名滑鼠特徵實現的總數。
+* [!UICONTROL Total Trait Population] 您的匿名裝置訪客在其設定檔中擁有此特徵的人數。
 
-按[!UICONTROL Cross-Device ID]过滤结果时：
+篩選結果依據 [!UICONTROL Cross-Device ID]：
 
-* [!UICONTROL Unique Trait Realizations] 是指在选定的时间范围内，已通过身份验证的将特征添加到其配置文件的访客数。
-* [!UICONTROL Total Trait Realization] 是选定时间范围内经过身份验证的特征实现的总数。
-* [!UICONTROL Total Trait Population] 是已通过身份验证的访客在其配置文件中具有此特征的数量。
+* [!UICONTROL Unique Trait Realizations] 在選取的時間範圍內，已驗證身分的訪客新增特徵至其設定檔的數量。
+* [!UICONTROL Total Trait Realization] 是所選時間範圍內已驗證的特徵實現總數。
+* [!UICONTROL Total Trait Population] 是您的已驗證訪客在其設定檔中擁有此特徵的數量。
 
 ![trend-report-traits](assets/trend-report-traits.png)
 
-零表示[!DNL Audience Manager]未收集当天的数据。 空白条目表示特征不存在。
+零表示 [!DNL Audience Manager] 未收集當天的資料。 空白專案表示該特徵不存在。
 
-请观看以下视频，详细了解跨设备量度的工作方式。
+請觀看以下影片，詳細瞭解跨裝置量度的運作方式。
 
 >[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
-## 区段的趋势报表结果 {#segment-report-results-traits}
+## 區段的趨勢報表結果 {#segment-report-results-traits}
 
-运行[!UICONTROL Trend Report]并选择&#x200B;**[!UICONTROL Segments]**&#x200B;作为报表类型时，可以使用以下过滤器。
+當您執行 [!UICONTROL Trend Report] 並選取 **[!UICONTROL Segments]** 作為報表型別。
 
-* **[!UICONTROL Real-time Segment Population]**:选定时间范围内符合区段资格条件的访客数。
-* **[!UICONTROL Total Segment Population]**:符合区段资格的访客总数。
+* **[!UICONTROL Real-time Segment Population]**：在選取的時間範圍內符合區段資格的訪客數。
+* **[!UICONTROL Total Segment Population]**：符合區段資格的訪客總數。
 
-![趋势报表区段](assets/trend-report-segments.png)
+![趨勢 — 報表 — 區段](assets/trend-report-segments.png)

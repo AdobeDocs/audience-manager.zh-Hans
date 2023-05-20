@@ -1,40 +1,40 @@
 ---
-description: “目标”登录页面列出了您的所有URL、Cookie和服务器到服务器目标。 它提供了一些功能，可让您创建、编辑、搜索和报告目标。 登陆页面位于受众数据>目标中。
-seo-description: “目标”登录页面列出了您的所有URL、Cookie和服务器到服务器目标。 它提供了一些功能，可让您创建、编辑、搜索和报告目标。 登陆页面位于受众数据>目标中。
-seo-title: 管理目标
+description: 目的地登陸頁面會列出您的所有URL、Cookie和伺服器對伺服器目的地。 它提供的功能可讓您建立、編輯、搜尋目的地並製作報告。 登陸頁面位於「對象資料>目的地」中。
+seo-description: The Destination landing page lists all of your URL, cookie, and server-to-server destinations. It provides features that let you create, edit, search for, and report on destinations. The landing page is located in Audience Data > Destinations.
+seo-title: Manage Destinations
 solution: Audience Manager
-title: 管理目标
-feature: 目标基础知识
+title: 管理目的地
+feature: Destination Basics
 exl-id: 367bad0f-d7d6-4dd5-9717-85ac6eda47ab
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '173'
 ht-degree: 1%
 
 ---
 
 # 目标主页 {#destinations-home}
 
-[!UICONTROL Destination]登陆页面列出了您的所有[!DNL URL]、Cookie和服务器到服务器目标。 它提供了一些功能，可让您创建、编辑、搜索和报告目标。 登陆页面位于&#x200B;**[!UICONTROL Audience Data > Destinations]**&#x200B;中。
+此 [!UICONTROL Destination] 登陸頁面列出您的所有 [!DNL URL]、 Cookie和伺服器對伺服器目的地。 它提供的功能可讓您建立、編輯、搜尋目的地並製作報告。 登入頁面位於 **[!UICONTROL Audience Data > Destinations]**.
 
-## 默认登陆页面{#default-landing-page}
+## 預設登陸頁面 {#default-landing-page}
 
 <!-- destinations-home.xml -->
 
-默认登陆页面会根据类型列出您的目标。 您可以使用四个可用选项卡过滤目标：
+預設登陸頁面會根據型別列出您的目的地。 您可以使用四個可用的標籤來篩選目的地：
 
-* **全部**:显示所有类型的目标。
-* **Adobe Experience Cloud**:显示将数据发送到其他Adobe Experience Cloud解决方案的目标。目前，唯一支持的选项是Adobe Analytics。 请参阅[配置Analytics目标](/help/using/features/destinations/create-analytics-destination.md)。
-* **集成平台**:显示基于人员的目标和基于设备的目标（也称为服务器到服务器目标）。
-* **自定义**:显示cookie和URL目标。
+* **全部**：顯示所有型別的目的地。
+* **Adobe Experience Cloud**：顯示傳送資料至其他Adobe Experience Cloud解決方案的目的地。 目前唯一支援的選項是Adobe Analytics。 另請參閱 [設定Analytics目的地](/help/using/features/destinations/create-analytics-destination.md).
+* **整合平台**：顯示以人物為基礎的目的地和以裝置為基礎的目的地（也稱為伺服器對伺服器目的地）。
+* **自訂**：顯示Cookie和URL目的地。
 
 
 ![](assets/destinations-landing.png)
 
-## 可寻址受众登录页面{#audiences-landing-page}
+## 可定址對象登陸頁面 {#audiences-landing-page}
 
-要查看服务器到服务器目标的受众数据和匹配率，请选择&#x200B;**[!UICONTROL Integrated Platforms > Device-Based]**。
+若要檢視伺服器對伺服器目的地的對象資料和匹配率，請選取「 」 **[!UICONTROL Integrated Platforms > Device-Based]**.
 
-有关显示信息的更多信息，请参阅[可寻址受众界面](/help/using/features/addressable-audiences.md#addressable-audience-interface)。
+如需所顯示資訊的詳細資訊，請參閱 [可定址對象介面](/help/using/features/addressable-audiences.md#addressable-audience-interface).
 
 ![](/help/using/features/assets/addressable-audiences-landing.png)

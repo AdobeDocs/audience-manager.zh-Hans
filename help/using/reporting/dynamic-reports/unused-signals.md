@@ -1,5 +1,5 @@
 ---
-description: 此报表会返回收集到的清单上所有未使用信息的频率计数，并将其发送到Audience Manager。
+description: 此報表會傳回在詳細目錄上收集並傳送至Audience Manager之所有未使用資訊的頻率計數。
 seo-description: This report returns a frequency count of all the unused information collected on your inventory and sent to Audience Manager.
 seo-title: Unused Signals Report
 solution: Audience Manager
@@ -16,25 +16,25 @@ ht-degree: 2%
 
 # 未使用的信号报表{#unused-signals-report}
 
-此报表会返回收集到的清单上所有未使用信息的频率计数，并将其发送到Audience Manager。 要访问此报表，请导航至&#x200B;**Analytics >受众报表>其他报表>未使用的信号**。
+此報表會傳回在詳細目錄上收集並傳送至Audience Manager之所有未使用資訊的頻率計數。 若要存取此報表，請導覽至 **Analytics >受眾報表>其他報表>未使用的訊號**.
 
 >[!NOTE]
 >
->如果您看到“您无权访问受众报表”消息，请联系您的Audience Manager顾问或客户关怀团队来为您配置报表。
+>如果您看到「您沒有對象報表的存取權」訊息，請聯絡您的Audience Manager顧問或客戶服務，以布建報表。
 
-![未使用信号报表的屏幕截图](/help/using/reporting/dynamic-reports/assets/unused-signals.png)
+![未使用的訊號報表熒幕擷圖](/help/using/reporting/dynamic-reports/assets/unused-signals.png)
 
 ## 概述
 
-信号是指您的网站以[键值对](../../reference/key-value-pairs-explained.md)（例如`color=blue, price>100, gender=female`等）的形式传递到[!DNL Audience Manager]的信息。
+訊號是來自您網站的資訊，已傳入 [!DNL Audience Manager] 形式為 [機碼值組](../../reference/key-value-pairs-explained.md) (例如， `color=blue, price>100, gender=female`、等)。
 
-未使用的信号由您收集但尚未映射到特征的数据组成。 [!UICONTROL Unused Signals]报表按日期、键值和频率计数显示表中的数据。 任何未映射的信号在一天内传递到[!DNL Audience Manager]至少100次，符合[!UICONTROL Unused Signals]报表的条件。 未使用的信号会存储45天，然后被丢弃。
+未使用的訊號包含您收集但尚未對應至特徵的資料。 此 [!UICONTROL Unused Signals] 報告會依日期、索引鍵、值和頻率計數，在表格中顯示資料。 任何傳入的未對應訊號 [!DNL Audience Manager] 一天至少符合100次資格 [!UICONTROL Unused Signals] 報告。 未使用的訊號會儲存45天，然後捨棄。
 
-查看此报表有助于识别可映射到新特征或现有特征的孤立信号。
+請檢閱此報表，協助識別可對應至新特徵或現有特徵的孤立訊號。
 
 >[!NOTE]
 >
->在搜索字段中指定键或值名称，以将结果限制为特定记录。
+>在搜尋欄位中指定索引鍵或值名稱，以將結果限製為特定記錄。
 
 ## 用例
 
@@ -47,36 +47,36 @@ ht-degree: 2%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>确保特征一致性或将相关值添加到单个键</b> </p> </td> 
-   <td colname="col2"> <p>查看报表，以考虑特定信号的不同值变化。 </p> <p>例如，假设您在键值对中将州“North Carolina”的特征定义为<code> c_state = North Carolina</code>。 报表可帮助您查找名称变体并将其添加到特征（例如<code> c_state = North Carolina, NC, N.C., NCarolina</code>）。 或者，您也可以在报表中发现名称变体，并在所有网站中使用统一值替换这些变体。 </p> <p> </p> </td> 
+   <td colname="col1"> <p><b>確保特徵一致性或將相關值新增至單一索引鍵</b> </p> </td> 
+   <td colname="col2"> <p>請檢閱報告，說明特定訊號的不同值變化。 </p> <p>例如，假設您在機碼值組中將「北卡羅來納州」的特徵定義為 <code> c_state = North Carolina</code>. 報表可協助您尋找名稱變體，並將其新增至特徵(例如 <code> c_state = North Carolina, NC, N.C., NCarolina</code>)。 或者，您也可以使用報告找出名稱變體，並將這些變體取代為所有網站的統一值。 </p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>创建新特征</b> </p> </td> 
-   <td colname="col2"> <p>查看报表以查看在特定键值上传入的新值。 您可能需要根据这些新值创建新的键值对。 </p> <p> <p>注意： 每两周检查一次报表，以了解经常更改的值（例如，节目、营销活动、名人等）。 </p> </p> </td> 
+   <td colname="col1"> <p><b>建立新特徵</b> </p> </td> 
+   <td colname="col2"> <p>檢閱報告，檢視在特定索引鍵上傳入了哪些新值。 您可能想要根據這些新值建立新的機碼值組。 </p> <p> <p>注意：請每兩週檢查一次報表中是否有經常變更的值（例如節目、行銷活動、名人等）。 </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>查找未映射的值</b> </p> </td> 
-   <td colname="col2"> <p>查看数字1的报告。 <span class="wintitle">未使用的信号</span>报表中的数字1表示一个空值。 这未必是坏的。 它仅表示特定键没有关联的值映射。 当您看到一个重要变量的大量值为1时，请与网站团队联系，以确保所有页面均已正确标记。 </p> </td> 
+   <td colname="col1"> <p><b>尋找未對應的值</b> </p> </td> 
+   <td colname="col2"> <p>檢閱數字1的報告。 中的數字1 <span class="wintitle"> 未使用的訊號</span> 報表代表null值。 這並不一定是壞事。 這僅表示特定索引鍵沒有關聯的值對應。 如果您看到重要變數的大量1個值，請洽詢您的網站團隊，確認所有頁面都已正確標籤。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 最佳实践
 
-运行并检查[!UICONTROL Unused Signals]报表：
+執行並檢查 [!UICONTROL Unused Signals] 報告：
 
-* 创建特征或更新特征规则后。 这有助于确保正确设置您的特征和规则。 结果中的数字1表示新特征可能未正确配置。
-* 每两周或每月两次。 计划审阅有助于确保特征映射为最新。
+* 建立特徵或更新特徵規則之後。 這有助於確保您的特徵和規則已正確設定。 結果中的數字1表示新特徵可能未正確設定。
+* 每兩週或每月。 已排程的檢閱有助於確保特徵對應是最新的。
 
 >[!NOTE]
 >
->在报表中搜索未使用的值时，请考虑以下特殊性。 以下两个示例的表达式存在差异：
+>在報告中搜尋未使用的值時，請考慮以下特殊性。 以下兩個範例之間的運算式不同：
 
-* T(v=1 [!UICONTROL AND NOT](a=23))
-* T(v=1 [!UICONTROL AND](a!=23))
-* 两个示例都显示一个特征，该特征包含两个键值对v和a。第一个表达式转换为：特征包含键v，其值为1 [!UICONTROL AND NOT]，键a，其值为23。 第二个表达式包含键v，其值为1 [!UICONTROL AND] ，键a值为[!UICONTROL NOT EQUAL] 23。
-* 考虑到上述两个不同的表达式，假设您在[!UICONTROL Unused Signals Report]中搜索键a上传递的值，其中任何值都不同于23，因此您仅在第一种情况下会获得结果，因为键的值未AT ALL发送。 在第二种情况下，发送的值不同于23，因此键a不会被使用。
+* T(v=1 [!UICONTROL AND NOT] (a=23))
+* T(v=1 [!UICONTROL AND] (a！=23))
+* 這兩個範例都顯示一個特徵，其中包含兩個機碼值組v和a。第一個運算式會轉換為：特徵包含值為1的索引鍵v [!UICONTROL AND NOT] 索引鍵a具有值23。 第二個運算式包含值為1的索引鍵v [!UICONTROL AND] 具有值的索引鍵a [!UICONTROL NOT EQUAL] 23.
+* 考慮到上述兩種不同的運算式，假設您在 [!UICONTROL Unused Signals Report] 對於在索引鍵a上傳遞的值，如果值的值不是23，則只有在第一種情況下才會獲得結果，因為索引鍵的值完全沒有傳送。 在第二個案例中，系統傳送了與23不同的值，因此機碼a並未使用。
 
-## 批量特征创建
+## 大量特徵建立
 
-如果您需要根据从[!UICONTROL Unused Signals]报表获取的数据批量创建大量特征，请联系您的合作伙伴解决方案代表。
+如果您需要根據從取得的資料大量建立許多特徵，請聯絡您的合作夥伴解決方案代表。 [!UICONTROL Unused Signals] 報告。

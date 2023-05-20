@@ -1,30 +1,30 @@
 ---
-description: 非管理员用户可以编辑自己的配置文件，包括更改其电子邮件地址和重置密码。
-seo-description: 非管理员用户可以编辑自己的配置文件，包括更改其电子邮件地址和重置密码。
-seo-title: 编辑帐户设置
+description: 非管理員使用者可以編輯自己的設定檔，包括變更電子郵件地址和重設密碼。
+seo-description: Non-admin users can edit their own profiles, including changing their email addresses and resetting their passwords.
+seo-title: Edit Your Account Settings
 solution: Audience Manager
 title: 编辑帐户设置
 uuid: 5cc04104-65db-4d48-ba13-3f344e03d6df
-feature: 管理
+feature: Administration
 exl-id: 77fe5440-9286-44cd-b51f-600310e2dc8b
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 7%
+source-wordcount: '167'
+ht-degree: 5%
 
 ---
 
 # 编辑帐户设置 {#edit-your-account-settings}
 
-非管理员用户可以编辑自己的配置文件，包括更改其电子邮件地址和重置密码。
+非管理員使用者可以編輯自己的設定檔，包括變更電子郵件地址和重設密碼。
 
 <!-- t_edit_account_settings.xml -->
 
-管理员用户可以创建用户并将其添加到群组以获取权限，如[创建用户](../../features/administration/administration-overview.md#create-users)和[创建群组](../../features/administration/administration-overview.md#create-group)中所述。
+管理員使用者可建立使用者，並將其新增至群組以獲得許可權，如中所述 [建立使用者](../../features/administration/administration-overview.md#create-users) 和 [建立群組](../../features/administration/administration-overview.md#create-group).
 
-1. 在Audience Manager标题中，单击![](assets/icon_profile.png)。
-1. 单击&#x200B;**[!UICONTROL Account Settings]**，然后单击&#x200B;**[!UICONTROL Edit]**&#x200B;以显示[!UICONTROL My Account]页面。
-1. 在&#x200B;**[!UICONTROL Email Address]**&#x200B;字段中，根据需要指定新的电子邮件地址。 Audience Manager不会向用户发送常规通知。 Audience Manager管理员有权访问用户的电子邮件地址，并可以根据需要手动向用户发送电子邮件。 例如，如果用户忘记了密码，则此字段中指定的电子邮件地址将用于发送临时密码和重置密码的说明。
-1. 要重置密码，请指定当前密码，指定新密码，然后确认新密码。
-另请参阅[密码要求、帐户锁定和忘记密码](../../reference/password-requirements.md)。
+1. 在Audience Manager標題中，按一下 ![](assets/icon_profile.png).
+1. 按一下 **[!UICONTROL Account Settings]**，然後按一下 **[!UICONTROL Edit]** 以顯示 [!UICONTROL My Account] 頁面。
+1. 在 **[!UICONTROL Email Address]** 欄位中，視需要指定您的新電子郵件地址。 Audience Manager不會定期傳送通知給使用者。 Audience Manager管理員可存取使用者的電子郵件地址，並可視需要手動傳送電子郵件給使用者。 例如，如果使用者忘記密碼，則在此欄位中指定的電子郵件地址用於傳送臨時密碼和重設密碼的說明。
+1. 若要重設密碼，請指定目前的密碼、指定新密碼，然後確認新密碼。
+另請參閱 [密碼要求、鎖定的帳戶及忘記密碼](../../reference/password-requirements.md).
 1. 单击 **[!UICONTROL Save]**.

@@ -1,7 +1,7 @@
 ---
-description: 专用数据馈送是允许提供商限制购买者访问其数据的选项。 数据提供商和购买者应在创建和订阅专用数据馈送之前，查看此信息。
-seo-description: 专用数据馈送是允许提供商限制购买者访问其数据的选项。 数据提供商和购买者应在创建和订阅专用数据馈送之前，查看此信息。
-seo-title: 专用数据信息源
+description: 私人資料摘要是一個選項，可讓提供者限制購買者對其資料的存取權。 資料提供者和購買者在建立並訂閱私人資料摘要之前，應先檢閱這些資訊。
+seo-description: A private data feed is an option that lets providers limit buyer access to their data. Data providers and buyers should review this information before creating and subscribing to private data feeds.
+seo-title: Private Data Feeds
 solution: Audience Manager
 title: 专用数据信息源
 uuid: e4ca59ca-bbc9-4897-9374-8f3d54b2beee
@@ -9,30 +9,30 @@ feature: Audience Marketplace
 exl-id: 34eb6194-c57b-4836-a6df-6889a2cec703
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1055'
 ht-degree: 1%
 
 ---
 
 # 专用数据信息源 {#private-data-feeds}
 
-专用数据馈送是允许提供商限制购买者访问其数据的选项。 数据提供商和购买者应在创建和订阅专用数据馈送之前，查看此信息。
+私人資料摘要是一個選項，可讓提供者限制購買者對其資料的存取權。 資料提供者和購買者在建立並訂閱私人資料摘要之前，應先檢閱這些資訊。
 
 <!-- c_marketplace_privatefeed.xml -->
 
-## 提供程序的专用数据馈送{#private-data-feeds-providers}
+## 提供者的私人資料摘要 {#private-data-feeds-providers}
 
-作为提供商，您的数据馈送可以是公有的，也可以是私有的。 通过专用数据馈送，您可以限制购买者对您数据的访问，包括数据销售者的姓名。 您可能希望创建私有数据馈送以提供特殊交易、折扣，或者在隐私和访问控制很重要时。 通过专用数据馈送，您可以审核和批准购买者请求。 在您批准请求后，该信息源看起来就像是给买方的公共数据信息源。 您可以在&#x200B;**[!UICONTROL Audience Marketplace > My Shared Data]**&#x200B;中查看和管理所有馈送。 如下所示，此类型的信息源在状态列中标记为“专用”。
+身為提供者，您的資料摘要可以是公開或私人。 私人資料摘要可讓您限制買家存取您的資料，包括資料賣家的名稱。 您可能想要建立私人資料摘要，以提供特殊優惠、折扣，或是在隱私權和存取控制很重要時。 透過私人資料摘要，您可以複查並核准採購員請求。 在您核准請求後，摘要看起來就像給購買者的公開資料摘要。 您可在以下位置檢視及管理您的所有摘要： **[!UICONTROL Audience Marketplace > My Shared Data]**. 如下所示，此型別的摘要在狀態列中會標示為「私人」。
 
 ![](assets/my_shared_data.png)
 
-### 管理馈送请求
+### 管理摘要請求
 
-单击[!UICONTROL My Shared Data]中的专用数据馈送的名称会转到包含多个选项卡的页面。 单击选项卡以管理您的专用数据馈送请求。
+按一下私人資料摘要來源的名稱 [!UICONTROL My Shared Data] 帶您進入包含數個索引標籤的頁面。 按一下索引標籤以管理您的私人資料摘要請求。
 
 ![](assets/shared_data_tabs.png)
 
-下表定义了每个操作选项卡提供的角色或函数。
+下表定義每個動作標籤所提供的角色或功能。
 
 <table id="table_AFB429CA52A34658859448D9A5215F9F"> 
  <thead> 
@@ -43,49 +43,49 @@ ht-degree: 1%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 当前订阅者</span></b> </p> </td> 
-   <td colname="col2"> <p>列出订阅了私人数据馈送的已批准购买者。 </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol"> 目前訂閱者</span></b> </p> </td> 
+   <td colname="col2"> <p>列出已訂閱私人資料摘要的已核准購買者。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 潜在订阅者</span></b> </p> </td> 
-   <td colname="col2"> <p>列出未订阅私人数据馈送的已批准购买者。 </p> <p>批准后，购买者可以像查看公共数据馈送一样查看数据馈送。 这样，用户便有机会在订阅之前查看和评估您的馈送。 您还可以向列为潜在订阅者的购买者提供数据馈送折扣。 购买者订阅后，其配置文件将移至<b><span class="uicontrol">当前订阅者</span></b>。 </p> </td>
+   <td colname="col1"> <p> <b><span class="uicontrol"> 潛在訂閱者</span></b> </p> </td> 
+   <td colname="col2"> <p>列出尚未訂閱私人資料摘要的已核准購買者。 </p> <p>核准可讓購買者像檢視公開資料摘要一樣檢視資料摘要。 這讓他們有機會在訂閱前檢閱和評估您的摘要。 您也可以為列為潛在訂閱者的購買者提供資料摘要折扣。 一旦購買者訂閱，其設定檔就會移至 <b><span class="uicontrol"> 目前訂閱者</span></b>. </p> </td>
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 访问请求</span></b> </p> </td>
-   <td colname="col2"> <p>列出专用数据馈送的新订阅请求。 单击此选项卡可审核、批准或拒绝采购员请求。 </p>
+   <td colname="col1"> <p> <b><span class="uicontrol"> 存取要求</span></b> </p> </td>
+   <td colname="col2"> <p>列出私人資料摘要的新訂閱請求。 按一下此頁標，以複查、核准或拒絕採購員請求。 </p>
     <ul id="ul_BE0A835A90B14C05B3F63226B79D052D"> 
-     <li id="li_2C5686CEB6F4430BA18AED5AD75C330A">已批准的购买者将移至<b><span class="uicontrol">潜在订阅者</span></b>。 </li>
-     <li id="li_929591FCF81E43A3881813BDBD3AC278">被拒绝的购买者将移至<b><span class="uicontrol">拒绝访问</span></b>。 </li>
+     <li id="li_2C5686CEB6F4430BA18AED5AD75C330A">核准的買家移至 <b><span class="uicontrol"> 潛在訂閱者</span></b>. </li>
+     <li id="li_929591FCF81E43A3881813BDBD3AC278">已拒絕的買家移至 <b><span class="uicontrol"> 拒絕存取</span></b>. </li>
     </ul> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 详细信息请求</span></b> </p> </td>
-   <td colname="col2"> <p>列出尚未订阅数据馈送并请求获取有关您的馈送更多信息的已批准购买者。 </p> <p>批准后，购买者可以像查看公共数据馈送一样查看数据馈送。 这样，用户便有机会在订阅之前查看和评估您的馈送。 您还可以向请求访问的购买者提供数据馈送的折扣。 响应详细信息请求会从此选项卡中删除采购员用户档案。 如果他们未订阅，则购买者资料仍位于<b><span class="uicontrol">潜在订阅者</span></b>中。 </p> </td>
+   <td colname="col1"> <p> <b><span class="uicontrol"> 詳細資料請求</span></b> </p> </td>
+   <td colname="col2"> <p>列出尚未訂閱資料摘要並已要求更多摘要相關資訊的已核准購買者。 </p> <p>核准可讓購買者像檢視公開資料摘要一樣檢視資料摘要。 這讓他們有機會在訂閱前檢閱和評估您的摘要。 您也可以向請求存取權的買家提供資料摘要折扣。 回應明細請求會從此頁標移除採購員設定檔。 如果他們尚未訂閱，購買者設定檔仍在 <b><span class="uicontrol"> 潛在訂閱者</span></b>. </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 拒绝访问</span></b> </p> </td> 
-   <td colname="col2"> <p>列出拒绝的专用数据馈送订阅请求。 </p> <p>要重新批准被拒绝的购买者，请将<span class="wintitle">拒绝状态</span>更改为<b><span class="uicontrol">允许</span></b>。 这会将购买者移至<b><span class="uicontrol">潜在订阅者</span></b>。 </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol"> 拒絕存取</span></b> </p> </td> 
+   <td colname="col2"> <p>列出已拒絕的私人資料摘要訂閱請求。 </p> <p>若要重新核准被拒絕的購買者，請變更 <span class="wintitle"> 拒絕狀態</span> 至 <b><span class="uicontrol"> 允許</span></b>. 這會將採購員移至 <b><span class="uicontrol"> 潛在訂閱者</span></b>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 后续步骤
 
-以下文档可帮助您开始使用专用数据馈送。
+以下檔案可協助您開始使用私人資料摘要。
 
-* [创建公共或专用数据馈送](../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#create-public-private-data-feed)
-* [审核、批准或拒绝专用信息源请求](../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests)
-* [面向购买者的专用数据馈送](../../features/audience-marketplace/marketplace-private-feeds.md#private-data-feeds-for-buyers)
+* [建立公開或私人資料摘要](../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#create-public-private-data-feed)
+* [稽核、核准或拒絕私人摘要請求](../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests)
+* [買家專用資料摘要](../../features/audience-marketplace/marketplace-private-feeds.md#private-data-feeds-for-buyers)
 
-## 面向购买者的专用数据馈送{#private-data-feeds-for-buyers}
+## 買家專用資料摘要 {#private-data-feeds-for-buyers}
 
-作为购买者，私有数据馈送会像任何其他选件一样显示在[Marketplace](../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)中。 但是，在这种情况下，信息源列表不会显示特征、独特用户和用户重叠的摘要信息。 此外，数据销售者还可以选择在[!UICONTROL Marketplace]列表的[!UICONTROL Provider]列中显示或隐藏其名称。 在卖家批准您的订阅请求后，您即可使用专用馈送中的所有数据（其工作方式与公共馈送类似）。 以下[!UICONTROL Marketplace]示例列出了作为购买者您可以使用的3种不同馈送类型。
+作為購買者，私人資料摘要會出現在 [Marketplace](../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace) 就像任何其他選件一樣。 不過，在此情況下，摘要清單不會顯示特徵、不重複使用者和使用者重疊的摘要資訊。 此外，資料賣家可選擇在「 」中顯示或隱藏其名稱， [!UICONTROL Provider] 的欄 [!UICONTROL Marketplace] 清單。 在賣家核准您的訂閱要求後，您就可以使用私人摘要中的所有資料（其運作方式就像公開摘要）。 此 [!UICONTROL Marketplace] 以下範例列出您作為採購員可用的3種不同的摘要型別。
 
 ![](assets/buyer_marketplace.png)
 
-馈送类型包括：
+摘要型別包括：
 
-下表描述了这些不同馈送类型如何显示或隐藏数据。
+此表格說明這些不同的摘要型別如何顯示或隱藏資料。
 
 <table id="table_41D4A798ACF548A3A03ACB427CA4652D"> 
  <thead> 
@@ -96,72 +96,72 @@ ht-degree: 1%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b><span class="uicontrol"> 公共</span></b> </p> </td> 
-   <td colname="col2"> <p>提供程序的名称、特征和唯一数据将显示在列表中。 </p> </td> 
+   <td colname="col1"> <p><b><span class="uicontrol"> 公用</span></b> </p> </td> 
+   <td colname="col2"> <p>提供者的名稱、特徵和唯一資料會出現在清單中。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b><span class="uicontrol"> 无品牌的私有</span></b> </p> </td> 
-   <td colname="col2"> <p>提供商的名称设置为“私人卖家”，您看不到特征计数、唯一数据和特征重叠数据。 </p> </td> 
+   <td colname="col1"> <p><b><span class="uicontrol"> 私人（不含品牌）</span></b> </p> </td> 
+   <td colname="col2"> <p>提供者的名稱設為「私人賣家」，而您看不到特徵計數、唯一資料和特徵重疊資料。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b><span class="uicontrol"> 品牌专用</span></b> </p> </td> 
-   <td colname="col2"> <p>提供程序的名称会显示在列表中，但您看不到特征计数、唯一数据和特征重叠数据。 </p> </td> 
+   <td colname="col1"> <p><b><span class="uicontrol"> 品牌為私人</span></b> </p> </td> 
+   <td colname="col2"> <p>提供者的名稱會顯示在清單中，但您看不到特徵計數、唯一資料和特徵重疊資料。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 后续步骤
 
-请参阅  [订阅专用数据馈](../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed) 送以请求访问。
+请参阅 [訂閱私人資料摘要](../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed) 以要求存取權。
 
-## 如何设置数据提供商与数据购买者之间的共享关系{#set-up-sharing-relationship}
+## 如何設定資料提供者和資料購買者之間的共用關係 {#set-up-sharing-relationship}
 
-### 步骤1 — 启用 — 数据提供商和数据购买者
+### 步驟1 — 啟用 — 資料提供者和資料購買者
 
-该过程的第一步需要Adobe咨询或客户关怀团队的介入。 数据提供商和数据购买者应联系Adobe咨询或客户关怀团队以请求启用此功能。
+此流程的第一步需要來自Adobe諮詢或客戶服務的介入。 資料提供者和資料購買者應聯絡Adobe諮詢或客戶服務，要求啟用服務。
 
-### 步骤2 — 数据提供程序 — 创建新数据源
+### 步驟2 — 資料提供者 — 建立新資料來源
 
-在您的Audience Manager帐户中，通过以下项创建新的Cookie数据源：
+在您的Audience Manager帳戶中，使用下列專案建立新的Cookie資料來源：
 
-* **Audience Manager** ID作为集客密钥；
-* 选中&#x200B;**共享已启用**&#x200B;选项。
+* **AUDIENCE MANAGERID** 作為傳入索引鍵；
+* 此 **共用已啟用** 選項已核取。
 
 ![](assets/create-datasource.png)
 
-单击&#x200B;**Save**&#x200B;后，将在&#x200B;**特征存储>第三方数据**&#x200B;中自动创建新子文件夹。
+在您按一下 **儲存**，則會自動在中建立新的子資料夾 **特徵儲存>第三方資料**.
 
 ![](assets/folder-structure.png)
 
-### 步骤3 — 数据提供程序 — 识别共享特征
+### 步驟3 — 資料提供者 — 識別共用特徵
 
-在此步骤中，您可以识别要与合作伙伴共享的特征。 您可以创建新特征或编辑现有特征。 无论如何，您都需要特征：
+在此步驟中，您可以識別要與合作夥伴共用的特徵。 您可以建立新特徵或編輯現有特徵。 無論如何，您都需要特徵：
 
-* 与在步骤2中创建的数据源关联。
-* 要存储在新创建的子文件夹中，位于第三方数据下。
+* 與您在步驟2中建立的資料來源建立關聯。
+* 儲存在第三方資料下新建立的子資料夾中。
 
-有关[创建特征](/help/using/features/traits/create-onboarded-rule-based-traits.md)和[编辑特征](/help/using/features/traits/manage-trait-rules.md#edit-trait)的更多信息。
+深入瞭解 [建立特徵](/help/using/features/traits/create-onboarded-rule-based-traits.md) 和 [編輯特徵](/help/using/features/traits/manage-trait-rules.md#edit-trait).
 
-### 步骤4 — 数据提供程序 — 创建数据馈送
+### 步驟4 — 資料提供者 — 建立資料摘要
 
-接下来，创建一个数据馈送，以与数据购买者共享您的特征。 有关如何创建数据馈送的说明，请参阅[创建公共或专用数据馈送](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md)。
+接下來，建立資料摘要以將您的特徵與資料購買者共用。 請參閱 [建立公開或私人資料摘要](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md) 以取得如何建立資料摘要的指示。
 
 >[!IMPORTANT]
 >
->在设置中，选择专用选项。 如果将此字段设置为“公共”，则任何Audience Marketplace客户都可以订阅您的信息源。
+>在「設定」中，選取「私人」選項。 如果您將此欄位設為「公用」，則任何Audience Marketplace客戶都可以訂閱您的摘要。
 
 ![](assets/create-data-feed.png)
 
-### 步骤5 — 数据购买者 — 请求访问
+### 步驟5 — 資料購買者 — 請求存取權
 
-转到&#x200B;**Audience Marketplace> Marketplace**。 搜索由数据提供程序在上一步中创建的数据馈送。 单击&#x200B;**请求访问**。 现在，来自数据提供方的指定联系人将收到电子邮件通知。 另请参阅[订阅专用数据馈送](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed)。
+前往 **「Audience Marketplace>市集」**. 搜尋在上一步中由資料提供者建立的資料摘要。 按一下 **要求存取權**. 資料提供者端的指定聯絡人現在將收到電子郵件通知。 另請參閱 [訂閱私人資料摘要](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed).
 
-### 步骤6 — 数据提供程序 — 授予访问权限
+### 步驟6 — 資料提供者 — 授予存取權
 
-转到&#x200B;**Audience Marketplace>我的共享数据**，然后搜索您在步骤4中创建的馈送。 单击新访问请求，然后单击&#x200B;**允许访问**&#x200B;以批准该请求。 另请参阅[审核、批准或拒绝专用馈送请求](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests)。
+前往 **Audience Marketplace>我的共用資料** 和搜尋您在步驟4中建立的摘要。 按一下進入新的存取要求，然後按一下 **允許存取** 以核准請求。 另請參閱 [稽核、核准或拒絕私人摘要請求](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests).
 
-### 步骤7 — 数据购买者 — 打开订阅
+### 步驟7 — 資料購買者 — 開啟訂閱
 
-在数据提供商授予对数据馈送的访问权限后，您可以在帐户的&#x200B;**Audience Marketplace> Marketplace**&#x200B;中看到该馈送。 查看详细信息，打开“订阅”按钮，然后单击&#x200B;**查看并订阅**。 有关在何处查找第三方特征的信息，请参阅[存储订阅的数据馈送](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee)。
+資料提供者授予資料摘要的存取權後，您即可在的帳戶中檢視摘要： **「Audience Marketplace>市集」**. 檢閱詳細資訊，開啟訂閱按鈕，然後按一下 **檢閱並訂閱**. 另請參閱 [訂閱資料摘要的儲存空間](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee) 以取得尋找第三方特徵的資訊。
 
-请注意，这些特征只能在数据提供商的帐户中进行编辑。
+請注意，這些特徵只能在資料提供者的帳戶中編輯。

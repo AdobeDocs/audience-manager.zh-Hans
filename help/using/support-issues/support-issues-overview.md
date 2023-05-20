@@ -1,14 +1,14 @@
 ---
 description: 本节介绍用户向 Audience Manager 客户关怀团队报告的主要问题。
-seo-description: 本节介绍用户向 Audience Manager 客户关怀团队报告的主要问题。
-seo-title: 支持问题概述
+seo-description: This section includes the top issues reported to Audience Manager Customer Care.
+seo-title: Support Issues Overview
 solution: Audience Manager
 title: 支持问题概述
-feature: 支持
+feature: Support
 exl-id: 9d2d5473-f3cc-45f5-a573-b0faeafbfe05
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '102'
 ht-degree: 100%
 
 ---

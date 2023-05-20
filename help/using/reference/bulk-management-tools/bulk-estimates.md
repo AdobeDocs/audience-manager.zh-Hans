@@ -1,7 +1,7 @@
 ---
-description: 批量估计会根据区段规则返回区段大小数据。 按照这些说明进行批量评估请求。
-seo-description: 批量估计会根据区段规则返回区段大小数据。 按照这些说明进行批量评估请求。
-seo-title: 批量预估
+description: 大量估算會根據區段規則傳回區段大小資料。 依照這些指示進行大量估算請求。
+seo-description: A bulk estimate returns segment size data based on segment rules. Follow these instructions to make a bulk estimate request.
+seo-title: Bulk Estimates
 solution: Audience Manager
 title: 批量预估
 uuid: 63b2f06a-8ba0-47a2-bd0b-8039b2d4c95d
@@ -9,14 +9,14 @@ feature: BAAAM
 exl-id: 8da0b48e-6fa4-43c9-a149-a39e465ac366
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 3%
+source-wordcount: '173'
+ht-degree: 2%
 
 ---
 
 # 批量预估{#bulk-estimates}
 
-批量估计会根据区段规则返回区段大小数据。 按照这些说明进行批量评估请求。
+大量估算會根據區段規則傳回區段大小資料。 依照這些指示進行大量估算請求。
 
 <!-- 
 
@@ -26,19 +26,19 @@ t_bulk_estimates.xml
 
 >[!NOTE]
 >
->[在UI中](../../features/administration/administration-overview.md) 分配的RBAC组 [!DNL Audience Manager] 权限将在中得 [!UICONTROL Bulk Management Tools]到。
+>[RBAC群組許可權](../../features/administration/administration-overview.md) 指派於 [!DNL Audience Manager] UI遵循以下規範： [!UICONTROL Bulk Management Tools].
 
-要进行批量更新，请打开[!UICONTROL Bulk Management Tools]工作表，然后：
+若要進行大量更新，請開啟 [!UICONTROL Bulk Management Tools] 工作表和：
 
-1. 单击&#x200B;**[!UICONTROL Headers]**&#x200B;选项卡并复制[!UICONTROL Estimate Segment Size]标头。
-2. 单击&#x200B;**[!UICONTROL Estimate]**&#x200B;选项卡。
-3. 将估计标题粘贴到估计工作表的第一行中。
-4. 根据标题标签，将要更改的数据粘贴或键入到相应的列中。
-5. 在工作表工具栏中，单击与您要更新的项目匹配的创建按钮。
-此操作将打开[!UICONTROL Account Information]对话框。
-6. 提供所需的[登录信息](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs)并单击&#x200B;**[!UICONTROL Submit]**。
+1. 按一下 **[!UICONTROL Headers]** 標籤並複製 [!UICONTROL Estimate Segment Size] 標頭。
+2. 按一下 **[!UICONTROL Estimate]** 標籤。
+3. 將預估表頭貼到預估工作表的第一列。
+4. 根據標題標籤，將您要變更的資料貼上或輸入至對應的欄。
+5. 在工作表工具列中，按一下符合您要更新之料號的「建立」按鈕。
+此動作會開啟 [!UICONTROL Account Information] 對話方塊。
+6. 提供必要的 [登入資訊](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) 並按一下 **[!UICONTROL Submit]**.
 
-此操作会在包含估计区段大小数据的工作表中创建[!UICONTROL Response]列。 在输入数据之前，您的批量预估工作表应类似于以下内容：
+此動作會建立 [!UICONTROL Response] 工作表中包含預估區段大小資料的欄。 在輸入資料之前，您的大量預估工作表看起來應該類似下列內容：
 
 ![](assets/estimate.png)
-如果批量更新返回错误或失败，请参阅批量 [管理工具疑难解答](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
+如果大量更新傳回錯誤或失敗，請參閱 [大量管理工具的疑難排解](../../reference/bulk-management-tools/bulk-troubleshooting.md).

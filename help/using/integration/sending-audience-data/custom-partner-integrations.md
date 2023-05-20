@@ -1,15 +1,15 @@
 ---
 description: 此页面列出了 Audience Manager 与数据合作伙伴之间的自定义集成。
-seo-description: 此页面列出了 Audience Manager 与数据合作伙伴之间的自定义集成。
-seo-title: 自定义合作伙伴集成
+seo-description: This page lists custom integrations between Audience Manager and data partners.
+seo-title: Custom Partner Integrations
 solution: Audience Manager
 title: 自定义合作伙伴集成
-feature: 第三方集成
+feature: Third-party Integration
 exl-id: 54af75a4-c05b-42fb-851c-5e242378d9f1
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 22%
+source-wordcount: '270'
+ht-degree: 18%
 
 ---
 
@@ -17,41 +17,41 @@ ht-degree: 22%
 
 此页面列出了 Audience Manager 与数据合作伙伴之间的自定义集成。
 
-## Oracle数据云{#oracle-data-cloud}
+## oracleData Cloud {#oracle-data-cloud}
 
 ### 描述
 
-Audience Manager 通过入站数据文件从 Oracle Data Cloud for Audience Marketplace 中提取 Cookie 和移动 ID 数据。下面描述的自定义集成规范仅引用包含移动ID（IDFA和Android设备ID）的入站数据文件。
+Audience Manager 通过入站数据文件从 Oracle Data Cloud for Audience Marketplace 中提取 Cookie 和移动 ID 数据。下述自訂整合規格僅適用於包含行動ID （IDFA和Android裝置ID）的傳入資料檔案。
 
-### 集成详情
+### 整合細節
 
-从Oracle数据云接收的入站数据文件与[Amazon S3入站数据文件的名称和文件大小要求中描述的标准入站文件名语法不同，而与[入站数据文件内容中描述的标准入站文件内容语法不同：语法、无效字符、变量和示例](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)。](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+從OracleData Cloud收到的傳入資料檔案與中所述的標準傳入檔案名稱語法不同 [傳入資料檔案的Amazon S3名稱和檔案大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) 以及從中說明的標準傳入檔案內容語法 [傳入資料檔案內容：語法、無效字元、變數和範例](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md).
 
-除集客数据文件的标准实施字段外，还需要以下突出显示的元素。 有关所有其他标准字段和文件名元素的说明，请参阅上面链接的两个页面中的“文件名语法”和“文件内容语法”。
+除了傳入資料檔案的標準實作欄位外，以下醒目提示的元素為必要專案。 如需所有其他標準欄位和檔案名稱元素的說明，請參閱上述兩個連結頁面中的檔案名稱語法和檔案內容語法。
 
-### 文件命名
+### 檔案命名
 
-ODC文件名的结构如下：
+ODC檔案名稱的結構為：
 
 `ftp_dpm_`**`odc`**`_DPID[_DPID_TARGET_DATA_OWNER]_TIMESTAMP(.sync|.overwrite)[.SPLIT_NUMBER][.gz]`
 
-`odc`文件名元素将文件标识为从Data Cloud导入的文件，并指示Audience Manager入站文件验证器进行相应处理。
+此 `odc` file name元素會將檔案識別為從Oracle資料雲端匯入，並指示Audience Manager傳入檔案驗證器照常處理。
 
-### 文件内容
+### 檔案內容
 
-ODC入站数据文件中的字段必须按以下顺序显示：
+ODC傳入資料檔案中的欄位必須以下列順序顯示：
 
 `<`**`ID type`**`><TAB><user ID><TAB><trait ID>,<trait ID>,<trait ID>,...`
 
-`ID type`可以是：
+此 `ID type` 可以是：
 
 * IDFA
-* Android设备ID
+* Android裝置ID
 
 >[!IMPORTANT]
 >
->请勿在同一集客数据文件中发送IDFA和Android设备ID。
+>請勿在相同的傳入資料檔案中傳送IDFA和Android裝置ID。
 
-## ODC入站文件示例
+## 範例ODC傳入檔案
 
-下载[样例文件](/help/using/integration/assets/ftp_dpm_odc_12345_1556223815.sync)。 此文件可使多个IDFA符合特征ID 38838的条件。 您可以在标准文本编辑器或代码编辑器中打开此文件。
+下載 [範例檔案](/help/using/integration/assets/ftp_dpm_odc_12345_1556223815.sync). 此檔案可讓特徵ID38838數符合數個IDFA的資格。 您可以在標準文字編輯器或程式碼編輯器中開啟此檔案。

@@ -1,7 +1,7 @@
 ---
-description: Audience Marketplace让数据提供商和购买者能够以最省力的自助服务方式执行数据交易。 它通过提供根据您作为数据购买者或数据销售者的角色而有所不同的专门功能来实现这一目的。 事实上，你甚至可以同时成为买家和卖家。 而且，如果情况再好不过了，Audience Marketplace会处理数据提供商和销售商之间的合同、账单和付款。
-keywords: Google Analytics
-seo-description: Audience Marketplace让数据提供商和购买者能够以最省力的自助服务方式执行数据交易。 它通过提供根据您作为数据购买者或数据销售者的角色而有所不同的专门功能来实现这一目的。 事实上，你甚至可以同时成为买家和卖家。 而且，如果情况再好不过了，Audience Marketplace会处理数据提供商和销售商之间的合同、账单和付款。
+description: Audience Marketplace可讓資料提供者和購買者以自助方式輕鬆達成資料交易。 其做法是提供專門功能，這些功能會因您身為資料購買者或資料銷售者的角色而異。 事實上，您甚至可以同時成為買家和賣家。 此外，如果這再好不過了，Audience Marketplace會處理資料提供者和賣家之間的合約、帳單和付款。
+keywords: Google分析
+seo-description: Audience Marketplace lets data providers and buyers execute data deals in a self-service manner with minimum effort. It does this by providing specialized features that vary depending on your role as a data buyer or data seller. In fact, you can even be a buyer and a seller at the same time. And, if this couldn’t get any better, Audience Marketplace takes care of contracts, billing, and payments between data providers and sellers.
 seo-title: Audience Marketplace
 solution: Audience Manager
 title: Audience Marketplace
@@ -10,23 +10,23 @@ feature: Audience Marketplace
 exl-id: ee608bcd-6827-4fac-be96-8e16ff390ec0
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 7%
+source-wordcount: '201'
+ht-degree: 8%
 
 ---
 
 # Audience Marketplace {#audience-marketplace}
 
-[!UICONTROL Audience Marketplace] 允许数据提供商和购买者以最省力的自助服务方式执行数据交易。它通过提供根据您作为数据购买者或数据销售者的角色而有所不同的专门功能来实现这一目的。 事实上，你甚至可以同时成为买家和卖家。 此外，如果这一点再也没有改善，[!UICONTROL Audience Marketplace]将负责数据提供商和销售商之间的合同、账单和付款。
+[!UICONTROL Audience Marketplace] 可讓資料提供者和購買者以自助方式輕鬆達成資料交易。 其做法是提供專門功能，這些功能會因您身為資料購買者或資料銷售者的角色而異。 事實上，您甚至可以同時成為買家和賣家。 而且，如果這再好不過了， [!UICONTROL Audience Marketplace] 負責處理資料提供者和賣家之間的合約、帳單和付款。
 
-请咨询您的[!DNL Audience Manager]销售专家以开始使用。 他们可以激活[!UICONTROL Audience Marketplace for you]。
+與您的 [!DNL Audience Manager] 銷售專員以開始使用。 他們可以啟用 [!UICONTROL Audience Marketplace for you].
 
 >[!NOTE]
 >
->用户角色控制着您在[!UICONTROL Audience Marketplace]中可以执行和不能执行的操作。
+>使用者角色可控制您在中可以做什麼，不能做什麼 [!UICONTROL Audience Marketplace].
 >
-> * 管理员可以创建数据馈送、管理订阅者和订阅数据馈送。
-> * 用户只能搜索和查看信息源。
+> * 管理員可以建立資料摘要、管理訂閱者，以及訂閱資料摘要。
+> * 使用者只能搜尋和檢視摘要。
 
 
 * [面向数据提供商的 Audience Marketplace](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)

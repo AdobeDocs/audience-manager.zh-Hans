@@ -1,7 +1,7 @@
 ---
-description: 用于管理用户的REST API方法，包括创建、更新、列出、删除和返回用户对象。
-seo-description: 用于管理用户的REST API方法，包括创建、更新、列出、删除和返回用户对象。
-seo-title: 用户管理 API 方法
+description: 用於管理使用者的Rest API方法，包括建立、更新、列出、刪除和傳回使用者物件。
+seo-description: Rest API methods to manage users, including creating, updating, listing, deleting, and returning user objects.
+seo-title: User Management API Methods
 solution: Audience Manager
 title: 用户管理 API 方法
 uuid: 6e1f2c35-bb9d-4166-b7d4-d9c5518a61ad
@@ -9,20 +9,20 @@ feature: API
 exl-id: c015c42c-63c7-4392-9fef-f48dc787a56f
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 7%
+source-wordcount: '347'
+ht-degree: 6%
 
 ---
 
 # 用户管理 API 方法 {#user-management-api-methods}
 
-Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删除和返回用户对象。
+Rest [!DNL API] 管理使用者的方法，包括建立、更新、列出、刪除和傳回使用者物件。
 
 <!-- c_rest_api_user_man_user.xml -->
 
-## 创建用户{#create-user}
+## 建立使用者 {#create-user}
 
-用于创建新用户的`POST`方法。
+A `POST` 方法來建立新使用者。
 
 <!-- r_rest_api_user_create.xml -->
 
@@ -30,7 +30,7 @@ Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删�
 
 `POST /api/v1/users/`
 
-### 示例请求正文
+### 範例要求內文
 
 ```
 { 
@@ -65,13 +65,13 @@ Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删�
 }
 ```
 
-如果将`isAdmin`设置为true，则创建用户作为合作伙伴管理员。 此属性还可让您知道用户是否为合作伙伴管理员。
+若 `isAdmin` 若設為true，則會將使用者建立為合作夥伴管理員。 此屬性也可讓您知道使用者是否為合作夥伴管理員。
 
-如果用户名已采用，则返回`409 Conflict`。
+傳回 `409 Conflict` 如果使用者名稱已被使用。
 
-## 更新用户{#update-user}
+## 更新使用者 {#update-user}
 
-用于更新用户的`PUT`方法。
+A `PUT` 更新使用者的方法。
 
 <!-- r_rest_api_user_update.xml -->
 
@@ -79,7 +79,7 @@ Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删�
 
 `PUT /api/v1/users/`*`<userId>`*
 
-### 示例请求正文
+### 範例要求內文
 
 ```
 { 
@@ -110,23 +110,23 @@ Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删�
 }
 ```
 
-如果用户名已采用，则返回`409 Conflict`。
+傳回 `409 Conflict` 如果使用者名稱已被使用。
 
-## 更新登录用户{#update-logged-in-user}
+## 更新登入使用者 {#update-logged-in-user}
 
-`PUT`方法，用于更新当前已登录的用户。
+A `PUT` 更新目前登入使用者的方法。
 
 <!-- r_rest_api_user_update_self.xml -->
 
 >[!NOTE]
 >
->大多数[!DNL API]方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
+>反之，最多 [!DNL API] 方法只能由合作夥伴管理員呼叫，此方法則可由非管理員使用者呼叫。
 
 ### 请求
 
 `PUT /self/update`
 
-### 示例请求正文
+### 範例要求內文
 
 ```
 {  
@@ -153,49 +153,49 @@ Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删�
 }
 ```
 
-如果用户名已采用，则返回`409 Conflict`。
+傳回 `409 Conflict` 如果使用者名稱已被使用。
 
-## 更新登录用户密码{#update-logged-in-user-pw}
+## 更新登入使用者密碼 {#update-logged-in-user-pw}
 
-`PUT`方法，用于更新当前已登录的用户。
+A `PUT` 更新目前登入使用者的方法。
 
 <!-- r_rest_api_user_password.xml -->
 
 >[!NOTE]
 >
->大多数[!DNL API]方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
+>反之，最多 [!DNL API] 方法只能由合作夥伴管理員呼叫，此方法則可由非管理員使用者呼叫。
 
 ### 请求
 
 `POST /users/self/update-password`
 
-### 示例请求正文
+### 範例要求內文
 
 ```
 { "oldPassword" : "old password", "newPassword" : "new password" }
 ```
 
-如果成功，则返回`200 OK`。 如果两个密码都出错，则返回`400 Bad Request`。
+傳回 `200 OK` 如果成功。 傳回 `400 Bad Request` 如果任一密碼發生錯誤。
 
-## 重置登录用户密码{#reset-logged-in-user-pw}
+## 重設登入使用者密碼 {#reset-logged-in-user-pw}
 
-用于重置当前已登录用户的`PUT`方法。 [!UICONTROL Audience Management] 向用户发送系统生成的密码。
+A `PUT` 重設目前登入使用者的方法。 [!UICONTROL Audience Management] 會將系統產生的密碼傳送給使用者。
 
 <!-- r_rest_api_user_password_reset.xml -->
 
 >[!NOTE]
 >
->大多数[!DNL API]方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
+>反之，最多 [!DNL API] 方法只能由合作夥伴管理員呼叫，此方法則可由非管理員使用者呼叫。
 
 ### 请求
 
 `POST /self/reset-password`
 
-如果成功，则返回`200 OK`。
+傳回 `200 OK` 如果成功。
 
-## 返回用户ID {#return-user-object-for-id}的用户对象
+## 傳回使用者ID的使用者物件 {#return-user-object-for-id}
 
-用于返回用户ID的用户对象的`Get`方法。
+A `Get` 傳回使用者ID的使用者物件的方法。
 
 <!-- r_rest_api_user_get_user_obj.xml -->
 
@@ -221,15 +221,15 @@ Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删�
 }
 ```
 
-## 返回登录用户{#return-user-object-for-logged-in-user}的用户对象
+## 傳回已登入使用者的使用者物件 {#return-user-object-for-logged-in-user}
 
-`Get`方法，用于返回当前已登录用户的用户对象。
+A `Get` 方法，傳回目前登入的使用者的使用者物件。
 
 <!-- r_rest_api_user_get_self.xml -->
 
 >[!NOTE]
 >
->大多数[!DNL API]方法只能由合作伙伴管理员调用，而此方法可由非管理员用户调用。
+>反之，最多 [!DNL API] 方法只能由合作夥伴管理員呼叫，此方法則可由非管理員使用者呼叫。
 
 ### 请求
 
@@ -253,9 +253,9 @@ Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删�
 }
 ```
 
-## 列出用户{#list-users}
+## 列出使用者 {#list-users}
 
-用于列出用户的`GET`方法。
+A `GET` 列出使用者的方法。
 
 <!-- r_rest_api_user_list.xml -->
 
@@ -263,11 +263,11 @@ Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删�
 
 `GET /api/v1/users/`
 
-您可以在查询参数中指定多个组ID:
+您可以在查詢引數中指定多個群組ID：
 
 `GET /api/v1/users/?groupId=343&groupdId=12`
 
-此查询会返回指定组中所有用户的列表。
+此查詢會傳回指定群組中的所有使用者清單。
 
 ### 响应
 
@@ -287,9 +287,9 @@ Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删�
 }
 ```
 
-## 删除用户{#delete-users}
+## 刪除使用者 {#delete-users}
 
-用于删除用户的`DELETE`方法。
+A `DELETE` 刪除使用者的方法。
 
 <!-- r_rest_api_user_delete.xml -->
 
@@ -297,11 +297,11 @@ Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删�
 
 `DELETE /api/v1/users/`*`<user_id>`*
 
-如果成功，则返回`204 No Content`。 如果发生冲突，则返回`409 Conflict`。
+傳回 `204 No Content` 如果成功。 在衝突的情況下返回 `409 Conflict`.
 
-## 批量{#delete-users-bulk}删除用户
+## 大量刪除使用者 {#delete-users-bulk}
 
-批量删除多个用户的`POST`方法。
+A `POST` 大量刪除多個使用者的方法。
 
 <!-- r_rest_api_user_delete_bulk.xml -->
 
@@ -309,7 +309,7 @@ Rest [!DNL API]方法用于管理用户，包括创建、更新、列出、删�
 
 `POST /api/v1/users/bulk-delete`
 
-### 示例请求正文
+### 範例要求內文
 
 ```
 {[<user_id_1>, <user_id_2>, ...]}

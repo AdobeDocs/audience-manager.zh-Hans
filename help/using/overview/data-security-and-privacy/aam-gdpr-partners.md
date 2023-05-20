@@ -1,15 +1,15 @@
 ---
 description: 本页概述由我们的合作伙伴在发布更新信息之后直接向我们提供的相关信息，以及这些更新对 Audience Manager 实践所造成的影响。合作伙伴之所以进行这些更新，主要是因为 2018 年 5 月 25 日生效的 GDPR（《通用数据保护条例》）和最新采用的 IAB GDPR 透明度与同意框架（简称“IAB 框架”）。
-seo-description: 本页概述由我们的合作伙伴在发布更新信息之后直接向我们提供的相关信息，以及这些更新对 Audience Manager 实践所造成的影响。合作伙伴之所以进行这些更新，主要是因为 2018 年 5 月 25 日生效的 GDPR（《通用数据保护条例》）和最新采用的 IAB GDPR 透明度与同意框架（简称“IAB 框架”）。
-seo-title: 与目标相关的 GDPR 注意事项
+seo-description: This page outlines information provided directly by our partners, as it becomes available, along with any implications related to your Audience Manager practice. Key implications for partners making these updates are the result of GDPR (General Data Protection Regulation), which went into effect on May 25th, 2018 and the new IAB GDPR Transparency & Consent Framework (IAB Framework).
+seo-title: GDPR Considerations for Destinations
 solution: Audience Manager
 title: 与目标相关的 GDPR 注意事项
 uuid: e8a40060-086c-4f03-b48c-9c903acb7891
-feature: 数据管理和隐私
+feature: Data Governance & Privacy
 exl-id: ff2aa030-94cd-45dc-a9a2-283b38ab5e46
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '297'
 ht-degree: 96%
 
 ---
@@ -56,7 +56,7 @@ Some partners, as listed in the table below, have changed their integration requ
  </tbody> 
 </table> -->
 
-## Audience Manager用户界面更新 — Yahoo/Oath/DataX集成{#ui-update}
+## Audience Manager使用者介面更新 — Yahoo/Oath/DataX整合 {#ui-update}
 
 除了上述 IAB 框架更新之外，Yahoo/Oath/DataX 还向其分类和受众 API 中添加了两个新参数，即 **gdpr** 和 **gdpr_mode**。这两个参数可告知 Yahoo/Oath/DataX 他们有权作为数据处理者或数据控制者处理特定区段。因此，Audience Manager 客户在将区段发送到 Yahoo/Oath/DataX 目标时，必须根据其与 Oath 的协议指定相应的参数（处理者或控制者）。
 

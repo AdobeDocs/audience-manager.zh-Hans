@@ -1,22 +1,22 @@
 ---
-description: 您可以使用像素调用捕获媒体促销活动中的Audience Manager（通常称为对创作元素进行像素化）或摄取日志文件。
-seo-description: 您可以使用像素调用捕获媒体促销活动中的Audience Manager（通常称为对创作元素进行像素化）或摄取日志文件。
-seo-title: 媒体数据集成
+description: 您可以使用畫素呼叫來Audience Manager（通常稱為畫素化創意）或擷取記錄檔，從媒體行銷活動中擷取資料。
+seo-description: You can capture data from media campaigns using pixel calls to Audience Manager (often called pixeling the creative) or by ingesting log files.
+seo-title: Media Data Integration
 solution: Audience Manager
 title: 媒体数据集成
 uuid: 6f6bbd03-084b-4226-8809-3b00b467606f
-feature: Adobe Campaign集成
+feature: Adobe Campaign Integration
 exl-id: ca4906a7-0c39-49bc-9505-d76a61ec9eac
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 17%
+source-wordcount: '120'
+ht-degree: 19%
 
 ---
 
 # 媒体数据集成 {#media-data-integration}
 
-您可以使用像素调用捕获媒体促销活动中的Audience Manager（通常称为对创作元素进行像素化）或摄取日志文件。 请阅读此部分中的文章，以了解该过程。
+您可以使用畫素呼叫來Audience Manager（通常稱為畫素化創意）或擷取記錄檔，從媒體行銷活動中擷取資料。 請閱讀本節中的文章以瞭解此程式。
 
 <!-- c_camp_data_int.xml -->
 
@@ -24,8 +24,8 @@ ht-degree: 17%
 * [通过像素调用捕获营销活动展示数据](/help/using/integration/media-data-integration/impression-data-pixels.md)
 * [通过像素调用捕获营销活动点击数据](/help/using/integration/media-data-integration/click-data-pixels.md)
 
-要设置日志摄取，请阅读以下文章：
+若要設定記錄擷取，請閱讀下列文章：
 
-* [将Google Campaign Manager数据文件导入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
-* [将Google Ad Manager数据文件导入Audience Manager ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
-* [日志数据和元数](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) 据文件：为通用日志文件设置日志摄取
+* [將Google Campaign Manager資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+* [將Google Ad Manager資料檔案匯入Audience Manager ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
+* [記錄資料和中繼資料檔案](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) 設定一般記錄檔的記錄擷取

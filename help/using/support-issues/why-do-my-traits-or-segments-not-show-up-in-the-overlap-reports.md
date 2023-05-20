@@ -1,14 +1,14 @@
 ---
 description: 说明为什么特征和区段可能不会显示在重叠报表页面中。
-seo-description: 说明为什么特征和区段可能不会显示在重叠报表页面中。
-seo-title: 为什么我的特征或区段没有显示在重叠报表页面中？
+seo-description: Explanation for why traits and segments might not show up in the Overlap Reports page.
+seo-title: Why do my traits or segments not show up in the Overlap Reports page?
 solution: Audience Manager
 title: 为什么我的特征或区段没有显示在重叠报表页面中？
-feature: 支持
+feature: Support
 exl-id: 8341ee38-fc46-4a4b-9c9e-4ce2edb9a2fb
 source-git-commit: 2643bebea8618124d5c96906e8dc89e21024d51a
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '136'
 ht-degree: 100%
 
 ---

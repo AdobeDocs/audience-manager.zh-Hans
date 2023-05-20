@@ -1,5 +1,5 @@
 ---
-description: 通过“配置文件合并规则”选项，您可以根据业务需求或目标，扩展或收紧对特定受众的关注。 这些一般用例探讨了如何使用可用选项，并为个人、家庭和跨设备定位创建合并规则。
+description: 「個人資料合併規則」選項可讓您根據業務需求或目標來擴大或收窄受眾對特定受眾的關注。 這些一般使用案例會探索如何使用可用選項，並為個人、家庭和跨裝置目標定位建立合併規則。
 seo-description: Profile Merge Rules options let you expand or tighten audience focus on specific audiences based on business needs or goals. These general use cases explore how to use available options and create merge rules for individual, household, and cross-device targeting.
 seo-title: General Use Cases for Profile Merge Rules
 solution: Audience Manager
@@ -16,102 +16,102 @@ ht-degree: 2%
 
 # 配置文件合并规则的一般用例 {#general-use-cases-for-profile-merge-rules}
 
-[!UICONTROL Profile Merge Rules] 通过选项，您可以根据业务需求或目标，扩大或收紧对特定受众的关注。 这些一般用例探讨了如何使用可用选项，并为个人、家庭和跨设备定位创建合并规则。 [!UICONTROL Profile Merge Rules] 处理实时目标和批量目标。
+[!UICONTROL Profile Merge Rules] 選項可讓您根據業務需求或目標，擴大或收緊受眾對特定受眾的關注。 這些一般使用案例會探索如何使用可用選項，並為個人、家庭和跨裝置目標定位建立合併規則。 [!UICONTROL Profile Merge Rules] 使用即時和批次目的地。
 
 >[!TIP]
 >
->有关这些定义和描述 [!UICONTROL Merge Rule] 设置，请参阅 [定义的配置文件合并规则选项](merge-rule-definitions.md).
+>這些專案的定義和說明 [!UICONTROL Merge Rule] 設定，請參閱 [定義的設定檔合併規則選項](merge-rule-definitions.md).
 
-## 设备定位 {#device-personalization}
+## 裝置目標定位 {#device-personalization}
 
-此方案适用于那些希望评估在Audience Manager中定义的受众区段的单个设备配置文件的营销人员，以便在没有考虑用户身份验证的情况下，使用支持设备ID的定位平台(DSP、网站个性化平台和其他基于设备的定位平台)为设备提供一致的体验。
+此情境適用於想針對Audience Manager中定義的對象區段評估單一裝置設定檔的行銷人員，目的是使用支援裝置ID的鎖定目標平台(DSP、站上個人化平台和其他以裝置為基礎的目標平台)，為裝置提供一致的體驗，而不考慮使用者驗證。
 
-要创建仅定向设备配置文件的规则，请选择 **[!UICONTROL No Cross-Device Profile]** + **[!UICONTROL Device Profile]**.
+若要建立只鎖定裝置設定檔的規則，請選取 **[!UICONTROL No Cross-Device Profile]** + **[!UICONTROL Device Profile]**.
 
-![仅限设备](assets/device-only.png)
+![僅限裝置](assets/device-only.png)
 
-比如说，John拥有三部智能手机。 其中两个是iPhone 7（在数据计划A中），其中一个是三星（在数据计划B中）。John的移动运营商不考虑他在三个设备中的任何一台上的身份验证状态，而是希望为他提供数据计划升级，但仅适用于在数据计划A中运行的iPhone 7设备。
+假設John擁有三部智慧型手機。 其中兩個是資料計畫A上的iPhone 7，其中一個是資料計畫B上的Samsung 。並未考慮在這三種裝置上的任何一種狀態，John的行動電信業者想要為他提供資料計畫升級，但僅針對在資料計畫A上執行的iPhone 7裝置。
 
-通过使用 **[!UICONTROL No Cross-Device Profile]** + **[!UICONTROL Device Profile]** 规则， [!DNL Device 1] 和 [!DNL Device 3] 二者均符合区段的资格条件，而设备2则被忽略。
+藉由使用 **[!UICONTROL No Cross-Device Profile]** + **[!UICONTROL Device Profile]** 規則， [!DNL Device 1] 和 [!DNL Device 3] 兩者都符合區段的資格，而裝置2則被忽略。
 
-![仅限设备](assets/device-management.png)
+![僅限裝置](assets/device-management.png)
 
-## 共享设备定位 {#target-shared-devices}
+## 共用裝置目標定位 {#target-shared-devices}
 
-比如说，John和他的妻子Jane使用相同的笔记本电脑访问网上商店并订购各种商品。
+假設John和他的妻子Jane使用相同的筆記型電腦造訪線上商店，並訂購各種商品。
 
-John用自己的账户来预订旅行票和特价优惠，而Jane则用自己的账户来购买音乐和电影。
+John使用自己的帳戶預訂旅行票和特別優惠，而Jane則使用自己的帳戶購買音樂和電影。
 
-该商店的营销团队可以使用 **[!UICONTROL Current Authenticated Profiles]** + **[!UICONTROL No Device Profile]** 规则，仅根据经过身份验证的活动来定位John和Jane的特定交易。
+商店的行銷團隊可以使用 **[!UICONTROL Current Authenticated Profiles]** + **[!UICONTROL No Device Profile]** 以特定交易目標John和Jane的規則，且僅根據他們已驗證的活動。
 
-![当前无设备](assets/current-no-device.png)
+![current-no-device](assets/current-no-device.png)
 
-通过使用此规则，Audience Manager会完全忽略设备配置文件、确定John的CRM ID符合区段的条件，以及不确定Jane的CRM ID。
+使用此規則時，Audience Manager會完全忽略裝置設定檔、讓John的CRM ID符合該區段的資格，並且不會讓Jane的CRM ID符合資格。
 
-![共享设备定位](assets/shared-device-targeting.png)
+![共用裝置目標定位](assets/shared-device-targeting.png)
 
-## 在线/离线定位 {#device-household-targeting}
+## 線上/離線鎖定目標 {#device-household-targeting}
 
-此用例涵盖家庭身份管理。 公司可以使用 **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Device Profile]** 规则。
+此使用案例涵蓋家庭身分管理。 公司可使用「 」將單一裝置設定檔與在該裝置上驗證的最後一個設定檔合併 **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Device Profile]** 規則。
 
 ![last-device-profile](assets/last-device-profile.png)
 
-让我们考虑一个由收入超过每年100,000美元的家庭组成的区段，该区段包含至少一个设备，该设备是 [!DNL iPhone 7] on [!DNL Data Plan B]. 我们有两个家庭配置文件（跨设备配置文件），每个配置文件都连接到两个不同的设备配置文件。 符合区段资格条件所需的特征在设备和跨设备配置文件之间进行分配。
+假設一個區段是由年收入超過$100.000美元的家庭所組成，其中至少包含一個裝置，也就是 [!DNL iPhone 7] 於 [!DNL Data Plan B]. 我們有兩個家庭設定檔（跨裝置設定檔），每個設定檔都連結到兩個不同的裝置設定檔。 符合區段資格所需的特徵會分散在裝置和跨裝置設定檔中。
 
-Audience Manager可合并每个设备+跨设备配置文件对，以查看合并的特征集是否符合区段的条件。 由于Audience Manager会评估合并中包含的每个用户档案，因此设备用户档案和家庭用户档案都可以进行分段。
+Audience Manager會合併每個裝置+跨裝置設定檔配對，以檢視合併的特徵集是否符合區段的資格。 由於Audience Manager會評估合併中包含的每個設定檔，因此裝置設定檔和家庭設定檔都可以分段。
 
-设备与家庭用户档案之间的链接允许Audience Manager符合条件 [!DNL Household 2] ，但不 [!DNL Household 1]. 从 [!DNL Household 2]仅 [!DNL Device 3] 符合区段资格。 此 [!UICONTROL Profile Merge Rule] 使营销人员能够向单个设备([!DNL Device 3])和更广大的家庭([!DNL Household 2])。
+裝置和家庭設定檔之間的連結可讓Audience Manager符合資格 [!DNL Household 2] 用於區段，但不適用於 [!DNL Household 1]. 從 [!DNL Household 2]，僅限 [!DNL Device 3] 符合區段的資格。 此 [!UICONTROL Profile Merge Rule] 已讓行銷人員傳送一致的行銷訊息給個別裝置([!DNL Device 3])和更廣泛的家庭([!DNL Household 2])。
 
 ![家庭管理](assets/household-management.png)
 
-## 针对基于人员的目标进行定位 {#all-cross-device}
+## 以人物為基礎的目的地目標定位 {#all-cross-device}
 
 >[!IMPORTANT]
 >
->本文包含旨在指导您完成此功能的设置和使用的产品文档。 这里没有任何法律建议。 请咨询您自己的法律顾问以获得法律指导。
+>本文包含產品檔案，旨在引導您完成此功能的設定和使用。 本文不包含任何法律建議。 請諮詢您自己的法律顧問，以獲得法律指引。
 
-此定位方案仅适用于已购买 [!DNL People-Based Destinations] 附加组件。 此规则允许营销人员根据客户自己的经过身份验证的数据来联系客户。
+此鎖定目標案例僅適用於已購買 [!DNL People-Based Destinations] 附加元件。 此規則可讓行銷人員根據客戶自己的已驗證資料觸及客戶。
 
-比如说，一家在线零售商希望通过社交平台联系现有客户，并根据其先前的订单向他们显示个性化优惠。 使用 [!UICONTROL People-Based Destinations]，他们可以从自己的地址中摄取经过哈希处理的电子邮件地址 [!DNL CRM] 进入Audience Manager，从离线数据构建区段，并使用经过哈希处理的标识符将这些区段发送到他们要广告的社交平台，从而优化其广告支出。
+假設線上零售商想要透過社交平台觸及現有客戶，並根據他們先前的訂單向他們顯示個人化優惠。 替換為 [!UICONTROL People-Based Destinations]，則他們可從自己的網站擷取雜湊電子郵件地址 [!DNL CRM] 進入Audience Manager後，從離線資料建立區段，然後使用雜湊識別碼，將這些區段傳送至他們想要廣告的社交平台，以最佳化他們的廣告支出。
 
-要了解有关此选项的更多信息，请参阅 [基于人员的目标](../destinations/people-based-destinations-overview.md).
+若要進一步瞭解此選項，請參閱 [以人物為基礎的目的地](../destinations/people-based-destinations-overview.md).
 
-![全跨设备](assets/all-cross-device.png)
+![所有跨裝置](assets/all-cross-device.png)
 
-## 设备图选项 {#device-graph-options}
+## 裝置圖表選項 {#device-graph-options}
 
-选择 [!UICONTROL device graph] 选项 [!UICONTROL Profile Merge] 规则取决于您的数字资产和业务目标所特有的条件。 这些一般准则可帮助您了解何时使用一种类型的图形，何时使用另一种类型的图形。 请注意，您必须与外部设备图存在合同关系才能使用这些选项。 有关何时选择设备图选项的一般指导，请参阅下表。 有关特定用例，请参阅 [配置文件链接设备图用例](profile-link-use-case.md) 和 [外部设备图用例](external-graph-use-cases.md).
+選擇 [!UICONTROL device graph] 的選項 [!UICONTROL Profile Merge] 規則取決於您數位財產和業務目標的特定條件。 這些一般准則可協助您瞭解何時使用一種圖表型別與另一種圖表型別。 請注意，您必須與外部裝置圖表有合約關係才能使用這些選項。 請參閱下表，瞭解何時選擇裝置圖表選項的一般指引。 如需特定使用案例，請參閱 [設定檔連結裝置圖表使用案例](profile-link-use-case.md) 和 [外部裝置圖表使用案例](external-graph-use-cases.md).
 
 <table id="table_66D9152D4FF040A186003272D456625D"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 设备图类型 </th> 
+   <th colname="col1" class="entry"> 裝置圖表型別 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
   </tr>
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 配置文件链接设备图</span> </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> 配置文件合并</span> 使用 <span class="wintitle"> 配置文件链接</span> 选项非常适合： </p> <p> 
+   <td colname="col1"> <p><span class="wintitle"> 設定檔連結裝置圖表</span> </p> </td> 
+   <td colname="col2"> <p><span class="wintitle"> 設定檔合併</span> 使用建立的規則 <span class="wintitle"> 設定檔連結</span> 選項適用於下列情況： </p> <p> 
      <ul id="ul_FF44FA894BB2448887C8EDA9C8407EF9"> 
-      <li id="li_E22505210C664FE6A9AA7C61244B36DA">具有高级客户身份验证的数字属性。 </li> 
-      <li id="li_BE7112EE611E4DEB95B5C0A2852BFA97">重点突出、影响力小的营销活动。 的 <span class="wintitle"> 配置文件链接</span> 设备图仅基于确定性数据构建。 相对于未经身份验证的用户和设备池，此设备配置文件池将始终较小。 </li> 
-      <li id="li_5FD9E936A72A4EFE80E694FA2E08E385">客户需要处于已验证状态才能有资格进行分段的用例。 </li> 
+      <li id="li_E22505210C664FE6A9AA7C61244B36DA">具有高階客戶驗證的數位屬性。 </li> 
+      <li id="li_BE7112EE611E4DEB95B5C0A2852BFA97">重點突出、觸及率較低的行銷活動。 此 <span class="wintitle"> 設定檔連結</span> 裝置圖表僅以確定性資料建置。 相對於未驗證的使用者和裝置集區，此裝置設定檔集區總是較小。 </li> 
+      <li id="li_5FD9E936A72A4EFE80E694FA2E08E385">客戶必須處於驗證狀態才能符合細分資格的使用案例。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>外部设备图选项 </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> 配置文件合并</span> 通过与集成的任何外部设备图构建的规则 <span class="keyword"> Audience Manager</span> 非常适合： </p> <p> 
+   <td colname="col1"> <p>外部裝置圖表選項 </p> </td> 
+   <td colname="col2"> <p><span class="wintitle"> 設定檔合併</span> 使用與整合的任何外部裝置圖表建立的規則 <span class="keyword"> Audience Manager</span> 最適合： </p> <p> 
      <ul id="ul_D76D773988604A619FA4A3BF37F910F0"> 
-      <li id="li_969A0755A9E34CBEB2F7331C137B9A26">具有低级别客户身份验证的数字属性。 </li> 
-      <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">广泛、广泛的品牌宣传。 </li> 
-      <li id="li_14AEC54CE34440889A3A36324EC6F497">客户无需处于已验证状态即可有资格进行分段的用例。 </li> 
+      <li id="li_969A0755A9E34CBEB2F7331C137B9A26">具有低層級客戶驗證的數位屬性。 </li> 
+      <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">廣泛、高觸及率的品牌行銷活動。 </li> 
+      <li id="li_14AEC54CE34440889A3A36324EC6F497">客戶不需要處於驗證狀態就能符合細分資格的使用案例。 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-请观看以下视频，了解 [!UICONTROL Profile Merge Rules].
+觀看以下影片，概略瞭解可能的使用案例 [!UICONTROL Profile Merge Rules].
 
 >[!VIDEO](https://video.tv.adobe.com/v/28975/)
 
@@ -119,5 +119,5 @@ Audience Manager可合并每个设备+跨设备配置文件对，以查看合并
 >
 >* [配置文件关联设备图用例](profile-link-use-case.md)
 >* [外部设备图用例](external-graph-use-cases.md)
->* [配置文件合并规则常见问题解答](../../faq/faq-profile-merge.md)
+>* [設定檔合併規則常見問題集](../../faq/faq-profile-merge.md)
 

@@ -1,37 +1,37 @@
 ---
-description: 有关Audience Manager如何与第三方内容提供商执行实时数据传输的一般概述。
-seo-description: 有关Audience Manager如何与第三方内容提供商执行实时数据传输的一般概述。
-seo-title: 描述的实时数据传输过程
+description: 概述Audience Manager如何與協力廠商內容提供者執行即時資料傳輸。
+seo-description: A general overview of how Audience Manager performs real-time data transfers with a third-party content provider.
+seo-title: Real-Time Data Transfer Process Described
 solution: Audience Manager
-title: 描述的实时数据传输过程
+title: 即時資料傳輸程式說明
 uuid: b68781b3-0b7a-442d-8e34-2db2474849a4
-feature: 入站数据传输
+feature: Inbound Data Transfers
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 1%
+source-wordcount: '168'
+ht-degree: 0%
 
 ---
 
 
-# 描述的实时数据传输过程{#real-time-data-transfer-process-described}
+# 即時資料傳輸程式說明{#real-time-data-transfer-process-described}
 
-有关Audience Manager如何与第三方内容提供商执行实时数据传输的一般概述。
+概述Audience Manager如何與協力廠商內容提供者執行即時資料傳輸。
 
 <!-- real-time-data-transfer-explained.xml -->
 
-## 实时数据传输
+## 即時資料傳輸
 
-当用户访问您的网站或对您的网站采取操作时，实时数据传输会发送和接收区段ID。 通常，当您需要在库存中导航或立即划分用户区段时，同步数据传输非常有用。
+即時資料傳輸會在使用者造訪您的網站或採取動作時，傳送及接收區段ID。 通常，當您需要立即在使用者瀏覽您的詳細目錄時，同步資料傳輸很有用。
 
-## 数据集成步骤
+## 資料整合步驟
 
-实时数据集成过程的工作方式如下：
+即時資料整合程式的運作方式如下：
 
-1. 用户访问包含Audience Manager代码的客户网站。
-1. Audience Manager加载iframe并调用我们的[!UICONTROL Data Collection Server]([!DNL DCS])。
-1. [!DNL DCS]会（实时）调用第三方服务器以检查供应商是否具有有关用户的任何区段信息。
-1. 内容提供者返回有关要Audience Manager的用户的区段信息。
-1. Audience Manager接收此区段信息，并将其用于定位和构建新特征和区段。
+1. 使用者造訪包含Audience Manager程式碼的客戶網站。
+1. Audience Manager載入iframe並呼叫 [!UICONTROL Data Collection Server] ( [!DNL DCS])。
+1. 此 [!DNL DCS] 呼叫協力廠商伺服器（即時）以檢查供應商是否有任何關於使用者的區段資訊。
+1. 內容提供者會傳回有關該使用者的區段資訊給Audience Manager。
+1. Audience Manager會收到此區段資訊，並可用於鎖定和建立新特徵和區段。
 
 ![](assets/rt_reduce70.png)

@@ -1,7 +1,7 @@
 ---
-description: 通过批量创建，您可以通过单次操作构建多个数据源、派生的信号、区段、特征和其他项目。 按照以下说明进行批量创建请求。
-seo-description: 通过批量创建，您可以通过单次操作构建多个数据源、派生的信号、区段、特征和其他项目。 按照以下说明进行批量创建请求。
-seo-title: 批量创建
+description: 大量建立可讓您透過單一操作建構多個資料來源、衍生訊號、區段、特徵和其他專案。 依照這些指示進行大量建立請求。
+seo-description: Bulk create lets you construct multiple data sources, derived signals, segments, traits, and other items with a single operation. Follow these instructions to make a bulk creation request.
+seo-title: Bulk Create
 solution: Audience Manager
 title: 批量创建
 uuid: 1e09bcfa-783e-4e9b-9ead-147f8d1381c8
@@ -9,14 +9,14 @@ feature: BAAAM
 exl-id: 7828fc95-24eb-4a80-bdb8-0d9adea43d8f
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 2%
+source-wordcount: '262'
+ht-degree: 1%
 
 ---
 
 # 批量创建{#bulk-create}
 
-通过批量创建，您可以通过单次操作构建多个数据源、派生的信号、区段、特征和其他项目。 按照以下说明进行批量创建请求。
+大量建立可讓您透過單一操作建構多個資料來源、衍生訊號、區段、特徵和其他專案。 依照這些指示進行大量建立請求。
 
 <!-- 
 
@@ -26,24 +26,24 @@ t_bulk_create.xml
 
 >[!NOTE]
 >
->[在UI中](../../features/administration/administration-overview.md) 分配的RBAC组 [!DNL Audience Manager] 权限将在中得 [!UICONTROL Bulk Management Tools]到。
+>[RBAC群組許可權](../../features/administration/administration-overview.md) 指派於 [!DNL Audience Manager] UI遵循以下規範： [!UICONTROL Bulk Management Tools].
 
 >[!CAUTION]
 >
->请勿在批量创建请求中混合使用对象类型。 每个对象的标头是唯一的，不能合并。 清除工作表，并对不同的项目发出单独的请求。
+>請勿在大量建立請求中混用物件型別。 每個物件的標題都是唯一的，無法合併。 清除工作表，並針對不同料號提出個別請求。
 
-要批量创建对象，请打开[!UICONTROL Bulk Management Tools]工作表，然后：
+若要大量建立物件，請開啟 [!UICONTROL Bulk Management Tools] 工作表和：
 
-1. 单击&#x200B;**[!UICONTROL Headers]**&#x200B;选项卡，并复制要添加项目的创建标题。
-2. 单击&#x200B;**[!UICONTROL Create]**&#x200B;选项卡。
-3. 将创建标题粘贴到更新工作表的第一行中。
-4. 根据标题标签，将要更改的数据粘贴或键入到相应的列中。
-5. 在工作表工具栏中，单击与您要更新的项目匹配的创建按钮。
-此操作将打开[!UICONTROL Account Information]对话框。
-6. 提供所需的[登录信息](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs)并单击&#x200B;**[!UICONTROL Submit]**。
+1. 按一下 **[!UICONTROL Headers]** 定位並複製您要新增之專案的「建立標題」。
+2. 按一下 **[!UICONTROL Create]** 標籤。
+3. 將建立標題貼到更新工作表的第一列。
+4. 根據標題標籤，將您要變更的資料貼上或輸入至對應的欄。
+5. 在工作表工具列中，按一下符合您要更新之料號的「建立」按鈕。
+此動作會開啟 [!UICONTROL Account Information] 對話方塊。
+6. 提供必要的 [登入資訊](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) 並按一下 **[!UICONTROL Submit]**.
 
-工作表会创建一个[!UICONTROL Results]列。 [!UICONTROL Results]列会返回成功操作的JSON响应。 有关示例，请参阅[REST API](../../api/rest-api-main/rest-api-main.md)。 在输入数据之前，批量创建的工作表应类似于以下示例。 请注意，此处未显示所有不同的创建选项。 其中包含此参数，可帮助您了解已完成的工作表的外观。
+工作表會建立 [!UICONTROL Results] 欄。 此 [!UICONTROL Results] 欄會傳回成功操作的JSON回應。 請參閱 [REST API](../../api/rest-api-main/rest-api-main.md) 例如。 在輸入資料之前，您大量建立的工作表應該看起來類似下列範例。 請注意，此處不顯示所有不同的建立選項。 其中包含的資訊可協助您瞭解完整工作表的外觀。
 
 ![](assets/cretetraits.png)
 
-如果批量更新返回错误或失败，请参阅[批量管理工具疑难解答](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
+如果大量更新傳回錯誤或失敗，請參閱 [大量管理工具的疑難排解](../../reference/bulk-management-tools/bulk-troubleshooting.md).

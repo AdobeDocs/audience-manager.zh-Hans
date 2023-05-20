@@ -1,9 +1,9 @@
 ---
-description: 相似人群拓展建模通过自动数据分析帮助您发现新的独特受众。 本文提供了最常见问题的解答。
+description: 相似建模可協助您透過自動化資料分析，探索新的不重複受眾。 本文提供常見問題的解答。
 seo-description: Look-Alike Modeling helps you discover new, unique audiences through automated data analysis. This article provides answers to the most frequently asked questions.
 seo-title: Look-Alike Modeling FAQ
 solution: Audience Manager
-title: 相似人群拓展建模常见问题解答
+title: 相似建模常見問題集
 feature: Algorithmic Models
 exl-id: c6e92db0-129f-489e-8cf0-600e0e09698b
 source-git-commit: 37823ae54e106e32aa195a6b69e0f1ebfc322f09
@@ -13,62 +13,62 @@ ht-degree: 0%
 
 ---
 
-# 相似人群拓展建模常见问题解答
+# 相似建模常見問題集
 
 ## 概述 {#overview}
 
-本文提供了有关 [!UICONTROL Look-Alike Modeling].
+本文將針對以下各項提供常見問題的解答： [!UICONTROL Look-Alike Modeling].
 
-## 问题 {#questions}
+## 問題 {#questions}
 
-**为什么我要买公寓 [!UICONTROL Accuracy & Reach] 图形？**
+**為什麼我會持平 [!UICONTROL Accuracy & Reach] 圖表？**
 
-公寓 [!UICONTROL Accuracy & Reach] 图表表示几乎每个用户都收到模型的相同分数。 在运行模型的数据源中包含网站访客特征时，可能会出现这种情况。 要避免这种情况，请在模型创建步骤中，通过使用 [!UICONTROL Exclusions] 字段。
-
- 
-
-**为什么我一些最具影响力的特征的受众非常少？**
-
-算法会选择与基线特征高度相关的特征。 例如，如果给定特征与基线特征的重叠度为100%，则该特征的权重将非常高，即使该特征中的用户数量很少也是如此。
+平坦 [!UICONTROL Accuracy & Reach] 圖表表示幾乎所有使用者在模型中都會獲得相同的分數。 當您在執行模型的資料來源中包含網站訪客特徵時，可能會發生此情況。 為避免此問題，請在模型建立步驟期間，使用 [!UICONTROL Exclusions] 欄位。
 
  
 
-**为什么我的模型没有运行/重新运行？**
+**為什麼我的一些最具影響力特徵只有很小的受眾？**
 
-仅当您创建了至少一个活动算法特征并将其映射到活动区段和目标时，才会继续运行已生成结果的模型。
-
- 
-
-**为什么我的模型没有产生任何结果？**
-
-这通常是因为所选数据源中的基线群体与群体之间没有显着特征重叠所致。
+演演算法會選取與基線特徵高度關聯的特徵。 例如，如果指定特徵與基線特徵有100%的重疊，則其權重會很高，即使該特徵中的使用者人數很少亦然。
 
  
 
-**基线特征或区段大小是否有任何推荐？**
+**為什麼我的模型沒有執行/重新執行？**
 
-鉴于所选数据源中的基线群体与群体之间存在显着的特征重叠，因此几千个用户应该足以在上运行模型。 [!UICONTROL Look-Alike Modeling] 生成的结果更准确，基线越大。
-
- 
-
-**我应该为模型选择哪些第三方数据源？**
-
-使用与基线特征/区段至少有一些重叠的数据源，但同时吸引更多用户。 您还应考虑与每个数据馈送关联的成本。 在 [!UICONTROL Audience Marketplace].
+只有在您已建立至少一個使用中的演演算法特徵並將其對應至使用中的區段和目的地時，產生結果的模型才會繼續執行。
 
  
 
-**使用第三方数据进行建模是否需要花费？**
+**為什麼我的模型沒有產生任何結果？**
 
-它取决于所选数据馈送的定价模型。 有些信息源允许免费进行建模，而另一些信息源则需要收取费用。 请参阅 [面向数据信息源购买者的账单](../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md) 以了解详细信息。
-
- 
-
-**我可以创建多少个模型/特征？**
-
-目前，您最多可以创建20个算法模型和50个算法特征。
+這通常是因為在選取的資料來源中，基準母體與母體之間沒有顯著的特徵重疊所導致。
 
  
 
-**模型培训和算法特征群体的刷新频率是多少？**
+**對於基準特徵或區段大小是否有任何建議？**
 
-模型每8天重新培训一次，并刷新算法特征群体。
+由於基準母體與所選資料來源中的母體之間存在重大特徵重疊，因此只有數千名使用者才足以執行模型。 [!UICONTROL Look-Alike Modeling] 產生更精確的結果，基線會越大。
+
+ 
+
+**我應該為我的模型選擇哪些協力廠商資料來源？**
+
+使用至少與基線特徵/區段有部分重疊，但同時引進其他使用者的資料來源。 您也應該考慮與每個資料摘要相關的成本。 成本與定價模型因資料提供者而異，例如： [!UICONTROL Audience Marketplace].
+
+ 
+
+**使用協力廠商資料來建立模型是否需要費用？**
+
+這取決於所選資料摘要的定價模型。 有些摘要會免費提供模型製作，有些則會向您收費。 另請參閱 [資料摘要購買者的計費方式](../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md) 以取得詳細資訊。
+
+ 
+
+**我可以建立多少模型/特徵？**
+
+目前，您最多可以建立20個演演算法模型和50個演演算法特徵。
+
+ 
+
+**模型訓練和演演算法特徵母體的重新整理頻率為何？**
+
+模型每8天會重新訓練一次，並會重新整理演演算法特徵母體。

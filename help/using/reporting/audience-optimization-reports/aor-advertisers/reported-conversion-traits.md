@@ -1,31 +1,31 @@
 ---
-description: “转化特征”报表显示在特定日期标记为转化群组转化特征的所有特征。 转化组的转化特征可能会从报表运行更改为报表运行。 报表按转化群组显示选定报表日期的转化特征。
-seo-description: “转化特征”报表显示在特定日期标记为转化群组转化特征的所有特征。 转化组的转化特征可能会从报表运行更改为报表运行。 报表按转化群组显示选定报表日期的转化特征。
-seo-title: 报告的转化特征
+description: 「轉換特徵」報表會針對特定日期的轉換群組，顯示所有標籤為轉換特徵的特徵。 轉換群組的轉換特徵可在報表執行到報表執行之間變更。 報表會依轉換群組顯示所選報表日期的轉換特徵。
+seo-description: The Conversion Traits report shows you all the traits labeled as conversion traits for a conversion group at a certain date. Conversion traits for conversion groups can change from reporting run to reporting run. The report displays conversion traits by conversion group for the selected reporting date.
+seo-title: Reported Conversion Traits
 solution: Audience Manager
 title: 报告的转化特征
 uuid: b4b5eb9c-d83e-4e7f-8661-f5d9c855258b
-feature: Audience Optimization 报表
+feature: Audience Optimization Reports
 exl-id: 22335e8d-35cf-4014-803a-efdd35552ef2
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 6%
+source-wordcount: '125'
+ht-degree: 4%
 
 ---
 
 # 报告的转化特征{#reported-conversion-traits}
 
-“转化特征”报表显示在特定日期标记为转化群组转化特征的所有特征。
+「轉換特徵」報表會針對特定日期的轉換群組，顯示所有標籤為轉換特徵的特徵。
 
-转化组的转化特征可能会从报表运行更改为报表运行。 报表按转化群组显示选定报表日期的转化特征。
+轉換群組的轉換特徵可在報表執行到報表執行之間變更。 報表會依轉換群組顯示所選報表日期的轉換特徵。
 
-要了解如何在Audience Manager中创建转化特征，请观看以下视频：
+若要瞭解如何在Audience Manager中建立轉換特徵，請觀看下方的影片：
 
 >[!VIDEO](https://video.tv.adobe.com/v/23431/)
 
-## 示例报表
+## 範例報告
 
-您的[!UICONTROL Reported Conversion Traits]报表可能与以下报表类似：
+您的 [!UICONTROL Reported Conversion Traits] 報表看起來可能類似以下內容：
 
 ![](assets/reported-conversion-traits.png)

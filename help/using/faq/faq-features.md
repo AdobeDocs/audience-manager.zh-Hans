@@ -47,9 +47,9 @@ faq_features_functions.xml
 
  
 
-**执行批量ID导出到目标时，缺少某些客户ID。 为什么会发生这种情况？**
+**執行大量ID匯出至目的地時，部分客戶ID遺失。 為什麼會發生這種情況？**
 
-当设备ID([AAM UUID](../reference/ids-in-aam.md))关联到多个CRM ID([DPUUID](../reference/ids-in-aam.md))，则仅导出最新的映射。 因此，您可能会看到导出的设备ID数量低于预期数量。
+當裝置ID ([AAM UUID](../reference/ids-in-aam.md))已連結至多個CRM ID ([DPUUID](../reference/ids-in-aam.md))，則只會匯出最新的對應。 這就是為什麼您可能會看到匯出的裝置ID數量低於預期。
 
  
 
@@ -67,7 +67,7 @@ faq_features_functions.xml
 
 **什么是 [!UICONTROL Tag Insertion Manager (TIM)]？**
 
-Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和管理 [!UICONTROL data collection code (DIL)]。此功能已过时，最先由 [!UICONTROL Dynamic Tag Manager (DTM)] 取代，后来由 [!DNL Adobe Experience Platform Tags] 取代。有关更多信息，请参阅 [Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
+Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和管理 [!UICONTROL data collection code (DIL)]。此功能已过时，最先由 [!UICONTROL Dynamic Tag Manager (DTM)] 取代，后来由 [!DNL Adobe Experience Platform Tags] 取代。如需詳細資訊，請參閱 [Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
 
  
 

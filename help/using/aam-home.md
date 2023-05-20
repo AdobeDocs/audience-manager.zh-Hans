@@ -87,7 +87,7 @@ ht-degree: 88%
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
      <li><a href="/help/using/api/rest-api-main/aam-api-getting-started.md">开始使用 REST API</a></li>
      <li><a href="/help/using/api/dcs-intro/dcs-event-calls/dcs-event-calls.md">开始使用 DCS API</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html">在Adobe Experience Platform标记中添加Audience Manager扩展</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html">在Adobe Experience Platform標籤中新增Audience Manager擴充功能</a></li>
     <li><a href="https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-audience-manager">在应用程序中添加 Audience Manager</a></li>
      </ul> </p>
     </td>
@@ -151,7 +151,7 @@ ht-degree: 88%
      有关新增功能和修复，请参阅最新的 <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud 发行说明</a>。</p> 
      <p> <b>最新功能</b> </p> <p> 
      了解 Audience Manager 的最新功能：</p>
-     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager用户迁移到Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google客户匹配（针对基于人员的目标）</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">适用于IAB TCF v2.0的Audience Manager插件</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用情况报表</a></li>
+     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager使用者移轉至Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">以人物為基礎的目的地的Google Customer Match</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">適用於IAB TCF v2.0的Audience Manager外掛程式</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用情况报表</a></li>
      </ul></p>
     </td>
   </tr> 

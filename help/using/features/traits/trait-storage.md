@@ -1,54 +1,54 @@
 ---
-description: 特征存储文件夹可存储并帮助您组织特征。
-seo-description: 特征存储文件夹可存储并帮助您组织特征。
-seo-title: 特征存储
+description: 特徵儲存資料夾可儲存並協助您組織特徵。
+seo-description: Trait storage folders store and help you organize traits.
+seo-title: Trait Storage
 solution: Audience Manager
 title: 特征存储
 uuid: e72685ee-0c64-44a4-a8e2-d6ee5c968ba0
-feature: 特征
+feature: Traits
 exl-id: 97d9951e-a339-4dd9-8a67-b7884752533b
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 6%
+source-wordcount: '213'
+ht-degree: 5%
 
 ---
 
 # 特征存储 {#trait-storage}
 
-特征存储文件夹可存储并帮助您组织特征。
+特徵儲存資料夾可儲存並協助您組織特徵。
 
 <!-- c_tb_storage.xml -->
 
-## 特征存储文件夹的用途
+## 特徵儲存資料夾的用途
 
-在[!UICONTROL Trait Builder]中，特征存储文件夹是保存特征并将其组织到您创建的逻辑组中的目录。 从[!UICONTROL Traits]功能板或创建新特征时访问存储文件夹。 请记住，如果不将新特征分配给存储文件夹，就无法创建新特征。
+在 [!UICONTROL Trait Builder]，特徵儲存資料夾是存放特徵並將特徵組織成您建立之邏輯群組的目錄。 從存取儲存資料夾 [!UICONTROL Traits] 儀表板或建立新特徵時。 請記住，您必須將新特徵指派至儲存資料夾，才能建立新特徵。
 
 ![](assets/tb_storage.png)
 
-## 创建特征存储文件夹{#create-trait-storage-folder}
+## 建立特徵儲存資料夾 {#create-trait-storage-folder}
 
-此过程介绍如何为您的特征创建存储文件夹。
+此程式說明如何為特徵建立儲存資料夾。
 
 <!-- t_tb_create_storage.xml -->
 
-设置新特征时，可以在[!UICONTROL Basic Information]部分创建新的存储文件夹。 此外，还可以在主[!UICONTROL Traits]列表仪表板的[!UICONTROL Trait Storage]部分创建文件夹。
+您可以在「 」中建立新的儲存資料夾 [!UICONTROL Basic Information] 區段來設定新特徵。 此外，您也可以在下列位置建立資料夾： [!UICONTROL Trait Storage] 主專案的區段 [!UICONTROL Traits] 清單儀表板。
 
-要创建新的存储文件夹，请执行以下操作：
+若要建立新的儲存資料夾：
 
-1. 在[!UICONTROL Trait Storage]窗口中，将鼠标悬停在：
-   * **[!UICONTROL All Traits]** 添加新的根级别文件夹。
-   * 用于添加新的下属文件夹的现有父文件夹。
+1. 在 [!UICONTROL Trait Storage] 視窗，暫留在：
+   * **[!UICONTROL All Traits]** 以新增根層級資料夾。
+   * 現有的父資料夾，用來新增從屬資料夾。
 1. 单击“+”图标可创建此文件夹。
-1. 命名文件夹，然后单击&#x200B;**[!UICONTROL Save]**。
+1. 為資料夾命名，然後按一下 **[!UICONTROL Save]**.
 
-## 重命名或删除特征存储文件夹{#rename-delete-trait-storage-folder}
+## 重新命名或刪除特徵儲存資料夾 {#rename-delete-trait-storage-folder}
 
-此过程说明如何重命名或删除存储文件夹。
+此程式說明如何重新命名或刪除儲存資料夾。
 
 <!-- t_tb_rename_delete_storage.xml -->
 
-可以从主[!UICONTROL Traits]列表仪表板的[!UICONTROL Trait Storage]部分重命名或删除存储文件夹。
+您可以重新命名儲存資料夾，或從以下位置刪除儲存資料夾： [!UICONTROL Trait Storage] 主專案的區段 [!UICONTROL Traits] 清單儀表板。
 
-* 通过将鼠标悬停在文件夹上并单击铅笔图标来重命名文件夹。
-* 将鼠标悬停在文件夹上并单击&#x200B;**X**&#x200B;图标，以删除文件夹。
+* 將滑鼠懸停在資料夾上並按一下鉛筆圖示，即可重新命名資料夾。
+* 將滑鼠懸停在資料夾上並按一下 **X** 圖示。

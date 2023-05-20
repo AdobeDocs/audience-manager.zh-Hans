@@ -1,7 +1,7 @@
 ---
-description: 创建和更新工作表接受traitRule标题，该标题允许您在单个操作中应用多个规则。 按照这些说明进行批量规则请求。
-seo-description: 创建和更新工作表接受traitRule标题，该标题允许您在单个操作中应用多个规则。 按照这些说明进行批量规则请求。
-seo-title: 创建或更新特征规则和区段规则
+description: 建立和更新工作表接受traitRule標頭，讓您在單一作業中套用多個規則。 依照這些指示進行大量規則要求。
+seo-description: The create and update worksheets accept a traitRule header that lets you apply multiple rules in a single operation. Follow these instructions to make bulk rule requests.
+seo-title: Create or Update Trait Rules and Segment Rules
 solution: Audience Manager
 title: 创建或更新特征规则和区段规则
 uuid: bdd5f8f1-bb83-4844-b681-654e45ace3e1
@@ -9,14 +9,14 @@ feature: BAAAM
 exl-id: 9b697606-5534-4e6e-a3f2-b1a4c26bb707
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 10%
+source-wordcount: '316'
+ht-degree: 8%
 
 ---
 
 # 创建或更新特征规则和区段规则{#create-or-update-trait-rules-and-segment-rules}
 
-创建和更新工作表接受traitRule标题，该标题允许您在单个操作中应用多个规则。 按照这些说明进行批量规则请求。
+建立和更新工作表接受traitRule標頭，讓您在單一作業中套用多個規則。 依照這些指示進行大量規則要求。
 
 <!-- 
 
@@ -26,37 +26,37 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->[在UI中](../../features/administration/administration-overview.md) 分配的RBAC组 [!DNL Audience Manager] 权限将在中得 [!UICONTROL Bulk Management Tools]到。
+>[RBAC群組許可權](../../features/administration/administration-overview.md) 指派於 [!DNL Audience Manager] UI遵循以下規範： [!UICONTROL Bulk Management Tools].
 
-## 使用特征规则{#trait-rules}
+## 使用特徵規則 {#trait-rules}
 
-在您的工作表中，特征规则列返回并接受由布尔表达式、比较运算符和正则表达式组成的规则。 您可以使用[!DNL Audience Manager]中的特征或区段生成器创建规则，并将它们复制到工作表中。 或者，如果您熟悉规则语法，则可以直接在工作表中写入表达式。
+在您的工作表中，特徵規則欄會傳回並接受包含布林運算式、比較運運算元和規則運算式的規則。 您可以使用特徵或區段產生器建立規則，位置在： [!DNL Audience Manager] 並將它們複製到您的工作表中。 或者，如果您熟悉規則語法，可以直接在工作表中編寫運算式。
 
-## 规则生成器示例{#rule-builder-example}
+## 規則產生器範例 {#rule-builder-example}
 
-让我们来看一个示例，该示例演示了如何使用[!UICONTROL Segment Builder]创建可批量处理工作表的规则。 但是，这不是这些工具的一组分步说明。 相反，我们将从一个已经创建的简单规则开始。 有关如何使用规则生成器的说明，请参阅[区段生成器](../../features/segments/segment-builder.md)和[特征生成器](../../features/traits/about-trait-builder.md)。
+讓我們來看看示範如何使用方法的範例 [!UICONTROL Segment Builder] 若要建立規則，您可以移至大量工作表。 不過，這不是這些工具的逐步指示。 相反地，我們將以已建立的簡單規則開始。 如需如何使用規則產生器的指示，請參閱 [區段產生器](../../features/segments/segment-builder.md) 和 [特徵產生器](../../features/traits/about-trait-builder.md).
 
-通过可视化规则生成器，我们创建了一个区段规则，其中包含3个特征和一个布尔值[!UICONTROL AND]运算符。
+使用視覺化規則產生器，我們已建立具有3個特徵和1個布林值的區段規則 [!UICONTROL AND] 運運算元。
 
 ![](assets/visualrule.png)
 
-单击&#x200B;**[!UICONTROL Code View]**&#x200B;获取此规则的文本版本。
+按一下 **[!UICONTROL Code View]** 以取得此規則的文字版本。
 
 >[!TIP]
 >
->单击&#x200B;**[!UICONTROL Validate Expression]**&#x200B;检查规则逻辑。 这将有助于阻止您上传无效规则。
+>按一下 **[!UICONTROL Validate Expression]** 以檢查規則邏輯。 這有助於防止您上傳無效的規則。
 
 ![](assets/coderule.png)
 
-将规则粘贴到[!UICONTROL Bulk Management Tools]工作表中，并提交更改以批量更新区段规则。
+將規則貼到 [!UICONTROL Bulk Management Tools] 工作表並確認變更，以大量更新區段規則。
 
 ![](assets/segmentrule.png)
 
-## 创建您自己的规则{#create-rules}
+## 建立您自己的規則 {#create-rules}
 
-您可以在[!UICONTROL Rule Builder]之外编写自己的规则。 开始之前，请务必阅读涵盖运算符、表达式和必需变量等内容的文档。 我们建议您查看以下内容：
+您可以撰寫您自己的規則，在 [!UICONTROL Rule Builder]. 開始之前，請務必閱讀涵蓋運運算元、運算式和必要變數等專案的檔案。 建議您檢閱下列內容：
 
-* [在特征生成器中使用比较运算符](../../features/traits/trait-comparison-operators.md)
-* [操作顺序](../../features/traits/trait-operator-precedence.md)
+* [在特徵產生器中使用比較運運算元](../../features/traits/trait-comparison-operators.md)
+* [作業順序](../../features/traits/trait-operator-precedence.md)
 * [关键变量的前缀要求](../../features/traits/trait-variable-prefixes.md)
 * [含布尔和比较运算符的示例表达式](../../features/traits/trait-expression-samples.md)

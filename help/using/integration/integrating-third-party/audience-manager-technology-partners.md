@@ -1,10 +1,10 @@
 ---
-description: 本页仅包含当前的服务器到服务器集成。 有关集成的更多信息，请参阅其Adobe交换列表（如果可用），或联系您的Adobe顾问或客户关怀团队。
+description: 此頁面僅包含目前的伺服器對伺服器整合。 有关集成的详细信息，请参阅其 Adobe Systems Exchange 列表（如果可用）或联系您的 Adobe Systems 顾问或客户服务。
 seo-description: This page includes current server-to-server integrations only. For more information on an integration refer to its Adobe Exchange listing (where available) or contact your Adobe Consultant or Customer Care.
 seo-title: Adobe Audience Manager Technology Partners
-keywords: 激活；激活合作伙伴、目标、目标
+keywords: 啟用；啟用合作夥伴、目的地、目的地
 solution: Audience Manager
-title: Adobe Audience Manager技术合作伙伴
+title: Adobe Audience Manager技術合作夥伴
 feature: Third-party Integration
 source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
 workflow-type: tm+mt
@@ -14,161 +14,161 @@ ht-degree: 61%
 ---
 
 
-# Audience Manager激活合作伙伴
+# Audience Manager啟用合作夥伴
 
-本页仅包含当前Audience Manager[服务器到服务器集成](/help/using/features/destinations/add-edit-segments.md)。  有关集成的更多信息，请参阅其[AdobeExchange](https://www.adobeexchange.com/experiencecloud.html)列表（如果可用），或与您的Adobe顾问或客户关怀团队联系。
-
-<br> 
-
-* **更新**  =显示此激活合作伙伴的上次更新日期。
-* **Unsegment**  = Unsegmentation描述了从区段中取消设备配置文件资格和删除设备配置文件的流程。能否从区段中删除设备配置文件取决于用于创建配置文件合并规则的设备选项。 GDPR删除请求读取[配置文件合并规则和设备取消分段流程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和[具有取消分段功能的Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)的上下文中也使用取消分段。 Audience Manager会向下面标有“是”的目标发送取消分段信息。
-* **接收IAB TCF同意信号**  =适用于IAB TCF的Audience Manager插件允许您将IAB TC字符串转发给激活合作伙伴，同时尊重用户所做的隐私选择。阅读[适用于IAB TCF的Audience Manager插件](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)。
-* **ICDS**  =此列列出了支持“即时跨设备抑制”的合作伙伴。阅读[即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
-* **移动设备ID**  =此列列出了能够从Audience Manager接收移动设备ID的合作伙伴。
+此页面仅包含当前 Audience Manager [ 服务器到服务器集成 ](/help/using/features/destinations/add-edit-segments.md) 。 有关集成的详细信息，请参阅其 [ Adobe Systems Exchange ](https://www.adobeexchange.com/experiencecloud.html) 列表（如果可用）或联系您的 Adobe Systems 顾问或客户服务。
 
 <br> 
 
-| 集成 | 更新了 | 取消分段 | 接收IAB TCF同意信号 | ICDS | 移动设备 ID |
+* **Updated** = 显示此激活合作伙伴的更新的最后日期。
+* **删除区段** = Unsegmentation 描述取消从区段中设备配置文件的资格的进程。 从区段中删除设备用户档案的能力取决于用于创建配置文件合并规则的 &quot;设备&quot; 选项。 Unsegmentation 还用于 GDPR 删除请求的上下文中。使用 Unsegmentation 功能读取 [ 配置文件合并规则和设备 Unsegmentation 进程 ](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) 和 [ Audience Manager ](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation) 合作伙伴。 Audience Manager 将删除区段信息发送到标记为 &quot;是&quot; 的目标。
+* **接收 IAB TCF 同意信号** = IAB TCF 的 Audience Manager 插件，您可以将 IAB 的 TC 字符串转发给激活合作伙伴，同时遵从用户的隐私选项。 读取 [ IAB TCF ](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners) 的 Audience Manager 插件。
+* **ICDS** = 此列列出了支持即时跨设备抑制的合作伙伴。 读取 [ 即时跨设备抑制 ](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md) 。
+* **行動裝置ID** =此欄會列出可從Audience Manager接收行動裝置ID的合作夥伴。
+
+<br> 
+
+| 集成 | 更新了 | 取消細分 | 接收 IAB TCF 同意信号 | ICDS | 移动设备 ID |
 |---------------------------------------------------|------------|-----------|-----------------------------------|------|-------------------|
-| 4C分析 | 26/09/2018 | 是 | 否 | 否 | 是 |
+| 4C深入分析 | 26/09/2018 | 是 | 否 | 否 | 是 |
 | 4info | 09/02/2017 | 否 | 否 | 否 | 是 |
 | AcuityAds | 09/02/2017 | 是 | 否 | 是 | 否 |
-| 阿达拉 | 17/02/2017 | 是 | 否 | 否 | 否 |
-| 成瘾性流动 | 22/02/2017 | 是 | 否 | 是 | 是 |
-| 阿德尔菲 | 22/02/2017 | 否 | 否 | 否 | 是 |
+| Adara | 17/02/2017 | 是 | 否 | 否 | 否 |
+| 可上癮的行動力 | 22/02/2017 | 是 | 否 | 是 | 是 |
+| Adelphic | 22/02/2017 | 否 | 否 | 否 | 是 |
 | AdForm | 22/02/2017 | 是 | 否 | 是 | 是 |
 | AdGear | 22/02/2017 | 是 | 否 | 是 | 否 |
-| 阿迪克捷耶夫 | 26/01/2018 | 是 | 否 | 否 | 是 |
-| 阿兹维兹 | 09/10/2017 | 是 | 否 | 否 | 是 |
-| 阿狄奥朗 | 22/02/2017 | 是 | 否 | 否 | 是 |
-| 阿菲尼奥 | 03/04/2018 | 是 | 否 | 否 | 是 |
-| 阿基 | 21/06/2018 | 否 | 否 | 否 | 是 |
-| Amazon广告 | 15/06/2017 | 是 | 否 | 否 | 否 |
-| AOL AdLearn | 02/03/2017 | 否 | 否 | 否 | 是 |
+| Adikteev | 26/01/2018 | 是 | 否 | 否 | 是 |
+| Adswizz | 09/10/2017 | 是 | 否 | 否 | 是 |
+| Adtheator | 22/02/2017 | 是 | 否 | 否 | 是 |
+| Affinio | 03/04/2018 | 是 | 否 | 否 | 是 |
+| 空格 | 21/06/2018 | 否 | 否 | 否 | 是 |
+| Amazon Advertising | 15/06/2017 | 是 | 否 | 否 | 否 |
+| AOL廣告學習 | 02/03/2017 | 否 | 否 | 否 | 是 |
 | AOL ONE | 02/03/2017 | 是 | 否 | 否 | 是 |
 | AppNexus | 02/03/2017 | 是 | 否 | 是 | 否 |
 | AppNexus Yieldex | 10/08/2017 | 是 | 否 | 否 | 否 |
-| Atedra/AdStading | 02/03/2017 | 是 | 否 | 是 | 否 |
-| 鳄梨 | 06/12/2017 | 否 | 否 | 否 | 否 |
-| 比泰勒 | 03/03/2017 | 是 | 否 | 否 | 否 |
-| 蜂蜡 | 25/05/2018 | 否 | 否 | 否 | 是 |
+| Atedra/AdStanding | 02/03/2017 | 是 | 否 | 是 | 否 |
+| Avocet | 06/12/2017 | 否 | 否 | 否 | 否 |
+| Bidtlect | 03/03/2017 | 是 | 否 | 否 | 否 |
+| 蜂蠟 | 25/05/2018 | 否 | 否 | 否 | 是 |
 | Brandscreen | 03/03/2017 | 否 | 否 | 否 | 否 |
 | Brightroll | 03/03/2017 | 否 | 是 | 否 | 否 |
 | 按钮 | 18/12/2017 | 是 | 否 | 否 | 是 |
 | C1 Exchange | 27/02/2017 | 是 | 否 | 否 | 否 |
-| 塞尔特拉 | 27/02/2017 | 是 | 否 | 否 | 是 |
+| Celtra | 27/02/2017 | 是 | 否 | 否 | 是 |
 | Centro | 27/02/2017 | 否 | 否 | 否 | 是 |
 | ChoiceStream | 27/02/2017 | 否 | 否 | 否 | 否 |
 | Clearstream.tv | 27/02/2017 | 是 | 否 | 否 | 否 |
-| 集体AMP平台 | 27/02/2017 | 否 | 否 | 否 | 否 |
-| 克里蒂奥 | 27/02/2017 | 否 | 是 | 否 | 是 |
-| 交叉 | 27/02/2017 | 是 | 否 | 否 | 否 |
-| D.A.C. AudienceOne | 27/02/2017 | 是 | 否 | 否 | 否 |
-| DataXu | 11/20/2017 | 否 | 否 | 否 | 是 |
-| 迪吉朗 | 02/03/2017 |  | 否 | 否 | 否 |
+| Collective AMP平台 | 27/02/2017 | 否 | 否 | 否 | 否 |
+| Criteo | 27/02/2017 | 否 | 是 | 否 | 是 |
+| 橫向 | 27/02/2017 | 是 | 否 | 否 | 否 |
+| 華盛頓特區AudienceOne | 27/02/2017 | 是 | 否 | 否 | 否 |
+| Datasux | 11/20/2017 | 否 | 否 | 否 | 是 |
+| Digilant | 02/03/2017 |  | 否 | 否 | 否 |
 | DistrictM | 02/03/2017 | 是 | 否 | 否 | 否 |
 | DoubleVerify | 06/09/2017 | 是 | 否 | 否 | 否 |
-| 吊桥 | 02/03/2017 | 否 | 否 | 否 | 是 |
-| Dstillery(FKA Media6) | 02/03/2017 | 是 | 否 | 否 | 是 |
-| Epsilon Conversant | 03/03/2017 | 否 | 否 | 否 | 否 |
+| Drawbridge | 02/03/2017 | 否 | 否 | 否 | 是 |
+| Dstillery (FKA Media6) | 02/03/2017 | 是 | 否 | 否 | 是 |
+| Epsilon轉換 | 03/03/2017 | 否 | 否 | 否 | 否 |
 | 指数 | 27/02/2017 | 是 | 否 | 是 | 否 |
-| Eyereturn营销 | 11/04/2017 | 是 | 否 | 否 | 否 |
+| Eyereturn Marketing | 11/04/2017 | 是 | 否 | 否 | 否 |
 | EyeView Digital | 14/06/2018 | 是 | 否 | 否 | 是 |
-| 菲克苏 | 03/03/2017 | 是 | 否 | 否 | 是 |
+| Fiksu | 03/03/2017 | 是 | 否 | 否 | 是 |
 | Flashtalking | 02/03/2017 | 否 | 否 | 否 | 否 |
 | FreakOut | 03/03/2017 | 是 | 否 | 否 | 否 |
-| 自由轮 | 27/02/2017 | 是 | 是 | 否 | 是 |
-| 色域媒体 | 03/03/2017 |  | 否 | 否 |  |
-| Google AdsWords显示 | 02/08/2018 | 是 | 是 | 否 | 是 |
-| Google DoubleClick竞价管理器(DBM) | 24/04/2017 | 是 | 是 | 是 | 是 |
-| Google DoubleClick促销活动管理器(DCM fka DFA) | 24/04/2017 | 是 | 是 | 是 | 是 |
-| Google DoubleClick for Publishers(DFP、DFPP) | 24/04/2017 | 是 | 是 | 是 | 是 |
-| 口香糖 | 02/06/2017 | 是 | 否 | 否 | 否 |
-| 索引交换（以前称为Casale Media） | 03/03/2017 | 是 | 否 | 否 | 否 |
-| 传染媒体 | 03/03/2017 | 是 | 否 | 是 | 否 |
+| 飞轮 | 27/02/2017 | 是 | 是 | 否 | 是 |
+| 色域媒體 | 03/03/2017 |  | 否 | 否 |  |
+| Google AdsWords顯示 | 02/08/2018 | 是 | 是 | 否 | 是 |
+| Google DoubleClick 投标经理（DBM） | 24/04/2017 | 是 | 是 | 是 | 是 |
+| Google DoubleClick Campaign Manager （DCM fka DFA） | 24/04/2017 | 是 | 是 | 是 | 是 |
+| 适用于发布者的 Google DoubleClick （DFP，DFPP） | 24/04/2017 | 是 | 是 | 是 | 是 |
+| GumGum | 02/06/2017 | 是 | 否 | 否 | 否 |
+| Index Exchange （以前称为 Casale 媒体） | 03/03/2017 | 是 | 否 | 否 | 否 |
+| Infectious 媒体 | 03/03/2017 | 是 | 否 | 是 | 否 |
 | inMobi | 30/03/2017 | 是 | 否 | 否 | 是 |
-| 因诺维德 | 02/03/2017 | 是 | 否 | 否 | 否 |
-| iPinYou | 11/07/2017 | 否 | 否 | 否 | 否 |
-| 扬普 | 11/05/2017 | 是 | 否 | 否 | 是 |
-| 吉沃 | 30/08/2017 | 否 | 否 | 否 | 否 |
+| Innovid | 02/03/2017 | 是 | 否 | 否 | 否 |
+| 釘選您 | 11/07/2017 | 否 | 否 | 否 | 否 |
+| Jampp | 11/05/2017 | 是 | 否 | 否 | 是 |
+| Jivox | 30/08/2017 | 否 | 否 | 否 | 否 |
 | Juice Mobile | 03/03/2017 | 是 | 否 | 否 | 是 |
-| 克鲁克 | 30/06/2017 | 否 | 否 | 否 | 是 |
+| Krux | 30/06/2017 | 否 | 否 | 否 | 是 |
 | Liftoff.io | 09/11/2017 | 是 | 否 | 否 | 是 |
 | LiveIntent | 17/07/2017 | 是 | 否 | 否 | 否 |
 | LiveRail | 20/01/2017 |  | 否 | 否 |  |
-| 逻辑 | 22/06/2017 | 否 | 否 | 否 | 否 |
-| 洛塔梅 | 30/06/2017 | 是 | 否 | 否 | 是 |
+| Logicad | 22/06/2017 | 否 | 否 | 否 | 否 |
+| Lotame | 30/06/2017 | 是 | 否 | 否 | 是 |
 | MaxPoint Interactive | 27/02/2017 | 否 | 否 | 否 | 否 |
 | MediaMath | 27/02/2017 | 是 | 否 | 否 | 是 |
-| Microsoft Bing Ads | 30/05/2017 | 是 | 是 | 是 | 否 |
-| 千禧媒体 | 27/02/2017 | 否 | 否 | 否 | 是 |
-| 中国平台 | 06/08/2018 | 是 | 否 | 否 | 是 |
-| 叙述I/O | 12/01/2018 | 是 | 否 | 否 | 是 |
-| 本机触控 | 02/03/2017 | 是 | 否 | 否 | 是 |
-| 纳蒂沃 | 27/02/2017 | 是 | 否 | 否 | 否 |
+| Microsoft Bing 广告 | 30/05/2017 | 是 | 是 | 是 | 否 |
+| 千禧年媒體 | 27/02/2017 | 否 | 否 | 否 | 是 |
+| mPlatform中國 | 06/08/2018 | 是 | 否 | 否 | 是 |
+| 叙述性 i/o | 12/01/2018 | 是 | 否 | 否 | 是 |
+| 原生觸控 | 02/03/2017 | 是 | 否 | 否 | 是 |
+| Nativo | 27/02/2017 | 是 | 否 | 否 | 否 |
 | Mail.ru | 29/04/2019 | 是 | 否 | 否 | 是 |
-| 移动专业人员 | 25/05/2018 | 是 | 否 | 否 | 是 |
-| 网络挖掘 | 02/03/2017 | 否 | 否 | 否 | 否 |
-| 诺伊斯塔 | 28/03/2017 | 是 | 否 | 否 | 否 |
+| 移动设备专业人员 | 25/05/2018 | 是 | 否 | 否 | 是 |
+| 網路探勘 | 02/03/2017 | 否 | 否 | 否 | 否 |
+| Neustar | 28/03/2017 | 是 | 否 | 否 | 否 |
 | OnAd | 13/02/2017 | 是 | 否 | 是 | 否 |
 | OneSpot | 19/06/2017 | 是 | 否 | 否 | 是 |
 | OpenX | 26/07/2018 | 是 | 否 | 否 | 是 |
 | Opera Mediaworks | 13/02/2017 | 是 | 否 | 否 | 是 |
-| 外脑 | 03/04/2017 | 是 | 否 | 否 | 否 |
-| 所有者IQ | 13/02/2017 | 是 | 否 | 是 | 否 |
-| 161站台 | 28/11/2018 | 是 | 否 | 否 | 是 |
+| Outbrain | 03/04/2017 | 是 | 否 | 否 | 否 |
+| OwnerIQ | 13/02/2017 | 是 | 否 | 是 | 否 |
+| Platform 161 | 28/11/2018 | 是 | 否 | 否 | 是 |
 | PocketMath | 22/02/2017 | 是 | 否 | 否 | 是 |
 | Powerlinks | 17/05/2017 | 是 | 否 | 否 | 否 |
-| 出版物 | 13/02/2017 | 是 | 否 | 否 | 否 |
-| 普尔塞波因特 | 13/02/2017 | 是 | 否 | 否 | 否 |
+| Pubmatic | 13/02/2017 | 是 | 否 | 否 | 否 |
+| Pulsepoint | 13/02/2017 | 是 | 否 | 否 | 否 |
 | PushSpring | 28/08/2017 | 是 | 否 | 否 | 是 |
 | Quantcast | 13/02/2017 | 是 | 否 | 否 | 否 |
 | RhythmOne / RadiumOne | 13/02/2017 | 是 | 否 | 否 | 是 |
-| 重新合并 | 31/05/2017 | 是 | 否 | 是 | 是 |
-| 回响 | 17/02/2017 | 是 | 否 | 否 | 否 |
+| 重新合併 | 31/05/2017 | 是 | 否 | 是 | 是 |
+| 共鸣 | 17/02/2017 | 是 | 否 | 否 | 否 |
 | RevJet | 17/02/2017 | 否 | 否 | 否 | 否 |
-| 火箭燃料 | 17/02/2017 | 是 | 否 | 是 | 是 |
-| Rubicon |  | 是 | 是 | 否 |  |
-| 运行 | 17/02/2017 | 是 | 否 | 否 | 否 |
-| 萨比奥移动 | 17/02/2017 | 否 | 否 | 否 | 是 |
+| RocketFuel | 17/02/2017 | 是 | 否 | 是 | 是 |
+| Rubicon project |  | 是 | 是 | 否 |  |
+| 執行 | 17/02/2017 | 是 | 否 | 否 | 否 |
+| Sabio Mobile | 17/02/2017 | 否 | 否 | 否 | 是 |
 | Simpli.fi | 17/02/2017 | 否 | 否 | 否 | 是 |
-| Sizmek受众中心 | 17/02/2017 | 是 | 否 | 否 |  |
-| 切片 | 04/09/2018 | 是 | 否 | 否 | 是 |
-| Smart Adserver | 31/07/2017 | 是 | 否 | 是 | 是 |
-| So-net媒体网络逻辑 |  | 是 | 否 | 否 |  |
-| 索诺比 | 28/03/2017 | 是 | 否 | 是 | 否 |
-| SpecificMedia | 03/03/2017 | 否 | 否 | 否 | 否 |
-| 海绵细胞 | 03/03/2017 | 是 | 否 | 是 | 是 |
+| Sizmek受眾中心 | 17/02/2017 | 是 | 否 | 否 |  |
+| Slickdeals | 04/09/2018 | 是 | 否 | 否 | 是 |
+| 智慧型廣告伺服器 | 31/07/2017 | 是 | 否 | 是 | 是 |
+| 网络媒体网络 Logicad |  | 是 | 否 | 否 |  |
+| Sonobi | 28/03/2017 | 是 | 否 | 是 | 否 |
+| 特定媒體 | 03/03/2017 | 否 | 否 | 否 | 否 |
+| SpongeCell | 03/03/2017 | 是 | 否 | 是 | 是 |
 | SpotX | 16/03/2018 | 否 | 是 | 否 | 是 |
-| 斯特勒 | 03/03/2017 | 是 | 否 | 否 | 否 |
+| Stroer | 03/03/2017 | 是 | 否 | 否 | 否 |
 | SundaySky | 03/03/2017 | 是 | 否 | 是 | 否 |
 | StartApp | 25/05/2018 | 是 | 否 | 否 | 是 |
-| 超级/扩展 | 03/03/2017 | 是 | 否 | 否 | 否 |
-| 苏尔瓦塔 | 09/08/2017 | 是 | 否 | 否 | 是 |
-| 塔沃拉 | 03/08/2017 | 否 | 是 | 否 | 否 |
-| 塔帕德 | 03/03/2017 | 否 | 否 | 否 | 是 |
-| 泰拉里亚 | 25/04/2019 | 是 | 否 | 否 | 是 |
-| 技术系统 | 03/03/2017 | 是 | 否 | 否 | 否 |
-| 交易台 | 03/03/2017 | 是 | 是 | 是 | 是 |
-| Thnk Realtime | 05/02/2016 |  | 否 | 否 |  |
-| 震颤视频 | 03/03/2017 | 是 | 否 | 否 | 否 |
-| 三次提升 | 03/03/2017 | 否 | 是 | 否 | 否 |
+| Supership/ScaleOut | 03/03/2017 | 是 | 否 | 否 | 否 |
+| Survata | 09/08/2017 | 是 | 否 | 否 | 是 |
+| Taboola | 03/08/2017 | 否 | 是 | 否 | 否 |
+| Tapad | 03/03/2017 | 否 | 否 | 否 | 是 |
+| Telaria | 25/04/2019 | 是 | 否 | 否 | 是 |
+| Telogical Systems | 03/03/2017 | 是 | 否 | 否 | 否 |
+| 商业桌面 | 03/03/2017 | 是 | 是 | 是 | 是 |
+| Thnk 实时 | 05/02/2016 |  | 否 | 否 |  |
+| Tremor 视频 | 03/03/2017 | 是 | 否 | 否 | 否 |
+| 三倍提升度 | 03/03/2017 | 否 | 是 | 否 | 否 |
 | TrueX | 11/01/2018 | 是 | 否 | 否 | 是 |
 | TubeMogul | 03/03/2017 | 是 | 否 | 是 | 否 |
-| 转弯/阿莫比 | 03/03/2027 | 否 | 否 | 否 | 是 |
-| 特温加 | 29/10/2018 | 是 | 否 | 否 | 否 |
-| Twitter自定义受众 | 27/02/2017 | 是 | 否 | 是 | 否 |
-| 底音 | 11/07/2017 | 否 | 否 | 否 | 否 |
-| 韦尔韦 | 15/06/2017 | 是 | 否 | 否 | 是 |
+| 翻轉/阿莫比 | 03/03/2027 | 否 | 否 | 否 | 是 |
+| Twenga | 29/10/2018 | 是 | 否 | 否 | 否 |
+| twitter自訂對象 | 27/03/2017 | 是 | 否 | 是 | 否 |
+| 底色 | 11/07/2017 | 否 | 否 | 否 | 否 |
+| Verve | 15/06/2017 | 是 | 否 | 否 | 是 |
 | VideoAmp | 03/03/2017 | 否 | 否 | 否 | 否 |
-| 视频学 | 03/03/2017 | 否 | 否 | 否 | 否 |
+| Videology | 03/03/2017 | 否 | 否 | 否 | 否 |
 | VisualIQ | 24/03/2017 | 是 | 否 | 否 | 否 |
-| 维基购买 | 04/08/2018 | 是 | 否 | 否 | 是 |
-| X+1 | 05/02/2016 |  | 否 | 否 |  |
+| 維基購買 | 04/08/2018 | 是 | 否 | 否 | 是 |
+| X + 1 | 05/02/2016 |  | 否 | 否 |  |
 | Xaxis | 03/03/2017 | 是 | 否 | 否 | 否 |
 | Yahoo DataX | 03/03/2017 | 是 | 是 | 是 | 是 |
 | Yahoo! 日本 | 03/03/2017 | 否 | 否 | 否 | 否 |
 | Yandex | 28/11/2018 | 是 | 否 | 否 | 是 |
 | Yieldex | 21/08/2017 | 是 | 否 | 否 | 否 |
 | YieldMo | 03/03/2017 | 否 | 否 | 否 | 否 |
-| 由梅 | 31/05/2017 | 否 | 否 | 否 | 否 |
+| Yume | 31/05/2017 | 否 | 否 | 否 | 否 |

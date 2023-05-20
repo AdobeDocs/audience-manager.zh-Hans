@@ -1,113 +1,113 @@
 ---
-description: 描述可添加到目标URL的宏。
-seo-description: 描述可添加到目标URL的宏。
-seo-title: 定义的目标宏
+description: 說明可新增至目的地URL的巨集。
+seo-description: Describes the macros you can add to a destination URL.
+seo-title: Destination Macros Defined
 solution: Audience Manager
 title: 定义的目标宏
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
-feature: 目标基础知识
+feature: Destination Basics
 exl-id: 7be4b417-046c-4fe3-a53c-e4e0ed36acb9
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '654'
 ht-degree: 2%
 
 ---
 
 # 定义的目标宏 {#destination-macros-defined}
 
-描述可添加到目标[!DNL URL]的宏。
+說明可新增至目的地的巨集 [!DNL URL].
 
 <!-- destination-macros.xml -->
 
-创建[!DNL URL]目标时，可以将以下宏插入到[!DNL URL]字符串中。 请咨询您的数据/目标合作伙伴，了解目标[!DNL URL]中的宏放置是否正确。
+建立時 [!DNL URL] 目的地，您可以將下列巨集插入 [!DNL URL] 字串。 請洽詢您的資料/目的地合作夥伴，瞭解目的地內的巨集放置是否正確 [!DNL URL].
 
 >[!NOTE]
 >
->除非另有指示，否则宏是可选的。 *斜体*&#x200B;表示变量占位符。
+>巨集是選用的，除非另有指示。 *斜体*&#x200B;表示变量占位符。
 
 <table id="table_2C532EFB9DAE41B08714753EBD7DFB05"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 宏 </th> 
+   <th colname="col1" class="entry"> 巨集 </th> 
    <th colname="col2" class="entry"> 说明 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> %alias%</code> </p> </td> 
-   <td colname="col2"> <p>必需. </p> <p>定义映射的区段值在目标URL中的位置。 通常为<i>区段ID</i>，但也可以是集成代码。 </p> </td> 
+   <td colname="col2"> <p>必需. </p> <p>定義目的地URL中對應區段值的位置。 通常這是 <i>區段ID</i>，但也可能是整合程式碼。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> %did%</code> </p> </td> 
-   <td colname="col2"> <p>将用户的<span class="keyword">Audience Manager</span> ID插入目标URL。 </p> </td> 
+   <td colname="col2"> <p>插入使用者的 <span class="keyword"> Audience Manager</span> ID放入目的地URL。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>%dpid_<i>data source id</i>%</code> </p> </td> 
-   <td colname="col2"> <p><i>数据源id</i>对应于传递到宏的数据源的标识符。 </p> <p>让我们以一个简单的示例来看看它的工作原理。 在这种情况下，我们有一个<span class="keyword">Audience Manager</span>合作伙伴，其ID和条件如下： </p> 
+   <td colname="col2"> <p>此 <i>資料來源id</i> 對應至傳遞至巨集的資料來源識別碼。 </p> <p>讓我們來看看這個範例是如何運作的。 在此案例中，我們設定了 <span class="keyword"> Audience Manager</span> 合作夥伴具有下列ID和條件： </p> 
     <ul id="ul_697508B437EB4090B121AFA5D519AFBE"> 
-     <li id="li_32D9F72A7D1543A892DC7E1529E98A96">数据源ID:<code> 1</code> </li> 
-     <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">内部客户ID:<code> CustomerABC</code> </li> 
-     <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">声明的ID:合作伙伴希望将这些值作为声明的ID <code> 1:CustomerABC</code>进行传递。 </li> 
-    </ul> <p>要使用<code>%dpid_<i>data source id</i>%</code>实现此目的，<span class="keyword">Audience Manager</span>合作伙伴将如下格式化宏： </p> 
+     <li id="li_32D9F72A7D1543A892DC7E1529E98A96">資料來源ID： <code> 1</code> </li> 
+     <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">內部客戶ID： <code> CustomerABC</code> </li> 
+     <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">宣告ID：合作夥伴想要將這些值傳入做為宣告ID <code> 1:CustomerABC</code>. </li> 
+    </ul> <p>若要使用 <code>%dpid_<i>data source id</i>%</code>，則 <span class="keyword"> Audience Manager</span> partner會將巨集格式化，如下所示： </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
-    </ul> <p>宏将用<code> CustomerABC</code>替换<code> 1</code>。 </p> </td> 
+    </ul> <p>巨集將取代 <code> 1</code> 替換為 <code> CustomerABC</code>. </p> </td> 
   </tr> 
   <tr>
     <td><p><code>${GDPR}</code></p></td>
-    <td><p>指示GDPR法规是否适用于访客。 使用此宏可在发送到与IAB集成的URL目标的区段中包含同意。 有关详细信息，请参阅<a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">适用于IAB TCF的Audience Manager插件</a>。</p></td>
+    <td><p>指出GDPR法規是否適用於訪客。 使用此巨集會包含傳送至與IAB整合之URL目的地的區段中的同意。 另請參閱 <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">適用於IAB TCF的Audience Manager外掛程式</a> 以取得詳細資訊。</p></td>
   </tr>
    <tr>
     <td><code>${GDPR_CONSENT_XXXX}</code></p></td>
-    <td><p>访客在您的网站上提供或拒绝同意时收集的同意字符串（包括IAB供应商ID）。 使用此宏可在发送到与IAB集成的URL目标的区段中包含同意字符串。 将<code>XXXX</code>替换为目标合作伙伴ID。 有关详细信息，请参阅<a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">适用于IAB TCF的Audience Manager插件</a>。 </p></td>
+    <td><p>訪客在您的網站上提供或拒絕同意時收集的同意字串（包括IAB廠商ID）。 使用此巨集會包含傳送至與IAB整合之URL目的地的區段中的同意字串。 Replace <code>XXXX</code> ，並使用目的地合作夥伴ID。 另請參閱 <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">適用於IAB TCF的Audience Manager外掛程式</a> 以取得詳細資訊。 </p></td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> %http_proto%</code> </p> </td> 
-   <td colname="col2"> <p>检测父网页中使用的协议，并将其插入到目标URL中。 例如：
+   <td colname="col2"> <p>偵測上層網頁中使用的通訊協定，並將其插入目的地URL中。 例如：
      <br> 
      <ul id="ul_026F56EC46E94D9EB1153557C0F65325"> 
-      <li id="li_B41EF140CC274CB68FE7213DD8B908C0">如果网页是<b>https</b>://aam_client.com ，则此宏将被替换为<b>https</b>://url-destination.com </li> 
-      <li id="li_BDCD6EA69B004A92BA6981952341BD77">如果网页是<b>http</b>://aam_client.com ，则此宏将被替换为<b>http</b>://url-destination.com </li> 
+      <li id="li_B41EF140CC274CB68FE7213DD8B908C0">如果網頁是 <b>https</b>：//aam_client.com，此巨集將取代為 <b>https</b>：//url-destination.com </li> 
+      <li id="li_BDCD6EA69B004A92BA6981952341BD77">如果網頁是 <b>http</b>：//aam_client.com，此巨集將取代為 <b>http</b>：//url-destination.com </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> %mcid%</code> </p> </td> 
-   <td colname="col2"> <p>将<span class="keyword">Experience Cloud</span> ID插入到目标URL中。 </p> </td> 
+   <td colname="col2"> <p>插入 <span class="keyword"> Experience Cloud</span> ID放入目的地URL。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> %region%</code> </p> </td> 
-   <td colname="col2"> <p>将<span class="wintitle">数据收集服务器(DCS)</span>区域插入目标URL。 为了最大程度地减少延迟，当访客对<span class="keyword">Audience Manager</span>进行HTTP调用时，会将访客重定向到最近的<span class="wintitle"> DCS</span>数据中心。 这是通过DNS实现的，DNS能够检测访客的位置并将访客定向到适当的数据中心。 </p> </td> 
+   <td colname="col2"> <p>插入 <span class="wintitle"> 資料收集伺服器(DCS)</span> 區域放入目的地URL。 為了將延遲降至最低，當訪客對進行HTTP呼叫時 <span class="keyword"> Audience Manager</span>，系統會將它們重新導向至最近的 <span class="wintitle"> DCS</span> 資料中心。 這是透過DNS達成，DNS能夠偵測訪客的位置，並將其導向適當的資料中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> %rnd%</code> </p> </td> 
-   <td colname="col2"> <p>通过在目标URL中插入随机数来执行缓存嵌套功能。 这会阻止浏览器提供缓存的内容。 </p> </td> 
+   <td colname="col2"> <p>將隨機數字插入目的地URL中，執行快取爆破功能。 這可防止瀏覽器提供快取的內容。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> %timestamp%</code> </p> </td> 
-   <td colname="col2"> <p>在目标URL中插入UNIX时间戳，以防止浏览器提供缓存的内容。 </p> </td> 
+   <td colname="col2"> <p>在目的地URL中插入UNIX時間戳記，以防止瀏覽器提供快取的內容。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 使用目标宏{#destination-cache-busting}嵌套缓存
+## 使用目的地巨集防止快取 {#destination-cache-busting}
 
-`%rnd%`和`%timestamp%`宏将唯一值插入到[!DNL URL]字符串中，以防止浏览器缓存。
+此 `%rnd%` 和 `%timestamp%` 巨集會將唯一值插入 [!DNL URL] 字串，以防止瀏覽器快取。
 
-## 使用`%rnd%`和`%timestamp%` {#dest-cache-busting}嵌套缓存
+## 防快取 `%rnd%` 和 `%timestamp%` {#dest-cache-busting}
 
 <!-- c_dest_cache_busting.xml -->
 
-浏览器在内存中缓存（保存）经常请求的内容。 页面加载时，保存的内容会从缓存中提供，而不是从远程服务器提供。 此过程有助于保持有效的下载时间，因为数据是在本地提供的，而不是从其他位置提供。 但是，由于缓存不需要服务器调用，因此通过人为地减少唯一请求数量，可能会导致报表出现偏差。
+瀏覽器在記憶體中快取（儲存）經常要求的內容。 頁面載入時，儲存的內容會從快取提供，而不是從遠端伺服器提供。 此程式有助於維持有效率的下載時間，因為資料是在本機（而非從其他位置）提供。 不過，由於快取不需要伺服器呼叫，因此會人為降低不重複要求的數量，而扭曲報表。
 
-防止浏览器保存和重用内容。 此技术使用的代码可将随机数或时间戳插入到URL字符串中，这使其对浏览器而言是独一无二的。 因此，每个`HTTP`调用都将计为对服务器的单独请求。 强制对每个请求进行新的服务器调用有助于保持报表的准确性并减少差异。 [!DNL Audience Manager] 为缓存嵌套提供两个宏：
+防快取可防止瀏覽器儲存及重複使用內容。 此技巧使用的程式碼會在URL字串中插入隨機數字或時間戳記，讓瀏覽器看起來獨一無二。 因此，每個 `HTTP` 呼叫會計為對伺服器的個別要求。 為每個請求強制執行新的伺服器呼叫有助於維持報告準確性並減少差異。 [!DNL Audience Manager] 提供兩個巨集來防止快取：
 
-* `%rnd%`:在URL中插入随机数。
-* `%timestamp%`:将Unix日期/时间插入到URL中。
+* `%rnd%`：將隨機數字插入URL。
+* `%timestamp%`：將Unix日期/時間插入URL。
 
-## 比较`%rnd%`和`%timestamp%` {#compare-rnd-timestamp}
+## 比較 `%rnd%` 和 `%timestamp%` {#compare-rnd-timestamp}
 
-这两个宏都会阻止缓存，但`%rnd%`可能更有效。 例如，使用`%timestamp%`时，如果多个用户同时查看页面，则他们将获得相同的日期/时间值。 因此，[!DNL URL]不唯一，并且只计数一次多次调用。 但是，`%rnd%`会为每次调用生成一个唯一的数字值（即使用户同时看到同一页面）。 这表示[!DNL URL]字符串包含不同的值，并计为唯一值。
+這兩個巨集都防止快取，但 `%rnd%` 可能更有效率。 例如，使用 `%timestamp%`，如果多位使用者同時檢視一個頁面，他們將獲得相同的日期/時間值。 因此， [!DNL URL] 不是唯一的，且多個呼叫只會計算一次。 不過， `%rnd%` 每次呼叫都會產生唯一的數值（即使使用者同時看到相同頁面）。 這表示 [!DNL URL] 字串包含不同的值，且計為唯一。
 
 >[!MORELIKETHIS]
 >

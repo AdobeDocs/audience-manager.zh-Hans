@@ -31,13 +31,13 @@ ht-degree: 82%
 
 **什么是外部设备图？**
 
-外部设备图是指在 [!DNL Audience Manager] 中除使用您自己的跨设备数据源之外还使用其他数据源创建的设备图。例如，在您创建 [配置文件合并规则](../features/profile-merge-rules/merge-rules-start.md) 然后选择第三方设备图选项，即您正在使用外部设备图。 请参阅[设备选项](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
+外部设备图是指在 [!DNL Audience Manager] 中除使用您自己的跨设备数据源之外还使用其他数据源创建的设备图。例如，當您建立 [設定檔合併規則](../features/profile-merge-rules/merge-rules-start.md) 並選擇協力廠商裝置圖表選項，即可使用外部裝置圖表。 请参阅[设备选项](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
 
  
 
 **在 [!UICONTROL Profile Merge Rule] 中使用外部设备图的常见用例有哪些？**
 
-在 [!UICONTROL Profile Merge Rule] 中使用设备图的主要目的在于评估属于单个人员或家庭的多台设备并确定其是否符合特定区段的资格。区段本身可能具有多种用途，例如，通过DSP提供的广告定位潜在受众，或通过网站个性化平台个性化客户的网站上体验。 请参阅[外部设备图用例](../features/profile-merge-rules/external-graph-use-cases.md)。
+在 [!UICONTROL Profile Merge Rule] 中使用设备图的主要目的在于评估属于单个人员或家庭的多台设备并确定其是否符合特定区段的资格。例如，區段本身可能有多種用途，例如以DSP提供的廣告鎖定潛在客戶受眾，或透過站上個人化平台將客戶的站上體驗個人化。 请参阅[外部设备图用例](../features/profile-merge-rules/external-graph-use-cases.md)。
 
  
 
@@ -259,18 +259,18 @@ ht-degree: 82%
 
 否。
 
-**为什么2020年3月16日后区段导出到Adobe Campaign的区段人口为零？**
+**為什麼在2020年3月16日之後，對Adobe Campaign的區段匯出會看到零區段母體？**
 
-2019年末，我们发布了一系列配置文件合并规则增强功能，以提高使用跨设备ID生成的批处理文件的准确性。 从2020年3月16日星期一开始，您的Audience Manager实例将严格遵循这些增强功能。 通常，在某些配置文件合并规则配置中，使用跨设备ID映射到目标的区段将停止生成导出。
+2019年底，我們發佈了一系列設定檔合併規則增強功能，以提高使用跨裝置ID產生批次檔案的準確性。 從2020年3月16日星期一開始，您的Audience Manager執行個體將嚴格遵循這些增強功能。 因此，使用跨裝置ID對應至目的地的區段，在某些設定檔合併規則設定中將停止產生匯出。
 
-要确保使用跨设备ID(如Adobe Campaign)在Audience Manager实例与目标之间进行正确集成，请确保满足以下要求：
+為確保您的Audience Manager執行個體與使用跨裝置ID的目的地(例如Adobe Campaign)之間正確整合，請確保您符合以下要求：
 
-1. 查看映射到Adobe Campaign声明的ID目标的区段所使用的配置文件合并规则。 配置文件合并规则必须使用 [!UICONTROL Last Authenticated Profile] 选项，以便导出中可以包含所有经过身份验证的用户档案。 如果您的配置文件合并规则使用了其他选项，请将其切换为 [!UICONTROL Last Authenticated Profile].
-2. 在配置文件合并规则设置中选择Adobe Campaign声明的ID数据源。
+1. 檢閱對應至您Adobe Campaign宣告ID目的地的區段所使用的設定檔合併規則。 設定檔合併規則必須使用 [!UICONTROL Last Authenticated Profile] 選項，以便所有已驗證的設定檔都可以包含在匯出中。 如果您的設定檔合併規則使用其他選項，請將其切換為 [!UICONTROL Last Authenticated Profile].
+2. 在「設定檔合併規則」設定中選取「Adobe Campaign宣告ID」資料來源。
 
 >[!NOTE]
 >
-> 对于面临这种情况的客户，我们已将“配置文件合并规则”限制增加1，这样您就可以为映射到Adobe Campaign Declared ID目标的区段创建专用的配置文件合并规则，而无需为其他用例更改配置文件合并规则。
+> 我們針對面臨此情況的客戶將設定檔合併規則限制增加1，以便您可以為對應至Adobe Campaign Declared ID目的地的區段建立專用的設定檔合併規則，而不會變更其他使用案例的設定檔合併規則。
 
 >[!MORELIKETHIS]
 >

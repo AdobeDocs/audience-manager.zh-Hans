@@ -1,22 +1,22 @@
 ---
-description: 使用功能板可查看有关合作伙伴独特访客计数的信息，这些独特访客计数按特征类型和区段在指定时间段内进行划分。
-seo-description: 使用功能板可查看有关合作伙伴独特访客计数的信息，这些独特访客计数按特征类型和区段在指定时间段内进行划分。
-seo-title: 报表仪表板
+description: 使用儀表板可檢視有關您合作夥伴在指定時間範圍內依特徵型別和區段劃分的不重複訪客計數資訊。
+seo-description: Use the Dashboard to view information about your partners' unique visitor counts broken down by trait types and segments for a specified time frame.
+seo-title: Reports Dashboard
 solution: Audience Manager
 title: 报表仪表板
 uuid: 350eee2d-72f7-42a7-916b-60f9a362c5cf
-feature: 报表参考
+feature: Reporting Reference
 exl-id: 1ca0280a-d67b-46f7-9c58-effc5be4e38f
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '631'
 ht-degree: 1%
 
 ---
 
 # 报表仪表板 {#reports-dashboard}
 
-使用功能板可查看有关指定时间段内按特征类型和区段划分的独特访客计数的信息。
+使用控制面板檢視指定時間範圍內按特徵型別和區段劃分的不重複訪客計數相關資訊。
 
 <!-- 
 
@@ -24,54 +24,54 @@ c_dashboard.xml
 
  -->
 
-[!DNL Audience Manager] 使 [!UICONTROL Role Based Access Control] 用([!UICONTROL RBAC])将用户群组权限扩展到 [!UICONTROL Dashboard]。用户只能在功能板上看到他们有权查看的信息。 [!UICONTROL RBAC] 功能允许您控制内部团队可以查看哪些报表数据。
+[!DNL Audience Manager] 使用 [!UICONTROL Role Based Access Control] ([!UICONTROL RBAC])將使用者群組許可權擴充至 [!UICONTROL Dashboard]. 使用者只能在控制面板上檢視他們有權檢視的資訊。 [!UICONTROL RBAC] 功能可讓您控制內部團隊可以檢視哪些報告資料。
 
-例如，管理不同广告商帐户的代理可以配置用户群组权限，以便管理广告商A帐户的团队无法查看广告商B的报表数据。 此功能板可用于解决数据交付问题。
+例如，管理不同廣告商帳戶的機構可以設定使用者群組許可權，這樣管理廣告商A帳戶的團隊就看不到廣告商B的報告資料。 此儀表板可用來疑難排解資料傳送問題。
 
-例如，如果您发现按独特用户类型（基于规则的用户与已载入的用户）细分的独特用户总数出现下降或尖峰，则您有一个更好的起点来跟踪潜在的数据交付问题。 如果您发现独特用户总数和已载入的独特用户总数出现下降，则可以转到[!UICONTROL On-boarding Status]报表以查看入站文件是否存在问题。
+例如，如果您發現不重複使用者總數出現谷值或峰值，並有獨特使用者型別（規則型與已上線）的劃分，您有一個更好的起點來追蹤潛在的資料傳送問題。 如果您發現不重複使用者總數和已上線的不重複使用者出現下降，您可以前往 [!UICONTROL On-boarding Status] 檢視傳入檔案是否有問題的報告。
 
-**要访问功能板，请执行以下操作：**
+**若要存取控制面板：**
 
-1. 在顶部导航菜单中，单击&#x200B;**[!UICONTROL Dashboard]**。
-2. ** 可选从下拉列表(7天、14天（默认）、30天或60天)中选择从上次报告日期开始的所需时间范围。
+1. 在頂端導覽功能表中，按一下 **[!UICONTROL Dashboard]**.
+2. *可選* 從下拉式清單中選取上次報告日期的所需時間範圍(7天、14天（預設值）、30天或60天)。
 
-   根据所选时段，[!UICONTROL Largest Traits] > [!UICONTROL Most Changed Traits]和[!UICONTROL Largest Segments] > [!UICONTROL Most Changed Segments]面板中的增量变化显示受众中独特访客在今天结束的时段与相同长度的前期之间的变化。 例如，如果选择7天，则差别将比较前七天（今天结束）内的独特访客与七天前（七天结束）七天内的独特访客。
+   根據選取的期間，差異會改變 [!UICONTROL Largest Traits] > [!UICONTROL Most Changed Traits] 和 [!UICONTROL Largest Segments] > [!UICONTROL Most Changed Segments] 面板會顯示今天結束的期間與相同長度的上一期間之間，對象中獨特訪客的變化。 例如，如果您選取「7天」，差值會比較今天結束前7天內的不重複訪客與七天前結束前7天內的不重複訪客。
 
    >[!NOTE]
    >
-   >您可以通过运行[!UICONTROL Trend]报表来调查异常的增量更改。 例如，如果您看到过去七天内增量变化异常大，则可以运行最近14天(2 x 7)的[!UICONTROL Trend]报表以更好地了解数字。
+   >您可以透過執行 [!UICONTROL Trend] 報告。 例如，如果您在過去七天內看到異常大的差異變更，您可以執行 [!UICONTROL Trend] 報告過去14天(2 x 7)的情況，以更清楚瞭解數字。
 
-   根据登录用户的权限，将显示以下面板：
+   視登入使用者的許可權而定，系統會顯示下列面板：
 
-   * [合作伙伴独特客户](../reporting/reports-dashboard.md#partner-uniques)
-   * [最大特征/最大更改特征](../reporting/reports-dashboard.md#largest-traits)
-   * [最大区段/更改最多的区段](../reporting/reports-dashboard.md#most-changed-segments)
+   * [合作夥伴獨特](../reporting/reports-dashboard.md#partner-uniques)
+   * [最大特徵/最多變更的特徵](../reporting/reports-dashboard.md#largest-traits)
+   * [最大區段/最常變更的區段](../reporting/reports-dashboard.md#most-changed-segments)
 
-3. ** 可选单击 **[!UICONTROL Normalize]** 任意图表上方的，可以以相同比例显示所有数据。您还可以将鼠标悬停在任何数据点上以查看更多信息。
+3. *可選* 按一下 **[!UICONTROL Normalize]** 位於任何圖表上方，以相同比例顯示所有資料。 您也可以將滑鼠移到任何資料點上，以檢視更多資訊。
 
-## 合作伙伴独特数{#partner-uniques}
+## 合作夥伴獨特 {#partner-uniques}
 
-查看所需的权限：[!UICONTROL View All Traits]。
+檢視所需的許可權： [!UICONTROL View All Traits].
 
 ![](assets/partner_uniques.png)
 
-此面板显示指定时间范围内的独特访客数。 颜色编码的单个行表示独特访客的总数以及使用算法、基于规则的特征和载入的特征捕获的独特访客的数量。
+此面板會顯示指定時段內的不重複訪客數量。 以顏色標示的個別行代表獨特訪客總數，以及使用演演算法、規則型和已上線特徵擷取的不重複訪客數。
 
 >[!NOTE]
 >
->独特访客总数表示通过基于规则的特征或已载入的特征捕获的访客总数。 但是，独特访客总数不等于使用基于规则的特征和已载入的特征所捕获的独特访客总数。 同一独特用户可能会在这两种特征类型中的任意一种类型中表示。
+>不重複訪客的總數代表透過規則型或已上線特徵擷取的訪客。 不過，不重複訪客的總數並不等於使用規則型和已上線特徵擷取的不重複訪客總數。 在這兩種特徵型別中，同一不重複使用者可能會出現。
 
-## 最大特征/最大更改特征{#largest-traits}
+## 最大特徵/最多變更的特徵 {#largest-traits}
 
-查看所需的权限：[!UICONTROL View Traits]。
+檢視所需的許可權： [!UICONTROL View Traits].
 
 ![](assets/largest_traits.png)
 
-此面板会显示由各种特征捕获的独特访客数量。
+此面板會顯示各種特徵所擷取的不重複訪客數量。
 
-使用&#x200B;**[!UICONTROL Show]**&#x200B;下拉列表显示有关不同类型特征的信息：[!UICONTROL All Traits]、[!UICONTROL Algorithmic]、[!UICONTROL Onboarded]或[!UICONTROL Rule-Based]。
+使用 **[!UICONTROL Show]** 下拉式清單，顯示不同型別特徵的資訊： [!UICONTROL All Traits]， [!UICONTROL Algorithmic]， [!UICONTROL Onboarded]，或 [!UICONTROL Rule-Based].
 
-此面板包含以下选项卡：
+此面板包含下列標籤：
 
 <table id="table_DA48BDEB4E0143BEA4EB85AC26FF6AE3"> 
  <thead> 
@@ -82,25 +82,25 @@ c_dashboard.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 最大特征</span> </p> </td> 
-   <td colname="col2"> <p>显示有关按数字（从最高到最低）排序的独特访客数的信息，并列出指定时间范围内独特访客的增量变化。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 最大特徵</span> </p> </td> 
+   <td colname="col2"> <p>顯示按數字排序的不重複訪客數目的相關資訊（最高至最低），也會列出指定時間範圍內不重複訪客的差異變更。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 更改最多的特征</span> </p> </td> 
-   <td colname="col2"> <p>显示有关按增量更改排序的独特访客数量的信息。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 變更次數最多的特徵</span> </p> </td> 
+   <td colname="col2"> <p>顯示依差異變更排序的不重複訪客數目的相關資訊。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 最大区段/更改最多的区段{#most-changed-segments}
+## 最大區段/最常變更的區段 {#most-changed-segments}
 
-查看所需的权限：[!UICONTROL View Segments]。
+檢視所需的許可權： [!UICONTROL View Segments].
 
 ![](assets/largest_segments.png)
 
-此面板可实时显示各个区段捕获的独特访客数量。
+此面板會顯示不同區段即時擷取的不重複訪客數量。
 
-此面板包含以下选项卡：
+此面板包含下列標籤：
 
 <table id="table_8E22E0579FA74C5A86CC40B40B2548BE"> 
  <thead> 
@@ -111,12 +111,12 @@ c_dashboard.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 最大区段</span> </p> </td> 
-   <td colname="col2"> <p>显示有关指定时间段内独特访客数量和独特访客增量变化的信息。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 最大區段</span> </p> </td> 
+   <td colname="col2"> <p>顯示指定時段內不重複訪客的數目和不重複訪客的差異變更。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 更改次数最多的区段</span> </p> </td> 
-   <td colname="col2"> <p>显示有关按增量更改排序的独特访客数量的信息。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 變更最多的區段</span> </p> </td> 
+   <td colname="col2"> <p>顯示依差異變更排序的不重複訪客數目的相關資訊。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

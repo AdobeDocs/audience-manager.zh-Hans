@@ -1,44 +1,44 @@
 ---
-description: 介绍初始HTTP调用中用于在供应商和Audience Manager之间同步用户ID的语法和参数。 ID同步可以在您将数据分类发送到Audience Manager后开始。
-seo-description: 介绍初始HTTP调用中用于在供应商和Audience Manager之间同步用户ID的语法和参数。 ID同步可以在您将数据分类发送到Audience Manager后开始。
-seo-title: 用于入站数据传输的 ID 同步
+description: 說明用於初始HTTP呼叫中的語法和引數，以便在廠商和Audience Manager之間同步使用者ID。 ID同步可在您將資料分類法傳送至Audience Manager後開始。
+seo-description: Describes the syntax and parameters used in the initial HTTP call to synchronize user IDs between a vendor and Audience Manager. ID synchronization can begin after you send your data taxonomy to Audience Manager.
+seo-title: ID Synchronization for Inbound Data Transfers
 solution: Audience Manager
 title: 用于入站数据传输的 ID 同步
 uuid: 037e74a6-acfd-4cef-b693-16b7aaa8e976
-feature: 入站数据传输
+feature: Inbound Data Transfers
 exl-id: cd9be32f-f443-45bd-a906-ec4c8589f608
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 8%
+source-wordcount: '438'
+ht-degree: 7%
 
 ---
 
 # 用于入站数据传输的 ID 同步 {#id-synchronization-for-inbound-data-transfers}
 
-描述初始`HTTP`调用中用于在供应商和[!DNL Audience Manager]之间同步用户ID的语法和参数。 在将数据分类发送到[!DNL Audience Manager]后，可以开始ID同步。
+說明初始程式碼中使用的語法和引數 `HTTP` 呼叫以在廠商和之間同步使用者ID [!DNL Audience Manager]. ID同步可在您將資料分類傳送至之後開始 [!DNL Audience Manager].
 
-ID同步是入站异步数据传输过程中的第一步。 在此步骤中，[!DNL Audience Manager]和供应商比较并匹配各自站点访客的ID。 例如，[!DNL Audience Manager]客户可能按ID 123了解用户。 但是，您的数据合作伙伴可以使用ID 456标识此用户。 同步过程允许[!DNL Audience Manager]和数据供应商协调这些不同的ID并标识其各自系统中的用户。 完成后，[!DNL Audience Manager]和您的第三方合作伙伴应为我们网络上看到的每个独特用户具有相应的ID。
+ID同步是內送、非同步資料傳輸程式的第一步。 在此步驟中， [!DNL Audience Manager] 和廠商會比較並比對各自網站訪客的ID。 例如， [!DNL Audience Manager] 客戶可透過ID 123認識使用者。 不過，您的資料合作夥伴可以使用ID 456識別此使用者。 同步化程式允許 [!DNL Audience Manager] 和資料供應商協調這些不同的ID，並識別其各自系統中的使用者。 完成後， [!DNL Audience Manager] 而您的協力廠商合作夥伴應該針對網路上的每個不重複使用者，提供對應的ID。
 
-您可以使用以下方法将数据导入[!DNL Audience Manager]:
+您可以使用下列方法將您的資料放入 [!DNL Audience Manager]：
 
-* [ID同步HTTP请求](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#id-sync-http)
-* [声明的ID事件](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#declared-id-event)
-* [从电子邮件嵌入的图像进行ID同步](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#id-sync-email-image)
+* [ID同步HTTP要求](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#id-sync-http)
+* [宣告ID事件](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#declared-id-event)
+* [從電子郵件內嵌影像進行ID同步](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#id-sync-email-image)
 
-## ID同步`HTTP`请求{#id-sync-http}
+## ID同步 `HTTP` 請求 {#id-sync-http}
 
-在ID Exchange中，格式正确的[!DNL URL]字符串应如下所示：
+在ID交換中，正確格式化 [!DNL URL] 字串看起來應該像這樣：
 
 ```
 https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT_URL>
 ```
 
-集客ID同步调用的[!DNL URL]应包含下表中描述的变量。
+此 [!DNL URL] 傳入ID同步呼叫的變數，如下表所述。
 
 >[!NOTE]
 >
->将斜体内容替换为实际参数值。
+>以實際引數值取代斜體內容。
 
 <table id="table_EB9F4246E2A34ABB8ED06EA458EB186F"> 
  <thead> 
@@ -50,34 +50,34 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
  <tbody> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i> </code> </td> 
-   <td colname="col2"> <p>内容提供程序的唯一ID(由<span class="keyword">Audience Manager</span>分配)。 </p> </td> 
+   <td colname="col2"> <p>內容提供者的唯一ID (指派者： <span class="keyword"> Audience Manager</span>)。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i> </code> </td> 
-   <td colname="col2"> <p>URL（百分比）编码的唯一用户ID表示形式。 除了编码保留的ASCII字符外，任何非ASCII字符都应根据UTF-8字符编码表进行百分比编码。 </p> <p>有关更多信息，请参阅<a href="https://www.url-encode-decode.com" format="http" scope="external"> URL编码/解码联机</a>网站。 </p> </td> 
+   <td colname="col2"> <p>不重複使用者ID的URL （百分比）編碼表示法。 除了編碼保留的ASCII字元外，任何非ASCII字元都應根據UTF-8字元編碼表進行百分比編碼。 </p> <p>如需詳細資訊，請參閱 <a href="https://www.url-encode-decode.com" format="http" scope="external"> URL線上編碼/解碼</a> 網站。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;REDIRECT_URL&gt;</i> </code> </td> 
-   <td colname="col2"> <p>嵌入了宏<code> ${DD_UUID}</code>的编码URL重定向。 </p> <p>注意： 仅在内容提供者启动调用时添加。 </p> </td> 
+   <td colname="col2"> <p>含有巨集的編碼URL重新導向 <code> ${DD_UUID}</code> 內嵌在其中。 </p> <p>注意：僅在內容提供者起始呼叫時新增。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
-   <td colname="col2"> <p>可选。如果您使用<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">适用于IAB TCF的Audience Manager插件，请添加此参数。</a></p> <p><code> gdpr</code> 可以是0（GDPR不适用）或1（GDPR适用）。 </p> <p> <b>注意：</b> 此参数只能与一起使用 <code>gdpr_consent</code>。</p></td> 
+   <td colname="col2"> <p>可选。如果您使用 <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">適用於IAB TCF的Audience Manager外掛程式。</a></p> <p><code> gdpr</code> 可以為0 （GDPR不適用）或1 （GDPR適用）。 </p> <p> <b>注意：</b> 此引數只能搭配 <code>gdpr_consent</code>.</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code><i>gdpr_consent=&lt;ENCODED STRING&gt;</i> </code> </td> 
-   <td colname="col2"> <p>可选。如果您使用<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">适用于IAB TCF的Audience Manager插件，请添加此参数。</a></p> <p><code>gdpr_consent</code> 是URL安全的base64编码GDPR同意字符串（请参阅<a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB规范</a>）。 </p> <p> <b>注意：</b> 此参数只能与一起使用 <code>gdpr</code>。</p> </td> 
+   <td colname="col2"> <p>可选。如果您使用 <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">適用於IAB TCF的Audience Manager外掛程式。</a></p> <p><code>gdpr_consent</code> 是URL安全base64編碼GDPR同意字串(請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB規格</a>)。 </p> <p> <b>注意：</b> 此引數只能搭配 <code>gdpr</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## [!UICONTROL Declared ID] 事件 {#declared-id-event}
+## [!UICONTROL Declared ID] Event {#declared-id-event}
 
-有关更多信息，请参阅[声明的ID](../../../features/declared-ids.md)。
+如需詳細資訊，請參閱 [宣告ID](../../../features/declared-ids.md).
 
-## 从电子邮件嵌入式映像{#id-sync-email-image}进行ID同步
+## 從電子郵件內嵌影像進行ID同步 {#id-sync-email-image}
 
-通过电子邮件图像匹配ID的格式与上面所示相同。 但请注意，必须启用电子邮件中的图像才能使其正常工作。 这会影响通过电子邮件进行的ID同步，因为大多数邮件系统默认会禁用图像。
+透過電子郵件影像比對ID的格式與上述相同。 但是請注意，必須啟用電子郵件中的影像才能使其運作。 這可能會影響透過電子郵件的ID同步，因為大多數郵件系統預設會停用影像。
 
 >[!MORELIKETHIS]
 >

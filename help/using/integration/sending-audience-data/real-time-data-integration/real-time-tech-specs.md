@@ -1,22 +1,22 @@
 ---
-description: 第三方内容提供商可以根据这些技术规范与Audience Manager交换数据。 当用户访问您的网站或在您的网站上执行操作时，实时（同步）集成会近乎实时地传输数据。 技术、工程或开发团队应使用此材料帮助设置实时数据传输和Audience Manager。
-seo-description: 第三方内容提供商可以根据这些技术规范与Audience Manager交换数据。 当用户访问您的网站或在您的网站上执行操作时，实时（同步）集成会近乎实时地传输数据。 技术、工程或开发团队应使用此材料帮助设置实时数据传输和Audience Manager。
-seo-title: 实时入站数据传输的技术规范
+description: 第三方內容提供者可望根據這些技術規格與Audience Manager交換資料。 即時（同步）整合可在使用者造訪您的網站或在網站上採取動作時，以幾近即時的方式傳輸資料。 技術、工程或開發團隊應使用此資料來協助設定具有Audience Manager的即時資料傳輸。
+seo-description: Third-party content providers can expect to exchange data with Audience Manager according to these technical specifications. A real-time (synchronous) integration transfers data in near-real time as a user visits or takes actions on your site. Technical, engineering, or development teams should use this material to help set up real-time data transfers with Audience Manager.
+seo-title: Technical Specifications for Inbound, Real-Time Data Transfers
 solution: Audience Manager
 title: 实时入站数据传输的技术规范
 uuid: 722aaf40-c60f-451c-99ce-aa773f7f301d
-feature: 入站数据传输
+feature: Inbound Data Transfers
 exl-id: 4d777b67-6330-4582-b398-abc267b84d83
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '129'
 ht-degree: 16%
 
 ---
 
 # 实时入站数据传输的技术规范{#technical-specifications-for-inbound-real-time-data-transfers}
 
-第三方内容提供商可以根据这些技术规范与Audience Manager交换数据。 当用户访问您的网站或在您的网站上执行操作时，实时（同步）集成会近乎实时地传输数据。 技术、工程或开发团队应使用此材料帮助设置实时数据传输和Audience Manager。
+第三方內容提供者可望根據這些技術規格與Audience Manager交換資料。 即時（同步）整合可在使用者造訪您的網站或在網站上採取動作時，以幾近即時的方式傳輸資料。 技術、工程或開發團隊應使用此資料來協助設定具有Audience Manager的即時資料傳輸。
 
 <!-- c_rt_realtime_intro.xml -->
 

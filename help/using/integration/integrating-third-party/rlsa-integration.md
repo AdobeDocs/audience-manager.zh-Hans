@@ -1,5 +1,5 @@
 ---
-description: 此过程需要AdWords再营销列表、像素代码和Audience ManagerURL目标。 它也称为搜索广告(RLSA)集成的再营销列表。 仅适用于付费搜索。
+description: 此程式需要AdWords再行銷清單、畫素代碼和Audience ManagerURL目的地。 這也稱為搜尋廣告(RLSA)整合的再行銷清單。 僅適用於付費搜尋。
 seo-description: This procedure requires an AdWords remarketing list, pixel code, and an Audience Manager URL destination. It is also known as a remarketing list for search ads (RLSA) integration. Applies to paid search only.
 seo-title: Send Segments to a Google AdWords Remarketing List
 solution: Audience Manager
@@ -14,41 +14,41 @@ ht-degree: 3%
 
 ---
 
-# 将区段发送到Google广告再营销列表 {#send-segments-to-a-google-adwords-remarketing-list}
+# 將區段傳送至Google Ads再行銷清單 {#send-segments-to-a-google-adwords-remarketing-list}
 
-此过程需要 [!DNL Google Ads] 再营销列表、像素代码和Audience Manager [!DNL URL] [!DNL destination]. 它也称为搜索广告的再营销列表([!DNL RLSA])集成。 仅适用于付费搜索。
+此程式需要 [!DNL Google Ads] 再行銷清單、畫素程式碼和Audience Manager [!DNL URL] [!DNL destination]. 這也稱為搜尋廣告的再行銷清單([!DNL RLSA])整合。 僅適用於付費搜尋。
 
 >[!IMPORTANT]
->请注意，这不是两个系统的按产品化集成。
+>請注意，這並非兩個系統的產品化整合。
 
-设置 [!DNL Google Ads] 再营销列表 [!DNL Audience Manager] [!DNL URL destination]:
+若要設定 [!DNL Google Ads] 再行銷清單as a [!DNL Audience Manager] [!DNL URL destination]：
 
-1. 在 [!DNL Google Ads] 帐户， [创建网站再营销列表](https://support.google.com/tagmanager/answer/6106960?hl=en) 并记下转换ID。
-1. 将以下URL用作基本URL和安全URL的模板。 将xxxxxxxx部分替换为您的转化ID。
+1. 在您的 [!DNL Google Ads] 帳戶， [建立網站再行銷清單](https://support.google.com/tagmanager/answer/6106960?hl=en) 並記下您的轉換ID。
+1. 使用下列URL作為基礎URL和安全URL的範本。 將xxxxxxxx區段取代為您的轉換ID。
 
    ```
     //googleads.g.doubleclick.net/pagead/viewthroughconversion/xxxxxxxx/?value=0&guid=ON&script=0&data=%ALIAS%
    ```
 
-1. 在Audience Manager中， [创建 [!DNL URL destination]](../../features/destinations/create-url-destination.md) 或编辑现有 [!DNL destination]. 在创建 [!DNL destination]:
-   * 类型：URL
-   * 序列化：已启用
-   * 分隔符：分号(&amp;semi;))
+1. 在Audience Manager中， [建立 [!DNL URL destination]](../../features/destinations/create-url-destination.md) 或編輯現有 [!DNL destination]. 建立時，請使用下列設定 [!DNL destination]：
+   * 型別： URL
+   * 序列化：已啟用
+   * 分隔符號：分號( &amp;semi； )
 
-1. 在 [!UICONTROL Segment Mappings] 部分 [!DNL URL] [!DNL destination]，将步骤2中的代码添加到 [!DNL URL] 和 [!DNL Secure URL] 字段。 为代码添加前缀 `http:` 和 `https:` 在 [!DNL URL] 和 [!DNL Secure URL] 字段。
+1. 在 [!UICONTROL Segment Mappings] 部分 [!DNL URL] [!DNL destination]，將步驟2中的程式碼新增至 [!DNL URL] 和 [!DNL Secure URL] 欄位。 程式碼的前置詞為 `http:` 和 `https:` 在 [!DNL URL] 和 [!DNL Secure URL] 欄位。
 
    >[!IMPORTANT]
    >
-   >替换编码的与号 `&` 与号未编码 `&`
+   >取代編碼的&amp;符號 `&` 包含未編碼的&amp;符號 `&`
 
-   不安全 [!DNL URL] 代码：
+   不安全 [!DNL URL] 程式碼：
 
    ```
     http://googleads.g.doubleclick.net/pagead/viewthroughconversion/xxxxxxxx/?
     value=0&guid=ON&script=0&data=%ALIAS%
    ```
 
-   安全 [!DNL URL] 代码：
+   安全 [!DNL URL] 程式碼：
 
    ```
     https://googleads.g.doubleclick.net/pagead/viewthroughconversion/xxxxxxxx/?
@@ -59,12 +59,12 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >如果您使用多个区段，请为要映射到的每个区段获取一个新像素 [!DNL Google Ads] [!DNL destination]. 这可确保数据被应用到相应的再营销列表。
+   >如果您使用多個區段，請針對您想要對應至的每個區段取得新畫素 [!DNL Google Ads] [!DNL destination]. 這可確保資料套用至適當的再行銷清單。
 
-1. 将新区段映射到此 [!DNL destination] 在Audience Manager中，将映射定义为 `aam=segmentID` 替换 `segmentID` 和区段的ID。
-1. 在中定义存储段时 [!DNL Google Ads]，则创建与步骤6中定义的映射匹配的规则。
+1. 將新區段對應至此專案時 [!DNL destination] 在Audience Manager中，將對應定義為 `aam=segmentID` 和取代 `segmentID` 以及區段的ID。
+1. 在中定義貯體時 [!DNL Google Ads]，建立符合步驟6中定義之對應的規則。
 
-已完成的映射可能类似于以下内容：
+完成的對應看起來可能類似這樣：
 
 ![](../assets/rlsa_mapping.png)
 
@@ -72,6 +72,6 @@ ht-degree: 3%
 >
 >* [[!DNL Destinations]](../../features/destinations/destinations.md)
 >* [创建一个 [!DNL URL Destination]](../../features/destinations/create-url-destination.md)
->* [关于AdWords再营销列表](https://support.google.com/adwords/answer/2472738)
->* [AdWords再营销的工作原理](https://support.google.com/adwords/answer/2454000)
+>* [關於AdWords再行銷清單](https://support.google.com/adwords/answer/2472738)
+>* [AdWords再行銷的運作方式](https://support.google.com/adwords/answer/2454000)
 

@@ -1,7 +1,7 @@
 ---
-description: 请继续此处，以了解有关如何在/event调用中请求DCS响应的信息。 本节包括响应示例和响应中常用数据元素的定义。
-seo-description: 请继续此处，以了解有关如何在/event调用中请求DCS响应的信息。 本节包括响应示例和响应中常用数据元素的定义。
-seo-title: 从 DCS 接收数据
+description: 請繼續這裡，瞭解如何在/event呼叫中要求DCS回應。 本節包含回應的範例，以及回應中常見資料元素的定義。
+seo-description: Continue here for information about how to request a DCS response in a /event call. This section includes a response example and definitions for common data elements in a response.
+seo-title: Receive Data From the DCS
 solution: Audience Manager
 title: 从 DCS 接收数据
 uuid: fbb77197-8530-48a8-b708-d785f7214494
@@ -9,20 +9,20 @@ feature: DCS
 exl-id: c6a87e5a-63cc-44d7-b6f0-ac8ee845fd00
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 5%
+source-wordcount: '385'
+ht-degree: 4%
 
 ---
 
 # 从 DCS 接收数据 {#receive-data-from-the-dcs}
 
-请继续此处，以了解有关如何在`/event`调用中请求[!DNL DCS]响应的信息。 本节包括响应示例和响应中常用数据元素的定义。
+請繼續參閱此處以瞭解如何請求 [!DNL DCS] 中的回應 `/event` 呼叫。 本節包含回應的範例，以及回應中常見資料元素的定義。
 
-在查看此内容之前，请参阅[将数据发送到DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)。
+檢閱此內容之前，請參閱 [將資料傳送至DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md).
 
-## DCS响应参数：{#dcs-response-parameters}评论
+## DCS回應引數：複查 {#dcs-response-parameters}
 
-如果要从[!DNL DCS]接收响应，则[!DNL DCS]请求必须包含`d_rtbd=json`。 如果忽略此参数，则[!DNL DCS]将不返回数据。 对[!DNL DCS]进行请求数据的基本调用使用以下语法：
+您的 [!DNL DCS] 要求必須包括 `d_rtbd=json` 如果您想從 [!DNL DCS]. 此 [!DNL DCS] 如果省略此引數，將不會傳回資料。 對「 」的基本呼叫 [!DNL DCS] 若要要求資料，請使用下列語法：
 
 ```js
 https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_cb=callback
@@ -30,11 +30,11 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 
 ## 示例响应 {#sample-response}
 
-回想一下，在[将数据发送到DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)文档中，虚构的公司[!DNL Acme, Inc.]发出了以下调用：
+從 [將資料傳送至DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md) 檔案，虛構的公司 [!DNL Acme, Inc.] 進行此呼叫：
 
 `https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_rtbd=json&d_cb=acme_callback`
 
-由于此调用包含所需的响应参数，因此[!DNL DCS]会发送回下面显示的[!DNL JSON]对象。 您的可能相似或更复杂。
+由於此呼叫包含必要的回應引數，因此 [!DNL DCS] 傳回 [!DNL JSON] 物件如下所示。 您的可能類似或更複雜。
 
 ```js
 {
@@ -47,24 +47,24 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 
 ## 响应参数 {#response-parameters}
 
-下表列出并定义了在[!DNL DCS]响应中可能看到的更常见参数。 这适用于返回数据的事件调用或其他[!DNL DCS] [!DNL API]查询。
+下表列出並定義您在回應中可能看到的較常見引數， [!DNL DCS]. 這適用於事件呼叫或其他 [!DNL DCS] [!DNL API] 傳回資料的查詢。
 
 | 参数 | 描述 |
 |--- |--- |
-| `c` | 设置为[URL目标](../../../features/destinations/create-url-destination.md)的URL。 |
-| `cn` | 在[Cookie目标](../../../features/destinations/create-cookie-destination.md)的Cookie名称字段中设置的名称或ID。 |
-| `cv` | 发送到由“cn”：“目标名称”参数定义的目标的值。 |
-| `dcs_region` | [服务器到服务器DCS调用](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。 |
-| `dests` | 此对象包含在UI中配置的所有URL目标的信息。 此对象的列表是基于用户操作动态的。 |
-| `dmn` | 这是在Cookie目标的Cookie域字段中指定的域。 请参阅[Cookie目标的可选设置](../../../features/destinations/cookie-destination-options.md)。  对于服务器到服务器的集成，我们建议使用`aam-api.com`之类的域。 |
-| `e` | 在URL目标中设置的安全URL。 |
-| `stuff` | 此对象包含所有Cookie目标的信息。 此对象的列表是基于用户操作动态的。 |
-| `tid` | 交易ID，为唯一的12个字符ID，用于调试。 对DCS的每个/event调用都会收到一个tid，您可以在支持查询中引用该tid，以获得更好、更快的响应。 |
-| `ttl` | Cookie的生存时间值（以天为单位）。 |
-| `u` 和 `uuid` | 由Audience Manager分配的唯一用户ID。 如果要进行[服务器到服务器DCS调用](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)，则需要此参数。 |
-| `y` | 目标类型、iFrame(`iframe`)或图像(`img`)。 |
+| `c` | 已設定為的URL [URL目的地](../../../features/destinations/create-url-destination.md). |
+| `cn` | 在的Cookie名稱欄位中設定的名稱或ID [Cookie目的地](../../../features/destinations/create-cookie-destination.md). |
+| `cv` | 傳送至由「cn」：「目的地名稱」引數定義之目的地的值。 |
+| `dcs_region` | 此 [伺服器對伺服器DCS呼叫](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md). |
+| `dests` | 此物件包含在UI中設定的所有URL目的地的資訊。 此物件的清單是根據使用者的動作而動態的。 |
+| `dmn` | 這是Cookie目的地的「Cookie網域」欄位中指定的網域。 另請參閱 [Cookie目的地的選用設定](../../../features/destinations/cookie-destination-options.md).  對於伺服器對伺服器的整合，我們建議使用網域，例如 `aam-api.com`. |
+| `e` | 已在URL目的地中設定的安全URL。 |
+| `stuff` | 此物件包含所有Cookie目的地的資訊。 此物件的清單是根據使用者的動作而動態的。 |
+| `tid` | 交易ID，此唯一12個字元的ID用於偵錯。 對DCS發出的每個/event呼叫都會收到一個tid，您可以在支援查詢中參考該代碼，以取得更好且更快速的回應。 |
+| `ttl` | Cookie存留時間值（以天為單位）。 |
+| `u` 和 `uuid` | 由Audience Manager指派的不重複使用者ID。 如果您正在進行 [伺服器對伺服器DCS呼叫](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md). |
+| `y` | 目的地型別， iFrame (`iframe`)或影像(`img`)。 |
 
 >[!MORELIKETHIS]
 >
->* [DCS支持的键值前缀和变量](../../../api/dcs-intro/dcs-api-reference/dcs-keys.md)
+>* [DCS支援的機碼值首碼和變數](../../../api/dcs-intro/dcs-api-reference/dcs-keys.md)
 

@@ -1,5 +1,5 @@
 ---
-description: Recommendations和用例，用于通过外部设备图为未知用户发现潜在客户、重新定位和个性化。 外部设备图定义为与Audience Manager分离的设备图。 这包括集成Adobe与第三方确定性或可能性设备图公司的集成。
+description: Recommendations和使用案例，用於透過外部裝置圖表對未知使用者進行勘察、重新定位和個人化。 外部裝置圖表定義為與Audience Manager不同的裝置圖表。 這包括Adobe與協力廠商確定性或機率性裝置圖表公司的整合。
 seo-description: Recommendations and use cases for prospecting, retargeting, and personalization for unknown users with an external device graph. An external device graph is defined as a device graph that is separate from Audience Manager. This includes integrations Adobe has with third-party deterministic or probabilistic device graph companies.
 seo-title: External Device Graph Use Cases
 solution: Audience Manager
@@ -16,15 +16,15 @@ ht-degree: 8%
 
 # 外部设备图用例 {#external-device-graph-use-cases}
 
-Recommendations和用例，用于通过外部设备图为未知用户发现潜在客户、重新定位和个性化。 外部设备图定义为与Audience Manager分离的设备图。 这包括集成Adobe与第三方确定性或可能性设备图公司的集成。
+Recommendations和使用案例，用於透過外部裝置圖表對未知使用者進行勘察、重新定位和個人化。 外部裝置圖表定義為與Audience Manager不同的裝置圖表。 這包括Adobe與協力廠商確定性或機率性裝置圖表公司的整合。
 
 ## 推荐 {#recommendations}
 
-请考虑以下促销活动的第三方设备图选项：
+請考慮適用於下列行銷活動的協力廠商裝置圖表選項：
 
-* 对其数字属性进行低级别的身份验证。 使用 [!UICONTROL Profile Link Device Graph option] 如果您有大量经过身份验证的用户。
-* 定位大型受众。 第三方设备图包含经过身份验证和未经身份验证的数据。
-* 在个人和家庭级别对已验证和/或未验证的访客进行分段。
+* 在其數位屬性間具有低等級的驗證。 使用 [!UICONTROL Profile Link Device Graph option] 如果您有大量已驗證身分的使用者。
+* 鎖定大型對象。 協力廠商裝置圖表包含已驗證和未驗證的資料。
+* 個人和家庭層級已驗證和/或未驗證的訪客區段。
 
 ![](assets/merge-rule-triangle1.png)
 <!-- 
@@ -112,23 +112,23 @@ Through this rule, the device graph has expanded the number of device profiles w
 
 ![audience-expansion](assets/audience-expansion.png) -->
 
-## 高级跨设备定位 {#advanced-graph-expansion}
+## 進階跨裝置目標定位 {#advanced-graph-expansion}
 
-此用例显示如何通过使用 **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]** 规则。
+此使用案例顯示如何使用，從外部裝置圖表擴展已驗證訪客使用裝置的受眾鎖定目標。 **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]** 規則。
 
-![最后设备图](assets/last-profile-link.png)
+![last-device-graph](assets/last-profile-link.png)
 
-在以下示例中，Acme Inc.公司希望将收入超过每年100.000美元的所有家庭作为目标，这些家庭拥有 [!DNL Acme Inc.] 订阅者 [!DNL Data Plan A]，使用 [!DNL iPhone 7] 设备。
+在以下範例中，Acme Inc.公司想要鎖定年收入超過$100.000的所有家庭，這些家庭具有 [!DNL Acme Inc.] 訂閱者於 [!DNL Data Plan A]，會使用 [!DNL iPhone 7] 裝置。
 
-John使用其iPhone 7在数据计划A上进行身份验证，以在Acme Inc.网站上进行身份验证。 同时，约翰的 [!DNL Profile Link Device Graph] 群集包含他经常使用的其他两个设备：他的笔记本电脑([!DNL Device 1])和他的二级智能手机， [!DNL Device 2] (a) [!DNL Samsung S7] on [!DNL Data Plan B])。
+John使用他在Data Plan A上的iPhone 7在Acme Inc.網站上進行驗證。 同時，John的 [!DNL Profile Link Device Graph] cluster包含兩個他經常使用的額外裝置：他的筆記型電腦([!DNL Device 1])，以及他的第二部智慧型手機， [!DNL Device 2] (a [!DNL Samsung S7] 於 [!DNL Data Plan B])。
 
-通过使用 **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]**, [!DNL Acme Inc.] 能够从John的设备图群集向所有三台设备提供个性化消息，即使其中只有一台设备最初符合区段的条件。
+藉由使用 **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]**， [!DNL Acme Inc.] 能夠從John的裝置圖表叢集將個人化訊息傳遞至所有三個裝置，即使其中只有一個最初符合區段資格。
 
-![高级图形扩展](assets/advanced-device-graph-expansion.png)
+![advanced-graph-expansion](assets/advanced-device-graph-expansion.png)
 
 >[!MORELIKETHIS]
 >
 >* [配置文件关联设备图用例](profile-link-use-case.md)
 >* [配置文件合并规则的一般用例](merge-rule-targeting-options.md)
->* [配置文件合并规则常见问题解答](../../faq/faq-profile-merge.md)
+>* [設定檔合併規則常見問題集](../../faq/faq-profile-merge.md)
 

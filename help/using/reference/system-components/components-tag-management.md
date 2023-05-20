@@ -1,5 +1,5 @@
 ---
-description: Audience Manager标签管理组件包括客户端门户、Adobe Tag Manager(弃用而使用Adobe Experience Platform Launch)、DIL、Akamai和控制数据库。
+description: Audience Manager標籤管理元件包括使用者端入口網站、Adobe Tag Manager (已取代並改用Adobe Experience Platform Launch)、DIL、Akamai和控制資料庫。
 seo-description: Audience Manager tag management components include the client portal, Adobe Tag Manager (deprecated in favor of Adobe Experience Platform Launch), DIL, Akamai, and the control database.
 seo-title: Tag Management Components
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 # 标记管理组件{#tag-management-components}
 
-Audience Manager标签管理组件包括客户端门户、Adobe Tag Manager(弃用以支持Adobe Experience Platform标签)、DIL、Akamai和控制数据库。
+Audience Manager標籤管理元件包括使用者端入口網站、Adobe Tag Manager (已棄用，改為Adobe Experience Platform標籤)、DIL、Akamai和控制資料庫。
 
 <!-- 
 
@@ -24,34 +24,34 @@ c_comptag.xml
 
  -->
 
-Audience Manager包含以下组件：
+Audience Manager包含下列元件：
 
-* [客户端门户](../../reference/system-components/components-tag-management.md#client-portal)
+* [使用者端入口網站](../../reference/system-components/components-tag-management.md#client-portal)
 * [DIL/TIM容器](../../reference/system-components/components-tag-management.md#dil-tim)
-* [数据信息库(DIL)](../../reference/system-components/components-tag-management.md#dil)
+* [Data Information Library (DIL)](../../reference/system-components/components-tag-management.md#dil)
 * [Akamai](../../reference/system-components/components-tag-management.md#akamai)
-* [控制数据库](../../reference/system-components/components-tag-management.md#control-database)
+* [控制項資料庫](../../reference/system-components/components-tag-management.md#control-database)
 
-## 客户端门户 {#client-portal}
+## 使用者端入口網站 {#client-portal}
 
-客户端门户是用于标签和数据管理的主要用户界面(UI)。 客户可使用门户处理标记、构建特征和区段、设置目标，以及使用报表监控营销活动效果。
+使用者端入口網站是標籤和資料管理的主要使用者介面(UI)。 客戶可使用此入口網站處理標籤、建立特徵和區段、設定目的地，以及使用報告監控行銷活動績效。
 
 ## DIL/TIM容器 {#dil-tim}
 
-的 [!UICONTROL DIL] 容器可部署 [!DNL Audience Manager] 数据收集代码到您的网站。 [!UICONTROL TIM] 是已弃用的标签插入管理器。 不再使用 [!DNL Audience Manager]. 您而是使用 [!DNL Audience Manager] 扩展 [Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html) 配置并生成您放置在清单页面上的容器代码。
+此 [!UICONTROL DIL] 容器協助部署 [!DNL Audience Manager] 資料收集程式碼至您的網站。 [!UICONTROL TIM] 是已過時的標籤插入管理員。 不再由使用 [!DNL Audience Manager]. 您改為使用 [!DNL Audience Manager] 中的擴充功能 [Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html) 以設定並產生您放置在詳細目錄頁面上的貨櫃代碼。
 
 ## 数据集成库 (DIL) {#dil}
 
-的 [数据信息库](../../dil/dil-overview.md) (DIL)是从您的网站收集数据的自包含API模块。 [!UICONTROL DIL] 有助于消除为数据收集、集成、读取Cookie值和恢复页面数据编写特殊代码的需求。 [!UICONTROL DIL] 会自动执行这些操作。 此外， [!UICONTROL DIL] 紧凑。 它是一个自包含的代码库，有助于减少收集信息所需的代码量。 最后， [!UICONTROL DIL] 帮助您集成 [!DNL Audience Manager] 的其他产品 [!DNL Adobe] Experience Cloud。
+此 [資料資訊庫](../../dil/dil-overview.md) (DIL)是獨立的API模組，可從您的網站收集資料。 [!UICONTROL DIL] 協助您免除撰寫特殊程式碼以進行資料收集、整合、讀取Cookie值及復原頁面資料的需求。 [!UICONTROL DIL] 會自動執行這些動作。 此外， [!UICONTROL DIL] 精簡。 這是獨立的程式碼程式庫，有助於減少收集資訊所需的程式碼數量。 最後， [!UICONTROL DIL] 協助您整合 [!DNL Audience Manager] 與其他產品一起使用 [!DNL Adobe] Experience Cloud。
 
 ## Akamai {#akamai}
 
-[!DNL Audience Manager] 使用 [Akamai](https://www.akamai.com/us/en/about/) 从我们自己的标签管理平台(称为 [!UICONTROL TIM (Tag Insertion Manager)]. 但是，代码部署 [!UICONTROL TIM] 已逐步淘汰 [!DNL Adobe Experience Platform Tags].
+[!DNL Audience Manager] 使用 [Akamai](https://www.akamai.com/us/en/about/) 從我們自己的標籤管理平台(稱為 [!UICONTROL TIM (Tag Insertion Manager)]. 不過，使用部署程式碼 [!UICONTROL TIM] 已逐步淘汰，改為 [!DNL Adobe Experience Platform Tags].
 
-## 控制数据库 {#control-database}
+## 控制項資料庫 {#control-database}
 
-控制数据库：
+控制項資料庫：
 
-* 处理来自门户的客户端输入（例如，创建特征和目标）。
-* 将数据传输到Akamai，其中包括用于构建容器模板的数据以及目标发布iFrame。
-* 返回UI报表系统的数据。
+* 處理來自入口網站的使用者端輸入（例如，建立特徵和目的地）。
+* 將資料傳輸至Akamai，其中包括用來建置容器範本和目的地發佈iFrame的資料。
+* 傳回UI報表系統的資料。

@@ -1,28 +1,28 @@
 ---
-description: 一些报表使用的抽样方法、抽样错误率以及根据抽样数据返回信息的报表列表的摘要。
-seo-description: 一些报表使用的抽样方法、抽样错误率以及根据抽样数据返回信息的报表列表的摘要。
-seo-title: 选定 Audience Manager 报表中的数据取样率和错误率
+description: 用於某些報表的取樣方法摘要、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
+seo-description: A summary of the sampling methodology used for some reports, sampling error rates, and a list of reports that return information based on sampled data.
+seo-title: Data Sampling and Error Rates in Selected Audience Manager Reports
 solution: Audience Manager
 title: 选定 Audience Manager 报表中的数据取样率和错误率
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
-feature: 报表参考
+feature: Reporting Reference
 exl-id: 0b7f9423-0859-4fa8-926b-e4858eed2294
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 7%
+source-wordcount: '432'
+ht-degree: 6%
 
 ---
 
 # 选定 Audience Manager 报表中的数据取样率和错误率{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
 
-一些报表使用的抽样方法、抽样错误率以及根据抽样数据返回信息的报表列表的摘要。
+用於某些報表的取樣方法摘要、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
 
-## 数据采样率{#data-sampling-ratio}
+## 数据采样比率 {#data-sampling-ratio}
 
-某些[!DNL Audience Manager]报表会根据可用数据总量的抽样集显示结果。 采样数据比为1:54。 对于使用采样数据的报表，这意味着您的结果基于每54条记录集中的1条记录。
+某些 [!DNL Audience Manager] 报表会根据可用数据总量的样本集来显示结果。 采样的数据比率为1:54。 对于使用抽样数据的报表，这意味着您的结果基于每组54记录中的1个记录。
 
-这些报表使用统计的采样数据，因为它们需要大量计算能力才能生成结果。 采样有助于在减少的计算需求、保持系统性能和提供准确结果之间取得平衡。
+这些报表使用的是统计样本数据，因为它们需要大量的计算能力才能生成结果。 采样有助于在减少计算请求、维护系统性能和提供准确结果之间达到平衡。
 
 <!--
 
@@ -39,27 +39,27 @@ Overlap reports ([trait-to-trait](/help/using/reporting/dynamic-reports/trait-tr
 
 -->
 
-## 错误率{#error-rates}
+## 错误率 {#error-rates}
 
-在生成重叠数据的报表中可能会出错。 错误被定义为以下记录的百分比：
+错误可能发生在生成重叠数据的报表中。 錯誤定義為記錄中符合以下條件的百分比：
 
-* 不应包含在报表中，但仍应添加。
-* 本应包含在报告中，但被排除在外。
+* 不應納入報表中，但無論如何仍會新增。
+* 應該包含在報表中，但被省略。
 
-请务必注意，我们的测试和模型显示错误率&#x200B;*以与数据集中记录数成反比的比例减少*。 具有大量记录的数据集产生的错误少于具有少量记录的数据集。 让我们从更定量的角度来审视这一论断。 如下表所示，对于一组记录，95%的报表结果将低于特定错误率。
+請注意，我們的測試和模型會顯示錯誤率，這點很重要 *減少* 與資料集中的記錄數成反比。 含有大量記錄的資料集所產生的錯誤會比含有少量記錄的資料集少。 讓我們以更定量的方式審視此判斷提示。 如下表所示，对于一组记录数而言，95% 的报表结果将低于特定的错误率。
 
 | 记录数 | 错误率 |
 |--- |--- |
-| 500 - 1,000 | 95%的错误率低于42%。 |
-| 1,000 - 1,500 | 95%的错误率低于34%。 |
-| 1~5万 | 95%的错误率低于14%。 |
-| 50,000 | 95%的错误率低于6%。 |
-| 十万 | 95%的错误率低于4%。 |
-| 500,000（或更多） | 95%的错误率低于2%。 |
+| 500 - 1,000 | 95% 的错误率低于42%。 |
+| 1,000 - 1,500 | 95% 的错误率低于34%。 |
+| 10,000 - 50,000 | 95%的錯誤率低於14%。 |
+| 50,000 | 95%的錯誤率低於6%。 |
+| 100,000 | 95% 的错误率低于4%。 |
+| 500000（或更多） | 95% 的错误率低于2%。 |
 
-## 使用Minhash采样方法 {#minhash}
+## 使用 Minhash 采样方法 {#minhash}
 
-基于[Minhash](https://en.wikipedia.org/wiki/MinHash)采样方法，Audience Manager使用一种新方法在一个置换哈希数据草图上计算特征和区段估计。 该方法比标准估计器对Jaccard相似度产生的方差要小。 有关使用此方法的报表，请参阅以下部分。
+[根据 Minhash ](https://en.wikipedia.org/wiki/MinHash) 取样方法，Audience Manager 使用 novel 方法计算特征，并在一个排列哈希数据草图上区段 estimators。此新方法产生的变量低于 Jaccard 相似性的标准估算器。 请参阅下面的部分以了解使用此方法的报表。
 
 <!--
 
@@ -69,9 +69,9 @@ Some Audience Manager reports use the minhash sampling methodology to compute tr
 
 -->
 
-## 使用采样数据{#reports-using-sampled-data}的报表
+## 使用取樣資料的報表 {#reports-using-sampled-data}
 
-[!DNL Audience Manager]使用统计采样数据和Minhash采样方法的报告包括：
+此 [!DNL Audience Manager] 使用統計抽樣資料和Minhash抽樣方法的報表包括：
 
 <!--
 
@@ -84,8 +84,8 @@ Reports that use Minhash sampling methodology:
 
 -->
 
-| 统计抽样 | Minhash采样方法 |
+| 統計抽樣 | Minhash取樣方法 |
 |--- |--- |
-| [可寻](../features/addressable-audiences.md) 址受众数据（客户级别和区段级别数据）。 | [重叠报表](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) （特征到特征、区段到特征和区段到区段） |
-| [[!UICONTROL Profile Merge Rule]的设备总数](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics)量度。 | [特征推荐](/help/using/features/segments/trait-recommendations.md) |
-| [数据](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md) 浏览器在选项卡和任 [!UICONTROL Search] 何  [!UICONTROL Saved Searches] | [Audience MarketplaceRecommendations](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |
+| [可寻址受众 ](../features/addressable-audiences.md) 数据（客户和区段级别的数据）。 | [重叠报表 ](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) （特征与特征、区段到特征和区段到区段） |
+| [量度 [!UICONTROL Profile Merge Rule] 的设备 ](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) 总数。 | [特征推荐](/help/using/features/segments/trait-recommendations.md) |
+| [数据浏览器 ](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md) 使用选项卡中的 [!UICONTROL Search] 样本数据和任何 [!UICONTROL Saved Searches] | [Audience Marketplace Recommendations](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |

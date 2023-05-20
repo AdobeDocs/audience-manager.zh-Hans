@@ -1,19 +1,19 @@
 ---
 description: 为何目标详细信息页面上不显示 Audience Lab 映射的区段？
-seo-description: 为何目标详细信息页面上不显示 Audience Lab 映射的区段？
-seo-title: 为何目标详细信息页面上不显示 Audience Lab 映射的区段？
+seo-description: Why Audience Lab mapped segments will not show up on the destination details page.
+seo-title: Why Audience Lab mapped segments will not show up on the destination details page.
 solution: Audience Manager
 title: 目标详细信息页面上是否应显示 Audience Lab 映射的区段？
-feature: 支持
+feature: Support
 exl-id: 7f35b824-7acd-415f-92a9-62c2a3d08526
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '141'
 ht-degree: 100%
 
 ---
 
-# 目标详细信息页面上是否应显示 Audience Lab 映射的区段？{#audience-lab-segments-destination-page}
+# 目标详细信息页面上是否应显示 Audience Lab 映射的区段？ {#audience-lab-segments-destination-page}
 
 ## 问题
 

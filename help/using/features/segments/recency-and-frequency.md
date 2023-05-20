@@ -1,61 +1,61 @@
 ---
-description: 在区段生成器中，回访间隔和频度允许您根据在设置的每日间隔内发生或重复的操作，对访客进行分段。
-seo-description: 在区段生成器中，回访间隔和频度允许您根据在设置的每日间隔内发生或重复的操作，对访客进行分段。
-seo-title: 回访间隔和频度
+description: 在区段生成器中，最近交易和频度允许您根据每日设置的时间间隔来区段访客。
+seo-description: In Segment Builder, recency and frequency let you segment visitors based on actions that occur or repeat over a set daily interval.
+seo-title: Recency and Frequency
 solution: Audience Manager
 title: 回访间隔和频度
 uuid: faadd18a-bf27-4b73-995e-9809f52f5350
-feature: 区段
+feature: Segments
 exl-id: c00563f0-d270-4d4d-abeb-4b4b81aa68b8
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 3%
+source-wordcount: '701'
+ht-degree: 2%
 
 ---
 
 # 回访间隔和频度 {#recency-and-frequency}
 
-在[!UICONTROL Segment Builder]中，回访间隔和频度允许您根据在设置的每日间隔内发生或重复的操作，对访客进行分段。
+在中 [!UICONTROL Segment Builder] ，最近交易和频度可让您根据每日设置的时间间隔来区段访客。
 
-Audience Manager按如下方式定义[!DNL recency]和[!DNL frequency]:
+Audience Manager 定义 [!DNL recency] ， [!DNL frequency] 如下所示：
 
-* **[!UICONTROL Recency]:** 用户最近查看或符合一个（或多个）条件的时间 [!UICONTROL traits]。
-* **[!UICONTROL Frequency]:** 用户查看或符合一个（或多个）条件的速率 [!UICONTROL traits]。
+* **[!UICONTROL Recency]：** 最近用户查看或限定一个（或多个） [!UICONTROL traits] 的方式。
+* **[!UICONTROL Frequency]：** 一种（或多） [!UICONTROL traits] 用户查看或限定的速度。
 
-[!UICONTROL Recency] 和设 [!UICONTROL Frequency] 置可帮助您根据访客对网站、区域或特定创作元素的真实（或感知）兴趣级别对访客进行分段。例如，符合最近/频度要求较高区段资格的用户对网站或产品的兴趣，可能高于访问频率较低或访问频率较低的用户。
+[!UICONTROL Recency] 和 [!UICONTROL Frequency] 设置可帮助您根据网站、区域或特定创意中的真实（或感知）级别的兴趣来区段访客。 例如，符合最近交易/频度要求的区段的用户可能比访问少或少的用户更感兴趣的网站或产品。
 
-## [!UICONTROL Recency and Frequency]设置的位置 {#location}
+## [!UICONTROL Recency and Frequency]设置位置 {#location}
 
-在[!UICONTROL Segment Builder]中，[!UICONTROL Recency]和[!UICONTROL Frequency]设置位于[!UICONTROL Traits]面板的[!UICONTROL Basic View]部分。 单击时钟图标以显示这些控件。
+在中 [!UICONTROL Segment Builder] ， [!UICONTROL Frequency] [!UICONTROL Recency] 设置位于面板的区域 [!UICONTROL Traits] 中 [!UICONTROL Basic View] 。按一下時鐘圖示以公開這些控制項。
 
 ![](assets/recency_frequency.png)
 
-## 限制和规则{#limitations-rules}
+## 限制和規則 {#limitations-rules}
 
-当您想要将回访间隔和频度应用于区段中的特征时，请查看并了解这些限制和规则。
+當您想要將造訪間隔和頻率套用至區段中的特徵時，請檢閱並瞭解這些限制和規則。
 
 ### [!UICONTROL Recency] {#recency}
 
 <table id="table_026064124C694D75B7A960457D50170B"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 限制或规则 </th> 
+   <th colname="col1" class="entry"> 限制或規則 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>最小值</b> </p> </td> 
-   <td colname="col2"> <p>回访间隔必须大于0。 </p> </td> 
+   <td colname="col2"> <p>造訪間隔必須大於0。 </p> </td> 
   </tr>
   <tr> 
-   <td colname="col1"> <p> <b>特征类型</b> </p> </td> 
-   <td colname="col2"> <p>您只能将回访间隔控件应用于基于规则的特征和文件夹特征。 </p> </td> 
+   <td colname="col1"> <p> <b>特徵型別</b> </p> </td> 
+   <td colname="col2"> <p>您只能將造訪間隔控制項套用至規則型和資料夾特徵。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>第三方特征</b> </p> </td> 
-   <td colname="col2"> <p>您无法对包含第三方特征的单个第三方特征或特征组设置回访间隔规则。 回访间隔和频度仅适用于您自己的特征。 </p> </td> 
+   <td colname="col1"> <p> <b>第三方特徵</b> </p> </td> 
+   <td colname="col2"> <p>您無法針對個別第三方特徵或包含第三方特徵的特徵群組設定造訪間隔規則。 造訪間隔和頻率僅適用於您自己的特徵。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -72,58 +72,58 @@ Audience Manager按如下方式定义[!DNL recency]和[!DNL frequency]:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>第三方特征</b> </p> </td> 
-   <td colname="col2"> <p>您无法对包含第三方特征的单个第三方特征或特征组设置频率规则。 回访间隔和频度仅适用于您自己的特征。 </p> </td> 
+   <td colname="col2"> <p>您无法在包含第三方特征的单个第三方特征或特征组上设置频度规则。 回访间隔和频度仅适用于您自己的特征。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>特征类型</b> </p> </td> 
-   <td colname="col2"> <p>您只能将频率控件应用于基于规则的特征和文件夹特征。 </p> </td> 
+   <td colname="col2"> <p>您只能将频度控件应用于基于规则和文件夹特征。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>回访间隔要求</b> </p> </td> 
-   <td colname="col2"> <p>您可以配置频率要求<i>，而不配置新近度要求。 </i>只需设置一个频度值，并将“回访间隔”字段留空即可。 </p> </td> 
+   <td colname="col2"> <p>您可以在不配置最近交易要求的情况下 </i> 配置频度要求 <i> 。只需设置频度值，并将最近交易字段保留为空。 </i></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>配置文件合并规则</b> </p> </td> 
-   <td colname="col2"> <p>请参阅<a href="../../faq/faq-profile-merge.md#trait-freq-device-rules">特征频度、外部设备图和配置文件合并规则</a>。 </p> </td> 
+   <td colname="col2"> <p>请参阅 <a href="../../faq/faq-profile-merge.md#trait-freq-device-rules"> 特征频率、外部设备图和配置文件合并规则 </a> 。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 回访间隔示例{#recency-examples}
+## 造訪間隔範例 {#recency-examples}
 
-以下是两个新近度工作方式的示例，具体取决于您在UI中的选择：
+以下是「造訪間隔」運作方式的兩個範例，視您在UI中的選取專案而定：
 
-### 使用小于或等于运算符(&lt;=)
+### 使用小於或等於運運算元(&lt;=)
 
-![小于或等于](assets/less-than-equal-to.png)
+![小於等於](assets/less-than-equal-to.png)
 
-在此示例中，您选择&lt;=运算符，如屏幕截图所示。 如果用户在过去五天内至少三次符合三个[!UICONTROL traits]中任一项的资格，则此选项会使他们符合[!UICONTROL segment]的条件。 以下时间轴显示了在创建[!UICONTROL segment]时（即10月1日和10天后）的[!UICONTROL segment]资格。
+在此範例中，您選取&lt;=運運算元，如熒幕擷圖所示。 這會將您的使用者授予 [!UICONTROL segment] 如果他們符合其中任何一項 [!UICONTROL traits] 過去五天內至少三次。 以下時間軸顯示 [!UICONTROL segment] 當時的資格 [!UICONTROL segment] 10月1日及10天後建立。
 
-![最近五天](assets/last-5-days.png)
+![最近–5天](assets/last-5-days.png)
 
-### 使用大于或等于运算符(=>)
+### 使用大於或等於運運算元(=>)
 
-![大于等于](assets/greater-than-equal-to.png)
+![大於等於](assets/greater-than-equal-to.png)
 
-在此示例中，您选择=>运算符，如屏幕截图所示。 如果用户符合[!UICONTROL segment]的条件，则从Audience Manager平台上的首次资格鉴定到五天前的截止时间，每次都至少有三次符合[!UICONTROL traits]中任何一项的资格。 以下时间轴显示了在创建[!UICONTROL segment]时（即10月1日和10天后）的[!UICONTROL segment]资格。
+在此範例中，您選取=>運運算元，如熒幕擷圖所示。 這會將您的使用者授予 [!UICONTROL segment] 如果他們符合其中任何一項 [!UICONTROL traits] 從Audience Manager平台上的首次資格取得到五天前的截止時間，至少要間隔三次。 以下時間軸顯示 [!UICONTROL segment] 當時的資格 [!UICONTROL segment] 10月1日及10天後建立。
 
-![资格提前](assets/earlier-qualification.png)
+![早期限定](assets/earlier-qualification.png)
 
 
-## 频度上限示例{#frequency-capping}
+## 频率上限示例 {#frequency-capping}
 
-频度上限表达式包括实现次数低于所需值的所有用户。 [!UICONTROL trait]以下是一些正确和错误的示例：
+Frequency-上限表达式包含其 realizations 数目 [!UICONTROL trait] 低于所需值的所有用户。 以下是一些错误的正确示例：
 
-* 错误 — 表达式`frequency([1000T]) <= 5`包含ID为“1000”的所有已实现[!UICONTROL trait]的用户，但也包含尚未实现[!UICONTROL trait]的用户。 因此，由于性能原因，Audience Manager不会验证此表达式，因为它会使太多用户符合[!UICONTROL segment]的条件。
+* 错误-表达式 `frequency([1000T]) <= 5` 包括已实现 [!UICONTROL trait] ID 为 &quot;1000&quot; 的所有用户，最多可包含5次，但还包括尚未实现的 [!UICONTROL trait] 用户。 因此，Audience Manager不會基於效能原因驗證此運算式，因為它將讓太多使用者符合 [!UICONTROL segment].
 
-* 右侧 — 如果要包含ID为“1000”的[!UICONTROL trait]的所有已实现用户，最多五次，请向表达式中添加其他条件，以确保用户至少符合[!UICONTROL trait]的条件： `frequency([1000T]) >= 1  AND  frequency([1000T]) <= 5`
+* 如果您想要包括已 [!UICONTROL trait] 使用 ID &quot;1000&quot; 的所有用户，最多为5次，请在表达式中添加其他条件，以确保用户至少符合 [!UICONTROL trait] 一次：  `frequency([1000T]) >= 1  AND  frequency([1000T]) <= 5`
 
-* 右 — 当需要回访间隔/频度要求小于特定次数或天数时，请使用`AND`运算符将该[!UICONTROL trait]连接到另一个。 使用第一个项目符号点中的示例，此表达式在与另一个[!UICONTROL trait]连接时将生效，如下所示：`frequency([1000T]) <= 5 AND isSiteVisitorTrait`。
+* 正確 — 當您需要時近/頻率要求小於特定次數或天數時，請加入該要求 [!UICONTROL trait] 至另一個具有 `AND` 運運算元。 使用第一個專案符號中的範例，此運算式在與其他專案符號連結時就會變成有效 [!UICONTROL trait] 如下所示： `frequency([1000T]) <= 5 AND isSiteVisitorTrait`.
 
-* 右侧 — 对于广告频度上限用例，您可以创建类似于以下内容的[!UICONTROL segment]规则：`(frequency([1000T] <= 2D) >= 5)`。 此表达式包含在过去2天内至少五次实现ID为“1000”的[!UICONTROL trait]的所有用户。 通过将此[!UICONTROL segment]发送到广告服务器，并在广告服务器的[!UICONTROL segment]中设置`NOT`，来设置频率上限。 此方法在[!DNL Audience Manager]中实现了更高的性能，同时仍用于频率上限的相同用途。
+* 正確 — 針對廣告頻率限定使用案例，您可以建立 [!UICONTROL segment] 類似以下的規則： `(frequency([1000T] <= 2D) >= 5)`. 此運算式包含所有已實現 [!UICONTROL trait] ID為「1000」且在過去2天內至少五次。 透過傳送此設定頻率上限 [!UICONTROL segment] 至廣告伺服器，並附上 `NOT` 設定於 [!UICONTROL segment] 在廣告伺服器中。 此方法可提升以下專案的效能： [!DNL Audience Manager] 同時仍提供相同的頻率上限用途。
 
 >[!MORELIKETHIS]
 >
->* [区段生成器控件：特征部分](../../features/segments/segment-builder.md#segment-builder-controls-traits)
-* [区段表达式编辑器中使用的代码语法](../../features/segments/segment-code-syntax.md)
+>* [區段產生器控制項：特徵區段](../../features/segments/segment-builder.md#segment-builder-controls-traits)
+>* [区段表达式编辑器中使用的代码语法](../../features/segments/segment-code-syntax.md)
 

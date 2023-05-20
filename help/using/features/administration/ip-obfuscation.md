@@ -1,61 +1,61 @@
 ---
 description: 由于全球隐私法规，贵公司可能希望在许多国家/地区模糊处理 IP 地址。Audience Manager 允许您在全球范围或者根据具体国家或地区来模糊处理访客 IP 地址。
-seo-description: 由于全球隐私法规，贵公司可能希望在许多国家/地区模糊处理 IP 地址。Audience Manager 允许您在全球范围或者根据具体国家或地区来模糊处理访客 IP 地址。
+seo-description: Your company may desire to obfuscate IP address in many countries due to global privacy regulations. Audience Manager allows you to obfuscate visitor IP addresses on a global or country-by-country basis.
 solution: Audience Manager
 title: IP 地址模糊处理
-feature: 数据管理和隐私
+feature: Data Governance & Privacy
 exl-id: 8c976d1e-f4ba-4892-bd68-d4e74bdb4d9b
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 22%
+source-wordcount: '439'
+ht-degree: 16%
 
 ---
 
 # IP 地址模糊处理 {#ip-obfuscation}
 
-使用此功能可模糊处理在Audience Manager中收集的IP地址。
+使用此功能來模糊化Audience Manager中收集的IP位址。
 
-## 概述和方法{#overview-and-methodology}
+## 概述和方法 {#overview-and-methodology}
 
 由于全球隐私法规，贵公司可能希望在许多国家/地区模糊处理 IP 地址。Audience Manager 允许您在全球范围或者根据具体国家或地区来模糊处理访客 IP 地址。
 
-### IP模糊处理方法
+### IP模糊化方法
 
-遵循“通过设计保护隐私”的原则，Adobe Audience Manager允许客户从UI中启用IP模糊处理，范围可以是全球所有地区，还是特定国家/地区。 启用此设置后，当将IP地址摄取到Audience Manager中时，将立即丢弃IP地址的最后八位字节（最后一部分）。 Audience Manager在处理之前（包括在选择对IP地址进行任何地理查找或记录之前），会先丢弃IP地址的这一部分。 例如：
+Adobe Audience Manager遵循「設計隱私權」原則，允許客戶透過UI啟用IP模糊化功能（針對全球各地理區域或特定國家/地區皆可）。 啟用此設定時，將IP位址擷取到Audience Manager中時，會立即捨棄該IP位址的最後八位元（最後一部分）。 Audience Manager會在處理前（包括任何選擇性地理查閱或記錄IP位址之前）捨棄此IP位址部分。 例如：
 
-* 在模糊处理之前：`255.255.255.255`
-* 模糊处理后：`255.255.255.0`
+* 模糊化之前： `255.255.255.255`
+* 模糊化之後： `255.255.255.0`
 
-另请参阅[数据隐私部分](/help/using/overview/data-security-and-privacy/data-privacy.md)中的收集IP地址和IP地址模糊处理。
+另請參閱收集我們的IP位址和IP位址模糊化 [資料隱私權區段](/help/using/overview/data-security-and-privacy/data-privacy.md).
 
-## IP地址模糊处理要求{#ip-obfuscation-requirements}
+## IP位址模糊化需求 {#ip-obfuscation-requirements}
 
-IP地址模糊处理仅适用于Audience Manager管理员帐户。 请参阅[创建用户](/help/using/features/administration/administration-overview.md#create-users)以了解如何为用户分配管理员权限。
+IP位址模糊化僅適用於Audience Manager管理員帳戶。 另請參閱 [建立使用者](/help/using/features/administration/administration-overview.md#create-users) 以瞭解如何為使用者指派管理員許可權。
 
 >[!NOTE]
 >
-> 由于由Audience Manager处理的数据量很大，因此IP模糊处理更改可能需要长达4小时才能生效，从您更新设置之时起便开始生效。
+> 由於Audience Manager處理了大量的資料，IP模糊化變更最多可能從您更新設定起需要4小時才會生效。
 
-## 配置IP地址模糊处理{#configure-ip-obfuscation}
+## 設定IP位址模糊化 {#configure-ip-obfuscation}
 
-请按照以下步骤配置IP地址模糊处理。
+請依照下列步驟設定IP位址模糊化。
 
-1. 使用管理员帐户登录Audience Manager，然后转到&#x200B;**管理>隐私**。
-2. 选择要使用的IP模糊处理类型。
-   1. **模糊处理所有IP地址：** 选择此选项可让Audience Manager模糊处理所有访客IP地址的最后八位字节，而不考虑它们源自的区域。
-   2. **模糊处理特定国家/地区的IP地址：** 选择此选项可让Audience Manager模糊处理特定国家/地区的访客IP地址的最后八位字节。使用&#x200B;**国家/地区列表**&#x200B;或相应的&#x200B;**搜索**&#x200B;字段查找国家/地区以启用IP模糊处理，然后单击+图标以将它们添加到&#x200B;**选定进行模糊处理**&#x200B;列表。 将所有必需的国家/地区添加到&#x200B;**选定进行模糊处理**&#x200B;列表后，单击&#x200B;**保存**。
+1. 使用管理員帳戶登入Audience Manager，並前往 **管理>隱私權**.
+2. 選擇您要使用的IP模糊化型別。
+   1. **模糊化所有IP位址：** 選取此選項可讓Audience Manager模糊化所有訪客IP位址的最後一個八位元，無論其來源地區為何。
+   2. **模糊化特定國家的IP位址：** 選取此選項，可讓Audience Manager模糊化特定國家/地區的訪客IP位址的最後八位元。 使用 **國家/地區清單** 或對應的 **搜尋** 欄位以尋找要啟用IP模糊化的國家/地區，然後按一下+圖示以將其新增至 **已選取進行模糊化** 清單。 一旦您將所有必要國家/地區新增至 **已選取進行模糊化** 清單，按一下 **儲存**.
 
 ![](assets/ip-obfuscation.png)
 
-## 禁用IP地址模糊处理{#disable-ip-obfuscation}
+## 停用IP位址模糊化 {#disable-ip-obfuscation}
 
-要全局禁用IP地址模糊处理，请转到&#x200B;**管理>隐私**，选择&#x200B;**不对IP地址进行模糊处理**，然后单击&#x200B;**保存**。
+若要全域停用IP位址模糊化，請前往 **管理>隱私權**，選取 **不要模糊化IP位址**，然後按一下 **儲存**.
 
-要禁用特定国家/地区的IP地址模糊处理，请在&#x200B;**为模糊处理选择的**&#x200B;列表中找到相应的国家/地区，然后单击相应的&#x200B;**X**&#x200B;图标。 完成后，单击&#x200B;**Save**。
+若要針對特定國家/地區停用IP位址模糊化功能，請在 **已選取進行模糊化** 清單，然後按一下它們對應的 **X** 圖示。 按一下 **儲存** 完成時。
 
 ## 相关概念 {#related-concepts}
 
 * [数据隐私](/help/using/overview/data-security-and-privacy/data-privacy.md)
-* IP地址模糊处理视频演示
+* IP位址模糊化影片示範
 >[!VIDEO](https://video.tv.adobe.com/v/27218/)

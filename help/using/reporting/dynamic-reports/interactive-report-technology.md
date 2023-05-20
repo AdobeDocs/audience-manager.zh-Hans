@@ -1,22 +1,22 @@
 ---
-description: 描述为交互式报表和数据更新计划提供支持的基础软件。
-seo-description: 描述为交互式报表和数据更新计划提供支持的基础软件。
-seo-title: 报表技术
+description: 說明支援互動式報表和資料更新排程的基礎軟體。
+seo-description: Describes the underlying software that powers the interactive reports and the data update schedule.
+seo-title: Report Technology
 solution: Audience Manager
 title: 报表技术
 uuid: 5f3d815b-e1e6-42f2-b848-ac035a5aa77d
-feature: 重叠报表
+feature: Overlap Reports
 exl-id: 59d875d6-a630-4795-93a7-1d432860f0a1
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '262'
 ht-degree: 3%
 
 ---
 
 # 报表技术{#report-technology}
 
-描述为交互式报表和数据更新计划提供支持的基础软件。
+說明支援互動式報表和資料更新排程的基礎軟體。
 
 <!-- 
 
@@ -24,22 +24,22 @@ c_report_technology.xml
 
  -->
 
-## 交互式报表使用表格技术
+## 互動式報表使用Tableau技術
 
-[!DNL Audience Manager] 使用 [](https://www.tableausoftware.com/) Table软件在交互式报表中显示数据。对于[!DNL Tableau], [!UICONTROL Delivery and Overlap]报表使用视觉提示和符号来帮助您：
+[!DNL Audience Manager] 使用 [Tableau](https://www.tableausoftware.com/) 軟體，可在互動式報表中顯示資料。 替換為 [!DNL Tableau]，則 [!UICONTROL Delivery and Overlap] 報表會使用視覺提示和符號，協助您：
 
-* 查找高和低性能特征。
-* 发现具有低独特访客和高独特访客重叠的特征和区段。
-* 使用重叠数据构建目标区段。
-* 通过识别重叠程度较低的相关特征来扩大访问范围。
+* 尋找高效能和低效能的特徵。
+* 找出獨特訪客重疊率低和高的特徵和區段。
+* 使用重疊資料來建立目標區段。
+* 透過識別低重疊的相關特徵來擴大觸及率。
 
-## 数据更新计划
+## 資料更新排程
 
-每个星期日，每周更新报表数据。 该更新会处理星期六（前一天）到上星期日的数据。
+報告資料會在每個星期日每週更新。 更新會處理從星期六（前一天）回溯至前一個星期日的資料。
 
-## 交互式报表中使用的形状、颜色和大小{#shapes-colors-sizes}
+## 互動式報表中使用的形狀、顏色和大小 {#shapes-colors-sizes}
 
-大多数交互式报表使用不同大小和颜色的形状来显示结果。 此显示格式旨在帮助您直观地理解数据，而无需费力地查看数字的行和列。
+大部分的互動式報表會使用不同大小和顏色的形狀來顯示結果。 此顯示格式的設計目的是協助您以視覺化方式瞭解資料，而不需費力瀏覽數字列和欄。
 
 <!-- 
 
@@ -47,9 +47,9 @@ r_legend.xml
 
  -->
 
-### 报表图例
+### 報表圖例
 
-下表定义了动态报告中使用的形状、大小和颜色。
+下表定義動態報告中使用的形狀、大小和顏色。
 
 <table id="table_EC180A96E3784FC6B81FCFB546C4A3FA"> 
  <thead> 
@@ -60,28 +60,28 @@ r_legend.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <b>形状</b> </td> 
+   <td colname="col1"> <b>形狀</b> </td> 
    <td colname="col2"> 
     <ul id="ul_076773ABD0BB4CE6834ACFA8B3D6AC2E"> 
-     <li id="li_BBAB37A6EC1549B48C0E4D3BFAF7062C">圈子表示您自己的第一方特征。 </li> 
-     <li id="li_371331AE984A4A999CE0596EA13987E0">正方形表示第三方特征。 </li> 
+     <li id="li_BBAB37A6EC1549B48C0E4D3BFAF7062C">圓圈表示您自己的第一方特徵。 </li> 
+     <li id="li_371331AE984A4A999CE0596EA13987E0">方塊表示第三方特徵。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>颜色</b> </td> 
    <td colname="col2"> 
     <ul id="ul_F5D243297F0C4E5A8EDCBD28A548869E"> 
-     <li id="li_332EB873A35440E6BB6093E36A0FAC3D">红色阴影表示<i>低</i>重叠。 </li> 
-     <li id="li_29DFDB1218DF4069B5DCFF841D48EF56">绿色阴影表示<i>高</i>重叠。 </li> 
+     <li id="li_332EB873A35440E6BB6093E36A0FAC3D">紅色陰影表示 <i>低</i> 重疊。 </li> 
+     <li id="li_29DFDB1218DF4069B5DCFF841D48EF56">綠色陰影表示 <i>高</i> 重疊。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>大小</b> </td> 
-   <td colname="col2"> 大小以与访问量成正比的比例增加或减少（特征或区段中独特用户的点击次数或百分比）。 </td> 
+   <td colname="col2"> 大小會以直接比例增加或減少，以達到（特徵或區段中的點按次數或點按百分比或不重複使用者）。 </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 表格文档{#tableau-documentation}
+## Tableau檔案 {#tableau-documentation}
 
-要进一步了解可在我们的交互式报表中看到的Tableau控件，请参阅Linux 2018.2](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm)上[Tableau Server的官方文档
+若要進一步瞭解您可在互動式報表中看到的Tableau控制項，請參閱的官方檔案 [Linux 2018.2上的Tableau伺服器](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm)

@@ -1,7 +1,7 @@
 ---
-description: DELETE和POST方法，用于删除目标和区段映射。
-seo-description: DELETE和POST方法，用于删除目标和区段映射。
-seo-title: 删除目标
+description: 可讓您移除目的地和區段對應的DELETE和POST方法。
+seo-description: DELETE and POST methods that let you remove destinations and segment mappings.
+seo-title: Delete Destinations
 solution: Audience Manager
 title: 删除目标
 uuid: 38fb2228-e564-49a3-9930-3139f8799a8f
@@ -9,38 +9,38 @@ feature: API
 exl-id: eaac3908-75ab-42d2-93bd-e8979f8b2427
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 8%
+source-wordcount: '104'
+ht-degree: 6%
 
 ---
 
 # 删除目标 {#delete-destinations}
 
-`DELETE` 和方 `POST` 法来删除目标和区段映射。
+`DELETE` 和 `POST` 可讓您移除目的地和區段對應的方法。
 
 <!-- r_delete_destinations_all.xml -->
 
-## 删除目标
+## 刪除目的地
 
-用于删除目标的`DELETE`方法。
+A `DELETE` 移除目的地的方法。
 
 >[!NOTE]
 >
->在删除目标之前，必须删除所有区段映射。
+>您必須先移除所有區段對應，才能刪除目的地。
 
 * 请求: `DELETE https://api.demdex.com/v1/destinations/`*`<destinationId>`*
-* 响应：如果成功，则返回代码`204 No Content`。
+* 回應：傳回程式碼 `204 No Content` 如果成功。
 
-## 批量删除目标
+## 大量刪除目的地
 
-使用此`POST`方法删除多个目标。 将目标ID(`destinationId`)与请求正文中的数组一起传递。
+使用此專案移除多個目的地 `POST` 方法。 傳入目的地ID ( `destinationId`)，並在要求內文中使用陣列。
 
 * 请求: `POST https://api.demdex.com/v1/destinations/bulk-delete/`
-* 响应：如果成功，则返回代码`204 No Content`。
+* 回應：傳回程式碼 `204 No Content` 如果成功。
 
-## 按区段映射ID删除目标映射
+## 依區段對應ID刪除目的地對應
 
-一种`POST`方法，用于根据指定的区段ID删除目标映射。
+A `POST` 根據指定的區段ID移除目的地對應的方法。
 
 * 请求: `DELETE https://api.demdex.com/v1/destinations/` *`<destinationId>`*`/segments/`*`<mappingId>`*
-* 响应：如果成功，则返回代码`204 No Content`。
+* 回應：傳回程式碼 `204 No Content` 如果成功。

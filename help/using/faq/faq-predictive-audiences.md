@@ -1,14 +1,14 @@
 ---
 description: Predictive Audiences 可以帮助您使用数据科学将未知受众实时分类为不同的角色。
-seo-description: Predictive Audiences 可以帮助您使用数据科学将未知受众实时分类为不同的角色。
-seo-title: Predictive Audiences 常见问题解答
+seo-description: Predictive Audiences help you classify unknown audiences into distinct personas in real-time, using data science.
+seo-title: Predictive Audiences FAQ
 solution: Audience Manager
 title: Predictive Audiences 常见问题解答
-feature: 算法模型
+feature: Algorithmic Models
 exl-id: 21073970-8457-470b-89fc-724a118a18d2
 source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '949'
 ht-degree: 59%
 
 ---
@@ -57,43 +57,43 @@ ht-degree: 59%
 
 [!UICONTROL Predictive Audiences] 模型可能由于以下原因而无法生成结果：
 
-1. 所选角色[!UICONTROL traits] / [!UICONTROL segments]中没有足够的用户配置文件。 我们建议选择[!UICONTROL traits]或[!UICONTROL segments]，以便每个角色至少拥有几百个用户配置文件。
-1. 所选角色[!UICONTROL traits] / [!UICONTROL segments]的用户配置文件中没有足够的数据（特征不足，无法分析）。
-1. 目标受众特征/区段没有任何活动用户或已载入用户。
+1. 未選取任何角色 [!UICONTROL traits] / [!UICONTROL segments] 擁有足夠的使用者設定檔。 建議您選擇您的 [!UICONTROL traits] 或 [!UICONTROL segments] 讓每個角色至少擁有幾百個使用者設定檔。
+1. 未選取任何角色 [!UICONTROL traits] / [!UICONTROL segments] 使用者設定檔中有足夠的資料（沒有足夠的特徵可進行分析）。
+1. 目標受眾特徵/區段沒有任何作用中或已上線的使用者。
 1. 过去 30 天内处于活动状态或已载入的目标受众用户在其用户配置文件中没有足够的数据（特征不足，无法进行分析）。
-1. 目标受众区段使用与您为模型选择的[!UICONTROL Profile Merge Rule]不同的。
-1. 目标受众特征的数据源可能未包含在您为模型选择的[!UICONTROL Profile Merge Rule]中。
+1. 目標受眾區段使用不同的 [!UICONTROL Profile Merge Rule] 從您為模型選擇的模型開始。
+1. 目標受眾特徵的資料來源可能未包含在 [!UICONTROL Profile Merge Rule] 您為模型選擇的引數。
 
 为了获得最佳结果，请遵循[角色选择标准](../features/algorithmic-models/predictive-audiences.md#selection-personas)和[目标受众选择标准](../features/algorithmic-models/predictive-audiences.md#selection-audience)中的建议准则。
 
  
 
-**为什么我的模型显示 [!UICONTROL Error] 状态？**
+**為什麼我的模型顯示 [!UICONTROL Error] 狀態？**
 
-这表明模型运行失败。在这种情况下，请联系您的[!DNL Adobe]代表。
+这表明模型运行失败。在這種情況下，請洽詢您的 [!DNL Adobe] 代表。
 
  
 
-**如何更改 [!UICONTROL Profile Merge Rule] 的 [!UICONTROL Predictive Audiences] [!UICONTROL segment]?**
+**如何變更 [!UICONTROL Profile Merge Rule] 對於 [!UICONTROL Predictive Audiences] [!UICONTROL segment]？**
 
-通过选择与上一个模型相同的角色和目标受众来创建新模型。 在模型创建过程中，分配一个不同的[!UICONTROL Profile Merge Rule]。
+選取與先前模型相同的角色和目標對象，以建立新模型。 在建立模型期間，指派另一個 [!UICONTROL Profile Merge Rule].
 
 >[!WARNING]
-> 或者，您也可以使用[区段生成器](../features/segments/segment-builder.md)手动创建具有现有预测[!UICONTROL trait]的[!UICONTROL segment]，并为其分配您选择的[!UICONTROL Profile Merge Rule]。
+> 或者，您可以使用 [區段產生器](../features/segments/segment-builder.md) 手動建立 [!UICONTROL segment] 使用現有的預測性 [!UICONTROL trait] 並將其指派給 [!UICONTROL Profile Merge Rule] 隨心所欲。
 > 
-> 但是，我们不建议这样做，因为预测型[!UICONTROL traits]会自动继承其所属模型的[!UICONTROL Profile Merge Rule]，并且这些模型是由符合模型[!UICONTROL Profile Merge Rule]的具有影响力的[!UICONTROL traits]构建的。
+> 不過，我們不建議使用此做法，因為此做法具有預測性 [!UICONTROL traits] 自動繼承 [!UICONTROL Profile Merge Rule] 屬於的模型，而且是從具影響力的 [!UICONTROL traits] 符合 [!UICONTROL Profile Merge Rule] 模型的。
 
  
 
-**我应 [!UICONTROL Profile Merge Rule] 该选择什么？**
+**什麼 [!UICONTROL Profile Merge Rule] 我應該選擇嗎？**
 
-为模型选择[!UICONTROL Profile Merge Rule]时，请仔细分析用例。
+選擇 [!UICONTROL Profile Merge Rule] 針對您的模型，請密切分析您的使用案例。
 
-假设您的目标受众[!UICONTROL segment]使用基于已验证用户档案+ [!DNL Device Graph]用户档案的[!UICONTROL Profile Merge Rule]，并且为预测[!UICONTROL segments]选择相同的[!UICONTROL Profile Merge Rule]。 在这种情况下，设备级别和跨设备级别[!UICONTROL traits]都将用于训练模型和将用户放置到预测[!UICONTROL segment]中。
+假設您的目標對象 [!UICONTROL segment] 使用 [!UICONTROL Profile Merge Rule] 根據已驗證的設定檔+ [!DNL Device Graph] 設定檔，而您選取相同的設定檔 [!UICONTROL Profile Merge Rule] 用於預測性 [!UICONTROL segments]. 在此情況下，包括裝置層級和跨裝置層級 [!UICONTROL traits] 將用於訓練模型和將使用者放置到預測性中 [!UICONTROL segment].
 
-但是，如果您仅根据设备配置文件选择[!UICONTROL Profile Merge Rule]，则您的跨设备[!UICONTROL traits]都不会产生影响，并且不会对将用户放置到预测[!UICONTROL segment]中产生任何影响。 这可能会对模型的准确性和范围产生不利影响。
+但是，如果您選取 [!UICONTROL Profile Merge Rule] 僅根據裝置設定檔，您的所有跨裝置皆非 [!UICONTROL traits] 將具有影響力，且不會有助於將使用者放置到預測性位置 [!UICONTROL segment]. 這可能會對模型的精確度和觸及率產生不良影響。
 
-仔细分析用例，并确定希望模型从中学习的[!UICONTROL trait]类型以及希望模型用于分类的数据类型。
+仔細分析您的使用案例，並決定哪些 [!UICONTROL trait] 您希望模型從中學習的型別，以及您希望模型用於分類的資料型別。
 
 **目标受众中不属于任何角色特征/区段的用户是否无法分类？**
 
@@ -113,11 +113,11 @@ ht-degree: 59%
 
  
 
-**我是否可以更改预测特征的生存时间(TTL)?**
+**我可以變更預測性特徵的存留時間(TTL)嗎？**
 
-预测特征TTL设置为0（存留期），无法更改。 [!UICONTROL Predictive Audiences] 仅当用户符合基本区段的资格或被重新分类为其他预测区段时，才能从预测区段中取消分段用户。
+預測特徵TTL設為0 （期限），且無法變更。 [!UICONTROL Predictive Audiences] 只有當使用者符合基本區段的資格或重新分類為不同的預測區段時，才能從預測區段中取消使用者區段。
 
-如果需要，您可以通过创建一个新区段来解决此问题，该区段同时包含预测特征和具有指定TTL的活动特征。
+如有需要，您可以建立包含預測特徵和具有指定TTL的活動特徵的新區段來解決此問題。
 
  
 

@@ -1,31 +1,31 @@
 ---
-description: 最佳频度报表可帮助您在提供的展示次数与转化次数之间找到最佳平衡。 它允许您调整要显示的展示次数，然后才能开始看到越来越低的回报。
-seo-description: 最佳频度报表可帮助您在提供的展示次数与转化次数之间找到最佳平衡。 它允许您调整要显示的展示次数，然后才能开始看到越来越低的回报。
-seo-title: 最佳频度报表
+description: 「最佳頻率」報表可協助您探索提供的曝光次數和轉換次數之間的最佳平衡。 它可讓您在開始看到遞減的回訪之前，先調整要顯示的曝光次數。
+seo-description: The Optimal Frequency report helps you discover the optimal balance between the number of served impressions and conversions. It allows you to adjust the number of impressions you would want to display before starting to see diminishing returns.
+seo-title: Optimal Frequency Report
 solution: Audience Manager
 title: 最佳频度报表
 uuid: 50459ce9-39ac-4401-93dd-7526937fc742
-feature: Audience Optimization 报表
+feature: Audience Optimization Reports
 exl-id: bf445fde-5cac-40ee-aa67-b4523391a6f1
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 4%
+source-wordcount: '201'
+ht-degree: 2%
 
 ---
 
 # 最佳频度报表{#optimal-frequency-report}
 
-最佳频度报表可帮助您在提供的展示次数与转化次数之间找到最佳平衡。 它允许您调整要显示的展示次数，然后才能开始看到越来越低的回报。
+「最佳頻率」報表可協助您探索提供的曝光次數和轉換次數之間的最佳平衡。 它可讓您在開始看到遞減的回訪之前，先調整要顯示的曝光次數。
 
-报表的回顾时间间隔为30天，从[!UICONTROL Date Through]选择器中选择的日期开始。
+報表的回顧間隔為30天，日期由以下選項中選取： [!UICONTROL Date Through] 選擇器。
 
-转化量通常会随着展示次数频率段的增加而减少。 看到展示次数较多的用户较少。 这意味着这些较高频率的存储段具有较少的转化。
+轉換音量通常會隨著曝光頻率貯體增加而減少。 使用者越少，曝光次數越高。 這表示這些較高頻率的貯體具有較少的轉換。
 
-但是，整体转化%会随着每次展示频率存储段而增加。 每个存储段会生成更多转化，因此转化总数（分子）接近可能转化的总数（分母），从而增加%。
+不過，整體轉換%會隨著每個曝光頻率貯體而增加。 每個貯體會產生更多轉換，因此轉換總數（分子）會接近可能的轉換總數（分母），因此%會增加。
 
-如示例报表所示，2行图的交集为“最佳”展示次数（即在客户开始看到回报递减之前需要提供的最佳展示次数）提供了指南。
+如範例報表所示，在客戶開始看到退貨遞減之前，2個折線圖的交集提供「最佳」曝光頻率的指引，即需要提供的最佳曝光次數。
 
-## 示例报表
+## 範例報告
 
-![最佳频率](assets/optimal-frequency2.png)
+![最佳頻率](assets/optimal-frequency2.png)

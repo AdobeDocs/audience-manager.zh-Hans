@@ -17,74 +17,74 @@ ht-degree: 5%
 
 ## 要求 {#requirements}
 
-要配置Analytics目标，您的Audience Manager用户必须具有管理员权限。 参见 [创建用户](/help/using/features/administration/administration-overview.md#create-users) 在管理指南中。 请注意，拥有 `CREATE_DESTINATIONS` [通配符权限](/help/using/features/administration/administration-overview.md#wild-card-permissions) 不足以创建Analytics目标。
-有关更多要求，请参阅中的先决条件 [Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html).
+若要設定Analytics目的地，您的Audience Manager使用者必須擁有管理員許可權。 另請參閱 [建立使用者](/help/using/features/administration/administration-overview.md#create-users) 在管理指南中。 請注意，擁有 `CREATE_DESTINATIONS` [萬用字元許可權](/help/using/features/administration/administration-overview.md#wild-card-permissions) 不足以建立Analytics目的地。
+如需進一步需求，請參閱下列專案的先決條件： [Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
-## 您的默认Analytics目标和新Analytics目标
+## 您的預設Analytics目標和新的Analytics目標
 
-| Analytics目标类型 | 描述 |
+| Analytics目的地型別 | 描述 |
 |---|---|
-| 默认值 | 此默认目标的名称是“Adobe Analytics”，您可以对其进行编辑。 已映射的报表包ID会显示在文件夹存储中，供您的Audience Manager特征和区段使用。 <br>  Audience Manager如果您的帐户具有： <br>  <ul><li>满足中所述的要求 [Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html) 文档。</li><li>A [报告包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html) Analytics中的。</li></ul> |
-| 新建 | 要创建新的Analytics目标，请转到“受众数据”>“目标”>“创建新目标”，然后执行下面描述的每个部分的步骤。 |
+| 默认值 | 此預設目的地的名稱為「Adobe Analytics」，您可以編輯此名稱。 對應的報表套裝ID會顯示在您Audience Manager特徵和區段的資料夾儲存體中。 <br>  如果您的帳戶具有：，Audience Manager會自動建立一個目的地 <br>  <ul><li>符合「 」中所述的需求 [Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html) 說明檔案。</li><li>A [報告套裝](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html) （在Analytics中）。</li></ul> |
+| 新建 | 若要建立新的Analytics目的地，請前往「對象資料>目的地>建立新目的地」 ，並遵循以下每個區段的步驟操作。 |
 
-## Adobe Analytics中的Audience Manager区段资格 {#segment-qualifications}
+## Adobe Analytics中的Audience Manager區段資格 {#segment-qualifications}
 
-将区段信息发送到Analytics目标时，Audience Manager仅发送访客符合条件的区段。 如果访客不再符合区段的条件，则此信息为 _非_ 已转发到Adobe Analytics。
+將區段資訊傳送至Analytics目的地時，Audience Manager只會傳送訪客符合資格的區段。 如果訪客不再符合區段的資格，此資訊為 _not_ 已轉送至Adobe Analytics。
 
-例如，请考虑以下区段规则：
+例如，請考量下列區段規則：
 
-* 区段A：特征1和特征2
-* 区段B：特征1，而非特征2
+* 區段A：特徵1和特徵2
+* 區段B：特徵1而非特徵2
 
-在Analytics报表中，配置文件可能会显示为符合两个区段的条件，即使它不再符合区段B的条件。
+在Analytics報表中，即使設定檔已停止符合區段B的資格，仍會顯示為符合這兩個區段的資格。
 
-## 步骤1：提供基本信息
+## 步驟1：提供基本資訊
 
-此部分包含启动Analytics目标创建过程的字段和选项。 要完成此部分，请执行以下操作：
+本節包含啟動Analytics目的地建立程式的欄位和選項。 若要完成本節：
 
-1. 单击 **基本信息** 以公开控制项。
-2. 命名目标。 避免使用缩写和特殊字符。
-3. *（可选）* 描述目标。 简洁的描述是定义或提供更多有关目标信息的有效方式。
-4. *（可选）* 在 **Platform** 列表，将默认设置保留为 **全部**. 目前，这些选项不执行任何操作。 它们旨在支持以后可能添加的功能。
-5. 在 **类别** 列表，选择 **Adobe Experience Cloud**.
-6. 在 **类型** 列表，选择 **Adobe Analytics**.
-7. 单击 **保存** 转到“配置”设置或单击 **数据导出标签** 以将导出控件应用到目标。
+1. 按一下 **基本資訊** 以公開控制項。
+2. 為目的地命名。 避免使用縮寫和特殊字元。
+3. *（可選）* 說明目的地。 簡潔的說明是定義或提供更多目的地相關資訊的有效方式。
+4. *（可選）* 在 **Platform** 清單，將預設值設為 **全部**. 目前，這些選項沒有任何作用。 其設計可支援日後可能新增的功能。
+5. 在 **類別** 清單，選取 **Adobe Experience Cloud**.
+6. 在 **型別** 清單，選取 **Adobe Analytics**.
+7. 按一下 **儲存** 前往「組態」設定或按一下 **資料匯出標籤** 將匯出控制項套用至目的地。
 
 >[!NOTE]
 >
->对于Analytics目标， **自动填写目标映射** 复选框和 **区段ID** 默认情况下选中该选项。 您无法更改这些设置。
+>若為Analytics目的地， **自動填入目的地對應** 核取方塊及 **區段ID** 選項預設為選取。 您無法變更這些設定。
 
-![基本信息](assets/basicinformation.png)
+![基本資訊](assets/basicinformation.png)
 
-## 步骤2：配置数据导出控制
+## 步驟2：設定資料匯出控制項
 
-此部分包含适用的选项 [数据导出控制](/help/using/features/data-export-controls.md) 到Analytics目标。 如果不使用数据导出控制，请跳过此步骤。 要完成此部分，请执行以下操作：
+本節包含套用的選項 [資料匯出控制](/help/using/features/data-export-controls.md) 前往Analytics目的地。 如果您不使用資料匯出控制項，請略過此步驟。 若要完成本節：
 
-1. 单击 **数据导出控制** 以公开控制项。
-1. 选择与应用于目标的数据导出控制对应的标签(请参阅 [将数据导出标签添加到目标](/help/using/features/destinations/add-data-export-labels.md) )。 对于Analytics目标，默认情况下会选中PII复选框。
+1. 按一下 **資料匯出控制** 以公開控制項。
+1. 選取與套用至目的地的資料匯出控制對應的標籤(請參閱 [將資料匯出標籤新增至目的地](/help/using/features/destinations/add-data-export-labels.md) )。 對於Analytics目的地，預設會選取PII核取方塊。
 1. 单击&#x200B;**保存**。
 
 ![exportcontrols](assets/exportControls.png)
 
-## 步骤3：映射报表包
+## 步驟3：對應報表套裝
 
-配置部分列出了已为服务器端转发启用的Analytics报表包。 如果您有多个Analytics目标，则分配给这些目标的报表包将互斥，并由Audience Manager强制执行。 要完成此部分，请执行以下操作：
+設定區段會列出已啟用伺服器端轉送的Analytics報表套裝。 如果您有多個Analytics目的地，則指派給這些目的地的報表套裝將會互斥，並由Audience Manager強制執行。 若要完成本節：
 
-1. 单击 **配置** 以公开控制项。
-1. 选择一个（或多个）要将区段发送到的报表包。
+1. 按一下 **設定** 以公開控制項。
+1. 選取您要傳送區段的一或多個報表套裝。
 1. 单击&#x200B;**保存**。
 
-![报告包](assets/reportSuites.png)
+![報告套裝](assets/reportSuites.png)
 
-## 步骤4：区段映射
+## 步驟4：區段對應
 
-此部分提供了允许您自动或手动映射区段的选项。
+本節提供可讓您自動或手動對應區段的選項。
 
-| 映射选项 | 描述 |
+| 對應選項 | 描述 |
 |---|---|
-| 自动映射所有当前和未来区段 | 默认情况下，选中此功能后，会将访客符合条件的所有区段按点击发送到Analytics。 <br>  如果某位访客在一次点击中属于超过150个Audience Manager区段，则只会向Analytics发送最近150个符合条件的区段，而其余的列表会被截断。 会向Analytics发送一个附加标记，指示区段列表被截断。 此操作在受众名称维度中显示为“已达到受众限制”，在受众ID维度中显示为“1”。 请参阅 [常见问题解答](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/mc-audiences-faqs.html) 了解详细信息。 <br>  此外，此选项还会影响中的目标可用性 [区段生成器](/help/using/features/segments/segment-builder.md). 例如，如果区段自动映射到Analytics目标，则该目标不可在 [目标映射](/help/using/features/segments/segment-builder.md#segment-builder-controls-destinations) 区段生成器的部分。 Analytics目标显示为灰色，并在目标浏览器的“类型”列中显示“Analytics”。 |
-| 手动映射区段 | 此选项显示搜索和浏览控件，这些控件允许您选择要将哪些区段发送到Analytics。 <br>  要搜索区段，请执行以下操作： <br>  <ol><li>在搜索字段中键入区段名称或ID。</li><li>单击 <b>添加。</b></li><li>继续搜索和添加区段，或单击 <b>完成</b>.</li></ol><br>  要浏览区段，请执行以下操作： <ol><li>单击 <b>浏览所有区段</b>. 这会公开可用区段的列表。</li><li>从列表中，选中要使用的段的复选框，然后单击 <b>添加选定的区段</b>.</li><li>单击 <b>保存</b> 在“添加映射”窗口中。 在测试版发布期间，您无法更改映射、开始日期或结束日期。</li><li>继续浏览和添加区段，或单击 <b>完成</b>.</li></ol> ![映射区段](assets/mapSegments.png) |
+| 自動對應所有目前和未來的區段 | 依預設選取，此功能會根據每次點選，將訪客符合資格的所有區段傳送至Analytics。 <br>  如果訪客在單一點選上屬於超過150個Audience Manager區段，系統只會將150個最近符合資格的區段傳送至Analytics，而其餘清單則會截斷。 系統會傳送其他標幟給Analytics，表示區段清單已截斷。 此動作在對象名稱維度中顯示為「已達對象上限」，在對象ID維度中顯示為「1」。 請參閱 [常見問題集](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/mc-audiences-faqs.html) 以取得詳細資訊。 <br>  此外，此選項也會影響中的目的地可用性 [區段產生器](/help/using/features/segments/segment-builder.md). 例如，如果區段自動對應至Analytics目的地，則無法在中選取該目的地 [目的地對應](/help/using/features/segments/segment-builder.md#segment-builder-controls-destinations) 區段產生器的區段。 Analytics目的地會呈現灰色，並在目的地瀏覽器的「型別」欄中顯示「Analytics」。 |
+| 手動對應區段 | 此選項會顯示搜尋和瀏覽控制項，讓您選擇要將哪些區段傳送至Analytics。 <br>  若要搜尋區段，請執行下列動作： <br>  <ol><li>在搜尋欄位中輸入區段名稱或ID。</li><li>按一下 <b>新增。</b></li><li>繼續搜尋和新增區段，或按一下 <b>完成</b>.</li></ol><br>  瀏覽區段： <ol><li>按一下 <b>瀏覽所有區段</b>. 這會公開可用區段的清單。</li><li>從清單中選取要使用的區段核取方塊，然後按一下 <b>新增選取的區段</b>.</li><li>按一下 <b>儲存</b> 在「新增對應」視窗中。 您不能在Beta版期間變更對應、開始或結束日期。</li><li>繼續瀏覽並新增區段，或按一下 <b>完成</b>.</li></ol> ![地圖區段](assets/mapSegments.png) |
 
 ## 后续步骤
 
-创建并保存目标后，您可以在Analytics中处理该数据。 但是，可能需要几个小时，数据才会显示在您选择的报表包中。 参见 [在Analytics中使用受众数据](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/use-audience-data-analytics.html).
+建立並儲存目的地後，即可在Analytics中使用該資料。 不過，可能需要數小時的時間，資料才會顯示在您選取的報表套裝中。 另請參閱 [在Analytics中使用對象資料](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/use-audience-data-analytics.html).

@@ -1,14 +1,14 @@
 ---
 description: 客户关怀团队随时准备帮助您解决可能出现的任何问题。在联系客户关怀团队时，请尽可能多地提供这些信息。这些信息将有助于团队了解并解决您的问题。
-seo-description: 客户关怀团队随时准备帮助您解决可能出现的任何问题。在联系客户关怀团队时，请尽可能多地提供这些信息。这些信息将有助于团队了解并解决您的问题。
-seo-title: 如果遇到问题
+seo-description: Customer Care is prepared to help you solve any issues that might arise. Provide as much of this information as you can when contacting Customer Care. This will help the team understand and resolve your issue.
+seo-title: If There's a Problem
 solution: Audience Manager
 title: 如果遇到问题
-feature: 支持
+feature: Support
 exl-id: 2f7b9dbe-7aac-41b0-aab8-3b703d7a2441
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '373'
 ht-degree: 100%
 
 ---

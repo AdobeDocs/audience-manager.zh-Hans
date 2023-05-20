@@ -1,15 +1,15 @@
 ---
 description: Audience Manager 非常重视数据安全和隐私。我们竭力保障系统安全，为您的宝贵数据保驾护航。
-seo-description: Audience Manager 非常重视数据安全和隐私。我们竭力保障系统安全，为您的宝贵数据保驾护航。
-seo-title: Audience Manager 中的数据安全
+seo-description: Audience Manager takes data security and privacy very seriously. We work to keep our systems secure and protect your valuable data.
+seo-title: Data Security in Audience Manager
 solution: Audience Manager
 title: Audience Manager 中的数据安全
 uuid: 33ad19ca-4690-4d97-853b-1882d7d4ac01
-feature: 数据管理和隐私
+feature: Data Governance & Privacy
 exl-id: 94b70250-dca3-4c50-b4dd-bc37178a587e
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '999'
 ht-degree: 98%
 
 ---
@@ -61,7 +61,7 @@ Audience Manager 非常重视数据安全和隐私。我们竭力保障系统安
 
 有助于保护归每个客户所有的数据的流程。
 
-**特征数据分区：**  您的数据([!UICONTROL traits]、ID等)进行分区。这有助于防止信息在不同客户之间意外泄露。例如，Cookie 中的特征数据将按照客户进行分区并存储在特定于客户的子域中。这样可以防止其他 Audience Manager 客户意外读取或使用这些特征数据。此外，存储在 [!UICONTROL Profile Cache Servers (PCS)] 中的特征数据也是按照客户进行分区的。这样可以防止其他客户在事件调用或其他请求中意外使用您的数据。
+**特徵資料分割：**  您的資料([!UICONTROL traits]、ID等) 进行分区。这有助于防止信息在不同客户之间意外泄露。例如，Cookie 中的特征数据将按照客户进行分区并存储在特定于客户的子域中。这样可以防止其他 Audience Manager 客户意外读取或使用这些特征数据。此外，存储在 [!UICONTROL Profile Cache Servers (PCS)] 中的特征数据也是按照客户进行分区的。这样可以防止其他客户在事件调用或其他请求中意外使用您的数据。
 
 **报表中的数据分区：**&#x200B;客户 ID 是所有报表表格中标识键的一部分，报表查询按 ID 进行过滤。这有助于防止您的数据出现在其他 Audience Manager 客户的报表中。
 
@@ -91,6 +91,6 @@ Adobe Audience Manager 主要支持通过以下两种方法将载入的 S2S 数�
 
 ### 示例 {#hsts-example}
 
-假设`yourcompany.demdex.com`域通过[!DNL HTTP]向[!DNL DCS]发送流量。 [!DNL HSTS] 会对调用进行升级以改用 [!DNL HTTPS]，而且所有来自 `yourcompany.demdex.com` 的后续 [!DNL DCS] 调用都会使用 [!DNL HTTPS] 而不使用 [!DNL HTTP]。
+假設 `yourcompany.demdex.com` 網域會將流量傳送至 [!DNL DCS] 透過 [!DNL HTTP]. [!DNL HSTS] 会对调用进行升级以改用 [!DNL HTTPS]，而且所有来自 `yourcompany.demdex.com` 的后续 [!DNL DCS] 调用都会使用 [!DNL HTTPS] 而不使用 [!DNL HTTP]。
 
 有关 HSTS 的更多信息，请参阅 [HTTP 严格传输安全 - Wikipedia](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)。

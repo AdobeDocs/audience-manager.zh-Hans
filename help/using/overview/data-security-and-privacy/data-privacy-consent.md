@@ -1,16 +1,16 @@
 ---
 description: 本文档介绍同意管理在 Audience Manager 中的工作方式。
-seo-description: 本文档介绍同意管理在 Audience Manager 中的工作方式。
-seo-title: 同意管理
+seo-description: This document explains how consent management works in Audience Manager.
+seo-title: Consent Management
 solution: Audience Manager
-keywords: GDPR UI， GDPR API， CCPA，隐私，同意
+keywords: GDPR UI，GDPR API，CCPA，隐私，同意
 title: 同意管理
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
-feature: 数据管理和隐私
+feature: Data Governance & Privacy
 exl-id: 9e545e8d-dbe4-4df9-8801-af3c2c73e406
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '724'
 ht-degree: 94%
 
 ---
@@ -43,7 +43,7 @@ Audience Manager 客户能够将各种用例（如广告或个性化）的用户
 
 ## 管理选择退出/撤回同意
 
-可以通过[隐私选择](https://www.adobe.com/cn/privacy/opt-out.html#customeruse)页面为 Adobe Experience Cloud 管理选择退出。一键式功能允许您的最终用户通过 Adobe Experience Cloud 广告解决方案（包括 Audience Manager）控制和选择退出数据收集。有关具体信息，请参阅隐私选择页面中的[企业客户部分](https://www.adobe.com/privacy/opt-out.html#customeruse)。有关不支持第三方 Cookie 的浏览器，请参阅[声明的 ID 定位](../../features/declared-ids.md#declared-id-targeting)。对于移动设备，请按照[声明的 ID 选择退出示例](../../features/declared-ids.md#opt-out-examples)中所述，检索相关的 Audience Manager 标识符并调用 Audience Manager 选择退出 API。之后，您可以使用 Mobile SDK 中的选择退出 API 停止这些用户的所有数据收集 - 请参阅 [Android 设备](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html)和 [iOS 设备](https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html)。您可以在[数据隐私请求文档](../../overview/data-security-and-privacy/data-privacy-requests.md)中找到有关选择退出的其他详细信息。
+可以通过[隐私选择](https://www.adobe.com/cn/privacy/opt-out.html#customeruse)页面为 Adobe Experience Cloud 管理选择退出。一键式功能允许您的最终用户通过 Adobe Experience Cloud 广告解决方案（包括 Audience Manager）控制和选择退出数据收集。有关具体信息，请参阅隐私选择页面中的[企业客户部分](https://www.adobe.com/cn/privacy/opt-out.html#customeruse)。有关不支持第三方 Cookie 的浏览器，请参阅[声明的 ID 定位](../../features/declared-ids.md#declared-id-targeting)。对于移动设备，请按照[声明的 ID 选择退出示例](../../features/declared-ids.md#opt-out-examples)中所述，检索相关的 Audience Manager 标识符并调用 Audience Manager 选择退出 API。之后，您可以使用 Mobile SDK 中的选择退出 API 停止这些用户的所有数据收集 - 请参阅 [Android 设备](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html)和 [iOS 设备](https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html)。您可以在[数据隐私请求文档](../../overview/data-security-and-privacy/data-privacy-requests.md)中找到有关选择退出的其他详细信息。
 
 ## 为第二方合作伙伴管理同意
 

@@ -1,19 +1,19 @@
 ---
 description: 2019 年 10 月 14 日左右，我注意到设备 ID 图的已载入特征人口已降至 0，但以前这个数量要高得多。
-seo-description: 2019 年 10 月 14 日左右，我注意到设备 ID 图的已载入特征人口已降至 0，但以前这个数量要高得多。
-seo-title: 为什么我的已载入特征人口在 10 月 15 日左右降至 0？
+seo-description: Around October 14th, 2019 I noticed that my onboarded trait populations for the Device ID graph have dropped to 0, where previously they were much higher.
+seo-title: Why did my Onboarded trait populations drop to 0 around October 15th?
 solution: Audience Manager
 title: 为什么我的已载入特征人口在 10 月 15 日左右降至 0？
-feature: 支持
+feature: Support
 exl-id: e93cee15-7d05-4f81-8f14-a3e03f214542
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '195'
 ht-degree: 100%
 
 ---
 
-# 为什么我的已载入特征人口在 10 月 15 日左右降至 0？{#why-did-my-onboarded-trait-populations-drop-to-0-around-october}
+# 为什么我的已载入特征人口在 10 月 15 日左右降至 0？ {#why-did-my-onboarded-trait-populations-drop-to-0-around-october}
 
 ## 问题
 

@@ -48,6 +48,6 @@ ht-degree: 94%
 
 有关如何结合使用 [!UICONTROL Audience Lab] 和 [!UICONTROL RBAC] 权限的信息，请参阅[创建区段测试组](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)。
 
-**我能用一下吗 [!UICONTROL Audience Lab] 与 [!UICONTROL Profile Link Device Graph] 和外部设备图（Tapad设备图、Liveramp设备图）？**
+**我可以使用 [!UICONTROL Audience Lab] 與 [!UICONTROL Profile Link Device Graph] 和外部裝置圖形（ Tapad裝置圖形、Liveramp裝置圖形）？**
 
 目前，在使用 [!UICONTROL Profile Link Device Graph] 时，[!UICONTROL Audience Lab] 只能按连接到某个合格设备的设备拆分区段人口。我们正努力在 [!UICONTROL Audience Lab] 中添加对其他设备图的支持，准备就绪后，我们将通知您。

@@ -1,39 +1,39 @@
 ---
-description: 目标生成器允许您创建基于Cookie或DNL URL的目标。 您无法使用目标生成器创建服务器到服务器(S2S)目标，但可以管理其区段映射。 请联系您的顾问以设置S2S目标。 目标生成器位于“受众数据”>“目标”中。
-seo-description: 目标生成器允许您创建基于Cookie或DNL URL的目标。 您无法使用目标生成器创建服务器到服务器(S2S)目标，但可以管理其区段映射。 请联系您的顾问以设置S2S目标。 目标生成器位于“受众数据”>“目标”中。
-seo-title: 目标生成器
+description: 目的地產生器可讓您建立Cookie型或DNL URL目的地。 您無法使用Destination Builder建立伺服器對伺服器(S2S)目的地，但您可以管理其區段對應。 請聯絡您的顧問以設定S2S目的地。 目的地產生器位在「對象資料>目的地」中。
+seo-description: Destination Builder lets you create cookie-based or DNL URL destinations. You cannot create server-to-server (S2S) destinations with Destination Builder, but you can manage their segment mappings. Contact your consultant to set up a S2S destination. Destination Builder is located in Audience Data > Destinations.
+seo-title: Destination Builder
 solution: Audience Manager
 title: 目标生成器
-feature: 目标基础知识
+feature: Destination Basics
 exl-id: 0923bea3-fb23-45c0-bbb7-5a74f46bf45b
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '270'
 ht-degree: 4%
 
 ---
 
 # 目标生成器 {#destination-builder}
 
-[!UICONTROL Destination Builder] 允许您创建基于Cookie的或目 [!DNL URL] 标。您无法使用[!UICONTROL Destination Builder]创建服务器到服务器([!DNL S2S])目标，但可以管理其区段映射。 请联系您的顾问以设置[!DNL S2S]目标。 [!UICONTROL Destination Builder] 位于 **[!UICONTROL Audience Data > Destinations]**&#x200B;中。
+[!UICONTROL Destination Builder] 可讓您建立Cookie架構或 [!DNL URL] 目的地。 您無法建立伺服器對伺服器([!DNL S2S])個目的地搭配： [!UICONTROL Destination Builder]，但您可以管理其區段對應。 請聯絡您的顧問以設定 [!DNL S2S] 目的地。 [!UICONTROL Destination Builder] 位於 **[!UICONTROL Audience Data > Destinations]**.
 
-## 目标生成器设置{#destination-builder-settings}
+## 目的地產生器設定 {#destination-builder-settings}
 
 <!-- destination-builder.xml -->
 
-[!UICONTROL Destination Builder] 包括以下部分和设置：
+[!UICONTROL Destination Builder] 包含下列區段和設定：
 
 | [!UICONTROL Destination Builder] 区域 | 用途 |
 |--- |--- |
-| 基本信息 | 用于命名目标并描述该目标，并选择目标类型（[!DNL URL]或[!DNL cookie]）和平台（所有、[!DNL Android]、浏览器或[!DNL iOS]）。 |
-| 配置 | 包括以下控件：<br/><ul><li>将键值数据传递到[!DNL URL]目标。 您可以将数据作为单个或序列化的键值对发送。 有关详细信息，请参阅[目标序列化](../../features/destinations/key-value-pairs.md#destination-serialized)和[标准和序列键值对](../../features/destinations/key-value-pairs.md)。 </li><li>Cookie目标的元素，如Cookie名称、域、大小、过期间隔、数据格式等。</li></ul> |
-| 区段映射 | 允许您: <br/><ul><li>搜索、添加和管理与所有目标类型关联的区段。 </li><li>在单个区段上设置交付优先级（仅适用于基于[!DNL cookie]的区段）。</li></ul> |
+| 基本信息 | 用來命名目的地、描述目的地及選取目的地型別([!DNL URL] 或 [!DNL cookie])和平台(全部， [!DNL Android]、瀏覽器，或 [!DNL iOS])。 |
+| 配置 | 包含下列專案的控制項： <br/><ul><li>傳遞索引鍵值資料至 [!DNL URL] 目的地。 您可以個別或序列化索引鍵值配對的形式傳送資料。 如需詳細資訊，請參閱 [目的地序列化](../../features/destinations/key-value-pairs.md#destination-serialized) 和 [標準和序列索引鍵值配對](../../features/destinations/key-value-pairs.md). </li><li>Cookie目的地的元素，例如Cookie名稱、網域、大小、過期時間間隔、資料格式等。</li></ul> |
+| 區段對應 | 允许您: <br/><ul><li>搜尋、新增及管理與所有目的地型別相關聯的區段。 </li><li>設定個別區段的傳遞優先順序(適用於 [!DNL cookie] — 僅限以區段為基礎)。</li></ul> |
 
-## 数据提交方法{#data-delivery-methods}
+## 資料傳送方法 {#data-delivery-methods}
 
-将信息通过[!DNL URL]字符串传递到目标，通过写入浏览器[!DNL cookie]或通过离线服务器到服务器数据传输发送到目标。
+透過傳遞資訊至目的地來傳送資訊 [!DNL URL] 字串，透過寫入瀏覽器 [!DNL cookie]或透過離線伺服器對伺服器資料傳輸。
 
-* [!DNL URL] 当用户在页面上执行操作时，基于cookie的目标会同步传输数据。
-* 服务器到服务器数据传输是异步的，并且在用户离开页面后很长时间内，可能会发生。 您选择的交付类型取决于您的业务需求以及特定数据合作伙伴希望或能够接收数据的方式。
+* [!DNL URL] 和以Cookie為基礎的目的地，會在使用者對頁面採取動作時，同步傳輸資料。
+* 伺服器對伺服器的資料傳輸為非同步處理，可在使用者離開頁面很久後發生。 您選取的傳送型別取決於您的業務需求，以及特定資料合作夥伴想要或可以如何接收資料。
 
-有关详细信息，请参阅[如何选择目标类型](../../features/destinations/destinations.md)。
+另請參閱 [如何選擇目的地型別](../../features/destinations/destinations.md) 以取得詳細資訊。

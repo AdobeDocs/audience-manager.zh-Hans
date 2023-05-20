@@ -1,7 +1,7 @@
 ---
-description: 此过程可指导您完成在Audience Lab中创建、编辑或删除测试组所需的步骤
-seo-description: 此过程可指导您完成在Audience Lab中创建、编辑或删除测试组所需的步骤
-seo-title: 管理测试组
+description: 此程式會逐步引導您完成在Audience Lab中建立、編輯或刪除測試群組所需的步驟
+seo-description: This procedure walks you through the steps needed to create, edit, or delete a test group in Audience Lab
+seo-title: Manage Test Groups
 solution: Audience Manager
 title: 管理测试组
 uuid: 2fadddeb-7574-4853-8c52-c58456582c62
@@ -9,101 +9,101 @@ feature: Audience Lab
 exl-id: 1d07c8f1-34dc-4339-bd5d-87042a22f7e9
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '981'
 ht-degree: 1%
 
 ---
 
 # 管理测试组 {#manage-test-groups}
 
-此过程将指导您完成在[!UICONTROL Audience Lab]中创建、编辑或删除测试组所需的步骤。
+此程式會逐步引導您完成在中建立、編輯或刪除測試群組所需的步驟 [!UICONTROL Audience Lab].
 
-## 创建区段测试组{#create-test-groups}
+## 建立區段測試群組 {#create-test-groups}
 
 ### 先决条件
 
 <!-- create-test-group.xml -->
 
-* 您需要至少设置一个&#x200B;**转化特征**。 您可以在[特征生成器](../../features/traits/create-onboarded-rule-based-traits.md)中设置转化特征，方法是选择&#x200B;**转化**&#x200B;作为事件类型。 有关什么是转化特征以及如何设置转化特征的更多信息，我们为您准备了[video](https://helpx.adobe.com/audience-manager/kt/using/creating-conversion-traits-feature-video-use.html)。
+* 您至少需要一個 **轉換特徵** 設定。 您可以在中設定轉換特徵 [特徵產生器](../../features/traits/create-onboarded-rule-based-traits.md)，只要選取 **轉換** 做為事件型別。 如需轉換特徵及設定方式的詳細資訊，我們準備了 [視訊](https://helpx.adobe.com/audience-manager/kt/using/creating-conversion-traits-feature-video-use.html) 敬請參考使用。
 
    >[!IMPORTANT]
    >
-   >[不](../../features/traits/about-folder-traits.md) 支持 **文** 件夹 [!UICONTROL Audience Lab]特性。将文件夹特征的[事件类型](../../features/traits/create-onboarded-rule-based-traits.md)设置为&#x200B;**conversion**&#x200B;将不会在[!UICONTROL Audience Lab]中为该特定文件夹特征生成任何数据。
+   >[資料夾特徵](../../features/traits/about-folder-traits.md) 是 **不支援** 作者： [!UICONTROL Audience Lab]. 設定 [事件型別](../../features/traits/create-onboarded-rule-based-traits.md) 的資料夾特徵 **轉換** 不會在中產生任何資料 [!UICONTROL Audience Lab] 該特定資料夾特徵的。
 
-* 对于使用[基于角色的访问控制](../../features/administration/administration-overview.md)的公司：将[!UICONTROL Audience Lab] [通配符权限](../../features/administration/administration-overview.md#wild-card-permissions)分配给&#x200B;**[!UICONTROL User Groups]**&#x200B;以提供访问权限。 此权限允许用户创建和查看测试结果。 用户只能使用其具有&#x200B;**read**&#x200B;和&#x200B;**映射到目标**&#x200B;权限的数据源中的区段。 用户只能使用其具有&#x200B;**&quot;read&quot;**&#x200B;权限的数据源中的转化特征。 用户也只能查看他们有权访问的目标。 因此，在向组添加[!DNL Audience Lab]通配符权限之前，请确保该组具有：
-   * 有权读取相关转化特征；
-   * 读取和映射相关区段以进行测试；
-   * 访问相关目标。
+* 針對使用 [角色型存取控制](../../features/administration/administration-overview.md)：指派 [!UICONTROL Audience Lab] [萬用字元許可權](../../features/administration/administration-overview.md#wild-card-permissions) 至 **[!UICONTROL User Groups]** 以提供存取權。 此許可權可讓使用者建立和檢視測試結果。 使用者將只能使用來自其資料來源的區段 **讀取** 和 **對應到目的地** 許可權。 使用者將只能使用來自其所擁有之資料來源的轉換特徵 **&quot;read&quot;** 許可權。 使用者也只能檢視他們有權存取的目的地。 因此，在新增 [!DNL Audience Lab] 群組的萬用字元許可權，請確定群組具有：
+   * 存取權以讀取相關的轉換特徵；
+   * 存取讀取和對應測試相關區段的許可權；
+   * 相關目的地的存取權。
 
-要创建新的[!UICONTROL Segment Test Group]，请执行以下操作：
+若要建立新的 [!UICONTROL Segment Test Group]：
 
-1. 在[!UICONTROL Audience Lab]功能板中选择&#x200B;**[!UICONTROL Create New Test Group]**&#x200B;以启动向导。
+1. 選取 **[!UICONTROL Create New Test Group]** 在 [!UICONTROL Audience Lab] 儀表板以啟動精靈。
 1. **[!UICONTROL Basic Info & Choose Segment]**
 
-   * 填写&#x200B;**[!UICONTROL Test Group Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
-   * 选择&#x200B;**[!UICONTROL Base Segment]**，方法是在文件浏览器中导航，或在搜索栏中键入，然后按&#x200B;**[!UICONTROL Choose Segment.]**&#x200B;确认
-   * 您可以将测试组另存为草稿，稍后继续处理该测试组。
-   * 如果您选择的基本区段已用于其他测试组，则会显示警报。 两次使用基本区段可能会扭曲两个测试的转换结果。
+   * 填入 **[!UICONTROL Test Group Name]** 和 **[!UICONTROL Description]**.
+   * 選擇 **[!UICONTROL Base Segment]** 在檔案瀏覽器中導覽或是在搜尋列中輸入內容，然後按一下以確認 **[!UICONTROL Choose Segment.]**
+   * 您可以將測試群組另存為草稿，稍後再繼續處理。
+   * 如果您選取的基本區段已用於其他測試群組，則會顯示警報。 兩次使用基礎區段可能會扭曲兩個測試的轉換結果。
 
 1. **[!UICONTROL Allocate Test Segments]**
 
-   * 您最多可以创建&#x200B;**15个测试区段**&#x200B;并按您希望的方式划分设备百分比。
-   * 您可以通过单击测试区段的名称来编辑这些区段的名称。
-   * 分配新测试区段后，百分比会自动平均划分为100%。 然后，您可以手动编辑百分比。 编辑百分比后单击复选框，并确保这些百分比加起来最多为100%，否则您将无法继续执行下一步。
+   * 您可以建立 **最多15個測試區段** 並依需要分配裝置的百分比。
+   * 您可以按一下測試區段來編輯其名稱。
+   * 分配新測試區段時，百分比會自動平均分配為100%。 然後，您可以手動編輯百分比。 編輯百分比後按一下核取方塊，並確認百分比加起來為100%，否則您無法繼續下一個步驟。
 
 1. **[!UICONTROL Set a Control Segment]**
 
-   * 如果要保留区段的特定部分以用作控制组，请选择控制区段。 控制组允许您查看与基准比较您创建的测试区段的影响。
-   * 您可以在下拉列表中选择测试区段作为控制区段，也可以选择&#x200B;**[!UICONTROL None]**&#x200B;作为无控制区段。
-   * 完成后，单击&#x200B;**[!UICONTROL Next]**。
+   * 如果要將區段的某些部分保留下來作為控制組，請選取控制區段。 控制組可讓您檢視您所建立的測試區段與基準比較所產生的影響。
+   * 您可以在下拉式清單中選取測試區段作為控制區段，也可以選擇 **[!UICONTROL None]** 無控制項。
+   * 按一下 **[!UICONTROL Next]** 完成時。
 
 1. **[!UICONTROL Select Conversion Traits]**
 
-   * 通过在转化特征窗口中键入内容来添加转化特征。 这是一个&#x200B;**必备的**&#x200B;步骤，除非至少添加一个转化特征，否则无法继续下一步。
-   * 如果需要，最多可以添加5个转化特征。
-   * 如果您选择的转化特征已用于其他测试组，则会显示警报。
-   * 请注意，Audience Manager不支持将[文件夹特征](/help/using/features/traits/about-folder-traits.md)用作转化特征。 选择文件夹特征作为转化特征会导致测试中显示0个汇总和趋势报表。
+   * 在轉換特徵視窗中輸入，即可新增轉換特徵。 這是 **強制** ，而且除非您新增至少一個轉換特徵，否則無法繼續下一個步驟。
+   * 您最多可以新增5個轉換特徵（如有需要）。
+   * 如果您選取的轉換特徵已用於其他測試群組，則會顯示警報。
+   * 請注意，Audience Manager不支援使用 [資料夾特徵](/help/using/features/traits/about-folder-traits.md) 作為轉換特徵。 將資料夾特徵選取為轉換特徵會導致0個彙總和趨勢報表顯示在測試中。
 
 1. **[!UICONTROL Choose Destinations & Dates]**
 
-   * 在搜索字段中键入所需目标或使用下拉箭头。 [!UICONTROL Audience Lab] 测试区段可以发送到URL、Cookie或服务器到服务器目标。
-   * 将区段拖放到目标。
-   * 在目标中放置区段后，在盲中填充&#x200B;**[!UICONTROL Destination Mapping Value]**。
-   * 您可以将同一测试区段发送到多个目标，并且可以将多个测试区段添加到单个目标。
-   * 如果目标不可用于基于[数据导出控制](../../features/data-export-controls.md)的特定测试区段，则目标将呈灰显状态。
-   * 用户将仅根据其所属的[RBAC用户组](../../features/administration/administration-overview.md)查看他们有权访问的目标。
-   * 最后，您需要为测试组选择开始日期。 此日期标记将测试组发布到目标的时间段的开始。 选择&#x200B;**无结束日期**&#x200B;以无限期地比较测试区段。
+   * 在搜尋欄位中輸入所需的目的地，或使用下拉式箭頭。 [!UICONTROL Audience Lab] 測試區段可以傳送至URL、Cookie或伺服器對伺服器目的地。
+   * 將區段拖放至目的地。
+   * 將區段拖曳至目的地後，請填入 **[!UICONTROL Destination Mapping Value]** 在盲人中。
+   * 您可以將相同的測試區段傳送至多個目的地，也可以將多個測試區段新增至單一目的地。
+   * 如果根據的特定測試區段無法使用目的地，則會以灰色顯示 [資料匯出控制](../../features/data-export-controls.md).
+   * 使用者只能根據以下專案檢視他們有權存取的目的地 [rbac使用者群組](../../features/administration/administration-overview.md) 它們屬於。
+   * 最後，您必須為測試群組選取開始日期。 此日期會標籤測試群組發佈至目的地期間的開始。 選取 **無結束日期** 進行無限期測試區段比較。
 
    >[!NOTE]
    >
-   >[!UICONTROL Profile Merge Rules] 仅在实时目标中支持使用已验证的用户档案。如果将具有该配置配置文件合并规则的测试区段发送到基于文件的服务器到服务器目标，则受众可能不会填充。
+   >[!UICONTROL Profile Merge Rules] 具有已驗證的設定檔時，僅支援即時目的地。 如果具有該設定的設定檔合併規則的測試區段傳送至檔案式伺服器對伺服器目的地，則對象可能不會填入。
 
-   单击&#x200B;**[!UICONTROL Next]**&#x200B;以查看并完成测试组。
+   按一下 **[!UICONTROL Next]** 以檢閱並完成您的測試群組。
 
 1. **[!UICONTROL Summary & Finalize]**
 
-   * 查看在前面的步骤中添加的信息，然后选择&#x200B;**[!UICONTROL Finalize Group]**。
-   * 请记住，完成测试组后，该测试组可以被复制或删除，但不能进行编辑。
+   * 檢閱您在先前步驟中新增的資訊，並選取 **[!UICONTROL Finalize Group]**.
+   * 請記住，完成測試群組後，可以複製或刪除該群組，但不能進行編輯。
 
    >[!NOTE]
-   >* 您可以在创建过程中的任意时刻保存测试组，稍后再返回到向导。 测试组状态将为&#x200B;**[!UICONTROL Draft]**，在您完成区段测试组之前，测试组不会向目标发送任何数据。
-   >* 对于草稿测试，您可以返回并编辑测试组，方法是在主视图[!UICONTROL Audience Lab]的测试组卡中单击&#x200B;**[!UICONTROL Edit]**。
+   >* 您可以在建立過程中的任何時候儲存測試群組，並稍後返回精靈。 測試群組狀態將會是 **[!UICONTROL Draft]** 而且在您完成區段測試群組之前，測試群組不會傳送任何資料至目的地。
+   >* 對於草稿測試，您可以返回並按一下以編輯測試群組 **[!UICONTROL Edit]** 在測試群組卡中 [!UICONTROL Audience Lab] 檢視。
 
 
-## 编辑区段测试组{#edit-test-groups}
+## 編輯區段測試群組 {#edit-test-groups}
 
-在[!UICONTROL Audience Lab]中，您只能编辑草稿测试组。 在[!UICONTROL Create Segment Test Group]向导中，您可以将测试组另存为草稿，然后继续处理该草稿。
+在 [!UICONTROL Audience Lab]，您只能編輯草稿測試群組。 在 [!UICONTROL Create Segment Test Group] 精靈，您可以將測試群組儲存為草稿，稍後再繼續處理。
 
-1. 导航到[!UICONTROL Audience Lab]主视图。
-1. 搜索草稿测试组，并在测试组卡中选择&#x200B;**[!UICONTROL Edit]**&#x200B;控件。
-1. 完成后，恢复[创建区段测试组](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)向导并选择&#x200B;**[!UICONTROL Finalize Group]**。
+1. 導覽至 [!UICONTROL Audience Lab] 主檢視。
+1. 搜尋您的草稿測試群組並選取 **[!UICONTROL Edit]** 控制測試群組卡片。
+1. 繼續 [建立區段測試群組](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) 精靈並選取 **[!UICONTROL Finalize Group]** 完成時。
 
-## 删除区段测试组{#delete-test-groups}
+## 刪除區段測試群組 {#delete-test-groups}
 
-1. 导航到[!UICONTROL Audience Lab]主视图。
-1. 查找要删除的测试组。 您可以:
+1. 導覽至 [!UICONTROL Audience Lab] 主檢視。
+1. 尋找您要刪除的測試群組。 您可以:
 
-   * 按测试组卡中的&#x200B;**[!UICONTROL Delete]**&#x200B;控件，或
-   * 按测试组卡中的测试组标题可转到[测试组信息](../../features/audience-lab/audience-lab-information-view.md)视图，然后按标题栏中的&#x200B;**[!UICONTROL Delete]**&#x200B;控件。
+   * 按下 **[!UICONTROL Delete]** 控制測試群組卡，或
+   * 按測試群組卡片中的測試群組標題，前往 [測試群組資訊](../../features/audience-lab/audience-lab-information-view.md) 檢視並按下 **[!UICONTROL Delete]** 標題列中的控制項。
 
-1. 对于[已完成的测试区段](../../features/audience-lab/audience-lab.md#status)，如果您愿意，系统会发出警报，提示您下载CSV文件以保存报表。
+1. 對象 [已完成的測試區段](../../features/audience-lab/audience-lab.md#status)，系統會顯示警報，提示您下載CSV檔案以儲存報表（如有需要）。

@@ -1,14 +1,14 @@
 ---
-description: '关于基于人员的目标的常见问题解答。  '
-seo-description: '关于基于人员的目标的常见问题解答。  '
-seo-title: 基于人员的目标常见问题解答
+description: 关于基于人员的目标的常见问题解答。
+seo-description: Answers to common questions about People-Based Destinations.
+seo-title: People-Based Destinations FAQ
 solution: Audience Manager
 title: 基于人员的目标常见问题解答
-feature: 基于人员的目标
+feature: People-based Destinations
 exl-id: 56506bf0-45f1-49df-81ac-10f57a2487eb
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1159'
 ht-degree: 94%
 
 ---
@@ -78,9 +78,9 @@ Audience Manager 不会摄取原始电子邮件地址，因此我们无法验证
 
 Audience Manager 可以收集每个用户的最多 10 个电子邮件地址并将这些地址发送到目标平台，但需要通过同步文件来获取这些电子邮件地址。在 Audience Manager 将电子邮件地址发送到目标平台后，由平台决定是否将电子邮件地址与其自己的用户群进行匹配。某些平台可能具有其他电子邮件地址图形，用于将 Audience Manager 发送的地址与用户配置文件进行匹配。
 
-**可以在中 [!DNL People-Based Destinations] 使 [!DNL Audience Lab]用？**
+**我可以使用 [!DNL People-Based Destinations] 在 [!DNL Audience Lab]？**
 
-不需要。当前，所有[!DNL People-Based Destinations]目标都从[!DNL Audience Lab]中排除。 由于[!DNL People-Based Destinations]和需求方平台使用不同的ID，因此您无法测试和衡量受众在受众之间的平均分配情况。
+不需要。目前，全部 [!DNL People-Based Destinations] 目的地已從中排除 [!DNL Audience Lab]. 有鑑於此 [!DNL People-Based Destinations] 需求端平台使用不同的ID，您無法在對象平均分割的情況下測試及測量效能。
 
 ## 数据导出控制 {#data-export-controls}
 
@@ -116,6 +116,6 @@ Audience Manager 可以收集每个用户的最多 10 个电子邮件地址并�
 
 这两种集成是互补的，您可以同时使用这两种集成来确保更好的受众覆盖。例如，[!DNL WCA] 可用于在公司要定位尚未注册帐户的网站访客时帮助寻找潜在客户，而 [!DNL People-Based Destinations] 则可以帮助您定位已提供其电子邮件地址但可能未访问网站的现有客户。
 
-**与支持 [!DNL People-Based Destinations] 的集 [!DNL Facebook] 成是否会在用户不再符合受众资格时取消其资格？**
+**此 [!DNL People-Based Destinations] 與整合 [!DNL Facebook] 當使用者不再符合受眾資格時，是否支援將使用者從受眾中取消資格？**
 
-是，该集成支持在用户不再符合[!DNL Facebook]受众资格时从这些受众中删除用户。
+是，整合支援將使用者從 [!DNL Facebook] 對象不再符合資格時。

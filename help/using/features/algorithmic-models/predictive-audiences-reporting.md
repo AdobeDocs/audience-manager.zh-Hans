@@ -1,79 +1,79 @@
 ---
 description: Predictive Audiences 可以帮助您使用数据科学将未知受众实时分类为不同的角色。
-seo-description: Predictive Audiences 可以帮助您使用数据科学将未知受众实时分类为不同的角色。
-seo-title: Predictive Audiences 报表
+seo-description: Predictive Audiences help you classify unknown audiences into distinct personas in real-time, using data science.
+seo-title: Predictive Audiences Reporting
 solution: Audience Manager
 title: Predictive Audiences 报表
-feature: 算法模型
+feature: Algorithmic Models
 exl-id: 43a4272c-d9be-47f6-9b81-15472b0366ab
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 6%
+source-wordcount: '609'
+ht-degree: 3%
 
 ---
 
 # Predictive Audiences 报表
 
-保存[!UICONTROL Predictive Audiences]模型后，Audience Manager会开始对其进行培训。 在几小时内，计算模型将开始分析[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs)上的受众。 报告将于次日提供。
+在您儲存 [!UICONTROL Predictive Audiences] 模型，Audience Manager會開始訓練。 在數小時內，計算模型將會開始在 [資料收集伺服器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs). 報告功能將於次日提供。
 
-要查看[!UICONTROL Predictive Audiences]分类的结果，请转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然后单击列表中的模型。
+若要檢視的結果，請 [!UICONTROL Predictive Audiences] 分類，前往 **[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然後按一下清單中的模型。
 
-使用左侧的筛选选项搜索模型名称或根据模型类型筛选结果。
+使用左側的篩選選項來搜尋模型名稱或根據模型型別篩選結果。
 
-![predictive-audiences-filter](assets/predictive-audiences-filter-models.png)
+![預測受眾 — 篩選](assets/predictive-audiences-filter-models.png)
 
-模型表显示以下信息：
+模型表格會顯示下列資訊：
 
-* **[!UICONTROL ID]**:模型ID唯一标识您的Audience Manager帐户中的每个模型；
-* **[!UICONTROL Name]**:在模型创建步骤中提供的名称；
-* **[!UICONTROL Description]**:在模型创建步骤中提供的描述；
-* **[!UICONTROL Model Type]**:每个模型的类型([!UICONTROL Look-Alike Modeling] 或 [!UICONTROL Predictive Audiences]);
-* **[!UICONTROL Status]**:每个模型的状态：
-   * **[!UICONTROL Pending]**:模型正在初始化，将很快开始产生结果；
-   * **[!UICONTROL Active]**:该模型运行成功，取得了成效；
-   * **[!UICONTROL Warning]**:由于数据不足（即基线数量低，用户配置文件不丰富），模型未能生成结果；
-   * **[!UICONTROL Error]**:模型无法运行。您应该联系Adobe代表。
+* **[!UICONTROL ID]**：模式ID可唯一識別Audience Manager帳戶中的每個模式；
+* **[!UICONTROL Name]**：您在模型建立步驟中提供的名稱；
+* **[!UICONTROL Description]**：您在模型建立步驟中提供的說明；
+* **[!UICONTROL Model Type]**：每個模型的型別([!UICONTROL Look-Alike Modeling] 或 [!UICONTROL Predictive Audiences])；
+* **[!UICONTROL Status]**：每個模型的狀態：
+   * **[!UICONTROL Pending]**：模型正在初始化，很快就會開始產生結果；
+   * **[!UICONTROL Active]**：模型成功執行並產生結果；
+   * **[!UICONTROL Warning]**：由於資料不足（即基線母體低，使用者設定檔不豐富），模型無法產生結果；
+   * **[!UICONTROL Error]**：模型無法執行。 請聯絡您的Adobe代表。
 
-## 模型概述报表{#model-report}
+## 模型概觀報表{#model-report}
 
-选择模型后，将加载其报表页面。 在页面顶部，您可以根据1天的实时实现情况，看到排名前5的最大预测区段，即模型已按目标受众分类。 **[!UICONTROL Other]**&#x200B;类别包括其余的角色，这些角色未包含在前5个最大的预测区段中。
+選擇模型後，其報表頁面即會載入。 在頁面頂端，您可以根據1天的即時實現，檢視前5個最大的預測區段，模型已依此將您的目標對象分類。 此 **[!UICONTROL Other]** 類別包含其餘角色，這些角色未包含在前5個最大的預測性區段中。
 
-Audience Manager显示颜色编码的圆环图和[!UICONTROL Predictive Audiences]的时间轴图。
+Audience Manager會同時顯示您專屬的色標環圈圖和時間軸圖表 [!UICONTROL Predictive Audiences].
 
-单击页面顶部的“角色”选项卡，以在图表和图表中添加或删除它们。
+按一下頁面頂端的角色標籤，可在圖表和圖形中新增或移除角色。
 
-圆环图可显示目标受众的基于人物的划分，而图表则显示过去6天内预测区段的1天实时人口趋势。
+環圈圖以人物為基礎顯示目標對象的劃分，而圖表則顯示過去6天預測區段的1天即時母體趨勢。
 
-如果模型状态为[!UICONTROL Pending]、[!UICONTROL Warning]或[!UICONTROL Error]，则会显示模型状态，而不是图形。
+如果模型狀態為 [!UICONTROL Pending]， [!UICONTROL Warning]，或 [!UICONTROL Error]，則會顯示模型狀態而非圖形。
 
 ![smart-persona-report](assets/predictive-audiences-report.png)
 
-报表表格显示每个[!UICONTROL Predictive Audiences]区段的以下信息。
+報告表格會顯示每個專案的下列資訊 [!UICONTROL Predictive Audiences] 區段。
 
-1. **[!UICONTROL SEGMENT ID]**:自动创建的与每个角色关联的区段的区段ID;
-1. **[!UICONTROL NAME]**:人物名称；
-1. **[!UICONTROL STATUS]**:区段的状 [!UICONTROL Predictive Audiences] 态：
-   * **[!UICONTROL Succeeded]**:用户被划分为此区段；
-   * **[!UICONTROL Pending]**:区段仍在初始化；
-   * **[!UICONTROL Insufficient Training Data]**:由于数据不足，用户未被分类到此区段。总基线人口太低，无法提供足够的数据供借鉴。
-1. **[!UICONTROL 1 DAY REAL TIME POPULATION]**:过去24小时内每个角色的区段实现次数。
-1. **[!UICONTROL 1 DAY REAL TIME POPULATION %]**:过去24小时内每个角色在总模型人口中的区段实现百分比。
+1. **[!UICONTROL SEGMENT ID]**：與每個角色相關聯之自動建立的區段的區段ID；
+1. **[!UICONTROL NAME]**：角色名稱；
+1. **[!UICONTROL STATUS]**：的狀態 [!UICONTROL Predictive Audiences] 區段：
+   * **[!UICONTROL Succeeded]**：使用者分類至此區段；
+   * **[!UICONTROL Pending]**：區段仍在初始化中；
+   * **[!UICONTROL Insufficient Training Data]**：由於資料不足，使用者未分類到此區段。 總基線母體太低，提供的資料不足以供學習。
+1. **[!UICONTROL 1 DAY REAL TIME POPULATION]**：過去24小時內每個角色的區段實現次數。
+1. **[!UICONTROL 1 DAY REAL TIME POPULATION %]**：過去24小時內，每個角色在模型母體總數中的區段實現百分比。
 
-## 具有影响力的特征{#influential-traits}
+## 具影響力的特徵{#influential-traits}
 
-[!UICONTROL Influential Traits] 是发现算法 [!UICONTROL Predictive Audiences] 是确定访客角色分类的最强预测器的特征。
+[!UICONTROL Influential Traits] 是以下條件的特徵： [!UICONTROL Predictive Audiences] 演演算法被發現是判斷訪客角色分類的最強預測因子。
 
-其符号指示特征的存在是增加(+)还是减少(-)用户属于所选角色的可能性。
+其符號表示特徵的存在會增加(+)或減少(-)使用者屬於所選角色的可能性。
 
-要查看您所有角色具有影响力的特征，请单击[!UICONTROL View All Influential Traits]。
+若要檢視所有角色具有影響力的特徵，請按一下 [!UICONTROL View All Influential Traits].
 
-[!UICONTROL Influential Traits]窗口显示选定模型中每个角色的以下信息：
+此 [!UICONTROL Influential Traits] 視窗會針對所選模型中的每個角色，顯示下列資訊：
 
-![影响力特征](assets/predictive-audiences-influential-traits.png)
+![影響特徵](assets/predictive-audiences-influential-traits.png)
 
-1. **[!UICONTROL TRAIT ID]**:选定角色中每个具有影响力特征的特征ID;
-1. **[!UICONTROL NAME]**:所选角色中每个具有影响力的特征的名称；
-1. **[!UICONTROL DESCRIPTION]**:所选角色的每个影响特征的描述；
-1. **[!UICONTROL WEIGHT]**:所选角色的每个影响特征的权重。[!UICONTROL Influential Traits] 默认按权重以降序排序。权重的值表示其预测能力。 符号指示特征的存在是增加(+)还是减少(-)属于某个角色的可能性。
-1. **[!UICONTROL 30 DAY REAL TIME POPULATION]**:过去30天中选定角色中每个具有影响力特征的独特特征实现次数。
+1. **[!UICONTROL TRAIT ID]**：所選角色每個具影響力之特徵的特徵ID；
+1. **[!UICONTROL NAME]**：所選角色每個具影響力特徵的名稱；
+1. **[!UICONTROL DESCRIPTION]**：所選角色每個具影響力特徵的說明；
+1. **[!UICONTROL WEIGHT]**：所選角色每個具影響力特徵的權重。 [!UICONTROL Influential Traits] 預設會依權重降序排序。  權重值表示其預測能力。 此符號會指出特徵的存在會增加(+)還是減少(-)屬於某個角色的可能性。
+1. **[!UICONTROL 30 DAY REAL TIME POPULATION]**：過去30天內，所選角色每個具影響力之特徵的獨特特徵實現次數。

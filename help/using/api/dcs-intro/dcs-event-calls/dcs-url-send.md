@@ -1,7 +1,7 @@
 ---
-description: 从此处开始，了解有关对DCS进行/event调用的信息。 本节包含有关调用语法、参数、格式和请求示例的信息。
-seo-description: 从此处开始，了解有关对DCS进行/event调用的信息。 本节包含有关调用语法、参数、格式和请求示例的信息。
-seo-title: 将数据发送到 DCS
+description: 從這裡開始，瞭解如何對DCS進行/event呼叫。 本節包含呼叫語法、引數、格式設定和請求範例的相關資訊。
+seo-description: Start here for information about making /event calls to the DCS. This section includes information about call syntax, parameters, formatting, and a request example.
+seo-title: Send Data to the DCS
 solution: Audience Manager
 title: 将数据发送到 DCS
 uuid: 024e307d-bfcb-46cf-ac3a-fc71df0248fe
@@ -9,22 +9,22 @@ feature: DCS
 exl-id: 8a6798c3-aafd-48c8-acd7-a0e29e04dc8e
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '392'
 ht-degree: 6%
 
 ---
 
 # 将数据发送到 DCS {#send-data-to-the-dcs}
 
-从此处开始，了解有关对[!DNL DCS]进行`/event`调用的信息。 本节包含有关调用语法、参数、格式和请求示例的信息。
+從這裡開始，瞭解如何製作 `/event` 呼叫 [!DNL DCS]. 本節包含呼叫語法、引數、格式設定和請求範例的相關資訊。
 
 >[!NOTE]
 >
->在代码和示例中， *斜体*&#x200B;表示变量占位符。 使用此方法将数据发送到[!DNL DCS]时，替换占位符的实际值。
+>在程式碼和範例中， *斜體* 代表變數預留位置。 將資料傳送至時，以實值取代預留位置 [!DNL DCS] 使用此方法。
 
-## 调用语法{#dcs-call-syntax}
+## 呼叫語法 {#dcs-call-syntax}
 
-将数据发送到[!DNL DCS]的基本`URL`字符串使用以下语法。
+基本 `URL` 將資料傳送至的字串 [!DNL DCS] 會使用下列語法。
 
 ```js
 https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_cb=callback
@@ -32,11 +32,11 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 
 >[!NOTE]
 >
->您还可以使用`POST`方法将数据发送到[!DNL DCS]。 [DCS API方法](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)中介绍了调用语法。
+>您也可以將資料傳送至 [!DNL DCS] 藉由使用 `POST` 方法。 呼叫語法的說明，請參閱 [DCS API方法](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md).
 
-## 调用参数{#dcs-call-parameters}
+## 呼叫引數 {#dcs-call-parameters}
 
-下表定义了简单[!DNL DCS]调用的基本组件。
+下表定義簡單的基本元件 [!DNL DCS] 呼叫。
 
 <table id="table_5F6A5B324EB848168543386516FBF384"> 
  <thead> 
@@ -48,31 +48,31 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> domain alias.demdex.net</code> </p> </td> 
-   <td colname="col2"> <p>调用的此部分包含： </p> <p> 
+   <td colname="col2"> <p>這部分呼叫包含： </p> <p> 
      <ul id="ul_3EDA9C7BA6794D06BCB07A75A9BD2372"> 
-      <li id="li_74624CA78D6F4536A8164AE1FA1DECB9">由<span class="keyword">Audience Manager</span>分配的域别名（例如<code> my_domain.demdex.net</code>）。 </li> 
-      <li id="li_08ABE91CA247403AA480B3FB4BEF83BA">目标域，始终为<code> demdex.net</code>。 请参阅<a href="../../../reference/demdex-calls.md">了解 Demdex 域调用</a>。 </li> 
+      <li id="li_74624CA78D6F4536A8164AE1FA1DECB9">您的網域別名指派者 <span class="keyword"> Audience Manager</span> (例如， <code> my_domain.demdex.net</code>)。 </li> 
+      <li id="li_08ABE91CA247403AA480B3FB4BEF83BA">目的地網域，一律為 <code> demdex.net</code>. 请参阅<a href="../../../reference/demdex-calls.md">了解 Demdex 域调用</a>。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> /event?</code> </p> </td> 
-   <td colname="col2"> <p>此部分调用： </p> <p> 
+   <td colname="col2"> <p>通話的這個部分： </p> <p> 
      <ul id="ul_6332444A305A4F12A7CBE471CA508516"> 
-      <li id="li_1C5C111B2B0E4621B3FC0C20D6516041">将调用标识为事件调用。 </li> 
-      <li id="li_DBCE9B1C70604A629ECD7AC0A9052198">定义包含要发送到<span class="wintitle"> DCS</span>的数据的URL字符串的开头。 </li> 
+      <li id="li_1C5C111B2B0E4621B3FC0C20D6516041">將呼叫識別為事件呼叫。 </li> 
+      <li id="li_DBCE9B1C70604A629ECD7AC0A9052198">定義包含您要傳送至之資料的URL字串起始 <span class="wintitle"> DCS</span>. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> key</code> </p> </td> 
-   <td colname="col2"> <p>键值对中的唯一标识符。 </p> <p>这些键值对使用特定前缀来标识要发送到<span class="wintitle"> DCS</span>的数据类型。 有关更多信息，请参阅<a href="../../../api/dcs-intro/dcs-api-reference/dcs-keys.md"> DCS API调用支持的属性</a> 。 </p> </td> 
+   <td colname="col2"> <p>機碼值組中的唯一識別碼。 </p> <p>這些機碼值組會使用特定首碼來識別您要傳送至的資料型別 <span class="wintitle"> DCS</span>. 如需詳細資訊，請參閱 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-keys.md"> DCS API呼叫的支援屬性</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> val</code> </p> </td> 
-   <td colname="col2"> <p>属于键值对中由键定义的集的变量值。 </p> <p>使用值时： </p> <p> 
+   <td colname="col2"> <p>屬於索引鍵/值配對中索引鍵所定義之集合的變數值。 </p> <p>使用值時： </p> <p> 
      <ul id="ul_624DC78759F74AD8920220058E54E083"> 
-      <li id="li_091E5B4820EC4A93B775433E428E74AB">用双引号引住字符串数据（例如<code> age="41 to 55"</code>）。 </li> 
-      <li id="li_C558E3BA6EE34413BBBB962D4CD0D10E">您可以在一个值（例如，<i><code>key</i>=<i>val1,val2,val3</i></code></i>）上传递多个键。 </li> 
-     </ul> </p> <p>请参阅<a href="../../../api/dcs-intro/dcs-api-reference/dcs-key-format.md">格式化DCS调用中的键值对</a>。 </p> </td>
+      <li id="li_091E5B4820EC4A93B775433E428E74AB">以雙引號括住字串資料(例如， <code> age="41 to 55"</code>)。 </li> 
+      <li id="li_C558E3BA6EE34413BBBB962D4CD0D10E">您可以在單一值上傳入多個索引鍵(例如， <i><code>key</i>=<i>val1,val2,val3</i></code></i>)。 </li> 
+     </ul> </p> <p>另請參閱 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-key-format.md"> 格式化DCS呼叫中的索引鍵值配對</a>. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> 
@@ -81,14 +81,14 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
       <li id="li_4B6B29499D444E31808DE0A9AA0442D0"> <code> d_rtbd=json</code> </li> 
       <li id="li_3430CD0438604B83BE6437E6EC480816"> <code>d_cb=<i>callback</i></code> </li>
      </ul> </p> </td> 
-   <td colname="col2"> <p>可选响应参数。 </p> <p> 向<span class="wintitle"> DCS</span>发送数据时，无需执行上述任何操作。 但是，如果您希望<span class="wintitle"> DCS</span>返回响应，则必须在请求中包含<code> d_rtbd=json</code>。 </p> <p>请参阅<a href="../../../api/dcs-intro/dcs-api-reference/dcs-keys.md#d-attributes"> d_定义的键值对</a>。 </p> </td> 
+   <td colname="col2"> <p>選擇性回應引數。 </p> <p> 這些都不需要用來傳送資料給 <span class="wintitle"> DCS</span>. 不過，如果您想要 <span class="wintitle"> DCS</span> 若要傳回回應，您必須包含 <code> d_rtbd=json</code> 在您的請求中。 </p> <p>另請參閱 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-keys.md#d-attributes"> 已定義d_機碼值組</a>. </p> </td> 
   </tr>
  </tbody>
 </table>
 
-## 示例调用{#dcs-sample-call}
+## 呼叫範例 {#dcs-sample-call}
 
-此示例展示了虚构公司[!DNL Acme, Inc.]通过[!DNL HTTP]调用向[!DNL DCS]发送数据。 请注意，此调用包含可选参数`d_dst=1`、`d_rtbd=json`和`d_cb=callback`。 这表示[!DNL Acme]想要从[!DNL DCS]接收带有回调函数的[!DNL JSON]响应。 记住，这只是一个例子。 请勿剪切并粘贴此代码。
+此範例顯示虛構的公司 [!DNL Acme, Inc.] 將資料傳送至 [!DNL DCS] 透過 [!DNL HTTP] 呼叫。 請注意，此呼叫包含選用引數 `d_dst=1`， `d_rtbd=json`、和 `d_cb=callback`. 這些表示 [!DNL Acme] 想要接收 [!DNL JSON] 回應來自 [!DNL DCS] 使用回呼函式。 請記住，這只是個範例。 請勿剪下並貼上此程式碼。
 
 ```js
 https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_rtbd=json&d_cb=acme_callback
@@ -96,7 +96,7 @@ https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_r
 
 ## 后续步骤 {#dcs-next-steps}
 
-现在，您已熟悉向[!DNL DCS]发送数据，接下来该看看如何从中获取数据并解析该信息。 请参阅[从DCS接收数据](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)。
+現在您已熟悉傳送資料至 [!DNL DCS]，現在該審視如何從其中取回資料，並剖析該資訊了。 另請參閱 [從DCS接收資料](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md).
 
 >[!MORELIKETHIS]
 >

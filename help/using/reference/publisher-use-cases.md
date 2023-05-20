@@ -1,15 +1,15 @@
 ---
 description: 了解 Adobe Audience Manager 可以满足的一些常见出版商需求。
-seo-description: 了解 Adobe Audience Manager 可以满足的一些常见出版商需求。
-seo-title: 出版商用例
+seo-description: A look at some common publisher needs met by Adobe Audience Manager.
+seo-title: Publisher Use Cases
 solution: Audience Manager
 title: 出版商用例
 uuid: 5f571d60-d902-4958-b5d3-8d09ddda42c7
-feature: 参考
+feature: Reference
 exl-id: 974652de-59c0-46db-ac64-ba701985e409
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '615'
 ht-degree: 100%
 
 ---

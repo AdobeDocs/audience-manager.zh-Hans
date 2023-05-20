@@ -1,28 +1,28 @@
 ---
-description: 根据信号类型过滤信号搜索的结果。
-seo-description: 根据信号类型过滤信号搜索的结果。
-seo-title: 筛选搜索结果
+description: 根據訊號型別篩選訊號搜尋的結果。
+seo-description: Filter the results of a signal search based on the signal type.
+seo-title: Filter Search Results
 title: 筛选搜索结果
 uuid: 7b764a5d-f8ae-4f7b-83f5-7f6c40de639b
 feature: Data Explorer
 exl-id: df178712-6417-4c4d-b5f8-5a8c00bfcd12
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 7%
+source-wordcount: '124'
+ht-degree: 4%
 
 ---
 
 # 筛选搜索结果 {#filter-search-results}
 
-根据信号类型过滤信号搜索的结果。
+根據訊號型別篩選訊號搜尋的結果。
 
-1. 转到[!UICONTROL Audience Data > Signals > Search]，然后使用过滤器运行包含所需键值对的[!UICONTROL Signals Search]，或进行更广泛的搜索。
-1. 使用&#x200B;**[!UICONTROL Filter by Signal Type]**&#x200B;部分可根据以下类别筛选结果：
+1. 前往 [!UICONTROL Audience Data > Signals > Search] 並執行 [!UICONTROL Signals Search] 使用篩選器找到所需的索引鍵值配對，或是進行更廣泛的搜尋。
+1. 使用 **[!UICONTROL Filter by Signal Type]** 區段，根據下列類別篩選結果：
 
-   * **[!UICONTROL Actionable log files]**:通过日志文件 [!DNL Google] [!DNL DCM] 接收的信号；
-   * **[!DNL Adobe Analytics]**:从您的帐户接收 [!DNL Adobe Analytics] 的信号。使用&#x200B;**[!UICONTROL Filter by report suites]**&#x200B;下拉菜单选择要显示其信号的报表包。
-   * **[!UICONTROL General online data]**:由访客生成且未包含在可操作日志文件和中的实时数据 [!DNL Adobe Analytics];
-   * **[!UICONTROL Onboarded records]**:通过批量数据传输接收的数据。使用&#x200B;**[!UICONTROL Filter by data source]**&#x200B;下拉菜单选择要显示其信号的数据源。
+   * **[!UICONTROL Actionable log files]**：透過接收的訊號 [!DNL Google] [!DNL DCM] 記錄檔；
+   * **[!DNL Adobe Analytics]**：從您的系統接收的訊號 [!DNL Adobe Analytics] 帳戶。 使用 **[!UICONTROL Filter by report suites]** 下拉式功能表以選取要顯示訊號的報表套裝。
+   * **[!UICONTROL General online data]**：訪客產生的即時資料，不會包含在可操作的記錄檔和中 [!DNL Adobe Analytics]；
+   * **[!UICONTROL Onboarded records]**：透過批次資料傳輸接收的資料。 使用 **[!UICONTROL Filter by data source]** 下拉式選單來選取要顯示訊號的資料來源。
 
-1. 或者，您也可以选择[保存搜索条件](../../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)以供将来使用。
+1. 或者，您可以 [儲存搜尋條件](../../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md) 以供日後使用。

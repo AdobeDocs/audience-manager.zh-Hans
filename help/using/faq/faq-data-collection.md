@@ -5,7 +5,7 @@ seo-title: Data Collection and Product Integration FAQ
 solution: Audience Manager
 title: 数据收集和产品集成常见问题解答
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
-keywords: SFTP;SFTP地址；STFP IP地址；FTP地址
+keywords: SFTP；SFTP位址；STFP IP位址；FTP位址
 feature: Administration
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
 source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
@@ -31,24 +31,24 @@ ht-degree: 79%
 
 <br> 
 
-**能否为我提供可添加到dpm.demdex.net允许列表的IP地址列表？**
+**能提供可以新增至dpm.demdex.net允許清單的IP位址清單嗎？**
 
 抱歉，我们无法为您提供这样的列表。这些 IP 是通过 [!DNL Amazon Web Services] 按地域动态分配的。因此，[!DNL Audience Manager] 无法控制可分配给此地址的 IP 范围。
 
  
 
-**能否为我提供一个IP地址，以便我将其添加到入站SFTP服务器和出站SFTP服务器的允许列表中？**
+**能提供可以新增至傳入和傳出SFTP伺服器允許清單的IP位址嗎？**
 
 可以，请参见下文。
 
 | 服务器 | IP 地址 |
 | ---------|----------|
-| ftp-in-gtw.demdex.com | 52.3.74.119;3.233.68.222 |
-| ftp-out-gtw.demdex.com | 23.22.232.252;18.211.109.184 |
+| ftp-in-gtw.demdex.com | 52.3.74.119; 3.233.68.222 |
+| ftp-out-gtw.demdex.com | 23.22.232.252; 18.211.109.184 |
 
  
 
-已弃用以下SFTP服务器。 不会使用这些服务器配置新帐户。
+以下的SFTP伺服器已過時。 不會使用這些伺服器布建任何新帳戶。
 
 | 服务器 | IP 地址 |
 |---------|----------|
@@ -57,15 +57,15 @@ ht-degree: 79%
 
  
 
-**如何配置我的Audience Manager实例以使用新的SFTP服务器？**
+**如何設定我的Audience Manager執行個體來使用新的SFTP伺服器？**
 
-联系您的 [!DNL Audience Manager] 顾问或客户关怀团队，他们将配置您的新SFTP帐户。
+聯絡您的 [!DNL Audience Manager] 顧問或客戶服務，他們會設定您的新SFTP帳戶。
 
  
 
-**新SFTP服务器支持哪些身份验证方法？**
+**新SFTP伺服器支援哪些驗證方法？**
 
-新的SFTP服务器(`ftp-in-gtw` 和 `ftp-out-gtw`)支持 [!DNL OpenSSH Key-Based Authentication]. 我们可以生成 [!DNL SSH] 您的密钥，或者您可以为我们提供您自己的公钥。
+新SFTP伺服器(`ftp-in-gtw` 和 `ftp-out-gtw`)支援 [!DNL OpenSSH Key-Based Authentication]. 我們可以產生 [!DNL SSH] 金鑰，或者您可以向我們提供自己的公開金鑰。
 
  
 
@@ -83,7 +83,7 @@ ht-degree: 79%
 
 * 将 [!UICONTROL DIL] 直接放置到 `s_code` 中。
 
-* 服务 [!UICONTROL DIL] 和 `s_code` 至 [!DNL Adobe Experience Platform Tags].
+* 服務 [!UICONTROL DIL] 和 `s_code` 到 [!DNL Adobe Experience Platform Tags].
 
 请参阅[数据集成库 (DIL) API](../dil/dil-overview.md)。
 
@@ -152,7 +152,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **[!DNL Google Ad Manager]我希望在一个网站上收集数据，并通过 在另一个网站上定位用户。如果我不想从其他资产中收集数据，是否需要在该位置部署代码？**
 
-不需要。如果不需要在另一个网站上收集数据，则无需在该网站上部署 DIL。只要您通过访问 [!DNL Google Ad Manager]，则可以使用从初始网站和Target中通过 [!DNL Google Ad Manager].
+不需要。如果不需要在另一个网站上收集数据，则无需在该网站上部署 DIL。只要您能透過存取第二個網站的詳細目錄 [!DNL Google Ad Manager]，您可以透過以下方式使用來自初始網站和目標的資料收集： [!DNL Google Ad Manager].
 
 <br> 
 
@@ -162,9 +162,9 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**如何 [!DNL Audience Manager] 设置cookie并将变量传递到 [!DNL Google Ad Manager]?**
+**如何 [!DNL Audience Manager] 設定Cookie並將變數傳遞至 [!DNL Google Ad Manager]？**
 
-[!DNL Audience Manager] 设置2个Cookie:一种方法是将区段变量发送到 [!DNL Google Ad Manager] 广告标记，而其他标记则会设置我们的独特用户ID(UUID)，该ID也会被 [!DNL Google Ad Manager]. 将 UUID 添加到广告标记意味着我们可以执行用户级报表和受众发现操作。
+[!DNL Audience Manager] 設定2個Cookie：一個會將區段變數傳送至 [!DNL Google Ad Manager] 廣告標籤與其他標籤會設定我們的不重複使用者ID (UUID)，此ID也會由以下讀取： [!DNL Google Ad Manager]. 将 UUID 添加到广告标记意味着我们可以执行用户级报表和受众发现操作。
 
 <br> 
 
@@ -208,8 +208,8 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
  
 
-**非活动的Amazon S3用户访问密钥有何变化？**
+**非作用中Amazon S3使用者存取金鑰有何變化？**
 
-Adobe为Audience Manager客户提供用户访问Audience Manager键 [!DNL Amazon S3] 存储段。 出于安全原因，密钥在处于不活动状态100天后会自动禁用。
+Adobe為Audience Manager客戶提供Audience Manager的使用者存取金鑰 [!DNL Amazon S3] 值區。 基於安全考量，閒置100天後會自動停用金鑰。
 
-要重新启用访问密钥或请求新密钥，请联系客户支持。
+若要重新啟用存取金鑰或請求新金鑰，請聯絡客戶支援。

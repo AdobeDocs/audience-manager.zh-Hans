@@ -1,18 +1,18 @@
 ---
-description: 有关最新DIL版本的信息，请参阅此页面
-seo-description: 有关最新DIL版本的信息，请参阅此页面
-seo-title: DIL 发行说明
+description: 如需最新DIL發行版本的詳細資訊，請參閱本頁面
+seo-description: Refer to this page for information about the latest DIL releases
+seo-title: DIL Release Notes
 solution: Audience Manager
 title: DIL 发行说明
-feature: DIL实施
+feature: DIL Implementation
 exl-id: 71513875-c2e4-4866-ac14-0e1b382e0e56
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 22%
+source-wordcount: '47'
+ht-degree: 23%
 
 ---
 
 # DIL 发行说明
 
-有关最新DIL版本的信息，请参阅此页面。 DIL可在Adobe的[Github页面](https://github.com/Adobe-Marketing-Cloud/dil/releases)上直接下载，并提供发行说明。
+請參閱本頁以取得最新DIL版本的資訊。 DIL可透過發行說明直接下載到Adobe的 [Github頁面](https://github.com/Adobe-Marketing-Cloud/dil/releases).

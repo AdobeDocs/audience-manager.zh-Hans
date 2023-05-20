@@ -1,36 +1,36 @@
 ---
-description: 有关如何使用某些常用宏创建出站文件模板的示例。
-seo-description: 有关如何使用某些常用宏创建出站文件模板的示例。
-seo-title: 出站宏示例
+description: 如何使用部分通用巨集建立輸出檔案範本的範例。
+seo-description: Examples of how some of the common macros are used to create outbound file templates.
+seo-title: Outbound Macro Examples
 solution: Audience Manager
 title: 出站宏示例
 uuid: 823d85d4-d683-45cf-9e60-c12b7d52a498
-feature: 出站数据传输
+feature: Outbound Data Transfers
 exl-id: 7e3f2b25-7b7c-47fe-aa62-7ebd4e25f9ba
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '316'
 ht-degree: 14%
 
 ---
 
 # 出站宏示例 {#outbound-macro-examples}
 
-有关如何使用某些常用宏创建出站文件模板的示例。
+如何使用部分通用巨集建立輸出檔案範本的範例。
 
 >[!NOTE]
 >
->在表中， **boldface**&#x200B;类型使用其相关输出标识每个宏。 对于格式示例，已添加`<` `>`符号，以帮助直观地分隔每个宏。
+>在表格中， **粗體** type會識別每個巨集及其相關輸出。 对于格式示例， `<` `>` 添加了符号以帮助直观地分隔每个宏。
 
-## 文件名宏{#file-name-macros}
+## 文件命名宏 {#file-name-macros}
 
-有关可用宏和定义的列表，请参阅[出站模板宏](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)。
+有关可用宏和定义的列表，请参阅 [ 出站模板宏 ](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md) 。
 
 <table id="table_B5073597219B470298EE614902DACAE8"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 宏 </th> 
-   <th colname="col2" class="entry"> 格式和输出示例 </th> 
+   <th colname="col1" class="entry"> 宏观 </th> 
+   <th colname="col2" class="entry"> 格式和 Output 示例 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -51,7 +51,7 @@ ht-degree: 14%
    <td colname="col2"> <p>格式: <code> &lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_ &lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;.sync </code> </p> <p>Output（输出）: </p> <p> 
      <ul id="ul_F63D7B78AF1246639D6ED85C1621B17C"> 
       <li id="li_4D0D7B4D047345FE861FCBA2BD0408ED">完全: <code> ftp_215_888_ full_1449756724.sync </code> </li> 
-      <li id="li_23F4D1F6B2784E599EDA29AA457327E6">增量：<code> ftp_215_888_ iter_1449756724.sync </code> </li> 
+      <li id="li_23F4D1F6B2784E599EDA29AA457327E6">增量： <code> ftp_215_888_ iter_1449756724.sync </code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -70,34 +70,34 @@ ht-degree: 14%
  </tbody> 
 </table>
 
-## 标题行宏{#header-macros}
+## 标题行宏 {#header-macros}
 
-有关可用宏和定义的列表，请参阅[出站模板宏](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)。
+有关可用宏和定义的列表，请参阅 [ 出站模板宏 ](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md) 。
 
 <table id="table_ABC31B3D660D47969E111EBC734D5BBC"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 宏 </th> 
-   <th colname="col2" class="entry"> 格式和输出示例 </th> 
+   <th colname="col1" class="entry"> 宏观 </th> 
+   <th colname="col2" class="entry"> 格式和 Output 示例 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> TAB </code> </p> </td> 
-   <td colname="col2"> <p>格式: <code> &lt;ORDER_ID&gt; &lt;TAB&gt;&lt;SYNC_TYPE&gt; </code> </p> <p>Output（输出）: <code> 888 full.sync </code> </p> <p>在输出中，非打印制表符用于分隔每个元素。 </p> </td>
+   <td colname="col2"> <p>格式: <code> &lt;ORDER_ID&gt; &lt;TAB&gt;&lt;SYNC_TYPE&gt; </code> </p> <p>Output（输出）: <code> 888 full.sync </code> </p> <p>在输出中，非打印选项卡字符将分隔每个元素。 </p> </td>
   </tr>
  </tbody>
 </table>
 
-## 文件内容宏{#file-content-macros}
+## 文件内容宏 {#file-content-macros}
 
-有关可用宏和定义的列表，请参阅[出站模板宏](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)。
+如需可用巨集和定義的清單，請參閱 [輸出範本巨集](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md).
 
 <table id="table_408C6DD2B9D54550B003EAC93562E64F"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 宏 </th> 
-   <th colname="col2" class="entry"> 格式和输出示例 </th> 
+   <th colname="col1" class="entry"> 巨集 </th> 
+   <th colname="col2" class="entry"> 格式和輸出範例 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -128,7 +128,7 @@ ht-degree: 14%
        {"AdvertiserId":"&lt;PIDALIAS&gt;",&nbsp;"DataCenterId":&nbsp;2,"TDID":"&lt;DP_UUID&gt;", "Data":[&lt;SEGMENT_LIST:{seg|&lt;OPEN_CURLY_BRACKET&gt;"Name":"&lt;seg.alias&gt;"&lt;CLOSE_CURLY_BRACKET&gt;}; separator=","&gt;&lt;if(SEGMENT_LIST&nbsp;&amp;&amp;&nbsp;REMOVED_SEGMENT_LIST)&gt;&lt;COMMA&gt;&lt;endif&gt; &lt;REMOVED_SEGMENT_LIST:{seg|&lt;OPEN_CURLY_BRACKET&gt;"Name":"&lt;seg.alias&gt;", "TtlInMinutes":0&lt;CLOSE_CURLY_BRACKET&gt;};&nbsp;separator=","&gt;]}
      </code></p><p><b>Output（输出）:</b></p> <p>
      <code>//First&nbsp;example {"AdvertiserId":"12345",&nbsp;"DataCenterId":&nbsp;2, "TDID":"dfd215e4-8d6b-4fdb-90b9-fab4456f2c9d","Data":[{"Name":"4321"}]} //Second&nbsp;example {"AdvertiserId":"12345",&nbsp;"DataCenterId":&nbsp;2,"TDID":"9099e8fe-abab-5114-abaa-28bdaa0539ca","Data":[{"Name":"4321"},{"Name":"987","TtlInMinutes":0}, {"Name":"654","TtlInMinutes":0}]} 
-     </code></p> <p> <p>注意： 在第一个示例中，宏仅返回<code> SEGMENT_LIST </code>的数据，因为<code> REMOVED_SEGMENT_LIST </code>为空。 第二个示例返回两个宏的数据。 </p> </p> </td> 
+     </code></p> <p> <p>注意：在第一个示例中，宏仅为空而返回数据 <code> SEGMENT_LIST </code> <code> REMOVED_SEGMENT_LIST </code> 。 第二个示例返回两个宏的数据。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SET_ATTRIBUTES </code> </p> </td> 
@@ -136,7 +136,7 @@ ht-degree: 14%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> TAB </code> </p> </td> 
-   <td colname="col2"> <p>格式: <code> &lt;DP_UUID&gt;&lt;TAB&gt;&lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>Output（输出）: <code> 123456 UUID1 UUID2 UUID3 </code> </p> <p>在输出中，非打印制表符用于分隔每个元素。 </p> </td> 
+   <td colname="col2"> <p>格式: <code> &lt;DP_UUID&gt;&lt;TAB&gt;&lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>Output（输出）: <code> 123456 UUID1 UUID2 UUID3 </code> </p> <p>在输出中，非打印选项卡字符将分隔每个元素。 </p> </td> 
   </tr>
   <tr>
    <td colname="col1"> <p> <code> TRAIT_LIST </code> </p> </td> 
@@ -147,36 +147,36 @@ ht-degree: 14%
 
 ### `DPUUID` 示例
 
-为了帮助您了解`DPUUID`宏如何输出数据，我们假定有2个`DPID`映射到`DPUUID`，如下所示：
+为了帮助您了解宏如何 `DPUUID` 输出数据，我们假定我们有 2 `DPID` 个映射到 `DPUUID` s，如下所示：
 
-* DPID `1111`映射到DPUUID `AAAA`（时间戳= 1）和`BBBB`（时间戳= 2）。
-* DPID `2222`映射到DPUUID `CCCC`。
+* DPID `1111` 映射到宏 `AAAA` （timestamp = 1）和 `BBBB` （timestamp = 2）。
+* DPID `2222` 映射到 DPUUID `CCCC` 。
 
-根据这些条件，下表枚举了一些可能的格式字符串及其输出。
+鉴于这些条件，下表列举了一些可能的格式字符串及其输出。
 
 <table id="table_6A6D94F994C1475BB09126BA0B815B1F"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 映射条件 </th> 
-   <th colname="col2" class="entry"> 宏格式 </th> 
+   <th colname="col1" class="entry"> 對應條件 </th> 
+   <th colname="col2" class="entry"> 巨集格式 </th> 
    <th colname="col3" class="entry"> Output（输出） </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>返回单个DPID的所有映射 </p> </td> 
+   <td colname="col1"> <p>返回单个 DPID 的所有映射 </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=1111|maxMappings=0|format=json"&gt; </code> </p> </td> 
    <td colname="col3"> <p> <code> [["1111","AAAA"],["1111","BBBB"]] </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>为所有DPID返回最多1个映射 </p> </td> 
+   <td colname="col1"> <p>为所有 DPIDs 返回最多1个映射 </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=1111,2222|maxMappings=1|format=json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>对于DPID <code> 1111 </code>，宏仅因为该ID的时间戳较大而映射到DPUUID <code> BBBB </code>。 </p> </td> 
+   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>对于 DPID <code> 1111 </code> ，宏仅映射到 DPUUID <code> BBBB </code> ，因为该 ID 具有更大的时间戳。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>为单个DPID返回最多2个映射 </p> </td> 
+   <td colname="col1"> <p>为单个 DPID 返回最多2个映射 </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=2222|maxMappings=2|format=json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>即使<code> maxMappings=2 </code>，此宏也只会返回1个DPID到DPUUID的映射，因为指定的DPID只有一个DPUUID。 </p> </td> 
+   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>但是 <code> maxMappings=2 </code> ，此宏只会为 DPUUID 映射返回1个 DPID，因为指定的 DPID 只有一个 DPUUID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
