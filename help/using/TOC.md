@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Audience Manager 用户指南
 user-guide-description: 了解如何使用 Adobe Audience Manager 收集有关网站访客的商业相关信息以及创建适销区段。您还可以找到有关如何向合适的受众提供定向广告和内容的详细信息。
 feature-set: Audience Manager
-source-git-commit: e50aab600f0bf197b1356ba77ac86efb4456979a
+source-git-commit: 27581b03b71d5254f24d7e46646abce82f9e4df2
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 91%
+source-wordcount: '1827'
+ht-degree: 90%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 91%
 # Audience Manager 用户指南 {#user-guide}
 
 + [Audience Manager 指南](aam-home.md)
++ [Real-Time CDP演进指南Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
 + 概述{#overview}
    + [Audience Manager 概述](overview/aam-overview.md)
    + [收集的数据类型](overview/data-types-collected.md)
@@ -33,11 +34,11 @@ ht-degree: 91%
          + [同意管理](overview/data-security-and-privacy/data-privacy-consent.md)
          + [适用于 IAB TCF 的 Audience Manager 插件](overview/data-security-and-privacy/aam-iab-plugin.md)
    + [数据管理](overview/data-security-and-privacy/data-governance.md)
-   + [Audience Manager 中的辅助功能](/help/using/overview/accessibility-in-aam.md)
+   + [Audience Manager中的辅助功能](/help/using/overview/accessibility-in-aam.md)
 + 功能{#features}
    + [可寻址受众](features/addressable-audiences.md)
    + 管理{#administration}
-      + [Audience Manager 将用户迁移到 Admin Console](features/administration/admin-console-migration.md)
+      + [Audience Manager用户迁移到Admin Console](features/administration/admin-console-migration.md)
       + [管理](features/administration/administration-overview.md)
       + [编辑帐户设置](features/administration/edit-account-settings.md)
       + [IP 地址模糊处理](features/administration/ip-obfuscation.md)
@@ -112,7 +113,7 @@ ht-degree: 91%
          + [添加新的基于设备的目标](features/destinations/add-device-based-destinations.md)
          + [Audience Manager 基于设备的目标列表](/help/using/features/destinations/device-based-destinations-list.md)
          + [添加或编辑服务器到服务器目标的区段](features/destinations/add-edit-segments.md)
-         + [将 Twitter 自定义 Audiences 配置为基于自助服务设备的目标](features/destinations/twitter-tailored-audiences.md)
+         + [将Twitter自定义受众配置为基于设备的自助服务目标](features/destinations/twitter-tailored-audiences.md)
       + 自定义目标 {#custom-destinations}
          + [配置 URL 目标](features/destinations/create-url-destination.md)
          + [配置 Cookie 目标](features/destinations/create-cookie-destination.md)
@@ -181,7 +182,7 @@ ht-degree: 91%
       + [Audience Optimization 报表](reporting/audience-optimization-reports/audience-optimization-reports.md)
       + 适用于广告商的 Audience Optimization {#audience-optimization-advertisers}
          + [适用于广告商的 Audience Optimization 概述](reporting/audience-optimization-reports/aor-advertisers/aor-advertisers.md)
-         + [导入 Google Campaign Manager 数据文件 Audience Manager](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+         + [将Google Campaign Manager数据文件导入Audience Manager](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
          + [区段绩效报表](reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)
          + [趋势分析和数量分析报表](reporting/audience-optimization-reports/aor-advertisers/trend-analysis-volume-analysis.md)
          + [最佳频度报表](reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md)
@@ -190,7 +191,7 @@ ht-degree: 91%
          + [跨渠道转化](reporting/audience-optimization-reports/aor-advertisers/cross-channel-conversion-reporting.md)
       + 适用于出版商的 Audience Optimization {#audience-optimization-publishers}
          + [适用于出版商的 Audience Optimization 概述](reporting/audience-optimization-reports/aor-publishers/aor-publishers.md)
-         + [导入 Google Ad Manager （以前的 DFP）数据文件入 Audience Manager](reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
+         + [将Google Ad Manager（以前称为DFP）数据文件导入Audience Manager](reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
          + [区段绩效报表](reporting/audience-optimization-reports/aor-publishers/publisher-segment-performance.md)
          + [区段趋势报表](reporting/audience-optimization-reports/aor-publishers/publisher-segment-trends.md)
          + [排名最前的未使用特征](reporting/audience-optimization-reports/aor-publishers/publisher-top-unused-traits.md)
@@ -198,7 +199,7 @@ ht-degree: 91%
          + [区段到广告单元重叠](reporting/audience-optimization-reports/aor-publishers/publisher-segment-ad-unit-overlap.md)
          + [独特用户范围](reporting/audience-optimization-reports/aor-publishers/publisher-unique-reach.md)
       + Audience Optimization 报表的数据和元数据文件以及可操作的日志文件{#data-and-metadata-files}
-         + [ 日志数据和元数据文件](reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
+         + [日志数据和元数据文件](reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
          + [Audience Optimization 报表的数据文件以及可操作的日志文件](reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
          + [元数据文件的概述和映射](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
          + [元数据文件的命名约定](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)
@@ -238,7 +239,7 @@ ht-degree: 91%
          + [DCS API 参考概述](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
          + [DCS API 方法](api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
          + [DCS 错误代码、消息和示例](api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
-         + [ID 监测和 Denylisting](api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
+         + [ID监控和ID列入阻止列表](api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
          + [DCS 区域 ID、位置和主机名](api/dcs-intro/dcs-api-reference/dcs-regions.md)
          + [格式化 DCS 调用中的键值对](api/dcs-intro/dcs-api-reference/dcs-key-format.md)
          + [争用条件和错误处理](api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
@@ -285,9 +286,9 @@ ht-degree: 91%
 + 实施和集成指南{#implementation-integration-guides}
    + [实施和集成指南](integration/implementation-and-integration.md)
    + [数据集成方法](integration/data-integration-methods.md)
-   + 使用 Google Publisher 标记（GPT）集成 Google 广告管理器{#integrate-dfp-using-gpt}
-      + [使用 GPT 概述集成 Google 广告管理器](integration/gpt-aam-destination/gpt-aam-overview.md)
-      + [使用 GPT 将区段发送到 Google 广告管理器](integration/gpt-aam-destination/gpt-aam-requirements.md)
+   + 使用Google发布商标记(GPT)集成Google广告管理器{#integrate-dfp-using-gpt}
+      + [使用GPT集成Google Ad Manager概述](integration/gpt-aam-destination/gpt-aam-overview.md)
+      + [使用GPT将区段发送到Google广告管理器](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [创建 GPT 目标](integration/gpt-aam-destination/gpt-aam-create-destination.md)
       + [修改 GPT setTargeting API 调用](integration/gpt-aam-destination/gpt-aam-modify-api.md)
       + [Google Publisher Tag 的 Audience Manager 代码](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
@@ -295,7 +296,7 @@ ht-degree: 91%
       + [Facebook WCA 集成](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
       + [OAS 作为 Audience Manager 目标](integration/integrating-third-party/open-ad-server-destination.md)
       + [OpenX 作为 Audience Manager 目标](integration/integrating-third-party/openx-destination.md)
-      + [Google Ad Manager （以前的 DFP）作为 Audience Manager 目标](integration/aam-dfp.md)
+      + [Google Ad Manager（以前称为DFP）作为Audience Manager目标](integration/aam-dfp.md)
       + [将区段发送到 Google AdWords 再营销列表](integration/integrating-third-party/rlsa-integration.md)
    + [实施 Audience Manager](integration/implement-audience-manager.md)
    + 媒体数据集成{#media-data-integration}
@@ -312,7 +313,7 @@ ht-degree: 91%
          + [用于实时出站传输的 OAuth 2.0 集成](integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
       + 批量出站数据传输{#batch-outbound-data-transfers}
          + [批量出站数据传输概述](integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)
-         + [配置批次数据传输集成](integration/receiving-audience-data/batch-outbound-transfers/batch-server-configuration.md)
+         + [配置批量数据传输集成](integration/receiving-audience-data/batch-outbound-transfers/batch-server-configuration.md)
          + [出站数据文件名：语法和示例](integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
          + [用于日志文件传输的传输控制文件](integration/receiving-audience-data/batch-outbound-transfers/transfer-control-files.md)
          + [出站模板宏](integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
@@ -337,12 +338,12 @@ ht-degree: 91%
          + [入站处理后发送给合作伙伴的示例消息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [自定义合作伙伴集成](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + 与 Adobe Experience Platform 集成 {#integration-experience-platform}
-      + [Experience Platform 与 Audience Manager 和其他 Experience Cloud 解决方案共享区段](integration/integration-aep/aam-aep-audience-sharing.md)
-   + 与其他 Experience Cloud 应用程序集成 {#integration-other-solutions}
-      + [将 Audience Manager 与 Adobe Target 集成](integration/integration-other-solutions/aam-target-integration.md)
+      + [与Audience Manager和其他Experience Cloud解决方案共享Experience Platform区段](integration/integration-aep/aam-aep-audience-sharing.md)
+   + 与其他Experience Cloud应用程序集成 {#integration-other-solutions}
+      + [将Audience Manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
       + [如何将数据从 Adobe Analytics 转发到 Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [向 Experience Cloud Publish Adobe Analytics 区段（打开 Adobe Analytics 文档）](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
-      + [将 Audience Manager 与 Adobe Campaign 集成（打开 Adobe Campaign 文档）](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
+      + [将Adobe Analytics区段发布到Experience Cloud(打开Adobe Analytics文档)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
+      + [将Audience Manager与Adobe Campaign集成(打开Adobe Campaign文档)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
 + 参考{#reference}
    + [参考概述](reference/reference.md)
    + [Amazon S3：关于](reference/amazon-s3.md)
@@ -392,7 +393,7 @@ ht-degree: 91%
    + [基于人员的目标常见问题解答](faq/faq-people-based-destinations.md)
    + [产品特性和功能常见问题解答](faq/faq-features.md)
    + [配置文件合并规则和设备图常见问题解答](faq/faq-profile-merge.md)
-   + [Look 相似的建模常见问题解答](faq/faq-lookalike-modeling.md)
+   + [相似人群拓展建模常见问题解答](faq/faq-lookalike-modeling.md)
    + [Predictive Audiences 常见问题解答](faq/faq-predictive-audiences.md)
    + [定位常见问题解答](faq/faq-targeting.md)
    + [报表常见问题解答](faq/faq-reporting.md)
@@ -402,7 +403,7 @@ ht-degree: 91%
    + [联系和法律信息](/help/using/help-legal/help-legal-contact.md)
 + 主要客户支持问题{#top-support-issues}
    + [概述](/help/using/support-issues/support-issues-overview.md)
-   + [为什么我的已载入特征人口在 10 月 15 日左右降至 0？ ](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
+   + [为什么我的已载入特征人口在 10 月 15 日左右降至 0？](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
    + [为什么我的特征或区段没有显示在重叠报表页面中？](/help/using/support-issues/why-do-my-traits-or-segments-not-show-up-in-the-overlap-reports.md)
    + [为什么具有只读权限的用户能够创建、编辑或删除特征和区段？](/help/using/support-issues/aam-read-only-users-create-delete-traits-segments.md)
    + [我们不是 Audience Manager 客户，但却在我们的网站上看到 Audience Manager Javascript 调用](/help/using/support-issues/not-using-aam-but-seeing-aam-javascript.md)
