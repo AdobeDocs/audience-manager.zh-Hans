@@ -1,5 +1,5 @@
 ---
-description: 特定DIL使用案例的程式碼範例和說明。
+description: 特定DIL用例的代码示例和描述。
 seo-description: Code samples and descriptions for specific DIL use cases.
 seo-title: DIL Use Cases and Code Samples
 solution: Audience Manager
@@ -7,16 +7,24 @@ title: DIL 用例和代码示例
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
 feature: DIL Implementation
 exl-id: 001710be-b377-460a-9e29-7268d25a6305
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 152b3101e69e99dfe19c1be93edceaea6adc4fec
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '981'
 ht-degree: 2%
 
 ---
 
 # DIL 用例和代码示例{#dil-use-cases-and-code-samples}
 
-特定DIL使用案例的程式碼範例和說明。
+>[!WARNING]
+>
+>自2023年7月起，Adobe已停止开发电子烟产品。 [!DNL Data Integration Library (DIL)] 和 [!DNL DIL] 扩展。
+><br><br>
+>现有客户可以继续使用其 [!DNL DIL] 实现。 但是，Adobe将不会开发 [!DNL DIL] 超越了这一点。 建议客户评估 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 长期数据收集策略。
+><br><br>
+>如果客户希望在2023年7月之后实施新的数据收集集成，则应使用 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 而是。
+
+特定DIL用例的代码示例和描述。
 
 <!-- 
 
@@ -24,9 +32,9 @@ c_dil_use_case.xml
 
  -->
 
-## 透過DIL將資料元素傳送至Audience Manager {#send-data-elements-dil}
+## 通过DIL将数据元素发送到Audience Manager {#send-data-elements-dil}
 
-建立物件變數，將頁面元素的相關資訊傳送至Audience Manager。 這對於一般資料收集很有用，或可用來取代使用Analytics變數收集資料。
+创建一个对象变量，以将有关页面元素的信息发送到Audience Manager。 这对于常规数据收集很有用，或者可以作为使用Analytics变量收集数据的替代方法。
 
 <!-- 
 
@@ -36,17 +44,17 @@ c_dil_send_page_objects.xml
 
 **描述**
 
-下列程式碼會示範如何收集頁面資料並將其傳送給Audience Manager： [!UICONTROL DIL]. 這些範例使用變數將資料元素儲存在平面清單或陣列中。 請記住，傳入變數為 [機碼值組](../reference/key-value-pairs-explained.md). 此外，請留意 `c_` 機碼值組中機碼的前置詞。 此 [必要首碼](../features/traits/trait-variable-prefixes.md) 會將資訊識別為使用者定義的資料。 在第一個範例中，您需要手動附加 `c_` 至金鑰。 在第二個範例中， [!UICONTROL DIL] 會自動為您執行此操作。
+以下代码演示了如何收集页面数据并将其发送到Audience Manager，其中 [!UICONTROL DIL]. 这些示例使用变量将数据元素保存在平面列表或数组中。 请记住，将变量传递为 [键值对](../reference/key-value-pairs-explained.md). 此外，请注意以下事项 `c_` 键值对中的键的前缀。 此 [必需的前缀](../features/traits/trait-variable-prefixes.md) 将信息标识为用户定义的数据。 在第一个示例中，您需要手动附加 `c_` 到钥匙里。 在第二个示例中， [!UICONTROL DIL] 自动为您执行此操作。
 
-**保持值屬性一致**
+**保持值属性一致**
 
-傳入資料時，請記得保持值屬性相同。 例如，如果您有兩個值不同的相同索引鍵，則最後一個索引鍵 — 值組的值會優先於前面的值物件。 例如，傳入 `color:blue` 和 `color:red` 將傳回的值設定為紅色（覆寫藍色）。
+传入数据时，请记住保持值属性相同。 例如，如果您有两个值不同的相同键，则最后一个键 — 值对的值优先于前面的值对象。 例如，传入 `color:blue` 和 `color:red` 将返回值设置为红色（覆盖蓝色）。
 
-**範例1：以索引鍵值配對傳送資料**
+**示例1：以键值对的形式发送数据**
 
-此基本範例會以索引鍵值配對的形式將顏色和價格資料傳送至Audience Manager。 您的程式碼可能如下所示：
+此基本示例以键值对的形式将颜色和价格数据发送到Audience Manager。 您的代码可能类似于以下内容：
 
-<pre class="&ldquo;java&rdquo;"><code>
+<pre class="java"><code>
 var sample_dil = DIL.create({partner:"<i>partner name</i>"}); 
 sample_dil.api.signals({ 
    c_color:"blue", 
@@ -55,9 +63,9 @@ sample_dil.api.signals({
 sample_dil.api.submit();
 </code></pre>
 
-**範例2：在物件中傳送資料**
+**示例2：在对象中发送数据**
 
-此進階範例示範如何將物件中的資料傳送至Audience Manager。 使用此方法時， [!UICONTROL DIL] 可讓您將物件作為函式引數傳遞至 [!DNL signals()] 方法。 [!UICONTROL DIL] 您的程式碼可能如下所示：
+此高级示例演示了如何将对象中的数据发送到Audience Manager。 使用此方法时， [!UICONTROL DIL] 允许您将对象作为函数参数传递到 [!DNL signals()] 方法。 [!UICONTROL DIL] 您的代码可能类似于以下内容：
 
 <pre class="java"><code>
 var my_object = { 
@@ -70,9 +78,9 @@ var sample_dil = DIL.create({ partner : "<i>partner name</i>" });
 sample_dil.api.signals(my_object,"c_").submit();
 </code></pre>
 
-**範例3：在陣列中傳送頁面資料**
+**示例3：在数组中发送页面数据**
 
-在此案例中，變數 `my_object` 使用陣列來儲存資料。 此範例以上述建議方法傳入的資訊為基礎，但新增了額外的圖層來配合產品型別和模型。 您的程式碼可能如下所示：
+在本例中，变量 `my_object` 使用数组来保存数据。 此示例以上述推荐方法传递的信息为基础，但添加了额外的层以适应产品类型和模型。 您的代码可能类似于以下内容：
 
 <pre class="java"><code>
 var my_objects = [{ 
@@ -93,9 +101,9 @@ for (var i = 0; i < my_objects.length; i++)
 sample_dil.api.submit();
 </code></pre>
 
-## 擷取反向連結URL {#capture-referring-url}
+## 捕获反向链接URL {#capture-referring-url}
 
-擷取並傳送反向連結URL給Audience Manager。
+捕获反向链接URL并将其发送给Audience Manager。
 
 <!-- 
 
@@ -105,28 +113,28 @@ c_dil_hrefer_over_https.xml
 
 >[!NOTE]
 >
->只有當使用者在具有類似通訊協定（HTTP與HTTPS）的頁面之間移動時，此方法才有效。 例如，當您從安全網站瀏覽至另一個安全網站時，瀏覽器會保留反向連結URL。 您在安全和不安全網站之間移動時，瀏覽器不會保留反向連結URL。 此行為是正常的瀏覽器功能，無法透過以下方法規避 [!UICONTROL DIL].
+>仅当用户在具有相似协议（HTTP与HTTPS）的页面之间移动时，此方法才有效。 例如，当您从一个安全站点导航到另一个安全站点时，浏览器会保留一个反向链接URL。 在安全站点和不安全站点之间移动时，浏览器不会保留反向链接URL。 此行为是正常的浏览器功能，无法通过 [!UICONTROL DIL].
 
 **代码示例**
 
-您的程式碼可能如下所示：
+您的代码可能类似于以下内容：
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({ partner : "<i>partner name</i>" }); 
 adobe_dil.api.signals({ d_referer : document.referrer }).submit();
 </code></pre>
 
-## 擷取搜尋引擎型別和關鍵字搜尋詞 {#capture-search-engine-types}
+## 捕获搜索引擎类型和关键词搜索词 {#capture-search-engine-types}
 
-傳送搜尋引擎型別和關鍵字搜尋的相關資訊給Audience Manager。
+向Audience Manager发送有关搜索引擎类型和关键词搜索的信息。
 
 >[!IMPORTANT]
 >
->本節說明最新版DIL不支援的舊版功能。
+>此部分介绍旧版功能，最新版本的DIL不支持此功能。
 
-**支援的搜尋引擎**
+**支持的搜索引擎**
 
-依預設， `DIL.getSearchReferrer` 會識別來自這些搜尋引擎的搜尋（包括國際變數）：
+默认情况下， `DIL.getSearchReferrer` 识别来自这些搜索引擎的搜索（包括国际变体）：
 
 * [!DNL AOL]
 * [!DNL Ask]
@@ -136,19 +144,19 @@ adobe_dil.api.signals({ d_referer : document.referrer }).submit();
 
 **描述**
 
-下列程式碼會示範如何取得任何受支援搜尋引擎的搜尋反向連結。 在此案例中，假設使用者搜尋了下列來源的「homes」一詞： [!DNL Google] 加拿大( `www.google.ca`)。 此程式碼將協助您擷取這些搜尋辭彙，並將其傳送給Audience Manager。
+以下代码演示了如何获取任何受支持的搜索引擎的搜索反向链接。 在本例中，假设用户从以下位置搜索术语“homes”： [!DNL Google] 加拿大( `www.google.ca`)。 此代码将帮助您捕获这些搜索词并将它们发送到Audience Manager。
 
 **基本代码**
 
-取得搜尋反向連結的基本程式碼(從 `google.com`例如)如下所示：
+用于获取搜索反向链接的基本代码(从 `google.com`例如)如下所示：
 
 ```java
 var search_referrer = DIL.tools.getSearchReferrer();
 ```
 
-**列出的搜尋引擎程式碼範例**
+**列出的搜索引擎代码示例**
 
-在此案例中，假設使用者從中搜尋字詞「homes」 [!DNL Google] 加拿大( `www.google.ca`)。 請注意程式碼如何為必要專案加上前置詞 `c_` 搜尋引擎的引數( `c_se`)和搜尋字詞( `c_st`)。 `c_` 是 [必要首碼](../features/traits/trait-variable-prefixes.md) ，可將這些變數識別為客戶定義的變數，以便進行Audience Manager。
+在本例中，假设用户从以下位置搜索术语“homes”： [!DNL Google] 加拿大( `www.google.ca`)。 请注意代码如何为所需的添加前缀 `c_` 参数到搜索引擎( `c_se`)和搜索词( `c_st`)。 `c_` 是 [必需的前缀](../features/traits/trait-variable-prefixes.md) 可将这些变量标识为客户定义的变量以供Audience Manager。
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
@@ -162,9 +170,9 @@ if (search_referrer && search_referrer.valid) {
 }
 </code></pre>
 
-**未列出的搜尋引擎程式碼範例**
+**未列出的搜索引擎代码示例**
 
-在此案例中，假設使用者從中搜尋字詞「homes」 `dogpile.com`. 因為 [!DNL Dogpile] 預設不支援，您可以設定DIL以識別此搜尋引擎並將搜尋詞傳回Audience Manager。 您的程式碼可能如下所示：
+在本例中，假设用户从以下位置搜索术语“homes”： `dogpile.com`. 因为 [!DNL Dogpile] 默认情况下不支持，您可以配置DIL以识别此搜索引擎并将搜索词返回给Audience Manager。 您的代码可能类似于以下内容：
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
@@ -181,9 +189,9 @@ if (search_referrer && search_referrer.valid) {
 }
 </code></pre>
 
-## 將索引鍵值對應至其他索引鍵 {#map-key-values}
+## 将键值映射到其他键 {#map-key-values}
 
-將索引鍵/值組的值與另一個索引鍵建立關聯。
+将键值对中的值与另一个键值相关联。
 
 <!-- 
 
@@ -193,13 +201,13 @@ c_dil_map_keys.xml
 
 **描述**
 
-在機碼值組中， `c_` 附加至鍵值的前置詞可識別訊號為客戶定義的資料。 客戶定義的資料可用於在事件呼叫中傳入資料的特定網站上進行目標定位。 不過，有時候您會希望Audience Manager帳戶中的所有屬性都能使用此資訊。 若要這麼做，請將值對應 `c_` 機碼 — 值組對應至平台層級的機碼。 平台層級索引鍵會加上前置詞 `d_` 和讓訊號可用於帳戶中所有屬性的目標定位。
+在键值对中， `c_` 附加到键的前缀将信号标识为客户定义的数据。 客户定义的数据用于在事件调用中传入数据的特定网站上进行定位。 但是，有时您需要在Audience Manager帐户中的所有资产中均提供此信息。 为此，请将值映射到 `c_` 键值对到平台级别键。 平台级别密钥的前缀为 `d_` 和使该信号可用于在帐户中的所有属性中进行定位。
 
-例如，您從特定網站收集郵遞區號資料，但想要將其鎖定在所有Audience Manager屬性上。 若要在平台層級提供郵遞區號，您可以對應客戶定義的郵遞區號金鑰(例如 `c_zip`)至平台定義的金鑰，如下所示。
+例如，您从特定站点收集邮政编码数据，但希望将其定位到所有Audience Manager资产。 要使邮政编码在平台级别可用，您可以映射客户定义的邮政编码密钥(例如， `c_zip`)到平台定义的键，如下所示。
 
 **代码示例**
 
-您的程式碼可能如下所示：
+您的代码可能类似于以下内容：
 
 ```java
 var adobe_dil = DIL.create({ 
@@ -215,7 +223,7 @@ adobe_dil.api.signals({c_zip : '10010'}).submit();
 
 ## Google Tag Manager (GTM)中的流量DIL {#traffic-dil-gtm}
 
-使用GTM標籤設定及提供DIL。
+使用GTM标记设置并提供DIL。
 
 <!-- 
 
@@ -223,25 +231,24 @@ t_dil_google_tagmanager.xml
 
  -->
 
-本程式假設您擁有 [!DNL Google Tag Manager] 帳戶、該產品的一些實用知識以及您的Audience Manager `dil.js` 檔案。
+此过程假定您拥有 [!DNL Google Tag Manager] 帐户、该产品的一些实际知识以及您的Audience Manager `dil.js` 文件。
 
-若要流量 `dil.js` GTM中的檔案：
+要流量 `dil.js` GTM中的文件：
 
-1. 建立新容器或開啟現有容器。
-1. 將新標籤新增至容器。
-1. 開啟標籤以進行編輯，並：
+1. 创建新容器或打开现有容器。
+1. 向容器中添加新标记。
+1. 打开标记以进行编辑，并：
 
-   * 為標籤命名。
-   * 選取 **[!UICONTROL Custom HTML Tag]** 從 **[!UICONTROL Tag Type]** 下拉式清單。
-   * 在HTML欄位中，放置 [!UICONTROL DIL] 指令碼標籤中的程式碼（程式庫+自訂程式碼） `<script>DIL code</script>`.
+   * 为标记命名。
+   * 选择 **[!UICONTROL Custom HTML Tag]** 从 **[!UICONTROL Tag Type]** 下拉列表。
+   * 在HTML字段中，将 [!UICONTROL DIL] 脚本标记中的代码（库+自定义代码） `<script>DIL code</script>`.
    * 单击 **[!UICONTROL Save]**.
 
-1. 發佈容器。
-1. 產生貨櫃標籤代碼並將其放在詳細目錄上。
+1. 发布容器。
+1. 生成集装箱标记代码并将其放在库存中。
 
 >[!MORELIKETHIS]
 >
->* [Google Tag Manager說明中心](https://support.google.com/tagmanager#topic=3441530)
->* [訊號](../dil/dil-instance-methods.md#signals)
+>* [Google Tag Manager帮助中心](https://support.google.com/tagmanager#topic=3441530)
+>* [信号](../dil/dil-instance-methods.md#signals)
 >* [关键变量的前缀要求](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-variable-prefixes.html#prefix-requirements-for-key-variables)
-

@@ -1,18 +1,26 @@
 ---
-description: 如需最新DIL發行版本的詳細資訊，請參閱本頁面
+description: 有关最新DIL版本的信息，请参阅此页面
 seo-description: Refer to this page for information about the latest DIL releases
 seo-title: DIL Release Notes
 solution: Audience Manager
 title: DIL 发行说明
 feature: DIL Implementation
 exl-id: 71513875-c2e4-4866-ac14-0e1b382e0e56
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 152b3101e69e99dfe19c1be93edceaea6adc4fec
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 23%
+source-wordcount: '125'
+ht-degree: 8%
 
 ---
 
 # DIL 发行说明
 
-請參閱本頁以取得最新DIL版本的資訊。 DIL可透過發行說明直接下載到Adobe的 [Github頁面](https://github.com/Adobe-Marketing-Cloud/dil/releases).
+>[!WARNING]
+>
+>自2023年7月起，Adobe已停止开发电子烟产品。 [!DNL Data Integration Library (DIL)] 和 [!DNL DIL] 扩展。
+><br><br>
+>现有客户可以继续使用其 [!DNL DIL] 实现。 但是，Adobe将不会开发 [!DNL DIL] 超越了这一点。 建议客户评估 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 长期数据收集策略。
+><br><br>
+>如果客户希望在2023年7月之后实施新的数据收集集成，则应使用 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 而是。
+
+有关最新DIL版本的信息，请参阅此页面。 DIL可通过直接下载获取，并附上发行说明，位于Adobe的 [Github页面](https://github.com/Adobe-Marketing-Cloud/dil/releases).
