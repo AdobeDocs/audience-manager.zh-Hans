@@ -1,5 +1,5 @@
 ---
-description: 介绍DIL.modules命名空间中的方法。 这些模块允许您以编程方式收集数据并处理Audience Manager对象。
+description: 介绍DIL.modules命名空间中的方法。 利用这些模块，可按编程方式收集数据并处理Audience Manager对象。
 seo-description: Describes methods in the DIL.modules namespace. These modules let you programmatically collect data and work with Audience Manager objects.
 seo-title: DIL Modules
 solution: Audience Manager
@@ -7,7 +7,7 @@ title: DIL 模块
 uuid: d4c0d8dd-79f8-448e-b17c-c935415dd449
 feature: DIL Implementation
 exl-id: 4685bcbb-a63b-4613-bc94-54de9881966e
-source-git-commit: fcf13cf39f688f8aafd2b1020ddfe4583d67e14f
+source-git-commit: cad38e2c523e9b762aa996c275daefa96c8e14b0
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 4%
@@ -18,13 +18,13 @@ ht-degree: 4%
 
 >[!WARNING]
 >
->自2023年7月起，Adobe已停止开发电子烟产品。 [!DNL Data Integration Library (DIL)] 和 [!DNL DIL] 扩展。
-><br>
->现有客户可以继续使用其 [!DNL DIL] 实现。 但是，Adobe将不会开发 [!DNL DIL] 超越了这一点。 建议客户评估 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 长期数据收集策略。
-><br>
+>自2023年7月起，Adobe已停止开发新能源。 [!DNL Data Integration Library (DIL)] 和 [!DNL DIL] 扩展。
+>
+>现有客户可继续使用其 [!DNL DIL] 实现。 但是，Adobe将不会开发 [!DNL DIL] 超越这一步。 我们鼓励客户对 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 长期数据收集策略。
+>
 >如果客户希望在2023年7月之后实施新的数据收集集成，则应使用 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 而是。
 
-介绍中的方法 `DIL.modules` 命名空间。 这些模块允许您以编程方式收集数据并处理Audience Manager对象。
+介绍中的方法 `DIL.modules` 命名空间。 利用这些模块，可按编程方式收集数据并处理Audience Manager对象。
 
 <!-- 
 
@@ -34,13 +34,13 @@ c_dil_mods.xml
 
 ## siteCatalyst.init {#sitecat-init}
 
-适用于 [!UICONTROL DIL] 发送 [!DNL Analytics] 标记元素（变量、prop、eVar等） 以Audience Manager。 以逗号分隔的列表形式返回数据。 在版本2.6中提供。
+与配合使用 [!UICONTROL DIL] 发送 [!DNL Analytics] 标记元素（变量、prop、eVar等） Audience Manager。 以逗号分隔的列表形式返回数据。 在版本2.6中提供。
 
 **函数签名：** `DIL.modules.siteCatalyst.init(siteCatalystReportingSuite, dilInstance, trackVars, options)`
 
 >[!NOTE]
 >
->您必须将此代码放在页面上 *早于* 此 `s.t();` 函数。
+>您必须将此代码放在页面上 *早于* 该 `s.t();` 函数。
 
 <!-- 
 
@@ -62,12 +62,12 @@ r_dil_sc_init.xml
   <tr valign="top"> 
    <td colname="col1"> <code> names </code> </td> 
    <td colname="col2"> 字符串 </td> 
-   <td colname="col3"> <p>包含未枚举的字符串数组 <span class="keyword"> 分析 </span> 变量，如 <code> pageName </code>， <code> channel </code>， <code> campaign </code>， <code> product </code>等。 </p> </td> 
+   <td colname="col3"> <p>包含未枚举的字符串数组 <span class="keyword"> 分析 </span> 变量，如 <code> pageName </code>， <code> channel </code>， <code> campaign </code>， <code> product </code>，等等。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> iteratedNames </code> </td> 
    <td colname="col2"> 对象 </td> 
-   <td colname="col3"> <p>包含枚举的对象数组 <span class="keyword"> 分析 </span> prop和evar等变量(例如， <code> prop1 </code>， <code> prop2 </code>， <code> evar3 </code>， <code> evar4 </code>)。 </p> </td> 
+   <td colname="col3"> <p>包含枚举的对象数组 <span class="keyword"> 分析 </span> prop和evar等变量(例如 <code> prop1 </code>， <code> prop2 </code>， <code> evar3 </code>， <code> evar4 </code>)。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> maxIndex </code> </td> 
@@ -96,7 +96,7 @@ r_dil_sc_init.xml
  </tbody> 
 </table>
 
-**由siteCatalyst.init捕获的数据**
+**siteCatalyst.init捕获的数据**
 
 此函数返回有关以下内容的详细信息 [!DNL Analytics] 属性：
 
@@ -114,7 +114,7 @@ r_dil_sc_init.xml
 
 **示例代码**
 
-此代码创建一个逗号分隔的列表，其中 [!DNL Analytics] 事件（prop、eVar等） 如果它们的值存在。
+此代码会创建一个逗号分隔的列表， [!DNL Analytics] 事件（prop、eVar等） （如果它们的值存在）。
 
 ```
 // Get the Site Catalyst object instance: 
@@ -149,7 +149,7 @@ DIL.modules.siteCatalyst.init(s, scDil);
 
 ## GA.submitUniversalAnalytics {#ga-submit-universal-analytics}
 
-此 `GA.submitUniversalAnalytics();` 函数从Google发送数据 [!DNL Universal Analytics] 以Audience Manager。 此 [!UICONTROL DIL] 功能设计用于 `analytics.js`，这是Google的最新代码库 [!DNL Universal Analytics].
+此 `GA.submitUniversalAnalytics();` 函数从Google发送数据 [!DNL Universal Analytics] Audience Manager。 此 [!UICONTROL DIL] 功能设计用于 `analytics.js`，这是Google的最新代码库 [!DNL Universal Analytics].
 
 <!-- 
 
@@ -160,9 +160,9 @@ dil-google-universal-analytics.xml
 >[!IMPORTANT]
 >
 >
->* [!DNL Audience Manager] 对Google没有任何洞察或控制权 `analytics.js` 代码库。 您应该验证 [!UICONTROL DIL] 当Google发布新版本时，数据收集仍然有效 `analytics.js`.
+>* [!DNL Audience Manager] 对Google没有任何洞察或控制 `analytics.js` 代码库。 您应该验证 [!UICONTROL DIL] 当Google发布新版本时，数据收集仍在工作 `analytics.js`.
 >
->* 您无法使用 `GA.submitUniversalAnalytics();` 如果您仍在使用Google的旧版Analytics跟踪代码(例如， `ga.js` 或 `dc.js`)。 参见 [GA.init](../dil/dil-modules.md#ga-init) 而是。
+>* 您无法使用 `GA.submitUniversalAnalytics();` 如果您仍在使用Google的旧版Analytics跟踪代码(例如， `ga.js` 或 `dc.js`)。 请参阅 [GA.init](../dil/dil-modules.md#ga-init) 而是。
 >
 
 **函数签名：** `DIL.modules.GA.submitUniversalAnalytics(gaObject, dilInstance, internalPropertyName);`
@@ -181,7 +181,7 @@ dil-google-universal-analytics.xml
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> gaObject </code> </p> </td> 
-   <td colname="col2"> <p>的实例的全局变量 <span class="keyword"> Google Analytics </span>. 这通常是 <code> ga </code> 默认情况下，除非您自定义了 <span class="keyword"> Google Analytics </span> 代码。 </p> </td> 
+   <td colname="col2"> <p>实例的全局变量 <span class="keyword"> Google Analytics </span>. 这通常是 <code> ga </code> 默认情况下，除非您自定义了 <span class="keyword"> Google Analytics </span> 代码。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance </code> </p> </td> 
@@ -189,7 +189,7 @@ dil-google-universal-analytics.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> internalPropertyName </code> </p> </td> 
-   <td colname="col2"> <p> <i>（可选）</i> 在 <code> analytics.js </code> 库，内部属性是缩小的变量 <code> 'b' </code>. 此变量包含 <span class="keyword"> Google Analytics </span> 数据。 </p> <p>此属性是可选的，因为除非Google更改其内部变量的名称，否则您无需设置此属性。 例如，如果此缩小的变量更改为 <code> 'a' </code>，您可以调用 <code> GA.submitUniversalAnalytics(); </code> 如下所示： </p> <p> <code> DIL.modules.GAsubmitUniversalAnalytics(ga, DilInstance, 'a'); </code> </p> </td> 
+   <td colname="col2"> <p> <i>（可选）</i> 在 <code> analytics.js </code> 库，内部属性是缩小的变量 <code> 'b' </code>. 此变量有效 <span class="keyword"> Google Analytics </span> 数据。 </p> <p>此属性是可选的，因为除非Google更改其内部变量的名称，否则您无需设置此属性。 例如，如果此缩小的变量更改为 <code> 'a' </code>，您可以调用 <code> GA.submitUniversalAnalytics(); </code> 如下所示： </p> <p> <code> DIL.modules.GAsubmitUniversalAnalytics(ga, DilInstance, 'a'); </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -210,7 +210,7 @@ DIL.modules.GA.submitUniversalAnalytics(ga, dilInstance);
 
 ## GA.init {#ga-init}
 
-此 `GA.init()` 函数发送来自旧版/已弃用版本的数据 [!DNL Google Analytics] 以Audience Manager。
+此 `GA.init()` 函数发送来自旧版/已弃用版本的数据 [!DNL Google Analytics] Audience Manager。
 
 <!-- 
 
@@ -220,7 +220,7 @@ r_dil_ga_init.xml
 
 >[!IMPORTANT]
 >
->`GA.init()` 仅适用于Google的旧版Analytics跟踪代码， `ga.js` 或 `dc.js`. 无法调用此项 [!UICONTROL DIL] 函数（如果使用） `analytics.js`，这是Google的最新代码库 [!DNL Universal Analytics]. [!DNL Audience Manager] 使用的客户 [!UICONTROL DIL] 和 [!DNL Universal Analytics] 应该会看到 [ga.submitUniversalAnalytics](../dil/dil-modules.md#ga-submit-universal-analytics).
+>`GA.init()` 仅适用于Google的旧版Analytics跟踪代码， `ga.js` 或 `dc.js`. 您无法调用此 [!UICONTROL DIL] 函数（如果使用） `analytics.js`，这是Google的最新代码库 [!DNL Universal Analytics]. [!DNL Audience Manager] 使用的客户 [!UICONTROL DIL] 和 [!DNL Universal Analytics] 应该会看到 [GA.submitUniversalAnalytics](../dil/dil-modules.md#ga-submit-universal-analytics).
 
 **函数签名：** `DIL.modules.GA.init(_gaq, dilInstance, trackVars);`
 
@@ -230,7 +230,7 @@ r_dil_ga_init.xml
 |---|---|---|
 | `_gaq` | 数组 | 包含GA命令的数组。 |
 | `dilInstance` | 对象 | 包含DIL实例的对象。 |
-| `trackVars` | 对象 | *（可选）* 一个对象，它包含 `names` 属性。 此属性是您要跟踪的GA命令名称数组。 |
+| `trackVars` | 对象 | *（可选）* 一个对象，它包含 `names` 属性。 此属性是您希望跟踪的GA命令名称数组。 |
 
 **支持的GA函数调用**
 
@@ -242,9 +242,9 @@ r_dil_ga_init.xml
 * `_setAccount`
 * `_trackSocial`
 
-**DIL为GA数据创建键**
+**DIL创建GA数据的键**
 
-当GA处理数组中的项时，Audience Manager接受键值对形式的数据。 要使用GA数据，请执行以下操作： [!UICONTROL DIL] 自动创建键值对并形成如下键： `c_ <key name>`. 此外，GA阵列中的项按特定顺序显示。 因此，您必须按此顺序提供所有参数，即使它们不包含任何数据。 [!UICONTROL DIL] 映射以下GA方法的键：
+当GA处理数组中的项时，Audience Manager接受键值对形式的数据。 要处理GA数据， [!UICONTROL DIL] 自动创建键值对并形成如下键： `c_ <key name>`. 此外，GA数组中的项按特定顺序显示。 因此，必须按此顺序提供所有参数，即使它们不包含任何数据。 [!UICONTROL DIL] 映射以下GA方法的键：
 
 ```js
 // Tracking Social Interactions 
@@ -305,13 +305,13 @@ _gaq.push([
 ]); 
 ```
 
-要在没有上述附加函数的情况下跟踪所有受监视的GA量度，请调用 `GA.init` 其本身如下所示：
+要跟踪所有受监视GA度量而不使用上面显示的附加函数，请调用 `GA.init` 其本身如下所示：
 
 `DIL.modules.GA.init(_gaq, dilInstance).submit();`
 
 **示例事件调用**
 
-对Audience Manager的URL事件调用可能类似于以下内容：
+对Audience Manager的URL事件调用可能类似于以下形式：
 
 `https://adobe.demdex.com/event?...c_accountId=UA-XXXXX-X&c_Section=Life%20%26%20Style &c_itemOrderId=1234&c_itemSku=DD44&c_itemName=T-Shirt&c_itemCategory=Olive%20Medium& c_itemPrice=11.99&c_itemQuantity=1`
 

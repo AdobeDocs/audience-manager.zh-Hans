@@ -7,7 +7,7 @@ title: DIL 工具
 uuid: 2bc62ce2-16bd-4e80-b493-c816ba643b59
 feature: DIL Implementation
 exl-id: 1f52eb95-8287-4dd0-b933-00de6926a797
-source-git-commit: fcf13cf39f688f8aafd2b1020ddfe4583d67e14f
+source-git-commit: cad38e2c523e9b762aa996c275daefa96c8e14b0
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 3%
@@ -18,10 +18,10 @@ ht-degree: 3%
 
 >[!WARNING]
 >
->自2023年7月起，Adobe已停止开发电子烟产品。 [!DNL Data Integration Library (DIL)] 和 [!DNL DIL] 扩展。
-><br>
->现有客户可以继续使用其 [!DNL DIL] 实现。 但是，Adobe将不会开发 [!DNL DIL] 超越了这一点。 建议客户评估 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 长期数据收集策略。
-><br>
+>自2023年7月起，Adobe已停止开发新能源。 [!DNL Data Integration Library (DIL)] 和 [!DNL DIL] 扩展。
+>
+>现有客户可继续使用其 [!DNL DIL] 实现。 但是，Adobe将不会开发 [!DNL DIL] 超越这一步。 我们鼓励客户对 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 长期数据收集策略。
+>
 >如果客户希望在2023年7月之后实施新的数据收集集成，则应使用 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 而是。
 
 介绍中的方法 `DIL.tools` 命名空间。 这些实用程序功能可帮助您执行特定任务。
@@ -44,7 +44,7 @@ r_dil_get_search_referrer.xml
 
 ### 目的 `getSearchReferrer`
 
-在DIL， `getSearchReferrer` 返回用于访问您的网站的搜索结果（名称和关键字）。 您可以将特定的搜索词传递到此函数，或者让此函数搜索支持的搜索引擎( [!DNL AOL]， [!DNL Ask]， [!DNL Bing]， [!DNL Google]、和 [!DNL Yahoo])对 `document.referrer` 默认情况下。
+在DIL中， `getSearchReferrer` 返回用于访问您的网站的搜索结果（名称和关键字）。 您可以将特定的搜索词传递到此函数，或者让它搜索支持的搜索引擎( [!DNL AOL]， [!DNL Ask]， [!DNL Bing]， [!DNL Google]、和 [!DNL Yahoo])对比 `document.referrer` 默认情况下。
 
 ### 函数签名
 
@@ -55,7 +55,7 @@ r_dil_get_search_referrer.xml
 `getSearchReferrer` 接受：
 
 * *`{string}`*： *（可选）* 包含搜索URL的字符串(使用 `document.referrer` 如果未定义)。
-* *`{object}`*： *（可选）* 一个对象，其中包含的配置 `hostPattern`， `queryParam`，或 `queryPattern`.
+* *`{object}`*： *（可选）* 一个对象，其中包含的 `hostPattern`， `queryParam`，或 `queryPattern`.
 
 并返回：
 
@@ -119,9 +119,9 @@ r_dil_get_search_referrer.xml
  </tbody> 
 </table>
 
-## decompoturi
+## decomposeURI
 
-分解统一资源标识符( [!DNL URI])，将其分为以下几个组成部分： `hash`， `host`， `href`， `pathname`， `protocol`， `search`、和 `[!DNL uriParams]`.
+分解统一资源标识符( [!DNL URI])作为其组成部分： `hash`， `host`， `href`， `pathname`， `protocol`， `search`、和 `[!DNL uriParams]`.
 
 <!-- 
 
@@ -161,9 +161,9 @@ var uriData = DIL.tools.decomposeURI('https://www.adobe.com/?arg1=123&arg2=456#a
 }
 ```
 
-## getMetaTags
+## getMetaTag
 
-搜索在网页上的元标记中定义的特定内容，并在对象中返回该数据。
+搜索网页上的元标记中定义的特定内容，并在对象中返回该数据。
 
 <!-- 
 
@@ -177,7 +177,7 @@ r_dil_get_metatags.xml
 
 ### 函数参数
 
-`getMetaTags` 接受要搜索的一个或多个名称参数（字符串类型）。 它返回一个由键值对组成的对象。
+`getMetaTags` 接受要搜索的一个或多个名称参数（字符串类型）。 它会返回一个由键值对组成的对象。
 
 ### 示例代码
 
