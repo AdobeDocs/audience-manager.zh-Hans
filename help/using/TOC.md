@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Audience Manager 用户指南
 user-guide-description: 了解如何使用 Adobe Audience Manager 收集有关网站访客的商业相关信息以及创建适销区段。您还可以找到有关如何向合适的受众提供定向广告和内容的详细信息。
 feature-set: Audience Manager
-source-git-commit: f4babbb632279cf213116e004551e5c77869ab78
+source-git-commit: 7302fafa537ad15144a64cc96f7150c5b0233c12
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1835'
 ht-degree: 90%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 90%
 # Audience Manager 用户指南 {#user-guide}
 
 + [Audience Manager 指南](aam-home.md)
-+ [Real-Time CDP演进指南](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
++ [Real-Time CDP的演变指南](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
 + 概述{#overview}
    + [Audience Manager 概述](overview/aam-overview.md)
    + [收集的数据类型](overview/data-types-collected.md)
@@ -239,7 +239,7 @@ ht-degree: 90%
          + [DCS API 参考概述](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
          + [DCS API 方法](api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
          + [DCS 错误代码、消息和示例](api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
-         + [ID监控和ID列入阻止列表](api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
+         + [ID监控和列入阻止列表](api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
          + [DCS 区域 ID、位置和主机名](api/dcs-intro/dcs-api-reference/dcs-regions.md)
          + [格式化 DCS 调用中的键值对](api/dcs-intro/dcs-api-reference/dcs-key-format.md)
          + [争用条件和错误处理](api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
@@ -286,9 +286,9 @@ ht-degree: 90%
 + 实施和集成指南{#implementation-integration-guides}
    + [实施和集成指南](integration/implementation-and-integration.md)
    + [数据集成方法](integration/data-integration-methods.md)
-   + 使用Google发布商标记(GPT)集成Google广告管理器{#integrate-dfp-using-gpt}
+   + 使用Google Publisher Tag (GPT)集成Google Ad Manager{#integrate-dfp-using-gpt}
       + [使用GPT集成Google Ad Manager概述](integration/gpt-aam-destination/gpt-aam-overview.md)
-      + [使用GPT将区段发送到Google广告管理器](integration/gpt-aam-destination/gpt-aam-requirements.md)
+      + [使用GPT将区段发送到Google Ad Manager](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [创建 GPT 目标](integration/gpt-aam-destination/gpt-aam-create-destination.md)
       + [修改 GPT setTargeting API 调用](integration/gpt-aam-destination/gpt-aam-modify-api.md)
       + [Google Publisher Tag 的 Audience Manager 代码](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
@@ -336,6 +336,7 @@ ht-degree: 90%
          + [入站数据类型的文件 PGP 加密](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)
          + [入站数据传输文件的文件压缩](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
          + [入站处理后发送给合作伙伴的示例消息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
+         + [利用您入站文件的Amazon S3跨帐户存储段权限](integration/sending-audience-data/batch-data-transfer-explained/authorize-s3-inbound.md)
       + [自定义合作伙伴集成](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + 与 Adobe Experience Platform 集成 {#integration-experience-platform}
       + [与Audience Manager和其他Experience Cloud解决方案共享Experience Platform区段](integration/integration-aep/aam-aep-audience-sharing.md)
@@ -393,7 +394,7 @@ ht-degree: 90%
    + [基于人员的目标常见问题解答](faq/faq-people-based-destinations.md)
    + [产品特性和功能常见问题解答](faq/faq-features.md)
    + [配置文件合并规则和设备图常见问题解答](faq/faq-profile-merge.md)
-   + [相似人群拓展建模常见问题解答](faq/faq-lookalike-modeling.md)
+   + [相似建模常见问题解答](faq/faq-lookalike-modeling.md)
    + [Predictive Audiences 常见问题解答](faq/faq-predictive-audiences.md)
    + [定位常见问题解答](faq/faq-targeting.md)
    + [报表常见问题解答](faq/faq-reporting.md)
