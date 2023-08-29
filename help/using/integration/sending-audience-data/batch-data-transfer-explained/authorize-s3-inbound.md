@@ -3,7 +3,7 @@ description: 要将数据从您自己的Amazon S3存储段发送到Audience Mana
 solution: Audience Manager
 title: 利用您入站文件的Amazon S3跨帐户存储段权限
 feature: Inbound Data Transfers
-source-git-commit: ff023fb57e2653ca65323313a37852d379e4b00c
+source-git-commit: 17cee6971ca1d5cda8f272558a46220227fc51f7
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -24,6 +24,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >将集客数据传输到Audience ManagerAmazon S3存储段时，请确保使用 `bucket-owner-full-control` [访问控制列表](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html) 以便Audience Manger正确处理数据。
-><br>
->Amazon Web Services命令的示例： `aws s3 cp <user_s3_uri> <AAM_s3_uri> --acl bucket-owner-full-control`.
+>
+>Amazon Web Services命令的示例： `aws s3 cp <user_s3_uri> <AAM_s3_uri> --acl bucket-owner-full-control`
 
