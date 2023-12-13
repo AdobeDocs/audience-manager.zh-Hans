@@ -8,10 +8,10 @@ title: 开始使用批量管理工具
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 feature: BAAAM
 exl-id: 5603146e-7172-4181-90ad-4606129176dd
-source-git-commit: 6b4796db4fc336180d72d4971b4f267fcc42d398
+source-git-commit: e8d81f648f5a46495193fe6631c8a7f73e290493
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 3%
+source-wordcount: '708'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ c_bulk_start.xml
 要使用 [!DNL Bulk Management Tools]，您需要以下各项：
 
 * 您的 [!DNL Experience Cloud] 登录。 作为客户，您应该已经拥有这些凭据。
-* 此 [!DNL Bulk Management Tools] 工作表。 [下载工作表](assets/BAAAM_V2_20200502.xlsm) 以获取最新版本。
+* 此 [!DNL Bulk Management Tools] 工作表。 [下载工作表](assets/BAAAM_V2_20210609.xlsm) 以获取最新版本。
 * [!DNL Microsoft Excel] 运行于 [!DNL macOS] 或64位 [!DNL Microsoft Windows]. 我们建议您使用最新版本的 [!DNL Microsoft Excel].
 * 打开工作表时，您必须 **启用宏** 对于 [!DNL Bulk Management Tools] 去工作。
 
@@ -70,7 +70,7 @@ c_bulk_start.xml
 
 域身份验证使您可以选择测试批量请求，或将其直接应用于您的生产帐户。 对测试版环境进行批量更改不会影响您的生产帐户。 生产更改会立即生效。 批量管理工作表允许您在以下环境中工作：
 
-* Beta
+* 测试版
 * 生产
 
 ## 操作和操作 {#actions-ops}
