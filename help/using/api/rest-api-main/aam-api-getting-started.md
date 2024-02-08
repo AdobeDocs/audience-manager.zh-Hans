@@ -7,9 +7,9 @@ title: 开始使用 REST API
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 exl-id: f7d5e52d-ad21-4020-a299-d440f954c51a
-source-git-commit: 16421f8f15a8aa8c1a561b0b6682091bf78683ce
+source-git-commit: 622664170f2a76039bcf2333bde43ce9e60b6af2
 workflow-type: tm+mt
-source-wordcount: '2551'
+source-wordcount: '2558'
 ht-degree: 1%
 
 ---
@@ -382,6 +382,8 @@ curl -X 'GET' \
 | `permissions` | 根据指定的权限返回区段列表。 `READ` 为默认值。 权限包括：<ul><li>`READ` ：返回并查看有关区段的信息。</li><li>`WRITE` ：使用  `PUT`  以更新区段。</li><li>`CREATE` ：使用  `POST`  以创建区段。</li><li>`DELETE` ：删除区段。 需要访问基础特征（如果有）。 例如，如果要删除属于某个区段的特征，您需要拥有删除该区段的权限。</li></ul><br>使用单独的键值对指定多个权限。 例如，要返回包含的区段列表，  `READ`  和  `WRITE`  仅限权限，传入  `"permissions":"READ"`， `"permissions":"WRITE"` . |
 | `includePermissions` | ([!DNL Boolean])设置为 `true` 以返回您对该区段的权限。 默认为 `false`. |
 
+{style="table-layout:auto"}
+
 ### 有关页面选项的注释
 
 页面信息时间 *不是* 指定后，请求将返回 [!DNL JSON] 数组中的结果。 如果页面信息 *是* 指定，则返回的列表将封装在 [!DNL JSON] 包含有关总结果和当前页信息的对象。 使用页面选项的示例请求可能如下所示：
@@ -400,7 +402,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 根据您使用的身份验证方法，您需要调整请求 [!DNL URLs] 根据下表。
 
-### 请求 [!DNL URLs] 对象 [!DNL JWT] 身份验证 {#request-urls-jwt}
+### 请求 [!DNL URLs] 对于 [!BADGE 推荐]{type=positive}[!BADGE 已弃用]{type=negative}[!DNL JWT] 通过Adobe Developer进行身份验证 {#request-urls-jwt}
 
 | [!DNL API] 方法 | 请求 [!DNL URL] |
 |--- |--- |
@@ -416,7 +418,9 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 | [!DNL Trait Types] | `https://aam.adobe.io/v1/customer-trait-types` |
 | [!DNL Taxonomy] | `https://aam.adobe.io/v1/taxonomies/0/` |
 
-### 请求 [!DNL URLs] 对象 [!DNL OAuth] 身份验证（已弃用） {#request-urls-oauth}
+{style="table-layout:auto"}
+
+### 请求 [!DNL URLs] 对于 [!BADGE 已弃用]{type=negative}[!DNL OAuth] 身份验证 {#request-urls-oauth}
 
 | [!DNL API] 方法 | 请求 [!DNL URL] |
 |--- |--- |
@@ -431,6 +435,8 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 | [!DNL Traits] | `https://api.demdex.com/v1/traits/` |
 | [!DNL Trait Types] | `https://api.demdex.com/v1/customer-trait-types` |
 | [!DNL Taxonomy] | `https://api.demdex.com/v1/taxonomies/0/` |
+
+{style="table-layout:auto"}
 
 ## 环境 {#environments}
 
