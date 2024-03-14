@@ -3,7 +3,7 @@ title: 为经过哈希处理的电子邮件工作流配置数据源
 description: 了解如何创建数据源以存储经过哈希处理的电子邮件工作流的经过哈希处理的电子邮件。
 solution: Audience Manager
 feature: Data Sources
-source-git-commit: 903c2602f759e0d507e45f1db4cbc880a599c32e
+source-git-commit: b88f180808ec9723a2a5324441733f6383f6302d
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -29,4 +29,5 @@ ht-degree: 0%
    >此选项仅将数据源标记为包含使用该特定算法经过哈希处理的数据。 Audience Manager在此步骤中不会散列数据。 确保您计划存储在此数据源中的电子邮件地址已使用 [!DNL SHA256] 算法。 否则，您将无法将其用于经过哈希处理的电子邮件工作流。
 
    ![显示数据源设置部分的Audience ManagerUI图像。](../features/assets/data-source-settings.png)
+
 
