@@ -1,7 +1,7 @@
 ---
 title: 从Audience Manager标记扩展迁移到Web SDK标记扩展
 description: 了解将数据收集库从Audience Manager标记扩展更新为Web SDK标记扩展以进行Audience Manager的步骤
-source-git-commit: 1cf6a80bd5b7f583ea2511becf415b430ce2889e
+source-git-commit: c80f39c4001d2bcfa94012b9f4ffa720806487d4
 workflow-type: tm+mt
 source-wordcount: '1309'
 ht-degree: 0%
@@ -153,3 +153,4 @@ Adobe建议，如果现有实施使用Adobe Audience Manager标记扩展，则�
 +++
 
 此时，您的Audience Manager实施已完全迁移到Web SDK，并准备好将来迁移到Real-Time CDP。
+
