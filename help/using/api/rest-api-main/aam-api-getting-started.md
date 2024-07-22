@@ -14,32 +14,32 @@ ht-degree: 1%
 
 ---
 
-# 快速入门 [!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}
+# 开始使用[!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}
 
-有关一般要求、身份验证、可选查询参数、请求的信息 [!DNL URLs]和其他引用。
+有关一般要求、身份验证、可选查询参数、请求[!DNL URLs]和其他引用的信息。
 
 ## API要求和Recommendations {#api-requirements-recommendations}
 
-使用时，请注意以下事项 [AUDIENCE MANAGERAPI](https://bank.demdex.com/portal/swagger/index.html#/) 代码：
+使用[Audience ManagerAPI](https://bank.demdex.com/portal/swagger/index.html#/)代码时，请注意以下事项：
 
-* **请求参数：** 除非另有指定，否则所有请求参数都是必需的。
-* **请求标头**：使用时 [Adobe Developer](https://www.adobe.io/) 令牌，您必须提供 `x-api-key` 标题。 您可以获取 [!DNL API] 按照 [服务帐户集成](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 页面。
-* **[!DNL JSON]内容类型：** 指定 `content-type: application/json`  *和*  `accept: application/json` 在您的代码中。
-* **请求和响应：** 以正确格式发送请求 [!DNL JSON] 对象。 [!DNL Audience Manager] 响应方式 [!DNL JSON] 带格式的数据。 服务器响应可以包含请求的数据、状态代码或同时包含这两者。
-* **访问：** 您的 [!DNL Audience Manager] 顾问将为您提供客户端ID和密钥，供您制作 [!DNL API] 请求。
-* **文档和代码示例：** 文本输入 *斜体* 表示在制作或接收时提供或传入的变量 [!DNL API] 数据。 替换 *斜体* 带有您自己的代码、参数或其他必需信息的文本。
+* **请求参数：**&#x200B;除非另有指定，否则所有请求参数都是必需的。
+* **请求标头**：使用[Adobe Developer](https://www.adobe.io/)令牌时，必须提供`x-api-key`标头。 您可以按照[服务帐户集成](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)页面中的说明获取[!DNL API]密钥。
+* **[!DNL JSON]内容类型：**&#x200B;在您的代码中指定`content-type: application/json` *和* `accept: application/json`。
+* **请求和响应：**&#x200B;将请求作为正确格式化的[!DNL JSON]对象发送。 [!DNL Audience Manager]使用[!DNL JSON]格式的数据进行响应。 服务器响应可以包含请求的数据、状态代码或同时包含这两者。
+* **访问：**&#x200B;您的[!DNL Audience Manager]顾问将为您提供客户端ID和密钥，以便您发出[!DNL API]请求。
+* **文档和代码示例：**&#x200B;斜体&#x200B;*中的文本*&#x200B;表示在生成或接收[!DNL API]数据时提供或传入的变量。 将&#x200B;*斜体*&#x200B;文本替换为您自己的代码、参数或其他必需的信息。
 
 ## 身份验证 {#authentication}
 
-此 [!DNL Audience Manager] [!DNL REST APIs] 支持三种身份验证方法。
+[!DNL Audience Manager] [!DNL REST APIs]支持三种身份验证方法。
 
-* [!BADGE 推荐]{type=positive}[OAuth服务器到服务器身份验证](#oauth-adobe-developer) 使用 [Adobe开发人员控制台](https://www.adobe.io/). [!DNL Adobe Developer] 是Adobe的开发者生态系统和社区。 它包括 [适用于所有Adobe产品的API](https://developer.adobe.com/apis/). 这是设置和使用的推荐方式 [!DNL Adobe] [!DNL APIs]. 详细了解 [OAuth服务器到服务器身份验证](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) 在Adobe开发人员文档中。
-* [!BADGE 已弃用]{type=negative}[JWT（服务帐户）身份验证](#jwt) 使用 [Adobe开发人员控制台](https://www.adobe.io/). [!DNL Adobe Developer] 是Adobe的开发者生态系统和社区。 它包括 [适用于所有Adobe产品的API](https://developer.adobe.com/apis/).
-* [!BADGE 已弃用]{type=negative}[旧版OAuth身份验证](#oauth-deprecated). 虽然此方法已弃用，但具有现有 [!DNL OAuth] 集成可以继续使用此方法。
+* [!BADGE 推荐]{type=positive}使用[Adobe开发人员控制台](https://www.adobe.io/)的[OAuth服务器到服务器身份验证](#oauth-adobe-developer)。 [!DNL Adobe Developer]是Adobe的开发人员生态系统和社区。 它包含所有Adobe产品](https://developer.adobe.com/apis/)的[API。 这是设置和使用[!DNL Adobe] [!DNL APIs]的推荐方法。 有关[OAuth服务器到服务器身份验证](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)的更多信息，请参阅Adobe开发人员文档。
+* [!BADGE 已弃用]{type=negative}使用[Adobe开发人员控制台](https://www.adobe.io/)的[JWT （服务帐户）身份验证](#jwt)。 [!DNL Adobe Developer]是Adobe的开发人员生态系统和社区。 它包含所有Adobe产品](https://developer.adobe.com/apis/)的[API。
+* [!BADGE 已弃用]{type=negative}[旧版OAuth身份验证](#oauth-deprecated)。 虽然此方法已弃用，但具有现有[!DNL OAuth]集成的客户可以继续使用此方法。
 
 >[!IMPORTANT]
 >
->根据您的身份验证方法，您需要调整请求 [!DNL URLs] 相应地。 请参阅 [环境](#environments) 部分以了解有关应使用的主机名的详细信息。
+>根据您的身份验证方法，您需要相应地调整请求[!DNL URLs]。 有关应使用的主机名的详细信息，请参阅[环境](#environments)部分。
 
 ## 使用Adobe Developer的OAuth服务器到服务器身份验证 {#oauth-adobe-developer}
 
@@ -49,46 +49,46 @@ ht-degree: 1%
 
 ### Adobe Developer概述 {#developer-overview}
 
-[!DNL Adobe Developer] 是Adobe的开发者生态系统和社区。 它包括 [适用于所有Adobe产品的API](https://developer.adobe.com/apis).
+[!DNL Adobe Developer]是Adobe的开发人员生态系统和社区。 它包含所有Adobe产品](https://developer.adobe.com/apis)的[API。
 
-这是设置和使用的推荐方式 [!DNL Adobe] [!DNL APIs].
+这是设置和使用[!DNL Adobe] [!DNL APIs]的推荐方法。
 
 ### 先决条件 {#prerequisites-server-to-server}
 
-在配置之前 [!DNL OAuth Server-to-Server] 身份验证，确保您有权访问 [Adobe Developer控制台](https://developer.adobe.com/console/home) 在 [Adobe Developer](https://developer.adobe.com/). 有关访问请求，请联系您的组织管理员。
+在配置[!DNL OAuth Server-to-Server]身份验证之前，请确保您有权访问[Adobe Developer](https://developer.adobe.com/)中的[Adobe Developer Console](https://developer.adobe.com/console/home)。 有关访问请求，请联系您的组织管理员。
 
 ### 身份验证 {#oauth}
 
-按照以下步骤配置 [!DNL OAuth Server-to-Server] 身份验证使用 [!DNL Adobe Developer]：
+请按照以下步骤使用[!DNL Adobe Developer]配置[!DNL OAuth Server-to-Server]身份验证：
 
-1. 登录到 [Adobe Developer控制台](https://developer.adobe.com/console/home).
-1. 请按照 [OAuth服务器到服务器凭据实施指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
-   * 时段 [步骤2：使用服务帐户身份验证将API添加到您的项目中](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)，选择 [!DNL Audience Manager] [!DNL API] 选项。
-1. 尝试建立您的第一个连接 [!DNL API] 根据来自的指令调用 [步骤3](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
+1. 登录到[Adobe Developer Console](https://developer.adobe.com/console/home)。
+1. 按照[OAuth服务器到服务器凭据实施指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)中的步骤操作。
+   * 在[步骤2：使用服务帐户身份验证](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)将API添加到您的项目中，选择[!DNL Audience Manager] [!DNL API]选项。
+1. 根据[步骤3](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)中的说明进行第一个[!DNL API]调用以尝试连接。
 
 >[!NOTE]
 >
->配置和使用 [!DNL Audience Manager] [!DNL REST APIs] 您可以通过编程方式自动轮换客户端密钥。 请参阅 [开发人员文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#rotating-client-secrets-programmatically) 以获取详细说明。
+>要自动配置和使用[!DNL Audience Manager] [!DNL REST APIs]，您可以以编程方式轮换客户端密钥。 有关详细说明，请参阅[开发人员文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#rotating-client-secrets-programmatically)。
 
 ### 将Audience ManagerAPI添加到项目 {#add-aam-api-to-project}
 
-转到 [Adobe Developer控制台](https://www.adobe.com/go/devs_console_ui) 然后使用您的Adobe ID登录。 接下来，按照教程中概述的以下步骤进行操作： [创建空项目](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty/) 在Adobe Developer Console文档中。
+转到[Adobe Developer Console](https://www.adobe.com/go/devs_console_ui)并使用您的Adobe ID登录。 接下来，按照Adobe Developer Console文档中有关[创建空项目](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty/)的教程中概述的步骤进行操作。
 
-创建新项目后，选择 **[!UICONTROL Add API]** 在 **[!UICONTROL Project Overview]** 屏幕。
+创建新项目后，在&#x200B;**[!UICONTROL Project Overview]**&#x200B;屏幕上选择&#x200B;**[!UICONTROL Add API]**。
 
 >[!TIP]
 >
 >如果您配置了多个组织，请使用界面右上角的组织选择器，以确保您在所需的组织中。
 
-![高亮显示了“添加API”选项的开发人员控制台屏幕。](/help/using/api/rest-api-main/assets/add-api.png)
+突出显示了“添加API”选项的![Developer Console屏幕。](/help/using/api/rest-api-main/assets/add-api.png)
 
-此 **[!UICONTROL Add an API]** 屏幕。 选择Adobe Experience Cloud的产品图标，然后选择 **[!UICONTROL Audience Manager API]** 选择之前 **[!UICONTROL Next]**.
+出现&#x200B;**[!UICONTROL Add an API]**&#x200B;屏幕。 选择Adobe Experience Cloud的产品图标，然后选择&#x200B;**[!UICONTROL Audience Manager API]**&#x200B;再选择&#x200B;**[!UICONTROL Next]**。
 
 ![选择Audience ManagerAPI。](/help/using/api/rest-api-main/assets/audience-manager-api.png)
 
 >[!TIP]
 >
->选择 **[!UICONTROL View docs]** 在单独的浏览器窗口中导航以完成 [Audience ManagerAPI参考文档](https://bank.demdex.com/portal/swagger/index.html#).
+>选择&#x200B;**[!UICONTROL View docs]**&#x200B;选项可在单独的浏览器窗口中导航到完整的[Audience ManagerAPI参考文档](https://bank.demdex.com/portal/swagger/index.html#)。
 
 ### 选择OAuth服务器到服务器身份验证类型 {#select-oauth-server-to-server}
 
@@ -96,30 +96,30 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->选择 **[!UICONTROL OAuth Server-to-Server]** 方法，因为这将是今后唯一支持的方法。 此 **[!UICONTROL Service Account (JWT)]** 方法已弃用。 虽然使用JWT身份验证方法的集成将继续工作到2025年1月1日，但Adobe强烈建议您在该日期之前将现有集成迁移到新的OAuth服务器到服务器方法。
+>选择&#x200B;**[!UICONTROL OAuth Server-to-Server]**&#x200B;方法，因为这将是今后唯一支持的方法。 **[!UICONTROL Service Account (JWT)]**&#x200B;方法已弃用。 虽然使用JWT身份验证方法的集成将继续工作到2025年1月1日，但Adobe强烈建议您在该日期之前将现有集成迁移到新的OAuth服务器到服务器方法。
 
 ![选择OAuth身份验证方法。](/help/using/api/rest-api-main/assets/select-oauth-authentication-method.png)
 
 ### 为您的集成选择产品配置文件 {#select-product-profiles}
 
-在 **[!UICONTROL Configure API]** 屏幕中，选择所需的产品配置文件。 通过此处所选的产品配置文件，您的集成服务帐户将获得对精细功能的访问权限。
+在&#x200B;**[!UICONTROL Configure API]**&#x200B;屏幕中，选择所需的产品配置文件。 通过此处所选的产品配置文件，您的集成服务帐户将获得对精细功能的访问权限。
 
 ![为您的集成选择产品配置文件。](/help/using/api/rest-api-main/assets/select-product-profiles.png)
 
-选择 **[!UICONTROL Save configured API]** 准备就绪后。
+准备就绪后选择&#x200B;**[!UICONTROL Save configured API]**。
 
 ### 收集凭据 {#gather-credentials}
 
-将API添加到项目后， **[!UICONTROL Audience Manager API]** 项目页面显示所有Audience ManagerAPI调用所需的以下凭据：
+将API添加到项目后，项目的&#x200B;**[!UICONTROL Audience Manager API]**&#x200B;页面会显示所有Audience ManagerAPI调用所需的以下凭据：
 
-![在开发人员控制台中添加API后的集成信息。](/help/using/api/rest-api-main/assets/api-integration-information.png)
+在Developer Console中添加API后的![集成信息。](/help/using/api/rest-api-main/assets/api-integration-information.png)
 
 * `{API_KEY}` ([!UICONTROL Client ID])
 * `{ORG_ID}` ([!UICONTROL Organization ID])
 
 ## 生成访问令牌 {#generate-access-token}
 
-下一步是生成 `{ACCESS_TOKEN}` 用于Audience ManagerAPI调用的凭据。 与的值不同 `{API_KEY}` 和 `{ORG_ID}`，必须每24小时生成一个新令牌才能继续使用Audience ManagerAPI。 选择 **[!UICONTROL Generate access token]**，如下所示。
+下一步是生成用于Audience ManagerAPI调用的`{ACCESS_TOKEN}`凭据。 与`{API_KEY}`和`{ORG_ID}`的值不同，必须每24小时生成一个新令牌才能继续使用Audience ManagerAPI。 选择&#x200B;**[!UICONTROL Generate access token]**，如下所示。
 
 ![显示如何生成访问令牌](/help/using/api/rest-api-main/assets/generate-acces-token.gif)
 
@@ -127,14 +127,14 @@ ht-degree: 1%
 
 获取身份验证持有者令牌后，执行API调用以测试您现在是否可以访问Audience ManagerAPI。
 
-1. 导航至 [API参考文档](https://bank.demdex.com/portal/swagger/index.html#/Data%20Source%20API/get_datasources_).
-2. 选择 **[!UICONTROL Authorize]** 并粘贴您在中获得的访问令牌 [生成访问令牌](#generate-access-token) 步骤。
+1. 导航到[API参考文档](https://bank.demdex.com/portal/swagger/index.html#/Data%20Source%20API/get_datasources_)。
+2. 选择&#x200B;**[!UICONTROL Authorize]**&#x200B;并粘贴您在[生成访问令牌](#generate-access-token)步骤中获得的访问令牌。
 
    ![授权API调用](/help/using/api/rest-api-main/assets/authorize-api-calls.gif)
 
-3. 执行GET调用 `/datasources` 用于检索所有全局可用数据源列表的API端点，如 [API参考文档](https://bank.demdex.com/portal/swagger/index.html#/Data%20Source%20API/get_datasources_). 选择 **[!UICONTROL Try it out]**，后接 **[!UICONTROL Execute]**，如下所示。
+3. 执行`/datasources` API终结点的GET调用，以检索所有全局可用数据源的列表，如[API参考文档](https://bank.demdex.com/portal/swagger/index.html#/Data%20Source%20API/get_datasources_)中所述。 依次选择&#x200B;**[!UICONTROL Try it out]**&#x200B;和&#x200B;**[!UICONTROL Execute]**，如下所示。
 
-   ![执行API](/help/using/api/rest-api-main/assets/perform-api-calls.gif)
+   ![执行API调用](/help/using/api/rest-api-main/assets/perform-api-calls.gif)
 
 
 >[!BEGINSHADEBOX]
@@ -151,7 +151,7 @@ curl -X 'GET' \
 ```
 
 
->[!TAB 使用正确持有者令牌时的API响应]
+>如果使用正确的持有者令牌，[!TAB API响应]
 
 
 使用有效的访问令牌时，API端点会返回200响应以及包含您的组织有权访问的所有全局数据源的响应正文。
@@ -211,96 +211,96 @@ curl -X 'GET' \
 
 >[!ENDSHADEBOX]
 
-## [!BADGE 已弃用]{type=negative}[!DNL JWT] ([!DNL Service Account])使用Adobe Developer进行身份验证 {#jwt}
+## [!BADGE 已弃用]{type=negative}使用Adobe Developer的[!DNL JWT] ([!DNL Service Account])身份验证 {#jwt}
 
-+++ 查看有关已弃用的信息 [!DNL JWT] ([!DNL Service Account])获取身份验证令牌的方法。
++++ 查看有关已弃用的[!DNL JWT] ([!DNL Service Account])获取身份验证令牌方法的信息。
 
 ### Adobe Developer概述 {#adobeio}
 
-[!DNL Adobe Developer] 是Adobe的开发者生态系统和社区。 它包括 [适用于所有Adobe产品的API](https://www.adobe.io/apis.html).
+[!DNL Adobe Developer]是Adobe的开发人员生态系统和社区。 它包含所有Adobe产品](https://www.adobe.io/apis.html)的[API。
 
-这是设置和使用的推荐方式 [!DNL Adobe] [!DNL APIs].
+这是设置和使用[!DNL Adobe] [!DNL APIs]的推荐方法。
 
 ### 先决条件 {#prerequisites}
 
-在配置之前 [!DNL JWT] 身份验证，确保您有权访问 [Adobe Developer控制台](https://console.adobe.io/) 在 [Adobe Developer](https://www.adobe.io/). 有关访问请求，请联系您的组织管理员。
+在配置[!DNL JWT]身份验证之前，请确保您有权访问[Adobe Developer](https://www.adobe.io/)中的[Adobe Developer Console](https://console.adobe.io/)。 有关访问请求，请联系您的组织管理员。
 
 ### 身份验证 {#auth}
 
-按照以下步骤配置 [!DNL JWT (Service Account)] 身份验证使用 [!DNL Adobe Developer]：
+请按照以下步骤使用[!DNL Adobe Developer]配置[!DNL JWT (Service Account)]身份验证：
 
-1. 登录到 [Adobe Developer控制台](https://console.adobe.io/).
-1. 请按照中的步骤操作 [服务帐户连接](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
-   * 时段 [步骤2：使用服务帐户身份验证将API添加到您的项目中](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)，选择 [!DNL Audience Manager] [!DNL API] 选项。
-1. 尝试建立您的第一个连接 [!DNL API] 根据来自的指令调用 [步骤3](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
+1. 登录到[Adobe Developer Console](https://console.adobe.io/)。
+1. 按照[服务帐户连接](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)中的步骤操作。
+   * 在[步骤2：使用服务帐户身份验证](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)将API添加到您的项目中，选择[!DNL Audience Manager] [!DNL API]选项。
+1. 根据[步骤3](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)中的说明进行第一个[!DNL API]调用以尝试连接。
 
 >[!NOTE]
 >
->配置和使用 [!DNL Audience Manager] [!DNL REST APIs] 通过自动化方式，您可以 [!DNL JWT] 以编程方式。 请参阅 [JWT（服务帐户）身份验证](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) 以获取详细说明。
+>要自动配置和使用[!DNL Audience Manager] [!DNL REST APIs]，您可以通过编程方式生成[!DNL JWT]。 有关详细说明，请参阅[JWT（服务帐户）身份验证](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)。
 
 ### 技术帐户RBAC权限
 
-如果您的Audience Manager帐户使用 [基于角色的访问控制](../../features/administration/administration-overview.md)，您必须创建一个Audience Manager技术用户帐户，并将其添加到将进行API调用的Audience ManagerRBAC组。
+如果您的Audience Manager帐户使用[基于角色的访问控制](../../features/administration/administration-overview.md)，则必须创建一个Audience Manager技术用户帐户，并将其添加到将进行API调用的Audience ManagerRBAC组。
 
 按照以下步骤创建技术用户帐户并将其添加到RBAC组中：
 
-1. 创建 `GET` 调用 `https://aam.adobe.io/v1/users/self`. 呼叫将创建一个技术用户帐户，您可在中看到该帐户 [!UICONTROL Admin Console]，在 [!UICONTROL Users] 页面。
+1. 对`https://aam.adobe.io/v1/users/self`进行`GET`调用。 此调用将创建一个技术用户帐户，您可以在[!UICONTROL Admin Console]的[!UICONTROL Users]页面中看到该帐户。
 
    ![技术帐户](assets/technical-account.png)
 
-1. 登录到您的Audience Manager帐户并 [添加技术用户帐户](../../features/administration/administration-overview.md#create-group) 添加到将进行API调用的用户组。
+1. 登录到您的Audience Manager帐户，然后[将技术用户帐户](../../features/administration/administration-overview.md#create-group)添加到将进行API调用的用户组。
 
 +++
 
-## [!BADGE 已弃用]{type=negative}[!DNL OAuth] 身份验证（已弃用） {#oauth-deprecated}
+## [!BADGE 已弃用]{type=negative}[!DNL OAuth]身份验证（已弃用） {#oauth-deprecated}
 
-+++ 查看有关已弃用的旧版的信息 [!DNL OAuth] 获取身份验证令牌的身份验证方法。
++++ 查看有关已弃用的获取身份验证令牌的旧版[!DNL OAuth]身份验证方法的信息。
 
 >[!WARNING]
-> [!DNL Audience Manager] [!UICONTROL REST API] 令牌身份验证和续订方式 [!DNL OAuth 2.0] 现已弃用。
+> [!DNL Audience Manager] [!UICONTROL REST API]令牌身份验证和通过[!DNL OAuth 2.0]续订现在已被弃用。
 >
-> 请使用 [JWT（服务帐户）身份验证](#jwt-service-account-authentication-jwt) 而是。
+> 请改用[JWT（服务帐户）身份验证](#jwt-service-account-authentication-jwt)。
 
-此 [!DNL Audience Manager] [!UICONTROL REST API] 关注 [!DNL OAuth 2.0] 令牌身份验证和续订标准。 以下各节介绍如何验证并开始使用 [!DNL API]s.
+[!DNL Audience Manager] [!UICONTROL REST API]遵循令牌身份验证和续订的[!DNL OAuth 2.0]标准。 以下各节介绍如何验证并开始使用[!DNL API]。
 
-### 创建通用 [!DNL API] 用户 {#requirements}
+### 创建通用[!DNL API]用户 {#requirements}
 
-我们建议您创建一个单独的技术用户帐户来使用 [!DNL Audience Manager] [!DNL API]s.这是一个通用帐户，与您组织中的特定用户无关，也与特定用户相关联。 此类型 [!DNL API] 用户帐户可帮助您完成2件事：
+我们建议您创建一个单独的技术用户帐户来使用[!DNL Audience Manager] [!DNL API]。这是一个通用帐户，它与组织中的特定用户无关，也与特定用户关联。 此类型的[!DNL API]用户帐户可帮助您完成2件事：
 
-* 识别哪种服务呼叫 [!DNL API] (例如，来自使用我们的应用程序的 [!DNL API]或从其他制作工具 [!DNL API] 请求)。
-* 提供对的不间断访问 [!DNL API]s.与特定人员关联的帐户可能会在他们离开您的公司时删除。 这会阻止您使用 [!DNL API] 代码。 不绑定到特定员工的通用帐户有助于避免此问题。
+* 识别正在调用[!DNL API]的服务（例如，来自使用我们[!DNL API]的应用或来自发出[!DNL API]请求的其他工具的调用）。
+* 提供对[!DNL API]的无中断访问。与特定人员关联的帐户可能会在他们离开您的公司时删除。 这将阻止您使用可用的[!DNL API]代码。 不绑定到特定员工的通用帐户有助于避免此问题。
 
-作为此类帐户的示例或用例，假设您想使用 [批量管理工具](../../reference/bulk-management-tools/bulk-management-intro.md). 要实现此目的，您的用户帐户需要 [!DNL API] 访问权限。 不要向特定用户添加权限，请创建非特定、 [!DNL API] 具有要生成的相应凭据、密钥和机密的用户帐户 [!DNL API] 呼叫。 如果您开发自己的应用程序，而这些应用程序又使用 [!DNL Audience Manager] [!DNL API]s.
+作为此类帐户的示例或用例，假设您希望使用[批量管理工具](../../reference/bulk-management-tools/bulk-management-intro.md)一次更改多个区段。 为此，您的用户帐户需要[!DNL API]访问权限。 不要向特定用户添加权限，而是创建一个非特定的[!DNL API]用户帐户，该帐户具有进行[!DNL API]调用所需的相应凭据、密钥和密钥。 如果您开发自己的使用[!DNL Audience Manager] [!DNL API]的应用程序，这也很有用。
 
-使用您的 [!DNL Audience Manager] 咨询师来设置通用， [!DNL API]-only用户帐户。
+与您的[!DNL Audience Manager]顾问合作，设置一个通用、仅限[!DNL API]的用户帐户。
 
 ### 密码身份验证工作流 {#password-authentication-workflow}
 
-密码验证安全访问我们的 [!DNL REST API]. 以下步骤概述了密码身份验证的工作流 [!DNL JSON] 浏览器中的客户端。
+密码身份验证安全访问我们的[!DNL REST API]。 以下步骤概述了从浏览器中的[!DNL JSON]客户端进行密码身份验证的工作流。
 
 >[!TIP]
 >
 >如果您将令牌存储在数据库中，则加密访问和刷新令牌。
 
-#### 步骤1：请求 [!DNL API] 访问
+#### 步骤1：请求[!DNL API]访问权限
 
-请联系您的合作伙伴解决方案经理。 他们将为您提供 [!DNL API] 客户端ID和密码。 此ID和密码用于验证您的 [!DNL API].
+请联系您的合作伙伴解决方案经理。 他们将为您提供[!DNL API]客户端ID和密码。 ID和密码通过[!DNL API]验证您的身份。
 
-注意：如果要接收刷新令牌，请在请求时指定 [!DNL API] 访问权限。
+注意：如果您希望接收刷新令牌，请在请求[!DNL API]访问权限时指定。
 
 #### 步骤2：请求令牌
 
-使用您的首选传递令牌请求 [!DNL JSON] 客户。 构建请求时：
+向首选[!DNL JSON]客户端传递令牌请求。 构建请求时：
 
-* 使用 `POST` 调用方法 `https://api.demdex.com/oauth/token`.
-* 将您的客户端ID和密码转换为base-64编码字符串。 在转换过程中使用冒号分隔ID和密码。 例如，凭据 `testId : testSecret` 转换为 `dGVzdElkOnRlc3RTZWNyZXQ=`.
-* 传入 [!DNL HTTP] [!DNL headers] `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded` . 例如，标题可能如下所示： <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
+* 使用`POST`方法调用`https://api.demdex.com/oauth/token`。
+* 将您的客户端ID和密码转换为base-64编码字符串。 在转换过程中使用冒号分隔ID和密码。 例如，凭据`testId : testSecret`转换为`dGVzdElkOnRlc3RTZWNyZXQ=`。
+* 传入[!DNL HTTP] [!DNL headers] `Authorization:Basic <base-64 clientID:clientSecret>`和`Content-Type: application/x-www-form-urlencoded` 。 例如，您的标题可能如下所示： <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
 * 按如下方式设置请求正文：
   <br/> `grant_type=password&username=<your-AudienceManager-user-name>&password=<your-AudienceManager-password>`
 
 #### 步骤3：接收令牌
 
-此 [!DNL JSON] 响应包含您的访问令牌。 响应应如下所示：
+[!DNL JSON]响应包含您的访问令牌。 响应应如下所示：
 
 ```json
 {
@@ -312,32 +312,32 @@ curl -X 'GET' \
 }
 ```
 
-此 `expires_in` key表示访问令牌过期前的秒数。 作为最佳实践，如果令牌被公开，请使用较短的过期时间以限制泄露。
+`expires_in`键表示访问令牌过期前的秒数。 作为最佳实践，如果令牌被公开，请使用较短的过期时间以限制泄露。
 
 ### 刷新令牌 {#refresh-token}
 
-刷新令牌续订 [!DNL API] 在原始令牌过期后访问。 如果要求，响应 [!DNL JSON] 在密码工作流中包含刷新令牌。 如果您没有收到刷新令牌，请通过密码身份验证过程创建一个新令牌。
+刷新令牌在原始令牌过期后续订[!DNL API]访问权限。 如果请求，密码工作流中的响应[!DNL JSON]将包含刷新令牌。 如果您没有收到刷新令牌，请通过密码身份验证过程创建一个新令牌。
 
 您还可以使用刷新令牌在现有访问令牌过期之前生成新的令牌。
 
-如果您的访问令牌已过期，您将收到 `401 Status Code` 和响应中的以下标头：
+如果您的访问令牌已过期，则会在响应中接收`401 Status Code`和以下标头：
 
 `WWW-Authenticate: Bearer realm="oauth", error="invalid_token", error_description="Access token expired: <token>"`
 
-以下步骤概述了使用刷新令牌从创建新访问令牌的工作流 [!DNL JSON] 浏览器中的客户端。
+以下步骤概述了使用刷新令牌从浏览器中的[!DNL JSON]客户端创建新的访问令牌的工作流。
 
 #### 步骤1：请求新令牌
 
-使用您的首选传递刷新令牌请求 [!DNL JSON] 客户。 构建请求时：
+向首选[!DNL JSON]客户端传入刷新令牌请求。 构建请求时：
 
-* 使用 `POST` 调用方法 `https://api.demdex.com/oauth/token`.
-* 将您的客户端ID和密码转换为base-64编码字符串。 在转换过程中使用冒号分隔ID和密码。 例如，凭据 `testId : testSecret` 转换为 `dGVzdElkOnRlc3RTZWNyZXQ=`.
-* 在HTTP标头中传递 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`. 例如，标题可能如下所示： <br> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br> `Content-Type: application/x-www-form-urlencoded`
-* 在请求正文中，指定 `grant_type:refresh_token` 并传入您在上一个访问请求中收到的刷新令牌。 请求应当如下所示： <br> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
+* 使用`POST`方法调用`https://api.demdex.com/oauth/token`。
+* 将您的客户端ID和密码转换为base-64编码字符串。 在转换过程中使用冒号分隔ID和密码。 例如，凭据`testId : testSecret`转换为`dGVzdElkOnRlc3RTZWNyZXQ=`。
+* 传入HTTP标头`Authorization:Basic <base-64 clientID:clientSecret>`和`Content-Type: application/x-www-form-urlencoded`。 例如，您的标题可能如下所示： <br> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br> `Content-Type: application/x-www-form-urlencoded`
+* 在请求正文中，指定`grant_type:refresh_token`并传入您在上一个访问请求中收到的刷新令牌。 请求应如下所示： <br> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
 
 #### 步骤2：接收新令牌
 
-此 [!DNL JSON] 响应包含您的新访问令牌。 响应应如下所示：
+[!DNL JSON]响应包含您的新访问令牌。 响应应如下所示：
 
 ```json
 {
@@ -351,42 +351,42 @@ curl -X 'GET' \
 
 ### 授权代码和隐式身份验证 {#authentication-code-implicit}
 
-此 [!DNL Audience Manager] [!UICONTROL REST API] 支持授权代码和隐式身份验证。 要使用这些访问方法，您的用户需要登录到 `https://api.demdex.com/oauth/authorize` 以获取访问权限和刷新令牌。
+[!DNL Audience Manager] [!UICONTROL REST API]支持授权代码和隐式身份验证。 若要使用这些访问方法，您的用户需要登录到`https://api.demdex.com/oauth/authorize`以获取访问权杖并刷新令牌。
 
 +++
 
-## 进行身份验证 [!DNL API] 请求 {#authenticated-api-requests}
+## 提出经过身份验证的[!DNL API]请求 {#authenticated-api-requests}
 
-呼叫要求 [!DNL API] 方法收到身份验证令牌后。
+收到身份验证令牌后调用[!DNL API]方法的要求。
 
-对可用发出调用 [!DNL API] 方法：
+要针对可用的[!DNL API]方法进行调用，请执行以下操作：
 
-* 在 `HTTP` 标题，设置 `Authorization: Bearer <token>`.
-* 使用时 [JWT（服务帐户）身份验证](#jwt)，您需要提供 `x-api-key` 标头，它将与您的 `client_id`. 您可以获取 `client_id` 从 [Adobe Developer集成](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 页面。
-* 调用所需的 [!DNL API] 方法。
+* 在`HTTP`标头中，设置`Authorization: Bearer <token>`。
+* 使用[JWT（服务帐户）身份验证](#jwt)时，需要提供`x-api-key`标头，该标头将与您的`client_id`相同。 您可以从[Adobe Developer集成](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)页面获取`client_id`。
+* 调用所需的[!DNL API]方法。
 
-## 可选 [!DNL API] 查询参数 {#optional-api-query-parameters}
+## 可选的[!DNL API]查询参数 {#optional-api-query-parameters}
 
 设置可用于返回对象所有属性的方法的可选参数。
 
-您可以将这些可选参数与 [!DNL API] 返回的方法 *所有* 对象的属性。 将查询传入到时，在请求字符串中设置这些选项 [!DNL API].
+您可以将这些可选参数与[!DNL API]方法一起使用，这些方法返回对象的&#x200B;*所有*&#x200B;属性。 将查询传递到[!DNL API]时，在请求字符串中设置这些选项。
 
 | 参数 | 描述 |
 |--- |--- |
 | `page` | 按页码返回结果。 编号从0开始。 |
 | `pageSize` | 设置请求返回的响应结果数（默认为10）。 |
-| `sortBy` | 根据指定的对结果进行排序和返回 [!DNL JSON] 属性。 |
-| `descending` | 按降序排序并返回结果。 `ascending` 为默认值。 |
-| `search` | 根据要用作搜索参数的指定字符串返回结果。 例如，假设您要查找在该项目的任何值字段中包含“Test”一词的所有模型的结果。 您的示例请求可能如下所示：   `GET https://aam.adobe.io/v1/models/?search=Test`.  您可以搜索“”返回的任何值[!DNL get all]”方法。 |
-| `folderId` | 返回所有ID [!UICONTROL traits] 在指定的文件夹内。 并非对所有方法都可用。 |
-| `permissions` | 根据指定的权限返回区段列表。 `READ` 为默认值。 权限包括：<ul><li>`READ` ：返回并查看有关区段的信息。</li><li>`WRITE` ：使用  `PUT`  以更新区段。</li><li>`CREATE` ：使用  `POST`  以创建区段。</li><li>`DELETE` ：删除区段。 需要访问基础特征（如果有）。 例如，如果要删除属于某个区段的特征，您需要拥有删除该区段的权限。</li></ul><br>使用单独的键值对指定多个权限。 例如，要返回包含的区段列表，  `READ`  和  `WRITE`  仅限权限，传入  `"permissions":"READ"`， `"permissions":"WRITE"` . |
-| `includePermissions` | ([!DNL Boolean])设置为 `true` 以返回您对该区段的权限。 默认为 `false`. |
+| `sortBy` | 根据指定的[!DNL JSON]属性排序并返回结果。 |
+| `descending` | 按降序排序并返回结果。 `ascending`是默认的。 |
+| `search` | 根据要用作搜索参数的指定字符串返回结果。 例如，假设您要查找在该项目的任何值字段中包含“Test”一词的所有模型的结果。 您的示例请求可能如下所示：   `GET https://aam.adobe.io/v1/models/?search=Test`。  您可以搜索“[!DNL get all]”方法返回的任何值。 |
+| `folderId` | 返回指定文件夹内[!UICONTROL traits]的所有ID。 并非对所有方法都可用。 |
+| `permissions` | 根据指定的权限返回区段列表。 `READ`是默认的。 权限包括：<ul><li>`READ` ：返回并查看有关区段的信息。</li><li>`WRITE` ：使用`PUT`更新区段。</li><li>`CREATE` ：使用`POST`创建区段。</li><li>`DELETE` ：删除区段。 需要访问基础特征（如果有）。 例如，如果要删除属于某个区段的特征，您需要拥有删除该区段的权限。</li></ul><br>使用单独的键值对指定多个权限。 例如，要返回仅具有`READ`和`WRITE`权限的区段列表，请传入`"permissions":"READ"`、`"permissions":"WRITE"`。 |
+| `includePermissions` | ([!DNL Boolean])设置为`true`以返回您对该区段的权限。 默认值为`false`。 |
 
 {style="table-layout:auto"}
 
 ### 有关页面选项的注释
 
-页面信息时间 *不是* 指定后，请求将返回 [!DNL JSON] 数组中的结果。 如果页面信息 *是* 指定，则返回的列表将封装在 [!DNL JSON] 包含有关总结果和当前页信息的对象。 使用页面选项的示例请求可能如下所示：
+未指定页面信息&#x200B;*时，请求返回数组中的纯[!DNL JSON]结果。*&#x200B;如果指定了页面信息&#x200B;**，则返回的列表将封装在包含有关总结果和当前页面信息的[!DNL JSON]对象中。 使用页面选项的示例请求可能如下所示：
 
 ```
 GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
@@ -394,24 +394,24 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 ## [!DNL API URLs] {#api-urls}
 
-[!DNL URLs] 用于请求、暂存和生产环境以及版本。
+请求、暂存和生产环境及版本的[!DNL URLs]。
 
-## 请求 [!DNL URLs] {#request-urls}
+## 请求[!DNL URLs] {#request-urls}
 
-下表列出了请求 [!DNL URLs] 用于传入 [!DNL API] 请求，按方法。
+下表按方法列出了用于传入[!DNL API]请求的请求[!DNL URLs]。
 
-根据您使用的身份验证方法，您需要调整请求 [!DNL URLs] 根据下表。
+根据您使用的身份验证方法，您需要根据下表调整请求[!DNL URLs]。
 
-### 请求 [!DNL URLs] 对于 [!BADGE 推荐]{type=positive}[!BADGE 已弃用]{type=negative}[!DNL JWT] 通过Adobe Developer进行身份验证 {#request-urls-jwt}
+### 为[!BADGE Recommended]请求[!DNL URLs]{type=positive}[!BADGE 已弃用]{type=negative}通过Adobe Developer的[!DNL JWT]身份验证 {#request-urls-jwt}
 
-| [!DNL API] 方法 | 请求 [!DNL URL] |
+| [!DNL API]方法 | 请求[!DNL URL] |
 |--- |--- |
 | [!DNL Algorithmic Modeling] | `https://aam.adobe.io/v1/models/` |
 | [!DNL Data Source] | `https://aam.adobe.io/v1/datasources/` |
 | [!DNL Derived Signals] | `https://aam.adobe.io/v1/signals/derived/` |
 | [!DNL Destinations] | `https://aam.adobe.io/v1/destinations/` |
 | [!DNL Domains] | `https://aam.adobe.io/v1/partner-sites/` |
-| [!DNL Folders] | 特征：  `https://aam.adobe.io/v1/folders/traits /`<br>区段：  `https://aam.adobe.io/v1/folders/segments /` |
+| [!DNL Folders] | 特征： `https://aam.adobe.io/v1/folders/traits /`<br>区段： `https://aam.adobe.io/v1/folders/segments /` |
 | [!DNL Schema] | `https://aam.adobe.io/v1/schemas/` |
 | [!DNL Segments] | `https://aam.adobe.io/v1/segments/` |
 | [!DNL Traits] | `https://aam.adobe.io/v1/traits/` |
@@ -420,16 +420,16 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 {style="table-layout:auto"}
 
-### 请求 [!DNL URLs] 对于 [!BADGE 已弃用]{type=negative}[!DNL OAuth] 身份验证 {#request-urls-oauth}
+### 针对[!BADGE 的请求[!DNL URLs]已弃用]{type=negative}[!DNL OAuth]身份验证 {#request-urls-oauth}
 
-| [!DNL API] 方法 | 请求 [!DNL URL] |
+| [!DNL API]方法 | 请求[!DNL URL] |
 |--- |--- |
 | [!DNL Algorithmic Modeling] | `https://api.demdex.com/v1/models/` |
 | [!DNL Data Source] | `https://api.demdex.com/v1/datasources/` |
 | [!DNL Derived Signals] | `https://api.demdex.com/v1/signals/derived/` |
 | [!DNL Destinations] | `https://api.demdex.com/v1/destinations/` |
 | [!DNL Domains] | `https://api.demdex.com/v1/partner-sites/` |
-| [!DNL Folders] | 特征：  `https://api.demdex.com/v1/folders/traits /`<br>区段：  `https://api.demdex.com/v1/folders/segments /` |
+| [!DNL Folders] | 特征： `https://api.demdex.com/v1/folders/traits /`<br>区段： `https://api.demdex.com/v1/folders/segments /` |
 | [!DNL Schema] | `https://api.demdex.com/v1/schemas/` |
 | [!DNL Segments] | `https://api.demdex.com/v1/segments/` |
 | [!DNL Traits] | `https://api.demdex.com/v1/traits/` |
@@ -440,33 +440,33 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 ## 环境 {#environments}
 
-此 [!DNL Audience Manager] [!DNL API]提供对不同工作环境的访问。 这些环境可帮助您针对单独的数据库测试代码，而不影响实时的生产数据。 下表列出了可用的 [!DNL API] 环境和相应的资源主机名。
+[!DNL Audience Manager] [!DNL API]提供对不同工作环境的访问权限。 这些环境可帮助您针对单独的数据库测试代码，而不影响实时的生产数据。 下表列出了可用的[!DNL API]环境和相应的资源主机名。
 
-根据您使用的身份验证方法，您需要调整环境 [!DNL URLs] 根据下表。
+根据您使用的身份验证方法，您需要根据下表调整环境[!DNL URLs]。
 
-| 环境 | 的主机名 [!DNL JWT] 身份验证 | 的主机名 [!DNL OAuth] 身份验证 |
+| 环境 | [!DNL JWT]身份验证的主机名 | [!DNL OAuth]身份验证的主机名 |
 |---|---|---|
 | **生产** | `https://aam.adobe.io/...` | `https://api.demdex.com/...` |
-| **测试版** | `https://aam-beta.adobe.io/...` | `https://api-beta.demdex.com/...` |
+| **Beta** | `https://aam-beta.adobe.io/...` | `https://api-beta.demdex.com/...` |
 
 >[!NOTE]
 >
->此 [!DNL Audience Manager] 测试版环境是生产环境的小规模、独立版本。 必须在此环境中输入和收集您要测试的所有数据。
+>[!DNL Audience Manager]测试版环境是生产环境的较小规模的独立版本。 必须在此环境中输入和收集您要测试的所有数据。
 
 ## 版本 {#versions}
 
-这些的新版本 [!DNL API]会定期发布。 新版本增加了 [!DNL API] 版本号。 请求中引用的版本号 [!DNL URL] 作为 `v<version number>` 如以下示例所示：
+这些[!DNL API]的新版本将定期发布。 新版本将增加[!DNL API]版本号。 请求[!DNL URL]中以`v<version number>`的形式引用了版本号，如以下示例所示：
 
 `https://<host>/v1/...`
 
 ## 定义的响应代码 {#response-codes-defined}
 
-`HTTP` 状态代码和返回的响应文本 [!DNL Audience Manager] [!UICONTROL REST API].
+[!DNL Audience Manager] [!UICONTROL REST API]返回的`HTTP`状态代码和响应文本。
 
 | 响应代码ID | 响应文本 | 定义 |
 |---|---|---|
 | `200` | `OK` | 已成功处理请求。 如果需要，将返回预期的内容或数据。 |
-| `201` | `Created` | 已创建资源。 返回对象 `PUT` 和 `POST` 请求。 |
+| `201` | `Created` | 已创建资源。 返回`PUT`和`POST`请求。 |
 | `204` | `No Content` | 已删除资源。 响应正文将为空白。 |
 | `400` | `Bad Request` | 服务器不理解该请求。 通常由于语法格式错误所致。 请检查您的请求，然后重试。 |
 | `403` | `Forbidden` | 您无权访问该资源。 |
@@ -479,4 +479,4 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 >* [JWT（服务帐户）身份验证](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
 >* [OAuth身份验证](../../api/rest-api-main/aam-api-getting-started.md#oauth)
 >* [OAuth 2.0](https://oauth.net/2/)
->* [OAuth 2简化版](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
+>* [简化的OAuth 2](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)

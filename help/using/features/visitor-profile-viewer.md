@@ -1,43 +1,42 @@
 ---
-description: 使用「訪客資料檢視器」可顯示目前瀏覽器之使用者資料目前的狀態，包括其特徵和區段。 對於每個特徵，您可以檢視其SID、名稱、有關如何實現訪客特徵（第一方或第三方）的詳細資訊、實現日期和實現頻率。 對於每個區段，您可以檢視其SID、名稱和區段會籍日期。 您也可以檢視其他Audience Manager設定檔ID (UUID)的訪客設定檔。 訪客資料檢視器有助於進行疑難排解。
-keywords: 位置；位置引數
+description: 使用访客配置文件查看器显示当前浏览器的用户配置文件的当前状态，包括其特征和区段。 对于每个特征，您可以查看其SID、名称、有关如何实现访客特征（第一方或第三方）的详细信息、实现日期和实现频率。 对于每个区段，您可以查看其SID、名称和区段成员资格日期。 您还可以查看其他Audience Manager配置文件ID (UUID)的访客配置文件。 访客资料查看器有助于进行故障排除。
+keywords: 位置；位置参数
 seo-description: Use the Visitor Profile Viewer to display the current state of a user profile for the current browser, including its traits and segments. For each trait, you can view its SID, name, details about how visitor traits were realized (first- or third-party), the realization date, and the frequency of realizations. For each segment, you can view its SID, name, and the segment membership date. You can also view the visitor profile for another Audience Manager profile ID (UUID). The Visitor Profile Viewer is helpful for troubleshooting purposes.
 seo-title: Visitor Profile Viewer
 solution: Audience Manager
-title: 访客配置文件查看器
+title: 访客资料查看器
 uuid: 77ffe134-e08f-41de-8fc4-15494847b1d0
 feature: Traits
 exl-id: 6c1ee14c-6f78-4e45-9b88-24ace8400079
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 2%
+source-wordcount: '250'
+ht-degree: 0%
 
 ---
 
-# 访客配置文件查看器 {#visitor-profile-viewer}
+# 访客资料查看器 {#visitor-profile-viewer}
 
-使用 [!UICONTROL Visitor Profile Viewer] 顯示目前瀏覽器的使用者個人資料目前狀態，包括其特徵和區段。 對於每個特徵，您可以檢視其 [!UICONTROL SID]、名稱、訪客特徵實現方式（第一方或第三方）的相關詳細資訊、實現日期和實現頻率。 對於每個區段，您可以檢視其 [!UICONTROL SID]、名稱和區段會籍日期。 您也可以檢視其他Audience Manager設定檔ID的訪客設定檔([!UICONTROL UUID])。 此 [!UICONTROL Visitor Profile Viewer] 有助於疑難排解。
+使用[!UICONTROL Visitor Profile Viewer]显示当前浏览器的用户配置文件的当前状态，包括其特征和区段。 对于每个特征，您可以查看其[!UICONTROL SID]、名称、有关如何实现访客特征（第一方或第三方）的详细信息、实现日期和实现频率。 对于每个区段，您可以查看其[!UICONTROL SID]、名称和区段成员资格日期。 您还可以查看其他Audience Manager配置文件ID ([!UICONTROL UUID])的访客配置文件。 [!UICONTROL Visitor Profile Viewer]有助于进行疑难解答。
 
 >[!NOTE]
 >
->* 存取需要 [!UICONTROL Administrator] 許可權。
->* 使用者介面中會延遲24小時才顯示已實現區段和已上線特徵的資訊。
-
+>* 访问需要[!UICONTROL Administrator]权限。
+>* 在用户界面中出现有关已实现的区段和载入的特征的信息之前，存在24小时的延迟。
 
 <!-- 
 Traits that are not part of a segment will not appear in the
 <span class="wintitle"> Visitor Profile Viewer</span>.
 -->
 
-1. 单击 **[!UICONTROL Tools]** > **[!UICONTROL Visitor Profile Viewer]**.
+1. 单击&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Visitor Profile Viewer]**。
 
-1. *（可選）* 按一下特徵名稱，將該特徵顯示在 [!UICONTROL Trait Builder].
+1. *（可选）*&#x200B;单击特征名称可在[!UICONTROL Trait Builder]中显示该特征。
 
-   如需詳細資訊，請參閱 [特徵](../features/traits/trait-details-page.md).
+   有关详细信息，请参阅[特征](../features/traits/trait-details-page.md)。
 
-1. *（可選）* 按一下區段名稱，將該區段顯示在 [!UICONTROL Segment Builder].
+1. *（可选）*&#x200B;单击区段名称以在[!UICONTROL Segment Builder]中显示该区段。
 
-   如需詳細資訊，請參閱 [區段](../features/segments/segments-purpose.md).
+   有关详细信息，请参阅[区段](../features/segments/segments-purpose.md)。
 
-1. *（條件式）* 在 **[!UICONTROL UUID]** 方塊中，指定另一個Audience Manager設定檔ID，然後按一下 **[!UICONTROL Refresh]** 以檢視該使用者的特徵和區段。
+1. *（有条件）*&#x200B;在&#x200B;**[!UICONTROL UUID]**&#x200B;框中，指定其他Audience Manager配置文件ID，然后单击&#x200B;**[!UICONTROL Refresh]**&#x200B;以查看该用户的特征和区段。

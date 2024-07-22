@@ -1,5 +1,5 @@
 ---
-description: 說明演演算法特徵建立程式專屬的設定步驟和功能。
+description: 描述算法特征创建流程特有的设置步骤和功能。
 seo-description: Describes set up steps and features unique to the algorithmic trait creation process.
 seo-title: Create Algorithmic Traits
 solution: Audience Manager
@@ -9,8 +9,8 @@ feature: Traits
 exl-id: dc799688-e38b-469b-bc55-507df0d28f43
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 4%
+source-wordcount: '309'
+ht-degree: 1%
 
 ---
 
@@ -18,41 +18,40 @@ ht-degree: 4%
 
 <!-- t_algo_trait_build.xml -->
 
-若要建立演演算法特徵，請前往 [!UICONTROL Traits] 並遵循下列步驟：
+要创建算法特征，请转到[!UICONTROL Traits]并执行以下步骤：
 
-1. 按一下 **[!UICONTROL Create New Trait]** 並選取 **[!UICONTROL Algorithmic]** 從下拉式功能表。
-1. 在 [基本資訊](../../features/traits/create-onboarded-rule-based-traits.md) 區段
-   * 為特徵命名。
-   * 選取資料來源。
-   * 選擇儲存資料夾。
-1. 展開 [!UICONTROL Configuration] 窗格並按一下 **[!UICONTROL Browse All Models]**.
-這會開啟一個新視窗，讓您選取要與特徵一起使用的模型。
-1. 選取模型並按一下 **[!UICONTROL Add Selected Model to Trait]**.
-新增模型會公開觸及範圍和精確度設定。
-1. 選取觸及率或準確度作為您的目標，然後從各自的下拉式選單中選擇一個值。 按一下 **[!UICONTROL Save]** 完成時。
+1. 单击&#x200B;**[!UICONTROL Create New Trait]**&#x200B;并从下拉菜单中选择&#x200B;**[!UICONTROL Algorithmic]**。
+1. 在[基本信息](../../features/traits/create-onboarded-rule-based-traits.md)部分中
+   * 为特征命名。
+   * 选择数据源。
+   * 选择存储文件夹。
+1. 展开[!UICONTROL Configuration]窗格并单击&#x200B;**[!UICONTROL Browse All Models]**。
+这将打开一个新窗口，允许您选择要与特征一起使用的模型。
+1. 选择模型并单击&#x200B;**[!UICONTROL Add Selected Model to Trait]**。
+添加模型将显示范围和精度设置。
+1. 选择可及性或准确度作为您的目标，然后从相应的下拉菜单中选择一个值。 完成后单击&#x200B;**[!UICONTROL Save]**。
 
-## 演演算法特徵的組態設定 {#configure-settings}
+## 算法特征的配置设置 {#configure-settings}
 
-在 [!UICONTROL Trait Builder]，則 [!UICONTROL Configuration] 區段可讓您將演演算法模型與特徵建立關聯。 若要完成演演算法特徵建立程式，請選取模型並選擇觸及率或準確度目標。
+在[!UICONTROL Trait Builder]中，[!UICONTROL Configuration]部分允许您将算法模型与特征相关联。 要完成算法特征创建过程，请选择一个模型并选择触及目标或准确度目标。
 
 ### 先决条件
 
 <!-- r_algo_trait_config_section.xml -->
 
-* [创建相似人群拓展模型](../../features/algorithmic-models/create-model.md).
-* 等候通知電子郵件，通知您模型資料執行已完成。
-* 填妥以下欄位中的必填欄位： [基本資訊](../../features/traits/create-onboarded-rule-based-traits.md) 區段。
+* [创建相似模型](../../features/algorithmic-models/create-model.md)。
+* 等待通知电子邮件，通知您模型数据运行已完成。
+* 完成[基本信息](../../features/traits/create-onboarded-rule-based-traits.md)部分中的必填字段。
 
-### 組態欄位與設定
+### 配置字段和设置
 
-| 介面元素 | 说明 |
+| 界面元素 | 说明 |
 |---|---|
-| **[!UICONTROL Select Model for Algorithmic Trait]** | 按一下 **[!UICONTROL Update]** 按鈕以開啟模型視窗。 從視窗中，選取要用來建立特徵的演演算法模型。 |
-| **[!UICONTROL Select Goal Accuracy]** | 選取此選項可根據精確度建立特徵。 精確度是已評分的值，可指出潛在使用者與基線之間的距離有多近。 精度刻度的範圍從0 （最不準確）到1 （最準確）。 |
-| **[!UICONTROL Reach and Accuracy Data Columns]** | 此區段位於右側，最多可顯示21列數值資料，這些資料顯示模型的精確度和觸及值。 |
-| **[!UICONTROL Reach and Accuracy Slider]** | 滑桿位於圖表底部，可讓您設定觸及度或準確度目標的數值。 您可以設定滑桿，然後選擇觸及或準確度目標按鈕來建立特徵。 |
+| **[!UICONTROL Select Model for Algorithmic Trait]** | 单击&#x200B;**[!UICONTROL Update]**&#x200B;按钮以打开模型窗口。 从窗口中，选择要用于创建特征的算法模型。 |
+| **[!UICONTROL Select Goal Accuracy]** | 选择此选项可根据精度创建特征。 准确性是一个评分值，它指示潜在用户与您的基线的接近程度。 精度刻度的范围从0（最不准确）到1（最准确）。 |
+| **[!UICONTROL Reach and Accuracy Data Columns]** | 此部分位于右侧，最多显示21行数字数据，用于显示模型的精度和范围值。 |
+| **[!UICONTROL Reach and Accuracy Slider]** | 滑块位于图形底部，允许您为范围或精度目标设置数值。 您可以设置滑块，然后选择触及或准确度目标按钮以创建特征。 |
 
 >[!MORELIKETHIS]
 >
 >* [精度和范围](../../features/traits/trait-accuracy-reach.md)
-

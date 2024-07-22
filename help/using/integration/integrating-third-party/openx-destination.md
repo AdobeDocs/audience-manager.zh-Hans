@@ -1,110 +1,110 @@
 ---
-description: 將OpenX設定為目的地，並將Audience Manager區段資料傳送至該平台。
+description: 将OpenX设置为目标，并将Audience Manager区段数据发送到该平台。
 seo-description: Set up OpenX as a destination and send Audience Manager segment data to that platform.
 seo-title: OpenX as an Audience Manager Destination
 solution: Audience Manager
-title: OpenX 作为 Audience Manager 目标
+title: OpenX作为Audience Manager目标
 uuid: 5e86ba73-281c-403b-af06-64a1d427526a
 feature: Third-party Integration
 exl-id: 938a518b-c8b0-4e86-885f-daf79b2cba38
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 2%
+source-wordcount: '681'
+ht-degree: 1%
 
 ---
 
-# OpenX 作为 Audience Manager 目标{#openx-as-an-audience-manager-destination}
+# OpenX作为Audience Manager目标{#openx-as-an-audience-manager-destination}
 
-設定 [!DNL OpenX] 作為目的地，並將Audience Manager區段資料傳送至該平台。
+将[!DNL OpenX]设置为目标并将Audience Manager区段数据发送到该平台。
 
 >[!NOTE]
 >
->僅用於現場廣告伺服器目標定位。
+>仅用于现场广告服务器定位。
 
-## OpenX目的地需求 {#openx-requirements}
+## OpenX目标要求 {#openx-requirements}
 
-程式碼放置標準、支援的鍵值格式、報表，以及傳送至的區段資料型別 [!DNL OpenX].
+代码放置标准、支持的键值格式、报表以及发送到[!DNL OpenX]的区段数据类型。
 
 <!-- aam-openx-requirements.xml -->
 
-設定前請先檢閱下列內容 [!DNL OpenX] 作為Audience Manager目的地：
+在将[!DNL OpenX]设置为Audience Manager目标之前，请查看以下各项：
 
-* **[!UICONTROL DIL]：** [!UICONTROL Data Integration Library] 程式碼應部署在您的網站上。 [!UICONTROL DIL] 協助您免除撰寫特殊程式碼以進行資料收集、整合、讀取Cookie值及復原頁面資料的需求。
-* **`get_aamCookie`函式：** 擷取Audience Manager使用者ID和Cookie資料的程式碼。 地標 [此程式碼](../../features/destinations/get-aam-cookie-code.md) 在頁面頂端或內部 `<head>` 程式碼區塊。
-* **傳送傳遞記錄至Audience Manager：** 如果您想要區段傳送報表（選用），請為Audience Manager提供包含曝光層級傳送資料的每日記錄。 資料可以是原始格式，但每筆記錄都必須包含Audience Manager `UUID`. Audience Manager可以透過以下方式取得或接收這些內容： [!DNL FTP].
+* **[!UICONTROL DIL]：** [!UICONTROL Data Integration Library]代码应部署在您的网站上。 [!UICONTROL DIL]有助于消除为数据收集、集成、读取Cookie值和恢复页面数据编写特殊代码的需要。
+* **`get_aamCookie`函数：**&#x200B;捕获Audience Manager用户ID和Cookie数据的代码。 将[此代码](../../features/destinations/get-aam-cookie-code.md)放在页面顶部或`<head>`代码块内。
+* **将投放日志发送到Audience Manager：**&#x200B;如果您需要区段投放报告（可选），请为Audience Manager提供包含展示级别投放数据的每日日志。 数据可以是原始格式，但每个记录都必须包含Audience Manager`UUID`。 Audience Manager可以通过[!DNL FTP]收取或接收这些邮件。
 
-### 索引鍵值資料：格式需求
+### 键值数据：格式要求
 
-Audience Manager會以機碼值組的形式傳送資料。 根據下列規格建立索引鍵值配對：
+Audience Manager以键值对的形式发送数据。 根据以下规范创建键值对：
 
-* 前置詞索引鍵 `c.` (例如， `c.color` 或 `c.price`)。
-* 以逗號分隔附加至單一索引鍵的序列化值(例如， `c.color = red, green, blue`)。
-* 以&amp;符號分隔多個索引鍵值組(例如， `c.color=red & c.price = 100 & c.condition = new`)。
-* 金鑰名稱不得包含特殊字元，例如輔音符號和標點符號或其他符號。
+* 带有`c.`的前缀键（例如，`c.color`或`c.price`）。
+* 用逗号分隔附加到单个键的序列化值（例如，`c.color = red, green, blue`）。
+* 使用&amp;符号（例如，`c.color=red & c.price = 100 & c.condition = new`）分隔多个键值对。
+* 密钥名称不应包含特殊字符，如重音符号和标点符号或其他符号。
 
-### 只有合格的區段才會傳送至OpenX
+### 只有符合条件的区段才会发送到OpenX
 
-傳遞至的資料量 [!DNL OpenX] 視特定使用者符合的區段數量而定。 例如，假設您設定100個Audience Manager區段。 如果網站訪客符合其中五個區段的資格，則系統只會將這五個區段傳送至 [!DNL OpenX] （並非全部100個）。
+传递到[!DNL OpenX]的数据量取决于特定用户符合条件的区段数。 例如，假设您设置了100个Audience Manager区段。 如果网站访客符合其中五个区段的条件，则只有这五个区段会发送到[!DNL OpenX]（并非全部100个）。
 
-## 建立OpenX目的地 {#openx-destination}
+## 创建OpenX目标 {#openx-destination}
 
-建立Cookie目的地 [!DNL OpenX] 在Audience Manager中。
+在Audience Manager中为[!DNL OpenX]创建Cookie目标。
 
 <!-- aam-openx-destination.xml -->
 
-在Audience Manager中， *目的地* 是任何其他系統(廣告伺服器、 [!DNL DSP]、廣告網路等) 任何其他系统（广告服务器、DSP、广告网络等）。[!UICONTROL Destination Builder] 提供可讓您建立和管理這些資料傳送流程的工具。 Audience Manager目的地功能位於 *受眾資料>目的地*. 若要開始使用，請按一下 **[!UICONTROL Add New Destination]** 並遵循下列步驟。
+在Audience Manager中，*目标*&#x200B;是任何其他系统（广告服务器、[!DNL DSP]、广告网络等） 任何其他系统（广告服务器、DSP、广告网络等）。[!UICONTROL Destination Builder]提供了用于创建和管理这些数据传输流程的工具。 Audience Manager目标功能位于&#x200B;*受众数据>目标*&#x200B;中。 要开始操作，请单击&#x200B;**[!UICONTROL Add New Destination]**&#x200B;并按照以下步骤操作。
 
-### 步驟1：基本資訊
+### 步骤1：基本信息
 
-若要完成 [!UICONTROL Basic Information] 區段：
+要完成[!UICONTROL Basic Information]部分，请执行以下操作：
 
-1. 為目的地命名。
-1. 選取 **[!UICONTROL "Cookie"]** 從 [!UICONTROL Type] 下拉式清單。
-1. 按一下 **[!UICONTROL Next]** 並移至 [!UICONTROL Configuration] 和 [!UICONTROL Segment Mappings] 區段。
+1. 命名目标。
+1. 从[!UICONTROL Type]下拉列表中选择&#x200B;**[!UICONTROL "Cookie"]**。
+1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;并转到[!UICONTROL Configuration]和[!UICONTROL Segment Mappings]部分。
 
-### 步驟2：設定資訊
+### 步骤2：配置信息
 
-若要完成 [!UICONTROL Configuration] 區段：
+要完成[!UICONTROL Configuration]部分，请执行以下操作：
 
-1. **Cookie名稱：** 為您的Cookie提供簡短的描述性名稱。
-1. **Cookie網域：** 留空可在使用者目前頁面的網域中設定Cookie。 如果您想要指定網域，請在名稱前面加上句號，如下所示， `.mydomain.com`.
-1. 在「 」中選擇一個索引鍵選項 [!UICONTROL Data Format] 區段。
-1. 如果您的索引鍵使用具有序列化值的資料，請選取 **[!UICONTROL Serialize]** 控制並指定序列分隔符號（分隔序列化值的字元）。
-1. 按一下 **[!UICONTROL Save]** 並展開 [!UICONTROL Segment Mappings] 區段。
+1. **Cookie名称：**&#x200B;为您的Cookie提供一个简短的、描述性的名称。
+1. **Cookie域：**&#x200B;留空可在用户当前页面的域中设置Cookie。 如果要指定域，请为名称添加句点，如`.mydomain.com`。
+1. 在[!UICONTROL Data Format]部分中选择一个键选项。
+1. 如果您的键使用具有序列化值的数据，请选择&#x200B;**[!UICONTROL Serialize]**&#x200B;控件并指定序列分隔符（用于分隔序列化值的字符）。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;并展开[!UICONTROL Segment Mappings]部分。
 
-### 步驟3：區段對應
+### 步骤3：区段映射
 
-若要將區段新增至Cookie目的地：
+要将区段添加到Cookie目标，请执行以下操作：
 
-1. **尋找區段：** 此 [!UICONTROL Segment Mappings] 區段提供兩種搜尋工具來協助尋找區段。 若要搜尋區段，請執行下列步驟：
-   * 選項1：開始在搜尋欄位中輸入區段名稱。 欄位會根據文字自動更新。 按一下 **[!UICONTROL Add]** 找到要使用的區段後。
-   * 選項2：按一下 **[!UICONTROL Browse All Segments]** 以開啟視窗，讓您依名稱或儲存位置瀏覽區段。 按一下 **[!UICONTROL Add Selected Segments]** 完成時。
-1. **新增對應：** 在對映彈出式視窗中，在對映欄位中輸入區段ID，然後按一下 **[!UICONTROL Save]**.
-1. 单击 **[!UICONTROL Done]**.
+1. **查找区段：** [!UICONTROL Segment Mappings]部分提供两种搜索工具来帮助查找区段。 要查找段，请执行以下操作：
+   * 选项1：开始在搜索字段中键入区段名称。 字段会根据文本自动更新。 找到要使用的区段后，请单击&#x200B;**[!UICONTROL Add]**。
+   * 选项2：单击&#x200B;**[!UICONTROL Browse All Segments]**&#x200B;打开一个窗口，允许您按名称或存储位置浏览区段。 完成后单击&#x200B;**[!UICONTROL Add Selected Segments]**。
+1. **添加映射：**&#x200B;在映射弹出窗口中，在映射字段中输入区段ID并单击&#x200B;**[!UICONTROL Save]**。
+1. 单击 **[!UICONTROL Done]**。
 
-## OpenX設定 {#openx-code-setup}
+## OpenX设置 {#openx-code-setup}
 
-修改 [!DNL OpenX] 用於處理Audience Manager區段資料的設定。
+修改[!DNL OpenX]设置以使用Audience Manager区段数据。
 
 <!-- aam-openx-code.xml -->
 
-若要設定 [!DNL OpenX]：
+要设置[!DNL OpenX]：
 
-* 安裝 [!UICONTROL DIL] 程式碼跨您的網站。
-* 建立 [!DNL OpenX] 作為Audience Manager中的Cookie目的地。
-* 放置 `get_aamCookie` 函式在頁面頂端，最好是在 `<head>` 程式碼區塊。 此 `get_aamCookie` 程式碼可供使用 [此處](../../features/destinations/get-aam-cookie-code.md).
-* 修改您的廣告標籤以呼叫 `get_aamCookie` 函式並包含您在設定時提供的Cookie名稱 [!DNL OpenX] 目的地。 例如，如果您將Cookie `test_cookie`，則廣告標籤應呼叫 `get_aamCookie` 和參考Cookie名稱。
-* 您的廣告標籤看起來可能類似於以下範例。
+* 在网站上安装[!UICONTROL DIL]代码。
+* 创建[!DNL OpenX]作为Audience Manager中的Cookie目标。
+* 将`get_aamCookie`函数放在页面顶部，最好放在`<head>`代码块中。 `get_aamCookie`代码在[此处](../../features/destinations/get-aam-cookie-code.md)可用。
+* 修改广告标记以调用`get_aamCookie`函数，并包含您在设置[!DNL OpenX]目标时提供的Cookie名称。 例如，如果您为Cookie `test_cookie`命名，则广告标记应调用`get_aamCookie`并引用Cookie名称。
+* 您的广告标记可能与以下示例类似。
 
-   ```
-   <a href= "https://client.adserver.net/?" + get_aamCookie('test_cookie') +
-    "&etc&xid=" + get_aamCookie('aam_uuid')
-   ```
+  ```
+  <a href= "https://client.adserver.net/?" + get_aamCookie('test_cookie') +
+   "&etc&xid=" + get_aamCookie('aam_uuid')
+  ```
 
-記得加入 `xid=` . 它保有實際的不重複使用者ID ([!UICONTROL UUID])在廣告呼叫期間傳入。
+切记要包括`xid=` 。 它包含广告调用期间传入的实际唯一用户ID ([!UICONTROL UUID])。
 
-完整格式的廣告呼叫看起來可能類似這樣：
+完整形式的广告调用可能类似于以下内容：
 
 ```
 https://client.adserver.net/?c.key1=val1&c.key2=val2&etc& xid =3286487458745343

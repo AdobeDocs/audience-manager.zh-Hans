@@ -1,5 +1,5 @@
 ---
-description: 若要建立「設定檔合併規則」，請檢閱並完成本節所述每個程式中的步驟。
+description: 要创建配置文件合并规则，请查看并完成本节中介绍的每个步骤中的步骤。
 seo-description: To create Profile Merge Rules review and complete the steps in each of the procedures described in this section.
 seo-title: Getting Started with Profile Merge Rules
 solution: Audience Manager
@@ -9,130 +9,130 @@ feature: Profile Merge
 exl-id: 11f397dd-1f23-4b14-be6f-60ce8b77ab12
 source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 3%
+source-wordcount: '1263'
+ht-degree: 1%
 
 ---
 
 # 开始使用配置文件合并规则 {#getting-started-with-profile-merge-rules}
 
-建立 [!UICONTROL Profile Merge Rules]，檢閱並完成本節所述每個程式中的步驟。
+要创建[!UICONTROL Profile Merge Rules]，请查看并完成本节中介绍的每个过程中的步骤。
 
 <!-- merge-rules-start.xml -->
 
-## 建立跨裝置資料來源 {#create-data-source}
+## 创建跨设备数据Source {#create-data-source}
 
-若要建立跨裝置資料來源，請前往 **[!UICONTROL Audience Data > Data Sources > Add New]** 並完成此處所述每個區段的步驟。 需要管理員許可權才能建立或編輯跨裝置資料來源。
+要创建跨设备数据源，请转到&#x200B;**[!UICONTROL Audience Data > Data Sources > Add New]**&#x200B;并完成此处描述的每个部分的步骤。 创建或编辑跨设备数据源需要管理员权限。
 
 <!-- create-cross-device-datasource.xml -->
 
 >[!TIP]
 >
->另請參閱 [資料來源設定和功能表選項](../datasources-list-and-settings.md#settings-menu-options) 這些不同控制項的說明。
+>有关这些不同控件的说明，请参阅[数据Source设置和菜单选项](../datasources-list-and-settings.md#settings-menu-options)。
 
-## 資料來源詳細資料 {#details}
+## 数据Source详细信息 {#details}
 
-若要完成 [!UICONTROL Data Source Details] 區段：
+要完成[!UICONTROL Data Source Details]部分，请执行以下操作：
 
-1. 為資料來源命名。
-2. *（可選）* 說明資料來源。 簡潔的說明可協助您定義資料來源的角色或用途。
-3. 提供整合程式碼。 整合程式碼是您為此資料來源擁有的唯一ID。
-4. 在 **[!UICONTROL ID Type]** 清單，選取 **[!UICONTROL Cross Device]**.
-5. 在 **[!UICONTROL ID Definition]** 清單中，選取定義資料來源型別的選項。 选项包括：
-   * **[!UICONTROL Person]**：定義單一人員的ID。 此ID可對應至多個 [!DNL Audience Manager] ID。
-   * **[!UICONTROL Household]**：定義一組人員的ID。 此ID可對應至多個 [!DNL Audience Manager] ID。
+1. 命名数据源。
+2. *（可选）*&#x200B;描述数据源。 简洁的描述可帮助您定义数据源的角色或用途。
+3. 提供集成代码。 集成代码是您自己的此数据源唯一ID。
+4. 在&#x200B;**[!UICONTROL ID Type]**&#x200B;列表中，选择&#x200B;**[!UICONTROL Cross Device]**。
+5. 在&#x200B;**[!UICONTROL ID Definition]**&#x200B;列表中，选择用于定义数据源类型的选项。 选项包括：
+   * **[!UICONTROL Person]**：定义单个人员的ID。 此ID可以映射到多个[!DNL Audience Manager] ID。
+   * **[!UICONTROL Household]**：定义一组人员的ID。 此ID可以映射到多个[!DNL Audience Manager] ID。
 
 ## 数据导出控制 {#export-controls}
 
-[資料匯出控制](../data-export-controls.md) 是選擇性分類規則，可套用至資料來源和目的地。 当该操作违反数据隐私或使用协议时，它们会阻止您将数据发送到目标。 如果您不使用，請略過本節 [!UICONTROL Data Export Controls].
+[数据导出控件](../data-export-controls.md)是可选的分类规则，您可以将其应用于数据源和目标。 当操作违反数据隐私或使用协议时，它们会阻止您向目标发送数据。 如果您不使用[!UICONTROL Data Export Controls]，请跳过此部分。
 
-## 数据来源设置 {#settings}
+## 数据Source设置 {#settings}
 
-[!UICONTROL Data Source Settings] 區段提供多個選項，但這2個選項對於建立跨裝置資料來源很重要：
+[!UICONTROL Data Source Settings]部分提供了多个选项，但这2个选项对于创建跨设备数据源很重要：
 
-* **[!UICONTROL Use as Authenticated Profile]**：預設為選取，此設定可讓您建置 [!UICONTROL Profile Merge Rule] 使用您自己的已驗證資料。
+* **[!UICONTROL Use as Authenticated Profile]**：默认选中，此设置允许您使用自己的经过身份验证的数据生成[!UICONTROL Profile Merge Rule]。
 
-* **[!UICONTROL Use as a Device Graph]**：此控制項僅適用於列為資料提供者的帳戶。 選取此核取方塊會將您的資料來源建立為裝置圖表，並讓您與其他人共用 [!DNL Audience Manager] 客戶。 使用您的 [!DNL Audience Manager] 諮詢程式，以設定為資料提供者，並指定哪些客戶可使用 [!UICONTROL Data Source] 應該與共用。 您的顧問將透過內部布建程式布建您的帳戶和裝置圖表共用。
+* **[!UICONTROL Use as a Device Graph]**：此控件仅适用于列为数据提供程序的帐户。 选中此复选框会将您的数据源创建为设备图，并允许您与其他[!DNL Audience Manager]客户共享。 与您的[!DNL Audience Manager]顾问合作，将其设置为数据提供程序，并指定应将此[!UICONTROL Data Source]共享给哪些客户。 您的顾问将通过内部配置过程配置您的帐户和设备图共享。
 
-* **[!UICONTROL Data retention for inactive Customer IDs]**：此控制項可讓您設定非作用中客戶ID的資料保留期間。 这可确定在上次查看 Audience Manager 平台上的客户 Id 后，Audience Manager 将其保留在数据库中的时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们将所有月份计算为30天。 Audience Manager會根據您為非作用中客戶ID設定的資料保留，執行每週刪除一次非作用中客戶ID的程式。
+* **[!UICONTROL Data retention for inactive Customer IDs]**：此控件允许您为非活动客户ID设置数据保留期限。 这会决定Audience Manager将客户ID在Audience Manager平台上最后一次看到后，保留在我们的数据库中的时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们将所有月份都计为30天。 Audience Manager会根据您为非活动客户ID设置的数据保留时间，运行每周删除一次非活动客户ID的流程。
 
-與這些設定相關聯的文字欄位可讓您重新命名 [!UICONTROL Data Source] 別名為，出現在 [設定檔合併規則選項](merge-rule-definitions.md). 例如，如果您將別名新增至 **[!UICONTROL Use as Authenticated Profile]**，該名稱會出現在 [!UICONTROL Authenticated Profile Options] 清單。 如果您將別名新增至 **[!UICONTROL Use as a Device Graph]**，該名稱會出現在 [!UICONTROL Device Options] 清單。
+与这些设置关联的文本字段允许您使用在[配置文件合并规则选项](merge-rule-definitions.md)中显示的别名重命名[!UICONTROL Data Source]。 例如，如果您向&#x200B;**[!UICONTROL Use as Authenticated Profile]**&#x200B;添加别名，则该名称会显示在[!UICONTROL Authenticated Profile Options]列表中。 如果您向&#x200B;**[!UICONTROL Use as a Device Graph]**&#x200B;添加别名，则该名称会显示在[!UICONTROL Device Options]列表中。
 
-## 建立設定檔合併規則 {#create-profile-merge-rule}
+## 创建配置文件合并规则 {#create-profile-merge-rule}
 
-若要创建 [!UICONTROL Profile Merge Rule] ，请转到 **[!UICONTROL Audience Data > Profile Merge Rules > Add New Rule]** 并完成此处所述的每个部分的步骤。
+要创建[!UICONTROL Profile Merge Rule]，请转到&#x200B;**[!UICONTROL Audience Data > Profile Merge Rules > Add New Rule]**&#x200B;并完成此处描述的每个部分的步骤。
 
-设置跨设备数据源后，您最多可以创建3个合并规则。 如果您注册基于人员的目标 ](../destinations/people-based-destinations-overview.md) ，则可以访问第四个 [ 配置文件合并规则（ [!UICONTROL All Cross-Device Profiles] ）。
+设置跨设备数据源后，您最多可以创建3个合并规则。 如果您注册[基于人员的目标](../destinations/people-based-destinations-overview.md)，则可以访问第4个配置文件合并规则([!UICONTROL All Cross-Device Profiles])。
 
-创建、编辑或删除规则需要管理员权限。 所有用户都可以视图和使用现有 [!UICONTROL Profile Merge Rules] 的。
+创建、编辑或删除规则需要管理员权限。 所有用户都可以查看和使用现有[!UICONTROL Profile Merge Rules]。
 
 <!-- create-profile-merge-rule.xml -->
 
-**先决条件：** 版本 a [!UICONTROL Profile Merge Rule] 需要跨设备数据源。 请参阅 [ 创建数据来源 ](../manage-datasources.md#create-data-source) 。
+**先决条件：**&#x200B;需要跨设备数据源才能生成[!UICONTROL Profile Merge Rule]。 请参阅[创建数据Source](../manage-datasources.md#create-data-source)。
 
 >[!TIP]
 >
->另請參閱 [定義的設定檔合併規則選項](merge-rule-definitions.md) 這些不同控制項的說明。
+>有关这些不同控件的说明，请参阅[定义的配置文件合并规则选项](merge-rule-definitions.md)。
 
 ## 基本信息 {#basic-info}
 
-若要完成 [!UICONTROL Basic Information] 區段：
+要完成[!UICONTROL Basic Information]部分，请执行以下操作：
 
-1. 為命名 [!UICONTROL Profile Merge Rule].
-2. *（可選）* 說明 [!UICONTROL Profile Merge Rule]. 簡潔的說明可協助您定義規則的角色或用途。
-3. *（可选）* 选择 **[!UICONTROL Set as default]** 是否要将其设为默认值 [!UICONTROL Profile Merge Rule] 。 新区段会自动与默认规则关联。
+1. 为[!UICONTROL Profile Merge Rule]命名。
+2. *（可选）*&#x200B;描述[!UICONTROL Profile Merge Rule]。 简洁的描述可帮助您定义规则的角色或用途。
+3. *（可选）*&#x200B;如果要使其成为默认[!UICONTROL Profile Merge Rule]，请选择&#x200B;**[!UICONTROL Set as default]**。 新区段会自动与默认规则关联。
 
 ## 数据导出控制 {#data-export-controls}
 
-[資料匯出控制](../data-export-controls.md) 是選擇性分類規則，可套用至 [!UICONTROL Profile Merge Rule]. 當該動作違反資料隱私權或使用協定時，它們會阻止您傳送資料至目的地。 如果您不使用，請略過本節 [!UICONTROL Data Export Controls].
+[数据导出控件](../data-export-controls.md)是可选的分类规则，可应用于[!UICONTROL Profile Merge Rule]。 当操作违反数据隐私或使用协议时，它们会阻止您向目标发送数据。 如果您不使用[!UICONTROL Data Export Controls]，请跳过此部分。
 
-## 設定檔合併規則設定 {#profile-merge-rule-setup}
+## 配置文件合并规则设置 {#profile-merge-rule-setup}
 
-要完成 [!UICONTROL Proflie Merge Rule Setup] 章节，请执行以下操作：
+要完成[!UICONTROL Proflie Merge Rule Setup]部分，请执行以下操作：
 
-1. **[!UICONTROL Authenticated Option]**&#x200B;选择。选项包括：
+1. 选择&#x200B;**[!UICONTROL Authenticated Option]**。 选项包括：
    * **[!UICONTROL No Authenticated Profile]**
    * **[!UICONTROL Current Authenticated Profile]**
    * **[!UICONTROL Last Authenticated Profile]**
-2. 选择一个 **[!UICONTROL Authenticated Profile Option]** （最多3个）。 这些是以前创建的 [ 跨设备数据源 ](merge-rules-start.md) 。
-3. 选择 **[!UICONTROL Device Option]**. 选项包括：
+2. 选择&#x200B;**[!UICONTROL Authenticated Profile Option]**（最多3个，最多）。 这些是您之前创建的[跨设备数据源](merge-rules-start.md)。
+3. 选择&#x200B;**[!UICONTROL Device Option]**。 选项包括：
    * **[!UICONTROL No Device Profile]**
    * **[!UICONTROL Current Device Profile]**
    * **[!UICONTROL Profile Link Device Graph]**
-4. 单击 **[!UICONTROL Save]**.
+4. 单击 **[!UICONTROL Save]**。
 
-### 使用跨裝置ID作為使用者ID金鑰的Adobe Campaign目的地考量事項 {#considerations}
+### 有关使用跨设备ID作为用户ID密钥的Adobe Campaign目标的注意事项 {#considerations}
 
-2019年底，我們發佈了一系列設定檔合併規則增強功能，以提高使用跨裝置ID產生批次檔案的準確性。 從2020年3月16日星期一開始，您的Audience Manager執行個體將嚴格遵循這些增強功能。 因此，使用跨裝置ID對應至目的地的區段，在某些設定檔合併規則設定中將停止產生匯出。
+2019年末，我们发布了一系列配置文件合并规则增强功能，以提高使用跨设备ID生成的批处理文件的准确性。 从2020年3月16日星期一开始，您的Audience Manager实例将严格遵循这些增强功能。 因此，使用跨设备ID映射到目标的区段将停止在某些配置文件合并规则配置中生成导出。
 
-為確保您的Audience Manager執行個體與使用跨裝置ID的目的地(例如Adobe Campaign)之間正確整合，請確保您符合以下要求：
+要确保使用跨设备ID(如Adobe Campaign)的Audience Manager实例和目标之间正确集成，请确保您满足以下要求：
 
-1. 檢閱對應至您Adobe Campaign宣告ID目的地的區段所使用的設定檔合併規則。 設定檔合併規則必須使用 [!UICONTROL Last Authenticated Profile] 選項，以便所有已驗證的設定檔都可以包含在匯出中。 如果您的設定檔合併規則使用其他選項，請將其切換為 [!UICONTROL Last Authenticated Profile].
-2. 在「設定檔合併規則」設定中選取「Adobe Campaign宣告ID」資料來源。
+1. 查看映射到您的Adobe Campaign Declared ID目标的区段所使用的配置文件合并规则。 配置文件合并规则必须使用[!UICONTROL Last Authenticated Profile]选项，以便所有经过身份验证的配置文件都可以包含在导出中。 如果您的配置文件合并规则使用其他选项，请将其切换到[!UICONTROL Last Authenticated Profile]。
+2. 在配置文件合并规则设置中选择Adobe Campaign Declared ID数据源。
 
 >[!NOTE]
 >
-> 如果您已達到數量上限，請 [!UICONTROL Profile Merge Rules] 如需根據上述指示進行設定的協助，請聯絡客戶服務。
+> 如果您已达到[!UICONTROL Profile Merge Rules]的最大数量，并根据上述说明在配置过程中需要帮助，请联系客户关怀团队。
 
-## 設定合併規則程式碼 {#configure-merge-rule-code}
+## 配置合并规则代码 {#configure-merge-rule-code}
 
-請依照下列指示設定 [!UICONTROL Adobe Experience Platform Identity Service]， [!UICONTROL DIL]，和行動裝置 [!DNL SDK] 用於合併規則的程式碼。
+按照这些说明设置[!UICONTROL Adobe Experience Platform Identity Service]、[!UICONTROL DIL]和移动设备[!DNL SDK]代码以使用合并规则。
 
 <!-- merge-rules-configure-code.xml -->
 
 ### 先决条件
 
-您必須設定 [跨裝置資料來源](#create-data-source) 和 [設定檔合併規則](#create-profile-merge-rule) *早於* 完成這些程式。
+在完成这些步骤之前，您必须设置[跨设备数据源](#create-data-source)和[配置文件合并规则](#create-profile-merge-rule) **。
 
-## 適用於Adobe Experience Platform Identity Service客戶 {#id-service-customers}
+## 对于Adobe Experience Platform Identity服务客户 {#id-service-customers}
 
-此 [!UICONTROL Adobe Experience Platform Identity Service] 和最新版本的 [DIL](../../dil/dil-overview.md) 使用時建議使用 [!UICONTROL Profile Merge Rules]. 不過，您不必使用 [!UICONTROL Adobe Experience Platform Identity Service] 以使用此功能。 如果您只使用 [!UICONTROL DIL]，請參閱 [舊版DIL區段](#legacy-dil) 下方的。
+在使用[!UICONTROL Profile Merge Rules]时，建议使用[!UICONTROL Adobe Experience Platform Identity Service]和最新版本的[DIL](../../dil/dil-overview.md)。 但是，您不必使用[!UICONTROL Adobe Experience Platform Identity Service]即可使用此功能。 如果您只使用[!UICONTROL DIL]，请参阅下面的[旧版DIL部分](#legacy-dil)。
 
-### 設定Set Customer ID函式
+### 配置Set Customer ID函数
 
-使用時 [!UICONTROL Adobe Experience Platform Identity Service]，則 `setCustomerIDs` 函式將宣告ID傳遞至 [!DNL Audience Manager]. 若要使用設定檔合併規則，您必須修改 `setCustomerIDs` 以使用建立跨裝置資料來源時指定的整合代碼。 例如，假設您已使用整合代碼建立跨裝置資料來源 `my_datasource_ic`. 若要傳入宣告的ID，您可以將整合程式碼新增至訪客ID函式，如下列修改後的程式碼範例所示。
+使用[!UICONTROL Adobe Experience Platform Identity Service]时，`setCustomerIDs`函数将声明的ID传递给[!DNL Audience Manager]。 要使用配置文件合并规则，必须修改`setCustomerIDs`以使用在创建跨设备数据源时指定的集成代码。 例如，假设您已使用集成代码`my_datasource_ic`创建跨设备数据源。 要传入声明的ID，您需要将集成代码添加到访客ID函数中，如下面的修改后代码示例所示。
 
-#### 一般程式碼範例
+#### 常规代码示例
 
 ```javascript
 visitor.setCustomerIDs({
@@ -141,7 +141,7 @@ visitor.setCustomerIDs({
       "authState":Visitor.AuthState.AUTHENTICATED
 ```
 
-#### 修改後的程式碼範例
+#### 修改后的代码示例
 
 ```javascript
 visitor.setCustomerIDs({
@@ -150,11 +150,11 @@ visitor.setCustomerIDs({
      "authState":Visitor.AuthState.AUTHENTICATED
 ```
 
-如需詳細資訊，請參閱 [建立跨裝置資料來源](#create-data-source) 和 [客戶ID和驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html).
+有关详细信息，请参阅[创建跨设备数据Source](#create-data-source)和[客户ID和身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)。
 
-### 設定 `DIL.create` 函式
+### 配置`DIL.create`函数
 
-最新版本的 [!UICONTROL DIL] 現在自動選取 [!UICONTROL declared ID] 從 `visitorService` 函式於 `DIL.create` (請參閱 [宣告ID變數](../declared-ids.md#declared-id-variables))。 檢查您的 `DIL.create` 函式來確定已正確設定，如下列程式碼範例所示。
+最新版本的[!UICONTROL DIL]现在自动从`DIL.create`中的`visitorService`函数提取[!UICONTROL declared ID]（请参阅[声明的ID变量](../declared-ids.md#declared-id-variables)）。 检查您的`DIL.create`函数，确保正确设置此函数，如下面的代码示例所示。
 
 ```js
 var vDil = DIL.create({
@@ -165,15 +165,15 @@ var vDil = DIL.create({
 });
 ```
 
-在命名空间键值对中， `*` MCORG `*` 变量是您 [!DNL Experience Cloud] 的组织 ID。 如果您沒有此ID，可以在 [!UICONTROL Administration] 部分 [!DNL Experience Cloud] 儀表板。 您需要管理员权限才能视图此功能板。 请参阅 [ 管理：核心服务 ](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) 。
+在命名空间键值对中，`*`MCORG`*`变量是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，则可以在[!DNL Experience Cloud]仪表板的[!UICONTROL Administration]部分中找到它。 您需要管理员权限才能查看此仪表板。 请参阅[管理：核心服务](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
-### 設定SDK
+### 配置SDK
 
-請參閱 [設定SDK](#configure-sdks-legacy-dil) 區段底下。
+请参阅下面的[配置SDK](#configure-sdks-legacy-dil)部分。
 
-## 舊版DIL {#legacy-dil}
+## 旧版DIL {#legacy-dil}
 
-如果您沒有使用 [!DNL Adobe Experience Platform Identity Service] 然而，您確實應該這麼做。 但是，我們瞭解移轉至新程式碼需要審慎的思考和測試。 在這些情況下，請檢視您的 `DIL.create` 函式來確定已正確設定，如下列程式碼範例所示。
+如果您尚未使用[!DNL Adobe Experience Platform Identity Service]，则确实应该使用。 但是，我们理解，迁移到新代码需要仔细的思考和测试。 在这些情况下，请检查您的`DIL.create`函数，以确保正确设置了它，如下面的代码示例所示。
 
 ```js
 DIL.create({
@@ -185,14 +185,14 @@ DIL.create({
 });
 ```
 
-有关更多信息，请参阅声明的 ID 变量 ](../declared-ids.md#declared-id-variables) 中 [ 的旧版 [!UICONTROL DIL] 部分。
+有关详细信息，请参阅[声明的ID变量](../declared-ids.md#declared-id-variables)中的旧版[!UICONTROL DIL]部分。
 
-### 配置 Sdk {#configure-sdks-legacy-dil}
+### 配置SDK {#configure-sdks-legacy-dil}
 
-檢查以下專案的方法： [!DNL SDK] 可讓您傳遞的程式碼 [!UICONTROL declared IDs] 從 [!DNL Android] 和 [!DNL iOS] 行動裝置。 的變數名稱 [!DNL Android] 和 [!DNL iOS] 程式碼程式庫是相同的：
+检查您的[!DNL SDK]代码中允许您从[!DNL Android]和[!DNL iOS]移动设备传递[!UICONTROL declared IDs]的方法。 [!DNL Android]和[!DNL iOS]代码库的变量名称相同：
 
-* `dpid`：跨裝置資料來源識別碼。
-* `dpuuid`：此 [!UICONTROL declared ID] （即使用者ID）。
+* `dpid`：跨设备数据源标识。
+* `dpuuid`： [!UICONTROL declared ID]（即用户ID）。
 
 <table id="table_2ACA3E5F316D4413B10A4403B786CC23"> 
  <thead> 
@@ -204,7 +204,7 @@ DIL.create({
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b> Android </b> </p> </td> 
-   <td colname="col2"> <p> <code> setDpidAndDpuuid </code> </p> <p> <b>语法：</b> </p> <p> <pre> 公用靜態void setDpidAndDpuuid（字串dpid，字串dpuuid）； </pre> </p> <p> <b>示例:</b> </p> <p> <pre> AudienceManager.setDpidAndDpuuid("myDpid"，"myDpuuid")； </pre> </p> </td> 
+   <td colname="col2"> <p> <code> setDpidAndDpuuid </code> </p> <p> <b>语法：</b> </p> <p> <pre> 公共静态void setDpidAndDpuuid(String dpid， String dpuuid)； </pre> </p> <p> <b>示例：</b> </p> <p> <pre> AudienceManager.setDpidAndDpuuid("myDpid"，"myDpuuid")； </pre> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> iOS </b> </p> </td> 
@@ -213,7 +213,7 @@ DIL.create({
       +&nbsp;(void)&nbsp;audienceSetDpid:(NSString&nbsp;*)dpid 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:(NSString&nbsp;*)dpuuid; 
     </code></p>
-    <p> <b>示例:</b> </p><p>
+    <p> <b>示例：</b> </p><p>
     <code class="javascript">
       [ADBMobile&nbsp;audienceSetDpid:@"290"
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:@"99301393923940"];
@@ -223,9 +223,8 @@ DIL.create({
  </tbody>
 </table>
 
-另請參閱 [適用於Android的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) 和 [適用於iOS的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html).
+另请参阅[Android的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html)和[iOS的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html)。
 
 >[!MORELIKETHIS]
 >
 >* [创建数据源](../manage-datasources.md#create-data-source)
-

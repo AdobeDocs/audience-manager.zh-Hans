@@ -1,5 +1,5 @@
 ---
-description: 本文說明索引鍵/值配對中索引鍵變數使用的命名慣例。
+description: 本文介绍了键值对中的键变量使用的命名约定。
 seo-description: This article describes the naming conventions used by the key variable in a key-value pair.
 seo-title: Name Requirements for Key Variables
 solution: Audience Manager
@@ -9,25 +9,25 @@ feature: Traits
 exl-id: 5d1e5842-bebc-4d75-958f-078ba0061dfa
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 9%
+source-wordcount: '105'
+ht-degree: 0%
 
 ---
 
 # 关键变量的名称要求 {#name-requirements-for-key-variables}
 
-本文說明索引鍵/值配對中索引鍵變數使用的命名慣例。
+本文介绍了键值对中的键变量使用的命名约定。
 
-## 金鑰的命名需求
+## 键的命名要求
 
 <!-- c_tb_key_name_requirements.xml -->
 
-在 [!UICONTROL Expression Builder]，機碼 — 值組中的機碼變數名稱可由任何數字後面接著1 （或更多）字母、破折號、底線和其他數字組成。
+在[!UICONTROL Expression Builder]中，键值对中的键变量名称可以包含任意数量的数字，后跟1（或多个）字母、短划线、下划线和其他数字。
 
-* 有效的金鑰名稱： `price123`， `123price`， `price-123`， `c_price123`.
+* 有效的键名： `price123`、`123price`、`price-123`、`c_price123`。
 
-* 無效的金鑰名稱： `123`， `price!123`.
+* 无效键名： `123`，`price!123`。
 
-## 將關鍵變數加上前置詞 `c_`
+## 为键变量添加前缀`c_`
 
-此 `c_` 首碼為 *一律* 如果在事件呼叫URL上傳送資料的引數使用該語法，則此為必要專案。
+如果在事件调用URL上发送数据的参数使用该语法，则`c_`前缀为&#x200B;*始终*。

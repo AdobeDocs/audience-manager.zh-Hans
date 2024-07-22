@@ -1,53 +1,53 @@
 ---
 source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '326'
 ht-degree: 2%
 
 ---
 # 说明
 
-**注意：此頁面（或任何readme.md頁面）不會發佈至面對客戶的檔案**
+**注意：此页面（或任何readme.md页面）将不会发布到面向客户的文档**
 
-## 目錄
+## 目录
 
-+ `TOC.md` 位於使用手冊的根目錄，提供使用手冊中所包含適用於此解決方案的主題組織。
-+ 每個使用手冊都有其自己的唯一 `TOC.md`，您可視需要排序所有頁面/主題。
-+ 所有使用手冊的第一頁都是 `overview.md`.
++ 用户指南根目录中的`TOC.md`提供了此解决方案指南中包含的主题的组织。
++ 每个用户指南都有自己的唯一`TOC.md`，您可以在其中根据需要对所有页面/主题进行排序。
++ 所有用户指南的第一页都是`overview.md`。
 
 ## 用户指南
 
-+ 我們將使用手冊的簡介稱為 `overview.md`
-+ 使用手冊中的每個主題都有自己的不同目錄。
-   + 如果指南中有一個名為的主題 *實作*，對應的目錄為 `/implementation`
-+ 所有影像資產都儲存在 `/assets` 位於使用手冊的根目錄。
-   + 中的所有影像 `/assets` 目錄將會本地化。
-   + 中的任何影像 `/no-localize` 目錄將不會翻譯（令人驚訝！）。 這可用來確保在loc版本中特定資產不會不必要地重現。
++ 用户指南的简介称为`overview.md`
++ 用户指南中的每个主题都有自己的独特目录。
+   + 如果指南中有一个名为&#x200B;*实现*&#x200B;的主题，则相应的目录为`/implementation`
++ 所有图像资产都存储在用户指南根目录的`/assets`中。
+   + `/assets`目录中的所有图像都将进行本地化。
+   + `/no-localize`目录中的任何图像都不会进行本地化（很吃惊吧！）。 可以使用此目录来确保在本地化版本中不会复制不必要的特定资产。
 
-## 使用手冊層級中繼資料
+## 用户指南级别元数据
 
-+ 說明使用手冊的中繼資料會儲存在 `TOC.md`. 这包括：
-   + product — 產品/功能的名稱。
-   + cloud — 此產品所屬的雲端。
-   + 對象 — 手冊所針對的對象或原型。
-   + 使用手冊 — 使用手冊的名稱。
++ 描述用户指南的元数据存储在`TOC.md`中。 这包括：
+   + product — 产品/功能的名称。
+   + cloud — 此产品所属的云。
+   + 受众 — 指南所针对的受众或原型。
+   + user-guide — 用户指南的名称。
 
-## 頁面層級中繼資料
+## 页面级别元数据
 
-+ 描述檔案所需的中繼資料會儲存為每個個別頁面的一部分。 这包括：
-   + title — 頁面標題。
-   + description — 頁面說明。
-   + seo-title - seo替代標題。
-   + seo-description - SEO用途的替代標題。
-   + short-title - （選擇性欄位）。
-   + index - yes / no — 頁面是否會由Adobe的搜尋平台建立索引。
-   + 翻譯 — 是/否 — 此頁面是否會翻譯。
-   + 版本 — 主要用於AEM和Campaign，代表產品的版本。
-   + private-feature-pack — 主要用於AEM。
-   + beta — 此產品是否為beta版？
-   + 重新導向 — 必要時可用於建立新頁面的參照。
-   + doc-type：參考（預設） /疑難排解/開發人員/教學課程/ kb /白皮書。
++ 描述文档所需的元数据将作为每个单独页面的一部分存储。 这包括：
+   + title — 页面标题。
+   + description — 页面描述。
+   + seo-title - seo替代标题。
+   + seo-description — 用于SEO的替代标题。
+   + short-title — （可选字段）。
+   + index - yes / no — 页面是否会按Adobe的搜索平台编制索引。
+   + translate - yes / no — 此页面是否会进行本地化。
+   + version — 主要用于AEM和Campaign，表示产品的版本。
+   + private-feature-pack — 主要用于AEM。
+   + beta — 此产品是否为测试版？
+   + redirect — 必要时可用于为新页面创建引用。
+   + doc-type：引用（默认）/疑难解答/开发人员/教程/知识库/白皮书。
 
 ## 更多信息
 
-如需更多發佈指示、風格指南、範例和其他資源，請造訪 [合作檔案存放庫](https://git.corp.adobe.com/AdobeDocs/collaborative-doc-instructions)
+有关更多发布说明、风格指南、示例和其他资源，请访问[协作文档存储库](https://git.corp.adobe.com/AdobeDocs/collaborative-doc-instructions)

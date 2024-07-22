@@ -1,5 +1,5 @@
 ---
-description: 概述Audience Manager如何與其他資料提供者和系統交換資訊。
+description: Audience Manager如何与其他数据提供商和系统交换信息的高级概述。
 seo-description: A high-level overview of how Audience Manager exchanges information with other data providers and systems.
 seo-title: Data Integration Methods
 solution: Audience Manager
@@ -9,161 +9,161 @@ feature: Third-party Integration
 exl-id: 26225461-c35c-4db1-9517-99e82ce163b9
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 1%
+source-wordcount: '1070'
+ht-degree: 0%
 
 ---
 
 # 数据集成方法 {#data-integration-methods}
 
-概述Audience Manager如何與其他資料提供者和系統交換資訊。
+Audience Manager如何与其他数据提供商和系统交换信息的高级概述。
 
-## 支援的資料整合方法：即時和 [!DNL Server-to-Server] {#supported-methods}
+## 支持的数据集成方法：实时和[!DNL Server-to-Server] {#supported-methods}
 
-選擇正確的整合方法取決於業務需求與資料合作夥伴的技術能力組合。 Audience Manager會透過下列其中一種方法與其他資料提供者交換訪客資訊：
+选择正确的集成方法取决于业务需求和数据合作伙伴的技术能力的组合。 Audience Manager通过以下任一方法与其他数据提供商交换访客信息：
 
-* **即時：** 當使用者造訪您的網站時立即傳輸資料。 此方法也稱為 *`synchronous`* 整合。
-* **批次([!DNL Server-to-Server])：** 訪客離開頁面後，依設定的排程在伺服器之間傳輸資料。 此方法也稱為 *`out-of-band`* 或 *`asynchronous`* 整合。
+* **实时：**&#x200B;在用户访问您的网站时立即传输数据。 此方法也称为&#x200B;*`synchronous`*&#x200B;集成。
+* **批处理([!DNL Server-to-Server])：**&#x200B;在访客离开页面后，按照设定的计划在服务器之间传输数据。 此方法也称为&#x200B;*`out-of-band`*&#x200B;或&#x200B;*`asynchronous`*&#x200B;集成。
 
-## 先決條件：建立特徵分類法 {#prereqs}
+## 先决条件：创建特征分类 {#prereqs}
 
-在整合程式開始之前，請記住 [建立特徵](../features/traits/create-onboarded-rule-based-traits.md) 和 [資料夾結構](../features/traits/trait-storage.md#create-trait-storage-folder) 在 [!DNL Audience Manager] UI。 分類法會包含 [!UICONTROL traits] 以邏輯階層方式組織。
+在集成过程开始之前，请记得在[!DNL Audience Manager] UI中[创建特征](../features/traits/create-onboarded-rule-based-traits.md)和[文件夹结构](../features/traits/trait-storage.md#create-trait-storage-folder)。 分类将包含您的所有[!UICONTROL traits]，这些资产按逻辑层次结构组织。
 
-## 整合使用案例 {#integration-use-cases}
+## 集成用例 {#integration-use-cases}
 
-Audience Manager資料整合方法的使用案例摘要，以及每種方法的優缺點。
+Audience Manager数据集成方法的用例摘要，以及每种方法的优缺点。
 
-### 即時 [!DNL Server-to-Server] 整合
+### 实时[!DNL Server-to-Server]集成
 
 <!-- c_int_types_use_cases.xml -->
 
-即時 [!DNL server-to-server] 資料整合可快速在Audience Manager伺服器和另一個目標定位系統之間同步使用者資料。 在大多數情況下，視目標系統的重新整理率而定，資料交換會在數秒或數分鐘內發生。 但是請注意，目標系統決定此重新整理間隔，而不是Audience Manager。 此外，不同系統的重新整理率可能有所不同。 即時、 [!UICONTROL server-to-server] 整合是資料交換的偏好整合型別。 只要目標合作夥伴可支援，Audience Manager就會使用此方法。
+实时[!DNL server-to-server]数据集成在Audience Manager服务器和另一个定位系统之间快速同步用户数据。 在大多数情况下，根据定位系统的刷新率，会在几秒或几分钟内进行数据交换。 但请注意，目标系统决定此刷新间隔，而不是Audience Manager。 此外，刷新率在不同系统之间可以不同。 实时[!UICONTROL server-to-server]集成是数据交换的首选集成类型。 只要定位合作伙伴支持，Audience Manager就会使用此方法。
 
 <table id="simpletable_5307DEC378E5486CB92A354287F33AD8"> 
  <tr class="strow">
-  <td class="stentry"> <p>优势: </p></td>
+  <td class="stentry"> <p>优点： </p></td>
   <td class="stentry"> 
    <ul id="ul_F251AFF8A2FA49D0849E36D7FAE87DE7"> 
-    <li id="li_1737EBB1AD8844BD87E736BB4D8080EF">可讓您讓使用者符合區段的資格，而不需在頁面、視訊播放器等中再次看到這些區段。 </li>
-    <li id="li_1C1F346CB7BD40508AA5A6918C6B8514"> 減少來自頁面的HTTP呼叫數。 減少呼叫次數有助於保留使用者體驗。 </li>
-    <li id="li_046BF4568B104F53A0E5372568C957CD">協助進行有時效性的目標定位，以便您可以對符合資格的使用者快速採取行動。 </li>
-    <li id="li_70F7AB19AC5D4A9AB80216A2B05163B8">移至DSP進行離站鎖定目標時相當實用。 </li>
+    <li id="li_1737EBB1AD8844BD87E736BB4D8080EF">让您可以让用户符合区段的条件，而无需在页面、视频播放器等中再次看到这些区段。 </li>
+    <li id="li_1C1F346CB7BD40508AA5A6918C6B8514"> 减少页面中的HTTP调用数。 减少调用有助于保留用户体验。 </li>
+    <li id="li_046BF4568B104F53A0E5372568C957CD">帮助进行时效性强的定位，以便您可以快速对符合条件的用户执行操作。 </li>
+    <li id="li_70F7AB19AC5D4A9AB80216A2B05163B8">在迁移到DSP以进行异地定位时非常有用。 </li>
    </ul></td>
  </tr>
  <tr class="strow">
-  <td class="stentry"> 缺點：</td>
-  <td class="stentry"> 當您需要根據使用者符合該區段的資格來定位同一頁面或下一頁上的使用者時，對現場鎖定目標沒有多大用處。</td>
+  <td class="stentry"> 缺点：</td>
+  <td class="stentry"> 当您需要根据用户是否符合该区段的资格来定位同一页面或下一页面上的用户时，对于现场定位不太有用。</td>
  </tr>
 </table>
 
-### [!DNL Server-to-Server] 批次整合
+### [!DNL Server-to-Server]批次集成
 
-A [!DNL server-to-server] 批次整合會組合資料，並按設定的間隔將其傳送至其他系統，而非近乎即時。 資料傳輸間隔從24小時開始。 有些資料提供者僅支援此整合型別。 不過，我們已看到從批次整合轉向即時整合方法的一般趨勢。
+[!DNL server-to-server]批次集成捆绑数据，并按设定的时间间隔将其发送到其他系统，而不是近乎实时地发送。 数据传输间隔从24小时开始。 某些数据提供程序仅支持此集成类型。 但是，我们已经看到一种总体趋势，即从批量集成转向实时集成方法。
 
 <table id="simpletable_6878241639114DE68E61A251486C6317"> 
  <tr class="strow">
-  <td class="stentry"> <p>优势: </p></td>
+  <td class="stentry"> <p>优点： </p></td>
   <td class="stentry"> 
    <ul id="ul_1E9B48B06E764D3AB6F2D702EB4922DC"> 
-    <li id="li_1CF0E018660347B3A5AF79160F74FBDB">可讓您讓使用者符合區段的資格，而不需在頁面、視訊播放器等中再次看到這些區段。 </li> 
-    <li id="li_B6A9DF9C0D8B44A48F032F2FDB5B3956">適合用於不具時效性的目標定位。 </li>
+    <li id="li_1CF0E018660347B3A5AF79160F74FBDB">让您可以让用户符合区段的条件，而无需在页面、视频播放器等中再次看到这些区段。 </li> 
+    <li id="li_B6A9DF9C0D8B44A48F032F2FDB5B3956">用于定位对时间不敏感的。 </li>
    </ul></td>
  </tr>
  <tr class="strow">
-  <td class="stentry"> 缺點：</td>
-  <td class="stentry"> 同步處理間隔可能會延遲鎖定最新資料的目標。</td>
+  <td class="stentry"> 缺点：</td>
+  <td class="stentry"> 同步间隔可能会延迟针对最新数据的定位。</td>
  </tr>
 </table>
 
-### 即時呼叫
+### 实时调用
 
-當使用者造訪您的網站或在頁面上採取行動時，即時呼叫會立即與Audience Manager交換資料。 透過此方法，目標定位系統可獲得最新的區段資格資料，並可在內容或廣告傳送決策期間將該資訊列入考量。 此外，此過程適用於發佈商廣告伺服器，我們會將符合資格的區段更新為第一方Cookie，後者會以索引鍵值配對的形式讀取到廣告呼叫中。 目前，Audience Manager使用即時呼叫來與整合 [!DNL Adobe Target] 和其他內容管理系統。
+当用户访问您的网站或在页面上执行操作时，实时调用会立即与Audience Manager交换数据。 使用此方法，定位系统可获得最新的区段资格数据，并可在作出内容或广告投放决策时将该信息考虑在内。 此外，此过程可与发布者广告服务器配合使用，我们会将符合条件的区段更新为第一方Cookie，后者将作为键值对读取到广告调用中。 目前，Audience Manager使用实时调用与[!DNL Adobe Target]和其他内容管理系统集成。
 
 <table> 
  <tr>
-  <td> <p>优势: </p></td>
-  <td> <p> 可讓您根據最近的區段資格來鎖定下一個頁面、內容區域或廣告印象。 </p></td> 
+  <td> <p>优点： </p></td>
+  <td> <p> 允许您根据最近的区段资格定位下一个页面、内容区域或广告展示。 </p></td> 
  </tr> 
  <tr>
-  <td> <p>缺點： </p></td>
-  <td> <p>新增從頁面呼叫Audience Manager。</p></td>
+  <td> <p>缺点： </p></td>
+  <td> <p>添加从页面Audience Manager的调用。</p></td>
  </tr> 
 </table>
 
 
-### 目標系統的畫素同步
+### 与定位系统的像素同步
 
-畫素同步會將區段對應至頁面上的畫素。 當使用者符合特定區段的資格時，畫素會觸發並傳輸資料。 畫素同步是一種基本且不可靠的資料傳輸機制。 頂層資料提供者和系統很少使用它。
+像素同步将区段映射到页面上的像素。 当用户符合特定区段的资格时，像素将触发并传输数据。 像素同步是一种基本的、不可靠的数据传输机制。 顶层数据提供商和系统很少使用它。
 
 <table id="simpletable_39E4CD139CCF4417842AA28CDFFB6EB1"> 
  <tr class="strow">
-  <td class="stentry"> <p>优势: </p></td>
-  <td class="stentry"> <p> 即時資料傳輸。 </p></td> 
+  <td class="stentry"> <p>优点： </p></td>
+  <td class="stentry"> <p> 实时数据传输。 </p></td> 
  </tr> 
  <tr class="strow">
-  <td class="stentry"> <p>缺點： </p></td>
+  <td class="stentry"> <p>缺点： </p></td>
   <td class="stentry"> 
    <ul id="ul_5217EDC82434401493C2C96823C068E9"> 
-    <li id="li_26EB0458CA1844908C005A47F55E50AC">可以從頁面新增許多使用者端呼叫。 </li>
-    <li id="li_CD91F3DC92F2429293787D61506E5E04">資料傳輸不可靠。 5%到20%的損失是正常的。 </li>
+    <li id="li_26EB0458CA1844908C005A47F55E50AC">可以从页面添加大量客户端调用。 </li>
+    <li id="li_CD91F3DC92F2429293787D61506E5E04">数据传输不可靠。 5%到20%的损失是正常的。 </li>
    </ul></td>
  </tr> 
 </table>
 
-## 如何選擇資料傳送方法 {#data-delivery-choices}
+## 如何选择数据传送方法 {#data-delivery-choices}
 
-說明透過同步（即時）或非同步（伺服器對伺服器）方法傳送資料的技術和業務原因。
+描述通过同步（实时）或异步（服务器到服务器）方法发送数据的技术和业务原因。
 
 <!-- c_int_delivery_choices.xml -->
 
-### 選取資料傳遞型別
+### 选择数据传送类型
 
-* **技術考量：** 資料傳送取決於資料合作夥伴的技術能力。 Audience Manager可從瀏覽器即時傳送/接收資料，或是透過離線伺服器對伺服器通訊程式進行批次更新。
-* **業務考量：** 選擇一種或另一種傳送方法的業務理由取決於目的地合作夥伴的技術能力以及您想要如何使用此資料。 通常，當您需要立即對使用者資料採取行動時，同步資料傳輸會很有用。 當不需要立即採取行動，而且您有時間建立更深入的使用者設定檔以供日後使用時，非同步資料傳輸可能會很有用。
+* **技术注意事项：**&#x200B;数据交付取决于数据合作伙伴的技术能力。 Audience Manager可以通过浏览器实时发送/接收数据，或通过离线的、服务器到服务器的通信过程批量更新数据。
+* **业务注意事项：**&#x200B;选择一种或另一种提交方法的业务原因取决于目标合作伙伴的技术能力以及您希望如何使用此数据。 通常，当您需要立即对用户数据采取行动时，同步数据传输非常有用。 当不需要立即采取行动以及您有时间构建更深入的用户配置文件以供稍后使用时，异步数据传输可能会很有用。
 
-## 即時資料傳輸程式 {#real-time-data-transfer-process}
+## 实时数据传输流程 {#real-time-data-transfer-process}
 
-概述Audience Manager如何與協力廠商執行同步資料交換。
+概述Audience Manager如何与第三方供应商执行同步数据交换。
 
-### 即時資料傳輸
+### 实时数据传输
 
 <!-- c_int_overview_sync.xml -->
 
-即時資料傳輸會在使用者造訪您的網站或採取動作時，傳送及接收區段ID。 通常，當您需要立即在使用者瀏覽您的詳細目錄時，同步資料傳輸很有用。
+实时数据传输会在用户访问您的网站或在您的网站上采取操作时发送和接收区段ID。 通常，当您需要在用户浏览您的库存时立即确定用户资格或划分用户时，同步数据传输非常有用。
 
-### 即時資料整合步驟
+### 实时数据集成步骤
 
-即時資料整合程式的運作方式如下：
+实时数据集成流程的工作方式如下：
 
-1. 使用者造訪包含Audience Manager程式碼的客戶網站。
-1. Audience Manager載入Iframe並呼叫 [!UICONTROL Data Collection Server] ([!DNL DCS])。
-1. 此 [!DNL DCS] 呼叫協力廠商伺服器（即時）以檢查供應商是否有任何關於使用者的區段資訊。
-1. 協力廠商會傳回該使用者的區段資訊給Audience Manager。
-1. Audience Manager會擷取區段資訊，並使其可用於目標定位。
+1. 用户访问包含Audience Manager代码的客户的网站。
+1. Audience Manager加载Iframe并调用[!UICONTROL Data Collection Server] ([!DNL DCS])。
+1. [!DNL DCS]调用第三方服务器（实时）以检查供应商是否具有有关该用户的任何区段信息。
+1. 第三方将返回有关该用户的区段信息给Audience Manager。
+1. Audience Manager会摄取区段信息并使其可用于定位。
 
 ![](assets/rt_reduce70.png)
 
 ## 批量数据传输流程 {#batch-data-transfer-process}
 
-概述Audience Manager如何與協力廠商同步（即時）交換資料。
+概述Audience Manager如何与第三方供应商同步（实时）交换数据。
 
-### 批次資料整合
+### 批量数据集成
 
 <!-- c_int_overview_async.xml -->
 
-批次([!DNL server-to-server])資料整合程式會遵循即時資料傳輸程式中所述的大多數步驟。 不過，使用者資訊不會立即傳回區段ID，而是會儲存至我們的伺服器，並定期與協力廠商資料提供者同步。 非同步資料傳輸程式在下列情況下相當實用：
+批处理([!DNL server-to-server])数据集成流程遵循实时数据传输流程中概述的大多数步骤。 但是，不会立即返回区段ID，而是会将用户信息保存到我们的服务器并定期与第三方数据提供商同步。 异步数据传输流程在以下情况下很有用：
 
-* 不需要立即傳輸資料。
-* 收集資料以建立大型分段使用者集區。
-* 您想要減少資料差異，並 `HTTP` 從瀏覽器呼叫。
+* 不需要立即传输数据。
+* 正在收集数据以构建大型分段用户池。
+* 您希望减少来自浏览器的数据差异和`HTTP`调用。
 
-### 批次資料整合步驟
+### 批量数据集成步骤
 
-1. 使用者造訪客戶網站。
-1. Audience Manager和第三方資料提供者會為訪客指派唯一ID （通常使用Cookie）。
-1. Audience Manager會呼叫第三方資料提供者以比對訪客ID。
-1. 排程的請求（通常以每日間隔）會在Audience Manager和您的第三方資料提供者之間交換訪客區段資料。
+1. 用户访问客户站点。
+1. Audience Manager和第三方数据提供商为访客分配唯一的ID（通常使用Cookie）。
+1. Audience Manager调用第三方数据提供程序以匹配访客ID。
+1. 计划请求（通常按每日间隔）会在Audience Manager和您的第三方数据提供商之间交换访客区段数据。
 
 ![](assets/s2s_70.png)
 
-說明Audience Manager處理傳入和傳出時間範圍的相關資訊 [!DNL Server-to-Server] ([!UICONTROL S2S])檔案傳輸，請參閱 [報告和檔案傳輸時間範圍准則](../reference/reporting-file-transfer-timeframe.md).
+有关描述Audience Manager处理入站和出站[!DNL Server-to-Server] ([!UICONTROL S2S])文件传输的时间范围的信息，请参阅[报告和文件传输时间范围准则](../reference/reporting-file-transfer-timeframe.md)。

@@ -9,7 +9,7 @@ feature: Audience Lab
 exl-id: 25bdabb5-2ba8-45d2-81ca-05c0590d7d96
 source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '326'
 ht-degree: 94%
 
 ---
@@ -48,6 +48,6 @@ ht-degree: 94%
 
 有关如何结合使用 [!UICONTROL Audience Lab] 和 [!UICONTROL RBAC] 权限的信息，请参阅[创建区段测试组](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)。
 
-**我可以使用 [!UICONTROL Audience Lab] 與 [!UICONTROL Profile Link Device Graph] 和外部裝置圖形（ Tapad裝置圖形、Liveramp裝置圖形）？**
+**我可以将[!UICONTROL Audience Lab]与[!UICONTROL Profile Link Device Graph]和外部设备图（ Tapad设备图、Liveramp设备图）结合使用吗？**
 
 目前，在使用 [!UICONTROL Profile Link Device Graph] 时，[!UICONTROL Audience Lab] 只能按连接到某个合格设备的设备拆分区段人口。我们正努力在 [!UICONTROL Audience Lab] 中添加对其他设备图的支持，准备就绪后，我们将通知您。

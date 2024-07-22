@@ -1,24 +1,24 @@
 ---
-description: S3狀態目錄內含.info檔案，其中包含您上傳檔案的成功和失敗資訊。 檔案包含JSON格式資料，且狀態結果會以陣列呈現。
+description: S3状态目录包含一个.info文件，其中包含有关上载文件的成功和失败信息。 该文件包含JSON格式的数据，其状态结果位于数组中。
 seo-description: The S3 status directory holds a .info file with success and failure information about your uploaded files. The file contains JSON-formatted data with status results in an array.
 seo-title: Status Updates for Metadata Files
 solution: Audience Manager
-title: 中繼資料檔案的狀態更新
+title: 元数据文件的状态更新
 uuid: 56a1e88a-41da-4d51-a21e-2be98cca7fa2
 feature: Log Files
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
 
 
-# 中繼資料檔案的狀態更新{#status-updates-for-metadata-files}
+# 元数据文件的状态更新{#status-updates-for-metadata-files}
 
-S3狀態目錄包含 `.info` 包含已上傳檔案成功與失敗資訊的檔案。 檔案包含JSON格式資料，且狀態結果會以陣列呈現。
+S3状态目录包含一个`.info`文件，其中包含有关您上传文件的成功和失败信息。 该文件包含JSON格式的数据，其状态结果位于数组中。
 
-您的網站內容 `.info` 檔案看起來會類似於此範例。
+`.info`文件的内容将与以下示例类似。
 
 ```js
 //sample file path
@@ -59,47 +59,47 @@ S3狀態目錄包含 `.info` 包含已上傳檔案成功與失敗資訊的檔案
 }
 ```
 
-## 已定義中繼資料索引鍵值配對 {#key-value-pairs}
+## 定义的元数据键值对 {#key-value-pairs}
 
-下表列出並定義中的索引鍵 `Files` 和 `Summary` 中繼資料狀態檔案的區段。
+下表列出并定义元数据状态文件`Files`和`Summary`节中的键。
 
-**檔案陣列中的金鑰**
+文件阵列中的&#x200B;**个键**
 
 <table id="table_BF23C032FEFA446282E9364E85BE8C9F"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 键值 </th> 
+   <th colname="col1" class="entry"> 键 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> Description</code> </p> </td> 
-   <td colname="col2"> <p>包含處理失敗原因的簡短說明。 處理成功時，此欄位為空白。 </p> </td> 
+   <td colname="col2"> <p>包含处理失败原因的简短描述。 处理成功时，此字段为空。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileByteSize</code> </p> </td> 
-   <td colname="col2"> <p>檔案大小（位元組）。 </p> </td> 
+   <td colname="col2"> <p>文件大小（字节）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileChecksumMD5</code> </p> </td> 
-   <td colname="col2"> <p>上傳至您的中繼資料檔案的MD 5總和檢查碼 <code> meta</code> 目錄。 </p> </td> 
+   <td colname="col2"> <p>上载到<code> meta</code>目录的元数据文件的MD 5校验和。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileName</code> </p> </td> 
-   <td colname="col2"> <p>上傳至您的的中繼資料檔案的名稱 <code> meta</code> 目錄。 </p> </td> 
+   <td colname="col2"> <p>上载到<code> meta</code>目录的元数据文件的名称。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> MetadataType</code> </p> </td> 
-   <td colname="col2"> <p>適用於您的檔案所包含資料型別的可讀取名稱。 這會根據檔案名稱中的子項ID。 </p> <p>另請參閱 <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> 中繼資料檔案的命名慣例</a>. </p> </td> 
+   <td colname="col2"> <p>易于用户识别的文件包含的数据类型名称。 它基于您文件名中的子ID。 </p> <p>请参阅元数据文件的<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">命名约定</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Parent</code> </p> </td> 
-   <td colname="col2"> <p>適用於您的檔案所包含資料型別的可讀取名稱。 這會根據您檔案名稱中的父系ID。 </p> <p>另請參閱 <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> 中繼資料檔案的命名慣例</a>. </p> </td> 
+   <td colname="col2"> <p>易于用户识别的文件包含的数据类型名称。 它基于您文件名中的父ID。 </p> <p>请参阅元数据文件的<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">命名约定</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Status</code> </p> </td> 
-   <td colname="col2"> <p>傳回2個描述中繼資料檔案處理狀態的文字值： </p> 
+   <td colname="col2"> <p>返回2个文本值，这些文本值描述元数据文件的处理状态： </p> 
     <ul id="ul_3814EBB6B42B4EB294B1ABA5782190B6"> 
      <li id="li_92AAECE7E9A44B1193A1D93ABBCE46B0"> <code> SUCCESS</code> </li> 
      <li id="li_3109F4E254374117A89CB989F221CB18"> <code> FAILURE</code> </li> 
@@ -108,23 +108,23 @@ S3狀態目錄包含 `.info` 包含已上傳檔案成功與失敗資訊的檔案
  </tbody> 
 </table>
 
-**摘要物件中的索引鍵**
+摘要对象中的&#x200B;**键**
 
 <table id="table_C765A0CDBAA14A2FB5E0D38BDD1D292A"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 键值 </th> 
+   <th colname="col1" class="entry"> 键 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> Day</code> </p> </td> 
-   <td colname="col2"> <p>檔案處理日期為 <code><i>yyyy-mm-dd</i></code> 格式。 </p> </td> 
+   <td colname="col2"> <p><code><i>yyyy-mm-dd</i></code>格式的文件处理日期。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> GlobalStatus</code> </p> </td> 
-   <td colname="col2"> <p>傳回2個文字值，說明您所有檔案一整天的處理狀態： </p> 
+   <td colname="col2"> <p>返回2个文本值，这些文本值描述一天内所有文件的处理状态： </p> 
     <ul id="ul_3FC092CA043A486C9C79FECF71FAF8FB"> 
      <li id="li_754B32D8267D44BBBD6EC354C459C566"> <code> SUCCESS</code> </li> 
      <li id="li_8B64E39C80424AC2B95DF9B53D62864E"> <code> FAILURE</code> </li> 
@@ -132,27 +132,27 @@ S3狀態目錄包含 `.info` 包含已上傳檔案成功與失敗資訊的檔案
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> NumberFailure</code> </p> </td> 
-   <td colname="col2"> <p>未成功處理的檔案數。 </p> </td> 
+   <td colname="col2"> <p>处理失败的文件数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> NumberSuccess</code> </p> </td> 
-   <td colname="col2"> <p>已成功處理的檔案數。 </p> </td> 
+   <td colname="col2"> <p>成功处理的文件数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ProcessingTimeRFC2822</code> </p> </td> 
-   <td colname="col2"> <p>傳回處理開始時間的可讀取時間戳記。 </p> </td> 
+   <td colname="col2"> <p>返回用于处理开始时间的可读时间戳。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ProcessingTimePOSIX</code> </p> </td> 
-   <td colname="col2"> <p>處理開始時間的UNIX時間戳記。 </p> </td> 
+   <td colname="col2"> <p>用于处理开始时间的UNIX时间戳。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> TotalByteSize</code> </p> </td> 
-   <td colname="col2"> <p>當天所有中繼資料檔案的位元組總數。 </p> </td> 
+   <td colname="col2"> <p>当天所有元数据文件的字节总数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> TotalNumberFiles</code> </p> </td> 
-   <td colname="col2"> <p>當天處理的所有檔案總數。 </p> </td> 
+   <td colname="col2"> <p>当天处理的所有文件总数。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

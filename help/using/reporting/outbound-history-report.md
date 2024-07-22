@@ -1,5 +1,5 @@
 ---
-description: 檢視指定目的地和時段的出站批次工作歷史記錄資訊。
+description: 查看指定目标和时间期的出站批处理作业历史记录信息。
 seo-description: View outbound batch job history information for a specified destination and time period.
 seo-title: Outbound File History
 solution: Audience Manager
@@ -10,13 +10,13 @@ exl-id: 8072c44f-bc9a-4b40-99d9-8cb87bb58d98
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 6%
+ht-degree: 1%
 
 ---
 
 # 出站文件历史记录 {#outbound-file-history}
 
-檢視指定目的地和時段的出站批次工作歷史記錄資訊。
+查看指定目标和时间期的出站批处理作业历史记录信息。
 
 <!-- 
 
@@ -24,16 +24,16 @@ t_reports_outbound_history.xml
 
  -->
 
-1. 单击 **[!UICONTROL Analytics]** > **[!UICONTROL Outbound File History]**.
+1. 单击&#x200B;**[!UICONTROL Analytics]** > **[!UICONTROL Outbound File History]**。
 
-   ![步驟結果](assets/outbound_history.png)
+   ![步骤结果](assets/outbound_history.png)
 
-1. 在 **[!UICONTROL Search for a Destination]** 方塊中，開始輸入並選取想要的目的地。
-1. 在 **[!UICONTROL Select a Date Range]** 方塊中，指定報表的開始和結束日期，然後按一下 **[!UICONTROL Apply Date Filter]**.
+1. 在&#x200B;**[!UICONTROL Search for a Destination]**&#x200B;框中，开始键入并选择所需的目标。
+1. 在&#x200B;**[!UICONTROL Select a Date Range]**&#x200B;框中，指定报告的开始日期和结束日期，然后单击&#x200B;**[!UICONTROL Apply Date Filter]**。
 
-   ![步驟結果](assets/outbound_history_stats.png)
+   ![步骤结果](assets/outbound_history_stats.png)
 
-   下表包含與報表中各欄對應的資訊：
+   下表包含与报表中的列对应的信息：
 
 <table id="table_93076D46AC50411395E72B9B987E99BE"> 
  <thead> 
@@ -44,20 +44,20 @@ t_reports_outbound_history.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> 資料同步檔案名稱 </td> 
-   <td colname="col2"> <p>所有輸出檔案的清單 <span class="keyword"> Adobe</span> 產生於一起處理的這個目的地。 </p> </td> 
+   <td colname="col1"> 数据同步文件名 </td> 
+   <td colname="col2"> <p><span class="keyword">Adobe</span>为此目标生成的所有一起处理的出站文件列表。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 成功 </td> 
-   <td colname="col2"> <p>成功傳送的記錄數 <span class="keyword"> Audience Manager</span> 到目的地。 </p> </td> 
+   <td colname="col2"> <p>从<span class="keyword">Audience Manager</span>成功发送到目标的记录数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 失败 </td> 
-   <td colname="col2"> <p>無法傳送至目的地的記錄數。 </p> </td> 
+   <td colname="col2"> <p>无法发送到目标的记录数。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 已接收的記錄 </td> 
-   <td colname="col2"> <p>記錄總數 <span class="keyword"> Adobe</span> 產生並嘗試傳送至目的地。 在大多數情況下，這應該是成功檔案和失敗檔案的總數。 </p> </td> 
+   <td colname="col1"> 已接收的记录 </td> 
+   <td colname="col2"> <p>文件中生成并尝试发送到目标的<span class="keyword">Adobe</span>的记录总数。 在大多数情况下，这应该是成功文件和失败文件的总数。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

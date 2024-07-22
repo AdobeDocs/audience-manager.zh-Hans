@@ -1,5 +1,5 @@
 ---
-description: 使用這些RESTful API方法將區段對應至目的地。
+description: 使用这些RESTful API方法将区段映射到目标。
 seo-description: Map segments to destinations with these RESTful API methods.
 seo-title: Map Segments to a Destination
 solution: Audience Manager
@@ -10,23 +10,23 @@ exl-id: 906df6c5-f878-48e6-a804-eb5b4407f304
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 10%
+ht-degree: 6%
 
 ---
 
 # 将区段映射到目标 {#map-segments-to-a-destination}
 
-使用下列專案將區段對應至目的地 [!DNL RESTful API] 方法。
+使用这些[!DNL RESTful API]方法将区段映射到目标。
 
 <!-- c_api_map_seg_dest.xml -->
 
-## 支援的目的地型別：僅限URL和Cookie
+## 支持的目标类型：仅URL和Cookie
 
-可用 `POST` 方法可让您将区段映射到 [!UICONTROL URL] 和 [!UICONTROL cookie destinations] 。 目前，您无法将区段与这些 [!DNL REST API] 方法进行 [!UICONTROL server-to-server destinations] 映射。请改用用户界面。 但是，相关的目标 `GET` 方法可让您检索有关 [!UICONTROL server-to-server destinations] 在用户界面中创建的信息。
+可用的`POST`方法允许您仅将区段映射到[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，无法使用这些[!DNL REST API]方法将区段映射到[!UICONTROL server-to-server destinations]。 请改用用户界面。 但是，相关目标`GET`方法允许您检索有关在用户界面中创建的[!UICONTROL server-to-server destinations]的信息。
 
-## 将区段映射到非序列化 URL 目标 {#map-segment-non-serial}
+## 将区段映射到非序列化URL目标 {#map-segment-non-serial}
 
-一 `POST` 种允许您将区段映射到非串行 [!UICONTROL URL] 目标的方法。
+一种`POST`方法，可让您将区段映射到非串行[!UICONTROL URL]目标。
 
 <!-- r_map_noserial_url.xml -->
 
@@ -36,7 +36,7 @@ ht-degree: 10%
 
 ### 示例请求
 
-除非另有指示，否則所有要求值都是必要的。
+除非另有说明，否则所有请求值都是必需的。
 
 ```
 {
@@ -74,9 +74,9 @@ ht-degree: 10%
 }
 ```
 
-## 將區段對應至序列化URL目的地 {#map-segment-serial}
+## 将区段映射到序列化URL目标 {#map-segment-serial}
 
-A `POST` 可讓您將區段對應至序列化的方法 [!UICONTROL URL] 目的地。
+一种`POST`方法，可让您将区段映射到序列化的[!UICONTROL URL]目标。
 
 <!-- r_map_serialized_url.xml -->
 
@@ -86,7 +86,7 @@ A `POST` 可讓您將區段對應至序列化的方法 [!UICONTROL URL] 目的�
 
 ### 示例请求
 
-在请求中， `traitAlias` 对应于键值对中的键。 除非另行指示，否则所有请求值都是必需的。
+在请求中，`traitAlias`对应于键值对中的键。 除非另有说明，否则所有请求值都是必需的。
 
 ```
 {
@@ -124,9 +124,9 @@ A `POST` 可讓您將區段對應至序列化的方法 [!UICONTROL URL] 目的�
 }
 ```
 
-## 将区段映射到 Cookie 目标：单键、非序列化 {#map-segment-cookie-noserial}
+## 将区段映射到Cookie目标：单键，非序列化 {#map-segment-cookie-noserial}
 
-A `POST` 可讓您將區段對應至單一索引鍵、非序列化的方法 [!UICONTROL cookie] 目的地。
+一种`POST`方法，可让您将区段映射到单键、非序列化[!UICONTROL cookie]目标。
 
 <!-- r_map_cookie_noserial.xml -->
 
@@ -136,7 +136,7 @@ A `POST` 可讓您將區段對應至單一索引鍵、非序列化的方法 [!UI
 
 ### 示例请求
 
-請求中的 `valueAlias` 對應到機碼值組中的值。 除非另有指示，否則所有要求值都是必要的。
+在请求中，`valueAlias`对应于键值对中的值。 除非另有说明，否则所有请求值都是必需的。
 
 ```
 {
@@ -171,9 +171,9 @@ A `POST` 可讓您將區段對應至單一索引鍵、非序列化的方法 [!UI
 }
 ```
 
-## 将区段映射到 Cookie 目标：多键、非序列化 {#map-segment-cookie-multi-noserial}
+## 将区段映射到Cookie目标：多键，非序列化 {#map-segment-cookie-multi-noserial}
 
-一 `POST` 种允许您将区段映射到多键非序列化 [!UICONTROL cookie] 目标的方法。
+一种`POST`方法，可让您将区段映射到多键、非序列化[!UICONTROL cookie]目标。
 
 <!-- r_map_cookie_multikey_noserial.xml -->
 
@@ -183,7 +183,7 @@ A `POST` 可讓您將區段對應至單一索引鍵、非序列化的方法 [!UI
 
 ### 示例请求
 
-在请求中， `traitAlias` 并 `valueAlias` 分别在键值对中设置键和值。 除非另行指示，否则所有请求值都是必需的。
+在请求中，`traitAlias`和`valueAlias`分别在键值对中设置键和值。 除非另有说明，否则所有请求值都是必需的。
 
 ```
 {
@@ -219,9 +219,9 @@ A `POST` 可讓您將區段對應至單一索引鍵、非序列化的方法 [!UI
 }
 ```
 
-## 將區段對應至Cookie目的地：多索引鍵、序列化 {#map-segment-cookie-multi-serial}
+## 将区段映射到Cookie目标：多键，序列化 {#map-segment-cookie-multi-serial}
 
-A `POST` 可讓您將區段對應至序列化多索引鍵的方法 [!UICONTROL cookie destination].
+一种`POST`方法，可让您将区段映射到序列化的[!UICONTROL cookie destination]多键值。
 
 <!-- r_map_cookie_multikey_serialized.xml -->
 
@@ -231,7 +231,7 @@ A `POST` 可讓您將區段對應至序列化多索引鍵的方法 [!UICONTROL c
 
 ### 示例请求
 
-請求中的 `traitAlias` 和 `valueAlias` 在機碼 — 值組中設定機碼和值。 除非另行指示，否则所有请求值都是必需的。
+在请求中，`traitAlias`和`valueAlias`设置键值对中的键和值。 除非另有说明，否则所有请求值都是必需的。
 
 ```
 {
@@ -267,9 +267,9 @@ A `POST` 可讓您將區段對應至序列化多索引鍵的方法 [!UICONTROL c
 }
 ```
 
-## 将区段映射到服务器到服务器的目标 {#map-segment-s2s}
+## 将区段映射到服务器到服务器目标 {#map-segment-s2s}
 
-一 `POST` 种允许您将区段映射到现有 [!UICONTROL server-to-server] 目标的方法。 但是，请注意，您无法使用这些当前可用 [!DNL API] 的方法创建 [!UICONTROL server-to-server] 目标。
+一种`POST`方法，可让您将区段映射到现有的[!UICONTROL server-to-server]目标。 但请注意，无法使用这些当前可用的[!DNL API]方法创建[!UICONTROL server-to-server]目标。
 
 <!-- r_map_segment_s2s.xml -->
 
@@ -279,7 +279,7 @@ A `POST` 可讓您將區段對應至序列化多索引鍵的方法 [!UICONTROL c
 
 ### 示例请求
 
-請求中的 `traitAlias` 對應到機碼值組中的機碼。 除非另有指示，否則所有要求值都是必要的。
+在请求中，`traitAlias`对应于键值对中的键。 除非另有说明，否则所有请求值都是必需的。
 
 ```
 {
@@ -313,9 +313,9 @@ A `POST` 可讓您將區段對應至序列化多索引鍵的方法 [!UICONTROL c
 }
 ```
 
-## 大量建立目的地對應 {#bulk-create}
+## 批量创建目标映射 {#bulk-create}
 
-A `POST` 可讓您傳入以下陣列的方法 [!UICONTROL cookie] 或 [!UICONTROL URL] 目的地對應。
+允许您传入由[!UICONTROL cookie]或[!UICONTROL URL]目标映射组成的数组的`POST`方法。
 
 <!-- r_bulk_create.xml -->
 
@@ -325,7 +325,7 @@ A `POST` 可讓您傳入以下陣列的方法 [!UICONTROL cookie] 或 [!UICONTRO
 
 ### 示例请求
 
-除非另有指示，否則所有要求值都是必要的。
+除非另有说明，否则所有请求值都是必需的。
 
 ```
 [
@@ -346,7 +346,7 @@ A `POST` 可讓您傳入以下陣列的方法 [!UICONTROL cookie] 或 [!UICONTRO
 
 ### 响应
 
-成功的回應會傳回已建立對應的陣列。
+成功的响应将返回已创建映射的数组。
 
 ```
 [
@@ -397,9 +397,9 @@ A `POST` 可讓您傳入以下陣列的方法 [!UICONTROL cookie] 或 [!UICONTRO
 ]
 ```
 
-## 將多個區段新增至目的地 {#add-segments-dest}
+## 向目标添加多个区段 {#add-segments-dest}
 
-`POST`允许您将多个区段映射到目标的方法。
+一种`POST`方法，可让您将多个区段映射到目标。
 
 <!-- r_add_segments_to_destination.xml -->
 
@@ -409,7 +409,7 @@ A `POST` 可讓您傳入以下陣列的方法 [!UICONTROL cookie] 或 [!UICONTRO
 
 ### 示例请求
 
-在一个数组中创建多个目标映射。 除非另行指示，否则所有请求值都是必需的。
+在一个数组中创建多个目标映射。 除非另有说明，否则所有请求值都是必需的。
 
 ```
 [
@@ -481,9 +481,9 @@ A `POST` 可讓您傳入以下陣列的方法 [!UICONTROL cookie] 或 [!UICONTRO
 ]
 ```
 
-## 依目的地ID更新目的地 {#update-dest-data-order}
+## 按目标ID更新目标 {#update-dest-data-order}
 
-A `PUT` 可讓您透過以下方式更新現有目的地的方法 `destinationId`.
+一种`PUT`方法，可让您通过`destinationId`更新现有目标。
 
 <!-- r_update_destination_data_order_id.xml -->
 
@@ -493,7 +493,7 @@ A `PUT` 可讓您透過以下方式更新現有目的地的方法 `destinationId
 
 ### 示例请求
 
-除非另行指示，否则所有请求值都是必需的。
+除非另有说明，否则所有请求值都是必需的。
 
 ```
 {
@@ -531,9 +531,9 @@ A `PUT` 可讓您透過以下方式更新現有目的地的方法 `destinationId
 }
 ```
 
-## 通过映射 ID 更新指向目标的映射 {#update-mapping-dest-id}
+## 通过映射ID更新到目标的映射 {#update-mapping-dest-id}
 
-`PUT`允许您通过指定 `mappingId` 的方式更新目标映射的方法。
+一种`PUT`方法，它允许您通过指定的`mappingId`更新到目标的映射。
 
 <!-- r_update_destination_trait_data_order_id.xml -->
 
@@ -543,7 +543,7 @@ A `PUT` 可讓您透過以下方式更新現有目的地的方法 `destinationId
 
 ### 示例请求
 
-除非另行指示，否则所有请求值都是必需的。
+除非另有说明，否则所有请求值都是必需的。
 
 ```
 {
@@ -584,6 +584,5 @@ A `PUT` 可讓您透過以下方式更新現有目的地的方法 `destinationId
 >[!MORELIKETHIS]
 >
 >* [目标](../../../features/destinations/destinations.md)
->* [目的地序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
+>* [目标序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
 >* [键值对说明](../../../reference/key-value-pairs-explained.md)
-

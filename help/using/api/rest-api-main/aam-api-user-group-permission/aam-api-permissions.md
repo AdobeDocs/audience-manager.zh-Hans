@@ -1,28 +1,28 @@
 ---
-description: 用於管理物件和群組許可權的Rest API方法。
+description: Rest API方法用于管理对象和组的权限。
 seo-description: Rest API methods to manage permissions for objects and groups.
 seo-title: Permissions Management API Methods
 solution: Audience Manager
-title: 权限管理 API 方法
+title: 权限管理API方法
 uuid: 111d0f92-d92c-4d4b-b0d6-10dd3fa466ad
 feature: API
 exl-id: 7aac8ea8-4120-4c6b-88a6-30e8aa727dc8
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 12%
+ht-degree: 2%
 
 ---
 
-# 权限管理 API 方法 {#permissions-management-api-methods}
+# 权限管理API方法 {#permissions-management-api-methods}
 
-Rest [!DNL API] 管理物件和群組許可權的方法。
+剩余[!DNL API]个方法用于管理对象和组的权限。
 
 <!-- c_rest_api_perm_man.xml -->
 
-## 列出可用的物件型別 {#list-object-types}
+## 列出可用的对象类型 {#list-object-types}
 
-A `GET` 列出可設定角色型存取控制項的可用物件型別的方法。
+`GET`方法，用于列出可设置基于角色的访问控制的可用对象类型。
 
 <!-- r_rest_api_perm_list.xml -->
 
@@ -36,9 +36,9 @@ A `GET` 列出可設定角色型存取控制項的可用物件型別的方法。
 [ "SEGMENT", "TRAIT", "DESTINATION", "DERIVED_SIGNALS", "TAGS" ]
 ```
 
-## 列出物件型別的可用許可權 {#list-permissions-object-type}
+## 列出对象类型的可用权限 {#list-permissions-object-type}
 
-A `GET` 列出物件型別可用許可權的方法。
+用于列出对象类型的可用权限的`GET`方法。
 
 <!-- r_rest_api_perm_list_perms.xml -->
 
@@ -57,4 +57,4 @@ A `GET` 列出物件型別可用許可權的方法。
 
 >[!NOTE]
 >
->物件型別TAGS和DERIVED SIGNALS沒有正常的使用許可權。 這些物件型別的控制項僅會由「全部」或「無萬用字元許可權」變更。
+>对象类型TAGS和DERIVED SIGNALS没有正常使用权限。 对这些对象类型的控制仅由“全部”或“无通配符”权限更改。

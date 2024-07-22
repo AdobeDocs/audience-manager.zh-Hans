@@ -1,5 +1,5 @@
 ---
-description: 使用各種報表滑桿可僅顯示高於、低於或位於指定範圍內的資料。
+description: 使用各种报表滑块可仅显示高于、低于或位于指定范围内的数据。
 seo-description: Use the various report sliders to show only the data that falls above, below, or within your specified range.
 seo-title: Filter Report Results With the Data Sliders
 solution: Audience Manager
@@ -10,13 +10,13 @@ exl-id: 876a01c2-e73e-4728-8890-e3f354ad1b86
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 9%
+ht-degree: 0%
 
 ---
 
 # 使用数据滑块筛选报表结果{#filter-report-results-with-the-data-sliders}
 
-使用各種報表滑桿可僅顯示高於、低於或位於指定範圍內的資料。
+使用各种报表滑块可仅显示高于、低于或位于指定范围内的数据。
 
 <!-- 
 
@@ -24,14 +24,13 @@ c_reach_slider.xml
 
  -->
 
-**使用資料滑桿設定報表結果的上下限範圍**
+**使用数据滑块设置报告结果的上下限范围**
 
-報表滑桿可讓您對互動式報表傳回的資料設定限制。 移動左側滑桿以排除特定值以下的資料。 移動右側滑桿以排除特定值以上的資料。 報表會更新並傳回所需範圍內的資料。 使用滑桿可以：
+通过报表滑块，可设置对交互式报表返回数据的限制。 移动左滑块以排除特定值下的数据。 移动右侧滑块可排除特定值以上的数据。 报表将更新并返回所需范围内的数据。 使用滑块可以：
 
-* 減少報表傳回的整體資料量。
-* 著重於屬於特定大小範圍的特徵或區段。
+* 减少报表返回的数据总量。
+* 关注属于特定大小范围内的特征或区段。
 
 >[!MORELIKETHIS]
 >
->* [瞭解區段對特徵重疊報表中的資料篩選器](../../reporting/dynamic-reports/segment-trait-overlap-report.md#data-filters-s2t-report)
-
+>* [了解区段到特征重叠报表中的数据筛选器](../../reporting/dynamic-reports/segment-trait-overlap-report.md#data-filters-s2t-report)

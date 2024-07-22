@@ -1,5 +1,5 @@
 ---
-description: 特徵儲存資料夾可儲存並協助您組織特徵。
+description: 特征存储文件夹可以存储并帮助您组织特征。
 seo-description: Trait storage folders store and help you organize traits.
 seo-title: Trait Storage
 solution: Audience Manager
@@ -10,45 +10,45 @@ exl-id: 97d9951e-a339-4dd9-8a67-b7884752533b
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
 # 特征存储 {#trait-storage}
 
-特徵儲存資料夾可儲存並協助您組織特徵。
+特征存储文件夹可以存储并帮助您组织特征。
 
 <!-- c_tb_storage.xml -->
 
-## 特徵儲存資料夾的用途
+## 特征存储文件夹的用途
 
-在 [!UICONTROL Trait Builder]，特徵儲存資料夾是存放特徵並將特徵組織成您建立之邏輯群組的目錄。 從存取儲存資料夾 [!UICONTROL Traits] 儀表板或建立新特徵時。 請記住，您必須將新特徵指派至儲存資料夾，才能建立新特徵。
+在[!UICONTROL Trait Builder]中，特征存储文件夹是存放特征并将其组织到您创建的逻辑组中的目录。 从[!UICONTROL Traits]仪表板或在创建新特征时访问存储文件夹。 请记住，创建新特征时，不能不将其分配给存储文件夹。
 
 ![](assets/tb_storage.png)
 
-## 建立特徵儲存資料夾 {#create-trait-storage-folder}
+## 创建特征存储文件夹 {#create-trait-storage-folder}
 
-此程式說明如何為特徵建立儲存資料夾。
+此过程说明如何为您的特征创建存储文件夹。
 
 <!-- t_tb_create_storage.xml -->
 
-您可以在「 」中建立新的儲存資料夾 [!UICONTROL Basic Information] 區段來設定新特徵。 此外，您也可以在下列位置建立資料夾： [!UICONTROL Trait Storage] 主專案的區段 [!UICONTROL Traits] 清單儀表板。
+设置新特征时，您可以在[!UICONTROL Basic Information]分区中创建一个新的存储文件夹。 此外，还可以在主[!UICONTROL Traits]列表仪表板的[!UICONTROL Trait Storage]部分中创建文件夹。
 
-若要建立新的儲存資料夾：
+要创建新的存储文件夹，请执行以下操作：
 
-1. 在 [!UICONTROL Trait Storage] 視窗，暫留在：
-   * **[!UICONTROL All Traits]** 以新增根層級資料夾。
-   * 現有的父資料夾，用來新增從屬資料夾。
+1. 在[!UICONTROL Trait Storage]窗口中，将鼠标悬停在：
+   * **[!UICONTROL All Traits]**&#x200B;以添加新的根级别文件夹。
+   * 现有的父文件夹，用于添加新的从属文件夹。
 1. 单击“+”图标可创建此文件夹。
-1. 為資料夾命名，然後按一下 **[!UICONTROL Save]**.
+1. 命名文件夹并单击&#x200B;**[!UICONTROL Save]**。
 
-## 重新命名或刪除特徵儲存資料夾 {#rename-delete-trait-storage-folder}
+## 重命名或删除特征存储文件夹 {#rename-delete-trait-storage-folder}
 
-此程式說明如何重新命名或刪除儲存資料夾。
+此过程说明如何重命名或删除存储文件夹。
 
 <!-- t_tb_rename_delete_storage.xml -->
 
-您可以重新命名儲存資料夾，或從以下位置刪除儲存資料夾： [!UICONTROL Trait Storage] 主專案的區段 [!UICONTROL Traits] 清單儀表板。
+您可以从主[!UICONTROL Traits]列表仪表板的[!UICONTROL Trait Storage]部分重命名或删除存储文件夹。
 
-* 將滑鼠懸停在資料夾上並按一下鉛筆圖示，即可重新命名資料夾。
-* 將滑鼠懸停在資料夾上並按一下 **X** 圖示。
+* 将鼠标悬停在文件夹上并单击铅笔图标可重命名文件夹。
+* 将鼠标悬停在文件夹上并单击&#x200B;**X**&#x200B;图标可将其删除。

@@ -1,5 +1,5 @@
 ---
-description: 在區段測試群組中建立互斥的測試區段，以比較和評估不同目的地的效能。 您可以放置控制組並將區段劃分為整體的百分比，以測試功效。
+description: 在区段测试组中创建互斥测试区段，以比较和衡量不同目的地的效果。 您可以设置一个对照组，将区段划分为总体的百分比以测试功效。
 seo-description: Create mutually exclusive test segments in Segment Test Groups to compare and measure effectiveness of different destinations. You can set aside a control group and divide your segment into percentages of a whole, in order to test efficacy.
 seo-title: Audience Lab
 solution: Audience Manager
@@ -9,43 +9,43 @@ feature: Audience Lab
 exl-id: b7fbeb03-52aa-4489-8fcb-45bc2d26621d
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 4%
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
 # [!UICONTROL Audience Lab] {#audience-lab}
 
-在中建立互斥測試區段 [!UICONTROL Segment Test Groups] 以比較和評估不同目的地的使用效益。 您可以放置控制組並將區段劃分為整體的百分比，以測試功效。
+在[!UICONTROL Segment Test Groups]中创建互斥测试区段，以比较和度量不同目标的有效性。 您可以设置一个对照组，将区段划分为总体的百分比以测试功效。
 
 ## 概述 {#audience-lab-overview}
 
-[!UICONTROL Audience Lab] 使用 [設定檔連結](../../features/profile-merge-rules/merge-rules-overview.md) 以支援跨裝置測試。 這有助於確保使用者符合相同的測試區段資格，並在各裝置間獲得相同的待遇。 測試群組中的測試區段將會繼承 [設定檔合併規則](../../features/profile-merge-rules/merge-rules-dashboard.md) 基礎區段已指派給它。
+[!UICONTROL Audience Lab]使用[配置文件链接](../../features/profile-merge-rules/merge-rules-overview.md)来加强跨设备测试。 这有助于确保用户符合同一测试区段的条件并在各个设备上获得相同的待遇。 测试组中的测试区段将继承基本区段分配给它的[配置文件合并规则](../../features/profile-merge-rules/merge-rules-dashboard.md)。
 
-此 [!UICONTROL Audience Lab] 預設檢視會顯示每個測試群組的卡片。 按一下卡片以存取 **[!UICONTROL Test Group]** 檢視。 此檢視包含下列資訊：
+[!UICONTROL Audience Lab]默认视图为每个测试组显示一张信息卡。 单击卡片以访问&#x200B;**[!UICONTROL Test Group]**&#x200B;视图。 此视图包含以下信息：
 
 * **[测试组信息](../../features/audience-lab/audience-lab-information-view.md)**
 * **[测试组报表](../../features/audience-lab/audience-lab-reporting-view.md)**
 
-您可以建立 **最多10個測試群組**，每個具有 **最多15個測試區段**.
+您可以创建&#x200B;**最多10个测试组**，每个测试组具有&#x200B;**最多15个测试区段**。
 
 ![](assets/test-groups-view.PNG)
 
-## 搜尋和篩選測試群組 {#search-and-filter}
+## 搜索和筛选测试组 {#search-and-filter}
 
-開始建立具有多個測試區段的多個測試群組後，使用搜尋方塊來尋找特定測試群組可能會更容易。 您可以依下列方式搜尋測試群組：
+开始创建具有多个测试区段的多个测试组后，使用搜索框查找特定测试组可能会更容易。 您可以通过以下方式搜索测试组：
 
-* 測試群組的名稱；
-* 測試群組中任何測試區段的名稱；
-* 測試群組的說明。
+* 测试组的名称；
+* 测试组中任何测试区段的名称；
+* 测试组的描述。
 
 ![](assets/search_and_filter_audience_lab.png)
 
-您也可以依狀態篩選測試群組。 所有可用狀態在 [狀態](../../features/audience-lab/audience-lab.md#status) 區段底下。
+您还可以按状态筛选测试组。 下面的[状态](../../features/audience-lab/audience-lab.md#status)部分中介绍了所有可用的状态。
 
 ## [!UICONTROL Status] {#status}
 
-測試群組的狀態可以是作用中、已排程、已暫停、草稿或已完成。 有關每個變數的詳細資訊，請參閱下表：
+测试组的状态可以是“活动”、“已计划”、“已暂停”、“草稿”或“已完成”。 有关它们的更多信息，请参阅下表：
 
 <table id="table_7A0388BA02E045AC971C06A22DAC2C63"> 
  <thead> 
@@ -56,24 +56,24 @@ ht-degree: 4%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 活动 </span></b> </p> </td> 
-   <td colname="col2"> <p>一個 <i>作用中</i> 測試群組表示資料目前正在傳送至目的地。 按下 <b><span class="uicontrol"> 暫停測試 </span></b> 在 <b><span class="uicontrol"> 測試群組 </span></b> 卡片以暫停傳送資料至目的地。 </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol">活动</span></b> </p> </td> 
+   <td colname="col2"> <p><i>活动</i>测试组表示数据当前正在发送到目标。 按<b><span class="uicontrol">测试组</span></b>卡片中的<b><span class="uicontrol">暂停测试</span></b>以暂停向目标发送数据。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 已计划 </span></b> </p> </td> 
-   <td colname="col2"> <p>A <i>已排程</i> 測試群組尚未啟用，但無法再編輯。 它會在您於「 」中選取的開始日期啟用 <b>建立測試群組</b> 精靈。 </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol">已计划</span></b> </p> </td> 
+   <td colname="col2"> <p><i>计划的</i>测试组尚未处于活动状态，但无法再进行编辑。 它将在您在<b>创建测试组</b>向导中选择的开始日期变为活动状态。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 暂停 </span></b> </p> </td> 
-   <td colname="col2"> <p>A <i>已暫停</i> 測試群組目前未傳送資料至目的地。 按下 <b><span class="uicontrol"> 設為使用中 </span></b> 在 <b><span class="uicontrol"> 測試群組 </span></b> 卡片以繼續傳送特徵。 </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol">已暂停</span></b> </p> </td> 
+   <td colname="col2"> <p><i>已暂停</i>测试组当前未将数据发送到目标。 按<b><span class="uicontrol">使<b><span class="uicontrol">测试组</span></b>信息卡中的</span></b>处于活动状态，以继续发送特征。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 草稿 </span></b> </p> </td> 
-   <td colname="col2"> <p>A <i>草稿</i> 測試群組尚未啟用，仍可編輯。 尚未將資料傳送至對應的目的地。 </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol">草稿</span></b> </p> </td> 
+   <td colname="col2"> <p><i>草稿</i>测试组尚未处于活动状态，仍可编辑。 它尚未将数据发送到映射的目标。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 已完成 </span></b> </p> </td> 
-   <td colname="col2"> <p>A <i>已完成</i> 測試群組已達到您在「 」中選擇的結束日期 <b><span class="uicontrol"> 建立測試群組 </span></b> 精靈並停止傳送報告資料。 </p> </td>
+   <td colname="col1"> <p> <b><span class="uicontrol">已完成</span></b> </p> </td> 
+   <td colname="col2"> <p><i>已完成</i>的测试组已达到您在<b><span class="uicontrol">创建测试组</span></b>向导中选择的结束日期，并且已停止发送报表数据。 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -89,28 +89,28 @@ ht-degree: 4%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 编辑 </span></b> </p> </td>
-   <td colname="col2"> <p>可用 <b>僅限</b> 用於草稿測試群組。 可讓您繼續 <b><span class="uicontrol"> 建立新的測試群組 </span></b> 精靈。 </p> </td>
+   <td colname="col1"> <p> <b><span class="uicontrol">编辑</span></b> </p> </td>
+   <td colname="col2"> <p><b>仅</b>可用于草稿测试组。 允许您继续<b><span class="uicontrol">新建测试组</span></b>向导。 </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 暂停 </span></b> </p> </td>
-   <td colname="col2"> <p>適用於使用中測試群組。 可讓您暫停傳送測試區段至目的地。 </p> </td>
+   <td colname="col1"> <p> <b><span class="uicontrol">暂停</span></b> </p> </td>
+   <td colname="col2"> <p>可用于活动测试组。 允许您暂停将测试区段发送到目标。 </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 設為使用中 </span></b> </p> </td>
-   <td colname="col2"> <p>可用於暫停的測試群組。 可讓您繼續傳送測試區段至目的地。 </p> </td>
+   <td colname="col1"> <p> <b><span class="uicontrol">变为活动状态</span></b> </p> </td>
+   <td colname="col2"> <p>可用于暂停的测试组。 允许您恢复向目标发送测试区段。 </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 查看 </span></b> </p> </td>
-   <td colname="col2"> <p>適用於已完成的測試群組。 可讓您檢視測試產生的報告資訊。 </p> </td>
+   <td colname="col1"> <p> <b><span class="uicontrol">查看</span></b> </p> </td>
+   <td colname="col2"> <p>可用于已完成的测试组。 用于查看测试已生成的报表信息。 </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 复制 </span></b> </p> </td>
-   <td colname="col2"> <p>可讓您使用與正在複製的相同組態，建立新的測試群組。 </p> </td>
+   <td colname="col1"> <p> <b><span class="uicontrol">重复</span></b> </p> </td>
+   <td colname="col2"> <p>允许您使用与正在复制的组相同的配置创建新测试组。 </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 删除 </span></b> </p> </td>
-   <td colname="col2"> <p>可讓您刪除測試群組。 測試區段將會從目的地取消對應，與測試群組相關聯的基準區段和轉換特徵是完全可編輯的。 當您刪除測試群組以儲存報告時，系統會提示您下載CSV檔案（如果您願意）。 </p> </td>
+   <td colname="col1"> <p> <b><span class="uicontrol">删除</span></b> </p> </td>
+   <td colname="col2"> <p>用于删除测试组。 测试区段将从目标取消映射，与测试组关联的基准区段和转化特征完全可编辑。 当您删除测试组以保存报表时，系统会发出警告，提示您下载CSV文件（如果需要）。 </p> </td>
   </tr>
  </tbody>
 </table>

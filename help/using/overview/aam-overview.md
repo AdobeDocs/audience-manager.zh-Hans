@@ -10,8 +10,8 @@ feature: Overview
 exl-id: e96d8c05-7082-4f17-936d-f1896e665c8e
 source-git-commit: 5d62ecabfe66faa024f8e89149e47dd76d1bba86
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 88%
+source-wordcount: '301'
+ht-degree: 85%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 88%
 
 Audience Manager 可以帮助您汇总受众数据资产，从而能够轻松收集与网站访客有关的商业相关信息，创建可销售的区段，以及向合适的受众提供有针对性的广告和内容。此外，Audience Manager 可轻松部署和管理标记，并具备强大的数据收集、控制和保护功能。
 
-使用 Audience Manager，您可以不必依赖于数据销售商、交易台或需求方平台。此外，關於合作夥伴的資料資產，Audience Manager完全不可知。 Audience Manager提供存取多種資料來源的功能，數位發行者將能使用多樣化的第三方資料。 与我们的合作伙伴解决方案团队交流，了解如何帮助您针对目标受众做出明智而准确的决策。
+使用 Audience Manager，您可以不必依赖于数据销售商、交易台或需求方平台。此外，对于合作伙伴的数据资产，Audience Manager完全不可知。 通过访问多个数据源，Audience Manager使数字发布者能够使用各种第三方数据。 与我们的合作伙伴解决方案团队交流，了解如何帮助您针对目标受众做出明智而准确的决策。
 
-## 数据管理平台 (DMP) 的三个功能  {#dmp-three-functions}
+## 数据管理平台(DMP)的三个功能 {#dmp-three-functions}
 
 数据管理平台 (DMP) 的功能可归纳为三个类别，如下所示。
 

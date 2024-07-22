@@ -9,7 +9,7 @@ feature: Reference
 exl-id: 9e2ee3d3-01b2-4038-abda-fedf0f16f163
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1157'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ CRM ID 是客户在其 CRM 系统中用于识别用户的 ID。在 Audience Mana
 
 在[可寻址受众](/help/using/features/addressable-audiences.md)中，此量度表示设备满足以下条件：
 * 在回顾时间范围内已实现基于规则的特征或已载入的特征
-   **且**
+  **且**
 * ID 已与选定目标同步，不论同步次数是多少。
 
 

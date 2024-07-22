@@ -3,18 +3,18 @@ description: 当工作表返回错误或批量请求失败时该怎么做。
 seo-description: What to do when the worksheets return an error or your bulk request fails.
 seo-title: Troubleshooting Tips for Bulk Management Tools
 solution: Audience Manager
-title: 批量管理工具疑难解答提示
+title: 批量管理工具的疑难解答提示
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 feature: BAAAM
 exl-id: 4f1c501c-2e28-4ce5-829f-4d81d10cdccd
 source-git-commit: bd1ad233dd69bc8683731d0c63dc3fb74ef91ade
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 3%
+source-wordcount: '410'
+ht-degree: 0%
 
 ---
 
-# 批量管理工具疑难解答提示{#troubleshooting-tips-for-bulk-management-tools}
+# 批量管理工具的疑难解答提示{#troubleshooting-tips-for-bulk-management-tools}
 
 当工作表返回错误或批量请求失败时该怎么做。
 
@@ -30,7 +30,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[RBAC组权限](../../features/administration/administration-overview.md) 分配于 [!DNL Audience Manager] UI在 [!UICONTROL Bulk Management Tools].
+>[!UICONTROL Bulk Management Tools]接受在[!DNL Audience Manager] UI中分配的[RBAC组权限](../../features/administration/administration-overview.md)。
 
 网络流量大、服务器使用率高和数据集大等因素可能会导致批量请求失败或超时。 如果出现问题，工作表将停止写入数据并显示错误消息。 发生这种情况时，您应：
 
@@ -54,15 +54,15 @@ ht-degree: 3%
   <tr> 
    <td colname="col1"> <b>身份验证错误</b> </td> 
    <td colname="col2"> 
-    <b>更新至最新版本的Microsoft Excel</b>：当发布新版本的Microsoft Excel并且您使用旧版本时，您可能会在批量管理工作表中遇到身份验证错误。 请更新至最新版本的Microsoft Excel以解决身份验证错误。
+    <b>更新到最新版本的Microsoft Excel</b>：如果发布新版本的Microsoft Excel并且您使用的是旧版本，则批量管理工作表中可能会遇到身份验证错误。 请更新至最新版本的Microsoft Excel以解决身份验证错误。
 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b>长时间延迟</b> </td> 
+   <td colname="col1"> <b>长延迟</b> </td> 
    <td colname="col2"> 
     <ul id="ul_AA6F414024B2475AB1C0B46DC3FF0B36"> 
      <li id="li_ECC83AC39D7142519AA9A223DB8FCF23"> <b>关闭兼容模式</b>：检查您是否在Microsoft Excel的兼容模式下打开了其他工作表。 兼容模式会增加运行时间。 请关闭在此模式下可能打开的任何电子表格，然后再次尝试批量请求。 </li> 
-     <li id="li_234BFCF563234DE198884F33AB75280D"> <b>系统资源</b>：系统资源有限导致长时间延迟。 尝试在批量请求之前关闭所有其他程序。 </li> 
+     <li id="li_234BFCF563234DE198884F33AB75280D"> <b>系统资源</b>：有限的系统资源导致长时间延迟。 尝试在批量请求之前关闭所有其他程序。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -79,4 +79,4 @@ ht-degree: 3%
 
 ## 错误消息
 
-有时，在进行批量更改时可能会收到错误消息。 要解释错误消息，请参阅 [定义的响应代码](/help/using/api/rest-api-main/aam-api-getting-started.md) 在我们的API文档中。
+有时，在进行批量更改时可能会收到错误消息。 要解释错误消息，请参阅API文档中的[定义的响应代码](/help/using/api/rest-api-main/aam-api-getting-started.md)。

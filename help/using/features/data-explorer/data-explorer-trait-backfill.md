@@ -1,5 +1,5 @@
 ---
-description: 回填特徵實現以擷取歷史對象，並避免在特徵建立日期之前遺失相關資料。
+description: 回填特征实现，以捕获历史受众，并避免在特征创建日期之前丢失相关数据。
 seo-description: Backfill trait realizations to capture historical audiences and avoid loss of relevant data prior to a trait creation date.
 seo-title: Backfill Trait Realizations
 title: 回填特征实现
@@ -8,68 +8,67 @@ feature: Data Explorer
 exl-id: 6be54999-eeeb-48cd-a630-021f17289431
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 1%
+source-wordcount: '441'
+ht-degree: 0%
 
 ---
 
 # 回填特征实现 {#backfill-trait-realizations}
 
-回填特徵實現以擷取歷史對象，並避免在特徵建立日期之前遺失相關資料。
+回填特征实现，以捕获历史受众，并避免在特征创建日期之前丢失相关数据。
 
 >[!IMPORTANT]
 >
->[!UICONTROL Data Explorer Trait Backfill] 是一項進階功能，可透過解鎖其他使用案例來增強Audience Manager體驗。 回填需要額外的處理能力，所有Audience Manager客戶都可透過此方式取得回填，但需支付額外費用。 如需其他詳細資訊，請聯絡您的Adobe銷售代表。
+>[!UICONTROL Data Explorer Trait Backfill]是一项高级功能，可通过解锁其他用例来增强Audience Manager体验。 回填需要额外的处理能力，并且以递增的成本提供给所有Audience Manager客户。 有关更多详细信息，请联系您的Adobe销售代表。
 
-從未使用的訊號建立特徵時，您可以選擇在特定時段內回填特徵實現。 [!DNL Audience Manager] 擷取符合新特徵資格受眾的歷史資料，並將其儲存在對應的設定檔上。 您可以看到 **[!UICONTROL Backfill Options]** 在 [!UICONTROL Trait Expression] 部分 **[特徵產生器](../../features/traits/about-trait-builder.md)**.
+从未使用的信号创建特征时，您可以选择在特定时间段内回填特征实现。 [!DNL Audience Manager]捕获有关符合新特征条件的受众的历史数据，并将其存储在相应的配置文件中。 您可以在&#x200B;**[特征生成器](../../features/traits/about-trait-builder.md)**&#x200B;的[!UICONTROL Trait Expression]部分中看到&#x200B;**[!UICONTROL Backfill Options]**。
 
 >[!NOTE]
 >
->您可以針對規則型和已上線的特徵，回填特徵實現。
+>您可以回填基于规则的特征和载入的特征的可实现特征。
 
-以下說明如何回填特徵實現：
+以下是如何回填特征实现：
 
-1. 前往 [!UICONTROL Audience Data > Signals > Search] amd執行訊號搜尋或使用 [訊號控制面板](../../features/data-explorer/data-explorer-signals-dashboard.md) 識別要用於新特徵中的訊號。
-1. 根據所需的訊號建立新特徵。
-1. 使用 **[!UICONTROL Backfill Options]** 在 **[!UICONTROL Trait Expression]** 區段來選取您要回填特徵實現的時間間隔。 預先定義的回填間隔包括1、7、14和30天。 您也可以選擇最長30天的自訂日期範圍。
+1. 转到[!UICONTROL Audience Data > Signals > Search]并运行信号搜索或使用[信号仪表板](../../features/data-explorer/data-explorer-signals-dashboard.md)识别要用于新特征的信号。
+1. 根据所需的信号创建新特征。
+1. 使用&#x200B;**[!UICONTROL Trait Expression]**&#x200B;部分中的&#x200B;**[!UICONTROL Backfill Options]**&#x200B;选择要回填特征实现的时间间隔。 预定义的回填间隔包括1、7、14和30天。 您还可以选择最多30天的自定义日期范围。
 
-   ![特徵回填](assets/signals-trait-backfill.png)
+   ![特征回填](assets/signals-trait-backfill.png)
 
-1. （可選）按一下 **[!UICONTROL Estimate Realizations]** 在 **[!UICONTROL Estimated Trait Realizations]** 區段以檢視預估值 [!UICONTROL Unique Trait Realizations] 和 [!UICONTROL Total Trait Population] 過去7天回填特徵的值。
+1. （可选）单击&#x200B;**[!UICONTROL Estimated Trait Realizations]**&#x200B;部分中的&#x200B;**[!UICONTROL Estimate Realizations]**&#x200B;以查看回填特征在过去7天的估计[!UICONTROL Unique Trait Realizations]和[!UICONTROL Total Trait Population]值。
 
-   ![預估特徵實現](assets/estimate-trait-realizations.png)
+   ![估算特征实现](assets/estimate-trait-realizations.png)
 
    >[!IMPORTANT]
    >
-   >使用下列運運算元的運算式無法使用特徵回填和預估：
+   >特征回填和估计不适用于具有以下运算符的表达式的特征：
    >    * `!=`
    >    * `matchesregex`
    >    * `matcheswords`
+1. 创建特征。
 
-1. 建立特徵。
+创建完特征后，您会看到其回填的实现情况包含在实现统计信息中。
 
-完成特徵建立後，您會看到其回填的實現專案包含在實現統計資料中。
-
-觀看以下影片，瞭解如何回填特徵的影片逐步解說。
+观看以下视频，了解如何回填特征的视频演练。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25169/)
 
-## 特徵回填延遲 {#trait-backfilling-latency}
+## 特征回填延迟 {#trait-backfilling-latency}
 
-新建立的特徵會在建立兩到三個小時後開始擷取對象。 然而，由於大量的資料會 [!DNL Audience Manager] 每日執行，回填的母體不會立即反映在 [!UICONTROL Unique Trait Realizations] 和 [!UICONTROL Total Trait Population] 圖表。
+新创建的特征在创建两到三个小时后开始捕获受众。 但是，由于[!DNL Audience Manager]每天执行的数据量很大，回填的填充不会立即在[!UICONTROL Unique Trait Realizations]和[!UICONTROL Total Trait Population]图形中反映。
 
-Audience Manager更新 [!UICONTROL Trait Graph] 在特徵建立後48小時內使用回填母體。
+Audience Manager会在特征创建后的48小时内使用回填群体更新[!UICONTROL Trait Graph]。
 
-## 特徵回填限制 {#trait-backfilling-limit}
+## 特征回填限制 {#trait-backfilling-limit}
 
-[!UICONTROL Data Explorer] 可讓您每月回填最多50個特徵，且回填計數器會在每月的1日重設。
+[!UICONTROL Data Explorer]允许您每月回填最多50个特征，回填计数器将在每月的1天重置。
 
 >[!NOTE]
 >
->特徵回填配額不會從前幾個月延續。 例如，如果您在本月回填30個特徵，下個月的特徵回填配額會重設為50，而不是70。
+>特征回填配额不会延续到前几个月。 例如，如果您本月回填30个特征，则下个月的特征回填配额将重置为50，而不是70。
 
-## 對報表的影響 {#reporting-impact}
+## 对报告的影响 {#reporting-impact}
 
-回填的特徵實現會反映在 [!UICONTROL Unique Trait Realizations] 和 [!UICONTROL Total Trait Population] 量度，作為 [!DNL Audience Manager] 將歷史訊號轉換為特徵實現。
+回填的特征实现反映在[!UICONTROL Unique Trait Realizations]和[!UICONTROL Total Trait Population]量度中，因为[!DNL Audience Manager]将历史信号转换为特征实现。
 
-不過， [!UICONTROL Trait Graph]， [!UICONTROL General Reports]、和 [!UICONTROL Trend Reports] 不會在特徵建立日期之前回填歷史量度，以回溯更新。
+但是，[!UICONTROL Trait Graph]、[!UICONTROL General Reports]和[!UICONTROL Trend Reports]未使用在特征创建日期之前回填的历史量度进行追溯更新。

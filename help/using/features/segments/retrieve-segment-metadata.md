@@ -1,50 +1,50 @@
 ---
-description: 當Audience Manager傳送區段資訊給資料合作夥伴時，會使用數值ID識別這些物件。 身為資料合作夥伴，當您和客戶共用此資訊（或自行使用）時，實際的名稱和說明可在報表、儀表板或其他使用者介面(UI)中為客戶提供更佳的體驗。 資料合作夥伴可透過本節所述的手動或自動化方法，讓客戶可以使用這些易記名稱。
+description: 当Audience Manager向数据合作伙伴发送区段信息时，它会使用数字ID标识这些对象。 作为数据合作伙伴，当您与客户共享此信息（或自己使用它）时，实际的名称和描述可在报表、功能板或其他用户界面(UI)中为客户提供更好的体验。 数据合作伙伴可以通过本节中所述的手动或自动方法将这些友好名称提供给其客户。
 seo-description: When Audience Manager sends segment information to a data partner, it identifies these objects with numeric IDs. As a data partner, when you share this information with your customers (or work with it yourself), an actual name and description provide a better experience for customers in reports, dashboards, or other user interfaces (UI). Data partners can make these friendly names available to their customers with either the manual or automated methods described in this section.
 seo-title: Retrieving Segment Metadata
 solution: Audience Manager
-title: 检索区段元数据
+title: 正在检索区段元数据
 uuid: 719e2c41-8788-4e8a-967a-e367421f9f84
 feature: Segments
 exl-id: 64922cf8-f7bf-4e33-871f-d33626b06360
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 1%
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 
-# 检索区段元数据 {#retrieving-segment-metadata}
+# 正在检索区段元数据 {#retrieving-segment-metadata}
 
-當Audience Manager傳送區段資訊給資料合作夥伴時，會使用數值ID識別這些物件。 身為資料合作夥伴，當您和客戶共用此資訊（或自行使用）時，實際的名稱和說明可在報表、儀表板或其他使用者介面([!DNL UI])。 資料合作夥伴可透過本節所述的手動或自動化方法，讓客戶可以使用這些易記名稱。
+当Audience Manager向数据合作伙伴发送区段信息时，它会使用数字ID标识这些对象。 作为数据合作伙伴，当您与客户共享此信息（或自己使用它）时，实际的名称和描述可在报表、功能板或其他用户界面([!DNL UI])中为客户提供更好的体验。 数据合作伙伴可以通过本节中所述的手动或自动方法将这些友好名称提供给其客户。
 
-## 手動方法 {#manual-method}
+## 手动方法 {#manual-method}
 
-身為資料合作夥伴，您可能習慣透過手動程式從客戶取得對象中繼資料。 這可能包括附加到電子郵件的檔案，或是來自客戶透過 [!DNL UI] 您已為此目的建置和維護。 這些程式可以運作，但通常很麻煩、耗時，並且可能需要手動輸入資料。 這些方法通常用於協助讓整合快速上線運作，但長期而言無法提供最佳客戶體驗。 另外，您也可以使用 [!DNL Audience Manager] [!DNL API] 以自動取得區段中繼資料。
+作为数据合作伙伴，您可能习惯通过手动流程从客户那里获取受众元数据。 这可能包括附加到电子邮件的文件，或者来自通过您为此目的构建和维护的[!DNL UI]添加该数据的客户的文件。 这些流程可正常使用，但通常非常繁琐、耗时，并且可能需要手动数据输入工作。 这些方法通常用于帮助快速启动并运行集成，但从长远来看，它们不能提供最佳客户体验。 作为替代方法，您可以使用[!DNL Audience Manager] [!DNL API]自动获取区段元数据。
 
-## 自動化方法 {#automated-method}
+## 自动化方法 {#automated-method}
 
-[!DNL Audience Manager] 提供了一組 [REST API](../../api/rest-api-main/rest-api-main.md) 可讓您自動擷取區段中繼資料。 使用 [!DNL API]，您可以建立以排程間隔擷取區段中繼資料的工作，或在您處理時自動擷取區段中繼資料的工作 [!DNL Audience Manager] 並尋找新的區段ID。 如需詳細資訊，請參閱下列步驟。
+[!DNL Audience Manager]提供了一组[REST API](../../api/rest-api-main/rest-api-main.md)，可让您自动检索区段元数据。 使用[!DNL API]，您可以创建按计划间隔检索区段元数据的作业，或在您处理[!DNL Audience Manager]数据并查找新区段ID时自动检索区段元数据的作业。 有关更多信息，请参阅下面的步骤。
 
-### 步驟1：檢閱Audience ManagerAPI
+### 步骤1：查看Audience ManagerAPI
 
-此 [開始使用REST API](../../api/rest-api-main/aam-api-getting-started.md) 區段包含一般需求、驗證、可用方法等資訊。 如果您尚未使用 [!DNL Audience Manager] [!DNL API] 之前。
+[REST API快速入门](../../api/rest-api-main/aam-api-getting-started.md)部分包含有关常规要求、身份验证、可用方法等的信息。 如果您之前未使用[!DNL Audience Manager] [!DNL API]，则这是一个很好的起点。
 
-### 步驟2：要求OAuth2存取認證
+### 步骤2：请求OAuth2访问凭据
 
-您需要使用者端ID和密碼才能建立 [!DNL API] 呼叫。 在整合設定程式進行期間，您可以向整合專員取得使用者端ID和密碼。 您也可以傳送電子郵件要求至 [!UICONTROL Audience Manager Customer Care] 於 [!DNL amsupport@adobe.com].
+您需要客户端ID和密码才能进行[!DNL API]调用。 在集成设置过程中，您可以从集成专家处获取客户端ID和密码。 您还可以在[!DNL amsupport@adobe.com]向[!UICONTROL Audience Manager Customer Care]发送电子邮件请求。
 
-### 步驟3：收集每個整合客戶的客戶特定資訊
+### 步骤3：从每个集成客户那里收集特定于客户的信息
 
-向每個整合的客戶請求下列內容：
+向每个集成客户请求以下内容：
 
-* 使用者名稱：這適用於擁有與特定整合相關聯之目的地的唯讀許可權的受限制使用者。
-* 密碼：使用者密碼。
-* 目的地ID：這是與為特定伺服器對伺服器整合而建立的目的地相關聯的ID （整數）。
+* 用户名：适用于对与特定集成关联的目标具有只读权限的受限用户。
+* 密码：用户密码。
+* 目标ID：这是与为特定服务器到服务器集成创建的目标相关联的ID（整数）。
 
-### 步驟4：使用API呼叫擷取區段中繼資料
+### 步骤4：使用API调用检索区段元数据
 
-完成上述步驟後，您可以使用 `GET` 擷取區段中繼資料的方法。 如需請求和回應的範例，請參閱 [傳回目的地對應](../../api/rest-api-main/aam-api-destinations/aam-api-retrieve-destinations.md#return-dest-mappings). 此呼叫會傳回區段資料，格式為中的索引鍵值配對 [!DNL JSON] 物件。 下表列出回應中傳回的一些重要區段屬性。
+完成上述步骤后，您可以使用`GET`方法检索区段元数据。 有关示例请求和响应，请参阅[返回目标映射](../../api/rest-api-main/aam-api-destinations/aam-api-retrieve-destinations.md#return-dest-mappings)。 此调用返回[!DNL JSON]对象中格式化为键值对的区段数据。 下表列出了响应中返回的一些重要区段属性。
 
 <table id="table_446384AE9A36408A9C570CB7DB72C3D6"> 
  <thead> 
@@ -56,19 +56,19 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> destinationMappingId</code> </p> </td> 
-   <td colname="col2"> <p>此 <span class="keyword"> Audience Manager</span> 區段ID。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">Audience Manager</span>区段ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> elementName</code> </p> </td> 
-   <td colname="col2"> <p>區段名稱。 </p> </td> 
+   <td colname="col2"> <p>区段名称。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> elementDescription</code> </p> </td> 
-   <td colname="col2"> <p>簡要說明區段的一些文字。 </p> </td> 
+   <td colname="col2"> <p>简要描述区段的一些文本。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> elementStatus</code> </p> </td> 
-   <td colname="col2"> <p>區段對應的目前狀態。 傳回的狀態選項包括： </p> 
+   <td colname="col2"> <p>区段映射的当前状态。 返回的状态选项包括： </p> 
     <ul id="ul_BA3A1F5A773D4ECD9A1A3A1118BDDA8A"> 
      <li id="li_A12B858BD0AD4F35BCD50A4D113D86FF"> <code> active</code> </li> 
      <li id="li_98C04A861C2D4364B5FBD24498E8E9C5"> <code> inactive</code> </li> 

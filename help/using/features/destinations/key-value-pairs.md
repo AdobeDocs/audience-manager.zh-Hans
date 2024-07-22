@@ -1,24 +1,24 @@
 ---
-description: A [!DNL key-value pair] 包含 [!DNL related elements]. 索引鍵，是定義資料集的常數（例如，性別、顏色、價格），值，是屬於該集的變數（例如，男性/女性、綠色、100）。 Destination Builder會傳送格式化為索引鍵/值組的資料。
+description: A [!DNL key-value pair] 由 [!DNL related elements]组成。 键，它是定义数据集（例如，性别、颜色、价格）的常量，值，它是属于该集的变量（例如，男性/女性、绿色、100）。 Destination Builder发送格式化为键值对的数据。
 solution: Audience Manager
-title: 標準與序列 [!DNL Key-value pairs]
+title: 标准和串行 [!DNL Key-value pairs]
 uuid: 43789419-5b3f-4e62-b2e0-2722340bdd41
 feature: Destination Basics
 exl-id: b37c829b-66be-4c31-8198-bc032371279e
 source-git-commit: 0dfe96a4644c61fb5bc22e4791bfd09c574dcf34
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 2%
+source-wordcount: '560'
+ht-degree: 0%
 
 ---
 
 # 标准和序列键值对 {#standard-and-serial-key-value-pairs}
 
-機碼 — 值組包含相關元素：機碼，是定義資料集的常數（例如：性別、顏色、價格），以及值，是屬於該集的變數（例如，男性/女性、綠色、100）。 [!UICONTROL Destination Builder] 會傳送格式化為索引鍵值配對的資料。
+键值对由相关元素组成：键值，它是定义数据集的常量（例如：性别、颜色、价格）；值，它是属于数据集的变量（例如，男性/女性、绿色、100）。 [!UICONTROL Destination Builder]发送格式化为键值对的数据。
 
-## 基本索引鍵值配對 {#basic-key-value-pairs}
+## 基本键值对 {#basic-key-value-pairs}
 
-完整的機碼 — 值組形式如下：
+如果采用完整形式，则键值对的基本集可能如下所示：
 
 * `gender = male`
 * `color = green`
@@ -26,19 +26,19 @@ ht-degree: 2%
 
 ## 标准和序列键值对 {#standard-serial-key-value-pairs}
 
-目的地接受中的索引鍵值資料 *`standard`* 或 *`serialized`* 格式。
+目标接受&#x200B;*`standard`*&#x200B;或&#x200B;*`serialized`*&#x200B;格式的键值数据。
 
-* **標準索引鍵值配對：** 將目的地資料格式化為個別的索引鍵值配對。 每個索引鍵都會明確指出，即使再次用來定義不同的值。
-* **序列化的索引鍵值配對：** 將多個值合併為單一機碼值組。 在序列化的機碼 — 值組中，特殊指示器會分隔機碼 — 值集內的值。
+* **标准键值对：**&#x200B;将目标数据格式化为单独的键值对。 每个键都明确地声明，即使再次用来定义不同的值时也是如此。
+* **序列化的键值对：**&#x200B;将多个值压缩为一个键值对。 在序列化的键值对中，使用特殊指示符分隔键值集中的值。
 
-標準和序列化索引鍵值都可以包含單一或多個值。 下表提供標準和序列索引鍵值格式的範例。
+标准键值和序列化键值均可包含单个或多个值。 下表提供了标准和序列键值格式的示例。
 
 <table id="table_7895B1E800934117A19A96380F0CF91B"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 格式設定 </th>
-   <th colname="col2" class="entry"> 單一索引鍵值配對 </th>
-   <th colname="col3" class="entry"> 多個索引鍵值配對 </th>
+   <th colname="col1" class="entry"> 格式化 </th>
+   <th colname="col2" class="entry"> 单键值对 </th>
+   <th colname="col3" class="entry"> 多个键值对 </th>
   </tr>
  </thead>
  <tbody> 
@@ -48,90 +48,90 @@ ht-degree: 2%
    <td colname="col3"> <p> <code> x = 1 &amp; x = 2 &amp; y = 3 &amp; y = 4 </code> </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p> <b>序列化</b> </p> </td> 
+   <td colname="col1"> <p> <b>已序列化</b> </p> </td> 
    <td colname="col2"> <p> <code> x = 1 ; 2 </code> </p> </td> 
    <td colname="col3"> <p> <code> x = 1 ; 2 &amp; y = 3 ; 4 </code> </p> </td>
   </tr>
  </tbody>
 </table>
 
-## 分隔符號和分隔符號 {#delimiters-separators}
+## 分隔符和分隔符 {#delimiters-separators}
 
-在索引鍵和值之間分隔值的字元稱為 *`delimiters`* 和 *`separators`*. 當您以序列格式將區段傳送至目的地時，這些會變得特別重要。 序列化可讓您使用單一索引鍵傳遞多個值，並組合索引鍵/值組。 分隔符號和分隔符號的定義如下：
+将键和值之间或键内的值分隔的字符称为&#x200B;*`delimiters`*&#x200B;和&#x200B;*`separators`*。 当以序列格式将区段发送到目标时，这一点变得尤其重要。 序列化允许您使用单个键传入多个值并组合键值对。 分隔符和分隔符的定义如下：
 
-* **索引鍵值分隔符號：** 分隔索引鍵值配對中的索引鍵和值。
-* **索引鍵值分隔字元：** 分隔索引鍵值配對集。
-* **序列分隔符號：** 分隔序列化機碼值組內的多個值。
+* **键值分隔符：**&#x200B;用于分隔键值对中的键和值。
+* **键值分隔符：**&#x200B;用于分隔键值对的集合。
+* **序列分隔符：**&#x200B;用于分隔序列化键值对集合中的多个值。
 
 ## 示例 {#examples}
 
-替換為 [!UICONTROL Destination Builder] 您可以用數種不同的方式格式化鍵值資料。 讓我們來看看每種型別的一些範例。
+使用[!UICONTROL Destination Builder]，您可以通过多种不同的方式设置键值数据的格式。 让我们看一下每种类型的一些示例。
 
 <table id="table_C2FBDC887C8C4CC88B1B2A7CF8E2795F"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 索引鍵值配對範例 </th> 
+   <th colname="col1" class="entry"> 键值对示例 </th> 
    <th colname="col2" class="entry"> 示例 </th> 
    <th colname="col3" class="entry"> 描述 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>標準單一金鑰</b> </p> </td> 
+   <td colname="col1"> <p> <b>标准单键</b> </p> </td> 
    <td colname="col2"> <p> <code> X = 1 &amp; X = 2 </code> </p> </td> 
-   <td colname="col3"> <p>一組簡單的鍵值組。 此範例包含下列元素： </p> 
+   <td colname="col3"> <p>键值对的简单集合。 此示例包含以下元素： </p> 
     <ul id="ul_28C0CB005B264373926CA5D7418EE845"> 
-     <li id="li_B6D300DBA9064F0BA743BA9B04339511">索引碼： X </li> 
+     <li id="li_B6D300DBA9064F0BA743BA9B04339511">密钥： X </li> 
      <li id="li_9A1C98D5C9124FF1B4F032668576C03A">值： 1， 2 </li> 
-     <li id="li_1D2828328E554176846C94F6140C0CBF">分隔符號： = </li> 
-     <li id="li_0C6A70A0D9534611ACC98A0FD3693587">索引鍵值分隔符號： &amp; </li> 
+     <li id="li_1D2828328E554176846C94F6140C0CBF">分隔符： = </li> 
+     <li id="li_0C6A70A0D9534611ACC98A0FD3693587">键值分隔符： &amp; </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>多個索引鍵值配對</b> （非序列） </p> </td> 
+   <td colname="col1"> <p> <b>多个键值对</b> （非序列） </p> </td> 
    <td colname="col2"> <p> <code> X = 1 &amp; X = 2 &amp; Y = 3 &amp; Y = 4 </code> </p> </td> 
-   <td colname="col3"> <p>一組多重索引鍵/值組，會以個別的索引鍵/值組傳入值。 此範例包含下列元素： </p> 
+   <td colname="col3"> <p>一组通过单独的键值集传递值的多个键值对。 此示例包含以下元素： </p> 
     <ul id="ul_7FB22A43B435463D9F209067FF2C3619"> 
-     <li id="li_7487657F6C2F48F5A4C4C9F9E8FB3B4B">索引鍵： X， Y </li> 
+     <li id="li_7487657F6C2F48F5A4C4C9F9E8FB3B4B">键：X、Y </li> 
      <li id="li_B828CF81DAB8443FBB2EDF6538A63B3C">值： 1、2、3、4 </li> 
-     <li id="li_EA4C95F6C93D435EB79237E38CE6F011">分隔符號： = </li> 
-     <li id="li_45984AE2B581498299054BA5276D461D">索引鍵值分隔符號： &amp; </li> 
+     <li id="li_EA4C95F6C93D435EB79237E38CE6F011">分隔符： = </li> 
+     <li id="li_45984AE2B581498299054BA5276D461D">键值分隔符： &amp; </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>序列單一金鑰</b> </p> </td> 
+   <td colname="col1"> <p> <b>串行单键</b> </p> </td> 
    <td colname="col2"> <p> <code> X = 1 ; 2 ; 3 </code> </p> </td> 
-   <td colname="col3"> <p>使用單一索引鍵傳入多個值的索引鍵值集。 因為此索引鍵有多個值，所以稱為序列化索引鍵/值組。 此範例包含下列元素： </p> 
+   <td colname="col3"> <p>使用单个键传入多个值的键值集。 由于此键有多个值，因此它称为序列化的键值对。 此示例包含以下元素： </p> 
     <ul id="ul_69C4C662B9BD4F77BB940D921B316CCF"> 
-     <li id="li_718BEC527E69417C9F88D3DBD3357A28">索引碼： X </li> 
+     <li id="li_718BEC527E69417C9F88D3DBD3357A28">密钥： X </li> 
      <li id="li_659DCBBFB4024AC2B9C4E74D2A86648D">值： 1、2、3 </li> 
-     <li id="li_9A890233C6F84085A7BD5EA4D044E3CC">分隔符號： = </li> 
-     <li id="li_AFC0426EA6044F8BAFD915FCB3808FBA">序號分隔符號：分號 </li> 
+     <li id="li_9A890233C6F84085A7BD5EA4D044E3CC">分隔符： = </li> 
+     <li id="li_AFC0426EA6044F8BAFD915FCB3808FBA">序列分隔符：分号 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>多個索引鍵值配對</b> （序列） </p> </td> 
+   <td colname="col1"> <p> <b>多个键值对</b> （序列） </p> </td> 
    <td colname="col2"> <p> <code> X = 1 ; 2 &amp; Y = 3 ; 4 </code> </p> </td> 
-   <td colname="col3"> <p>一組多重索引鍵/值組，可在個別索引鍵上傳入多個值。 此範例包含下列元素： </p> 
+   <td colname="col3"> <p>一组在单独键上传递多个值的多个键值对。 此示例包含以下元素： </p> 
     <ul id="ul_CB50133B2E944818B9F2A0586EF69774"> 
-     <li id="li_FD3D7ECC2BF046E99B1ED0B73EFE341F">索引鍵： X， Y </li> 
+     <li id="li_FD3D7ECC2BF046E99B1ED0B73EFE341F">键：X、Y </li> 
      <li id="li_2BADC98C4CE74BBBBA1DC446D24615AC">值： 1、2、3、4 </li> 
-     <li id="li_4125435175AD4A43A44B980B28F32364">分隔符號： = </li> 
-     <li id="li_48CFC279B2514F4FB2935B05FC7F287A">分隔符: &amp; </li> 
-     <li id="li_576C731F2FAF47FD92F55345CD6D36A0">序號分隔符號：分號 </li> 
+     <li id="li_4125435175AD4A43A44B980B28F32364">分隔符： = </li> 
+     <li id="li_48CFC279B2514F4FB2935B05FC7F287A">分隔符： &amp; </li> 
+     <li id="li_576C731F2FAF47FD92F55345CD6D36A0">序列分隔符：分号 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 目的地序列化 {#destination-serialized}
+## 目标序列化 {#destination-serialized}
 
-序列化目的地會將多個特徵結合為單一字串，並將該資訊傳送至目的地。
+序列化目标将多个特征组合为一个字符串，并将该信息发送到目标。
 
 <!-- c_dest_serialized.xml -->
 
-序列化資料傳輸有助於提高效率，因為多個特徵會循序引發，而非並行引發。 這樣目的伺服器就有足夠的時間在回應其他請求之前接收、處理和傳回資料。
+序列化数据传输有助于提高效率，因为多个特征会按顺序触发，而不是并行触发。 这样可在响应其他请求之前，为目标服务器提供足够的时间来接收、处理和返回数据。
 
-### 支援的目的地
+### 支持的目标
 
-在 [!DNL Audience Manager]，您可以將資料序列化並傳送至您想要使用的幾乎任何目的地。 不過，使用此功能之前，您必須知道目的地 [!DNL URL] 以及放置某些必要或選用巨集的位置。 從您的目的地合作夥伴取得有關巨集位置的資訊。 另請參閱 [定義的巨集目的地](../../features/destinations/destination-macros.md#destination-macros-defined) 以取得詳細資訊。
+在[!DNL Audience Manager]中，您可以序列化数据并将其发送到几乎任何您想要使用的目标。 但是，在使用此功能之前，您需要知道目标[!DNL URL]以及放置一些必需或可选宏的位置。 从目标合作伙伴获取有关宏放置的信息。 有关详细信息，请参阅[定义的目标宏](../../features/destinations/destination-macros.md#destination-macros-defined)。

@@ -9,8 +9,8 @@ feature: Data Governance & Privacy
 exl-id: 36930703-745e-4fbd-ad18-ba9efb77eb7e
 source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 94%
+source-wordcount: '678'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 94%
 
 GDPR 于 2018 年 5 月 25 日生效，其主要目标是让欧盟地区的每个人（数据主体）能够更好地控制其个人数据，同时通过统一欧盟内部的法规来简化对国际企业的监管环境。在 Adobe 为实现 GDPR 合规积极做准备的过程中，Adobe Audience Manager 团队根据需要对服务和流程进行了改进，以支持来自数据主体（即您的消费者）的数据访问和删除请求。
 
-也請務必參閱 [隱私權法規概述](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=en) ，進一步瞭解GDPR在Experience Cloud中的運作方式。
+另请确保阅读[隐私法规概述](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=en)中的GDPR相关内容，以更好地了解GDPR在Experience Cloud中的工作方式。
 
 ## GDPR 术语表 {#gdpr-glossay}
 

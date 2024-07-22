@@ -1,5 +1,5 @@
 ---
-description: 將索引鍵值欄位保留空白可搜尋較廣泛的訊號，並使用可用的篩選器來縮小結果範圍。
+description: 将键值字段留空可搜索范围更广的信号，并使用可用的过滤器缩小结果范围。
 seo-description: Leave the key-value fields blank to search for a broader range of signals and use the available filters to narrow down the results.
 seo-title: Search Signals by Filters
 title: 按筛选条件搜索信号
@@ -8,17 +8,17 @@ feature: Data Explorer
 exl-id: 4e2ab375-f998-41c5-affb-b9bf983cc28a
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 7%
+source-wordcount: '107'
+ht-degree: 0%
 
 ---
 
 # 按筛选条件搜索信号 {#search-signals-by-filters}
 
-將索引鍵值欄位保留空白可搜尋較廣泛的訊號，並使用可用的篩選器來縮小結果範圍。
+将键值字段留空可搜索范围更广的信号，并使用可用的过滤器缩小结果范围。
 
-如果您沒有特定的機碼值組，但想要檢視特定時段內多個訊號的演變，請使用此方法。
+当您没有考虑特定的键值对，但希望查看多个信号在特定时间段内的演变时，请使用此方法。
 
-在以下範例中，篩選器已設定為顯示過去30天所有未使用的訊號，最小計數為1000。
+在下面的示例中，过滤器配置为显示过去30天中的所有未使用信号，最小计数为1000。
 
 ![](assets/signals-search-filters.png)

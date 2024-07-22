@@ -1,34 +1,34 @@
 ---
-description: Audience Optimization for Publishers 可以帮助您针对您所拥有和运营的内容，确定 Audience Manager 区段的潜在效果机会。這些報表結合記錄層級促銷活動績效資料與Audience Manager量度，以提供對象最佳化和營利商機的資訊。
+description: Audience Optimization for Publishers 可以帮助您针对您所拥有和运营的内容，确定 Audience Manager 区段的潜在效果机会。这些报表将日志级别的促销活动效果数据与Audience Manager量度相结合，以告知受众优化和盈利机会。
 seo-description: Audience Optimization for Publishers can help you identify potential performance opportunities for Audience Manager segments on your owned and operated content. These reports combine log-level campaign performance data with Audience Manager metrics to inform audience optimizations and monetization opportunities.
 seo-title: Audience Optimization for Publishers
 solution: Audience Manager
-title: 适用于出版商的 Audience Optimization
+title: 发布者的Audience Optimization
 uuid: 8425e237-ec52-4615-bb00-84ece4ebffe1
 feature: Audience Optimization Reports
 exl-id: 5972ea89-3e4d-48a5-bdd2-0a34211d8bfd
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 32%
+ht-degree: 19%
 
 ---
 
-# 适用于出版商的 Audience Optimization{#audience-optimization-for-publishers}
+# 发布者的Audience Optimization{#audience-optimization-for-publishers}
 
-Audience Optimization for Publishers 可以帮助您针对您所拥有和运营的内容，确定 Audience Manager 区段的潜在效果机会。這些報表結合記錄層級促銷活動績效資料與Audience Manager量度，以提供對象最佳化和營利商機的資訊。
+Audience Optimization for Publishers 可以帮助您针对您所拥有和运营的内容，确定 Audience Manager 区段的潜在效果机会。这些报表将日志级别的促销活动效果数据与Audience Manager量度相结合，以告知受众优化和盈利机会。
 
 ## 概述 {#aor-overview}
 
-[!UICONTROL Audience Optimization for Publishers] 並排記錄層級行銷活動的績效資料來自 [!DNL Google Ad Manager] 替換為 [!DNL Audience Manager] 區段量度。 已從中設定記錄擷取的客戶可使用報表 [!DNL Google Ad Manager]到 [!DNL Audience Manager]. 如果您尚未設定記錄擷取，請閱讀 [將Google Ad Manager資料檔案匯入Audience Manager](import-dfp.md) 以取得操作的相關資訊。
+[!UICONTROL Audience Optimization for Publishers]将来自[!DNL Google Ad Manager]的日志级营销活动效果数据与[!DNL Audience Manager]区段量度并置。 这些报告适用于已设置从[!DNL Google Ad Manager]到[!DNL Audience Manager]的日志摄取的客户。 如果尚未设置日志摄取，请阅读[将Google Ad Manager数据文件导入Audience Manager](import-dfp.md)以了解操作方法。
 
 ## 元数据 {#metadata}
 
-報表中顯示的效能資訊會從您的匯入 [!DNL Google Ad Manager] 執行個體。 您必須傳送中繼資料檔案給我們，好讓我們為您的報表專案新增描述性的易記名稱，而非ID。 中的步驟3 [將Google Ad Manager資料檔案匯入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md) 說明如何傳送中繼資料給我們。
+报表中显示的性能信息是从您的[!DNL Google Ad Manager]实例导入的。 您必须向我们发送元数据文件，以便我们可以向报表中的项目添加描述性友好名称而不是ID。 [将Google Ad Manager数据文件导入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)中的步骤3介绍了如何向我们发送元数据。
 
 ## 可用报表 {#available-reports}
 
-[!UICONTROL Audience Optimization for Publishers] 提供六種不同的檢視，針對中建立的細分細分細分提升廣告伺服器效能 [!DNL Audience Manager] 以解決以發佈商為中心的業務目標。
+[!UICONTROL Audience Optimization for Publishers]提供了六种不同的视图，这些视图将广告服务器性能与[!DNL Audience Manager]中创建的区段进行比较，以解决以出版商为中心的业务目标。
 
 + [区段绩效报表](publisher-segment-performance.md)
 + [区段趋势报表](publisher-segment-trends.md)

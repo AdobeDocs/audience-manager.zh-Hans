@@ -1,5 +1,5 @@
 ---
-description: 根據這些規格將Audience Optimization中繼資料檔案的內容格式化。
+description: 根据这些规范设置Audience Optimization元数据文件内容的格式。
 seo-description: Format the contents of your Audience Optimization metadata file according to these specifications.
 seo-title: Content Format for Metadata Files
 solution: Audience Manager
@@ -9,46 +9,46 @@ feature: Log Files
 exl-id: 1aed39f4-f893-4f25-b041-e198895e338a
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 4%
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
 # 元数据文件的内容格式{#content-format-for-metadata-files}
 
-根據這些規格將Audience Optimization中繼資料檔案的內容格式化。
+根据这些规范设置Audience Optimization元数据文件内容的格式。
 
 ## 语法 {#syntax}
 
-下列語法定義中繼資料檔案中格式正確的內容的結構。 注意， *斜體* 表示變數預留位置。
+以下语法定义元数据文件中格式正确的内容的结构。 请注意，*斜体*&#x200B;表示变量占位符。
 
-**語法：**  *內容ID* | *名稱* | *-1*
+**语法：** *内容ID* | *名称* | *-1*
 
 <!--In the contents syntax, you'll notice a parent ID variable. Don't confuse it with the parent ID used in the [metadata file name](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md). These 2 variables seem similar, but they represent different things. In the file name, the parent ID corresponds to a category like "campaign" (ID 1), "placement" (ID 3), or "tactic" (ID 9), etc. In the file body:-->
 
-第三欄 **-1** 技術上來說，是父系ID，亦即舊版欄位。 值一律應設為 **-1**.
+从技术上讲，第三列&#x200B;**-1**&#x200B;是父ID，它是旧版字段。 该值应始终设置为&#x200B;**-1**。
 
 >[!NOTE]
 >
->請注意，每個維度需要一個中繼資料檔案，因此貯體中應該有多個中繼資料檔案。 維度會列在文章中 [中繼資料檔案的命名慣例](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension).
+>请注意，每个维度需要一个元数据文件，因此存储段中需要多个元数据文件。 维度在[元数据文件的命名约定](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension)一文中列出。
 
-**以^a （control-A或ASCII 001）分隔檔案專案**
+**使用^a （control-A或ASCII 001）分隔文件条目**
 
-使用 `^a` （control-A或ASCII 001）以分隔中繼資料檔案中的內容。 由於這些字元為非列印字元，上述語法範例顯示僅供顯示之用的垂直號「|」。
+使用`^a` （control-A或ASCII 001）分隔元数据文件中的内容。 由于它们是非打印字符，因此上述语法示例显示仅用于显示的竖线“|”。
 
-如有需要，您可以下載範例檔案 —  [20181105_0_1](assets/20181105_0_1.zip). 解壓縮並在您選擇的編輯器中編輯，並根據您的實際中繼資料內容進行調整，因為它已包含必要的分隔字元。
+如果需要，您可以下载示例文件 — [20181105_0_1](assets/20181105_0_1.zip)。 解压该元数据，然后在您选择的编辑器中编辑，并根据实际的元数据内容进行调整，因为该元数据已包含所需的分隔符。
 
 >[!IMPORTANT]
 >
->請勿在中繼資料檔案中新增標頭列。
+>请勿将标题行添加到元数据文件。
 
 ## 示例 {#examples}
 
-讓我們來看看您如何在中繼資料檔案中建構內容。 此結構的一部分取決於尺寸。 維度會列在文章中 [中繼資料檔案的命名慣例](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension).
+让我们看一下如何在元数据文件中构建内容。 此结构的一部分取决于尺寸。 维度在[元数据文件的命名约定](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension)一文中列出。
 
 **Campaign**
 
-在此範例中，檔案標題為20180921_0_1，而檔案中的三欄為：促銷活動ID、名稱和父項ID。
+在此示例中，文件标题为20180921_0_1，文件中的三列为：促销活动ID、名称和父级ID。
 
 <!--Let's say you want to populate the creative drop down menu with creative names from a particular campaign. In this case, your metadata file name would include ID 1 (campaign) and ID 2 (creative). Following the content syntax, your metadata file would contain the creative ID, creative name, and actual campaign ID.-->
 
@@ -61,9 +61,9 @@ ht-degree: 4%
 333 Campaign C -1
 ```
 
-**Creative**
+**创意**
 
-在此範例中，檔案標題為20180827_0_2，檔案中的三欄為：創作ID、名稱和父項ID。
+在此示例中，文件标题为20180827_0_2，文件中的三列为：创作ID、名称和父ID。
 
 ```
 //File Title
@@ -74,9 +74,9 @@ ht-degree: 4%
 333 Creative C -1
 ```
 
-**Site（网站）**
+**站点**
 
-在此範例中，檔案標題為20180921_0_5，檔案中的三欄為：場地ID、名稱和父項ID。
+在此示例中，文件标题为20180921_0_5，文件中的三列为：站点ID、名称和父ID。
 
 ```
 //File Title

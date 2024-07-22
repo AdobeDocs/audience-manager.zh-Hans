@@ -9,11 +9,11 @@ exl-id: 353b9035-20f3-41ff-819c-71f161e6b1e1
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
-# 面向 Audience Manager 客户的 GDPR 准备指南 （資料控管單位） {#gdpr-readiness-guidance}
+# 面向Audience Manager客户（数据控制者）的GDPR准备指南 {#gdpr-readiness-guidance}
 
 Audience Manager 建议在数据管理和组织准备方面采取主动行动。这将帮助您确保为与访问或删除请求相关的流程组织消费者数据，使您的团队有能力并有权管理这些请求，并且消费者（数据主体）将对您的品牌拥有积极而独特的体验。
 

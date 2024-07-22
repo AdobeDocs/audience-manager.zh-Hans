@@ -8,144 +8,144 @@ feature: Algorithmic Models
 exl-id: 57eaeb09-0e0e-4ce9-9b25-f1a27f4f35ce
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1485'
-ht-degree: 7%
+source-wordcount: '1470'
+ht-degree: 3%
 
 ---
 
-# [!UICONTROL Predictive Audiences] 概述 {#predictive-audiences}
+# [!UICONTROL Predictive Audiences]概述 {#predictive-audiences}
 
-[!UICONTROL Predictive Audiences] 可協助您使用進階資料科學技術，即時將未知的受眾分類為不重複角色。
+[!UICONTROL Predictive Audiences]可帮助您使用高级数据科学技术将未知受众实时分类为不同的角色。
 
 >[!IMPORTANT]
->本文包含產品檔案，旨在引導您完成此功能的設定和使用。 本文不包含任何法律建議。 請諮詢您自己的法律顧問，以獲得法律指引。
+>本文包含产品文档，旨在指导您完成此功能的设置和使用。 此处不包含任何法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
-在营销环境中，角色是指由具有一系列相同特征（例如人口统计特征、浏览习惯、购物历史记录等）的访客、用户或潜在购买者构成的一个受众区段。
+在营销环境中，人物是由访客、用户或潜在购买者定义的受众区段，他们具有一组特定特征，如人口统计信息、浏览习惯、购物历史记录等。
 
-[!UICONTROL Predictive Audiences] 模型进一步扩展了角色这一概念的应用，允许您使用 Audience Manager 的机器学习功能将未知受众分类为不同的角色。Audience Manager 可以计算未知的第一方受众与一组已知的第一方受众之间的相似性，从而帮助您做到这一点。
+[!UICONTROL Predictive Audiences] 模型进一步扩展了角色这一概念的应用，允许您使用 Audience Manager 的机器学习功能将未知受众分类为不同的角色。Audience Manager可以计算未知的第一方受众与一组已知的第一方受众之间的相似性，从而帮助您做到这一点。
 
-當您建立 [!UICONTROL Predictive Audiences] 模型，第一步是選擇基線特徵或區段，讓您的目標受眾依這些特徵或區段進行分類。 這些特徵或區段將定義您的角色。
+创建[!UICONTROL Predictive Audiences]模型时，第一步是选择希望目标受众作为分类依据的基线特征或区段。 这些特征或区段将定义您的角色。
 
-在評估階段，模型會建立新的 [!UICONTROL Predictive Audiences] 定義為基準線的每個特徵或區段的區段。 下次Audience Manager看到目標受眾中未被分類為角色訪客（不符合任何基線特徵或區段的資格）時， [!UICONTROL Predictive Audiences] 模型會判斷訪客應屬於哪些預測區段，並將訪客新增至該區段。
+在评估阶段，模型将为您定义为基线的每个特征或区段创建一个新的[!UICONTROL Predictive Audiences]区段。 下次Audience Manager看到目标受众中未被分类为角色（不符合任何基线特征或区段条件）的访客时，[!UICONTROL Predictive Audiences]模型将确定访客应属于哪些预测区段，并将访客添加到该区段。
 
-您可以在下列位置識別模型建立的預測區段： [!UICONTROL Segments] 頁面。 每個 [!UICONTROL Predictive Audiences] 模型在 [!UICONTROL Predictive Audiences] 資料夾，按一下模型資料夾即可看到每個模型的區段。
+您可以在[!UICONTROL Segments]页面中识别模型创建的预测区段。 每个[!UICONTROL Predictive Audiences]模型在[!UICONTROL Predictive Audiences]文件夹下都有自己的文件夹，您可以通过单击模型文件夹来查看每个模型的区段。
 
-![預測受眾 — 區段](assets/predictive-audiences-segments.png)
+![predictive-audiences-segments](assets/predictive-audiences-segments.png)
 
 ## 用例 {#use-cases}
 
-協助您更清楚瞭解您何時可以如何使用 [!UICONTROL Predictive Audiences]，以下是Audience Manager客戶可以使用此功能解決的一些使用案例。
+为了帮助您更好地了解如何以及何时可以使用[!UICONTROL Predictive Audiences]，以下是Audience Manager客户可以使用此功能解决的几个用例。
 
-### 使用案例#1
+### 用例#1
 
-身為電子商務公司的行銷人員，我想將所有網頁和行動訪客分類為各種品牌相關性類別，以便個人化其使用者體驗。
+作为一家电子商务公司的营销人员，我想将我的所有Web和移动访客分类为各种品牌亲和力类别，以便我可以个性化他们的用户体验。
 
-### 使用案例#2
+### 用例#2
 
-身為一家媒體公司的行銷人員，我想要依我最愛的流派將我未經驗證的網頁和行動訪客分類，以便我可以跨所有管道為他們建議個人化內容。
+作为一家媒体公司的营销人员，我想按最喜爱的流派对我未经身份验证的Web和移动访客进行分类，以便我可以跨所有渠道向他们建议个性化内容。
 
-### 使用案例#3
+### 用例#3
 
-作為一家航空公司的廣告商，我想要確保我根據受眾對旅遊目的地的興趣來分類受眾，這樣我就能在短短的重新定位時段內即時向他們做廣告。
+作为一家航空公司的广告商，我想确保我的受众是根据他们对旅游目的地的兴趣进行分类，以便我可以在很短的重定位窗口内向他们实时广告。
 
-### 使用案例#4
+### 用例#4
 
-作為廣告商，我想即時分類第一方對象，以便對趨勢新聞做出快速反應。
+作为广告商，我想实时对第一方受众进行分类，以便能够对热门新闻做出快速反应。
 
-### 使用案例#5
+### 用例#5
 
-作為行銷人員，我想預測我的網站訪客處於哪個客戶歷程階段，例如探索、參與、購買或保留，以便我可以據此鎖定他們。
+作为营销人员，我想预测我的网站访客处于哪个客户历程阶段，例如发现、参与、购买或保留，以便我可以相应地定位他们。
 
-### 使用案例#6
+### 用例#6
 
-身為一家媒體公司，我想將對象分類，以便以高價銷售廣告空間，同時為訪客提供相關的廣告。
+作为一家媒体公司，我想对受众进行分类，以便能够以较高的价格销售我的广告空间，同时为访客提供相关的广告。
 
-## 如何 [!UICONTROL Predictive Audiences] 模型有效 {#how-predictive-audiences-models-work}
+## [!UICONTROL Predictive Audiences]模型的工作方式 {#how-predictive-audiences-models-work}
 
-當您建立 [!UICONTROL Predictive Audiences] 模型，請進行三個步驟：
+创建[!UICONTROL Predictive Audiences]模型时，需执行以下三个步骤：
 
-1. 首先，您至少選取兩個特徵或兩個區段，以定義您的角色。
-1. 然後，您可以選擇特徵或區段，定義您要分類的目標對象。
-1. 最後，您需選擇模型的名稱、儲存預測區段的資料來源，以及 [!UICONTROL Profile Merge Rule] 用於模型。
+1. 首先，选择至少两个将定义角色的特征或两个区段。
+1. 然后，选择一个特征或区段，以定义要分类的目标受众。
+1. 最后，选择模型的名称、将存储预测区段的数据源以及模型的[!UICONTROL Profile Merge Rule]。
 
-### 角色選擇條件 {#selection-personas}
+### 角色选择标准 {#selection-personas}
 
-您可以選擇任何第一方特徵或區段來定義您的角色。 不過，為獲得最佳結果，以下是建議的一組最佳實務：
+您可以选择任何第一方特征或区段来定义角色。 但是，为获得最佳结果，这里提供了一组推荐的最佳实践：
 
-* 選擇您的角色特徵或區段，讓每個角色至少擁有幾百個 [裝置ID](../../reference/ids-in-aam.md).
-* 如果您的特徵是根據 [跨裝置ID](../../reference/ids-in-aam.md)，您可使用將它們包在區段中 [設定檔合併規則](../profile-merge-rules/merge-rules-overview.md) 使用 [裝置ID](../../reference/ids-in-aam.md)，例如 [!UICONTROL Device Graph]. 這將確保有足夠的資源 [裝置ID](../../reference/ids-in-aam.md) 演演算法可從中學到的東西。
-* 我們建議您為角色選擇特徵或簡單區段，包含1到3個特徵。
-* 選擇重疊程度最低的基線特徵或區段。
-* 請務必在數位資產中擷取精細特徵。
+* 选择您的角色特征或区段，以便每个角色至少拥有几百个[设备ID](../../reference/ids-in-aam.md)。
+* 如果您的特征基于[跨设备ID](../../reference/ids-in-aam.md)，则可以将其包含在使用[设备ID](../../reference/ids-in-aam.md)的[配置文件合并规则](../profile-merge-rules/merge-rules-overview.md)的区段中，如[!UICONTROL Device Graph]。 这将确保有足够的[设备ID](../../reference/ids-in-aam.md)可供算法学习。
+* 我们建议为您的角色选择特征或简单区段，由1到3个特征组成。
+* 选择基线特征或重叠程度最低的区段。
+* 确保在数字资产中捕获粒度特征。
 
-### 目標對象的選擇條件 {#selection-audience}
+### 目标受众的选择标准 {#selection-audience}
 
-根據您的使用案例，無論您是要即時分類、批次分類還是同時分類，請選擇目標對象([!UICONTROL trait] 或 [!UICONTROL segment])，具有顯著的即時和/或總母體。 與角色選擇類似，我們建議您鎖定目標對象 [!UICONTROL trait] 或 [!UICONTROL segment] 擁有擁有豐富設定檔的使用者(豐富設定檔 [!UICONTROL traits])。
+根据您的用例，如果要实时、批量或同时以这两种方式对用户进行分类，请选择具有大量实时和/或总人口的目标受众（[!UICONTROL trait]或[!UICONTROL segment]）。 与角色选择类似，我们建议您的目标受众[!UICONTROL trait]或[!UICONTROL segment]具有具有丰富配置文件的用户（丰富的[!UICONTROL traits]集）。
 
-選取目標對象時，請分析您的使用案例，並決定您要分類的ID型別： [!UICONTROL device IDs] 或 [!UICONTROL cross-device IDs]. 此 [!UICONTROL Profile Merge Rule] 建立模型時選取的欄位會定義用來將每個使用者置於預測性中的資料 [!UICONTROL segments].
+选择目标受众时，分析您的用例，并决定要分类的ID类型：[!UICONTROL device IDs]或[!UICONTROL cross-device IDs]。 您在创建模型时选择的[!UICONTROL Profile Merge Rule]定义了用于将每个用户放入预测[!UICONTROL segments]的数据。
 
-建議您最好選擇 [!UICONTROL Profile Merge Rule] 與您的目標對象具有相同設定的對象 [!UICONTROL Profile Merge Rule]或包含目標對象之設定檔型別（裝置設定檔或已驗證的設定檔）的設定檔。
+作为最佳实践，我们建议您选择与目标受众[!UICONTROL Profile Merge Rule]具有相同配置的[!UICONTROL Profile Merge Rule]，或者选择包含目标受众的配置文件类型（设备配置文件或经过身份验证的配置文件）的配置。
 
-### [!UICONTROL Predictive Audiences] 模型訓練階段 {#model-training}
+### [!UICONTROL Predictive Audiences]模型训练阶段 {#model-training}
 
-演演算法必須先根據您的資料進行自我訓練，才能將第一方對象分類為正確的角色。
+在算法能够将您的第一方受众分类为正确的角色之前，它需要根据您的数据进行自我训练。
 
-對於您定義的每個角色，演演算法都會分析其個別對象，並評估其使用者在過去30天內任何即時和/或已上線特徵活動。
-此步驟每24小時執行一次，以說明第一方對象中的變更。
+对于您定义的每个角色，算法将分析其各自的受众，并评估其用户在过去30天内的任何实时和/或载入的特征活动。
+此步骤每24小时执行一次，以确保您的第一方受众发生变化。
 
-### [!UICONTROL Predictive Audiences] 模型分類階段 {#model-classification}
+### [!UICONTROL Predictive Audiences]模型分类阶段 {#model-classification}
 
-對於即時和批次對象分類，模型會先檢查使用者是否屬於目標對象。 如果使用者符合目標受眾的資格且不屬於任何角色，則模型會為他們指派角色資格分數。
+对于实时和批量受众分类，模型首先会检查用户是否属于目标受众。 如果用户符合目标受众资格且不属于任何角色，则模型将为他们分配角色资格分数。
 
-評估第一方對象並指派分數時，模型會使用預設值 **[!UICONTROL Profile Merge Rule]** 已在您的帳戶中定義。 最後，訪客會分類為獲得最高分數的角色。
+在评估第一方受众并分配得分时，模型使用您在帐户中定义的默认&#x200B;**[!UICONTROL Profile Merge Rule]**。 最后，访客被分类为获得最高分数的角色。
 
-![預測受眾 — 圖表](assets/predictive-audiences-graph.png)
+![预测受众图形](assets/predictive-audiences-graph.png)
 
-## 考量事項和限制 {#considerations}
+## 注意事项和限制 {#considerations}
 
 >[!IMPORTANT]
-> 在繼續實作階段之前，請仔細閱讀本節。
+> 在进入实施阶段之前，请仔细阅读此部分。
 
-設定您的 [!UICONTROL Predictive Audiences] 模型，請謹記以下考量事項和限制：
+在配置[!UICONTROL Predictive Audiences]模型时，请牢记以下注意事项和限制：
 
-* 您最多可以创建 10 个 [!UICONTROL Predictive Audiences] 模型。
-* 對於每個模型，您最多可以選擇50個基本特徵/區段。
-* 目前不支援第二方和第三方資料 [!UICONTROL Predictive Audiences].
-* [!UICONTROL Predictive Audiences] 會根據您的第一方特徵，從您的所有第一方資料來源執行對象分類。
-* 區段評估 [!UICONTROL Predictive Audiences] 使用 **[!UICONTROL Profile Merge Rule]** 您在建立模型時選擇的引數。 若要深入瞭解 [!UICONTROL Profile Merge Rules] 請參閱專屬的 [檔案](../profile-merge-rules/merge-rules-overview.md).
-* 部分特徵和區段不支援作為基線或目標對象。 [!UICONTROL Predictive Audiences] 選擇下列其中一個作為基線或目標對象時，模型將無法儲存：
-   * 預測性特徵和使用預測性特徵建立的區段；
-   * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) 特徵或區段；
-   * 演演算法特徵；
-   * 第二方和第三方特徵。
-* [!UICONTROL Predictive Audience] [!UICONTROL segments] 不能用於 [!UICONTROL Audience Lab].
+* 您最多可以创建10个[!UICONTROL Predictive Audiences]模型。
+* 对于每个模型，您最多可以选择50个基本特征/区段。
+* [!UICONTROL Predictive Audiences]当前不支持第二方和第三方数据。
+* [!UICONTROL Predictive Audiences]根据您的第一方特征，从您的所有第一方数据源执行受众分类。
+* [!UICONTROL Predictive Audiences]的区段评估使用您在模型创建期间选择的&#x200B;**[!UICONTROL Profile Merge Rule]**。 要了解有关[!UICONTROL Profile Merge Rules]的更多信息，请参阅专用的[文档](../profile-merge-rules/merge-rules-overview.md)。
+* 不支持将某些特征和区段用作基线或目标受众。 选择下列模型之一作为基线或目标受众时，[!UICONTROL Predictive Audiences]模型将无法保存：
+   * 使用预测特征创建的预测特征和区段；
+   * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md)特征或区段；
+   * 算法特征；
+   * 第二方和第三方特征。
+* [!UICONTROL Predictive Audience] [!UICONTROL segments]不能在[!UICONTROL Audience Lab]中使用。
 
 ## [!UICONTROL Data Export Controls] {#dec}
 
-預測性區段建立者 [!UICONTROL Predictive Audiences] 模型繼承 [資料匯出控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html) 資料來源：
+由[!UICONTROL Predictive Audiences]模型创建的预测区段从以下第一方数据源继承了[数据导出控件](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)：
 
-1. 您在建立模型時選擇的第一方資料來源。
-1. 目標對象的第一方資料來源。 具體而言，下列專案的資料匯出控制項： [!UICONTROL traits] 或 [!UICONTROL segments] 組成目標對象的資訊。
-1. 此 [資料匯出控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html) 的 [!UICONTROL Profile Merge Rule] 您為模型選取的。
+1. 您在构建模型时选择的第一方数据源。
+1. 目标受众的第一方数据源。 具体而言，构成目标受众的[!UICONTROL traits]或[!UICONTROL segments]的数据导出控件。
+1. 您为模型选择的[!UICONTROL Profile Merge Rule]的[数据导出控件](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)。
 
-新建立的預測性 [!UICONTROL traits] 和 [!UICONTROL segments] 會具有與上述第一方資料來源聯合相同的隱私許可權制。
+新创建的预测[!UICONTROL traits]和[!UICONTROL segments]将与上面描述的第一方数据源的并集具有相同的隐私限制。
 
-具有其他限制，但不屬於下列條件的特徵： [!UICONTROL Predictive Audiences] 區段隱私許可權制將從培訓階段排除，且不會對該模型產生影響。
+具有不属于[!UICONTROL Predictive Audiences]区段隐私限制的其他限制的特征将从训练阶段中排除，并且不会影响模型。
 
 ## [!UICONTROL Profile Merge Rules] {#pmr}
 
-所有預測性區段將會被指派 [!UICONTROL Profile Merge Rule] 您在建立模型時選取的專案。 此 [!UICONTROL Profile Merge Rule] 您選擇的專案之所以重要，原因如下：
+将为所有预测区段分配您在创建模型时选择的[!UICONTROL Profile Merge Rule]。 您选择的[!UICONTROL Profile Merge Rule]很重要，原因如下：
 
-* 它定義當模型分析具影響力時，應將哪些裝置和/或已驗證的設定檔列入考量 [!UICONTROL traits]，將使用者分類至預測性變數時 [!UICONTROL segment].
-* 它控管哪些 [!UICONTROL trait] 型別（裝置層級或跨裝置層級）應在模型訓練步驟中使用，並顯示為具有影響力 [!UICONTROL traits]. 預測性 [!UICONTROL segments] 是目標對象的子集。
-   * 如果目標對象是區段，建議您選取相同的 [!UICONTROL Profile Merge Rule] ，作為指派給目標對象的模型，或 [!UICONTROL Profile Merge Rule] 其中包含目標對象的設定檔型別。
-   * 如果目標對象是 [!UICONTROL trait]，建議您選取 [!UICONTROL Profile Merge Rule] 可存取與目標受眾特徵相同資料型別的使用者（裝置設定檔資料或跨裝置設定檔資料）。
-* [!UICONTROL Profile Merge Rules] 使用 [!UICONTROL Current Authenticated Profiles] 和 [!UICONTROL No Device Profile] 選項僅支援即時對象分類。 如需詳細資訊，請參閱 [定義的設定檔合併規則選項](../profile-merge-rules/merge-rule-definitions.md).
+* 它定义在模型分析具有影响力的[!UICONTROL traits]时，将用户分类为预测性[!UICONTROL segment]时，应考虑哪些设备和/或验证的配置文件。
+* 它控制在模型训练步骤中应该使用哪些[!UICONTROL trait]类型（设备级别或跨设备级别）并显示为具有影响力的[!UICONTROL traits]。 预测[!UICONTROL segments]是目标受众的子集。
+   * 如果目标受众是区段，我们建议您为模型选择与分配给目标受众的相同的[!UICONTROL Profile Merge Rule]，或者选择包含目标受众的配置文件类型的[!UICONTROL Profile Merge Rule]。
+   * 如果目标受众是[!UICONTROL trait]，我们建议您选择一个[!UICONTROL Profile Merge Rule]，以访问与目标受众特征相同的数据类型（设备配置文件数据或跨设备配置文件数据）。
+* 实时受众分类仅支持使用[!UICONTROL Current Authenticated Profiles]和[!UICONTROL No Device Profile]选项的[!UICONTROL Profile Merge Rules]。 有关详细信息，请参阅[定义的配置文件合并规则选项](../profile-merge-rules/merge-rule-definitions.md)。
 
-選取 [!UICONTROL Profile Merge Rule] 同時使用裝置資料和跨裝置資料的 [!UICONTROL traits] 可用於模型訓練和使用者分類來預測性 [!UICONTROL segments].
+选择同时使用设备数据和跨设备数据的[!UICONTROL Profile Merge Rule]，可将可用于模型训练和用户分类的[!UICONTROL traits]数量最大化到预测的[!UICONTROL segments]中。
 
 ## [!UICONTROL Role-Based Access Controls] {#rbac}
 
-您為角色和受眾分類選擇的特徵和區段會受到Audience Manager限制 [角色型存取控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html).
+您为角色和受众分类选择的特征和区段受基于Audience Manager[角色的访问控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html)的约束。
 
-Audience Manager使用者只能選取其擁有之角色和目標對象的特徵或區段 [檢視許可權](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions).
+Audience Manager用户只能为角色和Target受众选择他们具有[查看权限](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions)的特征或区段。

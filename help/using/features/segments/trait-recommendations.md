@@ -1,75 +1,75 @@
 ---
-description: 使用“特征推荐”，在区段生成器中构建或编辑区段时，您能够获得可包含的其他推荐特征（与区段规则中的特征类似）。将推荐的特征添加到区段中，可增加目标受众。
+description: 使用“特征Recommendations”，在区段生成器中构建或编辑区段时，您能够获得可包含的其他推荐特征（与区段规则中的特征类似）。 将推荐的特征添加到区段中，可增加目标受众。
 seo-description: Get live trait recommendations as you build your segments.
 seo-title: Trait Recommendations
 solution: Audience Manager
-title: 特征推荐
+title: 特征Recommendations
 feature: Segments
 exl-id: 7ef862a9-7354-49fb-9af0-925d827a5165
 source-git-commit: 432b12c4d4fb567d1a0bcaa9d12baaac5e3ae0f7
 workflow-type: tm+mt
-source-wordcount: '1562'
-ht-degree: 8%
+source-wordcount: '1584'
+ht-degree: 5%
 
 ---
 
-# 特征推荐
+# 特征Recommendations
 
-在建立區段時，從您自己的第一方特徵取得即時特徵建議，並且 [!UICONTROL Audience Marketplace] 資料摘要。
+在构建区段时，从您自己的第一方特征和[!UICONTROL Audience Marketplace]数据馈送获得实时特征推荐。
 
-## 影片示範
+## 视频演示
 
-從觀看 [!UICONTROL Trait Recommendations] 下列影片，然後閱讀以瞭解詳細資訊。 影片示範會示範如何使用來自您第一方特徵的建議，以及來自的特徵建議 [!UICONTROL Audience Marketplace] 資料摘要， *您已訂閱*.
+首先观看下面的[!UICONTROL Trait Recommendations]视频，然后阅读以了解更多信息。 此视频演示向您展示了如何使用来自您自己的第一方特征的推荐，以及来自[!UICONTROL Audience Marketplace]数据馈送（您&#x200B;*已订阅*）的特征推荐。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26228/)
 
-下一段影片會概述的工作流程 [!UICONTROL Marketplace Recommendations]，說明如何根據中的資料摘要建議，將特徵新增至區段 [!UICONTROL Audience Marketplace]. 這些建議所根據的資料摘要具有 *您尚未訂閱*.
+下一个视频概述了[!UICONTROL Marketplace Recommendations]的工作流，向您展示了如何根据[!UICONTROL Audience Marketplace]中的数据馈送中的推荐向区段添加特征。 这些建议基于&#x200B;*您未订阅*&#x200B;的数据馈送。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29363/)
 
 ## 概述
 
-[!UICONTROL Trait Recommendations]，提供者 [!DNL Adobe Sensei]，可將資料科學帶入您的Audience Manager日常工作流程。
-替換為 [!UICONTROL Trait Recommendations]，當您在中建立或編輯區段時 [區段產生器](segment-builder.md)，您會得到可包含的其他特徵建議，這些特徵與區段規則中的特徵類似。
+由[!DNL Adobe Sensei]提供支持的[!UICONTROL Trait Recommendations]将数据科学融入到您的Audience Manager日常工作流程中。
+使用[!UICONTROL Trait Recommendations]，在[区段生成器](segment-builder.md)中生成或编辑区段时，您能够获得可包含的其他推荐特征（与区段规则中的特征类似）。
 
-Audience Manager會向您顯示來自第一方特徵的特徵建議，位於 **[!UICONTROL Recommendations]** 區域，以及從 **[!UICONTROL Audience Marketplace]**，在 **[!UICONTROL Recommendations from Marketplace]** 區段。
+Audience Manager会在&#x200B;**[!UICONTROL Recommendations]**&#x200B;部分和&#x200B;**[!UICONTROL Recommendations from Marketplace]**&#x200B;部分分别显示来自第一方特征和&#x200B;**[!UICONTROL Audience Marketplace]**&#x200B;的特征推荐。
 
 将推荐的特征添加到区段中，可增加目标受众。
 
-![特徵Recommendations概觀](assets/trait-recommendations-overview-full.png)
+![特征Recommendations概述](assets/trait-recommendations-overview-full.png)
 
-**簡而言之：**
+**简而言之：**
 
-* Audience Manager會在「 」中顯示第一方特徵 [!UICONTROL Recommendations] 區段。 您未訂閱的公開和私人摘要中的Marketplace建議會顯示在 [!UICONTROL Recommendations from Marketplace] 區段。 按一下摘要名稱以前往 [!UICONTROL Audience Marketplace] 並訂閱。
-* Audience Manager最多可顯示50個與區段規則中的特徵類似的特徵。
-* 您可以篩選掉不想看到任何建議的資料來源。
-* 計算相似性時，Audience Manager會考慮 [UUID](../../reference/ids-in-aam.md) 過去30天內符合特徵的。
-* 如果您看到錯誤訊息「找不到類似的特徵。 特徵可能太新。」，這表示在過去30天內沒有該特徵的活動，或Audience Manager尚未更新該特徵的建議。 請24小時後再試一次。
+* Audience Manager显示[!UICONTROL Recommendations]部分中的第一方特征。 来自您未订阅的公开和私有信息源的Marketplace建议将显示在[!UICONTROL Recommendations from Marketplace]部分中。 单击馈送名称以转到[!UICONTROL Audience Marketplace]并订阅。
+* Audience Manager最多可显示50个与区段规则中特征相似的特征。
+* 您可以过滤掉不想查看任何推荐的数据源。
+* 计算相似性时，Audience Manager会考虑过去30天内符合特征条件的[个UUID](../../reference/ids-in-aam.md)。
+* 如果您看到错误消息“未找到类似的特征。 特征可能太新。”，这表示该特征在过去30天内没有活动，或者Audience Manager尚未更新该特征的推荐。 请在24小时后重试。
 
 ## 用例
 
-替換為 [!UICONTROL Trait Recommendations]，您可以根據您使用Audience Manager的方式，改善工作流程：
+使用[!UICONTROL Trait Recommendations]，您可以根据使用Audience Manager的方式改进工作流：
 
-* 行銷人員可透過類似特徵快速找到對互補產品感興趣的對象，進而擴大您的觸角。
-* 如果您使用Audience Manager作為發行者，請 [!UICONTROL Trait Recommendations]，您可以瞭解對象行為，並建立更佳的區段以用於廣告銷售或使用者贏取。
-* 作為 [!UICONTROL Audience Marketplace] 資料購買者，我想要探索相關的第三方資料，而不需瀏覽大量摘要。
-* 作為 [!UICONTROL Audience Marketplace] 資料提供者，我想要向買家建議相關資料，以便我從最佳和相關訂閱中受益。
+* 作为营销人员，您可以借助相似的特征，快速找到对互补产品感兴趣的受众，以便扩大您的影响力。
+* 如果您使用Audience Manager作为具有[!UICONTROL Trait Recommendations]的发布者，则可以了解受众行为并为广告销售或用户获取构建更好的区段。
+* 作为[!UICONTROL Audience Marketplace]数据购买者，我希望在不浏览大量馈送的情况下发现相关的第三方数据。
+* 作为[!UICONTROL Audience Marketplace]数据提供商，我想向购买者推荐相关数据，以便我从最佳和相关订阅中受益。
 
-## 特徵Recommendations和演演算法模型之間的差異
+## 特征Recommendations和算法模型之间的差异
 
 ### 算法模型
 
-[!UICONTROL Algorithmic Models] 不僅可找出最具影響力的特徵，還會根據這些特徵對使用者進行評分，並為每位使用者指派個別的分數。 然后，便可以通过创建算法特征来定位用户。精準度與觸及率控制於 [!UICONTROL Trait Builder]，您可以指定想要鎖定具有影響力之特徵的所有使用者中的哪些使用者。
+[!UICONTROL Algorithmic Models]不仅会找到最具影响力的特征，还会根据这些特征对用户进行评分，并为每个用户分配一个得分。 然后，便可以通过创建算法特征来定位用户。利用[!UICONTROL Trait Builder]中的精度和范围控件，您可以指定哪些用户具有要定位的有影响力特征。
 
-[!UICONTROL Algorithmic Models] 可讓您選取不同精確度等級的使用者，並在下列位置進行測試： [!UICONTROL Audience Lab] 哪一組使用者轉換率較高。 有关详细用例，请参阅[在 Audience Lab 中比较模型](../../features/audience-lab/audience-lab-use-cases.md#compare-models)。
+[!UICONTROL Algorithmic Models]允许您选择不同精度级别的用户，并在[!UICONTROL Audience Lab]中测试哪组用户的转化率更高。 有关详细用例，请参阅[在 Audience Lab 中比较模型](../../features/audience-lab/audience-lab-use-cases.md#compare-models)。
 
-在 [!UICONTROL Algorithmic Models]，模型每8天執行一次，並會重新整理符合演演算法特徵的使用者。
+在[!UICONTROL Algorithmic Models]中，模型每8天运行一次，并刷新符合算法特征的用户。
 
-### 特征推荐
+### 特征Recommendations
 
-[!UICONTROL Trait Recommendations] 是快速深入分析其他與您在區段中所使用特徵相似的特徵的方法。
+[!UICONTROL Trait Recommendations]是一种快速了解与您在区段中使用的特征相似的其他特征的方法。
 
-您應使用 [!UICONTROL Trait Recommendations] 時間：
+您应在以下情况下使用[!UICONTROL Trait Recommendations]：
 
 * 构建区段时需要快速获取信息；
 * 要将区段用于短期促销活动，或者希望快速抑制转化的受众；
@@ -77,115 +77,116 @@ Audience Manager會向您顯示來自第一方特徵的特徵建議，位於 **[
 
 ## 工作流
 
-在中建立或編輯區段時 [區段產生器](segment-builder.md)中，您可以探索與區段規則中的特徵相似的特徵。 此 [區段產生器](segment-builder.md) 新區段和現有區段的工作流程非常類似：
+在[区段生成器](segment-builder.md)中生成或编辑区段时，您可以浏览与区段规则中的特征相似的特征。 [区段生成器](segment-builder.md)工作流与新区段和现有区段非常相似：
 
-### 新區段
+### 新区段
 
-1. 前往 **受眾資料>區段**，然後按一下 **新增**.
-1. 在 **特徵** 下拉式方塊中，至少新增一個特徵至區段規則。
-1. 您可以看到第一方建議特徵和 [!UICONTROL Audience Marketplace] 特徵建議來自您所訂閱的摘要，位於 **[!UICONTROL Recommendations]** 區段。 此 **[!UICONTROL Recommendations from Marketplace]** 區段會顯示您未訂閱之摘要的特徵建議。 所有這些建議都與新增至區段規則的特徵類似。 向下捲動以檢視所有建議的特徵。
-1. （選用）若要從特定資料來源排除建議的第一方特徵，請按一下 **X** 要排除的資料來源符號。
+1. 转到&#x200B;**受众数据>区段**，然后单击&#x200B;**新增**。
+1. 在&#x200B;**特征**&#x200B;下拉框中，向区段规则至少添加一个特征。
+1. 您可以在&#x200B;**[!UICONTROL Recommendations]**&#x200B;部分中查看来自您订阅的馈送的第一方推荐特征和[!UICONTROL Audience Marketplace]特征推荐。 **[!UICONTROL Recommendations from Marketplace]**&#x200B;部分显示来自您未订阅的源的特征推荐。 所有这些推荐都与您添加到区段规则的特征类似。 向下滚动查看所有推荐的特征。
+1. （可选）要从特定数据源中排除推荐的第一方特征，请为要排除的数据源单击&#x200B;**X**&#x200B;符号。
 
    >[!NOTE]
    >
-   >排除的資料來源會顯示在建議特徵清單的正上方。 按一下 **X** 以移除排除專案，並再次檢視個別資料來源的結果。
-1. 若要將建議特徵新增至區段規則，請按一下 **+** 符號。
+   >排除的数据源会显示在推荐特征列表的正上方。 单击灰色框中的&#x200B;**X**&#x200B;可删除排除项并再次查看相应数据源的结果。
+1. 要将推荐的特征添加到区段规则，请单击&#x200B;**+**&#x200B;符号。
 
 >[!IMPORTANT]
 >
->新增時 [!UICONTROL Marketplace] 特徵對應至區段，特徵僅用於區段估計，直到您訂閱相對應的資料摘要為止。 來自您未訂閱之資料摘要的特徵，會在特徵清單中標示購物車圖示。 按一下特徵名稱，即可前往資料摘要頁面並訂閱。
+>将[!UICONTROL Marketplace]特征添加到区段时，这些特征仅用于区段估计，直到您订阅相应的数据馈送为止。 来自您未订阅的数据馈送的特征会在特征列表中标记为购物车图标。 单击特征名称以转到数据馈送页面并订阅它。
 >
->![marketplace-not-subscribed](assets/trait-recommendations-marketplace.png)
+>![市场未订阅](assets/trait-recommendations-marketplace.png)
 >
->您必須先訂閱對應的資料摘要，才能儲存具有第三方特徵的區段。
+>只有在订阅了相应的数据馈送后，才能保存具有第三方特征的区段。
 
-### 現有區段
+### 现有区段
 
-1. 前往 **[!UICONTROL Audience Data]>[!UICONTROL Segments]**，選取您要編輯的區段並按一下 ![編輯](assets/edit-button.png).
-1. 向下捲動至 [!UICONTROL Traits] 下拉式方塊。
-1. 您可以看到建議的特徵，這些特徵與區段規則中已存在的特徵類似。 向下捲動以檢視所有建議的特徵。
-1. （選用）若要從特定資料來源排除建議的特徵，請按一下 **X** 要排除的資料來源符號。
+1. 转到&#x200B;**[!UICONTROL Audience Data]>[!UICONTROL Segments]**，选择要编辑的区段并单击![编辑](assets/edit-button.png)。
+1. 向下滚动到[!UICONTROL Traits]下拉框。
+1. 您可以看到推荐的特征，这些特征与区段规则中已存在的特征类似。 向下滚动查看所有推荐的特征。
+1. （可选）要从特定数据源中排除推荐的特征，请为要排除的数据源单击&#x200B;**X**&#x200B;符号。
 
    >[!NOTE]
    >
-   >排除的資料來源會顯示在建議特徵清單的正上方。 按一下 **X** 以移除排除專案，並再次檢視個別資料來源的結果。
-1. 若要將建議特徵新增至區段規則，請按一下 **+** 符號。
+   >排除的数据源会显示在推荐特征列表的正上方。 单击灰色框中的&#x200B;**X**&#x200B;可删除排除项并再次查看相应数据源的结果。
+1. 要将推荐的特征添加到区段规则，请单击&#x200B;**+**&#x200B;符号。
 
-當您建立或編輯區段並將特徵新增至區段規則時，最多會看到50個建議特徵，與您新增的特徵類似。 如果區段規則包含多個特徵，Audience Manager會使用循環配置圖方法來顯示每個特徵的最佳相符專案，然後是每個特徵的第二個最佳相符專案，依此類推，以便區段規則中依母體區分的最大50個特徵。
+创建或编辑区段并将某个特征添加到区段规则时，您最多会看到50个推荐特征，与添加的特征类似。 如果区段规则包含多个特征，Audience Manager会使用循环方法为每个特征显示最佳匹配，然后为每个特征显示次最佳匹配，依此类推，对于区段规则中按人口统计的最大50个特征。
 
-![三個基本特徵](assets/three-base-traits.png)
+![三个基本特征](assets/three-base-traits.png)
 
-例如，區段規則中有三個特徵時（如下所示），建議使用的特徵為：
+例如，区段规则中有三个特征时（如下所示），建议的特征包括：
 
-1. 特徵3 （人口最多的特徵）的最佳配對；
-1. 特徵1的最佳相符專案；
-1. 特徵2的最佳相符專案；
-1. 特徵3的次佳匹配；
-1. 第二個最符合特徵1，以此類推，直到您得到50個特徵。
+1. 特征3（人口最多的特征）的最佳匹配；
+1. 特征1的最佳匹配；
+1. 特征2的最佳匹配；
+1. 特征3次优匹配；
+1. 在获得50个特征之前，该特征会一直排在第二位，与特征1匹配，以此类推。
 
-若要取得特定特徵的建議，您可以在區段規則(1)或建議的特徵檢視(2)中按一下特徵。
+要获取特定特征的推荐，您可以在区段规则(1)或推荐的特征视图(2)中单击特征。
 
 ![base-traits-example](assets/three-base-traits-numbered.png)
 
-按一下第一方特徵會開啟快顯視窗，如下圖所示。 如果推薦的特徵不是區段的一部分，您可以按一下「 」，將其新增至區段 **+**.
+单击第一方特征会打开一个弹出窗口，如下图所示。 如果推荐的特征不是区段的一部分，则可以按&#x200B;**+**&#x200B;将其添加到区段。
 
-![附加至區段](assets/add_to_segments.png)
+![添加到区段](assets/add_to_segments.png)
 
 >[!TIP]
 >
->在特徵資訊彈出式視窗中產生建議時，會考慮從首頁面排除的資料來源。 此外，如果您在此檢視中排除資料來源，排除專案會套用至首頁面。
+>在特征信息弹出窗口中生成推荐时，会考虑从主页排除的数据源。 此外，如果在此视图中排除数据源，则排除项将应用于主页。
 
 >[!NOTE]
 >
->推薦的特徵可以是您訂閱之資料摘要中的第一方特徵或第三方特徵 [!UICONTROL Audience Marketplace].
+>推荐的特征可以是您在[!UICONTROL Audience Marketplace]中订阅的数据馈送中的第一方特征或第三方特征。
 
 ## 工作原理
 
-若要產生特徵建議，Audience Manager會計算 [Jaccard相似度](https://en.wikipedia.org/wiki/Jaccard_index) 介於目標特徵與您的帳戶可存取的所有其他特徵之間，包括協力廠商資料。 Audience Manager接著會顯示最多50個具有最高相似度的特徵。
+为了生成特征推荐，Audience Manager将计算Target特征与您帐户有权访问的所有其他特征（包括第三方数据）之间的[Jaccard相似度](https://en.wikipedia.org/wiki/Jaccard_index)。 然后，Audience Manager会显示最多五十个具有最高相似度的特征。
 
-## 特徵相似度分數 {#trait-similarity-score}
+## 特征相似度分数 {#trait-similarity-score}
 
-Audience Manager計算 [!UICONTROL Trait Similarity Score] 計算兩個特徵之間的交集和並集，計算兩個特徵的 [!UICONTROL UUID]s然後除以這兩者。 針對兩個特徵A和B，計算方式如下：
+Audience Manager通过计算[!UICONTROL UUID]个数的交集和并集来计算两个特征之间的[!UICONTROL Trait Similarity Score]，然后将两个特征相除。 对于两个特征A和B，计算方式如下所示：
 
 ![jaccard-similarity](assets/jaccard_similarity.png)
 
-另請參閱下列兩個範例。
+另请参阅下面的两个示例。
 
-### 範例1 — 低特徵相似度分數
+### 示例1 — 低特征相似度分数
 
-假設兩個特徵A和B各有1,000,000個母體 [!UICONTROL UUID]s， 25,000 [!UICONTROL UUID]符合兩個特徵的。
-使用上述公式，這會產生：25,000 / 1,975,000 = 0.012。這是低品質 [!UICONTROL Trait Similarity Score]，這兩個特徵非常相異。
+给定两个特征A和B，假设每个特征都有一个人口1,000,000个[!UICONTROL UUID]，其中25,000个[!UICONTROL UUID]同时符合这两个特征。
+使用上面的公式，其结果为：25,000 / 1,975,000 = 0.012。[!UICONTROL Trait Similarity Score]较低，两个特征非常不同。
 
-![特徵 — 建議 — 低重疊](assets/Trait-Recommendations-Low-overlap.png)
+![特征推荐低重叠](assets/Trait-Recommendations-Low-overlap.png)
 
-### 範例2 — 特徵相似度分數
+### 示例2 — 特征相似度分数
 
-如果相同特徵A和B有400,000個 [!UICONTROL UUID]同時符合兩個特徵的 [!UICONTROL Trait Similarity Score] 高得多：400,000 / 1,600,000 = 0.25
+如果相同的特征A和B具有400,000个同时符合两个特征的[!UICONTROL UUID]，则[!UICONTROL Trait Similarity Score]要高得多：
+400,000 / 1,600,000 = 0.25
 
-![特徵 — 建議 — 高重疊](assets/Trait-Recommendations-High-overlap.png)
+![特征 — 推荐 — 高重叠](assets/Trait-Recommendations-High-overlap.png)
 
-### 如何解讀特徵相似度分數
+### 如何解释特征相似度得分
 
-使用下表作為特徵相似度的粗略指南。 本指南是根據大多數特徵中觀察到的相似性分數。
+使用下表作为特征相似度的粗略指南。 此指南基于在大多数特征中观察到的相似性得分。
 
 | [!UICONTROL Trait Similarity Score] | 重要性 |
 |---------|----------|
-| 0.1及更高版本 | 特徵之間的高相似性 |
-| 0.03 - 0.1 | 特徵之間的中等相似度 |
-| 0.01 - 0.03 | 特徵之間的低相似性 |
-| 0 - 0.01 | 特徵之間的相似度很低 |
+| 0.1及更高版本 | 特征之间的高度相似性 |
+| 0.03 - 0.1 | 特征之间的Medium相似度 |
+| 0.01 - 0.03 | 特征之间的相似度较低 |
+| 0 - 0.01 | 特征之间的相似度很低 |
 
-## 角色型存取控制(RBAC)
+## 基于角色的访问控制(RBAC)
 
-針對使用 [!UICONTROL Role-Based Access Controls] ([!UICONTROL RBAC])，您需要有建立和編輯區段的許可權，才能檢視建議的特徵。 您看到的特徵建議只有您透過存取之資料來源的特徵建議 [!UICONTROL RBAC].
+对于使用[!UICONTROL Role-Based Access Controls] ([!UICONTROL RBAC])的公司，您需要具有创建和编辑区段的权限才能查看推荐的特征。 您看到的特征推荐只是您通过[!UICONTROL RBAC]有权访问的数据源中的特征推荐。
 
 >[!IMPORTANT]
 >
->若要新增 [!UICONTROL Marketplace Recommendations] 對於區段，使用者必須先訂閱對應的資料摘要。 只有具有管理員許可權的使用者才能訂閱 [!UICONTROL Audience Marketplace] 資料摘要。
+>要将[!UICONTROL Marketplace Recommendations]添加到区段，用户必须首先订阅相应的数据馈送。 只有具有管理员权限的用户才能订阅[!UICONTROL Audience Marketplace]数据馈送。
 
-深入瞭解 [!UICONTROL RBAC] 控制項 [此處](../administration/administration-overview.md).
+在[此处](../administration/administration-overview.md)阅读有关[!UICONTROL RBAC]控件的更多信息。
 
 ## 限制
 
-* 目前，Audience Manager不會將資料夾特徵顯示為建議的特徵。 深入瞭解資料夾特徵 [此處](../traits/manage-folder-traits.md).
-* 顯示特徵Recommendations時，Audience Manager未考慮 [!DNL Boolean] 運運算元([!DNL AND]， [!DNL OR]， [!DNL NOT])區段規則中的。
+* 目前，Audience Manager不会将文件夹特征显示为推荐的特征。 在[此处](../traits/manage-folder-traits.md)阅读有关文件夹特征的更多信息。
+* 显示特征Recommendations时，Audience Manager在区段规则中未考虑[!DNL Boolean]运算符([!DNL AND]、[!DNL OR]、[!DNL NOT])。

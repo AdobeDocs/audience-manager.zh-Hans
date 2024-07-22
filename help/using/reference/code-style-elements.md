@@ -1,5 +1,5 @@
 ---
-description: 這些元素會識別說明檔案中使用的程式碼選項和變數。 通常，您不會在程式碼或資料檔案中包含這些符號或樣式元素。 它們只是視覺指標。
+description: 这些元素标识整个帮助文档中使用的代码选项和变量。 通常，在代码或数据文件中不会包含这些符号或样式元素。 它们只是视觉指示器。
 seo-description: These elements identify code options and variables used throughout the help documentation. Generally, you would not include these symbols or style elements in your code or data files. They're visual indicators only.
 seo-title: Style Conventions for Code and Text Elements
 solution: Audience Manager
@@ -10,13 +10,13 @@ exl-id: 12f9b802-b645-4fc3-96ea-3d16b1f4890a
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 9%
+ht-degree: 1%
 
 ---
 
 # 代码和文本元素的样式约定{#style-conventions-for-code-and-text-elements}
 
-這些元素會識別說明檔案中使用的程式碼選項和變數。 通常，您不會在程式碼或資料檔案中包含這些符號或樣式元素。 它們只是視覺指標。
+这些元素标识整个帮助文档中使用的代码选项和变量。 通常，在代码或数据文件中不会包含这些符号或样式元素。 它们只是视觉指示器。
 
 <table id="table_EBEF9490D90041BD8B7ABE3AF1AF35B6"> 
  <thead> 
@@ -28,23 +28,23 @@ ht-degree: 9%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> <i>variable</i> </code> </p> </td> 
-   <td colname="col2"> <p>變數出現於 <i>斜體</i>. 將適當的值取代變數名稱。 </p> <p>為清楚明瞭，有時變數和其他程式碼元素會出現在&lt; &gt;括弧之間。 您不需要在程式碼中使用這些符號。 </p> </td> 
+   <td colname="col2"> <p>变量以<i>斜体</i>显示。 将相应的值替换为变量名称。 </p> <p>为了清晰明了，有时变量和其他代码元素会显示在&lt; &gt;括号之间。 您不需要在代码中使用这些符号。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [optional]</code> </p> </td> 
-   <td colname="col2"> <p>方括弧內的專案為選用。 </p> </td> 
+   <td colname="col2"> <p>方括号中的项目是可选的。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> (this|that) </code> </p> </td> 
-   <td colname="col2"> <p>括弧內的專案表示布林值 <span class="wintitle"> 或</span> 選擇。 </p> </td> 
+   <td colname="col2"> <p>括号中的项表示布尔值<span class="wintitle">或</span>选择。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> literal</code> </p> </td> 
-   <td colname="col2"> <p>請完全依照所示包含文字或程式碼。 </p> </td> 
+   <td colname="col2"> <p>完全包括显示的文本或代码。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> &lt; &gt;</code> </p> </td> 
-   <td colname="col2"> <p>有時變數和其他程式碼元素會出現在&lt; &gt;括弧之間。 這些可用來改善長程式碼區塊的清晰度。 除非另有指定，否則請勿在資料檔名或其內容中包含這些符號。 </p> </td> 
+   <td colname="col2"> <p>有时，变量和其他代码元素会显示在&lt; &gt;括号之间。 它们用于提高长代码块中的清晰度。 除非另外指定，否则不要在数据文件名或其内容中包含这些符号。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

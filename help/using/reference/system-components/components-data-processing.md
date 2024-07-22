@@ -1,5 +1,5 @@
 ---
-description: 資料處理元件包括Hadoop、Snowflake、SOLR和Tableau。
+description: 数据处理组件包括Hadoop、Snowflake、SOLR和Tableau。
 seo-description: Data processing components include Hadoop, Snowflake, SOLR, and Tableau.
 seo-title: Data Processing Components
 solution: Audience Manager
@@ -9,14 +9,14 @@ feature: System Components
 exl-id: 9ff2b82b-aad0-4d24-96e6-230763019311
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '395'
+ht-degree: 1%
 
 ---
 
 # 数据处理组件{#data-processing-components}
 
-資料處理元件包括Hadoop、Snowflake、SOLR和Tableau。
+数据处理组件包括Hadoop、Snowflake、SOLR和Tableau。
 
 <!-- 
 
@@ -24,43 +24,43 @@ c_comproc.xml
 
  -->
 
-Audience Manager會使用下列元件來處理資料：
+Audience Manager使用以下组件来处理数据：
 
 ## hadoop {#hadoop}
 
-在 [!DNL Audience Manager]，Hadoop是包含所有內容的主要資料庫 [!DNL Audience Manager] 瞭解使用者。 例如，當 [設定檔快取伺服器](../../reference/system-components/components-data-collection.md) 建立包含使用者相關資料的記錄檔，然後傳送該資料給Hadoop以供儲存。 其他重要的Hadoop元素包括：
+在[!DNL Audience Manager]中，Hadoop是包含[!DNL Audience Manager]所知道的关于用户的所有内容的主数据库。 例如，当[配置文件缓存服务器](../../reference/system-components/components-data-collection.md)创建包含用户数据的日志文件时，它会将该数据发送到Hadoop进行存储。 其他重要的Hadoop元素包括：
 
-* **配置單元：** hadoop的資料倉儲。 Hive會管理對儲存在Hadoop中之資料的隨選查詢。
+* **配置单元：** Hadoop的数据仓库。 Hive管理对存储在Hadoop中的数据进行的特别查询。
 
-* **HBase：** 非常大的Hadoop資料庫。 它會處理和管理傳入和傳出的資料、特徵規則、演演算法模型資訊，並執行許多與儲存資料以及將資料移動到不同系統相關的其他功能。
+* **HBase：**&#x200B;非常大的Hadoop数据库。 它处理和管理入站和出站数据、特征规则、算法建模信息，并执行许多与将数据存储和移动到不同系统相关的其他功能。
 
-客戶無法直接存取這些系統。 不過，客戶確實會間接與他們合作，因為這些元件會儲存有關其網站訪客的重要資料。
+客户无法直接访问这些系统。 但是，客户确实会间接使用这些组件，因为这些组件存储有关其网站访客的重要数据。
 
 ## Snowflake {#snowflake}
 
-[Snowflake](https://www.snowflake.net/) 是一個龐大的雲端資料庫。 它提供許多面板圖形及其相關文字方塊的資料，顯示圖形中每個專案的%變更。 如果您使用 [!DNL Audience Manager] 並檢視儀表板報表，您正在與提供的資料互動 [!UICONTROL Snowflake].
+[Snowflake](https://www.snowflake.net/)是一个大型云数据库。 它向许多面板图形及其相关文本框提供数据，这些文本框显示图形中每个项目的%变化。 如果您使用[!DNL Audience Manager]并查看仪表板报告，则表示您正在与[!UICONTROL Snowflake]提供的数据进行交互。
 
 
 
 ![](assets/dashboardreport.png)
 
-這絕不是完整的清單，而是一些常見的控制面板報告 [!UICONTROL Snowflake] 負責包括：
+这绝不是全面的列表，但[!UICONTROL Snowflake]负责的一些常见信息板报告包括：
 
 * [每日特征变化报表](/help/using/reporting/audience-optimization-reports/daily-trait-variation-report.md)
-* 所有重疊報表(請參閱 [互動式報表](/help/using/reporting/dynamic-reports/dynamic-reports.md) 區段（以取得每個重疊報表的相關資訊）。
+* 所有重叠报表（有关每个重叠报表的信息，请参阅[交互式报表](/help/using/reporting/dynamic-reports/dynamic-reports.md)部分）。
 * [未使用的信号报表](/help/using/reporting/dynamic-reports/unused-signals.md)
 
 ## SOLR {#solr}
 
-SOLR是來自Apache的開放原始碼資料庫和伺服器系統。 它提供強大且快速的搜尋功能，超越我們的大型資料集。 作為 [!DNL Audience Manager] 客戶，您可在建立區段時看到SOLR的實際運作情況。 它會提供資料給 [!UICONTROL Estimated Historic Segment Size] 報告。 SOLR由於其速度非常適合這個角色。 例如，SOLR可在您建立規則並將新特徵新增至區段時更新歷史大小資料。
+SOLR是来自Apache的开源数据库和服务器系统。 它提供了针对我们大型数据集的强大而快速的搜索功能。 作为[!DNL Audience Manager]客户，您可以在生成区段时看到SOLR正在起作用。 它向[!UICONTROL Estimated Historic Segment Size]报表提供数据。 由于其速度，SOLR非常适合于此角色。 例如，在您构建规则并向区段添加新特征时，SOLR能够更新历史大小数据。
 
 
 
 ![](assets/audsize.png)
 
-## Tableau {#tableau}
+## 表格 {#tableau}
 
-[!DNL Audience Manager] 使用 [Tableau](https://www.tableausoftware.com/) 若要在中顯示資料 [互動式報表](../../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) 和 [Audience Optimization報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md). 互動式報表會顯示特徵和區段的效能和重疊資料。 它們不會使用以欄和列排列的數字，而是會使用不同的形狀、顏色和大小傳回資料。 此外，您可以選擇個別或資料點群組，並深入研究報告結果以取得更多詳細資訊。 這些視覺化技巧和報表互動有助於更容易瞭解大量數值資料。
+[!DNL Audience Manager]使用[Tableau](https://www.tableausoftware.com/)显示[交互式报表](../../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports)和[Audience Optimization报表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)中的数据。 交互式报表显示特征和区段的性能和重叠数据。 它们不使用按列和行排列的数字，而是使用不同的形状、颜色和大小返回数据。 此外，您可以选择单个数据点或数据点组，并深入查看报告结果以了解更多详细信息。 这些可视化技术和报表交互性有助于使大量数字数据更易于理解。
 
 
 

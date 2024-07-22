@@ -1,5 +1,5 @@
 ---
-description: 訊號是Audience Manager內最小的資訊單位。 它們代表使用者線上上屬性上的互動或使用者活動，並會傳遞給Audience Manager以用於特徵規則。
+description: 信号是Audience Manager内信息的最小单位。 它们表示在线资产上的用户交互或用户活动，并被传递到要在特征规则中使用的Audience Manager。
 seo-description: Signals are the smallest unit of information within Audience Manager. They represent user interactions or user activity on your online properties, and get passed on to Audience Manager to be used in trait rules.
 seo-title: Understanding Signals
 title: 了解信号
@@ -8,40 +8,40 @@ feature: Data Explorer
 exl-id: 12ab53e5-302b-4a82-9d8e-07b60139c65e
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 2%
+source-wordcount: '364'
+ht-degree: 1%
 
 ---
 
 # 了解信号
 
-訊號是Audience Manager內最小的資訊單位。 它们表示在线属性上用户交互或用户活动，并将其传递到要在特征规则中使用的 Audience Manager。
+信号是Audience Manager内信息的最小单位。 它们表示在线资产上的用户交互或用户活动，并被传递到要在特征规则中使用的Audience Manager。
 
-[!DNL Audience Manager] 使用機碼值組來表示訊號。 例如，下列訊號可能表示訪客已到達包含電子產品的網頁：
+[!DNL Audience Manager]使用键值对表示信号。 例如，以下信号可能表示访客访问了包含电子产品的网页：
 
 * `page = electronics`
 
-此 [訊號控制面板](../../features/data-explorer/data-explorer-signals-dashboard.md) 顯示可用來建立新特徵的多種訊號屬性。 以下是可用訊號屬性的詳細檢視：
+[信号仪表板](../../features/data-explorer/data-explorer-signals-dashboard.md)显示可用于创建新特征的多种信号属性。 以下是可用信号属性的详细视图：
 
-* *索引鍵/值組* 顯示所接收訊號的機碼值組 [!DNL Audience Manager].
-* *訊號型別* 說明每個訊號的類別。 訊號屬於下列類別之一：
-   * [可操作的記錄檔](/help/using/integration/media-data-integration/actionable-log-files.md)：從您的媒體效能記錄檔接收的即時訊號；
-   * [!DNL Adobe Analytics]：從您的系統接收的即時訊號 [!DNL Adobe Analytics] 帳戶；
-   * 一般線上資料：對象活動產生的即時資料，不會包含在可操作的記錄檔和中 [!DNL Adobe Analytics]；
-   * 已上線的記錄：透過批次資料傳輸接收的資料。
-* *信号来源* 取决于信号类型：
-   * 對於已上線的訊號，訊號來源是資料來源名稱。
-   * 針對來自的訊號 [!DNL Adobe Analytics]時，資料來源一律為報表套裝。
-   * 對於可操作的記錄檔和一般線上資料，不會顯示任何訊號來源資訊。
-* *總計數* 顯示接收即時訊號的總次數 [!DNL Audience Manager] 過去7天內。
-* *包含在特徵中* 顯示訊號是否屬於任何特徵的一部分。 按一下箭頭，可檢視包含對應訊號的特徵。 對於不屬於任何特徵一部分的訊號，欄值會變更為 [!UICONTROL Create Onboarded Trait] 或 [!UICONTROL Create Rule-Based Trait].
+* *键值对*&#x200B;显示[!DNL Audience Manager]所接收信号的键值对。
+* *信号类型*&#x200B;描述了每个信号的类别。 信号分为以下类别之一：
+   * [可操作的日志文件](/help/using/integration/media-data-integration/actionable-log-files.md)：从媒体性能日志文件接收的实时信号；
+   * [!DNL Adobe Analytics]：从您的[!DNL Adobe Analytics]帐户收到的实时信号；
+   * 常规在线数据：受众活动生成的实时数据，未包含在可操作的日志文件和[!DNL Adobe Analytics]中；
+   * 载入记录：通过批量数据传输接收的数据。
+* *信号Source*&#x200B;取决于信号类型：
+   * 对于已载入的信号，信号源是数据源名称。
+   * 对于源自[!DNL Adobe Analytics]的信号，数据源将始终是报表包。
+   * 对于可操作的日志文件和常规联机数据，不显示信号源信息。
+* *总计数*&#x200B;显示[!DNL Audience Manager]在过去7天内接收实时信号的总次数。
+* *包含在特征中*&#x200B;显示信号是否属于任何特征。 单击箭头可查看包含相应信号的特征。 对于不属于任何特征的信号，列值将更改为[!UICONTROL Create Onboarded Trait]或[!UICONTROL Create Rule-Based Trait]。
 
-## 訊號資料重新整理頻率
+## 信号数据刷新频率
 
-由於Audience Manager每天都會處理大量資料， [!UICONTROL Data Explorer] 會根據訊號型別，以固定的時間間隔重新整理顯示的訊號資料：
+由于Audience Manager每天处理的数据量很大，[!UICONTROL Data Explorer]会根据信号类型以固定时间间隔刷新显示的信号数据：
 
-* 即時訊號資料(可操作的記錄檔、 [!DNL Adobe Analytics] 資料，以及一般線上資料)會每4到6小時重新整理一次。
-* 已上線的訊號資料每24小時會重新整理一次。
+* 实时信号数据（可操作的日志文件、[!DNL Adobe Analytics]数据和常规在线数据）每4到6小时刷新一次。
+* 已载入的信号数据每24小时刷新一次。
 
 ## 相关概念
 

@@ -1,28 +1,28 @@
 ---
-description: 傳輸層安全性(TLS)是一種密碼編譯通訊協定，用來在兩個系統之間建立安全通訊通道。 它可用來驗證一個或兩個系統，並保護系統之間傳遞的資訊的機密性和完整性。 在2018年5月，有三種版本的TLS通訊協定正在使用TLS 1.0、1.1和1.2。
+description: 传输层安全性(Transport Layer Security， TLS)是一种加密协议，用于在两个系统之间建立安全通信信道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，有三种版本的TLS协议使用TLS 1.0、1.1和1.2。
 seo-description: Transport Layer Security (TLS) is a cryptographic protocol used to establish a secure communications channel between two systems. It is used to authenticate one or both systems, and protect the confidentiality and integrity of information that passes between systems. In May 2018, there were three versions of the TLS protocol in use  TLS 1.0, 1.1, and 1.2.
 seo-title: TLS 1.0 and 1.1 Deprecation
 solution: Audience Manager
-title: TLS 1.0 和 1.1 已弃用
+title: 弃用TLS 1.0和1.1
 uuid: 6a820e63-dd49-4689-9596-940aabba18ec
 feature: Reference
 exl-id: 857105c1-726a-4d79-bd1c-accb368aef29
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 2%
+source-wordcount: '227'
+ht-degree: 0%
 
 ---
 
-# TLS 1.0 和 1.1 已弃用{#tls-deprecation}
+# 弃用TLS 1.0和1.1{#tls-deprecation}
 
-傳輸層安全性(TLS)是一種密碼編譯通訊協定，用來在兩個系統之間建立安全通訊通道。 它可用來驗證一個或兩個系統，並保護系統之間傳遞的資訊的機密性和完整性。 在2018年5月，有三種版本的TLS通訊協定正在使用中：TLS 1.0、1.1和1.2。
+传输层安全性(Transport Layer Security， TLS)是一种加密协议，用于在两个系统之间建立安全通信信道。 它用于验证一个或两个系统，并保护在系统之间传递的信息的机密性和完整性。 2018年5月，有三种版本的TLS协议正在使用：TLS 1.0、1.1和1.2。
 
-2019年3月， [!DNL Adobe] 已終止支援 [!DNL TLS 1.0] 通訊協定。 如果您的一般使用者使用僅支援的瀏覽器，則Adobe Audience Manager功能無法運作 [!DNL TLS 1.0].
+在2019年3月，[!DNL Adobe]已结束对[!DNL TLS 1.0]协议的支持。 Adobe Audience Manager功能不适用于使用仅支持[!DNL TLS 1.0]的浏览器的最终用户。
 
-2020年3月， [!DNL Adobe] 將停止支援 [!DNL TLS 1.1] 通訊協定。 如果您的一般使用者使用僅支援的瀏覽器，Adobe Audience Manager功能將停止運作 [!DNL TLS 1.1].
+2020年3月，[!DNL Adobe]将停止支持[!DNL TLS 1.1]协议。 对于使用仅支持[!DNL TLS 1.1]的浏览器的最终用户，Adobe Audience Manager功能将停止工作。
 
-Adobe強烈建議使用 [!DNL TLS 1.2]，也就是編寫通訊協定時的最新版本。 所有新式瀏覽器都使用 [!DNL TLS 1.2]. 我們已為您收集瀏覽器、版本及其他 [!DNL TLS] 支援。 如需TLS瀏覽器支援的詳細資訊，請造訪 [傳輸層安全性Wikipedia連結](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers).
+Adobe强烈建议使用[!DNL TLS 1.2]，在编写时为协议的最新版本。 所有新式浏览器都使用[!DNL TLS 1.2]。 我们为您收集了浏览器、版本及其[!DNL TLS]支持的列表。 有关TLS浏览器支持的详细信息，请访问[传输层安全性Wikipedia链接](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers)。
 
 <!--
 

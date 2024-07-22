@@ -1,24 +1,24 @@
 ---
-description: 此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料如何流入、流出以及在Audience Manager元件之間流動。
+description: 此映射包含主要Audience Manager系统。 它直观地呈现数据如何流入、流出以及在Audience Manager组件之间流动。
 seo-description: This map contains the major Audience Manager systems. It visually represents how data flows into, out of, and among Audience Manager components.
 seo-title: Platform Architecture  Data Flow Map
 solution: Audience Manager
-title: 平台架構資料流程圖
+title: 平台架构数据流程图
 uuid: d845af1d-f448-4f4c-948e-b2c89f125086
 feature: System Components
 exl-id: 6543df7d-aac5-4181-87a8-bc47edd2e951
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
 # 平台架构：数据流程图{#platform-architecture-data-flow-map}
 
-此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料如何流入、流出以及在Audience Manager元件之間流動。
+此映射包含主要Audience Manager系统。 它直观地呈现数据如何流入、流出以及在Audience Manager组件之间流动。
 
-## 如何閱讀此地圖 {#compmap}
+## 如何阅读此地图 {#compmap}
 
 <!-- 
 
@@ -26,10 +26,10 @@ c_compmap.xml
 
  -->
 
-在地圖中，灰色方塊包含 [!DNL Audience Manager] 系統。 有些元件完全位於內部，有些則位於兩者之間的邊界 [!DNL Audience Manager] 以及外面的世界。 作為 [!DNL Audience Manager] 客戶、內部元件通常透明或無法存取。 不過，有時您可以透過使用者介面或資料整合與這些系統互動。 盒子邊緣的系統會在以下位置收集並傳送資料： [!DNL Audience Manager] 以及外面的世界。
+在地图中，灰色框包含[!DNL Audience Manager]个系统。 某些组件完全位于内部，而其他组件位于[!DNL Audience Manager]与外界之间的边界上。 作为[!DNL Audience Manager]客户，内部组件通常透明或不可访问。 但是，有时您可以通过用户界面或数据集成来与这些系统交互。 盒子边缘的系统在[!DNL Audience Manager]与外界之间收集和发送数据。
 
-顏色定義進出資料流的資料型別 [!DNL Audience Manager]. 綠色代表使用者端資料，藍色代表客戶資料（造訪您網站的人），橘色代表用於報告的資料。
+颜色定义流入和流出[!DNL Audience Manager]的数据类型。 绿色表示客户端数据，蓝色表示客户数据（访问您网站的人），橙色表示用于报表的数据。
 
-如需系統說明和摘要，請參閱資料 [動作](../../reference/system-components/components-data-action.md)， [集合](../../reference/system-components/components-data-collection.md)， [處理](../../reference/system-components/components-data-processing.md)、和 [標籤管理](../../reference/system-components/components-tag-management.md) 區段。
+有关系统说明和摘要，请参阅数据[action](../../reference/system-components/components-data-action.md)、[collection](../../reference/system-components/components-data-collection.md)、[processing](../../reference/system-components/components-data-processing.md)和[tag management](../../reference/system-components/components-tag-management.md)部分。
 
 ![](assets/flowmap.png)

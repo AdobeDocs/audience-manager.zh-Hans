@@ -10,8 +10,8 @@ feature: Onboarding Offline Data
 exl-id: 48eef5f1-0655-4dac-9ab4-74b11c705c13
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 89%
+source-wordcount: '1343'
+ht-degree: 86%
 
 ---
 
@@ -35,9 +35,9 @@ ht-degree: 89%
 我们建议执行以下操作：
 
 * 与您的数据提供商合作，根据 Adobe 规范对日常入站数据文件进行格式化。有关文件命名和语法要求，请参阅以下文档：
-   * [ID 同步文件的名称和内容要求](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
+   * [ID同步文件的名称和内容要求](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
    * [入站数据文件内容：语法、无效字符、变量和示例](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
-   * [入站数据文件的 Amazon S3 名称和文件大小要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+   * [入站数据文件的Amazon S3名称和文件大小要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 * 与您的 [!DNL Adobe] 顾问合作，将测试数据文件传输到 [!DNL Adobe] 以进行格式验证。
 * 与您的 [!DNL Adobe] 顾问合作，生成适用于解释数据文件内容的分类。
 * 在暂存/开发环境中，确认已将 ID 同步配置为正确选取数据提供商的访客 ID 并将其实时传输到 [!DNL Audience Manager] 服务器。
@@ -58,10 +58,10 @@ ht-degree: 89%
 
 **我能否先上传入站数据文件（[!DNL .sync] 或 [!DNL .overwrite] 文件），然后再将 [!DNL Audience Manager] 代码部署到生产环境中？**
 
-能。只要您使用 [!UICONTROL cross-device data source] 為了儲存您上傳的CRM資料，Audience Manager一律會儲存資料。 事實上，請遵循 [!UICONTROL Profile Merge Rules] 2019年10月推出的Audience Manager增強功能允許僅限離線使用的使用案例，您無需將Audience Manager程式碼部署至生產環境，即可上傳資料和執行動作。 请参阅：
+能。只要您使用[!UICONTROL cross-device data source]存储所上传的CRM数据，Audience Manager就会始终存储这些数据。 事实上，继Audience Manager在2019年10月发布[!UICONTROL Profile Merge Rules]增强功能（允许仅离线用例）后，您便可以上传数据并对其进行操作，而无需将Audience Manager代码部署到生产环境中。 请参阅：
 
 * [配置文件合并规则增强功能概述](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* [!UICONTROL People-based Destinations] - [以僅限離線資料為基礎的個人化](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
+* [!UICONTROL People-based Destinations] - [Personalization基于仅离线数据](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
 
 <br> 
 
@@ -154,9 +154,9 @@ FTP 文件在处理后即会被删除。[!DNL S3] 文件将在 30 天后被删�
 
 * **完整：**&#x200B;完整文件会覆盖所有现有访客配置文件，并使用文件中的数据替换它们。完整文件由附加到文件名的 `.overwrite` 标记来标识。您可以使用 `.overwrite` 文件重置访客特征或删除已过时的失效特征。
 
-   >[!NOTE]
-   >
-   >[!DNL .overwrite] 文件只会覆盖与此数据提供商关联的 [!DNL Audience Manager] 配置文件数据。换言之，在处理 [!DNL .overwrite] 文件之后，与访客关联的所有 [!DNL Audience Manager] 数据均将保持不变。
+  >[!NOTE]
+  >
+  >[!DNL .overwrite] 文件只会覆盖与此数据提供商关联的 [!DNL Audience Manager] 配置文件数据。换言之，在处理 [!DNL .overwrite] 文件之后，与访客关联的所有 [!DNL Audience Manager] 数据均将保持不变。
 
 * **增量：**&#x200B;增量文件会向现有访客配置文件中附加新数据。增量文件由附加到文件名的 `.sync` 标记来标识。发送增量文件不会擦除或覆盖现有配置文件。
 
@@ -169,7 +169,7 @@ FTP 文件在处理后即会被删除。[!DNL S3] 文件将在 30 天后被删�
 
 有关完整和增量文件类型的更多信息，请参阅：
 
-* [入站数据文件的 Amazon S3 名称和文件大小要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+* [入站数据的Amazon S3名称和文件大小要求……](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
  
 
@@ -183,11 +183,11 @@ FTP 文件在处理后即会被删除。[!DNL S3] 文件将在 30 天后被删�
 
 时间戳用于日志和记录保存。格式正确的入站文件名所用的语法要求使用时间戳。请参阅：
 
-* [入站数据文件的 Amazon S3 名称要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+* [入站数据文件的Amazon S3名称要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
  
 
-**什麼是 [!DNL Data Provider ID (DPID)] 我要如何取得？**
+**什么是[!DNL Data Provider ID (DPID)]以及如何获取它？**
 
 Adobe 顾问将为您的特定数据源分配一个三位数或四位数的 [DPID（数据提供商 ID）](../reference/ids-in-aam.md)。此 ID 是唯一的，不会更改。
 
@@ -204,13 +204,13 @@ Adobe 顾问将为您的特定数据源分配一个三位数或四位数的 [DPI
 是的，请参阅：
 
 * [入站数据传输文件的文件压缩](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
-* [入站数据文件的 Amazon S3 名称要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+* [入站数据文件的Amazon S3名称要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
  
 
 **我的数据源数据库中的主键是电子邮件地址。这是否被视为个人身份信息？**
 
-是的。[!DNL Audience Manager] 不会在其数据库中存储电子邮件地址。在起始ID同步之前，應為訪客指派隨機產生的ID或電子郵件地址的單向雜湊版本。
+是的。[!DNL Audience Manager] 不会在其数据库中存储电子邮件地址。在启动ID同步之前，应为访客分配随机生成的ID或电子邮件地址的单向哈希版本。
 
  
 
@@ -226,7 +226,7 @@ Adobe 顾问将为您的特定数据源分配一个三位数或四位数的 [DPI
 
 >[!WARNING]
 >
->我们正在逐步停止对 FTP 配置的支持。雖然現有FTP整合仍支援傳入資料檔案擷取，但強烈建議使用 [!DNL Amazon S3] 載入離線資料以進行新整合。 有关详细信息，请参阅[入站数据文件的 Amazon S3 名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
+>我们正在逐步停止对 FTP 配置的支持。虽然现有FTP集成仍支持入站数据文件摄取，但我们仍强烈建议使用[!DNL Amazon S3]载入离线数据以进行新集成。 有关详细信息，请参阅[入站数据文件的 Amazon S3 名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
 
  
 
@@ -247,4 +247,3 @@ Adobe 顾问将为您的特定数据源分配一个三位数或四位数的 [DPI
 >[!MORELIKETHIS]
 >
 >* [批量数据传输流程说明](../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
-

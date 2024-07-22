@@ -9,7 +9,7 @@ feature: Reporting Reference
 exl-id: 1e6531b2-bb39-4056-9d5e-164f50955f99
 source-git-commit: 3bddd51582f3f8c46908dba5c5ac1938cb480013
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '705'
 ht-degree: 95%
 
 ---
@@ -45,7 +45,7 @@ faq_reports.xml
 
 **在运行电子邮件营销活动时，如何确定用户是通过该活动还是其他来源重定向到我的网站？**
 
-在要监视的网站部分的 URL 后面附加一个特定于促销活动的查询字符串。然后，设置一个特征规则以捕获此变量。例如，如果您的URL傳入的行銷活動ID如下， `www.test123.com/electronics?campaign=123`，然後建立特徵規則，從 `h_referer` 變數，且具有會尋找類似以下標題的特徵規則： `h_referer = 'campaign=123'`.
+在要监视的网站部分的 URL 后面附加一个特定于促销活动的查询字符串。然后，设置一个特征规则以捕获此变量。例如，如果URL传入的促销活动ID为`www.test123.com/electronics?campaign=123`，则可以创建一个特征规则以从`h_referer`变量中捕获相应数据，该特征规则将查找类似于`h_referer = 'campaign=123'`的标头。
 
 <br> 
 

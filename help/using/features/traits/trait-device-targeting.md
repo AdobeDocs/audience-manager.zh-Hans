@@ -1,5 +1,5 @@
 ---
-description: 說明在您的Audience Manager帳戶中，透過裝置相關變數來鎖定所有屬性中的使用者，可使用哪些常見的平台層級索引鍵值配對。
+description: 描述可用于通过Audience Manager帐户中所有属性的设备相关变量来定位的常用平台级别键值对。
 seo-description: Describes the common platform-level key-value pairs you can use to target users with device-related variables across all properties in your Audience Manager account.
 seo-title: Device Targeting With Platform-level Keys
 solution: Audience Manager
@@ -9,8 +9,8 @@ feature: Traits
 exl-id: 85c848e0-a4cf-49b5-9fe9-56f8c565f665
 source-git-commit: b299783b993c5d4a1c7738eca82932c20f377ee7
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 5%
+source-wordcount: '264'
+ht-degree: 1%
 
 ---
 
@@ -18,21 +18,21 @@ ht-degree: 5%
 
 >[!WARNING]
 >
->Google已更新 [!DNL Google Chrome] 和所有 [!DNL Chromium] — 型瀏覽器，可透過將收集到的資訊減至最少 `User-Agent` 標頭。
->自2023年3月起，Audience Manager開始運用以下工具支援這些更新 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en). 若要繼續使用透過 `User-Agent` 標頭，您必須使用 [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 並啟用 [高平均資訊量使用者代理使用者端提示](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=en).
->不支援這些更新 [DIL](../../../using/dil/dil-overview.md)，因此Audience Manager使用的客戶 [!DNL DIL] 將無法透過以下方式收集特徵資訊： `User-Agent` 標頭。
+>Google已更新[!DNL Google Chrome]和所有基于[!DNL Chromium]的浏览器的功能，以最大限度地减少通过`User-Agent`标头收集的信息。
+>从2023年3月开始，Audience Manager利用[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)支持这些更新。 要继续使用通过`User-Agent`标头提供的特征信息，您必须使用[Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)并启用[高熵用户代理客户端提示](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=en)。
+>[DIL](../../../using/dil/dil-overview.md)不支持这些更新，因此使用[!DNL DIL]的Audience Manager客户将无法通过`User-Agent`标头收集特征信息。
 
-說明在您的Audience Manager帳戶中，透過裝置相關變數來鎖定所有屬性中的使用者，可使用哪些常見的平台層級索引鍵值配對。
+描述可用于通过Audience Manager帐户中所有属性的设备相关变量来定位的常用平台级别键值对。
 
-## 平台層級變數的用途 {#platform-variables}
+## 平台级别变量的用途 {#platform-variables}
 
 <!-- c_tb_device_targeting.xml -->
 
-平台層級變數可讓您擷取從特定網站傳入的資料，並使其可用於在 [!DNL Audience Manager] 帳戶。 這些變數的構成方式 [機碼值組](../../reference/key-value-pairs-explained.md) 將索引鍵加上前置詞 `d_` 如下所示。
+平台级别的变量允许您获取从特定网站传入的数据，并使其可用于跨[!DNL Audience Manager]帐户中的所有属性进行定位。 这些变量由[键值对](../../reference/key-value-pairs-explained.md)组成，键的前缀为`d_`，如下所示。
 
-## 使用者代理程式定義的平台層級金鑰 {#keys-user-agent}
+## 用户代理定义的平台级别密钥 {#keys-user-agent}
 
-此 [!UICONTROL Data Collection Servers] 從以下專案擷取這些鍵的值： [使用者代理標題](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43) 在 `HTTP` 要求。 值代表來自的裝置層級資訊 [!UICONTROL Device Atlas] 資料庫。 下表中的訊號可供使用，例如從使用者代理程式範例擷取的訊號。 [下載最常用索引鍵的清單](assets/device_keys.csv)，根據 [!UICONTROL Device Atlas] 測量。
+[!UICONTROL Data Collection Servers]从`HTTP`请求中的[用户代理标头](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43)提取这些密钥的值。 值表示来自[!UICONTROL Device Atlas]数据库的设备级信息。 下表中的信号可用，如从用户代理示例中提取的。 [根据[!UICONTROL Device Atlas]测量结果，下载最常用键的列表](assets/device_keys.csv)。
 
 | [!DNL Signal] | [!DNL Type] | [!DNL Example] |
 |---|---|---|
@@ -50,9 +50,8 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->即使無法從使用者代理程式標頭中擷取一或多個訊號，其他訊號仍會傳遞至 [!UICONTROL Data Collection Servers].
+>即使无法从用户代理标头中检索到一个或多个信号，其他信号仍将传递到[!UICONTROL Data Collection Servers]。
 
 >[!MORELIKETHIS]
 >
 >* [关键变量的前缀要求](../../features/traits/trait-variable-prefixes.md)
-

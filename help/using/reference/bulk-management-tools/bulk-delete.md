@@ -10,7 +10,7 @@ exl-id: 3ff530dd-66d0-4dd3-a6e6-afe4a9cb5ba4
 source-git-commit: bd1ad233dd69bc8683731d0c63dc3fb74ef91ade
 workflow-type: tm+mt
 source-wordcount: '258'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -30,23 +30,23 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[RBAC组权限](../../features/administration/administration-overview.md) 分配于 [!DNL Audience Manager] UI在 [!UICONTROL Bulk Management Tools].
+>[!UICONTROL Bulk Management Tools]接受在[!DNL Audience Manager] UI中分配的[RBAC组权限](../../features/administration/administration-overview.md)。
 
 >[!NOTE]
 >
 >如果将区段映射到目标，则批量删除目标映射将会失败。 在尝试批量删除目标之前，请在用户界面中从该目标删除您的区段。 此外，特征和区段文件夹必须为空，您才能将其删除。
 
-要删除多个项目，请打开 [!UICONTROL Bulk Management Tools] 工作表和：
+要删除多个项目，请打开[!UICONTROL Bulk Management Tools]工作表并：
 
-1. 单击 **[!UICONTROL Headers]** 制表符并复制要添加的项目的“创建标题”。
-2. 单击 **[!UICONTROL Delete]** 选项卡。
+1. 单击&#x200B;**[!UICONTROL Headers]**&#x200B;选项卡，并复制要添加项目的创建标头。
+2. 单击&#x200B;**[!UICONTROL Delete]**&#x200B;选项卡。
 3. 将删除标题粘贴到更新工作表的第一行。
 4. 在标题下方的列中粘贴或键入要删除的对象的ID。
-5. 提供所需的 [登录信息](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) 并单击 **[!UICONTROL Submit]**.
+5. 提供所需的[登录信息](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs)，然后单击&#x200B;**[!UICONTROL Submit]**。
 
-   工作表将创建 [!UICONTROL Results] 列。 此 [!UICONTROL Results] 列返回一条消息，指示该项是否已被删除，或返回一条错误消息。
+   工作表创建一个[!UICONTROL Results]列。 [!UICONTROL Results]列返回一条消息，指示该项是否已被删除，或返回一条错误消息。
 在输入数据之前，批量更新工作表应当类似于以下内容：
 
 ![](assets/delete.png)
 
-如果批量更新返回错误或失败，请参阅 [批量管理工具疑难解答](../../reference/bulk-management-tools/bulk-troubleshooting.md).
+如果批量更新返回错误或失败，请参阅[批量管理工具疑难解答](../../reference/bulk-management-tools/bulk-troubleshooting.md)。

@@ -1,32 +1,32 @@
 ---
-description: 可讓您檢視Audience Manager通用分類法的方法。 此選擇性分類配置會將特徵組織為符合業界標準的類別。
+description: 允许您查看Audience Manager通用分类的方法。 此可选分类方案将特征组织为行业标准类别。
 seo-description: Methods that let you view the Audience Manager common taxonomy. This optional classification scheme organizes traits into industry standard categories.
 seo-title: Taxonomic API Methods
 solution: Audience Manager
-title: 分类 API 方法
+title: 分类API方法
 uuid: 4ee29ba5-e9ba-4498-a6ee-7343227dd7ba
 feature: API
 exl-id: 8bc6dcbb-7f5b-4a7b-998d-025eaf76c409
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 6%
+ht-degree: 1%
 
 ---
 
-# 分类 API 方法 {#taxonomic-api-methods}
+# 分类API方法 {#taxonomic-api-methods}
 
-可讓您檢視Audience Manager通用分類法的方法。 此選擇性分類配置會將特徵組織為符合業界標準的類別。
+允许您查看Audience Manager通用分类的方法。 此可选分类方案将特征组织为行业标准类别。
 
 <!-- c_rest_api_taxonomy.xml -->
 
 >[!NOTE]
 >
->您無法使用這些方法建立新的分類類別或分類特徵。 若要分類特徵，請指定適當的 `categoryId` 特徵建立或更新方法。
+>不能使用这些方法创建新的分类类别或分类特征。 要对特征进行分类，请使用特征创建或更新方法指定相应的`categoryId`。
 
-## 傳回特定分類法 {#return-specific-taxonomy}
+## 返回特定分类 {#return-specific-taxonomy}
 
-A `GET` 傳回指定分類類別詳細資料的方法。
+返回有关指定分类类别详细信息的`GET`方法。
 
 <!-- r_rest_api_taxonomy.xml -->
 
@@ -36,7 +36,7 @@ A `GET` 傳回指定分類類別詳細資料的方法。
 
 ### 响应
 
-成功傳回回應 `200 OK` 以及指定ID的類別。 傳回失敗的請求 `404 No Content` 如果ID不存在。
+成功的响应返回指定ID的`200 OK`和类别。 如果ID不存在，则失败的请求返回`404 No Content`。
 
 ```
 {
@@ -49,9 +49,9 @@ A `GET` 傳回指定分類類別詳細資料的方法。
 }
 ```
 
-## 傳回所有分類類別 {#return-all-taxonomy-categories}
+## 返回所有分类类别 {#return-all-taxonomy-categories}
 
-A `GET` 傳回陣列中上層類別清單的方法。
+返回数组中顶级类别列表的`GET`方法。
 
 <!-- r_rest_api_taxonomies.xml -->
 
@@ -61,7 +61,7 @@ A `GET` 傳回陣列中上層類別清單的方法。
 
 ### 响应
 
-為簡短起見，已截斷。
+为简短起见，已截断。
 
 ```
 [
@@ -92,9 +92,9 @@ A `GET` 傳回陣列中上層類別清單的方法。
 ]
 ```
 
-## 傳回分類子類別 {#return-taxonomy-sub-categories}
+## 返回分类子类别 {#return-taxonomy-sub-categories}
 
-A `GET` 傳回陣列中指定父類別的子類別的方法。
+`GET`方法，返回数组中指定父类别的子类别。
 
 <!-- r_rest_api_taxonomy_sub.xml -->
 
@@ -104,7 +104,7 @@ A `GET` 傳回陣列中指定父類別的子類別的方法。
 
 ### 响应
 
-成功傳回回應 `200 OK` 以及指定ID的類別。 傳回失敗的請求 `404 No Content` 如果ID不存在。 為簡短起見，已截斷。
+成功的响应返回指定ID的`200 OK`和类别。 如果ID不存在，则失败的请求返回`404 No Content`。 为简短起见，已截断。
 
 ```
 [

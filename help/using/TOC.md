@@ -93,8 +93,8 @@ ht-degree: 25%
    + [数据导出控制](features/data-export-controls.md)
    + 数据源 {#data-sources}
       + [数据源列表和设置](features/datasources-list-and-settings.md)
-      + [创建数据源](features/manage-datasources.md)
-      + [为经过哈希处理的电子邮件工作流配置数据源](features/create-data-source-hashed-emails.md)
+      + [创建数据Source](features/manage-datasources.md)
+      + [为经过哈希处理的电子邮件工作流配置Data Source](features/create-data-source-hashed-emails.md)
       + [全局数据源](features/global-data-sources.md)
    + [声明的ID](features/declared-ids.md)
    + [派生的信号](features/derived-signals.md)
@@ -108,9 +108,9 @@ ht-degree: 25%
          + [先决条件和注意事项](features/destinations/people-based-destinations-prerequisites.md)
          + 实施指南 {#implementation-guide}
             + [实施概述](features/destinations/people-based-destinations-workflow.md)
-            + [工作流程A — 基于所有在线活动和离线数据的组合进行个性化](features/destinations/people-based-destinations-workflow-combined.md)
-            + [工作流程B — 基于仅离线数据进行个性化](features/destinations/people-based-destinations-workflow-offline.md)
-            + [工作流程C — 基于已验证活动和离线数据的组合进行个性化](features/destinations/people-based-destinations-workflow-authenticated.md)
+            + [工作流程A — 基于所有在线活动和离线数据的Personalization](features/destinations/people-based-destinations-workflow-combined.md)
+            + [工作流程B — 基于仅离线数据的Personalization](features/destinations/people-based-destinations-workflow-offline.md)
+            + [工作流程C — 基于已验证活动和离线数据的Personalization](features/destinations/people-based-destinations-workflow-authenticated.md)
          + [使用基于人员的平台进行身份验证](features/destinations/people-based-destinations-authentication.md)
          + [可共享的受众](/help/using/features/destinations/people-based-destinations-reporting.md)
       + 基于设备的目标（服务器到服务器）{#device-based}
@@ -156,7 +156,7 @@ ht-degree: 25%
       + [特征概述](/help/using/features/traits/traits-overview.md)
       + [特征详细信息页面](features/traits/trait-details-page.md)
       + [特征仪表板](features/traits/trait-dashboard.md)
-      + [活动受众特征和数据源同步特征](features/traits/client-activity-synced-audience-traits.md)
+      + [活动受众特征和数据Source同步特征](features/traits/client-activity-synced-audience-traits.md)
       + [文件夹特征：关于](features/traits/about-folder-traits.md)
       + [管理文件夹特征](features/traits/manage-folder-traits.md)
       + 特征生成器{#trait-builder}
@@ -291,7 +291,7 @@ ht-degree: 25%
 + 实施和集成指南{#implementation-integration-guides}
    + [实施和集成指南](integration/implementation-and-integration.md)
    + [数据集成方法](integration/data-integration-methods.md)
-   + 使用Google Publisher Tag (GPT)集成Google Ad Manager{#integrate-dfp-using-gpt}
+   + 使用Google发布者标记(GPT)集成Google广告管理器{#integrate-dfp-using-gpt}
       + [使用GPT集成Google Ad Manager概述](integration/gpt-aam-destination/gpt-aam-overview.md)
       + [使用GPT将区段发送到Google Ad Manager](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [创建GPT目标](integration/gpt-aam-destination/gpt-aam-create-destination.md)
@@ -335,27 +335,27 @@ ht-degree: 25%
          + [将批量数据发送到Audience Manager概述](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)
          + [用于入站数据传输的ID同步](integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)
          + [ID同步文件的名称和内容要求](integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
-         + [入站数据文件内容：语法、无效字符、变量和示例](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
+         + [入站数据文件内容：语法、无效字符、变量和   示例](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
          + [入站数据文件的Amazon S3名称和文件大小要求](integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
          + [入站数据文件的FTP名称和文件大小要求](integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md)
          + [入站数据类型的文件PGP加密](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)
          + [入站数据传输文件的文件压缩](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
          + [入站处理后发送给合作伙伴的示例消息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
-         + [利用您入站文件的Amazon S3跨帐户存储段权限](integration/sending-audience-data/batch-data-transfer-explained/authorize-s3-inbound.md)
+         + [利用入站文件的Amazon S3跨帐户存储段权限](integration/sending-audience-data/batch-data-transfer-explained/authorize-s3-inbound.md)
       + [自定义合作伙伴集成](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + 与 Adobe Experience Platform 集成 {#integration-experience-platform}
       + [与Audience Manager和其他Experience Cloud解决方案共享Experience Platform区段](integration/integration-aep/aam-aep-audience-sharing.md)
-   + 与其他Experience Cloud应用程序集成 {#integration-other-solutions}
+   + 与其他Experience Cloud应用程序集成{#integration-other-solutions}
       + [将Audience Manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
       + [如何将数据从Adobe Analytics转发到Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [将Adobe Analytics区段发布到Experience Cloud(打开Adobe Analytics文档)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
+      + [将Adobe Analytics区段Publish到Experience Cloud(打开Adobe Analytics文档)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
       + [将Audience Manager与Adobe Campaign集成(打开Adobe Campaign文档)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
 + 参考{#reference}
    + [参考概述](reference/reference.md)
    + [Amazon S3：关于](reference/amazon-s3.md)
    + [广告商用例](reference/advertiser-use-cases.md)
    + [出版商用例](reference/publisher-use-cases.md)
-   + [测试版环境](reference/beta-environment.md)
+   + [Beta环境](reference/beta-environment.md)
    + [特征和区段生成器中的布尔表达式](reference/boolean-expressions-tsb.md)
    + 批量管理工具{#bulk-management-tools}
       + [开始使用批量管理工具](reference/bulk-management-tools/bulk-management-intro.md)
@@ -382,7 +382,7 @@ ht-degree: 25%
       + [数据处理组件](reference/system-components/components-data-processing.md)
       + [Tag Management组件](reference/system-components/components-tag-management.md)
       + [平台架构：数据流程图](reference/system-components/components-platform-architecture.md)
-      + [了解边缘数据中心](reference/system-components/components-edge.md)
+      + [了解Edge数据中心](reference/system-components/components-edge.md)
    + [代码和文本元素的样式约定](reference/code-style-elements.md)
    + [Audience Manager中的时区](reference/aam-time-zones.md)
    + [弃用TLS 1.0和1.1](reference/tls-support.md)

@@ -1,30 +1,29 @@
 ---
-description: Audience Manager和Adobe Experience Platform Identity服務會呼叫並從demdex.net網域接收資料。 Adobe似乎正與不尋常的第三方網域合作，但情況並非如此。 本節說明demdex.net呼叫中的元素。
+description: Audience Manager和Adobe Experience Platform Identity服务会调用demdex.net域并从中接收数据。 这看起来像Adobe正在处理一个不寻常的第三方域，但事实并非如此。 本节介绍demdex.net调用中的元素。
 seo-description: Audience Manager and the Adobe Experience Platform Identity Service make calls to and receive data from the demdex.net domain. This may seem like Adobe is working with an unusual third-party domain, but this is not the case. This section describes the elements in a demdex.net call.
 seo-title: Understanding Calls to the Demdex Domain
 solution: Audience Manager
-title: 了解 Demdex 域调用
+title: 了解Demdex域调用
 uuid: c06dae3a-f169-4712-80fb-d6d448dce51a
 feature: Reference
 exl-id: dcd5ed86-4ff1-4f63-9c9f-edf11c229a30
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 8%
+source-wordcount: '279'
+ht-degree: 4%
 
 ---
 
-# 瞭解對的呼叫 [!DNL Demdex] 網域 {#understanding-calls-to-the-demdex-domain}
+# 了解[!DNL Demdex]域的调用 {#understanding-calls-to-the-demdex-domain}
 
-[!DNL Audience Manager] 和 [!DNL Adobe Experience Platform Identity Service] 呼叫並從接收資料 `demdex.net` 網域。 這可能看起來像 [!DNL Adobe] 使用不尋常的協力廠商網域，但情況並非如此。 本節說明中的元素 `demdex.net` 呼叫。
+[!DNL Audience Manager]和[!DNL Adobe Experience Platform Identity Service]调用并接收来自`demdex.net`域的数据。 这可能看起来像[!DNL Adobe]正在处理一个不寻常的第三方域，但情况并非如此。 本节介绍`demdex.net`调用中的元素。
 
-| 呼叫元素 | 描述 |
+| 调用元素 | 描述 |
 |---|---|
-| `demdex.net` | 這是由控制的舊網域 [!DNL Adobe]. 它反映收購前的原始名稱 [!DNL Audience Manager] ([!DNL Demdex])。 [!DNL Adobe] 于 2011 年收购 [!DNL Demdex] 公司并将其更名为 [!DNL Audience Manager]。由於此網域與緊密交織在一起，因此很難變更 [!DNL Audience Manager]，則 [!DNL Adobe Experience Cloud ID Service]，以及我們的已安裝使用者群。 您可能會看到其他附加至舊版的前置詞 `demdex.net` 呼叫(例如 `dcs.demdex.net`， `fast.demdex.net`、等)。 無論首碼為何，都會呼叫 `something.demdex.net` 永遠是呼叫 [!DNL Adobe] 而不是未知或可疑的第三方網域。 |
-| `dpm` | [!DNL DPM] 是的縮寫 [!DNL Data Provider Match]. 它告訴內部， [!DNL Adobe] 呼叫來源的系統 [!DNL Audience Manager] 或 [!DNL Adobe Experience Cloud ID Service] 正在傳遞客戶資料以進行同步或請求ID。 這是最常見的 `demdex.net` 您將會看到來自的電話 [!DNL Audience Manager] 或 [!DNL Adobe Experience Cloud ID Service]. <br><br>[!DNL DPM] 呼叫基本需知： <ul><li>[!DNL Audience Manager]：A [!DNL DPM] 呼叫來源 [!DNL Audience Manager] 會將資料傳送至 [!DNL Data Collection Servers] 和 [!DNL Profile Cache Servers]. 请参阅[数据收集组件](../reference/system-components/components-data-collection.md)。</li><li>[!DNL Adobe Experience Cloud ID Service]：A [!DNL DPM] 呼叫來自 [!DNL Adobe Experience Cloud ID Service] 是對訪客ID的要求。 另請參閱 [Cookie與Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html) 和 [Adobe Experience Platform Identity服務如何要求與設定ID](https://experienceleague.adobe.com/docs/id-service/using/intro/id-request.html).</li></ul><br>注意： [!DNL Adobe Experience Cloud ID Service] 客戶可以變更 [!DNL DPM] 網域名稱中的前置詞。 另請參閱 [audienceManager伺服器和audienceManagerServerSecure](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/subdomain-config.html). |
+| `demdex.net` | 这是由[!DNL Adobe]控制的旧域。 它反映了[!DNL Audience Manager] ([!DNL Demdex])的原始收购前名称。 [!DNL Adobe] 于 2011 年收购 [!DNL Demdex] 公司并将其更名为 [!DNL Audience Manager]。很难更改此域，因为它与[!DNL Audience Manager]、[!DNL Adobe Experience Cloud ID Service]和我们的已安装用户群深度交织在一起。 您可能会看到附加到旧版`demdex.net`调用的其他前缀（例如，`dcs.demdex.net`、`fast.demdex.net`等）。 无论前缀如何，对`something.demdex.net`的调用始终是对[!DNL Adobe]的调用，而不是对未知或可疑的第三方域的调用。 |
+| `dpm` | [!DNL DPM]是[!DNL Data Provider Match]的缩写。 它告知内部[!DNL Adobe]系统，来自[!DNL Audience Manager]或[!DNL Adobe Experience Cloud ID Service]的调用正在传递客户数据以进行同步或正在请求ID。 这是您将会从[!DNL Audience Manager]或[!DNL Adobe Experience Cloud ID Service]看到的最常见的`demdex.net`调用。 <br><br>[!DNL DPM]调用基础知识： <ul><li>[!DNL Audience Manager]：来自[!DNL Audience Manager]的[!DNL DPM]调用将数据发送到[!DNL Data Collection Servers]和[!DNL Profile Cache Servers]。 请参阅[数据收集组件](../reference/system-components/components-data-collection.md)。</li><li>[!DNL Adobe Experience Cloud ID Service]：来自[!DNL Adobe Experience Cloud ID Service]的[!DNL DPM]调用是对访客ID的请求。 请参阅[Cookie和Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html)和[Adobe Experience Platform Identity服务如何请求和设置ID](https://experienceleague.adobe.com/docs/id-service/using/intro/id-request.html)。</li></ul><br>注意： [!DNL Adobe Experience Cloud ID Service]客户可以更改域名中的[!DNL DPM]前缀。 请参阅[audienceManager服务器和audienceManagerServerSecure](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/subdomain-config.html)。 |
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)
->* [Audience Manager Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html)
-
+>* [Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/docs/id-service/using/home.html)
+>* [Audience ManagerCookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html)

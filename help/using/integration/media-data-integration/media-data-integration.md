@@ -1,5 +1,5 @@
 ---
-description: 您可以使用畫素呼叫來Audience Manager（通常稱為畫素化創意）或擷取記錄檔，從媒體行銷活動中擷取資料。
+description: 您可以使用对Audience Manager的像素调用（通常称为像素化创意）或摄取日志文件从媒体营销活动中捕获数据。
 seo-description: You can capture data from media campaigns using pixel calls to Audience Manager (often called pixeling the creative) or by ingesting log files.
 seo-title: Media Data Integration
 solution: Audience Manager
@@ -10,13 +10,13 @@ exl-id: ca4906a7-0c39-49bc-9505-d76a61ec9eac
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '120'
-ht-degree: 19%
+ht-degree: 2%
 
 ---
 
 # 媒体数据集成 {#media-data-integration}
 
-您可以使用畫素呼叫來Audience Manager（通常稱為畫素化創意）或擷取記錄檔，從媒體行銷活動中擷取資料。 請閱讀本節中的文章以瞭解此程式。
+您可以使用对Audience Manager的像素调用（通常称为像素化创意）或摄取日志文件从媒体营销活动中捕获数据。 请阅读此部分中的文章以了解该过程。
 
 <!-- c_camp_data_int.xml -->
 
@@ -24,8 +24,8 @@ ht-degree: 19%
 * [通过像素调用捕获营销活动展示数据](/help/using/integration/media-data-integration/impression-data-pixels.md)
 * [通过像素调用捕获营销活动点击数据](/help/using/integration/media-data-integration/click-data-pixels.md)
 
-若要設定記錄擷取，請閱讀下列文章：
+要设置日志摄取，请阅读以下文章：
 
-* [將Google Campaign Manager資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
-* [將Google Ad Manager資料檔案匯入Audience Manager ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
-* [記錄資料和中繼資料檔案](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) 設定一般記錄檔的記錄擷取
+* [将Google Campaign Manager数据文件导入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+* [将Google Ad Manager数据文件导入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
+* [日志数据和元数据文件](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)为通用日志文件设置日志摄取

@@ -1,48 +1,48 @@
 ---
-description: 說明當您使用區段產生器暫停或刪除作用中區段時，對分段使用者、資料和目的地的影響。
+description: 描述当您使用区段生成器暂停或删除活动区段时对分段用户、数据和目标的影响。
 seo-description: Describes the effects on segmented users, data, and destinations when you pause or delete an active segment using Segment Builder.
 seo-title: Paused and Deleted Segments
 solution: Audience Manager
-title: 已暂停和已删除的区段
+title: 暂停和删除的区段
 uuid: 88efe4af-f9a4-4bce-920a-352bd4d505dd
 feature: Segments
 exl-id: 994da89c-c9db-4cd5-b2bc-cfda231e5f2d
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '187'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
-# 已暂停和已删除的区段 {#paused-and-deleted-segments}
+# 暂停和删除的区段 {#paused-and-deleted-segments}
 
-說明當您使用暫停或刪除作用中的區段時，對分段的使用者、資料和目的地的影響 [!UICONTROL Segment Builder].
+描述当您使用[!UICONTROL Segment Builder]暂停或删除活动区段时对分段用户、数据和目标的影响。
 
-## 存取「暫停」和「刪除」控制項
+## 访问暂停和删除控件
 
-將滑鼠懸停在區段清單中的區段名稱上，以顯示 **[!UICONTROL pause]** 和 **[!UICONTROL delete]** 圖示(在 [!UICONTROL Actions] 欄)。 這些功能會影響區段，如下所述。
+将鼠标悬停在区段列表中的区段名称上以显示&#x200B;**[!UICONTROL pause]**&#x200B;和&#x200B;**[!UICONTROL delete]**&#x200B;图标（在[!UICONTROL Actions]列中）。 这些功能会影响区段，如下所述。
 
-## 暫停的區段功能
+## 暂停的区段功能
 
-暫停（已停用）的區段：
+已暂停（已停用）的区段：
 
-* 停止分段新的合格使用者。
-* 保留使用者的細分狀態/成員資格（不會從區段移除使用者）。
-* 保留在區段清單中，並可重新啟用。
-* 不會將資料傳送至相關聯的目的地。
-* 傳回可用報表中的資料（直到停用日期）。
+* 停止对符合条件的新用户进行分段。
+* 保留用户的分段状态/成员资格（不会从区段中删除用户）。
+* 保留在区段列表中，可以重新激活。
+* 不会将数据发送到关联的目标。
+* 返回可用报表中的数据（截至停用日期）。
 
-## 已刪除區段功能
+## 已删除区段功能
 
-已刪除的區段：
+已删除的区段：
 
-* 停止分段新的合格使用者。
-* 從區段成員資格中移除合格使用者。
-* 會從區段清單中移除。
-* 無法取消刪除。
-* 不會將資料傳送至相關聯的目的地。
-* 不會傳回可用報表中的資料。
+* 停止对符合条件的新用户进行分段。
+* 从区段成员资格中删除符合条件的用户。
+* 从区段列表中删除。
+* 无法取消删除。
+* 不会将数据发送到关联的目标。
+* 在可用报表中不返回数据。
 
 >[!NOTE]
 >
->您也可以使用暫停和刪除區段 [!DNL API] 方法。 如需詳細資訊，請參閱 [REST API](../../api/rest-api-main/rest-api-main.md).
+>您还可以使用[!DNL API]方法暂停和删除区段。 有关详细信息，请参阅[REST API](../../api/rest-api-main/rest-api-main.md)。

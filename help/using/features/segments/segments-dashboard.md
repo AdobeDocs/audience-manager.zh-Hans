@@ -1,5 +1,5 @@
 ---
-description: 區段儀表板是用於管理目的地的集中式工作區。
+description: 区段仪表板是用于管理目标的集中工作区。
 seo-description: The Segments dashboard is a centralized workspace for managing destinations.
 seo-title: Segments List View
 solution: Audience Manager
@@ -10,21 +10,21 @@ exl-id: 983ce119-52af-40fb-9d64-3063e85f2b3d
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '73'
-ht-degree: 8%
+ht-degree: 0%
 
 ---
 
 # 区段列表视图 {#segments-list-view}
 
-此 [!UICONTROL Segments dashboard] 是用於管理受眾區段的集中式工作區。 您可以看到 [!UICONTROL Segments] 儀表板，瀏覽至 **[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**.
+[!UICONTROL Segments dashboard]是用于管理受众区段的集中工作区。 您可以通过导航到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**&#x200B;查看[!UICONTROL Segments]仪表板。
 
-![區段 — 儀表板](assets/segments-dashboard.png)
+![区段 — 仪表板](assets/segments-dashboard.png)
 
-此 [!UICONTROL Segments] 頁面包含可協助您：
+[!UICONTROL Segments]页面包含可帮助您：
 
-* 建立新區段；
-* 編輯和刪除區段；
-* 複製（複製）現有區段；
-* 在含有可排序欄的表格中檢視您的所有區段；
-* 管理區段儲存；
-* 依名稱搜尋區段。
+* 创建新区段；
+* 编辑和删除区段；
+* 克隆（复制）现有区段；
+* 在具有可排序列的表中查看您的所有区段；
+* 管理区段存储；
+* 按名称搜索区段。

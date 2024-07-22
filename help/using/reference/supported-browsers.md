@@ -9,8 +9,8 @@ feature: Reference
 exl-id: 5fcb1a64-5e45-4973-9e20-7d4d07071cbf
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 77%
+source-wordcount: '155'
+ht-degree: 84%
 
 ---
 
@@ -28,20 +28,20 @@ Adobe 支持以下浏览器的最新主要版本：
 
 * **Google Chrome**
 
-   從取得最新的Chrome版本 [https://www.google.com/chrome](https://www.google.com/chrome).
+  从[https://www.google.com/chrome](https://www.google.com/chrome)获取最新的Chrome版本。
 
 * **Microsoft Edge**
 
-   （Adobe Audience Manager 将于 2019 年 7 月 10 日终止对 Internet Explorer 11 的支持。请尽快切换到 Microsoft Edge 或其他受支持浏览器的最新主要版本。）
+  （Adobe Audience Manager 将于 2019 年 7 月 10 日终止对 Internet Explorer 11 的支持。请尽快切换到 Microsoft Edge 或其他受支持浏览器的最新主要版本。）
 
-   从 [https://www.microsoft.com/windows/microsoft-edge](https://www.microsoft.com/windows/microsoft-edge) 获取 Edge 的最新版本。
+  从 [https://www.microsoft.com/windows/microsoft-edge](https://www.microsoft.com/windows/microsoft-edge) 获取 Edge 的最新版本。
 
 * **Mozilla Firefox**
 
-   從取得最新的Firefox版本 [https://www.mozilla.com/en-US/firefox](https://www.mozilla.com/en-US/firefox).
+  从[https://www.mozilla.com/en-US/firefox](https://www.mozilla.com/en-US/firefox)获取Firefox的最新版本。
 
 * **Safari**
 
-   從取得最新的Safari版本 [https://www.apple.com/safari/download](https://www.apple.com/safari/download).
+  从[https://www.apple.com/safari/download](https://www.apple.com/safari/download)获取Safari的最新版本。
 
 其他浏览器或许也可以使用，但我们的技术和产品团队不为这些浏览器提供支持。如果您在使用 [!DNL Audience Manager] 时遇到问题，请确保您使用的是最新且受支持的浏览器。

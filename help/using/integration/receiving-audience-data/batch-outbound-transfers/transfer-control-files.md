@@ -1,5 +1,5 @@
 ---
-description: 傳輸控制(.info)檔案會提供有關檔案傳輸的中繼資料資訊，以便合作夥伴可以確認Audience Manager已正確處理檔案傳輸。
+description: 传输控制(.info)文件提供了有关文件传输的元数据信息，以便合作伙伴能够验证Audience Manager是否正确处理了文件传输。
 seo-description: Transfer-control (.info) files provide metadata information about file transfers so that partners can verify that Audience Manager handled file transfers correctly.
 seo-title: Transfer-Control Files for Log File Transfers
 solution: Audience Manager
@@ -10,27 +10,27 @@ exl-id: 4fd1aab1-2dc2-4de9-97be-58e79825db40
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
 
 # 用于日志文件传输的传输控制文件 {#transfer-control-files-for-log-file-transfers}
 
-傳輸控制([!DNL .info])檔案會提供有關檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience Manager已正確處理檔案傳輸。
+传输控制([!DNL .info])文件提供了有关文件传输的元数据信息，以便合作伙伴可以验证Audience Manager是否正确处理了文件传输。
 
-[!DNL Audience Manager] 會在每次檔案傳輸時將傳輸控制檔案傳送給合作夥伴。 由於的多重執行緒性質 [!DNL FTP] publisher，傳輸控制檔案可能會在實際檔案完成傳輸之前傳送。
+[!DNL Audience Manager]在每次文件传输时向合作伙伴发送传输控制文件。 由于[!DNL FTP]发布者的多线程特性，传输控制文件可能会在实际文件传输完成之前发送。
 
-中的中繼資料 [!DNL .info] 檔案可讓合作夥伴：
+[!DNL .info]文件中的元数据允许合作伙伴：
 
-* 判斷完整傳輸週期何時完成（已傳送序列中的檔案總數）；
-* 判斷序列中的任何指定檔案是否完整/正確(透過檢查檔案大小（以位元組為單位）和總行數)；
-* 驗證原始檔案中的列數與檔案在接收端的資料庫中載入後的列數相同（檔案大小，以行為單位）。
+* 确定完整传输周期何时结束（已传送序列中的文件总数）；
+* 确定序列中的任何给定文件是否完整/正确(通过检查文件大小（以字节为单位）和总行数)；
+* 验证原始文件中的行数与文件在接收端加载到数据库中的行数（文件大小，以行为单位）相对应。
 
-## 檔案命名慣例 {#file-naming-conventions}
+## 文件命名约定 {#file-naming-conventions}
 
-傳輸控制檔案的名稱與具有的批次/序列的根相同 [!DNL .info] 副檔名.s
+传输控制文件的名称与具有[!DNL .info]文件扩展名的批次/序列的根相同。
 
-例如，如果序列中的第一個檔案已命名： [!DNL ftp_12345_67890_full_1500727351632-1.sync]，控制檔的名稱為 [!DNL ftp_12345_67890_iter_1500727351632.info].
+例如，如果序列中的第一个文件名为： [!DNL ftp_12345_67890_full_1500727351632-1.sync]，则控制文件将名为[!DNL ftp_12345_67890_iter_1500727351632.info]。
 
 ## 文件格式 {#file-format}
 
@@ -77,8 +77,8 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> 批次總數不包括 [!DNL .info] 檔案本身。 也就是說，總數並不包括 [!DNL .info] 檔案、其位元組大小或行數。
+> 批处理总数不包括[!DNL .info]文件本身。 即，总计不包括[!DNL .info]文件、其字节大小或行数。
 >
-> 檔案的位元組大小和行數包含任何標題和分隔符號（空白）行/列。 若要取得實際資料行/列的計數，請減去標題。
+> 文件的字节大小和行数包含任何标题和分隔符（空白）行/行。 要获取实际数据行/行的计数，请减去标题。
 >
-> 批次中的總行數和總位元組大小包含任何標題和空格列。
+> 批处理中的总行数和总字节数包含任何标题行和空格行。

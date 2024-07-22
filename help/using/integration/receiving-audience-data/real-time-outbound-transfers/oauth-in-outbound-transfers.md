@@ -1,50 +1,50 @@
 ---
-description: 透過即時伺服器對伺服器整合將區段發佈至合作夥伴目的地時，可設定Audience Manager以在提出請求時使用OAuth 2.0進行驗證。 如此一來，您便能從Audience Manager向端點發出已驗證請求。
+description: 通过实时服务器到服务器集成将区段发布到合作伙伴目标时，可以将Audience Manager设置为在发出请求时使用OAuth 2.0进行身份验证。 这使得能够向Audience Manager端点发出经过身份验证的请求。
 seo-description: When publishing segments to the partner destination via a realtime server-to-server integration, Audience Manager can be set up to authenticate using OAuth 2.0 when making the requests. This presents the ability to issue authenticated requests from Audience Manager to your endpoint.
 seo-title: OAuth 2.0 Integration for Real-Time Outbound Transfers
 solution: Audience Manager
-title: 用于实时出站传输的 OAuth 2.0 集成
+title: 用于实时出站传输的OAuth 2.0集成
 uuid: a39e370c-b3bd-4b06-a1af-60a024ee7ee4
 feature: Outbound Data Transfers
 exl-id: eef3a3ae-1a3f-47e9-aab6-abf878e4cb77
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 1%
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
-# [!DNL OAuth 2.0] 即時傳出傳輸的整合{#oauth-integration-for-real-time-outbound-transfers}
+# 实时出站传输的[!DNL OAuth 2.0]集成{#oauth-integration-for-real-time-outbound-transfers}
 
-透過即時伺服器對伺服器整合將區段發佈至合作夥伴目的地時，可設定Audience Manager以使用進行驗證 [!DNL OAuth 2.0] 進行請求時。 如此一來，您便能從Audience Manager向端點發出已驗證請求。
+通过实时服务器到服务器集成将区段发布到合作伙伴目标时，可以将Audience Manager设置为在发出请求时使用[!DNL OAuth 2.0]进行身份验证。 这使得能够向Audience Manager端点发出经过身份验证的请求。
 
-## 驗證流程 {#auth-flow}
+## 身份验证流程 {#auth-flow}
 
-此 [!DNL Adobe Audience Manager] [OAuth 2.0](https://tools.ietf.org/html/rfc6749#section-4.4) 驗證實作是以使用者端憑證授權流程為基礎，並遵循下列步驟：
+[!DNL Adobe Audience Manager] [OAuth 2.0](https://tools.ietf.org/html/rfc6749#section-4.4)身份验证实施基于客户端凭据授权流，并遵循以下步骤：
 
-1. 您必須提供我們：
-   * 此 [!DNL OAuth 2.0] 產生驗證權杖的端點。
-   * 用來產生Token的認證。
-1. 一個 [!DNL Audience Manager] 顧問設定 [目的地](../../../features/destinations/destinations.md) 使用您提供的資訊。
-1. 將區段對應至此目的地後，我們的即時資料傳輸系統 [IRIS](../../../reference/system-components/components-data-action.md#iris)，建立 `POST` 要求權杖端點交換持有人權杖的認證。
-1. 對於每個區段發佈請求至合作夥伴端點， [!UICONTROL IRIS] 使用持有人權杖進行驗證。
+1. 您必须向我们提供：
+   * 生成身份验证令牌的[!DNL OAuth 2.0]端点。
+   * 用于生成令牌的凭据。
+1. [!DNL Audience Manager]顾问使用您提供的信息设置[目标](../../../features/destinations/destinations.md)。
+1. 将区段映射到此目标后，我们的实时数据传输系统[IRIS](../../../reference/system-components/components-data-action.md#iris)会向令牌端点发出`POST`请求，以交换持有者令牌的凭据。
+1. 对于每个发送到合作伙伴端点的区段发布请求，[!UICONTROL IRIS]使用持有者令牌进行身份验证。
 
 ![](assets/oauth2-iris.png)
 
 ## 要求 {#auth-requirements}
 
-作為 [!DNL Audience Manager] 合作夥伴，需要下列端點來接收已驗證的請求：
+作为[!DNL Audience Manager]合作伙伴，需要以下端点来接收经过身份验证的请求：
 
-### IRIS用來取得持有人權杖的端點1
+### IRIS用于获取持有者令牌的端点1
 
-此端點將接受在步驟1提供的認證，並產生將在後續請求中使用的持有人權杖。
+此端点将接受在步骤1中提供的凭据并生成将在后续请求中使用的持有者令牌。
 
-* 端點必須接受 `HTTP POST` 要求。
-* 端點必須接受並檢視 [!DNL Authorization] 標頭。 此標頭的值將為： `Basic <credentials_provided_by_partner>`.
-* 端點必須檢視 [!DNL Content-type] 標頭並驗證其值是否為 `application/x-www-form-urlencoded ; charset=UTF-8`.
-* 請求內文將為 `grant_type=client_credentials`.
+* 终结点必须接受`HTTP POST`请求。
+* 终结点必须接受并查看[!DNL Authorization]标头。 此标头的值将为： `Basic <credentials_provided_by_partner>`。
+* 终结点必须查看[!DNL Content-type]标头并验证其值是否为`application/x-www-form-urlencoded ; charset=UTF-8`。
+* 请求正文将为`grant_type=client_credentials`。
 
-### Audience Manager為取得持有人權杖而對合作夥伴端點提出的範例要求
+### Audience Manager向合作伙伴端点发出的示例请求，以获取持有者令牌
 
 ```
 POST /oauth2/token HTTP/1.1
@@ -58,7 +58,7 @@ Accept-Encoding: gzip
 grant_type=client_credentials
 ```
 
-### 來自合作夥伴端點的範例回應
+### 来自合作伙伴端点的示例响应
 
 ```
 HTTP/1.1 200 OK
@@ -71,13 +71,13 @@ Content-Length: 121
 {"token_type":"Bearer","access_token":"glIbBVohK8d86alDEnllPWi6IpjZvJC6kwBRuuawts6YMkw4tZkt84rEZYU2ZKHCQP3TT7PnzCQPI0yY"}
 ```
 
-### IRIS使用端點2來發佈使用持有人權杖的區段
+### IRIS使用持有者令牌发布区段时使用的端点2
 
-[!DNL Audience Manager] 當使用者符合區段資格時，會近乎即時傳送資料至此端點。 此外，此方法可傳送批次的離線或已上線資料，頻率為每24小時一次。
+[!DNL Audience Manager]近乎实时地将数据发送到此端点，因为用户符合区段资格。 此外，此方法可以每24小时发送一批离线或已载入的数据。
 
-端點1產生的持有人權杖用於發出對此端點的請求。 此 [!DNL Audience Manager] 即時資料傳輸系統、 [IRIS](../../../reference/system-components/components-data-action.md#iris)，會建構一般HTTPS要求並包含Authorization標頭。 此標頭的值將為：持有者 `<bearer token from step 1>`.
+端点1生成的持有者令牌用于发出对此端点的请求。 [!DNL Audience Manager]实时数据传输系统[IRIS](../../../reference/system-components/components-data-action.md#iris)构造了一个普通的HTTPS请求并包含授权标头。 此标头的值将为：持有者`<bearer token from step 1>`。
 
-### 來自合作夥伴端點的範例回應
+### 来自合作伙伴端点的示例响应
 
 ```
 GET /segments/aam HTTP/1.1
@@ -108,14 +108,14 @@ Accept-Encoding: gzip
 
 >[!NOTE]
 >
->此請求包含標準裝載（請求內容）。
+>此请求包含标准有效负载（请求内容）。
 
-## 重要考量 {#considerations}
+## 重要注意事项 {#considerations}
 
-### Token為密碼
+### 令牌是密码
 
-合作夥伴提供的憑證和取得的Token [!DNL Audience Manager] 使用進行驗證時 [!DNL OAuth 2.0] 流量是敏感資訊，不得與第三方共用。
+合作伙伴提供的凭据和[!DNL Audience Manager]在使用[!DNL OAuth 2.0]流进行身份验证时获得的令牌是敏感信息，不得与第三方共享。
 
-### [!DNL SSL] 為必填
+### [!DNL SSL]为必填项
 
-[!DNL SSL] 必須使用，才能維護安全的驗證程式。 所有請求，包括用來取得及使用權杖的請求，都必須使用 `HTTPS` 端點。
+必须使用[!DNL SSL]才能维护安全身份验证过程。 所有请求，包括用于获取和使用令牌的请求，都必须使用`HTTPS`端点。

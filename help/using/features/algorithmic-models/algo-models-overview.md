@@ -1,6 +1,6 @@
 ---
-description: 說明Audience Manager中可用的演演算法模型。
-keywords: 演演算法會模擬預測受眾的運作方式
+description: 描述Audience Manager中可用的算法模型。
+keywords: 算法可模拟预测受众的工作方式
 seo-description: Describes the algorithmic models available in Audience Manager.
 seo-title: Algorithmic Models Overview
 solution: Audience Manager
@@ -10,34 +10,34 @@ exl-id: ee5c3392-2756-45c5-b325-41a51d3c494f
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '279'
-ht-degree: 15%
+ht-degree: 1%
 
 ---
 
 # 算法模型概述
 
-## 什麼是演演算法建模{#what-algo-modeling}
+## 什么是算法建模{#what-algo-modeling}
 
-Audience Manager中的演演算法模型是指使用資料科學來擴展您現有的對象，或將其分類為角色。
+Audience Manager中的算法建模是指使用数据科学来扩展现有受众或将其分类为角色。
 
-這是透過兩種型別的演演算法完成： [!UICONTROL Look-Alike Modeling] 和 [!UICONTROL Predictive Audiences].
+这是通过两种类型的算法完成的： [!UICONTROL Look-Alike Modeling]和[!UICONTROL Predictive Audiences]。
 
-## 相似人群拓展建模{#lam}
+## 相似建模{#lam}
 
-[!UICONTROL Look-Alike Modeling] 可協助您透過自動化資料分析，探索新的不重複受眾。 當您選取特徵或區段、時間間隔以及第一方和第三方資料來源時，流程就會開始。 您的選擇會提供演演算法模型的輸入。 分析程式執行時，會根據所選母體的共用特性來尋找合格使用者。
+[!UICONTROL Look-Alike Modeling]可帮助您通过自动数据分析发现新的独特受众。 当您选择特征或区段、时间间隔以及第一方和第三方数据源时，流程就会开始。 您的选择为算法模型提供输入。 Analytics流程运行时，会根据选定群体的共享特征查找符合条件的用户。
 
-完成後，此資料可用於 [特徵產生器](../../features/traits/about-trait-builder.md) 您可以在其中根據下列專案建立特徵： [精確度和觸及](../../features/traits/trait-accuracy-reach.md). 此外，您也可以建立區段，將演演算法特徵與規則型特徵結合，並使用布林運算式和比較運運算元新增其他資格需求。
+完成后，此数据将在[特征生成器](../../features/traits/about-trait-builder.md)中可用，您可以在其中使用它根据[精度和范围](../../features/traits/trait-accuracy-reach.md)创建特征。 此外，您还可以构建将算法特征与基于规则的特征相结合的区段，并使用布尔表达式和比较运算符添加其他资格要求。
 
-[!UICONTROL Look-Alike Modeling] 可讓您以動態方式從所有可用特徵資料中擷取值。
+[!UICONTROL Look-Alike Modeling]为您提供了一种从所有可用特征数据中提取值的动态方法。
 
-若要深入瞭解 [!UICONTROL Look-Alike Modeling]，請參閱 [瞭解相似建模](understanding-models.md).
+要了解有关[!UICONTROL Look-Alike Modeling]的更多信息，请参阅[了解相似人群拓展建模](understanding-models.md)。
 
 ## Predictive Audiences{#predictive-audiences}
 
-[!UICONTROL Predictive Audiences] 可協助您使用進階資料科學技術，即時將未知的受眾分類為不重複角色。
+[!UICONTROL Predictive Audiences]可帮助您使用高级数据科学技术将未知受众实时分类为不同的角色。
 
-在营销环境中，角色是指由具有一系列相同特征（例如人口统计特征、浏览习惯、购物历史记录等）的访客、用户或潜在购买者构成的一个受众区段。
+在营销环境中，人物是由访客、用户或潜在购买者定义的受众区段，他们具有一组特定特征，如人口统计信息、浏览习惯、购物历史记录等。
 
-[!UICONTROL Predictive Audiences] 模型透過Audience Manager的機器學習功能，將未知的受眾自動分類為不重複角色，進一步運用此概念。 Audience Manager會計算未知對象對一組已知對象的傾向，以達到此目的。
+[!UICONTROL Predictive Audiences]模型通过使用Audience Manager的机器学习功能将未知受众自动分类为不同的角色，进一步扩展了此概念。 Audience Manager通过为一组已知受众计算未知受众的倾向来实现这一点。
 
-若要深入瞭解 [!UICONTROL Predictive Audiences]，請參閱 [預測受眾概述](predictive-audiences.md).
+要了解有关[!UICONTROL Predictive Audiences]的更多信息，请参阅[预测受众概述](predictive-audiences.md)。

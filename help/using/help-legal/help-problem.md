@@ -8,7 +8,7 @@ feature: Support
 exl-id: 2f7b9dbe-7aac-41b0-aab8-3b703d7a2441
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '370'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ r_problem.xml
 
 * **电话：** 1-800-497-0335
 
-   有关美国以外地区的免费电话，请访问我们的[客户支持区域电话号码](https://helpx.adobe.com/cn/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)。当要求您选择产品的选项时，请按 4 联系 [!DNL Audience Manager] 团队。
+  有关美国以外地区的免费电话，请访问我们的[客户支持区域电话号码](https://helpx.adobe.com/cn/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)。当要求您选择产品的选项时，请按 4 联系 [!DNL Audience Manager] 团队。
 
 * **电子邮件：** amsupport@adobe.com
 
@@ -74,7 +74,7 @@ r_problem.xml
  </tbody> 
 </table>
 
-## 如果发生服务中断 {#outage}
+## 如果发生中断 {#outage}
 
 如果您怀疑发生了服务中断，请首先查看 [Experience Cloud 系统状态页面](https://status.adobe.com) ( [!DNL https://status.adobe.com] )。此页面记录了包括 Audience Manager 在内的各个 Experience Cloud 解决方案的所有服务中断、事故和维护信息，同时还包含我们技术运营团队进行的最新更新。如果您仍然需要协助，请在联系客户关怀团队时，除了上面列出的信息之外，确保您还知道以下信息：
 

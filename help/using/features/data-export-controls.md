@@ -1,5 +1,5 @@
 ---
-description: 當此動作違反資料隱私權或資料使用協定時，「資料匯出控制」會阻止您傳送資料至目的地。
+description: 当此操作违反数据隐私或数据使用协议时，数据导出控制会阻止您向目标发送数据。
 seo-description: Data Export Controls prevent you from sending data to destinations when this action violates data privacy or data use agreements.
 seo-title: Data Export Controls
 solution: Audience Manager
@@ -16,93 +16,92 @@ ht-degree: 1%
 
 # 数据导出控制 {#data-export-controls}
 
-[!UICONTROL Data Export Controls] 當此動作違反資料隱私權或資料使用協定時，阻止您傳送資料至目的地。
+当此操作违反数据隐私或数据使用协议时，[!UICONTROL Data Export Controls]阻止您向目标发送数据。
 
 ## 概述 {#overview}
 
-[!UICONTROL Data Export Controls] 可讓您分類 [資料來源](../features/datasources-list-and-settings.md#data-sources-list-and-settings) 和 [目的地](../features/destinations/destinations.md). 您套用的分類會決定何時可以將或無法匯出資料至目的地。 此功能包含：
+[!UICONTROL Data Export Controls]允许您对[数据源](../features/datasources-list-and-settings.md#data-sources-list-and-settings)和[目标](../features/destinations/destinations.md)进行分类。 您应用的分类决定了何时可以或不能将数据导出到目标。 此功能包括：
 
-* **[!UICONTROL Data Export Controls]**：您可以設定資料匯出控制 *資料來源*. 在資料來源上設定時，這些控制會限制資料來源及其特徵的使用方式。
-* **[!UICONTROL Data Export Labels]**：您可以設定資料匯出標籤 *目的地*. 在目的地上設定時，這些標籤會識別目的地如何使用資料。 另請參閱 [將資料匯出標籤新增至目的地](/help/using/features/destinations/add-data-export-labels.md) 以瞭解如何將匯出標籤新增至目的地。
+* **[!UICONTROL Data Export Controls]**：您可以在&#x200B;*数据源*&#x200B;上设置数据导出控件。 在数据源上设置时，这些控件会限制数据源及其特征的使用方式。
+* **[!UICONTROL Data Export Labels]**：您可以在&#x200B;*目标*&#x200B;上设置数据导出标签。 在目标上设置时，这些标签将标识目标如何使用数据。 请参阅[将数据导出标签添加到目标](/help/using/features/destinations/add-data-export-labels.md)，了解如何将导出标签添加到目标。
 
-根據套用至資料來源和目的地的分類，匯出控制會禁止您：
+根据应用于数据源和目标的分类，导出控件会阻止您：
 
-* 當特徵屬於具有資料匯出控制的資料來源，而該資料匯出控制與區段對應的一或多個目的地上的資料匯出標籤不相容時，將特徵新增至區段。
-例如，假設區段對應至具有匯出標籤的目的地 **[!DNL This destination may enable a combination with personally identifiable information (PII)]**. 如果特徵所屬的資料來源具有的資料匯出控制項顯示 **[!DNL Cannot be tied to personally identifiable information (PII)]**.
-* 將任何資料傳送至目的地，而該目的地具有資料匯出標籤，且被任何下列專案的資料匯出控制項封鎖：
-   * 所包含特徵的資料來源；
-   * 用於所包含區段中的特徵資料來源；
-   * 包含的區段所利用的設定檔合併規則；
-   * 所包含區段的設定檔合併規則所使用的任何資料來源。
+* 当特征属于数据源时，该数据源具有的数据导出控制与区段映射到的一个或多个目标上的数据导出标签不兼容，则将特征添加到区段。
+例如，假设某个区段映射到具有导出标签**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目标。 如果特征所属的数据源具有显示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的数据导出控件，则导出控件会阻止您向此区段添加特征。
+* 将任意数据发送到具有以下数据导出标签的目标位置，该标签被任何位置上的数据导出控件阻止：
+   * 所包含特征的数据源；
+   * 在所包含区段中使用的特征的数据源；
+   * 包含的区段利用的用户档案合并规则；
+   * 所包含区段的配置文件合并规则使用的任何数据源。
 
-[!UICONTROL Data Export Controls] 可供所有Audience Manager客戶自動使用。 不過，您需要管理員許可權，才能將匯出控制項新增至資料來源。 將匯出標籤新增至目的地需要管理員許可權 *或* 有足夠的許可權可建立或編輯目的地。
+[!UICONTROL Data Export Controls]可自动供所有Audience Manager客户使用。 但是，您需要管理员权限才能将导出控件添加到数据源。 将导出标签添加到目标需要管理员权限&#x200B;*或*&#x200B;足够的特权才能创建或编辑目标。
 
-## 已定義的控制項和標籤 {#controls-labels}
+## 定义的控件和标签 {#controls-labels}
 
-[!UICONTROL Data Export Controls] 提供下列控制項，協助您分類資料來源和目的地。
+[!UICONTROL Data Export Controls]提供了以下控件以帮助您对数据源和目标进行分类。
 
-若要封鎖資料傳送，您必須使用匯出控制將資料來源分類，並將匯出標籤新增至目的地。 如果您只套用匯出控制項至資料來源或目的地，此功能不會限制資料傳送。 在兩個資料來源上設定時 *和* 目的地，匯出控制項會限制您可新增至區段的特徵，並防止將區段成員傳送至目的地。
+要阻止数据交付，您必须使用导出控件对数据源进行分类，并向目标添加导出标签。 如果仅将导出控件应用于数据源或目标，则此功能不会限制数据传送。 当在数据源&#x200B;*和*&#x200B;目标上设置时，导出控件将限制您可以添加到区段的特征，并阻止将区段成员发送到目标。
 
-此外，在資料傳送限制生效之前，必須至少有一個匯出標籤符合匯出控制。 例如，假設您新增 [!UICONTROL PII] 將控制項匯出至資料來源。 接下來，將站上目標定位標籤新增至目的地。 在此情況下，匯出控制將不會限制資料傳送，因為設定不相符。 不過，如果您新增 [!UICONTROL PII] 匯出標籤至目的地，匯出控制項會封鎖匯出。
+此外，在数据传送限制生效之前，必须至少有一个导出标签与导出控制匹配。 例如，假设您将[!UICONTROL PII]导出控件添加到数据源。 接下来，您将站点定位标签添加到目标。 在这种情况下，导出控件将不会限制数据交付，因为设置不匹配。 但是，如果将[!UICONTROL PII]导出标签添加到目标，导出控件将阻止导出。
 
 >[!IMPORTANT]
 >
->您不能藉由在區段的資料來源上放置資料匯出控制來封鎖區段的匯出，您必須在以下任一專案上設定控制：
-> * 區段中所使用特徵的資料來源；
-> * 該區段利用的設定檔合併規則；
-> * 區段的設定檔合併規則使用的任何資料來源。
-
+>不能通过在区段的数据源上放置数据导出控件来阻止区段的导出，必须在以下任一位置设置该控件：
+> * 区段中所用特征的数据源；
+> * 区段利用的用户档案合并规则；
+> * 区段的配置文件合并规则使用的任何数据源。
 
 <br> 
 
 <table id="table_7D1F0270B5604A82B96A13CC49C937C0"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 資料來源的資料匯出控制 </th> 
-   <th colname="col2" class="entry"> 目的地的資料匯出標籤 </th> 
+   <th colname="col1" class="entry"> 数据Source的数据导出控制 </th> 
+   <th colname="col2" class="entry"> 目标的数据导出标签 </th> 
    <th colname="col3" class="entry"> 描述 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> 無限制</span></b> </td> 
+   <td colname="col1"> <b><span class="uicontrol">无限制</span></b> </td> 
    <td colname="col2"> 不适用 </td> 
-   <td colname="col3"> 依預設，不會為新資料來源和目的地設定匯出限制。 </td> 
+   <td colname="col3"> 默认情况下，不会为新数据源和目标设置导出限制。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> 無法繫結至個人識別資訊</span></b> (PII) </td> 
-   <td colname="col2"> <b><span class="uicontrol"> 此目的地可能會啟用與個人識別資訊(PII)的組合</span></b> </td> 
-   <td colname="col3">選取後，您無法： 
+   <td colname="col1"> <b><span class="uicontrol">无法与个人身份信息绑定</span></b> (PII) </td> 
+   <td colname="col2"> <b><span class="uicontrol">此目标可能会启用与个人身份信息(PII)的组合</span></b> </td> 
+   <td colname="col3">选中后，您无法： 
     <ul id="ul_0D5A4D0373374217A4BACDFC3BB2F79D"> 
-     <li id="li_C32FC26C6E814412A1C73B840E81BB68">將特徵新增至對應至使用PII之目的地的區段。 </li> 
-     <li id="li_BF4FD10807AF4E109CEA22FBD3F6F9B3">將資料來源中利用特徵建立的區段對應至使用PII的目的地。 </li> 
-    </ul> <p>協力廠商資料提供者及使用包含廣告/媒體追蹤資訊的資料來源時，通常需要用到這項資訊。 </p> </td> 
+     <li id="li_C32FC26C6E814412A1C73B840E81BB68">将特征添加到映射到使用PII的目标的区段。 </li> 
+     <li id="li_BF4FD10807AF4E109CEA22FBD3F6F9B3">将使用特征构建的区段从数据源映射到使用PII的目标。 </li> 
+    </ul> <p>这通常由第三方数据提供商在使用包含广告/媒体跟踪信息的数据源时要求。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> 無法用於網站上的廣告目標定位</span></b> </td> 
-   <td colname="col2"> <b><span class="uicontrol"> 此目的地可用於網站上的廣告目標定位</span></b> </td> 
-   <td colname="col3">選取後，您無法： 
+   <td colname="col1"> <b><span class="uicontrol">不能用于现场广告定位</span></b> </td> 
+   <td colname="col2"> <b><span class="uicontrol">此目标可用于现场广告定位</span></b> </td> 
+   <td colname="col3">选中后，您无法： 
     <ul id="ul_5B17972E7E0C424A833AD540DFF3CBF2"> 
-     <li id="li_05810CEAC8CB4616BB2D52DDDADA84A8">將特徵新增至對應至目的地的區段，這些區段會根據訪客的網頁瀏覽歷史記錄自訂廣告傳遞。 </li> 
-     <li id="li_B2C3479ECEA74F49B9A2CFDDEE128DF3">將資料來源中利用特徵建立的區段對應至目的地，該目的地會根據訪客的網頁瀏覽記錄來自訂廣告傳送。 </li> 
+     <li id="li_05810CEAC8CB4616BB2D52DDDADA84A8">向映射到目标的区段添加特征，这些区段根据访客的Web浏览历史记录自定义广告投放。 </li> 
+     <li id="li_B2C3479ECEA74F49B9A2CFDDEE128DF3">将使用特征构建的区段从数据源映射到根据访客的Web浏览历史记录自定义广告投放的目标。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> 無法用於離站廣告目標定位</span></b> </td> 
-   <td colname="col2"> <b><span class="uicontrol"> 此目的地可用於離站廣告目標定位</span></b> </td> 
-   <td colname="col3">選取後，您無法： 
+   <td colname="col1"> <b><span class="uicontrol">不能用于站外广告定位</span></b> </td> 
+   <td colname="col2"> <b><span class="uicontrol">此目标可用于站外广告定位</span></b> </td> 
+   <td colname="col3">选中后，您无法： 
     <ul id="ul_B9352FF5282C481BA3A24C581217A156"> 
-     <li id="li_0F89583A603D4CD8804724954CFD52C6">將特徵新增至對應至目的地的區段，重新鎖定其他網站上的使用者。 </li> 
-     <li id="li_ABDD8BEDE9AF411695C7BDF9AE522BA7">將資料來源中利用特徵建立的區段對應至其他網站上重新鎖定使用者的目的地。 </li> 
-    </ul> <p>使用社群媒體平台的資料時通常需要。 </p> </td> 
+     <li id="li_0F89583A603D4CD8804724954CFD52C6">将特征添加到映射到目标的区段，这些区段会重新定位其他网站上的用户。 </li> 
+     <li id="li_ABDD8BEDE9AF411695C7BDF9AE522BA7">将使用特征构建的区段从数据源映射到可在其他网站上重新定位用户的目标。 </li> 
+    </ul> <p>处理来自社交媒体平台的数据时通常需要使用此变量。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> 無法用於網站上的個人化</span></b> </td> 
-   <td colname="col2"> <b><span class="uicontrol"> 此目的地可用於網站上的廣告個人化</span></b> </td> 
-   <td colname="col3">選取後，您無法： 
+   <td colname="col1"> <b><span class="uicontrol">不能用于现场个性化</span></b> </td> 
+   <td colname="col2"> <b><span class="uicontrol">此目标可用于现场广告个性化</span></b> </td> 
+   <td colname="col3">选中后，您无法： 
     <ul id="ul_3360EB209E07402A863F0E7473B99D3F"> 
-     <li id="li_88B3842B67E040EB9DC0BBEB8E5EC251">將特徵新增至對應至目的地的區段，這些區段會根據使用者興趣或網頁瀏覽記錄來自訂內容。 </li> 
-     <li id="li_6506254CCE6546039A3D82B60368C8B4">將使用特徵建立的區段從資料來源對應到目的地，以便根據使用者興趣或網頁瀏覽歷史記錄來自訂內容。 </li> 
+     <li id="li_88B3842B67E040EB9DC0BBEB8E5EC251">向映射到目标的区段添加特征，这些区段根据用户兴趣或Web浏览历史记录自定义内容。 </li> 
+     <li id="li_6506254CCE6546039A3D82B60368C8B4">将使用特征构建的区段从数据源映射到根据用户兴趣或Web浏览历史记录自定义内容的目标。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -110,7 +109,7 @@ ht-degree: 1%
 
 ## 工作流 {#workflow}
 
-若要開始使用，請檢閱資料來源和目的地檔案。 這些文章提供如何新增匯出控制項和標籤至您的資料來源和目的地的指示。
+要开始配置，请查看数据源和目标文档。 这些文章提供了有关如何向数据源和目标添加导出控件和标签的说明。
 
 * [创建数据源](../features/manage-datasources.md#create-data-source)
-* [將資料匯出標籤新增至目的地](../features/destinations/add-data-export-labels.md)
+* [将数据导出标签添加到目标](../features/destinations/add-data-export-labels.md)

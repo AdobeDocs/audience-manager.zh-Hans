@@ -1,74 +1,74 @@
 ---
-description: 將「對象管理模組」新增至Adobe Analytics AppMeasurement，將Analytics資料轉送至Audience Manager，而非讓Audience ManagerData Integration Library(DIL)代碼從頁面傳送畫素。
-keywords: audience analytics； analytics； ssf；伺服器端轉送
+description: 将受众管理模块添加到Adobe AnalyticsAppMeasurement以将Analytics数据转发到Audience Manager，而不是让Audience ManagerData Integration Library(DIL)代码从页面发送一个像素。
+keywords: 受众分析；analytics；ssf；服务器端转发
 seo-description: Add the Audience Management Module to Adobe Analytics AppMeasurement to forward Analytics data to Audience Manager instead of having the Audience Manager Data Integration Library (DIL) code send a pixel from the page.
 seo-title: Implement the Audience Management Module
 solution: Audience Manager
-title: 實作對象管理模組
+title: 实施受众管理模块
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 feature: Adobe Analytics Integration
 exl-id: af2449cd-5fc8-454a-adce-0da7cae80548
 source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 2%
+source-wordcount: '457'
+ht-degree: 1%
 
 ---
 
-# 如何從轉送資料 [!DNL Adobe Analytics] 至 [!DNL Audience Manager] {#implement-the-audience-management-module}
+# 如何将数据从[!DNL Adobe Analytics]转发到[!DNL Audience Manager] {#implement-the-audience-management-module}
 
-請依照本教學課程中的步驟來轉寄 [!DNL Analytics] 資料目標 [!DNL Audience Manager] ，而非 [!DNL Audience Manager] [!UICONTROL Data Integration Library] ([!DNL DIL])程式碼會從頁面傳送畫素。
+按照本教程中的步骤将[!DNL Analytics]数据转发到[!DNL Audience Manager]，而不是让[!DNL Audience Manager] [!UICONTROL Data Integration Library] ([!DNL DIL])代码从页面发送像素。
 
 >[!TIP]
 >
->我們建議您使用 [!DNL Adobe Experience Platform Tags] 轉寄 [!UICONTROL Analytics] 資料匯入 [!DNL Audience Manager]. 透過使用 [!UICONTROL Tags]，您不必手動將程式碼複製到 [!DNL AppMeasurement]，如本頁所示。
+>我们建议您使用[!DNL Adobe Experience Platform Tags]将[!UICONTROL Analytics]数据转发到[!DNL Audience Manager]。 通过使用[!UICONTROL Tags]，您不必手动将代码复制到[!DNL AppMeasurement]，如本页所示。
 
 ## 先决条件 {#prereqs}
 
-除了啟用擴充功能或實作本檔案所述的程式碼外，您還必須：
+除了启用扩展或实施本文档中描述的代码之外，您还必须：
 
-* 實作 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
-* 啟用 [伺服器端轉送](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) 中的報表套裝 [!UICONTROL Adobe Analytics Admin Console].
+* 实施[Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
+* 为[!UICONTROL Adobe Analytics Admin Console]中的报表包启用[服务器端转发](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
 
 ## 实施 {#implementation}
 
-實作資料轉送的方法有兩種 [!DNL Adobe Analytics] 至 [!DNL Audience Manager]，視您使用的標籤管理解決方案而定。
+有两种方法可以实施从[!DNL Adobe Analytics]到[!DNL Audience Manager]的数据转发，具体取决于您使用的标签管理解决方案。
 
-### 實作，使用 [!DNL Adobe Experience Platform Tags]
+### 使用[!DNL Adobe Experience Platform Tags]的实施
 
-[!DNL Adobe] 建議您使用 [標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en) 樂器延伸 [!DNL Adobe Analytics] 和 [!DNL Audience Manager] 在您的屬性上。 在這種情況下，您不需要手動複製任何程式碼。 反之，您必須在以下位置啟用資料分享： [!DNL Analytics] 副檔名，如下圖所示。 另請參閱 [Adobe Analytics擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html#adobe-audience-manager) 說明檔案。
+[!DNL Adobe]建议您使用[Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)扩展来检测资产上的[!DNL Adobe Analytics]和[!DNL Audience Manager]。 在这种情况下，您无需手动复制任何代码。 相反，您必须在[!DNL Analytics]扩展中启用数据共享，如下图所示。 另请参阅[Adobe Analytics扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html#adobe-audience-manager)文档。
 
 >[!TIP]
 >
->如果您安裝 [!DNL Adobe Analytics] 擴充功能， *不要* 同時安裝 [!DNL Audience Manager] 副檔名。 從轉送資料 [!DNL Analytics] 擴充功能會取代 [!DNL Audience Manager] 擴充功能。
+>如果安装[!DNL Adobe Analytics]扩展，则&#x200B;*不要*&#x200B;也安装[!DNL Audience Manager]扩展。 从[!DNL Analytics]扩展转发数据将替换[!DNL Audience Manager]扩展功能。
 
-![如何從Adobe Analytics擴充功能啟用資料共用至Audience Manager](/help/using/integration/assets/analytics-to-aam.png)
+![如何启用从Adobe Analytics扩展到Audience Manager的数据共享](/help/using/integration/assets/analytics-to-aam.png)
 
-## 定義的程式碼元素 {#code-elements-defined}
+## 定义的代码元素 {#code-elements-defined}
 
-下表定義程式碼範例中的重要變數。
+下表定义了代码示例中的重要变量。
 
 | 参数 | 描述 |
 |--- |--- |
-| `partner` | 必需。這是由指派給您的合作夥伴名稱 [!DNL Adobe]. 有時稱為 [!UICONTROL partner ID] 或合作夥伴子網域。  聯絡您的 [!DNL Adobe] 顧問或 [客戶服務](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html) 如果您不知道您的合作夥伴名稱。 |
-| `containerNSID` | 必需。大部分客戶只需設定  `"containerNSID":0` . 不過，如果您的公司需要自訂使用不同容器的ID同步，您可以在此處指定該容器ID。 |
-| `uuidCookie` | 可选。此設定可讓您設定 [!DNL Adobe] 第一方網域中的cookie。 此 [!DNL cookie] 包含 [UUID](../../reference/ids-in-aam.md) . |
-| `visitorService` - `namespace` | 必需。此 `namespace` 若您使用 [!DNL AudienceManagement] 模組搭配 [!UICONTROL AppMeasurement] 版本2.10或更新版本。 此 [!UICONTROL AudienceManagement] 模組需要您使用 [!UICONTROL Adobe Experience Platform Identity Service] 3.3或更新版本。 <br><br>此 [!UICONTROL Experience Cloud Organization ID] 是公司註冊時提供的ID。 [!UICONTROL Experience Cloud]. 瞭解您公司的組織ID，請參閱 [組織和帳戶連結](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html). |
+| `partner` | 必需。这是[!DNL Adobe]分配给您的合作伙伴名称。 它有时称为您的[!UICONTROL partner ID]或合作伙伴子域。  如果您不知道自己的合作伙伴名称，请联系您的[!DNL Adobe]顾问或[客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)。 |
+| `containerNSID` | 必需。大多数客户只能设置`"containerNSID":0` 。 但是，如果您的公司需要使用其他容器自定义ID同步，则可以在此处指定该容器ID。 |
+| `uuidCookie` | 可选。此配置允许您在第一方域中设置[!DNL Adobe] Cookie。 此[!DNL cookie]包含[UUID](../../reference/ids-in-aam.md) 。 |
+| `visitorService` - `namespace` | 必需。如果您使用与[!UICONTROL AppMeasurement]版本2.10或更高版本捆绑在一起的[!DNL AudienceManagement]模块，则需要`namespace`参数。 此[!UICONTROL AudienceManagement]模块要求您使用[!UICONTROL Adobe Experience Platform Identity Service] 3.3或更高版本。 <br><br> [!UICONTROL Experience Cloud Organization ID]是公司注册[!UICONTROL Experience Cloud]时向其提供的ID。 在[组织和帐户关联](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)中查找您公司的组织ID。 |
 
-## 結果：資料轉送至 [!DNL Audience Manager] {#results-data-forwarding}
+## 结果：数据转发到[!DNL Audience Manager] {#results-data-forwarding}
 
-您的 [!DNL Analytics] 實作會將資料傳送至 [!DNL Audience Manager] 在您擁有以下專案後：
+您的[!DNL Analytics]实施在执行以下操作后将数据发送到[!DNL Audience Manager]：
 
-* 已啟用 [!UICONTROL Server-Side Forwarding] （請洽詢您的顧問以瞭解此功能）；
-* 已實作 [!DNL Adobe Experience Platform Identity Service]；
-* 已按照本教學課程中的實作步驟進行。
+* 已启用[!UICONTROL Server-Side Forwarding]（与您的顾问讨论此功能）；
+* 已实施[!DNL Adobe Experience Platform Identity Service]；
+* 按照本教程中的实施步骤进行操作。
 
-此程式會將資料傳送至 [!DNL Audience Manager]：
+此进程将数据发送到[!DNL Audience Manager]：
 
-* 在頁面檢視呼叫上；
-* 從追蹤的連結；
-* 從視訊里程碑和心率視訊檢視。
+* 在页面查看调用时；
+* 从跟踪的链接；
+* 从视频里程碑和心率视频查看。
 
 >[!NOTE]
 >
->傳送至的變數 [!DNL Audience Manager] 從 [!DNL Analytics] 使用特殊字首。 建立時，您需要瞭解並考慮這些字首 [!DNL Audience Manager] 特徵。 如需這些字首的詳細資訊，請參閱 [關鍵變數的前置詞要求](../../features/traits/trait-variable-prefixes.md).
+>从[!DNL Analytics]发送到[!DNL Audience Manager]的变量使用特殊前缀。 在创建[!DNL Audience Manager]特征时，您需要了解并考虑这些前缀。 有关这些前缀的更多信息，请参阅[键变量的前缀要求](../../features/traits/trait-variable-prefixes.md)。

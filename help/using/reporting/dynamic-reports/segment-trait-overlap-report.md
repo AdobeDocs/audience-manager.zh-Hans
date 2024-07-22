@@ -1,5 +1,5 @@
 ---
-description: 傳回特定特徵和整個區段之間共用的不重複使用者人數資料。
+description: 返回有关特定特征和整个区段之间共享的独特用户数的数据。
 seo-description: Returns data on the number of unique users shared between a particular trait and an entire segment.
 seo-title: Segment-to-Trait Overlap Report
 solution: Audience Manager
@@ -9,18 +9,18 @@ feature: Overlap Reports
 exl-id: 7ce3dd2d-ab22-46f8-90bf-a32222df2e76
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 5%
+source-wordcount: '831'
+ht-degree: 3%
 
 ---
 
 # 区段到特征重叠报表{#segment-to-trait-overlap-report}
 
-傳回特定特徵和整個區段之間共用的不重複使用者人數資料。
+返回有关特定特征和整个区段之间共享的独特用户数的数据。
 
 >[!NOTE]
 >
->Audience Manager中的重疊報表遵循RBAC原則。 您只能根據以下專案從您有權存取的資料來源檢視區段和特徵 [rbac使用者群組](/help/using/features/administration/administration-overview.md) 您所屬的。
+>Audience Manager中的重叠报表遵循RBAC原则。 您只能根据您所属的[RBAC用户组](/help/using/features/administration/administration-overview.md)，从您有权访问的数据源中查看区段和特征。
 
 <!-- 
 
@@ -30,21 +30,21 @@ c_segment_trait_overlap.xml
 
 ## 概述
 
-作為最佳化工具， [!UICONTROL Segment to Trait Overlap] 報表可協助您建立高度聚焦的區段，或擴大區段觸及率。 例如，您可以建立高度重疊的重點區段和特徵，以觸及特定對象。 不過，大量重疊可能代表不重複使用者較少（觸及範圍較小）。 執行此報告可移除有許多區段重疊的特徵，並以重疊較少的特徵取代，以協助擴大觸及率。
+作为优化工具，[!UICONTROL Segment to Trait Overlap]报表可帮助您构建重点突出的区段或扩大区段范围。 例如，您可以创建具有高重叠度的重点区段和特征以覆盖特定受众。 但是，大量重叠可能意味着独特用户更少（覆盖范围更小）。 运行此报告有助于通过删除具有大量区段重叠的特征，并将它们替换为重叠较少的特征，来扩展范围。
 
-### 範例報告
+### 示例报告
 
-下圖提供 [!UICONTROL Segment-to-Trait Overlap] 報告。
+下图提供了[!UICONTROL Segment-to-Trait Overlap]报表的高级概述。
 
 ![](assets/segment-to-trait-overlap.png)
 
-### 深入研究個別資料點
+### 向下展开单个数据点
 
-選取個別點，以在快顯視窗中檢視資料詳細資訊。 您的點按動作會自動更新報表中顯示的資料。
+选择单个点以在弹出窗口中查看数据详细信息。 您的单击操作会自动更新报告中显示的数据。
 
-## 比較區段與特徵 {#comparing-segments-to-traits}
+## 将区段与特征进行比较 {#comparing-segments-to-traits}
 
-說明如何比較區段和特徵，以從結果中得出有意義的資訊。
+描述如何比较区段和特征以从结果中获取有意义的信息。
 
 <!-- 
 
@@ -52,22 +52,22 @@ c_compare_s2t.xml
 
  -->
 
-### 比較特徵和區段唯一性：範例
+### 比较特征和区段唯一性：示例
 
-乍看之下，將區段與特徵進行比較並嘗試從結果中得出結論似乎不合邏輯。 畢竟，區段和特徵是不同的，所以從不同的專案衍生的資料有什麼意義？ 不過，在此案例中，我們並非比較特徵和區段，而是比較兩者之間共用的不重複訪客數量。 共用的不重複訪客計數提供通用值，可讓區段與特徵比較。
+乍一看，将区段与特征进行比较并尝试从结果中得出结论似乎不合逻辑。 毕竟，区段和特征是不同的，那么从完全不同的项目获得的数据又有什么意义呢？ 但是，在本例中，我们不是比较特征和区段，而是比较特征与区段之间共享的独特访客数量。 共享的唯一访客计数提供了一个通用值，可用于将区段与特征进行比较。
 
-下圖說明特徵與其所屬區段之間的關係。 在此案例中，我們有一個特徵包含10位訪客，而區段包含1,000位訪客。 他們共用3個不重複訪客。
+下图说明了特征与其所属的区段之间的关系。 在本例中，我们有一个包含10位访客的特征和一个包含1,000位访客的区段。 他们共用3个独特访客。
 
 ![](assets/s2t.png)
 
-不重複訪客計數是這些不同物件類別之間共用的共同常數值。 因此，您可以依照下列方式判斷兩者之間的不重複訪客關係：
+独特访客计数是在这些不同的对象类之间共享的通用常量值。 因此，您可以确定它们之间的独特访客关系，如下所示：
 
-* 特徵的30%不重複訪客與該區段共用(3/10 = 0.30)。
-* 區段與特徵共用0.3%的不重複訪客(3/1,000 = 0.003)
+* 该特征与区段共享其30%的独特访客(3/10 = 0.30)。
+* 该区段与特征共享其0.3%的独特访客(3/1,000 = 0.003)
 
-### 尋找區段值以進行特徵比較
+### 在区段与特征比较中查找值
 
-檢視特徵和區段之間的重疊有助於估計可用的訪客集區總數（預測），或找出重疊太多且效率低下的區段。
+查看特征和区段之间的重叠可以帮助您估计可用访客池（预测）总数或查找重叠过多的低效区段。
 
 <table id="table_5B211EF95216426299EB20253A5A9C1B"> 
  <thead> 
@@ -78,19 +78,19 @@ c_compare_s2t.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><b>預測</b> </td> 
-   <td colname="col2"> <p>若要判斷可用的訪客集區，請加總特徵總計（較少重疊）和區段總計（較少重疊）之間的差異。 </p> <p>此區段特徵組合最多可達1004名新使用者。 </p> </td> 
+   <td colname="col1"><b>预测</b> </td> 
+   <td colname="col2"> <p>要确定可用的访客池，请对特征总计（较少重叠）和区段总计（较少重叠）之间的差异求和。 </p> <p>此区段 — 特征组合最多可以包含1004个新用户。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b>尋找低效區段</b> </td> 
-   <td colname="col2"> <p>如果特徵屬於 <span class="wintitle"> 和</span> 群組，則具有該特徵的不重複訪客已存在於區段中，且無法新增至區段。 您可以使用此報表尋找低重疊的相關特徵，並將其新增至區段定義，藉此擴大該區段受眾集區的觸及率。 </p> </td> 
+   <td colname="col1"><b>查找效率低下的区段</b> </td> 
+   <td colname="col2"> <p>如果某个特征属于区段定义中的<span class="wintitle"> AND</span>组，则具有该特征的独特访客已存在于区段中，并且无法添加到区段中。 您可以使用此报表查找重叠程度较低的相关特征，并将其添加到区段定义，从而扩大该区段受众池的覆盖范围。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 瞭解區段對特徵重疊報表中的資料篩選器 {#data-filters-s2t-report}
+## 了解区段到特征重叠报表中的数据过滤器 {#data-filters-s2t-report}
 
-說明特徵和區段不重複重疊%滑桿如何運作。
+描述特征和区段唯一重叠%滑块的工作方式。
 
 <!-- 
 
@@ -98,23 +98,23 @@ r_s2t_sliders.xml
 
  -->
 
-此 [!UICONTROL Segment-to-Trait overlap] 報表可讓您使用兩個滑桿，依特徵或區段依重疊百分比篩選資料。
+[!UICONTROL Segment-to-Trait overlap]报表允许您使用两个滑块按特征或区段重叠百分比过滤数据。
 
-* **[!UICONTROL Filter Trait Uniques %:]** 依特徵和區段之間共用的不重複訪客百分比篩選資料。
-* **[!UICONTROL Filter Segment Uniques Overlap %:]** 依區段和特徵之間共用的不重複訪客百分比篩選資料。
+* **[!UICONTROL Filter Trait Uniques %:]**&#x200B;按特征和区段之间共享的独特访客的%过滤数据。
+* **[!UICONTROL Filter Segment Uniques Overlap %:]**&#x200B;按区段和特征之间共享的独特访客的%过滤数据。
 
 ### 示例
 
-下圖說明特徵唯一值%與區段唯一值%之間的差異。 在這種情況下，特徵和區段共用3個不重複訪客。 以比例顯示：
+下图说明了特征唯一值%与区段唯一值%之间的差异。 在这种情况下，特征和区段共享3个独特访客。 按比例：
 
-* 特徵的30%不重複訪客與該區段共用(3/10 = 0.30)。
-* 區段與特徵共用0.3%的不重複訪客(3/1,000 = 0.003)
+* 该特征与区段共享其30%的独特访客(3/10 = 0.30)。
+* 该区段与特征共享其0.3%的独特访客(3/1,000 = 0.003)
 
 ![](assets/s2t.png)
 
-## 定義的區段對特徵資料快顯欄位 {#fields-defined}
+## 定义的区段到特征数据Pop字段 {#fields-defined}
 
-說明當您按一下個別資料點時，彈出式視窗中顯示的量度。
+描述单击单个数据点时弹出式窗口中显示的量度。
 
 <!-- 
 
@@ -122,7 +122,7 @@ r_s2t_data_pop.xml
 
  -->
 
-的快顯視窗 [!UICONTROL Segment-to-Trait Overlap] 報表包含下列量度。 請注意，表格中的不重複量度代表 *即時使用者*.
+[!UICONTROL Segment-to-Trait Overlap]报表的弹出窗口包含下列量度。 请注意，表中的唯一量度表示您的&#x200B;*实时用户*。
 
 <table id="table_4AF72754276242FFB11543635B43AD90"> 
  <thead> 
@@ -133,48 +133,48 @@ r_s2t_data_pop.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 區段ID</span></b> </td> 
-   <td colname="col2"> 區段的不重複數值ID。 </td> 
+   <td colname="col1"><b><span class="wintitle">区段ID</span></b> </td> 
+   <td colname="col2"> 区段的唯一数值ID。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 特徵資料來源 </span></b> </td> 
-   <td colname="col2"> 特徵擁有者的名稱。 </td> 
+   <td colname="col1"><b><span class="wintitle">特征数据Source </span></b> </td> 
+   <td colname="col2"> 特征所有者的名称。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 資料來源型別</span></b> </td> 
-   <td colname="col2">定義特徵所屬的提供者型別。 可以是： 
+   <td colname="col1"><b><span class="wintitle">数据Source类型</span></b> </td> 
+   <td colname="col2">定义特征所属的提供程序的类型。 可以是： 
     <ul id="ul_0477C04A33FD4F5D998B98984E6554D3"> 
-     <li id="li_50FCA48EDB5843AB8FB6C34ED2C0067D">第一方（您自己的特徵）。 </li> 
-     <li id="li_4F6148EDAEFE43FA8D505944E9FE3855">第三方（來自外部資料合作夥伴/廠商）。 </li> 
+     <li id="li_50FCA48EDB5843AB8FB6C34ED2C0067D">第一方（您自己的特征）。 </li> 
+     <li id="li_4F6148EDAEFE43FA8D505944E9FE3855">第三方（来自外部数据合作伙伴/供应商）。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 特徵ID</span></b> </td> 
-   <td colname="col2"> 特徵的不重複數值ID。 </td> 
+   <td colname="col1"><b><span class="wintitle">特征ID</span></b> </td> 
+   <td colname="col2"> 特征的唯一数值ID。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 特徵名稱</span></b> </td> 
-   <td colname="col2"> 特徵名稱。 </td> 
+   <td colname="col1"><b><span class="wintitle">特征名称</span></b> </td> 
+   <td colname="col2"> 特征的名称。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 特徵不重複重疊百分比</span></b> </td> 
-   <td colname="col2"> 特徵與此區段共用的不重複訪客百分比。 </td> 
+   <td colname="col1"><b><span class="wintitle">特征唯一项重叠%</span></b> </td> 
+   <td colname="col2"> 特征与区段共享的独特访客百分比。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 區段不重複重疊百分比</span></b> </td> 
-   <td colname="col2"> 某個區段與某個特徵共用的不重複訪客百分比。 </td> 
+   <td colname="col1"><b><span class="wintitle">区段唯一值重叠%</span></b> </td> 
+   <td colname="col2"> 区段与某个特征共享的独特访客百分比。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 重疊不重複專案</span></b> </td> 
-   <td colname="col2"> 區段和特徵之間共用的不重複訪客數量。 </td> 
+   <td colname="col1"><b><span class="wintitle">个重叠唯一值</span></b> </td> 
+   <td colname="col2"> 在区段和特征之间共享的独特访客数。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 區段唯一值</span></b> </td> 
-   <td colname="col2"> 區段中的不重複訪客數量。 </td> 
+   <td colname="col1"><b><span class="wintitle">区段唯一值</span></b> </td> 
+   <td colname="col2"> 区段中的独特访客数。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 特徵不重複</span></b> </td> 
-   <td colname="col2"> 特徵中的不重複訪客數量。 </td> 
+   <td colname="col1"><b><span class="wintitle">特征独特</span></b> </td> 
+   <td colname="col2"> 特征中的独特访客数。 </td> 
   </tr> 
  </tbody> 
 </table>
@@ -182,9 +182,8 @@ r_s2t_data_pop.xml
 >[!MORELIKETHIS]
 >
 >* [使用数据滑块筛选报表结果](../../reporting/dynamic-reports/data-sliders.md)
->* [互動式報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
->* [說明報表圖示和工具](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
+>* [交互式报表中使用的形状、颜色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
+>* [报告图标和工具说明](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
 >* [重叠报表：更新计划和最小区段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
->* [选定 Audience Manager 报表中的数据取样率和错误率...](../../reporting/report-sampling.md)
+>* [选定Audience Manager报表中的数据取样率和错误率……](../../reporting/report-sampling.md)
 >* [重叠报表的 CSV 文件](../../reporting/dynamic-reports/overlap-csv-files.md)
-

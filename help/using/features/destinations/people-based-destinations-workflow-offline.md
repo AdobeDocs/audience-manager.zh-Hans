@@ -1,48 +1,48 @@
 ---
-description: 此頁面包含如何從僅限離線使用的客戶資料建立對象區段，並傳送至People-Based Destinations的逐步指南。
+description: 本页包含有关如何从仅离线客户数据构建受众区段并将它们发送到基于人员的目标的分步指南。
 seo-description: This page includes step-by-step guidance on how to build audience segments from offline-only customer data, and send them to People-Based Destinations.
 seo-title: Workflow B - Personalization Based on Offline-Only Data
 solution: Audience Manager
-title: 工作流程 B - 基于仅离线数据进行个性化
+title: 工作流程B — 基于仅离线数据的Personalization
 feature: People-based Destinations
 exl-id: d980de26-3133-4ae3-80c2-8c3bf2480bbd
 source-git-commit: 87c3169083f0dc66490e6a8c808e16371f1d78c0
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 6%
+source-wordcount: '1123'
+ht-degree: 1%
 
 ---
 
-# 工作流程 B - 基于仅离线数据进行个性化 {#workflow-b}
+# 工作流程B — 基于仅离线数据的Personalization {#workflow-b}
 
 >[!IMPORTANT]
->本文包含產品檔案，旨在引導您完成此功能的設定和使用。 本文不包含任何法律建議。 請諮詢您自己的法律顧問，以獲得法律指引。
+>本文包含产品文档，旨在指导您完成此功能的设置和使用。 此处不包含任何法律建议。 请咨询您自己的法律顾问以获得法律指导。
 
-此頁面包含如何從僅限離線使用的客戶資料建立對象區段，並傳送至People-Based Destinations的逐步指南。
+本页包含有关如何从仅离线客户数据构建受众区段并将它们发送到基于人员的目标的分步指南。
 
-## 步驟1 — 上線離線特徵 {#step-1-onboard-traits}
+## 步骤1 — 载入离线特征 {#step-1-onboard-traits}
 
-在此案例中建立受眾區段的第一步，是將您的離線客戶資料帶入Audience Manager。
+在此场景中创建受众区段的第一步是将您的离线客户数据导入Audience Manager。
 
 >[!IMPORTANT]
 >
-> 在繼續之前，請確定您即將上線的客戶活動已定義在與對應的Audience Manager中 [已上線的特徵](../traits/trait-and-segment-qualification-reference.md).
+> 在继续之前，请确保已在Audience Manager中定义了您即将载入的客户活动，并具有相应的[已载入的特征](../traits/trait-and-segment-qualification-reference.md)。
 
-無論您現有的Audience Manager客戶ID為([DPUUID](../../reference/ids-in-aam.md))是否為雜湊電子郵件，您必須對包含下列專案的資料來源執行特徵上線： [DPUUID](../../reference/ids-in-aam.md).
+无论您现有的Audience Manager客户ID ([DPUUID](../../reference/ids-in-aam.md))是否为哈希电子邮件，您都必须对包含[DPUUID](../../reference/ids-in-aam.md)的数据源执行特征载入。
 
 ### 示例
 
-您想要確認下表中的客戶ID是否符合對應的已上線特徵ID。 讓我們考慮您的 [DPUUID](../../reference/ids-in-aam.md) 會儲存在ID為999999的資料來源中，而您的Audience Manager資料來源ID為123。
+您希望下表中的客户ID符合相应的已载入特征ID。 假定您的[DPUUID](../../reference/ids-in-aam.md)存储在ID为999999的数据源中，并且您的Audience Manager数据源ID为123。
 
-| 客戶ID (DPUUID) | 已上線特徵ID |
+| 客户ID (DPUUID) | 已载入的特征ID |
 | -------------------------------------- | ------------------- |
-| 68079982765673198504052656074456196039 | 12345, 23456 |
+| 68079982765673198504052656074456196039 | 12345， 23456 |
 | 67412682083411995725538770443620307584 | 45678 |
-| 89159024796760343733111707646026765593 | 11223, 93342, 27341 |
+| 89159024796760343733111707646026765593 | 11223， 93342， 27341 |
 
 <br />
 
-若要讓上述範例中的客戶ID符合對應已上線特徵的資格，您必須上傳 [傳入資料檔案](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md) 包含下列內容：
+要使上述示例中的客户ID符合相应的已载入特征，必须上传包含以下内容的[入站数据文件](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)：
 
 ```
 68079982765673198504052656074456196039<TAB>d_sid=12345,d_sid=23456
@@ -50,65 +50,65 @@ ht-degree: 6%
 89159024796760343733111707646026765593<TAB>d_sid=11223,d_sid=93342,d_sid=27341
 ```
 
-檔案名稱如下所示： `ftp_dpm_999999_123_TIMESTAMP.sync.gz`.
-另請參閱 [傳入資料檔案的Amazon S3名稱和檔案大小要求](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) 檔案名稱結構的詳細資訊。
+文件名应如下所示： `ftp_dpm_999999_123_TIMESTAMP.sync.gz`。
+有关文件名结构的详细信息，请参阅入站数据文件的[Amazon S3名称和文件大小要求](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
 
-## 步驟2 — 設定資料來源設定 {#configure-data-source-settings}
+## 步骤2 — 配置数据Source设置 {#configure-data-source-settings}
 
-視您的 [DPUUID](../../reference/ids-in-aam.md) 如果是小寫、雜湊的電子郵件地址，您可能需要設定將儲存雜湊電子郵件地址的資料來源。
-
- 
-
-**案例1：您的 [DPUUID](../../reference/ids-in-aam.md) 已經是小寫、雜湊的電子郵件地址。**
-
-在此情況下，您需要將對應的資料來源標示為：
-
-1. 前往 **[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]**.
-1. 尋找包含下列專案的資料來源： [DPUUID](../../reference/ids-in-aam.md)，然後按一下。
-1. 確認選項 **[!UICONTROL Cannot be tied to personally identifiable information]** 未勾選。
-1. 儲存資料來源設定。
+根据您的[DPUUID](../../reference/ids-in-aam.md)是否为小写、经过哈希处理的电子邮件地址，您可能需要配置用于存储经过哈希处理的电子邮件地址的数据源。
 
  
 
-**案例2：您的 [DPUUID](../../reference/ids-in-aam.md) 不是小寫、雜湊的電子郵件地址。**
+**方案1：您的[DPUUID](../../reference/ids-in-aam.md)已经是小写、经过哈希处理的电子邮件地址。**
 
-在這種情況下，您需要建立新的跨裝置資料來源，以儲存雜湊的電子郵件地址。 以下是其操作方式：
+在这种情况下，您需要将相应的数据源标记为如下：
 
-1. 登入您的Audience Manager帳戶並前往 **[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]**，然後按一下 **[!UICONTROL Add New]**.
-1. 輸入 **[!UICONTROL Name]** 和 **[!UICONTROL Description]** 新資料來源的ID。
-1. 在 **[!UICONTROL ID Type]** 下拉式功能表，選取 **[!UICONTROL Cross Device]**.
-1. 在 **[!UICONTROL Data Source Settings]** 區段，選取兩者 **[!UICONTROL Inbound]** 和 **[!UICONTROL Outbound]** 選項，並啟用 **[!UICONTROL Share associated cross-device IDs in people-based destinations]** 選項。
-1. 使用下拉式功能表選取 **[!UICONTROL Emails(SHA256, lowercased)]** 此資料來源的標籤。
+1. 转到&#x200B;**[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]**。
+1. 查找包含您的[DPUUID](../../reference/ids-in-aam.md)的数据源，然后单击该数据源。
+1. 确保取消选中选项&#x200B;**[!UICONTROL Cannot be tied to personally identifiable information]**。
+1. 保存数据源设置。
+
+ 
+
+**方案2：您的[DPUUID](../../reference/ids-in-aam.md)不是小写、经过哈希处理的电子邮件地址。**
+
+在这种情况下，您需要创建一个新的跨设备数据源，用于存储经过哈希处理的电子邮件地址。 以下是操作方法：
+
+1. 登录到您的Audience Manager帐户并转到&#x200B;**[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]**，然后单击&#x200B;**[!UICONTROL Add New]**。
+1. 输入新数据源的&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
+1. 在&#x200B;**[!UICONTROL ID Type]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL Cross Device]**。
+1. 在&#x200B;**[!UICONTROL Data Source Settings]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Inbound]**&#x200B;和&#x200B;**[!UICONTROL Outbound]**&#x200B;选项，并启用&#x200B;**[!UICONTROL Share associated cross-device IDs in people-based destinations]**&#x200B;选项。
+1. 使用下拉菜单为此数据源选择&#x200B;**[!UICONTROL Emails(SHA256, lowercased)]**&#x200B;标签。
    >[!IMPORTANT]
    >
-   >此選項只會將資料來源標籤為包含使用該特定演演算法雜湊的資料。 Audience Manager不會在此步驟將資料雜湊。 請確定您計畫儲存至此資料來源的電子郵件地址已使用 [!DNL SHA256] 演演算法。 否則，您將無法將其用於 [!DNL People-Based Destinations].
+   >此选项仅将数据源标记为包含使用该特定算法经过哈希处理的数据。 Audience Manager在此步骤中不会散列数据。 确保您计划存储在此数据源中的电子邮件地址已使用[!DNL SHA256]算法进行哈希处理。 否则，您将无法将其用于[!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 
    >[!NOTE]
    >
-   > 另請參閱 [資料上線](people-based-destinations-prerequisites.md#data-onboarding) 有關如何將離線資料帶入People-Based Destinations的Audience Manager的常見問題。
+   > 有关如何将离线数据导入Audience Manager以进行基于人员的目标的常见问题解答，请参阅[数据载入](people-based-destinations-prerequisites.md#data-onboarding)。
 
-觀看以下影片，觀看如何建立的資料來源教學影片。 [!UICONTROL People-Based Destinations].
+观看以下视频，观看有关如何为[!UICONTROL People-Based Destinations]创建数据源的视频教程。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29006/)
 
-## 步驟3 — 透過檔案式ID同步將DPUUID與雜湊電子郵件地址進行比對 {#match-ids-emails}
+## 步骤3 — 通过基于文件的ID同步将DPUUID与经过哈希处理的电子邮件地址进行匹配 {#match-ids-emails}
 
 >[!IMPORTANT]
 >
-> 此步驟僅適用於 [案例2](people-based-destinations-workflow-offline.md#configure-data-source-settings) 如上所述。 如果您現有的 [DPUUID](../../reference/ids-in-aam.md) 是已經雜湊的電子郵件地址，請跳至 [步驟4 — 建立區段的設定檔合併規則](#create-profile-merge-rule).
+> 此步骤仅适用于上述的[方案2](people-based-destinations-workflow-offline.md#configure-data-source-settings)。 如果您现有的[DPUUID](../../reference/ids-in-aam.md)已经过哈希处理，请跳到[步骤4 — 为分段创建配置文件合并规则](#create-profile-merge-rule)。
 
-假設您想要比對現有的 [DPUUID](../../reference/ids-in-aam.md) 從步驟1的範例到下表（右欄）中的雜湊電子郵件地址，並將雜湊電子郵件地址儲存在您建立的新資料來源中 [步驟2 — 設定資料來源設定](#configure-data-source-settings).
+假设您要将步骤1示例中的现有[DPUUID](../../reference/ids-in-aam.md)与下表（右列）中的经过哈希处理的电子邮件地址相匹配，并将经过哈希处理的电子邮件地址存储在您于[步骤2 — 配置数据Source设置](#configure-data-source-settings)创建的新数据源中。
 
-提醒您，您現在有兩個資料來源：
+提醒一下，您现在拥有两个数据源：
 
-| 資料來源ID | 資料來源內容 |
+| 数据源Id | 数据源内容 |
 | -------------- | -------------------------- |
-| 999999 | 現有DPUUID (CRM ID) |
-| 987654 | 雜湊電子郵件地址 |
+| 999999 | 现有DPUUID (CRM ID) |
+| 987654 | 经过哈希处理的电子邮件地址 |
 
-| DPUUID (CRM ID) | 电子邮件地址 | 雜湊電子郵件地址 |
+| DPUUID (CRM ID) | 电子邮件地址 | 经过哈希处理的电子邮件地址 |
 | -------------------------------------- | --------------------- | ---------------------------------------------------------------- |
 | 68079982765673198504052656074456196039 | `johndoe@example.com` | 55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149 |
 | 67412682083411995725538770443620307584 | `janedoe@email.com` | 16d72e3edbeb089b299e0d12fc09522fdc5ece2d11dcb1304ecdd6fab4f7193a |
@@ -116,7 +116,7 @@ ht-degree: 6%
 
  
 
-在我們的範例中，您的 [ID同步檔案](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) 會包含下列內容：
+在我们的示例中，您的[ID同步文件](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)将包含以下内容：
 
 ```
 68079982765673198504052656074456196039<TAB>55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149
@@ -126,60 +126,60 @@ ht-degree: 6%
 
  
 
-此 [ID同步檔案](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) 必須遵循此命名結構：
+[ID同步文件](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)必须遵循此命名结构：
 
 `c2c_id_<DPUUID_DATA_SOURCE_ID>_<HASHED_EMAIL_DATA_SOURCE_ID>_TIMESTAMP.sync`
 
  
 
-在上述範例中，檔案名稱看起來像這樣：
+在上述示例中，文件名将如下所示：
 `c2c_id_999999_987654_1560431657.sync`
 
-[在這裡下載範例檔案](assets/c2c_id_999999_987654_1560431657.sync).
+[在此下载示例文件](assets/c2c_id_999999_987654_1560431657.sync)。
 
-建立ID同步檔案後，您需要將其上傳至 [!DNL Amazon S3] 貯體。 若要瞭解如何上傳ID同步檔案，請參閱 [將批次資料傳送至Audience Manager](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md).
+创建ID同步文件后，您需要将其上传到[!DNL Amazon S3]存储段。 要了解如何上传ID同步文件，请参阅[将批次数据发送到Audience Manager](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)。
 
-## 步驟4 — 建立區段的設定檔合併規則 {#create-profile-merge-rule}
+## 第4步 — 创建用于区段的配置文件合并规则 {#create-profile-merge-rule}
 
-下一步是建立新的合併規則，協助您建立要傳送至 [!DNL People-Based Destinations].
+下一步是创建新合并规则，以帮助您创建要发送到[!DNL People-Based Destinations]的受众区段。
 
-1. 登入您的Audience Manager帳戶並前往 **[!UICONTROL Audience Data]** -> **[!UICONTROL Profile Merge Rules]**.
-2. 单击 [!UICONTROL Add New Rule].
-3. 輸入設定檔合併規則 **[!UICONTROL Name]** 和 **[!UICONTROL Description]**.
-4. 在 **[!UICONTROL Profile Merge Rule Setup]** 區段，選取 **[!UICONTROL All Cross-Device Profiles]** 規則來自 **[!UICONTROL Cross-Device Options]** 清單。
-5. 在 **[!UICONTROL Cross-Device Profile Options]** 清單中，選取您的特徵要據以上線的資料來源。
-   ![merge-rule-setup](assets/pbd-pmr.png)
+1. 登录到您的Audience Manager帐户并转到&#x200B;**[!UICONTROL Audience Data]** -> **[!UICONTROL Profile Merge Rules]**。
+2. 单击 [!UICONTROL Add New Rule]。
+3. 输入配置文件合并规则&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
+4. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;部分中，从&#x200B;**[!UICONTROL Cross-Device Options]**&#x200B;列表中选择&#x200B;**[!UICONTROL All Cross-Device Profiles]**&#x200B;规则。
+5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**列表中，选择特征载入的数据源。
+   ![合并规则设置](assets/pbd-pmr.png)
 
-## 步驟5 — 建立受眾區段 {#create-audience-segments}
+## 步骤5 — 创建受众区段 {#create-audience-segments}
 
-若要從僅限離線資料建立新區段，請使用 [區段產生器](../segments/segment-builder.md) 並確保在建立區段時使用您在上一步中建立的新設定檔合併規則。
+若要从仅离线数据创建新区段，请使用[区段生成器](../segments/segment-builder.md)，并确保在创建区段时使用上一步中创建的新配置文件合并规则。
 
-## 步驟6 — 設定以人物為基礎的平台驗證 {#configure-authentication}
+## 步骤6 — 配置基于人员的平台身份验证 {#configure-authentication}
 
-1. 登入您的Audience Manager帳戶並前往 **[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**. 如果您先前設定好與社交平台的整合，您應會看到此頁面中列出的整合。 否則，頁面會是空的。
-   ![以人物為基礎的整合](assets/pbd-config.png)
-1. 单击 **[!UICONTROL Add Account]**.
-1. 使用 **[!UICONTROL People-Based Platform]** 下拉式功能表，以選取您要設定整合的平台。
-   ![以人物為基礎的平台](assets/pbd-add.png)
-1. 按一下 **[!UICONTROL Confirm]** 重新導向至所選平台的驗證頁面。
-1. 在驗證您的Social Platform帳戶後，系統會將您重新導向至Audience Manager，您應可在其中檢視關聯的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下 **[!UICONTROL Confirm]**.
-1. Audience Manager會在頁面頂端顯示通知，讓您知道帳戶是否已成功新增。 通知也可讓您新增連絡人電子郵件地址，以在Social平台驗證即將到期時接收通知。
+1. 登录到您的Audience Manager帐户并转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您之前配置了与社交平台的集成，您应会看到此页面中列出了该集成。 否则，页面为空。
+   ![基于人员的集成](assets/pbd-config.png)
+1. 单击 **[!UICONTROL Add Account]**。
+1. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉菜单选择要配置集成的平台。
+   ![基于人员的平台](assets/pbd-add.png)
+1. 单击&#x200B;**[!UICONTROL Confirm]**&#x200B;以重定向到所选平台的身份验证页面。
+1. 在验证您的Social Platform帐户后，您将被重定向到Audience Manager，您应会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!UICONTROL Confirm]**。
+1. Audience Manager会在页面顶部显示通知，告知您帐户是否已成功添加。 通知还允许您添加联系人电子邮件地址，以在Social平台身份验证即将过期时接收通知。
 
 >[!IMPORTANT]
 >
->Audience Manager會透過在特定時間後過期的驗證權杖來處理與社交平台的整合。 如需如何續約過期權杖的詳細資訊，請參閱驗證權杖續約。
+>Audience Manager通过在一段时间后过期的身份验证令牌处理与社交平台的集成。 有关如何续订过期令牌的详细信息，请参阅身份验证令牌续订。
 
-## 步驟7 — 建立以人物為基礎的目的地 {#create-destination}
+## 步骤7 — 创建基于人员的目标 {#create-destination}
 
-1. 登入您的Audience Manager帳戶，前往 **[!UICONTROL Audience Data]** > **[!UICONTROL Destinations]**，然後按一下 **[!UICONTROL Create Destination]**.
-1. 在 **[!UICONTROL Basic Information]** 區段，輸入 **[!UICONTROL Name]** 和 **[!UICONTROL Description]** ，並使用下列設定：
-   * **[!UICONTROL Category]**：整合平台；
-   * **[!UICONTROL Type]**：以人物為基礎；
-   * **[!UICONTROL Platform]**：選取您要傳送受眾區段的目標人物型平台；
-   * **[!UICONTROL Account]**：選取與所選平台相關聯的所需廣告商帳戶。
-      ![create-destination](assets/pbd-create-destination.png)
-1. 单击 **[!UICONTROL Next]**.
-1. 選擇 **[!UICONTROL Data Export Labels]** 要為此目的地設定的值。
-1. 在 **[!UICONTROL Configuration]** 區段，選取包含雜湊資料來源的資料來源。
-1. 在 **[!UICONTROL Segment Mappings]** 區段，選取您要傳送至此目的地的區段。 這是您建立的區段 [步驟5 — 建立受眾區段](people-based-destinations-workflow-offline.md#create-audience-segments).
-1. 儲存目的地。
+1. 登录到您的Audience Manager帐户，转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Destinations]**，然后单击&#x200B;**[!UICONTROL Create Destination]**。
+1. 在&#x200B;**[!UICONTROL Basic Information]**&#x200B;部分中，输入新数据源的&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**，并使用以下设置：
+   * **[!UICONTROL Category]**：集成平台；
+   * **[!UICONTROL Type]**：基于人员；
+   * **[!UICONTROL Platform]**：选择要将受众区段发送到的基于人员的平台；
+   * **[!UICONTROL Account]**：选择与所选平台关联的所需广告商帐户。
+     ![create-destination](assets/pbd-create-destination.png)
+1. 单击 **[!UICONTROL Next]**。
+1. 选择要为此目标设置的&#x200B;**[!UICONTROL Data Export Labels]**。
+1. 在&#x200B;**[!UICONTROL Configuration]**&#x200B;部分中，选择包含哈希数据源的数据源。
+1. 在&#x200B;**[!UICONTROL Segment Mappings]**&#x200B;部分中，选择要发送到此目标的区段。 这就是您在[第5步 — 创建受众区段](people-based-destinations-workflow-offline.md#create-audience-segments)中创建的区段。
+1. 保存目标。
