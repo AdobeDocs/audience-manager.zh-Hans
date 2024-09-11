@@ -8,7 +8,7 @@ title: 管理数据源
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 feature: Data Sources
 exl-id: 1c20988e-4a09-4d56-b454-d48b75eed1ce
-source-git-commit: 6ec76227dd8c7581550c3d95e24fc5b6a4b01093
+source-git-commit: e41dddd022b6fa02cab3e16bd21536d41584975f
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -76,7 +76,7 @@ ht-degree: 0%
 >请注意以下限制：
 >
 >* 您无法删除[活动受众或Source同步的数据](../features/traits/client-activity-synced-audience-traits.md)特征。
->* 对于使用Adobe Analytics的客户：Audience Manager不允许您删除从[!DNL Analytics]报表包中自动创建的数据源。 使用[核心服务](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services-landing.html)取消这些数据源的映射。
+>* 对于使用Adobe Analytics的客户：Audience Manager不允许您删除从[!DNL Analytics]报表包中自动创建的数据源。 使用[核心服务](https://experienceleague.adobe.com/en/docs/core-services/interface/services/customer-attributes/attributes)取消这些数据源的映射。
 
 1. 单击&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**。
 1. 选中一个或多个数据源旁边的复选框。
