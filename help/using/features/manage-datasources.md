@@ -8,9 +8,9 @@ title: 管理数据源
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 feature: Data Sources
 exl-id: 1c20988e-4a09-4d56-b454-d48b75eed1ce
-source-git-commit: e41dddd022b6fa02cab3e16bd21536d41584975f
+source-git-commit: bda66cb9aaee3a40ae64dda100f42b88696a027e
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -29,26 +29,19 @@ ht-degree: 0%
 
 ## [!UICONTROL Data Source]详细信息 {#details}
 
-要完成[!UICONTROL Data Source Details]部分，请执行以下操作：
+要完成[!UICONTROL Data Source Details]部分，请填写以下字段：
 
-1. 为[!UICONTROL data source]命名。
-1. *（可选）*&#x200B;描述[!UICONTROL data source]。 简洁的描述可帮助您定义[!UICONTROL data source]的角色或目的。
-1. 提供[!UICONTROL integration code]。 通常，[!UICONTROL integration codes]是可选的。 当您想要：
-
+1. **[!UICONTROL Name]**：提供数据源的名称。
+1. **[!UICONTROL Description]** （可选）：输入数据源的描述，以帮助您定义数据源的角色或用途。
+1. **[!UICONTROL Integration Code]** （可选）：输入集成代码。 当您想要：
    * [创建跨设备数据源](../features/profile-merge-rules/merge-rules-start.md#create-data-source)。
    * 使用[Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
    * 使用[配置文件合并规则](../features/profile-merge-rules/merge-rules-start.md)。
-
-1. 选择&#x200B;**[!UICONTROL ID Type]**。 [!UICONTROL ID Type]选项包括：
-
+1. **[!UICONTROL Namespace]** （只读）：此字段是只读的，在保存数据源时会自动生成。 如果要将区段从Audience Manager导出到Experience Platform，则必须在Experience Platform中创建相应的[身份命名空间](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces)，并将自动生成的值用作Experience Platform中的命名空间[身份符号](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#components-of-a-namespace)。
+1. **[!UICONTROL ID Type]**：选择此数据源将包含的ID类型：
    * **[!UICONTROL Cookie]**
    * **[!UICONTROL Device Advertising ID]**
    * **[!UICONTROL Cross-device]** （创建[!UICONTROL Profile Merge Rule]所需）。 请注意，对于某些客户，此选择会公开&#x200B;**[!UICONTROL ID Definition]**&#x200B;选项。
-
-   >[!NOTE]
-   >
-   >对于为Audience Manager和Experience Platform配置的每个组织，即使您没有在两个应用程序之间设置区段共享，当您创建跨设备数据源时，会在Experience Platform中创建相应的[标识命名空间](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces)。
-
 1. 选择一个&#x200B;**[!UICONTROL ID Definition]**&#x200B;选项。 选项包括：
 
    * **[!UICONTROL Person]**
