@@ -2,9 +2,9 @@
 title: 将要进行Audience Manager的数据收集库从AppMeasurementJavaScript库更新为Web SDK JavaScript库。
 description: 了解将数据收集库从AppMeasurementJavaScript库更新到Web SDK JavaScript库以进行Audience Manager的步骤。
 exl-id: 9c771d6c-4cfa-4929-9a79-881d4e8643e4
-source-git-commit: 3ba980e97763866d82bdf94109068f1f1f8f63d2
+source-git-commit: f8d8eb722e7b5cc4371f400a76fbd548a1318668
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2589'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,18 @@ Adobe建议在以下情况下遵循此实施路径：
 1. 选择&#x200B;**[!UICONTROL Save]**。
 
 您的数据流现在已准备好将数据发送到Audience Manager，并将Audience Manager响应传递到Web SDK。
+
++++
+
++++**4. 将客户ID添加到标识映射**
+
+大多数Audience Manager实施在跨设备个性化方案中使用[配置文件合并规则](../features/profile-merge-rules/merge-rules-overview.md)，以帮助控制访客可以根据其身份验证状态（登录或注销）而符合条件的区段。 配置文件合并规则要求在Audience Manager进行身份验证后的每次数据收集调用中将客户拥有的标识符（CRM ID、帐号等）发送到AppMeasurement。 以前，访客ID服务([!DNL visitor.js])的`setCustomerIDs`函数用于将客户ID附加到每个Analytics数据收集调用，然后将这些调用转发到Audience Manager。
+
+使用Web SDK时，现在需要使用名为[IdentityMap](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)的特殊XDM构造将这些标识发送到Edge Network。
+
+在标识映射中正确传递标识需要了解[标识命名空间](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)并仔细考虑要传递的标识，特别是在将数据发送到Experience Platform沙盒时。 [本文](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21305)概述了这些注意事项和说明。
+
+确定要传递的标识以及传递时间，请按照Tags中使用[!UICONTROL Identity map] **[!UICONTROL Identity map]** [数据元素](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/data-element-types#identity-map)的指南操作，或按照[标识数据概述](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/overview)中所述手动进行设置，以符合您的Web SDK部署策略。
 
 +++
 
