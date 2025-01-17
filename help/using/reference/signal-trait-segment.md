@@ -1,7 +1,7 @@
 ---
-description: 了解区段的组成以及用于设置受众资格标准的表达式。还可以了解有关数据传输方式的信息。
-landing-page-description: 了解区段的组成以及用于设置受众资格标准的表达式。还可以了解有关数据传输方式的信息。
-short-description: 了解区段的组成以及用于设置受众资格标准的表达式。还可以了解有关数据传输方式的信息。
+description: 了解细分的组成以及用于设置受众资格筛选标准的表达式。还可以了解有关数据传输方式的信息。
+landing-page-description: 了解细分的组成以及用于设置受众资格筛选标准的表达式。还可以了解有关数据传输方式的信息。
+short-description: 了解细分的组成以及用于设置受众资格筛选标准的表达式。还可以了解有关数据传输方式的信息。
 seo-title: Signals, Traits, and Segments
 solution: Audience Manager
 title: 信号、特征和区段
