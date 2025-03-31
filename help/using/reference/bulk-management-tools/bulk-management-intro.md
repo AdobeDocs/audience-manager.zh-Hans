@@ -8,9 +8,9 @@ title: 开始使用批量管理工具
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 feature: BAAAM
 exl-id: 5603146e-7172-4181-90ad-4606129176dd
-source-git-commit: e8d81f648f5a46495193fe6631c8a7f73e290493
+source-git-commit: 0c9c333f4e8d6d416d497f336e3e447e2e251d47
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '715'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ c_bulk_start.xml
 
 * 您的[!DNL Experience Cloud]登录。 作为客户，您应该已经拥有这些凭据。
 * [!DNL Bulk Management Tools]工作表。 [下载工作表](assets/BAAAM_V2_20210609.xlsm)以获取最新版本。
-* [!DNL Microsoft Excel]正在[!DNL macOS]或64位[!DNL Microsoft Windows]上运行。 我们建议您使用最新版本的[!DNL Microsoft Excel]。
+* [!DNL Microsoft Excel]在64位[!DNL Microsoft Windows]上运行。 我们建议您使用最新版本的[!DNL Microsoft Excel]。 [!DNL macOS]不支持批量管理工具。
 * 打开工作表时，必须&#x200B;**启用宏**&#x200B;才能使[!DNL Bulk Management Tools]正常工作。
 
 ## 身份验证要求和选项 {#auth-reqs}
