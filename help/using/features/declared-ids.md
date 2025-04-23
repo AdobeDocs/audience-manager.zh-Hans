@@ -8,9 +8,9 @@ title: 声明的ID
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
 feature: ID Syncs
 exl-id: a480671a-797d-405d-905d-98ab4ef71369
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: e17eedfb94f2936c61298c44f3d556bae254b2a7
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1151'
 ht-degree: 8%
 
 ---
@@ -37,11 +37,11 @@ ht-degree: 8%
  <tbody> 
   <tr> 
    <td colname="col1"> <b>事件调用</b> </td> 
-   <td colname="col2"> <p>若要使用，您需要<span class="wintitle">DIL</span>和页面上的<a href="https://experienceleague.adobe.com/docs/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity服务</a>代码。 <span class="wintitle">DIL</span>从<span class="keyword"> Adobe Experience Platform Identity服务</span>提供的<code> setVisitorID </code>函数中获取<span class="wintitle">个声明的ID </span>，并将其传递给<span class="keyword">Audience Manager</span>。 </p> </td> 
+   <td colname="col2"> <p>要正常工作，您需要在页面上安装<span class="wintitle"> DIL </span>和<a href="https://experienceleague.adobe.com/docs/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity服务</a>代码。 <span class="wintitle"> DIL </span>从<span class="keyword"> Adobe Experience Platform Identity服务</span>提供的<code> setVisitorID </code>函数中获取<span class="wintitle">个声明的ID </span>，并将其传递到<span class="keyword"> Audience Manager </span>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>匹配ID</b> </td> 
-   <td colname="col2"> <p>Audience Manager会尝试将客户端和访客ID与系统中的相应ID进行匹配。 如果不存在匹配的ID，Audience Manager会创建一个新ID，并将其与客户端和访客ID关联。 </p> <p> <p>注意：如果您的ID映射到多个Audience ManagerID，则使用最近的映射。 </p> </p> </td> 
+   <td colname="col2"> <p>Audience Manager会尝试将客户端和访客ID与系统中的相应ID进行匹配。 如果不存在匹配的ID，Audience Manager会创建一个新的ID，并将其与客户端和访客ID关联。 </p> <p> <p>注意：如果您的ID映射到多个Audience Manager ID，则使用最近的映射。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>返回ID</b> </td> 
@@ -49,7 +49,7 @@ ht-degree: 8%
   </tr>
   <tr>
    <td colname="col1"> <b>后续事件调用</b> </td>
-   <td colname="col2"> <p>其他事件调用将从客户端域中读取Audience ManagerID并将其发送给Audience Manager。 </p> </td>
+   <td colname="col2"> <p>其他事件调用将从客户端域中读取Audience Manager ID并将其发送给Audience Manager。 </p> </td>
   </tr> 
  </tbody>
 </table>
@@ -114,11 +114,11 @@ ht-degree: 8%
   </tr> 
   <tr> 
    <td colname="col1"> <p>合作伙伴级别的选择退出 </p> </td> 
-   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>为该<code> dpid </code> + <code> dpuuid </code>对到AAM UUID的最新映射存储了合作伙伴级别的选择退出。 如果之前没有映射，则Audience Manager会检查请求在Cookie中是否包含AAM UUID，如果包含，则使用该ID存储选择退出。 否则，Audience Manager会生成一个新的AAM UUID并将选择退出存储在该UUID下。 </p> </td> 
+   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>为该<code> dpid </code> + <code> dpuuid </code>对到AAM UUID的最新映射存储了合作伙伴级别的选择退出。 如果之前没有映射，Audience Manager会检查请求在Cookie中是否包含AAM UUID，如果包含，则使用该UUID存储选择退出。 否则，Audience Manager会生成一个新的AAM UUID并将选择退出存储在该UUID下。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_dpuuid </code> + <code> d_dpid </code>和显式<code> d_uuid </code> </p> </td> 
-   <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid= user ID&amp;d_dpuuid= data provider's user ID&amp;<i>d_dpid=data provider ID</i> </code> </p> <p> <code> d_uuid </code>始终优先。 如果<code> dpid </code> + <code> dpuuid </code>组合映射到另一个AAM UUID，则选择退出将存储在请求中传递的AAM UUID下(<code> d_uuid </code>)。 </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid= user ID&amp;d_dpuuid= data provider's user ID&amp;<i>d_dpid=data provider ID</i> </code> </p> <p> <code> d_uuid </code>始终优先。 如果<code> dpid </code> + <code> dpuuid </code>组合映射到另一个AAM UUID，则选择退出存储在请求中传递的AAM UUID下(<code> d_uuid </code>)。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -195,7 +195,7 @@ var vDil = DIL.create({
 });
 ```
 
-在`namespace`键值对中，`MCORG`是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，则可以在[!DNL Experience Cloud]仪表板的[!UICONTROL Administration]部分中找到它。 您需要管理员权限才能查看此仪表板。 请参阅[管理：核心服务](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html)。
+在`namespace`键值对中，`MCORG`是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，则可以在[!DNL Experience Cloud]仪表板的[!UICONTROL Administration]部分中找到它。 您需要管理员权限才能查看此仪表板。 请参阅[开始使用Experience Cloud服务](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)。
 
 ## 已弃用的函数 {#deprecated-functions}
 
@@ -214,7 +214,7 @@ var vDil = DIL.create({
   <tr> 
    <td colname="col1"> <code> dpid </code> </td> 
    <td colname="col2"> 字符串 </td> 
-   <td colname="col3"> <p>由Audience Manager分配的数据合作伙伴ID。 </p> </td> 
+   <td colname="col3"> <p>Audience Manager分配的数据合作伙伴ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> dpuuid </code> </td> 
@@ -265,7 +265,7 @@ DIL.getDil('partner name').api.signals({...}).declaredId({
 https://my_domain.net/event?d_rtbd=json&d_cb=myCallback&key=val&d_dpuuid=1234&d_dpid=5678
 ```
 
-响应将返回写入页面域中的第一方Cookie的Audience ManagerID（例如`UUID`）。
+响应将返回写入页面域中的第一方Cookie的Audience Manager ID（例如`UUID`）。
 
 ```js
 myCallback({
