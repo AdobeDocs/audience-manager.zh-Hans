@@ -113,7 +113,7 @@ Audience Manager可合并每个设备+跨设备配置文件对，以查看合并
 
 观看以下视频，了解[!UICONTROL Profile Merge Rules]的可能用例概述。
 
->[!VIDEO](https://video.tv.adobe.com/v/28975/)
+>[!VIDEO](https://video.tv.adobe.com/v/31954?captions=chi_hans)
 
 >[!MORELIKETHIS]
 >

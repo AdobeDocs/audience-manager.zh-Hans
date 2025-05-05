@@ -49,4 +49,4 @@ ht-degree: 1%
 
 Audience Manager最强大的功能之一是载入离线数据，并将其与在线数据关联起来。 在下面的视频中，了解如何使用[!UICONTROL Data Explorer]来验证您是否已创建所有必要的特征以利用此载入的数据。
 
->[!VIDEO](https://video.tv.adobe.com/v/25149/)
+>[!VIDEO](https://video.tv.adobe.com/v/330347?captions=chi_hans)

@@ -40,4 +40,4 @@ ht-degree: 0%
 保存的搜索将显示相应条件的前50个结果。
 
 观看以下视频以了解如何使用[!UICONTROL Signals Dashboard]。
->[!VIDEO](https://video.tv.adobe.com/v/25151/)
+>[!VIDEO](https://video.tv.adobe.com/v/327525?captions=chi_hans)

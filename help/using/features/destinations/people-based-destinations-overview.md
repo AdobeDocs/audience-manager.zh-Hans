@@ -63,7 +63,7 @@ ht-degree: 0%
 
 观看以下视频，了解使用[!UICONTROL People-Based Destinations]时的数据流概况。
 
->[!VIDEO](https://video.tv.adobe.com/v/28968/)
+>[!VIDEO](https://video.tv.adobe.com/v/31961?captions=chi_hans)
 
 ## 用例 {#use-cases}
 

@@ -63,7 +63,7 @@ ht-degree: 0%
 
 观看以下视频，观看有关如何为[!UICONTROL People-Based Destinations]创建数据源的视频教程。
 
->[!VIDEO](https://video.tv.adobe.com/v/29006/)
+>[!VIDEO](https://video.tv.adobe.com/v/31956?captions=chi_hans)
 
 >[!NOTE]
 >

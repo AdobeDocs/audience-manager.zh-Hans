@@ -17,7 +17,7 @@ ht-degree: 0%
 
 从所有信号（包括特征中已使用的信号）创建新特征，并捕获在创建特征后符合条件的未来受众。 观看视频以快速演示，或阅读以了解详细信息：
 
->[!VIDEO](https://video.tv.adobe.com/v/25169/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/327530/?quality=12&captions=chi_hans)
 
 ## 从信号仪表板创建特征 {#create-traits-from-signal-dashboard}
 

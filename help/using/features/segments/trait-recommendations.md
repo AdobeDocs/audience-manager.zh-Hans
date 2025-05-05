@@ -21,11 +21,11 @@ ht-degree: 5%
 
 首先观看下面的[!UICONTROL Trait Recommendations]视频，然后阅读以了解更多信息。 此视频演示向您展示了如何使用来自您自己的第一方特征的推荐，以及来自[!UICONTROL Audience Marketplace]数据馈送（您&#x200B;*已订阅*）的特征推荐。
 
->[!VIDEO](https://video.tv.adobe.com/v/26228/)
+>[!VIDEO](https://video.tv.adobe.com/v/40843?captions=chi_hans)
 
 下一个视频概述了[!UICONTROL Marketplace Recommendations]的工作流，向您展示了如何根据[!UICONTROL Audience Marketplace]中的数据馈送中的推荐向区段添加特征。 这些建议基于&#x200B;*您未订阅*&#x200B;的数据馈送。
 
->[!VIDEO](https://video.tv.adobe.com/v/29363/)
+>[!VIDEO](https://video.tv.adobe.com/v/32753?captions=chi_hans)
 
 ## 概述
 

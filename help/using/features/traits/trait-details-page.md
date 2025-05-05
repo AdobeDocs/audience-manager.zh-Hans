@@ -63,7 +63,7 @@ ht-degree: 0%
   >
   >如果您有[!UICONTROL cross-device]个ID符合[!UICONTROL trait]的条件，则Audience Manager仅显示[!UICONTROL Identity Type Breakdown]报告。
 
-  >[!VIDEO](https://video.tv.adobe.com/v/27977/)
+  >[!VIDEO](https://video.tv.adobe.com/v/32078?captions=chi_hans)
 
 ## [!UICONTROL Trait]表达式 {#trait-expression}
 

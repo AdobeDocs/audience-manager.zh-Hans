@@ -59,7 +59,7 @@ ht-degree: 2%
 
 请观看以下视频，详细了解跨设备量度的工作方式。
 
->[!VIDEO](https://video.tv.adobe.com/v/33445)
+>[!VIDEO](https://video.tv.adobe.com/v/36831?captions=chi_hans)
 
 ## [!UICONTROL Segment Builder]控件：[!UICONTROL Basic Information]节 {#segment-builder-controls-basics}
 

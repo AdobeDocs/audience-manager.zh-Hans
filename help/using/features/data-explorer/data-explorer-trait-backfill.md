@@ -51,7 +51,7 @@ ht-degree: 0%
 
 观看以下视频，了解如何回填特征的视频演练。
 
->[!VIDEO](https://video.tv.adobe.com/v/25169/)
+>[!VIDEO](https://video.tv.adobe.com/v/327530?captions=chi_hans)
 
 ## 特征回填延迟 {#trait-backfilling-latency}
 

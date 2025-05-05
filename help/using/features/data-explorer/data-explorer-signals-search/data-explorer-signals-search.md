@@ -22,4 +22,4 @@ ht-degree: 0%
 * [筛选搜索结果](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-filter-results.md)
 * [保存搜索条件](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)
 
->[!VIDEO](https://video.tv.adobe.com/v/25148/)
+>[!VIDEO](https://video.tv.adobe.com/v/330346?captions=chi_hans)
