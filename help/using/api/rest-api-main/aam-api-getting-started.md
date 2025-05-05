@@ -33,8 +33,8 @@ ht-degree: 1%
 
 [!DNL Audience Manager] [!DNL REST APIs]支持三种身份验证方法。
 
-* [!BADGE 推荐]{type=positive}使用[Adobe开发人员控制台](https://www.adobe.io/)的[OAuth服务器到服务器身份验证](#oauth-adobe-developer)。 [!DNL Adobe Developer]是Adobe的开发人员生态系统和社区。 它包含所有Adobe产品](https://developer.adobe.com/apis/)的[API。 这是设置和使用[!DNL Adobe] [!DNL APIs]的推荐方法。 有关[OAuth服务器到服务器身份验证](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)的更多信息，请参阅Adobe开发人员文档。
-* [!BADGE 已弃用]{type=negative}使用[Adobe开发人员控制台](https://www.adobe.io/)的[JWT （服务帐户）身份验证](#jwt)。 [!DNL Adobe Developer]是Adobe的开发人员生态系统和社区。 它包含所有Adobe产品](https://developer.adobe.com/apis/)的[API。
+* [!BADGE 推荐]{type=positive}使用[Adobe开发人员控制台](https://www.adobe.io/)的[OAuth服务器到服务器身份验证](#oauth-adobe-developer)。 [!DNL Adobe Developer]是Adobe的开发人员生态系统和社区。 它包含所有Adobe产品[&#128279;](https://developer.adobe.com/apis/)的API。 这是设置和使用[!DNL Adobe] [!DNL APIs]的推荐方法。 有关[OAuth服务器到服务器身份验证](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)的更多信息，请参阅Adobe开发人员文档。
+* [!BADGE 已弃用]{type=negative}使用[Adobe开发人员控制台](https://www.adobe.io/)的[JWT （服务帐户）身份验证](#jwt)。 [!DNL Adobe Developer]是Adobe的开发人员生态系统和社区。 它包含所有Adobe产品[&#128279;](https://developer.adobe.com/apis/)的API。
 * [!BADGE 已弃用]{type=negative}[旧版OAuth身份验证](#oauth-deprecated)。 虽然此方法已弃用，但具有现有[!DNL OAuth]集成的客户可以继续使用此方法。
 
 >[!IMPORTANT]
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ### Adobe Developer概述 {#developer-overview}
 
-[!DNL Adobe Developer]是Adobe的开发人员生态系统和社区。 它包含所有Adobe产品](https://developer.adobe.com/apis)的[API。
+[!DNL Adobe Developer]是Adobe的开发人员生态系统和社区。 它包含所有Adobe产品[&#128279;](https://developer.adobe.com/apis)的API。
 
 这是设置和使用[!DNL Adobe] [!DNL APIs]的推荐方法。
 
@@ -217,7 +217,7 @@ curl -X 'GET' \
 
 ### Adobe Developer概述 {#adobeio}
 
-[!DNL Adobe Developer]是Adobe的开发人员生态系统和社区。 它包含所有Adobe产品](https://www.adobe.io/apis.html)的[API。
+[!DNL Adobe Developer]是Adobe的开发人员生态系统和社区。 它包含所有Adobe产品[&#128279;](https://www.adobe.io/apis.html)的API。
 
 这是设置和使用[!DNL Adobe] [!DNL APIs]的推荐方法。
 
@@ -402,7 +402,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 根据您使用的身份验证方法，您需要根据下表调整请求[!DNL URLs]。
 
-### 为[!BADGE Recommended]请求[!DNL URLs]{type=positive}[!BADGE 已弃用]{type=negative}通过Adobe Developer的[!DNL JWT]身份验证 {#request-urls-jwt}
+### 为[!BADGE Recommended]请求[!DNL URLs]&lbrace;type=positive&rbrace;[!BADGE 已弃用]{type=negative}通过Adobe Developer的[!DNL JWT]身份验证 {#request-urls-jwt}
 
 | [!DNL API]方法 | 请求[!DNL URL] |
 |--- |--- |
@@ -420,7 +420,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 {style="table-layout:auto"}
 
-### 针对[!BADGE 的请求[!DNL URLs]已弃用]{type=negative}[!DNL OAuth]身份验证 {#request-urls-oauth}
+### 针对[!BADGE 的请求[!DNL URLs]已弃用]&lbrace;type=negative&rbrace;[!DNL OAuth]身份验证 {#request-urls-oauth}
 
 | [!DNL API]方法 | 请求[!DNL URL] |
 |--- |--- |

@@ -47,7 +47,7 @@ Beta环境会在每月末的非高峰时段更新。
 
 | 服务 | URL/主机名 | 如何获取访问权限 |
 |--- |--- | --- |
-| S3 | 请联系您的Audience Manager合作伙伴解决方案代表或客户关怀 | 请联系您的Audience Manager合作伙伴解决方案代表或客户关怀团队，为您的测试版实例设置Amazon S3存储段。 阅读有关使用Amazon S3](../reference/amazon-s3.md)的[优势的信息。 |
+| S3 | 请联系您的Audience Manager合作伙伴解决方案代表或客户关怀 | 请联系您的Audience Manager合作伙伴解决方案代表或客户关怀团队，为您的测试版实例设置Amazon S3存储段。 阅读有关使用Amazon S3[&#128279;](../reference/amazon-s3.md)的优势的信息。 |
 | DCS | `https://dcs-beta.demdex.net/...` | 请参阅[在Beta环境中访问DCS](../reference/beta-environment.md#access-dcs-beta-environment)。 |
 | 用户界面 | `https://bank-beta.demdex.com` | 您的生产环境凭据对测试版环境有效。 |
 | API | `https://api-beta.demdex.com/...` | 您的生产环境凭据对测试版环境有效。 我们建议您创建通用API用户，[查看详细信息](../api/rest-api-main/aam-api-getting-started.md#requirements)。 |

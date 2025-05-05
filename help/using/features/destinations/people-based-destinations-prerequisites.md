@@ -99,7 +99,7 @@ Google会自动允许具有合规帐户的客户列出。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud为您提供通过[!DNL Adobe Experience Platform Identity Service (ECID)]对客户ID进行哈希处理的选项。 有关如何使用ECID对客户ID进行哈希处理的详细信息，请参阅对setCustomerIDs](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html)的[SHA256哈希处理支持。
+Adobe Experience Cloud为您提供通过[!DNL Adobe Experience Platform Identity Service (ECID)]对客户ID进行哈希处理的选项。 有关如何使用ECID对客户ID进行哈希处理的详细信息，请参阅对setCustomerIDs[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html)的SHA256哈希处理支持。
 
 ## 获取用户权限 {#obtaining-user-permission}
 

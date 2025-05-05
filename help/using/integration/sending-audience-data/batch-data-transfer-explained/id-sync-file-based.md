@@ -101,7 +101,7 @@ abc123 def456 ghi789 xyz987
 
 ### 文件内容注意事项 {#considerations}
 
-创建入站文件时，请确保第一列仅填充设备ID，如[!DNL AAM UUID]、[!DNL GAID]、[!DNL IDFA]等。 有关Audience Manager支持的ID的详细说明，请参阅Audience Manager](../../../reference/ids-in-aam.md)中的[ID索引。
+创建入站文件时，请确保第一列仅填充设备ID，如[!DNL AAM UUID]、[!DNL GAID]、[!DNL IDFA]等。 有关Audience Manager支持的ID的详细说明，请参阅Audience Manager[&#128279;](../../../reference/ids-in-aam.md)中的ID索引。
 
 >[!IMPORTANT]
 >

@@ -56,10 +56,10 @@ c_dil_send_page_objects.xml
 
 <pre class="java"><code>
 var sample_dil = DIL.create({partner:"<i>partner name</i>"}); 
-sample_dil.api.signals({ 
+sample_dil.api.signals(&lbrace; 
    c_color:"blue", 
    c_price:"900" 
-}); 
+&rbrace;); 
 sample_dil.api.submit();
 </code></pre>
 
@@ -68,10 +68,10 @@ sample_dil.api.submit();
 此高级示例演示了如何将对象中的数据发送到Audience Manager。 使用此方法时，[!UICONTROL DIL]允许您将对象作为函数参数传递到[!DNL signals()]方法中。 [!UICONTROL DIL]您的代码可能类似于以下内容：
 
 <pre class="java"><code>
-var my_object = { 
+var my_object = &lbrace; 
    color : "blue", 
    price : "900" 
-}; 
+&rbrace;; 
  
 var sample_dil = DIL.create({ partner : "<i>partner name</i>" }); 
 //Load the object and append "c_" to all keys in the key-value pairs and send data to AudienceManager. 
@@ -83,21 +83,21 @@ sample_dil.api.signals(my_object,"c_").submit();
 在这种情况下，变量`my_object`使用数组来保存数据。 此示例以上述推荐方法传递的信息为基础，但添加了额外的层以适应产品类型和模型。 您的代码可能类似于以下内容：
 
 <pre class="java"><code>
-var my_objects = [{ 
+var my_objects = &lbrack;&lbrace; 
    color : "blue", 
    price : "900" 
-}, { 
+&rbrace;, &lbrace; 
    type : "acura", 
    model : "tl" 
-}]; 
+&rbrace;&rbrack;; 
  
 var sample_dil = DIL.create({ partner : "<i>partner name</i>" }); 
  
 for (var i = 0; i < my_objects.length; i++) 
 //Load the object and append "c_" to all the keys in the key-value pairs.  
-{ 
+&lbrace; 
     sample_dil.api.signals(my_objects[i], "c_"); 
-} 
+&rbrace; 
 sample_dil.api.submit();
 </code></pre>
 
@@ -162,12 +162,12 @@ var search_referrer = DIL.tools.getSearchReferrer();
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
 var search_referrer = DIL.tools.getSearchReferrer(); 
  
-if (search_referrer && search_referrer.valid) { 
-  adobe_dil.api.signals({ 
+if (search_referrer && search_referrer.valid) &lbrace; 
+  adobe_dil.api.signals(&lbrace; 
     c_se : se.name, 
     c_st : se.keywords 
-  }).submit(); 
-}
+  &rbrace;).submit(); 
+&rbrace;
 </code></pre>
 
 **未列出的搜索引擎代码示例**
@@ -176,17 +176,17 @@ if (search_referrer && search_referrer.valid) {
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
-var search_referrer = DIL.tools.getSearchReferrer(document.referrer, {  
+var search_referrer = DIL.tools.getSearchReferrer(document.referrer, &lbrace;  
     hostPattern:/dogpile\./, 
     queryParam:"q" 
-}); 
+&rbrace;); 
  
-if (search_referrer && search_referrer.valid) { 
-  adobe_dil.api.signals({ 
+if (search_referrer && search_referrer.valid) &lbrace; 
+  adobe_dil.api.signals(&lbrace; 
     c_se : se.name, 
     c_st : se.keywords 
-  }).submit(); 
-}
+  &rbrace;).submit(); 
+&rbrace;
 </code></pre>
 
 ## 将键值映射到其他键 {#map-key-values}

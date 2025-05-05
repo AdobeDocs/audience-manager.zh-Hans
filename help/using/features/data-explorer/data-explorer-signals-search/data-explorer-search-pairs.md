@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 从信号搜索中排除的信号 {#excluded-signals}
 
-[!UICONTROL Signals Search]未显示Audience Manager使用且前缀为`d_`和`h_`的键变量。 有关详细信息，请参阅键变量](../../traits/trait-variable-prefixes.md)的[前缀要求。
+[!UICONTROL Signals Search]未显示Audience Manager使用且前缀为`d_`和`h_`的键变量。 有关详细信息，请参阅键变量[&#128279;](../../traits/trait-variable-prefixes.md)的前缀要求。
 
 ## 区分大小写和搜索自动完成 {#case-insensitivity}
 

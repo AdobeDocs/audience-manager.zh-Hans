@@ -22,7 +22,7 @@ ht-degree: 14%
 
 请注意，在&#x200B;*之前必须*&#x200B;完成此部分中描述的进程，然后才能转到启用日志摄取的先决条件。
 
-要在[!DNL Audience Manager]中使用[!DNL Google Ad Manager](以前为Google DFP)日志文件，您必须在广告标签调用中首先设置我们的[Audience Manager唯一用户ID (UUID)](../../../reference/ids-in-aam.md)。 这样，我们的ID将包含在[!DNL Google Ad Manager]日志中，我们可以匹配[!DNL Google Ad Manager]和[!DNL Audience Manager]之间的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]代码或[!UICONTROL Audience Management Module]在第一方Cookie中设置[!DNL Audience Manager] UUID。
+要在[!DNL Audience Manager]中使用[!DNL Google Ad Manager] (以前为Google DFP)日志文件，您必须在广告标签调用中首先设置我们的[Audience Manager唯一用户ID (UUID)](../../../reference/ids-in-aam.md)。 这样，我们的ID将包含在[!DNL Google Ad Manager]日志中，我们可以匹配[!DNL Google Ad Manager]和[!DNL Audience Manager]之间的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]代码或[!UICONTROL Audience Management Module]在第一方Cookie中设置[!DNL Audience Manager] UUID。
 
 以下是如何在广告标记调用中设置[!DNL Audience Manager] ID，如我们的文档中所述：
 
@@ -32,7 +32,7 @@ ht-degree: 14%
 您需要自行设置[!DNL Audience Manager] ID，并且可以与[!DNL Audience Manager]咨询人员合作来检查是否一切正常。 在以下情况下，您已正确设置[!DNL Audience Manager] ID：
 
 * `'aamid'`是用作标识符的键。
-* 用户ID值的格式正确为[!DNL Audience Manager] UUID，如Audience Manager](../../../reference/ids-in-aam.md)中ID的[索引中所述。
+* 用户ID值的格式正确为[!DNL Audience Manager] UUID，如Audience Manager[&#128279;](../../../reference/ids-in-aam.md)中ID的索引中所述。
 * 您在[!DNL Google Ad Manager]日志的已定义字段中包含了[!DNL Audience Manager] UUID（例如CustomTargeting）。
 
 ## 启用日志摄取的先决条件 {#prereqs-ingestion-enablement}

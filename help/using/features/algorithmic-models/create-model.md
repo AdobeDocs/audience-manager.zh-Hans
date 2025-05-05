@@ -40,14 +40,17 @@ ht-degree: 0%
    * 命名模型。
    * *（可选）*&#x200B;提供有关模型的简短描述。
    * 将模型的状态设置为&#x200B;**[!UICONTROL Active]**&#x200B;或&#x200B;**[!UICONTROL Inactive]**。 不活动的模型将不会运行，也不会生成任何数据。
+
      ![相似基本](assets/look-alike-basic.png)
 1. 在[配置](../../features/algorithmic-models/create-model.md#configuration)部分中：
    * 单击&#x200B;**[!UICONTROL Browse All Traits]**&#x200B;或&#x200B;**[!UICONTROL Browse All Segments]**&#x200B;以选择要作为建模依据的特征或区段。 按名称、ID、描述或数据源搜索特征。 搜索时单击某个文件夹，将结果限制为该文件夹及其子文件夹。 您还可以按特征类型（[!UICONTROL Folder Trait]、[!UICONTROL Rule-based]、[!UICONTROL Onboarded]和[!UICONTROL Algorithmic]）或群体类型（[设备ID](../../reference/ids-in-aam.md)和[跨设备ID](../../reference/ids-in-aam.md)）筛选特征。
+
      ![浏览特征](assets/browse-traits.png)
    * 选择30、60或90天的回顾时段。 这将设置模型的时间范围。
    * 默认情况下选择[!UICONTROL TraitWeight]算法。
    * 从[!UICONTROL Available Data]列表中选择数据源。
    * 完成后单击&#x200B;**[!UICONTROL Save]**。
+
      ![相似配置](assets/look-alike-configuration.png)
 
 请观看以下视频，详细了解跨设备量度的工作方式。

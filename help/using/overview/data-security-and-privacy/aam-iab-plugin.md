@@ -63,7 +63,7 @@ Audience Manager可帮助您尊重用户所做的隐私选择，并让您能够�
 要结合使用适用于IAB TCF的Audience Manager插件和Audience Manager，您必须满足以下先决条件：
 
 1. 您必须使用 Adobe Experience Platform Identity Service (ECID) 版本 5 或更高版本。[下载](https://github.com/Adobe-Marketing-Cloud/id-service/releases) ECID 的最新版本。
-2. 您必须使用Audience Manager[!DNL Data Integration Library] (DIL)版本9.0或更高版本，可从[此处](https://github.com/Adobe-Marketing-Cloud/dil/releases)下载。 阅读Audience Manager文档](../../dil/dil-overview.md)中的[DIL。 我们建议使用[Adobe Audience Manager标记扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html)实现Audience Manager的最简单的DIL实现。
+2. 您必须使用Audience Manager[!DNL Data Integration Library] (DIL)版本9.0或更高版本，可从[此处](https://github.com/Adobe-Marketing-Cloud/dil/releases)下载。 阅读Audience Manager文档[&#128279;](../../dil/dil-overview.md)中的DIL。 我们建议使用[Adobe Audience Manager标记扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html)实现Audience Manager的最简单的DIL实现。
 3. 或者，如果您使用[!DNL Server-Side Forwarding] (SSF)将数据导入Audience Manager，则必须升级到AppMeasurement的最新版本。 使用 [Analytics 代码管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html)下载 AppMeasurement。
 4. 您必须使用与IAB TCF v2.2集成并在IAB TCF中注册的商业同意管理平台或您自己的同意管理平台(CMP)。 请参阅[在 IAB 框架内注册的 CMP](https://iabeurope.eu/cmp-list/)。
 
@@ -187,7 +187,7 @@ https://yourcompany.demdex.net/event?d_event=imp&gdpr=1&gdpr_consent=consentstri
 
 ## 测试IAB实施 {#test-iab-implementation}
 
-要测试您是否已正确实施适用于IAB TCF的Audience Manager插件，请阅读验证选择加入服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/testing-optin-and-iab-plugin.html#section-64331998954d4892960dcecd744a6d88)中的用例4 。[
+要测试您是否已正确实施适用于IAB TCF的Audience Manager插件，请阅读验证选择加入服务[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/testing-optin-and-iab-plugin.html#section-64331998954d4892960dcecd744a6d88)中的用例4 。
 
 ## Audience Manager 中的 IAB 和选择退出。优先级顺序。 {#iab-and-optout}
 

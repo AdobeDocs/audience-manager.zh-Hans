@@ -52,7 +52,7 @@ ht-degree: 1%
 
 ## [!UICONTROL Cross-Device Options] {#auth-options}
 
-[!UICONTROL Cross-Device Options]允许您选择经过身份验证和未经身份验证的用户，并利用其跨设备配置文件进行分段。 这些选项可帮助您识别并联系共享设备上的特定用户。 有关匿名和经过身份验证的用户的详细信息，请参阅Audience Manager](../../reference/visitor-authentication-states.md)中的[访客身份验证状态。
+[!UICONTROL Cross-Device Options]允许您选择经过身份验证和未经身份验证的用户，并利用其跨设备配置文件进行分段。 这些选项可帮助您识别并联系共享设备上的特定用户。 有关匿名和经过身份验证的用户的详细信息，请参阅Audience Manager[&#128279;](../../reference/visitor-authentication-states.md)中的访客身份验证状态。
 
 <table id="table_4CE2DD312F54480E96BEAF72800789FB"> 
  <thead> 

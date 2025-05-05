@@ -29,7 +29,7 @@ ht-degree: 2%
 
    ![smart-persona-add](assets/predictive-audiences-add.png)
 
-1. 接下来，定义要按其对受众进行分类的角色。 您可以通过选择要从中构建角色的特征或区段来执行此操作。 使用屏幕左上角的[!UICONTROL Traits]和[!UICONTROL Segments]选项卡在特征和区段目录之间切换。 在识别要用作角色的特征或区段后，单击[!UICONTROL Action]列中相应的&#x200B;**[!UICONTROL Add]**图标。
+1. 接下来，定义要按其对受众进行分类的角色。 您可以通过选择要从中构建角色的特征或区段来执行此操作。 使用屏幕左上角的[!UICONTROL Traits]和[!UICONTROL Segments]选项卡在特征和区段目录之间切换。 在识别要用作角色的特征或区段后，单击[!UICONTROL Action]列中相应的&#x200B;**[!UICONTROL Add]**&#x200B;图标。
    ![smart-persona-select-personas](assets/predictive-audiences-persona.png)
    >[!NOTE]
    >您必须至少为基线角色选择两个特征或两个区段。 不能同时使用特征和区段。
@@ -42,6 +42,7 @@ ht-degree: 2%
    * **[!UICONTROL Description]**：输入模型的描述以帮助您识别其用例。
    * **[!UICONTROL Data Source]**：选择要将此模型中的[!UICONTROL Predictive Audiences]区段分配到的第一方数据源。
    * **[!UICONTROL Profile Merge Rule]**：选择要分配给此模型创建的所有预测[!UICONTROL segments]的[!UICONTROL Profile Merge Rule]。 如果您选择的目标受众为[!UICONTROL segment]，我们建议您选择相同的[!UICONTROL Profile Merge Rule]目标受众。
+
      ![predictive-audiences-save](assets/predictive-audiences-save.png)
 1. 单击 **[!UICONTROL Save]**。
 
@@ -51,7 +52,7 @@ Audience Manager不支持编辑现有[!UICONTROL Predictive Audiences]模型。 
 
 1. 转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**。
 2. 单击要克隆的[!UICONTROL Predictive Audiences]模型的名称。
-3. 单击屏幕左上角的&#x200B;**[!UICONTROL Clone]**按钮。
+3. 单击屏幕左上角的&#x200B;**[!UICONTROL Clone]**&#x200B;按钮。
    ![predictive-audiences-clone](assets/predictive-audiences-clone.png)
 4. 克隆模型后，您将转到克隆模型的[!DNL Save & Configure]页。 在此页面中，您可以更改模型的[!UICONTROL data source]和分配的[!UICONTROL Profile Merge Rule]。 要编辑克隆模型的角色和目标受众，请使用[!UICONTROL Back]和[!UICONTROL Next]按钮在三个选项卡之间导航，或单击三个选项卡名称
 

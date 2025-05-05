@@ -283,7 +283,7 @@ ht-degree: 0%
    * 单击&#x200B;**[!UICONTROL Request More Details]**&#x200B;向数据提供商询问有关所选数据馈送的问题或请求折扣。 此功能会将您的评论和问题直接发送到数据提供商。
 
 1. 数据馈送报表量度。 维恩图（和相关量度）显示过去30天的特质重叠数据。 有关详细信息，请参阅[市场：关于](marketplace-data-buyers.md#about-marketplace)。
-   * **[!UICONTROL 30 Day Overlapped Uniques]**：您的帐户中与提供商帐户中的用户重叠的唯一用户数。 有关唯一用户的定义，请参阅Audience Manager](/help/using/reference/ids-in-aam.md)中ID的[索引中的AAM UUID。
+   * **[!UICONTROL 30 Day Overlapped Uniques]**：您的帐户中与提供商帐户中的用户重叠的唯一用户数。 有关唯一用户的定义，请参阅Audience Manager[&#128279;](/help/using/reference/ids-in-aam.md)中ID的索引中的AAM UUID。
    * **[!UICONTROL 30 Day Provider Unique Users]**：来自提供商帐户的独特用户数。
    * **[!UICONTROL Your Unique Users]**：来自您帐户的独特用户数。
 

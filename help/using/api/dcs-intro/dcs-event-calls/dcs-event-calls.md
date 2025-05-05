@@ -27,7 +27,7 @@ ht-degree: 35%
 * 格式化调用中的数据元素。
 * 了解[!DNL DCS]返回的参数。
 
-要开始配置，请参阅以下部分。 从[将数据发送到DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)开始。 之后，继续从DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)接收数据[。
+要开始配置，请参阅以下部分。 从[将数据发送到DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)开始。 之后，继续从DCS[&#128279;](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)接收数据。
 
 * [将数据发送到DCS](dcs-url-send.md)
 * [从DCS接收数据](dcs-url-receive.md)

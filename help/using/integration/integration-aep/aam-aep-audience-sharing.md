@@ -108,7 +108,7 @@ Audience Manager会在特征存储中自动创建一个名为&#x200B;**Experienc
 
 有关自动从Experience Platform区段创建的特征的示例，请参阅下面的屏幕快照：
 
-来自Experience Platform](/help/using/integration/integration-aep/assets/aep-trait.png)的![特征
+来自Experience Platform![&#128279;](/help/using/integration/integration-aep/assets/aep-trait.png)的特征
 
 
 | 项目编号 | 名称 | 描述 |
@@ -192,7 +192,7 @@ Audience Manager中的[[!UICONTROL Profile Merge Rules]](/help/using/features/pr
 
 >[!NOTE]
 >
-> 在Experience PlatformAudience Manager之间共享区段时，您的Platform组织[默认合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en#default-merge-policy)优先于与Audience Manager共享的区段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#merge-policies)使用的[合并策略。 例如，如果共享区段的合并策略允许[ID拼接](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#configure)，而组织的默认合并策略不允许，则可能会导致平台和Audience Manager之间的群体差异。
+> 在Experience PlatformAudience Manager之间共享区段时，您的Platform组织[默认合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en#default-merge-policy)优先于与Audience Manager共享的区段[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#merge-policies)使用的合并策略。 例如，如果共享区段的合并策略允许[ID拼接](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#configure)，而组织的默认合并策略不允许，则可能会导致平台和Audience Manager之间的群体差异。
 
 ### Experience Platform中的区段构成
 

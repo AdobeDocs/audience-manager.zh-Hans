@@ -32,7 +32,7 @@ ht-degree: 2%
 若要开始使用[!UICONTROL Actionable Log Files]，您需要将日志数据导入[!DNL Audience Manager]。 以下链接将帮助您入门：
 
 * 有关[!UICONTROL Google Campaign Manager]日志，请参阅[将Google Campaign Manager数据文件导入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) *和*，联系您的[!DNL Audience Manager]顾问。
-* 有关[!UICONTROL Google Ad Manager](以前为Google DFP)日志，请参阅[将Google Ad Manager数据文件导入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *和*，联系您的[!DNL Audience Manager]顾问。
+* 有关[!UICONTROL Google Ad Manager] (以前为Google DFP)日志，请参阅[将Google Ad Manager数据文件导入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *和*，联系您的[!DNL Audience Manager]顾问。
 * 有关其他广告服务器日志，请参阅[数据和元数据文件](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) *和*，请联系您的[!DNL Audience Manager]顾问。
 
 如果您已将日志数据导入[!DNL Audience Manager]，请让您的[!DNL Audience Manager]顾问或[客户关怀](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html)为您启用[!UICONTROL Actionable Log Files]。

@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ---
 
-# 了解[!DNL Data Integration Library](DIL){#understanding-the-data-integration-library-dil}
+# 了解[!DNL Data Integration Library] (DIL){#understanding-the-data-integration-library-dil}
 
 >[!WARNING]
 >

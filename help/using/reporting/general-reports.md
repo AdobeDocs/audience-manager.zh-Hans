@@ -151,7 +151,7 @@ The illustration below shows the results of running a general report for the Tra
 
 此量度表示在指定时间范围内实时查看的实际独特访客数，以及在Audience Manager看到这些访客时符合区段资格条件的访客数。
 
-总区段人口&#x200B;****
+总区段人口&#x200B;**&#x200B;**
 
 此指标表示在回顾期间属于某个区段并已发送到目标的Audience ManagerUUID总数。
 

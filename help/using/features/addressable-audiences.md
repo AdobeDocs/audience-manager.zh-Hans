@@ -88,7 +88,7 @@ ht-degree: 0%
 * [!UICONTROL Last 90 Days]
 * [!UICONTROL Lifetime]
 
-所有日期和日期范围都设定在[!DNL UTC]时区内。 查看Audience Manager](../reference/aam-time-zones.md)中的[时区。
+所有日期和日期范围都设定在[!DNL UTC]时区内。 查看Audience Manager[&#128279;](../reference/aam-time-zones.md)中的时区。
 
 ## 日期范围间隔中的数据 {#date-range-intervals}
 
