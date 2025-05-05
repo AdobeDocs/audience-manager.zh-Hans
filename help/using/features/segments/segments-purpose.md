@@ -36,7 +36,7 @@ Audience Manager[!UICONTROL segment]是由单个特征或特征组组成的服�
 
 >[!TIP]
 >
->Audience Manager[!UICONTROL segments]与[!DNL Adobe Analytics] [!UICONTROL segments]不同。 阅读[了解Analytics和Audience Manager中的区段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)以了解两者之间区别的深入说明。
+>Audience Manager[!UICONTROL segments]与[!DNL Adobe Analytics] [!UICONTROL segments]不同。 阅读[了解Analytics和Audience Manager中的区段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=zh-Hans)以了解两者之间区别的深入说明。
 
 ## 使用[!UICONTROL Segment Builder]创建基于规则的[!UICONTROL Segments]
 

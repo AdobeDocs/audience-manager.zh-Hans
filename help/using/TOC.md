@@ -16,7 +16,7 @@ ht-degree: 25%
 # Audience Manager 用户指南 {#user-guide}
 
 + [Audience Manager 指南](aam-home.md)
-+ [Real-Time CDP的演变指南](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
++ [Real-Time CDP的演变指南](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html?lang=zh-Hans)
 + 迁移到Web SDK{#migrate-to-web-sdk}
    + [从Adobe Audience Manager标记扩展迁移到Web SDK标记扩展](migrate-to-web-sdk/dil-extension-to-web-sdk.md)
    + [将您的数据收集库从AppMeasurement迁移到Web SDK](migrate-to-web-sdk/appmeasurement-to-web-sdk.md)
@@ -151,7 +151,7 @@ ht-degree: 25%
       + [区段表达式编辑器中使用的代码语法](features/segments/segment-code-syntax.md)
       + [区段生成器中的特征和区段人口数据](features/segments/segment-builder-data.md)
       + [特征推荐](features/segments/trait-recommendations.md)
-      + [特征和细分资格筛选参考](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html)
+      + [特征和细分资格筛选参考](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html?lang=zh-Hans)
    + 特征{#traits}
       + [特征概述](/help/using/features/traits/traits-overview.md)
       + [特征详细信息页面](features/traits/trait-details-page.md)
@@ -348,8 +348,8 @@ ht-degree: 25%
    + 与其他Experience Cloud应用程序集成{#integration-other-solutions}
       + [将Audience Manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
       + [如何将数据从Adobe Analytics转发到Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [将Adobe Analytics区段发布到Experience Cloud(打开Adobe Analytics文档)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
-      + [将Audience Manager与Adobe Campaign集成(打开Adobe Campaign文档)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
+      + [将Adobe Analytics区段发布到Experience Cloud(打开Adobe Analytics文档)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html?lang=zh-Hans)
+      + [将Audience Manager与Adobe Campaign集成(打开Adobe Campaign文档)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html?lang=zh-Hans)
 + 参考{#reference}
    + [参考概述](reference/reference.md)
    + [Amazon S3：关于](reference/amazon-s3.md)

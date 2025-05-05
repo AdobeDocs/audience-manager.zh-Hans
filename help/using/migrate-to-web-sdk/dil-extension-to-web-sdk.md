@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## 目标受众
 
-本页面向使用[Audience Manager标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview)将Web集合数据引入Audience Manager的Audience Manager客户。 对于使用AppMeasurementJavaScript库的客户，请阅读有关如何将Audience Manager[的数据收集库从AppMeasurementJavaScript库更新到Web SDK JavaScript库](appmeasurement-to-web-sdk.md)的指南。
+本页面向使用[Audience Manager标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/audience-manager/overview)将Web集合数据引入Audience Manager的Audience Manager客户。 对于使用AppMeasurementJavaScript库的客户，请阅读有关如何将Audience Manager[的数据收集库从AppMeasurementJavaScript库更新到Web SDK JavaScript库](appmeasurement-to-web-sdk.md)的指南。
 
 ## 此实施路径的优缺点
 

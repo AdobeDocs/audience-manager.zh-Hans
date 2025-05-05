@@ -60,7 +60,7 @@ ht-degree: 2%
   </tr>
    <tr> 
    <td colname="col1"> <b><span class="uicontrol">事件类型</span></b> </td> 
-   <td colname="col2"> 通常根据功能（例如，转化、网站访客、合作伙伴、页面查看等）将特征分配给类型或类别。 可选。 <p> 要了解如何创建转化特征，请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">在Audience Manager中创建转化特征视频</a>。 </p></td> 
+   <td colname="col2"> 通常根据功能（例如，转化、网站访客、合作伙伴、页面查看等）将特征分配给类型或类别。 可选。 <p> 要了解如何创建转化特征，请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html?lang=zh-Hans">在Audience Manager中创建转化特征视频</a>。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">集成代码</span></b> </td> 

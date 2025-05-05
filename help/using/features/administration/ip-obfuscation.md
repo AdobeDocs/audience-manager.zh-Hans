@@ -31,7 +31,7 @@ ht-degree: 12%
 
 ### IP模糊处理优先级 {#precedence}
 
-[数据流级别的IP模糊处理](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#create)优先于Audience Manager中设置的任何IP模糊处理选项，并将其应用于所有IP地址。 Audience Manager执行的任何地理位置查找都受数据流级别[!UICONTROL IP obfuscation]选项的影响。 基于完全模糊处理的IP的Audience Manager中的地理位置查找将生成未知区域，并且任何基于所生成地理位置数据的区段都不会实现。
+[数据流级别的IP模糊处理](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans#create)优先于Audience Manager中设置的任何IP模糊处理选项，并将其应用于所有IP地址。 Audience Manager执行的任何地理位置查找都受数据流级别[!UICONTROL IP obfuscation]选项的影响。 基于完全模糊处理的IP的Audience Manager中的地理位置查找将生成未知区域，并且任何基于所生成地理位置数据的区段都不会实现。
 
 ## IP地址模糊处理要求 {#ip-obfuscation-requirements}
 

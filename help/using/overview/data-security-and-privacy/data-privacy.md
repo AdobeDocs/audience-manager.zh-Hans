@@ -43,9 +43,9 @@ ht-degree: 52%
 
 ## 法规合规性 {#compliance}
 
-[!DNL Audience Manager]通过诸如[Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)之类的用于数据访问和删除请求的隐私工具，帮助您履行某些隐私法规规定的义务。
+[!DNL Audience Manager]通过诸如[Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)之类的用于数据访问和删除请求的隐私工具，帮助您履行某些隐私法规规定的义务。
 
-此服务提供了一个 [!DNL RESTful API] 和用户界面，可帮助您管理消费者数据请求。使用 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)，您可以根据个人消费者的请求提交访问和删除个人数据的请求，从而帮助自动履行这部分合规义务。
+此服务提供了一个 [!DNL RESTful API] 和用户界面，可帮助您管理消费者数据请求。使用 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)，您可以根据个人消费者的请求提交访问和删除个人数据的请求，从而帮助自动履行这部分合规义务。
 
 在通过Privacy Service处理数据访问和删除请求时，当前通过[DCS API](../../api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)支持[选择退出请求](data-privacy-requests.md#opt-out-requests)。 有关详细信息，请参阅[数据隐私请求](data-privacy-requests.md)。
 

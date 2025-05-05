@@ -21,12 +21,12 @@ ht-degree: 0%
 | 您现有的数据收集方法 | Web SDK迁移说明 |
 |---------|----------|
 | 带有AudienceManagement模块的[!DNL AppMeasurement] JavaScript库 | 按照本指南中的说明进行操作。 |
-| [!DNL Audience Manager] [标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview) | 按照[中的说明将数据收集库从Audience Manager标记扩展更新到Web SDK标记扩展](dil-extension-to-web-sdk.md)。 |
+| [!DNL Audience Manager] [标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/audience-manager/overview) | 按照[中的说明将数据收集库从Audience Manager标记扩展更新到Web SDK标记扩展](dil-extension-to-web-sdk.md)。 |
 | [!DNL AppMeasurement] JavaScript库+独立[!DNL Audience Manager] [DIL库](../dil/dil-overview.md) | 按照[中的说明将数据收集库从Audience Manager标记扩展更新到Web SDK标记扩展](dil-extension-to-web-sdk.md)。 |
 
 ## 迁移概述 {#overview}
 
-从[!DNL AppMeasurement]迁移到[Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)主要是Adobe Analytics迁移。 对于Audience Manager客户，此迁移还包括Audience Manager。 两者必须一起迁移。 如果您主要使用Audience Manager，请确保在此迁移中涉及Analytics团队。
+从[!DNL AppMeasurement]迁移到[Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/home)主要是Adobe Analytics迁移。 对于Audience Manager客户，此迁移还包括Audience Manager。 两者必须一起迁移。 如果您主要使用Audience Manager，请确保在此迁移中涉及Analytics团队。
 
 如果您使用[!DNL AppMeasurement]进行Audience Manager数据收集，则您当前使用[!DNL Server-side Forwarding (SSF)]方法将Analytics数据发送到Audience Manager。 在此设置中，Analytics数据收集请求将转发到Audience Manager，后者还将处理Audience Manager对页面的响应。
 
@@ -40,17 +40,17 @@ ht-degree: 0%
 
 使用Web SDK时，Edge Network会通过单独的操作将数据发送到Analytics和Audience Manager。 Web SDK是一个向所有解决方案发送数据的库，而Edge Network可将与解决方案无关的数据点转换为特定于解决方案的格式。
 
-在这个新的数据流中，所有数据都发送到Edge Network [数据流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)，您可以[配置该数据流以根据需要将数据发送到Adobe解决方案](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)。 对于Audience Manager，在数据流上启用Audience Manager服务会将[!DNL XDM]和Analytics数据转换为Audience Manager接受的信号。 Edge Network还将Audience Manager响应返回到页面，Web SDK在该页面处理响应，类似于[!DNL AppMeasurement]和[!DNL AudienceManagement]模块处理响应的方式。
+在这个新的数据流中，所有数据都发送到Edge Network [数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/overview)，您可以[配置该数据流以根据需要将数据发送到Adobe解决方案](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure)。 对于Audience Manager，在数据流上启用Audience Manager服务会将[!DNL XDM]和Analytics数据转换为Audience Manager接受的信号。 Edge Network还将Audience Manager响应返回到页面，Web SDK在该页面处理响应，类似于[!DNL AppMeasurement]和[!DNL AudienceManagement]模块处理响应的方式。
 
 ## 标记迁移与非标记迁移 {#tags-vs-non-tags}
 
 无论您是使用扩展为[!DNL AppMeasurement]的标记、其他标记管理系统中的[!DNL AppMeasurement]库，还是直接将[!DNL AppMeasurement]放在页面上，将Audience Manager迁移到Web SDK的步骤都是相同的。 由于Audience Manager迁移依赖于Analytics迁移，因此从[!DNL AppMeasurement]迁移到Web SDK的步骤将在Analytics迁移期间确定。
 
-该信息涵盖在基于[Tags](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)或[JavaScript](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)的实施的Analytics文档中。
+该信息涵盖在基于[Tags](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)或[JavaScript](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)的实施的Analytics文档中。
 
 ## XDM和`data.__adobe.`节点 {#xdm-data-nodes}
 
-[Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)的主要功能之一是将数据发送到[Real-Time Customer Data Platform (RTCDP)](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home)。 为了实现这一目标，并且仍然在不进行完全重新实施的情况下为其他Experience Cloud解决方案收集数据，特定于解决方案的数据将在数据收集服务器调用中进行划分。 此调用使用名为[体验数据模型(XDM)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)的标准化JSON架构
+[Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/home)的主要功能之一是将数据发送到[Real-Time Customer Data Platform (RTCDP)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/home)。 为了实现这一目标，并且仍然在不进行完全重新实施的情况下为其他Experience Cloud解决方案收集数据，特定于解决方案的数据将在数据收集服务器调用中进行划分。 此调用使用名为[体验数据模型(XDM)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)的标准化JSON架构
 
 与解决方案无关的元素，例如有关浏览器和设备的信息，以预定的XDM结构发送到Edge Network。 Edge Network会将此数据转换为特定于解决方案的格式。 但是，特定于Target、Analytics和Audience Manager的数据存储在XDM有效负载的专用`data.__adobe`节点中。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 * Analytics变量`s.eVar1`在XDM有效负载中表示为`data.__adobe.analytics.evar1`。
 * 与客户忠诚度状态相关的Target参数存储为`data.__adobe.target.loyaltyStatus`。
 
-`__adobe`节点中的数据会被发送到相应的解决方案(如Analytics和Audience Manager)，而不会发送到Experience Platform，即使数据流上启用了Experience Platform服务也是如此。 这意味着您可以保留Analytics和Audience Manager的当前配置，同时还可以灵活地将任何必要的数据元素映射到XDM架构元素，以便在Experience Platform中使用[用于数据收集的数据准备](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)进行实时用例。
+`__adobe`节点中的数据会被发送到相应的解决方案(如Analytics和Audience Manager)，而不会发送到Experience Platform，即使数据流上启用了Experience Platform服务也是如此。 这意味着您可以保留Analytics和Audience Manager的当前配置，同时还可以灵活地将任何必要的数据元素映射到XDM架构元素，以便在Experience Platform中使用[用于数据收集的数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep)进行实时用例。
 
 例如，在结账期间用于报告购物车内容的Analytics `s.products`字符串仍可按其原始格式发送到Analytics和Audience Manager。 同时，您可以使用此字符串的元素为Experience Platform用例创建更直观的XDM购物车架构。
 
@@ -88,7 +88,7 @@ Edge Network将设备和浏览器数据从XDM有效负载和数据包报头转�
 Adobe建议在以下情况下遵循此实施路径：
 
 * 您已有使用Adobe Analytics AppMeasurement JavaScript库的实施。 如果您的实施使用Audience Manager标记扩展，请改为遵循[从Audience Manager标记扩展迁移到Web SDK标记扩展](dil-extension-to-web-sdk.md)。
-* 您打算在将来使用Real-Time CDP，但不希望从头开始使用Web SDK实施来替换Audience Manager实施。 使用Web SDK从头开始替代实施的替代方法需要您尽最大努力，因为您需要重建所有Audience Manager特征以查找XDM格式的数据。 但是，它也是最可行的长期实施架构。 如果您的组织愿意进行干净的Web SDK实施，请参阅[Web SDK文档](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)而不是使用本指南，以了解更多详细信息。
+* 您打算在将来使用Real-Time CDP，但不希望从头开始使用Web SDK实施来替换Audience Manager实施。 使用Web SDK从头开始替代实施的替代方法需要您尽最大努力，因为您需要重建所有Audience Manager特征以查找XDM格式的数据。 但是，它也是最可行的长期实施架构。 如果您的组织愿意进行干净的Web SDK实施，请参阅[Web SDK文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/home)而不是使用本指南，以了解更多详细信息。
 
 ## 迁移到Web SDK所需的步骤
 
@@ -96,7 +96,7 @@ Adobe建议在以下情况下遵循此实施路径：
 
 +++**1. 规划Analytics迁移**。
 
-与您的Analytics团队合作，按照基于[Tags](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)或[JavaScript](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)的实施中的Analytics迁移步骤操作。 在规划Analytics迁移后，请返回本指南并继续执行Audience Manager步骤以确定需要为Audience Manager执行哪些操作，以使您能够同时部署Analytics和Audience Manager迁移。
+与您的Analytics团队合作，按照基于[Tags](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)或[JavaScript](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)的实施中的Analytics迁移步骤操作。 在规划Analytics迁移后，请返回本指南并继续执行Audience Manager步骤以确定需要为Audience Manager执行哪些操作，以使您能够同时部署Analytics和Audience Manager迁移。
 
 +++
 
@@ -152,11 +152,11 @@ Adobe建议在以下情况下遵循此实施路径：
 
 大多数Audience Manager实施在跨设备个性化方案中使用[配置文件合并规则](../features/profile-merge-rules/merge-rules-overview.md)，以帮助控制访客可以根据其身份验证状态（登录或注销）而符合条件的区段。 配置文件合并规则要求在身份验证后的每次数据收集调用中将客户拥有的标识符（CRM ID、帐号等）发送到Audience Manager。 以前，访客ID服务([!DNL visitor.js])的`setCustomerIDs`函数用于将客户ID附加到每个Analytics数据收集调用，然后将这些调用转发到Audience Manager。
 
-使用Web SDK时，现在需要使用名为[IdentityMap](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)的特殊XDM构造将这些标识发送到Edge Network。
+使用Web SDK时，现在需要使用名为[IdentityMap](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/profile/identitymap)的特殊XDM构造将这些标识发送到Edge Network。
 
-在标识映射中正确传递标识需要了解[标识命名空间](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)并仔细考虑要传递的标识，特别是在将数据发送到Experience Platform沙盒时。 [本文](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21305)概述了这些注意事项和说明。
+在标识映射中正确传递标识需要了解[标识命名空间](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)并仔细考虑要传递的标识，特别是在将数据发送到Experience Platform沙盒时。 [本文](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-21305)概述了这些注意事项和说明。
 
-确定要传递的标识以及传递时间，请按照Tags中使用[!UICONTROL Identity map] **[!UICONTROL Identity map]** [数据元素](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/data-element-types#identity-map)的指南操作，或按照[标识数据概述](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/overview)中所述手动进行设置，以符合您的Web SDK部署策略。
+确定要传递的标识以及传递时间，请按照Tags中使用[!UICONTROL Identity map] **[!UICONTROL Identity map]** [数据元素](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/data-element-types#identity-map)的指南操作，或按照[标识数据概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/identity/overview)中所述手动进行设置，以符合您的Web SDK部署策略。
 
 +++
 
@@ -170,7 +170,7 @@ Adobe建议在以下情况下遵循此实施路径：
 
 1. 来自[Edge Network交互终结点](https://developer.adobe.com/data-collection-apis/docs/endpoints/interact/)的每个响应都包含具有`id`个节点的负载。 `CORE`命名空间有效负载的`id`节点包含Audience Manager UUID。
 
-2. 使用Web SDK的[getIdentity](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getidentity)命令检索它。 使用文档中所述的`CORE`命名空间，并从响应中的`identity.CORE`字段中检索值。
+2. 使用Web SDK的[getIdentity](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/commands/getidentity)命令检索它。 使用文档中所述的`CORE`命名空间，并从响应中的`identity.CORE`字段中检索值。
 
 无论用于检索Audience Manager UUID的方法如何，都由您的开发团队负责解析响应、检索UUID并设置Cookie。 无法通过Web SDK自动设置此Cookie。
 
@@ -178,13 +178,13 @@ Adobe建议在以下情况下遵循此实施路径：
 
 ## 在Analytics报表包管理器UI中配置服务器端转发和Audience Analytics {#configure-ssf-analytics}
 
-Audience Manager如果您熟悉Analytics [服务器端转发](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf)功能，您可能会想知道：“*是否应在Analytics报表包管理器UI中禁用服务器端转发设置，以防止将Analytics数据发送两次？*”。
+Audience Manager如果您熟悉Analytics [服务器端转发](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf)功能，您可能会想知道：“*是否应在Analytics报表包管理器UI中禁用服务器端转发设置，以防止将Analytics数据发送两次？*”。
 
 答案为否，由于以下原因，您不应禁用此设置：
 
-1. 在数据流上启用Audience Manager服务后，Edge Network会将`cm.ssf`变量附加到发送到Analytics的所有数据收集请求。 这样还可防止将Analytics数据发送到Audience Manager。 当数据流上启用了Assurance服务时，用于验证Analytics迁移的任何Audience Manager日志都将显示`cm.ssf=1`变量。 有关更多详细信息，请参阅服务器端转发的[Analytics和GDPR合规性页面](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf-gdpr)。
+1. 在数据流上启用Audience Manager服务后，Edge Network会将`cm.ssf`变量附加到发送到Analytics的所有数据收集请求。 这样还可防止将Analytics数据发送到Audience Manager。 当数据流上启用了Assurance服务时，用于验证Analytics迁移的任何Audience Manager日志都将显示`cm.ssf=1`变量。 有关更多详细信息，请参阅服务器端转发的[Analytics和GDPR合规性页面](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf-gdpr)。
 
-1. 此设置还为[!DNL Audience Analytics]集成启用数据流。 如[Audience Analytics概述](https://experienceleague.adobe.com/en/docs/analytics/integration/audience-analytics/mc-audiences-aam)中所述，此集成需要服务器端转发，因为对Analytics数据收集服务器的Audience Manager响应在处理之前已添加到Analytics点击。 Edge Network中也存在类似的过程。 启用服务器端转发后，Edge Network会将必要区段从Audience Manager响应添加到发送到Analytics的数据。
+1. 此设置还为[!DNL Audience Analytics]集成启用数据流。 如[Audience Analytics概述](https://experienceleague.adobe.com/zh-hans/docs/analytics/integration/audience-analytics/mc-audiences-aam)中所述，此集成需要服务器端转发，因为对Analytics数据收集服务器的Audience Manager响应在处理之前已添加到Analytics点击。 Edge Network中也存在类似的过程。 启用服务器端转发后，Edge Network会将必要区段从Audience Manager响应添加到发送到Analytics的数据。
 
 总之，必须保持启用此设置，以便Audience Analytics能够继续在Web SDK实施中正常运行，并且没有任何数据将在Audience Manager中重复计数。
 

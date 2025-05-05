@@ -101,7 +101,7 @@ t_working_with_trend_reports.xml
 
 请观看以下视频，详细了解跨设备量度的工作方式。
 
->[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html?lang=zh-Hans)
 
 ## 区段的趋势报表结果 {#segment-report-results-traits}
 

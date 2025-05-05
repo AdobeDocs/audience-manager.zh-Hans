@@ -21,9 +21,9 @@ ht-degree: 13%
 >
 >从2023年7月开始，Adobe已停止开发[!DNL Data Integration Library (DIL)]和[!DNL DIL]扩展。
 >
->现有客户可以继续使用其[!DNL DIL]实施。 但是，Adobe在此点之后不会开发[!DNL DIL]。 建议客户评估[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)的长期数据收集策略。
+>现有客户可以继续使用其[!DNL DIL]实施。 但是，Adobe在此点之后不会开发[!DNL DIL]。 建议客户评估[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)的长期数据收集策略。
 >
->如果客户希望在2023年7月之后实施新的数据收集集成，则应改用[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)。
+>如果客户希望在2023年7月之后实施新的数据收集集成，则应改用[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)。
 
 实例级别[!UICONTROL DIL] API允许您以编程方式创建并处理Audience Manager对象。 实例级方法增强了由类级方法建立的API功能。
 
@@ -727,7 +727,7 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >
 >* [关键变量的名称要求](../features/traits/trait-key-name-requirements.md)
 >* [关键变量的前缀要求](../features/traits/trait-variable-prefixes.md)
->* Adobe Experience Platform Identity服务中的[同步函数](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/idsync.html)
+>* Adobe Experience Platform Identity服务中的[同步函数](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/idsync.html?lang=zh-Hans)
 >* [DIL 创建](../dil/dil-class-overview/dil-create.md#dil-create)
->* [Adobe Experience Platform Identity服务： UseCORSOnly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html)
->* Adobe Experience Platform Identity服务中的[CORS支持](https://experienceleague.adobe.com/docs/id-service/using/reference/cors.html)
+>* [Adobe Experience Platform Identity服务： UseCORSOnly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html?lang=zh-Hans)
+>* Adobe Experience Platform Identity服务中的[CORS支持](https://experienceleague.adobe.com/docs/id-service/using/reference/cors.html?lang=zh-Hans)

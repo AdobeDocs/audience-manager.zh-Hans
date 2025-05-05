@@ -82,7 +82,7 @@ ht-degree: 14%
   </tr> 
   <tr> 
    <td colname="col1"> <p>步骤 6 </p> </td> 
-   <td colname="col2"> <p>编译先决条件并按照详细的<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html">此处</a>说明打开支持票证以启动日志摄取过程。 </p> </td> 
+   <td colname="col2"> <p>编译先决条件并按照详细的<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=zh-Hans">此处</a>说明打开支持票证以启动日志摄取过程。 </p> </td> 
    <td colname="col3"> <p>您或代表您<span class="keyword">Audience Manager</span>咨询 </p> </td> 
   </tr> 
  </tbody> 

@@ -35,7 +35,7 @@ ht-degree: 0%
    <td colname="col2"> <p>显示： </p> 
     <ul id="ul_7F7373919A4A49028EF4BF7B28D9F8E9"> 
      <li id="li_FE2F93C496D64ED8928B3E522C9585EA"> <span class="wintitle">活跃人员</span>：过去60天内对您的网站进行身份验证的人员数。 </li> 
-     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle">跨设备</span>：在选定的<a href="merge-rule-definitions.md">已验证配置文件</a>的<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html">数据Source</a>中存储的<a href="merge-rules-start.md#create-data-source">个跨设备ID</a>的总数，该数据源已存在该生命周期。 </li> 
+     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle">跨设备</span>：在选定的<a href="merge-rule-definitions.md">已验证配置文件</a>的<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html?lang=zh-Hans">数据Source</a>中存储的<a href="merge-rules-start.md#create-data-source">个跨设备ID</a>的总数，该数据源已存在该生命周期。 </li> 
      <li id="li_F2F07B6A326C4A18B79A0CF2C47D9677"> <span class="wintitle"> %活动人员</span>：将<span class="wintitle">活动人员</span>显示为%。 </li> 
     </ul> <p> <span class="wintitle">已验证的活动</span>允许您按活动、卷和百分比比较数据源。 它可以帮助您查找拥有大量人员和高百分比活动用户的数据源。 或者，您可能会发现，比较活跃用户占总受众人数比例较高的数据源很有价值。 例如，有时总生命周期数低且活动数高的数据源比生命周期结果高且活动数低的数据源更有价值。 </p> <p> <p>注意： <span class="wintitle">已验证的活动</span>指标仅包含<span class="wintitle">配置文件链接</span>数据。 此报表不包括<span class="wintitle">设备图</span>数据。 </p> </p> </td> 
   </tr> 

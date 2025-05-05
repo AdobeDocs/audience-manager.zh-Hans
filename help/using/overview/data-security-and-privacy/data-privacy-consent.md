@@ -31,11 +31,11 @@ Audience Manager 可为您提供工具，帮助您从用户那里获得所需的
 
 ## Experience Cloud 选择加入服务
 
-[Experience Cloud 选择加入服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)允许您为访客设置协议，以帮助确定在用户访问网站时您是否可以在用户的设备或浏览器上设置 Cookie。
+[Experience Cloud 选择加入服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=zh-Hans)允许您为访客设置协议，以帮助确定在用户访问网站时您是否可以在用户的设备或浏览器上设置 Cookie。
 
 这是 [!DNL Experience Cloud ID (ECID) Service] 的一项扩展，旨在让您控制 Experience Cloud 解决方案是否可以在用户同意前为访客在网页上放置 Cookie，如果是，具体是哪些解决方案。
 
-[Experience Cloud 选择加入服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)还允许您设置协议，以便与同意管理平台 (CMP) 和更大型设计中的现有系统相集成。
+[Experience Cloud 选择加入服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=zh-Hans)还允许您设置协议，以便与同意管理平台 (CMP) 和更大型设计中的现有系统相集成。
 
 ## 管理选择加入/获取同意
 
