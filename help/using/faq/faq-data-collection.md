@@ -8,12 +8,13 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP；SFTP地址；STFP IP地址；FTP地址
 feature: Administration
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
+source-git-commit: 974f45268d50c486c872137a3aa6d8fc7f691024
 workflow-type: tm+mt
-source-wordcount: '1211'
-ht-degree: 78%
+source-wordcount: '1255'
+ht-degree: 74%
 
 ---
+
 
 # 数据收集和产品集成常见问题解答{#data-collection-and-product-integration-faq}
 
@@ -25,7 +26,7 @@ ht-degree: 78%
 
 对于通过 [!UICONTROL Inbound] 载入的特征，[!UICONTROL Inbound] 填充方式与 [!DNL DCS] 填充方式相同。可以通过以下几种方法判断流量来自 [!UICONTROL Inbound]：
 
-* 远程 IP 将设置为 68.67.173.18
+* 远程IP将设置为68.67.173.18
 * 域 ID 将设置为 5325
 * 区域将设置为 0
 
@@ -170,7 +171,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **我们能否向 DSP 发送有关转化漏斗中用户所实现的点数信息？**
 
-能。我们可以发送漏斗数据，但 DSP 必须具备一定的技术能力才能使用该数据。DSP 必须确认可以处理多个区段。如果 DSP 无法处理多个区段，我们可能需要创建特定区段，以便根据客户的转化进度（例如，已完成步骤 1 和步骤 2，但未完成步骤 3）将用户从其他区段中删除。您可能希望将此信息发送到 DSP，以便 DSP 能够重新定位用户、将用户定向到特定登录页面或向用户显示特定创意内容。
+能。我们可以发送漏斗数据，但 DSP 必须具备一定的技术能力才能使用该数据。DSP 必须确认可以处理多个区段。如果 DSP 无法处理多个区段，我们可能需要创建特定区段，以便根据客户的转化进度（例如，已完成步骤 1 和步骤 2，但未完成步骤 3）将用户从其他区段中删除。您可能希望将此信息发送到 DSP，以便 DSP 能够重新锁定用户、将用户定向到特定登录页面或向用户显示特定创意内容。
 
 <br> 
 
@@ -190,7 +191,7 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 这两个报表会根据生成时在后端看到的未验证用户配置文件记录 (UUID) 来计算人口。
 
-在第一次调用 [!DNL DCS] 时，声明的 ID *不会*&#x200B;关联到任何 UUID（这表示客户端上不存在任何 [demdex cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=zh-Hans))。[!DNL DCS] 将随机生成一个 UUID 并设置一个 [!DNL demdex] Cookie，然后在响应调用中传递该 UUID，但不会将该 UUID 传输到后端。
+在第一次调用 [!DNL DCS] 时，声明的 ID *不会*&#x200B;关联到任何 UUID（这表示客户端上不存在任何 [demdex cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html))。[!DNL DCS] 将随机生成一个 UUID 并设置一个 [!DNL demdex] Cookie，然后在响应调用中传递该 UUID，但不会将该 UUID 传输到后端。
 
 >[!NOTE]
 >
@@ -210,6 +211,8 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 **非活动的Amazon S3用户访问密钥发生了什么情况？**
 
-Adobe为Audience Manager客户提供了Audience Manager[!DNL Amazon S3]存储桶的用户访问密钥。 为安全起见，此密钥在100天不活动后会自动禁用。
+Adobe为Audience Manager客户提供了[!DNL Amazon S3]存储段的访问密钥。 出于安全考虑，如果这些访问密钥在100天内未使用，则会自动禁用它们。
 
-要重新启用访问密钥或请求新密钥，请联系客户支持。
+如果您的访问密钥被禁用，您可以联系客户支持以重新启用它们或请求新的访问密钥。
+
+为了增强安全性，1000天未使用的访问密钥将与Amazon S3 IAM用户帐户一起永久删除。 如果您是旧客户，并且在此时间段后需要访问，请联系客户支持以重新创建您的帐户并接收新的访问密钥。
