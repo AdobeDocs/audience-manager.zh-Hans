@@ -122,11 +122,11 @@ ht-degree: 3%
 
 ## [!UICONTROL Data Export Controls] {#dec}
 
-由[!UICONTROL Predictive Audiences]模型创建的预测区段从以下第一方数据源继承了[数据导出控件](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)：
+由[!UICONTROL Predictive Audiences]模型创建的预测区段从以下第一方数据源继承了[数据导出控件](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hans)：
 
 1. 您在构建模型时选择的第一方数据源。
 1. 目标受众的第一方数据源。 具体而言，构成目标受众的[!UICONTROL traits]或[!UICONTROL segments]的数据导出控件。
-1. 您为模型选择的[的](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)数据导出控件[!UICONTROL Profile Merge Rule]。
+1. 您为模型选择的[的](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hans)数据导出控件[!UICONTROL Profile Merge Rule]。
 
 新创建的预测[!UICONTROL traits]和[!UICONTROL segments]将与上面描述的第一方数据源的并集具有相同的隐私限制。
 
@@ -146,6 +146,6 @@ ht-degree: 3%
 
 ## [!UICONTROL Role-Based Access Controls] {#rbac}
 
-您为角色和受众分类选择的特征和区段受基于Audience Manager [角色的访问控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html)的约束。
+您为角色和受众分类选择的特征和区段受基于Audience Manager [角色的访问控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html?lang=zh-Hans)的约束。
 
-Audience Manager用户只能为角色和Target受众选择具有[查看权限](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions)的特征或区段。
+Audience Manager用户只能为角色和Target受众选择具有[查看权限](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html?lang=zh-Hans#wild-card-permissions)的特征或区段。

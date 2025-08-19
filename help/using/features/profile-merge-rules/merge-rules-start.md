@@ -150,7 +150,7 @@ visitor.setCustomerIDs({
      "authState":Visitor.AuthState.AUTHENTICATED
 ```
 
-有关详细信息，请参阅[创建跨设备数据Source](#create-data-source)和[客户ID和身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)。
+有关详细信息，请参阅[创建跨设备数据Source](#create-data-source)和[客户ID和身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hans)。
 
 ### 配置`DIL.create`函数
 
@@ -165,7 +165,7 @@ var vDil = DIL.create({
 });
 ```
 
-在命名空间键值对中，`*`MCORG`*`变量是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，则可以在[!UICONTROL Administration]仪表板的[!DNL Experience Cloud]部分中找到它。 您需要管理员权限才能查看此仪表板。 请参阅[管理：核心服务](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+在命名空间键值对中，`*`MCORG`*`变量是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，则可以在[!UICONTROL Administration]仪表板的[!DNL Experience Cloud]部分中找到它。 您需要管理员权限才能查看此仪表板。 请参阅[管理：核心服务](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans)。
 
 ### 配置SDK
 
@@ -223,7 +223,7 @@ DIL.create({
  </tbody>
 </table>
 
-另请参阅[适用于Android的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html)和[适用于iOS的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html)。
+另请参阅[适用于Android的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html?lang=zh-Hans)和[适用于iOS的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html?lang=zh-Hans)。
 
 >[!MORELIKETHIS]
 >

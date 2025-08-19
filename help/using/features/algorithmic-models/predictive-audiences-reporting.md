@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Predictive Audiences报表
 
-保存[!UICONTROL Predictive Audiences]模型后，Audience Manager会开始对其进行训练。 在几个小时内，计算模型将开始分析[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs)上的受众。 报告将在第二天提供。
+保存[!UICONTROL Predictive Audiences]模型后，Audience Manager会开始对其进行训练。 在几个小时内，计算模型将开始分析[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=zh-Hans#dcs-pcs)上的受众。 报告将在第二天提供。
 
 若要查看[!UICONTROL Predictive Audiences]分类的结果，请转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然后在列表中单击您的模型。
 

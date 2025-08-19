@@ -28,15 +28,15 @@ ht-degree: 42%
 您可以通过两种方式提交单个请求以从[!DNL Audience Manager]访问和删除使用者数据：
 
 * 通过 [Privacy Service UI](https://privacyui.cloud.adobe.io/)。请参阅[此文档](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)。
-* 通过 **[!DNL Privacy Service API]**。请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)和[!DNL API]引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
+* 通过 **[!DNL Privacy Service API]**。请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hans)和[!DNL API]引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
 
 在发送单个数据隐私请求时，您可以提交任意[!DNL Audience Manager]标识符(ID)(如&#x200B;**[Audience Manager标识符](data-privacy-ids.md)**&#x200B;部分所述)，以及标识符对应的命名空间ID（数据源ID）。
 
-[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) 支持两种类型的请求：数据访问请求和数据删除请求。
+[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans) 支持两种类型的请求：数据访问请求和数据删除请求。
 
 ## 数据访问请求 {#access-data}
 
-您可以通过[Privacy Service UI](https://privacyui.cloud.adobe.io)（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en)）或通过调用Privacy Service API（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)和[!DNL API]参考[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）发送单个数据访问请求。
+您可以通过[Privacy Service UI](https://privacyui.cloud.adobe.io)（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hans)）或通过调用Privacy Service API（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hans)和[!DNL API]参考[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）发送单个数据访问请求。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 允许您通过使用 [!UICONTROL Request Builder] 或上传 [!DNL JSON] 文件来创建新的作业请求。
 
@@ -46,7 +46,7 @@ ht-degree: 42%
 
 ## 数据删除请求 {#delete-data}
 
-您可以通过[Privacy Service UI](https://privacyui.cloud.adobe.io)（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en)）或通过调用Privacy Service API（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)和[!DNL API]参考[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）发送数据删除请求。
+您可以通过[Privacy Service UI](https://privacyui.cloud.adobe.io)（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hans)）或通过调用Privacy Service API（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hans)和[!DNL API]参考[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）发送数据删除请求。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 允许您通过使用 [!UICONTROL Request Builder] 或上传 [!DNL JSON] 文件来创建新的作业请求。
 
@@ -71,7 +71,7 @@ Adobe 理解您承诺在 30 天内响应数据隐私客户请求。因此，[!DN
 
 [!DNL Audience Manager]支持有关选择退出管理的行业标准。 请阅读并全面了解[!DNL Audience Manager]支持的选择退出类型相关信息。
 
-虽然数据访问和删除请求是通过[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)处理的，但目前是通过[!DNL DCS API]支持选择退出请求。 请阅读并了解选择退出[!DNL API]调用应该是什么样的。
+虽然数据访问和删除请求是通过[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)处理的，但目前是通过[!DNL DCS API]支持选择退出请求。 请阅读并了解选择退出[!DNL API]调用应该是什么样的。
 
 ### 全局选择退出请求
 
@@ -97,8 +97,8 @@ Adobe 理解您承诺在 30 天内响应数据隐私客户请求。因此，[!DN
    <td colname="col1"> <p>移动设备 </p> </td> 
    <td colname="col2"> <p>请参阅适用于以下两类移动设备的选择退出和隐私设置： </p> <p> 
      <ul id="ul_78042D6D302F4119A2439BF71F228288"> 
-      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html" format="https" scope="external"> Android 设备</a> </li> 
-      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html" format="https" scope="external"> iOS 设备</a> </li> 
+      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=zh-Hans" format="https" scope="external"> Android 设备</a> </li> 
+      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html?lang=zh-Hans" format="https" scope="external"> iOS 设备</a> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 

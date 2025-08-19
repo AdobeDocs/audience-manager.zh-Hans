@@ -52,7 +52,7 @@ ht-degree: 0%
 
 请观看以下视频，详细了解跨设备量度的工作方式。
 
->[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html?lang=zh-Hans)
 
 ## 算法模型的基本信息 {#basic-information}
 

@@ -38,7 +38,7 @@ Audience Manager包含以下组件：
 
 ## DIL/TIM容器 {#dil-tim}
 
-[!UICONTROL DIL]容器有助于将[!DNL Audience Manager]数据收集代码部署到您的网站。 [!UICONTROL TIM]是已弃用的标记插入管理器。 [!DNL Audience Manager]不再使用它。 您而是使用[!DNL Audience Manager]Adobe Experience Platform Tags[中的](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html)扩展来配置和生成您放置在库存页面上的容器代码。
+[!UICONTROL DIL]容器有助于将[!DNL Audience Manager]数据收集代码部署到您的网站。 [!UICONTROL TIM]是已弃用的标记插入管理器。 [!DNL Audience Manager]不再使用它。 您而是使用[!DNL Audience Manager]Adobe Experience Platform Tags[中的](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=zh-Hans)扩展来配置和生成您放置在库存页面上的容器代码。
 
 ## 数据集成库 (DIL) {#dil}
 

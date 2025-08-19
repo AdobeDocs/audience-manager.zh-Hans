@@ -24,11 +24,11 @@ Audience Manager为[!DNL SDK]和[!DNL Android]提供了软件开发工具包([!D
 
 * 要开始配置，请转到 [Launch](https://launch.adobe.com/)。
 * 要查看Experience Platform SDK存储库中的内容，请转到[Github： Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
-* 要使用新的Audience Manager v.5在应用程序中实施SDK，请阅读新SDK页面上的[Adobe Audience Manager文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/data-management/aam-dil-extension.html?lang=en)。
+* 要使用新的Audience Manager v.5在应用程序中实施SDK，请阅读新SDK页面上的[Adobe Audience Manager文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/data-management/aam-dil-extension.html?lang=zh-Hans)。
 
 <br> 
 
 我们仍支持Android和iOS 4.x SDK。 有关这些SDK代码库，请参阅：
 
-* [Android SDK](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
-* [iOS SDK](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
+* [Android SDK](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=zh-Hans)
+* [iOS SDK](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=zh-Hans)

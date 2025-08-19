@@ -19,7 +19,7 @@ ht-degree: 1%
 >[!WARNING]
 >
 >Google已更新[!DNL Google Chrome]和所有基于[!DNL Chromium]的浏览器的功能，以最大限度地减少通过`User-Agent`标头收集的信息。
->&#x200B;>从2023年3月开始，Audience Manager利用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)支持这些更新。 要继续使用通过`User-Agent`标头提供的特征信息，您必须使用[Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)并启用[高熵用户代理客户端提示](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=en)。
+>&#x200B;>从2023年3月开始，Audience Manager利用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)支持这些更新。 要继续使用通过`User-Agent`标头提供的特征信息，您必须使用[Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)并启用[高熵用户代理客户端提示](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=zh-Hans)。
 >&#x200B;>[DIL](../../../using/dil/dil-overview.md)不支持这些更新，因此使用[!DNL DIL]的Audience Manager客户将无法通过`User-Agent`标头收集特征信息。
 
 描述可用于通过Audience Manager帐户中所有属性的设备相关变量来定位用户的常用平台级别键值对。

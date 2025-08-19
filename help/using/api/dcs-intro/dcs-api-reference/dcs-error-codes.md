@@ -23,7 +23,7 @@ ht-degree: 3%
 |---|---|---|
 | 0 | 未指定的错误 | 这是一个捕获全部错误，它处理其他错误处理程序未涵盖的事件。 解决此错误非常困难。 它可能是由于各种未知操作或事件导致的。 如果收到此错误，请重试您的[!DNL DCS]请求。 如果问题仍然存在，请联系您的[!DNL Adobe]代表。 |
 | 1 | 找不到主机名的配置： `hostname` | 我们的合作伙伴配置团队尚未设置请求中发送的主机名。 如果您看到此错误消息，请联系您的[!DNL Adobe]代表。 |
-| 2 | 无效的`d_orgid`值（未能找到此组织ID的配置）： `ID` | 组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页面”部分[组织和帐户关联](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)以了解有关如何查找该页面的信息。 |
+| 2 | 无效的`d_orgid`值（未能找到此组织ID的配置）： `ID` | 组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页面”部分[组织和帐户关联](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=zh-Hans)以了解有关如何查找该页面的信息。 |
 | 10 | 无法评估特征 | 请求中的特征被部分评估或根本没有被评估。 如果问题仍然存在，请联系您的[!DNL Adobe]代表。 |
 
 ## 集成错误代码 {#integration-error-codes}
@@ -151,7 +151,7 @@ ht-degree: 3%
   <tr> 
    <td colname="col1"> <p>302 </p> </td> 
    <td colname="col2"> <p>未授权的客户ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>当客户ID数据源不属于当前组织ID时返回。 如果您不知道或没有您的组织ID，请参阅<a href="https://experiencecloud.adobe.com/resources/help/en_US/mcloud/organizations.html" format="https" scope="external">组织和帐户关联</a>中的“查找您的组织ID”部分，以了解有关如何查找该ID的信息。 </p> </td> 
+   <td colname="col3"> <p>当客户ID数据源不属于当前组织ID时返回。 如果您不知道或没有您的组织ID，请参阅<a href="https://experiencecloud.adobe.com/resources/help/zh_CN/mcloud/organizations.html" format="https" scope="external">组织和帐户关联</a>中的“查找您的组织ID”部分，以了解有关如何查找该ID的信息。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>303 </p> </td> 

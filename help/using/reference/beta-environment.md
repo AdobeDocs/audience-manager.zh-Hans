@@ -29,7 +29,7 @@ Beta环境会在每月末的非高峰时段更新。
 
 >[!IMPORTANT]
 >
->请注意，您的客户数据（[信号、特征和区段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=en)）未在生产环境和测试版环境之间同步。
+>请注意，您的客户数据（[信号、特征和区段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=zh-Hans)）未在生产环境和测试版环境之间同步。
 
 ## 入站流量
 

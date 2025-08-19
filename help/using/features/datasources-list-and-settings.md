@@ -112,7 +112,7 @@ ht-degree: 0%
      <ul id="ul_3BC963CE378B4F6CB1861643A4541634"> 
       <li id="li_B86C5E7847424A2B9C094DF02741DDB8"> <b><span class="uicontrol">客户ID</span></b>：使用客户ID标识入站数据。 </li> 
       <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol"> Audience Manager ID</span></b>：使用<span class="keyword"> Audience Manager</span> ID标识入站数据。 </li> 
-      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud ID</span></b>：使用<span class="keyword"> Experience Cloud</span> ID标识入站数据。 查看<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Experience Cloud ID</a>。 </li> 
+      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud ID</span></b>：使用<span class="keyword"> Experience Cloud</span> ID标识入站数据。 查看<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hans" format="https" scope="external"> Cookie和Experience Cloud ID</a>。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 

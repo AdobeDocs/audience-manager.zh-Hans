@@ -20,9 +20,9 @@ ht-degree: 2%
 >
 >从2023年7月开始，Adobe已停止开发[!DNL Data Integration Library (DIL)]和[!DNL DIL]扩展。
 >
->现有客户可以继续使用其[!DNL DIL]实施。 但是，Adobe在此之后不会开发[!DNL DIL]。 建议客户评估[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)的长期数据收集策略。
+>现有客户可以继续使用其[!DNL DIL]实施。 但是，Adobe在此之后不会开发[!DNL DIL]。 建议客户评估[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)的长期数据收集策略。
 >
->如果客户希望在2023年7月之后实施新的数据收集集成，则应改用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)。
+>如果客户希望在2023年7月之后实施新的数据收集集成，则应改用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)。
 
 收集从FLA文件发送到Analytics的数据，并在Audience Manager中处理该信息。
 
@@ -56,7 +56,7 @@ c_flash_dil_intro.xml
 
 **将AllowScriptAccess设置为`Always`或`sameDomain`**
 
-HTML代码(用于加载SWF文件)中的`AllowScriptAccess`控制从SWF文件执行出站URL访问的能力。 配置[!UICONTROL Flash DIL]数据集成时，请确保Flash `AllowScriptAccess`参数设置为`always`或`sameDomain`。 如果[!UICONTROL Flash DIL]设置为`AllowScriptAccess`，则`never`数据收集将不起作用。 请参阅[控制对脚本或主机网页的访问](https://helpx.adobe.com/flash/kb/control-access-scripts-host-web.html)。
+HTML代码(用于加载SWF文件)中的`AllowScriptAccess`控制从SWF文件执行出站URL访问的能力。 配置[!UICONTROL Flash DIL]数据集成时，请确保Flash `AllowScriptAccess`参数设置为`always`或`sameDomain`。 如果[!UICONTROL Flash DIL]设置为`AllowScriptAccess`，则`never`数据收集将不起作用。 请参阅[控制对脚本或主机网页的访问](https://helpx.adobe.com/cn/flash/kb/control-access-scripts-host-web.html)。
 
 **JS [!UICONTROL DIL]代码位置**
 
