@@ -16,13 +16,13 @@ ht-degree: 1%
 
 # 从DCS接收数据 {#receive-data-from-the-dcs}
 
-继续此处以了解有关如何在`/event`调用中请求[!DNL DCS]响应的信息。 此部分包括响应示例以及响应中常见数据元素的定义。
+继续此处以了解有关如何在[!DNL DCS]调用中请求`/event`响应的信息。 此部分包括响应示例以及响应中常见数据元素的定义。
 
 在查看此内容之前，请参阅[将数据发送到DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)。
 
 ## DCS响应参数：审查 {#dcs-response-parameters}
 
-如果您想从[!DNL DCS]接收响应，您的[!DNL DCS]请求必须包括`d_rtbd=json`。 如果忽略此参数，[!DNL DCS]将不会返回数据。 对[!DNL DCS]的基本调用将使用此语法：
+如果您想从[!DNL DCS]接收响应，您的`d_rtbd=json`请求必须包括[!DNL DCS]。 如果忽略此参数，[!DNL DCS]将不会返回数据。 对[!DNL DCS]的基本调用将使用此语法：
 
 ```js
 https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_cb=callback
@@ -61,7 +61,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 | `stuff` | 此对象包含所有Cookie目标的信息。 此对象的列表是动态的，取决于用户的操作。 |
 | `tid` | 交易ID，用于调试的唯一的12个字符ID。 对DCS进行的每个/event调用都会收到一个tid，您可以在支持查询中引用该值，以便做出更好、更快的响应。 |
 | `ttl` | Cookie存留期值（以天为单位）。 |
-| `u` 和 `uuid` | 由Audience Manager分配的独特用户ID。 如果您正在进行[服务器到服务器DCS调用](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)，则需要此项。 |
+| `u` 和 `uuid` | Audience Manager分配的独特用户ID。 如果您正在进行[服务器到服务器DCS调用](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)，则需要此项。 |
 | `y` | 目标类型、iFrame (`iframe`)或图像(`img`)。 |
 
 >[!MORELIKETHIS]

@@ -1,9 +1,9 @@
 ---
-description: 在Audience Manager，我们和你们一样，都是工程师，开发人员和编码忍者。 而且与您一样，我们希望使用可靠、准确的API文档。 因此，我们在Swagger中重写了API内容，并将其移至一个新位置。 这些更改旨在帮助改进您对Audience ManagerAPI代码的体验。
+description: 在Audience Manager，我们像你们一样是工程师、开发人员和代码忍者。 而且与您一样，我们希望使用可靠、准确的API文档。 因此，我们在Swagger中重写了API内容，并将其移至一个新位置。 这些更改旨在帮助改进您对Audience Manager API代码的体验。
 seo-description: Here at Audience Manager, we're engineers, developers, and code ninjas just like you. And, like you, we want to work with reliable, accurate API documentation. As a result, we're re-writing our API content in Swagger and moving it to a new location. These changes are designed to help improve your experience with the Audience Manager API code.
 seo-title: Audience Manager API Code Migration
 solution: Audience Manager
-title: Audience ManagerAPI代码迁移
+title: Audience Manager API代码迁移
 uuid: 93cc28c4-4b91-4c79-93d5-ece9bb4cc9d5
 feature: API
 exl-id: 081be8a7-5029-45b1-8fb1-0531d5090fe0
@@ -14,9 +14,9 @@ ht-degree: 4%
 
 ---
 
-# Audience ManagerAPI代码迁移 {#audience-manager-api-code-migration}
+# Audience Manager API代码迁移 {#audience-manager-api-code-migration}
 
-在Audience Manager，我们和你们一样，都是工程师，开发人员和编码忍者。 我们希望与您一样，使用可靠、准确的[!DNL API]文档。 因此，我们正在重写[!DNL Swagger]中的[!DNL API]内容并将其移动到新位置。 这些更改旨在帮助改进您对Audience Manager[!DNL API]代码的体验。
+在Audience Manager，我们像你们一样是工程师、开发人员和代码忍者。 我们希望与您一样，使用可靠、准确的[!DNL API]文档。 因此，我们正在重写[!DNL API]中的[!DNL Swagger]内容并将其移动到新位置。 这些更改旨在帮助改进您对Audience Manager [!DNL API]代码的体验。
 
 ## 向上移动 {#code-migration-details}
 

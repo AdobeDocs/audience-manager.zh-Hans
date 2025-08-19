@@ -22,7 +22,7 @@ ht-degree: 0%
 
 2020年3月，[!DNL Adobe]将停止支持[!DNL TLS 1.1]协议。 对于使用仅支持[!DNL TLS 1.1]的浏览器的最终用户，Adobe Audience Manager功能将停止工作。
 
-Adobe强烈建议使用[!DNL TLS 1.2]，在编写时为协议的最新版本。 所有新式浏览器都使用[!DNL TLS 1.2]。 我们为您收集了浏览器、版本及其[!DNL TLS]支持的列表。 有关TLS浏览器支持的详细信息，请访问[传输层安全性Wikipedia链接](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers)。
+Adobe强烈建议使用[!DNL TLS 1.2]，在编写该协议时，它是该协议的最新版本。 所有新式浏览器都使用[!DNL TLS 1.2]。 我们为您收集了浏览器、版本及其[!DNL TLS]支持的列表。 有关TLS浏览器支持的详细信息，请访问[传输层安全性Wikipedia链接](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers)。
 
 <!--
 

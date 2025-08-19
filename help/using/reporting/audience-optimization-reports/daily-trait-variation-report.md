@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Audience Manager中的每日特征变化报告遵循RBAC原则。 您只能根据您所属的[RBAC用户组](/help/using/features/administration/administration-overview.md)，查看您有权访问的数据源中的特征。
+>Audience Manager中的每日特征变化报表遵循RBAC原则。 您只能根据您所属的[RBAC用户组](/help/using/features/administration/administration-overview.md)，查看您有权访问的数据源中的特征。
 
 标准偏差测量与平均值（或平均值/预期值）之间的偏差或分散程度。 较低的标准偏差表示数据点往往非常接近平均值。 高标准偏差表示数据点分布于大量值中。
 

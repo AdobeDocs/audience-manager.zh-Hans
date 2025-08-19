@@ -38,6 +38,6 @@ Audience Manager中的算法建模是指使用数据科学来扩展现有受众�
 
 在营销环境中，人物是由访客、用户或潜在购买者定义的受众区段，他们具有一组特定特征，如人口统计信息、浏览习惯、购物历史记录等。
 
-[!UICONTROL Predictive Audiences]模型通过使用Audience Manager的机器学习功能将未知受众自动分类为不同的角色，进一步扩展了此概念。 Audience Manager通过为一组已知受众计算未知受众的倾向来实现这一点。
+[!UICONTROL Predictive Audiences]模型使用Audience Manager的机器学习功能将未知受众自动分类为不同的角色，从而进一步扩展了这一概念。 Audience Manager通过为一组已知受众计算未知受众的倾向来实现这一点。
 
 要了解有关[!UICONTROL Predictive Audiences]的更多信息，请参阅[预测受众概述](predictive-audiences.md)。

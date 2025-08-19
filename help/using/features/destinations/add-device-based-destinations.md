@@ -23,11 +23,11 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-添加新的基于设备的目标的过程包括两个主要步骤。 首先，您需要配置Audience Manager和目标合作伙伴之间的集成。 执行此操作后，您可以创建一个新的基于设备的目标。
+添加新的基于设备的目标的过程包括两个主要步骤。 首先，您需要配置Audience Manager与目标合作伙伴之间的集成。 执行此操作后，您可以创建一个新的基于设备的目标。
 
 ## 先决条件 {#prerequisites}
 
-使用集成平台创建第一个基于设备的目标时，请联系Adobe Consulting或客户关怀团队，为您的帐户启用Audience Manager与集成平台之间的ID同步。 这是Audience Manager与目标平台之间正确同步所必需的。
+使用集成平台创建第一个基于设备的目标时，请联系Adobe Consulting或客户关怀团队，为您的帐户启用Audience Manager和集成平台之间的ID同步。 这是Audience Manager与目标平台之间正确同步所必需的。
 
 ## 步骤1. 使用目标平台进行身份验证 {#step1}
 
@@ -39,7 +39,7 @@ ht-degree: 1%
 
    ![集成平台](assets/dbd-integrated-platforms.png)
 
-1. 通过目标平台帐户身份验证后，您将被重定向到Audience Manager，您应该会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!DNL Confirm]**。
+1. 在针对目标平台帐户进行身份验证后，您将被重定向到Audience Manager，您应该会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!DNL Confirm]**。
 
 ## 步骤 2. 创建新的基于设备的目标 {#step2}
 

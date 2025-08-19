@@ -19,7 +19,7 @@ ht-degree: 42%
 
 ## 概述 {#overview}
 
-本文档概要介绍如何管理可通过[Privacy ServiceUI](https://privacyui.cloud.adobe.io/)和&#x200B;**[!DNL Privacy Service API]**&#x200B;发送给[!DNL Audience Manager]的单个数据隐私请求和选择退出请求。
+本文档概述了如何管理可通过[!DNL Audience Manager]Privacy Service UI[和](https://privacyui.cloud.adobe.io/)发送给&#x200B;**[!DNL Privacy Service API]**&#x200B;的单个数据隐私请求和选择退出请求。
 
 这些工具允许您发送在[!DNL GDPR]和[!DNL CCPA]下发出的消费者数据隐私请求。
 
@@ -28,15 +28,15 @@ ht-degree: 42%
 您可以通过两种方式提交单个请求以从[!DNL Audience Manager]访问和删除使用者数据：
 
 * 通过 [Privacy Service UI](https://privacyui.cloud.adobe.io/)。请参阅[此文档](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)。
-* 通过 **[!DNL Privacy Service API]**。请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hans)和[!DNL API]引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
+* 通过 **[!DNL Privacy Service API]**。请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)和[!DNL API]引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
 
 在发送单个数据隐私请求时，您可以提交任意[!DNL Audience Manager]标识符(ID)(如&#x200B;**[Audience Manager标识符](data-privacy-ids.md)**&#x200B;部分所述)，以及标识符对应的命名空间ID（数据源ID）。
 
-[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans) 支持两种类型的请求：数据访问请求和数据删除请求。
+[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) 支持两种类型的请求：数据访问请求和数据删除请求。
 
 ## 数据访问请求 {#access-data}
 
-您可以通过[Privacy ServiceUI](https://privacyui.cloud.adobe.io)（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hans)）或通过调用Privacy ServiceAPI（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hans)和[!DNL API]参考[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）发送单个数据访问请求。
+您可以通过[Privacy Service UI](https://privacyui.cloud.adobe.io)（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en)）或通过调用Privacy Service API（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)和[!DNL API]参考[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）发送单个数据访问请求。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 允许您通过使用 [!UICONTROL Request Builder] 或上传 [!DNL JSON] 文件来创建新的作业请求。
 
@@ -46,7 +46,7 @@ ht-degree: 42%
 
 ## 数据删除请求 {#delete-data}
 
-您可以通过[Privacy ServiceUI](https://privacyui.cloud.adobe.io)（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hans)）或通过调用Privacy ServiceAPI（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hans)和[!DNL API]引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）发送数据删除请求。
+您可以通过[Privacy Service UI](https://privacyui.cloud.adobe.io)（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en)）或通过调用Privacy Service API（文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)和[!DNL API]参考[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）发送数据删除请求。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 允许您通过使用 [!UICONTROL Request Builder] 或上传 [!DNL JSON] 文件来创建新的作业请求。
 
@@ -71,7 +71,7 @@ Adobe 理解您承诺在 30 天内响应数据隐私客户请求。因此，[!DN
 
 [!DNL Audience Manager]支持有关选择退出管理的行业标准。 请阅读并全面了解[!DNL Audience Manager]支持的选择退出类型相关信息。
 
-数据访问和删除请求是通过[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)处理的，而选择退出请求当前是通过[!DNL DCS API]支持的。 请阅读并了解选择退出[!DNL API]调用应该是什么样的。
+虽然数据访问和删除请求是通过[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)处理的，但目前是通过[!DNL DCS API]支持选择退出请求。 请阅读并了解选择退出[!DNL API]调用应该是什么样的。
 
 ### 全局选择退出请求
 
@@ -97,8 +97,8 @@ Adobe 理解您承诺在 30 天内响应数据隐私客户请求。因此，[!DN
    <td colname="col1"> <p>移动设备 </p> </td> 
    <td colname="col2"> <p>请参阅适用于以下两类移动设备的选择退出和隐私设置： </p> <p> 
      <ul id="ul_78042D6D302F4119A2439BF71F228288"> 
-      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=zh-Hans" format="https" scope="external"> Android 设备</a> </li> 
-      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html?lang=zh-Hans" format="https" scope="external"> iOS 设备</a> </li> 
+      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html" format="https" scope="external"> Android 设备</a> </li> 
+      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html" format="https" scope="external"> iOS 设备</a> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -127,7 +127,7 @@ Adobe 理解您承诺在 30 天内响应数据隐私客户请求。因此，[!DN
 * [!UICONTROL Destination]合作伙伴将收到[!DNL CRM] ID和上一个设备ID的取消分段请求。 取消分段既适用于[实时](data-privacy-requests.md#aam-partners-with-unsegmentation)目标，也适用于批量目标。
 * 不会删除历史数据。
 
-当[!DNL Audience Manager]收到合作伙伴级别的选择退出请求时，[!DNL DCS]返回的[!DNL JSON]包含消息[!UICONTROL "Encountered opt out tag"]的[错误代码171](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes)，而不是[!DNL Audience Manager]用户ID。
+当[!DNL Audience Manager]收到合作伙伴级别的选择退出请求时，[!DNL JSON]返回的[!DNL DCS]包含消息[的](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes)错误代码171[!UICONTROL "Encountered opt out tag"]，而不是[!DNL Audience Manager]用户ID。
 
 您可以通过 `d_cid` 和 `d_cid_ic` 键值对，发出针对某个已声明 ID 的选择退出请求。虽然旧版参数（如 `d_dpid` 和 `d_dpuuid`）仍然可用，但已考虑将其弃用。请参阅 [CID 取代 DPID 和 DPUUID](../../reference/cid.md)。在示例中，*斜体*&#x200B;表示变量占位符。
 

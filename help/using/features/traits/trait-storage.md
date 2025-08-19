@@ -32,7 +32,7 @@ ht-degree: 3%
 
 <!-- t_tb_create_storage.xml -->
 
-设置新特征时，您可以在[!UICONTROL Basic Information]分区中创建一个新的存储文件夹。 此外，还可以在主[!UICONTROL Traits]列表仪表板的[!UICONTROL Trait Storage]部分中创建文件夹。
+设置新特征时，您可以在[!UICONTROL Basic Information]分区中创建一个新的存储文件夹。 此外，还可以在主[!UICONTROL Trait Storage]列表仪表板的[!UICONTROL Traits]部分中创建文件夹。
 
 要创建新的存储文件夹，请执行以下操作：
 
@@ -48,7 +48,7 @@ ht-degree: 3%
 
 <!-- t_tb_rename_delete_storage.xml -->
 
-您可以从主[!UICONTROL Traits]列表仪表板的[!UICONTROL Trait Storage]部分重命名或删除存储文件夹。
+您可以从主[!UICONTROL Trait Storage]列表仪表板的[!UICONTROL Traits]部分重命名或删除存储文件夹。
 
 * 将鼠标悬停在文件夹上并单击铅笔图标可重命名文件夹。
 * 将鼠标悬停在文件夹上并单击&#x200B;**X**&#x200B;图标可将其删除。

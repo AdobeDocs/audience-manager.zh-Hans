@@ -60,7 +60,7 @@ ht-degree: 81%
 在 [!DNL Audience Manager] 中，当您[创建配置文件合并规则](../features/profile-merge-rules/merge-rules-start.md)时，设备图显示为配置选项。通过 [!UICONTROL Profile Merge Rules]，这些设备图可帮助 [!DNL Audience Manager] 执行以下操作：
 
 * 将多个设备配置文件合并到一起。这会创建一个特征超集。
-* 评估特征超集是否符合区段资格条件（而不是单独评估每个设备配置文件）。
+* 评估特征超集是否符合细分资格筛选（而不是单独评估每个设备轮廓）。
 * 将符合条件的设备添加到可用区段。
 
  
@@ -111,7 +111,7 @@ ht-degree: 81%
 
 **区段预估大小是否包含根据由使用设备图选项的 [!UICONTROL Profile Merge Rule] 提供的连接而确定为符合区段资格条件的设备？**
 
-否。有关 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 的定义，请参阅[区段生成器中的特征和区段人口数据](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=zh-Hans)。
+否。有关 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 的定义，请参阅[区段生成器中的特征和区段人口数据](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html)。
 
  
 
@@ -160,7 +160,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>结果</b> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword">Audience Manager</span> 汇总特征 1 的频度，并使用 8 (3 + 5 = 8) 来确定区段资格条件。设备 A 和设备 B 符合区段 1 的资格条件，因为其频度为 8。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword">Audience Manager</span> 汇总特征 1 的频度，并使用 8 (3 + 5 = 8) 来确定区段资格筛选。设备 A 和设备 B 符合区段 1 的资格条件，因为其频度为 8。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -177,7 +177,7 @@ ht-degree: 81%
 
 **是否可以通过使用设备图的 [!UICONTROL Profile Merge Rules] *实时*查看符合某个特定区段资格条件的设备数量？**
 
-是。实时人口量度可使用通过设备图链接的所有设备的配置文件来捕获当前设备（实时查看到的设备）满足的区段资格条件。
+是。实时人口量度可使用通过设备图链接的所有设备的轮廓来捕获当前设备（实时查看到的设备）满足的细分资格筛选。
 
 <table id="table_D37A51E99B314C04A96A084491A5FEC7"> 
  <thead> 
@@ -191,7 +191,7 @@ ht-degree: 81%
    <td colname="col1"> <p> <b>条件</b> </p> </td> 
    <td colname="col2"> <p>假设： </p> <p> 
      <ul id="ul_B8B627FBF6A04C0CAE6C8543EA3EA56D"> 
-      <li id="li_2557CE3F109C42DC8CB5E99B93E96265">区段 1 基于以下特征和资格条件逻辑：区段 1 = 特征 A、特征 B 和 特征 C。 </li> 
+      <li id="li_2557CE3F109C42DC8CB5E99B93E96265">细分 1 基于以下特征和资格筛选逻辑：细分 1 = 特征 A、特征 B 和 特征 C。 </li> 
       <li id="li_F7D559B3C0CA424DA2C1A0703C1E1717">有 3 个设备配置文件：设备 1（当前设备）、设备 2（设备图）、设备 3（设备图）。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -206,7 +206,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>结果</b> </p> </td> 
-   <td colname="col2"> <p>根据以上元素，区段 1 的总人口为 1。 </p> <p>在这种情况下，<span class="wintitle">配置文件合并规则</span>将使用所有设备及其特征来确定区段资格条件。这意味着虽然设备 1、2、3 均符合区段 1 的资格条件，但如上所述，实时区段人口仅包含设备 1。原因如下： </p> <p> 
+   <td colname="col2"> <p>根据以上元素，区段 1 的总人口为 1。 </p> <p>在这种情况下，<span class="wintitle">轮廓合并规则</span>将使用所有设备及其特征来确定细分资格筛选。这意味着虽然设备 1、2、3 均符合区段 1 的资格条件，但如上所述，实时区段人口仅包含设备 1。原因如下： </p> <p> 
      <ul id="ul_5958E1A0E1514B6BA31DF5551401AF38"> 
       <li id="li_E4F68B12ED944416ACBEAF7BF61CA4E7">设备 1 是当前与 Audience Manager <span class="wintitle">数据收集服务器</span> (<span class="wintitle">DCS</span>) 实时交互的设备。 </li> 
       <li id="li_57165E96289F4E20BF2244BC68B90BA3">而设备 2 和 3 是通过设备图与设备 1 相关联的，它们并未随设备 1 一起同 DCS 交互。 </li> 
@@ -233,7 +233,7 @@ ht-degree: 81%
    <td colname="col1"> <p> <b>条件</b> </p> </td> 
    <td colname="col2"> <p>假设： </p> <p> 
      <ul id="ul_DC0AC0F79323451C8C2480E4A85AE2EB"> 
-      <li id="li_790F24FA1F0747F385640EDB1AE9E59E">区段 1 基于以下特征和资格条件逻辑：区段 1 = 特征 A、特征 B 和 特征 C。 </li> 
+      <li id="li_790F24FA1F0747F385640EDB1AE9E59E">细分 1 基于以下特征和资格筛选逻辑：细分 1 = 特征 A、特征 B 和 特征 C。 </li> 
       <li id="li_6628727DDD0644BF8F5B6A8A9FA71E67">有 3 个设备配置文件：设备 1（当前设备）、设备 2（设备图）、设备 3（设备图）。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -248,7 +248,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>结果</b> </p> </td> 
-   <td colname="col2"> <p>根据以上元素，区段 1 的总人口为三 (3)。 </p> <p>在这种情况下，<span class="wintitle">配置文件合并规则</span>将使用所有设备及其特征来确定区段资格条件。这意味着设备 1、2、3 均符合区段 1 的资格条件，并且所有这三个设备都计入总人口。 </p> </td> 
+   <td colname="col2"> <p>根据以上元素，区段 1 的总人口为三 (3)。 </p> <p>在这种情况下，<span class="wintitle">轮廓合并规则</span>将使用所有设备及其特征来确定细分资格筛选。这意味着设备 1、2、3 均符合区段 1 的资格条件，并且所有这三个设备都计入总人口。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -263,7 +263,7 @@ ht-degree: 81%
 
 2019年末，我们发布了一系列配置文件合并规则增强功能，以提高使用跨设备ID生成的批处理文件的准确性。 从2020年3月16日星期一开始，您的Audience Manager实例将严格遵循这些增强功能。 因此，使用跨设备ID映射到目标的区段将停止在某些配置文件合并规则配置中生成导出。
 
-要确保使用跨设备ID(如Adobe Campaign)的Audience Manager实例和目标之间正确集成，请确保您满足以下要求：
+要确保使用跨设备ID(如Adobe Campaign)在Audience Manager实例和目标之间正确集成，请确保您满足以下要求：
 
 1. 查看映射到您的Adobe Campaign Declared ID目标的区段所使用的配置文件合并规则。 配置文件合并规则必须使用[!UICONTROL Last Authenticated Profile]选项，以便所有经过身份验证的配置文件都可以包含在导出中。 如果您的配置文件合并规则使用其他选项，请将其切换到[!UICONTROL Last Authenticated Profile]。
 2. 在配置文件合并规则设置中选择Adobe Campaign Declared ID数据源。

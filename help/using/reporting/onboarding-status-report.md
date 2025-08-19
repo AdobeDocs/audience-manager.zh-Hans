@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->只有具有管理员权限的用户才能在Audience Manager用户界面中查看此报表。 通过将非管理员用户的电子邮件添加到报表，可以让这些用户收到有关已上传入站文件状态的通知。 请参阅[接收电子邮件通知](/help/using/reporting/onboarding-status-report.md#receive-email-notifications)。
+>只有具有管理员权限的用户才能在Audience Manager用户界面中看到此报表。 通过将非管理员用户的电子邮件添加到报表，可以让这些用户收到有关已上传入站文件状态的通知。 请参阅[接收电子邮件通知](/help/using/reporting/onboarding-status-report.md#receive-email-notifications)。
 
 ## 载入状态报表：关于 {#onboarding-status-about}
 
@@ -44,7 +44,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>采样错误</b> </p> </td>
-   <td colname="col2"> <p>错误取样分析数据文件的内容并返回每种错误类型的10个最常见错误。 入站数据文件中的错误会阻止处理单个记录。 使用此报表作为疑难解答工具，以帮助减少文件错误数并提高处理率。 </p> <p>您必须手动激活错误采样。 它从激活之日起运行14天，然后自行关闭。 您可以在14天间隔过期后重新启用错误采样。 在<a href="../features/manage-datasources.md#create-data-source">创建入站数据源</a>时，或者通过选中现有入站数据源的<span class="wintitle">数据Source设置</span>部分中的<b><span class="uicontrol">错误采样</span></b>复选框来激活错误采样。 </p> <p>错误取样是一个计算要求很高的过程。 因此，对于每个错误类别，它只返回前10个错误。 它并非设计用于返回入站数据源中包含的每个错误。 这些错误是潜在大量类似错误的典型示例。 查看整个文件以查找此报表标记的错误类型，重新格式化文件，然后再次发送该文件。 </p> <p>有关如何为入站数据源正确设置数据文件格式的详细信息，请参阅<a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md">入站数据文件内容：语法、变量和示例</a>。 </p> </td> 
+   <td colname="col2"> <p>错误取样分析数据文件的内容并返回每种错误类型的10个最常见错误。 入站数据文件中的错误会阻止处理单个记录。 使用此报表作为疑难解答工具，以帮助减少文件错误数并提高处理率。 </p> <p>您必须手动激活错误采样。 它从激活之日起运行14天，然后自行关闭。 您可以在14天间隔过期后重新启用错误采样。 在<a href="../features/manage-datasources.md#create-data-source">创建入站数据源</a>时，或者通过选中现有入站数据源的<b><span class="uicontrol">数据Source设置</span></b>部分中的<span class="wintitle">错误采样</span>复选框来激活错误采样。 </p> <p>错误取样是一个计算要求很高的过程。 因此，对于每个错误类别，它只返回前10个错误。 它并非设计用于返回入站数据源中包含的每个错误。 这些错误是潜在大量类似错误的典型示例。 查看整个文件以查找此报表标记的错误类型，重新格式化文件，然后再次发送该文件。 </p> <p>有关如何为入站数据源正确设置数据文件格式的详细信息，请参阅<a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md">入站数据文件内容：语法、变量和示例</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -121,7 +121,7 @@ create-onboarding-status-report.xml
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>数据同步文件名</b> </p> </td> 
-   <td colname="col2"> <p>列出<span class="keyword">Audience Manager</span>从您选择的入站数据源接收和处理的文件。 </p> <p>如果文件名格式不正确，文件处理将失败。 文件名要求因您将此数据发送到<span class="keyword">Audience Manager</span>的方式而异。 传递方法包括<span class="keyword"> Amazon S3</span>和FTP。 有关如何命名文件的说明，请参阅： </p> <p> 
+   <td colname="col2"> <p>列出<span class="keyword"> Audience Manager</span>从您选择的入站数据源接收和处理的文件。 </p> <p>如果文件名格式不正确，文件处理将失败。 文件名要求因您将此数据发送到<span class="keyword"> Audience Manager</span>的方式而异。 传递方法包括<span class="keyword"> Amazon S3</span>和FTP。 有关如何命名文件的说明，请参阅： </p> <p> 
      <ul id="ul_9A32906A14CA41C5AED0E13930DB31BA"> 
       <li id="li_A5A0E6ED711D4002B52092619F87C7D6"> 入站数据文件的<a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md">Amazon S3名称要求</a> </li> 
      </ul> </p> </td> 
@@ -132,7 +132,7 @@ create-onboarding-status-report.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>无效的AAM ID</b> </p> </td> 
-   <td colname="col2"> <p>列出格式不正确的<span class="keyword">Audience Manager</span>用户ID (UUID)的数量。 通常，这表示ID： </p> 
+   <td colname="col2"> <p>列出格式错误的<span class="keyword">个Audience Manager</span>用户ID (UUID)的数量。 通常，这表示ID： </p> 
     <ul id="ul_8304250E8F0F44918A50CF9D8D8D1F83"> 
      <li id="li_B100B4C2623B4E099E022869A4978357">不符合预期的38位数格式。 </li> 
      <li id="li_44E8A9AD13174A20A5742E56ED786634">包含字母字符。 ID应当仅为数字。 </li> 
@@ -141,7 +141,7 @@ create-onboarding-status-report.xml
 
 <tr> 
    <td colname="col1"> <p> <b>设备ID无效</b> </p> </td> 
-   <td colname="col2"> <p>列出格式不正确的全局设备ID的数量。 有关应该如何设置设备ID的格式以及您应该使用哪些全局数据源（基于设备类型）的详细信息，请参阅<a href="../reference/ids-in-aam.md">Audience Manager</a>中的ID索引<a href="../features/global-data-sources.md">和</a>。</p>
+   <td colname="col2"> <p>列出格式不正确的全局设备ID的数量。 有关应该如何设置设备ID的格式以及您应该使用哪些全局数据源（基于设备类型）的详细信息，请参阅Audience Manager中的<a href="../reference/ids-in-aam.md">ID索引</a>和<a href="../features/global-data-sources.md">全局数据源</a>。</p>
   <p>报表的错误取样部分包含有关无效设备ID的详细信息，例如：</p>
    <ul>
     <li>与无效设备ID对应的数据源ID；</li>
@@ -154,7 +154,7 @@ create-onboarding-status-report.xml
 
 <tr> 
    <td colname="col1"> <p> <b>没有匹配的AAM ID</b> </p> </td> 
-   <td colname="col2"> <p>这些是已载入的ID <span class="keyword">Audience Manager</span>不能与现有ID匹配。 当<span class="keyword">Audience Manager</span>尚未执行ID同步或即使在同步后仍无法与ID匹配时，已载入的ID可以具有此状态。 </p> <p>如果移动设备ID不匹配，<span class="keyword">Audience Manager</span>将： </p> 
+   <td colname="col2"> <p>这些是已载入的ID <span class="keyword"> Audience Manager</span>不能与现有的ID匹配。 当<span class="keyword"> Audience Manager</span>尚未执行ID同步或即使在同步后仍无法与ID匹配时，已载入ID可以具有此状态。 </p> <p>如果移动设备ID不匹配，<span class="keyword"> Audience Manager</span>将： </p> 
     <ul id="ul_B0D6AF9EB27D4017B35E36824B403879"> 
      <li id="li_D141000A50D3463182CBA4571DCC5373">继续存储并尝试同步此ID。 </li> 
      <li id="li_2EFCEE716F254ABCBC5FBF749B7564E6">如果ID无法同步，则在报告中将其记录为<span class="wintitle">存储记录</span>。 </li> 
@@ -162,10 +162,10 @@ create-onboarding-status-report.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>未实现任何特征</b> </p> </td> 
-   <td colname="col2"> <p>列出<span class="keyword">Audience Manager</span>不能与已载入的特征匹配的特征。 这可能是以下原因造成的： </p> 
+   <td colname="col2"> <p>列出<span class="keyword"> Audience Manager</span>无法与已载入的特征匹配的特征。 这可能是以下原因造成的： </p> 
     <ul id="ul_43619035AB6641B6949302FB50BDB5B1"> 
      <li id="li_D4C6306BF2B143198108702B309CE8CF">入站数据文件中特征格式不正确。 有关如何格式化数据文件的信息，请参阅<a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md">入站数据文件内容：语法、变量和示例</a>。 </li> 
-     <li id="li_A1C708A007D24EE09B7C629AFC6E43C3"><span class="keyword">Audience Manager</span>中尚未定义的特征。 </li> 
+     <li id="li_A1C708A007D24EE09B7C629AFC6E43C3"><span class="keyword"> Audience Manager</span>中尚未定义的特征。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -178,11 +178,11 @@ create-onboarding-status-report.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>存储的记录</b> </p> </td> 
-   <td colname="col2"> <p>成功存储的记录数。 由于文件格式错误，<span class="keyword">Audience Manager</span>可能无法存储某些收到的记录。 存储的记录数可以少于接收的记录数。 </p> </td> 
+   <td colname="col2"> <p>成功存储的记录数。 由于文件格式错误，<span class="keyword"> Audience Manager</span>可能无法存储收到的某些记录。 存储的记录数可以少于接收的记录数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>已实现特征总数</b> </p> </td> 
-   <td colname="col2"> <p>所有入站文件中存储在<span class="keyword">Audience Manager</span>平台中的所有用户特征数。 </p> </td> 
+   <td colname="col2"> <p>所有入站文件中存储在<span class="keyword"> Audience Manager</span>平台中的所有用户特征数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>未使用的信号总数</b> </p> </td> 

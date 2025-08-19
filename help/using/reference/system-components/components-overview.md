@@ -1,5 +1,5 @@
 ---
-description: Audience Manager系统中主要组件和数据流的高级导览。
+description: Audience Manager系统中的主要组件和数据流的高级导览。
 seo-description: A high-level tour of the major components and data flows in the Audience Manager system.
 seo-title: System Components Overview
 title: 系统组件概述
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 系统组件概述{#system-components-overview}
 
-Audience Manager系统中主要组件和数据流的高级导览。
+Audience Manager系统中的主要组件和数据流的高级导览。
 
 <!-- 
 

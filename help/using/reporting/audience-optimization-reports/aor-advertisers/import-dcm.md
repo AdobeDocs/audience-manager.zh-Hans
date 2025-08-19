@@ -1,5 +1,5 @@
 ---
-description: 设置Google组以将您的Google Campaign Manager数据文件导入Audience Manager。 此部分中的内容总结了集成过程，并提供了指向Google Campaign Manager资源的链接以帮助您入门。
+description: 设置Google组，将您的Google Campaign Manager数据文件导入Audience Manager。 此部分中的内容总结了集成过程，并提供了指向Google Campaign Manager资源的链接以帮助您入门。
 seo-description: Set up a Google group to bring your Google Campaign Manager data files into Audience Manager. The content in this section summarizes the integration process and provides you with links to Google Campaign Manager resources to help you get started.
 seo-title: Import Google Campaign Manager Data Files Into Audience Manager
 solution: Audience Manager
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 [!DNL Google Campaign Manager]是[!DNL Google]的[!DNL DoubleClick for Advertisers] (DFA)的替代项。 与DFA类似，[!DNL Google Campaign Manager]客户可以在[!DNL Audience Manager]中导入、查看和处理其数据。 但[!DNL Audience Manager]无法直接访问和导入您的[!UICONTROL Data Transfer]和[!UICONTROL Match Table]文件。 要导入这些文件，需要客户自行完成。
 
-但是，设置过程在[DoubleClick Campaign Manager帮助](https://support.google.com/dcm/partner/answer/2941575?hl=en&amp;ref_topic=6107456)中有详细记录。 此外，您还可以查看下面列出的步骤以开始操作。
+但是，设置过程在[DoubleClick Campaign Manager帮助](https://support.google.com/dcm/partner/answer/2941575?hl=en&ref_topic=6107456)中有详细记录。 此外，您还可以查看下面列出的步骤以开始操作。
 
 >[!CAUTION]
 >
@@ -34,15 +34,15 @@ ht-degree: 2%
 
 ## 步骤
 
-1. [创建组](https://support.google.com/dcm/partner/answer/3370419?hl=en&amp;ref_topic=6107456)。
+1. [创建组](https://support.google.com/dcm/partner/answer/3370419?hl=en&ref_topic=6107456)。
 
    组控制对您的[!DNL Google Campaign Manager]数据的访问。 最终，您将邀请并添加[!DNL Audience Manager]到此组。
 
-1. [验证您的Google Cloud Storage状态](https://support.google.com/dcm/partner/answer/3370481?hl=en&amp;ref_topic=6107456)。
+1. [验证您的Google Cloud Storage状态](https://support.google.com/dcm/partner/answer/3370481?hl=en&ref_topic=6107456)。
 
    Google Cloud Storage包含保存[!UICONTROL Data Transfer]和[!UICONTROL Match Tables]的数据桶。 您需要设置存储段，或确保您的新组有权访问现有数据存储存储段。
 
-1. [获取数据文件URL](https://support.google.com/dcm/partner/answer/3370482?hl=en&amp;ref_topic=6107456)。
+1. [获取数据文件URL](https://support.google.com/dcm/partner/answer/3370482?hl=en&ref_topic=6107456)。
 
    与您的[!DNL Google Campaign Manager]客户经理或平台解决方案顾问合作。 它们将为您提供数据文件的URL。 [!DNL Google]可能会更改未来版本中存储段和文件名的格式。 再次重申，请与您的[!DNL Google Campaign Manager]客户经理合作，确保您使用正确的格式。
 
@@ -61,8 +61,8 @@ ht-degree: 2%
 
 1. 邀请[!DNL Audience Manager]加入群。
 
-   在您创建组并授予其访问数据桶的权限后，请邀请[!DNL Audience Manager]加入该组。 向dfaaam@adobe.com发送邀请电子邮件。 请务必包含步骤3中的数据文件URL。 接受邀请后，我们的内部团队将与您一起验证访问权限。 1.在[!DNL Audience Manager]用户界面中为[!DNL Google Campaign Manager]数据设置两个数据源。
+   在您创建组并授予其访问数据桶的权限后，请邀请[!DNL Audience Manager]加入该组。 向dfaaam@adobe.com发送邀请电子邮件。 请务必包含步骤3中的数据文件URL。 接受邀请后，我们的内部团队将与您一起验证访问权限。 1.在[!DNL Google Campaign Manager]用户界面中为[!DNL Audience Manager]数据设置两个数据源。
 
    命名数据源`Advertiser Analytics: DCM Platform`和`Advertiser Analytics: AAM+DCM Platform`。 在[创建数据源](../../../features/manage-datasources.md#create-data-source)工作流中，将ID类型设置为`Cookie`。 与我们的内部团队共享两个新数据源的ID。
 
-1. 您可以根据导入到[!DNL Audience Manager]中的[!DNL Google Campaign Manager]文件轻松创建特征。 查看[可操作的日志文件](../../../integration/media-data-integration/actionable-log-files.md)，并请求您的[!DNL Audience Manager]顾问或客户关怀团队为您启用该功能。
+1. 您可以根据导入到[!DNL Google Campaign Manager]中的[!DNL Audience Manager]文件轻松创建特征。 查看[可操作的日志文件](../../../integration/media-data-integration/actionable-log-files.md)，并请求您的[!DNL Audience Manager]顾问或客户关怀团队为您启用该功能。

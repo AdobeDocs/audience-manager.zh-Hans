@@ -33,7 +33,7 @@ faq_features_functions.xml
 
 例如，*`Organization ID`* 应如下所示：`1FD6776A524453CC0A490D44@AdobeOrg`。
 
-*`Organization ID`* 可由 Audience Manager [DIL](../dil/dil-overview.md) API、[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans) 及其他 [!DNL Experience Cloud] 解决方案使用。具有管理员权限的用户可在 [!DNL Adobe Admin Console] 上找到 *`Organization ID`*。请参阅[管理 - 用户管理常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans)。
+*`Organization ID`* 可由 Audience Manager [DIL](../dil/dil-overview.md) API、[Adobe Experience Platform 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/home.html) 及其他 [!DNL Experience Cloud] 解决方案使用。具有管理员权限的用户可在 [!DNL Adobe Admin Console] 上找到 *`Organization ID`*。请参阅[管理 - 用户管理常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
  
 
@@ -67,7 +67,7 @@ faq_features_functions.xml
 
 **什么是 [!UICONTROL Tag Insertion Manager (TIM)]？**
 
-Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和管理 [!UICONTROL data collection code (DIL)]。此功能已过时，最先由 [!UICONTROL Dynamic Tag Manager (DTM)] 取代，后来由 [!DNL Adobe Experience Platform Tags] 取代。有关详细信息，请参阅[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)。
+Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和管理 [!UICONTROL data collection code (DIL)]。此功能已过时，最先由 [!UICONTROL Dynamic Tag Manager (DTM)] 取代，后来由 [!DNL Adobe Experience Platform Tags] 取代。有关详细信息，请参阅[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。
 
  
 
@@ -75,7 +75,7 @@ Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和
 
 **算法模型**
 
-算法模型不仅可以找到最具影响力的特征，还可以根据这些特征对用户进行评分，并为每个用户分配一个得分。然后，便可以通过创建算法特征来定位用户。借助特征生成器中的精度和范围控件，您可以指定要定位具有影响力特征的用户中的哪些特定用户。
+算法模型不仅可以找到最具影响力的特征，还可以根据这些特征对用户进行评分，并为每个用户分配一个得分。然后，便可以通过创建算法特征来锁定用户。借助特征生成器中的精度和范围控件，您可以指定要锁定具有影响力特征的用户中的哪些特定用户。
 
 通过算法模型，您能够选择不同精度级别的用户，并在 Audience Lab 中测试哪组用户的转化率更高。有关详细用例，请参阅[在 Audience Lab 中比较模型](../features/audience-lab/audience-lab-use-cases.md#compare-models)。
 
@@ -95,4 +95,4 @@ Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和
 
 **Adobe Analytics 区段与 Audience Manager 区段之间是否有任何区别？**
 
-是，有关两者之间区别的深入说明，请参阅[了解 Analytics 和 Audience Manager 中的区段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=zh-Hans)。
+是，有关两者之间区别的深入说明，请参阅[了解 Analytics 和 Audience Manager 中的区段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)。

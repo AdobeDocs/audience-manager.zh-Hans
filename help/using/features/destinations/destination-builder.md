@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 目标生成器 {#destination-builder}
 
-[!UICONTROL Destination Builder]允许您创建基于Cookie的目标或[!DNL URL]目标。 无法创建具有[!UICONTROL Destination Builder]的服务器到服务器([!DNL S2S])目标，但您可以管理其区段映射。 请与您的顾问联系以设置[!DNL S2S]目标。 [!UICONTROL Destination Builder]位于&#x200B;**[!UICONTROL Audience Data > Destinations]**&#x200B;中。
+[!UICONTROL Destination Builder]允许您创建基于Cookie的目标或[!DNL URL]目标。 无法创建具有[!DNL S2S]的服务器到服务器([!UICONTROL Destination Builder])目标，但您可以管理其区段映射。 请与您的顾问联系以设置[!DNL S2S]目标。 [!UICONTROL Destination Builder]位于&#x200B;**[!UICONTROL Audience Data > Destinations]**&#x200B;中。
 
 ## 目标生成器设置 {#destination-builder-settings}
 

@@ -1,5 +1,5 @@
 ---
-description: 通过实时服务器到服务器集成将区段发布到合作伙伴目标时，可以将Audience Manager设置为在发出请求时使用OAuth 2.0进行身份验证。 这使得能够向Audience Manager端点发出经过身份验证的请求。
+description: 通过实时服务器到服务器集成将区段发布到合作伙伴目标时，可以将Audience Manager设置为在发出请求时使用OAuth 2.0进行身份验证。 这使得能够从Audience Manager向您的端点发出经过身份验证的请求。
 seo-description: When publishing segments to the partner destination via a realtime server-to-server integration, Audience Manager can be set up to authenticate using OAuth 2.0 when making the requests. This presents the ability to issue authenticated requests from Audience Manager to your endpoint.
 seo-title: OAuth 2.0 Integration for Real-Time Outbound Transfers
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 实时出站传输的[!DNL OAuth 2.0]集成{#oauth-integration-for-real-time-outbound-transfers}
 
-通过实时服务器到服务器集成将区段发布到合作伙伴目标时，可以将Audience Manager设置为在发出请求时使用[!DNL OAuth 2.0]进行身份验证。 这使得能够向Audience Manager端点发出经过身份验证的请求。
+通过实时服务器到服务器集成将区段发布到合作伙伴目标时，可以将Audience Manager设置为在发出请求时使用[!DNL OAuth 2.0]进行身份验证。 这使得能够从Audience Manager向您的端点发出经过身份验证的请求。
 
 ## 身份验证流程 {#auth-flow}
 

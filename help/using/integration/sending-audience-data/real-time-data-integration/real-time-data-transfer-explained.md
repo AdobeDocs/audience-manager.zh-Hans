@@ -1,5 +1,5 @@
 ---
-description: 有关Audience Manager如何与第三方内容提供商执行实时数据传输的概述。
+description: 概述Audience Manager如何与第三方内容提供商执行实时数据传输。
 seo-description: A general overview of how Audience Manager performs real-time data transfers with a third-party content provider.
 seo-title: Real-Time Data Transfer Process Described
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 实时数据传输流程说明{#real-time-data-transfer-process-described}
 
-有关Audience Manager如何与第三方内容提供商执行实时数据传输的概述。
+概述Audience Manager如何与第三方内容提供商执行实时数据传输。
 
 <!-- real-time-data-transfer-explained.xml -->
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 1. 用户访问包含Audience Manager代码的客户的网站。
 1. Audience Manager加载iframe并对我们的[!UICONTROL Data Collection Server] ([!DNL DCS])进行调用。
 1. [!DNL DCS]调用第三方服务器（实时）以检查供应商是否具有有关该用户的任何区段信息。
-1. 内容提供程序将返回有关该用户的区段信息以进行Audience Manager。
+1. 内容提供程序将有关该用户的区段信息返回到Audience Manager。
 1. Audience Manager会收到此区段信息，并可用于定位和构建新特征和区段。
 
 ![](assets/rt_reduce70.png)

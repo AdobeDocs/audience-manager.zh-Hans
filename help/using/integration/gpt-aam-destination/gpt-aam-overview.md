@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 使用Google发布商代码(GPT)集成[!DNL Google Ad Manager]（以前称为DFP）
 
-下面列出的文章概述了如何使用Google发布商标记(GPT)集成[!DNL Google Ad Manager]。 您可以使用服务器端集成，也可以将GPT设置为将Audience Manager区段数据发送到[!DNL Google Ad Manager]的目标。 您还将了解摄取[!DNL Google Ad Manager]个日志文件以在Audience Manager中生成报表所需的步骤。
+下面列出的文章概述了如何使用Google发布商标记(GPT)集成[!DNL Google Ad Manager]。 您可以使用服务器端集成，也可以将GPT设置为将Audience Manager区段数据发送到[!DNL Google Ad Manager]的目标。 您还将了解摄取[!DNL Google Ad Manager]个日志文件以在Audience Manager中进行报告所需的步骤。
 
 * [使用Google发布者标记(GPT)将区段发送到Google Ad Manager的要求和方法](/help/using/integration/gpt-aam-destination/gpt-aam-requirements.md)
 
@@ -26,8 +26,8 @@ ht-degree: 0%
 
 * [修改GPT setTargeting API调用](/help/using/integration/gpt-aam-destination/gpt-aam-modify-api.md)
 
-  在调用Google Publisher Tag .setTargeting方法之前，添加if语句以检查Audience ManagerCookie。
+  在调用Audience Manager Publisher Tag .setTargeting方法之前，添加if语句以检查Google Cookie。
 
-* [Google Publisher Tags的Audience Manager代码](/help/using/integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
+* [适用于Google发布商标记的Audience Manager代码](/help/using/integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
 
-  AamGpt是一个JavaScript函数，可读取Audience ManagerCookie数据并将相关信息发送到Google Publisher Tag。
+  AamGpt是一个JavaScript函数，可读取Audience Manager Cookie数据并将这些信息发送至Google发布商标记。

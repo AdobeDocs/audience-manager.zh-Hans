@@ -28,17 +28,17 @@ ht-degree: 1%
 
 ## [!UICONTROL Segment]合成
 
-Audience Manager[!UICONTROL segment]是由单个特征或特征组组成的服务器端规则。 特征由称为键值对的数据元素组成。 这些键值对以及您在[!UICONTROL segment]级别设置的规则，都包含使访客有资格获得特征和[!UICONTROL segment]成员资格的条件。
+Audience Manager [!UICONTROL segment]是一个服务器端规则，由单个特征或特征组组成。 特征由称为键值对的数据元素组成。 这些键值对以及您在[!UICONTROL segment]级别设置的规则，都包含使访客有资格获得特征和[!UICONTROL segment]成员资格的条件。
 
 ## 有关[!UICONTROL Adobe Analytics] [!UICONTROL Segment]映射的注意事项
 
-将Adobe Analytics [!UICONTROL segments]或报表包映射到您的Experience Cloud组织时，Audience Manager会自动创建对应的新只读[!UICONTROL segments]和特征。 您无法从Audience Manager中编辑或更改这些[!UICONTROL segments]的存储位置。 但是，您在映射的Adobe Analytics [!UICONTROL segments]或报表包上执行的任何更改都会反映在Audience Manager中。
+将Adobe Analytics [!UICONTROL segments]或报表包映射到您的Experience Cloud组织时，Audience Manager会自动创建对应的新只读[!UICONTROL segments]和特征。 您无法从Audience Manager编辑或更改这些[!UICONTROL segments]的存储位置。 但是，您在映射的Adobe Analytics [!UICONTROL segments]或报表包上执行的任何更改都会反映在Audience Manager中。
 
 >[!TIP]
 >
->Audience Manager[!UICONTROL segments]与[!DNL Adobe Analytics] [!UICONTROL segments]不同。 阅读[了解Analytics和Audience Manager中的区段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=zh-Hans)以了解两者之间区别的深入说明。
+>Audience Manager [!UICONTROL segments]与[!DNL Adobe Analytics] [!UICONTROL segments]不同。 阅读[了解Analytics和Audience Manager中的区段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)以了解两者之间区别的深入说明。
 
-## 使用[!UICONTROL Segment Builder]创建基于规则的[!UICONTROL Segments]
+## 使用[!UICONTROL Segments]创建基于规则的[!UICONTROL Segment Builder]
 
 不同于响应简单是/否条件而触发的传统像素，[!UICONTROL Segment Builder]允许您创建复杂的[!UICONTROL segment]要求。 与[!UICONTROL traits]一样，[!UICONTROL segments]使用[!DNL Boolean]表达式([!DNL AND]、[!DNL OR]、[!DNL NOT])、比较运算符（大于、小于、等于等）和回访间隔/频度条件评估数据。 这些功能有助于创建与您的业务需求相关的重点受众[!UICONTROL segments]。
 
@@ -49,7 +49,7 @@ Audience Manager[!UICONTROL segment]是由单个特征或特征组组成的服�
 * 生成具有第一方和第三方特征的相关、有用的[!UICONTROL segments]。
 * 使用布尔运算符、比较表达式和回访间隔/频度标准创建复杂复杂的分段规则。
 * 将[!UICONTROL segment]数据发送到目标合作伙伴。
-* 使用Audience Manager报告监控性能。
+* 使用Audience Manager报表监控性能。
 
 >[!MORELIKETHIS]
 >

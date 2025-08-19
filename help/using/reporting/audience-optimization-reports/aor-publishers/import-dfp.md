@@ -22,7 +22,7 @@ ht-degree: 14%
 
 请注意，在&#x200B;*之前必须*&#x200B;完成此部分中描述的进程，然后才能转到启用日志摄取的先决条件。
 
-要在[!DNL Audience Manager]中使用[!DNL Google Ad Manager] (以前为Google DFP)日志文件，您必须在广告标签调用中首先设置我们的[Audience Manager唯一用户ID (UUID)](../../../reference/ids-in-aam.md)。 这样，我们的ID将包含在[!DNL Google Ad Manager]日志中，我们可以匹配[!DNL Google Ad Manager]和[!DNL Audience Manager]之间的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]代码或[!UICONTROL Audience Management Module]在第一方Cookie中设置[!DNL Audience Manager] UUID。
+要在[!DNL Google Ad Manager]中使用[!DNL Audience Manager]&#x200B;(以前为Google DFP)日志文件，您必须在广告标记调用中首先设置我们的[Audience Manager独特用户ID (UUID)](../../../reference/ids-in-aam.md)。 这样，我们的ID将包含在[!DNL Google Ad Manager]日志中，我们可以匹配[!DNL Google Ad Manager]和[!DNL Audience Manager]之间的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]代码或[!UICONTROL Audience Management Module]在第一方Cookie中设置[!DNL Audience Manager] UUID。
 
 以下是如何在广告标记调用中设置[!DNL Audience Manager] ID，如我们的文档中所述：
 
@@ -32,8 +32,8 @@ ht-degree: 14%
 您需要自行设置[!DNL Audience Manager] ID，并且可以与[!DNL Audience Manager]咨询人员合作来检查是否一切正常。 在以下情况下，您已正确设置[!DNL Audience Manager] ID：
 
 * `'aamid'`是用作标识符的键。
-* 用户ID值的格式正确为[!DNL Audience Manager] UUID，如Audience Manager[&#128279;](../../../reference/ids-in-aam.md)中ID的索引中所述。
-* 您在[!DNL Google Ad Manager]日志的已定义字段中包含了[!DNL Audience Manager] UUID（例如CustomTargeting）。
+* 用户ID值的格式正确为[!DNL Audience Manager] UUID，如Audience Manager[中的ID索引](../../../reference/ids-in-aam.md)中所述。
+* 您在[!DNL Audience Manager]日志的已定义字段中包含了[!DNL Google Ad Manager] UUID（例如CustomTargeting）。
 
 ## 启用日志摄取的先决条件 {#prereqs-ingestion-enablement}
 
@@ -48,14 +48,14 @@ ht-degree: 14%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>步骤 1 </p> </td> 
-   <td colname="col2"> <p>在转到步骤2之前，请确认已完成设置<span class="keyword">Audience Manager</span> UUID（如上所述）所需的步骤 </p> </td> 
-   <td colname="col3"> <p><span class="keyword">Audience Manager</span>客户关怀或咨询 </p> </td> 
+   <td colname="col2"> <p>在转到第2步之前，请确认已完成设置<span class="keyword"> Audience Manager</span> UUID（如上所述）所需的步骤 </p> </td> 
+   <td colname="col3"> <p><span class="keyword"> Audience Manager</span>客户关怀或咨询 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>步骤 2 </p> </td> 
    <td colname="col2"> <p>您的Google Ad Manager管理员将创建： </p> <p> 
      <ol id="ol_FCFA9B11CFF948A488DF9CB298FC04C4"> 
-      <li id="li_BC946EDCC3324578AEB64EDDA55B5ACA">用于将Google广告管理器摄取的服务帐户登录到<span class="keyword">Audience Manager</span>。 </li> 
+      <li id="li_BC946EDCC3324578AEB64EDDA55B5ACA">用于将Google广告管理器摄取的服务帐户登录到<span class="keyword"> Audience Manager</span>。 </li> 
       <li id="li_6B2FC7D73A3246419E55C004E17ACA25">新凭据。 <p>注意：这可能需要一个特定于此项目的唯一电子邮件地址，在配置对Google存储段的访问权限时将使用此地址。 </p> </li> 
       <li id="li_95444B9FD1B34659A9634814B262A681">私钥（基于JSON的凭据） </li> 
      </ol> </p> </td> 
@@ -82,8 +82,8 @@ ht-degree: 14%
   </tr> 
   <tr> 
    <td colname="col1"> <p>步骤 6 </p> </td> 
-   <td colname="col2"> <p>编译先决条件并按照详细的<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=zh-Hans">此处</a>说明打开支持票证以启动日志摄取过程。 </p> </td> 
-   <td colname="col3"> <p>您或代表您<span class="keyword">Audience Manager</span>咨询 </p> </td> 
+   <td colname="col2"> <p>编译先决条件并按照详细的<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html">此处</a>说明打开支持票证以启动日志摄取过程。 </p> </td> 
+   <td colname="col3"> <p>您或代表您<span class="keyword">咨询Audience Manager</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>

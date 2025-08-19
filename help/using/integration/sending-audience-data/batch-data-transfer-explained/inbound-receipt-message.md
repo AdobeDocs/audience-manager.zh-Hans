@@ -35,18 +35,18 @@ ht-degree: 0%
 <table id="table_93076D46AC50411395E72B9B987E99BE"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 折线图 </th> 
+   <th colname="col1" class="entry"> 线形图 </th> 
    <th colname="col2" class="entry"> 描述 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> 文件名 </td> 
-   <td colname="col2"> <p>Adobe为此合作伙伴收到的、一起处理的所有入站文件的列表。 在上一个示例电子邮件中，合作伙伴ID为7，数据所有者ID为901。 </p> <p>尾编号(1,2，3...)是客户或入站分销商添加的分解编号。 </p> </td> 
+   <td colname="col2"> <p>Adobe为此合作伙伴收到的所有一起处理的入站文件列表。 在上一个示例电子邮件中，合作伙伴ID为7，数据所有者ID为901。 </p> <p>尾编号(1,2，3...)是客户或入站分销商添加的分解编号。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 已接收的记录 </td> 
-   <td colname="col2"> <p>在所有文件中Adobe接收的记录总数。 在大多数情况下，这应该是集客文件中的总行数。 </p> </td> 
+   <td colname="col2"> <p>Adobe在所有文件中接收的记录总数。 在大多数情况下，这应该是集客文件中的总行数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 格式错误 </td> 
@@ -54,11 +54,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> AAM ID无效 </td> 
-   <td colname="col2"> <p>与预期的38位数格式不匹配的Audience ManagerUUID数。 或者文件中发送的Audience ManagerUUID不是数字。 </p> </td> 
+   <td colname="col2"> <p>与预期的38位数格式不匹配的Audience Manager UUID数。 或者，文件中发送的Audience Manager UUID不是数字。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 没有匹配的AAM ID </td> 
-   <td colname="col2"> <p>Audience Manager未能找到匹配UUID的用户总数。 这些文件尚未进行ID同步，因此Audience Manager无法查找UUID。 </p> </td> 
+   <td colname="col2"> <p>Audience Manager未能找到匹配UUID的用户总数。 这些文件尚未同步ID，因此Audience Manager无法查找UUID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 未实现特征 </td> 
@@ -70,7 +70,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> 存储的记录 </td> 
-   <td colname="col2"> <p>导致数据加载到系统中的记录数=处理的记录数 — 格式错误 — 无效的AAM ID — 没有匹配的AAM ID — 未实现特征。 </p> </td> 
+   <td colname="col2"> <p>导致数据加载到系统中的记录数=处理的记录数 — 格式错误 — AAM ID无效 — 没有匹配的AAM ID — 未实现特征。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 设备总数 </td> 

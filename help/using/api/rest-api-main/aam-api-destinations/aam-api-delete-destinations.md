@@ -1,5 +1,5 @@
 ---
-description: 允许您删除目标和区段映射的DELETE和POST方法。
+description: DELETE和POST方法允许您删除目标和区段映射。
 seo-description: DELETE and POST methods that let you remove destinations and segment mappings.
 seo-title: Delete Destinations
 solution: Audience Manager

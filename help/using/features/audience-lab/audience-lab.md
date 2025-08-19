@@ -65,7 +65,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">已暂停</span></b> </p> </td> 
-   <td colname="col2"> <p><i>已暂停</i>测试组当前未将数据发送到目标。 按<b><span class="uicontrol">使<b><span class="uicontrol">测试组</span></b>信息卡中的</span></b>处于活动状态，以继续发送特征。 </p> </td> 
+   <td colname="col2"> <p><i>已暂停</i>测试组当前未将数据发送到目标。 按<b><span class="uicontrol">使</span></b>测试组<b><span class="uicontrol">信息卡中的</span></b>处于活动状态，以继续发送特征。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">草稿</span></b> </p> </td> 

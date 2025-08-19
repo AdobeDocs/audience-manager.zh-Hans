@@ -24,13 +24,13 @@ ht-degree: 0%
 
 ## 对可共享的受众进行分段 {#segment-shareable-audiences}
 
-区段页面中的[!DNL Segment Shareable Audience]量度表示数据源中具有匹配[DPUUID](../../reference/ids-in-aam.md)的经过哈希处理的电子邮件地址数，这些地址在给定的回顾期间也符合定义的区段的条件，前提是对其应用了配置文件合并规则，并且该Audience Manager可以与目标平台共享。
+区段页面中的[!DNL Segment Shareable Audience]量度表示数据源中具有匹配[DPUUID](../../reference/ids-in-aam.md)的经过哈希处理的电子邮件地址数量，这些地址在给定的回顾期间也符合定义的区段的条件（假定对其应用了配置文件合并规则），并且Audience Manager可以与目标平台共享。
 
 此量度具有1天回顾时段。 这有助于您了解特定目标中区段的受众覆盖范围。
 
 ## 目标可共享受众 {#destination-shareable-audience}
 
-基于人员的目标页面中的[!DNL Destination Shareable Audience]指标表示数据源中具有匹配的[DPUUID](../../reference/ids-in-aam.md)的经过哈希处理的电子邮件地址总数，该Audience Manager可以与该目标平台共享这些地址以及映射到该目标的所有区段。
+基于人员的目标页面中的[!DNL Destination Shareable Audience]量度表示数据源中具有匹配[DPUUID](../../reference/ids-in-aam.md)的经过哈希处理的电子邮件地址总数，Audience Manager可以与该目标平台共享这些地址以及映射到该目标的所有区段。
 
 ![可共享受众](assets/dest-shareable-audiences.png)
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 示例
 
-Audience Manager客户具有的数据源具有110,000个[DPUUID](../../reference/ids-in-aam.md) (CRM ID)。 他们将100,000个经过哈希处理的电子邮件地址摄取到Audience Manager中，将其用于多个基于人员的目标，并根据CRM ID对100,000个经过哈希处理的电子邮件地址执行ID同步。 客户可以使用[!DNL All Cross-Device Profiles]合并规则创建三个受众区段：
+Audience Manager客户具有的数据源具有110,000个[DPUUID](../../reference/ids-in-aam.md) (CRM ID)。 他们将100,000个经过哈希处理的电子邮件地址摄取到Audience Manager，将其用于多个基于人员的目标，并根据CRM ID对100,000个经过哈希处理的电子邮件地址执行ID同步。 客户可以使用[!DNL All Cross-Device Profiles]合并规则创建三个受众区段：
 
 * 人口数为10,000的区段A已映射到目标A；
 * 人口数为20,000的区段B，已映射到目标A；
@@ -56,4 +56,4 @@ Audience Manager客户具有的数据源具有110,000个[DPUUID](../../reference
 
 >[!NOTE]
 >
->在以上示例中，这并不意味着三个区段中的所有80,000个经过哈希处理的电子邮件地址与目标平台中的现有帐户相匹配。 它仅意味着Audience Manager将经过哈希处理的标识符从三个区段发送到各自的目的地。 将受众区段发送到基于人员的目标时，会在合作伙伴方进行受众匹配。 目标A最多可以具有30,000个匹配用户帐户，而目标B最多可以具有50,000个匹配用户帐户，但不保证匹配率。 Adobe无权访问特定于合作伙伴的指标。 有关匹配率中基于人员的目标可见性的常见问题，请参阅[匹配率](../../faq/faq-people-based-destinations.md#match-rates)。
+>在以上示例中，这并不意味着三个区段中的所有80,000个经过哈希处理的电子邮件地址与目标平台中的现有帐户相匹配。 这仅意味着Audience Manager将经过哈希处理的标识符从三个区段发送到各自的目的地。 将受众区段发送到基于人员的目标时，会在合作伙伴方进行受众匹配。 目标A最多可以具有30,000个匹配用户帐户，而目标B最多可以具有50,000个匹配用户帐户，但不保证匹配率。 Adobe无权访问特定于合作伙伴的指标。 有关匹配率中基于人员的目标可见性的常见问题，请参阅[匹配率](../../faq/faq-people-based-destinations.md#match-rates)。

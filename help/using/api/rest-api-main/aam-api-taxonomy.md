@@ -1,5 +1,5 @@
 ---
-description: 允许您查看Audience Manager通用分类的方法。 此可选分类方案将特征组织为行业标准类别。
+description: 允许您查看Audience Manager常用分类的方法。 此可选分类方案将特征组织为行业标准类别。
 seo-description: Methods that let you view the Audience Manager common taxonomy. This optional classification scheme organizes traits into industry standard categories.
 seo-title: Taxonomic API Methods
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # 分类API方法 {#taxonomic-api-methods}
 
-允许您查看Audience Manager通用分类的方法。 此可选分类方案将特征组织为行业标准类别。
+允许您查看Audience Manager常用分类的方法。 此可选分类方案将特征组织为行业标准类别。
 
 <!-- c_rest_api_taxonomy.xml -->
 

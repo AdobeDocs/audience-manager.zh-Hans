@@ -68,7 +68,7 @@ r_s2s_data_pop.xml
 | **[!UICONTROL Base Segment Uniques]** | 基础区段中的独特访客数。 |
 | **[!UICONTROL Base Segment Uniques]** | 重叠区段中的独特访客数。 |
 | **[!UICONTROL Overlapping Uniques]** | 在比较的区段之间共享的独特访客数。 |
-| **[!UICONTROL Overlap %]** | 要获得重叠百分比，Audience Manager使用以下公式：重叠唯一值/（基本区段唯一值+重叠区段唯一值 — 重叠唯一值） |
+| **[!UICONTROL Overlap %]** | 为了获得重叠百分比，Audience Manager使用以下公式：重叠唯一值/（基本区段唯一值+重叠区段唯一值 — 重叠唯一值） |
 
 
 

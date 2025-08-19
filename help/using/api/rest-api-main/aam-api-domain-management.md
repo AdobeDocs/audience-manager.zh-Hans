@@ -126,7 +126,7 @@ ht-degree: 2%
   </tr>
   <tr valign="top">
    <td colname="col1"><code> search</code> </td>
-   <td colname="col2">根据要用作搜索参数的指定字符串返回结果。 例如，假设您要查找在该项目的任何值字段中包含“Test”一词的所有模型的结果。 您的示例请求可能如下所示： <p><code> `GET` `https://api.demdex.com/v1/models/?search=Test`</code>. </p> <p>您可以搜索“get all”方法返回的任何值。 </p> </td>
+   <td colname="col2">根据要用作搜索参数的指定字符串返回结果。 例如，假设您要查找在该项目的任何值字段中包含“Test”一词的所有模型的结果。 您的示例请求可能如下所示： <p><code> `GET` `https://api.demdex.com/v1/models/?search=Test`</code>。 </p> <p>您可以搜索“get all”方法返回的任何值。 </p> </td>
   </tr> 
  </tbody> 
 </table>

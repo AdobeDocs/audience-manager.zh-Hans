@@ -26,11 +26,11 @@ c_comproc.xml
 
 Audience Manager使用以下组件来处理数据：
 
-## hadoop {#hadoop}
+## Hadoop {#hadoop}
 
 在[!DNL Audience Manager]中，Hadoop是包含[!DNL Audience Manager]所知道的关于用户的所有内容的主数据库。 例如，当[配置文件缓存服务器](../../reference/system-components/components-data-collection.md)创建包含用户数据的日志文件时，它会将该数据发送到Hadoop进行存储。 其他重要的Hadoop元素包括：
 
-* **配置单元：** Hadoop的数据仓库。 Hive管理对存储在Hadoop中的数据进行的特别查询。
+* **配置单元：** Hadoop的数据仓库。 Hive管理对Hadoop中存储的数据的临时查询。
 
 * **HBase：**&#x200B;非常大的Hadoop数据库。 它处理和管理入站和出站数据、特征规则、算法建模信息，并执行许多与将数据存储和移动到不同系统相关的其他功能。
 

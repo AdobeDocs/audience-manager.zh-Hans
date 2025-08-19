@@ -24,7 +24,7 @@ ht-degree: 0%
 
 <!-- audience-lab-compare-models.xml -->
 
-在此使用案例中，您将比较不同的模型。 您可以使用通过内部数据仓库创建的模型并将它们作为[载入的特征](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits)导入到[!DNL Audience Manager]中，也可以在[!DNL Audience Manager]中使用[算法模型](../../features/algorithmic-models/understanding-models.md)功能。
+在此使用案例中，您将比较不同的模型。 您可以使用通过内部数据仓库创建的模型并将它们作为[!DNL Audience Manager]载入的特征[导入到](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits)中，也可以在[中使用](../../features/algorithmic-models/understanding-models.md)算法模型[!DNL Audience Manager]功能。
 
 1. 在[模型生成器](../../features/algorithmic-models/create-model.md)中或通过外部平台创建两个模型。
 1. 从算法模型创建[算法特征](../../features/traits/create-algorithmic-traits.md)或将您自己的模型导入为载入的特征。
@@ -33,7 +33,7 @@ ht-degree: 0%
    * 创建&#x200B;*模型1区段*&#x200B;和&#x200B;*模型2区段*。
    * 将&#x200B;*模型1区段*&#x200B;的区段规则设置为模型1特征[!DNL AND NOT]模型2特征，反之亦然，设置为&#x200B;*模型2区段*。
 
-1. [在[!UICONTROL Audience Lab]中创建两个区段测试组](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)，一个以&#x200B;*模型1区段*&#x200B;作为基线，另一个以&#x200B;*模型2区段*&#x200B;作为基线。
+1. [在](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)中创建两个区段测试组[!UICONTROL Audience Lab]，一个以&#x200B;*模型1区段*&#x200B;作为基线，另一个以&#x200B;*模型2区段*&#x200B;作为基线。
 
    * 对于两个测试组，请保持变量相同：相同的目标、创意和转化特征。
    * 确保测试区段具有相似的用户数（例如，160万和180万正确，160万和1600万不正确）。

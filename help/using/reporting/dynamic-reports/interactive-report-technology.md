@@ -84,4 +84,4 @@ r_legend.xml
 
 ## 表格文档 {#tableau-documentation}
 
-要了解有关可在我们的交互式报表中看到的Tableau控件的更多信息，请参阅有关Linux 2018.2[&#128279;](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm)上的Tableau服务器的官方文档
+要了解有关可在我们的交互式报表中看到的Tableau控件的更多信息，请参阅有关Linux 2018.2[上的](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm)Tableau服务器的官方文档

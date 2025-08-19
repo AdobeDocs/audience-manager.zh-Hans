@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Audience Manager系统中的关键组件{#key-components-in-the-audience-manager-system}
 
-Audience Manager将其系统和流程分为四大类：标签管理、数据收集、数据整理和数据可操作性。
+Audience Manager将其系统和流程分为四大类：标记管理、数据收集、数据整理和数据可操作性。
 
 <!-- 
 

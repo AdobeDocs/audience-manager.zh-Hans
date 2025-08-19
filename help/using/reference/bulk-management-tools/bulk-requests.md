@@ -30,7 +30,7 @@ t_bulk_requests.xml
 
 >[!NOTE]
 >
->[!UICONTROL Bulk Management Tools]接受在[!DNL Audience Manager] UI中分配的[RBAC组权限](../../features/administration/administration-overview.md)。
+>[接受在](../../features/administration/administration-overview.md) UI中分配的[!DNL Audience Manager]RBAC组权限[!UICONTROL Bulk Management Tools]。
 
 [!UICONTROL Request]工作表没有自己的列标题集，您无需将ID复制到任何列。 相反，它会根据您在工具栏中单击的操作按钮返回数据。 此外，可选的报表功能会返回像素触发的频率计数以及多个固定时间间隔内的独特用户计数。
 

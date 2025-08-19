@@ -44,7 +44,7 @@ ht-degree: 4%
 
 ## 序列化键值对的分隔符和分隔符 {#delimiters-separators}
 
-对于序列化的键值对，您必须指定用于分隔这些变量内部和之间值的标记。 Audience Manager需要使用以下分隔符和分隔符：
+对于序列化的键值对，您必须指定用于分隔这些变量内部和之间值的标记。 Audience Manager需要以下分隔符和分隔符：
 
 <table id="table_8FD4E6B9506943AEA619D4089913ECBC"> 
  <thead> 

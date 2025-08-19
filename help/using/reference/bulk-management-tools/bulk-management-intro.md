@@ -32,7 +32,7 @@ c_bulk_start.xml
 
 >[!NOTE]
 >
->在[!UICONTROL Bulk Management Tools]中接受在[!DNL Audience Manager]用户界面中分配的[RBAC组权限](../../features/administration/administration-overview.md)。
+>在[中接受在](../../features/administration/administration-overview.md)用户界面中分配的[!DNL Audience Manager]RBAC组权限[!UICONTROL Bulk Management Tools]。
 
 ## 概述 {#overview}
 

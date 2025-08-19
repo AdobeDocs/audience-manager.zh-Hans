@@ -1,5 +1,5 @@
 ---
-description: 用于让DIL知道它会在窗口加载后加载。
+description: 用于告知DIL它会在窗口加载后加载。
 seo-description: Used to let DIL know that it is loaded after the window loads.
 seo-title: isAddedPostWindowLoad
 solution: Audience Manager
@@ -21,11 +21,11 @@ ht-degree: 2%
 >
 >从2023年7月开始，Adobe已停止开发[!DNL Data Integration Library (DIL)]和[!DNL DIL]扩展。
 >
->现有客户可以继续使用其[!DNL DIL]实施。 但是，Adobe在此点之后不会开发[!DNL DIL]。 建议客户评估[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)的长期数据收集策略。
+>现有客户可以继续使用其[!DNL DIL]实施。 但是，Adobe在此之后不会开发[!DNL DIL]。 建议客户评估[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)的长期数据收集策略。
 >
->如果客户希望在2023年7月之后实施新的数据收集集成，则应改用[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)。
+>如果客户希望在2023年7月之后实施新的数据收集集成，则应改用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)。
 
-用于让DIL知道它会在窗口加载后加载。
+用于告知DIL它会在窗口加载后加载。
 
 **函数签名：** `isAddedPostWindowLoad: function()`
 

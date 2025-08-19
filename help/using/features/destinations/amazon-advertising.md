@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ### 步骤1. 使用[!DNL Amazon Advertising]进行身份验证 {#step1-authenticate-with-amazon}
 
-添加基于设备的目标之前，您需要关联Audience Manager和[!DNL Amazon Advertising]帐户。 以下是操作方法：
+在添加基于设备的目标之前，您需要关联Audience Manager和您的[!DNL Amazon Advertising]帐户。 以下是操作方法：
 
 1. 登录到您的Audience Manager帐户并转到&#x200B;**[!UICONTROL Administration > Integrated Accounts]**。 如果您之前配置了与目标平台的集成，您应该会看到此页面中列出了该集成。 否则，页面为空。
 1. 选择&#x200B;**[!UICONTROL Add Account]**。
@@ -36,11 +36,11 @@ ht-degree: 0%
 
    ![集成平台](assets/dbd-amazon-without-options.png)
 
-1. 根据创建[!DNL Amazon Ads]帐户的区域（北美洲、欧洲或远东）选择&#x200B;**[!UICONTROL Amazon Data Provider]**&#x200B;选项之一，然后单击&#x200B;**[!DNL Confirm]**&#x200B;以重定向到身份验证页面。
+1. 根据创建&#x200B;**[!UICONTROL Amazon Data Provider]**&#x200B;帐户的区域（北美洲、欧洲或远东）选择[!DNL Amazon Ads]选项之一，然后单击&#x200B;**[!DNL Confirm]**&#x200B;以重定向到身份验证页面。
 
    ![集成平台](assets/dbd-amazon-with-options.png)
 
-1. 完成身份验证后，您将被重定向到Audience Manager，您应会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!UICONTROL Confirm]**。 这样，您就为Audience Manager授予了访问权限，以便向您的受众发送更新。
+1. 完成身份验证后，您将被重定向到Audience Manager，您应该会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!UICONTROL Confirm]**。 这样，您就授权了Audience Manager的访问权限，以便发送受众的更新。
 
 ### 步骤 2. 创建新的基于设备的目标 {#step2-create-new-destination}
 
@@ -71,5 +71,5 @@ Audience Manager与[!DNL Amazon Advertising]之间的集成支持历史受众回
 
 | 错误消息 | 发生次数/原因 | 解决方法 |
 |---|---|---|
-| `Internal server error` | 尝试使用过时版本的Amazon API添加新的[!DNL Amazon]Audience Manager时，帐户用户界面中会显示此错误消息。 | 联系Adobe客户关怀部门。 |
-| `Amazon Error: Account XXXXXXXXX was not found` | 当为目标配置的凭据无权访问相应的Amazon AdsAudience Manager时，帐户UI中会显示此错误消息。 | <ul><li>确保您使用的帐户凭据符合[先决条件](#prerequisites)。</li><li>使用相同的凭据导航到Amazon广告UI，并检查相应的帐户下是否显示正确的受众。 </li></ul> |
+| `Internal server error` | 尝试使用过期版本的Audience Manager API添加新的[!DNL Amazon]帐户时，Amazon UI中会显示此错误消息。 | 联系Adobe客户关怀部门。 |
+| `Amazon Error: Account XXXXXXXXX was not found` | 当为目标配置的凭据无权访问相应的Audience Manager Ads帐户时，此错误消息会显示在Amazon UI中。 | <ul><li>确保您使用的帐户凭据符合[先决条件](#prerequisites)。</li><li>使用相同的凭据导航到Amazon广告UI，并检查相应的帐户下是否显示正确的受众。 </li></ul> |

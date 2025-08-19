@@ -28,13 +28,13 @@ ht-degree: 0%
 
 * **实施Cookie检查代码：**&#x200B;将[!DNL GPT] `.setTargeting` API方法包装在我们推荐的[Cookie检查代码](../../integration/gpt-aam-destination/gpt-aam-modify-api.md)中。 此代码有助于在调用`.setTargeting`方法之前查找有效的AAM Cookie，以防止出现错误。
 
-* **添加`AamGpt`函数：** `AamGpt`代码从Audience ManagerCookie捕获数据并将其发送给[!DNL GPT]。 将Google发布者标记的[Audience Manager代码](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md) ( `AamGpt`)放在页面顶部或`<head>`代码块内。
+* **添加`AamGpt`函数：** `AamGpt`代码从Audience Manager Cookie捕获数据并将其发送给[!DNL GPT]。 将Google发布者标记的[Audience Manager代码](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md) ( `AamGpt`)放在页面顶部或`<head>`代码块内。
 
   >[!NOTE]
   >
-  >如果您使用自己的代码读取Audience ManagerCookie数据，则不需要使用`AamGpt`函数。
+  >如果您使用自己的代码读取Audience Manager Cookie数据，则不需要使用`AamGpt`函数。
 
-* **将投放日志发送到Audience Manager：**&#x200B;如果您需要区段投放报告（可选），请为Audience Manager提供包含展示级别投放数据的每日日志。 数据可以是原始格式，但每个记录都必须包含Audience Manager`UUID`。 Audience Manager可以通过[!DNL FTP]收取或接收这些邮件。
+* **将投放日志发送到Audience Manager：**&#x200B;如果您需要区段投放报告（可选），请为Audience Manager提供包含展示级别投放数据的每日日志。 数据可以是原始格式，但每个记录都必须包含Audience Manager `UUID`。 Audience Manager可以通过[!DNL FTP]收取或接收这些邮件。
 
 ### 只有符合条件的区段才会发送到GPT
 
@@ -42,16 +42,16 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可以发送的键值数没有限制，但[!DNL Google]请求[!DNL URL]确实对可以接受的字符数有限制。 请参阅[使用GPT设置定位和大小](https://support.google.com/dfp_premium/bin/answer.py?hl=en&amp;answer=1697712)。
+>您可以发送的键值数没有限制，但[!DNL Google]请求[!DNL URL]确实对可以接受的字符数有限制。 请参阅[使用GPT设置定位和大小](https://support.google.com/dfp_premium/bin/answer.py?hl=en&answer=1697712)。
 
 ## 服务器端集成 {#server-side-integration}
 
-如果要使用[!DNL GPT]设置与[!DNL Google Ad Manager]的服务器端集成，请联系Audience Manager顾问或客户关怀部门。 您需要提供您的[!DNL Google Ad Manager]帐户网络ID和受众链接ID。
+如果要使用[!DNL Google Ad Manager]设置与[!DNL GPT]的服务器端集成，请联系Audience Manager顾问或客户关怀部门。 您需要提供您的[!DNL Google Ad Manager]帐户网络ID和受众链接ID。
 
 >[!IMPORTANT]
 >
->如果您的网页正在运行[Accelerated Media Pages](https://www.ampproject.org/) ([!DNL AMP])库，则必须使用服务器端集成与Audience Manager。 如果您在[!DNL AMP]上并且与[!DNL AMP]进行了客户端集成，则必须迁移到服务器端集成。 请联系您的Audience Manager顾问或客户关怀部门以讨论迁移事宜。
+>如果您的网页正在运行[Accelerated Media Pages](https://www.ampproject.org/) ([!DNL AMP])库，则必须使用与Audience Manager的服务器端集成。 如果您在[!DNL AMP]上并且与[!DNL AMP]进行了客户端集成，则必须迁移到服务器端集成。 请联系您的Audience Manager顾问或客户关怀团队以讨论迁移事宜。
 
 >[!MORELIKETHIS]
 >
->* [GPT API参考指南](https://support.google.com/dfp_premium/bin/answer.py?hl=en&amp;answer=1650154)
+>* [GPT API参考指南](https://support.google.com/dfp_premium/bin/answer.py?hl=en&answer=1650154)

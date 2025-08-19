@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 用于日志文件传输的传输控制文件 {#transfer-control-files-for-log-file-transfers}
 
-传输控制([!DNL .info])文件提供了有关文件传输的元数据信息，以便合作伙伴可以验证Audience Manager是否正确处理了文件传输。
+传输控制([!DNL .info])文件提供了有关文件传输的元数据信息，以便合作伙伴能够验证Audience Manager是否正确处理了文件传输。
 
 [!DNL Audience Manager]在每次文件传输时向合作伙伴发送传输控制文件。 由于[!DNL FTP]发布者的多线程特性，传输控制文件可能会在实际文件传输完成之前发送。
 

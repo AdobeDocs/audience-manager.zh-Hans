@@ -1,9 +1,9 @@
 ---
-description: 描述DIL.tools命名空间中的方法。 这些实用程序功能可帮助您执行特定任务。
+description: 介绍DIL.tools命名空间中的方法。 这些实用程序功能可帮助您执行特定任务。
 seo-description: Describes methods in the DIL.tools namespace. These utility functions help you perform specific tasks.
 seo-title: DIL Tools
 solution: Audience Manager
-title: DIL工具
+title: DIL Tools
 uuid: 2bc62ce2-16bd-4e80-b493-c816ba643b59
 feature: DIL Implementation
 exl-id: 1f52eb95-8287-4dd0-b933-00de6926a797
@@ -14,15 +14,15 @@ ht-degree: 2%
 
 ---
 
-# DIL工具
+# DIL Tools
 
 >[!WARNING]
 >
 >从2023年7月开始，Adobe已停止开发[!DNL Data Integration Library (DIL)]和[!DNL DIL]扩展。
 >
->现有客户可以继续使用其[!DNL DIL]实施。 但是，Adobe在此点之后不会开发[!DNL DIL]。 建议客户评估[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)的长期数据收集策略。
+>现有客户可以继续使用其[!DNL DIL]实施。 但是，Adobe在此之后不会开发[!DNL DIL]。 建议客户评估[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)的长期数据收集策略。
 >
->如果客户希望在2023年7月之后实施新的数据收集集成，则应改用[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)。
+>如果客户希望在2023年7月之后实施新的数据收集集成，则应改用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)。
 
 描述`DIL.tools`命名空间中的方法。 这些实用程序功能可帮助您执行特定任务。
 
@@ -44,7 +44,7 @@ r_dil_get_search_referrer.xml
 
 ### `getSearchReferrer`的目的
 
-在DIL中，`getSearchReferrer`返回用于访问您的网站的搜索结果（名称和关键字）。 您可以将特定搜索词传递到此函数，或者让此函数默认针对`document.referrer`搜索支持的搜索引擎（[!DNL AOL]、[!DNL Ask]、[!DNL Bing]、[!DNL Google]和[!DNL Yahoo]）。
+在DIL中，`getSearchReferrer`返回用于访问您的网站的搜索结果（名称和关键字）。 您可以将特定搜索词传递到此函数，或者让此函数默认针对[!DNL AOL]搜索支持的搜索引擎（[!DNL Ask]、[!DNL Bing]、[!DNL Google]、[!DNL Yahoo]和`document.referrer`）。
 
 ### 函数签名
 
@@ -76,7 +76,7 @@ r_dil_get_search_referrer.xml
    <td> 默认搜索</td> 
    <td> 返回AOL、Ask、Bing、Google和Yahoo搜索引擎使用的关键词搜索词。 </td> 
    <td>
-      <code>var&nbsp;results&nbsp;=&nbsp;DIL.tools.getSearchReferrer();</code> 
+      <code>var&amp;nbsp;results&amp;nbsp;=&amp;nbsp;DIL.tools.getSearchReferrer();</code> 
   </td>
   </tr> 
   <tr> 
@@ -96,10 +96,10 @@ r_dil_get_search_referrer.xml
   <code>
       var results = 
         DIL.tools.getSearchReferrer("https://www.ehow.com/
-      search.aspx?q=adobe+rules",&lbrace; 
+      search.aspx?q=adobe+rules",{ 
       &nbsp;&nbsp;&nbsp;hostPattern:/ehow\./, 
       &nbsp;&nbsp;&nbsp;queryParam:"p" 
-      &rbrace;); 
+      }); 
   </code>
   </td></tr> 
   <tr> 
@@ -109,10 +109,10 @@ r_dil_get_search_referrer.xml
     <code>
       var&nbsp;results&nbsp;= 
       DIL.tools.getSearchReferrer("https://www.ehow.com/search.aspx?q=adobe+rules,
-      &lbrace;
+      {
         &nbsp;&nbsp;&nbsp;hostPattern:/ehow\./, 
         &nbsp;&nbsp;&nbsp;search_pattern:/[&amp;\?]p=([^&amp;]+/ 
-      &rbrace;);
+      });
     </code>
    </td> 
   </tr> 
@@ -182,19 +182,19 @@ r_dil_get_metatags.xml
 ### 示例代码
 
 <pre class="javascript"><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName'</i>, 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
 
 dataLib.api.signals(DIL.tools.getMetaTags('<i>application</i>', '<i>keywords</i>',  '<i>description</i>'), 'c_').submit();
 </code></pre>
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
-     partner: <i>&grave;partnerName'</i>, 
+var dataLib = DIL.create({ 
+     partner: <i>`partnerName'</i>, 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
 
 dataLib.api.signals(DIL.tools.getMetaTags('<i>application</i>','<i>keywords</i>', '<i>description</i>'), 'c_').submit();
 </code></pre>

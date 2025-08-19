@@ -93,7 +93,7 @@ c_pub_use_case.xml
      <ul id="ul_EEED2DAD504C486F8C00992219C893F7"> 
       <li id="li_E536F7C79824484DA3DC895809B849F4">Analytics 可提供有关受众对旅游内容的兴趣程度的第一方数据。根据此信息可创建一个“旅游爱好者”受众区段。 </li> 
       <li id="li_DCB3A5F3772C4DCEB757A4AB6CABFBE3">将 <span class="keyword">Audience Manager</span> 与诸如 Adobe CQ 之类的系统集成，以管理内容个性化促销活动。 </li> 
-      <li id="li_A9BFB7EB7504492BA83F182BE5E8CEF8">将此旅游区段定位到航空公司、酒店或服务业广告商，以帮助提高广告收入。 </li> 
+      <li id="li_A9BFB7EB7504492BA83F182BE5E8CEF8">将此旅游区段锁定到航空公司、酒店或服务业广告商，以帮助提高广告收入。 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 

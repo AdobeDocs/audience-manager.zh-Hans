@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 概述
 
-为了保护Audience Manager基础结构免受恶意活动的侵扰，[!DNL DCS]使用高级算法监视它接收的ID。 这些项可以是[!UICONTROL Data Provider Unique User ID] ([!UICONTROL CRM ID])、[!UICONTROL Audience Manager Unique User ID] ([!UICONTROL AAM UUID])或[!UICONTROL Experience Cloud ID] ([!UICONTROL ECID])。 有关Audience Manager支持的ID的详细解释，请参阅Audience Manager[&#128279;](../../../reference/ids-in-aam.md)中的ID索引。
+为了保护Audience Manager基础架构免受恶意活动的侵扰，[!DNL DCS]使用高级算法来监视其接收的ID。 这些项可以是[!UICONTROL Data Provider Unique User ID] ([!UICONTROL CRM ID])、[!UICONTROL Audience Manager Unique User ID] ([!UICONTROL AAM UUID])或[!UICONTROL Experience Cloud ID] ([!UICONTROL ECID])。 有关Audience Manager支持的ID的详细解释，请参阅Audience Manager中的[ID索引](../../../reference/ids-in-aam.md)。
 
 [!DNL DCS]监视其接收这些ID的频率，以检测潜在的恶意活动。 当[!DNL DCS]检测到短时间内对任何给定ID发出异常大量的[!DNL DCS]请求时，该ID将被添加到阻止列表中。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## ID列入阻止列表的原因和修复
 
-之所以要将ID添加到阻止列表，最常见的原因是客户基础架构与Audience Manager之间的集成不正确。 识别列入阻止列表ID时，请确保仔细检查您的Audience Manager集成。 请参阅&#x200B;**实施和集成指南**，详细解释应如何配置Audience Manager以与其他Experience Cloud解决方案或外部系统配合使用。
+之所以要将ID添加到阻止列表，最常见的原因是客户基础架构与Audience Manager之间的集成不正确。 识别列入阻止列表ID时，请确保仔细检查您的Audience Manager集成。 有关如何配置Audience Manager以与其他Experience Cloud解决方案或外部系统结合使用的详细说明，请参阅&#x200B;**实施和集成指南**。
 
 将ID添加到阻止列表的另一个常见原因是索引机器人（Web爬网程序），这通常会导致流量增加，从而导致将相同的ID多次发送到[!DNL DCS]。 如果您将索引机器人识别为将ID添加到阻止列表的原因，则应当限制机器人对您网站的访问。
 

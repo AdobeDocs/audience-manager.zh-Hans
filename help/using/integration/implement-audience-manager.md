@@ -27,7 +27,7 @@ ht-degree: 0%
 
 我们的合作伙伴解决方案和客户管理团队将在实施过程之前、期间和之后与您密切合作。
 
-Audience Manager采用分阶段的方法进行设置和实施。
+Audience Manager会采取分阶段的方法进行设置和实施。
 
 ## 定义阶段 {#define-phase}
 
@@ -117,7 +117,7 @@ Audience Manager采用分阶段的方法进行设置和实施。
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> 查找目标 </td> 
-   <td colname="col2"> 发现客户端是否向其他广告服务器、DSP、网络或交换发送数据 </td> 
+   <td colname="col2"> 发现客户端是否将数据发送到其他广告服务器、DSP、网络或交换机 </td> 
    <td colname="col3"> 业务团队 </td> 
   </tr> 
   <tr valign="top"> 
@@ -153,16 +153,16 @@ Audience Manager采用分阶段的方法进行设置和实施。
 
 | 活动 | 用途/描述 | 参与者 |
 |---|---|---|
-| 准备数据收集策略 | 与Adobe技术团队合作，制定符合业务要求的数据收集计划 | 业务和技术团队 |
+| 准备数据收集策略 | 与Adobe技术团队合作，制定数据收集计划以满足您的业务要求 | 业务和技术团队 |
 | 部署和测试代码 | 在暂存环境中测试建议的解决方案，并执行跨浏览器测试 | 技术团队 |
 | 验证功能并解决错误 | 检查并传达结果，解决错误并重新测试 | 技术团队 |
-| 用户培训 | 提供有关Audience Manager功能、工具和报告的教育和了解 | 业务团队 |
+| 用户培训 | 提供有关Audience Manager功能、工具和报表的教育和了解 | 业务团队 |
 
 此阶段可交付成果包括：
 
 * 完成和接受的数据收集计划；
 * 端到端[!DNL QA]测试；
-* Audience Manager用户界面功能的基础说明；
+* 关于Audience Manager用户界面功能的基本说明；
 * 接受和签核。
 
 ## 启动、支持和优化阶段 {#launch-support-optimize-phase}
@@ -204,7 +204,7 @@ Audience Manager采用分阶段的方法进行设置和实施。
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> 后续通信 </td> 
-   <td colname="col2"> 定期计划的通信，及时了解用户对Audience Manager的体验 </td> 
+   <td colname="col2"> 定期计划的通信，及时了解您使用Audience Manager的情况 </td> 
    <td colname="col3"> 业务和技术团队 </td> 
   </tr> 
  </tbody> 
@@ -216,13 +216,13 @@ Audience Manager采用分阶段的方法进行设置和实施。
 * 了解自定义报表；
 * 如何获得产品支持
 * 响应或征求功能请求、错误和用户反馈；
-* 加深对Audience Manager功能和报告的熟悉。
+* 加深对Audience Manager功能和报告的了解。
 
 ## 代码实施 {#code-implementation}
 
-Audience Manager使用Data Integration Library([!DNL DIL])接收受众数据。
+Audience Manager使用Data Integration Library ([!DNL DIL])接收受众数据。
 
-有关如何使用[!DNL DIL]的详细说明，请参阅[获取和实现DIL代码](../dil/dil-overview.md)。
+有关如何使用[!DNL DIL]的详细说明，请参阅[获取和实施DIL代码](../dil/dil-overview.md)。
 
 ### 参与者
 
@@ -234,4 +234,4 @@ Audience Manager使用Data Integration Library([!DNL DIL])接收受众数据。
 
 客户经理在产品实施过程完成后提供持续支持和咨询服务。 您可以与客户经理定期会面。 这些会议可确保您从Audience Manager中获得最大的使用量和价值。
 
-联系我们[此处](https://www.adobe.com/products/audiencemanager.html)以获取更多信息并开始进行Audience Manager。
+请在[此处](https://www.adobe.com/products/audiencemanager.html)联系我们，以获取更多信息并开始使用Audience Manager。

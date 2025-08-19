@@ -129,11 +129,11 @@ The illustration below shows the results of running a general report for the Tra
 
 ### 实时区段人口
 
-此量度表示在指定时间范围内实时查看的实际独特访客数，以及在Audience Manager看到这些访客时符合区段资格条件的访客数。
+此量度表示在指定时间范围内实时查看的实际独特访客数量，以及在Audience Manager查看这些访客时符合区段资格条件的访客数量。
 
 ### 总区段人口
 
-此指标表示在您选择的回顾期间内符合区段资格的Audience ManagerUUID总数。 1天的总区段人口数代表了用于定位的最准确的用户群。
+此指标表示在您选择的回顾期间内符合区段资格条件的Audience Manager UUID总数。 1天的总区段人口数代表了用于定位的最准确的用户群。
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ The illustration below shows the results of running a general report for the Tra
 
 **实时区段填充**
 
-此量度表示在指定时间范围内实时查看的实际独特访客数，以及在Audience Manager看到这些访客时符合区段资格条件的访客数。
+此量度表示在指定时间范围内实时查看的实际独特访客数量，以及在Audience Manager查看这些访客时符合区段资格条件的访客数量。
 
-总区段人口&#x200B;**&#x200B;**
+总区段人口&#x200B;****
 
-此指标表示在回顾期间属于某个区段并已发送到目标的Audience ManagerUUID总数。
+此量度表示在回顾期间属于某个区段的、已发送到目标的Audience Manager UUID总数。
 
 下图显示了针对“目标”报表类型运行常规报表的结果。
 

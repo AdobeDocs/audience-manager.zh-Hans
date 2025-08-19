@@ -1,5 +1,5 @@
 ---
-description: 当Audience Manager向数据合作伙伴发送区段信息时，它会使用数字ID标识这些对象。 作为数据合作伙伴，当您与客户共享此信息（或自己使用它）时，实际的名称和描述可在报表、功能板或其他用户界面(UI)中为客户提供更好的体验。 数据合作伙伴可以通过本节中所述的手动或自动方法将这些友好名称提供给其客户。
+description: Audience Manager将区段信息发送给数据合作伙伴时，会使用数字ID标识这些对象。 作为数据合作伙伴，当您与客户共享此信息（或自己使用它）时，实际的名称和描述可在报表、功能板或其他用户界面(UI)中为客户提供更好的体验。 数据合作伙伴可以通过本节中所述的手动或自动方法将这些友好名称提供给其客户。
 seo-description: When Audience Manager sends segment information to a data partner, it identifies these objects with numeric IDs. As a data partner, when you share this information with your customers (or work with it yourself), an actual name and description provide a better experience for customers in reports, dashboards, or other user interfaces (UI). Data partners can make these friendly names available to their customers with either the manual or automated methods described in this section.
 seo-title: Retrieving Segment Metadata
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 正在检索区段元数据 {#retrieving-segment-metadata}
 
-当Audience Manager向数据合作伙伴发送区段信息时，它会使用数字ID标识这些对象。 作为数据合作伙伴，当您与客户共享此信息（或自己使用它）时，实际的名称和描述可在报表、功能板或其他用户界面([!DNL UI])中为客户提供更好的体验。 数据合作伙伴可以通过本节中所述的手动或自动方法将这些友好名称提供给其客户。
+Audience Manager将区段信息发送给数据合作伙伴时，会使用数字ID标识这些对象。 作为数据合作伙伴，当您与客户共享此信息（或自己使用它）时，实际的名称和描述可在报表、功能板或其他用户界面([!DNL UI])中为客户提供更好的体验。 数据合作伙伴可以通过本节中所述的手动或自动方法将这些友好名称提供给其客户。
 
 ## 手动方法 {#manual-method}
 
@@ -26,13 +26,13 @@ ht-degree: 0%
 
 [!DNL Audience Manager]提供了一组[REST API](../../api/rest-api-main/rest-api-main.md)，可让您自动检索区段元数据。 使用[!DNL API]，您可以创建按计划间隔检索区段元数据的作业，或在您处理[!DNL Audience Manager]数据并查找新区段ID时自动检索区段元数据的作业。 有关更多信息，请参阅下面的步骤。
 
-### 步骤1：查看Audience ManagerAPI
+### 步骤1：查看Audience Manager API
 
 [REST API快速入门](../../api/rest-api-main/aam-api-getting-started.md)部分包含有关常规要求、身份验证、可用方法等的信息。 如果您之前未使用[!DNL Audience Manager] [!DNL API]，则这是一个很好的起点。
 
 ### 步骤2：请求OAuth2访问凭据
 
-您需要客户端ID和密码才能进行[!DNL API]调用。 在集成设置过程中，您可以从集成专家处获取客户端ID和密码。 您还可以在[!DNL amsupport@adobe.com]向[!UICONTROL Audience Manager Customer Care]发送电子邮件请求。
+您需要客户端ID和密码才能进行[!DNL API]调用。 在集成设置过程中，您可以从集成专家处获取客户端ID和密码。 您还可以在[!UICONTROL Audience Manager Customer Care]向[!DNL amsupport@adobe.com]发送电子邮件请求。
 
 ### 步骤3：从每个集成客户那里收集特定于客户的信息
 
@@ -56,7 +56,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> destinationMappingId</code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword">Audience Manager</span>区段ID。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Audience Manager</span>区段ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> elementName</code> </p> </td> 

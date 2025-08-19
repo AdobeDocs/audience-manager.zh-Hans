@@ -18,7 +18,7 @@ ht-degree: 0%
 
 查看当前配置的[!UICONTROL data sources]的列表，添加新的[!UICONTROL data sources]，并编辑现有的[!UICONTROL data sources]。
 
-您还可以使用[!DNL API]方法管理[!UICONTROL data sources]。 有关详细信息，请参阅[数据Source API方法](../api/rest-api-main/aam-api-data-sources.md)。
+您还可以使用[!UICONTROL data sources]方法管理[!DNL API]。 有关详细信息，请参阅[数据Source API方法](../api/rest-api-main/aam-api-data-sources.md)。
 
 ## [!UICONTROL Data Sources]列表视图 {#list-view}
 
@@ -55,16 +55,16 @@ ht-degree: 0%
       <li id="li_063F1B263B3B4D69B8880F7ACCB82450"> <b><span class="uicontrol">跨设备</span></b>：客户提供的验证ID。 要在创建时选择此选项： 
        <ul id="ul_D998B4081AD843C2B3B3E642DD011C1F"> 
         <li id="li_C9D2AF70603043D7BE9DF12FD494D7C7">跨设备数据源并生成<span class="wintitle">配置文件合并规则</span>。 </li> 
-        <li id="li_992BD05E2AFE454CAA4460DDEB2B839B">使用由与<span class="keyword">Audience Manager</span>集成的第三方设备图提供的链接的数据源。 </li> 
+        <li id="li_992BD05E2AFE454CAA4460DDEB2B839B">使用由与<span class="keyword"> Audience Manager</span>集成的第三方设备图提供的链接的数据源。 </li> 
        </ul> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> ID定义</span></b> </p> </td> 
-   <td colname="col2"> <p><b><span class="uicontrol"> ID定义</span></b>选项定义数据源与<span class="keyword">Audience Manager</span>用户ID (UUID)以及与<span class="keyword">Audience Manager</span>集成的第三方设备图形所链接的相关设备的关系。 选项包括： </p> <p> 
+   <td colname="col2"> <p><b><span class="uicontrol"> ID定义</span></b>选项定义数据源与<span class="keyword"> Audience Manager</span>用户ID (UUID)以及与<span class="keyword"> Audience Manager</span>集成的第三方设备图形所链接的相关设备的关系。 选项包括： </p> <p> 
      <ul id="ul_718ADABF0C0C44E29643C85C69CE294F"> 
-      <li id="li_19936095319446698E9A577385CD2A80"> <b><span class="uicontrol">人员：</span></b>用于定义单个人员的ID。 此ID可以映射到多个<span class="keyword">Audience Manager</span> ID。 </li> 
-      <li id="li_3D939AFF34654D618A05D2603F34462D"> <b><span class="uicontrol">家庭：</span></b>用于定义一组人员的ID。 此ID可以映射到多个Audience ManagerID。 </li> 
+      <li id="li_19936095319446698E9A577385CD2A80"> <b><span class="uicontrol">人员：</span></b>用于定义单个人员的ID。 此ID可以映射到多个<span class="keyword">个Audience Manager</span> ID。 </li> 
+      <li id="li_3D939AFF34654D618A05D2603F34462D"> <b><span class="uicontrol">家庭：</span></b>用于定义一组人员的ID。 此ID可以映射到多个Audience Manager ID。 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -111,8 +111,8 @@ ht-degree: 0%
    <td colname="col2"> <p><b><span class="uicontrol">入站</span></b>选项需要ID类型。 选项包括： </p> <p> 
      <ul id="ul_3BC963CE378B4F6CB1861643A4541634"> 
       <li id="li_B86C5E7847424A2B9C094DF02741DDB8"> <b><span class="uicontrol">客户ID</span></b>：使用客户ID标识入站数据。 </li> 
-      <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol">Audience ManagerID</span></b>：使用<span class="keyword">Audience Manager</span> ID标识入站数据。 </li> 
-      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol">Experience CloudID</span></b>：使用<span class="keyword">Experience Cloud</span> ID标识入站数据。 查看<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hans" format="https" scope="external"> Cookie和Experience CloudID</a>。 </li> 
+      <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol"> Audience Manager ID</span></b>：使用<span class="keyword"> Audience Manager</span> ID标识入站数据。 </li> 
+      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud ID</span></b>：使用<span class="keyword"> Experience Cloud</span> ID标识入站数据。 查看<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Experience Cloud ID</a>。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -142,23 +142,23 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">用作已验证的配置文件</span></b> </p> </td> 
-   <td colname="col2"> <p>您的跨设备数据源包含经过身份验证的ID。 在身份验证事件(例如，Audience Manager登录网站、应用程序内等)期间，已收集经过身份验证的ID并将其同步到<span class="keyword">用户</span> ID。 经过身份验证的ID可用于来自存储此ID的其他源的板载数据。 它也可用于链接<span class="wintitle">配置文件链接</span>中的多个设备ID。 </p> <p>此选项显示一个文本字段，允许您使用别名重命名数据源。 如果使用别名，则此新名称将覆盖数据源名称，并在您<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">创建配置文件合并规则</a>时显示在<span class="wintitle">已验证的配置文件选项</span>中。 </p> </td> 
+   <td colname="col2"> <p>您的跨设备数据源包含经过身份验证的ID。 在身份验证事件（例如，用户登录网站、应用程序内等）期间，已收集经过身份验证的ID并将其同步到<span class="keyword">个Audience Manager</span> ID。 经过身份验证的ID可用于来自存储此ID的其他源的板载数据。 它也可用于链接<span class="wintitle">配置文件链接</span>中的多个设备ID。 </p> <p>此选项显示一个文本字段，允许您使用别名重命名数据源。 如果使用别名，则此新名称将覆盖数据源名称，并在您<span class="wintitle">创建配置文件合并规则</span>时显示在<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">已验证的配置文件选项</a>中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">用作设备图</span></b> </p> </td> 
-   <td colname="col2"> <p>创建数据源作为设备图，您可以将其提供给其他<span class="keyword">Audience Manager</span>客户。 在选择此选项之前，请告知您的<span class="keyword">Audience Manager</span>顾问该<span class="wintitle">数据Source</span>应该与哪些客户共享。 您的顾问必须通过我们的内部流程为这些公司提供资源。 </p> <p>此选项显示一个文本字段，允许您使用别名重命名数据源。 如果使用别名，则此新名称将覆盖数据源名称，并在您<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">创建配置文件合并规则</a>时显示在<span class="wintitle">设备选项</span>中。 </p> </td> 
+   <td colname="col2"> <p>创建数据源作为设备图，您可以将其提供给其他<span class="keyword">个Audience Manager</span>客户。 在选择此选项之前，请告知您的<span class="keyword"> Audience Manager</span>顾问该<span class="wintitle">数据Source</span>应该与哪些客户共享。 您的顾问必须通过我们的内部流程为这些公司提供资源。 </p> <p>此选项显示一个文本字段，允许您使用别名重命名数据源。 如果使用别名，则此新名称将覆盖数据源名称，并在您<span class="wintitle">创建配置文件合并规则</span>时显示在<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">设备选项</a>中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">与特定Audience Manager客户共享关联的访客或设备ID</span></b> </p> </td> 
-   <td colname="col2"> <p>您的跨设备数据源包含来自设备图的ID。 设备图是映射到一个或多个<span class="keyword">Audience Manager</span> ID到群集的ID集合。 此集群通常表示个人或更大的家庭组。 仅适用于列为“数据提供程序”的帐户。 </p> </td> 
+   <td colname="col2"> <p>您的跨设备数据源包含来自设备图的ID。 设备图是映射到一个或多个<span class="keyword">个Audience Manager</span> ID到群集的ID集合。 此集群通常表示个人或更大的家庭组。 仅适用于列为“数据提供程序”的帐户。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol">在整个Audience Manager平台中共享关联的访客或设备ID</span></b> </p> </td> 
-   <td colname="col2"> <p>您的数据源包含可在其他<span class="keyword">Experience Cloud</span>解决方案之间共享的访客或设备ID。 </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol">在Audience Manager平台中共享关联的访客或设备ID</span></b> </p> </td> 
+   <td colname="col2"> <p>您的数据源包含可在其他<span class="keyword">个Experience Cloud</span>解决方案之间共享的访客或设备ID。 </p> </td> 
   </tr>
   <tr> 
    <td colname="col1"> <p> 非活动客户ID的<b><span class="uicontrol">数据保留</span></b> </p> </td> 
-   <td colname="col2"> <p>允许您为非活动客户ID设置数据保留期限。 这会决定Audience Manager将客户ID在Audience Manager平台上最后一次看到后，保留在我们的数据库中的时间。</p> <p>默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们将所有月份都计为30天。</p> <p>Audience Manager会根据您为非活动客户ID设置的数据保留时间，运行每周删除一次非活动客户ID的流程。</p> <p>Audience Manager会根据您为非活动客户ID设置的数据保留时间，运行每周删除一次非活动客户ID的流程。</p> <p><b>注意</b>：此控件仅适用于跨设备数据源。 另请参阅<a href="../features/profile-merge-rules/merge-rules-start.md#settings">创建跨设备数据Source </a>。</p></td> 
+   <td colname="col2"> <p>允许您为非活动客户ID设置数据保留期限。 这会决定Audience Manager将客户ID在Audience Manager平台上最后一次看到后，保留在我们的数据库中的多长时间。</p> <p>默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们将所有月份都计为30天。</p> <p>Audience Manager会根据您为非活动客户ID设置的数据保留时间，运行每周删除一次非活动客户ID的流程。</p> <p>Audience Manager会根据您为非活动客户ID设置的数据保留时间，运行每周删除一次非活动客户ID的流程。</p> <p><b>注意</b>：此控件仅适用于跨设备数据源。 另请参阅<a href="../features/profile-merge-rules/merge-rules-start.md#settings">创建跨设备数据Source </a>。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">个唯一特征集成代码</span></b> </p> </td> 

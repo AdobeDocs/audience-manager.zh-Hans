@@ -22,11 +22,11 @@ ht-degree: 1%
 
 ## 步骤1 — 载入离线特征 {#step-1-onboard-traits}
 
-在此场景中创建受众区段的第一步是将您的离线客户数据导入Audience Manager。
+在此场景中创建受众区段的第一步是将离线客户数据导入Audience Manager。
 
 >[!IMPORTANT]
 >
-> 在继续之前，请确保已在Audience Manager中定义了您即将载入的客户活动，并具有相应的[已载入的特征](../traits/trait-and-segment-qualification-reference.md)。
+> 在继续之前，请确保已在Audience Manager中定义了您即将载入的客户活动以及相应的[已载入的特征](../traits/trait-and-segment-qualification-reference.md)。
 
 无论您现有的Audience Manager客户ID ([DPUUID](../../reference/ids-in-aam.md))是否为哈希电子邮件，您都必须对包含[DPUUID](../../reference/ids-in-aam.md)的数据源执行特征载入。
 
@@ -81,17 +81,17 @@ ht-degree: 1%
 1. 使用下拉菜单为此数据源选择&#x200B;**[!UICONTROL Emails(SHA256, lowercased)]**&#x200B;标签。
    >[!IMPORTANT]
    >
-   >此选项仅将数据源标记为包含使用该特定算法经过哈希处理的数据。 Audience Manager在此步骤中不会散列数据。 确保您计划存储在此数据源中的电子邮件地址已使用[!DNL SHA256]算法进行哈希处理。 否则，您将无法将其用于[!DNL People-Based Destinations]。
+   >此选项仅将数据源标记为包含使用该特定算法经过哈希处理的数据。 Audience Manager不会在此步骤中对数据进行哈希处理。 确保您计划存储在此数据源中的电子邮件地址已使用[!DNL SHA256]算法进行哈希处理。 否则，您将无法将其用于[!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 
    >[!NOTE]
    >
-   > 有关如何将离线数据导入Audience Manager以进行基于人员的目标的常见问题解答，请参阅[数据载入](people-based-destinations-prerequisites.md#data-onboarding)。
+   > 有关如何将离线数据导入Audience Manager以实现基于人员的目标的常见问题解答，请参阅[数据载入](people-based-destinations-prerequisites.md#data-onboarding)。
 
 观看以下视频，观看有关如何为[!UICONTROL People-Based Destinations]创建数据源的视频教程。
 
->[!VIDEO](https://video.tv.adobe.com/v/31956?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29006/)
 
 ## 步骤3 — 通过基于文件的ID同步将DPUUID与经过哈希处理的电子邮件地址进行匹配 {#match-ids-emails}
 
@@ -146,8 +146,8 @@ ht-degree: 1%
 1. 登录到您的Audience Manager帐户并转到&#x200B;**[!UICONTROL Audience Data]** -> **[!UICONTROL Profile Merge Rules]**。
 2. 单击 [!UICONTROL Add New Rule]。
 3. 输入配置文件合并规则&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
-4. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;部分中，从&#x200B;**[!UICONTROL Cross-Device Options]**&#x200B;列表中选择&#x200B;**[!UICONTROL All Cross-Device Profiles]**&#x200B;规则。
-5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**&#x200B;列表中，选择特征载入的数据源。
+4. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;部分中，从&#x200B;**[!UICONTROL All Cross-Device Profiles]**&#x200B;列表中选择&#x200B;**[!UICONTROL Cross-Device Options]**&#x200B;规则。
+5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**列表中，选择特征载入的数据源。
    ![合并规则设置](assets/pbd-pmr.png)
 
 ## 步骤5 — 创建受众区段 {#create-audience-segments}
@@ -156,14 +156,14 @@ ht-degree: 1%
 
 ## 步骤6 — 配置基于人员的平台身份验证 {#configure-authentication}
 
-1. 登录到您的Audience Manager帐户并转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您之前配置了与社交平台的集成，您应会看到此页面中列出了该集成。 否则，页面为空。
+1. 登录到您的Audience Manager帐户，然后转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您之前配置了与社交平台的集成，您应会看到此页面中列出了该集成。 否则，页面为空。
    ![基于人员的集成](assets/pbd-config.png)
 1. 单击 **[!UICONTROL Add Account]**。
-1. 使用&#x200B;**[!UICONTROL People-Based Platform]**&#x200B;下拉菜单选择要配置集成的平台。
+1. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉菜单选择要配置集成的平台。
    ![基于人员的平台](assets/pbd-add.png)
 1. 单击&#x200B;**[!UICONTROL Confirm]**&#x200B;以重定向到所选平台的身份验证页面。
-1. 在验证您的Social Platform帐户后，您将被重定向到Audience Manager，您应会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!UICONTROL Confirm]**。
-1. Audience Manager会在页面顶部显示通知，告知您帐户是否已成功添加。 通知还允许您添加联系人电子邮件地址，以在Social平台身份验证即将过期时接收通知。
+1. 在验证您的Social Platform帐户后，您将被重定向到Audience Manager，您应该会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!UICONTROL Confirm]**。
+1. Audience Manager会在页面顶部显示通知，让您知道帐户是否已成功添加。 通知还允许您添加联系人电子邮件地址，以在Social平台身份验证即将过期时接收通知。
 
 >[!IMPORTANT]
 >
@@ -177,7 +177,6 @@ ht-degree: 1%
    * **[!UICONTROL Type]**：基于人员；
    * **[!UICONTROL Platform]**：选择要将受众区段发送到的基于人员的平台；
    * **[!UICONTROL Account]**：选择与所选平台关联的所需广告商帐户。
-
      ![create-destination](assets/pbd-create-destination.png)
 1. 单击 **[!UICONTROL Next]**。
 1. 选择要为此目标设置的&#x200B;**[!UICONTROL Data Export Labels]**。

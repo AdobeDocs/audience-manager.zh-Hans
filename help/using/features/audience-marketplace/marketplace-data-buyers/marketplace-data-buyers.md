@@ -1,5 +1,5 @@
 ---
-description: 适用于希望在Audience Manager内购买第三方数据的数据购买者的概述和工作流
+description: 适用于希望从Audience Manager内购买第三方数据的数据购买者的概述和工作流
 seo-description: Overview and workflow for data buyers who want to purchase third-party data from within Audience Manager
 seo-title: Audience Marketplace for Data Buyers
 solution: Audience Manager
@@ -32,14 +32,14 @@ ht-degree: 1%
 
 >[!TIP]
 >
->使用&#x200B;**[AdobeAudience Finder](https://www.adobe-audience-finder.com/)**&#x200B;查找可订阅的高质量数据馈送。 然后，返回到[!DNL Audience Manager]用户界面或使用[Audience Marketplace购买者API](https://bank.demdex.com/portal/swagger/index.html#/Audience_Marketplace_Buyer_API)订阅您找到的信息源。
+>使用&#x200B;**[Adobe Audience Finder](https://www.adobe-audience-finder.com/)**&#x200B;查找可订阅的高质量数据馈送。 然后，返回到[!DNL Audience Manager]用户界面或使用[Audience Marketplace购买者API](https://bank.demdex.com/portal/swagger/index.html#/Audience_Marketplace_Buyer_API)订阅您找到的信息源。
 
 ![buyer-marketplace-overview](assets/buyer-marketplace-overview.png)
 
 [!UICONTROL Marketplace]列表包含您可以进行排序和搜索以查找适合您的数据馈送的信息。 [!UICONTROL Marketplace]购买者列表中的项目包括：
 
 * **[!UICONTROL Search]**：按名称或文本描述查找数据馈送。
-* **[!UICONTROL Similar Traits]**：显示数据馈送中类似[!UICONTROL traits]的数字。 在&#x200B;**[!UICONTROL Similarity To]**&#x200B;部分中输入要作为筛选依据的[!UICONTROL trait]或[!UICONTROL segment]后，将显示此列。
+* **[!UICONTROL Similar Traits]**：显示数据馈送中类似[!UICONTROL traits]的数字。 在[!UICONTROL trait]部分中输入要作为筛选依据的[!UICONTROL segment]或&#x200B;**[!UICONTROL Similarity To]**&#x200B;后，将显示此列。
 * **[!UICONTROL Name]**：数据馈送的名称。
 * **[!UICONTROL Description]**：有关数据馈送内容的信息。
 * **[!UICONTROL Provider]**：数据提供程序的名称。

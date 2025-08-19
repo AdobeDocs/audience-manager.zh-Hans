@@ -19,7 +19,7 @@ ht-degree: 29%
 
 在您对用户的隐私义务中，其中一个重要方面是获取和传达用户对其个人数据使用方式（即“目的”）和使用者（即“公司”）所做的选择。
 
-Adobe 通过[选择加入功能](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=zh-Hans)和 [IAB 透明度与同意框架 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) 支持，为您提供用于管理和传达用户所做的隐私选择的方法。
+Adobe 通过[选择加入功能](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)和 [IAB 透明度与同意框架 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) 支持，为您提供用于管理和传达用户所做的隐私选择的方法。
 
 本文介绍了支持 IAB TCF 的 Audience Manager 用例，以及在 Audience Manager 中实施 IAB TCF 支持的方法。
 
@@ -27,17 +27,17 @@ Adobe 通过[选择加入功能](https://experienceleague.adobe.com/docs/id-serv
 >
 >Audience Manager已在[IAB TCF](https://iabeurope.eu/tcf-for-vendors/)中注册，供应商ID为565。
 
-适用于IAB TCF的Audience Manager插件利用[选择加入功能](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/iab.html?lang=zh-Hans)，而该功能又是[Adobe Experience Platform Identity Service (ECID)](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)库的一部分。
+适用于IAB TCF的Audience Manager插件利用[选择加入功能](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/iab.html)，而该功能又是[Adobe Experience Platform Identity Service (ECID)](https://experienceleague.adobe.com/docs/id-service/using/home.html)库的一部分。
 
 ## 范围和限制 {#scope-and-limitations}
 
-作为使用Audience Manager的出版商或广告商，您可以根据IAB TCF传达用户对Audience Manager所做的选择。
+作为使用Audience Manager的出版商或广告商，您可以根据IAB TCF向Audience Manager传达用户所做的选择。
 
 >[!IMPORTANT]
 >
 >IAB TCF法规仅适用于位于欧洲经济区的访客。
 
-Audience Manager可帮助您尊重用户所做的隐私选择，并让您能够轻松地将这些选择传达给与您合作的所有合作伙伴。
+Audience Manager可帮助您尊重用户的隐私选择，并让您能够轻松地将这些选择传达给与您合作的所有合作伙伴。
 
 目前，Audience Manager 不支持：
 
@@ -60,22 +60,22 @@ Audience Manager可帮助您尊重用户所做的隐私选择，并让您能够�
 >
 > 升级到最新的[ECID](https://github.com/Adobe-Marketing-Cloud/id-service/releases)版本后，将不再支持IAB TCF v1.1同意字符串，因此请确保在升级到最新的ECID版本之前更新CMP。
 
-要结合使用适用于IAB TCF的Audience Manager插件和Audience Manager，您必须满足以下先决条件：
+要结合使用适用于IAB TCF和Audience Manager的Audience Manager插件，您必须满足以下先决条件：
 
-1. 您必须使用 Adobe Experience Platform Identity Service (ECID) 版本 5 或更高版本。[下载](https://github.com/Adobe-Marketing-Cloud/id-service/releases) ECID 的最新版本。
-2. 您必须使用Audience Manager[!DNL Data Integration Library] (DIL)版本9.0或更高版本，可从[此处](https://github.com/Adobe-Marketing-Cloud/dil/releases)下载。 阅读Audience Manager文档[&#128279;](../../dil/dil-overview.md)中的DIL。 我们建议使用[Adobe Audience Manager标记扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=zh-Hans)实现Audience Manager的最简单的DIL实现。
-3. 或者，如果您使用[!DNL Server-Side Forwarding] (SSF)将数据导入Audience Manager，则必须升级到AppMeasurement的最新版本。 使用 [Analytics 代码管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html?lang=zh-Hans)下载 AppMeasurement。
+1. 您必须使用 Adobe Experience Platform 身份标识服务(ECID) 版本 5 或更高版本。[下载](https://github.com/Adobe-Marketing-Cloud/id-service/releases) ECID 的最新版本。
+2. 您必须使用Audience Manager [!DNL Data Integration Library] (DIL)版本9.0或更高版本，可从[此处](https://github.com/Adobe-Marketing-Cloud/dil/releases)下载。 请参阅Audience Manager文档[中的](../../dil/dil-overview.md)DIL。 我们建议使用[Adobe Audience Manager标记扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html)实现Audience Manager的最简单的DIL实施。
+3. 或者，如果您使用[!DNL Server-Side Forwarding] (SSF)将数据导入Audience Manager，则必须升级到AppMeasurement的最新版本。 使用 [Analytics 代码管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html)下载 AppMeasurement。
 4. 您必须使用与IAB TCF v2.2集成并在IAB TCF中注册的商业同意管理平台或您自己的同意管理平台(CMP)。 请参阅[在 IAB 框架内注册的 CMP](https://iabeurope.eu/cmp-list/)。
 
 >[!WARNING]
 >
 >如果您使用的同意管理平台(CMP)不支持IAB TCF v2.2，则Audience Manager将在ID同步中自动发送`gdpr=0`参数，即使您的访客位于欧盟也是如此。 要确定您的GDPR验证是否处于活动状态，我们建议您与同意管理平台(CMP)确认它们支持IAB TCF v2.2。
 
-## Recommendations和实施方式 {#recommendations}
+## 建议和实施方式 {#recommendations}
 
-要在 Audience Manager 中启用 IAB TCF 支持，请阅读我们关于[如何通过选择加入来设置 IAB](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/iab.html?lang=zh-Hans) 的文档。
+要在 Audience Manager 中启用 IAB TCF 支持，请阅读我们关于[如何通过选择加入来设置 IAB](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/iab.html) 的文档。
 
-最简单的方法是使用[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)在资产上添加[!DNL ECID Opt-in]。 阅读[ECID选择加入扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hans)的文档，了解如何设置标记扩展。
+最简单的方法是使用[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)在资产上添加[!DNL ECID Opt-in]。 阅读[ECID选择加入扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)的文档，了解如何设置标记扩展。
 
 ## 使用IAB框架时的用户选择工作流程 {#user-choice-workflow}
 
@@ -97,9 +97,9 @@ Audience Manager可帮助您尊重用户所做的隐私选择，并让您能够�
 
 在IAB TCF中注册的每个供应商都会评估IAB TC字符串，并根据用户所做的隐私选择做出决策。 请记住，在IAB TCF注册的所有供应商中，用户的隐私选择均有效。
 
-## Audience Manager所需目的 {#aam-standard-purposes}
+## Audience Manager要求的目的 {#aam-standard-purposes}
 
-Audience Manager出于以下目的评估存储在IAB TC字符串中的用户选择，这些目的在[IAB Europe Transparency &amp; Consent Framework策略](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#Appendix_A_Purposes_and_Features_Definitions)中定义。
+Audience Manager出于以下目的评估存储在IAB TC字符串中的用户选择，这些目的在[IAB欧洲透明度与同意框架策略](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#Appendix_A_Purposes_and_Features_Definitions)中定义。
 
 * **目的1**：在设备上存储和/或访问信息；
 * **目的10**：开发和改进产品；
@@ -111,11 +111,11 @@ Audience Manager出于以下目的评估存储在IAB TC字符串中的用户选�
 >
 >根据[IAB法规](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#Special_Purpose_1__Ensure_security_prevent_fraud_and_debug_)，特殊目的1（确保安全性、防止欺诈和调试）始终得到用户同意，用户无法对其进行反对。
 
-## Audience Manager行为取决于用户是否授予同意 {#aam-behavior-consent}
+## Audience Manager的行为取决于用户是否授予同意 {#aam-behavior-consent}
 
-根据IAB TC字符串中是否包含用于两种目的（存储和/或访问设备上的信息以及开发和改进产品）的用户同意，Audience Manager的工作方式有所不同。
+Audience Manager的工作方式有所不同，这取决于IAB TC字符串是否包含用于两种用途（存储和/或访问设备上的信息以及开发和改进产品）的用户同意。
 
-此外，我们还会检查您在Audience Manager中使用的所有目标是否获得用户同意，前提是这些目标已在IAB TCF中注册。
+对于您在Audience Manager中使用的所有目标，只要这些目标已在IAB TCF中注册，我们就会检查这些目标是否获得用户同意。
 
 | 当用户&#x200B;*表示同意*&#x200B;时，Audience Manager： | 当用户&#x200B;*拒绝同意*&#x200B;时，Audience Manager： |
 |---|---|
@@ -128,14 +128,14 @@ Audience Manager出于以下目的评估存储在IAB TC字符串中的用户选�
 1. 用户访问您的某个 Web 资产。只要您使用最新版的 ECID 和 DIL 库（请参阅[先决条件](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#prerequisites)），就会触发选择加入流程。
 2. Audience Manager 检查 IAB 流程是否适用 (`isIabContext=true`)。请参阅[建议和实施方式](aam-iab-plugin.md#recommendations)。
 3. Audience Manager检查GDPR是否适用(`gdpr = 1`)，以及您的Web资产上是否存在IAB TCF中注册的CMP。 例如，这将适用于来自欧盟的访问用户。 请注意，作为出版商，您有责任设置GDPR标记。
-4. 如果GDPR适用，则Audience Manager会检查在`gdpr_consent`参数中传递的IAB TC字符串以获得所需的同意。 Audience Manager需要同意才能存储和/或访问设备上的信息（[IAB TCF目的1](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes)）、开发和改进产品（[IAB TCF目的10](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes)），以及Audience Manager供应商同意存储、处理或激活数据。
-5. 如果IAB TC字符串存在并且包含所需的同意，则Audience Manager会将IAB TC字符串传递到我们的[数据收集服务器](../../reference/system-components/components-data-collection.md) (DCS)。
-6. Audience Manager通过在浏览器上设置[demdex Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=zh-Hans)进行响应，并启动和执行第三方ID同步。
-7. 如果在步骤4中传递的IAB TC字符串不包含所有所需的权限，则Audience Manager不会收集、处理或激活任何用户数据，也不会执行或启动ID同步。 此外，它还会将用户从您使用的目标中禁用。
+4. 如果GDPR适用，Audience Manager将检查在`gdpr_consent`参数中传递的IAB TC字符串以获得所需的同意。 Audience Manager需要获得同意才能在设备上存储和/或访问信息（[IAB TCF目的1](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes)）、开发和改进产品（[IAB TCF目的10](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes)），还要获得Audience Manager供应商同意才能存储、处理或激活数据。
+5. 如果IAB TC字符串存在并且包含所需的同意，Audience Manager会将IAB TC字符串传递到我们的[数据收集服务器](../../reference/system-components/components-data-collection.md) (DCS)。
+6. Audience Manager通过在浏览器上设置[demdex Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html)进行响应，并启动和执行第三方ID同步。
+7. 如果在步骤4中传递的IAB TC字符串不包含所有所需的权限，Audience Manager将不会收集、处理或激活任何用户数据，也不会执行或启动ID同步。 此外，它还会将用户从您使用的目标中禁用。
 
 >[!IMPORTANT]
 >
->如果您与需要IAB TCF参数的Audience Manager目标合作伙伴合作，但您的网站上没有支持IAB TCF的CMP，则Audience Manager将在ID同步中发送`gdpr=0`。 这意味着GDPR不适用于这些用户。
+>如果您与需要IAB TCF参数的Audience Manager目标合作伙伴合作，但您的网站上没有支持IAB TCF的CMP，则Audience Manager会发送`gdpr=0`进行ID同步。 这意味着GDPR不适用于这些用户。
 >
 > 如果不希望如此，您应该在Audience Manager中启用IAB TCF功能，将相应的IAB TC字符串发送到目标合作伙伴。
 
@@ -147,7 +147,7 @@ Audience Manager出于以下目的评估存储在IAB TC字符串中的用户选�
 
 Audience Manager 根据 IAB TCF 评估并遵循在[像素调用](../../integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)中传递的同意。
 
-像素可以由Audience Manager客户放置在其合作伙伴页面上，也可以放置到广告服务器中以包含在广告响应中。 对于第一种情况，您的合作伙伴必须以编程方式检索同意参数并将其添加到像素，然后才能触发。对于第二种情况，广告服务器会将从供应方平台 (SSP) 或出版商广告服务器接收的同意参数附加到所有像素，这种情况较为常见，详细描述如下。
+像素可由Audience Manager客户放置在其合作伙伴页面上，或放置在广告服务器中以包含在广告响应中。 对于第一种情况，您的合作伙伴必须以编程方式检索同意参数并将其添加到像素，然后才能触发。对于第二种情况，广告服务器会将从供应方平台 (SSP) 或出版商广告服务器接收的同意参数附加到所有像素，这种情况较为常见，详细描述如下。
 
 Audience Manager 在像素调用中使用两个参数传递用户同意：
 
@@ -162,8 +162,8 @@ https://yourcompany.demdex.net/event?d_event=imp&gdpr=1&gdpr_consent=consentstri
 
 1. 通过广告服务器向您的用户提供一次展示。这将转换为对我们的数据收集服务器(DCS)的[像素调用](../../integration/media-data-integration/impression-data-pixels.md)。
 2. Audience Manager 检查 GDPR 标记是否适用。如果不适用，Audience Manager将在像素调用中存储`gdpr`和`gdpr_consent`变量中传递的数据。
-3. 如果IAB TC字符串存在并且包含所需的权限，则Audience Manager将在像素调用中存储`gdpr`和`gdpr_consent`变量中传递的数据。
-4. 如果IAB TC字符串缺失或缺少所需的权限，则Audience Manager丢弃在像素调用中的`gdpr`和`gdpr_consent`变量中传递的数据。
+3. 如果IAB TC字符串存在并且包含所需的权限，则Audience Manager会将传递到`gdpr`和`gdpr_consent`变量中的数据存储在像素调用中。
+4. 如果IAB TC字符串缺失或缺少所需的权限，Audience Manager会在像素调用中丢弃在`gdpr`和`gdpr_consent`变量中传递的数据。
 
 ![广告商用例](assets/advertiser-use-case.png)
 
@@ -173,7 +173,7 @@ https://yourcompany.demdex.net/event?d_event=imp&gdpr=1&gdpr_consent=consentstri
 
 ## 将同意附加到发送至URL目标的URL
 
-与IAB TCF v2.2的Audience Manager集成支持将同意附加到发送到与IAB TCF v2.2集成的[URL目标](../../features/destinations/create-url-destination.md)的信息。但是，此过程不会通过Audience Manager自动完成，以避免破坏特定的URL格式。
+Audience Manager与IAB TCF v2.2集成支持将同意附加到发送到与IAB TCF v2.2集成的[URL目标](../../features/destinations/create-url-destination.md)的信息。但是，此过程不会由Audience Manager自动完成，以避免破坏特定的URL格式。
 
 希望向发送至[!DNL URL destinations]的数据附加同意的客户必须手动将`${GDPR}`和`${GDPR_CONSENT_XXXX}`宏添加到其URL格式中，将`XXXX`替换为目标合作伙伴ID。
 
@@ -183,11 +183,11 @@ https://yourcompany.demdex.net/event?d_event=imp&gdpr=1&gdpr_consent=consentstri
 
 ## 跨设备同意管理
 
-当网站访客未提供相应的权限时，适用于IAB TCF的Audience Manager插件会自动选择退出请求中提供的ID。 如果请求包含[跨设备ID (CRM ID)](../../reference/ids-in-aam.md)，则Audience Manager会选择退出该ID，以及链接到该[跨设备ID (CRM ID)](../../reference/ids-in-aam.md)的最后一台设备。
+当网站访客不提供相应的权限时，适用于IAB TCF的Audience Manager插件会自动选择退出请求中提供的ID。 如果请求包含[跨设备ID (CRM ID)](../../reference/ids-in-aam.md)，Audience Manager会选择退出该ID，以及链接到该[跨设备ID (CRM ID)](../../reference/ids-in-aam.md)的最后一个设备。
 
 ## 测试IAB实施 {#test-iab-implementation}
 
-要测试您是否已正确实施适用于IAB TCF的Audience Manager插件，请阅读验证选择加入服务[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/testing-optin-and-iab-plugin.html?lang=zh-Hans#section-64331998954d4892960dcecd744a6d88)中的用例4 。
+要测试您是否已正确实施适用于IAB TCF的Audience Manager插件，请阅读验证选择加入服务[中的用例4 。](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/testing-optin-and-iab-plugin.html#section-64331998954d4892960dcecd744a6d88)
 
 ## Audience Manager 中的 IAB 和选择退出。优先级顺序。 {#iab-and-optout}
 
@@ -205,7 +205,7 @@ Audience Manager 在[我们文档中的单独文章](data-privacy-requests.md#op
 
 ## 其他资源 {#additional-resources}
 
-* [Adobe Experience Platform Identity Service 选择加入](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=zh-Hans)
+* [Adobe Experience Platform 身份标识服务选择加入](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)
 * [IAB 欧洲 GDPR 透明度与同意框架](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/)
 * [IAB 欧洲 GDPR 透明度与同意框架技术规范](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Consent%20string%20and%20vendor%20list%20formats%20v1.1%20Final.md)
 * [IAB TCF 插件 - 视频演示](https://helpx.adobe.com/cn/audience-manager/kt/using/iab-tcf-support-audience-manager-technical-video-implement.html)

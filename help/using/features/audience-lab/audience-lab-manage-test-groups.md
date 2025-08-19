@@ -24,11 +24,11 @@ ht-degree: 0%
 
 <!-- create-test-group.xml -->
 
-* 您需要设置至少一个&#x200B;**转化特征**。 您可以通过选择&#x200B;**转化**&#x200B;作为事件类型，在[特征生成器](../../features/traits/create-onboarded-rule-based-traits.md)中设置转化特征。 有关转化特征是什么以及如何设置这些特征的更多信息，我们为您准备了[视频](https://helpx.adobe.com/audience-manager/kt/using/creating-conversion-traits-feature-video-use.html)。
+* 您需要设置至少一个&#x200B;**转化特征**。 您可以通过选择[转化](../../features/traits/create-onboarded-rule-based-traits.md)作为事件类型，在&#x200B;**特征生成器**&#x200B;中设置转化特征。 有关转化特征是什么以及如何设置这些特征的更多信息，我们为您准备了[视频](https://helpx.adobe.com/audience-manager/kt/using/creating-conversion-traits-feature-video-use.html)。
 
   >[!IMPORTANT]
   >
-  >[文件夹特征](../../features/traits/about-folder-traits.md)是[!UICONTROL Audience Lab]不支持的&#x200B;**&#x200B;**。 将文件夹特征的[事件类型](../../features/traits/create-onboarded-rule-based-traits.md)设置为&#x200B;**转换**&#x200B;将不会在[!UICONTROL Audience Lab]中为该特定文件夹特征生成任何数据。
+  >[文件夹特征](../../features/traits/about-folder-traits.md)是&#x200B;**不支持的**[!UICONTROL Audience Lab]。 将文件夹特征的[事件类型](../../features/traits/create-onboarded-rule-based-traits.md)设置为&#x200B;**转换**&#x200B;将不会在[!UICONTROL Audience Lab]中为该特定文件夹特征生成任何数据。
 
 * 对于使用[基于角色的访问控制](../../features/administration/administration-overview.md)的公司：将[!UICONTROL Audience Lab] [通配符权限](../../features/administration/administration-overview.md#wild-card-permissions)分配给&#x200B;**[!UICONTROL User Groups]**&#x200B;以提供访问权限。 此权限允许用户创建和查看测试结果。 用户将只能从具有&#x200B;**读取**&#x200B;和&#x200B;**映射到目标**&#x200B;权限的数据源中使用区段。 用户将只能使用他们具有&#x200B;**“读取”**&#x200B;权限的数据源的转化特征。 用户也只能查看他们有权访问的目标。 因此，在将[!DNL Audience Lab]通配符权限添加到组之前，请确保该组具有：
    * 访问相关的转化特征；
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 要创建新[!UICONTROL Segment Test Group]，请执行以下操作：
 
-1. 选择[!UICONTROL Audience Lab]仪表板中的&#x200B;**[!UICONTROL Create New Test Group]**&#x200B;以启动向导。
+1. 选择&#x200B;**[!UICONTROL Create New Test Group]**&#x200B;仪表板中的[!UICONTROL Audience Lab]以启动向导。
 1. **[!UICONTROL Basic Info & Choose Segment]**
 
    * 填写&#x200B;**[!UICONTROL Test Group Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
@@ -87,7 +87,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >* 您可以在创建过程中的任何时候保存测试组，并稍后返回到向导。 测试组状态将为&#x200B;**[!UICONTROL Draft]**，在您完成区段测试组之前，测试组不会向目标发送任何数据。
-   >* 对于草稿测试，您可以通过单击主[!UICONTROL Audience Lab]视图中测试组卡片中的&#x200B;**[!UICONTROL Edit]**&#x200B;返回并编辑测试组。
+   >* 对于草稿测试，您可以通过单击主&#x200B;**[!UICONTROL Edit]**&#x200B;视图中测试组卡片中的[!UICONTROL Audience Lab]返回并编辑测试组。
 
 ## 编辑区段测试组 {#edit-test-groups}
 

@@ -1,5 +1,5 @@
 ---
-description: Audience Manager设置您可以为帐户创建的特征、区段、目标和算法模型的最大数量限制。 限制适用于这些项目，无论是在用户界面中创建，还是通过API方法以编程方式创建。 使用限制有助于保护Audience Manager免受可能试图危害我们的API或用户界面的自动进程的攻击。
+description: Audience Manager对可为帐户创建的特征、区段、目标和算法模型数量设置最大限制。 限制适用于这些项目，无论是在用户界面中创建，还是通过API方法以编程方式创建。 使用限制有助于保护Audience Manager免受可能试图危害我们API或用户界面的自动化流程的攻击。
 seo-description: Audience Manager sets a maximum limit on the number of traits, segments, destinations, and algorithmic models that you can create for an account. Limits apply to these items whether created in the user interface or programmatically through API methods. Usage limits help protect Audience Manager from automated processes that may attempt to compromise our APIs or user interface.
 seo-title: Usage Limits
 solution: Audience Manager
@@ -11,13 +11,13 @@ exl-id: 8d29e231-d369-44ad-8e89-e6a4c83175f2
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # 使用限制 {#usage-limits}
 
-Audience Manager设置您可以为帐户创建的特征、区段、目标和算法模型的最大数量限制。 限制适用于这些项目，无论是在用户界面中创建，还是通过[!DNL API]方法以编程方式创建。 使用限制有助于保护Audience Manager免受可能试图危害[!DNL API]或用户界面的自动进程的攻击。
+Audience Manager对可为帐户创建的特征、区段、目标和算法模型数量设置最大限制。 限制适用于这些项目，无论是在用户界面中创建，还是通过[!DNL API]方法以编程方式创建。 使用限制有助于保护Audience Manager免受可能试图危害[!DNL API]或用户界面的自动化进程的攻击。
 
 ## ID映射限制 {#id-mapping-limits}
 
@@ -64,7 +64,7 @@ Audience Manager设置您可以为帐户创建的特征、区段、目标和算�
 
 | 项目 | 最大限制 |
 | -------- | ----- |
-| 活动[!UICONTROL Look-Alike Models] | 20.Audience Manager仅将&#x200B;*活动*&#x200B;算法模型计入此限制。 |
+| 活动[!UICONTROL Look-Alike Models] | &#x200B;20. Audience Manager仅将&#x200B;*活动*&#x200B;算法模型计入此限制。 |
 | [!UICONTROL Look-Alike Models]最大受众规模 | 2500万。  请注意，此限制不能增加。 您可以通过为模型选择更少的数据源或选择更短的回顾时间范围来减少受众规模。 |
 | [!UICONTROL Look-Alike Model]排除的特征的最大数量 | 500.请参阅算法建模中的[特征排除](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md)。 |
 | 最大[!UICONTROL Predictive Audiences Models] | 10 |

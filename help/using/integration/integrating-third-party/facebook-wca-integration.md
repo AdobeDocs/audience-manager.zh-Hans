@@ -1,9 +1,9 @@
 ---
-description: 本页演示了创建Facebook网站自定义受众(WCA)像素的过程，这些像素用于将基于Web的Audience Manager受众区段发送到Facebook，以便通过提高透明度来实现在线广告定位。
+description: 本页演示了创建Facebook网站自定义受众(WCA)像素的过程，以便将基于Web的Audience Manager受众区段发送到Facebook，从而提高透明度以实现在线广告定位。
 seo-description: This page illustrates the process of creating Facebook Website Custom Audiences (WCA) pixels for the purposes of sending web-based Audience Manager audience segments to Facebook, for online ad targeting with improved transparency.
 seo-title: Facebook WCA Integration
 solution: Audience Manager
-title: facebook WCA集成
+title: Facebook WCA集成
 feature: Third-party Integration
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
 source-git-commit: 6dc931b88666515cf51ab89ce1a54bbcf9995679
@@ -23,26 +23,26 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-[Facebook网站自定义受众(WCA)](https://www.facebook.com/business/help/610516375684216?id=2469097953376494)允许您创建访问过某些页面或在您的网站上执行了特定操作的人员的列表。 [!DNL Audience Manager]可使用[!DNL URL]目标在[!DNL WCA]中启用激活，通过目标，可配置基于像素的自定义集成以将基于Web的受众发送到[!DNL Facebook]以进行定位。
+[Facebook网站自定义受众(WCA)](https://www.facebook.com/business/help/610516375684216?id=2469097953376494)允许您创建访问过某些页面或在您的网站上执行了特定操作的人员的列表。 [!DNL Audience Manager]可使用[!DNL WCA]目标在[!DNL URL]中启用激活，通过目标，可配置基于像素的自定义集成以将基于Web的受众发送到[!DNL Facebook]以进行定位。
 
 ![Facebook WCA 集成](/help/using/integration/assets/facebook-wca-integration.png)
 
 >[!IMPORTANT]
 >
-> 此功能要求您在[URL目标](/help/using/features/destinations/create-url-destination.md)中选择[!UICONTROL Website]社交平台受众选项。 社交平台要求在将反向链接信息发送到其平台时进行取消屏蔽。 请注意，这意味着目标平台/合作伙伴将能够查看您的反向链接[!DNL URL]中的信息。
+> 此功能要求您在[!UICONTROL Website]URL目标[中选择](/help/using/features/destinations/create-url-destination.md)社交平台受众选项。 社交平台要求在将反向链接信息发送到其平台时进行取消屏蔽。 请注意，这意味着目标平台/合作伙伴将能够查看您的反向链接[!DNL URL]中的信息。
 
 ## 先决条件 {#prerequisites}
 
 1. [!DNL Facebook Ad Account]
-2. [!DNL Audience Manager]个区段，已准备好分配给您的新[!DNL Facebook]目标。 以下是[如何在[!DNL Audience Manager] UI中创建区段](/help/using/features/segments/segment-builder.md)。
-3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID])版本4.1.0或更高版本。 在此处[&#128279;](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**下载最新版本**。
-4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL])版本9.0或更高版本，可从&#x200B;**[此处](https://github.com/Adobe-Marketing-Cloud/dil/releases)**&#x200B;下载。 或者，如果您使用[服务器端转发(SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hans)将数据导入[!DNL Audience Manager]，则必须使用AppMeasurement版本2.12或更高版本。 使用[Analytics代码管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html?lang=zh-Hans)下载[!DNL AppMeasurement]。
+2. [!DNL Audience Manager]个区段，已准备好分配给您的新[!DNL Facebook]目标。 以下是[如何在](/help/using/features/segments/segment-builder.md) UI中创建区段[!DNL Audience Manager]。
+3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID])版本4.1.0或更高版本。 在此处&#x200B;**[](https://github.com/Adobe-Marketing-Cloud/id-service/releases)下载最新版本**。
+4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL])版本9.0或更高版本，可从&#x200B;**[此处](https://github.com/Adobe-Marketing-Cloud/dil/releases)**&#x200B;下载。 或者，如果您使用[服务器端转发(SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html)将数据导入[!DNL Audience Manager]，则必须使用AppMeasurement版本2.12或更高版本。 使用[!DNL AppMeasurement]Analytics代码管理器[下载](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html)。
 
-我们建议您使用[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)安装或升级步骤3和4中的库。
+我们建议您使用[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)安装或升级步骤3和4中的库。
 
-## 步骤1 — 在[!DNL Audience Manager]中创建[!UICONTROL Facebook Destination] {#step-1-create-facebook-destination}
+## 步骤1 — 在[!UICONTROL Facebook Destination]中创建[!DNL Audience Manager] {#step-1-create-facebook-destination}
 
-在[!DNL Audience Manager]中创建新的[!UICONTROL URL Destination]并将其命名为[!DNL Facebook Website Custom Audiences]。 创建目标时，请使用以下设置。 您还可以参阅[配置URL目标](/help/using/features/destinations/create-url-destination.md)页面。
+在[!UICONTROL URL Destination]中创建新的[!DNL Audience Manager]并将其命名为[!DNL Facebook Website Custom Audiences]。 创建目标时，请使用以下设置。 您还可以参阅[配置URL目标](/help/using/features/destinations/create-url-destination.md)页面。
 
 ### 基本信息
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 ### 配置
 
-* **[!UICONTROL URL type]**：选择&#x200B;**[!UICONTROL Website audience for social platforms]**。 通过选择此[!UICONTROL URL Type]选项，[!DNL Audience Manager]在触发[!DNL Facebook WCA]像素时不会遮蔽反向链接[!DNL URL]信息。
+* **[!UICONTROL URL type]**：选择&#x200B;**[!UICONTROL Website audience for social platforms]**。 通过选择此[!UICONTROL URL Type]选项，[!DNL Audience Manager]在触发[!DNL URL]像素时不会遮蔽反向链接[!DNL Facebook WCA]信息。
 * **[!UICONTROL Serialize]**：选择&#x200B;**[!UICONTROL Enable]**。
 * 在&#x200B;**[!UICONTROL Base URL]**&#x200B;和&#x200B;**[!UICONTROL Secure URL]**&#x200B;字段中，输入[!DNL Facebook WCA]像素。
 * **[!UICONTROL Delimiter]**： `,`
@@ -74,7 +74,7 @@ ht-degree: 1%
 | 参数 | 描述 |
 |---------|----------|
 | `id` | 您的[!DNL Facebook]像素ID，在创建受众像素时可在[!DNL Facebook Ad Manager]用户界面中找到该ID。 |
-| `ev` | 事件。 这是一个任意值，一旦像素开始在网站上触发，该值将出现在[!DNL Facebook Ad Manager]用户界面中。 有关详细信息，请参阅[步骤3](/help/using/integration/integrating-third-party/facebook-wca-integration.md#step-3-create-audience)中的[!UICONTROL Include]项。 |
+| `ev` | 事件。 这是一个任意值，一旦像素开始在网站上触发，该值将出现在[!DNL Facebook Ad Manager]用户界面中。 有关详细信息，请参阅[!UICONTROL Include]步骤3[中的](/help/using/integration/integrating-third-party/facebook-wca-integration.md#step-3-create-audience)项。 |
 | `cd[segID]` | 一个附加参数，一旦像素开始在网站上触发，该参数即开始填充到[!DNL Facebook Ad Manager]用户界面中。 `segID`也是任意的。 |
 | `%ALIAS%` | [!DNL Audience Manager]宏，它将动态替换为网站访客有资格的[!DNL Audience Manager] [!UICONTROL segment] ID，以逗号分隔， |
 
@@ -90,9 +90,9 @@ ht-degree: 1%
 
 输入结束日期（如果适用），否则留空将不输入结束日期。
 
-## 步骤3 — 在[!DNL Facebook Ads Manager]中创建[!UICONTROL Audience] {#step-3-create-audience}
+## 步骤3 — 在[!UICONTROL Audience]中创建[!DNL Facebook Ads Manager] {#step-3-create-audience}
 
-请参阅[!DNL Facebook]帮助文档中的[创建网站自定义受众](https://www.facebook.com/business/help/666509013483225)。 选择下表中的[!UICONTROL Create Audience]选项：
+请参阅[帮助文档中的](https://www.facebook.com/business/help/666509013483225)创建网站自定义受众[!DNL Facebook]。 选择下表中的[!UICONTROL Create Audience]选项：
 
 | 项目 | 描述 |
 |---------|----------|
@@ -102,7 +102,7 @@ ht-degree: 1%
 | 过去 | 可选设置。 |
 | 受众名称 | 除非您向此受众添加其他条件，否则我们建议您使用相同的[!DNL Audience Manager]区段名称以保持一致性。 |
 
-## 步骤4 — 在[!DNL Facebook Ads Manager]中将[!UICONTROL Audience]分配给[!UICONTROL Campaign] {#step-4-assign-audience-to-campaign}
+## 步骤4 — 在[!UICONTROL Audience]中将[!UICONTROL Campaign]分配给[!DNL Facebook Ads Manager] {#step-4-assign-audience-to-campaign}
 
 创建[!DNL Custom Audience]后，将其分配给广告营销活动。 创建新营销活动或编辑现有营销活动，您会发现新创建的受众列在[!DNL Facebook]用户界面中。 您的广告营销活动将定向那些访问您的网站时看到其浏览器上触发像素的用户（如果[!DNL Audience Manager]将这些用户包含在区段中）。
 

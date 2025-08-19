@@ -1,5 +1,5 @@
 ---
-description: 元数据文件将数字ID链接到您可以阅读和理解的名称。 Audience Optimization报表在各种报表选项菜单中会显示可读名称。
+description: 元数据文件将数字ID链接到您可以阅读和理解的名称。 Audience Optimization报表在各种报表选项菜单中显示了可读名称。
 seo-description: A metadata file links numeric IDs with names you can read and understand. The Audience Optimization reports display readable names in the various report options menus.
 seo-title: Overview and Mappings for Metadata Files
 solution: Audience Manager
@@ -16,11 +16,11 @@ ht-degree: 2%
 
 # 元数据文件的概述和映射{#overview-and-mappings-for-metadata-files}
 
-元数据文件将数字ID链接到您可以阅读和理解的名称。 Audience Optimization报表在各种报表选项菜单中会显示可读名称。
+元数据文件将数字ID链接到您可以阅读和理解的名称。 Audience Optimization报表在各种报表选项菜单中显示了可读名称。
 
 ## 概述 {#overview}
 
-元数据及其使用方式的审查。 元数据文件必须附有数据文件。 元数据文件内容将数据文件信息与报表菜单中人工可读的相关标签相匹配。 有关详细信息，请参阅[Audience Optimization报表的数据文件和可操作的日志文件](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)。
+元数据及其使用方式的审查。 元数据文件必须附有数据文件。 元数据文件内容将数据文件信息与报表菜单中人工可读的相关标签相匹配。 有关详细信息，请参阅[Audience Optimization报表的数据文件以及可操作的日志文件](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)。
 
 ### 元数据文件包含有关其他数据的数据
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 将数字ID绑定到可读名称需要元数据文件。 例如，假设事件调用在键值对中包含创意ID，如下所示： `d_creative:1234`。 如果没有元数据文件，此创意内容在选项菜单中将显示为1234。
 
-但是，格式正确的元数据文件可以将该创意绑定回真实名称，例如“广告商创意A”，您可以在报表中读取和识别该名称。
+但是，格式正确的元数据文件可将此创意绑定回“广告商Creative A”等真实名称，您可以读取并在报表中识别该名称。
 
 ### 何时需要元数据文件
 
@@ -119,7 +119,7 @@ ht-degree: 2%
 
 在文件名中：
 
-* 数据源密钥从`d_src`更改为`dpid`。
+* 数据源密钥从`dpid`更改为`d_src`。
 
 * 创意和营销活动ID表示类别而不是实际标识符。
 
@@ -129,7 +129,7 @@ ht-degree: 2%
 
 ### 文件内容
 
-在此示例中，文件内容反映了在事件调用中传入的创意和促销活动ID。 此处的新元素是一个可读的名称。 处理之后，此文件中的名称将在[!UICONTROL Audience Optimization]报表的创意菜单中作为选项显示。
+在此示例中，文件内容反映了在事件调用中传入的创意和促销活动ID。 此处的新元素是一个可读的名称。 处理之后，此文件中的名称将在[!UICONTROL Audience Optimization]报表的Creative菜单中作为一个选项显示。
 
 ![元数据文件的内容](/help/using/reporting/audience-optimization-reports/metadata-files-intro/assets/metadata_file_contents.png)
 

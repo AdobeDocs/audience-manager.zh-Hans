@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 配置[!DNL URL Destination] {#configure-url-destination}
 
-[!DNL URL destination]从页面向[!DNL destination]进行像素调用。 按照这些说明使用[!UICONTROL Destination Builder]创建[!DNL URL] [!DNL destination]。
+[!DNL URL destination]从页面向[!DNL destination]进行像素调用。 按照这些说明使用[!DNL URL]创建[!DNL destination] [!UICONTROL Destination Builder]。
 
 <!-- create-url-destination.xml -->
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 此部分包含允许您设置基[!DNL URL]和由[!DNL URL]字符串传入的数据分隔符的选项。 此部分为可选部分。 要完成此部分，请执行以下操作：
 
 1. 单击&#x200B;**[!UICONTROL Configuration]**&#x200B;显示控件。
-1. *（可选）*&#x200B;选中&#x200B;**[!UICONTROL Serialize]**&#x200B;复选框。
+1. *（可选）*&#x200B;选中&#x200B;**[!UICONTROL Serialize]**复选框。
 这样，您就可以按顺序将区段发送到[!DNL destination]，而不是为每个区段分别发出调用。 序列化有助于高效传输数据。 选中此复选框会显示URL和分隔符字段。 有关详细信息，请参阅[标准和序列键值对](../../features/destinations/key-value-pairs.md)。
 1. 如果选择&#x200B;**[!UICONTROL Serialize]**，则还必须配置如下所述的URL和分隔符字段。
 

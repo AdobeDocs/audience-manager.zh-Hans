@@ -28,7 +28,7 @@ ht-degree: 1%
 根据应用于数据源和目标的分类，导出控件会阻止您：
 
 * 当特征属于数据源时，该数据源具有的数据导出控制与区段映射到的一个或多个目标上的数据导出标签不兼容，则将特征添加到区段。
-例如，假设某个区段映射到具有导出标签&#x200B;**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目标。 如果特征所属的数据源具有显示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的数据导出控件，则导出控件会阻止您向此区段添加特征。
+例如，假设某个区段映射到具有导出标签**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目标。 如果特征所属的数据源具有显示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的数据导出控件，则导出控件会阻止您向此区段添加特征。
 * 将任意数据发送到具有以下数据导出标签的目标位置，该标签被任何位置上的数据导出控件阻止：
    * 所包含特征的数据源；
    * 在所包含区段中使用的特征的数据源；

@@ -29,7 +29,7 @@ ht-degree: 93%
 
 有两种方法可以将离线数据载入 Audience Manager 以便用于 [!DNL People-Based Destinations]。
 
-* **使用基于文件的 ID 同步**。有关 ID 同步文件外观的详细信息，请参阅 [ID 同步文件的名称和内容要求](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)。使用此方法时，您可以定位来自 [!DNL CRM] 数据库的所有经过哈希处理的电子邮件地址。
+* **使用基于文件的 ID 同步**。有关 ID 同步文件外观的详细信息，请参阅 [ID 同步文件的名称和内容要求](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)。使用此方法时，您可以锁定来自 [!DNL CRM] 数据库的所有经过哈希处理的电子邮件地址。
 * 在传入经过身份验证的客户 ID 时，**使用声明的 ID** 来声明经过哈希处理的电子邮件地址。使用此方法时，Audience Manager 仅会激活已在线进行身份验证的用户的经过哈希处理的电子邮件地址。通过 Facebook 激活的电子邮件地址只是声明的 ID 事件调用中的电子邮件地址。与客户 ID 关联的其他电子邮件地址不会实时激活。
 
 **我是否可以通过 Web 表单或移动设备应用程序收集经过哈希处理的电子邮件地址，还是必须通过批处理文件来获取这些地址？**
@@ -78,7 +78,7 @@ Audience Manager 不会摄取原始电子邮件地址，因此我们无法验证
 
 Audience Manager 可以收集每个用户的最多 10 个电子邮件地址并将这些地址发送到目标平台，但需要通过同步文件来获取这些电子邮件地址。在 Audience Manager 将电子邮件地址发送到目标平台后，由平台决定是否将电子邮件地址与其自己的用户群进行匹配。某些平台可能具有其他电子邮件地址图形，用于将 Audience Manager 发送的地址与用户配置文件进行匹配。
 
-**我能否在[!DNL Audience Lab]中使用[!DNL People-Based Destinations]？**
+**我能否在[!DNL People-Based Destinations]中使用[!DNL Audience Lab]？**
 
 不需要。当前，所有[!DNL People-Based Destinations]目标都从[!DNL Audience Lab]中排除。 鉴于[!DNL People-Based Destinations]和需求端平台使用不同的ID，您无法通过在它们之间平均拆分受众来测试和测量性能。
 
@@ -114,8 +114,8 @@ Audience Manager 可以收集每个用户的最多 10 个电子邮件地址并�
 
 您可以通过 [!DNL URL Destinations] 功能使用 Audience Manager 的 [!DNL Facebook] [!DNL WCA] 集成，而无需支付额外费用。
 
-这两种集成是互补的，您可以同时使用这两种集成来确保更好的受众覆盖。例如，[!DNL WCA] 可用于在公司要定位尚未注册帐户的网站访客时帮助寻找潜在客户，而 [!DNL People-Based Destinations] 则可以帮助您定位已提供其电子邮件地址但可能未访问网站的现有客户。
+这两种集成是互补的，您可以同时使用这两种集成来确保更好的受众覆盖。例如，[!DNL WCA] 可用于在公司要锁定尚未注册帐户的网站访客时帮助寻找潜在客户，而 [!DNL People-Based Destinations] 则可以帮助您锁定已提供其电子邮件地址但可能未访问网站的现有客户。
 
-**与[!DNL Facebook]的[!DNL People-Based Destinations]集成是否支持在用户不再符合受众资格时取消其受众资格？**
+**与[!DNL People-Based Destinations]的[!DNL Facebook]集成是否支持在用户不再符合受众资格时取消其受众资格？**
 
 是，该集成支持在用户不再符合[!DNL Facebook]受众资格时将其从受众中删除。

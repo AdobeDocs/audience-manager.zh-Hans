@@ -1,5 +1,5 @@
 ---
-description: 在调用Google Publisher Tag .setTargeting方法之前，添加if语句以检查Audience ManagerCookie。
+description: 在调用Audience Manager Publisher Tag .setTargeting方法之前，添加if语句以检查Google Cookie。
 seo-description: Add an if statement to check for Audience Manager cookies before calling the Google Publisher Tag .setTargeting method.
 seo-title: Modify the GPT setTargeting API Call
 solution: Audience Manager
@@ -16,11 +16,11 @@ ht-degree: 5%
 
 # 修改GPT `setTargeting` API调用 {#modify-the-gpt-settargeting-api-call}
 
-在调用[!DNL Google Publisher Tag] `.setTargeting`方法之前添加if语句以检查Audience ManagerCookie。
+在调用[!DNL Google Publisher Tag] `.setTargeting`方法之前，添加if语句以检查Audience Manager Cookie。
 
-## 使用`IF`语句检查Audience ManagerCookie
+## 使用`IF`语句检查Audience Manager Cookie
 
-`.setTargeting`方法从Audience Manager目标Cookie和唯一用户ID Cookie ( `aam_uuid`)获取数据。 但是，如果在[!UICONTROL DIL]写入这些Cookie之前调用了`.setTargeting`，或者Cookie为空，则您可能会在页面加载时看到错误。 为避免出现这种情况，请将`.setTargeting`方法包装在检查这些Cookie的`if`语句中。 如果未设置这些参数，此语句将阻止`.setTargeting`调用`AamGpt`函数。
+`.setTargeting`方法从Audience Manager目标Cookie和唯一用户ID Cookie ( `aam_uuid`)获取数据。 但是，如果在`.setTargeting`写入这些Cookie之前调用了[!UICONTROL DIL]，或者Cookie为空，则您可能会在页面加载时看到错误。 为避免出现这种情况，请将`.setTargeting`方法包装在检查这些Cookie的`if`语句中。 如果未设置这些参数，此语句将阻止`.setTargeting`调用`AamGpt`函数。
 
 ### `IF`语句代码示例
 
@@ -69,7 +69,7 @@ if(typeof AamGpt.getCookie("aam_uuid") != "undefined" ){
   <tr> 
    <td colname="col1"> <p> <code> AamGpt.getCookie </code> </p> </td> 
    <td colname="col2"> <p>整数 </p> </td> 
-   <td colname="col3"> <p>返回Audience Manager的用户ID，例如<code> 12345 </code>。 </p> </td> 
+   <td colname="col3"> <p>返回Audience Manager用户ID，例如<code> 12345 </code>。 </p> </td> 
   </tr>
  </tbody>
 </table>

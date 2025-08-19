@@ -22,7 +22,7 @@ ht-degree: 3%
 
 <!-- r_tb_expression_samples.xml -->
 
-使用[!UICONTROL Expression Builder]代码编辑器创建您自己的特征规则。 以下示例可帮助您入门。 某些示例在变量&#x200B;*`key`*&#x200B;前加上`c_`，以将其标识为用户定义的变量。 如果您的事件调用使用该语法将数据发送到[!DNL Audience Manager]，请包含&#x200B;*`key`*&#x200B;变量的`c_`前缀（或任何其他命名约定）。
+使用[!UICONTROL Expression Builder]代码编辑器创建您自己的特征规则。 以下示例可帮助您入门。 某些示例在变量&#x200B;*`key`*&#x200B;前加上`c_`，以将其标识为用户定义的变量。 如果您的事件调用使用该语法将数据发送到`c_`，请包含&#x200B;*`key`*&#x200B;变量的[!DNL Audience Manager]前缀（或任何其他命名约定）。
 
 ## 布尔表达式 {#boolean-expressions}
 

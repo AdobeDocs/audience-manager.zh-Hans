@@ -1,5 +1,5 @@
 ---
-description: 通过Audience Marketplace，数据提供商和购买者可采用最省力的自助服务方式进行数据交易。 它通过提供专业化功能来实现这一点，这些功能会因您作为数据购买者或数据销售者的角色而有所不同。 事实上，你甚至可以同时成为买家和卖家。 此外，如果这一状况再好不过，Audience Marketplace将负责数据提供商和销售商之间的合同、账单和支付。
+description: 通过Audience Marketplace，数据提供商和购买者可采用最省力的自助服务方式进行数据交易。 它通过提供专业化功能来实现这一点，这些功能会因您作为数据购买者或数据销售者的角色而有所不同。 事实上，你甚至可以同时成为买家和卖家。 此外，如果这再好不过了，Audience Marketplace将负责数据提供商和销售商之间的合同、账单和付款。
 keywords: Google分析
 seo-description: Audience Marketplace lets data providers and buyers execute data deals in a self-service manner with minimum effort. It does this by providing specialized features that vary depending on your role as a data buyer or data seller. In fact, you can even be a buyer and a seller at the same time. And, if this couldn’t get any better, Audience Marketplace takes care of contracts, billing, and payments between data providers and sellers.
 seo-title: Audience Marketplace

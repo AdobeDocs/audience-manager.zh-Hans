@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## 设备定位 {#device-personalization}
 
-此方案适用于希望针对Audience Manager中定义的受众区段评估单个设备配置文件的营销人员，以便使用支持设备ID的定位平台(DSP、现场个性化平台和其他基于设备的定位平台)为设备提供一致的体验，而不考虑用户身份验证。
+此方案适用于希望评估Audience Manager中定义的受众区段的单个设备配置文件的营销人员，以便使用支持设备ID的定位平台（DSP、现场个性化平台和其他基于设备的定位平台）为设备提供一致的体验，而不考虑用户身份验证。
 
 要创建仅针对设备配置文件的规则，请选择&#x200B;**[!UICONTROL No Cross-Device Profile]** + **[!UICONTROL Device Profile]**。
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ![current-no-device](assets/current-no-device.png)
 
-使用此规则，Audience Manager将完全忽略设备配置文件，确认John的CRM ID符合该区段的条件，而不确认Jane的CRM ID。
+使用此规则，Audience Manager将完全忽略设备配置文件，让John的CRM ID符合该区段的条件，而不是让Jane的CRM ID符合条件。
 
 ![共享设备定位](assets/shared-device-targeting.png)
 
@@ -56,11 +56,11 @@ ht-degree: 1%
 
 ![last-device-profile](assets/last-device-profile.png)
 
-让我们考虑一个由年收入超过100.000美元的家庭构成的区段，其中至少包含一个设备，该设备是[!DNL Data Plan B]上的[!DNL iPhone 7]。 我们有两个家庭用户档案（跨设备用户档案），每个用户档案都连接到两个不同的设备用户档案。 符合区段资格所需的特征将分布在设备和跨设备配置文件中。
+让我们考虑一个由年收入超过100.000美元的家庭构成的区段，其中至少包含一个设备，该设备是[!DNL iPhone 7]上的[!DNL Data Plan B]。 我们有两个家庭用户档案（跨设备用户档案），每个用户档案都连接到两个不同的设备用户档案。 符合区段资格所需的特征将分布在设备和跨设备配置文件中。
 
-Audience Manager可合并每个设备+跨设备配置文件对，以查看合并的特征集是否符合区段的条件。 由于Audience Manager会评估合并中包含的每个配置文件，因此设备配置文件和家庭配置文件都可以分段。
+Audience Manager将合并每个设备+跨设备配置文件对，以查看合并的特征集是否符合该区段的条件。 由于Audience Manager会评估合并中包含的每个配置文件，因此设备配置文件和家庭配置文件都可以分段。
 
-设备和家庭配置文件之间的链接允许Audience Manager使[!DNL Household 2]符合该区段的条件，但不允许[!DNL Household 1]。 从[!DNL Household 2]开始，只有[!DNL Device 3]符合该区段的条件。 此[!UICONTROL Profile Merge Rule]使营销人员能够向单个设备([!DNL Device 3])和更广泛的家庭([!DNL Household 2])传递一致的营销消息。
+设备和家庭配置文件之间的链接允许Audience Manager授予[!DNL Household 2]区段的资格，但不允许[!DNL Household 1]。 从[!DNL Household 2]开始，只有[!DNL Device 3]符合该区段的条件。 此[!UICONTROL Profile Merge Rule]使营销人员能够向单个设备([!DNL Device 3])和更广泛的家庭([!DNL Household 2])传递一致的营销消息。
 
 ![家庭管理](assets/household-management.png)
 
@@ -72,7 +72,7 @@ Audience Manager可合并每个设备+跨设备配置文件对，以查看合并
 
 此定位方案仅适用于已购买[!DNL People-Based Destinations]加载项的客户。 此规则允许营销人员根据自己的经过身份验证的数据联系客户。
 
-假设一家在线零售商希望通过社交平台与现有客户联系，并向他们显示基于先前订单的个性化优惠。 通过[!UICONTROL People-Based Destinations]，他们可以将自己[!DNL CRM]中的经过哈希处理的电子邮件地址摄取到Audience Manager中，从离线数据中生成区段，然后使用该经过哈希处理的标识符将这些区段发送到他们想在社交平台上做广告的平台，从而优化他们的广告支出。
+假设某个在线retailer希望通过社交平台与现有客户联系，并向他们显示基于先前订单的个性化优惠。 通过[!UICONTROL People-Based Destinations]，他们可以将自己[!DNL CRM]中的经过哈希处理的电子邮件地址摄取到Audience Manager中，从离线数据中生成区段，然后使用该经过哈希处理的标识符将这些区段发送到他们想在社交平台上做广告的平台，从而优化他们的广告支出。
 
 要了解有关此选项的更多信息，请参阅[基于人员的目标](../destinations/people-based-destinations-overview.md)。
 
@@ -80,7 +80,7 @@ Audience Manager可合并每个设备+跨设备配置文件对，以查看合并
 
 ## 设备图选项 {#device-graph-options}
 
-为[!UICONTROL Profile Merge]规则选择[!UICONTROL device graph]选项取决于您的数字属性和业务目标所特有的条件。 这些一般准则可以帮助您了解何时使用一种类型的图形与何时使用另一种类型的图形。 请注意，要使用这些选项，您必须与外部设备图具有合同关系。 有关何时选择设备图选项的常规指导，请参阅下表。 有关特定用例，请参阅[配置文件链接设备图形用例](profile-link-use-case.md)和[外部设备图形用例](external-graph-use-cases.md)。
+为[!UICONTROL device graph]规则选择[!UICONTROL Profile Merge]选项取决于您的数字属性和业务目标所特有的条件。 这些一般准则可以帮助您了解何时使用一种类型的图形与何时使用另一种类型的图形。 请注意，要使用这些选项，您必须与外部设备图具有合同关系。 有关何时选择设备图选项的常规指导，请参阅下表。 有关特定用例，请参阅[配置文件链接设备图形用例](profile-link-use-case.md)和[外部设备图形用例](external-graph-use-cases.md)。
 
 <table id="table_66D9152D4FF040A186003272D456625D"> 
  <thead> 
@@ -101,7 +101,7 @@ Audience Manager可合并每个设备+跨设备配置文件对，以查看合并
   </tr> 
   <tr> 
    <td colname="col1"> <p>外部设备图形选项 </p> </td> 
-   <td colname="col2"> <p>使用与<span class="keyword">Audience Manager</span>集成的任何外部设备图形生成的<span class="wintitle">配置文件合并</span>规则非常适合： </p> <p> 
+   <td colname="col2"> <p>使用与<span class="wintitle"> Audience Manager</span>集成的任何外部设备图形生成的<span class="keyword">配置文件合并</span>规则非常适合： </p> <p> 
      <ul id="ul_D76D773988604A619FA4A3BF37F910F0"> 
       <li id="li_969A0755A9E34CBEB2F7331C137B9A26">具有低级客户身份验证的数字资产。 </li> 
       <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">广泛、高影响力的品牌促销活动。 </li> 
@@ -113,7 +113,7 @@ Audience Manager可合并每个设备+跨设备配置文件对，以查看合并
 
 观看以下视频，了解[!UICONTROL Profile Merge Rules]的可能用例概述。
 
->[!VIDEO](https://video.tv.adobe.com/v/31954?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28975/)
 
 >[!MORELIKETHIS]
 >

@@ -22,7 +22,7 @@ ht-degree: 6%
 
 ## 支持的目标类型：仅URL和Cookie
 
-可用的`POST`方法允许您仅将区段映射到[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，无法使用这些[!DNL REST API]方法将区段映射到[!UICONTROL server-to-server destinations]。 请改用用户界面。 但是，相关目标`GET`方法允许您检索有关在用户界面中创建的[!UICONTROL server-to-server destinations]的信息。
+可用的`POST`方法允许您仅将区段映射到[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，无法使用这些[!UICONTROL server-to-server destinations]方法将区段映射到[!DNL REST API]。 请改用用户界面。 但是，相关目标`GET`方法允许您检索有关在用户界面中创建的[!UICONTROL server-to-server destinations]的信息。
 
 ## 将区段映射到非序列化URL目标 {#map-segment-non-serial}
 
@@ -269,7 +269,7 @@ ht-degree: 6%
 
 ## 将区段映射到服务器到服务器目标 {#map-segment-s2s}
 
-一种`POST`方法，可让您将区段映射到现有的[!UICONTROL server-to-server]目标。 但请注意，无法使用这些当前可用的[!DNL API]方法创建[!UICONTROL server-to-server]目标。
+一种`POST`方法，可让您将区段映射到现有的[!UICONTROL server-to-server]目标。 但请注意，无法使用这些当前可用的[!UICONTROL server-to-server]方法创建[!DNL API]目标。
 
 <!-- r_map_segment_s2s.xml -->
 
@@ -315,7 +315,7 @@ ht-degree: 6%
 
 ## 批量创建目标映射 {#bulk-create}
 
-允许您传入由[!UICONTROL cookie]或[!UICONTROL URL]目标映射组成的数组的`POST`方法。
+允许您传入由`POST`或[!UICONTROL cookie]目标映射组成的数组的[!UICONTROL URL]方法。
 
 <!-- r_bulk_create.xml -->
 

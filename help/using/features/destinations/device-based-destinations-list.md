@@ -21,8 +21,8 @@ ht-degree: 46%
 
 * **上次更新时间** =显示此[!UICONTROL device-based destination]有更新的上次日期。
 * **更新** =指示[!DNL Audience Manager]是实时还是批次(1xday)将数据发送到此[!UICONTROL destination]。
-* **取消分段** =取消分段描述了取消资格并从[!UICONTROL segments]中删除设备配置文件的进程。 能否从[!UICONTROL segment]中删除设备配置文件取决于用于创建[!UICONTROL Profile Merge Rule]的设备选项。 在[!DNL GDPR]删除请求的上下文中也使用了取消分段。 读取[配置文件合并规则和设备取消分段流程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和[具有取消分段功能的Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 [!DNL Audience Manager]向下面标记为&#x200B;**是**&#x200B;的[!UICONTROL destinations]发送取消分段信息。
-* **接收[!DNL IAB TCF]同意信号** = [!DNL Audience Manager Plug-in for IAB TCF]允许您将[!DNL IAB TC]字符串转发给激活合作伙伴，同时尊重用户的隐私选择。 读取适用于IAB TCF[&#128279;](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md)的Audience Manager插件。
+* **取消分段** =取消分段描述了取消资格并从[!UICONTROL segments]中删除设备配置文件的进程。 能否从[!UICONTROL segment]中删除设备配置文件取决于用于创建[!UICONTROL Profile Merge Rule]的设备选项。 在[!DNL GDPR]删除请求的上下文中也使用了取消分段。 读取[配置文件合并规则和设备取消分段流程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和[具有取消分段功能的Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 [!DNL Audience Manager]向下面标记为[!UICONTROL destinations]是&#x200B;**的**&#x200B;发送取消分段信息。
+* **接收[!DNL IAB TCF]同意信号** = [!DNL Audience Manager Plug-in for IAB TCF]允许您将[!DNL IAB TC]字符串转发给激活合作伙伴，同时尊重用户的隐私选择。 读取适用于IAB TCF[的](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md)Audience Manager插件。
 * **[!DNL ICDS]** =此列列出支持[!UICONTROL Instant Cross-Device Suppression]的合作伙伴。 已阅读[即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
 * **移动设备ID** =此列列出可以从[!DNL Audience Manager]接收移动设备ID的合作伙伴。
 

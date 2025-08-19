@@ -16,11 +16,11 @@ ht-degree: 0%
 
 各个部分描述了可用报表、报表目的和典型用途。 所有报告都可从[!UICONTROL Analytics]仪表板访问。
 
-有关描述Audience Manager在收到信息以填充报表时的时间范围的信息，请参阅[数据传输和文件处理时间对报表有何影响](/help/using/reference/reporting-file-transfer-timeframe.md)。
+有关描述Audience Manager在收到填充报表的信息时经过的时间范围的信息，请参阅[数据传输和文件处理时间对报表有何影响](/help/using/reference/reporting-file-transfer-timeframe.md)。
 
 * [Audience Optimization报表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
 
-  [!UICONTROL Audience Optimization]报表使用数据可视化方法返回Audience Manager帐户中目标的信息。 在每个报表中，您都可以单击几乎任何数据点来返回有关该项目的详细信息。 这些受众优化见解可以应用于广告和发布渠道中的多个用例，但默认情况下不可用。 请联系您的Audience Manager顾问以开始使用。
+  [!UICONTROL Audience Optimization]报表使用数据可视化方法返回Audience Manager帐户中目标的相关信息。 在每个报表中，您都可以单击几乎任何数据点来返回有关该项目的详细信息。 这些受众优化见解可以应用于广告和发布渠道中的多个用例，但默认情况下不可用。 请联系您的Audience Manager顾问以开始使用。
 
 * [常规报表](/help/using/reporting/general-reports.md)
 

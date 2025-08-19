@@ -26,4 +26,4 @@ ht-degree: 0%
 
 * [批量出站数据传输](batch-outbound-transfers/batch-outbound-overview.md)
 
-  Audience Manager将根据这些规范向第三方内容提供商发送批量数据。
+  Audience Manager会根据这些规范将批量数据发送给第三方内容提供商。

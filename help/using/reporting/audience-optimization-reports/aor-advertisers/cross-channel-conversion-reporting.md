@@ -1,5 +1,5 @@
 ---
-description: Audience Optimization报表中的“跨渠道转化”选项允许您将离线转化归因为提供的在线展示次数或点击次数。
+description: Audience Optimization报表中的“跨渠道转化”选项允许您将离线转化归因为提供的在线展示次数或单击次数。
 seo-description: The Cross Channel Conversion option in the Audience Optimization reports allows you to attribute offline conversions to served online impressions or clicks.
 seo-title: Cross Channel Conversion
 solution: Audience Manager
@@ -16,13 +16,13 @@ ht-degree: 3%
 
 # 跨渠道转化{#cross-channel-conversion}
 
-Audience Optimization报表中的“跨渠道转化”选项允许您将离线转化归因为提供的在线展示次数或点击次数。
+Audience Optimization报表中的“跨渠道转化”选项允许您将离线转化归因为提供的在线展示次数或单击次数。
 
 [!UICONTROL Cross Channel Conversion]报告将[!DNL Google Campaign Manager]平台的结果与[!DNL Audience Manager]转化特征相结合。 这样，您就可以将离线转化链接到在线展示次数或点击次数。
 
 您可以将[!UICONTROL Cross Channel Conversion]用于[区段性能](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)和[最佳频率](../../../reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md)报表。
 
-要查看[!UICONTROL Cross Channel Conversion]报表，请在&#x200B;**[!UICONTROL Platform]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL AAM + Ad Server Name]**&#x200B;项。
+要查看[!UICONTROL Cross Channel Conversion]报表，请在&#x200B;**[!UICONTROL AAM + Ad Server Name]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Platform]**&#x200B;项。
 
 下表列出了设置[!UICONTROL Cross Channel Conversion]时的重要注意事项：
 
@@ -40,7 +40,7 @@ Audience Optimization报表中的“跨渠道转化”选项允许您将离线�
   </tr>
   <tr> 
    <td> <p>归因窗口 </p> </td> 
-   <td> <p> <b><span class="uicontrol"> AAM+Google促销活动管理器</span></b>归因时段为14天，这意味着仅考虑过去两周展示的转化特征。 </p> </td> 
+   <td> <p> <b><span class="uicontrol"> AAM+Google营销活动管理器</span></b>归因时段为14天，这意味着仅考虑过去两周展示的转化特征。 </p> </td> 
   </tr> 
   <tr> 
    <td> <p>最近联系方法 </p> </td> 

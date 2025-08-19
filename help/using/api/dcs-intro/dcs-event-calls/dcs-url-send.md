@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # 将数据发送到DCS {#send-data-to-the-dcs}
 
-从此处开始了解有关对[!DNL DCS]进行`/event`调用的信息。 本节包含有关调用语法、参数、格式和请求示例的信息。
+从此处开始了解有关对`/event`进行[!DNL DCS]调用的信息。 本节包含有关调用语法、参数、格式和请求示例的信息。
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## 调用语法 {#dcs-call-syntax}
 
-向[!DNL DCS]发送数据的基本`URL`字符串使用如下所示的语法。
+向`URL`发送数据的基本[!DNL DCS]字符串使用如下所示的语法。
 
 ```js
 https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_cb=callback
@@ -32,7 +32,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 
 >[!NOTE]
 >
->您还可以使用`POST`方法将数据发送到[!DNL DCS]。 [DCS API方法](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)中介绍了调用语法。
+>您还可以使用[!DNL DCS]方法将数据发送到`POST`。 [DCS API方法](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)中介绍了调用语法。
 
 ## 调用参数 {#dcs-call-parameters}
 
@@ -50,7 +50,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
    <td colname="col1"> <p> <code> domain alias.demdex.net</code> </p> </td> 
    <td colname="col2"> <p>此调用部分包含： </p> <p> 
      <ul id="ul_3EDA9C7BA6794D06BCB07A75A9BD2372"> 
-      <li id="li_74624CA78D6F4536A8164AE1FA1DECB9">您的域别名由<span class="keyword">Audience Manager</span>（如<code> my_domain.demdex.net</code>）分配。 </li> 
+      <li id="li_74624CA78D6F4536A8164AE1FA1DECB9">由<span class="keyword"> Audience Manager</span>分配的域别名（如<code> my_domain.demdex.net</code>）。 </li> 
       <li id="li_08ABE91CA247403AA480B3FB4BEF83BA">目标域，始终为<code> demdex.net</code>。 请参阅<a href="../../../reference/demdex-calls.md">了解对Demdex域</a>的调用。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -72,7 +72,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
      <ul id="ul_624DC78759F74AD8920220058E54E083"> 
       <li id="li_091E5B4820EC4A93B775433E428E74AB">将字符串数据用双引号引住（例如，<code> age="41 to 55"</code>）。 </li> 
       <li id="li_C558E3BA6EE34413BBBB962D4CD0D10E">您可以在一个值（例如，<i><code>key</i>=<i>val1,val2,val3</i></code></i>）上传入多个键。 </li> 
-     </ul> </p> <p>请参阅格式化DCS调用</a>中的键值对<a href="../../../api/dcs-intro/dcs-api-reference/dcs-key-format.md">。 </p> </td>
+     </ul> </p> <p>请参阅格式化DCS调用<a href="../../../api/dcs-intro/dcs-api-reference/dcs-key-format.md">中的键值对</a>。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> 
@@ -88,7 +88,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 
 ## 示例调用 {#dcs-sample-call}
 
-此示例显示虚构的公司[!DNL Acme, Inc.]通过[!DNL HTTP]调用向[!DNL DCS]发送数据。 请注意，此调用包括可选参数`d_dst=1`、`d_rtbd=json`和`d_cb=callback`。 这表示[!DNL Acme]希望从[!DNL DCS]接收带有回调函数的[!DNL JSON]响应。 记住，这只是个例子。 请勿剪切并粘贴此代码。
+此示例显示虚构的公司[!DNL Acme, Inc.]通过[!DNL DCS]调用向[!DNL HTTP]发送数据。 请注意，此调用包括可选参数`d_dst=1`、`d_rtbd=json`和`d_cb=callback`。 这表示[!DNL Acme]希望从[!DNL JSON]接收带有回调函数的[!DNL DCS]响应。 记住，这只是个例子。 请勿剪切并粘贴此代码。
 
 ```js
 https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_rtbd=json&d_cb=acme_callback

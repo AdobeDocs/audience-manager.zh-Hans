@@ -58,7 +58,7 @@ ht-degree: 0%
 * `READ`和`WRITE`对特征数据源的组权限。
 * 特征数据源的`VIEW_ALL_TRAITS`和`EDIT_ALL_TRAITS`通配符权限。
 
-在[管理文档](../../features/administration/administration-overview.md#create-group)中了解如何分配[!UICONTROL RBAC]权限。
+在[!UICONTROL RBAC]管理文档[中了解如何分配](../../features/administration/administration-overview.md#create-group)权限。
 
 ## 限制和其他注意事项 {#limits}
 
@@ -66,5 +66,5 @@ ht-degree: 0%
 |---|---|
 | 特征类型 | [!UICONTROL Onboarded traits]和[!UICONTROL algorithmic traits]对[!UICONTROL folder trait]的频率最多有1个实现贡献。 |
 | 在文件夹之间移动特征 | 将特征从文件夹移动到另一个文件夹会取消该特征从第一个文件夹特征的资格，并为其授予第二个[!UICONTROL folder trait]的资格。 这意味着如果从文件夹中删除或移动特征，则特征群体中的用户将使用文件夹特征作为区段表达式从区段中取消分段。 <br>将Adobe Analytics区段或报表包映射到您的Experience Cloud组织时，Audience Manager会自动创建对应的新只读区段和特征。 您无法从Audience Manager中编辑或更改这些特征的存储位置。 但是，您对映射的Adobe Analytics区段或报表包执行的任何更改都会反映在Audience Manager中。 |
-| 系统变量 | 无法使用`d_sid`参数在事件调用中实现[!UICONTROL Folder traits]。 |
+| 系统变量 | 无法使用[!UICONTROL Folder traits]参数在事件调用中实现`d_sid`。 |
 | 报表 | [!UICONTROL Folder traits]是自动计算的特征，不会出现在&#x200B;**[!UICONTROL Overlap Reports]**&#x200B;中。 |

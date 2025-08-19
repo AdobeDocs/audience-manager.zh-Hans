@@ -43,8 +43,8 @@ c_trend_reports.xml
 ![](assets/trend_reports.png)
 
 1. 配置以下选项：
-   **报表类型：**&#x200B;选择所需的报表类型（特征或区段）。
-   **日期范围：**&#x200B;指定报表的日期范围（开始日期和结束日期）。
+   **报表类型：**选择所需的报表类型（特征或区段）。
+   **日期范围：**指定报表的日期范围（开始日期和结束日期）。
    **显示间隔：**&#x200B;指定显示间隔（1、7、14、30、60和90天间隔）。
 1. 按名称或ID搜索特征或区段。
 1. 从文件夹列表中，将要报告的特征或区段拖放到右侧的[!UICONTROL Selections]面板。
@@ -101,7 +101,7 @@ t_working_with_trend_reports.xml
 
 请观看以下视频，详细了解跨设备量度的工作方式。
 
->[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html?lang=zh-Hans)
+>[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## 区段的趋势报表结果 {#segment-report-results-traits}
 

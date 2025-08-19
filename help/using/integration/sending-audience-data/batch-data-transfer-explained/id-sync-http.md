@@ -1,5 +1,5 @@
 ---
-description: 描述初始HTTP调用中使用的语法和参数，以便在供应商和Audience Manager之间同步用户ID。 在将数据分类发送到Audience Manager后，可以开始ID同步。
+description: 描述初始HTTP调用中使用的语法和参数，以便在供应商和Audience Manager之间同步用户ID。 将数据分类发送到Audience Manager后，可以开始ID同步。
 seo-description: Describes the syntax and parameters used in the initial HTTP call to synchronize user IDs between a vendor and Audience Manager. ID synchronization can begin after you send your data taxonomy to Audience Manager.
 seo-title: ID Synchronization for Inbound Data Transfers
 solution: Audience Manager
@@ -50,11 +50,11 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
  <tbody> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i> </code> </td> 
-   <td colname="col2"> <p>内容提供程序的唯一ID(由<span class="keyword">Audience Manager</span>分配)。 </p> </td> 
+   <td colname="col2"> <p>内容提供商的唯一ID(由<span class="keyword"> Audience Manager</span>分配)。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i> </code> </td> 
-   <td colname="col2"> <p>独特用户ID的URL（百分比）编码表示形式。 除了编码保留的ASCII字符外，任何非ASCII字符都应根据UTF-8字符编码表进行百分比编码。 </p> <p>有关详细信息，请参阅联机</a>上的<a href="https://www.url-encode-decode.com" format="http" scope="external"> URL编码/解码网站。 </p> </td> 
+   <td colname="col2"> <p>独特用户ID的URL（百分比）编码表示形式。 除了编码保留的ASCII字符外，任何非ASCII字符都应根据UTF-8字符编码表进行百分比编码。 </p> <p>有关详细信息，请参阅联机<a href="https://www.url-encode-decode.com" format="http" scope="external">上的</a> URL编码/解码网站。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;REDIRECT_URL&gt;</i> </code> </td> 
@@ -62,11 +62,11 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
-   <td colname="col2"> <p>可选。如果您正在使用适用于IAB TCF的<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager插件，请添加此参数。</a></p> <p><code> gdpr</code> 可以为0（GDPR不适用）或1（GDPR适用）。 </p> <p> <b>注意：</b>此参数只能与<code>gdpr_consent</code>一起使用。</p></td> 
+   <td colname="col2"> <p>可选。如果您使用的是适用于IAB TCF的<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager插件，请添加此参数。</a></p> <p><code> gdpr</code> 可以为0（GDPR不适用）或1（GDPR适用）。 </p> <p> <b>注意：</b>此参数只能与<code>gdpr_consent</code>一起使用。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code><i>gdpr_consent=&lt;ENCODED STRING&gt;</i> </code> </td> 
-   <td colname="col2"> <p>可选。如果您正在使用适用于IAB TCF的<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager插件，请添加此参数。</a></p> <p><code>gdpr_consent</code> 是URL安全的base64编码GDPR同意字符串（请参阅<a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB规范</a>）。 </p> <p> <b>注意：</b>此参数只能与<code>gdpr</code>一起使用。</p> </td> 
+   <td colname="col2"> <p>可选。如果您使用的是适用于IAB TCF的<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager插件，请添加此参数。</a></p> <p><code>gdpr_consent</code> 是URL安全的base64编码GDPR同意字符串（请参阅<a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB规范</a>）。 </p> <p> <b>注意：</b>此参数只能与<code>gdpr</code>一起使用。</p> </td> 
   </tr> 
  </tbody> 
 </table>

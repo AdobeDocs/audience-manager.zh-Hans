@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!UICONTROL Bulk Management Tools]接受在[!DNL Audience Manager] UI中分配的[RBAC组权限](../../features/administration/administration-overview.md)。
+>[接受在](../../features/administration/administration-overview.md) UI中分配的[!DNL Audience Manager]RBAC组权限[!UICONTROL Bulk Management Tools]。
 
 <table id="table_2C2BC2FB3EFC443C9A5AE18EFC6FABFD"> 
  <thead> 
@@ -78,7 +78,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceKey</span> </p> </td> 
-   <td colname="col2"> <p>信号是根据用户活动传递到<span class="keyword">Audience Manager</span>的数据位。 这些键值对以<a href="../../reference/key-value-pairs-explained.md">键值对</a>的形式传输。 源密钥是一个不变的常量。 它有助于对可更改的源值进行分类。 查看<a href="../../features/derived-signals.md">派生的信号</a>。 </p> </td> 
+   <td colname="col2"> <p>信号是根据用户活动传递到<span class="keyword"> Audience Manager</span>的数据位。 这些键值对以<a href="../../reference/key-value-pairs-explained.md">键值对</a>的形式传输。 源密钥是一个不变的常量。 它有助于对可更改的源值进行分类。 查看<a href="../../features/derived-signals.md">派生的信号</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceValue</span> </p> </td> 
@@ -102,7 +102,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitRule / segmentRule</span> </p> </td> 
-   <td colname="col2"> <p>用于收集数据的实际特征或区段规则。 批量请求返回使用<a href="../../features/traits/about-trait-builder.md">特征规则生成器</a>或<a href="../../features/segments/segment-builder.md">区段规则生成器</a>在<span class="keyword">Audience Manager</span>中创建的规则。 您还可以使用这些工具来构建规则，并在更新区段或特征时批量应用这些规则。 </p> <p>另请参阅<a href="../../reference/bulk-management-tools/bulk-rules.md">创建或更新特征规则和区段规则</a>。 </p> </td> 
+   <td colname="col2"> <p>用于收集数据的实际特征或区段规则。 批量请求返回在<span class="keyword"> Audience Manager</span>中创建的规则，这些规则包含<a href="../../features/traits/about-trait-builder.md">特征规则生成器</a>或<a href="../../features/segments/segment-builder.md">区段规则生成器</a>。 您还可以使用这些工具来构建规则，并在更新区段或特征时批量应用这些规则。 </p> <p>另请参阅<a href="../../reference/bulk-management-tools/bulk-rules.md">创建或更新特征规则和区段规则</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term">特征类型</span> </p> </td> 
@@ -115,7 +115,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> url</span> </p> </td> 
-   <td colname="col2"> <p>用户符合区段资格时DIL触发的像素。 </p> </td> 
+   <td colname="col2"> <p>用户符合区段资格时由DIL触发的像素。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> valueAlias</span> </p> </td> 

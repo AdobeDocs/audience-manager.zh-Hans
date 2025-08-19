@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 派生信号的位置
 
-通过侧栏导航在&#x200B;**[!UICONTROL Tools > Derived Signals]**&#x200B;中创建和管理[!UICONTROL derived signals]。
+通过侧栏导航在[!UICONTROL derived signals]中创建和管理&#x200B;**[!UICONTROL Tools > Derived Signals]**。
 
 ## 创建派生信号 {#create}
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 要创建[!UICONTROL derived signal]，请执行以下操作：
 
-1. 从[!UICONTROL Tools]菜单中选择&#x200B;**[!UICONTROL Derived Signals]**。
+1. 从&#x200B;**[!UICONTROL Derived Signals]**&#x200B;菜单中选择[!UICONTROL Tools]。
 1. 提供：
    * *（可选）* [!UICONTROL Integration Code]
    * [!UICONTROL Source Key]

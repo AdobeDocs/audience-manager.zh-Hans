@@ -24,7 +24,7 @@ ht-degree: 6%
 
 >[!IMPORTANT]
 >
->已使用[!DNL Swagger]重写并迁移派生的信号[!DNL API]方法。 请参阅：
+>已使用[!DNL API]重写并迁移派生的信号[!DNL Swagger]方法。 请参阅：
 >
 >* [Adobe Audience Manager API文档](https://bank.demdex.com/portal/swagger/index.html)
 >* [Audience Manager API 代码迁移](../../api/api-swagger-migration.md)

@@ -17,12 +17,12 @@ ht-degree: 0%
 
 为此，请执行以下步骤：
 
-1. 请联系客户关怀团队并请求提供向Audience Manager发送文件的替代方法。
+1. 联系客户关怀团队并请求使用其他方法将文件发送到Audience Manager。
 2. 为客户关怀团队提供Amazon S3帐户中用于发送文件的角色的[!DNL Amazon Resource Name (ARN)]。 _必须先创建此角色，然后才能联系客户关怀团队_。 配置完成后，客户关怀团队将为您提供新创建角色的[!DNL Amazon Resource Name (ARN)]。
 3. 编辑现有Amazon S3角色的权限，承担由客户关怀团队提供的角色。
 
 >[!NOTE]
 >
->将入站数据传输到Audience ManagerAmazon S3存储段时，请确保使用`bucket-owner-full-control` [访问控制列表](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html)，以便Audience Manger正确处理数据。
+>将入站数据传输到Audience Manager Amazon S3存储段时，请确保使用`bucket-owner-full-control` [访问控制列表](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html)，以便Audience Manger正确处理数据。
 >
 >Amazon Web Services命令的示例： `aws s3 cp <user_s3_uri> <AAM_s3_uri> --acl bucket-owner-full-control`

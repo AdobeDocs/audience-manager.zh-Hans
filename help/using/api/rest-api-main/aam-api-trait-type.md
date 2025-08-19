@@ -24,7 +24,7 @@ ht-degree: 3%
 >
 >特征类型方法不会将特征分配给[通用分类](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)使用的类别。 请将其视为与通用分类法不同的标签。
 
-对于可视化引用，[!UICONTROL Trait Types]是位于&#x200B;**[!UICONTROL Traits > Create new trait > Basic Information]**&#x200B;下的[!DNL UI]中的下拉控件。
+对于可视化引用，[!UICONTROL Trait Types]是位于[!DNL UI]下的&#x200B;**[!UICONTROL Traits > Create new trait > Basic Information]**&#x200B;中的下拉控件。
 
 ## 创建新特征类型 {#create-trait-type}
 

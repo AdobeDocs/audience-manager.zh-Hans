@@ -1,5 +1,5 @@
 ---
-description: 使用Data Explorer从历史受众中获取利益，方法是根据已用和未使用的信号构建特征，并使用历史数据回填这些特征，以避免相关受众的潜在损失。
+description: 使用Data Explorer可以利用历史受众，方法是：根据已用和未使用的信号构建特征，然后使用历史数据回填这些特征，以避免相关受众的潜在损失。
 seo-description: Use Data Explorer to capitalize on historical audiences by building traits based on used and unused signals, and backfilling them with historical data to avoid potential loss of relevant audiences.
 seo-title: Overview, Benefits, and Use Cases
 title: 概述、优点和用例
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ### 示例 1
 
-一家全球电子产品零售商拥有大量访客流量，但转化率低于预期，尽管他们针对多个平台优化了内容。 他们使用[信号仪表板](../../features/data-explorer/data-explorer-signals-dashboard.md)识别大量未使用的信号，这表示访客正在搜索当前没有库存的特定电子品牌。 公司可以利用此洞察力，刷新其库存并使用个性化的促销活动定位这些访客。
+全球电子产品retailer具有大量访客流量，但转化率低于预期，尽管他们为多个平台优化了内容。 他们使用[信号仪表板](../../features/data-explorer/data-explorer-signals-dashboard.md)识别大量未使用的信号，这表示访客正在搜索当前没有库存的特定电子品牌。 该公司可以利用此insight，方法是刷新其库存并使用个性化的促销活动定位这些访客。
 
 ### 示例 2
 
@@ -47,6 +47,6 @@ ht-degree: 1%
 
 ### 使用Data Explorer验证已载入数据的特征创建
 
-Audience Manager最强大的功能之一是载入离线数据，并将其与在线数据关联起来。 在下面的视频中，了解如何使用[!UICONTROL Data Explorer]来验证您是否已创建所有必要的特征以利用此载入的数据。
+Audience Manager最强大的功能之一是能够载入离线数据，并将其与您的在线数据关联起来。 在下面的视频中，了解如何使用[!UICONTROL Data Explorer]来验证您是否已创建所有必要的特征以利用此载入的数据。
 
->[!VIDEO](https://video.tv.adobe.com/v/330347?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25149/)

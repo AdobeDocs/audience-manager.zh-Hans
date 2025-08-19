@@ -1,9 +1,9 @@
 ---
-description: 允许您以编程方式使用Data Integration Library(DIL)的方法。
+description: 允许您以编程方式使用Data Integration Library (DIL)的方法。
 seo-description: Methods that let you work programmatically with the Data Integration Library (DIL).
 seo-title: Data Integration Library API Methods
 solution: Audience Manager
-title: Data Integration LibraryAPI方法
+title: Data Integration Library API方法
 uuid: 507e7afd-3ae7-44de-98b0-589d699c453b
 feature: API
 exl-id: d2f3e4e8-65be-4fec-90d7-5991514b8efc
@@ -14,13 +14,13 @@ ht-degree: 3%
 
 ---
 
-# Data Integration LibraryAPI方法 {#data-integration-library-api-methods}
+# Data Integration Library API方法 {#data-integration-library-api-methods}
 
 允许您以编程方式使用[!UICONTROL Data Integration Library] ([!UICONTROL DIL])的方法。
 
 >[!IMPORTANT]
 >
->已弃用Data Integration LibraryAPI。 此API用于生成DIL，您现在可以在此处自行下载： [DIL下载](https://github.com/Adobe-Marketing-Cloud/dil/releases)。
+>Data Integration Library API已被弃用。 此API用于生成DIL，您现在可以在此处自行下载：[DIL下载](https://github.com/Adobe-Marketing-Cloud/dil/releases)。
 
 <!-- c_data_integr_library_api.xml -->
 
@@ -44,7 +44,7 @@ ht-degree: 3%
 
 ## 返回版本的JSON架构 {#return-json-schema-version}
 
-返回[!UICONTROL DIL]版本[!DNL JSON]架构的`GET`方法。 支持使用版本的别名[!UICONTROL LATEST]来获取最新版本的[!UICONTROL DIL]。
+返回`GET`版本[!DNL JSON]架构的[!UICONTROL DIL]方法。 支持使用版本的别名[!UICONTROL LATEST]来获取最新版本的[!UICONTROL DIL]。
 
 <!-- r_api_return_json_schema_for_version.xml -->
 
@@ -380,7 +380,7 @@ ht-degree: 3%
 
 ## 生成DIL {#generate-dil}
 
-使用指定版本的[!UICONTROL DIL]根据传入的请求正文生成[!UICONTROL DIL]的`GET`方法。 如果别名`LATEST`用于URL中的版本，则会生成最新版本的[!UICONTROL DIL]。
+使用指定版本的`GET`根据传入的请求正文生成[!UICONTROL DIL]的[!UICONTROL DIL]方法。 如果别名`LATEST`用于URL中的版本，则会生成最新版本的[!UICONTROL DIL]。
 
 <!-- r_api_generate_dil.xml -->
 

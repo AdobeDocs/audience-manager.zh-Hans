@@ -1,5 +1,5 @@
 ---
-description: 活动使用情况报表可帮助您查看和跟踪Audience Manager实例的活动使用情况，以便您可以将实际使用情况与合同承诺进行比较。
+description: 活动使用情况报告可帮助您查看和跟踪Audience Manager实例的活动使用情况，以便您可以将实际使用情况与合同承诺进行比较。
 keywords: 活动、使用情况、报表、承诺
 seo-description: Activity Usage Reporting helps you view and track the activity usage for your Audience Manager instance, so you can compare your actual usage to your contractual commitment.
 seo-title: Activity Usage Reporting
@@ -28,13 +28,13 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->[!UICONTROL Activity Usage Report]显示Audience Manager实例的活动使用情况统计数据。 有关与您的活动使用情况相关的任何计费查询，请联系您的Adobe代表。
+>[!UICONTROL Activity Usage Report]显示Audience Manager实例的活动使用情况统计数据。 有关您的活动使用情况的任何计费查询，请联系您的Adobe代表。
 
 ## 用例 {#use-cases}
 
 [!UICONTROL Activity Usage Report]有两个主要用例：
 
-* **根据活动使用情况承诺跟踪实际实例活动使用情况**：大多数客户具有每个Audience Manager实例的每月估计活动承诺，然后将其累计到所有实例的每年活动承诺中。 虽然此报表不是计费报表，但它可以就您是否超出承诺的活动使用情况提供有益的指导。
+* **根据活动使用承诺跟踪实际实例活动使用情况**：大多数客户具有每个Audience Manager实例的每月估计活动承诺使用量，然后累计到所有实例的年度活动承诺使用量。 虽然此报表不是计费报表，但它可以就您是否超出承诺的活动使用情况提供有益的指导。
 * **验证实施更改**：如果您最近更新了实施，例如设置[!DNL Adobe Analytics]服务器端转发或更改[!DNL Adobe Target]服务器调用设置，此报表可以帮助您检查新的活动卷是否与预期的活动卷一致。
 
 ## 使用[!UICONTROL Activity Usage Report] {#using}
@@ -47,16 +47,16 @@ ht-degree: 5%
 
 加载报告后，您可以看到选定时间段内[!UICONTROL Activities]的细分。
 
-[!UICONTROL Activities]定义与Audience Manager的所有现场和异地交互的总计，分为以下类别：
+[!UICONTROL Activities]定义与Audience Manager的所有现场和非现场交互的总计，分为以下类别：
 
-* **[!UICONTROL Server Calls]**：从网站、服务器、电子邮件、移动应用程序或其他系统发送给Audience Manager的任何数据收集或检索事件。
+* **[!UICONTROL Server Calls]**：从网站、服务器、电子邮件、移动应用程序或其他系统发送到Audience Manager的任何数据收集或检索事件。
 * **[!UICONTROL Pixel Calls]（以前称为[!UICONTROL Impression Server Calls]）**：从广告收集的数据（例如来自定位平台的展示数量）或向Audience Manager发出的电子邮件展示调用数。 查询字符串中必须存在`d_event`参数。
 * **[!UICONTROL On-Boarded Records]**：从您自己的客户关系管理系统(CRM)或其他离线数据文件中摄取的唯一记录，例如呼叫中心记录、设备ID和来自外部数据提供商的自定义数据馈送。
-* **[!UICONTROL Log File Records]**：从定位平台摄取到Audience Manager中的日志文件中的唯一记录。
+* **[!UICONTROL Log File Records]**：从定位平台摄取到Audience Manager的日志文件中的唯一记录。
 
 >[!NOTE]
 >
->唯一记录定义由Adobe代表Audience Manager客户存储的文件中的每一条数据记录。
+>唯一记录定义Adobe代表Audience Manager客户存储的文件中的每一条数据记录。
 
 此外，您可以使用[!UICONTROL Activity Usage Trends]图形类型在两个图形类型之间切换。
 
@@ -72,7 +72,7 @@ ht-degree: 5%
 
 ![aur-export](assets/aur-export.png)
 
-**[!UICONTROL Onboarded Records Breakdown]**&#x200B;和&#x200B;**[!UICONTROL Onsite Server Calls Breakdown]**&#x200B;报表提供了这些活动可用源数据的最精细见解。 归因到这些划分的量将基于您的实施。
+**[!UICONTROL Onboarded Records Breakdown]**&#x200B;和&#x200B;**[!UICONTROL Onsite Server Calls Breakdown]**&#x200B;报表提供了可用于这些活动的最细粒度insight源数据。 归因到这些划分的量将基于您的实施。
 
 ### [!UICONTROL Onboarded Records Breakdown] {#onboarded-breakdown}
 

@@ -17,7 +17,7 @@ ht-degree: 15%
 
 此页面列出了 Audience Manager 与数据合作伙伴之间的自定义集成。
 
-## oracleData Cloud {#oracle-data-cloud}
+## Oracle Data Cloud {#oracle-data-cloud}
 
 ### 描述
 
@@ -25,7 +25,7 @@ Audience Manager 通过入站数据文件从 Oracle Data Cloud for Audience Mark
 
 ### 集成详情
 
-从OracleData Cloud接收的入站数据文件不同于[Amazon S3入站数据文件的名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)中所述的标准入站文件名语法，也不同于[入站数据文件内容：语法、无效字符、变量和示例](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)中所述的标准入站文件内容语法。
+从Oracle Data Cloud接收的入站数据文件与[Amazon S3入站数据文件的名称和文件大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)中所述的标准入站文件名语法不同，也与[入站数据文件内容中所述的标准入站文件内容语法不同：语法、无效字符、变量和示例](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)。
 
 除了入站数据文件的标准实施字段之外，还需要以下高亮显示的元素。 有关所有其他标准字段和文件名元素的说明，请参阅上面链接的两个页面中的“文件名语法”和“文件内容语法”。
 
@@ -35,7 +35,7 @@ ODC文件名的结构如下：
 
 `ftp_dpm_`**`odc`**`_DPID[_DPID_TARGET_DATA_OWNER]_TIMESTAMP(.sync|.overwrite)[.SPLIT_NUMBER][.gz]`
 
-`odc`文件名元素将文件标识为从OracleData Cloud导入，并指示Audience Manager入站文件验证器按原样处理文件。
+`odc`文件名元素将文件标识为从Oracle Data Cloud导入，并指示Audience Manager入站文件验证器按原样处理文件。
 
 ### 文件内容
 

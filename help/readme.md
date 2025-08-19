@@ -40,9 +40,9 @@ ht-degree: 2%
    + seo-title - seo替代标题。
    + seo-description — 用于SEO的替代标题。
    + short-title — （可选字段）。
-   + index - yes / no — 页面是否会按Adobe的搜索平台编制索引。
+   + index - yes / no — 页面是否会被Adobe的搜索平台编入索引。
    + translate - yes / no — 此页面是否会进行本地化。
-   + version — 主要用于AEM和Campaign，表示产品的版本。
+   + 版本 — 主要用于AEM和Campaign，表示产品的版本。
    + private-feature-pack — 主要用于AEM。
    + beta — 此产品是否为测试版？
    + redirect — 必要时可用于为新页面创建引用。

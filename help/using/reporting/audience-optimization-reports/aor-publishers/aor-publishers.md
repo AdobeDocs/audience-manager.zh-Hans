@@ -3,7 +3,7 @@ description: Audience Optimization for Publishers 可以帮助您针对您所拥
 seo-description: Audience Optimization for Publishers can help you identify potential performance opportunities for Audience Manager segments on your owned and operated content. These reports combine log-level campaign performance data with Audience Manager metrics to inform audience optimizations and monetization opportunities.
 seo-title: Audience Optimization for Publishers
 solution: Audience Manager
-title: 发布者的Audience Optimization
+title: 适用于出版商的Audience Optimization
 uuid: 8425e237-ec52-4615-bb00-84ece4ebffe1
 feature: Audience Optimization Reports
 exl-id: 5972ea89-3e4d-48a5-bdd2-0a34211d8bfd
@@ -14,7 +14,7 @@ ht-degree: 19%
 
 ---
 
-# 发布者的Audience Optimization{#audience-optimization-for-publishers}
+# 适用于出版商的Audience Optimization{#audience-optimization-for-publishers}
 
 Audience Optimization for Publishers 可以帮助您针对您所拥有和运营的内容，确定 Audience Manager 区段的潜在效果机会。这些报表将日志级别的促销活动效果数据与Audience Manager量度相结合，以告知受众优化和盈利机会。
 

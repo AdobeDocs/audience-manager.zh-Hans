@@ -49,7 +49,7 @@ ht-degree: 1%
    <td colname="col1"> <p><code> <i>domain alias</i>.demdex.net</code> </p> </td> 
    <td colname="col2"> <p>此调用部分包含： </p> <p> 
      <ul id="ul_3EDA9C7BA6794D06BCB07A75A9BD2372"> 
-      <li id="li_74624CA78D6F4536A8164AE1FA1DECB9">您的域别名由<span class="keyword">Audience Manager</span>（如<i><code> my_domain.demdex.net</code></i>）分配。 </li> 
+      <li id="li_74624CA78D6F4536A8164AE1FA1DECB9">由<span class="keyword"> Audience Manager</span>分配的域别名（如<i><code> my_domain.demdex.net</code></i>）。 </li> 
       <li id="li_08ABE91CA247403AA480B3FB4BEF83BA">目标域，始终为<i><code> demdex.net</code></i>。 请参阅<a href="../../../reference/demdex-calls.md">了解对Demdex域</a>的调用。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -67,11 +67,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code>d_uuid= <i>Audience Manager user ID</i></code> </p> </td> 
-   <td colname="col2"> <p>这是唯一用户ID键，它在一个键值对中包含<span class="keyword">Audience Manager</span>用户ID值。 </p> <p>如果您传入<span class="keyword">用户</span>Audience ManagerID，请使用<code><i>d_uuid</i></code>。 </p> </td>
+   <td colname="col2"> <p>这是唯一用户ID键，它在一个键值对中包含<span class="keyword">个Audience Manager</span>用户ID值。 </p> <p>如果您传入<code><i>d_uuid</i></code> Audience Manager<span class="keyword">用户ID，请使用</span>。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p><code>d_mid=<i>Experience Cloud user ID</i></code> </p> </td> 
-   <td colname="col2"> <p>这是唯一用户ID键，它在一个键值对中包含<span class="keyword">Experience Cloud</span>用户ID值。 另请参阅<a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#get-user-ids-from-service-cookie">从ID服务Cookie</a>获取用户ID。 </p> <p>如果您传入的是从<span class="keyword">Experience Cloud</span> ID服务捕获的<span class="keyword">Experience Cloud</span> ID，请使用<i><code> d_mid</code></i>。 </p> </td> 
+   <td colname="col2"> <p>这是唯一用户ID键，它在一个键值对中包含<span class="keyword">个Experience Cloud</span>用户ID值。 另请参阅<a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#get-user-ids-from-service-cookie">从ID服务Cookie</a>获取用户ID。 </p> <p>如果您传入的是从<i><code> d_mid</code></i> Experience Cloud<span class="keyword"> ID服务捕获的</span> Experience Cloud<span class="keyword"> ID，请使用</span>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> 

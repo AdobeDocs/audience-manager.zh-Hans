@@ -1,5 +1,5 @@
 ---
-description: 数据馈送需要名称、描述、数据源和规划类型。 在保存并激活馈送之前，馈送处于禁用状态。 在“Audience Marketplace”>“我的共享数据”中设置公共或私有数据馈送。 仅适用于数据销售商。
+description: 数据馈送需要名称、描述、数据源和规划类型。 在保存并激活馈送之前，馈送处于禁用状态。 在Audience Marketplace >我的共享数据中设置公共或私有数据馈送。 仅适用于数据销售商。
 seo-description: A data feed requires a name, description, data source, and a plan type. Feeds are disabled until you save and activate the feed. Set up public or private data feeds in Audience Marketplace > My Shared Data. Available to data sellers only.
 seo-title: Create, Price, and Manage Data Feeds
 solution: Audience Manager
@@ -148,7 +148,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">度量单位</span></b> </td> 
-   <td colname="col2">按CPM费率或固定费用向数据购买者收费。 
+   <td colname="col2">向数据购买者收取CPM费率或固定费用。 
     <ul id="ul_D5F125E0F7364C568D9F3107E090059D"> 
      <li id="li_A79F47FFC1DC4B9DADC014621A9C12A1"> 使用CPM定价时，数据购买者需要自行报告使用情况。 </li> 
      <li id="li_DFED3194854A492F9DD0E7BA1A655E96">使用固定费用定价时，数据购买者不会报告使用情况，因为他们按固定费率收费。 </li> 
@@ -156,7 +156,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">价格</span></b> </td>
-   <td colname="col2"> 卖方向买方收取的CPM费率或固定费用价格（以美元计）金额。 </td>
+   <td colname="col2"> 卖方向买方收取的CPM费率或固定费用价格（以美元计）。 </td>
   </tr> 
  </tbody> 
 </table>

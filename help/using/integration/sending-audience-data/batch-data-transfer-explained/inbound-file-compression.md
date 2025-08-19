@@ -1,5 +1,5 @@
 ---
-description: 作为选项，您可以在将数据文件发送到Audience Manager时对其进行压缩。
+description: 作为一个选项，您可以在将数据文件发送到Audience Manager时对其进行压缩。
 seo-description: As an option, you can compress data files when sending them to Audience Manager.
 seo-title: File Compression for Inbound Data Transfer Files
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 入站数据传输文件的文件压缩{#file-compression-for-inbound-data-transfer-files}
 
-将数据文件发送到Audience Manager时，可以压缩这些文件。
+将数据文件发送到Audience Manager时，您可以对其进行压缩。
 
 <!-- inbound-file-compression.xml -->
 

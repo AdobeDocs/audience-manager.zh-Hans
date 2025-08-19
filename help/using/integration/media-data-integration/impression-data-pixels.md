@@ -10,7 +10,7 @@ exl-id: 04e6f1e5-5075-4221-a310-deb3717458ad
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 16%
+ht-degree: 14%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->文本样式（`monospaced text`、*斜体*、括号 `[ ]` `( )` 等）指示代码元素和选项。请参阅[代码和文本元素的样式约定](../../reference/code-style-elements.md)，以了解更多信息。
+>文本样式（`monospaced text`、*斜体*、括号`[ ]` `( )`等）表示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../reference/code-style-elements.md)，以了解更多信息。
 
 事件调用收集展示和转化数据，并将其发送到[!DNL Audience Manager] [数据收集服务器](/help/using/reference/system-components/components-data-collection.md) ([!DNL DCS])。 此过程依赖于第三方广告服务器，这些服务器将调用置于创意中，以控制插入到代码中的内容。第三方广告服务器（例如，[!DNL DFA]）可以将此代码置于每个广告展示中。而且，广告调用不会使用 [!DNL JavaScript] 或采用禁止 iframe 的嵌套技术来访问广告标记之外的发布者数据。
 
@@ -38,7 +38,7 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
 
 ## 支持的键值对 {#supported-key-value-pairs}
 
-印象事件调用接受构成键值对的数据。 下表列出并描述了用于保存这些变量的键。 如果您要捕获和分析[Audience Optimization报表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)中的数据，则需要进行许多此类操作。
+印象事件调用接受构成键值对的数据。 下表列出并描述了用于保存这些变量的键。 如果您要捕获和分析[Audience Optimization报表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)中的数据，则需要使用其中的许多项。
 
 <table id="table_F068C4D49F7D4775924D3CA712BF15BA"> 
  <thead> 
@@ -54,19 +54,19 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_adsrc </code> </td> 
-   <td colname="col2"> <p>广告商的数据源ID或集成代码。 </p> <p><span class="wintitle">Audience Optimization</span>报告需要。 </p> <p>可选。</p> </td> 
+   <td colname="col2"> <p>广告商的数据源ID或集成代码。 </p> <p><span class="wintitle">个Audience Optimization </span>报告需要。 </p> <p>可选。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_bu </code> </td> 
-   <td colname="col2"> <p>业务部门的数据源ID或集成代码。 </p> <p><span class="wintitle">Audience Optimization</span>报告需要。 </p> </td> 
+   <td colname="col2"> <p>业务部门的数据源ID或集成代码。 </p> <p><span class="wintitle">个Audience Optimization </span>报告需要。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bust </code> </p> </td> 
-   <td colname="col2"> <p>Cache-busting值。 <span class="keyword">Audience Manager</span>自动发送大多数浏览器和代理遵循的缓存控制标头。 如果要执行额外的缓存无效，请将此参数包含在事件调用中，后跟一个随机字符串。 </p> <p> 可选。 </p> </td> 
+   <td colname="col2"> <p>Cache-busting值。 <span class="keyword"> Audience Manager </span>自动发送大多数浏览器和代理遵循的缓存控制标头。 如果要执行额外的缓存无效，请将此参数包含在事件调用中，后跟一个随机字符串。 </p> <p> 可选。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_campaign </code> </td> 
-   <td colname="col2"> <p>广告服务器的数字营销活动ID。 </p> <p><span class="wintitle">Audience Optimization</span>报告需要。 </p> </td> 
+   <td colname="col2"> <p>广告服务器的数字营销活动ID。 </p> <p><span class="wintitle">个Audience Optimization </span>报告需要。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_cid </code> </td> 
@@ -78,7 +78,7 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_creative </code> </td> 
-   <td colname="col2"> <p>广告服务器上的数字创意ID。 </p> <p><span class="wintitle">Audience Optimization</span>报告需要。 </p> </td> 
+   <td colname="col2"> <p>广告服务器上的数字创意ID。 </p> <p><span class="wintitle">个Audience Optimization </span>报告需要。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_event=imp </code> </td> 
@@ -90,11 +90,11 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_site </code> </td> 
-   <td colname="col2"> <p>广告服务器上的数值网站ID。 </p> <p><span class="wintitle">Audience Optimization</span>报告需要。 </p> </td> 
+   <td colname="col2"> <p>广告服务器上的数值网站ID。 </p> <p><span class="wintitle">个Audience Optimization </span>报告需要。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_src </code> </td> 
-   <td colname="col2"> <p>提供元数据的平台的数据源ID或集成代码（例如DFA、Atlas、GBM、Media Math等）。 </p> <p><span class="wintitle">Audience Optimization</span>报告需要。 </p> </td> 
+   <td colname="col2"> <p>提供元数据的平台的数据源ID或集成代码（例如DFA、Atlas、GBM、Media Math等）。 </p> <p><span class="wintitle">个Audience Optimization </span>报告需要。 </p> </td> 
   </tr> 
    <tr> 
    <td colname="col1"> <code>gdpr</code>  </td> 

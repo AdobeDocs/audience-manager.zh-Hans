@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!UICONTROL Bulk Management Tools]接受在[!DNL Audience Manager] UI中分配的[RBAC组权限](../../features/administration/administration-overview.md)。
+>[接受在](../../features/administration/administration-overview.md) UI中分配的[!DNL Audience Manager]RBAC组权限[!UICONTROL Bulk Management Tools]。
 
 网络流量大、服务器使用率高和数据集大等因素可能会导致批量请求失败或超时。 如果出现问题，工作表将停止写入数据并显示错误消息。 发生这种情况时，您应：
 

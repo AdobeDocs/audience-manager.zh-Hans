@@ -85,7 +85,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p>实时区段人口 </p> </td> 
-   <td colname="col2"> <p>在指定时间范围内实时查看的实际独特访客数，以及在<span class="keyword">Audience Manager</span>查看这些访客时符合区段资格条件的访客数。 </p> </td> 
+   <td colname="col2"> <p>在指定时间范围内实时查看的实际独特访客数，以及在<span class="keyword"> Audience Manager</span>看到这些访客时符合区段资格条件的访客数。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

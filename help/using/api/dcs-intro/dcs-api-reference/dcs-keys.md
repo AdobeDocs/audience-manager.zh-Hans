@@ -37,7 +37,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_</code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword">Audience Manager</span>属性。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">个Audience Manager</span>属性。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> h_</code> </p> </td> 
@@ -45,7 +45,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> p_</code> </p> </td> 
-   <td colname="col2"> <p>私有、客户定义的属性。 </p> <p> 当密钥具有<code> p_</code>前缀时，DCS接受您自己的私有数据。 私有数据用于特征评估，但不会记录或存储在我们的系统中。 例如，假设您有一个定义为<code> customers = p_age&lt;25</code>的特征，并且在事件调用中传入<code> p_age=23</code>。 根据这些条件，符合基于年龄的资格标准的用户符合特征资格，但在<span class="keyword">Audience Manager</span>收到请求且未记录后，键值对将被删除。 </p> </td>
+   <td colname="col2"> <p>私有、客户定义的属性。 </p> <p> 当密钥具有<code> p_</code>前缀时，DCS接受您自己的私有数据。 私有数据用于特征评估，但不会记录或存储在我们的系统中。 例如，假设您有一个定义为<code> customers = p_age&lt;25</code>的特征，并且在事件调用中传入<code> p_age=23</code>。 根据这些条件，符合基于年龄的资格条件的用户符合特征资格，但在<span class="keyword"> Audience Manager</span>收到请求且未记录后，键值对将被删除。 </p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -72,7 +72,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_cid</code> </p> </td> 
-   <td colname="col2"> <p>包含由<span class="keyword">用户</span>分配的一个或多个数据提供程序ID (<code> DPID</code>)和数据提供程序Audience ManagerID (<code> DPUUID</code>)对。 如果您使用多对<code> DPID</code>和<code> DPUUID</code>，请用非打印字符<code> %01</code>分隔每对。 例如： <code><i>DPID</i>%01<i>DPUUUID</i></code>。 </p> <p><code> d_cid</code> 替换<code> d_dpid</code>和<code> d_dpuuid</code>，它们已被弃用，但仍受支持。 请参阅<a href="../../../reference/cid.md"> CID取代DPID和DPUUID</a>。 </p> </td>
+   <td colname="col2"> <p>包含由<code> DPID</code> Audience Manager<code> DPUUID</code>分配的一个或多个数据提供程序ID (<span class="keyword">)和数据提供程序用户ID (</span>)对。 如果您使用多对<code> DPID</code>和<code> DPUUID</code>，请用非打印字符<code> %01</code>分隔每对。 例如： <code><i>DPID</i>%01<i>DPUUUID</i></code>。 </p> <p><code> d_cid</code> 替换<code> d_dpid</code>和<code> d_dpuuid</code>，它们已被弃用，但仍受支持。 请参阅<a href="../../../reference/cid.md"> CID取代DPID和DPUUID</a>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cid_ic</code> </p> </td> 
@@ -80,7 +80,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>为了遵守儿童保护法规，禁止使用第三方Cookie。 此参数由AdobeAdobe Experience Platform Identity Service动态设置，依赖于<code> idSyncDisable3rdPartySyncing</code>配置。 请参阅Adobe Experience Platform Identity服务</a>中的<a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html?lang=zh-Hans" format="https" scope="external"> COPPA支持。 </p> </td>
+   <td colname="col2"> <p>为了遵守儿童保护法规，禁止使用第三方Cookie。 此参数由Adobe Adobe Experience Platform Identity Service动态设置，依赖于<code> idSyncDisable3rdPartySyncing</code>配置。 请参阅Adobe Experience Platform Identity服务<a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html" format="https" scope="external">中的</a> COPPA支持。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
@@ -90,14 +90,14 @@ ht-degree: 2%
       <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_cts=2</code> 返回区段的区段ID。 </p> </li>
      </ul> </p> <p>示例响应可能如下所示： </p> <p>
      <code class="syntax javascript">
-      &lbrace;
+      {
       &nbsp;&nbsp;&nbsp;&nbsp;"stuff":&nbsp;[],
       &nbsp;&nbsp;&nbsp;&nbsp;"uuid":&nbsp;"07955261652886032950143702505894272138",
       &nbsp;&nbsp;&nbsp;&nbsp;"dcs_region":&nbsp;7,
       &nbsp;&nbsp;&nbsp;&nbsp;"traits":&nbsp;[420020,&nbsp;5421506],
       &nbsp;&nbsp;&nbsp;&nbsp;"segments":&nbsp;[984263,&nbsp;985264],
       &nbsp;&nbsp;&nbsp;&nbsp;"tid":&nbsp;"ss3OTqPiQp0="
-      &rbrace;
+      }
      </code> </p> </td> 
   </tr> 
   <tr> 
@@ -114,7 +114,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_dst_filter</code> </p> </td> 
-   <td colname="col2"> <p><code> d_dst_filter</code> 是一个保留属性，用于Adobe Analytics与Audience Manager之间的集成。 </p> <p>我们建议不要创建使用保留属性的特征。 Adobe可以随时更改保留属性。 </p> </td> 
+   <td colname="col2"> <p><code> d_dst_filter</code> 是一个保留属性，用于Adobe Analytics和Audience Manager之间的集成。 </p> <p>我们建议不要创建使用保留属性的特征。 Adobe可以随时更改保留属性。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_jsonv=1|0</code> </p> </td> 
@@ -122,11 +122,11 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>指定<span class="keyword">Experience Cloud</span> ID服务所设置和使用的Experience CloudID。 有关ECID的详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hans" format="https" scope="external"> Cookie和Experience CloudIdentity服务</a>。 </p> </td> 
+   <td colname="col2"> <p>指定由<span class="keyword"> Experience Cloud</span> ID服务设置和使用的Experience Cloud ID。 有关ECID的详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Experience Cloud Identity服务</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
-   <td colname="col2"> <p>命名空间ID。 指示使用的JavaScript容器。 由<span class="wintitle">DIL</span>使用以进行ID同步。 </p> </td> 
+   <td colname="col2"> <p>命名空间ID。 指示使用的JavaScript容器。 由<span class="wintitle"> DIL</span>用于进行ID同步。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_ptfm </code> </p> </td> 
@@ -140,22 +140,22 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_rs</code> </p> </td> 
-   <td colname="col2"> <p>已弃用。<code> d_rs</code>是一个保留属性，用于<span class="keyword"> Adobe Analytics</span>和<span class="keyword">Audience Manager</span>之间的旧版集成。 </p> <p>我们建议不要创建使用保留属性的特征。 Adobe可以随时更改保留属性。 </p> </td> 
+   <td colname="col2"> <p>已弃用。<code> d_rs</code>是一个保留属性，用于<span class="keyword"> Adobe Analytics</span>和<span class="keyword"> Audience Manager</span>之间的旧版集成。 </p> <p>我们建议不要创建使用保留属性的特征。 Adobe可以随时更改保留属性。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_rtbd=json</code> </p> </td> 
-   <td colname="col2"> <p>如果您需要来自<span class="wintitle"> DCS</span>的<code> JSON</code>响应，则此为必填字段。 </p> <p> 
+   <td colname="col2"> <p>如果您需要来自<code> JSON</code> DCS<span class="wintitle">的</span>响应，则此为必填字段。 </p> <p> 
      <ul id="ul_9EA00BD822504BCA8ECB59C1634DB91A"> 
       <li id="li_7CB890F92C4A4C6AA8B4EE32E1AD4564">如果忽略此项，则<span class="wintitle"> DCS</span>在标题中返回一个像素。 </li> 
       <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">如果包括此项，则<span class="wintitle"> DCS</span>在响应正文中返回<code> JSON</code>对象。 请参阅以下示例。 您的响应可能比较复杂。 </li> 
      </ul> </p> <p> 
      <code class="syntax javascript">
-      &lbrace;
+      {
       &nbsp;&nbsp;&nbsp;&nbsp;"stuff":&nbsp;[],
       &nbsp;&nbsp;&nbsp;&nbsp;"uuid":&nbsp;"22920112968019678612904394744954398990",
       &nbsp;&nbsp;&nbsp;&nbsp;"dcs_region":&nbsp;7,
       &nbsp;&nbsp;&nbsp;&nbsp;"tid":&nbsp;"ss3OTqPiQp0="
-      &rbrace;
+      }
      </code> </p> </td> 
   </tr> 
   <tr> 
@@ -195,7 +195,7 @@ ht-degree: 2%
 
 | 属性 | 描述 |
 | --- | --- | 
-| `h_host` | 设置为客户端的特定数据收集主机名。 它显示为`host name .demdex.net`。 请参阅[了解 Demdex 域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hans)。 |
+| `h_host` | 设置为客户端的特定数据收集主机名。 它显示为`host name .demdex.net`。 请参阅[了解 Demdex 域调用](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)。 |
 | `h_user-agent` | 设置为`User-Agent`标头值。 |
 | `h_accept-language` | 设置为`Accept-Language`标头值。 |
 | `h_referer` | 设置为`Referer`标头值。 |

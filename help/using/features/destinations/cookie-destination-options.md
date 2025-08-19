@@ -1,5 +1,5 @@
 ---
-description: 在目标生成器中，配置部分包含“Cookie域”和“Publish数据收件人”字段。 利用这些功能，可创建规则以确定目标是设置Cookie还是返回Cookie。 Cookie域和Publish数据可相互独立工作且是可选的。 您可以创建Cookie目标，而无需使用任一目标。
+description: 在目标生成器中，配置部分包含Cookie域和将数据发布到字段。 利用这些功能，可创建规则以确定目标是设置Cookie还是返回Cookie。 Cookie域和发布数据可相互独立地工作且是可选的。 您可以创建Cookie目标，而无需使用任一目标。
 seo-description: In Destination Builder, the Configuration section contains the Cookie Domain and Publish Data To fields. These let you create rules to determine if a destination sets a cookie or returns a cookie. Cookie Domain and Publish Data To work independently of each other and are optional. You can create a cookie destination without using either of them.
 seo-title: Optional Settings for Cookie Destinations
 solution: Audience Manager
@@ -44,7 +44,7 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>示例</b> </p> </td> 
-   <td colname="col2"> <p>举个简单的例子，假设我们有一个名为sports.com的虚构网站。 Sports.com拥有高尔夫、棒球和足球的域名。 若要在所有运动域中设置Cookie，应在<span class="wintitle"> Cookie域</span>框中键入该值，如下所示： </p> <p> <img src="assets/sports-domain.png" id="image_8883477BB3B543648C97A441AD34C6DE" /> </p> <p>这会告知<span class="keyword">Audience Manager</span>在包含模式<code><i>something</i></code>.sports.com的任何域中设置Cookie。 有关更复杂的一组示例，请参阅下文。 </p> </td> 
+   <td colname="col2"> <p>举个简单的例子，假设我们有一个名为sports.com的虚构网站。 Sports.com拥有高尔夫、棒球和足球的域名。 若要在所有运动域中设置Cookie，应在<span class="wintitle"> Cookie域</span>框中键入该值，如下所示： </p> <p> <img src="assets/sports-domain.png" id="image_8883477BB3B543648C97A441AD34C6DE" /> </p> <p>这会告知<span class="keyword"> Audience Manager</span>在包含模式<code><i>something</i></code>.sports.com的任何域中设置Cookie。 有关更复杂的一组示例，请参阅下文。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -90,7 +90,7 @@ ht-degree: 4%
  </tbody> 
 </table>
 
-## Publish数据到 {#publish-data-to}
+## 将数据发布到 {#publish-data-to}
 
 如果域符合您选择的选项所设置的标准，则[!UICONTROL Publish Data To]设置将返回Cookie。 选项包括：
 

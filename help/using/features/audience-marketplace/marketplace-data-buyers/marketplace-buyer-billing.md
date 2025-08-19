@@ -1,5 +1,5 @@
 ---
-description: Audience Marketplace数据购买者同意报告使用数据馈送中包含的特征提供的所有广告展示次数，这些特征按每千广告展示次数(CPM)的成本定价。 CPM使用应在每个日历月的第5天到期，并包括上个月的数据。 固定费用订阅者无需报告使用情况。
+description: Audience Marketplace数据购买者同意报告使用数据馈送中包含的特征提供的所有广告展示次数，这些特征按每千广告展示次数(CPM)的成本定价。 CPM的使用截止日期是每个日历月的第5天，其中包括上个月的数据。 固定费用订阅者无需报告使用情况。
 seo-description: Audience Marketplace data buyers agree to report all ad impressions served using traits contained in the data feed priced on a cost per thousand ad impressions (CPM) basis. CPM usage is due on the 5th day of each calendar month and includes data for previous month. Flat fee subscribers do not need to report usage.
 seo-title: Billing for Data Feed Buyers
 solution: Audience Manager
@@ -29,16 +29,16 @@ Audience Marketplace数据购买者同意报告使用数据馈送中包含的特
 
 [!UICONTROL Audience Marketplace]提供两种报告[!DNL CPM]使用情况的方法：
 
-* **区段级别报表**：这是推荐的[!DNL CPM]使用情况报表方法。 当您在区段级别报告[!DNL CPM]的使用情况时，数据馈送级别的报告部分会自动根据[CPM数据馈送的成本归因](#cost-attribution)中描述的算法填入相应的使用金额。
-* **数据馈送级别报告**：此方法要求您根据[CPM数据馈送的成本归因](#cost-attribution)中描述的算法，分别报告每个数据馈送的[!DNL CPM]使用情况。 但是，与区段级别的报告相比，此方法更繁琐且容易出错。
+* **区段级别报表**：这是推荐的[!DNL CPM]使用情况报表方法。 当您在区段级别报告[!DNL CPM]的使用情况时，数据馈送级别的报告部分会自动根据[CPM数据馈送的成本归因](#cost-attribution)中描述的算法填入相应的使用量。
+* **数据馈送级别报告**：此方法要求您根据[!DNL CPM]CPM数据馈送的成本归因[中描述的算法，单独报告每个数据馈送的](#cost-attribution)使用情况。 但是，与区段级别的报告相比，此方法更繁琐且容易出错。
 
 <br> 
 
-## 报告区段级别的CPM使用情况 {#segment-level-report}
+## 报告CPM在区段级别的使用情况 {#segment-level-report}
 
 [!UICONTROL Segment Usage]选项卡允许您报告区段级别的使用情况，同时显示按区段所映射到的目标分组的区段。
 
-在报告区段级别的[!DNL CPM]使用情况后，[!UICONTROL Audience Marketplace]根据[CPM数据馈送的成本归因](#cost-attribution)，自动分配相应的数据馈送的正确使用情况。
+在报告区段级别的[!DNL CPM]使用情况后，[!UICONTROL Audience Marketplace]会根据CPM数据馈送的[成本归因](#cost-attribution)，自动分配相应的数据馈送的正确使用情况。
 
 要报告区段级别的[!DNL CPM]使用情况，请执行以下操作：
 
@@ -46,7 +46,7 @@ Audience Marketplace数据购买者同意报告使用数据馈送中包含的特
 1. 选择&#x200B;**[!UICONTROL Segment Usage]**&#x200B;选项卡。
 1. 填写区段的用法。 如果只需要报告某些区段的使用情况，则可以使用[!UICONTROL Search]框筛选区段。
 1. 单击 **[!UICONTROL Edit Segments Usage]**。
-1. 在[!UICONTROL Usage]列中输入[!DNL CPM]使用量。
+1. 在[!DNL CPM]列中输入[!UICONTROL Usage]使用量。
 1. 完成后，单击&#x200B;**[!UICONTROL Save]**&#x200B;并查看确认对话框。
 
    ![confirm-segment-usage](assets/confirm-segment-usage.png)
@@ -69,7 +69,7 @@ Audience Marketplace数据购买者同意报告使用数据馈送中包含的特
 2. 选择&#x200B;**[!UICONTROL Feed Usage]**&#x200B;选项卡。
 3. 使用[!UICONTROL Search]框筛选数据馈送，并确定需要报告使用情况的数据馈送。
 4. 单击 **[!UICONTROL Edit Feeds Usage]**。
-5. 根据CPM数据馈送的[成本归因](#cost-attribution)计算每个数据馈送的[!DNL CPM]使用情况，并在[!UICONTROL Usage]列中输入该使用情况。
+5. 根据CPM数据馈送的[!DNL CPM]成本归因[计算每个数据馈送的](#cost-attribution)使用情况，并在[!UICONTROL Usage]列中输入该值。
 6. 完成后，单击&#x200B;**[!UICONTROL Save]**&#x200B;并查看确认对话框。
 
    ![确认信息源使用情况](assets/confirm-feed-usage.png)
@@ -125,11 +125,11 @@ Audience Marketplace数据购买者同意报告使用数据馈送中包含的特
   <tr> 
    <td colname="col1"> <p><b>始终报告展示总数</b> </p> </td> 
    <td colname="col2"> <p>对于CPM展示总数： </p>
-   <p> 报告展示总数，但不使用小数。 Audience Manager会根据您报告的总数自动计算CPM。</p><p>如果您需要报告1,234,567次展示，请如实报告。 您无需将展示总数除以1,000即可计算CPM。</p><p>用于使用Adobe Target或Analytics目标等工具优化Web或应用程序内容（内容优化）的特征不会增加CPM计划的使用总数。 数据提供商通常使用固定费用计划获得内容优化的补偿。</p><p>有关详细信息，请参阅<a href="#cost-attribution">CPM数据馈送的成本归因</a>。 </p> </td>
+   <p> 报告展示总数，但不使用小数。 Audience Manager会根据您报告的总数自动计算CPM。</p><p>如果您需要报告1,234,567次展示，请如实报告。 您无需将展示总数除以1,000即可计算CPM。</p><p>用于使用Adobe Target或Analytics目标等工具优化Web或应用程序内容（内容优化）的特征不会增加CPM计划的总使用量。 数据提供商通常使用固定费用计划获得内容优化的补偿。</p><p>有关详细信息，请参阅<a href="#cost-attribution">CPM数据馈送的成本归因</a>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>坚持每月报告间隔</b> </p> </td> 
-   <td colname="col2"> <p>报表系统在每月5日后关闭。 如果到时您未能报告CPM使用情况，则必须将该数量添加到下个月的报表中。 例如，假设您在10月使用1000次展示，错过10月的报告截止日期，在11月使用1000次展示。 在本例中，您报告10月和11月总计（2000年）12月，即1日至5日之间。</p><p><b>提示</b>：您应始终尝试报告下个月第1天和第5天之间的上一个月CPM使用情况。</p><p>您最迟可以在新日历月的5日报告CPM使用情况，但不建议这样做。 在每月5号之前报告CPM使用情况，可为Audience Manager提供检查和处理数据的时间。</p> </td>
+   <td colname="col2"> <p>报表系统在每月5日后关闭。 如果到时未能报告CPM使用情况，则必须将该数量添加到下个月的报表中。 例如，假设您在10月使用1000次展示，错过10月的报告截止日期，在11月使用1000次展示。 在本例中，您报告10月和11月总计（2000年）12月，即1日至5日之间。</p><p><b>提示</b>：您应始终尝试在下个月的第1天和第5天之间报告上个月的CPM使用情况。</p><p>您最迟可以在新日历月5日报告CPM的使用情况，但不建议这样做。 在每月5号之前报告CPM使用情况，可让Audience Manager有时间检查和处理数据。</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -169,7 +169,7 @@ Audience Marketplace数据购买者同意报告使用数据馈送中包含的特
 当您[报告数据馈送级别](#feed-level-report)的CPM使用情况时，必须根据特征资格规则中使用的[!DNL Boolean]运算符，按比例为每个数据馈送分配展示次数。 下表列出了如何按布尔规则或特征类型正确分配展示。
 
 >[!TIP]
->[报告Audience Manager级别](#segment-level-report)的CPM使用情况，以便自动完成数据馈送级别报告。
+>[报告CPM在区段级别](#segment-level-report)的使用情况，以使Audience Manager自动完成数据馈送级别的报告。
 
 <table id="table_BF00FE6740D2459DAFA62F2478492586"> 
  <thead> 
@@ -270,6 +270,6 @@ Audience Marketplace数据购买者同意报告使用数据馈送中包含的特
 
 ## 固定费用数据馈送的计费和展示分配 {#billing-flat-fee}
 
-固定费用数据馈送每月向您收取固定金额，无论订阅何时开始或者您使用多少展示次数。 对于部分月份的使用或间隔，不会按比例分摊费用。 与CPM计费一样，Adobe将生成发票，并按您订阅的数据馈送的每月固定费率对您计费。
+固定费用数据馈送每月向您收取固定金额，无论订阅何时开始或者您使用多少展示次数。 对于部分月份的使用或间隔，不会按比例分摊费用。 与CPM计费一样，Adobe将为您订阅的数据馈送生成发票，并按每月固定费率对您计费。
 
 例如，假设您决定在月中打开某个信息源中的某些特征。 无论您何时开始订阅或激活了特定特征，仍会按每月完整费率向您计费。

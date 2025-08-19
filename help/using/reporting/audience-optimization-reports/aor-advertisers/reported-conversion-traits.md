@@ -22,7 +22,7 @@ ht-degree: 4%
 
 要了解如何在Audience Manager中创建转化特征，请观看以下视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/328026?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/23431/)
 
 ## 示例报告
 

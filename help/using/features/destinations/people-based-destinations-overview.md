@@ -1,5 +1,5 @@
 ---
-description: 使用基于人员的目标将第一方受众区段发送到基于人员的环境。 这些环境是属于一个实体的封闭生态系统，该实体控制其中显示的内容。 其中包括Facebook等社交平台，以及其他依赖客户帐户来个性化显示内容的平台。
+description: 使用基于人员的目标将第一方受众区段发送到基于人员的环境。 这些环境是属于一个实体的封闭生态系统，该实体控制其中显示的内容。 它们包括脸书等社交平台，以及其他依赖客户帐户来个性化显示内容的平台。
 seo-description: Use people-based destinations to send first-party audience segments to people-based environments. These environments are closed ecosystems belonging to one entity that controls the content that is being displayed within it. They include social platforms such as Facebook, and other platforms that rely on customer accounts to personalize the displayed content.
 seo-title: People-Based Destinations Overview and Use Cases
 solution: Audience Manager
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 ## 可用性 {#availability}
 
-[!DNL People-Based Destinations]是高级Audience Manager集成。 请联系您的Adobe代表以使用此高级功能。
+[!DNL People-Based Destinations]是一个高级Audience Manager集成。 请联系您的Adobe代表以使用此高级功能。
 
 ## 为何要使用[!UICONTROL People-Based Destinations] {#why-use}
 
-**通过在Audience Manager中管理整个受众区段，为客户提供一致的跨渠道体验。**
+**通过在Audience Manager中管理整个受众分段，为客户提供一致的跨渠道体验。**
 
 不通过Audience Manager在基于人员的渠道中激活您的受众区段，会导致您的客户在访问您的网站时看到的内容与他们在其[!DNL Facebook]源中看到的内容之间体验脱节。 跨渠道一致的定位可以增加广告收入，同时优化广告支出。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 **从纯脱机配置文件中创建和激活受众区段。**
 
-[!DNL People-Based Destinations]解决了以前只能根据设备活动激活受众区段的问题。 通过[!DNL People-Based Destinations]，您可以根据自己[!DNL CRM]的纯离线数据创建区段，并在基于人员的平台上激活它们。 此外，您还可以将离线数据与Audience Manager中已有的设备数据相关联。
+[!DNL People-Based Destinations]解决了以前只能根据设备活动激活受众区段的问题。 通过[!DNL People-Based Destinations]，您可以根据自己[!DNL CRM]的纯离线数据创建区段，并在基于人员的平台上激活它们。 此外，您可以将离线数据与Audience Manager中已存在的设备数据相关联。
 
 **利用Audience Manager的数据治理和隐私控制安全地处理客户数据。**
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 观看以下视频，了解使用[!UICONTROL People-Based Destinations]时的数据流概况。
 
->[!VIDEO](https://video.tv.adobe.com/v/31961?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28968/)
 
 ## 用例 {#use-cases}
 
@@ -71,12 +71,12 @@ ht-degree: 0%
 
 ### 用例#1 {#use-case-1}
 
-在线零售商希望通过社交平台与现有客户联系，并向他们显示基于先前订单的个性化优惠。 通过[!DNL People-Based Destinations]，在线零售商可以从自己的[!DNL CRM]中摄取经过哈希处理的电子邮件地址以进行Audience Manager，从自己的离线数据构建区段，并将这些区段发送到他们想要广告的社交平台，从而优化他们的广告支出。
+在线retailer希望通过社交平台与现有客户联系，并向他们显示基于先前订单的个性化优惠。 通过[!DNL People-Based Destinations]，在线retailer可以将经过哈希处理的电子邮件地址从自己的[!DNL CRM]摄取到Audience Manager，从自己的离线数据构建区段，并将这些区段发送到他们想要广告的社交平台，从而优化他们的广告支出。
 
 ### 用例#2 {#use-case-2}
 
-航空公司有不同的客户层（青铜、银牌和金牌），并希望通过社交平台为每个层提供个性化优惠。 该公司使用Audience Manager分析网站上的客户活动。 不过，并非所有客户都使用马航的移动应用，其中一些客户尚未登录该公司网站。 公司拥有的关于这些客户的唯一标识符是会员ID和电子邮件地址。
+航空公司有不同的客户层（青铜、银牌和金牌），并希望通过社交平台为每个层提供个性化优惠。 该公司使用Audience Manager来分析网站上的客户活动。 不过，并非所有客户都使用马航的移动应用，其中一些客户尚未登录该公司网站。 公司拥有的关于这些客户的唯一标识符是会员ID和电子邮件地址。
 
-要通过社交媒体和类似的基于人员的渠道定位他们，他们可以使用经过哈希处理的电子邮件地址作为标识符，将其[!DNL CRM]中的客户数据载入到Audience Manager中。
+要通过社交媒体和类似的基于人员的渠道定位他们，他们可以使用经过哈希处理的电子邮件地址作为标识符，将客户数据从其[!DNL CRM]载入Audience Manager。
 
 接下来，他们可以将其离线数据与现有的在线活动特征相结合，以构建可通过[!DNL People-Based Destinations]定位的新受众区段。

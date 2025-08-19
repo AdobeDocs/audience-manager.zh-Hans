@@ -30,7 +30,7 @@ t_bulk_estimates.xml
 
 >[!NOTE]
 >
->[!UICONTROL Bulk Management Tools]接受在[!DNL Audience Manager] UI中分配的[RBAC组权限](../../features/administration/administration-overview.md)。
+>[接受在](../../features/administration/administration-overview.md) UI中分配的[!DNL Audience Manager]RBAC组权限[!UICONTROL Bulk Management Tools]。
 
 要进行批量更新，请打开[!UICONTROL Bulk Management Tools]工作表并：
 

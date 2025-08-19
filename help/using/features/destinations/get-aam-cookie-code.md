@@ -1,5 +1,5 @@
 ---
-description: DART Enterprise（和其他目标类型）捕获Audience Manager唯一用户ID (UUID)值所需的代码。
+description: DART Enterprise（和其他目标类型）捕获Audience Manager独特用户ID (UUID)值所需的代码。
 seo-description: Code required by DART Enterprise (and other destination types) to capture the Audience Manager unique user ID (UUID) value.
 seo-title: get_aamCookie Code
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # `get_aamCookie`代码 {#get-aamcookie-code}
 
-[!DNL DART Enterprise] （和其他目标类型）捕获Audience Manager唯一用户ID ([!DNL UUID])值所需的代码。
+[!DNL DART Enterprise] （和其他目标类型）捕获Audience Manager独特用户ID ([!DNL UUID])值所需的代码。
 
 在页面顶部定义此函数，最好是在`<head>`代码块中。
 

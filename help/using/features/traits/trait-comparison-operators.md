@@ -51,7 +51,7 @@ ht-degree: 6%
 | **[!UICONTROL Matcheswords]** | 键值对&#x200B;*中的值与此运算符指定的模式匹配*。 |
 | **[!UICONTROL Startswith]** | 键值对&#x200B;*中的值以此运算符指定的*&#x200B;字符开头。 |
 | **[!UICONTROL Endswith]** | 键值对&#x200B;*中的值以*&#x200B;此运算符指定的字符结尾。 |
-| **[!UICONTROL Matchesregex]** | 键值对&#x200B;*中的值与*&#x200B;正则表达式指定的模式匹配。 [了解有关[!UICONTROL Trait Builder]中使用正则表达式的详细信息](../../features/traits/trait-builder-regex.md)。 |
+| **[!UICONTROL Matchesregex]** | 键值对&#x200B;*中的值与*&#x200B;正则表达式指定的模式匹配。 [了解有关](../../features/traits/trait-builder-regex.md)中使用正则表达式的详细信息[!UICONTROL Trait Builder]。 |
 
 >[!MORELIKETHIS]
 >

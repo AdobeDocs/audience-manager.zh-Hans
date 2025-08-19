@@ -74,7 +74,7 @@ CID和CID_IC键值对将取代DPID和DPUUID。 它们提供与DPID和DPUUID相�
   </tr> 
   <tr> 
    <td colname="col1"> <p>客户ID集成代码(CID_IC) </p> </td> 
-   <td colname="col2"> <p> <code>d_cid_ic=<i>integration code</i>%01<i>user ID</i></code> </p> <p> <span class="term">集成代码</span>是可以使用的替代ID，而不是<span class="keyword">Audience Manager</span>分配的数据Source ID。 如果需要配置集成代码，请参阅<a href="../features/manage-datasources.md#create-data-source">创建数据Source</a>。 </p> </td> 
+   <td colname="col2"> <p> <code>d_cid_ic=<i>integration code</i>%01<i>user ID</i></code> </p> <p> <span class="term">集成代码</span>是可以使用的替代ID，而不是由<span class="keyword"> Audience Manager</span>分配的数据Source ID。 如果需要配置集成代码，请参阅<a href="../features/manage-datasources.md#create-data-source">创建数据Source</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -117,7 +117,7 @@ CID和CID_IC键值对将取代DPID和DPUUID。 它们提供与DPID和DPUUID相�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>生成Audience ManagerUUID (ID) </p> </td> 
+   <td colname="col1"> <p>生成Audience Manager UUID (ID) </p> </td> 
    <td colname="col2"> 
     <ul id="ul_EAA764DCFF7244F69ABF67ACEE13E579"> 
      <li id="li_18467A531FAF454A881CBD157BBFD6D2">新建： <code> .../id?d_cid=123%01987...</code> </li> 

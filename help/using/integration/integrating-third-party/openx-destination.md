@@ -10,7 +10,7 @@ exl-id: 938a518b-c8b0-4e86-885f-daf79b2cba38
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '681'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 1%
 
 <!-- aam-openx-requirements.xml -->
 
-在将[!DNL OpenX]设置为Audience Manager目标之前，请查看以下各项：
+在将[!DNL OpenX]设置为Audience Manager目标之前，请查看以下内容：
 
 * **[!UICONTROL DIL]：** [!UICONTROL Data Integration Library]代码应部署在您的网站上。 [!UICONTROL DIL]有助于消除为数据收集、集成、读取Cookie值和恢复页面数据编写特殊代码的需要。
 * **`get_aamCookie`函数：**&#x200B;捕获Audience Manager用户ID和Cookie数据的代码。 将[此代码](../../features/destinations/get-aam-cookie-code.md)放在页面顶部或`<head>`代码块内。
-* **将投放日志发送到Audience Manager：**&#x200B;如果您需要区段投放报告（可选），请为Audience Manager提供包含展示级别投放数据的每日日志。 数据可以是原始格式，但每个记录都必须包含Audience Manager`UUID`。 Audience Manager可以通过[!DNL FTP]收取或接收这些邮件。
+* **将投放日志发送到Audience Manager：**&#x200B;如果您需要区段投放报告（可选），请为Audience Manager提供包含展示级别投放数据的每日日志。 数据可以是原始格式，但每个记录都必须包含Audience Manager `UUID`。 Audience Manager可以通过[!DNL FTP]收取或接收这些邮件。
 
 ### 键值数据：格式要求
 
@@ -53,14 +53,14 @@ Audience Manager以键值对的形式发送数据。 根据以下规范创建键
 
 <!-- aam-openx-destination.xml -->
 
-在Audience Manager中，*目标*&#x200B;是任何其他系统（广告服务器、[!DNL DSP]、广告网络等） 任何其他系统（广告服务器、DSP、广告网络等）。[!UICONTROL Destination Builder]提供了用于创建和管理这些数据传输流程的工具。 Audience Manager目标功能位于&#x200B;*受众数据>目标*&#x200B;中。 要开始操作，请单击&#x200B;**[!UICONTROL Add New Destination]**&#x200B;并按照以下步骤操作。
+在Audience Manager中，*目标*&#x200B;是要与其共享数据的任何其他系统（广告服务器、[!DNL DSP]、广告网络等）。 [!UICONTROL Destination Builder]提供了用于创建和管理这些数据传输流程的工具。 Audience Manager目标功能位于&#x200B;*受众数据>目标*&#x200B;中。 要开始操作，请单击&#x200B;**[!UICONTROL Add New Destination]**&#x200B;并按照以下步骤操作。
 
 ### 步骤1：基本信息
 
 要完成[!UICONTROL Basic Information]部分，请执行以下操作：
 
 1. 命名目标。
-1. 从[!UICONTROL Type]下拉列表中选择&#x200B;**[!UICONTROL "Cookie"]**。
+1. 从&#x200B;**[!UICONTROL "Cookie"]**&#x200B;下拉列表中选择[!UICONTROL Type]。
 1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;并转到[!UICONTROL Configuration]和[!UICONTROL Segment Mappings]部分。
 
 ### 步骤2：配置信息
@@ -92,7 +92,7 @@ Audience Manager以键值对的形式发送数据。 根据以下规范创建键
 要设置[!DNL OpenX]：
 
 * 在网站上安装[!UICONTROL DIL]代码。
-* 创建[!DNL OpenX]作为Audience Manager中的Cookie目标。
+* 在Audience Manager中创建[!DNL OpenX]作为Cookie目标。
 * 将`get_aamCookie`函数放在页面顶部，最好放在`<head>`代码块中。 `get_aamCookie`代码在[此处](../../features/destinations/get-aam-cookie-code.md)可用。
 * 修改广告标记以调用`get_aamCookie`函数，并包含您在设置[!DNL OpenX]目标时提供的Cookie名称。 例如，如果您为Cookie `test_cookie`命名，则广告标记应调用`get_aamCookie`并引用Cookie名称。
 * 您的广告标记可能与以下示例类似。

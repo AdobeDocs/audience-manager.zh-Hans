@@ -54,15 +54,15 @@ ht-degree: 1%
 
 * **[!UICONTROL Use as a Device Graph]**：此控件仅适用于列为数据提供程序的帐户。 选中此复选框会将您的数据源创建为设备图，并允许您与其他[!DNL Audience Manager]客户共享。 与您的[!DNL Audience Manager]顾问合作，将其设置为数据提供程序，并指定应将此[!UICONTROL Data Source]共享给哪些客户。 您的顾问将通过内部配置过程配置您的帐户和设备图共享。
 
-* **[!UICONTROL Data retention for inactive Customer IDs]**：此控件允许您为非活动客户ID设置数据保留期限。 这会决定Audience Manager将客户ID在Audience Manager平台上最后一次看到后，保留在我们的数据库中的时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们将所有月份都计为30天。 Audience Manager会根据您为非活动客户ID设置的数据保留时间，运行每周删除一次非活动客户ID的流程。
+* **[!UICONTROL Data retention for inactive Customer IDs]**：此控件允许您为非活动客户ID设置数据保留期限。 这会决定Audience Manager将客户ID在Audience Manager平台上最后一次看到后，保留在我们的数据库中的多长时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们将所有月份都计为30天。 Audience Manager会根据您为非活动客户ID设置的数据保留时间，运行每周删除一次非活动客户ID的流程。
 
-与这些设置关联的文本字段允许您使用在[配置文件合并规则选项](merge-rule-definitions.md)中显示的别名重命名[!UICONTROL Data Source]。 例如，如果您向&#x200B;**[!UICONTROL Use as Authenticated Profile]**&#x200B;添加别名，则该名称会显示在[!UICONTROL Authenticated Profile Options]列表中。 如果您向&#x200B;**[!UICONTROL Use as a Device Graph]**&#x200B;添加别名，则该名称会显示在[!UICONTROL Device Options]列表中。
+与这些设置关联的文本字段允许您使用在[!UICONTROL Data Source]配置文件合并规则选项[中显示的别名重命名](merge-rule-definitions.md)。 例如，如果您向&#x200B;**[!UICONTROL Use as Authenticated Profile]**&#x200B;添加别名，则该名称会显示在[!UICONTROL Authenticated Profile Options]列表中。 如果您向&#x200B;**[!UICONTROL Use as a Device Graph]**&#x200B;添加别名，则该名称会显示在[!UICONTROL Device Options]列表中。
 
 ## 创建配置文件合并规则 {#create-profile-merge-rule}
 
 要创建[!UICONTROL Profile Merge Rule]，请转到&#x200B;**[!UICONTROL Audience Data > Profile Merge Rules > Add New Rule]**&#x200B;并完成此处描述的每个部分的步骤。
 
-设置跨设备数据源后，您最多可以创建3个合并规则。 如果您注册[基于人员的目标](../destinations/people-based-destinations-overview.md)，则可以访问第4个配置文件合并规则([!UICONTROL All Cross-Device Profiles])。
+设置跨设备数据源后，您最多可以创建3个合并规则。 如果您注册[!UICONTROL All Cross-Device Profiles]基于人员的目标[，则可以访问第4个配置文件合并规则(](../destinations/people-based-destinations-overview.md))。
 
 创建、编辑或删除规则需要管理员权限。 所有用户都可以查看和使用现有[!UICONTROL Profile Merge Rules]。
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 1. 为[!UICONTROL Profile Merge Rule]命名。
 2. *（可选）*&#x200B;描述[!UICONTROL Profile Merge Rule]。 简洁的描述可帮助您定义规则的角色或用途。
-3. *（可选）*&#x200B;如果要使其成为默认[!UICONTROL Profile Merge Rule]，请选择&#x200B;**[!UICONTROL Set as default]**。 新区段会自动与默认规则关联。
+3. *（可选）*&#x200B;如果要使其成为默认&#x200B;**[!UICONTROL Set as default]**，请选择[!UICONTROL Profile Merge Rule]。 新区段会自动与默认规则关联。
 
 ## 数据导出控制 {#data-export-controls}
 
@@ -105,7 +105,7 @@ ht-degree: 1%
 
 2019年末，我们发布了一系列配置文件合并规则增强功能，以提高使用跨设备ID生成的批处理文件的准确性。 从2020年3月16日星期一开始，您的Audience Manager实例将严格遵循这些增强功能。 因此，使用跨设备ID映射到目标的区段将停止在某些配置文件合并规则配置中生成导出。
 
-要确保使用跨设备ID(如Adobe Campaign)的Audience Manager实例和目标之间正确集成，请确保您满足以下要求：
+要确保使用跨设备ID(如Adobe Campaign)在Audience Manager实例和目标之间正确集成，请确保您满足以下要求：
 
 1. 查看映射到您的Adobe Campaign Declared ID目标的区段所使用的配置文件合并规则。 配置文件合并规则必须使用[!UICONTROL Last Authenticated Profile]选项，以便所有经过身份验证的配置文件都可以包含在导出中。 如果您的配置文件合并规则使用其他选项，请将其切换到[!UICONTROL Last Authenticated Profile]。
 2. 在配置文件合并规则设置中选择Adobe Campaign Declared ID数据源。
@@ -126,7 +126,7 @@ ht-degree: 1%
 
 ## 对于Adobe Experience Platform Identity服务客户 {#id-service-customers}
 
-在使用[!UICONTROL Profile Merge Rules]时，建议使用[!UICONTROL Adobe Experience Platform Identity Service]和最新版本的[DIL](../../dil/dil-overview.md)。 但是，您不必使用[!UICONTROL Adobe Experience Platform Identity Service]即可使用此功能。 如果您只使用[!UICONTROL DIL]，请参阅下面的[旧版DIL部分](#legacy-dil)。
+在使用[!UICONTROL Adobe Experience Platform Identity Service]时，建议使用[和最新版本的](../../dil/dil-overview.md)DIL[!UICONTROL Profile Merge Rules]。 但是，您不必使用[!UICONTROL Adobe Experience Platform Identity Service]即可使用此功能。 如果您只使用[!UICONTROL DIL]，请参阅下面的[旧版DIL部分](#legacy-dil)。
 
 ### 配置Set Customer ID函数
 
@@ -150,11 +150,11 @@ visitor.setCustomerIDs({
      "authState":Visitor.AuthState.AUTHENTICATED
 ```
 
-有关详细信息，请参阅[创建跨设备数据Source](#create-data-source)和[客户ID和身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hans)。
+有关详细信息，请参阅[创建跨设备数据Source](#create-data-source)和[客户ID和身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)。
 
 ### 配置`DIL.create`函数
 
-最新版本的[!UICONTROL DIL]现在自动从`DIL.create`中的`visitorService`函数提取[!UICONTROL declared ID]（请参阅[声明的ID变量](../declared-ids.md#declared-id-variables)）。 检查您的`DIL.create`函数，确保正确设置此函数，如下面的代码示例所示。
+最新版本的[!UICONTROL DIL]现在自动从[!UICONTROL declared ID]中的`visitorService`函数提取`DIL.create`（请参阅[声明的ID变量](../declared-ids.md#declared-id-variables)）。 检查您的`DIL.create`函数，确保正确设置此函数，如下面的代码示例所示。
 
 ```js
 var vDil = DIL.create({
@@ -165,7 +165,7 @@ var vDil = DIL.create({
 });
 ```
 
-在命名空间键值对中，`*`MCORG`*`变量是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，则可以在[!DNL Experience Cloud]仪表板的[!UICONTROL Administration]部分中找到它。 您需要管理员权限才能查看此仪表板。 请参阅[管理：核心服务](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans)。
+在命名空间键值对中，`*`MCORG`*`变量是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，则可以在[!UICONTROL Administration]仪表板的[!DNL Experience Cloud]部分中找到它。 您需要管理员权限才能查看此仪表板。 请参阅[管理：核心服务](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
 ### 配置SDK
 
@@ -185,11 +185,11 @@ DIL.create({
 });
 ```
 
-有关详细信息，请参阅[声明的ID变量](../declared-ids.md#declared-id-variables)中的旧版[!UICONTROL DIL]部分。
+有关详细信息，请参阅[!UICONTROL DIL]声明的ID变量[中的旧版](../declared-ids.md#declared-id-variables)部分。
 
 ### 配置SDK {#configure-sdks-legacy-dil}
 
-检查您的[!DNL SDK]代码中允许您从[!DNL Android]和[!DNL iOS]移动设备传递[!UICONTROL declared IDs]的方法。 [!DNL Android]和[!DNL iOS]代码库的变量名称相同：
+检查您的[!DNL SDK]代码中允许您从[!UICONTROL declared IDs]和[!DNL Android]移动设备传递[!DNL iOS]的方法。 [!DNL Android]和[!DNL iOS]代码库的变量名称相同：
 
 * `dpid`：跨设备数据源标识。
 * `dpuuid`： [!UICONTROL declared ID]（即用户ID）。
@@ -215,15 +215,15 @@ DIL.create({
     </code></p>
     <p> <b>示例：</b> </p><p>
     <code class="javascript">
-      &lbrack;ADBMobile&nbsp;audienceSetDpid:@"290"
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:@"99301393923940"&rbrack;;
+      [ADBMobile&nbsp;audienceSetDpid:@"290"
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:@"99301393923940"];
     </code></p>
     </td>
   </tr>
  </tbody>
 </table>
 
-另请参阅[Android的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html?lang=zh-Hans)和[iOS的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html?lang=zh-Hans)。
+另请参阅[适用于Android的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html)和[适用于iOS的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html)。
 
 >[!MORELIKETHIS]
 >

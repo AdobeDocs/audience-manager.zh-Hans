@@ -36,7 +36,7 @@ ht-degree: 0%
 
 目前，本指南介绍如何：
 
-* 从可能已作为[!DNL Audience Manager]客户收到的[!DNL DCS]文件中获取用户和区域ID。
+* 从可能已作为[!DNL DCS]客户收到的[!DNL Audience Manager]文件中获取用户和区域ID。
 
 * 如果您使用[!DNL Visitor ID Service]，则获取用户和区域ID。
 * 在拥有用户和区域ID后调用[!DNL DCS]。
@@ -44,7 +44,7 @@ ht-degree: 0%
 我们将添加新方法，使它们可用。 请参阅以下部分以开始使用。
 
 * [从DCS响应中获取用户ID和区域](dcs-aam-ids.md)
-* [通过Experience CloudID获取用户ID和区域……](dcs-mcid-ids.md)
+* [通过Experience Cloud ID获取用户ID和区域……](dcs-mcid-ids.md)
 * [进行服务器到服务器DCS API调用](dcs-s2s-calls.md)
 
 >[!MORELIKETHIS]

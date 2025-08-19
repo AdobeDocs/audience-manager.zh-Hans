@@ -39,7 +39,7 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol">数据提供程序PID</span></b> </p> </td> 
-   <td colname="col2"> <p>您的<span class="keyword">Audience Manager</span>数据提供程序ID。 </p> </td> 
+   <td colname="col2"> <p>您的<span class="keyword"> Audience Manager</span>数据提供程序ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol">数据提供程序名称</span></b> </p> </td> 
@@ -68,7 +68,7 @@ ht-degree: 1%
      <li id="li_3400C6475F6D43D7AF54D9A0ED9C09E0">区段和重叠 </li> 
      <li id="li_65DFEF1EA6C341ACB5B72FF629F10AFC">建模 </li> 
      <li id="li_B84935B93ADE4D299732CE7E099DF7B3">激活 </li> 
-    </ul> <p>查看数据馈送</a>的<a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#plan-types">规划类型。 </p> </td> 
+    </ul> <p>查看数据馈送<a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#plan-types">的</a>规划类型。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol">度量单位</span></b> </p> </td> 
@@ -80,19 +80,19 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol">折扣价</span></b> </p> </td> 
-   <td colname="col2"> <p>折价数据馈送的订阅费。 查看数据提供商</a>的<a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#discounts">折扣。 </p> </td> 
+   <td colname="col2"> <p>折价数据馈送的订阅费。 查看数据提供商<a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#discounts">的</a>折扣。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol">个单位</span></b> </p> </td> 
    <td colname="col2"> <p>因信息源价格类型而异： </p> 
     <ul id="ul_01550B436EEE4FBC8C9945E08E3CE2C6"> 
      <li id="li_C589F6A751AB407E853AC6F726A47F14">固定费用数据馈送：仅返回1。 </li> 
-     <li id="li_F93F8AEB2D8C45BFA0305E7808AFF848">CPM数据馈送：返回CPM数据馈送的实际使用量。 如果订户没有为CPM馈送提供印象数据，则单元单元单元是空的，并且标志单元被设置为1。 </li> 
+     <li id="li_F93F8AEB2D8C45BFA0305E7808AFF848">CPM数据馈送：返回CPM数据馈送的实际使用量。 如果订户没有为CPM馈送提供印象数据，则单元单元单元为空且标志单元设置为1。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>总成本<b><span class="uicontrol"></span></b> </p> </td> 
-   <td colname="col2"> <p>金额<span class="keyword">Audience Manager</span>为买方开单。 </p> </td> 
+   <td colname="col2"> <p>金额<span class="keyword">Audience Manager</span>为购买者付费。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol">记帐期间</span></b> </p> </td> 
@@ -114,8 +114,8 @@ ht-degree: 1%
    <td colname="col1"> <p><b><span class="uicontrol">标志</span></b> </p> </td> 
    <td colname="col2"> <p> <i>仅适用于CPM馈送</i>。 标记选项包括： </p> 
     <ul id="ul_509BC73B754A43299F8D719AB0805ABD"> 
-     <li id="li_AB35E33B68EC49A187495DF6B9D86563">0：表示订阅者向<span class="keyword">Audience Manager</span>报告使用信息。 </li> 
-     <li id="li_2E4871B127A84EC586A9F3659F52D67E">1：表示订阅者尚未向<span class="keyword">Audience Manager</span>报告使用情况信息。 </li> 
+     <li id="li_AB35E33B68EC49A187495DF6B9D86563">0：表示订阅者已向<span class="keyword"> Audience Manager</span>报告使用信息。 </li> 
+     <li id="li_2E4871B127A84EC586A9F3659F52D67E">1：表示订阅者尚未向<span class="keyword"> Audience Manager</span>报告使用情况信息。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -123,6 +123,6 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
->* [CPM数据馈送的计费和展示次数分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
+>* 为CPM数据馈送分配[帐单和展示](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
 >* [固定费用数据馈送的计费和展示分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
 >* [如何报告CPM使用情况](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#report-cpm-usage)

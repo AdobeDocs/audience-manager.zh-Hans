@@ -28,7 +28,7 @@ ht-degree: 6%
 
 ## 转换后不定位 {#do-not-target-once}
 
-确保您已进行转化（购买了产品、购买了订阅等）的用户 不会看到与转换前相同的消息传递。 您可以使用[!UICONTROL AND NOT]逻辑获取此项，如下所示。
+确保已转换的用户（已购买产品、已获得订阅等）不会看到与转换前相同的消息。 您可以使用[!UICONTROL AND NOT]逻辑获取此项，如下所示。
 
 1. 使用两个特征创建一个区段，并使用[!UICONTROL AND NOT]逻辑，如下图所示。 您必须使用基于规则的特征来定义要实时触发的取消分段的转化事件。 详细了解如何[创建基于规则的特征](../traits/create-onboarded-rule-based-traits.md)。
 2. 将区段映射到任意数量的实时服务器到服务器目标。 阅读有关如何将区段添加到[服务器到服务器目标](../destinations/add-edit-segments.md)的信息。
@@ -59,7 +59,7 @@ ht-degree: 6%
 * 要使实时取消分段功能正常工作，必须将所需的分段映射到实时服务器到服务器目标。
 * 对于通过[设备图](profile-link-use-case.md#recommendations)连接到设备的设备，我们强制实施有关评估和取消分段的4个设备限制。 [设备图选项和设备取消分段](merge-rule-unsegment.md#device-graph-options-unsegmentation)中介绍了此限制&#x200B;。
 * 对于通过设备图连接的多个设备， unsegment命令将包含在批处理文件中，每24小时发送到目标一次。
-* 必须实时查看该设备(在[Edge](../../reference/system-components/components-edge.md)上)才能实时提示区段评估。 对于在符合特征[!DNL TTL]时具有[!UICONTROL time-to-live (TTL)]的特征，设备将通过批处理文件在24小时内自动取消分段&#x200B;。 阅读有关如何[设置特征过期时间间隔](../traits/create-onboarded-rule-based-traits.md#set-expiration-interval)的详细信息。
+* 必须实时查看该设备(在[Edge](../../reference/system-components/components-edge.md)上)才能实时提示区段评估。 对于在符合特征[!UICONTROL time-to-live (TTL)]时具有[!DNL TTL]的特征，设备将通过批处理文件在24小时内自动取消分段&#x200B;。 阅读有关如何[设置特征过期时间间隔](../traits/create-onboarded-rule-based-traits.md#set-expiration-interval)的详细信息。
 * 如果您实时使用[!UICONTROL DCS API]来板载基于规则的特征，则可以使用[!UICONTROL AND NOT]逻辑触发取消分段。 了解有关[将数据发送到DCS API](../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)的更多信息。&#x200B;
 
 ## 需要注意的重要方面 — 计时 {#timing-notes}

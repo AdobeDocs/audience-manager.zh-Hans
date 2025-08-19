@@ -74,12 +74,12 @@ ht-degree: 59%
 
  
 
-**如何更改[!UICONTROL Predictive Audiences] [!UICONTROL segment]的[!UICONTROL Profile Merge Rule]？**
+**如何更改[!UICONTROL Profile Merge Rule] [!UICONTROL Predictive Audiences]的[!UICONTROL segment]？**
 
 通过选择与上一个模型相同的角色和目标受众来创建新模型。 在创建模型期间，分配其他[!UICONTROL Profile Merge Rule]。
 
 >[!WARNING]
-> 或者，您可以使用[区段生成器](../features/segments/segment-builder.md)手动创建具有现有预测[!UICONTROL trait]的[!UICONTROL segment]，并为其分配您选择的[!UICONTROL Profile Merge Rule]。
+> 或者，您可以使用[区段生成器](../features/segments/segment-builder.md)手动创建具有现有预测[!UICONTROL segment]的[!UICONTROL trait]，并为其分配您选择的[!UICONTROL Profile Merge Rule]。
 > 
 > 但是，我们不建议使用此做法，因为预测[!UICONTROL traits]会自动继承其所属模型的[!UICONTROL Profile Merge Rule]，并且这些模型是从具有影响力的[!UICONTROL traits]生成的，符合模型的[!UICONTROL Profile Merge Rule]。
 
@@ -89,7 +89,7 @@ ht-degree: 59%
 
 在为模型选择[!UICONTROL Profile Merge Rule]时，请仔细分析您的用例。
 
-假设您的目标受众[!UICONTROL segment]使用基于已验证配置文件的[!UICONTROL Profile Merge Rule] + [!DNL Device Graph]配置文件，并且您为预测[!UICONTROL segments]选择相同的[!UICONTROL Profile Merge Rule]。 在这种情况下，设备级别和跨设备级别[!UICONTROL traits]将用于训练模型和将用户放入预测型[!UICONTROL segment]中。
+假设您的目标受众[!UICONTROL segment]使用基于已验证配置文件的[!UICONTROL Profile Merge Rule] + [!DNL Device Graph]配置文件，并且您为预测[!UICONTROL Profile Merge Rule]选择相同的[!UICONTROL segments]。 在这种情况下，设备级别和跨设备级别[!UICONTROL traits]将用于训练模型和将用户放入预测型[!UICONTROL segment]中。
 
 但是，如果您仅基于设备配置文件选择[!UICONTROL Profile Merge Rule]，则您的跨设备[!UICONTROL traits]都不会变得有影响力，并且不会有助于将用户放置到预测的[!UICONTROL segment]中。 这可能会不利地影响模型的精度和范围。
 

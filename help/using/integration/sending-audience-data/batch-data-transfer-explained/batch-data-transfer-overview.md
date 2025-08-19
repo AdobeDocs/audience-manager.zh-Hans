@@ -1,5 +1,5 @@
 ---
-description: 面向希望将其他系统（离线）中的数据导入Audience Manager的技术和非技术客户的概述。
+description: 面向希望将其他系统（离线）中的数据导入Audience Manager的技术客户和非技术客户的概述。
 keywords: 入站、批处理、批量上传、批量数据
 seo-description: An overview for technical and non-technical customers who want to bring data from other systems (offline) into Audience Manager. To do so, use the batch upload option in Audience Manager.
 seo-title: Send Batch Data to Audience Manager Overview

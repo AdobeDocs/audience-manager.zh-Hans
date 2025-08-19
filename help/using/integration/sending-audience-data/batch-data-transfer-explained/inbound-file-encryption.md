@@ -1,5 +1,5 @@
 ---
-description: 作为一个选项，您可以在将数据文件发送到Audience Manager时对其进行加密，这使用PGP加密。
+description: 作为选项，您可以在将数据文件发送到Audience Manager时对其进行了PGP加密。
 seo-description: As an option, you can encrypt data files with PGP encryption when sending them to Audience Manager.
 seo-title: File PGP Encryption for Inbound Data Types
 solution: Audience Manager
@@ -16,15 +16,15 @@ ht-degree: 0%
 
 # 入站数据类型的文件PGP加密{#file-pgp-encryption-for-inbound-data-types}
 
-在将数据文件发送到Audience Manager时，您可以使用[!DNL PGP]加密来加密数据文件。
+将数据文件发送到Audience Manager时，您可以使用[!DNL PGP]加密来加密这些文件。
 
 <!-- c_encryption.xml -->
 
 >[!IMPORTANT]
 >
->[!DNL PGP]加密包含文件压缩。 发送[!DNL PGP]加密入站文件时，请确保不使用gzip (`.gz`)压缩[它们](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)。
+>[!DNL PGP]加密包含文件压缩。 发送[!DNL PGP]加密入站文件时，请确保不使用gzip ([)压缩](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)它们`.gz`。
 >
->[!DNL PGP]加密的入站文件（也是[压缩的](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)）在Audience Manager中无效。
+>在Audience Manager中，[!DNL PGP]也已[压缩](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)的加密入站文件无效。
 
 按照下面列出的步骤加密入站数据文件。
 
@@ -55,4 +55,4 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Audience Manager仅支持[!DNL Advanced Encryption Standard (AES)]数据加密算法。 Audience Manager支持任何键大小。
+   >Audience Manager仅支持[!DNL Advanced Encryption Standard (AES)]数据加密算法。 Audience Manager支持任意密钥大小。

@@ -28,7 +28,7 @@ ht-degree: 0%
 | 特征类型 | 资格标准 |
 |---|---|
 | 基于规则的特征 | 特征资格鉴定是实时进行的，因为用户在其浏览器中符合某个特征的资格。 在您[在UI中创建特征](create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits)后，您的用户大约需要4小时才能开始符合基于规则的特征的资格。 基于规则的特征允许您使用[回访间隔和频度](../segments/recency-and-frequency.md)控件进行广告频度上限和其他用例。 |
-| 已载入的特征 | 特征鉴定会在处理集客文件后进行，即集客文件是[导入到Audience Manager](../../faq/faq-inbound-data-ingestion.md)中，此时将进行特征鉴定。 您应在创建已载入特征后等待约4小时，然后再上传入站文件以进行处理。 对于已载入的特征，用户配置文件的最大资格数为1。 |
+| 已载入的特征 | 特征鉴定会在处理集客文件后进行，即集客文件是[导入到Audience Manager](../../faq/faq-inbound-data-ingestion.md)的，此时将进行特征鉴定。 您应在创建已载入特征后等待约4小时，然后再上传入站文件以进行处理。 对于已载入的特征，用户配置文件的最大资格数为1。 |
 | 算法特征 | 对于算法特征，用户配置文件的最大资格数为1。 |
 | 文件夹特征 | 文件夹特征可总结其包含的特征的特质资格。 有关详细信息，请阅读[文件夹特征：关于](about-folder-traits.md)。 |
 | 活动受众特征和数据Source同步特征 | [!UICONTROL Active Audience]特征包含Audience Manager帐户中管理的所有设备。 [!UICONTROL Data Source Synced Traits]跟踪与数据源关联的所有用户。 了解有关[活动受众特征和Source同步特征的数据](client-activity-synced-audience-traits.md)的更多信息。 |
@@ -73,4 +73,4 @@ ht-degree: 0%
 
 ## 特征资格限制 {#trait-qualification-limit}
 
-我们为每个用户配置文件强制实施150,000个特征资格限制，无论它是经过身份验证的配置文件([DPUUID](../../reference/ids-in-aam.md))还是设备ID ([UUID](../../reference/ids-in-aam.md))。 请注意，虽然DPUUID对于[!DNL Audience Manager]的特定实例是唯一的，但UUID在[!DNL Audience Manager]平台之间共享。 对于[!UICONTROL UUID]，我们在存储特征资格时强制实施公平原则。 算法可确保[!DNL Audience Manager]的每个实例均可以共享[!UICONTROL UUID]配置文件。
+我们为每个用户配置文件强制实施150,000个特征资格限制，无论它是经过身份验证的配置文件([DPUUID](../../reference/ids-in-aam.md))还是设备ID ([UUID](../../reference/ids-in-aam.md))。 请注意，虽然DPUUID对于[!DNL Audience Manager]的特定实例是唯一的，但UUID在[!DNL Audience Manager]平台之间共享。 对于[!UICONTROL UUID]，我们在存储特征资格时强制实施公平原则。 算法可确保[!UICONTROL UUID]的每个实例均可以共享[!DNL Audience Manager]配置文件。

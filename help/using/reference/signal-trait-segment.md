@@ -26,8 +26,8 @@ ht-degree: 21%
 | 元素 | 包含 | 示例 |
 |---|---|---|
 | [!UICONTROL Signal] | [!UICONTROL Signals]是[!DNL Audience Manager]中最小的数据单元，以[键值对](../reference/key-value-pairs-explained.md).<br><br>表示<ul><li>键是定义数据集的一个常量（例如，性别、颜色、价格）。</li><li>该值是一个与常量相关的变量（例如，男性/女性，绿色，100）。</li></ul>比较运算符连接键值对并设置它们之间的关系。 | <ul><li>`product=camera`</li><li>`price>1000`</li><li>`type=digital SLR`</li></ul> |
-| [!UICONTROL Trait] | 一个或多个[!UICONTROL signals].<br><br>的组合 [!DNL Boolean]表达式和比较运算符允许您创建[!UICONTROL trait]资格规则。 <br><br>使用[!UICONTROL traits]和[!UICONTROL trait]组的组合创建精确的资格要求。 | 从可用的[!UICONTROL signals]中，您可以创建表达为`product=camera AND price>1000`的`High End Camera Browser`规则 |
-| [!UICONTROL Segment] | 共享一组通用属性并符合相关[!UICONTROL traits]条件的用户。 [!DNL Boolean]表达式以及回访间隔/频率要求，允许您创建[!UICONTROL segment]资格规则。<br><br>使用[!UICONTROL trait]和[!UICONTROL segment]规则的组合创建精确的资格要求。 | 从可用的[!UICONTROL traits]和[!UICONTROL signals]中，您可以创建表达为`(product=camera AND type=digital SLR) OR (price>1000)`的[!UICONTROL segment]规则 |
+| [!UICONTROL Trait] | 一个或多个[!UICONTROL signals].<br><br>的组合 [!DNL Boolean]表达式和比较运算符允许您创建[!UICONTROL trait]资格规则。 <br><br>使用[!UICONTROL traits]和[!UICONTROL trait]组的组合创建精确的资格要求。 | 从可用的[!UICONTROL signals]中，您可以创建表达为`High End Camera Browser`的`product=camera AND price>1000`规则 |
+| [!UICONTROL Segment] | 共享一组通用属性并符合相关[!UICONTROL traits]条件的用户。 [!DNL Boolean]表达式以及回访间隔/频率要求，允许您创建[!UICONTROL segment]资格规则。<br><br>使用[!UICONTROL trait]和[!UICONTROL segment]规则的组合创建精确的资格要求。 | 从可用的[!UICONTROL traits]和[!UICONTROL signals]中，您可以创建表达为[!UICONTROL segment]的`(product=camera AND type=digital SLR) OR (price>1000)`规则 |
 
 请使用下图来记录[!UICONTROL signals]、[!UICONTROL traits]和[!UICONTROL segments]之间的关系。
 
@@ -35,11 +35,11 @@ ht-degree: 21%
 
 使用可视工具和代码编辑器生成&#x200B;**规则[!UICONTROL Traits]和[!UICONTROL Segment]**
 
-客户端使用[!DNL Audience Manager]用户界面中的可视工具和代码编辑器管理[!UICONTROL traits]和[!UICONTROL segments]。 可视化工具允许您使用搜索功能、弹出选项、下拉菜单和拖放功能创建规则。 代码编辑器为高级用户提供了一种以编程方式开发受众分段标准的方法。
+客户端使用[!UICONTROL traits]用户界面中的可视工具和代码编辑器管理[!UICONTROL segments]和[!DNL Audience Manager]。 可视化工具允许您使用搜索功能、弹出选项、下拉菜单和拖放功能创建规则。 代码编辑器为高级用户提供了一种以编程方式开发受众分段标准的方法。
 
 **事件调用将数据发送到[!DNL Audience Manager]**
 
-事件调用将数据从您的网站发送到[!DNL Audience Manager]。 该调用在[!DNL HTTP]请求中包含[!UICONTROL signal]、[!UICONTROL trait]和[!UICONTROL segment]数据。 事件本身就是[!DNL URL]字符串的`/event`部分之后的所有内容。 如以下示例所示，此进程只需要一个事件调用即可将多个变量传递到[!DNL Audience Manager]。
+事件调用将数据从您的网站发送到[!DNL Audience Manager]。 该调用在[!UICONTROL signal]请求中包含[!UICONTROL trait]、[!UICONTROL segment]和[!DNL HTTP]数据。 事件本身就是`/event`字符串的[!DNL URL]部分之后的所有内容。 如以下示例所示，此进程只需要一个事件调用即可将多个变量传递到[!DNL Audience Manager]。
 
 `https://<domain>/event?product=camera&price>100`
 

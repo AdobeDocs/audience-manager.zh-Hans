@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # [!DNL API]和[!DNL SDK]代码 {#api-and-sdk-code}
 
-允许您以编程方式使用[!DNL Audience Manager]的[!DNL API]和工具包。
+允许您以编程方式使用[!DNL API]的[!DNL Audience Manager]和工具包。
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 详细信息：
 
-* [Audience ManagerAPI代码迁移](api-swagger-migration.md)
+* [Audience Manager API代码迁移](api-swagger-migration.md)
 * [DCS事件调用API](dcs-intro/dcs-event-calls/dcs-event-calls.md)
 * [用于服务器到服务器数据传输的DCS API](dcs-intro/dcs-s2s/dcs-s2s.md)
 * [DCS API方法](dcs-intro/dcs-api-reference/dcs-api-methods.md)

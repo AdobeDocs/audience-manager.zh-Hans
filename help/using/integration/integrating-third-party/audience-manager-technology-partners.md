@@ -16,13 +16,13 @@ ht-degree: 43%
 
 # Audience Manager激活合作伙伴
 
-此页仅包含当前Audience Manager[服务器到服务器集成](/help/using/features/destinations/add-edit-segments.md)。  有关集成的更多信息，请参阅其[Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)列表（如果可用），或联系您的Adobe顾问或客户关怀部门。
+此页仅包含当前的Audience Manager [服务器到服务器集成](/help/using/features/destinations/add-edit-segments.md)。  有关集成的更多信息，请参阅其[Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)列表（如果可用），或联系您的Adobe顾问或客户关怀团队。
 
 <br> 
 
 * **已更新** =显示此激活合作伙伴有更新的上次日期。
-* **取消区段** =取消分段描述了取消资格并从区段中删除设备配置文件的进程。 能否从区段中删除设备配置文件取决于用于创建配置文件合并规则的设备选项。 在GDPR删除请求的上下文中也使用取消分段读取[配置文件合并规则和设备取消分段流程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)以及具有取消分段功能的[Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience Manager会将取消分段信息发送到下面标记为“是”的目标。
-* **接收IAB TCF同意信号** =适用于IAB TCF的Audience Manager插件允许您将IAB TC字符串转发给激活合作伙伴，同时尊重用户所做的隐私选择。 读取适用于IAB TCF[&#128279;](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)的Audience Manager插件。
+* **取消区段** =取消分段描述了取消资格并从区段中删除设备配置文件的进程。 能否从区段中删除设备配置文件取决于用于创建配置文件合并规则的设备选项。 在GDPR删除请求的上下文中也使用取消分段。请读取[配置文件合并规则和设备取消分段流程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和具有取消分段功能的[Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience Manager会将取消分段信息发送到下面标有“是”的目标。
+* **接收IAB TCF同意信号** =适用于IAB TCF的Audience Manager插件允许您将IAB TC字符串转发给激活合作伙伴，同时尊重用户所做的隐私选择。 读取适用于IAB TCF[的](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)Audience Manager插件。
 * **ICDS** =此列列出了支持即时跨设备隐藏的合作伙伴。 读取[即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
 * **移动设备ID** =此列列出可以从Audience Manager接收移动设备ID的合作伙伴。
 
@@ -157,7 +157,7 @@ ht-degree: 43%
 | TubeMogul | 03/03/2017 | 是 | 否 | 是 | 否 |
 | 转/阿莫比 | 03/03/2027 | 否 | 否 | 否 | 是 |
 | 特文加 | 29/10/2018 | 是 | 否 | 否 | 否 |
-| twitter自定义受众 | 2017年3月27日 | 是 | 否 | 是 | 否 |
+| Twitter自定义受众 | 2017年3月27日 | 是 | 否 | 是 | 否 |
 | 底色 | 11/07/2017 | 否 | 否 | 否 | 否 |
 | 版本 | 15/06/2017 | 是 | 否 | 否 | 是 |
 | VideoAmp | 03/03/2017 | 否 | 否 | 否 | 否 |

@@ -22,7 +22,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->样式元素（`monospaced text`、*斜体*、括号`[ ]` `( )`等） 本文档中说明了代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
+>本文档中的样式元素（`monospaced text`、*斜体*、括号`[ ]` `( )`等）指示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
 
 ## 语法和文件名元素 {#syntax-file-name}
 
@@ -54,16 +54,16 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>DID </i></code> </p> </td> 
-   <td colname="col2"> <p>目标ID。 </p> <p>在<span class="keyword">Audience Manager</span>中，目标是集成实例，您可以在其中映射可定位区段。 客户可以有多个目标，具体取决于业务需求。 </p> </td> 
+   <td colname="col2"> <p>目标ID。 </p> <p>在<span class="keyword"> Audience Manager </span>中，目标就是集成实例，您可以在其中映射可定位区段。 客户可以有多个目标，具体取决于业务需求。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>MASTER_DPID </i></code> </p> </td> 
    <td colname="col2"> <p>数据提供程序或数据源ID。 此ID标识文件内容中存在的用户ID类型。 最常见的用户ID键为： </p> <p> 
      <ul id="ul_CC22D019ECED4B17A7695708001F2C1B"> 
       <li id="li_94DAFA169380405981AFEF1B581997E6">20914 - <span class="keyword"> Google广告商ID </span> （原始，未哈希） </li> 
-      <li id="li_DE74BE06331C49CF87606A192D815B96">20915 — 广告商</span>的<span class="keyword"> Apple ID （原始，未哈希） </li> 
+      <li id="li_DE74BE06331C49CF87606A192D815B96">20915 — 广告商<span class="keyword">的</span> Apple ID （原始，未哈希） </li> 
       <li id="li_E0A033FEC3174EF08E93EB7C65266337">供应商ID — 第三方用户ID (Web/Cookie) </li> 
-     </ul> </p> <p>有关更多详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/global-data-sources.html?lang=zh-Hans">全局数据源</a>。</p></td> 
+     </ul> </p> <p>有关更多详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/global-data-sources.html">全局数据源</a>。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>PID_ALIAS </i></code> </p> </td> 
@@ -131,7 +131,7 @@ ht-degree: 5%
  <li> <code> ftp_1234_20915_full_1486140843000001.sync.gz </code> </li> 
 </ul>
 
-**方案3**：文件已发送到[!DNL FTP]位置，在文件内容(*`Vendor ID=45454`*)中具有&#x200B;*`PID_ALIAS="XYZCustomer"`*&#x200B;和第三方用户ID：
+**方案3**：文件已发送到[!DNL FTP]位置，在文件内容(*`PID_ALIAS="XYZCustomer"`*)中具有&#x200B;*`Vendor ID=45454`*&#x200B;和第三方用户ID：
 
 例如，增量文件：
 
@@ -156,7 +156,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->样式元素（`monospaced text`、*斜体*、括号`[ ]` `( )`等） 本文档中说明了代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
+>本文档中的样式元素（`monospaced text`、*斜体*、括号`[ ]` `( )`等）指示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
 
 ### 语法
 
@@ -178,7 +178,7 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code><i>UUID </i></code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword">用户</span>分配的Audience ManagerID。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Audience Manager </span>分配的唯一用户ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>&lt;SPACE&gt; </i></code> </p> </td> 

@@ -10,7 +10,7 @@ exl-id: 9e2ee3d3-01b2-4038-abda-fedf0f16f163
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
 source-wordcount: '1157'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -59,7 +59,7 @@ CRM ID 是客户在其 CRM 系统中用于识别用户的 ID。在 Audience Mana
 
 **客户属性**
 
-请参阅 [!DNL Experience Cloud Core Services] 产品文档中的[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans)。
+请参阅 [!DNL Experience Cloud Core Services] 产品文档中的[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html)。
 
 
 
@@ -93,7 +93,7 @@ demdex.net 是由 [!DNL Adobe] 控制的旧版域。它反映了 [!DNL Audience 
 
 **目标**
 
-在 [!DNL Audience Manager] 中，目标是指要与其共享数据的任何其他系统（广告服务器、DSP、广告网络等）。在我们的 UI 中，[!UICONTROL Destination Builder] 提供了用于创建和管理这些数据传输流程的工具。[!DNL Audience Manager] 目标功能位于 **[!UICONTROL Audience Data > Destinations]** 中。
+在[!DNL Audience Manager]中，目标是指要与其共享数据的任何其他系统(广告服务器、DSP、广告网络等)。 在我们的 UI 中，[!UICONTROL Destination Builder] 提供了用于创建和管理这些数据传输流程的工具。[!DNL Audience Manager] 目标功能位于 **[!UICONTROL Audience Data > Destinations]** 中。
 
 
 
@@ -111,7 +111,7 @@ demdex.net 是由 [!DNL Adobe] 控制的旧版域。它反映了 [!DNL Audience 
 
 **Experience Cloud ID (ECID)**
 
-以前称为 [!DNL Marketing Cloud] ID（MID 或 MCID）。[!DNL Experience Cloud] ID 是 ID 服务的核心。它是网站访客的唯一永久标识符。请参阅 Cookie 和 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hans)。
+以前称为 [!DNL Marketing Cloud] ID（MID 或 MCID）。[!DNL Experience Cloud] ID 是 ID 服务的核心。它是网站访客的唯一永久标识符。请参阅 Cookie 和 [Adobe Experience Platform 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html)。
 
 
 
@@ -161,7 +161,7 @@ Google Advertising ID，即 Google 为运行 Android 操作系统的硬件设备
 
 * [!UICONTROL Traits]：集成代码是指供内部业务流程使用的 ID、SKU 或其他值的字段。可选。
 * [!UICONTROL Segments]：集成代码是指用户定义的 ID 或其他特定于公司的信息的字段。可选。
-* [!UICONTROL Data Sources]：当您要创建跨设备数据源、使用 Adobe Experience Platform Identity Service 或使用 [!UICONTROL Profile Merge Rules] 时，需要集成代码。有关更多信息，请参阅[创建数据源](../features/manage-datasources.md#create-data-source)。
+* [!UICONTROL Data Sources]：当您要创建跨设备数据源、使用 Adobe Experience Platform 身份标识服务或使用 [!UICONTROL Profile Merge Rules] 时，需要集成代码。有关更多信息，请参阅[创建数据源](../features/manage-datasources.md#create-data-source)。
 
 ## K-L {#k-l}
 
@@ -267,6 +267,6 @@ TTL 定义符合条件的访客在一个特征中保留的天数。TTL 是针对
 
 [!DNL Experience Cloud] ID 服务（以前称为访客 ID）提供了一个通用的永久性 ID，用于在 [!DNL Experience Cloud] 的所有解决方案中标识您的访客。
 
-请参阅 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans) 文档。
+请参阅 [Adobe Experience Platform 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/home.html) 文档。
 
 ## W-X-Y-Z {#w-z}

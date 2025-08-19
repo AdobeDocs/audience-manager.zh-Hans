@@ -22,7 +22,7 @@ ht-degree: 3%
 
 在营销环境中，人物是由访客、用户或潜在购买者定义的受众区段，他们具有一组特定特征，如人口统计信息、浏览习惯、购物历史记录等。
 
-[!UICONTROL Predictive Audiences] 模型进一步扩展了角色这一概念的应用，允许您使用 Audience Manager 的机器学习功能将未知受众分类为不同的角色。Audience Manager可以计算未知的第一方受众与一组已知的第一方受众之间的相似性，从而帮助您做到这一点。
+[!UICONTROL Predictive Audiences] 模型进一步扩展了角色这一概念的应用，允许您使用 Audience Manager 的机器学习功能将未知受众分类为不同的角色。Audience Manager通过为一组已知的第一方受众计算未知的第一方受众的倾向，来帮助您实现这一目标。
 
 创建[!UICONTROL Predictive Audiences]模型时，第一步是选择希望目标受众作为分类依据的基线特征或区段。 这些特征或区段将定义您的角色。
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 ## 用例 {#use-cases}
 
-为了帮助您更好地了解如何以及何时可以使用[!UICONTROL Predictive Audiences]，以下是Audience Manager客户可以使用此功能解决的几个用例。
+为了帮助您更好地了解如何使用[!UICONTROL Predictive Audiences]以及何时可以使用，以下是Audience Manager客户可以使用此功能解决的几个用例。
 
 ### 用例#1
 
@@ -73,7 +73,7 @@ ht-degree: 3%
 您可以选择任何第一方特征或区段来定义角色。 但是，为获得最佳结果，这里提供了一组推荐的最佳实践：
 
 * 选择您的角色特征或区段，以便每个角色至少拥有几百个[设备ID](../../reference/ids-in-aam.md)。
-* 如果您的特征基于[跨设备ID](../../reference/ids-in-aam.md)，则可以将其包含在使用[设备ID](../../reference/ids-in-aam.md)的[配置文件合并规则](../profile-merge-rules/merge-rules-overview.md)的区段中，如[!UICONTROL Device Graph]。 这将确保有足够的[设备ID](../../reference/ids-in-aam.md)可供算法学习。
+* 如果您的特征基于[跨设备ID](../../reference/ids-in-aam.md)，则可以将其包含在使用[设备ID](../profile-merge-rules/merge-rules-overview.md)的[配置文件合并规则](../../reference/ids-in-aam.md)的区段中，如[!UICONTROL Device Graph]。 这将确保有足够的[设备ID](../../reference/ids-in-aam.md)可供算法学习。
 * 我们建议为您的角色选择特征或简单区段，由1到3个特征组成。
 * 选择基线特征或重叠程度最低的区段。
 * 确保在数字资产中捕获粒度特征。
@@ -122,11 +122,11 @@ ht-degree: 3%
 
 ## [!UICONTROL Data Export Controls] {#dec}
 
-由[!UICONTROL Predictive Audiences]模型创建的预测区段从以下第一方数据源继承了[数据导出控件](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hans)：
+由[!UICONTROL Predictive Audiences]模型创建的预测区段从以下第一方数据源继承了[数据导出控件](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)：
 
 1. 您在构建模型时选择的第一方数据源。
 1. 目标受众的第一方数据源。 具体而言，构成目标受众的[!UICONTROL traits]或[!UICONTROL segments]的数据导出控件。
-1. 您为模型选择的[!UICONTROL Profile Merge Rule]的[数据导出控件](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hans)。
+1. 您为模型选择的[的](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)数据导出控件[!UICONTROL Profile Merge Rule]。
 
 新创建的预测[!UICONTROL traits]和[!UICONTROL segments]将与上面描述的第一方数据源的并集具有相同的隐私限制。
 
@@ -140,12 +140,12 @@ ht-degree: 3%
 * 它控制在模型训练步骤中应该使用哪些[!UICONTROL trait]类型（设备级别或跨设备级别）并显示为具有影响力的[!UICONTROL traits]。 预测[!UICONTROL segments]是目标受众的子集。
    * 如果目标受众是区段，我们建议您为模型选择与分配给目标受众的相同的[!UICONTROL Profile Merge Rule]，或者选择包含目标受众的配置文件类型的[!UICONTROL Profile Merge Rule]。
    * 如果目标受众是[!UICONTROL trait]，我们建议您选择一个[!UICONTROL Profile Merge Rule]，以访问与目标受众特征相同的数据类型（设备配置文件数据或跨设备配置文件数据）。
-* 实时受众分类仅支持使用[!UICONTROL Current Authenticated Profiles]和[!UICONTROL No Device Profile]选项的[!UICONTROL Profile Merge Rules]。 有关详细信息，请参阅[定义的配置文件合并规则选项](../profile-merge-rules/merge-rule-definitions.md)。
+* 实时受众分类仅支持使用[!UICONTROL Profile Merge Rules]和[!UICONTROL Current Authenticated Profiles]选项的[!UICONTROL No Device Profile]。 有关详细信息，请参阅[定义的配置文件合并规则选项](../profile-merge-rules/merge-rule-definitions.md)。
 
 选择同时使用设备数据和跨设备数据的[!UICONTROL Profile Merge Rule]，可将可用于模型训练和用户分类的[!UICONTROL traits]数量最大化到预测的[!UICONTROL segments]中。
 
 ## [!UICONTROL Role-Based Access Controls] {#rbac}
 
-您为角色和受众分类选择的特征和区段受基于Audience Manager[角色的访问控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html?lang=zh-Hans)的约束。
+您为角色和受众分类选择的特征和区段受基于Audience Manager [角色的访问控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html)的约束。
 
-Audience Manager用户只能为角色和Target受众选择他们具有[查看权限](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html?lang=zh-Hans#wild-card-permissions)的特征或区段。
+Audience Manager用户只能为角色和Target受众选择具有[查看权限](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions)的特征或区段。

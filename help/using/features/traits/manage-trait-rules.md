@@ -39,7 +39,7 @@ ht-degree: 0%
    >
    >此选项仅适用于[!UICONTROL Data Explorer]个客户。 有关详细信息，请与Adobe顾问联系。
 
-1. 测试字段允许您验证信号规则的组合或向Audience Manager发送数据时要使用的[!DNL URL]。
+1. 测试字段允许您验证信号规则的组合或向Audience Manager发送数据时要使用的[!DNL URL]的组合。
 
 ## 创建特征规则 {#create-trait-rule}
 
@@ -53,9 +53,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果您的事件调用使用该语法将数据发送到[!DNL Audience Manager]，请包含键变量的`c_`前缀（或任何其他命名约定）。
+   >如果您的事件调用使用该语法将数据发送到`c_`，请包含键变量的[!DNL Audience Manager]前缀（或任何其他命名约定）。
 
-1. 从&#x200B;**[!UICONTROL Operator]**&#x200B;下拉列表中选择[比较运算符](../../features/traits/trait-comparison-operators.md)。 比较运算符评估信号中元素之间的关系。
+1. 从[下拉列表中选择](../../features/traits/trait-comparison-operators.md)比较运算符&#x200B;**[!UICONTROL Operator]**。 比较运算符评估信号中元素之间的关系。
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ### 示例 {#example-trait-rule}
 
-在以下示例中，用户已根据产品ID创建新的特征规则。 为生成此规则，用户提供了键`productkey`，该键与值`2093`的equals运算符(`==`)链接。
+在以下示例中，用户已根据产品ID创建新的特征规则。 为生成此规则，用户提供了键`productkey`，该键与值`==`的equals运算符(`2093`)链接。
 
 ![](assets/tb_sample_rule1.png)
 

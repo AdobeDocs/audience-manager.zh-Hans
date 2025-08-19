@@ -1,5 +1,5 @@
 ---
-description: 简单像素（可用于限定用户具有特征）执行实时数据传输。 Audience Manager界面允许客户端在自助的基础上创建任意数量的像素。 像素字符串由简单ID或键值对组成。
+description: 简单像素（可用于限定用户具有特征）执行实时数据传输。 Audience Manager界面让客户端可自助创建任意数量的像素。 像素字符串由简单ID或键值对组成。
 seo-description: Simple pixels (that can be used to qualify users for traits) perform real-time data transfers. The Audience Manager interface lets clients create any number of pixels on a self-service basis. Pixel strings consist of simple IDs or key-value pairs.
 seo-title: Pixel-based Data Transfers
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 基于像素的数据传输 {#pixel-based-data-transfers}
 
-简单像素（可用于限定用户具有特征）执行实时数据传输。 Audience Manager界面允许客户端在自助的基础上创建任意数量的像素。 像素字符串由简单ID或键值对组成。
+简单像素（可用于限定用户具有特征）执行实时数据传输。 Audience Manager界面让客户端可自助创建任意数量的像素。 像素字符串由简单ID或键值对组成。
 
 <!-- c_rt_inbound_pixel_transfers.xml -->
 

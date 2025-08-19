@@ -26,7 +26,7 @@ ht-degree: 2%
 
 ## 正在注册[!UICONTROL People-Based Destinations] {#signing-up}
 
-[!UICONTROL People-Based Destinations]是一项高级功能，通过允许您在基于人员的环境中激活第一方受众区段、通过社交网络上的自定义选件或通过电子邮件营销定向受众，可增强您的Audience Manager体验。
+[!UICONTROL People-Based Destinations]是一项高级功能，它通过允许您在基于人员的环境中激活第一方受众区段、通过社交网络上的自定义优惠或通过电子邮件营销定向受众，来增强您的Audience Manager体验。
 
 请联系您的Adobe代表以使用此高级功能。
 
@@ -50,13 +50,13 @@ ht-degree: 2%
 
 要了解如何编辑您的[!DNL LinkedIn Campaign Manager]用户权限，请参阅LinkedIn文档中的[添加、编辑和删除Advertising帐户的用户权限](https://www.linkedin.com/help/lms/answer/5753)。
 
-有关视频说明，请参阅[了解和配置LinkedIn基于人员的目标](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html?lang=zh-Hans)。
+有关视频说明，请参阅[了解和配置LinkedIn基于人员的目标](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html)。
 
 ### [!DNL Google Customer Match] {#gcm}
 
 在使用[!UICONTROL People-Based Destinations]将第一方受众区段发送到[!DNL Google Customer Match]目标之前，请确保您已阅读并遵守Google关于使用[!DNL Customer Match]的政策，如[Google支持文档](https://support.google.com/google-ads/answer/6299717)中所述。
 
-接下来，确保为您的[!DNL Google]帐户配置了[!DNL Standard]或更高权限级别。 有关详细信息，请参阅[Google广告文档](https://support.google.com/google-ads/answer/9978556?visit_id=637611563637058259-4176462731&amp;rd=1)。
+接下来，确保为您的[!DNL Google]帐户配置了[!DNL Standard]或更高权限级别。 有关详细信息，请参阅[Google广告文档](https://support.google.com/google-ads/answer/9978556?visit_id=637611563637058259-4176462731&rd=1)。
 
 Google会自动允许具有合规帐户的客户列出。
 
@@ -64,15 +64,15 @@ Google会自动允许具有合规帐户的客户列出。
 
 >[!IMPORTANT]
 >
->所有Audience Manager客户无需注册[!UICONTROL People-Based Destinations]即可摄取经过哈希处理的电子邮件。
+>所有Audience Manager客户都可以摄取经过哈希处理的电子邮件，而无需注册[!UICONTROL People-Based Destinations]。
 
 [!UICONTROL People-Based Destinations]的数据摄取当前支持每个批处理传输最多10个链接到一个客户ID ([!DNL CRM ID])的哈希电子邮件地址。
 
-在多次批量传输中上传链接到某个客户ID的10个以上的经过哈希处理的电子邮件地址会导致Audience Manager保留最近添加的10个电子邮件地址。
+如果在多次批量传输中上传链接到一个客户ID的10个以上的经过哈希处理的电子邮件地址，则会导致Audience Manager保留最近添加的10个电子邮件地址。
 
 若要摄取哈希标识符，请[为哈希标识符](../create-data-source-hashed-emails.md)创建跨设备数据源，并启用&#x200B;**[!UICONTROL Share associated cross-device IDs in people-based destinations and/or hashed email workflows]**&#x200B;选项。
 
-![Audience ManagerUI图像显示了在基于人员的目标和/或哈希电子邮件工作流中共享关联的跨设备ID的选项](assets/data-source-share-ids.png)
+![Audience Manager UI图像显示了在基于人员的目标和/或哈希电子邮件工作流中共享关联的跨设备ID的选项](assets/data-source-share-ids.png)
 
 ## 数据隐私 {#data-privacy}
 
@@ -80,9 +80,9 @@ Google会自动允许具有合规帐户的客户列出。
 
 ## 数据散列与加密 {#data-hashing-encryption}
 
-加密是双向功能。 任何加密的信息也可以使用正确的解密密钥进行解密。 在Audience Manager的情况下加密数据会带来严重的风险，因为任何加密形式的个人身份信息都可以被解密。 与加密相反，[!UICONTROL People-Based Destinations]设计用于处理哈希数据。
+加密是双向功能。 任何加密的信息也可以使用正确的解密密钥进行解密。 在Audience Manager上下文中加密数据会带来严重风险，因为任何加密形式的个人身份信息都可以被解密。 与加密相反，[!UICONTROL People-Based Destinations]设计用于处理哈希数据。
 
-哈希处理是一种单向函数，它可以对输入进行置乱以生成唯一的结果。 如果使用正确的哈希算法（如[!DNL SHA256]），则无法反转哈希函数并显示未加扰的信息。 要载入Audience Manager的电子邮件地址必须使用[!DNL SHA256]算法进行哈希处理。 这样，即可确保任何未经哈希处理的电子邮件地址都不会到达Audience Manager。
+哈希处理是一种单向函数，它可以对输入进行置乱以生成唯一的结果。 如果使用正确的哈希算法（如[!DNL SHA256]），则无法反转哈希函数并显示未加扰的信息。 您将载入Audience Manager的电子邮件地址必须使用[!DNL SHA256]算法进行哈希处理。 这样，您可以确保任何未经哈希处理的电子邮件地址都不会发送到Audience Manager。
 
 ## 哈希处理要求 {#hashing-requirements}
 
@@ -99,7 +99,7 @@ Google会自动允许具有合规帐户的客户列出。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud为您提供通过[!DNL Adobe Experience Platform Identity Service (ECID)]对客户ID进行哈希处理的选项。 有关如何使用ECID对客户ID进行哈希处理的详细信息，请参阅对setCustomerIDs[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html?lang=zh-Hans)的SHA256哈希处理支持。
+Adobe Experience Cloud为您提供通过[!DNL Adobe Experience Platform Identity Service (ECID)]对客户ID进行哈希处理的选项。 有关如何使用ECID对客户ID进行哈希处理的详细信息，请参阅对setCustomerIDs[的](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html)SHA256哈希处理支持。
 
 ## 获取用户权限 {#obtaining-user-permission}
 
@@ -119,5 +119,5 @@ Adobe Experience Cloud为您提供通过[!DNL Adobe Experience Platform Identity
 
 有两种方法可以将离线数据载入 Audience Manager 以便用于 [!UICONTROL People-Based Destinations]。
 
-* [将批次数据](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)发送到Audience Manager以摄取经过哈希处理的电子邮件地址。 使用此方法，您可以选择使用[!UICONTROL People-Based Destinations]中[!DNL CRM]数据库的经过哈希处理的电子邮件地址。 此外，使用此方法时，您还可以限定经过哈希处理的电子邮件地址是否具有[载入的特征](../traits/trait-and-segment-qualification-reference.md)。
-* 在传入经过身份验证的客户ID时，使用[声明的ID](../declared-ids.md)来声明经过哈希处理的电子邮件地址。 使用此方法时，Audience Manager代表您只向[!UICONTROL People-Based Destinations]发送已在线进行身份验证的用户的经过哈希处理的电子邮件地址。 通过基于人员的渠道激活的电子邮件地址只是声明的ID事件调用中的电子邮件地址。 与客户ID关联的其他电子邮件地址不会实时发送。
+* [将批次数据](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)发送到Audience Manager以摄取经过哈希处理的电子邮件地址。 使用此方法，您可以选择使用[!DNL CRM]中[!UICONTROL People-Based Destinations]数据库的经过哈希处理的电子邮件地址。 此外，使用此方法时，您还可以限定经过哈希处理的电子邮件地址是否具有[载入的特征](../traits/trait-and-segment-qualification-reference.md)。
+* 在传入经过身份验证的客户ID时，使用[声明的ID](../declared-ids.md)来声明经过哈希处理的电子邮件地址。 使用此方法时，Audience Manager仅代表您向在线进行身份验证的用户的[!UICONTROL People-Based Destinations]发送经过哈希处理的电子邮件地址。 通过基于人员的渠道激活的电子邮件地址只是声明的ID事件调用中的电子邮件地址。 与客户ID关联的其他电子邮件地址不会实时发送。

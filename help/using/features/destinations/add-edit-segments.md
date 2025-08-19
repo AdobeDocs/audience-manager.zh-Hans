@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 添加或编辑服务器到服务器目标的区段 {#add-edit-segments}
 
-您只能添加或编辑服务器到服务器([!DNL S2S])目标的区段。 无法使用[[!UICONTROL Destination Builder]](/help/using/features/destinations/destination-builder.md)创建[!DNL S2S]目标。 请联系您的顾问以设置[!DNL S2S]目标。 按照以下说明添加或编辑[!DNL S2S]目标的区段。
+您只能添加或编辑服务器到服务器([!DNL S2S])目标的区段。 无法使用[!DNL S2S]创建[[!UICONTROL Destination Builder]](/help/using/features/destinations/destination-builder.md)目标。 请联系您的顾问以设置[!DNL S2S]目标。 按照以下说明添加或编辑[!DNL S2S]目标的区段。
 
 <!-- destination-s2s-edit.xml -->
 

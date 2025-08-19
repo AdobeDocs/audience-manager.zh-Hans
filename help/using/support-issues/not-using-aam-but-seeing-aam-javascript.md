@@ -23,6 +23,6 @@ ht-degree: 98%
 
 ## 回答
 
-您可能正在对资产运行 [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)。如果是这样的话，那么看到 Audience Manager Javascript 调用不一定意味着您正在运行 Audience Manager，而是意味着 Audience Manager 正在为 Identity Service 提供支持。
+您可能正在对资产运行 [Experience Cloud 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/home.html)。如果是这样的话，那么看到 Audience Manager Javascript 调用不一定意味着您正在运行 Audience Manager，而是意味着 Audience Manager 正在为身份标识服务提供支持。
 
-Audience Manager 服务器调用通常用于[同步客户 ID](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html?lang=zh-Hans)。
+Audience Manager 服务器调用通常用于[同步客户 ID](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html)。

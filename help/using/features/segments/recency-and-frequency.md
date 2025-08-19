@@ -27,7 +27,7 @@ Audience Manager按如下方式定义[!DNL recency]和[!DNL frequency]：
 
 ## [!UICONTROL Recency and Frequency]设置的位置 {#location}
 
-在[!UICONTROL Segment Builder]中，[!UICONTROL Recency]和[!UICONTROL Frequency]设置位于[!UICONTROL Traits]面板的[!UICONTROL Basic View]部分。 单击时钟图标以显示这些控件。
+在[!UICONTROL Segment Builder]中，[!UICONTROL Recency]和[!UICONTROL Frequency]设置位于[!UICONTROL Basic View]面板的[!UICONTROL Traits]部分。 单击时钟图标以显示这些控件。
 
 ![](assets/recency_frequency.png)
 
@@ -105,7 +105,7 @@ Audience Manager按如下方式定义[!DNL recency]和[!DNL frequency]：
 
 ![大于等于](assets/greater-than-equal-to.png)
 
-在本例中，您选择=>运算符，如屏幕快照中所示。 这将使您的用户符合[!UICONTROL segment]的条件，前提是他们在五天前的Audience Manager平台上第一次取得资格和截止时间之间至少三次符合三个[!UICONTROL traits]中的任意一个。 以下时间线显示了在创建[!UICONTROL segment]时、10月1日以及十天后的[!UICONTROL segment]资格。
+在本例中，您选择=>运算符，如屏幕快照中所示。 这样可使您的用户符合[!UICONTROL segment]的条件，前提是他们在从Audience Manager平台的第一次资格到五天前的截止时间之间的任意时间有资格获得三个[!UICONTROL traits]的任意一个，且至少可达到三次。 以下时间线显示了在创建[!UICONTROL segment]时、10月1日以及十天后的[!UICONTROL segment]资格。
 
 ![早期资格](assets/earlier-qualification.png)
 
@@ -114,13 +114,13 @@ Audience Manager按如下方式定义[!DNL recency]和[!DNL frequency]：
 
 频率上限表达式包括[!UICONTROL trait]实现次数低于所需值的所有用户。 以下是一些对错的示例：
 
-* 错误 — 表达式`frequency([1000T]) <= 5`包括最多实现5次ID为“1000”的[!UICONTROL trait]的所有用户，但也包括尚未实现[!UICONTROL trait]的用户。 因此，出于性能原因，Audience Manager不会验证此表达式，因为它将为[!UICONTROL segment]限定太多的用户。
+* 错误 — 表达式`frequency([1000T]) <= 5`包括最多实现5次ID为“1000”的[!UICONTROL trait]的所有用户，但也包括尚未实现[!UICONTROL trait]的用户。 因此，出于性能原因，Audience Manager不验证此表达式，因为它将为[!UICONTROL segment]限定太多的用户。
 
 * 右 — 如果要包括已实现ID为“1000”的[!UICONTROL trait]最多五次的所有用户，请向表达式添加其他条件，以确保用户至少有一次符合[!UICONTROL trait]的条件： `frequency([1000T]) >= 1  AND  frequency([1000T]) <= 5`
 
-* 右 — 当您需要回访间隔/频率要求小于特定次数或天数时，请使用`AND`运算符将该[!UICONTROL trait]加入另一个回访间隔/频率要求。 使用第一个项目符号中的示例，此表达式在与另一个[!UICONTROL trait]连接时生效，如下所示： `frequency([1000T]) <= 5 AND isSiteVisitorTrait`。
+* 右 — 当您需要回访间隔/频率要求小于特定次数或天数时，请使用[!UICONTROL trait]运算符将该`AND`加入另一个回访间隔/频率要求。 使用第一个项目符号中的示例，此表达式在与另一个[!UICONTROL trait]连接时生效，如下所示： `frequency([1000T]) <= 5 AND isSiteVisitorTrait`。
 
-* 右 — 对于广告频度上限用例，您可以创建类似于以下内容的[!UICONTROL segment]规则： `(frequency([1000T] <= 2D) >= 5)`。 此表达式包括过去2天内至少五次实现ID为“1000”的[!UICONTROL trait]的所有用户。 通过将此[!UICONTROL segment]发送到广告服务器（在广告服务器的[!UICONTROL segment]上设置了`NOT`）来设置频率上限。 此方法在[!DNL Audience Manager]中实现了更好的性能，同时仍服务于相同的频率封顶目的。
+* 右 — 对于广告频度上限用例，您可以创建类似于以下内容的[!UICONTROL segment]规则： `(frequency([1000T] <= 2D) >= 5)`。 此表达式包括过去2天内至少五次实现ID为“1000”的[!UICONTROL trait]的所有用户。 通过将此[!UICONTROL segment]发送到广告服务器（在广告服务器的`NOT`上设置了[!UICONTROL segment]）来设置频率上限。 此方法在[!DNL Audience Manager]中实现了更好的性能，同时仍服务于相同的频率封顶目的。
 
 >[!MORELIKETHIS]
 >

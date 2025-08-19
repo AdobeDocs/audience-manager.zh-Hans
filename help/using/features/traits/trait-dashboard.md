@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 特征仪表板 {#traits-dashboard}
 
-特征仪表板是用于管理特征的集中工作区。 您可以通过导航到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Traits]**&#x200B;查看[!UICONTROL Traits]仪表板。
+特征仪表板是用于管理特征的集中工作区。 您可以通过导航到[!UICONTROL Traits] > **[!UICONTROL Audience Data]**&#x200B;查看&#x200B;**[!UICONTROL Traits]**&#x200B;仪表板。
 
 ![](assets/traits-dashboard.png)
 

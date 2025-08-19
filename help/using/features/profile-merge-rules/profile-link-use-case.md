@@ -1,5 +1,5 @@
 ---
-description: 通过“配置文件链接”设备图实现区段重定位和个性化区段资格的Recommendations和用例。
+description: 通过“配置文件链接”设备图进行区段重定向和个性化区段鉴别的推荐和用例。
 seo-description: Recommendations and use cases for segment retargeting and personalized segment qualification with the Profile Link device graph.
 seo-title: Profile Link Device Graph Use Cases
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 # 配置文件链接设备图用例 {#profile-link-device-graph-use-cases}
 
-通过[!UICONTROL Profile Link Device Graph]进行区段重定位和个性化区段资格的Recommendations和用例。
+通过[!UICONTROL Profile Link Device Graph]进行区段重定位和个性化区段鉴别的推荐和使用案例。
 
 ## 推荐 {#recommendations}
 
@@ -40,7 +40,7 @@ ht-degree: 4%
 
 ![last-device-graph](assets/last-device-graph.png)
 
-由于Audience Manager限定参与区段配置文件合并的每个设备配置文件，因此所有三个设备配置文件都会被分段。 [!UICONTROL Profile Link Device Graph]允许Audience Manager查看所有三台设备的行为，并让每台设备都符合没有单个设备配置文件单独符合条件的区段。
+由于Audience Manager符合参与区段配置文件合并的每个设备配置文件的资格，因此所有三个设备配置文件都会进行分段。 [!UICONTROL Profile Link Device Graph]允许Audience Manager查看所有三台设备的行为，并让每台设备都符合一个区段的条件，该区段没有任何单个设备配置文件单独符合该区段的条件。
 
 此[!UICONTROL Profile Merge Rule]使营销人员能够根据用户活动而不是单个设备活动，为某个人拥有的所有设备提供一致的体验。
 

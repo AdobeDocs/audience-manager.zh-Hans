@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ## 概述
 
-所有Audience Manager客户均可访问全局数据源，其中包含了设备制造商（如[!DNL Apple]、[!DNL Samsung]、[!DNL Microsoft]、[!DNL Roku]和[!DNL Android]设备制造商）生成的设备广告ID。 这些 ID 是设备制造商出于广告宣传的目的而提供的。Audience Manager客户可以使用全局数据源来同步设备ID，并导入或导出这些映射中断开映射的数据。
+所有Audience Manager客户都可以访问全局数据源，这些数据源包含设备制造商（如[!DNL Apple]、[!DNL Samsung]、[!DNL Microsoft]、[!DNL Roku]和[!DNL Android]设备制造商）生成的设备广告ID。 这些 ID 是设备制造商出于广告宣传的目的而提供的。Audience Manager客户可以使用全局数据源同步设备ID，并导入或导出这些映射中断开映射的数据。
 
 下表介绍了Audience Manager支持的全局数据源。
 
@@ -38,7 +38,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->使用全局设备ID向Audience Manager发送数据时，请确保为相关设备ID使用相应的数据源。 示例：要导入[!DNL Apple IDFA]的数据，请使用数据源ID 20915。
+>使用全局设备ID将数据发送到Audience Manager时，请确保为相关设备ID使用相应的数据源。 示例：要导入[!DNL Apple IDFA]的数据，请使用数据源ID 20915。
 
 ## 限制
 
@@ -46,14 +46,14 @@ ht-degree: 4%
 
 ## 全局设备ID验证
 
-Audience Manager将根据其格式，验证由客户导入的设备广告ID ([!UICONTROL DAID])，以确保这些ID符合设备制造商列出的标准格式。 有关设备广告ID到全局数据源的详细映射以及每个ID的正确Audience Manager，请参阅[设备广告ID索引](../reference/ids-in-aam.md)。 确保根据设备类型以正确的格式导入设备ID。 Audience Manager会拒绝不符合适当格式的设备ID，并返回一条错误消息，指示该ID已被拒绝。
+Audience Manager将根据其格式，验证由客户导入的设备广告ID ([!UICONTROL DAID])，以确保这些ID符合设备制造商列出的标准格式。 有关设备广告ID到全局数据源的详细映射以及每个ID的正确格式，请参阅Audience Manager中的[ID索引](../reference/ids-in-aam.md)。 确保根据设备类型以正确的格式导入设备ID。 Audience Manager会拒绝不符合适当格式的设备ID，并返回一条错误消息，指示该ID已被拒绝。
 
 * 此处概述了批量数据传输的错误消息传递：[载入状态报告术语和定义](../reporting/onboarding-status-report.md#report-terms-conditions)。
 * 此处概述了实时数据传送的错误消息：[DCS错误代码、消息和示例](../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)。
 
 ## 设备ID过期策略
 
-Audience Manager在处于非活动状态120天后自动丢弃设备广告ID，类似于[AAM UUID](../faq/faq-privacy.md)。
+Audience Manager会在处于非活动状态120天后自动丢弃设备广告ID，类似于[AAM UUID](../faq/faq-privacy.md)。
 
 ## 请求新的全局数据源
 

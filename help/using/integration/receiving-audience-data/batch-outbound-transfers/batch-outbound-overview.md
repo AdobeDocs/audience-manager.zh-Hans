@@ -1,5 +1,5 @@
 ---
-description: Audience Manager将根据这些规范向第三方内容提供商发送批量数据。
+description: Audience Manager会根据这些规范将批量数据发送给第三方内容提供商。
 seo-description: Adobe Audience Manager (AAM) sends batch data to third-party content providers according to these specifications.
 seo-title: Batch Outbound Data Transfers in Adobe Audience Manager (AAM)
 title: 批量出站数据传输
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 批量出站数据传输
 
-Audience Manager将根据这些规范向第三方内容提供商发送批量数据。
+Audience Manager会根据这些规范将批量数据发送给第三方内容提供商。
 
 * [出站数据文件名：语法和示例](/help/using/integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
 

@@ -54,7 +54,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle">区段实时独特计数</span> </p> </td> 
-   <td colname="col2"> <p>在指定时间范围内实时查看的独特访客数，以及在<span class="keyword">Audience Manager</span>看到这些访客时符合区段资格条件的访客数。 </p> </td> 
+   <td colname="col2"> <p>在指定时间范围内实时查看的独特访客数，以及在<span class="keyword"> Audience Manager</span>看到这些访客时符合区段资格条件的访客数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle">广告单元唯一计数</span> </p> </td> 

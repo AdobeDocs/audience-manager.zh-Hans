@@ -129,7 +129,7 @@ ht-degree: 0%
    <td colname="col1"> <p> <b>潜在的订阅者</b> </p> </td> 
    <td colname="col2"> <p><a href="../../../features/audience-marketplace/marketplace-private-feeds.md">潜在订阅者</a>是已请求访问私有数据馈送、已获得卖方批准但尚未订阅馈送的数据购买者。 要以潜在订户请求折扣，请执行以下操作： </p> 
     <ol id="ol_9CECDA92E7894B20AC8A777D78962188"> 
-     <li id="li_618B64160CF24549AFCA73E006DCA35A">转到<b><span class="uicontrol">Audience Marketplace&gt;市场</span></b>。 </li> 
+     <li id="li_618B64160CF24549AFCA73E006DCA35A">转到<b><span class="uicontrol"> Audience Marketplace &gt; Marketplace</span></b>。 </li> 
      <li id="li_FE52A06B30FC4858B48AF81954365FE9">单击已批准的信息源名称。 </li> 
      <li id="li_763C050AC9464BE380D00F6085B6E540">单击<b><span class="uicontrol">请求更多详细信息</span></b>。 在向卖家索取详细信息时要求折扣。 </li> 
     </ol> </td> 
@@ -143,12 +143,12 @@ ht-degree: 0%
 
 1. 转到&#x200B;**[!UICONTROL Audience Marketplace > Marketplace]**。
 1. 单击已订阅的信息源的名称。
-1. 查看[!UICONTROL Plan Details]表中的[!UICONTROL Price]和[!UICONTROL Your Price]列。 如果馈送打折：
+1. 查看[!UICONTROL Price]表中的[!UICONTROL Your Price]和[!UICONTROL Plan Details]列。 如果馈送打折：
 
    * 原价用红线标记。
    * [!UICONTROL Your Price]列中的费用将低于[!UICONTROL Price]列中的费用。
 
-在此示例中，购买者在&#x200B;**[!UICONTROL Software Audience Feed]**&#x200B;中的[!UICONTROL Segments and Overlap]计划上获得10%的折扣。
+在此示例中，购买者在[!UICONTROL Segments and Overlap]中的&#x200B;**[!UICONTROL Software Audience Feed]**&#x200B;计划上获得10%的折扣。
 
 ![](assets/buyer-discount.png)
 
@@ -261,7 +261,7 @@ ht-degree: 0%
 
 从帐户中删除所有已撤消的特征后，[取消订阅已停用的数据馈送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#unsubscribe)。 如果这是临时停用，则可以在数据提供程序完成其所需的更改并重新激活馈送后重新订阅。 与大多数事情一样，与合作伙伴（数据提供商和[!DNL Adobe]）良好的沟通可以帮助您完成此过程。
 
-## 了解Audience Marketplace中的“计划详细信息”页 {#marketplace-buyer-details}
+## 了解Audience Marketplace中的“计划详细信息”页面 {#marketplace-buyer-details}
 
 当您在[!UICONTROL Marketplace]中单击数据计划的名称时，[!DNL Audience Manager]会提供有助于您做出有关订阅数据馈送的明智选择的信息。
 
@@ -283,7 +283,7 @@ ht-degree: 0%
    * 单击&#x200B;**[!UICONTROL Request More Details]**&#x200B;向数据提供商询问有关所选数据馈送的问题或请求折扣。 此功能会将您的评论和问题直接发送到数据提供商。
 
 1. 数据馈送报表量度。 维恩图（和相关量度）显示过去30天的特质重叠数据。 有关详细信息，请参阅[市场：关于](marketplace-data-buyers.md#about-marketplace)。
-   * **[!UICONTROL 30 Day Overlapped Uniques]**：您的帐户中与提供商帐户中的用户重叠的唯一用户数。 有关唯一用户的定义，请参阅Audience Manager[&#128279;](/help/using/reference/ids-in-aam.md)中ID的索引中的AAM UUID。
+   * **[!UICONTROL 30 Day Overlapped Uniques]**：您的帐户中与提供商帐户中的用户重叠的唯一用户数。 有关唯一用户的定义，请参阅Audience Manager中ID的[索引](/help/using/reference/ids-in-aam.md)中的AAM UUID。
    * **[!UICONTROL 30 Day Provider Unique Users]**：来自提供商帐户的独特用户数。
    * **[!UICONTROL Your Unique Users]**：来自您帐户的独特用户数。
 
@@ -314,11 +314,11 @@ ht-degree: 0%
 
 ### 激活
 
-此使用案例允许您将数据发送到[目标](../../../features/destinations/destinations.md)。 在[!DNL Audience Manager]中，目标是任何第三方系统（广告服务器、[!DNL DSP]、[!DNL DMP]、Exchange等） 任何其他系统（广告服务器、DSP、广告网络等）。但是，对于[!UICONTROL Activation]用例，您无法运行重叠报表或在算法模型中测试数据。
+此使用案例允许您将数据发送到[目标](../../../features/destinations/destinations.md)。 在[!DNL Audience Manager]中，目标是您要与其共享数据的任何第三方系统（广告服务器、[!DNL DSP]、[!DNL DMP]、Exchange等）。 但是，对于[!UICONTROL Activation]用例，您无法运行重叠报表或在算法模型中测试数据。
 
 >[!MORELIKETHIS]
 >
->* [CPM数据馈送的计费和展示次数分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
+>* 为CPM数据馈送分配[帐单和展示](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
 >* [固定费用数据馈送的计费和展示分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
 >* [如何报告CPM使用情况](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#report-cpm-usage)
 >* [订阅公共数据馈送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)

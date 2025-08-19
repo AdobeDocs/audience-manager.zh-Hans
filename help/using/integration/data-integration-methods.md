@@ -27,7 +27,7 @@ Audience Manager如何与其他数据提供商和系统交换信息的高级概�
 
 ## 先决条件：创建特征分类 {#prereqs}
 
-在集成过程开始之前，请记得在[!DNL Audience Manager] UI中[创建特征](../features/traits/create-onboarded-rule-based-traits.md)和[文件夹结构](../features/traits/trait-storage.md#create-trait-storage-folder)。 分类将包含您的所有[!UICONTROL traits]，这些资产按逻辑层次结构组织。
+在集成过程开始之前，请记得在[ UI中](../features/traits/create-onboarded-rule-based-traits.md)创建特征[和](../features/traits/trait-storage.md#create-trait-storage-folder)文件夹结构[!DNL Audience Manager]。 分类将包含您的所有[!UICONTROL traits]，这些资产按逻辑层次结构组织。
 
 ## 集成用例 {#integration-use-cases}
 
@@ -37,7 +37,7 @@ Audience Manager数据集成方法的用例摘要，以及每种方法的优缺�
 
 <!-- c_int_types_use_cases.xml -->
 
-实时[!DNL server-to-server]数据集成在Audience Manager服务器和另一个定位系统之间快速同步用户数据。 在大多数情况下，根据定位系统的刷新率，会在几秒或几分钟内进行数据交换。 但请注意，目标系统决定此刷新间隔，而不是Audience Manager。 此外，刷新率在不同系统之间可以不同。 实时[!UICONTROL server-to-server]集成是数据交换的首选集成类型。 只要定位合作伙伴支持，Audience Manager就会使用此方法。
+实时[!DNL server-to-server]数据集成在Audience Manager服务器和另一个定位系统之间快速同步用户数据。 在大多数情况下，根据定位系统的刷新率，会在几秒或几分钟内进行数据交换。 但请注意，目标系统确定此刷新间隔，而不是Audience Manager。 此外，刷新率在不同系统之间可以不同。 实时[!UICONTROL server-to-server]集成是数据交换的首选集成类型。 只要定位合作伙伴可以支持，Audience Manager就会使用此方法。
 
 <table id="simpletable_5307DEC378E5486CB92A354287F33AD8"> 
  <tr class="strow">
@@ -86,7 +86,7 @@ Audience Manager数据集成方法的用例摘要，以及每种方法的优缺�
  </tr> 
  <tr>
   <td> <p>缺点： </p></td>
-  <td> <p>添加从页面Audience Manager的调用。</p></td>
+  <td> <p>从页面添加对Audience Manager的调用。</p></td>
  </tr> 
 </table>
 
@@ -118,7 +118,7 @@ Audience Manager数据集成方法的用例摘要，以及每种方法的优缺�
 
 ### 选择数据传送类型
 
-* **技术注意事项：**&#x200B;数据交付取决于数据合作伙伴的技术能力。 Audience Manager可以通过浏览器实时发送/接收数据，或通过离线的、服务器到服务器的通信过程批量更新数据。
+* **技术注意事项：**&#x200B;数据交付取决于数据合作伙伴的技术能力。 Audience Manager可以从浏览器实时发送/接收数据，也可以通过离线的、服务器到服务器的通信流程批量更新数据。
 * **业务注意事项：**&#x200B;选择一种或另一种提交方法的业务原因取决于目标合作伙伴的技术能力以及您希望如何使用此数据。 通常，当您需要立即对用户数据采取行动时，同步数据传输非常有用。 当不需要立即采取行动以及您有时间构建更深入的用户配置文件以供稍后使用时，异步数据传输可能会很有用。
 
 ## 实时数据传输流程 {#real-time-data-transfer-process}
@@ -138,8 +138,8 @@ Audience Manager数据集成方法的用例摘要，以及每种方法的优缺�
 1. 用户访问包含Audience Manager代码的客户的网站。
 1. Audience Manager加载Iframe并调用[!UICONTROL Data Collection Server] ([!DNL DCS])。
 1. [!DNL DCS]调用第三方服务器（实时）以检查供应商是否具有有关该用户的任何区段信息。
-1. 第三方将返回有关该用户的区段信息给Audience Manager。
-1. Audience Manager会摄取区段信息并使其可用于定位。
+1. 第三方将有关该用户的区段信息返回到Audience Manager。
+1. Audience Manager会摄取区段信息，并将其用于定位。
 
 ![](assets/rt_reduce70.png)
 

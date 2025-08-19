@@ -22,7 +22,7 @@ ht-degree: 1%
 在配置[!DNL Twitter Custom Audiences]目标之前，请确保满足以下先决条件。
 
 * 您的[!DNL Twitter Ads]帐户必须适用于广告。 新[!DNL Twitter Ads]帐户在创建后的前2周内没有资格进行广告。
-* 您授权访问Audience Manager中的[!DNL Twitter]用户帐户必须启用[Partner Audience Manager](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels)权限。
+* 您在Audience Manager中授权访问的[!DNL Twitter]用户帐户必须启用[合作伙伴Audience Manager](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels)权限。
 * 在Audience Manager实例中创建第一个[!DNL Twitter Custom Audiences]目标时，请联系Adobe Consulting或客户关怀团队为您的帐户启用[!DNL Twitter] ID同步(数据Source ID = 1123)。 这是Audience Manager与[!DNL Twitter]之间正确同步所必需的。
 
 ## 添加新的[!DNL Twitter Custom Audiences]目标 {#add-new-twitter-destination}
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ### 步骤1. 使用[!DNL Twitter Custom Audiences]进行身份验证 {#step1-authenticate-with-twitter}
 
-添加基于设备的目标之前，您需要关联Audience Manager和[!DNL Twitter Custom Audiences]帐户。 以下是操作方法：
+在添加基于设备的目标之前，您需要关联Audience Manager和您的[!DNL Twitter Custom Audiences]帐户。 以下是操作方法：
 
 1. 登录到您的Audience Manager帐户并转到&#x200B;**[!DNL Administration > Integrated Accounts]**。 如果您之前配置了与目标平台的集成，您应该会看到此页面中列出了该集成。 否则，页面为空。
 1. 单击 **[!DNL Add Account]**。
@@ -39,7 +39,7 @@ ht-degree: 1%
 
    ![集成平台](assets/dbd-integrated-platforms.png)
 
-1. 完成身份验证后，您将被重定向到Audience Manager，您应会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!DNL Confirm]**。
+1. 完成身份验证后，您将被重定向到Audience Manager，您应该会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!DNL Confirm]**。
 
 ### 步骤 2. 创建新的基于设备的目标 {#step2-create-new-destination}
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 将受众区段映射到[!UICONTROL Twitter]时，请确保满足以下区段命名要求：
 
-* 提供人类可读的区段映射名称。 我们建议使用与Audience Manager区段相同的名称。
+* 提供人类可读的区段映射名称。 我们建议您使用与Audience Manager区段相同的名称。
 * 不要在区段和区段映射名称中使用特殊字符(`+` `&` `,` `%` `:` `;` `@` `/` `=` `?` `$`)。 如果您的Audience Manager区段名称包含这些字符，请在将区段映射到[!UICONTROL Twitter]目标之前删除它们。
 
 ### 示例
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->无法更改已映射区段的名称。 Audience Manager使用区段名称来正确标识集成中的区段。
+>无法更改已映射区段的名称。 Audience Manager使用区段名称来正确识别集成中的区段。
 
 ## 匹配率注意事项 {#match-rates-considerations}
 
@@ -83,6 +83,6 @@ ht-degree: 1%
 
 | 错误消息 | 发生次数/原因 | 解决方法 |
 |---|---|---|
-| `Internal server error` | 尝试使用过时的Audience ManagerAPI版本添加新的[!DNL Twitter]Twitter时，UI中会显示此错误消息。 | 联系Adobe客户关怀部门。 |
-| `Twitter Error: This request is not properly authenticated` | 尝试将具有不支持的区段名称的区段映射到目标时，Audience ManagerUI中会显示此错误消息。 | 查看映射的区段名称，确保它们不包含不支持的字符。 有关不支持的字符列表，请参阅[区段映射注意事项](#segment-mapping-considerations)。 |
-| `Twitter Error: Account XXXXXXXXX was not found` | 当为目标配置的凭据无权访问相应的Audience ManagerAds帐户时，TwitterUI中会显示此错误消息。 | <ul><li>确保您使用的帐户凭据符合[先决条件](#prerequisites)。</li><li>使用相同的凭据导航到Twitter广告UI，并检查相应的`XXXXXXXXX`帐户下是否显示正确的受众。 </li></ul> |
+| `Internal server error` | 尝试使用过时版本的Twitter API添加新的[!DNL Twitter]帐户时，Audience Manager UI中会显示此错误消息。 | 联系Adobe客户关怀部门。 |
+| `Twitter Error: This request is not properly authenticated` | 尝试将具有不支持的区段名称的区段映射到目标时，Audience Manager UI中会显示此错误消息。 | 查看映射的区段名称，确保它们不包含不支持的字符。 有关不支持的字符列表，请参阅[区段映射注意事项](#segment-mapping-considerations)。 |
+| `Twitter Error: Account XXXXXXXXX was not found` | 当为目标配置的凭据无权访问相应的Twitter广告帐户时，Audience Manager UI中会显示此错误消息。 | <ul><li>确保您使用的帐户凭据符合[先决条件](#prerequisites)。</li><li>使用相同的凭据导航到Twitter广告UI，并检查相应的`XXXXXXXXX`帐户下是否显示正确的受众。 </li></ul> |

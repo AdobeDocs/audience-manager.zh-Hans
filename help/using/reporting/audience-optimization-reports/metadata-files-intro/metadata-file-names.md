@@ -1,5 +1,5 @@
 ---
-description: 根据这些规范为Audience Optimization元数据文件命名。
+description: 根据这些规范命名您的Audience Optimization元数据文件。
 seo-description: Name your Audience Optimization metadata file according to these specifications.
 seo-title: Naming Conventions for Metadata Files
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 # 元数据文件的命名约定{#naming-conventions-for-metadata-files}
 
-根据这些规范为Audience Optimization元数据文件命名。
+根据这些规范命名您的Audience Optimization元数据文件。
 
 ## 语法和ID类别 {#syntax}
 
@@ -39,7 +39,7 @@ ht-degree: 3%
 
 1. 促销活动
 1. Creative
-1. 投放位置
+1. 投放
 1. Exchange
 1. Site（网站）
 1. 广告商（如果在[数据源](../../../features/manage-datasources.md#details)中使用集成代码）

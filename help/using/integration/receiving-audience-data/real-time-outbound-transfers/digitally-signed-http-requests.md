@@ -16,13 +16,13 @@ ht-degree: 0%
 
 # 对`HTTP(S)`请求进行数字签名 {#digitally-signed-http-requests}
 
-Audience Manager要求对`HTTP(S)`服务器到服务器请求进行数字签名以使其有效。 本文档介绍如何使用私钥对`HTTP(S)`请求进行签名。
+Audience Manager要求对`HTTP(S)`服务器到服务器请求进行数字签名以使其生效。 本文档介绍如何使用私钥对`HTTP(S)`请求进行签名。
 
 ## 概述 {#overview}
 
 <!-- digitally_signed_http_requests.xml -->
 
-使用您提供的并与[!DNL Audience Manager]共享的私钥，我们可以对[IRIS](../../../reference/system-components/components-data-action.md#iris)和您的HTTP(S)服务器之间发送的`HTTP(S)`请求进行数字签名。 这样可以确保：
+使用您提供的并与[!DNL Audience Manager]共享的私钥，我们可以对`HTTP(S)`IRIS[和您的HTTP(S)服务器之间发送的](../../../reference/system-components/components-data-action.md#iris)请求进行数字签名。 这样可以确保：
 
 * **真实性**：只有拥有私钥([!UICONTROL IRIS])的发件人才能向合作伙伴发送有效的`HTTP(S)`邮件。
 * **消息完整性**：使用此方法，即使在`HTTP`上，您也会受到保护，不会受到中间人攻击造成消息失真的攻击。

@@ -16,7 +16,7 @@ ht-degree: 35%
 
 # DCS事件调用API {#dcs-event-call-apis}
 
-事件调用将信息发送到[!DNL URL]字符串中的[!DNL DCS]。 在典型的Audience Manager部署中，客户使用我们的[!DNL JavaScript]数据收集代码([!UICONTROL DIL])将数据发送到[!DNL DCS]。 但是，有时客户无法将我们的[!DNL JavaScript]代码放在其页面上。 如果公司策略或其他技术问题阻止您将我们的[!DNL JavaScript]代码放在您的页面上，您仍可以使用Audience Manager通过这些事件调用[!DNL API]从[!DNL DCS]发送数据和返回数据。
+事件调用将信息发送到[!DNL DCS]字符串中的[!DNL URL]。 在典型的Audience Manager部署中，客户使用我们的[!DNL JavaScript]数据收集代码([!UICONTROL DIL])将数据发送到[!DNL DCS]。 但是，有时客户无法将我们的[!DNL JavaScript]代码放在其页面上。 如果公司策略或其他技术问题阻止您将我们的[!DNL JavaScript]代码放在您的页面上，您仍可以使用Audience Manager通过这些事件调用[!DNL DCS]从[!DNL API]发送和返回数据。
 
 ## 入门指南 {#dcs-getting-started}
 
@@ -27,7 +27,7 @@ ht-degree: 35%
 * 格式化调用中的数据元素。
 * 了解[!DNL DCS]返回的参数。
 
-要开始配置，请参阅以下部分。 从[将数据发送到DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)开始。 之后，继续从DCS[&#128279;](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)接收数据。
+要开始配置，请参阅以下部分。 从[将数据发送到DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)开始。 之后，继续从DCS[接收数据](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)。
 
 * [将数据发送到DCS](dcs-url-send.md)
 * [从DCS接收数据](dcs-url-receive.md)

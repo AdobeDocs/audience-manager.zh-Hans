@@ -1,5 +1,5 @@
 ---
-description: 适用于希望在Audience Manager内销售数据的数据提供商的概述和工作流。
+description: 适用于希望从Audience Manager中销售数据的数据提供商的概述和工作流。
 keywords: Google分析
 seo-description: Overview and workflow for data providers who want to sell data from within Audience Manager.
 seo-title: Audience Marketplace for Data Providers
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 我的共享数据：关于 {#my-shared-data-about}
 
-[!UICONTROL My Shared Data]是数据提供程序（销售者）的[!UICONTROL Audience Marketplace]功能。 作为提供商，它允许您将特征捆绑到数据馈送中，然后从[!DNL Audience Manager]内以固定费用或[!DNL CPM]费率出售给购买者。 激活后，购买者只需单击几下鼠标即可订阅信息源。 此外，简单的报告工具可跟踪收入并管理订阅者。 最后，通过[!UICONTROL Audience Marketplace]，[!DNL Adobe]为您处理发票、帐单和费用支付。 这些功能可让您专注于构建买家想要的有效且有利可图的数据馈送。
+[!UICONTROL My Shared Data]是数据提供程序（销售者）的[!UICONTROL Audience Marketplace]功能。 作为提供商，它允许您将特征捆绑到数据馈送中，然后从[!DNL CPM]内以固定费用或[!DNL Audience Manager]费率出售给购买者。 激活后，购买者只需单击几下鼠标即可订阅信息源。 此外，简单的报告工具可跟踪收入并管理订阅者。 最后，通过[!UICONTROL Audience Marketplace]，[!DNL Adobe]为您处理发票、帐单和费用支付。 这些功能可让您专注于构建买家想要的有效且有利可图的数据馈送。
 
 ![](assets/seller_marketplace.png)
 

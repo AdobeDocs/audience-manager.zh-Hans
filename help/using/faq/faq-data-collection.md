@@ -84,7 +84,7 @@ ht-degree: 74%
 
 * 将 [!UICONTROL DIL] 直接放置到 `s_code` 中。
 
-* 通过[!DNL Adobe Experience Platform Tags]为[!UICONTROL DIL]和`s_code`提供服务。
+* 通过[!UICONTROL DIL]为`s_code`和[!DNL Adobe Experience Platform Tags]提供服务。
 
 请参阅[数据集成库 (DIL) API](../dil/dil-overview.md)。
 
@@ -191,7 +191,7 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 这两个报表会根据生成时在后端看到的未验证用户配置文件记录 (UUID) 来计算人口。
 
-在第一次调用 [!DNL DCS] 时，声明的 ID *不会*&#x200B;关联到任何 UUID（这表示客户端上不存在任何 [demdex cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=zh-Hans))。[!DNL DCS] 将随机生成一个 UUID 并设置一个 [!DNL demdex] Cookie，然后在响应调用中传递该 UUID，但不会将该 UUID 传输到后端。
+在第一次调用 [!DNL DCS] 时，声明的 ID *不会*&#x200B;关联到任何 UUID（这表示客户端上不存在任何 [demdex cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html))。[!DNL DCS] 将随机生成一个 UUID 并设置一个 [!DNL demdex] Cookie，然后在响应调用中传递该 UUID，但不会将该 UUID 传输到后端。
 
 >[!NOTE]
 >

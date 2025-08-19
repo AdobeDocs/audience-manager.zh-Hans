@@ -17,7 +17,7 @@ ht-degree: 0%
 
 在将批量数据发送到第三方内容提供商之前，您需要配置Audience Manager与第三方内容提供商之间的集成。 您可以通过两种方式做到这一点：
 
-## 通过您的Adobe顾问请求帮助配置 {#config-consultant}
+## 通过您的Adobe顾问请求协助配置 {#config-consultant}
 
 如果您正在与Adobe顾问合作，他们将为您处理配置过程。
 

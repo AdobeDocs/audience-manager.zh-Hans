@@ -39,7 +39,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## 响应
 
-响应将浏览器重定向到`d_rd`参数中指定的[!DNL URL]。 响应字符串可以包含由下面列出的任何受支持的宏生成的值。
+响应将浏览器重定向到[!DNL URL]参数中指定的`d_rd`。 响应字符串可以包含由下面列出的任何受支持的宏生成的值。
 
 基于以上示例，浏览器被重定向到以下[!DNL URL]：
 
@@ -66,17 +66,17 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
    <td colname="col02"> <p>无宏。 </p> <p>接受硬编码的ID值。 </p> </td> 
-   <td colname="col2"> <p>广告商ID。</p> <p>广告商数据源的集成代码。 请注意，这与Audience Manager数据源无关。</p> <p> <span class="wintitle">Audience Optimization</span>报告需要。 </p> </td> 
+   <td colname="col2"> <p>广告商ID。</p> <p>广告商数据源的集成代码。 请注意，这与Audience Manager数据源无关。</p> <p> <span class="wintitle">个Audience Optimization</span>报告需要。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bu</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_bu%</code> </p> </td> 
-   <td colname="col2"> <p>业务部门的数值ID。 </p> <p> <span class="wintitle">Audience Optimization</span>报告需要。 </p> </td> 
+   <td colname="col2"> <p>业务部门的数值ID。 </p> <p> <span class="wintitle">个Audience Optimization</span>报告需要。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_campaign</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_campaign%</code> </p> </td> 
-   <td colname="col2"> <p>广告服务器的数字营销活动ID。 </p> <p> <span class="wintitle">Audience Optimization</span>报告需要。 </p> </td> 
+   <td colname="col2"> <p>广告服务器的数字营销活动ID。 </p> <p> <span class="wintitle">个Audience Optimization</span>报告需要。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_creative</code> </p> </td> 
@@ -96,7 +96,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword">Experience Cloud</span> ID (ECID)。 有关ECID的详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hans" format="https" scope="external"> Cookie和Experience CloudID</a>。 </p> <p>可选。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Experience Cloud</span> ID (ECID)。 有关ECID的详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Experience Cloud ID</a>。 </p> <p>可选。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 

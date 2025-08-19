@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Predictive Audiences报表
 
-保存[!UICONTROL Predictive Audiences]模型后，Audience Manager会开始对其进行训练。 在几个小时内，计算模型将开始分析[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=zh-Hans#dcs-pcs)上的受众。 报告将在第二天提供。
+保存[!UICONTROL Predictive Audiences]模型后，Audience Manager会开始对其进行训练。 在几个小时内，计算模型将开始分析[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs)上的受众。 报告将在第二天提供。
 
 若要查看[!UICONTROL Predictive Audiences]分类的结果，请转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然后在列表中单击您的模型。
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 选择模型后，将加载其报表页面。 在页面顶部，您可以根据1天的实时实现情况查看前5个最大的预测区段，该模型已按来对目标受众进行分类。 **[!UICONTROL Other]**&#x200B;类别包含其余角色，这些角色未包含在前5个最大的预测区段中。
 
-Audience Manager显示[!UICONTROL Predictive Audiences]的带颜色编码的圆环图和时间线图。
+Audience Manager会为您的[!UICONTROL Predictive Audiences]显示一个带有颜色编码的圆环图和时间线图。
 
 单击页面顶部的角色选项卡可在图表和图形中添加或删除这些角色。
 

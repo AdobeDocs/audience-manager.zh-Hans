@@ -1,9 +1,9 @@
 ---
-description: AamGpt是一个JavaScript函数，可读取Audience ManagerCookie数据并将相关信息发送到Google Publisher Tag。
+description: AamGpt是一个JavaScript函数，可读取Audience Manager Cookie数据并将这些信息发送至Google发布商标记。
 seo-description: AamGpt is a JavaScript function that reads Audience Manager cookie data and sends that information to Google Publisher Tags.
 seo-title: Audience Manager Code for Google Publisher Tags
 solution: Audience Manager
-title: Google Publisher Tags的Audience Manager代码
+title: 适用于Google发布商标记的Audience Manager代码
 uuid: 24ff5d16-b360-46cc-a4c6-6db34d7fda75
 feature: Third-party Integration
 exl-id: 04e74399-7b6a-400e-a1e6-94fe296e7209
@@ -14,13 +14,13 @@ ht-degree: 2%
 
 ---
 
-# Google Publisher Tags的Audience Manager代码 {#audience-manager-code-for-google-publisher-tags}
+# 适用于Google发布商标记的Audience Manager代码 {#audience-manager-code-for-google-publisher-tags}
 
-`AamGpt`是一个[!DNL JavaScript]函数，可读取Audience ManagerCookie数据并将该信息发送到[!DNL Google Publisher Tags]。
+`AamGpt`是一个[!DNL JavaScript]函数，可读取Audience Manager Cookie数据并将该信息发送到[!DNL Google Publisher Tags]。
 
 >[!NOTE]
 >
->如果您有自己的代码从[!UICONTROL UUID]和目标Cookie中读取Audience ManagerCookie数据，则不需要使用此函数。
+>如果您拥有自己的代码以从[!UICONTROL UUID]和目标Cookie读取Audience Manager Cookie数据，则不需要使用此函数。
 
 ## 示例代码
 

@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 数据Source同步特征 {#data-source-synced-traits}
 
-当您[创建或编辑数据源](../../features/manage-datasources.md#create-data-source)并应用以下任一设置时，[!UICONTROL Data Source Synced Traits]出现在[!UICONTROL Audience Traits]文件夹中：
+当您[!UICONTROL Data Source Synced Traits]创建或编辑数据源[!UICONTROL Audience Traits]并应用以下任一设置时，[出现在](../../features/manage-datasources.md#create-data-source)文件夹中：
 
 ![](assets/datasource_synced.png)
 

@@ -40,7 +40,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> %did%</code> </p> </td> 
-   <td colname="col2"> <p>将用户的<span class="keyword">Audience Manager</span> ID插入到目标URL中。 </p> </td> 
+   <td colname="col2"> <p>将用户的<span class="keyword"> Audience Manager</span> ID插入到目标URL中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>%dpid_<i>data source id</i>%</code> </p> </td> 
@@ -49,7 +49,7 @@ ht-degree: 1%
      <li id="li_32D9F72A7D1543A892DC7E1529E98A96">数据源ID： <code> 1</code> </li> 
      <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">内部客户ID： <code> CustomerABC</code> </li> 
      <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">声明的ID：合作伙伴希望将这些值作为声明的ID <code> 1:CustomerABC</code>传入。 </li> 
-    </ul> <p>要对<code>%dpid_<i>data source id</i>%</code>执行此操作，<span class="keyword">Audience Manager</span>合作伙伴将如下设置宏的格式： </p> 
+    </ul> <p>要对<code>%dpid_<i>data source id</i>%</code>执行此操作，<span class="keyword"> Audience Manager</span>合作伙伴将如下设置宏的格式： </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
     </ul> <p>宏会将<code> 1</code>替换为<code> CustomerABC</code>。 </p> </td> 
@@ -73,11 +73,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> %mcid%</code> </p> </td> 
-   <td colname="col2"> <p>将<span class="keyword">Experience Cloud</span> ID插入到目标URL中。 </p> </td> 
+   <td colname="col2"> <p>将<span class="keyword"> Experience Cloud</span> ID插入到目标URL中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> %region%</code> </p> </td> 
-   <td colname="col2"> <p>将<span class="wintitle">数据收集服务器(DCS)</span>区域插入到目标URL中。 为了最大限度地减少延迟，当访客对<span class="keyword">Audience Manager</span>进行HTTP调用时，他们将被重定向到最近的<span class="wintitle"> DCS</span>数据中心。 这可以通过DNS实现，DNS能够检测访客的位置并将他们定向到适当的数据中心。 </p> </td> 
+   <td colname="col2"> <p>将<span class="wintitle">数据收集服务器(DCS)</span>区域插入到目标URL中。 为了最大限度地减少延迟，当访客对<span class="keyword"> Audience Manager</span>进行HTTP调用时，他们将被重定向到最近的<span class="wintitle"> DCS</span>数据中心。 这可以通过DNS实现，DNS能够检测访客的位置并将他们定向到适当的数据中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> %rnd%</code> </p> </td> 

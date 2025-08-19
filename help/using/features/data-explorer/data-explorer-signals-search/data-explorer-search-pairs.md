@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->为了提供简化的用户体验，键值对搜索结果基于数据采样。 有关[!DNL Audience Manager]如何使用数据取样以及为什么在比较键值搜索与常规搜索时可能会出现轻微结果差异的详细信息，请参阅[数据取样率和错误率](/help/using/reporting/report-sampling.md)。
+>为了提供简化的用户体验，键值对搜索结果基于数据采样。 有关[如何使用数据取样以及为什么在比较键值搜索与常规搜索时可能会出现轻微结果差异的详细信息，请参阅](/help/using/reporting/report-sampling.md)数据取样率和错误率[!DNL Audience Manager]。
 
 使用多个键值对搜索信号时，[!DNL Audience Manager]使用逻辑&#x200B;**AND**&#x200B;运算符链接这些对。 例如，假设您使用以下键值对执行搜索：
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 从信号搜索中排除的信号 {#excluded-signals}
 
-[!UICONTROL Signals Search]未显示Audience Manager使用且前缀为`d_`和`h_`的键变量。 有关详细信息，请参阅键变量[&#128279;](../../traits/trait-variable-prefixes.md)的前缀要求。
+`d_`未显示Audience Manager使用且以`h_`和[!UICONTROL Signals Search]前缀为前缀的键变量。 有关详细信息，请参阅键变量[的](../../traits/trait-variable-prefixes.md)前缀要求。
 
 ## 区分大小写和搜索自动完成 {#case-insensitivity}
 

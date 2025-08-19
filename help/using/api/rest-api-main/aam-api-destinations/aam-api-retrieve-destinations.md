@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # 按目标ID返回目标 {#return-a-destination-by-destination-id}
 
-返回指定`destinationId`的目标的`GET`方法。
+返回指定`GET`的目标的`destinationId`方法。
 
 <!-- r_get_all_destinations_order_id.xml -->
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->要填充URL中`includeMappings=true`的`mappings`字段传递，请执行以下操作：
+>要填充URL中`mappings`的`includeMappings=true`字段传递，请执行以下操作：
 
 ## 响应
 
@@ -102,7 +102,7 @@ ht-degree: 2%
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> search</code> </td>
-   <td colname="col2">根据要用作搜索参数的指定字符串返回结果。 例如，假设您要查找在该项目的任何值字段中包含“Test”一词的所有模型的结果。 您的示例请求可能如下所示： <p><code> GET https://api.demdex.com/v1/models/?search=Test</code>. </p> <p>您可以搜索“get all”方法返回的任何值。 </p> </td>
+   <td colname="col2">根据要用作搜索参数的指定字符串返回结果。 例如，假设您要查找在该项目的任何值字段中包含“Test”一词的所有模型的结果。 您的示例请求可能如下所示： <p><code> GET https://api.demdex.com/v1/models/?search=Test</code>。 </p> <p>您可以搜索“get all”方法返回的任何值。 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -141,7 +141,7 @@ ht-degree: 2%
 
 ## 返回具有映射ID的目标映射 {#return-dest-mapping-id}
 
-基于`mappingId`返回单个目标映射的`GET`方法。
+基于`GET`返回单个目标映射的`mappingId`方法。
 
 <!-- r_get_destination_trait_data_order.xml -->
 
@@ -270,7 +270,7 @@ BROWSER, ANDROID, iOS, ALL
 
 ## 返回S2S和批量S2S目标作业历史记录 {#return-job-history}
 
-返回出站[!UICONTROL Server-to-Server] ( [!UICONTROL S2S])和批量[!UICONTROL S2S]目标作业历史记录信息的`GET`方法。
+返回出站`GET` ( [!UICONTROL Server-to-Server])和批量[!UICONTROL S2S]目标作业历史记录信息的[!UICONTROL S2S]方法。
 
 <!-- r_get_job_history.xml -->
 

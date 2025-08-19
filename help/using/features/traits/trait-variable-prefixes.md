@@ -42,11 +42,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"><code> d_</code> </td> 
-   <td colname="col2"> <p>在<span class="keyword">Audience Manager</span>级别。 此数据在<span class="keyword">Audience Manager</span>生态系统中是统一的。 有关更完整的列表，请参阅<a href="../../api/dcs-intro/dcs-api-reference/dcs-keys.md"> DCS API调用支持的属性</a>。</p> </td> 
+   <td colname="col2"> <p>在<span class="keyword"> Audience Manager</span>级别。 此数据在<span class="keyword"> Audience Manager</span>生态系统中是统一的。 有关更完整的列表，请参阅<a href="../../api/dcs-intro/dcs-api-reference/dcs-keys.md"> DCS API调用支持的属性</a>。</p> </td> 
   </tr>
   <tr> 
    <td colname="col1"><code> h_</code> </td> 
-   <td colname="col2"> <p>它包含<a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields" scope="external" format="html"> HTTP标头</a>信息。 包括标头参数，如<code> referer</code>、<code> IP</code>、<code> accept-language</code>等。 </p> <p> <p>注意：对于使用低于9.0的DIL版本的客户，使用<code> h_referer</code>信号的数据收集在Safari浏览器上不起作用。 随着<a href="https://webkit.org/blog/8311/intelligent-tracking-prevention-2-0/" format="https" scope="external"> ITP 2.0</a>的引入，Safari浏览器可能会将demdex.net域分类为跟踪器，并将截断数据收集请求上的反向链接，使其仅包含原始URL而非完整URL。 有关最新DIL版本，请参阅<a href="../../dil/dil-overview.md#get-implement-dil-code">获取和实现DIL代码</a>。<p>使用此前缀的信号未出现在<a href="../data-explorer/data-explorer-signals-search/data-explorer-signals-search.md">信号搜索</a>中。</p></p> </p> </td> 
+   <td colname="col2"> <p>它包含<a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields" scope="external" format="html"> HTTP标头</a>信息。 包括标头参数，如<code> referer</code>、<code> IP</code>、<code> accept-language</code>等。 </p> <p> <p>注意：对于使用低于9.0的DIL版本的客户，使用<code> h_referer</code>信号的数据收集在Safari浏览器上不起作用。 随着<a href="https://webkit.org/blog/8311/intelligent-tracking-prevention-2-0/" format="https" scope="external"> ITP 2.0</a>的引入，Safari浏览器可能会将demdex.net域分类为跟踪器，并将截断数据收集请求上的反向链接，使其仅包含原始URL而非完整URL。 有关最新的DIL版本，请参阅<a href="../../dil/dil-overview.md#get-implement-dil-code">获取和实施DIL代码</a>。<p>使用此前缀的信号未出现在<a href="../data-explorer/data-explorer-signals-search/data-explorer-signals-search.md">信号搜索</a>中。</p></p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><code> p_</code> </td> 

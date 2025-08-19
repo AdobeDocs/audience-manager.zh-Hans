@@ -35,7 +35,7 @@ ht-degree: 90%
 
 观看以下视频，了解 Audience Manager 如何进行 [!DNL IP] 地址模糊处理。
 
->[!VIDEO](https://video.tv.adobe.com/v/34967?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27218/)
 
 **地域划分：**&#x200B;如果启用 [!DNL IP] 地址模糊处理，则 [!DNL IP] 地址的其余八位字节仍可用于 Audience Manager 中的地域划分和报表。如果不启用 [!DNL IP] 地址模糊处理，Audience Manager 将使用完整的 [!DNL IP] 地址。您可以使用地域划分功能，不论是否使用 [!DNL IP] 模糊处理，该功能都可以让您通过地理区域来识别 [!DNL IP] 位置，但是在使用模糊处理的情况下，会略微损失一些精确度。若启用 [!DNL IP] 地址模糊处理，城市级别信息的获取很有可能会受到重大影响。而地区和国家级别信息的获取应该只会受到轻微影响。地域划分数据只精确到城市级别或邮政编码级别，而不能精确到个人级别。进一步了解[地理定位](../../features/traits/trait-geotarget-keys.md)以及如何使用地理变量设置特征。
 

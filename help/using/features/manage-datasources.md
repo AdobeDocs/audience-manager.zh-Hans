@@ -35,9 +35,9 @@ ht-degree: 0%
 1. **[!UICONTROL Description]** （可选）：输入数据源的描述，以帮助您定义数据源的角色或用途。
 1. **[!UICONTROL Integration Code]** （可选）：输入集成代码。 当您想要：
    * [创建跨设备数据源](../features/profile-merge-rules/merge-rules-start.md#create-data-source)。
-   * 使用[Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)。
+   * 使用[Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
    * 使用[配置文件合并规则](../features/profile-merge-rules/merge-rules-start.md)。
-1. **[!UICONTROL Namespace]** （只读）：此字段是只读的，在保存数据源时会自动生成。 如果要将区段从Audience Manager导出到Experience Platform，则必须在Experience Platform中创建相应的[身份命名空间](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hans#manage-namespaces)，并将自动生成的值用作Experience Platform中的命名空间[身份符号](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces#components-of-a-namespace)。
+1. **[!UICONTROL Namespace]** （只读）：此字段是只读的，在保存数据源时会自动生成。 如果要将区段从Audience Manager导出到Experience Platform，则必须在Experience Platform中创建相应的[身份命名空间](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces)，并将自动生成的值用作Experience Platform中的命名空间[身份符号](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#components-of-a-namespace)。
 1. **[!UICONTROL ID Type]**：选择此数据源将包含的ID类型：
    * **[!UICONTROL Cookie]**
    * **[!UICONTROL Device Advertising ID]**
@@ -69,7 +69,7 @@ ht-degree: 0%
 >请注意以下限制：
 >
 >* 您无法删除[活动受众或Source同步的数据](../features/traits/client-activity-synced-audience-traits.md)特征。
->* 对于使用Adobe Analytics的客户：Audience Manager不允许您删除从[!DNL Analytics]报表包中自动创建的数据源。 使用[核心服务](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/customer-attributes/attributes)取消这些数据源的映射。
+>* 对于使用Adobe Analytics的客户： Audience Manager不允许您删除从[!DNL Analytics]报表包中自动创建的数据源。 使用[核心服务](https://experienceleague.adobe.com/en/docs/core-services/interface/services/customer-attributes/attributes)取消这些数据源的映射。
 
 1. 单击&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**。
 1. 选中一个或多个数据源旁边的复选框。

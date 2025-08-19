@@ -1,5 +1,5 @@
 ---
-description: “可操作的日志文件”允许您从广告服务器日志文件捕获媒体信号，以便在Audience Manager中创建特征。 将广告服务器的展示次数、点击次数和转化次数捕获为特征，而无需追加像素。
+description: 利用可操作的日志文件，可从广告服务器日志文件捕获媒体信号，以便在Audience Manager中创建特征。 将广告服务器的展示次数、点击次数和转化次数捕获为特征，而无需追加像素。
 keywords: 可操作的日志， alf， ALF
 seo-description: Actionable Log Files allow you to capture media signals from ad server log files to create traits in Audience Manager. Capture impressions, clicks, and conversions from ad servers as traits without having to append pixels.
 seo-title: Actionable Log Files
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->文本样式（`monospaced text`、*斜体*、括号 `[ ]` `( )` 等）本文档中说明了代码元素和选项。 请参阅[代码和文本元素的样式约定](../../reference/code-style-elements.md)，以了解更多信息。
+>此文档中的文本样式（`monospaced text`、*斜体*、括号`[ ]` `( )`等）指示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../reference/code-style-elements.md)，以了解更多信息。
 
 ## 用途 {#purpose}
 
@@ -32,7 +32,7 @@ ht-degree: 2%
 若要开始使用[!UICONTROL Actionable Log Files]，您需要将日志数据导入[!DNL Audience Manager]。 以下链接将帮助您入门：
 
 * 有关[!UICONTROL Google Campaign Manager]日志，请参阅[将Google Campaign Manager数据文件导入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) *和*，联系您的[!DNL Audience Manager]顾问。
-* 有关[!UICONTROL Google Ad Manager] (以前为Google DFP)日志，请参阅[将Google Ad Manager数据文件导入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *和*，联系您的[!DNL Audience Manager]顾问。
+* 有关[!UICONTROL Google Ad Manager]&#x200B;(以前为Google DFP)日志，请参阅[将Google Ad Manager数据文件导入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *和*，联系您的[!DNL Audience Manager]顾问。
 * 有关其他广告服务器日志，请参阅[数据和元数据文件](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) *和*，请联系您的[!DNL Audience Manager]顾问。
 
 如果您已将日志数据导入[!DNL Audience Manager]，请让您的[!DNL Audience Manager]顾问或[客户关怀](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html)为您启用[!UICONTROL Actionable Log Files]。
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
-> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html) to get started.
+> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
 
 -->
 
@@ -57,12 +57,12 @@ ht-degree: 2%
 
 ## 可操作信号 {#actionable-signals}
 
-信号是[!DNL Audience Manager]中的[最小数据单元](../../reference/signal-trait-segment.md)。 [!UICONTROL Actionable Log Files]允许您从广告服务器日志中捕获展示事件、点击事件和转化事件中的广告商、业务部门、创意和促销活动值。
+信号是[中的](../../reference/signal-trait-segment.md)最小数据单元[!DNL Audience Manager]。 [!UICONTROL Actionable Log Files]允许您从广告服务器日志中捕获展示事件、点击事件和转化事件中的广告商、业务部门、创意和促销活动值。
 
 >[!IMPORTANT]
 >
 >以下ad服务器支持[!UICONTROL Actionable Log Files]：
-> <br>
+>> <br>
 >
 > * [Google促销活动经理](#dcm-logs-signals)
 > * [Google广告管理器](#ad-manager-logs-signals)
@@ -128,7 +128,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p> <code>Creative ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_creative</code> </p> </td> 
-   <td colname="col3"> <p>Google Campaign Manager提供的创作ID。 </p> </td> 
+   <td colname="col3"> <p>Google Campaign Manager提供的Creative ID。 </p> </td> 
    <td colname="col4"> <p> <code> 224221</code> </p> </td> 
   </tr> 
   <tr> 
@@ -191,7 +191,7 @@ Removed  {importance="high"} for ExL
 | `-` | `d_event` | 指示事件类型。 Audience Manager从Ad Manager日志文件名称中读取事件类型，并将其转换为可操作信号。 接受的值为： <br> <ul><li>d_event =展示次数的imp。</li><li>d_event =单击以查看点击次数。</li><li>d_event =用于转化和活动的conv。</li></ul> |
 | `-` | `d_src` | 用于捕获Ad Manager数据的数据源的ID。 请参阅[如何创建数据Source](/help/using/features/manage-datasources.md)。 |
 
-表中描述的信号像实时HTTP调用一样通过Audience Manager捕获。 以下示例调用包含有关来自Google广告管理器的转化事件的信息。 调用不一定必须在示例调用中包含所有信号。
+表中描述的信号在Audience Manager中捕获，就像实时HTTP调用一样。 以下示例调用包含有关来自Google广告管理器的转化事件的信息。 调用不一定必须在示例调用中包含所有信号。
 
 ```
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_event=conv&d_lineitem=112&d_orderid=22223&d_creative=3983524
@@ -209,7 +209,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 ### 来自Adobe Advertising Cloud、Flashtalking和Sizmek广告服务器日志的可操作信号 {#generic-logs-signals}
 
-首先，您必须将广告服务器日志存储在Amazon S3存储桶中。 要完成此操作，请阅读[Audience Optimization报表的数据文件以及可操作的日志文件](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md) *和*，联系您的[!DNL Audience Manager]顾问。 该表列出了来自广告服务器日志文件的可操作信号：
+首先，您必须将广告服务器日志存储在Amazon S3存储桶中。 要完成此操作，请阅读Audience Optimization报表的[数据文件以及可操作的日志文件](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md) *和*，联系您的[!DNL Audience Manager]顾问。 该表列出了来自广告服务器日志文件的可操作信号：
 
 <table id="table_A5A2A10D471C4C9D8DCD88F9C017040C"> 
  <thead> 
@@ -259,7 +259,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
   <tr> 
    <td colname="col1"> <p> <code>Creative-ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_creative</code> </p> </td> 
-   <td colname="col3"> <p>日志文件的创作ID。 </p> </td> 
+   <td colname="col3"> <p>日志文件中的Creative ID。 </p> </td> 
    <td colname="col4"> <p> <code> 224221</code> </p> </td> 
   </tr>
     <tr> 
@@ -331,13 +331,13 @@ UI中的![可操作信号](/help/using/integration/assets/alf-in-signals.png)
 
 ### 在Audience Optimization报表或Audience Lab中使用Google Campaign Manager Floodlight活动
 
-[Floodlight标记](https://support.google.com/dcm/partner/answer/4293719?hl=en)使广告商能够跟踪用户转化。 通过[!UICONTROL Actionable Log Files]，您可以在[Audience Optimization报表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)或[Audience Lab](../../features/audience-lab/audience-lab.md)中跟踪[!DNL Google Campaign Manager]转化：
+[Floodlight标记](https://support.google.com/dcm/partner/answer/4293719?hl=en)使广告商能够跟踪用户转化。 通过[!UICONTROL Actionable Log Files]，您可以在[!DNL Google Campaign Manager]Audience Optimization报表[或](../../reporting/audience-optimization-reports/audience-optimization-reports.md)Audience Lab[中跟踪](../../features/audience-lab/audience-lab.md)转化：
 
 1. 创建特征并使用以下特征规则从广告服务器日志中捕获转化：
 
    `d_event == conv AND d_conversion == 123`
 
-   在Audience Manager[!UICONTROL UI]中创建特征时，选择[!UICONTROL Conversion]作为[!UICONTROL Event Type]。
+   在Audience Manager [!UICONTROL UI]中创建特征时，选择[!UICONTROL Conversion]作为[!UICONTROL Event Type]。
 
 2. 创建特征后，将开始在[!UICONTROL Audience Optimization Reports]和[!UICONTROL Audience Lab]中报告转化。
 

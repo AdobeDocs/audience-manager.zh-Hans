@@ -17,7 +17,7 @@ ht-degree: 0%
 
 从所有信号（包括特征中已使用的信号）创建新特征，并捕获在创建特征后符合条件的未来受众。 观看视频以快速演示，或阅读以了解详细信息：
 
->[!VIDEO](https://video.tv.adobe.com/v/327530/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25169/?quality=12)
 
 ## 从信号仪表板创建特征 {#create-traits-from-signal-dashboard}
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 创建新特征时，系统会根据信号类型预先设置特征类型：
 
-* 实时信号、可操作的日志文件和[!DNL Adobe Analytics]信号的&#x200B;**[!UICONTROL Rule-based]**&#x200B;特征；
+* 实时信号、可操作的日志文件和&#x200B;**[!UICONTROL Rule-based]**&#x200B;信号的[!DNL Adobe Analytics]特征；
 
 * 已载入信号的&#x200B;**[!UICONTROL Onboarded]**&#x200B;特征。
 

@@ -1,5 +1,5 @@
 ---
-description: 信号是Audience Manager内信息的最小单位。 它们表示在线资产上的用户交互或用户活动，并被传递到要在特征规则中使用的Audience Manager。
+description: 信号是Audience Manager中的最小信息单位。 它们表示在线资产上的用户交互或用户活动，然后传递到Audience Manager以供在特征规则中使用。
 seo-description: Signals are the smallest unit of information within Audience Manager. They represent user interactions or user activity on your online properties, and get passed on to Audience Manager to be used in trait rules.
 seo-title: Understanding Signals
 title: 了解信号
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 了解信号
 
-信号是Audience Manager内信息的最小单位。 它们表示在线资产上的用户交互或用户活动，并被传递到要在特征规则中使用的Audience Manager。
+信号是Audience Manager中的最小信息单位。 它们表示在线资产上的用户交互或用户活动，然后传递到Audience Manager以供在特征规则中使用。
 
 [!DNL Audience Manager]使用键值对表示信号。 例如，以下信号可能表示访客访问了包含电子产品的网页：
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 ## 信号数据刷新频率
 
-由于Audience Manager每天处理的数据量很大，[!UICONTROL Data Explorer]会根据信号类型以固定时间间隔刷新显示的信号数据：
+由于Audience Manager每天处理的数据量很大，因此[!UICONTROL Data Explorer]会根据信号类型以固定时间间隔刷新显示的信号数据：
 
 * 实时信号数据（可操作的日志文件、[!DNL Adobe Analytics]数据和常规在线数据）每4到6小时刷新一次。
 * 已载入的信号数据每24小时刷新一次。

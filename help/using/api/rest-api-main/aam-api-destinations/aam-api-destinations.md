@@ -20,11 +20,11 @@ ht-degree: 0%
 
 <!-- c_destinations_api.xml -->
 
-在Audience Manager中，目标是任何其他系统（广告服务器、[!DNL DSP]、广告网络、Exchange、您自己的第一方Cookie等） 任何其他系统(广告服务器、DSP、
+在Audience Manager中，目标是要与其共享数据的任何其他系统（广告服务器、[!DNL DSP]、广告网络、Exchange、您自己的第一方Cookie等）。
 
 ## 目标类型：URL和Cookie {#destination-types}
 
-列出`destinationType`参数使用的变量。 指定要与[!UICONTROL URL]或[!UICONTROL cookie destination]一起使用的`push`或`ADS`。 无法使用可用的目标[!DNL API]方法创建[!UICONTROL server-to-server destinations]。
+列出`destinationType`参数使用的变量。 指定要与`push`或`ADS`一起使用的[!UICONTROL URL]或[!UICONTROL cookie destination]。 无法使用可用的目标[!UICONTROL server-to-server destinations]方法创建[!DNL API]。
 
 <!-- r_destination_types.xml -->
 

@@ -10,7 +10,7 @@ exl-id: e6b3a438-f843-4a24-89fd-03ef77d7cf04
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->文本样式（`monospaced text`、*斜体*、括号 `[ ]` `( )` 等）本文档中说明了代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
+>此文档中的文本样式（`monospaced text`、*斜体*、括号`[ ]` `( )`等）指示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
 
 ## 文件名语法和示例 {#file-name-syntax}
 
@@ -48,7 +48,7 @@ ID文件名包含以下必需元素和可选元素：
   </tr> 
   <tr> 
    <td colname="col1"><code><i>MASTERDPID</i></code> </td> 
-   <td colname="col2"> <p>主数据提供程序ID是文件名中DPID的父ID。 此外，数据文件中的第一个用户ID对应于主ID。 后续DPID是属于主数据库的其他标识符。 同步会将文件名中的DPID映射到文件中的UUID。</p> <p>此DPID必须仅包含设备ID，如AAM UUID、GAID、IDFA等。 它不能包含DPUUID。 这样做可能会导致不正确的同步。</p>  </td> 
+   <td colname="col2"> <p>主数据提供程序ID是文件名中DPID的父ID。 此外，数据文件中的第一个用户ID对应于主ID。 后续DPID是属于主数据库的其他标识符。 同步会将文件名中的DPID映射到文件中的UUID。</p> <p>此DPID必须只包含设备ID，如AAM UUID、GAID、IDFA等。 它不能包含DPUUID。 这样做可能会导致不正确的同步。</p>  </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>DPID</i></code> </p> </td> 
@@ -101,7 +101,7 @@ abc123 def456 ghi789 xyz987
 
 ### 文件内容注意事项 {#considerations}
 
-创建入站文件时，请确保第一列仅填充设备ID，如[!DNL AAM UUID]、[!DNL GAID]、[!DNL IDFA]等。 有关Audience Manager支持的ID的详细说明，请参阅Audience Manager[&#128279;](../../../reference/ids-in-aam.md)中的ID索引。
+创建入站文件时，请确保第一列仅填充设备ID，如[!DNL AAM UUID]、[!DNL GAID]、[!DNL IDFA]等。 有关Audience Manager支持的ID的详细说明，请参阅Audience Manager中的[ID索引](../../../reference/ids-in-aam.md)。
 
 >[!IMPORTANT]
 >
@@ -129,7 +129,7 @@ ID同步文件的用途是从您自己的数据源将[DPUUID](../../../reference
 | 66552757407517449462805881945288602094 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M |
 | 66184778222667870903738139438735041506 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw |
 
-步骤1：ID同步过程将从[!DNL DPID]12345将[!DNL DPUUID]与左列中的[!DNL Audience Manager] [!DNL UUID]同步。 请注意，文件名中的[!DNL DPID]“0”表示[!DNL Audience Manager] [!DNL UUID]。
+步骤1：ID同步过程将从[!DNL DPUUID]12345将[!DNL DPID]与左列中的[!DNL Audience Manager] [!DNL UUID]同步。 请注意，文件名中的[!DNL DPID]“0”表示[!DNL Audience Manager] [!DNL UUID]。
 <br/>
 
 **文件2** （[下载样本文件](assets/adobe_id_12345_67890_1477846458.sync)）
@@ -142,7 +142,7 @@ ID同步文件的用途是从您自己的数据源将[DPUUID](../../../reference
 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M | 2351382994 |
 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw | 4601584763 |
 
-步骤2： [!DNL DPID]中的[!DNL DPUUID]12345已在步骤1中与Audience Manager[!DNL UUID]同步。此ID同步将执行步骤1中将[!DNL DPID]67890的[!DNL DPUUID]与步骤1中的Audience Manager[!DNL UUID]同步。
+步骤2： [!DNL DPUUID]12345中的[!DNL DPID]已在步骤1中与Audience Manager [!DNL UUID]同步。此ID同步将执行步骤1中将[!DNL DPUUID]67890中的[!DNL DPID]与Audience Manager [!DNL UUID]同步。
 
 <br/>
 

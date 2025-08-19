@@ -25,8 +25,8 @@ ht-degree: 0%
 
 1. **[!UICONTROL Add New]**：使用此选项创建新[!UICONTROL rule-based]、[!UICONTROL algorithmic]或[!UICONTROL onboarded traits]。
 2. **[!UICONTROL Edit]**：使用此选项更改当前[!UICONTROL trait]的配置。
-3. **[!UICONTROL Delete]**：使用此选项从您的Audience Manager帐户中删除当前[!UICONTROL trait]。
-4. **[!UICONTROL Marketplace Recommendations]**：使用此选项查找与您正在查看的数据类似[!UICONTROL traits]，但您未订阅[!UICONTROL Audience Marketplace]数据费用。 请参阅[面向数据购买者的Audience Marketplace](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)，了解如何导航[!UICONTROL Marketplace]并查找相似的特征。
+3. **[!UICONTROL Delete]**：使用此选项可从您的Audience Manager帐户中删除当前[!UICONTROL trait]。
+4. **[!UICONTROL Marketplace Recommendations]**：使用此选项查找与您正在查看的数据类似[!UICONTROL traits]，但您未订阅[!UICONTROL Audience Marketplace]数据费用。 请参阅[面向数据购买者的Audience Marketplace](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)，了解如何导航[!UICONTROL Marketplace]并查找相似特征。
 
 ![基本特征信息](assets/basic-trait-information.png)
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 对于[!UICONTROL rule-based traits]，将实时进行[!UICONTROL trait]鉴别，因为用户在其浏览器中符合[!UICONTROL trait]的资格。
 
-对于[!UICONTROL onboarded traits]，[!UICONTROL trait]鉴别会在处理入站文件后发生，即入站文件是[馈送到Audience Manager](../../faq/faq-inbound-data-ingestion.md)中，且此时发生[!UICONTROL trait]鉴别。
+对于[!UICONTROL onboarded traits]，[!UICONTROL trait]鉴别会在处理入站文件后发生，即入站文件是[馈送到Audience Manager](../../faq/faq-inbound-data-ingestion.md)，此时发生[!UICONTROL trait]鉴别。
 
 [!UICONTROL Trait Graph]显示以下信息：
 
@@ -55,15 +55,15 @@ ht-degree: 0%
 * **[!UICONTROL Unique Trait Realizations]**：在给定时间范围内将此[!UICONTROL trait]添加到其配置文件的独特用户计数。
 * **[!UICONTROL Total Trait Population]**：当前符合此[!UICONTROL trait]资格的唯一用户数。
 
-* **[!UICONTROL Identity Type Breakdown]**：前三个条目按降序显示符合[!UICONTROL trait]条件的前3个[!UICONTROL cross-device data sources]，具有最高的群体计数。 第四个条目显示来自[!UICONTROL cross-device data sources]且不在前三个中的所有其他符合[!UICONTROL trait]资格的[!DNL DPUUIDs] ([!DNL CRM IDs])的总和。 仅当您在页面右上方的[!UICONTROL Show Results By]下拉菜单中选择[!UICONTROL Cross-device ID]时，才会显示此报告。 默认下拉选项为[!UICONTROL Device ID]，其中不显示此报告。
+* **[!UICONTROL Identity Type Breakdown]**：前三个条目按降序显示符合[!UICONTROL cross-device data sources]条件的前3个[!UICONTROL trait]，具有最高的群体计数。 第四个条目显示来自[!DNL DPUUIDs]且不在前三个中的所有其他符合[!DNL CRM IDs]资格的[!UICONTROL trait] ([!UICONTROL cross-device data sources])的总和。 仅当您在页面右上方的[!UICONTROL Cross-device ID]下拉菜单中选择[!UICONTROL Show Results By]时，才会显示此报告。 默认下拉选项为[!UICONTROL Device ID]，其中不显示此报告。
 
   ![特征图](assets/trait-identity.png)
 
   >[!NOTE]
   >
-  >如果您有[!UICONTROL cross-device]个ID符合[!UICONTROL trait]的条件，则Audience Manager仅显示[!UICONTROL Identity Type Breakdown]报告。
+  >仅当您有[!UICONTROL Identity Type Breakdown]个ID符合[!UICONTROL cross-device]条件时，Audience Manager才会显示[!UICONTROL trait]报告。
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32078?captions=chi_hans)
+  >[!VIDEO](https://video.tv.adobe.com/v/27977/)
 
 ## [!UICONTROL Trait]表达式 {#trait-expression}
 
@@ -83,6 +83,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!UICONTROL By User]列中的[!UICONTROL Not Available]表示该用户的帐户已被删除。
+>[!UICONTROL Not Available]列中的[!UICONTROL By User]表示该用户的帐户已被删除。
 
 ![](assets/traitHistory.png)

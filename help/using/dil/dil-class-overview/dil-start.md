@@ -3,7 +3,7 @@ description: 描述类级别DIL文档中使用的身份验证要求和文本格�
 seo-description: Describes authentication requirements and the text formatting used in the class-level DIL documentation.
 seo-title: Getting Started With Class-level DIL APIs
 solution: Audience Manager
-title: 开始使用类级别DILAPI
+title: 开始使用类级别DIL API
 uuid: 00c1136a-5f08-4104-b0ed-3de847cecd16
 feature: DIL Implementation
 exl-id: 909d39a1-0da6-467e-a13b-19a57f9186a1
@@ -14,19 +14,19 @@ ht-degree: 0%
 
 ---
 
-# 开始使用类级别DILAPI{#getting-started-with-class-level-dil-apis}
+# 开始使用类级别DIL API{#getting-started-with-class-level-dil-apis}
 
 >[!WARNING]
 >
 >从2023年7月开始，Adobe已停止开发[!DNL Data Integration Library (DIL)]和[!DNL DIL]扩展。
 >
->现有客户可以继续使用其[!DNL DIL]实施。 但是，Adobe在此点之后不会开发[!DNL DIL]。 建议客户评估[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)的长期数据收集策略。
+>现有客户可以继续使用其[!DNL DIL]实施。 但是，Adobe在此之后不会开发[!DNL DIL]。 建议客户评估[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)的长期数据收集策略。
 >
->如果客户希望在2023年7月之后实施新的数据收集集成，则应改用[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)。
+>如果客户希望在2023年7月之后实施新的数据收集集成，则应改用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)。
 
-类级别DILAPI允许您以编程方式创建和使用Audience Manager对象。 类级别API与其他实例级别函数结合使用来设置值或返回数据。
+类级别DIL API允许您以编程方式创建和使用Audience Manager对象。 类级别API与其他实例级别函数结合使用来设置值或返回数据。
 
-## 开始使用类级别DILAPI {#get-started}
+## 开始使用类级别DIL API {#get-started}
 
 描述类级别[!UICONTROL DIL]文档中使用的身份验证要求和文本格式。
 

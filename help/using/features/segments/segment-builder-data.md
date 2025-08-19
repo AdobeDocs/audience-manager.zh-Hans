@@ -14,13 +14,13 @@ ht-degree: 1%
 
 ---
 
-# [!UICONTROL Segment Builder]中的[!UICONTROL Trait]和[!UICONTROL Segment]填充数据 {#trait-and-segment-population-data-in-segment-builder}
+# [!UICONTROL Trait]中的[!UICONTROL Segment]和[!UICONTROL Segment Builder]填充数据 {#trait-and-segment-population-data-in-segment-builder}
 
-在[!UICONTROL Segment Builder]中添加和删除[!UICONTROL traits]以查看实际[!UICONTROL trait]群体以及实际和预计的区段群体数据。 预计群体规模数据可帮助您为营销活动构建正确的区段。
+在[!UICONTROL traits]中添加和删除[!UICONTROL Segment Builder]以查看实际[!UICONTROL trait]群体以及实际和预计的区段群体数据。 预计群体规模数据可帮助您为营销活动构建正确的区段。
 
 ## [!UICONTROL Trait]群体数据 {#trait-population-data}
 
-当您向区段添加[!UICONTROL trait]时，[!UICONTROL Segment Builder]显示您[!UICONTROL Total Trait Population]的最后一天。 此数据显示在[!UICONTROL Basic View]部分中选定[!UICONTROL trait]周围的蓝色字段中。
+当您向区段添加[!UICONTROL Segment Builder]时，[!UICONTROL Total Trait Population]显示您[!UICONTROL trait]的最后一天。 此数据显示在[!UICONTROL trait]部分中选定[!UICONTROL Basic View]周围的蓝色字段中。
 
 ![](assets/trait-size.png)
 
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ## 计算实际和预计区段人口 {#calculating-real-estimated-populations}
 
-创建新区段或更改现有区段时，最多需要24小时Audience Manager才能显示实际实时区段人口和总区段人口的结果。
+创建新区段或更改现有区段时，Audience Manager最多需要24小时才能显示实际实时区段人口和总区段人口的结果。
 
 但是，Audience Manager可以立即估计区段的实时人口大小和总人口大小。 这些估计值基于样本历史数据和95%置信区间下的返回结果。
 
@@ -68,11 +68,11 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle">预计的实时人口（潜在）</span> </p> </td> 
-   <td colname="col2"> <p>在指定时间范围内实时查看的估计独特访客数，以及在Audience Manager看到这些访客时符合区段资格条件的访客数。 </p> <p>在<span class="wintitle">区段生成器</span>中，特征的最后30天群体（<span class="wintitle">总特征群体</span>）对于实时评估的特征和区段可能不同。 </p> <p>
+   <td colname="col2"> <p>在指定时间范围内实时查看的估计独特访客数，以及在Audience Manager查看这些访客时符合区段资格条件的访客数。 </p> <p>在<span class="wintitle">区段生成器</span>中，特征的最后30天群体（<span class="wintitle">总特征群体</span>）对于实时评估的特征和区段可能不同。 </p> <p>
      <ul id="ul_CAE803D09913462CAD413A665D85C1A2"> 
       <li id="li_3E64330D6F5B4D2F8F3456730A86894F">对于特征，过去30天的量度会计算过去30天内符合该特征条件的独特用户数。 </li>
-      <li id="li_FF3CACD0B6C742CDB94D66200D77CE06">对于实时评估的区段，“最近30天”量度计算过去某个时间点符合某个特征（位于该区段中）并在30天内被Audience Manager再次查看的用户数量。 例如，假设您的某个用户在60天前符合某个特征的条件，但在10天前再次出现。 在该数据中，此用户不会被添加到特征计数，因为他们首次符合特征是在30多天前。 但是，它们将被纳入实时评估的区段的最后30天计数中。 这是因为他们已在30天时间间隔内符合区段的条件。 </li>
-     </ul> </p> <p> <p>注意： <span class="wintitle">估计实时人口</span>量度不包括已根据由使用<a href="../../features/profile-merge-rules/merge-rule-definitions.md#device-options">设备图选项</a>的<span class="wintitle">配置文件合并规则</span>提供的连接符合区段资格条件的设备。 </p> </p> </td> 
+      <li id="li_FF3CACD0B6C742CDB94D66200D77CE06">对于实时评估的区段，“最近30天”量度计算过去某个时间点符合某个特征（位于该区段中）并在Audience Manager过去30天内再次查看该特征的用户数。 例如，假设您的某个用户在60天前符合某个特征的条件，但在10天前再次出现。 在该数据中，此用户不会被添加到特征计数，因为他们首次符合特征是在30多天前。 但是，它们将被纳入实时评估的区段的最后30天计数中。 这是因为他们已在30天时间间隔内符合区段的条件。 </li>
+     </ul> </p> <p> <p>注意： <span class="wintitle">估计实时人口</span>量度不包括已根据由使用<span class="wintitle">设备图选项</span>的<a href="../../features/profile-merge-rules/merge-rule-definitions.md#device-options">配置文件合并规则</a>提供的连接符合区段资格条件的设备。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle">估计的总人口（潜在）</span> </p> </td> 
@@ -80,7 +80,7 @@ ht-degree: 1%
      <ul id="ul_0490DD08C7C8493DADFB11B5872A73BC"> 
       <li id="li_AE38C8C8A4B24021BAC724B51A4799E2">查看在构建区段时，新区段或修订区段可以联系的人数。 </li> 
       <li id="li_E830EC2B12DC46D4B0A4DD807A8936F6">根据您的目标调整区段。 例如，大区段对于品牌认知活动很有用，而小区段对于重点定位或重新定位活动很有用。 </li> 
-     </ul> </p> <p> <p>注意： <span class="wintitle">估计总人口</span>量度不包括已根据由使用<a href="../../features/profile-merge-rules/merge-rule-definitions.md#device-options">设备图形选项</a>的<span class="wintitle">配置文件合并规则</span>提供的连接而符合区段资格条件的设备。 </p> </p> </td> 
+     </ul> </p> <p> <p>注意： <span class="wintitle">估计总人口</span>量度不包括已根据由使用<span class="wintitle">设备图形选项</span>的<a href="../../features/profile-merge-rules/merge-rule-definitions.md#device-options">配置文件合并规则</a>提供的连接而符合区段资格条件的设备。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -89,9 +89,9 @@ ht-degree: 1%
 
 [!UICONTROL Profile Merge Rules]会影响实际的实时和总人口数。 这些总数取决于区段所属的[!UICONTROL Profile Merge Rule]是否使用设备图选项。 另请参阅[定义的配置文件合并规则选项](../../features/profile-merge-rules/merge-rule-definitions.md)。
 
-### 不带[!UICONTROL Device Graph Option]的[!UICONTROL Merge Rules]的区段人口数据
+### 不带[!UICONTROL Merge Rules]的[!UICONTROL Device Graph Option]的区段人口数据
 
-下表定义了当您的区段由创建时没有[!UICONTROL device graph]选项的[!UICONTROL Profile Merge Rule]使用时，实际的实时和总人口量度。 设备选项设置&#x200B;**[!UICONTROL No Device Options]**&#x200B;和&#x200B;**[!UICONTROL Current Device Proflie]**。
+下表定义了当您的区段由创建时没有[!UICONTROL Profile Merge Rule]选项的[!UICONTROL device graph]使用时，实际的实时和总人口量度。 设备选项设置&#x200B;**[!UICONTROL No Device Options]**&#x200B;和&#x200B;**[!UICONTROL Current Device Proflie]**。
 
 <table id="table_A18C973855DB46A0B39B81F32E0E7540"> 
  <thead> 
@@ -103,10 +103,10 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle">实时人口（现有）</span> </p> </td> 
-   <td colname="col2"> <p>在指定时间范围内实时查看的实际独特访客数，以及在Audience Manager看到这些访客时符合区段资格条件的访客数。 </p> <p>在<span class="wintitle">区段生成器</span>中，特征的最后30天群体（<span class="wintitle">总特征群体</span>）对于实时评估的特征和区段可能不同。 </p> <p> 
+   <td colname="col2"> <p>在指定时间范围内实时查看的实际独特访客数，以及在Audience Manager查看这些访客时符合区段资格条件的访客数。 </p> <p>在<span class="wintitle">区段生成器</span>中，特征的最后30天群体（<span class="wintitle">总特征群体</span>）对于实时评估的特征和区段可能不同。 </p> <p> 
      <ul id="ul_50D1528DDDF347858F17DA3C033B0E3F"> 
       <li id="li_ABA2BFE68FF4430DBB425C4661E1836A">对于特征，过去30天的量度会计算过去30天内符合该特征条件的独特用户数。 </li> 
-      <li id="li_1519068CBB1445E893657D12E8FE42AC">对于实时评估的区段，“最近30天”量度计算过去某个时间点符合某个特征（位于该区段中）并在30天内被Audience Manager再次查看的用户数量。 例如，假设您的某个用户在60天前符合某个特征的条件，但在10天前再次出现。 在该数据中，此用户不会被添加到特征计数，因为他们首次符合特征是在30多天前。 但是，它们将被纳入实时评估的区段的最后30天计数中。 这是因为他们已在30天时间间隔内符合区段的条件。 </li> 
+      <li id="li_1519068CBB1445E893657D12E8FE42AC">对于实时评估的区段，“最近30天”量度计算过去某个时间点符合某个特征（位于该区段中）并在Audience Manager过去30天内再次查看该特征的用户数。 例如，假设您的某个用户在60天前符合某个特征的条件，但在10天前再次出现。 在该数据中，此用户不会被添加到特征计数，因为他们首次符合特征是在30多天前。 但是，它们将被纳入实时评估的区段的最后30天计数中。 这是因为他们已在30天时间间隔内符合区段的条件。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -116,14 +116,14 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-### 带[!UICONTROL Device Graph]选项的[!UICONTROL Merge Rules]的区段人口数据
+### 带[!UICONTROL Merge Rules]选项的[!UICONTROL Device Graph]的区段人口数据
 
-下表定义了使用[!DNL device graph]选项创建的[!UICONTROL Profile Merge Rule]使用区段时的实际实时和总人口量度。 这些是您可用的[!UICONTROL Profile Link Device Graph]、[!DNL Adobe] [!DNL device graph]和其他第三方[!DNL device graph]选择的设备选项设置。
+下表定义了使用[!UICONTROL Profile Merge Rule]选项创建的[!DNL device graph]使用区段时的实际实时和总人口量度。 这些是您可用的[!UICONTROL Profile Link Device Graph]、[!DNL Adobe] [!DNL device graph]和其他第三方[!DNL device graph]选择的设备选项设置。
 
 
 | 列A | 列B |
 |---------|----------|
-| [!UICONTROL Real-Time Population (Existing)] | 使用当前配置文件实时查看的实际设备数，这些当前配置文件与通过设备图连接的多达100个其他设备配置文件合并时，包含在Audience Manager看到区段时即表明其符合条件的特征。 |
+| [!UICONTROL Real-Time Population (Existing)] | 使用当前配置文件实时查看的实际设备数，这些当前配置文件与通过设备图连接的多达100个其他设备配置文件合并时，包含在Audience Manager查看区段时即表明其符合条件的特征。 |
 | [!UICONTROL Total Population (Existing)] | 当与通过设备图连接的多达100个其他设备配置文件合并时，其配置文件均符合该区段资格条件的设备总数。 |
 
 ### 估算区段人口时，由于回访间隔和频率表达式导致的限制

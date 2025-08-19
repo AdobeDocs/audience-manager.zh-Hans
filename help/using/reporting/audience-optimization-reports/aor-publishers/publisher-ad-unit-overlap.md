@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 用例 {#use-cases}
 
-通过&#x200B;**[!UICONTROL Ad Unit Overlap]**&#x200B;报表，您可以深入了解受众在Web资产中的重叠位置。 该报表会考虑您的100个热门相关属性，并显示它们之间的重叠。
+通过&#x200B;**[!UICONTROL Ad Unit Overlap]**&#x200B;报表，您可以将insight获取到受众在Web资产中重叠的位置。 该报表会考虑您的100个热门相关属性，并显示它们之间的重叠。
 
 ## 使用广告单位重叠报表 {#using-the-report}
 

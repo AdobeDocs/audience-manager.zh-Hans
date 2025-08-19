@@ -24,13 +24,13 @@ ht-degree: 2%
 
 要使用此方法，目标平台必须满足以下要求：
 
-* 它必须提供一个端点[!DNL URL]，该端点可以扩展以接收来自Audience Manager的大量消息；
+* 它必须提供一个端点[!DNL URL]，该端点可以扩展，以接收来自Audience Manager的大量消息；
 * 它必须接受[!DNL JSON]格式(`Content-type: application/json`)的数据；
 * 它必须接受安全`HTTPS`数据传输。 [!DNL Audience Manager]不会通过不安全的`HTTP`协议发送消息。
 
-## 频度
+## 频率
 
-这种数据传输方法可以在用户符合区段资格时近乎实时地发送数据。 实时消息仅在Audience Manager在线并对Edge网络主动可见时投放。 或者，此方法也可以每24小时发送一批离线或已载入的数据。
+这种数据传输方法可以在用户符合区段资格时近乎实时地发送数据。 实时消息仅在用户在线并对Audience Manager Edge网络主动可见时投放。 或者，此方法也可以每24小时发送一批离线或已载入的数据。
 
 ## 批量传输
 
@@ -95,7 +95,7 @@ ht-degree: 2%
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_UUID</i></code> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
-   <td colname="col3"> <p><span class="keyword">Audience Manager</span> UUID。 </p> </td> 
+   <td colname="col3"> <p><span class="keyword"> Audience Manager</span> UUID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User.DataPartner_UUID</i></code> </td> 
@@ -130,7 +130,7 @@ ht-degree: 2%
      <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">根据区段的<a href="../../../features/traits/segment-ttl-explained.md">生存时间间隔</a>从区段中删除。 </li> 
      <li id="li_F48D1052BA2B45108225641292CC748D">如果最近120天未看到这些幻灯片，则将其移至不活动状态。 </li>
      <li>由于隐私更改请求（即<span class="keyword"> GDPR</span>）已删除</li>
-    </ul> <p>未对Audience Manager进行分段时，同步到<span class="keyword"> ID </span> ID的所有合作伙伴ID都将收到<code> "Status":"0"</code>标记。 </p> </td> 
+    </ul> <p>当用户未分段时，同步到<span class="keyword"> Audience Manager</span> ID的所有合作伙伴ID都将接收<code> "Status":"0"</code>标记。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.DateTime</i></code> </td> 
@@ -142,7 +142,7 @@ ht-degree: 2%
 
 ## 安全性
 
-通过使用私钥[签署HTTP请求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)或通过[OAuth 2.0](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)协议进行[!DNL Audience Manager]身份验证，您可以保护实时出站数据传输进程。
+通过使用私钥[签署HTTP请求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)或通过[!DNL Audience Manager]OAuth 2.0[协议进行](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)身份验证，您可以保护实时出站数据传输进程。
 
 ## 请求
 

@@ -59,7 +59,7 @@ Overlap reports ([trait-to-trait](/help/using/reporting/dynamic-reports/trait-tr
 
 ## 使用Minhash采样方法 {#minhash}
 
-基于[Minhash](https://en.wikipedia.org/wiki/MinHash)采样方法，Audience Manager在One Permentation Hashing数据草图的基础上使用一种新的方法计算特征和区段估计值。 与标准估计方法相比，该方法对Jaccard相似性的估计方差更小。 请参阅以下部分，了解使用这种方法的报告。
+Audience Manager基于[Minhash](https://en.wikipedia.org/wiki/MinHash)采样方法，使用一种新的方法在One Permentation Hashing数据草图上计算特征和区段估计值。 与标准估计方法相比，该方法对Jaccard相似性的估计方差更小。 请参阅以下部分，了解使用这种方法的报告。
 
 <!--
 
@@ -87,5 +87,5 @@ Reports that use Minhash sampling methodology:
 | 统计取样 | Minhash采样方法 |
 |--- |--- |
 | [可寻址受众](../features/addressable-audiences.md)数据（客户和区段级别的数据）。 | [重叠报表](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports)（特征到特征、区段到特征和区段到区段） |
-| [!UICONTROL Profile Merge Rule]的[总设备](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics)指标。 | [特征推荐](/help/using/features/segments/trait-recommendations.md) |
-| [Data Explorer](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)在[!UICONTROL Search]选项卡和任何[!UICONTROL Saved Searches]中使用采样数据 | [Audience MarketplaceRecommendations](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |
+| [的](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics)总设备[!UICONTROL Profile Merge Rule]指标。 | [特征推荐](/help/using/features/segments/trait-recommendations.md) |
+| [Data Explorer](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)在[!UICONTROL Search]选项卡和任何[!UICONTROL Saved Searches]中使用采样数据 | [Audience Marketplace推荐](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |

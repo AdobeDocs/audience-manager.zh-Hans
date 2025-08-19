@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## URL字符串参数和语法 {#url-string-syntax}
 
-入站数据传输的[!DNL URL]应包含如下所述的变量。 在设置实时数据传输之前，请记得在[!DNL Audience Manager] UI中[创建特征](../../../features/traits/create-onboarded-rule-based-traits.md)和[文件夹结构](../../../features/traits/trait-storage.md#create-trait-storage-folder)。
+入站数据传输的[!DNL URL]应包含如下所述的变量。 在设置实时数据传输之前，请记得在[ UI中](../../../features/traits/create-onboarded-rule-based-traits.md)创建特征[和](../../../features/traits/trait-storage.md#create-trait-storage-folder)文件夹结构[!DNL Audience Manager]。
 
 >[!NOTE]
 >

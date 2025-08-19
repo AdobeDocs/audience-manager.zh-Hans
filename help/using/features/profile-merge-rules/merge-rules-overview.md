@@ -18,7 +18,7 @@ ht-degree: 0%
 
 通过[!UICONTROL Profile Merge Rules]，您可以控制用于分段的数据集，并且可以跨多个设备准确地定位用户。
 
->[!VIDEO](https://video.tv.adobe.com/v/31955?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28974)
 
 ## 使用匿名和经过身份验证的用户档案进行数据收集和定位 {#data-collection-targeting}
 
@@ -45,4 +45,4 @@ ht-degree: 0%
 * 跨设备定位特定客户。
 * 基于确定性数据构建设备图。
 * 根据不同的配置文件微调[!UICONTROL segments]中的数据。
-* 获得对受众的其他洞察。
+* 向受众中获取额外的insight。

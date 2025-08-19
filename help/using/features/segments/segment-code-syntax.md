@@ -16,7 +16,7 @@ ht-degree: 4%
 
 # 区段表达式编辑器中使用的代码语法 {#code-syntax-used-in-the-segment-expression-editor}
 
-[!UICONTROL Segment Builder]允许您使用代码编辑器为区段构建特征规则。 单击[!UICONTROL Traits]面板中的&#x200B;**[!UICONTROL Segment Expressions (Code View)]**&#x200B;选项卡以访问此功能。
+[!UICONTROL Segment Builder]允许您使用代码编辑器为区段构建特征规则。 单击&#x200B;**[!UICONTROL Segment Expressions (Code View)]**&#x200B;面板中的[!UICONTROL Traits]选项卡以访问此功能。
 
 ## 表达式生成器代码语法
 
@@ -33,7 +33,7 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
 
 ### 使用布尔运算符连接区段
 
-要构建区段组，请将频率函数括在括号中，并使用[!DNL Boolean]运算符（[!UICONTROL AND]、[!UICONTROL OR]和[!UICONTROL NOT]）为每个表达式设置&#x200B;*之间的关系*。
+要构建区段组，请将频率函数括在括号中，并使用&#x200B;*运算符（*、[!DNL Boolean]和[!UICONTROL AND]）为每个表达式设置[!UICONTROL OR]之间的关系[!UICONTROL NOT]。
 
 ### 参数
 

@@ -34,28 +34,25 @@ ht-degree: 0%
 
 请按照以下步骤构建[!UICONTROL Look-Alike Model]：
 
-1. 转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然后单击[!UICONTROL Look-Alike Modeling]部分中的&#x200B;**[!UICONTROL Add New]**。
+1. 转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然后单击&#x200B;**[!UICONTROL Add New]**&#x200B;部分中的[!UICONTROL Look-Alike Modeling]。
    ![相似添加](assets/look-alike-add.png)
 1. 在[基本信息](../../features/algorithmic-models/create-model.md#basic-information)部分中
    * 命名模型。
    * *（可选）*&#x200B;提供有关模型的简短描述。
    * 将模型的状态设置为&#x200B;**[!UICONTROL Active]**&#x200B;或&#x200B;**[!UICONTROL Inactive]**。 不活动的模型将不会运行，也不会生成任何数据。
-
      ![相似基本](assets/look-alike-basic.png)
 1. 在[配置](../../features/algorithmic-models/create-model.md#configuration)部分中：
    * 单击&#x200B;**[!UICONTROL Browse All Traits]**&#x200B;或&#x200B;**[!UICONTROL Browse All Segments]**&#x200B;以选择要作为建模依据的特征或区段。 按名称、ID、描述或数据源搜索特征。 搜索时单击某个文件夹，将结果限制为该文件夹及其子文件夹。 您还可以按特征类型（[!UICONTROL Folder Trait]、[!UICONTROL Rule-based]、[!UICONTROL Onboarded]和[!UICONTROL Algorithmic]）或群体类型（[设备ID](../../reference/ids-in-aam.md)和[跨设备ID](../../reference/ids-in-aam.md)）筛选特征。
-
      ![浏览特征](assets/browse-traits.png)
    * 选择30、60或90天的回顾时段。 这将设置模型的时间范围。
    * 默认情况下选择[!UICONTROL TraitWeight]算法。
    * 从[!UICONTROL Available Data]列表中选择数据源。
    * 完成后单击&#x200B;**[!UICONTROL Save]**。
-
      ![相似配置](assets/look-alike-configuration.png)
 
 请观看以下视频，详细了解跨设备量度的工作方式。
 
->[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html?lang=zh-Hans)
+>[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## 算法模型的基本信息 {#basic-information}
 
@@ -99,7 +96,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>选择算法(3)</b> </p> </td> 
-   <td colname="col2"> <p>目前，模型生成器仅与我们的专有<span class="keyword">特征权重</span>算法一起使用。 <span class="keyword">Audience Manager</span>可能在后续版本中添加其他算法函数。 </p> </td>
+   <td colname="col2"> <p>目前，模型生成器仅与我们的专有<span class="keyword">特征权重</span>算法一起使用。 <span class="keyword"> Audience Manager</span>可能会在后续版本中添加其他算法函数。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>从数据Source (4)中选择模型数据</b> </p> </td> 
@@ -114,7 +111,7 @@ ht-degree: 0%
 
 观看以下视频，了解如何创建第一方相似人群拓展模型，以便您能够找到更多与转换器相似的人群。
 
->[!VIDEO](https://video.tv.adobe.com/v/328070?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/23504/)
 
 >[!MORELIKETHIS]
 >

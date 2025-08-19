@@ -26,8 +26,8 @@ ht-degree: 0%
 1. **[!UICONTROL Add New]**：使用此选项激活[!UICONTROL Segment Builder]并创建新区段。
 2. **[!UICONTROL Edit]**：使用此选项更改当前区段的配置。
 3. **[!UICONTROL Duplicate]**：使用此选项创建当前区段的副本。
-4. **[!UICONTROL Delete]**：使用此选项从Audience Manager帐户中删除当前区段。
-5. **[!UICONTROL Marketplace Recommendations]**：使用此选项从您未订阅的[!UICONTROL Audience Marketplace]数据馈送中查找与正在查看的区段类似的区段。 请参阅[面向数据购买者的Audience Marketplace](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)，了解如何在Marketplace中导航并查找类似区段。
+4. **[!UICONTROL Delete]**：使用此选项可从Audience Manager帐户中删除当前区段。
+5. **[!UICONTROL Marketplace Recommendations]**：使用此选项从您未订阅的[!UICONTROL Audience Marketplace]数据馈送中查找与正在查看的区段类似的区段。 请参阅[面向数据购买者的Audience Marketplace](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)，了解如何在Marketplace中导航和查找类似区段。
 
 ![基本区段信息](assets/basic-segment-information.png)
 
@@ -46,10 +46,10 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Audience Manager仅在跨设备ID符合区段资格条件时显示[!UICONTROL Identity Type Breakdown]报告。
+   >仅当您具有符合区段资格的跨设备ID时，Audience Manager才会显示[!UICONTROL Identity Type Breakdown]报表。
 
    观看以下视频，了解[!UICONTROL Identity Type Breakdown]的概述。
-   >[!VIDEO](https://video.tv.adobe.com/v/32078?captions=chi_hans)
+   >[!VIDEO](https://video.tv.adobe.com/v/27977/)
 
 4. **[!UICONTROL Segment Rules]：**&#x200B;列出区段中的特征以及资格规则。
 5. **[!UICONTROL Destination Mappings]：**&#x200B;列出区段的目标映射。

@@ -1,5 +1,5 @@
 ---
-description: 数据收集组件包括数据收集服务器、DILAPI、入站服务器到服务器数据传输和日志文件。
+description: 数据收集组件包括数据收集服务器、DIL API、入站服务器到服务器数据传输和日志文件。
 seo-description: Data collection components include the Data Collection Servers, the DIL API, inbound server-to-server data transfers, and log files.
 seo-title: Data Collection Components
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 # 数据收集组件{#data-collection-components}
 
-数据收集组件包括数据收集服务器、DILAPI、入站服务器到服务器数据传输和日志文件。
+数据收集组件包括数据收集服务器、DIL API、入站服务器到服务器数据传输和日志文件。
 
 <!-- 
 
@@ -78,15 +78,15 @@ Removed /dpm calls from the bulleted list. /dpm calls have been deprecated.
 
  -->
 
-如果[!UICONTROL PCS]在17天内不活动，则会刷新特征。 但是，这些特征不会丢失。 它们储存在Hadoop中。 如果用户在其他时间再次被看到，则Hadoop会将其所有特征推送回[!UICONTROL PCS]，通常在24小时内。
+如果[!UICONTROL PCS]在17天内不活动，则会刷新特征。 但是，这些特征不会丢失。 它们存储在Hadoop中。 如果某个用户在其他时间再次被看到，则Hadoop会将其所有特征推送回[!UICONTROL PCS]，通常在24小时内。
 
 **其他[!UICONTROL DCS/PCS]进程：隐私选择退出**
 
-这些服务器系统处理隐私和用户选择退出请求。 如果用户已选择退出数据收集，则不会收集日志文件中的用户Cookie信息。 有关隐私政策的详细信息，请参阅[Adobe隐私中心](https://www.adobe.com/cn/privacy/advertising-services.html)。
+这些服务器系统处理隐私和用户选择退出请求。 如果用户已选择退出数据收集，则不会收集日志文件中的用户Cookie信息。 有关隐私政策的更多信息，请参阅[Adobe隐私中心](https://www.adobe.com/cn/privacy/advertising-services.html)。
 
 ## 数据集成库 (DIL) {#dil}
 
-[!UICONTROL DIL]是您放置在页面上用于数据收集的代码。 有关可用服务和方法的详细信息，请参阅[DILAPI](../../dil/dil-overview.md)。
+[!UICONTROL DIL]是您放置在页面上用于数据收集的代码。 有关可用服务和方法的更多信息，请参阅[DIL API](../../dil/dil-overview.md)。
 
 ## 入站服务器到服务器 {#inbound-outbound-server}
 

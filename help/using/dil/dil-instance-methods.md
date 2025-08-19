@@ -1,5 +1,5 @@
 ---
-description: 实例级别的DILAPI允许您以编程方式创建和使用Audience Manager对象。 实例级方法增强了由类级方法建立的API功能。
+description: 实例级别的DIL API允许您以编程方式创建和使用Audience Manager对象。 实例级方法增强了由类级方法建立的API功能。
 keywords: 创建特征；创建特征
 seo-description: The instance-level DIL APIs let you programmatically create and work with Audience Manager objects. The instance-level methods enhance API functionality established by the class-level methods.
 seo-title: Instance-level DIL Methods
@@ -21,9 +21,9 @@ ht-degree: 13%
 >
 >从2023年7月开始，Adobe已停止开发[!DNL Data Integration Library (DIL)]和[!DNL DIL]扩展。
 >
->现有客户可以继续使用其[!DNL DIL]实施。 但是，Adobe在此点之后不会开发[!DNL DIL]。 建议客户评估[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)的长期数据收集策略。
+>现有客户可以继续使用其[!DNL DIL]实施。 但是，Adobe在此之后不会开发[!DNL DIL]。 建议客户评估[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)的长期数据收集策略。
 >
->如果客户希望在2023年7月之后实施新的数据收集集成，则应改用[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)。
+>如果客户希望在2023年7月之后实施新的数据收集集成，则应改用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)。
 
 实例级别[!UICONTROL DIL] API允许您以编程方式创建并处理Audience Manager对象。 实例级方法增强了由类级方法建立的API功能。
 
@@ -89,10 +89,10 @@ r_dil_signals.xml
 **示例代码**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>' 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
 // Method 1 
 var obj = { key1 : 1, key2 : 2 }; 
@@ -136,10 +136,10 @@ r_dil_traits.xml
 **示例代码**
 
 <pre><code>
-var partnerObject = DIL.create(&lbrace; 
+var partnerObject = DIL.create({ 
      partner: '<i>partner name</i>', 
      containerNSID: <i>NSID</i> 
-&rbrace;); 
+}); 
 partnerObject.api.traits(<i>[123, 456, 789]</i>); 
 </code></pre>
 
@@ -162,19 +162,19 @@ r_dil_logs.xml
 **示例代码**
 
 <pre><code>
-var partnerObject = DIL.create(&lbrace; 
+var partnerObject = DIL.create({ 
      partner: '<i>partner</i>', 
      containerNSID: <i>NSID</i> 
-&rbrace;); 
-partnerObject.api.logs(&lbrace; 
+}); 
+partnerObject.api.logs({ 
      file: 'dil.js', 
      message: 'This is the first request' 
-&rbrace;);
+});
 </code></pre>
 
 ## submit {#submit}
 
-将所有待处理数据提交给[!UICONTROL DIL]实例的Audience Manager。
+针对[!UICONTROL DIL]实例将所有待处理数据提交到Audience Manager。
 
 <!-- 
 
@@ -195,19 +195,19 @@ r_dil_submit.xml
 **示例代码**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
-dataLib.api.traits(&lbrack; 
-<i>123,456, 789</i>&rbrack;).logs(&lbrace; 
+dataLib.api.traits([ 
+<i>123,456, 789</i>]).logs({ 
      file: 'dil.js', 
      message: 'This is the first request' 
-&rbrace;).signals(&lbrace; 
+}).signals({ 
      c_zdid: <i>1111</i> 
      d_dma: '<i>default</i>' 
-&rbrace;).submit();
+}).submit();
 </code></pre>
 
 ## afterResult {#afterresult}
@@ -239,17 +239,17 @@ r_dil_after_result.xml
 **示例代码**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
-dataLib.api.signals(&lbrace; 
+dataLib.api.signals({ 
      c_zdid: <i>54321</i> 
      d_dma: '<i>default</i>' 
-&rbrace;).afterResult(function(json)&lbrace; 
+}).afterResult(function(json){ 
      //Do something with the JSON data returned from the server. 
-&rbrace;).submit();
+}).submit();
 </code></pre>
 
 ## clearData {#cleardata}
@@ -275,18 +275,18 @@ r_dil_clear_data.xml
 **示例代码**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
-dataLib.api.traits([<i>123,456, 789</i>]).logs(&lbrace; 
+dataLib.api.traits([<i>123,456, 789</i>]).logs({ 
      file: 'dil.js' 
      message: 'This is the first request' 
-&rbrace;).signals(&lbrace; 
+}).signals({ 
      c_zdid: <i>1111</i> 
      d_dma: '<i>default</i>' 
-&rbrace;); 
+}); 
  
 //Reset the pending data 
 dataLib.clearData();
@@ -326,14 +326,14 @@ r_dil_custom_query_params.xml
 **示例代码**
 
 <pre><code>
-var partnerObject = DIL.create(&lbrace; 
+var partnerObject = DIL.create({ 
      partner: '<i>partner</i>', 
      containerNSID: <i>NSID</i> 
-&rbrace;); 
-partnerObject.api.customQueryParams(&lbrace; 
+}); 
+partnerObject.api.customQueryParams({ 
      nid: 54231, 
      ntype: 'default' 
-&rbrace;); 
+}); 
 </code></pre>
 
 ## getContainerNSID {#getcontainernsid}
@@ -351,10 +351,10 @@ r_dil_get_container_nsid.xml
 **示例代码**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
 //Verify the container NSID 
 var nsid = dataLib.api.getContainerNSID();
@@ -375,26 +375,26 @@ r_dil_get_event_log.xml
 **示例代码**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
-dataLib.api.traits([<i>123, 456, 789</i>]).logs(&lbrace; 
+dataLib.api.traits([<i>123, 456, 789</i>]).logs({ 
      file: 'dil.js', 
      message: 'This is the first request' 
-&rbrace;);.signals(&lbrace; 
+});.signals({ 
      c_zdid: <i>1111</i> 
      d_dma: '<i>default</i>' 
-&rbrace;);.submit(); 
+});.submit(); 
  
 //Check log for messages 
 var log = dataLib.api.getEventLog(); 
-if (log && log.length) &lbrace; 
+if (log && log.length) { 
      alert(log.join('\n')); 
-&rbrace;else&lbrace; 
+}else{ 
      alert('No log messages'); 
-&rbrace;
+}
 </code></pre>
 
 ## getPartner {#getpartner}
@@ -412,10 +412,10 @@ r_dil_get_partner.xml
 **示例代码**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>' 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
 //Verify the partner name 
 var partner = dataLib.api.getPartner();
@@ -436,49 +436,49 @@ r_dil_get_state.xml
 **示例代码**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
-dataLib.api.traits([<i>123, 456, 789</i>]).logs(&lbrace; 
+dataLib.api.traits([<i>123, 456, 789</i>]).logs({ 
      file: 'dil.js', 
      message:'This is the first request' 
-&rbrace;);.signals(&lbrace; 
+});.signals({ 
      c.zdid: <i>1111</i> 
      d_dma: '<i>default</i>' 
-&rbrace;);.submit(); 
+});.submit(); 
  
 var state = dataLib.api.getState(); 
  
 /*Object outline of state 
-state = &lbrace; 
+state = { 
      pendingRequest: {<i>pending data for call to server</i>}, 
-     otherRequestInfo:&lbrace; 
+     otherRequestInfo:{ 
           firingQueue: [], 
           fired: [], 
           firing: false, 
           errored: [], 
-          reservedKeys: &lbrace; 
+          reservedKeys: { 
                sids: true, 
                pdata: true, 
                logdata: true, 
                callback: true, 
                postCallbackFn: true, 
                useImageRequest: true, 
-          &rbrace;, 
+          }, 
           firstRequestHasFired: false, 
           num_of_jsonp_responses: 0, 
           num_of_jsonp_errors: 0, 
           num_of_img_responses: 0, 
           num_of_img_errors: 0 
-     &rbrace;, 
-     destinationPublishingInfo: &lbrace; 
+     }, 
+     destinationPublishingInfo: { 
           THROTTLE_START: 3000, 
           throttleTimerSet: false, 
           id: ''destination_publishing_iframe_' + partner + '_' + containerNSID, 
           url: (constants.isHTTPS ? 'https://' : 'https://fast.') + partner + '.demdex.net/dest3.html?d_nsid=' 
-          &#x200B;+ containerNSID + '#' + encodeURIComponent(document.location.href), 
+          + containerNSID + '#' + encodeURIComponent(document.location.href), 
                iframe: null, 
                iframeHasLoaded: false, 
                sendingMessages: false, 
@@ -486,14 +486,14 @@ state = &lbrace;
                messageSendingInterval: constants.POST_MESSAGE_ENABLED ? 15: 100, 
                //Recommend 100ms for IE 6 & 7, 15ms for other browsers 
                jsonProcessed: [] 
-     &rbrace; 
-&rbrace; 
+     } 
+} 
 */
 </code></pre>
 
 ## idSync {#idsync}
 
-由两个功能组成，允许数据合作伙伴相互交换用户ID并同步用户ID，然后进行Audience Manager。
+包含两个功能，允许数据合作伙伴在自己和Audience Manager之间交换和同步用户ID。
 
 <!-- 
 
@@ -515,11 +515,11 @@ r_dil_idsync.xml
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.idSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>在不同的数据合作伙伴和Audience Manager之间。 例如，合作伙伴x将使用此功能将用户ID与合作伙伴y同步，然后将其发送给Audience Manager。 </p> <p> <p><b>重要信息：</b>此方法已弃用。 请使用Adobe Experience Platform Identity Service实例的<code> idSyncByURL </code>方法。 </p> </p> </td> 
+   <td colname="col2"> <p>在不同的数据合作伙伴和Audience Manager之间。 例如，合作伙伴x将使用此功能将用户ID与合作伙伴y同步，然后将其发送到Audience Manager。 </p> <p> <p><b>重要信息：</b>此方法已弃用。 请使用Adobe Experience Platform Identity Service实例的<code> idSyncByURL </code>方法。 </p> </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.aamIdSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>当您已经知道用户ID并想要将其发送给Audience Manager时。 </p> <p> <p><b>重要信息：</b>此方法已弃用。 请使用Adobe Experience Platform Identity Service实例的<code> idSyncByDataSource </code>方法。 </p> </p> </td> 
+   <td colname="col2"> <p>当您已经知道用户ID并想要将其发送到Audience Manager时。 </p> <p> <p><b>重要信息：</b>此方法已弃用。 请使用Adobe Experience Platform Identity Service实例的<code> idSyncByDataSource </code>方法。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -565,7 +565,7 @@ r_dil_idsync.xml
 `idSync`接受以下宏：
 
 * **`%TIMESTAMP%`：**&#x200B;生成时间戳（以毫秒为单位）。 用于缓存无效的情况。
-* **`%DID%`：**&#x200B;插入用户的Audience ManagerID。
+* **`%DID%`：**&#x200B;为用户插入Audience Manager ID。
 * **`%HTTP_PROTO%`：**&#x200B;设置页面协议（`http`或`https`）。
 
 **响应**
@@ -578,23 +578,23 @@ r_dil_idsync.xml
 
 <pre><code class="js">
 // Fires url with macros replaced 
-dilInstance.api.idSync(&lbrace; 
+dilInstance.api.idSync({ 
  dpid: '23', // must be a string 
  url: '//su.addthis.com/red/usync?pid=16&puid=%DID%&url=%HTTP_PROTO%%3A%2F%2Fdpm.demdex.net 
 %2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D', 
  minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days)  
-&rbrace;);
+});
 </code></pre>
 
 `dilInstance.api.aamIdSync(initConfig)`
 
 <pre><code class="js">
 // Fires 'https:/https:' + '//dpm.demdex.net/ibs:dpid=&lt;dpid&gt;&dpuuid=&lt;dpuuid&gt;' 
-dilInstance.api.aamIdSync(&lbrace; 
+dilInstance.api.aamIdSync({ 
  dpid: '23', // must be a string 
  dpuuid: '98765', // must be a string 
  minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days)  
-&rbrace;);
+});
 </code></pre>
 
 ## 结果 {#result}
@@ -628,14 +628,14 @@ r_dil_result.xml
 **示例代码**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
-dataLib.api.traits([<i>123, 456, 789</i>]).result(function(json)&lbrace; 
+dataLib.api.traits([<i>123, 456, 789</i>]).result(function(json){ 
      //Do something, possibly with the JSON data returned from the server. 
-&rbrace;);.submit();
+});.submit();
 </code></pre>
 
 ## secureDataCollection {#securedatacollection}
@@ -654,13 +654,13 @@ dil-secure-data-collection.xml
 
 >[!IMPORTANT]
 >
->如果您在同一页面上使用visitorAPI.js和[!UICONTROL DIL]，请设置`secureDataCollection= false`。 请参阅下面的代码示例。
+>如果您在同一页面上使用visitorAPI.js和`secureDataCollection= false`，请设置[!UICONTROL DIL]。 请参阅下面的代码示例。
 
 <pre><code class="js">
-var dilInstance = DIL.create(&lbrace; 
+var dilInstance = DIL.create({ 
      ... 
      secureDataCollection: false 
-&rbrace;);
+});
 </code></pre>
 
 ## useCORSOnly {#usecorsonly}
@@ -680,10 +680,10 @@ dil-use-cors-only.xml
 **代码示例**
 
 <pre><code class="js">
-var dilInstance = DIL.create(&lbrace; 
+var dilInstance = DIL.create({ 
      ... 
      useCORSOnly: true 
-&rbrace;);
+});
 </code></pre>
 
 >[!IMPORTANT]
@@ -694,7 +694,7 @@ var dilInstance = DIL.create(&lbrace;
 
 ## useImageRequest {#useimagerequest}
 
-将脚本`<src>`中的请求类型更改为图像`<img>`。
+将脚本`<img>`中的请求类型更改为图像`<src>`。
 
 <!-- 
 
@@ -715,10 +715,10 @@ r_dil_use_image_request.xml
 **示例代码**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner:'<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
 dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 </code></pre>
@@ -727,7 +727,7 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >
 >* [关键变量的名称要求](../features/traits/trait-key-name-requirements.md)
 >* [关键变量的前缀要求](../features/traits/trait-variable-prefixes.md)
->* Adobe Experience Platform Identity服务中的[同步函数](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/idsync.html?lang=zh-Hans)
+>* Adobe Experience Platform Identity服务中的[同步函数](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/idsync.html)
 >* [DIL 创建](../dil/dil-class-overview/dil-create.md#dil-create)
->* [Adobe Experience Platform Identity服务： UseCORSOnly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html?lang=zh-Hans)
->* Adobe Experience Platform Identity服务中的[CORS支持](https://experienceleague.adobe.com/docs/id-service/using/reference/cors.html?lang=zh-Hans)
+>* [Adobe Experience Platform Identity服务： UseCORSOnly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html)
+>* Adobe Experience Platform Identity服务中的[CORS支持](https://experienceleague.adobe.com/docs/id-service/using/reference/cors.html)

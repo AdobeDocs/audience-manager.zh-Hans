@@ -78,7 +78,7 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-## 通过需求方平台 (DSP) 重新定位第一方数据
+## 通过需求方平台 (DSP) 重新锁定第一方数据
 
 <table id="table_26697DC988BD4A6493B4867B903132D7"> 
  <thead> 
@@ -100,7 +100,7 @@ ht-degree: 100%
     <ul id="ul_15BC75805EA946F2BE33E4F43C3AA1A4"> 
      <li id="li_40B53340C38743A785159D886392EFD6">创建“假期 - 搜索者无转化”区段。 </li> 
      <li id="li_10366F799CDC483BA9B6AAD9CAD68EA2">添加规则以排除最近的转化者。 </li> 
-     <li id="li_65B5C367AFBB4C3394AFBB07138320A8">通过带有特殊选件的 DSP 和随后的网站个性化进行重新定位。 </li> 
+     <li id="li_65B5C367AFBB4C3394AFBB07138320A8">通过带有特殊选件的 DSP 和随后的网站个性化进行重新锁定。 </li> 
      <li id="li_C88D7C3D72504BBBAA24B09CB805A38F">通过 Adobe Target 继续显示所需内容。 </li> 
     </ul> </td> 
   </tr> 
@@ -160,7 +160,7 @@ ht-degree: 100%
     <ul id="ul_739F56A9703F418BBD6F391C2A8A25CA"> 
      <li id="li_24C0DF2B23284764B48B0B4FC2808248">在 <span class="keyword">Audience Manager</span> 中，为秋季度假旅客创建一个区段。 </li> 
      <li id="li_C8FE060793AA400CBDF33251B21B79C7">在 Adobe Target 中，创建一个促销活动，为季节性购买者提供航空积分。 </li> 
-     <li id="li_84D729B9AA2E40F8B3EFF6E53C8AA39A">使用 Analytics 通过转化漏斗跟踪客户活动。如果客户未进行转化，通过电子邮件营销重新定位。 </li> 
+     <li id="li_84D729B9AA2E40F8B3EFF6E53C8AA39A">使用 Analytics 通过转化漏斗跟踪客户活动。如果客户未进行转化，通过电子邮件营销重新锁定。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -178,7 +178,7 @@ ht-degree: 100%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> 使用 Analytics 搜索行为来定位电子邮件营销邮件。 </td> 
+   <td colname="col1"> 使用 Analytics 搜索行为来锁定电子邮件营销邮件。 </td> 
    <td colname="col2"> 
     <ul id="ul_19D86C5CEE13479BA8C860438B82E943"> 
      <li id="li_D7E369BC066841AD80485A1FC7948E1D">使 Analytics 数据与营销计划相匹配。 </li> 
@@ -188,7 +188,7 @@ ht-degree: 100%
    <td colname="col3"> 
     <ul id="ul_018543C7DACD47849F303BC8C26A0A08"> 
      <li id="li_37AB19716B3D4C7BA4106C007A534689">创建“有意向购买者 - 无转化”区段。 </li> 
-     <li id="li_DA5EA7CC922C47788D4D0AED5FEC5164">使用相关电子邮件定位该区段。 </li> 
+     <li id="li_DA5EA7CC922C47788D4D0AED5FEC5164">使用相关电子邮件锁定该区段。 </li> 
      <li id="li_40085E5A5E2744EEBC38CD19F0F77076">通过 Adobe Target 继续提供网站上的内容。 </li> 
     </ul> </td> 
   </tr> 
@@ -240,7 +240,7 @@ ht-degree: 100%
    <td colname="col3"> 
     <ul id="ul_65D91F5E29D04750AB81682FC4E44E5F"> 
      <li id="li_69832257582342C7A026B1474E1A4286">在 Analytics 中使用第一方数据创建旅游爱好者区段。 </li> 
-     <li id="li_FDFFA55B0B7D46398A5A640EB5E56788">通过需求方平台和销售方平台及交易台，在网站外定位该区段并实现盈利。 </li> 
+     <li id="li_FDFFA55B0B7D46398A5A640EB5E56788">通过需求方平台和销售方平台及交易台，在网站外锁定该区段并实现盈利。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

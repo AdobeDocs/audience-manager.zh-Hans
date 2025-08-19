@@ -69,13 +69,13 @@ c_compact.xml
 
 1. **新区段取消资格**：当设备不再符合区段的资格时，[!UICONTROL IRIS]会将与该设备关联的所有区段资格和取消资格发送到映射到这些区段的所有目标。
 
-1. **目标映射更新**：当目标映射更新时，[!UICONTROL IRIS]会将与设备相关的所有区段发送到映射到这些区段的所有目标，Audience Manager下次查看设备时。
+1. **目标映射更新**：当目标映射更新时，[!UICONTROL IRIS]会将与设备相关的所有区段发送到映射到这些区段的所有目标，下次Audience Manager查看该设备时。
 
 1. **设备图更新**：当从用于评估区段的设备图中添加或删除任何设备ID时，[!UICONTROL IRIS]会将与该设备关联的所有区段发送到映射到这些区段的所有目标，下次Audience Manager查看该设备时。
 
 >[!IMPORTANT]
 >
->如果Audience Manager连续3天未检测到上述任何更新，[!UICONTROL IRIS]会将与设备相关的所有区段发送到映射到这些区段的所有目标，这表示下次Audience Manager会看到该设备。
+>如果Audience Manager连续3天未检测到上述任何更新，[!UICONTROL IRIS]会在下次看到Audience Manager设备时，将与设备关联的所有区段发送到映射到这些区段的所有目标。
 
 **示例数据文件**
 

@@ -79,7 +79,7 @@ ht-degree: 1%
 
 ## 面向购买者的专用数据馈送 {#private-data-feeds-for-buyers}
 
-作为购买者，私有数据馈送会像任何其他选件一样出现在[Marketplace](../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)中。 但是，在这种情况下，信息源列表不会显示特征、独特用户和用户重叠的摘要信息。 此外，数据销售商可以选择在[!UICONTROL Marketplace]列表的[!UICONTROL Provider]列中显示或隐藏其名称。 在销售商批准您的订阅请求后，您即可使用私有馈送中的所有数据（其工作方式与公共馈送类似）。 下面的[!UICONTROL Marketplace]示例列出了可作为购买者使用的3种不同的信息源类型。
+作为购买者，私有数据馈送会像任何其他选件一样出现在[Marketplace](../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)中。 但是，在这种情况下，信息源列表不会显示特征、独特用户和用户重叠的摘要信息。 此外，数据销售商可以选择在[!UICONTROL Provider]列表的[!UICONTROL Marketplace]列中显示或隐藏其名称。 在销售商批准您的订阅请求后，您即可使用私有馈送中的所有数据（其工作方式与公共馈送类似）。 下面的[!UICONTROL Marketplace]示例列出了可作为购买者使用的3种不同的信息源类型。
 
 ![](assets/buyer_marketplace.png)
 
@@ -124,7 +124,7 @@ ht-degree: 1%
 
 在您的Audience Manager帐户中，使用以下内容创建新的Cookie数据源：
 
-* **Audience ManagerID**&#x200B;作为入站密钥；
+* **Audience Manager ID**&#x200B;作为入站密钥；
 * **共享已启用**&#x200B;选项已选中。
 
 ![](assets/create-datasource.png)
@@ -154,14 +154,14 @@ ht-degree: 1%
 
 ### 步骤5 — 数据购买者 — 请求访问
 
-转到&#x200B;**Audience Marketplace>市场**。 搜索在上一步中由数据提供程序创建的数据馈送。 单击&#x200B;**请求访问**。 数据提供商方的指定联系人现在将收到电子邮件通知。 另请参阅[订阅私有数据馈送](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed)。
+转到&#x200B;**Audience Marketplace >市场**。 搜索在上一步中由数据提供程序创建的数据馈送。 单击&#x200B;**请求访问**。 数据提供商方的指定联系人现在将收到电子邮件通知。 另请参阅[订阅私有数据馈送](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed)。
 
 ### 步骤6 — 数据提供程序 — 授予访问权限
 
-转到&#x200B;**Audience Marketplace>我的共享数据**，然后搜索您在步骤4中创建的信息源。 单击进入新的访问请求，然后单击&#x200B;**允许访问**&#x200B;以批准该请求。 另请参阅[审核、批准或拒绝专用信息源请求](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests)。
+转到&#x200B;**Audience Marketplace >我的共享数据**，然后搜索您在步骤4中创建的信息源。 单击进入新的访问请求，然后单击&#x200B;**允许访问**&#x200B;以批准该请求。 另请参阅[审核、批准或拒绝专用信息源请求](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests)。
 
 ### 步骤7 — 数据购买者 — 启用订阅
 
-数据提供程序授予数据馈送的访问权限后，您可以在&#x200B;**Audience Marketplace> Marketplace**&#x200B;中查看您帐户中的馈送。 查看详细信息，打开订阅按钮，然后单击&#x200B;**查看和订阅**。 有关在何处查找第三方特征的信息，请参阅[订阅的数据馈送的存储空间](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee)。
+数据提供商授予数据馈送的访问权限后，您可在&#x200B;**Audience Marketplace > Marketplace**&#x200B;中查看帐户中的馈送。 查看详细信息，打开订阅按钮，然后单击&#x200B;**查看和订阅**。 有关在何处查找第三方特征的信息，请参阅[订阅的数据馈送的存储空间](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee)。
 
 请注意，这些特征只能在数据提供商的帐户中进行编辑。

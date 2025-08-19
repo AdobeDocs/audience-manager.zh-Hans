@@ -1,5 +1,5 @@
 ---
-description: 描述可用于通过Audience Manager帐户中所有属性的地理变量来定位的常用平台级别键值对。
+description: 描述可用于通过Audience Manager帐户中所有属性的地理变量来定位用户的常用平台级别键值对。
 seo-description: Describes the common platform-level key-value pairs you can use to target users with geographic variables across all properties in your Audience Manager account.
 seo-title: Geotargeting With Platform-level Keys
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # 带有平台级别密钥的Geotargeting {#geotargeting-with-platform-level-keys}
 
-描述可用于通过Audience Manager帐户中所有属性的地理变量来定位的常用平台级别键值对。
+描述可用于通过Audience Manager帐户中所有属性的地理变量来定位用户的常用平台级别键值对。
 
 <!-- c_tb_platform_vars.xml -->
 

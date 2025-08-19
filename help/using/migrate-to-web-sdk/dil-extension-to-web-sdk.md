@@ -1,6 +1,6 @@
 ---
 title: 从Audience Manager标记扩展迁移到Web SDK标记扩展
-description: 了解将数据收集库从Audience Manager标记扩展更新为Web SDK标记扩展以进行Audience Manager的步骤
+description: 了解将Audience Manager的数据收集库从Audience Manager标记扩展更新为Web SDK标记扩展的步骤
 exl-id: 7f0486db-4511-4311-90df-290580fdcd78
 source-git-commit: a50aaeb5e384685100dc3ecc1d6d45f1c41461d0
 workflow-type: tm+mt
@@ -9,11 +9,11 @@ ht-degree: 0%
 
 ---
 
-# 将用于Audience Manager的数据收集库从Audience Manager标记扩展更新为Web SDK标记扩展
+# 将您的Audience Manager数据收集库从Audience Manager标记扩展更新为Web SDK标记扩展
 
 ## 目标受众
 
-本页面向使用[Audience Manager标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/audience-manager/overview)将Web集合数据引入Audience Manager的Audience Manager客户。 对于使用AppMeasurementJavaScript库的客户，请阅读有关如何将Audience Manager[的数据收集库从AppMeasurementJavaScript库更新到Web SDK JavaScript库](appmeasurement-to-web-sdk.md)的指南。
+本页面向使用[Audience Manager标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview)将Web收集数据引入Audience Manager的Audience Manager客户。 对于使用AppMeasurement JavaScript库的客户，请阅读有关如何将Audience Manager [的数据收集库从AppMeasurement JavaScript库更新到Web SDK JavaScript库](appmeasurement-to-web-sdk.md)的指南。
 
 ## 此实施路径的优缺点
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 | --- | --- |
 | <ul><li>**您的网站上没有代码更改**：由于您的实施已安装标记，因此可以在标记界面中进行所有迁移更新。</li><li>**使用您现有的实现**：此方法不需要全新实现。 虽然它确实需要新的规则操作，但您可以以最小的更改重复使用现有数据元素和规则条件。</li><li>**不需要架构**：对于迁移到Web SDK的这一阶段，您不需要XDM架构。 相反，您可以填充`data`对象，这会将数据直接发送到Adobe Audience Manager。 迁移到Web SDK完成后，您可以为组织创建架构，并使用数据流映射填充适用的XDM字段。 如果在迁移过程的此阶段需要架构，则贵组织将被强制使用Adobe Audience Manager XDM架构。 使用此架构会使贵组织将来更难以使用自己的架构。</li></ul> | <ul><li>**实施技术债务**：由于此方法使用现有实施的修改形式，因此可能更难跟踪实施逻辑并在需要时执行更改。 自定义代码可能特别难以调试。</li><li>**需要映射才能将数据发送到Platform**：当您的组织准备好使用Real-Time CDP时，您必须将数据发送到Adobe Experience Platform中的数据集。 此操作要求`data`对象中的每个字段都必须是数据流映射工具中的条目，以便将其分配给XDM架构字段。 此工作流的映射只需执行一次，并且不涉及对实施进行更改。 但是，这是一个额外的步骤，在XDM对象中发送数据时不需要执行此步骤。</li></ul> |
 
-Adobe建议，如果现有实施使用Adobe Audience Manager标记扩展，则遵循此实施路径。
+如果您在使用Adobe Audience Manager标记扩展的现有实施，Adobe建议遵循此实施路径。
 
 ## 迁移到Web SDK所需的步骤
 
@@ -44,7 +44,7 @@ Adobe建议，如果现有实施使用Adobe Audience Manager标记扩展，则�
 
    ![添加Audience Manager服务](assets/add-service.png) {style="border:1px solid lightslategray"}
 
-您的数据流现在已准备好接收数据并将数据传递给Audience Manager。
+您的数据流现在可以接收数据并传递给Audience Manager。
 
 +++
 
@@ -94,7 +94,7 @@ Adobe建议，如果现有实施使用Adobe Audience Manager标记扩展，则�
 
 +++**4. 更新规则以使用Web SDK扩展而非Audience Manager扩展**
 
-此步骤包含迁移到Web SDK所需的大部分工作，并且需要了解您的实施的工作方式。 下面提供了有关如何编辑典型标记规则的示例。 更新实施中的所有标记规则，将对Audience Manager扩展的所有引用替换为Web SDK扩展。
+此步骤包含迁移到Web SDK所需的大部分工作，需要了解您的实施的工作原理。 下面提供了有关如何编辑典型标记规则的示例。 更新实施中的所有标记规则，将对Audience Manager扩展的所有引用替换为Web SDK扩展。
 
 1. 在标记界面的左侧导航中，选择&#x200B;**[!UICONTROL Rules]**。
 1. 选择要编辑的规则。
@@ -104,13 +104,13 @@ Adobe建议，如果现有实施使用Adobe Audience Manager标记扩展，则�
    * **[!UICONTROL Extension]**： [!UICONTROL Adobe Experience Platform Web SDK]
    * **[!UICONTROL Action type]**：更新变量
 1. 确保在右侧下拉菜单&#x200B;**[!UICONTROL Data element]**&#x200B;字段中选择您在步骤3中创建的数据对象。
-1. 将Audience Manager键值对设置为与在Audience Manager扩展中配置的相同的各个值。
-1. 使用Web SDK扩展复制所有规则逻辑后，选择&#x200B;**[!UICONTROL Keep Changes]**。
+1. 将Audience Manager键值对设置为各自的值，这些值在Audience Manager扩展中配置时相同。
+1. 使用Web SDK扩展复制所有规则逻辑后，请选择&#x200B;**[!UICONTROL Keep Changes]**。
 1. 对使用Audience Manager标记扩展设置值的每个操作配置重复这些步骤。
 
 上述步骤仅适用于设置值的规则。 以下步骤将替换使用[!UICONTROL Action Configuration] [!UICONTROL Send Event]的所有操作。
 
-1. 选择发送Web SDK事件的规则。
+1. 选择用于发送Web SDK事件的规则。
 1. 选择操作类型&#x200B;**[!UICONTROL Send Event]**。
 1. 将[!UICONTROL Action Configuration]更改为以下设置：
    * **[!UICONTROL Extension]**： [!UICONTROL Adobe Experience Platform Web SDK]
@@ -123,7 +123,7 @@ Adobe建议，如果现有实施使用Adobe Audience Manager标记扩展，则�
 
 +++
 
-+++**5. Publish已更新规则**
++++**5. 发布更新的规则**
 
 发布更新规则的工作流程与对标记配置进行的任何其他更改相同。
 

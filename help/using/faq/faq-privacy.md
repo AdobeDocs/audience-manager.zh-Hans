@@ -28,9 +28,9 @@ ht-degree: 82%
 
 **Audience Manager 如何使用 Cookie？Audience Manager 会设置哪些 Cookie？**
 
-请参阅 [Audience Manager Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=zh-Hans)。
+请参阅 [Audience Manager Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html)。
 
-**美国的 Audience Manager 客户能否定位欧盟资产的用户？**
+**美国的 Audience Manager 客户能否锁定欧盟资产的用户？**
 
 能。Audience Manager 与在全球拥有资产和库存的客户合作。虽然欧盟地区实施了严格的隐私法，但 Audience Manager 的一些客户仍使用第一方数据在欧洲地区进行受众定位。因此，Audience Manager 可以支持针对欧盟地区受众的定位，但是您有责任遵守当地隐私法规。
 
@@ -55,11 +55,11 @@ ht-degree: 82%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>后端服务器 </p> </td> 
-   <td colname="col2"> <p>120天 </p> <p> Audience Manager 会在 120 天后（从上次在 Audience Manager 平台上看到用户之日算起）从后端服务器删除用户数据。如果<span class="keyword">Audience Manager</span>在此120天周期内记录到用户活动，则会再将数据保留120天。 </p> </td> 
+   <td colname="col2"> <p>120天 </p> <p> Audience Manager 会在 120 天后（从上次在 Audience Manager 平台上看到用户之日算起）从后端服务器删除用户数据。如果<span class="keyword"> Audience Manager</span>在此120天周期内记录到用户活动，则会再将数据保留120天。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Edge 服务器 </p> </td> 
-   <td colname="col2"> <p> 14天 </p> <p>Audience Manager 会在 14 天后（从上次在 Audience Manager 平台上看到用户之日算起）从 Edge 服务器删除用户数据。如果<span class="keyword">Audience Manager</span>在此14天周期内记录到用户活动，则会再将数据保留14天。 如果用户在14天周期后再次变为活动状态，则从第一次查看新页面到用户变为可操作状态之间将存在延迟。 超过14天不活动后，需要6-18个小时才能将完整的配置文件返回到Edge中心。 </p> </td> 
+   <td colname="col2"> <p> 14天 </p> <p>Audience Manager 会在 14 天后（从上次在 Audience Manager 平台上看到用户之日算起）从 Edge 服务器删除用户数据。如果<span class="keyword"> Audience Manager</span>在此14天周期内记录到用户活动，则会再将数据保留14天。 如果用户在14天周期后再次变为活动状态，则从第一次查看新页面到用户变为可操作状态之间将存在延迟。 超过14天不活动后，需要6-18个小时才能将完整的配置文件返回到Edge中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始日志 </p> </td> 
@@ -98,7 +98,7 @@ ht-degree: 82%
 
 ## 特征资格数据保留 {#trait-qual}
 
-下表列出了适用于特征资格数据的保留选项。
+下表列出了适用于特征资格筛选数据的保留选项。
 
 <table id="table_7FB42BEF138540AAB6869995C1AB8D3F"> 
  <thead> 
@@ -110,11 +110,11 @@ ht-degree: 82%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>删除特征 </p> </td> 
-   <td colname="col2"> <p>若删除某个特征，则会从之前符合该特征的所有用户配置文件中删除特征资格数据。 </p> </td> 
+   <td colname="col2"> <p>若删除某个特征，则会从之前符合该特征的所有用户轮廓中删除特征资格筛选数据。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>已达到特征限制 </p> </td> 
-   <td colname="col2"> <p>我们将每个用户配置文件的特征资格数限制为 100,000。此限制适用于已验证的用户配置文件和设备配置文件。如果用户配置文件达到此限制，我们将按先进先出原则删除最早的特征资格数据。 </p> <p>有关更多详细信息，请参阅我们的<a href="../features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit">特征资格限制</a>。 </p> </td> 
+   <td colname="col2"> <p>我们将每个用户轮廓的特征资格筛选数限制为 100,000。此限制适用于已验证的用户配置文件和设备配置文件。如果用户轮廓达到此限制，我们将按先进先出原则删除最早的特征资格筛选数据。 </p> <p>有关更多详细信息，请参阅我们的<a href="../features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit">特征资格筛选限制</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
