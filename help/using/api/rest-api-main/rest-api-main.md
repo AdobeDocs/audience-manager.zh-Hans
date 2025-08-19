@@ -22,4 +22,4 @@ ht-degree: 2%
 
 为了进一步简化您的工作，我们正在将[!DNL REST APIs]迁移到[Swagger](https://swagger.io/solutions/api-documentation/)。 有关详细信息，请参阅[Audience Manager API代码迁移](/help/using/api/api-swagger-migration.md)。
 
-在使用[ ](../../api/rest-api-main/aam-api-getting-started.md#getting-started-with-rest-apis)方法之前，请查看[!DNL Audience Manager]快速入门[!DNL API]材料。
+在使用[&#128279;](../../api/rest-api-main/aam-api-getting-started.md#getting-started-with-rest-apis)方法之前，请查看[!DNL Audience Manager]快速入门[!DNL API]材料。

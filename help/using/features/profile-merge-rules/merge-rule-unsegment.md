@@ -44,7 +44,7 @@ ht-degree: 2%
 >[!NOTE]
 >
 >区段评估和取消资格的设备限制为&#x200B;**100个**。
->>在使用设备图的配置文件合并规则评估区段时，Audience Manager可合并最多100个设备。 Audience Manager通过[验证的配置文件](../../reference/visitor-authentication-states.md)（跨设备ID）评估当前设备和链接到当前设备的最多99台设备。 如果发出取消分段信号，则将从目标中的分段中删除当前设备和附加设备。
+>&#x200B;>在使用设备图的配置文件合并规则评估区段时，Audience Manager可合并最多100个设备。 Audience Manager通过[验证的配置文件](../../reference/visitor-authentication-states.md)（跨设备ID）评估当前设备和链接到当前设备的最多99台设备。 如果发出取消分段信号，则将从目标中的分段中删除当前设备和附加设备。
 
 ![](assets/last-device-graph.png)
 

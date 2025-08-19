@@ -28,7 +28,7 @@ ht-degree: 0%
 
   >[!IMPORTANT]
   >
-  >[文件夹特征](../../features/traits/about-folder-traits.md)是&#x200B;**不支持的**[!UICONTROL Audience Lab]。 将文件夹特征的[事件类型](../../features/traits/create-onboarded-rule-based-traits.md)设置为&#x200B;**转换**&#x200B;将不会在[!UICONTROL Audience Lab]中为该特定文件夹特征生成任何数据。
+  >[文件夹特征](../../features/traits/about-folder-traits.md)是&#x200B;**不支持的**&#x200B;[!UICONTROL Audience Lab]。 将文件夹特征的[事件类型](../../features/traits/create-onboarded-rule-based-traits.md)设置为&#x200B;**转换**&#x200B;将不会在[!UICONTROL Audience Lab]中为该特定文件夹特征生成任何数据。
 
 * 对于使用[基于角色的访问控制](../../features/administration/administration-overview.md)的公司：将[!UICONTROL Audience Lab] [通配符权限](../../features/administration/administration-overview.md#wild-card-permissions)分配给&#x200B;**[!UICONTROL User Groups]**&#x200B;以提供访问权限。 此权限允许用户创建和查看测试结果。 用户将只能从具有&#x200B;**读取**&#x200B;和&#x200B;**映射到目标**&#x200B;权限的数据源中使用区段。 用户将只能使用他们具有&#x200B;**“读取”**&#x200B;权限的数据源的转化特征。 用户也只能查看他们有权访问的目标。 因此，在将[!DNL Audience Lab]通配符权限添加到组之前，请确保该组具有：
    * 访问相关的转化特征；

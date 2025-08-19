@@ -62,7 +62,7 @@ ht-degree: 2%
 >[!IMPORTANT]
 >
 >以下ad服务器支持[!UICONTROL Actionable Log Files]：
->> <br>
+>&#x200B;> <br>
 >
 > * [Google促销活动经理](#dcm-logs-signals)
 > * [Google广告管理器](#ad-manager-logs-signals)

@@ -46,7 +46,7 @@ ht-degree: 0%
 > 
 > 在迁移完所有客户之后，本文档的用户管理部分将消失。
 > 
-在[!DNL Audience Manager]中创建用户，并指定用户详细信息、登录状态以及将用户分配给组。
+>在[!DNL Audience Manager]中创建用户，并指定用户详细信息、登录状态以及将用户分配给组。
 
 1. 单击&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Users]**。
 1. 单击![](assets/icon_add.png)以显示[!UICONTROL Create New User]页。
@@ -63,7 +63,7 @@ ht-degree: 0%
    * **[!UICONTROL Expired]：**&#x200B;用户的密码超过90天。
    * **[!UICONTROL Pending]：**&#x200B;用户具有临时密码（在密码重置后或作为全新帐户），并且用户尚未设置永久密码。
    * **[!UICONTROL Locked Out]：** 5次错误的登录尝试将会锁定用户。
-1. 在&#x200B;**[!UICONTROL Assigned Groups]**下，从下拉列表中选择要为其分配此用户的所需组。
+1. 在&#x200B;**[!UICONTROL Assigned Groups]**&#x200B;下，从下拉列表中选择要为其分配此用户的所需组。
 有关组和权限的详细信息，请参阅[创建组](../../features/administration/administration-overview.md#create-group)。
 1. 单击 **[!UICONTROL Save]**。
 

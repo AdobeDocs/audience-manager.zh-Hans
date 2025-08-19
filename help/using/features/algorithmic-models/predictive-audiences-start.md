@@ -51,7 +51,7 @@ Audience Manager不支持编辑现有[!UICONTROL Predictive Audiences]模型。 
 
 1. 转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**。
 2. 单击要克隆的[!UICONTROL Predictive Audiences]模型的名称。
-3. 单击屏幕左上角的&#x200B;**[!UICONTROL Clone]**按钮。
+3. 单击屏幕左上角的&#x200B;**[!UICONTROL Clone]**&#x200B;按钮。
    ![predictive-audiences-clone](assets/predictive-audiences-clone.png)
 4. 克隆模型后，您将转到克隆模型的[!DNL Save & Configure]页。 在此页面中，您可以更改模型的[!UICONTROL data source]和分配的[!UICONTROL Profile Merge Rule]。 要编辑克隆模型的角色和目标受众，请使用[!UICONTROL Back]和[!UICONTROL Next]按钮在三个选项卡之间导航，或单击三个选项卡名称
 
