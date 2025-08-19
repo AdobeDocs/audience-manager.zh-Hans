@@ -53,7 +53,7 @@ ht-degree: 1%
 
 观看以下视频，观看有关如何为[!UICONTROL People-Based Destinations]创建数据源的视频教程。
 
->[!VIDEO](https://video.tv.adobe.com/v/29006/)
+>[!VIDEO](https://video.tv.adobe.com/v/31956?captions=chi_hans)
 
 ## 步骤2 — 使用声明的ID通过实时HTTP调用将DPUUID与经过哈希处理的电子邮件地址进行匹配 {#match-email-addresses}
 

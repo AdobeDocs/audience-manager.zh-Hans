@@ -49,7 +49,7 @@ ht-degree: 0%
    >仅当您具有符合区段资格的跨设备ID时，Audience Manager才会显示[!UICONTROL Identity Type Breakdown]报表。
 
    观看以下视频，了解[!UICONTROL Identity Type Breakdown]的概述。
-   >[!VIDEO](https://video.tv.adobe.com/v/27977/)
+   >[!VIDEO](https://video.tv.adobe.com/v/32078?captions=chi_hans)
 
 4. **[!UICONTROL Segment Rules]：**&#x200B;列出区段中的特征以及资格规则。
 5. **[!UICONTROL Destination Mappings]：**&#x200B;列出区段的目标映射。

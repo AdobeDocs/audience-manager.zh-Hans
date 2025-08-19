@@ -62,4 +62,4 @@ IP地址模糊处理仅适用于Audience Manager管理员帐户。 请参阅[创
 
 * [数据隐私](/help/using/overview/data-security-and-privacy/data-privacy.md)
 * IP地址模糊处理视频演示
->[!VIDEO](https://video.tv.adobe.com/v/27218/)
+>[!VIDEO](https://video.tv.adobe.com/v/34967?captions=chi_hans)
