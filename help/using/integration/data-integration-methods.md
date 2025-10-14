@@ -27,7 +27,7 @@ Audience Manager如何与其他数据提供商和系统交换信息的高级概�
 
 ## 先决条件：创建特征分类 {#prereqs}
 
-在集成过程开始之前，请记得在[ UI中](../features/traits/create-onboarded-rule-based-traits.md)创建特征[和](../features/traits/trait-storage.md#create-trait-storage-folder)文件夹结构[!DNL Audience Manager]。 分类将包含您的所有[!UICONTROL traits]，这些资产按逻辑层次结构组织。
+在集成过程开始之前，请记得在[&#x200B; UI中](../features/traits/create-onboarded-rule-based-traits.md)创建特征[和](../features/traits/trait-storage.md#create-trait-storage-folder)文件夹结构[!DNL Audience Manager]。 分类将包含您的所有[!UICONTROL traits]，这些资产按逻辑层次结构组织。
 
 ## 集成用例 {#integration-use-cases}
 

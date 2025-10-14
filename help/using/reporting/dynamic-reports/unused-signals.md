@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## 概述
 
-信号是来自您网站的信息，以[!DNL Audience Manager]键值对[ （例如](../../reference/key-value-pairs-explained.md)等）的形式传递到`color=blue, price>100, gender=female`。
+信号是来自您网站的信息，以[!DNL Audience Manager]键值对[&#x200B; （例如](../../reference/key-value-pairs-explained.md)等）的形式传递到`color=blue, price>100, gender=female`。
 
 未使用的信号由您收集但尚未映射到某个特征的数据组成。 [!UICONTROL Unused Signals]报表按日期、键、值和频率计数显示表中的数据。 任何传入到[!DNL Audience Manager]的未映射信号在一天内至少100次符合[!UICONTROL Unused Signals]报表的条件。
 
