@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## 创建预测受众模型 {#create-predictive-audiences}
 
-在创建[!UICONTROL Predictive Audiences]模型之前，您需要决定要将[!UICONTROL Predictive Audiences]特征和区段分配给哪个第一方数据源。 您可以使用现有的第一方数据源，也可以创建新的第一方数据源。 有关如何创建新的第一方数据源的详细信息，请参阅[管理数据源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html)。
+在创建[!UICONTROL Predictive Audiences]模型之前，您需要决定要将[!UICONTROL Predictive Audiences]特征和区段分配给哪个第一方数据源。 您可以使用现有的第一方数据源，也可以创建新的第一方数据源。 有关如何创建新的第一方数据源的详细信息，请参阅[管理数据源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html?lang=zh-Hans)。
 
 了解要使用的数据源后，请按照以下步骤操作。
 

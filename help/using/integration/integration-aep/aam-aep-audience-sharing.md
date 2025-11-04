@@ -18,17 +18,17 @@ ht-degree: 1%
 
 通过Audience Manager和Adobe Experience Platform之间的受众共享功能，您可以将Audience Manager特征和区段共享到Adobe Experience Platform，将Experience Platform区段共享到Audience Manager。
 
-您需要Experience Platform中的[[!DNL Audience Manager source connector]](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)和[Experience Cloud受众](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/experience-cloud-audiences.html)目标才能在Audience Manager和Adobe Experience Platform之间启用受众共享。
+您需要Experience Platform中的[[!DNL Audience Manager source connector]](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hans)和[Experience Cloud受众](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/experience-cloud-audiences.html?lang=zh-Hans)目标才能在Audience Manager和Adobe Experience Platform之间启用受众共享。
 
-您可以使用Experience Platform中的Audience Manager特征和区段将Audience Manager数据添加到您的客户配置文件中，并从Experience Platform [分段服务](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=en)中受益。
+您可以使用Experience Platform中的Audience Manager特征和区段将Audience Manager数据添加到您的客户配置文件中，并从Experience Platform [分段服务](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hans)中受益。
 
 在Audience Manager中，您可以将Experience Platform区段用于Data Management Platform用例，例如：
 
 * 将[第三方数据](/help/using/overview/data-types-collected.md#third-party-data)添加到您的区段；
 * [算法建模](/help/using/features/algorithmic-models/understanding-models.md)；
-* 将区段激活到Experience Platform [目标目录](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/destinations-cat/destinations-catalog.html)中尚不受支持的目标。
+* 将区段激活到Experience Platform [目标目录](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/destinations-cat/destinations-catalog.html?lang=zh-Hans)中尚不受支持的目标。
 
-此外，您的Experience Platform区段已通过[核心服务](https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html)共享到其他Experience Cloud解决方案。
+此外，您的Experience Platform区段已通过[核心服务](https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=zh-Hans)共享到其他Experience Cloud解决方案。
 
 >[!IMPORTANT]
 >
@@ -51,8 +51,8 @@ ht-degree: 1%
 
 要将区段和特征从Audience Manager发送到Experience Platform，必须在Experience Platform源目录中设置Audience Manager源连接器。 这是一个自助式工作流程，无需Adobe客户关怀或工程团队的参与。 要设置Audience Manager源连接器，请阅读：
 
-* [Audience Manager源](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
-* [在UI中创建Adobe Audience Manager源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/audience-manager.html?lang=en)
+* [Audience Manager源](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hans)
+* [在UI中创建Adobe Audience Manager源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/audience-manager.html?lang=zh-Hans)
 
 >[!IMPORTANT]
 >
@@ -64,8 +64,8 @@ ht-degree: 1%
 
 设置Audience Manager源连接器以从Audience Manager导入特征和区段后，Audience Manager数据在Experience Platform中的区段工作流中显示为&#x200B;**受众**。 有关Experience Platform中Audience Manager区段和特征的更多信息，请阅读：
 
-* [分段服务概述](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#audiences)
-* [Experience Platform Segment Builder用户指南](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#audiences)
+* [分段服务概述](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hans#audiences)
+* [Experience Platform Segment Builder用户指南](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hans#audiences)
 
 ## Audience Manager中的Adobe Experience Platform区段 {#aep-segments-in-aam}
 
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
-> 此部分介绍了从Experience Platform到Audience Manager的旧版区段共享集成。 您现在可以设置此集成，而无需Adobe客户代表的支持。 有关详细信息，请阅读[Experience Cloud受众](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/experience-cloud-audiences.html)目标文档。
+> 此部分介绍了从Experience Platform到Audience Manager的旧版区段共享集成。 您现在可以设置此集成，而无需Adobe客户代表的支持。 有关详细信息，请阅读[Experience Cloud受众](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/experience-cloud-audiences.html?lang=zh-Hans)目标文档。
 
 >[!NOTE]
 >
@@ -143,13 +143,13 @@ Audience Manager会在您的区段存储中自动创建一个名为&#x200B;**Exp
 
 ## Experience Platform中的Audience Manager数据导出控制支持 {#aam-data-export-control-in-aep}
 
-为了在Experience Platform中强制实施数据使用合规性，必须为所有适用的数据集和字段指定适当的[数据使用标签](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html)。 此外，必须启用[数据使用策略](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html#)以便针对这些标签执行特定的营销操作，如[数据使用标签和执行(DULE)框架](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html#dule-framework)中所述。
+为了在Experience Platform中强制实施数据使用合规性，必须为所有适用的数据集和字段指定适当的[数据使用标签](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html?lang=zh-Hans)。 此外，必须启用[数据使用策略](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=zh-Hans#)以便针对这些标签执行特定的营销操作，如[数据使用标签和执行(DULE)框架](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hans#dule-framework)中所述。
 
 在Audience Manager和Experience Platform之间的受众共享流程中，已应用于Audience Manager区段的任何数据导出控件都会转换为Experience Platform数据管理识别的等效标签和营销操作，反之亦然。
 
 >[!NOTE]
 >
->有关数据导出控制的详细信息，请参阅[数据导出控制文档](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)。
+>有关数据导出控制的详细信息，请参阅[数据导出控制文档](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hans)。
 >
 >本文档提供了有关如何将特定的Audience Manager数据导出控件映射到Platform中的数据使用标签和营销操作的参考。
 
@@ -189,15 +189,15 @@ Audience Manager每天会更新界面中的报表编号一次。 此更新的时
 
 ### 配置文件合并规则和合并策略之间的差异
 
-Audience Manager中的[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md)与Experience Platform中的[[!UICONTROL Merge Policies]](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/merge-policies.html)工作方式不同，且用于每个人的标识图也不同。 因此，预计区段人口之间存在一些差异。
+Audience Manager中的[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md)与Experience Platform中的[[!UICONTROL Merge Policies]](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/merge-policies.html?lang=zh-Hans)工作方式不同，且用于每个人的标识图也不同。 因此，预计区段人口之间存在一些差异。
 
 >[!NOTE]
 >
-> 将区段从Experience Platform共享到Audience Manager时，您的Platform组织[默认合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en#default-merge-policy)优先于与Audience Manager共享的区段[使用的](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#merge-policies)合并策略。 例如，如果共享区段的合并策略允许[ID拼接](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#configure)，而组织的默认合并策略不允许，则可能会导致平台和Audience Manager之间的群体差异。
+> 将区段从Experience Platform共享到Audience Manager时，您的Platform组织[默认合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=zh-Hans#default-merge-policy)优先于与Audience Manager共享的区段[使用的](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hans#merge-policies)合并策略。 例如，如果共享区段的合并策略允许[ID拼接](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=zh-Hans#configure)，而组织的默认合并策略不允许，则可能会导致平台和Audience Manager之间的群体差异。
 
 ### Experience Platform中的区段构成
 
-Adobe Experience Platform与Audience Manager之间的集成为所有客户共享大量标准的[身份命名空间](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#identity-types)：ECID、IDFA、GAID、哈希电子邮件地址(EMAIL_LC_SHA256)、AdCloud ID。 如果您的Experience Platform区段将任何此类区段用作符合条件的用户档案的主要标识，则用户档案将被计入Audience Manager特征和区段中。
+Adobe Experience Platform与Audience Manager之间的集成为所有客户共享大量标准的[身份命名空间](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hans#identity-types)：ECID、IDFA、GAID、哈希电子邮件地址(EMAIL_LC_SHA256)、AdCloud ID。 如果您的Experience Platform区段将任何此类区段用作符合条件的用户档案的主要标识，则用户档案将被计入Audience Manager特征和区段中。
 
 >[!NOTE]
 >
@@ -218,6 +218,6 @@ If you created a data source in Audience Manager for the CRM IDs in Experience P
 
 >[!MORELIKETHIS]
 >
->* [分段服务概述](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#audiences)
->* [Experience Platform Segment Builder用户指南](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#audiences)
->* [Audience Manager连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
+>* [分段服务概述](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hans#audiences)
+>* [Experience Platform Segment Builder用户指南](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hans#audiences)
+>* [Audience Manager连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hans)
