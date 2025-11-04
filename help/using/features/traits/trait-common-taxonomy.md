@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 对数据类别中的特征进行分类
 
-在[!UICONTROL Add New Trait Wizard]&#x200B;(位于***[!UICONTROL Audience Data > Traits]***)中创建或编辑特征时分配分类分类。 有关详细信息，请参阅有关创建特征[的](../../features/traits/create-onboarded-rule-based-traits.md)文档。
+在[!UICONTROL Add New Trait Wizard]&#x200B;(位于&#x200B;***[!UICONTROL Audience Data > Traits]***)中创建或编辑特征时分配分类分类。 有关详细信息，请参阅有关创建特征[的](../../features/traits/create-onboarded-rule-based-traits.md)文档。
 
 ## 使用分类：其他注意事项
 
