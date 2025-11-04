@@ -50,7 +50,7 @@ ht-degree: 0%
 
    观看以下视频，了解[!UICONTROL Identity Type Breakdown]的概述。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/27977/)
+   >[!VIDEO](https://video.tv.adobe.com/v/32078?captions=chi_hans)
 
 1. **[!UICONTROL Segment Rules]：**&#x200B;列出区段中的特征以及资格规则。
 1. **[!UICONTROL Destination Mappings]：**&#x200B;列出区段的目标映射。

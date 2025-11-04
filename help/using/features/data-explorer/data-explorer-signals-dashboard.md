@@ -41,4 +41,4 @@ ht-degree: 0%
 
 观看以下视频以了解如何使用[!UICONTROL Signals Dashboard]。
 
->[!VIDEO](https://video.tv.adobe.com/v/25151/)
+>[!VIDEO](https://video.tv.adobe.com/v/327525?captions=chi_hans)

@@ -33,4 +33,4 @@ ht-degree: 0%
 
 以下视频介绍如何使用[!UICONTROL Data Explorer]发现和使用您的Adobe Analytics数据，包括搜索已用和未用的信号、创建Analytics特征以及了解数据。
 
->[!VIDEO](https://video.tv.adobe.com/v/25150)
+>[!VIDEO](https://video.tv.adobe.com/v/330345?captions=chi_hans)
