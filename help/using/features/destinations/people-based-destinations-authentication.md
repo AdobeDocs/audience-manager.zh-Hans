@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 使用基于人员的平台进行身份验证
 feature: People-based Destinations
 exl-id: d3e136d0-2b06-412a-9b9b-75b661c9aa14
-source-git-commit: 1809e9ee0b19a8ffb4bec38162f728d543d13701
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Audience Manager和基于人员的平台之间的通信。
 1. 登录到您的Audience Manager帐户，然后转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您之前配置了与社交平台的集成，您应会看到此页面中列出了该集成。 否则，页面为空。
    ![基于人员的集成](assets/pbd-config.png)
 2. 单击 **[!UICONTROL Add Account]**。
-3. 使用&#x200B;**[!UICONTROL People-Based Platform]**&#x200B;下拉菜单选择要配置集成的平台。
+3. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉菜单选择要配置集成的平台。
    ![基于人员的平台](assets/pbd-add.png)
 4. 单击&#x200B;**[!UICONTROL Confirm]**&#x200B;以重定向到所选平台的身份验证页面。
 5. 在验证您的Social Platform帐户后，您将被重定向到Audience Manager，您应该会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!UICONTROL Confirm]**。
@@ -52,7 +52,9 @@ Audience Manager通过在一段时间后过期的身份验证令牌处理您与�
 身份验证令牌过期后，Audience Manager与相应社交平台之间的集成会中断，因此Audience Manager无法再将受众区段发送到目标。 [!UICONTROL Integrated Accounts]页显示[!UICONTROL Expiration]列中每个集成的到期状态，并允许您随时续订身份验证。
 
 下面是如何续订已过期或即将过期的身份验证：
+
 1. 登录到您的Audience Manager帐户，然后转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。
 1. 确定续订身份验证所需的集成。 过期的身份验证将标记为[!UICONTROL Expired]，而即将过期的身份验证会显示剩余的身份验证天数。
 1. 单击&#x200B;**[!UICONTROL Renew]**&#x200B;列中相应的[!UICONTROL Expiration]图标。 这会触发&#x200B;**[!UICONTROL Renew Account]**&#x200B;工作流，该工作流将带您回到Social平台的身份验证页面。 进行身份验证后，令牌将续订并带有新的到期日期。
+
    ![pbd — 续订](assets/pbd-renew.png)

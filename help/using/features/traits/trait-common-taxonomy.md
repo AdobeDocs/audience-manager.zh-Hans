@@ -8,7 +8,7 @@ title: 使用通用分类法对特征进行分类
 uuid: 2e177344-07d9-40a7-8c99-c6c6518b9d97
 feature: Traits
 exl-id: 59000dc7-66cf-4e7e-8e9b-9d48157203bd
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 对数据类别中的特征进行分类
 
-在[!UICONTROL Add New Trait Wizard]（位于* **[!UICONTROL Audience Data > Traits]***）中创建或编辑特征时，分配分类分类。 有关详细信息，请参阅有关创建特征[的](../../features/traits/create-onboarded-rule-based-traits.md)文档。
+在[!UICONTROL Add New Trait Wizard]&#x200B;(位于***[!UICONTROL Audience Data > Traits]***)中创建或编辑特征时分配分类分类。 有关详细信息，请参阅有关创建特征[的](../../features/traits/create-onboarded-rule-based-traits.md)文档。
 
 ## 使用分类：其他注意事项
 

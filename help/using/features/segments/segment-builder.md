@@ -7,7 +7,7 @@ title: 区段生成器
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
 feature: Segments
 exl-id: 1bd681e4-fdf7-40df-b497-b1b0bf19d68e
-source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 2%
@@ -58,7 +58,7 @@ ht-degree: 2%
 
 请观看以下视频，详细了解跨设备量度的工作方式。
 
->[!VIDEO](https://video.tv.adobe.com/v/36831?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/33445)
 
 ## [!UICONTROL Segment Builder]控件：[!UICONTROL Basic Information]节 {#segment-builder-controls-basics}
 
@@ -110,7 +110,7 @@ ht-degree: 2%
 -->
 
 | 字段 | 描述 |
----------|----------
+|---------|----------|
 | **[!UICONTROL Name]** | 为区段提供一个简短逻辑名称，用于描述其功能或用途。 避免使用缩写和特殊字符。 区段名称的最大长度为255个字符。 |
 | **[!UICONTROL Description]** | 有关区段的其他说明性信息的字段。 |
 | **[!UICONTROL Integration Code]** | 用户定义的ID或其他特定于公司的信息的字段。 |

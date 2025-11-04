@@ -7,7 +7,7 @@ title: 数据导出控制
 uuid: de7f3608-c0cb-4049-973a-8be54525c600
 feature: Data Export Controls
 exl-id: 4369c210-bcf1-48cc-a9bb-0d122f6c03d4
-source-git-commit: 26aa0a210a045b40b2329844324315a092947188
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 根据应用于数据源和目标的分类，导出控件会阻止您：
 
 * 当特征属于数据源时，该数据源具有的数据导出控制与区段映射到的一个或多个目标上的数据导出标签不兼容，则将特征添加到区段。
-例如，假设某个区段映射到具有导出标签&#x200B;**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目标。 如果特征所属的数据源具有显示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的数据导出控件，则导出控件会阻止您向此区段添加特征。
+例如，假设某个区段映射到具有导出标签**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目标。 如果特征所属的数据源具有显示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的数据导出控件，则导出控件会阻止您向此区段添加特征。
 * 将任意数据发送到具有以下数据导出标签的目标位置，该标签被任何位置上的数据导出控件阻止：
    * 所包含特征的数据源；
    * 在所包含区段中使用的特征的数据源；
@@ -48,6 +48,7 @@ ht-degree: 1%
 >[!IMPORTANT]
 >
 >不能通过在区段的数据源上放置数据导出控件来阻止区段的导出，必须在以下任一位置设置该控件：
+>
 > * 区段中所用特征的数据源；
 > * 区段利用的用户档案合并规则；
 > * 区段的配置文件合并规则使用的任何数据源。

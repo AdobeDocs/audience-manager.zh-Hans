@@ -5,7 +5,7 @@ solution: Audience Manager
 title: IP地址模糊处理
 feature: Data Governance & Privacy
 exl-id: 8c976d1e-f4ba-4892-bd68-d4e74bdb4d9b
-source-git-commit: ae074cdeb8dcf6f6a224c2ede5f3bb704b28f49f
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 12%
@@ -31,7 +31,7 @@ ht-degree: 12%
 
 ### IP模糊处理优先级 {#precedence}
 
-[数据流级别的IP模糊处理](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans#create)优先于Audience Manager中设置的任何IP模糊处理选项，并将其应用于所有IP地址。 Audience Manager执行的任何地理位置查找都受数据流级别[!UICONTROL IP obfuscation]选项影响。 在Audience Manager中，基于完全模糊处理的IP的地理位置查找将生成未知区域，并且任何基于生成的地理位置数据的区段都不会实现。
+[数据流级别的IP模糊处理](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#create)优先于Audience Manager中设置的任何IP模糊处理选项，并将其应用于所有IP地址。 Audience Manager执行的任何地理位置查找都受数据流级别[!UICONTROL IP obfuscation]选项影响。 在Audience Manager中，基于完全模糊处理的IP的地理位置查找将生成未知区域，并且任何基于生成的地理位置数据的区段都不会实现。
 
 ## IP地址模糊处理要求 {#ip-obfuscation-requirements}
 
@@ -62,4 +62,5 @@ IP地址模糊处理仅适用于Audience Manager管理员帐户。 请参阅[创
 
 * [数据隐私](/help/using/overview/data-security-and-privacy/data-privacy.md)
 * IP地址模糊处理视频演示
->[!VIDEO](https://video.tv.adobe.com/v/34967?captions=chi_hans)
+
+>[!VIDEO](https://video.tv.adobe.com/v/27218/)

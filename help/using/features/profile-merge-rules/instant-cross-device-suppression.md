@@ -6,7 +6,7 @@ title: 即时跨设备抑制
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
 feature: Profile Merge
 exl-id: b9686210-e1aa-4f0a-a549-27d29c94e963
-source-git-commit: 2643bebea8618124d5c96906e8dc89e21024d51a
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 6%
@@ -42,11 +42,13 @@ ht-degree: 6%
 通过设置回访间隔和频率控制，您可以确保用户不会受到同样的创意内容吸引。 在此场景中，创建一个具有两个特征的区段，如以下步骤所述。
 
 1. 使用两个特征创建一个区段，并使用[!UICONTROL AND]逻辑，如下图所示。 您必须使用基于规则的特征来定义要实时触发的取消分段的展示事件。 详细了解如何[创建基于规则的特征](../traits/create-onboarded-rule-based-traits.md)。
+
    >[!NOTE]
    >
    >您可以使用[!UICONTROL Actionable Log Files]或[!UICONTROL Pixel Calls]根据用户印象创建特征。 了解有关[可操作的日志文件](../../integration/media-data-integration/actionable-log-files.md)和[像素调用](../../integration/media-data-integration/impression-data-pixels.md)的更多信息。
-2. 将频率控件应用于第二个特征。 如果您愿意，也可以添加回访间隔控件。 详细了解[如何应用回访间隔和频率控制](../segments/recency-and-frequency.md)。
-3. 将区段映射到任意数量的实时服务器到服务器目标。 阅读有关如何将区段添加到[服务器到服务器目标](../destinations/add-edit-segments.md)的信息。
+
+1. 将频率控件应用于第二个特征。 如果您愿意，也可以添加回访间隔控件。 详细了解[如何应用回访间隔和频率控制](../segments/recency-and-frequency.md)。
+1. 将区段映射到任意数量的实时服务器到服务器目标。 阅读有关如何将区段添加到[服务器到服务器目标](../destinations/add-edit-segments.md)的信息。
 
 在此方案中，一旦您的用户累积了超过三次展示，他们将被从此区段中移除，并且不会再看到此特定创意内容。
 

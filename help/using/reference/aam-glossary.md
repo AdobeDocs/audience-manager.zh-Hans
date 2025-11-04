@@ -7,7 +7,7 @@ title: 术语表
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
 feature: Reference
 exl-id: 9e2ee3d3-01b2-4038-abda-fedf0f16f163
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 96%
@@ -51,15 +51,17 @@ CRM ID 是客户在其 CRM 系统中用于识别用户的 ID。在 Audience Mana
 **客户可寻址受众**
 
 在[可寻址受众](/help/using/features/addressable-audiences.md)中，此量度表示设备满足以下条件：
-* 在回顾时间范围内已实现基于规则的特征或已载入的特征
-  **且**
-* ID 已与选定目标同步，不论同步次数是多少。
 
+* 在回顾时间范围内已实现基于规则的特征或已载入的特征
+
+  **且**
+
+* ID 已与选定目标同步，不论同步次数是多少。
 
 
 **客户属性**
 
-请参阅 [!DNL Experience Cloud Core Services] 产品文档中的[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans)。
+请参阅 [!DNL Experience Cloud Core Services] 产品文档中的[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html)。
 
 
 
@@ -111,7 +113,7 @@ demdex.net 是由 [!DNL Adobe] 控制的旧版域。它反映了 [!DNL Audience 
 
 **Experience Cloud ID (ECID)**
 
-以前称为 [!DNL Marketing Cloud] ID（MID 或 MCID）。[!DNL Experience Cloud] ID 是 ID 服务的核心。它是网站访客的唯一永久标识符。请参阅 Cookie 和 [Adobe Experience Platform 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hans)。
+以前称为 [!DNL Marketing Cloud] ID（MID 或 MCID）。[!DNL Experience Cloud] ID 是 ID 服务的核心。它是网站访客的唯一永久标识符。请参阅 Cookie 和 [Adobe Experience Platform 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html)。
 
 
 
@@ -267,6 +269,6 @@ TTL 定义符合条件的访客在一个特征中保留的天数。TTL 是针对
 
 [!DNL Experience Cloud] ID 服务（以前称为访客 ID）提供了一个通用的永久性 ID，用于在 [!DNL Experience Cloud] 的所有解决方案中标识您的访客。
 
-请参阅 [Adobe Experience Platform 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans) 文档。
+请参阅 [Adobe Experience Platform 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/home.html) 文档。
 
 ## W-X-Y-Z {#w-z}

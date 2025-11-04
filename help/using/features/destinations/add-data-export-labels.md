@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 将数据导出控件添加到目标
 feature: Data Export Controls
 exl-id: 12cfd2cc-b343-4dd1-a188-acbfc5cd25a2
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 2%
@@ -26,16 +26,21 @@ ht-degree: 2%
 要将导出标签添加到目标，请执行以下操作：
 
 1. 单击&#x200B;**[!UICONTROL Audience Data]**：
+
    * 对于新目标：单击&#x200B;**[!UICONTROL Create New Destination]**。 请先完成[!UICONTROL Basic Information]部分，然后再选择数据导出标签。 有关信息，请参阅[创建Cookie目标](../../features/destinations/create-cookie-destination.md)或[创建URL目标](../../features/destinations/create-url-destination.md)。
    * 对于现有目标：使用[!DNL Search]框查找您的目标，或者滚动浏览列表并单击目标名称以打开它。
+
 1. 选择[!DNL Data Export Label]。 如果不想设置任何导出限制，请将复选框保留为空。 导出标签包括以下选项：
+
    * **[!UICONTROL This destination may enable a combination with personally identifiable information (PII)]**
    * **[!UICONTROL This destination may be used for on-site ad targeting]**
    * **[!UICONTROL This destination may be used for off-site ad targeting]**
    * **[!UICONTROL This destination may be used for on-site ad personalization]**
+
    >[!IMPORTANT]
    >
    >除非您在数据源上设置与导出控制[匹配的](../../features/data-export-controls.md)，否则导出限制将不起作用。
+
 1. 单击 **[!UICONTROL Save]**。
 
 >[!MORELIKETHIS]

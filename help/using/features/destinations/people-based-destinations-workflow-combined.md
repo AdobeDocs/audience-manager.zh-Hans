@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 工作流程A — 基于所有在线活动和离线数据的Personalization
 feature: People-based Destinations
 exl-id: 1f906955-8fe7-4cce-95d6-0e4275d523e8
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 0%
@@ -36,11 +36,13 @@ ht-degree: 0%
 1. 确保取消选中选项[!UICONTROL Cannot be tied to personally identifiable information]。
 1. 在&#x200B;**[!UICONTROL Data Source Settings]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Inbound]**&#x200B;和&#x200B;**[!UICONTROL Outbound]**&#x200B;选项，并启用&#x200B;**[!UICONTROL Share associated cross-device IDs in people-based destinations]**&#x200B;选项。
 1. 使用下拉菜单为此数据源选择&#x200B;**[!UICONTROL Emails(SHA256, lowercased)]**&#x200B;标签。
+
    >[!IMPORTANT]
    >
    >此选项仅将数据源标记为包含使用该特定算法经过哈希处理的数据。 Audience Manager不会在此步骤中对数据进行哈希处理。 确保您计划存储在此数据源中的电子邮件地址已使用[!DNL SHA256]算法进行哈希处理。 否则，您将无法将其用于[!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
+
 1. 保存数据源设置。
 
  
@@ -54,6 +56,7 @@ ht-degree: 0%
 1. 在&#x200B;**[!UICONTROL ID Type]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL Cross Device]**。
 1. 在&#x200B;**[!UICONTROL Data Source Settings]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Inbound]**&#x200B;和&#x200B;**[!UICONTROL Outbound]**&#x200B;选项，并启用&#x200B;**[!UICONTROL Share associated cross-device IDs in people-based destinations]**&#x200B;选项。
 1. 使用下拉菜单为此数据源选择&#x200B;**[!UICONTROL Emails(SHA256, lowercased)]**&#x200B;标签。
+
    >[!IMPORTANT]
    >
    >此选项仅将数据源标记为包含使用该特定算法经过哈希处理的数据。 Audience Manager不会在此步骤中对数据进行哈希处理。 确保您计划存储在此数据源中的电子邮件地址已使用[!DNL SHA256]算法进行哈希处理。 否则，您将无法将其用于[!DNL People-Based Destinations]。
@@ -63,7 +66,7 @@ ht-degree: 0%
 
 观看以下视频，观看有关如何为[!UICONTROL People-Based Destinations]创建数据源的视频教程。
 
->[!VIDEO](https://video.tv.adobe.com/v/31956?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29006/)
 
 >[!NOTE]
 >
@@ -142,7 +145,7 @@ ht-degree: 0%
 1. 登录到您的Audience Manager帐户，然后转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您之前配置了与社交平台的集成，您应会看到此页面中列出了该集成。 否则，页面为空。
    ![基于人员的集成](assets/pbd-config.png)
 1. 单击 **[!UICONTROL Add Account]**。
-1. 使用&#x200B;**[!UICONTROL People-Based Platform]**&#x200B;下拉菜单选择要配置集成的平台。
+1. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉菜单选择要配置集成的平台。
    ![基于人员的平台](assets/pbd-add.png)
 1. 单击&#x200B;**[!UICONTROL Confirm]**&#x200B;以重定向到所选平台的身份验证页面。
 1. 在验证您的Social Platform帐户后，您将被重定向到Audience Manager，您应该会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!UICONTROL Confirm]**。
