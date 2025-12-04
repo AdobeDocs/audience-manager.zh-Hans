@@ -4,7 +4,7 @@ title: DCS错误代码、消息和示例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
-source-git-commit: 5044a38c751abace922008f00b9ff463ea9c7e57
+source-git-commit: 2012c244f6fa5ca01c7e2719ce621214cb22f93e
 workflow-type: tm+mt
 source-wordcount: '1517'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 |---|---|---|
 | 0 | 未指定的错误 | 这是一个捕获全部错误，它处理其他错误处理程序未涵盖的事件。 解决此错误非常困难。 它可能是由于各种未知操作或事件导致的。 如果收到此错误，请重试您的[!DNL DCS]请求。 如果问题仍然存在，请联系您的[!DNL Adobe]代表。 |
 | 1 | 找不到主机名的配置： `hostname` | 我们的合作伙伴配置团队尚未设置请求中发送的主机名。 如果您看到此错误消息，请联系您的[!DNL Adobe]代表。 |
-| 2 | 无效的`d_orgid`值（未能找到此组织ID的配置）： `ID` | 组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页面”部分[组织和帐户关联](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=zh-Hans)以了解有关如何查找该页面的信息。 |
+| 2 | 无效的`d_orgid`值（未能找到此组织ID的配置）： `ID` | 组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页面”部分[组织和帐户关联](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)以了解有关如何查找该页面的信息。 |
 | 10 | 无法评估特征 | 请求中的特征被部分评估或根本没有被评估。 如果问题仍然存在，请联系您的[!DNL Adobe]代表。 |
 
 ## 集成错误代码 {#integration-error-codes}
@@ -151,7 +151,7 @@ ht-degree: 3%
   <tr> 
    <td colname="col1"> <p>302 </p> </td> 
    <td colname="col2"> <p>未授权的客户ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>当客户ID数据源不属于当前组织ID时返回。 如果您不知道或没有您的组织ID，请参阅<a href="https://experiencecloud.adobe.com/resources/help/zh_CN/mcloud/organizations.html" format="https" scope="external">组织和帐户关联</a>中的“查找您的组织ID”部分，以了解有关如何查找该ID的信息。 </p> </td> 
+   <td colname="col3"> <p>当客户ID数据源不属于当前组织ID时返回。 如果您不知道或没有您的组织ID，请参阅<a href="https://experiencecloud.adobe.com/resources/help/en_US/mcloud/organizations.html" format="https" scope="external">组织和帐户关联</a>中的“查找您的组织ID”部分，以了解有关如何查找该ID的信息。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>303 </p> </td> 
@@ -181,7 +181,7 @@ ht-degree: 3%
   <tr> 
    <td colname="col1"> <p>310 </p> </td> 
    <td colname="col2"> <p>客户ID已被丢弃，因为它超出了给定命名空间的限制。 命名空间ID为<code><i>ID</i></code>，客户ID为<code><i>ID</i></code>。 </p> </td> 
-   <td colname="col3"> <p>如果在<code> DPID</code> DCS<span class="wintitle">调用中为同一命名空间(</span>)声明了3个以上的客户ID，则会返回此错误代码。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one </code> </p> <p>在此示例<span class="wintitle"> DCS</span>请求中，有4个为同一命名空间声明的ID（集成代码为1）。 丢弃其中一个ID并返回错误310。 </p> </td> 
+   <td colname="col3"> <p>如果在<code> DPID</code> DCS<span class="wintitle">调用中为同一命名空间(</span>)声明了3个以上的客户ID，则会返回此错误代码。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>在此示例<span class="wintitle"> DCS</span>请求中，有4个为同一命名空间声明的ID（集成代码为1）。 丢弃其中一个ID并返回错误310。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>311 </p> </td> 
@@ -192,7 +192,7 @@ ht-degree: 3%
    <td colname="col1"> <p>312 </p> </td> 
    <td colname="col2"> <p>请求包含无效的全局设备ID </p> </td> 
    <td colname="col3"> <p>当请求包含无效的全局设备ID时，<span class="wintitle">DCS</span>将返回此错误代码。 DCS将忽略无效ID，并抛出312错误以及无效ID的特定错误。 有关正确的设备广告ID格式和相应的全局数据源的详细信息，请参阅Audience Manager<a href="../../../features/global-data-sources.md" format="dita" scope="local">中的</a>全局数据源<a href="../../../reference/ids-in-aam.md" format="dita" scope="local">和</a>ID索引。</p>
-   <p>不正确调用的示例： <code>"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
+   <p>不正确调用的示例： <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>说明： <span class="keyword">IDFA (DPID 20915)</span>必须为大写ID。 请求中提供的ID为小写。</p>
    </td>
   </tr>
@@ -213,8 +213,7 @@ ht-degree: 3%
    <td colname="col3"> <p>未提供同意时，适用于IAB TCF的Audience Manager插件会选择用户退出进一步的数据收集，或者在未检测到合作伙伴上下文时完全丢弃调用。</p>
    </td>
   </tr>
-
-</tbody>
+ </tbody>
 </table>
 
 ## 示例错误代码消息 {#sample-error-codes}
