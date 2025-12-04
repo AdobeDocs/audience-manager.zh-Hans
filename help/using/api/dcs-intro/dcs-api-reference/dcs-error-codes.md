@@ -181,7 +181,7 @@ ht-degree: 3%
   <tr> 
    <td colname="col1"> <p>310 </p> </td> 
    <td colname="col2"> <p>客户ID已被丢弃，因为它超出了给定命名空间的限制。 命名空间ID为<code><i>ID</i></code>，客户ID为<code><i>ID</i></code>。 </p> </td> 
-   <td colname="col3"> <p>如果在<code> DPID</code> DCS<span class="wintitle">调用中为同一命名空间(</span>)声明了3个以上的客户ID，则会返回此错误代码。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>在此示例<span class="wintitle"> DCS</span>请求中，有4个为同一命名空间声明的ID（集成代码为1）。 丢弃其中一个ID并返回错误310。 </p> </td> 
+   <td colname="col3"> <p>如果在<code> DPID</code> DCS<span class="wintitle">调用中为同一命名空间(</span>)声明了3个以上的客户ID，则会返回此错误代码。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one </code> </p> <p>在此示例<span class="wintitle"> DCS</span>请求中，有4个为同一命名空间声明的ID（集成代码为1）。 丢弃其中一个ID并返回错误310。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>311 </p> </td> 
@@ -192,7 +192,7 @@ ht-degree: 3%
    <td colname="col1"> <p>312 </p> </td> 
    <td colname="col2"> <p>请求包含无效的全局设备ID </p> </td> 
    <td colname="col3"> <p>当请求包含无效的全局设备ID时，<span class="wintitle">DCS</span>将返回此错误代码。 DCS将忽略无效ID，并抛出312错误以及无效ID的特定错误。 有关正确的设备广告ID格式和相应的全局数据源的详细信息，请参阅Audience Manager<a href="../../../features/global-data-sources.md" format="dita" scope="local">中的</a>全局数据源<a href="../../../reference/ids-in-aam.md" format="dita" scope="local">和</a>ID索引。</p>
-   <p>不正确调用的示例： <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
+   <p>不正确调用的示例： <code>"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>说明： <span class="keyword">IDFA (DPID 20915)</span>必须为大写ID。 请求中提供的ID为小写。</p>
    </td>
   </tr>
