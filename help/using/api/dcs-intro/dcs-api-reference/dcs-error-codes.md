@@ -4,9 +4,9 @@ title: DCS错误代码、消息和示例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
-source-git-commit: 2012c244f6fa5ca01c7e2719ce621214cb22f93e
+source-git-commit: f8ba09b674b71045e08f6d171471cdcdd0efb265
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1519'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
 |---|---|---|
 | 0 | 未指定的错误 | 这是一个捕获全部错误，它处理其他错误处理程序未涵盖的事件。 解决此错误非常困难。 它可能是由于各种未知操作或事件导致的。 如果收到此错误，请重试您的[!DNL DCS]请求。 如果问题仍然存在，请联系您的[!DNL Adobe]代表。 |
 | 1 | 找不到主机名的配置： `hostname` | 我们的合作伙伴配置团队尚未设置请求中发送的主机名。 如果您看到此错误消息，请联系您的[!DNL Adobe]代表。 |
-| 2 | 无效的`d_orgid`值（未能找到此组织ID的配置）： `ID` | 组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页面”部分[组织和帐户关联](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=zh-Hans)以了解有关如何查找该页面的信息。 |
+| 2 | 无效的`d_orgid`值（未能找到此组织ID的配置）： `ID` | 组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页面”部分[组织和帐户关联](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)以了解有关如何查找该页面的信息。 |
 | 10 | 无法评估特征 | 请求中的特征被部分评估或根本没有被评估。 如果问题仍然存在，请联系您的[!DNL Adobe]代表。 |
 
 ## 集成错误代码 {#integration-error-codes}
@@ -129,92 +129,22 @@ ht-degree: 3%
 
 ## 集成警告代码 {#integration-warning-codes}
 
-<table id="table_31F1593C46804DDBA2E9BEDE83F2417F"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 代码Id </th> 
-   <th colname="col2" class="entry"> 消息 </th> 
-   <th colname="col3" class="entry"> 描述 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>300 </p> </td> 
-   <td colname="col2"> <p>客户ID <code><i>ID</i></code>无效 </p> </td> 
-   <td colname="col3"> <p>客户ID无效（数据源缺少值，集成代码缺失，数据源格式无效，已阻止的客户ID，空白的客户ID，未授权访问不属于合作伙伴的数据源）。 </p> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>301 </p> </td> 
-   <td colname="col2"> <p>超出了最大客户ID数。 允许的最大值为<code><i>maximum allowed</i></code>。 找到的是<code><i>maximum found</i></code>。</p> </td> 
-   <td colname="col3"> <p>与跨设备数据源关联的客户ID数量超过了每个请求允许的跨设备ID数量。 这些ID包括跨设备ID、移动设备ID或Cookie ID。 限制当前设置为10。 </p> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>302 </p> </td> 
-   <td colname="col2"> <p>未授权的客户ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>当客户ID数据源不属于当前组织ID时返回。 如果您不知道或没有您的组织ID，请参阅<a href="https://experiencecloud.adobe.com/resources/help/zh_CN/mcloud/organizations.html" format="https" scope="external">组织和帐户关联</a>中的“查找您的组织ID”部分，以了解有关如何查找该ID的信息。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>303 </p> </td> 
-   <td colname="col2"> <p>已阻止的客户ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>当客户ID被识别为恶意且已添加到阻止列表中时返回。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>304 </p> </td> 
-   <td colname="col2"> <p>已阻止的数据源ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>当数据源ID被识别为恶意并已添加到阻止列表时返回 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>306 </p> </td> 
-   <td colname="col2"> <p>已阻止声明的设备ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>设备ID已被识别为恶意设备，并且已添加到阻止列表中。当我们短时间内收到包含此设备ID的<span class="wintitle">个DCS</span>请求时，可能会发生这种情况。 </p> </td>
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>307 </p> </td> 
-   <td colname="col2"> <p>已阻止<code><i>ID</i></code>的配置文件操作 </p> </td> 
-   <td colname="col3"> <p>列入阻止列表已阻止读/写操作，因为ID已被识别为恶意并已添加到中。请参阅错误代码306。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>309 </p> </td> 
-   <td colname="col2"> <p>已丢弃客户ID <code><i>ID</i></code>，因为它超过了每个请求声明的客户ID的限制 </p> </td> 
-   <td colname="col3"> <p>与错误301相关。 此错误指定由于超出限制而丢弃的客户ID。 </p> <p>例如，如果在<span class="wintitle"> DCS</span>调用中声明了12个客户ID，则将丢弃其中两个客户ID。 为了中继哪些客户被丢弃，此错误将在响应中显示两次（每个被丢弃的客户ID显示一次）。 </p> </td>
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>310 </p> </td> 
-   <td colname="col2"> <p>客户ID已被丢弃，因为它超出了给定命名空间的限制。 命名空间ID为<code><i>ID</i></code>，客户ID为<code><i>ID</i></code>。 </p> </td> 
-   <td colname="col3"> <p>如果在<code> DPID</code> DCS<span class="wintitle">调用中为同一命名空间(</span>)声明了3个以上的客户ID，则会返回此错误代码。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one </code> </p> <p>在此示例<span class="wintitle"> DCS</span>请求中，有4个为同一命名空间声明的ID（集成代码为1）。 丢弃其中一个ID并返回错误310。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>311 </p> </td> 
-   <td colname="col2"> <p>请求包含无效参数 </p> </td> 
-   <td colname="col3"> <p>至少有一个URL参数未正确编码时，<span class="wintitle"> DCS</span>返回此错误代码。 在这种情况下，<span class="wintitle"> DCS</span>将忽略整个请求。 </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%esid!&amp;d_creative=%ecid!&amp;d_adgroup=%eaid!&amp;d_placement=%epid!&amp;d_campaign=%ebuy!&amp;d_adsrc=48123</code> </p> <p>在上述示例请求中，<code> %</code>序列编码不正确。 因此，<span class="wintitle"> DCS</span>将忽略它。 </p> <p>正确编码的示例应如下所示： </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%25esid!&amp;d_creative=%25ecid!&amp;d_adgroup=%25eaid!&amp;d_placement=%25epid!&amp;d_campaign=%25ebuy!&amp;d_adsrc=48123</code> </p> </td> 
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>312 </p> </td> 
-   <td colname="col2"> <p>请求包含无效的全局设备ID </p> </td> 
-   <td colname="col3"> <p>当请求包含无效的全局设备ID时，<span class="wintitle">DCS</span>将返回此错误代码。 DCS将忽略无效ID，并抛出312错误以及无效ID的特定错误。 有关正确的设备广告ID格式和相应的全局数据源的详细信息，请参阅Audience Manager<a href="../../../features/global-data-sources.md" format="dita" scope="local">中的</a>全局数据源<a href="../../../reference/ids-in-aam.md" format="dita" scope="local">和</a>ID索引。</p>
-   <p>不正确调用的示例： <code>"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
-   <p>说明： <span class="keyword">IDFA (DPID 20915)</span>必须为大写ID。 请求中提供的ID为小写。</p>
-   </td>
-  </tr>
-   <tr> 
-   <td colname="col1"> <p>313 </p> </td> 
-   <td colname="col2"> <p>GCL中不存在CMP ID</p> </td> 
-   <td colname="col3"> <p>当评估时<code>gdpr=1</code>和IAB TC字符串由不存在于Audience Manager缓存版本的全局CMP列表中的CMP ID生成时，适用于IAB TCF的Audience Manager插件会丢弃IAB TC字符串，并照常处理请求。 IAB TCF v2.2 ${GDPR}宏设置为0，${GDPR_CONSENT_XXX}宏为空。</p>
-   </td>
-  </tr>
-   <tr> 
-   <td colname="col1"> <p>314 </p> </td> 
-   <td colname="col2"> <p>CMP ID在GCL中标记为已删除</p> </td> 
-   <td colname="col3"> <p>当<code>gdpr=1</code>和IAB TC字符串由CMP生成，且该CMP在我们的“全局CMP列表”的缓存版本中标记为已删除时，如果评估时间已超过从“全局CMP列表”中删除的时间，则适用于IAB TCF的Audience Manager插件将丢弃TC字符串并照常处理请求。 IAB TCF v2.2 ${GDPR}宏设置为0，${GDPR_CONSENT_XXX}宏为空。</p></td>
-  </tr>
-   <tr> 
-   <td colname="col1"> <p>315 </p> </td> 
-   <td colname="col2"> <p>同意字符串表示不同意</p> </td> 
-   <td colname="col3"> <p>未提供同意时，适用于IAB TCF的Audience Manager插件会选择用户退出进一步的数据收集，或者在未检测到合作伙伴上下文时完全丢弃调用。</p>
-   </td>
-  </tr>
- </tbody>
-</table>
+| 代码Id | 消息 | 描述 |
+| --- | --- | --- |
+| 300 | 客户ID `_ID_`无效 | 客户ID无效（数据源缺少值，集成代码缺失，数据源格式无效，已阻止的客户ID，空白的客户ID，未授权访问不属于合作伙伴的数据源）。 |
+| 301 | 超出了最大客户ID数。 允许的最大值为`_maximum allowed_`。 找到的是`_maximum found_`。 | 与跨设备数据源关联的客户ID数量超过了每个请求允许的跨设备ID数量。 这些ID包括跨设备ID、移动设备ID或Cookie ID。 限制当前设置为10。 |
+| 302 | 未授权的客户ID `_ID_` | 当客户ID数据源不属于当前组织ID时返回。 如果您不知道或没有组织ID，请参阅[组织和帐户关联](https://experiencecloud.adobe.com/resources/help/en_US/mcloud/organizations.html)中的“查找您的组织ID”部分，了解有关如何查找该组织的信息。 |
+| 303 | 已阻止的客户ID `_ID_` | 当客户ID被识别为恶意且已添加到阻止列表中时返回。 |
+| 304 | 已阻止的数据源ID `_ID_` | 当数据源ID被识别为恶意并已添加到阻止列表时返回 |
+| 306 | 已阻止声明的设备ID `_ID_` | 设备ID已被识别为恶意设备，并且已被添加到阻止列表如果在短时间内收到大量包含此设备ID的DCS请求，则可能会发生这种情况。 |
+| 307 | 已阻止`_ID_`的配置文件操作 | 列入阻止列表已阻止读/写操作，因为ID已被识别为恶意并已添加到中。请参阅错误代码306。 |
+| 309 | 已丢弃客户ID `_ID_`，因为它超过了每个请求声明的客户ID的限制 | 与错误301相关。 此错误指定由于超出限制而丢弃的客户ID。<br><br>例如，如果在DCS调用中声明了12个客户ID，则将丢弃其中两个客户ID。 为了中继哪些客户被丢弃，此错误将在响应中显示两次（每个被丢弃的客户ID显示一次）。 |
+| 310 | 客户ID已被丢弃，因为它超出了给定命名空间的限制。 命名空间ID为`_ID_`，客户ID为`_ID_`。 | 如果DCS调用中为同一命名空间( `DPID`)声明了3个以上的客户ID，则会返回此错误代码。<br><br>`https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one`<br><br>在此示例DCS请求中，有4个为同一命名空间声明的ID（集成代码为1）。 丢弃其中一个ID并返回错误310。 |
+| 311 | 请求包含无效参数 | 如果至少有一个URL参数未正确编码，DCS将返回此错误代码。 在这种情况下，DCS会忽略整个请求。<br><br>`http(s)://partner.demdex.net/event?d_event=imp&d_rtbd=json&d_src=38454&d_site=%esid!&d_creative=%ecid!&d_adgroup=%eaid!&d_placement=%epid!&d_campaign=%ebuy!&d_adsrc=48123`<br><br>在上面的示例请求中，`%`序列编码不正确。 因此，DCS将忽略它。<br><br>正确编码的示例应如下所示：<br><br>`http(s)://partner.demdex.net/event?d_event=imp&d_rtbd=json&d_src=38454&d_site=%25esid!&d_creative=%25ecid!&d_adgroup=%25eaid!&d_placement=%25epid!&d_campaign=%25ebuy!&d_adsrc=48123` |
+| 312 | 请求包含无效的全局设备ID | 当请求包含无效的全局设备ID时，DCS会返回此错误代码。 DCS将忽略无效ID，并抛出312错误以及无效ID的特定错误。 有关正确的设备广告ID格式和相应的全局数据源的详细信息，请参阅Audience Manager[中的](../../../features/global-data-sources.md)全局数据源[和](../../../reference/ids-in-aam.md)ID索引。<br><br>不正确调用的示例： `"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"`<br><br>说明： IDFA (DPID 20915)必须是大写的ID。 请求中提供的ID为小写。 |
+| 313 | GCL中不存在CMP ID | 当评估时`gdpr=1`和IAB TC字符串由不存在于Audience Manager缓存版本的全局CMP列表中的CMP ID生成时，适用于IAB TCF的Audience Manager插件会丢弃IAB TC字符串，并照常处理请求。 IAB TCF v2.2 ${GDPR}宏设置为0，${GDPR\_CONSENT\_XXX}宏为空。 |
+| 314 | CMP ID在GCL中标记为已删除 | 当`gdpr=1`和IAB TC字符串由CMP生成，且该CMP在我们的“全局CMP列表”的缓存版本中标记为已删除时，如果评估时间已超过从“全局CMP列表”中删除的时间，则适用于IAB TCF的Audience Manager插件将丢弃TC字符串并照常处理请求。 IAB TCF v2.2 ${GDPR}宏设置为0，${GDPR\_CONSENT\_XXX}宏为空。 |
+| 315 | 同意字符串表示不同意 | 未提供同意时，适用于IAB TCF的Audience Manager插件会选择用户退出进一步的数据收集，或者在未检测到合作伙伴上下文时完全丢弃调用。 |
 
 ## 示例错误代码消息 {#sample-error-codes}
 
