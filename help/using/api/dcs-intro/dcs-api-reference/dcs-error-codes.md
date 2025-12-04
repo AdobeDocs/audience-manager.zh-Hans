@@ -23,7 +23,7 @@ ht-degree: 3%
 |---|---|---|
 | 0 | 未指定的错误 | 这是一个捕获全部错误，它处理其他错误处理程序未涵盖的事件。 解决此错误非常困难。 它可能是由于各种未知操作或事件导致的。 如果收到此错误，请重试您的[!DNL DCS]请求。 如果问题仍然存在，请联系您的[!DNL Adobe]代表。 |
 | 1 | 找不到主机名的配置： `hostname` | 我们的合作伙伴配置团队尚未设置请求中发送的主机名。 如果您看到此错误消息，请联系您的[!DNL Adobe]代表。 |
-| 2 | 无效的`d_orgid`值（未能找到此组织ID的配置）： `ID` | 组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页面”部分[组织和帐户关联](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)以了解有关如何查找该页面的信息。 |
+| 2 | 无效的`d_orgid`值（未能找到此组织ID的配置）： `ID` | 组织ID不正确。 请检查您的ID，然后重试请求。 如果您不知道或没有组织ID，请参阅“管理页面”部分[组织和帐户关联](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=zh-Hans)以了解有关如何查找该页面的信息。 |
 | 10 | 无法评估特征 | 请求中的特征被部分评估或根本没有被评估。 如果问题仍然存在，请联系您的[!DNL Adobe]代表。 |
 
 ## 集成错误代码 {#integration-error-codes}
@@ -133,7 +133,7 @@ ht-degree: 3%
 | --- | --- | --- |
 | 300 | 客户ID `_ID_`无效 | 客户ID无效（数据源缺少值，集成代码缺失，数据源格式无效，已阻止的客户ID，空白的客户ID，未授权访问不属于合作伙伴的数据源）。 |
 | 301 | 超出了最大客户ID数。 允许的最大值为`_maximum allowed_`。 找到的是`_maximum found_`。 | 与跨设备数据源关联的客户ID数量超过了每个请求允许的跨设备ID数量。 这些ID包括跨设备ID、移动设备ID或Cookie ID。 限制当前设置为10。 |
-| 302 | 未授权的客户ID `_ID_` | 当客户ID数据源不属于当前组织ID时返回。 如果您不知道或没有组织ID，请参阅[组织和帐户关联](https://experiencecloud.adobe.com/resources/help/en_US/mcloud/organizations.html)中的“查找您的组织ID”部分，了解有关如何查找该组织的信息。 |
+| 302 | 未授权的客户ID `_ID_` | 当客户ID数据源不属于当前组织ID时返回。 如果您不知道或没有组织ID，请参阅[组织和帐户关联](https://experiencecloud.adobe.com/resources/help/zh_CN/mcloud/organizations.html)中的“查找您的组织ID”部分，了解有关如何查找该组织的信息。 |
 | 303 | 已阻止的客户ID `_ID_` | 当客户ID被识别为恶意且已添加到阻止列表中时返回。 |
 | 304 | 已阻止的数据源ID `_ID_` | 当数据源ID被识别为恶意并已添加到阻止列表时返回 |
 | 306 | 已阻止声明的设备ID `_ID_` | 设备ID已被识别为恶意设备，并且已被添加到阻止列表如果在短时间内收到大量包含此设备ID的DCS请求，则可能会发生这种情况。 |
