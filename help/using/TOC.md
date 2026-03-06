@@ -66,7 +66,7 @@ ht-degree: 17%
       + [Audience Lab高级功能](features/audience-lab/audience-lab-advanced.md)
    + Audience Marketplace{#audience-marketplace}
       + [Audience Marketplace](features/audience-marketplace/audience-marketplace.md)
-      + {hide-from-toc}[Audience Marketplace优化](features/audience-marketplace/audience-marketplace-optimization.md)
+      + [hide-from-tocAudience Marketplace优化](features/audience-marketplace/audience-marketplace-optimization.md)
       + 面向数据提供商的Audience Marketplace{#audience-marketplace-for-data-providers}
          + [面向数据提供商的Audience Marketplace](features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
          + [创建、定价和管理数据信息源](features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md)
