@@ -7,7 +7,7 @@ title: 与目标相关的 GDPR 注意事项
 uuid: e8a40060-086c-4f03-b48c-9c903acb7891
 feature: Data Governance & Privacy
 exl-id: ff2aa030-94cd-45dc-a9a2-283b38ab5e46
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: f073dd733b512aa60d7817acbef76e51594900f8
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 96%
@@ -20,7 +20,8 @@ ht-degree: 96%
 
 Adobe 合作伙伴拥有自己的业务流程，并可能会决定不时地更新与 Audience Manager 的集成需求。为此，我们一直积极与 Audience Manager 合作伙伴生态系统合作，以便让客户了解所发生的变化。
 
-<!-- ## Audience Manager Partner Updates - ID Syncs {#partner-updates-id-syncs}
+<!--
+## Audience Manager Partner Updates - ID Syncs {#partner-updates-id-syncs}
 
 Some partners, as listed in the table below, have changed their integration requirements with Audience Manager to include support based on the IAB Framework, in order to comply with GDPR standards.
 
@@ -54,9 +55,10 @@ Some partners, as listed in the table below, have changed their integration requ
    <td colname="col3"> <p>Not live yet </p> </td> 
   </tr> 
  </tbody> 
-</table> -->
+</table>
+-->
 
-## Audience Manager用户界面更新 — Yahoo/Oath/DataX集成 {#ui-update}
+## Audience Manager User Interface Update - Yahoo/Oath/DataX Integration {#ui-update}
 
 除了上述 IAB 框架更新之外，Yahoo/Oath/DataX 还向其分类和受众 API 中添加了两个新参数，即 **gdpr** 和 **gdpr_mode**。这两个参数可告知 Yahoo/Oath/DataX 他们有权作为数据处理者或数据控制者处理特定区段。因此，Audience Manager 客户在将区段发送到 Yahoo/Oath/DataX 目标时，必须根据其与 Oath 的协议指定相应的参数（处理者或控制者）。
 

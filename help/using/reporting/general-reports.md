@@ -7,7 +7,7 @@ title: 常规报表
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
 feature: General & Trend Reports
 exl-id: dc16a821-b776-4a04-af60-4b8c914253dd
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: f073dd733b512aa60d7817acbef76e51594900f8
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 c_general_reports.xml
 
- -->
+-->
 
 [!DNL Audience Manager]使用[!UICONTROL Role Based Access Control] ([!UICONTROL RBAC])将用户组权限扩展到[!UICONTROL General]报告。 用户只能在报告中看到他们有权查看的特征和区段。 通过[!UICONTROL RBAC]功能，您可以控制内部团队可以查看哪些报表数据。 例如，管理不同广告商帐户的机构可以配置用户组权限，这样管理广告商A帐户的团队将无法查看广告商B的报表数据。
 
@@ -59,7 +59,7 @@ c_general_reports.xml
 
 t_run_general_report.xml
 
- -->
+-->
 
 1. 在&#x200B;**[!UICONTROL Analytics]**&#x200B;仪表板中，单击&#x200B;**[!UICONTROL General Reports]**。
 1. 从&#x200B;**[!UICONTROL Report Type]**&#x200B;下拉列表中，选择所需的类型：特征、区段或目标。
@@ -118,10 +118,10 @@ This metric represents the total amount of trait fires for the trait in your sel
 
 This metric represents the total amount of Audience Manager UUIDs that are currently qualified for the trait. Use this number to understand the total amount of users you could use for segmentation and targeting. Typically, users remain part of a trait for [120 days](../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval). For example, a user visiting your homepage three times today and never returning afterwards, would remain as a user in this population every day until 120 days from now. At the 120 day mark, they would be removed from the population. Read our [Trait and Segment Qualification Reference](../features/traits/trait-and-segment-qualification-reference.md) for more examples on the difference between Unique Trait Realizations and Total Trait Population.
 
-The illustration below shows the results of running a general report for the Trait report type. -->
-<!-- 
-![](assets/general_reports_metrics.png) -->
+The illustration below shows the results of running a general report for the Trait report type. 
 
+![](assets/general_reports_metrics.png)
+-->
 
 ## 常规报表区段结果 {#general-report-results-segments}
 
@@ -151,7 +151,7 @@ The illustration below shows the results of running a general report for the Tra
 
 此量度表示在指定时间范围内实时查看的实际独特访客数量，以及在Audience Manager查看这些访客时符合区段资格条件的访客数量。
 
-总区段人口&#x200B;**&#x200B;**
+总区段人口&#x200B;****
 
 此量度表示在回顾期间属于某个区段的、已发送到目标的Audience Manager UUID总数。
 

@@ -7,7 +7,7 @@ title: 入站数据文件的FTP名称和文件大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 feature: Inbound Data Transfers
 exl-id: 9c889214-7075-4392-9ed5-f07b91e7b50a
-source-git-commit: a5506a315a98afdf31f8f52fac09b9179f388f30
+source-git-commit: f073dd733b512aa60d7817acbef76e51594900f8
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 3%
@@ -58,7 +58,7 @@ ht-degree: 3%
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
    <td colname="col2"> <p>告知<span class="keyword"> Audience Manager</span>数据文件是否包含您自己的用户ID、Android ID、iOS ID或其他属于<a href="/help/using/features/global-data-sources.md">全局数据源</a>的ID的lD。 接受以下选项：</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>数据Source ID （也称为数据提供程序ID）：</b>这是Audience Manager分配给数据源的唯一ID(请参阅ID <a href="/help/using/reference/ids-in-aam.md">的Audience Manager </a>索引)。 发送包含您自己的用户ID的数据时，在文件名中使用此分配的ID。 例如，<code>...ftp_dpm_21_123456789.sync</code>告知<span class="keyword"> Audience Manager</span>将数据载入到属于数据源21的ID。 </li> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>数据Source ID （也称为数据提供程序ID）：</b>这是Audience Manager分配给数据源的唯一ID（请参阅ID <a href="/help/using/reference/ids-in-aam.md">的Audience Manager </a>索引）。 发送包含您自己的用户ID的数据时，在文件名中使用此分配的ID。 例如，<code>...ftp_dpm_21_123456789.sync</code>告知<span class="keyword"> Audience Manager</span>将数据载入到属于数据源21的ID。 </li> 
      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID (GAID)：</b>如果数据文件名中包含Android ID，则使用ID 20914。 在使用Android ID时，您需要使用字段<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code>告知<span class="keyword"> Audience Manager</span>，数据文件仅包含Android ID，并且这些ID应符合属于<code><i>_DPID_TARGET_DATA_OWNER</i></code>数据源的特征。</li> 
      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID (IDFA)：</b>如果数据文件名中包含iOS ID，则使用ID 20915。 在使用iOS ID时，您需要使用字段<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code>告知<span class="keyword"> Audience Manager</span>，数据文件仅包含iOS ID，并且这些ID应符合属于<code><i>_DPID_TARGET_DATA_OWNER</i></code>数据源的特征。</li>
      <li> <b>属于其他全局数据源的ID</b>：您可以载入适用于Advertising (RIDA)、Microsoft Advertising ID (MAID)和其他ID的Roku ID。 使用与每个数据源对应的ID，如<a href="/help/using/features/global-data-sources.md">全局数据源文章</a>中所述。</li> 
@@ -68,9 +68,9 @@ ht-degree: 3%
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
    <td colname="col2"> <p>此字段可告知Audience Manager要将数据载入到哪个数据源。 如果您将DPID设置为一个Android ID、iOS ID或其他属于全局数据源的ID，则此字段为必填字段。 这允许<span class="keyword"> Audience Manager</span>将文件数据链接回您的组织。 <br>此目标数据源需要由您的公司拥有。 出于第二方数据共享的目的，要将数据摄取到属于另一个公司的目标数据源中，您必须拥有公司与目标数据源之间的访问映射。 请联系您的Adobe顾问或客户支持以设置映射。</p><p><b>重要说明：</b>您<i>不</i>需要为现有的数据共享关系（对于属于您在2022年3月14日之前将数据载入其中的其他公司的目标数据源）请求映射。 将数据载入属于您的PID的目标数据源时，也不需要映射。 </p> <p>例如： </p> 
     <ul> 
-     <li> <code>...ftp_dpm_33_21_1234567890.sync</code>告知Audience Manager您正在将属于数据源33的客户ID限定为属于数据源21的特征或信号。 </li> 
-     <li> <b>Android ID (GAID)：</b> <code>...ftp_dpm_20914_21_1234567890.sync</code>告知<span class="keyword"> Audience Manager</span>，数据文件仅包含Android ID，并且这些ID应符合属于数据源21的特征。</li> 
-     <li> <b>iOS ID (IDFA)：</b> <code>...ftp_dpm_20915_21_1234567890.sync</code>告知<span class="keyword"> Audience Manager</span>，数据文件仅包含iOS ID，并且这些ID应符合属于数据源21的特征。</li>
+     <li> <code>...ftp_dpm_33_21_1234567890.sync</code>告知Audience Manager，您正在将属于数据源33的客户ID限定为属于数据源21的特征或信号。 </li> 
+     <li> <b>Android ID (GAID)：</b> <code>...ftp_dpm_20914_21_1234567890.sync</code>通知<span class="keyword">Audience Manager</span>数据文件仅包含Android ID，这些ID应符合属于数据源21的特性。</li> 
+     <li> <b>iOS ID (IDFA)：</b> <code>...ftp_dpm_20915_21_1234567890.sync</code>通知<span class="keyword">Audience Manager</span>数据文件仅包含iOS ID，这些ID应符合属于数据源21的特性。</li>
      <li> 属于其他全局数据源的<b>ID</b>： <code>...ftp_dpm_121963_21_1234567890.sync</code>告知<span class="keyword"> Audience Manager</span>，数据文件仅包含Roku ID，并且这些ID应符合属于数据源21的特征。 使用与每个数据源对应的ID，如<a href="/help/using/features/global-data-sources.md">全局数据源文章</a>中所述。</li> 
     </ul> </td> 
   </tr> 
@@ -93,13 +93,14 @@ ht-degree: 3%
   <tr> 
    <td colname="col1"> <p> <code> <i>TIMESTAMP</i> </code> </p> </td> 
    <td colname="col2"> <p>10位数的UTC UNIX时间戳（以秒为单位）。 时间戳有助于使每个文件名唯一。 </p> 
-    <!-- 
+    <!--
      <p> <p>Note:  Audience Manager does not use the timestamp during processing of inbound files. The timestamp in the filename has been deprecated in Audience Manager but is still required for backwards compatibility. </p> </p> 
-    --> </td> 
+    -->
+   </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [.gz]</code> </p> </td> 
-   <td colname="col2"> <p>Gzip是FTP文件名允许的压缩格式。 如果使用文件压缩，请确保文件名具有正确的扩展名。 </p> <p>压缩文件必须为3 GB或更小。 如果您的文件较大，请联系客户关怀团队。 虽然Audience Manager可以处理大型文件，但我们或许能够帮助您减小文件大小并提高数据传输效率。 请参阅入站数据传输文件的<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">文件压缩</a> 。 </p> </td> 
+   <td colname="col2"> <p>Gzip是FTP文件名允许的压缩格式。 如果使用文件压缩，请确保文件名具有正确的扩展名。 </p> <p>压缩文件必须为3 GB或更小。 如果您的文件较大，请联系客户关怀团队。 虽然Audience Manager可以处理大型文件，但我们或许可以帮助您减小文件大小并提高数据传输效率。 请参阅入站数据传输文件的<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">文件压缩</a> 。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
