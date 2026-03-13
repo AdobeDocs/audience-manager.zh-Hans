@@ -60,8 +60,8 @@ ht-degree: 86%
 
 能。只要您使用[!UICONTROL cross-device data source]存储您上传的CRM数据，Audience Manager始终存储这些数据。 事实上，在Audience Manager于2019年10月启动的[!UICONTROL Profile Merge Rules]增强功能允许仅离线用例后，您无需将Audience Manager代码部署到生产环境中即可上传数据并对其执行操作。 请参阅：
 
-* [配置文件合并规则增强功能概述](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* [!UICONTROL People-based Destinations] - [基于仅脱机数据的个性化](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
+* [配置文件合并规则增强功能概述](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html?lang=zh-Hans)
+* [!UICONTROL People-based Destinations] - [基于仅脱机数据的个性化](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html?lang=zh-Hans)
 
 <br> 
 
