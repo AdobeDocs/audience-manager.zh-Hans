@@ -24,7 +24,7 @@ Adobe Experience Cloud 客户关怀团队在此为您提供帮助，同时还提
 * [查看 Experience Cloud 帮助页面，以获取建议、提示和常见问题解答](https://helpx.adobe.com/cn/support.ec.html)
 * [在 Twitter @AdobeExpCare 上快速提问](https://twitter.com/AdobeExpCare)
 * [直接联系客户关怀团队](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html)
-* [查看 Experience Cloud 解决方案的可用性和状态](https://status.adobe.com/)
+* [查看 Experience Cloud 解决方案的可用性和状态](https://status.adobe.com/zh-cn/)
 
 ## 服务、职能和账单 {#billing}
 
