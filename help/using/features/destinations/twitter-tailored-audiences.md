@@ -6,9 +6,20 @@ solution: Audience Manager
 title: 将Twitter自定义受众配置为基于设备的自助服务目标
 feature: People-based Destinations
 exl-id: 13b36469-3f61-47b1-9355-ca329de1fb24
-source-git-commit: 72be9e032ec3c92cf09a5286baa872b884feaaa0
+TQID: https://experienceleague.adobe.com/3qEBhzjr6meP0xEUECLT-JMlw9kWizujExCMIg23MJY
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2:
+  - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: 689
 ht-degree: 1%
 
 ---
@@ -23,13 +34,13 @@ ht-degree: 1%
 
 * 您的[!DNL Twitter Ads]帐户必须适用于广告。 新[!DNL Twitter Ads]帐户在创建后的前2周内没有资格进行广告。
 * 您在Audience Manager中授权访问的[!DNL Twitter]用户帐户必须启用[合作伙伴Audience Manager](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels)权限。
-* 在Audience Manager实例中创建第一个[!DNL Twitter Custom Audiences]目标时，请联系Adobe Consulting或客户关怀团队为您的帐户启用[!DNL Twitter] ID同步(数据Source ID = 1123)。 这是Audience Manager与[!DNL Twitter]之间正确同步所必需的。
+* 在Audience Manager实例中创建第一个[!DNL Twitter Custom Audiences]目标时，请联系Adobe Consulting或客户关怀团队为您的帐户启用[!DNL Twitter] ID同步（数据Source ID = 1123）。 这是Audience Manager与[!DNL Twitter]之间正确同步所必需的。
 
 ## 添加新的[!DNL Twitter Custom Audiences]目标 {#add-new-twitter-destination}
 
 本节介绍为[!DNL Twitter Custom Audiences]配置新的基于设备的目标时需要执行的步骤。 此方案假定您没有通过Adobe顾问或客户关怀部门配置的现有[!DNL Twitter Custom Audiences]目标。
 
-### 步骤1. 使用[!DNL Twitter Custom Audiences]进行身份验证 {#step1-authenticate-with-twitter}
+### 步骤 1. 使用[!DNL Twitter Custom Audiences]进行身份验证 {#step1-authenticate-with-twitter}
 
 在添加基于设备的目标之前，您需要关联Audience Manager和您的[!DNL Twitter Custom Audiences]帐户。 以下是操作方法：
 

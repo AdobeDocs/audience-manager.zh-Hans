@@ -8,9 +8,24 @@ title: 数据隐私请求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 feature: Data Governance & Privacy
 exl-id: a1fc9c21-3417-4899-a585-92ad2cb25362
-source-git-commit: 6b43885deddb0cdaeb3698051ea110f0a4eed44e
+TQID: https://experienceleague.adobe.com/aZeBRtoDecmrGfSXa1u4GP9jTvFg2Qbv3b6je-1aA8Q
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+  - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+subfeature_v2:
+  - id: d8f681b8-67cc-42dc-85c5-a0977528a942
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: 1324
 ht-degree: 42%
 
 ---
@@ -30,7 +45,7 @@ ht-degree: 42%
 * 通过 [Privacy Service UI](https://privacyui.cloud.adobe.io/)。请参阅[此文档](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)。
 * 通过 **[!DNL Privacy Service API]**。请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hans)和[!DNL API]引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
 
-在发送单个数据隐私请求时，您可以提交任意[!DNL Audience Manager]标识符(ID)(如&#x200B;**[Audience Manager标识符](data-privacy-ids.md)**&#x200B;部分所述)，以及标识符对应的命名空间ID（数据源ID）。
+在发送单个数据隐私请求时，您可以提交任意[!DNL Audience Manager]标识符(ID)（如&#x200B;**[Audience Manager标识符](data-privacy-ids.md)**&#x200B;部分所述），以及标识符对应的命名空间ID（数据源ID）。
 
 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans) 支持两种类型的请求：数据访问请求和数据删除请求。
 

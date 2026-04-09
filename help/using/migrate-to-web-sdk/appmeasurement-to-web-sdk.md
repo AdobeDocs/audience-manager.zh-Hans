@@ -2,13 +2,27 @@
 title: 将您的Audience Manager数据收集库从AppMeasurement JavaScript库更新到Web SDK JavaScript库。
 description: 了解将Audience Manager的数据收集库从AppMeasurement JavaScript库更新到Web SDK JavaScript库的步骤。
 exl-id: 9c771d6c-4cfa-4929-9a79-881d4e8643e4
-source-git-commit: f180e423d4bdf5535d8dcc000e1d0f908bc54d7b
+TQID: https://experienceleague.adobe.com/mxctgUDMvqrSgS0PLsQ7GTwiFMIogo2nL-yZZsnbS40
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+  - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+subfeature_v2:
+  - id: d8f681b8-67cc-42dc-85c5-a0977528a942
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '3385'
+source-wordcount: 3385
 ht-degree: 0%
 
 ---
-
 
 # 将您的Audience Manager数据收集库从AppMeasurement更新为Web SDK
 
@@ -34,7 +48,7 @@ ht-degree: 0%
 
 ## 服务器端转发(SSF)与Web SDK数据流 {#data-flows}
 
-在迁移到Web SDK(和Edge Network)时，了解Analytics和Audience Manager之间的数据流差异对于下面的说明至关重要。
+在迁移到Web SDK（和Edge Network）时，了解Analytics和Audience Manager之间的数据流差异对于下面的说明至关重要。
 
 通过服务器端转发，Analytics区域数据收集节点会收集数据，将其转换为Audience Manager接受的信号，并将其发送到Audience Manager，然后将Audience Manager响应返回到页面。 然后，[!DNL AudienceManagement]库中的[!DNL AppMeasurement]模块会处理响应（例如，删除Cookie、发送URL目标）。 此过程称为服务器端转发，因为Analytics会使用Adobe服务器将数据转发到Audience Manager。
 
@@ -59,7 +73,7 @@ ht-degree: 0%
 * Analytics变量`s.eVar1`在XDM有效负载中表示为`data.__adobe.analytics.evar1`。
 * 与客户忠诚度状态相关的Target参数存储为`data.__adobe.target.loyaltyStatus`。
 
-`__adobe`节点中的数据会被发送到相应的解决方案(如Analytics和Audience Manager)，而不会发送到Experience Platform，即使数据流上启用了Experience Platform服务也是如此。 这意味着您可以保留Analytics和Audience Manager的当前配置，同时还可以灵活地将任何必要的数据元素映射到XDM架构元素，以便在Experience Platform中使用[用于数据收集的数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep)进行实时用例。
+`__adobe`节点中的数据会被发送到相应的解决方案（如Analytics和Audience Manager），而不会发送到Experience Platform，即使数据流上启用了Experience Platform服务也是如此。 这意味着您可以保留Analytics和Audience Manager的当前配置，同时还可以灵活地将任何必要的数据元素映射到XDM架构元素，以便在Experience Platform中使用[用于数据收集的数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep)进行实时用例。
 
 例如，在结账期间用于报告购物车内容的Analytics `s.products`字符串仍可按其原始格式发送到Analytics和Audience Manager。 同时，您可以使用此字符串的元素为Experience Platform用例创建更直观的XDM购物车架构。
 
@@ -178,7 +192,7 @@ Adobe建议在以下情况下遵循此实施路径：
 
 ## 在Analytics报表包管理器UI中配置服务器端转发和Audience Analytics {#configure-ssf-analytics}
 
-Audience Manager如果您熟悉Analytics [服务器端转发](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf)功能，您可能会想知道：“*是否应在Analytics报表包管理器UI中禁用服务器端转发设置，以防止将Analytics数据发送两次？*”。
+如果您熟悉Analytics [服务器端转发](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf)功能，您可能会想知道：“*是否应在Analytics报表包管理器UI中禁用服务器端转发设置，以防止将Analytics数据发送两次？*”。
 
 答案为否，由于以下原因，您不应禁用此设置：
 

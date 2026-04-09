@@ -7,9 +7,12 @@ title: 配置文件合并规则和设备取消分段过程
 uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
 feature: Profile Merge
 exl-id: ff3da607-5c25-45b2-ac27-071c22d518a0
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+TQID: https://experienceleague.adobe.com/xAMGTR-vAfeIqWTTu-J0xEGksW6IqKLOn-suIHYsbdU
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: 467
 ht-degree: 2%
 
 ---
@@ -44,7 +47,7 @@ ht-degree: 2%
 >[!NOTE]
 >
 >区段评估和取消资格的设备限制为&#x200B;**100个**。
->&#x200B;>在使用设备图的配置文件合并规则评估区段时，Audience Manager可合并最多100个设备。 Audience Manager通过[验证的配置文件](../../reference/visitor-authentication-states.md)（跨设备ID）评估当前设备和链接到当前设备的最多99台设备。 如果发出取消分段信号，则将从目标中的分段中删除当前设备和附加设备。
+>在使用设备图的配置文件合并规则评估区段时，Audience Manager可合并最多100个设备。 Audience Manager通过[验证的配置文件](../../reference/visitor-authentication-states.md)（跨设备ID）评估当前设备和链接到当前设备的最多99台设备。 如果发出取消分段信号，则将从目标中的分段中删除当前设备和附加设备。
 
 ![](assets/last-device-graph.png)
 

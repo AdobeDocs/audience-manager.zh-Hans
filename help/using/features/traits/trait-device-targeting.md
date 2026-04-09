@@ -7,9 +7,15 @@ title: 使用平台级别关键值定位设备
 uuid: bc048cc5-3df1-49bc-ac78-0ea5d7edd9cc
 feature: Traits
 exl-id: 85c848e0-a4cf-49b5-9fe9-56f8c565f665
-source-git-commit: b299783b993c5d4a1c7738eca82932c20f377ee7
+TQID: https://experienceleague.adobe.com/Pv9-MWpF5uPassf9VYTGgZwQ6gmnW8p9FSYmYxOPHEg
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: 264
 ht-degree: 1%
 
 ---
@@ -19,8 +25,8 @@ ht-degree: 1%
 >[!WARNING]
 >
 >Google已更新[!DNL Google Chrome]和所有基于[!DNL Chromium]的浏览器的功能，以最大限度地减少通过`User-Agent`标头收集的信息。
->&#x200B;>从2023年3月开始，Audience Manager利用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)支持这些更新。 要继续使用通过`User-Agent`标头提供的特征信息，您必须使用[Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)并启用[高熵用户代理客户端提示](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=zh-Hans)。
->&#x200B;>[DIL](../../../using/dil/dil-overview.md)不支持这些更新，因此使用[!DNL DIL]的Audience Manager客户将无法通过`User-Agent`标头收集特征信息。
+>从2023年3月开始，Audience Manager利用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)支持这些更新。 要继续使用通过`User-Agent`标头提供的特征信息，您必须使用[Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)并启用[高熵用户代理客户端提示](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=zh-Hans)。
+>[DIL](../../../using/dil/dil-overview.md)不支持这些更新，因此使用[!DNL DIL]的Audience Manager客户将无法通过`User-Agent`标头收集特征信息。
 
 描述可用于通过Audience Manager帐户中所有属性的设备相关变量来定位用户的常用平台级别键值对。
 

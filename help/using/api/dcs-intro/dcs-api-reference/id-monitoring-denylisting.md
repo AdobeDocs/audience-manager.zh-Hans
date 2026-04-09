@@ -8,9 +8,17 @@ title: ID监控和列入阻止列表
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
 feature: DCS
 exl-id: 8fd31b00-a822-4fd5-b6f5-7f20546da1d9
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+TQID: https://experienceleague.adobe.com/Aie0--aKCVUpPA5pySiDy08Uia8byRLcwVqRe3XEHp0
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: 487
 ht-degree: 0%
 
 ---
@@ -43,12 +51,12 @@ ht-degree: 0%
 
 [!DNL DCS]调用可以包含一种或多种ID类型。 如果将包含单个ID的调用添加到阻止列表中，则会完全忽略该ID，在这种情况下，不会发生ID同步。
 
-列入阻止列表当多个ID调用还包含ID时，[!DNL DCS]将忽略被拒绝的ID，而只使用剩余的允许的ID进行同步。
+当多个ID调用还包含ID时，[!DNL DCS]将忽略被拒绝的ID，而只使用剩余的允许的ID进行同步。
 
 ## ID列入阻止列表的原因和修复
 
 之所以要将ID添加到阻止列表，最常见的原因是客户基础架构与Audience Manager之间的集成不正确。 识别列入阻止列表ID时，请确保仔细检查您的Audience Manager集成。 有关如何配置Audience Manager以与其他Experience Cloud解决方案或外部系统结合使用的详细说明，请参阅&#x200B;**实施和集成指南**。
 
-将ID添加到阻止列表的另一个常见原因是索引机器人（Web爬网程序），这通常会导致流量增加，从而导致将相同的ID多次发送到[!DNL DCS]。 如果您将索引机器人识别为将ID添加到阻止列表的原因，则应当限制机器人对您网站的访问。
+将ID添加到阻止列表的另一个常见原因是索引机器人(Web爬虫)，这通常会导致流量增加，从而导致将相同的ID多次发送到[!DNL DCS]。 如果您将索引机器人识别为将ID添加到阻止列表的原因，则应当限制机器人对您网站的访问。
 
 如果您难以确定集成问题，请随时联系客户支持。 在打开支持请求之前，请确保使浏览器的`.har` `HTTP`存档准备就绪。 此存档可帮助支持团队确定将ID添加到阻止列表的原因。

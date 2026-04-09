@@ -4,9 +4,18 @@ title: DCS错误代码、消息和示例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
-source-git-commit: f8ba09b674b71045e08f6d171471cdcdd0efb265
+TQID: https://experienceleague.adobe.com/FHc7VAvl6LcI-xtrxdg-eMRHMncTPHpxGxIx0sXOb-E
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: 1519
 ht-degree: 3%
 
 ---
@@ -137,7 +146,7 @@ ht-degree: 3%
 | 303 | 已阻止的客户ID `_ID_` | 当客户ID被识别为恶意且已添加到阻止列表中时返回。 |
 | 304 | 已阻止的数据源ID `_ID_` | 当数据源ID被识别为恶意并已添加到阻止列表时返回 |
 | 306 | 已阻止声明的设备ID `_ID_` | 设备ID已被识别为恶意设备，并且已被添加到阻止列表如果在短时间内收到大量包含此设备ID的DCS请求，则可能会发生这种情况。 |
-| 307 | 已阻止`_ID_`的配置文件操作 | 列入阻止列表已阻止读/写操作，因为ID已被识别为恶意并已添加到中。请参阅错误代码306。 |
+| 307 | 已阻止`_ID_`的配置文件操作 | 已阻止读/写操作，因为ID已被识别为恶意并已添加到中。请参阅错误代码306。 |
 | 309 | 已丢弃客户ID `_ID_`，因为它超过了每个请求声明的客户ID的限制 | 与错误301相关。 此错误指定由于超出限制而丢弃的客户ID。<br><br>例如，如果在DCS调用中声明了12个客户ID，则将丢弃其中两个客户ID。 为了中继哪些客户被丢弃，此错误将在响应中显示两次（每个被丢弃的客户ID显示一次）。 |
 | 310 | 客户ID已被丢弃，因为它超出了给定命名空间的限制。 命名空间ID为`_ID_`，客户ID为`_ID_`。 | 如果DCS调用中为同一命名空间( `DPID`)声明了3个以上的客户ID，则会返回此错误代码。<br><br>`https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one`<br><br>在此示例DCS请求中，有4个为同一命名空间声明的ID（集成代码为1）。 丢弃其中一个ID并返回错误310。 |
 | 311 | 请求包含无效参数 | 如果至少有一个URL参数未正确编码，DCS将返回此错误代码。 在这种情况下，DCS会忽略整个请求。<br><br>`http(s)://partner.demdex.net/event?d_event=imp&d_rtbd=json&d_src=38454&d_site=%esid!&d_creative=%ecid!&d_adgroup=%eaid!&d_placement=%epid!&d_campaign=%ebuy!&d_adsrc=48123`<br><br>在上面的示例请求中，`%`序列编码不正确。 因此，DCS将忽略它。<br><br>正确编码的示例应如下所示：<br><br>`http(s)://partner.demdex.net/event?d_event=imp&d_rtbd=json&d_src=38454&d_site=%25esid!&d_creative=%25ecid!&d_adgroup=%25eaid!&d_placement=%25epid!&d_campaign=%25ebuy!&d_adsrc=48123` |

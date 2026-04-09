@@ -6,9 +6,12 @@ title: 从信号创建特征
 uuid: 4f324404-0c24-4e3b-96c1-7c1b28a4536d
 feature: Data Explorer
 exl-id: 14308ef0-58eb-4b76-858c-d0da560f55fd
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+TQID: https://experienceleague.adobe.com/XKtxgfC9Zv-9CqiZb4Y916yxalGuz5YnsE31Nax8z0M
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: 332
 ht-degree: 0%
 
 ---
@@ -17,7 +20,7 @@ ht-degree: 0%
 
 从所有信号（包括特征中已使用的信号）创建新特征，并捕获在创建特征后符合条件的未来受众。 观看视频以快速演示，或阅读以了解详细信息：
 
->[!VIDEO](https://video.tv.adobe.com/v/327530/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/327530/?captions=chi_hans&quality=12)
 
 ## 从信号仪表板创建特征 {#create-traits-from-signal-dashboard}
 

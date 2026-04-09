@@ -3,10 +3,22 @@ description: 本文介绍如何为新集成和现有集成配置Amazon Advertisi
 solution: Audience Manager
 title: 将Amazon Advertising配置为基于设备的自助服务目标
 exl-id: 049af52a-b425-493d-9e77-9ced7ba6d168
-source-git-commit: bac3167927af0957e7081e1ea653464101affcb8
+TQID: https://experienceleague.adobe.com/fQmKYsBCDIOH4zRlDr1N-JUynlBwOzIXSCucO-sdcXM
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2:
+  - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 0%
+source-wordcount: 566
+ht-degree: 1%
 
 ---
 
@@ -19,14 +31,14 @@ ht-degree: 0%
 在配置[!DNL Amazon Advertising]目标之前，请确保满足以下先决条件。
 
 * 您的[!DNL Amazon]帐户必须适用于广告。
-* 在Audience Manager实例中创建第一个[!DNL Amazon Advertising]目标时，请联系Adobe Consulting或客户关怀团队为您的帐户启用[!DNL Amazon] ID同步(数据Source ID = 139200)。 这是Audience Manager与[!DNL Amazon]之间正确同步所必需的。
+* 在Audience Manager实例中创建第一个[!DNL Amazon Advertising]目标时，请联系Adobe Consulting或客户关怀团队为您的帐户启用[!DNL Amazon] ID同步（数据Source ID = 139200）。 这是Audience Manager与[!DNL Amazon]之间正确同步所必需的。
 * 创建新数据提供程序受众后，您应[更新其元数据](https://advertising.amazon.com/API/docs/en-us/data-provider/openapi#tag/Metadata/paths/~1v2~1dp~1audiencemetadata~1%7BaudienceId%7D/put)并添加&#x200B;**[!DNL audience fees]**。 对于此操作，您可以使用[Amazon Ads API](https://advertising.amazon.com/API/docs/en-us/guides/onboarding/apply-for-access)或[Amazon Advertising UI](https://advertising.amazon.com/)。
 
 ## 添加新的[!DNL Amazon Advertising]目标 {#add-new-amazon-destination}
 
 本节介绍为[!DNL Amazon Advertising]配置新的基于设备的目标时需要执行的步骤。 此方案假定您没有通过Adobe顾问或客户关怀部门配置的现有[!DNL Amazon Advertising]目标。
 
-### 步骤1. 使用[!DNL Amazon Advertising]进行身份验证 {#step1-authenticate-with-amazon}
+### 步骤 1. 使用[!DNL Amazon Advertising]进行身份验证 {#step1-authenticate-with-amazon}
 
 在添加基于设备的目标之前，您需要关联Audience Manager和您的[!DNL Amazon Advertising]帐户。 以下是操作方法：
 
