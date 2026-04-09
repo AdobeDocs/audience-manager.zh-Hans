@@ -59,11 +59,11 @@ ht-degree: 0%
 
 如果您更喜欢视频教程，请观看我们的特征排除视频演示：
 
->[!VIDEO](https://video.tv.adobe.com/v/25569/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/38125/?captions=chi_hans&quality=12)
 
 此外，请观看以下视频，详细了解跨设备量度的工作方式。
 
->[!VIDEO](https://video.tv.adobe.com/v/33445/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/36831/?captions=chi_hans&quality=12)
 
 ## 重要方面和限制 {#important-aspects-and-limitations}
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 观看以下视频，了解如何以及为何从[!UICONTROL Look-Alike Model]中排除特定特征。
 
->[!VIDEO](https://video.tv.adobe.com/v/25569/)
+>[!VIDEO](https://video.tv.adobe.com/v/38125?captions=chi_hans)
 
 ## 相关链接
 
