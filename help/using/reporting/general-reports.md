@@ -8,10 +8,15 @@ uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
 feature: General & Trend Reports
 exl-id: dc16a821-b776-4a04-af60-4b8c914253dd
 TQID: https://experienceleague.adobe.com/3idAvwGKGY7sZMlyGeOJDVR-nXso-b8owW82dxLiOiA
-product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2: id: a99472c1-6aae-4c7a-8aa0-f60636369620id: c814092e-2730-45e8-a12d-e084529f52cb
-subfeature_v2: id: a49258d4-867f-4130-b875-d72c001bdf6c
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+subfeature_v2:
+  - id: a49258d4-867f-4130-b875-d72c001bdf6c
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 3c88464c2249b7848c9ae80ca4c0ed58fcb81070
 workflow-type: tm+mt
 source-wordcount: 860
@@ -156,7 +161,7 @@ The illustration below shows the results of running a general report for the Tra
 
 此量度表示在指定时间范围内实时查看的实际独特访客数量，以及在Audience Manager查看这些访客时符合区段资格条件的访客数量。
 
-总区段人口&#x200B;****
+总区段人口&#x200B;**&#x200B;**
 
 此量度表示在回顾期间属于某个区段的、已发送到目标的Audience Manager UUID总数。
 

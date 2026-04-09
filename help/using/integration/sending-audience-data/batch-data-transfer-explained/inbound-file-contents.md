@@ -6,9 +6,13 @@ uuid: 88699b29-1502-4183-a9a4-be70692a02bb
 feature: Inbound Data Transfers
 exl-id: 894f1923-6c78-41d2-b6a2-eebf56eaa29e
 TQID: https://experienceleague.adobe.com/VmG1uYu83JVavbWhBTIwbcN6xXW-cCy2IqBlZe8NtVA
-product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: baaa0dd2-d27e-4921-aae3-7888623a5fa5
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+  - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
 source-wordcount: 1210
@@ -205,30 +209,30 @@ ht-degree: 3%
    <td colname="col1"> <p>带<code> d_sid </code>或<code> d_unsid </code> </p> </td> 
    <td colname="col2"> <p>此数据文件显示一个符合特征24、26、27条件的用户，该用户已从特征28和29中删除。 </p> <p> 
      <code>
-       59767559181262060060278870901087098252&amp;nbsp;&amp;nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 
+       59767559181262060060278870901087098252&nbsp;&nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 
      </code> </p> <p>注意：  <p>您还可以使用以下语法从用户配置文件中删除特征，而不是使用d_unsid： </p> <p> 
       <code>
-        59767559181262060060278870901087098252&amp;nbsp;28:0,&amp;nbsp;29:0 
+        59767559181262060060278870901087098252&nbsp;28:0,&nbsp;29:0 
       </code> </p> <p> 
       <code>
-        59767559181262060060278870901087098252&amp;nbsp;28:-1,&amp;nbsp;29:-1 
+        59767559181262060060278870901087098252&nbsp;28:-1,&nbsp;29:-1 
       </code> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>与<code> ic== </code> </p> </td> 
    <td colname="col2"> <p>这些特征已添加到前缀为<code> ic </code>的特征规则中。 因此，您可以将其添加到数据文件中，数据文件需用逗号分隔，如下所示。 UUID和特征ID使用制表符分隔。 文件中不需要<code> ic </code>前缀。 </p> <p><b>数值ID</b> </p> <p> 
      <code>
-       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;30608,50354,50338,50352,30626 
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&nbsp;&nbsp;30608,50354,50338,50352,30626 
      </code> </p> <p><b>字符串ID</b> </p> <p> 
      <code>
-       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;ic=52,ic=55 
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&nbsp;&nbsp;ic=52,ic=55 
      </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>使用键值对 </p> </td> 
    <td colname="col2"> 此文件数据使用键值对将数据传递到<span class="keyword"> Audience Manager </span>。 <p> 
      <code>
-       59767559181262060060278870901087098252&amp;nbsp;“gender”=”female”,“luxury_shopper”=”yes” 
+       59767559181262060060278870901087098252&nbsp;“gender”=”female”,“luxury_shopper”=”yes” 
      </code> </p> </td> 
   </tr> 
  </tbody> 

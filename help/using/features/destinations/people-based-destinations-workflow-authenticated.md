@@ -7,10 +7,19 @@ title: 工作流程C — 基于已验证活动和离线数据的Personalization
 feature: People-based Destinations
 exl-id: 24f877ce-089e-484c-9a70-8fce1a10a649
 TQID: https://experienceleague.adobe.com/8n-bcGFvzcn6nCrR-ubU5IMu9ne19CHmMMMEeqdV-cI
-product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: c814092e-2730-45e8-a12d-e084529f52cbid: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
-subfeature_v2: id: d3dfac44-e20d-492d-a806-0f4a4a495901
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2:
+  - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
 source-wordcount: 877
@@ -106,7 +115,7 @@ ht-degree: 1%
 2. 单击 **[!UICONTROL Add New Rule]**。
 3. 输入配置文件合并规则&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
 4. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;部分中，从&#x200B;**[!UICONTROL Current Authenticated Profiles]**&#x200B;列表中选择&#x200B;**[!UICONTROL Last Authenticated Profiles]**&#x200B;或&#x200B;**[!UICONTROL Cross-Device Options]**&#x200B;规则。
-5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**列表中，选择要对其运行分段的数据源。 这些应当是包含现有DPUUID的数据源。
+5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**&#x200B;列表中，选择要对其运行分段的数据源。 这些应当是包含现有DPUUID的数据源。
    ![合并规则设置](assets/pbd-pmr-combined.png)
 
 ## 步骤4 — 创建受众区段 {#create-audience-segments}
@@ -118,7 +127,7 @@ ht-degree: 1%
 1. 登录到您的Audience Manager帐户，然后转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您之前配置了与社交平台的集成，您应会看到此页面中列出了该集成。 否则，页面为空。
    ![基于人员的集成](assets/pbd-config.png)
 2. 单击 **[!UICONTROL Add Account]**。
-3. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉菜单选择要配置集成的平台。
+3. 使用&#x200B;**[!UICONTROL People-Based Platform]**&#x200B;下拉菜单选择要配置集成的平台。
    ![基于人员的平台](assets/pbd-add.png)
 4. 单击&#x200B;**[!UICONTROL Confirm]**&#x200B;以重定向到所选平台的身份验证页面。
 5. 在验证您的Social Platform帐户后，您将被重定向到Audience Manager，您应该会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!UICONTROL Confirm]**。

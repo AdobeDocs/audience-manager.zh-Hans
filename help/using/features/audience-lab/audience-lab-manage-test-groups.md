@@ -8,10 +8,19 @@ uuid: 2fadddeb-7574-4853-8c52-c58456582c62
 feature: Audience Lab
 exl-id: 1d07c8f1-34dc-4339-bd5d-87042a22f7e9
 TQID: https://experienceleague.adobe.com/jQyTdKOIzeBEuUr76cpwJFNNdMRuzlCbJpGbC0mLQpM
-product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2: id: a99472c1-6aae-4c7a-8aa0-f60636369620id: c814092e-2730-45e8-a12d-e084529f52cbid: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
-subfeature_v2: id: a49258d4-867f-4130-b875-d72c001bdf6cid: d3dfac44-e20d-492d-a806-0f4a4a495901id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2:
+  - id: a49258d4-867f-4130-b875-d72c001bdf6c
+  - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+  - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
 source-wordcount: 981
@@ -33,7 +42,7 @@ ht-degree: 0%
 
   >[!IMPORTANT]
   >
-  >[文件夹特征](../../features/traits/about-folder-traits.md)是&#x200B;**不支持的**[!UICONTROL Audience Lab]。 将文件夹特征的[事件类型](../../features/traits/create-onboarded-rule-based-traits.md)设置为&#x200B;**转换**&#x200B;将不会在[!UICONTROL Audience Lab]中为该特定文件夹特征生成任何数据。
+  >[文件夹特征](../../features/traits/about-folder-traits.md)是&#x200B;**不支持的**&#x200B;[!UICONTROL Audience Lab]。 将文件夹特征的[事件类型](../../features/traits/create-onboarded-rule-based-traits.md)设置为&#x200B;**转换**&#x200B;将不会在[!UICONTROL Audience Lab]中为该特定文件夹特征生成任何数据。
 
 * 对于使用[基于角色的访问控制](../../features/administration/administration-overview.md)的公司：将[!UICONTROL Audience Lab] [通配符权限](../../features/administration/administration-overview.md#wild-card-permissions)分配给&#x200B;**[!UICONTROL User Groups]**&#x200B;以提供访问权限。 此权限允许用户创建和查看测试结果。 用户将只能从具有&#x200B;**读取**&#x200B;和&#x200B;**映射到目标**&#x200B;权限的数据源中使用区段。 用户将只能使用他们具有&#x200B;**“读取”**&#x200B;权限的数据源的转化特征。 用户也只能查看他们有权访问的目标。 因此，在将[!DNL Audience Lab]通配符权限添加到组之前，请确保该组具有：
    * 访问相关的转化特征；
