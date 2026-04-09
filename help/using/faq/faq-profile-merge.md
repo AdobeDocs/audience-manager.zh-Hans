@@ -8,9 +8,13 @@ title: 配置文件合并规则和设备图常见问题解答
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 feature: Profile Merge
 exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
-source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
+TQID: https://experienceleague.adobe.com/G8a3lySpSqyDY7FTWSgECjhNl-aCVsjxj6I0lHUkq2o
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: c814092e-2730-45e8-a12d-e084529f52cb
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: 1583
 ht-degree: 81%
 
 ---
@@ -111,7 +115,7 @@ ht-degree: 81%
 
 **区段预估大小是否包含根据由使用设备图选项的 [!UICONTROL Profile Merge Rule] 提供的连接而确定为符合区段资格条件的设备？**
 
-否。有关 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 的定义，请参阅[区段生成器中的特征和区段人口数据](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=zh-Hans)。
+否。有关 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 的定义，请参阅[区段生成器中的特征和区段人口数据](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html)。
 
  
 
@@ -263,7 +267,7 @@ ht-degree: 81%
 
 2019年末，我们发布了一系列配置文件合并规则增强功能，以提高使用跨设备ID生成的批处理文件的准确性。 从2020年3月16日星期一开始，您的Audience Manager实例将严格遵循这些增强功能。 因此，使用跨设备ID映射到目标的区段将停止在某些配置文件合并规则配置中生成导出。
 
-要确保使用跨设备ID(如Adobe Campaign)在Audience Manager实例和目标之间正确集成，请确保您满足以下要求：
+要确保使用跨设备ID（如Adobe Campaign）在Audience Manager实例和目标之间正确集成，请确保您满足以下要求：
 
 1. 查看映射到您的Adobe Campaign Declared ID目标的区段所使用的配置文件合并规则。 配置文件合并规则必须使用[!UICONTROL Last Authenticated Profile]选项，以便所有经过身份验证的配置文件都可以包含在导出中。 如果您的配置文件合并规则使用其他选项，请将其切换到[!UICONTROL Last Authenticated Profile]。
 2. 在配置文件合并规则设置中选择Adobe Campaign Declared ID数据源。

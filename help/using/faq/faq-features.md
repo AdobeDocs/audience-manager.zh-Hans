@@ -8,9 +8,14 @@ title: 产品特性和功能常见问题解答
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
 feature: Overview
 exl-id: b5884d26-0be1-4eaa-99a1-7247942bf6c9
-source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
+TQID: https://experienceleague.adobe.com/gsJ4qXlNDpfWmTq0jjmtjfUWI60yRr7uBTxZjsF-pQE
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: baaa0dd2-d27e-4921-aae3-7888623a5fa5id: c814092e-2730-45e8-a12d-e084529f52cbid: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2: id: d3dfac44-e20d-492d-a806-0f4a4a495901id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: 574
 ht-degree: 87%
 
 ---
@@ -33,7 +38,7 @@ faq_features_functions.xml
 
 例如，*`Organization ID`* 应如下所示：`1FD6776A524453CC0A490D44@AdobeOrg`。
 
-*`Organization ID`* 可由 Audience Manager [DIL](../dil/dil-overview.md) API、[Adobe Experience Platform 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans) 及其他 [!DNL Experience Cloud] 解决方案使用。具有管理员权限的用户可在 [!DNL Adobe Admin Console] 上找到 *`Organization ID`*。请参阅[管理 - 用户管理常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans)。
+*`Organization ID`* 可由 Audience Manager [DIL](../dil/dil-overview.md) API、[Adobe Experience Platform 身份标识服务](https://experienceleague.adobe.com/docs/id-service/using/home.html) 及其他 [!DNL Experience Cloud] 解决方案使用。具有管理员权限的用户可在 [!DNL Adobe Admin Console] 上找到 *`Organization ID`*。请参阅[管理 - 用户管理常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
  
 
@@ -67,7 +72,7 @@ faq_features_functions.xml
 
 **什么是 [!UICONTROL Tag Insertion Manager (TIM)]？**
 
-Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和管理 [!UICONTROL data collection code (DIL)]。此功能已过时，最先由 [!UICONTROL Dynamic Tag Manager (DTM)] 取代，后来由 [!DNL Adobe Experience Platform Tags] 取代。有关详细信息，请参阅[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)。
+Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和管理 [!UICONTROL data collection code (DIL)]。此功能已过时，最先由 [!UICONTROL Dynamic Tag Manager (DTM)] 取代，后来由 [!DNL Adobe Experience Platform Tags] 取代。有关详细信息，请参阅[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。
 
  
 
@@ -95,4 +100,4 @@ Audience Manager 之前使用 [!UICONTROL Tag Insertion Manager] (TIM) 创建和
 
 **Adobe Analytics 区段与 Audience Manager 区段之间是否有任何区别？**
 
-是，有关两者之间区别的深入说明，请参阅[了解 Analytics 和 Audience Manager 中的区段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=zh-Hans)。
+是，有关两者之间区别的深入说明，请参阅[了解 Analytics 和 Audience Manager 中的区段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)。

@@ -1,5 +1,5 @@
 ---
-description: Audience Manager标签管理组件包括客户端门户、Adobe Tag Manager(已弃用，取而代之的是Adobe Experience Platform Launch)、DIL、Akamai和控制数据库。
+description: Audience Manager标签管理组件包括客户端门户、Adobe Tag Manager（已弃用，取而代之的是Adobe Experience Platform Launch）、DIL、Akamai和控制数据库。
 seo-description: Audience Manager tag management components include the client portal, Adobe Tag Manager (deprecated in favor of Adobe Experience Platform Launch), DIL, Akamai, and the control database.
 seo-title: Tag Management Components
 solution: Audience Manager
@@ -7,16 +7,21 @@ title: Tag Management组件
 uuid: e5059478-6ba7-4e1a-afec-e41ad7a27750
 feature: System Components
 exl-id: 064e3653-7658-422c-9dd5-2252806e8f09
-source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
+TQID: https://experienceleague.adobe.com/iOniWbVTajyhGmIl3IDdxrP5dZ-ULKkA-9ySOXniqUI
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a99472c1-6aae-4c7a-8aa0-f60636369620id: c814092e-2730-45e8-a12d-e084529f52cb
+subfeature_v2: id: a49258d4-867f-4130-b875-d72c001bdf6c
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: 306
 ht-degree: 1%
 
 ---
 
 # Tag Management组件{#tag-management-components}
 
-Audience Manager标签管理组件包括客户端门户、Adobe Tag Manager(已弃用，取而代之的是Adobe Experience Platform Tags)、DIL、Akamai和控制数据库。
+Audience Manager标签管理组件包括客户端门户、Adobe Tag Manager（已弃用，取而代之的是Adobe Experience Platform Tags）、DIL、Akamai和控制数据库。
 
 <!-- 
 
@@ -38,7 +43,7 @@ Audience Manager包含以下组件：
 
 ## DIL/TIM容器 {#dil-tim}
 
-[!UICONTROL DIL]容器有助于将[!DNL Audience Manager]数据收集代码部署到您的网站。 [!UICONTROL TIM]是已弃用的标记插入管理器。 [!DNL Audience Manager]不再使用它。 您而是使用[!DNL Audience Manager]Adobe Experience Platform Tags[中的](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=zh-Hans)扩展来配置和生成您放置在库存页面上的容器代码。
+[!UICONTROL DIL]容器有助于将[!DNL Audience Manager]数据收集代码部署到您的网站。 [!UICONTROL TIM]是已弃用的标记插入管理器。 [!DNL Audience Manager]不再使用它。 您而是使用[!DNL Audience Manager]Adobe Experience Platform Tags[中的](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html)扩展来配置和生成您放置在库存页面上的容器代码。
 
 ## 数据集成库 (DIL) {#dil}
 

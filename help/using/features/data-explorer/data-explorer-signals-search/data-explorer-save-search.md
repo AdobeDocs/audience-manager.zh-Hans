@@ -6,9 +6,11 @@ title: 保存搜索条件
 uuid: c17b26e0-f489-47c9-b41b-bf895ca9d8a5
 feature: Data Explorer
 exl-id: ab56ddb7-6b0b-4a3d-9590-00c49a4ae7dc
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+TQID: https://experienceleague.adobe.com/ecQ9AHZ0NrZtQlNYRnn2arc9YLPRNr6iEDkHS5GqlkQ
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: 176
 ht-degree: 0%
 
 ---
@@ -29,7 +31,7 @@ ht-degree: 0%
 1. 选择&#x200B;**[!UICONTROL Default Sorting]**&#x200B;模式：
    * **[!UICONTROL Descending]**
    * **[!UICONTROL Ascending]**
-1. 单击&#x200B;**[!UICONTROL Save]**。 您可以在[!UICONTROL Saved Search]部分中看到保存的搜索，并随时使用它。
+1. 单击 **[!UICONTROL Save]**。 您可以在[!UICONTROL Saved Search]部分中看到保存的搜索，并随时使用它。
 
 ![已保存搜索](assets/saved-search.png)
 

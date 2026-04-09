@@ -6,9 +6,12 @@ solution: Audience Manager
 title: 联系方式和法律信息
 feature: Support
 exl-id: 02c80394-c5ed-4963-8543-4585c0c289c6
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+TQID: https://experienceleague.adobe.com/HpTQDl5UkJ1KoyqBYUIZe4zphM9Y5NgGoSii1zNWIpw
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+topic_v2: id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: 243
 ht-degree: 100%
 
 ---
@@ -24,7 +27,7 @@ Adobe Experience Cloud 客户关怀团队在此为您提供帮助，同时还提
 * [查看 Experience Cloud 帮助页面，以获取建议、提示和常见问题解答](https://helpx.adobe.com/cn/support.ec.html)
 * [在 Twitter @AdobeExpCare 上快速提问](https://twitter.com/AdobeExpCare)
 * [直接联系客户关怀团队](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html)
-* [查看 Experience Cloud 解决方案的可用性和状态](https://status.adobe.com/zh-cn/)
+* [查看 Experience Cloud 解决方案的可用性和状态](https://status.adobe.com/)
 
 ## 服务、职能和账单 {#billing}
 
@@ -38,4 +41,4 @@ Published by Adobe Systems Incorporated.
 
 Adobe and the Adobe logo are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. A trademark symbol (®, ™, etc.) denotes an Adobe trademark.
 
-All third-party trademarks are the property of their respective owners. Updated Information/Additional Third Party Code Information available at [https://www.adobe.com/go/thirdparty_cn](https://www.adobe.com/cn/products/eula/third_party/).
+All third-party trademarks are the property of their respective owners. Updated Information/Additional Third Party Code Information available at [https://www.adobe.com/go/thirdparty](https://www.adobe.com/cn/products/eula/third_party/).

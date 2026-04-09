@@ -6,9 +6,14 @@ title: 算法模型特征排除
 uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
 feature: Algorithmic Models
 exl-id: 7e2df04d-7e07-408d-b82a-9571b5839ff4
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+TQID: https://experienceleague.adobe.com/E629v49xWYBTIP5wPBYeJY6ts1f2P0WDAhtNOPUuEKQ
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2: id: d3dfac44-e20d-492d-a806-0f4a4a495901id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: 633
 ht-degree: 0%
 
 ---
@@ -49,11 +54,11 @@ ht-degree: 0%
 
 如果您更喜欢视频教程，请观看我们的特征排除视频演示：
 
->[!VIDEO](https://video.tv.adobe.com/v/38125/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25569/?quality=12)
 
 此外，请观看以下视频，详细了解跨设备量度的工作方式。
 
->[!VIDEO](https://video.tv.adobe.com/v/36831/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/33445/?quality=12)
 
 ## 重要方面和限制 {#important-aspects-and-limitations}
 
@@ -96,7 +101,7 @@ ht-degree: 0%
 
 观看以下视频，了解如何以及为何从[!UICONTROL Look-Alike Model]中排除特定特征。
 
->[!VIDEO](https://video.tv.adobe.com/v/38125?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25569/)
 
 ## 相关链接
 

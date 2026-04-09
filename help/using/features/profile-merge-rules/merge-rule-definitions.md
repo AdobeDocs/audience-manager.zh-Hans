@@ -7,9 +7,14 @@ title: 定义的配置文件合并规则选项
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 feature: Profile Merge
 exl-id: 682d2540-c764-4f5a-a946-5d0e18c66c00
-source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
+TQID: https://experienceleague.adobe.com/kfGcdvkr7dmluaAXdLdX4eRvRH15H1Sxd2w4yoPBSzc
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: a99472c1-6aae-4c7a-8aa0-f60636369620id: c814092e-2730-45e8-a12d-e084529f52cb
+subfeature_v2: id: a49258d4-867f-4130-b875-d72c001bdf6c
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: 794
 ht-degree: 1%
 
 ---
@@ -83,7 +88,7 @@ ht-degree: 1%
 
 ## [!UICONTROL Cross-Device Profile Options] {#profile-options}
 
-[!UICONTROL Cross-Device Profile Options]列出了您的[!UICONTROL cross-device data sources]。 这些选项使用您在创建[!UICONTROL cross-device] [!UICONTROL data source]时提供的名称(请参阅[创建跨设备数据Source](merge-rules-start.md#create-data-source))。 您最多可以选择3个[!UICONTROL cross-device data sources]用于每个配置文件规则。 当您选择[!UICONTROL Authenticated Profile Options]或&#x200B;**[!UICONTROL Current Authenticated Profiles]**&#x200B;时，**[!UICONTROL Last Authenticated Profiles]**&#x200B;可用。
+[!UICONTROL Cross-Device Profile Options]列出了您的[!UICONTROL cross-device data sources]。 这些选项使用您在创建[!UICONTROL cross-device] [!UICONTROL data source]时提供的名称（请参阅[创建跨设备数据Source](merge-rules-start.md#create-data-source)）。 您最多可以选择3个[!UICONTROL cross-device data sources]用于每个配置文件规则。 当您选择[!UICONTROL Authenticated Profile Options]或&#x200B;**[!UICONTROL Current Authenticated Profiles]**&#x200B;时，**[!UICONTROL Last Authenticated Profiles]**&#x200B;可用。
 
 ## [!UICONTROL Device Options] {#device-options}
 
@@ -107,7 +112,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">配置文件链接设备图</span></b> </p> </td> 
-   <td colname="col2"> <p>告知<span class="keyword"> Audience Manager</span>从当前设备和最多100个用户已从中进行身份验证的其他设备读取配置文件。 此设备图基于<span class="keyword"> Audience Manager</span>中您自己的第一方数据构建。 它非常适合对其数字资产进行高级别身份验证的客户。 <span class="wintitle">配置文件链接</span>设备图已实时更新。 当您选择<b><span class="uicontrol">当前已验证的配置文件</span></b>或<b><span class="uicontrol">上次已验证的配置文件</span></b>时，此选项可用。 使用此选项时，您只能选择单个经过身份验证的配置文件(<span class="keyword"> Audience Manager</span>会自动将其他配置文件变灰)。 另请参阅<a href="profile-link-use-case.md">配置文件链接设备图用例</a>。 </p> </td>
+   <td colname="col2"> <p>告知<span class="keyword"> Audience Manager</span>从当前设备和最多100个用户已从中进行身份验证的其他设备读取配置文件。 此设备图基于<span class="keyword"> Audience Manager</span>中您自己的第一方数据构建。 它非常适合对其数字资产进行高级别身份验证的客户。 <span class="wintitle">配置文件链接</span>设备图已实时更新。 当您选择<b><span class="uicontrol">当前已验证的配置文件</span></b>或<b><span class="uicontrol">上次已验证的配置文件</span></b>时，此选项可用。 使用此选项时，您只能选择单个经过身份验证的配置文件（<span class="keyword"> Audience Manager</span>会自动将其他配置文件变灰）。 另请参阅<a href="profile-link-use-case.md">配置文件链接设备图用例</a>。 </p> </td>
   </tr>
 
 <tr> 

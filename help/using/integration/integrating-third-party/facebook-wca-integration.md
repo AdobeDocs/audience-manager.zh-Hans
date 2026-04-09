@@ -6,9 +6,13 @@ solution: Audience Manager
 title: Facebook WCA集成
 feature: Third-party Integration
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
-source-git-commit: 6dc931b88666515cf51ab89ce1a54bbcf9995679
+TQID: https://experienceleague.adobe.com/vHNM6HEpL4efGeanvzjDaNfFPqaGwqy84lnvc21-ufA
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: c814092e-2730-45e8-a12d-e084529f52cb
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: 808
 ht-degree: 1%
 
 ---
@@ -35,10 +39,10 @@ ht-degree: 1%
 
 1. [!DNL Facebook Ad Account]
 2. [!DNL Audience Manager]个区段，已准备好分配给您的新[!DNL Facebook]目标。 以下是[如何在](/help/using/features/segments/segment-builder.md) UI中创建区段[!DNL Audience Manager]。
-3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID])版本4.1.0或更高版本。 在此处&#x200B;**[&#128279;](https://github.com/Adobe-Marketing-Cloud/id-service/releases)下载最新版本**。
-4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL])版本9.0或更高版本，可从&#x200B;**[此处](https://github.com/Adobe-Marketing-Cloud/dil/releases)**&#x200B;下载。 或者，如果您使用[服务器端转发(SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hans)将数据导入[!DNL Audience Manager]，则必须使用AppMeasurement版本2.12或更高版本。 使用[!DNL AppMeasurement]Analytics代码管理器[下载](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html?lang=zh-Hans)。
+3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID])版本4.1.0或更高版本。 在此处&#x200B;**[](https://github.com/Adobe-Marketing-Cloud/id-service/releases)下载最新版本**。
+4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL])版本9.0或更高版本，可从&#x200B;**[此处](https://github.com/Adobe-Marketing-Cloud/dil/releases)**&#x200B;下载。 或者，如果您使用[服务器端转发(SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html)将数据导入[!DNL Audience Manager]，则必须使用AppMeasurement版本2.12或更高版本。 使用[!DNL AppMeasurement]Analytics代码管理器[下载](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html)。
 
-我们建议您使用[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)安装或升级步骤3和4中的库。
+我们建议您使用[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)安装或升级步骤3和4中的库。
 
 ## 步骤1 — 在[!UICONTROL Facebook Destination]中创建[!DNL Audience Manager] {#step-1-create-facebook-destination}
 

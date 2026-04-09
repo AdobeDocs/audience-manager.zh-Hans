@@ -7,9 +7,12 @@ title: 未使用的信号报表
 uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
 feature: Overlap Reports
 exl-id: ab5cb5ad-4305-4463-8f56-237b5a2f1f9e
-source-git-commit: 9c980b8fd5c3cb6ba7b3031726da726ee5caeec6
+TQID: https://experienceleague.adobe.com/OfDw6FsS-MlFtwy-91jBH1O8d57aCvOap94ZK3zHVco
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: 623
 ht-degree: 1%
 
 ---
@@ -26,7 +29,7 @@ ht-degree: 1%
 
 ## 概述
 
-信号是来自您网站的信息，以[!DNL Audience Manager]键值对[&#x200B; （例如](../../reference/key-value-pairs-explained.md)等）的形式传递到`color=blue, price>100, gender=female`。
+信号是来自您网站的信息，以[!DNL Audience Manager]键值对[ （例如](../../reference/key-value-pairs-explained.md)等）的形式传递到`color=blue, price>100, gender=female`。
 
 未使用的信号由您收集但尚未映射到某个特征的数据组成。 [!UICONTROL Unused Signals]报表按日期、键、值和频率计数显示表中的数据。 任何传入到[!DNL Audience Manager]的未映射信号在一天内至少100次符合[!UICONTROL Unused Signals]报表的条件。
 

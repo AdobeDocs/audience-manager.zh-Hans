@@ -7,9 +7,13 @@ title: 数据导出控制
 uuid: de7f3608-c0cb-4049-973a-8be54525c600
 feature: Data Export Controls
 exl-id: 4369c210-bcf1-48cc-a9bb-0d122f6c03d4
-source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
+TQID: https://experienceleague.adobe.com/Ycw7xN2n0gErtYP6g7nJCitz6b-qDdTQ73x0lqcGWaM
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: c814092e-2730-45e8-a12d-e084529f52cb
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: 876
 ht-degree: 1%
 
 ---
@@ -28,7 +32,7 @@ ht-degree: 1%
 根据应用于数据源和目标的分类，导出控件会阻止您：
 
 * 当特征属于数据源时，该数据源具有的数据导出控制与区段映射到的一个或多个目标上的数据导出标签不兼容，则将特征添加到区段。
-例如，假设某个区段映射到具有导出标签&#x200B;**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目标。 如果特征所属的数据源具有显示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的数据导出控件，则导出控件会阻止您向此区段添加特征。
+例如，假设某个区段映射到具有导出标签**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目标。 如果特征所属的数据源具有显示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的数据导出控件，则导出控件会阻止您向此区段添加特征。
 * 将任意数据发送到具有以下数据导出标签的目标位置，该标签被任何位置上的数据导出控件阻止：
    * 所包含特征的数据源；
    * 在所包含区段中使用的特征的数据源；

@@ -6,9 +6,14 @@ solution: Audience Manager
 title: 特征推荐
 feature: Segments
 exl-id: 7ef862a9-7354-49fb-9af0-925d827a5165
-source-git-commit: 432b12c4d4fb567d1a0bcaa9d12baaac5e3ae0f7
+TQID: https://experienceleague.adobe.com/QlyZ0ihE6gw5qBsQ3RATUwOJYms0xyt0dwJRS-jfBU0
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: ce14ba14-a06d-4b2b-b7dd-04cb862494ecid: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+subfeature_v2: id: d3dfac44-e20d-492d-a806-0f4a4a495901id: d921db59-bd4a-43dc-97e6-4ff4611f1ae8id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '1584'
+source-wordcount: 1584
 ht-degree: 5%
 
 ---
@@ -21,11 +26,11 @@ ht-degree: 5%
 
 首先观看下面的[!UICONTROL Trait Recommendations]视频，然后阅读以了解更多信息。 此视频演示向您展示了如何使用来自您自己的第一方特征的推荐，以及来自[!UICONTROL Audience Marketplace]数据馈送（您&#x200B;*已订阅*）的特征推荐。
 
->[!VIDEO](https://video.tv.adobe.com/v/40843?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/26228/)
 
 下一个视频概述了[!UICONTROL Marketplace Recommendations]的工作流，向您展示了如何根据[!UICONTROL Audience Marketplace]中的数据馈送中的推荐向区段添加特征。 这些建议基于&#x200B;*您未订阅*&#x200B;的数据馈送。
 
->[!VIDEO](https://video.tv.adobe.com/v/32753?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29363/)
 
 ## 概述
 

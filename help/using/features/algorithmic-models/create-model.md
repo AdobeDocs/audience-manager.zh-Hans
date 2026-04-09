@@ -8,9 +8,11 @@ title: 创建算法模型
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 feature: Algorithmic Models
 exl-id: 8b7c4f57-f2c8-46f1-8924-5513fd6ede04
-source-git-commit: 6956793aa8d31d16a7add648b8d205dec6f75202
+TQID: https://experienceleague.adobe.com/ZLODJg0TbL-Xhr0CNNg3JbCkM-uqwbjX22BvlZHV8Xk
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: 639
 ht-degree: 0%
 
 ---
@@ -111,7 +113,7 @@ ht-degree: 0%
 
 观看以下视频，了解如何创建第一方相似人群拓展模型，以便您能够找到更多与转换器相似的人群。
 
->[!VIDEO](https://video.tv.adobe.com/v/328070?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/23504/)
 
 >[!MORELIKETHIS]
 >

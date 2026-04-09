@@ -6,13 +6,16 @@ solution: Audience Manager
 title: 先决条件和注意事项
 feature: People-based Destinations
 exl-id: 7656aa3e-3410-4052-8e29-b702bd0bf149
-source-git-commit: 2b823855994f394261a66e896ef7de7bb7a5450f
+TQID: https://experienceleague.adobe.com/SjS39KDro3z9ZFOolg5GU3pLgxG2GEmxrBJoR8tJByY
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: c814092e-2730-45e8-a12d-e084529f52cb
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: beb7a3c1-66ab-4786-b879-7621375b3c40id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: 996
 ht-degree: 2%
 
 ---
-
 
 # 先决条件和注意事项 {#prerequisites-considerations}
 
@@ -50,7 +53,7 @@ ht-degree: 2%
 
 要了解如何编辑您的[!DNL LinkedIn Campaign Manager]用户权限，请参阅LinkedIn文档中的[添加、编辑和删除Advertising帐户的用户权限](https://www.linkedin.com/help/lms/answer/5753)。
 
-有关视频说明，请参阅[了解和配置LinkedIn基于人员的目标](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html?lang=zh-Hans)。
+有关视频说明，请参阅[了解和配置LinkedIn基于人员的目标](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html)。
 
 ### [!DNL Google Customer Match] {#gcm}
 
@@ -99,7 +102,7 @@ Google会自动允许具有合规帐户的客户列出。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud为您提供通过[!DNL Adobe Experience Platform Identity Service (ECID)]对客户ID进行哈希处理的选项。 有关如何使用ECID对客户ID进行哈希处理的详细信息，请参阅对setCustomerIDs[的](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html?lang=zh-Hans)SHA256哈希处理支持。
+Adobe Experience Cloud为您提供通过[!DNL Adobe Experience Platform Identity Service (ECID)]对客户ID进行哈希处理的选项。 有关如何使用ECID对客户ID进行哈希处理的详细信息，请参阅对setCustomerIDs[的](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html)SHA256哈希处理支持。
 
 ## 获取用户权限 {#obtaining-user-permission}
 

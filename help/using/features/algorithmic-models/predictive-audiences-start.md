@@ -6,9 +6,12 @@ solution: Audience Manager
 title: Predictive Audiences快速入门
 feature: Algorithmic Models
 exl-id: beb314de-f679-4397-8e14-2dd6576243fd
-source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
+TQID: https://experienceleague.adobe.com/GxGaEIsjpvAqbm5AbaxmmLrgC09x4fslbZcJuShf1sE
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: 545
 ht-degree: 2%
 
 ---
@@ -20,7 +23,7 @@ ht-degree: 2%
 
 ## 创建预测受众模型 {#create-predictive-audiences}
 
-在创建[!UICONTROL Predictive Audiences]模型之前，您需要决定要将[!UICONTROL Predictive Audiences]特征和区段分配给哪个第一方数据源。 您可以使用现有的第一方数据源，也可以创建新的第一方数据源。 有关如何创建新的第一方数据源的详细信息，请参阅[管理数据源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html?lang=zh-Hans)。
+在创建[!UICONTROL Predictive Audiences]模型之前，您需要决定要将[!UICONTROL Predictive Audiences]特征和区段分配给哪个第一方数据源。 您可以使用现有的第一方数据源，也可以创建新的第一方数据源。 有关如何创建新的第一方数据源的详细信息，请参阅[管理数据源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html)。
 
 了解要使用的数据源后，请按照以下步骤操作。
 

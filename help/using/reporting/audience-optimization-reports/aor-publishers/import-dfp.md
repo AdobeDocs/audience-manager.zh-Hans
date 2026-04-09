@@ -7,9 +7,13 @@ title: 将Google Ad Manager数据文件导入Audience Manager
 uuid: c685f34f-3e50-4c4b-99fa-d8bbafe0b268
 feature: Audience Optimization Reports
 exl-id: 62b72dd1-e664-4c6a-8c0a-f7a662d62a47
-source-git-commit: 7147091e6c253e8124f5f21a2251c1a76ac9d808
+TQID: https://experienceleague.adobe.com/cnzj59ejieaEvCGo2a-xopjYJ-GfUTc1LV24p9mQiEw
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: b89b323a-1e91-40b1-8d20-96b5b726d55a
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: 511
 ht-degree: 14%
 
 ---
@@ -22,7 +26,7 @@ ht-degree: 14%
 
 请注意，在&#x200B;*之前必须*&#x200B;完成此部分中描述的进程，然后才能转到启用日志摄取的先决条件。
 
-要在[!DNL Google Ad Manager]中使用[!DNL Audience Manager]&#x200B;(以前为Google DFP)日志文件，您必须在广告标记调用中首先设置我们的[Audience Manager独特用户ID (UUID)](../../../reference/ids-in-aam.md)。 这样，我们的ID将包含在[!DNL Google Ad Manager]日志中，我们可以匹配[!DNL Google Ad Manager]和[!DNL Audience Manager]之间的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]代码或[!UICONTROL Audience Management Module]在第一方Cookie中设置[!DNL Audience Manager] UUID。
+要在[!DNL Google Ad Manager]中使用[!DNL Audience Manager]（以前为Google DFP）日志文件，您必须在广告标记调用中首先设置我们的[Audience Manager独特用户ID (UUID)](../../../reference/ids-in-aam.md)。 这样，我们的ID将包含在[!DNL Google Ad Manager]日志中，我们可以匹配[!DNL Google Ad Manager]和[!DNL Audience Manager]之间的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]代码或[!UICONTROL Audience Management Module]在第一方Cookie中设置[!DNL Audience Manager] UUID。
 
 以下是如何在广告标记调用中设置[!DNL Audience Manager] ID，如我们的文档中所述：
 
@@ -82,7 +86,7 @@ ht-degree: 14%
   </tr> 
   <tr> 
    <td colname="col1"> <p>步骤 6 </p> </td> 
-   <td colname="col2"> <p>编译先决条件并按照详细的<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=zh-Hans">此处</a>说明打开支持票证以启动日志摄取过程。 </p> </td> 
+   <td colname="col2"> <p>编译先决条件并按照详细的<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html">此处</a>说明打开支持票证以启动日志摄取过程。 </p> </td> 
    <td colname="col3"> <p>您或代表您<span class="keyword">咨询Audience Manager</span> </p> </td> 
   </tr> 
  </tbody> 

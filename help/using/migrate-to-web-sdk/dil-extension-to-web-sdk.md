@@ -2,9 +2,13 @@
 title: 从Audience Manager标记扩展迁移到Web SDK标记扩展
 description: 了解将Audience Manager的数据收集库从Audience Manager标记扩展更新为Web SDK标记扩展的步骤
 exl-id: 7f0486db-4511-4311-90df-290580fdcd78
-source-git-commit: a50aaeb5e384685100dc3ecc1d6d45f1c41461d0
+TQID: https://experienceleague.adobe.com/onqgwnCIZMdiZz6nGRWy7bpbXpMF1zizqyQOQjSkGTc
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: 1309
 ht-degree: 0%
 
 ---
@@ -13,7 +17,7 @@ ht-degree: 0%
 
 ## 目标受众
 
-本页面向使用[Audience Manager标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/audience-manager/overview)将Web收集数据引入Audience Manager的Audience Manager客户。 对于使用AppMeasurement JavaScript库的客户，请阅读有关如何将Audience Manager [的数据收集库从AppMeasurement JavaScript库更新到Web SDK JavaScript库](appmeasurement-to-web-sdk.md)的指南。
+本页面向使用[Audience Manager标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview)将Web收集数据引入Audience Manager的Audience Manager客户。 对于使用AppMeasurement JavaScript库的客户，请阅读有关如何将Audience Manager [的数据收集库从AppMeasurement JavaScript库更新到Web SDK JavaScript库](appmeasurement-to-web-sdk.md)的指南。
 
 ## 此实施路径的优缺点
 

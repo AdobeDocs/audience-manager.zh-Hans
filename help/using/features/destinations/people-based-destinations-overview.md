@@ -6,9 +6,13 @@ solution: Audience Manager
 title: 概述和用例
 feature: People-based Destinations
 exl-id: 2edbda3b-e2a3-4a92-965b-206a21764cc8
-source-git-commit: ab3361a0a54a7200d2f0c03a82ae6ef61a755be9
+TQID: https://experienceleague.adobe.com/7c9eNzUQp0XujQJ0xIalHp7Sgn3Aas2o4yM5DPIiY1Y
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: c814092e-2730-45e8-a12d-e084529f52cb
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: ff2b9b37-92e0-45fc-b853-379d44c08c89
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: 865
 ht-degree: 0%
 
 ---
@@ -31,7 +35,7 @@ ht-degree: 0%
 * 在无Cookie的环境中定位受众；
 * 通过删除与客户ID匹配的经过哈希处理的电子邮件地址中的重复项来定位受众。
 
-您可以使用[!DNL People-Based Destinations]对可能未访问您网站的高价值客户进行细分和定位，或停止对已离线转换的客户进行定位。 此外，您可以利用[!DNL Profile Merge Rules]将离线的第一方数据与在线的第一方数据(包括其他Adobe Experience Cloud解决方案中的客户数据)相结合，以优化您的社交媒体广告工作。
+您可以使用[!DNL People-Based Destinations]对可能未访问您网站的高价值客户进行细分和定位，或停止对已离线转换的客户进行定位。 此外，您可以利用[!DNL Profile Merge Rules]将离线的第一方数据与在线的第一方数据（包括其他Adobe Experience Cloud解决方案中的客户数据）相结合，以优化您的社交媒体广告工作。
 
 ![pbd-overview](assets/pbd-overview.png)
 
@@ -63,7 +67,7 @@ ht-degree: 0%
 
 观看以下视频，了解使用[!UICONTROL People-Based Destinations]时的数据流概况。
 
->[!VIDEO](https://video.tv.adobe.com/v/31961?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28968/)
 
 ## 用例 {#use-cases}
 

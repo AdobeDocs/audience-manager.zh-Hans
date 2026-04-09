@@ -8,9 +8,13 @@ title: 同意管理
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 feature: Data Governance & Privacy
 exl-id: 9e545e8d-dbe4-4df9-8801-af3c2c73e406
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+TQID: https://experienceleague.adobe.com/ky1cNyZ507tDn2FFS6umoWsT-zaZ05wQwvK8xvNc7HU
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: baaa0dd2-d27e-4921-aae3-7888623a5fa5id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: 685
 ht-degree: 98%
 
 ---
@@ -31,11 +35,11 @@ Audience Manager 可为您提供工具，帮助您从用户那里获得所需的
 
 ## Experience Cloud 选择加入服务
 
-[Experience Cloud 选择加入服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=zh-Hans)允许您为访客设置协议，以帮助确定在用户访问网站时您是否可以在用户的设备或浏览器上设置 Cookie。
+[Experience Cloud 选择加入服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)允许您为访客设置协议，以帮助确定在用户访问网站时您是否可以在用户的设备或浏览器上设置 Cookie。
 
 这是 [!DNL Experience Cloud ID (ECID) Service] 的一项扩展，旨在让您控制 Experience Cloud 解决方案是否可以在用户同意前为访客在网页上放置 Cookie，如果是，具体是哪些解决方案。
 
-[Experience Cloud 选择加入服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=zh-Hans)还允许您设置协议，以便与同意管理平台 (CMP) 和更大型设计中的现有系统相集成。
+[Experience Cloud 选择加入服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)还允许您设置协议，以便与同意管理平台 (CMP) 和更大型设计中的现有系统相集成。
 
 ## 管理选择加入/获取同意
 
@@ -43,7 +47,7 @@ Audience Manager 客户能够将各种用例（如广告或个性化）的用户
 
 ## 管理选择退出/撤回同意
 
-可以通过[隐私选择](https://www.adobe.com/cn/privacy/opt-out.html#customeruse)页面为 Adobe Experience Cloud 管理选择退出。一键式功能允许您的最终用户通过 Adobe Experience Cloud 广告解决方案（包括 Audience Manager）控制和选择退出数据收集。有关具体信息，请参阅隐私选择页面中的[企业客户部分](https://www.adobe.com/cn/privacy/opt-out.html#customeruse)。有关不支持第三方 Cookie 的浏览器，请参阅[声明的 ID 定位](../../features/declared-ids.md#declared-id-targeting)。对于移动设备，请按照[声明的 ID 选择退出示例](../../features/declared-ids.md#opt-out-examples)中所述，检索相关的 Audience Manager 标识符并调用 Audience Manager 选择退出 API。之后，您可以使用 Mobile SDK 中的选择退出 API 停止这些用户的所有数据收集 - 请参阅 [Android 设备](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=zh-Hans)和 [iOS 设备](https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html?lang=zh-Hans)。您可以在[数据隐私请求文档](../../overview/data-security-and-privacy/data-privacy-requests.md)中找到有关选择退出的其他详细信息。
+可以通过[隐私选择](https://www.adobe.com/cn/privacy/opt-out.html#customeruse)页面为 Adobe Experience Cloud 管理选择退出。一键式功能允许您的最终用户通过 Adobe Experience Cloud 广告解决方案（包括 Audience Manager）控制和选择退出数据收集。有关具体信息，请参阅隐私选择页面中的[企业客户部分](https://www.adobe.com/cn/privacy/opt-out.html#customeruse)。有关不支持第三方 Cookie 的浏览器，请参阅[声明的 ID 定位](../../features/declared-ids.md#declared-id-targeting)。对于移动设备，请按照[声明的 ID 选择退出示例](../../features/declared-ids.md#opt-out-examples)中所述，检索相关的 Audience Manager 标识符并调用 Audience Manager 选择退出 API。之后，您可以使用 Mobile SDK 中的选择退出 API 停止这些用户的所有数据收集 - 请参阅 [Android 设备](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html)和 [iOS 设备](https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html)。您可以在[数据隐私请求文档](../../overview/data-security-and-privacy/data-privacy-requests.md)中找到有关选择退出的其他详细信息。
 
 ## 为第二方合作伙伴管理同意
 

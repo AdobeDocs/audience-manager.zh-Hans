@@ -7,9 +7,14 @@ keywords: GDPR UI， GDPR API， CCPA，隐私，同意，模糊处理，治理
 title: 数据管理
 feature: Data Governance & Privacy
 exl-id: 52aeca00-73f2-4525-9e11-34a472ec45c6
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+TQID: https://experienceleague.adobe.com/HVF-SxKO4mcE7YkiiwXLBPn2K3N5NIjpZHFWgZb0CoI
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a99472c1-6aae-4c7a-8aa0-f60636369620id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2: id: a49258d4-867f-4130-b875-d72c001bdf6cid: d3dfac44-e20d-492d-a806-0f4a4a495901id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: 451
 ht-degree: 90%
 
 ---
@@ -35,7 +40,7 @@ ht-degree: 90%
 
 观看以下视频，了解 Audience Manager 如何进行 [!DNL IP] 地址模糊处理。
 
->[!VIDEO](https://video.tv.adobe.com/v/34967?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27218/)
 
 **地域划分：**&#x200B;如果启用 [!DNL IP] 地址模糊处理，则 [!DNL IP] 地址的其余八位字节仍可用于 Audience Manager 中的地域划分和报表。如果不启用 [!DNL IP] 地址模糊处理，Audience Manager 将使用完整的 [!DNL IP] 地址。您可以使用地域划分功能，不论是否使用 [!DNL IP] 模糊处理，该功能都可以让您通过地理区域来识别 [!DNL IP] 位置，但是在使用模糊处理的情况下，会略微损失一些精确度。若启用 [!DNL IP] 地址模糊处理，城市级别信息的获取很有可能会受到重大影响。而地区和国家级别信息的获取应该只会受到轻微影响。地域划分数据只精确到城市级别或邮政编码级别，而不能精确到个人级别。进一步了解[地理定位](../../features/traits/trait-geotarget-keys.md)以及如何使用地理变量设置特征。
 

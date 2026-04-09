@@ -6,9 +6,12 @@ solution: Audience Manager
 title: 如果遇到问题
 feature: Support
 exl-id: 2f7b9dbe-7aac-41b0-aab8-3b703d7a2441
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+TQID: https://experienceleague.adobe.com/9yNQ22FOduvtYsw4ovWOSvyemp5J6edcn3DbLfgpldc
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: 370
 ht-degree: 100%
 
 ---
@@ -76,7 +79,7 @@ r_problem.xml
 
 ## 如果发生中断 {#outage}
 
-如果您怀疑发生了服务中断，请首先查看 [Experience Cloud 系统状态页面](https://status.adobe.com/zh-cn) ( [!DNL https://status.adobe.com/zh-cn] )。此页面记录了包括 Audience Manager 在内的各个 Experience Cloud 解决方案的所有服务中断、事故和维护信息，同时还包含我们技术运营团队进行的最新更新。如果您仍然需要协助，请在联系客户关怀团队时，除了上面列出的信息之外，确保您还知道以下信息：
+如果您怀疑发生了服务中断，请首先查看 [Experience Cloud 系统状态页面](https://status.adobe.com) ( [!DNL https://status.adobe.com] )。此页面记录了包括 Audience Manager 在内的各个 Experience Cloud 解决方案的所有服务中断、事故和维护信息，同时还包含我们技术运营团队进行的最新更新。如果您仍然需要协助，请在联系客户关怀团队时，除了上面列出的信息之外，确保您还知道以下信息：
 
 * 服务中断开始的时间
 * 所发生情况的说明

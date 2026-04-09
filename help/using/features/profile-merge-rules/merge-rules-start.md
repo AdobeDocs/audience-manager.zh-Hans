@@ -7,9 +7,14 @@ title: 开始使用配置文件合并规则
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 feature: Profile Merge
 exl-id: 11f397dd-1f23-4b14-be6f-60ce8b77ab12
-source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
+TQID: https://experienceleague.adobe.com/tK8hkKLaE-jkzO780-SIHxrwm7VhqnvoL-4G1nH43Cc
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: baaa0dd2-d27e-4921-aae3-7888623a5fa5id: c814092e-2730-45e8-a12d-e084529f52cbid: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2: id: e8a4c7eb-7254-4984-ac46-e651a57c7e39id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: 1263
 ht-degree: 1%
 
 ---
@@ -105,7 +110,7 @@ ht-degree: 1%
 
 2019年末，我们发布了一系列配置文件合并规则增强功能，以提高使用跨设备ID生成的批处理文件的准确性。 从2020年3月16日星期一开始，您的Audience Manager实例将严格遵循这些增强功能。 因此，使用跨设备ID映射到目标的区段将停止在某些配置文件合并规则配置中生成导出。
 
-要确保使用跨设备ID(如Adobe Campaign)在Audience Manager实例和目标之间正确集成，请确保您满足以下要求：
+要确保使用跨设备ID（如Adobe Campaign）在Audience Manager实例和目标之间正确集成，请确保您满足以下要求：
 
 1. 查看映射到您的Adobe Campaign Declared ID目标的区段所使用的配置文件合并规则。 配置文件合并规则必须使用[!UICONTROL Last Authenticated Profile]选项，以便所有经过身份验证的配置文件都可以包含在导出中。 如果您的配置文件合并规则使用其他选项，请将其切换到[!UICONTROL Last Authenticated Profile]。
 2. 在配置文件合并规则设置中选择Adobe Campaign Declared ID数据源。
@@ -150,7 +155,7 @@ visitor.setCustomerIDs({
      "authState":Visitor.AuthState.AUTHENTICATED
 ```
 
-有关详细信息，请参阅[创建跨设备数据Source](#create-data-source)和[客户ID和身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hans)。
+有关详细信息，请参阅[创建跨设备数据Source](#create-data-source)和[客户ID和身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)。
 
 ### 配置`DIL.create`函数
 
@@ -165,7 +170,7 @@ var vDil = DIL.create({
 });
 ```
 
-在命名空间键值对中，`*`MCORG`*`变量是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，则可以在[!UICONTROL Administration]仪表板的[!DNL Experience Cloud]部分中找到它。 您需要管理员权限才能查看此仪表板。 请参阅[管理：核心服务](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans)。
+在命名空间键值对中，`*`MCORG`*`变量是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，则可以在[!UICONTROL Administration]仪表板的[!DNL Experience Cloud]部分中找到它。 您需要管理员权限才能查看此仪表板。 请参阅[管理：核心服务](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
 ### 配置SDK
 
@@ -215,15 +220,15 @@ DIL.create({
     </code></p>
     <p> <b>示例：</b> </p><p>
     <code class="javascript">
-      &lbrack;ADBMobile&nbsp;audienceSetDpid:@"290"
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:@"99301393923940"&rbrack;;
+      [ADBMobile&nbsp;audienceSetDpid:@"290"
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:@"99301393923940"];
     </code></p>
     </td>
   </tr>
  </tbody>
 </table>
 
-另请参阅[适用于Android的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html?lang=zh-Hans)和[适用于iOS的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html?lang=zh-Hans)。
+另请参阅[适用于Android的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html)和[适用于iOS的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html)。
 
 >[!MORELIKETHIS]
 >

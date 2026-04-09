@@ -7,9 +7,11 @@ title: 区段表达式编辑器中使用的代码语法
 uuid: 7b4b06ca-7879-4501-8ba7-b2b6467b8a3b
 feature: Segments
 exl-id: 64fa6f03-cef9-4187-866f-28c54f45f72e
-source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
+TQID: https://experienceleague.adobe.com/cJKsvcP-dZ05ojGgbn2ni-wFMFfiObuIWwaRP0-HWFQ
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: 297
 ht-degree: 4%
 
 ---
@@ -44,7 +46,7 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
 | 名称或变量 | 描述 |
 |---|---|
 | `FREQUENCY` | 必须在表达式前面的文本。 |
-| `[`&lt;`traitID`>`T]` | 特征ID数组，后跟字母`T`。 用逗号分隔多个特征。 例如，`[123T, 456T]`。 |
+| `[`&lt;`traitID``T]` | 特征ID数组，后跟字母`T`。 用逗号分隔多个特征。 例如，`[123T, 456T]`。 |
 | `<Recency Operator><Numeric Value>D` | *（可选）*&#x200B;针对区段中的特征设置回访间隔规则。 字母`D`表示回访间隔（天）。 |
 | `<Frequency Operator><Numeric Value>` | 设置区段中特征的频率规则。 |
 

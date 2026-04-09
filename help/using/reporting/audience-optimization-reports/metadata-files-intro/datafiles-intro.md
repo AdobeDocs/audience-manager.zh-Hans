@@ -7,9 +7,13 @@ title: Audience Optimization报表的数据文件以及可操作的日志文件
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 feature: Log Files
 exl-id: 0da2c1d3-5ff8-40dd-b831-21d8941688ce
-source-git-commit: db90a6f1aaf85b10e31e93e316c257b7c3a904aa
+TQID: https://experienceleague.adobe.com/V7m-uiRhNEiGDi5x-Uxy51qm-RneyvCC4Ufl9Ue8xB4
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: 994
 ht-degree: 1%
 
 ---
@@ -46,7 +50,7 @@ ht-degree: 1%
 
 以下语法定义格式正确的数据文件中的内容结构。 请注意，*斜体*&#x200B;表示变量占位符，在实际数据文件中被替换为标签。
 
-**语法：** <pre><code><i>标题标签1</i> | <i>标头标签2</i> ... <i>标头标签n</i> | <i>版本</i></code></pre>
+**语法：** <pre><code><i>标头标签1</i> | <i>标头标签2</i> ... <i>标头标签n</i> | <i>版本</i></code></pre>
 
 在文件内容中：
 

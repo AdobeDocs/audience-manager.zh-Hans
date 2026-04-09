@@ -8,9 +8,14 @@ title: 管理
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
 feature: Administration
 exl-id: f23f4294-35d9-4128-bcda-64a3eccbb4e7
-source-git-commit: c29e581c736e03066df7d0698d4ea384e14db467
+TQID: https://experienceleague.adobe.com/mpnT-bo1mqdh9Ifq60olXKx6Oykgun1NODveP-VKtCU
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: baaa0dd2-d27e-4921-aae3-7888623a5fa5id: c814092e-2730-45e8-a12d-e084529f52cbid: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2: id: c2c33729-f309-4bc2-92ba-87c475259df3id: d3dfac44-e20d-492d-a806-0f4a4a495901id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: 1173
 ht-degree: 0%
 
 ---
@@ -46,7 +51,7 @@ ht-degree: 0%
 > 
 > 在迁移完所有客户之后，本文档的用户管理部分将消失。
 > 
->在[!DNL Audience Manager]中创建用户，并指定用户详细信息、登录状态以及将用户分配给组。
+在[!DNL Audience Manager]中创建用户，并指定用户详细信息、登录状态以及将用户分配给组。
 
 1. 单击&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Users]**。
 1. 单击![](assets/icon_add.png)以显示[!UICONTROL Create New User]页。
@@ -63,7 +68,7 @@ ht-degree: 0%
    * **[!UICONTROL Expired]：**&#x200B;用户的密码超过90天。
    * **[!UICONTROL Pending]：**&#x200B;用户具有临时密码（在密码重置后或作为全新帐户），并且用户尚未设置永久密码。
    * **[!UICONTROL Locked Out]：** 5次错误的登录尝试将会锁定用户。
-1. 在&#x200B;**[!UICONTROL Assigned Groups]**&#x200B;下，从下拉列表中选择要为其分配此用户的所需组。
+1. 在&#x200B;**[!UICONTROL Assigned Groups]**下，从下拉列表中选择要为其分配此用户的所需组。
 有关组和权限的详细信息，请参阅[创建组](../../features/administration/administration-overview.md#create-group)。
 1. 单击 **[!UICONTROL Save]**。
 

@@ -7,9 +7,14 @@ solution: Audience Manager
 title: Audience Manager用户迁移到Admin Console
 feature: Administration
 exl-id: d9069cc1-87fa-47b7-ad0c-d69ee37fc91e
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+TQID: https://experienceleague.adobe.com/CE7RomA3PrbV9wwVnwehnZLdP-L73QzOyOlOGSQ0rSs
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2: id: d3dfac44-e20d-492d-a806-0f4a4a495901id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: 391
 ht-degree: 1%
 
 ---
@@ -39,7 +44,7 @@ ht-degree: 1%
 Audience Manager管理员应按照以下步骤将用户迁移到[!DNL Admin Console]。
 
 1. 转到[https://adminconsole.adobe.com](https://adminconsole.adobe.com)并使用您的Adobe ID或Enterprise ID登录。 如果您无权访问[!DNL Admin Console]，请联系客户关怀团队或您的Adobe顾问。
-2. 有关如何创建和管理用户帐户的详细说明，请查看[!DNL Adobe Admin Console] [帮助指南](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/users.ug.html)。
+2. 有关如何创建和管理用户帐户的详细说明，请查看[!DNL Adobe Admin Console] [帮助指南](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html)。
 3. 为所有现有Audience Manager用户创建新用户帐户。
 4. 通知您的用户新创建的用户帐户。 用户迁移到[!DNL Admin Console]后，他们应停止使用旧版登录。
 

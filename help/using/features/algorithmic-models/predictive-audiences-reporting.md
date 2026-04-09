@@ -6,16 +6,21 @@ solution: Audience Manager
 title: Predictive Audiences报表
 feature: Algorithmic Models
 exl-id: 43a4272c-d9be-47f6-9b81-15472b0366ab
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+TQID: https://experienceleague.adobe.com/cCq0D-eJiC3HKysBofh6yxzJ2iBV-e1cOXnYl-VnZD8
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a99472c1-6aae-4c7a-8aa0-f60636369620
+subfeature_v2: id: a49258d4-867f-4130-b875-d72c001bdf6c
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: 608
 ht-degree: 2%
 
 ---
 
 # Predictive Audiences报表
 
-保存[!UICONTROL Predictive Audiences]模型后，Audience Manager会开始对其进行训练。 在几个小时内，计算模型将开始分析[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=zh-Hans#dcs-pcs)上的受众。 报告将在第二天提供。
+保存[!UICONTROL Predictive Audiences]模型后，Audience Manager会开始对其进行训练。 在几个小时内，计算模型将开始分析[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs)上的受众。 报告将在第二天提供。
 
 若要查看[!UICONTROL Predictive Audiences]分类的结果，请转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然后在列表中单击您的模型。
 
