@@ -1,5 +1,5 @@
 ---
-description: Audience Manager 提供了行业领先的在线受众数据管理服务。我们的产品和服务为数字广告商和出版商提供了所需工具来控制和利用其数据资产，以帮助促进成功销售。
+description: Audience Manager 提供了行业领先的在线受众数据管理服务。 我们的产品和服务为数字广告商和出版商提供了所需工具来控制和利用其数据资产，以帮助促进成功销售。
 seo-description: Technical documentation and self help for Audience Manager (AAM). AAM provides industry-leading services for online audience data management, and give digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
 seo-title: Adobe Audience Manager Product Technical Documentation
 solution: Audience Manager
@@ -30,27 +30,27 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+source-git-commit: f2fdbb191013b0bcb9bdab0529e3b7f3c872fd54
 workflow-type: tm+mt
-source-wordcount: 547
-ht-degree: 92%
+source-wordcount: 632
+ht-degree: 84%
 
 ---
 
 # Audience Manager 指南 {#audience-manager-product-documentation}
 
-本技术文档指南提供了 Audience Manager（行业领先的在线受众数据管理服务）的自助式内容。我们的产品和服务为数字广告商和出版商提供了所需工具来控制和利用其数据资产，以帮助促进成功销售。
+本技术文档指南提供了 Audience Manager（行业领先的在线受众数据管理服务）的自助式内容。 我们的产品和服务为数字广告商和出版商提供了所需工具来控制和利用其数据资产，以帮助促进成功销售。
 
-## 使用本指南
+## Using this guide
 
 * 在&#x200B;**左侧导航**&#x200B;中按主题和子主题浏览内容。
 * 如果您知道自己要查找的内容，可使用页面顶部的&#x200B;**搜索**&#x200B;字段。
-* 使用页面右上方的&#x200B;**记录问题**&#x200B;按钮，指出任何不正确或已过期的文档。请参阅[协作指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)概述，了解如何开始提供意见和建议。
+* 使用页面右上方的&#x200B;**记录问题**&#x200B;按钮，指出任何不正确或已过期的文档。 请参阅[协作指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)概述，了解如何开始提供意见和建议。
 
 ## 如何阅读本页
 
-* 首先，浏览 **Audience Manager 主要功能**&#x200B;部分，以概要了解 Audience Manager 可以帮助您解决的问题。另请参阅 [Audience Manager 概述](/help/using/overview/aam-overview.md)，然后再返回到本页。
-* 接下来，阅读 **Audience Manager 入门**，以了解 Audience Manager 的各项概念。另外，还请务必查阅相关的业务和技术实施指南。
+* 首先，浏览 **Audience Manager 主要功能**&#x200B;部分，以概要了解 Audience Manager 可以帮助您解决的问题。 另请参阅 [Audience Manager 概述](/help/using/overview/aam-overview.md)，然后再返回到本页。
+* 接下来，阅读 **Audience Manager 入门**，以了解 Audience Manager 的各项概念。 另外，还请务必查阅相关的业务和技术实施指南。
 * 请参阅最新的 Audience Manager 发行说明，并阅读&#x200B;**发行说明和最新功能**&#x200B;部分中的最新功能。
 * 最后，您可以在&#x200B;**学习中心 - 推荐的 Audience Manager 和 Experience Cloud 资源**&#x200B;部分中找到更多 Experience Cloud 资源，如论坛、视频教程、现场培训课程和在线培训课程。
 
@@ -110,7 +110,7 @@ ht-degree: 92%
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
      <li><a href="/help/using/api/rest-api-main/aam-api-getting-started.md">开始使用 REST API</a></li>
      <li><a href="/help/using/api/dcs-intro/dcs-event-calls/dcs-event-calls.md">开始使用 DCS API</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=zh-Hans">在Adobe Experience Platform标记中添加Audience Manager扩展</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=zh-Hans">Add the Audience Manager extension in Adobe Experience Platform Tags</a></li>
     <li><a href="https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/data-management/aam-dil-extension.html?lang=zh-Hans">在应用程序中添加 Audience Manager</a></li>
      </ul> </p>
     </td>
@@ -174,7 +174,7 @@ ht-degree: 92%
      有关新增功能和修复，请参阅最新的 <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hans" format="https" scope="external">Experience Cloud 发行说明</a>。</p> 
      <p> <b>最新功能</b> </p> <p> 
      了解 Audience Manager 的最新功能：</p>
-     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager用户迁移到Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">基于人员的目标的Google客户匹配</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">适用于IAB TCF v2.2的Audience Manager插件</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用情况报表</a></li>
+     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager user migration to Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google Customer Match for People-Based Destinations</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager Plug-in for IAB TCF v2.2</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活动使用情况报表</a></li>
      </ul></p>
     </td>
   </tr> 
@@ -194,7 +194,6 @@ See the latest [Experience Cloud Release Notes](https://experienceleague.adobe.c
 Read about the latest Audience Manager features:
 * [Activity Usage Reporting](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/activity-usage-reporting.html?lang=zh-Hans)
 * [California Consumer Privacy Act (CCPA) Support and Privacy Documentation Overhaul](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/data-privacy.html?lang=zh-Hans)
-* [Intelligent Recommendations for Audience Marketplace Data, powered by Adobe Sensei](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/trait-recommendations.html?lang=zh-Hans)
 * [Profile Merge Rules Enhancements](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-overview.html?lang=zh-Hans)
 * [Bulk Management Tools Update](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/bulk-management-tools/bulk-management-intro.html?lang=zh-Hans)
 

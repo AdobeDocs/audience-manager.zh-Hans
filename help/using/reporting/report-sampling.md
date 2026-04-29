@@ -19,10 +19,10 @@ subfeature_v2:
   - id: ec0be1ae-7ea9-4f62-869a-963a97d2edc1
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+source-git-commit: f2fdbb191013b0bcb9bdab0529e3b7f3c872fd54
 workflow-type: tm+mt
-source-wordcount: 449
-ht-degree: 0%
+source-wordcount: 451
+ht-degree: 1%
 
 ---
 
@@ -99,5 +99,4 @@ Reports that use Minhash sampling methodology:
 | 统计取样 | Minhash采样方法 |
 |--- |--- |
 | [可寻址受众](../features/addressable-audiences.md)数据（客户和区段级别的数据）。 | [重叠报表](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports)（特征到特征、区段到特征和区段到区段） |
-| [的](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics)总设备[!UICONTROL Profile Merge Rule]指标。 | [特征推荐](/help/using/features/segments/trait-recommendations.md) |
 | [Data Explorer](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)在[!UICONTROL Search]选项卡和任何[!UICONTROL Saved Searches]中使用采样数据 | [Audience Marketplace推荐](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |
