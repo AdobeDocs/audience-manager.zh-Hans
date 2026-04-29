@@ -8,21 +8,14 @@ uuid: f505b5f4-4231-4e84-993a-cd64128b540f
 feature: Audience Marketplace
 exl-id: 9d6a7fda-f79f-41ad-9654-3ebcf9028cc2
 TQID: https://experienceleague.adobe.com/7rX24xDAh7PEcN29jLv-b1z0EhSp2Ku5-KlVoBVi4CA
-product_v2:
-  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2:
-  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
-  - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
-subfeature_v2:
-  - id: a49258d4-867f-4130-b875-d72c001bdf6c
-  - id: d921db59-bd4a-43dc-97e6-4ff4611f1ae8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a99472c1-6aae-4c7a-8aa0-f60636369620id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+subfeature_v2: id: a49258d4-867f-4130-b875-d72c001bdf6cid: d921db59-bd4a-43dc-97e6-4ff4611f1ae8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: f2fdbb191013b0bcb9bdab0529e3b7f3c872fd54
 workflow-type: tm+mt
-source-wordcount: 724
-ht-degree: 1%
+source-wordcount: 729
+ht-degree: 2%
 
 ---
 
@@ -51,7 +44,7 @@ ht-degree: 1%
 [!UICONTROL Marketplace]列表包含您可以进行排序和搜索以查找适合您的数据馈送的信息。 [!UICONTROL Marketplace]购买者列表中的项目包括：
 
 * **[!UICONTROL Search]**：按名称或文本描述查找数据馈送。
-* **[!UICONTROL Similar Traits]**：显示数据馈送中类似[!UICONTROL traits]的数字。 在[!UICONTROL trait]部分中输入要作为筛选依据的[!UICONTROL segment]或&#x200B;**[!UICONTROL Similarity To]**&#x200B;后，将显示此列。
+* **[!UICONTROL Similar Traits]**：显示数据馈送中类似[!UICONTROL traits]的数字。 在&#x200B;**[!UICONTROL Similarity To]**&#x200B;部分中输入要作为筛选依据的[!UICONTROL trait]或[!UICONTROL segment]后，将显示此列。
 * **[!UICONTROL Name]**：数据馈送的名称。
 * **[!UICONTROL Description]**：有关数据馈送内容的信息。
 * **[!UICONTROL Provider]**：数据提供程序的名称。
@@ -67,7 +60,7 @@ ht-degree: 1%
 要轻松找到符合您需求的最佳数据馈送，请使用[!UICONTROL Marketplace]页面左侧的以下过滤器：
 
 * **[!UICONTROL Similarity To]**：根据数据馈送与您选择的[!UICONTROL trait]或[!UICONTROL segment]的相似性筛选数据馈送。 输入要比较的[!UICONTROL trait]或区段时，您可以使用[!UICONTROL trait]或[!UICONTROL segment] ID或其各自的名称。
-* **[!UICONTROL Similarity Cutoff]**：拖动滑块以根据数据馈送的[!UICONTROL traits]与您所选的[!UICONTROL trait]或[!UICONTROL segment]的相似性筛选数据馈送。 要了解有关[!UICONTROL trait]相似性得分的更多信息，请参阅[特征相似性得分](../../segments/trait-recommendations.md#trait-similarity-score)
+* **[!UICONTROL Similarity Cutoff]**：拖动滑块以根据数据馈送的[!UICONTROL traits]与您所选的[!UICONTROL trait]或[!UICONTROL segment]的相似性筛选数据馈送。
 * **[!UICONTROL Subscription Status]**：根据您的订阅状态筛选数据馈送。
 * **[!UICONTROL Plan Use Case]**：根据支持的用例筛选数据馈送：**[!UICONTROL Activation]**、**[!UICONTROL Segments and Overlap]**&#x200B;和&#x200B;**[!UICONTROL Modelling]**。
 * **[!UICONTROL Plan Unit]**：根据定价类型筛选数据馈送。

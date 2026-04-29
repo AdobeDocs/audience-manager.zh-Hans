@@ -3,12 +3,12 @@ product: audience manager
 solution: Audience Manager
 audience: end-user
 user-guide-title: Audience Manager 用户指南
-user-guide-description: 了解如何使用 Adobe Audience Manager 收集有关网站访客的商业相关信息以及创建适销区段。您还可以找到有关如何向合适的受众提供定向广告和内容的详细信息。
+user-guide-description: 了解如何使用 Adobe Audience Manager 收集有关网站访客的商业相关信息以及创建适销区段。 您还可以找到有关如何向合适的受众提供定向广告和内容的详细信息。
 feature-set: Audience Manager
-source-git-commit: 2d694db141b311977e84cefc48ce14921c87ccc3
+source-git-commit: f2fdbb191013b0bcb9bdab0529e3b7f3c872fd54
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 17%
+source-wordcount: '1982'
+ht-degree: 16%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 17%
 # Audience Manager 用户指南 {#user-guide}
 
 + [Audience Manager 指南](aam-home.md)
-+ [Real-Time CDP的演变指南](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html?lang=zh-Hans)
++ [Real-Time CDP的演变指南](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
 + 迁移到Web SDK{#migrate-to-web-sdk}
    + [从Adobe Audience Manager标记扩展迁移到Web SDK标记扩展](migrate-to-web-sdk/dil-extension-to-web-sdk.md)
    + [将您的数据收集库从AppMeasurement迁移到Web SDK](migrate-to-web-sdk/appmeasurement-to-web-sdk.md)
@@ -61,32 +61,32 @@ ht-degree: 17%
       + [Audience Lab概述](features/audience-lab/audience-lab.md)
       + [管理测试组](features/audience-lab/audience-lab-manage-test-groups.md)
       + [测试组信息](features/audience-lab/audience-lab-information-view.md)
-      + [测试组报表](features/audience-lab/audience-lab-reporting-view.md)
-      + [Audience Lab用例](features/audience-lab/audience-lab-use-cases.md)
-      + [Audience Lab高级功能](features/audience-lab/audience-lab-advanced.md)
+      + [Test Group Reporting](features/audience-lab/audience-lab-reporting-view.md)
+      + [Audience Lab Use Cases](features/audience-lab/audience-lab-use-cases.md)
+      + [Audience Lab Advanced Functionality](features/audience-lab/audience-lab-advanced.md)
    + Audience Marketplace{#audience-marketplace}
       + [Audience Marketplace](features/audience-marketplace/audience-marketplace.md)
-      + [hide-from-tocAudience Marketplace优化](features/audience-marketplace/audience-marketplace-optimization.md)
-      + 面向数据提供商的Audience Marketplace{#audience-marketplace-for-data-providers}
-         + [面向数据提供商的Audience Marketplace](features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
-         + [创建、定价和管理数据信息源](features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md)
-         + [面向数据信息源提供商的账单](features/audience-marketplace/marketplace-data-providers/marketplace-billing-report.md)
+      + {hide-from-toc}[Audience Marketplace optimization](features/audience-marketplace/audience-marketplace-optimization.md)
+      + Audience Marketplace for Data Providers{#audience-marketplace-for-data-providers}
+         + [Audience Marketplace for Data Providers](features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
+         + [Create, Price, and Manage Data Feeds](features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md)
+         + [Billing for Data Feed Providers](features/audience-marketplace/marketplace-data-providers/marketplace-billing-report.md)
       + 面向数据购买者的Audience Marketplace{#audience-marketplace-for-data-buyers}
          + [面向数据购买者的Audience Marketplace](features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)
-         + [管理数据馈送订阅](features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md)
-         + [面向数据信息源购买者的账单](features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
+         + [Manage Data Feed Subscriptions](features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md)
+         + [Billing for Data Feed Buyers](features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
       + [专用数据信息源](features/audience-marketplace/marketplace-private-feeds.md)
-   + [客户数据信息源](features/cdf-files.md)
+   + [Customer Data Feeds](features/cdf-files.md)
    + Data Explorer{#data-explorer}
-      + [Data Explorer — 概述、优点和用例](features/data-explorer/data-explorer-overview.md)
-      + [了解信号](features/data-explorer/data-explorer-understanding-signals.md)
-      + [信号仪表板](features/data-explorer/data-explorer-signals-dashboard.md)
-      + 信号搜索{#signals-search}
-         + [信号搜索概述](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
-         + [按键值对搜索信号](features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
-         + [按筛选条件搜索信号](features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
-         + [Adobe Analytics的高级搜索](features/data-explorer/data-explorer-signals-search/data-explorer-search-analytics.md)
-         + [筛选搜索结果](features/data-explorer/data-explorer-signals-search/data-explorer-filter-results.md)
+      + [Data Explorer - Overview, Benefits, and Use Cases](features/data-explorer/data-explorer-overview.md)
+      + [Understanding Signals](features/data-explorer/data-explorer-understanding-signals.md)
+      + [Signals Dashboard](features/data-explorer/data-explorer-signals-dashboard.md)
+      + Signals Search{#signals-search}
+         + [Signals Search Overview](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
+         + [Search Signals by Key-Value Pairs](features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
+         + [Search Signals by Filters](features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
+         + [Advanced Search for Adobe Analytics](features/data-explorer/data-explorer-signals-search/data-explorer-search-analytics.md)
+         + [Filter Search Results](features/data-explorer/data-explorer-signals-search/data-explorer-filter-results.md)
          + [保存搜索条件](features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)
       + [从信号创建特征](features/data-explorer/create-traits-from-signals.md)
       + [回填特征实现](features/data-explorer/data-explorer-trait-backfill.md)
@@ -151,8 +151,7 @@ ht-degree: 17%
       + [区段生成器](features/segments/segment-builder.md)
       + [区段表达式编辑器中使用的代码语法](features/segments/segment-code-syntax.md)
       + [区段生成器中的特征和区段人口数据](features/segments/segment-builder-data.md)
-      + [特征推荐](features/segments/trait-recommendations.md)
-      + [特征和细分资格筛选参考](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html?lang=zh-Hans)
+      + [特征和区段资格参考](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html)
    + 特征{#traits}
       + [特征概述](/help/using/features/traits/traits-overview.md)
       + [特征详细信息页面](features/traits/trait-details-page.md)
@@ -349,8 +348,8 @@ ht-degree: 17%
    + 与其他Experience Cloud应用程序集成 {#integration-other-solutions}
       + [将Audience Manager与Adobe Target集成](integration/integration-other-solutions/aam-target-integration.md)
       + [如何将数据从Adobe Analytics转发到Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [将Adobe Analytics区段发布到Experience Cloud(打开Adobe Analytics文档)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html?lang=zh-Hans)
-      + [将Audience Manager与Adobe Campaign集成(打开Adobe Campaign文档)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html?lang=zh-Hans)
+      + [将Adobe Analytics区段发布到Experience Cloud（打开Adobe Analytics文档）](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
+      + [将Audience Manager与Adobe Campaign集成（打开Adobe Campaign文档）](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
 + 参考{#reference}
    + [参考概述](reference/reference.md)
    + [Amazon S3：关于](reference/amazon-s3.md)
