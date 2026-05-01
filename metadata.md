@@ -1,6 +1,8 @@
 ---
 cloud: Experience Cloud
 solution: Audience Manager
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
 feature-set: Audience Manager
 landing-page-name: audience-manager
 landing-page-breadcrumb-title: Audience Manager
@@ -9,10 +11,10 @@ tutorials-title: Tutorials
 tutorials-url: https://docs.adobe.com/content/help/zh-Hans/audience-manager-learn/tutorials/overview.html
 git-repo: https://github.com/AdobeDocs/audience-manager.zh-Hans
 index: true
-source-git-commit: 28194066af20afb1292c91621a73654fc5c9218f
+source-git-commit: c46ee8bb3185c5199994d2e6ceaccda5d058ed7e
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 2%
+source-wordcount: 125
+ht-degree: 0%
 
 ---
 
@@ -28,5 +30,5 @@ metadata.md文件包含存储库级别的元数据，这些元数据会传送到
 | 解决方案图标 | 在解决方案标题旁边显示解决方案图标。 尚未实施 |
 | getting-started-url | 指向helpx快速入门页面的链接 |
 | tutorials-url | 指向视频教程的链接 — helpx教程或KT教程 |
-| mini-toc-levels | 确定右边栏中显示的标题级别数。 默认为 2 |
+| mini-toc-levels | 确定右边栏中显示的标题级别数。 默认值为2 |
 | git-repo | 指定主存储库的位置以供内部使用 |
