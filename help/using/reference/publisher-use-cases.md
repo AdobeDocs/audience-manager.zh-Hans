@@ -8,14 +8,11 @@ uuid: 5f571d60-d902-4958-b5d3-8d09ddda42c7
 feature: Reference
 exl-id: 974652de-59c0-46db-ac64-ba701985e409
 TQID: https://experienceleague.adobe.com/ptW1-1-tTMPBV7xhvI5hglL3LFfhONE3apr9-WQhMYs
-product_v2:
-  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: 614
+source-wordcount: 644
 ht-degree: 100%
 
 ---
@@ -42,7 +39,7 @@ c_pub_use_case.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>创建一个受众存储库，以概要了解所有用户和数据点。这包括以下信息：网站行为（可能来自 Analytics）、展示次数、离线注册数据库、CRM 数据库、视频观看情况、电子邮件营销活动和促销活动。 </p> </td> 
+   <td colname="col1"> <p>创建一个受众存储库，以概要了解所有用户和数据点。 这包括以下信息：网站行为（可能来自 Analytics）、展示次数、离线注册数据库、CRM 数据库、视频观看情况、电子邮件营销活动和促销活动。 </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_FB6683152C7D4D65AF951BA55E123427"> 
       <li id="li_45C12198EDDE4107AE59947BBAA51A60">发现受众、运行更智能的广告或促销活动，以及管理客户分析信息。 </li> 
@@ -97,7 +94,7 @@ c_pub_use_case.xml
    <td colname="col2"> <p><span class="keyword">Audience Manager</span> 的实时分析功能有助于更好地识别受众，从而通过提供相关的个性化内容来改善网站访问体验。 </p> <p>通过此功能，您能够将内容个性化作为一个项目添加到优质受众产品中。 </p> </td> 
    <td colname="col3"> <p> 
      <ul id="ul_EEED2DAD504C486F8C00992219C893F7"> 
-      <li id="li_E536F7C79824484DA3DC895809B849F4">Analytics 可提供有关受众对旅游内容的兴趣程度的第一方数据。根据此信息可创建一个“旅游爱好者”受众区段。 </li> 
+      <li id="li_E536F7C79824484DA3DC895809B849F4">Analytics 可提供有关受众对旅游内容的兴趣程度的第一方数据。 根据此信息可创建一个“旅游爱好者”受众区段。 </li> 
       <li id="li_DCB3A5F3772C4DCEB757A4AB6CABFBE3">将 <span class="keyword">Audience Manager</span> 与诸如 Adobe CQ 之类的系统集成，以管理内容个性化促销活动。 </li> 
       <li id="li_A9BFB7EB7504492BA83F182BE5E8CEF8">将此旅游区段锁定到航空公司、酒店或服务业广告商，以帮助提高广告收入。 </li> 
      </ul> </p> </td> 
@@ -152,7 +149,7 @@ c_pub_use_case.xml
    <td colname="col2"> <p> 
      <ul id="ul_CC5448D2EA0646D4AF3547E81DE31FDE"> 
       <li id="li_8F11E40026404C1380F26F6D03952C8E">通过与原始受众相映射的行为和配置文件识别新受众。 </li> 
-      <li id="li_5F67AD849EC145DBB1E52A92BBE2CEE3">针对您自己的数据和您有权访问的其他第三方数据进行搜索。这有助于您查找并识别高价值受众配置文件中最具影响力的数据点。 </li> 
+      <li id="li_5F67AD849EC145DBB1E52A92BBE2CEE3">针对您自己的数据和您有权访问的其他第三方数据进行搜索。 这有助于您查找并识别高价值受众配置文件中最具影响力的数据点。 </li> 
      </ul> </p> </td> 
    <td colname="col3"> <p> 
      <ul id="ul_51091241D6B94A849A383538045D797C"> 
