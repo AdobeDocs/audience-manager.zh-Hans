@@ -22,7 +22,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: 1070
+source-wordcount: 1090
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 查看当前配置的[!UICONTROL data sources]的列表，添加新的[!UICONTROL data sources]，并编辑现有的[!UICONTROL data sources]。
 
-您还可以使用[!UICONTROL data sources]方法管理[!DNL API]。 有关详细信息，请参阅[数据Source API方法](../api/rest-api-main/aam-api-data-sources.md)。
+您还可以使用[!DNL API]方法管理[!UICONTROL data sources]。 有关详细信息，请参阅[数据Source API方法](../api/rest-api-main/aam-api-data-sources.md)。
 
 ## [!UICONTROL Data Sources]列表视图 {#list-view}
 
@@ -155,11 +155,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">用作已验证的配置文件</span></b> </p> </td> 
-   <td colname="col2"> <p>您的跨设备数据源包含经过身份验证的ID。 在身份验证事件（例如，用户登录网站、应用程序内等）期间，已收集经过身份验证的ID并将其同步到<span class="keyword">个Audience Manager</span> ID。 经过身份验证的ID可用于来自存储此ID的其他源的板载数据。 它也可用于链接<span class="wintitle">配置文件链接</span>中的多个设备ID。 </p> <p>此选项显示一个文本字段，允许您使用别名重命名数据源。 如果使用别名，则此新名称将覆盖数据源名称，并在您<span class="wintitle">创建配置文件合并规则</span>时显示在<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">已验证的配置文件选项</a>中。 </p> </td> 
+   <td colname="col2"> <p>您的跨设备数据源包含经过身份验证的ID。 在身份验证事件（例如，用户登录网站、应用程序内等）期间，已收集经过身份验证的ID并将其同步到<span class="keyword">个Audience Manager</span> ID。 经过身份验证的ID可用于来自存储此ID的其他源的板载数据。 它也可用于链接<span class="wintitle">配置文件链接</span>中的多个设备ID。 </p> <p>此选项显示一个文本字段，允许您使用别名重命名数据源。 如果使用别名，则此新名称将覆盖数据源名称，并在您<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">创建配置文件合并规则</a>时显示在<span class="wintitle">已验证的配置文件选项</span>中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">用作设备图</span></b> </p> </td> 
-   <td colname="col2"> <p>创建数据源作为设备图，您可以将其提供给其他<span class="keyword">个Audience Manager</span>客户。 在选择此选项之前，请告知您的<span class="keyword"> Audience Manager</span>顾问该<span class="wintitle">数据Source</span>应该与哪些客户共享。 您的顾问必须通过我们的内部流程为这些公司提供资源。 </p> <p>此选项显示一个文本字段，允许您使用别名重命名数据源。 如果使用别名，则此新名称将覆盖数据源名称，并在您<span class="wintitle">创建配置文件合并规则</span>时显示在<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">设备选项</a>中。 </p> </td> 
+   <td colname="col2"> <p>创建数据源作为设备图，您可以将其提供给其他<span class="keyword">个Audience Manager</span>客户。 在选择此选项之前，请告知您的<span class="keyword"> Audience Manager</span>顾问该<span class="wintitle">数据Source</span>应该与哪些客户共享。 您的顾问必须通过我们的内部流程为这些公司提供资源。 </p> <p>此选项显示一个文本字段，允许您使用别名重命名数据源。 如果使用别名，则此新名称将覆盖数据源名称，并在您<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">创建配置文件合并规则</a>时显示在<span class="wintitle">设备选项</span>中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">与特定Audience Manager客户共享关联的访客或设备ID</span></b> </p> </td> 
@@ -167,7 +167,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">在Audience Manager平台中共享关联的访客或设备ID</span></b> </p> </td> 
-   <td colname="col2"> <p>您的数据源包含可在其他<span class="keyword">个Experience Cloud</span>解决方案之间共享的访客或设备ID。 </p> </td> 
+   <td colname="col2"> <p>您的数据源包含可在其他<span class="keyword"> Experience Cloud</span>解决方案之间共享的访客或设备ID。 </p> </td> 
   </tr>
   <tr> 
    <td colname="col1"> <p> 非活动客户ID的<b><span class="uicontrol">数据保留</span></b> </p> </td> 
