@@ -10,17 +10,18 @@ exl-id: 34eb6194-c57b-4836-a6df-6889a2cec703
 TQID: https://experienceleague.adobe.com/Zu-vprPHjdrKnCmni186mwvNUjwvgFw26nHERL7gBHE
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: c7475dcbcdca8baf647260ea4083c2c3122a8302
 workflow-type: tm+mt
-source-wordcount: 1065
+source-wordcount: '1067'
 ht-degree: 1%
-
 ---
-
 # 专用数据信息源 {#private-data-feeds}
 
 私有数据馈送是一个选项，它允许提供商限制购买者对其数据的访问。 数据提供商和购买者应在创建和订阅私有数据馈送之前查看此信息。
@@ -86,7 +87,7 @@ ht-degree: 1%
 
 ## 面向购买者的专用数据馈送 {#private-data-feeds-for-buyers}
 
-作为购买者，私有数据馈送会像任何其他选件一样出现在[Marketplace](../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)中。 但是，在这种情况下，信息源列表不会显示特征、独特用户和用户重叠的摘要信息。 此外，数据销售商可以选择在[!UICONTROL Provider]列表的[!UICONTROL Marketplace]列中显示或隐藏其名称。 在销售商批准您的订阅请求后，您即可使用私有馈送中的所有数据（其工作方式与公共馈送类似）。 下面的[!UICONTROL Marketplace]示例列出了可作为购买者使用的3种不同的信息源类型。
+作为购买者，私有数据馈送会像任何其他选件一样出现在[Marketplace](../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)中。 但是，在这种情况下，信息源列表不会显示特征、独特用户和用户重叠的摘要信息。 此外，数据销售商可以选择在[!UICONTROL Marketplace]列表的[!UICONTROL Provider]列中显示或隐藏其名称。 在销售商批准您的订阅请求后，您即可使用私有馈送中的所有数据（其工作方式与公共馈送类似）。 下面的[!UICONTROL Marketplace]示例列出了可作为购买者使用的3种不同的信息源类型。
 
 ![](assets/buyer_marketplace.png)
 
