@@ -8,22 +8,30 @@ title: 客户数据信息源
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 feature: Customer Data Feeds
 exl-id: 118c4225-3b57-4a02-ae05-2fcbf3e5d743
-TQID: https://experienceleague.adobe.com/9Nw-TM2ND4qO0BVssmGKTAoRAF-K4aNRZSL8Fnlcrgk
+TQID: 'https://experienceleague.adobe.com/9Nw-TM2ND4qO0BVssmGKTAoRAF-K4aNRZSL8Fnlcrgk'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: bee1a349-dc16-4b46-91d7-185f2df2b947
+    internal-label: Customer Data Feeds
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data collection
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1988
+source-wordcount: '2023'
 ht-degree: 2%
-
 ---
-
 # [!UICONTROL Customer Data Feeds] {#customer-data-feeds}
 
 有关[!UICONTROL Customer Data Feed] ([!UICONTROL CDF])文件的基本信息以及如何开始的说明。 如果您对接收[!UICONTROL CDF]文件感兴趣，或者只是想了解更多信息，请从此处开始。
@@ -85,7 +93,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p><code> Device</code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
-   <td colname="col3"> <p>这是<span class="wintitle">独特用户ID</span> (UUID)，它是网站访客的38位设备ID。 另请参阅Audience Manager<a href="../reference/ids-in-aam.md">中的</a> ID索引。 </p> </td> 
+   <td colname="col3"> <p>这是<span class="wintitle">独特用户ID</span> (UUID)，它是网站访客的38位设备ID。 另请参阅Audience Manager</a>中的<a href="../reference/ids-in-aam.md"> ID索引。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Container ID</code> </p> </td> 
@@ -105,7 +113,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p><code> Request Parameters</code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
-   <td colname="col3"> <p>一个字符串，可捕获在事件调用中传入的所有参数（变量、ID、键值对、设备广告ID等）。 </p> <p>简短示例： </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810,c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD59965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
+   <td colname="col3"> <p>捕获所有参数（变量、ID、键值对、设备广告ID等）的字符串 已在事件调用中传入。 </p> <p>简短示例： </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810,c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD59965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Referer Data Type</code> </p> </td> 
@@ -120,7 +128,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>字符串 </p> </td> 
-   <td colname="col3"> <p>分配给网站访客的<span class="keyword"> Experience Cloud</span> ID (MID)。 另请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hans" format="https" scope="external"> Cookie和Adobe Experience Platform Identity Service</a>。 </p> </td> 
+   <td colname="col3"> <p>分配给网站访客的<span class="keyword"> Experience Cloud</span> ID (MID)。 另请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity Service</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -162,7 +170,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p>字段序列 </p> </td> 
-   <td colname="col2"> <p> <p>重要信息： <span class="keyword"> Audience Manager</span>保留在未来版本中向CDF文件末尾添加新字段的权利。 这意味着文件解析系统的技术设计不应假定列数是固定的（尽管它可能假定现有列顺序是固定的）。</p> </p> <p>CDF文件中的数据按以下顺序显示。/N可以代替这些字段中的任何一个，指示空值。</p> <p> 
+   <td colname="col2"> <p> <p>重要信息： <span class="keyword"> Audience Manager</span>保留在未来版本中向CDF文件末尾添加新字段的权利。 这意味着文件解析系统的技术设计不应假定列数是固定的（尽管它可能假定现有列顺序是固定的）。</p> </p> <p>CDF文件中的数据按以下顺序显示。 /N可以代替这些字段中的任何一个，指示空值。</p> <p> 
      <ol id="ol_1FDF4A7F089448ED8A724378C23009C8"> 
       <li id="li_CB97D90B54EB4F95861583D4A5F660C7">事件时间 </li> 
       <li id="li_C44E8CCB1A964B7A941FD772FB8A7608">设备 </li> 
@@ -172,7 +180,7 @@ ht-degree: 2%
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">请求参数 </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referer </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP 地址 </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud设备ID（或MID）。 另请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hans" format="https" scope="external"> Cookie和Adobe Experience Platform Identity服务</a> </li> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud设备ID（或MID）。 另请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity服务</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">所有区段 </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">所有特征 </li> 
      </ol> </p> <p>有关字段说明，请参阅<a href="#cdf-defined">定义的客户数据馈送内容</a>。 </p> </td> 
@@ -263,7 +271,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_0_0_0.gz
 
 ## [!UICONTROL Customer Data Feed]文件处理通知 {#cdf-file-processing-notifications}
 
-[!DNL Audience Manager]将`.info`文件写入您的[!DNL S3]目录，以告知您的[!UICONTROL Customer Data File] ([!UICONTROL CDF])何时可以下载。 `.info`文件还包含有关[!DNL JSON]文件内容的[!UICONTROL CDF]格式化的元数据。 查看此部分以了解有关此通知文件使用的语法和字段的信息。
+[!DNL Audience Manager]将`.info`文件写入您的[!DNL S3]目录，以告知您的[!UICONTROL Customer Data File] ([!UICONTROL CDF])何时可以下载。 `.info`文件还包含有关[!UICONTROL CDF]文件内容的[!DNL JSON]格式化的元数据。 查看此部分以了解有关此通知文件使用的语法和字段的信息。
 
 ## 示例信息文件 {#sample-info-file}
 

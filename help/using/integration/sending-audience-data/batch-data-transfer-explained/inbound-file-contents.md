@@ -5,21 +5,28 @@ title: 入站数据文件内容 — 语法、无效字符、变量和示例
 uuid: 88699b29-1502-4183-a9a4-be70692a02bb
 feature: Inbound Data Transfers
 exl-id: 894f1923-6c78-41d2-b6a2-eebf56eaa29e
-TQID: https://experienceleague.adobe.com/VmG1uYu83JVavbWhBTIwbcN6xXW-cCy2IqBlZe8NtVA
+TQID: 'https://experienceleague.adobe.com/VmG1uYu83JVavbWhBTIwbcN6xXW-cCy2IqBlZe8NtVA'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: a03b8192-8410-479f-a326-4cddf10757f6
+    internal-label: Inbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1210
+source-wordcount: '1228'
 ht-degree: 3%
-
 ---
-
 # 入站数据文件内容：语法、无效字符、变量和示例 {#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
 
 格式化集客特征数据文件时应遵循的必填字段、语法和规则。
@@ -64,7 +71,7 @@ ht-degree: 3%
    <td colname="col2"> <p>用户ID可以是： </p> <p> 
      <ul id="ul_25168355353545A9A049D0083403025E"> 
       <li id="li_23829FE2F6464E33859B3E388FCD106B"><span class="keyword"> Audience Manager </span>分配的独特用户ID ( <a href="../../../reference/ids-in-aam.md"> Audience Manager UUID </a>)。 </li> 
-      <li id="li_76961F20DD3F4554AD2ADFB773F975DB">CRM系统中分配的唯一用户ID （ Audience Manager <a href="../../../reference/ids-in-aam.md">中的</a> DPUUID）。 </li> 
+      <li id="li_76961F20DD3F4554AD2ADFB773F975DB">CRM系统中分配的唯一用户ID （ Audience Manager </a>中的<a href="../../../reference/ids-in-aam.md"> DPUUID）。 </li> 
       <li id="li_52ABF6CCBCD147E2BD84D056F7461BA0">移动Android或iOS设备ID，采用其由移动操作系统公开的原始未修改形式。 </li> 
      </ul> </p> <p>对于移动ID： </p> <p> 
      <ul id="ul_717A17E11565427E9E2D9D7554BB231B"> 
@@ -101,7 +108,7 @@ ht-degree: 3%
   </tr>
   <tr> 
    <td colname="col1"> <p> <code> d_unsid= </code> </p> </td> 
-   <td colname="col2"> <p>前缀为<code> d_unsid </code>的数据会从该特征中删除用户。 <code> d_unsid </code>文件中忽略了<code> overwrite </code>前缀。 </p> <p><code> d_unsid= </code>前缀会告知系统ID是<span class="keyword"> Audience Manager </span>特征ID。 此ID与用户界面中显示的相同。 您还可以使用API <code> GET </code>方法返回特征ID。 请参阅<a href="../../../api/rest-api-main/api-traits.md">特征API方法</a>。 </p> </td>
+   <td colname="col2"> <p>前缀为<code> d_unsid </code>的数据会从该特征中删除用户。 <code> overwrite </code>文件中忽略了<code> d_unsid </code>前缀。 </p> <p><code> d_unsid= </code>前缀会告知系统ID是<span class="keyword"> Audience Manager </span>特征ID。 此ID与用户界面中显示的相同。 您还可以使用API <code> GET </code>方法返回特征ID。 请参阅<a href="../../../api/rest-api-main/api-traits.md">特征API方法</a>。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ic= </code> </p> </td> 
@@ -209,30 +216,30 @@ ht-degree: 3%
    <td colname="col1"> <p>带<code> d_sid </code>或<code> d_unsid </code> </p> </td> 
    <td colname="col2"> <p>此数据文件显示一个符合特征24、26、27条件的用户，该用户已从特征28和29中删除。 </p> <p> 
      <code>
-       59767559181262060060278870901087098252&nbsp;&nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 
+       59767559181262060060278870901087098252&amp;nbsp;&amp;nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 
      </code> </p> <p>注意：  <p>您还可以使用以下语法从用户配置文件中删除特征，而不是使用d_unsid： </p> <p> 
       <code>
-        59767559181262060060278870901087098252&nbsp;28:0,&nbsp;29:0 
+        59767559181262060060278870901087098252&amp;nbsp;28:0,&amp;nbsp;29:0 
       </code> </p> <p> 
       <code>
-        59767559181262060060278870901087098252&nbsp;28:-1,&nbsp;29:-1 
+        59767559181262060060278870901087098252&amp;nbsp;28:-1,&amp;nbsp;29:-1 
       </code> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>与<code> ic== </code> </p> </td> 
    <td colname="col2"> <p>这些特征已添加到前缀为<code> ic </code>的特征规则中。 因此，您可以将其添加到数据文件中，数据文件需用逗号分隔，如下所示。 UUID和特征ID使用制表符分隔。 文件中不需要<code> ic </code>前缀。 </p> <p><b>数值ID</b> </p> <p> 
      <code>
-       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&nbsp;&nbsp;30608,50354,50338,50352,30626 
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;30608,50354,50338,50352,30626 
      </code> </p> <p><b>字符串ID</b> </p> <p> 
      <code>
-       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&nbsp;&nbsp;ic=52,ic=55 
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;ic=52,ic=55 
      </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>使用键值对 </p> </td> 
    <td colname="col2"> 此文件数据使用键值对将数据传递到<span class="keyword"> Audience Manager </span>。 <p> 
      <code>
-       59767559181262060060278870901087098252&nbsp;“gender”=”female”,“luxury_shopper”=”yes” 
+       59767559181262060060278870901087098252&amp;nbsp;“gender”=”female”,“luxury_shopper”=”yes” 
      </code> </p> </td> 
   </tr> 
  </tbody> 
@@ -288,7 +295,7 @@ ht-degree: 3%
 
 ### 示例 1 {#example-1}
 
-使用[!UICONTROL trait IDs]发送[!UICONTROL trait] [!DNL Audience Manager]的[!DNL UUIDs]资格信息。
+使用[!UICONTROL trait IDs]发送[!DNL Audience Manager] [!DNL UUIDs]的[!UICONTROL trait]资格信息。
 
 ```
 59767559181262060060278870901087098252 <TAB> d_sid=24, d_sid=26, d_sid=27
@@ -296,7 +303,7 @@ ht-degree: 3%
 
 ### 示例 2 {#example-2}
 
-使用[!UICONTROL trait IDs]发送[!UICONTROL trait] [!DNL Audience Manager]的[!DNL UUIDs]取消资格信息。
+使用[!UICONTROL trait IDs]发送[!DNL Audience Manager] [!DNL UUIDs]的[!UICONTROL trait]取消资格信息。
 
 ```
 59767559181262060060278870901087098252 <TAB> d_unsid=24, d_unsid=26, d_unsid=27
@@ -316,7 +323,7 @@ ht-degree: 3%
 
 ### 示例 3 {#example-3}
 
-发送键值对以添加[!UICONTROL trait] [!DNL Audience Manager]的[!DNL UUIDs]资格信息。
+发送键值对以添加[!DNL Audience Manager] [!DNL UUIDs]的[!UICONTROL trait]资格信息。
 
 ```
 59767559181262060060278870901087098252 <TAB> product = tablet, product = phone
@@ -330,7 +337,7 @@ ht-degree: 3%
 
 ### 示例4 {#example-4}
 
-使用`ic`前缀发送[!UICONTROL trait] [!DNL Audience Manager]的[!DNL UUIDs]资格信息。
+使用`ic`前缀发送[!DNL Audience Manager] [!DNL UUIDs]的[!UICONTROL trait]资格信息。
 
 ```
 59767559181262060060278870901087098252 <TAB> 30608,50354,50338,50352,30626
@@ -344,7 +351,7 @@ ht-degree: 3%
 
 ### 示例5 {#example-5}
 
-使用[!UICONTROL trait IDs]发送[!UICONTROL trait]设备的[!DNL Android]资格信息。
+使用[!UICONTROL trait IDs]发送[!DNL Android]设备的[!UICONTROL trait]资格信息。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -352,7 +359,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### 示例6 {#example-6}
 
-使用[!UICONTROL trait IDs]发送[!UICONTROL trait]设备的[!DNL Android]取消资格信息。
+使用[!UICONTROL trait IDs]发送[!DNL Android]设备的[!UICONTROL trait]取消资格信息。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -372,7 +379,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 24:-1, 26:-1, 27:-1
 
 ### 示例7 {#example-7}
 
-发送键值对以添加[!UICONTROL trait]设备的[!DNL Android]资格信息。
+发送键值对以添加[!DNL Android]设备的[!UICONTROL trait]资格信息。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> product = tablet, product = phone
@@ -386,7 +393,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> "product" = "tablet", "product" = "ph
 
 ### 示例8 {#example-8}
 
-使用`ic`前缀发送[!UICONTROL trait]设备的[!DNL Android]资格信息。
+使用`ic`前缀发送[!DNL Android]设备的[!UICONTROL trait]资格信息。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 30608,50354,50338,50352,30626
@@ -400,7 +407,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### 示例9 {#example-9}
 
-使用[!UICONTROL trait IDs]发送[!UICONTROL trait]设备的[!DNL iOS]资格信息。
+使用[!UICONTROL trait IDs]发送[!DNL iOS]设备的[!UICONTROL trait]资格信息。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -408,7 +415,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### 示例10 {#example-10}
 
-使用[!UICONTROL trait IDs]发送[!UICONTROL trait]设备的[!DNL iOS]取消资格信息。
+使用[!UICONTROL trait IDs]发送[!DNL iOS]设备的[!UICONTROL trait]取消资格信息。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -428,7 +435,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### 示例11 {#example-11}
 
-发送键值对以添加[!UICONTROL trait]设备的[!DNL iOS]资格信息。
+发送键值对以添加[!DNL iOS]设备的[!UICONTROL trait]资格信息。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> product = tablet, product = phone
@@ -442,7 +449,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### 示例12 {#example-12}
 
-使用`ic`前缀发送[!UICONTROL trait]设备的[!DNL iOS]资格信息。
+使用`ic`前缀发送[!DNL iOS]设备的[!UICONTROL trait]资格信息。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> 30608,50354,50338,50352,30626
@@ -456,7 +463,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### 示例13 {#example-13}
 
-使用[!UICONTROL trait IDs]发送[!UICONTROL trait]的[!DNL DPUUIDs]资格信息。
+使用[!UICONTROL trait IDs]发送[!DNL DPUUIDs]的[!UICONTROL trait]资格信息。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -464,7 +471,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### 示例14 {#example-14}
 
-使用[!UICONTROL trait IDs]发送[!UICONTROL trait]的[!DNL DPUUIDs]取消资格信息。
+使用[!UICONTROL trait IDs]发送[!DNL DPUUIDs]的[!UICONTROL trait]取消资格信息。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -484,7 +491,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 24:-1, 26:-1, 27:-1
 
 ### 示例15 {#example-15}
 
-发送键值对以添加[!UICONTROL trait]的[!DNL DPUUIDs]资格信息。
+发送键值对以添加[!DNL DPUUIDs]的[!UICONTROL trait]资格信息。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> product = tablet, product = phone
@@ -498,7 +505,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> "product" = "tablet", "product" = 
 
 ### 示例16 {#example-16}
 
-使用`ic`前缀发送[!UICONTROL trait]的[!DNL DPUUIDs]资格信息。
+使用`ic`前缀发送[!DNL DPUUIDs]的[!UICONTROL trait]资格信息。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 30608,50354,50338,50352,30626

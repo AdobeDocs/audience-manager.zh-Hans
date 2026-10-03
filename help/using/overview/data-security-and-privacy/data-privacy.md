@@ -7,22 +7,30 @@ title: 数据隐私概述
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
 feature: Data Governance & Privacy
 exl-id: 051de369-e762-49fb-b65f-6faf94db48a4
-TQID: https://experienceleague.adobe.com/2ePsnB1spOaodcifn67as3T7v28RnrOthzjhJJQKIGo
+TQID: 'https://experienceleague.adobe.com/2ePsnB1spOaodcifn67as3T7v28RnrOthzjhJJQKIGo'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: a1d8adf7-4300-4ca2-870f-1612c6774544
+    internal-label: Data governance and privacy
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 437
-ht-degree: 52%
-
+source-wordcount: '477'
+ht-degree: 51%
 ---
-
 # 数据隐私概述 {#data-privacy}
 
 ## 概述
@@ -38,7 +46,7 @@ ht-degree: 52%
 
 ## [!DNL GDPR] {#gdpr}
 
-[《通用数据保护条例》(GDPR)](https://gdpr.eu/data-privacy/) 为欧盟成员国引入了几项新的数据隐私权，其中包括&#x200B;**访问权**&#x200B;和&#x200B;**被遗忘权**。这意味着您的企业已收集其个人数据的任何[!DNL EU]公民都可以随时请求访问或删除其数据。 如果不能遵守这些要求，贵组织将面临数百万美元的罚款。
+[《通用数据保护条例》(GDPR)](https://gdpr.eu/data-privacy/) 为欧盟成员国引入了几项新的数据隐私权，其中包括&#x200B;**访问权**&#x200B;和&#x200B;**被遗忘权**。 这意味着您的企业已收集其个人数据的任何[!DNL EU]公民都可以随时请求访问或删除其数据。 如果不能遵守这些要求，贵组织将面临数百万美元的罚款。
 
 为了符合[!DNL GDPR]，[!DNL Audience Manager]支持数据访问和删除[请求](data-privacy-requests.md)。
 
@@ -52,11 +60,11 @@ ht-degree: 52%
 
 ## 法规合规性 {#compliance}
 
-[!DNL Audience Manager]通过诸如[Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)之类的用于数据访问和删除请求的隐私工具，帮助您履行某些隐私法规规定的义务。
+[!DNL Audience Manager]通过诸如[Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)之类的用于数据访问和删除请求的隐私工具，帮助您履行某些隐私法规规定的义务。
 
-此服务提供了一个 [!DNL RESTful API] 和用户界面，可帮助您管理消费者数据请求。使用 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)，您可以根据个人消费者的请求提交访问和删除个人数据的请求，从而帮助自动履行这部分合规义务。
+此服务提供了一个 [!DNL RESTful API] 和用户界面，可帮助您管理消费者数据请求。 使用 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)，您可以根据个人消费者的请求提交访问和删除个人数据的请求，从而帮助自动履行这部分合规义务。
 
-数据访问和删除请求通过Privacy Service进行处理时，当前通过[DCS API](data-privacy-requests.md#opt-out-requests)支持[选择退出请求](../../api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)。 有关详细信息，请参阅[数据隐私请求](data-privacy-requests.md)。
+数据访问和删除请求通过Privacy Service进行处理时，当前通过[DCS API](../../api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)支持[选择退出请求](data-privacy-requests.md#opt-out-requests)。 有关详细信息，请参阅[数据隐私请求](data-privacy-requests.md)。
 
 ## 相关概念 {#related-concepts}
 

@@ -6,20 +6,26 @@ solution: Audience Manager
 title: 将数据导出控件添加到目标
 feature: Data Export Controls
 exl-id: 12cfd2cc-b343-4dd1-a188-acbfc5cd25a2
-TQID: https://experienceleague.adobe.com/DuvtSxCkPmsqfoRH2MMjqFChFBr7U-x4mKl4sbyAEJQ
+TQID: 'https://experienceleague.adobe.com/DuvtSxCkPmsqfoRH2MMjqFChFBr7U-x4mKl4sbyAEJQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
+subfeature_v2:
+  - id: cefdb449-7764-4855-a54f-3901d8be873d
+    internal-label: Data Export Controls
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Personalization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 221
+source-wordcount: '221'
 ht-degree: 2%
-
 ---
-
 # 将数据导出标签添加到目标 {#add-data-export-labels}
 
 [!DNL Data Export Labels]使用您在数据源中设置的[!DNL Export Controls]。 [!DNL Data Export Labels]阻止您将受限制的特征添加到区段，阻止您将区段数据发送到目标。 您可以将多个导出标签设置为新的或现有的[!DNL cookie]或[!DNL URL]目标。
@@ -46,7 +52,7 @@ ht-degree: 2%
 
    >[!IMPORTANT]
    >
-   >除非您在数据源上设置与导出控制[匹配的](../../features/data-export-controls.md)，否则导出限制将不起作用。
+   >除非您在数据源上设置与导出控制](../../features/data-export-controls.md)匹配的[，否则导出限制将不起作用。
 
 1. 单击 **[!UICONTROL Save]**。
 

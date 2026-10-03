@@ -1,5 +1,5 @@
 ---
-description: 载入状态报表检查入站数据源文件中记录处理的成功和失败率。 此报表以交互式条形图显示数据，并以表格形式提供概要量度。 此外，它包含一个选项，该选项在固定时间间隔内对文件进行采样，并显示每种错误类型最常见的错误。 您可以在Analytics >载入状态报表中找到此报表。 在创建集客数据源时，此报表也可用。
+description: 载入状态报表检查入站数据源文件中记录处理的成功和失败率。 此报表以交互式条形图显示数据，并以表格形式提供概要量度。 它还包括一个选项，允许采集固定时间间隔的文件样本，并显示每种错误类型的最常见错误。 您可以在Analytics >载入状态报表中找到此报表。 在创建集客数据源时，此报表也可用。
 seo-description: The Onboarding Status Report checks success and failure rates for processing records in your inbound data source files. This report displays data in an interactive bar chart and provides summary metrics in tabular form. And, it includes an option that samples files for a fixed time interval and displays the most common errors for each error type. You can find this report in Analytics > Onboarding Status Report. This report is also available when you create an inbound data source.
 seo-title: Onboarding Status Report
 solution: Audience Manager
@@ -7,28 +7,35 @@ title: 载入状态报表
 uuid: 6ca8a90a-436b-4fce-adf1-48f3b96b3ed2
 feature: Inbound and Outbound Reports
 exl-id: 4517276f-5025-4779-917f-4a0bb22ca56c
-TQID: https://experienceleague.adobe.com/rr4au-Xp8a3cj5tUTsRYkS8TFlHOV2IbkfZU4enk2e0
+TQID: 'https://experienceleague.adobe.com/rr4au-Xp8a3cj5tUTsRYkS8TFlHOV2IbkfZU4enk2e0'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
+  - id: bacaf04d-fec1-4cf9-a97e-cb1b36e40b07
+    internal-label: Inbound and outbound reports
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Troubleshooting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1421
-ht-degree: 0%
-
+source-wordcount: '1429'
+ht-degree: 5%
 ---
-
 # 载入状态报表{#onboarding-status-report-about}
 
-载入状态报表检查入站数据源文件中记录处理的成功和失败率。 此报表以交互式条形图显示数据，并以表格形式提供概要量度。 此外，它包含一个选项，该选项在固定时间间隔内对文件进行采样，并显示每种错误类型最常见的错误。 您可以在Analytics >载入状态报表中找到此报表。 在创建集客数据源时，此报表也可用。
+载入状态报表检查入站数据源文件中记录处理的成功和失败率。 此报表以交互式条形图显示数据，并以表格形式提供概要量度。 它还包括一个选项，允许采集固定时间间隔的文件样本，并显示每种错误类型的最常见错误。 您可以在Analytics >载入状态报表中找到此报表。 在创建集客数据源时，此报表也可用。
 
 >[!NOTE]
 >
@@ -36,7 +43,7 @@ ht-degree: 0%
 
 ## 载入状态报表：关于 {#onboarding-status-about}
 
-[!UICONTROL Onboarding Status Report]检查入站数据源文件中记录处理的成功和失败率。 此报表以交互式条形图显示数据，并以表格形式提供概要量度。 此外，它包含一个选项，该选项在固定时间间隔内对文件进行采样，并显示每种错误类型最常见的错误。 您可以在&#x200B;**[!UICONTROL Analytics > Onboarding Status Report]**&#x200B;中找到此报告。 在创建集客数据源时，此报表也可用。
+[!UICONTROL Onboarding Status Report]检查入站数据源文件中记录处理的成功和失败率。 此报表以交互式条形图显示数据，并以表格形式提供概要量度。 它还包括一个选项，允许采集固定时间间隔的文件样本，并显示每种错误类型的最常见错误。 您可以在&#x200B;**[!UICONTROL Analytics > Onboarding Status Report]**&#x200B;中找到此报告。 在创建集客数据源时，此报表也可用。
 
 ## 错误报告和错误采样 {#error-reporting-sampling}
 
@@ -56,7 +63,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>采样错误</b> </p> </td>
-   <td colname="col2"> <p>错误取样分析数据文件的内容并返回每种错误类型的10个最常见错误。 入站数据文件中的错误会阻止处理单个记录。 使用此报表作为疑难解答工具，以帮助减少文件错误数并提高处理率。 </p> <p>您必须手动激活错误采样。 它从激活之日起运行14天，然后自行关闭。 您可以在14天间隔过期后重新启用错误采样。 在<a href="../features/manage-datasources.md#create-data-source">创建入站数据源</a>时，或者通过选中现有入站数据源的<b><span class="uicontrol">数据Source设置</span></b>部分中的<span class="wintitle">错误采样</span>复选框来激活错误采样。 </p> <p>错误取样是一个计算要求很高的过程。 因此，对于每个错误类别，它只返回前10个错误。 它并非设计用于返回入站数据源中包含的每个错误。 这些错误是潜在大量类似错误的典型示例。 查看整个文件以查找此报表标记的错误类型，重新格式化文件，然后再次发送该文件。 </p> <p>有关如何为入站数据源正确设置数据文件格式的详细信息，请参阅<a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md">入站数据文件内容：语法、变量和示例</a>。 </p> </td> 
+   <td colname="col2"> <p>错误取样分析数据文件的内容并返回每种错误类型的10个最常见错误。 入站数据文件中的错误会阻止处理单个记录。 使用此报表作为疑难解答工具，以帮助减少文件错误数并提高处理率。 </p> <p>您必须手动激活错误采样。 它从激活之日起运行14天，然后自行关闭。 您可以在14天间隔过期后重新启用错误采样。 在<a href="../features/manage-datasources.md#create-data-source">创建入站数据源</a>时，或者通过选中现有入站数据源的<span class="wintitle">数据Source设置</span>部分中的<b><span class="uicontrol">错误采样</span></b>复选框来激活错误采样。 </p> <p>错误取样是一个计算要求很高的过程。 因此，对于每个错误类别，它只返回前10个错误。 它并非设计用于返回入站数据源中包含的每个错误。 这些错误是潜在大量类似错误的典型示例。 查看整个文件以查找此报表标记的错误类型，重新格式化文件，然后再次发送该文件。 </p> <p>有关如何为入站数据源正确设置数据文件格式的详细信息，请参阅<a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md">入站数据文件内容：语法、变量和示例</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

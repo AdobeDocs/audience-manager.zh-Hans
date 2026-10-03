@@ -7,16 +7,21 @@ title: 带布尔和比较运算符的示例表达式
 uuid: ee74c376-2099-4816-8694-43f58845a0ac
 feature: Traits
 exl-id: 68041d61-7942-4c2f-9e78-f2b2f803ef59
-TQID: https://experienceleague.adobe.com/mVpbP-ob3VclgLEBQWtI4zxthppaf5j7L8DPKBjF9Wo
+TQID: 'https://experienceleague.adobe.com/mVpbP-ob3VclgLEBQWtI4zxthppaf5j7L8DPKBjF9Wo'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 193
+source-wordcount: '194'
 ht-degree: 3%
-
 ---
-
 # 带布尔和比较运算符的示例表达式 {#sample-expressions-with-boolean-and-comparison-operators}
 
 有关在[!UICONTROL Expression Builder]代码编辑器中创建表达式的示例，您可以参阅。
@@ -25,7 +30,7 @@ ht-degree: 3%
 
 <!-- r_tb_expression_samples.xml -->
 
-使用[!UICONTROL Expression Builder]代码编辑器创建您自己的特征规则。 以下示例可帮助您入门。 某些示例在变量&#x200B;*`key`*&#x200B;前加上`c_`，以将其标识为用户定义的变量。 如果您的事件调用使用该语法将数据发送到`c_`，请包含&#x200B;*`key`*&#x200B;变量的[!DNL Audience Manager]前缀（或任何其他命名约定）。
+使用[!UICONTROL Expression Builder]代码编辑器创建您自己的特征规则。 以下示例可帮助您入门。 某些示例在变量&#x200B;*`key`*&#x200B;前加上`c_`，以将其标识为用户定义的变量。 如果您的事件调用使用该语法将数据发送到[!DNL Audience Manager]，请包含&#x200B;*`key`*&#x200B;变量的`c_`前缀（或任何其他命名约定）。
 
 ## 布尔表达式 {#boolean-expressions}
 

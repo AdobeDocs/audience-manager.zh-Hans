@@ -7,21 +7,28 @@ title: 出站数据文件名语法和示例
 uuid: effdcaf6-c37c-45f3-9d2f-a938a9da47a6
 feature: Outbound Data Transfers
 exl-id: 0944da72-5a8d-45a2-951e-b2988eb3d490
-TQID: https://experienceleague.adobe.com/y-Bvt8mQ-W9lCQdcRPpKrri-aQAWcr3-ZE7hy9aAdRM
+TQID: 'https://experienceleague.adobe.com/y-Bvt8mQ-W9lCQdcRPpKrri-aQAWcr3-ZE7hy9aAdRM'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: bcf89bb2-9d92-4897-90ec-483950be810f
+    internal-label: Outbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 678
+source-wordcount: '692'
 ht-degree: 5%
-
 ---
-
 # 出站数据文件名：语法和示例{#outbound-data-file-name-syntax-and-examples}
 
 介绍用于命名出站数据文件的必填字段、语法和约定。
@@ -30,7 +37,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->本文档中的样式元素（`monospaced text`、*斜体*、括号`[ ]` `( )`等）指示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
+>样式元素（`monospaced text`、*斜体*、括号`[ ]` `( )`等） 本文档中说明了代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
 
 ## 语法和文件名元素 {#syntax-file-name}
 
@@ -69,9 +76,9 @@ ht-degree: 5%
    <td colname="col2"> <p>数据提供程序或数据源ID。 此ID标识文件内容中存在的用户ID类型。 最常见的用户ID键为： </p> <p> 
      <ul id="ul_CC22D019ECED4B17A7695708001F2C1B"> 
       <li id="li_94DAFA169380405981AFEF1B581997E6">20914 - <span class="keyword"> Google广告商ID </span> （原始，未哈希） </li> 
-      <li id="li_DE74BE06331C49CF87606A192D815B96">20915 — 广告商<span class="keyword">的</span> Apple ID （原始，未哈希） </li> 
+      <li id="li_DE74BE06331C49CF87606A192D815B96">20915 — 广告商</span>的<span class="keyword"> Apple ID （原始，未哈希） </li> 
       <li id="li_E0A033FEC3174EF08E93EB7C65266337">供应商ID — 第三方用户ID (Web/Cookie) </li> 
-     </ul> </p> <p>有关更多详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/global-data-sources.html?lang=zh-Hans">全局数据源</a>。</p></td> 
+     </ul> </p> <p>有关更多详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/global-data-sources.html">全局数据源</a>。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>PID_ALIAS </i></code> </p> </td> 
@@ -106,7 +113,7 @@ ht-degree: 5%
 
 文件已发送到[!DNL Amazon S3]位置，文件内容中包含&#x200B;*`PID_ALIAS="XYZCustomer"`*&#x200B;和[!DNL Google Advertiser IDs]。
 
-例如，增量文件：
+E.g. 增量文件：
 
 <ul class="simplelist"> 
  <li> <code> S3_1234_20914_XYZCustomer_iter_1486140844000.sync.gz </code> </li> 
@@ -114,7 +121,7 @@ ht-degree: 5%
  <li> <code> S3_1234_20914_XYZCustomer_iter_1486140844000002.sync.gz </code> </li> 
 </ul>
 
-例如，完整文件：
+E.g. 完整文件：
 
 <ul class="simplelist"> 
  <li> <code> S3_1234_20914_XYZCustomer_full_1486140844000.sync.gz </code> </li> 
@@ -125,23 +132,23 @@ ht-degree: 5%
 
 文件已发送到[!DNL FTP]位置，文件内容中不包含&#x200B;*`PID_ALIAS`*&#x200B;和[!DNL Apple Advertiser IDs]：
 
-例如，增量文件：
+E.g. 增量文件：
 
 <ul class="simplelist"> 
  <li> <code> ftp_1234_20915_iter_1486140843000.sync.gz </code> </li> 
  <li> <code> ftp_1234_20915_iter_1486140843000001.sync.gz </code> </li> 
 </ul>
 
-例如，完整文件：
+E.g. 完整文件：
 
 <ul class="simplelist"> 
  <li> <code> ftp_1234_20915_full_1486140843000.sync.gz </code> </li> 
  <li> <code> ftp_1234_20915_full_1486140843000001.sync.gz </code> </li> 
 </ul>
 
-**方案3**：文件已发送到[!DNL FTP]位置，在文件内容(*`PID_ALIAS="XYZCustomer"`*)中具有&#x200B;*`Vendor ID=45454`*&#x200B;和第三方用户ID：
+**方案3**：文件已发送到[!DNL FTP]位置，在文件内容(*`Vendor ID=45454`*)中具有&#x200B;*`PID_ALIAS="XYZCustomer"`*&#x200B;和第三方用户ID：
 
-例如，增量文件：
+E.g. 增量文件：
 
 <ul class="simplelist"> 
  <li> <code> ftp_1234_45454_XYZCustomer_iter_1486140843000.sync.gz </code> </li> 
@@ -149,7 +156,7 @@ ht-degree: 5%
  <li> <code> ftp_1234_45454_XYZCustomer_iter_1486140843000001.sync.gz </code> </li> 
 </ul>
 
-例如，完整文件：
+E.g. 完整文件：
 
 <ul class="simplelist"> 
  <li> <code> ftp_1234_45454_XYZCustomer_full_1486140843200.sync.gz </code> </li> 
@@ -164,7 +171,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->本文档中的样式元素（`monospaced text`、*斜体*、括号`[ ]` `( )`等）指示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
+>样式元素（`monospaced text`、*斜体*、括号`[ ]` `( )`等） 本文档中说明了代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
 
 ### 语法
 

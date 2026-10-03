@@ -1,5 +1,5 @@
 ---
-description: 在 Audience Manager 启用 Audience Optimization for Publishers 之前，您必须确保满足本文中列出的所有先决条件。检查所有先决条件后，请与客户关怀团队联系。
+description: 在 Audience Manager 启用 Audience Optimization for Publishers 之前，您必须确保满足本文中列出的所有先决条件。 检查所有先决条件后，请与客户关怀团队联系。
 seo-description: Before Audience Manager can enable Audience Optimization for Publishers, you must ensure that all prerequisites outlined in this article are met. Contact Customer Care after checking off all prerequisites.
 seo-title: Import Google Ad Manager Data Files Into Audience Manager
 solution: Audience Manager
@@ -7,33 +7,43 @@ title: 将Google Ad Manager数据文件导入Audience Manager
 uuid: c685f34f-3e50-4c4b-99fa-d8bbafe0b268
 feature: Audience Optimization Reports
 exl-id: 62b72dd1-e664-4c6a-8c0a-f7a662d62a47
-TQID: https://experienceleague.adobe.com/cnzj59ejieaEvCGo2a-xopjYJ-GfUTc1LV24p9mQiEw
+TQID: 'https://experienceleague.adobe.com/cnzj59ejieaEvCGo2a-xopjYJ-GfUTc1LV24p9mQiEw'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: ff9c2088-e1d9-47aa-85e4-6765b719f5c7
+    internal-label: Audience Optimization Reports
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Optimization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 511
+source-wordcount: '519'
 ht-degree: 14%
-
 ---
-
 # 将Google Ad Manager（以前称为DFP）数据文件导入Audience Manager{#import-dfp-data-files-into-audience-manager}
 
-在 Audience Manager 启用 Audience Optimization for Publishers 之前，您必须确保满足本文中列出的所有先决条件。检查所有先决条件后，请与客户关怀团队联系。
+在 Audience Manager 启用 Audience Optimization for Publishers 之前，您必须确保满足本文中列出的所有先决条件。 检查所有先决条件后，请与客户关怀团队联系。
 
 ## Google Ad Manager日志摄取的先决条件 {#prereqs-dfp-ingestion}
 
 请注意，在&#x200B;*之前必须*&#x200B;完成此部分中描述的进程，然后才能转到启用日志摄取的先决条件。
 
-要在[!DNL Google Ad Manager]中使用[!DNL Audience Manager]（以前为Google DFP）日志文件，您必须在广告标记调用中首先设置我们的[Audience Manager独特用户ID (UUID)](../../../reference/ids-in-aam.md)。 这样，我们的ID将包含在[!DNL Google Ad Manager]日志中，我们可以匹配[!DNL Google Ad Manager]和[!DNL Audience Manager]之间的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]代码或[!UICONTROL Audience Management Module]在第一方Cookie中设置[!DNL Audience Manager] UUID。
+要在[!DNL Audience Manager]中使用[!DNL Google Ad Manager]（以前为Google DFP）日志文件，您必须在广告标记调用中首先设置我们的[Audience Manager独特用户ID (UUID)](../../../reference/ids-in-aam.md)。 这样，我们的ID将包含在[!DNL Google Ad Manager]日志中，我们可以匹配[!DNL Google Ad Manager]和[!DNL Audience Manager]之间的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]代码或[!UICONTROL Audience Management Module]在第一方Cookie中设置[!DNL Audience Manager] UUID。
 
 以下是如何在广告标记调用中设置[!DNL Audience Manager] ID，如我们的文档中所述：
 
@@ -43,8 +53,8 @@ ht-degree: 14%
 您需要自行设置[!DNL Audience Manager] ID，并且可以与[!DNL Audience Manager]咨询人员合作来检查是否一切正常。 在以下情况下，您已正确设置[!DNL Audience Manager] ID：
 
 * `'aamid'`是用作标识符的键。
-* 用户ID值的格式正确为[!DNL Audience Manager] UUID，如Audience Manager[中的ID索引](../../../reference/ids-in-aam.md)中所述。
-* 您在[!DNL Audience Manager]日志的已定义字段中包含了[!DNL Google Ad Manager] UUID（例如CustomTargeting）。
+* 用户ID值的格式正确为[!DNL Audience Manager] UUID，如Audience Manager](../../../reference/ids-in-aam.md)中的ID索引[中所述。
+* 您在[!DNL Google Ad Manager]日志的已定义字段中包含了[!DNL Audience Manager] UUID（例如CustomTargeting）。
 
 ## 启用日志摄取的先决条件 {#prereqs-ingestion-enablement}
 
@@ -93,7 +103,7 @@ ht-degree: 14%
   </tr> 
   <tr> 
    <td colname="col1"> <p>步骤 6 </p> </td> 
-   <td colname="col2"> <p>编译先决条件并按照详细的<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=zh-Hans">此处</a>说明打开支持票证以启动日志摄取过程。 </p> </td> 
+   <td colname="col2"> <p>编译先决条件并按照详细的<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html">此处</a>说明打开支持票证以启动日志摄取过程。 </p> </td> 
    <td colname="col3"> <p>您或代表您<span class="keyword">咨询Audience Manager</span> </p> </td> 
   </tr> 
  </tbody> 

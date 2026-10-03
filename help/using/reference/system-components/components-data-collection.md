@@ -7,31 +7,46 @@ title: 数据收集组件
 uuid: 51bb1719-5ff2-4bc7-8eb1-98795e05d08f
 feature: System Components
 exl-id: 7ae407f1-f1e4-4545-baa2-bcca40aad76f
-TQID: https://experienceleague.adobe.com/x5ryJCxXPXeT7cPV3oN5wIprkBlcechsRwu1qB5k6hQ
+TQID: 'https://experienceleague.adobe.com/x5ryJCxXPXeT7cPV3oN5wIprkBlcechsRwu1qB5k6hQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
 subfeature_v2:
   - id: d8f681b8-67cc-42dc-85c5-a0977528a942
+    internal-label: Data Collection Server
   - id: f15e67cf-b90e-44f4-ae50-f1fb9f866a27
+    internal-label: Log files
   - id: f8c1669e-86ba-49c4-b622-9dfa07854df8
+    internal-label: ID syncs
+  - id: f518b7e7-52a7-4298-a970-88c25c36ab31
+    internal-label: System components
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
   - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience segmentation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 736
-ht-degree: 3%
-
+source-wordcount: '770'
+ht-degree: 6%
 ---
-
 # 数据收集组件{#data-collection-components}
 
 数据收集组件包括数据收集服务器、DIL API、入站服务器到服务器数据传输和日志文件。
@@ -79,7 +94,7 @@ DCS和PCS可协同工作，分别提供与特征实现、受众分段和数据�
 
 **[!UICONTROL Profile Cache Servers (PCS)]**
 
-[!UICONTROL PCS]是一个大型数据库（基本上是一个大型服务器端Cookie）。 它可以存储通过服务器到服务器传输和 [!DNL DCS] 接收的有关活动用户的数据。[!UICONTROL PCS]数据包含设备ID、经过身份验证的配置文件ID以及与这些ID关联的特征。 当[!DNL DCS]收到实时调用时，它将检查[!UICONTROL PCS]中用户可能属于或符合条件的其他特征。 此外，如果某个特征在稍后添加到区段，则这些特征ID将会添加到[!UICONTROL PCS]，用户便会自动符合该区段的资格条件，而无需访问特定网站或应用程序。 [!UICONTROL PCS]有助于深化[!DNL Audience Manager]对您的用户的理解，因为它可以使用新的和历史特征数据实时匹配和分段用户，或者在后台进行分段。 与仅通过实时资格认证相比，这种行为可让您更全面、更准确地了解用户。
+[!UICONTROL PCS]是一个大型数据库（基本上是一个大型服务器端Cookie）。 它可以存储通过服务器到服务器传输和 [!DNL DCS] 接收的有关活动用户的数据。 [!UICONTROL PCS] 数据包含设备 ID、经过验证的配置文件 ID 以及与这些 ID 关联的特征。 当[!DNL DCS]收到实时调用时，它将检查[!UICONTROL PCS]中用户可能属于或符合条件的其他特征。 此外，如果某个特征在稍后添加到区段，则这些特征ID将会添加到[!UICONTROL PCS]，用户便会自动符合该区段的资格条件，而无需访问特定网站或应用程序。 [!UICONTROL PCS]有助于深化[!DNL Audience Manager]对您的用户的理解，因为它可以使用新的和历史特征数据实时匹配和分段用户，或者在后台进行分段。 与仅通过实时资格认证相比，这种行为可让您更全面、更准确地了解用户。
 
 没有允许我们的客户直接使用[!UICONTROL PCS]的UI控件。 客户对[!UICONTROL PCS]的访问是间接的，通过其作为数据存储和数据传输的角色。 [!UICONTROL PCS]在Apache Cassandra上运行。
 

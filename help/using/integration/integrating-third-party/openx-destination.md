@@ -7,25 +7,34 @@ title: OpenX作为Audience Manager目标
 uuid: 5e86ba73-281c-403b-af06-64a1d427526a
 feature: Third-party Integration
 exl-id: 938a518b-c8b0-4e86-885f-daf79b2cba38
-TQID: https://experienceleague.adobe.com/67hm8M7jiloQBgDcJG3fRPZueDPrJPDhfPI69z-ZOZg
+TQID: 'https://experienceleague.adobe.com/67hm8M7jiloQBgDcJG3fRPZueDPrJPDhfPI69z-ZOZg'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
 subfeature_v2:
   - id: e7029888-c8b0-46a7-849a-cf132a1559bf
+    internal-label: Destination Builder
+  - id: 5c645d93-a56e-58b4-b860-6a587b608d44
+    internal-label: Third-party Integration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data integration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 681
+source-wordcount: '688'
 ht-degree: 0%
-
 ---
-
 # OpenX作为Audience Manager目标{#openx-as-an-audience-manager-destination}
 
 将[!DNL OpenX]设置为目标并将Audience Manager区段数据发送到该平台。
@@ -65,14 +74,14 @@ Audience Manager以键值对的形式发送数据。 根据以下规范创建键
 
 <!-- aam-openx-destination.xml -->
 
-在Audience Manager中，*目标*&#x200B;是要与其共享数据的任何其他系统（广告服务器、[!DNL DSP]、广告网络等）。 [!UICONTROL Destination Builder]提供了用于创建和管理这些数据传输流程的工具。 Audience Manager目标功能位于&#x200B;*受众数据>目标*&#x200B;中。 要开始操作，请单击&#x200B;**[!UICONTROL Add New Destination]**&#x200B;并按照以下步骤操作。
+在Audience Manager中，*目标*&#x200B;是任何其他系统（广告服务器、[!DNL DSP]、广告网络等） 任何其他系统(广告服务器、DSP、 [!UICONTROL Destination Builder]提供了用于创建和管理这些数据传输流程的工具。 Audience Manager目标功能位于&#x200B;*受众数据>目标*&#x200B;中。 要开始操作，请单击&#x200B;**[!UICONTROL Add New Destination]**&#x200B;并按照以下步骤操作。
 
 ### 步骤1：基本信息
 
 要完成[!UICONTROL Basic Information]部分，请执行以下操作：
 
 1. 命名目标。
-1. 从&#x200B;**[!UICONTROL "Cookie"]**&#x200B;下拉列表中选择[!UICONTROL Type]。
+1. 从[!UICONTROL Type]下拉列表中选择&#x200B;**[!UICONTROL "Cookie"]**。
 1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;并转到[!UICONTROL Configuration]和[!UICONTROL Segment Mappings]部分。
 
 ### 步骤2：配置信息

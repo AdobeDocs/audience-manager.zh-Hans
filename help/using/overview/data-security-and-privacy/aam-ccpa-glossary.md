@@ -6,33 +6,41 @@ solution: Audience Manager
 title: CCPA 术语表
 feature: Data Governance & Privacy
 exl-id: b3e97e2b-81a4-4b32-9716-5b18c3f8362f
-TQID: https://experienceleague.adobe.com/5pv0LUWwF45dmmlbRQvHio7XTglAujik8xJWVwunhZI
+TQID: 'https://experienceleague.adobe.com/5pv0LUWwF45dmmlbRQvHio7XTglAujik8xJWVwunhZI'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: a1d8adf7-4300-4ca2-870f-1612c6774544
+    internal-label: Data governance and privacy
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 518
+source-wordcount: '518'
 ht-degree: 100%
-
 ---
-
 # CCPA 术语表
 
 ## 概述 {#overview}
 
 本文介绍《加州消费者隐私法案》(CCPA) 中使用的相关概念和术语，以及 Adobe Audience Manager 作为服务提供商如何满足各项 CCPA 要求。
 
-2020 年 1 月 1 日生效的《加州消费者隐私法案》是将隐私保护融入客户体验的一个新机会。Audience Manager 可利用现有的隐私保护基础架构，帮助您在使用 Audience Manager 的同时履行 CCPA 义务，从而使您为 CCPA 的实行做好充分准备。
+2020 年 1 月 1 日生效的《加州消费者隐私法案》是将隐私保护融入客户体验的一个新机会。 Audience Manager 可利用现有的隐私保护基础架构，帮助您在使用 Audience Manager 的同时履行 CCPA 义务，从而使您为 CCPA 的实行做好充分准备。
 
 Audience Manager 希望与您密切合作，通过数据管理功能和“通过设计保护隐私”功能帮助您履行所有新出台的法律义务。
 
 ## CCPA 术语表 {#CCPA-glossary}
 
-了解与 CCPA 相关的重要术语。下面重点介绍了一些最常用的术语。
+了解与 CCPA 相关的重要术语。 下面重点介绍了一些最常用的术语。
 
 **《加州消费者隐私法案》(CCPA)**：旨在加强美国加利福尼亚州居民的隐私权和消费者权益保护的法案。
 
@@ -42,7 +50,7 @@ Audience Manager 希望与您密切合作，通过数据管理功能和“通过
 
  
 
-**个人信息**：特定消费者或其家庭成员的个人身份信息，与特定消费者或其家庭成员相关的信息，特定消费者或其家庭成员的描述信息，能够直接或间接与特定消费者或其家庭成员建立关联的信息，或者能够通过合理推测直接或间接与特定消费者或其家庭成员建立关联的信息。个人信息包括但不限于以下几类：特定消费者或其家庭成员的个人身份信息，与特定消费者或其家庭成员相关的信息，特定消费者或其家庭成员的描述信息，能够直接或间接与特定消费者或其家庭成员建立关联的信息，或者能够通过合理推测直接或间接与特定消费者或其家庭成员建立关联的信息。
+**个人信息**：特定消费者或其家庭成员的个人身份信息，与特定消费者或其家庭成员相关的信息，特定消费者或其家庭成员的描述信息，能够直接或间接与特定消费者或其家庭成员建立关联的信息，或者能够通过合理推测直接或间接与特定消费者或其家庭成员建立关联的信息。 个人信息包括但不限于以下几类：特定消费者或其家庭成员的个人身份信息，与特定消费者或其家庭成员相关的信息，特定消费者或其家庭成员的描述信息，能够直接或间接与特定消费者或其家庭成员建立关联的信息，或者能够通过合理推测直接或间接与特定消费者或其家庭成员建立关联的信息。
 
  
 

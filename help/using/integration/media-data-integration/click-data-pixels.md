@@ -7,26 +7,38 @@ title: 通过像素调用捕获营销活动点击数据
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 feature: Adobe Campaign Integration
 exl-id: 41b169bf-3727-4ed7-b74f-fea75244d2cb
-TQID: https://experienceleague.adobe.com/LzQsKoBZYRyfg8F87yWhT2CB2ojlydELPKRfy4xjXHo
+TQID: 'https://experienceleague.adobe.com/LzQsKoBZYRyfg8F87yWhT2CB2ojlydELPKRfy4xjXHo'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: b59a5343-ccde-4868-a926-97a27448e694
+    internal-label: Campaign integration
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 639
+source-wordcount: '687'
 ht-degree: 6%
-
 ---
-
 # 通过像素调用捕获营销活动点击数据 {#capturing-campaign-click-data-via-pixel-calls}
 
 点击跟踪支持在整个营销活动中测量访客参与度，因为它记录第三方创意人员基于点击的活动。 与[展示次数集合](/help/using/integration/media-data-integration/impression-data-pixels.md)类似，将事件调用发送到[!DNL Audience Manager]数据收集服务器([!DNL DCS])进行处理。 随后，访客将被重定向到预期网址。
@@ -52,7 +64,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## 响应
 
-响应将浏览器重定向到[!DNL URL]参数中指定的`d_rd`。 响应字符串可以包含由下面列出的任何受支持的宏生成的值。
+响应将浏览器重定向到`d_rd`参数中指定的[!DNL URL]。 响应字符串可以包含由下面列出的任何受支持的宏生成的值。
 
 基于以上示例，浏览器被重定向到以下[!DNL URL]：
 
@@ -109,7 +121,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Experience Cloud</span> ID (ECID)。 有关ECID的详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hans" format="https" scope="external"> Cookie和Experience Cloud ID</a>。 </p> <p>可选。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Experience Cloud</span> ID (ECID)。 有关ECID的更多信息，请参阅<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Experience Cloud ID</a>。 </p> <p>可选。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 

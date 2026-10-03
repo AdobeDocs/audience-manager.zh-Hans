@@ -8,20 +8,26 @@ title: 关于相似人群拓展建模
 uuid: 39441e72-5316-453d-9aff-0e0b633aabcd
 feature: Algorithmic Models
 exl-id: a24b11ce-6087-4095-a6c2-6815e2211ba5
-TQID: https://experienceleague.adobe.com/AZLt5bvhZWC7MSjlXsEuv86iEScaEDLaPfjHd7Xr5g0
+TQID: 'https://experienceleague.adobe.com/AZLt5bvhZWC7MSjlXsEuv86iEScaEDLaPfjHd7Xr5g0'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: cd2456ea-4f93-45ef-a193-94c258a6fbfb
+    internal-label: Algorithmic models
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Troubleshooting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1602
+source-wordcount: '1614'
 ht-degree: 0%
-
 ---
-
 # 了解[!UICONTROL Look-Alike Modeling] {#about-algorithmic-models}
 
 ## 查找具有[!UICONTROL Look-Alike Modeling]的新用户 {#find-new-users}
@@ -42,9 +48,9 @@ ht-degree: 0%
 您在&#x200B;**[!UICONTROL Audience Data > Models]**&#x200B;中管理模型。 从较高层面来看，工作流过程涉及以下方面：
 
 * 选择您希望算法评估的基线数据。 这包括[!UICONTROL trait]或[!UICONTROL segment]、时间范围和[!UICONTROL data sources]（您自己的数据和您通过[!DNL Audience Manager]已有权访问的第三方数据）。 在模型创建工作流中，您可以排除不想干扰模型的[!UICONTROL traits]。
-* 保存模型。 保存后，算法评估过程将自动运行。 但请注意，此过程可能需要7天才能完成。 当算法完成并且结果可用于创建[!DNL Audience Manager]时，[!UICONTROL trait]会向您发送电子邮件。
-* 在[!UICONTROL traits]中生成算法[!UICONTROL Trait Builder]。
-* 在[!UICONTROL traits]中将[!UICONTROL segments]合并为[!UICONTROL Segment Builder]。
+* 保存模型。 保存后，算法评估过程将自动运行。 但请注意，此过程可能需要7天才能完成。 当算法完成并且结果可用于创建[!UICONTROL trait]时，[!DNL Audience Manager]会向您发送电子邮件。
+* 在[!UICONTROL Trait Builder]中生成算法[!UICONTROL traits]。
+* 在[!UICONTROL Segment Builder]中将[!UICONTROL traits]合并为[!UICONTROL segments]。
 * 创建[!UICONTROL segment]数据并将其发送到[!UICONTROL destination]。
 
 ## 故障排除 {#troubleshooting}
@@ -53,7 +59,7 @@ ht-degree: 0%
 
 ## 了解[!UICONTROL TraitWeight] {#understanding-traitweight}
 
-[!UICONTROL TraitWeight]是专用于自动发现新[!UICONTROL traits]的算法。 它将来自您当前[!UICONTROL trait]和[!UICONTROL traits]的[!UICONTROL segments]数据与您通过[!DNL Audience Manager]有权访问的所有其他第一方和第三方数据进行比较。 有关[!UICONTROL TraitWeight]算法发现过程的描述，请参阅此部分。
+[!UICONTROL TraitWeight]是专用于自动发现新[!UICONTROL traits]的算法。 它将来自您当前[!UICONTROL traits]和[!UICONTROL segments]的[!UICONTROL trait]数据与您通过[!DNL Audience Manager]有权访问的所有其他第一方和第三方数据进行比较。 有关[!UICONTROL TraitWeight]算法发现过程的描述，请参阅此部分。
 
 ![](assets/algo_model.png)
 
@@ -61,11 +67,11 @@ ht-degree: 0%
 
 ### 步骤1：构建[!UICONTROL Trait]比较的基线
 
-要构建基线，[!UICONTROL TraitWeight]在30、60或90天间隔内测量与受众关联的所有[!UICONTROL traits]。 接下来，它根据[!UICONTROL traits]的频度和相关性对其进行排名。 频率计数测量通用性。 关联测量[!UICONTROL trait]仅存在于基线受众中的可能性。 经常出现的[!UICONTROL Traits]据说具有高通用性，这是与选定[!UICONTROL traits]中发现的[!UICONTROL data sources]结合使用时用于设置加权得分的重要特性。
+要构建基线，[!UICONTROL TraitWeight]在30、60或90天间隔内测量与受众关联的所有[!UICONTROL traits]。 接下来，它根据[!UICONTROL traits]的频度和相关性对其进行排名。 频率计数测量通用性。 关联测量[!UICONTROL trait]仅存在于基线受众中的可能性。 经常出现的[!UICONTROL Traits]据说具有高通用性，这是与选定[!UICONTROL data sources]中发现的[!UICONTROL traits]结合使用时用于设置加权得分的重要特性。
 
-### 步骤2：在[!UICONTROL Traits]中找到相同的[!UICONTROL Data Source]
+### 步骤2：在[!UICONTROL Data Source]中找到相同的[!UICONTROL Traits]
 
-在构建基线以进行比较后，算法会在您选定的[!UICONTROL traits]中查找相同的[!UICONTROL data sources]。 在此步骤中，[!UICONTROL TraitWeight]对所有发现的[!UICONTROL traits]执行频率计数，并将它们与基线进行比较。 但是，与基线不同，不常见的[!UICONTROL traits]的排名高于出现更频繁的。 稀有[!UICONTROL traits]被认为具有高度的特异性。 [!UICONTROL TraitWeight]评估公用基线[!UICONTROL traits]和不公用（高度特定） [!UICONTROL data source] [!UICONTROL traits]的组合比两个数据集公用[!UICONTROL traits]更有影响或更可取。 事实上，我们的模型识别这些大而通用的[!UICONTROL traits]，并且不会为具有高关联性的数据集分配超额优先级。 极少数情况下[!UICONTROL traits]获得更高的优先级，因为它们更有可能代表新的独特用户，而不是[!UICONTROL traits]，这些用户在所有方面具有高通用性。
+在构建基线以进行比较后，算法会在您选定的[!UICONTROL data sources]中查找相同的[!UICONTROL traits]。 在此步骤中，[!UICONTROL TraitWeight]对所有发现的[!UICONTROL traits]执行频率计数，并将它们与基线进行比较。 但是，与基线不同，不常见的[!UICONTROL traits]的排名高于出现更频繁的。 稀有[!UICONTROL traits]被认为具有高度的特异性。 [!UICONTROL TraitWeight]评估公用基线[!UICONTROL traits]和不公用（高度特定） [!UICONTROL data source] [!UICONTROL traits]的组合比两个数据集公用[!UICONTROL traits]更有影响或更可取。 事实上，我们的模型识别这些大而通用的[!UICONTROL traits]，并且不会为具有高关联性的数据集分配超额优先级。 极少数情况下[!UICONTROL traits]获得更高的优先级，因为它们更有可能代表新的独特用户，而不是[!UICONTROL traits]，这些用户在所有方面具有高通用性。
 
 ### 步骤3：分配权重
 
@@ -189,8 +195,8 @@ ht-degree: 0%
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> 使用模型<span class="wintitle">的</span>特征 </p> </td>
-   <td colname="col2"> <p>显示基于所选模型的算法特征列表。 单击特征名称或特征ID，以了解有关该特征的更多信息。 选择<b><span class="uicontrol">使用模型</span></b>创建新特征以转到算法特征创建过程。 </p> <p>部分标签会根据模型的名称而更改。 例如，假设您创建了一个模型并将其命名为“模型A”。加载摘要页面时，此部分的名称将使用模型A<span class="wintitle">更改为</span>个特征。 </p> </td>
+   <td colname="col1"> <p> 使用模型</span>的<span class="wintitle">特征 </p> </td>
+   <td colname="col2"> <p>显示基于所选模型的算法特征列表。 单击特征名称或特征ID，以了解有关该特征的更多信息。 选择<b><span class="uicontrol">使用模型</span></b>创建新特征以转到算法特征创建过程。 </p> <p>部分标签会根据模型的名称而更改。 例如，假设您创建了一个模型并将其命名为“模型A”。加载摘要页面时，此部分的名称将使用模型A</span>更改为<span class="wintitle">个特征。 </p> </td>
   </tr>
  </tbody>
 </table>

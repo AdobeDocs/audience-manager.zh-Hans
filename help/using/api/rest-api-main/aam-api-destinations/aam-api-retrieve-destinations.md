@@ -7,22 +7,26 @@ title: 按目标ID返回目标
 uuid: abce7426-55a5-4045-93a7-0487652a7189
 feature: API
 exl-id: c0850e71-7830-4635-b773-e9a28ab5bd68
-TQID: https://experienceleague.adobe.com/1O--EDa6jaXLktpbKr0rP9rpuugijVdP9-zpRyuFpkc
+TQID: 'https://experienceleague.adobe.com/1O--EDa6jaXLktpbKr0rP9rpuugijVdP9-zpRyuFpkc'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
   - id: c814092e-2730-45e8-a12d-e084529f52cb
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Destinations
+subfeature_v2:
+  - id: 7dee9651-deb5-5d4d-acfd-fbc10040467f
+    internal-label: API
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 332
+source-wordcount: '332'
 ht-degree: 2%
-
 ---
-
 # 按目标ID返回目标 {#return-a-destination-by-destination-id}
 
-返回指定`GET`的目标的`destinationId`方法。
+返回指定`destinationId`的目标的`GET`方法。
 
 <!-- r_get_all_destinations_order_id.xml -->
 
@@ -32,7 +36,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->要填充URL中`mappings`的`includeMappings=true`字段传递，请执行以下操作：
+>要填充URL中`includeMappings=true`的`mappings`字段传递，请执行以下操作：
 
 ## 响应
 
@@ -108,7 +112,7 @@ ht-degree: 2%
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> search</code> </td>
-   <td colname="col2">根据要用作搜索参数的指定字符串返回结果。 例如，假设您要查找在该项目的任何值字段中包含“Test”一词的所有模型的结果。 您的示例请求可能如下所示： <p><code> GET https://api.demdex.com/v1/models/?search=Test</code>。 </p> <p>您可以搜索“get all”方法返回的任何值。 </p> </td>
+   <td colname="col2">根据要用作搜索参数的指定字符串返回结果。 例如，假设您要查找在该项目的任何值字段中包含“Test”一词的所有模型的结果。 您的示例请求可能如下所示： <p><code> GET https://api.demdex.com/v1/models/?search=Test</code>. </p> <p>您可以搜索“get all”方法返回的任何值。 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -147,7 +151,7 @@ ht-degree: 2%
 
 ## 返回具有映射ID的目标映射 {#return-dest-mapping-id}
 
-基于`GET`返回单个目标映射的`mappingId`方法。
+基于`mappingId`返回单个目标映射的`GET`方法。
 
 <!-- r_get_destination_trait_data_order.xml -->
 
@@ -276,7 +280,7 @@ BROWSER, ANDROID, iOS, ALL
 
 ## 返回S2S和批量S2S目标作业历史记录 {#return-job-history}
 
-返回出站`GET` ( [!UICONTROL Server-to-Server])和批量[!UICONTROL S2S]目标作业历史记录信息的[!UICONTROL S2S]方法。
+返回出站[!UICONTROL Server-to-Server] ( [!UICONTROL S2S])和批量[!UICONTROL S2S]目标作业历史记录信息的`GET`方法。
 
 <!-- r_get_job_history.xml -->
 
@@ -284,7 +288,7 @@ BROWSER, ANDROID, iOS, ALL
 
 `GET https://api.demdex.com/v1/destinations/655/history/outbound?startDate=1000000000&endDate=1403034473000`
 
-必需的查询参数： `startDate` = *&lt;`epochtime`*&#x200B;和`endDate` = *&lt;`epochtime`*。
+必需的查询参数： `startDate` = *&lt;`epochtime`>*&#x200B;和`endDate` = *&lt;`epochtime`>*。
 
 ### 响应
 

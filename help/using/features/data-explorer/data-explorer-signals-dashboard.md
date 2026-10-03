@@ -6,18 +6,24 @@ title: 信号仪表板
 uuid: 26f39507-097f-427d-bf5b-ab6d035c1dd2
 feature: Data Explorer
 exl-id: dfcacdca-c301-4655-9ab4-0642ce6d1cc0
-TQID: https://experienceleague.adobe.com/FGEKJR4Vu2AUmmm09xfRewJxEX-spZeSyXqkdaQhMQQ
+TQID: 'https://experienceleague.adobe.com/FGEKJR4Vu2AUmmm09xfRewJxEX-spZeSyXqkdaQhMQQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
+subfeature_v2:
+  - id: a2c6d65b-635d-4454-a9cc-9771ed501bb4
+    internal-label: Data Explorer
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Insights
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 250
+source-wordcount: '250'
 ht-degree: 0%
-
 ---
-
 # 信号仪表板 {#signals-dashboard}
 
 大致了解Audience Manager在过去7天内收到的未使用信号，并识别潜在的新特征。 未使用的信号会从您的在线资产中访问Audience Manager，但不会用于任何现有特征。 要查看[!UICONTROL Signals Dashboard]，请转到[!UICONTROL Audience Data] > [!UICONTROL Signals]。 [!UICONTROL Signals Dashboard]根据您最活跃的未使用信号向您显示可操作的洞察。
@@ -40,10 +46,10 @@ ht-degree: 0%
 
 ## 保存的搜索 {#saved-searches}
 
-[!DNL Audience Manager]在[上显示所有](../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)保存的搜索[!UICONTROL Dashboard]，并在每次加载[!UICONTROL Dashboard]时重新加载它们。
+[!DNL Audience Manager]在[!UICONTROL Dashboard]上显示所有[保存的搜索](../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)，并在每次加载[!UICONTROL Dashboard]时重新加载它们。
 
 保存的搜索将显示相应条件的前50个结果。
 
 观看以下视频以了解如何使用[!UICONTROL Signals Dashboard]。
 
->[!VIDEO](https://video.tv.adobe.com/v/327525?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25151/)

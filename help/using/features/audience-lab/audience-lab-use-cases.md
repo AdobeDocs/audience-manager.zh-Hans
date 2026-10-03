@@ -7,23 +7,30 @@ title: Audience Lab用例
 uuid: 727bec8a-df9a-40cc-b8a7-e1980d146a84
 feature: Audience Lab
 exl-id: b68f48bd-0d5d-4b72-84f3-a6f3acea6c49
-TQID: https://experienceleague.adobe.com/mDcQUaLcTjBA31iTkVJbm1UOy9rqRv3yHca4ZH-HliE
+TQID: 'https://experienceleague.adobe.com/mDcQUaLcTjBA31iTkVJbm1UOy9rqRv3yHca4ZH-HliE'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
+  - id: e8501b6e-f5e0-495d-8a3d-6aa9293cdcc5
+    internal-label: Audience Lab
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 585
+source-wordcount: '587'
 ht-degree: 0%
-
 ---
-
 # Audience Lab用例 {#audience-lab-use-cases}
 
 [!UICONTROL Audience Lab]允许您使用基准区段来创建测试组，从而支持多个用例。 您可以将测试组划分为多个互斥的测试区段，将这些测试区段映射到不同的目标，然后确定哪些区段在提高转化率方面最有效。
@@ -34,7 +41,7 @@ ht-degree: 0%
 
 <!-- audience-lab-compare-models.xml -->
 
-在此使用案例中，您将比较不同的模型。 您可以使用通过内部数据仓库创建的模型并将它们作为[!DNL Audience Manager]载入的特征[导入到](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits)中，也可以在[中使用](../../features/algorithmic-models/understanding-models.md)算法模型[!DNL Audience Manager]功能。
+在此使用案例中，您将比较不同的模型。 您可以使用通过内部数据仓库创建的模型并将它们作为[载入的特征](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits)导入到[!DNL Audience Manager]中，也可以在[!DNL Audience Manager]中使用[算法模型](../../features/algorithmic-models/understanding-models.md)功能。
 
 1. 在[模型生成器](../../features/algorithmic-models/create-model.md)中或通过外部平台创建两个模型。
 1. 从算法模型创建[算法特征](../../features/traits/create-algorithmic-traits.md)或将您自己的模型导入为载入的特征。
@@ -43,7 +50,7 @@ ht-degree: 0%
    * 创建&#x200B;*模型1区段*&#x200B;和&#x200B;*模型2区段*。
    * 将&#x200B;*模型1区段*&#x200B;的区段规则设置为模型1特征[!DNL AND NOT]模型2特征，反之亦然，设置为&#x200B;*模型2区段*。
 
-1. [在](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)中创建两个区段测试组[!UICONTROL Audience Lab]，一个以&#x200B;*模型1区段*&#x200B;作为基线，另一个以&#x200B;*模型2区段*&#x200B;作为基线。
+1. [在[!UICONTROL Audience Lab]中创建两个区段测试组](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)，一个以&#x200B;*模型1区段*&#x200B;作为基线，另一个以&#x200B;*模型2区段*&#x200B;作为基线。
 
    * 对于两个测试组，请保持变量相同：相同的目标、创意和转化特征。
    * 确保测试区段具有相似的用户数（例如，160万和180万正确，160万和1600万不正确）。

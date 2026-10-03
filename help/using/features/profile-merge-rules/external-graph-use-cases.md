@@ -7,20 +7,26 @@ title: 外部设备图形使用案例
 uuid: f4bc822d-39d2-4680-90ed-7ee2ead6db6f
 feature: Profile Merge
 exl-id: 657aecfd-7fa3-466e-8331-c49cc921e3a9
-TQID: https://experienceleague.adobe.com/KPKq6THxdku9ebZigLfZKnBO-ziNPjZ9pqNdn6PZ-Es
+TQID: 'https://experienceleague.adobe.com/KPKq6THxdku9ebZigLfZKnBO-ziNPjZ9pqNdn6PZ-Es'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 3c88464c2249b7848c9ae80ca4c0ed58fcb81070
+    internal-label: Personalization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 294
-ht-degree: 8%
-
+source-wordcount: '304'
+ht-degree: 7%
 ---
-
 # 外部设备图形使用案例 {#external-device-graph-use-cases}
 
 通过外部设备图为未知用户寻找潜在客户、重新定位和进行个性化的建议和使用案例。 外部设备图定义为与Audience Manager不同的设备图。 这包括Adobe与第三方确定性或概率设备图公司的集成。
@@ -129,9 +135,9 @@ Through this rule, the device graph has expanded the number of device profiles w
 
 ![last-device-graph](assets/last-profile-link.png)
 
-在以下示例中，Acme Inc.公司希望将目标定位为收入超过100.000美元/年、[!DNL Acme Inc.]上有[!DNL Data Plan A]个订阅者且使用[!DNL iPhone 7]设备的所有家庭。
+在以下示例中，Acme Inc.公司希望将目标定位为收入超过100.000美元/年、[!DNL Data Plan A]上有[!DNL Acme Inc.]个订阅者且使用[!DNL iPhone 7]设备的所有家庭。
 
-John使用他在Data Plan A上的iPhone 7在Acme Inc.网站上进行身份验证。 同时，John的[!DNL Profile Link Device Graph]群集包含他定期使用的两个其他设备：他的笔记本电脑([!DNL Device 1])和他的辅助智能手机[!DNL Device 2] （[!DNL Samsung S7]上的[!DNL Data Plan B]）。
+John使用他在Data Plan A上的iPhone 7在Acme Inc.网站上进行身份验证。 同时，John的[!DNL Profile Link Device Graph]群集包含他定期使用的两个其他设备：他的笔记本电脑([!DNL Device 1])和他的辅助智能手机[!DNL Device 2] （[!DNL Data Plan B]上的[!DNL Samsung S7]）。
 
 通过使用&#x200B;**[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]**，[!DNL Acme Inc.]能够向John设备图形群集中的所有三个设备传递个性化消息，即使其中只有一个设备最初符合该区段的条件。
 

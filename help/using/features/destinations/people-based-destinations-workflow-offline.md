@@ -6,27 +6,36 @@ solution: Audience Manager
 title: 工作流程B — 基于仅离线数据的Personalization
 feature: People-based Destinations
 exl-id: d980de26-3133-4ae3-80c2-8c3bf2480bbd
-TQID: https://experienceleague.adobe.com/QwP7cagUrIQ-jkLNzulJSoxKTT6VuNXAptoLTSpvCDM
+TQID: 'https://experienceleague.adobe.com/QwP7cagUrIQ-jkLNzulJSoxKTT6VuNXAptoLTSpvCDM'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
 subfeature_v2:
   - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: d7221605-094b-45a5-891f-f37bd58c0055
+    internal-label: People based Destinations
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1123
+source-wordcount: '1164'
 ht-degree: 1%
-
 ---
-
 # 工作流程B — 基于仅离线数据的Personalization {#workflow-b}
 
 >[!IMPORTANT]
@@ -50,9 +59,9 @@ ht-degree: 1%
 
 | 客户ID (DPUUID) | 已载入的特征ID |
 | -------------------------------------- | ------------------- |
-| 68079982765673198504052656074456196039 | 12345， 23456 |
+| 68079982765673198504052656074456196039 | 12345, 23456 |
 | 67412682083411995725538770443620307584 | 45678 |
-| 89159024796760343733111707646026765593 | 11223， 93342， 27341 |
+| 89159024796760343733111707646026765593 | 11223, 93342, 27341 |
 
 <br />
 
@@ -106,7 +115,7 @@ ht-degree: 1%
 
 观看以下视频，观看有关如何为[!UICONTROL People-Based Destinations]创建数据源的视频教程。
 
->[!VIDEO](https://video.tv.adobe.com/v/31956?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29006/)
 
 ## 步骤3 — 通过基于文件的ID同步将DPUUID与经过哈希处理的电子邮件地址进行匹配 {#match-ids-emails}
 
@@ -161,8 +170,8 @@ ht-degree: 1%
 1. 登录到您的Audience Manager帐户并转到&#x200B;**[!UICONTROL Audience Data]** -> **[!UICONTROL Profile Merge Rules]**。
 2. 单击 [!UICONTROL Add New Rule]。
 3. 输入配置文件合并规则&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
-4. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;部分中，从&#x200B;**[!UICONTROL All Cross-Device Profiles]**&#x200B;列表中选择&#x200B;**[!UICONTROL Cross-Device Options]**&#x200B;规则。
-5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**&#x200B;列表中，选择特征载入的数据源。
+4. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;部分中，从&#x200B;**[!UICONTROL Cross-Device Options]**&#x200B;列表中选择&#x200B;**[!UICONTROL All Cross-Device Profiles]**&#x200B;规则。
+5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**列表中，选择特征载入的数据源。
    ![合并规则设置](assets/pbd-pmr.png)
 
 ## 步骤5 — 创建受众区段 {#create-audience-segments}
@@ -174,7 +183,7 @@ ht-degree: 1%
 1. 登录到您的Audience Manager帐户，然后转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您之前配置了与社交平台的集成，您应会看到此页面中列出了该集成。 否则，页面为空。
    ![基于人员的集成](assets/pbd-config.png)
 1. 单击 **[!UICONTROL Add Account]**。
-1. 使用&#x200B;**[!UICONTROL People-Based Platform]**&#x200B;下拉菜单选择要配置集成的平台。
+1. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉菜单选择要配置集成的平台。
    ![基于人员的平台](assets/pbd-add.png)
 1. 单击&#x200B;**[!UICONTROL Confirm]**&#x200B;以重定向到所选平台的身份验证页面。
 1. 在验证您的Social Platform帐户后，您将被重定向到Audience Manager，您应该会在其中看到关联的广告商帐户。 选择要使用的广告商帐户，然后单击&#x200B;**[!UICONTROL Confirm]**。

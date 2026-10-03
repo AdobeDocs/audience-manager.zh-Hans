@@ -7,18 +7,23 @@ title: 派生的信号
 uuid: e52600e3-26d1-4607-9b96-afd6086a252d
 feature: Traits
 exl-id: 64bc004a-a31a-49bb-aa58-323fbc92f76f
-TQID: https://experienceleague.adobe.com/NuY2-dNMtPcte2WQE572uvyS-uiIzZmSPrlOyOndPuU
+TQID: 'https://experienceleague.adobe.com/NuY2-dNMtPcte2WQE572uvyS-uiIzZmSPrlOyOndPuU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 261
+source-wordcount: '263'
 ht-degree: 0%
-
 ---
-
 # 派生的信号 {#derived-signals}
 
 [!UICONTROL derived signal]根据网站访客已看到的特征授予他们使用其他特征的资格。 换言之，即使用户以前从未见过新特征，也可以从当前展示的特征派生其他特征资格。
@@ -33,7 +38,7 @@ ht-degree: 0%
 
 ## 派生信号的位置
 
-通过侧栏导航在[!UICONTROL derived signals]中创建和管理&#x200B;**[!UICONTROL Tools > Derived Signals]**。
+通过侧栏导航在&#x200B;**[!UICONTROL Tools > Derived Signals]**&#x200B;中创建和管理[!UICONTROL derived signals]。
 
 ## 创建派生信号 {#create}
 
@@ -41,7 +46,7 @@ ht-degree: 0%
 
 要创建[!UICONTROL derived signal]，请执行以下操作：
 
-1. 从&#x200B;**[!UICONTROL Derived Signals]**&#x200B;菜单中选择[!UICONTROL Tools]。
+1. 从[!UICONTROL Tools]菜单中选择&#x200B;**[!UICONTROL Derived Signals]**。
 1. 提供：
    * *（可选）* [!UICONTROL Integration Code]
    * [!UICONTROL Source Key]

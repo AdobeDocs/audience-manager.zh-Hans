@@ -8,26 +8,35 @@ title: Audience Manager 概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 feature: Overview
 exl-id: e96d8c05-7082-4f17-936d-f1896e665c8e
-TQID: https://experienceleague.adobe.com/yfWxhIkYnUTETWQa99VZoT6-mzAJ0TbjkQgFe5F5nlM
+TQID: 'https://experienceleague.adobe.com/yfWxhIkYnUTETWQa99VZoT6-mzAJ0TbjkQgFe5F5nlM'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+subfeature_v2:
+  - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data management
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 301
-ht-degree: 85%
-
+source-wordcount: '322'
+ht-degree: 83%
 ---
-
 # Audience Manager 概述 {#audience-manager-overview}
 
-Audience Manager 可以帮助您汇总受众数据资产，从而能够轻松收集与网站访客有关的商业相关信息，创建可销售的区段，以及向合适的受众提供有针对性的广告和内容。此外，Audience Manager 可轻松部署和管理标记，并具备强大的数据收集、控制和保护功能。
+Audience Manager 可以帮助您汇总受众数据资产，从而能够轻松收集与网站访客有关的商业相关信息，创建可销售的区段，以及向合适的受众提供有针对性的广告和内容。 此外，Audience Manager 可轻松部署和管理标记，并具备强大的数据收集、控制和保护功能。
 
-使用 Audience Manager，您可以不必依赖于数据销售商、交易台或需求方平台。此外，Audience Manager对合作伙伴的数据资产一无所知。 通过访问多个数据源，Audience Manager使数字发布者能够使用各种第三方数据。 与我们的合作伙伴解决方案团队交流，了解如何帮助您针对目标受众做出明智而准确的决策。
+使用 Audience Manager，您可以不必依赖于数据销售商、交易台或需求方平台。 此外，Audience Manager对合作伙伴的数据资产一无所知。 通过访问多个数据源，Audience Manager使数字发布者能够使用各种第三方数据。 与我们的合作伙伴解决方案团队交流，了解如何帮助您针对目标受众做出明智而准确的决策。
 
 ## 数据管理平台(DMP)的三个功能 {#dmp-three-functions}
 
@@ -41,7 +50,7 @@ Audience Manager 从渠道和设备（Web 分析、CRM、设备数据、电子�
 
 **受众创建**
 
-将数据整合到受众配置文件中，为您提供跨设备和渠道的完整客户视图。创建相似人群拓展模型，构建受众区段和配置文件组，并使用第二方和第三方数据源进行补充。
+将数据整合到受众配置文件中，为您提供跨设备和渠道的完整客户视图。 创建相似人群拓展模型，构建受众区段和配置文件组，并使用第二方和第三方数据源进行补充。
 
 **数据输出**
 
@@ -51,9 +60,9 @@ Audience Manager 从渠道和设备（Web 分析、CRM、设备数据、电子�
 
 有关更多信息，请参阅以下资源：
 
-* [Audience Manager 概述](https://www.adobe.com/cn/analytics/audience-manager.html)
-* [Audience Manager 优势](https://www.adobe.com/cn/analytics/audience-manager/benefits.html)
-* [Audience Manager 功能](https://www.adobe.com/cn/analytics/audience-manager/features.html)
+* [Audience Manager概述](https://www.adobe.com/cn/analytics/audience-manager.html)
+* [Audience Manager优势](https://www.adobe.com/cn/analytics/audience-manager/benefits.html)
+* [Audience Manager功能](https://www.adobe.com/cn/analytics/audience-manager/features.html)
 
 
 <!--

@@ -7,26 +7,33 @@ title: 配置文件合并规则概述
 uuid: 9e7988cc-9145-432b-840a-54fbd8657b3b
 feature: Profile Merge
 exl-id: 5d1f5bea-0fca-4684-a2b4-585d9e38d9ef
-TQID: https://experienceleague.adobe.com/nhbT9DeDdZho5Rsqprq7N3Si7i9RfoirQuONiAh2Lmw
+TQID: 'https://experienceleague.adobe.com/nhbT9DeDdZho5Rsqprq7N3Si7i9RfoirQuONiAh2Lmw'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience segmentation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 336
-ht-degree: 0%
-
+source-wordcount: '340'
+ht-degree: 1%
 ---
-
 # [!UICONTROL Profile Merge Rules]概述 {#profile-merge-rules-overview}
 
 通过[!UICONTROL Profile Merge Rules]，您可以控制用于分段的数据集，并且可以跨多个设备准确地定位用户。
 
->[!VIDEO](https://video.tv.adobe.com/v/31955?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28974)
 
 ## 使用匿名和经过身份验证的用户档案进行数据收集和定位 {#data-collection-targeting}
 
@@ -38,7 +45,7 @@ ht-degree: 0%
 
 | 配置文件类型 | 描述 |
 |---|---|
-| [!UICONTROL Device Profile] | [!UICONTROL device profile]绑定到给定设备的ID，如[!UICONTROL cookie] ID或移动设备ID。<br><br>它包括：<ul><li>[!UICONTROL Rule-based traits]在用户未通过身份验证时实现。</li><li>[!UICONTROL Onboarded traits]绑定到设备ID，例如[!UICONTROL cookie-based]第三方数据。</li></ul> |
+| [!UICONTROL Device Profile] | [!UICONTROL device profile]绑定到给定设备的ID，如[!UICONTROL cookie] ID或移动设备ID。<br><br> 该服务包括：<ul><li>[!UICONTROL Rule-based traits]在用户未通过身份验证时实现。</li><li>[!UICONTROL Onboarded traits]绑定到设备ID，例如[!UICONTROL cookie-based]第三方数据。</li></ul> |
 | [!UICONTROL Authenticated Profile] | [!UICONTROL authenticated profile]绑定到人员登录到您的网站时传入的用户ID。<br><br>它包括：<ul><li>对用户进行身份验证后，跨设备收集了[!UICONTROL Rule-based traits]。</li><li>在链接到相同用户ID的脱机文件中[!UICONTROL Onboarded traits]。</li></ul> |
 
 这些不同的配置文件控制可用于分段的数据。 例如，使用[验证的配置文件](../../reference/visitor-authentication-states.md)，您可以基于单个用户的多个设备数据构建准确的[!UICONTROL segments]。 这意味着您可以跨多个设备为客户提供一致的品牌体验。 [!DNL Audience Manager]通过将用户用于其在线活动的不同设备映射到其[已验证的配置文件](../../reference/visitor-authentication-states.md)来实现此目标。 这些映射称为[!UICONTROL Profile Link Device Graph]。

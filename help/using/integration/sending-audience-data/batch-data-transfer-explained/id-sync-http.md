@@ -7,23 +7,32 @@ title: 用于入站数据传输的ID同步
 uuid: 037e74a6-acfd-4cef-b693-16b7aaa8e976
 feature: Inbound Data Transfers
 exl-id: cd9be32f-f443-45bd-a906-ec4c8589f608
-TQID: https://experienceleague.adobe.com/6pRhpoECN6jqncBykBth7wOKG8o592Ek1pS-dEzLMXk
+TQID: 'https://experienceleague.adobe.com/6pRhpoECN6jqncBykBth7wOKG8o592Ek1pS-dEzLMXk'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: a03b8192-8410-479f-a326-4cddf10757f6
+    internal-label: Inbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Taxonomy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 430
-ht-degree: 1%
-
+source-wordcount: '455'
+ht-degree: 5%
 ---
-
 # 用于入站数据传输的ID同步 {#id-synchronization-for-inbound-data-transfers}
 
 描述初始`HTTP`调用中使用的语法和参数，以便在供应商和[!DNL Audience Manager]之间同步用户ID。 将数据分类发送到[!DNL Audience Manager]后，可以开始ID同步。
@@ -64,7 +73,7 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i> </code> </td> 
-   <td colname="col2"> <p>独特用户ID的URL（百分比）编码表示形式。 除了编码保留的ASCII字符外，任何非ASCII字符都应根据UTF-8字符编码表进行百分比编码。 </p> <p>有关详细信息，请参阅联机<a href="https://www.url-encode-decode.com" format="http" scope="external">上的</a> URL编码/解码网站。 </p> </td> 
+   <td colname="col2"> <p>独特用户ID的URL（百分比）编码表示形式。 除了编码保留的ASCII字符外，任何非ASCII字符都应根据UTF-8字符编码表进行百分比编码。 </p> <p>有关详细信息，请参阅联机</a>上的<a href="https://www.url-encode-decode.com" format="http" scope="external"> URL编码/解码网站。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;REDIRECT_URL&gt;</i> </code> </td> 
@@ -72,11 +81,11 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
-   <td colname="col2"> <p>可选。如果您使用的是适用于IAB TCF的<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager插件，请添加此参数。</a></p> <p><code> gdpr</code> 可以为0（GDPR不适用）或1（GDPR适用）。 </p> <p> <b>注意：</b>此参数只能与<code>gdpr_consent</code>一起使用。</p></td> 
+   <td colname="col2"> <p>可选。 如果您使用的是适用于IAB TCF的<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager插件，请添加此参数。</a></p> <p><code> gdpr</code> 可以为0（GDPR不适用）或1（GDPR适用）。 </p> <p> <b>注意：</b>此参数只能与<code>gdpr_consent</code>一起使用。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code><i>gdpr_consent=&lt;ENCODED STRING&gt;</i> </code> </td> 
-   <td colname="col2"> <p>可选。如果您使用的是适用于IAB TCF的<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager插件，请添加此参数。</a></p> <p><code>gdpr_consent</code> 是URL安全的base64编码GDPR同意字符串（请参阅<a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB规范</a>）。 </p> <p> <b>注意：</b>此参数只能与<code>gdpr</code>一起使用。</p> </td> 
+   <td colname="col2"> <p>可选。 如果您使用的是适用于IAB TCF的<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager插件，请添加此参数。</a></p> <p><code>gdpr_consent</code> 是URL安全的base64编码GDPR同意字符串（请参阅<a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB规范</a>）。 </p> <p> <b>注意：</b>此参数只能与<code>gdpr</code>一起使用。</p> </td> 
   </tr> 
  </tbody> 
 </table>

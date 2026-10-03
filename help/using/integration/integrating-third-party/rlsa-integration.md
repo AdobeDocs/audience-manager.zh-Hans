@@ -7,21 +7,28 @@ title: 将区段发送到Google AdWords再营销列表
 uuid: 5ad821c6-48b4-42c0-b912-1563331e93a2
 feature: Third-party Integration
 exl-id: 76676eae-de4f-4fee-8774-ee215525306a
-TQID: https://experienceleague.adobe.com/BxJ9n5RLQwR8i9Sgu1cgeaijSCrKLltsAXdm0eQBqxY
+TQID: 'https://experienceleague.adobe.com/BxJ9n5RLQwR8i9Sgu1cgeaijSCrKLltsAXdm0eQBqxY'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: 5c645d93-a56e-58b4-b860-6a587b608d44
+    internal-label: Third-party Integration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 284
+source-wordcount: '299'
 ht-degree: 0%
-
 ---
-
 # 将区段发送到Google广告再营销列表 {#send-segments-to-a-google-adwords-remarketing-list}
 
 此过程需要[!DNL Google Ads]再营销列表、像素代码和Audience Manager [!DNL URL] [!DNL destination]。 它也称为搜索广告([!DNL RLSA])集成的再营销列表。 仅适用于付费搜索。
@@ -41,9 +48,9 @@ ht-degree: 0%
 1. 在Audience Manager中，[创建 [!DNL URL destination]](../../features/destinations/create-url-destination.md)或编辑现有的[!DNL destination]。 创建[!DNL destination]时，请使用以下设置：
    * 类型： URL
    * 序列化：已启用
-   * 分隔符：分号（&amp;amp；分号； ）
+   * 分隔符：分号( &amp;semi； )
 
-1. 在[!UICONTROL Segment Mappings] [!DNL URL]的[!DNL destination]部分中，将步骤2中的代码添加到[!DNL URL]和[!DNL Secure URL]字段。 在`http:`和`https:`字段中分别使用[!DNL URL]和[!DNL Secure URL]为代码添加前缀。
+1. 在[!DNL URL] [!DNL destination]的[!UICONTROL Segment Mappings]部分中，将步骤2中的代码添加到[!DNL URL]和[!DNL Secure URL]字段。 在[!DNL URL]和[!DNL Secure URL]字段中分别使用`http:`和`https:`为代码添加前缀。
 
    >[!IMPORTANT]
    >

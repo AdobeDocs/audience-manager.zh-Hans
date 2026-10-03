@@ -7,20 +7,26 @@ title: 配置文件合并规则的一般用例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 feature: Profile Merge
 exl-id: 66341736-4f61-4306-b9f4-1b37dc7ce0ff
-TQID: https://experienceleague.adobe.com/Qk5jO5i-HgjV75z0--cXzgv7hMbS-s6sEyanGqy8m9I
+TQID: 'https://experienceleague.adobe.com/Qk5jO5i-HgjV75z0--cXzgv7hMbS-s6sEyanGqy8m9I'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Personalization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 894
+source-wordcount: '921'
 ht-degree: 1%
-
 ---
-
 # 配置文件合并规则的一般用例 {#general-use-cases-for-profile-merge-rules}
 
 通过[!UICONTROL Profile Merge Rules]选项，您可以根据业务需求或目标扩大或限制受众对特定受众的关注。 这些常规用例探索了如何使用可用选项并为个人、家庭和跨设备定位创建合并规则。 [!UICONTROL Profile Merge Rules]用于实时和批处理目标。
@@ -63,7 +69,7 @@ ht-degree: 1%
 
 ![last-device-profile](assets/last-device-profile.png)
 
-让我们考虑一个由年收入超过100.000美元的家庭构成的区段，其中至少包含一个设备，该设备是[!DNL iPhone 7]上的[!DNL Data Plan B]。 我们有两个家庭用户档案（跨设备用户档案），每个用户档案都连接到两个不同的设备用户档案。 符合区段资格所需的特征将分布在设备和跨设备配置文件中。
+让我们考虑一个由年收入超过100.000美元的家庭构成的区段，其中至少包含一个设备，该设备是[!DNL Data Plan B]上的[!DNL iPhone 7]。 我们有两个家庭用户档案（跨设备用户档案），每个用户档案都连接到两个不同的设备用户档案。 符合区段资格所需的特征将分布在设备和跨设备配置文件中。
 
 Audience Manager将合并每个设备+跨设备配置文件对，以查看合并的特征集是否符合该区段的条件。 由于Audience Manager会评估合并中包含的每个配置文件，因此设备配置文件和家庭配置文件都可以分段。
 
@@ -87,7 +93,7 @@ Audience Manager将合并每个设备+跨设备配置文件对，以查看合并
 
 ## 设备图选项 {#device-graph-options}
 
-为[!UICONTROL device graph]规则选择[!UICONTROL Profile Merge]选项取决于您的数字属性和业务目标所特有的条件。 这些一般准则可以帮助您了解何时使用一种类型的图形与何时使用另一种类型的图形。 请注意，要使用这些选项，您必须与外部设备图具有合同关系。 有关何时选择设备图选项的常规指导，请参阅下表。 有关特定用例，请参阅[配置文件链接设备图形用例](profile-link-use-case.md)和[外部设备图形用例](external-graph-use-cases.md)。
+为[!UICONTROL Profile Merge]规则选择[!UICONTROL device graph]选项取决于您的数字属性和业务目标所特有的条件。 这些一般准则可以帮助您了解何时使用一种类型的图形与何时使用另一种类型的图形。 请注意，要使用这些选项，您必须与外部设备图具有合同关系。 有关何时选择设备图选项的常规指导，请参阅下表。 有关特定用例，请参阅[配置文件链接设备图形用例](profile-link-use-case.md)和[外部设备图形用例](external-graph-use-cases.md)。
 
 <table id="table_66D9152D4FF040A186003272D456625D"> 
  <thead> 
@@ -108,7 +114,7 @@ Audience Manager将合并每个设备+跨设备配置文件对，以查看合并
   </tr> 
   <tr> 
    <td colname="col1"> <p>外部设备图形选项 </p> </td> 
-   <td colname="col2"> <p>使用与<span class="wintitle"> Audience Manager</span>集成的任何外部设备图形生成的<span class="keyword">配置文件合并</span>规则非常适合： </p> <p> 
+   <td colname="col2"> <p>使用与<span class="keyword"> Audience Manager</span>集成的任何外部设备图形生成的<span class="wintitle">配置文件合并</span>规则非常适合： </p> <p> 
      <ul id="ul_D76D773988604A619FA4A3BF37F910F0"> 
       <li id="li_969A0755A9E34CBEB2F7331C137B9A26">具有低级客户身份验证的数字资产。 </li> 
       <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">广泛、高影响力的品牌促销活动。 </li> 
@@ -120,7 +126,7 @@ Audience Manager将合并每个设备+跨设备配置文件对，以查看合并
 
 观看以下视频，了解[!UICONTROL Profile Merge Rules]的可能用例概述。
 
->[!VIDEO](https://video.tv.adobe.com/v/31954?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28975/)
 
 >[!MORELIKETHIS]
 >

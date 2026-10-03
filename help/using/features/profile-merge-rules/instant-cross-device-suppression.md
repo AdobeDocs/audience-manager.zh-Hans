@@ -1,27 +1,35 @@
 ---
-description: 当有多个设备与用户连接时，如果在其中任一设备上产生了特定体验，“即时跨设备抑制”功能会禁止这些设备上的用户。使用即时跨设备禁止显示功能可为您的用户提供一致的跨设备体验。 Audience Manager 中的实时取消区段功能可提供这种体验。
+description: 当有多个设备与用户连接时，如果在其中任一设备上产生了特定体验，“即时跨设备抑制”功能会禁止这些设备上的用户。 使用这项“即时跨设备抑制”功能，可为您的用户提供一致的跨设备体验。 Audience Manager 中的实时取消区段功能可提供这种体验。
 seo-description: Instant Cross-Device Suppression is the ability to suppress users across multiple devices connected to them when a particular experience occurs on any of these devices. Use the Instant Cross-Device Suppression capability to deliver a consistent experience across devices to your users. This experience is made possible by the real-time unsegment capabilities in Audience Manager.
 seo-title: Instant Cross-Device Suppression
 title: 即时跨设备抑制
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
 feature: Profile Merge
 exl-id: b9686210-e1aa-4f0a-a549-27d29c94e963
-TQID: https://experienceleague.adobe.com/8dXdDR8uduaPsKiDbkcdNYit0nESpBGezxwhrhU67GE
+TQID: 'https://experienceleague.adobe.com/8dXdDR8uduaPsKiDbkcdNYit0nESpBGezxwhrhU67GE'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 778
-ht-degree: 6%
-
+source-wordcount: '812'
+ht-degree: 8%
 ---
-
 # 即时跨设备抑制 {#instant-cross-device-suppression}
 
 [!UICONTROL Instant Cross-Device Suppression]能够在连接到这些设备的多个设备上禁止用户，当这些设备上发生特定体验时。 使用[!UICONTROL Instant Cross-Device Suppression]功能可为您的用户提供跨设备的一致体验。 Audience Manager 中的实时取消区段功能可提供这种体验。
@@ -31,13 +39,13 @@ ht-degree: 6%
 [!UICONTROL Instant Cross-Device Suppression]提供了两个关键用例：改进了用户体验和媒体效率。
 
 * **改进的用户体验**：已购买您的产品或服务的用户将看不到与购买之前相同的创意。 相反，您可以针对您知道他们尚未购买的产品或服务显示追加销售或交叉销售消息。
-* **媒体效率**：通过为所有[!DNL DSP]应用全局频率上限来优化促销活动支出。可以为属于一个用户的多个设备实时操作频率上限。
+* **媒体效率**：通过为所有[!DNL DSP]应用全局频率上限来优化促销活动支出。 可以为属于一个用户的多个设备实时操作频率上限。
 
 实时取消分段的技术详细信息在[配置文件合并规则和设备取消分段流程](merge-rule-unsegment.md)中进行了详细描述。 请阅读上述用例的实际实施情况。
 
 ## 转换后不定位 {#do-not-target-once}
 
-确保已转换的用户（已购买产品、已获得订阅等）不会看到与转换前相同的消息。 您可以使用[!UICONTROL AND NOT]逻辑获取此项，如下所示。
+确保您已进行转化（购买了产品、购买了订阅等）的用户 不会看到与转换前相同的消息传递。 您可以使用[!UICONTROL AND NOT]逻辑获取此项，如下所示。
 
 1. 使用两个特征创建一个区段，并使用[!UICONTROL AND NOT]逻辑，如下图所示。 您必须使用基于规则的特征来定义要实时触发的取消分段的转化事件。 详细了解如何[创建基于规则的特征](../traits/create-onboarded-rule-based-traits.md)。
 2. 将区段映射到任意数量的实时服务器到服务器目标。 阅读有关如何将区段添加到[服务器到服务器目标](../destinations/add-edit-segments.md)的信息。
@@ -70,7 +78,7 @@ ht-degree: 6%
 * 要使实时取消分段功能正常工作，必须将所需的分段映射到实时服务器到服务器目标。
 * 对于通过[设备图](profile-link-use-case.md#recommendations)连接到设备的设备，我们强制实施有关评估和取消分段的4个设备限制。 [设备图选项和设备取消分段](merge-rule-unsegment.md#device-graph-options-unsegmentation)中介绍了此限制&#x200B;。
 * 对于通过设备图连接的多个设备， unsegment命令将包含在批处理文件中，每24小时发送到目标一次。
-* 必须实时查看该设备（在[Edge](../../reference/system-components/components-edge.md)上）才能实时提示区段评估。 对于在符合特征[!UICONTROL time-to-live (TTL)]时具有[!DNL TTL]的特征，设备将通过批处理文件在24小时内自动取消分段&#x200B;。 阅读有关如何[设置特征过期时间间隔](../traits/create-onboarded-rule-based-traits.md#set-expiration-interval)的详细信息。
+* 必须实时查看该设备（在[Edge](../../reference/system-components/components-edge.md)上）才能实时提示区段评估。 对于在特征[!DNL TTL]得到满足时具有[!UICONTROL time-to-live (TTL)]的特征，设备将在24小时内通过批处理文件自动取消分段。阅读有&#x200B;关如何[设置特征过期时间间隔](../traits/create-onboarded-rule-based-traits.md#set-expiration-interval)的更多信息。
 * 如果您实时使用[!UICONTROL DCS API]来板载基于规则的特征，则可以使用[!UICONTROL AND NOT]逻辑触发取消分段。 了解有关[将数据发送到DCS API](../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)的更多信息。&#x200B;
 
 ## 需要注意的重要方面 — 计时 {#timing-notes}

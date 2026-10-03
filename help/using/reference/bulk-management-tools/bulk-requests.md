@@ -7,27 +7,36 @@ title: 批量请求
 uuid: 0192d26a-4cea-4e12-9fea-388b92b382f1
 feature: BAAAM
 exl-id: a0597bf4-79c8-404d-ba3b-a92c6b5c9c06
-TQID: https://experienceleague.adobe.com/9VACsTAdf5nqwXAeQCqA7ME7M1sTOwt-eW-fyVdE-Ag
+TQID: 'https://experienceleague.adobe.com/9VACsTAdf5nqwXAeQCqA7ME7M1sTOwt-eW-fyVdE-Ag'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
   - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: f341dd0b-34de-403e-a549-e0f581dcdda6
+    internal-label: BAAAM
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 253
+source-wordcount: '255'
 ht-degree: 0%
-
 ---
-
 # 批量请求{#bulk-requests}
 
 批量请求会返回可用于更新、创建、估计和删除工作表中的不同标题的数据。
@@ -44,7 +53,7 @@ t_bulk_requests.xml
 
 >[!NOTE]
 >
->[接受在](../../features/administration/administration-overview.md) UI中分配的[!DNL Audience Manager]RBAC组权限[!UICONTROL Bulk Management Tools]。
+>[!UICONTROL Bulk Management Tools]接受在[!DNL Audience Manager] UI中分配的[RBAC组权限](../../features/administration/administration-overview.md)。
 
 [!UICONTROL Request]工作表没有自己的列标题集，您无需将ID复制到任何列。 相反，它会根据您在工具栏中单击的操作按钮返回数据。 此外，可选的报表功能会返回像素触发的频率计数以及多个固定时间间隔内的独特用户计数。
 

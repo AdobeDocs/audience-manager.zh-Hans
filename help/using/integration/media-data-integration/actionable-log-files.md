@@ -8,32 +8,43 @@ title: 可操作的日志文件
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 exl-id: bd499931-4e02-4f64-82ba-46ef7c4ffd3c
-TQID: https://experienceleague.adobe.com/NL19RzO-EfALqH0Exkt5PZeBO-mZXztl4ioiJRp-g4g
+TQID: 'https://experienceleague.adobe.com/NL19RzO-EfALqH0Exkt5PZeBO-mZXztl4ioiJRp-g4g'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: f15e67cf-b90e-44f4-ae50-f1fb9f866a27
+    internal-label: Log files
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data integration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1601
+source-wordcount: '1628'
 ht-degree: 2%
-
 ---
-
 # 可操作的日志文件 {#actionable-log-files}
 
 [!UICONTROL Actionable Log Files]允许您从广告服务器日志文件中捕获媒体数据，并使用这些数据在Audience Manager中创建特征。 将广告服务器的展示次数、点击次数和转化次数捕获为特征，而无需附加[像素](../../integration/media-data-integration/impression-data-pixels.md)。
 
 >[!NOTE]
 >
->此文档中的文本样式（`monospaced text`、*斜体*、括号`[ ]` `( )`等）指示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../reference/code-style-elements.md)，以了解更多信息。
+>文本样式（`monospaced text`、*斜体*、括号`[ ]` `( )`等） 本文档中说明了代码元素和选项。 请参阅[代码和文本元素的样式约定](../../reference/code-style-elements.md)，以了解更多信息。
 
 ## 用途 {#purpose}
 
@@ -53,7 +64,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
-> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html) to get started.
+> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
 
 -->
 
@@ -69,7 +80,7 @@ ht-degree: 2%
 
 ## 可操作信号 {#actionable-signals}
 
-信号是[中的](../../reference/signal-trait-segment.md)最小数据单元[!DNL Audience Manager]。 [!UICONTROL Actionable Log Files]允许您从广告服务器日志中捕获展示事件、点击事件和转化事件中的广告商、业务部门、创意和促销活动值。
+信号是[!DNL Audience Manager]中的[最小数据单元](../../reference/signal-trait-segment.md)。 [!UICONTROL Actionable Log Files]允许您从广告服务器日志中捕获展示事件、点击事件和转化事件中的广告商、业务部门、创意和促销活动值。
 
 >[!IMPORTANT]
 >
@@ -146,7 +157,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p> <code>Revenue</code> </p> </td> 
    <td colname="col2"> <p> <code> d_revenue</code> </p> </td> 
-   <td colname="col3"> 销售额，以美元为单位，以–6的幂为单位。 乘以1.000.000即可得到美元金额。</td> 
+   <td colname="col3"> USD中的销售额，以–6的幂计算。 乘以1.000.000即可得到美元金额。</td> 
    <td colname="col4"> <p> <code>10</code> </p> </td> 
   </tr>
     <tr> 
@@ -343,7 +354,7 @@ UI中的![可操作信号](/help/using/integration/assets/alf-in-signals.png)
 
 ### 在Audience Optimization报表或Audience Lab中使用Google Campaign Manager Floodlight活动
 
-[Floodlight标记](https://support.google.com/dcm/partner/answer/4293719?hl=en)使广告商能够跟踪用户转化。 通过[!UICONTROL Actionable Log Files]，您可以在[!DNL Google Campaign Manager]Audience Optimization报表[或](../../reporting/audience-optimization-reports/audience-optimization-reports.md)Audience Lab[中跟踪](../../features/audience-lab/audience-lab.md)转化：
+[Floodlight标记](https://support.google.com/dcm/partner/answer/4293719?hl=en)使广告商能够跟踪用户转化。 通过[!UICONTROL Actionable Log Files]，您可以在[Audience Optimization报表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)或[Audience Lab](../../features/audience-lab/audience-lab.md)中跟踪[!DNL Google Campaign Manager]转化：
 
 1. 创建特征并使用以下特征规则从广告服务器日志中捕获转化：
 

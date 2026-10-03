@@ -8,20 +8,26 @@ title: 创建基于规则的特征或已载入的特征
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
 feature: Traits
 exl-id: cad318ee-93b2-4afa-8a2f-a67b068eec0a
-TQID: https://experienceleague.adobe.com/WP-VxrKlSi7pHB9IEIFXDt1SD-iu85DynxDPyoVQAcQ
+TQID: 'https://experienceleague.adobe.com/WP-VxrKlSi7pHB9IEIFXDt1SD-iu85DynxDPyoVQAcQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 356
+source-wordcount: '379'
 ht-degree: 2%
-
 ---
-
 # 创建[!UICONTROL Rules-Based]或[!UICONTROL Onboarded Traits] {#create-rules-based-or-onboarded-traits}
 
 介绍特定于[!UICONTROL rules-based]和[!UICONTROL onboarded]特征创建过程的设置步骤和功能。
@@ -30,7 +36,7 @@ ht-degree: 2%
 
 ## 特征的基本信息 {#basics}
 
-在[!UICONTROL Trait Builder]中，[!UICONTROL Basic Information]设置允许您创建新设置，或编辑现有[!UICONTROL traits]。 [!UICONTROL Basic Information]、[!UICONTROL rules-based]和[!UICONTROL onboarded]的[!UICONTROL algorithmic traits]设置相同。 要创建新[!UICONTROL trait]，请提供名称（避免使用特殊字符）、[!UICONTROL data source]并选择[!UICONTROL storage folder]。 其他[!UICONTROL Basic Information]字段是可选的。
+在[!UICONTROL Trait Builder]中，[!UICONTROL Basic Information]设置允许您创建新设置，或编辑现有[!UICONTROL traits]。 [!UICONTROL rules-based]、[!UICONTROL onboarded]和[!UICONTROL algorithmic traits]的[!UICONTROL Basic Information]设置相同。 要创建新[!UICONTROL trait]，请提供名称（避免使用特殊字符）、[!UICONTROL data source]并选择[!UICONTROL storage folder]。 其他[!UICONTROL Basic Information]字段是可选的。
 
 <!-- c_tb_basics.xml -->
 
@@ -67,7 +73,7 @@ ht-degree: 2%
   </tr>
    <tr> 
    <td colname="col1"> <b><span class="uicontrol">事件类型</span></b> </td> 
-   <td colname="col2"> 通常根据功能（例如，转化、网站访客、合作伙伴、页面查看等）将特征分配给类型或类别。 可选。 <p> 要了解如何创建转化特征，请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html?lang=zh-Hans">在Audience Manager中创建转化特征视频</a>。 </p></td> 
+   <td colname="col2"> 通常根据功能（例如，转化、网站访客、合作伙伴、页面查看等）将特征分配给类型或类别。 可选。 <p> 要了解如何创建转化特征，请参阅<a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">在Audience Manager中创建转化特征视频</a>。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">集成代码</span></b> </td> 
@@ -90,13 +96,13 @@ ht-degree: 2%
 
 ## 设置[!UICONTROL Trait]过期时间间隔 {#set-expiration-interval}
 
-在[!UICONTROL Trait Builder]中，[!UICONTROL Advanced Options]允许您设置[!DNL TTL]的生存时间([!UICONTROL trait])间隔。 [!DNL TTL]定义符合条件的访客在[!UICONTROL trait]内停留的天数（默认为120天）。 当设置为0时，[!UICONTROL trait]成员资格永不过期。
+在[!UICONTROL Trait Builder]中，[!UICONTROL Advanced Options]允许您设置[!UICONTROL trait]的生存时间([!DNL TTL])间隔。 [!DNL TTL]定义符合条件的访客在[!UICONTROL trait]内停留的天数（默认为120天）。 当设置为0时，[!UICONTROL trait]成员资格永不过期。
 
 <!-- t_tb_ttl.xml -->
 
 ### 为[!UICONTROL trait]设置TTL
 
-1. 展开[!UICONTROL Advanced Options]部分并输入一个数字以为[!DNL TTL]设置[!UICONTROL trait]值。
+1. 展开[!UICONTROL Advanced Options]部分并输入一个数字以为[!UICONTROL trait]设置[!DNL TTL]值。
 1. 单击 **[!UICONTROL Save]**。
 
    ![](assets/TTL.png)

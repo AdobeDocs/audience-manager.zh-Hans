@@ -6,18 +6,24 @@ title: 按键值对搜索信号
 uuid: 2a38d0d4-4a2e-4ca5-b9ec-af9d4963d876
 feature: Data Explorer
 exl-id: d598da6b-8dc0-47ce-8389-1973b1803711
-TQID: https://experienceleague.adobe.com/Apm-P3y-WJlOGO1UIbRJCfzAsgTzzk991PdU4DDLtGU
+TQID: 'https://experienceleague.adobe.com/Apm-P3y-WJlOGO1UIbRJCfzAsgTzzk991PdU4DDLtGU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
+subfeature_v2:
+  - id: a2c6d65b-635d-4454-a9cc-9771ed501bb4
+    internal-label: Data Explorer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: '302'
 ht-degree: 0%
-
 ---
-
 # 按键值对搜索信号 {#search-signals-by-key-value-pairs}
 
 根据它们各自的键值对搜索一个或多个信号。
@@ -29,7 +35,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->为了提供简化的用户体验，键值对搜索结果基于数据采样。 有关[如何使用数据取样以及为什么在比较键值搜索与常规搜索时可能会出现轻微结果差异的详细信息，请参阅](/help/using/reporting/report-sampling.md)数据取样率和错误率[!DNL Audience Manager]。
+>为了提供简化的用户体验，键值对搜索结果基于数据采样。 有关[!DNL Audience Manager]如何使用数据取样以及为什么在比较键值搜索与常规搜索时可能会出现轻微结果差异的详细信息，请参阅[数据取样率和错误率](/help/using/reporting/report-sampling.md)。
 
 使用多个键值对搜索信号时，[!DNL Audience Manager]使用逻辑&#x200B;**AND**&#x200B;运算符链接这些对。 例如，假设您使用以下键值对执行搜索：
 
@@ -43,7 +49,7 @@ ht-degree: 0%
 
 ## 从信号搜索中排除的信号 {#excluded-signals}
 
-`d_`未显示Audience Manager使用且以`h_`和[!UICONTROL Signals Search]前缀为前缀的键变量。 有关详细信息，请参阅键变量[的](../../traits/trait-variable-prefixes.md)前缀要求。
+[!UICONTROL Signals Search]未显示Audience Manager使用且以`d_`和`h_`前缀为前缀的键变量。 有关详细信息，请参阅键变量](../../traits/trait-variable-prefixes.md)的[前缀要求。
 
 ## 区分大小写和搜索自动完成 {#case-insensitivity}
 

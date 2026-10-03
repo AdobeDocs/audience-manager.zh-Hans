@@ -6,20 +6,26 @@ title: 了解信号
 uuid: 04a0554e-954e-484a-8838-9161ef416872
 feature: Data Explorer
 exl-id: 12ab53e5-302b-4a82-9d8e-07b60139c65e
-TQID: https://experienceleague.adobe.com/KA-oQWZi6lAXcKN5DY5-sYRYjSmR1AWkOVJkq4w8voo
+TQID: 'https://experienceleague.adobe.com/KA-oQWZi6lAXcKN5DY5-sYRYjSmR1AWkOVJkq4w8voo'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
+subfeature_v2:
+  - id: a2c6d65b-635d-4454-a9cc-9771ed501bb4
+    internal-label: Data Explorer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 364
+source-wordcount: '379'
 ht-degree: 1%
-
 ---
-
 # 了解信号
 
 信号是Audience Manager中的最小信息单位。 它们表示在线资产上的用户交互或用户活动，然后传递到Audience Manager以供在特征规则中使用。
@@ -32,14 +38,14 @@ ht-degree: 1%
 
 * *键值对*&#x200B;显示[!DNL Audience Manager]所接收信号的键值对。
 * *信号类型*&#x200B;描述了每个信号的类别。 信号分为以下类别之一：
-   * [可操作的日志文件](/help/using/integration/media-data-integration/actionable-log-files.md)：从媒体性能日志文件接收的实时信号；
-   * [!DNL Adobe Analytics]：从您的[!DNL Adobe Analytics]帐户收到的实时信号；
-   * 常规在线数据：受众活动生成的实时数据，未包含在可操作的日志文件和[!DNL Adobe Analytics]中；
-   * 载入记录：通过批量数据传输接收的数据。
+  * [可操作的日志文件](/help/using/integration/media-data-integration/actionable-log-files.md)：从媒体性能日志文件接收的实时信号；
+  * [!DNL Adobe Analytics]：从您的[!DNL Adobe Analytics]帐户收到的实时信号；
+  * 常规在线数据：受众活动生成的实时数据，未包含在可操作的日志文件和[!DNL Adobe Analytics]中；
+  * 载入记录：通过批量数据传输接收的数据。
 * *信号Source*&#x200B;取决于信号类型：
-   * 对于已载入的信号，信号源是数据源名称。
-   * 对于源自[!DNL Adobe Analytics]的信号，数据源将始终是报表包。
-   * 对于可操作的日志文件和常规联机数据，不显示信号源信息。
+  * 对于已载入的信号，信号源是数据源名称。
+  * 对于源自[!DNL Adobe Analytics]的信号，数据源将始终是报表包。
+  * 对于可操作的日志文件和常规联机数据，不显示信号源信息。
 * *总计数*&#x200B;显示[!DNL Audience Manager]在过去7天内接收实时信号的总次数。
 * *包含在特征中*&#x200B;显示信号是否属于任何特征。 单击箭头可查看包含相应信号的特征。 对于不属于任何特征的信号，列值将更改为[!UICONTROL Create Onboarded Trait]或[!UICONTROL Create Rule-Based Trait]。
 

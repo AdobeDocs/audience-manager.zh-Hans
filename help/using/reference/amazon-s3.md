@@ -7,21 +7,25 @@ title: Amazon S3关于
 uuid: 8197ecdf-df8f-488d-bbc0-d8d4205b42b4
 feature: Reference
 exl-id: 12c4f00d-2916-4224-b834-d3a9ea86314a
-TQID: https://experienceleague.adobe.com/HRLp9cXzF3yRFulThePWxGt6TRD1HxgecSiFlnSAxlA
+TQID: 'https://experienceleague.adobe.com/HRLp9cXzF3yRFulThePWxGt6TRD1HxgecSiFlnSAxlA'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: 6a8f3a31-6f0b-5101-9878-fb698e568543
+    internal-label: Reference
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Security
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 269
+source-wordcount: '290'
 ht-degree: 0%
-
 ---
-
 # Amazon S3：关于{#amazon-s-about}
 
 有关Amazon简单存储服务(Amazon S3)的信息。
@@ -37,9 +41,9 @@ ht-degree: 0%
 * **多部分上载：**&#x200B;可以快速高效地上载大型文件作为多部分文件上载。
 * **安全性：** Amazon S3提供了强大的安全性。
 
-   * 只有相应的客户或客户才能访问所有目录。
-   * HTTPS协议支持上传和下载。 在[!DNL Audience Manager]中传输文件时应始终使用HTTPS。
-   * Amazon S3为加密[出站数据文件](../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)提供了静态加密。 我们使用[SSE-S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html)加密方法，该方法允许由Amazon S3自动生成和管理加密密钥。
+  * 只有相应的客户或客户才能访问所有目录。
+  * HTTPS协议支持上传和下载。 在[!DNL Audience Manager]中传输文件时应始终使用HTTPS。
+  * Amazon S3为加密[出站数据文件](../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)提供了静态加密。 我们使用[SSE-S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html)加密方法，该方法允许由Amazon S3自动生成和管理加密密钥。
 
 * **调试和备份支持：** Amazon S3允许[!DNL Audience Manager]保留文件的精确副本，以便更轻松地调试或重新传输。
 

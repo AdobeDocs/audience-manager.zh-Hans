@@ -1,5 +1,5 @@
 ---
-description: 在特征生成器中，表达式生成器允许您创建和测试建立受众资格要求的规则。 规则由键值对组成，如“color == blue”或“price&amp；gt； 100”。 比较运算符建立键和值之间的关系。 布尔表达式确定规则组之间的关系。
+description: 在特征生成器中，表达式生成器允许您创建和测试建立受众资格要求的规则。 规则由键值对组成，如“color == blue”或“price &gt； 100”。 比较运算符建立键和值之间的关系。 布尔表达式确定规则组之间的关系。
 seo-description: In Trait Builder, the Expression Builder lets you create and test rules that establish audience qualification requirements. Rules consist of key-value pairs such as "color == blue" or "price &gt; 100". Comparison operators establish the relationship between keys and values. Boolean expressions determine the relationship between rule groups.
 seo-title: Managing Trait Rules
 solution: Audience Manager
@@ -7,16 +7,21 @@ title: 管理特征规则
 uuid: 827d4567-2b6f-411e-bd5c-9735c916291a
 feature: Traits
 exl-id: 4561b19a-bbb5-41ec-ac79-ab3e2ab75548
-TQID: https://experienceleague.adobe.com/36XAqdCyrogL7J9J1Wv7ZgKMMD8lG7DwUy6aWWT5z-8
+TQID: 'https://experienceleague.adobe.com/36XAqdCyrogL7J9J1Wv7ZgKMMD8lG7DwUy6aWWT5z-8'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 678
+source-wordcount: '686'
 ht-degree: 0%
-
 ---
-
 # 管理特征规则 {#managing-trait-rules}
 
 在[!UICONTROL Trait Builder]中，[!UICONTROL Expression Builder]允许您创建和测试建立受众资格要求的规则。 规则包含键值对，如`color == blue`或`price > 100`。 比较运算符建立键和值之间的关系。 [!DNL Boolean]表达式确定规则组之间的关系。
@@ -56,9 +61,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果您的事件调用使用该语法将数据发送到`c_`，请包含键变量的[!DNL Audience Manager]前缀（或任何其他命名约定）。
+   >如果您的事件调用使用该语法将数据发送到[!DNL Audience Manager]，请包含键变量的`c_`前缀（或任何其他命名约定）。
 
-1. 从[下拉列表中选择](../../features/traits/trait-comparison-operators.md)比较运算符&#x200B;**[!UICONTROL Operator]**。 比较运算符评估信号中元素之间的关系。
+1. 从&#x200B;**[!UICONTROL Operator]**&#x200B;下拉列表中选择[比较运算符](../../features/traits/trait-comparison-operators.md)。 比较运算符评估信号中元素之间的关系。
 
    >[!NOTE]
    >
@@ -68,7 +73,7 @@ ht-degree: 0%
 
 ### 示例 {#example-trait-rule}
 
-在以下示例中，用户已根据产品ID创建新的特征规则。 为生成此规则，用户提供了键`productkey`，该键与值`==`的equals运算符(`2093`)链接。
+在以下示例中，用户已根据产品ID创建新的特征规则。 为生成此规则，用户提供了键`productkey`，该键与值`2093`的equals运算符(`==`)链接。
 
 ![](assets/tb_sample_rule1.png)
 

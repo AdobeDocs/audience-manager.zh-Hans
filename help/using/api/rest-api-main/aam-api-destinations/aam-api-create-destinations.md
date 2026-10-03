@@ -7,19 +7,23 @@ title: 创建目标
 uuid: 12f04151-ad0e-4cb6-8f3b-b5c427dc2cef
 feature: API
 exl-id: bae0f304-0ff3-4c5f-b432-19aef61d9d10
-TQID: https://experienceleague.adobe.com/5--FLcQxcIQYMVuch5YXuxl6e18o1QLw6hBZj4rk95c
+TQID: 'https://experienceleague.adobe.com/5--FLcQxcIQYMVuch5YXuxl6e18o1QLw6hBZj4rk95c'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
   - id: c814092e-2730-45e8-a12d-e084529f52cb
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Destinations
+subfeature_v2:
+  - id: 7dee9651-deb5-5d4d-acfd-fbc10040467f
+    internal-label: API
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 346
+source-wordcount: '356'
 ht-degree: 6%
-
 ---
-
 # 创建目标 {#create-destinations}
 
 使用这些[!UICONTROL RESTful API]方法创建目标。
@@ -28,7 +32,7 @@ ht-degree: 6%
 
 ## 支持的目标类型：仅URL和Cookie
 
-可用的`POST`方法仅允许您创建[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，无法使用这些[!UICONTROL server-to-server destinations]方法创建[!DNL REST API]。 但是，相关目标`GET`方法允许您检索有关在用户界面中创建的[!UICONTROL server-to-server destinations]的信息。
+可用的`POST`方法仅允许您创建[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，无法使用这些[!DNL REST API]方法创建[!UICONTROL server-to-server destinations]。 但是，相关目标`GET`方法允许您检索有关在用户界面中创建的[!UICONTROL server-to-server destinations]的信息。
 
 ## 创建非串行URL目标 {#create-nonserial-dest}
 
@@ -141,7 +145,7 @@ ht-degree: 6%
 
 ## 创建Cookie目标：单键，非序列化 {#create-cookie-dest-single}
 
-一种`POST`方法，可让您创建接受由单键值对（如[!UICONTROL cookie destination]或`gender=male`）组成的区段的`gender=female`。
+一种`POST`方法，可让您创建接受由单键值对（如`gender=male`或`gender=female`）组成的区段的[!UICONTROL cookie destination]。
 
 <!-- r_cookie_destination_singlekey_noserial.xml -->
 

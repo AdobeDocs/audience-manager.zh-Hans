@@ -8,23 +8,28 @@ title: Beta环境
 uuid: de4a1a46-cfa4-4f64-8569-48a7650fd8cf
 feature: Reference
 exl-id: a6a5e1c2-29a2-40bf-972c-87fb8716a394
-TQID: https://experienceleague.adobe.com/zz0F-QZ2QIVdVkGO5T9LoX4R8T12ivdz-pQ3Iv-DLao
+TQID: 'https://experienceleague.adobe.com/zz0F-QZ2QIVdVkGO5T9LoX4R8T12ivdz-pQ3Iv-DLao'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
+  - id: 6a8f3a31-6f0b-5101-9878-fb698e568543
+    internal-label: Reference
 subfeature_v2:
   - id: d8f681b8-67cc-42dc-85c5-a0977528a942
+    internal-label: Data Collection Server
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 362
+source-wordcount: '378'
 ht-degree: 2%
-
 ---
-
 # Beta环境 {#beta-environment}
 
 测试版环境用于测试您的Audience Manager实施。 在Beta版中所做的更改不会影响生产数据。 如果您有兴趣使用测试版环境，请联系您的Audience Manager合作伙伴解决方案代表。
@@ -39,7 +44,7 @@ Beta环境会在每月末的非高峰时段更新。
 
 >[!IMPORTANT]
 >
->请注意，您的客户数据（[信号、特征和区段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=zh-Hans)）未在生产环境和测试版环境之间同步。
+>请注意，您的客户数据（[信号、特征和区段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=en)）未在生产环境和测试版环境之间同步。
 
 ## 入站流量
 
@@ -57,7 +62,7 @@ Beta环境会在每月末的非高峰时段更新。
 
 | 服务 | URL/主机名 | 如何获取访问权限 |
 |--- |--- | --- |
-| S3 | 请联系您的Audience Manager合作伙伴解决方案代表或客户关怀 | 请联系您的Audience Manager合作伙伴解决方案代表或客户关怀团队，为您的测试版实例设置Amazon S3存储段。 阅读有关使用Amazon S3[的](../reference/amazon-s3.md)优势的信息。 |
+| S3 | 请联系您的Audience Manager合作伙伴解决方案代表或客户关怀 | 请联系您的Audience Manager合作伙伴解决方案代表或客户关怀团队，为您的测试版实例设置Amazon S3存储段。 阅读有关使用Amazon S3](../reference/amazon-s3.md)的[优势的信息。 |
 | DCS | `https://dcs-beta.demdex.net/...` | 请参阅[在Beta环境中访问DCS](../reference/beta-environment.md#access-dcs-beta-environment)。 |
 | 用户界面 | `https://bank-beta.demdex.com` | 您的生产环境凭据对测试版环境有效。 |
 | API | `https://api-beta.demdex.com/...` | 您的生产环境凭据对测试版环境有效。 我们建议您创建通用API用户，[查看详细信息](../api/rest-api-main/aam-api-getting-started.md#requirements)。 |

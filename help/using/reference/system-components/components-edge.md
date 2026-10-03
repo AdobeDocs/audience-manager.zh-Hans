@@ -7,18 +7,24 @@ title: 了解Edge数据中心
 uuid: 4177e666-99f4-453d-94dd-058c6182c8d2
 feature: System Components
 exl-id: 28958b49-3075-4601-9271-ef2913721a66
-TQID: https://experienceleague.adobe.com/S1eOQwB9eoOlLbnbXtqjArrSEa2cTXjWwvJfwNbAtXc
+TQID: 'https://experienceleague.adobe.com/S1eOQwB9eoOlLbnbXtqjArrSEa2cTXjWwvJfwNbAtXc'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+subfeature_v2:
+  - id: f518b7e7-52a7-4298-a970-88c25c36ab31
+    internal-label: System components
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data collection
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 222
+source-wordcount: '225'
 ht-degree: 0%
-
 ---
-
 # 了解Edge数据中心{#understanding-the-edge-data-center}
 
 Audience Manager使用分布式边缘计算拓扑来满足外部来源对我们的系统提出的需求。
@@ -47,4 +53,4 @@ c_compedge.xml
 
 ## 地域分配和负载平衡 {#geo-dist-balance}
 
-查看[!DNL DCS]数据收集组件[中的](../../reference/system-components/components-data-collection.md)部分。
+查看[数据收集组件](../../reference/system-components/components-data-collection.md)中的[!DNL DCS]部分。

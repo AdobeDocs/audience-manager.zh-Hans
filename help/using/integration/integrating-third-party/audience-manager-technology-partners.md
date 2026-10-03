@@ -6,13 +6,20 @@ keywords: 激活；激活合作伙伴、目标、目标
 solution: Audience Manager
 title: Adobe Audience Manager技术合作伙伴
 feature: Third-party Integration
-source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: 5c645d93-a56e-58b4-b860-6a587b608d44
+    internal-label: Third-party Integration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 68%
-
 ---
-
 
 # Audience Manager激活合作伙伴
 
@@ -22,7 +29,7 @@ ht-degree: 68%
 
 * **已更新** =显示此激活合作伙伴有更新的上次日期。
 * **取消区段** =取消分段描述了取消资格并从区段中删除设备配置文件的进程。 能否从区段中删除设备配置文件取决于用于创建配置文件合并规则的设备选项。 在GDPR删除请求的上下文中也使用取消分段。请读取[配置文件合并规则和设备取消分段流程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和具有取消分段功能的[Audience Manager合作伙伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience Manager会将取消分段信息发送到下面标有“是”的目标。
-* **接收IAB TCF同意信号** =适用于IAB TCF的Audience Manager插件允许您将IAB TC字符串转发给激活合作伙伴，同时尊重用户所做的隐私选择。 读取适用于IAB TCF[&#128279;](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)的Audience Manager插件。
+* **接收IAB TCF同意信号** =适用于IAB TCF的Audience Manager插件允许您将IAB TC字符串转发给激活合作伙伴，同时尊重用户所做的隐私选择。 读取适用于IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)的[Audience Manager插件。
 * **ICDS** =此列列出了支持即时跨设备隐藏的合作伙伴。 读取[即时跨设备抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
 * **移动设备ID** =此列列出可以从Audience Manager接收移动设备ID的合作伙伴。
 

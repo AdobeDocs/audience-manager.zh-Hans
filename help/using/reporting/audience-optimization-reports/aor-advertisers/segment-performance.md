@@ -7,26 +7,33 @@ title: 区段绩效报表
 uuid: 5156a4c7-831d-4a95-a1be-eb516f0d91b7
 feature: Audience Optimization Reports
 exl-id: 2cd54b18-6916-4d69-bd65-7b8c8846c446
-TQID: https://experienceleague.adobe.com/CiPncU0YP2UFJhPi8EbFX-cACBvjldl5FD3YJijOOMc
+TQID: 'https://experienceleague.adobe.com/CiPncU0YP2UFJhPi8EbFX-cACBvjldl5FD3YJijOOMc'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: ff9c2088-e1d9-47aa-85e4-6765b719f5c7
+    internal-label: Audience Optimization Reports
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Optimization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 567
+source-wordcount: '571'
 ht-degree: 0%
-
 ---
-
 # 区段绩效报表{#segment-performance-report}
 
 [!UICONTROL Segment Performance]报表按展示次数和转化率比较已映射和未映射的区段。 映射的区段是指您创建并发送到目标进行定位的区段。 未映射的区段是您已创建但尚未发送到目标进行定位的区段。 比较报表内和报表之间的这些不同区段类型有助于优化现有促销活动，并查找您可能希望发送到目标位置以进行定位的被忽略的区段。
 
 ## 如何读取映射的区段结果 {#read-mapped-segment-results}
 
-映射的[!UICONTROL Segment Performance]报表显示了您创建并发送到目标进行定位的所有区段。您的映射区段在报表中的位置可以告知您关于哪些区段表现良好以及在何处您可能需要做出一些调整的详细信息。
+映射的[!UICONTROL Segment Performance]报告显示了您创建并发送到目标以进行定位的所有区段。您的映射区段在报表中的位置可以让您详细了解哪些区段表现良好以及在何处可能需要做出一些调整。
 
 要阅读报告，它有助于将结果分为4个部分，其中虚线（红色）与下面示例报告中所示的类别。
 

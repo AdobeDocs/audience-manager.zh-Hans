@@ -7,16 +7,21 @@ title: 区段目的、构成和规则
 uuid: 886d4abe-b1b6-4983-b4fb-b552d54d51ba
 feature: Segments
 exl-id: 4e4da7a7-3267-4564-b1c5-663dcddf2b93
-TQID: https://experienceleague.adobe.com/ybEzOukcOXFXD8ozjGEYd-ma-bmjI-ldDtpLBUZsJFg
+TQID: 'https://experienceleague.adobe.com/ybEzOukcOXFXD8ozjGEYd-ma-bmjI-ldDtpLBUZsJFg'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b52f95d5-ca6b-4fda-a49e-994dc0a63402
+    internal-label: Segments
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 303
+source-wordcount: '324'
 ht-degree: 1%
-
 ---
-
 # 区段：目的、构成和规则 {#segments-purpose-composition-and-rules}
 
 描述[!UICONTROL segments]及其组成部分，以及使用[!UICONTROL Segment Builder]创建规则。
@@ -26,7 +31,7 @@ ht-degree: 1%
 *`segment`*（或&#x200B;*`audience`*）是共享通用属性的一组用户。 在Audience Manager中，您使用服务器端规则创建[!UICONTROL segments]。 这些规则允许您根据网站访客属性构建受众组，例如：
 
 * 行为；
-* 人口统计（年龄、性别、收入等）;
+* 人口统计（年龄、性别、收入等）；
 * 可在用户界面中定义的其他特性。
 
 ## [!UICONTROL Segment]合成
@@ -39,9 +44,9 @@ Audience Manager [!UICONTROL segment]是一个服务器端规则，由单个特�
 
 >[!TIP]
 >
->Audience Manager [!UICONTROL segments]与[!DNL Adobe Analytics] [!UICONTROL segments]不同。 阅读[了解Analytics和Audience Manager中的区段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=zh-Hans)以了解两者之间区别的深入说明。
+>Audience Manager [!UICONTROL segments]与[!DNL Adobe Analytics] [!UICONTROL segments]不同。 阅读[了解Analytics和Audience Manager中的区段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)以了解两者之间区别的深入说明。
 
-## 使用[!UICONTROL Segments]创建基于规则的[!UICONTROL Segment Builder]
+## 使用[!UICONTROL Segment Builder]创建基于规则的[!UICONTROL Segments]
 
 不同于响应简单是/否条件而触发的传统像素，[!UICONTROL Segment Builder]允许您创建复杂的[!UICONTROL segment]要求。 与[!UICONTROL traits]一样，[!UICONTROL segments]使用[!DNL Boolean]表达式([!DNL AND]、[!DNL OR]、[!DNL NOT])、比较运算符（大于、小于、等于等）和回访间隔/频度条件评估数据。 这些功能有助于创建与您的业务需求相关的重点受众[!UICONTROL segments]。
 

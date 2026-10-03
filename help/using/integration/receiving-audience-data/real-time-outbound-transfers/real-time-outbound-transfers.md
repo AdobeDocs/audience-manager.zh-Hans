@@ -7,22 +7,30 @@ title: 实时出站数据传输
 uuid: 1895e818-7ab8-4569-a920-4b0a4c8b83d2
 feature: Outbound Data Transfers
 exl-id: 12aee831-1a44-4cd6-aeba-7738a584dfe7
-TQID: https://experienceleague.adobe.com/uaVdbqmIOGWFad6aDmDJCBDh4KxNMBL-dei0Rxx2kLQ
+TQID: 'https://experienceleague.adobe.com/uaVdbqmIOGWFad6aDmDJCBDh4KxNMBL-dei0Rxx2kLQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: bcf89bb2-9d92-4897-90ec-483950be810f
+    internal-label: Outbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 677
+source-wordcount: '695'
 ht-degree: 2%
-
 ---
-
 # 实时出站数据传输 {#real-time-outbound-data-transfers}
 
 出站实时数据传输进程将用户数据作为一系列[!DNL JSON]格式消息传送到目标平台。
@@ -138,7 +146,7 @@ ht-degree: 2%
      <li id="li_8352B919A87242E68716FB9EC0443407">根据区段规则从区段中删除。 </li> 
      <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">根据区段的<a href="../../../features/traits/segment-ttl-explained.md">生存时间间隔</a>从区段中删除。 </li> 
      <li id="li_F48D1052BA2B45108225641292CC748D">如果最近120天未看到这些幻灯片，则将其移至不活动状态。 </li>
-     <li>由于隐私更改请求（即<span class="keyword"> GDPR</span>）已删除</li>
+     <li>由于隐私更改请求（即<span class="keyword">）已删除 GDPR</span>)</li>
     </ul> <p>当用户未分段时，同步到<span class="keyword"> Audience Manager</span> ID的所有合作伙伴ID都将接收<code> "Status":"0"</code>标记。 </p> </td> 
   </tr> 
   <tr valign="top"> 
@@ -151,7 +159,7 @@ ht-degree: 2%
 
 ## 安全性
 
-通过使用私钥[签署HTTP请求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)或通过[!DNL Audience Manager]OAuth 2.0[协议进行](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)身份验证，您可以保护实时出站数据传输进程。
+通过使用私钥[签署HTTP请求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)或通过[OAuth 2.0](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)协议进行[!DNL Audience Manager]身份验证，您可以保护实时出站数据传输进程。
 
 ## 请求
 

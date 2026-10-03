@@ -1,5 +1,5 @@
 ---
-description: Audience Optimization for Publishers 可以帮助您针对您所拥有和运营的内容，确定 Audience Manager 区段的潜在效果机会。这些报表将日志级别的促销活动效果数据与Audience Manager量度相结合，以告知受众优化和盈利机会。
+description: Audience Optimization for Publishers 可以帮助您针对您所拥有和运营的内容，确定 Audience Manager 区段的潜在效果机会。 这些报表将日志级别的促销活动效果数据与Audience Manager量度相结合，以告知受众优化和盈利机会。
 seo-description: Audience Optimization for Publishers can help you identify potential performance opportunities for Audience Manager segments on your owned and operated content. These reports combine log-level campaign performance data with Audience Manager metrics to inform audience optimizations and monetization opportunities.
 seo-title: Audience Optimization for Publishers
 solution: Audience Manager
@@ -7,23 +7,31 @@ title: 适用于出版商的Audience Optimization
 uuid: 8425e237-ec52-4615-bb00-84ece4ebffe1
 feature: Audience Optimization Reports
 exl-id: 5972ea89-3e4d-48a5-bdd2-0a34211d8bfd
-TQID: https://experienceleague.adobe.com/5SM5KM03Zc9BhdXa6DtIpuPFn7JP9QGJ-nAiJFuKBNI
+TQID: 'https://experienceleague.adobe.com/5SM5KM03Zc9BhdXa6DtIpuPFn7JP9QGJ-nAiJFuKBNI'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: ff9c2088-e1d9-47aa-85e4-6765b719f5c7
+    internal-label: Audience Optimization Reports
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Optimization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 231
+source-wordcount: '235'
 ht-degree: 19%
-
 ---
-
 # 适用于出版商的Audience Optimization{#audience-optimization-for-publishers}
 
-Audience Optimization for Publishers 可以帮助您针对您所拥有和运营的内容，确定 Audience Manager 区段的潜在效果机会。这些报表将日志级别的促销活动效果数据与Audience Manager量度相结合，以告知受众优化和盈利机会。
+Audience Optimization for Publishers 可以帮助您针对您所拥有和运营的内容，确定 Audience Manager 区段的潜在效果机会。 这些报表将日志级别的促销活动效果数据与Audience Manager量度相结合，以告知受众优化和盈利机会。
 
 ## 概述 {#aor-overview}
 

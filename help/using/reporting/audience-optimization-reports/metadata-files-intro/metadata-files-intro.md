@@ -7,23 +7,32 @@ title: 日志数据和元数据文件
 uuid: 80aa4bc3-c660-4e65-8c22-2ddbb7bddd4f
 feature: Log Files
 exl-id: c913372f-4a0a-420c-933e-23b30393fbaf
-TQID: https://experienceleague.adobe.com/c8p7nxaYk3k8XryNH7wubskLCsYByPLqG1k2k4C7Rno
+TQID: 'https://experienceleague.adobe.com/c8p7nxaYk3k8XryNH7wubskLCsYByPLqG1k2k4C7Rno'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: f15e67cf-b90e-44f4-ae50-f1fb9f866a27
+    internal-label: Log files
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Optimization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 161
+source-wordcount: '163'
 ht-degree: 1%
-
 ---
-
 # 日志数据和元数据文件{#data-and-metadata-files}
 
 数据文件包含可用于以下各项的展示次数、点击次数或转化数据：
@@ -35,7 +44,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->要使用元数据文件，您的事件调用必须包括&#x200B;*概述和映射*&#x200B;部分中列出的[所有](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)参数。
+>要使用元数据文件，您的事件调用必须包括[概述和映射](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)部分中列出的&#x200B;*所有*&#x200B;参数。
 
 * [Audience Optimization报表的数据文件以及可操作的日志文件](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
 * [元数据文件的概述和映射](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
