@@ -6,25 +6,34 @@ solution: Audience Manager
 title: 使用基于人员的平台进行身份验证
 feature: People-based Destinations
 exl-id: d3e136d0-2b06-412a-9b9b-75b661c9aa14
-TQID: https://experienceleague.adobe.com/CRnaV6c1GMdvbnssHoLDJO4H7V79mhg1kYvwMDE-w0c
+TQID: 'https://experienceleague.adobe.com/CRnaV6c1GMdvbnssHoLDJO4H7V79mhg1kYvwMDE-w0c'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+subfeature_v2:
+  - id: d7221605-094b-45a5-891f-f37bd58c0055
+    internal-label: People based Destinations
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 526
+source-wordcount: '541'
 ht-degree: 0%
-
 ---
-
 # 使用基于人员的平台进行身份验证 {#authentication-with-people-based-platforms}
 
 >[!IMPORTANT]
@@ -66,6 +75,6 @@ Audience Manager通过在一段时间后过期的身份验证令牌处理您与�
 
 1. 登录到您的Audience Manager帐户，然后转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。
 1. 确定续订身份验证所需的集成。 过期的身份验证将标记为[!UICONTROL Expired]，而即将过期的身份验证会显示剩余的身份验证天数。
-1. 单击&#x200B;**[!UICONTROL Renew]**&#x200B;列中相应的[!UICONTROL Expiration]图标。 这会触发&#x200B;**[!UICONTROL Renew Account]**&#x200B;工作流，该工作流将带您回到Social平台的身份验证页面。 进行身份验证后，令牌将续订并带有新的到期日期。
+1. 单击[!UICONTROL Expiration]列中相应的&#x200B;**[!UICONTROL Renew]**&#x200B;图标。 这会触发&#x200B;**[!UICONTROL Renew Account]**&#x200B;工作流，该工作流将带您回到Social平台的身份验证页面。 进行身份验证后，令牌将续订并带有新的到期日期。
 
    ![pbd — 续订](assets/pbd-renew.png)

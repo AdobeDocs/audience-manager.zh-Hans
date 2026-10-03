@@ -7,22 +7,29 @@ title: 广告商用例
 uuid: ceb06f86-1f9b-4e02-b179-116ec635ce5d
 feature: Reference
 exl-id: 30f2ee7b-6238-4dd5-a59f-ee91b6256bcb
-TQID: https://experienceleague.adobe.com/j6rCyNkZCTV0AA2t7PWPFGGPNCEutOynqwPFVcz-CHY
+TQID: 'https://experienceleague.adobe.com/j6rCyNkZCTV0AA2t7PWPFGGPNCEutOynqwPFVcz-CHY'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: 6a8f3a31-6f0b-5101-9878-fb698e568543
+    internal-label: Reference
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Taxonomy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 724
+source-wordcount: '748'
 ht-degree: 100%
-
 ---
-
 # 广告商用例 {#advertiser-use-cases}
 
 了解 Adobe Audience Manager 可以满足的一些常见广告商需求。
@@ -74,7 +81,7 @@ ht-degree: 100%
    <td colname="col2"> 
     <ul id="ul_CC5448D2EA0646D4AF3547E81DE31FDE"> 
      <li id="li_8F11E40026404C1380F26F6D03952C8E">通过与原始受众相映射的行为和配置文件识别新受众。 </li> 
-     <li id="li_5F67AD849EC145DBB1E52A92BBE2CEE3">针对您自己的数据和您有权访问的其他第三方数据进行搜索。这有助于您查找并识别高价值受众配置文件中最具影响力的数据点。 </li> 
+     <li id="li_5F67AD849EC145DBB1E52A92BBE2CEE3">针对您自己的数据和您有权访问的其他第三方数据进行搜索。 这有助于您查找并识别高价值受众配置文件中最具影响力的数据点。 </li> 
     </ul> </td>
    <td colname="col3"> 
     <ul id="ul_EB3707C4449E44F195EE5655B724A9B4"> 
@@ -169,7 +176,7 @@ ht-degree: 100%
     <ul id="ul_739F56A9703F418BBD6F391C2A8A25CA"> 
      <li id="li_24C0DF2B23284764B48B0B4FC2808248">在 <span class="keyword">Audience Manager</span> 中，为秋季度假旅客创建一个区段。 </li> 
      <li id="li_C8FE060793AA400CBDF33251B21B79C7">在 Adobe Target 中，创建一个促销活动，为季节性购买者提供航空积分。 </li> 
-     <li id="li_84D729B9AA2E40F8B3EFF6E53C8AA39A">使用 Analytics 通过转化漏斗跟踪客户活动。如果客户未进行转化，通过电子邮件营销重新锁定。 </li> 
+     <li id="li_84D729B9AA2E40F8B3EFF6E53C8AA39A">使用 Analytics 通过转化漏斗跟踪客户活动。 如果客户未进行转化，通过电子邮件营销重新锁定。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -217,7 +224,7 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>利用现有访客数据和第三方访客数据优化和个性化客户的数字体验。 </p> </td> 
-   <td colname="col2"> <p>个性化的客户体验有助于提高转化率。提供适当的产品、选件和创意体验可以推动购买活动并提高客户参与度或忠诚度。 </p> </td> 
+   <td colname="col2"> <p>个性化的客户体验有助于提高转化率。 提供适当的产品、选件和创意体验可以推动购买活动并提高客户参与度或忠诚度。 </p> </td> 
    <td colname="col3"> 
     <ul id="ul_837B290D45DB412CA0CA3457EDCC4125"> 
      <li id="li_CA85D32FD7F54490859B92B1E4A2DACB">在 <span class="keyword">Audience Manager</span> 中，摄取针对小型企业所有者的第三方区段数据。 </li> 

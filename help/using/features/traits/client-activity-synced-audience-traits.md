@@ -7,18 +7,24 @@ title: 活动受众特征和数据Source同步特征
 uuid: b4f145ab-f343-4d71-86d1-5d03f7b03809
 feature: Traits
 exl-id: 8fa4ea24-1beb-40cb-bdec-540a3f7c2573
-TQID: https://experienceleague.adobe.com/2DBCMtqRp0sQM04ec-2pKVnaEnQijjsnrk0JvqoNf3o
+TQID: 'https://experienceleague.adobe.com/2DBCMtqRp0sQM04ec-2pKVnaEnQijjsnrk0JvqoNf3o'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Troubleshooting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 215
+source-wordcount: '215'
 ht-degree: 0%
-
 ---
-
 # 活动受众特征和数据Source同步特征 {#active-audience-traits-and-data-source-synced-traits}
 
 这些是[!UICONTROL Addressable Audiences]使用的特殊特征。 [!UICONTROL Active Audience]和[!UICONTROL Data Source Synced Traits]位于[!UICONTROL Audience Data > Traits > Audience Traits]中。
@@ -33,7 +39,7 @@ ht-degree: 0%
 
 ## 数据Source同步特征 {#data-source-synced-traits}
 
-当您[!UICONTROL Data Source Synced Traits]创建或编辑数据源[!UICONTROL Audience Traits]并应用以下任一设置时，[出现在](../../features/manage-datasources.md#create-data-source)文件夹中：
+当您[创建或编辑数据源](../../features/manage-datasources.md#create-data-source)并应用以下任一设置时，[!UICONTROL Data Source Synced Traits]出现在[!UICONTROL Audience Traits]文件夹中：
 
 ![](assets/datasource_synced.png)
 

@@ -8,16 +8,21 @@ title: 创建算法模型
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 feature: Algorithmic Models
 exl-id: 8b7c4f57-f2c8-46f1-8924-5513fd6ede04
-TQID: https://experienceleague.adobe.com/ZLODJg0TbL-Xhr0CNNg3JbCkM-uqwbjX22BvlZHV8Xk
+TQID: 'https://experienceleague.adobe.com/ZLODJg0TbL-Xhr0CNNg3JbCkM-uqwbjX22BvlZHV8Xk'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: cd2456ea-4f93-45ef-a193-94c258a6fbfb
+    internal-label: Algorithmic models
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 639
+source-wordcount: '675'
 ht-degree: 0%
-
 ---
-
 # 创建相似人群拓展模型 {#create-an-algorithmic-model}
 
 描述允许您创建[!UICONTROL Look-Alike Model]的必需步骤和可选步骤。
@@ -37,7 +42,7 @@ ht-degree: 0%
 
 请按照以下步骤构建[!UICONTROL Look-Alike Model]：
 
-1. 转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然后单击&#x200B;**[!UICONTROL Add New]**&#x200B;部分中的[!UICONTROL Look-Alike Modeling]。
+1. 转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然后单击[!UICONTROL Look-Alike Modeling]部分中的&#x200B;**[!UICONTROL Add New]**。
    ![相似添加](assets/look-alike-add.png)
 1. 在[基本信息](../../features/algorithmic-models/create-model.md#basic-information)部分中
    * 命名模型。
@@ -55,7 +60,7 @@ ht-degree: 0%
 
 请观看以下视频，详细了解跨设备量度的工作方式。
 
-[了解Audience Manager中的跨设备指标](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager)
+[了解Audience Manager中的跨设备量度](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager)
 
 ## 算法模型的基本信息 {#basic-information}
 
@@ -99,7 +104,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>选择算法(3)</b> </p> </td> 
-   <td colname="col2"> <p>目前，模型生成器仅与我们的专有<span class="keyword">特征权重</span>算法一起使用。 <span class="keyword"> Audience Manager</span>可能会在后续版本中添加其他算法函数。 </p> </td>
+   <td colname="col2"> <p>目前，模型生成器仅与我们的专有<span class="keyword">特征权重</span>算法一起使用。<span class="keyword"> Audience Manager</span>可以在后续版本中添加其他算法函数。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>从数据Source (4)中选择模型数据</b> </p> </td> 

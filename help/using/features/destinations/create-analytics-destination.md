@@ -1,29 +1,37 @@
 ---
-description: Audience Analytics 允许您将 Audience Manager 区段发送至 Analytics。要使用此功能，请在 Audience Manager 中创建一个 Analytics 目标，然后再将区段映射到该目标。
+description: Audience Analytics 允许您将 Audience Manager 区段发送至 Analytics。 要使用此功能，请在 Audience Manager 中创建一个 Analytics 目标，然后再将区段映射到该目标。
 seo-description: Audience Analytics lets you send Audience Manager segments to Analytics. To use this feature, you create an Analytics destination and map segments to it in Audience Manager.
 seo-title: Configure an Analytics Destination
 solution: Audience Manager
 title: 配置Analytics目标
 feature: Adobe Analytics Integration
 exl-id: f3ead057-04d1-40cd-8e3d-d0934d85cdb4
-TQID: https://experienceleague.adobe.com/Fm25UT69AXSh-cXo6MXGQwW-17LFy8dqs3-STiWKDeA
+TQID: 'https://experienceleague.adobe.com/Fm25UT69AXSh-cXo6MXGQwW-17LFy8dqs3-STiWKDeA'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
 subfeature_v2:
   - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: e5dfa5ae-9082-4711-a658-d981a49c8dea
+    internal-label: Analytics integration
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 866
+source-wordcount: '925'
 ht-degree: 4%
-
 ---
-
 # 配置Analytics目标
 
 ## 要求 {#requirements}
@@ -35,7 +43,7 @@ ht-degree: 4%
 
 | Analytics目标类型 | 描述 |
 |---|---|
-| 默认值 | 此默认目标的名称为“Adobe Analytics”，您可以编辑该名称。 映射的报表包ID会显示在您的Audience Manager特征和区段的文件夹存储中。 <br>  如果您的帐户具有： <br>，Audience Manager会自动创建一个目标  <ul><li>符合[Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html?lang=zh-Hans)文档中描述的要求。</li><li>Analytics中的[报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=zh-Hans)。</li></ul> |
+| 默认值 | 此默认目标的名称为“Adobe Analytics”，您可以编辑该名称。 映射的报表包ID会显示在您的Audience Manager特征和区段的文件夹存储中。 如果您的帐户具有： <br>，<br> Audience Manager会自动创建一个目标  <ul><li>符合[Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html?lang=zh-Hans)文档中描述的要求。</li><li>Analytics中的[报表包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=zh-Hans)。</li></ul> |
 | 新建 | 要创建新的Analytics目标，请转到受众数据>目标>创建新目标，然后执行下面所述每个部分的步骤。 |
 
 ## Adobe Analytics中的Audience Manager区段资格条件 {#segment-qualifications}
@@ -93,8 +101,8 @@ ht-degree: 4%
 
 | 映射选项 | 描述 |
 |---|---|
-| 自动映射所有当前和未来区段 | 默认情况下，选中此功能后，会将访客符合条件的所有区段按点击发送到Analytics。 <br>  如果某位访客在一次点击中属于超过150个Audience Manager区段，则仅会将最近限定的150个区段发送到Analytics，而其余列表将被截断。 此外，还会向Analytics发送一个标记，指示区段列表被截断。 此操作在受众名称维度中显示为“已达到受众限制”，在受众ID维度中显示为“1”。 有关详细信息，请参阅[常见问题解答](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/mc-audiences-faqs.html?lang=zh-Hans)。 <br>  此外，此选项会影响[区段生成器](/help/using/features/segments/segment-builder.md)中的目标可用性。 例如，如果某个区段自动映射到Analytics目标，则该目标在区段生成器的[目标映射](/help/using/features/segments/segment-builder.md#segment-builder-controls-destinations)部分中不可选择。 Analytics目标将显示为灰色，并在目标浏览器的“类型”列中显示“Analytics”。 |
-| 手动映射区段 | 此选项显示搜索和浏览控件，这些控件允许您选择要发送到Analytics的区段。 <br>  要搜索区段，请执行以下操作： <br>  <ol><li>在搜索字段中键入区段名称或ID。</li><li>单击<b>添加。</b></li><li>继续搜索和添加区段，或单击<b>完成</b>。</li></ol><br>  要浏览区段，请执行以下操作： <ol><li>单击<b>浏览所有区段</b>。 这会公开可用区段的列表。</li><li>从列表中，选中要使用的区段的复选框，然后单击<b>添加选定的区段</b>。</li><li>在“添加映射”窗口中单击<b>保存</b>。 在测试版发布期间，您无法更改映射、开始日期或结束日期。</li><li>继续浏览并添加区段，或单击<b>完成</b>。</li></ol> ![映射区段](assets/mapSegments.png) |
+| 自动映射所有当前和未来区段 | 默认情况下，选中此功能后，会将访客符合条件的所有区段按点击发送到Analytics。 <br>如果某位访客在一次点击中属于超过150个Audience Manager区段，则只会将最近限定的150个区段发送到Analytics，而其余列表将被截断。 此外，还会向Analytics发送一个标记，指示区段列表被截断。 此操作在受众名称维度中显示为“已达到受众限制”，在受众ID维度中显示为“1”。 有关详细信息，请参阅[常见问题解答](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/mc-audiences-faqs.html?lang=zh-Hans)。 <br>此外，此选项影响[区段生成器](/help/using/features/segments/segment-builder.md)中的目标可用性。 例如，如果某个区段自动映射到Analytics目标，则该目标在区段生成器的[目标映射](/help/using/features/segments/segment-builder.md#segment-builder-controls-destinations)部分中不可选择。 Analytics目标将显示为灰色，并在目标浏览器的“类型”列中显示“Analytics”。 |
+| 手动映射区段 | 此选项显示搜索和浏览控件，这些控件允许您选择要发送到Analytics的区段。 <br>要搜索区段： <br>  <ol><li>在搜索字段中键入区段名称或ID。</li><li>单击<b>添加。</b></li><li>继续搜索和添加区段，或单击<b>完成</b>。</li></ol><br>要浏览区段，请执行以下操作： <ol><li>单击<b>浏览所有区段</b>。 这会公开可用区段的列表。</li><li>从列表中，选中要使用的区段的复选框，然后单击<b>添加选定的区段</b>。</li><li>在“添加映射”窗口中单击<b>保存</b>。 在测试版发布期间，您无法更改映射、开始日期或结束日期。</li><li>继续浏览并添加区段，或单击<b>完成</b>。</li></ol> ![映射区段](assets/mapSegments.png) |
 
 ## 后续步骤
 

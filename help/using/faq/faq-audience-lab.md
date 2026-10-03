@@ -7,43 +7,48 @@ title: Audience Lab 常见问题解答
 uuid: b1daf99d-af60-4f65-987d-794a6d45d566
 feature: Audience Lab
 exl-id: 25bdabb5-2ba8-45d2-81ca-05c0590d7d96
-TQID: https://experienceleague.adobe.com/VDrkY-L2PnhRdSTmZd-0sjpJEI5vHxm9c3uMqtyQd3Y
+TQID: 'https://experienceleague.adobe.com/VDrkY-L2PnhRdSTmZd-0sjpJEI5vHxm9c3uMqtyQd3Y'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: e8501b6e-f5e0-495d-8a3d-6aa9293cdcc5
+    internal-label: Audience Lab
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 326
+source-wordcount: '326'
 ht-degree: 94%
-
 ---
-
 # Audience Lab 常见问题解答{#audience-lab-faq}
 
 有关 Audience Lab 功能的常见问题解答。
 
 <br> 
 
-**在测试组中创建的测试区段是否具有不同的区段 ID？如何将这些 ID 映射到不同的目标？**
+**在测试组中创建的测试区段是否具有不同的区段 ID？ 如何将这些 ID 映射到不同的目标？**
 
-是，测试区段具有不同的区段 ID。对于包含 [!UICONTROL Auto-fill Destination Mapping] 的目标或已发送到 [!DNL Google] 的区段，[!UICONTROL Audience Lab] 将像目标平常处理映射一样处理这些映射值。
+是，测试区段具有不同的区段 ID。 对于包含 [!UICONTROL Auto-fill Destination Mapping] 的目标或已发送到 [!DNL Google] 的区段，[!UICONTROL Audience Lab] 将像目标平常处理映射一样处理这些映射值。
 
 <br> 
 
 **同一转化特征是否可以与多个测试组关联？**
 
-是，这是可行的。假设一个测试组使用与转化特征 X 相关联的男性受众区段，而另一个测试组使用与转化特征 X 相关联的女性受众区段。由于这两个测试组测试的是两个不同的受众区段，因此即使这两个测试组同时促进转化也无妨。
+是，这是可行的。 假设一个测试组使用与转化特征 X 相关联的男性受众区段，而另一个测试组使用与转化特征 X 相关联的女性受众区段。由于这两个测试组测试的是两个不同的受众区段，因此即使这两个测试组同时促进转化也无妨。
 
 <br> 
 
-**假设一个测试组正在使用已验证的用户配置文件进行测试区段拆分。该已验证的用户配置文件与 4 个 [Audience Manager UUID](../reference/ids-in-aam.md) 相关联。当访客展现的转化特征来源于这四个 UUID 中的一个 UUID 时，[!UICONTROL Audience Lab] 会将这计为一次还是四次转化？**
+**假设一个测试组正在使用已验证的用户配置文件进行测试区段拆分。 该已验证的用户配置文件与 4 个 [Audience Manager UUID](../reference/ids-in-aam.md) 相关联。 当访客展现的转化特征来源于这四个 UUID 中的一个 UUID 时，[!UICONTROL Audience Lab] 会将这计为一次还是四次转化？**
 
 在这种情况下，[!UICONTROL Audience Lab] 只计入一次转化。
 
 <br> 
 
-**以上例为基础，如果访客随后展现的转化特征来源于与已验证配置文件相关联的另外两个 UUID（而不是上例中提及的四个 UUID），那么又会怎么样呢？是将这计为一次还是三次转化？**
+**以上例为基础，如果访客随后展现的转化特征来源于与已验证配置文件相关联的另外两个 UUID（而不是上例中提及的四个 UUID），那么又会怎么样呢？ 是将这计为一次还是三次转化？**
 
 在这种情况下，[!UICONTROL Audience Lab] 会计入三次转化，每个展现已验证特征的设备计入一次。
 
@@ -55,4 +60,4 @@ ht-degree: 94%
 
 **我可以将[!UICONTROL Audience Lab]与[!UICONTROL Profile Link Device Graph]和外部设备图（ Tapad设备图、Liveramp设备图）结合使用吗？**
 
-目前，在使用 [!UICONTROL Profile Link Device Graph] 时，[!UICONTROL Audience Lab] 只能按连接到某个合格设备的设备拆分区段人口。我们正努力在 [!UICONTROL Audience Lab] 中添加对其他设备图的支持，准备就绪后，我们将通知您。
+目前，在使用 [!UICONTROL Profile Link Device Graph] 时，[!UICONTROL Audience Lab] 只能按连接到某个合格设备的设备拆分区段人口。 我们正努力在 [!UICONTROL Audience Lab] 中添加对其他设备图的支持，准备就绪后，我们将通知您。

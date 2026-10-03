@@ -7,18 +7,21 @@ title: 特征和区段生成器中的布尔表达式
 uuid: 14f02d3f-4c84-41fe-bc91-b34f0d49574a
 feature: Reference
 exl-id: 44bc0385-2cce-4173-9833-b9a30fb6edae
-TQID: https://experienceleague.adobe.com/-Fl1kRTxAy7fBmXx--xDFYZuDZy-7y8Li4YwBeoGvZo
+TQID: 'https://experienceleague.adobe.com/-Fl1kRTxAy7fBmXx--xDFYZuDZy-7y8Li4YwBeoGvZo'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: 6a8f3a31-6f0b-5101-9878-fb698e568543
+    internal-label: Reference
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data collection
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 529
+source-wordcount: '531'
 ht-degree: 0%
-
 ---
-
 # 特征和区段生成器中的布尔表达式{#boolean-expressions-in-trait-and-segment-builder}
 
 本文介绍Audience Manager特征和区段工具如何使用布尔表达式AND、OR和NOT。
@@ -78,11 +81,11 @@ c_tb_boolean.xml
 
 **[!UICONTROL OR]用例示例**
 
-当您要创建具有广泛受众资格要求的信号时，[!UICONTROL OR]运算符很有用。 如果您有多个特征或区段资格要求，则当您的网站访客展现这些特征中的[!UICONTROL OR]any *时，*&#x200B;运算符会评估为true。 当您想要快速创建大量符合条件的网站访客时，[!UICONTROL OR]可能最有用。
+当您要创建具有广泛受众资格要求的信号时，[!UICONTROL OR]运算符很有用。 如果您有多个特征或区段资格要求，则当您的网站访客展现这些特征中的&#x200B;*any*&#x200B;时，[!UICONTROL OR]运算符会评估为true。 当您想要快速创建大量符合条件的网站访客时，[!UICONTROL OR]可能最有用。
 
 **[!UICONTROL AND NOT]用例示例**
 
-当通过[!UICONTROL AND NOT]排除项&#x200B;*而不是*&#x200B;包含项&#x200B;*来定义受众时，*&#x200B;运算符很有用。 例如，假设您正在开展销售，并且希望将访客划分为仅查看全价项目的客户。 不是为所有符合条件的全价或销售价项目创建信号列表，而是如果访客&#x200B;*未*&#x200B;看到销售价项目，则可能更容易使访客符合条件。 这在管理上非常高效，因为与全价销售相比，您的售价项目通常更少。 使用布尔值[!UICONTROL NOT]，访客&#x200B;*不得*&#x200B;展示销售信号以获得全价受众成员资格。 相反，[!UICONTROL AND NOT]与[!UICONTROL AND]用例相反，该用例显示受众成员资格如何通过包含来确定（即，访客根据2个明确规定的信号获得资格）。
+当通过&#x200B;*排除项*&#x200B;而不是&#x200B;*包含项*&#x200B;来定义受众时，[!UICONTROL AND NOT]运算符很有用。 例如，假设您正在开展销售，并且希望将访客划分为仅查看全价项目的客户。 不是为所有符合条件的全价或销售价项目创建信号列表，而是如果访客&#x200B;*未*&#x200B;看到销售价项目，则可能更容易使访客符合条件。 这在管理上非常高效，因为与全价销售相比，您的售价项目通常更少。 使用布尔值[!UICONTROL NOT]，访客&#x200B;*不得*&#x200B;展示销售信号以获得全价受众成员资格。 相反，[!UICONTROL AND NOT]与[!UICONTROL AND]用例相反，该用例显示受众成员资格如何通过包含来确定（即，访客根据2个明确规定的信号获得资格）。
 
 >[!MORELIKETHIS]
 >

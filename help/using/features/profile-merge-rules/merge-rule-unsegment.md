@@ -7,27 +7,32 @@ title: 配置文件合并规则和设备取消分段过程
 uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
 feature: Profile Merge
 exl-id: ff3da607-5c25-45b2-ac27-071c22d518a0
-TQID: https://experienceleague.adobe.com/xAMGTR-vAfeIqWTTu-J0xEGksW6IqKLOn-suIHYsbdU
+TQID: 'https://experienceleague.adobe.com/xAMGTR-vAfeIqWTTu-J0xEGksW6IqKLOn-suIHYsbdU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: '481'
 ht-degree: 2%
-
 ---
-
 # 配置文件合并规则和设备取消分段过程 {#profile-merge-rules-and-device-un-segmentation-processes}
 
 取消分段描述取消设备配置文件的资格并从区段中删除设备配置文件的流程。 能否从区段中删除设备配置文件取决于用于创建[!UICONTROL Profile Merge Rule]的设备选项。
 
 ## 可用的设备选项 {#device-options}
 
-提醒一下，当您创建或编辑[!UICONTROL Device Options]时，[!UICONTROL Profile Merge Rules Setup]在[!UICONTROL Profile Merge Rule]分区中可用。
+提醒一下，当您创建或编辑[!UICONTROL Profile Merge Rule]时，[!UICONTROL Device Options]在[!UICONTROL Profile Merge Rules Setup]分区中可用。
 
 ## 当前设备配置文件选项和设备取消分段 {#current-device-profile-options}
 
-**[!UICONTROL Device Profile]**&#x200B;是[!UICONTROL Profile Merge Rule]的默认设备配置文件选项。 当您的[!DNL Audience Manager]使用[!UICONTROL Profile Merge Rule]选项时，**[!UICONTROL Device Profile]**&#x200B;可以从区段中删除设备配置文件。 在这些条件下，取消分段会在以下情况下发生：
+**[!UICONTROL Device Profile]**&#x200B;是[!UICONTROL Profile Merge Rule]的默认设备配置文件选项。 当您的[!UICONTROL Profile Merge Rule]使用&#x200B;**[!UICONTROL Device Profile]**&#x200B;选项时，[!DNL Audience Manager]可以从区段中删除设备配置文件。 在这些条件下，取消分段会在以下情况下发生：
 
 * 设备配置文件已停用120天。 每周数据清理过程会从区段中删除不活动的设备配置文件。
 * 设备不再符合区段的条件，因为设备配置文件的更新或更改会取消该设备的资格。 当区段资格标准发生更改，或者将[!DNL AND NOT]运算符应用于区段规则，或者指定使用小于/等于设置的[回访间隔和频率](../segments/recency-and-frequency.md)条件时，会发生这种情况。 在[即时跨设备抑制](instant-cross-device-suppression.md)文档中介绍了用例。
@@ -36,13 +41,13 @@ ht-degree: 2%
 
 ## 无设备选项和设备取消分段 {#no-device-option}
 
-当您的[!DNL Audience Manager]使用[!UICONTROL Profile Merge Rule] + **[!UICONTROL Current Authenticated Profiles]**&#x200B;选项时，**[!UICONTROL No Device Profile]**&#x200B;可以从区段中删除跨设备ID。 在这些情况下，当跨设备ID不再符合区段的资格时，就会取消分段，因为更新或更改跨设备配置文件会取消该区段的资格。 当区段资格标准发生更改，或者将[!UICONTROL AND NOT]运算符应用于区段规则，或者指定使用小于/等于设置的[回访间隔和频率](../segments/recency-and-frequency.md)条件时，会发生这种情况。 在[即时跨设备抑制](instant-cross-device-suppression.md)文档中介绍了用例。
+当您的[!UICONTROL Profile Merge Rule]使用&#x200B;**[!UICONTROL Current Authenticated Profiles]** + **[!UICONTROL No Device Profile]**&#x200B;选项时，[!DNL Audience Manager]可以从区段中删除跨设备ID。 在这些情况下，当跨设备ID不再符合区段的资格时，就会取消分段，因为更新或更改跨设备配置文件会取消该区段的资格。 当区段资格标准发生更改，或者将[!UICONTROL AND NOT]运算符应用于区段规则，或者指定使用小于/等于设置的[回访间隔和频率](../segments/recency-and-frequency.md)条件时，会发生这种情况。 在[即时跨设备抑制](instant-cross-device-suppression.md)文档中介绍了用例。
 
 ![](assets/current-no-device.png)
 
 ## 设备图选项和设备取消分段 {#device-graph-options-unsegmentation}
 
-当您的[!DNL Audience Manager]使用设备图选项时，[!UICONTROL Profile Merge Rule]可以从区段中删除多个设备配置文件。 当设备图中的设备合并配置文件不再符合区段资格时，会发生取消分段，因为更新或更改此合并配置文件会取消该设备在区段中的资格。 当区段资格标准发生更改，或者将[!UICONTROL AND NOT]运算符应用于区段规则，或者指定使用小于/等于设置的[回访间隔和频率](../segments/recency-and-frequency.md)条件时，会发生这种情况。 在[即时跨设备抑制](instant-cross-device-suppression.md)文档中介绍了用例。
+当您的[!UICONTROL Profile Merge Rule]使用设备图选项时，[!DNL Audience Manager]可以从区段中删除多个设备配置文件。 当设备图中的设备合并配置文件不再符合区段资格时，会发生取消分段，因为更新或更改此合并配置文件会取消该设备在区段中的资格。 当区段资格标准发生更改，或者将[!UICONTROL AND NOT]运算符应用于区段规则，或者指定使用小于/等于设置的[回访间隔和频率](../segments/recency-and-frequency.md)条件时，会发生这种情况。 在[即时跨设备抑制](instant-cross-device-suppression.md)文档中介绍了用例。
 
 >[!NOTE]
 >

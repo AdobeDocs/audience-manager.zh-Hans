@@ -7,22 +7,28 @@ title: 测试组报表
 uuid: 21303c3e-4c05-4728-a759-96c2a1d99b69
 feature: Audience Lab
 exl-id: 5d959002-e904-44df-87e6-e4c85838b076
-TQID: https://experienceleague.adobe.com/c4wC46SA8lwM8Rvniun2kB7zqwW3g-rN7ZYLc4KF6mk
+TQID: 'https://experienceleague.adobe.com/c4wC46SA8lwM8Rvniun2kB7zqwW3g-rN7ZYLc4KF6mk'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
+  - id: e8501b6e-f5e0-495d-8a3d-6aa9293cdcc5
+    internal-label: Audience Lab
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 337
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # 测试组报表 {#test-group-reporting}
 
 测试组报告部分返回有关测试组转化的信息，从而轻松比较测试区段的功效。 有许多过滤器和维度可用于数据可视化。
@@ -45,7 +51,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">个转换器</span></b> </p> </td> 
-   <td colname="col2"> <p>返回展现在测试组中选择的转化特征的设备数量。 <a href="https://helpx.adobe.com/audience-manager/kt/using/creating-conversion-traits-feature-video-use.html" format="https" scope="external">观看此视频</a>，了解如何创建转化特征。 </p> </td> 
+   <td colname="col2"> <p>返回展现在测试组中选择的转化特征的设备数量。<a href="https://helpx.adobe.com/audience-manager/kt/using/creating-conversion-traits-feature-video-use.html" format="https" scope="external"> 观看本视频</a>，了解如何创建转化特征。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> 总转化次数<b><span class="uicontrol"></span></b> </p> </td> 

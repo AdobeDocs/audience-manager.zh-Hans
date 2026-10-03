@@ -7,23 +7,32 @@ title: 元数据文件的概述和映射
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
 feature: Log Files
 exl-id: 8c59ab80-f04a-42df-891e-a187ecd0219f
-TQID: https://experienceleague.adobe.com/apsyqkjRH9pOVzNMek0NfnLJ3AjgY9iqY-6l-oOVZkg
+TQID: 'https://experienceleague.adobe.com/apsyqkjRH9pOVzNMek0NfnLJ3AjgY9iqY-6l-oOVZkg'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: f15e67cf-b90e-44f4-ae50-f1fb9f866a27
+    internal-label: Log files
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Optimization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 810
+source-wordcount: '824'
 ht-degree: 2%
-
 ---
-
 # 元数据文件的概述和映射{#overview-and-mappings-for-metadata-files}
 
 元数据文件将数字ID链接到您可以阅读和理解的名称。 Audience Optimization报表在各种报表选项菜单中显示了可读名称。
@@ -129,7 +138,7 @@ ht-degree: 2%
 
 在文件名中：
 
-* 数据源密钥从`dpid`更改为`d_src`。
+* 数据源密钥从`d_src`更改为`dpid`。
 
 * 创意和营销活动ID表示类别而不是实际标识符。
 

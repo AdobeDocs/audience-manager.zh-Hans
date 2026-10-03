@@ -7,18 +7,24 @@ title: 报表技术
 uuid: 5f3d815b-e1e6-42f2-b848-ac035a5aa77d
 feature: Overlap Reports
 exl-id: 59d875d6-a630-4795-93a7-1d432860f0a1
-TQID: https://experienceleague.adobe.com/AnXMLgoOd56zHBO0aK3KehN6xS2upcKiAzNKmEj7I-0
+TQID: 'https://experienceleague.adobe.com/AnXMLgoOd56zHBO0aK3KehN6xS2upcKiAzNKmEj7I-0'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 255
+source-wordcount: '265'
 ht-degree: 0%
-
 ---
-
 # 报表技术{#report-technology}
 
 描述支持交互式报表的基础软件和数据更新计划。
@@ -89,4 +95,4 @@ r_legend.xml
 
 ## 表格文档 {#tableau-documentation}
 
-要了解有关可在我们的交互式报表中看到的Tableau控件的更多信息，请参阅有关Linux 2018.2[上的](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm)Tableau服务器的官方文档
+要了解有关可在我们的交互式报表中看到的Tableau控件的更多信息，请参阅有关Linux 2018.2[&#128279;](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm)上的Tableau服务器的官方文档

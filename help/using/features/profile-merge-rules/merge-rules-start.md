@@ -7,26 +7,36 @@ title: 开始使用配置文件合并规则
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 feature: Profile Merge
 exl-id: 11f397dd-1f23-4b14-be6f-60ce8b77ab12
-TQID: https://experienceleague.adobe.com/tK8hkKLaE-jkzO780-SIHxrwm7VhqnvoL-4G1nH43Cc
+TQID: 'https://experienceleague.adobe.com/tK8hkKLaE-jkzO780-SIHxrwm7VhqnvoL-4G1nH43Cc'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: e8a4c7eb-7254-4984-ac46-e651a57c7e39
+    internal-label: SDKs
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1263
+source-wordcount: '1325'
 ht-degree: 1%
-
 ---
-
 # 开始使用配置文件合并规则 {#getting-started-with-profile-merge-rules}
 
 要创建[!UICONTROL Profile Merge Rules]，请查看并完成本节中介绍的每个过程中的步骤。
@@ -69,13 +79,13 @@ ht-degree: 1%
 
 * **[!UICONTROL Data retention for inactive Customer IDs]**：此控件允许您为非活动客户ID设置数据保留期限。 这会决定Audience Manager将客户ID在Audience Manager平台上最后一次看到后，保留在我们的数据库中的多长时间。 默认值为24个月（720天）。 您可以设置的最小值为1个月，最大值为5年。 请注意，我们将所有月份都计为30天。 Audience Manager会根据您为非活动客户ID设置的数据保留时间，运行每周删除一次非活动客户ID的流程。
 
-与这些设置关联的文本字段允许您使用在[!UICONTROL Data Source]配置文件合并规则选项[中显示的别名重命名](merge-rule-definitions.md)。 例如，如果您向&#x200B;**[!UICONTROL Use as Authenticated Profile]**&#x200B;添加别名，则该名称会显示在[!UICONTROL Authenticated Profile Options]列表中。 如果您向&#x200B;**[!UICONTROL Use as a Device Graph]**&#x200B;添加别名，则该名称会显示在[!UICONTROL Device Options]列表中。
+与这些设置关联的文本字段允许您使用在[配置文件合并规则选项](merge-rule-definitions.md)中显示的别名重命名[!UICONTROL Data Source]。 例如，如果您向&#x200B;**[!UICONTROL Use as Authenticated Profile]**&#x200B;添加别名，则该名称会显示在[!UICONTROL Authenticated Profile Options]列表中。 如果您向&#x200B;**[!UICONTROL Use as a Device Graph]**&#x200B;添加别名，则该名称会显示在[!UICONTROL Device Options]列表中。
 
 ## 创建配置文件合并规则 {#create-profile-merge-rule}
 
 要创建[!UICONTROL Profile Merge Rule]，请转到&#x200B;**[!UICONTROL Audience Data > Profile Merge Rules > Add New Rule]**&#x200B;并完成此处描述的每个部分的步骤。
 
-设置跨设备数据源后，您最多可以创建3个合并规则。 如果您注册[!UICONTROL All Cross-Device Profiles]基于人员的目标[，则可以访问第4个配置文件合并规则(](../destinations/people-based-destinations-overview.md))。
+设置跨设备数据源后，您最多可以创建3个合并规则。 如果您注册[基于人员的目标](../destinations/people-based-destinations-overview.md)，则可以访问第4个配置文件合并规则([!UICONTROL All Cross-Device Profiles])。
 
 创建、编辑或删除规则需要管理员权限。 所有用户都可以查看和使用现有[!UICONTROL Profile Merge Rules]。
 
@@ -93,7 +103,7 @@ ht-degree: 1%
 
 1. 为[!UICONTROL Profile Merge Rule]命名。
 2. *（可选）*&#x200B;描述[!UICONTROL Profile Merge Rule]。 简洁的描述可帮助您定义规则的角色或用途。
-3. *（可选）*&#x200B;如果要使其成为默认&#x200B;**[!UICONTROL Set as default]**，请选择[!UICONTROL Profile Merge Rule]。 新区段会自动与默认规则关联。
+3. *（可选）*&#x200B;如果要使其成为默认[!UICONTROL Profile Merge Rule]，请选择&#x200B;**[!UICONTROL Set as default]**。 新区段会自动与默认规则关联。
 
 ## 数据导出控制 {#data-export-controls}
 
@@ -139,7 +149,7 @@ ht-degree: 1%
 
 ## 对于Adobe Experience Platform Identity服务客户 {#id-service-customers}
 
-在使用[!UICONTROL Adobe Experience Platform Identity Service]时，建议使用[和最新版本的](../../dil/dil-overview.md)DIL[!UICONTROL Profile Merge Rules]。 但是，您不必使用[!UICONTROL Adobe Experience Platform Identity Service]即可使用此功能。 如果您只使用[!UICONTROL DIL]，请参阅下面的[旧版DIL部分](#legacy-dil)。
+在使用[!UICONTROL Profile Merge Rules]时，建议使用[!UICONTROL Adobe Experience Platform Identity Service]和最新版本的[DIL](../../dil/dil-overview.md)。 但是，您不必使用[!UICONTROL Adobe Experience Platform Identity Service]即可使用此功能。 如果您只使用[!UICONTROL DIL]，请参阅下面的[旧版DIL部分](#legacy-dil)。
 
 ### 配置Set Customer ID函数
 
@@ -167,7 +177,7 @@ visitor.setCustomerIDs({
 
 ### 配置`DIL.create`函数
 
-最新版本的[!UICONTROL DIL]现在自动从[!UICONTROL declared ID]中的`visitorService`函数提取`DIL.create`（请参阅[声明的ID变量](../declared-ids.md#declared-id-variables)）。 检查您的`DIL.create`函数，确保正确设置此函数，如下面的代码示例所示。
+最新版本的[!UICONTROL DIL]现在自动从`DIL.create`中的`visitorService`函数提取[!UICONTROL declared ID]（请参阅[声明的ID变量](../declared-ids.md#declared-id-variables)）。 检查您的`DIL.create`函数，确保正确设置此函数，如下面的代码示例所示。
 
 ```js
 var vDil = DIL.create({
@@ -178,7 +188,7 @@ var vDil = DIL.create({
 });
 ```
 
-在命名空间键值对中，`*`MCORG`*`变量是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，则可以在[!UICONTROL Administration]仪表板的[!DNL Experience Cloud]部分中找到它。 您需要管理员权限才能查看此仪表板。 请参阅[管理：核心服务](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans)。
+在命名空间键值对中，`*`MCORG`*`变量是您的[!DNL Experience Cloud]组织ID。 如果您没有此ID，则可以在[!DNL Experience Cloud]仪表板的[!UICONTROL Administration]部分中找到它。 您需要管理员权限才能查看此仪表板。 请参阅[管理：核心服务](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hans)。
 
 ### 配置SDK
 
@@ -198,11 +208,11 @@ DIL.create({
 });
 ```
 
-有关详细信息，请参阅[!UICONTROL DIL]声明的ID变量[中的旧版](../declared-ids.md#declared-id-variables)部分。
+有关详细信息，请参阅[声明的ID变量](../declared-ids.md#declared-id-variables)中的旧版[!UICONTROL DIL]部分。
 
 ### 配置SDK {#configure-sdks-legacy-dil}
 
-检查您的[!DNL SDK]代码中允许您从[!UICONTROL declared IDs]和[!DNL Android]移动设备传递[!DNL iOS]的方法。 [!DNL Android]和[!DNL iOS]代码库的变量名称相同：
+检查您的[!DNL SDK]代码中允许您从[!DNL Android]和[!DNL iOS]移动设备传递[!UICONTROL declared IDs]的方法。 [!DNL Android]和[!DNL iOS]代码库的变量名称相同：
 
 * `dpid`：跨设备数据源标识。
 * `dpuuid`： [!UICONTROL declared ID]（即用户ID）。

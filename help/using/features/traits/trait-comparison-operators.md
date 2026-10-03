@@ -7,16 +7,21 @@ title: 在特征生成器中使用比较运算符
 uuid: 41bec3b3-e5df-4a6f-abb0-80ce4c75f5e7
 feature: Traits
 exl-id: 93181ca3-46c8-45ee-b0fb-da9ceec19a39
-TQID: https://experienceleague.adobe.com/Mbrgy2gmtUB5wrjmxIYjFaYOxbnrvh3bMKbkJ4zrM4o
+TQID: 'https://experienceleague.adobe.com/Mbrgy2gmtUB5wrjmxIYjFaYOxbnrvh3bMKbkJ4zrM4o'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 339
+source-wordcount: '346'
 ht-degree: 6%
-
 ---
-
 # 在特征生成器中使用比较运算符 {#working-with-comparison-operators-in-trait-builder}
 
 本文介绍[!UICONTROL Trait Builder]使用的比较运算符。
@@ -54,7 +59,7 @@ ht-degree: 6%
 | **[!UICONTROL Matcheswords]** | 键值对&#x200B;*中的值与此运算符指定的模式匹配*。 |
 | **[!UICONTROL Startswith]** | 键值对&#x200B;*中的值以此运算符指定的*&#x200B;字符开头。 |
 | **[!UICONTROL Endswith]** | 键值对&#x200B;*中的值以*&#x200B;此运算符指定的字符结尾。 |
-| **[!UICONTROL Matchesregex]** | 键值对&#x200B;*中的值与*&#x200B;正则表达式指定的模式匹配。 [了解有关](../../features/traits/trait-builder-regex.md)中使用正则表达式的详细信息[!UICONTROL Trait Builder]。 |
+| **[!UICONTROL Matchesregex]** | 键值对&#x200B;*中的值与*&#x200B;正则表达式指定的模式匹配。 [了解有关[!UICONTROL Trait Builder]中使用正则表达式的详细信息](../../features/traits/trait-builder-regex.md)。 |
 
 >[!MORELIKETHIS]
 >

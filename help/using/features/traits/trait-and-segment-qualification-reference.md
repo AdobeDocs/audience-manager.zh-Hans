@@ -8,16 +8,21 @@ title: 特征鉴定参考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 feature: Traits
 exl-id: 223f5fc6-c939-4bc6-94a3-5d953abc601a
-TQID: https://experienceleague.adobe.com/ToG-JOFHadPm5hkOP5tzUuVMOPZTLXG7x6mad77yC1M
+TQID: 'https://experienceleague.adobe.com/ToG-JOFHadPm5hkOP5tzUuVMOPZTLXG7x6mad77yC1M'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 826
+source-wordcount: '841'
 ht-degree: 0%
-
 ---
-
 # 特征和区段资格参考 {#trait-qualification-reference}
 
 特征鉴定或特征实现在Audience Manager中的处理方式有所不同，具体取决于特征类型。 有关特征类型资格的详细信息，请参阅[按特征类型列出的特征资格](#trait-type)。
@@ -76,4 +81,4 @@ ht-degree: 0%
 
 ## 特征资格限制 {#trait-qualification-limit}
 
-我们为每个用户配置文件强制实施150,000个特征资格限制，无论它是经过身份验证的配置文件([DPUUID](../../reference/ids-in-aam.md))还是设备ID ([UUID](../../reference/ids-in-aam.md))。 请注意，虽然DPUUID对于[!DNL Audience Manager]的特定实例是唯一的，但UUID在[!DNL Audience Manager]平台之间共享。 对于[!UICONTROL UUID]，我们在存储特征资格时强制实施公平原则。 算法可确保[!UICONTROL UUID]的每个实例均可以共享[!DNL Audience Manager]配置文件。
+我们为每个用户配置文件强制实施150,000个特征资格限制，无论它是经过身份验证的配置文件([DPUUID](../../reference/ids-in-aam.md))还是设备ID ([UUID](../../reference/ids-in-aam.md))。 请注意，虽然DPUUID对于[!DNL Audience Manager]的特定实例是唯一的，但UUID在[!DNL Audience Manager]平台之间共享。 对于[!UICONTROL UUID]，我们在存储特征资格时强制实施公平原则。 算法可确保[!DNL Audience Manager]的每个实例均可以共享[!UICONTROL UUID]配置文件。

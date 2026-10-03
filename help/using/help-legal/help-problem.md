@@ -1,26 +1,32 @@
 ---
-description: 客户关怀团队随时准备帮助您解决可能出现的任何问题。在联系客户关怀团队时，请尽可能多地提供这些信息。这些信息将有助于团队了解并解决您的问题。
+description: 客户关怀团队随时准备帮助您解决可能出现的任何问题。 在联系客户关怀团队时，请尽可能多地提供这些信息。 这些信息将有助于团队了解并解决您的问题。
 seo-description: Customer Care is prepared to help you solve any issues that might arise. Provide as much of this information as you can when contacting Customer Care. This will help the team understand and resolve your issue.
 seo-title: If There's a Problem
 solution: Audience Manager
 title: 如果遇到问题
 feature: Support
 exl-id: 2f7b9dbe-7aac-41b0-aab8-3b703d7a2441
-TQID: https://experienceleague.adobe.com/9yNQ22FOduvtYsw4ovWOSvyemp5J6edcn3DbLfgpldc
+TQID: 'https://experienceleague.adobe.com/9yNQ22FOduvtYsw4ovWOSvyemp5J6edcn3DbLfgpldc'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+subfeature_v2:
+  - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data collection
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 370
+source-wordcount: '385'
 ht-degree: 100%
-
 ---
-
 # 如果遇到问题 {#problem}
 
-客户关怀团队随时准备帮助您解决可能出现的任何问题。在联系客户关怀团队时，请尽可能多地提供这些信息。这些信息将有助于团队了解并解决您的问题。
+客户关怀团队随时准备帮助您解决可能出现的任何问题。 在联系客户关怀团队时，请尽可能多地提供这些信息。 这些信息将有助于团队了解并解决您的问题。
 
 ## 基本信息 {#basic-information}
 
@@ -34,7 +40,7 @@ r_problem.xml
 
 * **电话：** 1-800-497-0335
 
-  有关美国以外地区的免费电话，请访问我们的[客户支持区域电话号码](https://helpx.adobe.com/cn/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)。当要求您选择产品的选项时，请按 4 联系 [!DNL Audience Manager] 团队。
+  有关美国以外地区的免费电话，请访问我们的[客户支持区域电话号码](https://helpx.adobe.com/cn/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)。 当要求您选择产品的选项时，请按 4 联系 [!DNL Audience Manager] 团队。
 
 * **电子邮件：** amsupport@adobe.com
 
@@ -57,20 +63,20 @@ r_problem.xml
    <td colname="col2"> <p>提供您的以下信息： </p> <p> 
      <ul id="ul_6ACF6EF2165C4041A891FF36D78BBA63"> 
       <li id="li_86573CAAE8454BE6BDF44F9A8281FF95">公司名称。 </li> 
-      <li id="li_8259BB738BA84A13982A8E84BCF56B2A"><span class="keyword">Audience Manager</span> 子域（如果已知）。子域是将数据收集事件发送到 <span class="keyword">Adobe</span> 的域的 URL（例如，<code>https://<i>myCompany</i>.demdex.net</code>）。 </li> 
+      <li id="li_8259BB738BA84A13982A8E84BCF56B2A"><span class="keyword">Audience Manager</span> 子域（如果已知）。 子域是将数据收集事件发送到 <span class="keyword">Adobe</span> 的域的 URL（例如，<code>https://<i>myCompany</i>.demdex.net</code>）。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>重现问题的步骤</b> </p> </td> 
-   <td colname="col2"> <p>提供尽可能多的详细信息，包括重现问题所需的任何 URL 以及预期结果。您的说明应包含足够的详细信息，以便不熟悉 <span class="keyword">Audience Manager</span> 的人员能够按照您的步骤或程序操作并重现问题。 </p> </td> 
+   <td colname="col2"> <p>提供尽可能多的详细信息，包括重现问题所需的任何 URL 以及预期结果。 您的说明应包含足够的详细信息，以便不熟悉 <span class="keyword">Audience Manager</span> 的人员能够按照您的步骤或程序操作并重现问题。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>优先级</b> </p> </td> 
-   <td colname="col2"> <p>为此问题分配优先级。优先级范围为 P1（最重要）到 P4（最不重要）。 </p> </td> 
+   <td colname="col2"> <p>为此问题分配优先级。 优先级范围为 P1（最重要）到 P4（最不重要）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>业务影响</b> </p> </td> 
-   <td colname="col2"> <p>描述此问题对您的业务有何影响。例如，此问题是否会导致收入损失或致使产品无法使用？您是否一直在处理此问题？ </p> </td> 
+   <td colname="col2"> <p>描述此问题对您的业务有何影响。 例如，此问题是否会导致收入损失或致使产品无法使用？ 您是否一直在处理此问题？ </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>预期</b> </p> </td> 
@@ -81,7 +87,7 @@ r_problem.xml
 
 ## 如果发生中断 {#outage}
 
-如果您怀疑发生了服务中断，请首先查看 [Experience Cloud 系统状态页面](https://status.adobe.com/zh-cn) ( [!DNL https://status.adobe.com/zh-cn] )。此页面记录了包括 Audience Manager 在内的各个 Experience Cloud 解决方案的所有服务中断、事故和维护信息，同时还包含我们技术运营团队进行的最新更新。如果您仍然需要协助，请在联系客户关怀团队时，除了上面列出的信息之外，确保您还知道以下信息：
+如果您怀疑发生了服务中断，请首先查看 [Experience Cloud 系统状态页面](https://status.adobe.com/zh-cn) ( [!DNL https://status.adobe.com/zh-cn] )。此页面记录了包括 Audience Manager 在内的各个 Experience Cloud 解决方案的所有服务中断、事故和维护信息，同时还包含我们技术运营团队进行的最新更新。 如果您仍然需要协助，请在联系客户关怀团队时，除了上面列出的信息之外，确保您还知道以下信息：
 
 * 服务中断开始的时间
 * 所发生情况的说明

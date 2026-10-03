@@ -7,24 +7,30 @@ title: 特征类型方法
 uuid: 082931d5-457b-4622-817b-86303f38c26a
 feature: API
 exl-id: d450f9ce-2abb-4a8b-b8db-2962b84fb341
-TQID: https://experienceleague.adobe.com/IoPUeMYwHk-D5F31Gx76Vmd97yRQqRIHlDWu3-5KZLg
+TQID: 'https://experienceleague.adobe.com/IoPUeMYwHk-D5F31Gx76Vmd97yRQqRIHlDWu3-5KZLg'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
+  - id: 7dee9651-deb5-5d4d-acfd-fbc10040467f
+    internal-label: API
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Taxonomy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 151
+source-wordcount: '153'
 ht-degree: 3%
-
 ---
-
 # 特征类型方法 {#trait-type-methods}
 
 允许您将特征分配给用户定义的类型或类别的可选方法，通常根据函数或您自己的内部报告流程进行分配。
@@ -35,7 +41,7 @@ ht-degree: 3%
 >
 >特征类型方法不会将特征分配给[通用分类](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)使用的类别。 请将其视为与通用分类法不同的标签。
 
-对于可视化引用，[!UICONTROL Trait Types]是位于[!DNL UI]下的&#x200B;**[!UICONTROL Traits > Create new trait > Basic Information]**&#x200B;中的下拉控件。
+对于可视化引用，[!UICONTROL Trait Types]是位于&#x200B;**[!UICONTROL Traits > Create new trait > Basic Information]**&#x200B;下的[!DNL UI]中的下拉控件。
 
 ## 创建新特征类型 {#create-trait-type}
 

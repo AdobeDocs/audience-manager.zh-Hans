@@ -7,24 +7,32 @@ title: 正在检索区段元数据
 uuid: 719e2c41-8788-4e8a-967a-e367421f9f84
 feature: Segments
 exl-id: 64922cf8-f7bf-4e33-871f-d33626b06360
-TQID: https://experienceleague.adobe.com/wWAyOKoMlNRC-tFKOmA-hWpwAiIs7r53MFcURPabsWg
+TQID: 'https://experienceleague.adobe.com/wWAyOKoMlNRC-tFKOmA-hWpwAiIs7r53MFcURPabsWg'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: c2c33729-f309-4bc2-92ba-87c475259df3
+    internal-label: REST APIs
+  - id: b52f95d5-ca6b-4fda-a49e-994dc0a63402
+    internal-label: Segments
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Customer experience
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 524
+source-wordcount: '529'
 ht-degree: 0%
-
 ---
-
 # 正在检索区段元数据 {#retrieving-segment-metadata}
 
 Audience Manager将区段信息发送给数据合作伙伴时，会使用数字ID标识这些对象。 作为数据合作伙伴，当您与客户共享此信息（或自己使用它）时，实际的名称和描述可在报表、功能板或其他用户界面([!DNL UI])中为客户提供更好的体验。 数据合作伙伴可以通过本节中所述的手动或自动方法将这些友好名称提供给其客户。
@@ -39,11 +47,11 @@ Audience Manager将区段信息发送给数据合作伙伴时，会使用数字I
 
 ### 步骤1：查看Audience Manager API
 
-[REST API快速入门](../../api/rest-api-main/aam-api-getting-started.md)部分包含有关常规要求、身份验证、可用方法等的信息。 如果您之前未使用[!DNL Audience Manager] [!DNL API]，则这是一个很好的起点。
+[REST API快速入门](../../api/rest-api-main/aam-api-getting-started.md)部分包含有关常规要求、身份验证、可用方法等的信息。如果您之前未使用[!DNL Audience Manager] [!DNL API]，则这是一个很好的起点。
 
 ### 步骤2：请求OAuth2访问凭据
 
-您需要客户端ID和密码才能进行[!DNL API]调用。 在集成设置过程中，您可以从集成专家处获取客户端ID和密码。 您还可以在[!UICONTROL Audience Manager Customer Care]向[!DNL amsupport@adobe.com]发送电子邮件请求。
+您需要客户端ID和密码才能进行[!DNL API]调用。 在集成设置过程中，您可以从集成专家处获取客户端ID和密码。 您还可以在[!DNL amsupport@adobe.com]向[!UICONTROL Audience Manager Customer Care]发送电子邮件请求。
 
 ### 步骤3：从每个集成客户那里收集特定于客户的信息
 

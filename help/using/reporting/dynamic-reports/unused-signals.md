@@ -7,18 +7,24 @@ title: 未使用的信号报表
 uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
 feature: Overlap Reports
 exl-id: ab5cb5ad-4305-4463-8f56-237b5a2f1f9e
-TQID: https://experienceleague.adobe.com/OfDw6FsS-MlFtwy-91jBH1O8d57aCvOap94ZK3zHVco
+TQID: 'https://experienceleague.adobe.com/OfDw6FsS-MlFtwy-91jBH1O8d57aCvOap94ZK3zHVco'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 623
+source-wordcount: '633'
 ht-degree: 1%
-
 ---
-
 # 未使用的信号报表{#unused-signals-report}
 
 此报表返回在清单中收集并发送到Audience Manager的所有未使用信息的频率计数。 要访问此报表，请导航至&#x200B;**Analytics >受众报表>其他报表>未使用的信号**。
@@ -31,7 +37,7 @@ ht-degree: 1%
 
 ## 概述
 
-信号是来自您网站的信息，以[!DNL Audience Manager]键值对[&#x200B; （例如](../../reference/key-value-pairs-explained.md)等）的形式传递到`color=blue, price>100, gender=female`。
+信号是来自您网站的信息，以[键值对](../../reference/key-value-pairs-explained.md) （例如`color=blue, price>100, gender=female`等）的形式传递到[!DNL Audience Manager]。
 
 未使用的信号由您收集但尚未映射到某个特征的数据组成。 [!UICONTROL Unused Signals]报表按日期、键、值和频率计数显示表中的数据。 任何传入到[!DNL Audience Manager]的未映射信号在一天内至少100次符合[!UICONTROL Unused Signals]报表的条件。
 
@@ -80,8 +86,8 @@ ht-degree: 1%
 >在报告中搜索未使用的值时，请考虑以下特殊性。 以下两个示例在表达式上存在差异：
 
 * T(v=1 [!UICONTROL AND NOT] (a=23))
-* T(v=1 [!UICONTROL AND] (a！=23))
-* 两个示例都显示了一个特征，该特征包含两个键值对v和a。第一个表达式将转换为：特征包含值为1 [!UICONTROL AND NOT]的键v和值为23的键a。 第二个表达式包含值为1 [!UICONTROL AND]的键v和值为[!UICONTROL NOT EQUAL] 23的键a。
+* T(v=1 [!UICONTROL AND] (a!=23))
+* 两个示例都显示了一个特征，该特征包含两个键值对v和a。 第一个表达式将转换为：特征包含值为1 [!UICONTROL AND NOT]的键v和值为23的键a。 第二个表达式包含值为1 [!UICONTROL AND]的键v和值为[!UICONTROL NOT EQUAL] 23的键a。
 * 考虑到上述两种不同的表达式，假设您在[!UICONTROL Unused Signals Report]中搜索传递给key a的值，无论其值是否为23，您只能在第一种情况下获得结果，因为key的值根本未发送。 在第二种情况下，发送了不同于23的值，因此键a未使用。
 
 ## 批量特征创建

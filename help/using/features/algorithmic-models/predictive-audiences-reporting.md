@@ -6,23 +6,30 @@ solution: Audience Manager
 title: Predictive Audiences报表
 feature: Algorithmic Models
 exl-id: 43a4272c-d9be-47f6-9b81-15472b0366ab
-TQID: https://experienceleague.adobe.com/cCq0D-eJiC3HKysBofh6yxzJ2iBV-e1cOXnYl-VnZD8
+TQID: 'https://experienceleague.adobe.com/cCq0D-eJiC3HKysBofh6yxzJ2iBV-e1cOXnYl-VnZD8'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
+  - id: cd2456ea-4f93-45ef-a193-94c258a6fbfb
+    internal-label: Algorithmic models
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data collection
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 608
+source-wordcount: '632'
 ht-degree: 2%
-
 ---
-
 # Predictive Audiences报表
 
 保存[!UICONTROL Predictive Audiences]模型后，Audience Manager会开始对其进行训练。 在几个小时内，计算模型将开始分析[数据收集服务器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=zh-Hans#dcs-pcs)上的受众。 报告将在第二天提供。
@@ -40,10 +47,10 @@ ht-degree: 2%
 * **[!UICONTROL Description]**：您在模型创建步骤中提供的描述；
 * **[!UICONTROL Model Type]**：每个模型的类型（[!UICONTROL Look-Alike Modeling]或[!UICONTROL Predictive Audiences]）；
 * **[!UICONTROL Status]**：每个模型的状态：
-   * **[!UICONTROL Pending]**：模型正在初始化，将很快开始生成结果；
-   * **[!UICONTROL Active]**：模型已成功运行并产生结果；
-   * **[!UICONTROL Warning]**：模型无法生成结果，因为数据不足（即，基线人口较少，用户配置文件不丰富）；
-   * **[!UICONTROL Error]**：模型无法运行。 您应联系Adobe代表。
+  * **[!UICONTROL Pending]**：模型正在初始化，将很快开始生成结果；
+  * **[!UICONTROL Active]**：模型已成功运行并产生结果；
+  * **[!UICONTROL Warning]**：模型无法生成结果，因为数据不足（即，基线人口较少，用户配置文件不丰富）；
+  * **[!UICONTROL Error]**：模型无法运行。 您应联系Adobe代表。
 
 ## 模型概述报表{#model-report}
 

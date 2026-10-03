@@ -7,16 +7,21 @@ title: 带有平台级别密钥的Geotargeting
 uuid: c7e4cbfe-e564-404e-a565-bbe5fd2fb519
 feature: Traits
 exl-id: 449096f9-64fd-495f-ac1d-3181a4544279
-TQID: https://experienceleague.adobe.com/0urg6GCEHpWwnVBPrkxULMrnihOhJNy5J37oj5nW0ao
+TQID: 'https://experienceleague.adobe.com/0urg6GCEHpWwnVBPrkxULMrnihOhJNy5J37oj5nW0ao'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 621
+source-wordcount: '650'
 ht-degree: 2%
-
 ---
-
 # 带有平台级别密钥的Geotargeting {#geotargeting-with-platform-level-keys}
 
 描述可用于通过Audience Manager帐户中所有属性的地理变量来定位用户的常用平台级别键值对。
@@ -47,7 +52,7 @@ ht-degree: 2%
 |--- |--- |
 | d_area_code | [北美区域代码](https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes)。  例如： <ul><li>**特征**： d_area_code=801</li><li>**特征名称**：犹他州</li></ul> |
 | d_city | 城镇。 下载[城市列表](assets/d_city.txt)。  例如： <ul><li>特征： d_city=bonn</li><li>特征名称：Bonn</li></ul> **提示**：您可以将`d_city`与`d_country`结合使用，以确保您的目标城市不是位于不同国家/地区的两个同名城市。 通过使用`d_postal_code`，您可以在定位中更加具体。 |
-| d_country | 值对应于ISO国家/地区代码。 有关代码的可搜索列表，请参阅[ISO在线浏览平台](https://www.iso.org/obp/ui/#home)。 <br>  针对联合王国是唯一不遵守ISO 3166的特殊情况。 在英国进行定位时，您应该使用“UK”而非“GB”。  为了定位荷属安的列斯，代码“AN”自2010年以来已被弃用。 这一地区已分成五个单独的领土单位。 这意味着，在荷属安的列斯群岛进行定位时，不应使用“AN”，而应结合使用“CW”、“SX”和“BQ”等国家/地区代码。  例如： <br>  特征： d_country=CZ <br>  特征名称：捷克共和国<br>  特征： d_country=UK <br>  特征名称：英国<br>  特征： d_country=CW OR d_country=SX OR d_country=BQ <br>  特征名称：荷属安的列斯 |
+| d_country | 值对应于ISO国家/地区代码。 有关代码的可搜索列表，请参阅[ISO在线浏览平台](https://www.iso.org/obp/ui/#home)。 <br>针对英国是唯一不遵守ISO 3166的特殊情况。 在英国进行定位时，您应该使用“UK”而非“GB”。  为了定位荷属安的列斯，代码“AN”自2010年以来已被弃用。 这一地区已分成五个单独的领土单位。 这意味着，在荷属安的列斯群岛进行定位时，不应使用“AN”，而应结合使用“CW”、“SX”和“BQ”等国家/地区代码。  例如： <br>特征： d_country=CZ <br>特征名称：捷克共和国<br>特征： d_country=UK <br>特征名称：英国<br>特征： d_country=CW OR d_country=SX OR d_country=BQ <br>特征名称：荷属安的列斯 |
 | d_dma_code | 都市区DMA代码。 下载[DMA区域列表](assets/DMAregions.csv) （.csv格式）。  例如： <ul><li>特征：d_dma_code=807</li><li>特征名称：旧金山</li></ul> |
 | d_lat | 纬度（例如d_lat=40.75）。 下载[纬度列表](assets/d_lat.txt)。 |
 | d_long | 经度（例如d_long=73.98）。 下载[经度列表](assets/d_long.txt)。 |

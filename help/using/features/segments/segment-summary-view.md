@@ -8,21 +8,28 @@ uuid: e844e423-9701-42d4-9ba5-d82f41358adc
 keywords: 身份类型划分、身份划分、受众身份报告、跨设备、跨设备ID、设备ID
 feature: Segments
 exl-id: d33c8146-fd98-47fc-aa3d-96f002538df4
-TQID: https://experienceleague.adobe.com/598rKoYt4bQ2Wojsy1ypYNfMyLrFDAJJX9jaqk9l2pk
+TQID: 'https://experienceleague.adobe.com/598rKoYt4bQ2Wojsy1ypYNfMyLrFDAJJX9jaqk9l2pk'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b52f95d5-ca6b-4fda-a49e-994dc0a63402
+    internal-label: Segments
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: '408'
 ht-degree: 0%
-
 ---
-
 # “区段详细信息”页面 {#segment-summary-view}
 
 单个区段的详细信息页面概述了区段详细信息，如区段名称、ID、绩效指标、定义区段的规则以及目标映射。 要查看这些详细信息，请转到&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**，然后单击要处理的区段的名称。

@@ -7,20 +7,26 @@ title: 入站数据文件的FTP名称和文件大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 feature: Inbound Data Transfers
 exl-id: 9c889214-7075-4392-9ed5-f07b91e7b50a
-TQID: https://experienceleague.adobe.com/ndl-BMDmVgcXTHtDRRgdsQPbbOJIDF3aAh21Q2NoZTA
+TQID: 'https://experienceleague.adobe.com/ndl-BMDmVgcXTHtDRRgdsQPbbOJIDF3aAh21Q2NoZTA'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: a03b8192-8410-479f-a326-4cddf10757f6
+    internal-label: Inbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 3c88464c2249b7848c9ae80ca4c0ed58fcb81070
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1105
+source-wordcount: '1121'
 ht-degree: 3%
-
 ---
-
 # 入站数据文件的[!DNL FTP]名称和文件大小要求 {#ftp-name-and-file-size-requirements-for-inbound-data-files}
 
 描述向[!DNL Audience Manager]发送数据时需要遵循的必填字段、语法、命名惯例和文件大小。 在向Audience Manager [!DNL FTP]目录发送数据时，根据这些规范设置文件的名称和大小。
@@ -31,7 +37,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此文档中的文本样式（`monospaced text`、*斜体*、括号`[ ]` `( )`等）指示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
+>文本样式（`monospaced text`、*斜体*、括号`[ ]` `( )`等） 本文档中说明了代码元素和选项。 请参阅[代码和文本元素的样式约定](../../../reference/code-style-elements.md)，以了解更多信息。
 
 ## 文件名语法 {#file-name-syntax}
 
@@ -65,7 +71,7 @@ ht-degree: 3%
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
    <td colname="col2"> <p>告知<span class="keyword"> Audience Manager</span>数据文件是否包含您自己的用户ID、Android ID、iOS ID或其他属于<a href="/help/using/features/global-data-sources.md">全局数据源</a>的ID的lD。 接受以下选项：</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>数据Source ID （也称为数据提供程序ID）：</b>这是Audience Manager分配给数据源的唯一ID（请参阅ID <a href="/help/using/reference/ids-in-aam.md">的Audience Manager </a>索引）。 发送包含您自己的用户ID的数据时，在文件名中使用此分配的ID。 例如，<code>...ftp_dpm_21_123456789.sync</code>告知<span class="keyword"> Audience Manager</span>将数据载入到属于数据源21的ID。 </li> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>数据Source ID （也称为数据提供程序ID）：</b>这是Audience Manager分配给数据源的唯一ID（请参阅ID </a>的Audience Manager <a href="/help/using/reference/ids-in-aam.md">索引）。 发送包含您自己的用户ID的数据时，在文件名中使用此分配的ID。 例如，<code>...ftp_dpm_21_123456789.sync</code>告知<span class="keyword"> Audience Manager</span>将数据载入到属于数据源21的ID。 </li> 
      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID (GAID)：</b>如果数据文件名中包含Android ID，则使用ID 20914。 在使用Android ID时，您需要使用字段<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code>告知<span class="keyword"> Audience Manager</span>，数据文件仅包含Android ID，并且这些ID应符合属于<code><i>_DPID_TARGET_DATA_OWNER</i></code>数据源的特征。</li> 
      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID (IDFA)：</b>如果数据文件名中包含iOS ID，则使用ID 20915。 在使用iOS ID时，您需要使用字段<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code>告知<span class="keyword"> Audience Manager</span>，数据文件仅包含iOS ID，并且这些ID应符合属于<code><i>_DPID_TARGET_DATA_OWNER</i></code>数据源的特征。</li>
      <li> <b>属于其他全局数据源的ID</b>：您可以载入适用于Advertising (RIDA)、Microsoft Advertising ID (MAID)和其他ID的Roku ID。 使用与每个数据源对应的ID，如<a href="/help/using/features/global-data-sources.md">全局数据源文章</a>中所述。</li> 
@@ -73,7 +79,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
-   <td colname="col2"> <p>此字段可告知Audience Manager要将数据载入到哪个数据源。 如果您将DPID设置为一个Android ID、iOS ID或其他属于全局数据源的ID，则此字段为必填字段。 这允许<span class="keyword"> Audience Manager</span>将文件数据链接回您的组织。 <br>此目标数据源需要由您的公司拥有。 出于第二方数据共享的目的，要将数据摄取到属于另一个公司的目标数据源中，您必须拥有公司与目标数据源之间的访问映射。 请联系您的Adobe顾问或客户支持以设置映射。</p><p><b>重要说明：</b>您<i>不</i>需要为现有的数据共享关系（对于属于您在2022年3月14日之前将数据载入其中的其他公司的目标数据源）请求映射。 将数据载入属于您的PID的目标数据源时，也不需要映射。 </p> <p>例如： </p> 
+   <td colname="col2"> <p>此字段可告知Audience Manager要将数据载入到哪个数据源。 如果您将DPID设置为一个Android ID、iOS ID或其他属于全局数据源的ID，则此字段为必填字段。 这允许<span class="keyword"> Audience Manager</span>将文件数据链接回您的组织。<br> 此目标数据源需要由您的公司拥有。 出于第二方数据共享的目的，要将数据摄取到属于另一个公司的目标数据源中，您必须拥有公司与目标数据源之间的访问映射。 请联系您的Adobe顾问或客户支持以设置映射。</p><p><b>重要说明：</b>您<i>不</i>需要为现有的数据共享关系（对于属于您在2022年3月14日之前将数据载入其中的其他公司的目标数据源）请求映射。 将数据载入属于您的PID的目标数据源时，也不需要映射。 </p> <p>例如： </p> 
     <ul> 
      <li> <code>...ftp_dpm_33_21_1234567890.sync</code>告知Audience Manager您正在将属于数据源33的客户ID限定为属于数据源21的特征或信号。 </li> 
      <li> <b>Android ID (GAID)：</b> <code>...ftp_dpm_20914_21_1234567890.sync</code>告知<span class="keyword"> Audience Manager</span>，数据文件仅包含Android ID，并且这些ID应符合属于数据源21的特征。</li> 

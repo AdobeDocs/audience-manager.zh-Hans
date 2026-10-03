@@ -6,22 +6,28 @@ solution: Audience Manager
 title: 实施指南
 feature: People-based Destinations
 exl-id: 224334d5-419c-4bb1-b76c-ce996a543b7a
-TQID: https://experienceleague.adobe.com/sn4hek-BWvX1SZZJ8TyBojZpdA3ZcWEHtf3mhlm22vg
+TQID: 'https://experienceleague.adobe.com/sn4hek-BWvX1SZZJ8TyBojZpdA3ZcWEHtf3mhlm22vg'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+subfeature_v2:
+  - id: d7221605-094b-45a5-891f-f37bd58c0055
+    internal-label: People based Destinations
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Personalization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1350
-ht-degree: 2%
-
+source-wordcount: '1362'
+ht-degree: 3%
 ---
-
 # 实施指南 {#implementation-guidance}
 
 >[!IMPORTANT]
@@ -40,7 +46,7 @@ ht-degree: 2%
 
 ![pbd-implementation](assets/pbd-implementation.png)
 
-## 1.定义用例 {#defining-your-use-case}
+## &#x200B;1. 定义用例 {#defining-your-use-case}
 
 在开始实施[!DNL People-Based Destinations]之前，您需要明确定义要将此功能用于的用例。 您可以通过两种方式（基于受众活动）使用[!DNL People-Based Destinations]来定位受众：
 
@@ -54,7 +60,7 @@ ht-degree: 2%
 
 您的公司是一家电信服务提供商，它将客户数据（如电子邮件地址和购买的电信计划）保留在内部[!DNL CRM]中。 您希望定位社交平台中的现有客户，以根据其现有订阅向他们提供升级包。 为此，您可以将经过哈希处理的客户电子邮件地址提取到Audience Manager中，并根据现有客户订阅创建区段。 然后，您可以将这些区段发送到[!DNL People-Based Destinations]，以通过个性化优惠定位您的客户。
 
-## 2.定义定向电子邮件地址的类型 {#define-target-email}
+## &#x200B;2. 定义目标电子邮件地址的类型 {#define-target-email}
 
 定义实施策略的第二步是确定要定位的客户电子邮件地址类型。
 
@@ -62,7 +68,7 @@ ht-degree: 2%
 
 **B)基于所有关联电子邮件地址的受众定位**。 在此方案中，您的用户拥有多个与多个电子邮件地址关联的帐户，并且您希望跨所有关联的电子邮件地址定向这些帐户，而不管经过身份验证的活动。
 
-## 3.识别您拥有的客户ID (CRM ID)类型 {#identify-customer-id}
+## &#x200B;3. 识别您拥有的客户ID (CRM ID)类型 {#identify-customer-id}
 
 在[!DNL People-Based Destinations]中定位受众需要您发送客户电子邮件地址的[SHA256 hashed](people-based-destinations-prerequisites.md)版本。 根据您现有的Audience Manager配置，您可能会发现自己处于以下两种情况之一：
 
@@ -70,7 +76,7 @@ ht-degree: 2%
 
 **B)您的Audience Manager客户ID ([DPUUID](../../reference/ids-in-aam.md))不是小写、经过哈希处理的电子邮件地址**。 在此方案中，您现有的客户ID无法发送到[!DNL People-Based Destinations]。 要使用[!DNL People-Based Destinations]，您需要在现有客户ID与小写、散列版本的客户电子邮件地址之间执行ID同步。 你通过[基于文件的ID同步](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)或使用[声明的ID](../declared-ids.md)来执行此操作。
 
-## 4.特征资格 {#trait-qualification}
+## &#x200B;4. 特征资格 {#trait-qualification}
 
 要在[!DNL People-Based Destinations]中准确地定位受众，您的用户需要具备基于规则的特征或已载入的特征，具体取决于您要执行的受众定位类型。
 
@@ -78,7 +84,7 @@ ht-degree: 2%
 
 **B)通过入站数据文件针对您的客户ID载入特征**。 此选项适用于[1中的用例B。 定义您的用例](people-based-destinations-workflow.md#defining-your-use-case)。 基于纯离线活动定位受众时，您需要通过[入站数据文件](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)来限定客户ID的已载入特征。
 
-## 5.创建或标记数据源和载入经过哈希处理的电子邮件地址 {#create-label-data-sources}
+## &#x200B;5. 创建或标记数据源和板载经过哈希处理的电子邮件地址 {#create-label-data-sources}
 
 根据您在Audience Manager中拥有的客户ID类型（请参阅[3）。 识别您拥有](people-based-destinations-workflow.md#identify-customer-id)的客户ID (CRM ID)类型，您会发现自己处于以下情况之一：
 
@@ -86,10 +92,10 @@ ht-degree: 2%
 
 **B)创建新数据源**。 此选项适用于您的Audience Manager客户ID ([DPUUID](../../reference/ids-in-aam.md))未经过哈希处理的电子邮件地址的情况。 在这种情况下，您需要创建一个新的跨设备数据源，并针对该数据源载入经过哈希处理的电子邮件地址。 您可以通过两种方式做到这一点：
 
-* 使用基于文件的ID同步。 有关 ID 同步文件外观的详细信息，请参阅 [ID 同步文件的名称和内容要求](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)。使用此方法时，您可以定位来自[!DNL CRM]数据库的所有经过哈希处理的电子邮件地址。
+* 使用基于文件的ID同步。 有关 ID 同步文件外观的详细信息，请参阅 [ID 同步文件的名称和内容要求](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)。 使用此方法时，您可以定位来自[!DNL CRM]数据库的所有经过哈希处理的电子邮件地址。
 * 在传入经过身份验证的客户ID时，使用[声明的ID](../declared-ids.md)来声明经过哈希处理的电子邮件地址。 使用此方法时，Audience Manager仅代表您定位已在线进行身份验证的用户的经过哈希处理的电子邮件地址。 基于人员的渠道中定位的电子邮件地址只是声明的ID事件调用中的电子邮件地址。 与客户 ID 关联的其他电子邮件地址不会实时激活。
 
-## 6.使用配置文件合并规则进行分段 {#use-profile-merge-rules}
+## &#x200B;6. 使用配置文件合并规则进行分段 {#use-profile-merge-rules}
 
 根据您的用例（请参阅[1）。 定义您的用例](people-based-destinations-workflow.md#defining-your-use-case)，可通过两种方式使用[!DNL Profile Merge Rules]进行分段。
 

@@ -8,26 +8,36 @@ title: 文件夹特征关于
 uuid: e561ce8f-6c90-44a7-b034-685533f29030
 feature: Traits
 exl-id: 779d1ab3-3a69-4975-b45a-acd95ab86a37
-TQID: https://experienceleague.adobe.com/fFfEE048TORlBUDrVYjizvI31iBfJeNsBl99uZJNefA
+TQID: 'https://experienceleague.adobe.com/fFfEE048TORlBUDrVYjizvI31iBfJeNsBl99uZJNefA'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 533
+source-wordcount: '535'
 ht-degree: 0%
-
 ---
-
 # 文件夹特征：关于 {#folder-traits-about}
 
 [!UICONTROL Folder traits]允许您自动将驻留在同一文件夹和所有子文件夹中的特征聚合到可定位的区段中。
@@ -71,13 +81,13 @@ ht-degree: 0%
 * `READ`和`WRITE`对特征数据源的组权限。
 * 特征数据源的`VIEW_ALL_TRAITS`和`EDIT_ALL_TRAITS`通配符权限。
 
-在[!UICONTROL RBAC]管理文档[中了解如何分配](../../features/administration/administration-overview.md#create-group)权限。
+在[管理文档](../../features/administration/administration-overview.md#create-group)中了解如何分配[!UICONTROL RBAC]权限。
 
 ## 限制和其他注意事项 {#limits}
 
 | 项目 | 描述 |
 |---|---|
 | 特征类型 | [!UICONTROL Onboarded traits]和[!UICONTROL algorithmic traits]对[!UICONTROL folder trait]的频率最多有1个实现贡献。 |
-| 在文件夹之间移动特征 | 将特征从文件夹移动到另一个文件夹会取消该特征从第一个文件夹特征的资格，并为其授予第二个[!UICONTROL folder trait]的资格。 这意味着如果从文件夹中删除或移动特征，则特征群体中的用户将使用文件夹特征作为区段表达式从区段中取消分段。 <br>将Adobe Analytics区段或报表包映射到您的Experience Cloud组织时，Audience Manager会自动创建对应的新只读区段和特征。 您无法从Audience Manager中编辑或更改这些特征的存储位置。 但是，您对映射的Adobe Analytics区段或报表包执行的任何更改都会反映在Audience Manager中。 |
-| 系统变量 | 无法使用[!UICONTROL Folder traits]参数在事件调用中实现`d_sid`。 |
+| 在文件夹之间移动特征 | 将特征从文件夹移动到另一个文件夹会取消该特征从第一个文件夹特征的资格，并为其授予第二个[!UICONTROL folder trait]的资格。 这意味着如果从文件夹中删除或移动特征，则特征群体中的用户将使用文件夹特征作为区段表达式从区段中取消分段。<br> 将Adobe Analytics区段或报表包映射到您的Experience Cloud组织时，Audience Manager会自动创建对应的新只读区段和特征。 您无法从Audience Manager中编辑或更改这些特征的存储位置。 但是，您对映射的Adobe Analytics区段或报表包执行的任何更改都会反映在Audience Manager中。 |
+| 系统变量 | 无法使用`d_sid`参数在事件调用中实现[!UICONTROL Folder traits]。 |
 | 报表 | [!UICONTROL Folder traits]是自动计算的特征，不会出现在&#x200B;**[!UICONTROL Overlap Reports]**&#x200B;中。 |

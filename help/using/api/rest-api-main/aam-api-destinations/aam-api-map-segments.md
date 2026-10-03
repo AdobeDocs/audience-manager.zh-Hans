@@ -7,19 +7,23 @@ title: 将区段映射到目标
 uuid: 35358ace-3082-4e86-a6eb-d77281af6d7e
 feature: API
 exl-id: 906df6c5-f878-48e6-a804-eb5b4407f304
-TQID: https://experienceleague.adobe.com/uCYyOwaUN-5uCXESTtTTfVaoUsH2qrZS-ggvVQ-6-Ng
+TQID: 'https://experienceleague.adobe.com/uCYyOwaUN-5uCXESTtTTfVaoUsH2qrZS-ggvVQ-6-Ng'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
   - id: c814092e-2730-45e8-a12d-e084529f52cb
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Destinations
+subfeature_v2:
+  - id: 7dee9651-deb5-5d4d-acfd-fbc10040467f
+    internal-label: API
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 494
+source-wordcount: '514'
 ht-degree: 6%
-
 ---
-
 # 将区段映射到目标 {#map-segments-to-a-destination}
 
 使用这些[!DNL RESTful API]方法将区段映射到目标。
@@ -28,7 +32,7 @@ ht-degree: 6%
 
 ## 支持的目标类型：仅URL和Cookie
 
-可用的`POST`方法允许您仅将区段映射到[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，无法使用这些[!UICONTROL server-to-server destinations]方法将区段映射到[!DNL REST API]。 请改用用户界面。 但是，相关目标`GET`方法允许您检索有关在用户界面中创建的[!UICONTROL server-to-server destinations]的信息。
+可用的`POST`方法允许您仅将区段映射到[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，无法使用这些[!DNL REST API]方法将区段映射到[!UICONTROL server-to-server destinations]。 请改用用户界面。 但是，相关目标`GET`方法允许您检索有关在用户界面中创建的[!UICONTROL server-to-server destinations]的信息。
 
 ## 将区段映射到非序列化URL目标 {#map-segment-non-serial}
 
@@ -275,7 +279,7 @@ ht-degree: 6%
 
 ## 将区段映射到服务器到服务器目标 {#map-segment-s2s}
 
-一种`POST`方法，可让您将区段映射到现有的[!UICONTROL server-to-server]目标。 但请注意，无法使用这些当前可用的[!UICONTROL server-to-server]方法创建[!DNL API]目标。
+一种`POST`方法，可让您将区段映射到现有的[!UICONTROL server-to-server]目标。 但请注意，无法使用这些当前可用的[!DNL API]方法创建[!UICONTROL server-to-server]目标。
 
 <!-- r_map_segment_s2s.xml -->
 
@@ -321,7 +325,7 @@ ht-degree: 6%
 
 ## 批量创建目标映射 {#bulk-create}
 
-允许您传入由`POST`或[!UICONTROL cookie]目标映射组成的数组的[!UICONTROL URL]方法。
+允许您传入由[!UICONTROL cookie]或[!UICONTROL URL]目标映射组成的数组的`POST`方法。
 
 <!-- r_bulk_create.xml -->
 

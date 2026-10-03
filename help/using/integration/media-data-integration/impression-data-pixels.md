@@ -7,29 +7,42 @@ title: 通过像素调用捕获营销活动展示数据
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 feature: Adobe Campaign Integration
 exl-id: 04e6f1e5-5075-4221-a310-deb3717458ad
-TQID: https://experienceleague.adobe.com/4AePlh8JW-KJ5pMyBjEDNQ1mxfikBavHMT-UXkQqYJo
+TQID: 'https://experienceleague.adobe.com/4AePlh8JW-KJ5pMyBjEDNQ1mxfikBavHMT-UXkQqYJo'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
   - id: ff9c2088-e1d9-47aa-85e4-6765b719f5c7
+    internal-label: Audience Optimization Reports
+  - id: b59a5343-ccde-4868-a926-97a27448e694
+    internal-label: Campaign integration
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 698
+source-wordcount: '742'
 ht-degree: 14%
-
 ---
-
 # 通过像素调用捕获营销活动展示数据{#capturing-campaign-impression-data-via-pixel-calls}
 
 将媒体数据发送到Audience Manager的一种方法使用广告服务器宏将促销活动属性发送到Audience Manager。
@@ -40,9 +53,9 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->文本样式（`monospaced text`、*斜体*、括号`[ ]` `( )`等）表示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../reference/code-style-elements.md)，以了解更多信息。
+>文本样式（`monospaced text`、*斜体*、括号`[ ]` `( )`等） 指示代码元素和选项。 请参阅[代码和文本元素的样式约定](../../reference/code-style-elements.md)，以了解更多信息。
 
-事件调用收集展示和转化数据，并将其发送到[!DNL Audience Manager] [数据收集服务器](/help/using/reference/system-components/components-data-collection.md) ([!DNL DCS])。 此过程依赖于第三方广告服务器，这些服务器将调用置于创意中，以控制插入到代码中的内容。第三方广告服务器（例如，[!DNL DFA]）可以将此代码置于每个广告展示中。而且，广告调用不会使用 [!DNL JavaScript] 或采用禁止 iframe 的嵌套技术来访问广告标记之外的发布者数据。
+事件调用收集展示和转化数据，并将其发送到[!DNL Audience Manager] [数据收集服务器](/help/using/reference/system-components/components-data-collection.md) ([!DNL DCS])。 此过程依赖于第三方广告服务器，这些服务器将调用置于创意中，以控制插入到代码中的内容。 第三方广告服务器（例如，[!DNL DFA]）可以将此代码置于每个广告展示中。 而且，广告调用不会使用 [!DNL JavaScript] 或采用禁止 iframe 的嵌套技术来访问广告标记之外的发布者数据。
 
 事件调用包含使用以下语法的键值对：
 
@@ -78,7 +91,7 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bust </code> </p> </td> 
-   <td colname="col2"> <p>Cache-busting值。 <span class="keyword"> Audience Manager </span>自动发送大多数浏览器和代理遵循的缓存控制标头。 如果要执行额外的缓存无效，请将此参数包含在事件调用中，后跟一个随机字符串。 </p> <p> 可选。 </p> </td> 
+   <td colname="col2"> <p>Cache-busting值。<span class="keyword"> Audience Manager </span>自动发送大多数浏览器和代理遵循的缓存控制标头。 如果要执行额外的缓存无效，请将此参数包含在事件调用中，后跟一个随机字符串。 </p> <p> 可选。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_campaign </code> </td> 

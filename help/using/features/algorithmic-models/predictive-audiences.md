@@ -6,28 +6,40 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 exl-id: 57eaeb09-0e0e-4ce9-9b25-f1a27f4f35ce
-TQID: https://experienceleague.adobe.com/--U4qWXmR0OhYOOlPCZXm7sdXBL3dmkfmtp09WMUetw
+TQID: 'https://experienceleague.adobe.com/--U4qWXmR0OhYOOlPCZXm7sdXBL3dmkfmtp09WMUetw'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: cd2456ea-4f93-45ef-a193-94c258a6fbfb
+    internal-label: Algorithmic models
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1470
+source-wordcount: '1543'
 ht-degree: 3%
-
 ---
-
 # [!UICONTROL Predictive Audiences]概述 {#predictive-audiences}
 
 [!UICONTROL Predictive Audiences]可帮助您使用高级数据科学技术将未知受众实时分类为不同的角色。
@@ -37,7 +49,7 @@ ht-degree: 3%
 
 在营销环境中，人物是由访客、用户或潜在购买者定义的受众区段，他们具有一组特定特征，如人口统计信息、浏览习惯、购物历史记录等。
 
-[!UICONTROL Predictive Audiences] 模型进一步扩展了角色这一概念的应用，允许您使用 Audience Manager 的机器学习功能将未知受众分类为不同的角色。Audience Manager通过为一组已知的第一方受众计算未知的第一方受众的倾向，来帮助您实现这一目标。
+[!UICONTROL Predictive Audiences] 模型进一步扩展了角色这一概念的应用，允许您使用 Audience Manager 的机器学习功能将未知受众分类为不同的角色。 Audience Manager通过为一组已知的第一方受众计算未知的第一方受众的倾向，来帮助您实现这一目标。
 
 创建[!UICONTROL Predictive Audiences]模型时，第一步是选择希望目标受众作为分类依据的基线特征或区段。 这些特征或区段将定义您的角色。
 
@@ -88,7 +100,7 @@ ht-degree: 3%
 您可以选择任何第一方特征或区段来定义角色。 但是，为获得最佳结果，这里提供了一组推荐的最佳实践：
 
 * 选择您的角色特征或区段，以便每个角色至少拥有几百个[设备ID](../../reference/ids-in-aam.md)。
-* 如果您的特征基于[跨设备ID](../../reference/ids-in-aam.md)，则可以将其包含在使用[设备ID](../profile-merge-rules/merge-rules-overview.md)的[配置文件合并规则](../../reference/ids-in-aam.md)的区段中，如[!UICONTROL Device Graph]。 这将确保有足够的[设备ID](../../reference/ids-in-aam.md)可供算法学习。
+* 如果您的特征基于[跨设备ID](../../reference/ids-in-aam.md)，则可以将其包含在使用[设备ID](../../reference/ids-in-aam.md)的[配置文件合并规则](../profile-merge-rules/merge-rules-overview.md)的区段中，如[!UICONTROL Device Graph]。 这将确保有足够的[设备ID](../../reference/ids-in-aam.md)可供算法学习。
 * 我们建议为您的角色选择特征或简单区段，由1到3个特征组成。
 * 选择基线特征或重叠程度最低的区段。
 * 确保在数字资产中捕获粒度特征。
@@ -123,16 +135,16 @@ ht-degree: 3%
 
 在配置[!UICONTROL Predictive Audiences]模型时，请牢记以下注意事项和限制：
 
-* 您最多可以创建10个[!UICONTROL Predictive Audiences]模型。
+* 您最多可以创建 10 个 [!UICONTROL Predictive Audiences] 模型。
 * 对于每个模型，您最多可以选择50个基本特征/区段。
 * [!UICONTROL Predictive Audiences]当前不支持第二方和第三方数据。
 * [!UICONTROL Predictive Audiences]根据您的第一方特征，从您的所有第一方数据源执行受众分类。
 * [!UICONTROL Predictive Audiences]的区段评估使用您在模型创建期间选择的&#x200B;**[!UICONTROL Profile Merge Rule]**。 要了解有关[!UICONTROL Profile Merge Rules]的更多信息，请参阅专用的[文档](../profile-merge-rules/merge-rules-overview.md)。
 * 不支持将某些特征和区段用作基线或目标受众。 选择下列模型之一作为基线或目标受众时，[!UICONTROL Predictive Audiences]模型将无法保存：
-   * 使用预测特征创建的预测特征和区段；
-   * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md)特征或区段；
-   * 算法特征；
-   * 第二方和第三方特征。
+  * 使用预测特征创建的预测特征和区段；
+  * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md)特征或区段；
+  * 算法特征；
+  * 第二方和第三方特征。
 * [!UICONTROL Predictive Audience] [!UICONTROL segments]不能在[!UICONTROL Audience Lab]中使用。
 
 ## [!UICONTROL Data Export Controls] {#dec}
@@ -141,7 +153,7 @@ ht-degree: 3%
 
 1. 您在构建模型时选择的第一方数据源。
 1. 目标受众的第一方数据源。 具体而言，构成目标受众的[!UICONTROL traits]或[!UICONTROL segments]的数据导出控件。
-1. 您为模型选择的[的](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hans)数据导出控件[!UICONTROL Profile Merge Rule]。
+1. 您为模型选择的[!UICONTROL Profile Merge Rule]的[数据导出控件](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hans)。
 
 新创建的预测[!UICONTROL traits]和[!UICONTROL segments]将与上面描述的第一方数据源的并集具有相同的隐私限制。
 
@@ -153,9 +165,9 @@ ht-degree: 3%
 
 * 它定义在模型分析具有影响力的[!UICONTROL traits]时，将用户分类为预测性[!UICONTROL segment]时，应考虑哪些设备和/或验证的配置文件。
 * 它控制在模型训练步骤中应该使用哪些[!UICONTROL trait]类型（设备级别或跨设备级别）并显示为具有影响力的[!UICONTROL traits]。 预测[!UICONTROL segments]是目标受众的子集。
-   * 如果目标受众是区段，我们建议您为模型选择与分配给目标受众的相同的[!UICONTROL Profile Merge Rule]，或者选择包含目标受众的配置文件类型的[!UICONTROL Profile Merge Rule]。
-   * 如果目标受众是[!UICONTROL trait]，我们建议您选择一个[!UICONTROL Profile Merge Rule]，以访问与目标受众特征相同的数据类型（设备配置文件数据或跨设备配置文件数据）。
-* 实时受众分类仅支持使用[!UICONTROL Profile Merge Rules]和[!UICONTROL Current Authenticated Profiles]选项的[!UICONTROL No Device Profile]。 有关详细信息，请参阅[定义的配置文件合并规则选项](../profile-merge-rules/merge-rule-definitions.md)。
+  * 如果目标受众是区段，我们建议您为模型选择与分配给目标受众的相同的[!UICONTROL Profile Merge Rule]，或者选择包含目标受众的配置文件类型的[!UICONTROL Profile Merge Rule]。
+  * 如果目标受众是[!UICONTROL trait]，我们建议您选择一个[!UICONTROL Profile Merge Rule]，以访问与目标受众特征相同的数据类型（设备配置文件数据或跨设备配置文件数据）。
+* 实时受众分类仅支持使用[!UICONTROL Current Authenticated Profiles]和[!UICONTROL No Device Profile]选项的[!UICONTROL Profile Merge Rules]。 有关详细信息，请参阅[定义的配置文件合并规则选项](../profile-merge-rules/merge-rule-definitions.md)。
 
 选择同时使用设备数据和跨设备数据的[!UICONTROL Profile Merge Rule]，可将可用于模型训练和用户分类的[!UICONTROL traits]数量最大化到预测的[!UICONTROL segments]中。
 

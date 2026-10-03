@@ -7,16 +7,21 @@ title: 特征存储
 uuid: e72685ee-0c64-44a4-a8e2-d6ee5c968ba0
 feature: Traits
 exl-id: 97d9951e-a339-4dd9-8a67-b7884752533b
-TQID: https://experienceleague.adobe.com/acJN-EyL60I8Y3dmrj8g9oV7qODKLJXiz7QOQvPs6G0
+TQID: 'https://experienceleague.adobe.com/acJN-EyL60I8Y3dmrj8g9oV7qODKLJXiz7QOQvPs6G0'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 213
+source-wordcount: '213'
 ht-degree: 3%
-
 ---
-
 # 特征存储 {#trait-storage}
 
 特征存储文件夹可以存储并帮助您组织特征。
@@ -35,7 +40,7 @@ ht-degree: 3%
 
 <!-- t_tb_create_storage.xml -->
 
-设置新特征时，您可以在[!UICONTROL Basic Information]分区中创建一个新的存储文件夹。 此外，还可以在主[!UICONTROL Trait Storage]列表仪表板的[!UICONTROL Traits]部分中创建文件夹。
+设置新特征时，您可以在[!UICONTROL Basic Information]分区中创建一个新的存储文件夹。 此外，还可以在主[!UICONTROL Traits]列表仪表板的[!UICONTROL Trait Storage]部分中创建文件夹。
 
 要创建新的存储文件夹，请执行以下操作：
 
@@ -51,7 +56,7 @@ ht-degree: 3%
 
 <!-- t_tb_rename_delete_storage.xml -->
 
-您可以从主[!UICONTROL Trait Storage]列表仪表板的[!UICONTROL Traits]部分重命名或删除存储文件夹。
+您可以从主[!UICONTROL Traits]列表仪表板的[!UICONTROL Trait Storage]部分重命名或删除存储文件夹。
 
 * 将鼠标悬停在文件夹上并单击铅笔图标可重命名文件夹。
 * 将鼠标悬停在文件夹上并单击&#x200B;**X**&#x200B;图标可将其删除。

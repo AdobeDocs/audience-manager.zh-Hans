@@ -8,21 +8,28 @@ title: 管理文件夹特征
 uuid: 287ac280-bd58-4985-85bd-b6501eb64b7f
 feature: Traits
 exl-id: fa7a8d2a-dacc-413e-89d6-d3b7ce7bbbe3
-TQID: https://experienceleague.adobe.com/YScTXBbG6HeRUviBsC2Rl9L7QdOXe-ciVwWBQfbPOzs
+TQID: 'https://experienceleague.adobe.com/YScTXBbG6HeRUviBsC2Rl9L7QdOXe-ciVwWBQfbPOzs'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Taxonomy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 362
+source-wordcount: '363'
 ht-degree: 4%
-
 ---
-
 # 管理文件夹特征 {#manage-folder-traits}
 
 创建、编辑和删除文件夹特征。
@@ -41,7 +48,7 @@ ht-degree: 4%
 
    ![](assets/folder_traits_create.PNG)
 
-1. 单击“+”图标可创建此文件夹。请注意，在分类中最多可创建2000个文件夹。 请参阅[使用限制](../../features/administration/usage-limits.md)文档，以了解更多信息。
+1. 单击“+”图标可创建此文件夹。 请注意，在分类中最多可创建2000个文件夹。 请参阅[使用限制](../../features/administration/usage-limits.md)文档，以了解更多信息。
 1. 命名文件夹，然后单击&#x200B;**保存**。 例如，名为Electronics的文件夹将具有一个名为“Electronics文件夹特征”的文件夹特征。 您可以在特征仪表板中查看和选择新文件夹特征。
 1. 新文件夹特征会自动分配给[!DNL Audience Manager]生成的数据源。 您具有适当[!UICONTROL Role-Based Access Control] ([!DNL RBAC])权限的用户可以在编辑文件夹特征工作流中更改数据源。 请参阅[编辑文件夹特征](../../features/traits/manage-folder-traits.md#edit-folder-trait)。
 

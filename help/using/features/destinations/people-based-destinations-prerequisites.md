@@ -6,23 +6,30 @@ solution: Audience Manager
 title: 先决条件和注意事项
 feature: People-based Destinations
 exl-id: 7656aa3e-3410-4052-8e29-b702bd0bf149
-TQID: https://experienceleague.adobe.com/SjS39KDro3z9ZFOolg5GU3pLgxG2GEmxrBJoR8tJByY
+TQID: 'https://experienceleague.adobe.com/SjS39KDro3z9ZFOolg5GU3pLgxG2GEmxrBJoR8tJByY'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+subfeature_v2:
+  - id: d7221605-094b-45a5-891f-f37bd58c0055
+    internal-label: People based Destinations
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 996
+source-wordcount: '1069'
 ht-degree: 2%
-
 ---
-
 # 先决条件和注意事项 {#prerequisites-considerations}
 
 >[!IMPORTANT]
@@ -46,7 +53,7 @@ ht-degree: 2%
 在使用[!UICONTROL People-Based Destinations]将第一方受众[!UICONTROL segments]发送到[!DNL Facebook]之前，请确保您满足以下要求：
 
 1. 您的[!DNL Facebook]用户帐户必须为计划使用的广告帐户启用&#x200B;**管理营销活动**&#x200B;权限。
-2. 将&#x200B;**Adobe Experience Cloud**&#x200B;商业帐户添加为您[!DNL Facebook Ad Account]中的广告合作伙伴。 使用 `business ID=206617933627973`。有关详细信息，请参阅[将合作伙伴添加到业务管理器](https://www.facebook.com/business/help/1717412048538897)。
+2. 将&#x200B;**Adobe Experience Cloud**&#x200B;商业帐户添加为您[!DNL Facebook Ad Account]中的广告合作伙伴。 使用 `business ID=206617933627973`。 有关详细信息，请参阅[将合作伙伴添加到业务管理器](https://www.facebook.com/business/help/1717412048538897)。
 
    >[!IMPORTANT]
    >配置Adobe Experience Cloud的权限时，必须启用&#x200B;**管理营销活动**&#x200B;权限。 [!UICONTROL People-Based Destinations] 集成要求具备此权限。
@@ -99,16 +106,16 @@ Google会自动允许具有合规帐户的客户列出。
 
 * 从电子邮件字符串中修剪所有前导空格和尾随空格；示例： `johndoe@example.com`，而不是`<space>johndoe@example.com<space>`；
 * 在对电子邮件字符串进行哈希处理时，请确保对小写字符串进行哈希处理；
-   * 示例： `example@email.com`，而不是`EXAMPLE@EMAIL.COM`；
+  * 示例： `example@email.com`，而不是`EXAMPLE@EMAIL.COM`；
 * 确保散列字符串全部为小写
-   * 示例： `55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149`，而不是`55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`；
+  * 示例： `55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149`，而不是`55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`；
 * 不要把字串加盐。
 
 观看以下视频，了解[!UICONTROL People-Based Destinations]的哈希处理要求。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud为您提供通过[!DNL Adobe Experience Platform Identity Service (ECID)]对客户ID进行哈希处理的选项。 有关如何使用ECID对客户ID进行哈希处理的详细信息，请参阅对setCustomerIDs[的](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html?lang=zh-Hans)SHA256哈希处理支持。
+Adobe Experience Cloud为您提供了通过[!DNL Adobe Experience Platform Identity Service (ECID)]对客户ID进行哈希处理的选项。 有关如何使用ECID对客户ID进行哈希处理的详细信息，请参阅对setCustomerIDs[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html?lang=zh-Hans)的SHA256哈希处理支持。
 
 ## 获取用户权限 {#obtaining-user-permission}
 
@@ -128,5 +135,5 @@ Adobe Experience Cloud为您提供通过[!DNL Adobe Experience Platform Identity
 
 有两种方法可以将离线数据载入 Audience Manager 以便用于 [!UICONTROL People-Based Destinations]。
 
-* [将批次数据](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)发送到Audience Manager以摄取经过哈希处理的电子邮件地址。 使用此方法，您可以选择使用[!DNL CRM]中[!UICONTROL People-Based Destinations]数据库的经过哈希处理的电子邮件地址。 此外，使用此方法时，您还可以限定经过哈希处理的电子邮件地址是否具有[载入的特征](../traits/trait-and-segment-qualification-reference.md)。
+* [将批次数据](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)发送到Audience Manager以摄取经过哈希处理的电子邮件地址。 使用此方法，您可以选择使用[!UICONTROL People-Based Destinations]中[!DNL CRM]数据库的经过哈希处理的电子邮件地址。 此外，使用此方法时，您还可以限定经过哈希处理的电子邮件地址是否具有[载入的特征](../traits/trait-and-segment-qualification-reference.md)。
 * 在传入经过身份验证的客户ID时，使用[声明的ID](../declared-ids.md)来声明经过哈希处理的电子邮件地址。 使用此方法时，Audience Manager仅代表您向在线进行身份验证的用户的[!UICONTROL People-Based Destinations]发送经过哈希处理的电子邮件地址。 通过基于人员的渠道激活的电子邮件地址只是声明的ID事件调用中的电子邮件地址。 与客户ID关联的其他电子邮件地址不会实时发送。

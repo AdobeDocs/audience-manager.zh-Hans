@@ -7,19 +7,24 @@ title: 区段表达式编辑器中使用的代码语法
 uuid: 7b4b06ca-7879-4501-8ba7-b2b6467b8a3b
 feature: Segments
 exl-id: 64fa6f03-cef9-4187-866f-28c54f45f72e
-TQID: https://experienceleague.adobe.com/cJKsvcP-dZ05ojGgbn2ni-wFMFfiObuIWwaRP0-HWFQ
+TQID: 'https://experienceleague.adobe.com/cJKsvcP-dZ05ojGgbn2ni-wFMFfiObuIWwaRP0-HWFQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b52f95d5-ca6b-4fda-a49e-994dc0a63402
+    internal-label: Segments
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 297
+source-wordcount: '299'
 ht-degree: 4%
-
 ---
-
 # 区段表达式编辑器中使用的代码语法 {#code-syntax-used-in-the-segment-expression-editor}
 
-[!UICONTROL Segment Builder]允许您使用代码编辑器为区段构建特征规则。 单击&#x200B;**[!UICONTROL Segment Expressions (Code View)]**&#x200B;面板中的[!UICONTROL Traits]选项卡以访问此功能。
+[!UICONTROL Segment Builder]允许您使用代码编辑器为区段构建特征规则。 单击[!UICONTROL Traits]面板中的&#x200B;**[!UICONTROL Segment Expressions (Code View)]**&#x200B;选项卡以访问此功能。
 
 ## 表达式生成器代码语法
 
@@ -36,7 +41,7 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
 
 ### 使用布尔运算符连接区段
 
-要构建区段组，请将频率函数括在括号中，并使用&#x200B;*运算符（*、[!DNL Boolean]和[!UICONTROL AND]）为每个表达式设置[!UICONTROL OR]之间的关系[!UICONTROL NOT]。
+要构建区段组，请将频率函数括在括号中，并使用[!DNL Boolean]运算符（[!UICONTROL AND]、[!UICONTROL OR]和[!UICONTROL NOT]）为每个表达式设置&#x200B;*之间的关系*。
 
 ### 参数
 
@@ -47,13 +52,13 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
 | 名称或变量 | 描述 |
 |---|---|
 | `FREQUENCY` | 必须在表达式前面的文本。 |
-| `[`&lt;`traitID` `T]` | 特征ID数组，后跟字母`T`。 用逗号分隔多个特征。 例如，`[123T, 456T]`。 |
+| `[`&lt;`traitID`>`T]` | 特征ID数组，后跟字母`T`。 用逗号分隔多个特征。 例如，`[123T, 456T]`。 |
 | `<Recency Operator><Numeric Value>D` | *（可选）*&#x200B;针对区段中的特征设置回访间隔规则。 字母`D`表示回访间隔（天）。 |
 | `<Frequency Operator><Numeric Value>` | 设置区段中特征的频率规则。 |
 
 ### 允许的回访间隔和频率运算符
 
-使用比较运算符和整数设置[回访间隔和频率](../../features/segments/recency-and-frequency.md)间隔。 [!UICONTROL Segment Builder]使用&lt; （小于）、> （大于）、== （等于）等标准表达式。 但是，当您设置回访间隔或频率时，允许的运算符类型会有所不同。 下表列出了允许的回访间隔/频率运算符。
+使用比较运算符和整数设置[回访间隔和频率](../../features/segments/recency-and-frequency.md)间隔。 [!UICONTROL Segment Builder]使用&lt; （小于）、> （大于）、== （等于）等标准表达式。但是，当您设置回访间隔或频率时，允许的运算符类型会有所不同。 下表列出了允许的回访间隔/频率运算符。
 
 <table id="table_2F92617CB472442BA5639E24DB4E43D3"> 
  <thead> 

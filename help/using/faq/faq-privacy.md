@@ -7,30 +7,44 @@ title: 隐私和数据保留常见问题解答
 uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
 feature: Data Governance & Privacy
 exl-id: bccf49d7-1a3b-4286-86fb-59e472af4501
-TQID: https://experienceleague.adobe.com/olj76RlEM8Hc6cBdOrdR-kye-bsaCBbkQEHJWNuAXh8
+TQID: 'https://experienceleague.adobe.com/olj76RlEM8Hc6cBdOrdR-kye-bsaCBbkQEHJWNuAXh8'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
   - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
+  - id: a1d8adf7-4300-4ca2-870f-1612c6774544
+    internal-label: Data governance and privacy
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 754
-ht-degree: 82%
-
+source-wordcount: '783'
+ht-degree: 81%
 ---
-
 # 隐私和数据保留常见问题解答{#privacy-and-data-retention-faq}
 
 有关隐私和数据的常见问题解答。
@@ -49,7 +63,7 @@ ht-degree: 82%
 
 **美国的 Audience Manager 客户能否锁定欧盟资产的用户？**
 
-能。Audience Manager 与在全球拥有资产和库存的客户合作。虽然欧盟地区实施了严格的隐私法，但 Audience Manager 的一些客户仍使用第一方数据在欧洲地区进行受众定位。因此，Audience Manager 可以支持针对欧盟地区受众的定位，但是您有责任遵守当地隐私法规。
+能。 Audience Manager 与在全球拥有资产和库存的客户合作。 虽然欧盟地区实施了严格的隐私法，但 Audience Manager 的一些客户仍使用第一方数据在欧洲地区进行受众定位。 因此，Audience Manager 可以支持针对欧盟地区受众的定位，但是您有责任遵守当地隐私法规。
 
 <!-- 
 
@@ -72,11 +86,11 @@ ht-degree: 82%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>后端服务器 </p> </td> 
-   <td colname="col2"> <p>120天 </p> <p> Audience Manager 会在 120 天后（从上次在 Audience Manager 平台上看到用户之日算起）从后端服务器删除用户数据。如果<span class="keyword"> Audience Manager</span>在此120天周期内记录到用户活动，则会再将数据保留120天。 </p> </td> 
+   <td colname="col2"> <p>120天 </p> <p> Audience Manager 会在 120 天后（从上次在 Audience Manager 平台上看到用户之日算起）从后端服务器删除用户数据。 如果<span class="keyword"> Audience Manager</span>在此120天周期内记录到用户活动，则会再将数据保留120天。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Edge 服务器 </p> </td> 
-   <td colname="col2"> <p> 14天 </p> <p>Audience Manager 会在 14 天后（从上次在 Audience Manager 平台上看到用户之日算起）从 Edge 服务器删除用户数据。如果<span class="keyword"> Audience Manager</span>在此14天周期内记录到用户活动，则会再将数据保留14天。 如果用户在14天周期后再次变为活动状态，则从第一次查看新页面到用户变为可操作状态之间将存在延迟。 超过14天不活动后，需要6-18个小时才能将完整的配置文件返回到Edge中心。 </p> </td> 
+   <td colname="col2"> <p> 14天 </p> <p>Audience Manager 会在 14 天后（从上次在 Audience Manager 平台上看到用户之日算起）从 Edge 服务器删除用户数据。 如果<span class="keyword"> Audience Manager</span>在此14天周期内记录到用户活动，则会再将数据保留14天。 如果用户在14天周期后再次变为活动状态，则从第一次查看新页面到用户变为可操作状态之间将存在延迟。 超过14天不活动后，需要6-18个小时才能将完整的配置文件返回到Edge中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始日志 </p> </td> 
@@ -84,11 +98,11 @@ ht-degree: 82%
   </tr> 
   <tr> 
    <td colname="col1"> <p>广告服务器日志 </p> </td> 
-   <td colname="col2"> <p><b>报表</b> </p> <p>当用于报表时，日志文件最多可保留 30 天。我们不会在后端存储中保留不匹配的日志（即访客的广告服务器 ID 未与 <span class="keyword">Audience Manager</span> ID 进行同步的日志），并且 <span class="keyword">Amazon S3</span> 中存储的匹配日志最多可保留 30 天。 </p> <p><b>可操作的日志文件</b> </p> <p>匹配的日志和不匹配的日志最多都可保留 30 天。 </p> </td> 
+   <td colname="col2"> <p><b>报表</b> </p> <p>当用于报表时，日志文件最多可保留 30 天。 我们不会在后端存储中保留不匹配的日志（即访客的广告服务器 ID 未与 <span class="keyword">Audience Manager</span> ID 进行同步的日志），并且 <span class="keyword">Amazon S3</span> 中存储的匹配日志最多可保留 30 天。 </p> <p><b>可操作的日志文件</b> </p> <p>匹配的日志和不匹配的日志最多都可保留 30 天。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>CRM 级别配置文件（已验证的配置文件） </p> </td> 
-   <td colname="col2"> <p>非活动的 CRM 级别配置文件（客户 ID）的默认存留期 (TTL) 为 24 个月。但是，您可以使用Audience Manager用户界面缩短或延长非活动CRM级别配置文件的TTL，TTL最短为1个月，最长为5年。 您可以在创建或编辑跨设备数据源时执行此操作。</p> <p>有关更多信息，请参阅<a href="../features/profile-merge-rules/merge-rules-start.md#settings">创建跨设备数据源</a>中的“数据源设置”。</p> </td> 
+   <td colname="col2"> <p>非活动的 CRM 级别配置文件（客户 ID）的默认存留期 (TTL) 为 24 个月。 但是，您可以使用Audience Manager用户界面缩短或延长非活动CRM级别配置文件的TTL，TTL最短为1个月，最长为5年。 您可以在创建或编辑跨设备数据源时执行此操作。</p> <p>有关更多信息，请参阅<a href="../features/profile-merge-rules/merge-rules-start.md#settings">创建跨设备数据源</a>中的“数据源设置”。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>移动设备 ID </p> </td> 
@@ -96,19 +110,19 @@ ht-degree: 82%
   </tr> 
   <tr> 
    <td colname="col1"> <p>客户数据信息源 (CDF) </p> </td> 
-   <td colname="col2"> <p>CDF 文件包含的数据与 <span class="keyword">Audience Manager</span> 事件调用 (/event) 发送到我们服务器的数据相同。保留期为 8 天。有关 CDF 的更多详细信息，请参阅 <a href="../features/cdf-files.md">CDF 简介</a>和 <a href="../faq/faq-cdf.md">CDF 常见问题解答</a>。 </p> </td> 
+   <td colname="col2"> <p>CDF 文件包含的数据与 <span class="keyword">Audience Manager</span> 事件调用 (/event) 发送到我们服务器的数据相同。 保留期为 8 天。 有关 CDF 的更多详细信息，请参阅 <a href="../features/cdf-files.md">CDF 简介</a>和 <a href="../faq/faq-cdf.md">CDF 常见问题解答</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>已同步 ID 之间的映射 </p> </td> 
-   <td colname="col2"> <p>Audience Manager Cookie ID（<a href="../reference/ids-in-aam.md">Audience Manager 独特用户 ID 或 AAM UUID</a>）与第三方 Cookie ID 之间的 <a href="../features/administration/usage-limits.md#id-mapping-limits">ID 映射</a>的有效期限制为 120 天。每当在 Audience Manager 网络中看到 Audience Manager Cookie 时，ID 映射的有效期便会重置。最近一次 ID 映射同步的保留时间将等于相关联的 <a href="../reference/ids-in-aam.md">Audience Manager 独特用户 ID (AAM UUID)</a> 的有效期。</p></td> 
+   <td colname="col2"> <p>Audience Manager Cookie ID（<a href="../reference/ids-in-aam.md">Audience Manager 独特用户 ID 或 AAM UUID</a>）与第三方 Cookie ID 之间的 <a href="../features/administration/usage-limits.md#id-mapping-limits">ID 映射</a>的有效期限制为 120 天。 每当在 Audience Manager 网络中看到 Audience Manager Cookie 时，ID 映射的有效期便会重置。 最近一次 ID 映射同步的保留时间将等于相关联的 <a href="../reference/ids-in-aam.md">Audience Manager 独特用户 ID (AAM UUID)</a> 的有效期。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>入站数据 </p> </td> 
-   <td colname="col2"> <p>您通过 FTP 发送到 <span class="keyword">Audience Manager</span> 的入站数据，或直接发送到 <span class="keyword">Amazon S3</span> 目录的数据。请参阅<a href="../faq/faq-inbound-data-ingestion.md">入站客户数据摄取常见问题解答</a>。 </p> </td> 
+   <td colname="col2"> <p>您通过 FTP 发送到 <span class="keyword">Audience Manager</span> 的入站数据，或直接发送到 <span class="keyword">Amazon S3</span> 目录的数据。 请参阅<a href="../faq/faq-inbound-data-ingestion.md">入站客户数据摄取常见问题解答</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>出站数据 </p> </td> 
-   <td colname="col2"> <p><span class="keyword">Audience Manager</span> 发送到第三方激活合作伙伴的批量数据。保留期为 8 天。有关出站数据的更多详细信息，请参阅<a href="../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md">出站数据批量传输</a>。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">Audience Manager</span> 发送到第三方激活合作伙伴的批量数据。 保留期为 8 天。 有关出站数据的更多详细信息，请参阅<a href="../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md">出站数据批量传输</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -131,7 +145,7 @@ ht-degree: 82%
   </tr> 
   <tr> 
    <td colname="col1"> <p>已达到特征限制 </p> </td> 
-   <td colname="col2"> <p>我们将每个用户轮廓的特征资格筛选数限制为 100,000。此限制适用于已验证的用户配置文件和设备配置文件。如果用户轮廓达到此限制，我们将按先进先出原则删除最早的特征资格筛选数据。 </p> <p>有关更多详细信息，请参阅我们的<a href="../features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit">特征资格筛选限制</a>。 </p> </td> 
+   <td colname="col2"> <p>我们将每个用户轮廓的特征资格筛选数限制为 100,000。 此限制适用于已验证的用户配置文件和设备配置文件。 如果用户轮廓达到此限制，我们将按先进先出原则删除最早的特征资格筛选数据。 </p> <p>有关更多详细信息，请参阅我们的<a href="../features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit">特征资格筛选限制</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

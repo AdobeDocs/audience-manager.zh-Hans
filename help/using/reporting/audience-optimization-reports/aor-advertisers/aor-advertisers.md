@@ -7,34 +7,45 @@ title: 适用于广告商的Audience Optimization
 uuid: 852d550e-3c7f-4750-9abc-365c3a6f7883
 feature: Audience Optimization Reports
 exl-id: 13595778-3d3a-4c83-a84f-4bc3af1ee367
-TQID: https://experienceleague.adobe.com/U9Rg-4rwjGdqYsjGDlctn0PBuxAlDjwIBtorAnGtqHU
+TQID: 'https://experienceleague.adobe.com/U9Rg-4rwjGdqYsjGDlctn0PBuxAlDjwIBtorAnGtqHU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
 subfeature_v2:
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: ff9c2088-e1d9-47aa-85e4-6765b719f5c7
+    internal-label: Audience Optimization Reports
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 406
+source-wordcount: '410'
 ht-degree: 0%
-
 ---
-
 # 广告商的[!UICONTROL Audience Optimization]{#audience-optimization-for-advertisers}
 
 广告商的[!UICONTROL Audience Optimization]可以帮助您在付费媒体营销活动中识别Audience Manager区段的潜在效果机会。 这些报表将日志级别的促销活动效果数据与Audience Manager [!UICONTROL segment]量度相结合，为以区段为中心的优化和有效渠道组合提供信息。
 
 ## 数据摄取方法 {#data-ingestion-methods}
 
-您可以通过以下任一方法将数据发送到[!DNL Audience Manager]以在这些报表中使用。 有时，客户通过这两种方法发送数据。 这有助于确保您的报表包含有关访客的最全面和准确的信息。 要使用[!UICONTROL Audience Optimization]报表，您的事件调用必须包括&#x200B;*元数据文件概述和映射*&#x200B;文档中所列出的参数中的[所有](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)个参数。 您可以通过下面列出的以下方法发送数据。
+您可以通过以下任一方法将数据发送到[!DNL Audience Manager]以在这些报表中使用。 有时，客户通过这两种方法发送数据。 这有助于确保您的报表包含有关访客的最全面和准确的信息。 要使用[!UICONTROL Audience Optimization]报表，您的事件调用必须包括[元数据文件概述和映射](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)文档中所列出的参数中的&#x200B;*所有*&#x200B;个参数。 您可以通过下面列出的以下方法发送数据。
 
 * 像素调用：要将所需的元数据参数传递给[!DNL Audience Manager]，请参阅[通过像素调用捕获营销活动点击数据](../../../integration/media-data-integration/click-data-pixels.md)和[通过像素调用捕获营销活动展示数据](../../../integration/media-data-integration/impression-data-pixels.md)。
 
@@ -44,7 +55,7 @@ ht-degree: 0%
 
 您可以查看的报告类型取决于您分配到的[!UICONTROL RBAC]组。 有关详细信息，请参阅[管理](../../../features/administration/administration-overview.md)和[创建组](../../../features/administration/administration-overview.md#create-group)。
 
-[!UICONTROL RBAC]组必须设置一些数据源才能查看[!UICONTROL Audience Optimization]报告。 您的[!DNL Audience Manager]顾问将为您设置这些[!UICONTROL data sources]。 每个[!UICONTROL data sources]用户组中的[!UICONTROL RBAC]越多，这些组成员有权访问的数据就越多。 您的顾问至少应设置以下[!UICONTROL data sources]中的一个：
+[!UICONTROL RBAC]组必须设置一些数据源才能查看[!UICONTROL Audience Optimization]报告。 您的[!DNL Audience Manager]顾问将为您设置这些[!UICONTROL data sources]。 每个[!UICONTROL RBAC]用户组中的[!UICONTROL data sources]越多，这些组成员有权访问的数据就越多。 您的顾问至少应设置以下[!UICONTROL data sources]中的一个：
 
 * 广告商[!UICONTROL data source]
 * 品牌[!UICONTROL data source]

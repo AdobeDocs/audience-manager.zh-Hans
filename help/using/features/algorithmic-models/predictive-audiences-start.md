@@ -6,18 +6,24 @@ solution: Audience Manager
 title: Predictive Audiences快速入门
 feature: Algorithmic Models
 exl-id: beb314de-f679-4397-8e14-2dd6576243fd
-TQID: https://experienceleague.adobe.com/GxGaEIsjpvAqbm5AbaxmmLrgC09x4fslbZcJuShf1sE
+TQID: 'https://experienceleague.adobe.com/GxGaEIsjpvAqbm5AbaxmmLrgC09x4fslbZcJuShf1sE'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: cd2456ea-4f93-45ef-a193-94c258a6fbfb
+    internal-label: Algorithmic models
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 545
+source-wordcount: '579'
 ht-degree: 2%
-
 ---
-
 # Predictive Audiences快速入门 {#predictive-audiences-getting-started}
 
 >[!IMPORTANT]
@@ -34,7 +40,7 @@ ht-degree: 2%
 
    ![smart-persona-add](assets/predictive-audiences-add.png)
 
-1. 接下来，定义要按其对受众进行分类的角色。 您可以通过选择要从中构建角色的特征或区段来执行此操作。 使用屏幕左上角的[!UICONTROL Traits]和[!UICONTROL Segments]选项卡在特征和区段目录之间切换。 在识别要用作角色的特征或区段后，单击&#x200B;**[!UICONTROL Add]**&#x200B;列中相应的[!UICONTROL Action]图标。
+1. 接下来，定义要按其对受众进行分类的角色。 您可以通过选择要从中构建角色的特征或区段来执行此操作。 使用屏幕左上角的[!UICONTROL Traits]和[!UICONTROL Segments]选项卡在特征和区段目录之间切换。 在识别要用作角色的特征或区段后，单击[!UICONTROL Action]列中相应的&#x200B;**[!UICONTROL Add]**&#x200B;图标。
 
    ![smart-persona-select-personas](assets/predictive-audiences-persona.png)
 
@@ -53,7 +59,7 @@ ht-degree: 2%
    * **[!UICONTROL Model Name]**：为模型输入一个描述性名称，以便您以后识别。 模型生成的区段的名称将以模型的名称开头。
    * **[!UICONTROL Description]**：输入模型的描述以帮助您识别其用例。
    * **[!UICONTROL Data Source]**：选择要将此模型中的[!UICONTROL Predictive Audiences]区段分配到的第一方数据源。
-   * **[!UICONTROL Profile Merge Rule]**：选择要分配给此模型创建的所有预测[!UICONTROL Profile Merge Rule]的[!UICONTROL segments]。 如果您选择的目标受众为[!UICONTROL segment]，我们建议您选择相同的[!UICONTROL Profile Merge Rule]目标受众。
+   * **[!UICONTROL Profile Merge Rule]**：选择要分配给此模型创建的所有预测[!UICONTROL segments]的[!UICONTROL Profile Merge Rule]。 如果您选择的目标受众为[!UICONTROL segment]，我们建议您选择相同的[!UICONTROL Profile Merge Rule]目标受众。
 
    ![predictive-audiences-save](assets/predictive-audiences-save.png)
 

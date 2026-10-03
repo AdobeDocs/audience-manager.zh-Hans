@@ -8,22 +8,30 @@ title: 配置文件合并规则和设备图常见问题解答
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 feature: Profile Merge
 exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
-TQID: https://experienceleague.adobe.com/G8a3lySpSqyDY7FTWSgECjhNl-aCVsjxj6I0lHUkq2o
+TQID: 'https://experienceleague.adobe.com/G8a3lySpSqyDY7FTWSgECjhNl-aCVsjxj6I0lHUkq2o'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Personalization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1583
-ht-degree: 81%
-
+source-wordcount: '1623'
+ht-degree: 80%
 ---
-
 # 配置文件合并规则和设备图常见问题解答{#profile-merge-rules-and-device-graph-faq}
 
 有关配置文件合并规则和设备图的常见问题解答。
@@ -34,25 +42,25 @@ ht-degree: 81%
 
 **什么是设备图？**
 
-设备图是用于定义匿名设备组的一组 ID 映射。设备图可根据从每个设备收集到的信号中所包含的通用元素将这些设备与个人或家庭相关联。这些信号可帮助识别个人或家庭所用的设备。
+设备图是用于定义匿名设备组的一组 ID 映射。 设备图可根据从每个设备收集到的信号中所包含的通用元素将这些设备与个人或家庭相关联。 这些信号可帮助识别个人或家庭所用的设备。
 
  
 
 **什么是外部设备图？**
 
-外部设备图是指在 [!DNL Audience Manager] 中除使用您自己的跨设备数据源之外还使用其他数据源创建的设备图。例如，当您创建[配置文件合并规则](../features/profile-merge-rules/merge-rules-start.md)并选择第三方设备图选项时，您使用的是外部设备图。 请参阅[设备选项](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
+外部设备图是指在 [!DNL Audience Manager] 中除使用您自己的跨设备数据源之外还使用其他数据源创建的设备图。 例如，当您创建[配置文件合并规则](../features/profile-merge-rules/merge-rules-start.md)并选择第三方设备图选项时，您使用的是外部设备图。 请参阅[设备选项](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
 
  
 
 **在 [!UICONTROL Profile Merge Rule] 中使用外部设备图的常见用例有哪些？**
 
-在 [!UICONTROL Profile Merge Rule] 中使用设备图的主要目的在于评估属于单个人员或家庭的多台设备并确定其是否符合特定区段的资格。区段本身也可能具有多种用途，例如，通过DSP提供的广告定位潜在受众，或通过网站个性化平台个性化客户的网站访问体验。 请参阅[外部设备图用例](../features/profile-merge-rules/external-graph-use-cases.md)。
+在 [!UICONTROL Profile Merge Rule] 中使用设备图的主要目的在于评估属于单个人员或家庭的多台设备并确定其是否符合特定区段的资格。 区段本身也可能具有多种用途，例如，通过DSP提供的广告定位潜在受众，或通过网站个性化平台个性化客户的网站访问体验。 请参阅[外部设备图用例](../features/profile-merge-rules/external-graph-use-cases.md)。
 
  
 
 **Audience Manager 是否在全球范围内提供外部设备图支持？**
 
-不是。外部设备图仅在美国和加拿大可用。
+不是。 外部设备图仅在美国和加拿大可用。
 
  
 
@@ -66,9 +74,9 @@ ht-degree: 81%
 
 **[!DNL Audience Manager] 如何使用设备图？**
 
-在 [!DNL Audience Manager] 中，当您[创建配置文件合并规则](../features/profile-merge-rules/merge-rules-start.md)时，设备图显示为配置选项。通过 [!UICONTROL Profile Merge Rules]，这些设备图可帮助 [!DNL Audience Manager] 执行以下操作：
+在 [!DNL Audience Manager] 中，当您[创建配置文件合并规则](../features/profile-merge-rules/merge-rules-start.md)时，设备图显示为配置选项。 通过 [!UICONTROL Profile Merge Rules]，这些设备图可帮助 [!DNL Audience Manager] 执行以下操作：
 
-* 将多个设备配置文件合并到一起。这会创建一个特征超集。
+* 将多个设备配置文件合并到一起。 这会创建一个特征超集。
 * 评估特征超集是否符合细分资格筛选（而不是单独评估每个设备轮廓）。
 * 将符合条件的设备添加到可用区段。
 
@@ -76,7 +84,7 @@ ht-degree: 81%
 
 **我可以创建多少个 [!UICONTROL Profile Merge Rules]？**
 
-目前，最多可创建 4 个 [!UICONTROL Profile Merge Rules]。第四个配置文件合并规则 ([!UICONTROL All Cross-Device Profiles]) 仅适用于购买 [!UICONTROL People-Based Destinations] 加载项的客户。
+目前，最多可创建 4 个 [!UICONTROL Profile Merge Rules]。 第四个配置文件合并规则 ([!UICONTROL All Cross-Device Profiles]) 仅适用于购买 [!UICONTROL People-Based Destinations] 加载项的客户。
 
  
 
@@ -102,13 +110,13 @@ ht-degree: 81%
 
 **当设备不再符合某个区段的资格条件时，[!DNL Audience Manager] 如何通过使用设备图的 [!UICONTROL Profile Merge Rule] 取消设备分段？**
 
-在通过使用设备图的 [!UICONTROL Profile Merge Rule] 评估区段时，Audience Manager 最多可合并 100 个设备。如果发出了取消分段信号，则将从目标中的相应区段移除当前设备和最多其他 99 个设备。有关取消分段的更多信息，请参阅[配置文件合并规则和设备取消分段流程](../features/profile-merge-rules/merge-rule-unsegment.md)。
+在通过使用设备图的 [!UICONTROL Profile Merge Rule] 评估区段时，Audience Manager 最多可合并 100 个设备。 如果发出了取消分段信号，则将从目标中的相应区段移除当前设备和最多其他 99 个设备。 有关取消分段的更多信息，请参阅[配置文件合并规则和设备取消分段流程](../features/profile-merge-rules/merge-rule-unsegment.md)。
 
  
 
 **如果目标可以取消设备分段，是否能通过使用设备图的 [!UICONTROL Profile Merge Rules] 从区段中移除设备？**
 
-是。请参阅上面的说明。
+是。 请参阅上面的说明。
 
  
 
@@ -120,7 +128,7 @@ ht-degree: 81%
 
 **区段预估大小是否包含根据由使用设备图选项的 [!UICONTROL Profile Merge Rule] 提供的连接而确定为符合区段资格条件的设备？**
 
-否。有关 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 的定义，请参阅[区段生成器中的特征和区段人口数据](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=zh-Hans)。
+否。 有关 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 的定义，请参阅[区段生成器中的特征和区段人口数据](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=zh-Hans)。
 
  
 
@@ -132,7 +140,7 @@ ht-degree: 81%
 
 **如果某个区段结合使用 [!UICONTROL Profile Merge Rule] 和 [!UICONTROL No Cross-Device Profile]，且用于鉴定设备是否符合该区段资格条件的特征仅存储在跨设备配置文件中，那么该区段总人口是否为 0？**
 
-是。将配置文件合并规则设为 [!UICONTROL No Cross-Device Profile] 后，Audience Manager 在评估区段时不会计算存储在跨设备配置文件中的特征数量。
+是。 将配置文件合并规则设为 [!UICONTROL No Cross-Device Profile] 后，Audience Manager 在评估区段时不会计算存储在跨设备配置文件中的特征数量。
 
  
 
@@ -140,7 +148,7 @@ ht-degree: 81%
 
 **[!DNL Audience Manager] 如何通过使用设备图的 [!UICONTROL Profile Merge Rule] 计算特征频度？**
 
-特征频度是指在多个设备中符合某个特定特征的总次数。为便于您理解，请查看以下用例。
+特征频度是指在多个设备中符合某个特定特征的总次数。 为便于您理解，请查看以下用例。
 
 <table id="table_DE7A308705C84B93B3089CAD2228569E"> 
  <thead> 
@@ -163,13 +171,13 @@ ht-degree: 81%
    <td colname="col1"> <p> <b>操作</b> </p> </td> 
    <td colname="col2"> <p> <span class="keyword">Audience Manager</span> 读取并合并设备 A 和设备 B 的设备配置文件。从中，我们可以看到以下信息： </p> <p> 
      <ul id="ul_7AB307154C034695B4486E68D55CB084"> 
-      <li id="li_5760BEE513C94152AA307AEE10894718">设备 A 已三次符合特征 1。特征 1 的频度为 3。 </li> 
-      <li id="li_E20BC24CCCEC407C820A8032D56BC3F0">设备 B 已五次符合特征 1。特征 1 的频度为 5。 </li> 
+      <li id="li_5760BEE513C94152AA307AEE10894718">设备 A 已三次符合特征 1。 特征 1 的频度为 3。 </li> 
+      <li id="li_E20BC24CCCEC407C820A8032D56BC3F0">设备 B 已五次符合特征 1。 特征 1 的频度为 5。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>结果</b> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword">Audience Manager</span> 汇总特征 1 的频度，并使用 8 (3 + 5 = 8) 来确定区段资格筛选。设备 A 和设备 B 符合区段 1 的资格条件，因为其频度为 8。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword">Audience Manager</span> 汇总特征 1 的频度，并使用 8 (3 + 5 = 8) 来确定区段资格筛选。 设备 A 和设备 B 符合区段 1 的资格条件，因为其频度为 8。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -180,13 +188,13 @@ ht-degree: 81%
 
 **能否查看可通过使用设备图的 [!UICONTROL Profile Merge Rule] 访问的设备数量？**
 
-能。报表将返回 [!UICONTROL Profile Merge Rule] 级别的数据。报表数据每日进行更新。数据基于您在帐户中看到的设备数，而非通过设备图链接的设备数。请参阅[配置文件合并规则的报表量度](../features/profile-merge-rules/profile-link-metrics.md)。
+能。 报表将返回 [!UICONTROL Profile Merge Rule] 级别的数据。 报表数据每日进行更新。 数据基于您在帐户中看到的设备数，而非通过设备图链接的设备数。 请参阅[配置文件合并规则的报表量度](../features/profile-merge-rules/profile-link-metrics.md)。
 
  
 
 **是否可以通过使用设备图的 [!UICONTROL Profile Merge Rules] *实时*查看符合某个特定区段资格条件的设备数量？**
 
-是。实时人口量度可使用通过设备图链接的所有设备的轮廓来捕获当前设备（实时查看到的设备）满足的细分资格筛选。
+是。 实时人口量度可使用通过设备图链接的所有设备的轮廓来捕获当前设备（实时查看到的设备）满足的细分资格筛选。
 
 <table id="table_D37A51E99B314C04A96A084491A5FEC7"> 
  <thead> 
@@ -215,7 +223,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>结果</b> </p> </td> 
-   <td colname="col2"> <p>根据以上元素，区段 1 的总人口为 1。 </p> <p>在这种情况下，<span class="wintitle">轮廓合并规则</span>将使用所有设备及其特征来确定细分资格筛选。这意味着虽然设备 1、2、3 均符合区段 1 的资格条件，但如上所述，实时区段人口仅包含设备 1。原因如下： </p> <p> 
+   <td colname="col2"> <p>根据以上元素，区段 1 的总人口为 1。 </p> <p>在这种情况下，<span class="wintitle">轮廓合并规则</span>将使用所有设备及其特征来确定细分资格筛选。 这意味着虽然设备 1、2、3 均符合区段 1 的资格条件，但如上所述，实时区段人口仅包含设备 1。 原因如下： </p> <p> 
      <ul id="ul_5958E1A0E1514B6BA31DF5551401AF38"> 
       <li id="li_E4F68B12ED944416ACBEAF7BF61CA4E7">设备 1 是当前与 Audience Manager <span class="wintitle">数据收集服务器</span> (<span class="wintitle">DCS</span>) 实时交互的设备。 </li> 
       <li id="li_57165E96289F4E20BF2244BC68B90BA3">而设备 2 和 3 是通过设备图与设备 1 相关联的，它们并未随设备 1 一起同 DCS 交互。 </li> 
@@ -228,7 +236,7 @@ ht-degree: 81%
 
 **是否可以通过使用设备图的 [!UICONTROL Profile Merge Rule] 查看符合某个特定区段资格条件的设备总数？**
 
-是。总区段人口量度包含根据设备图中的连接确定符合区段资格条件的其他设备。
+是。 总区段人口量度包含根据设备图中的连接确定符合区段资格条件的其他设备。
 
 <table id="table_932E61B1D4374DD58F673C3B35C365EB"> 
  <thead> 
@@ -257,7 +265,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>结果</b> </p> </td> 
-   <td colname="col2"> <p>根据以上元素，区段 1 的总人口为三 (3)。 </p> <p>在这种情况下，<span class="wintitle">轮廓合并规则</span>将使用所有设备及其特征来确定细分资格筛选。这意味着设备 1、2、3 均符合区段 1 的资格条件，并且所有这三个设备都计入总人口。 </p> </td> 
+   <td colname="col2"> <p>根据以上元素，区段 1 的总人口为三 (3)。 </p> <p>在这种情况下，<span class="wintitle">轮廓合并规则</span>将使用所有设备及其特征来确定细分资格筛选。 这意味着设备 1、2、3 均符合区段 1 的资格条件，并且所有这三个设备都计入总人口。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

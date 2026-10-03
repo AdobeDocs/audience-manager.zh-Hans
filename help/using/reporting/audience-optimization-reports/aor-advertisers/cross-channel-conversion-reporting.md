@@ -7,19 +7,26 @@ title: 跨渠道转化
 uuid: 0fecec23-e502-490b-b7dd-47a3753a3f75
 feature: Audience Optimization Reports
 exl-id: 7412a43f-81b5-477e-8acf-89d6c8661f1e
-TQID: https://experienceleague.adobe.com/oP3jo2IVz2w0ExYE00wHo19nelOfOf4iAN84pgF64fU
+TQID: 'https://experienceleague.adobe.com/oP3jo2IVz2w0ExYE00wHo19nelOfOf4iAN84pgF64fU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: ff9c2088-e1d9-47aa-85e4-6765b719f5c7
+    internal-label: Audience Optimization Reports
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Optimization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 238
+source-wordcount: '240'
 ht-degree: 3%
-
 ---
-
 # 跨渠道转化{#cross-channel-conversion}
 
 Audience Optimization报表中的“跨渠道转化”选项允许您将离线转化归因为提供的在线展示次数或单击次数。
@@ -28,7 +35,7 @@ Audience Optimization报表中的“跨渠道转化”选项允许您将离线�
 
 您可以将[!UICONTROL Cross Channel Conversion]用于[区段性能](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)和[最佳频率](../../../reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md)报表。
 
-要查看[!UICONTROL Cross Channel Conversion]报表，请在&#x200B;**[!UICONTROL AAM + Ad Server Name]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Platform]**&#x200B;项。
+要查看[!UICONTROL Cross Channel Conversion]报表，请在&#x200B;**[!UICONTROL Platform]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL AAM + Ad Server Name]**&#x200B;项。
 
 下表列出了设置[!UICONTROL Cross Channel Conversion]时的重要注意事项：
 

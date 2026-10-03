@@ -7,31 +7,41 @@ title: 定义的配置文件合并规则选项
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 feature: Profile Merge
 exl-id: 682d2540-c764-4f5a-a946-5d0e18c66c00
-TQID: https://experienceleague.adobe.com/kfGcdvkr7dmluaAXdLdX4eRvRH15H1Sxd2w4yoPBSzc
+TQID: 'https://experienceleague.adobe.com/kfGcdvkr7dmluaAXdLdX4eRvRH15H1Sxd2w4yoPBSzc'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Personalization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 794
+source-wordcount: '828'
 ht-degree: 1%
-
 ---
-
 # 已定义[!UICONTROL Profile Merge Rules]选项 {#profile-merge-rule-options-defined}
 
 [!UICONTROL profile merge rule]选项允许您控制[!DNL Audience Manager]用于分段的数据类型。 [!UICONTROL profile merge rule]可以包含由[!UICONTROL Profile Link]设备图形和/或与[!DNL Audience Manager]集成的其他第三方设备图形提供商映射的设备配置文件。 您最多可以创建4个[!UICONTROL Profile Merge Rules]。 第四个[!UICONTROL Profile Merge Rule]仅供购买[!UICONTROL People-Based Destinations]加载项的客户使用。
 
-您通过在[!UICONTROL Profile Merge Rule]中从下述选项中进行选择来构建[!UICONTROL Profile Merge Rule Setup]。
+您通过在[!UICONTROL Profile Merge Rule Setup]中从下述选项中进行选择来构建[!UICONTROL Profile Merge Rule]。
 
 ![profile-merge-rule-setup](assets/profile-merge-rule-setup.png)
 
@@ -54,8 +64,8 @@ ht-degree: 1%
 根据您的[!UICONTROL Profile Merge Rules]配置，[!DNL Audience Manager]可以实时、批量或同时执行这两项评估。[!UICONTROL segment]
 
 * 实时[!UICONTROL segment]评估需要[!DNL DCS]才能看到访客实时访问您的数字资产，从而符合[!UICONTROL segment]的条件。
-* 对先前限定的[!UICONTROL segment]执行批次[!UICONTROL traits]评估。
-* 同时支持实时和批次[!UICONTROL Profile Merge Rules]评估的[!UICONTROL segment]将实时访客活动与以前限定的[!UICONTROL traits]相结合。
+* 对先前限定的[!UICONTROL traits]执行批次[!UICONTROL segment]评估。
+* 同时支持实时和批次[!UICONTROL segment]评估的[!UICONTROL Profile Merge Rules]将实时访客活动与以前限定的[!UICONTROL traits]相结合。
 
 ## [!UICONTROL Profile Merge Rules]报告延迟 {#reporting-latency}
 
@@ -96,11 +106,11 @@ ht-degree: 1%
 
 ## [!UICONTROL Cross-Device Profile Options] {#profile-options}
 
-[!UICONTROL Cross-Device Profile Options]列出了您的[!UICONTROL cross-device data sources]。 这些选项使用您在创建[!UICONTROL cross-device] [!UICONTROL data source]时提供的名称（请参阅[创建跨设备数据Source](merge-rules-start.md#create-data-source)）。 您最多可以选择3个[!UICONTROL cross-device data sources]用于每个配置文件规则。 当您选择[!UICONTROL Authenticated Profile Options]或&#x200B;**[!UICONTROL Current Authenticated Profiles]**&#x200B;时，**[!UICONTROL Last Authenticated Profiles]**&#x200B;可用。
+[!UICONTROL Cross-Device Profile Options]列出了您的[!UICONTROL cross-device data sources]。 这些选项使用您在创建[!UICONTROL cross-device] [!UICONTROL data source]时提供的名称（请参阅[创建跨设备数据Source](merge-rules-start.md#create-data-source)）。 您最多可以选择3个[!UICONTROL cross-device data sources]用于每个配置文件规则。 当您选择&#x200B;**[!UICONTROL Current Authenticated Profiles]**&#x200B;或&#x200B;**[!UICONTROL Last Authenticated Profiles]**&#x200B;时，[!UICONTROL Authenticated Profile Options]可用。
 
 ## [!UICONTROL Device Options] {#device-options}
 
-[!UICONTROL Device Options]允许您选择&#x200B;*`device profile`*&#x200B;使用的[!UICONTROL Profile Merge Rule]类型。 设备配置文件是从匿名浏览活动收集的[!UICONTROL traits]生成的。 [!UICONTROL profile merge rule]至少包括[!UICONTROL authenticated option]和[!UICONTROL device option]。
+[!UICONTROL Device Options]允许您选择[!UICONTROL Profile Merge Rule]使用的&#x200B;*`device profile`*&#x200B;类型。 设备配置文件是从匿名浏览活动收集的[!UICONTROL traits]生成的。 [!UICONTROL profile merge rule]至少包括[!UICONTROL authenticated option]和[!UICONTROL device option]。
 
 <table id="table_D373FB787D1A4E3485C02C4A76F03395"> 
  <thead> 
@@ -136,7 +146,7 @@ ht-degree: 1%
 
 ## [!UICONTROL External Merge Policies] {#external-merge-policies}
 
-根据在[!DNL Experience Cloud]外部定义的合并规则从其他[!DNL Audience Manager]解决方案自动创建的受众区段，将使用[!UICONTROL External Merge Policy]标记为使用。 例如，请参阅[Audience Manager与Adobe Experience Platform之间的受众共享](../../integration/integration-aep/aam-aep-audience-sharing.md)。
+根据在[!DNL Audience Manager]外部定义的合并规则从其他[!DNL Experience Cloud]解决方案自动创建的受众区段，将使用[!UICONTROL External Merge Policy]标记为使用。 例如，请参阅[Audience Manager与Adobe Experience Platform之间的受众共享](../../integration/integration-aep/aam-aep-audience-sharing.md)。
 
 >[!MORELIKETHIS]
 >

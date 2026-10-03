@@ -7,30 +7,44 @@ keywords: GDPR UI， GDPR API， CCPA，隐私，同意，模糊处理，治理
 title: 数据管理
 feature: Data Governance & Privacy
 exl-id: 52aeca00-73f2-4525-9e11-34a472ec45c6
-TQID: https://experienceleague.adobe.com/HVF-SxKO4mcE7YkiiwXLBPn2K3N5NIjpZHFWgZb0CoI
+TQID: 'https://experienceleague.adobe.com/HVF-SxKO4mcE7YkiiwXLBPn2K3N5NIjpZHFWgZb0CoI'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
   - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: a1d8adf7-4300-4ca2-870f-1612c6774544
+    internal-label: Data governance and privacy
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 451
+source-wordcount: '460'
 ht-degree: 90%
-
 ---
-
 # 数据管理
 
 ## 概述 {#overview}
@@ -39,9 +53,9 @@ ht-degree: 90%
 
 ## 收集IP地址和IP地址模糊处理 {#collecting-ip-addresses}
 
-访问客户网站的访客 [!DNL IP] 地址会被传输到 Adobe [!DNL Data Processing Center] ([!DNL DPC])，[!DNL IP] 地址可能存储在那里。根据访客的网络配置，[!DNL IP] 地址不一定能代表访客计算机的 [!DNL IP] 地址。例如，[!DNL IP] 地址可能为网络地址转换 (NAT) 防火墙、[!DNL HTTP] 代理或互联网网关的外部 [!DNL IP] 地址。
+访问客户网站的访客 [!DNL IP] 地址会被传输到 Adobe [!DNL Data Processing Center] ([!DNL DPC])，[!DNL IP] 地址可能存储在那里。 根据访客的网络配置，[!DNL IP] 地址不一定能代表访客计算机的 [!DNL IP] 地址。 例如，[!DNL IP] 地址可能为网络地址转换 (NAT) 防火墙、[!DNL HTTP] 代理或互联网网关的外部 [!DNL IP] 地址。
 
-**IP 模糊处理方法：**&#x200B;按照“通过设计保护隐私”的原则，Adobe Audience Manager 允许客户在 UI 中启用 [!DNL IP] 模糊处理，范围可以是全球所有地区，也可以是特定国家/地区。启用此设置后，在将 [!DNL IP] 地址摄取到 Audience Manager 后，将立即丢弃 [!DNL IP] 地址的最后一个八位字节（最后一部分）。在进行任何处理操作（包括选择对 [!DNL IP] 地址进行任何地理位置查询或记录）之前，Audience Manager 会先丢弃 [!DNL IP] 地址的这个部分。例如：
+**IP 模糊处理方法：**&#x200B;按照“通过设计保护隐私”的原则，Adobe Audience Manager 允许客户在 UI 中启用 [!DNL IP] 模糊处理，范围可以是全球所有地区，也可以是特定国家/地区。 启用此设置后，在将 [!DNL IP] 地址摄取到 Audience Manager 后，将立即丢弃 [!DNL IP] 地址的最后一个八位字节（最后一部分）。 在进行任何处理操作（包括选择对 [!DNL IP] 地址进行任何地理位置查询或记录）之前，Audience Manager 会先丢弃 [!DNL IP] 地址的这个部分。 例如：
 
 * 之前：`255.255.255.255`
 * 之后：`255.255.255.0`
@@ -54,12 +68,12 @@ ht-degree: 90%
 
 >[!VIDEO](https://video.tv.adobe.com/v/34967?captions=chi_hans)
 
-**地域划分：**&#x200B;如果启用 [!DNL IP] 地址模糊处理，则 [!DNL IP] 地址的其余八位字节仍可用于 Audience Manager 中的地域划分和报表。如果不启用 [!DNL IP] 地址模糊处理，Audience Manager 将使用完整的 [!DNL IP] 地址。您可以使用地域划分功能，不论是否使用 [!DNL IP] 模糊处理，该功能都可以让您通过地理区域来识别 [!DNL IP] 位置，但是在使用模糊处理的情况下，会略微损失一些精确度。若启用 [!DNL IP] 地址模糊处理，城市级别信息的获取很有可能会受到重大影响。而地区和国家级别信息的获取应该只会受到轻微影响。地域划分数据只精确到城市级别或邮政编码级别，而不能精确到个人级别。进一步了解[地理定位](../../features/traits/trait-geotarget-keys.md)以及如何使用地理变量设置特征。
+**地域划分：**&#x200B;如果启用 [!DNL IP] 地址模糊处理，则 [!DNL IP] 地址的其余八位字节仍可用于 Audience Manager 中的地域划分和报表。 如果不启用 [!DNL IP] 地址模糊处理，Audience Manager 将使用完整的 [!DNL IP] 地址。 您可以使用地域划分功能，不论是否使用 [!DNL IP] 模糊处理，该功能都可以让您通过地理区域来识别 [!DNL IP] 位置，但是在使用模糊处理的情况下，会略微损失一些精确度。 若启用 [!DNL IP] 地址模糊处理，城市级别信息的获取很有可能会受到重大影响。 而地区和国家级别信息的获取应该只会受到轻微影响。 地域划分数据只精确到城市级别或邮政编码级别，而不能精确到个人级别。 进一步了解[地理定位](../../features/traits/trait-geotarget-keys.md)以及如何使用地理变量设置特征。
 
 ## Audience Manager中的数据保留 {#data-retention}
 
-及时应用适当、安全的数据保留策略是实现数据隐私法规合规的重要环节。Audience Manager 客户能够通过定义所需的 TTL（存留期）为特征和区段设置自定义保留期。有关保留期的更多详细信息，请参阅[数据保留常见问题解答](../../faq/faq-privacy.md)。
+及时应用适当、安全的数据保留策略是实现数据隐私法规合规的重要环节。 Audience Manager 客户能够通过定义所需的 TTL（存留期）为特征和区段设置自定义保留期。 有关保留期的更多详细信息，请参阅[数据保留常见问题解答](../../faq/faq-privacy.md)。
 
 ## 跨境数据传输 {#data-transfers}
 
-在跨境传输客户个人数据时，Audience Manager 会遵守所有适用法规。有关更多信息，请访问 [Adobe 隐私中心](https://www.adobe.com/cn/privacy/eudatatransfers.html)。
+在跨境传输客户个人数据时，Audience Manager 会遵守所有适用法规。 有关更多信息，请访问 [Adobe 隐私中心](https://www.adobe.com/cn/privacy/eudatatransfers.html)。
