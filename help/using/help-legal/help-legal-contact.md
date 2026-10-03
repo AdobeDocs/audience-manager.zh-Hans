@@ -35,7 +35,7 @@ Adobe Experience Cloud 客户关怀团队在此为您提供帮助，同时还提
 * [查看Experience Cloud帮助页面，获取建议、提示和常见问题解答](https://helpx.adobe.com/cn/support.ec.html)
 * [通过Twitter @AdobeExpCare向我们快速提问](https://twitter.com/AdobeExpCare)
 * [直接联系客户服务团队](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html)
-* [查看Experience Cloud解决方案的可用情况和状态](https://status.adobe.com/)
+* [查看Experience Cloud解决方案的可用情况和状态](https://status.adobe.com/zh-cn/)
 
 ## 服务、职能和账单 {#billing}
 
@@ -49,4 +49,4 @@ Published by Adobe Systems Incorporated.
 
 Adobe and the Adobe logo are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. A trademark symbol (®， ™， etc.) 表示Adobe商标。
 
-All third-party trademarks are the property of their respective owners. Updated Information/Additional Third Party Code Information available at [https://www.adobe.com/go/thirdparty](https://www.adobe.com/cn/products/eula/third_party/).
+All third-party trademarks are the property of their respective owners. Updated Information/Additional Third Party Code Information available at [https://www.adobe.com/go/thirdparty_cn](https://www.adobe.com/cn/products/eula/third_party/).

@@ -39,7 +39,7 @@ ht-degree: 85%
 
 GDPR 于 2018 年 5 月 25 日生效，其主要目标是让欧盟地区的每个人（数据主体）能够更好地控制其个人数据，同时通过统一欧盟内部的法规来简化对国际企业的监管环境。 在 Adobe 为实现 GDPR 合规积极做准备的过程中，Adobe Audience Manager 团队根据需要对服务和流程进行了改进，以支持来自数据主体（即您的消费者）的数据访问和删除请求。
 
-另请确保阅读[隐私法规概述](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=en)中的GDPR内容，以更好地了解GDPR在Experience Cloud中的工作方式。
+另请确保阅读[隐私法规概述](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=zh-Hans)中的GDPR内容，以更好地了解GDPR在Experience Cloud中的工作方式。
 
 ## GDPR 术语表 {#gdpr-glossay}
 
@@ -75,7 +75,7 @@ GDPR 于 2018 年 5 月 25 日生效，其主要目标是让欧盟地区的每�
 
  
 
-**Audience Manager 标识符 (ID)：** Adobe Audience Manager 存储各种类型的 ID。 [Audience Manager 标识符](data-privacy-ids.md)页面汇总了这些 ID 及其相应数据源，还提供了简短说明。 向 [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) 发送请求时，需引用这些 ID 以发送数据主体提出的数据删除或访问请求。
+**Audience Manager 标识符 (ID)：** Adobe Audience Manager 存储各种类型的 ID。 [Audience Manager 标识符](data-privacy-ids.md)页面汇总了这些 ID 及其相应数据源，还提供了简短说明。 向 [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans) 发送请求时，需引用这些 ID 以发送数据主体提出的数据删除或访问请求。
 
  
 

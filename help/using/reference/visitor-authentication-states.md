@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Audience Manager中的访客身份验证状态决定了新特征信息是写入到访客的已身份验证配置文件中，还是写入到收集数据的设备配置文件中。 Audience Manager会以相同方式处理事件调用中的访客ID身份验证状态UNKNOWN和LOGGED_OUT。
 
-从[!DNL Experience Cloud] ID服务版本1.5开始，`setCustomerID`方法包含可选的`AuthState`对象。 `AuthState`根据访客的[身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)来识别访客。 [!DNL Audience Manager]根据调用中传递的身份验证状态以及用于分段的[配置文件合并规则](../features/profile-merge-rules/merge-rules-dashboard.md)，以不同方式处理已实现的特征。
+从[!DNL Experience Cloud] ID服务版本1.5开始，`setCustomerID`方法包含可选的`AuthState`对象。 `AuthState`根据访客的[身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hans)来识别访客。 [!DNL Audience Manager]根据调用中传递的身份验证状态以及用于分段的[配置文件合并规则](../features/profile-merge-rules/merge-rules-dashboard.md)，以不同方式处理已实现的特征。
 
 ## 身份验证状态：未知 {#auth-status-unknown}
 
@@ -62,4 +62,4 @@ Audience Manager中的访客身份验证状态决定了新特征信息是写入�
 
 >[!MORELIKETHIS]
 >
->* [客户 ID 和身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)
+>* [客户 ID 和身份验证状态](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hans)
