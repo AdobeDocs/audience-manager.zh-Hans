@@ -228,7 +228,7 @@ Audience Manager中的[[!UICONTROL Profile Merge Rules]](/help/using/features/pr
 
 >[!NOTE]
 >
-> 将区段从Experience Platform共享到Audience Manager时，您的Platform组织[默认合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en#default-merge-policy)优先于与Audience Manager共享的区段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#merge-policies)使用的[合并策略。 例如，如果共享区段的合并策略允许[ID拼接](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#configure)，而组织的默认合并策略不允许，则可能会导致平台和Audience Manager之间的群体差异。
+> 将区段从Experience Platform共享到Audience Manager时，您的Platform组织[默认合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en#default-merge-policy)优先于与Audience Manager共享的区段[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#merge-policies)使用的合并策略。 例如，如果共享区段的合并策略允许[ID拼接](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#configure)，而组织的默认合并策略不允许，则可能会导致平台和Audience Manager之间的群体差异。
 
 ### Experience Platform中的区段构成
 

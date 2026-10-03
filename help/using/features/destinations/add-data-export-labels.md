@@ -52,7 +52,7 @@ ht-degree: 2%
 
    >[!IMPORTANT]
    >
-   >除非您在数据源上设置与导出控制](../../features/data-export-controls.md)匹配的[，否则导出限制将不起作用。
+   >除非您在数据源上设置与导出控制[&#128279;](../../features/data-export-controls.md)匹配的，否则导出限制将不起作用。
 
 1. 单击 **[!UICONTROL Save]**。
 
